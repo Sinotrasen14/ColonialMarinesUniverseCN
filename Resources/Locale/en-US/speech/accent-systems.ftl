@@ -1,1 +1,1 @@
-skeleton-suffix = ACK ACK!
+skeleton-suffix = 咔咔！

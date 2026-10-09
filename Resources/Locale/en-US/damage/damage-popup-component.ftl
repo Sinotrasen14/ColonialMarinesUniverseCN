@@ -7,4 +7,4 @@
        *[other] Unknown
     }
 
-damage-popup-component-switched = Target set to type: { -damage-popup-component-type(setting: $setting) }
+damage-popup-component-switched = 目标已设为类型：{ -damage-popup-component-type(setting: $setting) }

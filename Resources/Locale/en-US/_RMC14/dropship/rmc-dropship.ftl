@@ -1,176 +1,176 @@
-rmc-dropship-pre-flight-fueling = The shuttle is still undergoing pre-flight fueling and cannot depart yet. Please wait another {$minutes} minutes before trying again.
-rmc-dropship-pre-hijack = This terminal won't be operational for another {$minutes} minutes.
-rmc-dropship-invalid-hijack = Lights flash from the terminal but you can't comprehend their meaning.
-rmc-dropship-hijack-human-hacking = You begin hacking the navigation console to override the flight controls...
-rmc-dropship-hijack-no-intel = Your faction does not have enough intel points to hijack the dropship.
-rmc-dropship-hijack-no-enemy-lz = No enemy primary landing zones are available to hijack to.
-rmc-dropship-hijack-thirdparty = This shuttle's navigation systems are incompatible with your override device.
-rmc-dropship-terminal-wrong-faction = This terminal does not recognize your credentials.
-rmc-dropship-hijack-queen-call-unknown-location = Unknown
-rmc-dropship-hijack-queen-call-announcement = The Queen has commanded the metal bird to the hive at {$location}
+rmc-dropship-pre-flight-fueling = 穿梭机仍在进行飞行前加注燃料，尚无法出发。请再等{$minutes}分钟后重试。
+rmc-dropship-pre-hijack = 这台终端还要{$minutes}分钟才能使用。
+rmc-dropship-invalid-hijack = 终端上闪烁着灯光，但你无法理解它们的含义。
+rmc-dropship-hijack-human-hacking = 你开始破解导航控制台，以覆写飞行控制……
+rmc-dropship-hijack-no-intel = 你的阵营没有足够的情报点数来劫持运输机。
+rmc-dropship-hijack-no-enemy-lz = 没有可劫持前往的敌方主着陆区。
+rmc-dropship-hijack-thirdparty = 这架穿梭机的导航系统与你的覆写装置不兼容。
+rmc-dropship-terminal-wrong-faction = 这台终端不识别你的凭证。
+rmc-dropship-hijack-queen-call-unknown-location = 未知
+rmc-dropship-hijack-queen-call-announcement = 女王已命令铁鸟飞往位于{$location}的虫巢
 
-rmc-dropship-weapons-title = Weapons Console
+rmc-dropship-weapons-title = 武器控制台
 
 rmc-dropship-weapons-main-screen-text = U.N.M.C.
-  Dropship Weapons Control System
+  运输机武器控制系统
   V 0.1
 
 rmc-dropship-weapons-weapon-selected = {$weapon}
-  No ammo
+  无弹药
 rmc-dropship-weapons-weapon-selected-ammo = {$weapon}
   {$ammo}
-  Ammo {$rounds} / {$maxRounds}
+  弹药 {$rounds} / {$maxRounds}
 
-rmc-dropship-weapons-target-strike = Target Acquisition
+rmc-dropship-weapons-target-strike = 目标捕获
 
-  Strike mode: {$mode}
+  打击模式：{$mode}
 
-  Target mode: {$targetMode}
+  目标模式：{$targetMode}
 
-  Strike configuration {$weapon}
+  打击配置 {$weapon}
 
-  Target selected: {$target}
+  已选目标：{$target}
 
-  Attack Vector {$vector}
+  攻击矢量 {$vector}
 
-  Offset {$xOffset},{$yOffset}
+  偏移 {$xOffset},{$yOffset}
 
 #  Guidance computer INCOMPLETE
 
 rmc-dropship-weapons-equip-weapon-ammo = {$weapon}
-  {$rounds} rounds
+  {$rounds}发
 
-rmc-dropship-weapons-equip = EQUIP
-rmc-dropship-weapons-fire-mission = F-MISS
-rmc-dropship-weapons-target = TARGET
-rmc-dropship-weapons-maps = MAPS
-rmc-dropship-weapons-cams = CAMS
-rmc-dropship-weapons-cancel = CANCEL
-rmc-dropship-weapons-exit = EXIT
-rmc-dropship-weapons-lock = LOCK
-rmc-dropship-weapons-clear = CLEAR
-rmc-dropship-weapons-enable = ENABLE
-rmc-dropship-weapons-disable = DISABLE
-rmc-dropship-weapons-deploy = DEPLOY
-rmc-dropship-weapons-retract = RETRACT
-rmc-dropship-weapons-auto-deploy = AUTO-DEPLOY
-rmc-dropship-weapons-view = VIEW
-rmc-dropship-weapons-edit = EDIT
-rmc-dropship-weapons-delete = DELETE
+rmc-dropship-weapons-equip = 装备
+rmc-dropship-weapons-fire-mission = 火力任务
+rmc-dropship-weapons-target = 目标
+rmc-dropship-weapons-maps = 地图
+rmc-dropship-weapons-cams = 摄像头
+rmc-dropship-weapons-cancel = 取消
+rmc-dropship-weapons-exit = 退出
+rmc-dropship-weapons-lock = 锁定
+rmc-dropship-weapons-clear = 清除
+rmc-dropship-weapons-enable = 启用
+rmc-dropship-weapons-disable = 禁用
+rmc-dropship-weapons-deploy = 部署
+rmc-dropship-weapons-retract = 收起
+rmc-dropship-weapons-auto-deploy = 自动部署
+rmc-dropship-weapons-view = 查看
+rmc-dropship-weapons-edit = 编辑
+rmc-dropship-weapons-delete = 删除
 
-rmc-dropship-weapons-offset-calibration = Camera
-  Offset
-rmc-dropship-weapons-offset-calibration-does-not-affect-direct-bombardment = Does not affect direct bombardment!
+rmc-dropship-weapons-offset-calibration = 摄像头
+  偏移
+rmc-dropship-weapons-offset-calibration-does-not-affect-direct-bombardment = 不影响直接轰炸！
 
-rmc-dropship-weapons-fire = FIRE
-rmc-dropship-weapons-strike = STRIKE
-rmc-dropship-weapons-vector = VECTOR
-rmc-dropship-weapons-quick = QUICK
+rmc-dropship-weapons-fire = 开火
+rmc-dropship-weapons-strike = 打击
+rmc-dropship-weapons-vector = 矢量
+rmc-dropship-weapons-quick = 快速
 # TODO RMC14 fire missions: restore these labels with fire mission vector controls.
 # rmc-dropship-weapons-north = NORTH
 # rmc-dropship-weapons-south = SOUTH
 # rmc-dropship-weapons-east = EAST
 # rmc-dropship-weapons-west = WEST
-rmc-dropship-weapons-target-mode-quick = QUICK
-rmc-dropship-weapons-target-mode-standard = STANDARD
+rmc-dropship-weapons-target-mode-quick = 快速
+rmc-dropship-weapons-target-mode-standard = 标准
 
-rmc-dropship-weapons-night-vision-on = NV-ON
-rmc-dropship-weapons-night-vision-off = NV-OFF
+rmc-dropship-weapons-night-vision-on = 夜视开
+rmc-dropship-weapons-night-vision-off = 夜视关
 
-rmc-dropship-weapons-weapon = WEAPON
+rmc-dropship-weapons-weapon = 武器
 
 rmc-dropship-weapons-previous = ^
 rmc-dropship-weapons-next = v
 
-rmc-dropship-weapons-fire-no-weapon = No weapon selected.
-rmc-dropship-weapons-fire-not-flying = Dropships can only fire while in flight.
-rmc-dropship-weapons-fire-not-skilled = You don't have the training to fire this weapon!
-rmc-dropship-weapons-fire-no-ammo = {$weapon} doesn't have enough ammo.
-rmc-dropship-weapons-fire-cooldown = {$weapon} just fired, wait for it to cool down.
+rmc-dropship-weapons-fire-no-weapon = 未选择武器。
+rmc-dropship-weapons-fire-not-flying = 运输机只有在飞行中才能开火。
+rmc-dropship-weapons-fire-not-skilled = 你没有受过使用这种武器的训练！
+rmc-dropship-weapons-fire-no-ammo = {$weapon}弹药不足。
+rmc-dropship-weapons-fire-cooldown = {$weapon}刚刚开火，等它冷却一下。
 
-rmc-dropship-attached = It has a {$attachment} loaded.
+rmc-dropship-attached = 它装载了一个{$attachment}。
 
-rmc-dropship-weapons-point-ammo = It has a {$ammo} loaded.
-rmc-dropship-weapons-rounds-left = It has {$current} out of {$max} rounds left.
+rmc-dropship-weapons-point-ammo = 它装载了{$ammo}。
+rmc-dropship-weapons-rounds-left = 它还剩下{$current}发，总共{$max}发。
 
-rmc-dropship-utility-activate-not-flying = Utility Systems can only activate while in flight.
-rmc-dropship-utility-not-flyby = {$utility} can only be used during flyby.
-rmc-dropship-utility-not-skilled = You don't have the training to use this system!
-rmc-dropship-utility-cooldown = {$utility} was just used, you need to wait a bit before using it again.
+rmc-dropship-utility-activate-not-flying = 公用系统只有在飞行中才能激活。
+rmc-dropship-utility-not-flyby = {$utility}只能在飞越时使用。
+rmc-dropship-utility-not-skilled = 你没有受过使用这种系统的训练！
+rmc-dropship-utility-cooldown = {$utility}刚刚使用过，你需要等一会儿才能再次使用。
 
-rmc-dropship-flyby-no-skill = You don't have the skill to perform a flyby.
+rmc-dropship-flyby-no-skill = 你没有进行飞越的技能。
 
-rmc-dropship-fabricator-title = Part Fabricator
-rmc-dropship-fabricator-points = Points: {$points}
-rmc-dropship-fabricator-equipment = [bold]Equipment[/bold]
-rmc-dropship-fabricator-ammo = [bold]Ammo[/bold]
-rmc-dropship-fabricator-fabricate = Fabricate ({$cost})
-rmc-dropship-fabricator-busy = The dropship part fabricator is busy. Please wait for completion of previous operation.
-rmc-dropship-fabricator-current = [bold]Current:[/bold] {$item}
-rmc-dropship-fabricator-idle = [bold]Current:[/bold] Idle
-rmc-dropship-fabricator-queue = [bold]Queue:[/bold] {$count}/{$max}
-rmc-dropship-fabricator-queue-empty = No pending orders.
-rmc-dropship-fabricator-queue-entry = {$position}. {$item} ({$cost})
-rmc-dropship-fabricator-cancel = Cancel
-rmc-dropship-fabricator-queue-full = The dropship part fabricator queue is full.
-rmc-dropship-fabricator-insufficient-points = You don't have enough points to fabricate that.
+rmc-dropship-fabricator-title = 零件制造机
+rmc-dropship-fabricator-points = 点数：{$points}
+rmc-dropship-fabricator-equipment = [bold]装备[/bold]
+rmc-dropship-fabricator-ammo = [bold]弹药[/bold]
+rmc-dropship-fabricator-fabricate = 制造（{$cost}）
+rmc-dropship-fabricator-busy = 运输机零件制造机正忙。请等待上一个操作完成。
+rmc-dropship-fabricator-current = [bold]当前：[/bold] {$item}
+rmc-dropship-fabricator-idle = [bold]当前：[/bold] 空闲
+rmc-dropship-fabricator-queue = [bold]队列：[/bold] {$count}/{$max}
+rmc-dropship-fabricator-queue-empty = 没有待处理订单。
+rmc-dropship-fabricator-queue-entry = {$position}. {$item}（{$cost}）
+rmc-dropship-fabricator-cancel = 取消
+rmc-dropship-fabricator-queue-full = 运输机零件制造机队列已满。
+rmc-dropship-fabricator-insufficient-points = 你没有足够的点数来制造那个。
 
-rmc-dropship-firemission-warning = A DROPSHIP FIRES TOWARDS THE {$direction}
-rmc-dropship-firemission-warning-above = A DROPSHIP FIRES RIGHT ONTOP OF YOU!
-rmc-dropship-firemission-warning-early = YOU HEAR THE DROPSHIP ROAR AS IT PREPARES TO FIRE NEAR YOU!
-rmc-dropship-firemission-warning-early-above = YOU HEAR THE DROPSHIP ROAR AS IT PREPARES TO FIRE NEAR YOU!
-rmc-dropship-firemission-invalid-value-admin-announcement = Player {$player} attempted to set a fire mission value that should not be possible through normal gameplay.
-rmc-dropship-firemission-vector-North = NORTH
-rmc-dropship-firemission-vector-East = EAST
-rmc-dropship-firemission-vector-South = SOUTH
-rmc-dropship-firemission-vector-West = WEST
-rmc-dropship-firemission-started = Firemission underway!
-rmc-dropship-firemission-cooldown = Firemission in progress.
-rmc-dropship-firemission-edit = Select a weapon.
-rmc-dropship-firemission-invalid-ammo = {$ammo} can't be used during a fire mission.
+rmc-dropship-firemission-warning = 一架运输机正向你的{$direction}开火
+rmc-dropship-firemission-warning-above = 一架运输机正朝你正上方开火！
+rmc-dropship-firemission-warning-early = 你听到运输机准备向你附近开火时的轰鸣声！
+rmc-dropship-firemission-warning-early-above = 你听到运输机准备向你附近开火时的轰鸣声！
+rmc-dropship-firemission-invalid-value-admin-announcement = 玩家{$player}试图设置一个在正常游戏中不可能出现的火力任务数值。
+rmc-dropship-firemission-vector-North = 北
+rmc-dropship-firemission-vector-East = 东
+rmc-dropship-firemission-vector-South = 南
+rmc-dropship-firemission-vector-West = 西
+rmc-dropship-firemission-started = 火力任务已开始！
+rmc-dropship-firemission-cooldown = 火力任务进行中。
+rmc-dropship-firemission-edit = 选择一种武器。
+rmc-dropship-firemission-invalid-ammo = {$ammo}不能在火力任务中使用。
 
-rmc-dropship-paradrop-target-screen-text = HPU-1 Paradrop Deployment System
+rmc-dropship-paradrop-target-screen-text = HPU-1伞降部署系统
     {$hasTarget}
 
-rmc-dropship-paradrop-target-screen-target-none = No locked target found.
-    Paradropping not available.
+rmc-dropship-paradrop-target-screen-target-none = 未找到锁定目标。
+    无法伞降。
 
-rmc-dropship-paradrop-target-screen-target-targeting = Locked to {$dropTarget}.
-    Paradropping available.
+rmc-dropship-paradrop-target-screen-target-targeting = 已锁定到{$dropTarget}。
+    可以伞降。
 
-rmc-dropship-paradrop-lock-no-target = No target selected.
-rmc-dropship-paradrop-lock-target-not-flying = You can only enable the paradrop module while in flight.
+rmc-dropship-paradrop-lock-no-target = 未选择目标。
+rmc-dropship-paradrop-lock-target-not-flying = 你只能在飞行中启用伞降模块。
 
-rmc-dropship-paradrop-failed = Your harness got stuck and is preventing you from jumping
+rmc-dropship-paradrop-failed = 你的挂带卡住了，让你无法跳下去
 
-rmc-dropship-medevac-system-screen-text = RMU-4M Medevac System
+rmc-dropship-medevac-system-screen-text = RMU-4M医疗后送系统
 
-rmc-dropship-fulton-system-screen-text = RMU-19 Fulton Recovery System
+rmc-dropship-fulton-system-screen-text = RMU-19富尔顿回收系统
 
-rmc-dropship-locked= This bird is now ours for the next {$minutes} minutes.
-rmc-dropship-locked-out = The shuttle is not responding, try again in {$minutes} minutes.
-rmc-dropship-locked-out-bypass = You partially bypassed the lockout, try again!
-rmc-dropship-locked-out-bypass-complete = You successfully removed the lockout!
+rmc-dropship-locked= 这架现在归我们了，持续{$minutes}分钟。
+rmc-dropship-locked-out = 穿梭机没有响应，请{$minutes}分钟后再试。
+rmc-dropship-locked-out-bypass = 你部分绕过了锁定，再试一次！
+rmc-dropship-locked-out-bypass-complete = 你成功移除了锁定！
 
 rmc-dropship-equipment-deployer-text = {$deployName}
-rmc-dropship-equipment-deployer-health = Condition: {$status}
-rmc-dropship-equipment-deployer-ammo = Ammo: {$ammoCount} / {$totalAmmoCount}
-rmc-dropship-equipment-deployer-status = Deploy Status: {$deployed}
-rmc-dropship-equipment-deployer-auto-deploy = Auto-Deploy: {$autoDeploy}
+rmc-dropship-equipment-deployer-health = 状况：{$status}
+rmc-dropship-equipment-deployer-ammo = 弹药：{$ammoCount} / {$totalAmmoCount}
+rmc-dropship-equipment-deployer-status = 部署状态：{$deployed}
+rmc-dropship-equipment-deployer-auto-deploy = 自动部署：{$autoDeploy}
 
-rmc-dropship-equipment-enabled = ENABLED
-rmc-dropship-equipment-disabled = DISABLED
-rmc-dropship-equipment-deployed = DEPLOYED
-rmc-dropship-equipment-undeployed = UNDEPLOYED
-rmc-dropship-equipment-operational = OPERATIONAL
-rmc-dropship-equipment-damaged = DAMAGED
-rmc-dropship-equipment-destroyed = DESTROYED
+rmc-dropship-equipment-enabled = 已启用
+rmc-dropship-equipment-disabled = 已禁用
+rmc-dropship-equipment-deployed = 已部署
+rmc-dropship-equipment-undeployed = 未部署
+rmc-dropship-equipment-operational = 正常
+rmc-dropship-equipment-damaged = 受损
+rmc-dropship-equipment-destroyed = 已摧毁
 
-rmc-dropship-launch-bay-screen-text = LAG-14 Internal Sentry Launcher
-rmc-dropship-launch-bay-screen-text-loaded = LAG-14 Internal Sentry Launcher
+rmc-dropship-launch-bay-screen-text = LAG-14内置哨戒炮发射器
+rmc-dropship-launch-bay-screen-text-loaded = LAG-14内置哨戒炮发射器
 
-    Loaded: {$loaded}
+    已装载：{$loaded}
 
-    Ammo: {$current} / {$max}
+    弹药：{$current} / {$max}
 
-rmc-dropship-launch-alarm-xeno-shutdown = We slash at {$console}, silencing its squawking!
+rmc-dropship-launch-alarm-xeno-shutdown = 我们砍向{$console}，让它闭嘴！

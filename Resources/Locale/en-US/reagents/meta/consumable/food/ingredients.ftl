@@ -1,41 +1,41 @@
-reagent-name-flour = flour
-reagent-desc-flour = Used for baking.
+reagent-name-flour = 面粉
+reagent-desc-flour = 用于烘焙。
 
-reagent-name-cornmeal = cornmeal
-reagent-desc-cornmeal = Used for baking.
+reagent-name-cornmeal = 玉米粉
+reagent-desc-cornmeal = 用于烘焙。
 
-reagent-name-oats = oats
-reagent-desc-oats = Used for a variety of tasty purposes.
+reagent-name-oats = 燕麦
+reagent-desc-oats = 用于各种美味的用途。
 
-reagent-name-enzyme = universal enzyme
-reagent-desc-enzyme = Used in cooking various dishes.
+reagent-name-enzyme = 通用酶
+reagent-desc-enzyme = 用于烹饪各种菜肴。
 
-reagent-name-egg = cooked egg
-reagent-desc-egg = Cooked chicken embryo, delicious.
+reagent-name-egg = 熟鸡蛋
+reagent-desc-egg = 煮熟的小鸡胚胎，美味。
 
-reagent-name-raw-egg = raw egg
-reagent-desc-raw-egg = Used for baking.
+reagent-name-raw-egg = 生鸡蛋
+reagent-desc-raw-egg = 用于烘焙。
 
-reagent-name-sugar = sugar
-reagent-desc-sugar = Tasty spacey sugar!
+reagent-name-sugar = 糖
+reagent-desc-sugar = 美味的太空糖！
 
-reagent-name-blackpepper = black pepper
-reagent-desc-blackpepper = Often used to flavor food or make people sneeze.
+reagent-name-blackpepper = 黑胡椒
+reagent-desc-blackpepper = 常用于给食物调味或让人打喷嚏。
 
-reagent-name-vinegar = vinegar
-reagent-desc-vinegar = Often used to flavor food.
+reagent-name-vinegar = 醋
+reagent-desc-vinegar = 常用于给食物调味。
 
-reagent-name-rice = rice
-reagent-desc-rice = Hard, small white grains.
+reagent-name-rice = 米
+reagent-desc-rice = 坚硬的小白粒。
 
-reagent-name-oil-olive = olive oil
-reagent-desc-oil-olive = Viscous and fragrant.
+reagent-name-oil-olive = 橄榄油
+reagent-desc-oil-olive = 黏稠而芬芳。
 
-reagent-name-oil = oil
-reagent-desc-oil = Used by chefs to cook.
+reagent-name-oil = 油
+reagent-desc-oil = 厨师用它来烹饪。
 
-reagent-name-capsaicin-oil = Capsaicin Oil
-reagent-desc-capsaicin-oil = Capsaicin Oil is the ingredient found in different types of hot peppers.
+reagent-name-capsaicin-oil = 辣椒素油
+reagent-desc-capsaicin-oil = 辣椒素油是存在于多种辣椒中的成分。
 
-reagent-name-frost-oil = Frost Oil
-reagent-desc-frost-oil = Frost Oil is the ingredient found in chilly peppers, a rare pepper mutation.
+reagent-name-frost-oil = 霜冻油
+reagent-desc-frost-oil = 霜冻油是存在于寒辣椒中的成分，那是一种罕见的辣椒变种。

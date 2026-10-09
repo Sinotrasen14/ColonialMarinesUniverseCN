@@ -1,148 +1,148 @@
 species-name-feroxi = Feroxi
 
-marking-FeroxiEars = Ears
-marking-FeroxiEars-feroxi-ears = Base Ears
-marking-FeroxiEars-feroxi-ears-inner = Inner Ear
+marking-FeroxiEars = 耳朵
+marking-FeroxiEars-feroxi-ears = 基础耳朵
+marking-FeroxiEars-feroxi-ears-inner = 内耳
 
-marking-FeroxiTailAndDorsal = Tail and Dorsal
-marking-FeroxiTailAndDorsal-feroxi-tail = Base Tail
-marking-FeroxiTailAndDorsal-feroxi-dorsal = Base Dorsal
+marking-FeroxiTailAndDorsal = 尾巴与背鳍
+marking-FeroxiTailAndDorsal-feroxi-tail = 基础尾巴
+marking-FeroxiTailAndDorsal-feroxi-dorsal = 基础背鳍
 
-marking-FeroxiSnout = Snout
-marking-FeroxiSnout-feroxi-snout = Base Snout
+marking-FeroxiSnout = 吻部
+marking-FeroxiSnout-feroxi-snout = 基础吻部
 
-marking-FeroxiHeadStripesTiger = Tiger Stripes
-marking-FeroxiHeadStripesTiger-feroxi-head-stripes-tiger = Stripes
+marking-FeroxiHeadStripesTiger = 虎纹
+marking-FeroxiHeadStripesTiger-feroxi-head-stripes-tiger = 条纹
 
-marking-FeroxiEarsTips = Tipped Ears
-marking-FeroxiEarsTips-feroxi-ears = Base Ears
-marking-FeroxiEarsTips-feroxi-ears-inner = Inner Ear
-marking-FeroxiEarsTips-feroxi-ears-tips = Ear Tips
+marking-FeroxiEarsTips = 耳尖
+marking-FeroxiEarsTips-feroxi-ears = 基础耳朵
+marking-FeroxiEarsTips-feroxi-ears-inner = 内耳
+marking-FeroxiEarsTips-feroxi-ears-tips = 耳尖
 
-marking-FeroxiSnoutStripe = Striped Snout
-marking-FeroxiSnoutStripe-feroxi-snout = Base Snout
-marking-FeroxiSnoutStripe-feroxi-snout-stripe = Stripe
+marking-FeroxiSnoutStripe = 条纹吻部
+marking-FeroxiSnoutStripe-feroxi-snout = 基础吻部
+marking-FeroxiSnoutStripe-feroxi-snout-stripe = 条纹
 
-marking-FeroxiSnoutCountershading = Countershaded Snout
-marking-FeroxiSnoutCountershading-feroxi-snout = Base Snout
-marking-FeroxiSnoutCountershading-feroxi-snout-Countershading = Countershading
+marking-FeroxiSnoutCountershading = 反荫蔽吻部
+marking-FeroxiSnoutCountershading-feroxi-snout = 基础吻部
+marking-FeroxiSnoutCountershading-feroxi-snout-Countershading = 反荫蔽
 
-marking-FeroxiSnoutCountershadingStripe = Striped and Countershaded Snout with
-marking-FeroxiSnoutCountershadingStripe-feroxi-snout = Base Snout
-marking-FeroxiSnoutCountershadingStripe-feroxi-snout-countershading = Countershading
-marking-FeroxiSnoutCountershadingStripe-feroxi-snout-stripe = Stripe
+marking-FeroxiSnoutCountershadingStripe = 条纹反荫蔽吻部
+marking-FeroxiSnoutCountershadingStripe-feroxi-snout = 基础吻部
+marking-FeroxiSnoutCountershadingStripe-feroxi-snout-countershading = 反荫蔽
+marking-FeroxiSnoutCountershadingStripe-feroxi-snout-stripe = 条纹
 
-marking-FeroxiSnoutNurse = Nurse Snout
-marking-FeroxiSnoutNurse-feroxi-snout = Base Snout
-marking-FeroxiSnoutNurse-feroxi-snout-nurse = Barbels
+marking-FeroxiSnoutNurse = 须吻部
+marking-FeroxiSnoutNurse-feroxi-snout = 基础吻部
+marking-FeroxiSnoutNurse-feroxi-snout-nurse = 触须
 
-marking-FeroxiSnoutNurseCountershading = Countershaded Nurse Snout
-marking-FeroxiSnoutNurseCountershading-feroxi-snout = Base Snout
-marking-FeroxiSnoutNurseCountershading-feroxi-snout-countershading = Countershading
-marking-FeroxiSnoutNurseCountershading-feroxi-snout-nurse = Barbels
+marking-FeroxiSnoutNurseCountershading = 反荫蔽须吻部
+marking-FeroxiSnoutNurseCountershading-feroxi-snout = 基础吻部
+marking-FeroxiSnoutNurseCountershading-feroxi-snout-countershading = 反荫蔽
+marking-FeroxiSnoutNurseCountershading-feroxi-snout-nurse = 触须
 
-marking-FeroxiTailBlitz = Striped Tail with Fin Tips and Dorsal
-marking-FeroxiTailBlitz-feroxi-tail = Base Tail
-marking-FeroxiTailBlitz-feroxi-tail-stripes = Tail Stripes
-marking-FeroxiTailBlitz-feroxi-tail-top-tip = Upper Tail Fin Tip
-marking-FeroxiTailBlitz-feroxi-tail-bottom-tip = Lower Tail Fin Tip
-marking-FeroxiTailBlitz-feroxi-tail-under = Under Tail
-marking-FeroxiTailBlitz-feroxi-dorsal = Base Dorsal
-marking-FeroxiTailBlitz-feroxi-dorsal-stripes = Dorsal Stripes
+marking-FeroxiTailBlitz = 带鳍尖与背鳍的条纹尾巴
+marking-FeroxiTailBlitz-feroxi-tail = 基础尾巴
+marking-FeroxiTailBlitz-feroxi-tail-stripes = 尾纹
+marking-FeroxiTailBlitz-feroxi-tail-top-tip = 上尾鳍尖
+marking-FeroxiTailBlitz-feroxi-tail-bottom-tip = 下尾鳍尖
+marking-FeroxiTailBlitz-feroxi-tail-under = 尾下
+marking-FeroxiTailBlitz-feroxi-dorsal = 基础背鳍
+marking-FeroxiTailBlitz-feroxi-dorsal-stripes = 背鳍纹
 
-marking-FeroxiTailBlitzNoDorsal = Striped Tail with Fin Tips
-marking-FeroxiTailBlitzNoDorsal-feroxi-tail = Base Tail
-marking-FeroxiTailBlitzNoDorsal-feroxi-tail-stripes = Tail Stripes
-marking-FeroxiTailBlitzNoDorsal-feroxi-tail-top-tip = Upper Tail Fin Tip
-marking-FeroxiTailBlitzNoDorsal-feroxi-tail-bottom-tip = Lower Tail Fin Tip
-marking-FeroxiTailBlitzNoDorsal-feroxi-tail-under = Under Tail
+marking-FeroxiTailBlitzNoDorsal = 带鳍尖的条纹尾巴
+marking-FeroxiTailBlitzNoDorsal-feroxi-tail = 基础尾巴
+marking-FeroxiTailBlitzNoDorsal-feroxi-tail-stripes = 尾纹
+marking-FeroxiTailBlitzNoDorsal-feroxi-tail-top-tip = 上尾鳍尖
+marking-FeroxiTailBlitzNoDorsal-feroxi-tail-bottom-tip = 下尾鳍尖
+marking-FeroxiTailBlitzNoDorsal-feroxi-tail-under = 尾下
 
-marking-FeroxiStripedTail = Striped Tail
-marking-FeroxiStripedTail-feroxi-tail = Base Tail
-marking-FeroxiStripedTail-feroxi-tail-stripes = Tail Stripes
+marking-FeroxiStripedTail = 条纹尾巴
+marking-FeroxiStripedTail-feroxi-tail = 基础尾巴
+marking-FeroxiStripedTail-feroxi-tail-stripes = 尾纹
 
-marking-FeroxiStripedTailAndDorsal = Striped Tail with Dorsal
-marking-FeroxiStripedTailAndDorsal-feroxi-tail = Base Tail
-marking-FeroxiStripedTailAndDorsal-feroxi-tail-stripes = Tail Stripes
-marking-FeroxiStripedTailAndDorsal-feroxi-dorsal = Base Dorsal
-marking-FeroxiStripedTailAndDorsal-feroxi-dorsal-stripes = Dorsal Stripes
+marking-FeroxiStripedTailAndDorsal = 带背鳍的条纹尾巴
+marking-FeroxiStripedTailAndDorsal-feroxi-tail = 基础尾巴
+marking-FeroxiStripedTailAndDorsal-feroxi-tail-stripes = 尾纹
+marking-FeroxiStripedTailAndDorsal-feroxi-dorsal = 基础背鳍
+marking-FeroxiStripedTailAndDorsal-feroxi-dorsal-stripes = 背鳍纹
 
-marking-FeroxiTail = Tail
-marking-FeroxiTail-feroxi-tail = Base Tail
+marking-FeroxiTail = 尾巴
+marking-FeroxiTail-feroxi-tail = 基础尾巴
 
-marking-FeroxiTipTail = Tail with Tips
-marking-FeroxiTipTail-feroxi-tail = Base Tail
-marking-FeroxiTipTail-feroxi-tail-top-tip = Upper Tail Fin Tip
-marking-FeroxiTipTail-feroxi-tail-bottom-tip = Lower Tail Fin Tip
-marking-FeroxiTipTail-feroxi-second-dorsal-tip = Secondary Dorsal Fin Tip
-marking-FeroxiTipTail-feroxi-dorsal = Base Dorsal
+marking-FeroxiTipTail = 带尖的尾巴
+marking-FeroxiTipTail-feroxi-tail = 基础尾巴
+marking-FeroxiTipTail-feroxi-tail-top-tip = 上尾鳍尖
+marking-FeroxiTipTail-feroxi-tail-bottom-tip = 下尾鳍尖
+marking-FeroxiTipTail-feroxi-second-dorsal-tip = 次背鳍尖
+marking-FeroxiTipTail-feroxi-dorsal = 基础背鳍
 
-marking-FeroxiTipTailAndDorsal = Tail with Tips and Dorsal
-marking-FeroxiTipTailAndDorsal-feroxi-tail = Base Tail
-marking-FeroxiTipTailAndDorsal-feroxi-tail-top-tip = Upper Tail Fin Tip
-marking-FeroxiTipTailAndDorsal-feroxi-tail-bottom-tip = Lower Tail Fin Tip
-marking-FeroxiTipTailAndDorsal-feroxi-second-dorsal-tip = Secondary Dorsal Fin Tip
-marking-FeroxiTipTailAndDorsal-feroxi-dorsal = Base Dorsal
-marking-FeroxiTipTailAndDorsal-feroxi-dorsal-tip = Dorsal Tip
+marking-FeroxiTipTailAndDorsal = 带尖与背鳍的尾巴
+marking-FeroxiTipTailAndDorsal-feroxi-tail = 基础尾巴
+marking-FeroxiTipTailAndDorsal-feroxi-tail-top-tip = 上尾鳍尖
+marking-FeroxiTipTailAndDorsal-feroxi-tail-bottom-tip = 下尾鳍尖
+marking-FeroxiTipTailAndDorsal-feroxi-second-dorsal-tip = 次背鳍尖
+marking-FeroxiTipTailAndDorsal-feroxi-dorsal = 基础背鳍
+marking-FeroxiTipTailAndDorsal-feroxi-dorsal-tip = 背鳍尖
 
-marking-FeroxiTwoToneTail = Two Tone Tail
-marking-FeroxiTwoToneTail-feroxi-tail = Base Tail
-marking-FeroxiTwoToneTail-feroxi-tail-under = Under Tail
+marking-FeroxiTwoToneTail = 双色尾巴
+marking-FeroxiTwoToneTail-feroxi-tail = 基础尾巴
+marking-FeroxiTwoToneTail-feroxi-tail-under = 尾下
 
-marking-FeroxiTwoToneTailAndDorsal = Two Tone Tail and Dorsal
-marking-FeroxiTwoToneTailAndDorsal-feroxi-tail = Base Tail
-marking-FeroxiTwoToneTailAndDorsal-feroxi-tail-under = Under Tail
-marking-FeroxiTwoToneTailAndDorsal-feroxi-dorsal = Base Dorsal
+marking-FeroxiTwoToneTailAndDorsal = 双色尾巴与背鳍
+marking-FeroxiTwoToneTailAndDorsal-feroxi-tail = 基础尾巴
+marking-FeroxiTwoToneTailAndDorsal-feroxi-tail-under = 尾下
+marking-FeroxiTwoToneTailAndDorsal-feroxi-dorsal = 基础背鳍
 
-marking-FeroxiStripeTwoToneTail = Two Tone Tail with Stripes
-marking-FeroxiStripeTwoToneTail-feroxi-tail = Base Tail
-marking-FeroxiStripeTwoToneTail-feroxi-tail-stripes = Tail Stripes
-marking-FeroxiStripeTwoToneTail-feroxi-tail-under = Under Tail
+marking-FeroxiStripeTwoToneTail = 带条纹的双色尾巴
+marking-FeroxiStripeTwoToneTail-feroxi-tail = 基础尾巴
+marking-FeroxiStripeTwoToneTail-feroxi-tail-stripes = 尾纹
+marking-FeroxiStripeTwoToneTail-feroxi-tail-under = 尾下
 
-marking-FeroxiStripeTwoToneTailAndDorsal = Two Tone Tail with Stripes and Dorsal
-marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-tail = Base Tail
-marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-tail-stripes = Tail Stripes
-marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-tail-under = Under Tail
-marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-dorsal = Base Dorsal
-marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-dorsal-stripes = Dorsal Stripes
+marking-FeroxiStripeTwoToneTailAndDorsal = 带条纹与背鳍的双色尾巴
+marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-tail = 基础尾巴
+marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-tail-stripes = 尾纹
+marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-tail-under = 尾下
+marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-dorsal = 基础背鳍
+marking-FeroxiStripeTwoToneTailAndDorsal-feroxi-dorsal-stripes = 背鳍纹
 
-marking-FeroxiTipTwoToneTail = Two Tone Tail with Tips
-marking-FeroxiTipTwoToneTail-feroxi-tail = Base Tail
-marking-FeroxiTipTwoToneTail-feroxi-tail-top-tip = Upper Tail Fin Tip
-marking-FeroxiTipTwoToneTail-feroxi-tail-bottom-tip = Lower Tail Fin Tip
-marking-FeroxiTipTwoToneTail-feroxi-tail-under = Under Tail
+marking-FeroxiTipTwoToneTail = 带尖的双色尾巴
+marking-FeroxiTipTwoToneTail-feroxi-tail = 基础尾巴
+marking-FeroxiTipTwoToneTail-feroxi-tail-top-tip = 上尾鳍尖
+marking-FeroxiTipTwoToneTail-feroxi-tail-bottom-tip = 下尾鳍尖
+marking-FeroxiTipTwoToneTail-feroxi-tail-under = 尾下
 
-marking-FeroxiTipTwoToneTailAndDorsal = Two Tone Tail with Tips and Dorsal
-marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail = Base Tail
-marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail-top-tip = Upper Tail Fin Tip
-marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail-bottom-tip = Lower Tail Fin Tip
-marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail-under = Under Tail
-marking-FeroxiTipTwoToneTailAndDorsal-feroxi-dorsal = Base Dorsal
-marking-FeroxiTipTwoToneTailAndDorsal-feroxi-dorsal-tip = Dorsal Tip
+marking-FeroxiTipTwoToneTailAndDorsal = 带尖与背鳍的双色尾巴
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail = 基础尾巴
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail-top-tip = 上尾鳍尖
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail-bottom-tip = 下尾鳍尖
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-tail-under = 尾下
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-dorsal = 基础背鳍
+marking-FeroxiTipTwoToneTailAndDorsal-feroxi-dorsal-tip = 背鳍尖
 
-marking-FeroxiTorsoStripesBlitz = Small Under Arm Stripes
-marking-FeroxiTorsoStripesBlitz-feroxi-torso-stripes-blitz = Stripes
+marking-FeroxiTorsoStripesBlitz = 腋下小条纹
+marking-FeroxiTorsoStripesBlitz-feroxi-torso-stripes-blitz = 条纹
 
-marking-FeroxiTorsoStripesTiger = Full Stripes
-marking-FeroxiTorsoStripesTiger-feroxi-torso-stripes-tiger = Stripes
+marking-FeroxiTorsoStripesTiger = 全身条纹
+marking-FeroxiTorsoStripesTiger-feroxi-torso-stripes-tiger = 条纹
 
-marking-FeroxiTorsoCountershadingF = Countershading (Feminine)
-marking-FeroxiTorsoCountershadingF-feroxi-torso-countershading-f = Countershading
+marking-FeroxiTorsoCountershadingF = 反荫蔽（女性）
+marking-FeroxiTorsoCountershadingF-feroxi-torso-countershading-f = 反荫蔽
 
-marking-FeroxiTorsoCountershadingM = Countershading (Masculine)
-marking-FeroxiTorsoCountershadingM-feroxi-torso-countershading-m = Countershading
+marking-FeroxiTorsoCountershadingM = 反荫蔽（男性）
+marking-FeroxiTorsoCountershadingM-feroxi-torso-countershading-m = 反荫蔽
 
-marking-FeroxiLegStripesBlitz = Calf Stripes
-marking-FeroxiLegStripesBlitz-feroxi-leg-stripes-blitz = Stripes
+marking-FeroxiLegStripesBlitz = 小腿条纹
+marking-FeroxiLegStripesBlitz-feroxi-leg-stripes-blitz = 条纹
 
-marking-FeroxiLegStripesTiger = Full Stripes
-marking-FeroxiLegStripesTiger-feroxi-leg-stripes-tiger = Stripes
+marking-FeroxiLegStripesTiger = 全身条纹
+marking-FeroxiLegStripesTiger-feroxi-leg-stripes-tiger = 条纹
 
-marking-FeroxiArmStripesBlitz = Shoulder Stripes
-marking-FeroxiArmStripesBlitz-feroxi-arm-stripes-blitz = Stripes
+marking-FeroxiArmStripesBlitz = 肩部条纹
+marking-FeroxiArmStripesBlitz-feroxi-arm-stripes-blitz = 条纹
 
-marking-FeroxiArmStripesTiger = Full Stripes
-marking-FeroxiArmStripesTiger-feroxi-arm-stripes-tiger = Stripes
+marking-FeroxiArmStripesTiger = 全身条纹
+marking-FeroxiArmStripesTiger-feroxi-arm-stripes-tiger = 条纹
 
 # female first names
 rmc-name-feroxi-female-1 = Seliara

@@ -1,8 +1,8 @@
 command-description-stationevent-simulate =
-    Given a BasicStationEventScheduler prototype, N Rounds, N Players, mean round end, and stddev of round end, Simulates N number of rounds in which events will occur and prints the occurrences of every event after.
+    给定一个BasicStationEventScheduler原型、N个回合、N名玩家、平均回合结束时间和回合结束时间的标准差，模拟N个回合中事件的发生情况，并打印之后每个事件的出现次数。
 command-description-stationevent-lsprob =
-    Given a BasicStationEventScheduler prototype, lists the probability of different station events occuring out of the entire pool with current conditions.
+    给定一个BasicStationEventScheduler原型，列出在当前条件下整个事件池中各空间站事件发生的概率。
 command-description-stationevent-lsprobtheoretical =
-    Given a BasicStationEventScheduler prototype, player count, and round time, lists the probability of different station events occuring based on the specified number of players and round time.
+    给定一个BasicStationEventScheduler原型、玩家人数和回合时间，根据指定的玩家人数和回合时间列出各空间站事件发生的概率。
 command-description-stationevent-prob =
-    Given a BasicStationEventScheduler prototype and an event prototype, returns the probability of a single station event occuring out of the entire pool with current conditions.
+    给定一个BasicStationEventScheduler原型和一个事件原型，返回在当前条件下整个事件池中单个空间站事件发生的概率。

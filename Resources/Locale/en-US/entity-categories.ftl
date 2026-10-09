@@ -1,10 +1,10 @@
-entity-category-name-actions = Actions
-entity-category-name-game-rules = Game Rules
-entity-category-name-objectives = Objectives
-entity-category-name-roles = Mind Roles
-entity-category-name-mapping = Mapping
-entity-category-name-donotmap = Do not map
-entity-category-name-status-effects = Status Effects
-entity-category-name-xeno-artifact-effects = Xeno Artifact Effects
+entity-category-name-actions = 动作
+entity-category-name-game-rules = 游戏规则
+entity-category-name-objectives = 目标
+entity-category-name-roles = 意识角色
+entity-category-name-mapping = 地图编辑
+entity-category-name-donotmap = 请勿放置
+entity-category-name-status-effects = 状态效果
+entity-category-name-xeno-artifact-effects = 异形神器效果
 
-entity-category-suffix-donotmap = DO NOT MAP
+entity-category-suffix-donotmap = 请勿放置

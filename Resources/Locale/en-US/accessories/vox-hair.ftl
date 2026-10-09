@@ -1,86 +1,86 @@
-marking-VoxHairAfro = Vox Afro
-marking-VoxHairAfro-afro_s = Vox Afro
+marking-VoxHairAfro = Vox爆炸头
+marking-VoxHairAfro-afro_s = Vox爆炸头
 
-marking-VoxHairBraids = Vox Braids
-marking-VoxHairBraids-braid_s = Vox Braids
+marking-VoxHairBraids = Vox辫子
+marking-VoxHairBraids-braid_s = Vox辫子
 
-marking-VoxHairCrestedQuills = Vox Crested Quills
-marking-VoxHairCrestedQuills-crestedquills_s = Vox Crested Quills
+marking-VoxHairCrestedQuills = Vox冠羽
+marking-VoxHairCrestedQuills-crestedquills_s = Vox冠羽
 
-marking-VoxHairEmperorQuills = Vox Emperor Quills
-marking-VoxHairEmperorQuills-emperorquills_s = Vox Emperor Quills
+marking-VoxHairEmperorQuills = Vox帝王羽
+marking-VoxHairEmperorQuills-emperorquills_s = Vox帝王羽
 
-marking-VoxHairFlowing = Vox Flowing
-marking-VoxHairFlowing-flowing_s = Vox Flowing
+marking-VoxHairFlowing = Vox飘逸羽
+marking-VoxHairFlowing-flowing_s = Vox飘逸羽
 
-marking-VoxHairHawk = Vox Hawk
-marking-VoxHairHawk-hawk_s = Vox Hawk
+marking-VoxHairHawk = Vox鹰式羽
+marking-VoxHairHawk-hawk_s = Vox鹰式羽
 
-marking-VoxHairHorns = Vox Horns
-marking-VoxHairHorns-horns_s = Vox Horns
+marking-VoxHairHorns = Vox角
+marking-VoxHairHorns-horns_s = Vox角
 
-marking-VoxHairKeelQuills = Vox Keel Quills
-marking-VoxHairKeelQuills-keelquills_s = Vox Keel Quills
+marking-VoxHairKeelQuills = Vox龙骨羽
+marking-VoxHairKeelQuills-keelquills_s = Vox龙骨羽
 
-marking-VoxHairKeetQuills = Vox Keet Quills
-marking-VoxHairKeetQuills-keetquills_s = Vox Keet Quills
+marking-VoxHairKeetQuills = Vox小雀羽
+marking-VoxHairKeetQuills-keetquills_s = Vox小雀羽
 
-marking-VoxHairKingly = Vox Kingly
-marking-VoxHairKingly-kingly_s = Vox Kingly
+marking-VoxHairKingly = Vox王者羽
+marking-VoxHairKingly-kingly_s = Vox王者羽
 
-marking-VoxHairLongBraid = Vox Long Braid
-marking-VoxHairLongBraid-long_braid_s = Vox Long Braid
+marking-VoxHairLongBraid = Vox长辫
+marking-VoxHairLongBraid-long_braid_s = Vox长辫
 
-marking-VoxHairMange = Vox Mange
-marking-VoxHairMange-mange_s = Vox Mange
+marking-VoxHairMange = Vox疥癣羽
+marking-VoxHairMange-mange_s = Vox疥癣羽
 
-marking-VoxHairMohawk = Vox Mohawk
-marking-VoxHairMohawk-mohawk_s = Vox Mohawk
+marking-VoxHairMohawk = Vox莫霍克
+marking-VoxHairMohawk-mohawk_s = Vox莫霍克
 
-marking-VoxHairNights = Vox Nights
-marking-VoxHairNights-nights_s = Vox Nights
+marking-VoxHairNights = Vox夜羽
+marking-VoxHairNights-nights_s = Vox夜羽
 
-marking-VoxHairPony = Vox Pony
-marking-VoxHairPony-ponytail_s = Vox Pony
+marking-VoxHairPony = Vox马尾
+marking-VoxHairPony-ponytail_s = Vox马尾
 
-marking-VoxHairRazorClipped = Vox Razor (Clipped)
-marking-VoxHairRazorClipped-razor_clipped_s = Vox Razor (Clipped)
+marking-VoxHairRazorClipped = Vox剃刀（修剪）
+marking-VoxHairRazorClipped-razor_clipped_s = Vox剃刀（修剪）
 
-marking-VoxHairRazor = Vox Razor
-marking-VoxHairRazor-razor_s = Vox Razor
+marking-VoxHairRazor = Vox剃刀
+marking-VoxHairRazor-razor_s = Vox剃刀
 
-marking-VoxHairSortBraid = Vox Short Braid
-marking-VoxHairSortBraid-short_braid_s = Vox Short Braid
+marking-VoxHairSortBraid = Vox短辫
+marking-VoxHairSortBraid-short_braid_s = Vox短辫
 
-marking-VoxHairShortQuills = Vox Short Quills
-marking-VoxHairShortQuills-shortquills_s = Vox Short Quills
+marking-VoxHairShortQuills = Vox短羽
+marking-VoxHairShortQuills-shortquills_s = Vox短羽
 
-marking-VoxHairSurf = Vox Surf
-marking-VoxHairSurf-surf_s = Vox Surf
+marking-VoxHairSurf = Vox冲浪羽
+marking-VoxHairSurf-surf_s = Vox冲浪羽
 
-marking-VoxHairTielQuills = Vox Tiel Quills
-marking-VoxHairTielQuills-tielquills_s = Vox Tiel Quills
+marking-VoxHairTielQuills = Vox田鸫羽
+marking-VoxHairTielQuills-tielquills_s = Vox田鸫羽
 
-marking-VoxHairYasu = Vox Yasuhiro
-marking-VoxHairYasu-yasu_s = Vox Yasuhiro
+marking-VoxHairYasu = Vox安广
+marking-VoxHairYasu-yasu_s = Vox安广
 
-marking-VoxHairWiseBraid = Vox Wise Braids
-marking-VoxHairWiseBraid-wise_braid_s = Vox Wise Braids
+marking-VoxHairWiseBraid = Vox智者辫
+marking-VoxHairWiseBraid-wise_braid_s = Vox智者辫
 
-marking-VoxHairSpotty = Vox Spotty Quills
-marking-VoxHairSpotty-spotty_s = Vox Spotty Quills
+marking-VoxHairSpotty = Vox斑点羽
+marking-VoxHairSpotty-spotty_s = Vox斑点羽
 
-marking-VoxHairMadScientist = Vox Mad Scientist
-marking-VoxHairMadScientist-mad_scientist_s = Vox Mad Scientist
+marking-VoxHairMadScientist = Vox疯狂科学家
+marking-VoxHairMadScientist-mad_scientist_s = Vox疯狂科学家
 
-marking-VoxHairHedgehog = Vox Hedgehog
-marking-VoxHairHedgehog-hedgehog_s = Vox Hedgehog
+marking-VoxHairHedgehog = Vox刺猬
+marking-VoxHairHedgehog-hedgehog_s = Vox刺猬
 
-marking-VoxHairBushy = Vox Bushy Quills
-marking-VoxHairBushy-bushy_s = Vox Bushy Quills
+marking-VoxHairBushy = Vox浓密羽
+marking-VoxHairBushy-bushy_s = Vox浓密羽
 
-marking-VoxHairSlick = Vox Slick Quills
-marking-VoxHairSlick-slick_s = Vox Slick Quills
+marking-VoxHairSlick = Vox光滑羽
+marking-VoxHairSlick-slick_s = Vox光滑羽
 
-marking-VoxHairCatfish = Vox Catfish
-marking-VoxHairCatfish-catfish_s = Vox Catfish
+marking-VoxHairCatfish = Vox鲶鱼
+marking-VoxHairCatfish-catfish_s = Vox鲶鱼

@@ -1,92 +1,92 @@
 # Spells
-spellbook-fireball-name = Fireball
-spellbook-fireball-desc = Get most crew exploding with rage when they see this fireball heading toward them! Upgradeable.
+spellbook-fireball-name = 火球术
+spellbook-fireball-desc = 看着火球朝他们飞来的船员们会气炸！可升级。
 
-spellbook-blink-name = Blink
-spellbook-blink-desc = Don't blink or you'll miss yourself teleporting away.
+spellbook-blink-name = 闪现
+spellbook-blink-desc = 别眨眼，不然你就错过自己瞬移走的那一刻了。
 
-spellbook-voidapplause-name = Void Applause
-spellbook-voidapplause-desc = Swap places with the target, doesn't it make you want to do the boogie?
+spellbook-voidapplause-name = 虚空掌声
+spellbook-voidapplause-desc = 与目标交换位置，难道不让你想跳起舞来吗？
 
-spellbook-knock-name = Knock
-spellbook-knock-desc = Opens all airlocks, crates and lockers nearby.
+spellbook-knock-name = 叩门
+spellbook-knock-desc = 打开附近所有的气闸、箱子和储物柜。
 
-spellbook-force-wall-name = Force Wall
-spellbook-force-wall-desc = Make three walls of pure force that you can pass through, but others can't.
+spellbook-force-wall-name = 力场墙
+spellbook-force-wall-desc = 制造三面纯力场构成的墙，你能穿过，别人不能。
 
-spellbook-repulse-name = Repulse
-spellbook-repulse-desc = Tell people to GITTAH`WEIGH and push 'em away from you.
+spellbook-repulse-name = 斥退
+spellbook-repulse-desc = 让人滚远点，把他们从你身边推开。
 
-spellbook-smoke-name = Smoke
-spellbook-smoke-desc = Summons a cloud of smoke, it's pretty obvious.
+spellbook-smoke-name = 烟雾
+spellbook-smoke-desc = 召唤一团烟雾，相当明显。
 
-spellbook-polymorph-spider-name = Spider Polymorph
-spellbook-polymorph-spider-desc = Transforms you into a spider, man!
+spellbook-polymorph-spider-name = 蜘蛛变形
+spellbook-polymorph-spider-desc = 把你变成一只蜘蛛，老兄！
 
-spellbook-polymorph-rod-name = Rod Polymorph
-spellbook-polymorph-rod-desc = Change into an Immovable Rod with limited movement.
+spellbook-polymorph-rod-name = 长杆变形
+spellbook-polymorph-rod-desc = 变成一根移动范围有限的不可移动长杆。
 
-spellbook-charge-name = Charge
-spellbook-charge-desc = Adds a charge back to your wand!
+spellbook-charge-name = 充能
+spellbook-charge-desc = 为你的魔杖补回一次充能！
 
-spellbook-ethereal-jaunt-name = Ethereal Jaunt
-spellbook-ethereal-jaunt-description = Slip into the ethereal plane to slip away from your enemies!
+spellbook-ethereal-jaunt-name = 以太漫步
+spellbook-ethereal-jaunt-description = 溜进以太位面，从敌人眼前溜走！
 
-spellbook-mind-swap-name = Mind Swap
-spellbook-mind-swap-description = Exchange bodies with another person!
+spellbook-mind-swap-name = 意识交换
+spellbook-mind-swap-description = 与另一个人交换身体！
 
-spellbook-animate-name = Animate
-spellbook-animate-description = Bring an inanimate object to life!
+spellbook-animate-name = 赋予生命
+spellbook-animate-description = 让一件无生命的物体活过来！
 
-spellbook-smite-name = Smite
-spellbook-smite-desc = Don't like them? EXPLODE them into giblets! Requires Wizard Robe & Hat.
+spellbook-smite-name = 天罚
+spellbook-smite-desc = 不喜欢他们？把他们炸成碎块！需要巫师袍和巫师帽。
 
-spellbook-cluwne-name = Cluwne's Curse
-spellbook-cluwne-desc = For when you really hate someone and Smite isn't enough. Requires Wizard Robe & Hat.
+spellbook-cluwne-name = 克卢恩诅咒
+spellbook-cluwne-desc = 当你真的恨透了某人，而天罚还不够用的时候。需要巫师袍和巫师帽。
 
-spellbook-slip-name = Slippery Slope
-spellbook-slip-desc = Learn the ancient ways of the Janitor and curse your target to be slippery.
+spellbook-slip-name = 滑溜坡道
+spellbook-slip-desc = 学习清洁工的古老技艺，诅咒你的目标变得滑溜。
 
-spellbook-item-recall-name = Item Recall
-spellbook-item-recall-description = Mark a held item and summon it back at any time with just a snap of your fingers!
+spellbook-item-recall-name = 物品召回
+spellbook-item-recall-description = 标记一件手持物品，只需打个响指就能随时将其召回！
 
-spellbook-guardian-deck-name = Tarot Deck
-spellbook-guardian-deck-description = A bizarre deck of card that grants you a spectral guardian when used.
+spellbook-guardian-deck-name = 塔罗牌组
+spellbook-guardian-deck-description = 一副古怪的卡牌，使用后会赐予你一具幽魂守卫。
 
 # Equipment
 
-spellbook-wand-polymorph-door-name = Wand of Entrance
-spellbook-wand-polymorph-door-description = For when you need a get-away route.
+spellbook-wand-polymorph-door-name = 入口魔杖
+spellbook-wand-polymorph-door-description = 当你需要一条逃跑路线时使用。
 
-spellbook-wand-polymorph-carp-name = Wand of Carp Polymorph
-spellbook-wand-polymorph-carp-description = For when you need a carp filet quick and the clown is looking juicy.
+spellbook-wand-polymorph-carp-name = 鲤鱼变形魔杖
+spellbook-wand-polymorph-carp-description = 当你急需一块鲤鱼排，而小丑看起来又多汁的时候。
 
-spellbook-wand-locker-name = Wand of the Locker
-spellbook-wand-locker-description = Shoot cursed lockers at your enemies and lock em away!
+spellbook-wand-locker-name = 储物柜魔杖
+spellbook-wand-locker-description = 向敌人射出被诅咒的储物柜，把他们锁起来！
 
-spellbook-hammer-mjollnir-name = Mjollnir
-spellbook-hammer-mjollnir-description = Wield the power of THUNDER in your hands. Send foes flying with a mighty swing or by throwing it right at em!
+spellbook-hammer-mjollnir-name = 妙尔尼尔
+spellbook-hammer-mjollnir-description = 将雷霆之力握于手中。用一记猛击或直接投掷，让敌人飞出去！
 
-spellbook-hammer-singularity-name = Singularity Hammer
-spellbook-hammer-singularity-description = Ever wonder what it'd be like to be the singularity? Swing this hammer to draw in your surroundings, even works if you miss!
+spellbook-hammer-singularity-name = 奇点锤
+spellbook-hammer-singularity-description = 曾想过成为奇点是什么感觉吗？挥动这把锤子就能牵引周围的一切，即使打空也有效！
 
-spellbook-staff-animation-name = Staff of Animation
-spellbook-staff-animation-description = Bring inanimate objects to life!
+spellbook-staff-animation-name = 赋生法杖
+spellbook-staff-animation-description = 让无生命的物体活过来！
 
 # Events
 
-spellbook-event-summon-ghosts-name = Summon Ghosts
-spellbook-event-summon-ghosts-description = Who ya gonna call?
+spellbook-event-summon-ghosts-name = 召唤幽灵
+spellbook-event-summon-ghosts-description = 你要打给谁？
 
-spellbook-event-summon-guns-name = Summon Guns
-spellbook-event-summon-guns-description = AK47s for everyone! Places a random gun in front of everybody. Disables refunds when bought!
+spellbook-event-summon-guns-name = 召唤枪械
+spellbook-event-summon-guns-description = 人手一把AK47！在每个人面前放一把随机枪械。购买后无法退款！
 
-spellbook-event-summon-magic-name = Summon Magic
-spellbook-event-summon-magic-description = Places a random magical item in front of everybody. Nothing could go wrong! Disables refunds when bought!
+spellbook-event-summon-magic-name = 召唤魔法
+spellbook-event-summon-magic-description = 在每个人面前放一件随机魔法物品。不可能出岔子！购买后无法退款！
 
 # Upgrades
-spellbook-upgrade-fireball-name = Upgrade Fireball
-spellbook-upgrade-fireball-description = Upgrades Fireball to a maximum of level 3!
+spellbook-upgrade-fireball-name = 升级火球术
+spellbook-upgrade-fireball-description = 将火球术最高升级到3级！
 
-spellbook-upgrade-jaunt-name = Upgrade Ethereal Jaunt
-spellbook-upgrade-jaunt-description = Upgrades Jaunt to a maximum of level 3!
+spellbook-upgrade-jaunt-name = 升级以太漫步
+spellbook-upgrade-jaunt-description = 将以太漫步最高升级到3级！

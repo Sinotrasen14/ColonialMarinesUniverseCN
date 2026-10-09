@@ -1,4 +1,4 @@
-﻿### Messages that pop up when metabolizing ephedrine.
+### Messages that pop up when metabolizing ephedrine.
 
-ephedrine-effect-tight-pain = You feel a tight pain in your chest.
-ephedrine-effect-heart-pounds = Your heart pounds!
+ephedrine-effect-tight-pain = 你感到胸口一阵紧缩的疼痛。
+ephedrine-effect-heart-pounds = 你的心脏剧烈跳动！

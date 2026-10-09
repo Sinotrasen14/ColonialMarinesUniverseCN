@@ -1,10 +1,10 @@
-dice-component-on-examine-message-part-1 = A {$name} with [color=lightgray]{$sidesAmount}[/color] sides.
-dice-component-on-roll-land = { CAPITALIZE(THE($die)) } lands on {$currentSide}.
+dice-component-on-examine-message-part-1 = 一个{$name}，有[color=lightgray]{$sidesAmount}[/color]个面。
+dice-component-on-roll-land = { CAPITALIZE(THE($die)) }落在了{$currentSide}。
 
-dice-component-type-die = die
+dice-component-type-die = 骰子
 
-dice-component-roll-generic = It has landed on a [color=white]{$currentSide}[/color].
-dice-component-roll-specific = It has landed on [color=white]{$currentSide}[/color].
+dice-component-roll-generic = 它落在了[color=white]{$currentSide}[/color]。
+dice-component-roll-specific = 它落在了[color=white]{$currentSide}[/color]。
 
-dice-component-coin-value-1 = heads
-dice-component-coin-value-2 = tails
+dice-component-coin-value-1 = 正面
+dice-component-coin-value-2 = 反面

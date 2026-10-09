@@ -1,4 +1,4 @@
 ### Interaction Messages
 
 # Shown when repairing something
-comp-repairable-repair = You finish repairing {THE($target)} with {THE($tool)}
+comp-repairable-repair = 你修好了{THE($target)}，用的是{THE($tool)}

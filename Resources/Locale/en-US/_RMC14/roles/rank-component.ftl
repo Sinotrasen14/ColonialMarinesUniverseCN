@@ -1,4 +1,4 @@
 rmc-rank-component-examine = { CAPITALIZE(SUBJECT($user)) } { GENDER($user) ->
     [epicene] hold
     *[other] holds
-  } the rank of [color=white]{ $rank }[/color].
+  } 拥有军衔[color=white]{ $rank }[/color]。

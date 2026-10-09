@@ -1,3 +1,3 @@
-cmd-electrocute-desc = Electrocutes the specified entity, defaults to 10 seconds and 10 damage. Shocking!
-cmd-electrocute-help = Usage: electrocute <uid> [seconds] [damage]
-cmd-electrocute-entity-cannot-be-electrocuted = You cannot electrocute that entity!
+cmd-electrocute-desc = 电击指定实体，默认持续10秒、造成10点伤害。真刺激！
+cmd-electrocute-help = 用法：electrocute <uid> [seconds] [damage]
+cmd-electrocute-entity-cannot-be-electrocuted = 你无法电击那个实体！

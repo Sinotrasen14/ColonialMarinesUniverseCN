@@ -1,67 +1,67 @@
-rmc-new-to-job-popup-title = RMC14 New to Job Popup
-rmc-new-to-job-popup-job-name = Welcome to {$name}!
-rmc-new-to-job-additional = If you are ever confused on what to do, you can ask your seniors for help or press F1 > Mentor Help to get in contact with dedicated mentors who can help you.
-rmc-new-to-job-popup-close-button = All ready!
-rmc-new-to-job-popup-close-button-wait = The close button will be enabled after {$time} seconds.
+rmc-new-to-job-popup-title = RMC14新职业弹窗
+rmc-new-to-job-popup-job-name = 欢迎成为{$name}！
+rmc-new-to-job-additional = 如果你对要做的事感到困惑，可以向上级求助，或按F1 > 导师帮助，联系专门能帮到你的导师。
+rmc-new-to-job-popup-close-button = 全部就绪！
+rmc-new-to-job-popup-close-button-wait = 关闭按钮将在{$time}秒后启用。
 
-rmc-new-to-job-req-tech = As a requisitions technician, your job is to dispense supplies to the UNMC marines through either working the main lines or helping the logistics officer with supply drops.
+rmc-new-to-job-req-tech = 作为物资技术员，你的工作是通过在主线工作或协助后勤官进行补给空投，向UNMC陆战队员发放补给。
 
-                                             You will find on the left of cargo, the main area you spawn at, two lines with 3 vendors between them. Marines will line up at those lines at the start of the round and ask for supplies. You can find most of them within those three vendors, with any other requests either found in the surplus uniform vendor south of you or by ordering them in the ARSR consoles near to your lines.
+                                             你会发现在货运区左侧（你出生的主区域）有两条队伍，中间隔着3台售货机。回合开始时，陆战队员会在那里排队领取补给。大部分补给都在这三台售货机里，其他需求要么去你南边的剩余制服售货机找，要么在队伍附近的ARSR控制台上订购。
 
-                                             After the initial rush of supplying marines, your job now becomes to assist the logistics officer with handling supply drops. They will task you with packing ammo, taking supplies from the squad prep rooms north or south of your department, or getting additional supplies from other departments – all in the name of getting marines armed.
+                                             在最初的补给高峰过后，你的工作就变成协助后勤官处理补给空投。他们会让你打包弹药、从部门南北两侧的小队准备室取补给，或从其他部门获取额外物资——这一切都是为了给陆战队员提供武装。
 
-rmc-new-to-job-nurse = As a nurse, your job is to assist doctors and learn the basics of medicine, so don't stress it if you're not constantly working. You can ask a doctor to show you the basics, and usually they will be more than happy to teach you how to treat patients.
+rmc-new-to-job-nurse = 作为护士，你的工作是协助医生并学习医学基础，所以如果你不是一直忙个不停，也不必紧张。你可以请医生给你演示基础知识，他们通常都很乐意教你如何治疗病人。
 
-                                             Your basic medical topical supplies are gauze / trauma kits / surgical lines for treating brute damage and ointment / burn kits / synth grafts for treating burn damage. Gauze and ointment are basic supplies anyone can use, with brute/burn kits healing damage fast and effectively when used by people with medical training – surgical lines and synth grafts are infinite use and can treat brute and burn effectively, so your go-to tools should be those. Taking brute damage can cause bleeding, reducing a person's blood level – so, ensure you treat their brute fast and early to prevent major blood loss.
+                                             你的基础外用医疗用品是纱布/创伤包/手术线（治疗钝伤）和药膏/烧伤包/合成移植物（治疗灼伤）。纱布和药膏是任何人都能用的基础用品，创伤包/烧伤包在受过医疗训练的人使用时能快速有效地治疗伤害——手术线和合成移植物可以无限使用，能有效治疗钝伤和灼伤，所以它们应该是你的首选工具。受到钝伤会导致出血，降低人的血量——所以要尽早尽快治疗他们的钝伤，防止大量失血。
 
-                                             You can also use chemicals to treat people, healing them over time after an initial dosage. These can cover damage numbers that your typical topical supplies will only partially cover. Bicaradine, Meralyne, and their combination (MeraBic) treat Brute - Kelotane, Dermaline, and their combination (KeloDerma) treat burns. Kelotane and Bicaradine overdose at 30 - 50 units, while Meralyne and Dermaline overdose at 15 - 25 units. Ensure you do not give people too many units of chems, or they will suffer negative effects.
+                                             你也可以用化学品治疗病人，在初次用药后随时间慢慢恢复。这些能覆盖你通常的外用用品只能部分覆盖的伤害数值。比卡瑞定、梅拉林及其组合（MeraBic）治疗钝伤——凯洛坦、德马林及其组合（KeloDerma）治疗灼伤。凯洛坦和比卡瑞定在30至50单位时过量，而梅拉林和德马林在15至25单位时过量。确保不要给病人太多单位的化学品，否则他们会出现负面效果。
 
-                                             You can use a Health Analyzer on a person to check their damage types, health and some suggestions for treatment. When a person is in critical state (Having taken 100+ damge), they will be lying on the floor unconscious, and after taking 200+ damage, they are dead. You can revive them with a defibrillator if their HP returns to over 0 through applying your topical supplies, and you can slow down their rotting (and reducing airloss damage when in crit) by performing CPR, clicking on them in 4 second intervals with nothing in-hand.
+                                             你可以对病人使用健康分析仪来检查他们的伤害类型、生命值以及一些治疗建议。当一个人处于濒危状态（受到100+伤害）时，他们会倒在地上昏迷，受到200+伤害后就死亡了。如果你的外用用品让他们的生命值回升到0以上，你就可以用除颤器复活他们；你还可以通过心肺复苏（空手以4秒间隔点击他们）来减缓他们的腐烂（并减少濒危时的缺氧伤害）。
 
-rmc-new-to-job-rifleman = As a rifleman, you are the main fighting force of your squad, having numbers to bolster. You have strength and less likelihood of being captured by the enemy force in numbers and proximity.
+rmc-new-to-job-rifleman = 作为步枪手，你是小队的主要战斗力，靠人数壮大声势。人数和彼此靠近让你更有力量，也更不容易被敌军俘虏。
 
-                                             As you wake up from cryo, you will be hungry. Get some food from the food vendors at the top or bottom of the room you woke up in. You can interact with left click and inspect with Shift + Left Click. Grab some food, and press E with the food in your hand to eat it.
+                                             你从冷冻舱醒来时会很饿。从你醒来房间顶部或底部的食品售货机买点吃的。你可以左键互动，Shift+左键检查。拿点食物，手持食物按E吃掉。
 
-                                             After you've eaten, walk left; you will see a large line of vendors – these are where you will get your clothing and other utility items, such as belts and pouches. Anything in orange is important, and green is mandatory. After getting your gear, continue left into the next room. You will find shared vendors for weapons, attachments, and surplus tools. The weapon racks are on the far left top and bottom of the shared room – grab a weapon and a magazine. You can load weapons by placing a magazine in your hand and clicking on the gun in your other hand. You can switch your main hand with X.
+                                             吃完后向左走，你会看到一大排售货机——这些是获取衣物和其他实用物品（如腰带和口袋）的地方。橙色的都很重要，绿色的是必需品。拿到装备后，继续向左进入下一个房间。你会找到武器、配件和剩余工具的公共售货机。武器架在公共房间最左侧的顶部和底部——拿一把武器和一个弹匣。你可以把弹匣拿在手里，然后点击另一只手里的枪来装弹。用X键切换惯用手。
 
-                                             Once you are supplied, head out into the hallway, and enter the room that is either south or north of you – it'll be a large room with lots of coloured chairs surrounding a podium. You will be briefed here if you joined at the start of the round – if you have missed the brief, do not worry; proceed to the next section.
+                                             补给完毕后就走进走廊，进入你南边或北边的房间——那是一个大房间，很多彩色椅子围着一个讲台。如果你在回合开始时就加入了，会在这里听取简报——如果错过了简报也不用担心，直接进入下一环节。
 
-                                             Now, head left, past medical (white walls) and into the hangar. A yellow dropship will land on the right landing pad, near to the white walls, eventually. Enter that dropship, buckle yourself to a seat by clicking on a chair, and eventually you will be taken groundside.
+                                             现在向左走，经过医疗区（白墙）进入机库。一架黄色运输机会最终降落在右侧、靠近白墙的停机坪上。进入那架运输机，点击椅子把自己扣在座位上，最终你就会被带到地面。
 
-                                             On the right of your screen, you will see a grey and black rectangle with a coloured arrow, with 'SL' underneath – this is a pointer for your squad leader. Follow it to find your squad. You can speak to your squad by pressing T and then putting a ';h' at the start of your message. This will only work if the communications relay tower is fixed and powered, which you don't need to worry about, but it will mean that sometimes this won't work. You can speak to those around you by simply pressing T and typing.
+                                             在屏幕右侧，你会看到一个带彩色箭头的灰黑色矩形，下面写着"SL"——这是指向你小队长的指针。跟着它找到你的小队。你可以按T然后在消息开头加上';h'来和小队通话。这只有在通讯中继塔修好并供电时才有效，你不用担心这个，但它意味着有时会失灵。你只需按T打字就可以和周围的人说话。
 
-                                             You can do a left curly bracket at the start of your message to type in 'LOOC', which will let you talk about things outside of your character, which is helpful for telling people you are new or need help.
+                                             你可以在消息开头打个左花括号来输入'LOOC'，这样就能谈论角色之外的事情，有助于告诉别人你是新手或需要帮助。
 
-rmc-new-to-job-staff-officer = As a staff officer, your job is to “overwatch”, monitor and support the squad under your tasking, and relay orders from the operation Commander.
+rmc-new-to-job-staff-officer = 作为参谋官，你的工作是"监视"、监控并支援你负责的小队，并传达行动指挥官的命令。
 
-                                             Your main posting is in CIC, at one of four terminals marked by coloured metal plating corresponding to one of four squads. The terminal can send a squad message (send a blue, visible message to the squad regardless of comms), swap marines to another squad, assign someone as acting squad leader, and directly watch marines via helmet cameras (clicking on their name, which only works with a helmet or camera gear). You also have access to a live tactical map, which updates live with marine positions and statuses (alongside xenos, if sensors are up), and a telephone, which allows you to call any other telephone and communicate via speaking without the use of radio.
+                                             你的主要岗位在CIC，位于四台终端之一，终端用对应四个小队的彩色金属板标记。终端可以发送小队消息（无论通讯如何都向小队发送一条蓝色可见消息）、把陆战队员调到其他小队、指派某人担任代理小队长，并通过头盔摄像头直接观察陆战队员（点击他们的名字，只有带头盔或摄像头装备时才有效）。你还能查看实时战术地图，地图会实时更新陆战队员的位置和状态（如果传感器上线，还有异形），以及一部电话，可以拨打任何其他电话并通过说话进行通讯，无需无线电。
 
-                                             You can also send supply drops via the Supply Drops tab on the left. Communicate with Requisitions to ensure your supply drop has the supplies that are necessary and that the crate is ready over the requisitions radio frequency (u;). Once the crate is sealed, the crate can be sent on coordinates under roof level 0 or 1.
+                                             你还可以通过左侧的补给空投标签页发送补给空投。与物资申领部门沟通，确保补给空投里有必要的物资，且板条箱已在物资频率（u;）上准备就绪。板条箱封好后，可投送到屋顶等级0或1的坐标。
 
-                                             Normally, your presence at the briefing is necessary, but if you feel you might need more help or time, you can ask to be excused in order to experiment and test squad consoles.
+                                             通常你需要出席简报，但如果你觉得自己需要更多帮助或时间，可以请求离席，以便试验和测试小队控制台。
 
-rmc-new-to-job-military-police = As an MP, your job is to enforce Marine Law (MLAW) and the Standard Operating Procedure (SOP) for the Marines, along with acting as the first line of defence for the ship. The details of which can be found in the guidebook or in books vended from your gearing vendor, located to the left of the hypersleep room. The goal of MPs is to make the server a more immersive and enjoyable place for everyone. Do your best to uphold that goal, by mediating conflicts and assisting the crew and marines with their needs, using the minimal force required.
+rmc-new-to-job-military-police = 作为军事警察，你的工作是执行陆战队法（MLAW）和标准作业程序（SOP），同时充当舰船的第一道防线。详情可在指南手册中或你的装备售货机（位于超睡室左侧）售卖的书籍中找到。军事警察的目标是让服务器对每个人来说都更沉浸、更愉快。通过调解冲突、以最低限度的武力协助船员和陆战队员满足需求，尽力维护这一目标。
 
-                                             After getting a feel for MLAW and SOP at the start of an operation, MPs are typically posted at requisitions, lower medical, and briefing hall – anywhere you would find a large concentration of Marines – to better keep order. If you notice behaviour that stands out to you as unusual, it's a good idea to review the books again or ask your peers on the MP radio about the situation. The information you gain can help guide your actions. Usually, however, your mere presence will be enough to deter most issues. Keep an eye on the radio for signs of problems forming and respond accordingly to maintain tensions and prevent troublemakers from disrupting the ship's operations.
+                                             在行动开始时熟悉了MLAW和SOP之后，军事警察通常被派驻物资申领区、下层医疗区和简报大厅——任何陆战队员高度集中的地方——以更好地维持秩序。如果你注意到让你觉得异常的行为，最好再翻阅一下书籍，或通过军事警察无线电向同事询问情况。你获得的信息有助于指导你的行动。不过通常你的在场就足以震慑大多数问题。留意无线电中形成问题的迹象，并作出相应反应，以维持紧张局面、防止捣乱分子扰乱舰船行动。
 
-                                             If you, or another officer, make an arrest. The suspect will be brought to the brig for sentencing by the military warden or chief of military police (CMP) in the holding cell, located just southwest of the main entrance; this is also where the regular cells are. From here, you have permanent confinement – and the execution room to your west, and the armoury for red alert ship conditions is to your north. Only the Warden and CMP can open this armoury in standard ship codes, so ask them if you need access to store something.
+                                             如果你或其他警官进行逮捕，嫌疑人会被带到禁闭室，由军事典狱长或宪兵长（CMP）在位于正门西南的拘留室量刑；普通牢房也在这里。从这里往西有永久禁闭室和处决室，往北是红色警戒舰况用的军械库。在标准舰船代码下，只有典狱长和宪兵长能打开这个军械库，所以如果需要存放东西，就找他们。
 
-                                             After the Marines deploy, your time will be spent patrolling the ship, assisting with logistical tasks, moving boxes of intelligence to the computer lab on the second floor, and helping with mortuary duties. You can also advise and teach new players through drills or just general support, and you have ample spare time to head to FOB or walk around the ship to RP and hang out.
+                                             陆战队部署后，你的时间将用于在舰上巡逻、协助后勤任务、把情报箱搬到二楼的计算机实验室，以及帮忙处理太平间事务。你还可以通过演练或一般性支援来指导和教导新玩家，而且你有充足的闲暇时间去前进作战基地或在舰上走走，进行角色扮演和闲逛。
 
-                                             If survivors are recovered from the ground, it's your job to help process them and ensure they receive medical treatment and examination. Check your guidebook for details on third-party processing when you hear survivors are on the way up. You will also be expected to process and control prisoners of war, which can be found in the third-party section of the guidebook.
+                                             如果从地面救回了幸存者，你的工作就是帮忙处理他们，确保他们得到医疗救治和检查。当你听说幸存者正在被送上来时，请查阅指南手册中关于第三方处理的内容。你还需要处理和看管战俘，这些内容可在指南手册的第三方章节找到。
 
-rmc-new-to-job-dcc = As a Dropship Crew Chief, your job is to assist the pilots and ensure the smooth operation of the dropships.
+rmc-new-to-job-dcc = 作为运输机机组长，你的工作是协助飞行员，确保运输机平稳运行。
 
-                                             At the beginning of the round, decide which pilot you would like to assist and ask them what they would like installed on their ship. North of the dropships there is a room with a part fabricator and power loaders. Be sure to use the premade parts lying around the hangar before fabricating any additional ones.
+                                             在回合开始时，决定你想协助哪位飞行员，并询问他们想在机上安装什么。运输机北边有一个带零件制造机和动力装载机的房间。在制造任何额外零件之前，务必先使用机库里现成的预制零件。
 
-                                             Get in one of the loaders to pick up and install parts onto the appropriate hardpoints of the ships, and use the fabricator to print additional parts and ammunition. Every pilot has different preferences, so be sure to ask before you print anything! You may be asked to procure other items for the ships from medical or requisitions as well.
+                                             坐进其中一台装载机，拿起零件并安装到舰船相应的挂载点上，并用制造机打印额外的零件和弹药。每位飞行员的偏好都不同，所以打印任何东西之前务必先问问！你也可能被要求从医疗或物资申领部门为舰船取来其他物品。
 
-                                             Once the ships are prepped and the mission is underway, you will ride with the pilot and assist them with various tasks:
+                                             一旦舰船准备就绪、任务开始，你将随飞行员一起飞行，协助他们完成各种任务：
 
-                                             On The Dropship Alamo (Yellow) you will be expected to help load and unload various items. Intel documents and corpses are to be brought up and left in the hangar bay near the doors to medical.
+                                             在运输机阿拉莫号（黄色）上，你需要帮忙装卸各种物品。情报文件和尸体会被带上来，放在靠近医疗区大门的机库舱。
 
-                                             On The Dropship Normandy (Grey) you will be expected to reload the weapons between flights. Use the power loader to remove partially spent payloads from the weapons, combine boxes of ammunition, and insert it back into the guns. Completely empty weapons simply need fresh ammo inserted.
+                                             在运输机诺曼底号（灰色）上，你需要在飞行间隙重新装填武器。用动力装载机从武器上取下部分耗尽的载荷，合并弹药箱，再插回枪里。完全打空的武器只需插入新弹药即可。
 
-                                             In the case of a medevac, go to the back of the ship and interact with the red medevac module. This will bring the patient up onto your ship from the ground. Inform the Almayer's medical staff that they are coming aboard and make sure they are brought into their care.
+                                             遇到医疗后送时，走到舰船后部，与红色医疗后送模块互动。这会把病人从地面送上你的舰船。通知阿尔梅耶号的医疗人员他们正在登舰，并确保病人得到照料。
 
-                                             You may be required to perform additional tasks, such as retrieving medical supplies, obtaining parachutes, triage of revivable marine personnel, and any other task given by your assigned pilot.
+                                             你可能还需要执行额外任务，例如取医疗用品、拿降落伞、对可复活的陆战队员进行检伤分类，以及你指派的飞行员交给你的任何其他任务。

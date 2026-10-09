@@ -1,7 +1,7 @@
-rmc-deploy-popup-blocked = Deployment area is blocked!
-rmc-deploy-popup-surface = Deployment area must be on the planet's surface!
-rmc-deploy-popup-acid = The { $entity } is covered in acid!
-rmc-deploy-popup-start = You begin deployment...
-rmc-deployable-examine-hint = Use this item in your hand to deploy.
-rmc-deployed-collapse-hint = Use the [color=yellow]{ $tool }[/color] to collapse it.
-rmc-deployable-collapse-start = You start collapsing...
+rmc-deploy-popup-blocked = 部署区域被阻挡！
+rmc-deploy-popup-surface = 部署区域必须在行星表面！
+rmc-deploy-popup-acid = { $entity }被酸液覆盖！
+rmc-deploy-popup-start = 你开始部署……
+rmc-deployable-examine-hint = 在手中使用此物品即可部署。
+rmc-deployed-collapse-hint = 使用[color=yellow]{ $tool }[/color]将其收起。
+rmc-deployable-collapse-start = 你开始收起……

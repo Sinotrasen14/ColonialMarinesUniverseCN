@@ -1,76 +1,76 @@
-﻿rmc-squad-info-title = Squad Info
-rmc-squad-info-fireteams = [bold]Fireteams[/bold]
-rmc-squad-info-role = [bold]Role[/bold]
-rmc-squad-info-rank = [bold]Rank[/bold]
-rmc-squad-info-member = [bold]Member[/bold]
-rmc-squad-info-assign-ft = [bold]Assign FT[/bold]
-rmc-squad-info-actions = [bold]Actions[/bold]
-rmc-squad-info-squad-leader-name = [bold]Squad Leader: {$leader}[/bold]
-rmc-squad-info-squad-leader-none = [bold]Squad Leader: None[/bold]
-rmc-squad-info-team-leader-name = [bold]TL: {$leader}[/bold]
-rmc-squad-info-team-leader-none = [bold]Team Lead: Unassigned[/bold]
-rmc-squad-info-promote-team-leader = Promote to Team Leader
-rmc-squad-info-unassign-fireteam = Unassign from Fireteam
-rmc-squad-info-unassigned = [font size=16][bold]Unassigned[/bold][/font]
-rmc-squad-info-fireteam = [font size=16][bold]Fireteam {$fireteam}[/bold][/font]
-rmc-squad-info-tracking-selection = Tracking Selection
-rmc-squad-info-tracking-choose = Choose a new tracking target.
-rmc-squad-info-change-tracker = Change Tracker
-rmc-squad-info-none = none
+﻿rmc-squad-info-title = 小队信息
+rmc-squad-info-fireteams = [bold]火力小组[/bold]
+rmc-squad-info-role = [bold]职务[/bold]
+rmc-squad-info-rank = [bold]军衔[/bold]
+rmc-squad-info-member = [bold]成员[/bold]
+rmc-squad-info-assign-ft = [bold]分配火力小组[/bold]
+rmc-squad-info-actions = [bold]操作[/bold]
+rmc-squad-info-squad-leader-name = [bold]小队长：{$leader}[/bold]
+rmc-squad-info-squad-leader-none = [bold]小队长：无[/bold]
+rmc-squad-info-team-leader-name = [bold]队长：{$leader}[/bold]
+rmc-squad-info-team-leader-none = [bold]队长：未分配[/bold]
+rmc-squad-info-promote-team-leader = 晋升为队长
+rmc-squad-info-unassign-fireteam = 从火力小组中移除
+rmc-squad-info-unassigned = [font size=16][bold]未分配[/bold][/font]
+rmc-squad-info-fireteam = [font size=16][bold]火力小组{$fireteam}[/bold][/font]
+rmc-squad-info-tracking-selection = 追踪选择
+rmc-squad-info-tracking-choose = 选择一个新追踪目标。
+rmc-squad-info-change-tracker = 更改追踪器
+rmc-squad-info-none = 无
 
-rmc-squad-info-CommandingOfficer = Commanding Officer
-rmc-squad-info-ExecutiveOfficer = Executive Officer
-rmc-squad-info-AuxiliarySupportOfficer = Auxiliary Support Officer
-rmc-squad-info-ChiefMilitaryPolice = Chief Military Police
-rmc-squad-info-ChiefEngineer = Chief Engineer
-rmc-squad-info-ChiefMedicalOfficer = Chief Medical Officer
-rmc-squad-info-SeniorEnlistedAdvisor = Senior Enlisted Advisor
-rmc-squad-info-Quartermaster = Logistics Officer
-rmc-squad-info-MilitaryWarden = Military Warden
-rmc-squad-info-SectionSergeant = Section Sergeant
-rmc-squad-info-PVESquadLeader = Squad Leader
-rmc-squad-info-SquadLeader = Squad Leader
-rmc-squad-info-FireteamLeader = Fireteam Leader
-rmc-squad-info-Rifleman = Rifleman
-rmc-squad-info-BattleBuddy = Battle Buddy
+rmc-squad-info-CommandingOfficer = 指挥官
+rmc-squad-info-ExecutiveOfficer = 副指挥官
+rmc-squad-info-AuxiliarySupportOfficer = 辅助支援官
+rmc-squad-info-ChiefMilitaryPolice = 宪兵长
+rmc-squad-info-ChiefEngineer = 总工程师
+rmc-squad-info-ChiefMedicalOfficer = 医疗主管
+rmc-squad-info-SeniorEnlistedAdvisor = 高级士兵顾问
+rmc-squad-info-Quartermaster = 后勤官
+rmc-squad-info-MilitaryWarden = 军事典狱长
+rmc-squad-info-SectionSergeant = 分区中士
+rmc-squad-info-PVESquadLeader = 小队长
+rmc-squad-info-SquadLeader = 小队长
+rmc-squad-info-FireteamLeader = 火力小组长
+rmc-squad-info-Rifleman = 步枪手
+rmc-squad-info-BattleBuddy = 战斗伙伴
 
-rmc-squad-info-DirectorPmc = Director
-rmc-squad-info-LeaderPmcPVE = Force Leader
-rmc-squad-info-TeamLeaderPmcPVE = Team Leader
-rmc-squad-info-LeaderPmc = Team Leader
-rmc-squad-info-CorporateLiaison = Corporate Liaison
+rmc-squad-info-DirectorPmc = 主管
+rmc-squad-info-LeaderPmcPVE = 部队领袖
+rmc-squad-info-TeamLeaderPmcPVE = 队长
+rmc-squad-info-LeaderPmc = 队长
+rmc-squad-info-CorporateLiaison = 企业联络员
 
-rmc-squad-info-SupervisorWeYa = Legal Supervisor
-rmc-squad-info-LawyerWeYa = Legal Specialist
-rmc-squad-info-LeaderGoon = Security Leader
+rmc-squad-info-SupervisorWeYa = 法务主管
+rmc-squad-info-LawyerWeYa = 法务专员
+rmc-squad-info-LeaderGoon = 安保队长
 
-rmc-squad-info-SupervisorWeYaExecutive = Supervisor Executive
-rmc-squad-info-SupervisorWeYaSpecialist = Supervisor Specialist
+rmc-squad-info-SupervisorWeYaExecutive = 主管执行官
+rmc-squad-info-SupervisorWeYaSpecialist = 主管专员
 
-rmc-squad-info-ProvostMarshal = Provost Marshal
-rmc-squad-info-ProvostDeputyMarshal = Provost Deputy Marshal
-rmc-squad-info-ProvostChiefInspector = Provost Chief Inspector
-rmc-squad-info-ProvostInspector = Provost Inspector
-rmc-squad-info-ProvostTeamLeader = Provost Team Leader
-rmc-squad-info-ProvostAdvisor = Provost Advisor
+rmc-squad-info-ProvostMarshal = 宪兵总督察
+rmc-squad-info-ProvostDeputyMarshal = 宪兵副总督察
+rmc-squad-info-ProvostChiefInspector = 宪兵首席督察
+rmc-squad-info-ProvostInspector = 宪兵督察
+rmc-squad-info-ProvostTeamLeader = 宪兵队长
+rmc-squad-info-ProvostAdvisor = 宪兵顾问
 
-rmc-squad-info-LeaderSpp = Leader
-rmc-squad-info-LeaderFreelancer = Leader
+rmc-squad-info-LeaderSpp = 领袖
+rmc-squad-info-LeaderFreelancer = 领袖
 
-rmc-squad-info-FORECONCommandingOfficer = Commanding Officer
+rmc-squad-info-FORECONCommandingOfficer = 指挥官
 
-rmc-squad-info-InspectorTSEPA = TSEPA Inspector
-rmc-squad-info-SeniorConstableTSEPA = TSEPA Senior Constable
+rmc-squad-info-InspectorTSEPA = TSEPA督察
+rmc-squad-info-SeniorConstableTSEPA = TSEPA高级警员
 
-rmc-squad-info-PrimaryLandingZone = Primary Landing Zone
+rmc-squad-info-PrimaryLandingZone = 主着陆区
 
-rmc-squad-info-RCMPVESectionLead = Section Leader
-rmc-squad-info-RCMPVETeamLead = Team Leader
-rmc-squad-info-RCMPVETroopSergeant = Troop Sergeant
-rmc-squad-info-RCMPVETroopCommander = Troop Commander
+rmc-squad-info-RCMPVESectionLead = 分区队长
+rmc-squad-info-RCMPVETeamLead = 队长
+rmc-squad-info-RCMPVETroopSergeant = 部队中士
+rmc-squad-info-RCMPVETroopCommander = 部队指挥官
 
-rmc-squad-info-RCMTeamLead = Team Leader
-rmc-squad-info-RCMLieutenant = Lieutenant
+rmc-squad-info-RCMTeamLead = 队长
+rmc-squad-info-RCMLieutenant = 中尉
 
-rmc-squad-info-ParaTeamLeader = Team Leader
-rmc-squad-info-ParaCommander = Commander
+rmc-squad-info-ParaTeamLeader = 队长
+rmc-squad-info-ParaCommander = 指挥官

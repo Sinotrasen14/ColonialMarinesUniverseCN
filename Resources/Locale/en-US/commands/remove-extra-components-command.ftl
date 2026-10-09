@@ -1,5 +1,5 @@
-﻿cmd-removeextracomponents-desc = Removes all components from all entities of the specified id if that component is not in its prototype.\nIf no id is specified, it matches all entities.
+cmd-removeextracomponents-desc = 如果该组件不在实体原型中，则从指定ID的所有实体上移除该组件。\n如果未指定ID，则匹配所有实体。
 cmd-removeextracomponents-help = removeextracomponents / removeextracomponents <entityId>
-cmd-removeextracomponents-invalid-prototype-id = Can't find entity prototype with id {$id}.
-cmd-removeextracomponents-success = Removed {$count} components from {$entities},
-cmd-removeextracomponents-success-with-id = Removed {$count} components from {$entities} with id {$id}.
+cmd-removeextracomponents-invalid-prototype-id = 找不到ID为{$id}的实体原型。
+cmd-removeextracomponents-success = 已移除{$count}个组件，来源：{$entities}，
+cmd-removeextracomponents-success-with-id = 已移除{$count}个组件，来源：{$entities}（ID {$id}）。

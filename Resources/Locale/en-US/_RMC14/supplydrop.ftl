@@ -1,10 +1,10 @@
-rmc-supply-drop-not-operational = Supply drop pad is not operational.
-rmc-supply-drop-no-crate = No crate was detected on the drop pad. Get Requisitions on the line!
-rmc-supply-drop-underground = The landing zone is underground. The supply drop cannot reach here.
-rmc-supply-drop-blocked = The landing zone appears to be obstructed or out of bounds. Package would be lost on drop.
-rmc-supply-drop-crate-open = The crate is not secure on the drop pad. Please close it!
-rmc-supply-drop-insufficient-funds = Insufficient funds for supply drop. Cost: ${$cost}.
-rmc-supply-drop-cooldown = Supply drop is recharging. Wait for the cooldown to finish before launching again.
+rmc-supply-drop-not-operational = 补给空投平台未运行。
+rmc-supply-drop-no-crate = 空投平台上未检测到箱子。快联系军需处！
+rmc-supply-drop-underground = 着陆区位于地下。补给空投无法到达这里。
+rmc-supply-drop-blocked = 着陆区似乎被阻挡或超出范围。包裹会在投送时丢失。
+rmc-supply-drop-crate-open = 箱子在空投平台上未固定好。请关闭它！
+rmc-supply-drop-insufficient-funds = 补给空投资金不足。花费：${$cost}。
+rmc-supply-drop-cooldown = 补给空投正在充能。请等待冷却结束后再发射。
 
-rmc-supply-drop-crate-load = {$crate} loads into a launch tube. Stand clear!
-rmc-supply-drop-squad-announcement = {$crate} supply drop incoming. Heads up!
+rmc-supply-drop-crate-load = {$crate}已装入发射管。请退避！
+rmc-supply-drop-squad-announcement = {$crate}补给空投即将抵达。注意！

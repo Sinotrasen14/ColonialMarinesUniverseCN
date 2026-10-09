@@ -1,12 +1,12 @@
 command-description-tag-list =
-    Lists tags on the given entities.
+    列出指定实体上的标签。
 command-description-tag-with =
-    Returns only the entities with the given tag from the piped list of entities.
+    从管道实体列表中仅返回带有指定标签的实体。
 command-description-tag-add =
-    Adds a tag to the given entities.
+    为指定实体添加标签。
 command-description-tag-rm =
-    Removes a tag from the given entities.
+    从指定实体移除标签。
 command-description-tag-addmany =
-    Adds a list of tags to the given entities.
+    为指定实体添加一组标签。
 command-description-tag-rmmany =
-    Removes a list of tags from the given entities.
+    从指定实体移除一组标签。

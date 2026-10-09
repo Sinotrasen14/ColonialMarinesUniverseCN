@@ -1,155 +1,155 @@
-book-cnc-sheet = C&C 5e Character Sheet
+book-cnc-sheet = C&C 5e 角色卡
     --------------------------------------------------------------------------------------
-    SECTION 1:  THE BASICS
+    第1节：基础
     --------------------------------------------------------------------------------------
-    Character Name  :
-    Race / Class    :
-    Level / Exp Pts :
-    Background      :
-
-    --------------------------------------------------------------------------------------
-    SECTION 2: ABILITIES
-    --------------------------------------------------------------------------------------
-    Strength     =     10   (+0) 10 Base
-    Dexterity    =     10   (+0) 10 Base
-    Constitution =     10   (+0) 10 Base
-    Intelligence =     10   (+0) 10 Base
-    Wisdom       =     10   (+0) 10 Base
-    Charisma     =     10   (+0) 10 Base
-
-    Proficiency Bonus =
-    Perception (passive wisdom) =
-
-    Racial (Race)
-
-    Class (Class)
-
+    角色姓名        :
+    种族 / 职业     :
+    等级 / 经验值   :
+    背景            :
 
     --------------------------------------------------------------------------------------
-    SECTION 3:  SAVING THROWS
+    第2节：属性
     --------------------------------------------------------------------------------------
+    力量         =     10   (+0) 10 基础
+    敏捷         =     10   (+0) 10 基础
+    体质         =     10   (+0) 10 基础
+    智力         =     10   (+0) 10 基础
+    感知         =     10   (+0) 10 基础
+    魅力         =     10   (+0) 10 基础
 
-    ( )Strength     =      +0
-    ( )Dexterity    =      +0
-    ( )Constitution =      +0
-    ( )Intelligence =      +0
-    ( )Wisdom       =      +0
-    ( )Charisma     =      +0
+    熟练加值 =
+    察觉（被动感知） =
+
+    种族特性（种族）
+
+    职业特性（职业）
 
 
     --------------------------------------------------------------------------------------
-    SECTION 4:  SKILLS
+    第3节：豁免检定
     --------------------------------------------------------------------------------------
 
-    ( )  Acrobatics (Dex)      +0       ( )  Medicine (Wis)        +0
-    ( )  Animal Handling (Wis) +0       ( )  Nature (Int)          +0
-    ( )  Arcana (Int)          +0       ( )  Perception (Wis)      +0
-    ( )  Athletics  (Str)      +0       ( )  Performance (Cha)     +0
-    ( )  Deception (Cha)       +0       ( )  Persuasion (Cha)      +0
-    ( )  History (Int)         +0       ( )  Religion (Int)        +0
-    ( )  Insight (Wis)         +0       ( )  Sleight of Hand (Dex) +0
-    ( )  Intimidation (Cha)    +0       ( )  Stealth (Dex)         +0
-    ( )  Investigation (Int)   +0       ( )  Survival (Wis)        +0
+    ( )力量         =      +0
+    ( )敏捷         =      +0
+    ( )体质         =      +0
+    ( )智力         =      +0
+    ( )感知         =      +0
+    ( )魅力         =      +0
 
 
     --------------------------------------------------------------------------------------
-    SECTION 5:  COMBAT & HEALTH
+    第4节：技能
+    --------------------------------------------------------------------------------------
+
+    ( )  杂技（敏捷）            +0       ( )  医药（感知）          +0
+    ( )  驯兽（感知）            +0       ( )  自然（智力）          +0
+    ( )  奥秘（智力）            +0       ( )  察觉（感知）          +0
+    ( )  运动（力量）            +0       ( )  表演（魅力）          +0
+    ( )  欺瞒（魅力）            +0       ( )  说服（魅力）          +0
+    ( )  历史（智力）            +0       ( )  宗教（智力）          +0
+    ( )  洞悉（感知）            +0       ( )  巧手（敏捷）          +0
+    ( )  威吓（魅力）            +0       ( )  隐匿（敏捷）          +0
+    ( )  调查（智力）            +0       ( )  生存（感知）          +0
+
+
+    --------------------------------------------------------------------------------------
+    第5节：战斗与生命
     --------------------------------------------------------------------------------------
 
 
-    Armor Class          :
-    Initiative (passive) :
-    Speed                :
+    护甲等级          :
+    先攻（被动）      :
+    速度              :
 
-    Hit Dice             :
-    Max Hit Points       :
-    Current Hit Points   :
-    Temporary Hit Points :
+    生命骰            :
+    最大生命值        :
+    当前生命值        :
+    临时生命值        :
 
-    ATTACKS
-    Weapon type(Melee or Ranged)   /   Bonus   /   Damage (Type)
-
-    --------------------------------------------------------------------------------------
-    SECTION 6:  BACKGROUND
-    --------------------------------------------------------------------------------------
-
-    Age / Gender         :
-    Height / Weight      :
-    Eyes / Skin / Hair   :
-    Description          :
-
-    Background           :
-    Skill Proficiencies  :
-    Tool Proficiencies   :
-    Languages            :
-
-    Features             :
-    Con of Choice        :
-    Traits               :
-    Ideal                :
-    Bonds                :
-    Flaws                :
+    攻击
+    武器类型（近战或远程）   /   加值   /   伤害（类型）
 
     --------------------------------------------------------------------------------------
-    SECTION 7: EXTRAS
+    第6节：背景
     --------------------------------------------------------------------------------------
-    Equipment List
-    Description                 Cost       Weight
+
+    年龄 / 性别       :
+    身高 / 体重       :
+    眼睛 / 肤色 / 发色 :
+    描述              :
+
+    背景              :
+    技能熟练项        :
+    工具熟练项        :
+    语言              :
+
+    特性              :
+    所选信念          :
+    性格特质          :
+    理想              :
+    羁绊              :
+    缺点              :
+
+    --------------------------------------------------------------------------------------
+    第7节：附加
+    --------------------------------------------------------------------------------------
+    装备清单
+    描述 / 花费 / 重量
 
 
-    lbs
+    磅
 
-    Wealth
+    财富
     PP         :
     EP         :
     GP         :
     SP         :
     CP         :
 
-    Gems         :
-    Jewelry      :
-    Other        :
-    Magic Items  :
+    宝石         :
+    珠宝         :
+    其他         :
+    魔法物品     :
 
 
     --------------------------------------------------------------------------------------
-    SECTION 8: SPELLCASTING
+    第8节：施法
     --------------------------------------------------------------------------------------
 
-    Spell Level:
-    Spell Save DC:
-    Spell Attack Mod:
-    Spell Slots:
-      1: (MAX) (USED)
-      2: (MAX) (USED)
-      3: (MAX) (USED)
-      4: (MAX) (USED)
-      5: (MAX) (USED)
-      6: (MAX) (USED)
-      7: (MAX) (USED)
-      8: (MAX) (USED)
-      9: (MAX) (USED)
+    法术等级：
+    法术豁免DC：
+    法术攻击加值：
+    法术位：
+      1：（上限）（已用）
+      2：（上限）（已用）
+      3：（上限）（已用）
+      4：（上限）（已用）
+      5：（上限）（已用）
+      6：（上限）（已用）
+      7：（上限）（已用）
+      8：（上限）（已用）
+      9：（上限）（已用）
 
-    Cantrips
-    Name  Casting Time  Range  Duration  Components
+    戏法
+    名称 / 施法时间 / 射程 / 持续时间 / 成分
 
-    1: Name  Casting Time  Range  Duration  Components  Ritual?
+    1: 名称 / 施法时间 / 射程 / 持续时间 / 成分 / 仪式？
 
-    2: Name  Casting Time  Range  Duration  Components  Ritual?
+    2: 名称 / 施法时间 / 射程 / 持续时间 / 成分 / 仪式？
 
-    3: Name  Casting Time  Range  Duration  Components  Ritual?
+    3: 名称 / 施法时间 / 射程 / 持续时间 / 成分 / 仪式？
 
-    4: Name  Casting Time  Range  Duration  Components  Ritual?
+    4: 名称 / 施法时间 / 射程 / 持续时间 / 成分 / 仪式？
 
-    5: Name  Casting Time  Range  Duration  Components  Ritual?
+    5: 名称 / 施法时间 / 射程 / 持续时间 / 成分 / 仪式？
 
-    6: Name  Casting Time  Range  Duration  Components  Ritual?
+    6: 名称 / 施法时间 / 射程 / 持续时间 / 成分 / 仪式？
 
-    7: Name  Casting Time  Range  Duration  Components  Ritual?
+    7: 名称 / 施法时间 / 射程 / 持续时间 / 成分 / 仪式？
 
-    8: Name  Casting Time  Range  Duration  Components  Ritual?
+    8: 名称 / 施法时间 / 射程 / 持续时间 / 成分 / 仪式？
 
-    9: Name  Casting Time  Range  Duration  Components  Ritual?
+    9: 名称 / 施法时间 / 射程 / 持续时间 / 成分 / 仪式？
     --------------------------------------------------------------------------------------
-    Carps and Crypts 5e
+    鲤鱼与地穴 5e
 

@@ -1,18 +1,18 @@
 # Types
-mixing-verb-default-mix = mix
-mixing-verb-default-grind = grind
-mixing-verb-default-juice = juice
-mixing-verb-default-condense = condense
-mixing-verb-centrifuge = centrifugation
-mixing-verb-electrolysis = electrolyze
-mixing-verb-holy = bless
-mixing-verb-stir = stir
-mixing-verb-shake = shake
+mixing-verb-default-mix = 混合
+mixing-verb-default-grind = 研磨
+mixing-verb-default-juice = 榨汁
+mixing-verb-default-condense = 冷凝
+mixing-verb-centrifuge = 离心
+mixing-verb-electrolysis = 电解
+mixing-verb-holy = 祝福
+mixing-verb-stir = 搅拌
+mixing-verb-shake = 摇晃
 
 ## Entity
 
-default-mixing-success = You mix the {$mixed} with the {$mixer}
-bible-mixing-success = You bless the {$mixed} with the {$mixer}
-spoon-mixing-success = You stir the {$mixed} with the {$mixer}
-handheld-centrifuge-success = You seperate chemicals in the {$mixed}
+default-mixing-success = 你把{$mixed}与{$mixer}混合
+bible-mixing-success = 你祝福了{$mixed}，用的是{$mixer}
+spoon-mixing-success = 你搅拌了{$mixed}，用的是{$mixer}
+handheld-centrifuge-success = 你分离了{$mixed}中的化学物质
 

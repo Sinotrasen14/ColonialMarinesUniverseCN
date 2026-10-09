@@ -1,4 +1,4 @@
 command-description-laws-list =
-    Returns a list of all law bound entities.
+    返回所有受法则约束的实体列表。
 command-description-laws-get =
-    Returns all of the laws for a given entity.
+    返回指定实体的所有法则。

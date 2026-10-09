@@ -1,90 +1,90 @@
-book-text-demonomicon1 = How To Summon a Demon
-          - by J.G. Wizgerald
+book-text-demonomicon1 = 如何召唤恶魔
+          - 作者：J.G. 维兹杰拉德
 
-          1. todo finish writing demon summoning guide
+          1. 待办：写完恶魔召唤指南
 
-book-text-demonomicon2 = How To Summon a Lemon
-          - by J.G. Wizgerald
+book-text-demonomicon2 = 如何召唤柠檬
+          - 作者：J.G. 维兹杰拉德
 
-          1. todo finish writing lemon summoning guide
-          2. WAit. Typo. Oh shit. Sorry guys
+          1. 待办：写完柠檬召唤指南
+          2. 等等。打错字了。哦不。抱歉各位
 
-book-text-demonomicon3 = Cool Demon Names I Found
-      - by Ms. Mossrock
+book-text-demonomicon3 = 我找到的酷炫恶魔名字
+      - 作者：苔石女士
 
-      Abraxas
-      Nephilim
-      Baal
-      Leviathan
-      Gary
-      Moloch
-      Scylla
-      Phenex
+      阿布拉克萨斯
+      拿非利
+      巴尔
+      利维坦
+      加里
+      摩洛
+      斯库拉
+      菲尼克斯
 
-book-text-chemistry-insane = IGOR CHEMISTRY GUIDE TO CHEMISTRY
+book-text-chemistry-insane = 伊戈尔化学的化学指南
 
-      TITLE: GUIDE TO CHEMISTRY
+      标题：化学指南
 
-      ABSTRACT: GUIDE TO CHEMISTRY
+      摘要：化学指南
 
-      SECTION: WISE WORDS OF IGOR CHEMISTRY
+      章节：伊戈尔化学的金玉良言
 
-      MY NUMBER ONE TIP. IS TO ALWAYS HAVE FUN. YOU NEVER KNOW WHEN IT'LL ALL END.
-      SO JUST KEEP AT IT!!
+      我的第一号建议。就是永远要玩得开心。你永远不知道一切什么时候会结束。
+      所以就坚持下去吧！！
 
-      MY NUMBER TWO TIP. I JUST CAN'T STOP FUCKING GRINDING UP JUMPSUITS. MY "COLLEAGUES" (agents) KEEP YELLING AT ME
-      TO STOP AND THAT 'itll come out of our paychecks' BUT THE STUFF IS SO GOOD. I'M LIKE AN INTERIOR DECORATION GENIUS.
-      SAXOPHONES AND BATTERIES TAKE MY MIND OFF OF IT BUT I'M ALWAYS BACK TO THE JUMPSUITS. HOO WEE.
+      我的第二号建议。我就是停不下来把制服磨成粉。我的"同事"（特工）们一直冲我吼
+      让我停下，说"这要从我们工资里扣"，但那玩意儿实在太好了。我就是个室内装饰天才。
+      萨克斯管和电池能让我暂时分心，但我总会回到制服上去。呼威。
 
-      MY NUMBER THREE TIP. THANK YOU FOR READING!! IGOR CHEMISTRY
+      我的第三号建议。谢谢你读完！！伊戈尔化学
 
-      CONCLUSION: IGOR CHEMISTRY
+      结论：伊戈尔化学
 
-book-text-botanics = ** Applications of Botanical Specimens Found In Nanotrasen Territories **
+book-text-botanics = ** 纳米特森领地内所发现植物标本的应用 **
 
-      Many plants, when ground, yield useful chemicals. S. (spessmens) papaver and S. aloe vera
-      are known for their basic healing properties.
+      许多植物在被研磨后能产出有用的化学物质。S.（spessmens）罂粟和S.芦荟
+      以其基础的治疗特性而闻名。
 
-      S. lucidum, or lingzhi, is known for its potent ability to save those near death from toxins. Eating too much
-      is known to cause adverse effects.
+      S.灵芝，即灵芝草，以其能将濒死者从毒素中救回的强大效力而闻名。食用过多
+      则会产生不良反应。
 
-      S. amanita, a powerfully poisonous specimen (Rest In Peace Sir Alacaster), and S. galactica, a
-      seemingly ordinary antitoxin, appear to have some sort of relation to eachother.
+      S.毒伞，一种药性极强的有毒标本（安息吧阿拉卡斯特爵士），以及S.银河，
+      一种看似普通的抗毒素，两者之间似乎存在某种关联。
 
-      Some research is being done on combinations of the medicinal plants discussed, and they may prove fruitful.
+      目前有人在研究上述药用植物的组合，这些组合或许会有成果。
 
       ----
 
-      - penned by James Alacaster and Golzuk Amaranth
+      - 由詹姆斯·阿拉卡斯特与戈尔祖克·苋撰写
 
-book-text-gnome = All Hail Our Gnome King
+book-text-gnome = 我们侏儒王万岁
 
-      He who is the grand cartographer who placed our kind into the world of the Island!
+      他就是那位伟大的制图师，将我们的族群安置在岛屿世界之中！
 
-      He who loves those with the largest of Hats!
+      他钟爱那些戴着最大帽子的人！
 
-      Struck down by the evildoers who cannot appreciate our kind!
+      却被那些无法欣赏我们族群的恶人击倒！
 
-      Our revenge will be dealt in full! He will Rise once more! hee Hoo!
+      我们的复仇必将彻底实现！他将再度崛起！嘻呼！
 
-book-text-fishing = When I grow up, I want to be one of the harvesters of the space sea!
+book-text-fishing = 等我长大了，我想成为太空海洋的收获者之一！
 
-      I think before my days are done I want to catch the fabled space fish!
+      我想在我的日子结束之前，钓到那条传说中的太空鱼！
 
-      I'm like a little rat sailing the seas of cheese! The bastards come to end me but I am as sly as a cat and as lucky as they come!
+      我就像一只在奶酪海上航行的小老鼠！那些混蛋想来终结我，但我像猫一样狡猾，运气也好得不得了！
 
-      Press the <L BUMPER> and <R TRIGGER> to activate the fishing minigame.
+      按 <L BUMPER> 和 <R TRIGGER> 来激活钓鱼小游戏。
 
-      - Sgt. John Baker Aclopoly
+      - 约翰·贝克·阿克罗波利中士
 
-book-text-detective = CHAPTER 1: SMALL ADVENTURES IN A BIG STATION
+book-text-detective = 第一章：大空间站里的小冒险
 
-      This station is filled with crime and grime...
+      这座空间站充满了罪恶与污秽……
 
-      I was shooting hoops down on Bagel when I heard a cry and a laser shot. I walked under the table nearby to hide, but there wasn't a second shot.
+      我在贝果站投篮的时候，听到一声叫喊和一道激光射击。我躲到附近的桌子底下，但之后没有第二声枪响。
 
-      Outside, the engineerin chief got blasted by two Syndies hooked up with some fierce contraband. There wasn't enough of him for an open casket funeral.
+      外面，工程主管被两个带着些厉害违禁品的辛迪加人给轰了。他剩下的部分都不够办一场开棺葬礼。
 
-      Things always go wild here.. I'll never look at clowns the same.
+      这里总是乱成一团……我再也没法用同样的眼光看小丑了。
 
-      The question is.. Who did it?
+      问题是……是谁干的？

@@ -1,8 +1,8 @@
 # Examination for different levels of wiring protection
-wires-panel-component-on-examine-security-level1 = There is a steel plate preventing access to the internal wiring. Use a [color=cyan]Crowbar[/color] to remove it.
-wires-panel-component-on-examine-security-level2 = A steel plate has been welded to the inside of the [color=lightgray]maintenance panel[/color]. Use a [color=cyan]Welder[/color] to free it.
-wires-panel-component-on-examine-security-level3 = There is a plasteel plate preventing access to the internal wiring. Use a [color=cyan]Crowbar[/color] to remove it.
-wires-panel-component-on-examine-security-level4 = A plasteel plate has been welded to the inside of the [color=lightgray]maintenance panel[/color]. Use a [color=cyan]Welder[/color] to free it.
-wires-panel-component-on-examine-security-level5 = The inside of the [color=lightgray]maintenance panel[/color] is protected by a security grille. Use [color=cyan]Wirecutters[/color] to remove  it.
-wires-panel-component-on-examine-security-level6 = A plasteel plate sits within the interior of the [color=lightgray]maintenance panel[/color]. Use a [color=cyan]Crowbar[/color] to remove it.
-wires-panel-component-on-examine-security-level7 = A welded plasteel plate protects the interior of the [color=lightgray]maintenance panel[/color]. Use a [color=cyan]Welder[/color] to free it.
+wires-panel-component-on-examine-security-level1 = 有一块钢板挡住了内部线路。用[color=cyan]撬棍[/color]移除它。
+wires-panel-component-on-examine-security-level2 = 一块钢板被焊在了[color=lightgray]维修面板[/color]内侧。用[color=cyan]焊枪[/color]取下它。
+wires-panel-component-on-examine-security-level3 = 有一块塑钢板挡住了内部线路。用[color=cyan]撬棍[/color]移除它。
+wires-panel-component-on-examine-security-level4 = 一块塑钢板被焊在了[color=lightgray]维修面板[/color]内侧。用[color=cyan]焊枪[/color]取下它。
+wires-panel-component-on-examine-security-level5 = [color=lightgray]维修面板[/color]内部由一道安全栅保护。用[color=cyan]剪线钳[/color]移除它。
+wires-panel-component-on-examine-security-level6 = 一块塑钢板位于[color=lightgray]维修面板[/color]内部。用[color=cyan]撬棍[/color]移除它。
+wires-panel-component-on-examine-security-level7 = 一块焊接的塑钢板保护着[color=lightgray]维修面板[/color]内部。用[color=cyan]焊枪[/color]取下它。

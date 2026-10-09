@@ -1,5 +1,5 @@
-roles-lesser-drone-name = Lesser Drone
-roles-lesser-drone-description = Support the hive by plugging gaps where needed, moving hosts, saving the larger castes or charging the enemy to delay their advance.
+roles-lesser-drone-name = 次级雄蜂
+roles-lesser-drone-description = 通过填补缺口、搬运宿主、拯救更大型的阶层或冲锋敌人以延缓其推进来支援虫巢。
 
-roles-lesser-carrier-name = Lesser Carrier
-roles-lesser-carrier-description = Support the hive by planting eggs, moving hosts, saving the larger castes or infecting the enemy on the frontline to delay their advance.
+roles-lesser-carrier-name = 次级搬运者
+roles-lesser-carrier-description = 通过产卵、搬运宿主、拯救更大型的阶层或在前线感染敌人以延缓其推进来支援虫巢。

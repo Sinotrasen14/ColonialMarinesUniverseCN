@@ -1,10 +1,10 @@
-﻿cm-magazine-box-no-space = You can't cram any more boxes in here!
-cm-magazine-box-examine-not-deployed = [color=green]Activate[/color] box in hand or [color=green]click[/color] with it on the ground to deploy it.
-cm-magazine-box-examine-deployed-click = [color=green]Click[/color] on the box with an empty hand to take a magazine out.
-cm-magazine-box-examine-deployed-drag = [color=green]Drag[/color] it onto yourself to pick it up.
-cm-magazine-box-examine-empty = It feels empty.
-cm-magazine-box-examine-almost-empty = It feels almost empty.
-cm-magazine-box-examine-half-full = It feels half full.
-cm-magazine-box-examine-almost-full = It feels almost full.
-cm-magazine-box-examine-magazines = It has {$filled} magazines out of {$total}.
-cm-magazine-box-pick-up = Pick Up
+cm-magazine-box-no-space = 你再也塞不进更多箱子了！
+cm-magazine-box-examine-not-deployed = 在手中[color=green]激活[/color]箱子，或拿着它在地面[color=green]点击[/color]以展开。
+cm-magazine-box-examine-deployed-click = 空手[color=green]点击[/color]箱子取出一本弹匣。
+cm-magazine-box-examine-deployed-drag = 将它[color=green]拖[/color]到自己身上即可拾起。
+cm-magazine-box-examine-empty = 摸起来是空的。
+cm-magazine-box-examine-almost-empty = 摸起来几乎空了。
+cm-magazine-box-examine-half-full = 摸起来装了一半。
+cm-magazine-box-examine-almost-full = 摸起来几乎满了。
+cm-magazine-box-examine-magazines = 它有{$filled}/{$total}本弹匣。
+cm-magazine-box-pick-up = 拾起

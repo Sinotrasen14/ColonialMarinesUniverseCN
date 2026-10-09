@@ -1,1 +1,1 @@
-slot-block-component-blocked = This slot is blocked by {$item}!
+slot-block-component-blocked = 此槽位被{$item}挡住了！

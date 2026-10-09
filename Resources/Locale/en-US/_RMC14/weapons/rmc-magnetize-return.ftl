@@ -1,6 +1,6 @@
-﻿rmc-magnetize-return = {CAPITALIZE(THE($item))} snaps into place on {$magnetizer}.
-rmc-sling-link = You attach {THE($item)} to {THE($pouch)}.
-rmc-sling-unlink = You detach {THE($item)} from {THE($pouch)}.
-rmc-sling-unlink-verb-sling = Detach item
-rmc-sling-unlink-verb-item = Detach from sling
-rmc-sling-attached = It is currently attached to {THE($pouch)}.
+rmc-magnetize-return = {CAPITALIZE(THE($item))}啪的一声吸附到{$magnetizer}上。
+rmc-sling-link = 你把{THE($item)}挂到{THE($pouch)}上。
+rmc-sling-unlink = 你把{THE($item)}从{THE($pouch)}上取下。
+rmc-sling-unlink-verb-sling = 取下物品
+rmc-sling-unlink-verb-item = 从背带取下
+rmc-sling-attached = 它目前挂在{THE($pouch)}上。

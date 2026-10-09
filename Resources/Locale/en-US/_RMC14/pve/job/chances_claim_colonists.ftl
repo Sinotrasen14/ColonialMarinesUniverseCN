@@ -1,47 +1,47 @@
-rmc-job-greeting-chances-colonist = You are a colonist living on LV-522. You are tasked by your employer, the Weyland-Yutani Corporation, to preform your expected duties.
+rmc-job-greeting-chances-colonist = 你是居住在LV-522上的殖民者。你的雇主威兰-尤塔尼公司要求你履行应尽的职责。
 
-  You are [bold][color=#51A16C][font size=16]NON-HOSTILE to the UNMC![/font][/color][/bold]
+  你对UNMC[bold][color=#51A16C][font size=16]无敌意！[/font][/color][/bold]
 
-rmc-job-name-colonist-chances-trucker = Weyland-Yutani Heavy Vehicle Operator
-rmc-job-description-colonist-chances-trucker = Operate heavy equipment in and around the colony.
-CMSurvivorChancesTrucker = Weyland-Yutani Heavy Vehicle Operator
+rmc-job-name-colonist-chances-trucker = 威兰-尤塔尼重型载具操作员
+rmc-job-description-colonist-chances-trucker = 在殖民地内外操作重型设备。
+CMSurvivorChancesTrucker = 威兰-尤塔尼重型载具操作员
 
-rmc-job-name-colonist-chances-miner = Mining Surveyor
-CMSurvivorChancesMiner = Mining Surveyor
+rmc-job-name-colonist-chances-miner = 采矿勘测员
+CMSurvivorChancesMiner = 采矿勘测员
 
-rmc-job-name-colonist-chances-civilian = Catering Technician
-CMSurvivorChancesCivilian = Catering Technician
+rmc-job-name-colonist-chances-civilian = 餐饮技师
+CMSurvivorChancesCivilian = 餐饮技师
 
-rmc-job-name-colonist-administrative-clerk = Administrative Clerk
-CMSurvivorAdministrativeClerk = Administrative Clerk
+rmc-job-name-colonist-administrative-clerk = 行政文书
+CMSurvivorAdministrativeClerk = 行政文书
 
-rmc-job-name-colonist-operations-supervisor = Operations Supervisor
-CMSurvivorOperationsSupervisor = Operations Supervisor
+rmc-job-name-colonist-operations-supervisor = 运营主管
+CMSurvivorOperationsSupervisor = 运营主管
 
-rmc-job-name-colonist-chances-medic = Chance's Claim Medic
-CMSurvivorChancesMedic = Chance's Claim Medic
+rmc-job-name-colonist-chances-medic = 昌斯之领地卫生员
+CMSurvivorChancesMedic = 昌斯之领地卫生员
 
-rmc-job-name-colonist-chances-paramedic = Chance's Claim Paramedic
-CMSurvivorChancesParamedic = Chance's Claim Paramedic
+rmc-job-name-colonist-chances-paramedic = 昌斯之领地急救员
+CMSurvivorChancesParamedic = 昌斯之领地急救员
 
-rmc-job-name-colonist-environmental-researcher = Environmental Researcher
-CMSurvivorChancesEnvironmentalResearcher= Environmental Researcher
+rmc-job-name-colonist-environmental-researcher = 环境研究员
+CMSurvivorChancesEnvironmentalResearcher= 环境研究员
 
-rmc-job-name-colonist-terraforming-specialist = Terraforming Specialist
-CMSurvivorChancesTerraformingSpecialist = Terraforming Specialist
+rmc-job-name-colonist-terraforming-specialist = 地球化改造专家
+CMSurvivorChancesTerraformingSpecialist = 地球化改造专家
 
-rmc-job-name-colonist-atmos-process-tech = Atmospheric Processing Reactor Technician
-CMSurvivorChancesAtmosProcessTech = Atmospheric Processing Reactor Technician
+rmc-job-name-colonist-atmos-process-tech = 大气处理反应堆技师
+CMSurvivorChancesAtmosProcessTech = 大气处理反应堆技师
 
-rmc-job-name-colonist-vehicle-repairman = Vehicle Repairman
-CMSurvivorChancesVehicleRepairman = Vehicle Repairman
+rmc-job-name-colonist-vehicle-repairman = 载具修理工
+CMSurvivorChancesVehicleRepairman = 载具修理工
 
-rmc-job-name-colonist-colony-maint-tech = Colony Maintenance Technician
-CMSurvivorChancesColonyMaintTech = Colony Maintenance Technician
+rmc-job-name-colonist-colony-maint-tech = 殖民地维护技师
+CMSurvivorChancesColonyMaintTech = 殖民地维护技师
 
-rmc-job-name-colonist-cargo-tech = Warehouse Worker
-CMSurvivorChancesCargoTech = Warehouse Worker
+rmc-job-name-colonist-cargo-tech = 仓库工人
+CMSurvivorChancesCargoTech = 仓库工人
 
-rmc-job-name-colonist-chances-goon = Chance's Claim Corporate Security
-CMSurvivorChancesGoon = Chance's Claim Corporate Security
+rmc-job-name-colonist-chances-goon = 昌斯之领地企业安保
+CMSurvivorChancesGoon = 昌斯之领地企业安保
 

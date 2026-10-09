@@ -1,33 +1,33 @@
-cm-xeno-egg-clear = We clear the hatched egg.
-cm-xeno-egg-not-developed = The egg is not developed yet.
+cm-xeno-egg-clear = 我们清除了孵化的虫卵。
+cm-xeno-egg-not-developed = 这枚虫卵尚未发育完全。
 
-cm-xeno-egg-failed-must-weeds = The egg must be planted on weeds.
-cm-xeno-egg-failed-must-hive-weeds = The egg must be planted on hive weeds.
-cm-xeno-egg-failed-plant-outside = Best not to plant this thing outside of a containment cell.
-cm-xeno-egg-failed-already-there = There's already an egg there.
-cm-xeno-egg-blocked = There's something built here already.
+cm-xeno-egg-failed-must-weeds = 虫卵必须种在杂草上。
+cm-xeno-egg-failed-must-hive-weeds = 虫卵必须种在虫巢杂草上。
+cm-xeno-egg-failed-plant-outside = 最好别把这东西种在隔离舱外。
+cm-xeno-egg-failed-already-there = 那里已经有一枚虫卵了。
+cm-xeno-egg-blocked = 这里已经建了东西。
 
-rmc-xeno-egg-dead-child = This child is dead.
-rmc-xeno-egg-has-child = This one is occupied with a child.
-rmc-xeno-egg-awake-child = {CAPITALIZE($parasite)} doesn't want to go back in!
-rmc-xeno-egg-fail-return = This egg can't hold this child.
-rmc-xeno-egg-return-start = We start putting the child into the egg.
-rmc-xeno-egg-return-user = We place the child back into the egg.
-rmc-xeno-egg-return-self = {CAPITALIZE($parasite)} crawls back into the egg.
-rmc-xeno-egg-return = {CAPITALIZE($user)} slides {$parasite} back into the egg.
+rmc-xeno-egg-dead-child = 这个后代已经死了。
+rmc-xeno-egg-has-child = 这一枚里已经有后代了。
+rmc-xeno-egg-awake-child = {CAPITALIZE($parasite)}不想回去！
+rmc-xeno-egg-fail-return = 这枚虫卵装不下这个后代。
+rmc-xeno-egg-return-start = 我们开始把后代放进虫卵。
+rmc-xeno-egg-return-user = 我们把后代放回了虫卵。
+rmc-xeno-egg-return-self = {CAPITALIZE($parasite)}爬回了虫卵。
+rmc-xeno-egg-return = {CAPITALIZE($user)}把{$parasite}塞回了虫卵。
 
-rmc-xeno-egg-ghost-verb = Become parasite
-rmc-xeno-egg-ghost-need-time = You ghosted too recently. You cannot become a parasite until 3 minutes have passed ({$seconds} seconds remaining).
-rmc-xeno-egg-ghost-need-time-round = You cannot become a parasite until enough time has passed passed in the round ({$seconds} seconds remaining).
-rmc-xeno-egg-ghost-bypass-time = You successfully infected your target. You may become a parasite again.
-rmc-xeno-egg-ghost-confirm = Are you sure you want to become a parasite?
+rmc-xeno-egg-ghost-verb = 成为寄生体
+rmc-xeno-egg-ghost-need-time = 你最近刚变成幽灵。必须经过3分钟才能成为寄生体（剩余{$seconds}秒）。
+rmc-xeno-egg-ghost-need-time-round = 本回合必须经过足够的时间才能成为寄生体（剩余{$seconds}秒）。
+rmc-xeno-egg-ghost-bypass-time = 你成功感染了目标。你可以再次成为寄生体了。
+rmc-xeno-egg-ghost-confirm = 你确定要成为寄生体吗？
 
-rmc-xeno-egg-throw-xeno = Throwing the egg would break it!
-rmc-xeno-egg-throw = That's a bad idea.
+rmc-xeno-egg-throw-xeno = 扔出虫卵会把它摔碎！
+rmc-xeno-egg-throw = 那是个坏主意。
 
-rmc-xeno-egg-plant-self = We start planting the egg.
-rmc-xeno-egg-plant = {CAPITALIZE($user)} starts planting an egg.
+rmc-xeno-egg-plant-self = 我们开始种下虫卵。
+rmc-xeno-egg-plant = {CAPITALIZE($user)}开始种下一枚虫卵。
 
-rmc-xeno-egg-carrier-death = {CAPITALIZE(THE($xeno))} has dropped some precious eggs!
+rmc-xeno-egg-carrier-death = {CAPITALIZE(THE($xeno))}掉下了一些珍贵的虫卵！
 
-rmc-xeno-fragile-egg-prefix = fragile {$baseName}
+rmc-xeno-fragile-egg-prefix = 脆弱的{$baseName}

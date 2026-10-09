@@ -1,10 +1,10 @@
 command-description-scale-set =
-    Sets an entity's sprite size to a certain scale (without changing its fixture).
+    将实体的精灵尺寸设为特定比例（不改变其碰撞体）。
 command-description-scale-get =
-    Get an entity's sprite scale as set by ScaleVisualsComponent. Does not include any changes directly made in the SpriteComponent.
+    获取由ScaleVisualsComponent设置的实体精灵缩放。不包括直接在SpriteComponent中所做的更改。
 command-description-scale-multiply =
-    Multiply an entity's sprite size with a certain factor (without changing its fixture).
+    将实体的精灵尺寸乘以特定系数（不改变其碰撞体）。
 command-description-scale-multiplyvector =
-    Multiply an entity's sprite size with a certain 2d vector (without changing its fixture).
+    将实体的精灵尺寸乘以特定的二维向量（不改变其碰撞体）。
 command-description-scale-multiplywithfixture =
-    Multiply an entity's sprite size with a certain factor (including its fixture).
+    将实体的精灵尺寸乘以特定系数（包括其碰撞体）。

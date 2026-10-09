@@ -1,6 +1,6 @@
-late-join-gui-title = Late Join
-late-join-gui-jobs-amount-in-department-tooltip = Jobs in the {$departmentName} department
-late-join-gui-department-jobs-label = {$departmentName} jobs
-late-join-gui-job-slot-capped = {$jobName} ({$amount} open)
-late-join-gui-job-slot-uncapped = {$jobName} (∞ open)
-late-join-gui-no-departments-available = This faction is not active on this map
+late-join-gui-title = 中途加入
+late-join-gui-jobs-amount-in-department-tooltip = {$departmentName}部门的职位
+late-join-gui-department-jobs-label = {$departmentName}职位
+late-join-gui-job-slot-capped = {$jobName}（{$amount}个空缺）
+late-join-gui-job-slot-uncapped = {$jobName}（∞个空缺）
+late-join-gui-no-departments-available = 此阵营不在此地图上活动

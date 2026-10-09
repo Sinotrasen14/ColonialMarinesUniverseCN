@@ -1,1 +1,1 @@
-effect-sleepy = You feel a bit sleepy.
+effect-sleepy = 你觉得有点困。

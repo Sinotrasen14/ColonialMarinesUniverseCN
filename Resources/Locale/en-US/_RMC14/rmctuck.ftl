@@ -1,2 +1,2 @@
-rmc-untuck = Untuck features when worn
-rmc-tuck = Tuck features when worn
+rmc-untuck = 穿戴时展开特征
+rmc-tuck = 穿戴时收起特征

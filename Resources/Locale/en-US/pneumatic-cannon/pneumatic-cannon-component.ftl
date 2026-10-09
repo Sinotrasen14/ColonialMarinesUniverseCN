@@ -1,10 +1,10 @@
-﻿### Loc for the pneumatic cannon.
+### Loc for the pneumatic cannon.
 
-pneumatic-cannon-component-itemslot-name = Gas Tank
+pneumatic-cannon-component-itemslot-name = 气罐
 
 ## Shown when trying to fire, but no gas
 
-pneumatic-cannon-component-fire-no-gas = { CAPITALIZE(THE($cannon)) } clicks, but no gas comes out.
+pneumatic-cannon-component-fire-no-gas = { CAPITALIZE(THE($cannon)) }咔哒一响，但没有气体喷出。
 
 ## Shown when changing power.
 
@@ -16,5 +16,5 @@ pneumatic-cannon-component-change-power = { $power ->
 
 ## Shown when being stunned by having the power too high.
 
-pneumatic-cannon-component-power-stun = The pure force of { THE($cannon) } knocks you over!
+pneumatic-cannon-component-power-stun = { THE($cannon) }的纯粹力量把你掀翻了！
 

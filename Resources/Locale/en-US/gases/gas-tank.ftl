@@ -1,1 +1,1 @@
-﻿gas-max-pressure-alert = The pressure relief valve bursts open!
+gas-max-pressure-alert = 泄压阀突然弹开！

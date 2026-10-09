@@ -1,1 +1,1 @@
-﻿mannitol-effect-enlightened = You feel ENLIGHTENED!
+mannitol-effect-enlightened = 你感到豁然开朗！

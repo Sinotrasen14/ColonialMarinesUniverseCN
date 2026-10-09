@@ -1,5 +1,5 @@
-ui-playtime-department-total = Total playtime in { $department }: { $time }
+ui-playtime-department-total = { $department }的总游戏时长：{ $time }
 
-ui-playtime-no-data = No playtime data available.
+ui-playtime-no-data = 没有可用的游戏时长数据。
 
-ui-playtime-general-tab = Overall
+ui-playtime-general-tab = 总计

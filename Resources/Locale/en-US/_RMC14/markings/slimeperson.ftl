@@ -1,60 +1,60 @@
 # Chest
 
-marking-SlimeBonechest = Floating Ribcage
-marking-SlimeBonechest-bone = Floating Ribcage
+marking-SlimeBonechest = 漂浮胸廓
+marking-SlimeBonechest-bone = 漂浮胸廓
 
-marking-SlimeCore = Core
-marking-SlimeCore-core = Core
+marking-SlimeCore = 核心
+marking-SlimeCore-core = 核心
 
-marking-SlimeLungs = Lungs
-marking-SlimeLungs-lungs = Lungs
+marking-SlimeLungs = 肺
+marking-SlimeLungs-lungs = 肺
 
 # Head
 
-marking-SlimeBonehead = Floating Skull
-marking-SlimeBonehead-bone = Floating Skull
+marking-SlimeBonehead = 漂浮头骨
+marking-SlimeBonehead-bone = 漂浮头骨
 
-marking-SlimeNose = Nose (Profile)
-marking-SlimeNose-nose = Nose (Profile)
+marking-SlimeNose = 鼻子（侧面）
+marking-SlimeNose-nose = 鼻子（侧面）
 
-marking-SlimeMouth = Mouth
-marking-SlimeMouth-mouth = Mouth
+marking-SlimeMouth = 嘴
+marking-SlimeMouth-mouth = 嘴
 
-marking-SlimeBrain = Brain
-marking-SlimeBrain-brain = Brain
+marking-SlimeBrain = 大脑
+marking-SlimeBrain-brain = 大脑
 
 # Snout
 
 # Eyes
 
-marking-SlimeEyesDefault = Eyes
-marking-SlimeEyesDefault-eyes = Eyes (Default)
+marking-SlimeEyesDefault = 眼睛
+marking-SlimeEyesDefault-eyes = 眼睛（默认）
 
-marking-SlimeEyesDroopy = Droopy Eyes
-marking-SlimeEyesDroopy-droopy = Droopy Eyes
+marking-SlimeEyesDroopy = 下垂眼
+marking-SlimeEyesDroopy-droopy = 下垂眼
 
-marking-SlimeEyesCyclops = Cyclops Eye
-marking-SlimeEyesCyclops-cyclops = Cyclops Eye
+marking-SlimeEyesCyclops = 独眼
+marking-SlimeEyesCyclops-cyclops = 独眼
 
 # RArm
 
-marking-SlimeBonearmright = Floating Bones (Right Arm)
-marking-SlimeBonearmright-bone = Floating Bones (Right Arm)
+marking-SlimeBonearmright = 漂浮骨骼（右臂）
+marking-SlimeBonearmright-bone = 漂浮骨骼（右臂）
 
 # LArm
 
-marking-SlimeBonearmleft = Floating Bones (Left Arm)
-marking-SlimeBonearmleft-bone = Floating Bones (Left Arm)
+marking-SlimeBonearmleft = 漂浮骨骼（左臂）
+marking-SlimeBonearmleft-bone = 漂浮骨骼（左臂）
 
 # RLeg
 
-marking-SlimeBonelegright = Floating Bones (Right Leg)
-marking-SlimeBonelegright-bone = Floating Bones (Right Leg)
+marking-SlimeBonelegright = 漂浮骨骼（右腿）
+marking-SlimeBonelegright-bone = 漂浮骨骼（右腿）
 
 # LLeg
 
-marking-SlimeBonelegleft = Floating Bones (Left Leg)
-marking-SlimeBonelegleft-bone = Floating Bones (Left Leg)
+marking-SlimeBonelegleft = 漂浮骨骼（左腿）
+marking-SlimeBonelegleft-bone = 漂浮骨骼（左腿）
 
 # UndergarmentBottom
 
@@ -62,23 +62,23 @@ marking-SlimeBonelegleft-bone = Floating Bones (Left Leg)
 
 # LFoot
 
-marking-SlimeBonefootleft = Floating Bones (Left Foot)
-marking-SlimeBonefootleft-bone = Floating Bones (Left Foot)
+marking-SlimeBonefootleft = 漂浮骨骼（左脚）
+marking-SlimeBonefootleft-bone = 漂浮骨骼（左脚）
 
 # RFoot
 
-marking-SlimeBonefootright = Floating Bones (Right Foot)
-marking-SlimeBonefootright-bone = Floating Bones (Right Foot)
+marking-SlimeBonefootright = 漂浮骨骼（右脚）
+marking-SlimeBonefootright-bone = 漂浮骨骼（右脚）
 
 # LHand
 
-marking-SlimeBonehandleft = Floating Bones (Left Hand)
-marking-SlimeBonehandleft-bone = Floating Bones (Left Hand)
+marking-SlimeBonehandleft = 漂浮骨骼（左手）
+marking-SlimeBonehandleft-bone = 漂浮骨骼（左手）
 
 # RHand
 
-marking-SlimeBonehandright = Floating Bones (Right Hand)
-marking-SlimeBonehandright-bone = Floating Bones (Right Hand)
+marking-SlimeBonehandright = 漂浮骨骼（右手）
+marking-SlimeBonehandright-bone = 漂浮骨骼（右手）
 
 # FacialHair
 

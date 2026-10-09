@@ -1,3 +1,3 @@
-﻿cmd-ghostkick-desc = Kick a client from the server as if their network just dropped.
-cmd-ghostkick-help = Usage: ghostkick <Player> [Reason]
-cmd-ghostkick-default-reason = Ghost kicked by console.
+cmd-ghostkick-desc = 将客户端从服务器踢出，就像其网络刚刚断开一样。
+cmd-ghostkick-help = 用法：ghostkick <Player> [Reason]
+cmd-ghostkick-default-reason = 被控制台幽灵踢出。

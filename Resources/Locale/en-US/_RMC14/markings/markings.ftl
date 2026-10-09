@@ -1,1 +1,1 @@
-﻿marking-LongEarsStandard = Long Ears Standard
+marking-LongEarsStandard = 标准长耳

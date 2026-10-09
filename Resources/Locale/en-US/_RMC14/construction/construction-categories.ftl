@@ -1,6 +1,6 @@
-construction-category-cm-all = All
-construction-category-cm-structures = Structures
-construction-category-cm-utilities = Utilities
-construction-category-cm-materials = Materials
-construction-category-cm-furniture = Furniture
-construction-category-cm-box-magazine = Magazine Boxes
+construction-category-cm-all = 全部
+construction-category-cm-structures = 结构
+construction-category-cm-utilities = 设施
+construction-category-cm-materials = 材料
+construction-category-cm-furniture = 家具
+construction-category-cm-box-magazine = 弹匣箱

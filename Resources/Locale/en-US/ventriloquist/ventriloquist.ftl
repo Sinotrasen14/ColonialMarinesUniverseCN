@@ -1,8 +1,8 @@
-ventriloquist-puppet-insert-hand = You insert your hand into the puppet.
-ventriloquist-puppet-remove-hand = You remove your hand from the puppet.
+ventriloquist-puppet-insert-hand = 你把手伸进木偶里。
+ventriloquist-puppet-remove-hand = 你把手从木偶里抽出。
 
-ventriloquist-puppet-cant-speak = You cannot speak without a helping hand.
-ventriloquist-puppet-inserted-hand = You have a helping hand.
-ventriloquist-puppet-removed-hand = you have lost your helping hand.
-ventriloquist-puppet-role-name = A Dummy
-ventriloquist-puppet-role-description = Become a dummy, dummy!
+ventriloquist-puppet-cant-speak = 没有帮手你无法说话。
+ventriloquist-puppet-inserted-hand = 你有了帮手。
+ventriloquist-puppet-removed-hand = 你失去了帮手。
+ventriloquist-puppet-role-name = 一个木偶
+ventriloquist-puppet-role-description = 变成一个木偶，笨蛋！

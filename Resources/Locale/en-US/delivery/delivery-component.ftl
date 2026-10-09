@@ -1,34 +1,34 @@
-delivery-recipient-examine = This one is meant for {$recipient}, {$job}.
-delivery-already-opened-examine = It was already opened.
-delivery-earnings-examine = Delivering this will earn the station [color=yellow]{$spesos}[/color] spesos.
-delivery-recipient-no-name = Unnamed
-delivery-recipient-no-job = Unknown
+delivery-recipient-examine = 这个是给{$recipient}的，{$job}。
+delivery-already-opened-examine = 它已经被打开过了。
+delivery-earnings-examine = 送达这个将为空间站赚取[color=yellow]{$spesos}[/color]太空比索。
+delivery-recipient-no-name = 无名
+delivery-recipient-no-job = 未知
 
-delivery-unlocked-self = You unlock the {$delivery} with your fingerprint.
-delivery-opened-self = You open the {$delivery}.
-delivery-unlocked-others = {CAPITALIZE($recipient)} unlocked the {$delivery} with {POSS-ADJ($possadj)} fingerprint.
-delivery-opened-others = {CAPITALIZE($recipient)} opened the {$delivery}.
+delivery-unlocked-self = 你用指纹解锁了{$delivery}。
+delivery-opened-self = 你打开了{$delivery}。
+delivery-unlocked-others = {CAPITALIZE($recipient)}解锁了{$delivery}，用的是{POSS-ADJ($possadj)}指纹。
+delivery-opened-others = {CAPITALIZE($recipient)}打开了{$delivery}。
 
-delivery-unlock-verb = Unlock
-delivery-open-verb = Open
-delivery-slice-verb = Slice open
+delivery-unlock-verb = 解锁
+delivery-open-verb = 打开
+delivery-slice-verb = 割开
 
 delivery-teleporter-amount-examine =
     { $amount ->
         [one] It contains [color=yellow]{$amount}[/color] delivery.
         *[other] It contains [color=yellow]{$amount}[/color] deliveries.
     }
-delivery-teleporter-empty = The {$entity} is empty.
-delivery-teleporter-empty-verb = Take mail
+delivery-teleporter-empty = {$entity}是空的。
+delivery-teleporter-empty-verb = 取出邮件
 
 
 # modifiers
-delivery-priority-examine = This is a [color=orange]priority {$type}[/color]. You have [color=orange]{$time}[/color] left to deliver it to get a bonus.
-delivery-priority-delivered-examine = This is a [color=orange]priority {$type}[/color]. It got delivered on time.
-delivery-priority-expired-examine = This is a [color=orange]priority {$type}[/color]. It ran out of time.
+delivery-priority-examine = 这是一件[color=orange]优先{$type}[/color]。你还有[color=orange]{$time}[/color]来送达以获得奖励。
+delivery-priority-delivered-examine = 这是一件[color=orange]优先{$type}[/color]。它被按时送达了。
+delivery-priority-expired-examine = 这是一件[color=orange]优先{$type}[/color]。它超时了。
 
-delivery-fragile-examine = This is a [color=red]fragile {$type}[/color]. Deliver it intact for a bonus.
-delivery-fragile-broken-examine = This is a [color=red]fragile {$type}[/color]. It looks badly damaged.
+delivery-fragile-examine = 这是一件[color=red]易碎{$type}[/color]。完好送达可获得奖励。
+delivery-fragile-broken-examine = 这是一件[color=red]易碎{$type}[/color]。它看起来损坏严重。
 
-delivery-bomb-examine = This is a [color=purple]bomb {$type}[/color]. Oh no.
-delivery-bomb-primed-examine = This is a [color=purple]bomb {$type}[/color]. Reading this is a bad use of your time.
+delivery-bomb-examine = 这是一件[color=purple]炸弹{$type}[/color]。哦不。
+delivery-bomb-primed-examine = 这是一件[color=purple]炸弹{$type}[/color]。读这个只是在浪费你的时间。

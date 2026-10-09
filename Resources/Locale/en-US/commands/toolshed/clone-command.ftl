@@ -1,10 +1,10 @@
 command-description-clone-humanoidappearance =
-    Clones the humanoid appearance of provided entity to all input entities.
+    将提供实体的人形外观克隆到所有输入实体。
 command-description-clone-comps =
-    Clones all components from the provided entity to all input entities. Only works for supported components.
+    将提供实体的所有组件克隆到所有输入实体。仅适用于受支持的组件。
 command-description-clone-equipment =
-    Clones the equipment from the provided entity to all input entities. Uses base prototypes, meaning changes to equipment won't persist to the cloned versions.
+    将提供实体的装备克隆到所有输入实体。使用基础原型，因此对装备的更改不会保留到克隆版本上。
 command-description-clone-implants =
-    Clones the implants from the provided entity to all input entities. Uses base prototypes, meaning changes to implants won't persist to the cloned versions.
+    将提供实体的植入物克隆到所有输入实体。使用基础原型，因此对植入物的更改不会保留到克隆版本上。
 command-description-clone-storage =
-    Clones the storage from the provided entity to all input entities. Uses base prototypes, meaning changes to contents won't persist to the cloned versions.
+    将提供实体的储物克隆到所有输入实体。使用基础原型，因此对内容物的更改不会保留到克隆版本上。

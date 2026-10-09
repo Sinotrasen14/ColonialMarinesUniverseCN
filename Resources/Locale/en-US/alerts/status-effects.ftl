@@ -1,14 +1,14 @@
-alerts-adrenaline-name = [color=red]Adrenaline[/color]
-alerts-adrenaline-desc = You're full of adrenaline: pain won't slow you down.
+alerts-adrenaline-name = [color=red]肾上腺素[/color]
+alerts-adrenaline-desc = 你满身肾上腺素：疼痛不会拖慢你。
 
-alerts-drunk-name = [color=yellow]Drunk[/color]
-alerts-drunk-desc = Recreational poison has made things more difficult for you.
+alerts-drunk-name = [color=yellow]醉酒[/color]
+alerts-drunk-desc = 消遣性毒物让你的行动变得更困难。
 
-alerts-muted-name = Muted
-alerts-muted-desc = You have lost the ability to speak.
+alerts-muted-name = 被禁言
+alerts-muted-desc = 你失去了说话的能力。
 
-alerts-stunned-name = [color=yellow]Stunned[/color]
-alerts-stunned-desc = You're [color=yellow]stunned[/color]! Something is impairing your ability to move or interact with objects.
+alerts-stunned-name = [color=yellow]眩晕[/color]
+alerts-stunned-desc = 你[color=yellow]被眩晕了[/color]！有什么东西妨碍了你移动或与物体交互的能力。
 
-alerts-vow-silence-name = Vow of Silence
-alerts-vow-silence-desc = You have taken a vow forbidding verbal or written communication as part of initiation into the Mystiko Tagma Mimon. Click to break your vow.
+alerts-vow-silence-name = 沉默誓言
+alerts-vow-silence-desc = 作为加入Mystiko Tagma Mimon的入门仪式，你立下了禁止口头或书面交流的誓言。点击以违背誓言。

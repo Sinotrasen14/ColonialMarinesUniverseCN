@@ -1,2 +1,2 @@
-﻿rmc-access-denied = Access denied.
-rmc-access-requisitions = Requisitions
+rmc-access-denied = 访问被拒绝。
+rmc-access-requisitions = 军需处

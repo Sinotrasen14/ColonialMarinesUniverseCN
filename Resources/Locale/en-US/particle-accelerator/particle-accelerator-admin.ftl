@@ -1,1 +1,1 @@
-particle-accelerator-admin-power-strength-warning = changed PA power of {$machine} to {$powerState} at coordinates: {$coordinates}
+particle-accelerator-admin-power-strength-warning = 已将{$machine}的PA功率更改为{$powerState}，坐标为{$coordinates}

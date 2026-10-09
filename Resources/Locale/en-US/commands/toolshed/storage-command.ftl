@@ -1,6 +1,6 @@
 command-description-storage-fasttake =
-    Takes the most recently placed item from the piped storage entity.
+    从管道存储实体中取出最近放入的物品。
 command-description-storage-insert =
-    Inserts the piped entity into the given storage entity.
+    将管道实体插入指定的存储实体。
 command-description-storage-contents =
-    Gets the entities in the storagebase of the piped entities and passes them along.
+    获取管道实体存储基座中的实体并传递下去。

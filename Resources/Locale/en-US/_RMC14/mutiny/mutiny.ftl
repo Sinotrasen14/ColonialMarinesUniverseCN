@@ -1,16 +1,16 @@
-command-description-mutiny-end = Removes mutineer status of all mutineers immediately. Reports results on console.
-command-description-mutiny-ismutineer = Returns Yes if the entity is a mutineer, No if otherwise.
-command-description-mutiny-list = Lists all current mutineers.
-command-description-mutiny-makemutineer = Makes an entity a mutineer. Note that the icon is only rendered on marines.
-command-description-mutiny-removemutineer = Makes an entity no longer a mutineer.
-command-description-mutiny-makemutineerleader = Makes an entity a mutineer leader.
-command-description-mutiny-removemutineerleader = Makes an entity no longer a mutineer leader.
+command-description-mutiny-end = 立即移除所有叛变者的叛变状态。在控制台报告结果。
+command-description-mutiny-ismutineer = 如果实体是叛变者则返回Yes，否则返回No。
+command-description-mutiny-list = 列出当前所有叛变者。
+command-description-mutiny-makemutineer = 使实体成为叛变者。注意图标仅在陆战队员身上渲染。
+command-description-mutiny-removemutineer = 使实体不再是叛变者。
+command-description-mutiny-makemutineerleader = 使实体成为叛变者领袖。
+command-description-mutiny-removemutineerleader = 使实体不再是叛变者领袖。
 
-mutineer-status-added = You have been made a mutineer. You may now participate in the ongoing mutiny.
-mutineer-status-removed = You are no longer a mutineer and should not participate in an mutiny activity anymore.
-mutineer-leader-status-added = You have been made the leader of the mutiny.
-mutineer-leader-status-removed = You are no longer the leader of the mutiny.
+mutineer-status-added = 你已被认定为叛变者。你现在可以参与正在进行的叛变。
+mutineer-status-removed = 你不再是叛变者，不应再参与任何叛变活动。
+mutineer-leader-status-added = 你已被认定为叛变的领袖。
+mutineer-leader-status-removed = 你不再是叛变的领袖。
 
-mutineer-invite-title = Mutiny Invitation
-mutineer-invite-accept = Join
-mutineer-invite-deny = Decline
+mutineer-invite-title = 叛变邀请
+mutineer-invite-accept = 加入
+mutineer-invite-deny = 拒绝

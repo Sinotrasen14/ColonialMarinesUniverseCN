@@ -1,10 +1,10 @@
-cmd-setjobpriority-desc = Sets the selected character's job preference for a connected player.
-cmd-setjobpriority-help = Usage: setjobpriority <player> <job> <high|medium|low|never>
-cmd-setjobpriority-player-not-found = Player {$player} is not connected.
-cmd-setjobpriority-job-not-found = Job {$job} does not exist.
-cmd-setjobpriority-invalid-priority = {$priority} is not a valid job priority. Use high, medium, low, or never.
-cmd-setjobpriority-preferences-not-loaded = Preferences for {$player} have not loaded yet.
-cmd-setjobpriority-success = Set {$player}'s {$job} preference to {$priority}.
+cmd-setjobpriority-desc = 设置某位已连接玩家所选角色的职位偏好。
+cmd-setjobpriority-help = 用法：setjobpriority <player> <job> <high|medium|low|never>
+cmd-setjobpriority-player-not-found = 玩家{$player}未连接。
+cmd-setjobpriority-job-not-found = 职位{$job}不存在。
+cmd-setjobpriority-invalid-priority = {$priority}不是有效的职位优先级。请使用high、medium、low或never。
+cmd-setjobpriority-preferences-not-loaded = {$player}的偏好尚未加载。
+cmd-setjobpriority-success = 已将{$player}的{$job}偏好设为{$priority}。
 cmd-setjobpriority-hint-player = [player]
 cmd-setjobpriority-hint-job = [job]
 cmd-setjobpriority-hint-priority = [high|medium|low|never]

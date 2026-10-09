@@ -1,28 +1,28 @@
-cm-pull-whitelist-denied = We have no use for {THE($name)}, why would we want to touch it?
-cm-pull-whitelist-denied-dead = {THE($name)} is dead, why would we want to touch it?
+cm-pull-whitelist-denied = 我们不需要{THE($name)}，我们为什么要碰它？
+cm-pull-whitelist-denied-dead = {THE($name)}已经死了，我们为什么要碰它？
 
-rmc-pull-paralyze-self = You try to pull {THE($pulled)}, but get a swipe to the head!
-rmc-pull-paralyze-others = {$puller} tries to pull {THE($pulled)}, but gets a swipe to the head instead!
+rmc-pull-paralyze-self = 你试图拖动{THE($pulled)}，却被一巴掌打在头上！
+rmc-pull-paralyze-others = {$puller}试图拖动{THE($pulled)}，却被一巴掌打在头上！
 
-rmc-pull-infect-self = You try to pull {$pulled}, but get jumped on and infected in the process!
-rmc-pull-infect-others = {$puller} tries to pull {$pulled}, but gets jumped on and infected in the process!
+rmc-pull-infect-self = 你试图拖动{$pulled}，却在过程中被扑倒并感染了！
+rmc-pull-infect-others = {$puller}试图拖动{$pulled}，却在过程中被扑倒并感染了！
 
-rmc-prevent-pull-alive = You can't pull {THE($target)} while {SUBJECT($target)} {CONJUGATE-BE($target)} alive!
+rmc-prevent-pull-alive = 你无法拖动{THE($target)}，因为{SUBJECT($target)} {CONJUGATE-BE($target)}还活着！
 
-rmc-pull-aggressive-self = You have grabbed {$pulled} aggressively!
-rmc-pull-aggressive-others = {$puller} has grabbed {$pulled} aggressively!
-rmc-pull-break-start-self = You struggle to break free of {$puller}'s grip!
-rmc-pull-break-start-others = {$pulled} struggles to break free of {$puller}'s grip!
-rmc-pull-break-finish-self = You break free of {$puller}'s grip!
-rmc-pull-break-finish-others = {$pulled} has broken free of {$puller}'s grip!
+rmc-pull-aggressive-self = 你已强行抓住了{$pulled}！
+rmc-pull-aggressive-others = {$puller}已强行抓住了{$pulled}！
+rmc-pull-break-start-self = 你挣扎着想挣脱{$puller}的抓握！
+rmc-pull-break-start-others = {$pulled}挣扎着想挣脱{$puller}的抓握！
+rmc-pull-break-finish-self = 你挣脱了{$puller}的抓握！
+rmc-pull-break-finish-others = {$pulled}挣脱了{$puller}的抓握！
 
-rmc-fireman-carry-need-carry-first = You need to carry them first!
-rmc-fireman-carry-cant-throw = You can't throw this!
+rmc-fireman-carry-need-carry-first = 你需要先背起他们！
+rmc-fireman-carry-cant-throw = 你不能扔这个！
 
-rmc-fireman-carry-need-aggressive-grab = You need to grab them aggressively first!
-rmc-fireman-carry-cant-grab-aggressively = You can't grab this aggressively!
-rmc-fireman-carry-not-trained-grab = You aren't trained to grab them aggressively!
+rmc-fireman-carry-need-aggressive-grab = 你需要先强行抓住他们！
+rmc-fireman-carry-cant-grab-aggressively = 你不能强行抓住这个！
+rmc-fireman-carry-not-trained-grab = 你没有强行抓住他们的训练！
 
-rmc-fireman-carry-start-loading = You start loading {$targetName} onto your back.
+rmc-fireman-carry-start-loading = 你开始把{$targetName}背到背上。
 
-rmc-fireman-carry-not-trained = You aren't trained to carry people!
+rmc-fireman-carry-not-trained = 你没有背人的训练！

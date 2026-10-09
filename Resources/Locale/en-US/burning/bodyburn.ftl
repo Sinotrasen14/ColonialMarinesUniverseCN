@@ -1,2 +1,2 @@
-﻿bodyburn-text-others = {CAPITALIZE(THE($name))} burns to ash!
-bodyburn-vox-text-others = {CAPITALIZE(THE($name))} turned into fried vox!
+bodyburn-text-others = {CAPITALIZE(THE($name))}烧成了灰！
+bodyburn-vox-text-others = {CAPITALIZE(THE($name))}变成了烤熟的vox！

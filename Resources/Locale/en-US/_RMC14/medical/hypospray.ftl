@@ -1,15 +1,15 @@
-﻿rmc-hypospray-label = Volume: [color=white]{$currentVolume}/{$totalVolume}[/color]
-    Injecting ([color=white]{$transferVolume}u[/color])
+rmc-hypospray-label = 体积：[color=white]{$currentVolume}/{$totalVolume}[/color]
+    注射中（[color=white]{$transferVolume}u[/color]）
 
-rmc-hypospray-label-novial = No Vial
-    Injecting ([color=white]{$transferVolume}u[/color])
+rmc-hypospray-label-novial = 无药瓶
+    注射中（[color=white]{$transferVolume}u[/color]）
 
-rmc-hypospray-fail-tacreload = You aren't experienced enough to load this any faster.
-rmc-hypospray-swap-tacreload = You begin swapping vials.
-rmc-hypospray-load-tacreload = You begin loading a vial into {THE($hypo)}.
+rmc-hypospray-fail-tacreload = 你的经验不足以更快地装填这个。
+rmc-hypospray-swap-tacreload = 你开始更换药瓶。
+rmc-hypospray-load-tacreload = 你开始向{THE($hypo)}装填药瓶。
 
-rmc-hypospray-loaded = It is loaded with {INDEFINITE($vial)} {$vial}.
-rmc-hypospray-no-vial = No vial loaded.
-rmc-hypospray-amount-change = Now injecting {$amount}u.
-rmc-hypospray-full = {THE($vial)} is full.
+rmc-hypospray-loaded = 它已装填{INDEFINITE($vial)} {$vial}。
+rmc-hypospray-no-vial = 未装填药瓶。
+rmc-hypospray-amount-change = 现在注射{$amount}u。
+rmc-hypospray-full = {THE($vial)}已装满。
 

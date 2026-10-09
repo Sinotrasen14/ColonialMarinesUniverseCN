@@ -1,2 +1,2 @@
-﻿cmd-ooc-desc = Send Out Of Character chat messages.
-cmd-ooc-help = Usage: ooc <text>
+cmd-ooc-desc = 发送OOC（角色外）聊天消息。
+cmd-ooc-help = 用法：ooc <text>

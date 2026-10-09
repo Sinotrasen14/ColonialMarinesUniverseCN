@@ -1,4 +1,4 @@
 command-description-solution-get =
-    Grabs the given solution off the given entity.
+    从指定实体上获取指定的溶液。
 command-description-solution-adjreagent =
-    Adjusts the given reagent on the given solution.
+    调整指定溶液中的指定试剂。

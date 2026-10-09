@@ -1,2 +1,2 @@
 command-description-runverbas =
-    Runs a verb over the input entities with the given user.
+    以指定用户身份对输入实体执行动词。

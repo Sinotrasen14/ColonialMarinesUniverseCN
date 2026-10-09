@@ -1,20 +1,20 @@
 cmd-align-desc =
-    Automatically snap the alignment of all anchored airlocks, doors, firelocks etc.
-    to line up with adjacent structures.
+    自动对齐所有已固定的气闸、舱门、防火门等的朝向，
+    使其与相邻结构对齐。
 
-    Use the [dry run] parameter to perform a check without rotating anything.
-cmd-align-help = Usage: {$command} [MapID] [dry run?]
-cmd-align-no-release = You can't use this command if the game is running in RELEASE configuration.
+    使用[dry run]参数可只进行检查而不进行任何旋转。
+cmd-align-help = 用法：{$command} [MapID] [dry run?]
+cmd-align-no-release = 如果游戏以RELEASE配置运行，你不能使用此命令。
 cmd-align-hint-id = MapID
 cmd-align-hint-dry = dry run?
 cmd-align-feedback-none = {$dry ->
 [true] DRY RUN: No
 *[false] No
-} entities compatible with AlignerSystem were found!
+} 个与AlignerSystem兼容的实体被找到！
 cmd-align-feedback-good = {$dry ->
 [true] DRY RUN: No
 *[false] No
-} misaligned entities were found.
+} 个未对齐的实体被找到。
 cmd-align-feedback = {$dry ->
 [true] DRY RUN: Found
 *[false] Found and fixed

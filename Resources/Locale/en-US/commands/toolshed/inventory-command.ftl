@@ -1,22 +1,22 @@
 command-description-inventory-getflags =
-    Gets all entities in slots on the piped inventory entity matching a certain slot flag.
+    获取管道库存实体上与某个槽位标志匹配的所有槽位中的实体。
 command-description-inventory-getnamed =
-    Gets all entities in slots on the piped inventory entity matching a certain slot name.
+    获取管道库存实体上与某个槽位名称匹配的所有槽位中的实体。
 command-description-inventory-forceput =
-    Puts a given entity on the first piped entity that has a slot matching the given flag, deleting any item previously in that slot.
+    将指定实体放入第一个具有匹配指定标志槽位的管道实体，删除该槽位中此前的任何物品。
 command-description-inventory-forcespawn =
-    Spawns a given prototype on the first piped entity that has a slot matching the given flag, deleting any item previously in that slot.
+    将指定原型生成到第一个具有匹配指定标志槽位的管道实体，删除该槽位中此前的任何物品。
 command-description-inventory-put =
-    Puts a given entity on the first piped entity that has a slot matching the given flag, unequiping any item previously in that slot.
+    将指定实体放入第一个具有匹配指定标志槽位的管道实体，卸下该槽位中此前的任何物品。
 command-description-inventory-spawn =
-    Spawns a given prototype on the first piped entity that has a slot matching the given flag, unequiping any item previously in that slot.
+    将指定原型生成到第一个具有匹配指定标志槽位的管道实体，卸下该槽位中此前的任何物品。
 command-description-inventory-tryput =
-    Tries to put a given entity on the first piped entity that has a slot matching the given flag, failing if any item is in currently in that slot.
+    尝试将指定实体放入第一个具有匹配指定标志槽位的管道实体，若该槽位当前有物品则失败。
 command-description-inventory-tryspawn =
-    Tries to spawn a given prototype on the first piped entity that has a slot matching the given flag, failing if any item is in currently in that slot.
+    尝试将指定原型生成到第一个具有匹配指定标志槽位的管道实体，若该槽位当前有物品则失败。
 command-description-inventory-ensure =
-    Puts a given entity on the first piped entity that has a slot matching the given flag if none exists, passing through the UID of whatever is in the slot by the end.
+    若不存在，则将指定实体放入第一个具有匹配指定标志槽位的管道实体，最后传递该槽位中任何物品的UID。
 command-description-inventory-ensurespawn =
-    Spawns a given prototype on the first piped entity that has a slot matching the given flag if none exists, passing through the UID of whatever is in the slot by the end.
+    若不存在，则将指定原型生成到第一个具有匹配指定标志槽位的管道实体，最后传递该槽位中任何物品的UID。
 command-description-inventory-contents =
-    Gets the entities in the inventory slots of the piped entities and passes them along.
+    获取管道实体库存槽位中的实体并传递下去。

@@ -1,12 +1,12 @@
-﻿rmc-cassette-play = You press {THE($player)} 'play' button, {$current} of {$total}
-rmc-cassette-playing = Now playing {$current} of {$total}
-rmc-cassette-pause = You pause {THE($player)}
-rmc-cassette-resume = Resuming {$current} of {$total}
-rmc-cassette-change = You change the song, {$current} of {$total}
-rmc-cassette-restart = You restart the song, {$current} of {$total}
-rmc-cassette-tape-examine = It has [color=lightblue]{$total}[/color] tracks.
-rmc-cassette-tape-custom = [color=cyan]Use it while in your hand to choose a custom track to play.[/color]
-rmc-cassette-tape-custom-choose = Choose a track
-rmc-cassette-player-examine-tape = It has a {$tape} inside.
-rmc-cassette-player-examine-none = It doesn't have a cassette inside.
-rmc-cassette-player-eject = Eject tape
+rmc-cassette-play = 你按下了{THE($player)}的“播放”按钮，第{$current}/{$total}首
+rmc-cassette-playing = 正在播放第{$current}/{$total}首
+rmc-cassette-pause = 你暂停了{THE($player)}
+rmc-cassette-resume = 继续播放第{$current}/{$total}首
+rmc-cassette-change = 你切换了歌曲，第{$current}/{$total}首
+rmc-cassette-restart = 你重新播放了歌曲，第{$current}/{$total}首
+rmc-cassette-tape-examine = 它有[color=lightblue]{$total}[/color]首曲目。
+rmc-cassette-tape-custom = [color=cyan]拿在手中使用即可选择要播放的自定义曲目。[/color]
+rmc-cassette-tape-custom-choose = 选择曲目
+rmc-cassette-player-examine-tape = 里面有一盘{$tape}。
+rmc-cassette-player-examine-none = 里面没有磁带。
+rmc-cassette-player-eject = 弹出磁带

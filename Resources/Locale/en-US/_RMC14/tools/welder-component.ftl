@@ -1,1 +1,1 @@
-﻿rmc-welder-component-danger = That was close! However, you realized you had the welder on and prevented disaster.
+rmc-welder-component-danger = 好险！不过你意识到焊枪还开着，避免了灾难。

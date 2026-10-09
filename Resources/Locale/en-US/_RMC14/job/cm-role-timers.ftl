@@ -1,19 +1,19 @@
-﻿role-timer-human-roles = any humanoid roles
-role-timer-medical-roles = any medical roles
-role-timer-engineering-roles = any engineering roles
-role-timer-dropship-roles = any dropship roles
-role-timer-dropship-pilot-roles = any dropship pilot roles
-role-timer-corporate-roles = any corporate roles
-role-timer-survivor-roles = any survivor roles
+role-timer-human-roles = 任何类人角色
+role-timer-medical-roles = 任何医疗角色
+role-timer-engineering-roles = 任何工程角色
+role-timer-dropship-roles = 任何运输机角色
+role-timer-dropship-pilot-roles = 任何运输机飞行员角色
+role-timer-corporate-roles = 任何企业角色
+role-timer-survivor-roles = 任何幸存者角色
 
-role-timer-total-department-insufficient = You require [color=yellow]{TOSTRING($time, "0")}[/color] more minutes as [color={$rolesColor}]{$roles}[/color] to play this role.
-role-timer-total-department-too-high = You require [color=yellow]{TOSTRING($time, "0")}[/color] fewer minutes as [color={$departmentColor}]{$rolesColor}[/color] to play this role. (Are you trying to play a trainee role?)
+role-timer-total-department-insufficient = 你还需要多游玩[color=yellow]{TOSTRING($time, "0")}[/color]分钟，以[color={$rolesColor}]{$roles}[/color]身份才能担任此角色。
+role-timer-total-department-too-high = 你还需要少游玩[color=yellow]{TOSTRING($time, "0")}[/color]分钟，以[color={$departmentColor}]{$rolesColor}[/color]身份才能担任此角色。（你是想担任见习角色吗？）
 
 # Survs
-role-timer-civilian-survivor-roles = any civilian survivor roles
-role-timer-engineer-survivor-roles = any engineer survivor roles
-role-timer-medical-survivor-roles = any medical survivor roles
-role-timer-corporate-survivor-roles = any corporate survivor roles
-role-timer-security-survivor-roles = any security survivor roles
-role-timer-security-scientist-roles = any researcher survivor roles
-role-timer-commander-survivor-roles = any commander survivor roles
+role-timer-civilian-survivor-roles = 任何平民幸存者角色
+role-timer-engineer-survivor-roles = 任何工程师幸存者角色
+role-timer-medical-survivor-roles = 任何医疗幸存者角色
+role-timer-corporate-survivor-roles = 任何企业幸存者角色
+role-timer-security-survivor-roles = 任何安保幸存者角色
+role-timer-security-scientist-roles = 任何研究员幸存者角色
+role-timer-commander-survivor-roles = 任何指挥官幸存者角色

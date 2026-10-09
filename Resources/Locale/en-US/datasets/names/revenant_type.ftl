@@ -1,8 +1,8 @@
-names-revenant-type-dataset-1 = essence
-names-revenant-type-dataset-2 = ghost
-names-revenant-type-dataset-3 = phantom
-names-revenant-type-dataset-4 = poltergeist
-names-revenant-type-dataset-5 = revenant
-names-revenant-type-dataset-6 = soul
-names-revenant-type-dataset-7 = spectre
-names-revenant-type-dataset-8 = spirit
+names-revenant-type-dataset-1 = 精华
+names-revenant-type-dataset-2 = 幽灵
+names-revenant-type-dataset-3 = 幻影
+names-revenant-type-dataset-4 = 骚灵
+names-revenant-type-dataset-5 = 亡魂
+names-revenant-type-dataset-6 = 灵魂
+names-revenant-type-dataset-7 = 幽灵体
+names-revenant-type-dataset-8 = 精灵

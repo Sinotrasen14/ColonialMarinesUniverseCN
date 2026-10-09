@@ -1,3 +1,3 @@
-command-description-assignimaginaryfriend = Gives a player the choice to become the imaginary friend of another player.
-assign-imaginary-friend-command-target-no-entity = The target session is not controlling an entity.
-assign-imaginary-friend-command-success = Offered {$friend} to become {$target}'s imaginary friend.
+command-description-assignimaginaryfriend = 让某位玩家选择成为另一位玩家的虚构朋友。
+assign-imaginary-friend-command-target-no-entity = 目标会话没有控制任何实体。
+assign-imaginary-friend-command-success = 已向{$friend}提供成为{$target}的虚构朋友的机会。

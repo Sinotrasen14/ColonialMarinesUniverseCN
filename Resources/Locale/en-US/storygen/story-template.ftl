@@ -1,4 +1,4 @@
 story-template-generic =
- This is { INDEFINITE($bookGenre) } {$bookGenre} about { INDEFINITE($char1Adj) } {$char1Adj} {$char1Type} and { INDEFINITE($char2Adj) } {$char2Adj} {$char2Type}. Due to {$event}, they {$actionTrait} {$action} { INDEFINITE($char3Type) } {$char3Type} {$location}.
+ 这是一本{ INDEFINITE($bookGenre) } {$bookGenre}，讲述{ INDEFINITE($char1Adj) } {$char1Adj} {$char1Type}与{ INDEFINITE($char2Adj) } {$char2Adj} {$char2Type}。由于{$event}，他们{$actionTrait} {$action} { INDEFINITE($char3Type) } {$char3Type} {$location}。
 
- The {$element} is {$elementTrait}.
+ {$element}是{$elementTrait}。

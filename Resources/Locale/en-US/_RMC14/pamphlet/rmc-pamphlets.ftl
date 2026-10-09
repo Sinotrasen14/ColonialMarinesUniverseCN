@@ -1,6 +1,6 @@
-﻿rmc-pamphlets-cant-use = You can't read this!
-rmc-pamphlets-limit-reached = You've already used a pamphlet!
-rmc-pamphlets-already-know = You know this already!
-rmc-pamphlets-reading = You read over the pamphlet a few times, learning a new skill.
-rmc-pamphlets-rifleman-warning = Only squad riflemen can use this.
-rmc-pamphlets-mp-warning = Only military police can use this.
+rmc-pamphlets-cant-use = 你读不懂这个！
+rmc-pamphlets-limit-reached = 你已经用过一本手册了！
+rmc-pamphlets-already-know = 你已经会这个了！
+rmc-pamphlets-reading = 你把手册读了几遍，学会了一项新技能。
+rmc-pamphlets-rifleman-warning = 只有小队步枪兵才能使用这个。
+rmc-pamphlets-mp-warning = 只有宪兵才能使用这个。

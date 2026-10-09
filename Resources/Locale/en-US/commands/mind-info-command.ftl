@@ -1,3 +1,3 @@
-﻿cmd-mindinfo-desc = Lists info for the mind of a specific player.
-cmd-mindinfo-help = Usage: mindinfo <session ID>
-cmd-mindinfo-mind-not-found = Can't find that mind.
+cmd-mindinfo-desc = 列出指定玩家意识的信息。
+cmd-mindinfo-help = 用法：mindinfo <session ID>
+cmd-mindinfo-mind-not-found = 找不到该意识。

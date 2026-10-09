@@ -1,6 +1,6 @@
-cmd-pauseatmos-desc = Pauses or unpauses the atmosphere simulation for the provided grid entity.
-cmd-pauseatmos-help = Usage: {$command} <EntityUid>
+cmd-pauseatmos-desc = 暂停或恢复指定网格实体的大气模拟。
+cmd-pauseatmos-help = 用法：{$command} <EntityUid>
 
-cmd-pauseatmos-set-atmos-simulation = Set atmospherics simulation on {$grid} to state {$state}.
+cmd-pauseatmos-set-atmos-simulation = 已将{$grid}的大气模拟设为{$state}状态。
 
-cmd-pauseatmos-completion-grid-pause = EntityUid of the grid you want to pause/unpause. Automatically uses the grid you're standing on if empty.
+cmd-pauseatmos-completion-grid-pause = 你想要暂停/恢复的网格实体UID。留空时自动使用你所在的网格。

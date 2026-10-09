@@ -1,14 +1,14 @@
-﻿cm-access-colony-public = Colony Public
-cm-access-colony-logistics = Colony Logistics
-cm-access-colony-engineering = Colony Engineering
-cm-access-colony-research = Colony Research
-cm-access-colony-brig = Colony Brig
-cm-access-colony-medbay = Colony Medbay
-cm-access-colony-command = Colony Command
-rmc-access-colony-armory = Colony Armory
+cm-access-colony-public = 殖民地公共区
+cm-access-colony-logistics = 殖民地后勤
+cm-access-colony-engineering = 殖民地工程
+cm-access-colony-research = 殖民地科研
+cm-access-colony-brig = 殖民地禁闭室
+cm-access-colony-medbay = 殖民地医疗舱
+cm-access-colony-command = 殖民地指挥部
+rmc-access-colony-armory = 殖民地军械库
 
-au-access-prison = Prison Staff
+au-access-prison = 监狱工作人员
 
 rmc-access-tsepa = TSEPA
-rmc-access-tsepa-brig = TSEPA Brig
-rmc-access-tsepa-inspector = TSEPA Inspector
+rmc-access-tsepa-brig = TSEPA禁闭室
+rmc-access-tsepa-inspector = TSEPA督察

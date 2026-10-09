@@ -1,6 +1,6 @@
-ui-vote-created = { $initiator } has called a vote:
-ui-vote-button  = { $text } ({ $votes })
+ui-vote-created = { $initiator }发起了一项投票：
+ui-vote-button  = { $text }（{ $votes }）
 ui-vote-button-no-votes  = { $text }
-ui-vote-follow-button-popup = Follow User
-ui-vote-minimize = Hide
-ui-vote-restore = Show
+ui-vote-follow-button-popup = 跟随用户
+ui-vote-minimize = 隐藏
+ui-vote-restore = 显示

@@ -1,4 +1,4 @@
 command-description-admins-active =
-    Returns a list of active admins.
+    返回当前活跃的管理员列表。
 command-description-admins-all =
-    Returns a list of ALL admins, including deadmined ones.
+    返回所有管理员的列表，包括已卸任的管理员。

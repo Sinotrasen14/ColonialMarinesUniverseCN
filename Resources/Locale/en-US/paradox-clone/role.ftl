@@ -1,7 +1,7 @@
-paradox-clone-round-end-agent-name = paradox clone
+paradox-clone-round-end-agent-name = 悖论克隆体
 
-objective-issuer-paradox = [color=lightblue]Paradox[/color]
+objective-issuer-paradox = [color=lightblue]悖论[/color]
 
-paradox-clone-role-greeting = A freak space-time anomaly has teleported you into another reality! Now you have to find your counterpart and kill and replace them. Only one of you two can survive.
+paradox-clone-role-greeting = 一场诡异的时空异常把你传送到了另一个现实！现在你必须找到你的对应体，杀掉并取代他。你们两人中只有一个能活下来。
 
-paradox-clone-ghost-name-modifier = {$baseName} (clone)
+paradox-clone-ghost-name-modifier = {$baseName}（克隆体）

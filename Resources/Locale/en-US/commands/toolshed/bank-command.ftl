@@ -1,10 +1,10 @@
 command-description-bank-accounts =
-    Returns all accounts on a station.
+    返回空间站上的所有账户。
 command-description-bank-account =
-    Returns a given bank account from a station.
+    返回空间站上指定的银行账户。
 command-description-bank-adjust =
-    Adjusts the money for the given bank account.
+    调整指定银行账户的金额。
 command-description-bank-set =
-    Sets the money for the given bank account.
+    设置指定银行账户的金额。
 command-description-bank-amount =
-    Returns the money for the given bank account.
+    返回指定银行账户的金额。

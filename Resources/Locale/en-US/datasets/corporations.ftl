@@ -1,9 +1,9 @@
-traitor-corporations-dataset-1 = CyberSun Industries
-traitor-corporations-dataset-2 = Gorlex Marauders
+traitor-corporations-dataset-1 = 赛博阳工业
+traitor-corporations-dataset-2 = 戈莱克斯劫掠者
 traitor-corporations-dataset-3 = MI13
-traitor-corporations-dataset-4 = Tiger Cooperative
+traitor-corporations-dataset-4 = 猛虎合作社
 traitor-corporations-dataset-5 = S.E.L.F.
-traitor-corporations-dataset-6 = Animal Rights Consortium
-traitor-corporations-dataset-7 = Donk Corporation
-traitor-corporations-dataset-8 = Waffle Corporation
-traitor-corporations-dataset-9 = Interdyne Pharmaceutics
+traitor-corporations-dataset-6 = 动物权利联盟
+traitor-corporations-dataset-7 = 唐克公司
+traitor-corporations-dataset-8 = 华夫公司
+traitor-corporations-dataset-9 = 因特代因制药

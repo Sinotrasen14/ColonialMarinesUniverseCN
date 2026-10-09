@@ -1,104 +1,104 @@
 # marines
-cm-job-name-rifleman = Rifleman
-cm-job-description-rifleman = Follow orders from those above you. Do your job and shoot when you're needed to shoot. Don't die in the process.
+cm-job-name-rifleman = 步枪手
+cm-job-description-rifleman = 服从上级的命令。做好你的本职工作，该开枪时就开枪。别在这个过程中死掉。
 cm-job-prefix-rifleman = RFN
-CMJobRifleman = Rifleman
+CMJobRifleman = 步枪手
 
-cm-job-name-squad-leader = Section Leader
-cm-job-description-squad-leader = Leader of a rifle section. Give your section and squads objectives and follow orders from Command. Keep your section in one piece.
+cm-job-name-squad-leader = 分区队长
+cm-job-description-squad-leader = 步枪分区的队长。为你的分区和小队下达目标，并服从指挥层的命令。让你的分区保持完整。
 cm-job-prefix-squad-leader = SL
-CMJobSquadLeader = Squad Leader
+CMJobSquadLeader = 小队长
 
-cm-job-name-fireteam-leader = Squad Leader
-cm-job-description-fireteam-leader = Follow the section leader's orders and command your squad.
+cm-job-name-fireteam-leader = 小队长
+cm-job-description-fireteam-leader = 服从分区队长的命令，并指挥你的小队。
 cm-job-prefix-fireteam-leader = FTL
-CMJobFireteamLeader = Fireteam Leader
+CMJobFireteamLeader = 火力小组长
 
-cm-job-name-weapons-specialist = Weapons Specialist
-cm-job-description-weapons-specialist = Gain access to heavier, more powerful weaponry and equipment. Combat professional, lead the squad if needed.
+cm-job-name-weapons-specialist = 武器专家
+cm-job-description-weapons-specialist = 可以使用更沉重、更强大的武器和装备。战斗专业人员，必要时带领小队。
 cm-job-prefix-weapons-specialist = Spc
-CMJobWeaponsSpecialist = Weapons Specialist
+CMJobWeaponsSpecialist = 武器专家
 
-cm-job-name-smart-gun-operator = Smart Gun Operator
-cm-job-description-smart-gun-operator = Support your Squad with heavy weaponry and give the enemy suppressing fire.
+cm-job-name-smart-gun-operator = 重机枪手
+cm-job-description-smart-gun-operator = 用重型武器支援你的小队，为敌人提供压制火力。
 cm-job-prefix-gun-operator = SG
-CMJobSmartGunOperator = Smart Gun Operator
+CMJobSmartGunOperator = 重机枪手
 
-cm-job-name-hospital-corpsman = Hospital Corpsman
-cm-job-description-hospital-corpsman = Keep Marines in fighting condition, or as close as you can get them. Medevac those who need to be sent back to Medbay for treatment.
+cm-job-name-hospital-corpsman = 医疗兵
+cm-job-description-hospital-corpsman = 让陆战队员保持战斗状态，或者尽可能接近。把需要送回医疗舱治疗的人后送。
 cm-job-prefix-hospital-corpsman = HM
-CMJobHospitalCorpsman = Hospital Corpsman
+CMJobHospitalCorpsman = 医疗兵
 
-cm-job-name-combat-tech = Combat Technician
-cm-job-description-combat-tech = Build or remove fortifications. Establish and maintain FOB and Power. Gain access to blocked off areas.
+cm-job-name-combat-tech = 战斗工兵
+cm-job-description-combat-tech = 建造或拆除防御工事。建立并维护前进作战基地与电力。进入被封锁的区域。
 cm-job-prefix-combat-tech = CT
-CMJobCombatTech = Combat Tech
+CMJobCombatTech = 战斗工兵
 
-rmc-job-name-mortar-operator = Mortar Operator
+rmc-job-name-mortar-operator = 迫击炮操作员
 rmc-job-prefix-mortar-operator = MO
 
-rmc-job-name-loader = Loader
+rmc-job-name-loader = 装填手
 rmc-job-prefix-loader = LDR
 
-rmc-job-name-spotter = Spotter
+rmc-job-name-spotter = 观察员
 rmc-job-prefix-spotter = SPTR
 
-rmc-job-name-weapons-specialist-demo = Demolitionist Specialist
+rmc-job-name-weapons-specialist-demo = 爆破专家
 rmc-job-prefix-weapons-specialist-demo = DEMO
 
-rmc-job-name-weapons-specialist-grenadier = Grenadier Specialist
+rmc-job-name-weapons-specialist-grenadier = 掷弹兵专家
 rmc-job-prefix-weapons-specialist-grenadier = GRND
 
-rmc-job-name-weapons-specialist-sharp = SHARP Operator Specialist
+rmc-job-name-weapons-specialist-sharp = SHARP操作员专家
 rmc-job-prefix-weapons-specialist-sharp = SHRP
 
-rmc-job-name-weapons-specialist-sniper = Sniper Specialist
+rmc-job-name-weapons-specialist-sniper = 狙击手专家
 rmc-job-prefix-weapons-specialist-sniper = SNPR
 
-rmc-job-name-weapons-specialist-anti-materiel-sniper = AMR Specialist
+rmc-job-name-weapons-specialist-anti-materiel-sniper = AMR专家
 rmc-job-prefix-weapons-specialist-anti-materiel-sniper = AMR
 
-rmc-job-name-weapons-specialist-scout = Scout Specialist
+rmc-job-name-weapons-specialist-scout = 侦察专家
 rmc-job-prefix-weapons-specialist-scout = SCT
 
-rmc-job-name-weapons-specialist-pyro = Pyrotechnical Specialist
+rmc-job-name-weapons-specialist-pyro = 火焰喷射专家
 rmc-job-prefix-weapons-specialist-pyro = PYRO
 
-rmc-job-name-weapons-specialist-shotgunner = Heavy Shotgunner
+rmc-job-name-weapons-specialist-shotgunner = 重型霰弹枪手
 rmc-job-prefix-weapons-specialist-shotgunner = SGNR
 
-rmc-job-name-weapons-specialist-plasmagunner = Plasma Gunner
+rmc-job-name-weapons-specialist-plasmagunner = 等离子枪手
 rmc-job-prefix-weapons-specialist-plasmagunner = PGNR
 
-rmc-job-name-forecon-spotter = Recon Spotter
+rmc-job-name-forecon-spotter = 侦察观察员
 
-rmc-job-name-recruit = Recruit
-rmc-job-description-recruit = Follow orders and learn from those above you. Get yelled at by an instructor. Graduate to become a marine.
+rmc-job-name-recruit = 新兵
+rmc-job-description-recruit = 服从命令，并向你的上级学习。被教官吼。毕业成为一名陆战队员。
 rmc-job-prefix-recruit = RCT
 
-cm-job-name-section-sergeant = Section Sergeant
-cm-job-description-section-sergeant = Leader of one of the platoon's sections. Give your section and squads objectives and follow orders from the Plat CO. Keep your section in one piece.
+cm-job-name-section-sergeant = 分区中士
+cm-job-description-section-sergeant = 排里某个分区的队长。为你的分区和小队下达目标，并服从排长的命令。让你的分区保持完整。
 cm-job-prefix-section-sergeant = SctSgt
-CMPVESectionSergeant = Section Sergeant
+CMPVESectionSergeant = 分区中士
 
 
-CMPVEPlatoonCommander = Platoon Commander
+CMPVEPlatoonCommander = 排长
 
-rmc-job-name-pve-forecon-rifleman = Rifleman
+rmc-job-name-pve-forecon-rifleman = 步枪手
 rmc-job-prefix-pve-forecon-rifleman = RFN
 
-rmc-job-name-pve-forecon-smartgunner = Smartgun Operator
+rmc-job-name-pve-forecon-smartgunner = 重机枪手
 rmc-job-prefix-pve-forecon-smartgunner = SGO
 
-rmc-job-name-pve-forecon-corpsman = Corpsman
+rmc-job-name-pve-forecon-corpsman = 医疗兵
 rmc-job-prefix-pve-forecon-corpsman = HM
 
-rmc-job-name-pve-forecon-rto = Radio Telephone Operator
-rmc-job-description-pve-forecon-rto = You are the Radio Telephone Operator. Ensure communications between your squad and Company Command are well kept.
+rmc-job-name-pve-forecon-rto = 无线电话务员
+rmc-job-description-pve-forecon-rto = 你是无线电话务员。确保你的小队与连部之间的通讯畅通无阻。
 rmc-job-prefix-pve-forecon-rto = RTO
 
-rmc-job-name-pve-forecon-assistant-lead = Assistant Squad Lead
+rmc-job-name-pve-forecon-assistant-lead = 助理小队长
 rmc-job-prefix-pve-forecon-assistant-lead = ASL
 
-rmc-job-name-pve-forecon-squad-lead = Squad Lead
+rmc-job-name-pve-forecon-squad-lead = 小队长
 rmc-job-prefix-pve-forecon-squad-lead = SL

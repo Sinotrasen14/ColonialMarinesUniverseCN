@@ -1,38 +1,38 @@
 ### UI
 
-chat-manager-max-message-length = Your message exceeds {$maxMessageLength} character limit
-chat-manager-ooc-chat-enabled-message = OOC chat has been enabled.
-chat-manager-ooc-chat-disabled-message = OOC chat has been disabled.
-chat-manager-looc-chat-enabled-message = LOOC chat has been enabled.
-chat-manager-looc-chat-disabled-message = LOOC chat has been disabled.
-chat-manager-dead-looc-chat-enabled-message = Dead players can now use LOOC.
-chat-manager-dead-looc-chat-disabled-message = Dead players can no longer use LOOC.
-chat-manager-crit-looc-chat-enabled-message = Crit players can now use LOOC.
-chat-manager-crit-looc-chat-disabled-message = Crit players can no longer use LOOC.
-chat-manager-admin-ooc-chat-enabled-message = Admin OOC chat has been enabled.
-chat-manager-admin-ooc-chat-disabled-message = Admin OOC chat has been disabled.
-chat-manager-dead-chat-enabled-message = Dead chat has been enabled.
-chat-manager-dead-chat-disabled-message = Dead chat has been disabled.
+chat-manager-max-message-length = 你的消息超过了{$maxMessageLength}个字符的限制
+chat-manager-ooc-chat-enabled-message = OOC聊天已启用。
+chat-manager-ooc-chat-disabled-message = OOC聊天已禁用。
+chat-manager-looc-chat-enabled-message = LOOC聊天已启用。
+chat-manager-looc-chat-disabled-message = LOOC聊天已禁用。
+chat-manager-dead-looc-chat-enabled-message = 死亡玩家现在可以使用LOOC。
+chat-manager-dead-looc-chat-disabled-message = 死亡玩家不再可以使用LOOC。
+chat-manager-crit-looc-chat-enabled-message = 濒危玩家现在可以使用LOOC。
+chat-manager-crit-looc-chat-disabled-message = 濒危玩家不再可以使用LOOC。
+chat-manager-admin-ooc-chat-enabled-message = 管理员OOC聊天已启用。
+chat-manager-admin-ooc-chat-disabled-message = 管理员OOC聊天已禁用。
+chat-manager-dead-chat-enabled-message = 死亡聊天已启用。
+chat-manager-dead-chat-disabled-message = 死亡聊天已禁用。
 
-chat-manager-max-message-length-exceeded-message = Your message exceeded {$limit} character limit
-chat-manager-no-headset-on-message = You don't have a headset on!
-chat-manager-no-radio-key = No radio key specified!
-chat-manager-no-such-channel = There is no channel with key '{$key}'!
-chat-manager-whisper-headset-on-message = You can't whisper on the radio!
+chat-manager-max-message-length-exceeded-message = 你的消息超过了{$limit}个字符的限制
+chat-manager-no-headset-on-message = 你没有戴耳机！
+chat-manager-no-radio-key = 未指定无线电按键！
+chat-manager-no-such-channel = 不存在按键为'{$key}'的频道！
+chat-manager-whisper-headset-on-message = 你不能在无线电上耳语！
 
 # Unicode U+201C and U+201D Double quotes.
 chat-manager-speech-double-quote-begin = “
 chat-manager-speech-double-quote-end = ”
 
 chat-manager-server-wrap-message = [bold]{$message}[/bold]
-chat-manager-sender-announcement = Central Command
-chat-manager-sender-announcement-wrap-message = [font size=14][bold]{$sender} Announcement:[/font][font size=12]
+chat-manager-sender-announcement = 中央指挥部
+chat-manager-sender-announcement-wrap-message = [font size=14][bold]{$sender} 公告：[/font][font size=12]
                                                 {$message}[/bold][/font]
-chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
-chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}, [font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent][bold]{$message}[/bold][/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
+chat-manager-entity-say-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}，[font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
+chat-manager-entity-say-bold-wrap-message = [BubbleHeader][bold][Name]{$entityName}[/Name][/bold][/BubbleHeader] {$verb}，[font={$fontType} size={$fontSize}]{ chat-manager-speech-double-quote-begin }[BubbleContent][bold]{$message}[/bold][/BubbleContent]{ chat-manager-speech-double-quote-end }[/font]
 
-chat-manager-entity-whisper-wrap-message = [font size=13][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader] whispers,{ chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
-chat-manager-entity-whisper-unknown-wrap-message = [font size=13][italic][BubbleHeader]Someone[/BubbleHeader] whispers, { chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
+chat-manager-entity-whisper-wrap-message = [font size=13][italic][BubbleHeader][Name]{$entityName}[/Name][/BubbleHeader]低声说道，{ chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
+chat-manager-entity-whisper-unknown-wrap-message = [font size=13][italic][BubbleHeader]某人[/BubbleHeader]低声说道，{ chat-manager-speech-double-quote-begin }[BubbleContent]{$message}[/BubbleContent]{ chat-manager-speech-double-quote-end }[/italic][/font]
 
 # THE() is not used here because the entity and its name can technically be disconnected if a nameOverride is passed...
 chat-manager-entity-me-wrap-message = [italic]{ PROPER($entity) ->
@@ -40,144 +40,144 @@ chat-manager-entity-me-wrap-message = [italic]{ PROPER($entity) ->
      [true] {CAPITALIZE($entityName)} {$message}[/italic]
     }
 
-chat-manager-entity-looc-wrap-message = LOOC: [bold]{$entityName}:[/bold] {$message}
-chat-manager-send-ooc-wrap-message = OOC: [bold]{$playerName}:[/bold] {$message}
-chat-manager-send-ooc-patron-wrap-message = OOC: [bold][color={$patronColor}]{$playerName}[/color]:[/bold] {$message}
+chat-manager-entity-looc-wrap-message = LOOC：[bold]{$entityName}：[/bold] {$message}
+chat-manager-send-ooc-wrap-message = OOC：[bold]{$playerName}：[/bold] {$message}
+chat-manager-send-ooc-patron-wrap-message = OOC：[bold][color={$patronColor}]{$playerName}[/color]：[/bold] {$message}
 
-chat-manager-send-dead-chat-wrap-message = {$deadChannelName}: [bold][BubbleHeader]{$playerName}[/BubbleHeader]:[/bold] [BubbleContent]{$message}[/BubbleContent]
-chat-manager-send-admin-dead-chat-wrap-message = {$adminChannelName}: [bold]([BubbleHeader]{$userName}[/BubbleHeader]):[/bold] [BubbleContent]{$message}[/BubbleContent]
-chat-manager-send-admin-chat-wrap-message = {$adminChannelName}: [bold]{$playerName}:[/bold] {$message}
-chat-manager-send-admin-announcement-wrap-message = [bold]{$adminChannelName}: {$message}[/bold]
+chat-manager-send-dead-chat-wrap-message = {$deadChannelName}：[bold][BubbleHeader]{$playerName}[/BubbleHeader]：[/bold] [BubbleContent]{$message}[/BubbleContent]
+chat-manager-send-admin-dead-chat-wrap-message = {$adminChannelName}：[bold]（[BubbleHeader]{$userName}[/BubbleHeader]）：[/bold] [BubbleContent]{$message}[/BubbleContent]
+chat-manager-send-admin-chat-wrap-message = {$adminChannelName}：[bold]{$playerName}：[/bold] {$message}
+chat-manager-send-admin-announcement-wrap-message = [bold]{$adminChannelName}：{$message}[/bold]
 
-chat-manager-send-hook-ooc-wrap-message = OOC: [bold](D){$senderName}:[/bold] {$message}
-chat-manager-send-hook-admin-wrap-message = ADMIN: [bold](D){$senderName}:[/bold] {$message}
+chat-manager-send-hook-ooc-wrap-message = OOC：[bold]（D）{$senderName}：[/bold] {$message}
+chat-manager-send-hook-admin-wrap-message = ADMIN：[bold]（D）{$senderName}：[/bold] {$message}
 
-chat-manager-dead-channel-name = DEAD
-chat-manager-admin-channel-name = ADMIN
+chat-manager-dead-channel-name = 死亡
+chat-manager-admin-channel-name = 管理员
 
-chat-manager-rate-limited = You are sending messages too quickly!
-chat-manager-rate-limit-admin-announcement = Rate limit warning: { $player }
+chat-manager-rate-limited = 你发消息太快了！
+chat-manager-rate-limit-admin-announcement = 速率限制警告：{ $player }
 
-chat-manager-follow-button = (F)
+chat-manager-follow-button = （F）
 
 ## Speech verbs for chat
 
-chat-speech-verb-suffix-exclamation = !
-chat-speech-verb-suffix-exclamation-strong = !!
-chat-speech-verb-suffix-question = ?
+chat-speech-verb-suffix-exclamation = ！
+chat-speech-verb-suffix-exclamation-strong = ！！
+chat-speech-verb-suffix-question = ？
 chat-speech-verb-suffix-stutter = -
 chat-speech-verb-suffix-mumble = ..
 
-chat-speech-verb-name-none = None
-chat-speech-verb-name-default = Default
-chat-speech-verb-default = says
-chat-speech-verb-name-exclamation = Exclaiming
-chat-speech-verb-exclamation = exclaims
-chat-speech-verb-name-exclamation-strong = Yelling
-chat-speech-verb-exclamation-strong = yells
-chat-speech-verb-name-question = Asking
-chat-speech-verb-question = asks
-chat-speech-verb-name-stutter = Stuttering
-chat-speech-verb-stutter = stutters
-chat-speech-verb-name-mumble = Mumbling
-chat-speech-verb-mumble = mumbles
+chat-speech-verb-name-none = 无
+chat-speech-verb-name-default = 默认
+chat-speech-verb-default = 说道
+chat-speech-verb-name-exclamation = 惊叹
+chat-speech-verb-exclamation = 惊叹道
+chat-speech-verb-name-exclamation-strong = 大喊
+chat-speech-verb-exclamation-strong = 大喊道
+chat-speech-verb-name-question = 询问
+chat-speech-verb-question = 问道
+chat-speech-verb-name-stutter = 结巴
+chat-speech-verb-stutter = 结结巴巴地说
+chat-speech-verb-name-mumble = 嘟囔
+chat-speech-verb-mumble = 嘟囔道
 
-chat-speech-verb-name-arachnid = Arachnid
-chat-speech-verb-insect-1 = chitters
-chat-speech-verb-insect-2 = chirps
-chat-speech-verb-insect-3 = clicks
+chat-speech-verb-name-arachnid = 蛛形人
+chat-speech-verb-insect-1 = 叽叽喳喳地说
+chat-speech-verb-insect-2 = 啁啾道
+chat-speech-verb-insect-3 = 咔嗒作响
 
-chat-speech-verb-name-moth = Moth
-chat-speech-verb-winged-1 = flutters
-chat-speech-verb-winged-2 = flaps
-chat-speech-verb-winged-3 = buzzes
+chat-speech-verb-name-moth = 飞蛾
+chat-speech-verb-winged-1 = 扑扇道
+chat-speech-verb-winged-2 = 拍打道
+chat-speech-verb-winged-3 = 嗡嗡道
 
-chat-speech-verb-name-slime = Slime
-chat-speech-verb-slime-1 = sloshes
-chat-speech-verb-slime-2 = burbles
-chat-speech-verb-slime-3 = oozes
+chat-speech-verb-name-slime = 史莱姆
+chat-speech-verb-slime-1 = 咕嘟道
+chat-speech-verb-slime-2 = 咕噜道
+chat-speech-verb-slime-3 = 渗出道
 
-chat-speech-verb-name-plant = Diona
-chat-speech-verb-plant-1 = rustles
-chat-speech-verb-plant-2 = sways
-chat-speech-verb-plant-3 = creaks
+chat-speech-verb-name-plant = 迪奥娜
+chat-speech-verb-plant-1 = 沙沙道
+chat-speech-verb-plant-2 = 摇曳道
+chat-speech-verb-plant-3 = 嘎吱道
 
-chat-speech-verb-name-robotic = Robotic
-chat-speech-verb-robotic-1 = states
-chat-speech-verb-robotic-2 = beeps
-chat-speech-verb-robotic-3 = boops
+chat-speech-verb-name-robotic = 机械
+chat-speech-verb-robotic-1 = 陈述道
+chat-speech-verb-robotic-2 = 哔哔道
+chat-speech-verb-robotic-3 = 波波道
 
-chat-speech-verb-name-reptilian = Reptilian
-chat-speech-verb-reptilian-1 = hisses
-chat-speech-verb-reptilian-2 = snorts
-chat-speech-verb-reptilian-3 = huffs
+chat-speech-verb-name-reptilian = 蜥蜴人
+chat-speech-verb-reptilian-1 = 嘶嘶道
+chat-speech-verb-reptilian-2 = 喷鼻道
+chat-speech-verb-reptilian-3 = 呼哧道
 
-chat-speech-verb-name-skeleton = Skeleton
-chat-speech-verb-skeleton-1 = rattles
-chat-speech-verb-skeleton-2 = clacks
-chat-speech-verb-skeleton-3 = gnashes
+chat-speech-verb-name-skeleton = 骷髅
+chat-speech-verb-skeleton-1 = 咔哒道
+chat-speech-verb-skeleton-2 = 咯咯道
+chat-speech-verb-skeleton-3 = 咬牙道
 
 chat-speech-verb-name-vox = Vox
-chat-speech-verb-vox-1 = screeches
-chat-speech-verb-vox-2 = shrieks
-chat-speech-verb-vox-3 = croaks
+chat-speech-verb-vox-1 = 尖叫道
+chat-speech-verb-vox-2 = 厉声道
+chat-speech-verb-vox-3 = 嘶哑道
 
-chat-speech-verb-name-canine = Canine
-chat-speech-verb-canine-1 = barks
-chat-speech-verb-canine-2 = woofs
-chat-speech-verb-canine-3 = howls
+chat-speech-verb-name-canine = 犬类
+chat-speech-verb-canine-1 = 吠道
+chat-speech-verb-canine-2 = 汪汪道
+chat-speech-verb-canine-3 = 嚎道
 
-chat-speech-verb-name-goat = Goat
-chat-speech-verb-goat-1 = bleats
-chat-speech-verb-goat-2 = grunts
-chat-speech-verb-goat-3 = cries
+chat-speech-verb-name-goat = 山羊
+chat-speech-verb-goat-1 = 咩咩道
+chat-speech-verb-goat-2 = 咕哝道
+chat-speech-verb-goat-3 = 叫唤道
 
-chat-speech-verb-name-sheep = Sheep
-chat-speech-verb-sheep-1 = bleats
-chat-speech-verb-sheep-2 = baas
+chat-speech-verb-name-sheep = 绵羊
+chat-speech-verb-sheep-1 = 咩咩道
+chat-speech-verb-sheep-2 = 咩道
 
-chat-speech-verb-name-small-mob = Mouse
-chat-speech-verb-small-mob-1 = squeaks
-chat-speech-verb-small-mob-2 = pieps
+chat-speech-verb-name-small-mob = 老鼠
+chat-speech-verb-small-mob-1 = 吱吱道
+chat-speech-verb-small-mob-2 = 唧唧道
 
-chat-speech-verb-name-large-mob = Carp
-chat-speech-verb-large-mob-1 = roars
-chat-speech-verb-large-mob-2 = growls
+chat-speech-verb-name-large-mob = 鲤鱼
+chat-speech-verb-large-mob-1 = 咆哮道
+chat-speech-verb-large-mob-2 = 低吼道
 
-chat-speech-verb-name-monkey = Monkey
-chat-speech-verb-monkey-1 = chimpers
-chat-speech-verb-monkey-2 = screeches
+chat-speech-verb-name-monkey = 猴子
+chat-speech-verb-monkey-1 = 吱吱道
+chat-speech-verb-monkey-2 = 尖叫道
 
-chat-speech-verb-name-cluwne = Cluwne
+chat-speech-verb-name-cluwne = 克卢恩
 
-chat-speech-verb-name-parrot = Parrot
-chat-speech-verb-parrot-1 = squawks
-chat-speech-verb-parrot-2 = tweets
-chat-speech-verb-parrot-3 = chirps
+chat-speech-verb-name-parrot = 鹦鹉
+chat-speech-verb-parrot-1 = 呱呱道
+chat-speech-verb-parrot-2 = 啾啾道
+chat-speech-verb-parrot-3 = 啁啾道
 
-chat-speech-verb-cluwne-1 = giggles
-chat-speech-verb-cluwne-2 = guffaws
-chat-speech-verb-cluwne-3 = laughs
+chat-speech-verb-cluwne-1 = 咯咯笑道
+chat-speech-verb-cluwne-2 = 狂笑道
+chat-speech-verb-cluwne-3 = 大笑道
 
-chat-speech-verb-name-ghost = Ghost
-chat-speech-verb-ghost-1 = complains
-chat-speech-verb-ghost-2 = breathes
-chat-speech-verb-ghost-3 = hums
-chat-speech-verb-ghost-4 = mutters
+chat-speech-verb-name-ghost = 幽灵
+chat-speech-verb-ghost-1 = 抱怨道
+chat-speech-verb-ghost-2 = 吐息道
+chat-speech-verb-ghost-3 = 哼道
+chat-speech-verb-ghost-4 = 喃喃道
 
-chat-speech-verb-name-electricity = Electricity
-chat-speech-verb-electricity-1 = crackles
-chat-speech-verb-electricity-2 = buzzes
-chat-speech-verb-electricity-3 = screeches
+chat-speech-verb-name-electricity = 电力
+chat-speech-verb-electricity-1 = 噼啪道
+chat-speech-verb-electricity-2 = 嗡嗡道
+chat-speech-verb-electricity-3 = 尖啸道
 
-chat-speech-verb-vulpkanin-1 = rawrs
-chat-speech-verb-vulpkanin-2 = barks
-chat-speech-verb-vulpkanin-3 = rurs
-chat-speech-verb-vulpkanin-4 = yaps
-chat-speech-verb-vulpkanin = Vulpkanin
+chat-speech-verb-vulpkanin-1 = 吼叫道
+chat-speech-verb-vulpkanin-2 = 吠道
+chat-speech-verb-vulpkanin-3 = 咕噜道
+chat-speech-verb-vulpkanin-4 = 吠叫
+chat-speech-verb-vulpkanin = 狐人
 
-chat-speech-verb-name-wawa = Wawa
-chat-speech-verb-wawa-1 = intones
-chat-speech-verb-wawa-2 = states
-chat-speech-verb-wawa-3 = declares
-chat-speech-verb-wawa-4 = ponders
+chat-speech-verb-name-wawa = 哇哇
+chat-speech-verb-wawa-1 = 吟诵道
+chat-speech-verb-wawa-2 = 陈述道
+chat-speech-verb-wawa-3 = 宣告道
+chat-speech-verb-wawa-4 = 沉思道

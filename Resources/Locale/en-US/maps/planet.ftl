@@ -1,6 +1,6 @@
-cmd-planet-desc = Converts the supplied map into a planet with some specific biome.
+cmd-planet-desc = 将提供的地图转换为带有特定生物群系的行星。
 cmd-planet-help = {$command} <mapid> <biome>.
-cmd-planet-args = Requires 2 args only.
-cmd-planet-map = Unable to parse {$map} as an existing map.
-cmd-planet-map-prototype = Unable to index {$prototype} as an existing biome template prototype.
-cmd-planet-success = Set map {$mapId} to Planet. NOTE! You will need to load the map (either onto a new map or by restarting the game) for atmospherics to work.
+cmd-planet-args = 只需要2个参数。
+cmd-planet-map = 无法将{$map}解析为现有地图。
+cmd-planet-map-prototype = 无法将{$prototype}索引为现有的生物群系模板原型。
+cmd-planet-success = 已将地图{$mapId}设为行星。注意！你需要加载地图（载入新地图或重启游戏），大气系统才会生效。

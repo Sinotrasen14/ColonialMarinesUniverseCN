@@ -1,10 +1,10 @@
-rmc-deaf-start = You notice you can't hear anything... you're deaf!
-rmc-deaf-end = You start hearing things again!
+rmc-deaf-start = 你发现自己什么也听不见……你聋了！
+rmc-deaf-end = 你又开始能听见声音了！
 
 rmc-deaf-chat-color = [bold][font size=14][color=red]{$message}[/color][/font][/bold]
 
-rmc-deaf-talk-self = You cannot hear yourself speak!
-rmc-deaf-talk-others = Someone near talks but you cannot hear them.
+rmc-deaf-talk-self = 你听不见自己说话！
+rmc-deaf-talk-others = 附近有人说话，但你听不见。
 
-rmc-deaf-hear-self = You mutter something about... {$message}
-rmc-deaf-hear-others = ...You hear something about... {$message}
+rmc-deaf-hear-self = 你嘟囔了几句关于……{$message}
+rmc-deaf-hear-others = ……你隐约听到关于……{$message}

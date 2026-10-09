@@ -1,83 +1,83 @@
-rmc-boon-activate = Activate Boons
-rmc-boon-message = {$current} royal resin
-rmc-boon-name-cost = {$boon} ({$cost} resin, {$pylons} pylons)
-rmc-boon-not-enough-royal-resin = We don't have enough royal resin! We need {$cost} and have {$current}
-rmc-boon-not-enough-pylons = We don't have enough hive pylons! We need {$cost} and have {$current}
-rmc-boon-not-enough-time = Our hive is not mature enough yet to purchase this!
-rmc-boon-not-enough-marines = There is not enough danger to warrant hive buffs.
-rmc-boon-only-one-king = Only one King may exist at a time!
-rmc-boon-requires-core = You must first construct a hive core.
-rmc-boon-on-cooldown = Our hive has already used {$boon} recently! Wait {$minutes} minutes.
-rmc-boon-duplicate-active = We already have a boon of {$boon} active!
-rmc-boon-not-reusable = Our hive has already used {$boon} and cannot use it again!
+rmc-boon-activate = 激活恩赐
+rmc-boon-message = {$current}皇家树脂
+rmc-boon-name-cost = {$boon}（{$cost}树脂，{$pylons}尖塔）
+rmc-boon-not-enough-royal-resin = 我们的皇家树脂不够！我们需要{$cost}，而现有{$current}
+rmc-boon-not-enough-pylons = 我们的虫巢尖塔不够！我们需要{$cost}，而现有{$current}
+rmc-boon-not-enough-time = 我们的虫巢还不够成熟，无法购买这个！
+rmc-boon-not-enough-marines = 危险程度还不足以值得为虫巢提供增益。
+rmc-boon-only-one-king = 同一时间只能存在一位国王！
+rmc-boon-requires-core = 你必须先建造一个虫巢核心。
+rmc-boon-on-cooldown = 我们的虫巢最近已经使用过{$boon}！请等待{$minutes}分钟。
+rmc-boon-duplicate-active = 我们已经有{$boon}的恩赐在生效了！
+rmc-boon-not-reusable = 我们的虫巢已经使用过{$boon}，无法再次使用！
 
-rmc-boon-pylon-announcement-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-pylon-announcement-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - 生物扫描仪[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    警报。
 
-    Irregular build up of energy around communication relays at {$area}, biological hazard detected.
+    在{$area}的通讯中继周围侦测到不正常的能量积聚，探测到生物危害。
 
-    DANGER: Hazard is strengthening xenonids, advise urgent termination of hazard by ground forces.[/font][/color]
+    危险：该危害正在强化异形，建议地面部队立即将其终止。[/font][/color]
 
-rmc-boon-pylon-destroyed-announcement-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-pylon-destroyed-announcement-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - 生物扫描仪[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    警报。
 
-    Energy build up around communication relay at {$area} halted.[/font][/color]
+    {$area}通讯中继周围的能量积聚已停止。[/font][/color]
 
-rmc-boon-king-announcement-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - 生物扫描仪[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    警报。
 
-    UNUSUAL ENERGY BUILDUP DETECTED IN {$area}.
+    在{$area}侦测到异常的能量积聚。
 
-    ESTIMATED TIME UNTIL COMPLETION - 10 MINUTES. RECOMMEND TERMINATION OF XENONID STRUCTURE AT THIS LOCATION, OR TERMINATION OF XENONID PYLON AT EITHER COMMUNICATIONS RELAY.[/font][/color]
-rmc-boon-king-announcement-xenos = The King is growing at {$area}. Protect it, as well as our pylons at their communications relays, at all costs!
+    预计完成时间 - 10分钟。建议摧毁此位置的异形建筑，或摧毁任一处通讯中继上的异形尖塔。[/font][/color]
+rmc-boon-king-announcement-xenos = 国王正在{$area}生长。不惜一切代价保护它，以及我们在通讯中继处的尖塔！
 
-rmc-boon-king-announcement-paused-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-paused-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - 生物扫描仪[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    警报。
 
-    UNUSUAL ENERGY BUILDUP IN {$area} HAS BEEN PAUSED.[/font][/color]
-rmc-boon-king-announcement-paused-xeno = One of our pylons was destroyed, the hatchery has paused its progress!
+    {$area}的异常能量积聚已暂停。[/font][/color]
+rmc-boon-king-announcement-paused-xeno = 我们的一根尖塔被摧毁了，孵化场已暂停进度！
 
-rmc-boon-king-announcement-resumed-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-resumed-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - 生物扫描仪[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    警报。
 
-    UNUSUAL ENERGY BUILDUP IN {$area} HAS BEEN RESUMED.[/font][/color]
-rmc-boon-king-announcement-resumed-xeno = The hatchery's progress has resumed!
+    {$area}的异常能量积聚已恢复。[/font][/color]
+rmc-boon-king-announcement-resumed-xeno = 孵化场的进度已恢复！
 
-rmc-boon-king-announcement-stopped-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-stopped-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - 生物扫描仪[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    警报。
 
-    UNUSUAL ENERGY BUILDUP IN {$area} HAS BEEN STOPPED.[/font][/color]
-rmc-boon-king-announcement-stopped-xeno = THE HATCHERY WAS DESTROYED! VENGEANCE!
+    {$area}的异常能量积聚已停止。[/font][/color]
+rmc-boon-king-announcement-stopped-xeno = 孵化场被摧毁了！复仇！
 
-rmc-boon-king-announcement-minutes-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-minutes-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - 生物扫描仪[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    警报。
 
-    UNUSUAL ENERGY BUILDUP DETECTED IN {$area}.
+    在{$area}侦测到异常的能量积聚。
 
-    ESTIMATED TIME UNTIL COMPLETION - {$minutes} MINUTES. RECOMMEND TERMINATION OF XENONID STRUCTURE AT THIS LOCATION, OR TERMINATION OF XENONID PYLON AT EITHER COMMUNICATIONS RELAY.[/font][/color]
-rmc-boon-king-announcement-minutes-xeno = The King will hatch in approximately {$minutes} minutes.
+    预计完成时间 - {$minutes}分钟。建议摧毁此位置的异形建筑，或摧毁任一处通讯中继上的异形尖塔。[/font][/color]
+rmc-boon-king-announcement-minutes-xeno = 国王将在大约{$minutes}分钟后孵化。
 
-rmc-boon-king-announcement-seconds-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-seconds-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - 生物扫描仪[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    警报。
 
-    UNUSUAL ENERGY BUILDUP DETECTED IN {$area}.
+    在{$area}侦测到异常的能量积聚。
 
-    ESTIMATED TIME UNTIL COMPLETION - {$seconds} SECONDS. RECOMMEND TERMINATION OF XENONID STRUCTURE AT THIS LOCATION, OR TERMINATION OF XENONID PYLON AT EITHER COMMUNICATIONS RELAY.[/font][/color]
-rmc-boon-king-announcement-seconds-xeno = The King will hatch in approximately {$seconds} seconds.
+    预计完成时间 - {$seconds}秒。建议摧毁此位置的异形建筑，或摧毁任一处通讯中继上的异形尖塔。[/font][/color]
+rmc-boon-king-announcement-seconds-xeno = 国王将在大约{$seconds}秒后孵化。
 
-rmc-boon-king-announcement-hatch-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - Biological Scanner[/bold][/font][/color][color=red][font size=16]
+rmc-boon-king-announcement-hatch-marine = [color=#CECECE][font size=16][bold]APOLLO MK.II - 生物扫描仪[/bold][/font][/color][color=red][font size=16]
 
-    ALERT.
+    警报。
 
-    EXTREME ENERGY INFLUX DETECTED IN {$area}.
+    在{$area}侦测到极端能量涌入。
 
-    CAUTION IS ADVISED.
-rmc-boon-king-announcement-hatch-xeno = All hail the King.
+    建议谨慎行事。
+rmc-boon-king-announcement-hatch-xeno = 国王万岁。

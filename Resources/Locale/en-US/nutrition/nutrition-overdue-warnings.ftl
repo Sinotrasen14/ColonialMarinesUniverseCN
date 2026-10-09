@@ -1,5 +1,5 @@
-nutrition-thirst-overdue-warning = You're getting thirsty. You should drink something.
-nutrition-thirst-overdue-severe = Your throat is bone dry and you feel light headed. You should drink something.
+nutrition-thirst-overdue-warning = 你开始口渴了。你应该喝点东西。
+nutrition-thirst-overdue-severe = 你的喉咙干得发痛，还感到头晕。你应该喝点东西。
 
-nutrition-hunger-overdue-warning = You're getting hungry. You should eat something.
-nutrition-hunger-overdue-severe = Your stomach is aching and you feel light headed. You should eat something.
+nutrition-hunger-overdue-warning = 你开始饿了。你应该吃点东西。
+nutrition-hunger-overdue-severe = 你的胃在作痛，还感到头晕。你应该吃点东西。

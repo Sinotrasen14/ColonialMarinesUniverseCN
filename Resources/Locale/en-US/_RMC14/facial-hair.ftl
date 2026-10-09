@@ -1,1 +1,1 @@
-﻿marking-RMCHumanFacialHairSoulfulSelleck = Moustache (Soulful Selleck-RMC)
+marking-RMCHumanFacialHairSoulfulSelleck = 胡子（深情塞莱克-RMC）

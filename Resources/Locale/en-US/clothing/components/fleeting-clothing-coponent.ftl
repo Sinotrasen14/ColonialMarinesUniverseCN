@@ -1,2 +1,2 @@
-fleeting-clothing-component-default-popup = {CAPITALIZE(THE($item))} crumbles into dust.
-fleeting-clothing-component-default-examine = This is a fleeting item. It will diseappear when unequipped.
+fleeting-clothing-component-default-popup = {CAPITALIZE(THE($item))}化为尘土。
+fleeting-clothing-component-default-examine = 这是一件易逝物品。脱下后就会消失。

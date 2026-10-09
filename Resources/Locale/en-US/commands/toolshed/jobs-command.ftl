@@ -1,12 +1,12 @@
 command-description-jobs-jobs =
-    Returns all jobs on a station.
+    返回空间站上的所有职位。
 command-description-jobs-job =
-    Returns a given job on a station.
+    返回空间站上指定的职位。
 command-description-jobs-isinfinite =
-    Returns true if the input job is infinite, otherwise false.
+    如果输入的职位是无限的则返回true，否则返回false。
 command-description-jobs-adjust =
-    Adjusts the number of slots for the given job.
+    调整指定职位的名额数量。
 command-description-jobs-set =
-    Sets the number of slots for the given job.
+    设置指定职位的名额数量。
 command-description-jobs-amount =
-    Returns the number of slots for the given job.
+    返回指定职位的名额数量。

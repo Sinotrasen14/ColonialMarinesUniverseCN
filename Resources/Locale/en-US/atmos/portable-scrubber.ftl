@@ -1,1 +1,1 @@
-portable-scrubber-fill-level = It's at about [color=yellow]{$percent}%[/color] of its maximum internal pressure.
+portable-scrubber-fill-level = 它的内部压力约为最大值的[color=yellow]{$percent}%[/color]。

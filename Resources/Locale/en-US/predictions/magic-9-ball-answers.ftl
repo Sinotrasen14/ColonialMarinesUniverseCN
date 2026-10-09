@@ -1,21 +1,21 @@
 # Positive
-magic-9-ball-1 = Yes
-magic-9-ball-2 = YES!!!!
-magic-9-ball-3 = Without a doubt
-magic-9-ball-4 = It is certain
-magic-9-ball-5 = Outlook good
-magic-9-ball-6 = Positive
-magic-9-ball-7 = Absolutely
+magic-9-ball-1 = 是的
+magic-9-ball-2 = 是的！！！！
+magic-9-ball-3 = 毫无疑问
+magic-9-ball-4 = 这是确定的
+magic-9-ball-5 = 前景不错
+magic-9-ball-6 = 积极
+magic-9-ball-7 = 绝对
 
 # Negative
-magic-9-ball-8 = No
-magic-9-ball-9 = NOOO!!!!!!
-magic-9-ball-10 = No no no no no no no
-magic-9-ball-11 = Nuh uh
-magic-9-ball-12 = Nah
-magic-9-ball-13 = Negative
-magic-9-ball-14 = Absolutely not
+magic-9-ball-8 = 不
+magic-9-ball-9 = 不！！！！！！
+magic-9-ball-10 = 不不不不不不不
+magic-9-ball-11 = 不行
+magic-9-ball-12 = 不
+magic-9-ball-13 = 否定
+magic-9-ball-14 = 绝对不行
 
 # Neutral
-magic-9-ball-15 = Perchance
-magic-9-ball-16 = I dunno
+magic-9-ball-15 = 或许吧
+magic-9-ball-16 = 我不知道

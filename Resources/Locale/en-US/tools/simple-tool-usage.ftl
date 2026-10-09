@@ -1,1 +1,1 @@
-simple-tool-usage-blocked-message = You need a tool that can perform {$quality}!
+simple-tool-usage-blocked-message = 你需要一件能进行{$quality}的工具！

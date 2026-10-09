@@ -1,4 +1,4 @@
-﻿# TODO RMC14 limb-targeting
-rmc-xeno-tail-stab-self = We strike {$target} with our tail!
-rmc-xeno-tail-stab-target = The {$user} strikes you with its tail!
-rmc-xeno-tail-stab-others = The {$user} strikes {$target} with its tail!
+# TODO RMC14 limb-targeting
+rmc-xeno-tail-stab-self = 我们用尾巴击中了{$target}！
+rmc-xeno-tail-stab-target = {$user}用尾巴击中了我们！
+rmc-xeno-tail-stab-others = {$user}用尾巴击中了{$target}！

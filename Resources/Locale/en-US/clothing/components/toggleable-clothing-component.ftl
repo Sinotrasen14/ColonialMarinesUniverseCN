@@ -1,9 +1,9 @@
-toggle-clothing-verb-text = Toggle {CAPITALIZE($entity)}
+toggle-clothing-verb-text = 切换{CAPITALIZE($entity)}
 
-toggleable-clothing-remove-first = You have to unequip {$entity} first.
+toggleable-clothing-remove-first = 你必须先脱下{$entity}。
 
-toggle-clothing-verb-default = Toggle Suit Piece
+toggle-clothing-verb-default = 切换服装部件
 
-toggle-clothing-verb-hood = Toggle Hood
+toggle-clothing-verb-hood = 切换兜帽
 
-toggle-clothing-verb-helmet = Toggle Helmet
+toggle-clothing-verb-helmet = 切换头盔

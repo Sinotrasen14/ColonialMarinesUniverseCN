@@ -1,1 +1,1 @@
-﻿suicide-prevented = You tried to suicide, but only your spirit escapes.
+suicide-prevented = 你试图自杀，但只有灵魂逃了出去。

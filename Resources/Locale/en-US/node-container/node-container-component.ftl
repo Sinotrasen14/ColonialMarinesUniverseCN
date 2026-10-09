@@ -1,3 +1,3 @@
-node-container-component-on-examine-details-hvpower = It has a connector for [color=orange]HV cables[/color].
-node-container-component-on-examine-details-mvpower = It has a connector for [color=yellow]MV cables[/color].
-node-container-component-on-examine-details-apc = It has a connector for [color=green]LV cables[/color].
+node-container-component-on-examine-details-hvpower = 它有一个[color=orange]高压电缆[/color]接口。
+node-container-component-on-examine-details-mvpower = 它有一个[color=yellow]中压电缆[/color]接口。
+node-container-component-on-examine-details-apc = 它有一个[color=green]低压电缆[/color]接口。

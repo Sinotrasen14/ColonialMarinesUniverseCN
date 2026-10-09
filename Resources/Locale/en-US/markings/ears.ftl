@@ -1,6 +1,6 @@
-marking-HumanLongEars = Long Ears Standard
-marking-LongEarsWide = Long Ears Wide
-marking-LongEarsSmall = Long Ears Small
-marking-LongEarsUpwards = Long Ears Upwards
-marking-LongEarsTall = Long Ears Tall
-marking-LongEarsThin = Long Ears Thin
+marking-HumanLongEars = 标准长耳
+marking-LongEarsWide = 宽长耳
+marking-LongEarsSmall = 小长耳
+marking-LongEarsUpwards = 上扬长耳
+marking-LongEarsTall = 高长耳
+marking-LongEarsThin = 细长耳

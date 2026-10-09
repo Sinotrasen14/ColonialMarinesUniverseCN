@@ -1,14 +1,14 @@
-plant-component-plant-success-popup = You plant the {$seedName} {$seedNoun}.
-plant-component-already-seeded-popup = The {$name} already has seeds in it!
+plant-component-plant-success-popup = 你种下了{$seedName}{$seedNoun}。
+plant-component-already-seeded-popup = {$name}里已经有种子了！
 
-plant-component-something-already-growing-message = [color=green]{$seedName}[/color] growing here.
-plant-component-something-already-growing-low-health-message = The plant looks [color=red]{$healthState}[/color].
-plant-component-plant-old-adjective = [color=red]old and wilting[/color]
-plant-component-plant-unhealthy-adjective = [color=red]unhealthy[/color]
-plant-component-dead-plant-matter-message = It's full of [color=red]dead plant matter[/color].
+plant-component-something-already-growing-message = [color=green]{$seedName}[/color]正在这里生长。
+plant-component-something-already-growing-low-health-message = 这株植物看起来[color=red]{$healthState}[/color]。
+plant-component-plant-old-adjective = [color=red]苍老而枯萎[/color]
+plant-component-plant-unhealthy-adjective = [color=red]不健康[/color]
+plant-component-dead-plant-matter-message = 它里面全是[color=red]死去的植物物质[/color]。
 
-plant-component-light-improper-warning = The [color=yellow]improper light level alert[/color] is blinking.
-plant-component-heat-improper-warning = The [color=orange]improper temperature level alert[/color] is blinking.
-plant-component-pressure-improper-warning = The [color=lightblue]improper environment pressure alert[/color] is blinking.
-plant-component-gas-missing-warning = The [color=cyan]improper gas environment alert[/color] is blinking.
-plant-component-ligneous-cant-harvest-message = The plant is too tough to harvest with your bare hands.
+plant-component-light-improper-warning = [color=yellow]光照水平异常警报[/color]正在闪烁。
+plant-component-heat-improper-warning = [color=orange]温度水平异常警报[/color]正在闪烁。
+plant-component-pressure-improper-warning = [color=lightblue]环境压力异常警报[/color]正在闪烁。
+plant-component-gas-missing-warning = [color=cyan]气体环境异常警报[/color]正在闪烁。
+plant-component-ligneous-cant-harvest-message = 这株植物太坚韧了，无法徒手采收。

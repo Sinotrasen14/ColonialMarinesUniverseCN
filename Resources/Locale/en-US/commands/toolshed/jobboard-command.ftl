@@ -1,2 +1,2 @@
 command-description-jobboard-completeJob =
-    Completes a given salvage job board job for the station.
+    为空间站完成指定的打捞任务板任务。

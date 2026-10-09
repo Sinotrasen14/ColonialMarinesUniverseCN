@@ -1,13 +1,13 @@
-﻿rmc-ghost-role-information-corp-exec-rules = You are a [color=orange][bold]Corporate Executive[/bold][/color]. You are not hostile to any faction.
-                                             You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
-                                             You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.
-                                             You are absolutely [color=red]NOT[/color] allowed to remember, say, the name, appearance, etc. of your previous character.
+rmc-ghost-role-information-corp-exec-rules = 你是一名[color=orange][bold]企业高管[/bold][/color]。你不与任何阵营敌对。
+                                             你不记得前世的任何事，也不记得作为幽灵时的任何见闻。
+                                             你可以记住关于游戏的一般知识，例如如何烹饪、如何使用物品等。
+                                             你绝对[color=red]不[/color]可以记得你之前角色的名字、外貌等。
 
-rmc-ghost-role-information-corp-legal-description = You are to provide essential legal support to the Corporate Liaison and protect Weyland-Yutani’s interests.
+rmc-ghost-role-information-corp-legal-description = 你要为企业联络官提供必要的法律支持，并保护威兰-尤塔尼的利益。
 
-rmc-ghost-name-corp-exec-specialist-legal = Corporate Legal Specialist (Neutral)
-rmc-job-name-corp-exec-specialist-legal = Corporate Legal Specialist
+rmc-ghost-name-corp-exec-specialist-legal = 企业法律专员（中立）
+rmc-job-name-corp-exec-specialist-legal = 企业法律专员
 
-rmc-ghost-name-corp-exec-supervisor-legal = Corporate Legal Supervisor (Neutral)
-rmc-job-name-corp-exec-supervisor-legal = Corporate Legal Supervisor
+rmc-ghost-name-corp-exec-supervisor-legal = 企业法律主管（中立）
+rmc-job-name-corp-exec-supervisor-legal = 企业法律主管
 

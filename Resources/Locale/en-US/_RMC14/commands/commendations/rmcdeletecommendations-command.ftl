@@ -1,47 +1,47 @@
-cmd-rmcdeletecommendations-desc = Deletes commendations by round, giver, receiver, or id.
-cmd-rmcdeletecommendations-help = Usage:
+cmd-rmcdeletecommendations-desc = 按回合、颁发者、接收者或ID删除嘉奖。
+cmd-rmcdeletecommendations-help = 用法：
   rmcdeletecommendations id <commendationId>
-    - Deletes a single commendation by id
+    - 按ID删除单条嘉奖
 
   rmcdeletecommendations round <roundId> <type>
-    - Deletes all commendations for a specific round and type
-    - type: type commendation filter
+    - 删除指定回合和类型的全部嘉奖
+    - type：嘉奖类型筛选
 
   rmcdeletecommendations round <roundId> <type> giver <usernameOrId>
-    - Deletes commendations in a round and type given by a player
-    - type: type commendation filter
+    - 删除某玩家在某回合某类型下颁发的嘉奖
+    - type：嘉奖类型筛选
 
   rmcdeletecommendations round <roundId> <type> receiver <usernameOrId>
-    - Deletes commendations in a round and type received by a player
-    - type: type commendation filter
+    - 删除某玩家在某回合某类型下收到的嘉奖
+    - type：嘉奖类型筛选
 
-  Examples:
+  示例：
     rmcdeletecommendations id 128
     rmcdeletecommendations round 42 medal
     rmcdeletecommendations round 42 jelly giver PlayerName
     rmcdeletecommendations round 42 medal receiver PlayerName
 
-cmd-rmcdeletecommendations-invalid-arguments = Incorrect arguments!
-cmd-rmcdeletecommendations-invalid-round-id = Invalid round ID!
-cmd-rmcdeletecommendations-invalid-id = Invalid commendation ID!
-cmd-rmcdeletecommendations-invalid-type = Invalid type '{ $type }'!
-cmd-rmcdeletecommendations-invalid-player-mode = Invalid player mode! Must be 'giver' or 'receiver'.
-cmd-rmcdeletecommendations-player-not-found = Player '{ $player }' not found.
-cmd-rmcdeletecommendations-no-results = No commendations found.
+cmd-rmcdeletecommendations-invalid-arguments = 参数错误！
+cmd-rmcdeletecommendations-invalid-round-id = 回合ID无效！
+cmd-rmcdeletecommendations-invalid-id = 嘉奖ID无效！
+cmd-rmcdeletecommendations-invalid-type = 类型“{ $type }”无效！
+cmd-rmcdeletecommendations-invalid-player-mode = 玩家模式无效！必须是“giver”或“receiver”。
+cmd-rmcdeletecommendations-player-not-found = 找不到玩家“{ $player }”。
+cmd-rmcdeletecommendations-no-results = 找不到嘉奖。
 
-cmd-rmcdeletecommendations-id-header = Deleted commendation { $id }:
-cmd-rmcdeletecommendations-round-header = Deleted commendations for Round { $round } ({ $count } total):
-cmd-rmcdeletecommendations-format = id [{ $id }] { $type }: { $name } - { $giverUserName } ({ $giver }) → { $receiverUserName } ({ $receiver }) Round { $round }: { $text }
-cmd-rmcdeletecommendations-admin-announcement = { $admin } deleted commendations with ID: { $ids }
-cmd-rmcdeletecommendations-admin-announcement-round = { $admin } deleted commendations for Round { $round } with ID: { $ids }
+cmd-rmcdeletecommendations-id-header = 已删除嘉奖{ $id }：
+cmd-rmcdeletecommendations-round-header = 已删除回合{ $round }的嘉奖（共{ $count }条）：
+cmd-rmcdeletecommendations-format = id [{ $id }] { $type }：{ $name } - { $giverUserName }（{ $giver }）→ { $receiverUserName }（{ $receiver }）回合{ $round }：{ $text }
+cmd-rmcdeletecommendations-admin-announcement = { $admin }删除了ID为：{ $ids }的嘉奖
+cmd-rmcdeletecommendations-admin-announcement-round = { $admin }删除了回合{ $round }中ID为：{ $ids }的嘉奖
 
-cmd-rmcdeletecommendations-hint-mode = Mode (id or round)
-cmd-rmcdeletecommendations-hint-mode-id = Delete a commendation by id
-cmd-rmcdeletecommendations-hint-mode-round = Delete commendations by round
-cmd-rmcdeletecommendations-hint-round-id = Round ID
-cmd-rmcdeletecommendations-hint-commendation-id = Commendation ID
-cmd-rmcdeletecommendations-hint-type = Commendation type
-cmd-rmcdeletecommendations-hint-player-mode = Player mode (giver or receiver)
-cmd-rmcdeletecommendations-hint-player-giver = Commendations given by player
-cmd-rmcdeletecommendations-hint-player-receiver = Commendations received by player
-cmd-rmcdeletecommendations-hint-player = Player username or UserId
+cmd-rmcdeletecommendations-hint-mode = 模式（id或round）
+cmd-rmcdeletecommendations-hint-mode-id = 按ID删除一条嘉奖
+cmd-rmcdeletecommendations-hint-mode-round = 按回合删除嘉奖
+cmd-rmcdeletecommendations-hint-round-id = 回合ID
+cmd-rmcdeletecommendations-hint-commendation-id = 嘉奖ID
+cmd-rmcdeletecommendations-hint-type = 嘉奖类型
+cmd-rmcdeletecommendations-hint-player-mode = 玩家模式（giver或receiver）
+cmd-rmcdeletecommendations-hint-player-giver = 玩家颁发的嘉奖
+cmd-rmcdeletecommendations-hint-player-receiver = 玩家收到的嘉奖
+cmd-rmcdeletecommendations-hint-player = 玩家用户名或UserId

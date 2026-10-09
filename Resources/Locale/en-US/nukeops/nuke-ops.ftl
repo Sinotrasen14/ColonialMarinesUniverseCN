@@ -1,2 +1,2 @@
-nuke-ops-no-more-threat-announcement-shuttle-call = Long-range sensors indicate the nuclear threat has been eliminated. The emergency shuttle has been called. ETA: {$time} {$units}. You may recall the shuttle to extend the shift.
-nuke-ops-no-more-threat-announcement = Long-range sensors indicate the nuclear threat has been eliminated. The emergency shuttle is already en route.
+nuke-ops-no-more-threat-announcement-shuttle-call = 远程传感器显示核威胁已被消除。已呼叫紧急穿梭机。预计到达：{$time} {$units}。你可以召回穿梭机以延长值班。
+nuke-ops-no-more-threat-announcement = 远程传感器显示核威胁已被消除。紧急穿梭机已在途中。

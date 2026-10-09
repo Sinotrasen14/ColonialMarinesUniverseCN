@@ -1,38 +1,38 @@
-reagent-name-rmcphoron = Phoron
-reagent-desc-rmcphoron = A special form of metallic plasma that is not found on Earth. While phoron is highly flammable and extremely toxic, its high energy density makes it one of the best solid fuel alternatives. Liquid phoron is often used for research purposes and in the medical industry a catalyst to many advanced chemicals.
+reagent-name-rmcphoron = 弗隆
+reagent-desc-rmcphoron = 一种地球上没有的特殊金属等离子体。弗隆极易燃且毒性极强，但其高能量密度使其成为最好的固体燃料替代品之一。液态弗隆常用于研究目的，并在医疗行业中作为许多高级化学品的催化剂。
 
-reagent-name-rmcnapalm-ut = UT-Napthal Fuel
-reagent-desc-rmcnapalm-ut = Known as Ultra Thick Napthal Fuel, a sticky combustible liquid chemical, typically used with flamethrowers.
+reagent-name-rmcnapalm-ut = UT-萘基燃料
+reagent-desc-rmcnapalm-ut = 又称超浓萘基燃料，是一种黏稠的可燃液体化学品，通常与火焰喷射器一起使用。
 
-reagent-name-rmcbgel = Napalm B-Gel
-reagent-desc-rmcbgel = Unlike its liquid contemporaries, this gelled variant of napalm is easily extinguished, but shoots far and lingers on the ground in a viscous mess, while reacting with inorganic materials to ignite them.
+reagent-name-rmcbgel = 凝固汽油B凝胶
+reagent-desc-rmcbgel = 与其液态同类不同，这种凝胶状凝固汽油容易扑灭，但射程远，且以黏稠的形态在地面残留，同时会与无机材料反应并将其点燃。
 
-reagent-name-rmcnapalm-b = Napalm B
-reagent-desc-rmcnapalm-b = A special variant of napalm that's unable to cling well to anything, but disperses over a wide area while burning slowly. The composition reacts with inorganic materials to ignite them, causing severe damage.
+reagent-name-rmcnapalm-b = 凝固汽油B
+reagent-desc-rmcnapalm-b = 一种特殊的凝固汽油变体，无法很好地附着在物体上，但会在大范围内散布并缓慢燃烧。其成分会与无机材料反应并将其点燃，造成严重伤害。
 
-reagent-name-rmcrapalm-x = Napalm X
-reagent-desc-rmcrapalm-x = A sticky combustible liquid chemical that burns extremely hot.
+reagent-name-rmcrapalm-x = 凝固汽油X
+reagent-desc-rmcrapalm-x = 一种黏稠的可燃液体化学品，燃烧时极热。
 
-reagent-name-rmcnapalm = Napalm
-reagent-desc-rmcnapalm = This will probably ignite before you get to read this.
+reagent-name-rmcnapalm = 凝固汽油
+reagent-desc-rmcnapalm = 这大概会在你读完这句话之前就点燃。
 
-reagent-name-rmcnapalm-sticky = Sticky-Napalm
-reagent-desc-rmcnapalm-sticky = A custom napalm mix, stickier and lasts longer but lower damage.
+reagent-name-rmcnapalm-sticky = 黏性凝固汽油
+reagent-desc-rmcnapalm-sticky = 一种定制的凝固汽油混合物，更黏、持续更久，但伤害较低。
 
-reagent-name-rmcnapalm-hc = High-Combustion Napalm Fuel
-reagent-desc-rmcnapalm-hc = A custom napalm mix, higher damage but not as sticky.
+reagent-name-rmcnapalm-hc = 高燃凝固汽油燃料
+reagent-desc-rmcnapalm-hc = 一种定制的凝固汽油混合物，伤害更高，但没那么黏。
 
-reagent-name-rmcclf3 = Chlorine Trifluoride
-reagent-desc-rmcclf3 = A highly reactive interhalogen compound capaple of self ignition. A very strong oxidizer and is extremely reactive with most organic and inorganic materials.
+reagent-name-rmcclf3 = 三氟化氯
+reagent-desc-rmcclf3 = 一种高反应性的卤间化合物，能够自燃。它是一种非常强的氧化剂，与大多数有机和无机材料都极易反应。
 
-reagent-name-rmcnapalm-e = Napalm E
-reagent-desc-rmcnapalm-e = A sticky combustible liquid chemical that penetrates the best fire retardants.
+reagent-name-rmcnapalm-e = 凝固汽油E
+reagent-desc-rmcnapalm-e = 一种黏稠的可燃液体化学品，能穿透最好的阻燃剂。
 
-reagent-name-rmcnapalm-ex = Napalm EX
-reagent-desc-rmcnapalm-ex = A sticky combustible liquid chemical made up of a combonation of rare and dangerous reagents both that penetrates the best fire retardants, and burns extremely hot.
+reagent-name-rmcnapalm-ex = 凝固汽油EX
+reagent-desc-rmcnapalm-ex = 一种由稀有且危险的试剂组合而成的黏稠可燃液体化学品，既能穿透最好的阻燃剂，燃烧温度也极高。
 
 reagent-name-rmcr189 = R189
-reagent-desc-rmcr189 = A UPP chemical, it burns at an extremely high tempature and is designed to melt directly through fortified positions or bunkers.
+reagent-desc-rmcr189 = 一种UPP化学武器，燃烧温度极高，设计用于直接熔穿加固阵地或掩体。
 
-reagent-name-rmcmethane = Methane
-reagent-desc-rmcmethane = An easily combustible hydrocarbon that can very rapidly expand a fire, even explosively at the right concentrations. It is used primarily as fuel to make heat and light or manufacturing of organic chemicals.
+reagent-name-rmcmethane = 甲烷
+reagent-desc-rmcmethane = 一种易燃烧的碳氢化合物，能非常迅速地助长火势，在适当浓度下甚至会爆炸。它主要用作产生热量和光或制造有机化学品的燃料。

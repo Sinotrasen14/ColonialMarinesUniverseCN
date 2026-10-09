@@ -1,5 +1,5 @@
-advertisement-janidrobe-1 = Come and get your janitorial clothing, now endorsed by lizard janitors everywhere!
-advertisement-janidrobe-2 = Here to keep you clean as you clean up non-clean things!
-advertisement-janidrobe-3 = Stylishly yellow!
-advertisement-janidrobe-4 = Polish your appearance with JaniDrobe!
-advertisement-janidrobe-5 = Shine like a shiny floor!
+advertisement-janidrobe-1 = 快来领取你的清洁工服装，现在各地蜥蜴清洁工都在推荐！
+advertisement-janidrobe-2 = 在你清理不干净的东西时，让你保持干净！
+advertisement-janidrobe-3 = 时尚的黄色！
+advertisement-janidrobe-4 = 用JaniDrobe打磨你的形象！
+advertisement-janidrobe-5 = 像闪亮的地板一样闪耀！

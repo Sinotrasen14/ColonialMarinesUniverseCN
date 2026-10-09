@@ -1,20 +1,20 @@
 ## UI
 
-reagent-grinder-bound-user-interface-instant-button = INSTANT
-reagent-grinder-bound-user-interface-cook-time-label = COOK TIME
-reagent-grinder-component-cannot-put-entity-message = You can't put this in the reagent grinder!
-reagent-grinder-component-chamber-full = The reagent grinder's chamber is full.
-reagent-grinder-component-plant-bag-empty = { CAPITALIZE(THE($bag)) } contains no produce that can go in the reagent grinder.
-reagent-grinder-component-plant-bag-loaded = Loaded {$count} items from the plant bag into the reagent grinder.
+reagent-grinder-bound-user-interface-instant-button = 立即
+reagent-grinder-bound-user-interface-cook-time-label = 烹饪时间
+reagent-grinder-component-cannot-put-entity-message = 你不能把这个放进试剂研磨机！
+reagent-grinder-component-chamber-full = 试剂研磨机的腔室已满。
+reagent-grinder-component-plant-bag-empty = { CAPITALIZE(THE($bag)) }中没有可放入试剂研磨机的作物。
+reagent-grinder-component-plant-bag-loaded = 已将植物袋中的{$count}件物品装入试剂研磨机。
 
-grinder-menu-title = All-In-One Grinder 3000
-grinder-menu-grind-button = Grind
-grinder-menu-juice-button = Juice
-grinder-menu-auto-label = Auto mode
-grinder-menu-auto-button-off = Off
-grinder-menu-manual-label = Manual mode
-grinder-menu-chamber-content-box-label = Chamber
-grinder-menu-chamber-content-box-button = Eject Contents
-grinder-menu-beaker-content-box-label = Beaker
-grinder-menu-beaker-content-box-button = Eject Beaker
-grinder-menu-beaker-content-box-is-empty = Empty
+grinder-menu-title = 全能研磨机3000
+grinder-menu-grind-button = 研磨
+grinder-menu-juice-button = 榨汁
+grinder-menu-auto-label = 自动模式
+grinder-menu-auto-button-off = 关闭
+grinder-menu-manual-label = 手动模式
+grinder-menu-chamber-content-box-label = 腔室
+grinder-menu-chamber-content-box-button = 弹出内容物
+grinder-menu-beaker-content-box-label = 烧杯
+grinder-menu-beaker-content-box-button = 弹出烧杯
+grinder-menu-beaker-content-box-is-empty = 空

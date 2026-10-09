@@ -1,5 +1,5 @@
-﻿cmd-restartround-desc = Ends the current round and starts the countdown for the next lobby.
-cmd-restartround-help = Usage: restartround
+cmd-restartround-desc = 结束当前回合并开始下一轮大厅的倒计时。
+cmd-restartround-help = 用法：restartround
 
-cmd-restartroundnow-desc = Moves the server from PostRound to a new PreRoundLobby.
-cmd-restartroundnow-help = Usage: restartroundnow
+cmd-restartroundnow-desc = 将服务器从回合结束后状态切换到新的回合前大厅状态。
+cmd-restartroundnow-help = 用法：restartroundnow

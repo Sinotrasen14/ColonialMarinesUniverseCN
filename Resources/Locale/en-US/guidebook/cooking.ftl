@@ -1,5 +1,5 @@
-guidebook-microwave-ingredients-header = Ingredients
-guidebook-microwave-cook-time-header = Cooking Time
+guidebook-microwave-ingredients-header = 配料
+guidebook-microwave-cook-time-header = 烹饪时间
 guidebook-microwave-cook-time =
     { $time ->
         [0] Instant

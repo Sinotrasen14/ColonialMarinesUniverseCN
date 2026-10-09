@@ -1,22 +1,22 @@
-marking-RMCLizardChestDragonwings = Draconic Wings	
-marking-RMCLizardChestDragonwings-body_dragonwings = Draconic Wings
-marking-RMCLizardChestDragonwings-body_dragonwings_membrane = Draconic Wings Membrane
+marking-RMCLizardChestDragonwings = 龙翼	
+marking-RMCLizardChestDragonwings-body_dragonwings = 龙翼
+marking-RMCLizardChestDragonwings-body_dragonwings_membrane = 龙翼膜
 
-marking-RMCLizardSnakeTail = Snake Tail
-marking-RMCLizardSnakeTail-m_tail_snaketail = Primary
+marking-RMCLizardSnakeTail = 蛇尾
+marking-RMCLizardSnakeTail-m_tail_snaketail = 主体
 
-marking-RMCLizardSnakeTailAlt = Snake Tail Alt
-marking-RMCLizardSnakeTailAlt-m_tail_snakedual_primary = Primary
-marking-RMCLizardSnakeTailAlt-m_tail_snakedual_secondary = Tip
+marking-RMCLizardSnakeTailAlt = 蛇尾（替代）
+marking-RMCLizardSnakeTailAlt-m_tail_snakedual_primary = 主体
+marking-RMCLizardSnakeTailAlt-m_tail_snakedual_secondary = 尾尖
 
-marking-RMCLizardSnakeTailStripe = Snake Tail Stripes
-marking-RMCLizardSnakeTailStripe-m_tail_snakestripe_primary = Primary
-marking-RMCLizardSnakeTailStripe-m_tail_snakestripe_secondary = Stripes
+marking-RMCLizardSnakeTailStripe = 蛇尾条纹
+marking-RMCLizardSnakeTailStripe-m_tail_snakestripe_primary = 主体
+marking-RMCLizardSnakeTailStripe-m_tail_snakestripe_secondary = 条纹
 
-marking-RMCLizardSnakeTailStripeAlt = Snake Tail Stripes Alt
-marking-RMCLizardSnakeTailStripeAlt-m_tail_snakestripealt_primary = Primary
-marking-RMCLizardSnakeTailStripeAlt-m_tail_snakestripealt_secondary = Stripes
+marking-RMCLizardSnakeTailStripeAlt = 蛇尾条纹（替代）
+marking-RMCLizardSnakeTailStripeAlt-m_tail_snakestripealt_primary = 主体
+marking-RMCLizardSnakeTailStripeAlt-m_tail_snakestripealt_secondary = 条纹
 
-marking-RMCLizardSnakeTailUnder = Snake Tail Under
-marking-RMCLizardSnakeTailUnder-m_tail_snakeunder_primary = Primary
-marking-RMCLizardSnakeTailUnder-m_tail_snakeunder_secondary = Under
+marking-RMCLizardSnakeTailUnder = 蛇尾下侧
+marking-RMCLizardSnakeTailUnder-m_tail_snakeunder_primary = 主体
+marking-RMCLizardSnakeTailUnder-m_tail_snakeunder_secondary = 下侧

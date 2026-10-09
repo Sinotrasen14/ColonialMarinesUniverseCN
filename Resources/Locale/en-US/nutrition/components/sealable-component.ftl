@@ -1,4 +1,4 @@
-﻿sealable-component-on-examine-is-sealed = The seal is intact.
-sealable-component-on-examine-is-unsealed = The seal is broken.
-sealable-component-on-examine-is-unsealed-no-cork = The seal is broken, and the cork is gone.
-sealable-component-on-examine-is-unsealed-crown-cap = The seal is broken, and the crown cap is bent.
+sealable-component-on-examine-is-sealed = 封条完好。
+sealable-component-on-examine-is-unsealed = 封条已破损。
+sealable-component-on-examine-is-unsealed-no-cork = 封条已破损，且软木塞不见了。
+sealable-component-on-examine-is-unsealed-crown-cap = 封条已破损，且皇冠盖变形了。

@@ -1,1 +1,1 @@
-﻿laughter-effect-control-laughter = You can't contain your laughter!
+laughter-effect-control-laughter = 你忍不住大笑起来！

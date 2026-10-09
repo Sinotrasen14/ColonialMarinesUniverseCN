@@ -1,4 +1,4 @@
-﻿cmd-dumpreagentguidetext-desc = Dumps the guidebook text for a reagent to the console.
-cmd-dumpreagentguidetext-help = Usage: dumpreagentguidetext <reagentPrototype>
-cmd-dumpreagentguidetext-nothing-to-dump = Nothing to dump.
+cmd-dumpreagentguidetext-desc = 将某种试剂的指南文本输出到控制台。
+cmd-dumpreagentguidetext-help = 用法：dumpreagentguidetext <reagentPrototype>
+cmd-dumpreagentguidetext-nothing-to-dump = 没有可输出的内容。
 cmd-dumpreagentguidetext-skipped = [skipped effect of type {$effect}]

@@ -1,64 +1,64 @@
 # Command
-job-description-captain = Manage the resources and personnel of the entire station. Work alongside the other heads of staff to ensure the station's crew remain content and productive.
-job-description-ce = Manage the resources and personnel of the Engineering department to ensure the station remains intact, functional, and habitable.
-job-description-cmo = Manage the resources and personnel of the Medical department to ensure the station's crew remain alive and in good health.
-job-description-hop = Manage the resources and personnel of the Service department, and perform general administrative duties. Handle paperwork, perform job transfers, and keep your pet corgi safe.
-job-description-hos = Manage the resources and personnel of the Security department to ensure the station's crew remain safe and law-abiding.
-job-description-qm = Manage the resources and personnel of the Cargo department to ensure the station remains well-supplied and the money keeps flowing.
-job-description-rd = Manage the resources and personnel of the Science department to ensure that research progresses smoothly and the station's silicons function properly.
+job-description-captain = 管理整个空间站的资源与人员。与其他部门主管协作，确保空间站船员保持满足且高效。
+job-description-ce = 管理工程部门的资源与人员，确保空间站保持完好、运转正常且适宜居住。
+job-description-cmo = 管理医疗部门的资源与人员，确保空间站船员存活且身体健康。
+job-description-hop = 管理服务部门的资源与人员，并履行一般行政职责。处理文书工作，进行职务调动，并保护好你的宠物柯基。
+job-description-hos = 管理安保部门的资源与人员，确保空间站船员安全且守法。
+job-description-qm = 管理货运部门的资源与人员，确保空间站物资充足、财源不断。
+job-description-rd = 管理科研部门的资源与人员，确保研究顺利推进、空间站的硅基体正常运作。
 
 # Cargo
-job-description-cargotech = Deliver the mail, manage requisition orders, pilot the cargo shuttle to buy and sell goods, and ensure other departments have the supplies they need.
-job-description-salvagespec = Use the salvage magnet to draw in asteroids and debris, process ores and scrap into usable materials, find valuable loot, and fight off dangerous space fauna along the way.
+job-description-cargotech = 投递邮件，管理申领订单，驾驶货运穿梭机买卖货物，并确保其他部门获得所需物资。
+job-description-salvagespec = 使用打捞磁铁牵引小行星和残骸，将矿石和废料加工成可用材料，寻找值钱的战利品，并沿途击退危险的太空动物。
 
 # Engineering
-job-description-atmostech = Ensure the station has breathable air, keep the thermo-electric generator running, and synthesize rare gases for the station.
-job-description-engineer = Keep the station's power network online, repair damage to the station, and perform renovations and expansions.
-job-description-technical-assistant = Learn the basics of keeping the station powered and repairing structural damage.
+job-description-atmostech = 确保空间站有可呼吸的空气，维持热力发电机运转，并为空间站合成稀有气体。
+job-description-engineer = 保持空间站的电力网络在线，修复空间站受到的损伤，并进行翻新与扩建。
+job-description-technical-assistant = 学习保持空间站供电和修复结构性损伤的基础知识。
 
 # Medical
-job-description-chemist = Synthesize medicine, botanical supplies, and any other chemicals the station needs.
-job-description-doctor = Diagnose and treat injured crew, and ensure that cadavers are properly stored in the morgue.
-job-description-intern = Learn the basics of administering medicine, treating injuries, and rescuing injured crew.
-job-description-paramedic = Rescue critically injured crew, make sure they're stable, and transport them to the medbay.
-job-description-psychologist = Provide the crew with emotional support and counseling.
+job-description-chemist = 合成药物、植物学用品以及空间站所需的任何其他化学品。
+job-description-doctor = 诊断并治疗受伤的船员，并确保尸体被妥善存放在太平间。
+job-description-intern = 学习用药、处理伤势和营救受伤船员的基础知识。
+job-description-paramedic = 营救重伤的船员，确保他们情况稳定，并将他们送往医疗舱。
+job-description-psychologist = 为船员提供情感支持和心理辅导。
 
 # Science
-job-description-research-assistant = Learn the basics of scientific research and technological development.
-job-description-scientist = Research alien artifacts and supernatural anomalies to develop cutting-edge equipment for the station's crew. Build and upgrade cyborgs to perform various tasks across the station.
+job-description-research-assistant = 学习科学研究与技术开发的基础知识。
+job-description-scientist = 研究外星神器和超自然异常，为空间站船员开发尖端装备。建造并升级赛博格，以执行空间站上的各种任务。
 
 # Security
-job-description-cadet = Learn the basics of investigating crime and arresting criminals.
-job-description-detective = Investigate crime scenes using forensic tools to ensure that the guilty party is found.
-job-description-security = Uphold the law, arrest criminals, and ensure that the station does not fall into disarray.
-job-description-warden = Guard the Security department, manage the armory, and ensure that all prisoners are properly charged and serve their sentence without incident.
+job-description-cadet = 学习调查犯罪和逮捕罪犯的基础知识。
+job-description-detective = 使用法医工具调查犯罪现场，确保找出有罪的一方。
+job-description-security = 维护法律，逮捕罪犯，并确保空间站不会陷入混乱。
+job-description-warden = 守卫安保部门，管理军械库，并确保所有囚犯都被恰当定罪且在服刑期间不出乱子。
 
 # Service
-job-description-bartender = Serve drinks and keep the bar lively.
-job-description-botanist = Grow fresh ingredients, medicinal herbs, and other plant-based supplies for the station.
-job-description-chaplain = Preach the good word of your religion, hold services and funerals, and conduct miracles with your holy book.
-job-description-chef = Keep the crew fed, butcher and dispose of dead animals, and help keep the bar lively.
-job-description-clown = Entertain the crew with slapstick routines and terrible jokes, and engage in light rivalry with the mime.
-job-description-janitor = Keep the station clean, recycle garbage into raw materials, and help exterminate vermin.
-job-description-lawyer = Ensure that criminals receive legal representation and fair judgment. Inform the crew of their rights and help organize trials, lawsuits, and settlements.
-job-description-librarian = Keep the library organized. Provide the crew with educational materials, entertaining stories, and tabletop games.
-job-description-mime = Entertain the crew with silent acts of performance art, and engage in light rivalry with the clown.
-job-description-musician = Entertain the crew with your unique musical talents.
-job-description-passenger = Enjoy your stay aboard the station with no obligations!
-job-description-reporter = Inform and entertain the station's crew with wireless cameras and news bulletins.
-job-description-serviceworker = Assist the bar and kitchen with providing sustenance to the crew.
-job-description-tram-driver = Drive around a tram from stop to stop.
+job-description-bartender = 供应饮品，让酒吧保持热闹。
+job-description-botanist = 为空间站种植新鲜食材、药草和其他植物性物资。
+job-description-chaplain = 宣讲你宗教的福音，举行仪式和葬礼，并用你的圣书行奇迹。
+job-description-chef = 让船员吃饱，宰杀并处理死去的动物，并帮忙让酒吧保持热闹。
+job-description-clown = 用滑稽表演和糟糕的笑话娱乐船员，并与哑剧演员进行小小的较劲。
+job-description-janitor = 保持空间站清洁，将垃圾回收为原材料，并帮忙消灭害虫。
+job-description-lawyer = 确保罪犯获得法律代理和公正审判。告知船员他们的权利，并帮助组织审判、诉讼和和解。
+job-description-librarian = 保持图书馆井然有序。为船员提供教育资料、有趣的故事和桌面游戏。
+job-description-mime = 用无声的表演艺术娱乐船员，并与小丑进行小小的较劲。
+job-description-musician = 用你独特的音乐才华为船员带来娱乐。
+job-description-passenger = 在空间站上尽情享受你的停留，没有任何义务！
+job-description-reporter = 用无线摄像机和新闻简报为空间站船员提供信息与娱乐。
+job-description-serviceworker = 协助酒吧和厨房为船员提供食物。
+job-description-tram-driver = 驾驶电车从一个站点开往另一个站点。
 
 # Silicon
-job-description-borg = Use your robotic chassis to perform a wide variety of specialized tasks.
-job-description-station-ai = Remotely interface with the station's cameras, airlocks, radio, and other electronic devices from the safety of your core.
+job-description-borg = 用你的机械机体执行各种各样的专业任务。
+job-description-station-ai = 在核心的安全之中，远程接入空间站的摄像头、气闸、无线电和其他电子设备。
 
 # Misc.
-job-description-centcommoff = Act as liaison to the newest state-of-the-art space station in Nanotrasen's fleet.
-job-description-ertchaplain = Ensure that the station's crew have their last rites performed.
-job-description-ertengineer = Ensure that the station has power and clean air.
-job-description-ertjanitor = Ensure that the station is thoroughly cleaned and sterilized.
-job-description-ertleader = Lead the Emergency Response Team to protect and preserve Nanotrasen assets.
-job-description-ertmedic = Ensure that the station's crew have their injuries treated.
-job-description-ertsecurity = Ensure that any threats to the station are eliminated.
-job-description-visitor = Enjoy your visit to the station!
+job-description-centcommoff = 担任纳米特森舰队中最先进新空间站的联络员。
+job-description-ertchaplain = 确保空间站船员得以举行临终圣礼。
+job-description-ertengineer = 确保空间站有电力和洁净空气。
+job-description-ertjanitor = 确保空间站被彻底清洁和消毒。
+job-description-ertleader = 领导应急响应小组，保护并保全纳米特森的资产。
+job-description-ertmedic = 确保空间站船员的伤势得到治疗。
+job-description-ertsecurity = 确保对空间站的任何威胁都被消除。
+job-description-visitor = 祝你在空间站参观愉快！

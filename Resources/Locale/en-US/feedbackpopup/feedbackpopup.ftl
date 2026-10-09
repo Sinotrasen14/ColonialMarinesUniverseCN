@@ -1,28 +1,28 @@
-feedbackpopup-window-name = Request for feedback
+feedbackpopup-window-name = 反馈请求
 
-feedbackpopup-control-button-text = Open Link
+feedbackpopup-control-button-text = 打开链接
 
 feedbackpopup-control-total-surveys = {$num ->
     [one] {$num} entry
    *[other] {$num} entries
 }
-feedbackpopup-control-no-entries= No entries
-feedbackpopup-control-ui-footer = Let us know what you think!
+feedbackpopup-control-no-entries= 无记录
+feedbackpopup-control-ui-footer = 欢迎告诉我们你的想法！
 
 # Command strings
-command-description-openfeedbackpopup = Opens the feedback popup window.
-command-description-feedback-show = Opens the feedback popup window for the given sessions.
-command-description-feedback-add = Adds a feedback popup prototype to the given clients and opens the popup window if the client didn't already have the prototype listed.
-command-description-feedback-remove = Removes a feedback popup prototype from the given clients.
+command-description-openfeedbackpopup = 打开反馈弹窗。
+command-description-feedback-show = 为指定会话打开反馈弹窗。
+command-description-feedback-add = 为指定客户端添加反馈弹窗原型；若客户端尚未列出该原型，则打开弹窗。
+command-description-feedback-remove = 从指定客户端移除反馈弹窗原型。
 
 feedbackpopup-give-command-name = givefeedbackpopup
 feedbackpopup-show-command-name = showfeedbackpopup
-cmd-givefeedbackpopup-desc = Gives the targeted player a feedback popup.
-cmd-givefeedbackpopup-help = Usage: givefeedbackpopup <playerUid> <prototypeId>
-cmd-showfeedbackpopup-desc = Open the feedback popup window.
-cmd-showfeedbackpopup-help = Usage: showfeedbackpopup
-feedbackpopup-command-error-invalid-proto = Invalid feedback popup prototype.
-feedbackpopup-command-error-popup-send-fail = Failed to send popup! There probably isn't a mind attached to the given entity.
-feedbackpopup-command-success = Sent popup!
+cmd-givefeedbackpopup-desc = 向目标玩家发送反馈弹窗。
+cmd-givefeedbackpopup-help = 用法：givefeedbackpopup <playerUid> <prototypeId>
+cmd-showfeedbackpopup-desc = 打开反馈弹窗。
+cmd-showfeedbackpopup-help = 用法：showfeedbackpopup
+feedbackpopup-command-error-invalid-proto = 反馈弹窗原型无效。
+feedbackpopup-command-error-popup-send-fail = 发送弹窗失败！指定实体可能没有关联意识。
+feedbackpopup-command-success = 已发送弹窗！
 feedbackpopup-command-hint-playerUid = <playerUid>
 feedbackpopup-command-hint-protoId = <prototypeId>

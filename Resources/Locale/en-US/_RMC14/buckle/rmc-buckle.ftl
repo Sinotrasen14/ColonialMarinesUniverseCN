@@ -1,1 +1,1 @@
-﻿rmc-cant-while-resting = You can't do that while resting!
+rmc-cant-while-resting = 休息时你无法这么做！

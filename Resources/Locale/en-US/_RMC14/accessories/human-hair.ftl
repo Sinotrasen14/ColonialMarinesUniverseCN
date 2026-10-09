@@ -1,327 +1,327 @@
-marking-HumanHairShorterLongBedhead = Shorter Long Bedhead
+marking-HumanHairShorterLongBedhead = 更短的凌乱长发
 
-marking-RMCHumanHairCrew = Crewcut
+marking-RMCHumanHairCrew = 寸头
 
-marking-RMCHumanHairShort = Short Hair
+marking-RMCHumanHairShort = 短发
 
-marking-RMCHumanHairCut = Cut Hair
+marking-RMCHumanHairCut = 精剪短发
 
-marking-RMCHumanHairFlair = Flaired Hair
+marking-RMCHumanHairFlair = 侧分飞扬发
 
-marking-RMCHumanHairLong = Shoulder-length Hair
+marking-RMCHumanHairLong = 及肩长发
 
-marking-RMCHumanHairLongAlt = Shoulder-length Hair Alt
+marking-RMCHumanHairLongAlt = 及肩长发（另款）
 
-marking-RMCHumanHairLonger = Long Hair
+marking-RMCHumanHairLonger = 长发
 
-marking-RMCHumanHairLongerAlt = Long Hair Alt
+marking-RMCHumanHairLongerAlt = 长发（另款）
 
-marking-RMCHumanHairLongest = Very Long Hair
+marking-RMCHumanHairLongest = 极长发
 
-marking-RMCHumanHairLongFringe = Long Fringe
+marking-RMCHumanHairLongFringe = 长刘海
 
-marking-RMCHumanHairLongestAlt = Longer Fringe
+marking-RMCHumanHairLongestAlt = 更长刘海
 
-marking-RMCHumanHairHalfbang = Half-banged Hair
+marking-RMCHumanHairHalfbang = 半齐刘海
 
-marking-RMCHumanHairHalfbangAlt = Half-banged Hair Alt
+marking-RMCHumanHairHalfbangAlt = 半齐刘海（另款）
 
-marking-RMCHumanHairPonytail1 = Ponytail 1
+marking-RMCHumanHairPonytail1 = 马尾辫1
 
-marking-RMCHumanHairPonytail2 = Ponytail 2
+marking-RMCHumanHairPonytail2 = 马尾辫2
 
-marking-RMCHumanHairPonytail3 = Ponytail 3
+marking-RMCHumanHairPonytail3 = 马尾辫3
 
-marking-RMCHumanHairPonytail4 = Ponytail 4
+marking-RMCHumanHairPonytail4 = 马尾辫4
 
-marking-RMCHumanHairPonytailRough = Ponytail, Rough
+marking-RMCHumanHairPonytailRough = 马尾辫，凌乱
 
-marking-RMCHumanHairSidePonytail = Side Ponytail
+marking-RMCHumanHairSidePonytail = 侧马尾
 
-marking-RMCHumanHairParted = Parted
+marking-RMCHumanHairParted = 中分
 
-marking-RMCHumanHairPompadour = Pompadour
+marking-RMCHumanHairPompadour = 飞机头
 
-marking-RMCHumanHairCleancut = Gentleman's Cut
+marking-RMCHumanHairCleancut = 绅士短发
 
-marking-RMCHumanHairQuiff = Quiff
+marking-RMCHumanHairQuiff = 前翘短发
 
-marking-RMCHumanHairBedhead = Bedhead
+marking-RMCHumanHairBedhead = 睡醒头
 
-marking-RMCHumanHairBedhead2 = Bedhead 2
+marking-RMCHumanHairBedhead2 = 睡醒头2
 
-marking-RMCHumanHairBedhead3 = Bedhead 3
+marking-RMCHumanHairBedhead3 = 睡醒头3
 
-marking-RMCHumanHairBeehive = Beehive
+marking-RMCHumanHairBeehive = 蜂窝头
 
-marking-RMCHumanHairBeehive2 = Beehive 2
+marking-RMCHumanHairBeehive2 = 蜂窝头2
 
-marking-RMCHumanHairBobcurl = Bobcurl
+marking-RMCHumanHairBobcurl = 卷曲波波头
 
-marking-RMCHumanHairBob = Bob
+marking-RMCHumanHairBob = 波波头
 
-marking-RMCHumanHairBowl = Bowl
+marking-RMCHumanHairBowl = 锅盖头
 
-marking-RMCHumanHairBuzz = Buzzcut
+marking-RMCHumanHairBuzz = 板寸
 
-marking-RMCHumanHairTall = Buzzcut Tall
+marking-RMCHumanHairTall = 高板寸
 
-marking-RMCHumanHairCombover = Combover
+marking-RMCHumanHairCombover = 侧梳秃顶
 
-marking-RMCHumanHairCombover2 = Combover 2
+marking-RMCHumanHairCombover2 = 侧梳秃顶2
 
-marking-RMCHumanHairFather = Father
+marking-RMCHumanHairFather = 老爹头
 
-marking-RMCHumanHairReverseMohawk = Reverse Mohawk
+marking-RMCHumanHairReverseMohawk = 反向莫霍克
 
-marking-RMCHumanHairDevillock = Devil Lock
+marking-RMCHumanHairDevillock = 恶魔翘
 
-marking-RMCHumanHairDreadlocks = Dreadlocks
+marking-RMCHumanHairDreadlocks = 脏辫
 
-marking-RMCHumanHairCurls = Curls
+marking-RMCHumanHairCurls = 卷发
 
-marking-RMCHumanHairAfro = Afro
+marking-RMCHumanHairAfro = 爆炸头
 
-marking-RMCHumanHairAfro2 = Afro 2
+marking-RMCHumanHairAfro2 = 爆炸头2
 
-marking-RMCHumanHairAfroLarge = Big Afro
+marking-RMCHumanHairAfroLarge = 大爆炸头
 
-marking-RMCHumanHairSargeant = Flat Top
+marking-RMCHumanHairSargeant = 平头
 
-marking-RMCHumanHairEmo = Emo
+marking-RMCHumanHairEmo = 情绪发型
 
-marking-RMCHumanHairLongEmo = Long Emo
+marking-RMCHumanHairLongEmo = 长情绪发型
 
-marking-RMCHumanHairShortOvereye = Overeye Short
+marking-RMCHumanHairShortOvereye = 遮眼短发
 
-marking-RMCHumanHairLongOvereye = Overeye Long
+marking-RMCHumanHairLongOvereye = 遮眼长发
 
-marking-RMCHumanHairFlowingHair = Flow Hair
+marking-RMCHumanHairFlowingHair = 飘逸长发
 
-marking-RMCHumanHairFeather = Feather
+marking-RMCHumanHairFeather = 羽毛剪
 
-marking-RMCHumanHairHitop = Hitop
+marking-RMCHumanHairHitop = 高顶头
 
-marking-RMCHumanHairMohawk = Mohawk
+marking-RMCHumanHairMohawk = 莫霍克
 
-marking-RMCHumanHairJensen = Adam Jensen Hair
+marking-RMCHumanHairJensen = 亚当·詹森发型
 
-marking-RMCHumanHairGelled = Gelled Back
+marking-RMCHumanHairGelled = 背头
 
-marking-RMCHumanHairGentle = Gentle
+marking-RMCHumanHairGentle = 温和发型
 
-marking-RMCHumanHairSpiky = Spiky
+marking-RMCHumanHairSpiky = 尖刺头
 
-marking-RMCHumanHairKusangi = Kusanagi Hair
+marking-RMCHumanHairKusangi = 草薙发型
 
-marking-RMCHumanHairKagami = Pigtails
+marking-RMCHumanHairKagami = 双马尾
 
-marking-RMCHumanHairHimecut = Hime Cut
+marking-RMCHumanHairHimecut = 姬发式
 
-marking-RMCHumanHairBraid = Floorlength Braid
+marking-RMCHumanHairBraid = 及地长辫
 
-marking-RMCHumanHairMediumBraid = Medium Braid
+marking-RMCHumanHairMediumBraid = 中长辫
 
-marking-RMCHumanHairBraid2 = Long Braid
+marking-RMCHumanHairBraid2 = 长辫
 
-marking-RMCHumanHairOdango = Odango
+marking-RMCHumanHairOdango = 团子头
 
-marking-RMCHumanHairOmbre = Ombre
+marking-RMCHumanHairOmbre = 渐变发
 
-marking-RMCHumanHairUpdo = Updo
+marking-RMCHumanHairUpdo = 盘发
 
-marking-RMCHumanHairSkinhead = Skinhead
+marking-RMCHumanHairSkinhead = 光头
 
-marking-RMCHumanHairBalding = Balding Hair
+marking-RMCHumanHairBalding = 秃顶
 
-marking-RMCHumanHairFamilyman = The Family Man
+marking-RMCHumanHairFamilyman = 顾家男人
 
-marking-RMCHumanHairMahdrills = Drillruru
+marking-RMCHumanHairMahdrills = 钻头卷
 
-marking-RMCHumanHairDandypomp = Dandy Pompadour
+marking-RMCHumanHairDandypomp = 纨绔飞机头
 
-marking-RMCHumanHairPoofy = Poofy
+marking-RMCHumanHairPoofy = 蓬蓬头
 
-marking-RMCHumanHairCrono = Chrono
+marking-RMCHumanHairCrono = 克罗诺发型
 
-marking-RMCHumanHairVegeta = Vegeta
+marking-RMCHumanHairVegeta = 贝吉塔发型
 
-marking-RMCHumanHairCIA = CIA
+marking-RMCHumanHairCIA = CIA发型
 
-marking-RMCHumanHairMulder = Mulder
+marking-RMCHumanHairMulder = 莫德发型
 
-marking-RMCHumanHairScully = Scully
+marking-RMCHumanHairScully = 史卡利发型
 
-marking-RMCHumanHairNitori = Nitori
+marking-RMCHumanHairNitori = 荷取发型
 
-marking-RMCHumanHairJoestar = Joestar
+marking-RMCHumanHairJoestar = 乔斯达发型
 
-marking-RMCHumanHairFlatTopFade = Flat Top Fade
+marking-RMCHumanHairFlatTopFade = 平头渐变
 
-marking-RMCHumanHairHighAndTight = High and Tight
+marking-RMCHumanHairHighAndTight = 高而紧的板寸
 
-marking-RMCHumanHairIceman = Iceman
+marking-RMCHumanHairIceman = 冰人发型
 
-marking-RMCHumanHairPvtJoker = Pvt. Joker
+marking-RMCHumanHairPvtJoker = 列兵小丑发型
 
-marking-RMCHumanHairLtRasczak = Lt. Rasczak
+marking-RMCHumanHairLtRasczak = 拉斯查克中尉发型
 
-marking-RMCHumanHairMarineFade = Marine Fade
+marking-RMCHumanHairMarineFade = 陆战队渐变
 
-marking-RMCHumanHairMarineMohawk = Marine Mohawk
+marking-RMCHumanHairMarineMohawk = 陆战队莫霍克
 
-marking-RMCHumanHairMullet = Mullet
+marking-RMCHumanHairMullet = 鲻鱼头
 
-marking-RMCHumanHairShavedBalding = Shaved Balding
+marking-RMCHumanHairShavedBalding = 剃光秃顶
 
-marking-RMCHumanHairWardaddy = Wardaddy
+marking-RMCHumanHairWardaddy = 战爹发型
 
-marking-RMCHumanHairMarineFlatTop = Marine Flat Top
+marking-RMCHumanHairMarineFlatTop = 陆战队平头
 
-marking-RMCHumanHairShavedHead = Shaved Head
+marking-RMCHumanHairShavedHead = 剃光头
 
-marking-RMCHumanHairHeadStubble = Head Stubble
+marking-RMCHumanHairHeadStubble = 头皮发茬
 
-marking-RMCHumanHairCornRows = Corn Rows
+marking-RMCHumanHairCornRows = 玉米辫
 
-marking-RMCHumanHairCurlyHair = Curly Hair
+marking-RMCHumanHairCurlyHair = 卷发
 
-marking-RMCHumanHairPixieCutLeft = Pixie Cut Left
+marking-RMCHumanHairPixieCutLeft = 精灵短发（左）
 
-marking-RMCHumanHairPixieCutRight = Pixie Cut Right
+marking-RMCHumanHairPixieCutRight = 精灵短发（右）
 
-marking-RMCHumanHairPvtRedding = Pvt. Redding
+marking-RMCHumanHairPvtRedding = 列兵雷丁发型
 
-marking-RMCHumanHairPvtClarison = Pvt. Clarison
+marking-RMCHumanHairPvtClarison = 列兵克拉里森发型
 
-marking-RMCHumanHairCplDietrich = Cpl. Dietrich
+marking-RMCHumanHairCplDietrich = 下士迪特里希发型
 
-marking-RMCHumanHairPvtVasquez = Pvt. Vasquez
+marking-RMCHumanHairPvtVasquez = 列兵瓦斯克斯发型
 
-marking-RMCHumanHairMarineBun = Marine Bun
+marking-RMCHumanHairMarineBun = 陆战队发髻
 
-marking-RMCHumanHairMarineBun2 = Marine Bun 2
+marking-RMCHumanHairMarineBun2 = 陆战队发髻2
 
-marking-RMCHumanHairPonytail6 = Ponytail 6
+marking-RMCHumanHairPonytail6 = 马尾辫6
 
-marking-RMCHumanHairPonytail7 = Ponytail 7
+marking-RMCHumanHairPonytail7 = 马尾辫7
 
-marking-RMCHumanHairShorthair3 = Short Hair 3
+marking-RMCHumanHairShorthair3 = 短发3
 
-marking-RMCHumanHairBun = Bun
+marking-RMCHumanHairBun = 发髻
 
-marking-RMCHumanHairBun2 = Bun 2
+marking-RMCHumanHairBun2 = 发髻2
 
-marking-RMCHumanHairShortbangs = Short Bangs
+marking-RMCHumanHairShortbangs = 短刘海
 
-marking-RMCHumanHairShavedbun = Shaved Bun
+marking-RMCHumanHairShavedbun = 剃边发髻
 
-marking-RMCHumanHairBunTopknot = Bun, Topknot
+marking-RMCHumanHairBunTopknot = 发髻，顶髻
 
-marking-RMCHumanHairBunMan = Man Bun
+marking-RMCHumanHairBunMan = 男士发髻
 
-marking-RMCHumanHairHalfshaved = Half Shaved
+marking-RMCHumanHairHalfshaved = 半剃头
 
-marking-RMCHumanHairSleeze = Sleeze
+marking-RMCHumanHairSleeze = 邋遢头
 
-marking-RMCHumanHairRows1 = Corn Rows 2
+marking-RMCHumanHairRows1 = 玉米辫2
 
-marking-RMCHumanHairRows2 = Corn Rows 3
+marking-RMCHumanHairRows2 = 玉米辫3
 
-marking-RMCHumanHairLowfade = Low Fade
+marking-RMCHumanHairLowfade = 低渐变
 
-marking-RMCHumanHairMedfade = Medium Fade
+marking-RMCHumanHairMedfade = 中渐变
 
-marking-RMCHumanHairHighfade = High Fade
+marking-RMCHumanHairHighfade = 高渐变
 
-marking-RMCHumanHairNofade = No Fade
+marking-RMCHumanHairNofade = 无渐变
 
-marking-RMCHumanHairCoffeehouse = Coffee House Cut
+marking-RMCHumanHairCoffeehouse = 咖啡馆剪
 
-marking-RMCHumanHairShavedpart = Partly Shaved
+marking-RMCHumanHairShavedpart = 部分剃光
 
-marking-RMCHumanHairUndercut = Undercut
+marking-RMCHumanHairUndercut = 侧剃短发
 
-marking-RMCHumanHairUndercutTop = Undercut, Top
+marking-RMCHumanHairUndercutTop = 侧剃短发，顶部
 
-marking-RMCHumanHairHighlight = Hightight
+marking-RMCHumanHairHighlight = 挑染
 
-marking-RMCHumanHairFringetail = Fringe Tail
+marking-RMCHumanHairFringetail = 刘海尾
 
-marking-RMCHumanHairRowbun = Row Bun
+marking-RMCHumanHairRowbun = 发辫髻
 
-marking-RMCHumanHairRowDualTail = Row Tailed
+marking-RMCHumanHairRowDualTail = 发辫双尾
 
-marking-RMCHumanHairBowlcut2 = Bowl Cut 2
+marking-RMCHumanHairBowlcut2 = 锅盖头2
 
-marking-RMCHumanHairThinning = Thinning
+marking-RMCHumanHairThinning = 稀疏
 
-marking-RMCHumanHairThinningrear = Thinning Back
+marking-RMCHumanHairThinningrear = 后部稀疏
 
-marking-RMCHumanHairThinningfront = Thinning Front
+marking-RMCHumanHairThinningfront = 前部稀疏
 
-marking-RMCHumanHairAverageJoe = Average Joe
+marking-RMCHumanHairAverageJoe = 普通人发型
 
-marking-RMCHumanHairSideswept = Sideswept
+marking-RMCHumanHairSideswept = 侧分
 
-marking-RMCHumanHairMohawkShaved = Shaved Mohawk
+marking-RMCHumanHairMohawkShaved = 剃边莫霍克
 
-marking-RMCHumanHairMohawkShaved2 = Shaved Mohawk 2
+marking-RMCHumanHairMohawkShaved2 = 剃边莫霍克2
 
-marking-RMCHumanHairMohawkShaved3 = Shaved Mohawk 3
+marking-RMCHumanHairMohawkShaved3 = 剃边莫霍克3
 
-marking-RMCHumanHairSideUndercut = Side Undercut
+marking-RMCHumanHairSideUndercut = 侧剃底切
 
-marking-RMCHumanHairSideUndercutHang = Side Hang Undercut
+marking-RMCHumanHairSideUndercutHang = 侧垂底切
 
-marking-RMCHumanHairSideUndercutReverse = Side Hang Undercut (Reverse)
+marking-RMCHumanHairSideUndercutReverse = 侧垂底切（反向）
 
-marking-RMCHumanHairGentle2 = Gentle 2
+marking-RMCHumanHairGentle2 = 温和发型2
 
-marking-RMCHumanHairFlair2 = Flaired Hair 2
+marking-RMCHumanHairFlair2 = 侧分飞扬发2
 
-marking-RMCHumanHairScully2 = Scully 2
+marking-RMCHumanHairScully2 = 史卡利发型2
 
-marking-RMCHumanHairScully2Alt = Scully 2 Alt
+marking-RMCHumanHairScully2Alt = 史卡利发型2（另款）
 
-marking-RMCHumanHairPonytail8 = Ponytail 8
+marking-RMCHumanHairPonytail8 = 马尾辫8
 
-marking-RMCHumanHairChelsea = Punk Shave, Chelsea
+marking-RMCHumanHairChelsea = 朋克剃发，切尔西
 
-marking-RMCHumanHairChelseaSmallHawk = Punk Shave, Chelsea Small Hawk
+marking-RMCHumanHairChelseaSmallHawk = 朋克剃发，切尔西小莫霍克
 
-marking-RMCHumanHairChelseaPonytail = Punk Shave, Chelsea Ponytail
+marking-RMCHumanHairChelseaPonytail = 朋克剃发，切尔西马尾
 
-marking-RMCHumanHairChelseaFringe = Punk Shave, Chelsea (Fringe)
+marking-RMCHumanHairChelseaFringe = 朋克剃发，切尔西（刘海）
 
-marking-RMCHumanHairChelseaSmallHawkFringe = Punk Shave, Chelsea Small Hawk (Fringe)
+marking-RMCHumanHairChelseaSmallHawkFringe = 朋克剃发，切尔西小莫霍克（刘海）
 
-marking-RMCHumanHairChelseaBigHawkFringe = Punk Shave, Chelsea Big Hawk (Fringe)
+marking-RMCHumanHairChelseaBigHawkFringe = 朋克剃发，切尔西大莫霍克（刘海）
 
-marking-RMCHumanHairChelseaPonytailFringe = Punk Shave, Chelsea Ponytail (Fringe)
+marking-RMCHumanHairChelseaPonytailFringe = 朋克剃发，切尔西马尾（刘海）
 
-marking-RMCHumanHairOxton = Oxton
+marking-RMCHumanHairOxton = 奥克斯顿发型
 
-marking-RMCHumanHairRowBraid = Row Braid
+marking-RMCHumanHairRowBraid = 发辫
 
-marking-RMCHumanHairCroft = Croft
+marking-RMCHumanHairCroft = 克劳馥发型
 
-marking-RMCHumanHairAviator = Aviator
+marking-RMCHumanHairAviator = 飞行员发型
 
-marking-RMCHumanHairGantlePonytail = Gentle Ponytail
+marking-RMCHumanHairGantlePonytail = 温和马尾
 
-marking-RMCHumanHairEdgar = Edgar
+marking-RMCHumanHairEdgar = 埃德加发型
 
-marking-RMCHumanHairEmobun = Emo Little Bun
+marking-RMCHumanHairEmobun = 情绪小发髻
 
-marking-RMCHumanHairTaper = Taper
+marking-RMCHumanHairTaper = 锥形渐变
 
-marking-RMCHumanHairGentlebraid = Gentle Braid
+marking-RMCHumanHairGentlebraid = 温和发辫
 
-marking-RMCHumanHairLongMessy = Long Messy
+marking-RMCHumanHairLongMessy = 凌乱长发
 
-marking-RMCHumanHairPulatoLong = PulatoLong
+marking-RMCHumanHairPulatoLong = 普拉托长发
 
-marking-RMCHumanHairPulatoLong2 = PulatoLong 2
+marking-RMCHumanHairPulatoLong2 = 普拉托长发2
 
-marking-RMCHumanHairPonytail9 = Ponytail 9
+marking-RMCHumanHairPonytail9 = 马尾辫9

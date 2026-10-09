@@ -1,5 +1,5 @@
-cmd-colornetwork-desc = Paints the atmos devices in the specified color
+cmd-colornetwork-desc = 用指定颜色给大气设备上色
 cmd-colornetwork-help = colornetwork <uid> Pipe <HexColor>
-cmd-colornetwork-no-access = You are not currently able to use mapping commands.
-shell-entity-is-not-node-container = Target entity is not a node container.
-shell-node-group-is-invalid = Invalid node group specified. Valid groups: { $groups }.
+cmd-colornetwork-no-access = 你目前无法使用地图编辑命令。
+shell-entity-is-not-node-container = 目标实体不是节点容器。
+shell-node-group-is-invalid = 指定的节点组无效。有效的组：{ $groups }。

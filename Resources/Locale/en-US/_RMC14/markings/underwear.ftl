@@ -1,74 +1,74 @@
-marking-RMCUnderwearBoxers = Boxers (Tan)
-marking-RMCUnderwearBoxers-c_boxers = Boxers
+marking-RMCUnderwearBoxers = 平角裤（沙色）
+marking-RMCUnderwearBoxers-c_boxers = 平角裤
 
-marking-RMCUnderwearBoxersBlue = Boxers (Desert)
-marking-RMCUnderwearBoxersBlue-d_boxers = Boxers
+marking-RMCUnderwearBoxersBlue = 平角裤（沙漠）
+marking-RMCUnderwearBoxersBlue-d_boxers = 平角裤
 
-marking-RMCUnderwearBoxersJungle = Boxers (Jungle)
-marking-RMCUnderwearBoxersJungle-j_boxers = Boxers
+marking-RMCUnderwearBoxersJungle = 平角裤（丛林）
+marking-RMCUnderwearBoxersJungle-j_boxers = 平角裤
 
-marking-RMCUnderwearBoxersSnow = Boxers (Snow)
-marking-RMCUnderwearBoxersSnow-s_boxers = Boxers
+marking-RMCUnderwearBoxersSnow = 平角裤（雪地）
+marking-RMCUnderwearBoxersSnow-s_boxers = 平角裤
 
-marking-RMCUnderwearBoxersUrban = Boxers (Urban)
-marking-RMCUnderwearBoxersUrban-urban_boxers = Boxers
+marking-RMCUnderwearBoxersUrban = 平角裤（城市）
+marking-RMCUnderwearBoxersUrban-urban_boxers = 平角裤
 
-marking-RMCUnderwearBriefs = Briefs (Tan)
-marking-RMCUnderwearBriefs-c_briefs = Briefs
+marking-RMCUnderwearBriefs = 三角裤（沙色）
+marking-RMCUnderwearBriefs-c_briefs = 三角裤
 
-marking-RMCUnderwearBriefsDesert = Briefs (Desert)
-marking-RMCUnderwearBriefsDesert-d_briefs = Briefs
+marking-RMCUnderwearBriefsDesert = 三角裤（沙漠）
+marking-RMCUnderwearBriefsDesert-d_briefs = 三角裤
 
-marking-RMCUnderwearBriefsJungle = Briefs (Jungle)
-marking-RMCUnderwearBriefsJungle-j_briefs = Briefs
+marking-RMCUnderwearBriefsJungle = 三角裤（丛林）
+marking-RMCUnderwearBriefsJungle-j_briefs = 三角裤
 
-marking-RMCUnderwearBriefsSnow = Briefs (Snow)
-marking-RMCUnderwearBriefsSnow-s_briefs = Briefs
+marking-RMCUnderwearBriefsSnow = 三角裤（雪地）
+marking-RMCUnderwearBriefsSnow-s_briefs = 三角裤
 
-marking-RMCUnderwearBriefsUrban = Briefs (Urban)
-marking-RMCUnderwearBriefsUrban-urban_briefs = Briefs
+marking-RMCUnderwearBriefsUrban = 三角裤（城市）
+marking-RMCUnderwearBriefsUrban-urban_briefs = 三角裤
 
-marking-RMCUnderwearLowriders = Lowrides (Tan)
-marking-RMCUnderwearLowriders-c_lowriders = Lowrides
+marking-RMCUnderwearLowriders = 低腰裤（沙色）
+marking-RMCUnderwearLowriders-c_lowriders = 低腰裤
 
-marking-RMCUnderwearLowridersDesert = Lowrides (Desert)
-marking-RMCUnderwearLowridersDesert-d_lowriders = Lowrides
+marking-RMCUnderwearLowridersDesert = 低腰裤（沙漠）
+marking-RMCUnderwearLowridersDesert-d_lowriders = 低腰裤
 
-marking-RMCUnderwearLowridersJungle = Lowrides (Jungle)
-marking-RMCUnderwearLowridersJungle-j_lowriders = Lowrides
+marking-RMCUnderwearLowridersJungle = 低腰裤（丛林）
+marking-RMCUnderwearLowridersJungle-j_lowriders = 低腰裤
 
-marking-RMCUnderwearLowridersSnow = Lowrides (Snow)
-marking-RMCUnderwearLowridersSnow-s_lowriders = Lowrides
+marking-RMCUnderwearLowridersSnow = 低腰裤（雪地）
+marking-RMCUnderwearLowridersSnow-s_lowriders = 低腰裤
 
-marking-RMCUnderwearLowridersUrban = Lowrides (Urban)
-marking-RMCUnderwearLowridersUrban-urban_lowriders = Lowrides
+marking-RMCUnderwearLowridersUrban = 低腰裤（城市）
+marking-RMCUnderwearLowridersUrban-urban_lowriders = 低腰裤
 
-marking-RMCUnderwearSatin = Satin (Tan)
-marking-RMCUnderwearSatin-c_satin = Satin
+marking-RMCUnderwearSatin = 缎面内裤（沙色）
+marking-RMCUnderwearSatin-c_satin = 缎面内裤
 
-marking-RMCUnderwearSatinDesert = Satin (Desert)
-marking-RMCUnderwearSatinDesert-d_satin = Satin
+marking-RMCUnderwearSatinDesert = 缎面内裤（沙漠）
+marking-RMCUnderwearSatinDesert-d_satin = 缎面内裤
 
-marking-RMCUnderwearSatinJungle = Satin (Jungle)
-marking-RMCUnderwearSatinJungle-j_satin = Satin
+marking-RMCUnderwearSatinJungle = 缎面内裤（丛林）
+marking-RMCUnderwearSatinJungle-j_satin = 缎面内裤
 
-marking-RMCUnderwearSatinSnow = Satin (Snow)
-marking-RMCUnderwearSatinSnow-s_satin = Satin
+marking-RMCUnderwearSatinSnow = 缎面内裤（雪地）
+marking-RMCUnderwearSatinSnow-s_satin = 缎面内裤
 
-marking-RMCUnderwearSatinUrban = Satin (Urban)
-marking-RMCUnderwearSatinUrban-urban_satin = Satin
+marking-RMCUnderwearSatinUrban = 缎面内裤（城市）
+marking-RMCUnderwearSatinUrban-urban_satin = 缎面内裤
 
-marking-RMCUnderwearTanga = Tanga (Tan)
-marking-RMCUnderwearTanga-classic_tanga = Tanga
+marking-RMCUnderwearTanga = 丁字裤（沙色）
+marking-RMCUnderwearTanga-classic_tanga = 丁字裤
 
-marking-RMCUnderwearTangaDesert = Tanga (Desert)
-marking-RMCUnderwearTangaDesert-desert_tanga = Tanga
+marking-RMCUnderwearTangaDesert = 丁字裤（沙漠）
+marking-RMCUnderwearTangaDesert-desert_tanga = 丁字裤
 
-marking-RMCUnderwearTangaJungle = Tanga (Jungle)
-marking-RMCUnderwearTangaJungle-jungle_tanga = Tanga
+marking-RMCUnderwearTangaJungle = 丁字裤（丛林）
+marking-RMCUnderwearTangaJungle-jungle_tanga = 丁字裤
 
-marking-RMCUnderwearTangaSnow = Tanga (Snow)
-marking-RMCUnderwearTangaSnow-snow_tanga = Tanga
+marking-RMCUnderwearTangaSnow = 丁字裤（雪地）
+marking-RMCUnderwearTangaSnow-snow_tanga = 丁字裤
 
-marking-RMCUnderwearTangaUrban = Tanga (Urban)
-marking-RMCUnderwearTangaUrban-urban_tanga = Tanga
+marking-RMCUnderwearTangaUrban = 丁字裤（城市）
+marking-RMCUnderwearTangaUrban-urban_tanga = 丁字裤

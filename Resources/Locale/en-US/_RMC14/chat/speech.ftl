@@ -1,23 +1,23 @@
-﻿chat-speech-verb-name-xeno = Xeno
+chat-speech-verb-name-xeno = 异形
 
-chat-speech-verb-name-rodentia = Rodentia
-chat-speech-verb-rodentia-1 = squeaks
-chat-speech-verb-rodentia-2 = pieps
-chat-speech-verb-rodentia-3 = chatters
-chat-speech-verb-rodentia-4 = squeals
+chat-speech-verb-name-rodentia = 啮齿类
+chat-speech-verb-rodentia-1 = 吱吱叫
+chat-speech-verb-rodentia-2 = 唧唧叫
+chat-speech-verb-rodentia-3 = 咯咯叫
+chat-speech-verb-rodentia-4 = 尖声叫
 
-chat-speech-verb-name-feroxi = Feroxi
-chat-speech-verb-feroxi-1 = blubs
-chat-speech-verb-feroxi-2 = swishes
-chat-speech-verb-feroxi-3 = gnashes
-chat-speech-verb-feroxi-4 = growls
+chat-speech-verb-name-feroxi = 费罗西
+chat-speech-verb-feroxi-1 = 咕嘟叫
+chat-speech-verb-feroxi-2 = 沙沙响
+chat-speech-verb-feroxi-3 = 咬牙
+chat-speech-verb-feroxi-4 = 低吼
 
-chat-speech-verb-name-skrell = Skrell
-chat-speech-verb-skrell-1 = trills
-chat-speech-verb-skrell-2 = croaks
-chat-speech-verb-skrell-3 = warbles
-chat-speech-verb-skrell-4 = chirps
+chat-speech-verb-name-skrell = 斯克莱尔
+chat-speech-verb-skrell-1 = 颤音
+chat-speech-verb-skrell-2 = 呱呱叫
+chat-speech-verb-skrell-3 = 啭鸣
+chat-speech-verb-skrell-4 = 啾啾叫
 
-chat-speech-verb-name-megaphone = Megaphone
-chat-speech-verb-megaphone-1 = broadcasts
-chat-speech-verb-megaphone-2 = announces
+chat-speech-verb-name-megaphone = 扩音器
+chat-speech-verb-megaphone-1 = 广播
+chat-speech-verb-megaphone-2 = 宣布

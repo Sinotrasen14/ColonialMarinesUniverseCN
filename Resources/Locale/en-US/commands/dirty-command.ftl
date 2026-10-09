@@ -1,2 +1,2 @@
-﻿cmd-dirty-desc = Marks all components on an entity as dirty. If not specified, dirties everything.
-cmd-dirty-help = Usage: dirty [entityUid]
+cmd-dirty-desc = 将实体上的所有组件标记为脏。未指定时，标记所有内容。
+cmd-dirty-help = 用法：dirty [entityUid]

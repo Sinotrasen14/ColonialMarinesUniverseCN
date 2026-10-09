@@ -1,1 +1,1 @@
-ape-unlocked-broadcast = A powered A.P.E. {$location} has been unlocked.
+ape-unlocked-broadcast = 一台通电的A.P.E. {$location}已解锁。

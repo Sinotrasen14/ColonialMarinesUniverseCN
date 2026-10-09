@@ -1,4 +1,4 @@
-lathe-popup-material-not-used = This material is not used in this machine.
-lathe-unlock-recipe-radio-broadcast = This lathe is now capable of producing the following recipes: {$items}
-lathe-unlock-recipe-radio-broadcast-overflow = This lathe is now capable of producing {$count} new recipes, including: {$items}
+lathe-popup-material-not-used = 此机器不使用这种材料。
+lathe-unlock-recipe-radio-broadcast = 这台车床现在可以生产以下配方：{$items}
+lathe-unlock-recipe-radio-broadcast-overflow = 这台车床现在可以生产{$count}个新配方，包括：{$items}
 lathe-unlock-recipe-radio-broadcast-item = [bold]{$item}[/bold]

@@ -1,2 +1,2 @@
-names-syndicate-prefix-dataset-1 = Operative
-names-syndicate-prefix-dataset-2 = Agent
+names-syndicate-prefix-dataset-1 = 特工
+names-syndicate-prefix-dataset-2 = 密探

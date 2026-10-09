@@ -32,80 +32,80 @@
 
 ## Spam letters
 
-delivery-spam-1 =   Robust Toolbox - Special Offer!
-    .desc =         An advertisement for robust toolboxes.
+delivery-spam-1 =   Robust工具箱——特别优惠！
+    .desc =         一则Robust工具箱的广告。
     .content =      [color=blue][head=1]
                     ░░▄▀░░
-                    ░▄█▄▄▀ [head=3]ROBUST - TOOLBOXES AND TOOLS[/head]
+                    ░▄█▄▄▀ [head=3]ROBUST——工具箱与工具[/head]
                     ██▀░░░ [/head][/color]
 
                     {"[bold]BUY ONE TOOLBOX, GET ONE SET OF TOOLS FOR FREE![/bold]"}
 
-                    AS YOU ARE ONE OF OUR VALUED CUSTOMERS, YOU GET A CUSTOMER BONUS, YOUR TOOLS COME RUST AND LEAD-FREE!!! ISN'T THAT AMAZING? THE TOOLBOX ON THE OTHER HAND, COMES WITH EXTRA LEAD! AMAZING FOR SMASHING SKULLS AND STOPPING RADIATION ALIKE!
+                    作为我们尊贵的客户之一，您将获得客户专享福利：您的工具无锈且无铅！！！是不是很棒？而工具箱则恰恰相反，额外加铅！无论是砸碎头骨还是阻挡辐射都一样好用！
 
                     {"[bold]ALL THIS AND POSSIBLY MORE FOR ONLY ONE ORGAN![/bold]"}
 
-                    ROBUST - TOOLBOXES AND TOOLS:%
-                    -LEAD AND ASBESTOS FREE!
-                    -OR WITH LEAD AND ASBESTOS, IF YOU PREFER!
-                    -CHEAP! ONLY ONE ORGAN! THAT'S LESS THAN TWO ORGANS!
-                    -DOESN'T HAVE TO BE YOUR ORGAN! WE DON'T JUDGE!
+                    ROBUST——工具箱与工具：%
+                    -不含铅和石棉！
+                    -如果您喜欢，也可以含铅和石棉！
+                    -便宜！只需一个器官！比两个器官还少！
+                    -不必是您自己的器官！我们不评判！
 
-delivery-spam-2 =   Reasons to choose Nanotrasen!
-    .desc =         An advertisement for Nanotrasen.
+delivery-spam-2 =   选择纳米特森的理由！
+    .desc =         一则纳米特森的广告。
     .content =      {-delivery-header-nanotrasen}
 
                     {"[head=2]TOP THREE REASONS WHY THE SYNDICATE IS INCOMPETENT[/head]"}
 
                     {"[bold]NUMBER ONE[/bold]"}
-                    THEIR SLEEPER AGENTS ARE INCOMPETENT! THEY CAN'T EVEN KILL A PASSENGER WITH A DEATHWISH!
+                    他们的潜伏特工无能透顶！连一个想寻死的乘客都杀不掉！
 
                     {"[bold]NUMBER TWO[/bold]"}
-                    THEIR CIVILIANS ARE WEAK TO BULLETS! TRUST ME, WE TRIED! UNLIKE THE NANOTRASEN CIVILIANS, SYNDICATE CIVILIANS DIE FROM A BULLET TO THE SKULL! BULLETS WE HAVE!
+                    他们的平民怕子弹！相信我，我们试过了！和纳米特森的平民不同，辛迪加的平民一枪爆头就会死！子弹我们有的是！
 
                     {"[bold]NUMBER THREE[/bold]"}
-                    THEIR LOGO IS HORRIBLE! THEY THINK THEY'RE COOL WITH THEIR LOGO! OOH, LOOK AT ME, I'M SO COOL! OOH, SNAKE THAT'S ALSO AN S! HOW CREATIVE! MY THREE YEAR OLD SON COULD DRAW A BETTER LOGO!
+                    他们的标志丑死了！他们还觉得自己的标志很酷！噢，看我，我好酷啊！噢，一条蛇同时也是个S！真有创意！我三岁的儿子都能画出更好的标志！
 
-delivery-spam-3 =   Reasons to choose The Syndicate!
-    .desc =         An advertisement for The Syndicate.
+delivery-spam-3 =   选择辛迪加的理由！
+    .desc =         一则辛迪加的广告。
     .content =      {-delivery-header-syndicate}
 
                     {"[head=2]TOP THREE REASONS WHY NANOTRASEN IS INCOMPETENT[/head]"}
 
                     {"[bold]NUMBER ONE[/bold]"}
-                    THEIR GUNS SUCK! THEY DON'T EVEN HAVE SNIPER RIFLES! THEIR SECURITY FORCES CAN'T EVEN CARRY BIG GUNS IN MOST SITUATIONS!
+                    他们的枪烂透了！他们连狙击步枪都没有！他们的安保部队在大多数情况下连大枪都不能带！
 
                     {"[bold]NUMBER TWO[/bold]"}
-                    THEIR COMMANDERS? THEY DIE FROM A SINGLE SHOT! NO COOL ARMOR! JUST BANG, DEAD! LAME! OUR COMMANDERS GET COOL HARDSUITS!
+                    他们的指挥官？一枪就死！没有酷炫的护甲！砰的一声，死了！逊！我们的指挥官有酷炫的硬壳服！
 
                     {"[bold]NUMBER THREE[/bold]"}
-                    THEIR MURDER METHODS ARE UNINSPIRED! IT'S JUST GUN! THERE'S NO THROWING PEOPLE INTO DEEP SPACE, NO FEEDING PEOPLE INTO RECYCLERS WITH SAFETY MODE DISENGAGED, NO SLIPPING BOMBS INTO POCKETS! SO BORING!
+                    他们的杀人手段毫无创意！就只会用枪！不会把人扔进深空，不会关掉安全模式把人喂进回收机，也不会往口袋里偷塞炸弹！太无聊了！
 
-delivery-spam-4 =   Tired of science blowing up?
-    .desc =         Follow these simple steps to ensure it never happens again!
-    .content =      [head=3]Science will LOVE you for this!!
+delivery-spam-4 =   受够了科研部爆炸？
+    .desc =         按照这些简单步骤，确保它再也不会发生！
+    .content =      [head=3]科研部会因此爱死你的！！
 
-                    are [bold]YOU[/bold] Tired of your Station's Science Department blowing up withoutdoing any actual science?
-                    Well Your in luck![/head]
+                    [bold]你[/bold]是否受够了空间站的科研部什么正经科研都没做就爆炸？
+                    那你走运了！[/head]
 
-                    Folow this simple guide, and we'll ensure your Science [italic]Never Works Again![/italic]
+                    按照这份简单指南，我们保证你的科研部[italic]再也不会运转！[/italic]
 
-                    Simply do the following:
-                    - Step One: Locate your Science Department's Research Server
-                    - Step Two: Un-anchor the Research Server from the ground
-                    - Step Three: Hurl the Research Server into space, preferably in the direction of the Spider Clan Super Secret Space Dojo
-                    - Step Four: Wait appproximately 3-5 Business Shifts
-                    - Step Five: Our Workers at Spid-ex Inc will provide your station with one (1) techdisk per week.
+                    只需按以下步骤操作：
+                    - 第一步：找到你们科研部的研究服务器
+                    - 第二步：将研究服务器从地面上解除固定
+                    - 第三步：把研究服务器扔进太空，最好朝着蜘蛛氏族超级秘密太空道场的方向
+                    - 第四步：等待大约3-5个工作班次
+                    - 第五步：我们蜘蛛快递公司的员工将每周为你的空间站提供一张科技磁盘。
 
-                    {"[color=lightgray]Note: Spider Clan is not responsible for any punishment issued by your supervisors.[/color]"}
+                    {"[color=lightgray]注意：蜘蛛氏族不对你的上司所作出的任何惩罚负责.[/color]"}
 
-delivery-spam-5 =   FREE ALL AXCESS!!
-    .desc =         Did you ever want free all access?!
-    .content =      [head=3]Have You ever wanted to have [italic][color=green]Free [bold]All Axcess!?!?[/bold][/color][/italic][/head]
+delivery-spam-5 =   免费全通权限！！
+    .desc =         你有没有想过拥有免费的全通权限？！
+    .content =      [head=3]你是否想过拥有[italic][color=green]免费的[bold]全通权限！？！？[/bold][/color][/italic][/head]
                     {"[head=2]Well NOW YOU CAN!![/head]!"}
 
-                    All you need to do is call [color=blue]555-GOUR-LECKSSS[/color] and state your Staton ID# !!!
-                    Once youve done that,  we can simply remotely query the wallet of Yourstation's Cargo department, extacting our required fees of three [italic] EASY[/italic] payments, allowing you to claim your
+                    你只需拨打[color=blue]555-GOUR-LECKSSS[/color]并报出你的空间站ID号！！！
+                    完成之后，我们就能远程查询你们空间站货仓部的钱包，分三笔[italic]轻松[/italic]付款扣除我们所需的费用，让你领取你的
                     {"[head=2][color=green] [bolditalic] FREE AA!!!!!!!!!![/bolditalic][/color][/head]"}
 
 
@@ -115,14 +115,14 @@ delivery-spam-5 =   FREE ALL AXCESS!!
                     {"[bullet/]Note: We at Gour-Lecksss LMT. are not responsible if your station's HoP forces you to fill out an ACTUAL Free AA form if they find out about this letter"}
                     {"[/color]"}
 
-delivery-spam-6 =   NOTICE FROM NANOTRASN!!
-    .desc =         An official notice from the CEO of Nanotrasn?!
-    .content =      [color=red] THIS IS AN OFICAL NOTICE FROM THE HEAD OF [color=blue]NANOTRASN[/color][/color]
+delivery-spam-6 =   纳米特森通知！！
+    .desc =         一份来自纳米特森CEO的官方通知？！
+    .content =      [color=red]这是一份来自[color=blue]NANOTRASN[/color]负责人的官方通知[/color]
 
-                    Dear Sir, Madam, or Other Insignificat station personell
+                    尊敬的先生、女士或其他无足轻重的空间站人员
 
-                    If you do not wish for this station to be declared Unprofitable in the eyes of
-                    {"[head=2][italic] Our Great and Glorious [color=blue]Nanotransen[[/color][/head]"}
+                    如果您不希望本空间站在以下各方眼中被宣布为无利可图
+                    {"[head=2][italic] Our Great and Glorious [color=blue]Nanotransen[/color][/head]"}
                     Then you must organize for three [color=blue]Nt[/color] Standard Stacks of [color=blue]nt[/color] Standard Gold Ingots to be sent to your station's Away Trade Outpots within 5 [color=blue]nT[/color] Standard work shifts.
 
                     {"[head=2][color=red]IGNORE THIS ORDER AT RISK OF RETRIBUTON FROM [color=green]CENTCO[/color]!!!!![/head][/color]"}

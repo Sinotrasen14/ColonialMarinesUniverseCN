@@ -1,30 +1,30 @@
 ## Guardian host specific
 
-guardian-created = You feel... Haunted.
-guardian-already-present-invalid-creation = You are NOT re-living that haunting experience!
-guardian-no-actions-invalid-creation = You don't have the ability to host a guardian!
-guardian-activator-invalid-target = {CAPITALIZE(THE($entity))} is incapable of hosting a guardian!
-guardian-no-soul = Your guardian has no soul.
-guardian-available = Your guardian now has a soul.
-guardian-inside-container = There's no room to release your guardian!
+guardian-created = 你感到……被缠上了。
+guardian-already-present-invalid-creation = 你绝对*不*会再经历那种闹鬼的体验！
+guardian-no-actions-invalid-creation = 你没有宿主守护者的能力！
+guardian-activator-invalid-target = {CAPITALIZE(THE($entity))}无法成为守护者的宿主！
+guardian-no-soul = 你的守护者没有灵魂。
+guardian-available = 你的守护者现在有灵魂了。
+guardian-inside-container = 没有空间释放你的守护者！
 
 ## Injector specific
-guardian-injector-empty-invalid-creation = The injector is spent.
-guardian-injector-empty-examine = [color=#ba1919]The injector is spent.[/color]
+guardian-injector-empty-invalid-creation = 注射器已用完。
+guardian-injector-empty-examine = [color=#ba1919]注射器已用完。[/color]
 
 ## Guardian deck specific
 
-guardian-deck-invalid-creation = The deck can only provide one guardian at a time!
-guardian-deck-used-examine = [color=#ba1919]The deck's magic has been used up.[/color]
+guardian-deck-invalid-creation = 这副牌一次只能提供一名守护者！
+guardian-deck-used-examine = [color=#ba1919]这副牌的魔法已经耗尽了。[/color]
 
 ## Guardian entity specific
 
-guardian-entity-recall = The guardian vanishes into thin air!
-guardian-entity-taking-damage = Your guardian is taking damage!
+guardian-entity-recall = 守护者凭空消失了！
+guardian-entity-taking-damage = 你的守护者正在受到伤害！
 
 ## Health warnings
-guardian-host-critical-warn = YOUR HOST IS WOUNDED!
-guardian-host-death-warn = YOUR FORM SUCCUMBS TO NONEXISTENCE!
-guardian-death-warn = YOUR BODY IS PIERCED BY SUBATOMIC PAIN AS IT DISINTEGRATES!
-guardian-attack-host = You cannot attack your host.
+guardian-host-critical-warn = 你的宿主受伤了！
+guardian-host-death-warn = 你的形体陷入了虚无！
+guardian-death-warn = 你的身体被亚原子之痛贯穿并瓦解！
+guardian-attack-host = 你不能攻击你的宿主。
 

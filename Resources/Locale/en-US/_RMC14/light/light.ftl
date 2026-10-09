@@ -1,6 +1,6 @@
-cm-light-failed = You try to remove the light tube, but it's too hot and you don't want to burn your hand.
-expendable-light-stomp-verb = Stomp Out
-expendable-light-stomp-start = You begin stomping out the flare.
-expendable-light-stomp-finish = You stomp out the flare.
-cmd-rmclight-desc = Changes a grid's ambient light color or plays a color sequence.
-cmd-rmclight-help = Usage: rmclight <gridUid> <color|null> [durationSeconds] | rmclightsequence <gridUid> <dataset|null> [durationSeconds]
+cm-light-failed = 你试图取下灯管，但它太烫了，你不想烫伤手。
+expendable-light-stomp-verb = 踩灭
+expendable-light-stomp-start = 你开始踩灭照明弹。
+expendable-light-stomp-finish = 你踩灭了照明弹。
+cmd-rmclight-desc = 更改网格的环境光颜色，或播放颜色序列。
+cmd-rmclight-help = 用法：rmclight <gridUid> <color|null> [durationSeconds] | rmclightsequence <gridUid> <dataset|null> [durationSeconds]

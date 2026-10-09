@@ -1,2 +1,2 @@
-resist-locker-component-start-resisting = You begin to kick at the door!
-resist-locker-component-resist-interrupted = Your attempts to kick at the door were interrupted!
+resist-locker-component-start-resisting = 你开始踢门！
+resist-locker-component-resist-interrupted = 你踢门的动作被打断了！

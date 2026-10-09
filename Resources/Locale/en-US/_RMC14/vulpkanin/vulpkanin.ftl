@@ -1,130 +1,130 @@
-marking-VulpEarWolf-wolf = Wolf ears (base)
-marking-VulpEarWolf-wolf-inner = Wolf ears (inner)
-marking-VulpEarWolf = Vulpkanin Wolf
+marking-VulpEarWolf-wolf = 狼耳（底色）
+marking-VulpEarWolf-wolf-inner = 狼耳（内侧）
+marking-VulpEarWolf = 狐人狼耳
 
 
 
 
-marking-VulpEarTajaran-msai = Tajaran ears (base)
-marking-VulpEarTajaran-msai-inner = Tajaran ears (inner)
-marking-VulpEarTajaran = Vulpkanin Tajaran
+marking-VulpEarTajaran-msai = 塔贾兰耳（底色）
+marking-VulpEarTajaran-msai-inner = 塔贾兰耳（内侧）
+marking-VulpEarTajaran = 狐人塔贾兰耳
 
 
 
-marking-VulpEarDalmatian-dalmatian = Dalmatian ears
-marking-VulpEarDalmatian = Vulpkanin Dalmatian
+marking-VulpEarDalmatian-dalmatian = 斑点狗耳
+marking-VulpEarDalmatian = 狐人斑点狗耳
 
 
-marking-VulpSnoutAlt-muzzle_alt = Muzzle
-marking-VulpSnoutAlt-nose = Nose
-marking-VulpSnoutAlt = Vulpkanin Muzzle 2
+marking-VulpSnoutAlt-muzzle_alt = 口鼻
+marking-VulpSnoutAlt-nose = 鼻子
+marking-VulpSnoutAlt = 狐人口鼻2
 
-marking-VulpSnout-muzzle = Muzzle
-marking-VulpSnout-nose = Nose
+marking-VulpSnout-muzzle = 口鼻
+marking-VulpSnout-nose = 鼻子
 
-marking-VulpSnoutSharp-muzzle_sharp = Muzzle
-marking-VulpSnoutSharp-nose = Nose
-marking-VulpSnoutSharp = Vulpkanin Muzzle (sharp)
+marking-VulpSnoutSharp-muzzle_sharp = 口鼻
+marking-VulpSnoutSharp-nose = 鼻子
+marking-VulpSnoutSharp = 狐人口鼻（尖锐）
 
-marking-VulpSnoutFade-muzzle_fade = Muzzle
-marking-VulpSnoutFade-nose = Nose
-marking-VulpSnoutFade = Vulpkanin Muzzle (fade)
+marking-VulpSnoutFade-muzzle_fade = 口鼻
+marking-VulpSnoutFade-nose = 鼻子
+marking-VulpSnoutFade = 狐人口鼻（渐变）
 
-marking-VulpSnoutNose-nose = Nose
+marking-VulpSnoutNose-nose = 鼻子
 
-marking-VulpSnoutMask-nose = Nose
+marking-VulpSnoutMask-nose = 鼻子
 
-marking-VulpSnoutSwift-vulpine-lines = Swift
-marking-VulpSnoutSwift = Vulpkanin Swift
+marking-VulpSnoutSwift-vulpine-lines = 迅捷
+marking-VulpSnoutSwift = 狐人迅捷
 
 
 
-marking-VulpSnoutShort-m_snout_fscanid_FRONT_primary = Primary
-marking-VulpSnoutShort-m_snout_fscanid_FRONT_secondary = Secondary
-marking-VulpSnoutShort-m_snout_fscanid_FRONT_tertiary = Nose
-marking-VulpSnoutShort = Vulpkanin Short
+marking-VulpSnoutShort-m_snout_fscanid_FRONT_primary = 主色
+marking-VulpSnoutShort-m_snout_fscanid_FRONT_secondary = 次色
+marking-VulpSnoutShort-m_snout_fscanid_FRONT_tertiary = 鼻子
+marking-VulpSnoutShort = 狐人短毛
 
-marking-VulpSnoutShortAlt1-m_snout_fscanidalt_FRONT_primary = Primary
-marking-VulpSnoutShortAlt1-m_snout_fscanidalt_FRONT_secondary = Secondary
-marking-VulpSnoutShortAlt1-m_snout_fscanidalt_FRONT_tertiary = Nose
-marking-VulpSnoutShortAlt1 = Vulpkanin Short Alt
+marking-VulpSnoutShortAlt1-m_snout_fscanidalt_FRONT_primary = 主色
+marking-VulpSnoutShortAlt1-m_snout_fscanidalt_FRONT_secondary = 次色
+marking-VulpSnoutShortAlt1-m_snout_fscanidalt_FRONT_tertiary = 鼻子
+marking-VulpSnoutShortAlt1 = 狐人短毛替代
 
-marking-VulpSnoutShortAlt2-m_snout_fscanidalt2_FRONT_primary = Primary
-marking-VulpSnoutShortAlt2-m_snout_fscanidalt2_FRONT_secondary = Nose
-marking-VulpSnoutShortAlt2 = Vulpkanin Short Alt 2
+marking-VulpSnoutShortAlt2-m_snout_fscanidalt2_FRONT_primary = 主色
+marking-VulpSnoutShortAlt2-m_snout_fscanidalt2_FRONT_secondary = 鼻子
+marking-VulpSnoutShortAlt2 = 狐人短毛替代2
 
-marking-VulpSnoutShortAlt3-m_snout_fscanidalt3_FRONT_primary = Primary
-marking-VulpSnoutShortAlt3-m_snout_fscanidalt3_FRONT_secondary = Secondary
-marking-VulpSnoutShortAlt3-m_snout_fscanidalt3_FRONT_tertiary = Nose
-marking-VulpSnoutShortAlt3 = Vulpkanin Short Alt 3
+marking-VulpSnoutShortAlt3-m_snout_fscanidalt3_FRONT_primary = 主色
+marking-VulpSnoutShortAlt3-m_snout_fscanidalt3_FRONT_secondary = 次色
+marking-VulpSnoutShortAlt3-m_snout_fscanidalt3_FRONT_tertiary = 鼻子
+marking-VulpSnoutShortAlt3 = 狐人短毛替代3
 
-marking-VulpSnoutWolf-m_snout_fwolf_FRONT_primary = Primary
-marking-VulpSnoutWolf-m_snout_fwolf_FRONT_secondary = Secondary
-marking-VulpSnoutWolf = Vulpkanin Wolf
+marking-VulpSnoutWolf-m_snout_fwolf_FRONT_primary = 主色
+marking-VulpSnoutWolf-m_snout_fwolf_FRONT_secondary = 次色
+marking-VulpSnoutWolf = 狐人狼耳
 
 
-marking-VulpHeadTiger-tiger_head = Tiger stripes
-marking-VulpHeadTiger = Vulpkanin Tiger stripes (head)
+marking-VulpHeadTiger-tiger_head = 虎纹
+marking-VulpHeadTiger = 狐人虎纹（头部）
 
-marking-VulpHeadTigerFace-tiger_face = Tiger stripes
-marking-VulpHeadTigerFace = Vulpkanin Tiger stripes (face)
+marking-VulpHeadTigerFace-tiger_face = 虎纹
+marking-VulpHeadTigerFace = 狐人虎纹（面部）
 
-marking-VulpHeadSlash-slash = Slash
-marking-VulpHeadSlash = Vulpkanin Slash
+marking-VulpHeadSlash-slash = 斜纹
+marking-VulpHeadSlash = 狐人斜纹
 
 
-marking-VulpTail-vulp = Vulpkanin tail (base)
-marking-VulpTail-vulp-fade = Vulpkanin tail (fade)
-marking-VulpTail = Vulpkanin
+marking-VulpTail-vulp = 狐人尾巴（底色）
+marking-VulpTail-vulp-fade = 狐人尾巴（渐变）
+marking-VulpTail = 狐人
 
-marking-VulpTailTip-vulp = Vulpkanin tail (base)
-marking-VulpTailTip-vulp-tip = Vulpkanin tail (tip)
-marking-VulpTailTip = Vulpkanin (tip)
+marking-VulpTailTip-vulp = 狐人尾巴（底色）
+marking-VulpTailTip-vulp-tip = 狐人尾巴（尾尖）
+marking-VulpTailTip = 狐人（尾尖）
 
-marking-VulpTailAlt-vulp_alt = Vulpkanin tail (base)
-marking-VulpTailAlt-vulp_alt-fade = Vulpkanin tail (fade)
-marking-VulpTailAlt = Vulpkanin (alt, no wag)
+marking-VulpTailAlt-vulp_alt = 狐人尾巴（底色）
+marking-VulpTailAlt-vulp_alt-fade = 狐人尾巴（渐变）
+marking-VulpTailAlt = 狐人（替代，不摇摆）
 
-marking-VulpTailAltTip-vulp_alt = Vulpkanin tail (base)
-marking-VulpTailAltTip-vulp_alt-tip = Vulpkanin tail (tip)
-marking-VulpTailAltTip = Vulpkanin (alt, tip, no wag)
+marking-VulpTailAltTip-vulp_alt = 狐人尾巴（底色）
+marking-VulpTailAltTip-vulp_alt-tip = 狐人尾巴（尾尖）
+marking-VulpTailAltTip = 狐人（替代，尾尖，不摇摆）
 
-marking-VulpTailFox-fox = Fox tail (base)
-marking-VulpTailFox-fox-fade = Fox tail (fade)
-marking-VulpTailFox = Vulpkanin Fox
+marking-VulpTailFox-fox = 狐狸尾巴（底色）
+marking-VulpTailFox-fox-fade = 狐狸尾巴（渐变）
+marking-VulpTailFox = 狐人狐狸
 
-marking-VulpTailFoxTip-fox = Fox tail (base)
-marking-VulpTailFoxTip-fox-tip = Fox tail (fade)
-marking-VulpTailFoxTip = Vulpkanin Fox (tip)
+marking-VulpTailFoxTip-fox = 狐狸尾巴（底色）
+marking-VulpTailFoxTip-fox-tip = 狐狸尾巴（渐变）
+marking-VulpTailFoxTip = 狐人狐狸（尾尖）
 
 
 
-marking-VulpTailHuskyAlt-husky = Husky tail
-marking-VulpTailHuskyAlt = Vulpkanin Husky (alt, no wag)
+marking-VulpTailHuskyAlt-husky = 哈士奇尾巴
+marking-VulpTailHuskyAlt = 狐人哈士奇（替代，不摇摆）
 
-marking-VulpTailFox2-fox2 = Fox tail
-marking-VulpTailFox2 = Vulpkanin Fox 2 (no wag)
+marking-VulpTailFox2-fox2 = 狐狸尾巴
+marking-VulpTailFox2 = 狐人狐狸2（不摇摆）
 
 
-marking-VulpTailOtie-otie = Otie tail
-marking-VulpTailOtie = Vulpkanin Otie (no wag)
+marking-VulpTailOtie-otie = 欧迪尾巴
+marking-VulpTailOtie = 狐人欧迪（不摇摆）
 
 
-marking-VulpTailDalmation = Dalmation
+marking-VulpTailDalmation = 斑点狗
 
-marking-VulpTailAustralianShepherd = Australian Shepherd
-marking-VulpTailAustralianShepherd-m_tail_australianshepherd_primary = Primary
-marking-VulpTailAustralianShepherd-m_tail_australianshepherd_secondary = Secondary
+marking-VulpTailAustralianShepherd = 澳大利亚牧羊犬
+marking-VulpTailAustralianShepherd-m_tail_australianshepherd_primary = 主色
+marking-VulpTailAustralianShepherd-m_tail_australianshepherd_secondary = 次色
 
-marking-VulpTailStraight = Straight
-marking-VulpTailStraight-m_tail_straighttail_primary = Primary
+marking-VulpTailStraight = 直尾
+marking-VulpTailStraight-m_tail_straighttail_primary = 主色
 
-marking-VulpTailFox3 = Vulpkanin Fox 3
-marking-VulpTailFox3-m_tail_fox3_ = Primary
+marking-VulpTailFox3 = 狐人狐狸3
+marking-VulpTailFox3-m_tail_fox3_ = 主色
 
-marking-VulpTailFox4 = Vulpkanin Fox 4
-marking-VulpTailFox4-m_tail_fox4_primary = Primary
-marking-VulpTailFox4-m_tail_fox4_secondary = Tip
+marking-VulpTailFox4 = 狐人狐狸4
+marking-VulpTailFox4-m_tail_fox4_primary = 主色
+marking-VulpTailFox4-m_tail_fox4_secondary = 尾尖
 
 
 
@@ -133,40 +133,40 @@ marking-VulpTailFox4-m_tail_fox4_secondary = Tip
 
 
 
-marking-VulpBodyPointsCrest-points_crest = Points (crest)
-marking-VulpBodyPointsCrest = Vulpkanin Points (crest)
+marking-VulpBodyPointsCrest-points_crest = 重点色（冠状）
+marking-VulpBodyPointsCrest = 狐人重点色（冠状）
 
-marking-VulpBodyPointsFade-points_fade = Vulpkanin Points (fade)
-marking-VulpBodyPointsFade = Vulpkanin Points (fade)
+marking-VulpBodyPointsFade-points_fade = 狐人重点色（渐变）
+marking-VulpBodyPointsFade = 狐人重点色（渐变）
 
-marking-VulpBodyPointsSharp-points_sharp = Vulpkanin Points (sharp)
-marking-VulpBodyPointsSharp = Vulpkanin Points (sharp)
+marking-VulpBodyPointsSharp-points_sharp = 狐人重点色（尖锐）
+marking-VulpBodyPointsSharp = 狐人重点色（尖锐）
 
 
-marking-VulpPointsFeet-points_feet = Points Feet
-marking-VulpPointsFeet = Vulpkanin Points Feet
+marking-VulpPointsFeet-points_feet = 重点色脚部
+marking-VulpPointsFeet = 狐人重点色脚部
 
-marking-VulpPointsCrestLegs-points_crest-legs = Points (crest)
-marking-VulpPointsCrestLegs = Vulpkanin Points Legs (crest)
+marking-VulpPointsCrestLegs-points_crest-legs = 重点色（冠状）
+marking-VulpPointsCrestLegs = 狐人重点色腿部（冠状）
 
-marking-VulpPointsFadeLegs-points_fade-legs = Points (fade)
-marking-VulpPointsFadeLegs = Vulpkanin Points Legs (fade)
+marking-VulpPointsFadeLegs-points_fade-legs = 重点色（渐变）
+marking-VulpPointsFadeLegs = 狐人重点色腿部（渐变）
 
-marking-VulpPointsSharpLegs-points_sharp-legs = Points (sharp)
-marking-VulpPointsSharpLegs = Vulpkanin Points Legs (sharp)
+marking-VulpPointsSharpLegs-points_sharp-legs = 重点色（尖锐）
+marking-VulpPointsSharpLegs = 狐人重点色腿部（尖锐）
 
 
-marking-VulpPointsHands-points_hands = Points Hands
-marking-VulpPointsHands = Vulpkanin Points Hands
+marking-VulpPointsHands-points_hands = 重点色手部
+marking-VulpPointsHands = 狐人重点色手部
 
-marking-VulpPointsCrestArms-points_crest-arms = Points (crest)
-marking-VulpPointsCrestArms = Vulpkanin Points Arms (crest)
+marking-VulpPointsCrestArms-points_crest-arms = 重点色（冠状）
+marking-VulpPointsCrestArms = 狐人重点色手臂（冠状）
 
-marking-VulpPointsFadeArms-points_fade-arms = Points (fade)
-marking-VulpPointsFadeArms = Vulpkanin Points Arms (fade)
+marking-VulpPointsFadeArms-points_fade-arms = 重点色（渐变）
+marking-VulpPointsFadeArms = 狐人重点色手臂（渐变）
 
-marking-VulpPointsSharpArms-points_sharp-arms = Points (sharp)
-marking-VulpPointsSharpArms = Vulpkanin Points Arms (sharp)
+marking-VulpPointsSharpArms-points_sharp-arms = 重点色（尖锐）
+marking-VulpPointsSharpArms = 狐人重点色手臂（尖锐）
 
 
 

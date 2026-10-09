@@ -1,15 +1,15 @@
-﻿# requisitions
-cm-job-name-quartermaster = Logistics Officer
-cm-job-description-quartermaster = Your job is to manage the logistics of the ship, including requisitions and food.
+# requisitions
+cm-job-name-quartermaster = 后勤官
+cm-job-description-quartermaster = 你的工作是管理舰船的后勤，包括军需和食物。
 cm-job-prefix-quartermaster = LO
-CMJobQuartermaster = Logistics Officer
+CMJobQuartermaster = 后勤官
 
-cm-job-name-cargotech = Requisitions Technician
-cm-job-description-cargotech = Your job is to dispense supplies to the marines, including weapon attachments.
+cm-job-name-cargotech = 军需技师
+cm-job-description-cargotech = 你的工作是为陆战队员分发补给，包括武器配件。
 cm-job-prefix-cargotech = RT
-CMJobCargoTech = Requisitions Technician
+CMJobCargoTech = 军需技师
 
-cm-job-name-messtech = Mess Technician
-cm-job-description-messtech = Your job is to service the marines with excellent food, drinks and entertaining the shipside crew when needed.
+cm-job-name-messtech = 伙食技师
+cm-job-description-messtech = 你的工作是为陆战队员提供优质的食物和饮品，并在需要时娱乐舰上船员。
 cm-job-prefix-messtech = MST
-CMJobMessTech = Mess Technician
+CMJobMessTech = 伙食技师

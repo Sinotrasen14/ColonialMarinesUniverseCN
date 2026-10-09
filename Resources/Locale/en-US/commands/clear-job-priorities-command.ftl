@@ -1,6 +1,6 @@
-cmd-clearjobpriorities-desc = Clears the selected character's job preferences for a connected player.
-cmd-clearjobpriorities-help = Usage: clearjobpriorities <player>
-cmd-clearjobpriorities-player-not-found = Player {$player} is not connected.
-cmd-clearjobpriorities-preferences-not-loaded = Preferences for {$player} have not loaded yet.
-cmd-clearjobpriorities-success = Cleared all job preferences for {$player}.
+cmd-clearjobpriorities-desc = 清除某位已连接玩家所选角色的职位偏好。
+cmd-clearjobpriorities-help = 用法：clearjobpriorities <player>
+cmd-clearjobpriorities-player-not-found = 玩家{$player}未连接。
+cmd-clearjobpriorities-preferences-not-loaded = {$player}的偏好尚未加载。
+cmd-clearjobpriorities-success = 已清除{$player}的所有职位偏好。
 cmd-clearjobpriorities-hint-player = [player]

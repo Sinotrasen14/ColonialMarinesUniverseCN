@@ -1,9 +1,9 @@
-rmc-acid-resist = You stop, drop, and roll, getting rid of the acid.
-rmc-acid-resist-partial = You stop, drop, and roll, getting rid of some of the acid... but it's still melting you!
-rmc-acid-gun-second-wind-spent = {CAPITALIZE(THE($target))} can't be cleared of acid; its already to damaged.
+rmc-acid-resist = 你停下、倒地并翻滚，摆脱了酸液。
+rmc-acid-resist-partial = 你停下、倒地并翻滚，摆脱了部分酸液……但它仍在腐蚀你！
+rmc-acid-gun-second-wind-spent = {CAPITALIZE(THE($target))}无法被清除酸液；它已经损坏得太严重了。
 
-rmc-glob-start-self = We begin to spit glob of acid gas!
-rmc-glob-start-others = {$user} prepares to spit a massive glob!
-rmc-glob-shoot-self = We spit glob of acid gas at the floor!
-rmc-glob-shoot-others = {$user} spits at the floor!
-rmc-glob-land = A glob of acid lands with a splat and explodes into noxious fumes!
+rmc-glob-start-self = 我们开始吐出酸气团！
+rmc-glob-start-others = {$user}准备吐出一大团！
+rmc-glob-shoot-self = 我们朝地面吐出酸气团！
+rmc-glob-shoot-others = {$user}朝地面吐了一口！
+rmc-glob-land = 一团酸液啪地落地，爆出有毒气体！

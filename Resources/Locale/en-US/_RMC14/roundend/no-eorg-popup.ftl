@@ -1,8 +1,8 @@
 no-eorg-popup-title = CMU
-no-eorg-popup-label = Welcome to the End of Round!
-no-eorg-popup-message = [bold]End-of-round grief (EORG)[/bold] is not allowed at CMU. Please stay in character until the lobby screen appears to maintain an immersive environment for everyone. Thank you for respecting the community rules!
-no-eorg-popup-rule = [bold][color=#a4885c]End of round grief of your own faction is not permitted and results in an instant unappealable 3 hour game ban.[/color][/bold]
-no-eorg-popup-rule-text = This includes any friendly fire at round end regardless of who started the griefing, as the round may not be entirely over even if the main condition has been reached. This also includes suicides without a valid roleplay reason.
-no-eorg-popup-close-button = Sounds good!
-no-eorg-popup-close-button-wait = The close button will be enabled after {$time} seconds.
-no-eorg-popup-skip-checkbox = Don't show this again.
+no-eorg-popup-label = 欢迎来到回合结束！
+no-eorg-popup-message = CMU不允许[bold]回合结束捣乱（EORG）[/bold]。请保持角色扮演直到大厅界面出现，以维护所有人的沉浸体验。感谢你遵守社区规则！
+no-eorg-popup-rule = [bold][color=#a4885c]回合结束时对自己阵营的捣乱是不被允许的，会立即导致无法申诉的3小时游戏封禁。[/color][/bold]
+no-eorg-popup-rule-text = 这包括回合结束时的任何友军伤害，无论捣乱由谁挑起，因为即使主要条件已达成，回合也可能尚未完全结束。这也包括没有正当角色扮演理由的自杀。
+no-eorg-popup-close-button = 没问题！
+no-eorg-popup-close-button-wait = 关闭按钮将在{$time}秒后启用。
+no-eorg-popup-skip-checkbox = 不再显示此内容。

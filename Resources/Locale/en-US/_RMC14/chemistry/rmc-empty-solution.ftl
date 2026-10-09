@@ -1,1 +1,1 @@
-﻿rmc-empty-solution-verb = Remove chemicals
+rmc-empty-solution-verb = 清空化学物质

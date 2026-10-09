@@ -1,15 +1,15 @@
-﻿# engineering
-cm-job-name-chief-engineer = Chief Engineer
-cm-job-description-chief-engineer = Coordinate engineering. Keep the power on.
+# engineering
+cm-job-name-chief-engineer = 总工程师
+cm-job-description-chief-engineer = 协调工程工作。保持供电。
 cm-job-prefix-chief-engineer = CE
-CMJobChiefEngineer = Chief Engineer
+CMJobChiefEngineer = 总工程师
 
-cm-job-name-ordnance-tech = Ordnance Technician
-cm-job-description-ordnance-tech = Make custom ordnance for the marines to use. Maintain the orbital cannon and the dropships.
+cm-job-name-ordnance-tech = 军械技师
+cm-job-description-ordnance-tech = 为陆战队制造定制军械。维护轨道炮和运输机。
 cm-job-prefix-ordnance-tech = OT
-CMJobOrdnanceTech = Ordnance Technician
+CMJobOrdnanceTech = 军械技师
 
-cm-job-name-maint-tech = Maintenance Technician
-cm-job-description-maint-tech = Keep the S-52 Fusion Reactors powered. Maintain and modify the Almayer and its dropships.
+cm-job-name-maint-tech = 维护技师
+cm-job-description-maint-tech = 保持S-52聚变反应堆供电。维护并改装阿尔梅耶及其运输机。
 cm-job-prefix-maint-tech = MT
-CMJobMaintTech = Maintenance Technician
+CMJobMaintTech = 维护技师

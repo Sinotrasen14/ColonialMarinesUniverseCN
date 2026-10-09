@@ -1,12 +1,12 @@
-role-type-crew-aligned-name = Non-Antagonist
-role-type-solo-antagonist-name = Solo Antagonist
-role-type-team-antagonist-name = Team Antagonist
-role-type-free-agent-name = Free Agent
-role-type-familiar-name = Familiar
-role-type-silicon-name = Silicon
-role-type-silicon-antagonist-name = Altered Silicon
+role-type-crew-aligned-name = 非反派
+role-type-solo-antagonist-name = 单人反派
+role-type-team-antagonist-name = 团队反派
+role-type-free-agent-name = 自由人
+role-type-familiar-name = 魔宠
+role-type-silicon-name = 硅基
+role-type-silicon-antagonist-name = 被改造的硅基
 
-role-type-update-message = Your role is [color = {$color}]{$role}[/color]
+role-type-update-message = 你的角色是[color = {$color}]{$role}[/color]
 
 # If you change a color here, you might want to also change it in role_types.yml
 role-type-crew-aligned-color = #eeeeee
@@ -19,20 +19,20 @@ role-type-silicon-color = #6495ed
 role-type-silicon-antagonist-color = #c832e6
 
 # Ideally, subtype names should be short
-role-subtype-traitor = Traitor
-role-subtype-thief = Thief
-role-subtype-ninja = Ninja
-role-subtype-nukie = Nukie
-role-subtype-traitor-reinforcement = Reinforcement
-role-subtype-revolutionary = Rev
-role-subtype-head-revolutionary = Head Rev
-role-subtype-initial-infected = Infected
-role-subtype-zombie = Zombie
-role-subtype-dragon = Dragon
-role-subtype-survivor = Survivor
-role-subtype-subverted = Subverted
-role-subtype-paradox-clone = Paradox
-role-subtype-wizard = Wizard
-role-subtype-xenoborg = Xenoborg
-role-subtype-xenoborg-core = Xenoborg Core
-role-subtype-changeling = Changeling
+role-subtype-traitor = 叛徒
+role-subtype-thief = 小偷
+role-subtype-ninja = 忍者
+role-subtype-nukie = 核特工
+role-subtype-traitor-reinforcement = 增援
+role-subtype-revolutionary = 革命者
+role-subtype-head-revolutionary = 革命领袖
+role-subtype-initial-infected = 感染者
+role-subtype-zombie = 丧尸
+role-subtype-dragon = 巨龙
+role-subtype-survivor = 幸存者
+role-subtype-subverted = 被策反
+role-subtype-paradox-clone = 悖论
+role-subtype-wizard = 巫师
+role-subtype-xenoborg = 异形机械体
+role-subtype-xenoborg-core = 异形机械体核心
+role-subtype-changeling = 变形怪

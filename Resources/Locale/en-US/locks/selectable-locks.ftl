@@ -1,16 +1,16 @@
-selectable-lock-verb-category-name = Add lock
+selectable-lock-verb-category-name = 添加锁
 
-selectable-lock-no-lock-verb = No lock
-selectable-lock-no-lock-popup = No lock has been added to {THE($target)}.
+selectable-lock-no-lock-verb = 无锁
+selectable-lock-no-lock-popup = 未给{THE($target)}添加锁。
 
-selectable-lock-voice-verb = Voice Lock
-selectable-lock-voice-popup = A voice lock has been added to {THE($target)}.
+selectable-lock-voice-verb = 声音锁
+selectable-lock-voice-popup = 已给{THE($target)}添加声音锁。
 
-selectable-lock-tool-prying-verb = Tool Lock (Crowbar)
-selectable-lock-tool-prying-popup = A prying tool lock has been added to {THE($target)}.
+selectable-lock-tool-prying-verb = 工具锁（撬棍）
+selectable-lock-tool-prying-popup = 已给{THE($target)}添加撬动工具锁。
 
-selectable-lock-tool-screwing-verb = Tool Lock (Screwdriver)
-selectable-lock-tool-screwing-popup = A screwing tool lock has been added to {THE($target)}.
+selectable-lock-tool-screwing-verb = 工具锁（螺丝刀）
+selectable-lock-tool-screwing-popup = 已给{THE($target)}添加拧动工具锁。
 
-selectable-lock-tool-cutting-verb = Tool Lock (Wirecutter)
-selectable-lock-tool-cutting-popup = A cutting tool lock has been added to {THE($target)}.
+selectable-lock-tool-cutting-verb = 工具锁（剪线钳）
+selectable-lock-tool-cutting-popup = 已给{THE($target)}添加切割工具锁。

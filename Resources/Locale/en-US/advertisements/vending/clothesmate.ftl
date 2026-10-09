@@ -1,7 +1,7 @@
-﻿advertisement-clothes-1 = Dress for success!
-advertisement-clothes-2 = Prepare to look swagalicious!
-advertisement-clothes-3 = Look at all this swag!
-advertisement-clothes-4 = Why leave style up to fate? Use the ClothesMate!
-advertisement-clothes-5 = Now with added neck warmers!
-advertisement-clothes-6 = You are looking stylish!
-advertisement-clothes-7 = Lovely outfit you have going there!
+advertisement-clothes-1 = 为成功而着装！
+advertisement-clothes-2 = 准备好变得潮爆了！
+advertisement-clothes-3 = 看看这些潮货！
+advertisement-clothes-4 = 何必把风格交给命运？用ClothesMate吧！
+advertisement-clothes-5 = 现在附赠暖颈套！
+advertisement-clothes-6 = 你看起来很时髦！
+advertisement-clothes-7 = 你这身打扮真不错！

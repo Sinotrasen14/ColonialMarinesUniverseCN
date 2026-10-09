@@ -1,5 +1,5 @@
-administration-ui-round-tab-start-round = Start Round
-administration-ui-round-tab-end-round = End Round
-administration-ui-round-tab-restart-round = Restart Round
-administration-ui-round-tab-restart-round-now = Restart NOW
+administration-ui-round-tab-start-round = 开始回合
+administration-ui-round-tab-end-round = 结束回合
+administration-ui-round-tab-restart-round = 重启回合
+administration-ui-round-tab-restart-round-now = 立即重启
 

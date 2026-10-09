@@ -1,7 +1,7 @@
-﻿cmd-pardon-desc = Pardon somebody's ban.
-cmd-pardon-help = Usage: pardon <ban id>
-cmd-pardon-unable-to-parse = Unable to parse {$id} as a ban id integer.
+cmd-pardon-desc = 赦免某人的封禁。
+cmd-pardon-help = 用法：pardon <ban id>
+cmd-pardon-unable-to-parse = 无法将{$id}解析为封禁ID整数。
                              {$help}
-cmd-pardon-already-pardoned = This ban has already been pardoned.
-cmd-pardon-already-pardoned-specific = This ban has already been pardoned by {$admin} in {$time}.
-cmd-pardon-success = Pardoned ban with id {$id}.
+cmd-pardon-already-pardoned = 此封禁已被赦免。
+cmd-pardon-already-pardoned-specific = 此封禁已由{$admin}于{$time}赦免。
+cmd-pardon-success = 已赦免ID为{$id}的封禁。

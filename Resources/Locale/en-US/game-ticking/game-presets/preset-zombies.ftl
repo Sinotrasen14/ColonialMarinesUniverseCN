@@ -1,35 +1,35 @@
-﻿zombie-title = Zombies
-zombie-description = The undead have been unleashed on the station! Work with the crew to survive the outbreak and secure the station.
+zombie-title = 丧尸
+zombie-description = 亡灵已被释放到空间站上！与船员合作，在疫情中求生并守住空间站。
 
-zombieteors-title = Zombieteors
-zombieteors-description = The undead have been unleashed on the station amid a cataclysmic meteor shower! Work with your fellow crew and do your best to survive!
+zombieteors-title = 丧尸流星
+zombieteors-description = 亡灵在灾难性的流星雨中已被释放到空间站上！与你的船员同伴合作，尽力活下去！
 
-zombie-not-enough-ready-players = Not enough players readied up for the game! There were {$readyPlayersCount} players readied up out of {$minimumPlayers} needed. Can't start Zombies.
-zombie-no-one-ready = No players readied up! Can't start Zombies.
+zombie-not-enough-ready-players = 准备参与游戏的玩家不足！{$readyPlayersCount}名玩家已准备，需要{$minimumPlayers}名。无法开始丧尸。
+zombie-no-one-ready = 没有玩家已准备！无法开始丧尸。
 
-zombie-patientzero-role-greeting = You are an initial infected. Get supplies and prepare for your eventual transformation. Your goal is to overtake the station while infecting as many people as possible.
-zombie-healing = You feel a stirring in your flesh
-zombie-infection-warning = You feel the zombie virus take hold
-zombie-infection-underway = Your blood begins to thicken
+zombie-patientzero-role-greeting = 你是一名初始感染者。获取补给，为最终的变化做好准备。你的目标是在感染尽可能多的人的同时占领空间站。
+zombie-healing = 你感到血肉中有什么在涌动
+zombie-infection-warning = 你感到丧尸病毒开始发作
+zombie-infection-underway = 你的血液开始变稠
 
-zombie-alone = You feel entirely alone.
+zombie-alone = 你感到彻底的孤独。
 
-zombie-shuttle-call = We have detected that the undead have overtaken the station. Dispatching an emergency shuttle to collect remaining personnel.
+zombie-shuttle-call = 我们检测到亡灵已占领空间站。正在派遣紧急穿梭机接回剩余人员。
 
 zombie-round-end-initial-count = {$initialCount ->
     [one] There was one initial infected:
     *[other] There were {$initialCount} initial infected:
 }
-zombie-round-end-user-was-initial = - [color=plum]{$name}[/color] ([color=gray]{$username}[/color]) was one of the initial infected.
+zombie-round-end-user-was-initial = - [color=plum]{$name}[/color]（[color=gray]{$username}[/color]）是初始感染者之一。
 
-zombie-round-end-amount-none = [color=green]All of the zombies were eradicated![/color]
-zombie-round-end-amount-low = [color=green]Almost all of the zombies were exterminated.[/color]
-zombie-round-end-amount-medium = [color=yellow]{$percent}% of the crew were turned into zombies.[/color]
-zombie-round-end-amount-high = [color=crimson]{$percent}% of the crew were turned into zombies.[/color]
-zombie-round-end-amount-all = [color=darkred]The entire crew became zombies![/color]
+zombie-round-end-amount-none = [color=green]所有丧尸都被清除了！[/color]
+zombie-round-end-amount-low = [color=green]几乎所有丧尸都被消灭了。[/color]
+zombie-round-end-amount-medium = [color=yellow]{$percent}%的船员变成了丧尸。[/color]
+zombie-round-end-amount-high = [color=crimson]{$percent}%的船员变成了丧尸。[/color]
+zombie-round-end-amount-all = [color=darkred]全体船员都变成了丧尸！[/color]
 
 zombie-round-end-survivor-count = {$count ->
     [one] There was only one survivor left:
     *[other] There were only {$count} survivors left:
 }
-zombie-round-end-user-was-survivor = - [color=White]{$name}[/color] ([color=gray]{$username}[/color]) survived the outbreak.
+zombie-round-end-user-was-survivor = - [color=White]{$name}[/color]（[color=gray]{$username}[/color]）在疫情中幸存。

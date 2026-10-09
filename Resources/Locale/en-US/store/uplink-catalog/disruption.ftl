@@ -1,55 +1,55 @@
 # Disruption
 
-uplink-singularity-grenade-name = Singularity Grenade
-uplink-singularity-grenade-desc = Grenade that simulates the power of a singularity, generates powerful gravity well.
+uplink-singularity-grenade-name = 奇点手雷
+uplink-singularity-grenade-desc = 能模拟奇点之力的手雷，会产生强大的引力井。
 
-uplink-access-breaker-name = Access Breaker
-uplink-access-breaker-desc = A hacked access configurator and a good friend of the emag. This device is able to force airlocks open as well as erase access requirements from station equipment. Recharges automatically.
+uplink-access-breaker-name = 权限破解器
+uplink-access-breaker-desc = 一台被破解的权限配置器，也是电子入侵器的好伙伴。这个装置能强行打开气闸，并从空间站设备上抹除权限要求。可自动充能。
 
-uplink-emag-name = Emag
-uplink-emag-desc = "The business card of the syndicate", this hacking tool is able to tamper with a variety of station devices. Is notably able to unlock unauthorized security recipes at lathes and subvert cyborgs with open access panels. Recharges automatically.
+uplink-emag-name = 电子入侵器
+uplink-emag-desc = "辛迪加的名片"，这个黑客工具能篡改各种空间站设备。尤其能在车床上解锁未经授权的安保配方，并破解面板敞开着的赛博格。可自动充能。
 
-uplink-radio-jammer-name = Radio Jammer
-uplink-radio-jammer-desc = This device will disrupt any nearby outgoing radio communication as well as suit sensors when activated. Battery powered, so you might want to bring a spare.
+uplink-radio-jammer-name = 无线电干扰器
+uplink-radio-jammer-desc = 这个装置在激活时会干扰附近一切对外无线电通讯以及服装传感器。使用电池供电，所以你最好带一块备用电池。
 
-uplink-syndicate-weapon-module-name = Weapon Cyborg Module
-uplink-syndicate-weapon-module-desc = Upgrades a cyborg with both an energy dagger and a Viper pistol with self-replicating ammo reserves.
+uplink-syndicate-weapon-module-name = 武器赛博格模块
+uplink-syndicate-weapon-module-desc = 为赛博格升级一把能量匕首和一把蝰蛇手枪，并配备可自我复制的弹药储备。
 
-uplink-disposable-turret-name = Disposable Ballistic Turret
-uplink-disposable-turret-desc = Looks and functions like a normal electrical toolbox. Upon hitting the toolbox it will transform into a ballistic turret, theoretically shooting at anyone except members of the syndicate. Can be turned back into a toolbox using a screwdriver and repaired using a wrench.
+uplink-disposable-turret-name = 一次性弹道哨戒炮
+uplink-disposable-turret-desc = 外观和功能都像普通的电工工具箱。击中工具箱后，它会变成一座弹道哨戒炮，理论上会向辛迪加成员以外的任何人射击。可以用螺丝刀把它变回工具箱，用扳手修理。
 
-uplink-syndicate-martyr-module-name = Martyr Cyborg Module
-uplink-syndicate-martyr-module-desc = Turn your emagged borg friend into a walking bomb with just this module. Make sure they're loyal to your cause, results may vary.
+uplink-syndicate-martyr-module-name = 殉道者赛博格模块
+uplink-syndicate-martyr-module-desc = 只需这个模块，就能把你被破解的机械体朋友变成一颗行走的炸弹。请确保他们忠于你的事业，结果可能不尽相同。
 
-uplink-soap-name = Soap
-uplink-soap-desc = An untrustworthy bar of soap. Smells of fear.
+uplink-soap-name = 肥皂
+uplink-soap-desc = 一块不靠谱的肥皂。散发着恐惧的味道。
 
-uplink-slipocalypse-clustersoap-name = Slipocalypse Clustersoap
-uplink-slipocalypse-clustersoap-desc = Scatters arounds small pieces of syndicate-brand soap after being thrown, these pieces of soap evaporate after 60 seconds.
+uplink-slipocalypse-clustersoap-name = 滑倒启示录集束肥皂
+uplink-slipocalypse-clustersoap-desc = 投掷后会散落出许多小块辛迪加品牌肥皂，这些肥皂块会在60秒后蒸发。
 
-uplink-toolbox-name = Toolbox
-uplink-toolbox-desc = A full compliment of tools for the mechanically inclined traitor. Includes a pair of insulated combat gloves and a syndicate gas mask as well.
+uplink-toolbox-name = 工具箱
+uplink-toolbox-desc = 为机械爱好者叛徒准备的一整套工具。还附赠一副绝缘战斗手套和一只辛迪加防毒面具。
 
-uplink-syndicate-jaws-of-life-name = Jaws Of Death
-uplink-syndicate-jaws-of-life-desc = A combined prying and cutting tool. Useful for entering the station or its departments. Can even open bolted doors!
+uplink-syndicate-jaws-of-life-name = 死亡之颚
+uplink-syndicate-jaws-of-life-desc = 一种兼具撬门和切割功能的工具。用于进入空间站或其各部门。甚至能打开上闩的门！
 
-uplink-duffel-surgery-name = Surgical Duffel Bag
-uplink-duffel-surgery-desc = A large duffel bag containing a full suite of surgical tools.
+uplink-duffel-surgery-name = 手术行李袋
+uplink-duffel-surgery-desc = 一个装有一整套手术工具的大行李袋。
 
-uplink-syndimov-law-name = Syndi Law Circuit Kit
-uplink-syndimov-law-desc = A subversive Lawset to use when you want to turn the A.I. to your side, use as much as possible. Comes with a Syndicate ID.
+uplink-syndimov-law-name = 辛迪法电路套件
+uplink-syndimov-law-desc = 一套颠覆性的法则集，当你想把人工智能拉到你这边时使用，尽可能多用。附一张辛迪加身份卡。
 
-uplink-antimov-law-name = Antimov Law Circuit
-uplink-antimov-law-desc = A very dangerous Lawset to use when you want to cause the A.I. to murder all station inhabitants, use with caution.
+uplink-antimov-law-name = 反辛迪法电路
+uplink-antimov-law-desc = 一套非常危险的法则集，当你想让人工智能屠杀空间站所有居民时使用，请谨慎。
 
-uplink-surplus-bundle-name = Surplus Crate
-uplink-surplus-bundle-desc = Contains 50 telecrystals worth of completely random Syndicate items. It can be useless junk or really good.
+uplink-surplus-bundle-name = 剩余物资箱
+uplink-surplus-bundle-desc = 内含价值50传能水晶的完全随机辛迪加物品。可能是没用的垃圾，也可能是真家伙。
 
-uplink-starter-kit-name = Basic Operative Bundle
-uplink-starter-kit-desc = Contains 40 telecrystals of basic operative gear. For those operatives who just don't know what they should buy.
+uplink-starter-kit-name = 基础特工套装
+uplink-starter-kit-desc = 内含价值40传能水晶的基础特工装备。给那些不知道自己该买什么的特工。
 
-uplink-singularity-beacon-name = Singularity Beacon
-uplink-singularity-beacon-desc = A device that attracts singularities. Has to be anchored and powered. Causes singularities to grow when consumed.
+uplink-singularity-beacon-name = 奇点信标
+uplink-singularity-beacon-desc = 一个能吸引奇点的装置。必须固定并通电。被吞噬时会使奇点增长。
 
-uplink-cameraBug-name = Camera bug
-uplink-cameraBug-desc = A portable device that allows you to view the station through the lens of the station's camera systems.
+uplink-cameraBug-name = 摄像头漏洞
+uplink-cameraBug-desc = 一台便携设备，让你能通过空间站摄像头系统的镜头观察空间站。

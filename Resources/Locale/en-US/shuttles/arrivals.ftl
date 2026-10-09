@@ -1,10 +1,10 @@
-cmd-arrivals-enable-hint = Enables arrivals
-cmd-arrivals-disable-hint = Disables arrivals
+cmd-arrivals-enable-hint = 启用抵达
+cmd-arrivals-disable-hint = 禁用抵达
 
-cmd-arrivals-returns = Set arrivals returns to {$value}.
-cmd-arrivals-returns-hint = Toggles allowing players to return via arrivals.
+cmd-arrivals-returns = 抵达返回已设为{$value}。
+cmd-arrivals-returns-hint = 切换是否允许玩家通过抵达处返回。
 
-cmd-arrivals-invalid = Invalid arg supplied.
+cmd-arrivals-invalid = 提供的参数无效。
 
-cmd-arrivals-force-hint = Forces players to arrive.
-cmd-arrivals-forced = Forced {$uid} to arrive to the station.
+cmd-arrivals-force-hint = 强制玩家抵达。
+cmd-arrivals-forced = 已强制{$uid}抵达空间站。

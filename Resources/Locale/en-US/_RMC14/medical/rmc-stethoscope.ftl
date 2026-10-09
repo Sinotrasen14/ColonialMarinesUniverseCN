@@ -1,25 +1,25 @@
-rmc-stethoscope-heart-healthy = You hear [color=green]normal heart beating patterns[/color], {POSS-PRONOUN($target)} heart is surely [color=green]healthy[/color].
-rmc-stethoscope-heart-littlebruised = You hear [color=yellow]small murmurs with each heart beat[/color], it is possible that {POSS-PRONOUN($target)} heart is [color=yellow]subtly damaged[/color].
-rmc-stethoscope-heart-bruised = You hear [color=orange]deviant heart beating patterns[/color], result of probable [color=orange]heart damage[/color].
-rmc-stethoscope-heart-broken = You hear [color=red]irregular and additional heart beating patterns[/color], probably caused by impaired blood pumping, {POSS-PRONOUN($target)} heart is certainly [color=red]failing[/color].
+rmc-stethoscope-heart-healthy = 你听到[color=green]正常的心跳节律[/color]，{POSS-PRONOUN($target)}心脏无疑[color=green]健康[/color]。
+rmc-stethoscope-heart-littlebruised = 你听到[color=yellow]每次心跳伴有轻微杂音[/color]，{POSS-PRONOUN($target)}心脏可能[color=yellow]受到了轻微损伤[/color]。
+rmc-stethoscope-heart-bruised = 你听到[color=orange]异常的心跳节律[/color]，很可能是[color=orange]心脏损伤[/color]的结果。
+rmc-stethoscope-heart-broken = 你听到[color=red]不规则且额外的心跳节律[/color]，可能由血液泵送功能受损引起，{POSS-PRONOUN($target)}心脏肯定[color=red]正在衰竭[/color]。
 
-rmc-stethoscope-lungs-healthy = You also hear [color=green]normal respiration sounds[/color] as well, {POSS-PRONOUN($target)} lungs are [color=green]healthy[/color], probably.
-rmc-stethoscope-lungs-littlebruised = You also hear [color=yellow]some crackles when {SUBJECT($target)} breath[/color], {SUBJECT($target)} are possibly suffering from [color=yellow]a small damage to the lungs[/color].
-rmc-stethoscope-lungs-bruised = You also hear [color=orange]unusual respiration sounds[/color] and noticeable difficulty to breath, possibly signalling [color=orange]ruptured lungs[/color].
-rmc-stethoscope-lungs-broken = You also [color=red]barely hear any respiration sounds[/color] and a lot of difficulty to breath, {POSS-PRONOUN($target)} lungs are [color=red]heavily failing[/color].
+rmc-stethoscope-lungs-healthy = 你还听到[color=green]正常的呼吸音[/color]，{POSS-PRONOUN($target)}肺部大概[color=green]健康[/color]。
+rmc-stethoscope-lungs-littlebruised = 你还听到[color=yellow]{SUBJECT($target)}呼吸时的一些湿啰音[/color]，{SUBJECT($target)}可能正遭受[color=yellow]轻微的肺部损伤[/color]。
+rmc-stethoscope-lungs-bruised = 你还听到[color=orange]异常的呼吸音[/color]以及明显的呼吸困难，可能预示着[color=orange]肺部破裂[/color]。
+rmc-stethoscope-lungs-broken = 你[color=red]几乎听不到任何呼吸音[/color]且呼吸困难严重，{POSS-PRONOUN($target)}肺部[color=red]重度衰竭[/color]。
 
-rmc-stethoscope-unskilled = You hear a lot of sounds... it's quite hard to distinguish, really.
-rmc-stethoscope-eyes-mouth = You can't hear anything. Maybe that isn't the smartest idea.
-rmc-stethoscope-other-limbs = You hear a sound here and there, but none of them give you any good information.
-rmc-stethoscope-nothing = You can't hear. Really, anything at all, how weird.
-rmc-stethoscope-dead = You can't hear anything at all, they must have kicked the bucket.
-rmc-stethoscope-synth = You hear nothing.
+rmc-stethoscope-unskilled = 你听到很多声音……说实话，很难分辨。
+rmc-stethoscope-eyes-mouth = 你什么也听不到。也许这主意不太聪明。
+rmc-stethoscope-other-limbs = 你这里那里听到一些声音，但都没能给你什么有用的信息。
+rmc-stethoscope-nothing = 你什么也听不到。真的，一点声音都没有，真奇怪。
+rmc-stethoscope-dead = 你完全听不到任何声音，他们肯定已经咽气了。
+rmc-stethoscope-synth = 你什么也没听到。
 
-rmc-stethoscope-verb-text = Stethoscope
-rmc-stethoscope-verb-message = Listen using the stethoscope.
+rmc-stethoscope-verb-text = 听诊器
+rmc-stethoscope-verb-message = 用听诊器进行听诊。
 
 # Temporary until real organs are implemented. Delete when fully implemented.
-rmc-stethoscope-normal = You hear [color=green]normal heart beating patterns[/color] and [color=green]normal respiration sounds[/color] as well, {POSS-PRONOUN($target)} heart and lungs are [color=green]healthy[/color], probably.
-rmc-stethoscope-raggedy = You hear [color=yellow]small murmurs with each heart beat[/color] and [color=yellow]some crackles when {SUBJECT($target)} breath[/color].
-rmc-stethoscope-hyper = You hear [color=orange]deviant heart beating patterns[/color] and [color=orange]unusual respiration sounds[/color].
-rmc-stethoscope-irregular = You hear [color=red]irregular and additional heart beating patterns[/color] and [color=red]barely hear any respiration sounds[/color], {SUBJECT($target)} is having a lot of difficulty breathing.
+rmc-stethoscope-normal = 你听到[color=green]正常的心跳节律[/color]，以及[color=green]正常的呼吸音[/color]，{POSS-PRONOUN($target)}心脏和肺部大概[color=green]健康[/color]。
+rmc-stethoscope-raggedy = 你听到[color=yellow]每次心跳伴有轻微杂音[/color]，以及[color=yellow]{SUBJECT($target)}呼吸时的一些湿啰音[/color]。
+rmc-stethoscope-hyper = 你听到[color=orange]异常的心跳节律[/color]以及[color=orange]异常的呼吸音[/color]。
+rmc-stethoscope-irregular = 你听到[color=red]不规则且额外的心跳节律[/color]，并且[color=red]几乎听不到任何呼吸音[/color]，{SUBJECT($target)}呼吸十分困难。

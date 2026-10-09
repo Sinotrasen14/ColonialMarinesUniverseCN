@@ -1,40 +1,40 @@
 # Explosives
 
-uplink-explosive-grenade-name = Explosive Grenade
-uplink-explosive-grenade-desc = A simplistic grenade with a 3.5 second long fuse that is geared towards injuring personnel. Causes minimal hull damage.
+uplink-explosive-grenade-name = 高爆手雷
+uplink-explosive-grenade-desc = 一枚结构简单的手雷，引信长3.5秒，旨在杀伤人员。对船体的破坏极小。
 
-uplink-smoke-grenade-name = Smoke Grenade
-uplink-smoke-grenade-desc = A grenade that releases a huge cloud of smoke, perfect for killing someone in the shadows or making a sneaky getaway.
+uplink-smoke-grenade-name = 烟雾弹
+uplink-smoke-grenade-desc = 一枚能释放大量烟雾的手雷，非常适合在阴影中杀人或偷偷溜走。
 
-uplink-mini-bomb-name = Minibomb
-uplink-mini-bomb-desc = A low-yield, high-impact precision sabotage explosive with a 5 second long fuse. Perfect for quickly destroying a machine, dead body, or whatever else needs to go.
+uplink-mini-bomb-name = 微型炸弹
+uplink-mini-bomb-desc = 一种低当量、高冲击力的精确破坏炸药，引信长5秒。非常适合迅速摧毁机器、尸体或其他任何需要处理的东西。
 
-uplink-penguin-grenade-name = Grenade Penguin
-uplink-penguin-grenade-desc = A small, highly-aggressive penguin with a grenade strapped around its neck. Trained to ignore all Syndicate agents and relentlessly pursue a single, random nearby target when released.
+uplink-penguin-grenade-name = 手雷企鹅
+uplink-penguin-grenade-desc = 一只体型小巧、极具攻击性的企鹅，脖子上绑着手雷。经训练会无视所有辛迪加特工，并在释放后无情追击一个随机的附近目标。
 
 uplink-c4-name = C-4
-uplink-c4-desc = Use it to breach walls, airlocks or sabotage equipment. It can be attached to almost all objects and has a modifiable timer with a minimum setting of 10 seconds.
+uplink-c4-desc = 用它炸开墙壁、气闸或破坏设备。它可以附着在几乎所有物体上，定时器可调，最短可设为10秒。
 
-uplink-grenadier-rig-name = grenadier chest rig
-uplink-grenadier-rig-desc = All you need for a loud party: 4 explosive grenades, 2 EMP grenades and 2 minibombs in a chest rig.
+uplink-grenadier-rig-name = 掷弹兵胸挂
+uplink-grenadier-rig-desc = 一场喧闹派对所需的一切：4枚高爆手雷、2枚EMP手雷和2枚微型炸弹，装在一个胸挂里。
 
-uplink-c4-bundle-name = C-4 bundle
-uplink-c4-bundle-desc = Because sometimes quantity is quality. Contains 8 C-4 plastic explosives.
+uplink-c4-bundle-name = C-4套装
+uplink-c4-bundle-desc = 因为有时数量就是质量。内含8份C-4塑性炸药。
 
-uplink-emp-grenade-name = EMP Grenade
-uplink-emp-grenade-desc = A grenade designed to disrupt electronic systems. Useful for disrupting communications, security's energy weapons, and APCs when you're in a tight spot.
+uplink-emp-grenade-name = EMP手雷
+uplink-emp-grenade-desc = 一枚旨在干扰电子系统的手雷。当你陷入困境时，可用于干扰通讯、安保的能量武器和APC。
 
-uplink-exploding-pen-name = Exploding pen
-uplink-exploding-pen-desc = A class IV explosive device contained within a standard pen. Comes with a 4 second fuse.
+uplink-exploding-pen-name = 爆炸笔
+uplink-exploding-pen-desc = 装在普通笔中的IV级爆炸装置。附有4秒引信。
 
-uplink-exploding-syndicate-bomb-name = Syndicate Bomb
-uplink-exploding-syndicate-bomb-desc = A big, anchored bomb that can create a huge explosion if not defused in time. Useful as a distraction. Has an adjustable timer with a minimum setting of 180 seconds.
+uplink-exploding-syndicate-bomb-name = 辛迪加炸弹
+uplink-exploding-syndicate-bomb-desc = 一枚大型固定式炸弹，若未及时拆除可造成巨大爆炸。可用作干扰。定时器可调，最短可设为180秒。
 
-uplink-shrapnel-grenade-name = Shrapnel Grenade
-uplink-shrapnel-grenade-desc = Launches a spray of sharp fragments dealing great damage against unarmored targets.
+uplink-shrapnel-grenade-name = 破片手雷
+uplink-shrapnel-grenade-desc = 喷出一片锋利破片，对无护甲目标造成巨大伤害。
 
-uplink-incendiary-grenade-name = Incendiary Grenade
-uplink-incendiary-grenade-desc = Releases a spray of incendiary fragments, igniting anyone near the detonation area.
+uplink-incendiary-grenade-name = 燃烧弹
+uplink-incendiary-grenade-desc = 释放一片燃烧破片，点燃引爆区域附近的任何人。
 
-uplink-power-sink-name = Power Sink
-uplink-power-sink-desc = Drains immense amounts of electricity from the grid, then explodes once it's saturated. Use wrench to connect it to wires.
+uplink-power-sink-name = 电力汲取器
+uplink-power-sink-desc = 从电网中汲取巨量电力，然后在饱和后爆炸。用扳手将其接到电线上。

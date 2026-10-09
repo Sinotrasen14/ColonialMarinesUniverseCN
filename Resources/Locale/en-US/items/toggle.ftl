@@ -1,4 +1,4 @@
-item-toggle-activate = Activate
-item-toggle-deactivate = Deactivate
+item-toggle-activate = 启动
+item-toggle-deactivate = 关闭
 
-item-toggle-size-fail = Doesn't fit.
+item-toggle-size-fail = 尺寸不合适。

@@ -1,58 +1,58 @@
-﻿cm-burn-kit-user-popup = You cover the burns on {$target} with regenerative membrane.
-cm-burn-kit-target-popup = {$user} covers your burns with regenerative membrane.
-cm-burn-kit-others-popup = {$user} covers the burns on {$target} with regenerative membrane.
-cm-burn-kit-none-self-popup = You have no burns.
-cm-burn-kit-none-other-popup = There are no burns on {$target}.
+﻿cm-burn-kit-user-popup = 你用再生膜覆盖{$target}的烧伤。
+cm-burn-kit-target-popup = {$user}用再生膜覆盖了你的烧伤。
+cm-burn-kit-others-popup = {$user}用再生膜覆盖了{$target}的烧伤。
+cm-burn-kit-none-self-popup = 你没有烧伤。
+cm-burn-kit-none-other-popup = {$target}身上没有烧伤。
 
-cm-trauma-kit-user-popup = You clean and seal the wounds on {$target} with bioglue.
-cm-trauma-kit-target-popup = {$user} cleans and seals your wounds with bioglue.
-cm-trauma-kit-others-popup = {$user} cleans and seals the wounds on {$target} with bioglue.
-cm-trauma-kit-none-self-popup = You have no wounds.
-cm-trauma-kit-none-other-popup = There are no wounds on {$target}.
+cm-trauma-kit-user-popup = 你用生物胶清洁并封闭{$target}的伤口。
+cm-trauma-kit-target-popup = {$user}用生物胶清洁并封闭了你的伤口。
+cm-trauma-kit-others-popup = {$user}用生物胶清洁并封闭了{$target}的伤口。
+cm-trauma-kit-none-self-popup = 你没有伤口。
+cm-trauma-kit-none-other-popup = {$target}身上没有伤口。
 
-cm-gauze-user-popup = You bandage {$target}.
-cm-gauze-target-popup = {$user} bandages you.
-cm-gauze-others-popup = {$user} bandages {$target}.
-cm-gauze-none-self-popup = You have no wounds.
-cm-gauze-none-other-popup = There are no wounds on {$target}.
+cm-gauze-user-popup = 你用绷带包扎{$target}。
+cm-gauze-target-popup = {$user}用绷带包扎了你。
+cm-gauze-others-popup = {$user}用绷带包扎了{$target}。
+cm-gauze-none-self-popup = 你没有伤口。
+cm-gauze-none-other-popup = {$target}身上没有伤口。
 
-cm-ointment-user-popup = You salve the burns on {$target}.
-cm-ointment-target-popup = {$user} salves your burns.
-cm-ointment-others-popup = {$user} salves the burns on {$target}.
-cm-ointment-none-self-popup = You have no burns.
-cm-ointment-none-other-popup = There are no burns on {$target}.
+cm-ointment-user-popup = 你给{$target}的烧伤涂上药膏。
+cm-ointment-target-popup = {$user}给你的烧伤涂上药膏。
+cm-ointment-others-popup = {$user}给{$target}的烧伤涂上药膏。
+cm-ointment-none-self-popup = 你没有烧伤。
+cm-ointment-none-other-popup = {$target}身上没有烧伤。
 
-cm-surgical-line-user-popup = You suture the wounds on {$target}.
-cm-surgical-line-target-popup = {$user} sutures your wounds.
-cm-surgical-line-others-popup = {$user} sutures the wounds on {$target}.
-cm-surgical-line-start-target-popup = {$user} is trying to suture your wounds.
-cm-surgical-line-finish-user-popup = You finish suturing the wounds on {$target}.
-cm-surgical-line-finish-target-popup = {$user} finishes suturing your wounds.
-cm-surgical-line-finish-others-popup = {$user} finishes suturing the wounds on {$target}.
-cm-surgical-line-none-self-popup = You have no wounds.
-cm-surgical-line-none-other-popup = There are no wounds on {$target}.
+cm-surgical-line-user-popup = 你缝合{$target}的伤口。
+cm-surgical-line-target-popup = {$user}缝合了你的伤口。
+cm-surgical-line-others-popup = {$user}缝合了{$target}的伤口。
+cm-surgical-line-start-target-popup = {$user}正试图缝合你的伤口。
+cm-surgical-line-finish-user-popup = 你完成了对{$target}伤口的缝合。
+cm-surgical-line-finish-target-popup = {$user}完成了对你伤口的缝合。
+cm-surgical-line-finish-others-popup = {$user}完成了对{$target}伤口的缝合。
+cm-surgical-line-none-self-popup = 你没有伤口。
+cm-surgical-line-none-other-popup = {$target}身上没有伤口。
 
-cm-synthgraft-user-popup = You graft the burns on {$target}.
-cm-synthgraft-target-popup = {$user} grafts your burns.
-cm-synthgraft-others-popup = {$user} grafts the burns on {$target}.
-cm-synthgraft-start-target-popup = {$user} is trying to graft your burns.
-cm-synthgraft-finish-user-popup = You finish grafting the burns on {$target}.
-cm-synthgraft-finish-target-popup = {$user} finishes grafting your burns.
-cm-synthgraft-finish-others-popup = {$user} finishes grafting the burns on {$target}.
-cm-synthgraft-none-self-popup = You have no burns.
-cm-synthgraft-none-other-popup = There are no burns on {$target}.
+cm-synthgraft-user-popup = 你给{$target}的烧伤进行植皮。
+cm-synthgraft-target-popup = {$user}给你的烧伤进行了植皮。
+cm-synthgraft-others-popup = {$user}给{$target}的烧伤进行了植皮。
+cm-synthgraft-start-target-popup = {$user}正试图给你的烧伤进行植皮。
+cm-synthgraft-finish-user-popup = 你完成了对{$target}烧伤的植皮。
+cm-synthgraft-finish-target-popup = {$user}完成了对你烧伤的植皮。
+cm-synthgraft-finish-others-popup = {$user}完成了对{$target}烧伤的植皮。
+cm-synthgraft-none-self-popup = 你没有烧伤。
+cm-synthgraft-none-other-popup = {$target}身上没有烧伤。
 
-cm-wounds-already-treated-self-popup = Your wounds have already been treated.
-cm-wounds-already-treated-target-popup = The wounds on {$target} have already been treated.
+cm-wounds-already-treated-self-popup = 你的伤口已经处理过了。
+cm-wounds-already-treated-target-popup = {$target}身上的伤口已经处理过了。
 
-cm-burns-already-treated-self-popup = Your burns have already been treated.
-cm-burns-already-treated-target-popup = The burns on {$target} have already been treated.
+cm-burns-already-treated-self-popup = 你的烧伤已经处理过了。
+cm-burns-already-treated-target-popup = {$target}身上的烧伤已经处理过了。
 
-cm-wounds-brackets-translators-note = {"{ }"} = Untreated
+cm-wounds-brackets-translators-note = {"{ }"} = 未处理
 
-cm-wounds-failed-unskilled = You don't know how to use {THE($treater)}!
-cm-wounds-failed-not-enough = You don't have enough {$treater}!
-cm-wounds-open-cut = {$target} is cut open, you'll need more than a {$treater}!
-cm-wounds-cannot-treat = {THE($treater)} cannot treat these wounds!
-cm-wounds-already-treated = The wounds on {$target} have already been treated!
-cm-wounds-start-fumbling = You start fumbling with {THE($name)}.
+cm-wounds-failed-unskilled = 你不知道如何使用{THE($treater)}！
+cm-wounds-failed-not-enough = 你的{$treater}不够用！
+cm-wounds-open-cut = {$target}被剖开了，光靠{$treater}可不够！
+cm-wounds-cannot-treat = {THE($treater)}无法处理这些伤口！
+cm-wounds-already-treated = {$target}身上的伤口已经处理过了！
+cm-wounds-start-fumbling = 你开始手忙脚乱地摆弄{THE($name)}。

@@ -1,86 +1,86 @@
-marking-DionaThornsHead-thorns_head = Diona Head (Thorns)
-marking-DionaThornsHead = Diona Head (Thorns)
+marking-DionaThornsHead-thorns_head = 迪奥娜头部（荆棘）
+marking-DionaThornsHead = 迪奥娜头部（荆棘）
 
-marking-DionaThornsBody-thorns_body = Diona Chest (Thorns)
-marking-DionaThornsBody = Diona Chest (Thorns)
+marking-DionaThornsBody-thorns_body = 迪奥娜胸部（荆棘）
+marking-DionaThornsBody = 迪奥娜胸部（荆棘）
 
-marking-DionaFlowersHead-flowers_head = Diona Head (Flowers)
-marking-DionaFlowersHead = Diona Head (Flowers)
+marking-DionaFlowersHead-flowers_head = 迪奥娜头部（花朵）
+marking-DionaFlowersHead = 迪奥娜头部（花朵）
 
-marking-DionaFlowersBody-flowers_body = Diona Chest (Flowers)
-marking-DionaFlowersBody = Diona Chest (Flowers)
+marking-DionaFlowersBody-flowers_body = 迪奥娜胸部（花朵）
+marking-DionaFlowersBody = 迪奥娜胸部（花朵）
 
-marking-DionaLeafCover-leaf_cover = Diona Chest (Leaf)
-marking-DionaLeafCover = Diona Chest (Leaf)
+marking-DionaLeafCover-leaf_cover = 迪奥娜胸部（叶片）
+marking-DionaLeafCover = 迪奥娜胸部（叶片）
 
-marking-DionaBloomHead-bloom = Diona Everbloom (Flower)
-marking-DionaBloomHead = Diona Everbloom (Flower)
+marking-DionaBloomHead-bloom = 迪奥娜常绽花（花）
+marking-DionaBloomHead = 迪奥娜常绽花（花）
 
-marking-DionaBracketHead-bracket = Diona Bracket (Mushrooms)
-marking-DionaBracketHead = Diona Bracket (Mushrooms)
+marking-DionaBracketHead-bracket = 迪奥娜层菌（蘑菇）
+marking-DionaBracketHead = 迪奥娜层菌（蘑菇）
 
-marking-DionaBrushHead-brush = Diona Brush (Lians)
-marking-DionaBrushHead = Diona Brush (Lians)
+marking-DionaBrushHead-brush = 迪奥娜灌丛（藤蔓）
+marking-DionaBrushHead = 迪奥娜灌丛（藤蔓）
 
-marking-DionaCornflowerHead-cornflower = Diona Cornflowers (Flowers)
-marking-DionaCornflowerHead = Diona Cornflowers (Flowers)
+marking-DionaCornflowerHead-cornflower = 迪奥娜矢车菊（花朵）
+marking-DionaCornflowerHead = 迪奥娜矢车菊（花朵）
 
-marking-DionaFicusHead-ficus = Diona Ficus (Leafs)
-marking-DionaFicusHead = Diona Ficus (Leafs)
+marking-DionaFicusHead-ficus = 迪奥娜榕树（叶片）
+marking-DionaFicusHead = 迪奥娜榕树（叶片）
 
-marking-DionaGarlandHead-garland = Diona Garland (Flowers)
-marking-DionaGarlandHead = Diona Garland (Flowers)
+marking-DionaGarlandHead-garland = 迪奥娜花环（花朵）
+marking-DionaGarlandHead = 迪奥娜花环（花朵）
 
-marking-DionaKingHead-king = Diona Flowerking (Flower)
-marking-DionaKingHead = Diona Flowerking (Flower)
+marking-DionaKingHead-king = 迪奥娜花王（花）
+marking-DionaKingHead = 迪奥娜花王（花）
 
-marking-DionaLaurelHead-laurel = Diona Laurel (Leafs)
-marking-DionaLaurelHead = Diona Laurel (Leafs)
+marking-DionaLaurelHead-laurel = 迪奥娜月桂（叶片）
+marking-DionaLaurelHead = 迪奥娜月桂（叶片）
 
-marking-DionaLeafyHeadTop-leafy = Diona Leafy (Leafs)
-marking-DionaLeafyHeadTop = Diona Leafy (Leafs)
+marking-DionaLeafyHeadTop-leafy = 迪奥娜枝叶（叶片）
+marking-DionaLeafyHeadTop = 迪奥娜枝叶（叶片）
 
-marking-DionaLotusHead-lotus = Diona Lotus (Flower)
-marking-DionaLotusHead = Diona Lotus (Flower)
+marking-DionaLotusHead-lotus = 迪奥娜莲花（花）
+marking-DionaLotusHead = 迪奥娜莲花（花）
 
-marking-DionaMeadowHeadTop-meadow = Diona Meadow
-marking-DionaMeadowHeadTop = Diona Meadow
+marking-DionaMeadowHeadTop-meadow = 迪奥娜草甸
+marking-DionaMeadowHeadTop = 迪奥娜草甸
 
-marking-DionaOakHead-oak = Diona Oak (Snag)
-marking-DionaOakHead = Diona Oak (Snag)
+marking-DionaOakHead-oak = 迪奥娜橡树（枯枝）
+marking-DionaOakHead = 迪奥娜橡树（枯枝）
 
-marking-DionaPalmHead-palm = Diona Palmhead (Leafs)
-marking-DionaPalmHead = Diona Palmhead (Leafs)
+marking-DionaPalmHead-palm = 迪奥娜棕榈头（叶片）
+marking-DionaPalmHead = 迪奥娜棕榈头（叶片）
 
-marking-DionaRootHead-root = Diona Root (Roots)
-marking-DionaRootHead = Diona Root (Roots)
+marking-DionaRootHead-root = 迪奥娜根系（根）
+marking-DionaRootHead = 迪奥娜根系（根）
 
-marking-DionaRoseHead-rose = Diona Rose (Flower)
-marking-DionaRoseHead = Diona Rose (Flower)
+marking-DionaRoseHead-rose = 迪奥娜玫瑰（花）
+marking-DionaRoseHead = 迪奥娜玫瑰（花）
 
-marking-DionaRoseyHead-rosey = Diona Rosey (Flowers)
-marking-DionaRoseyHead = Diona Rosey (Flowers)
+marking-DionaRoseyHead-rosey = 迪奥娜蔷薇（花朵）
+marking-DionaRoseyHead = 迪奥娜蔷薇（花朵）
 
-marking-DionaShrubHeadTop-shrub = Diona Shrub (Thorns)
-marking-DionaShrubHeadTop = Diona Shrub (Thorns)
+marking-DionaShrubHeadTop-shrub = 迪奥娜灌木（荆棘）
+marking-DionaShrubHeadTop = 迪奥娜灌木（荆棘）
 
-marking-DionaSpinnerHeadSide-spinner = Diona Spinner
-marking-DionaSpinnerHeadSide = Diona Spinner
+marking-DionaSpinnerHeadSide-spinner = 迪奥娜纺锤
+marking-DionaSpinnerHeadSide = 迪奥娜纺锤
 
-marking-DionaSproutHeadSide-sprout = Diona Sprout
-marking-DionaSproutHeadSide = Diona Sprout
+marking-DionaSproutHeadSide-sprout = 迪奥娜新芽
+marking-DionaSproutHeadSide = 迪奥娜新芽
 
-marking-DionaVineHeadTop-vine = Diona Vines (Vines)
-marking-DionaVineHeadTop = Diona Vines (Vines)
+marking-DionaVineHeadTop-vine = 迪奥娜藤蔓（藤蔓）
+marking-DionaVineHeadTop = 迪奥娜藤蔓（藤蔓）
 
-marking-DionaVinelHead-vinel = Diona Vines Long (Vines)
-marking-DionaVinelHead = Diona Vines Long (Vines)
+marking-DionaVinelHead-vinel = 迪奥娜长藤（藤蔓）
+marking-DionaVinelHead = 迪奥娜长藤（藤蔓）
 
-marking-DionaVinesHead-vines = Diona Vines Short (Vines)
-marking-DionaVinesHead = Diona Vines Short (Vines)
+marking-DionaVinesHead-vines = 迪奥娜短藤（藤蔓）
+marking-DionaVinesHead = 迪奥娜短藤（藤蔓）
 
-marking-DionaWildflowerHead-wildflower = Diona Wild Flowers (Flowers)
-marking-DionaWildflowerHead = Diona Wild Flowers (Flowers)
+marking-DionaWildflowerHead-wildflower = 迪奥娜野花（花朵）
+marking-DionaWildflowerHead = 迪奥娜野花（花朵）
 
-marking-DionaVineOverlay-overlay = Diona Body Vines
-marking-DionaVineOverlay = Diona Body Vines
+marking-DionaVineOverlay-overlay = 迪奥娜身体藤蔓
+marking-DionaVineOverlay = 迪奥娜身体藤蔓

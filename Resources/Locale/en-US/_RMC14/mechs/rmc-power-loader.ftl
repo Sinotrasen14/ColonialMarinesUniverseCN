@@ -1,23 +1,23 @@
-﻿rmc-power-loader-hands-occupied = You need both hands free to operate {THE($mech)}.
-rmc-power-loader-cant-grab-full = {THE($mech)}'s clamps are full! Drop something first.
-rmc-power-loader-too-close = You can't place something that close!
-rmc-power-loader-too-far = That is too far away!
-rmc-power-loader-cant-drop-occupied = You can't drop {THE($drop)} here, something is blocking the way!
+rmc-power-loader-hands-occupied = 你必须腾出双手才能操作{THE($mech)}。
+rmc-power-loader-cant-grab-full = {THE($mech)}的夹爪已满！先放下点东西。
+rmc-power-loader-too-close = 你不能把东西放得那么近！
+rmc-power-loader-too-far = 那太远了！
+rmc-power-loader-cant-drop-occupied = 你无法将{THE($drop)}放在这里，有东西挡住了！
 
-rmc-power-loader-nothing-attached = There's nothing attached here!
-rmc-power-loader-discard-empty = You discard the empty {$ammo}.
-rmc-power-loader-transfer-ammo = You transfer {$rounds} {$rounds ->
+rmc-power-loader-nothing-attached = 这里没有连接任何东西！
+rmc-power-loader-discard-empty = 你丢弃了空的{$ammo}。
+rmc-power-loader-transfer-ammo = 你转移了{$rounds} {$rounds ->
   [one] round
   *[other] rounds
-} to {THE($ammo)}.
-rmc-power-loader-wrong-weapon = That's the wrong kind of ammo!
-rmc-power-loader-wrong-ammo = They're different types of ammo!
-rmc-power-loader-full-ammo = {CAPITALIZE(THE($ammo))} is full!
+}给{THE($ammo)}。
+rmc-power-loader-wrong-weapon = 弹药类型与武器不匹配！
+rmc-power-loader-wrong-ammo = 它们是不同类型的弹药！
+rmc-power-loader-full-ammo = {CAPITALIZE(THE($ammo))}已装满！
 
-rmc-power-loader-occupied-weapon = There's already a weapon installed there!
-rmc-power-loader-occupied-deployer = There's already an equipment deployer installed there!
-rmc-power-loader-occupied-ammo = You need to unload the ammo crate inside first!
-rmc-power-loader-occupied-deployable = You need to unload the ordnance inside first!
-rmc-power-loader-ammo-no-weapon = You need to install a weapon first!
+rmc-power-loader-occupied-weapon = 那里已经安装了武器！
+rmc-power-loader-occupied-deployer = 那里已经安装了装备部署器！
+rmc-power-loader-occupied-ammo = 你得先卸下里面的弹药箱！
+rmc-power-loader-occupied-deployable = 你得先卸下里面的军械！
+rmc-power-loader-ammo-no-weapon = 你得先安装武器！
 
-rmc-power-loader-occupied = There's already something installed there!
+rmc-power-loader-occupied = 那里已经安装了东西！

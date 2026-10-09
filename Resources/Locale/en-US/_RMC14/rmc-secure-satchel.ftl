@@ -1,10 +1,10 @@
-rmc-id-lockable-storage-lock = You lock {$storage} to your ID.
-rmc-id-lockable-storage-unlock = You unlock {$storage}.
-rmc-id-lockable-storage-access-denied = The ID lock rejects your ID.
-rmc-id-lockable-storage-id-invalid = This ID doesn't have a registered name.
-rmc-id-lockable-storage-open-denied = {$storage} is locked by {$owner}'s ID! You decide to leave it alone.
-rmc-id-lockable-storage-owner-unknown = an unknown owner
-rmc-id-lockable-storage-examine = [color=lightblue]This storage has an ID lock. Swipe an ID to lock or unlock it.[/color]
-rmc-id-lockable-storage-examine-override = [color=lightblue]Authorized override access can unlock this lock.[/color]
-rmc-id-lockable-storage-examine-locked = [color=red]It is currently locked to {$owner}.[/color]
-rmc-id-lockable-storage-examine-unlocked = [color=chartreuse]It is currently unlocked.[/color]
+rmc-id-lockable-storage-lock = 你把{$storage}锁到你的身份卡上。
+rmc-id-lockable-storage-unlock = 你解锁了{$storage}。
+rmc-id-lockable-storage-access-denied = 身份锁拒绝了你的身份卡。
+rmc-id-lockable-storage-id-invalid = 这张身份卡没有登记姓名。
+rmc-id-lockable-storage-open-denied = {$storage}被{$owner}的身份卡锁住了！你决定不去动它。
+rmc-id-lockable-storage-owner-unknown = 未知所有者
+rmc-id-lockable-storage-examine = [color=lightblue]此储物容器有身份锁。刷一张身份卡即可上锁或解锁。[/color]
+rmc-id-lockable-storage-examine-override = [color=lightblue]授权的覆盖权限可以解锁此锁。[/color]
+rmc-id-lockable-storage-examine-locked = [color=red]它目前锁定于{$owner}。[/color]
+rmc-id-lockable-storage-examine-unlocked = [color=chartreuse]它目前未上锁。[/color]

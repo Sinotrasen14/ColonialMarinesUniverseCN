@@ -1,5 +1,5 @@
-reagent-name-rmcspacedrugs = Space drugs
-reagent-desc-rmcspacedrugs = An illegal compound that causes hallucinations, visual artefacts and loss of balance.
+reagent-name-rmcspacedrugs = 太空毒品
+reagent-desc-rmcspacedrugs = 一种非法化合物，会导致幻觉、视觉伪影和失去平衡。
 
-reagent-name-rmcpsilocybin = Psilocybin
-reagent-desc-rmcpsilocybin = Psilocybin is a naturally occurring psychedelic prodrug compound produced by more than 200 species of mushrooms, collectively known as psilocybin mushrooms or Magic Mushrooms.
+reagent-name-rmcpsilocybin = 裸盖菇素
+reagent-desc-rmcpsilocybin = 裸盖菇素是一种天然存在的致幻前体化合物，由200多种蘑菇产生，统称为裸盖菇或迷幻菇。

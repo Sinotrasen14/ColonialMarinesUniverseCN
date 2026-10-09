@@ -1,2 +1,2 @@
-radar-console-window-title = Mass Scanner Console
-shuttle-console-window-title = Shuttle Console
+radar-console-window-title = 质量扫描仪控制台
+shuttle-console-window-title = 穿梭机控制台

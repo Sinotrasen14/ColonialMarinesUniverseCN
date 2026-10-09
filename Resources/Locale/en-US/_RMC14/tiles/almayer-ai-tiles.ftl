@@ -1,2 +1,2 @@
-﻿tiles-cm-ai = ai-room tile
-tiles-cm-ai-glowing = glowing ai-room tile
+tiles-cm-ai = AI舱室地块
+tiles-cm-ai-glowing = 发光的AI舱室地块

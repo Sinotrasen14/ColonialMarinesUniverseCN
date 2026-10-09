@@ -1,9 +1,9 @@
-barbed-wire-slot-insert-full = The barricade already has barbed wire on it!
-barbed-wire-slot-insert-success = You wired the barricade with barbed wire.
-barbed-wire-damage = The barbed wire slice into your skin!
-barbed-wire-slot-wiring = You begin wiring the barricade with barbed wire...
+barbed-wire-slot-insert-full = 这道路障上已经有铁丝网了！
+barbed-wire-slot-insert-success = 你给路障装上了铁丝网。
+barbed-wire-damage = 铁丝网割进了你的皮肤！
+barbed-wire-slot-wiring = 你开始给路障装铁丝网……
 
-barbed-wire-cutting-action-begin = You begin cutting the barbed wire...
-barbed-wire-cutting-action-finish = You removed the barbed wire.
+barbed-wire-cutting-action-begin = 你开始剪断铁丝网……
+barbed-wire-cutting-action-finish = 你移除了铁丝网。
 
-barbed-wire-cant-climb = You can't climb the barbed wire.
+barbed-wire-cant-climb = 你无法攀爬铁丝网。

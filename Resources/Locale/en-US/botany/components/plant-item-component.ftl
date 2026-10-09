@@ -1,15 +1,15 @@
-plant-hoe-component-already-seeded-popup = You remove the weeds from the {$name}.
-plant-hoe-component-remove-weeds-others-popup = {$otherName} starts uprooting the weeds.
-plant-hoe-component-no-weeds-popup = This plot is devoid of weeds! It doesn't need uprooting.
+plant-hoe-component-already-seeded-popup = 你清除了{$name}中的杂草。
+plant-hoe-component-remove-weeds-others-popup = {$otherName}开始拔除杂草。
+plant-hoe-component-no-weeds-popup = 这块地没有杂草！不需要拔除。
 
-plant-shovel-component-remove-plant-popup = You remove the plant from the {$name}.
-plant-shovel-component-remove-plant-others-popup = {$name} removes the plant.
-plant-shovel-component-no-plant-popup = There is no plant to remove.
+plant-shovel-component-remove-plant-popup = 你把植株从{$name}中移除。
+plant-shovel-component-remove-plant-others-popup = {$name}移除了植株。
+plant-shovel-component-no-plant-popup = 没有可移除的植株。
 
-plant-sample-component-early-sample-popup = The plant hasn't grown enough to take a sample yet.
-plant-sample-component-already-sampled-popup = This plant has already been sampled.
-plant-sample-component-take-sample-popup = You take a sample from the {$seedName}.
-plant-sample-component-dead-plant-popup = This plant is dead.
+plant-sample-component-early-sample-popup = 植株还没长到可以取样的程度。
+plant-sample-component-already-sampled-popup = 这株植物已经被取样过了。
+plant-sample-component-take-sample-popup = 你从{$seedName}上取了样。
+plant-sample-component-dead-plant-popup = 这株植物已经死了。
 
-plant-produce-component-compost-popup = You compost {$usingItem} into {$owner}.
-plant-produce-component-compost-others-popup = {$user} composts {$usingItem} into {$owner}.
+plant-produce-component-compost-popup = 你把{$usingItem}堆肥到{$owner}中。
+plant-produce-component-compost-others-popup = {$user}把{$usingItem}堆肥到{$owner}中。

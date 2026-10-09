@@ -1,3 +1,3 @@
-rmc-flavor-complex-whiskey = like expensive molasses
-rmc-flavor-complex-mango = like mangoes
-flavor-base-crunchy = crunchy
+rmc-flavor-complex-whiskey = 像昂贵的糖蜜
+rmc-flavor-complex-mango = 像芒果
+flavor-base-crunchy = 酥脆

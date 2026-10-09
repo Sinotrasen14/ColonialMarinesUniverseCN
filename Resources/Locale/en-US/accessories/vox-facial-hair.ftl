@@ -1,20 +1,20 @@
-marking-VoxFacialHairBeard = Vox Beard (Quills)
-marking-VoxFacialHairBeard-beard_s = Vox Beard (Quills)
+marking-VoxFacialHairBeard = Vox胡须（翎羽）
+marking-VoxFacialHairBeard-beard_s = Vox胡须（翎羽）
 
-marking-VoxFacialHairColonel = Vox Moustache (Colonel)
-marking-VoxFacialHairColonel-colonel_s = Vox Moustache (Colonel)
+marking-VoxFacialHairColonel = Vox小胡子（上校）
+marking-VoxFacialHairColonel-colonel_s = Vox小胡子（上校）
 
-marking-VoxFacialHairFu = Vox Moustache (Quill Fu)
-marking-VoxFacialHairFu-fu_s = Vox Moustache (Quill Fu)
+marking-VoxFacialHairFu = Vox小胡子（翎羽傅）
+marking-VoxFacialHairFu-fu_s = Vox小胡子（翎羽傅）
 
-marking-VoxFacialHairNeck = Vox Beard (Neck Quills)
-marking-VoxFacialHairNeck-neck_s = Vox Beard (Neck Quills)
+marking-VoxFacialHairNeck = Vox胡须（颈部翎羽）
+marking-VoxFacialHairNeck-neck_s = Vox胡须（颈部翎羽）
 
-marking-VoxFacialHairMane = Vox Beard (Mane)
-marking-VoxFacialHairMane-mane_s = Vox Beard (Mane)
+marking-VoxFacialHairMane = Vox胡须（鬃毛）
+marking-VoxFacialHairMane-mane_s = Vox胡须（鬃毛）
 
-marking-VoxFacialHairManeSmall = Vox Beard (Small Mane)
-marking-VoxFacialHairManeSmall-manesmall_s = Vox Beard (Small Mane)
+marking-VoxFacialHairManeSmall = Vox胡须（小鬃毛）
+marking-VoxFacialHairManeSmall-manesmall_s = Vox胡须（小鬃毛）
 
-marking-VoxFacialHairTufts = Vox Sideburns (Tufts)
-marking-VoxFacialHairTufts-tuft_s = Vox Sideburns (Tufts)
+marking-VoxFacialHairTufts = Vox鬓角（毛簇）
+marking-VoxFacialHairTufts-tuft_s = Vox鬓角（毛簇）

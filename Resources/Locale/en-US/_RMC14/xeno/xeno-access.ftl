@@ -1,2 +1,2 @@
-﻿cm-access-xeno = Xenonid
-cm-access-xeno-queen = Xenonid Queen
+cm-access-xeno = 异形
+cm-access-xeno-queen = 异形女王

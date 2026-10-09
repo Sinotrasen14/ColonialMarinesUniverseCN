@@ -1,91 +1,91 @@
-cm-gun-unskilled = You don't seem to know how to use {THE($gun)}
-cm-gun-no-ammo-message = You don't have any ammo left!
-cm-gun-use-delay = You need to wait {$seconds} seconds before shooting again!
-cm-gun-pump-examine = [bold]Press your [color=cyan]unique action[/color] keybind (Spacebar by default) to pump before shooting.[/bold]
-cm-gun-pump-first-with = You need to pump the gun with {$key} first!
-cm-gun-pump-first = You need to pump the gun first!
+cm-gun-unskilled = 你似乎不知道怎么使用{THE($gun)}
+cm-gun-no-ammo-message = 你没有剩余弹药了！
+cm-gun-use-delay = 你需要等待{$seconds}秒才能再次射击！
+cm-gun-pump-examine = [bold]开枪前先按你的[color=cyan]特殊动作[/color]键位（默认为空格键）上膛。[/bold]
+cm-gun-pump-first-with = 你需要先用{$key}上膛！
+cm-gun-pump-first = 你需要先给枪上膛！
 
-rmc-sharp-examine = [bold]Press your [color=cyan]unique action[/color] keybind (Spacebar by default) to toggle explosive and incendiary dart direct-hit detonation delay. Current delay: [color=yellow]{TOSTRING($seconds, "F1")} seconds[/color].[/bold]
-rmc-sharp-toggle-delay = You set {THE($gun)}'s direct-hit detonation delay to {TOSTRING($seconds, "F1")} seconds.
+rmc-sharp-examine = [bold]按你的[color=cyan]特殊动作[/color]键位（默认为空格键）来切换爆裂镖和燃烧镖直击引爆的延迟。当前延迟：[color=yellow]{TOSTRING($seconds, "F1")}秒[/color]。[/bold]
+rmc-sharp-toggle-delay = 你把{THE($gun)}的直击引爆延迟设为{TOSTRING($seconds, "F1")}秒。
 
-rmc-vulture-unbraced-user = The recoil from {THE($gun)} hammers through you without a deployed bipod!
-rmc-vulture-unbraced-others = {CAPITALIZE(THE($user))} is thrown back by {THE($gun)}'s recoil!
-rmc-vulture-bipod-required = You need to deploy {THE($gun)}'s bipod before using its scope.
-rmc-vulture-spotter-scope-slot = M707 spotter scope
-rmc-vulture-spotter-insert-scope = Mount scope
-rmc-vulture-spotter-eject-scope = Remove scope
-rmc-vulture-spotter-scope-only = Only an M707 spotter scope fits on the tripod.
-rmc-vulture-must-scope = You need to be looking through the M707 Vulture's scope to adjust it.
-rmc-vulture-breath-cooldown = You need to catch your breath before stabilizing the scope again.
+rmc-vulture-unbraced-user = 没有架起两脚架，{THE($gun)}的后坐力狠狠冲击着你！
+rmc-vulture-unbraced-others = {CAPITALIZE(THE($user))}被{THE($gun)}的后坐力掀翻了！
+rmc-vulture-bipod-required = 你需要先架起{THE($gun)}的两脚架才能使用它的瞄准镜。
+rmc-vulture-spotter-scope-slot = M707观察员瞄准镜
+rmc-vulture-spotter-insert-scope = 安装瞄准镜
+rmc-vulture-spotter-eject-scope = 移除瞄准镜
+rmc-vulture-spotter-scope-only = 只有M707观察员瞄准镜能装到三脚架上。
+rmc-vulture-must-scope = 你需要透过M707秃鹫的瞄准镜观察才能调节它。
+rmc-vulture-breath-cooldown = 你需要先喘口气才能再次稳定瞄准镜。
 
-rmc-breech-loaded-open-shoot-attempt = You need to close the breech first!
-rmc-breech-loaded-not-ready-to-shoot = You need to open and close the breech first!
-rmc-breech-loaded-closed-load-attempt = You need to open the breech first!
-rmc-breech-loaded-closed-extract-attempt = You need to open the breech first!
-rmc-breech-loaded-toggle-attempt-cooldown = You must wait before {$action} the chamber again!
-rmc-breech-loaded-open = opening
-rmc-breech-loaded-close = closing
+rmc-breech-loaded-open-shoot-attempt = 你需要先关闭炮闩！
+rmc-breech-loaded-not-ready-to-shoot = 你需要先打开再关闭炮闩！
+rmc-breech-loaded-closed-load-attempt = 你需要先打开炮闩！
+rmc-breech-loaded-closed-extract-attempt = 你需要先打开炮闩！
+rmc-breech-loaded-toggle-attempt-cooldown = 你必须等待一段时间才能再次{$action}膛室！
+rmc-breech-loaded-open = 打开
+rmc-breech-loaded-close = 关闭
 
-rmc-wield-use-delay = You need to wait {$seconds} seconds before wielding {THE($wieldable)}!
-rmc-shoot-use-delay = You need to wait {$seconds} seconds before shooting {THE($wieldable)}!
+rmc-wield-use-delay = 你需要等待{$seconds}秒才能持握{THE($wieldable)}！
+rmc-shoot-use-delay = 你需要等待{$seconds}秒才能用{THE($wieldable)}射击！
 
-rmc-shoot-harness-required = Harness required
-rmc-wear-smart-gun-required = You must have your smart gun equipped to wear these.
-rmc-gun-arc-blocked = You cannot fire outside of the weapon's firing arc.
+rmc-shoot-harness-required = 需要挂带
+rmc-wear-smart-gun-required = 你必须装备好你的重机枪才能穿戴这些。
+rmc-gun-arc-blocked = 你无法在武器的射击弧线之外开火。
 
-rmc-shoot-id-lock-unauthorized = Trigger locked. Unauthorized user.
-rmc-id-lock-unauthorized = Action denied. Unauthorized user.
-rmc-id-lock-authorization = You pick up the {$gun}, registering yourself as its owner.
-rmc-id-lock-authorization-combat = The {$gun} beeps, registering yourself as its owner.
-rmc-id-lock-toggle-lock = You {$action} the id lock on the {$gun}.
+rmc-shoot-id-lock-unauthorized = 扳机已锁定。未授权用户。
+rmc-id-lock-unauthorized = 操作被拒绝。未授权用户。
+rmc-id-lock-authorization = 你拿起{$gun}，将自己注册为其所有者。
+rmc-id-lock-authorization-combat = {$gun}发出哔声，将你注册为其所有者。
+rmc-id-lock-toggle-lock = 你{$action}了{$gun}的ID锁。
 
-rmc-id-lock-color-unauthorized = red
-rmc-id-lock-color-authorized = chartreuse
-rmc-id-lock-toggle-on = lock
-rmc-id-lock-toggle-off = unlock
+rmc-id-lock-color-unauthorized = 红色
+rmc-id-lock-color-authorized = 黄绿色
+rmc-id-lock-toggle-on = 锁定
+rmc-id-lock-toggle-off = 解锁
 
-rmc-iff-toggle = You {$action} the IFF on the {$gun}.
-rmc-iff-toggle-off = disable
-rmc-iff-toggle-on = enable
+rmc-iff-toggle = 你{$action}了{$gun}的敌我识别。
+rmc-iff-toggle-off = 禁用
+rmc-iff-toggle-on = 启用
 
-rmc-revolver-spin = You spin the cylinder.
+rmc-revolver-spin = 你转动了转轮。
 
-rmc-examine-text-weapon-accuracy = The current accuracy multiplier is [color={$colour}]{TOSTRING($accuracy, "F2")}[/color].
+rmc-examine-text-weapon-accuracy = 当前精度倍率为[color={$colour}]{TOSTRING($accuracy, "F2")}[/color]。
 
-rmc-examine-text-scatter-max = Current maximum scatter is [color={$colour}]{TOSTRING($scatter, "F1")}[/color] degrees.
-rmc-examine-text-scatter-min = Current minimum scatter is [color={$colour}]{TOSTRING($scatter, "F1")}[/color] degrees.
-rmc-examine-text-shots-to-max-scatter = It takes [color={$colour}]{$shots}[/color] shots to reach maximum scatter.
-rmc-examine-text-iff = [color=cyan]This gun will ignore and shoot past friendlies![/color]
-rmc-examine-text-iff-prevent-friendly-fire = [color=cyan]This gun will not fire if friendlies are in the line of fire.[/color]
-rmc-iff-friendly-in-line = IFF lockout: friendly in line of fire.
-rmc-examine-text-id-lock-no-user = [color=chartreuse]It's unregistered. Pick it up to register yourself as its owner.[/color]
-rmc-examine-text-id-lock = [color=chartreuse]It is registered to [/color][color={$color}]{$name}[/color][color=chartreuse].[/color]
-rmc-examine-text-id-lock-unlocked = [color=chartreuse]It is registered to [/color][color={$color}]{$name}[/color][color=chartreuse], but has its fire restrictions unlocked.[/color]
-rmc-examine-text-execute = [color=red]This gun can be used to execute people with the right skill![/color]
+rmc-examine-text-scatter-max = 当前最大散布为[color={$colour}]{TOSTRING($scatter, "F1")}[/color]度。
+rmc-examine-text-scatter-min = 当前最小散布为[color={$colour}]{TOSTRING($scatter, "F1")}[/color]度。
+rmc-examine-text-shots-to-max-scatter = 需要射击[color={$colour}]{$shots}[/color]发才能达到最大散布。
+rmc-examine-text-iff = [color=cyan]这把枪会无视并穿过友军射击！[/color]
+rmc-examine-text-iff-prevent-friendly-fire = [color=cyan]如果射击线路上有友军，这把枪不会开火。[/color]
+rmc-iff-friendly-in-line = 敌我识别锁定：射击线路上有友军。
+rmc-examine-text-id-lock-no-user = [color=chartreuse]它尚未注册。拿起它即可将自己注册为其所有者。[/color]
+rmc-examine-text-id-lock = [color=chartreuse]它注册于 [/color][color={$color}]{$name}[/color][color=chartreuse]。[/color]
+rmc-examine-text-id-lock-unlocked = [color=chartreuse]它注册于 [/color][color={$color}]{$name}[/color][color=chartreuse]，但其开火限制已解锁。[/color]
+rmc-examine-text-execute = [color=red]在具备相应技能时，这把枪可用于处决他人！[/color]
 
-rmc-gun-rack-examine = [bold]Press your [color=cyan]unique action[/color] keybind (Spacebar by default) to rack before shooting.[/bold]
-rmc-gun-rack-first-with = You need to rack the gun with {$key} first!
-rmc-gun-rack-first = You need to rack the gun first!
+rmc-gun-rack-examine = [bold]开枪前先按你的[color=cyan]特殊动作[/color]键位（默认为空格键）拉动枪机。[/bold]
+rmc-gun-rack-first-with = 你需要先用{$key}拉动枪机！
+rmc-gun-rack-first = 你需要先拉动枪机！
 
-rmc-assisted-reload-fail-angle = You must be standing behind {$target} in order to reload {POSS-ADJ($target)} weapon!
-rmc-assisted-reload-fail-full = {CAPITALIZE(POSS-ADJ($target))} {$weapon} is already loaded.
-rmc-assisted-reload-fail-mismatch = The {$ammo} can't be loaded into a {$weapon}!
-rmc-assisted-reload-start-user = You begin reloading {$target}'s {$weapon}! Hold still...
-rmc-assisted-reload-start-target = {$reloader} begins reloading your {$weapon} with the {$ammo}! Hold still...
+rmc-assisted-reload-fail-angle = 你必须站在{$target}身后才能为{POSS-ADJ($target)}武器装弹！
+rmc-assisted-reload-fail-full = {CAPITALIZE(POSS-ADJ($target))}{$weapon}已经装满了。
+rmc-assisted-reload-fail-mismatch = {$ammo}装不进{$weapon}！
+rmc-assisted-reload-start-user = 你开始为{$target}的{$weapon}装弹！别动……
+rmc-assisted-reload-start-target = {$reloader}开始为你的{$weapon}装上{$ammo}！别动……
 
-rmc-gun-stacks-hit-single = Bullseye!
-rmc-gun-stacks-hit-multiple = Bullseye! {$hits} hits in a row!
-rmc-gun-stacks-reset = The {$weapon} beeps as it loses its targeting data, and returns to normal firing procedures.
+rmc-gun-stacks-hit-single = 正中靶心！
+rmc-gun-stacks-hit-multiple = 正中靶心！连续命中{$hits}次！
+rmc-gun-stacks-reset = {$weapon}发出哔声，失去了瞄准数据，并恢复正常射击程序。
 
-rmc-gun-shoot-air-self = YOU FIRE YOUR { CAPITALIZE($weapon) } INTO THE AIR!
-rmc-gun-shoot-air-other = { CAPITALIZE(THE($user)) } FIRES { CAPITALIZE(THE($weapon)) } INTO THE AIR!
-rmc-gun-shoot-air-blocked = The roof above you is too dense.
-rmc-gun-shoot-air-examine = [bold]Press your [color=cyan]unique action[/color] keybind (Spacebar by default){$harm ->
+rmc-gun-shoot-air-self = 你把你的{ CAPITALIZE($weapon) }朝天开火！
+rmc-gun-shoot-air-other = { CAPITALIZE(THE($user)) }把{ CAPITALIZE(THE($weapon)) }朝天开火！
+rmc-gun-shoot-air-blocked = 你头顶的天花板太厚实了。
+rmc-gun-shoot-air-examine = [bold]按你的[color=cyan]特殊动作[/color]键位（默认为空格键）{$harm ->
     [true] {" while in harm mode"}
     *[false] {""}
-    } to fire into the air.[/bold]
+    } 来朝天开火。[/bold]
 
-rmc-flare-gun-examine = The last signal flare fired has the designation: [color=#ad3b98][bold]{$id}[/bold][/color]
+rmc-flare-gun-examine = 最后发射的信号弹编号为：[color=#ad3b98][bold]{$id}[/bold][/color]
 
-expendable-light-starshell-ash-empty-name = extinguished star shell ash
-expendable-light-starshell-ash-empty-desc = Burnt out remains of a star shell
+expendable-light-starshell-ash-empty-name = 熄灭的照明弹灰烬
+expendable-light-starshell-ash-empty-desc = 照明弹烧尽后的残余物

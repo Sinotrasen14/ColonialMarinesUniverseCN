@@ -1,1 +1,1 @@
-﻿rmc-low-power = low power
+rmc-low-power = 电量低

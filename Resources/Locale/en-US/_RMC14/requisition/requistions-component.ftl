@@ -1,11 +1,11 @@
 # Requisition Computer
-requisition-paperwork-receiver-name = Logistics Branch
-requisition-paperwork-reward-message = Confirmation Received! transferred ${$amount} from budget surplus
+requisition-paperwork-receiver-name = 后勤处
+requisition-paperwork-reward-message = 已收到确认！从预算盈余中转移了${$amount}
 
 # Requisition Invoice
-rmc-requisition-invoice-attach = Attach Invoice
-rmc-requisition-invoice-remove = Remove Invoice
-requisition-paper-print-name = {$name} invoice
+rmc-requisition-invoice-attach = 附上发票
+rmc-requisition-invoice-remove = 移除发票
+requisition-paper-print-name = {$name}发票
 requisition-paper-print-manifest = [head=2]
     {$containerName}[/head][bold]{$content}[/bold][head=2]
     WT. {$weight} LBS
@@ -14,16 +14,16 @@ requisition-paper-print-manifest = [head=2]
 requisition-paper-print-content = - {$count} {$item}
 
 # Supply Drop Console
-ui-supply-drop-consle-name = Supply Drop Console
-ui-supply-drop-console-name-bolded = [bold]SUPPLY DROP[/bold] 
-ui-supply-drop-console-longitude = Longitude:
-ui-supply-drop-console-latitude = Latitude:
-ui-supply-drop-pad-status = [bold]Supply Pad Status[/bold]
-ui-supply-drop-console-update = Update
-ui-supply-drop-console-ready = Ready to fire!
-ui-supply-drop-console-launch = LAUNCH SUPPLY DROP
-ui-supply-drop-console-launch-confirmation = Confirm Supply Drop?
-ui-supply-drop-console-cooldown = {$time} seconds until next launch
+ui-supply-drop-consle-name = 补给空投控制台
+ui-supply-drop-console-name-bolded = [bold]补给空投[/bold] 
+ui-supply-drop-console-longitude = 经度：
+ui-supply-drop-console-latitude = 纬度：
+ui-supply-drop-pad-status = [bold]空投平台状态[/bold]
+ui-supply-drop-console-update = 更新
+ui-supply-drop-console-ready = 准备发射！
+ui-supply-drop-console-launch = 发射补给空投
+ui-supply-drop-console-launch-confirmation = 确认补给空投？
+ui-supply-drop-console-cooldown = {$time}秒后可再次发射
 ui-supply-drop-crate-status =
     { $hasCrate ->
         [true] Supply Pad Status: crate loaded.

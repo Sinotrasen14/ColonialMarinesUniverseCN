@@ -1,2 +1,2 @@
-﻿rmc-helmetgarbs-off = Pull up headgear
-rmc-helmetgarbs-on = Pull down headgear
+rmc-helmetgarbs-off = 拉起头具
+rmc-helmetgarbs-on = 拉下头具

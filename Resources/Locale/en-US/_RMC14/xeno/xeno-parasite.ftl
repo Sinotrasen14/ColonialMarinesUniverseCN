@@ -1,30 +1,30 @@
-rmc-xeno-failed-cant-infect = We can't infect {THE($target)}!
-rmc-xeno-failed-cant-reach = We can't reach {$target}, they need to be lying down!
-rmc-xeno-failed-target-dead = We can't infect the dead!
-rmc-xeno-infect-success = The tiny xenonid smashes against {$target}'s {$clothing} and rips it off!
-rmc-xeno-infect-fail = The tiny xenonid smashes against {$target}'s {$clothing}!
-rmc-xeno-failed-parasite-dead = We can't infect with a dead child!
-rmc-xeno-cant-throw = We can't throw {THE($target)}!
+rmc-xeno-failed-cant-infect = 我们无法感染{THE($target)}！
+rmc-xeno-failed-cant-reach = 我们够不到{$target}，他们需要躺下！
+rmc-xeno-failed-target-dead = 我们无法感染死者！
+rmc-xeno-infect-success = 这只小异形撞碎了{$target}的{$clothing}并把它扯了下来！
+rmc-xeno-infect-fail = 这只小异形撞在了{$target}的{$clothing}上！
+rmc-xeno-failed-parasite-dead = 我们无法用死去的后代感染！
+rmc-xeno-cant-throw = 我们无法扔出{THE($target)}！
 
-rmc-xeno-parasite-dead = {CAPITALIZE(SUBJECT($parasite))} {CONJUGATE-BE($parasite)} not moving.
-rmc-xeno-parasite-announce-infect = We sense that a {$xeno} has infected a host at {$location}!
+rmc-xeno-parasite-dead = {CAPITALIZE(SUBJECT($parasite))} {CONJUGATE-BE($parasite)} 一动不动。
+rmc-xeno-parasite-announce-infect = 我们感知到一个{$xeno}在{$location}感染了一名宿主！
 
-rmc-xeno-parasite-player-pickup = {CAPITALIZE($parasite)} can handle {REFLEXIVE($parasite)}!
-rmc-xeno-parasite-nonplayer-pull = Pulling the {$parasite} might hurt {OBJECT($parasite)}!
+rmc-xeno-parasite-player-pickup = {CAPITALIZE($parasite)}能拿起{REFLEXIVE($parasite)}！
+rmc-xeno-parasite-nonplayer-pull = 拖动{$parasite}可能会伤到{OBJECT($parasite)}！
 
-rmc-xeno-parasite-ai-active = {CAPITALIZE(SUBJECT($parasite))} seems to be active.
-rmc-xeno-parasite-ai-idle = {CAPITALIZE(SUBJECT($parasite))} {CONJUGATE-BE($parasite)} resting.
-rmc-xeno-parasite-ai-dying = [color=red]{CAPITALIZE(SUBJECT($parasite))} needs to return to safety![/color]
+rmc-xeno-parasite-ai-active = {CAPITALIZE(SUBJECT($parasite))}似乎处于活动状态。
+rmc-xeno-parasite-ai-idle = {CAPITALIZE(SUBJECT($parasite))} {CONJUGATE-BE($parasite)} 正在休息。
+rmc-xeno-parasite-ai-dying = [color=red]{CAPITALIZE(SUBJECT($parasite))}需要回到安全地带！[/color]
 
-rmc-xeno-parasite-ai-eaten = The {CAPITALIZE($parasite)} is furiously cannibalized by the other nearby children!
+rmc-xeno-parasite-ai-eaten = 附近其他后代狂暴地同类相食，把{CAPITALIZE($parasite)}吃掉了！
 
-rmc-xeno-parasite-ghost-carrier-none = {THE($xeno)} has no sheltered children!
-rmc-xeno-parasite-ghost-carrier-reserved = {THE($xeno)} has reserved the remaining children for {REFLEXIVE($xeno)}.
-rmc-xeno-parasite-ghost-carrier-dead = {THE($xeno)} is dead and all {POSS-ADJ($xeno)} children died with {OBJECT($xeno)}.
+rmc-xeno-parasite-ghost-carrier-none = {THE($xeno)}没有庇护任何后代！
+rmc-xeno-parasite-ghost-carrier-reserved = {THE($xeno)}把剩余的后代留给了{REFLEXIVE($xeno)}。
+rmc-xeno-parasite-ghost-carrier-dead = {THE($xeno)}已死亡，{POSS-ADJ($xeno)}所有后代都随{OBJECT($xeno)}一同死去。
 
-rmc-xeno-parasite-carrier-death = The chittering mass of tiny aliens try to escape {THE($xeno)}!
+rmc-xeno-parasite-carrier-death = 那一大群唧唧喳喳的小异形试图从{THE($xeno)}体内逃出！
 
-rmc-xeno-parasite-larva-claim-title = Become the larva?
-rmc-xeno-parasite-larva-claim-message = Do you want to become the larva if this host spawns one?
-rmc-xeno-parasite-larva-claim-yes = Yes
-rmc-xeno-parasite-larva-claim-no = No
+rmc-xeno-parasite-larva-claim-title = 成为幼虫？
+rmc-xeno-parasite-larva-claim-message = 如果这名宿主产出一只幼虫，你想成为它吗？
+rmc-xeno-parasite-larva-claim-yes = 是
+rmc-xeno-parasite-larva-claim-no = 否

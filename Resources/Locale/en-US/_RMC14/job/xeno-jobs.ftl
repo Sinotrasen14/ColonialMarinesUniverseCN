@@ -1,83 +1,83 @@
-﻿cm-job-name-xeno-boiler = Boiler
-CMJobXenoBoiler = Boiler
+cm-job-name-xeno-boiler = 沸腾者
+CMJobXenoBoiler = 沸腾者
 
-cm-job-name-xeno-burrower = Burrower
-CMJobXenoBurrower = Burrower
+cm-job-name-xeno-burrower = 掘地者
+CMJobXenoBurrower = 掘地者
 
-cm-job-name-xeno-carrier = Carrier
-CMJobXenoCarrier = Carrier
+cm-job-name-xeno-carrier = 搬运者
+CMJobXenoCarrier = 搬运者
 
-cm-job-name-xeno-crusher = Crusher
-CMJobXenoCrusher = Crusher
+cm-job-name-xeno-crusher = 碾压者
+CMJobXenoCrusher = 碾压者
 
-cm-job-name-xeno-defender = Defender
-CMJobXenoDefender = Defender
+cm-job-name-xeno-defender = 防御者
+CMJobXenoDefender = 防御者
 
-cm-job-name-xeno-drone = Drone
-CMJobXenoDrone = Drone
+cm-job-name-xeno-drone = 雄蜂
+CMJobXenoDrone = 雄蜂
 
-cm-job-name-xeno-hivelord = Hivelord
-CMJobXenoHivelord = Hivelord
+cm-job-name-xeno-hivelord = 巢主
+CMJobXenoHivelord = 巢主
 
-cm-job-name-xeno-parasite = Parasite
-cm-job-name-xeno-parasite-xeno = Child
-CMJobXenoParasite = Parasite
+cm-job-name-xeno-parasite = 寄生体
+cm-job-name-xeno-parasite-xeno = 后代
+CMJobXenoParasite = 寄生体
 
-cm-job-name-xeno-larva = Larva
-CMJobXenoLarva = Larva
+cm-job-name-xeno-larva = 幼虫
+CMJobXenoLarva = 幼虫
 
-cm-job-name-xeno-lesser-drone = Lesser Drone
-CMJobXenoLesserDrone = Lesser Drone
+cm-job-name-xeno-lesser-drone = 次级雄蜂
+CMJobXenoLesserDrone = 次级雄蜂
 
-cm-job-name-xeno-lurker = Lurker
-CMJobXenoLurker = Lurker
+cm-job-name-xeno-lurker = 潜伏者
+CMJobXenoLurker = 潜伏者
 
-cm-job-name-xeno-praetorian = Praetorian
-CMJobXenoPraetorian = Praetorian
+cm-job-name-xeno-praetorian = 禁卫
+CMJobXenoPraetorian = 禁卫
 
-cm-job-name-xeno-queen = Queen
-CMJobXenoQueen = Queen
+cm-job-name-xeno-queen = 女王
+CMJobXenoQueen = 女王
 
-cm-job-name-xeno-ravager = Ravager
-CMJobXenoRavager = Ravager
+cm-job-name-xeno-ravager = 蹂躏者
+CMJobXenoRavager = 蹂躏者
 
-cm-job-name-xeno-runner = Runner
-CMJobXenoRunner = Runner
+cm-job-name-xeno-runner = 奔跑者
+CMJobXenoRunner = 奔跑者
 
-cm-job-name-xeno-sentinel = Sentinel
-CMJobXenoSentinel = Sentinel
+cm-job-name-xeno-sentinel = 哨卫
+CMJobXenoSentinel = 哨卫
 
-cm-job-name-xeno-spitter = Spitter
-CMJobXenoSpitter = Spitter
+cm-job-name-xeno-spitter = 喷吐者
+CMJobXenoSpitter = 喷吐者
 
-cm-job-name-xeno-warrior = Warrior
-CMJobXenoWarrior = Warrior
+cm-job-name-xeno-warrior = 战士
+CMJobXenoWarrior = 战士
 
-rmc-job-name-xeno-king = King
-RMCJobXenoKing = King
+rmc-job-name-xeno-king = 国王
+RMCJobXenoKing = 国王
 
 # TODO RMC14
-department-CMXeno = Xenomorph
+department-CMXeno = 异形
 cm-department-Xeno-description = ""
 
-cm-job-name-selectable-xenonid = Xenomorph
-CMXenoSelectableXeno = Xenomorph
+cm-job-name-selectable-xenonid = 异形
+CMXenoSelectableXeno = 异形
 
-cm-job-supervisors-queen = the Queen
+cm-job-supervisors-queen = 女王
 
-role-timer-xeno-roles = Xenomorph
-role-timer-xeno-drones = drone and drone evolutions
-role-timer-xeno-tier-three = tier three castes
-
-
-
-au-job-name-threat-leader = Threat Leader
-au-job-name-threat-member = Threat Member
-au-job-description-threat-leader = Generic leader slot for the selected round threat. Depending on the threat, this can spawn as a xeno queen, wendigo, ape, tribal leader, cultist queen, or biomorph mimic.
-au-job-description-threat-member = Generic member slot for the selected round threat. Only threats with grunt/member spawns use this; examples include larva, cultists, tribal warriors, and biomorphs.
+role-timer-xeno-roles = 异形
+role-timer-xeno-drones = 雄蜂及雄蜂进化体
+role-timer-xeno-tier-three = 三阶阶层
 
 
-au-job-name-third-party-leader = Third Party Leader
-au-job-name-third-party-member = Third Party Member
-au-job-description-third-party-leader = Generic leader slot for the selected third party. The actual faction and role depend on the third party that spawns.
-au-job-description-third-party-member = Generic member slot for the selected third party. The actual faction and role depend on the third party that spawns.
+
+au-job-name-threat-leader = 威胁首领
+au-job-name-threat-member = 威胁成员
+au-job-description-threat-leader = 所选回合威胁的通用首领名额。视威胁而定，这可能生成异形女王、温迪戈、猿猴、部落首领、邪教女王或生物拟态体。
+au-job-description-threat-member = 所选回合威胁的通用成员名额。只有带小兵/成员生成的威胁才使用它；例如幼虫、邪教徒、部落战士和生物拟态体。
+
+
+au-job-name-third-party-leader = 第三方首领
+au-job-name-third-party-member = 第三方成员
+au-job-description-third-party-leader = 所选第三方的通用首领名额。实际阵营和角色取决于生成的第三方。
+au-job-description-third-party-member = 所选第三方的通用成员名额。实际阵营和角色取决于生成的第三方。

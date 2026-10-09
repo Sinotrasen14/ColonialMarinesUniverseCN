@@ -1,2 +1,2 @@
 command-description-visualize =
-    Takes the input list of entities and puts them into a UI window for easy browsing.
+    将输入的实体列表放入一个界面窗口中，便于浏览。

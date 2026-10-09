@@ -1,11 +1,11 @@
 ## RoundEndSystem
 
-round-end-system-shuttle-called-announcement = An emergency shuttle has been sent. ETA: {$time} {$units}.
-round-end-system-shuttle-already-called-announcement = An emergency shuttle has already been sent.
-round-end-system-shuttle-auto-called-announcement = An automatic crew shift change shuttle has been sent. ETA: {$time} {$units}. Recall the shuttle to extend the shift.
-round-end-system-shuttle-recalled-announcement = The emergency shuttle has been recalled.
-round-end-system-shuttle-sender-announcement = Station
-round-end-system-round-restart-eta-announcement = Restarting the round in {$time} {$units}...
+round-end-system-shuttle-called-announcement = 已派出紧急穿梭机。预计到达：{$time} {$units}。
+round-end-system-shuttle-already-called-announcement = 紧急穿梭机已经派出。
+round-end-system-shuttle-auto-called-announcement = 已自动派出船员换班穿梭机。预计到达：{$time} {$units}。召回穿梭机可延长值班。
+round-end-system-shuttle-recalled-announcement = 紧急穿梭机已被召回。
+round-end-system-shuttle-sender-announcement = 空间站
+round-end-system-round-restart-eta-announcement = {$time} {$units}后重启回合……
 
 eta-units-minutes = {$amount ->
     [one] minute

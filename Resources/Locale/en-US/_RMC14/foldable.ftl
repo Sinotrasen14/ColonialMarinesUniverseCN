@@ -1,38 +1,38 @@
-﻿# Foldable
+# Foldable
 
-rmc-dogtag-verb-hide = Hide dogtags
-rmc-dogtag-verb-show = Show dogtags
+rmc-dogtag-verb-hide = 收起身份牌
+rmc-dogtag-verb-show = 展示身份牌
 
-rmc-jacket-verb-fold = Take off jacket
-rmc-jacket-verb-unfold = Put on jacket
+rmc-jacket-verb-fold = 脱下夹克
+rmc-jacket-verb-unfold = 穿上夹克
 
-rmc-sleeves-verb-fold = Roll up sleeves
-rmc-sleeves-verb-unfold = Roll down sleeves
+rmc-sleeves-verb-fold = 卷起袖子
+rmc-sleeves-verb-unfold = 放下袖子
 
-rmc-pants-verb-fold = Roll up pants
-rmc-pants-verb-unfold = Roll down pants
+rmc-pants-verb-fold = 卷起裤腿
+rmc-pants-verb-unfold = 放下裤腿
 
-rmc-buttons-verb-fold = Toggle buttons
+rmc-buttons-verb-fold = 切换纽扣
 
-rmc-jacket-verb = Toggle Jacket
-rmc-sleeves-verb = Toggle Sleeves
+rmc-jacket-verb = 切换夹克
+rmc-sleeves-verb = 切换袖子
 
-rmc-sleeves-cannot = You can't roll down the sleeves! Try putting on your jacket.
+rmc-sleeves-cannot = 你无法放下袖子！试着穿上你的夹克。
 
 # Weapons
-rmc-gun-foldable-launcher-unfold-self = You begin to unfold and expand the {$weapon}
-rmc-gun-foldable-launcher-unfold-others = {$user} begins to unfold the {$weapon}.
+rmc-gun-foldable-launcher-unfold-self = 你开始展开并撑开{$weapon}
+rmc-gun-foldable-launcher-unfold-others = {$user}开始展开{$weapon}。
 
-rmc-gun-foldable-launcher-fold-self = You begin to fold the {$weapon}
-rmc-gun-foldable-launcher-fold-others = {$user} begins to unfold the {$weapon}.
+rmc-gun-foldable-launcher-fold-self = 你开始折叠{$weapon}
+rmc-gun-foldable-launcher-fold-others = {$user}开始展开{$weapon}。
 
-rmc-gun-foldable-launcher-fold-finish-self = You finish folding the {$weapon}.
-rmc-gun-foldable-launcher-fold-finish-others = {$user} finishes folding the {$weapon}.
+rmc-gun-foldable-launcher-fold-finish-self = 你完成了{$weapon}的折叠。
+rmc-gun-foldable-launcher-fold-finish-others = {$user}完成了{$weapon}的折叠。
 
-rmc-gun-foldable-launcher-unfold-finish-self = You finish unfolding the {$weapon}.
-rmc-gun-foldable-launcher-unfold-finish-others = {$user} finishes unfolding the {$weapon}.
+rmc-gun-foldable-launcher-unfold-finish-self = 你完成了{$weapon}的展开。
+rmc-gun-foldable-launcher-unfold-finish-others = {$user}完成了{$weapon}的展开。
 
-rmc-gun-foldable-launcher-examine = [bold]Press your [color=cyan]unique action[/color] keybind (Spacebar by default) to fold the weapon.[/bold]
-rmc-gun-foldable-launcher-examine-unfold = [bold]Press your [color=cyan]in-hand activation[/color] keybind (Z by default) to unfold the weapon.[/bold]
+rmc-gun-foldable-launcher-examine = [bold]按下你的[color=cyan]独特动作[/color]快捷键（默认为空格键）来折叠此武器。[/bold]
+rmc-gun-foldable-launcher-examine-unfold = [bold]按下你的[color=cyan]手持激活[/color]快捷键（默认为Z）来展开此武器。[/bold]
 
-rmc-gun-foldable-launcher-fold-already-fired-attempt = The {$weapon} has already been fired - you can't fold it back up again!
+rmc-gun-foldable-launcher-fold-already-fired-attempt = {$weapon}已经开过火了——你无法再把它折回去了！

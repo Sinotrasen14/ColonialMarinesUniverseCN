@@ -1,2 +1,2 @@
-trigger-on-verb-default = Trigger
-trigger-on-verb-detonation = Start detonation
+trigger-on-verb-default = 触发
+trigger-on-verb-detonation = 开始引爆

@@ -1,31 +1,31 @@
-rmc-announcement-author = Command
-rmc-announcement-author-shipside = Command Ship
-rmc-announcement-author-highcommand = High Command
-rmc-announcement-author-queen-mother = The Queen Mother
-rmc-announcement-message = [font size=16][bold][color=#CECECE]{$author} Priority Announcement[/color][/bold][/font][font size=16][color=red]
+rmc-announcement-author = 指挥层
+rmc-announcement-author-shipside = 指挥舰
+rmc-announcement-author-highcommand = 最高指挥部
+rmc-announcement-author-queen-mother = 母后
+rmc-announcement-message = [font size=16][bold][color=#CECECE]{$author} 优先公告[/color][/bold][/font][font size=16][color=red]
 
     {$message}
 
-rmc-announcement-message-signed = [font size=16][bold][color=#CECECE]{$author} Priority Announcement[/color][/bold][/font][font size=16][color=red]
+rmc-announcement-message-signed = [font size=16][bold][color=#CECECE]{$author} 优先公告[/color][/bold][/font][font size=16][color=red]
 
     {$message}[italic]
 
-    Signed by,
+    签署人：
     {$name}[/italic][/color][/font]
 
 rmc-announcement-message-raw = [font size=16][bold][color=#CECECE]{$author}[/color][/bold][/font][font size=16][color=red]
 
     {$message}
 
-rmc-announcement-ares-message = [color=#CECECE][font size=16][bold]APOLLO MK.II - Priority Operational Broadcast[/bold][/font][/color][color=red][font size=16][bold]
+rmc-announcement-ares-message = [color=#CECECE][font size=16][bold]APOLLO MK.II - 优先作战广播[/bold][/font][/color][color=red][font size=16][bold]
 
     {$message}[/bold][/font][/color]
 
-rmc-announcement-ares-lz-designated = Command Order Issued:
+rmc-announcement-ares-lz-designated = 已下达指挥令：
 
-    {$name} has been designated as the primary landing zone.
+    {$name}已被指定为主着陆区。
 
-rmc-announcement-ares-online = [color=#CECECE][font size=16][bold]APOLLO Central A.I. - System Online[/bold][/font][/color][color=red][font size=16][bold]
+rmc-announcement-ares-online = [color=#CECECE][font size=16][bold]APOLLO中央人工智能 - 系统上线[/bold][/font][/color][color=red][font size=16][bold]
 
     {$message}[/bold][/font][/color]
 
@@ -33,35 +33,35 @@ rmc-announcement-ares-map = [color=#CECECE][font size=16][bold]{$ship}[/bold][/f
 
     {$message}[/bold][/font][/color]
 
-rmc-announcement-cooldown = Please allow at least {$seconds} seconds to pass between announcements
+rmc-announcement-cooldown = 两次公告之间请至少间隔{$seconds}秒
 
-rmc-announcement-dropship-message = [color=#CECECE][font size=16][bold]Dropship Alert[/bold][/font][/color][color=red][font size=16][bold]
+rmc-announcement-dropship-message = [color=#CECECE][font size=16][bold]运输机警报[/bold][/font][/color][color=red][font size=16][bold]
 
     {$message}[/bold][/font][/color]
 
-rmc-announcement-emergency-dropship-crash = [font size=14][bold][color=#CECECE]EMERGENCY[/color][/bold][/font][font size=16][color=red]
-  DROPSHIP ON COLLISION COURSE. CRASH IMMINENT.[/color][/font]
+rmc-announcement-emergency-dropship-crash = [font size=14][bold][color=#CECECE]紧急情况[/color][/bold][/font][font size=16][color=red]
+  运输机正在相撞航线上。即将坠毁。[/color][/font]
 
-rmc-announcement-delta = [color=#CECECE][font size=16][bold]SELF-DESTRUCT SYSTEMS ACTIVE[/bold][/font][/color]\n[color=red][font size=16][bold]DANGER, THE EMERGENCY DESTRUCT SYSTEM IS NOW ACTIVATED.[/bold][/font][/color]\n[color=red][font size=16][bold]PROCEED TO THE SELF-DESTRUCT CHAMBER FOR CONTROL ROD INSERTION.[/bold][/font][/color]
+rmc-announcement-delta = [color=#CECECE][font size=16][bold]自毁系统已激活[/bold][/font][/color]\n[color=red][font size=16][bold]危险，紧急自毁系统现已启动。[/bold][/font][/color]\n[color=red][font size=16][bold]请前往自毁舱插入控制棒。[/bold][/font][/color]
 
-rmc-announcement-general-quarters = ATTENTION! GENERAL QUARTERS. ALL HANDS, MAN YOUR BATTLESTATIONS.
+rmc-announcement-general-quarters = 注意！全体战斗准备。所有人员，各就各位。
 
-rmc-announcement-dropship-hijack = Unscheduled dropship departure detected from operational area. Hijack likely. Shutting down autopilot.
+rmc-announcement-dropship-hijack = 侦测到有运输机未经许可离开作战区域。很可能遭遇劫持。正在关闭自动驾驶。
 # CMU14: human hijack announcement.
-rmc-announcement-dropship-hijack-human = Hostile personnel have hijacked a dropship. All personnel, prepare to repel boarders.
+rmc-announcement-dropship-hijack-human = 敌对人员劫持了一架运输机。全体人员，准备击退登舰之敌。
 
-rmc-announcement-dropship-hijack-hive = The Queen has commanded the metal bird to depart for the metal hive in the sky! Rejoice!
+rmc-announcement-dropship-hijack-hive = 女王已命令铁鸟飞向天空中的铁巢！欢呼吧！
 
 rmc-announcement-ares-command = [color=#CECECE][font size=16][bold]APOLLO MK.II[/bold][/font][/color][color=red][font size=16]
 
     {$message}[/font][/color]
 
-rmc-announcement-unidentified-lifesigns = [color=#CECECE][font size=16][bold]Unidentifled lifesigns[/bold][/font][/color][color=red][font size=16][bold]
+rmc-announcement-unidentified-lifesigns = [color=#CECECE][font size=16][bold]不明生命体征[/bold][/font][/color][color=red][font size=16][bold]
 
-    Unidentified lifesigns ({$count}) detected onboard the dropship {$name}. Recommendation: lockdown of exterior access ports, including ducting and ventilation.[/bold][/font][/color]
+    侦测到不明生命体征（{$count}），出现于运输机{$name}上。建议：封锁外部通道口，包括管道和通风系统。[/bold][/font][/color]
 
-rmc-announcement-shipside-header = Please write a message to announce to the crew
+rmc-announcement-shipside-header = 请写一条要向全体船员公告的消息
 
-cmu-announcement-queen-mother = [font size=16][bold][color=#7575F3]Queen Mother Psychic Directive[/color][/bold][/font][font size=16][color=red]
+cmu-announcement-queen-mother = [font size=16][bold][color=#7575F3]母后心灵指令[/color][/bold][/font][font size=16][color=red]
 
     {$message}[/font][/color]

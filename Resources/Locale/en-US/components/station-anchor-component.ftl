@@ -1,2 +1,2 @@
-﻿station-anchor-unanchoring-failed = Can't unanchor an active station anchor.
-station-anchor-window-title = Station Anchor
+station-anchor-unanchoring-failed = 无法解除正在运行的空间站锚定器的固定。
+station-anchor-window-title = 空间站锚定器

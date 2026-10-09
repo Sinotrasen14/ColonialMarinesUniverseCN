@@ -1,5 +1,5 @@
-advertisement-atmosdrobe-1 = Get your inflammable clothing right here!!!
-advertisement-atmosdrobe-2 = Protects you against plasma fires!
-advertisement-atmosdrobe-3 = Enjoy your off-brand engineering clothing!
-advertisement-atmosdrobe-4 = Always under control of your atmosphere!
-advertisement-atmosdrobe-5 = Providing comfort in every breath!
+advertisement-atmosdrobe-1 = 就在这里领取你的易燃服装！！！
+advertisement-atmosdrobe-2 = 保护你免受等离子火灾！
+advertisement-atmosdrobe-3 = 尽情享受你的杂牌工程服装！
+advertisement-atmosdrobe-4 = 始终掌控你周围的大气！
+advertisement-atmosdrobe-5 = 让每一次呼吸都舒适！

@@ -1,38 +1,38 @@
-reagent-name-carpetium = carpetium
-reagent-desc-carpetium = A mystical chemical, usually outsourced from the Clown Planet, that covers everything it touches in carpet. Somehow filters out carpotoxin from the blood stream.
+reagent-name-carpetium = 地毯素
+reagent-desc-carpetium = 一种神秘的化学物质，通常从小丑星球进口，会把它接触到的一切都覆盖上地毯。它还能以某种方式从血液中滤出鲤鱼毒素。
 
-reagent-name-fiber = fiber
-reagent-desc-fiber = A raw material, usually extracted from wool or other fabric products.
+reagent-name-fiber = 纤维
+reagent-desc-fiber = 一种原材料，通常从羊毛或其他织物制品中提取。
 
-reagent-name-buzzochloric-bees = buzzochloric bees
-reagent-desc-buzzochloric-bees = Liquid bees. Oh god it's LIQUID BEES NO-
+reagent-name-buzzochloric-bees = 嗡氯蜂
+reagent-desc-buzzochloric-bees = 液态蜜蜂。天哪，是液态蜜蜂，不——
 
-reagent-name-ground-bee = ground Bee
-reagent-desc-ground-bee = Bee grounds. Gross.
+reagent-name-ground-bee = 研磨蜜蜂
+reagent-desc-ground-bee = 蜂渣。恶心。
 
-reagent-name-brass = brass
-reagent-desc-brass = Smells like clockwork.
+reagent-name-brass = 黄铜
+reagent-desc-brass = 闻起来像发条。
 
-reagent-name-licoxide = licoxide
-reagent-desc-licoxide = A synthetic battery acid. It looks... electrifying.
+reagent-name-licoxide = 利可索
+reagent-desc-licoxide = 一种合成电池酸。它看起来……电能十足。
 
-reagent-name-razorium = razorium
-reagent-desc-razorium = A strange, non-newtonian chemical. It is produced when two conflicting brute medications are combined. When force is applied to it, it temporarily hardens creating millions of tiny, sharp edges. Very painful.
+reagent-name-razorium = 剃刀素
+reagent-desc-razorium = 一种奇怪的、非牛顿流体化学物质。它由两种相互冲突的钝击药物混合而成。当对其施加力量时，它会暂时硬化，形成数百万个微小的锋利边缘。非常痛苦。
 
-reagent-name-fresium = Fresium
-reagent-desc-fresium = A mysterious compound that slows the vibration of atoms and molecules... somehow. In layman's terms, it makes things cold... REALLY cold. Can cause long-lasting movement issues if ingested.
+reagent-name-fresium = 弗里西姆
+reagent-desc-fresium = 一种神秘的化合物，能以某种方式减缓原子和分子的振动……用外行的话说，它让东西变冷……*非常*冷。摄入后可能导致长期的行动障碍。
 
-reagent-name-laughter = laughter
-reagent-desc-laughter = Some say that this is the best medicine, but recent studies have proven that to be untrue.
+reagent-name-laughter = 笑声
+reagent-desc-laughter = 有人说这是最好的药，但最近的研究已证明并非如此。
 
-reagent-name-weh = juice that makes you Weh
-reagent-desc-weh = Pure essence of lizard plush. Makes you Weh!
+reagent-name-weh = 让你哇的果汁
+reagent-desc-weh = 蜥蜴玩偶的纯粹精华。让你哇！
 
-reagent-name-hew = juice that makes you Hew
-reagent-desc-hew = Pure essence of inversed lizard plush. Makes you Hew!
+reagent-name-hew = 让你嘿的果汁
+reagent-desc-hew = 逆反蜥蜴玩偶的纯粹精华。让你嘿！
 
-reagent-name-catessence = felinase
-reagent-desc-catessence = A type of carcinogenic enzyme known to break down proteins found within the vocal cords of most animals. Mixing is NOT recommended.
+reagent-name-catessence = 猫酶
+reagent-desc-catessence = 一种致癌酶，已知会分解大多数动物声带中的蛋白质。*不*建议混合。
 
-reagent-name-canidessence = caninase
-reagent-desc-canidessence = A type of carcinogenic enzyme known to break down proteins found within the vocal cords of most animals. Mixing is NOT recommended.
+reagent-name-canidessence = 犬酶
+reagent-desc-canidessence = 一种致癌酶，已知会分解大多数动物声带中的蛋白质。*不*建议混合。

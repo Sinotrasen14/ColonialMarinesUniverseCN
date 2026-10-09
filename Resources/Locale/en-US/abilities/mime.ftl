@@ -1,6 +1,6 @@
-mime-cant-speak = Your vow of silence prevents you from speaking.
-mime-invisible-wall-popup-self = You brush up against an invisible wall!
-mime-invisible-wall-popup-others = {CAPITALIZE(THE($mime))} brushes up against an invisible wall!
-mime-invisible-wall-failed = You can't create an invisible wall there.
-mime-not-ready-repent = You aren't ready to repent for your broken vow yet.
-mime-ready-to-repent = You feel ready to take your vows again.
+mime-cant-speak = 你的沉默誓言让你无法说话。
+mime-invisible-wall-popup-self = 你撞上了一堵隐形墙！
+mime-invisible-wall-popup-others = {CAPITALIZE(THE($mime))}撞上了一堵隐形墙！
+mime-invisible-wall-failed = 你无法在那里制造隐形墙。
+mime-not-ready-repent = 你还没准备好为违背誓言而忏悔。
+mime-ready-to-repent = 你觉得自己已经准备好再次立下誓言。

@@ -1,7 +1,7 @@
-fulton-folded = Beacon needs unfolding
-fulton-examine = {$time} seconds until extraction
-fulton-linked = Linked beacon
-fulton-not-found = No beacon found
-fulton-invalid = Can't fulton
-fulton-fultoned = Already fultoned
-fulton-remove = Remove fulton
+fulton-folded = 信标需要展开
+fulton-examine = {$time}秒后回收
+fulton-linked = 已连接信标
+fulton-not-found = 找不到信标
+fulton-invalid = 无法使用回收气球
+fulton-fultoned = 已使用回收气球
+fulton-remove = 移除回收气球

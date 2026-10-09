@@ -1,23 +1,23 @@
-rmc-xeno-despoiler-name = Despoiler
-rmc-xeno-despoiler-description = A massive, hunched xenomorph with hyper-pressurized acid sacs lining its spine. Steam hisses from cracks in its carapace.
+rmc-xeno-despoiler-name = 掠夺者
+rmc-xeno-despoiler-description = 一只巨大而佝偻的异形，脊背两侧排列着超加压的酸囊。蒸汽从甲壳的裂缝中嘶嘶冒出。
 
-rmc-job-name-xeno-despoiler = Despoiler
+rmc-job-name-xeno-despoiler = 掠夺者
 
-ent-RMCActionXenoDespoilerAcidBarrage = Acid Barrage
-    .desc = Activate to arm — the icon lights up green. Hold LMB to charge the volley: the longer you hold, the more projectiles. Release LMB to fire at the cursor.
+ent-RMCActionXenoDespoilerAcidBarrage = 酸液弹幕
+    .desc = 激活以布防——图标会亮起绿色。按住左键蓄力：按得越久，弹射物越多。松开左键朝光标开火。
 
-ent-RMCActionXenoDespoilerCausticEmbrace = Caustic Embrace
-    .desc = Leap toward the click with an acid splash. Empowered lets you strike a chosen target up to 5 tiles away and applies an acid DoT.
+ent-RMCActionXenoDespoilerCausticEmbrace = 腐蚀拥抱
+    .desc = 带酸液飞溅地朝点击处跃去。强化后可击中5格内选定目标，并施加酸液持续伤害。
 
-ent-RMCActionXenoDespoilerOozingWounds = Oozing Wounds
-    .desc = Creates a ring of acid spray around you. The radius grows as your HP drops. The empowered version stuns and applies acid. Lose stacks upon use.
+ent-RMCActionXenoDespoilerOozingWounds = 渗液伤口
+    .desc = 在你周围形成一环酸液喷洒。生命值越低半径越大。强化版会击晕并施加酸液。使用后失去层数。
 
-ent-RMCActionXenoDespoilerCatalyze = Catalyze
-    .desc = Spends 2 Hypertension stacks and empowers your next active ability.
+ent-RMCActionXenoDespoilerCatalyze = 催化
+    .desc = 消耗2层亢奋，并强化你的下一个主动能力。
 
-rmc-despoiler-no-hypertension = Not enough Hypertension stacks.
-rmc-despoiler-catalyze-active = The next ability is empowered!
-rmc-despoiler-barrage-armed = Barrage armed: hold LMB to charge, release to fire.
-rmc-despoiler-pounce-out-of-range = Too far away.
-rmc-despoiler-pounce-blocked = Something blocks the leap!
-rmc-despoiler-caustic-no-target = Need a target!
+rmc-despoiler-no-hypertension = 亢奋层数不足。
+rmc-despoiler-catalyze-active = 下一个能力已强化！
+rmc-despoiler-barrage-armed = 弹幕已布防：按住左键蓄力，松开开火。
+rmc-despoiler-pounce-out-of-range = 距离太远。
+rmc-despoiler-pounce-blocked = 有东西挡住了扑击！
+rmc-despoiler-caustic-no-target = 需要一个目标！

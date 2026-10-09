@@ -1,12 +1,12 @@
 # mop bucket
-mop-bucket-slot-component-slot-name-item = Item
-mop-bucket-slot-component-eject-verb = Take out
+mop-bucket-slot-component-slot-name-item = 物品
+mop-bucket-slot-component-eject-verb = 取出
 # janitorial trolley
-janitorial-trolley-slot-component-slot-name-plunger = Plunger
-janitorial-trolley-slot-component-slot-name-goldenplunger = Golden Plunger
-janitorial-trolley-slot-component-slot-name-sign = Sign
-janitorial-trolley-slot-component-slot-name-lightreplacer = Light Replacer
-janitorial-trolley-slot-component-slot-name-spray = Spray
-janitorial-trolley-slot-component-slot-name-bucket = Bucket
-janitorial-trolley-slot-component-slot-name-trashbag = Trash Bag
-janitorial-trolley-slot-component-slot-name-mop = Mop
+janitorial-trolley-slot-component-slot-name-plunger = 搋子
+janitorial-trolley-slot-component-slot-name-goldenplunger = 金色搋子
+janitorial-trolley-slot-component-slot-name-sign = 标识牌
+janitorial-trolley-slot-component-slot-name-lightreplacer = 灯泡更换器
+janitorial-trolley-slot-component-slot-name-spray = 喷雾
+janitorial-trolley-slot-component-slot-name-bucket = 水桶
+janitorial-trolley-slot-component-slot-name-trashbag = 垃圾袋
+janitorial-trolley-slot-component-slot-name-mop = 拖把

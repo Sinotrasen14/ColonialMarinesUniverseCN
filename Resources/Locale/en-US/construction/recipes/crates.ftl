@@ -1,5 +1,5 @@
-construction-recipe-crate-freezer = crate freezer
-construction-recipe-big-box = large cardboard box
-construction-recipe-box-cardboard = cardboard box
-construction-recipe-box-cardboard-small = small cardboard box
-construction-recipe-box-tote = circuit tote
+construction-recipe-crate-freezer = 板条箱冷藏柜
+construction-recipe-big-box = 大硬纸箱
+construction-recipe-box-cardboard = 硬纸箱
+construction-recipe-box-cardboard-small = 小硬纸箱
+construction-recipe-box-tote = 电路提箱

@@ -18,23 +18,23 @@ units-si-z = Z
 units-si-y = Y
 
 ### Long form
-units-si--y-long = yocto
-units-si--z-long = zepto
-units-si--a-long = atto
-units-si--f-long = femto
-units-si--p-long = pico
-units-si--n-long = nnano
-units-si--u-long = micro
-units-si--m-long = milli
+units-si--y-long = 幺
+units-si--z-long = 仄
+units-si--a-long = 阿
+units-si--f-long = 飞
+units-si--p-long = 皮
+units-si--n-long = 纳
+units-si--u-long = 微
+units-si--m-long = 毫
 units-si-long = {""}
-units-si-k-long = kilo
-units-si-m-long = mega
-units-si-g-long = giga
-units-si-t-long = tera
-units-si-p-long = peta
-units-si-e-long = exa
-units-si-z-long = zetta
-units-si-y-long = yotta
+units-si-k-long = 千
+units-si-m-long = 兆
+units-si-g-long = 吉
+units-si-t-long = 太
+units-si-p-long = 拍
+units-si-e-long = 艾
+units-si-z-long = 泽
+units-si-y-long = 尧
 
 ## Pascals (Pressure)
 units-u--pascal = µPa
@@ -44,12 +44,12 @@ units-k-pascal = kPa
 units-m-pascal = MPa
 units-g-pascal = GPa
 
-units-u--pascal-long = Micropascal
-units-m--pascal-long = Millipascal
-units-pascal-long = Pascal
-units-k-pascal-long = Kilopascal
-units-m-pascal-long = Megapascal
-units-g-pascal-long = Gigapascal
+units-u--pascal-long = 微帕斯卡
+units-m--pascal-long = 毫帕斯卡
+units-pascal-long = 帕斯卡
+units-k-pascal-long = 千帕斯卡
+units-m-pascal-long = 兆帕斯卡
+units-g-pascal-long = 吉帕斯卡
 
 ## Watts (Power)
 units-u--watt = µW
@@ -59,12 +59,12 @@ units-k-watt = kW
 units-m-watt = MW
 units-g-watt = GW
 
-units-u--watt-long = Microwatt
-units-m--watt-long = Milliwatt
-units-watt-long = Watt
-units-k-watt-long = Kilowatt
-units-m-watt-long = Megawatt
-units-g-watt-long = Gigawatt
+units-u--watt-long = 微瓦特
+units-m--watt-long = 毫瓦特
+units-watt-long = 瓦特
+units-k-watt-long = 千瓦特
+units-m-watt-long = 兆瓦特
+units-g-watt-long = 吉瓦特
 
 ## Joule (Energy)
 units-u--joule = µJ
@@ -73,11 +73,11 @@ units-joule = J
 units-k-joule = kJ
 units-m-joule = MJ
 
-units-u--joule-long = Microjoule
-units-m--joule-long = Millijoule
-units-joule-long = Joule
-units-k-joule-long = Kilojoule
-units-m-joule-long = Megajoule
+units-u--joule-long = 微焦耳
+units-m--joule-long = 毫焦耳
+units-joule-long = 焦耳
+units-k-joule-long = 千焦耳
+units-m-joule-long = 兆焦耳
 
 ## Kelvin (Temperature)
 units-u--kelvin = µK
@@ -87,9 +87,9 @@ units-k-kelvin = kK
 units-m-kelvin = MK
 units-g-kelvin = GK
 
-units-u--kelvin-long = Microkelvin
-units-m--kelvin-long = Millikelvin
-units-kelvin-long = Kelvin
-units-k-kelvin-long = Kilokelvin
-units-m-kelvin-long = Megakelvin
-units-g-kelvin-long = Gigakelvin
+units-u--kelvin-long = 微开尔文
+units-m--kelvin-long = 毫开尔文
+units-kelvin-long = 开尔文
+units-k-kelvin-long = 千开尔文
+units-m-kelvin-long = 兆开尔文
+units-g-kelvin-long = 吉开尔文

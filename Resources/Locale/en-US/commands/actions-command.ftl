@@ -1,7 +1,7 @@
-cmd-loadacts-desc = Loads action toolbar assignments from a user-file.
-cmd-loadacts-help = Usage: {$command} <user resource path>
-cmd-loadacts-error = Failed to load action assignments
+cmd-loadacts-desc = 从用户文件加载动作栏配置。
+cmd-loadacts-help = 用法：{$command} <user resource path>
+cmd-loadacts-error = 加载动作配置失败
 
-cmd-loadmapacts-desc = Loads the mapping preset action toolbar assignments.
-cmd-loadmapacts-help = Usage: {$command} <user resource path>
-cmd-loadmapacts-error = Failed to load action assignments
+cmd-loadmapacts-desc = 加载地图编辑预设的动作栏配置。
+cmd-loadmapacts-help = 用法：{$command} <user resource path>
+cmd-loadmapacts-error = 加载动作配置失败

@@ -1,36 +1,36 @@
-bwoink-user-title = Admin Message
-bwoink-admin-title = Admin Help
+bwoink-user-title = 管理员消息
+bwoink-admin-title = 管理员求助
 
-bwoink-system-starmute-message-no-other-users = *System: Nobody is available to receive your message. Try pinging Game Admins on Discord.
+bwoink-system-starmute-message-no-other-users = *系统：目前无人可以接收你的消息。试试在Discord上联系游戏管理员。
 
-bwoink-system-introductory-header = Before you send this:
+bwoink-system-introductory-header = 发送前请注意：
 
 bwoink-system-introductory-message =
-    • Describe the issue in detail - the admin wasn't there when it happened.
-    • Don't ask for special events, or for other players to be punished.
-    • Bugs and other non-rule issues go to Discord or GitHub, not here.
-    • Messages are relayed to admins on Discord - a reply here isn't guaranteed.
-    • Misusing this system can lead to disciplinary action.
+    • 详细描述问题——事发时管理员并不在现场。
+    • 不要请求特殊事件，也不要要求惩罚其他玩家。
+    • 漏洞及其他非规则问题请到Discord或GitHub反馈，不要在这里提交。
+    • 消息会转发至Discord上的管理员——这里不保证有人回复。
+    • 滥用此系统可能招致处罚。
 
 bwoink-system-typing-indicator = {$players} {$count ->
 [one] is
 *[other] are
-} typing...
+}正在输入……
 
-admin-ahelp-admin-only = Admin Only
-admin-ahelp-admin-only-tooltip = If checked, then the message won't be visible for the player,
-    but will be visible for other admins and still will be Discord relayed.
+admin-ahelp-admin-only = 仅管理员可见
+admin-ahelp-admin-only-tooltip = 勾选后，玩家将无法看到此消息，
+    但其他管理员仍可看到，消息也仍会转发至Discord。
 
-admin-bwoink-play-sound = Bwoink?
+admin-bwoink-play-sound = 哔啵？
 
-bwoink-title-none-selected = None selected
+bwoink-title-none-selected = 未选择
 
-bwoink-system-rate-limited = System: you are sending messages too quickly.
-bwoink-system-player-disconnecting = has disconnected.
-bwoink-system-player-reconnecting = has reconnected.
-bwoink-system-player-banned = has been banned for: {$banReason}
+bwoink-system-rate-limited = 系统：你发送消息的速度太快了。
+bwoink-system-player-disconnecting = 已断开连接。
+bwoink-system-player-reconnecting = 已重新连接。
+bwoink-system-player-banned = 已被封禁，原因：{$banReason}
 
-bwoink-message-admin-only = (Admin Only)
-bwoink-message-silent = (S)
+bwoink-message-admin-only = （仅管理员可见）
+bwoink-message-silent = （静默）
 
-bwoink-message-name-link = (?)
+bwoink-message-name-link = （？）

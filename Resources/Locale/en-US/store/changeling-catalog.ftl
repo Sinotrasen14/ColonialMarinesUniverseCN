@@ -1,43 +1,43 @@
-changeling-catalog-arm-blade-name = Retractable Arm Blade
-changeling-catalog-arm-blade-desc = Transform your arm into a terrifying flesh blade. Can be toggled.
+changeling-catalog-arm-blade-name = 可伸缩臂刃
+changeling-catalog-arm-blade-desc = 将你的手臂变形为一把骇人的血肉之刃。可切换。
 
-changeling-catalog-flesh-clothing-name = Flesh Clothing
-changeling-catalog-flesh-clothing-desc = Your body's surface will adapt to mirror the clothing of any person you are transforming into. However, these clothing items are non-functional and will make you easy to identify as a changeling if someone tries to remove them. Can be toggled.
+changeling-catalog-flesh-clothing-name = 血肉衣物
+changeling-catalog-flesh-clothing-desc = 你的体表会随之变化，以模仿你所变化的任何人的衣着。然而，这些衣物不具备实际功能，如果有人试图脱下它们，你就很容易被认出是变形怪。可切换。
 
-changeling-catalog-voice-mimic-name = Voice Mimicry
-changeling-catalog-voice-mimic-desc = Change your vocal coords at will to imitate existing (and imaginary) crew members. Perfect for luring in prey.
+changeling-catalog-voice-mimic-name = 声音模仿
+changeling-catalog-voice-mimic-desc = 随意改变你的声带，模仿现存的（以及想象出来的）船员。非常适合引诱猎物。
 
-changeling-catalog-biodegrade-name = Biodegrade
-changeling-catalog-biodegrade-desc = You learn to utilize acid glands within your body to vomit acid over constraints, setting yourself free.
+changeling-catalog-biodegrade-name = 生物降解
+changeling-catalog-biodegrade-desc = 你学会利用体内的酸腺，对着束缚物呕吐酸液，从而让自己脱身。
 
-changeling-catalog-sting-dna-name = Extract DNA
-changeling-catalog-sting-dna-desc = Learn to utilize your stinger to absorb the identity of unsuspecting victims. Does not grant DNA to your store or count as devouring.
+changeling-catalog-sting-dna-name = 提取DNA
+changeling-catalog-sting-dna-desc = 学会利用你的刺针吸取毫无防备者的身份。不会为你的商店提供DNA，也不算作吞噬。
 
-changeling-catalog-blind-sting-name = Blind Sting
-changeling-catalog-blind-sting-desc = Causes temporary blindness in the target. Good to escape or initiate a fight. Can be used on self.
+changeling-catalog-blind-sting-name = 致盲刺
+changeling-catalog-blind-sting-desc = 使目标暂时失明。适合逃脱或挑起战斗。可对自己使用。
 
-changeling-catalog-cryogenic-sting-name = Cryogenic Sting
-changeling-catalog-cryogenic-sting-desc = Causes movement slowdown in the target. Perfect for keeping prey from running away. Can be used on self.
+changeling-catalog-cryogenic-sting-name = 冷冻刺
+changeling-catalog-cryogenic-sting-desc = 使目标移动变慢。非常适合不让猎物逃跑。可对自己使用。
 
-changeling-catalog-lethal-sting-name = Lethal Sting
-changeling-catalog-lethal-sting-desc = Causes very slow damage to the target. Useless in combat, but ensures they will require medical attention. Can be used on self.
+changeling-catalog-lethal-sting-name = 致命刺
+changeling-catalog-lethal-sting-desc = 对目标造成极缓慢的伤害。在战斗中毫无用处，但能确保他们需要医疗救治。可对自己使用。
 
-changeling-catalog-hallucinogenic-sting-name = Hallucinogenic Sting
-changeling-catalog-hallucinogenic-sting-desc = Causes the target to get high and have difficulty speaking. Causes confusion among the crew. Can be used on self.
+changeling-catalog-hallucinogenic-sting-name = 致幻刺
+changeling-catalog-hallucinogenic-sting-desc = 使目标陷入迷幻并出现言语困难。在船员中制造混乱。可对自己使用。
 
-changeling-catalog-mute-sting-name = Mute Sting
-changeling-catalog-mute-sting-desc = Causes the target to be incapable of speech. Imperceptible until the target tries to speak. Can be used on self.
+changeling-catalog-mute-sting-name = 沉默刺
+changeling-catalog-mute-sting-desc = 使目标无法说话。在目标试图说话之前毫无察觉。可对自己使用。
 
-changeling-catalog-screech-name = Screech [TEMPORARY]
-changeling-catalog-screech-desc = We let out a powerful screech that disarms people who hear it without adequate ear protection. THIS ACTION WILL BE MOVED TO THE HORROR FORM WHEN IT IS IMPLEMENTED.
+changeling-catalog-screech-name = 尖啸 [TEMPORARY]
+changeling-catalog-screech-desc = 我们发出一声强大的尖啸，解除那些没有足够耳部防护的听者的武器。此技能将在恐怖形态实装后移至该形态。
 
-changeling-catalog-last-resort-name = Last Resort
-changeling-catalog-last-resort-desc = Gib your current body and escape as a weak head slug. If you infest a humanoid corpse, you can return to a full changeling body. Can only be bought when at least one body has been devoured.
+changeling-catalog-last-resort-name = 最后手段
+changeling-catalog-last-resort-desc = 将你当前的身体爆成碎块，并以一只虚弱的头颅蛞蝓逃脱。如果你寄生在一具人形尸体上，你就能恢复完整的变形怪身体。只有在至少吞噬过一具身体时才能购买。
 
-                                      Warning! This resets your progress as a changeling, removing your store purchases and absorbed identities!
+                                      警告！这会重置你作为变形怪的进度，移除你商店中的购买项和已吸收的身份！
 
-changeling-catalog-voice-mindshield-name = Fake Mindshield
-changeling-catalog-voice-mindshield-desc = Modify your neuron's natural waves to copy those produced by Nanotrasen mindshield implants, making you look mindshielded to security members. Can be toggled.
+changeling-catalog-voice-mindshield-name = 假心盾
+changeling-catalog-voice-mindshield-desc = 修改你神经元的自然波，使其模仿纳米特森心盾植入体产生的波，让安保人员以为你装有心盾。可切换。
 
-changeling-catalog-night-vision-name = Night Vision
-changeling-catalog-night-vision-desc = You modify your photoreceptors and heighten your senses as to become able to see in complete darkness.
+changeling-catalog-night-vision-name = 夜视
+changeling-catalog-night-vision-desc = 你改造自己的感光细胞并强化感官，从而能够在完全黑暗中视物。

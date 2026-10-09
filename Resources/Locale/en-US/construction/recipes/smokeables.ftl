@@ -1,2 +1,2 @@
-construction-smokeable-joint-rainbow = rainbow joint
-construction-smokeable-blunt-rainbow = rainbow blunt
+construction-smokeable-joint-rainbow = 彩虹卷烟
+construction-smokeable-blunt-rainbow = 彩虹雪茄

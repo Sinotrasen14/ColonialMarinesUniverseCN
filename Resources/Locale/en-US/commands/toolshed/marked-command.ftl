@@ -1,2 +1,2 @@
 command-description-marked =
-    Returns the value of $marked as a List<EntityUid>.
+    以List<EntityUid>形式返回$marked的值。

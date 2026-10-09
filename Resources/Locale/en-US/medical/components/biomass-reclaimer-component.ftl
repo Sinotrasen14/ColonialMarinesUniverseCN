@@ -1,1 +1,1 @@
-﻿biomass-reclaimer-suicide-others = {CAPITALIZE(THE($victim))} threw themselves into the biomass reclaimer!
+biomass-reclaimer-suicide-others = {CAPITALIZE(THE($victim))}一头扎进了生物质回收机！

@@ -1,8 +1,8 @@
-blink-artifact-popup = The artifact disappeared in an instant!
-foam-artifact-popup = Strange foam pours out of the artifact!
-interact-artifact-more = It craves for more...
+blink-artifact-popup = 神器瞬间消失了！
+foam-artifact-popup = 奇怪的泡沫从神器里涌出！
+interact-artifact-more = 它渴望更多……
 
-shuffle-artifact-popup = You feel yourself teleport instantly!
-charge-artifact-popup = You feel the air buzz with electricity.
+shuffle-artifact-popup = 你感到自己瞬间被传送了！
+charge-artifact-popup = 你感到空气因电流而嗡鸣。
 
-activate-artifact-popup-self = You activate node {$node}.
+activate-artifact-popup-self = 你激活了节点{$node}。

@@ -1,2 +1,2 @@
-objective-carp-rifts-title = Open {$count} carp rifts
-objective-carp-rifts-description = Use the rift action to open {$count} rifts and ensure they do not get destroyed. If you don't open a rift after 5 minutes, you get killed.
+objective-carp-rifts-title = 开启{$count}道鲤鱼裂隙
+objective-carp-rifts-description = 使用裂隙动作开启{$count}道裂隙，并确保它们不被摧毁。若5分钟内没有开启裂隙，你将被处死。

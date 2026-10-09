@@ -1,56 +1,56 @@
-rmc-emote-name-hiss = Hiss
-rmc-emote-name-meow = Meow
-rmc-emote-name-mew = Mew
-rmc-emote-name-growl = Growl
-rmc-emote-name-purr = Purr
+rmc-emote-name-hiss = 嘶嘶
+rmc-emote-name-meow = 喵
+rmc-emote-name-mew = 咪
+rmc-emote-name-growl = 低吼
+rmc-emote-name-purr = 呼噜
 
-rmc-emote-hiss = hisses.
-rmc-emote-meow = meows.
-rmc-emote-mew = mews.
-rmc-emote-growl = growls.
-rmc-emote-purr = purrs.
+rmc-emote-hiss = 嘶嘶作响。
+rmc-emote-meow = 喵喵叫。
+rmc-emote-mew = 咪咪叫。
+rmc-emote-growl = 发出低吼。
+rmc-emote-purr = 发出呼噜声。
 
-rmc-emote-name-bark = Bark
-rmc-emote-name-snarl = Snarl
-rmc-emote-name-whine = Whine
-rmc-emote-name-howl = Howl
-rmc-emote-name-yip = Yip
+rmc-emote-name-bark = 犬吠
+rmc-emote-name-snarl = 龇牙
+rmc-emote-name-whine = 呜咽
+rmc-emote-name-howl = 嚎叫
+rmc-emote-name-yip = 尖吠
 
-rmc-emote-bark = barks.
-rmc-emote-snarl = snarls.
-rmc-emote-whine = whines.
-rmc-emote-howl = howls.
-rmc-emote-yip = yips.
+rmc-emote-bark = 汪汪叫。
+rmc-emote-snarl = 龇牙低吼。
+rmc-emote-whine = 呜咽起来。
+rmc-emote-howl = 嚎叫起来。
+rmc-emote-yip = 尖声吠叫。
 
-rmc-emote-name-gnash = Gnash
-rmc-emote-gnash = gnashes.
+rmc-emote-name-gnash = 咬牙
+rmc-emote-gnash = 咬起牙来。
 
-rmc-emote-name-r-rattle = Rattle Tail
+rmc-emote-name-r-rattle = 甩尾
 
-rmc-emote-r-rattle = rattles {POSS-ADJ($entity)} tail.
+rmc-emote-r-rattle = 甩动{POSS-ADJ($entity)}尾巴。
 
-rmc-emote-name-xeno-roar = Roar
-rmc-emote-name-xeno-tail-swipe = Tail Swipe
-rmc-emote-name-xeno-help = Call for Help
+rmc-emote-name-xeno-roar = 咆哮
+rmc-emote-name-xeno-tail-swipe = 甩尾
+rmc-emote-name-xeno-help = 呼救
 
-rmc-emote-xeno-roar = roars!
-rmc-emote-xeno-tail-swipe = swipes {POSS-ADJ($entity)} tail.
-rmc-emote-xeno-help = needs help!
+rmc-emote-xeno-roar = 咆哮起来！
+rmc-emote-xeno-tail-swipe = 甩动{POSS-ADJ($entity)}尾巴。
+rmc-emote-xeno-help = 需要帮助！
 
-rmc-emote-name-peep = Peep
-rmc-emote-name-anger = Trill angrilly
-rmc-emote-name-trill = Trill
-rmc-emote-name-warble = Warble
+rmc-emote-name-peep = 啾鸣
+rmc-emote-name-anger = 愤怒颤音
+rmc-emote-name-trill = 颤音
+rmc-emote-name-warble = 啭鸣
 
-rmc-emote-peep = peeps with surprise!
-rmc-emote-anger = trills angrily!
-rmc-emote-trill = trill!
-rmc-emote-warble = warbles!
+rmc-emote-peep = 惊讶地啾鸣！
+rmc-emote-anger = 愤怒地发出颤音！
+rmc-emote-trill = 发出颤音！
+rmc-emote-warble = 发出啭鸣！
 
-rmc-emote-name-slime-bubble = Bubble
-rmc-emote-name-slime-pop = Pop
-rmc-emote-name-slime-wobble = Wobble
+rmc-emote-name-slime-bubble = 冒泡
+rmc-emote-name-slime-pop = 爆响
+rmc-emote-name-slime-wobble = 晃动
 
-rmc-emote-slime-bubble = bubbles.
-rmc-emote-slime-pop = pops!
-rmc-emote-slime-wobble = wobbles.
+rmc-emote-slime-bubble = 冒起泡来。
+rmc-emote-slime-pop = 爆响一声！
+rmc-emote-slime-wobble = 晃动起来。

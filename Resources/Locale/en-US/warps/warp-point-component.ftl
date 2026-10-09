@@ -1,1 +1,1 @@
-warp-point-component-on-examine-success = This one's location ID is '{$location}'
+warp-point-component-on-examine-success = 这个的定位ID是“{$location}”

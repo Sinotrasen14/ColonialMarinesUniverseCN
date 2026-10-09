@@ -1,203 +1,203 @@
-species-name-rodentia = Rodentia
+species-name-rodentia = 啮齿类
 # head markings
 
 ## patterns
 
-marking-RodentiaHeadBlaze = Head - Blaze
-marking-RodentiaHeadBlaze-head_m = Head
-marking-RodentiaHeadBlaze-blaze = Pattern
+marking-RodentiaHeadBlaze = 头部-白斑
+marking-RodentiaHeadBlaze-head_m = 头部
+marking-RodentiaHeadBlaze-blaze = 花纹
 
-marking-RodentiaHeadRound = Head - Face Color
-marking-RodentiaHeadRound-head_m = Head
-marking-RodentiaHeadRound-round = Pattern
+marking-RodentiaHeadRound = 头部-面部颜色
+marking-RodentiaHeadRound-head_m = 头部
+marking-RodentiaHeadRound-round = 花纹
 
 ## ears
 
-marking-RodentiaHeadTopEarBat = Ears - Bat
-marking-RodentiaHeadTopEarBat-bat = Outer ear
+marking-RodentiaHeadTopEarBat = 耳朵-蝙蝠
+marking-RodentiaHeadTopEarBat-bat = 外耳
 
-marking-RodentiaHeadTopEarBatLarge = Ears - Bat (Large)
-marking-RodentiaHeadTopEarBatLarge-bat_large = Outer ear
+marking-RodentiaHeadTopEarBatLarge = 耳朵-蝙蝠（大）
+marking-RodentiaHeadTopEarBatLarge-bat_large = 外耳
 
-marking-RodentiaHeadTopEarHamster = Ears - Hamster
-marking-RodentiaHeadTopEarHamster-hamster = Outer ear
-marking-RodentiaHeadTopEarHamster-hamster_overlay = Inner ear
+marking-RodentiaHeadTopEarHamster = 耳朵-仓鼠
+marking-RodentiaHeadTopEarHamster-hamster = 外耳
+marking-RodentiaHeadTopEarHamster-hamster_overlay = 内耳
 
-marking-RodentiaHeadTopEarLong = Ears - Long
-marking-RodentiaHeadTopEarLong-long = Outer ear
-marking-RodentiaHeadTopEarLong-long_overlay = Inner ear
+marking-RodentiaHeadTopEarLong = 耳朵-长
+marking-RodentiaHeadTopEarLong-long = 外耳
+marking-RodentiaHeadTopEarLong-long_overlay = 内耳
 
-marking-RodentiaHeadTopEarMouse = Ears - Mouse
-marking-RodentiaHeadTopEarMouse-mouse = Outer ear
-marking-RodentiaHeadTopEarMouse-mouse_overlay = Inner ear
+marking-RodentiaHeadTopEarMouse = 耳朵-老鼠
+marking-RodentiaHeadTopEarMouse-mouse = 外耳
+marking-RodentiaHeadTopEarMouse-mouse_overlay = 内耳
 
-marking-RodentiaHeadTopEarMouseLarge = Ears - Mouse (Large)
-marking-RodentiaHeadTopEarMouseLarge-mouse_large = Outer
-marking-RodentiaHeadTopEarMouseLarge-mouse_large_overlay = Inner ear
+marking-RodentiaHeadTopEarMouseLarge = 耳朵-老鼠（大）
+marking-RodentiaHeadTopEarMouseLarge-mouse_large = 外侧
+marking-RodentiaHeadTopEarMouseLarge-mouse_large_overlay = 内耳
 
-marking-RodentiaHeadTopEarNone = Ears - Hidden
-marking-RodentiaHeadTopEarNone-none = None
+marking-RodentiaHeadTopEarNone = 耳朵-隐藏
+marking-RodentiaHeadTopEarNone-none = 无
 
-marking-RodentiaHeadTopEarPointy = Ears - Pointy
-marking-RodentiaHeadTopEarPointy-pointy = Outer ear
+marking-RodentiaHeadTopEarPointy = 耳朵-尖
+marking-RodentiaHeadTopEarPointy-pointy = 外耳
 
-marking-RodentiaHeadTopEarRabbit = Ears - Rabbit
-marking-RodentiaHeadTopEarRabbit-rabbit = Outer ear
-marking-RodentiaHeadTopEarRabbit-rabbit_overlay = Inner ear
+marking-RodentiaHeadTopEarRabbit = 耳朵-兔子
+marking-RodentiaHeadTopEarRabbit-rabbit = 外耳
+marking-RodentiaHeadTopEarRabbit-rabbit_overlay = 内耳
 
-marking-RodentiaHeadTopEarSmall = Ears - Small
-marking-RodentiaHeadTopEarSmall-small = Outer Ear
+marking-RodentiaHeadTopEarSmall = 耳朵-小
+marking-RodentiaHeadTopEarSmall-small = 外耳
 
 ## snout
 
-marking-RodentiaSnoutBat = Snout - Bat
-marking-RodentiaSnoutBat-bat = Snout
-marking-RodentiaSnoutBat-bat_nose = Nose
+marking-RodentiaSnoutBat = 口鼻-蝙蝠
+marking-RodentiaSnoutBat-bat = 口鼻
+marking-RodentiaSnoutBat-bat_nose = 鼻子
 
-marking-RodentiaSnoutBatCounter = Snout - Bat, Two-tone
-marking-RodentiaSnoutBatCounter-bat = Snout
-marking-RodentiaSnoutBatCounter-bat_nose = Nose
-marking-RodentiaSnoutBatCounter-bat_overlay = Countershade
+marking-RodentiaSnoutBatCounter = 口鼻-蝙蝠，双色
+marking-RodentiaSnoutBatCounter-bat = 口鼻
+marking-RodentiaSnoutBatCounter-bat_nose = 鼻子
+marking-RodentiaSnoutBatCounter-bat_overlay = 反荫蔽
 
-marking-RodentiaSnoutFlat = Snout - Flat
-marking-RodentiaSnoutFlat-flat = Snout
-marking-RodentiaSnoutFlat-flat_nose = Nose
+marking-RodentiaSnoutFlat = 口鼻-扁平
+marking-RodentiaSnoutFlat-flat = 口鼻
+marking-RodentiaSnoutFlat-flat_nose = 鼻子
 
-marking-RodentiaSnoutFlatCounter = Snout - Flat, Two-tone
-marking-RodentiaSnoutFlatCounter-flat = Snout
-marking-RodentiaSnoutFlatCounter-flat_nose = Nose
-marking-RodentiaSnoutFlatCounter-flat_overlay = Countershade
+marking-RodentiaSnoutFlatCounter = 口鼻-扁平，双色
+marking-RodentiaSnoutFlatCounter-flat = 口鼻
+marking-RodentiaSnoutFlatCounter-flat_nose = 鼻子
+marking-RodentiaSnoutFlatCounter-flat_overlay = 反荫蔽
 
-marking-RodentiaSnoutRound = Snout - Round
-marking-RodentiaSnoutRound-round = Snout
-marking-RodentiaSnoutRound-round_nose = Nose
+marking-RodentiaSnoutRound = 口鼻-圆
+marking-RodentiaSnoutRound-round = 口鼻
+marking-RodentiaSnoutRound-round_nose = 鼻子
 
-marking-RodentiaSnoutRoundCounter = Snout - Round, Two-tone
-marking-RodentiaSnoutRoundCounter-round = Snout
-marking-RodentiaSnoutRoundCounter-round_nose = Nose
-marking-RodentiaSnoutRoundCounter-round_overlay = Countershade
+marking-RodentiaSnoutRoundCounter = 口鼻-圆，双色
+marking-RodentiaSnoutRoundCounter-round = 口鼻
+marking-RodentiaSnoutRoundCounter-round_nose = 鼻子
+marking-RodentiaSnoutRoundCounter-round_overlay = 反荫蔽
 
 ## cheeks
 
-marking-RodentiaCheeksRound = Cheeks - Round
-marking-RodentiaCheeksRound-cheeks = Cheek
+marking-RodentiaCheeksRound = 脸颊-圆
+marking-RodentiaCheeksRound-cheeks = 脸颊
 
-marking-RodentiaCheeksRoundCounter = Cheeks - Round, Two-tone
-marking-RodentiaCheeksRoundCounter-cheeks = Cheek
-marking-RodentiaCheeksRoundCounter-cheeks_overlay = Countershade
+marking-RodentiaCheeksRoundCounter = 脸颊-圆，双色
+marking-RodentiaCheeksRoundCounter-cheeks = 脸颊
+marking-RodentiaCheeksRoundCounter-cheeks_overlay = 反荫蔽
 
-marking-RodentiaCheeksFluff = Cheeks - Fluff
-marking-RodentiaCheeksFluff-fluff = Cheek fluff
+marking-RodentiaCheeksFluff = 脸颊-绒毛
+marking-RodentiaCheeksFluff-fluff = 脸颊绒毛
 
-marking-RodentiaCheeksFluffCounter = Cheeks - Fluff, Two-tone
-marking-RodentiaCheeksFluffCounter-fluff = Cheek fluff
-marking-RodentiaCheeksFluffCounter-fluff_overlay = Countershade
+marking-RodentiaCheeksFluffCounter = 脸颊-绒毛，双色
+marking-RodentiaCheeksFluffCounter-fluff = 脸颊绒毛
+marking-RodentiaCheeksFluffCounter-fluff_overlay = 反荫蔽
 
-marking-RodentiaCheeksFluffAlt = Cheeks - Fluff, Alt
-marking-RodentiaCheeksFluffAlt-fluff_alt = Cheek fluff
+marking-RodentiaCheeksFluffAlt = 脸颊-绒毛，替代
+marking-RodentiaCheeksFluffAlt-fluff_alt = 脸颊绒毛
 
-marking-RodentiaCheeksFluffAltCounter = Cheeks - Fluff, Alt, Two-tone
-marking-RodentiaCheeksFluffAltCounter-fluff_alt = Cheek fluff
-marking-RodentiaCheeksFluffAltCounter-fluff_alt_overlay = Countershade
+marking-RodentiaCheeksFluffAltCounter = 脸颊-绒毛，替代，双色
+marking-RodentiaCheeksFluffAltCounter-fluff_alt = 脸颊绒毛
+marking-RodentiaCheeksFluffAltCounter-fluff_alt_overlay = 反荫蔽
 
-marking-RodentiaCheeksWhiskers = Whiskers
-marking-RodentiaCheeksWhiskers-whiskers = Whiskers
+marking-RodentiaCheeksWhiskers = 胡须
+marking-RodentiaCheeksWhiskers-whiskers = 胡须
 
 # body markings
 
 ## tail
 
-marking-RodentiaTailBeaver = Tail - Beaver
-marking-RodentiaTailBeaver-beaver = Tail
+marking-RodentiaTailBeaver = 尾巴-河狸
+marking-RodentiaTailBeaver-beaver = 尾巴
 
-marking-RodentiaTailHamster = Tail - Hamster
-marking-RodentiaTailHamster-hamster = Tail
+marking-RodentiaTailHamster = 尾巴-仓鼠
+marking-RodentiaTailHamster-hamster = 尾巴
 
-marking-RodentiaTailLong = Tail - Long
-marking-RodentiaTailLong-long = Tail
+marking-RodentiaTailLong = 尾巴-长
+marking-RodentiaTailLong-long = 尾巴
 
-marking-RodentiaTailLongCounter = Tail - Long, Two-tone
-marking-RodentiaTailLongCounter-long = Tail
-marking-RodentiaTailLongCounter-long_overlay = Countershade
+marking-RodentiaTailLongCounter = 尾巴-长，双色
+marking-RodentiaTailLongCounter-long = 尾巴
+marking-RodentiaTailLongCounter-long_overlay = 反荫蔽
 
-marking-RodentiaTailLongCounterTip = Tail - Long, Three-tone
-marking-RodentiaTailLongCounterTip-long = Tail
-marking-RodentiaTailLongCounterTip-long_overlay = Countershade
-marking-RodentiaTailLongCounterTip-long_tip = Tip
+marking-RodentiaTailLongCounterTip = 尾巴-长，三色
+marking-RodentiaTailLongCounterTip-long = 尾巴
+marking-RodentiaTailLongCounterTip-long_overlay = 反荫蔽
+marking-RodentiaTailLongCounterTip-long_tip = 尾尖
 
-marking-RodentiaTailMouse = Tail - Mouse
-marking-RodentiaTailMouse-mouse = Tail
+marking-RodentiaTailMouse = 尾巴-老鼠
+marking-RodentiaTailMouse-mouse = 尾巴
 
-marking-RodentiaTailRabbit = Tail - Rabbit
-marking-RodentiaTailRabbit-rabbit = Tail
+marking-RodentiaTailRabbit = 尾巴-兔子
+marking-RodentiaTailRabbit-rabbit = 尾巴
 
-marking-RodentiaTailRabbitCounter = Tail - Rabbit, Two-tone
-marking-RodentiaTailRabbitCounter-rabbit = Tail
-marking-RodentiaTailRabbitCounter-rabbit_overlay = Countershade
+marking-RodentiaTailRabbitCounter = 尾巴-兔子，双色
+marking-RodentiaTailRabbitCounter-rabbit = 尾巴
+marking-RodentiaTailRabbitCounter-rabbit_overlay = 反荫蔽
 
-marking-RodentiaTailShort = Tail - Short
-marking-RodentiaTailShort-short = Tail
+marking-RodentiaTailShort = 尾巴-短
+marking-RodentiaTailShort-short = 尾巴
 
-marking-RodentiaTailSquirrel = Tail - Squirrel
-marking-RodentiaTailSquirrel-squirrel = Tail
+marking-RodentiaTailSquirrel = 尾巴-松鼠
+marking-RodentiaTailSquirrel-squirrel = 尾巴
 
-marking-RodentiaTailSquirrelBicolor = Tail - Squirrel, Two-tone
-marking-RodentiaTailSquirrelBicolor-squirrel = Tail
-marking-RodentiaTailSquirrelBicolor-squirrel_overlay = Secondary
+marking-RodentiaTailSquirrelBicolor = 尾巴-松鼠，双色
+marking-RodentiaTailSquirrelBicolor-squirrel = 尾巴
+marking-RodentiaTailSquirrelBicolor-squirrel_overlay = 次要
 
 ## patterns
 
-marking-RodentiaChestCountershade = Chest - Countershade
-marking-RodentiaChestCountershade-countershade = Countershade
+marking-RodentiaChestCountershade = 胸部-反荫蔽
+marking-RodentiaChestCountershade-countershade = 反荫蔽
 
-marking-RodentiaChestCountershadeF = Chest - Countershade
-marking-RodentiaChestCountershadeF-countershade_f = Countershade
+marking-RodentiaChestCountershadeF = 胸部-反荫蔽
+marking-RodentiaChestCountershadeF-countershade_f = 反荫蔽
 
-marking-RodentiaLegLeftCountershade = Left Leg - Countershade
-marking-RodentiaLegLeftCountershade-l_leg = Leg
-marking-RodentiaLegLeftCountershade-countershade_lleg = Countershade
+marking-RodentiaLegLeftCountershade = 左腿-反荫蔽
+marking-RodentiaLegLeftCountershade-l_leg = 腿
+marking-RodentiaLegLeftCountershade-countershade_lleg = 反荫蔽
 
-marking-RodentiaLegRightCountershade = Right Leg - Countershade
-marking-RodentiaLegRightCountershade-r_leg = Leg
-marking-RodentiaLegRightCountershade-countershade_rleg = Countershade
+marking-RodentiaLegRightCountershade = 右腿-反荫蔽
+marking-RodentiaLegRightCountershade-r_leg = 腿
+marking-RodentiaLegRightCountershade-countershade_rleg = 反荫蔽
 
-marking-RodentiaChestFawn = Chest - Fawn
-marking-RodentiaChestFawn-fawn = Pattern
+marking-RodentiaChestFawn = 胸部-小鹿斑
+marking-RodentiaChestFawn-fawn = 花纹
 
-marking-RodentiaChestHooded = Chest - Hooded
-marking-RodentiaChestHooded-hooded = Pattern
+marking-RodentiaChestHooded = 胸部-兜帽
+marking-RodentiaChestHooded-hooded = 花纹
 
-marking-RodentiaChestHoodedF = Chest - Hooded
-marking-RodentiaChestHoodedF-hooded_f = Pattern
+marking-RodentiaChestHoodedF = 胸部-兜帽
+marking-RodentiaChestHoodedF-hooded_f = 花纹
 
 # base parts
 
-marking-RodentiaHeadBasic = Head - Basic
-marking-RodentiaHeadBasic-head_m = Head
+marking-RodentiaHeadBasic = 头部-基础
+marking-RodentiaHeadBasic-head_m = 头部
 
-marking-RodentiaArmLeftBasic = Left Arm - Basic
-marking-RodentiaArmLeftBasic-l_arm = Arm
+marking-RodentiaArmLeftBasic = 左臂-基础
+marking-RodentiaArmLeftBasic-l_arm = 手臂
 
-marking-RodentiaArmRightBasic = Right Arm - Basic
-marking-RodentiaArmRightBasic-r_arm = Arm
+marking-RodentiaArmRightBasic = 右臂-基础
+marking-RodentiaArmRightBasic-r_arm = 手臂
 
-marking-RodentiaLegLeftBasic = Left Leg - Basic
-marking-RodentiaLegLeftBasic-l_leg = Leg
+marking-RodentiaLegLeftBasic = 左腿-基础
+marking-RodentiaLegLeftBasic-l_leg = 腿
 
-marking-RodentiaLegRightBasic = Right Leg - Basic
-marking-RodentiaLegRightBasic-r_leg = Leg
+marking-RodentiaLegRightBasic = 右腿-基础
+marking-RodentiaLegRightBasic-r_leg = 腿
 
-marking-RodentiaHandLeftBasic = Left Hand - Basic
-marking-RodentiaHandLeftBasic-l_hand = Hand
+marking-RodentiaHandLeftBasic = 左手-基础
+marking-RodentiaHandLeftBasic-l_hand = 手
 
-marking-RodentiaHandRightBasic = Right Hand - Basic
-marking-RodentiaHandRightBasic-r_hand = Hand
+marking-RodentiaHandRightBasic = 右手-基础
+marking-RodentiaHandRightBasic-r_hand = 手
 
-marking-RodentiaFootLeftBasic = Left Foot - Basic
-marking-RodentiaFootLeftBasic-l_foot = Foot
+marking-RodentiaFootLeftBasic = 左脚-基础
+marking-RodentiaFootLeftBasic-l_foot = 脚
 
-marking-RodentiaFootRightBasic = Right Foot - Basic
-marking-RodentiaFootRightBasic-r_foot = Foot
+marking-RodentiaFootRightBasic = 右脚-基础
+marking-RodentiaFootRightBasic-r_foot = 脚
 
 # generic names
 rmc-name-rodentia-male-1 = Squeaks
@@ -211,7 +211,7 @@ rmc-name-rodentia-male-8 = Scurry
 rmc-name-rodentia-male-9 = Scamper
 rmc-name-rodentia-male-10 = Chitters
 rmc-name-rodentia-male-11 = Quill
-rmc-name-rodentia-male-12 = Whiskers
+rmc-name-rodentia-male-12 = 胡须
 rmc-name-rodentia-male-13 = Wiggles
 rmc-name-rodentia-male-14 = Button
 rmc-name-rodentia-male-15 = Sniffles
@@ -386,7 +386,7 @@ rmc-name-rodentia-female-8 = Scurry
 rmc-name-rodentia-female-9 = Scamper
 rmc-name-rodentia-female-10 = Chitters
 rmc-name-rodentia-female-11 = Quill
-rmc-name-rodentia-female-12 = Whiskers
+rmc-name-rodentia-female-12 = 胡须
 rmc-name-rodentia-female-13 = Wiggles
 rmc-name-rodentia-female-14 = Button
 rmc-name-rodentia-female-15 = Sniffles

@@ -1,1 +1,1 @@
-construction-step-condition-against-wall = You must place it up against a wall.
+construction-step-condition-against-wall = 你必须把它紧贴墙壁放置。

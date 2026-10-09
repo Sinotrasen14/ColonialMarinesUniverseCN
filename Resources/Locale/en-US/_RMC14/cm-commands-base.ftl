@@ -1,2 +1,2 @@
-﻿cm-cmd-no-entity-found = No entity found. Usage: {$usage}
-cm-cmd-entity-no-component = Entity {$entity} doesn't have a {$component}
+cm-cmd-no-entity-found = 找不到实体。用法：{$usage}
+cm-cmd-entity-no-component = 实体{$entity}没有{$component}

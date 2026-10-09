@@ -1,14 +1,14 @@
 command-description-container-contents =
-    Gets all entities inside a container on an entity via the container's ID.
+    通过容器ID获取实体上某个容器内的所有实体。
 command-description-container-get =
-    Gets a container on an entity via the container's ID.
+    通过容器ID获取实体上的某个容器。
 command-description-container-insert =
-    Puts an entity inside the piped container.
+    将一个实体放入管道容器中。
 command-description-container-insertmultiple =
-    Put multiple entities inside the piped container.
+    将多个实体放入管道容器中。
 command-description-container-list =
-    Gets the IDs of all containers in an entity.
+    获取实体中所有容器的ID。
 command-description-container-getall =
-    Gets all containers in an entity.
+    获取实体中的所有容器。
 command-description-container-id =
-    Gets the string id of the piped in containers.
+    获取管道中容器的字符串ID。

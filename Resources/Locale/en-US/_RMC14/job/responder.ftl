@@ -1,48 +1,48 @@
-rmc-ghost-role-information-responder-description = Your job is to respond to faxes appropriately, based on your faction. You are acting on behalf of RMC staff.
+rmc-ghost-role-information-responder-description = 你的工作是根据你所属的阵营，妥善回复传真。你代表RMC工作人员行事。
 
-rmc-ghost-role-information-responder-rules = You are a [color=red][bold]Fax Responder[/bold][/color]. Your factional relations depend on your faction.
-                                             You don't remember any of your previous life, and you don't remember anything you learned as a ghost.
-                                             You are allowed to remember knowledge about the game in general, such as how to cook, how to use objects, etc.
-                                             You are absolutely [color=red]NOT[/color] allowed to remember, say, the name, appearance, etc. of your previous character.
-                                             You are acting on behalf of server staff, and should be EXTREMELY careful with wording when writing faxes.
-                                             Fax Responders cannot make decisions that would drastically alter the round's flow, such as activating ERTs or overriding staff decisions without their input. Do not order anyone to break server rules. Always use AHelp if you're unsure whether your action requires staff involvement.
-                                             If you are ever in doubt, or receive a fax that requires admin attention, do not hesitate to AHelp.
-                                             Only call the marines by telephone if you have an EXCEPTIONAL reason. Your primary method of communication must always be the fax machine.
-                                             Do NOT use your radio to transmit under any circumstances. It is for listening only, not for communication.
-                                             Do NOT use the Overwatch console to interfere with squads or send messages. It is solely for observation.
-                                             Do NOT abuse the authority of this role. Misuse of your powers or failure to meet expectations will result in removal, or worse.
+rmc-ghost-role-information-responder-rules = 你是一名[color=red][bold]传真回复员[/bold][/color]。你的阵营关系取决于你所属的阵营。
+                                             你不记得自己前世的任何事，也不记得作为幽灵时的任何见闻。
+                                             你可以记住关于游戏的一般知识，例如如何烹饪、如何使用物品等。
+                                             你绝对[color=red]不[/color]可以记得你之前角色的名字、外貌等。
+                                             你代表服务器工作人员行事，撰写传真措辞时必须极其谨慎。
+                                             传真回复员不能做出会大幅改变回合走向的决定，例如激活ERT或在未征询意见的情况下推翻工作人员的决定。不要命令任何人违反服务器规则。如果不确定自己的行为是否需要工作人员介入，务必使用AHelp。
+                                             如果你有任何疑虑，或收到需要管理员关注的传真，请毫不犹豫地AHelp。
+                                             只有在有特殊理由时才可用电话呼叫陆战队。你的主要通讯手段必须始终是传真机。
+                                             在任何情况下都不要用无线电发送信息。它只用于收听，不用于通讯。
+                                             不要用监视控制台干扰小队或发送消息。它仅用于观察。
+                                             不要滥用这一角色的权限。滥用权力或未能达到预期将导致被撤职，甚至更糟。
 
 
 #UNMC fax responder
-rmc-job-name-unmc-responder = USCM Communications Officer
-rmc-job-description-unmc-responder = "You are acting on behalf of USCM Regional Command to respond to faxes sent to USCM High Command."
+rmc-job-name-unmc-responder = USCM通讯官
+rmc-job-description-unmc-responder = "你代表USCM地区指挥部，回复发送给USCM最高指挥部的传真。"
 
 #We-Ya fax responder
-rmc-job-name-weya-responder = We-Yu Communications Executive
-rmc-job-description-weya-responder = "You are acting on behalf of the Regional We-Yu special services department to respond to faxes."
+rmc-job-name-weya-responder = We-Yu通讯主管
+rmc-job-description-weya-responder = "你代表地区We-Yu特别服务部门回复传真。"
 
 #Provost fax responder
-rmc-job-name-provost-responder = Provost Communications Officer
-rmc-job-description-provost-responder = "You are acting on behalf of the regions Provost Marshal Office to respond to faxes sent to the Provost Marshal Office."
+rmc-job-name-provost-responder = 宪兵通讯官
+rmc-job-description-provost-responder = "你代表地区宪兵总督察办公室，回复发送给宪兵总督察办公室的传真。"
 
 #Free Press fax responder
-rmc-job-name-free-press-responder = Free Press
-rmc-job-description-free-press-responder = "You are a promiment regional editor, a member of the Free Press."
+rmc-job-name-free-press-responder = 自由新闻
+rmc-job-description-free-press-responder = "你是自由新闻的一员，一名著名的地区编辑。"
 
 #CLF fax responder
-rmc-job-name-clf-responder = CLF Information Correspondent
-rmc-job-description-clf-responder = "You are a member of a regional CLF cell. Inform and receive information from local cells."
+rmc-job-name-clf-responder = CLF情报通讯员
+rmc-job-description-clf-responder = "你是地区CLF小组的一员。向当地小组通报并接收信息。"
 rmc-job-prefix-clf-responder = INFO
 
 #SPP fax responder
-rmc-job-name-spp-responder = UPP Communications Officer
-rmc-job-description-spp-responder = "You are acting on behalf of UPP Regional Command to respond to faxes sent to UPP Command."
+rmc-job-name-spp-responder = UPP通讯官
+rmc-job-description-spp-responder = "你代表UPP地区指挥部，回复发送给UPP指挥部的传真。"
 
 #TSE fax responder
-rmc-job-name-tse-responder = TWE Communications Officer
-rmc-job-description-tse-responder = "You are acting on behalf of TSE Regional Command to respond to faxes sent to TWE Command."
+rmc-job-name-tse-responder = TWE通讯官
+rmc-job-description-tse-responder = "你代表TSE地区指挥部，回复发送给TWE指挥部的传真。"
 
 #CMB fax responder
-rmc-job-name-cmb-responder = CMB Communications Officer
-rmc-job-description-cmb-responder = "You are a dispatcher of the local branch of the CMB. Respond to faxes accordingly."
+rmc-job-name-cmb-responder = CMB通讯官
+rmc-job-description-cmb-responder = "你是CMB当地分部的调度员。请据此回复传真。"
 

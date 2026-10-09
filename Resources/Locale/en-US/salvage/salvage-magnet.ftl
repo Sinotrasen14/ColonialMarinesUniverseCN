@@ -1,11 +1,11 @@
-salvage-system-announcement-losing = The magnet is no longer able to hold the salvagable debris. Estimated time until loss: {$timeLeft} seconds.
-salvage-system-announcement-spawn-debris-disintegrated = Debris disintegrated during orbital transfer.
-salvage-system-announcement-spawn-no-debris-available = No debris could be recovered by the salvage magnet.
-salvage-system-announcement-arrived = A piece of salvagable debris has been pulled in. Estimated hold time: {$timeLeft} seconds.
-salvage-asteroid-name = Asteroid
+salvage-system-announcement-losing = 磁铁已无法继续吸附可打捞的碎片。预计{$timeLeft}秒后失去目标。
+salvage-system-announcement-spawn-debris-disintegrated = 碎片在轨道转运过程中解体了。
+salvage-system-announcement-spawn-no-debris-available = 打捞磁铁未能回收任何碎片。
+salvage-system-announcement-arrived = 一块可打捞的碎片已被拉入。预计保持{$timeLeft}秒。
+salvage-asteroid-name = 小行星
 
-salvage-magnet-window-title = Salvage magnet
-salvage-expedition-window-progression = Progression
+salvage-magnet-window-title = 打捞磁铁
+salvage-expedition-window-progression = 进度
 
 salvage-magnet-resources = {$resource ->
     [OreIron] Iron
@@ -32,17 +32,17 @@ salvage-magnet-resources-count = {$count ->
 }
 
 # Debris
-salvage-magnet-debris-ChunkDebris = Space debris
+salvage-magnet-debris-ChunkDebris = 太空碎片
 
 # Asteroids
-dungeon-config-proto-BlobAsteroid = Asteroid clump
-dungeon-config-proto-ClusterAsteroid = Asteroid cluster
-dungeon-config-proto-SpindlyAsteroid = Asteroid spiral
-dungeon-config-proto-SwissCheeseAsteroid = Asteroid fragments
+dungeon-config-proto-BlobAsteroid = 小行星团
+dungeon-config-proto-ClusterAsteroid = 小行星群
+dungeon-config-proto-SpindlyAsteroid = 小行星螺旋
+dungeon-config-proto-SwissCheeseAsteroid = 小行星碎块
 
 # Wrecks
-salvage-map-wreck = Salvage wreck
-salvage-map-wreck-desc-size = Size:
-salvage-map-wreck-size-small = [color=lime]Small[/color]
-salvage-map-wreck-size-medium = [color=cornflowerblue]Medium[/color]
-salvage-map-wreck-size-large = [color=orchid]Large[/color]
+salvage-map-wreck = 打捞残骸
+salvage-map-wreck-desc-size = 大小：
+salvage-map-wreck-size-small = [color=lime]小[/color]
+salvage-map-wreck-size-medium = [color=cornflowerblue]中[/color]
+salvage-map-wreck-size-large = [color=orchid]大[/color]

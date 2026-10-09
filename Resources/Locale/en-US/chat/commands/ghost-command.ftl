@@ -1,6 +1,6 @@
-﻿ghost-command-description = Give up on life and become a ghost.
-ghost-command-help-text = The ghost command turns you into a ghost and makes the character you played permanently catatonic.
-                          Please note that you cannot return to your character's body after ghosting.
-ghost-command-no-session = You have no session, you can't ghost.
-ghost-command-denied = You cannot ghost right now.
-ghost-command-error-lobby = You can't ghost right now. You are not in the game!
+ghost-command-description = 放弃生命并变成幽灵。
+ghost-command-help-text = 幽灵命令会将你变成幽灵，并使你扮演的角色永久陷入紧张性木僵状态。
+                          请注意，变成幽灵后你无法回到角色的身体。
+ghost-command-no-session = 你没有游戏会话，无法变成幽灵。
+ghost-command-denied = 你现在无法变成幽灵。
+ghost-command-error-lobby = 你现在无法变成幽灵。你还没有进入游戏！

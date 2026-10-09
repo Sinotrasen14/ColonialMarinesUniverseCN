@@ -1,1 +1,1 @@
-admin-notes-manager-note-notification = Your account has received an administrative note. For further information, open the admin remarks panel via the escape menu.
+admin-notes-manager-note-notification = 你的账户收到一条管理员备注。如需了解详情，请通过退出菜单打开管理员备注面板。

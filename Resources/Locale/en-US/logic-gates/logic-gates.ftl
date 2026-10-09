@@ -1,15 +1,15 @@
-logic-gate-examine = It is currently {INDEFINITE($gate)} {$gate} gate.
+logic-gate-examine = 它目前是一个{INDEFINITE($gate)} {$gate}门。
 
-logic-gate-cycle = Switched to {INDEFINITE($gate)} {$gate} gate
+logic-gate-cycle = 已切换为{INDEFINITE($gate)} {$gate}门
 
-power-sensor-examine = It is currently checking the network's {$output ->
+power-sensor-examine = 它目前正在检测网络的{$output ->
     [true] output
     *[false] input
-} battery.
-power-sensor-voltage-examine = It is checking the {$voltage} power network.
+}电池。
+power-sensor-voltage-examine = 它正在检测{$voltage}电力网络。
 
-power-sensor-switch = Switched to checking the network's {$output ->
+power-sensor-switch = 已切换为检测网络的{$output ->
     [true] output
     *[false] input
-} battery.
-power-sensor-voltage-switch = Switched network to {$voltage}!
+}电池。
+power-sensor-voltage-switch = 已将网络切换为{$voltage}！

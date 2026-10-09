@@ -1,6 +1,6 @@
-rmc-nailgun-no-nails-message = You require at least 4 nails to complete this task!
-rmc-nailgun-no-material-message = You'll need some adequate repair material in your other hand to patch up {THE($target)}!
-rmc-nailgun-lost-stack = You seem to have misplaced the repair material!
+rmc-nailgun-no-nails-message = 你至少需要4枚钉子才能完成这项任务！
+rmc-nailgun-no-material-message = 你需要另一只手上拿着合适的修复材料才能修补{THE($target)}！
+rmc-nailgun-lost-stack = 你似乎把修复材料弄丢了！
 
-rmc-nailgun-finish-self = You nail {THE($material)} to {THE($target)}, restoring some of its integrity! 
-rmc-nailgun-finish-others = {$user} nails {THE($material)} to {THE($target)}
+rmc-nailgun-finish-self = 你把{THE($material)}钉到{THE($target)}上，恢复了一些完整性！ 
+rmc-nailgun-finish-others = {$user}把{THE($material)}钉到{THE($target)}上
