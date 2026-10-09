@@ -1,9 +1,9 @@
 - type: entity
   parent: CentcomPDA # Not AdminPDA, because then this would be both a health scanner and a base health analyzer, which is a little bit stupid.
   id: RMCAdminPDA
-  name: Admin PDA
+  name: 管理员PDA
   suffix: Admin
-  description: If you are not an admin please return this PDA to the nearest admin.
+  description: 如果您不是管理员，请将此PDA交给最近的管理员。
   components:
   - type: Pda
     id: CMIDCardHighCommand

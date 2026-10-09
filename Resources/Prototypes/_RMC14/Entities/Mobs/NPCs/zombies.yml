@@ -17,11 +17,11 @@
   id: RMCZombifiedColonist
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseColonist ]
+    prototypes: [RMCGearCorpseColonist]
 
 - type: entity
   id: RMCSpawnZombifiedColonist
-  name: zombie spawner
+  name: 僵尸刷怪笼 | zombie spawner
   suffix: Colonist
   components:
   - type: Sprite
@@ -38,7 +38,7 @@
   id: RMCZombifiedChef
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseChef ]
+    prototypes: [RMCGearCorpseChef]
 
 - type: entity
   parent: RMCSpawnZombifiedColonist
@@ -53,7 +53,7 @@
   id: RMCZombifiedDoctor
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseDoctor ]
+    prototypes: [RMCGearCorpseDoctor]
 
 - type: entity
   parent: RMCSpawnZombifiedColonist
@@ -68,7 +68,7 @@
   id: RMCZombifiedEngineer
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseEngineer ]
+    prototypes: [RMCGearCorpseEngineer]
 
 - type: entity
   parent: RMCSpawnZombifiedColonist
@@ -85,7 +85,7 @@
   id: RMCZombifiedSecurity
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseSecurity ]
+    prototypes: [RMCGearCorpseSecurity]
 
 - type: entity
   parent: RMCSpawnZombifiedColonist
@@ -102,7 +102,7 @@
   id: RMCZombifiedGoon
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseWeYaGoon ]
+    prototypes: [RMCGearCorpseWeYaGoon]
 
 - type: entity
   parent: RMCSpawnZombifiedColonist
@@ -136,7 +136,7 @@
   id: RMCZombifiedWeYaPMC
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseWeYaPMCStandard ]
+    prototypes: [RMCGearCorpseWeYaPMCStandard]
 
 - type: entity
   parent: RMCSpawnZombifiedColonist

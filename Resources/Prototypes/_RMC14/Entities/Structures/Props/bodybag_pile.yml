@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCPropBase
   id: RMCPropBodybagPile
-  name: bodybag pile
-  description: A grim mound of body bags stacked haphazardly.
+  name: 尸袋堆
+  description: 一堆胡乱堆叠的尸袋，景象阴森可怖。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Props/bodybag_pile.rsi
@@ -11,8 +11,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,1.5,0.5"
         density: 190
         layer:
@@ -29,8 +28,8 @@
 - type: entity
   parent: RMCPropBodybagPile
   id: RMCPropBodybagPileCharred
-  name: charred bodybag pile
-  description: A grim mound of body bags stacked haphazardly, their surfaces blackened and blistered from intense heat. The contents are partially burned.
+  name: 烧焦的尸袋堆
+  description: 一堆阴森可怖、胡乱堆叠的尸袋，表面因高温而焦黑起泡。袋中尸体已部分烧焦。
   components:
   - type: Sprite
     state: bodybag_pile_charred

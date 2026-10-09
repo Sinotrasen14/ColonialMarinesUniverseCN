@@ -3,29 +3,29 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechCrewCombatCorrespondent
-  name: ColMarTech Combat Correspondent Equipment Rack
-  description: An automated rack hooked up to a colossal storage of Reporter standard-issue equipment.
+  name: ColMarTech 战地记者装备架
+  description: 一个自动化装备架，连接着一个庞大的战地记者标准配发装备储存库。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessPress" ]
+    - ["CMAccessPress"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMCorrespondent
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: RMCVendorBundleCrewCombatCorrespondent
-        name: Essential Reporter's Set
+        name: 记者必备套装
       - id: CMSatchel
-        name: Leather Satchel
+        name: 皮革挎包
       - id: RMCBackpackRTOBagPhone
-        name: Portable Phone Bag
+        name: 便携式手机包
       - id: RMCCameraBroadcasting
-        name: Press Broadcasting Camera
+        name: 新闻广播摄像机
         recommended: true
     #- name: Civilian Equipment TODO - Some way to ensure only the civilian correspondent can buy this
     #  takeAll: CMStandard
@@ -33,40 +33,40 @@
     #  - id: PortableFaxMachine
     #    name: Portable Press Fax Machine
     #    recommended: true
-    - name: Uniform
-      choices: { CMUniform: 1 }
+    - name: 制服
+      choices: {CMUniform: 1}
       entries:
       - id: RMCJumpsuitCorrespondentBlack
-        name: Black Uniform
+        name: 黑色制服
       - id: RMCJumpsuitCorrespondentOrange
-        name: Orange Uniform
+        name: 橙色制服
       - id: RMCJumpsuitCorrespondentRed
-        name: Red Uniform
-    - name: Armor
-      choices: { CMArmor: 1 }
+        name: 红色制服
+    - name: 护甲
+      choices: {CMArmor: 1}
       entries:
       - id: CMArmorPress
-        name: Combat Correspondent's Armor
+        name: 战地记者的护甲
         recommended: true
       - id: RMCCoatCorrespondentBlue
-        name: Blue Vest
+        name: 蓝色背心
       - id: RMCHazardVestBlack
-        name: Black Vest
+        name: 黑色背心
       - id: RMCCoatCorrespondentBlack
-        name: Black Coat
+        name: 黑色外套
       - id: RMCCoatCorrespondentGreen
-        name: Green Coat
-    - name: Helmet
-      choices: { CMHelmet: 1 }
+        name: 绿色外套
+    - name: 头盔
+      choices: {CMHelmet: 1}
       entries:
       - id: CMArmorHelmetPress
-        name: Combat Correspondent's Helmet
+        name: 战地记者的头盔
         recommended: true
       - id: RMCHeadCapCorrespondent
-        name: Combat Correspondent's Cap
+        name: 战地记者帽
       - id: RMCHeadCapFedoraGrey
         name: Fedora
-    - name: Refills
+    - name: 补充装
       entries:
       #- id: /obj/item/device/camera
       #  name: Camera
@@ -78,10 +78,10 @@
       #  name: Toner
       # points: 5
       - id: RMCBoxRegulationTapes
-        name: Regulation Tapes
+        name: 监管磁带
         points: 15
       - id: CMPaperBin30
-        name: Paper Bin
+        name: 纸箱
         points: 10
 
 - type: entity

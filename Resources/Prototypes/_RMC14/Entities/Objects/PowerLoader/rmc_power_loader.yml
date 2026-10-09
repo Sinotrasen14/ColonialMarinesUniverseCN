@@ -1,4 +1,4 @@
-﻿# Base
+# Base
 - type: entity
   abstract: true
   id: RMCMechBase
@@ -11,7 +11,7 @@
     sprite: _RMC14/Objects/power_loader.rsi
     layers:
     - state: powerloader_open
-      map: [ "buckledLayer" ]
+      map: ["buckledLayer"]
   - type: MobMover
   - type: DoAfter
   - type: MeleeWeapon
@@ -36,13 +36,12 @@
   - type: Physics
     bodyType: KinematicController
   - type: Clickable
-  - type: CMUZPhysics 
-  - type: CMUVehicleZTraversal 
+  - type: CMUZPhysics
+  - type: CMUVehicleZTraversal
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 1000
         mask:
@@ -79,12 +78,11 @@
     visuals:
       enum.StrapVisuals.State:
         buckledLayer:
-          True: { state: powerloader_overlay }
-          False: { state: powerloader_open }
+          true: {state: powerloader_overlay}
+          false: {state: powerloader_open}
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 400
       behaviors:
       - !type:PlaySoundBehavior
@@ -101,8 +99,8 @@
 # Wreckages
 - type: entity
   id: RMCMechPowerLoaderWreckage
-  name: Caterpillar P-5000 Work Loader wreckage
-  description: Remains of some unfortunate Power Loader. Completely unrepairable.
+  name: 卡特彼勒 P-5000 工作装载机残骸
+  description: 某台不幸工作装载机的残骸。完全无法修复。
   components:
   - type: Corrodible
     isCorrodible: true
@@ -127,8 +125,7 @@
       - Xeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -140,7 +137,7 @@
 - type: entity
   parent: RMCMechPowerLoaderWreckage
   id: RMCMechPowerLoaderWreckageGreen
-  name: John Deere 4300 Power Loader wreckage
+  name: 约翰迪尔4300动力装载机残骸
   components:
   - type: Sprite
     drawdepth: BelowMobs
@@ -152,7 +149,7 @@
 - type: entity
   parent: RMCMechPowerLoaderWreckage
   id: RMCMechPowerLoaderWreckageBlue
-  name: Caterpillar P-5200 Work Loader wreckage
+  name: 卡特彼勒 P-5200 装载机残骸
   components:
   - type: Sprite
     drawdepth: BelowMobs
@@ -164,8 +161,8 @@
 - type: entity
   parent: RMCMechBase
   id: RMCMechPowerLoader
-  name: Caterpillar P-5000 Work Loader
-  description: The Caterpillar P-5000 Work Loader is a commercial mechanized exoskeleton used for lifting heavy materials and objects, first designed in January 29, 2025 by Weyland Corporation. An old but trusted design used in warehouses, constructions and military ships everywhere.
+  name: 卡特彼勒 P-5000 工作装载机
+  description: 卡特彼勒 P-5000 工作装载机是一款商用机械化外骨骼，用于搬运重型材料和物体，最初由威兰德公司于2025年1月29日设计。这是一种陈旧但可靠的设计，广泛用于各地的仓库、建筑工地和军用舰船。
   components:
   - type: PowerLoader
     skills:
@@ -176,9 +173,9 @@
   - type: Hands
   - type: GiveHands
     hands:
-    - name: Right Hand
+    - name: 右手
       location: Right
-    - name: Left Hand
+    - name: 左手
       location: Left
   - type: IgnoreInteractionRange
     whitelist:
@@ -191,37 +188,37 @@
 - type: entity
   parent: RMCMechPowerLoader
   id: RMCMechPowerLoaderGreen
-  name: John Deere 4300 Power Loader
-  description: John Deere 4300 Work Loader is a commercial mechanized exoskeleton used for lifting heavy materials and objects based on the Caterpillar P-5000, first designed in January 29, 2025 by Weyland Corporation. An old but trusted design used in warehouses, constructions and military ships everywhere. This one has a signature green and yellow livery.
+  name: 约翰迪尔 4300 动力装载机
+  description: 约翰迪尔 4300 动力装载机是一种商用机械外骨骼，用于举升重型材料和物体，以卡特彼勒 P-5000 为基础，最初由韦兰公司于 2025 年 1 月 29 日设计。这是一种老旧但可靠的设计，广泛应用于各地的仓库、建筑工地和军用舰船。这一台拥有标志性的绿色与黄色涂装。
   components:
   - type: Sprite
     layers:
     - state: powerloader_open_jd
-      map: [ "buckledLayer" ]
+      map: ["buckledLayer"]
   - type: GenericVisualizer
     visuals:
       enum.StrapVisuals.State:
         buckledLayer:
-          True: { state: powerloader_overlay_jd }
-          False: { state: powerloader_open_jd }
+          true: {state: powerloader_overlay_jd}
+          false: {state: powerloader_open_jd}
   - type: SpawnOnTerminate
     spawn: RMCMechPowerLoaderWreckageGreen
 
 - type: entity
   parent: RMCMechPowerLoader
   id: RMCMechPowerLoaderBlue
-  name: Caterpillar P-5200 Work Loader
-  description: A modernized design made to outdo the older models once used in fancy ports and facilities.
+  name: 卡特彼勒 P-5200 工作装载机
+  description: 现代化的设计，旨在超越曾用于高级港口和设施的老旧型号。
   components:
   - type: Sprite
     layers:
     - state: powerloader_open_ft
-      map: [ "buckledLayer" ]
+      map: ["buckledLayer"]
   - type: GenericVisualizer
     visuals:
       enum.StrapVisuals.State:
         buckledLayer:
-          True: { state: powerloader_overlay_ft }
-          False: { state: powerloader_open_ft }
+          true: {state: powerloader_overlay_ft}
+          false: {state: powerloader_open_ft}
   - type: SpawnOnTerminate
     spawn: RMCMechPowerLoaderWreckageBlue

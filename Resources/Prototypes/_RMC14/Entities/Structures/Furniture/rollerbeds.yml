@@ -14,12 +14,11 @@
     damageContainer: StructuralMarine
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: ReceiverXenoClaws
     minimumClawStrength: Normal
     hitsToDestroy: 1
@@ -28,10 +27,10 @@
     node: Metal
 
 - type: entity
-  parent: [ RMCRollerBedDestruction, RollerBed ]
+  parent: [RMCRollerBedDestruction, RollerBed]
   id: CMRollerBed
-  name: roller bed
-  description: A collapsed roller bed that can be carried around.
+  name: 轮床
+  description: 可折叠且便于随身携带的轮床。
   components:
   - type: Tag
     tags:
@@ -42,12 +41,12 @@
     noRot: true
     layers:
     - state: roller_down
-      map: [ "unfoldedLayer" ]
+      map: ["unfoldedLayer"]
     - state: folded
-      map: [ "foldedLayer" ]
+      map: ["foldedLayer"]
       visible: false
     - state: roller_up
-      map: [ "buckledLayer" ]
+      map: ["buckledLayer"]
       visible: false
   - type: Item
     size: Small
@@ -60,15 +59,15 @@
     visuals:
       enum.StrapVisuals.State:
         buckledLayer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.FoldedVisuals.State:
         foldedLayer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         unfoldedLayer:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
   - type: InteractedBlacklist
     blacklist:
       components:
@@ -98,20 +97,20 @@
 - type: entity
   parent: CMRollerBed
   id: CMPortableSurgicalBed
-  name: portable surgical bed
-  description: A collapsible surgical bed. It's not perfect, but it's the best you'll get short of an actual surgical table.
+  name: 便携式手术床
+  description: 一张可折叠的手术床。它并不完美，但除非有真正的手术台，否则这已经是你所能得到的最好的了。
   components:
   - type: Item
     heldPrefix: surgical
   - type: Sprite
     layers:
     - state: surgical_down
-      map: [ "unfoldedLayer" ]
+      map: ["unfoldedLayer"]
     - state: surgical_folded
-      map: [ "foldedLayer" ]
+      map: ["foldedLayer"]
       visible: false
     - state: surgical_up
-      map: [ "buckledLayer" ]
+      map: ["buckledLayer"]
       visible: false
   - type: Appearance
   - type: ReceiverXenoClaws
@@ -132,10 +131,10 @@
 
 # Copied most of RollerBed prototype except for pullable
 - type: entity
-  parent: [ RMCRollerBedDestruction, BaseDeployFoldable ]
+  parent: [RMCRollerBedDestruction, BaseDeployFoldable]
   id: RMCMedevacStretcher
-  name: medevac stretcher
-  description: A collapsible stretcher that can be activated to send patients to an overhead dropship.
+  name: 医疗后送担架
+  description: 一种可折叠担架，激活后可将患者送往头顶的运输机。
   components:
   - type: Item
     size: Small
@@ -151,18 +150,18 @@
     drawdepth: OverMobs
     layers:
     - state: stretcher_down
-      map: [ "unfoldedLayer" ]
+      map: ["unfoldedLayer"]
     - state: stretcher_folded
-      map: [ "foldedLayer" ]
+      map: ["foldedLayer"]
       visible: false
     - state: stretcher_box
-      map: [ "buckledLayer" ]
+      map: ["buckledLayer"]
       visible: false
     - state: beacon_active_up
-      map: [ "buckledBeaconLayer" ]
+      map: ["buckledBeaconLayer"]
       visible: false
     - state: winched_stretcher
-      map: [ "stretcherAnimatedLayer" ]
+      map: ["stretcherAnimatedLayer"]
       visible: false
   - type: Physics
     bodyType: Dynamic
@@ -170,8 +169,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 80
         mask:
@@ -185,23 +183,23 @@
     visuals:
       enum.StrapVisuals.State:
         buckledLayer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.FoldedVisuals.State: # Copypasta from BaseFoldable b/c collections don't merge when overriding component prototypes.
         foldedLayer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         unfoldedLayer:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
       enum.MedevacStretcherVisuals.BeaconState:
         buckledBeaconLayer:
-          On: { visible: true }
-          Off: { visible: false }
+          On: {visible: true}
+          Off: {visible: false}
       enum.MedevacStretcherVisuals.MedevacingState:
         buckledLayer:
-          True: { state: winched_stretcher }
-          False: { state: stretcher_box }
+          true: {state: winched_stretcher}
+          false: {state: stretcher_box}
   - type: Corrodible
   - type: MedevacStretcher
   - type: Tag
@@ -229,18 +227,18 @@
 - type: entity
   parent: CMRollerBed
   id: RMCRollerBedHospital
-  name: hospital roller bed
-  description: A basic cushioned leather board resting on a small frame. Not very comfortable at all, but allows the patient to rest lying down while moved to another location rapidly. Not great for surgery, but better than nothing.
+  name: 医院滚轮床
+  description: 一块搁在小框架上的简易软垫皮革板。一点也不舒服，但能让病人在被迅速转移到别处时躺下休息。不太适合做手术，但聊胜于无。
   components:
   - type: Sprite
     layers:
     - state: bigroller_down
-      map: [ "unfoldedLayer" ]
+      map: ["unfoldedLayer"]
     - state: surgical_folded
-      map: [ "foldedLayer" ]
+      map: ["foldedLayer"]
       visible: false
     - state: bigroller_up
-      map: [ "buckledLayer" ]
+      map: ["buckledLayer"]
       visible: false
 
 - type: entity
@@ -260,12 +258,12 @@
   - type: Sprite
     layers:
     - state: bigrollerblood_down
-      map: [ "unfoldedLayer" ]
+      map: ["unfoldedLayer"]
     - state: surgical_folded
-      map: [ "foldedLayer" ]
+      map: ["foldedLayer"]
       visible: false
     - state: bigrollerblood_up
-      map: [ "buckledLayer" ]
+      map: ["buckledLayer"]
       visible: false
 
 - type: entity
@@ -285,12 +283,12 @@
   - type: Sprite
     layers:
     - state: bigrollerhospitalsheet_down
-      map: [ "unfoldedLayer" ]
+      map: ["unfoldedLayer"]
     - state: surgical_folded
-      map: [ "foldedLayer" ]
+      map: ["foldedLayer"]
       visible: false
     - state: bigrollerhospitalsheet_up
-      map: [ "buckledLayer" ]
+      map: ["buckledLayer"]
       visible: false
 
 - type: entity
@@ -310,12 +308,12 @@
   - type: Sprite
     layers:
     - state: bigrollerhospitalsheet2_down
-      map: [ "unfoldedLayer" ]
+      map: ["unfoldedLayer"]
     - state: surgical_folded
-      map: [ "foldedLayer" ]
+      map: ["foldedLayer"]
       visible: false
     - state: bigrollerhospitalsheet2_up
-      map: [ "buckledLayer" ]
+      map: ["buckledLayer"]
       visible: false
 
 - type: entity

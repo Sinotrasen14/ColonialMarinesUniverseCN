@@ -1,17 +1,17 @@
 - type: entity
   parent: CMBaseWeaponSMG
-  name: "L7A3 Submachine Gun"   #CM name is L6A2
+  name: "L7A3冲锋枪"               #CM name is L6A2
   suffix: PVE, Filled
   id: RMCWeaponSMGL7A3
-  description: RCM adopted variant of the M63 SMG, re-engineered for better weight, handling and accuracy. Typically used in CQB engagements such as building-clearance, where the L24A1 proved a tad too unwieldy. Sometimes referred to as the "Little Armat" by Royal Marines.
+  description: RCM采用了M63冲锋枪的改型，为改善重量、操控性和精度而重新设计。通常用于室内近战交火，例如建筑清剿，而L24A1在此类场景中显得有点过于笨重。皇家海军陆战队有时称其为“小阿玛特”。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/L7A3.rsi
     layers:
     - state: bolt-open
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/L7A3.rsi
   - type: Gun
@@ -47,7 +47,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
         priority: 2
@@ -56,7 +56,7 @@
           tags:
           - RMCMagazineSMGL7A3SquashHead
   - type: GunDamageModifier
-    multiplier: 1.35        
+    multiplier: 1.35
   - type: AttachableHolder
     slots:
       rmc-aslot-barrel:
@@ -102,19 +102,19 @@
     tags:
     - RMCWeaponSMG
     - RMCWeaponSMGL7A3
-  
+
 
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSMGL7A3SquashHead
-  name: "L7A3 Magazine Squash-Head (9mm)"
+  name: "L7A3弹匣弹头型（9毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineSmg
     - RMCMagazineSMGL7A3SquashHead
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeSMG9mmSquashHead
@@ -139,7 +139,7 @@
 - type: entity
   parent: CMCartridgeSMGBase
   id: RMCCartridgeSMG9mmSquashHead
-  name: 9mm Squash-Head Cartridge
+  name: 9毫米平头弹
   components:
   - type: Tag
     tags:
@@ -151,8 +151,8 @@
 - type: entity # todo rmc14 this is missing a lot of effects, shrapnel, debilitate etc
   parent: CMBulletBase
   id: RMCBulletSMG9mmSquashHead
-  name: 9mmSquash-HeadBullet
-  categories: [ HideSpawnMenu ]
+  name: 9毫米扁头子弹
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -168,11 +168,11 @@
   - type: CMArmorPiercing
     amount: 15
 
-- type: Tag    
+- type: Tag
   id: RMCWeaponSMGL7A3
 
-- type: Tag    
+- type: Tag
   id: RMCMagazineSMGL7A3SquashHead
 
-- type: Tag    
+- type: Tag
   id: RMCCartridgeSMG9mmSquashHead

@@ -1,7 +1,7 @@
 - type: entity
   parent: BoxFolderClipboard
   id: CMClipboard
-  name: clipboard
+  name: 剪贴板
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/clipboard.rsi
@@ -37,7 +37,7 @@
         name: clipboard-slot-component-slot-name-pen
         whitelist:
           tags:
-            - Write
+          - Write
         insertOnInteract: true
   - type: EntityTableContainerFill
     containers:
@@ -61,18 +61,18 @@
 - type: entity
   parent: CMClipboard
   id: RMCWeYaClipboard
-  name: Weyland-Yutani clipboard
-  description: A branded clipboard, perfect for keeping your forms in order.
+  name: 维兰德-汤谷写字板
+  description: 一块品牌写字板，非常适合让您的表格井井有条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/weya_clipboard.rsi
     layers:
     - state: clipboard
     - state: clipboard_paper
-      map: [ "clipboard_paper" ]
+      map: ["clipboard_paper"]
       visible: false
     - state: clipboard_pen
-      map: [ "clipboard_pen" ]
+      map: ["clipboard_pen"]
       visible: false
     - state: clipboard_over
   - type: Item

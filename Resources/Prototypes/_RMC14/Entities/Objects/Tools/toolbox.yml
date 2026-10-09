@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: ToolboxBase
   abstract: true
   id: RMCToolboxBase
@@ -29,7 +29,7 @@
       - Xeno
 
 - type: entity
-  name: emergency toolbox
+  name: 应急工具箱
   parent: [RMCToolboxBase, ToolboxEmergency]
   id: RMCToolboxEmergency
   components:
@@ -58,7 +58,7 @@
   suffix: RMC14, Filled
 
 - type: entity
-  name: electrical toolbox
+  name: 电气工具箱
   parent: [RMCToolboxBase, ToolboxElectrical]
   id: RMCToolboxElectrical
   components:
@@ -90,7 +90,7 @@
   suffix: RMC14, Filled
 
 - type: entity
-  name: mechanical toolbox
+  name: 机械工具箱
   parent: [RMCToolboxBase, ToolboxMechanical]
   id: RMCToolboxMechanical
   components:
@@ -133,8 +133,8 @@
   suffix: RMC14, Filled, Green
 
 - type: entity
-  name: suspicious toolbox
-  description: A compact and suspicious looking toolbox. This one is small enough to fit into a bag.
+  name: 可疑工具箱
+  description: 一个小巧且看起来可疑的工具箱。这个小到可以放进包里。
   parent: RMCToolboxBase
   id: RMCToolboxSyndicate
   components:

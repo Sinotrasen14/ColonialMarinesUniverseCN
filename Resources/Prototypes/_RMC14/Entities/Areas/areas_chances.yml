@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaLv522
   components:
@@ -12,7 +12,7 @@
 - type: entity
   parent: RMCAreaLv522
   id: RMCAreaLv522Indoors
-  name: Chance's Claim - Indoors
+  name: 钱斯的领地——室内
   components:
   - type: Sprite
     state: cliff_blocked
@@ -31,7 +31,7 @@
 - type: entity
   parent: RMCAreaLv522
   id: RMCAreaLv522Outdoors
-  name: Chance's Claim - Outdoors
+  name: 钱斯的领地——户外
   components:
   - type: Sprite
     state: cliff_blocked
@@ -49,7 +49,7 @@
 - type: entity
   parent: RMCAreaLv522
   id: RMCAreaLv522Oob
-  name: LV522 - Out Of Bounds
+  name: LV522 - 界外
   components:
   - type: Sprite
     state: unknown
@@ -73,7 +73,7 @@
 - type: entity
   parent: RMCAreaLv522Oob
   id: RMCAreaLv522OobWYVault
-  name: LV522 - WEYA Secure Vault
+  name: LV522 - WEYA 安全保险库
   components:
   - type: Sprite
     state: blue
@@ -81,7 +81,7 @@
 - type: entity
   parent: RMCAreaLv522
   id: RMCAreaLv522LandingZone1
-  name: Chance's Claim - Landing Zone One
+  name: 钱斯的领地——一号着陆区
   components:
   - type: Sprite
     state: explored
@@ -109,7 +109,7 @@
 - type: entity
   parent: RMCAreaLv522LandingZone1
   id: RMCAreaLv522LandingZone1Tunnel
-  name: Chance's Claim - Landing Zone One Tunnels
+  name: 钱斯的领地 - 一号着陆区隧道
   components:
   - type: Area
     CAS: true
@@ -126,7 +126,7 @@
 - type: entity
   parent: RMCAreaLv522LandingZone1Tunnel
   id: RMCAreaLv522LandingZone1TunnelFar
-  name: Chance's Claim - Landing Zone One Tunnels
+  name: 钱斯的领地——一号着陆区隧道
   components:
   - type: Area
     CAS: true
@@ -144,7 +144,7 @@
 - type: entity
   parent: RMCAreaShuttleDrop1
   id: RMCAreaShuttleDrop1Lv522
-  name: Chance's Claim - Dropship Alamo Landing Zone
+  name: 钱斯的领地——阿拉莫运输机着陆区
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_shiva.rsi
@@ -156,7 +156,7 @@
 - type: entity
   parent: RMCAreaLv522LandingZone1
   id: RMCAreaLv522LandingZone1Lz1Console
-  name: Chance's Claim - Dropship Alamo Console
+  name: 钱斯的领地——阿拉莫运输舰控制台
   components:
   - type: Sprite
     state: tcomsatcham
@@ -166,7 +166,7 @@
 - type: entity
   parent: RMCAreaLv522
   id: RMCAreaLv522LandingZone2
-  name: Chance's Claim - Landing Zone Two
+  name: 钱斯的领地——着陆区二号
   components:
   - type: Sprite
     state: explored
@@ -194,7 +194,7 @@
 - type: entity
   parent: RMCAreaShuttleDrop2
   id: RMCAreaShuttleDrop2Lv522
-  name: Chance's Claim - Dropship Normandy Landing Zone
+  name: 钱斯的领地 - 运输舰诺曼底登陆区
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_shiva.rsi
@@ -207,7 +207,7 @@
 - type: entity
   parent: RMCAreaLv522LandingZone2
   id: RMCAreaLv522LandingZone2Lz2Console
-  name: Chance's Claim - Dropship Normandy Console
+  name: 钱斯的领地 - 诺曼底号运输船控制台
   components:
   - type: Sprite
     state: tcomsatcham
@@ -215,7 +215,7 @@
 - type: entity
   parent: RMCAreaLv522
   id: RMCAreaLv522LandingZoneForecon
-  name: Chance's Claim - FORECON Shuttle
+  name: 钱斯的矿权地 - FORECON 穿梭机
   components:
   - type: Sprite
     state: shuttle
@@ -235,7 +235,7 @@
 - type: entity
   parent: RMCAreaLv522LandingZoneForecon
   id: RMCAreaLv522LandingZoneForeconLandingZone3
-  name: Chance's claim - Landing Zone 3
+  name: 钱斯的领地 - 3号着陆区
   components:
   - type: Sprite
     state: blue
@@ -254,7 +254,7 @@
 - type: entity
   parent: RMCAreaLv522LandingZoneForecon
   id: RMCAreaLv522LandingZoneForeconLandingZone4
-  name: Chance's claim - Landing Zone 4
+  name: 钱斯的领地——着陆区4号
   components:
   - type: Sprite
     state: blue
@@ -273,17 +273,17 @@
 - type: entity
   parent: RMCAreaLv522LandingZoneForecon
   id: RMCAreaLv522LandingZoneForeconUD6Typhoon
-  name: Chance's Claim - UD6 Typhoon
+  name: 钱斯的领地 - UD6台风
 
 - type: entity
   parent: RMCAreaLv522LandingZoneForecon
   id: RMCAreaLv522LandingZoneForeconUD6Tornado
-  name: Chance's Claim - UD6 Tornado
+  name: 钱斯的领地 - UD6 龙卷风
 
 - type: entity
   parent: RMCAreaLv522Outdoors
   id: RMCAreaLv522OutdoorsColonyStreets
-  name: Colony Streets
+  name: 殖民地街道
   components:
   - type: Sprite
     state: green
@@ -301,7 +301,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsContainers
-  name: Colony Streets - Container Yard
+  name: 殖民地街道 - 集装箱堆场
   components:
   - type: Sprite
     state: yellow
@@ -309,7 +309,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsWindbreaker
-  name: Colony Windbreakers
+  name: Colony 防风夹克
   components:
   - type: Sprite
     state: tcomsatcham
@@ -328,7 +328,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreetsWindbreaker
   id: RMCAreaLv522OutdoorsColonyStreetsWindbreakerObservation
-  name: Colony Windbreakers - Observation
+  name: 殖民地防风夹克——观察
   components:
   - type: Sprite
     state: purple
@@ -347,7 +347,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsCentralStreets
-  name: Central Streets - West
+  name: 中央街道 - 西区
   components:
   - type: Sprite
     state: west
@@ -357,7 +357,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsEastCentralStreet
-  name: Central Streets - East
+  name: 中央街道东区
   components:
   - type: Sprite
     state: east
@@ -367,7 +367,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsSouthStreet
-  name: Colony Streets - South
+  name: 殖民地街道 - 南部
   components:
   - type: Sprite
     state: south
@@ -377,7 +377,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsSouthEastStreet
-  name: Colony Streets - Southeast
+  name: 殖民地街道 - 东南
   components:
   - type: Sprite
     state: southeast
@@ -387,7 +387,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsSouthWestStreet
-  name: Colony Streets - Southwest
+  name: 殖民地街道－西南
   components:
   - type: Sprite
     state: southwest
@@ -397,7 +397,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsNorthWestStreet
-  name: Colony Streets - Northwest
+  name: 殖民地街道 - 西北
   components:
   - type: Sprite
     state: northwest
@@ -405,7 +405,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsNorthEastStreet
-  name: Colony Streets - Northeast
+  name: 聚居区街道 - 东北
   components:
   - type: Sprite
     state: northeast
@@ -413,7 +413,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsNorthStreet
-  name: Colony Streets - North
+  name: 殖民地街道 - 北区
   components:
   - type: Sprite
     state: north
@@ -421,7 +421,7 @@
 - type: entity
   parent: RMCAreaLv522OutdoorsColonyStreets
   id: RMCAreaLv522OutdoorsColonyStreetsWinde
-  name: Colony Streets - Northwest
+  name: 殖民地街道——西北
   components:
   - type: Sprite
     state: northwest
@@ -429,7 +429,7 @@
 - type: entity
   parent: RMCAreaLv522Indoors
   id: RMCAreaLv522IndoorsLoneBuildings
-  name: LV522 - Lone buildings
+  name: LV522 - 孤立建筑
   components:
   - type: Sprite
     state: green
@@ -437,7 +437,7 @@
 - type: entity
   parent: RMCAreaLv522Indoors
   id: RMCAreaLv522IndoorsToilet
-  name: LV522 - Outdoor Toilets
+  name: LV522 - 户外厕所
   components:
   - type: Sprite
     state: green
@@ -448,7 +448,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsLoneBuildings
   id: RMCAreaLv522IndoorsLoneBuildingsEngineering
-  name: Emergency Engineering
+  name: 应急工程
   components:
   - type: Sprite
     state: engine_smes
@@ -459,7 +459,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsLoneBuildings
   id: RMCAreaLv522IndoorsLoneBuildingsSpaceport
-  name: North LZ1 - Spaceport
+  name: 北部 LZ1 - 太空港
   components:
   - type: Sprite
     state: red
@@ -469,7 +469,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsLoneBuildings
   id: RMCAreaLv522IndoorsLoneBuildingsOutdoorBot
-  name: East LZ1 - Outdoor T-Comms
+  name: 东LZ1 - 室外通信
   components:
   - type: Sprite
     state: yellow
@@ -488,7 +488,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsLoneBuildings
   id: RMCAreaLv522IndoorsLoneBuildingsStorageBlocks
-  name: Outdoor Storage
+  name: 户外储物
   components:
   - type: Sprite
     state: blue
@@ -498,7 +498,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsLoneBuildings
   id: RMCAreaLv522IndoorsLoneBuildingsChunk
-  name: Chunk 'N Dump
+  name: 大块垃圾场
   components:
   - type: Sprite
     state: blue
@@ -508,7 +508,7 @@
 - type: entity
   parent: RMCAreaLv522Indoors
   id: RMCAreaLv522IndoorsABlock
-  name: A-Block
+  name: A座
   components:
   - type: Sprite
     state: blue
@@ -526,7 +526,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockAdmin
-  name: A-Block - Colony Operations Centre
+  name: A区－殖民地运营中心
   components:
   - type: Sprite
     state: mechbay
@@ -536,7 +536,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockDorms
-  name: A-Block - Western Dorms And Offices
+  name: A座 - 西区宿舍和办公室
   components:
   - type: Sprite
     state: fitness
@@ -559,7 +559,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockFitness
-  name: A-Block - Fitness Centre
+  name: A座 - 健身中心
   components:
   - type: Sprite
     state: fitness
@@ -582,7 +582,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockHallway
-  name: A-Block - South Operations Hallway
+  name: A区 - 南部运营走廊
   components:
   - type: Sprite
     state: green
@@ -605,7 +605,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockMedical
-  name: A-Block - Medical
+  name: A座 - 医疗
   components:
   - type: Sprite
     state: medbay
@@ -630,7 +630,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockSecurity
-  name: A-Block - Security
+  name: A区 - 安保
   components:
   - type: Sprite
     state: head_quarters
@@ -655,7 +655,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockKitchen
-  name: A-Block - Kitchen And Dining
+  name: A区 - 厨房和餐厅
   components:
   - type: Sprite
     state: kitchen
@@ -693,7 +693,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockExecutive
-  name: A-Block - Executive Suite
+  name: A座－行政套房
   components:
   - type: Sprite
     state: captain
@@ -716,7 +716,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockDormNorth
-  name: A-Block - Northern Shared Dorms
+  name: A栋 - 北侧共享宿舍
   components:
   - type: Sprite
     state: fitness
@@ -724,7 +724,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockBridges
-  name: A-Block - Western Dorms To Security Bridge
+  name: A区－西区宿舍至安全桥
   components:
   - type: Sprite
     state: hallc1
@@ -742,7 +742,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlockBridges
   id: RMCAreaLv522IndoorsABlockBridgesDormsFitness
-  name: A-Block - Corporate To Fitness Bridge
+  name: A座 - 企业至健身桥
   components:
   - type: Sprite
     state: hallc1
@@ -760,7 +760,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlockBridges
   id: RMCAreaLv522IndoorsABlockBridgesCorpoFitness
-  name: A-Block - Western Dorms To Fitness
+  name: A区 - 西区宿舍至健身中心
   components:
   - type: Sprite
     state: hallc1
@@ -778,7 +778,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlockBridges
   id: RMCAreaLv522IndoorsABlockBridgesCorpo
-  name: A-Block - Security To Corporate Bridge
+  name: A区 - 安保区至公司桥
   components:
   - type: Sprite
     state: hallc1
@@ -786,7 +786,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlockBridges
   id: RMCAreaLv522IndoorsABlockBridgesOpCentre
-  name: A-Block - Security To Operations Centre Bridge
+  name: A座 - 保安至运营中心天桥
   components:
   - type: Sprite
     state: hallc1
@@ -794,7 +794,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlockBridges
   id: RMCAreaLv522IndoorsABlockBridgesGardenBridge
-  name: A-Block - Garden Bridge
+  name: A区 - 花园桥
   components:
   - type: Sprite
     state: hallc2
@@ -802,7 +802,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockCorpo
-  name: A-Block - Corporate Office
+  name: A座 - 公司办公室
   components:
   - type: Sprite
     state: toxlab
@@ -825,7 +825,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsABlock
   id: RMCAreaLv522IndoorsABlockGarden
-  name: A-Block - West Operations Garden
+  name: A区——西运营花园
   components:
   - type: Sprite
     state: green
@@ -843,7 +843,7 @@
 - type: entity
   parent: RMCAreaLv522Indoors
   id: RMCAreaLv522IndoorsBBlock
-  name: B-Block
+  name: B区
   components:
   - type: Sprite
     state: red
@@ -862,7 +862,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsBBlock
   id: RMCAreaLv522IndoorsBBlockHydro
-  name: B-Block - Hydroponics
+  name: B区 - 水培
   components:
   - type: Sprite
     state: hydro
@@ -888,7 +888,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsBBlock
   id: RMCAreaLv522IndoorsBBlockBar
-  name: B-Block - Bar
+  name: B区 - 酒吧
   components:
   - type: Sprite
     state: cafeteria
@@ -896,7 +896,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsBBlock
   id: RMCAreaLv522IndoorsBBlockBridge
-  name: B-Block - Hydroponics Bridge Network
+  name: B区 - 水培桥接网络
   components:
   - type: Sprite
     state: hallc1
@@ -915,7 +915,7 @@
 - type: entity
   parent: RMCAreaLv522Indoors
   id: RMCAreaLv522IndoorsCBlock
-  name: C-Block
+  name: C 区
   components:
   - type: Sprite
     state: green
@@ -925,7 +925,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsCBlock
   id: RMCAreaLv522IndoorsCBlockCargo
-  name: C-Block - Cargo
+  name: C区 - 货物
   components:
   - type: Sprite
     state: primarystorage
@@ -933,7 +933,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsCBlock
   id: RMCAreaLv522IndoorsCBlockMining
-  name: C-Block - Mining
+  name: C-Block - 挖矿
   components:
   - type: Sprite
     state: yellow
@@ -943,7 +943,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsCBlock
   id: RMCAreaLv522IndoorsCBlockGarage
-  name: C-Block - Garage
+  name: C-Block - 车库
   components:
   - type: Sprite
     state: storage
@@ -951,7 +951,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsCBlock
   id: RMCAreaLv522IndoorsCBlockCasino
-  name: C-Block - Casino
+  name: C-Block - 赌场
   components:
   - type: Sprite
     state: purple
@@ -959,7 +959,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsCBlock
   id: RMCAreaLv522IndoorsCBlockBridge
-  name: C-Block - Cargo To Garage Bridge
+  name: C区——货物到车库桥
   components:
   - type: Sprite
     state: hallc1
@@ -977,7 +977,7 @@
 - type: entity
   parent: RMCAreaLv522IndoorsCBlock
   id: RMCAreaLv522IndoorsCBlockTComm
-  name: C-Block - West Garage T-comms
+  name: C区——西车库通信
   components:
   - type: Sprite
     state: hallc1
@@ -985,7 +985,7 @@
 - type: entity
   parent: RMCAreaLv522Outdoors
   id: RMCAreaLv522OutdoorsNRockies
-  name: North Colony - Rockies
+  name: 北殖民地 - 落基山脉
   components:
   - type: Sprite
     state: away
@@ -993,7 +993,7 @@
 - type: entity
   parent: RMCAreaLv522Outdoors
   id: RMCAreaLv522OutdoorsNwRockies
-  name: Northwest Colony - Rockies
+  name: 西北殖民地 - 落基山脉
   components:
   - type: Sprite
     state: away1
@@ -1001,7 +1001,7 @@
 - type: entity
   parent: RMCAreaLv522Outdoors
   id: RMCAreaLv522OutdoorsWRockies
-  name: West Colony - Rockies
+  name: 西殖民地 - 落基山脉
   components:
   - type: Sprite
     state: away2
@@ -1009,7 +1009,7 @@
 - type: entity
   parent: RMCAreaLv522Outdoors
   id: RMCAreaLv522OutdoorsPNRockies
-  name: North Processor - Rockies
+  name: 北部处理器 - 落基山脉
   components:
   - type: Sprite
     state: away
@@ -1017,7 +1017,7 @@
 - type: entity
   parent: RMCAreaLv522Outdoors
   id: RMCAreaLv522OutdoorsPNwRockies
-  name: Northwest Processor - Rockies
+  name: 西北处理厂 - 落基山脉
   components:
   - type: Sprite
     state: away1
@@ -1025,7 +1025,7 @@
 - type: entity
   parent: RMCAreaLv522Outdoors
   id: RMCAreaLv522OutdoorsPWRockies
-  name: West Processor - Rockies
+  name: 西部处理器 - 落基山脉
   components:
   - type: Sprite
     state: away2
@@ -1033,7 +1033,7 @@
 - type: entity
   parent: RMCAreaLv522Outdoors
   id: RMCAreaLv522OutdoorsPERockies
-  name: East Processor - Rockies
+  name: 东部处理器 - 落基山脉
   components:
   - type: Sprite
     state: away3
@@ -1041,7 +1041,7 @@
 - type: entity
   parent: RMCAreaLv522
   id: RMCAreaLv522Atmos
-  name: Atmospheric Processor
+  name: 大气处理器
   components:
   - type: Sprite
     state: unknown
@@ -1061,7 +1061,7 @@
 - type: entity
   parent: RMCAreaLv522Atmos
   id: RMCAreaLv522AtmosOutdoor
-  name: Atmospheric Processor - Outdoors
+  name: 大气处理器 - 户外
   components:
   - type: Sprite
     state: quart
@@ -1079,7 +1079,7 @@
 - type: entity
   parent: RMCAreaLv522Atmos
   id: RMCAreaLv522AtmosEastReactor
-  name: Atmospheric Processor - Eastern Reactor
+  name: 大气处理器 - 东部反应堆
   components:
   - type: Sprite
     state: blue
@@ -1087,7 +1087,7 @@
 - type: entity
   parent: RMCAreaLv522AtmosEastReactor
   id: RMCAreaLv522AtmosEastReactorNorth
-  name: Atmospheric Processor - Outer East Reactor - North
+  name: 大气处理器 - 外东反应堆 - 北
   components:
   - type: Sprite
     state: yellow
@@ -1105,7 +1105,7 @@
 - type: entity
   parent: RMCAreaLv522AtmosEastReactor
   id: RMCAreaLv522AtmosEastReactorSouth
-  name: Atmospheric Processor - Outer East Reactor - south
+  name: 大气处理器 - 外东反应堆 - 南部
   components:
   - type: Sprite
     state: red
@@ -1138,7 +1138,7 @@
 - type: entity
   parent: RMCAreaLv522AtmosEastReactor
   id: RMCAreaLv522AtmosEastReactorEast
-  name: Atmospheric Processor - Outer East Reactor - east
+  name: 大气处理器 - 外部东部反应堆 - 东
   components:
   - type: Sprite
     state: green
@@ -1156,7 +1156,7 @@
 - type: entity
   parent: RMCAreaLv522AtmosEastReactor
   id: RMCAreaLv522AtmosEastReactorWest
-  name: Atmospheric Processor - Outer East Reactor - west
+  name: 大气处理器 - 外东反应堆 - 西
   components:
   - type: Sprite
     state: purple
@@ -1174,7 +1174,7 @@
 - type: entity
   parent: RMCAreaLv522Atmos
   id: RMCAreaLv522AtmosWestReactor
-  name: Atmospheric Processor - Western Reactor
+  name: 大气处理器－西部反应堆
   components:
   - type: Sprite
     state: blue
@@ -1182,7 +1182,7 @@
 - type: entity
   parent: RMCAreaLv522Atmos
   id: RMCAreaLv522AtmosCargoIntake
-  name: Atmospheric Processor - Cargo Intake
+  name: 大气处理器 - 货物入口
   components:
   - type: Sprite
     state: yellow
@@ -1200,7 +1200,7 @@
 - type: entity
   parent: RMCAreaLv522Atmos
   id: RMCAreaLv522AtmosCommandCentre
-  name: Atmospheric Processor - Central Command
+  name: 大气处理器－中央指挥部
   components:
   - type: Sprite
     state: red
@@ -1218,7 +1218,7 @@
 - type: entity
   parent: RMCAreaLv522Atmos
   id: RMCAreaLv522AtmosNorthCommandCentre
-  name: Atmospheric Processor - North Command Centre Checkpoint
+  name: 大气处理器－北方指挥中心检查点
   components:
   - type: Sprite
     state: green
@@ -1236,7 +1236,7 @@
 - type: entity
   parent: RMCAreaLv522Atmos
   id: RMCAreaLv522AtmosFilt
-  name: Atmospheric Processor - Filtration System
+  name: 大气处理器 - 过滤系统
   components:
   - type: Sprite
     state: mechbay
@@ -1254,7 +1254,7 @@
 - type: entity
   parent: RMCAreaLv522Atmos
   id: RMCAreaLv522AtmosWayInCommandCentre
-  name: Atmospheric Processor - North Corpo Reactor Entrance
+  name: 大气处理器 - 北部公司反应堆入口
   components:
   - type: Sprite
     state: blue
@@ -1272,7 +1272,7 @@
 - type: entity
   parent: RMCAreaLv522Atmos
   id: RMCAreaLv522AtmosSewer
-  name: Atmospheric Processor - Sewer
+  name: 大气处理器 - 下水道
   components:
   - type: Sprite
     state: red
@@ -1290,7 +1290,7 @@
 - type: entity
   parent: RMCAreaLv522Atmos
   id: RMCAreaLv522AtmosReactorGarage
-  name: Atmospheric Processor - Garage
+  name: 大气处理器 - 车库
   components:
   - type: Sprite
     state: green

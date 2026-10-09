@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: RMCBarricadeRazorwire
-  name: razorwire
-  description: A set of razorwire, able to slow down anything that tries to move through it. Cut with wirecutters to disable, then unwrench to recover.
+  name: 铁丝网
+  description: 一组铁丝网，能够减缓任何试图穿过它的东西。用钢丝钳剪断可使其失效，然后用扳手拆下即可回收。
   placement:
     mode: SnapgridCenter
   components:
@@ -31,15 +31,13 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/_RMC14/Items/barbed_wire_movement.ogg"
+        path: "/Audio/_RMC14/Items/barbed_wire_movement.ogg"
   - type: Physics
     bodyType: Static
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         hard: false
         density: 50
@@ -64,8 +62,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -77,7 +74,7 @@
         sound:
           path: /Audio/_RMC14/Structures/metalhit.ogg
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Anchorable
   - type: Barricade
   - type: Construction
@@ -93,8 +90,8 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: RMCBarricadeRazorwireCut
-  name: cut razorwire
-  description: A set of razorwire that has been cut. No longer functional. Use a wrench to tear it up and recover the remaining wire.
+  name: 被剪断的刀片刺网
+  description: 一套已被剪断的刀片刺网。已无法使用。使用扳手将其拆毁并回收剩余的金属丝。
   placement:
     mode: SnapgridCenter
   components:
@@ -113,8 +110,7 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/_RMC14/Items/barbed_wire_movement.ogg"
+        path: "/Audio/_RMC14/Items/barbed_wire_movement.ogg"
   - type: Physics
     bodyType: Static
     canCollide: false
@@ -124,8 +120,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -137,7 +132,7 @@
         sound:
           path: /Audio/_RMC14/Items/barbed_wire_movement.ogg
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Anchorable
   - type: Construction
     graph: RazorwireGraph

@@ -1,14 +1,14 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: RMCIntelDetector
-  name: data detector
-  description: A device that detects objects that may be useful for intel gathering.
+  name: 数据探测器
+  description: 一种用于探测可能有助于情报收集的物体的装置。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/intel_detector.rsi
     layers:
     - state: datadetector
-      map: [ "base" ]
+      map: ["base"]
     state: detector
   - type: Item
     size: Normal
@@ -22,8 +22,8 @@
     visuals:
       enum.IntelDetectorLayer.State:
         base:
-          True: { state: datadetector_on_0 }
-          False: { state: datadetector }
+          true: {state: datadetector_on_0}
+          false: {state: datadetector}
   - type: Tag
     tags:
     - RMCDetector

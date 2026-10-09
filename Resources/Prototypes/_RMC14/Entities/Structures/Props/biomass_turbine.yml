@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCPropBase
   id: RMCPropTurbine
-  name: power turbine
-  description: A gigantic turbine that runs on god knows what. It could probably be turned on by someone with the correct know-how.
+  name: 动力涡轮
+  description: 一台巨大的涡轮机，靠天知道什么东西运转。它或许可以由懂得正确方法的人启动。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Props/biomass_turbine.rsi
@@ -10,8 +10,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-1.5,0.5,1.5"
         density: 190
         layer:
@@ -20,9 +19,9 @@
 - type: entity
   parent: RMCPropBase
   id: RMCPropTurbineStrutsRight
-  name: power turbine struts
+  name: 动力涡轮支柱
   suffix: Right
-  description: Pipes, or maybe support struts that lead into, or perhaps support that big ol' turbine.
+  description: 管道，也许是通向涡轮的支撑杆，又或者是用来支撑那个大大的涡轮的。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Props/biomass_turbine.rsi
@@ -41,7 +40,7 @@
 - type: entity
   parent: RMCPropBase
   id: RMCPropTurbineStrutsBorder
-  name: power turbine warning stripes
+  name: 动力涡轮警示条纹
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Props/biomass_turbine.rsi

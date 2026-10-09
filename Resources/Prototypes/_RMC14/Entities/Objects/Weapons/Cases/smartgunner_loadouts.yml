@@ -1,15 +1,15 @@
-﻿- type: entity
+- type: entity
   parent: RMCBaseEquipmentCase
   id: CMSmartGunOperatorEquipmentCase
-  name: M56B smart gun system case
-  description: "A large case containing an M56B Smartgun, M56 combat harness, head mounted sight and powerpack.\n\nNOTE: You cannot put items back inside this case."
+  name: M56B智能枪系统箱
+  description: "一个大箱子，内装一把M56B智能枪、一套M56战斗背带、一个头戴式瞄准具和一个电源包。\n\n注意：你无法将物品放回此箱内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: smartgun
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -42,15 +42,15 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: CMCOSmartGunOperatorEquipmentCase
-  name: M56B smart gun system case
-  description: "A large case containing an M56C 'cavalier' Smartgun, M56 combat harness, head mounted sight and powerpack.\n\nNOTE: You cannot put items back inside this case."
+  name: M56B智能枪系统箱
+  description: "一个大型箱，内装一把M56C“骑士”智能枪、M56战斗背带、头戴式瞄准具和电源包。\n\n注意：不能将物品放回此箱内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: smartgun
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Huge
     grid:

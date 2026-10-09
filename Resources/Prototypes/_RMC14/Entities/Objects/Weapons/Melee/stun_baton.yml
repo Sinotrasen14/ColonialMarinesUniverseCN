@@ -1,14 +1,14 @@
 - type: entity
   parent: BaseItem
   id: RMCStunBatonDamaged
-  name: damaged stun baton
-  description: A stun baton for incapacitating people with. This one seems pretty broken and beat up, especially around the on/off switch..
+  name: 损坏的电击棒
+  description: 一根用来使人丧失行动能力的电击棒。这一根似乎已经相当破损且磨损严重，尤其是在开关附近。。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Melee/stun_baton.rsi
     layers:
     - state: stunbaton_off
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: Clothing
     quickEquip: false
     sprite: _RMC14/Objects/Weapons/Melee/stun_baton.rsi
@@ -21,16 +21,16 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-     enum.ToggleableVisuals.Enabled:
+      enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: {state: stunbaton_on}
-          False: {state: stunbaton_off}
+          true: {state: stunbaton_on}
+          false: {state: stunbaton_off}
 
 - type: entity
   parent: RMCStunBatonDamaged
   id: CMStunbaton
-  name: stun baton
-  description: A stun baton for incapacitating people with.
+  name: 电击棒
+  description: 一根用于使他人丧失行动能力的电击棒。
   components:
   - type: ItemToggleExaminableStatus
   - type: ItemToggleRequiresCharge
@@ -98,8 +98,8 @@
 - type: entity
   parent: CMStunbaton
   id: RMCTelescopicBaton
-  name: telescopic baton
-  description: A compact yet rebalanced personal defense weapon. Can be concealed when folded.
+  name: 伸缩警棍
+  description: 一把紧凑但经过重新平衡的个人防卫武器。折叠后可以隐藏。
   components:
   - type: Item
     size: Small

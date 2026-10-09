@@ -1,8 +1,8 @@
-﻿- type: entity
-  parent: [ CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder ]
+- type: entity
+  parent: [CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder]
   id: RMCWeaponFlamerColony
-  name: LC9 incinerator unit
-  description: The LC9 is a large, bulky incinerator designed for civilian use with a unique flame intensity switch on the bottom. The low-intensity setting serves as a welding torch, with the high-intensity setting used for organic matter disposal and waste clearing. The switch is jammed to the high-intensity setting.
+  name: LC9焚化炉装置
+  description: LC9是一种大型、笨重的焚化炉，专为民用设计，底部有一个独特的火焰强度开关。低强度档可用作焊炬，高强度档用于处理有机物和清理垃圾。该开关卡在高强度档上。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Flamethrower/colony.rsi
@@ -38,7 +38,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Tank
+        name: 坦克
         startingItem: RMCTankFlamerColony
         insertSound: /Audio/_RMC14/Weapons/Handling/flamer_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Handling/flamer_unload.ogg
@@ -79,12 +79,12 @@
     visuals:
       enum.RMCFlamerVisualLayers.Strip:
         enum.RMCFlamerVisualLayers.Strip:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.RMCIgniterVisuals.Ignited:
         enum.RMCIgniterVisuals.Ignited:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Tag
     tags:
     - RMCTankFlamerColony
@@ -97,8 +97,8 @@
 - type: entity
   parent: RMCBaseTankFlamer
   id: RMCTankFlamerColony
-  name: LC9 flamer tank
-  description: A fuel tank used to store fuel for use in the LC9 incinerator unit. Handle with care.
+  name: LC9 火焰喷射器燃料罐
+  description: 用于储存燃料的燃料罐，供 LC9 焚烧装置使用。小心搬运。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/flamethrower.rsi

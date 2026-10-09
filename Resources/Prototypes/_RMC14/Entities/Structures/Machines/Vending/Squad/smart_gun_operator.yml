@@ -3,30 +3,30 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechSGGear
-  name: ColMarTech squad smartgunner gear rack
-  description: An automated gear rack for Squad Smartgunners.
+  name: ColMarTech 小队智能机枪手装备架
+  description: 小队智能机枪手用的自动装备架。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessSmartPrep" ]
+    - ["CMAccessSmartPrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/smart_gun_operator_gear.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMSmartGunOperator
     sections:
-    - name: Smart Gun Set (Mandatory)
+    - name: 智能枪械套装（必填）
       takeAll: CMSmartGunSet
       entries:
       - id: CMSmartGunOperatorEquipmentCase
-    - name: Gun Attachments
-      choices: { CMGunAttachments: 1 }
+    - name: 枪械配件
+      choices: {CMGunAttachments: 1}
       entries:
       - id: RMCAttachmentLaserSight
       - id: RMCAttachmentS5RedDotSight
       - id: RMCAttachmentS5MicroRedDotSight
       - id: RMCAttachmentS6ReflexSight
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 30
@@ -46,7 +46,7 @@
         points: 20
       - id: RMCBoxClaymoreMineFilled
         points: 20
-    - name: Sidearm Ammunitions
+    - name: 副武器弹药
       entries:
       - id: RMCMagazinePistolM13Ext
         points: 6
@@ -62,13 +62,13 @@
         points: 5
       - id: RMCMagazinePistolSU6
         points: 10
-    - name: Restricted Firearms
+    - name: 限制类枪支
       entries:
       - id: RMCGunCasePistolMK80
         points: 15
       - id: RMCGunCasePistolSmart
         points: 15
-    - name: Clothing Items
+    - name: 衣物
       entries:
       - id: RMCScabbardMacheteSGFilled
         points: 15
@@ -76,7 +76,7 @@
         points: 5
       - id: RMCPouchGeneralLarge
         points: 6
-    - name: Utilities
+    - name: 实用工具
       entries:
       - id: CMFireExtinguisherPortable
         points: 5
@@ -88,7 +88,7 @@
         points: 5
       - id: RMCPowerCellSmartgun
         points: 15
-    - name: Binoculars
+    - name: 双筒望远镜
       entries:
       - id: RMCBinoculars
         points: 5
@@ -96,19 +96,19 @@
         points: 10
       - id: RMCLaserDesignator
         points: 15
-    - name: Helmet Optics
+    - name: 头盔光学
       entries:
       - id: RMCVisorMedical
         points: 15
       - id: RMCVisorWelding
         points: 5
-    - name: Pamphlets
+    - name: 小册子
       entries:
       - id: CMPamphletJTAC
         points: 15
       - id: CMPamphletEngineer
         points: 15
-    - name: Radio Keys
+    - name: 无线电按键
       entries:
       - id: CMEncryptionKeyEngineer
         points: 5
@@ -124,43 +124,43 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechSGEquipment
-  name: ColMarTech squad Smart Gun equipment rack
-  description: An automated rack hooked up to a colossal storage of Squad Smart Gun standard-issue equipment.
+  name: ColMarTech小队智能枪装备架
+  description: 一个连接着海量小队智能枪标准配发装备储存库的自动化装备架。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessSmartPrep" ]
+    - ["CMAccessSmartPrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMSmartGunOperator
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleRiflemanApparel
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: CMBeltSmartGunOperatorFilled
       - id: RMCBeltSmartGunOperatorPistolFilled
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: 信号弹袋（满）
       - id: RMCPouchElectronics
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救袋（可再填充注射器）
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救包（纱布、药膏）                        # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救袋（药片）
         recommended: true
       - id: RMCPouchMagazinePistolLarge
         recommended: true
@@ -169,10 +169,10 @@
       - id: RMCPouchGeneralMedium
       - id: RMCPouchPistol
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
+        name: 砍刀袋（满）
       - id: RMCPouchSling
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+    - name: 配件
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
         recommended: true
@@ -185,8 +185,8 @@
       - id: RMCWebbingDropPouchBlack
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Mask
-      choices: { CMMask: 1 }
+    - name: 面具
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif

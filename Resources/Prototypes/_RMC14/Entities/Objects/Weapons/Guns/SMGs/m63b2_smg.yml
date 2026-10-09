@@ -1,16 +1,16 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: M39B/2 submachine gun
+  name: M39B/2冲锋枪
   id: RMCWeaponSMGM63B2
-  description: A modified version M39 submachinegun, re-engineered for better weight, handling and accuracy. Given only to elite units.
+  description: M39冲锋枪的改进版本，经过重新设计以优化重量、操控性和精准度。仅配发给精英部队。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/m63b2.rsi
     layers:
     - state: bolt-open
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/m63b2.rsi
   - type: Gun
@@ -46,7 +46,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineSMGM63AP
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -107,7 +107,7 @@
     - RMCWeaponSMG
     - RMCWeaponSMGM63B2
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: Tag
   id: RMCWeaponSMGM63B2

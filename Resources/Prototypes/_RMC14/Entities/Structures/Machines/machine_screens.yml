@@ -1,6 +1,6 @@
-﻿- type: entity
+- type: entity
   id: RMCMachineScreenBase
-  name: monitor
+  name: 监视器
   description: ""
   abstract: true
   placement:
@@ -37,8 +37,8 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
 
 - type: entity
   parent: RMCMachineScreenBasePowered

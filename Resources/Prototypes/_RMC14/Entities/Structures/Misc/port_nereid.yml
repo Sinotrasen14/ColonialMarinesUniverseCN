@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseStructure
   id: RMCAncientObelisk
-  name: ancient obelisk
-  description: A strange basalt obelisk, coated in strange red symbols which hurt your eyes. You don't know if you should cry, scream, laugh, worship, or run away.
+  name: 远古方尖碑
+  description: 一座奇异的玄武岩方尖碑，表面覆盖着令你眼睛刺痛的诡异红色符号。你不知道自己该哭泣、尖叫、大笑、膜拜，还是转身逃走。
   components:
   - type: Transform
     anchored: true
@@ -16,8 +16,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-2.25,0.25,0"
         density: 190
         layer:

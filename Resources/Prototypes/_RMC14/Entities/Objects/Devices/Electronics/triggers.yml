@@ -1,8 +1,8 @@
 - type: entity
   parent: TimerTrigger
   id: RMCTimerTrigger
-  name: timer
-  description: Used to time things. Works well with contraptions which has to count down. Tick tock.
+  name: 计时器
+  description: 用于计时。非常适合需要倒计时的装置。滴答滴答。
   suffix: RMC
   components:
   - type: Sprite
@@ -24,7 +24,7 @@
         path: /Audio/_RMC14/Explosion/armbomb.ogg
         params:
           volume: -5
-      popup: null
+      popup:
   - type: PhysicalComposition
     materialComposition:
       CMSteel: 500

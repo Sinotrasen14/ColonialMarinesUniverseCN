@@ -2,8 +2,8 @@
 - type: entity
   parent: BaseFenceMetal
   id: CMFence
-  name: fence
-  description: A large metal mesh strewn between two poles. Intended as a cheap way to separate areas, while allowing one to see through it.
+  name: 铁丝网
+  description: 一张横跨在两根杆子之间的大金属网。旨在以廉价的方式分隔区域，同时让人能透过它看到另一边。
   components:
   - type: Transform
     anchored: true
@@ -25,23 +25,21 @@
     damageContainer: StructuralMarine
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 600
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 550
       behaviors:
-        - !type:PlaySoundBehavior
-          sound:
-            path: /Audio/Items/wirecutter.ogg
-        - !type:ChangeConstructionNodeBehavior
-          node: rmcFenceBroken
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Items/wirecutter.ogg
+      - !type:ChangeConstructionNodeBehavior
+        node: rmcFenceBroken
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: Construction
     graph: CMFence
     node: fenceMetal
@@ -64,8 +62,8 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: RMCFenceBroken
-  name: broken fence
-  description: A mess of broken wire strewn between two poles, it's not blocking anyone's way through.
+  name: 破损的栅栏
+  description: 两根柱子之间散落着一团乱糟糟的破铁丝，并没有挡住任何人的去路。
   components:
   - type: Transform
     anchored: true
@@ -88,12 +86,11 @@
     damageContainer: StructuralMarine
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 600
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: RMCDropshipBlocked
   - type: MinimapColor
     color: "#8d2294ad"

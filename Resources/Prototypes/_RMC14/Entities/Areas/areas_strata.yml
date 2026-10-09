@@ -3,7 +3,7 @@
 - type: entity
   parent: RMCAreaBase
   id: RMCAreaStrata
-  name: Sorokyne Strata
+  name: 索罗基内地层
   suffix: Sorokyne Strata
   components:
   - type: Sprite
@@ -17,7 +17,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorOutOfBounds
-  name: Out of Bounds
+  name: 越界
   components:
   - type: Sprite
     state: ag_i
@@ -41,7 +41,7 @@
 - type: entity
   parent: RMCAreaStrata
   id: RMCAreaStrataExterior
-  name: Exterior
+  name: 外观
   components:
   - type: Sprite
     state: ag_e
@@ -59,7 +59,7 @@
 - type: entity
   parent: RMCAreaStrata
   id: RMCAreaStrataInterior
-  name: Interior
+  name: 内部
   components:
   - type: Sprite
     state: ag_i
@@ -77,7 +77,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorLandingZones
-  name: Do not use.
+  name: 不要使用。
   components:
   - type: Sprite
     state: landingzone_2
@@ -87,7 +87,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorLandingZones
-  name: Do not use.
+  name: 不要使用。
   components:
   - type: Sprite
     state: landingzone_1
@@ -97,7 +97,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorLandingZones
   id: RMCAreaStrataExteriorLandingZonesLz2
-  name: Landing Zone 2 Pad - Rocky Fields
+  name: 着陆区2号停机坪 - 岩石原野
   components:
   - type: Area
     linkedLz: dropship_lz2
@@ -105,7 +105,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorLandingZones
   id: RMCAreaStrataExteriorLandingZonesNearLz2
-  name: Landing Zone 2 - Rocky Fields
+  name: 着陆区2——岩石地带
   components:
   - type: Sprite
     state: nearlz2
@@ -115,7 +115,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorLandingZones
   id: RMCAreaStrataInteriorLandingZonesLz1
-  name: Landing Zone 1 Pad - Mining Aerodrome
+  name: 着陆区1停机坪 - 采矿机场
   components:
   - type: Area
     linkedLz: dropship_lz1
@@ -123,7 +123,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorLandingZones
   id: RMCAreaStrataInteriorLandingZonesNearLz1
-  name: Landing Zone 1 - Mining Aerodrome
+  name: 着陆区1 - 采矿机场
   components:
   - type: Sprite
     state: nearlz1
@@ -133,7 +133,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorShedFiveCaves
-  name: Terminal Five Topside Pathway
+  name: 五号航站楼顶层通道
   components:
   - type: Sprite
     state: lzcaves
@@ -141,7 +141,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorLzCaves
-  name: External Mining Aerodrome Pathway
+  name: 外部采矿机场通道
   components:
   - type: Sprite
     state: lzcaves
@@ -151,7 +151,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorMarsh
-  name: Do not use.
+  name: 请勿使用
   components:
   - type: Sprite
     state: marsh
@@ -159,7 +159,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorMarsh
   id: RMCAreaStrataExteriorMarshSpringMarshes
-  name: Geothermal Springs Marshes
+  name: 地热泉沼泽
   components:
   - type: Area
     linkedLz: dropship_lz1, dropship_lz2
@@ -167,7 +167,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorMarsh
   id: RMCAreaStrataExteriorMarshWaterMarshes
-  name: Geothermal Water Marshes
+  name: 地热水沼泽
   components:
   - type: Area
     linkedLz: dropship_lz2
@@ -175,7 +175,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorMarsh
   id: RMCAreaStrataExteriorMarshIslandMarshes
-  name: Geothermal Island Marshes
+  name: 地热岛沼泽
   components:
   - type: Area
     linkedLz: dropship_lz2
@@ -183,7 +183,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorMarsh
   id: RMCAreaStrataExteriorMarshRelayMarshes
-  name: Geothermal Relay Marshes
+  name: 地热中继沼泽
   components:
   - type: Area
     linkedLz: dropship_lz2
@@ -191,7 +191,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorMarsh
   id: RMCAreaStrataExteriorMarshCenter
-  name: Geothermal Springs
+  name: 地热泉
   components:
   - type: Sprite
     state: marshcenter
@@ -201,7 +201,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorMarsh
   id: RMCAreaStrataExteriorMarshRiver
-  name: Geothermal River
+  name: 地热河
   components:
   - type: Sprite
     state: marshriver
@@ -211,7 +211,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorMarsh
   id: RMCAreaStrataExteriorMarshCrash
-  name: Geothermal Crashed Dropship
+  name: 地热坠毁运输艇
   components:
   - type: Sprite
     state: marshship
@@ -221,7 +221,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorMarsh
   id: RMCAreaStrataExteriorMarshWater
-  name: Geothermal Water
+  name: 地热水
   components:
   - type: Sprite
     state: marshwater
@@ -231,7 +231,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorVanyard
-  name: Flight Control Vehicle Yard
+  name: 飞行控制车辆停放场
   components:
   - type: Sprite
     state: garage
@@ -241,7 +241,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorOutpostDecks
-  name: Outpost - Decks
+  name: 前哨 - 牌组
   components:
   - type: Sprite
     state: rdecks
@@ -251,7 +251,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorFlightControlExterior
-  name: Flight Control Exterior
+  name: 飞行控制外部
   components:
   - type: Sprite
     state: path
@@ -261,7 +261,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorMiningOutpostExterior
-  name: Mining Outpost - Exterior
+  name: 采矿前哨站 - 外部
   components:
   - type: Sprite
     state: path
@@ -271,7 +271,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorNorthOutpost
-  name: Outpost - North Access Channel
+  name: 前哨站 - 北入口通道
   components:
   - type: Sprite
     state: path
@@ -281,7 +281,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorFarNorthOutpost
-  name: Far North Of The Outpost
+  name: 前哨站的极北之地
   components:
   - type: Sprite
     state: path
@@ -289,7 +289,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorSouthOutpost
-  name: South Of The Outpost
+  name: 前哨以南
   components:
   - type: Sprite
     state: path
@@ -299,7 +299,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorTcommsMiningCaves
-  name: Mining Pathway Relay
+  name: 矿用路径继电器
   components:
   - type: Sprite
     state: tcomms1
@@ -307,7 +307,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorTcommsVehicleYard
-  name: Vehicle Yard Relay
+  name: 车辆段继电器
   components:
   - type: Sprite
     state: tcomms1
@@ -317,7 +317,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorTcommsCrashedDropship
-  name: Crashed Dropship Relay
+  name: 坠毁运输机中继站
   components:
   - type: Sprite
     state: tcomms1
@@ -325,7 +325,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorTcommsGeosprings
-  name: Geothermal Springs Relay
+  name: 地热泉驿站
   components:
   - type: Sprite
     state: tcomms1
@@ -333,7 +333,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorTcommsEngineeringPartsStorage
-  name: Engineering - Parts Storage Platform Relay
+  name: 工程 - 零件存储平台中继
   components:
   - type: Sprite
     state: tcomms1
@@ -344,7 +344,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorOutpost
-  name: Sorokyne Outpost
+  name: 索罗基涅前哨站
   components:
   - type: Sprite
     state: shed_x_ag
@@ -354,7 +354,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpost
   id: RMCAreaStrataInteriorOutpostFoyer
-  name: Outpost - Main Foyer
+  name: 前哨站 - 主门厅
   components:
   - type: Sprite
     state: outpost_gen_1
@@ -362,7 +362,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpost
   id: RMCAreaStrataInteriorOutpostMaint
-  name: Outpost - Canteen - Eastern Maintenance
+  name: 前哨站 - 食堂 - 东部维修区
   components:
   - type: Sprite
     state: outpost_maint
@@ -370,7 +370,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpost
   id: RMCAreaStrataInteriorOutpostMed
-  name: Outpost - Medical
+  name: 前哨站 - 医疗
   components:
   - type: Sprite
     state: outpost_med
@@ -380,7 +380,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpost
   id: RMCAreaStrataInteriorOutpostEngi
-  name: Outpost - Engineering
+  name: 前哨站 - 工程
   components:
   - type: Sprite
     state: outpost_engi_0
@@ -390,7 +390,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpostEngi
   id: RMCAreaStrataInteriorOutpostEngiDrome
-  name: Outpost - Aerodome
+  name: 前哨站 - 机场
   components:
   - type: Sprite
     state: outpost_engi_4
@@ -398,7 +398,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpostEngiDrome
   id: RMCAreaStrataInteriorOutpostEngiDromeShuttle
-  name: Dismantled VDVK Eagle Mk 4
+  name: 已拆解的 VDVK Eagle Mk 4
   components:
   - type: Sprite
     state: outpost_engi_3
@@ -406,7 +406,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpostEngiDrome
   id: RMCAreaStrataInteriorOutpostEngiDromeShuttleMK3
-  name: VDVK Eagle Mk 3
+  name: VDVK 鹰 Mk3
   components:
   - type: Sprite
     state: outpost_engi_3
@@ -414,7 +414,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorShuttleSof
-  name: UPP-DS-3 'Voron'
+  name: UPP-DS-3 ‘乌鸦’
   components:
   - type: Sprite
     state: outpost_engi_3
@@ -422,7 +422,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorSupplyShuttleSof
-  name: UPP-DS-3 'Volk'
+  name: UPP-DS-3 ‘Volk’
   components:
   - type: Sprite
     state: outpost_engi_3
@@ -430,7 +430,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpost
   id: RMCAreaStrataInteriorOutpostSecurity
-  name: Outpost - Security
+  name: 前哨站 - 安保
   components:
   - type: Sprite
     state: outpost_sec_0
@@ -440,7 +440,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpost
   id: RMCAreaStrataInteriorOutpostAdmin
-  name: Outpost - Administration
+  name: 前哨站 - 行政
   components:
   - type: Sprite
     state: outpost_admin_0
@@ -459,7 +459,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpost
   id: RMCAreaStrataInteriorOutpostCanteen
-  name: Outpost - Canteen
+  name: 前哨站 - 食堂
   components:
   - type: Sprite
     state: outpost_canteen_0
@@ -477,7 +477,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorOutpostCanteen
   id: RMCAreaStrataInteriorOutpostCanteenBar
-  name: Outpost - Bar
+  name: 前哨站 - 酒吧
   components:
   - type: Sprite
     state: outpost_canteen_2
@@ -485,7 +485,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorMiningOutpost
-  name: Mining Outpost - Central
+  name: 采矿前哨站 - 中部
   components:
   - type: Sprite
     state: dorms_0
@@ -507,7 +507,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorMiningOutpost
   id: RMCAreaStrataInteriorMiningOutpostSouthDormitories
-  name: Mining Outpost - South Dormitories
+  name: 采矿前哨站 - 南部宿舍
   components:
   - type: Sprite
     state: dorms_3
@@ -527,7 +527,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorMiningOutpost
   id: RMCAreaStrataInteriorMiningOutpostMaintenance
-  name: Mining Outpost - Dormitory Maintenance
+  name: 采矿前哨站——宿舍维护
   components:
   - type: Sprite
     state: outpost_maint
@@ -547,7 +547,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorMiningOutpost
   id: RMCAreaStrataInteriorMiningOutpostHive
-  name: Mining Outpost - Dormitory Geothermal Storage
+  name: 采矿前哨站 - 宿舍地热储存室
   components:
   - type: Sprite
     state: dorms_beno
@@ -567,7 +567,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorMiningOutpost
   id: RMCAreaStrataInteriorMiningOutpostCanteen
-  name: Mining Outpost - Dormitory Canteen
+  name: 采矿前哨站 - 宿舍食堂
   components:
   - type: Sprite
     state: dorms_canteen
@@ -587,7 +587,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorMiningOutpost
   id: RMCAreaStrataInteriorMiningOutpostFlightControl
-  name: Mining Outpost - Flight Control
+  name: 采矿前哨站 - 飞行控制
   components:
   - type: Sprite
     state: dorms_lobby
@@ -607,7 +607,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorAdministration
-  name: Flight Control Offices
+  name: 飞行控制办公室
   components:
   - type: Sprite
     state: offices
@@ -618,7 +618,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorWoodenHospital
-  name: Wooden Hospital - Hospital Proper
+  name: 木制医院——医院主体
   components:
   - type: Sprite
     state: cabin3
@@ -628,7 +628,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorWoodenRuins
-  name: Old Wooden Building
+  name: 老木楼
   components:
   - type: Sprite
     state: cabin3
@@ -647,22 +647,22 @@
 - type: entity
   parent: RMCAreaStrataInteriorCheckpoints
   id: RMCAreaStrataInteriorCheckpointsNorthArmor
-  name: North Security Armored Checkpoint
+  name: 北部安保装甲检查站
 
 - type: entity
   parent: RMCAreaStrataInteriorCheckpoints
   id: RMCAreaStrataInteriorCheckpointsNorth
-  name: Landing Zone North Security Checkpoint
+  name: 着陆区北部安全检查站
 
 - type: entity
   parent: RMCAreaStrataInteriorCheckpoints
   id: RMCAreaStrataInteriorCheckpointsWest
-  name: Landing Zone West Security Checkpoint
+  name: 着陆区西侧安全检查站
 
 - type: entity
   parent: RMCAreaStrataInteriorCheckpoints
   id: RMCAreaStrataInteriorCheckpointsSouth
-  name: Landing Zone South Security Checkpoint
+  name: 着陆区南部安全检查站
   components:
   - type: Area
     linkedLz: dropship_lz2
@@ -670,7 +670,7 @@
 - type: entity
   parent: RMCAreaStrataInteriorCheckpoints
   id: RMCAreaStrataInteriorCheckpointsOutpost
-  name: Outpost - Deck Security Checkpoint
+  name: 前哨站 - 甲板安全检查站
   components:
   - type: Sprite
     state: rdecks_sec
@@ -678,7 +678,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorPartsStorage
-  name: Engineering - Parts Storage
+  name: 工程 - 零件存储
   components:
   - type: Sprite
     state: outpost_engi_1
@@ -688,7 +688,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorGeneratorSubstation
-  name: Engineering - Generator Substation
+  name: 工程 - 发电机变电站
   components:
   - type: Sprite
     state: outpost_engi_1
@@ -696,7 +696,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorPartsStorageExterior
-  name: Engineering - Parts Storage Exterior
+  name: 工程 - 零件存储外部
   components:
   - type: Sprite
     state: outpost_engi_4
@@ -714,7 +714,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorPartsStorageCave
-  name: Engineering - Parts Storage Exterior
+  name: 工程 - 零件存储区外部
   components:
   - type: Sprite
     state: outpost_engi_4
@@ -733,7 +733,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorBball
-  name: Outpost - Basket Ball Court
+  name: 前哨站 - 篮球场
   components:
   - type: Sprite
     state: outpost_gen_4
@@ -743,7 +743,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorBballCave
-  name: Outpost - B-Ball Caves
+  name: 前哨站 - 篮球洞穴
   components:
   - type: Sprite
     state: hive_1
@@ -762,7 +762,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorSecureCheckpoint
-  name: Secure Checkpoint Passthrough
+  name: 安全检查点直通
   components:
   - type: Sprite
     state: outpost_engi_0
@@ -781,7 +781,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorUndergroundDorms
-  name: Do not use.
+  name: 请勿使用。
   components:
   - type: Sprite
     state: ug_jung_dorm
@@ -800,52 +800,52 @@
 - type: entity
   parent: RMCAreaStrataInteriorUndergroundDorms
   id: RMCAreaStrataInteriorUndergroundDormsSec1
-  name: Deep Jungle - Security Dorm \#1
+  name: '丛林深处 - 安保宿舍 #1'
 
 - type: entity
   parent: RMCAreaStrataInteriorUndergroundDorms
   id: RMCAreaStrataInteriorUndergroundDormsSec2
-  name: Deep Jungle - Security Dorm \#2
+  name: '深丛林 - 安保宿舍 #2'
 
 - type: entity
   parent: RMCAreaStrataInteriorUndergroundDorms
   id: RMCAreaStrataInteriorUndergroundDormsAdmin1
-  name: Deep Jungle - General Staff Dorm \#1
+  name: 丛林深处 - 总参谋部1号宿舍
 
 - type: entity
   parent: RMCAreaStrataInteriorUndergroundDorms
   id: RMCAreaStrataInteriorUndergroundDormsAdmin2
-  name: Deep Jungle - General Staff Dorm \#2
+  name: 丛林深处－总参谋部宿舍2号
 
 - type: entity
   parent: RMCAreaStrataInteriorUndergroundDorms
   id: RMCAreaStrataInteriorUndergroundDormsAdmin3
-  name: Deep Jungle - General Staff Dorm \#3
+  name: 深丛林 - 总参谋部3号宿舍
 
 - type: entity
   parent: RMCAreaStrataInteriorUndergroundDorms
   id: RMCAreaStrataInteriorUndergroundDormsAdmin4
-  name: Deep Jungle - General Staff Dorm \#4
+  name: 丛林深处－总参谋部宿舍4号
 
 - type: entity
   parent: RMCAreaStrataInteriorUndergroundDorms
   id: RMCAreaStrataInteriorUndergroundDormsMed1
-  name: Deep Jungle - Medical Dorm \#1
+  name: 深邃丛林 - 医疗宿舍1号
 
 - type: entity
   parent: RMCAreaStrataInteriorUndergroundDorms
   id: RMCAreaStrataInteriorUndergroundDormsMed2
-  name: Deep Jungle - Medical Dorm \#2
+  name: 深丛林 - 医疗宿舍2号
 
 - type: entity
   parent: RMCAreaStrataInteriorUndergroundDorms
   id: RMCAreaStrataInteriorUndergroundDormsBotany
-  name: Botanical Research Station
+  name: 植物研究站
 
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorOutpostPlatform
-  name: Deep Jungle - Platform
+  name: 深丛林 - 平台
   components:
   - type: Sprite
     state: ug_jung_1
@@ -855,7 +855,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorCarplakeCenter
-  name: Deep Jungle - Lake Center Island
+  name: 丛林深处 - 湖心岛
   components:
   - type: Sprite
     state: ug_jung_1
@@ -863,7 +863,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorDeepJungle
-  name: Do not use.
+  name: 请勿使用。
   components:
   - type: Sprite
     state: ug_jung_0
@@ -883,7 +883,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJungleCarplakeNorth
-  name: Deep Jungle - North of Carp Lake
+  name: 深丛林——鲤鱼湖以北
   components:
   - type: Sprite
     state: ug_jung_6
@@ -891,7 +891,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJungleCarplakeEast
-  name: Deep Jungle - East of Carp Lake
+  name: 丛林深处——鲤鱼湖以东
   components:
   - type: Sprite
     state: ug_jung_5
@@ -899,7 +899,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJunglePlatform
-  name: Deep Jungle - South of the Platform
+  name: 深丛林——平台以南
   components:
   - type: Sprite
     state: ug_jung_4
@@ -907,7 +907,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJunglePlatformEast
-  name: Deep Jungle - East of the Platform
+  name: 深丛林——平台以东
   components:
   - type: Sprite
     state: ug_jung_0
@@ -925,7 +925,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJungleHotSprings
-  name: Deep Jungle - Hot Springs
+  name: 密林深处－温泉
   components:
   - type: Sprite
     state: ug_jung_4
@@ -935,7 +935,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJungleOldTunnels
-  name: Deep Jungle - Old Path - West of Classified Research Station
+  name: 密林深处 - 旧路 - 机密研究站以西
   components:
   - type: Sprite
     state: ug_jung_mine_1
@@ -954,7 +954,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJungleNorth
-  name: Deep Jungle - South of Classified Research Station
+  name: 深林 - 机密研究站以南
   components:
   - type: Sprite
     state: ug_jung_6
@@ -964,7 +964,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJungleWest
-  name: Deep Jungle - West of Planetary Core Monitoring
+  name: 深丛林——行星核心监测点以西
   components:
   - type: Sprite
     state: ug_jung_6
@@ -974,7 +974,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJungleSouth
-  name: Deep Jungle - South of Planetary Core Monitoring
+  name: 深丛林 - 行星核心监测点以南
   components:
   - type: Sprite
     state: ug_jung_7
@@ -984,7 +984,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJungleEast
-  name: Deep Jungle - East of Planetary Core Monitoring
+  name: 深邃丛林——行星核心监测点以东
   components:
   - type: Sprite
     state: ug_jung_8
@@ -994,7 +994,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJunglePlanetCoreResearchStationExterior
-  name: Deep Jungle - Planetary Core Monitoring Research Station
+  name: 深林 - 行星核心监测研究站
   components:
   - type: Sprite
     state: ug_jung_8
@@ -1004,7 +1004,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJungleRuin
-  name: Deep Jungle - Ancient Dorms
+  name: 深林秘境 - 远古宿舍
   components:
   - type: Sprite
     state: ug_jung_mine_4
@@ -1012,7 +1012,7 @@
 - type: entity
   parent: RMCAreaStrataExteriorDeepJungle
   id: RMCAreaStrataExteriorDeepJungleTearlake
-  name: Deep Jungle - Weeping Pool
+  name: 幽深丛林——哭泣之池
   components:
   - type: Sprite
     state: ug_jung_3
@@ -1020,7 +1020,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorPlanetCoreResearchStation
-  name: Deep Jungle - Planetary Core Monitoring Research Station
+  name: 深丛林——行星核心监测研究站
   components:
   - type: Sprite
     state: ug_jung_5
@@ -1039,7 +1039,7 @@
 - type: entity
   parent: RMCAreaStrataInterior
   id: RMCAreaStrataInteriorResearch
-  name: Deep Jungle - Classified Research Station
+  name: 丛林深处 - 机密研究站
   components:
   - type: Sprite
     state: ug_jung_2
@@ -1058,7 +1058,7 @@
 - type: entity
   parent: RMCAreaStrataExterior
   id: RMCAreaStrataExteriorRestricted
-  name: Super Secret Credits Room
+  name: 超级秘密制作人员名单房间
   components:
   - type: Sprite
     state: marshwater
@@ -1082,14 +1082,14 @@
 - type: entity
   parent: RMCAreaStrataInteriorCheckpoints
   id: RMCAreaStrataInteriorCheckpointsClf
-  name: Far North Armored Checkpoint
+  name: 极北装甲检查站
 
 - type: entity
   parent: RMCAreaStrataInteriorOutpost
   id: RMCAreaStrataInteriorOutpostClfDorms
-  name: Far North Dormitory
+  name: 远北宿舍
 
 - type: entity
   parent: RMCAreaStrataInteriorOutpost
   id: RMCAreaStrataInteriorOutpostClfOffice
-  name: Far North Office
+  name: 远北办公室

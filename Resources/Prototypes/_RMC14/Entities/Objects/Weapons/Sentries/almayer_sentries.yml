@@ -2,10 +2,10 @@
   parent: RMCBaseTurret
   id: RMCTurretAlmayer
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 635C static gauss turret
+  name: 635C固定式高斯炮塔
   # cmu edit end
   # cmu edit start: no UA/UN prefix on sentry descriptions
-  description: A fully-automated defence turret with mid-range targeting capabilities. Armed with a modified M32-S Autocannon and an internal belt feed and modified for warship use.
+  description: 一种具有中程瞄准能力的全自动防御炮塔。配备一门改装的 M32-S 自动机炮和内置弹链供弹系统，并为战舰用途进行了改装。
   # cmu edit end
   components:
   - type: UserIFF
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 60
         mask:
@@ -45,31 +44,28 @@
     speciesType: Mechanical
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: HTN
     rootTask:
       task: RMCTurretCompound
     blackboard:
       SoundTargetInLOS: !type:SoundPathSpecifier
         path: /Audio/Effects/double_beep.ogg
-      VisionRadius: !type:Single
-        5.5
-      AggroVisionRadius: !type:Single
-        5.5
+      VisionRadius: !type:Single 5.5
+      AggroVisionRadius: !type:Single 5.5
 
 - type: entity
   parent: BaseStructure
   id: RMCDeployerSentry
-  name: sentry deployment system
-  description: A box that deploys a sentry turret.
+  name: 哨戒炮部署系统
+  description: 一个可部署哨戒炮的箱子。
   components:
   - type: Transform
     anchored: true
@@ -78,9 +74,9 @@
     sprite: _RMC14/Structures/Machines/sentry_deployer.rsi
     layers:
     - state: floor_sentry_installed
-      map: [ "enum.EquipmentDeployState.UnDeployed" ]
+      map: ["enum.EquipmentDeployState.UnDeployed"]
     - state: floor_sentry_deployed
-      map: [ "enum.EquipmentDeployState.Deployed" ]
+      map: ["enum.EquipmentDeployState.Deployed"]
       visible: false
   - type: RMCEquipmentDeployer
     deployPrototype: RMCTurretAlmayer

@@ -3,15 +3,15 @@
 - type: material
   id: CMGlass
   stackEntity: CMSheetGlass
-  name: materials-glass
-  icon: { sprite: _RMC14/Objects/Materials/Sheets/glass.rsi, state: glass }
+  name: 玻璃材料玻璃
+  icon: {sprite: _RMC14/Objects/Materials/Sheets/glass.rsi, state: glass}
   color: "#a8ccd7"
   price: 0.002
 
 - type: stack
   id: CMGlass
-  name: glass
-  icon: { sprite: /Textures/_RMC14/Objects/Materials/Sheets/glass.rsi, state: glass }
+  name: 玻璃
+  icon: {sprite: /Textures/_RMC14/Objects/Materials/Sheets/glass.rsi, state: glass}
   spawn: CMSheetGlass
   maxCount: 50
 
@@ -27,14 +27,12 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -48,7 +46,7 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: SolutionContainerManager
     solutions:
       glass:
@@ -74,13 +72,13 @@
 - type: entity
   parent: CMSheetGlassBase
   id: CMSheetGlass
-  name: glass
-  description: Glass is a non-crystalline solid, made out of silicate, the primary constituent of sand. It is valued for its transparency, albeit it is not too resistant to damage.
+  name: 玻璃
+  description: 玻璃是一种非晶态固体，由硅酸盐构成，而硅酸盐是沙子的主要成分。它因透明而受到重视，尽管它不太耐损坏。
   suffix: Filled
   components:
   - type: RMCConstructionItem
     buildable:
-      - RMCWindowDirectionalBuild
+    - RMCWindowDirectionalBuild
       # Full window
   - type: Material
   - type: PhysicalComposition
@@ -91,17 +89,17 @@
     count: 50
     baseLayer: base
     layerStates:
-      - glass
-      - glass_2
-      - glass_3
-      - glass_4
+    - glass
+    - glass_2
+    - glass_3
+    - glass_4
   - type: Construction
     graph: CMGlass
     node: SheetGlass
   - type: Sprite
     layers:
-      - state: glass_4
-        map: ["base"]
+    - state: glass_4
+      map: ["base"]
   - type: UserInterface
     interfaces:
       enum.RMCConstructionUiKey.Key:
@@ -112,22 +110,22 @@
   id: CMSheetGlass10
   suffix: "10"
   components:
-   - type: Sprite
-     state: glass_2
-   - type: Stack
-     stackType: CMGlass
-     count: 10
+  - type: Sprite
+    state: glass_2
+  - type: Stack
+    stackType: CMGlass
+    count: 10
 
 - type: entity
   parent: CMSheetGlass
   id: CMSheetGlass25
   suffix: "25"
   components:
-   - type: Sprite
-     state: glass_2
-   - type: Stack
-     stackType: CMGlass
-     count: 25
+  - type: Sprite
+    state: glass_2
+  - type: Stack
+    stackType: CMGlass
+    count: 25
 
 - type: entity
   parent: CMSheetGlass
@@ -158,29 +156,29 @@
   id: CMReinforcedGlass
   stackEntity: CMSheetGlassReinforced
   name: materials-reinforced-glass
-  icon: { sprite: _RMC14/Objects/Materials/Sheets/reinf_glass.rsi, state: rglass }
+  icon: {sprite: _RMC14/Objects/Materials/Sheets/reinf_glass.rsi, state: rglass}
   color: "#549bb0"
   price: 0.00284
 
 - type: stack
   id: CMGlassReinforced
-  name: reinforced glass
-  icon: { sprite: /Textures/_RMC14/Objects/Materials/Sheets/reinf_glass.rsi, state: rglass }
+  name: 强化玻璃
+  icon: {sprite: /Textures/_RMC14/Objects/Materials/Sheets/reinf_glass.rsi, state: rglass}
   spawn: CMSheetGlassReinforced
   maxCount: 50
 
 - type: entity
   parent: CMSheetGlassBase
   id: CMSheetGlassReinforced
-  name: reinforced glass
-  description: A sheet of reinforced glass.
+  name: 强化玻璃
+  description: 一块强化玻璃。
   suffix: Filled
   components:
   - type: RMCConstructionItem
     buildable:
-      - RMCWindowReinforcedDirectionalBuild
+    - RMCWindowReinforcedDirectionalBuild
       # Full window
-      - RMCWindoorBuild
+    - RMCWindoorBuild
   - type: Material
   - type: PhysicalComposition
     materialComposition:
@@ -189,8 +187,8 @@
   - type: Sprite
     sprite: _RMC14/Objects/Materials/Sheets/reinf_glass.rsi
     layers:
-      - state: rglass_4
-        map: ["base"]
+    - state: rglass_4
+      map: ["base"]
   - type: Item
     sprite: _RMC14/Objects/Materials/Sheets/reinf_glass.rsi
     inhandVisuals:
@@ -204,10 +202,10 @@
     count: 50
     baseLayer: base
     layerStates:
-        - rglass
-        - rglass_2
-        - rglass_3
-        - rglass_4
+    - rglass
+    - rglass_2
+    - rglass_3
+    - rglass_4
   - type: Construction
     graph: CMGlass
     node: SheetGlassReinforced
@@ -257,22 +255,22 @@
   id: CMPhoronGlass
   stackEntity: CMSheetGlassPhoron
   name: materials-phoron-glass
-  icon: { sprite: _RMC14/Objects/Materials/Sheets/phoron_glass.rsi, state: phoronglass }
+  icon: {sprite: _RMC14/Objects/Materials/Sheets/phoron_glass.rsi, state: phoronglass}
   color: "#b35989"
   price: 0.004
 
 - type: stack
   id: CMGlassPhoron
-  name: phoron glass
-  icon: { sprite: /Textures/_RMC14/Objects/Materials/Sheets/phoron_glass.rsi, state: phoronglass }
+  name: 福龙玻璃phoron glass
+  icon: {sprite: /Textures/_RMC14/Objects/Materials/Sheets/phoron_glass.rsi, state: phoronglass}
   spawn: CMSheetGlassPhoron
   maxCount: 50
 
 - type: entity
   parent: CMSheetGlassBase
   id: CMSheetGlassPhoron
-  name: phoron glass
-  description: Phoron glass is a silicate-phoron alloy turned into a non-crystalline solid. It is transparent just like glass, even if visibly tainted pink, and very resistant to damage and heat.
+  name: 福龙玻璃phoron glass
+  description: 福龙玻璃是一种由硅酸盐-福龙合金转化而成的非晶态固体。它像玻璃一样透明，即使明显染有粉色，也非常耐损伤和耐热。
   suffix: Filled
   components:
   - type: Material
@@ -282,8 +280,8 @@
   - type: Sprite
     sprite: _RMC14/Objects/Materials/Sheets/phoron_glass.rsi
     layers:
-      - state: phoronglass_4
-        map: ["base"]
+    - state: phoronglass_4
+      map: ["base"]
   - type: Item
     sprite: _RMC14/Objects/Materials/Sheets/phoron_glass.rsi
     inhandVisuals:
@@ -297,10 +295,10 @@
     count: 50
     baseLayer: base
     layerStates:
-        - phoronglass
-        - phoronglass_2
-        - phoronglass_3
-        - phoronglass_4
+    - phoronglass
+    - phoronglass_2
+    - phoronglass_3
+    - phoronglass_4
 
 - type: entity
   parent: CMSheetGlassPhoron
@@ -342,22 +340,22 @@
   id: CMPhoronGlassReinforced
   stackEntity: CMSheetGlassPhoronReinforced
   name: materials-reinforced-phoron-glass
-  icon: { sprite: _RMC14/Objects/Materials/Sheets/phoron_reinf_glass.rsi, state: phoronrglass }
+  icon: {sprite: _RMC14/Objects/Materials/Sheets/phoron_reinf_glass.rsi, state: phoronrglass}
   color: "#8c4069"
   price: 0.00426
 
 - type: stack
   id: CMGlassPhoronReinforced
-  name: reinforced phoron glass
-  icon: { sprite: /Textures/_RMC14/Objects/Materials/Sheets/phoron_reinf_glass.rsi, state: phoronrglass }
+  name: 强化福龙玻璃PhoronGlass
+  icon: {sprite: /Textures/_RMC14/Objects/Materials/Sheets/phoron_reinf_glass.rsi, state: phoronrglass}
   spawn: CMSheetGlassPhoronReinforced
   maxCount: 50
 
 - type: entity
   parent: CMSheetGlassBase
   id: CMSheetGlassPhoronReinforced
-  name: reinforced phoron glass
-  description: A sheet of reinforced phoron glass.
+  name: 强化福龙玻璃PhoronGlass
+  description: 一块强化福龙玻璃
   suffix: Filled
   components:
   - type: Material
@@ -368,8 +366,8 @@
   - type: Sprite
     sprite: _RMC14/Objects/Materials/Sheets/phoron_reinf_glass.rsi
     layers:
-      - state: phoronrglass_4
-        map: ["base"]
+    - state: phoronrglass_4
+      map: ["base"]
   - type: Item
     sprite: _RMC14/Objects/Materials/Sheets/phoron_reinf_glass.rsi
     inhandVisuals:
@@ -383,10 +381,10 @@
     count: 50
     baseLayer: base
     layerStates:
-        - phoronrglass
-        - phoronrglass_2
-        - phoronrglass_3
-        - phoronrglass_4
+    - phoronrglass
+    - phoronrglass_2
+    - phoronrglass_3
+    - phoronrglass_4
 
 - type: entity
   parent: CMSheetGlassPhoronReinforced

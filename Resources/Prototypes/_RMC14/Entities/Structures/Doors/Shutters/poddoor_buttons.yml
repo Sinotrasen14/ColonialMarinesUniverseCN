@@ -1,7 +1,7 @@
 - type: entity
   id: RMCPodDoorButton
-  name: button
-  description: A remote control-switch for a door.
+  name: 按钮
+  description: 用于门的遥控开关。
   placement:
     mode: SnapgridCenter
     snap:
@@ -15,10 +15,10 @@
     sprite: _RMC14/Objects/door_button.rsi
     layers:
     - state: doorctrl
-      map: [ "enum.RMCPodDoorButtonLayers.Animation" ]
+      map: ["enum.RMCPodDoorButtonLayers.Animation"]
     - state: doorctrl-p
       visible: false
-      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: Clickable
   - type: InteractionOutline
   - type: WallMount
@@ -29,8 +29,8 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
   - type: ApcPowerReceiver
     powerLoad: 4 # CMU14
   - type: RMCPowerReceiver
@@ -44,400 +44,400 @@
 - type: entity
   parent: RMCPodDoorButton
   id: RMCPodDoorButtonShip
-  name: button
-  description: A basic button that does basic things.
+  name: 按钮
+  description: 一个执行基本操作的基本按钮。
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonMP
-  name: button
-  description: A button locked to Military Police.
+  name: 按钮
+  description: 一个仅限宪兵使用的按钮。
   suffix: Locked, Brig & Command
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ], [ "CMAccessBrig" ] ]
+    access: [["RMCAccessCommand"], ["CMAccessBrig"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonCommand
-  name: button
-  description: A basic button locked to Command.
+  name: 按钮
+  description: 一个锁定到 Command 键的基础按钮。
   suffix: Locked, Command
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ] ]
+    access: [["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonSeniorCommand
-  name: button
-  description: A basic button locked to Senior Command.
+  name: 按钮
+  description: 一个基础按钮，仅限高级指挥部使用。
   suffix: Locked, Senior Command
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSeniorCommand" ] ]
+    access: [["RMCAccessSeniorCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonPilot
-  name: button
-  description: A basic button locked to pilots and crew chiefs.
+  name: 按钮
+  description: 一个仅限飞行员和机组负责人使用的基础按钮。
   suffix: Locked, Dropship & Command
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ], ["CMAccessDropship"] ]
+    access: [["RMCAccessCommand"], ["CMAccessDropship"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonRequisitions
-  name: button
-  description: A basic button locked to requisitions staff.
+  name: 按钮
+  description: 一个仅供请购人员使用的基础按钮。
   suffix: Locked, Requisitions & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessRequisitions" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessRequisitions"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonKitchen
-  name: button
-  description: A basic button locked to kitchen staff.
+  name: 按钮
+  description: 仅限厨房员工使用的基本按钮。
   suffix: Locked, Kitchen & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessKitchen" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessKitchen"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonEngineering
-  name: button
-  description: A basic button locked to engineering staff.
+  name: 按钮
+  description: 一个仅限工程人员使用的基本按钮。
   suffix: Locked, Engineering & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessEngineering" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessEngineering"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonVehicle
-  name: button
-  description: A basic button locked to Vehicle Crewmen.
+  name: 按钮
+  description: 一个仅供载具乘员使用的基本按钮。
   suffix: Locked, Vehicle Crewmen & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessEngineering" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessEngineering"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonOrdnance
-  name: button
-  description: A basic button locked to Ordnance Techs.
+  name: 按钮
+  description: 一个仅限军械技师使用的基础按钮。
   suffix: Locked, Ordnance & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessOT" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessOT"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonMedical
-  name: button
-  description: A basic button locked to medical staff.
+  name: 按钮
+  description: 一个仅限医务人员使用的基本按钮。
   suffix: Locked, Medical & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMedical" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMedical"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonMorgue
-  name: button
-  description: A basic button locked to medical staff.
+  name: 按钮
+  description: 一个仅供医务人员使用的基本按钮。
   suffix: Locked, Morgue
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessMorgue" ] ]
+    access: [["RMCAccessMorgue"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonChemistry
-  name: button
-  description: A basic button locked to chemistry.
+  name: 按钮
+  description: 一个锁定到化学的基础按钮。
   suffix: Locked, Chemistry & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessChemistry" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessChemistry"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonResearch
-  name: button
-  description: A basic button locked to research staff.
+  name: 按钮
+  description: 一个仅限研究人员使用的基础按钮。
   suffix: Locked, Research & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessResearch" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessResearch"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonSynth
-  name: button
-  description: A basic button locked to Synthetics.
+  name: 按钮
+  description: 一个锁定至 Synthetics 的基础按钮。
   suffix: Locked, Synthetic
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSynth" ] ]
+    access: [["RMCAccessSynth"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonCMO
-  name: button
-  description: A basic button locked to the Chief Medical Officer.
+  name: 按钮
+  description: 一个仅限首席医疗官使用的基础按钮。
   suffix: Locked, CMO
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCMO" ] ]
+    access: [["CMAccessCMO"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonCE
-  name: button
-  description: A basic button locked to the Chief Engineer.
+  name: 按钮
+  description: 一个仅限总工程师使用的基础按钮。
   suffix: Locked, CE
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCE" ] ]
+    access: [["CMAccessCE"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonCO
-  name: button
-  description: A basic button locked to the Commanding Officer.
+  name: 按钮
+  description: 一个基础按钮，锁定于指挥官。
   suffix: Locked, CO
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCO" ] ]
+    access: [["CMAccessCO"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonSEA
-  name: button
-  description: A basic button locked to Senior Enlisted Advisors.
+  name: 按钮
+  description: 一个仅限高级士兵顾问使用的基础按钮。
   suffix: Locked, SEA
   components:
   - type: AccessReader
-    access: [ [ "CMAccessSEA" ] ]
+    access: [["CMAccessSEA"]]
 
 - type: entity
   parent: RMCPodDoorButtonShip
   id: RMCPodDoorButtonArmory
-  name: button
-  description: A basic button locked to Armory.
+  name: 按钮
+  description: 一个锁定到 Armory 的基础按钮。
   suffix: Locked, Armory
   components:
   - type: AccessReader
-    access: [ [ "CMAccessArmory" ] ]
+    access: [["CMAccessArmory"]]
 
 # \Shipside Buttons
 
 - type: entity
   parent: RMCPodDoorButton
   id: RMCPodDoorButtonBigRed
-  name: button
-  description: A remote control-switch for a door.
+  name: 按钮
+  description: 一扇门的遥控开关。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/door_button_br.rsi
     layers:
     - state: doorctrl
-      map: [ "enum.RMCPodDoorButtonLayers.Animation" ]
+      map: ["enum.RMCPodDoorButtonLayers.Animation"]
 
 # Shipside Buttons
 
 - type: entity
   parent: RMCPodDoorButtonBigRed
   id: RMCPodDoorButtonBigRedShip
-  name: button
-  description: A basic button that does basic things.
+  name: 按钮
+  description: 一个执行基本功能的普通按钮。
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedMP
-  name: button
-  description: A button locked to Military Police.
+  name: 按钮
+  description: 仅限宪兵使用的按钮。
   suffix: Locked, Brig & Command
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ], [ "CMAccessBrig" ] ]
+    access: [["RMCAccessCommand"], ["CMAccessBrig"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedCommand
-  name: button
-  description: A basic button locked to Command.
+  name: 按钮
+  description: 一个锁定到 Command 的基本按钮。
   suffix: Locked, Command
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ] ]
+    access: [["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedSeniorCommand
-  name: button
-  description: A basic button locked to Senior Command.
+  name: 按钮
+  description: 一个锁定至高级指挥部的基础按钮。
   suffix: Locked, Senior Command
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSeniorCommand" ] ]
+    access: [["RMCAccessSeniorCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedPilot
-  name: button
-  description: A basic button locked to pilots and crew chiefs.
+  name: 按钮
+  description: 一个仅限飞行员和机务长使用的基础按钮。
   suffix: Locked, Dropship & Command
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ], ["CMAccessDropship"] ]
+    access: [["RMCAccessCommand"], ["CMAccessDropship"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedRequisitions
-  name: button
-  description: A basic button locked to requisitions staff.
+  name: 按钮
+  description: 一个仅供请购人员使用的基本按钮。
   suffix: Locked, Requisitions & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessRequisitions" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessRequisitions"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedKitchen
-  name: button
-  description: A basic button locked to kitchen staff.
+  name: 按钮
+  description: 一个仅供厨房员工使用的基本按钮。
   suffix: Locked, Kitchen & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessKitchen" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessKitchen"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedEngineering
-  name: button
-  description: A basic button locked to engineering staff.
+  name: 按钮
+  description: 一个仅限工程人员使用的基本按钮。
   suffix: Locked, Engineering & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessEngineering" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessEngineering"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedVehicle
-  name: button
-  description: A basic button locked to Vehicle Crewmen.
+  name: 按钮
+  description: 一个基础按钮，仅限载具乘员使用。
   suffix: Locked, Vehicle Crewmen & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessEngineering" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessEngineering"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedOrdnance
-  name: button
-  description: A basic button locked to Ordnance Techs.
+  name: 按钮
+  description: 一个仅限军械技师使用的基础按钮。
   suffix: Locked, Ordnance & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessOT" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessOT"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedMedical
-  name: button
-  description: A basic button locked to medical staff.
+  name: 按钮
+  description: 仅供医务人员使用的基础按钮。
   suffix: Locked, Medical & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMedical" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMedical"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedChemistry
-  name: button
-  description: A basic button locked to chemistry.
+  name: 按钮
+  description: 一个锁定于化学的基础按钮。
   suffix: Locked, Chemistry & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessChemistry" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessChemistry"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedResearch
-  name: button
-  description: A basic button locked to research staff.
+  name: 按钮
+  description: 一个仅限研究人员使用的基础按钮。
   suffix: Locked, Research & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessResearch" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessResearch"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedSynth
-  name: button
-  description: A basic button locked to Synthetics.
+  name: 按钮
+  description: 一个锁定到 Synthetics 的基本按钮。
   suffix: Locked, Synthetic
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSynth" ] ]
+    access: [["RMCAccessSynth"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedCMO
-  name: button
-  description: A basic button locked to the Chief Medical Officer.
+  name: 按钮
+  description: 一个仅限首席医疗官使用的基础按钮。
   suffix: Locked, CMO
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCMO" ] ]
+    access: [["CMAccessCMO"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedCE
-  name: button
-  description: A basic button locked to the Chief Engineer.
+  name: 按钮
+  description: 一个专属于首席工程师的基础按钮。
   suffix: Locked, CE
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCE" ] ]
+    access: [["CMAccessCE"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedCO
-  name: button
-  description: A basic button locked to the Commanding Officer.
+  name: 按钮
+  description: 一个仅限指挥官使用的基础按钮。
   suffix: Locked, CO
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCO" ] ]
+    access: [["CMAccessCO"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedSEA
-  name: button
-  description: A basic button locked to Senior Enlisted Advisors.
+  name: 按钮
+  description: 一个仅限高级士兵顾问使用的基础按钮。
   suffix: Locked, SEA
   components:
   - type: AccessReader
-    access: [ [ "CMAccessSEA" ] ]
+    access: [["CMAccessSEA"]]
 
 - type: entity
   parent: RMCPodDoorButtonBigRedShip
   id: RMCPodDoorButtonBigRedArmory
-  name: button
-  description: A basic button locked to Armory.
+  name: 按钮
+  description: 一个锁定至军械库的基础按钮。
   suffix: Locked, Armory
   components:
   - type: AccessReader
-    access: [ [ "CMAccessArmory" ] ]
+    access: [["CMAccessArmory"]]
 
 # \Shipside Buttons
 
@@ -447,12 +447,12 @@
   suffix: Locked, We-Yu
   components:
   - type: AccessReader
-    access: [ [ "AU14AccessCorporateWEYU" ] ]
+    access: [["AU14AccessCorporateWEYU"]]
 
 - type: entity
   parent: RMCPodDoorButtonWeYa
   id: RMCPodDoorButtonWeYaOfficeDoor
-  name: Office Door Shutter
+  name: 办公室门百叶窗
   components:
   - type: RMCDoorButton
     id: cl_office_door
@@ -460,7 +460,7 @@
 - type: entity
   parent: RMCPodDoorButtonWeYa
   id: RMCPodDoorButtonWeYaOfficeWindows
-  name: Office Windows Shutters
+  name: 办公室窗户百叶窗
   components:
   - type: RMCDoorButton
     id: cl_office_windows
@@ -468,7 +468,7 @@
 - type: entity
   parent: RMCPodDoorButtonWeYa
   id: RMCPodDoorButtonWeYaOfficeRoomDivider
-  name: Room Divider
+  name: 房间隔断
   components:
   - type: RMCDoorButton
     id: RoomDivider
@@ -476,7 +476,7 @@
 - type: entity
   parent: RMCPodDoorButtonWeYa
   id: RMCPodDoorButtonWeYaOfficeEvacPod
-  name: Evac Pod Door Control
+  name: 撤离舱门控制
   components:
   - type: RMCDoorButton
     id: cl_evac
@@ -484,7 +484,7 @@
 - type: entity
   parent: RMCPodDoorButtonWeYa
   id: RMCPodDoorButtonWeYaOfficeQuarterDoor
-  name: Quarter Door Shutter
+  name: 四分之一门百叶窗
   components:
   - type: RMCDoorButton
     id: cl_quarter_door
@@ -492,7 +492,7 @@
 - type: entity
   parent: RMCPodDoorButtonWeYa
   id: RMCPodDoorButtonWeYaOfficeMaintenanceDoor
-  name: Maintenance Door Shutter
+  name: 维护门卷帘
   components:
   - type: RMCDoorButton
     id: cl_quarter_maintenance
@@ -500,7 +500,7 @@
 - type: entity
   parent: RMCPodDoorButtonWeYa
   id: RMCPodDoorButtonWeYaOfficeQuarterWindows
-  name: Quarter Windows Shutters
+  name: 后三角窗百叶窗
   components:
   - type: RMCDoorButton
     id: cl_quarter_windows
@@ -511,12 +511,12 @@
   suffix: Locked, SPP
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSPPGeneral" ] ]
+    access: [["RMCAccessSPPGeneral"]]
 
 - type: entity
   parent: RMCPodDoorButton
   id: RMCPodDoorButtonHybrisaCavesLockdown
-  name: Caves Lockdown
+  name: 洞穴封锁
   suffix: Hybrisa
   components:
   - type: RMCDoorButton

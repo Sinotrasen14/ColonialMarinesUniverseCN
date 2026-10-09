@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder ]
+  parent: [CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder]
   id: RMCWeaponFlamer
-  name: M240 incinerator unit
-  description: M240 incinerator unit has proven to be one of the most effective weapons at clearing out soft-targets. This is a weapon to be feared and respected as it is quite deadly.
+  name: M240焚化器装置
+  description: M240焚化器装置已被证明是清除软目标最有效的武器之一。这是一件相当致命的武器，既令人畏惧又值得敬畏。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Flamethrower/m34.rsi
@@ -43,7 +43,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Tank
+        name: 坦克
         startingItem: RMCTankFlamer
         insertSound: /Audio/_RMC14/Weapons/Handling/flamer_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Handling/flamer_unload.ogg
@@ -90,12 +90,12 @@
     visuals:
       enum.RMCFlamerVisualLayers.Strip:
         enum.RMCFlamerVisualLayers.Strip:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.RMCIgniterVisuals.Ignited:
         enum.RMCIgniterVisuals.Ignited:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Tag
     tags:
     - RMCWeaponIncineratorM34
@@ -126,8 +126,8 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Tank
-        startingItem: null
+        name: 坦克
+        startingItem:
         insertSound: /Audio/_RMC14/Weapons/Handling/flamer_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Handling/flamer_unload.ogg
         priority: 2
@@ -160,8 +160,8 @@
 - type: entity
   parent: RMCBaseTankFlamer
   id: RMCTankFlamer
-  name: incinerator tank
-  description: A fuel tank used to store fuel for use in the M240 incinerator unit. Handle with care.
+  name: 焚化器燃料罐
+  description: 用于储存M240焚化器单元所需燃料的燃料罐。请小心搬运。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/flamethrower.rsi
@@ -170,7 +170,7 @@
     - state: flametank_custom
     - state: flametank_custom_strip2
     - state: flametank_custom_strip2
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: Item
     size: Normal
   - type: SolutionContainerManager
@@ -200,8 +200,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerCustom
-  name: M240 custom incinerator tank
-  description: A fuel tank for use in the M240 incinerator unit.
+  name: M240定制焚化器燃料罐
+  description: 用于M240焚化器单元的燃料罐。
   # description: A fuel tank for use in the M34 incinerator unit. This one has been modified with a pressure regulator and an internal propellant tank.
   components:
   - type: RMCFlamerTank
@@ -210,7 +210,7 @@
     solutions:
       rmc_flamer_tank:
         maxVol: 100
-        reagents: [ ]
+        reagents: []
   - type: PhysicalComposition
     materialComposition:
       CMSteel: 3750
@@ -218,8 +218,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerBGel
-  name: M240 incinerator tank (B-Gel)
-  description: A fuel tank full of specialized Ultra Thick Napthal Fuel type B-Gel, a gelled variant of napalm that is easily extinguished, but shoots further and lingers for longer. Handle with exceptional care.
+  name: M240焚化器燃料罐（B凝胶）
+  description: 一个装满专用超浓稠纳帕尔燃料B凝胶的燃料罐，这是一种凝固汽油的凝胶变体，容易被扑灭，但喷射得更远，滞留时间更长。请格外小心处理。
   components:
   - type: RMCFlamerTank
     maxRange: 7
@@ -235,8 +235,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerUpgraded
-  name: M240 upgraded incinerator tank
-  description: A fuel tank for use in the M240 incinerator unit. This one has been modified with a larger and more sophisticated internal propellant tank, allowing for larger capacity and stronger fuels.
+  name: M240升级型焚化器燃料罐
+  description: 用于M240焚化器的燃料罐。此罐经过改装，内部推进剂罐更大且更精密，从而拥有更大容量并可容纳更强力的燃料。
   components:
   - type: RMCFlamerTank
     maxIntensity: 60
@@ -246,7 +246,7 @@
     solutions:
       rmc_flamer_tank:
         maxVol: 200
-        reagents: [ ]
+        reagents: []
 
 - type: Tag
   id: RMCTankFlamer
@@ -254,8 +254,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCCaseFlamer
-  name: M240 incinerator case
-  description: A gun case containing the M240 incinerator unit. It does come loaded, but you'll still have to find extra tanks as you go.
+  name: M240焚化器箱
+  description: 一个装有M240焚化器单元的枪箱。它确实已经装填好了，但你仍需要在前行途中寻找额外的燃料罐。
   components:
   - type: Storage
     maxItemSize: Huge

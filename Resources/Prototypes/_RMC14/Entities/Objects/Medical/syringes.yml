@@ -3,7 +3,7 @@
   id: RMCLethalSyringeInjectMode
   mobTime: 30
   delayPerVolume: 0
-  transferAmounts: [ 50 ]
+  transferAmounts: [50]
 
 - type: entity
   parent: Syringe
@@ -17,9 +17,9 @@
     sprite: _RMC14/Objects/Medical/syringe.rsi
     layers:
     - state: syringe
-      map: [ "enum.SolutionContainerLayers.Base" ]
+      map: ["enum.SolutionContainerLayers.Base"]
     - state: syringe1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Icon
     sprite: _RMC14/Objects/Medical/syringe.rsi
@@ -47,14 +47,14 @@
 - type: entity
   parent: CMSyringe
   id: RMCSyringeLethal
-  name: lethal injection syringe
-  description: A syringe used for lethal injections.
+  name: 注射死刑用注射器
+  description: 用于注射死刑的注射器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/lethal_syringe.rsi
   - type: Solution
     solution:
-        maxVol: 50
+      maxVol: 50
   - type: Injector #TODO RMC14 can't draw blood
     currentTransferAmount: 50
     activeModeProtoId: RMCLethalSyringeInjectMode
@@ -70,7 +70,7 @@
     currentLabel: reagent-name-rmc-chloral-hydrate
   - type: Solution
     solution:
-        maxVol: 50
-        reagents:
-        - ReagentId: RMCChloralhydrate
-          Quantity: 50
+      maxVol: 50
+      reagents:
+      - ReagentId: RMCChloralhydrate
+        Quantity: 50

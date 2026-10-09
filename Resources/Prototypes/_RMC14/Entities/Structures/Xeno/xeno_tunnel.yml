@@ -1,7 +1,7 @@
 - type: entity
   id: XenoTunnel
-  name: Tunnel
-  description: A tunnel entrance. Looks like it was dug by some kind of clawed beast.
+  name: 隧道
+  description: 一个隧道入口。看起来像是某种有爪的野兽挖出来的。
   placement:
     mode: SnapgridCenter
   components:
@@ -47,8 +47,8 @@
 - type: entity
   parent: XenoTunnel
   id: XenoTunnelMaint
-  name: Maintenance Hatch
-  description: An entrance to a maintenance tunnel. You can see bits of slime and resin within. Pieces of debris keep you from getting a closer look.
+  name: 维修舱口
+  description: 维修舱口的描述：通往维修隧道的入口。你可以在里面看到一些黏液和树脂。碎片残骸让你无法进一步查看。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/xeno_tunnel.rsi
@@ -57,13 +57,13 @@
 - type: entity
   parent: XenoTunnelMaint
   id: XenoTunnelMaintNoXenoDesc
-  description: An entrance to a maintenance tunnel. Pieces of debris keep you from getting a closer look.
+  description: 维修隧道的入口。散落的碎片让你无法靠近细看。
   suffix: No Xeno Desc
 
 - type: entity
   parent: XenoTunnelMaint
   id: XenoTunnelMaintHybrisa
-  name: Sewer Manhole
+  name: 下水道检查井
   components:
   - type: Sprite
     state: wymanhole
@@ -71,7 +71,7 @@
 - type: entity
   parent: XenoTunnelMaintNoXenoDesc
   id: XenoTunnelMaintHybrisaNoXenoDesc
-  name: Sewer Manhole
+  name: 下水道检查井
   components:
   - type: Sprite
     state: wymanhole

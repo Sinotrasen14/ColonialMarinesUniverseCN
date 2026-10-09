@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaBosenmoriBasho
   suffix: Bosenmori Basho Area
@@ -14,7 +14,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoOob
-  name: Out Of Bounds
+  name: 界外
   components:
   - type: Sprite
     state: unknown
@@ -38,7 +38,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoLZ1
-  name: Bosenmori Basho - Nexus Landing
+  name: 博森莫里·芭蕉——枢纽着陆
   components:
   - type: Sprite
     state: noop
@@ -50,7 +50,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoLZ1
   id: RMCAreaBosenmoriBashoLZ2
-  name: Bosenmori Basho - Corporate Landing
+  name: Bosenmori Basho——企业落地页
   components:
   - type: Area
     linkedLz: dropship_lz2
@@ -58,7 +58,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoLZ1
   id: RMCAreaBosenmoriBashoLZ3
-  name: Bosenmori Basho - Cave Entry
+  name: Bosenmori Basho - 洞穴入口
   components:
   - type: Area
     linkedLz: dropship_lz3
@@ -66,7 +66,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoUnknownCaves
-  name: Unknown
+  name: 未知
   components:
   - type: Sprite
     state: cave
@@ -92,7 +92,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoFirstLevelCaves
-  name: Underground Cave Network
+  name: 地下洞穴网络
   components:
   - type: Sprite
     state: away2
@@ -102,7 +102,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoRuinsInternal
-  name: Ruins Interal
+  name: 因特拉尔遗迹
   components:
   - type: Sprite
     state: away
@@ -112,7 +112,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoAbandonedSector
-  name: Abandoned Sector
+  name: 废弃区域
   components:
   - type: Sprite
     state: cave
@@ -122,7 +122,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoAbandonedDome
-  name: Abandoned Dome
+  name: 废弃穹顶
   components:
   - type: Sprite
     state: cave
@@ -130,7 +130,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoPilgrimPath
-  name: Pilgrim Path
+  name: 朝圣之路
   components:
   - type: Sprite
     state: away1
@@ -138,7 +138,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoPilgrimPath
   id: RMCAreaBosenmoriBashoDrowningCrow
-  name: The Drowning Crow
+  name: 溺水的乌鸦
   components:
   - type: Sprite
     state: away1
@@ -157,7 +157,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoFieldResearchSite
-  name: Field Research Site
+  name: 实地研究地点
   components:
   - type: Sprite
     state: away2
@@ -165,7 +165,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoFieldResearchSiteInside
-  name: Field Research Site
+  name: 实地研究场所
   suffix: Bosenmori Basho Area, Inside
   components:
   - type: Sprite
@@ -174,7 +174,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoNorthBarrens
-  name: North Barrens
+  name: 北部荒地
   components:
   - type: Sprite
     state: red
@@ -182,7 +182,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoFiltration
-  name: Filtration Sector
+  name: 过滤行业
   components:
   - type: Sprite
     state: bluenew
@@ -190,7 +190,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoFiltrationInside
-  name: Filtration Department
+  name: 过滤部
   components:
   - type: Sprite
     state: bluenew
@@ -198,7 +198,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoCavernRiver
-  name: Cavern River
+  name: 洞穴河
   components:
   - type: Sprite
     state: red
@@ -206,7 +206,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoRiver
-  name: Bosenmori River
+  name: 博森莫里河
   components:
   - type: Sprite
     state: bluenew
@@ -214,7 +214,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoWestSector
-  name: West Sector
+  name: 西区
   components:
   - type: Sprite
     state: west
@@ -224,7 +224,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoWestBarrens
-  name: West Barrens
+  name: 西部荒原
   components:
   - type: Sprite
     state: west
@@ -234,7 +234,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoSecuredArmory
-  name: Secure Armory
+  name: 安全军械库
   components:
   - type: Sprite
     state: storage
@@ -244,7 +244,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoSouthWestSector
-  name: Southwest Sector
+  name: 西南区
   components:
   - type: Sprite
     state: southwest
@@ -254,7 +254,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoSouthEastSector
-  name: Southeast Sector
+  name: 东南区
   components:
   - type: Sprite
     state: southeast
@@ -264,7 +264,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoEastSector
-  name: East Sector
+  name: 东区
   components:
   - type: Sprite
     state: east
@@ -274,7 +274,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoNorthSector
-  name: North Sector
+  name: 北区
   components:
   - type: Sprite
     state: north
@@ -284,7 +284,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoMountainClearing
-  name: Mountain Clearing
+  name: 山间空地
   components:
   - type: Sprite
     state: away1
@@ -294,7 +294,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoCorporateDome
-  name: Weyland-Yutani Corporate Dome
+  name: 维兰德-汤谷企业穹顶
   components:
   - type: Sprite
     state: bluenew
@@ -304,7 +304,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoTelecomms
-  name: Telecommunication Department
+  name: 电信部
   components:
   - type: Sprite
     state: yellow
@@ -312,17 +312,17 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoTelecomms
   id: RMCAreaBosenmoriBashoEngineering
-  name: Engineering Department
+  name: 工程部
 
 - type: entity
   parent: RMCAreaBosenmoriBashoCorporateDome
   id: RMCAreaBosenmoriBashoHumanResources
-  name: Human Resources Department
+  name: 人力资源部
 
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoTerrarnium
-  name: Terrarium
+  name: 生态缸
   components:
   - type: Area
     weatherEnabled: true
@@ -332,7 +332,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoLivingSector
-  name: Living Sector
+  name: 居住板块
   components:
   - type: Sprite
     state: crew_quarters
@@ -342,7 +342,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoResearch
-  name: Research Department
+  name: 研究部
   components:
   - type: Sprite
     state: research
@@ -350,7 +350,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoGym
-  name: Gym
+  name: 健身房
   components:
   - type: Sprite
     state: fitness
@@ -358,7 +358,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoMedical
-  name: Medical
+  name: 医疗
   components:
   - type: Sprite
     state: medbay3
@@ -366,7 +366,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoFoodProcessing
-  name: Food Porcessing Department
+  name: 食品加工部
   components:
   - type: Sprite
     state: hydro
@@ -374,7 +374,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoConstruction
-  name: Construction Site
+  name: 建筑工地
   components:
   - type: Sprite
     state: storage
@@ -382,7 +382,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriBashoCargo
-  name: Cargo Department
+  name: 货运部
   components:
   - type: Sprite
     state: storage
@@ -392,12 +392,12 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoCargo
   id: RMCAreaBosenmoriBashoShipment
-  name: Shipment Department
+  name: 装运部
 
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriKitchen
-  name: Kitchen Department
+  name: 厨房部
   components:
   - type: Sprite
     state: kitchen
@@ -407,7 +407,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriNexusMain
-  name: Nexus Main Hall
+  name: 枢纽主厅
   components:
   - type: Sprite
     state: hallc1
@@ -417,7 +417,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriSecurityDepartment
-  name: Security Department
+  name: 安全部
   components:
   - type: Sprite
     state: security
@@ -427,7 +427,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriArmory
-  name: Armory
+  name: 军械库
   components:
   - type: Sprite
     state: armory
@@ -437,7 +437,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriSurplusStore
-  name: Surplus Store
+  name: 剩余物资商店
   components:
   - type: Sprite
     state: bunker01_storage
@@ -447,7 +447,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoDrowningCrow
   id: RMCAreaBosenmoriColonyOperation
-  name: Colony Operation center
+  name: 殖民地运营中心
   components:
   - type: Sprite
     state: bluenew
@@ -457,7 +457,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoMaintenanceSegment
-  name: Maintenance Segment
+  name: 维护段
   components:
   - type: Sprite
     state: away1
@@ -467,7 +467,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoCorporateLow
-  name: Corporate Lower Level
+  name: 企业下级
   components:
   - type: Sprite
     state: bluenew
@@ -477,7 +477,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoSecuredArmoryLow
-  name: Secure Armory Lower Level
+  name: 安全军械库下层
   components:
   - type: Sprite
     state: storage
@@ -487,7 +487,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoEngineeringLow
-  name: Engineering Lower Level
+  name: 工程楼低层
   components:
   - type: Sprite
     state: yellow
@@ -497,12 +497,12 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoUndergroundCaveNetwork
-  name: Underground Local Cave Network
+  name: 地下本地洞穴网络
 
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoShipmentLow
-  name: Shipment Lower Level
+  name: 货件下级
   components:
   - type: Sprite
     state: storage
@@ -512,7 +512,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoNexusLow
-  name: Nexus Lower Level
+  name: Nexus下层
   components:
   - type: Sprite
     state: hallc1
@@ -522,7 +522,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoArmoryLow
-  name: Armory Lower Level
+  name: 军械库下层
   components:
   - type: Sprite
     state: armory
@@ -532,7 +532,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoEmergencyOpLow
-  name: Emergency Operations Lower Level
+  name: 应急行动下层
   components:
   - type: Sprite
     state: hallc1
@@ -542,12 +542,12 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoEngineeringLow
   id: RMCAreaBosenmoriBashoSewageSystem
-  name: Bosenmori Sewage System
+  name: 博森莫里污水系统
 
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoResearchLow
-  name: Research Lower Level
+  name: 研究区下层
   components:
   - type: Sprite
     state: research
@@ -555,7 +555,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoTerraniumLow
-  name: Terrarium Lower Level
+  name: 生态缸下层
   components:
   - type: Sprite
     state: away2
@@ -563,7 +563,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoFoodLow
-  name: Food Processing Lower Level
+  name: 食品加工下层
   components:
   - type: Sprite
     state: away3
@@ -571,7 +571,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoCargoLow
-  name: Cargo Lower Level
+  name: 货运下层
   components:
   - type: Sprite
     state: storage
@@ -581,7 +581,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoSandTemple
-  name: Sand Temple
+  name: 沙之神殿
   components:
   - type: Sprite
     state: away3
@@ -589,7 +589,7 @@
 - type: entity
   parent: RMCAreaBosenmoriBasho
   id: RMCAreaBosenmoriBashoRuinsPerimeter
-  name: Ruins Perimeter
+  name: 遗迹外围
   components:
   - type: Sprite
     state: away
@@ -597,4 +597,4 @@
 - type: entity
   parent: RMCAreaBosenmoriBashoUnknownCaves
   id: RMCAreaBosenmoriBashoMining
-  name: Mining Sector
+  name: 采矿业

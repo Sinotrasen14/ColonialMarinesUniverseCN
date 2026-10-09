@@ -1,7 +1,7 @@
 - type: entity
   id: XenoSpikeProjectile
-  name: spike shard
-  description: A sharp spike shard.
+  name: 尖刺碎片
+  description: 一块尖锐的尖刺碎片。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Materials/shards.rsi
@@ -15,8 +15,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.1
         density: 1
         mask:

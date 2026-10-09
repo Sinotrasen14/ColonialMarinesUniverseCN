@@ -1,15 +1,15 @@
 - type: entity
   parent: BaseStorageItem
   id: CMFirstAidKit
-  name: first-aid kit
-  description: It's an emergency medical kit for those serious boo-boos. With medical training you can fit this in a backpack.
+  name: 急救包
+  description: 这是一个用于处理严重小伤的急救医疗包。受过医疗训练后，你可以把它装进背包。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/first_aid_kits.rsi
     layers:
     - state: firstaid
     - state: kit_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
   - type: Storage
     maxItemSize: Small
@@ -55,8 +55,8 @@
     visuals:
       enum.SharedBagOpenVisuals.BagState:
         openLayer:
-          Open: { visible: true }
-          Closed: { visible: false }
+          Open: {visible: true}
+          Closed: {visible: false}
   - type: Appearance
   - type: IgnoreContentsSize
     items:
@@ -81,7 +81,7 @@
 - type: entity
   parent: CMFirstAidKit
   id: CMFirstAidKitSurgery
-  name: basic field surgery kit
+  name: 基础野战手术包
   components:
   - type: Storage
     maxItemSize: Small
@@ -119,7 +119,7 @@
 - type: entity
   parent: CMFirstAidKit
   id: CMFirstAidKitFilled
-  description: It's an emergency medical kit containing basic medication and equipment. No training required to use. With medical training you can fit this in a backpack.
+  description: 这是一个应急医疗包，内含基本药物和器材。无需培训即可使用。如果受过医疗培训，你可以把它装进背包。
   suffix: Filled
   components:
   - type: StorageFill
@@ -150,7 +150,7 @@
 - type: entity
   parent: CMFirstAidKitSurgery
   id: CMFirstAidKitSurgeryFilled
-  description: Contains a surgical line, cautery, scalpel, hemostat, retractor, drapes and an oxycodone injector for tending wounds surgically. With medical training you can fit this in a backpack.
+  description: 内含手术线、烧灼器、手术刀、止血钳、牵开器、手术铺巾和一支用于外科处理伤口的羟考酮注射器。受过医疗训练后，你可以将其装进背包。
   suffix: Filled
   components:
   - type: StorageFill
@@ -166,14 +166,14 @@
 - type: entity
   parent: CMFirstAidKit
   id: CMBurnAidKit
-  name: fire first-aid kit
-  description: It's an emergency medical kit for when the dropship ammo storage spontaneously burns down. With medical training you can fit this in a backpack.
+  name: 火灾急救包
+  description: 这是一个应急医疗包，用于运输机弹药库突然自燃焚毁时。经过医疗训练后，你可以把它装进背包。
   components:
   - type: Sprite
     layers:
     - state: firefirstaid
     - state: kit_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
   - type: Item
     heldPrefix: firefirstaid
@@ -195,14 +195,14 @@
 - type: entity
   parent: CMFirstAidKit
   id: CMFirstAidO2Kit
-  name: oxygen deprivation first-aid kit
-  description: A box full of reoxygenating goodies. With medical training you can fit this in a backpack.
+  name: 缺氧急救包
+  description: 一个装满补氧好物的盒子。受过医疗训练后，你可以将其放入背包。
   components:
   - type: Sprite
     layers:
     - state: o2
     - state: kit_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
   - type: Item
     heldPrefix: o2
@@ -224,14 +224,14 @@
 - type: entity
   parent: CMFirstAidKit
   id: CMAdvFirstAidKit
-  name: advanced first-aid kit
-  description: Contains more effective methods of medical treatment than a basic first-aid kit, such as burn and trauma kits. With medical training you can fit this in a backpack.
+  name: 高级急救包
+  description: 包含比基础急救包更有效的医疗处理方法，例如烧伤急救包和创伤急救包。受过医疗训练后，你可以把它装进背包里。
   components:
   - type: Sprite
     layers:
     - state: advfirstaid
     - state: kit_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
   - type: Item
     heldPrefix: advfirstaid
@@ -253,14 +253,14 @@
 - type: entity
   parent: CMFirstAidKit
   id: CMToxinAidKit
-  name: toxin first-aid kit
-  description: It's an emergency medical kit containing lifesaving anti-toxic medication. With medical training you can fit this in a backpack.
+  name: 毒素急救包
+  description: 它是一个装有救命抗毒药物的应急医疗包。受过医疗训练后，你可以把它装入背包。
   components:
   - type: Sprite
     layers:
     - state: antitoxin
     - state: kit_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
   - type: Item
     heldPrefix: antitoxin
@@ -280,14 +280,14 @@
 - type: entity
   parent: CMFirstAidKit
   id: RMCRadiationAidKit
-  name: radiation first-aid kit
-  description: Contains treatment for radiation exposure. With medical training you can fit this in a backpack.
+  name: 辐射急救包
+  description: 包含治疗辐射暴露的用品。若受过医疗训练，你可以将其装入背包。
   components:
   - type: Sprite
     layers:
     - state: purplefirstaid
     - state: kit_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
   - type: Item
     heldPrefix: purplefirstaid
@@ -307,15 +307,15 @@
 - type: entity
   parent: CMFirstAidKit
   id: RMCStandardAidKitPVE
-  name: first-aid pack
-  description: A soft first-aid pack typically containing essential medical supplies for use in the field.
+  name: 急救包
+  description: 一个软质急救包，通常包含在野外使用的基本医疗用品。
   suffix: PVE
   components:
   - type: Sprite
     layers:
     - state: softpack_basic
     - state: softpack_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
 
 - type: entity
@@ -336,15 +336,15 @@
 - type: entity
   parent: CMFirstAidKit
   id: RMCBruteAidKitPVE
-  name: first-aid pack
-  description: A soft first-aid pack containing equipment for physical treatment in the field.
+  name: 急救包
+  description: 一个柔软的急救包，内含用于野外身体治疗的设备。
   suffix: PVE
   components:
   - type: Sprite
     layers:
     - state: softpack_brute
     - state: softpack_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
 
 - type: entity
@@ -365,15 +365,15 @@
 - type: entity
   parent: CMFirstAidKit
   id: RMCBurnAidKitPVE
-  name: first-aid pack
-  description: A soft first-aid pack containing equipment for burns treatment in the field.
+  name: 急救包
+  description: 一个柔软的急救包，内含用于野外烧伤处理的设备。
   suffix: PVE
   components:
   - type: Sprite
     layers:
     - state: softpack_burn
     - state: softpack_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
 
 - type: entity

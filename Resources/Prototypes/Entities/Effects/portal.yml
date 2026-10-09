@@ -1,12 +1,12 @@
-﻿# Standing portals
+# Standing portals
 - type: entity
   abstract: true
   id: BasePortal
-  name: bluespace portal
-  description: Transports you to a linked destination!
+  name: 蓝空间传送门 | bluespace portal
+  description: 将你传送至一个已链接的目的地！ | Transports you to a linked destination!
   components:
   - type: Transform
-    anchored: True
+    anchored: true
   - type: InteractionOutline
   - type: Clickable
   - type: Physics
@@ -16,8 +16,7 @@
   - type: Fixtures
     fixtures:
       portalFixture:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.48"
         mask:
         - FullTileMask
@@ -34,7 +33,7 @@
 - type: entity
   parent: BasePortal
   id: PortalRed
-  description: This one looks more like a redspace portal.
+  description: 这个看起来更像一个红色空间传送门。 | This one looks more like a redspace portal.
   components:
   - type: Sprite
     layers:
@@ -67,10 +66,10 @@
     canTeleportToOtherMaps: true
 
 - type: entity
-  parent: [ BasePortal, BaseShadow ]
+  parent: [BasePortal, BaseShadow]
   id: ShadowPortal
-  name: shadow rift
-  description: Looks unstable.
+  name: 暗影裂隙 | shadow rift
+  description: 看起来不稳定。 | Looks unstable.
   components:
   - type: Portal
     arrivalSound: /Audio/Items/hiss.ogg
@@ -98,8 +97,7 @@
   - type: Fixtures
     fixtures:
       portalFixture:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.6
           position: 0, 0.26
         mask:

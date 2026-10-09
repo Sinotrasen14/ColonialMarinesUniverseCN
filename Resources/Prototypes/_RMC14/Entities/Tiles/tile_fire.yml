@@ -1,6 +1,6 @@
 - type: entity
   id: RMCTileFire
-  name: fire
+  name: 火 | fire
   placement:
     mode: SnapgridCenter
   components:
@@ -11,8 +11,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.35,0.35,0.35"
         density: 100
         layer:
@@ -23,7 +22,7 @@
     noRot: true
     drawdepth: WallTops
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: red_4
   - type: Clickable
   - type: InteractionOutline
@@ -55,10 +54,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: red_1 }
-          Two: { state: red_2 }
-          Three: { state: red_3 }
-          Four: { state: red_4 }
+          One: {state: red_1}
+          Two: {state: red_2}
+          Three: {state: red_3}
+          Four: {state: red_4}
   - type: IgnorePredictionHit
   - type: RMCScorchEffectOnSpawn
     decalTag: burnt
@@ -82,7 +81,7 @@
   components:
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: red_1
   - type: TileFire
     id: AU14SpreadTileFire
@@ -95,7 +94,7 @@
   components:
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: green_4
   - type: PointLight
     color: "#069420"
@@ -121,10 +120,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: green_1 }
-          Two: { state: green_2 }
-          Three: { state: green_3 }
-          Four: { state: green_4 }
+          One: {state: green_1}
+          Two: {state: green_2}
+          Three: {state: green_3}
+          Four: {state: green_4}
 
 - type: entity
   parent: RMCTileFire
@@ -132,7 +131,7 @@
   components:
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: green_4
   - type: PointLight
     color: "#069420"
@@ -151,10 +150,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: green_1 }
-          Two: { state: green_2 }
-          Three: { state: green_3 }
-          Four: { state: green_4 }
+          One: {state: green_1}
+          Two: {state: green_2}
+          Three: {state: green_3}
+          Four: {state: green_4}
 
 - type: entity
   parent: RMCTileFire
@@ -166,7 +165,7 @@
         Heat: 120
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: blue_4
   - type: PointLight
     color: "#00b8ff"
@@ -188,10 +187,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: blue_1 }
-          Two: { state: blue_2 }
-          Three: { state: blue_3 }
-          Four: { state: blue_4 }
+          One: {state: blue_1}
+          Two: {state: blue_2}
+          Three: {state: blue_3}
+          Four: {state: blue_4}
 
 - type: entity
   parent: RMCTileFire
@@ -200,7 +199,7 @@
   - type: Sprite
     color: "#C8FFFF"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: white_4
   - type: PointLight
     color: "#8fcbeb"
@@ -216,10 +215,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: white_1 }
-          Two: { state: white_2 }
-          Three: { state: white_3 }
-          Four: { state: white_4 }
+          One: {state: white_1}
+          Two: {state: white_2}
+          Three: {state: white_3}
+          Four: {state: white_4}
 
 - type: entity
   parent: RMCTileFire
@@ -229,7 +228,7 @@
   - type: Sprite
     color: "#ffffff"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: purple_4
   - type: PointLight
     color: "#faeffa"
@@ -245,10 +244,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: purple_1 }
-          Two: { state: purple_2 }
-          Three: { state: purple_3 }
-          Four: { state: purple_4 }
+          One: {state: purple_1}
+          Two: {state: purple_2}
+          Three: {state: purple_3}
+          Four: {state: purple_4}
 
 
 - type: entity
@@ -258,7 +257,7 @@
   - type: Sprite
     color: "#EE6515"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_4
   - type: DamageOnCollide
     damage:
@@ -280,10 +279,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_1 }
-          Two: { state: dynamic_2 }
-          Three: { state: dynamic_3 }
-          Four: { state: dynamic_4 }
+          One: {state: dynamic_1}
+          Two: {state: dynamic_2}
+          Three: {state: dynamic_3}
+          Four: {state: dynamic_4}
 
 - type: entity
   parent: RMCTileFireLaser
@@ -299,7 +298,7 @@
   parent: RMCTileFire
   id: RMCHijackPipeFire
   suffix: Hijack pipe
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TileFire
     duration: 30
@@ -318,7 +317,7 @@
   - type: Sprite
     color: "#00b8ff"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: blue_4
   - type: TileFire
     duration: 15
@@ -333,10 +332,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: blue_1 }
-          Two: { state: blue_2 }
-          Three: { state: blue_3 }
-          Four: { state: blue_4 }
+          One: {state: blue_1}
+          Two: {state: blue_2}
+          Three: {state: blue_3}
+          Four: {state: blue_4}
 
 - type: entity
   parent: RMCTileFireLaser
@@ -345,7 +344,7 @@
   - type: Sprite
     color: White
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: red_4
   - type: TileFire
     duration: 25
@@ -360,10 +359,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: red_1 }
-          Two: { state: red_2 }
-          Three: { state: red_3 }
-          Four: { state: red_4 }
+          One: {state: red_1}
+          Two: {state: red_2}
+          Three: {state: red_3}
+          Four: {state: red_4}
 
 - type: entity
   parent: RMCTileFireLaser
@@ -380,8 +379,8 @@
 - type: entity
   parent: RMCTileFire
   id: RMCTileFireForever
-  name: fire
-  description: That isn't going out any time soon!!
+  name: 火 | fire
+  description: 那火一时半会儿不会熄灭！！ | That isn't going out any time soon!!
   suffix: Undying, Very Strong
   placement:
     mode: PlaceFree
@@ -398,10 +397,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: red_4 }
-          Two: { state: red_4 }
-          Three: { state: red_4 }
-          Four: { state: red_4 }
+          One: {state: red_4}
+          Two: {state: red_4}
+          Three: {state: red_4}
+          Four: {state: red_4}
 
 - type: entity
   parent: RMCTileFireForever
@@ -412,16 +411,16 @@
     id: RMCTileFireForeverStrong
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: red_3
   - type: GenericVisualizer
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: red_3 }
-          Two: { state: red_3 }
-          Three: { state: red_3 }
-          Four: { state: red_3 }
+          One: {state: red_3}
+          Two: {state: red_3}
+          Three: {state: red_3}
+          Four: {state: red_3}
 
 - type: entity
   parent: RMCTileFireForever
@@ -432,16 +431,16 @@
     id: RMCTileFireForeverNormal
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: red_2
   - type: GenericVisualizer
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: red_2 }
-          Two: { state: red_2 }
-          Three: { state: red_2 }
-          Four: { state: red_2 }
+          One: {state: red_2}
+          Two: {state: red_2}
+          Three: {state: red_2}
+          Four: {state: red_2}
 
 - type: entity
   parent: RMCTileFireForever
@@ -452,16 +451,16 @@
     id: RMCTileFireForeverWeak
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: red_1
   - type: GenericVisualizer
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: red_1 }
-          Two: { state: red_1 }
-          Three: { state: red_1 }
-          Four: { state: red_1 }
+          One: {state: red_1}
+          Two: {state: red_1}
+          Three: {state: red_1}
+          Four: {state: red_1}
 
 - type: entity
   parent: RMCTileFireForever
@@ -469,7 +468,7 @@
   components:
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_4
       color: "#FF7700"
   - type: TileFire
@@ -478,10 +477,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_4 }
-          Two: { state: dynamic_4 }
-          Three: { state: dynamic_4 }
-          Four: { state: dynamic_4 }
+          One: {state: dynamic_4}
+          Two: {state: dynamic_4}
+          Three: {state: dynamic_4}
+          Four: {state: dynamic_4}
 
 - type: entity
   parent: RMCTileFireForeverOrange
@@ -491,17 +490,17 @@
     id: RMCTileFireForeverStrongOrange
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_3
       color: "#FF7700"
   - type: GenericVisualizer
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_3 }
-          Two: { state: dynamic_3 }
-          Three: { state: dynamic_3 }
-          Four: { state: dynamic_3 }
+          One: {state: dynamic_3}
+          Two: {state: dynamic_3}
+          Three: {state: dynamic_3}
+          Four: {state: dynamic_3}
 
 - type: entity
   parent: RMCTileFireForeverNormal
@@ -512,17 +511,17 @@
     id: RMCTileFireForeverNormalOrange
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_2
       color: "#FF7700"
   - type: GenericVisualizer
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_2 }
-          Two: { state: dynamic_2 }
-          Three: { state: dynamic_2 }
-          Four: { state: dynamic_2 }
+          One: {state: dynamic_2}
+          Two: {state: dynamic_2}
+          Three: {state: dynamic_2}
+          Four: {state: dynamic_2}
 
 - type: entity
   parent: RMCTileFireForeverWeak
@@ -533,17 +532,17 @@
     id: RMCTileFireForeverWeakOrange
   - type: Sprite
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_1
       color: "#FF7700"
   - type: GenericVisualizer
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_1 }
-          Two: { state: dynamic_1 }
-          Three: { state: dynamic_1 }
-          Four: { state: dynamic_1 }
+          One: {state: dynamic_1}
+          Two: {state: dynamic_1}
+          Three: {state: dynamic_1}
+          Four: {state: dynamic_1}
 
 - type: entity
   parent: RMCTileFire
@@ -553,7 +552,7 @@
   - type: Sprite
     color: "#f8e3b2"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_4
   - type: TileFire
     duration: 50
@@ -568,10 +567,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_1 }
-          Two: { state: dynamic_2 }
-          Three: { state: dynamic_3 }
-          Four: { state: dynamic_4 }
+          One: {state: dynamic_1}
+          Two: {state: dynamic_2}
+          Three: {state: dynamic_3}
+          Four: {state: dynamic_4}
 
 - type: entity
   parent: RMCTileFire
@@ -585,7 +584,7 @@
   - type: Sprite
     color: "#c51c1c"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_4
   - type: TileFire
     duration: 10
@@ -600,10 +599,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_1 }
-          Two: { state: dynamic_2 }
-          Three: { state: dynamic_3 }
-          Four: { state: dynamic_4 }
+          One: {state: dynamic_1}
+          Two: {state: dynamic_2}
+          Three: {state: dynamic_3}
+          Four: {state: dynamic_4}
 
 - type: entity
   parent: RMCTileFire
@@ -613,7 +612,7 @@
   - type: Sprite
     color: "#800080"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_4
   - type: TileFire
     duration: 50
@@ -629,10 +628,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_1 }
-          Two: { state: dynamic_2 }
-          Three: { state: dynamic_3 }
-          Four: { state: dynamic_4 }
+          One: {state: dynamic_1}
+          Two: {state: dynamic_2}
+          Three: {state: dynamic_3}
+          Four: {state: dynamic_4}
 
 - type: entity
   parent: RMCTileFire
@@ -646,7 +645,7 @@
   - type: Sprite
     color: "#641dd6"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_4
   - type: TileFire
     duration: 40
@@ -662,10 +661,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_1 }
-          Two: { state: dynamic_2 }
-          Three: { state: dynamic_3 }
-          Four: { state: dynamic_4 }
+          One: {state: dynamic_1}
+          Two: {state: dynamic_2}
+          Three: {state: dynamic_3}
+          Four: {state: dynamic_4}
 
 - type: entity
   parent: RMCTileFire
@@ -679,7 +678,7 @@
   - type: Sprite
     color: "#ffe49c"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_4
   - type: TileFire
     duration: 30
@@ -695,10 +694,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_1 }
-          Two: { state: dynamic_2 }
-          Three: { state: dynamic_3 }
-          Four: { state: dynamic_4 }
+          One: {state: dynamic_1}
+          Two: {state: dynamic_2}
+          Three: {state: dynamic_3}
+          Four: {state: dynamic_4}
 
 - type: entity
   parent: RMCTileFire
@@ -712,7 +711,7 @@
   - type: Sprite
     color: "#D05006"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_4
   - type: TileFire
     duration: 38
@@ -725,10 +724,10 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_1 }
-          Two: { state: dynamic_2 }
-          Three: { state: dynamic_3 }
-          Four: { state: dynamic_4 }
+          One: {state: dynamic_1}
+          Two: {state: dynamic_2}
+          Three: {state: dynamic_3}
+          Four: {state: dynamic_4}
 
 - type: entity
   parent: RMCTileFire
@@ -738,7 +737,7 @@
   - type: Sprite
     color: "#6897f7"
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_4
   - type: TileFire
     duration: 15
@@ -751,7 +750,7 @@
     visuals:
       enum.TileFireLayers.Base:
         base:
-          One: { state: dynamic_1 }
-          Two: { state: dynamic_2 }
-          Three: { state: dynamic_3 }
-          Four: { state: dynamic_4 }
+          One: {state: dynamic_1}
+          Two: {state: dynamic_2}
+          Three: {state: dynamic_3}
+          Four: {state: dynamic_4}

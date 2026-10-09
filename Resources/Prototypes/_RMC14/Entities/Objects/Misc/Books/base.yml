@@ -3,7 +3,7 @@
   abstract: true
   parent: BaseItem
   id: RMCBookBase
-  name: book
+  name: 书
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/Books/Other/book.rsi
@@ -26,11 +26,11 @@
       collection: Punch
     damage:
       types:
-        Blunt: 1 
+        Blunt: 1
   - type: DamageOtherOnHit
     damage:
       types:
-        Blunt: 1 
+        Blunt: 1
   - type: Tag
     tags:
     - Book
@@ -39,7 +39,7 @@
 - type: entity
   parent: BaseItem
   id: RMCGuidebookBase
-  name: book
+  name: 书
   suffix: Guidebook
   components:
   - type: Sprite
@@ -54,7 +54,7 @@
       collection: Punch
     damage:
       types:
-        Blunt: 1 
+        Blunt: 1
   - type: DamageOtherOnHit
     damage:
       types:

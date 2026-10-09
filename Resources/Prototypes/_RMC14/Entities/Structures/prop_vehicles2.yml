@@ -1,4 +1,4 @@
-﻿# I beg if anyone has the time to remove RMCPropVehicle2Base and change how the vehicles in this file work so that they're like prop_vehicles.yml or prop_vehicles3.yml
+# I beg if anyone has the time to remove RMCPropVehicle2Base and change how the vehicles in this file work so that they're like prop_vehicles.yml or prop_vehicles3.yml
 
 - type: entity
   abstract: true
@@ -18,8 +18,8 @@
   parent: RMCPropVehicle2Base #use East and West
   id: RMCPropVehicleCargoCrane
   suffix: Use East, West
-  name: cargo crane
-  description: A crane used for loading and unloading cargo.
+  name: 货物起重机
+  description: 用于装卸货物的起重机。
   components:
   - type: Sprite
     state: crane
@@ -27,8 +27,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.8,-0.9,0.8,0.9"
         density: 190
         layer:
@@ -42,8 +41,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-1.4,1,0.5"
         density: 190
         layer:
@@ -57,8 +55,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-1,-0.5,0.5,1.4"
         density: 190
         layer:
@@ -67,8 +64,8 @@
 - type: entity
   parent: RMCPropVehicleCargoCrane
   id: RMCPropVehicleCargoCraneCargo
-  name: cargo crane
-  description: A crane used for loading and unloading cargo.
+  name: 货物起重机
+  description: 用于装卸货物的起重机。
   components:
   - type: Sprite
     state: crane_cargo
@@ -77,8 +74,8 @@
 - type: entity
   parent: RMCPropVehicleCargoCrane
   id: RMCPropVehicleCargoCraneCargoSnow
-  name: cargo crane
-  description: A crane used for loading and unloading cargo.
+  name: 货物起重机
+  description: 用于装卸货物的起重机。
   components:
   - type: Sprite
     state: crane_cargo_snow
@@ -87,8 +84,8 @@
 - type: entity
   parent: RMCPropVehicleCargoCrane
   id: RMCPropVehicleCargoCraneSnow
-  name: cargo crane
-  description: A crane used for loading and unloading cargo.
+  name: 货物起重机
+  description: 用于装卸货物的起重机。
   components:
   - type: Sprite
     state: crane_snow
@@ -97,8 +94,8 @@
 - type: entity
   parent: RMCPropVehicleCargoCrane
   id: RMCPropVehicleCargoCraneDestroyed
-  name: cargo crane
-  description: A crane used for loading and unloading cargo.
+  name: 货物起重机
+  description: 用于装卸货物的起重机。
   components:
   - type: Sprite
     state: crane_damaged
@@ -108,16 +105,15 @@
   parent: RMCPropVehicle2Base #Use East and West
   id: RMCPropVehicleCrawler
   suffix: Use East, West
-  name: colony crawler
-  description: It is a tread bound crawler used in harsh conditions. Supplied by Orbital Blue International; 'Your friends, in the Aerospace business.' A subsidiary of We-Yu.
+  name: 殖民地履带车
+  description: 它是一台在恶劣条件下使用的履带车。由 Orbital Blue International 供应；‘您在航空航天行业的朋友。’该公司是 We-Yu 的子公司。
   components:
   - type: Sprite
     state: crawler
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.6,-0.7,0.6,0.7"
         density: 190
         layer:
@@ -126,8 +122,8 @@
 - type: entity
   parent: RMCPropVehicleCrawler
   id: RMCPropVehicleCrawlerCovered
-  name: colony crawler
-  description: It is a tread bound crawler used in harsh conditions. Supplied by Orbital Blue International; 'Your friends, in the Aerospace business.' A subsidiary of We-Yu.
+  name: 殖民地履带车
+  description: 这是一种用于恶劣环境的履带式爬行器。由 Orbital Blue International 供应；“您在航空航天行业的朋友们。”We-Yu 的子公司。
   components:
   - type: Sprite
     state: crawler_covered_bed
@@ -135,8 +131,8 @@
 - type: entity
   parent: RMCPropVehicleCrawler
   id: RMCPropVehicleCrawlerCrate
-  name: colony crawler
-  description: It is a tread bound crawler used in harsh conditions. Supplied by Orbital Blue International; 'Your friends, in the Aerospace business.' A subsidiary of We-Yu.
+  name: 殖民地履带车
+  description: 这是一种用于恶劣环境的履带式车辆。由 Orbital Blue International 供应；‘您在航空航天行业的朋友。’它是 We-Yu 的子公司。
   components:
   - type: Sprite
     state: crawler_crate
@@ -144,8 +140,8 @@
 - type: entity
   parent: RMCPropVehicleCrawler
   id: RMCPropVehicleCrawlerCrate2
-  name: colony crawler
-  description: It is a tread bound crawler used in harsh conditions. Supplied by Orbital Blue International; 'Your friends, in the Aerospace business.' A subsidiary of We-Yu.
+  name: 殖民地履带车
+  description: 这是一种在恶劣条件下使用的履带车。由轨道蓝国际供应；“您在航空航天业务中的朋友。”威宇的子公司。
   components:
   - type: Sprite
     state: crawler_crate_alt
@@ -153,8 +149,8 @@
 - type: entity
   parent: RMCPropVehicleCrawler
   id: RMCPropVehicleCrawlerCrate3
-  name: colony crawler
-  description: It is a tread bound crawler used in harsh conditions. Supplied by Orbital Blue International; 'Your friends, in the Aerospace business.' A subsidiary of We-Yu.
+  name: 殖民地履带车
+  description: 它是一种在恶劣条件下使用的履带车。由轨道蓝国际供应；“您在航空航天业的伙伴。”该公司是维宇的子公司。
   components:
   - type: Sprite
     state: crawler_crate_alt2
@@ -162,8 +158,8 @@
 - type: entity
   parent: RMCPropVehicleCrawler
   id: RMCPropVehicleCrawlerCrateWY
-  name: colony crawler
-  description: It is a tread bound crawler used in harsh conditions. Supplied by Orbital Blue International; 'Your friends, in the Aerospace business.' A subsidiary of We-Yu.
+  name: 殖民地履带车
+  description: 这是一种在恶劣条件下使用的履带式车辆。由轨道蓝国际提供；“您在航空航天行业中的朋友。”该公司是威宇的子公司。
   components:
   - type: Sprite
     state: crawler_crate_wy
@@ -171,8 +167,8 @@
 - type: entity
   parent: RMCPropVehicleCrawler
   id: RMCPropVehicleCrawlerFuel
-  name: colony crawler
-  description: It is a tread bound crawler used in harsh conditions. Supplied by Orbital Blue International; 'Your friends, in the Aerospace business.' A subsidiary of We-Yu.
+  name: 殖民履带车
+  description: 这是一种在恶劣条件下使用的履带式车辆。由轨道蓝国际供应；“您在航空航天行业的朋友。”该公司是维宇的子公司。
   components:
   - type: Sprite
     state: crawler_fuel
@@ -181,16 +177,15 @@
   parent: RMCPropVehicle2Base #Use East and West
   id: RMCPropVehicleTruck
   suffix: Use East, West
-  name: truck
-  description: An old truck, seems to be broken down.
+  name: 卡车
+  description: 一辆旧卡车，似乎坏掉了。
   components:
   - type: Sprite
     state: truck
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.6,-0.9,0.6,0.9"
         density: 190
         layer:
@@ -199,8 +194,8 @@
 - type: entity
   parent: RMCPropVehicleTruck
   id: RMCPropVehicleTruckCargo
-  name: truck
-  description: An old cargo truck, seems to be broken down.
+  name: 卡车
+  description: 一辆旧货运卡车，似乎抛锚了。
   components:
   - type: Sprite
     state: truck_cargo
@@ -208,8 +203,8 @@
 - type: entity
   parent: RMCPropVehicleTruck
   id: RMCPropVehicleTruckMining
-  name: truck
-  description: An old mining truck, seems to be broken down.
+  name: 卡车
+  description: 一辆老旧的矿用卡车，似乎抛锚了。
   components:
   - type: Sprite
     state: truck_mining
@@ -217,8 +212,8 @@
 - type: entity
   parent: RMCPropVehicleTruck
   id: RMCPropVehicleTruckBroken
-  name: truck
-  description: An old truck, seems to be broken down.
+  name: 卡车
+  description: 一辆旧卡车，似乎抛锚了。
   components:
   - type: Sprite
     state: truck_damaged
@@ -226,8 +221,8 @@
 - type: entity
   parent: RMCPropVehicleTruck
   id: RMCPropVehicleTruckSnow
-  name: truck
-  description: An old truck, seems to be broken down.
+  name: 卡车
+  description: 一辆旧卡车，似乎已经抛锚了。
   components:
   - type: Sprite
     state: truck_snow
@@ -235,8 +230,8 @@
 - type: entity
   parent: RMCPropVehicleTruck
   id: RMCPropVehicleTruckCargoSnow
-  name: truck
-  description: An old cargo truck, seems to be broken down.
+  name: 卡车
+  description: 一辆旧货运卡车，似乎抛锚了。
   components:
   - type: Sprite
     state: truck_cargo
@@ -245,16 +240,15 @@
   parent: RMCPropVehicle2Base #Use East and West
   id: RMCPropVehicleTractor
   suffix: Use East, West
-  name: tractor
-  description: An old tractor, seems to be broken down.
+  name: 拖拉机
+  description: 一台旧拖拉机，似乎坏掉了。
   components:
   - type: Sprite
     state: tractor
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.6,-0.9,0.6,0.9"
         density: 190
         layer:
@@ -263,8 +257,8 @@
 - type: entity
   parent: RMCPropVehicleTruck
   id: RMCPropVehicleTractorDamaged
-  name: tractor
-  description: An old cargo truck, seems to be broken down.
+  name: 拖拉机
+  description: 一辆旧货车，似乎抛锚了。
   components:
   - type: Sprite
     state: tractor_damaged
@@ -272,8 +266,8 @@
 - type: entity
   parent: RMCPropVehicleTruck
   id: RMCPropVehicleTractorSnow
-  name: tractor
-  description: An old cargo truck, seems to be broken down.
+  name: 牵引车
+  description: 一辆旧货车，似乎坏掉了。
   components:
   - type: Sprite
     state: tractor_snow
@@ -282,16 +276,15 @@
   parent: RMCPropVehicle2Base #Use East and West
   id: RMCPropVehicleVan
   suffix: Use East, West [PropVan
-  name: van
-  description: An old van, seems to be broken down.
+  name: 面包车
+  description: 一辆旧面包车，似乎抛锚了。
   components:
   - type: Sprite
     state: van
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.8,0.5,0.8"
         density: 190
         layer:
@@ -300,8 +293,8 @@
 - type: entity
   parent: RMCPropVehicleVan
   id: RMCPropVehicleVanDamaged
-  name: van
-  description: An old van, seems to be broken down.
+  name: 面包车
+  description: 一辆旧面包车，似乎抛锚了。
   components:
   - type: Sprite
     state: van_damaged
@@ -309,8 +302,8 @@
 - type: entity
   parent: RMCPropVehicleVan
   id: RMCPropVehicleVanSnow
-  name: van
-  description: An old van, seems to be broken down.
+  name: 面包车
+  description: 一辆旧面包车，似乎坏了。
   components:
   - type: Sprite
     state: van_snow
@@ -318,8 +311,8 @@
 - type: entity
   parent: RMCPropVehicleVan
   id: RMCPropVehicleVanCandy
-  name: van
-  description: An old van, seems to be filled with... Candy?
+  name: 面包车
+  description: 一辆旧面包车，似乎装满了……糖果？
   components:
   - type: Sprite
     state: van_candy

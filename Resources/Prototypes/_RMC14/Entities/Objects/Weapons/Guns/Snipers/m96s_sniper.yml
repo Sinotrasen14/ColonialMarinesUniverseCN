@@ -1,17 +1,16 @@
 - type: entity
   parent: RMCBaseWeaponSniperRifle
   id: CMM96SSniperRifle
-  name: M42A scoped rifle
-  description: "A heavy sniper rifle manufactured by ARMAT. It has a scope system and fires armor penetrating rounds out of a 15-round magazine.
-    'Peace Through Superior Firepower'"
+  name: M42A 带瞄准镜步枪
+  description: "ARMAT制造的重型狙击步枪。它配有瞄准镜系统，可从15发弹匣中发射穿甲弹。“以优势火力求和平”"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Snipers/m96s/desert.rsi
     layers:
     - state: bolt-open
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
       state: sniperbarrel
       offset: 0.715, 0.025
@@ -45,7 +44,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineSniperM96S
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg
@@ -93,15 +92,15 @@
 - type: entity
   parent: BaseItem
   id: CMMagazineSniperM96S
-  name: "M42A marksman magazine (10x28mm)"
-  description: A magazine of sniper rifle ammo. An aimed shot with it will deal significant damage.
+  name: "M42A 精确射手弹匣（10×28毫米）"
+  description: 狙击步枪弹药弹匣。用其进行瞄准射击会造成显著伤害。
   components:
   - type: Tag
     tags:
     - CMMagazineSniper
     - CMMagazineSniperM96S
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeSniper10x28mm
@@ -132,8 +131,8 @@
 - type: entity
   parent: CMMagazineSniperM96S
   id: CMMagazineSniperM96SIncendiary
-  name: "M42A incendiary magazine (10x28mm)"
-  description: A magazine of sniper rifle ammo. An aimed shot with it will temporarily blind the targe and kindle the blaze further.
+  name: "M42A 燃烧弹弹匣（10×28毫米）"
+  description: 狙击步枪弹药弹匣。用它进行瞄准射击会暂时致盲目标，并让烈焰燃烧得更旺。
   components:
   - type: BallisticAmmoProvider
     proto: CMCartridgeSniper10x28mmIncendiary
@@ -151,8 +150,8 @@
 - type: entity
   parent: CMMagazineSniperM96S
   id: CMMagazineSniperM96SFlak
-  name: "M42A flak magazine (10x28mm)"
-  description: A magazine of sniper rifle ammo. An aimed shot with it will temporarily slow the target and minimize the backlash.
+  name: "M42A 高射弹匣（10×28毫米）"
+  description: 狙击步枪弹药弹匣。用它进行瞄准射击会暂时使目标减速，并将后坐力降至最低。
   components:
   - type: BallisticAmmoProvider
     proto: CMCartridgeSniper10x28mmFlak
@@ -170,7 +169,7 @@
 - type: entity
   parent: CMCartridgeSniper10x28mm
   id: CMCartridgeSniper10x28mmIncendiary
-  name: cartridge (10x28mm) (incendiary)
+  name: 弹药（10x28毫米）（燃烧弹）
   components:
   - type: CartridgeAmmo
     proto: CMBulletSniper10x28mmIncendiary
@@ -178,7 +177,7 @@
 - type: entity
   parent: CMCartridgeSniper10x28mm
   id: CMCartridgeSniper10x28mmFlak
-  name: cartridge (10x28mm) (Flak)
+  name: 子弹（10×28毫米）（防空）
   components:
   - type: CartridgeAmmo
     proto: CMBulletSniper10x28mmFlak
@@ -186,8 +185,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: CMBulletSniper10x28mm
-  name: bullet (10x28mm)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（10×28毫米）
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/bullet_projectiles.rsi
@@ -224,8 +223,8 @@
 - type: entity
   parent: CMBulletSniper10x28mm
   id: CMBulletSniper10x28mmIncendiary
-  name: bullet (10x28mm)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（10×28毫米）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -243,8 +242,8 @@
 - type: entity
   parent: CMBulletSniper10x28mm
   id: CMBulletSniper10x28mmFlak
-  name: bullet (10x28mm)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（10x28毫米）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

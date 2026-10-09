@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseStorageItem
   id: CMPacketBase
-  name: packet
+  name: 数据包
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/packets.rsi
@@ -35,15 +35,15 @@
 - type: entity
   parent: CMPacketBase
   id: CMPacketGrenadeHighExplosive
-  name: HEDP grenade packet
-  description: It contains three HEDP high explosive grenades.
+  name: HEDP榴弹包
+  description: 内含三枚HEDP高爆榴弹。
   components:
   - type: Sprite
     layers:
     - state: hedp_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: hedp_packet_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: CMPacketGrenadeHighExplosive
@@ -58,15 +58,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeMetalFoam
-  name: MFHS Grenade Packet
-  description: It contains three HFHS Metal Foam Grenades.
+  name: MFHS手雷包
+  description: 它包含三枚HFHS金属泡沫手雷。
   components:
   - type: Sprite
     layers:
     - state: mfhs_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: mfhs_packet_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeMetalFoam
@@ -81,15 +81,15 @@
 - type: entity
   parent: CMPacketBase
   id: CMPacketGrenadeFrag
-  name: HEFA grenade packet
-  description: It contains three HEFA grenades. Don't tell the HEFA order.
+  name: HEFA 手榴弹包
+  description: 内含三枚 HEFA 手榴弹。不要告诉 HEFA 教团。
   components:
   - type: Sprite
     layers:
     - state: hefa_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: hefa_packet_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: CMPacketGrenadeFrag
@@ -104,16 +104,16 @@
 - type: entity
   parent: BaseStorageItem
   id: RMCPacketGrenadeFlashBang
-  name: box of flashbangs (WARNING)
+  name: 一箱闪光弹（警告）
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/flashbangs.rsi
     layers:
     - state: flashbang
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: flashbang_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Item
     size: Normal
   - type: Storage
@@ -143,15 +143,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeSmoke
-  name: HSDP grenade packet
-  description: It contains three HSDP smoke grenades.
+  name: HSDP手榴弹包
+  description: 它包含三枚HSDP烟雾弹。
   components:
   - type: Sprite
     layers:
     - state: hsdp_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: hsdp_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeSmoke
@@ -166,15 +166,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeM74AGMF
-  name: M74 AGM-F grenade packet
-  description: It contains three M74AGM-Frag airburst grenades.
+  name: M74 AGM-F 手榴弹包
+  description: 它包含三枚 M74AGM-Frag 空爆手榴弹。
   components:
   - type: Sprite
     layers:
     - state: agmf_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: agmf_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeM74AGMF
@@ -189,15 +189,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeM74AGMI
-  name: M74AGM-I grenade packet
-  description: It contains three M74AGM-Incendiary airburst grenades.
+  name: M74AGM-I 手榴弹包
+  description: 内含三枚M74AGM-I燃烧空爆手榴弹。
   components:
   - type: Sprite
     layers:
     - state: agmi_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: agmi_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeM74AGMI
@@ -212,15 +212,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeM74AGMS
-  name: M74AGM-S grenade packet
-  description: It contains three M74AGM-Smoke airburst grenades.
+  name: M74AGM-S 榴弹包
+  description: 它包含三枚 M74AGM-S 烟雾空爆榴弹。
   components:
   - type: Sprite
     layers:
     - state: agms_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: agms_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeM74AGMS
@@ -235,15 +235,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeM74AGMSHornet
-  name: M74AGM-S Hornet grenade packet
-  description: It contains three M74AGM-S Hornet airburst grenades.
+  name: M74AGM-S大黄蜂手榴弹包
+  description: 包含三枚M74AGM-S大黄蜂空爆手榴弹。
   components:
   - type: Sprite
     layers:
     - state: hornet_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: hornet_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeM74AGMSHornet
@@ -258,15 +258,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeM74AGMSStarShell
-  name: M74AGM-S Starshell grenade packet
-  description: It contains three M74AGM-S Starshell airburst grenades.
+  name: M74AGM-S 星弹手雷包
+  description: 内含三枚M74AGM-S星弹空爆手雷。
   components:
   - type: Sprite
     layers:
     - state: starshell_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: starshell_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeM74AGMSStarShell
@@ -281,15 +281,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeBatonSlugHIRR
-  name: HIRR Baton Slug packet
-  description: It contains three HIRR Baton Slug rounds.
+  name: HIRR 警棍弹包
+  description: 内含三发 HIRR 警棍弹。
   components:
   - type: Sprite
     layers:
     - state: baton_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: baton_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeBatonSlugHIRR
@@ -304,15 +304,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeIncendiary
-  name: HIAM grenade packet
-  description: It contains three M77 High-explosive-Incendiary, Anti-Mobility grenades.
+  name: HIAM 榴弹包
+  description: 包含三枚M77高爆燃烧反机动榴弹。
   components:
   - type: Sprite
     layers:
     - state: hidp_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: hidp_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeIncendiary
@@ -327,15 +327,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeWhitePhosphorus
-  name: WPDP grenade packet
-  description: It contains three WPDP white phosphorus grenades.
+  name: WPDP 手榴弹包
+  description: 它包含三枚WPDP白磷手榴弹。
   components:
   - type: Sprite
     layers:
     - state: wpdp_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: wpdp_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeWhitePhosphorus
@@ -350,15 +350,15 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenadeWhitePhosphorusCompound
-  name: CCDP grenade packet
-  description: It contains three CCDP chemical compound grenades.
+  name: CCDP手榴弹包
+  description: 内含三枚CCDP化学复合手榴弹。
   components:
   - type: Sprite
     layers:
     - state: ccdp_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: ccdp_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: RMCPacketGrenadeWhitePhosphorusCompound
@@ -373,15 +373,15 @@
 - type: entity
   parent: CMPacketBase
   id: CMPacketGrenadeFragOld
-  name: M15 frag grenade packet
-  description: It contains three M15 fragmentation grenades. Handle with care.
+  name: M15破片手榴弹包
+  description: 它包含三枚M15破片手榴弹。请小心处理。
   components:
   - type: Sprite
     layers:
     - state: m15_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: m15_packet_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: CMPacketGrenadeFragOld
@@ -400,15 +400,15 @@
   abstract: true
   parent: CMPacketBase
   id: RMCBoxBase
-  name: grenade box
-  description: A secure box holding grenades. High explosive, don't store near the flamer fuel.
+  name: 手榴弹箱
+  description: 一个装有手榴弹的安全箱。高爆物，请勿存放在火焰喷射器燃料附近。
   components:
   - type: Sprite
     layers:
     - state: d_nade_placeholder
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: d_nade_placeholder_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Item
     size: Large
   - type: Storage
@@ -419,24 +419,24 @@
     limits:
     - popup: rmc-storage-limit-grenades
       count: 25
-      whitelist: null
+      whitelist:
   - type: Tag
-    tags: [ ]
+    tags: []
 
 - type: entity
   parent: RMCBoxBase
   id: RMCBoxHEDP
-  name: 30mm HEDP grenade box
-  description: A secure box holding 25 30mm High-Explosive Dual-Purpose grenades. High explosive, don't store near the flamer fuel.
+  name: 30毫米高爆双用途榴弹箱
+  description: 一个安全箱，内装25枚30毫米高爆双用途榴弹。高爆物，请勿存放在火焰喷射器燃料附近。
   components:
   - type: Sprite
     layers:
     - state: d_nade_placeholder
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: model_m40
     - state: hedp
     - state: d_nade_placeholder_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Storage
     whitelist:
       tags:
@@ -449,17 +449,17 @@
 - type: entity
   parent: RMCBoxBase
   id: RMCBoxHEFA
-  name: 30mm HEFA grenade box
-  description: A secure box holding 25 30mm High-Explosive Fragmenting-Antipersonnel grenades. High explosive, don't store near the flamer fuel.
+  name: 30毫米高爆破片杀伤榴弹箱
+  description: 一个装有25枚30毫米高爆破片杀伤榴弹的安全箱。高爆物，不要存放在火焰喷射器燃料附近。
   components:
   - type: Sprite
     layers:
     - state: d_nade_placeholder
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: model_m40
     - state: hefa
     - state: d_nade_placeholder_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Storage
     whitelist:
       tags:
@@ -472,17 +472,17 @@
 - type: entity
   parent: RMCBoxBase
   id: RMCBoxAGMF
-  name: M74 AGM-F grenade box
-  description: A secure box holding 25 M74 AGM Fragmentation grenades. Explosive, don't store near the flamer fuel.
+  name: M74 AGM-F 手榴弹箱
+  description: 一个装有25枚M74 AGM破片手榴弹的安全箱。易爆，请勿存放在火焰喷射器燃料附近。
   components:
   - type: Sprite
     layers:
     - state: d_nade_placeholder
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: model_m74
     - state: agmf
     - state: d_nade_placeholder_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Storage
     whitelist:
       tags:
@@ -495,17 +495,17 @@
 - type: entity
   parent: RMCBoxBase
   id: RMCBoxAGMI
-  name: M74 AGM-I grenade box
-  description: A secure box holding 25 M74 AGM Incendiary grenades. Highly flammable, don't store near the flamer fuel.
+  name: M74 AGM-I 手榴弹箱
+  description: 一个牢固的箱子，内装25枚M74 AGM燃烧手榴弹。极易燃，请勿存放在喷火器燃料附近。
   components:
   - type: Sprite
     layers:
     - state: d_nade_placeholder
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: model_m74
     - state: agmi
     - state: d_nade_placeholder_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Storage
     whitelist:
       tags:
@@ -518,17 +518,17 @@
 - type: entity
   parent: RMCBoxBase
   id: RMCBoxWPDP
-  name: 30mm WPDP grenade box
-  description: A secure box holding 25 30mm WPDP White Phosphorus grenades. Highly flammable, don't store near the flamer fuel.
+  name: 30mm WPDP手榴弹箱
+  description: 一个装有25枚30mm WPDP白磷手榴弹的安全箱。极易燃，请勿存放在喷火器燃料附近。
   components:
   - type: Sprite
     layers:
     - state: d_nade_placeholder
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: model_m40
     - state: ccdp
     - state: d_nade_placeholder_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Storage
     whitelist:
       tags:
@@ -541,17 +541,17 @@
 - type: entity
   parent: RMCBoxBase
   id: RMCBoxCCDP
-  name: 30mm CCDP grenade box
-  description: A secure box holding 25 30mm CCDP Chemical Compound grenades. Highly flammable, don't store near the flamer fuel.
+  name: 30毫米CCDP榴弹箱
+  description: 一个装有25枚30毫米CCDP化学复合榴弹的安全箱。极易燃，请勿存放在喷火器燃料附近。
   components:
   - type: Sprite
     layers:
     - state: d_nade_placeholder
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: model_m40
     - state: ccdp
     - state: d_nade_placeholder_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Storage
     whitelist:
       tags:
@@ -564,9 +564,9 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenade20mmHE
-  name: L109A1 HE grenade packet
+  name: L109A1 高爆榴弹包
   suffix: PVE
-  description: It contains eight L109A1 20mm HE grenades.
+  description: 内含八枚L109A1 20毫米高爆榴弹。
   components:
   - type: Tag
     tags:
@@ -574,9 +574,9 @@
   - type: Sprite
     layers:
     - state: hedp_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: hedp_packet_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Storage
     maxItemSize: Small
     grid:
@@ -598,9 +598,9 @@
 - type: entity
   parent: CMPacketBase
   id: RMCPacketGrenade20mmIncendiary
-  name: L109A2 Incendiary grenade packet
+  name: L109A2燃烧手榴弹包
   suffix: PVE
-  description: It contains eight L109A2 20mm incendiary grenades.
+  description: 它包含八枚L109A2 20毫米燃烧手榴弹。
   components:
   - type: Tag
     tags:
@@ -608,9 +608,9 @@
   - type: Sprite
     layers:
     - state: agmi_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: agmi_packet_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Storage
     maxItemSize: Small
     grid:
@@ -632,15 +632,15 @@
 - type: entity
   parent: CMPacketBase
   id: AU14PacketGrenadeTearGas
-  name: M19-NL tear gas grenade packet
-  description: It contains three M19-Non Lethal gas grenades.
+  name: M19-NL催泪瓦斯手榴弹包
+  description: 它包含三枚M19非致命性毒气手榴弹。
   components:
   - type: Sprite
     layers:
     - state: teargas_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: teargas_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
 
 - type: entity
   parent: AU14PacketGrenadeTearGas
@@ -655,15 +655,15 @@
 - type: entity
   parent: CMPacketBase
   id: AU14PacketGrenadeTearGasAirbust
-  name: M74 AGM-PDC tear gas grenade packet
-  description: It contains five M74 Airburst Grenade Munition-Personnel Denial Canister rounds.
+  name: M74 AGM-PDC 催泪瓦斯榴弹包
+  description: 它包含五发M74空爆榴弹弹药-人员拒止罐弹。
   components:
   - type: Sprite
     layers:
     - state: teargas_airburst_packet
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: teargas_airburst_packet_e
-      map: [ "openLayer", "emptyLayer"]
+      map: ["openLayer", "emptyLayer"]
   - type: Storage
     maxItemSize: Small
     grid:

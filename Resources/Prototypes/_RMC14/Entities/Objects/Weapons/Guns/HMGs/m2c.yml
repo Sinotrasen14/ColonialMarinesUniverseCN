@@ -1,9 +1,9 @@
 - type: entity
-  parent: [ CMBaseWeaponGun, BaseItem]
+  parent: [CMBaseWeaponGun, BaseItem]
   id: RMCMachineGunM2C
-  categories: [ HideSpawnMenu ]
-  name: M2C heavy machine gun
-  description: The top half of a M2C heavy machine gun post. However it ain't much use without a tripod.
+  categories: [HideSpawnMenu]
+  name: M2C重机枪
+  description: M2C重机枪枪架的上半部分。不过，没有三脚架它就没多大用处。
   components:
   - type: Item
     size: Huge
@@ -25,7 +25,7 @@
     layers:
     - state: m2c_gun_mount
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     slots:
     - suitStorage
@@ -65,7 +65,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         priority: 2
@@ -93,8 +93,8 @@
     angleIncrease: 0
     accuracyAddMult: 0
   - type: Scope
-    scopePopup: null
-    unScopePopup: null
+    scopePopup:
+    unScopePopup:
     canUseInsideContainer: true
     canUseNightVision: true
     zoomLevels:
@@ -111,12 +111,12 @@
   parent: RMCMachineGunM2C
   id: CMUMachineGunM2CDropshipLoaded
   suffix: Dropship, Loaded
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineM2C
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
@@ -130,8 +130,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineM2C
-  name: M2C Ammunition Box (10x28mm tungsten rounds)
-  description: A box of 125, 10x28mm caseless tungsten rounds for the M2C heavy machine gun system.
+  name: M2C弹药箱（10×28毫米钨弹）
+  description: 一箱125发、用于M2C重机枪系统的10×28毫米无壳钨弹。
   components:
   - type: Tag
     tags:
@@ -157,8 +157,8 @@
 - type: entity
   parent: RMCMagazineM2C
   id: AU14MagazineM2CTracter
-  name: M2C Tracer Ammunition Box (10x28mm tungsten tracer rounds)
-  description: A box of 125, 10x28mm caseless tungsten green tracer rounds for the M2C heavy machine gun system.
+  name: M2C曳光弹弹药箱（10x28毫米钨芯曳光弹）
+  description: 一箱125发10x28毫米无壳钨芯绿色曳光弹，用于M2C重机枪系统。
   components:
   - type: Tag
     tags:
@@ -176,7 +176,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeHMG10x28mmTungsten
-  name: cartridge (10x28mm Tungsten)
+  name: 子弹（10x28毫米钨）
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
@@ -193,7 +193,7 @@
 - type: entity
   parent: RMCCartridgeHMG10x28mmTungsten
   id: AU14CartridgeHMG10x28mmTungstenTracer
-  name: cartridge (10x28mm Tungsten Tracer)
+  name: 弹药（10×28毫米钨芯曳光弹）
   components:
   - type: CartridgeAmmo
     proto: AU14BulletHMG10x28mmTungstenTracer
@@ -206,8 +206,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletHMG10x28mmTungsten
-  name: bullet (10x28mm Tungsten)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（10×28毫米钨）
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/bullet_projectiles.rsi
@@ -240,8 +240,8 @@
 - type: entity
   parent: RMCBulletHMG10x28mmTungsten
   id: AU14BulletHMG10x28mmTungstenTracer
-  name: bullet (10x28mm Tungsten Tracer)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（10×28毫米钨芯曳光弹）
+  categories: [HideSpawnMenu]
   components:
   - type: PointLight
     enabled: true

@@ -1,16 +1,16 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: MAR-50 light machine gun
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: MAR-50轻机枪
   id: RMCWeaponMar50LMG
-  description: A cheap, reliable LMG chambered in 7.62x39mm. Commonly found in the hands of slightly better funded criminals.
+  description: 一款廉价、可靠、使用7.62×39毫米弹药的轻机枪。通常出现在资金稍充裕的犯罪分子手中。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/LMGs/mar50.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/LMGs/mar50.rsi
   - type: ContainerContainer
@@ -56,7 +56,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineMar50LMG
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg
@@ -89,7 +89,7 @@
       rmc-aslot-rail: 0.1, 0.1
       rmc-aslot-underbarrel: 0.3, -0.25
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: Tag
     tags:
     - RMCWeaponMar50LMG

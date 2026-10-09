@@ -3,7 +3,7 @@
   abstract: true
   parent: BaseItem
   id: RMCBaseAirBurstGrenade
-  name: air burst grenade
+  name: 空爆榴弹
   components:
   - type: Appearance
   - type: Sprite
@@ -23,8 +23,8 @@
 - type: entity
   parent: RMCBaseAirBurstGrenade
   id: RMC40MMGrenadeM74AGMF
-  name: M74 AGM-F 40mm frag grenade
-  description: M74 - Airburst Grenade Munition - Fragmentation. This grenade must be launched with a grenade launcher, and detonates once it reaches its destination. It disperses jagged shrapnel in a cone in front of itself, tearing through sinews and armor alike. Dispersion pattern is optimized against large target. Suffers from overpenetration on a direct hit.
+  name: M74 AGM-F 40毫米破片榴弹
+  description: M74——空爆榴弹——破片。此榴弹必须用榴弹发射器发射，到达目标位置后即引爆。它会在自身前方以锥形散布锯齿状弹片，将肌腱与装甲一并撕裂。散布模式针对大型目标进行了优化。直接命中时会出现过穿。
   components:
   - type: Tag
     tags:
@@ -42,8 +42,8 @@
 - type: entity
   parent: RMC40MMGrenadeM74AGMF
   id: RMC40MMGrenadeM74AGMI
-  name: M74 AGM-I 40mm incendiary grenade
-  description: M74 - Airburst Grenade Munition - Incendiary. This grenade must be launched with a grenade launcher, and detonates once it reaches its destination. It disperses jagged shrapnel in a cone in front of itself, tearing through sinews and armor alike. Dispersion pattern is optimized against large target. Suffers from overpenetration on a direct hit.
+  name: M74 AGM-I 40毫米燃烧榴弹
+  description: M74——空爆榴弹——燃烧型。此榴弹必须用榴弹发射器发射，并在到达目标位置后引爆。它会向自身前方锥形区域散布锯齿状破片，撕裂肌腱与装甲。散布模式针对大型目标进行了优化。直接命中时存在过度穿透问题。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/grenade_launcher.rsi
@@ -62,8 +62,8 @@
 - type: entity
   parent: RMC40MMGrenadeM74AGMF
   id: RMCHornetShellM74AGMS
-  name: M74 AGM-H 40mm hornet shell
-  description: Functions identically to the standard AGM-F 40mm grenade, except instead of exploding into shrapnel, the hornet shell shoots off holo-targeting .22lr rounds. The equivalent to buckshot at-range.
+  name: M74 AGM-H 40毫米大黄蜂弹
+  description: 功能与标准 AGM-F 40毫米榴弹完全相同，不同之处在于大黄蜂弹不会炸成破片，而是会射出带有全息瞄准的 .22lr 子弹。在远距离相当于霰弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/grenade_launcher.rsi
@@ -82,8 +82,8 @@
 - type: entity
   parent: RMC40MMGrenadeM74AGMF
   id: RMCStarShellM74AGMS
-  name: M74 AGM-S star shell
-  description: Functions identically to the standard AGM-F 40mm grenade, except instead of exploding into shrapnel, the star shells bursts into burning phosphor that illuminates the area.
+  name: M74 AGM-S照明弹
+  description: 功能与标准 AGM-F 40毫米榴弹完全相同，不同之处在于它不会炸出破片，而是爆裂成燃烧的磷，照亮周围区域。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/grenade_launcher.rsi
@@ -96,8 +96,8 @@
 - type: entity
   parent: RMC40MMGrenadeM74AGMF
   id: RMCBatonSlugHIRR
-  name: HIRR baton slug
-  description: Cousin to the M15 Rubber pellet, the HIRR baton slug was recalled from military and civilian police forces due to over-packed propellant in the sabot casing. Now it is utilized as a less-than-lethal option in engagements with human, and sometimes non-human, forces. Historically, the HIRR was incredibly popular during the Arcturus conflict, as the impact force was found to reliably incapacitate Arcturian resistance forces by breaking their ribs into their lungs.
+  name: HIRR 警棍弹
+  description: HIRR警棍弹是M15橡胶弹丸的同类，由于弹托壳体内的推进剂装填过量，已被从军队和民用警察部队中召回。如今，它被用作与人类以及有时非人类部队交战时的一种低致命性选项。历史上，HIRR在大角星冲突期间极受欢迎，因为人们发现其冲击力能通过将大角星抵抗力量的肋骨打断并刺入肺部，可靠地使其失能。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/grenade_launcher.rsi
@@ -116,8 +116,8 @@
 - type: entity
   parent: RMC40MMGrenadeM74AGMF
   id: RMC40MMGrenadeM74AGMS
-  name: M74 AGM-S 40mm smoke grenade
-  description: M74 - Airburst Grenade Munition - Smoke. This grenade must be launched with a grenade launcher, and detonates once it reaches its destination. Upon detonation, instantly combines multiple chemicals inside its casing to form a smoke cloud.
+  name: M74 AGM-S 40毫米烟雾弹
+  description: M74 - 空爆榴弹 - 烟雾弹。此榴弹必须使用榴弹发射器发射，并在到达目标位置后引爆。引爆时，会立即将其外壳内的多种化学物质混合，形成烟雾云。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/grenade_launcher.rsi
@@ -146,7 +146,7 @@
   abstract: true
   parent: RMCBaseBullet
   id: RMCBaseAirBurstProjectile
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TriggerOnFixedDistanceStop
     delay: 0
@@ -176,8 +176,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         mask:
         - ItemMask
@@ -187,8 +186,8 @@
 - type: entity
   parent: RMCBaseAirBurstProjectile
   id: RMCAirBurstProjectileFrag
-  name: M74 AGM-F 40mm grenade
-  categories: [ HideSpawnMenu ]
+  name: M74 AGM-F 40毫米榴弹
+  categories: [HideSpawnMenu]
   components:
   - type: ProjectileGrenade
     evenSpread: true
@@ -204,8 +203,8 @@
 - type: entity
   parent: RMCBaseAirBurstProjectile
   id: RMCAirBurstProjectileIncendiary
-  name: M74 AGM-I 40mm grenade
-  categories: [ HideSpawnMenu ]
+  name: M74 AGM-I 40毫米榴弹
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/grenade_launcher.rsi
@@ -229,8 +228,8 @@
 - type: entity
   parent: RMCBaseAirBurstProjectile
   id: RMCAirBurstProjectileHornet
-  name: M74 AGM-H 40mm hornet shell
-  categories: [ HideSpawnMenu ]
+  name: M74 AGM-H 40毫米大黄蜂炮弹
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/grenade_launcher.rsi
@@ -248,8 +247,8 @@
 - type: entity
   parent: RMCBaseAirBurstProjectile
   id: RMCAirBurstProjectileStarShell
-  name: M74 AGM-S star shell
-  categories: [ HideSpawnMenu ]
+  name: M74 AGM-S 照明弹
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/grenade_launcher.rsi
@@ -279,8 +278,8 @@
 - type: entity
   parent: RMCBaseAirBurstProjectile
   id: RMCAirBurstProjectileSmoke
-  name: M74 AGM-S 40mm grenade
-  categories: [ HideSpawnMenu ]
+  name: M74 AGM-S 40毫米榴弹
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/grenade_launcher.rsi
@@ -305,7 +304,7 @@
 - type: entity
   parent: RMCAirBurstProjectileSmoke
   id: RMCAirBurstProjectileSmokeVehicle
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: ProjectileSpread
     proto: RMCAirBurstProjectileSmokeVehicle
@@ -318,8 +317,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCStarShellBullet
-  name: starshell bullet
-  categories: [ HideSpawnMenu ]
+  name: 照明弹
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/airburst_projectiles.rsi
@@ -356,8 +355,7 @@
     fixtures:
       projectile:
         hard: false
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         mask:
         - Impassable
@@ -366,7 +364,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCBaseAirburstRound
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   abstract: true
   components:
   - type: PreventCollideWithDead
@@ -374,8 +372,8 @@
 - type: entity
   parent: RMCBaseAirburstRound
   id: RMCHornetRound
-  name: .22 hornet round
-  categories: [ HideSpawnMenu ]
+  name: .22霍纳特弹
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/airburst_projectiles.rsi
@@ -396,8 +394,8 @@
 - type: entity
   parent: RMCBaseAirburstRound
   id: RMCShrapnelJagged
-  name: jagged shrapnel
-  categories: [ HideSpawnMenu ]
+  name: 锯齿状弹片
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/shotgun_projectiles.rsi
@@ -429,8 +427,8 @@
 - type: entity
   parent: RMCBaseAirburstRound
   id: RMCShrapnelIncendiary
-  name: flaming shrapnel
-  categories: [ HideSpawnMenu ]
+  name: 燃烧的弹片
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/shotgun_projectiles.rsi
@@ -461,9 +459,9 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCBatonSlugProjectile
-  name: HIRR baton slug
-  description: Cousin to the M15 Rubber pellet, the HIRR baton slug was recalled from military and civilian police forces due to over-packed propellant in the sabot casing. Now it is utilized as a less-than-lethal option in engagements with human, and sometimes non-human, forces. Historically, the HIRR was incredibly popular during the Arcturus conflict, as the impact force was found to reliably incapacitate Arcturian resistance forces by breaking their ribs into their lungs.
-  categories: [ HideSpawnMenu ]
+  name: HIRR警棍弹
+  description: 作为M15橡胶弹丸的同类，HIRR警棍弹曾因弹托外壳内推进剂装填过量，而被从军队和民用警察部队中召回。如今，它被用作与人类、有时是非人类部队交战时的低致命性选项。历史上，HIRR在阿克图鲁斯冲突期间极其受欢迎，因为其冲击力被证实能通过打断他们的肋骨并使其刺入肺部，可靠地使阿克图鲁斯抵抗力量丧失战斗力。
+  categories: [HideSpawnMenu]
   components:
   - type: TriggerOnFixedDistanceStop
     delay: 0
@@ -512,8 +510,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         hard: false
         mask:

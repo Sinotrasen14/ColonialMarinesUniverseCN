@@ -8,8 +8,8 @@
 - type: entity
   parent: CMBaseWall
   id: CMWallMetal
-  name: wall
-  description: A huge chunk of metal used to separate rooms.
+  name: 墙
+  description: 一大块用于分隔房间的金属。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/metal.rsi
@@ -22,20 +22,18 @@
     maxHealth: 3000
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 3125
       behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 3000
       behaviors:
-        - !type:ChangeConstructionNodeBehavior
-          node: girder
-        - !type:DoActsBehavior
-          acts: ["Breakage"]
+      - !type:ChangeConstructionNodeBehavior
+        node: girder
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
   - type: IconSmooth
     key: walls
     additionalKeys:
@@ -60,8 +58,8 @@
 - type: entity
   parent: CMWallMetal
   id: CMWallMetalAlmayer
-  name: wall
-  description: A huge chunk of metal used to separate rooms.
+  name: 墙
+  description: 用于分隔房间的一大块金属。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_black.rsi
@@ -86,7 +84,7 @@
 - type: entity
   parent: CMWallMetal
   id: RMCWallAlmayerDeco1
-  name: wall
+  name: 墙壁
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_black.rsi
@@ -169,8 +167,8 @@
 - type: entity
   parent: CMWallMetal
   id: CMWallMetalAlmayerWhite
-  name: wall
-  description: A huge chunk of metal used to separate rooms.
+  name: 墙壁
+  description: 一大块用于分隔房间的金属。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_white.rsi
@@ -196,8 +194,8 @@
 - type: entity
   parent: CMBaseWall
   id: RMCBaseWallReinforced
-  name: reinforced wall
-  description: A huge chunk of reinforced metal used to separate rooms.
+  name: 加固墙
+  description: 一大块用于分隔房间的加固金属。
   abstract: true
   components:
   - type: VehicleReinforcedObstacle
@@ -213,20 +211,18 @@
     minimumClawStrength: VerySharp
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 9500
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 9000
       behaviors:
       - !type:ChangeConstructionNodeBehavior
         node: girder
       - !type:DoActsBehavior
-        acts: [ "Breakage" ]
+        acts: ["Breakage"]
   - type: IconSmooth
     key: walls
     additionalKeys:
@@ -260,8 +256,8 @@
 - type: entity
   parent: RMCBaseWallReinforced
   id: CMWallReinforcedAlmayer
-  name: reinforced hull
-  description: A reinforced metal wall used to separate rooms and make up the ship.
+  name: 加固船体
+  description: 用于分隔房间并构成船体的加固金属墙。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_black.rsi
@@ -286,7 +282,7 @@
 - type: entity
   parent: RMCBaseWallReinforced
   id: RMCWallAlmayerReinforcedDeco1
-  name: reinforced hull
+  name: 强化船体
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_black.rsi
@@ -369,8 +365,8 @@
 - type: entity
   parent: RMCBaseWallReinforced
   id: CMWallReinforcedAlmayerWhite
-  name: reinforced hull
-  description: A reinforced metal wall used to separate rooms and make up the ship.
+  name: 强化船体
+  description: 用于分隔房间并构成船体的强化金属墙。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_white.rsi
@@ -395,8 +391,8 @@
 - type: entity
   parent: RMCBaseWallReinforced
   id: CMWallReinforcedAlmayerAI
-  name: reinforced hull
-  description: A reinforced metal wall used to isolate potentially dangerous areas.
+  name: 强化船体
+  description: 一种用于隔离潜在危险区域的强化金属墙。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_aicore.rsi
@@ -422,8 +418,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: CMWallReinforcedHeavy
-  name: heavy reinforced hull
-  description: A huge chunk of ultra-reinforced metal used to separate rooms. Looks virtually indestructible.
+  name: 重型加固船体
+  description: 一大块超强加固金属，用于分隔房间。看起来几乎坚不可摧。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/rwall.rsi
@@ -431,7 +427,7 @@
     sprite: _RMC14/Structures/Walls/rwall.rsi
   - type: Tag
     tags:
-      - Wall
+    - Wall
   - type: IconSmooth
     key: walls
     additionalKeys:
@@ -442,8 +438,8 @@
 - type: entity
   parent: CMWallReinforcedHeavy
   id: CMWallReinforcedHeavyAlmayer
-  name: heavy reinforced hull
-  description: A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+  name: 重型加固船体
+  description: 高度加固的金属墙，用于分隔房间并构成船体。需要巨大的冲击才能削弱这堵墙。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_black.rsi
@@ -460,7 +456,7 @@
 - type: entity
   parent: CMWallReinforcedHeavyAlmayer
   id: RMCWallAlmayerReinforcedHeavyDeco1
-  name: heavy reinforced hull
+  name: 重型强化船体
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_black.rsi
@@ -535,8 +531,8 @@
 - type: entity
   parent: CMWallReinforcedHeavy
   id: CMWallReinforcedHeavyAlmayerWhite
-  name: heavy reinforced hull
-  description: A highly reinforced metal wall used to separate rooms and make up the ship. It would take a great impact to weaken this wall.
+  name: 重型加固船体
+  description: 一种高度加固的金属墙，用于分隔房间并构成船体。需要巨大的冲击才能削弱这面墙。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_white.rsi
@@ -553,8 +549,8 @@
 - type: entity
   parent: CMWallReinforcedHeavy
   id: CMWallReinforcedHeavyAlmayerAI
-  name: heavy reinforced hull
-  description: An extremely reinforced metal wall used to isolate potentially dangerous areas. Looks virtually indestructible.
+  name: 重型强化船体
+  description: 一堵极度加固的金属墙，用于隔离潜在危险区域。看起来几乎坚不可摧。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_aicore.rsi
@@ -571,8 +567,8 @@
 - type: entity
   parent: CMWallReinforcedHeavy
   id: CMWallReinforcedHeavyAlmayerAINoLights
-  name: heavy reinforced hull
-  description: An extremely reinforced metal wall used to isolate potentially dangerous areas. Looks virtually indestructible.
+  name: 重型强化装甲
+  description: 一堵极度加固的金属墙，用于隔离潜在危险区域。看起来几乎坚不可摧。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/almayer_aicore_nolights.rsi
@@ -622,8 +618,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: CMWallRock
-  name: rock wall
-  description: A rough wall of hardened rock.
+  name: 岩壁
+  description: 一面由硬化岩石构成的粗糙墙壁。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/cave.rsi
@@ -642,8 +638,8 @@
 - type: entity
   parent: CMBaseWall
   id: CMWallCult
-  name: wall
-  description: The patterns engraved on the wall seem to shift as you try to focus on them. You feel sick.
+  name: 墙壁
+  description: 墙上刻着的图案似乎在你试图看清它们时不断移动。你感到恶心。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/cult.rsi
@@ -658,12 +654,11 @@
     maxHealth: 3000
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 3000
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: IconSmooth
     key: walls
     additionalKeys:
@@ -675,8 +670,8 @@
 - type: entity
   parent: CMBaseWall
   id: CMWallWood
-  name: wood wall
-  description: A wooden wall used to separate rooms.
+  name: 木墙
+  description: 用于分隔房间的木墙。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/wood.rsi
@@ -690,12 +685,11 @@
     maxHealth: 1300
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1300
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Construction
     graph: AU14WoodWallGraph
     node: woodWall
@@ -716,8 +710,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: CMWallJungle
-  name: jungle vegetation
-  description: Exceptionally dense vegetation that you can't see through.
+  name: 丛林植被
+  description: 极其茂密的植被，让人无法看穿。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/jungle.rsi
@@ -755,8 +749,8 @@
 - type: entity
   parent: CMWallJungle
   id: CMWallForest
-  name: forest vegetation
-  description: Exceptionally dense vegetation that you can't see through.
+  name: 森林植被
+  description: 异常茂密的植被，让人无法看穿。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/forest.rsi
@@ -778,8 +772,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallRockForest
-  name: rock columns
-  description: Exceptionally dense rock formations.
+  name: 岩柱
+  description: 异常致密的岩层。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/rock_forest.rsi
@@ -816,7 +810,7 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallElevator
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -836,7 +830,7 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallElevatorBroken
-  name: elevator wall
+  name: 电梯壁
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -850,7 +844,7 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallElevatorNoConnect1
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator_single.rsi
@@ -862,7 +856,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorNoConnect2
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator_single.rsi
@@ -874,7 +868,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorNoConnect3
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator_single.rsi
@@ -886,7 +880,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorNoConnect4
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator_single.rsi
@@ -898,7 +892,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorNoConnect5
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator_single.rsi
@@ -910,7 +904,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorNoConnect6
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator_single.rsi
@@ -922,7 +916,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorNoConnect7
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator_single.rsi
@@ -934,7 +928,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorNoConnect8
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator_single.rsi
@@ -946,7 +940,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorButtonArrivals
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -958,7 +952,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorButtonDorm
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -970,7 +964,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorButtonFreight
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -982,7 +976,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorButtonResearch
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -994,7 +988,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorArrivals
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -1006,7 +1000,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorDorm
-  name: elevator wall
+  name: 电梯墙壁
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -1018,7 +1012,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorFreight
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -1030,7 +1024,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorResearch
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -1042,7 +1036,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorGear
-  name: elevator wall
+  name: 电梯墙
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/elevator.rsi
@@ -1054,7 +1048,7 @@
 - type: entity
   parent: RMCWallElevatorNoConnect1
   id: RMCWallElevatorGearAnimated
-  name: elevator wall
+  name: 电梯墙
   suffix: animated
   components:
   - type: Sprite
@@ -1069,8 +1063,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallContainment
-  name: cell wall
-  description : A metal wall used to separate rooms and make up the ship
+  name: 舱壁
+  description: 用于分隔舱室并构成船体的金属壁
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/containment.rsi
@@ -1181,7 +1175,7 @@
 - type: entity
   parent: RMCWallContainment
   id: RMCWallContainmentWindow
-  name: cell window
+  name: 单元格窗口
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/containment.rsi
@@ -1205,8 +1199,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallHunter
-  name: hunter wall
-  description: Nigh indestructible walls that make up the hull of a hunter ship.
+  name: 猎人墙
+  description: 构成猎人飞船船体的近乎坚不可摧的墙壁。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/hunter.rsi
@@ -1226,8 +1220,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallHunterDegraded
-  name: degraded hunter wall
-  description: Ancient beyond measure, these walls make up the hull of a vessel of non human origin. Despite this, they can be felled with plastic explosives like any other opaque blocker.
+  name: 破损的猎人墙
+  description: 这些墙壁古老得无法估量，构成了一艘非人类来源舰船的船体。尽管如此，它们仍能像任何其他不透明阻挡物一样被塑胶炸药炸毁。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/hunter_degraded.rsi

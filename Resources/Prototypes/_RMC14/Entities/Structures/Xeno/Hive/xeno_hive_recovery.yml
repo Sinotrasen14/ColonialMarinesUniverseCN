@@ -1,16 +1,15 @@
 - type: entity
   id: HiveRecoveryNodeXeno
   parent: BaseHiveStructure
-  name: recovery node
-  description: A warm, soothing light source that pulsates with a faint hum.
+  name: 恢复节点
+  description: 一个温暖而令人舒缓的光源，伴随着微弱的嗡嗡声脉动。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/hive_structures.rsi
     state: recovery
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 400
       behaviors:
       - !type:DoActsBehavior
@@ -36,8 +35,8 @@
 - type: entity
   id: HiveRecoveryNodeXenoConstructionNode
   parent: BaseHiveStructureNode
-  name: recovery node
-  description: A warm, soothing light source that pulsates with a faint hum. Looks like a marker for something.
+  name: 恢复节点
+  description: 一种温暖、舒缓的光源，伴随着微弱的嗡鸣声脉动。看起来像是某种事物的标记。
   suffix: Construction
   components:
   - type: Sprite
@@ -50,8 +49,7 @@
       scale: 0.8, 0.8
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior

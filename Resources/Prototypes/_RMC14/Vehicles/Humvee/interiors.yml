@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: VehicleHumveeInteriorBase
-  name: humvee interior piece
-  description: A decorative interior piece for the humvee.
+  name: 悍马车内饰件
+  description: 用于悍马车的装饰性内饰件。
   placement:
     mode: PlaceFree
   components:
@@ -14,8 +14,8 @@
 - type: entity
   abstract: true
   id: VehicleHumveeChassisBase
-  name: humvee interior chassis
-  description: A chassis segment for the humvee interior.
+  name: 悍马内部底盘
+  description: 悍马内部底盘的一段。
   placement:
     mode: PlaceFree
   components:
@@ -59,8 +59,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -77,8 +76,8 @@
   abstract: true
   parent: VehicleHumveeInteriorBase
   id: VehicleHumveeRoofBase
-  name: humvee interior roof
-  description: A removable roof section for the humvee interior.
+  name: 悍马车内顶棚
+  description: 用于悍马车内顶棚的可拆卸顶板。
   placement:
     mode: PlaceFree
   components:
@@ -115,7 +114,7 @@
 - type: entity
   parent: VehicleHumveeInteriorBase
   id: VehicleHumveeSeatDestroyed
-  name: humvee seat (destroyed)
+  name: 悍马座椅（损坏）
   components:
   - type: Sprite
     state: car_seat_destroyed
@@ -123,8 +122,8 @@
 - type: entity
   parent: VehicleHumveeWallMountedBase
   id: VehicleHumveeAmmoLoader
-  name: humvee ammo loader
-  description: A loader for humvee hardpoint ammunition.
+  name: 悍马弹药装填器
+  description: 用于悍马挂载点弹药的装填器。
   components:
   - type: Sprite
     state: weapons_loader
@@ -146,7 +145,7 @@
   - type: Sprite
     layers:
     - state: exit_door
-      map: [ "roof" ]
+      map: ["roof"]
   - type: Clickable
   - type: InteractionOutline
   - type: RemoveComponents
@@ -203,8 +202,8 @@
   abstract: true
   parent: CMClosetBase
   id: VehicleHumveeLockerBase
-  name: humvee interior locker
-  description: A storage locker for humvee interiors.
+  name: 悍马车内储物柜
+  description: 悍马车内储物柜。
   placement:
     mode: PlaceFree
   components:
@@ -231,7 +230,7 @@
 - type: entity
   parent: VehicleHumveeLockerBase
   id: VehicleHumveeLockerMedical
-  name: humvee locker (medical)
+  name: 悍马储物柜（医疗）
 
 - type: entity
   abstract: true

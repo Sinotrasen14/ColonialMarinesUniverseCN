@@ -1,16 +1,16 @@
 - type: entity
   parent: RMCBaseWeaponSniperRifle
   id: RMCWeaponSniperM707Vulture
-  name: M707 "Vulture" anti-materiel rifle
-  description: A massive bolt-action anti-materiel rifle chambered in 20x102mm. It carries an integrated spotting scope and bipod, and its recoil is punishing without a deployed firing position.
+  name: M707“秃鹫”反器材步枪
+  description: 一把巨大的栓动式反器材步枪，使用20×102毫米弹药。它配有集成式观靶镜和两脚架；若未架设射击阵地，其后坐力会令人难以承受。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Unsorted/vulture/desert.rsi
     layers:
     - state: empty
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     size: Large
   - type: Clothing
@@ -44,7 +44,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSniperM707Vulture
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg
@@ -132,8 +132,8 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
-        startingItem: null
+        name: 弹匣
+        startingItem:
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg
         priority: 2
@@ -144,25 +144,25 @@
     slots:
       rmc-aslot-barrel:
         locked: false
-        startingAttachable: null
+        startingAttachable:
         whitelist:
           tags:
           - RMCVultureBarrel
       rmc-aslot-rail:
         locked: false
-        startingAttachable: null
+        startingAttachable:
         whitelist:
           tags:
           - RMCVultureScope
       rmc-aslot-underbarrel:
         locked: false
-        startingAttachable: null
+        startingAttachable:
         whitelist:
           tags:
           - RMCVultureBipod
       rmc-aslot-stock:
         locked: false
-        startingAttachable: null
+        startingAttachable:
         whitelist:
           tags:
           - RMCVultureStock
@@ -170,15 +170,15 @@
 - type: entity
   parent: CMMagazineSniperM96S
   id: RMCMagazineSniperM707Vulture
-  name: M707 "Vulture" magazine (20x102mm)
-  description: A four-round magazine of 20x102mm anti-materiel rounds for the M707 "Vulture".
+  name: M707“秃鹫”弹匣（20×102毫米）
+  description: M707“秃鹫”使用的20×102毫米反器材弹药四发弹匣。
   components:
   - type: Tag
     tags:
     - CMMagazineSniper
     - RMCMagazineSniperM707Vulture
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeSniper20x102mmVulture
@@ -195,7 +195,7 @@
 - type: entity
   parent: CMCartridgeSniper10x28mm
   id: RMCCartridgeSniper20x102mmVulture
-  name: cartridge (20x102mm)
+  name: 炮弹（20x102mm）
   components:
   - type: Tag
     tags:
@@ -207,8 +207,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCBulletSniper20x102mmVulture
-  name: bullet (20x102mm)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（20x102mm）
+  categories: [HideSpawnMenu]
   components:
   - type: FlyBySound
     prob: 1
@@ -229,8 +229,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         hard: false
         mask:
@@ -289,8 +288,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCVultureBarrel
-  name: M707 barrel
-  description: A heavy fixed barrel for the M707 "Vulture".
+  name: M707枪管
+  description: M707“秃鹫”的重型固定枪管。
   components:
   - type: Sprite
     state: vulture_barrel
@@ -304,8 +303,8 @@
 - type: entity
   parent: RMCM96SIntegratedScope
   id: RMCVultureScope
-  name: M707 integrated scope
-  description: The fixed optics package for the M707 "Vulture".
+  name: M707 集成瞄准镜
+  description: M707“秃鹰”的固定光学套件。
   components:
   - type: Sprite
     state: vulture_scope
@@ -326,15 +325,15 @@
     actionName: M707 Vulture Scope
     actionDesc: Use the Vulture's integrated scope.
   - type: Scope
-    scopingToggleAction: null
+    scopingToggleAction:
     cycleZoomLevelAction: RMCActionVultureCycleZoomLevel
     zoomLevels:
-    - name: 8x
+    - name: 8倍
       zoom: 1.8
       offset: 15
       allowMovement: false
       doAfter: 0
-    - name: 4x
+    - name: 4倍
       zoom: 1.2
       offset: 15
       allowMovement: false
@@ -351,8 +350,8 @@
 - type: entity
   parent: RMCAttachmentBipod
   id: RMCVultureBipod
-  name: M707 heavy bipod
-  description: A heavy integrated bipod for the M707 "Vulture".
+  name: M707重型两脚架
+  description: M707“秃鹫”的重型一体式两脚架。
   components:
   - type: Sprite
     state: vulture_bipod
@@ -385,8 +384,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCVultureStock
-  name: M707 stock
-  description: A fixed reinforced stock for the M707 "Vulture".
+  name: M707枪托
+  description: 用于M707“秃鹫”的固定式加固枪托。
   components:
   - type: Sprite
     state: vulture_stock
@@ -408,8 +407,8 @@
 - type: entity
   parent: BaseItem
   id: RMCVultureSpotterScope
-  name: M707 spotter scope
-  description: A high-powered spotting scope intended to support the M707 "Vulture".
+  name: M707观测镜
+  description: 一款旨在支援M707“秃鹫”的高倍观测镜。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/vulture_spotter.rsi
@@ -431,8 +430,8 @@
 - type: entity
   parent: BaseItem
   id: RMCVultureSpotterTripod
-  name: M707 spotter tripod
-  description: A collapsible tripod for the M707 spotter scope.
+  name: M707观测镜三脚架
+  description: M707观测镜的可折叠三脚架。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/vulture_spotter.rsi
@@ -442,8 +441,7 @@
   - type: RMCDeployable
     deployTime: 1.5
     collapseTime: 1.5
-    deployArea:
-      !type:PhysShapeAabb
+    deployArea: !type:PhysShapeAabb
       bounds: "-0.45,-0.45,0.45,0.45"
     collapseToolPrototype: CMScrewdriver
     areaBlockedCheck: false
@@ -462,20 +460,20 @@
 - type: entity
   parent: BaseStructure
   id: RMCVultureSpotterTripodDeployed
-  name: M707 spotter tripod
-  description: A deployed tripod for supporting the M707 spotter scope.
+  name: M707观察三脚架
+  description: 用于支撑M707观察镜的已展开三脚架。
   components:
   - type: ContainerContainer
     containers:
       vulture_spotter_scope: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Structures/vulture_spotter.rsi
     layers:
     - state: vulture_tripod
-      map: [ "enum.VultureSpotterTripodVisualLayers.Base" ]
+      map: ["enum.VultureSpotterTripodVisualLayers.Base"]
   - type: Transform
     anchored: true
   - type: InteractionOutline
@@ -484,8 +482,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 50
         mask:
@@ -497,8 +494,8 @@
     visuals:
       enum.VultureSpotterTripodVisuals.HasScope:
         enum.VultureSpotterTripodVisualLayers.Base:
-          True: { state: vulture_scope }
-          False: { state: vulture_tripod }
+          true: {state: vulture_scope}
+          false: {state: vulture_tripod}
   - type: ItemSlots
     slots:
       vulture_spotter_scope:

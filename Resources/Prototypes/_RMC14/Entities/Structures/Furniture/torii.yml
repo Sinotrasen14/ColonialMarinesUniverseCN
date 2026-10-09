@@ -1,7 +1,7 @@
 - type: entity
   id: RMCTorii
-  name: torii arch
-  description: A traditional Japanese archway, made out of wood, and adorned with lanterns.
+  name: 鸟居
+  description: 一座传统的日本鸟居，由木头制成，并装饰有灯笼。
   placement:
     mode: SnapgridCenter
   components:
@@ -19,8 +19,7 @@
   - type: Fixtures
     fixtures:
       fix1: # Left Wall
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.7,-0.5,-0.6,-0.1"
         density: 20000
         hard: true
@@ -33,8 +32,7 @@
         - Opaque
         - InteractImpassable
       fix-2: # Right Wall
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "0.6,-0.5,0.7,-0.1"
         density: 20000
         hard: true

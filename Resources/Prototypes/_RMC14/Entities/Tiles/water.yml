@@ -1,6 +1,6 @@
-﻿- type: entity
+- type: entity
   id: CMFloorShallowWaterEntity
-  name: shallow water
+  name: 浅水 | shallow water
   description: ""
   placement:
     mode: SnapgridCenter
@@ -36,8 +36,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         layer:
         - SlipLayer
@@ -46,8 +45,7 @@
         density: 1000
         hard: false
       fishing:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.4
         layer:
         - ItemMask
@@ -72,7 +70,7 @@
 - type: entity
   parent: CMFloorShallowWaterEntity
   id: CMFloorDeepWaterEntity
-  name: deep water
+  name: 深水 | deep water
   description: ""
   components:
   - type: Sprite
@@ -88,7 +86,7 @@
 - type: entity
   parent: CMFloorShallowWaterEntity
   id: RMCRiverSorokyne
-  name: river
+  name: 河流 | river
   components:
   - type: Sprite
     sprite: _RMC14/Tiles/planet/sorokyne/sorokyne_water.rsi

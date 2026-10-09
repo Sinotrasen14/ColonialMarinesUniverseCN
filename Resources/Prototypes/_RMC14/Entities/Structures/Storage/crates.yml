@@ -2,8 +2,8 @@
 - type: entity
   parent: BaseStructureDynamic
   id: RMCCrateBase
-  name: crate
-  description: A rectangular metal crate.
+  name: 板条箱
+  description: 一个长方形的金属板条箱。
   components:
   - type: Transform
     noRot: true
@@ -33,8 +33,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.29"
         density: 50
         mask:
@@ -53,8 +52,7 @@
   - type: RMCContainerEmptyOnDestruction
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
@@ -70,11 +68,11 @@
     visuals:
       enum.PaperLabelVisuals.HasLabel:
         enum.PaperLabelVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PaperLabelVisuals.LabelType:
         enum.PaperLabelVisuals.Layer:
-          Invoice: { state: invoice }
+          Invoice: {state: invoice}
   - type: PaperLabel
     labelSlot:
       insertVerbText: rmc-requisition-invoice-attach
@@ -132,8 +130,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateAlpha
-  name: alpha squad crate
-  description: A crate with alpha squad's symbol on it.
+  name: 阿尔法小队箱子
+  description: 一个上面有阿尔法小队标志的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/alpha.rsi
@@ -155,8 +153,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateBravo
-  name: bravo squad crate
-  description: A crate with bravo squad's symbol on it.
+  name: 布拉沃小队箱子
+  description: 一个上面有布拉沃小队标志的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/bravo.rsi
@@ -178,8 +176,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateCharlie
-  name: charlie squad crate
-  description: A crate with charlie squad's symbol on it.
+  name: 查理小队箱子
+  description: 一个上面有查理小队标志的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/charlie.rsi
@@ -201,8 +199,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateDelta
-  name: delta squad crate
-  description: A crate with delta squad's symbol on it.
+  name: 德尔塔小队板条箱
+  description: 一个上面有德尔塔小队标志的板条箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/delta.rsi
@@ -224,8 +222,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateAmmo
-  name: ammunitions crate
-  description: An ammunitions crate.
+  name: 弹药箱
+  description: 一个弹药箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/ammo.rsi
@@ -247,8 +245,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateGreen
-  name: green crate
-  description: A standard green storage crate employed by the Marines. These things are so common, just about anything could be inside.
+  name: 绿色板条箱
+  description: 海军陆战队使用的标准绿色板条箱。这东西太常见了，里面几乎什么都可能有。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/green.rsi
@@ -270,8 +268,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateConstruction
-  name: construction crate
-  description: A construction crate.
+  name: 建造箱
+  description: 一个建造箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/construction.rsi
@@ -293,8 +291,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateExplosives
-  name: explosives crate
-  description: An explosives crate.
+  name: 炸药箱
+  description: 一个炸药箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/explosives.rsi
@@ -316,8 +314,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateFreezer
-  name: freezer crate
-  description: A freezer crate.
+  name: 冷冻箱
+  description: 一个冷冻箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/freezer.rsi
@@ -340,8 +338,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateHydro
-  name: hydroponics crate
-  description: All you need to destroy those pesky weeds and pests.
+  name: 水培箱
+  description: 消灭那些烦人的杂草和害虫所需的一切。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/hydro.rsi
@@ -425,8 +423,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateInternals
-  name: internals crate
-  description: An internals crate.
+  name: 内部 crate
+  description: 一个内部 crate。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/oxygen.rsi
@@ -448,8 +446,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCratePlastic
-  name: plastic crate
-  description: A rectangular plastic crate.
+  name: 塑料箱
+  description: 一个长方形的塑料箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/plastic.rsi
@@ -471,8 +469,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateRadiation
-  name: radioactive gear crate
-  description: A crate with a radiation sign on it.
+  name: 放射性装备箱
+  description: 一个上面有辐射标志的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/radioactive.rsi
@@ -494,8 +492,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateScience
-  name: science crate
-  description: A science crate.
+  name: 科学板条箱
+  description: 一个科学板条箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/science.rsi
@@ -517,8 +515,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateSupply
-  name: supply crate
-  description: A supply crate.
+  name: 补给箱
+  description: 一个补给箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/supply.rsi
@@ -540,8 +538,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateWeapons
-  name: weapons crate
-  description: A weapons crate.
+  name: 武器箱
+  description: 一个武器箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/weapons.rsi
@@ -563,8 +561,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateMedical
-  name: medical crate
-  description: A medical crate.
+  name: 医疗箱
+  description: 一个医疗箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/medical.rsi
@@ -587,8 +585,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateSecure
-  name: secure crate
-  description: A secure crate.
+  name: 安全箱
+  description: 一个安全的箱子。
   suffix: Secure
   components:
   - type: Sprite
@@ -619,8 +617,8 @@
 - type: entity
   parent: RMCCrateSecure
   id: RMCCrateSecureAmmo
-  name: secure ammunitions crate
-  description: A secure ammunitions crate.
+  name: 安全弹药箱
+  description: 一个安全的弹药箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/secure_ammo.rsi
@@ -645,8 +643,8 @@
 - type: entity
   parent: RMCCrateSecure
   id: RMCCrateSecureExplosives
-  name: explosives crate
-  description: An explosives crate.
+  name: 炸药箱
+  description: 一个炸药箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/secure_explosives.rsi
@@ -671,15 +669,15 @@
 - type: entity
   parent: RMCCrateSecureAmmo
   id: RMCCrateSecureGear
-  name: gear crate
-  description: A secure gear crate.
+  name: 装备箱
+  description: 一个安全的装备箱。
 
 - type: entity
   parent: RMCCrateHydro
   id: RMCCrateSecureHydro
-  name: secure hydroponics crate
+  name: 安全水培箱
   suffix: Secure
-  description: A crate with a lock on it, painted in the scheme of the station's botanists.
+  description: 一个带锁的箱子，涂装采用了空间站植物学家的配色方案。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/secure_hydro.rsi
@@ -708,8 +706,8 @@
 - type: entity
   parent: RMCCrateSecure
   id: CMCrateSecureSurgery
-  name: surgery crate
-  description: A surgery crate.
+  name: 手术箱
+  description: 一个手术箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/secure_medical.rsi
@@ -731,13 +729,13 @@
   - type: Icon
     sprite: _RMC14/Structures/Storage/Crates/secure_medical.rsi
   - type: AccessReader
-    access: [["CMAccessRequisitions"],["CMAccessMedical"]]
+    access: [["CMAccessRequisitions"], ["CMAccessMedical"]]
 
 - type: entity
   parent: RMCCrateSecure
   id: RMCCrateSecureWeapons
-  name: weapons crate
-  description: A secure weapons crate.
+  name: 武器箱
+  description: 一个安全的武器箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/secure_weapons.rsi
@@ -762,8 +760,8 @@
 - type: entity
   parent: RMCCrateSecure
   id: RMCCrateSecureWeYa
-  name: secure We-Yu crate
-  description: A secure crate with a We-Yu insignia on it.
+  name: We-Yu安全箱
+  description: 一个带有We-Yu标志的安全箱。
   suffix: We-Yu, Req, Locked
   components:
   - type: Sprite
@@ -791,17 +789,17 @@
 - type: entity
   parent: RMCCrateSecure
   id: RMCCrateSecurePhoron
-  name: phoron crate
-  description: A phoron crate.
+  name: 福龙箱
+  description: 一个福龙箱。
   components:
   - type: AccessReader
-    access: [["CMAccessResearch"],["CMAccessEngineering"]]
+    access: [["CMAccessResearch"], ["CMAccessEngineering"]]
 
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateMinecart
-  name: minecart
-  description: Essentially a big metal bucket on wheels. This one has a modern plastic shroud.
+  name: 矿车
+  description: 本质上是一个带轮子的大金属桶。这辆矿车配有一个现代化的塑料护罩。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/minecart.rsi
@@ -819,8 +817,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateMortarAmmo
-  name: mortar ammo crate
-  description: A crate containing live mortar shells with various payloads. DO NOT DROP. KEEP AWAY FROM FIRE SOURCES.
+  name: 迫击炮弹药箱
+  description: 一个装有多种装药的实弹迫击炮弹的箱子。严禁摔落。远离火源。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/mortar_ammo.rsi
@@ -842,9 +840,9 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateAmmoAlt
-  name: ammunitions crate
+  name: 弹药箱
   suffix: black
-  description: A crate that contains ammunition, this one is black.
+  description: 一个装有弹药的箱子，这个是黑色的。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/ammo_alt.rsi
@@ -866,9 +864,9 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCCrateAmmoAlt2
-  name: ammunitions crate
+  name: 弹药箱
   suffix: flammable
-  description: A black crate. Warning, contents are flammable!
+  description: 一个黑色板条箱。警告，内装物品易燃！
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/ammo_alt2.rsi
@@ -890,8 +888,8 @@
 - type: entity
   parent: RMCCrateBase
   id: RMCTrashCart
-  name: trash cart
-  description: A heavy, metal trashcart with wheels.
+  name: 垃圾推车
+  description: 一辆带轮子的重型金属垃圾推车。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/trash_cart.rsi
@@ -930,8 +928,8 @@
 - type: entity
   parent: RMCCrateMetalBuildable
   id: RMCCrateWoodenBuildable
-  name: wooden crate
-  description: A wooden crate. Shoddily assembled, spacious and worthless on the ASRS.
+  name: 木箱
+  description: 一个木箱。组装粗糙，空间宽敞，但在ASRS上毫无价值。
   suffix: Buildable, No Req Reward
   components:
   - type: Sprite

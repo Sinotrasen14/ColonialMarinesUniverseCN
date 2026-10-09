@@ -1,7 +1,7 @@
 - type: entity
   id: RMCCalendarBase
-  name: wall calendar
-  description: Classic office decoration and a place to stare at maniacally.
+  name: 挂历
+  description: 经典的办公室装饰，也是一个能让人疯狂盯着看的地方。
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -16,8 +16,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb {}
+        shape: !type:PhysShapeAabb {}
   - type: Sprite
     sprite: _RMC14/Structures/Wallmounts/calendar.rsi
     drawdepth: WallMountedItems

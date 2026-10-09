@@ -1,16 +1,16 @@
-﻿- type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: Type 71 'Commando' assault carbine
+- type: entity
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: 71型“突击队”突击卡宾枪
   id: RMCWeaponRifleType73
-  description: A much rarer variant of the Type 71, this version contains an integrated suppressor, integrated scope, and extensive fine-tuning. Many parts have been replaced, filed down, and improved upon. As a result, this variant is rarely seen outside of commando units.
+  description: 71型的一种极为罕见的变体，此版本包含一体化消音器、一体化瞄准镜以及大量精细调校。许多部件已被更换、锉削并改进。因此，这种变体在突击队之外很少见到。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/type73.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/type73.rsi
   - type: ContainerContainer
@@ -46,7 +46,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -86,7 +86,7 @@
       rmc-aslot-rail: 0.0625, 0.275
       rmc-aslot-underbarrel: 0.375, -0.1875
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: Tag
     tags:
     - RMCWeaponRifleType73
@@ -99,7 +99,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2

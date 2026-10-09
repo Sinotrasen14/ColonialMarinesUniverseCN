@@ -3,22 +3,22 @@
 - type: material
   id: RMCSheetCardboard
   stackEntity: RMCSheetCardboard
-  name: materials-cardboard
-  icon: { sprite: _RMC14/Objects/Materials/Sheets/rmc_cardboard.rsi, state: icon }
+  name: 纸板材料
+  icon: {sprite: _RMC14/Objects/Materials/Sheets/rmc_cardboard.rsi, state: icon}
   color: "#70736C"
   price: 0.00026
 
 - type: stack
   id: RMCSheetCardboard
-  name: materials-cardboard
-  icon: { sprite: _RMC14/Objects/Materials/Sheets/rmc_cardboard.rsi, state: icon }
+  name: 纸板材料
+  icon: {sprite: _RMC14/Objects/Materials/Sheets/rmc_cardboard.rsi, state: icon}
   spawn: RMCSheetCardboard
   maxCount: 50
 
 - type: entity
   parent: SheetOtherBase
   id: RMCSheetCardboard
-  name: cardboard
+  name: 纸板
   suffix: Full, RMC
   components:
   - type: RMCConstructionItem

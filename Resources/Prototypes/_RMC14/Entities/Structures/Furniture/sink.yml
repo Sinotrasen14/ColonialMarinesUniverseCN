@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   id: CMSinkEmpty
-  name: sink
+  name: 盥洗池
   suffix: Empty
-  description: A sink used for washing one's hands and face.
+  description: 用于洗手和洗脸的盥洗池。
   placement:
     mode: SnapgridCenter
   components:
@@ -10,7 +10,7 @@
     sprite: _RMC14/Structures/Furniture/sink.rsi
     layers:
     - state: sink_emptied
-    - map: [ "enum.SolutionContainerLayers.Fill" ]
+    - map: ["enum.SolutionContainerLayers.Fill"]
       state: sink-fill-1
       visible: false
   - type: WallMount
@@ -35,18 +35,16 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -60,7 +58,7 @@
 - type: entity
   parent: CMSinkEmpty
   id: CMSink
-  name: sink
+  name: 水槽
   suffix: Water
   components:
   - type: SolutionContainerManager

@@ -39,7 +39,7 @@
   parent: RMCAreaSavannah
   id: RMCAreaSavannahMaints
   abstract: true
-  name: Maints
+  name: 梅因茨
   components:
   - type: Sprite
     state: other
@@ -47,39 +47,39 @@
 - type: entity
   parent: RMCAreaSavannahMaints
   id: RMCAreaSavannahMaintsStarboardBow
-  name: Starboard Bow Maints
+  name: 右舷船首维护
 
 - type: entity
   parent: RMCAreaSavannahMaints
   id: RMCAreaSavannahMaintsPortBow
-  name: Port Bow Maints
+  name: 左舷船首维护
 
 - type: entity
   parent: RMCAreaSavannahMaints
   id: RMCAreaSavannahMaintsStarboardBeam
-  name: Starboard Beam Maints
+  name: 右舷横梁维护
 
 - type: entity
   parent: RMCAreaSavannahMaints
   id: RMCAreaSavannahMaintsPortBeam
-  name: Port Beam Maints
+  name: 左舷横梁维护
 
 - type: entity
   parent: RMCAreaSavannahMaints
   id: RMCAreaSavannahMaintsStarboardQuarter
-  name: Starboard Quarter Maints
+  name: 右舷艉部维护
 
 - type: entity
   parent: RMCAreaSavannahMaints
   id: RMCAreaSavannahMaintsPortQuarter
-  name: Port Quarter Maints
+  name: 左舷后部维修
 
 # Corridors
 
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahCorridorAmidship
-  name: Amidship Corridor
+  name: 船中部走廊
   components:
   - type: Sprite
     state: other
@@ -87,22 +87,22 @@
 - type: entity
   parent: RMCAreaSavannahCorridorAmidship
   id: RMCAreaSavannahCorridorEngineering
-  name: Engineering Corridor
+  name: 工程走廊
 
 - type: entity
   parent: RMCAreaSavannahCorridorAmidship
   id: RMCAreaSavannahCorridorEscape
-  name: Escape Pods Corridor
+  name: 逃生舱走廊
 
 - type: entity
   parent: RMCAreaSavannahCorridorAmidship
   id: RMCAreaSavannahCorridorBriefingStarboard
-  name: Briefing Starboard Corridor
+  name: 右舷简报走廊
 
 - type: entity
   parent: RMCAreaSavannahCorridorAmidship
   id: RMCAreaSavannahCorridorBriefingPort
-  name: Briefing Port Corridor
+  name: 简报港口走廊
 
 # BRIG
 
@@ -117,52 +117,52 @@
 - type: entity
   parent: RMCAreaSavannahBrig
   id: RMCAreaSavannahBrigCMP
-  name: CMP Office
+  name: CMP办公室
 
 - type: entity
   parent: RMCAreaSavannahBrig
   id: RMCAreaSavannahBrigWarden
-  name: Warden Office
+  name: 监狱长办公室
 
 - type: entity
   parent: RMCAreaSavannahBrig
   id: RMCAreaSavannahBrigRange
-  name: Brig Shooting Range
+  name: 布里格射击场
 
 - type: entity
   parent: RMCAreaSavannahBrig
   id: RMCAreaSavannahBrigOB
-  name: Orbital Cannon Room
+  name: 轨道炮室
 
 - type: entity
   parent: RMCAreaSavannahBrig
   id: RMCAreaSavannahBrigCorridor
-  name: Brig Main Corridor
+  name: 禁闭室主走廊
 
 - type: entity
   parent: RMCAreaSavannahBrig
   id: RMCAreaSavannahBrigBow
-  name: Brig Bow Corridor
+  name: 双桅帆船船首走廊
 
 - type: entity
   parent: RMCAreaSavannahBrig
   id: RMCAreaSavannahBrigPrison
-  name: Brig Prison
+  name: 布里格监狱
 
 - type: entity
   parent: RMCAreaSavannahBrig
   id: RMCAreaSavannahBrigPrep
-  name: Brig Preparations
+  name: 双桅横帆船准备工作
 
 - type: entity
   parent: RMCAreaSavannahBrig
   id: RMCAreaSavannahStarboardPointDefense
-  name: Starboard Point Defense
+  name: 右舷点防御
 
 - type: entity
   parent: RMCAreaSavannahBrig
   id: RMCAreaSavannahPortPointDefense
-  name: Port Point Defense
+  name: 港口点防御
 
 # COMMAND
 
@@ -175,64 +175,64 @@
     state: command
   - type: Area
     minimapColor: '#2D3FA2EE'
-    avoidBioscan: False
-    noTunnel: True
-    unweedable: False
+    avoidBioscan: false
+    noTunnel: true
+    unweedable: false
 
 - type: entity
   parent: RMCAreaSavannahCommand
   id: RMCAreaSavannahLiaison
-  name: Liaison Office
+  name: 联络处
 
 - type: entity
   parent: RMCAreaSavannahCommand
   id: RMCAreaSavannahPilotBunks
-  name: Pilot Bunks
+  name: 飞行员铺位
 
 - type: entity
   parent: RMCAreaSavannahCommand
   id: RMCAreaSavannahOfficerBunks
-  name: Officer Bunks
+  name: 邦克斯警官
 
 - type: entity
   parent: RMCAreaSavannahCommand
   id: RMCAreaSavannahCommandingOfficer
-  name: Commanding Officer Bunks
+  name: 指挥官铺位
 
 - type: entity
   parent: RMCAreaSavannahCommand
   id: RMCAreaSavannahCICCorridorPort
-  name: CIC Port Corridor
+  name: CIC港口走廊
 
 - type: entity
   parent: RMCAreaSavannahCommand
   id: RMCAreaSavannahCICCorridorStarboard
-  name: CIC Starboard Corridor
+  name: 作战情报中心右舷走廊
 
 - type: entity
   parent: RMCAreaSavannahCommand
   id: RMCAreaSavannahCIC
-  name: Combat Information Center
+  name: 作战信息中心
   components:
   - type: Area
     avoidBioscan: false
     noTunnel: true
-    unweedable: False
+    unweedable: false
 
 - type: entity
   parent: RMCAreaSavannahCommand
   id: RMCAreaSavannahASO
-  name: ASO and Command Cryo
+  name: ASO与Command Cryo
 
 - type: entity
   parent: RMCAreaSavannahCommand
   id: RMCAreaSavannahTComms
-  name: TComms
+  name: T通讯
 
 - type: entity
   parent: RMCAreaSavannahCommand
   id: RMCAreaSavannahIO
-  name: IO office
+  name: IO办公室
   components:
   - type: Area
     retrieveItemObjective: true
@@ -242,7 +242,7 @@
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahMedical
-  name: Medical
+  name: 医疗
   components:
   - type: Sprite
     state: medical
@@ -251,22 +251,22 @@
 - type: entity
   parent: RMCAreaSavannahMedical
   id: RMCAreaSavannahMedicalSurgery
-  name: Surgery Room
+  name: 手术室
 
 - type: entity
   parent: RMCAreaSavannahMedical
   id: RMCAreaSavannahMedicalChemistry
-  name: Chemistry Room
+  name: 化学室
 
 - type: entity
   parent: RMCAreaSavannahMedical
   id: RMCAreaSavannahMedicalPreparation
-  name: Medical Preparation
+  name: 医疗准备
 
 - type: entity
   parent: RMCAreaSavannahMedical
   id: RMCAreaSavannahMedicalResearch
-  name: Research
+  name: 研究
   components:
   - type: Area
     retrieveItemObjective: true
@@ -284,39 +284,39 @@
 - type: entity
   parent: RMCAreaSavannahAuxiliary
   id: RMCAreaSavannahHangarPort
-  name: Hangar Port
+  name: 机库港
 
 - type: entity
   parent: RMCAreaSavannahAuxiliary
   id: RMCAreaSavannahHangarStarboard
-  name: Hangar Starboard
+  name: 机库右舷
 
 - type: entity
   parent: RMCAreaSavannahAuxiliary
   id: RMCAreaSavannahPilotsRoom
-  name: Pilots Room
+  name: 飞行员室
 
 - type: entity
   parent: RMCAreaSavannahAuxiliary
   id: RMCAreaSavannahRequisitions
-  name: Requisitions
+  name: 请购单
 
 - type: entity
   parent: RMCAreaSavannahRequisitions
   id: RMCAreaSavannahQuartermaster
-  name: Logistics Officer Office
+  name: 后勤官办公室
 
 - type: entity
   parent: RMCAreaSavannahAuxiliary
   id: RMCAreaSavannahCanteen
-  name: Canteen
+  name: 食堂
 
 # PREP
 
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahAlphaBravo
-  name: Alpha-Bravo Preparation
+  name: 阿尔法-布拉沃准备
   components:
   - type: Sprite
     state: alpha_bravo
@@ -324,7 +324,7 @@
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahAlpha
-  name: Alpha Preparation
+  name: Alpha 准备
   components:
   - type: Sprite
     state: alpha
@@ -332,7 +332,7 @@
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahBravo
-  name: Bravo Preparation
+  name: 布拉沃预备
   components:
   - type: Sprite
     state: bravo
@@ -340,7 +340,7 @@
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahCharlieDelta
-  name: Charlie-Delta Preparation
+  name: 查理-德尔塔准备
   components:
   - type: Sprite
     state: charlie_delta
@@ -348,7 +348,7 @@
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahCharlie
-  name: Charlie Preparation
+  name: 查理准备
   components:
   - type: Sprite
     state: charlie
@@ -356,7 +356,7 @@
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahDelta
-  name: Delta Preparation
+  name: 德尔塔准备
   components:
   - type: Sprite
     state: delta
@@ -366,7 +366,7 @@
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahEngineering
-  name: Engineering
+  name: 工程
   components:
   - type: Sprite
     state: engineering
@@ -376,7 +376,7 @@
 - type: entity
   parent: RMCAreaSavannahEngineering
   id: RMCAreaSavannahEngineeringGenerator
-  name: Engineering Generator
+  name: 工程生成器
   components:
   - type: Area
     hijackEvacuationArea: true
@@ -386,27 +386,27 @@
 - type: entity
   parent: RMCAreaSavannahEngineering
   id: RMCAreaSavannahChiefEngineer
-  name: Chief Engineer Room
+  name: 轮机长室
 
 - type: entity
   parent: RMCAreaSavannahEngineering
   id: RMCAreaSavannahEngineeringPreparations
-  name: Engineering Preparations
+  name: 工程准备
 
 - type: entity
   parent: RMCAreaSavannahEngineering
   id: RMCAreaSavannahAtmosStarboard
-  name: Starboard Atmos
+  name: 右舷大气
 
 - type: entity
   parent: RMCAreaSavannahEngineering
   id: RMCAreaSavannahAtmosPort
-  name: Port Atmos
+  name: 阿特莫斯港
 
 - type: entity
   parent: RMCAreaSavannahEngineering
   id: RMCAreaSavannahSynthetic
-  name: Synthetic Storage
+  name: 合成存储
 
 - type: entity
   parent: RMCAreaSavannah
@@ -421,39 +421,39 @@
 - type: entity
   parent: RMCAreaSavannahPumpBase
   id: RMCAreaSavannahPumpStarboardBow
-  name: Starboard Bow Pump
+  name: 右舷船首泵
 
 - type: entity
   parent: RMCAreaSavannahPumpBase
   id: RMCAreaSavannahPumpStarboardQuarter
-  name: Starboard Quarter Pump
+  name: 右舷尾部泵
 
 - type: entity
   parent: RMCAreaSavannahPumpBase
   id: RMCAreaSavannahPumpPortBow
-  name: Port Bow Pump
+  name: 左舷船首泵
 
 - type: entity
   parent: RMCAreaSavannahPumpBase
   id: RMCAreaSavannahPumpPortQuarter
-  name: Port Quarter Pump
+  name: 左舷艉部泵
 
 # OTHER
 
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahSEA
-  name: Ordnance and SEA Offices
+  name: 军械与SEA办公室
 
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahBriefing
-  name: Briefing
+  name: 简报
 
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahLifeboatAmidship
-  name: Lifeboat Docking Amidship
+  name: 救生艇停靠于船中部
   components:
   - type: Area
     avoidBioscan: false
@@ -463,19 +463,19 @@
 - type: entity
   parent: RMCAreaSavannahLifeboatAmidship
   id: RMCAreaSavannahLifeboatStarboard
-  name: Lifeboat Docking Starboard
+  name: 救生艇停靠右舷
 
 - type: entity
   parent: RMCAreaSavannahLifeboatAmidship
   id: RMCAreaSavannahLifeboatPort
-  name: Lifeboat Docking Port
+  name: 救生艇停靠口
 
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahMemorial
-  name: Memorial
+  name: 纪念馆
 
 - type: entity
   parent: RMCAreaSavannah
   id: RMCAreaSavannahChurch
-  name: Church
+  name: 丘奇

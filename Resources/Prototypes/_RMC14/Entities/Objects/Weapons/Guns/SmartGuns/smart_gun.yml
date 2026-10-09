@@ -1,9 +1,9 @@
-﻿- type: entity
+- type: entity
   abstract: true
-  parent: [ CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder ]
+  parent: [CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder]
   id: RMCSmartGunNoCamo
-  name: M56B smart gun
-  description: The actual firearm in the Smart Gun System. Essentially a heavy, mobile machinegun.
+  name: M56B智能枪
+  description: 智能枪系统中的实际枪械。本质上是一挺重型、可移动的机枪。
   components:
   - type: Wieldable
   - type: Item
@@ -41,7 +41,7 @@
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
     slots:
@@ -78,13 +78,13 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
-      cell_slot: !type:ContainerSlot { }
+      cell_slot: !type:ContainerSlot {}
   - type: PowerCellSlot
     cellSlotId: cell_slot
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSmartGun
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
@@ -137,7 +137,7 @@
   - type: MotionDetector
     handToggleable: false
     deactivateOnDrop: false
-    toggleSound: null
+    toggleSound:
   - type: SmartGun
   - type: AttachableHolder
     slots:
@@ -164,10 +164,10 @@
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
     - state: camo
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
-      map: [ "enum.ItemCamouflageLayers.Layer" ]
+      map: ["enum.ItemCamouflageLayers.Layer"]
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: ItemCamouflage
     colors:
       Jungle: "#ccd08d"
@@ -179,8 +179,8 @@
 - type: entity
   parent: RMCSmartGun
   id: RMCSmartGunPMC
-  name: M56T smart gun
-  description: The actual firearm in the 4-piece M56T Smartgun System. If you have this, you're about to bring some serious pain to anyone in your way. You may toggle firing restrictions by using a special action.
+  name: M56T 智能枪
+  description: 四件套 M56T 智能枪系统中的实际枪械。如果你持有它，就能让任何挡路的人尝到严重的苦头。你可以使用特殊动作来切换开火限制。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml79a.rsi
@@ -189,13 +189,13 @@
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml79a.rsi
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml79a.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml79a.rsi
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSmartGun
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
@@ -232,8 +232,8 @@
 - type: entity
   parent: RMCSmartGunPMC
   id: RMCSmartGunWhiteOut
-  name: "ML79A 'Breaker' smart gun"
-  description: The actual firearm in the 4-piece ML79A Smartgun System, modified for extra power. If you have this, you're about to bring some serious pain to anyone in your way. You may toggle firing restrictions by using a special action.
+  name: "ML79A“破坏者”智能枪"
+  description: 四件套 ML79A 智能枪系统中的实际枪械，经过改装以提高威力。如果你拥有它，就能给任何挡路的人带来重创。你可以使用特殊动作切换射击限制。
   suffix: Whiteout
   components:
   - type: RMCSelectiveFire
@@ -269,8 +269,8 @@
 - type: entity
   parent: RMCSmartGunNoCamo
   id: RMCSmartGunCO
-  name: M56C 'cavalier' smart gun
-  description: The actual firearm in the Smart Gun System. Back order only. Besides a more robust weapons casing, an ID lock system and a fancy paintjob, the gun's performance is identical to the standard-issue M56B.
+  name: M56C‘骑士’智能枪
+  description: 智能枪系统中的实际枪械。仅限缺货订购。除了更坚固的武器外壳、身份识别锁定系统和炫酷涂装外，该枪的性能与标准配发的 M56B 完全相同。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/CO.rsi
@@ -279,7 +279,7 @@
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/CO.rsi
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/CO.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/CO.rsi
   - type: Gun
@@ -288,7 +288,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSmartGun
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
@@ -307,17 +307,17 @@
 - type: entity
   parent: RMCSmartGun
   id: RMCSmartGunCLF
-  name: M56B 'freedom' smart gun
-  description: The actual firearm in the 4-piece M56B Smartgun System. Essentially a heavy, mobile machinegun. This one has the CLF logo carved over the manufacturing stamp.
+  name: M56B“自由”智能枪
+  description: 四件式M56B智能枪系统中的实际枪械。本质上是一挺重型、机动式机枪。这一把的制造印记上刻有CLF标志。
   components:
   - type: GunRequireEquipped
-    whitelist: { }
+    whitelist: {}
 
 - type: entity
   parent: RMCSmartGunNoCamo
   id: RMCSmartGunRoyal
-  name: L56 smart gun
-  description: The actual firearm in the 2-piece L56 Smart Gun System. This smartgun is used by Three World Empires Imperial Space Armed Forces and Royal Marine Commando units. You may toggle firing restrictions by using a special action.
+  name: L56 智能枪
+  description: 两件式L56智能枪系统中的实际枪械。这种智能枪被三世界帝国的帝国太空武装部队和皇家海军陆战队突击队部队使用。你可以通过使用特殊行动来切换开火限制。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a_royal.rsi
@@ -326,13 +326,13 @@
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a_royal.rsi
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a_royal.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a_royal.rsi
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSmartGunHT
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
@@ -351,7 +351,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSmartGun
-  name: "M56 drum magazine (10x30mm)"
+  name: "M56 弹鼓（10×30mm）"
   components:
   - type: Tag
     tags:
@@ -378,7 +378,7 @@
 - type: entity
   parent: RMCMagazineSmartGun
   id: RMCMagazineSmartGunirradiated
-  name: "M56 drum magazine irradiated (10x30mm)"
+  name: "M56弹鼓 辐射型（10×30毫米）"
   components:
   - type: BallisticAmmoProvider
     whitelist:
@@ -391,7 +391,7 @@
 - type: entity
   parent: RMCMagazineSmartGun
   id: RMCMagazineSmartGunHT
-  name: "holotargeting smart gun drum (10x30mm)"
+  name: "全息瞄准智能枪弹鼓（10×30毫米）"
   components:
   - type: BallisticAmmoProvider
     whitelist:
@@ -402,7 +402,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: CMCartridgeSmartGun10x30mm
-  name: cartridge (10x30mm)
+  name: 弹药筒（10×30毫米）
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
@@ -419,7 +419,7 @@
 - type: entity
   parent: CMCartridgeSmartGun10x30mm
   id: RMCCartridgeSmartGun10x30mmirradiated
-  name: irradiated cartridge (10x30mm)
+  name: 辐照弹药（10×30mm）
   components:
   - type: CartridgeAmmo
     proto: RMCBulletSmartGun10x30mmirradiated
@@ -430,7 +430,7 @@
 - type: entity
   parent: CMCartridgeSmartGun10x30mm
   id: RMCCartridgeSmartGun10x30mmHT
-  name: ht cartridge (10x30mm)
+  name: HT柱（10x30mm）
   components:
   - type: CartridgeAmmo
     proto: RMCBulletSmartGun10x30mmHT
@@ -441,8 +441,8 @@
 - type: entity
   parent: CMBulletBase
   id: CMBulletSmartGun10x30mm
-  name: bullet (10x30mm)
-  categories: [ HideSpawnMenu ]
+  name: 子弹头（10x30mm）
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/bullet_projectiles.rsi
@@ -477,8 +477,8 @@
 - type: entity
   parent: CMBulletSmartGun10x30mm
   id: RMCBulletSmartGun10x30mmirradiated
-  name: irradiated bullet (10x30mm)
-  categories: [ HideSpawnMenu ]
+  name: 辐照子弹（10×30毫米）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -488,8 +488,8 @@
 - type: entity
   parent: CMBulletSmartGun10x30mm
   id: RMCBulletSmartGun10x30mmHT
-  name: ht bullet (10x30mm)
-  categories: [ HideSpawnMenu ]
+  name: HT 子弹（10x30毫米）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

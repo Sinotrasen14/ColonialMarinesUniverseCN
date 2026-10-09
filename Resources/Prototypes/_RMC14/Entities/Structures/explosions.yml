@@ -3,7 +3,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCMortarExplosionHE
-  name: he mortar explosion
+  name: 高爆迫击炮爆炸
   suffix: Fires a mortar shell!
   placement:
     mode: SnapgridCenter
@@ -22,7 +22,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCMortarExplosionIncendiary
-  name: incendiary mortar explosion
+  name: 燃烧迫击炮爆炸
   suffix: Fires a mortar shell!
   placement:
     mode: SnapgridCenter
@@ -44,7 +44,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCMortarExplosionFlare
-  name: mortar flare/camera
+  name: 迫击炮照明弹/相机
   suffix: Fires a mortar shell!
   placement:
     mode: SnapgridCenter
@@ -58,7 +58,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCDropshipGauBurst
-  name: dropship Multi-Purpose GAU burst
+  name: 运输机多用途GAU连射
   suffix: Fires a GAU burst!
   placement:
     mode: SnapgridCenter
@@ -87,7 +87,7 @@
 - type: entity
   parent: RMCDropshipGauBurst
   id: RMCDropshipGauBurstAntiTank
-  name: dropship Anti-Tank GAU burst
+  name: 运输机反坦克 GAU 连射
   suffix: Fires a GAU burst!
   placement:
     mode: SnapgridCenter
@@ -105,7 +105,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCDropshipLaserFire
-  name: dropship laser
+  name: 激光代发
   suffix: Fires a laser!
   placement:
     mode: SnapgridCenter
@@ -153,7 +153,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionWidowmaker
-  name: AIM-224A 'Widowmaker' explosion
+  name: AIM-224A“寡妇制造者”爆炸
   components:
   - type: DropshipAmmo
     travelTime: 3
@@ -165,7 +165,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionKeeper
-  name: GBU-67 'Keeper II' explosion
+  name: GBU-67“守护者 II”爆炸
   components:
   - type: DropshipAmmo
     travelTime: 2
@@ -177,7 +177,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionNapalm
-  name: AGM-99 'Napalm' explosion
+  name: AGM-99“凝固汽油弹”爆炸
   components:
   - type: DropshipAmmo
     travelTime: 6
@@ -193,7 +193,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionHarpoon
-  name: AGM-184 'Harpoon II' explosion
+  name: AGM-184“鱼叉II”爆炸
   components:
   - type: DropshipAmmo
     travelTime: 5
@@ -205,7 +205,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionThermobaric
-  name: BLU-200 'Dragon's Breath' explosion
+  name: BLU-200“龙息”爆炸
   components:
   - type: DropshipAmmo
     travelTime: 5
@@ -224,7 +224,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionBanshee
-  name: AGM-227 'Banshee' explosion
+  name: AGM-227“女妖”爆炸
   components:
   - type: DropshipAmmo
     travelTime: 6
@@ -258,7 +258,7 @@
 - type: entity
   parent: RMCDropshipMiniRocketExplosionBase
   id: RMCDropshipMiniRocketExplosionMiniMike
-  name: AGR-59 'Mini-Mike' explosion
+  name: AGR-59“迷你迈克”爆炸
   components:
   - type: DropshipAmmo
     explosion:
@@ -272,7 +272,7 @@
 - type: entity
   parent: RMCDropshipMiniRocketExplosionMiniMike
   id: RMCDropshipMiniRocketExplosionMiniMikeIncindiary
-  name: AGR-59-I 'Mini-Mike' explosion
+  name: AGR-59-I“迷你迈克”爆炸
   components:
   - type: DropshipAmmo
     fire:
@@ -282,7 +282,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionBurningPostman
-  name: GBU-89B NT 'Burning Postman' explosion
+  name: GBU-89B NT‘燃烧的邮差’爆炸
   components:
   - type: DropshipAmmo
     travelTime: 11
@@ -301,7 +301,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionPostman
-  name: GBU-89B 'Postman' explosion
+  name: GBU-89B“邮差”爆炸
   components:
   - type: DropshipAmmo
     travelTime: 12
@@ -316,7 +316,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionDoubleWidow
-  name: AIM-224A 'Double Widow' explosion
+  name: AIM-224A “Double Widow”爆炸
   components:
   - type: DropshipAmmo
     rounds: 2
@@ -332,7 +332,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionDoubleWidowADMIN
-  name: "AIM-224A 'Octuple Widow' explosion (DO NOT ABUSE)"
+  name: "AIM-224A“八重寡妇”爆炸（请勿滥用）"
   components:
   - type: DropshipAmmo
     rounds: 8
@@ -348,7 +348,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionCBU250
-  name: "CBU-250 'Dinner Spread'"
+  name: "CBU-250“晚餐大放送”"
   components:
   - type: DropshipAmmo
     travelTime: 6
@@ -367,7 +367,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionOverpressure
-  name: BLU-176 'Overpressure' explosion
+  name: BLU-176“超压”爆炸
   components:
   - type: DropshipAmmo
     travelTime: 5
@@ -388,7 +388,7 @@
 - type: entity
   parent: RMCDropshipMissileExplosionBase
   id: RMCDropshipMissileExplosionBansheeHorde
-  name: CBU-607 'Skeet Shooter' Rack explosion
+  name: CBU-607“飞碟射手”挂架爆炸
   components:
   - type: DropshipAmmo
     travelTime: 4

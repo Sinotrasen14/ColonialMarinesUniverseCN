@@ -12,9 +12,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentAngledGrip # angledgrip
-  name: angled grip
-  description: "An angled foregrip that improves weapon ergonomics resulting in faster wielding time.
-    However, it also increases weapon size."
+  name: 斜角握把
+  description: "一种斜角握把，可改善武器的人体工学，从而缩短持握时间。不过，它也会增大武器尺寸。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_under.rsi
@@ -32,11 +31,10 @@
     - delay: -0.4
 
 - type: entity
-  parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
+  parent: [RMCUnderAttachmentBase, RMCAttachableToggleableBase]
   id: RMCAttachmentBipod
-  name: bipod
-  description: "A simple set of telescopic poles to keep a weapon stabilized during firing.
-    When properly placed, greatly increases accuracy, fire-rate and reduces recoil, but when not deployed also increases weapon size and slows fire-rate."
+  name: 两脚架
+  description: "一套简单的伸缩杆，用于在射击时保持武器稳定。正确放置时，会大幅提高精准度、射速并降低后坐力，但未展开时也会增加武器体积并降低射速。"
   components:
   - type: Sprite
     state: bipod
@@ -138,8 +136,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentBurstFireAssembly # burstfire_assembly
-  name: burst fire assembly
-  description: A small angled piece of fine machinery that increases the burst count on some weapons.
+  name: 点射组件
+  description: 一个小巧的斜角精密机械部件，可增加某些武器的点射次数。
   components:
   - type: Sprite
     state: rapidfire
@@ -167,8 +165,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentGyroscopicStabilizer
-  name: gyroscopic stabilizer
-  description: A set of weights and balances to stabilize the weapon when fired with one hand. Decreases firing speed.
+  name: 陀螺稳定器
+  description: 一套配重与平衡装置，用于在单手开火时稳定武器。降低射速。
   components:
   - type: Sprite
     state: gyro
@@ -203,8 +201,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentLaserSight
-  name: laser sight
-  description: A laser sight that attaches to the underside of most weapons. Increases accuracy and decreases scatter, especially while one-handed.
+  name: 激光瞄准器
+  description: 一种可安装在大多数武器下方的激光瞄准器。提高精准度并减少散布，尤其是在单手使用时。
   components:
   - type: Sprite
     state: lasersight
@@ -229,8 +227,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentMicroLaserSight
-  name: micro laser sight
-  description: A compact, high-precision laser sight engineered exclusively for the M13 Auto Pistol. Offers exceptional accuracy gains by interfacing directly with the weapon's internal targeting systems.
+  name: 微型激光瞄准器
+  description: 一款专为 M13 自动手枪设计的紧凑型高精度激光瞄准器。通过直接接入武器内部瞄准系统，带来卓越的精准度提升。
   components:
   - type: Sprite
     state: lasersight_micro
@@ -251,10 +249,10 @@
       scatterFlat: -2
 
 - type: entity
-  parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
+  parent: [RMCUnderAttachmentBase, RMCAttachableToggleableBase]
   id: RMCAttachmentUnderbarrelFlareGun
-  name: M82-F underbarrel flare gun
-  description: A compact underbarrel flare gun. Fires a single flare to signal or illuminate.
+  name: M82-F下挂式信号枪
+  description: 一种紧凑的下挂式信号枪。发射单发信号弹，用于发信号或照明。
   components:
   - type: Sprite
     state: flaregun
@@ -300,7 +298,7 @@
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
-        ents: [ ]
+        ents: []
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 1
     accuracyMultiplierUnwielded: 0.5
@@ -337,8 +335,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentMiniFlamethrower
-  name: underbarrel flamethrower # TODO RMC14 intensity toggle
-  description: A weapon-mounted refillable flamethrower attachment. It has a secondary setting for a more intense flame with far less propulsion ability and heavy fuel usage.
+  name: 下挂式火焰喷射器                 # TODO RMC14 intensity toggle
+  description: 一种可安装在武器上的可重复装填火焰喷射器附件。它有一个副模式，可喷出更猛烈的火焰，但推进能力大幅降低，且燃料消耗极大。
   components:
   - type: Sprite
     state: flamethrower
@@ -403,8 +401,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: CMAttachmentXMVESG1FlamerNozzle
-  name: XM-VESG-1 flamer nozzle
-  description: A special nozzle designed to alter flamethrowers to be used in a more offense orientated manner. As the inside of the nozzle is coated in a special gel and resin substance that takes the fuel that passes through and hardens it. Upon exiting the barrel, a cluster of burning gel is projected instead of a stream of burning naphtha.
+  name: XM-VESG-1 喷火器喷嘴
+  description: 一种特殊喷嘴，旨在改装喷火器，使其以更偏向进攻的方式使用。由于喷嘴内部涂有特殊的凝胶和树脂物质，会处理流经的燃料并使其硬化。从喷管射出时，喷出的不是一股燃烧的石脑油，而是一团燃烧的凝胶。
   components:
   - type: Sprite
     state: flamer_nozzle
@@ -412,10 +410,10 @@
     content: rmc-lore-examinable-xm-vesg-1-flamer-nozzle
 
 - type: entity
-  parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
+  parent: [RMCUnderAttachmentBase, RMCAttachableToggleableBase]
   id: RMCAttachmentU7UnderbarrelShotgun
-  name: U7 underbarrel shotgun
-  description: An AEGIS U7 tactical shotgun. Attaches to the underbarrel of most weapons. Only capable of loading up to five buckshot shells. Specialized for breaching into buildings.
+  name: U7下挂式霰弹枪
+  description: AEGIS U7战术霰弹枪。可下挂于大多数武器的枪管下方。最多只能装填五发鹿弹。专为突入建筑物而设计。
   components:
   - type: Sprite
     state: masterkey
@@ -486,8 +484,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentUnderbarrelExtinguisher
-  name: HME-12 underbarrel extinguisher
-  description: A Taiho-Technologies HME-12 underbarrel extinguisher. Attaches to the underbarrel of most weapons. Point at flame before applying pressure.
+  name: HME-12 下挂式灭火器
+  description: Taiho-Technologies HME-12 下挂式灭火器。可安装在大多数武器的下挂位置。施压前对准火焰。
   components:
   - type: Sprite
     state: extinguisher
@@ -556,8 +554,8 @@
 - type: entity
   parent: RMCAttachmentUnderbarrelExtinguisher
   id: RMCAttachmentUnderbarrelExtinguisherSpec
-  name: HME-88B underbarrel extinguisher
-  description: An experimental Taiho-Technologies HME-88B underbarrel extinguisher integrated with a select few gun models. It is capable of putting out the strongest of flames. Point at flame before applying pressure.
+  name: HME-88B下挂式灭火器
+  description: 一种实验性的Taiho-Technologies HME-88B下挂式灭火器，可与少数几款枪械型号集成。它能够扑灭最猛烈的火焰。施加压力前，先对准火焰。
   components:
   - type: Spray
     sprayedPrototype: RMCExtinguisherSpraySpec
@@ -573,15 +571,15 @@
     transferAmount: 500
 
 - type: entity
-  parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
+  parent: [RMCUnderAttachmentBase, RMCAttachableToggleableBase]
   id: RMCAttachmentU1GrenadeLauncher
-  name: U1 grenade launcher
-  description: A weapon-mounted, reloadable grenade launcher.
+  name: U1榴弹发射器
+  description: 一种武器挂载式、可重新装填的榴弹发射器。
   components:
   - type: Sprite
     layers:
     - state: grenade
-      map: [ "enum.BreechVisuals.Open" ]
+      map: ["enum.BreechVisuals.Open"]
   - type: Item
     size: Normal
   - type: ContainerContainer
@@ -634,8 +632,8 @@
     visuals:
       enum.BreechVisuals.Open:
         enum.BreechVisuals.Open:
-          True: { state: grenade-open }
-          False: { state: grenade }
+          true: {state: grenade-open}
+          false: {state: grenade}
   - type: AttachableToggleable
     userOnly: true
     attachedOnly: true
@@ -666,13 +664,13 @@
 - type: entity
   parent: RMCAttachmentU1GrenadeLauncher
   id: RMCAttachmentMK1GrenadeLauncher
-  name: MK1 underslung grenade launcher
-  description: An older version of the classic underslung grenade launcher. Can store five grenades, but fires them slower.
+  name: MK1下挂式榴弹发射器
+  description: 经典下挂式榴弹发射器的旧版本。可储存五枚榴弹，但射击速度较慢。
   components:
   - type: Sprite
     layers:
-      - state: grenade-mk1
-        map: [ "enum.BreechVisuals.Open" ]
+    - state: grenade-mk1
+      map: ["enum.BreechVisuals.Open"]
   - type: Item
     size: Normal
   - type: BallisticAmmoProvider
@@ -685,8 +683,8 @@
     visuals:
       enum.BreechVisuals.Open:
         enum.BreechVisuals.Open:
-          True: { state: grenade-mk1-open }
-          False: { state: grenade-mk1 }
+          true: {state: grenade-mk1-open}
+          false: {state: grenade-mk1}
   - type: AttachableToggleable
     actionName: Switch to the MK1 Underslung Grenade Launcher
     icon:
@@ -709,13 +707,13 @@
 - type: entity
   parent: RMCAttachmentU1GrenadeLauncher
   id: RMCAttachmentM203GrenadeLauncher
-  name: M203 grenade launcher
-  description: An antique underbarrel grenade launcher. Adopted in 1969 for the M16, it was made obsolete centuries ago; how its ended up here is a mystery to you. Holds only one propriatary 40mm grenade, does not have modern IFF systems, it won't pass through your friends.
+  name: M203榴弹发射器
+  description: 一种古董下挂式榴弹发射器。1969年为M16配用，但早在几个世纪前就已淘汰；它为何会出现在这里，对你而言是个谜。它只能装填一发专用的40毫米榴弹，没有现代敌我识别系统，不会穿过你的友军。
   components:
   - type: Sprite
     layers:
-      - state: grenade-m203
-        map: [ "enum.BreechVisuals.Open" ]
+    - state: grenade-m203
+      map: ["enum.BreechVisuals.Open"]
   - type: GunIFF
     enabled: false
   - type: BallisticAmmoProvider
@@ -728,8 +726,8 @@
     visuals:
       enum.BreechVisuals.Open:
         enum.BreechVisuals.Open:
-          True: { state: grenade-m203-open }
-          False: { state: grenade-m203 }
+          true: {state: grenade-m203-open}
+          false: {state: grenade-m203}
   - type: AttachableToggleable
     actionName: Switch to the MK1 Underslung Grenade Launcher
     icon:
@@ -752,9 +750,8 @@
 - type: entity
   parent: RMCUnderAttachmentBase
   id: RMCAttachmentVerticalGrip # verticalgrip
-  name: vertical grip
-  description: "A vertical foregrip that offers better accuracy, less recoil, and less scatter, especially during burst fire.
-    However, it also increases weapon size."
+  name: 垂直握把
+  description: "一种垂直握把，可提供更好的精准度、更小的后坐力和更少的散布，尤其是在点射时。然而，它也会增加武器体积。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_under.rsi
@@ -781,10 +778,10 @@
       scatterFlat: 2
 
 - type: entity
-  parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
+  parent: [RMCUnderAttachmentBase, RMCAttachableToggleableBase]
   id: RMCAttachmentFlashlightGrip # flashlight/grip
-  name: underbarrel flashlight grip
-  description: Holy smokes RO man, they put a grip on a flashlight! Reduces recoil and scatter by a tiny amount. Works as a light source. # Boosts accuracy by a tiny amount.
+  name: 枪管下挂手电握把
+  description: 天哪，RO老兄，他们竟然在手电筒上装了个握把！后坐力和散布会略微降低。可作为光源使用。                                                                                # Boosts accuracy by a tiny amount.
   components:
   - type: ItemTogglePointLight
   - type: ToggleableVisuals
@@ -832,7 +829,7 @@
     - state: flashgrip-on
       shader: unshaded
       visible: false
-      map: [ "light" ]
+      map: ["light"]
   - type: Item
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/under.rsi
   - type: Appearance
@@ -866,8 +863,8 @@
 - type: entity
   parent: RMCAttachmentFlashlightGrip
   id: RMCAttachmentLaserLightModule
-  name: MK80 laser-light module
-  description: A Laser-Light module for the MK80 Service Pistol which is currently undergoing limited field testing as part of the marines' next generation pistol program. All MK80 pistols come equipped with the module.
+  name: MK80激光照明模块
+  description: 一款用于MK80制式手枪的激光照明模块，目前作为海军陆战队下一代手枪计划的一部分正在进行有限实地测试。所有MK80手枪均配备该模块。
   suffix: DO NOT MAP
   components:
   - type: Sprite
@@ -876,7 +873,7 @@
     - state: laserlight-on
       shader: unshaded
       visible: false
-      map: [ "light" ]
+      map: ["light"]
   - type: Tag
     tags:
     - RMCAttachmentUnderbarrel
@@ -905,9 +902,9 @@
 - type: entity
   parent: RMCAttachmentBipod
   id: RMCAttachmentL91Bipod
-  categories: [ HideSpawnMenu ]
-  name: "L91 SWS integrated bipod"
-  description: "Blimey! This should be bolted to your rifle, you twat - put it back on and get back to it, mate!"
+  categories: [HideSpawnMenu]
+  name: "L91 SWS一体式两脚架"
+  description: "老天爷！这玩意儿应该用螺栓固定在你的步枪上，你个蠢货——把它装回去，继续干活，伙计！"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_under.rsi
@@ -945,20 +942,20 @@
 - type: entity
   parent: RMCAttachmentU1GrenadeLauncher
   id: RMCAttachmentL90GL
-  name: L90U3 grenade launcher
-  description: A grenade launcher designed specifically for L90 pattern rifles. Holds three 30mm grenades.
+  name: L90U3榴弹发射器
+  description: 一种专为L90型步枪设计的榴弹发射器。可容纳三枚30毫米榴弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_under.rsi
     layers:
     - state: grenade-l90
-      map: [ "enum.BreechVisuals.Open" ]
+      map: ["enum.BreechVisuals.Open"]
   - type: GenericVisualizer
     visuals:
       enum.BreechVisuals.Open:
         enum.BreechVisuals.Open:
-          True: { state: grenade-l90-open }
-          False: { state: grenade-l90 }
+          true: {state: grenade-l90-open}
+          false: {state: grenade-l90}
   - type: AttachableToggleable
     actionName: Switch to the L90U3 Grenade Launcher
     actionDesc: Switch to using the underbarrel grenade launcher.
@@ -976,8 +973,8 @@
 - type: entity
   parent: RMCAttachmentU7UnderbarrelShotgun
   id: RMCAttachmentL90UBS
-  name: L90U1 underbarrel shotgun
-  description: An underbarrel shotgun designed specifically for L90 pattern rifles, capable of loading up to five buckshot shells.
+  name: L90U1 下挂式霰弹枪
+  description: 一款专为L90系列步枪设计的下挂式霰弹枪，最多可装填五发鹿弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_under.rsi
@@ -999,8 +996,8 @@
 - type: entity
   parent: RMCAttachableBase
   id: RMCAttachmentL88Grip
-  name: L88 integrated foregrip
-  description: Oi, you bloody galah! Put this back on your rifle and get back to it!
+  name: L88一体式前握把
+  description: 喂，你这个该死的蠢货！把这东西装回你的步枪上，然后继续干！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_under.rsi

@@ -4,8 +4,8 @@
 #  parent: BaseStockPart
   parent: BaseItem
   id: CMStockPartBase
-  name: stock part
-  description: What?
+  name: 库存零件
+  description: 什么？
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/stock_parts.rsi
@@ -18,8 +18,8 @@
 - type: entity
   parent: CMStockPartBase
   id: CMStockPartScreen
-  name: console screen
-  description: Used in the construction of computers and other devices with an interactive console.
+  name: 控制台屏幕
+  description: 用于构建计算机及其他带有交互式控制台的设备。
   suffix: Rating 1
   components:
   - type: Sprite
@@ -31,8 +31,8 @@
 - type: entity
   parent: CMStockPartBase
   id: CMStockPartCapacitor
-  name: capacitor
-  description: A basic capacitor used in the construction of a variety of devices.
+  name: 电容器
+  description: 一种用于制造各种设备的基础电容器。
   suffix: Rating 1
   components:
   - type: Sprite
@@ -44,8 +44,8 @@
 - type: entity
   parent: CMStockPartBase
   id: CMStockPartScanningModule
-  name: scanning module
-  description: A compact, high resolution scanning module used in the construction of certain devices.
+  name: 扫描模块
+  description: 一种紧凑的高分辨率扫描模块，用于某些设备的建造。
   suffix: Rating 1
   components:
   - type: Sprite
@@ -57,8 +57,8 @@
 - type: entity
   parent: CMStockPartBase
   id: CMStockPartManipulatorMicro
-  name: micro-manipulator
-  description: A tiny little manipulator used in the construction of certain devices.
+  name: 微型机械手
+  description: 一种用于某些设备构造的微型机械手。
   suffix: Rating 1
   components:
   - type: Sprite
@@ -70,8 +70,8 @@
 - type: entity
   parent: CMStockPartBase
   id: CMStockPartMicroLaser
-  name: micro-laser
-  description: A tiny laser used in certain devices.
+  name: 微型激光器
+  description: 一种用于某些设备的微型激光器。
   suffix: Rating 1
   components:
   - type: Sprite
@@ -83,8 +83,8 @@
 - type: entity
   parent: CMStockPartBase
   id: CMStockPartMatterBin
-  name: matter bin
-  description: A container for hold compressed matter awaiting re-construction.
+  name: 物质仓
+  description: 用于存放等待重构的压缩物质的容器。
   suffix: Rating 1
   components:
   - type: Sprite
@@ -98,8 +98,8 @@
 - type: entity
   parent: CMStockPartCapacitor
   id: CMStockPartCapacitorAdvanced
-  name: advanced capacitor
-  description: An advanced capacitor used in the construction of a variety of devices.
+  name: 高级电容器
+  description: 用于制造各种设备的高级电容器。
   suffix: Rating 2
 #  components:
 #  - type: MachinePart
@@ -108,7 +108,7 @@
 - type: entity
   parent: CMStockPartScanningModule
   id: CMStockPartScanningModuleAdvanced
-  name: advanced scanning module
+  name: 高级扫描模块
   suffix: Rating 2
   #components:
   #- type: MachinePart
@@ -118,7 +118,7 @@
 - type: entity
   parent: CMStockPartManipulatorMicro
   id: CMStockPartManipulatorNano
-  name: nano-manipulator
+  name: 纳米操纵器
   suffix: Rating 2
   components:
   - type: Sprite
@@ -129,7 +129,7 @@
 - type: entity
   parent: CMStockPartMicroLaser
   id: CMStockPartMicroLaserHigh
-  name: high-power micro-laser
+  name: 高功率微激光器
   suffix: Rating 2
   components:
   - type: Sprite
@@ -141,7 +141,7 @@
 - type: entity
   parent: CMStockPartMatterBin
   id: CMStockPartMatterAdvanced
-  name: advanced matter bin
+  name: 高级物质箱
   suffix: Rating 2
   components:
   - type: Sprite
@@ -154,8 +154,8 @@
 - type: entity
   parent: CMStockPartCapacitor
   id: CMStockPartCapacitorSuper
-  name: super capacitor
-  description: A super-high-capacity capacitor used in the construction of a variety of devices.
+  name: 超级电容器
+  description: 用于构建各种设备的一种超高容量电容器。
   suffix: Rating 3
 #  components:
 #  - type: MachinePart
@@ -164,8 +164,8 @@
 - type: entity
   parent: CMStockPartScanningModule
   id: CMStockPartScanningModulePhasic
-  name: phasic scanning module
-  description: A compact, high resolution phasic scanning module used in the construction of certain devices.
+  name: 相位扫描模块
+  description: 一种用于构建某些设备的紧凑型高分辨率相位扫描模块。
   suffix: Rating 3
   #components:
   #- type: MachinePart
@@ -174,7 +174,7 @@
 - type: entity
   parent: CMStockPartManipulatorMicro
   id: CMStockPartManipulatorPico
-  name: pico-manipulator
+  name: 皮可操纵器
   suffix: Rating 3
   components:
   - type: Sprite
@@ -185,7 +185,7 @@
 - type: entity
   parent: CMStockPartMicroLaser
   id: CMStockPartMicroLaserUltra
-  name: ultra-high-power micro-laser
+  name: 超高功率微型激光器
   suffix: Rating 3
   components:
   - type: Sprite
@@ -196,7 +196,7 @@
 - type: entity
   parent: CMStockPartMatterBin
   id: CMStockPartMatterBinSuper
-  name: super matter bin
+  name: 超级物质箱
   suffix: Rating 3
   components:
   - type: Sprite
@@ -211,8 +211,8 @@
 - type: entity
   parent: CMStockPartBase
   id: CMStockPartSMESCoil
-  name: superconducting magnetic coil
-  description: Heavy-duty superconducting magnetic coil, mainly used in construction of SMES units.
+  name: 超导磁线圈
+  description: 重型超导磁线圈，主要用于构建超导磁储能（SMES）装置。
   components:
   - type: Sprite
     state: smes_coil

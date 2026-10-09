@@ -7,8 +7,8 @@
   - RMCXenoCommendationReceiver
   - RMCXenoMobCollision
   id: RMCXenoDespoiler
-  name: Despoiler
-  description: A massive, hunched xenomorph with hyper-pressurized acid sacs lining its spine. Steam hisses from cracks in its carapace.
+  name: 掠夺者 | Despoiler
+  description: 一个巨大的弓背异形，脊柱两侧排列着超高压酸液囊。蒸汽从甲壳的裂缝中嘶嘶喷出。 | A massive, hunched xenomorph with hyper-pressurized acid sacs lining its spine. Steam hisses from cracks in its carapace.
   components:
   - type: GhostRole
     name: cmu-job-name-xeno-unknown
@@ -16,22 +16,21 @@
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Despoiler/despoiler.rsi
     layers:
-    - map: [ "enum.XenoVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base"]
       state: alive
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
+    - map: ["enum.RMCDamageVisualLayers.Base"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
+    - map: ["enum.XenoInhandVisualLayers.Left"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
+    - map: ["enum.XenoInhandVisualLayers.Right"]
       visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
+    - map: ["enum.RMCShieldVisuals.Base"]
       sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 200
         mask:
@@ -41,8 +40,7 @@
         layer:
         - MobLayer
       fix2:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 200
         layer:

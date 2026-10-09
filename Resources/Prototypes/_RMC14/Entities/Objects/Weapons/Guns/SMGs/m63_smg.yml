@@ -1,16 +1,16 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: M39 submachine gun
+  name: M39冲锋枪
   id: WeaponSMGM63
-  description: The ARMAT Battlefield Armaments M39 submachinegun. Occasionally carried by light-infantry, scouts, engineers and medics.
+  description: ARMAT战场军械公司的M39冲锋枪。有时由轻步兵、侦察兵、工程师和医疗兵携带。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/m63/desert.rsi
     layers:
     - state: bolt-open
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/m63/desert.rsi
   - type: Gun
@@ -48,7 +48,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
         priority: 2
@@ -124,7 +124,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
         priority: 2
@@ -140,14 +140,14 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: CMMagazineSMGM63
-  name: "M39 HV magazine (10x20mm)"
+  name: "M39 HV 弹匣（10×20毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineSmg
     - CMMagazineSMGM63
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridge10x20mm
@@ -172,7 +172,7 @@
 - type: entity
   parent: CMMagazineSMGM63
   id: CMMagazineSMGM63AP
-  name: "M39 AP magazine (10x20mm)"
+  name: "M39 AP弹匣（10×20毫米）"
   components:
   - type: BallisticAmmoProvider
     whitelist:
@@ -183,9 +183,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m63.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#1F951F"
   - type: Tag
@@ -198,7 +198,7 @@
 - type: entity
   parent: CMMagazineSMGM63
   id: RMCMagazineSMGM63HEAP
-  name: "M39 HEAP magazine (10x20mm)"
+  name: "M39高爆穿甲弹匣（10x20mm）"
   suffix: HEAP
   components:
   - type: BallisticAmmoProvider
@@ -210,9 +210,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m63.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#9C9A19"
   - type: Tag
@@ -220,7 +220,7 @@
     - CMMagazineSmg
     - RMCMagazineSMGM63HEAP
   - type: RefillableByBulletBox
-    bulletType: null
+    bulletType:
 
 - type: entity
   parent: RMCMagazineSMGM63HEAP
@@ -228,12 +228,12 @@
   suffix: HEAP, Empty
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:
 
 - type: entity
   parent: CMMagazineSMGM63
   id: RMCMagazineSMGM63WP
-  name: "M63 WP magazine (10x20mm)"
+  name: "M63 WP 弹匣（10x20mm）"
   suffix: WP
   components:
   - type: BallisticAmmoProvider
@@ -245,9 +245,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m63.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#6365E6"
   - type: Tag
@@ -260,7 +260,7 @@
 - type: entity
   parent: CMMagazineSMGM63
   id: RMCMagazineSMGM63Incendiary
-  name: "M63 incendiary magazine (10x20mm)"
+  name: "M63燃烧弹弹匣（10×20毫米）"
   suffix: Incendiary
   components:
   - type: BallisticAmmoProvider
@@ -272,9 +272,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m63.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#771A10"
   - type: Tag
@@ -287,7 +287,7 @@
 - type: entity
   parent: CMMagazineSMGM63
   id: CMMagazineSMGM63Ext
-  name: "M39 extended magazine (10x20mm)"
+  name: "M39加长弹匣（10x20mm）"
   components:
   - type: BallisticAmmoProvider
     capacity: 72
@@ -306,7 +306,7 @@
 - type: entity
   parent: CMCartridgeSMGBase
   id: CMCartridge10x20mm
-  name: cartridge (10x20mm)
+  name: 弹药筒（10x20mm）
   components:
   - type: Tag
     tags:
@@ -318,7 +318,7 @@
 - type: entity
   parent: CMCartridge10x20mm
   id: CMCartridge10x20mmAP
-  name: AP cartridge (10x20mm)
+  name: 穿甲弹（10×20毫米）
   components:
   - type: Tag
     tags:
@@ -330,7 +330,7 @@
 - type: entity
   parent: CMCartridge10x20mm
   id: RMCCartridge10x20mmHEAP
-  name: HEAP cartridge (10x20mm)
+  name: 高爆穿甲弹（10×20毫米）
   components:
   - type: Tag
     tags:
@@ -342,7 +342,7 @@
 - type: entity
   parent: CMCartridge10x20mm
   id: RMCCartridge10x20mmWP
-  name: WP cartridge (10x20mm)
+  name: WP滤芯（10×20毫米）
   components:
   - type: Tag
     tags:
@@ -354,7 +354,7 @@
 - type: entity
   parent: CMCartridge10x20mm
   id: RMCCartridge10x20mmIncendiary
-  name: incendiary cartridge (10x20mm)
+  name: 燃烧弹（10×20毫米）
   components:
   - type: Tag
     tags:
@@ -366,7 +366,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: Bullet10x20mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -390,7 +390,7 @@
 - type: entity
   parent: Bullet10x20mm
   id: Bullet10x20mmAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -402,7 +402,7 @@
 - type: entity
   parent: Bullet10x20mm
   id: RMCBullet10x20mmHEAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -414,7 +414,7 @@
 - type: entity
   parent: Bullet10x20mm
   id: RMCBullet10x20mmWP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     deleteOnCollide: false
@@ -430,7 +430,7 @@
 - type: entity
   parent: Bullet10x20mm
   id: RMCBullet10x20mmIncendiary
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: MobStatusEffectDebuff
   id: SpeechStatusEffectBase
   abstract: true
@@ -14,7 +14,7 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectStutter
-  name: stutter
+  name: 口吃 | stutter
   components:
   - type: StutteringAccent
 
@@ -22,7 +22,7 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectSlurred
-  name: slurred
+  name: 口齿不清 | slurred
   components:
   - type: SlurredAccent
 
@@ -30,7 +30,7 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectScrambled
-  name: scrambled
+  name: 加扰 | scrambled
   components:
   - type: ScrambledAccent
 
@@ -38,7 +38,7 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectOwO
-  name: owoaccent
+  name: owo口音 | owoaccent
   components:
   - type: OwOAccent
 
@@ -46,7 +46,7 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectAllCaps
-  name: allcapsaccent
+  name: 全大写重音 | allcapsaccent
   components:
   - type: AllCapsAccent
 
@@ -54,7 +54,7 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectRatvarianLanguage
-  name: ratvarian language patterns
+  name: 拉特瓦里安语言模式 | ratvarian language patterns
   components:
   - type: RatvarianLanguage
 
@@ -62,6 +62,6 @@
 - type: entity
   parent: SpeechStatusEffectBase
   id: StatusEffectBark
-  name: barkaccent
+  name: 树皮点缀 | barkaccent
   components:
   - type: BarkAccent

@@ -1,20 +1,20 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackM42A2Empty
-  name: M42A2 gun rack
+  name: M42A2 枪架
   suffix: M42A2, Empty
-  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, UNMC commissioned racks with fixed slots which only fit M42A2 shotguns. Some say they were cheaper, and some say the main reason was marine's ability to easily break anything more complex than a tungsten ball.
+  description: AEGIS 生产的用于存放长枪的枪架。虽然初代型号本应极具可改装性，但 UNMC 委托制造的枪架采用固定槽位，仅能适配 M42A2 霰弹枪。有人说它们更便宜，也有人说主要原因是陆战队员能轻易弄坏任何比钨球更复杂的东西。
   components:
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_2: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/m42a2_rack.rsi
   - type: ItemSlots
@@ -57,14 +57,14 @@
 - type: entity
   parent: RMCGunRackM42A2Empty
   id: RMCGunRackType23Empty
-  name: Type 23 gun rack
+  name: 23式枪架
   suffix: Type 23, Empty
-  description: Some off-branded gun rack. Per SOF and UPP Army regulations, weapons should be stored in secure safes and only given out when necessary. Of course, most (but not all!) units overlook this regulation, only storing their firearms in safes when inspection arrives.
+  description: 某个杂牌枪架。根据SOF和UPP陆军的规定，武器应存放在安全的保险柜中，并且仅在必要时才发放。当然，大多数（但并非全部！）部队都无视这条规定，只在检查到来时才把枪械存进保险柜。
   components:
   - type: ItemSlots
     slots:
       item_1:
-        name: Type 23
+        name: 23型
         whitelist:
           tags:
           - RMCWeaponShotgunType23

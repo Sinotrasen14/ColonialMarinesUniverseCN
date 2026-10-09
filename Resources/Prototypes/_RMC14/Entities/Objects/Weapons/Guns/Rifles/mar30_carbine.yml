@@ -1,17 +1,17 @@
 - type: entity
   parent: WeaponRifleMAR40
   id: RMCWeaponRifleMAR30
-  name: MAR-30 battle carbine
-  description: A cheap, reliable carbine chambered in 7.62x39mm. Commonly found in the hands of criminals or mercenaries.
+  name: MAR-30战斗卡宾枪
+  description: 一种廉价、可靠的卡宾枪，口径为7.62×39毫米。常出现在罪犯或雇佣兵手中。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/mar30.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/mar30.rsi
   - type: Gun

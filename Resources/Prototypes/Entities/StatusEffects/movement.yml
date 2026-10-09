@@ -2,7 +2,7 @@
   parent: MobStatusEffectDebuff
   id: StatusEffectSlowdown
   abstract: true
-  name: slowdown
+  name: 放缓 | slowdown
   components:
   - type: StatusEffect
     whitelist:
@@ -19,7 +19,7 @@
   parent: MobStatusEffectBase
   id: StatusEffectSpeed
   abstract: true
-  name: speed
+  name: 速度 | speed
   components:
   - type: StatusEffect
     whitelist:
@@ -32,33 +32,33 @@
 - type: entity
   parent: StatusEffectSpeed
   id: ReagentSpeedStatusEffect
-  name: reagent speed
+  name: 试剂速度 | reagent speed
 
 - type: entity
   parent: StatusEffectSlowdown
   id: VomitingSlowdownStatusEffect
-  name: vomiting slowdown
+  name: 呕吐减缓 | vomiting slowdown
 
 - type: entity
   parent: StatusEffectSlowdown
   id: TaserSlowdownStatusEffect
-  name: shot by taser slowdown
+  name: 被电击枪击中减速 | shot by taser slowdown
 
 - type: entity
   parent: StatusEffectSlowdown
   id: FlashSlowdownStatusEffect
-  name: affected by flash slowdown
+  name: 受闪光减速影响 | affected by flash slowdown
 
 - type: entity
   parent: StatusEffectSlowdown
   id: StatusEffectStaminaLow
-  name: stamina low
+  name: 耐力低 | stamina low
 
 # Makes you more slippery, or perhaps less slippery.
 - type: entity
   parent: MobStatusEffectDebuff # Debatable if this should be MobStatusEffectBase or not
   id: StatusEffectFriction
-  name: friction
+  name: 摩擦 | friction
   components:
   - type: FrictionStatusEffect
 
@@ -67,7 +67,7 @@
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectStunned
-  name: stunned
+  name: 惊呆的 | stunned
   components:
   - type: StatusEffect
     whitelist:
@@ -85,7 +85,7 @@
 - type: entity
   parent: StatusEffectStunned
   id: StatusEffectParalyzed
-  name: paralyzed
+  name: 瘫痪 | paralyzed
   components:
   - type: KnockdownStatusEffect
 
@@ -93,7 +93,7 @@
 - type: entity
   parent: MobStatusEffectBase
   id: StatusEffectRMCUnconscious
-  name: unconscious
+  name: 无意识 | unconscious
   components:
   - type: StunnedStatusEffect
   - type: KnockdownStatusEffect

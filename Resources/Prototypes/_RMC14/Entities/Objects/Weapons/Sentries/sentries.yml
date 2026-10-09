@@ -2,13 +2,13 @@
   abstract: true
   parent: RMCSentryPremade
   id: RMCBaseSentry #Conversion Rate for turret vision range = CM + 1
-  name: turret
+  name: 炮塔
   components:
   - type: Sentry
   - type: Eye
   - type: DeviceNetwork
   - type: DeviceLinkSink
-    ports: [ SentryControl ]
+    ports: [SentryControl]
 
 - type: htnCompound
   id: RMCSentryCompound
@@ -53,7 +53,8 @@
       preset: TargetDistance
   - !type:TargetAccessibleCon
     curve: !type:BoolCurve
-  - !type:TargetBulletLOSCon # CMU14
+                             # CMU14
+  - !type:TargetBulletLOSCon
     curve: !type:BoolCurve
   - !type:CanFaceCon
     curve: !type:BoolCurve
@@ -63,8 +64,8 @@
 - type: entity
   parent: BaseItem
   id: RMCEngineeringUpgrade
-  name: engineering upgrade kit
-  description: A kit used to upgrade the defenses of an engineer's sentry. Back in 1980 when the machines tried to break free, it was a single android who laid them low. Now their technology is used widely on the rim.
+  name: 工程升级套件
+  description: 一种用于升级工程师哨兵防御的套件。早在1980年，当机器试图挣脱束缚时，只有一个仿生人将它们击倒。如今，它们的科技已在边缘世界上广泛使用。
   components:
   - type: GuideHelp
     guides:
@@ -78,9 +79,9 @@
   parent: RMCBaseSentry
   id: RMCSentryConstruct
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 571-C sentry gun
+  name: 571-C 哨戒炮
   # cmu edit end
-  description: A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 Autocannon and a 500-round drum magazine.
+  description: 一种可部署的半自动炮塔，具备AI瞄准能力。配备M30机炮和500发弹鼓。
   components:
   - type: UserIFF
     factions: []
@@ -124,9 +125,9 @@
   parent: RMCSentry
   id: RMCSentryMini
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 512-M mini sentry
+  name: 512-M 迷你哨戒炮
   # cmu edit end
-  description: A compact version of the USCMC defenses. Designed for quick deployment of the associated type in the field.
+  description: USCMC 防御设施的紧凑版本。设计用于在战场上快速部署相关型号。
   components:
   - type: UserIFF
     factions: []
@@ -136,7 +137,7 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - map: [ "sentry" ]
+    - map: ["sentry"]
       state: mini_uac_sentry_handheld
   - type: Icon
     sprite: _RMC14/Objects/Weapons/Sentries/sentry.rsi
@@ -146,29 +147,27 @@
     visuals:
       enum.SentryLayers.Layer:
         sentry:
-          Item: { state: mini_uac_sentry_handheld }
-          Off: { state: mini_uac_sentry_noammo }
-          On: { state: mini_uac_sentry_on }
+          Item: {state: mini_uac_sentry_handheld}
+          Off: {state: mini_uac_sentry_noammo}
+          On: {state: mini_uac_sentry_on}
   - type: Gun
     fireRate: 6.66
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: GunDamageModifier
     multiplier: 0.4
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.25
         density: 20
         mask:
@@ -176,8 +175,7 @@
         restitution: 0.3
         friction: 0.2
       sentry:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 20
         layer:
@@ -186,13 +184,13 @@
   - type: Sentry
     deployDelay: 0.75
     undeployDelay: 0.75
-    upgrades: null
+    upgrades:
 
 - type: entity
   parent: RMCSentryMini
   id: RMCSentryMiniWeYa
-  name: We-Ya 512-M mini sentry
-  description: A compact version of the UNMC defenses. Designed for quick deployment of the associated type in the field. This one has been modified for use by the mercenaries employed by Weyland-Yutani.
+  name: We-Ya 512-M 迷你哨戒炮
+  description: UNMC 防御设施的紧凑版本。设计用于在战场上快速部署相关型号。这一台已被改装，供维兰德-汤谷雇用的雇佣兵使用。
   components:
   - type: UserIFF
     factions: []
@@ -204,16 +202,16 @@
 - type: entity
   parent: RMCSentryMini
   id: RMCSentryMiniSPP # TODO RMC14: Replace with the real one.
-  name: UPP SDS-R8 light sentry
-  description: A compact version of the UPP defense sentry SDS-R7. Designed for deployment in the field.
+  name: UPP SDS-R8 轻型哨兵
+  description: UPP防御哨兵SDS-R7的紧凑版本。专为实地部署而设计。
 
 - type: entity
   parent: RMCSentry
   id: RMCSentrySniper
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 725-D sniper sentry
+  name: 725-D狙击哨戒炮
   # cmu edit end
-  description: A fully-automated defence turret with long-range targeting capabilities. Armed with a modified M32-S Autocannon and an internal belt feed.
+  description: 全自动防御炮塔，具有远程瞄准能力。配备一门改装的 M32-S 自动炮和内置弹链供弹。
   components:
   - type: UserIFF
     factions: []
@@ -223,9 +221,9 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: defense_base_off
-    - map: [ "sentry" ]
+    - map: ["sentry"]
       state: dmr_uac_sentry_handheld
   - type: Icon
     sprite: _RMC14/Objects/Weapons/Sentries/sentry.rsi
@@ -235,39 +233,36 @@
     visuals:
       enum.SentryLayers.Layer:
         base:
-          Item: { state: "", visible: false }
-          Off: { state: defense_base_off, visible: true }
-          On: { state: defense_base, visible: true }
+          Item: {state: "", visible: false}
+          Off: {state: defense_base_off, visible: true}
+          On: {state: defense_base, visible: true}
         sentry:
-          Item: { state: dmr_uac_sentry_handheld }
-          Off: { state: dmr_uac_sentry_noammo }
-          On: { state: dmr_uac_sentry_on }
+          Item: {state: dmr_uac_sentry_handheld}
+          Off: {state: dmr_uac_sentry_noammo}
+          On: {state: dmr_uac_sentry_on}
   - type: Gun
     fireRate: 0.8
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: GunDamageModifier
     multiplier: 2
   - type: HTN
     blackboard:
       SoundTargetInLOS: !type:SoundPathSpecifier
         path: /Audio/Effects/double_beep.ogg
-      VisionRadius: !type:Single
-        11.0
-      AggroVisionRadius: !type:Single
-        11.0
+      VisionRadius: !type:Single 11.0
+      AggroVisionRadius: !type:Single 11.0
   - type: Sentry
     deployDelay: 2
-    upgrades: null
+    upgrades:
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 4
     accuracyMultiplierUnwielded: 4
@@ -276,9 +271,9 @@
   parent: RMCSentry
   id: RMCSentryOmni
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 571-D omnidirectional sentry gun
+  name: 571-D 全向哨戒炮
   # cmu edit end
-  description: A deployable, semi-automated turret with 360 degree range AI targeting capabilities. Armed with an M30 Autocannon and a 500-round drum magazine.
+  description: 可部署的半自动炮塔，具备360度全向AI瞄准能力。配备一门M30自动炮和500发弹鼓。
   components:
   - type: UserIFF
     factions: []
@@ -288,9 +283,9 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: defense_base_off
-    - map: [ "sentry" ]
+    - map: ["sentry"]
       state: omni_uad_sentry_handheld
   - type: Icon
     sprite: _RMC14/Objects/Weapons/Sentries/sentry.rsi
@@ -300,34 +295,32 @@
     visuals:
       enum.SentryLayers.Layer:
         base:
-          Item: { state: "", visible: false }
-          Off: { state: defense_base_off, visible: true }
-          On: { state: defense_base, visible: true }
+          Item: {state: "", visible: false}
+          Off: {state: defense_base_off, visible: true}
+          On: {state: defense_base, visible: true}
         sentry:
-          Item: { state: omni_uad_sentry_handheld }
-          Off: { state: omni_uad_sentry_noammo }
-          On: { state: omni_uad_sentry_on }
+          Item: {state: omni_uad_sentry_handheld}
+          Off: {state: omni_uad_sentry_noammo}
+          On: {state: omni_uad_sentry_on}
   - type: GunDamageModifier
     multiplier: 0.7
   - type: HTN
     blackboard:
       SoundTargetInLOS: !type:SoundPathSpecifier
         path: /Audio/Effects/double_beep.ogg
-      VisionRadius: !type:Single
-        5.0
-      AggroVisionRadius: !type:Single
-        5.0
+      VisionRadius: !type:Single 5.0
+      AggroVisionRadius: !type:Single 5.0
   - type: Sentry
-    upgrades: null
+    upgrades:
     maxDeviation: 180
 
 - type: entity
   parent: RMCSentry
   id: RMCSentryShotgun
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 12-G Shotgun Sentry
+  name: 12号口径霰弹哨戒炮
   # cmu edit end
-  description: A deployable, semi-automated turret with specialized for close range combat. Protects itself with sturdier plating and steel tusks.
+  description: 一种可部署的半自动哨戒炮，专为近距离作战而设计。它通过更坚固的装甲和钢制獠牙保护自身。
   components:
   - type: UserIFF
     factions: []
@@ -337,9 +330,9 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: defense_base_off
-    - map: [ "sentry" ]
+    - map: ["sentry"]
       state: shotgun_uac_sentry_handheld
   - type: Icon
     sprite: _RMC14/Objects/Weapons/Sentries/sentry.rsi
@@ -348,27 +341,26 @@
     fireRate: 0.4
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 250
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.SentryLayers.Layer:
         base:
-          Item: { state: "", visible: false }
-          Off: { state: defense_base_off, visible: true }
-          On: { state: defense_base, visible: true }
+          Item: {state: "", visible: false}
+          Off: {state: defense_base_off, visible: true}
+          On: {state: defense_base, visible: true}
         sentry:
-          Item: { state: shotgun_uac_sentry_handheld }
-          Off: { state: shotgun_uac_sentry_noammo }
-          On: { state: shotgun_uac_sentry_on }
+          Item: {state: shotgun_uac_sentry_handheld}
+          Off: {state: shotgun_uac_sentry_noammo}
+          On: {state: shotgun_uac_sentry_on}
   - type: SentrySpikes
     spikeDamage:
       types:
@@ -379,13 +371,11 @@
     blackboard:
       SoundTargetInLOS: !type:SoundPathSpecifier
         path: /Audio/Effects/double_beep.ogg
-      VisionRadius: !type:Single
-        4.0
-      AggroVisionRadius: !type:Single
-        4.0
+      VisionRadius: !type:Single 4.0
+      AggroVisionRadius: !type:Single 4.0
   - type: Sentry
     undeployDelay: 1.5
-    upgrades: null
+    upgrades:
     startingMagazine: RMCMagazineSentryShotgun
     magazineTag: RMCMagazineSentryShotgun
   - type: RMCWeaponAccuracy
@@ -396,9 +386,9 @@
   parent: RMCBaseTurret
   id: RMCTurretGaussDumb
   # cmu edit start: no UA/UN prefix on sentry names
-  name: damaged 577 gauss turret
+  name: 受损的577高斯炮塔
   # cmu edit end
-  description: A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 Autocannon and a high-capacity drum magazine. This one's IFF system has been fried via acid damage, and it will open fire on any targets within range.
+  description: 一种可部署的半自动炮塔，具备人工智能瞄准能力。装备有M30机炮和大容量弹鼓。这台的敌我识别系统已被酸液损坏烧毁，会向射程内任何目标开火。
   components:
   - type: UserIFF
     factions: []
@@ -417,15 +407,14 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: MaxRotation
     deviation: 75
   - type: ProjectileDamageReceived
@@ -435,10 +424,10 @@
   parent: RMCSentry
   id: RMCSentryMiniFire
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 45-FM mini sentry
+  name: 45-FM迷你哨戒炮
   # cmu edit end
   # cmu edit start: no UA/UN prefix on sentry descriptions
-  description: The Mini Flamethrower Sentry Gun automatically tracks and fires upon any target that is wearing an ID not hooked up to the Almayer's systems. Just like the 571-C Sentry gun, this sentry has IFF but the fire that lingers doesn't.
+  description: 迷你火焰喷射哨戒炮会自动追踪并向任何佩戴未接入阿尔迈耶号系统身份识别卡的目标开火。与571-C哨戒炮一样，这种哨戒炮具备敌我识别，但它留下的持续燃烧火焰不具备。
   # cmu edit end
   components:
   - type: UserIFF
@@ -449,7 +438,7 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - map: [ "sentry" ]
+    - map: ["sentry"]
       state: mini_uac_sentry_handheld
   - type: Icon
     sprite: _RMC14/Objects/Weapons/Sentries/sentry.rsi
@@ -459,30 +448,28 @@
     visuals:
       enum.SentryLayers.Layer:
         sentry:
-          Item: { state: mini_uac_flamer_handheld }
-          Off: { state: mini_uac_flamer_noammo }
-          On: { state: mini_uac_flamer_on }
+          Item: {state: mini_uac_flamer_handheld}
+          Off: {state: mini_uac_flamer_noammo}
+          On: {state: mini_uac_flamer_on}
   - type: Gun
     fireRate: 1
     projectileSpeed: 20.0
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: GunDamageModifier
     multiplier: 1
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.25
         density: 20
         mask:
@@ -490,8 +477,7 @@
         restitution: 0.3
         friction: 0.2
       sentry:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 20
         layer:
@@ -500,7 +486,7 @@
   - type: Sentry
     deployDelay: 0.75
     undeployDelay: 0.75
-    upgrades: null
+    upgrades:
     startingMagazine: RMCMagazineSentryFire
     magazineTag: RMCMagazineSentryFire
 
@@ -508,10 +494,10 @@
   parent: RMCSentry
   id: RMCSentryFire
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 55-FA assault sentry flamer
+  name: 55-FA突击哨戒喷火器
   # cmu edit end
   # cmu edit start: no UA/UN prefix on sentry descriptions
-  description: The Flamethrower Sentry Gun automatically tracks and fires upon any target that is wearing an ID not hooked up to the Almayer's systems. Just like the 571-C Sentry gun, this sentry has IFF but the fire that lingers doesn't.
+  description: 喷火哨戒炮会自动追踪并向任何佩戴未接入阿尔迈耶号系统的身份卡的目标开火。与571-C哨戒炮一样，这种哨戒炮具有敌我识别，但残留的火焰没有。
   # cmu edit end
   components:
   - type: UserIFF
@@ -527,13 +513,13 @@
     visuals:
       enum.SentryLayers.Layer:
         base:
-          Item: { state: "", visible: false }
-          Off: { state: defense_base_off, visible: true }
-          On: { state: defense_base, visible: true }
+          Item: {state: "", visible: false}
+          Off: {state: defense_base_off, visible: true}
+          On: {state: defense_base, visible: true}
         sentry:
-          Item: { state: normal_uac_flamer_handheld }
-          Off: { state: normal_uac_flamer_noammo }
-          On: { state: normal_uac_flamer_on }
+          Item: {state: normal_uac_flamer_handheld}
+          Off: {state: normal_uac_flamer_noammo}
+          On: {state: normal_uac_flamer_on}
   - type: Sentry
     upgrades: ["RMCSentryMiniFire", "RMCSentrySniperFire"]
     startingMagazine: RMCMagazineSentryFireBlue
@@ -543,10 +529,10 @@
   parent: RMCSentry
   id: RMCSentrySniperFire
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 60-FP plasma sentry
+  name: 60-FP等离子哨戒炮
   # cmu edit end
   # cmu edit start: no UA/UN prefix on sentry descriptions
-  description: The Plasma Flamethrower Sentry Gun automatically tracks and fires upon any target that is wearing an ID not hooked up to the Almayer's systems. Just like the 571-C Sentry gun, this sentry has IFF but the phosphorus that lingers doesn't.
+  description: 等离子火焰哨戒炮会自动追踪并向任何佩戴未接入阿尔迈耶号系统的身份卡的目标开火。就像571-C哨戒炮一样，这种哨戒炮具有敌我识别功能，但残留的白磷没有。
   # cmu edit end
   components:
   - type: UserIFF
@@ -557,9 +543,9 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: defense_base_off
-    - map: [ "sentry" ]
+    - map: ["sentry"]
       state: plasma_uac_flamer_handheld
   - type: Icon
     sprite: _RMC14/Objects/Weapons/Sentries/sentry.rsi
@@ -569,38 +555,35 @@
     visuals:
       enum.SentryLayers.Layer:
         base:
-          Item: { state: "", visible: false }
-          Off: { state: defense_base_off, visible: true }
-          On: { state: defense_base, visible: true }
+          Item: {state: "", visible: false}
+          Off: {state: defense_base_off, visible: true}
+          On: {state: defense_base, visible: true}
         sentry:
-          Item: { state: plasma_uac_flamer_handheld }
-          Off: { state: plasma_uac_flamer_noammo }
-          On: { state: plasma_uac_flamer_on }
+          Item: {state: plasma_uac_flamer_handheld}
+          Off: {state: plasma_uac_flamer_noammo}
+          On: {state: plasma_uac_flamer_on}
   - type: Gun
     fireRate: 0.14
     projectileSpeed: 20.0
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: HTN
     blackboard:
       SoundTargetInLOS: !type:SoundPathSpecifier
         path: /Audio/Effects/double_beep.ogg
-      VisionRadius: !type:Single
-        11.0
-      AggroVisionRadius: !type:Single
-        11.0
+      VisionRadius: !type:Single 11.0
+      AggroVisionRadius: !type:Single 11.0
   - type: Sentry
     deployDelay: 2
-    upgrades: null
+    upgrades:
     startingMagazine: RMCMagazineSentryFireSmoke
     magazineTag: RMCMagazineSentryFireSmoke
   - type: RMCWeaponAccuracy
@@ -611,9 +594,9 @@
   parent: RMCTurretGaussDumb
   id: RMCTurretGaussModifiedCLF
   # cmu edit start: no UA/UN prefix on sentry names
-  name: modified 577 gauss turret
+  name: 改装型 577 高斯炮塔
   # cmu edit end
-  description: A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 Autocannon and a high-capacity drum magazine. This one's IFF system has been fried via acid damage, and it will open fire on any targets within range.
+  description: 可部署的半自动炮塔，具备AI瞄准能力。装备有一门M30自动炮和一个大容量弹鼓。这台炮塔的敌我识别系统因酸液损坏而烧毁，会向射程内的任何目标开火。
   components:
   - type: EntityIFF
   - type: Gun

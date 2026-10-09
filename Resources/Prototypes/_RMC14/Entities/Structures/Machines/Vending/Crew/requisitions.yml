@@ -6,7 +6,7 @@
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessRequisitions" ]
+    - ["CMAccessRequisitions"]
   - type: CMAutomatedVendor
     sound:
       path: /Audio/_RMC14/Machines/vending_drop.ogg
@@ -18,8 +18,8 @@
 - type: entity
   parent: ColMarTechCargo
   id: ColMarTechCargoGuns
-  name: ASRS automated armaments vendor
-  description: An automated supply rack hooked up to a big storage of various firearms, explosives, load carrying equipment, and other miscellaneous items. Can be accessed by the Logistics Officer and Requisitions Technicians.
+  name: ASRS 自动军械售货机
+  description: 一个自动化补给架，连接着一个存放各类枪械、爆炸物、负载搬运装备及其他杂项物品的大型仓储。可由后勤官与军需技术员取用。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/guns.rsi
@@ -32,7 +32,7 @@
       sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/guns.rsi
       state: vend
     sections:
-    - name: Primary firearms
+    - name: 主要枪械
       entries:
       - id: WeaponShotgunM42A2
         amount: 30
@@ -42,7 +42,7 @@
         amount: 60
       - id: WeaponRifleM4SPR
         amount: 20
-    - name: Sidearms
+    - name: 副武器
       entries:
       - id: RMCWeaponPistolM77Empty
         amount: 50
@@ -54,7 +54,7 @@
         amount: 50
       - id: RMCWeaponPistolM82FEmpty
         amount: 20
-    - name: Restricted Firearms
+    - name: 限制类枪支
       entries:
       - id: RMCGunCasePistolMK80
         amount: 4
@@ -80,7 +80,7 @@
         amount: 3
       - id: RMCXM51Case
         amount: 3
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: CMGrenadeFragOld
         amount: 2
@@ -114,7 +114,7 @@
         amount: 2
       - id: RMCRocketM5510Brute
         amount: 3
-    - name: Webbings
+    - name: 织带
       entries:
       - id: CMWebbingBrown
         amount: 2
@@ -140,7 +140,7 @@
         amount: 1
       - id: RMCOuterClothingExternalWebbing
         amount: 2
-    - name: Backpacks
+    - name: 背包
       entries:
       - id: CMBackpackMarine
         amount: 15
@@ -162,7 +162,7 @@
         amount: 20
       - id: RMCSatchelGrenadeSpec
         amount: 2
-    - name: Belts
+    - name: 腰带
       entries:
       - id: RMCBeltUtilityGeneral
         amount: 2
@@ -173,7 +173,7 @@
       - id: RMCBeltHolsterM13
         amount: 10
       - id: CMBeltKnifeFilled
-        name: M276 Knife Rig (Full)
+        name: M276刀具装备（完整版）
         amount: 5
       - id: RMCBeltHolsterSMG
         amount: 5
@@ -189,7 +189,7 @@
         amount: 10
       - id: CMBeltMortar
         amount: 2
-    - name: Pouches
+    - name: 小袋
       entries:
       - id: RMCPouchAutoinjector
         amount: 1
@@ -198,12 +198,12 @@
       - id: RMCPouchFirstAidInjectors
         amount: 5
       - id: RMCPouchFirstResponder
-        name: First Responder Pouch (Empty)
+        name: 急救员小包（空）
         amount: 2
       - id: RMCPouchSyringe
         amount: 2
       - id: RMCPouchToolsFill
-        name: Tools Pouch (Full)
+        name: 工具袋（满）
         amount: 2
       - id: RMCPouchConstruction
         amount: 2
@@ -212,17 +212,17 @@
       - id: RMCPouchExplosive
         amount: 2
       - id: RMCPouchFlareFilled
-        name: flare pouch (Full)
+        name: 信号弹袋（满）
         amount: 5
       - id: RMCPouchDocumentSmall
         amount: 2
       - id: RMCPouchSling
         amount: 2
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
+        name: 砍刀袋（满）
         amount: 1
       - id: RMCPouchBayonetFill
-        name: Bayonet Sheath (Full)
+        name: 刺刀鞘（完整）
         amount: 2
       - id: RMCPouchGeneralMedium
         amount: 2
@@ -242,7 +242,7 @@
         amount: 1
       - id: RMCPouchShotgunLarge
         amount: 1
-    - name: Medical Supplies
+    - name: 医疗用品
       entries:
       - id: CMUPlainTraumaDressing10
         amount: 16
@@ -251,12 +251,12 @@
       - id: CMUBurnGel
         amount: 12
       - id: CMBloodPackFull
-        name: blood bag (O-)
+        name: 血袋（O型阴性）
         amount: 16
       - id: CMBloodPack
-        name: empty blood pack
+        name: 空血袋
         amount: 8
-    - name: Essential Devices
+    - name: 必备设备
       entries:
       - id: RMCMotionDetector
         amount: 4
@@ -274,7 +274,7 @@
         amount: 4
       - id: CMSparePDTLBattleBuddyKit
         amount: 4
-    - name: Flare and Light
+    - name: 火焰与光芒
       entries:
       - id: RMCFlashlight # Combat Flashlight
         amount: 8
@@ -282,7 +282,7 @@
         amount: 2
       - id: CMPackFlare
         amount: 10
-    - name: Miscellaneous
+    - name: 其他
       entries:
       - id: CMEntrenchingTool
         amount: 4
@@ -302,7 +302,7 @@
         amount: 10
       - id: RMCMagazineSMGNailgun
         amount: 4
-    - name: Pamphlets
+    - name: 小册子
       entries:
       - id: CMPamphletJTAC
         amount: 1
@@ -310,61 +310,61 @@
         amount: 1
       - id: CMPamphletPowerloader
         amount: 1
-    - name: Explosive Boxes
+    - name: 爆炸箱
       hasBoxes: true
       entries:
       - id: CMPacketGrenadeFragOldFilled
-        name: M15 fragmentation grenade packet
+        name: M15破片手榴弹包
         box: CMGrenadeFragOld
         boxAmount: 3
         boxSlots: 3
       - id: CMPacketGrenadeHighExplosiveFilled
-        name: 30mm HEDP grenade packet
+        name: 30毫米高爆双用途榴弹包
         box: CMGrenadeHighExplosive
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeIncendiaryFilled
-        name: 30mm HIAM grenade packet
+        name: 30毫米 HIAM 榴弹包
         box: RMCGrenadeIncendiary
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeSmokeFilled
-        name: 30mm HSDP grenade packet
+        name: 30毫米HSDP榴弹包
         box: CMGrenadeSmoke
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeM74AGMFFilled
-        name: M74 AGM-F grenade packet
+        name: M74 AGM-F手榴弹包
         box: RMC40MMGrenadeM74AGMF
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeM74AGMIFilled
-        name: M74 AGM-I grenade packet
+        name: M74 AGM-I手榴弹包
         box: RMC40MMGrenadeM74AGMI
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeM74AGMSFilled
-        name: M74 AGM-S grenade packet
+        name: M74 AGM-S 手榴弹包
         box: RMC40MMGrenadeM74AGMS
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeM74AGMSStarShellFilled
-        name: M74 AGM-S Starshell grenade packet
+        name: M74 AGM-S 照明榴弹包
         box: RMCStarShellM74AGMS
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeM74AGMSHornetFilled
-        name: M74 AGM-S Hornet grenade packet
+        name: M74 AGM-S“大黄蜂”手榴弹包
         box: RMCHornetShellM74AGMS
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeBatonSlugHIRRFilled
-        name: HIRR Baton Slug packet
+        name: HIRR警棍弹包
         box: RMCBatonSlugHIRR
         boxAmount: 3
         boxSlots: 3
       - id: RMCPacketGrenadeMetalFoamFilled
-        name: MFHS Grenade Packet
+        name: MFHS手榴弹包
         box: RMCPacketGrenadeMetalFoam
         boxAmount: 3
         boxSlots: 3
@@ -373,8 +373,8 @@
 - type: entity
   parent: ColMarTechCargo
   id: ColMarTechCargoAmmo
-  name: ASRS automated munition vendor
-  description: An automated supply rack hooked up to a big storage of various ammunition types. Can be accessed by the Logistics Officer and Requisitions Technicians.
+  name: ASRS自动弹药售货机
+  description: 一个连接着可储存多种弹药的大型仓库的自动补给架。后勤官和军需技术员可以使用。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/ammo.rsi
@@ -387,7 +387,7 @@
       sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/ammo.rsi
       state: vend
     sections:
-    - name: Regular ammunition
+    - name: 普通弹药
       entries:
       - id: RMCBoxShotgunBuckshot
         amount: 56
@@ -409,7 +409,7 @@
         amount: 100
       - id: RMCMagazinePistolM13
         amount: 100
-    - name: Armor-piercing ammunition
+    - name: 穿甲弹
       entries:
       - id: RMCMagazinePistolM13AP
         amount: 14
@@ -425,7 +425,7 @@
         amount: 10
       - id: RMCMagazinePistolM1984AP
         amount: 2
-    - name: Extended ammunition
+    - name: 扩展弹药
       entries:
       - id: RMCMagazinePistolM13Ext
         amount: 10
@@ -435,7 +435,7 @@
         amount: 10
       - id: CMMagazineRifleM54CExt
         amount: 8
-    - name: Special ammunition
+    - name: 特殊弹药
       entries:
       - id: RMCPowerCellSmartgun
         amount: 4
@@ -451,7 +451,7 @@
         amount: 2
       - id: RMCBox458SOCOM
         amount: 4
-    - name: Restricted firearm ammunition
+    - name: 受限枪支弹药
       entries:
       - id: CMMagazinePistolMK80
         amount: 11
@@ -471,54 +471,54 @@
         amount: 2
       - id: RMCMagazineShotgunXM51
         amount: 3
-    - name: Magazine Boxes
+    - name: 杂志盒
       hasBoxes: true
       entries:
       - id: RMCBoxMagazinePistolM13
-        name: Magazine Box (M13 x 22)
+        name: 杂志盒（M13 x 22）
         box: RMCMagazinePistolM13
       - id: RMCBoxMagazinePistolM13Ext
-        name: Magazine Box (Ext M13 x 14)
+        name: 弹匣盒（外螺纹 M13 x 14）
         box: RMCMagazinePistolM13Ext
       - id: RMCBoxMagazinePistolM13AP
-        name: Magazine Box (M13 AP x 22)
+        name: 弹匣盒（M13穿甲弹 × 22）
         box: RMCMagazinePistolM13AP
       - id: RMCBoxMagazinePistolM13ExtAP
-        name: Magazine Box (Ext M13 AP x 14)
+        name: 弹匣盒（加长型 M13 穿甲弹 × 14）
         box: RMCMagazinePistolM13ExtAP
       - id: RMCBoxMagazineSMGM63
-        name: Magazine Box (M63 x 12)
+        name: 弹匣盒（M63 x 12）
         box: CMMagazineSMGM63
       - id: RMCBoxMagazineSMGM63AP
-        name: Magazine Box (AP M63 x 12)
+        name: 弹匣盒（AP M63 × 12）
         box: CMMagazineSMGM63AP
       - id: RMCBoxMagazineSMGM63Ext
-        name: Magazine Box (Ext M63 x 10)
+        name: 弹匣盒（外螺纹 M63 x 10）
         box: CMMagazineSMGM63Ext
       - id: RMCBoxMagazineRifleM54C
-        name: Magazine Box (M54C x 10)
+        name: 弹匣盒（M54C x 10）
         box: CMMagazineRifleM54C
       - id: RMCBoxMagazineRifleM54CAP
-        name: Magazine Box (AP M54C x 10)
+        name: 弹匣盒（AP M54C × 10）
         box: CMMagazineRifleM54CAP
       - id: RMCBoxMagazineRifleM54CExt
-        name: Magazine Box (Ext M54C x 8)
+        name: 弹匣箱（M54C 扩容弹匣 × 8）
         box: CMMagazineRifleM54CExt
       - id: RMCBoxMagazinePistolM1984
-        name: Magazine Box (M1984 x 16)
+        name: 弹匣盒（M1984 x 16）
         box: CMMagazinePistolM1984
 #      - name: Magazine Box (AP M1984 x 16)
 #        box: CMMagazinePistolM1984AP
 #      - name: Magazine Box (HP M1984 x 16)
 #        box: CMMagazineSMGM63
       - id: RMCBoxMagazineRifleM4SPR
-        name: Magazine Box (M4SPR x 16)
+        name: 弹匣盒（M4SPR x 16）
         box: CMMagazineRifleM4SPR
       - id: RMCBoxMagazineRifleM4SPRAP
-        name: Magazine Box (AP M4SPR x 16)
+        name: 弹匣箱（穿甲 M4SPR x 16）
         box: CMMagazineRifleM4SPRAP
       - id: RMCBoxMagazineRifleM4SPRExt
-        name: Magazine Box (Ext M4SPR x 16)
+        name: 弹匣盒（Ext M4SPR x 16）
         box: CMMagazineRifleM4SPRExt
 #      - name: Magazine Box (M54CE2 x 8)
 #        box: RMCCrateMagazineRifleM54CE2
@@ -529,29 +529,29 @@
 #      - name: Magazine Box (M54C MK1 AP x 8)
 #        box: CMMagazineSMGM63
       - id: RMCBoxShellsBuckshot
-        name: Magazine Box (Buckshot x 100)
+        name: 弹匣盒（鹿弹 ×100）
         box: RMCBoxShotgunBuckshot
         boxAmount: 4
       - id: RMCBoxShellsFlechette
-        name: Magazine Box (Flechette x 100)
+        name: 弹匣箱（箭形弹 x 100）
         box: RMCBoxShotgunFlechette
         boxAmount: 4
       - id: RMCBoxShellsSlugs
-        name: Magazine Box (Slugs x 100)
+        name: 弹匣盒（霰弹块 x 100）
         box: RMCBoxShotgunSlugs
         boxAmount: 4
       - id: RMCBoxShellsBreaching
-        name: Magazine Box (16g) (Breaching x 120)
+        name: 弹匣盒（16号）（破门弹 × 120）
         box: RMCBoxShotgunBreaching
         boxAmount: 4
       - id: RMCBoxMagazinePistolM77AP
-        name: Magazine Box (M77 AP x 16)
+        name: 弹匣盒（M77 穿甲弹 x 16）
         box: CMMagazinePistolM77AP
       - id: RMCBoxMagazinePistolSU6
-        name: Magazine Box (SU-6 x 16)
+        name: 弹匣盒（SU-6 x 16）
         box: RMCMagazinePistolSU6
       - id: RMCBoxMagazinePistolMK80
-        name: Magazine Box (MK80 x 16)
+        name: 弹匣箱（MK80 x 16）
         box: CMMagazinePistolMK80
 #      - name: Magazine Box (XM51 x 8)
 #        box: RMCMagazineShotgunXM51
@@ -564,40 +564,40 @@
 #      - name: Magazine Box (ML66D x 8)
 #        box: CMMagazineSMGM63
       - id: RMCBoxMagazineRevolverM44
-        name: Magazine Box (M44 x 16)
+        name: 杂志盒（M44 × 16）
         box: RMCSpeedLoaderM44
       - id: RMCBoxMagazineRevolverM44Marksman
-        name: Magazine Box (Marksman M44 x 16)
+        name: 弹匣盒（神射手 M44 ×16）
         box: RMCSpeedLoader44Marksman
 #      - name: Magazine Box (Heavy M44 x 16)
 #        box: CMMagazineSMGM63
 #      - name: Magazine Box (UT-Napthal Fuel x 8)
 #        box: CMMagazineSMGM63
-    - name: Ammunition Boxes
+    - name: 弹药箱
       hasBoxes: true
       entries:
       - id: RMCBoxBulletsSMG
-        name: SMG HV ammunition box (10x20mm) (M63)
+        name: 冲锋枪高速弹药箱（10x20毫米）（M63）
         box: CMMagazineSMGM63
         boxSlots: 13 # 600 / 48, yes we lose half a mag to the void
       - id: RMCBoxBulletsSMGAP
-        name: SMG ammunition box (10x20mm AP) (M63)
+        name: 冲锋枪弹药箱（10×20毫米穿甲弹）（M63）
         box: CMMagazineSMGM63AP
         boxSlots: 13 # 600 / 48, yes we lose half a mag to the void
       - id: RMCBoxBulletsRifle
-        name: rifle ammunition box (10x24mm) (M4SPR)
+        name: 步枪弹药箱（10×24毫米）（M4SPR）
         box: CMMagazineRifleM4SPR
         boxSlots: 24 # 600 / 25
       - id: RMCBoxBulletsRifleAP
-        name: rifle ammunition box (10x24mm AP) (M4SPR)
+        name: 步枪弹药箱（10×24毫米穿甲弹）（M4SPR）
         box: CMMagazineRifleM4SPRAP
         boxSlots: 24 # 600 / 25
       - id: RMCBoxBulletsRifle
-        name: rifle ammunition box (10x24mm) (M54C)
+        name: 步枪弹药箱（10×24毫米）（M54C）
         box: CMMagazineRifleM54C
         boxSlots: 15 # 600 / 40
       - id: RMCBoxBulletsRifleAP
-        name: rifle ammunition box (10x24mm AP) (M54C)
+        name: 步枪弹药箱（10×24毫米穿甲弹）（M54C）
         box: CMMagazineRifleM54CAP
         boxSlots: 15 # 600 / 40
 
@@ -605,8 +605,8 @@
 - type: entity
   parent: ColMarTechCargo
   id: ColMarTechCargoAttachments
-  name: AEGIS Armaments attachments vendor
-  description: An automated supply rack hooked up to a big storage of weapons attachments. Can be accessed by the Logistics Officer and Requisitions Technicians.
+  name: 神盾军械配件售货机
+  description: 一台自动补给架，连接着一个大型武器配件仓库。可由后勤官和军需技术员使用。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/attachments.rsi
@@ -619,7 +619,7 @@
       sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_wall/attachments.rsi
       state: vend
     sections:
-    - name: Barrel
+    - name: 桶
       entries:
       - id: RMCAttachmentExtendedBarrel
         amount: 7
@@ -635,7 +635,7 @@
         amount: 7
       - id: RMCAttachmentShotgunChoke
         amount: 5
-    - name: Rail
+    - name: 铁路
       entries:
       - id: RMCAttachmentB8SmartScope
         amount: 4
@@ -653,7 +653,7 @@
         amount: 10
       - id: RMCAttachmentS84xTelescopicScope
         amount: 5
-    - name: Underbarrel
+    - name: 下挂
       entries:
       - id: RMCAttachmentAngledGrip
         amount: 7
@@ -681,7 +681,7 @@
         amount: 10
       - id: RMCAttachmentVerticalGrip
         amount: 10
-    - name: Stock
+    - name: 股票
       entries:
       - id: RMCAttachmentM13StockSolid
         amount: 5
@@ -706,18 +706,18 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechCargoUniform
-  name: ASRS surplus uniform vendor
-  description: An automated supply rack hooked up to a big storage of standard marine uniforms. Can be accessed by the Logistics Officer and Requisitions Technicians.
+  name: ASRS剩余制服售货机
+  description: 一台自动补给架，连接着一个存放标准海军陆战队制服的大型仓库。可由后勤军官和补给技术员使用。
   suffix: Requisitions
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessRequisitions" ]
+    - ["CMAccessRequisitions"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: Uniform
+    - name: 制服
       entries:
       - id: JumpsuitMarine
         amount: 20
@@ -725,7 +725,7 @@
         amount: 5
       - id: CMJumpsuitMarineMedic
         amount: 5
-    - name: Boots
+    - name: 靴子
       entries:
       - id: CMBootsBlack
         amount: 20
@@ -733,7 +733,7 @@
         amount: 5
       - id: CMBootsGrey
         amount: 5
-    - name: Backpacks
+    - name: 背包
       entries:
       - id: CMBackpackMarine
         amount: 20
@@ -747,7 +747,7 @@
         amount: 10
       - id: CMSatchelMarineMedic
         amount: 10
-    - name: Armor
+    - name: 护甲
       entries:
       - id: ArmorHelmetM10
         amount: 20
@@ -773,7 +773,7 @@
         amount: 10
       - id: RMCArmorM3LightPadded
         amount: 10
-    - name: Gloves
+    - name: 手套
       entries:
       - id: CMHandsBrown
         amount: 40
@@ -781,7 +781,7 @@
         amount: 40
       - id: CMHandsBlackMarine
         amount: 40
-    - name: Radio
+    - name: 收音机
       entries:
       - id: RMCHeadsetShip
         amount: 5
@@ -809,7 +809,7 @@
       #  amount: 8
       - id: CMEncryptionKeyRequisition
         amount: 5
-    - name: Masks
+    - name: 面具
       entries:
       - id: CMMaskGas
         amount: 20
@@ -817,7 +817,7 @@
         amount: 10
       - id: RMCMaskRebreather
         amount: 20
-    - name: Goggles
+    - name: 护目镜
       entries:
       - id: RMCGogglesBallistic
         amount: 10
@@ -827,7 +827,7 @@
         amount: 10
       - id: RMCGlassesMarineRpg
         amount: 10
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: BedrollFolded
         amount: 30
@@ -840,21 +840,21 @@
       - id: RMCPatchFallingFalcons
         amount: 15
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国肩章
         amount: 15
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 坠落猎鹰大号胸章
         amount: 15
       - id: RMCPatchUNMC
-        name: UNMC shoulder patch
+        name: UNMC肩章
         amount: 15
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: 联合国臂章
         amount: 15
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
         amount: 15
-    - name: Books
+    - name: 图书
       entries:
       - id: AU14GuidebookLawMarine
         amount: 10

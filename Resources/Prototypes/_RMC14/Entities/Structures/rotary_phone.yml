@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCRotaryPhone
-  name: rotary phone
-  description: The finger plate is a little stiff.
+  name: 转盘电话
+  description: 拨号盘有点发紧。
   components:
   - type: Physics
     bodyType: Static
@@ -11,7 +11,7 @@
     drawdepth: WallMountedItems
     layers:
     - state: rotary_phone
-      map: [ "base" ]
+      map: ["base"]
   - type: InteractionOutline
   - type: Clickable
   - type: RotaryPhone
@@ -33,9 +33,9 @@
     visuals:
       enum.RotaryPhoneLayers.Layer:
         base:
-          Base: { state: rotary_phone }
-          Ring: { state: rotary_phone_ring }
-          Ear: { state: rotary_phone_ear }
+          Base: {state: rotary_phone}
+          Ring: {state: rotary_phone_ring}
+          Ear: {state: rotary_phone_ear}
   - type: WallMount
     arc: 360
   - type: GuideHelp
@@ -49,26 +49,26 @@
 - type: entity
   parent: RMCRotaryPhone
   id: RMCRotaryPhoneWallmount
-  name: wall-mounted phone
-  description: "It is a wall mounted telephone. The fine text reads: To log your details with the mainframe please insert your keycard into the slot below. Unfortunately the slot is jammed. You can still use the phone, however."
+  name: 壁挂式电话
+  description: "这是一部壁挂式电话。小字写着：请将您的钥匙卡插入下方插槽，以便将您的详细信息记录到主机中。遗憾的是，插槽卡住了。不过，您仍然可以使用这部电话。"
   components:
   - type: Sprite
     sprite: _RMC14/Structures/wallmount_phone.rsi
     layers:
-      - state: wall_phone
-        map: [ "base" ]
+    - state: wall_phone
+      map: ["base"]
   - type: GenericVisualizer
     visuals:
       enum.RotaryPhoneLayers.Layer:
         base:
-          Base: { state: wall_phone }
-          Ring: { state: wall_phone_ring }
-          Ear: { state: wall_phone_ear }
+          Base: {state: wall_phone}
+          Ring: {state: wall_phone_ring}
+          Ear: {state: wall_phone_ear}
 
 - type: entity
   parent: BaseItem
   id: RMCTelephone
-  name: telephone
+  name: 电话
   components:
   - type: Sprite
     sprite: _RMC14/Objects/phone.rsi
@@ -92,22 +92,22 @@
 - type: entity
   parent: RMCRotaryPhone
   id: RMCRotaryPhoneCommandTent
-  name: Command tent
+  name: 指挥帐篷
 
 - type: entity
   parent: RMCRotaryPhone
   id: RMCRotaryPhoneReqTent
-  name: Requisitions Tent
+  name: 军需帐篷
 
 - type: entity
   parent: RMCRotaryPhone
   id: RMCRotaryPhoneMessTent
-  name: Mess Tent
+  name: 食堂帐篷
 
 - type: entity
   parent: RMCRotaryPhone
   id: RMCRotaryPhoneMPTent
-  name: Military Police Tent
+  name: 宪兵帐篷
 
 # Admin
 - type: entity

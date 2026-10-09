@@ -1,7 +1,7 @@
 - type: entity
   parent: RMCAreaBase
   id: RMCAreaFlight
-  name: Flight
+  name: 航班
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_flight.rsi
@@ -14,7 +14,7 @@
 - type: entity
   parent: RMCAreaFlight
   id: RMCAreaFlightIn
-  name: Flight - Indoors
+  name: 室内飞行
   components:
   - type: Area
     CAS: true
@@ -32,7 +32,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightBasement
-  name: Basement
+  name: 地下室
   components:
   - type: Sprite
     state: basement
@@ -46,7 +46,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightFloor1
-  name: 1st Floor
+  name: 一楼
   components:
   - type: Sprite
     state: floor1
@@ -54,7 +54,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightFloor2
-  name: 2nd Floor
+  name: 二楼
   components:
   - type: Sprite
     state: floor2
@@ -62,7 +62,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightFloor3
-  name: 3rd Floor
+  name: 3楼
   components:
   - type: Sprite
     state: floor3
@@ -70,7 +70,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightFloor4
-  name: 4th Floor
+  name: 四楼
   components:
   - type: Sprite
     state: floor4
@@ -78,7 +78,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightFloor5
-  name: 5th Floor
+  name: 5楼
   components:
   - type: Sprite
     state: floor5
@@ -86,7 +86,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightFloor6
-  name: 6th Floor
+  name: 六楼
   components:
   - type: Sprite
     state: floor6
@@ -94,7 +94,7 @@
 - type: entity
   parent: RMCAreaFlightFloor6
   id: RMCAreaFlightFloor6LZ
-  name: 'LZ2: Indoor Hanger 6th Floor'
+  name: 'LZ2：室内挂架6楼'
   components:
   - type: Sprite
     layers:
@@ -107,7 +107,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightFloor7
-  name: 7th Floor
+  name: 7楼
   components:
   - type: Sprite
     state: floor7
@@ -115,7 +115,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightFloor8
-  name: 8th Floor
+  name: 8楼
   components:
   - type: Sprite
     state: floor8
@@ -123,7 +123,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightFloor9
-  name: 9th Floor
+  name: 9楼
   components:
   - type: Sprite
     state: floor9
@@ -131,7 +131,7 @@
 - type: entity
   parent: RMCAreaFlightIn
   id: RMCAreaFlightRoof
-  name: Roof
+  name: 屋顶
   components:
   - type: Sprite
     state: roof
@@ -139,7 +139,7 @@
 - type: entity
   parent: RMCAreaFlight
   id: RMCAreaFlightOut
-  name: Flight - Outdoors
+  name: 飞行 - 户外
   components:
   - type: Sprite
     state: out
@@ -158,7 +158,7 @@
 - type: entity
   parent: RMCAreaFlightOut
   id: RMCAreaFlightFloor1Out
-  name: Building - Exterior
+  name: 建筑 - 外部
   components:
   - type: Sprite
     layers:
@@ -168,7 +168,7 @@
 - type: entity
   parent: RMCAreaFlightFloor1Out
   id: RMCAreaFlightFloor1OutLZ
-  name: 'LZ1: West Hanger'
+  name: 'LZ1：西机库'
   components:
   - type: Sprite
     layers:
@@ -182,7 +182,7 @@
 - type: entity
   parent: RMCAreaFlightOut
   id: RMCAreaFlightFloor7Out
-  name: 7th Floor - Outdoors
+  name: 7楼 - 户外
   components:
   - type: Sprite
     layers:
@@ -192,7 +192,7 @@
 - type: entity
   parent: RMCAreaFlightOut
   id: RMCAreaFlightFloor8Out
-  name: 8th Floor - Outdoors
+  name: 8楼 - 户外
   components:
   - type: Sprite
     layers:
@@ -202,7 +202,7 @@
 - type: entity
   parent: RMCAreaFlightOut
   id: RMCAreaFlightRoofOut
-  name: Roof
+  name: 屋顶
   components:
   - type: Sprite
     layers:
@@ -212,7 +212,7 @@
 - type: entity
   parent: RMCAreaFlightRoofOut
   id: RMCAreaFlightRoofOutLZ
-  name: Roof
+  name: 屋顶
   components:
   - type: Sprite
     layers:
@@ -226,7 +226,7 @@
 - type: entity
   parent: RMCAreaFlight
   id: RMCAreaFlightMid
-  name: Flight - Midair
+  name: 飞行 - 半空中
   components:
   - type: Area
     CAS: true
@@ -247,7 +247,7 @@
 - type: entity
   parent: RMCAreaFlightMid
   id: RMCAreaFlightFloor2Mid
-  name: 2nd Floor - Midair
+  name: 二楼 - 半空中
   components:
   - type: Sprite
     layers:
@@ -257,7 +257,7 @@
 - type: entity
   parent: RMCAreaFlightMid
   id: RMCAreaFlightFloor3Mid
-  name: 3rd Floor - Midair
+  name: 三楼 - 半空中
   components:
   - type: Sprite
     layers:
@@ -267,7 +267,7 @@
 - type: entity
   parent: RMCAreaFlightMid
   id: RMCAreaFlightFloor4Mid
-  name: 4th Floor - Midair
+  name: 四楼 - 半空中
   components:
   - type: Sprite
     layers:
@@ -277,7 +277,7 @@
 - type: entity
   parent: RMCAreaFlightMid
   id: RMCAreaFlightFloor5Mid
-  name: 5th Floor - Midair
+  name: 五楼－半空中
   components:
   - type: Sprite
     layers:
@@ -287,7 +287,7 @@
 - type: entity
   parent: RMCAreaFlightMid
   id: RMCAreaFlightFloor6Mid
-  name: 6th Floor - Midair
+  name: 6楼 - 半空中
   components:
   - type: Sprite
     layers:
@@ -297,7 +297,7 @@
 - type: entity
   parent: RMCAreaFlightMid
   id: RMCAreaFlightFloor7Mid
-  name: 7th Floor - Midair
+  name: 7楼 - 半空中
   components:
   - type: Sprite
     layers:
@@ -307,7 +307,7 @@
 - type: entity
   parent: RMCAreaFlightMid
   id: RMCAreaFlightFloor8Mid
-  name: 8th Floor - Midair
+  name: 8楼——半空中
   components:
   - type: Sprite
     layers:
@@ -317,7 +317,7 @@
 - type: entity
   parent: RMCAreaFlightMid
   id: RMCAreaFlightFloor9Mid
-  name: 9th Floor - Midair
+  name: 9楼 - 半空中
   components:
   - type: Sprite
     layers:
@@ -327,7 +327,7 @@
 - type: entity
   parent: RMCAreaFlightMid
   id: RMCAreaFlightRoofMid
-  name: Roof - Midair
+  name: 屋顶 - 半空中
   components:
   - type: Sprite
     layers:

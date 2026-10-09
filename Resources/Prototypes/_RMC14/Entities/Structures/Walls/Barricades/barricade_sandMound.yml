@@ -1,22 +1,21 @@
 - type: entity
   parent: RMCBarricadeSnow
   id: sandMound
-  name: sand mound
-  description: A pile of sand that can be used as cover. Statistically better than thin air as cover.
+  name: 沙堆
+  description: 一堆沙子，可用作掩体。从统计数据来看，作为掩体，它比稀薄的空气更好。
   components:
   - type: Sprite
     color: "#cc7939"
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Effects/Footsteps/hardbarefoot5.ogg
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: XenoToggleChargingDamage
     sound:
       path: /Audio/Effects/Footsteps/hardbarefoot5.ogg #between hardbarefoot5 and carpet4

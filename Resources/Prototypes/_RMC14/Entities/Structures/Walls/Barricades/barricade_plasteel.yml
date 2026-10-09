@@ -2,37 +2,36 @@
 - type: entity
   parent: CMBarricadeBase
   id: RMCBarricadePlasteel
-  name: plasteel barricade
-  description: A sturdy and easily assembled barricade made of reinforced plasteel plates, the pinnacle of strongpoints. Use a blowtorch to repair.
+  name: 玻璃钢路障
+  description: 一种由加固玻璃钢板制成的坚固且易于组装的路障，是防御工事的巅峰。使用喷灯进行修理。
   components:
   - type: Climbable
   - type: Anchorable
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/_RMC14/Structures/metalhit.ogg"
+        path: "/Audio/_RMC14/Structures/metalhit.ogg"
   - type: Sprite
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
     - state: DamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/plasteel_barricade_cracks.rsi
-    - map: [ "acided" ]
+    - map: ["acided"]
     drawdepth: WallTops
   - type: GenericVisualizer
     visuals:
       enum.BarbedWireVisualLayers.Wire:
         barbWired:
-          UnWired: { state: plasteel_wire, visible: false }
-          WiredClosed: { state: plasteel_wire, visible: true }
+          UnWired: {state: plasteel_wire, visible: false}
+          WiredClosed: {state: plasteel_wire, visible: true}
       enum.SprayAcidedVisuals.Acided:
         acided:
-          True:
+          true:
             sprite: _RMC14/Effects/xeno_spray_acid.rsi
             state: acid
             visible: true
-          False:
+          false:
             visible: false
   - type: InteractionPopup
     interactSuccessString: fence-rattle-success
@@ -51,8 +50,7 @@
       CMPlasteel: 400
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 900
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -64,7 +62,7 @@
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DamageVisuals
     thresholds: [4, 8, 12]
     damageDivisor: 56.25
@@ -100,12 +98,12 @@
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
     - state: DamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/plasteel_barricade_cracks.rsi
     - state: AdditionalDamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/burn_barricade_cracks.rsi
-    - map: [ "acided" ]
+    - map: ["acided"]
   - type: DamageVisuals
     targetLayers:
     - "enum.RMCDamageOverlayVisuals.DamageOverlay"
@@ -115,7 +113,7 @@
   - type: Injurable
     damageContainer: Inorganic
   - type: RMCConstructionUpgradeTarget
-    upgrades: null
+    upgrades:
     downgrade: RMCBiohazardUpgradePlasteel
   - type: Flammable
     damage:
@@ -131,12 +129,12 @@
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
     - state: DamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/plasteel_barricade_cracks.rsi
     - state: AdditionalDamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/brute_barricade_cracks.rsi
-    - map: [ "acided" ]
+    - map: ["acided"]
   - type: DamageVisuals
     targetLayers:
     - "enum.RMCDamageOverlayVisuals.DamageOverlay"
@@ -146,7 +144,7 @@
   - type: Injurable
     damageContainer: Inorganic
   - type: RMCConstructionUpgradeTarget
-    upgrades: null
+    upgrades:
     downgrade: RMCBruteUpgradePlasteel
   - type: BarricadeBlock
     bidirectional: true
@@ -161,12 +159,12 @@
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
     - state: DamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/plasteel_barricade_cracks.rsi
     - state: AdditionalDamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/explosive_barricade_cracks.rsi
-    - map: [ "acided" ]
+    - map: ["acided"]
   - type: DamageVisuals
     targetLayers:
     - "enum.RMCDamageOverlayVisuals.DamageOverlay"
@@ -174,7 +172,7 @@
   - type: ExplosionResistance
     damageCoefficient: 0.5
   - type: RMCConstructionUpgradeTarget
-    upgrades: null
+    upgrades:
     downgrade: RMCExplosiveUpgradePlasteel
   - type: Flammable
     damage:
@@ -187,8 +185,8 @@
 - type: entity
   parent: CMBarricadeMetalDoor
   id: CMBarricadePlasteelDoor
-  name: folding plasteel barricade
-  description: A tough folding plasteel barricade stronger than its metal counterpart. Can be closed and opened at a moment's notice. Repair with a welder.
+  name: 折叠式玻璃钢路障
+  description: 一种坚固的折叠式玻璃钢路障，比金属路障更坚固。可以随时闭合和打开。用焊枪修理。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
@@ -197,7 +195,7 @@
       map: ["enum.DoorVisualLayers.Base"]
       visible: false
     - state: DamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/folding_plasteel_cracks.rsi
     - state: folding_plasteel_connection_1
       map: ["enum.RMCFoldingBarricadeLinkingVisualLayers.North"]
@@ -211,7 +209,7 @@
     - state: folding_plasteel_connection_8
       map: ["enum.RMCFoldingBarricadeLinkingVisualLayers.West"]
       visible: false
-    - map: [ "acided" ]
+    - map: ["acided"]
     drawdepth: WallTops
   - type: DamageVisuals
     thresholds: [4, 8, 12]
@@ -249,8 +247,7 @@
       CMPlasteel: 240
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 800
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -262,46 +259,46 @@
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: GenericVisualizer
     visuals:
       enum.RMCFoldingBarricadeLinkingVisuals.North:
         enum.RMCFoldingBarricadeLinkingVisualLayers.North:
-          None: { visible: false }
-          Closed: { state: folding_plasteel_connection_1, visible: true }
-          Open: { state: folding_plasteel_closed_connection_1, visible: true }
+          None: {visible: false}
+          Closed: {state: folding_plasteel_connection_1, visible: true}
+          Open: {state: folding_plasteel_closed_connection_1, visible: true}
       enum.RMCFoldingBarricadeLinkingVisuals.South:
         enum.RMCFoldingBarricadeLinkingVisualLayers.South:
-          None: { visible: false }
-          Closed: { state: folding_plasteel_connection_2, visible: true }
-          Open: { state: folding_plasteel_closed_connection_2, visible: true }
+          None: {visible: false}
+          Closed: {state: folding_plasteel_connection_2, visible: true}
+          Open: {state: folding_plasteel_closed_connection_2, visible: true}
       enum.RMCFoldingBarricadeLinkingVisuals.East:
         enum.RMCFoldingBarricadeLinkingVisualLayers.East:
-          None: { visible: false }
-          Closed: { state: folding_plasteel_connection_4, visible: true }
-          Open: { state: folding_plasteel_closed_connection_4, visible: true }
+          None: {visible: false}
+          Closed: {state: folding_plasteel_connection_4, visible: true}
+          Open: {state: folding_plasteel_closed_connection_4, visible: true}
       enum.RMCFoldingBarricadeLinkingVisuals.West:
         enum.RMCFoldingBarricadeLinkingVisualLayers.West:
-          None: { visible: false }
-          Closed: { state: folding_plasteel_connection_8, visible: true }
-          Open: { state: folding_plasteel_closed_connection_8, visible: true }
+          None: {visible: false}
+          Closed: {state: folding_plasteel_connection_8, visible: true}
+          Open: {state: folding_plasteel_closed_connection_8, visible: true}
       enum.BarbedWireVisualLayers.Wire:
         barbWired:
-          UnWired: { state: folding_plasteel_closed_wire, visible: false }
-          WiredClosed: { state: folding_plasteel_wire, visible: true }
-          WiredOpen: { state: folding_plasteel_closed_wire, visible: true }
+          UnWired: {state: folding_plasteel_closed_wire, visible: false}
+          WiredClosed: {state: folding_plasteel_wire, visible: true}
+          WiredOpen: {state: folding_plasteel_closed_wire, visible: true}
       enum.SprayAcidedVisuals.Acided:
         acided:
-          True:
+          true:
             sprite: _RMC14/Effects/xeno_spray_acid.rsi
             state: acid
             visible: true
-          False:
+          false:
             visible: false
       enum.DoorVisuals.State:
         enum.RMCDamageOverlayVisuals.DamageOverlay:
-          Open: { sprite: _RMC14/Structures/Walls/Barricades/folding_plasteel_closed_cracks.rsi }
-          Closed: { sprite: _RMC14/Structures/Walls/Barricades/folding_plasteel_cracks.rsi }
+          Open: {sprite: _RMC14/Structures/Walls/Barricades/folding_plasteel_closed_cracks.rsi}
+          Closed: {sprite: _RMC14/Structures/Walls/Barricades/folding_plasteel_cracks.rsi}
   - type: Door
     openSpriteState: folding_plasteel_closed
     closedSpriteState: folding_plasteel

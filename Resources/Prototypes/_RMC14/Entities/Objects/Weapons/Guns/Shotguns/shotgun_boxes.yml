@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: BaseStorageItem
   id: RMCBoxShotgunBase
-  name: box of shotgun shells
+  name: 一盒霰弹
   components:
   - type: Item
     size: Large
@@ -20,9 +20,9 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_12g_color
       color: "#0000ff"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#ff0000"
   - type: Appearance
   - type: Tag
@@ -43,8 +43,8 @@
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunBuckshot
-  name: box of buckshot shells
-  description: A box filled with buckshot spread shotgun shells. 12 Gauge.
+  name: 一盒鹿弹霰弹
+  description: 一盒装满鹿弹散射霰弹的盒子。12号口径。
   components:
   - type: Storage
     whitelist:
@@ -64,16 +64,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_12g_color
       color: "#944444"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#944444"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunSlugs
-  name: box of slug shells
-  description: A box filled with heavy shotgun shells. A timeless classic. 12 Gauge.
+  name: 一盒独头弹
+  description: 一盒装满重型霰弹的盒子。永恒的经典。12号口径。
   components:
   - type: Storage
     whitelist:
@@ -93,16 +93,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_12g_color
       color: "#578e75"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#578e75"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunIncendiary
-  name: box of incendiary slug shells
-  description: A box filled with self-detonating incendiary shotgun rounds. 12 Gauge.
+  name: 一盒燃烧独头弹
+  description: 一盒装满自爆燃烧独头弹的盒子。12号口径。
   components:
   - type: Storage
     whitelist:
@@ -124,16 +124,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_12g_color
       color: "#ffcb26"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#c6cdd3"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunBeanbag
-  name: box of beanbag shells
-  description: A box filled with beanbag shotgun shells used for non-lethal crowd control. 12 Gauge.
+  name: 一盒豆袋弹
+  description: 一盒装满用于非致命人群控制的豆袋霰弹。12号口径。
   components:
   - type: Storage
     whitelist:
@@ -153,16 +153,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_12g_color
       color: "#5786be"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#5786be"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunFlechette
-  name: box of flechette shells
-  description: A box filled with flechette shotgun shells. 12 Gauge.
+  name: 一盒箭形弹
+  description: 一盒装满箭形弹霰弹的盒子。12号口径。
   components:
   - type: Storage
     whitelist:
@@ -182,16 +182,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_12g_color
       color: "#6551a0"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#6551a0"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunIncendiaryBuckshot
-  name: box of incendiary buckshot shells
-  description: A box filled with self-detonating buckshot incendiary shotgun rounds. 12 Gauge.
+  name: 一盒燃烧型鹿弹霰弹
+  description: 一盒装满自爆型鹿弹燃烧霰弹的弹药。12号口径。
   components:
   - type: Storage
     whitelist:
@@ -213,16 +213,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_12g_color
       color: "#e49331"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#c6cdd3"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunBreaching
-  name: box of breaching shells
-  description: A box filled with breaching shotgun shells. 16 Gauge.
+  name: 一盒破门弹
+  description: 一盒装满破门霰弹枪弹的盒子。16号口径。
   components:
   - type: Storage
     whitelist:
@@ -242,9 +242,9 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_12g_color
       color: "#595959"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#595959"
   - type: Tag
     tags:
@@ -256,8 +256,8 @@
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunBuckshot8g
-  name: box of buckshot shells
-  description: A box filled with buckshot spread shotgun shells. 8 Gauge.
+  name: 一盒鹿弹霰弹
+  description: 一盒装满鹿弹散布型霰弹枪弹。8号口径。
   suffix: 8 Gauge
   components:
   - type: Storage
@@ -278,16 +278,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_8g_color
       color: "#944444"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#944444"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunHeavyBuckshot
-  name: box of heavy buckshot shells
-  description: A box filled with heavy buckshot spread shotgun shells. 8 Gauge.
+  name: 一盒重型鹿弹霰弹
+  description: 一盒装满重型鹿弹扩散霰弹的弹药。8号口径。
   components:
   - type: Storage
     whitelist:
@@ -307,16 +307,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_8g_color
       color: "#681a1a"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#681a1a"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunHeavySlugs
-  name: box of heavy slugs shells
-  description: A box filled with heavy shotgun shells. A timeless classic.
+  name: 一盒重型独头弹
+  description: 一个装满重型独头弹的盒子。永恒的经典。
   components:
   - type: Storage
     whitelist:
@@ -336,16 +336,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_8g_color
       color: "#1e4c1e"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#1e4c1e"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunHeavyBeanbagSlugs
-  name: box of heavy beanbag slugs shells
-  description: A box filled with heavy beanbag shotgun shells used for non-lethal crowd control. 8 Gauge.
+  name: 一盒重型豆袋弹霰弹
+  description: 一个装满用于非致命人群控制的重型豆袋弹霰弹的盒子。8号口径。
   components:
   - type: Storage
     whitelist:
@@ -365,16 +365,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_8g_color
       color: "#162f41"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#162f41"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunHeavyFlechette
-  name: box of heavy flechette shells
-  description: A box filled with heavy flechette shotgun shells. 8 Gauge.
+  name: 一盒重型箭形弹
+  description: 一盒装满重型箭形弹的霰弹枪子弹。8号口径。
   components:
   - type: Storage
     whitelist:
@@ -394,16 +394,16 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_8g_color
       color: "#4b1c68"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#4b1c68"
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunHeavyDragonbreath
-  name: box of dragonbreath buckshot shells
-  description: A box filled with dragonbreath buckshot shotgun shells. 8 Gauge.
+  name: 一盒龙息鹿弹
+  description: 一盒装满龙息鹿弹的霰弹枪弹壳。8号口径。
   components:
   - type: Storage
     whitelist:
@@ -423,9 +423,9 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_8g_color
       color: "#ab4008"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#757575"
 
 # PVE, RCM
@@ -433,9 +433,9 @@
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunL49B
-  name: box of L49B shells
+  name: 一盒L49B弹药
   suffix: PVE, RCM
-  description: A box filled with breaching shells, compatible with the L49 assault shotgun. 12 Gauge.
+  description: 一盒装满破门弹的弹药，适用于L49突击霰弹枪。12号口径。
   components:
   - type: Storage
     whitelist:
@@ -455,9 +455,9 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_12g_color
       color: "#595959"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#595959"
   - type: Tag
     tags:

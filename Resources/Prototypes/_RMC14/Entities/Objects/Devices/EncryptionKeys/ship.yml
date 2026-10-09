@@ -3,8 +3,8 @@
   abstract: true
   parent: BaseItem
   id: CMEncryptionKey
-  name: standard encryption key
-  description: An encryption key for a radio headset.
+  name: 标准加密密钥
+  description: 无线电耳机的加密密钥。
   components:
   - type: EncryptionKey
   - type: Item
@@ -25,7 +25,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyCommon
-  name: public radio encryption key
+  name: 公共无线电加密密钥
   components:
   - type: EncryptionKey
   - type: Sprite
@@ -35,7 +35,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyColony
-  name: colony encryption key
+  name: 殖民地加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -48,7 +48,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyWEYU
-  name: we-yu encryption key
+  name: we-yu 加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -60,7 +60,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyWEYUColony
-  name: we-yu and colony encryption key
+  name: we-yu和殖民地加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -73,7 +73,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyICB
-  name: ICB encryption key
+  name: ICB加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -91,7 +91,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyCommand
-  name: command encryption key
+  name: 命令加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -104,7 +104,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: RMCEncryptionKeyHighCommand
-  name: high command encryption key
+  name: 高级指挥部加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -118,7 +118,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyJTAC
-  name: JTAC radio encryption key
+  name: JTAC无线电加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -132,7 +132,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyIntel
-  name: intel radio encryption key
+  name: 英特尔无线电加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -146,7 +146,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: RMCEncryptionKeySeniorCommand
-  name: marine senior command radio encryption key
+  name: 海军陆战队高级司令部无线电加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -171,7 +171,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: RMCEncryptionKeyMarineCommand
-  name: marine command radio encryption key
+  name: 海军指挥无线电加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -219,7 +219,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyEngineer
-  name: engineering encryption key
+  name: 工程加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -232,7 +232,7 @@
 - type: entity
   parent: CMEncryptionKeyEngineer
   id: CMEncryptionKeyCE
-  name: chief engineer's encryption key
+  name: 总工程师的加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -256,7 +256,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyMedical
-  name: medical encryption key
+  name: 医疗加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -269,7 +269,7 @@
 - type: entity
   parent: CMEncryptionKeyMedical
   id: CMEncryptionKeyCMO
-  name: chief medical officer's encryption key
+  name: 首席医疗官的加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -289,7 +289,7 @@
 - type: entity
   parent: CMEncryptionKeyMedical
   id: CMEncryptionKeyResearcher
-  name: researcher's encryption key
+  name: 研究员的加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -303,7 +303,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyMilitaryPolice
-  name: military police encryption key
+  name: 宪兵加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -316,7 +316,7 @@
 - type: entity
   parent: CMEncryptionKeyMilitaryPolice
   id: CMEncryptionKeyCMP
-  name: chief military police encryption key
+  name: 宪兵司令加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -339,7 +339,7 @@
 - type: entity
   parent: CMEncryptionKeyMilitaryPolice
   id: CMEncryptionKeyMPO
-  name: military police officer's encryption key
+  name: 宪兵的加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -361,7 +361,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyRequisition
-  name: requisition encryption key
+  name: 申请加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -373,7 +373,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: RMCEncryptionKeyCargotech
-  name: req tech encryption key
+  name: 请求技术加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -388,7 +388,7 @@
 - type: entity
   parent: CMEncryptionKeyRequisition
   id: RMCEncryptionKeyQuartermaster
-  name: requisition encryption key
+  name: 申请加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -411,7 +411,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: RMCEncryptionKeyLiaison
-  name: corporate liaison radio encryption key
+  name: 企业联络无线电加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -434,7 +434,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: RMCEncryptionKeyCorrespondent
-  name: correspondent radio encryption key
+  name: 通信方无线电加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -463,7 +463,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyPilot
-  name: pilot's encryption key
+  name: 飞行员的加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -480,7 +480,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyIntelOfficer
-  name: intel officer's encryption key
+  name: 情报官员的加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -504,7 +504,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyCrewman
-  name: vehicle crewman's encryption key
+  name: 车辆乘员的加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -521,7 +521,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyMasterSquad
-  name: master squad encryption key
+  name: 主小队加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -537,7 +537,7 @@
 - type: entity
   parent: CMEncryptionKey
   id: CMEncryptionKeyMasterShip
-  name: master ship encryption key
+  name: 主舰船加密密钥
   components:
   - type: EncryptionKey
     channels:

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: CMShardBase
   abstract: true
@@ -8,9 +8,9 @@
     - Slicing
   - type: Sprite
     layers:
-      - sprite: _RMC14/Objects/Materials/shards.rsi
-        state: large
-        map: [ "enum.DamageStateVisualLayers.Base" ]
+    - sprite: _RMC14/Objects/Materials/shards.rsi
+      state: large
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: Appearance
   - type: RandomSprite
     available:
@@ -36,12 +36,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: MeleeWeapon
     attackRate: 1
     damage:
@@ -60,38 +59,38 @@
 - type: entity
   parent: CMShardBase
   id: CMShardGlass
-  name: glass shard
-  description: A shard of broken glass. Could probably be used as ... a throwing weapon?
+  name: 玻璃碎片
+  description: 一块碎玻璃。也许可以当作……投掷武器使用？
   components:
   - type: ToolRefinable
     refineResult:
     - id: CMSheetGlass1
   - type: Tag
     tags:
-      - GlassShard
-      - Trash
+    - GlassShard
+    - Trash
 
 - type: entity
   parent: CMShardBase
   id: RMCShardIce
-  name: ice shard
-  description: A shard of ice. Could probably be used as ... a throwing weapon?
+  name: 冰碎片
+  description: 一块冰碎片。也许可以用作……投掷武器？
   components:
   - type: Tag
     tags:
-      - Trash
+    - Trash
 
 - type: entity
   parent: CMShardBase
   id: CMShardPhoron
-  name: phoron shard
-  description: A shard of broken phoron glass. Considerably tougher than normal glass shards. Apparently not tough enough to be a window.
+  name: 福龙Phoron碎片
+  description: 一块破碎的phoron玻璃碎片。比普通玻璃碎片坚固得多。显然还不够结实，当不了窗户。
   components:
   - type: Sprite
     layers:
-      - sprite: _RMC14/Objects/Materials/shards.rsi
-        state: phoron
-        map: [ "enum.DamageStateVisualLayers.Base" ]
+    - sprite: _RMC14/Objects/Materials/shards.rsi
+      state: phoron
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: Appearance
   - type: RandomSprite
     available:
@@ -106,5 +105,5 @@
     - id: CMSheetPhoron1
   - type: Tag
     tags:
-      - PlasmaGlassShard
-      - Trash
+    - PlasmaGlassShard
+    - Trash

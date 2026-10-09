@@ -1,8 +1,8 @@
 - type: entity
   id: CMDisposalUnit
   parent: DisposalUnitBase
-  name: disposal unit
-  description: A pneumatic waste disposal unit.
+  name: 废物处理装置
+  description: 一种气动废物处理装置。
   components:
   - type: XenoCrusherChargable
     instantDestroy: true
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 55
         mask:
@@ -24,14 +23,12 @@
         - BulletImpassable # Required for throwing items into it.
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior

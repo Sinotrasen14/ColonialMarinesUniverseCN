@@ -1,10 +1,10 @@
 - type: entity
   parent: BaseItem
   id: RMCLogisticsofficerGuideBook
-  name: logistics Officers symbol
-  description: The Logistics Officers sumbol
+  name: 后勤军官标志
+  description: 后勤军官标志
   suffix: (GuideBookEntity)
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Interface/cm_job_icons.rsi
@@ -13,10 +13,10 @@
 - type: entity
   parent: BaseItem
   id: RMCCargotechGuideBook
-  name: Requisitions Technicians symbol
-  description: The Cargo Technicians symbol
+  name: 军需技术员符号
+  description: 军需技术员符号
   suffix: (GuideBookEntity)
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Interface/cm_job_icons.rsi
@@ -26,7 +26,7 @@
   parent: RMCPaperRequisitionInvoice
   id: RMCGuidebookPaperRequisitionsWritten
   suffix: (GuideBookEntity)
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -39,13 +39,13 @@
   parent: RMCPaperRequisitionInvoice
   id: RMCGuidebookPaperRequisitionsStamped
   suffix: (GuideBookEntity)
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Paper
     stampState: paper_stamp-approve
     stampedBy:
-        - stampedColor: '#164600FF'
-          stampedName: stamp-component-stamped-name-cm-approve
+    - stampedColor: '#164600FF'
+      stampedName: stamp-component-stamped-name-cm-approve
   - type: Sprite
     layers:
     - state: paper_words
@@ -60,9 +60,9 @@
   parent: BaseItem
   id: RMCPitRasedGuideBook
   name: pitrased
-  description: All 5 drop pads
+  description: 全部5个掉落垫
   suffix: (GuideBookEntity)
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/RMCreqguide/reqguidepit.rsi
@@ -71,10 +71,10 @@
 - type: entity
   parent: BaseItem
   id: RMCPitLowerdGuideBook
-  name: pitlowerd
-  description: cargo pit lowerd
+  name: 货舱地坑已降低
+  description: 货舱地坑已降低
   suffix: (GuideBookEntity)
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/RMCreqguide/reqguidepit.rsi
@@ -83,10 +83,10 @@
 - type: entity
   parent: BaseItem
   id: RMCSupplyDropPadsGuideBook
-  name: supply drop pads
-  description: All 5 drop pads
+  name: 物资投放坪
+  description: 全部5个物资投放坪
   suffix: (GuideBookEntity)
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/RMCreqguide/padsjpg.rsi
@@ -95,10 +95,10 @@
 - type: entity
   parent: BaseItem
   id: RMCTheLineGuideBook
-  name: The Line
-  description: The Line
+  name: 线
+  description: 线
   suffix: (GuideBookEntity)
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/RMCreqguide/linejpg.rsi
@@ -107,10 +107,10 @@
 - type: entity
   parent: BaseItem
   id: RMCASRSinterfaceGuideBook
-  name: ASRS interface
-  description: The ASRS interface
+  name: ASRS 接口
+  description: ASRS接口
   suffix: (GuideBookEntity)
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/RMCreqguide/ASRSinterface.rsi

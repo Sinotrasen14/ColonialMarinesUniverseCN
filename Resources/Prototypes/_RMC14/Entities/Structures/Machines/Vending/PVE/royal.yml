@@ -1,117 +1,117 @@
 - type: entity
   parent: ColMarTechBase
   id: RMCRoyalAssaultEngineerVendor
-  name: We-Yu section engineering equipment rack
+  name: 维宇区工程装备架
   suffix: PVE, RCM
-  description: An automated rack hooked up to a colossal storage of assault engineer standard-issue equipment.
+  description: 一个自动化装备架，连接着庞大的突击工程师制式装备储备库。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: AccessReader
     access:
-    - [ "CMAccessCombatTechPrep" ]
+    - ["CMAccessCombatTechPrep"]
   - type: CMAutomatedVendor
     jobs:
     - CMRoyalMarinesAssaultEngineerPVE
     sections:
-    - name: Sapper Equipment (Mandatory)
+    - name: 工兵装备（必填）
       takeAll: CMStandard
       entries:
       - id: RMCVendorBundleRCMPVEAssaultEngi
       - id: RMCPVEArmorCaseRoyalPointman
       - id: CMHandsBlackInsulated
       - id: RMCWeaponRifleL90A2Breacher
-    - name: Heavy-Duty Breaching Equipment # TODO RMC royal marines breaching hammer, XM51 is placeholder
-      choices: { CMPrimary: 1 }
+    - name: 重型破门装备                         # TODO RMC royal marines breaching hammer, XM51 is placeholder
+      choices: {CMPrimary: 1}
       entries:
       # - id: RMCBreachingHammerD2
       #   name: Breaching Hammer
       - id: RMCXM51Case
-        name: Breaching Shotgun
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+        name: 破门霰弹枪
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: RMCBackpackRCMTechnician
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltRCM
       - id: RMCBeltHolsterPistolRCM
       - id: RMCBeltUtilityGeneralRCMPVE
-    - name: Uniform Webbing
-      choices: { CMAccessories: 1 }
+    - name: 制服织带
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBlack # TODO RMC14 small pouch (4 small slots)
-        name: Webbing
+        name: 织带
       - id: RMCWebbingHolsterBlack # TODO RMC14 waist holster - mechanically the same, different sprite
-        name: Shoulder Holster
+        name: 肩挂枪套
       - id: RMCWebbingDropPouchBlack
-        name: Drop Pouch
+        name: 回收袋
 
 - type: entity
   parent: ColMarTechBase
   id: RMCRoyalMedicalAssistantVendor
-  name: We-Yu section medical equipment rack
+  name: We-Yu区医疗设备架
   suffix: PVE, RCM
-  description: An automated rack hooked up to a colossal storage of medical assistant standard-issue equipment.
+  description: 一个自动化设备架，连接着一个存放医疗助理标准配发设备的庞大储备库。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/medical_gear.rsi
   - type: AccessReader
     access:
-    - [ "CMAccessMedPrep" ]
+    - ["CMAccessMedPrep"]
   - type: CMAutomatedVendor
     jobs:
     - CMRoyalMarinesMedicPVE
     sections:
-    - name: Medical Set (Mandatory)
+    - name: 医疗套装（必选）
       takeAll: CMStandard
       entries:
       - id: RMCVendorBundleRCMPVEMedic
       - id: RMCPVEArmorCaseRoyalLight
       - id: CMHandsLatex
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: RMCBackpackRCMMedic
-    - name: Belt
-      choices: { CMBelt: 1 }
-      entries: 
+    - name: 腰带
+      choices: {CMBelt: 1}
+      entries:
       - id: RMCMedicalL75RCM
       - id: RMCBeltUtilityGeneralRCMPVE
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+    - name: 袋子
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchMedkit
       - id: RMCPouchAutoinjector
       - id: RMCPouchReagentCanisterMeraBic
-        name: Pressurized Reagent Canister Pouch\n(Meralyne-Bicaridine)
+        name: "加压试剂罐袋\n（梅拉林-比卡立定）"
       - id: RMCPouchReagentCanisterKeloDerm
-        name: Pressurized Reagent Canister Pouch\n(Kelotane-Dermaline)
+        name: "加压试剂罐袋\n（凯洛坦-德马林）"
       - id: RMCPouchReagentCanisterTricordrazine
-        name: Pressurized Reagent Canister Pouch\n(Tricordrazine)
+        name: 加压试剂罐袋\n（三可拉嗪）
       - id: RMCPouchVialFill
-        name: vial pouch (Full)
-    - name: Uniform Webbing
-      choices: { CMAccessories: 1 }
+        name: 药瓶袋（满）
+    - name: 制服织带
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBlack # TODO RMC14 small pouch (4 small slots)
-        name: Webbing
+        name: 织带
       - id: RMCWebbingHolsterBlack # TODO RMC14 waist holster - mechanically the same, different sprite
-        name: Shoulder Holster
+        name: 肩部枪套
       - id: RMCWebbingDropPouchBlack
-        name: Drop Pouch
+        name: 回收袋
 
 - type: entity
   parent: ColMarTechBase
   id: RMCRoyalBombSpecVendor
-  name: We-Yu Section Fire Support Gear Rack # Labeled "OFS" in parity.
-  description: An automated rack hooked up to a colossal storage of bombardment specialist standard-issue equipment.
+  name: 卫宇科火力支援装备架                           # Labeled "OFS" in parity.
+  description: 一个与庞大的火力支援专家标准配发装备储备相连的自动化装备架。
   suffix: PVE, RCM
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessSpecPrep" ]
+    - ["CMAccessSpecPrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
@@ -119,45 +119,45 @@
     - CMRoyalMarinesBombSpecPVE
     pointsType: Specialist
     sections:
-    - name: Fire Support Set (Mandatory)
+    - name: 火力支援组（必填）
       takeOne: CMPrimary
       entries:
       - id: RMCVendorBundleRCMPVEMGL
       - id: RMCMortarKit # TODO RMC14 L53A1 light mortar kit
-    - name: Helmet (Mandatory)
-      takeOne: RMCAccessories 
+    - name: 头盔（必填）
+      takeOne: RMCAccessories
       entries:
       - id: RMCHeadRoyalHelmetBallistic
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: RMCBackpackRCMSmall
       - id: RMCBackpackRCMMedium
       - id: RMCBackpackRCMLarge
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltRCM
       - id: RMCBeltHolsterPistolRCM
       - id: RMCBeltUtilityGeneralRCMPVE
-    - name: Armor Webbing
-      choices: { RMCArmorWebbing: 1 } 
+    - name: 护甲织带
+      choices: {RMCArmorWebbing: 1}
       entries:
       - id: RMCArmorWebbingGrenade
       - id: RMCArmorWebbingDrum
       - id: RMCArmorWebbingPouch
       - id: RMCArmorWebbingMag
       - id: RMCArmorWebbingShell
-    - name: Uniform Webbing
-      choices: { CMAccessories: 1 }
+    - name: 制服织带
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBlack # TODO RMC14 small pouch (4 small slots)
-        name: Webbing
+        name: 织带
       - id: RMCWebbingHolsterBlack # TODO RMC14 waist holster - mechanically the same, different sprite
-        name: Shoulder Holster
+        name: 肩部枪套
       - id: RMCWebbingDropPouchBlack
-        name: Drop Pouch
-    - name: Mortar Shells
+        name: 回收袋
+    - name: 迫击炮弹
       entries:
       - id: RMCMortarShellHE
         points: 15
@@ -171,7 +171,7 @@
       #  points: 10
       #- id: RMCMortarShellWhitePhosphorus
       #  points: 25
-    - name: Grenade Packets # TODO RMC14 20mm grenades (other than HE and incendiary)
+    - name: 手榴弹包            # TODO RMC14 20mm grenades (other than HE and incendiary)
       entries:
       - id: RMCPacketGrenade20mmHEFilled
         points: 20
@@ -185,13 +185,13 @@
 - type: entity
   parent: ColMarTechBase
   id: RMCRoyalScoutSniperVendor
-  name: We-Yu Section Scout-Sniper Gear Rack 
-  description: An automated rack hooked up to a colossal storage of scout-sniper standard-issue equipment.
+  name: 未雨组侦察狙击装备架
+  description: 一个连接到庞大侦察狙击手标准配发装备储备库的自动化装备架。
   suffix: PVE, RCM
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessSpecPrep" ]
+    - ["CMAccessSpecPrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
@@ -199,48 +199,48 @@
     - CMRoyalMarinesScoutSniperPVE
     pointsType: Specialist
     sections:
-    - name: Precision Weapon Set (Mandatory)
+    - name: 精准武器套装（必选）
       takeOne: CMPrimary
       entries:
       - id: RMCScoutSniperSniperEquipmentCase
-        name: Sniper Equipment Kit
+        name: 狙击手装备套件
       - id: RMCScoutSniperMarksmanEquipmentCase
-        name: Marksman Equipment Kit
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+        name: 射手装备套件
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: RMCBackpackRCMSmall
       - id: RMCBackpackRCMMedium
       - id: RMCBackpackRCMLarge
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltRCM
       - id: RMCBeltHolsterPistolRCM
       - id: RMCBeltUtilityGeneralRCMPVE
-    - name: Armor Webbing
-      choices: { RMCArmorWebbing: 1 } 
+    - name: 护甲织带
+      choices: {RMCArmorWebbing: 1}
       entries:
       - id: RMCArmorWebbingDrum
       - id: RMCArmorWebbingPouch
       - id: RMCArmorWebbingMag
       - id: RMCArmorWebbingShell
-    - name: Uniform Webbing
-      choices: { CMAccessories: 1 }
+    - name: 制服织带
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBlack # TODO RMC14 small pouch (4 small slots)
-        name: Webbing
+        name: 织带
       - id: RMCWebbingHolsterBlack # TODO RMC14 waist holster - mechanically the same, different sprite
-        name: Shoulder Holster
+        name: 肩式枪套
       - id: RMCWebbingDropPouchBlack
-        name: Drop Pouch
+        name: 收纳袋
 
 
 - type: entity
   parent: ColMarTechBase
   id: RMCColMarTechSurplusRCMPVE
-  name: We-Yu Section Surplus Uniform Vendor
-  description: An automated rack hooked up to a small storage of Royal Crown Marines uniforms.
+  name: 威宇区剩余军服供应商
+  description: 一个自动挂架，连接着一个小型皇家王冠海军陆战队制服储存库。
   suffix: PVE, RCM
   components:
   - type: Sprite
@@ -250,26 +250,26 @@
     - "CMAccessMarinePrep"
     hackable: true
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       entries:
       - id: RMCBootsRoyal
-        name: Combat Boots
+        name: 作战靴
         amount: 15
       - id: RMCJumpsuitMarineRoyalPVE
         amount: 15
       - id: RMCHandsVeteranRoyalMarine
-        name: Combat Gloves
+        name: 战斗手套
         amount: 15
       - id: RMCHeadRoyalHelmet
-        name: L5A2 Ballistic Helmet
+        name: L5A2防弹头盔
         amount: 15
       - id: RMCHeadRoyalBeanie
-        name: Tactical Beanie
+        name: 战术毛线帽
         amount: 15
       - id: RMCHeadsetRoyalMarinePVE
-        name: Radio Headset
+        name: 无线电耳机
         amount: 15
-    - name: Webbings
+    - name: 韦宾斯
       entries:
       - id: RMCArmorWebbingPouch
         amount: 5
@@ -283,7 +283,7 @@
         amount: 5
       - id: RMCWebbingDropPouchBlack
         amount: 5
-    - name: Armor
+    - name: 护甲
       entries:
       - id: RMCArmorRoyalPVE
         amount: 15
@@ -299,15 +299,15 @@
         amount: 15
       - id: RMCPVEArmorKneeGuardKestrel
         amount: 15
-    - name: Backpacks
-      entries: 
+    - name: 背包
+      entries:
       - id: RMCBackpackRCMSmall
         amount: 15
       - id: RMCBackpackRCMMedium
         amount: 15
       - id: RMCBackpackRCMLarge
         amount: 15
-    - name: Belts
+    - name: 腰带
       entries: # TODO RMC14 TWE belts
       - id: RMCBeltRCM
         amount: 15
@@ -315,12 +315,12 @@
         amount: 15
       - id: RMCBeltUtilityGeneralRCMPVE
         amount: 5
-    - name: Pouches
+    - name: 小袋
       entries:
       - id: RMCPouchFirstResponder
         amount: 10
       - id: RMCPouchFlareL96Filled
-        name: flare pouch (Full)
+        name: 信号弹袋（满）
         amount: 10
       - id: RMCPouchMagazineLarge
         amount: 10
@@ -334,20 +334,20 @@
         amount: 10
       - id: RMCPouchSling
         amount: 10
-    - name: Mask
+    - name: 面具
       entries:
       - id: CMMaskGas # TODO RMC14 TWE L7 gas mask
         amount: 15
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: RMCGogglesBallisticBlack
-        name: Ballistic Goggles
+        name: 防弹护目镜
         amount: 10
       - id: RMCGogglesPrescriptionBallistic
-        name: Prescription Ballistic Goggles # These goggles both mention UNMC in their descriptions but whatever
+        name: 处方防弹护目镜                        # These goggles both mention UNMC in their descriptions but whatever
         amount: 10
       - id: RMCHelmetGarbGunOil
-        name: firearm lubricant
+        name: 枪械润滑剂
         amount: 15
       - id: RMCPatchTSEMarines
         amount: 15
@@ -362,8 +362,8 @@
   parent: ColMarTechBase
   id: RMCColMarTechUtilitiesRCMPVE
   suffix: PVE, RCM
-  name: We-Yu Automated Utilities Section Vendor
-  description: An automated supply rack hooked up to a small storage of various utilities, tools, and medical supplies. Can be accessed by any Royal marine.
+  name: 威宇自动公用设施区售货机
+  description: 一台自动补给架，连接着一个小型仓储，里面存放着各类公用设施、工具和医疗用品。任何皇家陆战队员都可以取用。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/prep.rsi
@@ -372,15 +372,15 @@
     - "CMAccessMarinePrep"
     hackable: true
     sections:
-    - name: Food
+    - name: 食物
       entries:
       - id: RMCMRETSE
         name: MRE
         amount: 5
       - id: RMCBoxMRE
-        name: MRE Box
+        name: MRE盒
         amount: 1
-    - name: Medical
+    - name: 医疗
       entries:
       - id: CMGauze10
         amount: 10
@@ -388,14 +388,14 @@
         amount: 10
       - id: CMTraumaKit10
         amount: 15
-        name: Trauma Treatment Pack
+        name: 创伤治疗包
       - id: CMBurnKit10
         amount: 15
-        name: Burn Treatment Pack
+        name: 烧伤治疗包
       #- id: RMCSplints10 # TODO RMC14 implement newmed
       #  amount: 15
       - id: CMEmergencyAutoInjector
-        name: Emergency Autoinjector
+        name: 急救自动注射器
         amount: 15
       - id: CMBicaridineAutoInjector
         amount: 15
@@ -405,33 +405,33 @@
         amount: 15
       #- id: RMCTramadolAutoInjector # TODO RMC14 implement newmed
       #  amount: 15
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: RMCExplosivePlastic
         amount: 2
       - id: RMCExplosiveBreachingCharge
         amount: 2
-    - name: Flare and Light
+    - name: 闪光与光
       entries:
       - id: RMCFlashlight
         amount: 10
       - id: RMCPackFlareL96
         amount: 10
-    - name: Sidearms
+    - name: 副武器
       entries:
       - id: RMCWeaponPistolL14
         amount: 2
       - id: RMCMK80
         amount: 2
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: CMFireExtinguisherPortable
-        name: Fire Extinguisher (Portable)
+        name: 便携式灭火器
         amount: 2
       - id: CMRollerBedSpawnFolded
         amount: 2
       - id: RMCScabbardMacheteFilled
-        name: Machete Scabbard (Full)
+        name: 砍刀刀鞘（满）
         amount: 5
       - id: CMEntrenchingTool
         amount: 2

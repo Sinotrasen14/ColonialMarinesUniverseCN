@@ -1,7 +1,7 @@
 - type: entity
   parent: Bookshelf
   id: RMCBookcase
-  name: bookcase
+  name: 书柜
   components:
   - type: CMUReconFurniture
     material: Bookcase
@@ -9,8 +9,8 @@
     sprite: _RMC14/Structures/Furniture/bookshelf.rsi
     snapCardinals: true
     layers:
-      - state: book-0
-      - map: ["enum.StorageFillLayers.Fill"]
+    - state: book-0
+    - map: ["enum.StorageFillLayers.Fill"]
   - type: Appearance
   - type: StorageFillVisualizer
     maxFillLevels: 5
@@ -20,8 +20,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 30
       behaviors:
       - !type:PlaySoundBehavior
@@ -50,7 +49,7 @@
 - type: entity
   parent: RMCBookcase
   id: RMCBookcaseMedical
-  name: medical manuals bookcase
+  name: 医学手册书柜
 #  components:
 #  - type: StorageFill
 #    contents:
@@ -59,7 +58,7 @@
 - type: entity
   parent: RMCBookcase
   id: RMCBookcaseEngineering
-  name: engineering manuals bookcase
+  name: 工程手册书柜
 #  components:
 #  - type: StorageFill
 #    contents:

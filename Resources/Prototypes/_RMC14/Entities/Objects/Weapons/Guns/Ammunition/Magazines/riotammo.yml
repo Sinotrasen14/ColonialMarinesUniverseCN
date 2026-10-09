@@ -3,8 +3,8 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: RMCMagazineRifleM54CRubber
-  name: "M54C rubber magazine (10x24mm)"
-  description: "A magazine of less-lethal rubber 10x24mm rounds for use in the M54C battle rifle."
+  name: "M54C橡胶弹匣（10x24mm）"
+  description: "用于M54C战斗步枪的10x24mm低致命性橡胶弹弹匣。"
   components:
   - type: Tag
     tags:
@@ -12,7 +12,7 @@
     - CMMagazineRifleM54C
     - RMCMagazineRifleM54CRubber
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle10x24mmRubber
@@ -34,8 +34,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleM4SPRRubber
-  name: "M4SPR rubber magazine (10x24mm)"
-  description: "A magazine of less-lethal rubber 10x24mm rounds for use in the M4SPR battle rifle."
+  name: "M4SPR橡胶弹匣（10x24mm）"
+  description: "用于M4SPR战斗步枪的低致命性橡胶10×24毫米弹药弹匣。"
   components:
   - type: Tag
     tags:
@@ -43,7 +43,7 @@
     - CMMagazineRifleM4SPR
     - RMCMagazineRifleM4SPRRubber
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle10x24mmRubber
@@ -55,8 +55,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifle10x24mmRubber
-  name: rubber cartridge (10x24mm)
-  description: A 10x24mm cartridge. Fits in 10x24mm magazines, this one is designed to be less lethal.
+  name: 橡胶弹（10×24毫米）
+  description: 一种10×24毫米弹药。可装入10×24毫米弹匣，这种弹药被设计为低致命性。
   components:
   - type: Tag
     tags:
@@ -69,7 +69,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: BulletRifle10x24mmRubber
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -90,7 +90,7 @@
 - type: entity
   parent: CMMagazineSMGM63
   id: RMCMagazineSMGM63Rubber
-  name: "M63 rubber magazine (10x20mm)"
+  name: "M63橡胶弹匣（10x20mm）"
   components:
   - type: BallisticAmmoProvider
     whitelist:
@@ -114,7 +114,7 @@
 - type: entity
   parent: CMCartridgeSMGBase
   id: RMCCartridge10x20mmRubber
-  name: rubber cartridge (10x20mm)
+  name: 橡胶筒（10×20mm）
   components:
   - type: Tag
     tags:
@@ -126,7 +126,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: Bullet10x20mmRubber
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -147,7 +147,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolM1984Rubber
-  name: M4A3 rubber magazine (9mm)
+  name: M4A3橡胶弹匣（9毫米）
   components:
   - type: Tag
     tags:
@@ -155,7 +155,7 @@
     - RMCMagazinePistolM1984Rubber
     - CMMagazinePistolM1984
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgePistol9mmRubber
@@ -172,7 +172,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolM77Rubber
-  name: M77 rubber magazine (9mm)
+  name: M77橡胶弹匣（9毫米）
   components:
   - type: Tag
     tags:
@@ -180,7 +180,7 @@
     - RMCMagazinePistolM77Rubber
     - CMMagazinePistolM77AP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgePistol9mmRubber
@@ -198,7 +198,7 @@
 
 - type: entity
   id: RMCCartridgePistol9mmRubber
-  name: rubber cartridge (9mm)
+  name: 橡胶弹（9毫米）
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -211,8 +211,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletPistol9mmRubber
-  name: rubber bullet (9mm)
-  categories: [ HideSpawnMenu ]
+  name: 橡胶子弹（9毫米）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

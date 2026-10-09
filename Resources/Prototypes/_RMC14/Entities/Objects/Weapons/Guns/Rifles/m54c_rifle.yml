@@ -1,16 +1,16 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: M41A MK2 pulse rifle
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: M41A MK2脉冲步枪
   id: RMCWeaponRifleM54C
-  description: The standard issue rifle of the UA. Commonly carried by most combat personnel. Uses 10x24mm caseless ammunition.
+  description: UA的标准配发步枪。大多数战斗人员通常会携带。使用10×24毫米无壳弹药。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/USCM/m41mk2.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: CMU14/Weapons/Guns/USCM/m41mk2.rsi
   - type: ContainerContainer
@@ -46,7 +46,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -107,7 +107,7 @@
       rmc-aslot-stock: -0.78, -0.03
       rmc-aslot-underbarrel: 0.349, -0.37
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: Tag
     tags:
     - RMCWeaponRifleM54CMK2
@@ -120,7 +120,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineRifleM54C
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -178,7 +178,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineRifleM54C
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -237,7 +237,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineRifleM54C
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -253,20 +253,20 @@
 - type: entity
   parent: RMCWeaponRifleM54CSemiStripped
   id: RMCWeaponRifleM54CWhiteNoLock
-  description: A M41A Mk2 with a Weyland-Yutani logo imprinted on the reciever. Used primarily by Weyland-Yutani's corporate security forces, and comes equipped with a drab corproate white paint job.
+  description: 一把机匣上印有维兰德-汤谷标志的M41A Mk2。主要由维兰德-汤谷的企业安保部队使用，并配备了单调的企业白色涂装。
   suffix: Corporate, No UGL, No ID lock
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m54c/snow.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m54c/snow.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: AttachableHolder
     slots:
       rmc-aslot-barrel:
@@ -309,13 +309,13 @@
 - type: entity
   parent: RMCWeaponRifleM54CWhite
   id: RMCWeaponRifleM54CWhiteCommando
-  description: A Weyland-Yutani creation, this M54C MK2 comes equipped in corporate white. Uses 10x24mm caseless ammunition.
+  description: 维兰德-汤谷的造物，这把M54C MK2配备了企业白色涂装。使用10×24毫米无壳弹药。
   suffix: Commando
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineRifleM54CAP
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -378,14 +378,14 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: CMMagazineRifleM54C
-  name: "M41A MK2 magazine (10x24mm)"
+  name: "M41A MK2 弹匣（10x24mm）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - CMMagazineRifleM54C
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mm
@@ -405,7 +405,7 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: CMMagazineRifleM54CAP
-  name: "M41A MK2 AP magazine (10x24mm)"
+  name: "M41A MK2 穿甲弹匣（10×24毫米）"
   suffix: AP
   components:
   - type: Tag
@@ -434,7 +434,7 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: RMCMagazineRifleM54CIncendiary
-  name: "M41A MK2 Incendiary magazine (10x24mm)"
+  name: "M41A MK2 燃烧弹弹匣（10x24毫米）"
   suffix: Incendiary
   components:
   - type: Tag
@@ -461,7 +461,7 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: RMCMagazineRifleM54CHEAP
-  name: "M41A MK2 HEAP magazine (10x24mm)"
+  name: "M41A MK2 高爆穿甲弹匣（10×24毫米）"
   suffix: HEAP
   components:
   - type: Tag
@@ -483,7 +483,7 @@
     - state: ammo_band
       color: "#9C9A19"
   - type: RefillableByBulletBox
-    bulletType: null
+    bulletType:
 
 - type: entity
   parent: RMCMagazineRifleM54CHEAP
@@ -491,12 +491,12 @@
   suffix: HEAP, Empty
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:
 
 - type: entity
   parent: CMMagazineRifleM54C
   id: RMCMagazineRifleM54CWP
-  name: "M41A MK2 WP magazine (10x24mm)"
+  name: "M41A MK2 白磷弹匣（10×24毫米）"
   suffix: WP
   components:
   - type: Tag
@@ -523,14 +523,14 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: CMMagazineRifleM54CExt
-  name: "M41A MK2 extended magazine (10x24mm)"
+  name: "M41A MK2 加长弹匣（10×24毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - CMMagazineRifleM54CExt
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mm
@@ -552,8 +552,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: CMCartridgeRifle10x24mm
-  name: cartridge (10x24mm)
-  description: A 10x24mm cartridge. Fits in 10x24mm magazines.
+  name: 弹药（10×24毫米）
+  description: 10×24毫米弹药。可装入10×24毫米弹匣。
   components:
   - type: Tag
     tags:
@@ -566,8 +566,8 @@
 - type: entity
   parent: CMCartridgeRifle10x24mm
   id: CMCartridgeRifle10x24mmAP
-  name: AP cartridge (10x24mm)
-  description: An armor piercing 10x24mm cartridge. Fits in 10x24mm AP magazines.
+  name: 穿甲弹（10x24毫米）
+  description: 一种10x24毫米穿甲弹。可装入10x24毫米穿甲弹弹匣。
   components:
   - type: Tag
     tags:
@@ -579,8 +579,8 @@
 - type: entity
   parent: CMCartridgeRifle10x24mm
   id: CMCartridgeRifle10x24mmTracer
-  name: tracer cartridge (10x24mm)
-  description: An tracer 10x24mm cartridge. Fits in 10x24mm tracer magazines.
+  name: 曳光弹（10x24mm）
+  description: 一枚10x24毫米曳光弹。可装入10x24毫米曳光弹弹匣。
   components:
   - type: Tag
     tags:
@@ -592,8 +592,8 @@
 - type: entity
   parent: CMCartridgeRifle10x24mm
   id: RMCCartridgeRifle10x24mmIncendiary
-  name: Incendiary cartridge (10x24mm)
-  description: An incendiary 10x24mm cartridge. Fits in 10x24mm Incendiary magazines.
+  name: 燃烧弹（10×24毫米）
+  description: 一枚10×24毫米燃烧弹。可装入10×24毫米燃烧弹弹匣。
   components:
   - type: Tag
     tags:
@@ -605,8 +605,8 @@
 - type: entity
   parent: CMCartridgeRifle10x24mm
   id: RMCCartridgeRifle10x24mmHEAP
-  name: HEAP cartridge (10x24mm)
-  description: An armor piercing 10x24mm cartridge. Fits in 10x24mm HEAP magazines.
+  name: 高爆穿甲弹（10×24毫米）
+  description: 一种10×24毫米穿甲弹。可装入10×24毫米高爆穿甲弹弹匣。
   components:
   - type: Tag
     tags:
@@ -618,8 +618,8 @@
 - type: entity
   parent: CMCartridgeRifle10x24mm
   id: RMCCartridgeRifle10x24mmWP
-  name: WP cartridge (10x24mm)
-  description: An armor piercing wall-penetrating 10x24mm cartridge. Fits in 10x24mm WP magazines.
+  name: WP弹药（10×24毫米）
+  description: 一种可穿甲并穿透墙壁的10×24毫米弹药。可装入10×24毫米WP弹匣。
   components:
   - type: Tag
     tags:
@@ -631,7 +631,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: BulletRifle10x24mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -660,7 +660,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: BulletRifle10x24mmAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -672,7 +672,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: RMCBulletRifle10x24mmWP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     deleteOnCollide: false
@@ -688,7 +688,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: RMCBulletRifle10x24mmIncendiary
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -701,7 +701,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: RMCBulletRifle10x24mmHEAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -720,7 +720,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: BulletRifle10x24mmTracer
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: DamageImpactProfile
     projectile:

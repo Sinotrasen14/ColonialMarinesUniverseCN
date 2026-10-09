@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: VehiclePizzaVanRoofBase
-  name: pizza van interior roof
-  description: A removable roof section for the pizza van interior.
+  name: 披萨车内部车顶
+  description: 披萨车内部车顶的可拆卸部分。
   placement:
     mode: SnapgridCenter
   components:
@@ -16,7 +16,7 @@
     drawdepth: Overdoors
     layers:
     - state: roof_1
-      map: [ "roof" ]
+      map: ["roof"]
   - type: InteractionTransparency
   - type: RMCSpriteFade
     targetAlpha: 0.35
@@ -33,7 +33,7 @@
   - type: Sprite
     layers:
     - state: roof_1
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   parent: VehiclePizzaVanRoofBase
@@ -42,7 +42,7 @@
   - type: Sprite
     layers:
     - state: roof_2
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   parent: VehiclePizzaVanRoofBase
@@ -51,7 +51,7 @@
   - type: Sprite
     layers:
     - state: roof_3
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   parent: VehiclePizzaVanRoofBase
@@ -60,7 +60,7 @@
   - type: Sprite
     layers:
     - state: roof_4
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   parent: VehiclePizzaVanRoofBase
@@ -69,7 +69,7 @@
   - type: Sprite
     layers:
     - state: roof_5
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   parent: VehiclePizzaVanRoofBase
@@ -80,7 +80,7 @@
     drawdepth: Overdoors
     layers:
     - state: front_roof_1
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   parent: VehiclePizzaVanRoofBase
@@ -91,13 +91,13 @@
     drawdepth: Overdoors
     layers:
     - state: front_roof_2
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   abstract: true
   id: VehiclePizzaVanInteriorBase
-  name: pizza van interior piece
-  description: A decorative interior piece for the pizza van.
+  name: 披萨车内部装饰件
+  description: 披萨车的内部装饰件。
   placement:
     mode: SnapgridCenter
   components:
@@ -120,8 +120,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -265,8 +264,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -309,8 +307,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -381,8 +378,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true

@@ -1,8 +1,8 @@
 - type: entity
   parent: WeaponRifleM4SPR
-  name: M4RA custom battle rifle
+  name: M4RA定制战斗步枪
   id: WeaponRifleM4SPRCustom
-  description: An improvement over the already great M4RA. Able to take A19 rounds, as well as having better control and accuracy at the cost of being harder to use. Can take traditional M4RA mags, at lower damage.
+  description: 对已经非常出色的 M4RA 的改进。能够使用 A19 弹药，同时拥有更好的操控性和精准度，代价是更难使用。可以使用传统 M4RA 弹匣，但伤害更低。
   components:
   - type: GuideHelp
     guides:
@@ -11,13 +11,13 @@
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/desert.rsi
     layers:
     - state: bolt-open
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
       state: d_m4spr_custom_barrel
       offset: 0.65, 0
-      map: [ "barrel" ]
+      map: ["barrel"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: RMCSelectiveFire
     baseFireModes:
     - SemiAuto
@@ -94,7 +94,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
         priority: 2
@@ -125,15 +125,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleM4SPRA19
-  name: "A19 HV magazine (10x24mm)"
-  description: "A magazine of A19 high velocity rounds for use in the M4RA custom battle rifle. The M4RA custom battle rifle is the only gun that can chamber these rounds."
+  name: "A19高速弹匣（10×24毫米）"
+  description: "用于 M4RA 定制战斗步枪的 A19 高速弹药弹匣。M4RA 定制战斗步枪是唯一能够装填这种弹药的枪械。"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleM4SPRA19
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifleM4SPRA19
@@ -150,8 +150,8 @@
 - type: entity
   parent: RMCMagazineRifleM4SPRA19
   id: RMCMagazineRifleM4SPRA19Impact
-  name: "A19 HV high impact magazine (10x24mm)"
-  description: "A magazine of A19 HV high impact rounds for use in the M4RA custom battle rifle. The M4RA custom battle rifle is the only gun that can chamber these rounds."
+  name: "A19 HV 高冲击弹匣（10x24mm）"
+  description: "一个装有A19 HV高冲击弹药的弹匣，用于M4RA定制战斗步枪。M4RA定制战斗步枪是唯一能够装填这些弹药的枪械。"
   components:
   - type: Tag
     tags:
@@ -175,8 +175,8 @@
 - type: entity
   parent: RMCMagazineRifleM4SPRA19
   id: RMCMagazineRifleM4SPRA19Incendiary
-  name: "A19 HV incendiary magazine (10x24mm)"
-  description: "A magazine of A19 HV incendiary rounds for use in the M4RA custom battle rifle. The M4RA custom battle rifle is the only gun that can chamber these rounds."
+  name: "A19 HV燃烧弹弹匣（10x24毫米）"
+  description: "一个装有A19 HV燃烧弹的弹匣，供M4RA定制战斗步枪使用。M4RA定制战斗步枪是唯一能够装填这种弹药的枪械。"
   components:
   - type: Tag
     tags:
@@ -200,8 +200,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleM4SPRA19
-  name: cartridge (A19 high-velocity)
-  description: A high-velocity A19 cartridge. Fits in M4RA custom magazines.
+  name: 弹药（A19 高速）
+  description: 一种高速A19弹药。可装入M4RA定制弹匣。
   components:
   - type: Tag
     tags:
@@ -214,8 +214,8 @@
 - type: entity
   parent: RMCCartridgeRifleM4SPRA19
   id: RMCCartridgeRifleM4SPRA19Impact
-  name: cartridge (A19 high-velocity high impact)
-  description: A high-velocity high impact A19 cartridge. Fits in M4RA custom magazines.
+  name: 弹药（A19 高速高冲击）
+  description: A19 高速高冲击弹药。可装入 M4RA 定制弹匣。
   components:
   - type: Tag
     tags:
@@ -227,8 +227,8 @@
 - type: entity
   parent: RMCCartridgeRifleM4SPRA19
   id: RMCCartridgeRifleM4SPRA19Incendiary
-  name: cartridge (A19 high-velocity incendiary)
-  description: A high-velocity incendiary A19 cartridge. Fits in M4RA custom magazines.
+  name: 弹药（A19高速燃烧弹）
+  description: A19高速燃烧弹。可装入M4RA定制弹匣。
   components:
   - type: Tag
     tags:
@@ -240,7 +240,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: BulletRifleM4SPRA19
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: DamageImpactProfile
     projectile:
@@ -270,7 +270,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: BulletRifleM4SPRA19Impact
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: DamageImpactProfile
     projectile:
@@ -309,7 +309,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: BulletRifleM4SPRA19Incendiary
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: DamageImpactProfile
     projectile:

@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCSurveillanceCameraAlmayer
-  name: ship-grade camera
-  description: It's used to monitor rooms.
+  name: 船用级摄像头
+  description: 它用于监控房间。
   placement:
     mode: SnapgridCenter
     snap:
@@ -28,7 +28,7 @@
     drawdepth: WallMountedItems
     sprite: _RMC14/Structures/Wallmounts/camera.rsi
     layers:
-    - map: [ "enum.SurveillanceCameraVisualsKey.Layer" ]
+    - map: ["enum.SurveillanceCameraVisualsKey.Layer"]
       state: camera
       cycle: true
   - type: Appearance
@@ -39,18 +39,16 @@
       InUse: camera1
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -84,8 +82,8 @@
 - type: entity
   parent: CMBaseStructure
   id: RMCMonitorCameraAlmayer
-  name: ship security cameras
-  description: Used to access the various cameras on the station.
+  name: 船载安全摄像头
+  description: 用于访问空间站上的各个摄像头。
   suffix: Almayer
   components:
   - type: Transform
@@ -114,7 +112,7 @@
 - type: entity
   parent: RMCSurveillanceCameraAlmayer
   id: RMCMonitorCameraAlamo
-  description: It's used to monitor the dropship.
+  description: 它用于监控空投船。
   suffix: "Alamo"
   components:
   - type: ApcPowerReceiver
@@ -130,7 +128,7 @@
 - type: entity
   parent: RMCSurveillanceCameraAlmayer
   id: RMCMonitorCameraNormandy
-  description: It's used to monitor the dropship.
+  description: 它用于监控空投。
   suffix: "Normandy"
   components:
   - type: ApcPowerReceiver
@@ -146,13 +144,13 @@
 - type: entity
   parent: MarkerBase
   id: RMCMonitorCameraLandingZone
-  name: landing zone camera
+  name: 着陆区摄像头
   suffix: "LZ Detector"
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Wallmounts/camera.rsi
     layers:
-    - map: [ "enum.SurveillanceCameraVisualsKey.Layer" ]
+    - map: ["enum.SurveillanceCameraVisualsKey.Layer"]
       state: camera
     state: camera
   - type: RMCCamera

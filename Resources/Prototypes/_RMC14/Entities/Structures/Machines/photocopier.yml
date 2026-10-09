@@ -2,8 +2,8 @@
   parent: BaseMachinePowered
   abstract: true
   id: RMCBasePhotocopier
-  name: Photocopier
-  description: A photocopier used for copying... you know, photos! Also useful for copying documents on paper. This specific model has been manufactured by AEGIS Armaments in a cheaper frame than most modern photocopiers. It uses more primitive copying technology resulting in more toner waste and less printing capabilities. Nonetheless, its cheap construction means cheaper costs, and for people that only need to print a paper or two most of the time, it becomes cost-effective.
+  name: 复印机
+  description: 一台用于复印……你知道的，照片的复印机！也可用于复印纸质文件。这一特定型号由 AEGIS Armaments 制造，采用了比大多数现代复印机更廉价的机身。它使用更原始的复印技术，导致更多碳粉浪费和更差的打印能力。尽管如此，其廉价构造意味着成本更低，而对于大多数时候只需要打印一两页纸的人来说，它很划算。
   components:
   - type: Transform
     anchored: false
@@ -17,8 +17,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.45,0.25,0.45"
         mask:
         - MachineMask
@@ -33,7 +32,7 @@
 - type: entity
   parent: RMCBasePhotocopier
   id: RMCPhotocopier
-  name: Photocopier
+  name: 复印机
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/photocopier.rsi
@@ -51,8 +50,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.05,0.4,0.05"
         mask:
         - MachineMask
@@ -63,8 +61,8 @@
 - type: entity
   parent: RMCBasePhotocopier
   id: RMCPhotocopierPro
-  name: We-Yu Photocopier
-  description: A photocopier used for copying... you know, photos! Also useful for copying documents on paper. This specific model has been manufactured by We-Yu in a more modern and robust frame than the average photocopiers you see from smaller companies. It uses some of the most advanced technologies in the area of paper-printing such as bigger toner economy and much higher printing capabilities. All that makes it the favorite among consumers that need to print high amounts of paperwork for their daily duties.
+  name: We-Yu复印机
+  description: 一台用于复印……你知道的，照片的复印机！也可用于在纸上复印文件。这一特定型号由We-Yu制造，机身比你在小公司看到的普通复印机更现代、更坚固。它采用纸张打印领域的一些最先进技术，例如更节省碳粉以及更高的打印能力。这一切使其成为需要为日常工作打印大量文书的消费者中的最爱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/photocopier.rsi

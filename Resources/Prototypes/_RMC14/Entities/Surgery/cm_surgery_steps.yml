@@ -1,13 +1,13 @@
-﻿- type: entity
+- type: entity
   id: CMSurgeryStepBase
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: CMSurgeryStep
 
 - type: entity
   parent: CMSurgeryStepBase
   id: CMSurgeryStepOpenIncisionScalpel
-  name: Cut with a scalpel
+  name: 用手术刀切割 | Cut with a scalpel
   components:
   - type: CMSurgeryStep
     tool:
@@ -24,7 +24,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: CMSurgeryStepClampBleeders
-  name: Clamp the bleeders
+  name: 夹住出血点 | Clamp the bleeders
   components:
   - type: CMSurgeryStep
     tool:
@@ -39,7 +39,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: CMSurgeryStepRetractSkin
-  name: Retract the skin
+  name: 缩回皮肤 | Retract the skin
   components:
   - type: CMSurgeryStep
     tool:
@@ -53,7 +53,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: CMSurgeryStepSawBones
-  name: Saw through bones
+  name: 锯穿骨头 | Saw through bones
   components:
   - type: CMSurgeryStep
     tool:
@@ -68,7 +68,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: CMSurgeryStepPriseOpenBones
-  name: Prise the bones open
+  name: 撬开骨头 | Prise the bones open
   components:
   - type: CMSurgeryStep
     tool:
@@ -82,7 +82,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: CMSurgeryStepCutLarvaRoots
-  name: Cut larva roots
+  name: 切割幼虫根 | Cut larva roots
   components:
   - type: CMSurgeryStep
     skill: 2
@@ -97,7 +97,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: CMSurgeryStepRemoveLarva
-  name: Remove larva
+  name: 移除幼虫 | Remove larva
   components:
   - type: CMSurgeryStep
     skill: 2
@@ -114,7 +114,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: CMSurgeryStepCloseBones
-  name: Close bones
+  name: 关闭骨骼 | Close bones
   components:
   - type: CMSurgeryStep
     tool:
@@ -128,7 +128,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: CMSurgeryStepMendRibcage
-  name: Mend ribcage
+  name: 修复胸廓 | Mend ribcage
   components:
   - type: CMSurgeryStep
     tool:
@@ -142,7 +142,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: CMSurgeryStepCloseIncision
-  name: Close incision
+  name: 关闭切口 | Close incision
   components:
   - type: CMSurgeryStep
     tool:
@@ -159,7 +159,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: RMCSurgeryCutExoskeleton
-  name: Cut exoskeleton carapace
+  name: 切割外骨骼甲壳 | Cut exoskeleton carapace
   components:
   - type: CMSurgeryStep
     skill: 2
@@ -174,7 +174,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: RMCSurgeryOpenExoskeleton
-  name: Pry exoskeleton open
+  name: 撬开外骨骼 | Pry exoskeleton open
   components:
   - type: CMSurgeryStep
     skill: 2
@@ -189,7 +189,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: RMCSurgerySevereXenoConnections
-  name: Sever organ connections
+  name: 切断器官连接 | Sever organ connections
   components:
   - type: CMSurgeryStep
     skill: 2
@@ -204,7 +204,7 @@
 - type: entity
   parent: CMSurgeryStepBase
   id: RMCSurgeryRemoveXenoOrgan
-  name: Remove xenonid organ
+  name: 移除异星生物器官 | Remove xenonid organ
   components:
   - type: CMSurgeryStep
     skill: 2

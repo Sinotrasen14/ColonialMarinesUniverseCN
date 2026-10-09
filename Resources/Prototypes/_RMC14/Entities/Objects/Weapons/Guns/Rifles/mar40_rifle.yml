@@ -1,17 +1,17 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: WeaponRifleMAR40
-  name: MAR-40 battle rifle
-  description: A cheap, reliable assault rifle chambered in 7.62x39mm. Commonly found in the hands of criminals or mercenaries, or in the hands of the UPP or CLF.
+  name: MAR-40 战斗步枪
+  description: 廉价、可靠的突击步枪，使用7.62×39毫米弹药。常见于罪犯或雇佣兵手中，或是UPP或CLF手中。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/mar40.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/mar40.rsi
   - type: Gun
@@ -48,11 +48,11 @@
         shotsToMaxScatter: 4
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleMAR40
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg
@@ -76,9 +76,9 @@
           - RMCAttachmentExtendedCompensator
           - RMCM5Bayonet
         random:
-          - RMCAttachmentExtendedBarrel
-          - RMCAttachmentSuppressor
-          - RMCAttachmentRecoilCompensator
+        - RMCAttachmentExtendedBarrel
+        - RMCAttachmentSuppressor
+        - RMCAttachmentRecoilCompensator
       rmc-aslot-rail:
         whitelist:
           tags:
@@ -87,9 +87,9 @@
           - RMCAttachmentS5RedDotSight
           - RMCAttachmentS6ReflexSight
         random:
-          - RMCAttachmentMagneticHarness
-          - RMCAttachmentS5RedDotSight
-          - RMCAttachmentS6ReflexSight
+        - RMCAttachmentMagneticHarness
+        - RMCAttachmentS5RedDotSight
+        - RMCAttachmentS6ReflexSight
       rmc-aslot-underbarrel:
         whitelist:
           tags:
@@ -101,12 +101,12 @@
           - RMCAttachmentBurstFireAssembly
           - RMCAttachmentFlamer
         random:
-          - RMCAttachmentU7UnderbarrelShotgun
-          - RMCAttachmentGyroscopicStabilizer
-          - RMCAttachmentUnderbarrelExtinguisher
-          - RMCAttachmentMiniFlamethrower
-          - RMCAttachmentBipod
-          - RMCAttachmentBurstFireAssembly
+        - RMCAttachmentU7UnderbarrelShotgun
+        - RMCAttachmentGyroscopicStabilizer
+        - RMCAttachmentUnderbarrelExtinguisher
+        - RMCAttachmentMiniFlamethrower
+        - RMCAttachmentBipod
+        - RMCAttachmentBurstFireAssembly
   - type: AttachableHolderVisuals
     offsets:
       rmc-aslot-barrel: 0.75, 0.00
@@ -116,15 +116,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleMAR40
-  name: MAR magazine (7.62x39mm)
-  description: A 7.62x39mm magazine for the MAR series of firearms.
+  name: MAR弹匣（7.62×39毫米）
+  description: MAR系列枪械的7.62×39毫米弹匣。
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleMAR40
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifleMAR40
@@ -143,15 +143,15 @@
 - type: entity
   parent: RMCMagazineRifleMAR40
   id: RMCMagazineRifleMAR40Ext
-  name: MAR extended magazine (7.62x39mm)
-  description: A 7.62x39mm MAR magazine, this one carries more rounds than the average magazine.
+  name: MAR 扩容弹匣（7.62×39毫米）
+  description: 一把7.62×39毫米MAR弹匣，其载弹量比普通弹匣更多。
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleMAR40Ext
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifleMAR40
@@ -174,15 +174,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineMar50LMG
-  name: MAR drum magazine (7.62x39mm)
-  description: A 7.62x39mm drum magazine for the MAR-50 LMG.
+  name: MAR弹鼓（7.62x39mm）
+  description: 用于MAR-50轻机枪的7.62x39毫米弹鼓。
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineMar50LMG
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifleMAR40
@@ -202,8 +202,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleMAR40
-  name: Cartridge (7.62x39mm)
-  description: A 7.62x39mm rifle cartridge
+  name: 枪弹（7.62×39毫米）
+  description: 一发7.62×39毫米步枪弹
   components:
   - type: Tag
     tags:
@@ -215,7 +215,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: BulletRifleMAR40
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

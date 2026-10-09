@@ -3,19 +3,19 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechMilitaryPoliceEquipment
-  name: ColMarTech Military Police Equipment Rack
-  description: An automated rack hooked up to a colossal storage of Military Police standard-issue equipment.
+  name: ColMarTech 宪兵装备架
+  description: 一个连接到庞大宪兵制式装备储备库的自动化装备架。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessBrig" ]
+    - ["CMAccessBrig"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMMilitaryPolice
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMHandsBlackMarine
@@ -23,56 +23,56 @@
       - id: CMBootsBlackFilled
       - id: CMGlassesSecurity
       - id: CMBeltSecurityMPFilled
-    - name: Helmet
-      choices: { CMHelmet: 1 }
+    - name: 头盔
+      choices: {CMHelmet: 1}
       entries:
       - id: CMArmorHelmetM10MP
-    - name: Armor
-      choices: { CMArmor: 1 }
+    - name: 护甲
+      choices: {CMArmor: 1}
       entries:
       - id: CMArmorM2MP
       - id: RMCArmorVestMP
-    - name: Hat
-      choices: { CMHat: 1 }
+    - name: 帽子
+      choices: {CMHat: 1}
       entries:
       - id: CMHeadBeretRed
       - id: CMMPFlatBeret
-    - name: Handgun Case
-      choices: { CMGunCase: 1 }
+    - name: 手枪盒
+      choices: {CMGunCase: 1}
       entries:
       - id: RMCGunCasePistolM77
       - id: RMCGunCasePistolM44
       - id: RMCGunCasePistolM1984
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: CMSatchelSecurity
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltHolsterPistol
       - id: RMCBeltHolsterRevolver
       - id: RMCBeltUtilityGeneral
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchGeneralMedium
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救袋（可再填充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 add 'splints,'
+        name: 急救包（纱布、药膏）                        # TODO RMC14 add 'splints,'
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救包（药丸）
       - id: RMCPouchMagazinePistol
       - id: RMCPouchPistol
-    - name: Mask
-      choices: { CMMask: 1 }
+    - name: 面具
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: RMCMaskRebreather
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+    - name: 配件
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
       - id: CMWebbingBlack
@@ -82,13 +82,13 @@
       - id: RMCWebbingHolsterBlack
       - id: CMWebbing
       - id: RMCWebbingBlackSmall
-    - name: Books
+    - name: 书籍
       entries:
       - id: AU14GuidebookLawMarine
         amount: 10
       - id: AU14GuidebookSOP
         amount: 10
-    - name: Investigation
+    - name: 调查
       entries:
       - id: RMCUniversalRecorder
         amount: 3
@@ -99,77 +99,77 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechWardenEquipment
-  name: ColMarTech Military Warden Equipment Rack
-  description: An automated rack hooked up to a colossal storage of Military Police standard-issue equipment.
+  name: ColMarTech 宪兵典狱长装备架
+  description: 一个自动化装备架，连接着一个巨大的宪兵标准配发装备储备库。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessArmory" ]
+    - ["CMAccessArmory"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMMilitaryWarden
     sections:
-    - name: Police Set (Mandatory)
+    - name: 警察套装（必填）
       takeAll: RMCMPSet
       entries:
       - id: RMCVendorBundleMilitaryPoliceApparel
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMHandsBlackMarine
       - id: RMCHeadsetMW
       - id: CMBootsBlackFilled
-    - name: Helmet
-      choices: { CMHelmet: 1 }
+    - name: 头盔
+      choices: {CMHelmet: 1}
       entries:
       - id: CMArmorHelmetM10MP
-    - name: Armor
-      choices: { CMArmor: 1 }
+    - name: 护甲
+      choices: {CMArmor: 1}
       entries:
       - id: CMArmorM3Warden
       - id: RMCArmorVestMP
-    - name: Hat
-      choices: { CMHat: 1 }
+    - name: 帽子
+      choices: {CMHat: 1}
       entries:
       - id: CMHeadCapWarden
-    - name: Handgun Case
-      choices: { CMGunCase: 1 }
+    - name: 手枪箱
+      choices: {CMGunCase: 1}
       entries:
       - id: RMCGunCasePistolM77
       - id: RMCGunCasePistolM44
       - id: RMCGunCasePistolM1984
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: CMSatchelSecurity
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltHolsterPistol
       - id: RMCBeltHolsterRevolver
       - id: RMCBeltUtilityGeneral
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchGeneralMedium
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可补充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 add 'splints,'
+        name: 急救袋（纱布、软膏）                        # TODO RMC14 add 'splints,'
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救包（药丸）
       - id: RMCPouchMagazinePistol
       - id: RMCPouchPistol
-    - name: Mask
-      choices: { CMMask: 1 }
+    - name: 面具
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: RMCMaskRebreather
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+    - name: 配饰
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
       - id: CMWebbingBlack
@@ -178,13 +178,13 @@
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
       - id: CMWebbing
-    - name: Books
+    - name: 书籍
       entries:
       - id: AU14GuidebookLawMarine
         amount: 10
       - id: AU14GuidebookSOP
         amount: 10
-    - name: Investigation
+    - name: 调查
       entries:
       - id: RMCUniversalRecorder
         amount: 3

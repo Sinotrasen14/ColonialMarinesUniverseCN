@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ RMCBaseMeleeWeapon, BaseKnife ]
+  parent: [RMCBaseMeleeWeapon, BaseKnife]
   id: RMCKitchenKnife
-  name: knife
-  description: Can cut through any food.
+  name: 刀
+  description: 可以切开任何食物。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Melee/Kitchen/knife.rsi
@@ -45,8 +45,8 @@
 - type: entity
   parent: RMCKitchenKnife
   id: RMCKitchenKnifePlastic
-  name: plastic knife
-  description: The bluntest of blades.
+  name: 塑料刀
+  description: 最钝的刀刃。
   components:
   - type: Sprite
     state: plastic
@@ -63,14 +63,14 @@
 - type: entity
   parent: RMCKitchenKnife
   id: RMCKitchenKnifeChef
-  name: kitchen knife
-  description: A general purpose Chef's Knife made by SpaceCook Incorporated. Guaranteed to stay sharp for years to come.
+  name: 厨刀
+  description: 由SpaceCook股份有限公司制造的多用途厨师刀。保证在未来数年内保持锋利。
 
 - type: entity
   parent: RMCKitchenKnife
   id: RMCKitchenKnifeButcher
-  name: butcher's cleaver
-  description: A huge thing used for chopping and chopping up meat. This includes clowns and clown-by-products.
+  name: 屠夫的剁肉刀
+  description: 一个巨大的东西，用来剁肉和把肉切碎。这包括小丑以及小丑副产品。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Melee/Kitchen/cleaver.rsi

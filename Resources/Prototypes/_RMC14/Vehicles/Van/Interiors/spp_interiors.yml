@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: VehicleSPPVanRoofBase
-  name: SPP van interior roof
-  description: Side door
+  name: SPP厢式车内顶棚
+  description: 侧门
   placement:
     mode: PlaceFree
   components:
@@ -16,7 +16,7 @@
     drawdepth: Overdoors
     layers:
     - state: interior_door
-      map: [ "roof" ]
+      map: ["roof"]
   - type: InteractionTransparency
   - type: RMCSpriteFade
     targetAlpha: 0.35
@@ -29,8 +29,8 @@
 - type: entity
   abstract: true
   id: VehicleSPPVanInteriorBase
-  name: SPP van interior piece
-  description: A decorative interior piece for an SPP van.
+  name: SPP厢式车内饰件
+  description: SPP厢式车的装饰性内饰件。
   placement:
     mode: PlaceFree
   components:
@@ -42,8 +42,8 @@
 - type: entity
   abstract: true
   id: VehicleSPPVanChassisBase
-  name: SPP van interior chassis
-  description: A chassis segment for an SPP van interior.
+  name: SPP厢式车内部底盘
+  description: SPP厢式车内部的一个底盘段。
   placement:
     mode: PlaceFree
   components:
@@ -87,8 +87,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -169,7 +168,7 @@
     drawdepth: BelowMobs
     layers:
     - state: interior_door
-      map: [ "roof" ]
+      map: ["roof"]
   - type: Clickable
   - type: InteractionOutline
   - type: RemoveComponents
@@ -179,7 +178,7 @@
 - type: entity
   parent: VehicleSPPVanInteriorDoor
   id: VehicleSPPVanInteriorDoorRoof
-  name: SPP van interior roof door
+  name: SPP 厢式车内部车顶门
   components:
   - type: Sprite
     drawdepth: BelowMobs
@@ -206,8 +205,8 @@
   abstract: true
   parent: CMClosetBase
   id: VehicleSPPVanStorageBase
-  name: SPP van storage
-  description: A small storage locker for an SPP van interior.
+  name: SPP厢式车储物柜
+  description: 用于SPP厢式车内部的小型储物柜。
   placement:
     mode: PlaceFree
   components:
@@ -234,13 +233,13 @@
 - type: entity
   parent: VehicleSPPVanStorageBase
   id: VehicleSPPVanSmallStorage
-  name: SPP van small storage
+  name: SPP 小型储物厢式车
 
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleSPPVanAmmoLoader
-  name: SPP van ammo loader
-  description: A loader for SPP vehicle hardpoint ammunition.
+  name: SPP厢式车弹药装填器
+  description: 用于SPP车辆挂载点弹药的装填器
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/Interiors/sppvan.rsi

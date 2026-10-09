@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: CMIDCardSilver
   id: CMIDCardStaffOfficer
-  name: staff officer ID card
+  name: 参谋军官证
   components:
   - type: PresetIdCard
     job: CMStaffOfficer
@@ -9,7 +9,7 @@
 - type: entity
   parent: CMIDCardSilver
   id: RMCIDCardPlatoonCommander
-  name: platoon commander ID card
+  name: 排长身份证
   components:
   - type: PresetIdCard
     job: CMPVEPlatoonCommander
@@ -17,7 +17,7 @@
 - type: entity
   parent: CMIDCardGold
   id: CMIDCardCommandingOfficer
-  name: commanding officer ID card
+  name: 指挥官身份证
   components:
   - type: PresetIdCard
     job: CMCommandingOfficer
@@ -25,8 +25,8 @@
 - type: entity
   parent: CMIDCardGold
   id: RMCIDCardCommandingOfficerPlus
-  name: commanding officer ID card
-  description: Top brass of the top brass. Issued to only the most dedicated.
+  name: 指挥官身份卡
+  description: 高层中的高层。仅授予最尽忠职守者。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/general.rsi
@@ -41,7 +41,7 @@
 - type: entity
   parent: CMIDCardSilver
   id: CMIDCardExecutiveOfficer
-  name: executive officer ID card
+  name: 高管身份证
   components:
   - type: PresetIdCard
     job: CMExecutiveOfficer
@@ -49,9 +49,9 @@
 - type: entity
   parent: IDCardStandard # Deliberately parenting off of upstream ID card cause it needs to work with admin access configurator.
   id: CMIDCardHighCommand
-  name: general officer ID card
+  name: 将官身份卡
   suffix: Admin
-  description: Top brass of the top brass. Issued to only the most dedicated.
+  description: 将官中的将官。仅授予最尽忠职守者。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/general.rsi
@@ -79,9 +79,9 @@
 - type: entity
   parent: IDCardStandard # Is more-or-less a copy of the admin ID due to being for High-Ranked Provost-Marshal types that should be only used by admins.
   id: CMIDCardProvostSectorMarshal
-  name: Provost Sector Marshal ID card
+  name: 教务长分区执行官身份证
   suffix: Admin
-  description: Issued to members of the Provost Office.
+  description: 发放给教务长办公室成员。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/provost.rsi

@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCWeaponFlamer
   id: RMCWeaponFL3Flamer
-  name: flammenwerfer 3 heavy incineration unit
-  description: A heavy industrial incineration unit produced by the Weyland Corporation and later by Weyland-Yutani. Often found among foliage cleaning missions on frontier colonies, it usually isn't seen in combat, but is devastating when actually used.
+  name: 火焰喷射器3重型焚烧装置
+  description: 一种重型工业焚烧装置，由维兰德公司生产，后来由维兰德-汤谷公司生产。常见于边境殖民地的植被清理任务中，通常不会在战斗中出现，但实际使用时极具毁灭性。
   components:
   - type: Corrodible
     isCorrodible: false
@@ -18,7 +18,7 @@
       sprite: _RMC14/Objects/Weapons/Guns/Flamethrower/FL3/fl3_icon.rsi
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/Flamethrower/FL3/fl3_icon.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: strip
       sprite: _RMC14/Objects/Weapons/Guns/Flamethrower/FL3/fl3_icon.rsi
       color: "#DD9B00"
@@ -40,7 +40,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Tank
+        name: 坦克
         startingItem: RMCTankFlamerFL3
         insertSound: /Audio/_RMC14/Weapons/Guns/Flamer/wy_flamer_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Flamer/wy_flamer_unload.ogg
@@ -82,7 +82,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Tank
+        name: 坦克
         startingItem: RMCTankFlamerFL3Whiteout
         insertSound: /Audio/_RMC14/Weapons/Guns/Flamer/wy_flamer_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Flamer/wy_flamer_unload.ogg
@@ -94,8 +94,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerFL3
-  name: FW3 heavy incinerator tank
-  description: A heavy, high capacity tank utilized by the Flammenwerfer 3 Heavy Incineration Unit. This one has a blue, heat-resistant Weyland-Yutani logo on it.
+  name: FW3重型焚化罐
+  description: 一种重型大容量储罐，供火焰喷射器3重型焚化单元使用。这个储罐上有一个蓝色的耐热维兰德-汤谷标志。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/fl3.rsi
@@ -104,7 +104,7 @@
     - state: flametank
     - state: flametank_strip1
     - state: flametank_strip2
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: RMCFlamerTank
     maxIntensity: 70
     maxRange: 8
@@ -125,8 +125,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerFL3B
-  name: FW3 heavy incinerator tank (B)
-  description: A heavy, high capacity tank utilized by the Flammenwerfer 3 Heavy Incineration Unit. This one has a blue, heat-resistant Weyland-Yutani logo on it. This one seems to contain 'Napalm-B'.
+  name: FW3重型焚化器罐（B）
+  description: 一种由Flammenwerfer 3重型焚化器使用的重型大容量罐体。这个罐体上有一个蓝色的、耐热的Weyland-Yutani标志。这个罐体似乎装有‘Napalm-B’。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/fl3.rsi
@@ -135,7 +135,7 @@
     - state: flametank
     - state: flametank_strip1
     - state: flametank_strip2
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: RMCFlamerTank
     maxIntensity: 70
     maxRange: 8
@@ -156,8 +156,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerFL3X
-  name: FW3 heavy incinerator tank (X)
-  description: A heavy, high capacity tank utilized by the Flammenwerfer 3 Heavy Incineration Unit. This one has a blue, heat-resistant Weyland-Yutani logo on it. This one seems to contain 'Napalm-X'.
+  name: FW3重型焚化器燃料罐（X）
+  description: 由FW3重型焚化器使用的重型大容量罐体。这个罐体上有一个蓝色的耐热维兰德-汤谷标志。这个似乎装有‘凝固汽油-X’。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/fl3.rsi
@@ -166,7 +166,7 @@
     - state: flametank
     - state: flametank_strip1
     - state: flametank_strip2
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: RMCFlamerTank
     maxIntensity: 70
     maxRange: 8
@@ -188,8 +188,8 @@
 - type: entity
   parent: RMCTankFlamerFL3
   id: RMCTankFlamerFL3Whiteout
-  name: FW3 heavy incinerator tank (EX)
-  description: A heavy fuel tank of Ultra Thick Napthal Fuel type EX, a sticky combustible liquid chemical that burns so hot it melts straight through most flame-resistant materials, utilized by the Flammenwerfer 3 Heavy Incineration Unit. This has a blue, heat-resistant Weyland-Yutani logo on it. Handle with care.
+  name: FW3重型焚化器燃料罐（EX）
+  description: 一个重型燃料罐，装有EX型超浓萘燃料，这是一种粘稠的可燃液体化学物质，燃烧温度极高，能直接熔化穿透大多数阻燃材料，供FW3重型焚化器使用。罐身上有一个蓝色的耐热韦兰德-汤谷标志。小心处理。
   components:
   - type: SolutionContainerManager
     solutions:

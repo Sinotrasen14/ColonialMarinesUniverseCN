@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: RMCBucket
-  name: bucket
-  description: It's a bucket. Holds 120 units.
+  name: 桶
+  description: 这是一个桶。可容纳120个单位。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/Janitorial/bucket.rsi
@@ -73,8 +73,8 @@
 - type: entity
   parent: RMCBucket
   id: CMBucketMop
-  name: mop bucket
-  description: A larger bucket, typically used with a mop. Holds 240 units
+  name: 拖把桶
+  description: 一个较大的桶，通常与拖把配合使用。可容纳240个单位
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/Janitorial/mopbucket.rsi
@@ -99,8 +99,8 @@
 - type: entity
   parent: RMCBucket
   id: RMCBucketJanitorial
-  name: janitorial bucket
-  description: It's a large bucket that fits in a janitorial cart. Holds 500 units.
+  name: 保洁桶
+  description: 这是一个能装进保洁推车的大桶。可容纳500个单位。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/Janitorial/janibucket.rsi
@@ -146,14 +146,14 @@
 - type: entity
   parent: RMCBucketJanitorial
   id: RMCReagentJug
-  name: reagent jug
-  description: A large jug made of non-reactive plastic, capable of carrying large amounts of diverse chemicals to wherever they are needed. Holds 500 units.
+  name: 试剂壶
+  description: 一个由非反应性塑料制成的大壶，能够将大量各种化学物质运送到需要的地方。可容纳500单位。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Chemistry/reagent_jug.rsi
     layers:
     - state: reagentjug
-    - map: [ "enum.SolutionContainerLayers.Fill" ]
+    - map: ["enum.SolutionContainerLayers.Fill"]
       state: reagentjug-1
       visible: false
     - state: lid_reagentjug
@@ -173,10 +173,10 @@
     examineText: rmc-bottle-closed
     openVerbText: rmc-bottle-remove-lid
     closeVerbText: rmc-bottle-put-lid
-    sound: null
+    sound:
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}

@@ -1,9 +1,9 @@
-﻿# Components
+# Components
 - type: entity
   abstract: true
   parent: CMMREComponentBase
   id: CMMRESideComponentBase
-  description: An MRE side component. Contains a side, to be eaten alongside the main.
+  description: 单兵口粮的配菜组件。包含一份配菜，可与主餐一同食用。
   components:
   - type: Sprite
     state: side
@@ -11,8 +11,8 @@
 - type: entity
   parent: CMMRESideComponentBase
   id: CMMREComponentCracker
-  name: MRE component (cracker)
-  description: An MRE side component. Contains a side, to be eaten alongside the main. This one is a cracker.
+  name: MRE 组件（饼干）
+  description: 一个 MRE 配餐组件。包含一份配餐，可与主餐一同食用。这一份是饼干。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -21,8 +21,8 @@
 - type: entity
   parent: CMMRESideComponentBase
   id: CMMREComponentRiceOnigiri
-  name: MRE component (rice onigiri)
-  description: An MRE side component. Contains a side, to be eaten alongside the main. This one is rice onigiri.
+  name: MRE 组件（饭团）
+  description: MRE 配菜组件。包含一份配菜，可与主餐一同食用。这个是米饭饭团。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -31,8 +31,8 @@
 - type: entity
   parent: CMMRESideComponentBase
   id: CMMREComponentMashedPotatoes
-  name: MRE component (mashed potatoes)
-  description: An MRE side component. Contains a side, to be eaten alongside the main. This one is mashed potatoes.
+  name: MRE配菜（土豆泥）
+  description: MRE 配菜组件。包含一份配菜，可与主餐一起食用。这一份是土豆泥。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -41,8 +41,8 @@
 - type: entity
   parent: CMMRESideComponentBase
   id: CMMREComponentRisotto
-  name: MRE component (risotto)
-  description: An MRE side component. Contains a side, to be eaten alongside the main. This one is risotto.
+  name: MRE 组件（意式烩饭）
+  description: 一个 MRE 配菜组件。内含一份配菜，可与主菜一同食用。这个配菜是意式烩饭。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -61,10 +61,10 @@
     solution:
       maxVol: 8
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 6
-        - ReagentId: TableSalt
-          Quantity: 2
+      - ReagentId: Nutriment
+        Quantity: 6
+      - ReagentId: TableSalt
+        Quantity: 2
   - type: Extractable
     grindableSolutionName: food
   - type: InjectableSolution
@@ -73,8 +73,8 @@
 - type: entity
   parent: CMMREFoodSide
   id: CMMREFoodCracker
-  name: cracker
-  description: The contents of a Marine Standard issue MRE. This one is a cracker.
+  name: 饼干
+  description: 海军陆战队标准配发即食口粮的内容物。这一份是饼干。
   components:
   - type: Sprite
     state: cracker
@@ -85,8 +85,8 @@
 - type: entity
   parent: CMMREFoodSide
   id: CMMREFoodRiceOnigiri
-  name: rice onigiri
-  description: The contents of a Marine Standard issue MRE. This one is rice onigiri.
+  name: 米饭饭团
+  description: 海军陆战队标准配发单兵口粮的内容物。这一份是米饭饭团。
   components:
   - type: Sprite
     state: rice_onigiri
@@ -97,8 +97,8 @@
 - type: entity
   parent: CMMREFoodSide
   id: CMMREFoodMashedPotatoes
-  name: mashed potatoes
-  description: The contents of a Marine Standard issue MRE. This one is mashed potatoes.
+  name: 土豆泥
+  description: 海军陆战队标准配发即食口粮的内容。这一份是土豆泥。
   components:
   - type: Sprite
     state: mashed_potatoes
@@ -109,8 +109,8 @@
 - type: entity
   parent: CMMREFoodSide
   id: CMMREFoodRisotto
-  name: risotto
-  description: The contents of a Marine Standard issue MRE. This one is risotto.
+  name: 意式烩饭
+  description: 海军陆战队标准配发即食口粮的内容物。这一份是意式烩饭。
   components:
   - type: Sprite
     state: risotto
@@ -122,19 +122,19 @@
 - type: flavor
   id: Cracker
   flavorType: Complex
-  description: like crackers
+  description: 像饼干一样
 
 - type: flavor
   id: RiceOnigiri
   flavorType: Complex
-  description: like rice
+  description: 喜欢米饭
 
 - type: flavor
   id: Potato
   flavorType: Complex
-  description: like potatoes
+  description: 喜欢土豆
 
 - type: flavor
   id: Risotto
   flavorType: Complex
-  description: like risotto
+  description: 像意大利烩饭

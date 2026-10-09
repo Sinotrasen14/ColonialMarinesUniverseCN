@@ -1,7 +1,7 @@
 - type: entity
   id: RMCMirror
-  name: mirror
-  description: Mirror mirror on the wall, who's the most robust of them all?
+  name: 镜像
+  description: 魔镜魔镜，谁才是所有镜像中最健壮的？
   placement:
     mode: SnapgridCenter
   components:
@@ -16,8 +16,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb {}
+        shape: !type:PhysShapeAabb {}
   - type: Sprite
     drawdepth: WallMountedItems
     sprite: _RMC14/Structures/Wallmounts/mirror.rsi

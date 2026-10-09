@@ -10,7 +10,7 @@
     sprite: _RMC14/Objects/Tools/screwdriver.rsi
     layers:
     - state: screwdriver
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
     - state: screwdriver-screwybits
   - type: Item
     size: Tiny
@@ -49,7 +49,7 @@
     sprite: _RMC14/Objects/Tools/wirecutters.rsi
     layers:
     - state: cutters
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
     - state: cutters-cutty-thingy
   - type: RandomSprite
     available:
@@ -122,8 +122,8 @@
 - type: entity
   parent: Multitool
   id: CMMultitool
-  name: access tuner
-  description: A small handheld tool used to override or connect various machine functions.
+  name: 接入调谐器
+  description: 一种用于超控或连接各种机器功能的小型手持工具。
   suffix: Multitool
   components:
   - type: Sprite
@@ -222,9 +222,9 @@
     state: icon
   - type: Item
     size: Small
-    sprite: null
-    storedSprite: null
-    shape: null
+    sprite:
+    storedSprite:
+    shape:
     storedRotation: 0
   - type: EmitSoundOnPickup
     sound:
@@ -257,7 +257,7 @@
 - type: entity
   parent: CMCrowbar
   id: CMCrowbarRed
-  name: emergency crowbar
+  name: 应急撬棍
   components:
   - type: Tag
     tags:
@@ -267,13 +267,13 @@
     state: red-icon
   - type: Item
     heldPrefix: red
-    storedSprite: null
+    storedSprite:
 
 - type: entity
   parent: BaseItem
   id: MaintenanceJack
-  name: vehicle maintenance jack
-  description: A heavy-duty hardpoint jack for servicing armored vehicles. Works where a crowbar can't.
+  name: 车辆维修千斤顶
+  description: 用于维修装甲车辆的重型硬点千斤顶。能在撬棍无法使用的地方发挥作用。
   suffix: RMC
   components:
   - type: Sprite
@@ -315,8 +315,8 @@
 - type: entity
   parent: CMCrowbar
   id: RMCTacticalPrybar
-  name: tactical prybar
-  description: Holding this makes you want to raid a townhouse filled with terrorists. Also doubles as a blunt weapon.
+  name: 战术撬棍
+  description: 拿着它，会让你想突袭一栋满是恐怖分子的联排别墅。它还能兼作钝器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/tac_prybar.rsi
@@ -338,8 +338,8 @@
 - type: entity
   parent: [BaseItem, RMCBaseMeleeWeapon]
   id: RMCMaintenanceJack
-  name: maintenance jack
-  description: A heavy synthetic-grade maintenance tool that can pry doors and work as a wrench.
+  name: 维修千斤顶
+  description: 一种重型合成级维修工具，可以撬门，也可用作扳手。
   suffix: RMC, Synth
   components:
   - type: Sprite
@@ -395,23 +395,23 @@
   id: CMHandLabeler
   suffix: RMC14
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Tools/hand_labeler.rsi
-      state: hand_labeler
-    - type: Item
-      size: Small
-      sprite: _RMC14/Objects/Tools/hand_labeler.rsi
-      storedRotation: 0
-    - type: RMCHandLabeler
-    - type: UserInterface
-      interfaces:
-        enum.HandLabelerUiKey.Key:
-          type: HandLabelerBoundUserInterface
-        enum.RMCHandLabelerUiKey.PillBottleColor:
-          type: RMCHandLabelerPillBottleColorBui
-    - type: PhysicalComposition
-      materialComposition:
-        CMSteel: 125
+  - type: Sprite
+    sprite: _RMC14/Objects/Tools/hand_labeler.rsi
+    state: hand_labeler
+  - type: Item
+    size: Small
+    sprite: _RMC14/Objects/Tools/hand_labeler.rsi
+    storedRotation: 0
+  - type: RMCHandLabeler
+  - type: UserInterface
+    interfaces:
+      enum.HandLabelerUiKey.Key:
+        type: HandLabelerBoundUserInterface
+      enum.RMCHandLabelerUiKey.PillBottleColor:
+        type: RMCHandLabelerPillBottleColorBui
+  - type: PhysicalComposition
+    materialComposition:
+      CMSteel: 125
 
 - type: entity
   parent: Shovel
@@ -447,8 +447,8 @@
 - type: entity
   parent: BaseItem
   id: RMCWireSnappers
-  name: wire snappers
-  description: The jaws are perfect for snipping large wires and other small metal bits, but are a bit too heavy for delicate work.
+  name: 剪线钳
+  description: 钳口非常适合剪断粗电线和其他小金属块，但用于精细作业有点过重。
   suffix: INSTANT, Repeating
   components:
   - type: RMCDeviceBreaker
@@ -457,7 +457,7 @@
     sprite: _RMC14/Objects/Tools/wirecutters.rsi
     layers:
     - state: cutters
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
     - state: cutters-cutty-thingy
       color: "#808080"
   - type: RandomSprite

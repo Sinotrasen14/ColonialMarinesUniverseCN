@@ -2,7 +2,7 @@
   abstract: true
   parent: CMBaseStructure
   id: RMCGrassTallBase
-  name: tallgrass
+  name: 高草丛
   suffix: Centre
   components:
   - type: ResinClearable # CMU14
@@ -27,12 +27,11 @@
           variation: 0.05
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   abstract: true

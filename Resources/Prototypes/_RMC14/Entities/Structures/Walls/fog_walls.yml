@@ -1,8 +1,8 @@
-﻿# TODO RMC14 make a central system to manage these instead of ticking them all separately
+# TODO RMC14 make a central system to manage these instead of ticking them all separately
 - type: entity
   id: RMCFogWallPermanent
-  name: dense fog
-  description: It looks way too dangerous to traverse.
+  name: 浓雾
+  description: 看起来太危险了，无法穿越。
   suffix: Permanent
   placement:
     mode: SnapgridCenter
@@ -22,8 +22,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -36,7 +35,7 @@
 - type: entity
   parent: RMCFogWallPermanent
   id: RMCFogWall25
-  description: It looks way too dangerous to traverse. Best wait until it has cleared up.
+  description: 看起来实在太危险了，没法穿越。最好等它散去再说。
   suffix: 25 minutes
   components:
   - type: TimedDespawn
@@ -53,8 +52,8 @@
 - type: entity
   parent: MarkerBase
   id: RMCFogWallRemoverOne
-  name: random fog remover
-  description: Marks this fog for random removal at round-start.
+  name: 随机迷雾移除器
+  description: 将此迷雾标记为在回合开始时随机移除。
   suffix: group one
   components:
   - type: Sprite
@@ -70,8 +69,8 @@
 - type: entity
   parent: MarkerBase
   id: RMCFogWallAdderOne
-  name: random fog spawner
-  description: Marks a spot for random fog spawning at round-start.
+  name: 随机雾生成点
+  description: 标记一个在回合开始时随机生成雾的位置。
   suffix: group one, 25 minutes
   components:
   - type: Sprite
@@ -116,7 +115,7 @@
 
 - type: entity
   id: RMCFogShockwave
-  name: shockwave smoke
+  name: 冲击波烟雾
   components:
   - type: Transform
     anchored: true
@@ -133,7 +132,7 @@
 - type: entity
   id: RMCFogSpawner15
   parent: MarkerBase
-  name: fog blocker
+  name: 防雾器
   suffix: 15 minutes
   components:
   - type: Sprite

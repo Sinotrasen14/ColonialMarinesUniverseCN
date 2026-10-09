@@ -1,8 +1,8 @@
 - type: entity
   parent: [RMCBaseSlideMagazineVisualsBallistic, RMCWeaponRevolverBase]
   id: RMCWeaponRevolverMateba
-  name: Mateba autorevolver custom
-  description: The .454 Mateba 6 Unica autorevolver is a semi-automatic handcannon that uses its own recoil to rotate the cylinders. Extremely rare, prohibitively costly, and unyieldingly powerful, it's found in the hands of a select few high-ranking USCMC officials. Stylish, sophisticated, and above all, extremely deadly.
+  name: 马特巴自动左轮定制版
+  description: .454 马特巴 6 Unica 自动左轮手枪是一种半自动手炮，利用自身后坐力来转动弹巢。它极其稀有、昂贵得令人却步，且威力强大得毫不妥协，只掌握在少数美国殖民地海军陆战队高级官员手中。时尚、精致，最重要的是，极其致命。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Pistols/mateba/jungle.rsi
@@ -36,8 +36,8 @@
       - RMCCartridgeRevolverMateba
     proto: RMCCartridgeRevolverMatebaHighImpact
     capacity: 6
-    chambers: [ True, True, True, True, True, True ]
-    ammoSlots: [ null, null, null, null, null, null ]
+    chambers: [true, true, true, true, true, true]
+    ammoSlots: [null, null, null, null, null, null]
   - type: GunDamageModifier
     multiplier: 1.5
   - type: RMCSelectiveFire
@@ -72,7 +72,7 @@
           - RMCAttachmentMatebaMarksman
           - RMCAttachmentMatebaSnubNose
       rmc-aslot-barrel:
-       whitelist:
+        whitelist:
           tags:
           - RMCAttachmentRecoilCompensator
           - RMCAttachmentBarrelCharger
@@ -108,8 +108,8 @@
 - type: entity
   parent: RMCWeaponRevolverMateba
   id: RMCWeaponRevolverMatebaGold
-  name: golden Mateba autorevolver custom
-  description: Boasting a gold-plated frame and grips made of a critically-endangered rosewood tree, this heavily-customized Mateba revolver's pretentious design rivals only the power of its wielder. Fit for a king. Or a general.
+  name: 金色马特巴自动左轮定制版
+  description: 拥有镀金枪身和由极度濒危的玫瑰木制成的握把，这把经过重度定制的马特巴左轮手枪那浮夸的设计，唯有其持有者的力量能与之匹敌。配得上国王。或者将军。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Pistols/mateba_gold.rsi
@@ -147,8 +147,8 @@
 - type: entity
   parent: RMCWeaponRevolverMateba
   id: RMCWeaponRevolverMatebaSpecial
-  name: Mateba autorevolver special
-  description: An old, heavily modified version of the Mateba Autorevolver. It sports a smooth wooden grip, and a much larger barrel to it's unmodified counterpart. It's clear that this weapon has been cared for over a long period of time.
+  name: 马特巴自动左轮手枪特别版
+  description: 一把老旧且经过大量改装的马特巴自动左轮手枪。它配有光滑的木制握把，枪管也比未改装版本大得多。显然，这件武器在很长一段时间里都得到了精心保养。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Pistols/mateba_special.rsi
@@ -195,7 +195,7 @@
 
 - type: entity
   id: RMCBaseSpeedLoaderMateba
-  name: "Mateba speed loader (.454)" #Base
+  name: "Mateba快速装弹器（.454）"          #Base
   parent: BaseItem
   abstract: true
   components:
@@ -220,16 +220,16 @@
 - type: entity
   parent: RMCBaseSpeedLoaderMateba #Normal Loader
   id: RMCSpeedLoaderMateba
-  name: "Mateba speed loader (.454)"
-  description: A formidable .454 speedloader, made exclusively for the Mateba autorevolver. Packs a devastating punch. This standard-variant is optimized for anti-armor.
+  name: "Mateba快速装弹器（.454）"
+  description: 一把令人生畏的 .454 快速装弹器，专为 Mateba 自动左轮手枪制造。拥有毁灭性的威力。该标准型号针对反装甲进行了优化。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/SpeedLoaders/mateba.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: base-5
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: base
     steps: 6
@@ -242,19 +242,19 @@
 - type: entity
   parent: RMCBaseSpeedLoaderMateba
   id: RMCSpeedLoaderMatebaHighImpact #High impact
-  name: High Impact Mateba speed loader (.454).
-  description: A formidable .454 speedloader, made exclusively for the Mateba autorevolver. Packs a devastating punch. This high impact variant is optimized for anti-personnel. Don't point at anything you don't want to destroy.
+  name: 高冲击力 Mateba 快速装弹器（.454）。
+  description: 一款威力强大的 .454 快速装弹器，专为 Mateba 自动左轮手枪打造。它能造成毁灭性打击。这种高冲击力型号针对反人员用途进行了优化。不要将它对准任何你不想摧毁的东西。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/SpeedLoaders/mateba.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: base-5
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: base-unshaded-5
       color: "#63DAFF"
-      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      map: ["enum.GunVisualLayers.MagUnshaded"]
   - type: MagazineVisuals
     magState: base
     steps: 6
@@ -267,19 +267,19 @@
 - type: entity
   parent: RMCBaseSpeedLoaderMateba
   id: RMCSpeedLoaderMatebaHIAP #High impact Armor Piercing
-  name: High Impact Armor-Piercing Mateba speed loader (.454).
-  description: A formidable .454 speedloader, made exclusively for the Mateba autorevolver. Packs a devastating punch. This armor-piercing variant is optimized against armored targets at the cost of lower overall damage. Don't point at anything you don't want to destroy.
+  name: 高冲击力穿甲马特巴快速装弹器（.454）。
+  description: 一种强大的.454快速装弹器，专为马特巴自动左轮手枪打造。能造成毁灭性打击。这种穿甲型号针对装甲目标进行了优化，但代价是整体伤害较低。别把它对准任何你不想摧毁的东西。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/SpeedLoaders/mateba.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: base-5
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: base-unshaded-5
       color: "#30C223"
-      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      map: ["enum.GunVisualLayers.MagUnshaded"]
   - type: MagazineVisuals
     magState: base
     steps: 6
@@ -292,19 +292,19 @@
 - type: entity
   parent: RMCBaseSpeedLoaderMateba
   id: RMCSpeedLoaderMatebaHE #High Explosive (Brig gen+ people only like commander of the marine corps)
-  name: Mateba explosive speed loader (.454).
-  description: A formidable .454 speedloader, made exclusively for the Mateba autorevolver. There's an impact charge built into the bullet tip. Firing this at anything will result in a powerful explosion. Use with EXTREME caution.
+  name: 马特巴爆炸式快速装弹器（.454）
+  description: 一种令人生畏的 .454 快速装弹器，专为马特巴自动左轮手枪打造。弹头尖端内置有冲击装药。用它射击任何目标都会引发威力巨大的爆炸。请务必极度小心。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/SpeedLoaders/mateba.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: base-5
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: base-unshaded-5
       color: "#1E22BD"
-      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      map: ["enum.GunVisualLayers.MagUnshaded"]
   - type: MagazineVisuals
     magState: base
     steps: 6
@@ -318,7 +318,7 @@
 
 - type: entity
   id: RMCCartridgeRevolverMateba #Normal
-  name: cartridge (.454)
+  name: 弹药（.454）
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -330,7 +330,7 @@
 
 - type: entity
   id: RMCCartridgeRevolverMatebaHighImpact #High impact
-  name: cartridge (.454) HighImpact
+  name: .454口径高冲击弹药
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -342,7 +342,7 @@
 
 - type: entity
   id: RMCCartridgeRevolverMatebaHIAP #High impact Armor Piercing
-  name: cartridge (.454) HIAP
+  name: 弹药（.454）HIAP
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -354,7 +354,7 @@
 
 - type: entity
   id: RMCCartridgeRevolverMatebaHE #High Explosive
-  name: cartridge (.454) HE
+  name: .454 高爆弹
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -367,8 +367,8 @@
 - type: entity
   parent: CMBulletBase #Base bullet
   id: RMCBulletMateba
-  name: bullet (.454)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（.454）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -387,8 +387,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletMatebaHighImpact #High impact
-  name: bullet (.454) High Impact
-  categories: [ HideSpawnMenu ]
+  name: 高冲击子弹（.454）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -421,8 +421,8 @@
 - type: entity
   parent: RMCBulletMatebaHighImpact
   id: RMCBulletMatebaHighImpactArmorPiercing #HIAP
-  name: bullet (.454) HIAP
-  categories: [ HideSpawnMenu ]
+  name: 子弹（.454）HIAP
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -434,8 +434,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletMatebaHighExplosive #Explosive
-  name: bullet (.454) HIAP
-  categories: [ HideSpawnMenu ]
+  name: 子弹（.454）HIAP
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -460,8 +460,8 @@
 - type: entity
   parent: BaseStorageItem
   id: RMCMatebaCustomizationCase
-  name: mateba customization kit case
-  description: A wooden case used for storing the tools and parts needed to customize a Mateba revolver. Comes with three barrel lengths and the necessary key to swap them out.
+  name: Mateba定制套件箱
+  description: 一个用于存放定制Mateba左轮手枪所需工具和零件的木箱。附带三种枪管长度以及更换它们所需的钥匙。
   components:
   - type: Item
     size: Normal
@@ -493,7 +493,7 @@
   parent: RMCMatebaCustomizationCase
   id: RMCMatebaCustomizationCaseWeapon
   suffix: Filled, Mateba
-  description: A wooden case used for storing the tools and parts needed to customize a Mateba revolver. Comes with three barrel lengths, necessary key to swap them out, and the mateba handcannon itself.
+  description: 一个用于存放改装 Mateba 左轮手枪所需工具和零件的木箱。附带三种不同长度的枪管、更换枪管所需的钥匙，以及 Mateba 手炮本身。
   components:
   - type: IgnoreContentsSize
     items:
@@ -516,8 +516,8 @@
 - type: entity
   parent: RMCMatebaCustomizationCase
   id: RMCMatebaCustomizationCaseLuxury
-  name: luxurious mateba customization kit case
-  description: A black case used for storing the tools and parts needed to customize a Mateba revolver. This variant is made for general-grade golden Matebas and comes with golden barrel attachments
+  name: 豪华 Mateba 定制套件箱
+  description: 用于存放定制 Mateba 左轮手枪所需工具和零件的黑色箱盒。该版本专为普通级金色 Mateba 打造，并附带金色枪管配件。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/mateba_kit.rsi
@@ -542,7 +542,7 @@
 - type: entity
   parent: RMCMatebaCustomizationCaseWeapon
   id: RMCMatebaCustomizationCaseLuxuryWeapon
-  description: A black case used for storing the tools and parts needed to customize a Mateba revolver. This variant is made for general-grade golden Matebas and comes with golden barrel attachments, and the mateba handcannon itself.
+  description: 一个黑色箱子，用于存放改装Mateba左轮手枪所需的工具和零件。此变体专为普通级金色Mateba制作，附带金色枪管配件以及Mateba手炮本身。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/mateba_kit.rsi

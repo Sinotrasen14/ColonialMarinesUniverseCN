@@ -1,7 +1,7 @@
 - type: entity
   id: RMCTelecomBusMainframe
-  name: Bus Mainframe
-  description: A mighty piece of hardware used to send massive amounts of data quickly.
+  name: 总线主机
+  description: 一种强大的硬件，用于快速发送海量数据。
   placement:
     mode: SnapgridCenter
   components: #has no collission in 13 they have invisible walls behind it
@@ -27,15 +27,14 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Physics
     bodyType: Static
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         density: 190
         mask:
@@ -46,8 +45,8 @@
 - type: entity
   id: RMCTelecomReceiver
   parent: RMCTelecomBusMainframe
-  name: Subspace Receiver
-  description: This machine has a dish-like shape and green lights. It is designed to detect and process subspace radio activity.
+  name: 子空间接收器
+  description: 这台机器呈碟形，带有绿色灯光。它旨在探测和处理子空间无线电活动。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/telecommunication.rsi
@@ -59,8 +58,8 @@
 - type: entity
   id: RMCTelecomBroadcaster #gets put ontop of stuff
   parent: RMCTelecomBusMainframe
-  name: Subspace Broadcaster
-  description: A dish-shaped machine used to broadcast processed subspace signals.
+  name: 亚空间广播器
+  description: 一种用于广播经过处理的亚空间信号的碟形机器。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/telecommunication.rsi
@@ -80,8 +79,8 @@
 - type: entity
   id: RMCTelecomRelay #gets put ontop of stuff
   parent: RMCTelecomBusMainframe
-  name: Telecomms Relay
-  description: A mighty piece of hardware used to send massive amounts of data far away.
+  name: 通信中继器
+  description: 一件强大的硬件，用于将海量数据发送到远方。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/telecommunication.rsi
@@ -101,8 +100,8 @@
 - type: entity
   id: RMCTelecomProcessorUnit #gets put ontop of stuff
   parent: RMCTelecomBusMainframe
-  name: Processor Unit
-  description: This machine is used to process large quantities of information.
+  name: 处理器单元
+  description: 这台机器用于处理大量信息。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/telecommunication.rsi
@@ -122,8 +121,8 @@
 - type: entity
   id: RMCTelecomHub
   parent: RMCTelecomBusMainframe
-  name: Telecommunication Hub
-  description: A mighty piece of hardware used to send/receive massive amounts of data.
+  name: 通信枢纽
+  description: 用于发送和接收海量数据的强大硬件设备。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/telecommunication.rsi
@@ -135,8 +134,8 @@
 - type: entity
   id: RMCTelecomOSServerBox
   parent: RMCTelecomBusMainframe
-  name: We-Yu OS server box
-  description: We-Yu OS is a proprietary operating system used by the Company to run most all of their servers, banking, and management systems. A code leak in 2144 led some amateur hackers to believe that We-Yu OS is loosely based on the 2017 release of TempleOS. But the Company has refuted these claims.
+  name: We-Yu OS服务器盒
+  description: We-Yu OS是公司使用的一种专有操作系统，用于运行其几乎所有服务器、银行系统和管理系统。2144年的一次代码泄露让一些业余黑客认为，We-Yu OS大致基于2017年发布的TempleOS。但公司驳斥了这些说法。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/telecommunication.rsi
@@ -148,8 +147,8 @@
 - type: entity
   id: RMCTelecomBlackBox
   parent: RMCTelecomBusMainframe
-  name: Blackbox Recorder
-  description: The blackbox recorder is a device used to record data from the ship's systems. It is designed to be tamper-proof and can withstand extreme conditions. #custom
+  name: 黑匣子记录器
+  description: 黑匣子记录器是一种用于记录船舶系统数据的设备。它被设计为防篡改，并能承受极端条件。                                                                                                              #custom
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/telecommunication.rsi
@@ -161,12 +160,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Corrodible
     isCorrodible: true
 
@@ -181,8 +179,8 @@
 - type: entity
   id: RMCTelecomSensorComputer
   parent: RMCTelecomBusMainframe
-  name: sensor computer
-  description: The IBM series 10 computer retrofitted to work as a sensor computer for the ship. While somewhat dated it still serves its purpose.
+  name: 传感器计算机
+  description: IBM 10系列计算机经过改装，用作这艘船的传感器计算机。虽然有些过时，但仍能履行其职责。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/almayer_props.rsi
@@ -196,20 +194,19 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Corrodible
     isCorrodible: true
 
 - type: entity
   id: RMCTelecomSensorComputer2
   parent: RMCTelecomBusMainframe
-  name: sensor computer
-  description: The IBM series 10 computer retrofitted to work as a sensor computer for the ship. While somewhat dated it still serves its purpose.
+  name: 传感器计算机
+  description: 这台 IBM 10 系列计算机经过改装，用作该船的传感器计算机。虽然稍显过时，但仍能履行其用途。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/almayer_props.rsi
@@ -223,20 +220,19 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Corrodible
     isCorrodible: true
 
 - type: entity
   id: RMCTelecomSensorComputer3
   parent: RMCTelecomBusMainframe
-  name: sensor computer
-  description: The IBM series 10 computer retrofitted to work as a sensor computer for the ship. While somewhat dated it still serves its purpose.
+  name: 传感器计算机
+  description: 经过改装后用作该船传感器计算机的IBM 10系列计算机。尽管有些过时，它仍能发挥作用。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/almayer_props.rsi
@@ -250,20 +246,19 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Corrodible
     isCorrodible: true
 
 - type: entity
   id: RMCTelecomMappingComputer
   parent: RMCTelecomBusMainframe
-  name: CMPS II computer
-  description: The Common Mapping Production System version II allows for sensory input from satellites and ship systems to derive planetary maps in a standardized fashion for all UNMC pilots.
+  name: CMPS II 计算机
+  description: 通用测绘生产系统第二版允许来自卫星和舰船系统的传感器输入，以标准化方式为所有 UNMC 飞行员生成行星地图。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
@@ -275,20 +270,19 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Corrodible
     isCorrodible: true
 
 - type: entity
   id: RMCTelecomMissionPlanningSystem
   parent: RMCTelecomBusMainframe
-  name: MPS IV computer
-  description: The Mission Planning System IV (MPS IV), an enhancement in mission planning and charting for dropship pilots across the UNMC. Fully capable of customizing their flight paths and loadouts to suit their combat needs.
+  name: MPS IV计算机
+  description: 任务规划系统 IV（MPS IV），为 UNMC 各处的运输机飞行员在任务规划与图表制作方面带来的增强。完全能够自定义其飞行路径与装备配置，以满足其作战需求。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/almayer_props.rsi
@@ -302,20 +296,19 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Corrodible
     isCorrodible: true
 
 - type: entity
   id: RMCTelecomServerRack
   parent: RMCTelecomBusMainframe
-  name: server rack
-  description: The server rack is a piece of hardware used to house servers and other computer equipment. It is designed to be modular and can be easily expanded or reconfigured. #custom
+  name: 服务器机架
+  description: 服务器机架是一种用于容纳服务器和其他计算机设备的硬件。它采用模块化设计，可以轻松扩展或重新配置。                                                                                                                    #custom
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/telecommunication.rsi
@@ -327,12 +320,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Corrodible
     isCorrodible: true
 
@@ -341,7 +333,7 @@
 - type: entity
   id: RMCBlackMappingComputer
   parent: RMCTelecomSensorComputer
-  name: computer
+  name: 计算机
   description: ""
   components:
   - type: Sprite
@@ -356,12 +348,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Corrodible
     isCorrodible: true
 

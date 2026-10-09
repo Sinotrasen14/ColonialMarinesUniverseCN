@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: RMCBinoculars
-  name: binoculars
-  description: A military-issued pair of binoculars.
+  name: 双筒望远镜
+  description: 军方配发的双筒望远镜。
   suffix: RMC
   components:
   - type: Item
@@ -49,8 +49,8 @@
   parent: RMCBinoculars
   id: RMCBinocularsPVE
   suffix: PVE
-  name: tactical monocular
-  description: A military-issued monocular.
+  name: 战术单筒望远镜
+  description: 军用配发的单筒望远镜。
   components:
   # Start _CMU14
   - type: Item
@@ -71,8 +71,8 @@
 - type: entity
   parent: RMCBinoculars
   id: RMCBinocularsCiv
-  name: binoculars
-  description: A pair of binoculars.
+  name: 双筒望远镜
+  description: 一副双筒望远镜。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/binoculars.rsi
@@ -95,8 +95,8 @@
 - type: entity
   parent: RMCBinoculars
   id: RMCRangefinder
-  name: rangefinder
-  description: "A pair of binoculars with a rangefinding function. Click a tile to acquire it's coordinates."
+  name: 测距仪
+  description: "一副具有测距功能的双筒望远镜。点击地块以获取其坐标。"
   components:
   - type: Item
     heldPrefix: rangefinder
@@ -104,8 +104,8 @@
     sprite: _RMC14/Objects/Devices/binoculars.rsi
     layers:
     - state: rangefinder
-      map: [ "enum.ItemCamouflageLayers.Layer" ]
-    - map: [ "light" ]
+      map: ["enum.ItemCamouflageLayers.Layer"]
+    - map: ["light"]
   - type: Rangefinder
   - type: UseDelay
     delay: 0
@@ -118,9 +118,9 @@
     visuals:
       enum.RangefinderLayers.Layer:
         light:
-          Rangefinder: { state: laser_range }
-          Designator: { state: laser_cas }
-          Spotter: { state: laser_spotter }
+          Rangefinder: {state: laser_range}
+          Designator: {state: laser_cas}
+          Spotter: {state: laser_spotter}
   - type: ItemCamouflage
     states:
       Jungle: rangefinder
@@ -132,8 +132,8 @@
 - type: entity
   parent: RMCRangefinder
   id: RMCLaserDesignator
-  name: laser designator
-  description: "A laser designator with two modes: target marking for CAS with IR laser and rangefinding. Click a tile to target something."
+  name: 激光指示器
+  description: "一种具有两种模式的激光指示器：使用红外激光为近距空中支援标记目标，以及测距。点击地块即可瞄准目标。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/binoculars.rsi
@@ -148,8 +148,8 @@
   parent: RMCLaserDesignator
   id: RMCLaserDesignatorPVE
   suffix: PVE
-  name: tactical monocular designator
-  description: Two-mode tactical monocular, developed for use alongside CAS elements and orbital support. Click a tile to target something.
+  name: 战术单目指示器
+  description: 双模式战术单目指示器，为配合近距空中支援部队与轨道支援而开发。点击地块以指定目标。
   components:
   # Start _CMU14
   - type: Item
@@ -164,9 +164,9 @@
     visuals:
       enum.RangefinderLayers.Layer:
         light:
-          Rangefinder: { state: laser_range_mono }
-          Designator: { state: laser_cas_mono }
-          Spotter: { state: laser_spotter_mono }
+          Rangefinder: {state: laser_range_mono}
+          Designator: {state: laser_cas_mono}
+          Spotter: {state: laser_spotter_mono}
   - type: Scope
     zoomLevels:
     - zoom: 1.4
@@ -179,8 +179,8 @@
 - type: entity
   parent: RMCRangefinder
   id: RMCLaserDesignatorSpotter
-  name: spotter's laser designator
-  description: "A specially-designed laser designator, issued to UNMC spotters, with two modes: target marking for CAS with IR laser and rangefinding. Click a tile to target something. Additionally, a trained spotter can laze targets for a UNMC marksman, increasing the speed of target acquisition. A targeting beam will connect the binoculars to the target, but it may inherit the user's cloak, if possible."
+  name: 观察员激光指示器
+  description: "一种专门设计的激光指示器，配发给 UNMC 观察员，具有两种模式：使用红外激光为近距空中支援标记目标，以及测距。点击一个格子即可标记目标。此外，受过训练的观察员可以为 UNMC 精确射手用激光照射目标，提高目标捕获速度。一道瞄准光束会将双筒望远镜与目标连接起来，但如果可能，它可能会继承使用者的隐身效果。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/binoculars.rsi
@@ -202,8 +202,8 @@
 - type: entity
   parent: RMCLaserDesignator
   id: RMCLaserDesignatorScout
-  name: scout laser designator
-  description: "An improved laser designator, issued to UNMC scouts, with two modes: target marking for CAS with IR laser and rangefinding. Click a tile to target something."
+  name: 侦察兵激光指示器
+  description: "一种改进型激光指示器，配发给UNMC侦察兵，具有两种模式：使用红外激光为近距离空中支援标记目标，以及测距。点击地块以指定目标。"
   components:
   - type: Rangefinder
     delay: 3
@@ -212,7 +212,7 @@
 
 - type: entity
   id: RMCRangefinderTarget
-  name: laser
+  name: 激光
   components:
   - type: Transform
     anchored: true
@@ -228,7 +228,7 @@
 - type: entity
   parent: RMCRangefinderTarget
   id: RMCLaserDesignatorTarget
-  description: It's a laser to designate artillery targets, get away from it!
+  description: 这是用于指示炮兵目标的激光，离它远点！
   components:
   - type: Sprite
     sprite: _RMC14/Effects/laser.rsi
@@ -242,7 +242,7 @@
 - type: entity
   parent: RMCRangefinderTarget
   id: RMCLaserDropshipTarget
-  name: blinking laser
+  name: 闪烁激光
   components:
   - type: Sprite
     state: laser_target3

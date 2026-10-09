@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: CMPlatformBase
-  name: platform
-  description: A square metal surface resting on four legs.
+  name: 平台
+  description: 一个由四条腿支撑的方形金属表面。
   components:
   - type: VehicleSmashable
   - type: Transform
@@ -21,8 +21,8 @@
 - type: entity
   abstract: true
   id: CMPlatformBaseBroken
-  name: destroyed platform
-  description: A square metal surface resting on four legs. It has been destroyed.
+  name: 被摧毁的平台
+  description: 一个由四条腿支撑的方形金属表面。它已被摧毁。
   components:
   - type: Transform
     anchored: true
@@ -42,20 +42,18 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 110 # Excessive damage
-        behaviors:
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 90
-        behaviors:
-          - !type:ChangeConstructionNodeBehavior
-            node: platformBroken
-          - !type:DoActsBehavior
-            acts: ["Breakage"]
+    - trigger: !type:DamageTrigger
+        damage: 110   # Excessive damage
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 90
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: platformBroken
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
 
 - type: entity
   parent: CMPlatformBaseBroken
@@ -76,8 +74,8 @@
 - type: entity
   parent: CMPlatformBaseDestructible
   id: CMPlatform
-  name: platform
-  description: A square metal surface resting on four legs.
+  name: 平台
+  description: 一个由四条腿支撑的方形金属表面。
   placement:
     mode: SnapgridCenter
     snap:
@@ -90,8 +88,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,-0.36"
         density: 1500
         mask:
@@ -107,8 +104,8 @@
 - type: entity
   parent: CMPlatformBaseDestructible
   id: CMPlatformCorner
-  name: platform
-  description: A square metal surface resting on four legs.
+  name: 平台
+  description: 一个由四条腿支撑的方形金属表面。
   placement:
     mode: SnapgridCenter
     snap:
@@ -118,8 +115,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,-0.36"
         density: 1500
         mask:
@@ -127,8 +123,7 @@
         layer:
         - TableLayer
       fix2:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "0.36,-0.49,0.49,0.49"
         density: 1500
         mask:
@@ -142,8 +137,8 @@
 - type: entity
   parent: CMPlatformBase
   id: RMCPlatformCornerSmall
-  name: platform
-  description: A square metal surface resting on four legs.
+  name: 平台
+  description: 一个放置在四条腿上的方形金属表面。
   placement:
     mode: SnapgridCenter
     snap:
@@ -155,25 +150,22 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 45 # Excessive damage
-        behaviors:
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 30
-        behaviors:
-          - !type:ChangeConstructionNodeBehavior
-            node: platformBroken
-          - !type:DoActsBehavior
-            acts: ["Breakage"]
+    - trigger: !type:DamageTrigger
+        damage: 45   # Excessive damage
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: platformBroken
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,0.36,-0.36,0.49"
         density: 1500
         mask:
@@ -187,8 +179,8 @@
 - type: entity
   parent: CMPlatformBase
   id: RMCPlatformRound
-  name: platform
-  description: A square metal surface resting on four legs.
+  name: 平台
+  description: 一个由四条腿支撑的方形金属表面。
   placement:
     mode: SnapgridCenter
     snap:
@@ -200,49 +192,44 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 135 # Excessive damage
-        behaviors:
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 110
-        behaviors:
-          - !type:ChangeConstructionNodeBehavior
-            node: platformBroken
-          - !type:DoActsBehavior
-            acts: ["Breakage"]
+    - trigger: !type:DamageTrigger
+        damage: 135   # Excessive damage
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 110
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: platformBroken
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,-0.36"
         density: 1500
         mask:
-          - TableMask
+        - TableMask
         layer:
-          - TableLayer
+        - TableLayer
       fix2:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,-0.36,0.49"
         density: 1500
         mask:
-          - TableMask
+        - TableMask
         layer:
-          - TableLayer
+        - TableLayer
       fix3:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "0.36,-0.49,0.49,0.49"
         density: 1500
         mask:
-          - TableMask
+        - TableMask
         layer:
-          - TableLayer
+        - TableLayer
   - type: Sprite
     state: platform_round
   - type: Climbable
@@ -264,8 +251,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformKutjevo
-  name: raised metal edge
-  description: A raised level of metal, often used to elevate areas above others, or construct bridges. You could probably climb it.
+  name: 凸起的金属边缘
+  description: 升高的金属层，常用于把区域抬高到其他区域之上，或建造桥梁。你大概能爬上去。
   components:
   - type: Sprite
     state: kutjevo_platform
@@ -286,8 +273,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformKutjevoCornerSmall
-  name: raised metal corner
-  description: The corner of what appears to be raised piece of metal, often used to imply the illusion of elevation in non-Euclidean 2d spaces. But you don't know that, you're just a spaceman with a rifle.
+  name: 凸起的金属角
+  description: 看起来像是凸起金属的角，常被用来在非欧几里得二维空间中暗示高度错觉。但你并不知道这些，你只是个拿着步枪的太空人。
   components:
   - type: Sprite
     state: kutjevo_platform_deco
@@ -295,8 +282,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformKutjevoSM
-  name: raised metal edge
-  description: A raised level of metal, often used to elevate areas above others, or construct bridges. You could probably climb it.
+  name: 凸起的金属边缘
+  description: 凸起的金属平台，常用于将某些区域抬高到其他区域之上，或用于建造桥梁。你大概可以爬上去。
   components:
   - type: Sprite
     state: kutjevo_platform_sm
@@ -307,8 +294,8 @@
 - type: entity
   parent: CMPlatformCorner
   id: RMCPlatformKutjevoSMCorner
-  name: raised metal edge
-  description: A raised level of metal, often used to elevate areas above others, or construct bridges. You could probably climb it.
+  name: 凸起的金属边缘
+  description: 凸起的金属层，常用于将某些区域抬高到其他区域之上，或用于建造桥梁。你大概可以爬上去。
   components:
   - type: Sprite
     state: kutjevo_platform_sm_corner
@@ -316,8 +303,8 @@
 - type: entity
   parent: RMCPlatformRound
   id: RMCPlatformKutjevoSMRound
-  name: raised metal edge
-  description: A raised level of metal, often used to elevate areas above others, or construct bridges. You could probably climb it.
+  name: 凸起的金属边缘
+  description: 凸起的金属层，常用于将某些区域抬高到其他区域之上，或用于建造桥梁。你大概可以爬上去。
   components:
   - type: Sprite
     state: kutjevo_platform_sm_round
@@ -325,8 +312,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformKutjevoStairRight
-  name: raised metal edge
-  description: A raised level of metal, often used to elevate areas above others, or construct bridges. You could probably climb it.
+  name: 凸起的金属边缘
+  description: 凸起的一层金属，常用于将某些区域抬高到其他区域之上，或用来建造桥梁。你大概可以爬上去。
   components:
   - type: Sprite
     state: kutjevo_platform_sm_stair
@@ -334,8 +321,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformKutjevoStairLeft
-  name: raised metal edge
-  description: A raised level of metal, often used to elevate areas above others, or construct bridges. You could probably climb it.
+  name: 凸起的金属边缘
+  description: 一层凸起的金属，通常用于将某些区域抬高到其他区域之上，或用于建造桥梁。你大概还能爬上去。
   components:
   - type: Sprite
     state: kutjevo_platform_sm_stair_alt
@@ -343,8 +330,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformShiva
-  name: raised rubber cord platform
-  description: Reliable steel and a polymer rubber substitute. Doesn't crack under cold weather.
+  name: 高架橡胶绳平台
+  description: 可靠的钢材和聚合物橡胶替代品。在寒冷天气下不会开裂。
   components:
   - type: Sprite
     state: shiva
@@ -355,8 +342,8 @@
 - type: entity
   parent: CMPlatformBroken
   id: RMCPlatformShivaBroken
-  name: destroyed rubber cord platform
-  description: Reliable steel and a polymer rubber substitute. Doesn't crack under cold weather. It has been destroyed.
+  name: 损毁的橡胶绳平台
+  description: 可靠的钢材与聚合物橡胶替代品。在寒冷天气下不会开裂。它已被摧毁。
   components:
   - type: Sprite
     state: shiva_broken
@@ -367,8 +354,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformShivaCornerSmall
-  name: raised rubber cord platform
-  description: Reliable steel and a polymer rubber substitute. Doesn't crack under cold weather.
+  name: 凸起橡胶绳平台
+  description: 可靠的钢材和聚合物橡胶替代品。在寒冷天气下不会开裂。
   components:
   - type: Sprite
     state: shiva_deco
@@ -376,8 +363,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformKutjevoRock
-  name: raised rock edge
-  description: A collection of stones and rocks that provide ample grappling and vaulting opportunity. Indicates a change in elevation. You could probably climb it.
+  name: 凸起的岩石边缘
+  description: 一堆石头和岩石，提供了充足的抓攀和翻越机会。表示地势有高低变化。你大概可以爬上去。
   components:
   - type: Sprite
     state: kutjevo_rock
@@ -390,8 +377,8 @@
 - type: entity
   parent: CMPlatformBroken
   id: RMCPlatformKutjevoRockBroken
-  name: destroyed raised rock edge
-  description: A collection of stones and rocks that provide ample grappling and vaulting opportunity. Indicates a change in elevation. You could probably climb it. It has been destroyed.
+  name: 被摧毁的凸起岩石边缘
+  description: 一堆石块和岩石，提供了充足的攀爬和翻越机会。表明地势有高低变化。你大概可以爬上去。它已被摧毁。
   components:
   - type: Sprite
     state: kutjevo_rock_broken
@@ -402,8 +389,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformKutjevoRockCornerSmall
-  name: raised rock corner
-  description: A collection of stones and rocks that cap the edge of some conveniently 1-meter-long lengths of perfectly climbable chest high walls.
+  name: 凸起的岩石拐角
+  description: 一堆石块和岩石，覆盖在若干段长度恰好为一米、非常适合攀爬的齐胸高墙的边缘上。
   components:
   - type: Sprite
     state: kutjevo_rock_deco
@@ -413,8 +400,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformHybrisaEdge
-  name: raised metal edge
-  description: A raised level of metal, often used to elevate areas above others. You could probably climb it.
+  name: 凸起的金属边缘
+  description: 凸起的一层金属，通常用于将某些区域抬高到其他区域之上。你大概可以爬上去。
   components:
   - type: Sprite
     state: hybrisametal
@@ -435,8 +422,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformHybrisaEdgeCornerSmall
-  name: raised metal corner
-  description: A raised level of metal, often used to elevate areas above others. This is the corner.
+  name: 凸起金属角
+  description: 凸起的金属层，通常用于将某些区域抬升到其他区域之上。这就是角。
   components:
   - type: Sprite
     state: hybrisametal_deco
@@ -444,8 +431,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformHybrisa
-  name: raised metal platform
-  description: A raised level of metal, often used to elevate areas above others. You could probably climb it.
+  name: 升高的金属平台
+  description: 一个升高的金属平台，常用于将某些区域抬高到其他区域之上。你大概可以爬上去。
   components:
   - type: Sprite
     state: hybrisaplatform
@@ -466,8 +453,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformHybrisaCornerSmall
-  name: raised metal corner
-  description: A raised level of metal, often used to elevate areas above others. This is the corner.
+  name: 凸起金属角
+  description: 凸起的金属层，通常用于将某些区域抬高到其他区域之上。这就是该角。
   components:
   - type: Sprite
     state: hybrisaplatform_deco
@@ -475,8 +462,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformHybrisaTwo
-  name: raised metal platform
-  description: A raised level of metal, often used to elevate areas above others. You could probably climb it.
+  name: 高架金属平台
+  description: 一个高起的金属平台，通常用于将某些区域抬高到其他区域之上。你大概能爬上去。
   components:
   - type: Sprite
     state: hybrisaplatform2
@@ -497,8 +484,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformHybrisaTwoCornerSmall
-  name: raised metal corner
-  description: A raised level of metal, often used to elevate areas above others. This is the corner.
+  name: 凸起金属角
+  description: 凸起的金属层，通常用于将某些区域抬高至其他区域之上。这是角。
   components:
   - type: Sprite
     state: hybrisaplatform_deco2
@@ -506,8 +493,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformHybrisaThree
-  name: raised metal platform
-  description: A raised level of metal, often used to elevate areas above others. You could probably climb it.
+  name: 金属高台
+  description: 一个抬高的金属平台，通常用于将区域抬升到其他区域之上。你大概能爬上去。
   components:
   - type: Sprite
     state: hybrisaplatform3
@@ -528,8 +515,8 @@
 - type: entity
   parent: CMPlatformCorner
   id: RMCPlatformHybrisaThreeCorner
-  name: raised metal platform
-  description: A raised level of metal, often used to elevate areas above others. You could probably climb it.
+  name: 凸起的金属平台
+  description: 一个凸起的金属平台，通常用于将某些区域抬高到其他区域之上。你大概可以爬上去。
   components:
   - type: Sprite
     state: hybrisaplatform3_corner
@@ -537,8 +524,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformHybrisaThreeStair
-  name: raised metal platform
-  description: A raised level of metal, often used to elevate areas above others. You could probably climb it.
+  name: 升高的金属平台
+  description: 一个升高的金属平台，常用于将某些区域抬高到其他区域之上。你大概可以爬上去。
   components:
   - type: Sprite
     state: hybrisaplatform3_stair
@@ -546,8 +533,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformHybrisaThreeStairAlt
-  name: raised metal platform
-  description: A raised level of metal, often used to elevate areas above others. You could probably climb it.
+  name: 升高的金属平台
+  description: 升高的金属平台，通常用于将某些区域抬高到其他区域之上。你大概可以爬上去。
   components:
   - type: Sprite
     state: hybrisaplatform3_stair_alt
@@ -555,8 +542,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformHybrisaThreeCornerSmall
-  name: raised metal corner
-  description: A raised level of metal, often used to elevate areas above others. This is the corner.
+  name: 凸起金属角
+  description: 一层凸起的金属，通常用于将某些区域抬高到其他区域之上。这是角部。
   components:
   - type: Sprite
     state: hybrisaplatform_deco3
@@ -564,8 +551,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformHybrisaRock
-  name: raised rock edges
-  description: A collection of stones and rocks that provide ample grappling and vaulting opportunity. Indicates a change in elevation. You could probably climb it.
+  name: 凸起的岩石边缘
+  description: 一堆石头和岩石，提供了充足的抓握和翻越机会。表示地势的高低变化。你大概能爬上去。
   components:
   - type: Sprite
     state: kutjevo_rockdark
@@ -586,8 +573,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformHybrisaRockCornerSmall
-  name: raised rock corner
-  description: A collection of stones and rocks that cap the edge of some conveniently 1-meter-long lengths of perfectly climbable chest high walls.
+  name: 凸起的岩石转角
+  description: 一堆石头和岩石，覆盖在一些恰好1米长、完全可攀爬的齐胸高墙段的边缘上。
   components:
   - type: Sprite
     state: kutjevo_rock_decodark
@@ -595,8 +582,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformHybrisaStone
-  name: raised stone platform
-  description: A raised level of stone, often used to elevate areas above others. You could probably climb it.
+  name: 石制高台
+  description: 一处隆起的石台，常用于将某些区域垫高到其他区域之上。你大概可以爬上去。
   components:
   - type: Sprite
     state: stone
@@ -617,8 +604,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformHybrisaStoneCornerSmall
-  name: raised stone corner
-  description: A raised level of stone, often used to elevate areas above others. This is the corner.
+  name: 抬高石角
+  description: 一处抬高的石台，常用于将某些区域抬高到其他区域之上。这是转角。
   components:
   - type: Sprite
     state: stone_deco
@@ -626,8 +613,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformSandstone
-  name: sandstone platform
-  description: A raised level of metal, often used to elevate areas above others, or construct bridges. You could probably climb it.
+  name: 砂岩平台
+  description: 金属制成的高台，常用于将某些区域抬升到其他区域之上，或用于建造桥梁。你大概可以爬上去。
   components:
   - type: Sprite
     state: stone
@@ -650,8 +637,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformSandstoneCornerSmall
-  name: sandstone platform corner
-  description: The corner of what appears to be raised piece of metal, often used to imply the illusion of elevation in non-Euclidean 2d spaces. But you don't know that, you're just a spaceman with a rifle.
+  name: 砂岩平台角落
+  description: 看起来像一块凸起金属的角，常被用来在非欧几里得二维空间中营造高度错觉。但你不知道这些，你只是个拿着步枪的太空人。
   components:
   - type: Sprite
     state: stone_deco
@@ -660,7 +647,7 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformSandstoneStairRight
-  name: sandstone platform stair
+  name: 砂岩平台楼梯
   components:
   - type: Sprite
     state: stone_stair
@@ -669,7 +656,7 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformSandstoneStairLeft
-  name: sandstone platform stair
+  name: 砂岩平台楼梯
   components:
   - type: Sprite
     state: stone_stair_alt
@@ -678,8 +665,8 @@
 - type: entity
   parent: CMPlatform
   id: RMCPlatformAlmayer
-  name: raised metal edge
-  description: A raised level of metal, often used to elevate areas above others, or construct bridges. You could probably climb it.
+  name: 凸起的金属边缘
+  description: 一层凸起的金属，通常用于将某些区域抬高到其他区域之上，或用于建造桥梁。你大概可以爬上去。
   suffix: Almayer
   components:
   - type: Sprite
@@ -688,8 +675,8 @@
 - type: entity
   parent: RMCPlatformCornerSmall
   id: RMCPlatformAlmayerCorner
-  name: raised metal corner
-  description: A raised level of metal, often used to elevate areas above others. This is the corner.
+  name: 凸起金属角
+  description: 凸起的金属层，通常用于将某些区域抬高到其他区域之上。这是角部。
   suffix: Almayer
   components:
   - type: Sprite

@@ -1,6 +1,6 @@
-﻿- type: entity
+- type: entity
   abstract: true
-  parent: [ BaseItem, CMBaseWeaponGun, RMCBaseAttachableHolder ]
+  parent: [BaseItem, CMBaseWeaponGun, RMCBaseAttachableHolder]
   id: RMCBaseWeaponShotgun
   components:
   - type: Item
@@ -51,7 +51,7 @@
       tags:
       - RMCShellShotgun
     capacity: 9
-    proto: null
+    proto:
     soundInsert:
       collection: CMShotgunLoad
   - type: ContainerContainer
@@ -93,14 +93,14 @@
     sprite: Objects/Weapons/Guns/Shotguns/db_shotgun.rsi
     layers:
     - state: base
-      map: [ "enum.BreechVisuals.Open" ]
+      map: ["enum.BreechVisuals.Open"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.BreechVisuals.Open:
         enum.BreechVisuals.Open:
-          True: { state: bolt-open }
-          False: { state: base }
+          true: {state: bolt-open}
+          false: {state: base}
   - type: BallisticAmmoProvider
     cycleable: true
     capacity: 2
@@ -116,8 +116,8 @@
   abstract: true
   parent: BaseCartridge
   id: CMShellShotgunBase
-  name: handful of shotgun shell
-  description: A handful of rounds to reload on the go.
+  name: 一把霰弹枪子弹
+  description: 一把可在行进中用于装填的弹药。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Handfuls/shotgun_handfuls.rsi

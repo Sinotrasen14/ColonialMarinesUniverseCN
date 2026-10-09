@@ -1,8 +1,8 @@
 - type: entity
   parent: ColMarTechBase
   id: VehicleAPCSupplyVendor
-  name: ColMarTech automated supply vendor
-  description: An automated supply rack for APC crews.
+  name: ColMarTech自动补给售货机
+  description: 为APC乘员提供的自动补给架。
   components:
   - type: ApcPowerReceiver
     powerLoad: 0
@@ -18,7 +18,7 @@
     hackable: false
     ejectContentsOnDestruction: true
     sections:
-    - name: Primary firearms
+    - name: 主武器
       entries:
       - id: WeaponRifleM4SPR
         amount: 2
@@ -28,7 +28,7 @@
         amount: 3
       - id: RMCWeaponRifleM54C
         amount: 4
-    - name: Primary ammunition
+    - name: 主要弹药
       entries:
       - id: RMCBoxShotgunFlechette
         amount: 0
@@ -42,7 +42,7 @@
         amount: 0
       - id: CMMagazineRifleM54C
         amount: 0
-    - name: Sidearms
+    - name: 副武器
       entries:
       - id: RMCWeaponPistolM77Empty
         amount: 2
@@ -50,7 +50,7 @@
         amount: 2
       - id: CMWeaponPistolM1984Empty
         amount: 3
-    - name: Sidearm ammunition
+    - name: 副武器弹药
       entries:
       - id: CMMagazinePistolM77AP
         amount: 0
@@ -60,7 +60,7 @@
         amount: 0
       - id: RMCMagazinePistolM13
         amount: 0
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: CMGrenadeFragOld
         amount: 0
@@ -76,7 +76,7 @@
         amount: 0
       - id: RMC40MMGrenadeM74AGMS
         amount: 0
-    - name: Ammunition boxes
+    - name: 弹药箱
       entries:
       - id: RMCBoxShellsBuckshot
         amount: 0
@@ -92,7 +92,7 @@
         amount: 0
       - id: RMCBoxMagazineSMGM63AP
         amount: 0
-    - name: Building materials
+    - name: 建筑材料
       entries:
       - id: RMCSheetCardboard1
         amount: 10
@@ -106,13 +106,13 @@
         amount: 0
       - id: CMSandbagFull5
         amount: 0
-    - name: Armor
+    - name: 护甲
       entries:
       - id: ArmorHelmetM10
         amount: 0
       - id: RMCArmorM3MediumCarrier
         amount: 0
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: RMCBoxMRE
         amount: 2

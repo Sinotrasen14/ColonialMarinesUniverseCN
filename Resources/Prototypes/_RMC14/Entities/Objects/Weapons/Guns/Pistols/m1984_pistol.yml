@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ RMCBaseSlideMagazineVisuals, CMWeaponPistolBase ]
+  parent: [RMCBaseSlideMagazineVisuals, CMWeaponPistolBase]
   id: CMWeaponPistolM1984
-  name: M4A3 service pistol
-  description: An M4A3 Service Pistol, once the standard issue sidearm of the Marines but has recently been replaced with the Mod 88 combat pistol. Fires 9mm pistol rounds.
+  name: M4A3制式手枪
+  description: M4A3制式手枪，曾是海军陆战队的标准配发副武器，但最近已被Mod 88战斗手枪取代。发射9毫米手枪弹。
   components:
   - type: Tag
     tags:
@@ -22,7 +22,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -71,7 +71,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -84,14 +84,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMMagazinePistolM1984
-  name: M4A3 magazine (9mm)
+  name: M4A3 弹匣（9毫米）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - CMMagazinePistolM1984
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgePistol9mm
@@ -108,14 +108,14 @@
     magState: mag
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistol9MM
-    
+
 - type: Tag
   id: CMMagazinePistolM1984
 
 - type: entity
   parent: CMBulletBase
   id: CMBulletPistol9mm
-  name: bullet (9mm)
+  name: 子弹（9毫米）
   components:
   - type: Projectile
     damage:
@@ -126,7 +126,7 @@
 
 - type: entity
   id: CMCartridgePistol9mm
-  name: cartridge (9mm)
+  name: 弹药（9毫米）
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -140,8 +140,8 @@
 - type: entity
   parent: CMMagazinePistolM1984
   id: RMCMagazinePistolM1984AP
-  name: M4A3 AP magazine (9mm)
-  description: A pistol magazine. This one contains armor-piercing bullets, which have noticeably higher stopping power on well-armored targets, and noticeably less on unarmored or lightly-armored targets.
+  name: M4A3 穿甲弹匣（9毫米）
+  description: 一把手枪弹匣。这个弹匣装有穿甲子弹，对重装甲目标具有显著更高的停止作用，对无装甲或轻装甲目标则显著更低。
   components:
   - type: Tag
     tags:
@@ -165,7 +165,7 @@
     magState: mag
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistol9MMAP
-    
+
 - type: Tag
   id: RMCMagazinePistolM1984AP
 
@@ -173,8 +173,8 @@
 - type: entity
   parent: CMMagazinePistolM1984
   id: RMCMagazinePistolM1984HP
-  name: M4A3 hollowpoint magazine (9mm)
-  description: A hollow-point 9mm pistol magazine for the M4A3. These hollow-point bullets have noticeably higher stopping power on unarmored targets, and noticeably less on armored targets.
+  name: M4A3空尖弹弹匣（9毫米）
+  description: M4A3用的9毫米空尖弹手枪弹匣。这些空尖弹对无护甲目标的停止作用明显更高，对有护甲目标则明显更低。
   components:
   - type: BallisticAmmoProvider
     whitelist:
@@ -194,7 +194,7 @@
 - type: entity
   parent: CMCartridgePistol9mm
   id: RMCCartridgePistol9mmHP
-  name: cartridge (9mm HP)
+  name: 子弹（9毫米空尖弹）
   components:
   - type: Tag
     tags:
@@ -206,7 +206,7 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletPistol9mmHP
-  name: bullet (9mm HP)
+  name: 子弹（9毫米空尖弹）
   components:
   - type: Projectile
     damage:

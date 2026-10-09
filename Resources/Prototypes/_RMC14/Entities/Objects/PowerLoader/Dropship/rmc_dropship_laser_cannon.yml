@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCDropshipAttachmentWeapon
   id: RMCDropshipAttachmentLaserCannon
-  name: LWU-6B Laser Cannon
-  description: State of the art technology recently acquired by the UNMC, it fires a battery-fed pulsed laser beam at near lightspeed setting on fire everything it touches. Moving this will require some sort of lifter. Accepts the BTU-17/LW Hi-Cap Laser Batteries.
+  name: LWU-6B激光炮
+  description: 这是UNMC最近获得的最先进技术，它能发射由电池供电的脉冲激光束，速度接近光速，点燃它所触及的一切。移动它需要某种升降装置。可使用BTU-17/LW高容量激光电池。
   components:
   - type: Sprite
     layers:
@@ -30,13 +30,13 @@
 - type: entity
   parent: RMCDropshipAttachmentAmmo
   id: RMCDropshipAttachmentAmmoLaserCannon
-  name: BTU-17/LW Hi-Cap Laser Battery
-  description: A high-capacity laser battery used to power laser beam weapons.  Can be loaded into the LWU-6B Laser Cannon.
+  name: BTU-17/LW 大容量激光电池
+  description: 一种大容量激光电池，用于为激光束武器供电。可装入 LWU-6B 激光炮。
   components:
   - type: Sprite
     layers:
     - state: laser_battery_10
-      map: [ "enum.DropshipAmmoVisuals.Fill"]
+      map: ["enum.DropshipAmmoVisuals.Fill"]
   - type: DropshipAmmo
     ammoType: laser_battery
     rounds: 100

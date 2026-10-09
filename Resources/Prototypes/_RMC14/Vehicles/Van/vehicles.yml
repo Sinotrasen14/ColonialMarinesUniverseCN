@@ -1,8 +1,8 @@
 - type: entity
   id: VehicleVanBase
   abstract: true
-  name: van
-  description: A rugged transport van.
+  name: 厢式货车
+  description: 一辆坚固的运输厢式货车。
   components:
   - type: Vehicle
     movementKind: Grid
@@ -75,8 +75,7 @@
   - type: Fixtures
     fixtures:
       world:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -0.425,-1.2,0.425,1.2
         density: 1000
         mask:
@@ -87,8 +86,7 @@
         layer:
         - LargeMobLayer
       mob:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -0.425,-1.2,0.425,1.2
         density: 1000
         mask:
@@ -109,12 +107,12 @@
     drawdepth: Mobs
     sprite: _RMC14/Structures/Vehicles/van.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: van_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: SpriteMovement
     movementLayers:
@@ -147,7 +145,7 @@
       wheel-1: !type:ContainerSlot
         showEnts: false
         occludes: true
-        ent: null
+        ent:
   - type: HardpointSlots
     vehicleFamily: Van
     slots:
@@ -193,8 +191,8 @@
 - type: entity
   parent: VehicleVanBase
   id: VehicleCLFVan
-  name: CLF van
-  description: A rugged transport van painted in CLF colors.
+  name: CLF 运输车
+  description: 一辆涂有 CLF 配色的坚固运输车。
   components:
   - type: Damageable
     damageModifierSet: VehicleFrameCLFVan
@@ -203,12 +201,12 @@
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/CLF_van.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: van_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: VehicleSound
     collisionSoundCooldown: 1.5
@@ -232,8 +230,8 @@
 - type: entity
   id: VehicleBoxVanBase
   abstract: true
-  name: box van
-  description: A rugged transport van fitted with a box body.
+  name: 厢式货车
+  description: 一种坚固的运输货车，配有厢式车身。
   components:
   - type: Vehicle
     movementKind: Grid
@@ -301,8 +299,7 @@
   - type: Fixtures
     fixtures:
       world:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -0.425,-0.35,0.425,1.4
         density: 1000
         mask:
@@ -313,8 +310,7 @@
         layer:
         - LargeMobLayer
       mob:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -0.425,-0.35,0.425,1.4
         density: 1000
         mask:
@@ -336,12 +332,12 @@
     drawdepth: Mobs
     sprite: _RMC14/Structures/Vehicles/box_van.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: van_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: SpriteMovement
     movementLayers:
@@ -374,7 +370,7 @@
       wheel-1: !type:ContainerSlot
         showEnts: false
         occludes: true
-        ent: null
+        ent:
   - type: HardpointSlots
     vehicleFamily: Van
     slots:
@@ -423,8 +419,8 @@
 - type: entity
   parent: VehicleBoxVanBase
   id: VehiclePizzaVan
-  name: pizza van
-  description: A van repurposed for pizza delivery, still sturdy enough for transport.
+  name: 披萨送货车
+  description: 一辆被改装用于披萨配送的厢式货车，依然足够坚固，可用于运输。
   components:
   - type: PointLight
     radius: 6
@@ -432,12 +428,12 @@
     sprite: _RMC14/Structures/Vehicles/pizza_van.rsi
     offset: "0,0.5"
     layers:
-    - map: [ base ]
+    - map: [base]
       state: van_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: VehicleEnter
     interiorPath: /Maps/_RMC14/Vehicles/pizza_van_interior.yml
@@ -459,18 +455,18 @@
 - type: entity
   parent: VehicleVanBase
   id: VehicleSPPVan
-  name: Kheshig-1 LMP
-  description: A mine-resistant, multi-purpose vehicle utilized by the UPP for groundside operations.
+  name: 怯薛-1 LMP
+  description: 一种由 UPP 用于地面行动的防雷多用途载具。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/sppvan.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: sppvan_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: VehicleEnter
     interiorPath: /Maps/_RMC14/Vehicles/spp_van_interior.yml
@@ -502,30 +498,30 @@
 - type: entity
   parent: VehicleSPPVan
   id: VehicleSPPVanArmed
-  name: Kheshig-1 LMP (armed)
-  description: A mine-resistant, multi-purpose vehicle utilized by the UPP for groundside operations.
+  name: 怯薛-1 LMP（武装型）
+  description: UPP用于地面作战的防雷多用途车辆。
   components:
   - type: ContainerContainer
     containers:
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     layers:
-    - map: [ base ]
+    - map: [base]
       state: sppvant_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ secondary ]
+    - map: [secondary]
       state: SECONDARY
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: VehicleHardpointVisuals
     layers:
@@ -576,17 +572,17 @@
 - type: entity
   parent: VehicleSPPVan
   id: VehicleSPPVanMedical
-  name: Kheshig-1 LMP (medical)
-  description: A mine-resistant, multi-purpose vehicle utilized by the UPP for groundside operations.
+  name: Kheshig-1 LMP（医疗型）
+  description: 一种由UPP用于地面行动的防雷多用途车辆。
   components:
   - type: Sprite
     layers:
-    - map: [ base ]
+    - map: [base]
       state: sppvan_medical
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: VehicleEnter
     interiorPath: /Maps/_RMC14/Vehicles/spp_van_medical_interior.yml
@@ -608,17 +604,17 @@
 - type: entity
   parent: VehicleSPPVan
   id: VehicleSPPVanPrisoner
-  name: Kheshig-1 LMP (prisoner transport)
-  description: A mine-resistant, multi-purpose vehicle utilized by the UPP for groundside operations.
+  name: Kheshig-1 LMP（囚犯运输型）
+  description: UPP用于地面行动的一种防雷多用途载具。
   components:
   - type: Sprite
     layers:
-    - map: [ base ]
+    - map: [base]
       state: sppvan_prisoner
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: VehicleEnter
     interiorPath: /Maps/_RMC14/Vehicles/spp_van_prisoner_interior.yml
@@ -640,20 +636,20 @@
 - type: entity
   parent: VehicleBoxVanBase
   id: VehicleSPPVanLogistics
-  name: Kheshig-1 LMP (logistics)
-  description: A mine-resistant, multi-purpose vehicle utilized by the UPP for groundside operations.
+  name: 怯薛-1 LMP（后勤）
+  description: 一种由UPP用于地面行动的防雷多用途载具。
   components:
   - type: PointLight
     radius: 6
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/sppvan_logistics.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: sppvan_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: VehicleEnter
     interiorPath: /Maps/_RMC14/Vehicles/spp_van_logistics_interior.yml

@@ -1,16 +1,16 @@
-﻿- type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: AK-4047 assault rifle
+- type: entity
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: AK-4047突击步枪
   id: RMCWeaponRifleAK4047
-  description: A UPP assault rifle, designed to mimic the performance of the American M41A. The 4047 is built with a more utilitarian approach, and can survive use in harsh environments, as long as its user maintains it regularly. Many civilian enthusiasts claim the weapon is nigh invincible, but anyone who has ever served with it will tell you nothing could be further from the truth.
+  description: UPP突击步枪，旨在模仿美国M41A的性能。4047的设计更注重实用性，只要使用者定期维护，就能在恶劣环境中使用。许多民用爱好者声称这种武器几乎无敌，但任何曾带着它服役的人都会告诉你，事实远非如此。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/ak4047.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/ak4047.rsi
   - type: ContainerContainer
@@ -41,7 +41,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleAK4047
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -149,14 +149,14 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleAK4047
-  name: "AK4047 magazine (10x24mm)"
+  name: "AK4047弹匣（10x24mm）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleAK4047
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mm
@@ -176,7 +176,7 @@
 - type: entity
   parent: RMCMagazineRifleAK4047
   id: RMCMagazineRifleAK4047AP
-  name: "AK4047 AP magazine (10x24mm)"
+  name: "AK4047 AP弹匣（10×24mm）"
   suffix: AP
   components:
   - type: Tag
@@ -203,7 +203,7 @@
 - type: entity
   parent: RMCMagazineRifleAK4047
   id: RMCMagazineRifleAK4047Incendiary
-  name: "AK4047 Incendiary magazine (10x24mm)"
+  name: "AK4047 燃烧弹弹匣（10×24毫米）"
   suffix: Incendiary
   components:
   - type: Tag
@@ -230,7 +230,7 @@
 - type: entity
   parent: RMCMagazineRifleAK4047
   id: RMCMagazineRifleAK4047HEAP
-  name: "AK4047 HEAP magazine (10x24mm)"
+  name: "AK4047 HEAP 弹匣（10x24mm）"
   suffix: HEAP
   components:
   - type: Tag

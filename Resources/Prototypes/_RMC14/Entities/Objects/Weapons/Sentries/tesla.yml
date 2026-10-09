@@ -17,8 +17,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.25
         density: 20
         mask:
@@ -26,8 +25,7 @@
         restitution: 0.3
         friction: 0.2
       sentry:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 20
         layer:
@@ -44,9 +42,9 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: defense_base_off
-    - map: [ "sentry" ]
+    - map: ["sentry"]
       state: normal_tesla_coil_handheld
   - type: Icon
     sprite: _RMC14/Objects/Weapons/Sentries/tesla.rsi
@@ -57,34 +55,33 @@
     visuals:
       enum.SentryLayers.Layer:
         base:
-          Item: { state: "", visible: false }
-          Off: { state: defense_base_off, visible: true }
-          On: { state: defense_base, visible: true }
+          Item: {state: "", visible: false}
+          Off: {state: defense_base_off, visible: true}
+          On: {state: defense_base, visible: true}
         sentry:
-          Item: { state: normal_tesla_coil_handheld }
-          Off: { state: normal_tesla_coil }
-          On: { state: normal_tesla_coil_on }
+          Item: {state: normal_tesla_coil_handheld}
+          Off: {state: normal_tesla_coil}
+          On: {state: normal_tesla_coil_on}
   - type: Damageable
   - type: Injurable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: UserInterface
     interfaces:
       enum.SentryUiKey.Key:
         type: SentryUpgradeBui
   - type: DeviceNetwork
   - type: DeviceLinkSink
-    ports: [ SentryControl ]
+    ports: [SentryControl]
   - type: RMCHealthExaminable
     speciesType: Mechanical
   - type: ShortExamine
@@ -96,9 +93,9 @@
     upgrades:
     - RMCTeslaMicro
     - RMCTeslaOverclocked
-    startingMagazine: null
+    startingMagazine:
     containerSlotId: ""
-    magazineTag: null
+    magazineTag:
     maxDeviation: 180
   - type: RMCTeslaCoil
   - type: InteractedBlacklist
@@ -118,9 +115,9 @@
   parent: RMCBaseTesla
   id: RMCTesla
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 21S tesla coil
+  name: 21S特斯拉线圈
   # cmu edit end
-  description: A perfected way of producing high-voltage, low-current and high-frequency electricity. Minor modifications allow it to only hit hostile targets with a devastating shock.
+  description: 一种产生高压、低电流和高频电力的完善方法。只需稍作修改，便可使其仅对敌对目标造成毁灭性电击。
   components:
   - type: UserIFF
     factions: []
@@ -133,9 +130,9 @@
   parent: RMCTesla
   id: RMCTeslaMicro
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 25S micro tesla coil
+  name: 25S微型特斯拉线圈
   # cmu edit end
-  description: A perfected way of producing high-voltage, low-current and high-frequency electricity. Minor modifications allow it to only hit hostile targets with a devastating shock. This one is smaller and more lightweight.
+  description: 一种经过完善的产生高压、低电流和高频电力的方式。稍作改装后，它只会以毁灭性的电击命中敌对目标。这一台更小，也更轻。
   components:
   - type: UserIFF
     factions: []
@@ -145,9 +142,9 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: defense_base_off
-    - map: [ "sentry" ]
+    - map: ["sentry"]
       state: micro_tesla_coil_handheld
   - type: Icon
     sprite: _RMC14/Objects/Weapons/Sentries/tesla.rsi
@@ -157,18 +154,17 @@
     visuals:
       enum.SentryLayers.Layer:
         base:
-          Item: { state: "", visible: false }
-          Off: { state: defense_base_off, visible: true }
-          On: { state: defense_base, visible: true }
+          Item: {state: "", visible: false}
+          Off: {state: defense_base_off, visible: true}
+          On: {state: defense_base, visible: true}
         sentry:
-          Item: { state: micro_tesla_coil_handheld }
-          Off: { state: micro_tesla_coil }
-          On: { state: micro_tesla_coil_on }
+          Item: {state: micro_tesla_coil_handheld}
+          Off: {state: micro_tesla_coil}
+          On: {state: micro_tesla_coil_on}
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.25
         density: 20
         mask:
@@ -176,8 +172,7 @@
         restitution: 0.3
         friction: 0.2
       sentry:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 20
         layer:
@@ -186,7 +181,7 @@
   - type: Sentry
     deployDelay: 0.75
     undeployDelay: 0.75
-    upgrades: null
+    upgrades:
   - type: RMCTeslaCoil
     dazeDuration: 0
     fireDelay: 1
@@ -195,9 +190,9 @@
   parent: RMCTesla
   id: RMCTeslaOverclocked
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 21S overclocked tesla coil
+  name: 21S超频特斯拉线圈
   # cmu edit end
-  description: A perfected way of producing high-voltage, low-current and high-frequency electricity. Minor modifications allow it to only hit hostile targets with a devastating shock. This one is significantly overclocked, providing a lot more voltage at the cost of speed.
+  description: 一种经过完善的产生高压、低电流和高频电力的方法。稍作修改后，它便只会以毁灭性的电击击中敌对目标。这一台已大幅超频，以牺牲速度为代价，提供多得多的电压。
   components:
   - type: UserIFF
     factions: []
@@ -207,9 +202,9 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: defense_base_off
-    - map: [ "sentry" ]
+    - map: ["sentry"]
       state: stun_tesla_coil_handheld
   - type: Icon
     sprite: _RMC14/Objects/Weapons/Sentries/tesla.rsi
@@ -219,15 +214,15 @@
     visuals:
       enum.SentryLayers.Layer:
         base:
-          Item: { state: "", visible: false }
-          Off: { state: defense_base_off, visible: true }
-          On: { state: defense_base, visible: true }
+          Item: {state: "", visible: false}
+          Off: {state: defense_base_off, visible: true}
+          On: {state: defense_base, visible: true}
         sentry:
-          Item: { state: stun_tesla_coil_handheld }
-          Off: { state: stun_tesla_coil }
-          On: { state: stun_tesla_coil_on }
+          Item: {state: stun_tesla_coil_handheld}
+          Off: {state: stun_tesla_coil}
+          On: {state: stun_tesla_coil_on}
   - type: Sentry
-    upgrades: null
+    upgrades:
   - type: RMCTeslaCoil
     fireDelay: 3
     stunDuration: 2
@@ -237,7 +232,7 @@
 - type: entity
   parent: RMCTesla
   id: RMCTeslaTSE
-  name: L10D tesla coil
+  name: L10D 特斯拉线圈
   suffix: PVE, RCM IFF
   components:
   - type: EntityIFF

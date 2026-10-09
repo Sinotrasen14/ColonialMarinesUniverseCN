@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseStructureCorrodible
   id: CMWindoorAssembly
-  name: windoor assembly
-  description: It opens, it closes, and you can see through it!
+  name: 门窗组件
+  description: 它能打开，能关上，还能透过它看外面！
   placement:
     mode: SnapgridCenter
   components:
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,-0.2"
         density: 40
         mask:
@@ -29,8 +28,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:DoActsBehavior
@@ -53,15 +51,14 @@
 - type: entity
   parent: CMWindoorAssembly
   id: CMWindoorAssemblySecure
-  name: secure windoor assembly
-  description: It opens, it closes, and you can see through it! This one looks tough.
+  name: 安全玻璃门组件
+  description: 它可以打开，可以关闭，还能透过它看到另一边！这个看起来很结实。
   components:
   - type: Sprite
     state: secure_assembly01
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 600
       behaviors:
       - !type:DoActsBehavior

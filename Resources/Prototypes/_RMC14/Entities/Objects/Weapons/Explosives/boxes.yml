@@ -2,15 +2,15 @@
   abstract: true
   parent: CMPacketBase
   id: RMCBoxSmallBase
-  name: packet
+  name: 数据包
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/packets.rsi
     layers:
     - state: minebox
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: minebox_e
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]
   - type: Storage
     maxItemSize: Small
     grid:
@@ -25,9 +25,9 @@
 - type: entity
   parent: RMCBoxSmallBase
   id: RMCBoxClaymoreMineFilled
-  name: M20 mine box
+  name: M20 地雷箱
   suffix: Filled
-  description: A secure box holding five M20 anti-personnel proximity mines.
+  description: 一个装有五枚M20反步兵近炸地雷的安全箱。
   components:
   - type: StorageFill
     contents:
@@ -37,9 +37,9 @@
 - type: entity
   parent: RMCBoxSmallBase
   id: AU14BoxClaymoreMineIncendiaryFilled
-  name: M20 incendiary mine box
+  name: M20燃烧地雷箱
   suffix: Filled
-  description: A secure box holding five M20 incendiary anti-personnel proximity mines.
+  description: 一个装有五枚M20燃烧反步兵近炸地雷的保险箱。
   components:
   - type: StorageFill
     contents:
@@ -49,6 +49,6 @@
     sprite: _RMC14/Objects/Storage/packets.rsi
     layers:
     - state: mineboxi
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
     - state: minebox_ei
-      map: [ "openLayer", "emptyLayer" ]
+      map: ["openLayer", "emptyLayer"]

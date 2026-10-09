@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: CMFoodBase
   id: CMBarFoodBase
@@ -10,8 +10,8 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
+      - ReagentId: Nutriment
+        Quantity: 8
   - type: Item
     size: Tiny
     sprite: _RMC14/Objects/Consumable/Food/bar.rsi
@@ -25,8 +25,8 @@
 - type: entity
   parent: CMBarFoodBase
   id: CMMarineProteinBar
-  name: stale Marine protein bar
-  description: The most fake-looking protein bar you have ever laid eyes on, covered in a substitution chocolate. The powder used to make these is a substitute of a substitute of whey substitute.
+  name: 不新鲜的海军陆战队蛋白棒
+  description: 你平生见过的外观最假的蛋白棒，外面裹着一层代用巧克力。制作这些蛋白棒所用的粉末，是乳清替代品的替代品的替代品。
   components:
   - type: Sprite
     state: protein_bar
@@ -34,8 +34,8 @@
 - type: entity
   parent: CMBarFoodBase
   id: RMCMarineRCMSnackBar
-  name: Biscuits Brown snack bar
-  description: The devil in disguise. Quick to eat, with a fairly pleasant taste and texture, but consuming more than one in a short span of time will ensure you won't be digging latrine holes out in the field for at least two weeks.
+  name: 棕色饼干零食棒
+  description: 披着伪装的恶魔。食用方便，味道和口感都相当不错，但短时间内吃超过一根，就能保证你至少两周都不用在野外挖茅坑。
   components:
   - type: Sprite # TODO RMC14 find a proper sprite for this
     sprite: _RMC14/Objects/Consumable/Food/packaged.rsi

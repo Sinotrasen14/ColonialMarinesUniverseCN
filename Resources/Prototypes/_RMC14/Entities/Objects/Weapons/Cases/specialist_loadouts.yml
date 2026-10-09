@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: RMCBaseEquipmentCase
   id: CMSniperEquipmentCase
-  name: sniper equipment case
-  description: "A large case containing your very own long-range M96S sniper rifle, M42 scout sight, ammunition, spotter equipment, and additional pieces of equipment.\n\nNOTE: You cannot put items back inside this case."
+  name: 狙击手装备箱
+  description: "一个大型装备箱，内含属于你的远程M96S狙击步枪、M42侦察瞄准镜、弹药、观察员装备以及其他装备。\n\n注意：你无法将物品放回此箱内。"
   components:
   - type: Storage
     maxItemSize: Huge
@@ -34,8 +34,8 @@
 - type: entity
   parent: CMSniperEquipmentCase
   id: RMCAntiMaterielEquipmentCase
-  name: anti-materiel sniper equipment case
-  description: "A large case containing your very own long-range XM43E1 anti-materiel sniper rifle, M42 scout sight, ammunition, spotter equipment, and additional pieces of equipment.\n\nNOTE: You cannot put items back inside this case."
+  name: 反器材狙击装备箱
+  description: "一个大型装备箱，里面装有你专属的远程 XM43E1 反器材狙击步枪、M42 侦察瞄准镜、弹药、观察员装备以及其他装备。\n\n注意：你无法将物品放回此装备箱内。"
   components:
   - type: Storage
     maxItemSize: Huge
@@ -58,15 +58,15 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: RMCGrenadeSpecEquipmentCase
-  name: heavy grenadier equipment case
-  description: "A large case containing a heavy-duty multi-shot M83 grenade launcher, M3-G4 grenadier armor and helmet, significant amount of various 30mm grenades and additional pieces of equipment.\n\nNOTE: You cannot put items back inside this case."
+  name: 重型掷弹兵装备箱
+  description: "一个内含重型多发 M83 榴弹发射器、M3-G4 掷弹兵护甲和头盔、大量各式 30 毫米榴弹以及额外装备的大箱子。\n\n注意：你无法将物品放回此箱内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: grenadier
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -96,15 +96,15 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: RMCSharpSpecEquipmentCase
-  name: SHARP operator equipment case
-  description: "A large case containing a P9 SHARP rifle, M103 SHARP magazine belt, M3-G4 grenadier armor and helmet, several specialized 9X dart magazines, an instructional pamphlet, and additional pieces of equipment.\n\nNOTE: You cannot put items back inside this case."
+  name: SHARP操作员装备箱
+  description: "一个大型箱子，内含一把P9 SHARP步枪、M103 SHARP弹匣带、M3-G4掷弹兵护甲和头盔、若干专用9X飞镖弹匣、一本说明手册以及其他若干装备。\n\n注意：你无法将物品放回此箱内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: grenadier
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -129,15 +129,15 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: RMCDemoSpecEquipmentCase
-  name: demolitionist equipment case
-  description: "A large case containing a heavy-caliber M5 Anti-Tank Launcher, reinforced M3-T light armor, five 84mm rockets, and additional pieces of equipment.\n\nNOTE: You cannot put items back inside this case."
+  name: 爆破手装备箱
+  description: "一个大型箱子，内含一把大口径 M5 反坦克发射器、加固型 M3-T 轻型护甲、五枚 84 毫米火箭弹以及若干额外装备。\n注意：你无法将物品放回此箱子内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: demo
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Ginormous
     grid:
@@ -172,16 +172,16 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: CMUDemoSpecEquipmentCaseUPP
-  name: demolitionist equipment case
+  name: 爆破手装备箱
   suffix: UPP, EMBLR
-  description: "A large case containing a heavy-caliber EMBLR, 70mm rockets, and additional pieces of equipment.\n\nNOTE: You cannot put items back inside this case."
+  description: "一个大型装备箱，内含一具大口径EMBLR、70毫米火箭弹以及若干额外装备。\n\n注意：无法将物品放回此箱内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: demo
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Ginormous
     grid:
@@ -216,16 +216,16 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: RMCScoutSpecEquipmentCase
-  name: scout equipment case
+  name: 侦察装备箱
   suffix: Base
-  description: "A large case containing an M4SPR custom battle rifle, M3-S light armor and helmet, M4SPR battle sight, M68 thermal cloak, V3 reactive thermal tarp, ammunition and additional pieces of equipment.\nNOTE: You cannot put items back inside this case."
+  description: "一个大型箱子，内含一把M4SPR定制战斗步枪、M3-S轻型护甲与头盔、M4SPR战斗瞄具、M68热披风、V3反应式隔热篷布、弹药以及其他装备。\n注意：你无法将物品放回此箱子内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: scout
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -257,16 +257,16 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: AU14ScoutSpecEquipmentCaseWeYu
-  name: scout equipment case
+  name: 侦察装备箱
   suffix: WeYu
-  description: "A large case containing an M4SPR custom battle rifle, M3-S light armor and helmet, M4SPR battle sight, M68 thermal cloak, V3 reactive thermal tarp, ammunition and additional pieces of equipment.\nNOTE: You cannot put items back inside this case."
+  description: "一个大型箱子，内含一把M4SPR定制战斗步枪、M3-S轻型护甲和头盔、M4SPR战斗瞄具、M68热斗篷、V3反应式热毯、弹药及额外装备。注意：你无法将物品放回此箱内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: scout
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -299,22 +299,22 @@
 - type: entity
   parent: RMCScoutSpecEquipmentCase
   id: AU14ScoutSpecEquipmentCaseLACN
-  name: scout equipment case
+  name: 侦察装备箱
   suffix: LACN
-  description: "A large case containing an M4SPR custom battle rifle, M3-S light armor and helmet, M4SPR battle sight, M68 thermal cloak, V3 reactive thermal tarp, ammunition and additional pieces of equipment.\nNOTE: You cannot put items back inside this case."
+  description: "一个大型箱子，内含一把 M4SPR 定制战斗步枪、M3-S 轻型护甲和头盔、M4SPR 战斗瞄准镜、M68 热伪装斗篷、V3 反应式热伪装篷布、弹药及其他装备。注意：你无法将物品放回此箱内。"
 
 - type: entity
   parent: RMCBaseEquipmentCase
   id: RMCPyroSpecEquipmentCase
-  name: pyrotechnician equipment case
-  description: "A large case containing M34-T incinerator unit, M35 pyrotechnician armor and helmet, Broiler-T flexible refueling system and additional pieces of equipment.\nNOTE: You cannot put items back inside this case."
+  name: 烟火技师装备箱
+  description: "一个大型箱子，内含 M34-T 焚化器装置、M35 烟火技师护甲和头盔、Broiler-T 柔性燃料加注系统以及额外装备。\n注意：你无法将物品放回此箱子内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: pyro
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -342,16 +342,16 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: CMU14PyroSpecEquipmentCaseHAZOPS
-  name: pyrotechnician equipment case
+  name: 烟火技师装备箱
   suffix: HAZOPS
-  description: "A large case containing M240A2, M35 pyrotechnician armor and helmet, and additional pieces of equipment.\nNOTE: You cannot put items back inside this case."
+  description: "一个大型箱子，内含M240A2、M35烟火技师护甲和头盔，以及额外装备。\n注意：你无法将物品放回此箱内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: pyro
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -380,16 +380,16 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: CMU14PyroSpecEquipmentCaseWeylandYutani
-  name: pyrotechnician equipment case
+  name: 烟火技师装备箱
   suffix: WY
-  description: "A large case containing Flammenwerfer-3, M35 pyrotechnician armor and helmet, and additional pieces of equipment.\nNOTE: You cannot put items back inside this case."
+  description: "一个大型装备箱，内含 Flammenwerfer-3、M35 烟火技师护甲和头盔，以及额外的装备部件。注意：无法将物品放回此装备箱内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: pyro
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -418,16 +418,16 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: CMU14PyroSpecEquipmentCaseUPP
-  name: pyrotechnician equipment case
+  name: 烟火技师装备箱
   suffix: UPP
-  description: "A large case containing LPO80-T, M35 pyrotechnician armor and helmet, and additional pieces of equipment.\nNOTE: You cannot put items back inside this case."
+  description: "一个大型装备箱，内含 LPO80-T、M35 烟火技师护甲和头盔，以及额外的装备。\n注意：你无法将物品放回此装备箱内。"
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: pyro
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -456,20 +456,8 @@
 - type: entity
   parent: RMCKitBase
   id: RMCKitLoader
-  name: loader kit
-  description: "A large kit containing all the supplies needed to turn a Private into the loading assistant for a Demolitions Specialist.
-
-    A little infographic series shows how reloading should be done:
-
-    Step One: Grab the Rocket
-
-    Step Two: Position yourself behind the Specialist
-
-    Step Three: Ensure the Specialist is wielding their Launcher
-
-    Step Four: Load the Rocket into the Launcher
-
-    Step Five: Stand clear of the back-blast"
+  name: 装填套件
+  description: "一个大型套件，内含让一名列兵成为爆破专家装填助手所需的所有物资。\n一组小型信息图展示了应当如何进行重新装填：\n第一步：抓住火箭弹\n第二步：站到专家身后\n第三步：确保专家正手持自己的发射器\n第四步：将火箭弹装入发射器\n第五步：远离尾焰"
   components:
   - type: Storage
     maxItemSize: Huge
@@ -479,9 +467,9 @@
     sprite: _RMC14/Objects/Storage/procase_mini.rsi
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: loader
-      map: [ label ]
+      map: [label]
   - type: Icon
     sprite: _RMC14/Objects/Storage/procase_mini.rsi
     state: closed
@@ -507,7 +495,7 @@
 - type: entity
   parent: RMCKitBase
   id: RMCKitSpotter
-  name: spotter kit
+  name: 观察员套件
   components:
   - type: Storage
     maxItemSize: Huge
@@ -517,9 +505,9 @@
     sprite: _RMC14/Objects/Storage/procase_mini.rsi
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: spotter
-      map: [ label ]
+      map: [label]
   - type: Icon
     sprite: _RMC14/Objects/Storage/procase_mini.rsi
   - type: StorageFill

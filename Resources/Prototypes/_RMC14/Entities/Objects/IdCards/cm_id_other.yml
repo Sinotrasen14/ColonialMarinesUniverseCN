@@ -1,7 +1,7 @@
 - type: entity
   parent: CMIDCardSilver
   id: CMIDCardSeniorEnlistedAdvisor
-  name: senior enlisted advisor ID card
+  name: 高级士官顾问身份证
   components:
   - type: PresetIdCard
     job: CMSeniorEnlistedAdvisor
@@ -9,7 +9,7 @@
 - type: entity
   parent: CMIDCardBase
   id: CMIDCardCorrespondent
-  name: correspondent ID card
+  name: 通讯员身份证
   components:
   - type: PresetIdCard
     job: CMCorrespondent
@@ -17,7 +17,7 @@
 - type: entity
   parent: CMIDCardLanyard
   id: CMIDCardColonist
-  name: colonist ID card
+  name: 殖民者身份证
   components:
   - type: PresetIdCard
     job: CMSurvivor
@@ -28,7 +28,7 @@
 - type: entity
   parent: CMIDCardSilver
   id: CMIDCardColonistDoctor
-  name: doctor colonist ID card
+  name: 医生殖民者身份卡
   components:
   - type: PresetIdCard
     job: CMSurvivorDoctor
@@ -39,7 +39,7 @@
 - type: entity
   parent: CMIDCardLanyard
   id: CMIDCardColonistEngineer
-  name: engineer colonist ID card
+  name: 工程师殖民者身份证
   components:
   - type: PresetIdCard
     job: CMSurvivorEngineer
@@ -50,7 +50,7 @@
 - type: entity
   parent: CMIDCardSilver
   id: RMCIDCardColonistScientist
-  name: researcher colonist ID card
+  name: 研究员殖民者身份证
   components:
   - type: PresetIdCard
     job: CMSurvivorScientist
@@ -61,7 +61,7 @@
 - type: entity
   parent: CMIDCardLanyard
   id: CMIDCardColonistSecurity
-  name: security colonist ID card
+  name: 安保殖民者身份证
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/id.rsi
@@ -77,8 +77,8 @@
 - type: entity
   parent: CMIDCardSilver
   id: CMIDCardLiaison
-  name: corporate holo-badge
-  description: A corporate holo-badge. It's a unique Corporate orange and white.
+  name: 公司全息徽章
+  description: 一枚公司全息徽章。它采用独特的企业橙白配色。
   suffix: WeYa
   components:
   - type: Sprite
@@ -93,8 +93,8 @@
 - type: entity
   parent: CMIDCardSilver
   id: CMIDCardPMC
-  name: pmc holo-badge
-  description: A corporate holo-badge. It has a unique uncapped bottom.
+  name: PMC全息徽章
+  description: 一枚公司全息徽章。它的底部具有独特的无盖设计。
   suffix: WeYa
   components:
   - type: Sprite
@@ -106,7 +106,7 @@
 - type: entity
   parent: CMIDCardPMC
   id: CMIDCardCommando
-  name: commando holo-badge
+  name: 突击队全息徽章
   suffix: WeYa
   components:
   - type: Sprite
@@ -115,8 +115,8 @@
 - type: entity
   parent: CMIDCardLiaison
   id: CMIDCardPMCExecutive
-  name: corporate holo-badge
-  description: A corporate holo-badge in standard corporate orange and white. It has a unique uncapped bottom. It is fingerprint locked with 5-X clearance level. Commonly held by corporate managers.
+  name: 企业全息徽章
+  description: 企业全息徽章，采用标准的企业橙白配色。它具有独特的无盖底部。通过指纹锁定，权限等级为5-X。通常由企业管理人员持有。
   suffix: WeYa
   components:
   - type: Sprite
@@ -130,7 +130,7 @@
 - type: entity
   parent: CMIDCardLiaison
   id: CMIDCardLiaisonColony
-  name: liaison ID card
+  name: 联络员身份证
   components:
   - type: ItemIFF
     factions:
@@ -142,7 +142,7 @@
 - type: entity
   parent: CMIDCardLiaisonColony
   id: RMCIDCardWeYaCorporateSecurity
-  name: we-ya corporate security ID card
+  name: we-ya 企业安全身份证
   components:
   - type: PresetIdCard
     job: CMSurvivorGoon
@@ -150,7 +150,7 @@
 - type: entity
   parent: CMIDCardLiaison
   id: RMCIDCardExecutiveCorporateSpecialist
-  name: executive legal specialist ID card
+  name: 执行法律专员身份证
   components:
   - type: PresetIdCard
     job: CMCorporateExecutiveSupervisorLegal
@@ -158,7 +158,7 @@
 - type: entity
   parent: CMIDCardLiaison
   id: RMCIDCardExecutiveCorporateSupervisor
-  name: executive corporate supervisor ID card
+  name: 企业高管主管身份证
   components:
   - type: PresetIdCard
     job: CMCorporateExecutiveSupervisor
@@ -166,7 +166,7 @@
 - type: entity
   parent: CMIDCardLiaison
   id: RMCIDCardICBLiaison
-  name: interstellar commerce bureau liaison ID card
+  name: 星际商务局联络官身份证
   components:
   - type: PresetIdCard
     job: CMICBLiaison
@@ -174,7 +174,7 @@
 - type: entity
   parent: CMIDCardBase
   id: CMIDCardMessTech
-  name: mess tech's ID card
+  name: 食堂技师的身份证
   components:
   - type: PresetIdCard
     job: CMMessTech
@@ -182,8 +182,8 @@
 - type: entity
   parent: CMIDCardGold
   id: RMCIDCardPizza
-  name: pizza guy badge
-  description: It reads 'Pizza-guy local union No. 217', 'We always deliver!'
+  name: 披萨小哥徽章
+  description: 上面写着“披萨小哥地方工会第217号”，“我们总是送货！”
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/pizza.rsi
@@ -196,8 +196,8 @@
 - type: entity
   parent: CMIDCardGold
   id: RMCIDCardMarshal
-  name: bureau marshal gold badge
-  description: A coveted gold badge signifying that the wearer is one of the few CMB Marshals patroling the outer rim. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept.
+  name: 执法局执法官金质徽章
+  description: 一枚令人觊觎的金质徽章，象征佩戴者是少数在外缘巡逻的CMB执法官之一。它是正义、权威与庇护的象征。保护那些无力自保的人。这枚徽章代表着对始终恪守的誓言的承诺。
   components:
   - type: PresetIdCard
     job: CMBureauMarshal
@@ -209,8 +209,8 @@
 - type: entity
   parent: CMIDCardSilver
   id: RMCIDCardDeputy
-  name: bureau deputy silver badge
-  description: The silver badge which represents that the wearer is a Bureau Deputy. It is a sign of justice, authority, and protection. Protecting those who can't. This badge represents a commitment to a sworn oath always kept.
+  name: 局副警长银徽章
+  description: 这枚银徽章表明佩戴者是局副警长。它是正义、权威与保护的象征。保护那些无力自保之人。这枚徽章代表着对始终恪守誓言的承诺。
   components:
   - type: PresetIdCard
     job: CMBureauDeputy
@@ -222,8 +222,8 @@
 - type: entity
   parent: CMIDCardSilver
   id: RMCIDCardPMC
-  name: PMC holo-badge
-  description: A corporate holo-badge. It has a unique uncapped bottom.
+  name: PMC 全息徽章
+  description: 一枚公司全息徽章。它具有独特的无盖底部。
   components:
   - type: ItemIFF
     factions:
@@ -236,7 +236,7 @@
 - type: entity
   parent: CMIDCardLanyard
   id: RMCIDCardBureauObserver
-  name: bureau observer ID card
+  name: 局观察员身份卡
   components:
   - type: PresetIdCard
     job: CMBureauObserver
@@ -244,12 +244,12 @@
 - type: entity
   parent: CMIDCardBase
   id: RMCIDCardFreelancer
-  name: freelancer ID card
+  name: 自由职业者身份证
 
 - type: entity
   parent: CMIDCardGold
   id: RMCIDCardSynth
-  name: synth ID card
+  name: 合成人身份证
   components:
   - type: PresetIdCard
     job: RMCJobSynthetic
@@ -257,7 +257,7 @@
 - type: entity
   parent: CMIDCardLanyard
   id: RMCIDCardSynthColony
-  name: synth ID card
+  name: synth身份证
   suffix: Survivor
   components:
   - type: PresetIdCard
@@ -268,8 +268,8 @@
 
 - type: entity
   id: RMCIDCardAegis
-  name: AEGIS Access Badge
-  description: High-Level AEGIS Access Badge, granting access to many of their restricted areas and equipment. Required to unlock AEGIS crates.
+  name: AEGIS通行证
+  description: 高级AEGIS通行证，可进入他们的许多限制区域并使用其设备。解锁AEGIS箱子所必需。
   suffix: RMC
   components:
   - type: WarpPoint
@@ -281,12 +281,12 @@
     size: Tiny
   - type: Clothing
     slots:
-      - idcard
+    - idcard
   - type: Clickable
   - type: InteractionOutline
   - type: Access
     groups:
-      - CMAccessAegis
+    - CMAccessAegis
   - type: AegisTrackable
   - type: Corrodible
     isCorrodible: false
@@ -294,9 +294,9 @@
 - type: entity
   parent: RMCIDCardAegis
   id: RMCIDCardAegisIntel
-  name: AEGIS Access Badge
+  name: AEGIS 通行徽章
   suffix: RMC, Intel
-  description: High-Level AEGIS Access Badge, granting access to many of their restricted areas and equipment. Required to unlock AEGIS crates. It has some blood on it.
+  description: 高级 AEGIS 通行徽章，可获准进入他们的许多受限区域并使用其设备。这是解锁 AEGIS 箱子所必需的。它上面沾有一些血迹。
   components:
   - type: IntelRescueSurvivorObjective
     value: 2

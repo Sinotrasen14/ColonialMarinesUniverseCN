@@ -29,13 +29,13 @@
   - type: ItemTogglePointLight
 
 - type: entity
-  name: zippo lighter
-  description: A fancy steel Zippo lighter. Ignite in style.
+  name: Zippo打火机
+  description: 一款精致的钢制Zippo打火机。以时尚的方式点燃。
   parent: RMCLighterBase
   id: RMCZippo
   components:
   - type: Sprite
-    sprite:  _RMC14/Objects/Tools/Lighters/zippo.rsi
+    sprite: _RMC14/Objects/Tools/Lighters/zippo.rsi
     layers:
     - state: closed
       map: ["base"]
@@ -72,39 +72,39 @@
         shader: unshaded
 
 - type: entity
-  name: We-Yu executive zippo lighter
-  description: A remarkable Zippo lighter embellished in the Company's black and gold shade.
+  name: We-Yu 行政版 Zippo 打火机
+  description: 一款以公司黑金配色点缀的卓越 Zippo 打火机。
   parent: RMCZippo
   id: RMCZippoExec
   components:
   - type: Sprite
-    sprite:  _RMC14/Objects/Tools/Lighters/execzippo.rsi
+    sprite: _RMC14/Objects/Tools/Lighters/execzippo.rsi
   - type: HelmetAccessory
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Smoking/Zippos/execzippo.rsi
       state: helmet
 
 - type: entity
-  name: golden zippo lighter
-  description: A gold-anodized Zippo lighter. Ostentatious, but it certainly stands out.
+  name: 金色芝宝打火机
+  description: 一款金色阳极氧化处理的芝宝打火机。有些浮夸，但确实很显眼。
   parent: RMCZippo
   id: RMCZippoGold
   components:
   - type: Sprite
-    sprite:  _RMC14/Objects/Tools/Lighters/goldzippo.rsi
+    sprite: _RMC14/Objects/Tools/Lighters/goldzippo.rsi
   - type: HelmetAccessory
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Smoking/Zippos/goldzippo.rsi
       state: helmet
 
 - type: entity
-  name: cheap lighter
-  description: A cheap-as-free lighter.
+  name: 廉价打火机
+  description: 一个廉价得如同免费的打火机。
   parent: RMCLighterCheapBase
   id: RMCLighter
   components:
   - type: Item
-    heldPrefix: null
+    heldPrefix:
   - type: ItemToggle
     predictable: false
     soundActivate:
@@ -112,7 +112,7 @@
     soundDeactivate:
       collection: lighterOffSounds
   - type: Sprite
-    sprite:  _RMC14/Objects/Tools/Lighters/basic.rsi
+    sprite: _RMC14/Objects/Tools/Lighters/basic.rsi
     layers:
     - state: lighter_c
       map: ["base"]
@@ -138,36 +138,36 @@
         shader: unshaded
   - type: RandomSprite
     available:
-      - base:
-          lighter_c: ""
-        top:
-          lighter_c_on: ""
-        open:
-          lighter_c_on: ""
-      - base:
-          lighter_r: ""
-        top:
-          lighter_r_on: ""
-        open:
-          lighter_r_on: ""
-      - base:
-          lighter_g: ""
-        top:
-          lighter_g_on: ""
-        open:
-          lighter_g_on: ""
-      - base:
-          lighter_y: ""
-        top:
-          lighter_y_on: ""
-        open:
-          lighter_y_on: ""
-      - base:
-          lighter_u: ""
-        top:
-          lighter_u_on: ""
-        open:
-          lighter_u_on: ""
+    - base:
+        lighter_c: ""
+      top:
+        lighter_c_on: ""
+      open:
+        lighter_c_on: ""
+    - base:
+        lighter_r: ""
+      top:
+        lighter_r_on: ""
+      open:
+        lighter_r_on: ""
+    - base:
+        lighter_g: ""
+      top:
+        lighter_g_on: ""
+      open:
+        lighter_g_on: ""
+    - base:
+        lighter_y: ""
+      top:
+        lighter_y_on: ""
+      open:
+        lighter_y_on: ""
+    - base:
+        lighter_u: ""
+      top:
+        lighter_u_on: ""
+      open:
+        lighter_u_on: ""
   - type: HelmetAccessory
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Smoking/cheap_lighter.rsi

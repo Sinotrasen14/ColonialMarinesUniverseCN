@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: VehicleSPPAPCInteriorBase
-  name: UPP APC interior piece
-  description: A decorative interior piece for an UPP APC.
+  name: UPP APC内饰件
+  description: UPP APC的装饰性内饰件。
   placement:
     mode: PlaceFree
   components:
@@ -14,7 +14,7 @@
 - type: entity
   abstract: true
   id: VehicleSPPAPCRoofBase
-  name: UPP APC Side Door
+  name: UPP APC 侧门
   placement:
     mode: PlaceFree
   components:
@@ -38,8 +38,8 @@
 - type: entity
   abstract: true
   id: VehicleSPPAPCChassisBase
-  name: UPP APC interior chassis
-  description: A chassis segment for an UPP APC interior.
+  name: UPP APC 内部底盘
+  description: UPP APC 内部底盘的一个底盘段。
   placement:
     mode: PlaceFree
   components:
@@ -69,8 +69,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -105,8 +104,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -126,7 +124,7 @@
     drawdepth: BelowMobs
     layers:
     - state: door_back
-      map: [ "roof" ]
+      map: ["roof"]
   - type: Clickable
   - type: InteractionOutline
   - type: RemoveComponents
@@ -162,7 +160,7 @@
 - type: entity
   parent: VehicleSPPAPCConsoleBase
   id: VehicleSPPAPCDriverConsole
-  name: UPP APC driver console
+  name: UPP APC 驾驶员控制台
   components:
   - type: Sprite
     state: Driveconsole
@@ -170,7 +168,7 @@
 - type: entity
   parent: VehicleSPPAPCConsoleBase
   id: VehicleSPPAPCDriverConsoleOff
-  name: UPP APC driver console (off)
+  name: UPP APC驱动控制台（关闭）
   components:
   - type: Sprite
     state: Driveconsole0
@@ -178,7 +176,7 @@
 - type: entity
   parent: VehicleSPPAPCConsoleBase
   id: VehicleSPPAPCDriverConsoleBroken
-  name: UPP APC driver console (broken)
+  name: UPP APC 驾驶员控制台（损坏）
   components:
   - type: Sprite
     state: Driveconsoleb
@@ -186,7 +184,7 @@
 - type: entity
   parent: VehicleSPPAPCConsoleBase
   id: VehicleSPPAPCWeaponConsole
-  name: UPP APC weapon console
+  name: UPP APC 武器控制台
   components:
   - type: Sprite
     state: Weaponconsole
@@ -194,7 +192,7 @@
 - type: entity
   parent: VehicleSPPAPCConsoleBase
   id: VehicleSPPAPCWeaponConsoleOff
-  name: UPP APC weapon console (off)
+  name: UPP APC 武器控制台（关闭）
   components:
   - type: Sprite
     state: Weaponconsole0
@@ -202,7 +200,7 @@
 - type: entity
   parent: VehicleSPPAPCConsoleBase
   id: VehicleSPPAPCWeaponConsoleBroken
-  name: UPP APC weapon console (broken)
+  name: UPP APC 武器控制台（损坏）
   components:
   - type: Sprite
     state: Weaponconsoleb
@@ -211,8 +209,8 @@
   abstract: true
   parent: CMClosetBase
   id: VehicleSPPAPCLockerBase
-  name: UPP APC locker
-  description: A storage locker for UPP APC interiors.
+  name: UPP APC 储物柜
+  description: 用于 UPP APC 内部的储物柜。
   placement:
     mode: PlaceFree
   components:
@@ -239,13 +237,13 @@
 - type: entity
   parent: VehicleSPPAPCLockerBase
   id: VehicleSPPAPCLocker
-  name: UPP APC locker
+  name: UPP APC 储物柜
 
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleSPPAPCAmmoLoader
-  name: UPP APC ammo loader
-  description: A loader for UPP APC hardpoint ammunition.
+  name: UPP APC 弹药装填器
+  description: UPP APC 挂载点弹药的装填器。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/Interiors/sppapc.rsi

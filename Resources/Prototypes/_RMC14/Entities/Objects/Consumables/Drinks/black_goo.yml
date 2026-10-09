@@ -1,19 +1,19 @@
-﻿- type: entity
+- type: entity
   parent: DrinkBaseCup
   id: RMCBlackGooGlass
-  name: strange bottle
-  description: A strange bottle of unknown origin.
+  name: 奇怪的瓶子
+  description: 一个来历不明的奇怪瓶子。
   components:
   - type: Solution
     solution:
-        maxVol: 100
+      maxVol: 100
   - type: Sprite
     sprite: _RMC14/Objects/Medical/black_goo.rsi
     layers:
-      - state: icon-0
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        state: icon-3
-        visible: false
+    - state: icon-0
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      state: icon-3
+      visible: false
   - type: Item
     size: Small
   - type: DamageOnLand
@@ -38,21 +38,21 @@
   components:
   - type: Solution
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: RMCBlackGoo
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: RMCBlackGoo
+        Quantity: 100
 
 - type: entity
   parent: RMCBlackGooGlass
   id: RMCBlackGooGlassAntiZedFull
   suffix: DO NOT MAP, AntiZed, full
-  name: even stranger bottle
-  description: A bottle of blue labeled CURE...
+  name: 更奇怪的瓶子
+  description: 一瓶蓝色标签的治愈药水……
   components:
   - type: Solution
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: RMCAntiZed
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: RMCAntiZed
+        Quantity: 100

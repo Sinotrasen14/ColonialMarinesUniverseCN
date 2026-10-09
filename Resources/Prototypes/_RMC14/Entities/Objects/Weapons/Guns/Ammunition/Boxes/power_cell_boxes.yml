@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: RMCBoxMagazineSupplyBase
   id: RMCBoxMagazinePowerCellsHigh
-  name: box of high-capacity power cells (x8)
-  description: A box of High-Capacity Power Cells to keep your electronics going all night long!
+  name: 一盒高容量电池（x8）
+  description: 一盒高容量电池，让你的电子设备整夜持续运行！
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -12,14 +12,14 @@
     - state: supply_box
       color: "#767b56"
     - state: supply_ammo_full
-      map: [ "enum.CMItemSlotsLayers.Fill" ]
+      map: ["enum.CMItemSlotsLayers.Fill"]
       color: "#b2bdc4"
     - state: supply_box_powercell
       color: "#767b56"
     - state: supply_box_powercell_colour
       color: "#8df06f"
     - state: supply_lid_closed
-      map: [ "lid" ]
+      map: ["lid"]
       color: "#767b56"
   - type: CMItemSlots
     count: 8

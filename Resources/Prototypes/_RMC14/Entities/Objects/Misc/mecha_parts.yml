@@ -4,31 +4,31 @@
   abstract: true
   suffix: Prop
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Misc/mech_props.rsi
+  - type: Sprite
+    sprite: _RMC14/Objects/Misc/mech_props.rsi
 
 - type: entity
   parent: RMCMechPropBase
   id: RMCMechPropDrill
-  name: drill
-  description: This is the drill that'll pierce the heavens!
+  name: 钻头
+  description: 这是能钻破天际的钻头！
   components:
-    - type: Sprite
-      state: mecha_drill
+  - type: Sprite
+    state: mecha_drill
 
 - type: entity
   parent: RMCMechPropBase
   id: RMCMechPropClamp
-  name: Hydraulic Clamp
+  name: 液压夹具
   components:
-    - type: Sprite
-      state: mecha_clamp
+  - type: Sprite
+    state: mecha_clamp
 
 - type: entity
   parent: RMCMechPropBase
   id: RMCMechPropArmorBooster
-  name: "Armor Booster Module (Close Combat Weaponry)"
-  description: Boosts exosuit armor against armed melee attacks. Requires energy to operate.
+  name: "装甲增强模块（近战武器）"
+  description: 提升外骨骼装甲对持械近战攻击的防御。运行需要能量。
   components:
-    - type: Sprite
-      state: mecha_abooster_ccw
+  - type: Sprite
+    state: mecha_abooster_ccw

@@ -1,7 +1,7 @@
 - type: entity
   id: RMCKitchenReagentGrinder
   parent: KitchenReagentGrinder
-  name: All-In-One Grinder
+  name: 多功能研磨机
   description: ""
   suffix: ""
   components:
@@ -11,14 +11,14 @@
     snapCardinals: true
     offset: "0.0,0.0"
     layers:
-    - map: [ "grinder" ]
+    - map: ["grinder"]
       state: "juicer0"
   - type: GenericVisualizer
     visuals:
       enum.ReagentGrinderVisualState.BeakerAttached:
         grinder:
-          True: {state: "juicer1"}
-          False: {state: "juicer0"}
+          true: {state: "juicer1"}
+          false: {state: "juicer0"}
   - type: ReagentGrinder
     storageMaxEntities: 50
   - type: ApcPowerReceiver # CMU14

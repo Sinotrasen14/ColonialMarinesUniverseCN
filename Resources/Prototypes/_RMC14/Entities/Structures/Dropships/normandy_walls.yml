@@ -2,7 +2,7 @@
   abstract: true
   parent: CMBaseWallInvincible
   id: CMBaseNormandyWall
-  name: lexington wall
+  name: 列克星敦墙
   components:
   - type: Corrodible
     isCorrodible: false
@@ -18,12 +18,11 @@
       damageContainer: StructuralMarine
     - type: Destructible
       thresholds:
-      - trigger:
-          !type:DamageTrigger
+      - trigger: !type:DamageTrigger
           damage: 500
         behaviors:
         - !type:DoActsBehavior
-          acts: [ "Destruction" ]
+          acts: ["Destruction"]
     - type: ExaminableDamage
       messages: RMCWallMessages
     - type: RMCIntegrityExamine
@@ -720,15 +719,15 @@
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall61]
   id: CMNormandyWall61
-  name: port wing weapon attach point
-  description: A place where heavy equipment can be installed with a powerloader.
+  name: 左翼武器挂点
+  description: 可使用动力装载机安装重型设备的位置。
   suffix: 61
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Dropships/normandy.rsi
     layers:
     - state: "61"
-    - map: [ "enum.DropshipWeaponPointLayers.Layer" ]
+    - map: ["enum.DropshipWeaponPointLayers.Layer"]
       offset: 0.5, 0.5
   - type: Icon
     state: "61"
@@ -772,15 +771,15 @@
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall65]
   id: CMNormandyWall65
-  name: starboard wing weapon attach point
-  description: A place where heavy equipment can be installed with a powerloader.
+  name: 右翼武器挂载点
+  description: 可使用动力装载机安装重型设备的位置。
   suffix: 65
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Dropships/normandy.rsi
     layers:
     - state: "65"
-    - map: [ "enum.DropshipWeaponPointLayers.Layer" ]
+    - map: ["enum.DropshipWeaponPointLayers.Layer"]
       offset: 0.5, 0.5
   - type: Icon
     state: "65"
@@ -989,15 +988,15 @@
 - type: entity
   parent: [CMBaseNormandyWall, CMAlamoWall84]
   id: CMNormandyWall84
-  name: port fore weapon attach point
-  description: A place where heavy equipment can be installed with a powerloader.
+  name: 左舷前部武器挂载点
+  description: 一个可以使用动力装载机安装重型设备的位置。
   suffix: 84
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Dropships/normandy.rsi
     layers:
     - state: "84"
-    - map: [ "enum.DropshipWeaponPointLayers.Layer" ]
+    - map: ["enum.DropshipWeaponPointLayers.Layer"]
       offset: 0.5, 0.5
   - type: Icon
     state: "84"
@@ -1008,15 +1007,15 @@
 - type: entity
   parent: [CMNormandyWall84, CMAlamoWall84Flipped]
   id: CMNormandyWall84Flipped
-  name: starboard fore weapon attach point
-  description: A place where heavy equipment can be installed with a powerloader.
+  name: 右舷前部武器挂载点
+  description: 可使用动力装载机安装重型设备的场所。
   suffix: 84, Flipped
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Dropships/normandy.rsi
     layers:
     - state: "84_flipped"
-    - map: [ "enum.DropshipWeaponPointLayers.Layer" ]
+    - map: ["enum.DropshipWeaponPointLayers.Layer"]
       offset: 0.5, 0.5
   - type: DropshipWeaponPoint
     location: StarboardFore # CMU14: parent sets PortFore
@@ -1307,14 +1306,14 @@
 - type: entity
   parent: CMNormandyWall101a
   id: CMNormandyDirectFireAttachPoint
-  name: direct-fire attach point
-  description: A forward-facing mount for pilot-controlled gunship weapons. Heavy equipment must be installed with a powerloader.
+  name: 直射挂载点
+  description: 一种用于飞行员控制的炮艇武器的前向挂载点。重型设备必须使用动力装载机安装。
   suffix: Direct Fire
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Dropships/normandy.rsi
     layers:
-    - map: [ "enum.DropshipWeaponPointLayers.Layer" ]
+    - map: ["enum.DropshipWeaponPointLayers.Layer"]
       offset: 0.5, 0.5
     - state: "101a"
   - type: Occluder

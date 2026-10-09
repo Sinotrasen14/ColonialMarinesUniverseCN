@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: RMCBarrelPileBase
-  name: barrel pile
-  description: big pile energy.
+  name: 桶堆
+  description: 大堆能量。
   placement:
     mode: SnapgridCenter
   components:
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,2.4,2.5"
         density: 190
         layer:
@@ -42,9 +41,9 @@
 - type: entity
   parent: BaseStructureDynamic
   id: RMCBarrelBase
-  name: barrel
-  categories: [ HideSpawnMenu ]
-  description: A storage barrel.
+  name: 木桶
+  categories: [HideSpawnMenu]
+  description: 一个储物桶。
   components:
   - type: XenoCrusherChargable
     instantDestroy: true
@@ -56,8 +55,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.18,-0.48,0.18,0.48"
         density: 200
         mask:
@@ -65,14 +63,13 @@
         layer:
         - MachineLayer
   - type: Damageable
-    damageModifierSet: null
+    damageModifierSet:
   - type: Injurable
     damageContainer: Inorganic
   - type: InteractionOutline
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:DoActsBehavior
@@ -94,8 +91,8 @@
 - type: entity
   parent: RMCBarrelBase
   id: RMCBarrelBlue
-  name: blue barrel
-  description: A blue storage barrel.
+  name: 蓝色储物桶
+  description: 一个蓝色储物桶。
   components:
   - type: Sprite
     state: barrel_blue
@@ -103,8 +100,8 @@
 - type: entity
   parent: RMCBarrelBase
   id: RMCBarrelGreen
-  name: green barrel
-  description: A green storage barrel.
+  name: 绿色桶
+  description: 一个绿色储物桶。
   components:
   - type: Sprite
     state: barrel_green
@@ -112,8 +109,8 @@
 - type: entity
   parent: RMCBarrelBase
   id: RMCBarrelRed
-  name: red barrel
-  description: A red storage barrel.
+  name: 红色桶
+  description: 一个红色的储物桶。
   components:
   - type: Sprite
     state: barrel_red
@@ -121,8 +118,8 @@
 - type: entity
   parent: RMCBarrelBase
   id: RMCBarrelWhite
-  name: white barrel
-  description: A white storage barrel.
+  name: 白色桶
+  description: 一个白色储物桶。
   components:
   - type: Sprite
     state: barrel_white
@@ -130,8 +127,8 @@
 - type: entity
   parent: RMCBarrelBase
   id: RMCBarrelYellow
-  name: yellow barrel
-  description: A yellow storage barrel.
+  name: 黄色桶
+  description: 一个黄色的储物桶。
   components:
   - type: Sprite
     state: barrel_yellow

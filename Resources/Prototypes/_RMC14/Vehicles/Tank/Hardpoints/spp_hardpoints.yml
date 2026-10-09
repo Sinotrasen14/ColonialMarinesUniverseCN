@@ -12,20 +12,20 @@
 - type: entity
   parent: VehicleTankTurret
   id: VehicleSPPTankTurret
-  name: SPP tank turret
-  description: A tank turret configured for SPP armor.
+  name: SPP坦克炮塔
+  description: 为SPP装甲配置的坦克炮塔。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       turret-cannon: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       turret-launcher: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 450
   - type: Sprite
@@ -79,15 +79,15 @@
 - type: entity
   parent: VehicleTankLTAAAPMinigun
   id: VehicleSPPTankP17702
-  name: P-17702 rotary cannon
-  description: An SPP rotary cannon tank hardpoint.
+  name: P-17702旋转机炮
+  description: 一个SPP旋转机炮坦克挂点。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: RMCWeaponAccuracy
     modifiedAccuracyMultiplier: 4
   - type: HardpointIntegrity
@@ -128,15 +128,15 @@
 - type: entity
   parent: VehicleTankLTBCannon
   id: VehicleSPPTankRailgun
-  name: SPP railgun
-  description: A railgun hardpoint for SPP tank turrets.
+  name: SPP轨道炮
+  description: SPP坦克炮塔的轨道炮挂点。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 550
   - type: Sprite
@@ -171,15 +171,15 @@
 - type: entity
   parent: VehicleTankTowLauncher
   id: VehicleSPPTankHJ35TLauncher
-  name: HJ35T launcher
-  description: An SPP anti-armor launcher for tank turrets.
+  name: HJ35T发射器
+  description: 一种用于坦克炮塔的SPP反装甲发射器。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 500
   - type: Sprite
@@ -215,15 +215,15 @@
 - type: entity
   parent: VehicleTankM56Cupola
   id: VehicleSPPTankCupola
-  name: T60P3M cupola
-  description: A cupola-mounted weapon fitted to SPP armor.
+  name: T60P3M 顶置炮塔
+  description: 一种安装在SPP装甲上的顶置炮塔武器。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 350
   - type: Sprite
@@ -262,8 +262,8 @@
 - type: entity
   parent: VehicleTankArmorBallistic
   id: VehicleSPPTankReactiveArmor
-  name: reactive armor plating
-  description: Reactive armor plating for an SPP tank.
+  name: 反应装甲板
+  description: 用于SPP坦克的反应装甲板。
   components:
   - type: HardpointIntegrity
     integrity: 1000
@@ -279,15 +279,15 @@
 - type: entity
   parent: VehicleTankRocketLauncher
   id: VehicleSPPTankRocketLauncher
-  name: SPP smoke launcher
-  description: A smoke launcher support attachment for an SPP tank.
+  name: SPP烟幕发射器
+  description: 用于SPP坦克的烟幕发射器支援附件。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 100
   - type: Sprite
@@ -302,15 +302,15 @@
 - type: entity
   parent: VehicleTankFlareModule
   id: VehicleSPPTankFlareModule
-  name: SPP flare module
-  description: A flare launcher support attachment for an SPP tank.
+  name: SPP照明弹模块
+  description: SPP坦克的照明弹发射器支援附件。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 500
   - type: Sprite
@@ -325,8 +325,8 @@
 - type: entity
   parent: VehicleTankWarningArray
   id: VehicleSPPTankWarningArray
-  name: SPP warning array
-  description: An integrated weapons sensor array for SPP tank support slots.
+  name: SPP预警阵列
+  description: 用于SPP坦克支援槽位的集成武器传感器阵列。
   components:
   - type: HardpointIntegrity
     integrity: 250
@@ -342,8 +342,8 @@
 - type: entity
   parent: VehicleTankOverdriveEnhancer
   id: VehicleSPPTankOverdriveEnhancer
-  name: SPP overdrive enhancer
-  description: An overdrive enhancer support attachment for an SPP tank.
+  name: SPP 超载增强器
+  description: 用于 SPP 坦克的超载增强器支援附件。
   components:
   - type: HardpointIntegrity
     integrity: 250
@@ -359,8 +359,8 @@
 - type: entity
   parent: VehicleTankArtilleryModule
   id: VehicleSPPTankArtilleryModule
-  name: SPP artillery module
-  description: An artillery support module for an SPP tank.
+  name: SPP火炮模块
+  description: SPP坦克的火炮支援模块。
   components:
   - type: HardpointIntegrity
     integrity: 250

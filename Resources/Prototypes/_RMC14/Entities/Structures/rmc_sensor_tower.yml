@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCSensorTower
-  name: experimental sensor tower
-  description: A tower with a lot of delicate sensors made to track weather conditions. This one has been adjusted to track biosignatures.
+  name: 实验性传感器塔
+  description: 一座装有大量精密传感器的塔，原本用于追踪天气状况。这一座已被调整，用于追踪生物特征。
   placement:
     mode: SnapgridCenter
   components:
@@ -15,8 +15,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 60
         layer:
@@ -25,7 +24,7 @@
     sprite: _RMC14/Structures/Machines/sensor_tower.rsi
     layers:
     - state: sensor_off
-      map: [ "base" ]
+      map: ["base"]
     state: sensor_off
     offset: 0.5,2
   - type: Clickable
@@ -35,11 +34,11 @@
     visuals:
       enum.SensorTowerLayers.Layer:
         base:
-          Weld: { state: sensor_broken }
-          Wire: { state: sensor_broken }
-          Wrench: { state: sensor_broken }
-          Off: { state: sensor_off }
-          On: { state: sensor_ }
+          Weld: {state: sensor_broken}
+          Wire: {state: sensor_broken}
+          Wrench: {state: sensor_broken}
+          Off: {state: sensor_off}
+          On: {state: sensor_}
   - type: SensorTower
   - type: MarineMapTracked
   - type: XenoMapTracked

@@ -1,8 +1,8 @@
 - type: entity
   parent: Flash
   id: CMFlash
-  name: flash
-  description: Used for blinding and being an asshole. Recharges one flash every 60 seconds. You must wait 5 seconds between uses for the capacitor to recharge.
+  name: 闪光
+  description: 用于致盲和当个混蛋。每60秒充能一次闪光。每次使用之间必须等待5秒，让电容器重新充能。
   components:
   - type: Flash
     slowTo: 0.55
@@ -25,8 +25,8 @@
     visuals:
       enum.FlashVisuals.Flashing:
         enum.FlashVisualLayers.LightLayer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: MeleeRequiresSkill
     skills:
       RMCSkillPolice: 1

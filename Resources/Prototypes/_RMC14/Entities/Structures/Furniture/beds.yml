@@ -1,9 +1,9 @@
 - type: entity
   parent: Bed
   id: CMBed
-  name: bed
+  name: 床
   suffix: RMC
-  description: A mattress seated on a rectangular metallic frame. This is used to support a lying person in a comfortable manner, notably for regular sleep. Ancient technology, but still useful.
+  description: 一个放置在矩形金属框架上的床垫。它用于以舒适的方式支撑躺卧的人，尤其是用于日常睡眠。古老的技术，但依然实用。
   components:
   - type: CMUReconFurniture
     material: Bed
@@ -33,8 +33,7 @@
     otherMultiplier: 1
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -90,7 +89,7 @@
 - type: entity
   parent: CMBed
   id: RMCBedAlien
-  name: alien bed
+  name: 外星人床
   suffix: RMC|Alien
   components:
   - type: Sprite
@@ -101,7 +100,7 @@
 - type: entity
   parent: CMBed
   id: RMCBedBunk
-  name: black bunk-bed
+  name: 黑色双层床
   components:
   - type: CMUReconFurniture
     material: BunkBed
@@ -113,7 +112,7 @@
 - type: entity
   parent: CMBed
   id: RMCBedBunkBlue
-  name: blue bunk-bed
+  name: 蓝色双层床
   components:
   - type: CMUReconFurniture
     material: BunkBed
@@ -125,7 +124,7 @@
 - type: entity
   parent: CMBed
   id: RMCBedBunkGreen
-  name: green bunk-bed
+  name: 绿色双层床
   components:
   - type: CMUReconFurniture
     material: BunkBed
@@ -147,7 +146,7 @@
 - type: entity
   parent: CMBed
   id: RMCBedBunkRed
-  name: red bunk-bed
+  name: 红色双层床
   components:
   - type: CMUReconFurniture
     material: BunkBed
@@ -161,9 +160,9 @@
 - type: entity
   parent: [BaseItem, BaseFoldable]
   id: Bedroll
-  name: bedroll
+  name: 睡袋
   suffix: RMC
-  description: A foldable bedroll, just about the only thing of comfort in the field. You're generally supposed to unroll it before sleeping, but who needs rules?
+  description: 一个可折叠的睡袋，差不多是野外唯一能带来舒适的东西。通常你应该在睡觉前把它展开，但谁需要规则呢？
   components:
   - type: Transform
     noRot: true
@@ -186,8 +185,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.05"
         density: 190
         mask:
@@ -196,15 +194,14 @@
   - type: Injurable
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 50
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              path: /Audio/Effects/poster_broken.ogg
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 50
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/poster_broken.ogg
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
   - type: Pullable
   - type: Strap
     position: Down
@@ -217,15 +214,15 @@
     visuals:
       enum.StrapVisuals.State:
         buckledLayer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
       enum.FoldedVisuals.State: # Copypasta from BaseFoldable b/c collections don't merge when overriding component prototypes.
         foldedLayer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
         unfoldedLayer:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}
 
 - type: entity
   parent: Bedroll

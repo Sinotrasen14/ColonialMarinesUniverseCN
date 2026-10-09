@@ -1,7 +1,7 @@
 - type: entity
   id: RMCGlowingGoo
-  name: glowing goo
-  description: You don't think you should be near this.
+  name: 发光的黏液 | glowing goo
+  description: 你觉得你不应该靠近这东西。 | You don't think you should be near this.
   placement:
     mode: SnapgridCenter
   components:
@@ -12,8 +12,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.35,0.35,0.35"
         density: 100
         layer:
@@ -24,7 +23,7 @@
     noRot: true
     drawdepth: WallTops
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: green_glow
   - type: Clickable
   - type: InteractionOutline

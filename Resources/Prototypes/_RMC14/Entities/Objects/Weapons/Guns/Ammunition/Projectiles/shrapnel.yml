@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: CMProjectileShrapnel
-  name: shrapnel
-  categories: [ HideSpawnMenu ]
+  name: 弹片
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/shotgun_projectiles.rsi
@@ -11,8 +11,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         hard: false
         mask:
@@ -27,7 +26,7 @@
         - MidImpassable
         - HighImpassable
         - LowImpassable
-        hard: False
+        hard: false
   - type: Projectile
     damage:
       types:

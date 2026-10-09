@@ -2,8 +2,8 @@
 - type: entity
   parent: Matchbox
   id: CMMatchBook
-  name: lucky sloths matchbook
-  description: A small book of cheap paper matches. Good luck getting them to light. Made by Lucky Sloths, but you'll be anything but lucky when you burn your hand trying to light a match on this.
+  name: 幸运树懒火柴本
+  description: 一小本廉价纸火柴。想点着它们？祝你好运。由“幸运树懒”制造，但当你试图在这上面划火柴却烧到手时，你可一点都不幸运。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Matchboxes/matchbook.rsi
@@ -32,7 +32,7 @@
   - type: Item
     size: Tiny
     sprite: _RMC14/Objects/Consumable/Smokeables/Matchboxes/matchbook.rsi
-    heldPrefix: null
+    heldPrefix:
   - type: Storage
     grid:
     - 0,0,5,1
@@ -68,8 +68,8 @@
 - type: entity
   parent: CMMatchBook
   id: CMBrownMatchBook
-  name: brown matchbook
-  description: A small book of cheap paper matches. Good luck getting them to light. Made with generic brown paper.
+  name: 棕色火柴本
+  description: 一本廉价纸质火柴的小册子。祝你好运能把它们点着。用普通棕色纸制成。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Matchboxes/brown_matchbook.rsi
@@ -79,8 +79,8 @@
 - type: entity
   parent: CMMatchBook
   id: CMExecutiveSelectMatchbook
-  name: executive select matchbook
-  description: A small book of expensive paper matches. These ones light almost every time!
+  name: 高管精选火柴册
+  description: 一小本昂贵的纸质火柴。这些几乎每次都能点燃！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Matchboxes/executive_select_matchbook.rsi
@@ -90,8 +90,8 @@
 - type: entity
   parent: CMMatchBook
   id: CMElectroMatchbook
-  name: Electro matchbook
-  description: A small book of cheap paper matches. Good luck getting them to light.
+  name: 电击火柴册
+  description: 一小本廉价纸火柴。祝你好运能把它们点着。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Matchboxes/electro_matchbook.rsi
@@ -101,8 +101,8 @@
 - type: entity
   parent: CMMatchBook
   id: CMExecutiveWEYAMatchbook
-  name: We-Ya gold matchbook
-  description: A small book of expensive paper matches. These ones light almost every time, or so the packaging claims.
+  name: 威亚金色火柴册
+  description: 一本昂贵的小册子，内装纸火柴。这些火柴几乎每次都能点着，至少包装上是这么宣称的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Matchboxes/we_ya_matchbook.rsi

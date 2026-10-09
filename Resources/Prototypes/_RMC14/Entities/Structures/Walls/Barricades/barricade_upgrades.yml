@@ -11,8 +11,8 @@
 - type: entity
   parent: RMCBarricadeUpgradeBase
   id: RMCExplosiveUpgrade
-  name: composite upgrade (++Explosive, ++Projectile, ++Fire)
-  categories: [ HideSpawnMenu ]
+  name: 复合升级（++爆炸，++投射物，++火焰）
+  categories: [HideSpawnMenu]
   components:
   - type: RMCConstructionUpgrade
     upgradedPopup: rmc-construction-upgrade-explosive
@@ -24,8 +24,8 @@
 - type: entity
   parent: RMCBarricadeUpgradeBase
   id: RMCBiohazardUpgrade
-  name: biohazard upgrade (+Burn)
-  categories: [ HideSpawnMenu ]
+  name: 生物危害升级（+燃烧）
+  categories: [HideSpawnMenu]
   components:
   - type: RMCConstructionUpgrade
     upgradedPopup: rmc-construction-upgrade-burn
@@ -37,8 +37,8 @@
 - type: entity
   parent: RMCBarricadeUpgradeBase
   id: RMCBruteUpgrade
-  name: reinforced upgrade (+Brute)
-  categories: [ HideSpawnMenu ]
+  name: 强化升级（+蛮兵）
+  categories: [HideSpawnMenu]
   components:
   - type: RMCConstructionUpgrade
     upgradedPopup: rmc-construction-upgrade-brute
@@ -51,7 +51,7 @@
 - type: entity
   parent: RMCExplosiveUpgrade
   id: RMCExplosiveUpgradePlasteel
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: RMCConstructionUpgrade
     upgradedEntity: RMCBarricadeExplosivePlasteel
@@ -60,7 +60,7 @@
 - type: entity
   parent: RMCBiohazardUpgrade
   id: RMCBiohazardUpgradePlasteel
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: RMCConstructionUpgrade
     upgradedEntity: RMCBarricadeBurnPlasteel
@@ -69,7 +69,7 @@
 - type: entity
   parent: RMCBruteUpgrade
   id: RMCBruteUpgradePlasteel
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: RMCConstructionUpgrade
     upgradedEntity: RMCBarricadeBrutePlasteel

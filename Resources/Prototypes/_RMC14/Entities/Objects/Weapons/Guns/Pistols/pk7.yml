@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: CMWeaponPistolBase
   id: RMCWeaponPistolPK7
-  name: PK-7 electrostatic pistol
-  description: A Weyland-Yutani manufactured less-than-lethal pistol. Originally manufactured in the 2080s, the PK-7 electrostatic pistol fires electrically-charged bullets with high accuracy, though its cost and constant need for cleaning makes it a rare sight.
+  name: PK-7静电手枪
+  description: 一把由韦兰-尤塔尼制造的低致命性手枪。PK-7静电手枪最初于2080年代制造，可发射带电子弹，精度很高，但其成本高昂且需要不断清洁，使其十分罕见。
   components:
   - type: Tag
     tags:
@@ -25,28 +25,28 @@
     accuracyMultiplier: 1.2
   - type: ItemSlots
     slots:
-     gun_magazine:
-       name: Magazine
-       insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
-       ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
-       priority: 2
-       whitelist:
-         tags:
+      gun_magazine:
+        name: 弹匣
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
           - RMCMagazinePistolPK7
-       startingItem: RMCMagazinePistolPK7
+        startingItem: RMCMagazinePistolPK7
   - type: AttachableHolder
     slots:
       rmc-aslot-rail:
         whitelist:
           tags:
-           - RMCAttachmentRailFlashlight
-           - RMCAttachmentS5RedDotSight
-           - RMCAttachmentS5MicroRedDotSight
-           - RMCAttachmentS6ReflexSight
+          - RMCAttachmentRailFlashlight
+          - RMCAttachmentS5RedDotSight
+          - RMCAttachmentS5MicroRedDotSight
+          - RMCAttachmentS6ReflexSight
       rmc-aslot-underbarrel:
         whitelist:
           tags:
-           - RMCAttachmentLaserSight
+          - RMCAttachmentLaserSight
   - type: AttachableHolderVisuals
     offsets:
       rmc-aslot-rail: -0.1, 0.22
@@ -55,15 +55,15 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolPK7
-  name: PK-7 electrostatic magazine (9mm)
-  description: Holds 9 rounds of specialized Conductive 9mm. Electrostatic propulsion in the PK-7 functions by propelling an cV9mm round, at a proportionally slower velocity to maintain a higher kinetic energy transfer rate. All this turns a penetrative round into a less-than-lethal round.
+  name: PK-7静电弹匣（9毫米）
+  description: 可容纳9发特制导电9毫米弹药。PK-7的静电推进通过发射cV9mm弹来实现，以相对更慢的速度保持更高的动能传递率。这一切将穿透弹转变为低致命性弹。
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolPK7
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgePistol9mmElectrostatic
@@ -81,7 +81,7 @@
 
 - type: entity
   id: RMCCartridgePistol9mmElectrostatic
-  name: electrostatic cartridge (9mm)
+  name: 静电弹药（9毫米）
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -94,8 +94,8 @@
 - type: entity
   parent: RMCProjectileTaser
   id: RMCBulletPistol9mmElectrostatic
-  name: electrostatic bullet (9mm)
-  categories: [ HideSpawnMenu ]
+  name: 静电子弹（9毫米）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

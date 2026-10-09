@@ -1,15 +1,15 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: MP5A5 submachinegun
+  name: MP5A5冲锋枪
   id: RMCWeaponSMGMP5Alt
-  description: A German design, this was one of the most widely used submachine guns in the world. Modernized design for limited use by colonial security and Office of the Colony Marshals.
+  description: 这是一款德国设计，曾是世界上使用最广泛的冲锋枪之一。其现代化设计供殖民地安全部队和殖民地法警办公室有限使用。
   suffix: Filled
   components:
   - type: Sprite
     sprite: CMU14/Objects/Weapons/Guns/SMGs/mp5.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: ItemMapper
     containerWhitelist:
     - gun_magazine
@@ -56,11 +56,11 @@
     accuracyMultiplierUnwielded: 0.8
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineSMGMP5
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg

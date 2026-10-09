@@ -1,7 +1,7 @@
 - type: entity
   parent: SolutionDrain
   id: CMToiletDrainBufferSolution
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Solution
     solution:
@@ -10,9 +10,9 @@
 - type: entity
   parent: CMSeatBase
   id: CMToiletEmpty
-  name: toilet
+  name: 马桶
   suffix: Empty
-  description: The HT-451, a torque rotation-based, waste disposal unit for small matter. This one seems remarkably clean.
+  description: HT-451，一种基于扭矩旋转的小型废物处理装置。这台看起来异常干净。
   placement:
     mode: SnapgridCenter
     snap:
@@ -25,7 +25,7 @@
     sprite: _RMC14/Structures/Furniture/toilet.rsi
     layers:
     - state: closed_seat_up
-      map: [ "SeatVisualState.SeatUp" ]
+      map: ["SeatVisualState.SeatUp"]
   #    - map: [ "DoorVisualState.DoorOpen" ]
   - type: Rotatable
   - type: Transform
@@ -38,7 +38,7 @@
   - type: Toilet
   - type: ContainerContainer
     containers:
-      stash: !type:ContainerSlot { }
+      stash: !type:ContainerSlot {}
   - type: Physics
     bodyType: Static
   - type: PlungerUse
@@ -66,8 +66,8 @@
     visuals:
       enum.ToiletVisuals.SeatVisualState:
         SeatVisualState.SeatUp:
-          SeatUp: { state: closed_seat_up }
-          SeatDown: { state: closed_seat_down }
+          SeatUp: {state: closed_seat_up}
+          SeatDown: {state: closed_seat_down}
 #      enum.StashVisuals.DoorVisualState:
 #        DoorVisualState.DoorOpen:
 #          DoorOpen: { state: disposal-open }

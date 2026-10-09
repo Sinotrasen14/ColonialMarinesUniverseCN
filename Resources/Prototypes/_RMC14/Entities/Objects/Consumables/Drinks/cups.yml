@@ -19,21 +19,21 @@
 - type: entity
   parent: DrinkBaseMug
   id: RMCCoffeeCup
-  name: mug
-  description: A ceramic mug. Practically guaranteed to fall and spill scalding-hot drink onto your brand-new shirt. Ouch.
+  name: 马克杯
+  description: 一个陶瓷马克杯。几乎肯定会摔落，把滚烫的饮料洒在你崭新的衬衫上。哎哟。
   suffix: RMC
   components:
   - type: Solution
     id: drink
     solution:
-        maxVol: 30
+      maxVol: 30
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
     layers:
-      - state: icon-0
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        state: icon-3
-        visible: false
+    - state: icon-0
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      state: icon-3
+      visible: false
   - type: Item
     size: Small
   - type: DamageOnLand
@@ -60,121 +60,121 @@
   id: RMCCoffeeCupFilled
   suffix: RMC, Filled, RMCCoffee
   components:
-    - type: Solution
-      solution:
-          maxVol: 30
-          reagents:
-          - ReagentId: RMCCoffee
-            Quantity: 30
+  - type: Solution
+    solution:
+      maxVol: 30
+      reagents:
+      - ReagentId: RMCCoffee
+        Quantity: 30
 
 - type: entity
   parent: RMCCoffeeCup
   id: RMCMarineCorpsCup
-  name: UNMC mug
-  description: A rugged, military-grade mug featuring the UNMC insignia, built for endurance in any deployment—whether aboard a ship or in the field.
+  name: UNMC马克杯
+  description: 一款坚固的军规级马克杯，饰有UNMC徽章，专为在任何部署环境中持久使用而打造——无论是在舰上还是野外。
   components:
   - type: Sprite
     layers:
-      - sprite: _RMC14/Objects/Consumable/Drinks/unmccup.rsi
-        state: base
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
-        state: icon-3
-        visible: false
+    - sprite: _RMC14/Objects/Consumable/Drinks/unmccup.rsi
+      state: base
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
+      state: icon-3
+      visible: false
 
 - type: entity
   parent: RMCCoffeeCup
   id: RMCSocialistPPCup
-  name: UPP mug
-  description: A tough, crimson cup stamped with the UPP emblem—built like a real krepky muzhik, ready to serve comrades in toil and glory among the stars.
+  name: UPP马克杯
+  description: 一只坚固的深红色杯子，印有 UPP 徽章——像真正的结实汉子般打造，随时准备在群星之间为同志们效劳，共赴辛劳与荣耀。
   components:
   - type: Sprite
     layers:
-      - sprite: _RMC14/Objects/Consumable/Drinks/sppcup.rsi
-        state: base
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
-        state: icon-3
-        visible: false
+    - sprite: _RMC14/Objects/Consumable/Drinks/sppcup.rsi
+      state: base
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
+      state: icon-3
+      visible: false
 
 - type: entity
   parent: RMCCoffeeCup
   id: RMCUnitedNationsCup
-  name: UN mug
-  description: A sleek, official UN cup, symbolizing unity, order, and authority across the stars. Crafted for those who uphold peace and progress.
+  name: 联合国马克杯
+  description: 一款线条流畅的联合国官方马克杯，象征着跨越星海的团结、秩序与权威。为那些捍卫和平与进步之人精心打造。
   components:
   - type: Sprite
     layers:
-      - sprite: _RMC14/Objects/Consumable/Drinks/uncup.rsi
-        state: base
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
-        state: icon-3
-        visible: false
+    - sprite: _RMC14/Objects/Consumable/Drinks/uncup.rsi
+      state: base
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
+      state: icon-3
+      visible: false
 
 - type: entity
   parent: RMCCoffeeCup
   id: RMCWestonYamadaCup
-  name: WEYA mug
-  description: A clean, stylish cup with the logo of the Weyland-Yutani Corporation branded on the side. Used throughout the company hierarchy, from interns to division directors.
+  name: WEYA马克杯
+  description: 一只干净时尚的杯子，侧面印有维兰德-汤谷公司的标志。从实习生到部门总监，公司上下各层级都在使用。
   components:
   - type: Sprite
     layers:
-      - sprite: _RMC14/Objects/Consumable/Drinks/weyacup.rsi
-        state: base
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
-        state: icon-3
-        visible: false
+    - sprite: _RMC14/Objects/Consumable/Drinks/weyacup.rsi
+      state: base
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
+      state: icon-3
+      visible: false
 
 - type: entity
   parent: RMCCoffeeCup
   id: RMCThreeSunEmpireCup
-  name: TSE mug
-  description: A well-crafted, sleek mug with the icon of the Three Sun Empire on it's side. Excellent for those who serve and live under the Empress and her Empire.
+  name: 三阳帝国马克杯
+  description: 一只制作精良、造型流畅的马克杯，杯身侧面印有三阳帝国的标志。非常适合那些效力于女皇及其帝国、并在其治下生活的人。
   components:
   - type: Sprite
     layers:
-      - sprite: _RMC14/Objects/Consumable/Drinks/tsecup.rsi
-        state: base
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
-        state: icon-3
-        visible: false
+    - sprite: _RMC14/Objects/Consumable/Drinks/tsecup.rsi
+      state: base
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
+      state: icon-3
+      visible: false
 
 - type: entity
   parent: RMCCoffeeCup
   id: RMCColonyLiberationFrontCup
-  name: CLF mug
-  description: A tough, well-worn cup marked with the CLF sigil born from the defiance sparked by the Slaughter of Xibou.
+  name: CLF马克杯
+  description: 一只结实耐用、饱经使用的马克杯，上面刻有CLF徽记，这枚徽记源自西博屠杀所激起的反抗。
   components:
   - type: Sprite
     layers:
-      - sprite: _RMC14/Objects/Consumable/Drinks/clfcup.rsi
-        state: base
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
-        state: icon-3
-        visible: false
+    - sprite: _RMC14/Objects/Consumable/Drinks/clfcup.rsi
+      state: base
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      sprite: _RMC14/Objects/Consumable/Drinks/coffee_cup.rsi
+      state: icon-3
+      visible: false
 
 - type: entity
   parent: RMCCoffeeCup
   id: RMCPaperCup
-  name: paper cup
-  description: A paper water cup.
+  name: 纸杯
+  description: 一个纸水杯。
   suffix: RMC
   components:
   - type: Solution
     id: drink
     solution:
-        maxVol: 10
+      maxVol: 10
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/water_cup.rsi
     layers:
-      - state: icon-0
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        state: icon-3
-        visible: false
+    - state: icon-0
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      state: icon-3
+      visible: false
   - type: Tag
     tags:
     - DrinkGlass

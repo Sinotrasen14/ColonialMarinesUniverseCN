@@ -1,16 +1,16 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: Type 64 submachine gun
+  name: 64式冲锋枪
   id: RMCWeaponSMGType64
-  description: The standard submachinegun of the UPP, sporting an unusual 64 round helical magazine, it has a high fire-rate, but is unusually accurate. This one is bulky and unergonomic, denoting it as civilian use or as an export model.
+  description: UPP的标准冲锋枪，配备不寻常的64发螺旋弹匣，射速高，但异常精准。这一款笨重且不符合人体工学，表明其为民用或出口型号。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/type64.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/type64.rsi
   - type: Gun
@@ -46,7 +46,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSMGType64
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -96,14 +96,14 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSMGType64
-  name: "Type 64 magazine (10x20mm)"
+  name: "64式弹匣（10×20毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineSmg
     - RMCMagazineSMGType64
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeType64
@@ -127,7 +127,7 @@
 - type: entity
   parent: CMCartridgeSMGBase
   id: RMCCartridgeType64
-  name: cartridge (10x20mm)
+  name: 墨盒（10×20毫米）
   components:
   - type: Tag
     tags:
@@ -139,7 +139,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCBulletType64
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

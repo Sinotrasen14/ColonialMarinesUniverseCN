@@ -1,25 +1,24 @@
 - type: entity
   abstract: true
   id: RMCBaseWeaponMount
-  name: weapon mount
-  description: A mount to place a weapon on
+  name: 武器挂架
+  description: 用于放置武器的挂架
   components:
   - type: Appearance
   - type: Corrodible
     isCorrodible: false
   - type: Strap
-    whitelist: { components: [ Marine ] }
+    whitelist: {components: [Marine]}
     position: Stand
     buckleSound: /Audio/_RMC14/Weapons/Guns/Reload/hpr_reload.ogg
     unbuckleSound: /Audio/_RMC14/Weapons/Guns/Reload/hpr_unload.ogg
-    buckledAlertType: null
+    buckledAlertType:
     buckleOffset: "0,0.5"
   - type: WeaponMount
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49, 0.05"
         density: 5
         mask:
@@ -35,15 +34,14 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Animateable
   - type: Clickable
   - type: InteractionOutline
@@ -59,8 +57,8 @@
 - type: entity
   parent: RMCBaseWeaponMount
   id: RMCML66DNestSandbag
-  name: scoped M56D heavy machine gun nest
-  description: A scoped M56D heavy machine gun mounted upon a small reinforced post with sandbags to provide a small machine gun nest for all your defensive needs.
+  name: 带瞄准镜的M56D重型机枪巢
+  description: 一架带瞄准镜的M56D重型机枪架设在一个配有沙袋的小型加固支柱上，为你的一切防御需求提供一个小型机枪巢。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/HMGs/ML66D/mount.rsi
@@ -82,8 +80,8 @@
 - type: entity
   parent: RMCML66DNestSandbag
   id: RMCML66DNestMetal
-  name: scoped M56D heavy machine gun
-  description: A scoped M56D heavy machine gun mounted behind a metal shield.
+  name: 带瞄准镜的M56D重型机枪
+  description: 一把带瞄准镜的M56D重型机枪，安装在金属盾牌后方。
   components:
   - type: Sprite
     state: towergun_folding
@@ -92,7 +90,7 @@
   parent: RMCML66DNestMetal
   id: RMCML66DNestDropship
   suffix: Dropship
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Fixtures # CMU14
     fixtures: {}
@@ -105,21 +103,21 @@
 - type: entity
   parent: RMCML66DNestDropship
   id: CMUM2CDoorGunDropship
-  name: M2C heavy machine gun
+  name: M2C重机枪
   suffix: Dropship
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/HMGs/m2c.rsi
     layers:
     - state: m2c
-      map: [ "enum.WeaponMountComponentVisualLayers.Mounted" ]
+      map: ["enum.WeaponMountComponentVisualLayers.Mounted"]
       visible: false
     - state: m2c_magazine
-      map: [ "enum.WeaponMountComponentVisualLayers.MountedAmmo" ]
+      map: ["enum.WeaponMountComponentVisualLayers.MountedAmmo"]
       visible: false
     - state: m2c_overheat
-      map: [ "enum.WeaponMountComponentVisualLayers.Overheated" ]
+      map: ["enum.WeaponMountComponentVisualLayers.Overheated"]
       visible: false
   - type: WeaponMount
     fixedWeaponPrototype: CMUMachineGunM2CDropshipLoaded
@@ -134,8 +132,8 @@
 - type: entity
   parent: [RMCBaseWeaponMount, BaseDeployFoldable, BaseItem]
   id: RMCML66DMount
-  name: M56D mount
-  description: A foldable mount for the M56D, provides stability to the M56D.
+  name: M56D架子
+  description: 一种用于M56D的可折叠支架，可为M56D提供稳定性。
   suffix: Folded
   components:
   - type: Item
@@ -145,21 +143,21 @@
     state: folded_mount
     layers:
     - state: ml66d_mount
-      map: [ "unfoldedLayer" ]
+      map: ["unfoldedLayer"]
     - state: folded_mount
-      map: [ "foldedLayer" ]
+      map: ["foldedLayer"]
       visible: false
     - state: ml66d
-      map: [ "enum.WeaponMountComponentVisualLayers.Mounted" ]
+      map: ["enum.WeaponMountComponentVisualLayers.Mounted"]
       visible: false
     - state: ml66d_magazine
-      map: [ "enum.WeaponMountComponentVisualLayers.MountedAmmo" ]
+      map: ["enum.WeaponMountComponentVisualLayers.MountedAmmo"]
       visible: false
     - state: ml66d_gun_mount
-      map: [ "enum.WeaponMountComponentVisualLayers.Folded" ]
+      map: ["enum.WeaponMountComponentVisualLayers.Folded"]
       visible: false
     - state: ml66d_gun_mount_magazine
-      map: [ "enum.WeaponMountComponentVisualLayers.FoldedAmmo" ]
+      map: ["enum.WeaponMountComponentVisualLayers.FoldedAmmo"]
       visible: false
   - type: Foldable
     folded: true
@@ -175,15 +173,14 @@
     - Back
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:EmptyContainersBehaviour
         containers:
         - weapon
@@ -194,13 +191,13 @@
   - type: WeaponMount
     mountableWhitelist:
       tags:
-        - RMCSmartGunMounted
+      - RMCSmartGunMounted
 
 - type: entity
   parent: RMCML66DMount
   id: RMCML66DMountAssembled
-  name: M56D heavy machine gun
-  description: A deployable, heavy machine gun. It fires specialized tungsten rounds for increased armor penetration.
+  name: M56D重型机枪
+  description: 可部署的重型机枪。它发射特制钨弹，以提升穿甲能力。
   suffix: Folded, Assembled
   components:
   - type: Sprite
@@ -208,22 +205,22 @@
     state: folded_mount
     layers:
     - state: ml66d_mount
-      map: [ "unfoldedLayer" ]
+      map: ["unfoldedLayer"]
       visible: false
     - state: folded_mount
-      map: [ "foldedLayer" ]
+      map: ["foldedLayer"]
       visible: false
     - state: ml66d
-      map: [ "enum.WeaponMountComponentVisualLayers.Mounted" ]
+      map: ["enum.WeaponMountComponentVisualLayers.Mounted"]
       visible: true
     - state: ml66d_magazine
-      map: [ "enum.WeaponMountComponentVisualLayers.MountedAmmo" ]
+      map: ["enum.WeaponMountComponentVisualLayers.MountedAmmo"]
       visible: true
     - state: ml66d_gun_mount
-      map: [ "enum.WeaponMountComponentVisualLayers.Folded" ]
+      map: ["enum.WeaponMountComponentVisualLayers.Folded"]
       visible: false
     - state: ml66d_gun_mount_magazine
-      map: [ "enum.WeaponMountComponentVisualLayers.FoldedAmmo" ]
+      map: ["enum.WeaponMountComponentVisualLayers.FoldedAmmo"]
       visible: false
   - type: WeaponMount
     fixedWeaponPrototype: "RMCSmartGunMounted"
@@ -241,8 +238,8 @@
 - type: entity
   parent: [RMCBaseWeaponMount, BaseItem]
   id: RMCM2CMount
-  name: M2C heavy machine gun
-  description: The disassembled M2C HMG, with its telescopic tripods folded up and unable to fire.
+  name: M2C重机枪
+  description: 拆卸后的M2C重机枪，伸缩式三脚架已折叠，无法开火。
   components:
   - type: Item
     size: Huge
@@ -251,22 +248,22 @@
     state: m2c_gun_mount
     layers:
     - state: m2c
-      map: [ "enum.WeaponMountComponentVisualLayers.Mounted" ]
+      map: ["enum.WeaponMountComponentVisualLayers.Mounted"]
       visible: false
     - state: m2c_magazine
-      map: [ "enum.WeaponMountComponentVisualLayers.MountedAmmo" ]
+      map: ["enum.WeaponMountComponentVisualLayers.MountedAmmo"]
       visible: false
     - state: m2c_gun_mount
-      map: [ "enum.WeaponMountComponentVisualLayers.Folded" ]
+      map: ["enum.WeaponMountComponentVisualLayers.Folded"]
       visible: false
     - state: m2c_gun_mount_broken
-      map: [ "enum.WeaponMountComponentVisualLayers.Broken" ]
+      map: ["enum.WeaponMountComponentVisualLayers.Broken"]
       visible: false
     - state: mag-0
-      map: [ "enum.WeaponMountComponentVisualLayers.FoldedAmmo" ]
+      map: ["enum.WeaponMountComponentVisualLayers.FoldedAmmo"]
       visible: false
     - state: m2c_overheat
-      map: [ "enum.WeaponMountComponentVisualLayers.Overheated" ]
+      map: ["enum.WeaponMountComponentVisualLayers.Overheated"]
       visible: false
   - type: Strap
     enabled: false
@@ -276,15 +273,14 @@
     - Back
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 230
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Breakage" ]
+        acts: ["Breakage"]
   - type: CollisionWake
   - type: WeaponMount
     fixedWeaponPrototype: "RMCMachineGunM2C"
@@ -295,7 +291,7 @@
     mountExclusionAreaSize: 0
     barricadeExclusionAreaSize: 2
     assembleDelay: 3
-    undeploySound: null
+    undeploySound:
     acidableWhileUndeployed: true
   - type: Tag
     tags:

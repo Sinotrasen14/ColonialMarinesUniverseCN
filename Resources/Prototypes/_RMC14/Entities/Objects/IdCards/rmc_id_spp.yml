@@ -1,35 +1,35 @@
-﻿- type: entity
+- type: entity
   id: FactionSPP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: IFFFaction
 
 - type: entity
   id: FactionHalcyon
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: IFFFaction
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: RMCIDSPP
-  name: UPP dog tag
-  description: A soldier dog tag.
+  name: UPP狗牌
+  description: 一枚士兵狗牌。
   components:
   - type: ItemIFF
     factions:
     - FactionSPP
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, RMCIDSPP ]
+  parent: [RMCIDCardStandardDogtagHidden, RMCIDSPP]
   id: RMCIDSPPHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardLanyard
   id: RMCIDCardPaP
-  name: PaP identification holo-badge
-  description: A standard-issue holo-badge for personnel within the UPP's People's Armed Police. It displays the officer's rank and affiliation.
+  name: PaP身份全息徽章
+  description: UPP人民武装警察部队人员标准配发的全息徽章。上面显示警官的警衔和所属单位。
   components:
   - type: PresetIdCard
     job: CMSurvivor
@@ -40,8 +40,8 @@
 - type: entity
   parent: CMIDCardSilver
   id: RMCIDCardHalcyon
-  name: corporate holo-badge
-  description: A corporate holo-badge. It's a unique Corporate orange and black.
+  name: 企业全息徽章
+  description: 一枚企业全息徽章。它采用独特的企业橙黑配色。
   suffix: Halcyon
   components:
   - type: ItemIFF

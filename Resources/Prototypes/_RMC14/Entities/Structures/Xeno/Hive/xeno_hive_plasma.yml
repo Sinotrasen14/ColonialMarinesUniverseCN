@@ -1,16 +1,15 @@
 - type: entity
   id: HivePlasmaTreeXeno
   parent: BaseHiveStructure
-  name: plasma tree
-  description: A tree-shaped node whose "berries" are filled with glowing blue liquid that drips from them.
+  name: 等离子树
+  description: 树形节点，其“浆果”内充满发光的蓝色液体，液体从中滴落。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/hive_structures.rsi
     state: recovery_plasma
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 400
       behaviors:
       - !type:DoActsBehavior
@@ -36,8 +35,8 @@
 - type: entity
   id: HivePlasmaTreeXenoConstructionNode
   parent: BaseHiveStructureNode
-  name: plasma tree
-  description: Making glowing blue "berries", replenishing plasma reserves of the sisters around it.
+  name: 等离子树
+  description: 结出发光的蓝色“浆果”，补充周围姐妹的等离子储备。
   suffix: Construction
   components:
   - type: Sprite
@@ -50,8 +49,7 @@
       scale: 0.8, 0.8
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior

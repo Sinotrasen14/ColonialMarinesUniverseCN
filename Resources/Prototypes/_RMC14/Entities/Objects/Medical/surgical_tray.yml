@@ -1,16 +1,16 @@
 - type: entity
   parent: CMSurgicalCase
   id: RMCSurgicalTrayEmpty
-  name: surgical tray
+  name: 手术托盘
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/surgical_tray.rsi
     layers:
     - state: surgical_tray_base
     - state: surgical_tray_cover
-      map: [ "cover" ]
+      map: ["cover"]
     - state: surgical_tray_empty
-      map: [ "empty" ]
+      map: ["empty"]
   - type: Item
     size: Large
   - type: Tag # to not inherit case tags
@@ -37,7 +37,7 @@
 - type: entity
   parent: RMCSurgicalTrayEmpty
   id: RMCSurgicalTray
-  name: surgical tray
+  name: 手术托盘
   suffix: Filled, All Tools
   components:
   - type: StorageFill

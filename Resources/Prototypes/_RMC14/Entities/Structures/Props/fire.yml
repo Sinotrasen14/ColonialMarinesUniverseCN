@@ -1,7 +1,7 @@
 - type: entity
   id: RMCFireProp
-  name: fire
-  description: That isn't going out any time soon.
+  name: 火
+  description: 那火一时半会儿不会熄灭。
   suffix: Prop
   components:
   - type: Physics
@@ -16,7 +16,7 @@
     noRot: true
     drawdepth: WallTops
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: dynamic_2
       color: "#FF7700"
   - type: Clickable

@@ -1,9 +1,9 @@
-﻿- type: entity
+- type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSentry
-  name: "M30 ammo drum (10x28mm Caseless)"
+  name: "M30弹鼓（10×28毫米无壳弹）"
   # cmu edit start: no UA/UN prefix on sentry descriptions
-  description: "An ammo drum of 500 10x28mm caseless rounds for the 571-C Sentry Gun. Just feed it into the sentry gun's ammo port when its ammo is depleted."
+  description: "一个用于571-C哨戒炮的弹鼓，装有500发10×28毫米无壳弹。当其弹药耗尽时，只需将其送入哨戒炮的供弹口即可。"
   # cmu edit end
   components:
   - type: Item
@@ -12,7 +12,7 @@
     tags:
     - RMCMagazineSentry
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeSentry
@@ -36,16 +36,16 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSentryShotgun
-  name: "12g buckshot drum"
+  name: "12号霰弹弹鼓"
   # cmu edit start: no UA/UN prefix on sentry descriptions
-  description: "An ammo drum of 50 12g buckshot shells for the 12-G Shotgun Sentry. Just feed it into the sentry gun's ammo port when its ammo is depleted."
+  description: "一个装有50发12号鹿弹的弹鼓，用于12号霰弹哨戒炮。只需在哨戒炮弹药耗尽时将其装入哨戒炮的弹药口。"
   # cmu edit end
   components:
   - type: Tag
     tags:
     - RMCMagazineSentryShotgun
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCShellShotgunBuckshot
@@ -59,16 +59,16 @@
 - type: entity
   parent: BaseMagazineRifle
   id: RMCMagazineSentryFire
-  name: sentry incinerator fuel tank
+  name: 哨兵焚化炉燃料箱
   # cmu edit start: no UA/UN prefix on sentry descriptions
-  description: A fuel tank of Ultra Thick Napthal Fuel, used in the 45-FM. Contains 100 units of fuel.
+  description: 装有超稠萘燃料的燃料箱，用于45-FM。包含100单位燃料。
   # cmu edit end
   components:
   - type: Tag
     tags:
     - RMCMagazineSentryFire
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCBulletSentryFireProjectile
@@ -79,7 +79,7 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/sentry_flametank.rsi
     layers:
     - state: flametank
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: flametank_strip
@@ -88,16 +88,16 @@
 - type: entity
   parent: BaseMagazineRifle
   id: RMCMagazineSentryFireBlue
-  name: sentry incinerator fuel tank
+  name: 哨兵焚化器燃料箱
   # cmu edit start: no UA/UN prefix on sentry descriptions
-  description: A fuel tank of usually Ultra Thick Napthal Fuel, a sticky combustible liquid chemical, used in the 55-FA.
+  description: 一个通常装有超稠石脑油燃料的燃料箱，这种燃料是一种黏稠的可燃液体化学品，用于55-FA。
   # cmu edit end
   components:
   - type: Tag
     tags:
     - RMCMagazineSentryFireBlue
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCBulletSentryFireProjectileBlue
@@ -108,25 +108,24 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/sentry_flametank.rsi
     layers:
     - state: flametank
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: flametank_strip
       color: "#00b8ff"
-  
 - type: entity
   parent: BaseMagazineRifle
   id: RMCMagazineSentryFireSmoke
-  name: sentry incinerator fuel tank
+  name: 哨兵焚化炉燃料箱
   # cmu edit start: no UA/UN prefix on sentry descriptions
-  description: A fuel tank of compressed Ultra Thick Napthal Fuel, used in the 60-FP.
+  description: 一个装有压缩超稠萘燃料的燃料箱，用于60-FP。
   # cmu edit end
   components:
   - type: Tag
     tags:
     - RMCMagazineSentryFireSmoke
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCBulletSentryFireProjectileSmoke
@@ -137,7 +136,7 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/sentry_flametank.rsi
     layers:
     - state: flametank
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: flametank_strip

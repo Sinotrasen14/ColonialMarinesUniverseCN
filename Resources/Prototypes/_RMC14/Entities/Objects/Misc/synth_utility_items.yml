@@ -1,27 +1,27 @@
 - type: entity
   parent: DoorElectronics
   id: CMAirlockCircuitBoard
-  name: airlock circuit board
-  description: An electronics board used in airlocks.
+  name: 气闸电路板
+  description: 用于气闸的电子电路板。
 
 - type: entity
   parent: CMMiniTank
   id: RMCES11MobileFuelCanister
-  name: ES-11 mobile fuel canister
-  description: A compact welding fuel canister for field repairs and refills.
+  name: ES-11 移动式燃料罐
+  description: 用于现场维修与补给的紧凑型焊接燃料罐。
 
 - type: entity
   parent: BaseStorageItem
   id: RMCSynthRepairKit
-  name: synthetic repair kit
-  description: A compact kit of field tools and replacement cabling for synthetic structural repairs.
+  name: 合成修复套件
+  description: 用于合成结构修复的紧凑型现场工具与替换线缆套件。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/engineer_kit.rsi
     layers:
     - state: toolkit
     - state: toolkit_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
   - type: Storage
     maxItemSize: Small
@@ -47,8 +47,8 @@
     visuals:
       enum.SharedBagOpenVisuals.BagState:
         openLayer:
-          Open: { visible: true }
-          Closed: { visible: false }
+          Open: {visible: true}
+          Closed: {visible: false}
   - type: Appearance
 
 - type: entity
@@ -66,7 +66,7 @@
 - type: entity
   parent: RMCSynthRepairKit
   id: RMCSynthRepairKitEliteFilled
-  name: elite synthetic repair kit
+  name: 精英合成维修包
   suffix: Filled
   components:
   - type: StorageFill

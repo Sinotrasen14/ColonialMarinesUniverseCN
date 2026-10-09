@@ -2,8 +2,8 @@
 - type: entity
   parent: SeatBase
   id: RMCBenchLeft
-  name: bench
-  description: A metal frame, with seats that are fitted with synthetic leather, they've faded in time.
+  name: 长椅
+  description: 金属框架，座椅包有人造革，它们已随时间褪色。
   suffix: Left
   placement:
     mode: SnapgridCenter
@@ -28,8 +28,7 @@
     otherMultiplier: 1
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior

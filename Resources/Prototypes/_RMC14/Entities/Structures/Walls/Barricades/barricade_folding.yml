@@ -1,23 +1,22 @@
 - type: entity
   parent: CMBarricadeBase
   id: CMBarricadeFolding
-  name: portable composite barricade
-  description: A deployed MB-6 folding barricade. It is light enough to be packed back down, but strong enough to hold a defensive line.
+  name: 便携式复合路障
+  description: 已部署的 MB-6 折叠路障。它足够轻，可以打包收起；但又足够坚固，可以守住防线。
   components:
   - type: Transform
     anchored: true
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/_RMC14/Structures/metalhit.ogg"
+        path: "/Audio/_RMC14/Structures/metalhit.ogg"
   - type: Sprite
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
     - state: DamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/folding_cracks.rsi
-    - map: [ "acided" ]
+    - map: ["acided"]
     drawdepth: WallTops
   - type: DirectionalAttackBlocker
     maxHealth: 350
@@ -36,15 +35,14 @@
       CMPlasteel: 157.5
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 350
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DamageVisuals
     thresholds: [4, 8, 12]
     damageDivisor: 21.875

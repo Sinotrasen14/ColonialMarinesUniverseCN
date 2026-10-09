@@ -8,8 +8,8 @@
   - RMCXenoCommendationReceiver
   - RMCXenoMobCollision
   id: CMXenoPraetorianBase
-  name: Praetorian
-  description: A huge, looming beast of an alien.
+  name: 禁卫军 | Praetorian
+  description: 一头巨大、森然逼近的野兽般外星生物。 | A huge, looming beast of an alien.
   components:
   - type: GhostRole
     name: cmu-job-name-xeno-unknown
@@ -94,8 +94,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 185
         mask:
@@ -105,8 +104,7 @@
         layer:
         - MobLayer
       fix2:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 185
         layer:

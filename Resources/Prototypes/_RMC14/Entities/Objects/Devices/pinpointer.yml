@@ -1,15 +1,15 @@
 - type: entity
   parent: BaseItem
   id: RMCPinpointerBase
-  name: Pinpointer
-  description: A rugged military-grade tracking device. Changes colors based on the distance from the target. Keep upright to retain accuracy.
+  name: 精准定位器
+  description: 一款坚固耐用的军用级追踪设备。会根据与目标的距离改变颜色。保持竖直以维持精度。
   suffix: RMC
   abstract: true
   components:
   - type: Transform
-    noRot: True
+    noRot: true
   - type: Sprite
-    noRot: True
+    noRot: true
     sprite: _RMC14/Objects/Devices/pinpointer.rsi
     layers:
     - state: pinpointer
@@ -33,15 +33,15 @@
     visuals:
       enum.PinpointerVisuals.IsActive:
         enum.PinpointerLayers.Screen:
-          True: { visible: True }
-          False: { visible: False }
+          true: {visible: true}
+          false: {visible: false}
       enum.PinpointerVisuals.TargetDistance:
         enum.PinpointerLayers.Screen:
-          Unknown: { state: pinonnull }
-          Reached: { state: pinondirect }
-          Close: { state: pinonclose }
-          Medium: { state: pinonmedium }
-          Far: { state: pinonfar }
+          Unknown: {state: pinonnull}
+          Reached: {state: pinondirect}
+          Close: {state: pinonclose}
+          Medium: {state: pinonmedium}
+          Far: {state: pinonfar}
   - type: AnimationPlayer
   - type: Tag
     tags:

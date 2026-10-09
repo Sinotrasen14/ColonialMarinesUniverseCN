@@ -2,9 +2,9 @@
 - type: entity
   parent: RMCRodent
   id: CMMobMouse
-  name: mouse
+  name: 老鼠 | mouse
   suffix: RMC
-  description: It's a small, disease-ridden rodent.
+  description: 它是一种体型小、疾病缠身的啮齿动物。 | It's a small, disease-ridden rodent.
   components:
   - type: Sprite
     drawdepth: SmallMobs
@@ -33,7 +33,7 @@
 - type: entity
   parent: CMMobMouse
   id: CMMobMouse1
-  name: mouse
+  name: 鼠 | mouse
   suffix: RMC
   components:
   - type: Sprite
@@ -57,7 +57,7 @@
 - type: entity
   parent: CMMobMouse
   id: CMMobMouse2
-  name: mouse
+  name: 鼠标 | mouse
   suffix: RMC
   components:
   - type: Sprite
@@ -81,14 +81,14 @@
 - type: entity
   parent: CMMobMouse
   id: RMCMobMouseDoc
-  name: Doc
-  description: "Senior mouse researcher of the Almayer. Likes: cheese, experiments, explosions."
+  name: 博士 | Doc
+  description: "阿尔迈尔号的高级老鼠研究员。喜好：奶酪、实验、爆炸。 | Senior mouse researcher of the Almayer. Likes: cheese, experiments, explosions."
 
 - type: entity
-  name: rat
+  name: 大鼠 | rat
   parent: RMCRodent
   id: RMCMobRat
-  description: It's a small laboratory rat.
+  description: 它是一只小型实验鼠。 | It's a small laboratory rat.
   suffix: RMC
   components:
   - type: Sprite
@@ -119,8 +119,8 @@
   parent: RMCMobRat
   id: RMCMobRatBrown
   suffix: RMC
-  name: rat
-  description: It's a big, disease-ridden rodent.
+  name: 老鼠 | rat
+  description: 这是一只体型巨大、携带病菌的啮齿动物。 | It's a big, disease-ridden rodent.
   components:
   - type: Sprite
     layers:
@@ -174,8 +174,8 @@
 - type: entity
   parent: [RMCSimpleMob, BaseSlicingRefinable]
   id: RMCMobCorgi
-  name: corgi
-  description: It's a corgi.
+  name: 柯基 | corgi
+  description: 这是一只柯基。 | It's a corgi.
   abstract: true
   components:
   - type: Butcherable
@@ -198,8 +198,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 150
         mask:
@@ -220,8 +219,8 @@
 - type: entity
   parent: RMCMobCorgi
   id: CMMobWiggles
-  name: Mister Wiggles
-  description: It's a corgi puppy. MISTER WIGGLES!! HE IS THE GREATEST!
+  name: 摇摆先生 | Mister Wiggles
+  description: 这是一只柯基幼犬。摇摆先生！！他是最棒的！ | It's a corgi puppy. MISTER WIGGLES!! HE IS THE GREATEST!
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -255,8 +254,8 @@
 - type: entity
   parent: RMCSimpleMob
   id: RMCMobCat
-  name: cat
-  description: It's a black cat
+  name: 猫 | cat
+  description: 这是一只黑猫 | It's a black cat
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -268,8 +267,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 115
         mask:
@@ -321,8 +319,8 @@
 - type: entity
   parent: RMCMobCat
   id: RMCMobCatCalico
-  name: calico
-  description: It's an orange, brown and black cat
+  name: 三花猫 | calico
+  description: 是一只橙色、棕色和黑色的猫。 | It's an orange, brown and black cat
   components:
   - type: Sprite
     layers:
@@ -350,8 +348,8 @@
 - type: entity
   parent: RMCMobCatCalico
   id: CMMobJones
-  name: Jones
-  description: A tough, old stray whose origin no one seems to know.
+  name: 琼斯 | Jones
+  description: 一个强硬、年老的流浪者，似乎无人知道其来历。 | A tough, old stray whose origin no one seems to know.
   components:
   - type: MobThresholds
     thresholds:
@@ -369,8 +367,8 @@
 - type: entity
   parent: RMCMobCatCalico
   id: RMCMobOrion
-  name: Orion
-  description: A domesticated, feline pet. The collar says 'Orion'.
+  name: 奥赖恩 | Orion
+  description: 一只驯化的猫科宠物。项圈上写着“奥赖恩”。 | A domesticated, feline pet. The collar says 'Orion'.
   components:
   - type: WarpPoint
     follow: true
@@ -379,8 +377,8 @@
 - type: entity
   parent: RMCMobCat
   id: RMCMobGarry
-  name: Garry
-  description: Her fur has the look and feel of velvet, and her tail quivers occasionally.
+  name: 加里 | Garry
+  description: 她的毛发具有天鹅绒般的外观和触感，尾巴偶尔会轻轻颤动。 | Her fur has the look and feel of velvet, and her tail quivers occasionally.
   components:
   - type: Grammar
     attributes:
@@ -405,7 +403,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnRatBlack
-  name: rat spawner
+  name: 老鼠生成器 | rat spawner
   suffix: black
   components:
   - type: Sprite
@@ -462,7 +460,7 @@
 - type: entity
   parent: MarkerBase
   id: CMSpawnMobWiggles
-  name: Mr. Wiggles Spawner
+  name: 扭扭先生生成器 | Mr. Wiggles Spawner
   suffix: RMC
   components:
   - type: Sprite
@@ -477,7 +475,7 @@
 - type: entity
   parent: MarkerBase
   id: CMSpawnMobJones
-  name: Jones Spawner
+  name: 琼斯刷怪笼 | Jones Spawner
   suffix: RMC
   components:
   - type: Sprite
@@ -492,7 +490,7 @@
 - type: entity
   parent: MarkerBase
   id: CMSpawnMobOrion
-  name: Orion Spawner
+  name: 猎户座生成器 | Orion Spawner
   suffix: RMC
   components:
   - type: Sprite
@@ -507,7 +505,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnMobGarry
-  name: Garry Spawner
+  name: 加里生成器 | Garry Spawner
   suffix: RMC
   components:
   - type: Sprite
@@ -522,7 +520,7 @@
 - type: entity
   parent: SpawnMobMouse
   id: RMCSpawnMobDoc
-  name: doc spawner
+  name: 文档生成器 | doc spawner
   suffix: RMC
   components:
   - type: ConditionalSpawner

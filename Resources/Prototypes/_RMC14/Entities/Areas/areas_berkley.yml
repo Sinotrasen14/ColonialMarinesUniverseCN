@@ -24,30 +24,30 @@
 # BRIG
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyBrig
-  name: Brig
+  name: 布里格
   components:
   - type: Sprite
     sprite: _RMC14/Areas/savannah.rsi
     state: security
 
 - type: entity
-  parent:  RMCAreaBerkleyBrig
+  parent: RMCAreaBerkleyBrig
   id: RMCAreaBerkleyBrigOB
-  name: Orbital Cannon Room
+  name: 轨道炮室
 
 - type: entity
-  parent:  RMCAreaBerkleyBrig
+  parent: RMCAreaBerkleyBrig
   id: RMCAreaBerkleyPointDefense
-  name: Point Defense
+  name: 点防御
 
 # COMMAND
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyCIC
-  name: Combat Information Center
+  name: 作战信息中心
   components:
   - type: Sprite
     state: command
@@ -55,24 +55,24 @@
     minimapColor: '#2D3FA2EE'
 
 - type: entity
-  parent:  RMCAreaBerkleyCIC
+  parent: RMCAreaBerkleyCIC
   id: RMCAreaBerkleyLiaison
-  name: Liaison Office
+  name: 联络处
 
 - type: entity
-  parent:  RMCAreaBerkleyCIC
+  parent: RMCAreaBerkleyCIC
   id: RMCAreaBerkleyCICingOfficer
-  name: Commanding Officer Bunks
+  name: 指挥官铺位
 
 - type: entity
-  parent:  RMCAreaBerkleyCIC
+  parent: RMCAreaBerkleyCIC
   id: RMCAreaBerkleyCryo
-  name: Command Cryo
+  name: 冷冻指令
 
 - type: entity
-  parent:  RMCAreaBerkleyCIC
+  parent: RMCAreaBerkleyCIC
   id: RMCAreaBerkleyIO
-  name: IO office
+  name: IO办公室
   components:
   - type: Area
     retrieveItemObjective: true
@@ -82,7 +82,7 @@
 - type: entity
   parent: RMCAreaBerkley
   id: RMCAreaBerkleyMedical
-  name: Medical
+  name: 医疗
   components:
   - type: Sprite
     sprite: _RMC14/Areas/berkley.rsi
@@ -90,9 +90,9 @@
   - type: IntelRecoverCorpsesArea
 
 - type: entity
-  parent:  RMCAreaBerkleyMedical
+  parent: RMCAreaBerkleyMedical
   id: RMCAreaBerkleyMedicalResearch
-  name: Research
+  name: 研究
   components:
   - type: Area
     retrieveItemObjective: true
@@ -100,79 +100,79 @@
 # Requisitions
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyRequisitions
-  name: Requisitions
+  name: 请购单
   components:
   - type: Sprite
     state: requi
 
 - type: entity
-  parent:  RMCAreaBerkleyRequisitions
+  parent: RMCAreaBerkleyRequisitions
   id: RMCAreaBerkleyHangarPort
-  name: Hangar Port
+  name: 机库港
 
 - type: entity
-  parent:  RMCAreaBerkleyRequisitions
+  parent: RMCAreaBerkleyRequisitions
   id: RMCAreaBerkleyHangarStarboard
-  name: Hangar Starboard
+  name: 右舷机库
 
 - type: entity
-  parent:  RMCAreaBerkleyRequisitions
+  parent: RMCAreaBerkleyRequisitions
   id: RMCAreaBerkleyPilotsRoom
-  name: Pilots Room
+  name: 飞行员室
 
 - type: entity
-  parent:  RMCAreaBerkleyRequisitions
+  parent: RMCAreaBerkleyRequisitions
   id: RMCAreaBerkleyCanteen
-  name: Canteen
+  name: 食堂
 
 # PREP
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyAlphaBravo
-  name: Alpha-Bravo Preparation
+  name: 阿尔法-布拉沃准备
   components:
   - type: Sprite
     state: alpha_bravo
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyAlpha
-  name: Alpha Preparation
+  name: Alpha 准备
   components:
   - type: Sprite
     state: alpha
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyBravo
-  name: Bravo Preparation
+  name: 布拉沃准备
   components:
   - type: Sprite
     state: bravo
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyCharlieDelta
-  name: Charlie-Delta Preparation
+  name: 查理-德尔塔准备
   components:
   - type: Sprite
     state: charlie_delta
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyCharlie
-  name: Charlie Preparation
+  name: 查理准备
   components:
   - type: Sprite
     state: charlie
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyDelta
-  name: Delta Preparation
+  name: Delta 准备
   components:
   - type: Sprite
     state: delta
@@ -180,9 +180,9 @@
 # ENGI
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyEngineering
-  name: Engineering
+  name: 工程
   components:
   - type: Sprite
     sprite: _RMC14/Areas/savannah.rsi
@@ -207,53 +207,53 @@
     hijackEvacuationType: Add
 
 - type: entity
-  parent:  RMCAreaBerkleyPumpBase
+  parent: RMCAreaBerkleyPumpBase
   id: RMCAreaBerkleyPumpStarboardBow
-  name: Starboard Bow Pump
+  name: 右舷船首泵
 
 - type: entity
-  parent:  RMCAreaBerkleyPumpBase
+  parent: RMCAreaBerkleyPumpBase
   id: RMCAreaBerkleyPumpStarboardQuarter
-  name: Starboard Quarter Pump
+  name: 右舷艉部泵
 
 - type: entity
-  parent:  RMCAreaBerkleyPumpBase
+  parent: RMCAreaBerkleyPumpBase
   id: RMCAreaBerkleyPumpPortBow
-  name: Port Bow Pump
+  name: 左舷船首泵
 
 - type: entity
-  parent:  RMCAreaBerkleyPumpBase
+  parent: RMCAreaBerkleyPumpBase
   id: RMCAreaBerkleyPumpPortQuarter
-  name: Port Quarter Pump
+  name: 左舷后部泵
 
 # OTHER
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyCorridor
-  name: Amidship Corridor
+  name: 船舯走廊
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleySEA
-  name: SEA Office
+  name: 东南亚办公室
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyBriefing
-  name: Briefing
+  name: 简报
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyLifeboat
-  name: Lifeboat Docking
+  name: 救生艇停靠
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleySynthetic
-  name: Synthetic Storage
+  name: 合成存储
 
 - type: entity
-  parent:  RMCAreaBerkley
+  parent: RMCAreaBerkley
   id: RMCAreaBerkleyPress
-  name: Correspondent
+  name: 通讯员

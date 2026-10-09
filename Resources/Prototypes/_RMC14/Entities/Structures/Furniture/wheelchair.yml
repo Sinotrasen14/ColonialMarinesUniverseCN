@@ -29,8 +29,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 30
         mask:
@@ -42,10 +41,10 @@
     visuals:
       enum.RotationVisuals.RotationState:
         enum.RotationVisualLayers.Layer:
-          North: { state: wheelchair, drawdepth: Mobs }
-          South: { state: wheelchair, drawdepth: Mobs }
-          East: { state: wheelchair, drawdepth: Objects }
-          West: { state: wheelchair, drawdepth: Objects }
+          North: {state: wheelchair, drawdepth: Mobs}
+          South: {state: wheelchair, drawdepth: Mobs}
+          East: {state: wheelchair, drawdepth: Objects}
+          West: {state: wheelchair, drawdepth: Objects}
   - type: ContainerContainer
     containers:
       rmc-vehicle-pilot: !type:ContainerSlot
@@ -58,8 +57,7 @@
       - Xeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior
@@ -71,8 +69,8 @@
 - type: entity
   parent: RMCWheelchairBase
   id: RMCWheelchair
-  name: wheelchair
-  description: Helps those with injuries related to immobility to move freely
+  name: 轮椅
+  description: 帮助因行动不便而受伤的人自由移动
   components:
   - type: RMCAllowStrapMovement
   - type: Wheelchair
@@ -81,8 +79,8 @@
 - type: entity
   parent: RMCWheelchairBase
   id: RMCWheelchairBell
-  name: wheelchair with bell
-  description: Helps those with injuries related to immobility to move freely. Has a bell attached.
+  name: 带铃铛的轮椅
+  description: 帮助因行动不便而受伤的人自由移动。附有铃铛。
   components:
   - type: RMCAllowStrapMovement
   - type: Wheelchair

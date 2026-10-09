@@ -1,8 +1,8 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomGunBase
-  name: gun spawner
-  description: hi this will spawn a random gun
+  name: 枪械生成器 | gun spawner
+  description: 嗨，这将生成一把随机枪械 | hi this will spawn a random gun
   suffix: Base
   abstract: true
   components:
@@ -15,8 +15,8 @@
 - type: entity
   parent: RMCSpawnerRandomGunBase
   id: RMCSpawnerRandomGunPistol
-  name: pistol loot spawner
-  description: spawns a surv pistol and some ammo
+  name: 手枪战利品生成器 | pistol loot spawner
+  description: 生成一把生存手枪和一些弹药 | spawns a surv pistol and some ammo
   suffix: Guaranteed
   components:
   - type: GunSpawner
@@ -80,8 +80,8 @@
 - type: entity
   parent: RMCSpawnerRandomGunBase
   id: RMCSpawnerRandomGunRifle
-  name: rifle loot spawner
-  description: spawns a surv rifle and some ammo
+  name: 步枪战利品生成器 | rifle loot spawner
+  description: 生成一把生存步枪和一些弹药 | spawns a surv rifle and some ammo
   suffix: Guaranteed
   components:
   - type: Sprite
@@ -148,8 +148,8 @@
 - type: entity
   parent: RMCSpawnerRandomGunBase
   id: RMCSpawnerRandomGunShotgun
-  name: shotgun loot spawner
-  description: spawns a surv shotgun and some ammo
+  name: 霰弹枪战利品生成器 | shotgun loot spawner
+  description: 生成一把生存霰弹枪和一些弹药 | spawns a surv shotgun and some ammo
   suffix: Guaranteed
   components:
   - type: Sprite
@@ -210,8 +210,8 @@
 - type: entity
   parent: RMCSpawnerRandomGunBase
   id: RMCSpawnerRandomGunSMG
-  name: smg loot spawner
-  description: spawns a surv smg and some ammo
+  name: 冲锋枪战利品生成器 | smg loot spawner
+  description: 生成一把生存冲锋枪和一些弹药 | spawns a surv smg and some ammo
   suffix: Guaranteed
   components:
   - type: Sprite
@@ -278,8 +278,8 @@
 - type: entity
   parent: RMCSpawnerRandomGunBase
   id: RMCSpawnerRandomGunSpecial
-  name: special gun loot spawner
-  description: spawns a surv special gun and some ammo
+  name: 特殊枪械战利品生成器 | special gun loot spawner
+  description: 生成一把幸存者特殊枪械和一些弹药 | spawns a surv special gun and some ammo
   suffix: Guaranteed
   components:
   - type: Sprite
@@ -338,8 +338,8 @@
 - type: entity
   parent: RMCSpawnerRandomGunBase
   id: RMCSpawnerRandomAttachment
-  name: random attachment
-  description: This is a random attachment
+  name: 随机附件 | random attachment
+  description: 这是一个随机附件 | This is a random attachment
   suffix: Guaranteed
   components:
   - type: Sprite
@@ -378,9 +378,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomShotgunBoxes
-  name: shotgun shell box spawner
-  description: This is a shotgun shell box.
-  categories: [ HideSpawnMenu ]
+  name: 霰弹枪弹药盒生成器 | shotgun shell box spawner
+  description: 这是一个霰弹枪弹药盒。 | This is a shotgun shell box.
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -398,9 +398,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomGrenadePackets
-  name: random grenade packets spawner
-  description: This is a random grenade packet.
-  categories: [ HideSpawnMenu ]
+  name: 随机手雷包生成器 | random grenade packets spawner
+  description: 这是一个随机手雷包。 | This is a random grenade packet.
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -426,9 +426,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomRockets
-  name: random rockets spawner
-  description: This is a random rocket.
-  categories: [ HideSpawnMenu ]
+  name: 随机火箭生成器 | random rockets spawner
+  description: 这是一枚随机火箭。 | This is a random rocket.
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -445,7 +445,7 @@
 - type: entity
   parent: RMCSpawnerRandomRockets
   id: RMCSpawnerRandomRocketsDisposable
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: RandomSpawner
     chance: 0 # disposable rocket don't spawn with any

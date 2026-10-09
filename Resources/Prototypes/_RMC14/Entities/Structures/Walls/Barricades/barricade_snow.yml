@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBarricadeBase
   id: RMCBarricadeSnow
-  name: snow barricade
-  description: A mound of snow shaped into a sloped wall. Statistically better than thin air as cover.
+  name: 雪垒
+  description: 一堆雪堆成的斜面墙。作为掩体，从统计上看比稀薄的空气要强。
   components:
   - type: Sprite
     drawdepth: WallTops
@@ -30,15 +30,14 @@
       sprite: _RMC14/Structures/Walls/Barricades/snow_cracks.rsi
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Effects/Footsteps/snowstep3.ogg
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Climbable
   - type: XenoToggleChargingDamage
     sound:

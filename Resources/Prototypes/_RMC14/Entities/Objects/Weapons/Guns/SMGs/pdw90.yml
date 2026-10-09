@@ -1,17 +1,17 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: FN P90 submachine gun
+  name: FN P90 冲锋枪
   id: RMCWeaponSMGPDW90
-  description: The P90 submachine gun. An archaic design, but still widely used by corporate and mercenary groups, sometimes seen in the hands of civilian populations. This weapon only accepts 5.7×28mm rounds.
+  description: P90冲锋枪。一种过时的设计，但仍被企业和雇佣兵团体广泛使用，有时也出现在平民手中。该武器只能使用5.7×28毫米弹药。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/pdw90.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/pdw90.rsi
   - type: Gun
@@ -46,7 +46,7 @@
     accuracyMultiplierUnwielded: 0.9
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: WieldableSpeedModifiers
     base: 0.725
     light: 1
@@ -55,7 +55,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSMGPDW90
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -91,48 +91,48 @@
       rmc-aslot-rail: 0.2, 0.219
   - type: GunDamageModifier
     multiplier: 1.2
-    
+
 - type: entity
   parent: RMCWeaponSMGPDW90
-  name: L57 submachine gun
+  name: L57冲锋枪
   id: RMCWeaponSMGPDW90TSE
-  description: A P90 submachine gun in the colors of the Royal Marines, manufactured for the TWE's armed forces under license. This weapon only accepts 5.7x28mm rounds.
+  description: 一把采用皇家海军陆战队配色的P90冲锋枪，经授权为TWE武装部队制造。该武器仅能使用5.7×28毫米弹药。
   suffix: Filled
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Weapons/Guns/SMGs/pdw90tse.rsi
-      layers:
-        - state: base
-          map: [ "enum.GunVisualLayers.Base" ]
-        - state: mag-0
-          map: [ "enum.GunVisualLayers.Mag" ]
-    - type: Clothing
-      sprite: _RMC14/Objects/Weapons/Guns/SMGs/pdw90tse.rsi
-    - type: ItemSlots
-      slots:
-        gun_magazine:
-          name: Magazine
-          startingItem: RMCMagazineSMGPDW90AP
-          insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
-          ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
-          priority: 2
-          whitelist:
-            tags:
-              - RMCMagazineSMGPDW90
-              - RMCMagazineSMGPDW90AP
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/SMGs/pdw90tse.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: _RMC14/Objects/Weapons/Guns/SMGs/pdw90tse.rsi
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: 弹匣
+        startingItem: RMCMagazineSMGPDW90AP
+        insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
+        ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - RMCMagazineSMGPDW90
+          - RMCMagazineSMGPDW90AP
 
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSMGPDW90
-  name: "P90 magazine (5.7×28mm)"
-  description: "A 5.7×28mm magazine for the FN PDW90."
+  name: "P90弹匣（5.7×28毫米）"
+  description: "用于FN PDW90的5.7×28毫米弹匣。"
   components:
   - type: Tag
     tags:
     - CMMagazineSmg
     - RMCMagazineSMGPDW90
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridge57x28mm
@@ -153,45 +153,45 @@
   - type: Appearance
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsSMGP90
-    
+
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSMGPDW90AP
-  name: "P90 AP magazine (5.7×28mm)"
-  description: "An armor-piercing 5.7x28mm magazine for the FN PDW90."
+  name: "P90穿甲弹匣（5.7×28毫米）"
+  description: "一款用于FN PDW90的5.7×28毫米穿甲弹匣。"
   components:
-    - type: Tag
+  - type: Tag
+    tags:
+    - CMMagazineSmg
+    - RMCMagazineSMGPDW90AP
+  - type: BallisticAmmoProvider
+    mayTransfer: true
+    whitelist:
       tags:
-        - CMMagazineSmg
-        - RMCMagazineSMGPDW90AP
-    - type: BallisticAmmoProvider
-      mayTransfer: True
-      whitelist:
-        tags:
-          - RMCCartridge57x28mmAP
-      proto: RMCCartridge57x28mmAP
-      capacity: 50
-    - type: Sprite
-      sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/pdw90tse.rsi
-      layers:
-        - state: base
-          map: ["enum.GunVisualLayers.Base"]
-        - state: mag-1
-          map: ["enum.GunVisualLayers.Mag"]
-    - type: MagazineVisuals
-      magState: mag
-      steps: 2
-      zeroVisible: false
-      zeroOnlyOnEmpty: true
-    - type: Appearance
-    - type: RefillableByBulletBox
-      bulletType: CMUBoxBulletsSMGP90AP
-    
+      - RMCCartridge57x28mmAP
+    proto: RMCCartridge57x28mmAP
+    capacity: 50
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/pdw90tse.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: MagazineVisuals
+    magState: mag
+    steps: 2
+    zeroVisible: false
+    zeroOnlyOnEmpty: true
+  - type: Appearance
+  - type: RefillableByBulletBox
+    bulletType: CMUBoxBulletsSMGP90AP
+
 - type: entity
   parent: CMCartridge10x20mm
   id: RMCCartridge57x28mm
-  name: cartridge (57×28mm SMG)
-  description: A 5.7×28mm cartridge for the FN PDW90.
+  name: 弹药（5.7×28mm 冲锋枪）
+  description: 用于 FN PDW90 的 5.7×28mm 弹药。
   components:
   - type: Tag
     tags:
@@ -199,24 +199,24 @@
     - RMCCartridge57x28mm
   - type: CartridgeAmmo
     proto: RMCBullet57x28mm
-    
+
 - type: entity
   parent: CMCartridge10x20mm
   id: RMCCartridge57x28mmAP
-  name: cartridge (57×28mm SMG)
-  description: A 5.7×28mm AP cartridge for the FN PDW90.
+  name: 子弹（57×28mm 冲锋枪）
+  description: FN PDW90使用的5.7×28mm穿甲弹。
   components:
-    - type: Tag
-      tags:
-        - Cartridge
-        - RMCCartridge57x28mmAP
-    - type: CartridgeAmmo
-      proto: RMCBullet57x28mmAP
+  - type: Tag
+    tags:
+    - Cartridge
+    - RMCCartridge57x28mmAP
+  - type: CartridgeAmmo
+    proto: RMCBullet57x28mmAP
 
 - type: entity
   parent: Bullet10x20mm
   id: RMCBullet57x28mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -235,28 +235,28 @@
 - type: entity
   parent: Bullet10x20mm
   id: RMCBullet57x28mmAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Projectile
-      damage:
-        types:
-          Piercing: 20
-    - type: RMCProjectileDamageFalloff
-      thresholds:
-        - range: 22
-          falloff: 9999
-          ignoreModifiers: true
-        - range: 8
-          falloff: 5
-    - type: CMArmorPiercing
-      amount: 20
+  - type: Projectile
+    damage:
+      types:
+        Piercing: 20
+  - type: RMCProjectileDamageFalloff
+    thresholds:
+    - range: 22
+      falloff: 9999
+      ignoreModifiers: true
+    - range: 8
+      falloff: 5
+  - type: CMArmorPiercing
+    amount: 20
 
 - type: Tag
   id: RMCWeaponSMGPDW90TSE
-  
+
 - type: Tag
   id: RMCMagazineSMGPDW90
-  
+
 - type: Tag
   id: RMCMagazineSMGPDW90AP
 

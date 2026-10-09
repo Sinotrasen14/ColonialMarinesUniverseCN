@@ -1,7 +1,7 @@
 - type: entity
   id: RMCPropIlluminator
-  name: UE-92/B Area Illuminator
-  description: A variant of the UE-92, a large deployable floodlight. This version is less powerful but it houses an internal power source that allows it to operate for several hours without being linked to a power generator.
+  name: UE-92/B区域照明灯
+  description: UE-92的变体，一种大型可部署泛光灯。此版本功率较低，但内置电源，使其无需连接发电机即可运行数小时。
   placement:
     mode: SnapgridCenter
   components:
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 190
         layer:
@@ -29,12 +28,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak

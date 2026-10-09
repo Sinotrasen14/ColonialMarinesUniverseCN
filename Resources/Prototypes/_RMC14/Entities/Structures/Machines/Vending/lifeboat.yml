@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: RMCNanoMed
   id: RMCVendorLifeboatMedical
-  name: lifeboat medical cabinet
-  description: A wall-mounted cabinet containing medical supplies vital to survival. While better equipped, it can only refill basic supplies.
+  name: 救生艇医疗柜
+  description: 一个壁挂式柜子，内含生存所必需的医疗用品。它虽然装备更齐全，却只能补充基本物资。
   components:
   - type: Transform
     anchored: false
@@ -16,17 +16,17 @@
   - type: CMAutomatedVendor
     hackable: false
     sections:
-    - name: Autoinjectors
+    - name: 自动注射器
       entries:
       # - id: CMPainStopAutoinjector
       #   amount: 8
       - id: CMTricordrazineAutoInjectorNoSkill
         amount: 8
-    - name: Devices
+    - name: 设备
       entries:
       - id: CMHealthAnalyzer
         amount: 8
-    - name: Field Supplies
+    - name: 现场物资
       entries:
       - id: CMBurnKit10
         amount: 8
@@ -42,8 +42,8 @@
 - type: entity
   parent: ColMarTechBase
   id: RMCVendorLifeboatWall
-  name: lifeboat wall cabinet
-  description: A wall-mounted emergency cabinet containing survival supplies.
+  name: 救生艇壁柜
+  description: 壁挂式应急柜，内装救生用品。
   components:
   - type: Sprite
     drawdepth: WallMountedItems
@@ -53,13 +53,13 @@
   - type: CMAutomatedVendor
     hackable: false
     sections:
-    - name: Food and beverage
+    - name: 食品和饮料
       entries:
-       - id: CMMRE
-         amount: 25
-       - id: CMDrinkWEYAWaterBottle30
-         amount: 25
-    - name: Utility
+      - id: CMMRE
+        amount: 25
+      - id: CMDrinkWEYAWaterBottle30
+        amount: 25
+    - name: 实用工具
       entries:
       - id: CMPackFlare
         amount: 5
@@ -69,7 +69,7 @@
         amount: 5
       - id: RMCPlayingCardDeck
         amount: 5
-    - name: Clothing
+    - name: 服装
       entries:
       - id: CMMaskGas
         amount: 15

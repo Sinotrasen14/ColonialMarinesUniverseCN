@@ -1,16 +1,16 @@
-﻿- type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: M46A prototype rifle
+- type: entity
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: M46A原型步枪
   id: RMCWeaponRifleM59A
-  description: A prototype M46A, an experimental rifle platform built to outperform the standard M41A. Back issue only. Uses standard MK1 & MK2 rifle magazines.
+  description: M46A原型步枪，一种旨在超越标准M41A的实验性步枪平台。仅限过刊。使用标准MK1和MK2步枪弹匣。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m59a/desert.rsi #TODO RMC: Change when new sprites
     layers:
     - state: bolt-open
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m59a/desert.rsi #TODO RMC: Change when new sprites
   - type: ContainerContainer
@@ -62,7 +62,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2

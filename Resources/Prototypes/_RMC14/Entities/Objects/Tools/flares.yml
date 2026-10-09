@@ -1,14 +1,13 @@
 - type: entity
-  name: flare
+  name: 信号弹
   parent: BaseItem
   id: CMFlare
-  description: A red Marine issued flare. There are instructions on the side, it reads 'pull cord, make light'.
+  description: 一枚红色的海军陆战队配发信号弹。侧面有使用说明，上面写着“拉绳，发光”。
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 20
         mask:
@@ -35,14 +34,14 @@
   - type: Sprite
     sprite: _RMC14/Objects/Misc/flares.rsi
     layers:
-      - map: [ "enum.ExpendableLightVisualLayers.Base" ]
-        state: flare
-      - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
-        state: flare_flame
-        color: "#FFA7A7"
-        visible: false
-      - map: [ "enum.ExpendableLightVisualLayers.Overlay" ]
-        state: overlay
+    - map: ["enum.ExpendableLightVisualLayers.Base"]
+      state: flare
+    - map: ["enum.ExpendableLightVisualLayers.Glow"]
+      state: flare_flame
+      color: "#FFA7A7"
+      visible: false
+    - map: ["enum.ExpendableLightVisualLayers.Overlay"]
+      state: overlay
   - type: Icon
     sprite: _RMC14/Objects/Misc/flares.rsi
     state: icon
@@ -58,16 +57,18 @@
     netsync: false
   - type: LightBehaviour
     behaviours:
-      - !type:FadeBehaviour # faster then base flares
-        id: turn_on
-        maxDuration: 5.0
-        startValue: 2.5
-        endValue: 7.0
-      - !type:FadeBehaviour # burns out slower
-        id: fade_out
-        maxDuration: 570
-        startValue: 7.0
-        endValue: 1.0
+                            # faster then base flares
+    - !type:FadeBehaviour
+      id: turn_on
+      maxDuration: 5.0
+      startValue: 2.5
+      endValue: 7.0
+                            # burns out slower
+    - !type:FadeBehaviour
+      id: fade_out
+      maxDuration: 570
+      startValue: 7.0
+      endValue: 1.0
   - type: RMCNightVisionVisibleOnIgnite
   - type: CartridgeAmmo
     deleteOnSpawn: true
@@ -78,8 +79,8 @@
 - type: entity
   parent: CMFlare
   id: RMCFlareCAS
-  name: signal flare
-  description: A green UNMC issued signal flare. The telemetry computer works on chemical reaction that releases smoke and light and thus works only while the flare is burning.
+  name: 信号弹
+  description: 一枚由UNMC配发的绿色信号弹。遥测计算机依靠释放烟雾和光的化学反应运行，因此仅在信号弹燃烧时工作。
   components:
   - type: Tag
     tags:
@@ -87,14 +88,14 @@
   - type: Sprite
     sprite: _RMC14/Objects/Misc/cas_flares.rsi
     layers:
-    - map: [ "enum.ExpendableLightVisualLayers.Base" ]
+    - map: ["enum.ExpendableLightVisualLayers.Base"]
       state: flare
-    - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
+    - map: ["enum.ExpendableLightVisualLayers.Glow"]
       sprite: _RMC14/Objects/Misc/cas_flares.rsi
       state: flare_flame
       color: "#A7FFA7"
       visible: false
-    - map: [ "enum.ExpendableLightVisualLayers.Overlay" ]
+    - map: ["enum.ExpendableLightVisualLayers.Overlay"]
       sprite: _RMC14/Objects/Misc/cas_flares.rsi
       state: overlay
   - type: Icon
@@ -107,12 +108,14 @@
     glowDuration: 180
   - type: LightBehaviour
     behaviours:
-    - !type:FadeBehaviour # faster then base flares
+                          # faster then base flares
+    - !type:FadeBehaviour
       id: turn_on
       maxDuration: 5.0
       startValue: 2.5
       endValue: 7.0
-    - !type:FadeBehaviour # burns out slower
+                          # burns out slower
+    - !type:FadeBehaviour
       id: fade_out
       maxDuration: 150
       startValue: 7.0
@@ -129,18 +132,18 @@
 - type: entity
   parent: CMFlare
   id: RMCStarShellAsh
-  name: burning star shell ash
-  description: Bright burning ash from a Star Shell 40mm. Don't touch, or it'll burn ya'.
+  name: 燃烧的照明弹灰烬
+  description: 来自40毫米照明弹的明亮燃烧灰烬。别碰，不然会烧伤你。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/flares.rsi
     layers:
-    - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
+    - map: ["enum.ExpendableLightVisualLayers.Glow"]
       sprite: _RMC14/Objects/Misc/flares.rsi
       state: starshell_ash-on
       color: "#A7FFA7"
       visible: false
-    - map: [ "enum.ExpendableLightVisualLayers.Overlay" ]
+    - map: ["enum.ExpendableLightVisualLayers.Overlay"]
       sprite: _RMC14/Objects/Misc/flares.rsi
       state: starshell_ash
   - type: Icon
@@ -156,7 +159,7 @@
     spentName: expendable-light-starshell-ash-empty-name
     spentDesc: expendable-light-starshell-ash-empty-desc
     iconStateSpent: starshell_ash-empty
-    loopedSound: null
+    loopedSound:
   - type: LightBehaviour
     behaviours:
     - !type:FadeBehaviour
@@ -173,8 +176,8 @@
 - type: entity
   parent: RMCBoxMagazineSupplySmallBase
   id: RMCBoxPackFlareEmpty
-  name: box of M94 flare packs (x10)
-  description: A box of M94 marking flare packs, to brighten up your day.
+  name: 一盒M94标记信号弹包（10个）
+  description: 一盒M94标记信号弹包，点亮你的一天。
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -184,7 +187,7 @@
   - type: CMItemSlots
     count: 10
     slot:
-      name: FlarePack
+      name: 闪光包
       whitelist:
         tags:
         - CMFlarePack
@@ -193,17 +196,17 @@
     - state: supply_box_small
       color: "#646a3c"
     - state: supply_ammo_small_full
-      map: [ "enum.CMItemSlotsLayers.Fill" ]
+      map: ["enum.CMItemSlotsLayers.Fill"]
       color: "#867872"
     - state: supply_box_small_flare
       color: "#646a3c"
     - state: supply_box_small_flare_colour
       color: "#f0c16f"
     - state: supply_lid_small_closed
-      map: [ "lid" ]
+      map: ["lid"]
       color: "#646a3c"
     - state: supply_lid_small_closed_marking
-      map: [ "lid_marking" ]
+      map: ["lid_marking"]
       color: "#646a3c"
 
 - type: entity
@@ -217,8 +220,8 @@
 - type: entity
   parent: RMCBoxMagazineSupplySmallBase
   id: RMCBoxPackFlareCASEmpty
-  name: box of M89-S flare packs (x10)
-  description: A box of M89 signal flare packs, to mark up the way.
+  name: 一盒M89-S信号弹包（10个）
+  description: 一盒M89信号弹包，用于标记路线。
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -228,7 +231,7 @@
   - type: CMItemSlots
     count: 10
     slot:
-      name: FlarePack
+      name: 耀斑包
       whitelist:
         tags:
         - RMCPackFlareCAS
@@ -237,17 +240,17 @@
     - state: supply_box_small
       color: "#646a3c"
     - state: supply_ammo_small_full
-      map: [ "enum.CMItemSlotsLayers.Fill" ]
+      map: ["enum.CMItemSlotsLayers.Fill"]
       color: "#867872"
     - state: supply_box_small_flare
       color: "#646a3c"
     - state: supply_box_small_flare_colour
       color: "#f06f6f"
     - state: supply_lid_small_closed
-      map: [ "lid" ]
+      map: ["lid"]
       color: "#646a3c"
     - state: supply_lid_small_closed_marking
-      map: [ "lid_marking" ]
+      map: ["lid_marking"]
       color: "#646a3c"
 
 - type: entity
@@ -262,8 +265,8 @@
   abstract: true
   parent: BaseItem
   id: CMPackFlareBase
-  name: M94 marking flare pack
-  description: A packet of eight M94 Marking Flares. Carried by Marine soldiers to light dark areas that cannot be reached with the usual TNR Shoulder Lamp.
+  name: M94标记照明弹包
+  description: 一包八枚M94标记照明弹。由海军陆战队士兵携带，用于照亮普通TNR肩灯无法照到的黑暗区域。
   components:
   - type: Item
     size: Normal
@@ -273,7 +276,7 @@
   - type: CMItemSlots
     count: 8
     slot:
-      name: Flare
+      name: 弗莱尔
       whitelist:
         tags:
         - RMCFlare
@@ -281,25 +284,25 @@
     sprite: _RMC14/Objects/Storage/boxes.rsi
     layers:
     - state: m94_e
-      map: [ "emptyLayer" ]
+      map: ["emptyLayer"]
     - state: m94
-      map: [ "fullLayer" ]
+      map: ["fullLayer"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.CMItemSlotsLayers.Fill:
         fullLayer:
-          Empty: { visible: false }
-          Low: { visible: true }
-          Medium: { visible: true }
-          High: { visible: true }
-          Full: { visible: true }
+          Empty: {visible: false}
+          Low: {visible: true}
+          Medium: {visible: true}
+          High: {visible: true}
+          Full: {visible: true}
         emptyLayer:
-          Empty: { visible: true }
-          Low: { visible: false }
-          Medium: { visible: false }
-          High: { visible: false }
-          Full: { visible: false }
+          Empty: {visible: true}
+          Low: {visible: false}
+          Medium: {visible: false}
+          High: {visible: false}
+          Full: {visible: false}
 
 - type: entity
   parent: CMPackFlareBase
@@ -312,8 +315,8 @@
 - type: entity
   parent: CMPackFlareBase
   id: RMCPackFlareCAS
-  name: M89-S signal flare pack
-  description: A packet of eight M89-S Signal Marking Flares.
+  name: M89-S信号弹包
+  description: 一包八枚M89-S信号标记弹。
   suffix: Filled
   components:
   - type: Tag
@@ -322,9 +325,9 @@
   - type: Sprite
     layers:
     - state: m89_e
-      map: [ "emptyLayer" ]
+      map: ["emptyLayer"]
     - state: m89
-      map: [ "fullLayer" ]
+      map: ["fullLayer"]
   - type: CMItemSlots
     count: 8
     startingItem: RMCFlareCAS
@@ -336,8 +339,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCFlareBullet
-  name: flare projectile
-  categories: [ HideSpawnMenu ]
+  name: 照明弹
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/airburst_projectiles.rsi
@@ -376,8 +379,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         hard: false
         mask:
@@ -387,8 +389,8 @@
 - type: entity
   parent: RMCFlareBullet
   id: RMCFlareCASBullet
-  name: signal flare projectile
-  categories: [ HideSpawnMenu ]
+  name: 信号弹
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/airburst_projectiles.rsi
@@ -404,8 +406,8 @@
 
 - type: entity
   id: RMCAirFlare
-  name: air flare
-  categories: [ HideSpawnMenu ]
+  name: 大回环
+  categories: [HideSpawnMenu]
   components:
   - type: ExpendableLight
     startsActivated: true
@@ -415,16 +417,16 @@
     fadeOutBehaviourID: fade_out
   - type: LightBehaviour
     behaviours:
-      - !type:FadeBehaviour
-        id: turn_on
-        maxDuration: 5.0
-        startValue: 2.5
-        endValue: 7.0
-      - !type:FadeBehaviour
-        id: fade_out
-        maxDuration: 30
-        startValue: 7.0
-        endValue: 1.0
+    - !type:FadeBehaviour
+      id: turn_on
+      maxDuration: 5.0
+      startValue: 2.5
+      endValue: 7.0
+    - !type:FadeBehaviour
+      id: fade_out
+      maxDuration: 30
+      startValue: 7.0
+      endValue: 1.0
   - type: Appearance
   - type: PointLight
     enabled: false
@@ -438,8 +440,8 @@
 - type: entity
   parent: RMCAirFlare
   id: RMCAirFlareCAS
-  name: air signal flare
-  categories: [ HideSpawnMenu ]
+  name: 空中信号弹
+  categories: [HideSpawnMenu]
   components:
   - type: Tag
     tags:
@@ -450,26 +452,26 @@
   - type: Sprite
     sprite: _RMC14/Objects/Misc/air_flare.rsi
     layers:
-    - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
+    - map: ["enum.ExpendableLightVisualLayers.Glow"]
       state: air_flame
       color: "#A7FFA7"
   - type: LightBehaviour
     behaviours:
-      - !type:FadeBehaviour
-        id: turn_on
-        maxDuration: 5
-        startValue: 2.5
-        endValue: 5
-      - !type:FadeBehaviour
-        id: phase_1
-        maxDuration: 145
-        startValue: 5
-        endValue: 5
-      - !type:FadeBehaviour
-        id: fade_out
-        maxDuration: 30
-        startValue: 5
-        endValue: 1
+    - !type:FadeBehaviour
+      id: turn_on
+      maxDuration: 5
+      startValue: 2.5
+      endValue: 5
+    - !type:FadeBehaviour
+      id: phase_1
+      maxDuration: 145
+      startValue: 5
+      endValue: 5
+    - !type:FadeBehaviour
+      id: fade_out
+      maxDuration: 30
+      startValue: 5
+      endValue: 1
   - type: PointLight
     color: "#A7FFA7"
     radius: 8.0
@@ -486,8 +488,8 @@
 - type: entity
   parent: CMFlare
   id: RMCFlareL96
-  name: flare
-  description: A vibrant purple Royal Crown Marines issued flare. There are instructions on the side, it reads 'To light, pull cord'.
+  name: 信号弹
+  description: 一枚鲜艳的紫色、由皇家皇冠海军陆战队配发的信号弹。侧面有说明，写着“点燃时，拉动拉绳”。
   components:
   - type: Tag
     tags:
@@ -508,14 +510,14 @@
   - type: Sprite
     sprite: _RMC14/Objects/Misc/flares.rsi
     layers:
-      - map: [ "enum.ExpendableLightVisualLayers.Base" ]
-        state: flare
-      - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
-        state: flare_flame
-        color: "#C156C2"
-        visible: false
-      - map: [ "enum.ExpendableLightVisualLayers.Overlay" ]
-        state: overlay
+    - map: ["enum.ExpendableLightVisualLayers.Base"]
+      state: flare
+    - map: ["enum.ExpendableLightVisualLayers.Glow"]
+      state: flare_flame
+      color: "#C156C2"
+      visible: false
+    - map: ["enum.ExpendableLightVisualLayers.Overlay"]
+      state: overlay
   - type: Icon
     sprite: _RMC14/Objects/Misc/flares.rsi
     state: icon
@@ -531,16 +533,16 @@
     netsync: false
   - type: LightBehaviour
     behaviours:
-      - !type:FadeBehaviour
-        id: turn_on
-        maxDuration: 5.0
-        startValue: 2.5
-        endValue: 7.0
-      - !type:FadeBehaviour
-        id: fade_out
-        maxDuration: 570
-        startValue: 7.0
-        endValue: 1.0
+    - !type:FadeBehaviour
+      id: turn_on
+      maxDuration: 5.0
+      startValue: 2.5
+      endValue: 7.0
+    - !type:FadeBehaviour
+      id: fade_out
+      maxDuration: 570
+      startValue: 7.0
+      endValue: 1.0
   - type: RMCNightVisionVisibleOnIgnite
   - type: CartridgeAmmo
     deleteOnSpawn: true
@@ -551,8 +553,8 @@
 - type: entity
   parent: CMPackFlareBase
   id: RMCPackFlareL96
-  name: L96 marking flare pack
-  description: A packet of eight L96 Signal Marking Flares.
+  name: L96 标记信号弹包
+  description: 一包八发L96标记信号弹。
   suffix: Filled
   components:
   - type: Tag
@@ -561,9 +563,9 @@
   - type: Sprite
     layers:
     - state: l96_e
-      map: [ "emptyLayer" ]
+      map: ["emptyLayer"]
     - state: l96
-      map: [ "fullLayer" ] # TODO RMC14 proper sprites for this
+      map: ["fullLayer"]   # TODO RMC14 proper sprites for this
   - type: CMItemSlots
     count: 8
     startingItem: RMCFlareL96
@@ -575,8 +577,8 @@
 - type: entity
   parent: RMCFlareBullet
   id: RMCFlareL96Bullet
-  name: L96 flare projectile
-  categories: [ HideSpawnMenu ]
+  name: L96照明弹
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/airburst_projectiles.rsi
@@ -593,8 +595,8 @@
 
 - type: entity
   id: RMCAirFlareL96
-  name: air flare
-  categories: [ HideSpawnMenu ]
+  name: 空中托马斯
+  categories: [HideSpawnMenu]
   components:
   - type: ExpendableLight
     startsActivated: true
@@ -602,21 +604,21 @@
   - type: Sprite
     sprite: _RMC14/Objects/Misc/air_flare.rsi
     layers:
-    - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
+    - map: ["enum.ExpendableLightVisualLayers.Glow"]
       state: air_flame
       color: "#C8BFE7"
   - type: LightBehaviour
     behaviours:
-      - !type:FadeBehaviour
-       id: turn_on
-       maxDuration: 5.0
-       startValue: 2.5
-       endValue: 7.0
-      - !type:FadeBehaviour
-       id: fade_out
-       maxDuration: 30
-       startValue: 7.0
-       endValue: 1.0
+    - !type:FadeBehaviour
+      id: turn_on
+      maxDuration: 5.0
+      startValue: 2.5
+      endValue: 7.0
+    - !type:FadeBehaviour
+      id: fade_out
+      maxDuration: 30
+      startValue: 7.0
+      endValue: 1.0
   - type: PointLight
     enabled: true
     color: "#C8BFE7"

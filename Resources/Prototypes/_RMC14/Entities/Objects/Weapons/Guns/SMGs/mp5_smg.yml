@@ -1,15 +1,15 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: MP5 submachinegun
+  name: MP5冲锋枪
   id: WeaponSMGMP5
-  description: A German design, this was one of the most widely used submachine guns in the world. It's still possible to find this firearm in the hands of collectors or gun fanatics.
+  description: 这款德国设计的冲锋枪曾是世界上使用最广泛的冲锋枪之一。如今仍有可能在收藏家或枪械爱好者手中找到这种枪械。
   suffix: Filled
   components:
   - type: Sprite
     sprite: CMU14/Objects/Weapons/Guns/SMGs/mp5.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: ItemMapper
     containerWhitelist:
     - gun_magazine
@@ -56,11 +56,11 @@
     accuracyMultiplierUnwielded: 0.8
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineSMGMP5
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -119,8 +119,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: CMMagazineSMGMP5
-  name: "MP5 magazine (9mm)"
-  description: "A 9mm magazine for the MP5."
+  name: "MP5弹匣（9毫米）"
+  description: "用于MP5的9毫米弹匣。"
   components:
   - type: Tag
     tags:
@@ -128,7 +128,7 @@
     - CMMagazineSMGMP5
     - CMUMagazineSMGMP5Stick
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridge9mmSMG
@@ -149,12 +149,12 @@
   - type: Appearance
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistol9MM
-    
+
 - type: entity
   parent: CMCartridge10x20mm
   id: CMCartridge9mmSMG
-  name: cartridge (9mm SMG)
-  description: A 9mm cartridge for the mp5 submachinegun.
+  name: 弹药（9毫米冲锋枪）
+  description: 用于MP5冲锋枪的9毫米子弹。
   components:
   - type: Tag
     tags:
@@ -166,7 +166,7 @@
 - type: entity
   parent: Bullet10x20mm
   id: CMBullet9mmSMG #Yes it does use a seperate type of 9mm thats mechanically identical to 10x20mm for some reason
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: Tag
   id: CMMagazineSMGMP5

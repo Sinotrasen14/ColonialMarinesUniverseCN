@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: BaseStructure
   id: CMOperatingTable
-  name: operating table
-  description: Used for advanced medical procedures.
+  name: 手术台
+  description: 用于高级医疗手术。
   components:
   - type: CMUReconFurniture
     material: OperatingTable
@@ -21,8 +21,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 100
         mask:

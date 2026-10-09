@@ -7,7 +7,7 @@
 - type: entity
   parent: BaseStructure
   id: CMGirder
-  name: girder
+  name: 梁
   components:
   - type: Transform
     anchored: true
@@ -16,8 +16,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 60
         mask:
@@ -42,14 +41,12 @@
   - type: Injurable
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 125
       behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -58,7 +55,7 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -84,7 +81,7 @@
 - type: entity
   parent: CMGirder
   id: CMGirderReinforced
-  name: reinforced girder
+  name: 加强梁
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/girder.rsi
@@ -97,14 +94,12 @@
   ##  node: reinforcedGirder
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 500
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -121,7 +116,7 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -133,7 +128,7 @@
 - type: entity
   parent: CMGirder
   id: RMCGirderDisplaced # TODO RMC14 : Requires crowbarring to be used as a girder
-  name: displaced
+  name: 流离失所的
   suffix: Girder
   components:
   - type: Transform
@@ -145,8 +140,8 @@
 
 - type: entity
   id: RMCGirderDamaged
-  name: damaged girder
-  description: A twisted girder that no longer blocks passage.
+  name: 损坏的钢梁
+  description: 一根扭曲的钢梁，不再阻挡通行。
   components:
   - type: Transform
     anchored: true
@@ -165,8 +160,7 @@
     damageContainer: StructuralMarine
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -175,7 +169,7 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Corrodible
     isCorrodible: true
     structure: true

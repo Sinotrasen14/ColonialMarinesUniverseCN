@@ -6,16 +6,16 @@
   - type: Edible
   - type: Tag
     tags:
-      - FoodSnack
+    - FoodSnack
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/packaged.rsi
   - type: Solution
     id: food
     solution:
-        maxVol: 25 # Room for extra condiments
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 10
+      maxVol: 25   # Room for extra condiments
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 10
   - type: Item
     sprite: _RMC14/Objects/Consumable/Food/packaged.rsi
     heldPrefix: packet
@@ -30,8 +30,8 @@
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackBarcaridine
-  name: Barcaridine bar
-  description: A classic bar of chocolate that smells like the medical bay. 'Chocolate helps the pain go away.'
+  name: 巴尔卡里定巧克力棒
+  description: 一块经典的巧克力棒，闻起来像医疗舱。“巧克力有助于缓解疼痛。”
   components:
   - type: Sprite
     state: barcardine
@@ -39,40 +39,40 @@
     size: Tiny
   - type: SpawnItemsOnUse
     items:
-      - id: RMCFoodPacketBarcaridineTrash
-      - id: RMCFoodSnackBarcaridineBar
+    - id: RMCFoodPacketBarcaridineTrash
+    - id: RMCFoodSnackBarcaridineBar
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackBarcaridineBar
-  name: Barcaridine bar
-  description: A classic bar of chocolate that smells like the medical bay. 'Chocolate helps the pain go away.'
+  name: 巴卡里丁巧克力棒
+  description: 一条经典巧克力棒，闻起来像医疗舱。‘巧克力能缓解疼痛。’
   components:
   - type: FlavorProfile
     flavors:
-      - chocolate
-      - medicine
+    - chocolate
+    - medicine
   - type: Sprite
     state: barcardine-o
   - type: Item
   - type: Solution
     solution:
-        maxVol: 10
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 4
-        - ReagentId: CocoaPowder
-          Quantity: 3
-        - ReagentId: CMBicaridine
-          Quantity: 2 # Given that the overdose rate is a lot higher, I doubt this will cause issues, you'd need to eat more than 15 bars.
+      maxVol: 10
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: CocoaPowder
+        Quantity: 3
+      - ReagentId: CMBicaridine
+        Quantity: 2   # Given that the overdose rate is a lot higher, I doubt this will cause issues, you'd need to eat more than 15 bars.
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackBoonie
-  name: Boonie bars
-  description: Two delicious bars of minty chocolate. 'Sometimes things are just... out of reach.'
+  name: 布尼巧克力棒
+  description: 两根美味的薄荷巧克力棒。‘有时候东西就是……遥不可及。’
   components:
   - type: Sprite
     state: boonie
@@ -80,38 +80,38 @@
     size: Tiny
   - type: SpawnItemsOnUse
     items:
-      - id: RMCFoodPacketBoonieTrash
-      - id: RMCFoodSnackBoonieBar
+    - id: RMCFoodPacketBoonieTrash
+    - id: RMCFoodSnackBoonieBar
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackBoonieBar
-  name: Boonie bars
-  description: Two delicious bars of minty chocolate. 'Sometimes things are just... out of reach.'
+  name: 布尼巧克力棒
+  description: 两根美味的薄荷巧克力棒。‘有时候，事物就是……遥不可及。’
   components:
   - type: FlavorProfile
     flavors:
-      - chocolate
-      - minty
+    - chocolate
+    - minty
   - type: Sprite
     state: boonie-o
   - type: Item
   - type: Solution
     solution:
-        maxVol: 10
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 6
-        - ReagentId: CocoaPowder
-          Quantity: 4
+      maxVol: 10
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 6
+      - ReagentId: CocoaPowder
+        Quantity: 4
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackCHUNK
-  name: CHUNK bar
-  description: A bar of the CHUNK brand chocolate. The densest chocolate permitted to exist according to federal law. We are legally required to ask you not to use this blunt object for anything other than nutrition.
+  name: CHUNK 巧克力棒
+  description: 一块 CHUNK 品牌巧克力棒。根据联邦法律，这是允许存在的最致密的巧克力。法律要求我们必须请您不要将这个钝器用于营养之外的任何用途。
   components:
   - type: Sprite
     state: chunk
@@ -119,32 +119,32 @@
     size: Tiny
   - type: SpawnItemsOnUse
     items:
-      - id: RMCFoodPacketCHUNKTrash
-      - id: RMCFoodSnackCHUNKBar
+    - id: RMCFoodPacketCHUNKTrash
+    - id: RMCFoodSnackCHUNKBar
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackCHUNKBar
-  name: CHUNK bar
-  description: A bar of the CHUNK brand chocolate. The densest chocolate permitted to exist according to federal law. We are legally required to ask you not to use this blunt object for anything other than nutrition.
+  name: CHUNK 巧克力棒
+  description: 一根CHUNK牌巧克力棒。根据联邦法律允许存在的最致密巧克力。法律要求我们请您不要将这件钝器用于营养以外的任何用途。
   components:
   - type: FlavorProfile
     flavors:
-      - chocolate
+    - chocolate
   - type: Sprite
     state: chunk-o
   - type: Item
     size: Normal
   - type: Solution
     solution:
-        maxVol: 20 # It's going to take a bit to eat this goddamn thing.
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 7
-        - ReagentId: CocoaPowder
-          Quantity: 10
+      maxVol: 20   # It's going to take a bit to eat this goddamn thing.
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 7
+      - ReagentId: CocoaPowder
+        Quantity: 10
   - type: MeleeWeapon # True horror comes from improvisation.
     damage:
       types:
@@ -155,8 +155,8 @@
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackHUNK
-  name: HUNK bar
-  description: A 'crate' of chocolate according to the marketing. The HUNK, an earlier version of the CHUNK bar, was discontinued after several class action lawsuits related to broken teeth.
+  name: HUNK 巧克力棒
+  description: 根据营销宣传，这是一“箱”巧克力。HUNK 巧克力棒是 CHUNK 巧克力棒的早期版本，在数起与牙齿断裂有关的集体诉讼后停产。
   components:
   - type: Sprite
     state: hunk
@@ -164,35 +164,35 @@
     size: Large
   - type: SpawnItemsOnUse
     items:
-      - id: RMCFoodPacketHUNKTrash
-      - id: RMCFoodSnackHUNKBar
+    - id: RMCFoodPacketHUNKTrash
+    - id: RMCFoodSnackHUNKBar
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackHUNKBar
-  name: HUNK bar
-  description: A 'crate' of chocolate according to the marketing. The HUNK, an earlier version of the CHUNK bar, was discontinued after several class action lawsuits related to broken teeth.
+  name: HUNK 巧克力棒
+  description: 按照营销宣传，这是一“箱”巧克力。HUNK 是 CHUNK 巧克力棒的早期版本，在数起与牙齿崩裂有关的集体诉讼后停产。
   components:
   - type: FlavorProfile
     flavors:
-      - metallic
-      - chocolate
+    - metallic
+    - chocolate
   - type: Sprite
     state: hunk-o
   - type: Item
     size: Large
   - type: Solution
     solution:
-        maxVol: 40 # Remember what I said before? It's worse now.
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Iron # IT CONTAINS 30 UNITS OF WHAT???
-          Quantity: 30
-        - ReagentId: CocoaPowder
-          Quantity: 5
+      maxVol: 40   # Remember what I said before? It's worse now.
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 5
+      - ReagentId: Iron   # IT CONTAINS 30 UNITS OF WHAT???
+        Quantity: 30
+      - ReagentId: CocoaPowder
+        Quantity: 5
   - type: MeleeWeapon # You could legitimately use this as a strong melee weapon. That horrifies me.
     damage:
       types:
@@ -203,23 +203,23 @@
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackKeplarCrisps
-  name: Keplar crisps
-  description: They're disturbingly good! Now with 0% trans fat and added genuine sea salts.
+  name: Keplar 薯片
+  description: 它们好吃得令人不安！现在含有0%反式脂肪，并添加了真正的海盐。
   components:
   - type: FlavorProfile
     flavors:
-      - potatoes
-      - salty
+    - potatoes
+    - salty
   - type: Sprite
     state: kepler_chips
   - type: Solution
     solution:
-        maxVol: 20
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 4
-        - ReagentId: TableSalt # Holy shit these are salty.
-          Quantity: 12
+      maxVol: 20
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: TableSalt   # Holy shit these are salty.
+        Quantity: 12
   - type: Item
   - type: Edible
     trash:
@@ -228,26 +228,26 @@
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackKeplarFlamehotCrisps
-  name: Keplar Flamehot crisps
-  description: They're disturbingly good! Due to an exceptionally well-timed ad campaign with the release of Kepler Flamehot in 2165, the Kepler brand was able to overtake other confectionary Weyland-Yutani products by quarter three of that year. Contains 0% trans fat.
+  name: 开普勒火辣薯片
+  description: 它们好吃得令人不安！由于2165年“开普勒火辣薯片”发布时配合了一场时机绝佳的广告宣传活动，开普勒品牌得以在当年第三季度超越威兰德-尤坦尼的其他糖果类产品。反式脂肪含量为0%。
   components:
   - type: FlavorProfile
     flavors:
-      - potatoes
-      - spicy
-      - salty
+    - potatoes
+    - spicy
+    - salty
   - type: Sprite
     state: kepler_flame
   - type: Solution
     solution:
-        maxVol: 20
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 4
-        - ReagentId: TableSalt
-          Quantity: 4
-        - ReagentId: Hotsauce
-          Quantity: 8
+      maxVol: 20
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: TableSalt
+        Quantity: 4
+      - ReagentId: Hotsauce
+        Quantity: 8
   - type: Item
   - type: Edible
     trash:
@@ -256,23 +256,23 @@
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackChipsPepper
-  name: pepper chips
-  description: Premium high-quality chips, now with 0% trans fat. Now with added black pepper! Packaged by We-Yu.
+  name: 黑胡椒味薯片
+  description: 优质高级薯片，现在0%反式脂肪。现已添加黑胡椒！由We-Yu包装。
   components:
   - type: FlavorProfile
     flavors:
-      - potatoes
-      - peppery
+    - potatoes
+    - peppery
   - type: Sprite
     state: wy_pepper
   - type: Solution
     solution:
-        maxVol: 10
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 6
-        - ReagentId: Blackpepper
-          Quantity: 1
+      maxVol: 10
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 6
+      - ReagentId: Blackpepper
+        Quantity: 1
   - type: Item
   - type: Edible
     trash:
@@ -283,58 +283,58 @@
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackCheeseburgerPackaged
-  name: packaged cheeseburger
-  description: A soggy microwavable cheeseburger. There's no time given for how long to cook it. Packaged by We-Yu.
+  name: 包装芝士汉堡
+  description: 一个湿软的、可用微波炉加热的芝士汉堡。没有说明需要加热多长时间。由We-Yu包装。
   components:
   - type: Sprite
     state: burger
   - type: Item
   - type: SpawnItemsOnUse
     items:
-      - id: RMCFoodPacketCheeseburgerTrash
-      - id: RMCFoodSnackCheeseburger
+    - id: RMCFoodPacketCheeseburgerTrash
+    - id: RMCFoodSnackCheeseburger
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackCheeseburger
-  name: packaged cheeseburger
-  description: A soggy microwavable cheeseburger. There's no time given for how long to cook it. Packaged by We-Yu.
+  name: 包装芝士汉堡
+  description: 一个湿软的微波加热芝士汉堡。没有说明需要加热多久。由 We-Yu 包装。
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - cheesy
-      - bun
+    - meaty
+    - cheesy
+    - bun
   - type: Sprite
     state: hburger
   - type: Item
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Protein
-          Quantity: 5
-        - ReagentId: TableSalt
-          Quantity: 2
+      maxVol: 15
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 5
+      - ReagentId: Protein
+        Quantity: 5
+      - ReagentId: TableSalt
+        Quantity: 2
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackBurritoPackaged
-  name: packaged burrito
-  description: A hard microwavable burrito. There's no time given on how long to cook it. Packaged by We-Yu.
+  name: 包装墨西哥卷饼
+  description: 一个硬的可微波加热的墨西哥卷饼。没有说明需要烹饪多长时间。由We-Yu包装。
   components:
   - type: Sprite
     state: packaged-burrito
   - type: Item
   - type: SpawnItemsOnUse
     items:
-      - id: RMCFoodPacketBurritoTrash
-      - id: RMCFoodSnackBurrito
+    - id: RMCFoodPacketBurritoTrash
+    - id: RMCFoodSnackBurrito
     sound:
       path: /Audio/Effects/unwrap.ogg
 
@@ -342,87 +342,87 @@
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackBurrito
-  name: packaged burrito
-  description: A hard microwavable burrito. There's no time given on how long to cook it. Packaged by We-Yu.
+  name: 包装好的墨西哥卷饼
+  description: 一种硬邦邦的可用微波炉加热的墨西哥卷饼。没有说明要加热多久。由We-Yu包装。
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - bread
+    - meaty
+    - bread
   - type: Sprite
     state: open-burrito
   - type: Item
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Protein
-          Quantity: 5
+      maxVol: 15
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 5
+      - ReagentId: Protein
+        Quantity: 5
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackHotdogPackaged
-  name: packaged hotdog
-  description: A singular, squishy, room temperature hot dog. There's no time given for how long to cook it, so you assume its probably good to go. Packaged by We-Yu.
+  name: 包装热狗
+  description: 一根单独的、软塌塌的常温热狗。没有给出需要烹饪多久的时间，所以你猜想它大概已经可以吃了。由We-Yu包装。
   components:
   - type: Sprite
     state: packaged-hotdog
   - type: Item
   - type: SpawnItemsOnUse
     items:
-      - id: RMCFoodPacketHotdogTrash
-      - id: RMCFoodSnackHotdog
+    - id: RMCFoodPacketHotdogTrash
+    - id: RMCFoodSnackHotdog
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackHotdog
-  name: packaged hotdog
-  description: A singular, squishy, room temperature hot dog. There's no time given for how long to cook it, so you assume its probably good to go. Packaged by We-Yu.
+  name: 包装热狗
+  description: 一根单独的、软塌塌的、常温的热狗。没有给出烹饪时间，所以你推测它大概可以直接吃了。由 We-Yu 包装。
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - bun
-      - salty
+    - meaty
+    - bun
+    - salty
   - type: Sprite
     state: open-hotdog
   - type: Item
   - type: Solution
     solution:
-        maxVol: 10
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
-        - ReagentId: Protein
-          Quantity: 2
-        - ReagentId: TableSalt
-          Quantity: 2
+      maxVol: 10
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 3
+      - ReagentId: Protein
+        Quantity: 2
+      - ReagentId: TableSalt
+        Quantity: 2
 
 - type: entity
   parent: RMCFoodSnackBase
   id: RMCFoodSnackEATBar
-  name: MEAT Bar
-  description: It is a vacuum sealed tube of suspicious meat. Artificially packed full of nutrients you can't pronounce. The M is printed on the side, so it just reads EAT. Guess that's where the slogan comes from.
+  name: 肉棒
+  description: 它是一根真空密封的可疑肉棒。人工塞满了你念不出名字的营养素。侧面印着 M，所以读起来就是 EAT。我猜标语就是这么来的。
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - nutriment
+    - meaty
+    - nutriment
   - type: Sprite
     state: eat_bar
   - type: Solution
     solution:
-        maxVol: 10
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 6
-        - ReagentId: TableSalt
-          Quantity: 1
+      maxVol: 10
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 6
+      - ReagentId: TableSalt
+        Quantity: 1
   - type: Item
   - type: Edible
     trash:
@@ -431,10 +431,10 @@
 # Trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: BaseItem
   id: RMCFoodPacketTrash
-  description: This place is crawling with trash.
+  description: 这个地方到处都是垃圾。
   abstract: true
   components:
   - type: Sprite
@@ -452,106 +452,106 @@
   - type: SpaceGarbage
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketBarcaridineTrash
-  name: barcaridine wrapper
-  description: An empty wrapper from a barcaridine bar. You notice the inside has several medical labels. You're not sure if you care or not about that.
+  name: 巴卡利定包装纸
+  description: 一个巴卡利定棒的空包装纸。你注意到里面有几张医疗标签。你不确定自己是否在意这件事。
   components:
   - type: Sprite
     state: barcardine_trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketBoonieTrash
-  name: boonie bar wrapper
+  name: Boonie Bar 包装纸
   components:
   - type: Sprite
     state: boonie_trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketCHUNKTrash
-  name: chunk bar box
-  description: An empty box from a chunk bar. Significantly less heavy.
+  name: 区块条盒
+  description: 区块条盒的空盒。重量明显更轻。
   components:
   - type: Sprite
     state: chunk_trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketHUNKTrash
-  name: hunk bar crate
-  description: An empty crate from a hunk bar. Tremendously less heavy.
+  name: 猛男酒吧板条箱
+  description: 来自猛男酒吧的空板条箱。重量大大减轻。
   components:
   - type: Sprite
     state: hunk_trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketKeplerCrispsTrash
-  name: empty chips
+  name: 空芯片
   components:
   - type: Sprite
     state: kepler_chips_trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketKeplerCrispsFlamehotTrash
-  name: empty flamehot crisps
+  name: 空火辣薯片
   components:
   - type: Sprite
     state: kepler_chips_flame_trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketPepperChipsTrash
-  name: empty pepper chips
+  name: 空胡椒薯片
   components:
   - type: Sprite
     state: wy_chips_pepper_trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketCheeseburgerTrash
-  name: burger wrapper
-  description: A greasy plastic film that once held a Cheeseburger. Packaged by We-Yu.
+  name: 汉堡包装纸
+  description: 一张油腻的塑料薄膜，曾包裹过一个芝士汉堡。由We-Yu包装。
   components:
   - type: Sprite
     state: burger_trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketBurritoTrash
-  name: burrito wrapper
-  description: A foul-smelling plastic film that once held a microwave burrito. Packaged by We-Yu.
+  name: 墨西哥卷饼包装纸
+  description: 一张曾装过微波墨西哥卷饼的恶臭塑料薄膜。由We-Yu包装。
   components:
   - type: Sprite
     state: burrito_trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketHotdogTrash
-  name: hotdog wrapper
-  description: A musty plastic film that once held a hotdog. Packaged by We-Yu.
+  name: 热狗包装膜
+  description: 一张发霉的塑料薄膜，曾装过一根热狗。由We-Yu包装。
   components:
   - type: Sprite
     state: hotdog_trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: RMCFoodPacketTrash
   id: RMCFoodPacketEATBarTrash
-  name: MEAT bar wrapper
+  name: 肉棒包装纸
   components:
   - type: Sprite
     state: eat

@@ -1,157 +1,157 @@
-﻿- type: entity
+- type: entity
   parent: CMIDCardStandardDogtag
   id: CMDogtagRifleman
-  name: Rifleman's dogtags
+  name: 步枪兵的身份牌
   components:
   - type: PresetIdCard
     job: CMRifleman
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, CMDogtagRifleman ]
+  parent: [RMCIDCardStandardDogtagHidden, CMDogtagRifleman]
   id: RMCDogtagRiflemanHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: CMDogtagCombatTech
-  name: Combat Tech's dogtags
+  name: 战斗技师的狗牌
   components:
   - type: PresetIdCard
     job: CMCombatTech
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, CMDogtagCombatTech ]
+  parent: [RMCIDCardStandardDogtagHidden, CMDogtagCombatTech]
   id: RMCDogtagCombatTechHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: CMDogtagFireteamLeader
-  name: Fireteam Leader's dogtags
+  name: 火力小组组长的狗牌
   components:
   - type: PresetIdCard
     job: CMFireteamLeader
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, CMDogtagFireteamLeader ]
+  parent: [RMCIDCardStandardDogtagHidden, CMDogtagFireteamLeader]
   id: RMCDogtagFireteamLeaderHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: CMDogtagHospitalCorpsman
-  name: Hospital Corpsman's dogtags
+  name: 海军医务兵的身份牌
   components:
   - type: PresetIdCard
     job: CMHospitalCorpsman
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, CMDogtagHospitalCorpsman ]
+  parent: [RMCIDCardStandardDogtagHidden, CMDogtagHospitalCorpsman]
   id: RMCDogtagHospitalCorpsmanHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: CMDogtagSmartGunOperator
-  name: Smart Gun Operator's dogtags
+  name: 智能枪操作员的狗牌
   components:
   - type: PresetIdCard
     job: CMSmartGunOperator
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, CMDogtagSmartGunOperator ]
+  parent: [RMCIDCardStandardDogtagHidden, CMDogtagSmartGunOperator]
   id: RMCDogtagSmartGunOperatorHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: CMDogtagSquadLeader
-  name: Squad Leader's dogtags
+  name: 小队长的狗牌
   components:
   - type: PresetIdCard
     job: CMSquadLeader
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, CMDogtagSquadLeader ]
+  parent: [RMCIDCardStandardDogtagHidden, CMDogtagSquadLeader]
   id: RMCDogtagSquadLeaderHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: CMDogtagWeaponsSpecialist
-  name: Weapons Specialist's dogtags
+  name: 武器专家的狗牌
   components:
   - type: PresetIdCard
     job: CMWeaponsSpecialist
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, CMDogtagWeaponsSpecialist ]
+  parent: [RMCIDCardStandardDogtagHidden, CMDogtagWeaponsSpecialist]
   id: RMCDogtagWeaponsSpecialistHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 # PVE
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: RMCDogtagPVEHospitalCorpsman
-  name: Hospital Corpsman's dogtags
+  name: 海军医务兵的身份牌
   components:
   - type: PresetIdCard
     job: CMPVEHospitalCorpsman
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, RMCDogtagPVEHospitalCorpsman ]
+  parent: [RMCIDCardStandardDogtagHidden, RMCDogtagPVEHospitalCorpsman]
   id: RMCDogtagPVEHospitalCorpsmanHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: RMCDogtagPVERifleman
-  name: Rifleman's dogtags
+  name: 步枪手的身份牌
   components:
   - type: PresetIdCard
     job: CMPVERifleman
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, RMCDogtagPVERifleman ]
+  parent: [RMCIDCardStandardDogtagHidden, RMCDogtagPVERifleman]
   id: RMCDogtagPVERiflemanHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: RMCDogtagPVESmartGunOperator
-  name: Smart Gun Operator's dogtags
+  name: 智能枪操作员的狗牌
   components:
   - type: PresetIdCard
     job: CMPVESmartGunOperator
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, RMCDogtagPVESmartGunOperator ]
+  parent: [RMCIDCardStandardDogtagHidden, RMCDogtagPVESmartGunOperator]
   id: RMCDogtagPVESmartGunOperatorHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: RMCDogtagPVESquadLeader
-  name: Squad Leader's dogtags
+  name: 班长的狗牌
   components:
   - type: PresetIdCard
     job: CMPVESquadLeader
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, RMCDogtagPVESquadLeader ]
+  parent: [RMCIDCardStandardDogtagHidden, RMCDogtagPVESquadLeader]
   id: RMCDogtagPVESquadLeaderHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMIDCardStandardDogtag
   id: RMCDogtagPVESectionSergeant
-  name: Section Sergeant's dogtags
+  name: 分队长身份牌
   components:
   - type: PresetIdCard
     job: CMPVESectionSergeant
 
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, RMCDogtagPVESectionSergeant ]
+  parent: [RMCIDCardStandardDogtagHidden, RMCDogtagPVESectionSergeant]
   id: RMCDogtagPVESSectionSergeantHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]

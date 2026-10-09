@@ -9,8 +9,8 @@
   - RMCXenoMobCollision
   - RMCXenoVentCrawler
   id: CMXenoRunnerBase
-  name: Runner
-  description: A small red alien that looks like it could run fairly quickly...
+  name: 奔跑者 | Runner
+  description: 一个看起来能跑得相当快的小型红色外星人…… | A small red alien that looks like it could run fairly quickly...
   components:
   - type: GhostRole
     name: cm-job-name-xeno-runner
@@ -38,12 +38,11 @@
     hudOffset: -0.15,0.6
     unlockAt: 300 # 5 minutes
   - type: XenoRegen
-    restHealMultiplier:  1.75
+    restHealMultiplier: 1.75
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 85
         mask:
@@ -55,8 +54,7 @@
         layer:
         - MobLayer
       fix2:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.40
         density: 85
         layer:
@@ -209,13 +207,13 @@
   - type: Sprite
     sprite: CMU14/Mobs/Xenos/Runner/acider_runner.rsi # AU14-Edit
     layers:
-    - map: [ "enum.XenoVisualLayers.Base", "enum.ForTheHiveVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base", "enum.ForTheHiveVisualLayers.Base"]
       state: alive
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
+    - map: ["enum.RMCDamageVisualLayers.Base"]
       visible: false
-    - map: [ "enum.XenoAcidGeneratingVisualLayers.Base" ]
+    - map: ["enum.XenoAcidGeneratingVisualLayers.Base"]
       visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
+    - map: ["enum.RMCShieldVisuals.Base"]
       sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
   - type: MobThresholds

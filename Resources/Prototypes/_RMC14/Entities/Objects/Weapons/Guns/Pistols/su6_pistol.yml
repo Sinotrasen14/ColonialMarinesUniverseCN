@@ -1,16 +1,16 @@
-﻿- type: entity
+- type: entity
   parent: CMWeaponPistolBase
   id: RMCWeaponPistolSU6
-  name: SU-6 smart pistol
-  description: The SU-6 Smartpistol is an IFF-based sidearm currently undergoing field testing in the UNMC. Uses modified .45 ACP IFF bullets. Capable of firing in bursts.
+  name: SU-6智能手枪
+  description: SU-6智能手枪是一种基于敌我识别（IFF）的副武器，目前正在UNMC进行实地测试。使用改装的.45 ACP IFF子弹。能够进行点射。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Pistols/su6.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Pistols/su6.rsi
   - type: MeleeWeapon
@@ -51,7 +51,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_su6_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_su6_unload.ogg
         priority: 2
@@ -68,14 +68,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolSU6
-  name: SU-6 magazine (.45 ACP)
+  name: SU-6 弹匣（.45 ACP）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolSU6
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgePistol45ACP
@@ -91,7 +91,7 @@
 
 - type: entity
   id: RMCCartridgePistol45ACP
-  name: cartridge (.45 ACP)
+  name: 弹药（.45 ACP）
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -104,8 +104,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletPistol45ACP
-  name: bullet (.45 ACP)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（.45 ACP）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

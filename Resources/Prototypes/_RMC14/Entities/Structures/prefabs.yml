@@ -1,10 +1,10 @@
-﻿# Prefabs
+# Prefabs
 
 - type: entity
   abstract: true
   id: RMCPrefabBase
-  name: prefabricated structure
-  description: This structure is made of metal support rods and robust poly-kevlon plastics. A derivative of the stuff used in UN ballistics vests, USCMC and UPP uniforms. The loose walls roll with each gust of wind.
+  name: 预制结构
+  description: 这种结构由金属支撑杆和坚固的聚凯夫隆塑料制成，是联合国防弹背心以及 USCMC 和 UPP 制服所用材料的衍生物。松散的墙体随每一阵风翻卷。
   placement:
     mode: SnapgridCenter
   components:
@@ -15,8 +15,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,1.5,1.9"
         density: 190
         layer:
@@ -34,8 +33,8 @@
 - type: entity
   abstract: true
   id: RMCPrefabBaseTop
-  name: prefabricated structure
-  description: This structure is made of metal support rods and robust poly-kevlon plastics. A derivative of the stuff used in UN ballistics vests, USCMC and UPP uniforms. The loose walls roll with each gust of wind.
+  name: 预制结构
+  description: 这种结构由金属支撑杆和坚固的聚凯夫隆塑料制成。这种材料是联合国防弹背心以及美国殖民地海军陆战队和进步人民联盟制服所用材料的衍生物。松垂的壁面随每一阵风翻动。
   placement:
     mode: SnapgridCenter
   components:
@@ -46,8 +45,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.1,0.1"
         density: 190
         layer:
@@ -139,8 +137,8 @@
 - type: entity
   abstract: true
   id: RMCPrefab32BaseTop
-  name: prefabricated structure
-  description: This structure is made of metal support rods and robust poly-kevlon plastics. A derivative of the stuff used in UN ballistics vests, USCMC and UPP uniforms. The loose walls roll with each gust of wind.
+  name: 预制结构
+  description: 该结构由金属支撑杆和坚固的聚合凯夫隆塑料制成。其材料衍生自联合国防弹背心、USCMC 和 UPP 制服所用的材料。松散的墙板会随每一阵风翻卷。
   placement:
     mode: SnapgridCenter
   components:
@@ -151,8 +149,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.1"
         density: 190
         layer:
@@ -165,8 +162,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallPrefabOrange
-  name: prefabricated structure
-  description: This structure is made of metal support rods and robust poly-kevlon plastics. A derivative of the stuff used in UN ballistics vests, USCMC and UPP uniforms. The loose walls roll with each gust of wind.
+  name: 预制结构
+  description: 这种结构由金属支撑杆和坚固的聚凯夫龙塑料制成。它是用于联合国防弹背心、美国殖民地海军陆战队制服和进步人民联盟制服的那种材料的衍生物。松动的墙板会随每一阵风翻卷。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/prefab_tileset.rsi
@@ -297,8 +294,8 @@
 - type: entity
   abstract: true
   id: RMCPrefabGreebleBase
-  name: prefabricated structure
-  description: Windsocks, Air-Con units, solarpanels, oh my!
+  name: 预制结构
+  description: 风向袋、空调机组、太阳能电池板，天哪！
   suffix: Greeble
   placement:
     mode: SnapgridCenter

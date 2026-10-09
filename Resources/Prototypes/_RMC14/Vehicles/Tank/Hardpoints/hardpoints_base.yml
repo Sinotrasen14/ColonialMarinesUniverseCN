@@ -15,20 +15,20 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankTurret
-  name: tank turret
-  description: A tank turret hardpoint.
+  name: 坦克炮塔
+  description: 坦克炮塔挂载点。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       turret-cannon: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       turret-launcher: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/tank.rsi
     state: tank_turret_0
@@ -83,20 +83,20 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankTurretTWE
-  name: Improper TBA3 'Vandeleur' Turret
-  description: The TBA3 'Vandeleur' Turret, developed by Weyland Yutani as part of the 'B' upgrade package for the FV150 'Hobelar' Light Cavalry Tank. The Vandeleur is a direct evolution of the original FV150-A turret, with improvements to the internal systems and modularity. It can mount a wide array of weapon systems both quickly and easily, and features an inbuilt flare deployment system.
+  name: 不当的 TBA3“Vandeleur”炮塔
+  description: TBA3“Vandeleur”炮塔由维兰德-汤谷开发，作为FV150“Hobelar”轻型骑兵坦克“B”升级包的一部分。Vandeleur是原始FV150-A炮塔的直接演进，改进了内部系统和模块化设计。它可快速、轻松地安装多种武器系统，并配备内置干扰弹发射系统。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       turret-cannon: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       turret-launcher: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: CMU14/Structures/vehicles/fv150/exterior.rsi
     state: tank_turret_0
@@ -151,20 +151,20 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankTurretPMC
-  name: tank turret
-  description: A tank turret hardpoint.
+  name: 坦克炮塔
+  description: 一个坦克炮塔挂载点。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       turret-cannon: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       turret-launcher: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/wytank.rsi
     state: tank_turret_0
@@ -219,8 +219,8 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankTreads # CMU14
-  name: tank treads
-  description: Heavy duty tank treads.
+  name: 坦克履带
+  description: 重型坦克履带。
   components:
   - type: Sprite
     state: treads
@@ -241,8 +241,8 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankTreadsTWE # CMU14
-  name: tank treads
-  description: Heavy duty tank treads.
+  name: 坦克履带
+  description: 重型坦克履带。
   components:
   - type: Sprite
     sprite: CMU14/Structures/vehicles/fv150/icons.rsi
@@ -264,8 +264,8 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankReinforcedTreads # CMU14
-  name: reinforced tank treads
-  description: Heavier tank treads with better durability and acid resistance at the cost of acceleration.
+  name: 强化坦克履带
+  description: 更重的坦克履带拥有更好的耐久性和耐酸性，但会牺牲加速度。
   components:
   - type: Sprite
     state: treads

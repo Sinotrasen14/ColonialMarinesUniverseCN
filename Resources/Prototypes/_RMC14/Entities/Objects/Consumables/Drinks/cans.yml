@@ -7,8 +7,8 @@
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: { state: "icon" }
-          False: { state: "icon" }
+          true: {state: "icon"}
+          false: {state: "icon"}
   - type: Sprite
     state: icon
     layers:
@@ -18,7 +18,7 @@
     size: Small
   - type: Solution
     solution:
-        maxVol: 50
+      maxVol: 50
   - type: PhysicalComposition
     materialComposition:
       CMSteel: 50
@@ -33,8 +33,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanCola
-  name: Coca Cola
-  description: A classic cola with a taste that's been around for centuries. Nobody can beat it.
+  name: 可口可乐
+  description: 一款经典可乐，其口味已传承数百年。无人能及。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/cola.rsi
@@ -42,16 +42,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/cola.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: Cola
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: Cola
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanMountainWind
-  name: Mountain Dew
-  description: Do the Dew.
+  name: 激浪
+  description: 喝激浪。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/mountain_wind.rsi
@@ -59,16 +59,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/mountain_wind.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: SpaceMountainWind
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: SpaceMountainWind
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanThirteenLoko
-  name:  Fourteen loko
-  description: Consumption of Fourteen Loko may result in seizures, blindness, drunkenness, or even death. Please Drink Responsibly.
+  name: 十四洛克
+  description: 饮用十四洛克可能导致癫痫发作、失明、醉酒，甚至死亡。请理性饮酒。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/thirteen_loko.rsi
@@ -76,18 +76,18 @@
     sprite: _RMC14/Objects/Consumable/Drinks/thirteen_loko.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: FourteenLoko
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: FourteenLoko
+        Quantity: 30
+      maxVol: 50
   - type: RMCLoreExaminable
     content: rmc-lore-examinable-thirteen-loko
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanDrGibb
-  name: Dr Pepper
-  description: A delicious mixture of 42 different flavors of chemicals that you can't pronounce.
+  name: 胡椒博士
+  description: 一种由42种不同风味、你念不出名字的化学物质调配而成的美味混合物。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/dr_gibb.rsi
@@ -95,16 +95,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/dr_gibb.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: DrGibb
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: DrGibb
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanStarkist
-  name: Sunkist
-  description: Sunkist orange soda, now with 0.00001% real orange juice!
+  name: 新奇士
+  description: 新奇士橙味汽水，现在含有0.00001%真正的橙汁！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/starkist.rsi
@@ -112,16 +112,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/starkist.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: Starkist
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: Starkist
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanSpaceUp
-  name: Seven Up
-  description: Cures any and all stomach issues, or your money back.
+  name: 七喜
+  description: 能治愈任何胃部问题，否则退款。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/space_up.rsi
@@ -129,16 +129,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/space_up.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: SpaceUp
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: SpaceUp
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanLemonLime
-  name: lemon-lime
-  description: You wanted ORANGE. It gave you Lemon Lime.
+  name: 柠檬青柠
+  description: 你想要橙子。它却给了你柠檬青柠。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/lemon_lime.rsi
@@ -146,16 +146,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/lemon_lime.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: LemonLime
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: LemonLime
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanIcedTea
-  name: iced tea can
-  description: Just like the squad redneck's grandmother used to buy.
+  name: 冰茶罐
+  description: 就像小队里那个乡巴佬的奶奶以前常买的一样。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/ice_tea.rsi
@@ -163,16 +163,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/ice_tea.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: IcedTea
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: IcedTea
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanGrape
-  name: grape juice
-  description: A can of probably not grape juice.
+  name: 葡萄汁
+  description: 一罐大概不是葡萄汁。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/purple.rsi
@@ -180,16 +180,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/purple.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: GrapeSoda
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: GrapeSoda
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanTonic
-  name: tonic water
-  description: "Step One: Tonic. Check. Step Two: Gin."
+  name: 汤力水
+  description: "第一步：汤力水。搞定。第二步：金酒。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/tonic.rsi
@@ -197,16 +197,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/tonic.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: TonicWater
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: TonicWater
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanSoda
-  name: soda water
-  description: A can of soda water. Tap water's more refreshing cousin...according to those Europe-folk.
+  name: 苏打水
+  description: 一罐苏打水。自来水的更清爽的表亲……据那些欧洲人所说。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/sodawater.rsi
@@ -214,16 +214,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/sodawater.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: SodaWater
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: SodaWater
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanSoda
   id: CMDrinkCanBoda
-  name: boda
-  description: State regulated soda beverage. Enjoy comrades.
+  name: 波达
+  description: 国家管制的苏打饮料。同志们，尽情享用吧。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/boda.rsi
@@ -235,8 +235,8 @@
 - type: entity
   parent: CMDrinkCanCola
   id: CMDrinkCanBodaPlyus
-  name: boda-plyus
-  description: State regulated soda beverage, now with added surplus flavoring. Enjoy comrades.
+  name: 波达-普柳斯
+  description: 国家管控的汽水饮料，现已添加额外盈余调味剂。同志们，尽情享用吧。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/blank.rsi
@@ -246,8 +246,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanFruitBeer
-  name: fruit-beer
-  description: In theory, Mango flavored root beer sounds like a pretty good idea. We-Yu has disproved yet another theory with its latest line of cola. Canned by the We-Yu Corporation.
+  name: 果啤
+  description: 理论上，芒果味果啤听起来是个相当不错的主意。We-Yu用其最新系列可乐又推翻了一个理论。由We-Yu公司罐装。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/fruit_beer.rsi
@@ -255,16 +255,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/fruit_beer.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaFruitBeer
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaFruitBeer
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanBeerLite
-  name: We-Yu Lite
-  description: Beer. You've dialed in your target. Time to fire for effect. Canned by the Weyland-Yutani Corporation
+  name: 维-尤淡啤
+  description: 啤酒。你已校准目标。是时候效力射了。由维-尤公司罐装
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/beer.rsi
@@ -272,16 +272,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/beer.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: Beer
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: Beer
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanAle
-  name: We-Yu IPA
-  description: Beer's misunderstood cousin. Canned by the Weyland-Yutani Corporation.
+  name: 威宇IPA
+  description: 啤酒那被误解的表亲。由威宇公司罐装。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/ale.rsi
@@ -289,16 +289,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/ale.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: Ale
-          Quantity: 30
-        maxVol: 50
+      reagents:
+      - ReagentId: Ale
+        Quantity: 30
+      maxVol: 50
 
 - type: entity
   parent: DrinkCanPack
   id: RMCBeerPack
-  name: Sequoia beer pack
-  description: A pack of Sequoia beer cans.
+  name: 红杉啤酒多罐装
+  description: 一包红杉啤酒罐。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/beer_pack.rsi
@@ -355,31 +355,31 @@
 - type: entity
   parent: CMDrinkCanBase
   id: RMCDrinkCanSequoiaBeer
-  name: Weyland-Yutani sequoia beer
-  description: "Pretty good when you get past the fact that it tastes like piss. Canned by the Weyland-Yutani Corporation."
+  name: 维兰德-汤谷红杉啤酒
+  description: "一旦你忽略它喝起来像尿这一点，其实相当不错。由维兰德-汤谷公司罐装。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/beer_pack.rsi
     layers:
     - state: icon
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: {state: icon}
-          False: {state: icon}
+          true: {state: icon}
+          false: {state: icon}
   - type: Item
     sprite: _RMC14/Objects/Consumable/Drinks/beer_pack.rsi
   - type: Tag
     tags:
-     - SequoiaBeer
+    - SequoiaBeer
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: Beer
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: Beer
+        Quantity: 50
+      maxVol: 50
 
 - type: Tag
   id: SequoiaBeer
@@ -388,8 +388,8 @@
 - type: entity
   parent: CMDrinkCanBase
   id: CMDrinkCanBobda
-  name: suoto can
-  description: Canned in Havana.
+  name: 苏奥托罐头
+  description: 在哈瓦那装罐。
   abstract: true
   components:
   - type: Sprite
@@ -400,21 +400,21 @@
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaClassic
-  name: suoto classic
-  description: The can boldly proclaims it to be tangerine flavored. You can't help but think that's a lie. Canned in Havana.
+  name: 苏奥托经典
+  description: 罐身大胆宣称这是橘子味。你忍不住觉得那是骗人的。在哈瓦那装罐。
   components:
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaClassic
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaClassic
+        Quantity: 50
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaCherry
-  name: cherry suoto
-  description: Now with more artificial flavors! Canned in Havana
+  name: 樱桃汽水
+  description: 现在含更多人工香精！在哈瓦那罐装
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/cherry.rsi
@@ -422,16 +422,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/cherry.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaCherry
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaCherry
+        Quantity: 50
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaLime
-  name: lime suoto
-  description: It's not bad. It's not good either, but it's not bad. Canned in Havana.
+  name: 青柠苏斯托
+  description: 不错。也不算好，但还不错。哈瓦那罐装。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/lime.rsi
@@ -439,16 +439,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/lime.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaLime
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaLime
+        Quantity: 50
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaGrape
-  name: grape suoto
-  description: An old standby for soda flavors. This, however, tastes like grape flavored cough syrup. Canned in Havana.
+  name: 葡萄苏奥托
+  description: 一种经典的汽水口味。不过，这款尝起来像葡萄味止咳糖浆。在哈瓦那罐装。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/grape.rsi
@@ -456,16 +456,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/grape.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaGrape
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaGrape
+        Quantity: 50
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaBlue
-  name: blue raspberry suoto
-  description: It tastes like the color blue. Technology really is amazing. Canned in Havana.
+  name: 蓝莓覆盆子苏打
+  description: 它尝起来像蓝色。科技真的很神奇。在哈瓦那罐装。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/blueraspberry.rsi
@@ -473,16 +473,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/blueraspberry.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaBlue
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaBlue
+        Quantity: 50
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaPeach
-  name: peach suoto
-  description: On one hand, it tastes pretty good. On the other hand, you think you can hear a peach pit rattling on the inside. Canned in Havana.
+  name: 桃子苏奥托
+  description: 一方面，它味道相当不错。另一方面，你觉得自己能听到里面有一颗桃核在咔嗒作响。哈瓦那装罐。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/peach.rsi
@@ -490,16 +490,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/peach.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaPeach
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaPeach
+        Quantity: 50
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaCranberry
-  name: cranberry suoto
-  description: On closer inspection, the can reads, 'CRAMberry Suoto.' What the Hell is a Cramberry? Canned in Havana.
+  name: 蔓越莓苏奥托
+  description: 仔细一看，罐子上写着“克拉姆莓苏奥托”。克拉姆莓到底是什么鬼？在哈瓦那装罐。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/cranberry.rsi
@@ -507,16 +507,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/cranberry.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaCranberry
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaCranberry
+        Quantity: 50
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaVanilla
-  name: vanilla suoto
-  description: When most soft drinks say 'vanilla,' they really mean their classic flavor with a bit of vanilla added. NOT THE SUOTO CORPORATION, BABY! This bad boy is filled to the brim with 100% pure carbonated vanilla extract! It tastes terrible. Canned in Havana.
+  name: 香草苏奥托
+  description: 当大多数软饮料说“香草”时，它们其实指的是经典口味里加了一点香草。苏奥托公司才不这样，宝贝！这家伙装得满满当当，全是100%纯碳酸香草精！味道糟透了。在哈瓦那罐装。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/vanilla.rsi
@@ -524,16 +524,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/vanilla.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaVanilla
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaVanilla
+        Quantity: 50
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaPineapple
-  name: pineapple suoto
-  description: This tastes like battery acid with a full cup of sugar mixed in. Canned in Havana.
+  name: 菠萝苏奥托
+  description: 这尝起来像电池酸液里混了一整杯糖。在哈瓦那装罐。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/pineapple.rsi
@@ -541,17 +541,17 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/pineapple.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaPineapple
-          Quantity: 50
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaPineapple
+        Quantity: 50
+      maxVol: 50
 
 # DIET BOBDA
 - type: entity
   parent: CMDrinkCanBobda
   id: CMDrinkCanBobdaDiet
-  name: diet suoto
-  description: Now with 0% fruit juice! Canned in Havana
+  name: 低糖苏奥托
+  description: 现在果汁含量为0%！在哈瓦那装罐
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/classic.rsi
@@ -559,29 +559,29 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/classic.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: Water
-          Quantity: 25
-        maxVol: 50
+      reagents:
+      - ReagentId: Water
+        Quantity: 25
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaClassicDiet
-  name: diet suoto classic
-  description: Now with 0% fruit juice! Canned in Havana
+  name: 低糖 Suoto 经典
+  description: 现在含0%果汁！在哈瓦那罐装
   components:
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaClassic
-          Quantity: 25
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaClassic
+        Quantity: 25
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaCherryDiet
-  name: diet cherry suoto
-  description: It's neither diet nor cherry flavored. Canned in Havana.
+  name: 无糖樱桃苏奥托
+  description: 它既不是无糖口味，也不是樱桃口味。在哈瓦那装罐。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/cherry.rsi
@@ -589,16 +589,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/cherry.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaCherry
-          Quantity: 25
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaCherry
+        Quantity: 25
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaLimeDiet
-  name: diet lime suoto
-  description: Ten kinds of acid, two cups of fake sugar, almost a full tank of carbon dioxide, and about 210 kPa all crammed into an aluminum can. What's not to love? Canned in Havana.
+  name: 低糖青柠苏托
+  description: 十种酸、两杯代糖、几乎一整罐二氧化碳，还有约 210 千帕，全都塞进一个铝罐里。有什么理由不爱呢？在哈瓦那罐装。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/lime.rsi
@@ -606,16 +606,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/lime.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaLime
-          Quantity: 25
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaLime
+        Quantity: 25
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaGrapeDiet
-  name: diet grape suoto
-  description: You're fairly certain that this is just grape cough syrup and carbonated water. Canned in Havana.
+  name: 低糖葡萄苏打
+  description: 你相当确定，这不过是葡萄味止咳糖浆加碳酸水，在哈瓦那罐装的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/grape.rsi
@@ -623,16 +623,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/grape.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaGrape
-          Quantity: 25
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaGrape
+        Quantity: 25
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaBlueDiet
-  name: diet blue raspberry suoto
-  description: WHAT A SCAM! It doesn't even taste like blue! At best, it tastes like cyan. Canned in Havana.
+  name: 低卡蓝树莓苏托
+  description: 真是个骗局！它甚至尝起来都不像蓝色！往好了说，它尝起来像青色。在哈瓦那装罐。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/blueraspberry.rsi
@@ -640,16 +640,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/blueraspberry.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaBlue
-          Quantity: 25
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaBlue
+        Quantity: 25
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaPeachDiet
-  name: diet peach suoto
-  description: On one hand, it tastes pretty good. On the other hand, you think you can hear half of a peach pit rattling on the inside. Canned in Havana.
+  name: 低卡桃子苏奥托
+  description: 一方面，它味道相当不错。另一方面，你好像能听见里面有半颗桃核在晃荡作响。哈瓦那罐装。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/peach.rsi
@@ -657,16 +657,16 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/peach.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaPeach
-          Quantity: 25
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaPeach
+        Quantity: 25
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaCranberryDiet
-  name: diet cranberry suoto
-  description: This tastes more like prunes than cranberries. It's not bad; it's just wrong. Canned in Havana.
+  name: 低糖蔓越莓苏奥托
+  description: 这味道更像西梅，而不是蔓越莓。不算差；只是不对劲。在哈瓦那装罐。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/cranberry.rsi
@@ -674,18 +674,18 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/cranberry.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaCranberry
-          Quantity: 25
-        - ReagentId: Water
-          Quantity: 25
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaCranberry
+        Quantity: 25
+      - ReagentId: Water
+        Quantity: 25
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaVanillaDiet
-  name: diet vanilla suoto
-  description: This is a can of watery bitter vanilla extract. You can't possibly imagine who would greenlight such a concept. Canned in Havana.
+  name: 低糖香草苏奥托
+  description: 这是一罐稀薄发苦的香草精。你根本无法想象谁会批准这种概念。在哈瓦那装罐。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/vanilla.rsi
@@ -693,18 +693,18 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/vanilla.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaVanilla
-          Quantity: 25
-        - ReagentId: Water
-          Quantity: 25
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaVanilla
+        Quantity: 25
+      - ReagentId: Water
+        Quantity: 25
+      maxVol: 50
 
 - type: entity
   parent: CMDrinkCanBobdaDiet
   id: CMDrinkCanBobdaPineappleDiet
-  name: diet pineapple suoto
-  description: This tastes like battery acid with a half cup of sugar mixed in. Canned in Havana.
+  name: 低糖菠萝索托
+  description: 这尝起来像掺了半杯糖的电池酸液。在哈瓦那装罐。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/pineapple.rsi
@@ -712,12 +712,12 @@
     sprite: _RMC14/Objects/Consumable/Drinks/Bobda/Diet/pineapple.rsi
   - type: Solution
     solution:
-        reagents:
-        - ReagentId: CMSodaBobdaPineapple
-          Quantity: 25
-        - ReagentId: Water
-          Quantity: 25
-        maxVol: 50
+      reagents:
+      - ReagentId: CMSodaBobdaPineapple
+        Quantity: 25
+      - ReagentId: Water
+        Quantity: 25
+      maxVol: 50
 
 - type: Tag
   id: RMCCannedDrink

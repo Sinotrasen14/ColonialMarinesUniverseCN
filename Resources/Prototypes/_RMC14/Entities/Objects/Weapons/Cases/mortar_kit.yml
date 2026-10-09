@@ -1,15 +1,15 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: RMCMortarEquipmentCase
-  name: mortar kit
-  description: Contains the equipment needed for the mortar.
+  name: 迫击炮套件
+  description: 包含迫击炮所需的装备。
   components:
   - type: Sprite
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: mortar
-      map: [ label ]
+      map: [label]
   - type: Storage
     maxItemSize: Ginormous
     grid:

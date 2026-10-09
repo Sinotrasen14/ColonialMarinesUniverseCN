@@ -8,19 +8,17 @@
     damageContainer: StructuralMarine
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Climbable
     delay: 2
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/_RMC14/Structures/metalhit.ogg"
+        path: "/Audio/_RMC14/Structures/metalhit.ogg"
   - type: InsertBlacklist
     blacklist:
       components:
@@ -33,8 +31,8 @@
 - type: entity
   parent: RMCMorgueBase
   id: CMMorgue
-  name: morgue
-  description: Used to store bodies until someone fetches them.
+  name: 太平间
+  description: 用来存放尸体，直到有人来认领。
   components:
   - type: Pullable
   - type: Clickable
@@ -44,8 +42,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 1000
         mask:
@@ -70,12 +67,12 @@
       enum.StorageVisuals.Open:
         # basic open.close layer:
         enum.MorgueVisualLayers.Base:
-          True: { state: morgue_open}
-          False: { state: morgue_closed}
+          true: {state: morgue_open}
+          false: {state: morgue_closed}
         # show/hide morgue tray:
         enum.StorageVisualLayers.Door:
-          True: { visible: true}
-          False: { visible: false}
+          true: {visible: true}
+          false: {visible: false}
       enum.MorgueVisuals.Contents:
         # toggle contents light indicator:
         enum.MorgueVisualLayers.Light:
@@ -103,10 +100,10 @@
     anchored: true
 
 - type: entity
-  parent: [ Crematorium, RMCMorgueBase ]
+  parent: [Crematorium, RMCMorgueBase]
   id: CMCrematorium
-  name: crematorium
-  description: A human incinerator. Works well on barbecue nights.
+  name: 火葬场
+  description: 人体焚化炉。在烧烤之夜很好用。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/morgue.rsi
@@ -131,9 +128,9 @@
     visuals:
       enum.CrematoriumVisuals.Burning:
         enum.CrematoriumVisualLayers.LightBurning:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.StorageVisuals.HasContents:
         enum.CrematoriumVisualLayers.LightContent:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}

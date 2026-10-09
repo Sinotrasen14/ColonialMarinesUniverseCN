@@ -8,7 +8,7 @@
     sprite: _RMC14/Tiles/planet/desert_water.rsi
     layers:
     - state: shallow
-      map: [ "base" ]
+      map: ["base"]
 #  - type: PurifiableWater
 #    toxic: true
   - type: Appearance
@@ -16,8 +16,8 @@
     visuals:
       enum.PurifiableWaterLayers.Layer:
         base:
-          Toxic: { sprite: _RMC14/Tiles/planet/desert_water_toxic.rsi, state: shallow }
-          Unarmed: { sprite: _RMC14/Tiles/planet/desert_water.rsi, state: shallow }
+          Toxic: {sprite: _RMC14/Tiles/planet/desert_water_toxic.rsi, state: shallow}
+          Unarmed: {sprite: _RMC14/Tiles/planet/desert_water.rsi, state: shallow}
 #  - type: DamageOverTime
 #    affectsDead: false
 #    armorPiercingDamage:
@@ -52,8 +52,8 @@
     visuals:
       enum.PurifiableWaterLayers.Layer:
         base:
-          Toxic: { sprite: _RMC14/Tiles/planet/desert_water_toxic.rsi, state: shallow }
-          Unarmed: { sprite: _RMC14/Tiles/planet/desert_water.rsi, state: shallow }
+          Toxic: {sprite: _RMC14/Tiles/planet/desert_water_toxic.rsi, state: shallow}
+          Unarmed: {sprite: _RMC14/Tiles/planet/desert_water.rsi, state: shallow}
 
 - type: entity
   parent: RMCEntityDesertWaterShallow
@@ -68,8 +68,8 @@
     visuals:
       enum.PurifiableWaterLayers.Layer:
         base:
-          Toxic: { sprite: _RMC14/Tiles/planet/desert_water_toxic.rsi, state: shallow_c }
-          Unarmed: { sprite: _RMC14/Tiles/planet/desert_water.rsi, state: shallow_corner_edge }
+          Toxic: {sprite: _RMC14/Tiles/planet/desert_water_toxic.rsi, state: shallow_c}
+          Unarmed: {sprite: _RMC14/Tiles/planet/desert_water.rsi, state: shallow_corner_edge}
 
 - type: entity
   parent: RMCEntityDesertWaterShallow
@@ -84,8 +84,8 @@
     visuals:
       enum.PurifiableWaterLayers.Layer:
         base:
-          Toxic: { sprite: _RMC14/Tiles/planet/desert_water_toxic.rsi, state: shallow_edge }
-          Unarmed: { sprite: _RMC14/Tiles/planet/desert_water.rsi, state: shallow_edge }
+          Toxic: {sprite: _RMC14/Tiles/planet/desert_water_toxic.rsi, state: shallow_edge}
+          Unarmed: {sprite: _RMC14/Tiles/planet/desert_water.rsi, state: shallow_edge}
 
 - type: entity
   parent: CMFloorDeepWaterEntity
@@ -95,7 +95,7 @@
     sprite: _RMC14/Tiles/planet/desert_water.rsi
     layers:
     - state: deep
-      map: [ "base" ]
+      map: ["base"]
 #  - type: PurifiableWater
 #    toxic: true
   - type: Appearance
@@ -103,13 +103,13 @@
     visuals:
       enum.PurifiableWaterLayers.Layer:
         base:
-          Toxic: { sprite: _RMC14/Tiles/planet/desert_water_toxic.rsi, state: deep }
-          Unarmed: { sprite: _RMC14/Tiles/planet/desert_water.rsi, state: deep }
+          Toxic: {sprite: _RMC14/Tiles/planet/desert_water_toxic.rsi, state: deep}
+          Unarmed: {sprite: _RMC14/Tiles/planet/desert_water.rsi, state: deep}
 
 - type: entity
   parent: CMCatwalk
   id: RMCGrate
-  name: grate
+  name: 炉排 | grate
   description: ""
   components:
   - type: Sprite

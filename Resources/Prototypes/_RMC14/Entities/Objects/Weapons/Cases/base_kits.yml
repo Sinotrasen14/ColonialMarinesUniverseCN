@@ -1,16 +1,16 @@
-﻿- type: entity
+- type: entity
   parent: RMCGunCaseBase
   id: RMCKitBase
   abstract: true
-  name: kit
-  description: It's just an ordinary box.
+  name: 工具箱
+  description: 它只是一个普通的工具箱。
   components:
   - type: Sprite
     noRot: true
     sprite: _RMC14/Objects/Storage/guncase.rsi
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
   - type: Icon
     sprite: _RMC14/Objects/Storage/guncase.rsi
     state: closed
@@ -19,8 +19,8 @@
     visuals:
       enum.StorageVisuals.Open:
         base:
-          True: { state: open }
-          False: { state: closed }
+          true: {state: open}
+          false: {state: closed}
   - type: Item
     size: Huge
   - type: Storage

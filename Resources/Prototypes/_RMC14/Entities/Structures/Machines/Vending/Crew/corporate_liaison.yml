@@ -3,8 +3,8 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechWardrobeCorp
-  name: Corporate Liaison's Personal Wardrobe
-  description: A wardrobe containing all the clothes an executive would ever need.
+  name: 企业联络人的私人衣橱
+  description: 一个装有一位企业高管所需所有衣物的衣橱。
   suffix: Corp
   components:
   - type: AccessReader
@@ -13,10 +13,10 @@
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/corp_wardrobe.rsi
     layers:
     - state: "base"
-      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded", "enum.VendingMachineVisualLayers.Base" ]
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded", "enum.VendingMachineVisualLayers.Base"]
   - type: CMAutomatedVendor
     sections:
-    - name: Suits
+    - name: 西装
       entries:
       - id: CMJumpsuitLiaisonBlack
         amount: 1
@@ -94,7 +94,7 @@
         amount: 1
       - id: RMCJumpsuitLiaisonDisco
         amount: 1
-    - name: Coat
+    - name: 外套
       entries:
       - id: RMCJacketCorporateBlack
         amount: 1
@@ -167,7 +167,7 @@
       - id: RMCJacketWindbreakerExpedition
         amount: 1
       - id: RMCCoatSnowLiaison
-        name: liaison's winter coat
+        name: 联络员的冬季外套
         amount: 1
       - id: RMCLabcoat
         amount: 1
@@ -179,7 +179,7 @@
         amount: 1
       - id: RMCVestTan
         amount: 1
-    - name: Hats
+    - name: 帽子
       entries:
       - id: RMCHeadCapWestonYamadaDark
         amount: 1
@@ -193,7 +193,7 @@
         amount: 1
       - id: RMCHeadCowboyHatDark
         amount: 1
-    - name: Glasses
+    - name: 眼镜
       entries:
       - id: RMCGlassesMarineRpg #Placeholder
         amount: 1
@@ -213,7 +213,7 @@
         amount: 1
       - id: RMCGlassesMonocle
         amount: 1
-    - name: Gloves
+    - name: 手套
       entries:
       - id: CMHandsBrown
         amount: 1
@@ -223,7 +223,7 @@
         amount: 1
       - id: RMCHandsLeatherBlack
         amount: 1
-    - name: Shoes
+    - name: 鞋子
       entries:
       - id: RMCShoesLaceup
         amount: 1
@@ -235,7 +235,7 @@
         amount: 1
       - id: RMCBootsCorporate
         amount: 1
-    - name: Ties
+    - name: 领带
       entries:
       - id: RMCTieBlack
         amount: 1
@@ -251,7 +251,7 @@
         amount: 1
       - id: RMCTieHorrible
         amount: 1
-    - name: Storage
+    - name: 存储
       entries:
       - id: AU14SlingSatchelBlack
         amount: 1
@@ -267,7 +267,7 @@
         amount: 1
       - id: RMCBeltUtilityGeneral
         amount: 1
-    - name: Field Tents
+    - name: 野战帐篷
       entries:
       - id: RMCTentUNMCExtendedFolded # TODO: Custom We-Yu archeology tent
         amount: 1

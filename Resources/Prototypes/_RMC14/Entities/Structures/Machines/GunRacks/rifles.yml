@@ -3,32 +3,32 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackM54CEmpty
-  name: M54C gun rack
+  name: M54C枪架
   suffix: M54C, Empty
-  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, UNMC commissioned racks with fixed slots which only fit M54C rifles. Some say they were cheaper, and some say the main reason was marine's ability to easily break anything more complex than a tungsten ball.
+  description: 由AEGIS生产的用于存放长枪的枪架。虽然初始型号本应具有极高的可改装性，但UNMC委托制造的是带固定槽位的枪架，只能适配M54C步枪。有人说它们更便宜，也有人说主要原因是海军陆战队员能轻易弄坏任何比钨球更复杂的东西。
   components:
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_2: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_3: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_4: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_5: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/m54c_rack.rsi
   - type: ItemSlots
@@ -109,9 +109,9 @@
 - type: entity
   parent: RMCGunRackM54CEmpty
   id: RMCGunRackM54CMk1Empty
-  name: M54C Mk1 gun rack
+  name: M54C Mk1 枪架
   suffix: M54C Mk1, Empty
-  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, UNMC commissioned racks with fixed slots which only fit M54C Mk1 rifles. Some say they were cheaper, and some say the main reason was marine's ability to easily break anything more complex than a tungsten ball.
+  description: AEGIS生产的用于存放长枪的枪架。虽然最初型号本应具有极强的可改装性，但UNMC定制的枪架带有固定槽位，只能容纳M54C Mk1步枪。有人说它们更便宜，也有人说主要原因是陆战队员很容易弄坏任何比钨球更复杂的东西。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/m54c_rack.rsi
@@ -128,7 +128,7 @@
           tags:
           - RMCWeaponRifleM54CMK1
       item_3:
-        name: M54C Mk1
+        name: M54C 1型
         whitelist:
           tags:
           - RMCWeaponRifleM54CMK1
@@ -193,32 +193,32 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackSSG45Empty
-  name: SSG45 gun rack
+  name: SSG45枪架
   suffix: SSG45, Empty
-  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, Weyland-Yutani commissioned racks with fixed slots which only fit SSG45 rifles. Some say they were cheaper, and some say the main reason was operators' ability to easily break anything more complex than a tungsten ball.
+  description: AEGIS生产的用于存放长枪的枪架。虽然初始型号本应具有极强的可改装性，维兰德-汤谷公司却委托生产了带有固定槽位的枪架，这些槽位只能适配SSG45步枪。有人说它们更便宜，也有人说主要原因是操作员有能力轻易弄坏任何比钨球更复杂的东西。
   components:
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_2: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_3: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_4: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_5: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/ssg45_rack.rsi
   - type: ItemSlots
@@ -299,9 +299,9 @@
 - type: entity
   parent: RMCGunRackM54CEmpty
   id: RMCGunRackM54C2Empty
-  name: M54C/2 gun rack
+  name: M54C/2 枪架
   suffix: M54C/2, Empty
-  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, Weyland-Yutani commissioned racks with fixed slots which only fit M54C/2 rifles. Some say they were cheaper, and some say the main reason was operators' ability to easily break anything more complex than a tungsten ball.
+  description: 由AEGIS生产的用于存放长枪的枪架。虽然最初型号本应具有极强的可改装性，但维兰德-汤谷公司委托制造的是带固定插槽的枪架，这些插槽只能容纳M54C/2步枪。有人说它们更便宜，也有人说主要原因是操作员能轻易弄坏任何比钨球更复杂的东西。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/m54c2_rack.rsi
@@ -384,67 +384,67 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackType71Empty
-  name: Type 71 gun rack
+  name: 71式枪架
   suffix: Type 71, Empty
-  description: Some off-branded gun rack. Per SOF and UPP Army regulations, weapons should be stored in secure safes and only given out when necessary. Of course, most (but not all!) units overlook this regulation, only storing their firearms in safes when inspection arrives.
+  description: 某个杂牌枪架。根据SOF和UPP军队的规定，武器应存放在安全的保险柜中，并且只在必要时才发放。当然，大多数（但并非全部！）单位都无视这项规定，只在检查到来时才把枪械存放在保险柜里。
   components:
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_2: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_3: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_4: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_5: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_6: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/t71_rack.rsi
   - type: ItemSlots
     slots:
       item_1:
-        name: Type 71
+        name: 71型
         whitelist:
           tags:
           - RMCWeaponRifleType71
       item_2:
-        name: Type 71
+        name: 71型
         whitelist:
           tags:
           - RMCWeaponRifleType71
       item_3:
-        name: Type 71
+        name: 71式
         whitelist:
           tags:
           - RMCWeaponRifleType71
       item_4:
-        name: Type 71
+        name: 71型
         whitelist:
           tags:
           - RMCWeaponRifleType71
       item_5:
-        name: Type 71
+        name: 71型
         whitelist:
           tags:
           - RMCWeaponRifleType71
       item_6:
-        name: Type 71
+        name: 71型
         whitelist:
           tags:
           - RMCWeaponRifleType71
@@ -506,67 +506,67 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackType71EmptyPVE
-  name: Type 71 gun rack
+  name: 71式枪架
   suffix: Type 71, Empty, PVE
-  description: Some off-branded gun rack. Per SOF and UPP Army regulations, weapons should be stored in secure safes and only given out when necessary. Of course, most (but not all!) units overlook this regulation, only storing their firearms in safes when inspection arrives.
+  description: 某种杂牌枪架。按照SOF和UPP陆军的规定，武器应存放在安全的保险柜中，并且只在必要时发放。当然，大多数（但并非全部！）部队都无视这一规定，只在检查到来时才把枪械存进保险柜。
   components:
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_2: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_3: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_4: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_5: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_6: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/t71_rack.rsi
   - type: ItemSlots
     slots:
       item_1:
-        name: Type 71
+        name: 71式
         whitelist:
           tags:
           - RMCWeaponRifleType71PVE
       item_2:
-        name: Type 71
+        name: 类型71
         whitelist:
           tags:
           - RMCWeaponRifleType71PVE
       item_3:
-        name: Type 71
+        name: 71型
         whitelist:
           tags:
           - RMCWeaponRifleType71PVE
       item_4:
-        name: Type 71
+        name: 71型
         whitelist:
           tags:
           - RMCWeaponRifleType71PVE
       item_5:
-        name: Type 71
+        name: 71型
         whitelist:
           tags:
           - RMCWeaponRifleType71PVE
       item_6:
-        name: Type 71
+        name: 71型
         whitelist:
           tags:
           - RMCWeaponRifleType71PVE
@@ -628,32 +628,32 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackL90A1Empty
-  name: L90A1 gun rack
+  name: L90A1枪架
   suffix: L90A1, Empty
-  description: A large, heavy-duty rack designed to store L90A1 rifles - locked, loaded, waiting to be fired at a moment's notice. Officially, RCM legislations advise against this practice, but it doesn't stop many armories from keeping their rifles stowed in such a condition.
+  description: 一个大型、重型枪架，用于存放L90A1步枪——已闭锁、已装弹，随时待命开火。官方上，RCM法规建议不要这样做，但这并不能阻止许多军械库以这种状态存放步枪。
   components:
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_2: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_3: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_4: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_5: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/l90_rack.rsi
   - type: ItemSlots
@@ -719,25 +719,25 @@
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_2: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_3: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_4: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_5: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: ContainerFill
     containers:
       item_1:
@@ -756,32 +756,32 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackL90A2Empty
-  name: L90A2 gun rack
+  name: L90A2枪架
   suffix: L90A2, Empty
-  description:  A large, heavy-duty rack designed to store L90A2 rifles - locked, loaded, waiting to be fired at a moment's notice. Officially, RCM legislations advise against this practice, but it doesn't stop many armories from keeping their rifles stowed in such a condition.
+  description: 一个大型重型枪架，用于存放L90A2步枪——已闭锁、已装弹，随时接到通知即可开火。正式而言，RCM法规建议不要这样做，但这并不能阻止许多军械库仍以这种状态存放步枪。
   components:
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_2: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_3: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_4: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_5: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/l90_rack.rsi
   - type: ItemSlots
@@ -847,25 +847,25 @@
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_2: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_3: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_4: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       item_5: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: ContainerFill
     containers:
       item_1:

@@ -1,16 +1,15 @@
-﻿- type: entity
+- type: entity
   parent: RMCBaseDoorInvincible
   id: RMCAirlockEvacuation
-  name: Evacuation Airlock PL-6
-  description: It opens and closes.
+  name: 撤离气闸 PL-6
+  description: 它会打开和关闭。
   placement:
     mode: SnapgridCenter
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49" # don't want this colliding with walls or they won't close
         density: 100
         mask:
@@ -21,11 +20,11 @@
     sprite: _RMC14/Structures/Doors/Airlocks/escape_pod_door.rsi
     layers:
     - state: closed
-      map: [ "enum.DoorVisualLayers.Base" ]
+      map: ["enum.DoorVisualLayers.Base"]
     - state: unlit
       map: ["enum.DoorVisualLayers.BaseUnlit"]
     - state: welded
-      map: [ "enum.WeldableLayers.BaseWelded" ]
+      map: ["enum.WeldableLayers.BaseWelded"]
       visible: false
     - state: locked
       shader: unshaded
@@ -62,16 +61,15 @@
 - type: entity
   parent: RMCBaseDoorInvincible
   id: RMCAirlockLifeboat
-  name: lifeboat docking hatch
-  description: A heavyset bulkhead for a lifeboat.
+  name: 救生艇停靠舱口
+  description: 救生艇用的厚重舱壁。
   placement:
     mode: SnapgridCenter
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-1.49,-0.49,1.49,0.49"
         density: 100
         mask:

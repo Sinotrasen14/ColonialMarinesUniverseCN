@@ -1,15 +1,15 @@
 - type: entity
-  parent: [ RMCBaseWeaponShotgun, RMCBaseAttachableHolder ]
+  parent: [RMCBaseWeaponShotgun, RMCBaseAttachableHolder]
   id: RMCWeaponShotgunMK481
-  name: MK481 heavy shotgun
-  description: The bulky MK481, known to many as "the broomstick", is an aging relic within the USCMC arsenal. The pump-action system can chamber standard 12 gauge shotgun shells or 18.5mm high-dispersive shock grenades.
+  name: MK481重型霰弹枪
+  description: 笨重的 MK481 被许多人称为“扫帚柄”，是 USCMC 武器库中一件陈旧的遗物。其泵动式系统可装填标准 12 号霰弹或 18.5 毫米高散布震荡榴弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/mk481/mk481_inhands.rsi
     layers:
     - sprite: _RMC14/Objects/Weapons/Guns/Shotguns/mk481/mk481_icon.rsi
       state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/mk481/mk481_inhands.rsi
     slots:
@@ -65,14 +65,14 @@
 - type: entity
   parent: CMShellShotgunBase
   id: RMCShellShotgunHDSG
-  name: handful of high-dispersive shock grenades
-  description: A handful of 18.5mm high-dispersive shock grenades, also called firecrackers.
+  name: 一把高扩散震撼手榴弹
+  description: 一把18.5毫米高扩散震撼手榴弹，又称鞭炮。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Handfuls/shotgun_hdsg_handfuls.rsi
     layers:
     - state: hdsg_1
-      map: [ "base" ]
+      map: ["base"]
   - type: CartridgeAmmo
     proto: RMCPelletShotgunHDSG
   - type: Stack
@@ -95,16 +95,16 @@
 
 - type: stack
   id: RMCShellShotgunHDSG
-  name: handful of high-dispersive shock grenades
-  icon: { sprite: /Textures/_RMC14/Objects/Weapons/Guns/Ammunition/Handfuls/shotgun_hdsg_handfuls.rsi, state: hdsg_1 }
+  name: 一把高扩散震荡手雷
+  icon: {sprite: /Textures/_RMC14/Objects/Weapons/Guns/Ammunition/Handfuls/shotgun_hdsg_handfuls.rsi, state: hdsg_1}
   spawn: RMCShellShotgunHDSG
   maxCount: 5
 
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBoxShotgunHDSG
-  name: box of HDSG grenades
-  description: A box filled with 18.5mm high-dispersive shock grenades.
+  name: 一盒HDSG手雷
+  description: 一个装满18.5毫米高扩散震荡手雷的盒子。
   components:
   - type: Storage
     whitelist:
@@ -118,9 +118,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Boxes/hdsg.rsi
     layers:
     - state: full
-      map: [ "full" ]
+      map: ["full"]
     - state: empty
-      map: [ "empty" ]
+      map: ["empty"]
       visible: false
   - type: Tag
     tags:
@@ -130,8 +130,8 @@
 - type: entity
   parent: CMPelletShotgunBase
   id: RMCPelletShotgunHDSG
-  categories: [ HideSpawnMenu ]
-  name: 18.5mm high-dispersive shock grenade
+  categories: [HideSpawnMenu]
+  name: 18.5毫米高散布震撼弹
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/hdsg_projectiles.rsi
@@ -195,8 +195,8 @@
 - type: entity
   parent: CMPelletShotgunBase
   id: RMCPelletShotgunHDSGBomblet
-  categories: [ HideSpawnMenu ]
-  name: high-dispersive cluster bomblet
+  categories: [HideSpawnMenu]
+  name: 高散布集束子弹药
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/hdsg_projectiles.rsi

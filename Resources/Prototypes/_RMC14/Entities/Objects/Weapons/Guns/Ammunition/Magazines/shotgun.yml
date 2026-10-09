@@ -1,15 +1,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineShotgunXM51
-  name: XM51 magazine (16g)
-  description: A 16 gauge pump-action shotgun magazine.
+  name: XM51 弹匣（16号）
+  description: 16号泵动式霰弹枪弹匣。
   components:
   - type: Tag
     tags:
     - RMCMagazineShotgun
     - RMCMagazineShotgunXM51
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCShellShotgunBreaching

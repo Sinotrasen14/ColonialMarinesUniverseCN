@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: [RMCBaseSlideMagazineVisualsBallistic, RMCWeaponRevolverBase]
   id: RMCWeaponRevolverSpearhead
-  name: CMB Spearhead autorevolver
-  description: A bulky revolver, occasionally carried by assault troops and officers in the Marine Corps, as well as civilian law enforcement. Fires .357 Magnum rounds.
+  name: CMB矛头自动左轮手枪
+  description: 一把笨重的左轮手枪，偶尔由海军陆战队的突击部队和军官以及民用执法部门携带。发射 .357 马格南子弹。
   components:
   - type: Tag
     tags:
@@ -22,8 +22,8 @@
       - RMCCartridgeRevolver357Hollowpoint
     proto: RMCCartridgeRevolver357
     capacity: 6
-    chambers: [ True, True, True, True, True, True ]
-    ammoSlots: [ null, null, null, null, null, null ]
+    chambers: [true, true, true, true, true, true]
+    ammoSlots: [null, null, null, null, null, null]
   - type: Gun
     selectedMode: SemiAuto
     availableModes:
@@ -92,8 +92,8 @@
 - type: entity
   parent: RMCWeaponRevolverSpearhead
   id: RMCWeaponRevolverSpearheadCustom
-  name: Spearhead custom autorevolver
-  description: An automatic revolver chambered in .357, custom made of darker metal and with a wooden handle, clearly made for a person with taste in mind.
+  name: 矛头定制自动左轮手枪
+  description: 一把装填 .357 弹药的自动左轮手枪，由深色金属定制而成，配有木质握把，显然是为有品味的人精心打造。
   components:
   - type: Tag
     tags:
@@ -113,18 +113,18 @@
   suffix: Empty
   components:
   - type: RevolverAmmoProvider
-    proto: null
+    proto:
     chambers:
-    - null
-    - null
-    - null
-    - null
-    - null
-    - null
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
 
 - type: entity
   id: RMCBaseSpeedLoader357
-  name: "Speed loader (.357)"
+  name: "快速装弹器（.357）"
   parent: BaseItem
   abstract: true
   components:
@@ -149,16 +149,16 @@
 - type: entity
   parent: RMCBaseSpeedLoader357
   id: RMCSpeedLoader357
-  name: "Speed loader (.357)"
-  description: A revolver speed loader.
+  name: "快速装弹器（.357）"
+  description: 左轮手枪快速装弹器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/SpeedLoaders/spearhead.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: base-5
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: base
     steps: 6
@@ -171,8 +171,8 @@
 - type: entity
   parent: RMCBaseSpeedLoader357
   id: RMCSpeedLoader357Hollowpoint
-  name: "hollowpoint speed loader (.357)"
-  description: A revolver speed loader filled with Hollowpoint ammo.
+  name: "空尖弹快速装弹器（.357）"
+  description: 一个装满空尖弹的左轮手枪快速装弹器。
   components:
   - type: Tag
     tags:
@@ -182,9 +182,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/SpeedLoaders/spearhead.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: base-5
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: base
     steps: 6
@@ -196,7 +196,7 @@
 
 - type: entity
   id: RMCCartridgeRevolver357
-  name: cartridge (.357)
+  name: 弹药（.357）
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -208,7 +208,7 @@
 
 - type: entity
   id: RMCCartridgeRevolver357Hollowpoint
-  name: cartridge (.357) Hollowpoint
+  name: .357 空尖弹
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -221,8 +221,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletRevolver357
-  name: bullet (.357)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（.357）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -241,8 +241,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletRevolver357Hollowpoint
-  name: bullet (.357) Hollowpoint
-  categories: [ HideSpawnMenu ]
+  name: 子弹（.357）空尖弹
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

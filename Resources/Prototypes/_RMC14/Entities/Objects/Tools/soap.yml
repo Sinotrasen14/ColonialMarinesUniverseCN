@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: CMSoap
-  name: soap
-  description: A cheap bar of soap. Doesn't smell.
+  name: 肥皂
+  description: 一块便宜的肥皂。没有气味。
   components:
   - type: Tag
     tags:
@@ -12,16 +12,16 @@
     state: soap
   - type: Item
     sprite: Objects/Specific/Janitorial/soap.rsi
-    size: Tiny  
+    size: Tiny
   - type: Physics
     bodyType: Dynamic
   - type: Solution
     id: soap
     solution:
-        maxVol: 50
-        reagents:
-        - ReagentId: SoapReagent
-          Quantity: 50
+      maxVol: 50
+      reagents:
+      - ReagentId: SoapReagent
+        Quantity: 50
   - type: SolutionTransfer
     transferAmount: 10
     minTransferAmount: 1
@@ -34,7 +34,7 @@
     solution: soap
   - type: FlavorProfile
     flavors:
-      - clean
+    - clean
   - type: Edible
     solution: soap
   - type: BadFood
@@ -42,12 +42,12 @@
   - type: Residue
     residueAdjective: residue-slippery
     residueColor: residue-green
-    
+
 - type: entity
-  name: soap
+  name: 肥皂
   id: CMSoapDeluxe
   parent: CMSoap
-  description: A deluxe Waffle Co. brand bar of soap. Smells of strawberries.
+  description: 一块豪华的 Waffle Co. 品牌肥皂。闻起来有草莓味。
   components:
   - type: Sprite
     state: soap_deluxe
@@ -56,12 +56,12 @@
   - type: Residue
     residueAdjective: residue-slippery
     residueColor: residue-brown
-    
+
 - type: entity
-  name: soap
+  name: 肥皂
   id: CMSoapSyndie
   parent: CMSoap
-  description: An untrustworthy bar of soap. Smells of fear.
+  description: 一块不可信的肥皂。散发着恐惧的气味。
   components:
   - type: Sprite
     state: soap_syndie
@@ -72,14 +72,14 @@
     residueColor: residue-red
   - type: FlavorProfile
     flavors:
-      - clean
-      - punishment
-    
+    - clean
+    - punishment
+
 - type: entity
-  name: soap
+  name: 肥皂
   id: CMSoapNT
   parent: CMSoap
-  description: A WeYa brand bar of soap. Smells of phoron.
+  description: 一块WeYa牌肥皂。闻起来有福龙的味道。
   components:
   - type: Sprite
     state: soap_nt

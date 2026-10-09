@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
-  parent: [ BaseStructureDynamic, BaseBagOpenClose ]
+  parent: [BaseStructureDynamic, BaseBagOpenClose]
   id: CMFilingCabinetBase
-  description: A large cabinet with drawers.
+  description: 一个带抽屉的大柜子。
   suffix: Empty
   components:
   - type: XenoCrusherChargable
@@ -14,12 +14,12 @@
     maxItemSize: Normal
     whitelist:
       tags:
-        - Document
-        - Folder
-        - Write
+      - Document
+      - Folder
+      - Write
       # cmu edit start: intel (documents and devices) and objective items spawn in cabinets, so they have to fit
       components:
-        - IntelDetectorTracked
+      - IntelDetectorTracked
       # cmu edit end
   - type: Sprite
     sprite: _RMC14/Structures/Storage/filing_cabinet.rsi
@@ -33,8 +33,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.18,-0.25,0.18,0"
         density: 200
         mask:
@@ -51,8 +50,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:DoActsBehavior
@@ -69,7 +67,7 @@
 - type: entity
   parent: CMFilingCabinetBase
   id: CMFilingCabinet
-  name: filing cabinet
+  name: 文件柜
   components:
   - type: Sprite
     state: filingcabinet
@@ -81,7 +79,7 @@
 - type: entity
   parent: CMFilingCabinetBase
   id: CMFilingCabinetTall
-  name: tall filing cabinet
+  name: 高文件柜
   components:
   - type: Sprite
     state: tallcabinet
@@ -93,7 +91,7 @@
 - type: entity
   parent: CMFilingCabinetTall
   id: CMFilingCabinetTallWood
-  name: tall wooden filing cabinet
+  name: 高大的木制文件柜
   components:
   - type: Sprite
     state: tallcabinet
@@ -105,7 +103,7 @@
 - type: entity
   parent: CMFilingCabinetBase
   id: CMFilingCabinetChest
-  name: chest drawer
+  name: 抽屉柜
   components:
   - type: Storage
     grid:
@@ -113,24 +111,23 @@
     maxItemSize: Normal
     whitelist:
       tags:
-        - Document
-        - Folder
-        - Write
+      - Document
+      - Folder
+      - Write
       # cmu edit start: intel (documents and devices) and objective items spawn in cabinets, so they have to fit
       components:
-        - IntelDetectorTracked
+      - IntelDetectorTracked
       # cmu edit end
   - type: Sprite
     state: chestdrawer
     layers:
     - state: chestdrawer
     - state: chestdrawer-open
-      map: [ "openLayer" ]
+      map: ["openLayer"]
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.22,-0.26,0.22,0"
         density: 210
         mask:
@@ -142,19 +139,19 @@
 - type: entity
   parent: CMFilingCabinetChest
   id: CMFilingCabinetChestWood
-  name: wooden chest drawer
+  name: 木箱抽屉
   components:
   - type: Sprite
     state: chestdrawer
     layers:
     - state: chestdrawerwood
     - state: chestdrawerwood-open
-      map: [ "openLayer" ]
+      map: ["openLayer"]
 
 - type: entity
   parent: CMFilingCabinetBase
   id: CMFilingCabinetChestAngled
-  name: chest drawer
+  name: 抽屉柜
   suffix: Angled
   components:
   - type: Sprite
@@ -163,8 +160,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.22,-0.26,0.22,0"
         density: 210
         mask:
@@ -180,10 +176,10 @@
     maxItemSize: Normal
     whitelist:
       tags:
-        - Document
-        - Folder
-        - Write
+      - Document
+      - Folder
+      - Write
       # cmu edit start: intel (documents and devices) and objective items spawn in cabinets, so they have to fit
       components:
-        - IntelDetectorTracked
+      - IntelDetectorTracked
       # cmu edit end

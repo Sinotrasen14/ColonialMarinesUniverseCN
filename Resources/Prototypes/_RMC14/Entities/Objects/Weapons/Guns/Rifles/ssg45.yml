@@ -1,8 +1,8 @@
-﻿- type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+- type: entity
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: RMCWeaponRifleSSG45NoLock
-  name: NSG-23 Assault Rifle
-  description: Developed by Weyland-Yutani as a modern successor to the aging M5 platform, the SpezialSturmGewehr is engineered for precision mid-to-long range combat. The primary rifle of the Weyland-Yutani PMCs.
+  name: NSG-23 突击步枪
+  description: 由维兰德-汤谷公司开发，作为老旧 M5 平台的现代后继型号，SpezialSturmGewehr 专为精准的中远距离作战而设计。它是维兰德-汤谷公司私人军事承包商的主力步枪。
   suffix: No ID Lock
   components:
   - type: Sprite
@@ -12,10 +12,10 @@
       sprite: _RMC14/Objects/Weapons/Guns/Rifles/ssg45/ssg45_icon.rsi
     - state: bolt-open
       sprite: _RMC14/Objects/Weapons/Guns/Rifles/ssg45/ssg45_icon.rsi
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/Rifles/ssg45/ssg45_icon.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/ssg45/ssg45_inhands.rsi
   - type: ContainerContainer
@@ -61,7 +61,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -148,7 +148,7 @@
           - RMCAttachmentS84xTelescopicScope
           - RMCAttachmentS42xTelescopicMiniscope
       rmc-aslot-underbarrel:
-        startingAttachable: null
+        startingAttachable:
         whitelist:
           tags:
           - RMCAttachmentAngledGrip
@@ -170,14 +170,14 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleSSG45
-  name: "NSG-23 magazine (10x24mm)"
+  name: "NSG-23 弹匣（10x24mm）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleSSG45
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mm
@@ -197,14 +197,14 @@
 - type: entity
   parent: RMCMagazineRifleSSG45
   id: RMCMagazineRifleSSG45Extended
-  name: "NSG-23 extended magazine (10x24mm)"
+  name: "NSG-23加长弹匣（10x24mm）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleSSG45Ext
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mm
@@ -225,14 +225,14 @@
 - type: entity
   parent: RMCMagazineRifleSSG45
   id: RMCMagazineRifleSSG45AP
-  name: "NSG-23 AP magazine (10x24mm)"
+  name: "NSG-23 AP弹匣（10×24毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleSSG45AP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mmAP
@@ -251,14 +251,14 @@
 - type: entity
   parent: RMCMagazineRifleSSG45
   id: RMCMagazineRifleSSG45HEAP
-  name: "NSG-23 HEAP magazine (10x24mm)"
+  name: "NSG-23 高爆穿甲弹匣（10×24毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleSSG45HEAP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle10x24mmHEAP
@@ -280,19 +280,19 @@
   suffix: HEAP, Empty
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:
 
 - type: entity
   parent: RMCMagazineRifleSSG45
   id: RMCMagazineRifleSSG45Incend
-  name: "NSG-23 Incendiary magazine (10x24mm)"
+  name: "NSG-23 燃烧弹匣（10×24毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleSSG45Incend
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle10x24mmIncendiary

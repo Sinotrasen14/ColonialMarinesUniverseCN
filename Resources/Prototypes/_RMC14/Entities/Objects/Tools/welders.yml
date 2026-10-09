@@ -2,8 +2,8 @@
 - type: entity
   parent: [BaseItem, RMCBaseMeleeWeapon]
   id: RMCWelderBase
-  name: blowtorch
-  description: "Melts anything as long as it's fueled, don't forget your eye protection!"
+  name: 喷灯
+  description: "只要有燃料，它就能熔化任何东西，别忘了戴护目镜！"
   abstract: true
   components:
   - type: EmitSoundOnDrop
@@ -34,11 +34,11 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Enabled:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
         enum.ToggleableVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Item
     size: Small
     sprite: _RMC14/Objects/Tools/welder.rsi
@@ -62,8 +62,8 @@
     deactivatedSoundOnHitNoDamage:
       collection: MetalThud
     activatedDamage:
-        types:
-            Heat: 15
+      types:
+        Heat: 15
   - type: ItemToggleSize
     activatedSize: Large
   - type: ItemToggleHot
@@ -100,7 +100,7 @@
   - type: Tool
     useSound:
       collection: Welder
-    qualities: [ Welding ]
+    qualities: [Welding]
   - type: Welder
     fuelConsumption: 0.06 # TODO RMC14 change this when welders are fixed
     fuelLitCost: 0
@@ -162,8 +162,8 @@
 - type: entity
   parent: RMCWelderBase
   id: RMCWelderAdmin
-  name: admin blowtorch
-  description: Melts anything as long as it's fueled, forget your eye protection!
+  name: 管理员喷灯
+  description: 只要燃料充足，它能熔化任何东西，别管你的护目镜了！
   suffix: Admin, DO NOT MAP
   components:
   - type: SolutionContainerManager
@@ -177,8 +177,8 @@
 - type: entity
   parent: RMCWelderBase
   id: CMWelderSmall
-  name: ME3 hand welder
-  description: A compact, handheld welding torch used by the Marines for cutting and welding jobs on the field. Due to the small size and slow strength, its function is limited compared to a full-sized technician's blowtorch.
+  name: ME3 手持焊枪
+  description: 一种紧凑的手持焊枪，供海军陆战队在战场上执行切割和焊接任务。由于体积小且强度低，其功能与全尺寸的技师用喷灯相比十分有限。
   components:
   - type: RequiresEyeProtection # CMU14
   - type: Sprite
@@ -196,7 +196,7 @@
 - type: entity
   parent: RMCWelderBase
   id: RMCWelderIndustrial
-  name: industrial blowtorch
+  name: 工业喷灯
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/welder_industrial.rsi
@@ -225,8 +225,8 @@
 - type: entity
   parent: RMCWelderBase
   id: RMCWelderPVE
-  name: modified blowtorch
-  description: A more 'advanced' version of the standard Blowtorch, this blowtorch has a welding shield for eye protection affixed to it. Seems the eye shield was ripped off of a standard ME3 hand welder and then crudely affixed.
+  name: 改装的喷灯
+  description: 标准喷灯的“更先进”版本，这个喷灯上固定了一个用于保护眼睛的焊接护罩。看起来这个护目罩是从标准 ME3 手持焊接器上扯下来的，然后被粗糙地装了上去。
   suffix: Eye Protection
   components:
   - type: SolutionContainerManager
@@ -240,8 +240,8 @@
 - type: entity
   parent: RMCWelderIndustrial
   id: RMCWelderExperimental
-  name: experimental welder
-  description: A synthetic-grade experimental blowtorch with a compact fuel recycler.
+  name: 实验性焊接器
+  description: 合成级实验性焊接器，配有紧凑型燃料回收器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/welder_industrial.rsi

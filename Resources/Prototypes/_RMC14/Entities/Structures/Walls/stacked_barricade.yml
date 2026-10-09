@@ -1,16 +1,15 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: RMCBarricadeStacked
-  name: metal Barricades
-  description: Two metal barricades stacked ontop of eachother to make a makeshift wall.
+  name: 金属路障
+  description: 两个金属路障上下堆叠在一起，组成一道临时墙。
   components:
   - type: Rotatable
   - type: Appearance
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,-0.38"
         density: 500
         mask:

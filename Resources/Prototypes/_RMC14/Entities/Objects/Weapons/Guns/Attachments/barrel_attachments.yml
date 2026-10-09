@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: RMCAttachableBase
   id: RMCBarrelAttachmentBase
@@ -12,8 +12,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentExtendedBarrel # extended_barrel
-  name: extended barrel
-  description: The lengthened barrel speeds up and stabilizes the bullet, increasing velocity. # and accuracy.
+  name: 加长枪管
+  description: 加长枪管能加速并稳定子弹，提高初速。                                                              # and accuracy.
   components:
   - type: Sprite
     state: ebarrel
@@ -35,8 +35,8 @@
 - type: entity
   parent: RMCAttachmentExtendedBarrel
   id: RMCAttachmentExtendedCompensator
-  name: AB-RVX extended compensator
-  description: A precision-engineered vented barrel extension used by various UN forces. Greatly improves accuracy, muzzle control, and projectile velocity, but reduces terminal damage due to pressure venting.
+  name: AB-RVX 加长型补偿器
+  description: 一种精密设计的带排气孔枪管延长器，供多支联合国部队使用。可大幅提升精度、枪口控制与弹丸速度，但因压力泄放而降低终端伤害。
   components:
   - type: Sprite
     state: ebarrel_vented
@@ -70,8 +70,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentBarrelMar50
-  name: MAR-50 barrel
-  description: A heavy barrel.
+  name: MAR-50枪管
+  description: 一根重型枪管。
   components:
   - type: Sprite
     state: mar50barrel
@@ -88,8 +88,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentBarrelCharger
-  name: barrel charger
-  description: A hyper threaded barrel extender that fits to the muzzle of most firearms. Greatly increases projectile damage at the cost of firing speed.
+  name: 枪管充能器
+  description: 一种超螺纹枪管延长器，可安装在大多数枪械的枪口上。以降低射速为代价，大幅提升弹丸伤害。
   components:
   - type: Sprite
     state: hbarrel
@@ -121,9 +121,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentRecoilCompensator # compensator
-  name: recoil compensator
-  description: "A muzzle attachment that reduces recoil by diverting expelled gasses upwards.
-    Reduces recoil, at the cost of a small amount of weapon damage." # increases accuracy and reduces recoil
+  name: 后坐力补偿器
+  description: "枪口配件，通过将排出的气体向上导流来降低后坐力。会降低后坐力，但代价是少量武器伤害。"          # increases accuracy and reduces recoil
   components:
   - type: Sprite
     state: comp
@@ -147,8 +146,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentRecoilCompensatorM13
-  name: M13 extended recoil compensator
-  description: A heavy, overbuilt compensator and barrel extension for the M13 Auto Pistol. Greatly improves recoil control during automatic fire, at the cost of bulk and handling. Definitely compensating for something, but brutally effective.
+  name: M13 加长型后坐力补偿器
+  description: 一款沉重、过度加固的补偿器与枪管延伸部件，用于 M13 自动手枪。大幅提升全自动射击时的后坐力控制，但代价是笨重且操控性下降。绝对是在补偿什么，但效果极其凶猛。
   components:
   - type: Sprite
     state: m10_overcomp
@@ -178,8 +177,8 @@
 - type: entity
   parent: RMCAttachmentRecoilCompensatorM13
   id: RMCAttachmentRecoilCompensatorM13Spiked
-  name: M13 extended spiked recoil compensator
-  description: A brutally heavy, over-engineered compensator and barrel extension for the M13 Auto Pistol, tipped with a hardened spiked cap. Greatly improves recoil control during automatic fire—and turns the pistol into a nasty bludgeon in close quarters. Definitely compensating for something, but brutally effective.
+  name: M13加长型尖刺后坐力补偿器
+  description: 一个重得离谱、过度设计的后坐力补偿器和枪管延长件，用于M13自动手枪，末端装有经过硬化处理的尖刺帽。大幅提升全自动射击时的后坐力控制，还能在近距离把这把手枪变成一根凶狠的棍棒。绝对是在补偿什么，但粗暴有效。
   components:
   - type: Sprite
     state: m10_overcomp_spike
@@ -203,10 +202,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentShotgunChoke # choke
-  name: shotgun choke
-  description: "A threaded choke that can be inserted into the M42A2 Shotgun.
-    Improves accuracy, velocity, tightens spread, and increases the cyclic rate.
-    In exchange, projectile damage and force is reduced. Also increases recoil. Not recommended for slugs."
+  name: 霰弹枪收束器
+  description: "一种可插入 M42A2 霰弹枪的螺纹收束器。可提升精准度、弹速，收束散布，并提高循环速率。作为交换，弹丸伤害与冲击力会降低。同时会增加后坐力。不推荐使用独头弹。"
   components:
   - type: Sprite
     state: choke
@@ -241,9 +238,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentSuppressor # suppressor
-  name: suppressor
-  description: "A small tube with exhaust ports to expel noise and gas.
-    Does not completely silence a weapon, but does make it much quieter at the cost of slightly reduced damage."
+  name: 抑制器
+  description: "一个带有排气口的小管，用于排出噪音和气体。它不能完全使武器消音，但确实能让武器安静得多，代价是伤害略微降低。"
   components:
   - type: Sprite
     state: suppressor
@@ -264,8 +260,8 @@
 - type: entity
   parent: RMCAttachmentSuppressor
   id: RMCAttachmentSuppressorCompact
-  name: compact suppressor
-  description: A lightweight, low-profile suppressor designed specifically for SMGs and sidearms. It dampens sound and muzzle flash while marginally improving stability and accuracy, though it slightly reduces projectile velocity and terminal damage.
+  name: 紧凑型抑制器
+  description: 一款专为冲锋枪和副武器设计的轻量、低矮型抑制器。它能减弱声音和枪口闪光，同时略微提升稳定性和精准度，但会略微降低弹丸速度和终端伤害。
   components:
   - type: Sprite
     state: suppressor_sleek
@@ -282,9 +278,8 @@
 - type: entity
   parent: RMCAttachmentSuppressor
   id: RMCAttachmentSuppressorXM40
-  name: XM40 suppressor
-  description: "A small tube with exhaust ports to expel noise and gas.
-    Does not completely silence a weapon, but does make it much quieter at the cost of slightly reduced damage."
+  name: XM40 抑制器
+  description: "一个带有排气口的小管，用于排出噪音和气体。无法完全消除武器的声音，但可以使其安静得多，代价是伤害略微降低。"
   components:
   - type: Sprite
     state: m40sd_suppressor
@@ -306,8 +301,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentSuppressorNPZ92
-  name: NPZ92 integrated suppressor
-  description: You shouldn't have this.
+  name: NPZ92一体式消音器
+  description: 你不应该拥有这个。
   components:
   - type: Sprite
     state: npz92_suppressor
@@ -327,8 +322,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentSuppressorM96SB
-  name: M96S-B integrated suppressor
-  description: You shouldn't have this.
+  name: M96S-B一体式消音器
+  description: 你不应该拥有这个。
   components:
   - type: Sprite
     state: suppressed_sniper_barrel
@@ -345,8 +340,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentSuppressorL112
-  name: L112A1 integrated suppressor
-  description: Cor... I don't think you can put that one back on.
+  name: L112A1 集成式消音器
+  description: 哎呀……我觉得那个你没法再装回去了。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_barrel.rsi
@@ -365,8 +360,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentMatebaStandard
-  name: Standard Mateba Barrel
-  description: A standard mateba barrel. Offers a balance between accuracy and fire rate.
+  name: 标准马特巴枪管
+  description: 标准马特巴枪管。在精准度和射速之间提供平衡。
   components:
   - type: Sprite
     state: mateba_medium
@@ -380,8 +375,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentMatebaMarksman
-  name: Marksman Mateba Barrel
-  description: A marksman mateba barrel. Offers a greater accuracy at the cost of fire rate.
+  name: 神射手马特巴枪管
+  description: 神射手马特巴枪管。以牺牲射速为代价，提供更高的精准度。
   components:
   - type: Sprite
     state: mateba_long
@@ -399,8 +394,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentMatebaSnubNose
-  name: Snubnose Mateba Barrel
-  description: A snubnosed mateba barrel. Offers a fast fire rate at the cost of accuracy.
+  name: 短管马特巴枪管
+  description: 短管马特巴枪管。以牺牲精准度为代价，提供快速的射速。
   components:
   - type: Sprite
     state: mateba_short
@@ -451,8 +446,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: RMCAttachmentL49Barrel
-  name: L49 standoff device
-  description: How are you even seeing this?
+  name: L49 对峙装置
+  description: 你到底是怎么看到这个的？
   components:
   - type: Sprite
     state: choke

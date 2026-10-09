@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCElevatorDoorBroken
-  name: broken elevator door
-  description: completely broken, the elevator is not going to work.
+  name: 电梯门损坏
+  description: 完全损坏，电梯无法运行。
   placement:
     mode: SnapgridCenter
   components:
@@ -12,8 +12,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 190
         layer:

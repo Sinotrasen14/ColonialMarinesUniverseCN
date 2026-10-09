@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: RMCWhistle
-  name: whistle
-  description: A metal pea-whistle. Can be blown while held, or worn in the mouth
+  name: 哨子
+  description: 一个金属豌豆哨。可以手持吹响，也可以含在口中。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/whistle.rsi
@@ -11,8 +11,8 @@
     size: Tiny
   - type: Clothing
     slots:
-      - mask
-      - neck
+    - mask
+    - neck
   - type: EmitSoundOnUse
     sound:
       collection: TrenchWhistle

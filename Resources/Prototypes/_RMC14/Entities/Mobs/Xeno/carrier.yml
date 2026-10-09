@@ -7,8 +7,8 @@
   - RMCXenoCommendationReceiver
   - RMCXenoMobCollision
   id: RMCXenoCarrierBase
-  name: Carrier
-  description: A strange-looking alien creature. It carries a number of scuttling jointed crablike creatures.
+  name: 携带者 | Carrier
+  description: 一个模样怪异的外星生物。它携带着许多爬行乱窜、长有关节、形似螃蟹的生物。 | A strange-looking alien creature. It carries a number of scuttling jointed crablike creatures.
   abstract: true
   components:
   - type: CanBuildThickFromConstructNode
@@ -139,23 +139,23 @@
   - type: Sprite
     sprite: CMU14/Mobs/Xenos/Carrier/carrier.rsi # AU14-Edit
     layers:
-    - map: [ "enum.XenoVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base"]
       state: alive
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
+    - map: ["enum.RMCDamageVisualLayers.Base"]
       visible: false
-    - map: [ "enum.ParasiteOverlayLayers.RightArm" ]
+    - map: ["enum.ParasiteOverlayLayers.RightArm"]
       visible: false
-    - map: [ "enum.ParasiteOverlayLayers.Head" ]
+    - map: ["enum.ParasiteOverlayLayers.Head"]
       visible: false
-    - map: [ "enum.ParasiteOverlayLayers.LeftArm" ]
+    - map: ["enum.ParasiteOverlayLayers.LeftArm"]
       visible: false
-    - map: [ "enum.ParasiteOverlayLayers.Back" ]
+    - map: ["enum.ParasiteOverlayLayers.Back"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
+    - map: ["enum.XenoInhandVisualLayers.Left"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
+    - map: ["enum.XenoInhandVisualLayers.Right"]
       visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
+    - map: ["enum.RMCShieldVisuals.Base"]
       sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
   - type: Xeno
@@ -191,17 +191,17 @@
   - type: Sprite
     sprite: CMU14/Mobs/Xenos/Carrier/eggsac_carrier.rsi # AU14-Edit
     layers:
-    - map: [ "enum.XenoVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base"]
       state: alive
-    - map: [ "enum.XenoEggStorageVisualLayers.Base" ]
+    - map: ["enum.XenoEggStorageVisualLayers.Base"]
       state: eggsac_0
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
+    - map: ["enum.RMCDamageVisualLayers.Base"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
+    - map: ["enum.XenoInhandVisualLayers.Left"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
+    - map: ["enum.XenoInhandVisualLayers.Right"]
       visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
+    - map: ["enum.RMCShieldVisuals.Base"]
       sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
   - type: Xeno

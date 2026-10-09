@@ -3,32 +3,32 @@
   abstract: true
   parent: BaseSMES
   id: CMSMESBase
-  name: SMES
-  description: A high-capacity superconducting magnetic energy storage (SMES) unit.
+  name: 超导磁储能
+  description: 高容量超导磁储能（SMES）单元。
   components:
-    - type: GuideHelp
-      guides:
-      - RMCGuideRoleCombatTechnician
-    - type: Sprite
-      sprite: _RMC14/Structures/Power/smes.rsi
-      layers:
-      - state: smes
-      - map: ["enum.SmesVisualLayers.Charge"]
-        state: "smes-og1" # -og0 does not exist
-        shader: unshaded
-        visible: false
-      - map: ["enum.SmesVisualLayers.Input"]
-        state: "smes-oc0"
-        shader: unshaded
-      - map: ["enum.SmesVisualLayers.Output"]
-        state: "smes-op1"
-        shader: unshaded
-    - type: Machine
-      board: CMSMESMachineCircuitboard
-    - type: InteractedBlacklist
-      blacklist:
-        components:
-        - Xeno
+  - type: GuideHelp
+    guides:
+    - RMCGuideRoleCombatTechnician
+  - type: Sprite
+    sprite: _RMC14/Structures/Power/smes.rsi
+    layers:
+    - state: smes
+    - map: ["enum.SmesVisualLayers.Charge"]
+      state: "smes-og1"   # -og0 does not exist
+      shader: unshaded
+      visible: false
+    - map: ["enum.SmesVisualLayers.Input"]
+      state: "smes-oc0"
+      shader: unshaded
+    - map: ["enum.SmesVisualLayers.Output"]
+      state: "smes-op1"
+      shader: unshaded
+  - type: Machine
+    board: CMSMESMachineCircuitboard
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
 
 
 # SMES' in use

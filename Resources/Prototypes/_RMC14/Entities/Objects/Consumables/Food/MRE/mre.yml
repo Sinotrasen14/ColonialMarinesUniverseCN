@@ -2,8 +2,8 @@
   parent: BaseStorageItem
 #cmu edit start
   id: CMMRE
-  name: MRE
-  description: A Meal, Ready-to-Eat. A single-meal combat ration designed to provide a soldier with enough nutrients for a day of strenuous work. Its expiration date is at least 20 years ahead of your combat life expectancy.
+  name: 即食口粮
+  description: 即食口粮。一种单餐战斗口粮，旨在为士兵提供足够营养，以支撑一天的高强度工作。它的过期日期至少比你的作战预期寿命还要晚20年。
 #cmu edit end
   components:
   - type: Tag
@@ -30,8 +30,8 @@
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: { state: "open" }
-          False: { state: "closed" }
+          true: {state: "open"}
+          false: {state: "closed"}
   - type: StorageFill
     contents:
     - id: CMMREComponentBonelessPorkRibs
@@ -102,8 +102,8 @@
   abstract: true
   parent: BaseItem
   id: CMMREComponentBase
-  name: MRE component
-  description: A package from a Meal Ready-to-Eat, property of the Marines. Contains a part of a meal, prepared for field consumption.
+  name: MRE组件
+  description: 一份“即食口粮”中的一包，属于海军陆战队。内含一餐的一部分，为野外食用而准备。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/mre_components.rsi
@@ -118,7 +118,7 @@
   abstract: true
   parent: CMFoodBase
   id: CMMREFoodBase
-  description: The contents of a Marine Standard issue MRE.
+  description: 海军陆战队标准配发的即食口粮的内容。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/mre_contents.rsi
@@ -129,8 +129,8 @@
 - type: entity
   parent: RMCBoxMagazineSupplySmallBase
   id: RMCBoxMREEmpty
-  name: box of MREs (x12)
-  description: A box of MREs. Nutritious, but not delicious.
+  name: 一箱单兵口粮（12份）
+  description: 一箱单兵口粮。营养丰富，但不好吃。
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -148,15 +148,15 @@
     - state: supply_box_small
       color: "#b59471"
     - state: supply_ammo_small_full
-      map: [ "enum.CMItemSlotsLayers.Fill" ]
+      map: ["enum.CMItemSlotsLayers.Fill"]
       color: "#a69571"
     - state: supply_box_small_food
       color: "#b59471"
     - state: supply_lid_small_closed
-      map: [ "lid" ]
+      map: ["lid"]
       color: "#b59471"
     - state: supply_lid_small_closed_marking
-      map: [ "lid_marking" ]
+      map: ["lid_marking"]
       color: "#b59471"
 
 - type: entity
@@ -173,8 +173,8 @@
 - type: entity
   parent: CMMRE
   id: RMCMRESPP # TODO RMC14 - Custom Contents
-  name: SPP IRP ration pack
-  description: An Individual Meal Ration, mainly composed of a selection of canned food, despite being heavier, it has proven to be a lot more reliable.
+  name: SPP IRP 单兵口粮包
+  description: 单兵口粮包，主要由精选罐头食品组成，尽管更重，但事实证明其可靠得多。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/mre_spp.rsi
@@ -182,8 +182,8 @@
 - type: entity
   parent: CMMRE
   id: RMCMREWeYa
-  name: We-Yu brand ration pack
-  description: "A more or less cohesive ration, intended for colonist and corporate security, packed with a medium quality foods with a long shelf life. On the box is the Weyland-Yutani logo, with a slogan surrounding it: WEYLAND-YUTANI. FEEDING THE FUTURE."
+  name: We-Yu牌口粮包
+  description: "一份大致成套的口粮，供殖民者与企业安保人员使用，内含保质期长的中等品质食品。盒子上印有Weyland-Yutani标志，周围环绕着一句标语：“Weyland-Yutani。滋养未来。”"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/mre_weya.rsi
@@ -191,12 +191,12 @@
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: { state: "open" }
-          False: { state: "closed" }
+          true: {state: "open"}
+          false: {state: "closed"}
   - type: Storage
     grid:
     - 0,0,9,1 #5 slots min
-    whitelist: null
+    whitelist:
   - type: StorageFill
     contents:
     - id: RMCMREComponentBonelessPorkRibsWeya
@@ -232,8 +232,8 @@
 - type: entity
   parent: CMMRE
   id: RMCMREWeYaPMC # TODO RMC14 - Custom Contents
-  name: PMC CFR ration
-  description: A Combat Field Ration. Uses similar to UNMC MRE format, but utilizes expensive preserving materials and methods and not less expensive foods, not much different from going to a restaurant. Eating better worlds.
+  name: PMC CFR 口粮
+  description: 一种战斗野战口粮。采用与 UNMC MRE 相似的形式，但使用昂贵的保存材料和方法，而不是较便宜的食物，与去餐厅就餐差别不大。吃出更美好的世界。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/mre_weya_pmc.rsi
@@ -241,8 +241,8 @@
 - type: entity
   parent: CMMRE
   id: RMCMRETSE # TODO RMC14 - Custom Contents
-  name: TSE ORP ration
-  description: An Operation Ration Pack. Uses similar to UNMC MRE format, but utilizes expensive preserving materials and methods and not less expensive meals from TSE cuisine.
+  name: TSE ORP 口粮
+  description: 一种作战口粮包。用途类似于UNMC MRE格式，但采用昂贵的保存材料和方法，而非TSE料理中较便宜的餐食。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/mre_tse.rsi
@@ -250,8 +250,8 @@
 - type: entity
   parent: BaseItem
   id: RMCMRECLF
-  name: wrapped makeshift meal
-  description: Some home cooked or salvaged meal, you do what you must within your capabilities.
+  name: 包好的简易餐
+  description: 一些家常自制或捡拾来的简易餐，你只能在自己的能力范围内做必须做的事。
   components:
   - type: Tag
     tags:
@@ -281,8 +281,8 @@
 - type: entity
   parent: BaseItem
   id: RMCSurvivalRationSPP
-  name: SPP survival ration
-  description: A small compressed package containing a single portion of food you cannot distinguish.
+  name: SPP生存口粮
+  description: 一个小型压缩包装，里面是一份你无法分辨的食物。
   components:
   - type: RMCLoreExaminable
     content: rmc-lore-examinable-spp-survival-ration
@@ -311,14 +311,14 @@
 - type: entity
   parent: RMCBoxMREEmpty
   id: RMCBoxMRETSEEmpty
-  name: box of ORPs (x12)
+  name: 一盒ORPs（12个）
   suffix: TSE
-  description: A box of ORPs. Scrummy!
+  description: 一盒ORPs。真美味！
   components:
   - type: CMItemSlots
     count: 12
     slot:
-      name: ORP
+      name: 氧化还原电位
       whitelist:
         tags:
         - MRE
@@ -333,8 +333,8 @@
 
 - type: entity
   parent: RMCBoxMREEmpty
-  name: box of WEYA-brand Ration Packs (x12)
-  description: A box of Weyland-Yutani Ration Packs. Often found on Company-owned colonies.
+  name: 一盒 WEYA 牌配给包（12 包）
+  description: 一盒 WEYA 牌配给包。常见于公司所属殖民地。
   id: RMCBoxMREWEYA
   suffix: Filled, WEYA
   components:

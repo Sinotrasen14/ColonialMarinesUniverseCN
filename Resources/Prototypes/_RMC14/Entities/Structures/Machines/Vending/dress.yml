@@ -1,15 +1,15 @@
 - type: entity
   parent: ColMarTechBase
   id: RMCAutomatedPersonalUniformCloset
-  name: automated personal uniform closet
-  description: An automated closet hooked up to a colossal storage of standard-issue dress uniform variants.
+  name: 自动个人制服衣柜
+  description: 一个自动衣柜，与一个存放大量标准制式礼服款式的巨大储存库相连。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/dress.rsi
   - type: CMAutomatedVendor
     sections:
     # Auxiliary
-    - name: Auxiliary Support Officer
+    - name: 辅助支援官
       takeAll: RMCDresser
       jobs:
       - CMAuxiliarySupportOfficer
@@ -28,33 +28,33 @@
       - id: RMCHeadCapASO
       - id: RMCHeadBeretASO
       - id: CMHeadBeretTan
-    - name: Intelligence Officer
+    - name: 情报官
       takeAll: RMCDresser
       jobs:
       - CMIntelOfficer
       entries:
       - id: RMCUniformIntel
-    - name: Pilot
+    - name: 飞行员
       takeAll: RMCDresser
       jobs:
       - CMPilotDropship
       - CMPilotGunship
       entries:
       - id: CMJumpsuitPilot
-    - name: Dropship Crew Chief
+    - name: 运输机机组主管
       takeAll: RMCDresser
       jobs:
       - CMDropshipCrewChief
       entries:
       - id: CMJumpsuitDCC
-    - name: Senior Enlisted Advisor
+    - name: 高级士兵顾问
       takeAll: RMCDresser
       jobs:
       - CMSeniorEnlistedAdvisor
       entries:
       - id: CMHeadCapDrill
     # Command
-    - name: Officer
+    - name: 官员
       takeAll: RMCDresser
       ranks:
       - RMCRankWarrantOfficer
@@ -72,7 +72,7 @@
       - id: CMHeadCapPeakedService
       - id: CMHeadCapOfficer
       - id: RMCHeadBeret
-    - name: Commanding Officer
+    - name: 指挥官
       takeAll: RMCDresser
       jobs:
       - CMCommandingOfficer
@@ -91,7 +91,7 @@
       - id: CMHeadBeretCOWhite
       - id: RMCHandsDeluxeMarine
       - id: CMShoesLaceupCommander
-    - name: Commanding Officer (Lieutenant colonel)
+    - name: 指挥官（中校）
       takeAll: RMCDresser
       jobs:
       - CMCommandingOfficer
@@ -100,7 +100,7 @@
       - RMCRankColonel
       entries:
       - id: CMHeadBeretCOLtCol
-    - name: Commanding Officer (Colonel)
+    - name: 指挥官（上校）
       takeAll: RMCDresser
       jobs:
       - CMCommandingOfficer
@@ -108,14 +108,14 @@
       - RMCRankColonel
       entries:
       - id: CMHeadBeretCOCol
-    - name: Ceremonial Weapon
-      choices: { CMCeremonial: 1 }
+    - name: 仪式武器
+      choices: {CMCeremonial: 1}
       jobs:
       - CMCommandingOfficer
       entries:
       - id: RMCScabbardCeremonialFilled
-        name: Commander's Ceremonial Sabre
-    - name: Executive Officer
+        name: 指挥官仪仗佩剑
+    - name: 执行官
       takeAll: RMCDresser
       jobs:
       - CMCommandingOfficer
@@ -125,7 +125,7 @@
       - id: CMCoatXOFormal
       - id: CMHeadCapPeakedFormal
       - id: RMCSunglassesBig
-    - name: Squad Colors
+    - name: 小队颜色
       jobs:
       - CMCommandingOfficer
       - CMExecutiveOfficer
@@ -161,7 +161,7 @@
       - id: CMHeadBandIntel
       # - id: No RMCMaskScarfIntel
     # Engineering
-    - name: Engineering
+    - name: 工程
       takeAll: RMCDresser
       jobs:
       - CMChiefEngineer
@@ -181,26 +181,26 @@
       - id: RMCHardhatBlue
       # </Hats>
       - id: RMCEngiArmband
-    - name: Chief Engineer
+    - name: 总工程师
       takeAll: RMCDresser
       jobs:
       - CMChiefEngineer
       entries:
       - id: CMJumpsuitChiefEngineer
-    - name: Maintenance Technician
+    - name: 维护技术员
       takeAll: RMCDresser
       jobs:
       - CMMaintTech
       entries:
       - id: CMJumpsuitMaintTech
-    - name: Ordnance Technician
+    - name: 军械技师
       takeAll: RMCDresser
       jobs:
       - CMOrdnanceTech
       entries:
       - id: CMJumpsuitOrdnanceTech
     # Medical
-    - name: Medical
+    - name: 医疗
       takeAll: RMCDresser
       jobs:
       - CMCMO
@@ -224,7 +224,7 @@
       # </Caps>
       - id: RMCShoesWhite
       - id: RMCMedArmband
-    - name: Chief Medical Officer
+    - name: 首席医疗官
       takeAll: RMCDresser
       jobs:
       - CMCMO
@@ -232,20 +232,20 @@
       - id: CMJumpsuitCMO
       - id: RMCLabcoatCMO
       - id: CMHeadCapCMO
-    - name: Doctor
+    - name: 博士
       takeAll: RMCDresser
       jobs:
       - CMDoctor
       entries:
       - id: RMCJumpsuitDoctor
       - id: RMCLabcoat
-    - name: Nurse
+    - name: 护士
       takeAll: RMCDresser
       jobs:
       - CMNurse
       entries:
       - id: RMCNurseArmband
-    - name: Researcher
+    - name: 研究员
       takeAll: RMCDresser
       jobs:
       - CMResearcher
@@ -254,7 +254,7 @@
       - id: RMCLabcoatScience
       - id: RMCScienceArmband
     # Military Police
-    - name: Military Police
+    - name: 宪兵
       takeAll: RMCDresser
       jobs:
       - CMChiefMP
@@ -262,7 +262,7 @@
       - CMMilitaryPolice
       entries:
       - id: RMCMPArmband
-    - name: Chief MP
+    - name: 宪兵队长
       takeAll: RMCDresser
       jobs:
       - CMChiefMP
@@ -271,7 +271,7 @@
       - id: CMCoatChiefMP
       - id: RMCHeadCapPeakedCMP
       - id: CMHeadBeretCMP
-    - name: Military Warden
+    - name: 军事典狱长
       takeAll: RMCDresser
       jobs:
       - CMMilitaryWarden
@@ -279,7 +279,7 @@
       - id: CMJumpsuitWarden
       - id: CMCoatWarden
       - id: CMHeadCapWarden
-    - name: Military Police Officer
+    - name: 军事警察
       takeAll: RMCDresser
       jobs:
       - CMMilitaryPolice
@@ -287,7 +287,7 @@
       - id: CMJumpsuitMP
       - id: CMCoatMP
     # Requisitions
-    - name: Requisitions
+    - name: 请购单
       takeAll: RMCDresser
       jobs:
       - CMQuartermaster
@@ -295,7 +295,7 @@
       - CMMessTech
       entries:
       - id: RMCCargoArmband
-    - name: Logistics Officer
+    - name: 后勤官
       takeAll: RMCDresser
       jobs:
       - CMQuartermaster
@@ -304,7 +304,7 @@
       - id: RMCQuartermasterJacket
       - id: RMCHeadCapQuartermaster
       - id: RMCHeadBeretQuartermaster
-    - name: Requisitions Technician
+    - name: 请购技术员
       takeAll: RMCDresser
       jobs:
       - CMCargoTech
@@ -312,7 +312,7 @@
       - id: CMJumpsuitCargoTech
       - id: CMHeadCapCargo
       - id: RMCHeadBeanieCargo
-    - name: Mess Technician
+    - name: 食堂技术员
       takeAll: RMCDresser
       jobs:
       - CMMessTech
@@ -321,7 +321,7 @@
       - id: CMCoatMessTech
       - id: ClothingHeadHatChef
     # Gloves
-    - name: Standard Gloves
+    - name: 标准手套
       entries:
       - id: CMHandsLatex
       - id: RMCHandsLatexMarine
@@ -331,7 +331,7 @@
       - id: CMHandsInsulated
       - id: CMHandsBlackInsulated
     # Glasses
-    - name: Standard Glasses
+    - name: 标准眼镜
       entries:
       - id: RMCEyepatch
       - id: RMCSunglasses
@@ -354,7 +354,7 @@
       - id: RMCGlassesTriMaxBronzeFake
       - id: RMCGlassesTriMaxBlackFake
     # Goggles
-    - name: Standard Goggles
+    - name: 标准护目镜
       entries:
       - id: RMCGogglesBallistic
       - id: RMCGogglesPrescriptionBallistic
@@ -370,7 +370,7 @@
       - id: RMCGogglesBallisticPolarizedOrange
       - id: RMCGogglesM1A1BallisticBlue
     # Masks and scarfs
-    - name: Standard Masks and Scarfs
+    - name: 标准口罩和围巾
       entries:
       - id: RMCMaskBalaclava
       - id: RMCMaskBalaclavaGreen
@@ -408,7 +408,7 @@
       - id: RMCMaskBalaclavaSkullBlue
       - id: RMCMaskBalaclavaSkullBlack
     # Squad
-    - name: Squad Themed Apparel
+    - name: 小队主题服饰
       jobs:
       - CMIntelOfficer
       - CMSquadLeader
@@ -425,7 +425,7 @@
       - id: RMCHeadBandSquad
       - id: RMCMaskScarfSquad
     # Service
-    - name: Service Uniform
+    - name: 服务制服
       takeAll: RMCDresser
       ranks:
       - RMCRankRecruit
@@ -455,7 +455,7 @@
       - id: RMCHeadCapPatrol
       - id: RMCHeadBeretGreen
     # Full Dress
-    - name: Enlisted Dress Uniform
+    - name: 士兵礼服
       takeAll: RMCDresser
       ranks:
       - RMCRankRecruit
@@ -464,7 +464,7 @@
       - RMCRankLanceCorporal
       entries:
       - id: RMCUniformCaseDressEnlisted
-    - name: NCO Dress Uniform
+    - name: 士官礼服
       takeAll: RMCDresser
       ranks:
       - RMCRankCorporal
@@ -477,7 +477,7 @@
       - RMCRankSergeantMajor
       entries:
       - id: RMCUniformCaseDressNCO
-    - name: Officer Dress Uniform
+    - name: 军官礼服
       takeAll: RMCDresser
       ranks:
       - RMCRankWarrantOfficer
@@ -496,8 +496,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCUniformCaseDressEnlisted
-  name: enlisted dress uniform case
-  description: A case containing the dress uniform for an enlisted person.
+  name: 士兵礼服制服箱
+  description: 一个装有士兵礼服制服的箱子。
   components:
   - type: Storage
     maxItemSize: Normal
@@ -517,8 +517,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCUniformCaseDressNCO
-  name: nco dress uniform case
-  description: A case containing the dress uniform for a non-commissioned officer.
+  name: 士官礼服箱
+  description: 装有士官礼服的箱子。
   components:
   - type: Storage
     maxItemSize: Normal
@@ -538,8 +538,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCUniformCaseDressOfficer
-  name: officer dress uniform case
-  description: A case containing the dress uniform for a commissioned officer.
+  name: 军官礼服箱
+  description: 一个装有军官礼服的箱子。
   components:
   - type: Storage
     maxItemSize: Normal
@@ -559,8 +559,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCUniformCaseService
-  name: service uniform case
-  description: A case containing a standard-issue service uniform.
+  name: 制服箱
+  description: 一个装有标准配发制服的箱子。
   components:
   - type: Storage
     maxItemSize: Normal

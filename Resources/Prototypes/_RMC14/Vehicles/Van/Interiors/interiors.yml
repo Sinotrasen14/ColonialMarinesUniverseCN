@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: VehicleVanRoofBase
-  name: van interior roof
-  description: A removable roof section for the van interior.
+  name: 厢式车内部车顶
+  description: 厢式车内部的可拆卸车顶部分。
   placement:
     mode: SnapgridCenter
   components:
@@ -16,7 +16,7 @@
     drawdepth: Overdoors
     layers:
     - state: roof_1
-      map: [ "roof" ]
+      map: ["roof"]
   - type: InteractionTransparency
   - type: RMCSpriteFade
     targetAlpha: 0.35
@@ -29,42 +29,42 @@
 - type: entity
   parent: VehicleVanRoofBase
   id: VehicleVanRoof1
-  name: van roof 1
+  name: 厢式车车顶 1
   components:
   - type: Sprite
     layers:
     - state: roof_1
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   parent: VehicleVanRoofBase
   id: VehicleVanRoof2
-  name: van roof 2
+  name: 厢式车车顶 2
   components:
   - type: Sprite
     layers:
     - state: roof_2
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   parent: VehicleVanRoofBase
   id: VehicleVanRoof3
-  name: van roof 3
+  name: 厢式货车车顶3
   components:
   - type: Sprite
     layers:
     - state: roof_3
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   parent: VehicleVanRoofBase
   id: VehicleVanFrontRoof1
-  name: van front roof 1
+  name: 厢式车前排车顶1
   components:
   - type: Sprite
     layers:
     - state: front_roof_1
-      map: [ "roof" ]
+      map: ["roof"]
   - type: RMCSpriteFade
     targetAlpha: 0.35
     changeRate: 4.0
@@ -76,12 +76,12 @@
 - type: entity
   parent: VehicleVanRoofBase
   id: VehicleVanFrontRoof2
-  name: van front roof 2
+  name: 厢式车前车顶 2
   components:
   - type: Sprite
     layers:
     - state: front_roof_2
-      map: [ "roof" ]
+      map: ["roof"]
   - type: RMCSpriteFade
     targetAlpha: 0.35
     changeRate: 4.0
@@ -93,8 +93,8 @@
 - type: entity
   abstract: true
   id: VehicleVanInteriorBase
-  name: van interior piece
-  description: A decorative interior piece for the van.
+  name: 面包车内饰件
+  description: 用于面包车的装饰性内饰件。
   placement:
     mode: SnapgridCenter
   components:
@@ -123,8 +123,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -140,7 +139,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanFront1
-  name: van front 1
+  name: 厢式货车前部 1
   components:
   - type: Sprite
     state: front_1
@@ -148,7 +147,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanFront2
-  name: van front 2
+  name: 厢式车前部2
   components:
   - type: Sprite
     state: front_2
@@ -156,7 +155,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanFront3
-  name: van front 3
+  name: 厢式货车前部 3
   components:
   - type: Sprite
     state: front_3
@@ -164,7 +163,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanBack1
-  name: van back 1
+  name: 厢式货车后部 1
   components:
   - type: Sprite
     state: back_1
@@ -174,7 +173,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanBack2
-  name: van back 2
+  name: 厢式货车后部 2
   components:
   - type: Sprite
     state: back_2
@@ -184,7 +183,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanBack3
-  name: van back 3
+  name: 厢式货车后部 3
   components:
   - type: Sprite
     state: back_3
@@ -192,7 +191,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanLeft1
-  name: van left 1
+  name: 左侧面包车1
   components:
   - type: Sprite
     state: van_left_1
@@ -200,7 +199,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanLeft2
-  name: van left 2
+  name: 面包车左侧 2
   components:
   - type: Sprite
     state: van_left_2
@@ -208,7 +207,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanLeft3
-  name: van left 3
+  name: 货车左3
   components:
   - type: Sprite
     state: van_left_3
@@ -216,7 +215,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanRight1
-  name: van right 1
+  name: 厢式货车右1
   components:
   - type: Sprite
     state: van_right_1
@@ -224,7 +223,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanRight2
-  name: van right 2
+  name: 厢式车右侧2
   components:
   - type: Sprite
     state: van_right_2
@@ -232,7 +231,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanRight3
-  name: van right 3
+  name: 范赖特3
   components:
   - type: Sprite
     state: van_right_3
@@ -240,7 +239,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanFrontLeft1
-  name: van front left 1
+  name: 厢式货车左前1
   components:
   - type: Sprite
     state: van_front_1
@@ -248,7 +247,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanFrontLeft2
-  name: van front left 2
+  name: 厢式货车左前2
   components:
   - type: Sprite
     state: van_front_2
@@ -256,7 +255,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanFrontRight1
-  name: van front right 1
+  name: 厢式货车右前1
   components:
   - type: Sprite
     state: van_back_1
@@ -264,7 +263,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanFrontRight2
-  name: van front right 2
+  name: 厢式货车右前 2
   components:
   - type: Sprite
     state: van_back_2
@@ -272,7 +271,7 @@
 - type: entity
   parent: VehicleVanInteriorBase
   id: VehicleVanExterior1
-  name: van exterior 1
+  name: 厢式车外观1
   components:
   - type: Sprite
     state: exterior_1
@@ -285,7 +284,7 @@
 - type: entity
   parent: VehicleVanInteriorBase
   id: VehicleVanExterior2
-  name: van exterior 2
+  name: 厢式车外观2
   components:
   - type: Sprite
     state: exterior_2
@@ -298,7 +297,7 @@
 - type: entity
   parent: VehicleVanInteriorBase
   id: VehicleVanExterior3
-  name: van exterior 3
+  name: 厢式车外观 3
   components:
   - type: Sprite
     state: exterior_3
@@ -311,7 +310,7 @@
 - type: entity
   parent: VehicleVanInteriorBase
   id: VehicleVanExterior1Old
-  name: van exterior old 1
+  name: 厢式车外观旧1
   components:
   - type: Sprite
     state: exterior_1_old
@@ -324,7 +323,7 @@
 - type: entity
   parent: VehicleVanInteriorBase
   id: VehicleVanExterior2Old
-  name: van exterior old 2
+  name: 面包车外部旧款2
   components:
   - type: Sprite
     state: exterior_2_old
@@ -337,7 +336,7 @@
 - type: entity
   parent: VehicleVanInteriorBase
   id: VehicleVanExterior3Old
-  name: van exterior old 3
+  name: 面包车外观旧3
   components:
   - type: Sprite
     state: exterior_3_old
@@ -350,7 +349,7 @@
 - type: entity
   parent: VehicleVanRoofBase
   id: VehicleVanBackground1
-  name: van background 1
+  name: 货车背景 1
   components:
   - type: Sprite
     state: background_1
@@ -363,7 +362,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanBackground2
-  name: van background 2
+  name: 厢式货车背景 2
   components:
   - type: Sprite
     drawdepth: Walls
@@ -372,7 +371,7 @@
 - type: entity
   parent: VehicleVanRoofBase
   id: VehicleVanBackground3
-  name: van background 3
+  name: 厢式货车背景 3
   components:
   - type: Sprite
     state: background_3
@@ -381,7 +380,7 @@
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanInteriorDoor
-  name: van interior door
+  name: 厢式车内门
   components:
   - type: Sprite
     state: interior_door
@@ -394,7 +393,7 @@
 - type: entity
   parent: VehicleVanInteriorBase
   id: VehicleVanExteriorDoor
-  name: van exterior door
+  name: 厢式车外门
   components:
   - type: Sprite
     state: exterior_door
@@ -412,7 +411,7 @@
 - type: entity
   parent: VehicleVanInteriorBase
   id: VehicleVanExteriorDoorUnique
-  name: van exterior door unique
+  name: 独特的厢式货车外门
   components:
   - type: Sprite
     state: exterior_door_unique
@@ -430,7 +429,7 @@
 - type: entity
   parent: VehicleVanRoofBase
   id: VehicleVanWindshieldTop
-  name: van windshield top
+  name: 面包车挡风玻璃顶部
   components:
   - type: Sprite
     state: windshield_viewport_top
@@ -442,7 +441,7 @@
 - type: entity
   parent: VehicleVanRoofBase
   id: VehicleVanWindshieldBottom
-  name: van windshield bottom
+  name: 厢式货车挡风玻璃底部
   components:
   - type: Sprite
     state: windshield_viewport_bottom

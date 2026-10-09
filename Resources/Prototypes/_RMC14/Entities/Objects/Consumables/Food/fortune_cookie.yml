@@ -1,15 +1,15 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: CMFortuneCookie
-  name: fortune cookie
-  description: A golden brown fortune cookie. Some say the paper inside even has the ability to predict the future, whatever that means.
+  name: 幸运饼干
+  description: 一块金棕色的幸运饼干。有人说里面的纸条甚至能预知未来，不管那意味着什么。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/fortune_cookie.rsi
     state: base
   - type: Item
     size: Small
-    heldPrefix: null
+    heldPrefix:
   - type: SpawnItemsOnUse
     items:
     - id: CMFortuneCookieCracked
@@ -21,8 +21,8 @@
 - type: entity
   parent: CMFoodBase
   id: CMFortuneCookieCracked
-  name: broken fortune cookie
-  description: A golden brown fortune cookie. Some say the paper inside even has the ability to predict the future, whatever that means.
+  name: 破碎的幸运饼干
+  description: 一个金棕色的幸运饼干。有人说里面的纸条甚至能够预测未来，不管那意味着什么。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/fortune_cookie.rsi
@@ -37,13 +37,13 @@
     solution:
       maxVol: 1
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 1
+      - ReagentId: Nutriment
+        Quantity: 1
 
 - type: entity
   parent: FoodCookieFortune
   id: CMFortuneCookiePaper
-  name: fortune
+  name: 财富
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/fortune_paper.rsi

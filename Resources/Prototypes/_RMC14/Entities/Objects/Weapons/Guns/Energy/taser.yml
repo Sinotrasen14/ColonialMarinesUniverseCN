@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseWeaponBatterySmall
   id: RMCWeaponTaser
-  name: Projectile Disabler Gun
-  description: An advanced stun device capable of firing balls of ionized electricity. Used for nonlethal takedowns. Requires recharge after 8 shots.
+  name: 射弹瘫痪枪
+  description: 一种先进的瘫痪装置，能够发射电离电球。用于非致命制伏。发射8次后需要充能。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Energy/taser.rsi
@@ -14,7 +14,7 @@
       shader: unshaded
   - type: Item
     size: Normal
-    shape: null # needed to disable the parent's weird shape
+    shape:      # needed to disable the parent's weird shape
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser.ogg

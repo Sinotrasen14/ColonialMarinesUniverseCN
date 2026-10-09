@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: CMHyperSleepChamber
-  name: hypersleep chamber
-  description: A large automated capsule with LED displays intended to put anyone inside into 'hypersleep', a form of non-cryogenic statis used on most ships, linked to a long-term hypersleep bay on a lower level.
+  name: 超睡眠舱
+  description: 一个带有LED显示屏的大型自动化舱，旨在让任何进入其中的人进入“超睡眠”，并与下层的一个长期超睡眠舱相连；“超睡眠”是大多数飞船上使用的一种非低温休眠状态。
   components:
   - type: Transform
     anchored: true
@@ -12,7 +12,7 @@
     noRot: true
     layers:
     - state: open
-      map: [ "enum.HyperSleepChamberLayers.Base" ]
+      map: ["enum.HyperSleepChamberLayers.Base"]
   - type: UserInterface
     interfaces:
       enum.CryostorageUIKey.Key:
@@ -23,8 +23,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 200
         mask:
@@ -37,8 +36,7 @@
     containerId: cm-hypersleep
   - type: ContainerContainer
     containers:
-      cm-hypersleep:
-        !type:Container
+      cm-hypersleep: !type:Container
   - type: HyperSleepChamber
   - type: Cryostorage
     containerId: cm-hypersleep
@@ -47,8 +45,8 @@
     visuals:
       enum.CryostorageVisuals.Full:
         enum.HyperSleepChamberLayers.Base:
-          True: { state: closed }
-          False: { state: open }
+          true: {state: closed}
+          false: {state: open}
   - type: InsertBlacklist
     blacklist:
       components:
@@ -103,8 +101,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.55"
         density: 200
         mask:

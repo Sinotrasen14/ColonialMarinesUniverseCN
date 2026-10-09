@@ -1,8 +1,8 @@
 - type: entity
   parent: [RMCBaseSlideMagazineVisuals, CMWeaponPistolBase]
   id: RMCMK80
-  name: VP-78 pistol
-  description: A massive, formidable semi-automatic handgun chambered in 9mm squash-head rounds. A common sight throughout both UA and TWE space, often held by both We-Yu PMC units and corporate executives. This weapon is also undergoing limited field testing as part of the Marines' next generation pistol program. The slide is engraved with the We-Yu logo reminding you who's really in charge.
+  name: VP-78手枪
+  description: 一把巨大、令人生畏的半自动手枪，使用9毫米压扁弹头弹。在UA与TWE的太空疆域中都很常见，常被We-Yu私人军事承包商部队和企业高管持有。该武器也正作为海军陆战队下一代手枪计划的一部分接受有限实地测试。套筒上刻有We-Yu标志，提醒你谁才真正说了算。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Pistols/mk80.rsi
@@ -39,7 +39,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_unload.ogg
         priority: 2
@@ -88,7 +88,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_unload.ogg
         priority: 2
@@ -99,14 +99,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMMagazinePistolMK80
-  name: VP-78 magazine (9mm Squash-Head)
+  name: VP-78 弹匣（9毫米压扁头弹）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - CMMagazinePistolMK80
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgePistol9mm
@@ -128,11 +128,11 @@
   suffix: Empty
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:
 
 - type: entity
   id: RMCCartridgePistol9mmSquashHead
-  name: cartridge (9mm Squash-Head)
+  name: 弹药（9毫米碎甲弹头）
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -145,8 +145,8 @@
 - type: entity # todo rmc14 this is missing a lot of effects, shrapnel, debilitate etc
   parent: CMBulletBase
   id: RCMBulletPistol9mmSquashHead
-  name: bullet (9mm Squash-Head)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（9毫米软头弹）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -167,19 +167,19 @@
 - type: entity
   parent: RMCMK80
   id: AU14L165A1Filled
-  name: L165A1 service pistol
-  description: Service issue pistol to the Royal Marine Commandos. A sleek, modern, semi-automatic handgun specifically designed to chamber specialized 9x19mm explosive squash-head rounds. Based on a Beretta Arms patented design, this Weyland-Yutani modification has earned its place in the hands of the Three World Empire's best soldiers. Can load normal VP-78 magazines with no issue too.
+  name: L165A1制式手枪
+  description: 皇家海军陆战队突击队的制式配发手枪。一款流线型、现代化的半自动手枪，专为装填特制的9×19毫米高爆碎甲弹而设计。基于伯莱塔武器公司的专利设计，这款维兰德-汤谷改装版已在三界帝国最优秀士兵的手中赢得一席之地。也能毫无问题地装填普通VP-78弹匣。
 
 - type: entity
   parent: RMCMK80
   id: AU14L165A1
-  name: L165A1 service pistol
-  description: Service issue pistol to the Royal Marine Commandos. A sleek, modern, semi-automatic handgun specifically designed to chamber specialized 9x19mm explosive squash-head rounds. Based on a Beretta Arms patented design, this Weyland-Yutani modification has earned its place in the hands of the Three World Empire's best soldiers. Can load normal VP-78 magazines with no issue too.
+  name: L165A1制式手枪
+  description: 配发给皇家海军陆战队突击队的制式手枪。一款流线型、现代化的半自动手枪，专为装填特制的9×19毫米爆炸式碎甲弹而设计。以伯莱塔武器公司的专利设计为基础，这款维兰德-汤谷公司的改装型号已在三界帝国最优秀士兵的手中赢得一席之地。也能毫无问题地使用普通VP-78弹匣。
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_unload.ogg
         priority: 2
@@ -190,7 +190,7 @@
 - type: entity
   parent: CMMagazinePistolMK80
   id: AU14MagazinePistolL165A1
-  name: L165A1 magazine (9mm Squash-Head)
+  name: L165A1弹匣（9毫米软头弹）
 
 - type: Tag
   id: CMMagazinePistolMK80

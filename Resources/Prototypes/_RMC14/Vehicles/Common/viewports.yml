@@ -1,8 +1,8 @@
 - type: entity
   parent: VehicleVanInteriorBase
   id: VehicleViewport
-  name: vehicle viewport
-  description: A small viewport for peering outside.
+  name: 载具观察窗
+  description: 一个用于向外观察的小型观察窗。
   placement:
     mode: PlaceFree
   components:
@@ -23,8 +23,8 @@
 - type: entity
   parent: VehicleViewport
   id: VehicleViewportUnanchored
-  name: vehicle viewport (unanchored)
-  description: A small viewport for peering outside.
+  name: 载具观察窗（未锚定）
+  description: 用于向外窥视的小型观察窗
   placement:
     mode: PlaceFree
   components:
@@ -37,8 +37,8 @@
 - type: entity
   parent: VehicleViewport
   id: VehicleViewportSimple
-  name: vehicle viewport (simple)
-  description: A small viewport for peering outside.
+  name: 载具观察窗（简易）
+  description: 一个用于向外窥视的小型观察窗。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/Interiors/general.rsi

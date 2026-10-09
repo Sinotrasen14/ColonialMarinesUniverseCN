@@ -1,8 +1,8 @@
 - type: entity
   parent: [StorageTank, StructureWheeled]
   id: RMCTankReagentEmpty
-  name: reagent tank
-  description: A reagent tank, typically used to store large quantities of chemicals.
+  name: 试剂罐
+  description: 试剂罐，通常用于储存大量化学品。
   suffix: Empty
   components:
   - type: Sprite
@@ -17,8 +17,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         density: 155
         mask:
@@ -29,12 +28,11 @@
         - BulletImpassable
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 2
@@ -46,7 +44,7 @@
   - type: Solution
     id: tank
     solution:
-        maxVol: 1000
+      maxVol: 1000
   - type: Corrodible
     timeToApply: 4
     structure: true
@@ -74,9 +72,9 @@
   - type: Solution
     id: tank
     solution:
-        reagents:
-        - ReagentId: Water
-          Quantity: 1000
+      reagents:
+      - ReagentId: Water
+        Quantity: 1000
   - type: Label
     currentLabel: reagent-name-water
 
@@ -96,8 +94,8 @@
 - type: entity
   parent: RMCTankReagentEmpty
   id: RMCTankReagentFuel
-  name: fuel tank
-  description: A fuel tank, normally used to hold welding fuel. It's painted red with explosive warning labels.
+  name: 燃料罐
+  description: 燃料罐，通常用于盛装焊接燃料。它被涂成红色，并带有爆炸警告标签。
   suffix: Fuel
   components:
   - type: Sprite
@@ -105,13 +103,13 @@
     - state: weldtank
   - type: SolutionContainerVisuals
     maxFillLevels: 0
-    fillBaseName: null
+    fillBaseName:
   - type: Solution
     id: tank
     solution:
-        reagents:
-        - ReagentId: WeldingFuel
-          Quantity: 1000
+      reagents:
+      - ReagentId: WeldingFuel
+        Quantity: 1000
   - type: Explosive
     explosionType: RMC
     totalIntensity: 200
@@ -119,14 +117,13 @@
     tankType: Fuel
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:SolutionExplosionBehavior
         solution: tank
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DamageOnToolInteract
     tools: Welding
     weldingDamage:
@@ -153,9 +150,9 @@
   - type: Solution
     id: tank
     solution:
-        reagents:
-        - ReagentId: CMMeralyne
-          Quantity: 1000
+      reagents:
+      - ReagentId: CMMeralyne
+        Quantity: 1000
   - type: Label
     currentLabel: reagent-name-cmmeralyne
 
@@ -167,9 +164,9 @@
   - type: Solution
     id: tank
     solution:
-        reagents:
-        - ReagentId: CMDermaline
-          Quantity: 1000
+      reagents:
+      - ReagentId: CMDermaline
+        Quantity: 1000
   - type: Label
     currentLabel: reagent-name-cmdermaline
 
@@ -181,9 +178,9 @@
   - type: Solution
     id: tank
     solution:
-        reagents:
-        - ReagentId: RMCPhoron
-          Quantity: 1000
+      reagents:
+      - ReagentId: RMCPhoron
+        Quantity: 1000
   - type: Label
     currentLabel: reagent-name-rmcphoron
 
@@ -195,8 +192,8 @@
   - type: Solution
     id: tank
     solution:
-        reagents:
-        - ReagentId: RMCSulphuricAcid
-          Quantity: 1000
+      reagents:
+      - ReagentId: RMCSulphuricAcid
+        Quantity: 1000
   - type: Label
     currentLabel: reagent-name-rmc-sulphuric-acid

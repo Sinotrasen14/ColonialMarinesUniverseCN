@@ -3,8 +3,8 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechSCTGear
-  name: ColMarTech squad comtech gear rack
-  description: An automated gear rack for combat technicians.
+  name: ColMarTech小队战斗技术员装备架
+  description: 战斗技术员的自动化装备架。
   components:
   - type: AccessReader
     access: [["CMAccessCombatTechPrep"], ["AU14AccessGovforEngineering"], ["AU14AccessOpforEngineering"]]
@@ -14,12 +14,12 @@
     jobs:
     - CMCombatTech
     sections:
-    - name: Engineer Set (Mandatory)
+    - name: 工程师套装（必填）
       takeAll: CMEngineerSet
       entries:
       - id: CMVendorBundleCombatTechnicianEssentials
-    - name: Handheld Defense
-      choices:  { CMHandheldDefense : 1 }
+    - name: 手持防御
+      choices: {CMHandheldDefense: 1}
       entries:
     #    CMJIMAPlantedFlag
       - id: RMCSentry
@@ -27,13 +27,13 @@
       - id: RMCTesla
       - id: RMCSentryFire
       - id: RMCM271A2BruteLauncherRigFilled
-        name: M6H-BRUTE Breaching Launcher
-    - name: Handheld Defense Upgrade
-      choices: { CMHandheldDefenseUpgrade: 1 }
+        name: M6H-BRUTE 破门发射器
+    - name: 手持防御升级
+      choices: {CMHandheldDefenseUpgrade: 1}
       entries:
       - id: RMCEngineeringUpgrade
         points: 15
-    - name: Engineering Supplies
+    - name: 工程用品
       entries:
     #- id: CMAirlockCircuitBoard
     #  points: 2
@@ -46,11 +46,11 @@
       - id: RMCPowerCellHigh
         points: 3
       - id: CMSheetMetal10
-        name: metal x10
+        name: 金属×10
         points: 5
         recommended: true
       - id: CMSheetPlasteel10
-        name: plasteel x10
+        name: 塑钢×10
         points: 7
         recommended: true
       - id: RMCExplosivePlastic
@@ -59,14 +59,14 @@
         points: 5
         recommended: true
       - id: CMSandbagEmpty25
-        name: sandbags x25
+        name: 沙袋×25
         points: 10
         recommended: true
       - id: RMCPowerCellSuper
         points: 10
     #- id: CMES11MobileFuelCanister
     #  points: 4
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
@@ -90,7 +90,7 @@
         points: 5
     # - id: RMCElectroshockGrenadex3
     #   points: 16
-    - name: Ammunition
+    - name: 弹药
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 6
@@ -108,7 +108,7 @@
         points: 6
       - id: CMMagazineRifleM54CExt
         points: 6
-    - name: Sidearm Ammunition
+    - name: 随身武器弹药
       entries:
       - id: RMCMagazinePistolM13Ext
         points: 6
@@ -124,13 +124,13 @@
         points: 3
       - id: RMCMagazinePistolSU6
         points: 6
-    - name: Armors
+    - name: 护甲
       entries:
       - id: CMArmorB12
         points: 24
       - id: CMArmorM4
         points: 16
-    - name: Restricted Firearms
+    - name: 限制类枪支
       entries:
       - id: RMCGunCasePistolMK80
         points: 8
@@ -142,13 +142,13 @@
         points: 24
       - id: RMCML66DCase
         points: 24
-    - name: Clothing Items
+    - name: 服装物品
       entries:
       - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
+        name: 砍刀刀鞘（满）
         points: 6
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
+        name: 砍刀袋（满）
         points: 8
       - id: RMCBackpackRTO
         replaceSlot: back
@@ -161,7 +161,7 @@
         points: 6
       - id: CMBeltUtilityCombat
         points: 15
-    - name: Utilities
+    - name: 实用工具
       entries:
       - id: CMRollerBedSpawnFolded
         points: 5
@@ -175,7 +175,7 @@
         points: 3
       - id: RMCSynthResetKey
         points: 10
-    - name: Binoculars
+    - name: 双筒望远镜
       entries:
       - id: RMCBinoculars
         points: 5
@@ -183,17 +183,17 @@
         points: 10
       - id: RMCLaserDesignator
         points: 15
-    - name: Helmet Optics
+    - name: 头盔光学
       entries:
       - id: RMCVisorMedical
         points: 12
       - id: RMCVisorWelding
         points: 5
-    - name: Pamphlets
+    - name: 小册子
       entries:
       - id: CMPamphletJTAC
         points: 15
-    - name: Radio Keys
+    - name: 无线电钥匙
       entries:
       - id: CMEncryptionKeyIntel
         points: 3
@@ -207,8 +207,8 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechSCTEquipment
-  name: ColMarTech squad comtech equipment rack
-  description: An automated rack hooked up to a colossal storage of combat technician standard-issue equipment.
+  name: ColMarTech 小队战斗技术员装备架
+  description: 一台自动化装备架，连接着一个巨大的战斗技术员制式装备储备库。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
@@ -218,38 +218,38 @@
     jobs:
     - CMCombatTech
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleCombatTechnicianApparel
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
-    - name: Gloves
-      choices: { CMHands: 1 }
+    - name: 手套
+      choices: {CMHands: 1}
       entries:
       - id: CMHandsInsulated
       - id: CMHandsBlackInsulated
-    - name: Helmet
-      choices: { CMHelmet: 1 }
+    - name: 头盔
+      choices: {CMHelmet: 1}
       entries:
       - id: CMArmorHelmetM10Tech
       - id: RMCArmorHelmetM10Welding
-    - name: Armor
-      choices: { CMArmor: 1 }
+    - name: 护甲
+      choices: {CMArmor: 1}
       entries:
       - id: RMCArmorVestSquad
       - id: RMCArmorM3LightVariants
-        name: light armor
+        name: 轻甲
       - id: RMCArmorM3MediumVariants
-        name: medium armor
+        name: 中型护甲
         recommended: true
       - id: RMCArmorM3HeavyVariants
-        name: heavy armor
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+        name: 重甲
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
+        name: 砍刀刀鞘（满）
       - id: CMBackpackMarineTech
         replaceSlot: back
       - id: CMSatchelMarineTech
@@ -262,13 +262,13 @@
       - id: RMCSatchelWelderChestrig
         replaceSlot: back
         recommended: true
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltConstruction
         recommended: true
       - id: CMBeltUtilityFilled
-        name: M276 pattern toolbelt rig (Full)
+        name: M276型工具腰带挂具（完整版）
         # mandatory: true, TODO allow vendors to mark entries as mandatory
       - id: RMCBeltUtilityGeneral
       - id: CMBeltMarine
@@ -279,38 +279,38 @@
       - id: RMCM82FHolster
       - id: RMCM276ShotgunShellLoadingRig
       - id: RMCBeltGrenade
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchConstruction
         recommended: true
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可补充注射器）
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救袋（纱布、软膏）                        # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救包（药片）
         recommended: true
       - id: RMCPouchElectronicsFill
-        name: electronics pouch (Full)
+        name: 电子产品收纳袋（满装）
       - id: RMCPouchExplosive
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: 信号弹袋（满）
       - id: RMCPouchMagazinePistolLarge
       - id: RMCPouchMagazine
       - id: RMCPouchShotgun
       - id: RMCPouchGeneralMedium
       - id: RMCPouchPistol
       - id: RMCPouchToolsFill
-        name: Tools pouch (Full)
+        name: 工具袋（满）
       - id: RMCPouchEngineerKit
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+    - name: 配件
+      choices: {CMAccessories: 1}
       entries:
       - id: RMCToolWebbingSmallFilled
-        name: small tool webbing (Full)
+        name: 小型工具织带（全）
         recommended: true
       - id: CMWebbingBlack
       - id: CMWebbingBrown
@@ -322,8 +322,8 @@
       - id: RMCWebbingDropPouchBlack
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Mask
-      choices: { CMMask: 1 }
+    - name: 面具
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
@@ -332,8 +332,8 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechSCTTools
-  name: ColMarTech squad comTech tools vendor
-  description: A vending machine that stores various extra tools that are useful on the field.
+  name: ColMarTech小队通讯技术工具自动售货机
+  description: 一台储存多种在实地实用的额外工具的自动售货机。
   components:
   - type: AccessReader
     access: [["CMAccessCombatTechPrep"], ["AU14AccessGovforEngineering"], ["AU14AccessOpforEngineering"]]
@@ -341,19 +341,19 @@
     sprite: _RMC14/Structures/Machines/VendingMachines/tool.rsi
     layers:
     - state: "off"
-      map: [ "enum.VendingMachineVisualLayers.Base" ]
+      map: ["enum.VendingMachineVisualLayers.Base"]
     - state: "normal-unshaded"
-      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
   - type: CMAutomatedVendor
     access: ["CMAccessCombatTechPrep", "AU14AccessGovforEngineering", "AU14AccessOpforEngineering"]
     hackable: true
     jobs:
     - CMCombatTech
     sections:
-    - name: Equipment
+    - name: 设备
       entries:
       - id: CMBeltUtility
-        name: utility tool belt
+        name: 多功能工具腰带
         amount: 4
       - id: RMCCableCoil
         amount: 4
@@ -361,7 +361,7 @@
         amount: 2
       - id: RMCEngineerKit
         amount: 2
-    - name: Tools
+    - name: 工具
       entries:
       - id: CMWelder
         amount: 4
@@ -379,10 +379,10 @@
         amount: 2
       - id: RMCLightReplacer
         amount: 4
-    - name: Utility
+    - name: 实用工具
       entries:
       - id: RMCSentryLaptop
-        name: sentry gun network laptop
+        name: 哨兵枪网络笔记本电脑
         amount: 4
       - id: CMUDeployableZLevelLadder
         amount: 4

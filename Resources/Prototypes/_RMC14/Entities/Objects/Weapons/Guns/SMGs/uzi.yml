@@ -1,17 +1,17 @@
 - type: entity
   parent: CMBaseWeaponSMG # TODO RMC14 UZI CAN JAM
-  name: UZI
+  name: 乌兹
   id: RMCWeaponSMGUZI
-  description: Exported to over 90 countries, somehow this relic has managed to end up here. Couldn't be simpler to use.
+  description: 出口到90多个国家，不知怎么的，这件老古董竟然流落到了这里。用起来再简单不过了。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/uzi.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     size: Normal
   - type: Clothing
@@ -45,11 +45,11 @@
     accuracyMultiplierUnwielded: 0.9
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSMGUZI
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -93,15 +93,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSMGUZI
-  name: UZI magazine (9x21mm)
-  description: A 9x21mm magazine for the UZI. Seems pretty small, huh? Anything larger could cause feeding errors.
+  name: UZI弹匣（9×21毫米）
+  description: UZI的9×21毫米弹匣。看起来挺小的，是吧？再大点可能会导致供弹错误。
   components:
   - type: Tag
     tags:
     - CMMagazineSmg
     - RMCMagazineSMGUZI
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridge9x21mmSMGUZI
@@ -124,7 +124,7 @@
 - type: entity
   parent: RMCMagazineSMGUZI
   id: RMCMagazineSMGUZIExt
-  name: UZI Extended magazine (9x21mm)
+  name: UZI 扩容弹匣（9×21mm）
   components:
   - type: BallisticAmmoProvider
     capacity: 32
@@ -143,7 +143,7 @@
 - type: entity
   parent: CMCartridge9mmSMG
   id: RMCCartridge9x21mmSMGUZI
-  description: A 9x21mmcartridge for the UZI submachinegun.
+  description: 一种用于乌兹冲锋枪的9×21毫米枪弹。
   components:
   - type: Tag
     tags:
@@ -155,7 +155,7 @@
 - type: entity
   parent: Bullet10x20mm
   id: Bullet9x21mmUZI
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

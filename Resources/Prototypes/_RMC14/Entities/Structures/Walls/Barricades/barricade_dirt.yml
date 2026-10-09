@@ -1,22 +1,21 @@
 - type: entity
   parent: RMCBarricadeSnow
   id: dirtMound
-  name: dirt mound
-  description: A pile of dirt that can be used as cover. Statistically better than thin air as cover.
+  name: 土堆
+  description: 一堆泥土，可用作掩体。从统计数据来看，作为掩体比稀薄的空气更胜一筹。
   components:
   - type: Sprite
     color: "#4d3e36"
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Effects/Footsteps/hardbarefoot5.ogg
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: XenoToggleChargingDamage
     sound:
       path: /Audio/Effects/Footsteps/hardbarefoot5.ogg #between hardbarefoot5 and carpet4

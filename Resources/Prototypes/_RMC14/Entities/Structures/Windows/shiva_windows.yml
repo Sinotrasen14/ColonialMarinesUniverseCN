@@ -21,8 +21,8 @@
 - type: entity
   parent: CMBaseWindow
   id: CMWindowShiva
-  name: poly-kevlon framed window
-  description: A semi-transparent (not entirely opaque) pane of material set into a poly-kevlon frame. Very smashable.
+  name: 聚凯夫龙框窗户
+  description: 一块半透明（并非完全不透明）的材料板，嵌在聚凯夫龙框中。非常容易砸碎。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/shiva_window.rsi
@@ -39,29 +39,27 @@
   - type: Repairable
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 600 # excessive damage destroys window and frame
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 40
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              CMShardGlass:
-                min: 1
-                max: 1
-          - !type:ChangeConstructionNodeBehavior
-            node: windowFrameShiva
+    - trigger: !type:DamageTrigger
+        damage: 600   # excessive damage destroys window and frame
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: windowFrameShiva
   - type: RMCWallExplosionDeletable
   - type: DestroyedByExplosionType
   - type: Construction
@@ -75,8 +73,8 @@
 - type: entity
   parent: CMBaseWindow
   id: CMWindowShivaIce
-  name: thin ice wall
-  description: It is very thin.
+  name: 薄冰墙
+  description: 它非常薄。
   components:
   - type: Corrodible
     isCorrodible: true

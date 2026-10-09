@@ -12,7 +12,7 @@
     size: Small
   - type: Tag
     tags:
-      - SecBeltEquip
+    - SecBeltEquip
   - type: EmitSoundOnPickup
     sound:
       path: /Audio/Handling/taperecorder_pickup.ogg
@@ -44,22 +44,22 @@
 - type: entity
   parent: RMCUniversalRecorderBase
   id: RMCUniversalRecorderEmpty
-  name: universal recorder
-  description: A device that can record dialogue on magnetic tape and play it back. Good for appeals or witness statements.
+  name: 通用录音机
+  description: 一种可以将对话录制在磁带上并回放的设备。适合用于上诉或证人陈述。
   suffix: Empty
   components:
   - type: ItemSlots
-    allowSmartEquip: False
+    allowSmartEquip: false
   - type: UniversalRecorderRuntime
-    warningSent: False
-    waitingForHissLoop: False
+    warningSent: false
+    waitingForHissLoop: false
     state: Stopped
     recordingStartedAt: 0
     recordingBaseOffset: 0
-    playbackStream: null
-    playbackStartStream: null
+    playbackStream:
+    playbackStartStream:
     playbackIndex: 0
-    pendingSilenceSeconds: null
+    pendingSilenceSeconds:
     nextPrintAt: 0
     nextPlaybackAt: 0
     hissLoopStartAt: 0
@@ -71,21 +71,21 @@
 - type: entity
   parent: RMCUniversalRecorderBase
   id: RMCUniversalRecorder
-  name: universal recorder
-  description: A device that can record dialogue on magnetic tape and play it back. Good for appeals or witness statements.
+  name: 通用录音机
+  description: 一种可在磁带上录制对话并回放的设备。适合用于上诉或证人陈述。
   components:
   - type: ItemSlots
-    allowSmartEquip: False
+    allowSmartEquip: false
   - type: UniversalRecorderRuntime
-    warningSent: False
-    waitingForHissLoop: False
+    warningSent: false
+    waitingForHissLoop: false
     state: Stopped
     recordingStartedAt: 0
     recordingBaseOffset: 0
-    playbackStream: null
-    playbackStartStream: null
+    playbackStream:
+    playbackStartStream:
     playbackIndex: 0
-    pendingSilenceSeconds: null
+    pendingSilenceSeconds:
     nextPrintAt: 0
     nextPlaybackAt: 0
     hissLoopStartAt: 0
@@ -125,8 +125,8 @@
             state: cassette_flip
       enum.UniversalRecorderTapeVisuals.Unspooled:
         enum.UniversalRecorderTapeVisualLayers.Ribbon:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: UniversalRecorderTape
   - type: UserInterface
     interfaces:
@@ -140,20 +140,20 @@
 - type: entity
   parent: RMCUniversalRecorderTapeBase
   id: RMCUniversalRecorderTape
-  name: regulation tape
-  description: A magnetic tape that can hold up to twenty minutes of content on either side.
+  name: 标准磁带
+  description: 一种每面最多可容纳二十分钟内容的磁带。
 
 - type: entity
   parent: RMCBoxCardboard
   id: RMCBoxRegulationTapesEmpty
-  name: box of regulation tapes (x5)
-  description: A box of regulation tapes for universal recorders.
+  name: 一盒调节磁带（x5）
+  description: 一盒用于通用记录器的调节磁带。
   components:
   - type: Sprite
     state: box
   - type: Item
     size: Small
-    shape: null
+    shape:
 
 - type: entity
   parent: RMCBoxRegulationTapesEmpty
@@ -168,7 +168,7 @@
 - type: entity
   parent: RMCBoxRegulationTapesEmpty
   id: RMCBoxRegulationTapesFull
-  name: box of regulation tapes (x7)
+  name: 一盒标准胶带（x7）
   suffix: FullyFilled
   components:
   - type: StorageFill

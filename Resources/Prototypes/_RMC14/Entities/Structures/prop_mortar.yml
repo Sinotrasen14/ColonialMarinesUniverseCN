@@ -1,14 +1,14 @@
 - type: entity
   id: RMCPropMortar
-  name: M402 mortar
+  name: M402迫击炮
   suffix: Prop
-  description: A manual, crew-operated mortar system intended to rain down 80mm goodness on anything it's aimed at. Uses an advanced targeting computer. This one has fired so many rounds the barrel is warped, leaving it non-functional.
+  description: 这是一种手动、由炮组操作的迫击炮系统，旨在向任何瞄准的目标倾泻80毫米的“好东西”。它使用先进的瞄准计算机。这一门已经发射了太多炮弹，炮管已经变形，因此无法使用。
   components:
   - type: Transform
     noRot: false
   - type: Physics
     fixedRotation: false
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/mortar.rsi
     drawdepth: Effects # no idea if there is a cleaner way to do this

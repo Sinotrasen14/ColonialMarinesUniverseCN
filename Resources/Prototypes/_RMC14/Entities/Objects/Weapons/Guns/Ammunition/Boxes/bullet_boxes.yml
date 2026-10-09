@@ -3,8 +3,8 @@
   abstract: true
   parent: BaseItem
   id: RMCBoxBulletsBase
-  name: rifle ammunition box (???)
-  description: An unknown ammunition box. It comes with a leather strap allowing someone to wear it on their back.
+  name: 步枪弹药盒（？？？）
+  description: 一个未知的弹药盒。它配有一条皮质背带，可以让人将其背在背上。
   components:
   - type: Item
     size: Huge
@@ -18,25 +18,25 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#0000ff"
   - type: GenericVisualizer
     visuals:
       enum.BulletBoxLayers.Fill:
         enum.BulletBoxLayers.Fill:
-          Empty: { state: rifle_ammo_full_rounds_base, visible: false }
-          Low: { state: rifle_ammo_low_rounds_base, visible: true }
-          Medium: { state: rifle_ammo_medium_rounds_base, visible: true }
-          High: { state: rifle_ammo_high_rounds_base, visible: true }
-          Full: { state: rifle_ammo_full_rounds_base, visible: true }
+          Empty: {state: rifle_ammo_full_rounds_base, visible: false}
+          Low: {state: rifle_ammo_low_rounds_base, visible: true}
+          Medium: {state: rifle_ammo_medium_rounds_base, visible: true}
+          High: {state: rifle_ammo_high_rounds_base, visible: true}
+          Full: {state: rifle_ammo_full_rounds_base, visible: true}
         enum.BulletBoxLayers2.Fill:
-          Empty: { state: rifle_ammo_full_rounds_color, visible: false }
-          Low: { state: rifle_ammo_low_rounds_color, visible: true }
-          Medium: { state: rifle_ammo_medium_rounds_color, visible: true }
-          High: { state: rifle_ammo_high_rounds_color, visible: true }
-          Full: { state: rifle_ammo_full_rounds_color, visible: true }
+          Empty: {state: rifle_ammo_full_rounds_color, visible: false}
+          Low: {state: rifle_ammo_low_rounds_color, visible: true}
+          Medium: {state: rifle_ammo_medium_rounds_color, visible: true}
+          High: {state: rifle_ammo_high_rounds_color, visible: true}
+          Full: {state: rifle_ammo_full_rounds_color, visible: true}
   - type: Appearance
   - type: RMCUnfoldCardboard
     spawns:
@@ -61,8 +61,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsRifle
-  name: rifle ammunition box (10x24mm)
-  description: A 10x24mm ammunition box. Used to refill M54C MK1, MK2, M4SPR and M54CE2 HAR magazines. It comes with a leather strap allowing someone to wear it on their back.
+  name: 步枪弹药箱（10×24毫米）
+  description: 一个10×24毫米弹药箱。用于补充M54C MK1、MK2、M4SPR和M54CE2 HAR弹匣。它配有皮质背带，可让人背在背上。
   components:
   - type: Sprite
     layers:
@@ -73,9 +73,9 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#ffc000"
   - type: BulletBox
     bulletType: RMCBoxBulletsRifle
@@ -96,8 +96,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsRifleAP
-  name: rifle ammunition box (10x24mm AP)
-  description: A 10x24mm armor-piercing ammunition box. Used to refill M54C MK2, and M4SPR AP magazines. It comes with a leather strap allowing someone to wear it on their back.
+  name: 步枪弹药盒（10x24毫米穿甲弹）
+  description: 一个10x24毫米穿甲弹药盒。用于补充M54C MK2和M4SPR穿甲弹弹匣。它配有一根皮革背带，可让人将其背在背上。
   components:
   - type: Sprite
     layers:
@@ -108,9 +108,9 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#318b11"
   - type: BulletBox
     bulletType: RMCBoxBulletsRifleAP
@@ -130,8 +130,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsRifleIncendiary
-  name: rifle ammunition box (10x24mm Incendiary)
-  description: A 10x24mm incendiary ammunition box. Used to refill M54C MK2, and M4SPR incendiary magazines. It comes with a leather strap allowing someone to wear it on their back.
+  name: 步枪弹药盒（10×24毫米燃烧弹）
+  description: 一个10×24毫米燃烧弹弹药盒。用于补充M54C MK2和M4SPR燃烧弹弹匣。随附一条皮革背带，可让人将其背在背上。
   components:
   - type: Sprite
     layers:
@@ -142,9 +142,9 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#318b11"
   - type: BulletBox
     bulletType: RMCBoxBulletsRifleIncendiary
@@ -153,8 +153,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsSMG
-  name: SMG ammunition box (10x20mm)
-  description: A 10x20mm ammunition box. Used to refill M63 HV and extended magazines. It comes with a leather strap allowing someone to wear it on their back.
+  name: 冲锋枪弹药盒（10x20毫米）
+  description: 一个10x20毫米弹药盒。用于补充M63 HV和加长弹匣。它配有皮革背带，可让人背在背上。
   components:
   - type: Sprite
     layers:
@@ -165,9 +165,9 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#727e90"
   - type: BulletBox
     bulletType: RMCBoxBulletsSMG
@@ -188,8 +188,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsSMGAP
-  name: SMG ammunition box (10x20mm AP)
-  description: A 10x20mm armor-piercing ammunition box. Used to refill M63 AP magazines. It comes with a leather strap allowing someone to wear it on their back.
+  name: 冲锋枪弹药箱（10×20毫米穿甲弹）
+  description: 一个10×20毫米穿甲弹药箱。用于为M63穿甲弹弹匣重新装填弹药。它配有一条皮革背带，可让人将其背在背上。
   components:
   - type: Sprite
     layers:
@@ -200,9 +200,9 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#318b11"
   - type: BulletBox
     bulletType: RMCBoxBulletsSMGAP
@@ -223,8 +223,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsSmartGun
-  name: smart gun ammunition box (10x30mm)
-  description: A 10x30mm ammunition box. Used to refill Smart Gun magazines. It comes with a leather strap allowing someone to wear it on their back.
+  name: 智能枪弹药箱（10×30毫米）
+  description: 一个10×30毫米弹药箱。用于为智能枪弹匣补充弹药。随附一条皮革背带，可让人将其背在背上。
   components:
   - type: Sprite
     layers:
@@ -235,9 +235,9 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#ffc000"
   - type: BulletBox
     bulletType: RMCBoxBulletsSmartGun
@@ -255,8 +255,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsPistol
-  name: pistol ammunition box (10x20mm-APC)
-  description: A 10x20mm-APC ammunition box. Used to refill M13 regular, extended and drum magazines. It comes with a leather strap allowing to wear it on the back.
+  name: 手枪弹药盒（10x20mm-APC）
+  description: 一个10x20mm-APC弹药盒。用于补充M13标准弹匣、加长弹匣和弹鼓。随附一条皮革背带，可将其背在背后。
   components:
   - type: Sprite
     layers:
@@ -267,9 +267,9 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#704506"
   - type: BulletBox
     bulletType: RMCBoxBulletsPistol
@@ -292,8 +292,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsPistolAP
-  name: pistol ammunition box (10x20mm-APC (AP))
-  description: A 10x20mm-APC armor-piercing ammunition box. Used to refill M13 regular, extended and drum AP magazines. It comes with a leather strap allowing to wear it on the back.
+  name: 手枪弹药盒（10x20毫米-APC（穿甲弹））
+  description: 一个10x20毫米-APC穿甲弹药盒。用于重新装填M13常规、加长和弹鼓穿甲弹匣。它配有一条皮革背带，可将其背在背上。
   components:
   - type: Sprite
     layers:
@@ -304,9 +304,9 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#0A4306"
   - type: BulletBox
     bulletType: RMCBoxBulletsPistolAP
@@ -331,8 +331,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsRifleL90
-  name: rifle ammunition box (7x43mm)
-  description: A 7x43mm ammunition box. Used to refill L90/91 magazines. It comes with a leather strap allowing someone to wear it on their back.
+  name: 步枪弹药箱（7×43毫米）
+  description: 一个7×43毫米弹药箱。用于补充L90/91弹匣。配有皮革背带，可让人将其背在背上。
   components:
   - type: Sprite
     layers:
@@ -343,9 +343,9 @@
     - state: rifle_box_generic
       color: "#7c4c1b"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#ffc000"
   - type: BulletBox
     bulletType: RMCBoxBulletsRifleL90
@@ -363,8 +363,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsRifleL90AP
-  name: rifle ammunition box (7x43mm AP)
-  description: A 7x43mm armor-piercing ammunition box. Used to refill L90/91 AP magazines. It comes with a leather strap allowing someone to wear it on their back.
+  name: 步枪弹药箱（7x43毫米穿甲弹）
+  description: 一个7x43毫米穿甲弹药箱。用于补充L90/91穿甲弹匣。它配有一条皮带，可让人将其背在背上。
   components:
   - type: Sprite
     layers:
@@ -375,9 +375,9 @@
     - state: rifle_box_generic
       color: "#7c4c1b"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#318b11"
   - type: BulletBox
     bulletType: RMCBoxBulletsRifleL90AP
@@ -395,8 +395,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsRifleL24
-  name: rifle ammunition box (8.88x51mm)
-  description: An 8.88x51mm ammunition box. Used to refill L24 and L64A3 magazines. It comes with a leather strap allowing someone to wear it on their back. # TODO RMC14 rename and implement L64A3
+  name: 步枪弹药箱（8.88×51毫米）
+  description: 一个8.88×51毫米弹药箱。用于重新装填L24和L64A3弹匣。它配有一根皮质背带，可让人将其背在背上。                                                                                         # TODO RMC14 rename and implement L64A3
   components:
   - type: Sprite
     layers:
@@ -407,9 +407,9 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#ffc000"
   - type: BulletBox
     bulletType: RMCBoxBulletsRifleL24
@@ -427,8 +427,8 @@
 - type: entity
   parent: RMCBoxBulletsBase
   id: RMCBoxBulletsRifleL24AP
-  name: rifle ammunition box (8.88x51mm AP)
-  description: An 8.88x51mm ammunition box. Used to refill L24 and L64A3 AP magazines. It comes with a leather strap allowing someone to wear it on their back.
+  name: 步枪弹药箱（8.88×51毫米穿甲弹）
+  description: 一个8.88×51毫米弹药箱。用于补充L24和L64A3穿甲弹弹匣。配有皮革背带，可将其背在背上。
   components:
   - type: Sprite
     layers:
@@ -439,9 +439,9 @@
     - state: rifle_box_generic
       color: "#ffcb26"
     - state: rifle_ammo_full_rounds_base
-      map: [ "enum.BulletBoxLayers.Fill" ]
+      map: ["enum.BulletBoxLayers.Fill"]
     - state: rifle_ammo_full_rounds_color
-      map: [ "enum.BulletBoxLayers2.Fill" ]
+      map: ["enum.BulletBoxLayers2.Fill"]
       color: "#318b11"
   - type: BulletBox
     bulletType: RMCBoxBulletsRifleL24AP

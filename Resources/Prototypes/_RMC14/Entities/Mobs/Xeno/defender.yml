@@ -8,8 +8,8 @@
   - RMCXenoCommendationReceiver
   - RMCXenoMobCollision
   id: CMXenoDefenderBase
-  name: Defender
-  description: An alien with an armored crest.
+  name: 防御者 | Defender
+  description: 一个长有装甲头冠的外星人。 | An alien with an armored crest.
   components:
   - type: GhostRole
     name: cmu-job-name-xeno-unknown
@@ -95,17 +95,16 @@
         Slash: 12
         Piercing: 12
     soundHit:
-        collection: Punch
-        params:
-          variation: 0.15
+      collection: Punch
+      params:
+        variation: 0.15
     hitAnimationId: RMCEffectSlam
   - type: Tackle
     max: 4
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 185
         mask:
@@ -115,8 +114,7 @@
         layer:
         - MobLayer
       fix2:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 185
         layer:

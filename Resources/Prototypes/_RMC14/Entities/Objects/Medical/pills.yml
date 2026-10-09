@@ -1,14 +1,14 @@
 - type: entity
-  name: pill
+  name: 药丸
   parent: BaseItem
   id: CMPill
-  description: "A pill."
+  description: "一粒药丸。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Chemistry/pills.rsi
     layers:
     - state: pill1
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: Item
     size: Tiny
     sprite: _RMC14/Objects/Chemistry/pills.rsi
@@ -28,14 +28,14 @@
     edible: Pill
     delay: 0
     forceFeedDelay: 1
-    transferAmount: null
+    transferAmount:
   - type: BadFood
   - type: FlavorProfile
     ignoreReagents: []
   - type: Solution
     id: food
     solution:
-        maxVol: 60
+      maxVol: 60
   - type: SolutionSpiker
     sourceSolution: food
   - type: Extractable
@@ -59,14 +59,14 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: CMBicaridine
-          Quantity: 15
+      maxVol: 15
+      reagents:
+      - ReagentId: CMBicaridine
+        Quantity: 15
   - type: Sprite
     layers:
     - state: pill3
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: cm-pill-contents-bicaridine
 
@@ -77,14 +77,14 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: CMDexalin
-          Quantity: 15
+      maxVol: 15
+      reagents:
+      - ReagentId: CMDexalin
+        Quantity: 15
   - type: Sprite
     layers:
     - state: pill16
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: cm-pill-contents-dexalin
 
@@ -95,14 +95,14 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: CMDylovene
-          Quantity: 15
+      maxVol: 15
+      reagents:
+      - ReagentId: CMDylovene
+        Quantity: 15
   - type: Sprite
     layers:
     - state: pill13
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: cm-pill-contents-dylovene
 
@@ -113,14 +113,14 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: CMInaprovaline
-          Quantity: 15
+      maxVol: 15
+      reagents:
+      - ReagentId: CMInaprovaline
+        Quantity: 15
   - type: Sprite
     layers:
     - state: pill1
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: cm-pill-contents-inaprovaline
 
@@ -131,14 +131,14 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: CMKelotane
-          Quantity: 15
+      maxVol: 15
+      reagents:
+      - ReagentId: CMKelotane
+        Quantity: 15
   - type: Sprite
     layers:
     - state: pill5
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: cm-pill-contents-kelotane
 
@@ -149,14 +149,14 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: CMTricordrazine
-          Quantity: 15
+      maxVol: 15
+      reagents:
+      - ReagentId: CMTricordrazine
+        Quantity: 15
   - type: Sprite
     layers:
     - state: pill5
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: cm-pill-contents-tricordrazine
 
@@ -167,14 +167,14 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 10
-        reagents:
-        - ReagentId: RMCRussianRed
-          Quantity: 10
+      maxVol: 10
+      reagents:
+      - ReagentId: RMCRussianRed
+        Quantity: 10
   - type: Sprite
     layers:
     - state: pill12
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: rmc-pill-contents-russianred
 
@@ -186,16 +186,16 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: CMBicaridine
-          Quantity: 7.5
-        - ReagentId: CMMeralyne
-          Quantity: 7.5
+      maxVol: 15
+      reagents:
+      - ReagentId: CMBicaridine
+        Quantity: 7.5
+      - ReagentId: CMMeralyne
+        Quantity: 7.5
   - type: Sprite
     layers:
     - state: pill4
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: rmc-pill-contents-meralyne-bicaridine
 
@@ -207,16 +207,16 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: CMKelotane
-          Quantity: 7.5
-        - ReagentId: CMDermaline
-          Quantity: 7.5
+      maxVol: 15
+      reagents:
+      - ReagentId: CMKelotane
+        Quantity: 7.5
+      - ReagentId: CMDermaline
+        Quantity: 7.5
   - type: Sprite
     layers:
     - state: pill7
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: rmc-pill-contents-kelotane-dermaline
 
@@ -227,14 +227,14 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 1
-        reagents:
-        - ReagentId: CMImidazoline
-          Quantity: 1
+      maxVol: 1
+      reagents:
+      - ReagentId: CMImidazoline
+        Quantity: 1
   - type: Sprite
     layers:
     - state: pill3
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: rmc-pill-contents-imidazoline
 
@@ -248,33 +248,33 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: RMCAntiZed
-          Quantity: 15
+      maxVol: 15
+      reagents:
+      - ReagentId: RMCAntiZed
+        Quantity: 15
   - type: Sprite
     layers:
     - state: pill16
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: rmc-pill-contents-antized
 
 - type: entity
   parent: CMPill
   id: RMCPillCyanide
-  description: A cyanide pill. Don't swallow this!
+  description: 一颗氰化物药丸。不要吞下这个！
   components:
   - type: Solution
     id: food
     solution:
-        maxVol: 50
-        reagents:
-        - ReagentId: CMUCyanide
-          Quantity: 50
+      maxVol: 50
+      reagents:
+      - ReagentId: CMUCyanide
+        Quantity: 50
   - type: Sprite
     layers:
     - state: pill16
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ReagentExaminationRequiresSkill
     skills:
       RMCSkillMedical: 0
@@ -289,14 +289,14 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 10
-        reagents:
-        - ReagentId: CMDexalinPlus
-          Quantity: 10
+      maxVol: 10
+      reagents:
+      - ReagentId: CMDexalinPlus
+        Quantity: 10
   - type: Sprite
     layers:
     - state: pill16
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: rmc-pill-contents-dexalin-plus
 
@@ -307,15 +307,15 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 15
-        reagents:
-        - ReagentId: RMCIron
-          Quantity: 10
-        - ReagentId: Nutriment
-          Quantity: 5
+      maxVol: 15
+      reagents:
+      - ReagentId: RMCIron
+        Quantity: 10
+      - ReagentId: Nutriment
+        Quantity: 5
   - type: Sprite
     layers:
     - state: pill14
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: ExamineRequiresSkill
     skilledExamine: rmc-pill-contents-iron

@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: GeigerCounter
   id: RMCGeigerCounter
-  name: geiger counter
-  description: A hand-held tool used to detect radiation, measured in Sieverts. A staple of CBRN crews and nuclear engineers, this model appears to be made by Weyland-Yutani.
+  name: 盖革计数器
+  description: 一种用于检测辐射的手持工具，以希沃特为计量单位。作为化生放核应急人员和核工程师的常用装备，该型号似乎由维兰德-汤谷公司制造。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/geiger_counter.rsi
@@ -19,8 +19,8 @@
     visuals:
       enum.GeigerVisuals.IsEnabled:
         GeigerLayers.Screen:
-          True: { visible: True }
-          False: { visible: False }
+          true: {visible: true}
+          false: {visible: false}
       enum.GeigerVisuals.DangerLevel:
         GeigerLayers.Screen:
           None: {state: geiger_on_idle}

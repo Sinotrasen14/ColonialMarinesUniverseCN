@@ -1,9 +1,9 @@
-﻿# Bases
+# Bases
 
 - type: entity
   id: RMCMarkerSoundBase
   abstract: true
-  name: sound marker
+  name: 声音标记 | sound marker
   placement:
     mode: SnapgridCenter
   components:
@@ -27,7 +27,7 @@
   parent: RMCMarkerSoundBase
   id: RMCMarkerSoundAmbientBase
   abstract: true
-  name: ambient sound marker
+  name: 环境音标记 | ambient sound marker
   components:
   - type: AmbientSound
     enabled: true
@@ -40,7 +40,7 @@
   parent: RMCMarkerSoundBase
   id: RMCMarkerSoundSingleBase
   abstract: true
-  name: non-loop sound marker
+  name: 非循环声音标记 | non-loop sound marker
   components:
   - type: RMCEmitSoundOnSpawn
 

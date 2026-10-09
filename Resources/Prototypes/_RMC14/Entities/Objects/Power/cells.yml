@@ -1,15 +1,15 @@
 - type: entity
   parent: BaseItem
   id: RMCPowerCell
-  name: power cell
-  description: A rechargeable electrochemical power cell.
+  name: 动力电池
+  description: 一种可充电的电化学动力电池。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Power/cells.rsi
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: cell
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -20,7 +20,7 @@
   - type: Riggable
   - type: Tag
     tags:
-      - PowerCell
+    - PowerCell
   - type: PhysicalComposition
     materialComposition:
       CMSteel: 700
@@ -31,14 +31,14 @@
 - type: entity
   parent: RMCPowerCell
   id: RMCPowerCellCrap
-  name: We-Yu rechargeable mini-battery
-  description: Cheap, throwaway batteries provided by the Weyland-Yutani Corporation. The 'rechargeable' feature was added to be more marketable to independent colonists hell-bent on 'using it till it disintegrates', a common sentiment on the frontier.
+  name: 维-尤可充电迷你电池
+  description: 廉价、一次性的电池，由维-尤公司提供。加入“可充电”功能只是为了更好推销给那些一心要“用到它彻底散架”的独立殖民者，这是边疆地区的一种普遍心态。
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: mini-cell
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -60,7 +60,7 @@
 - type: entity
   parent: RMCPowerCell
   id: RMCPowerCellAPC
-  name: heavy-duty power cell
+  name: 重型动力电池
   components:
   - type: Battery
     maxCharge: 5000
@@ -86,13 +86,13 @@
 - type: entity
   parent: RMCPowerCell
   id: RMCPowerCellHigh
-  name: high-capacity power cell
+  name: 高容量电池
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: hcell
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -121,13 +121,13 @@
 - type: entity
   parent: RMCPowerCell
   id: RMCPowerCellSuper
-  name: super-capacity power cell
+  name: 超大容量能量电池
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: scell
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -149,13 +149,13 @@
 - type: entity
   parent: RMCPowerCell
   id: RMCPowerCellHyper
-  name: hyper-capacity power cell
+  name: 超大容量动力电池
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: hpcell
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -177,13 +177,13 @@
 - type: entity
   parent: RMCPowerCell
   id: RMCPowerCellInfinite
-  name: infinite-capacity power cell
+  name: 无限容量能量电池
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: icell
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -199,14 +199,14 @@
 - type: entity
   parent: RMCPowerCell
   id: RMCPowerCellPotato
-  name: potato battery
-  description: A rechargeable starch-based power cell.
+  name: 土豆电池
+  description: 一种可充电的淀粉基电池。
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: potato_cell
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -216,12 +216,12 @@
 - type: entity
   parent: RMCPowerCell
   id: RMCPowerCellSmartgun
-  name: smart gun DV9 battery
-  description: "A standard-issue 9-volt lithium dry-cell battery, most commonly used within the UNMC to power smartguns. Per the manual, one battery is good for up to 50000 rounds and plugs directly into the smartgun's power receptacle, which is only compatible with this type of battery. Various auxiliary modes usually bring the round count far lower. While this cell is incompatible with most standard electrical system, it can be charged by common rechargers in a pinch. UNMC smartgunners often guard them jealously."
+  name: 智能枪 DV9 电池
+  description: "标准配发的9伏锂干电池，在UNMC中最常用于为智能枪供电。根据手册，一节电池最多可支持50000发，并直接插入智能枪的电源插口，而该插口仅兼容此类电池。各种辅助模式通常会使可支持的发数远低于此。虽然这种电池与大多数标准电气系统不兼容，但在紧急情况下可用普通充电器充电。UNMC的智能枪手常常会十分珍视地保管着它们。"
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: smartguncell
   - type: Battery
     maxCharge: 10000
@@ -234,37 +234,37 @@
   id: RMCPowerCellSlot
   abstract: true
   components:
-    - type: ContainerContainer
-      containers:
-        cell_slot: !type:ContainerSlot { }
-    - type: PowerCellSlot
-      cellSlotId: cell_slot
-    - type: ItemSlots
-      slots:
-        cell_slot:
-          name: power-cell-slot-component-slot-name-default
-          startingItem: RMCPowerCell
+  - type: ContainerContainer
+    containers:
+      cell_slot: !type:ContainerSlot {}
+  - type: PowerCellSlot
+    cellSlotId: cell_slot
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: RMCPowerCell
 
 - type: entity
   parent: RMCPowerCellSlot
   id: RMCPowerCellSlotUnremovable
   abstract: true
   components:
-    - type: ItemSlots
-      slots:
-        cell_slot:
-          name: power-cell-slot-component-slot-name-default
-          startingItem: RMCPowerCell
-          locked: true
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: RMCPowerCell
+        locked: true
 
 - type: entity
   parent: RMCPowerCellSlot
   id: RMCPowerCellSlotUnremovableSuper
   abstract: true
   components:
-    - type: ItemSlots
-      slots:
-        cell_slot:
-          name: power-cell-slot-component-slot-name-default
-          startingItem: RMCPowerCellSuper
-          locked: true
+  - type: ItemSlots
+    slots:
+      cell_slot:
+        name: power-cell-slot-component-slot-name-default
+        startingItem: RMCPowerCellSuper
+        locked: true

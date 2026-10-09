@@ -1,8 +1,8 @@
 - type: entity
   id: CMChemMaster
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
-  name: ChemMaster 3000
-  description: An industrial grade chemical manipulator with pill and bottle production included.
+  parent: [BaseMachinePowered, ConstructibleMachine]
+  name: 化学大师 3000
+  description: 工业级化学操控器，包含药丸和瓶子生产。
   placement:
     mode: SnapgridCenter
   components:
@@ -21,8 +21,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.4,0.25,0.4"
         density: 190
         mask:
@@ -30,11 +29,10 @@
         layer:
         - MachineLayer
   - type: AccessReader
-    access: [ [ "CMAccessCMO" ], [ "CMAccessChemistry" ], [ "CMAccessMedPrep" ] ]
+    access: [["CMAccessCMO"], ["CMAccessChemistry"], ["CMAccessMedPrep"]]
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -43,7 +41,7 @@
       - !type:ChangeConstructionNodeBehavior
         node: machineFrame
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: ActivatableUI
     key: enum.RMCChemMasterUI.Key
   - type: ActivatableUIRequiresPower
@@ -55,8 +53,8 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: WiresPanel
   - type: Machine
     board: CMCircuitboardChemMaster
@@ -100,8 +98,8 @@
 - type: entity
   parent: CMChemMaster
   id: RMCChemMasterIndustrial
-  name: industrial chemical mixer
-  description: An industrial grade chemical manipulator.
+  name: 工业化工混合器
+  description: 工业级化学机械手。
   placement:
     mode: SnapgridCenter
   components:
@@ -116,11 +114,11 @@
     sprite: _RMC14/Structures/Machines/Science/industry_dispenser.rsi
     state: industry_mixer0
   - type: AccessReader
-    access: [ [ "CMAccessOT" ] ]
+    access: [["CMAccessOT"]]
   - type: Machine
     board: RMCCircuitboardIndustrialChemMaster
   - type: RequiresSkill
     skills:
       RMCSkillEngineer: 3
   - type: RMCChemMaster
-    pillBottleWhitelist: { } # No making pills allowed.
+    pillBottleWhitelist: {}  # No making pills allowed.

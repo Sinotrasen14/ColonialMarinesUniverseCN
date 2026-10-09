@@ -15,8 +15,8 @@
 - type: entity
   parent: RMCAPCHardpointBase
   id: RMCAPCWheel # CMU14
-  name: APC wheel
-  description: A reinforced APC wheel.
+  name: 装甲运兵车车轮
+  description: 加固的装甲运兵车车轮。
   components:
   - type: Sprite
     state: tires
@@ -38,15 +38,15 @@
 - type: entity
   parent: RMCAPCHardpointBase
   id: RMCAPCFrontCannon
-  name: APC frontal cannon
-  description: A fixed forward cannon for an APC hardpoint.
+  name: APC 正面机炮
+  description: 用于 APC 挂载点的固定前向机炮。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: front_cannon
   - type: HardpointItem
@@ -89,15 +89,15 @@
 - type: entity
   parent: RMCAPCHardpointBase
   id: RMCAPCDualCannon
-  name: APC dual cannon
-  description: A dual cannon turret for an APC hardpoint.
+  name: 装甲运兵车双联炮
+  description: 用于装甲运兵车挂载点的双联炮塔。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: dual_cannon
   - type: HardpointItem
@@ -145,8 +145,8 @@
 - type: entity
   parent: RMCAPCHardpointBase
   id: RMCAPCCommsRelay
-  name: APC comms relay
-  description: A communications relay array for APC support slots.
+  name: APC通信中继器
+  description: 用于APC支援槽位的通信中继阵列。
   components:
   - type: Sprite
     state: comms_relay
@@ -167,15 +167,15 @@
 - type: entity
   parent: RMCAPCHardpointBase
   id: RMCAPCFlareLauncher
-  name: APC flare launcher
-  description: A flare launcher hardpoint for APC support slots.
+  name: APC 照明弹发射器
+  description: 用于APC支援槽位的照明弹发射器挂载点。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: flare_launcher
   - type: HardpointItem
@@ -226,8 +226,8 @@
 - type: entity
   parent: RMCAPCHardpointBase
   id: RMCAPCFreightStorage
-  name: APC freight storage
-  description: A cargo pod for APC support slots.
+  name: APC货运存储
+  description: 用于APC支援槽位的货运舱。
   components:
   - type: Sprite
     state: freighter_storage
@@ -247,8 +247,8 @@
   parent: BaseItem
   id: VehicleAPCM56FPWPortGunBase
   abstract: true
-  name: APC port gun
-  description: A mounted M56 FPW port gun.
+  name: 装甲运兵车射击孔机枪
+  description: 一挺车载M56 FPW射击孔机枪。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/Interiors/apc.rsi
@@ -277,7 +277,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 杂志
         startingItem: RMCMagazineSmartGun
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
@@ -288,7 +288,7 @@
 - type: entity
   parent: VehicleAPCM56FPWPortGunBase
   id: VehicleAPCM56FPWPortGunRight
-  name: APC port gun (starboard)
+  name: APC左舷炮（右舷）
   components:
   - type: HardpointIntegrity
     integrity: 100
@@ -304,7 +304,7 @@
 - type: entity
   parent: VehicleAPCM56FPWPortGunBase
   id: VehicleAPCM56FPWPortGunLeft
-  name: APC port gun (port)
+  name: APC 左舷炮（左舷）
   components:
   - type: HardpointIntegrity
     integrity: 100

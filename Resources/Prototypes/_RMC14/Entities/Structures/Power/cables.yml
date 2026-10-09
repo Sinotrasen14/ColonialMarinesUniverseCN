@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: CableHV
   id: RMCCableBase
@@ -15,11 +15,11 @@
 - type: entity
   parent: RMCCableBase
   id: RMCCableHeavy
-  name: large power cable
-  description: This cable is tough. It cannot be cut with simple hand tools.
+  name: 大型电力电缆
+  description: 这种电缆很坚韧。它无法用简单的手动工具切断。
   components:
   - type: Cable
-    cuttingQuality: null
+    cuttingQuality:
   - type: Sprite
     sprite: _RMC14/Structures/Power/cables.rsi
     state: cable_0
@@ -30,12 +30,12 @@
 - type: entity
   parent: RMCCableTerminal
   id: RMCCableBlue
-  name: power cable
+  name: 电力电缆
   suffix: Blue
-  description: This cable is tough. It cannot be cut with simple hand tools.
+  description: 这种电缆很坚韧。无法用简单的手动工具将其切断。
   components:
   - type: Cable
-    cuttingQuality: null
+    cuttingQuality:
   - type: Sprite
     sprite: _RMC14/Structures/Power/cables_thin.rsi
     state: intactblue
@@ -46,7 +46,7 @@
 - type: entity
   parent: RMCCableBlue
   id: RMCCableRed
-  name: power cable
+  name: 电力电缆
   suffix: Red
   components:
   - type: Sprite
@@ -59,7 +59,7 @@
 - type: entity
   parent: RMCCableBlue
   id: RMCCableYellow
-  name: power cable
+  name: 电力电缆
   suffix: Yellow
   components:
   - type: Sprite

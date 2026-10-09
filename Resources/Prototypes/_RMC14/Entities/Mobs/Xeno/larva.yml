@@ -4,7 +4,7 @@
   - CMXenoFlammable
   - RMCXenoVentCrawler
   id: CMXenoLarva
-  name: Larva
+  name: 幼虫 | Larva
   components:
   - type: GuideHelp
     guides:
@@ -15,7 +15,7 @@
     sprite: CMU14/Mobs/Xenos/Larva/larva.rsi # AU14-Edit
     layers:
     - state: alive
-      map: [ "enum.XenoVisualLayers.Base" ]
+      map: ["enum.XenoVisualLayers.Base"]
     - sprite: CMU14/Mobs/Xenonids/bloody_larva.rsi
       state: alive_bloody
       map: ["bloody"]
@@ -71,8 +71,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.2
         density: 185
         mask:
@@ -90,7 +89,7 @@
   - type: RestrictEvolveOffWeeds
   - type: Speech
     speechSounds: XenonidLarva
-    allowedEmotes: [ "XenoRoar" ]
+    allowedEmotes: ["XenoRoar"]
   - type: RMCSize
     size: Small
   - type: TacticalMapIcon
@@ -128,10 +127,10 @@
 - type: entity
   id: RMCXenoEmbryo
   parent: BaseItem
-  name: alien embryo
-  description: All slimy and yucky.
+  name: 外星胚胎 | alien embryo
+  description: 黏糊糊的，真恶心。 | All slimy and yucky.
   components:
-    - type: Sprite
-      sprite: CMU14/Mobs/Xenos/Larva/larva.rsi # AU14-Edit
-      noRot: true
-      state: embryo
+  - type: Sprite
+    sprite: CMU14/Mobs/Xenos/Larva/larva.rsi   # AU14-Edit
+    noRot: true
+    state: embryo

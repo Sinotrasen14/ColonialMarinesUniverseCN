@@ -1,8 +1,8 @@
 - type: entity
   parent: BasePlushie
   id: CMPlushieBase
-  name: generic plushie
-  description: perfectly generic
+  name: 通用毛绒玩具
+  description: 完全通用
   suffix: RMC
   components:
   - type: Sprite
@@ -85,8 +85,8 @@
 - type: entity
   parent: RMCPlushieSharkBlue
   id: RMCShorkMedicalOfficer
-  name: Shork medical officer plushie
-  description: The Shork Medical Officer is disappointed to see you in surgery yet again. Maybe you should take better care of yourself?
+  name: Shork医疗官毛绒玩偶
+  description: Shork医疗官很失望地看到你又进了手术室。也许你该更好地照顾自己？
   suffix: RMC
   components:
   - type: Sprite
@@ -102,8 +102,8 @@
 - type: entity
   parent: CMPlushieBase
   id: CMPlushieFarwa
-  name: Farwa plush
-  description: A Farwa plush doll. It's soft and comforting!
+  name: 法尔瓦毛绒玩偶
+  description: 法尔瓦毛绒玩偶。它柔软又舒适！
   components:
   - type: Sprite
     state: farwa
@@ -111,8 +111,8 @@
 - type: entity
   parent: CMPlushieBase
   id: CMPlushieBarricade
-  name: plushie barricade
-  description: Great for squeezing whenever you're scared. Or lightly hurt. Or in any other situation.
+  name: 毛绒玩具路障
+  description: 害怕的时候、有点疼的时候，或者任何其他情况下，都很适合捏一捏。
   components:
   - type: Sprite
     state: barricade
@@ -120,8 +120,8 @@
 - type: entity
   parent: CMPlushieBase
   id: CMPlushieBee
-  name: bee plush
-  description: A cute toy that awakens the warrior spirit in the most reserved marine.
+  name: 蜜蜂毛绒玩具
+  description: 一个可爱的玩具，能唤醒最内敛的陆战队员心中的战士精神。
   components:
   - type: Sprite
     state: bee
@@ -129,8 +129,8 @@
 - type: entity
   parent: CMPlushieBase
   id: CMPlushieRock
-  name: rock plush
-  description: It says it is a plush on the tag, at least.
+  name: 石头毛绒玩具
+  description: 至少标签上写着它是毛绒玩具。
   components:
   - type: Sprite
     state: rock
@@ -138,13 +138,13 @@
 - type: entity
   parent: CMPlushieBase
   id: CMPlushieTherapy
-  name: therapy plush
-  description: A therapeutic toy to assist marines in recovering from mental and behavioral disorders after experiencing the trauma of battles.
+  name: 疗愈毛绒玩具
+  description: 一种帮助海军陆战队员在经历战斗创伤后从精神和行为障碍中恢复的疗愈玩具。
   components:
   - type: Sprite
     layers:
     - state: therapy
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: RandomSprite
     available:
     - enum.DamageStateVisualLayers.Base:
@@ -153,8 +153,8 @@
 - type: entity
   parent: CMPlushieBase
   id: CMPlushieRunnerBeret
-  name: XX therapy plush
-  description: Don't be sad! Be glad (that you're alive)!
+  name: XX 疗愈毛绒玩具
+  description: 别难过！要开心（庆幸你还活着）！
   components:
   - type: Sprite
     state: runner_beret
@@ -163,8 +163,8 @@
 - type: entity
   parent: CMPlushieBase
   id: RCMPlushieRounyLizard
-  name: silly rouny plushie
-  description: A silly rouny plushie produced by the UNMC to reduce stress in marines, shown to be highly effective when thrown into walls.
+  name: 傻乎乎的Rouny毛绒玩偶
+  description: 由UNMC生产的一款傻乎乎的Rouny毛绒玩偶，用于缓解海军陆战队员的压力，事实证明，将它扔到墙上极为有效。
   components:
   - type: Sprite
     state: rouny_plushie
@@ -172,8 +172,8 @@
 - type: entity
   parent: RMCPlushieBaseAdmin
   id: RMCPlushieAlec
-  name: conspicuous plush
-  description: You can almost feel spite emanating from it. On it's back is a small tag listing the several cheap and hypoallergenic textiles it's made of. At the very bottom is the name of the maker, Drake Industries.
+  name: 显眼的毛绒玩具
+  description: 你几乎能感觉到它散发出的怨毒。它的背上有一个小标签，上面列出了制作它所用的几种廉价且低致敏性的织物。最下方是制造商的名字，德雷克工业公司。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Fun/alec_plushie.rsi
@@ -190,8 +190,8 @@
 - type: entity
   parent: RMCPlushieBaseAdmin
   id: RMCPlushieNyx
-  name: accursed plush
-  description: It's rumoured if you ask this plushie for metal, your soul gets trapped in the pit. It's also rumoured that this plushie was made with 99% cotton.
+  name: 被诅咒的毛绒玩偶
+  description: 有传闻说，如果你向这个毛绒玩偶索要金属，你的灵魂就会被困在坑里。还有传闻说，这个毛绒玩偶由99%的棉制成。
   components:
   - type: Sprite
     state: plushie_moth
@@ -218,8 +218,8 @@
 - type: entity
   parent: RMCPlushieNyx
   id: RMCPlushieMotivationalMoth
-  name: motivational marine moth
-  description: A soft, fluffy little marine companion for those who just need a little motivation to make it across the finish line. You can do it, yesyes! It chitters happily when squeezed!
+  name: 励志海洋蛾
+  description: 一个柔软、毛茸茸的海洋小伴侣，献给那些只需一点动力就能冲过终点线的人。你能做到的，没错没错！被捏时，它会开心地吱吱叫！
   suffix: DO NOT MAP
   components:
   - type: Sprite
@@ -228,8 +228,8 @@
 - type: entity
   parent: RMCPlushieBaseAdmin
   id: RMCPlushieXippy
-  name: xippy
-  description: An accursed agent of chaos and violence.
+  name: 希皮
+  description: 一个受诅咒的混沌与暴力的代理人。
   components:
   - type: Sprite
     state: xippy
@@ -252,8 +252,8 @@
 - type: entity
   parent: CMPlushieBase
   id: RMCPlushieGnarpGnarp
-  name: gnarp plush
-  description: gnarp gnarp.
+  name: gnarp毛绒玩具
+  description: gnarp gnarp。
   components:
   - type: Sprite
     state: gnarp
@@ -261,9 +261,9 @@
 - type: entity
   parent: RMCPlushieGnarpGnarp
   id: RMCPlushieGnarpGnarpAlt
-  name: gnarp plush
+  name: gnarp毛绒玩具
   suffix: Alternate
-  description: gnarp gnarp.
+  description: gnarp gnarp。
   components:
   - type: Sprite
     state: gnarp_alt
@@ -271,8 +271,8 @@
 - type: entity
   parent: RMCPlushieBaseAdmin
   id: RMCPlushieProvost
-  name: intimidating plush
-  description: An icon for all avid tax payers and law enforcement personnel - Don't let anyone know that this plushie is actually behind on their taxes.
+  name: 令人生畏的毛绒玩偶
+  description: 所有热心纳税人和执法人员的标志——别让任何人知道这个毛绒玩偶其实拖欠税款。
   components:
   - type: Sprite
     state: provost
@@ -304,8 +304,8 @@
 - type: entity
   parent: RMCPlushieBaseAdmin
   id: RMCPlushieCrow
-  name: crow plushie
-  description: hello cro
+  name: 乌鸦毛绒玩具
+  description: 你好，乌鸦
   components:
   - type: Sprite
     state: crow

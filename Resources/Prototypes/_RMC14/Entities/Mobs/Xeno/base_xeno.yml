@@ -25,7 +25,7 @@
   id: CMXenoDeathGasp
   name: chat-emote-name-deathgasp
   icon: Interface/Emotes/deathgasp.png
-  chatMessages: [ "cm-xeno-death-gasp" ]
+  chatMessages: ["cm-xeno-death-gasp"]
 
 # TODO RMC14 xenos should bleed and hurt nearby marines when damaged
 - type: entity
@@ -149,8 +149,8 @@
     horizontalRotation: 0
   - type: Reactive
     groups:
-      Flammable: [ Touch ]
-      Extinguish: [ Touch ]
+      Flammable: [Touch]
+      Extinguish: [Touch]
   - type: FireVisuals
     sprite: _RMC14/Mobs/Effects/on_fire_xeno.rsi
     normalState: simple_onfire
@@ -163,15 +163,15 @@
     noRot: true
     drawdepth: Mobs
     layers:
-    - map: [ "enum.XenoVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base"]
       state: alive
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
+    - map: ["enum.RMCDamageVisualLayers.Base"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
+    - map: ["enum.XenoInhandVisualLayers.Left"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
+    - map: ["enum.XenoInhandVisualLayers.Right"]
       visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
+    - map: ["enum.RMCShieldVisuals.Base"]
       sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
   - type: Spottable
@@ -184,8 +184,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 185
         mask:
@@ -195,8 +194,7 @@
         layer:
         - MobLayer
       fix2:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.40
         density: 0
         layer:
@@ -214,7 +212,7 @@
       Head: RMCHeadXeno
       Heart: RMCOrganXenoHeart
     relationships:
-      Head: [ Heart ]
+      Head: [Heart]
   - type: Xeno
   - type: VehicleDamageMultiplier
   - type: XenoRegen
@@ -259,7 +257,7 @@
   - type: Pullable
   - type: Speech
     speechVerb: Xeno
-    allowedEmotes: [ "Growl", "Hiss", "XenoRoar", "XenoHelp", "XenoTailSwipe" ]
+    allowedEmotes: ["Growl", "Hiss", "XenoRoar", "XenoHelp", "XenoTailSwipe"]
   - type: GhostOnMove
     mustBeDead: true
   - type: WhitelistPickup
@@ -303,18 +301,18 @@
   - type: StandingState
   - type: SlowOnPull
     slowdowns:
-      - multiplier: 0.6
-        whitelist:
-          components:
-          - Marine
-      - multiplier: 0.665
-        whitelist:
-          components:
-          - XenoLight
-      - multiplier: 0.445
-        whitelist:
-          components:
-          - XenoHeavy
+    - multiplier: 0.6
+      whitelist:
+        components:
+        - Marine
+    - multiplier: 0.665
+      whitelist:
+        components:
+        - XenoLight
+    - multiplier: 0.445
+      whitelist:
+        components:
+        - XenoHeavy
   - type: PullWhitelist
     whitelist:
       components:
@@ -429,7 +427,7 @@
     xenoVisible: true
   - type: UserIFF
     factions:
-     -  FactionXeno
+    - FactionXeno
 
 - type: entity
   abstract: true
@@ -438,7 +436,7 @@
   - type: Prying
     pryPowered: true
     speedModifier: 2.7
-    useSound: null
+    useSound:
 
 - type: entity
   abstract: true
@@ -529,9 +527,9 @@
       - CMUXenoRestraints
   - type: GiveHands
     hands:
-    - name: Right Hand
+    - name: 右手 | Right Hand
       location: Right
-    - name: Left Hand
+    - name: 左手 | Left Hand
       location: Left
   - type: WhitelistPickup
     whitelist:

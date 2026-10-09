@@ -1,18 +1,18 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: RMCMotionDetector
-  name: motion detector
-  description: A device that detects movement, but ignores marines. # Can also be used to scan a vehicle interior from outside, but accuracy of such scanning is low and there is no way to differentiate friends from foes. TODO RMC14
+  name: 运动探测器
+  description: 一种探测运动，但会忽略陆战队员的装置。                                  # Can also be used to scan a vehicle interior from outside, but accuracy of such scanning is low and there is no way to differentiate friends from foes. TODO RMC14
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/motion_detector.rsi
     layers:
     - state: detector
     - state: detector_long_switch
-      map: [ "switch" ]
+      map: ["switch"]
     - state: detector_on_0
       visible: false
-      map: [ "number" ]
+      map: ["number"]
     state: detector
   - type: Item
     size: Normal
@@ -26,21 +26,21 @@
     visuals:
       enum.MotionDetectorLayer.Setting:
         switch:
-          Short: { state: detector_short_switch }
-          Long: { state: detector_long_switch }
+          Short: {state: detector_short_switch}
+          Long: {state: detector_long_switch}
       enum.MotionDetectorLayer.Number:
         number:
-          -1: { visible: false }
-          0: { state: detector_on_0, visible: true }
-          1: { state: detector_on_1, visible: true }
-          2: { state: detector_on_2, visible: true }
-          3: { state: detector_on_3, visible: true }
-          4: { state: detector_on_4, visible: true }
-          5: { state: detector_on_5, visible: true }
-          6: { state: detector_on_6, visible: true }
-          7: { state: detector_on_7, visible: true }
-          8: { state: detector_on_8, visible: true }
-          9: { state: detector_on_9, visible: true }
+          -1: {visible: false}
+          0: {state: detector_on_0, visible: true}
+          1: {state: detector_on_1, visible: true}
+          2: {state: detector_on_2, visible: true}
+          3: {state: detector_on_3, visible: true}
+          4: {state: detector_on_4, visible: true}
+          5: {state: detector_on_5, visible: true}
+          6: {state: detector_on_6, visible: true}
+          7: {state: detector_on_7, visible: true}
+          8: {state: detector_on_8, visible: true}
+          9: {state: detector_on_9, visible: true}
   - type: Tag
     tags:
     - RMCDetector
@@ -52,18 +52,18 @@
 - type: entity
   parent: RMCMotionDetector
   id: RMCMotionDetectorCompact
-  name: M717 pocket motion detector
-  description: This prototype motion detector sacrifices versatility, having only the long-range mode, for size, being so small it can even fit in pockets.
+  name: M717 袖珍运动探测器
+  description: 这款原型运动探测器为了尺寸牺牲了多功能性，仅有远程模式，小到甚至可以放进口袋。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/compact_motion_detector.rsi
     layers:
     - state: detector
     - state: detector_long_switch
-      map: [ "switch" ]
+      map: ["switch"]
     - state: detector_on_0
       visible: false
-      map: [ "number" ]
+      map: ["number"]
     state: detector
   - type: Item
     size: Small
@@ -80,15 +80,15 @@
 - type: entity
   parent: RMCMotionDetector
   id: AU14MotionDetectorRMC
-  name: L107 motion detector
-  description: A military grade, hand-held motion detection device that can penetrate most anything and has an approximate range of 28 meters. Can also be utilized to scan vehicle interiors. This one is programmed to operate with RMC IFF.
+  name: L107运动探测器
+  description: 一种军用级手持式运动探测设备，可穿透大多数物体，探测范围约为28米。也可用于扫描车辆内部。该设备已编程为与RMC IFF配合运行。
 
 - type: entity
   parent: RMCMotionDetectorCompact
   id: AU14MotionDetectorCompactRMC
-  name: L717 pocket motion detector
-  description: This prototype motion detector sacrifices versatility, having only the long-range mode, for size, being so small it can even fit in pockets. This one is programmed to operate with RMC IFF.
-  
+  name: L717袖珍运动探测器
+  description: 这款原型运动探测器为了小巧的体积，牺牲了多功能性，只保留远程模式，小到甚至可以放进口袋。这一台被编程为与RMC IFF配合运作。
+
 
 - type: Tag
   id: RMCDetector

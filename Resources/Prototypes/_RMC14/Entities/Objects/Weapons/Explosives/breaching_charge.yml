@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: RMCExplosiveBreachingCharge
-  name: breaching charge # TODO RMC14 disable with multitool?
-  description: An explosive device used to break into areas while protecting the user from the blast as well as deploying deadly shrapnel on the other side.
+  name: 破门炸药             # TODO RMC14 disable with multitool?
+  description: 一种用于破门闯入区域的爆炸装置，既能保护使用者免受爆炸冲击，又能在另一侧散布致命破片。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Explosives/satchel_charge.rsi
@@ -35,8 +35,8 @@
     visuals:
       enum.Trigger.TriggerVisuals.VisualState:
         base:
-          Primed: { state: active }
-          Unprimed: { state: icon }
+          Primed: {state: active}
+          Unprimed: {state: icon}
   - type: RMCExplosiveDelete
   - type: Tag
     tags:
@@ -48,8 +48,8 @@
 - type: entity
   parent: RMCExplosiveBreachingCharge
   id: RMCExplosiveBreachingChargeRubber
-  name: X17 riot charge
-  description: An explosive device used to break into areas while protecting the user from the blast. Unlike the standard breaching charge, the X17 deploys a cone spray of rubber pellets to incapacitate rather than kill.
+  name: X17防暴炸药
+  description: 一种用于破开区域进入其中，同时保护使用者免受爆炸伤害的爆炸装置。与标准破门炸药不同，X17会呈锥形喷射橡胶弹丸，使目标丧失行动能力而非致死。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Explosives/satchel_charge_rubber.rsi
@@ -63,7 +63,7 @@
 - type: entity
   parent: RMCExplosiveBreachingChargeRubber
   id: RMCExplosiveBreachingChargeRubberTSEPA
-  name: TSEPA X17 riot charge
+  name: TSEPA X17 防暴电击弹
   components:
   - type: RequiresSkill
     skills:
@@ -73,8 +73,8 @@
 - type: entity
   parent: RMCExplosiveBreachingCharge
   id: RMCExplosivePlastic
-  name: plastic explosives
-  description: Used to put holes in specific areas without too much extra hole.
+  name: 塑性炸药
+  description: 用于在特定区域炸出孔洞，而不会产生过多额外的孔洞。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Explosives/plastic_explosives.rsi

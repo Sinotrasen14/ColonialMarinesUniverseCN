@@ -1,16 +1,16 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: RMCWeaponRifleL24
-  name: L23 assault rifle
-  description: Pulse action 8.8x51mm caseless assault rifle of the Royal Marine Commandos, personal friend of any Marine Commando. Comes with semi-auto and burst-fire firemodes and features an integrated 30mm grenade launcher that can hold two grenades on backup with one in the chamber.
+  name: L23突击步枪
+  description: 皇家海军陆战队突击队的脉冲式8.8×51毫米无壳突击步枪，每一名皇家海军陆战队突击队员的私人挚友。具备半自动和点射射击模式，并配有内置30毫米榴弹发射器，可备用携带两枚榴弹，另有一枚已上膛。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/RMC/L23.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: CMU14/Weapons/Guns/RMC/L23.rsi
   - type: Gun
@@ -53,11 +53,11 @@
     falloffMultiplier: 0
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL24
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -121,15 +121,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleL24
-  name: L23 Magazine (8.88x51mm)
-  description: "A magazine of 8.88x51mm rounds for use in the L23 rifle."
+  name: L23弹匣（8.88×51毫米）
+  description: "用于L23步枪的8.88×51毫米弹药弹匣。"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleL24
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifleL24
@@ -148,8 +148,8 @@
 - type: entity
   parent: RMCMagazineRifleL24
   id: RMCMagazineRifleL24AP
-  description: "A magazine of armor-piercing 8.88x51mm rounds for use in the L23 rifle."
-  name: L23 AP Magazine (8.88x51mm)
+  description: "用于L23步枪的8.88×51毫米穿甲弹弹匣。"
+  name: L23穿甲弹匣（8.88×51毫米）
   suffix: AP
   components:
   - type: Tag
@@ -166,9 +166,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/L24.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#1F951F"
   - type: Appearance
@@ -177,92 +177,92 @@
 - type: entity
   parent: RMCMagazineRifleL24
   id: RMCMagazineRifleL24HEAP
-  description: "A magazine of high-explosive armor-piercing 8.88x51mm rounds for use in the L23 rifle."
-  name: L23 HEAP Magazine (8.88x51mm)
+  description: "用于L23步枪的高爆穿甲8.88×51毫米弹药弹匣。"
+  name: L23高爆穿甲弹匣（8.88×51毫米）
   suffix: HEAP
   components:
-    - type: Tag
+  - type: Tag
+    tags:
+    - CMMagazineRifle
+    - RMCMagazineRifleL24
+    - RMCMagazineRifleL24HEAP
+  - type: BallisticAmmoProvider
+    whitelist:
       tags:
-      - CMMagazineRifle
-      - RMCMagazineRifleL24
-      - RMCMagazineRifleL24HEAP
-    - type: BallisticAmmoProvider
-      whitelist:
-        tags:
-        - RMCCartridgeRifleL24HEAP
-      proto: RMCCartridgeRifleL24HEAP
-    - type: Sprite
-      sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/L24.rsi
-      layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: mag-1
-        map: [ "enum.GunVisualLayers.Mag" ]
-      - state: ammo_band
-        color: "#9C9A19"
-    - type: Appearance
+      - RMCCartridgeRifleL24HEAP
+    proto: RMCCartridgeRifleL24HEAP
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/L24.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: ammo_band
+      color: "#9C9A19"
+  - type: Appearance
 
 - type: entity
   parent: RMCMagazineRifleL24
   id: RMCMagazineRifleL24Incendiary
-  description: "A magazine of incendiary 8.88x51mm rounds for use in the L23 rifle."
-  name: L23 Incendiary Magazine (8.88x51mm)
+  description: "用于L23步枪的8.88x51毫米燃烧弹弹匣。"
+  name: L23燃烧弹弹匣（8.88×51毫米）
   suffix: Incendiary
   components:
-    - type: Tag
+  - type: Tag
+    tags:
+    - CMMagazineRifle
+    - RMCMagazineRifleL24
+    - RMCMagazineRifleL24Incendiary
+  - type: BallisticAmmoProvider
+    whitelist:
       tags:
-      - CMMagazineRifle
-      - RMCMagazineRifleL24
-      - RMCMagazineRifleL24Incendiary
-    - type: BallisticAmmoProvider
-      whitelist:
-        tags:
-        - RMCCartridgeRifleL24Incendiary
-      proto: RMCCartridgeRifleL24Incendiary
-    - type: Sprite
-      sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/L24.rsi
-      layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: mag-1
-        map: [ "enum.GunVisualLayers.Mag" ]
-      - state: ammo_band
-        color: "#771A10"
-    - type: Appearance
+      - RMCCartridgeRifleL24Incendiary
+    proto: RMCCartridgeRifleL24Incendiary
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/L24.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: ammo_band
+      color: "#771A10"
+  - type: Appearance
 
 - type: entity
   parent: RMCMagazineRifleL24
   id: RMCMagazineRifleL24Extended
-  description: "A high-capacity drum magazine of 8.88x51mm rounds for use in the L23 rifle."
-  name: L23 Extended Magazine (8.88x51mm)
+  description: "L23步枪使用的8.88x51mm高容量弹鼓。"
+  name: L23 扩容弹匣（8.88x51mm）
   suffix: Extended
   components:
-    - type: Tag
+  - type: Tag
+    tags:
+    - CMMagazineRifle
+    - RMCMagazineRifleL24
+    - RMCMagazineRifleL24Extended
+  - type: BallisticAmmoProvider
+    whitelist:
       tags:
-      - CMMagazineRifle
-      - RMCMagazineRifleL24
-      - RMCMagazineRifleL24Extended
-    - type: BallisticAmmoProvider
-      whitelist:
-        tags:
-        - RMCCartridgeRifleL24
-      proto: RMCCartridgeRifleL24
-      capacity: 65
-    - type: Sprite
-      sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/extendedL24.rsi
-      layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: mag-1
-        map: [ "enum.GunVisualLayers.Mag" ]
-    - type: Appearance
-    - type: RefillableByBulletBox
-      bulletType: CMUBoxBulletsRifleL23
+      - RMCCartridgeRifleL24
+    proto: RMCCartridgeRifleL24
+    capacity: 65
+  - type: Sprite
+    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/extendedL24.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-1
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Appearance
+  - type: RefillableByBulletBox
+    bulletType: CMUBoxBulletsRifleL23
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleL24
-  name: Cartridge (8.88x51mm)
-  description: A 8.88x51mm rifle cartridge
+  name: 枪弹（8.88×51毫米）
+  description: 一发8.88×51毫米步枪弹
   components:
   - type: Tag
     tags:
@@ -275,8 +275,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleL24AP
-  name: AP Cartridge (8.88x51mm)
-  description: A 8.88x51mm AP rifle cartridge
+  name: 穿甲弹（8.88x51mm）
+  description: 一发8.88x51mm穿甲步枪弹
   components:
   - type: Tag
     tags:
@@ -289,8 +289,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleL24HEAP
-  name: HEAP Cartridge (8.88x51mm)
-  description: A 8.88x51mm HEAP rifle cartridge
+  name: 高爆穿甲弹（8.88×51毫米）
+  description: 一种8.88×51毫米高爆穿甲步枪弹
   components:
   - type: Tag
     tags:
@@ -303,8 +303,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleL24Incendiary
-  name: Incendiary Cartridge (8.88x51mm)
-  description: A 8.88x51mm Incendiary rifle cartridge
+  name: 燃烧弹（8.88×51mm）
+  description: 一发8.88×51毫米燃烧步枪弹
   components:
   - type: Tag
     tags:
@@ -317,7 +317,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: BulletRifle888x51mmAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -329,36 +329,36 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: BulletRifle888x51mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
-       types:
-         Piercing: 50
+      types:
+        Piercing: 50
   - type: CMArmorPiercing
     amount: 10
 
 - type: entity
   parent: BulletRifle10x24mm
   id: BulletRifle888x51mmHEAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
-       types:
-         Piercing: 65
+      types:
+        Piercing: 65
   - type: CMArmorPiercing
     amount: 50
 
 - type: entity
   parent: BulletRifle10x24mm
   id: BulletRifle888x51mmIncendiary
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
-       types:
-         Piercing: 40
+      types:
+        Piercing: 40
   - type: CMArmorPiercing
     amount: 10
   - type: IgniteOnProjectileHit

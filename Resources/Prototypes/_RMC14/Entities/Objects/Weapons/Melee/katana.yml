@@ -1,8 +1,8 @@
 - type: entity
   parent: AU14ToolMachete
   id: RMCKatana
-  name: katana
-  description: A finely made Japanese sword, with a well sharpened blade. The blade has been filed to a molecular edge, and is extremely deadly. Commonly found in the hands of mercenaries and yakuza.
+  name: 武士刀
+  description: 一把制作精良的日本刀，刀刃打磨锋利。刀锋已被研磨至分子级，极其致命。常见于雇佣兵和黑帮手中。
   suffix: RMC14
   components:
   - type: Tag
@@ -27,8 +27,8 @@
 - type: entity
   parent: RMCKatana
   id: RMCKatanaDull
-  name: replica katana
-  description: A cheap knock-off commonly found in regular knife stores. Can still do some damage.
+  name: 仿制武士刀
+  description: 常见于普通刀具店的廉价仿制品。仍能造成一定伤害。
   components:
   - type: MeleeWeapon
     damage:
@@ -38,8 +38,8 @@
 - type: entity
   parent: RMCKatana
   id: RMCKatanaSharp
-  name: absurdly sharp katana
-  description: "That's it. I'm sick of all this \"Masterwork Bastard Sword\" bullshit that's going on in RMC-14 right now. Katanas deserve much better than that. Much, much better than that.\n\nI should know what I'm talking about. I myself commissioned a genuine katana in Japan for 2,400,000 Yen (that's about $20,000) and have been practicing with it for almost 2 years now. I can even cut slabs of solid steel with my katana.\n\nJapanese smiths spend years working on a single katana and fold it up to a million times to produce the finest blades known to mankind.\n\nKatanas are thrice as sharp as European swords and thrice as hard for that matter too. Anything a longsword can cut through, a katana can cut through better. I'm pretty sure a katana could easily bisect a knight wearing full plate with a simple vertical slash.\n\nEver wonder why medieval Europe never bothered conquering Japan? That's right, they were too scared to fight the disciplined Samurai and their katanas of destruction. Even in World War II, American soldiers targeted the men with the katanas first because their killing power was feared and respected."
+  name: 锋利得离谱的武士刀
+  description: "够了。我受够了现在RMC-14里到处搞的“大师级杂种剑”这种狗屁。武士刀配得上比这好得多的东西。远比这好，好得多得多。\n\n我清楚自己在说什么。我本人曾在日本花240万日元（约合2万美元）订制了一把真正的武士刀，到现在已经用它练习将近两年了。我甚至能用我的武士刀切开实心钢板。\n\n日本刀匠会花数年时间打造一把武士刀，并把它折叠上百万次，以造出人类已知最精良的刀刃。\n\n武士刀比欧洲剑锋利三倍，硬度同样也是三倍。长剑能砍穿的东西，武士刀都能砍得更利落。我很确定，武士刀只需一个简单的垂直劈砍，就能轻松把穿着全身板甲的骑士劈成两半。\n\n有没有想过，为什么中世纪欧洲从没费心去征服日本？没错，他们太害怕与纪律严明的武士以及他们那毁灭性的武士刀交手。即便在第二次世界大战中，美国士兵也会优先瞄准那些手持武士刀的人，因为他们的杀伤力令人畏惧，也令人敬重。"
   suffix: Admeme #TODO Kill delay, Katana dueling, Cuts 8 times(per swing?), and other stuff in 13's code.
   components:
   - type: MeleeWeapon

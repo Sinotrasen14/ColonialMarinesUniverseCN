@@ -3,22 +3,22 @@
 - type: material
   id: RMCPlastic
   stackEntity: RMCSheetPlastic
-  name: materials-plastic
-  icon: { sprite: _RMC14/Objects/Materials/Sheets/plastic.rsi, state: plastic }
+  name: 材料-塑料
+  icon: {sprite: _RMC14/Objects/Materials/Sheets/plastic.rsi, state: plastic}
   price: 0.01
 
 - type: stack
   id: RMCPlastic
-  name: plastic
-  icon: { sprite: _RMC14/Objects/Materials/Sheets/plastic.rsi, state: plastic }
+  name: 塑料
+  icon: {sprite: _RMC14/Objects/Materials/Sheets/plastic.rsi, state: plastic}
   spawn: RMCSheetPlastic
   maxCount: 50
 
 - type: entity
   parent: SheetOtherBase
   id: RMCSheetPlastic
-  name: plastic
-  description: Plastic is a synthetic polymer, manufactured from organic and inorganic components into a malleable and light fabric. It can be used for a wide range of objects.
+  name: 塑料
+  description: 塑料是一种合成聚合物，由有机和无机成分制成，可形成可塑且轻便的材料。它可用于多种物品。
   suffix: Full
   components:
   - type: Sprite
@@ -36,12 +36,12 @@
     size: Normal
   - type: RMCConstructionItem
     buildable:
-      - RMCCratePlasticBuild
-      - RMCAshtrayBuild
-      - RMCDividerConstruction
-      - RMCForkPlasticBuild
-      - RMCSpoonPlasticBuild
-      - RMCKitchenKnifePlasticBuild
+    - RMCCratePlasticBuild
+    - RMCAshtrayBuild
+    - RMCDividerConstruction
+    - RMCForkPlasticBuild
+    - RMCSpoonPlasticBuild
+    - RMCKitchenKnifePlasticBuild
   - type: Material
   - type: PhysicalComposition
     materialComposition:

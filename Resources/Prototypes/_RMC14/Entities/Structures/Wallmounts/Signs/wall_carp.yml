@@ -1,9 +1,9 @@
 - type: entity
-  parent: [ BaseWallmountMetallic, BaseSignIndestructible ]
+  parent: [BaseWallmountMetallic, BaseSignIndestructible]
   id: AUWallCarpBase
   abstract: true
-  name: Wall-adapted Carp
-  description: Caught migrating uphill.
+  name: 适应墙壁的鲤鱼
+  description: 在向上游迁徙时被捕获。
   components:
   - type: WallMount
     arc: 360
@@ -21,15 +21,14 @@
   components:
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Effects/poster_broken.ogg
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
         spawn:
           AUWallCarpDamaged:
@@ -40,8 +39,8 @@
 - type: entity
   parent: AUWallCarpBase
   id: AUWallCarpDamaged
-  name: empty plaque
-  description: Now where did that carp go?
+  name: 空牌匾
+  description: 那条鲤鱼现在去哪儿了？
   components:
   - type: Sprite
     drawdepth: WallTops
@@ -49,15 +48,14 @@
     snapCardinals: true
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Effects/poster_broken.ogg
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
         spawn:
           AUWallCarpBroken:
@@ -68,7 +66,7 @@
 - type: entity
   parent: AUWallCarpBase
   id: AUWallCarpBroken
-  name: broken plaque
+  name: 破损的牌匾
   description: ""
   components:
   - type: Sprite
@@ -77,12 +75,11 @@
     snapCardinals: true
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Effects/poster_broken.ogg
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]

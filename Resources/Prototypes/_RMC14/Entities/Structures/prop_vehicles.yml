@@ -1,9 +1,9 @@
-﻿# Temporary until we get actual vehicle code
+# Temporary until we get actual vehicle code
 
 - type: entity
   id: RMCCarPileup
-  name: burned out vehicle pileup
-  description: Burned-out vehicles block your path, their charred frames and shattered glass hinting at recent chaos. The acrid smell of smoke lingers.
+  name: 烧毁的车辆堆
+  description: 烧毁的车辆挡住你的去路，焦黑的车架和碎裂的玻璃暗示着不久前的混乱。刺鼻的烟味久久不散。
   placement:
     mode: SnapgridCenter
   components:
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,0.5,3.5,2"
         density: 190
         layer:
@@ -31,12 +30,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 3000
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   abstract: true
@@ -50,8 +48,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,1.4,0.5"
         density: 190
         layer:
@@ -65,12 +62,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 3000
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Clickable
   - type: InteractionOutline
   - type: RequireProjectileTarget
@@ -83,8 +79,8 @@
   parent: RMCPropVehicleBase
   id: RMCPropVehicleMonoSupronOrange
   suffix: Orange
-  name: Mono-Supron
-  description: The 'Mono-Supron', a mass-produced civilian vehicle for the colonial markets, in and outside of the United Nations. Produced by 'Mizutani' a car marque and associated operating division of the Weyland-Yutani Corporation.
+  name: 莫诺-苏普龙
+  description: “莫诺-苏普龙”是一款面向联合国境内外殖民地市场批量生产的民用车辆。由“水谷”生产，这是维兰德-汤谷公司旗下的汽车品牌及关联运营部门。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/vehicles.rsi
@@ -333,12 +329,11 @@
     state: mizutani_orange_damage
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1750
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: RMCPropVehicleMonoSupronOrangeDestroyed

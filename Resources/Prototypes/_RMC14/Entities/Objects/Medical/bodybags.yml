@@ -2,8 +2,8 @@
   parent: BaseDeployFoldable
   id: RMCBaseStorageBag
   abstract: true
-  name: storage bag
-  description: A foldable storage container.
+  name: 收纳袋
+  description: 一个可折叠的储物容器。
   components:
   - type: Item
     size: Small
@@ -43,8 +43,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.4,0.25,0.1"
         density: 20
         mask:
@@ -72,21 +71,21 @@
     visuals:
       enum.PaperLabelVisuals.HasLabel:
         enum.PaperLabelVisuals.Layer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
       enum.PaperLabelVisuals.LabelType:
         enum.PaperLabelVisuals.Layer:
-          Paper: { state: paper }
-          Bounty: { state: bounty }
-          CaptainsPaper: { state: captains_paper }
-          Invoice: { state: invoice }
+          Paper: {state: paper}
+          Bounty: {state: bounty}
+          CaptainsPaper: {state: captains_paper}
+          Invoice: {state: invoice}
       enum.FoldedVisuals.State:
         foldedLayer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
         unfoldedLayer:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}
   - type: Pullable
   - type: ItemSlots
   - type: DownOnEnter
@@ -116,8 +115,8 @@
 - type: entity
   parent: RMCBaseStorageBag
   id: CMBodyBag
-  name: body bag
-  description: A folded bag designed for the storage and transportation of cadavers.
+  name: 尸袋
+  description: 一种用于存放和运输尸体的折叠袋。
   components:
   - type: InsertBlacklist
     whitelistedMobStates:
@@ -139,14 +138,14 @@
   suffix: Open
   components:
   - type: EntityStorage
-    open: True
+    open: true
 
 # Stasis bag
 - type: entity
   parent: RMCBaseStorageBag
   id: CMStasisBag
-  name: stasis bag
-  description: A folded, reusable bag designed to prevent additional damage to an occupant.
+  name: 静滞袋
+  description: 一种可折叠且可重复使用的袋子，旨在防止对乘员造成额外伤害。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/stasisbag.rsi
@@ -195,8 +194,8 @@
 - type: entity
   parent: BaseItem
   id: RMCStasisBagUsed
-  name: used stasis bag
-  description: It's been ripped open. You will need to find a machine capable of recycling it.
+  name: 用过的静滞袋
+  description: 它已经被撕开了。你需要找到一台能够回收它的机器。
   suffix: trash
   components:
   - type: Item
@@ -212,8 +211,8 @@
 - type: entity
   parent: RMCBaseStorageBag
   id: RMCThermalTarpV2
-  name: V2 reactive thermal tarp
-  description: A tarp carried by some UNMC infantry. This updated tarp is capable of blending into its environment nearly flawlessly, given that it can properly collate data once deployed. The tarp is able to hide the wearer's heat signature.
+  name: V2反应式热伪装篷布
+  description: 由部分UNMC步兵携带的篷布。这款升级后的篷布只要在部署后能正确整理数据，就能几乎完美地融入周围环境。该篷布能够隐藏穿戴者的热信号。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/bodybags.rsi
@@ -256,8 +255,8 @@
 - type: entity
   parent: RMCBaseStorageBag
   id: RMCThermalTarp
-  name: V3 reactive thermal tarp
-  description: A more compact and improved version of the V2 thermal tarp, intended primarily for the transportation of deceased or wounded marines. It has improved cloaking technology than earlier models, allowing it to cloak to a greater degree and faster, but can only be used with special training.
+  name: V3反应式热能篷布
+  description: V2热能篷布的更紧凑且改进版本，主要用于运送阵亡或受伤的陆战队员。它比早期型号拥有更先进的隐形技术，能够以更高程度且更快地隐形，但只能经过特殊训练后使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/bodybags.rsi

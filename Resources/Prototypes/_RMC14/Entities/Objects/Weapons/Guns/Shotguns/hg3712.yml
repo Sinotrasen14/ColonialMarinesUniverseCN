@@ -1,14 +1,14 @@
 - type: entity
-  parent: [ RMCBaseWeaponShotgun, RMCBaseAttachableHolder ]
-  name: HG 37-12 pump shotgun
+  parent: [RMCBaseWeaponShotgun, RMCBaseAttachableHolder]
+  name: HG 37-12 泵动式霰弹枪
   id: RMCWeaponShotgunHG3712
-  description: A eight-round pump action shotgun with four-round capacity dual internal tube magazines allowing for quick reloading and highly accurate fire. Used exclusively by Colony Marshals. You can switch the active internal magazine by toggling the shotgun tube.
+  description: 一支八发泵动式霰弹枪，配备两个四发容量的内置管式弹仓，可快速装填并实现高精度射击。仅供殖民地执法官使用。你可以通过切换霰弹枪管状弹仓来切换当前激活的内置弹仓。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/hg3712.rsi
     layers:
     - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/hg3712.rsi
   - type: Gun

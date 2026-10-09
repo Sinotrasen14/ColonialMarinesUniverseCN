@@ -1,8 +1,8 @@
 - type: entity
   parent: [BaseWeaponLauncher, CMBaseWeaponGun, RMCBaseAttachableHolder]
-  name: M6H-BRUTE
+  name: M6H-蛮兽
   id: RMCWeaponLauncherM6HBrute
-  description: A laser-guided breaching launcher designed to rip open walls and hardened structures with focused shockwaves.
+  description: 激光制导破障发射器，旨在用聚焦冲击波撕开墙壁和加固结构。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/RocketLaunchers/m6h/m6h_inhands.rsi
@@ -89,9 +89,9 @@
 
 - type: entity
   id: RMCRocketM5510Brute
-  name: M5510 laser-guided rocket
+  name: M5510激光制导火箭
   parent: BaseItem
-  description: A breaching rocket tube compatible with the M6H-BRUTE launcher.
+  description: 一种与M6H-BRUTE发射器兼容的破门火箭发射管。
   components:
   - type: Tag
     tags:
@@ -113,8 +113,8 @@
 - type: entity
   parent: RMCBaseProjectileRocket84mm
   id: RMCProjectileM5510Brute
-  name: M5510 laser-guided rocket
-  categories: [ HideSpawnMenu ]
+  name: M5510激光制导火箭
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     deleteOnCollide: false

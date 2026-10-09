@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCStatusDisplay
-  name: status display
-  description: A monitor depicting the ship's current status. It flickers every so often.
+  name: 状态显示
+  description: 显示飞船当前状态的监视器。它时不时会闪烁。
   placement:
     mode: SnapgridCenter
   components:
@@ -12,56 +12,56 @@
     drawdepth: WallMountedItems
     layers:
     - state: frame
-    - map: [ "screen" ]
+    - map: ["screen"]
       state: bluealert
       visible: false
-    - map: [ "enum.RMCAlertLevelDisplayVisualLayers.HourTens" ]
-    - map: [ "enum.RMCAlertLevelDisplayVisualLayers.HourOnes" ]
-    - map: [ "enum.RMCAlertLevelDisplayVisualLayers.Separator" ]
-    - map: [ "enum.RMCAlertLevelDisplayVisualLayers.MinuteTens" ]
-    - map: [ "enum.RMCAlertLevelDisplayVisualLayers.MinuteOnes" ]
+    - map: ["enum.RMCAlertLevelDisplayVisualLayers.HourTens"]
+    - map: ["enum.RMCAlertLevelDisplayVisualLayers.HourOnes"]
+    - map: ["enum.RMCAlertLevelDisplayVisualLayers.Separator"]
+    - map: ["enum.RMCAlertLevelDisplayVisualLayers.MinuteTens"]
+    - map: ["enum.RMCAlertLevelDisplayVisualLayers.MinuteOnes"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.RMCAlertLevelsVisuals.Alert:
         screen:
-          Green: { visible: false }
-          Blue: { state: bluealert, visible: true }
-          Red: { state: redalert, visible: true }
-          Delta: { state: evac, visible: true }
+          Green: {visible: false}
+          Blue: {state: bluealert, visible: true}
+          Red: {state: redalert, visible: true}
+          Delta: {state: evac, visible: true}
         enum.RMCAlertLevelDisplayVisualLayers.HourTens:
-          Green: { visible: true }
-          Blue: { visible: false }
-          Red: { visible: false }
-          Delta: { visible: false }
+          Green: {visible: true}
+          Blue: {visible: false}
+          Red: {visible: false}
+          Delta: {visible: false}
         enum.RMCAlertLevelDisplayVisualLayers.HourOnes:
-          Green: { visible: true }
-          Blue: { visible: false }
-          Red: { visible: false }
-          Delta: { visible: false }
+          Green: {visible: true}
+          Blue: {visible: false}
+          Red: {visible: false}
+          Delta: {visible: false}
         enum.RMCAlertLevelDisplayVisualLayers.Separator:
-          Green: { visible: true }
-          Blue: { visible: false }
-          Red: { visible: false }
-          Delta: { visible: false }
+          Green: {visible: true}
+          Blue: {visible: false}
+          Red: {visible: false}
+          Delta: {visible: false}
         enum.RMCAlertLevelDisplayVisualLayers.MinuteTens:
-          Green: { visible: true }
-          Blue: { visible: false }
-          Red: { visible: false }
-          Delta: { visible: false }
+          Green: {visible: true}
+          Blue: {visible: false}
+          Red: {visible: false}
+          Delta: {visible: false}
         enum.RMCAlertLevelDisplayVisualLayers.MinuteOnes:
-          Green: { visible: true }
-          Blue: { visible: false }
-          Red: { visible: false }
-          Delta: { visible: false }
+          Green: {visible: true}
+          Blue: {visible: false}
+          Red: {visible: false}
+          Delta: {visible: false}
   - type: RMCAlertLevelDisplay
   - type: WallMount
     arc: 360
 
 - type: entity
   id: RMCStatusDisplayProp
-  name: status display
-  description: A monitor depicting the ship's current status. It flickers every so often.
+  name: 状态显示器
+  description: 显示飞船当前状态的显示器。它时不时闪烁。
   suffix: Prop
   placement:
     mode: SnapgridCenter
@@ -78,8 +78,8 @@
 
 - type: entity
   id: RMCStatusDisplayLarge
-  name: large status display
-  description: A large wall mounted monitor. It doesnt seem to work properly.
+  name: 大型状态显示屏
+  description: 一个大型壁挂式显示器。它似乎无法正常工作。
   placement:
     mode: SnapgridCenter
   components:

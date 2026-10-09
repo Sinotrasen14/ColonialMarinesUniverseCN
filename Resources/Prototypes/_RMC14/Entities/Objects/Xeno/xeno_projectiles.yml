@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   id: XenoBaseProjectile
-  name: projectile
+  name: 抛射体
   components:
   - type: Clickable
   - type: Sprite
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         hard: false
         mask:
@@ -24,7 +23,7 @@
         - XenoProjectileImpassable
   - type: Projectile
     impactEffect: XenoProjectileImpactEffect
-    damage: { }
+    damage: {}
   - type: XenoProjectile
   - type: ProjectileMaxRange
     max: 7
@@ -40,10 +39,10 @@
       path: /Audio/_RMC14/Xeno/acid_impact1.ogg
 
 - type: entity
-  parent: [ XenoSpitImpactSounds, XenoBaseProjectile ]
+  parent: [XenoSpitImpactSounds, XenoBaseProjectile]
   id: XenoSpitProjectile
-  name: spit
-  categories: [ HideSpawnMenu ]
+  name: 吐口水
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -51,7 +50,7 @@
     - state: xeno_acid_weak
       shader: unshaded
   - type: Projectile
-    impactEffect: null
+    impactEffect:
     damage:
       types:
         Heat: 20 # TODO RMC14 damage fall-off and higher at close range
@@ -66,7 +65,7 @@
 - type: entity
   parent: XenoSpitProjectile
   id: XenoChargedSpitProjectile
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -74,7 +73,7 @@
     - state: xeno_acid_strong
       shader: unshaded
   - type: Projectile
-    impactEffect: null
+    impactEffect:
     damage:
       types:
         Heat: 30 # TODO RMC14 damage fall-off and higher at close range
@@ -95,7 +94,7 @@
 - type: entity
   parent: XenoChargedSpitProjectile
   id: XenoQueenSpitProjectile
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: ProjectileMaxRange
     max: 10
@@ -103,8 +102,8 @@
 - type: entity
   id: XenoSlowingSpitProjectile
   parent: XenoBaseProjectile
-  name: slowing spit
-  categories: [ HideSpawnMenu ]
+  name: 缓速唾液
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -121,9 +120,9 @@
 
 - type: entity
   id: XenoToxicSpitProjectile
-  parent: [ XenoSpitImpactSounds, XenoBaseProjectile ]
-  name: toxic spit
-  categories: [ HideSpawnMenu ]
+  parent: [XenoSpitImpactSounds, XenoBaseProjectile]
+  name: 毒性唾液
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -144,9 +143,9 @@
 
 - type: entity
   id: XenoQueenNeuroSpitProjectile
-  parent: [ XenoSpitImpactSounds, XenoBaseProjectile ]
-  name: neurotoxic spit
-  categories: [ HideSpawnMenu ]
+  parent: [XenoSpitImpactSounds, XenoBaseProjectile]
+  name: 神经毒性唾液
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -167,8 +166,8 @@
 - type: entity
   id: XenoScatteredSpitProjectile
   parent: XenoBaseProjectile
-  name: scattered spit
-  categories: [ HideSpawnMenu ]
+  name: 散落的唾液
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -187,8 +186,8 @@
 - type: entity
   id: XenoAcidShotgunProjectile
   parent: XenoBaseProjectile
-  name: shotgun spit
-  categories: [ HideSpawnMenu ]
+  name: 霰弹喷吐
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -197,7 +196,7 @@
       shader: unshaded
   - type: XenoAcidShotgun
   - type: Projectile
-    impactEffect: null
+    impactEffect:
     damage:
       types:
         Heat: 10
@@ -210,8 +209,8 @@
 - type: entity
   id: XenoBoneChipsProjectile
   parent: XenoBaseProjectile
-  name: bone chips
-  categories: [ HideSpawnMenu ]
+  name: 骨碎片
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Materials/shards.rsi
@@ -223,7 +222,7 @@
     slow: 5
     paralyze: 0
   - type: Projectile
-    impactEffect: null
+    impactEffect:
     damage:
       types:
         Slash: 10
@@ -237,10 +236,10 @@
 - type: entity
   parent: XenoBoneChipsProjectile # TODO one projectile out of the 8 spawned for fire spikes is this one
   id: XenoHedgehogSpikeProjectile
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
-    impactEffect: null
+    impactEffect:
     damage:
       types:
         Slash: 8
@@ -252,7 +251,7 @@
 - type: entity
   parent: XenoHedgehogSpikeProjectile
   id: XenoHedgehogSpikeProjectileSpread
-  name: small bone chips
+  name: 小骨片
   components:
   - type: ProjectileMaxRange
     max: 4
@@ -260,7 +259,7 @@
 - type: entity
   parent: XenoHedgehogSpikeProjectileSpread
   id: XenoHedgehogSpikeProjectileSpreadShort
-  name: small bone chips
+  name: 小骨片
   components:
   - type: ProjectileMaxRange
     max: 2
@@ -268,8 +267,8 @@
 - type: entity
   parent: XenoBaseProjectile
   id: XenoBombardAcidProjectile
-  name: glob of acid gas
-  categories: [ HideSpawnMenu ]
+  name: 酸性气体团块
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -310,7 +309,7 @@
   - type: RMCProjectileAccuracy
     accuracy: 95
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:
   - type: IgnorePredictionHide
   - type: TriggerOnFixedDistanceStop
     delay: 0
@@ -318,8 +317,8 @@
 
 - type: entity
   id: CMGuidebookXenoBombardAcidProjectile
-  name: Acid Glob
-  categories: [ HideSpawnMenu ]
+  name: 酸液球
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -330,8 +329,8 @@
 - type: entity
   parent: XenoBaseProjectile
   id: XenoBombardNeurotoxinProjectile
-  name: glob of neurotoxin gas
-  categories: [ HideSpawnMenu ]
+  name: 一团神经毒素气体
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -373,7 +372,7 @@
   - type: RMCProjectileAccuracy
     accuracy: 95
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:
   - type: IgnorePredictionHide
   - type: TriggerOnFixedDistanceStop
     delay: 0
@@ -381,8 +380,8 @@
 
 - type: entity
   id: CMGuidebookXenoBombardNeurotoxinProjectile
-  name: Neurotoxin Glob
-  categories: [ HideSpawnMenu ]
+  name: 神经毒素球
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -393,7 +392,7 @@
 - type: entity
   parent: XenoSpitProjectile
   id: XenoAcidBallSpitProjectile
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -416,7 +415,7 @@
 - type: entity
   parent: XenoAcidBallSpitProjectile
   id: XenoSpitProjectilePraetorian
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -437,7 +436,7 @@
 - type: entity
   parent: XenoSpitProjectile
   id: XenoSpitProjectilePraetorianWarden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -452,8 +451,8 @@
 - type: entity
   parent: XenoSpitProjectile
   id: XenoVenatorCorrosiveProjectile
-  name: corrosive spit
-  categories: [ HideSpawnMenu ]
+  name: 腐蚀性唾液
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -461,7 +460,7 @@
     - state: xeno_acid_strong
       shader: unshaded
   - type: Projectile
-    impactEffect: null
+    impactEffect:
     damage:
       types:
         Heat: 35
@@ -485,8 +484,8 @@
 - type: entity
   parent: XenoVenatorCorrosiveProjectile
   id: XenoVenatorAcidBlobProjectile
-  name: acid blob
-  categories: [ HideSpawnMenu ]
+  name: 酸液怪
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Xeno/xeno_projectiles.rsi
@@ -494,7 +493,7 @@
     - state: acid_glob
       shader: unshaded
   - type: Projectile
-    impactEffect: null
+    impactEffect:
     damage:
       types:
         Heat: 25
@@ -508,11 +507,11 @@
 - type: entity
   parent: XenoVenatorCorrosiveProjectile
   id: XenoVenatorBreathProjectile
-  name: enzymatic breath
-  categories: [ HideSpawnMenu ]
+  name: 酶促呼吸
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
-    impactEffect: null
+    impactEffect:
     damage:
       types:
         Heat: 12
@@ -521,9 +520,9 @@
 
 - type: entity
   id: XenoAcidBallProjectile
-  name: acid ball
-  description: A small, pulsating ball of gas.
-  categories: [ HideSpawnMenu ]
+  name: 酸液球
+  description: 一小团脉动着的气体。
+  categories: [HideSpawnMenu]
   components:
   - type: Clickable
   - type: Physics
@@ -534,8 +533,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         hard: false
         mask:
@@ -543,8 +541,7 @@
         - BulletImpassable
         - XenoProjectileImpassable
       fix2:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         hard: true
         mask:
@@ -557,7 +554,7 @@
       shader: unshaded
   - type: Projectile
     deleteOnCollide: false
-    damage: { }
+    damage: {}
   - type: TriggerOnFixedDistanceStop
     delay: 1
   - type: ProjectileGrenade
@@ -576,8 +573,8 @@
 - type: entity
   parent: XenoBaseProjectile
   id: XenoOppressorTailHook
-  name: tail hook
-  categories: [ HideSpawnMenu ]
+  name: 尾钩
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Effects/beam.rsi
@@ -587,7 +584,7 @@
     max: 3.5
   - type: PreventCollideWithDead
   - type: Projectile
-    impactEffect: null
+    impactEffect:
     damage:
       types:
         Slash: 40
@@ -600,8 +597,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         hard: false
         mask:

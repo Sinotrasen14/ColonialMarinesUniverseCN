@@ -1,8 +1,8 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankWarningArray # CMU14
-  name: integrated weapons sensor array
-  description: An integrated sensor array that improves accuracy and fire rate of onboard weapons.
+  name: 集成武器传感器阵列
+  description: 一种集成传感器阵列，可提高搭载武器的精度和射速。
   components:
   - type: Sprite
     state: warray
@@ -26,8 +26,8 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankOverdriveEnhancer # CMU14
-  name: overdrive enhancer
-  description: An overdrive enhancer support attachment for a tank.
+  name: 超载增强器
+  description: 坦克用超载增强器支援附件。
   components:
   - type: Sprite
     state: odrive_enhancer
@@ -50,15 +50,15 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankRocketLauncher # CMU14
-  name: smoke launcher
-  description: A smoke launcher support attachment for a tank.
+  name: 烟幕发射器
+  description: 坦克用烟幕发射器支援附件。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: slauncher_0
   - type: HardpointItem
@@ -117,15 +117,15 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankRocketLauncherTWE # CMU14
-  name: Improper L-39T Smoke Discharger
-  description: A support module for the FV150, based off those used by the UA for their vehicles.
+  name: 不合适的 L-39T 烟雾弹发射器
+  description: 一种用于 FV150 的支援模块，仿照 UA 为其车辆使用的支援模块。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: CMU14/Structures/vehicles/fv150/icons.rsi
     state: slauncher_0
@@ -189,15 +189,15 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankFlareModule # CMU14
-  name: flare module
-  description: A flare launcher support attachment for a tank.
+  name: 照明弹模块
+  description: 用于坦克的照明弹发射器支援附件。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: slauncher_1
   - type: HardpointItem
@@ -259,8 +259,8 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankArtilleryModule # CMU14
-  name: artillery module
-  description: An artillery support module for a tank.
+  name: 火炮模块
+  description: 用于坦克的火炮支援模块。
   components:
   - type: Sprite
     state: artillery
@@ -281,12 +281,12 @@
   - type: HardpointVisual
     vehicleState: artillerymod_0
     damagedVehicleState: artillerymod_1
-    
+
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankSnowplow # CMU14
-  name: tank snowplow
-  description: A reinforced snowplow attachment for a tank.
+  name: 坦克扫雪铲
+  description: 一种用于坦克的加固型扫雪铲附件。
   components:
   - type: Sprite
     state: snowplow
@@ -306,12 +306,12 @@
   - type: Tag
     tags:
     - VehiclePlow
-    
+
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankMountedFlag # CMU14
-  name: Mounted UA Flag
-  description: A United Americas flag on a mounting support for the M34A2-A Multipurpose Turret. You feel a burst of energy by its mere sight.
+  name: 装配的UA旗帜
+  description: M34A2-A多用途炮塔的安装支架上有一面美洲联合旗帜。仅仅是看到它，你便感到一股能量迸发。
   components:
   - type: Sprite
     state: mounted_flag
@@ -322,7 +322,7 @@
     slotType: SupportAttachment
     damageMultiplier: 0.0
     repairRate: 0.0125
-  - type: DropshipTarget 
+  - type: DropshipTarget
     abbreviation: TANK
   - type: HardpointIntegrity
     maxIntegrity: 350
@@ -341,12 +341,12 @@
   - type: HardpointVisual
     vehicleState: mountedflag_0
     damagedVehicleState: mountedflag_2
-    
+
 - type: entity
   parent: VehicleTankHardpointBase
   id: TWEVehicleTankArtilleryModule # CMU14
-  name: Improper artillery module
-  description: An artillery support module for a tank.
+  name: 不合适的火炮模块
+  description: 一种用于坦克的火炮支援模块。
   components:
   - type: Sprite
     sprite: CMU14/Structures/vehicles/fv150/icons.rsi
@@ -381,8 +381,8 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankSnowplowTWE # CMU14
-  name: Improper tank snowplow
-  description: A reinforced snowplow attachment for a tank.
+  name: 不合适的坦克扫雪铲
+  description: 用于坦克的加固型扫雪铲附件。
   components:
   - type: Sprite
     state: snowplow

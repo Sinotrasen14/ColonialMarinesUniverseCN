@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCBaseWeaponSniperRifle
   id: RMCXM43E1AntiMaterielRifle
-  name: XM43E1 anti-materiel rifle
-  description: An experimental anti-materiel rifle produced by AEGIS Armaments, recently reacquired from the deep storage of an abandoned prototyping facility. This one in particular is currently undergoing field testing. Chambered in 10x99mm Caseless. This weapon can punch through thin metal plating and walls, though it'll lose most of its lethality in the process. It can even work for demolitions, with experienced users known to disassemble segments of solid, reinforced walls in the field with just a single standard magazine of 10x99mm. In lieu of explosives or an engineer, they instead use each of the 8 shots to break down vital structural supports, taking the wall apart in the process.
+  name: XM43E1反器材步枪
+  description: 由 AEGIS Armaments 生产的一种实验型反器材步枪，最近从一座废弃原型设施的深层仓库中重新回收。这一把目前正在进行实地测试。采用 10×99 毫米无壳弹。此武器能穿透薄金属板和墙壁，不过在此过程中会丧失大部分杀伤力。它甚至可用于爆破作业，已知有经验的使用者仅用一个标准弹匣的 10×99 毫米弹药，就能在野外拆解实心加固墙体的分段。在没有炸药或工程师的情况下，他们转而用 8 发子弹中的每一发来破坏关键结构支撑，在此过程中将墙体拆开。
   components:
   - type: GuideHelp
     guides:
@@ -18,10 +18,10 @@
       sprite: _RMC14/Objects/Weapons/Guns/Snipers/xm43e1/xm43e1_icon.rsi
     - state: bolt-open
       sprite: _RMC14/Objects/Weapons/Guns/Snipers/xm43e1/xm43e1_icon.rsi
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/Snipers/xm43e1/xm43e1_icon.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
 #    - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
 #      state: pmc_sniperbarrel
 #      offset: 0.500, 0.050
@@ -51,7 +51,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSniperXM43E1AntiMateriel
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg
@@ -97,15 +97,15 @@
 - type: entity
   parent: CMMagazineSniperM96S
   id: RMCMagazineSniperXM43E1AntiMateriel
-  name: XM43E1 marksman magazine (10x99mm)
-  description: A magazine of caseless 10x99mm anti-materiel rounds, capable of penetrating through most infantry-level materiel. Depending on what you hit, it might even have enough energy to wound anything behind the target.
+  name: XM43E1 精确射手弹匣（10×99毫米）
+  description: 一匣无壳10×99毫米反器材弹，能够穿透大多数步兵级装备。取决于你击中的目标，它甚至可能有足够能量伤及目标后方的任何东西。
   components:
   - type: Tag
     tags:
     - RMCMagazineXM43E1
     - CMMagazineSniper
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeSniper10x99mmAntiMateriel
@@ -122,7 +122,7 @@
 - type: entity
   parent: CMCartridgeSniper10x28mm
   id: RMCCartridgeSniper10x99mmAntiMateriel
-  name: cartridge (10x99mm) (AntiMateriel)
+  name: 弹药筒（10x99mm）（反器材）
   components:
   - type: Tag
     tags:
@@ -135,8 +135,8 @@
 - type: entity
   parent: CMBulletSniper10x28mm
   id: RMCBulletSniper10x99mmAntiMateriel
-  name: bullet (10x99mm)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（10×99毫米）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     deleteOnCollide: false

@@ -1,16 +1,16 @@
 # Rifles (Empty)
 
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: RMCWeaponRifleL90A1
-  name: SLRA1 infantry carbine
-  description: The SLRA1 infantry carbine. While lacking in modularity and noticeably less ergonomic than later models, it still packs a punch. Chambered in 7x43mm.
+  name: SLRA1步兵卡宾枪
+  description: SLRA1步兵卡宾枪。虽然模块化不足，且人机工效明显不如后续型号，但它依然威力十足。使用7×43毫米弹药。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/l90a1.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: ItemMapper
     mapLayers:
       mag-0:
@@ -48,11 +48,11 @@
     accuracyMultiplierUnwielded: 0.8
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -103,14 +103,14 @@
 - type: entity
   parent: RMCWeaponRifleL90A1
   id: RMCWeaponRifleL90A2
-  name: SLRA2 infantry carbine
-  description: The SLRA2 infantry carbine. Highly modular, easy to handle, and hard-hitting, the A2 is widely regarded as a quality rifle by its users. Chambered in 7x43mm.
+  name: SLRA2步兵卡宾枪
+  description: SLRA2步兵卡宾枪。高度模块化、易于操作且威力强劲，A2被用户广泛认为是一支优质步枪。采用7×43毫米口径。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/l90a2.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/l90a2.rsi
   - type: Gun
@@ -177,14 +177,14 @@
 - type: entity
   parent: RMCWeaponRifleL90A2
   id: RMCWeaponRifleL91SWS
-  name: SLR SWS
-  description: The SLR Support Weapon System features a significantly longer and heavier barrel than the L90. While this makes it more unwieldy, the added length, weight, and durability enable accurate and sustained fire from a stationary position. Chambered in 7x43mm.
+  name: SLR支援武器系统
+  description: SLR支援武器系统配备的枪管比L90显著更长、更重。虽然这使其更难以操作，但增加的长度、重量和耐用性使其能够从固定位置进行精确且持续的射击。采用7×43毫米口径。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/l91.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: ItemMapper
     mapLayers:
       mag-0:
@@ -234,11 +234,11 @@
     falloffMultiplier: 0
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -300,7 +300,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL90
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -375,7 +375,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL90
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -516,7 +516,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL90
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -565,15 +565,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleL90
-  name: SLR magazine (7x43mm)
-  description: "A magazine of 7x43mm rounds for use in SLR pattern rifles."
+  name: SLR弹匣（7×43mm）
+  description: "用于SLR型步枪的7×43毫米弹药弹匣。"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleL90
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifleL90
@@ -593,8 +593,8 @@
 - type: entity
   parent: RMCMagazineRifleL90
   id: RMCMagazineRifleL90Drum
-  name: SLR drum magazine (7x43mm)
-  description: "A drum magazine of 7x43mm rounds for use in SLR pattern rifles."
+  name: SLR 弹鼓（7x43mm）
+  description: "用于 SLR 型步枪的 7x43mm 弹药弹鼓。"
   suffix: Drum
   components:
   - type: Tag
@@ -611,9 +611,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/l90drum.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Appearance
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsRifleSLR
@@ -621,8 +621,8 @@
 - type: entity
   parent: RMCMagazineRifleL90
   id: RMCMagazineRifleL90AP
-  name: SLR AP magazine (7x43mm)
-  description: "A magazine of armor-piercing 7x43mm rounds for use in SLR pattern rifles."
+  name: SLR 穿甲弹匣（7×43 毫米）
+  description: "用于SLR型步枪的7×43毫米穿甲弹弹匣。"
   suffix: AP
   components:
   - type: Tag
@@ -638,9 +638,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/l90.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#1F951F"
   - type: Appearance
@@ -650,8 +650,8 @@
 - type: entity
   parent: RMCMagazineRifleL90AP
   id: RMCMagazineRifleL90DrumAP
-  name: SLR AP drum magazine (7x43mm)
-  description: "A drum magazine of armor-piercing 7x43mm rounds for use in SLR pattern rifles."
+  name: SLR 穿甲弹鼓（7×43毫米）
+  description: "用于 SLR 型步枪的 7×43 毫米穿甲弹鼓。"
   suffix: Drum, AP
   components:
   - type: Tag
@@ -668,9 +668,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/l90drum.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#1F951F"
   - type: Appearance
@@ -680,8 +680,8 @@
 - type: entity
   parent: RMCMagazineRifleL90
   id: RMCMagazineRifleL90HEAP
-  name: SLR HEAP magazine (7x43mm)
-  description: "A magazine of HEAP 7x43mm rounds for use in SLR pattern rifles."
+  name: SLR高爆穿甲弹弹匣（7×43毫米）
+  description: "用于SLR型步枪的7×43毫米高爆穿甲弹弹匣。"
   suffix: HEAP
   components:
   - type: Tag
@@ -697,9 +697,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/l90.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#9C9A19"
   - type: Appearance
@@ -707,8 +707,8 @@
 - type: entity
   parent: RMCMagazineRifleL90AP
   id: RMCMagazineRifleL90DrumHEAP
-  name: SLR HEAP drum magazine (7x43mm)
-  description: "A drum magazine of HEAP 7x43mm rounds for use in SLR pattern rifles."
+  name: SLR高爆穿甲弹弹鼓（7×43毫米）
+  description: "用于SLR型步枪的7×43毫米高爆穿甲弹弹鼓。"
   suffix: Drum, HEAP
   components:
   - type: Tag
@@ -725,9 +725,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/l90drum.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#9C9A19"
   - type: Appearance
@@ -735,8 +735,8 @@
 - type: entity
   parent: RMCMagazineRifleL90
   id: RMCMagazineRifleL90Incendiary
-  name: SLR incendiary magazine (7x43mm)
-  description: "A magazine of incendiary 7x43mm rounds for use in SLR pattern rifles."
+  name: SLR燃烧弹弹匣（7×43毫米）
+  description: "用于SLR型步枪的7×43毫米燃烧弹弹匣。"
   suffix: Incendiary
   components:
   - type: Tag
@@ -752,9 +752,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/l90.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#771A10"
   - type: Appearance
@@ -762,8 +762,8 @@
 - type: entity
   parent: RMCMagazineRifleL90Incendiary
   id: RMCMagazineRifleL90DrumIncendiary
-  name: SLR incendiary drum magazine (7x43mm)
-  description: "A drum magazine of incendiary 7x43mm rounds for use in SLR pattern rifles."
+  name: SLR燃烧弹弹鼓（7×43毫米）
+  description: "用于SLR型步枪的7×43毫米燃烧弹弹鼓。"
   suffix: Drum, Incendiary
   components:
   - type: Tag
@@ -780,9 +780,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/l90drum.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#771A10"
   - type: Appearance
@@ -792,8 +792,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleL90
-  name: cartridge (7x43mm)
-  description: A 7x43mm rifle cartridge designed for L90 pattern rifles.
+  name: 枪弹（7×43毫米）
+  description: 一种为L90型步枪设计的7×43毫米步枪弹。
   components:
   - type: Tag
     tags:
@@ -805,7 +805,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: BulletRifle7x43mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: DamageImpactProfile
     projectile:
@@ -834,8 +834,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleL90AP
-  name: AP cartridge (7x43mm)
-  description: A 7x43mm AP rifle cartridge designed for L90 pattern rifles.
+  name: 穿甲弹（7×43毫米）
+  description: 为L90型步枪设计的7×43毫米穿甲弹。
   components:
   - type: Tag
     tags:
@@ -847,7 +847,7 @@
 - type: entity
   parent: BulletRifle7x43mm
   id: BulletRifle7x43mmAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -859,8 +859,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleL90HEAP
-  name: HEAP cartridge (7x43mm)
-  description: A 7x43mm HEAP rifle cartridge designed for L90 pattern rifles.
+  name: 高爆穿甲弹（7×43毫米）
+  description: 一种为L90型步枪设计的7×43毫米高爆穿甲步枪弹。
   components:
   - type: Tag
     tags:
@@ -883,8 +883,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleL90Incendiary
-  name: incendiary cartridge (7x43mm)
-  description: A 7x43mm incendiary rifle cartridge designed for L90 pattern rifles.
+  name: 燃烧弹（7×43毫米）
+  description: 为L90型步枪设计的7×43毫米燃烧步枪弹。
   components:
   - type: Tag
     tags:
@@ -899,8 +899,8 @@
   components:
   - type: Projectile
     damage:
-       types:
-          Piercing: 30
+      types:
+        Piercing: 30
   - type: IgniteOnProjectileHit
 
 # Tags

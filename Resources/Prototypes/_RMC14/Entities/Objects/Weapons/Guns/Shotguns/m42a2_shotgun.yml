@@ -1,14 +1,14 @@
 - type: entity
-  parent: [ RMCBaseWeaponShotgun, RMCBaseAttachableHolder ]
-  name: M42A2 pump shotgun
+  parent: [RMCBaseWeaponShotgun, RMCBaseAttachableHolder]
+  name: M42A2泵动式霰弹枪
   id: WeaponShotgunM42A2
-  description: An AEGIS modern take on an all-time classic, combining close range firepower with long-term reliability. Requires a pump.
+  description: AEGIS对经久不衰经典的现代演绎，将近距离火力与长期可靠性融为一体。需要泵动。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m42a2/desert.rsi
     layers:
     - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m42a2/desert.rsi
   - type: Gun

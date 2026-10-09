@@ -1,8 +1,8 @@
 - type: entity
   parent: ColMarTechBase
   id: RMCColMarTechSurplusPMCPVE
-  name: PMC Uniform Vendor
-  description: An automated rack hooked up to a small storage of standard PMC uniforms.
+  name: PMC制服供应商
+  description: 一个与小型标准PMC制服储存库相连的自动化挂架。
   suffix: PVE, PMC
   components:
   - type: Sprite
@@ -12,53 +12,53 @@
     - "AU14AccessCorporateWEYU"
     hackable: true
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       entries:
       - id: CMBootsBlack
-        name: Combat Boots
+        name: 作战靴
         amount: 15
       - id: RMCJumpsuitVeteranPMCNoWebbing
-        name: PMC Uniform
+        name: PMC 制服
         amount: 15
       - id: RMCHandsVeteran
-        name: Combat Gloves
+        name: 战斗手套
         amount: 15
       - id: RMCHeadsetDistressPMCPVE
-        name: PMC Radio Headset
+        name: PMC无线电耳机
         amount: 15
       - id: RMCCameraGearPMC
-        name: Mk3 TOCU headcam
+        name: Mk3 TOCU 头戴式摄像头
         amount: 15
-    - name: Webbings
+    - name: 织带
       entries:
       - id: CMWebbingBlack
-        name: Webbing, Black
+        name: 织带，黑色
         amount: 10
       - id: RMCWebbingLegPouchBlack
-        name: Leg Pouch, Black
+        name: 腿包，黑色
         amount: 10
       - id: RMCWebbingDropPouch
         amount: 5
-    - name: Armor
+    - name: 护甲
       entries:
       - id: RMCArmorHelmetPMCTactical
         amount: 15
-        name: tactical helmet (Helmet Light)
+        name: 战术头盔（头盔灯）
       - id: RMCArmorM4PMCNoLight
-        name: M4 pattern PMC armor (No Suitlight)
+        name: M4 样式 PMC 护甲（无套装灯）
         amount: 15
       - id: CMArmorM4PMCLight
-        name: M4 pattern light PMC armor (Suitlight)
+        name: M4型轻型PMC护甲（Suitlight）
         amount: 15
-    - name: Backpack
+    - name: 背包
       entries:
       - id: RMCSatchelPMC
         amount: 30
-    - name: Restricted Backpack
+    - name: 受限背包
       entries:
       - id: RMCBackpackRTOPMC
         amount: 1
-    - name: Belts
+    - name: 腰带
       entries:
       - id: CMBeltMarine
         amount: 15
@@ -72,12 +72,12 @@
         amount: 5
       - id: RMCBeltUtilityGeneral
         amount: 5
-    - name: Pouches
+    - name: 小袋
       entries:
       - id: RMCPouchFirstAid
         amount: 15
       - id: RMCPouchFlareFilled
-        name: flare pouch (Full)
+        name: 信号弹袋（满）
         amount: 15
       - id: RMCPouchMagazine
         amount: 15
@@ -87,7 +87,7 @@
         amount: 15
       - id: RMCPouchPistol
         amount: 15
-    - name: Restricted Pouches
+    - name: 受限小袋
       entries:
       - id: RMCPouchConstruction
         amount: 1
@@ -101,17 +101,17 @@
         amount: 1
       - id: RMCPouchFuelTank
         amount: 1
-    - name: Mask
+    - name: 面具
       entries:
       - id: RMCMaskCoifPMC
         amount: 15
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: RMCGogglesBallistic
-        name: Ballistic Goggles
+        name: 防弹护目镜
         amount: 10
       - id: RMCHelmetGarbGunOil
-        name: firearm lubricant
+        name: 枪械润滑剂
         amount: 15
       - id: ArmorHelmetPMC
         amount: 15
@@ -120,8 +120,8 @@
   parent: ColMarTechBase
   id: RMCColMarTechUtilitiesPMCPVE
   suffix: PVE, PMC
-  name: PMC Automated Utilities Squad Vendor
-  description: An automated supply rack hooked up to a small storage of various utilities and tools. Can be accessed by any PMC Operator.
+  name: PMC自动化实用工具小队供应商
+  description: 一个自动化补给架，连接着一个存放各类用具和工具的小型储藏库。任何PMC操作员均可使用。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/prep.rsi
@@ -130,19 +130,19 @@
     - "AU14AccessCorporateWEYU"
     hackable: true
     sections:
-    - name: Food
+    - name: 食物
       entries:
       - id: RMCBoxMRE  # TODO RMC14 - PMC rations
-        name: MRE Box
+        name: MRE 盒
         amount: 1
-    - name: Medical
+    - name: 医疗
       entries:
       - id: CMGauze10
         amount: 15
       - id: CMOintment10
         amount: 15
       - id: CMEmergencyAutoInjector
-        name: Emergency Autoinjector
+        name: 紧急自动注射器
         amount: 15
       - id: CMBicaridineAutoInjector
         amount: 15
@@ -150,7 +150,7 @@
         amount: 15
       - id: CMTricordrazineAutoInjector
         amount: 15
-    - name: Tools
+    - name: 工具
       entries:
       - id: CMEntrenchingTool
         amount: 2
@@ -163,31 +163,31 @@
       - id: CMWrench
         amount: 5
       - id: CMMultitool
-        name: Multitool
+        name: 多功能工具
         amount: 5
       - id: RMCWelderPVE
         amount: 1
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: RMCExplosivePlastic
         amount: 2
       - id: RMCExplosiveBreachingCharge
         amount: 2
-    - name: Flare and Light
+    - name: 光焰与光
       entries:
       - id: RMCFlashlight
         amount: 5
       - id: RMCBoxFlashlights
-        name: Box of Flashlights
+        name: 一盒手电筒
         amount: 1
       - id: RMCBoxPackFlare
-        name: Box of Flares
+        name: 一盒信号弹
         amount: 1
       - id: CMPackFlare
         amount: 10
       - id: RMCBoxPackFlareCAS
         amount: 1
-    - name: Sidearms
+    - name: 副武器
       entries:
       - id: RMCWeaponPistolM77
         amount: 2
@@ -195,18 +195,18 @@
         amount: 2
       - id: RMCWeaponPistolM82F
         amount: 1
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: CMFireExtinguisher
-        name: Extinguisher
+        name: 灭火器
         amount: 5
       - id: CMFireExtinguisherPortable
-        name: Fire Extinguisher (Portable)
+        name: 便携式灭火器
         amount: 1
       - id: CMRollerBedSpawnFolded
         amount: 2
       - id: RMCScabbardMacheteFilled
-        name: Machete Scabbard (Full)
+        name: 砍刀刀鞘（满）
         amount: 5
       - id: RMCAttachmentRailFlashlight
         amount: 5

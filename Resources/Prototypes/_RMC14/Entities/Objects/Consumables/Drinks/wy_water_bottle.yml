@@ -1,15 +1,15 @@
 - type: entity
   parent: DrinkBottlePlasticBaseFull
   id: CMDrinkWEYAWaterBottle30
-  name: We-Yu bottled spring water
-  description: Overpriced 'Spring' water. Bottled by the We-Yu Corporation.
+  name: 威宇瓶装泉水
+  description: 定价过高的“泉水”。由威宇公司装瓶。
   components:
   - type: Solution
     solution:
-        maxVol: 50
-        reagents:
-        - ReagentId: Water
-          Quantity: 30
+      maxVol: 50
+      reagents:
+      - ReagentId: Water
+        Quantity: 30
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/WEYADrinks/weya_water_bottle.rsi
     layers:
@@ -19,8 +19,8 @@
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "icon_open"}
-          False: {state: "icon"}
+          true: {state: "icon_open"}
+          false: {state: "icon"}
   - type: Item
     size: Small
   - type: DamageOnLand
@@ -43,15 +43,15 @@
 - type: entity
   parent: CMDrinkWEYAWaterBottle30
   id: RMCDrinkWEYABugJuice
-  name: Weyland-Yutani Bug Juice Protein Drink
-  description: We-Yu brand plastic bottle full of toxic looking green goo, tastes like kiwi, but you are more than sure that there is none of it here.
+  name: 韦兰-尤塔尼虫汁蛋白饮料
+  description: 韦-尤牌塑料瓶，装满看起来有毒的绿色黏液，尝起来像猕猴桃，但你非常确定这里面根本没有猕猴桃。
   components:
   - type: Solution
     solution:
-        maxVol: 30
-        reagents:
-        - ReagentId: RMCJuiceBug
-          Quantity: 30
+      maxVol: 30
+      reagents:
+      - ReagentId: RMCJuiceBug
+        Quantity: 30
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/WEYADrinks/weya_bug_juice.rsi
     layers:
@@ -63,15 +63,15 @@
 - type: entity
   parent: CMDrinkWEYAWaterBottle30
   id: RMCDrinkWEYACocoMilk
-  name: Weyland-Yutani Bottled Coconut Milk
-  description: Rich in vitamins and (artificial) flavor, quenches thirst in a few sips. Bottled by the Weyland-Yutani Corporation.
+  name: 韦兰-尤塔尼瓶装椰奶
+  description: 富含维生素和（人工）风味，几口即可解渴。由韦兰-尤塔尼公司装瓶。
   components:
   - type: Solution
     solution:
-        maxVol: 30
-        reagents:
-        - ReagentId: RMCCocoMilk
-          Quantity: 30
+      maxVol: 30
+      reagents:
+      - ReagentId: RMCCocoMilk
+        Quantity: 30
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/WEYADrinks/weya_coco_milk.rsi
     layers:
@@ -81,19 +81,19 @@
 - type: entity
   parent: CMDrinkWEYAWaterBottle30
   id: RMCDrinkWEYASoylent
-  name: Weyland-Yutani Premium Choco Soylent
-  description: A plastic bottle full of gooey goodness, choco flavor. One bottle has enough calories for a lunch - don't drink it all in one sitting, better not risk getting a stomachache.
+  name: 韦兰-尤塔尼高级巧克力索伦特
+  description: 一个装满黏稠美味、巧克力风味的塑料瓶。一瓶就含有足够一顿午餐的热量——别一口气全喝完，最好别冒肚子疼的风险。
   components:
   - type: Solution
     solution:
-        maxVol: 30
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 10
-        - ReagentId: RMCSoyMilk
-          Quantity: 10
-        - ReagentId: RMCChocolateDrink
-          Quantity: 10
+      maxVol: 30
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 10
+      - ReagentId: RMCSoyMilk
+        Quantity: 10
+      - ReagentId: RMCChocolateDrink
+        Quantity: 10
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/WEYADrinks/weya_soylent.rsi
     layers:

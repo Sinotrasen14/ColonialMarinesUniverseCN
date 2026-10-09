@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: CMBaseWallInvincible
   id: CMBaseAlamoWall
-  name: fallujah wall
+  name: 费卢杰墙
   components:
   - type: Corrodible
     isCorrodible: false
@@ -674,14 +674,14 @@
 - type: entity
   parent: CMBaseAlamoWall
   id: CMAlamoWall61
-  name: port wing weapon attach point
-  description: A place where heavy equipment can be installed with a powerloader.
+  name: 左翼武器挂载点
+  description: 可使用动力装载机安装重型装备的位置。
   suffix: 61
   components:
   - type: Sprite
     layers:
     - state: "61"
-    - map: [ "enum.DropshipWeaponPointLayers.Layer" ]
+    - map: ["enum.DropshipWeaponPointLayers.Layer"]
       offset: 0.5, 0.5
   - type: Icon
     state: "61"
@@ -732,14 +732,14 @@
 - type: entity
   parent: CMBaseAlamoWall
   id: CMAlamoWall65
-  name: starboard wing weapon attach point
-  description: A place where heavy equipment can be installed with a powerloader.
+  name: 右翼武器挂载点
+  description: 可使用动力装载机安装重型装备的位置。
   suffix: 65
   components:
   - type: Sprite
     layers:
     - state: "65"
-    - map: [ "enum.DropshipWeaponPointLayers.Layer" ]
+    - map: ["enum.DropshipWeaponPointLayers.Layer"]
       offset: 0.5, 0.5
   - type: Icon
     state: "65"
@@ -952,14 +952,14 @@
 - type: entity
   parent: CMBaseAlamoWall
   id: CMAlamoWall84
-  name: port fore weapon attach point
-  description: A place where heavy equipment can be installed with a powerloader.
+  name: 左舷前部武器挂载点
+  description: 一个可使用动力装载机安装重型设备的位置。
   suffix: 84
   components:
   - type: Sprite
     layers:
     - state: "84"
-    - map: [ "enum.DropshipWeaponPointLayers.Layer" ]
+    - map: ["enum.DropshipWeaponPointLayers.Layer"]
       offset: 0.5, 0.5
   - type: Icon
     state: "84"
@@ -978,14 +978,14 @@
 - type: entity
   parent: CMAlamoWall84
   id: CMAlamoWall84Flipped
-  name: starboard fore weapon attach point
-  description: A place where heavy equipment can be installed with a powerloader.
+  name: 右舷前部武器挂载点
+  description: 可使用动力装载机安装重型设备的场所。
   suffix: 84, Flipped
   components:
   - type: Sprite
     layers:
     - state: "84_flipped"
-    - map: [ "enum.DropshipWeaponPointLayers.Layer" ]
+    - map: ["enum.DropshipWeaponPointLayers.Layer"]
       offset: 0.5, 0.5
   - type: DropshipWeaponPoint
     location: StarboardFore
@@ -1000,9 +1000,9 @@
     layers:
     - state: "85"
     - state: "85"
-      map: [ "enum.DropshipPointVisualsLayers.AttachedUtility"]
+      map: ["enum.DropshipPointVisualsLayers.AttachedUtility"]
     - state: "85"
-      map: [ "enum.DropshipPointVisualsLayers.AttachmentBase" ]
+      map: ["enum.DropshipPointVisualsLayers.AttachmentBase"]
   - type: Icon
     sprite: _RMC14/Structures/Dropships/alamo.rsi
     state: "85"
@@ -1018,9 +1018,9 @@
     layers:
     - state: "85_flipped"
     - state: "85_flipped"
-      map: [ "enum.DropshipPointVisualsLayers.AttachedUtility"]
+      map: ["enum.DropshipPointVisualsLayers.AttachedUtility"]
     - state: "85_flipped"
-      map: [ "enum.DropshipPointVisualsLayers.AttachmentBase" ]
+      map: ["enum.DropshipPointVisualsLayers.AttachmentBase"]
 
 - type: entity
   parent: CMBaseAlamoWall

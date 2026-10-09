@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: RMCPropVehicleBase
   id: RMCPropVehicleLargeBase
   abstract: true
@@ -6,8 +6,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,1.6,0.5"
         density: 190
         layer:
@@ -21,8 +20,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleAmbulance
-  name: ambulance
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 救护车
+  description: 它锁上了，似乎也坏了，别想开这个了。
   components:
   - type: Sprite
     state: ambulance
@@ -30,8 +29,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleAmbulanceF
-  name: ambulance
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 救护车
+  description: 它被锁住了，似乎已经坏了，别想着开它了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -42,8 +41,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckBlue
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型装载卡车
+  description: 它锁上了，似乎已经坏了，别想开这个了。
   components:
   - type: Sprite
     state: armored_truck_blue
@@ -51,8 +50,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckBlueF
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它锁住了，似乎也坏了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -61,8 +60,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckBlueFilled
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它锁着，而且似乎抛锚了，别想开这辆了。
   suffix: Loaded
   components:
   - type: Sprite
@@ -71,8 +70,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckBlueFilledF
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它锁着，似乎也坏掉了，别想着开它了。
   suffix: Loaded, Flipped
   components:
   - type: Sprite
@@ -81,8 +80,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckTeal
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它锁着，而且似乎已经坏了，别想开这个了。
   components:
   - type: Sprite
     state: armored_truck_teal
@@ -90,8 +89,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckTealF
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型装载卡车
+  description: 它锁上了，似乎也坏了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -100,8 +99,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckTealFilled
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它锁住了，似乎也坏了，别指望开它了。
   suffix: Loaded
   components:
   - type: Sprite
@@ -110,8 +109,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckTealFilledF
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它锁住了，似乎也坏掉了，别想开这个了。
   suffix: Loaded, Flipped
   components:
   - type: Sprite
@@ -120,8 +119,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckWhite
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它被锁住了，似乎也坏掉了，别想开这个了。
   components:
   - type: Sprite
     state: armored_truck_white
@@ -129,8 +128,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckWhiteF
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型装载卡车
+  description: 它被锁住了，似乎也坏了，别想着开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -139,8 +138,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckWhiteFilled
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它锁住了，似乎也抛锚了，别想开这个了。
   suffix: Loaded
   components:
   - type: Sprite
@@ -149,8 +148,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckWhiteFilledF
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它锁着，而且似乎已经坏了，别想开这辆车了。
   suffix: Loaded, Flipped
   components:
   - type: Sprite
@@ -159,8 +158,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckBlack
-  name: Weyland-Yutani security truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 维兰德-汤谷安保卡车
+  description: 它已上锁，而且似乎坏掉了，别想开它了。
   components:
   - type: Sprite
     state: armored_truck_wy_black
@@ -168,8 +167,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckBlackF
-  name: Weyland-Yutani security truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 维兰德-汤谷安保卡车
+  description: 它锁着，而且似乎抛锚了，别想开这辆车了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -178,8 +177,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckBlackFilled
-  name: Weyland-Yutani security truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 维兰德-汤谷安保卡车
+  description: 它锁住了，似乎也抛锚了，别想开它了。
   suffix: Loaded
   components:
   - type: Sprite
@@ -188,8 +187,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckBlackFilledF
-  name: Weyland-Yutani security truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 维兰德-汤谷安保卡车
+  description: 它被锁住了，而且似乎已经坏掉了，别想开这个了。
   suffix: Loaded, Flipped
   components:
   - type: Sprite
@@ -198,8 +197,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckWhiteWeYa
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型装载卡车
+  description: 它被锁住了，似乎还坏了，别想开这辆了。
   components:
   - type: Sprite
     state: armored_truck_wy_white
@@ -207,8 +206,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckWhiteWeYaF
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它被锁住了，而且似乎已经坏掉了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -217,8 +216,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckWhiteWeYaFilled
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它锁着，而且似乎已经坏了，别想开这辆了。
   suffix: Loaded
   components:
   - type: Sprite
@@ -227,8 +226,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLoaderTruckWhiteWeYaFilledF
-  name: heavy-loader truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 重型载重卡车
+  description: 它锁着，似乎也坏了，别想开这辆了。
   suffix: Loaded, Flipped
   components:
   - type: Sprite
@@ -239,8 +238,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanBlueGrey
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁住了，似乎也坏掉了，别想开它了。
   components:
   - type: Sprite
     state: box_van_bluegrey
@@ -248,8 +247,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanBlueGreyF
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，似乎也坏了，别想着开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -258,8 +257,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanMaintGrey
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，似乎已经坏了，别想开这个了。
   components:
   - type: Sprite
     state: box_van_maintenanceblue
@@ -267,8 +266,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanMaintGreyF
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它被锁住了，而且似乎已经坏了，别想开这辆了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -277,8 +276,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanMaintWhite
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，似乎抛锚了，别想开它了。
   components:
   - type: Sprite
     state: box_van_maintenancewhite
@@ -286,8 +285,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanMaintWhiteF
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，似乎已经坏了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -296,8 +295,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanMining
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，似乎已经坏了，别想开这辆了。
   components:
   - type: Sprite
     state: box_van_mining
@@ -305,8 +304,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanMiningF
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，而且似乎已经坏掉了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -315,8 +314,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanPizza
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，似乎还坏了，别想开这个了。
   components:
   - type: Sprite
     state: box_van_pizza
@@ -324,8 +323,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanPizzaF
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，似乎坏了，别想开这辆了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -334,8 +333,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanRed
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，而且似乎坏了，别想开它了。
   components:
   - type: Sprite
     state: box_van_red
@@ -343,8 +342,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanRedF
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁上了，而且似乎坏了，别想开这辆车了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -353,8 +352,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanWhite
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，而且似乎坏了，别想开这个了。
   components:
   - type: Sprite
     state: box_van_white
@@ -362,8 +361,8 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleBoxVanWhiteF
-  name: box van
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 厢式货车
+  description: 它锁着，似乎也坏了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -374,16 +373,15 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleLongTruckBlue
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途货运卡车
+  description: 它锁着，而且似乎坏了，别想开这个了。
   components:
   - type: Sprite
     state: longtruck_blue
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,3.3,0.75"
         density: 190
         layer:
@@ -392,8 +390,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckBlueF
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途货车
+  description: 它锁着，似乎已经坏了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -402,8 +400,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckBrown
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途卡车
+  description: 它锁着，似乎已经坏了，别想开这个了。
   components:
   - type: Sprite
     state: longtruck_brown
@@ -411,8 +409,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckBrownF
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途货运卡车
+  description: 它被锁住了，而且似乎已经坏了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -421,8 +419,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckDonk
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途货运卡车
+  description: 它被锁住了，而且似乎已经坏掉了，别想开它了。
   components:
   - type: Sprite
     state: longtruck_donk
@@ -430,8 +428,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckDonkF
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途货运卡车
+  description: 它锁上了，而且似乎坏了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -440,8 +438,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckMining
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途货车
+  description: 它锁住了，而且似乎已经坏了，别想开这辆车了。
   components:
   - type: Sprite
     state: longtruck_mining
@@ -449,8 +447,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckMiningF
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途货车
+  description: 它锁着，似乎也坏掉了，别想开这辆了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -459,8 +457,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckRed
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途货车
+  description: 它锁住了，而且好像坏了，别想开这辆了。
   components:
   - type: Sprite
     state: longtruck_red
@@ -468,8 +466,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckRedF
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途运输卡车
+  description: 它锁着，似乎也坏了，别想开它了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -478,8 +476,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckWeYaBlue
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途货车
+  description: 它锁上了，似乎也抛锚了，别想开这个了。
   components:
   - type: Sprite
     state: longtruck_wy_blue
@@ -487,8 +485,8 @@
 - type: entity
   parent: RMCPropVehicleLongTruckBlue
   id: RMCPropVehicleLongTruckWeYaBlueF
-  name: long-hauler truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 长途货运卡车
+  description: 它锁住了，似乎已经坏掉了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -499,16 +497,15 @@
 - type: entity
   parent: RMCPropVehicleLargeBase
   id: RMCPropVehicleSmallTruckBlue
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小卡车
+  description: 它被锁住了，似乎出了故障，别想开这个了。
   components:
   - type: Sprite
     state: small_truck_blue
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,1.5,0.5"
         density: 190
         layer:
@@ -517,8 +514,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckBlueF
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它锁着，似乎出故障了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -527,8 +524,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckBlueCargo
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它锁住了，似乎已经坏了，别想开这个了。
   suffix: Loaded
   components:
   - type: Sprite
@@ -537,8 +534,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckBlueCargoF
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小卡车
+  description: 它锁着，似乎也坏了，别想开这个了。
   suffix: Loaded, Flipped
   components:
   - type: Sprite
@@ -547,8 +544,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckBrown
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它锁住了，似乎也坏了，别想开这个了。
   components:
   - type: Sprite
     state: small_truck_brown
@@ -556,8 +553,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckBrownF
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它被锁上了，似乎已经抛锚了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -566,8 +563,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckBrownCargo
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它锁着，似乎坏掉了，别想开它了。
   suffix: Loaded
   components:
   - type: Sprite
@@ -576,8 +573,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckBrownCargoF
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小卡车
+  description: 它锁住了，而且似乎已经坏了，别想开它了。
   suffix: Loaded, Flipped
   components:
   - type: Sprite
@@ -586,8 +583,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckBrownCargoAlt
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它锁着，而且似乎已经坏了，别想开这个了。
   suffix: Loaded Alt
   components:
   - type: Sprite
@@ -596,8 +593,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckBrownCargoAltF
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小卡车
+  description: 它锁上了，似乎也坏了，别想开这个了。
   suffix: Loaded Alt, Flipped
   components:
   - type: Sprite
@@ -606,8 +603,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckGarbage
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小卡车
+  description: 它锁着，看起来已经坏了，别想开这个了。
   components:
   - type: Sprite
     state: small_truck_garbage
@@ -615,8 +612,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckGarbageF
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它锁着，似乎也坏了，别想开它了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -625,8 +622,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckGreen
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小卡车
+  description: 它锁住了，似乎已经坏了，别想开这个了。
   components:
   - type: Sprite
     state: small_truck_green
@@ -634,8 +631,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckGreenF
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它锁着，而且似乎坏了，别想着开它了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -644,8 +641,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckMedical
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小卡车
+  description: 它锁上了，似乎也坏了，别想开这辆了。
   components:
   - type: Sprite
     state: small_truck_medical
@@ -653,8 +650,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckMedicalF
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小卡车
+  description: 它被锁住了，似乎已经坏了，别想着开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -663,8 +660,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckMining
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它锁着，看起来也坏掉了，别想开它了。
   components:
   - type: Sprite
     state: small_truck_mining
@@ -672,8 +669,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckMiningF
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它被锁住了，而且似乎已经坏了，别想开这个了。
   suffix: Flipped
   components:
   - type: Sprite
@@ -682,8 +679,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckRed
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小型卡车
+  description: 它锁上了，而且似乎坏了，别想开这个了。
   components:
   - type: Sprite
     state: small_truck_red
@@ -691,8 +688,8 @@
 - type: entity
   parent: RMCPropVehicleSmallTruckBlue
   id: RMCPropVehicleSmallTruckRedF
-  name: small truck
-  description: It's locked and seems to be broken down, forget driving this.
+  name: 小卡车
+  description: 它锁着，似乎坏了，别想开它了。
   suffix: Flipped
   components:
   - type: Sprite

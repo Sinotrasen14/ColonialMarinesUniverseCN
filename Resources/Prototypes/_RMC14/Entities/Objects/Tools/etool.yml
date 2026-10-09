@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: CMEntrenchingTool
-  name: entrenching tool
-  description: Used to dig holes and bash heads in. Folds in to fit in small spaces.
+  name: 工兵铲
+  description: 用来挖洞和砸脑袋。可折叠，以便放入狭小空间。
   components:
   - type: Tag
     tags:
@@ -14,11 +14,11 @@
     sprite: _RMC14/Objects/Tools/etool.rsi
     layers:
     - state: etool
-      map: [ "enum.EntrenchingToolComponentVisualLayers.Base" ]
+      map: ["enum.EntrenchingToolComponentVisualLayers.Base"]
     - state: etool_c
-      map: [ "enum.EntrenchingToolComponentVisualLayers.Folded" ]
+      map: ["enum.EntrenchingToolComponentVisualLayers.Folded"]
     - state: etool_overlay
-      map: [ "enum.EntrenchingToolComponentVisualLayers.Dirt" ]
+      map: ["enum.EntrenchingToolComponentVisualLayers.Dirt"]
       visible: false
   - type: Item
     size: Small

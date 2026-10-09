@@ -1,16 +1,16 @@
-﻿- type: entity
-  name: M41AE2 heavy pulse rifle
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+- type: entity
+  name: M41AE2重型脉冲步枪
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: RMCWeaponRifleM54CE2
-  description: A large squad support weapon capable of laying down sustained suppressing fire from a mounted position. While unstable and less accurate, it can be lugged and shot with two hands.
+  description: 一种大型班组支援武器，能够从架设位置持续进行压制射击。虽然不稳定且精度较低，但可以双手提携并射击。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m54ce2/desert.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m54ce2/desert.rsi
   - type: Tag
@@ -58,7 +58,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineRifleM54CE2
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/hpr_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/hpr_unload.ogg
@@ -121,14 +121,14 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: CMMagazineRifleM54CE2
-  name: "M41AE2 magazine (10x24mm)"
+  name: "M41AE2弹匣（10×24毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - CMMagazineRifleM54CE2
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mm
@@ -159,10 +159,10 @@
 - type: entity
   parent: CMMagazineRifleM54CE2
   id: CMMagazineRifleM54CE2HT
-  name: "M41AE2 HT magazine (10x24mm)"
+  name: "M41AE2 HT 弹匣（10×24毫米）"
   components:
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mmHT
@@ -172,17 +172,17 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m54ce2/desert.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#38CBE0"
 
 - type: entity
   parent: CMCartridgeRifle10x24mm
   id: CMCartridgeRifle10x24mmHT
-  name: cartridge (10x24mm)
-  description: A 10x24mm HT cartridge. Fits in 10x24mm holo targeting magazines.
+  name: 弹药（10x24毫米）
+  description: 10x24毫米HT弹药。可装入10x24毫米全息瞄准弹匣。
   components:
   - type: Tag
     tags:
@@ -194,7 +194,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: BulletRifle10x24mmHT
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -205,10 +205,10 @@
 - type: entity
   parent: CMMagazineRifleM54CE2
   id: CMMagazineRifleM54CE2AP
-  name: "M41AE2 AP magazine (10x24mm)"
+  name: "M41AE2 穿甲弹匣（10×24毫米）"
   components:
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mmAP
@@ -218,19 +218,19 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m54ce2/desert.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#1F951F"
 
 - type: entity
   parent: CMMagazineRifleM54CE2
   id: RMCMagazineRifleM54CE2HEAP
-  name: "M41AE2 HEAP magazine (10x24mm)"
+  name: "M41AE2高爆穿甲弹匣（10×24毫米）"
   components:
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle10x24mmHEAP
@@ -240,19 +240,19 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m54ce2/desert.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#9C9A19"
 
 - type: entity
   parent: CMMagazineRifleM54CE2
   id: RMCMagazineRifleM54CE2WP
-  name: "M41AE2 WP magazine (10x24mm)"
+  name: "M41AE2 WP 弹匣（10×24毫米）"
   components:
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle10x24mmWP
@@ -262,19 +262,19 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m54ce2/desert.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#6365E6"
 
 - type: entity
   parent: CMMagazineRifleM54CE2
   id: RMCMagazineRifleM54CE2Incendiary
-  name: "M41AE2 incendiary magazine (10x24mm)"
+  name: "M41AE2燃烧弹弹匣（10×24毫米）"
   components:
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle10x24mmIncendiary
@@ -284,9 +284,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m54ce2/desert.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#771A10"
 

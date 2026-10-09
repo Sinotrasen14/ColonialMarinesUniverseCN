@@ -115,29 +115,29 @@
 
 - type: entity
   id: PuddleSparkle
-  name: sparkle
+  name: 闪耀 | sparkle
   placement:
     mode: SnapgridCenter
   components:
     # Animation is like 3 something seconds so we just need to despawn it before then.
-    - type: TimedDespawn
-      lifetime: 1
-    - type: EvaporationSparkle
-    - type: Transform
-      noRot: true
-      anchored: true
-    - type: Sprite
-      layers:
-        - sprite: Fluids/wet_floor_sparkles.rsi
-          state: sparkles
-      drawdepth: Puddles
-      color: "#FFFFFF80"
+  - type: TimedDespawn
+    lifetime: 1
+  - type: EvaporationSparkle
+  - type: Transform
+    noRot: true
+    anchored: true
+  - type: Sprite
+    layers:
+    - sprite: Fluids/wet_floor_sparkles.rsi
+      state: sparkles
+    drawdepth: Puddles
+    color: "#FFFFFF80"
 
 - type: entity
   parent: SolutionTile
   id: Puddle
-  name: puddle
-  description: A puddle of liquid.
+  name: 水洼 | puddle
+  description: 一滩液体。 | A puddle of liquid.
   placement:
     mode: SnapgridCenter
   components:
@@ -161,8 +161,7 @@
   - type: Fixtures
     fixtures:
       slipFixture:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         mask:
         - ItemMask

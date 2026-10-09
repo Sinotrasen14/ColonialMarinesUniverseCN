@@ -22,18 +22,16 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -43,8 +41,8 @@
 - type: entity
   parent: RMCStreamerBase
   id: RMCStreamerPole
-  name: pole
-  description: It connects streamer to streamer.
+  name: 杆
+  description: 它连接杆与杆。
 
 - type: entity
   parent: RMCStreamerPole
@@ -81,8 +79,8 @@
 - type: entity
   parent: RMCStreamerBase
   id: RMCStreamerOrange
-  name: orange streamer
-  description: They flutter softly. Poignant.
+  name: 橙色飘带
+  description: 它们轻柔地飘动。凄美。
   components:
   - type: Sprite
     state: streamer
@@ -138,7 +136,7 @@
 - type: entity
   parent: RMCStreamerOrange
   id: RMCStreamerHorizon
-  name: horizon streamer
+  name: 地平线飘带
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/horizon_streamers.rsi
@@ -146,7 +144,7 @@
 - type: entity
   parent: RMCStreamerOrangeOffset
   id: RMCStreamerHorizonOffset
-  name: horizon streamer
+  name: 地平线主播
   suffix: Offset
   components:
   - type: Sprite

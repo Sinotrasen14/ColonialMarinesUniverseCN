@@ -3,19 +3,19 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechFLGear
-  name: ColMarTech fireteam leader gear rack
-  description: An automated gear rack for fireteam leaders.
+  name: ColMarTech 火力小组组长装备架
+  description: 火力小组组长的自动化装备架。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessFTLPrep" ]
+    - ["CMAccessFTLPrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/fireteam_leader_gear.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMFireteamLeader
     sections:
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
@@ -39,7 +39,7 @@
         points: 5
     # -id: RMCElectroshockGrenadex3
     #  points: 16
-    - name: Primary Ammunition
+    - name: 主用弹药
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 10
@@ -57,7 +57,7 @@
         points: 10
       - id: CMMagazineRifleM54CExt
         points: 10
-    - name: Sidearm Ammunition
+    - name: 副武器弹药
       entries:
       - id: RMCMagazinePistolM13Ext
         points: 6
@@ -73,7 +73,7 @@
         points: 5
       - id: RMCMagazinePistolSU6
         points: 10
-    - name: Restricted Firearms
+    - name: 受限枪支
       entries:
       - id: RMCGunCasePistolMK80
         points: 10
@@ -81,32 +81,32 @@
         points: 15
       - id: RMCM85A1Case
         points: 30
-    - name: Armors
+    - name: 护甲
       entries:
       - id: CMArmorB12
         points: 30
-    - name: Clothing Items
+    - name: 服装物品
       entries:
       - id: RMCBackpackRTO
         points: 5
       - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
+        name: 砍刀刀鞘（满）
         points: 5
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
+        name: 砍刀袋（满）
         points: 15
       - id: RMCWeldingGoggles
         points: 3
       - id: CMBeltUtilityCombat
         points: 15
       - id: RMCPouchAutoinjectorFill
-        name: autoinjector pouch (Full)
+        name: 自动注射器袋（满）
         points: 15
       - id: CMHandsInsulated
         points: 3
       - id: CMHandsBlackInsulated
         points: 3
-    - name: Engineering Supplies
+    - name: 工程用品
       entries:
       - id: RMCExplosivePlastic
         points: 10
@@ -118,7 +118,7 @@
 #        points: 10
       - id: CMWelderSmall
         points: 5
-    - name: Utilities
+    - name: 实用工具
       entries:
       - id: RMCMotionDetector
         points: 15
@@ -131,7 +131,7 @@
         points: 5
       - id: RMCWhistle
         points: 5
-    - name: Binoculars
+    - name: 双筒望远镜
       entries:
       - id: RMCBinoculars
         points: 5
@@ -139,7 +139,7 @@
         points: 10
       - id: RMCLaserDesignator
         points: 15
-    - name: Helmet Optics
+    - name: 头盔光学
       entries:
       - id: RMCVisorNightVision
         points: 30
@@ -148,7 +148,7 @@
         points: 15
       - id: RMCVisorWelding
         points: 5
-    - name: Radio Keys
+    - name: 无线电钥匙
       entries:
       - id: CMEncryptionKeyEngineer
         points: 5
@@ -164,19 +164,19 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechFLEquipment
-  name: ColMarTech fireteam leader equipment rack
-  description: An automated rack hooked up to a colossal storage of fireteam leader standard-issue equipment.
+  name: ColMarTech 火力小组组长装备架
+  description: 连接到火力小组组长标准配发装备海量储备库的自动化装备架。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessFTLPrep" ]
+    - ["CMAccessFTLPrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMFireteamLeader
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleFireteamLeaderApparel
@@ -185,19 +185,19 @@
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
       - id: RMCVendorBundleCrewFireteamLeader
-    - name: Gloves
-      choices: { CMHands: 1 }
+    - name: 手套
+      choices: {CMHands: 1}
       entries:
       - id: CMHandsInsulated
       - id: CMHandsBlackInsulated
-    - name: Armor
-      choices: { CMArmor: 1 }
+    - name: 护甲
+      choices: {CMArmor: 1}
       entries:
       - id: CMArmorM4
         recommended: true
       - id: RMCArmorVestSquad
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltUtilityGeneral
       - id: CMBeltMarine
@@ -210,23 +210,23 @@
       - id: RMCM82FHolster
       - id: RMCM276ShotgunShellLoadingRig
       - id: CMBeltUtilityFilled
-        name: M276 pattern toolbelt rig (Full)
+        name: M276型工具腰带装备（完整版）
         recommended: true
       - id: RMCBeltGrenade
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可补充注射器）
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救袋（纱布、药膏）                        # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救袋（药片）
       - id: RMCPouchFirstResponder
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: 信号弹袋（满）
       - id: RMCPouchFuelTank
       - id: RMCPouchGeneralLarge
       - id: RMCPouchSling
@@ -236,9 +236,9 @@
       - id: RMCPouchPistol
       - id: RMCPouchToolsFill
         recommended: true
-        name: Tools pouch (Full)
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+        name: 工具袋（已满）
+    - name: 配件
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBlack
       - id: RMCWebbingLegPouch
@@ -251,8 +251,8 @@
       - id: RMCWebbingDropPouchBlack
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Mask
-      choices: { CMMask: 1 }
+    - name: 面具
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
@@ -261,8 +261,8 @@
 - type: entity
   parent: CMVendorBundleRiflemanApparel
   id: RMCVendorBundleCrewFireteamLeader
-  name: essential fireteam leader utilities
-  description: Contains a laser designator, and two packs of signal flares.
+  name: 火力小组组长必备装备
+  description: 包含一个激光指示器，以及两包信号弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/binoculars.rsi

@@ -1,16 +1,16 @@
 # Rifles (Empty)
 
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: RMCWeaponRifleL89A1
-  name: L88A1 marksman rifle
-  description: The L89A1 is the standard-issue DMR of the RMC's Paramarine regiments, a lightweight and reliable marksman rifle that boasts an integrated 2x optic.
+  name: L88A1 精确射手步枪
+  description: L89A1 是 RMC 伞兵陆战团的标准配发精确射手步枪，这是一种轻便可靠、配备一体化 2 倍瞄准镜的射手步枪。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/l89.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: ItemMapper
     mapLayers:
       mag-0:
@@ -44,11 +44,11 @@
     falloffMultiplier: 0
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -94,8 +94,8 @@
 - type: entity
   parent: RMCWeaponRifleL89A1
   id: RMCWeaponRifleL89A2
-  name: L88A2 marksman rifle
-  description: The L89A2 is the upgraded DMR of the RMC's Paramarine regiments, a lightweight and reliable marksman rifle that boasts an integrated 2x optic now with greater modularity with a rail spanning the underside of the handguard.
+  name: L88A2精确射手步枪
+  description: L89A2 是 RMC 伞降陆战团升级后的精确射手步枪，是一款轻便可靠的射手步枪，配备集成式 2 倍瞄准镜，并因护木下方贯穿的导轨而拥有更强的模块化能力。
   components:
   - type: AttachableHolder
     slots:
@@ -140,7 +140,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL88
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg

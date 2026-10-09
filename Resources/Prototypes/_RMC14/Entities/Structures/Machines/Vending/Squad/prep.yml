@@ -2,12 +2,12 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechGuns
-  name: ColMarTech automated weapons rack
-  description: An automated weapon rack hooked up to a big storage of standard-issue weapons.
+  name: ColMarTech 自动化武器架
+  description: 一个连接着大型制式武器储备库的自动化武器架。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessMarinePrep" ]
+    - ["CMAccessMarinePrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
   - type: CMAutomatedVendor
@@ -15,7 +15,7 @@
     - "CMAccessMarinePrep"
     hackable: true
     sections:
-    - name: Primary firearms
+    - name: 主要枪械
       entries:
       - id: WeaponRifleM4SPR
         amount: 10
@@ -26,7 +26,7 @@
       - id: RMCWeaponRifleM54C
         amount: 30
         recommended: true
-    - name: Primary ammunition
+    - name: 主弹药
       entries:
       - id: RMCBoxShotgunFlechette
         amount: 4
@@ -40,7 +40,7 @@
         amount: 25
       - id: CMMagazineRifleM54C
         amount: 25
-    - name: Sidearms
+    - name: 副武器
       entries:
       - id: RMCWeaponPistolM77Empty
         amount: 25
@@ -52,7 +52,7 @@
         amount: 25
       - id: RMCWeaponPistolM82FEmpty
         amount: 10
-    - name: Sidearm ammunition
+    - name: 副武器弹药
       entries:
       - id: CMMagazinePistolM77AP
         amount: 25
@@ -62,7 +62,7 @@
         amount: 25
       - id: RMCMagazinePistolM13
         amount: 25
-    - name: Attachments
+    - name: 附件
       entries:
       - id: RMCAttachmentM63StockCollapsible
         amount: 10
@@ -76,14 +76,14 @@
         recommended: true
       - id: RMCAttachmentU1GrenadeLauncher
         amount: 25
-    - name: Utilities
+    - name: 公用事业
       entries:
       - id: RMCM5Bayonet
         amount: 25
       - id: CMPackFlare
         amount: 10
         recommended: true
-    - name: Magazine Boxes
+    - name: 杂志盒
       hasBoxes: true
       jobs:
       - CMQuartermaster
@@ -112,25 +112,25 @@
         box: CMMagazinePistolM1984
       - id: RMCBoxMagazinePistolM13
         box: RMCMagazinePistolM13
-    - name: Ammunition Boxes
+    - name: 弹药箱
       hasBoxes: true
       jobs:
       - CMQuartermaster
       - CMCargoTech
       entries:
       - id: RMCBoxBulletsRifle
-        name: rifle ammunition box (10x24mm) (M4SPR)
+        name: 步枪弹药箱（10×24毫米）（M4SPR）
         box: CMMagazineRifleM4SPR
         boxSlots: 24 # 600 / 25
       - id: RMCBoxBulletsSMG
-        name: SMG HV ammunition box (10x20mm) (M63)
+        name: 冲锋枪高速弹药箱（10×20毫米）（M63）
         box: CMMagazineSMGM63
         boxSlots: 13 # 600 / 48, yes we lose half a mag to the void
       - id: RMCBoxBulletsRifle
-        name: rifle ammunition box (10x24mm) (M54C)
+        name: 步枪弹药箱（10×24毫米）（M54C）
         box: CMMagazineRifleM54C
         boxSlots: 15 # 600 / 40
-    - name: Other Boxes
+    - name: 其他盒子
       hasBoxes: true
       jobs:
       - CMQuartermaster
@@ -142,12 +142,12 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechSurplus
-  name: ColMarTech surplus uniform vendor
-  description: An automated rack hooked up to a small storage of standard marine uniforms.
+  name: ColMarTech 剩余军服自动售货机
+  description: 一个自动货架，连接着一个小型标准海军陆战队制服储存库。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessMarinePrep" ]
+    - ["CMAccessMarinePrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
@@ -155,7 +155,7 @@
     - "CMAccessMarinePrep"
     hackable: true
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       entries:
       - id: CMBootsBlack
         amount: 15
@@ -175,7 +175,7 @@
         amount: 15
       - id: ArmorHelmetM10
         amount: 15
-    - name: Webbings
+    - name: 织带
       entries:
       - id: CMWebbingBrown
         amount: 1
@@ -197,7 +197,7 @@
         amount: 1
       - id: RMCWebbingHolsterBlack
         amount: 1
-    - name: Armor
+    - name: 护甲
       entries:
       - id: RMCArmorVestSquad
         amount: 15
@@ -217,7 +217,7 @@
         amount: 10
       - id: RMCArmorM3LightPadded
         amount: 10
-    - name: Backpack
+    - name: 背包
       entries:
       - id: CMBackpackMarine
         amount: 15
@@ -237,7 +237,7 @@
         amount: 15
       - id: RMCScabbardShotgun
         amount: 5
-    - name: Restricted Backpacks
+    - name: 受限背包
       entries:
       - id: CMBackpackWelder
         amount: 1
@@ -245,7 +245,7 @@
         amount: 2
       - id: RMCBackpackRTO
         amount: 1
-    - name: Belts
+    - name: 腰带
       entries:
       - id: CMBeltMarine
         amount: 15
@@ -266,23 +266,23 @@
       - id: RMCM82FHolster
         amount: 5
       - id: CMBeltKnifeFilled
-        name: M276 Knife Rig (Full)
+        name: M276 刀具装备（完整）
         amount: 15
       - id: RMCBeltUtilityGeneral
         amount: 15
-    - name: Pouches
+    - name: 小袋
       entries:
       - id: RMCPouchBayonetFill
-        name: Bayonet Sheath (Full)
+        name: 刺刀鞘（完整）
         amount: 15
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: First-Aid Pouch (Splints, Gauze, Ointment)
+        name: 急救包（夹板、纱布、药膏）
         amount: 15
       - id: RMCPouchFirstAidPills
-        name: First-Aid Pouch (Pill Packets)
+        name: 急救袋（药片袋）
         amount: 15
       - id: RMCPouchFlareFilled
-        name: Flare Pouch (Full)
+        name: 信号弹袋（满）
         amount: 15
       - id: RMCPouchDocumentSmall
         amount: 15
@@ -296,14 +296,14 @@
         amount: 15
       - id: RMCPouchPistol
         amount: 15
-    - name: Restricted Pouches
+    - name: 受限袋
       entries:
       - id: RMCPouchConstruction
         amount: 1
       - id: RMCPouchExplosive
         amount: 1
       - id: RMCPouchFirstResponder
-        name: First Responder Pouch (Empty)
+        name: 急救员工具袋（空）
         amount: 2
       - id: RMCPouchMagazinePistolLarge
         amount: 2
@@ -311,7 +311,7 @@
         amount: 1
       - id: RMCPouchSling
         amount: 1
-    - name: Mask
+    - name: 面具
       entries:
       - id: CMMaskGas
         amount: 15
@@ -319,7 +319,7 @@
         amount: 10
       - id: RMCMaskRebreather
         amount: 10
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: RMCGogglesBallistic
         amount: 10
@@ -334,47 +334,47 @@
       - id: RMCGlassesMarineRpgOld
         amount: 10
       - id: RMCHelmetGarbGasmask
-        name: M5 integrated gas mask
+        name: M5集成式防毒面具
         amount: 10
       - id: RMCHelmetGarbNetting
-        name: M10 helmet netting
+        name: M10头盔网罩
         amount: 10
       - id: RMCHelmetGarbRainCover
-        name: M10 helmet rain cover
+        name: M10头盔防雨罩
         amount: 10
       - id: RMCPoncho
-        name: UNMC poncho
+        name: UNMC 斗篷
         amount: 10
       - id: RMCHelmetGarbGunOil
-        name: firearm lubricant
+        name: 枪械润滑剂
         amount: 15
       - id: RMCHelmetGarbUNMCFlair
         amount: 15
       - id: RMCPatchFallingFalcons
         amount: 15
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国肩章
         amount: 15
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 陨落猎鹰大号胸章
         amount: 15
       - id: RMCPatchUNMC
-        name: UNMC shoulder patch
+        name: UNMC肩章
         amount: 15
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: 联合国臂章
         amount: 15
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
         amount: 15
       - id: BedrollFolded
         amount: 20
       - id: RMCM5CameraGear
         amount: 10
-    - name: Optics
+    - name: 光学
       entries:
       - id: RMCVisorMedicalAdvanced
-        name: advanced medical optic (CORPSMAN ONLY)
+        name: 高级医疗光学（仅限医务兵）
         amount: 4
       - id: RMCVisorSquad
         amount: 15
@@ -382,13 +382,13 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechMunitions
-  name: ColMarTech automated munition squad vendor
-  description: An automated supply rack hooked up to a small storage of various ammunition types. Can be accessed by any Marine Rifleman.
+  name: ColMarTech自动弹药班售货机
+  description: 一个自动补给架，连接着一个存放多种弹药的小型储备库。任何海军陆战队步枪兵均可取用。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessMarinePrep" ]
-    - [ "CMAccessRequisitions" ]
+    - ["CMAccessMarinePrep"]
+    - ["CMAccessRequisitions"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/requisitions_ammo.rsi
   - type: CMAutomatedVendor
@@ -397,7 +397,7 @@
     - "CMAccessRequisitions"
     hackable: true
     sections:
-    - name: Armor-Piercing Ammunition
+    - name: 穿甲弹药
       entries:
       - id: CMMagazineRifleM4SPRAP
         amount: 4
@@ -409,7 +409,7 @@
         amount: 3
       - id: CMMagazineRifleM54CAP
         amount: 3
-    - name: Extended Ammunition
+    - name: 扩展弹药
       entries:
       - id: CMMagazineRifleM4SPRExt
         amount: 2
@@ -419,7 +419,7 @@
         amount: 2
       - id: RMCMagazinePistolM13Ext
         amount: 4
-    - name: Special Ammunition
+    - name: 特殊弹药
       entries:
       - id: RMCMagazineSmartGun
         amount: 1
@@ -429,7 +429,7 @@
         amount: 2
       - id: RMCMagazinePistolM1984AP
         amount: 2
-    - name: Restricted Firearm Ammunition
+    - name: 受限枪支弹药
       entries:
       - id: CMMagazinePistolMK80
         amount: 6
@@ -453,13 +453,13 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechUtilities
-  name: ColMarTech automated utilities squad vendor
-  description: An automated supply rack hooked up to a small storage of various utilities and tools. Can be accessed by any Marine Rifleman.
+  name: ColMarTech 自动工具与用品小队售货机
+  description: 一个自动补给架，连接着一个存放各类用品和工具的小型仓库。任何陆战队步枪兵都可以使用。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessMarinePrep" ]
-    - [ "CMAccessRequisitions" ]
+    - ["CMAccessMarinePrep"]
+    - ["CMAccessRequisitions"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/attachments.rsi
   - type: CMAutomatedVendor
@@ -468,13 +468,13 @@
     - "CMAccessRequisitions"
     hackable: true
     sections:
-    - name: Food
+    - name: 食物
       entries:
       - id: CMMRE
         amount: 5
       - id: RMCBoxMRE
         amount: 1
-    - name: Tools
+    - name: 工具
       entries:
       - id: CMEntrenchingTool
         amount: 2
@@ -490,7 +490,7 @@
         amount: 1
       - id: CMWelderSmall
         amount: 1
-    - name: Flare and light
+    - name: 闪光与光
       entries:
       - id: RMCFlashlight # Combat Flashlight
         amount: 5
@@ -502,7 +502,7 @@
         amount: 10
       - id: RMCPackFlareCAS
         amount: 1
-    - name: Miscellaneous
+    - name: 其他
       entries:
       - id: RMCEngineerKit
         amount: 1
@@ -515,7 +515,7 @@
       - id: CMRollerBedSpawnFolded
         amount: 1
       - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
+        name: 砍刀鞘（满）
         amount: 5
       - id: RMCBinoculars
         amount: 1
@@ -531,13 +531,13 @@
 - type: entity
   parent: ColMarTechBase
   id: CMVendorAttachments
-  name: ARMAT Battlefield Systems squad attachments vendor
-  description: An automated supply rack hooked up to a small storage of weapons attachments. Can be accessed by any Marine Rifleman.
+  name: ARMAT 战场系统小队配件供应商
+  description: 一个连接到小型武器配件储存处的自动补给架。任何海军陆战队步枪兵均可使用。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessMarinePrep" ]
-    - [ "CMAccessRequisitions" ]
+    - ["CMAccessMarinePrep"]
+    - ["CMAccessRequisitions"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/attachments.rsi
   - type: CMAutomatedVendor
@@ -546,7 +546,7 @@
     - "CMAccessRequisitions"
     hackable: true
     sections: # TODO RMC14
-    - name: Barrel
+    - name: 桶
       entries:
       - id: RMCAttachmentExtendedBarrel
         amount: 3
@@ -562,7 +562,7 @@
         amount: 3
       - id: RMCAttachmentShotgunChoke
         amount: 2
-    - name: Rail
+    - name: 铁路
       entries:
       - id: RMCAttachmentB8SmartScope
         amount: 2
@@ -578,7 +578,7 @@
         amount: 3
       - id: RMCAttachmentS84xTelescopicScope
         amount: 2
-    - name: Underbarrel
+    - name: 下挂
       entries:
       - id: RMCAttachmentAngledGrip
         amount: 3
@@ -602,7 +602,7 @@
         amount: 2
       - id: RMCAttachmentVerticalGrip
         amount: 3
-    - name: Stock
+    - name: 股票
       entries:
       - id: RMCAttachmentM13StockSolid
         amount: 2

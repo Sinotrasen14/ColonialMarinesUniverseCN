@@ -23,8 +23,8 @@
 - type: entity
   parent: CMBaseWindow
   id: RMCWindowChigusa
-  name: reinforced window
-  description: A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+  name: 强化窗
+  description: 一扇玻璃窗，墙框内嵌有特殊的杆状矩阵。它看起来相当坚固。可能需要几次重击才能将其打碎。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/chigusa.rsi
@@ -41,32 +41,30 @@
   - type: Repairable
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 600 # excessive damage destroys window and frame
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              CMShardGlass:
-                min: 1
-                max: 1
-              CMRodMetal:
-                min: 1
-                max: 1
-          - !type:ChangeConstructionNodeBehavior
-            node: windowFrameChigusa
+    - trigger: !type:DamageTrigger
+        damage: 600   # excessive damage destroys window and frame
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+          CMRodMetal:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: windowFrameChigusa
   - type: RMCWallExplosionDeletable
   - type: DestroyedByExplosionType
   - type: Construction
@@ -102,8 +100,8 @@
 - type: entity
   parent: CMBaseWindow
   id: RMCWindowHangar
-  name: reinforced window
-  description: A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+  name: 加固窗户
+  description: 一扇嵌在墙框内、带有特殊杆状矩阵的玻璃窗。它看起来相当坚固。可能要猛击几下才能打碎它。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/hangar.rsi
@@ -120,32 +118,30 @@
   - type: Repairable
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 600 # excessive damage destroys window and frame
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              CMShardGlass:
-                min: 1
-                max: 1
-              CMRodMetal:
-                min: 1
-                max: 1
-          - !type:ChangeConstructionNodeBehavior
-            node: windowFrameHangar
+    - trigger: !type:DamageTrigger
+        damage: 600   # excessive damage destroys window and frame
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+          CMRodMetal:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: windowFrameHangar
   - type: RMCWallExplosionDeletable
   - type: DestroyedByExplosionType
   - type: Construction
@@ -181,8 +177,8 @@
 - type: entity
   parent: CMBaseWindow
   id: RMCWindowBunker
-  name: reinforced window
-  description: A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+  name: 加固窗户
+  description: 一扇玻璃窗，墙框内嵌有特殊的杆状矩阵。它看起来相当坚固。可能需要几下重击才能将其打碎。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/bunker.rsi
@@ -199,32 +195,30 @@
   - type: Repairable
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 600 # excessive damage destroys window and frame
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              CMShardGlass:
-                min: 1
-                max: 1
-              CMRodMetal:
-                min: 1
-                max: 1
-          - !type:ChangeConstructionNodeBehavior
-            node: windowFrameBunker
+    - trigger: !type:DamageTrigger
+        damage: 600   # excessive damage destroys window and frame
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+          CMRodMetal:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: windowFrameBunker
   - type: RMCWallExplosionDeletable
   - type: DestroyedByExplosionType
   - type: Construction

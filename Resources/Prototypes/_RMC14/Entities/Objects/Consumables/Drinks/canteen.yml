@@ -13,10 +13,10 @@
       - Xeno
   - type: Solution
     solution:
-        maxVol: 60
-        reagents:
-        - ReagentId: Water
-          Quantity: 60
+      maxVol: 60
+      reagents:
+      - ReagentId: Water
+        Quantity: 60
   - type: Tag
     tags:
     - DrinkGlass
@@ -37,23 +37,22 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: GlassBreak
-      - !type:SpillBehavior { }
+      - !type:SpillBehavior {}
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: RMCFlask
 
 - type: entity
   parent: CMCanteenBase
   id: CMCanteen
-  name: canteen
-  description: You take a sip from your trusty Marine canteen...
+  name: 水壶
+  description: 你从你可靠的海军陆战队水壶里抿了一口……
   components:
   - type: Sprite
     state: canteen
@@ -61,21 +60,21 @@
 - type: entity
   parent: CMCanteenBase
   id: CMMetalFlask
-  name: metal flask
-  description: A metal flask with a decent liquid capacity.
+  name: 金属瓶
+  description: 液体容量不错的金属瓶。
   suffix: Empty
   components:
   - type: Sprite
     state: flask
   - type: Solution
     solution:
-        maxVol: 60
+      maxVol: 60
 
 - type: entity
   parent: CMCanteenBase
   id: CMMarineFlask
-  name: Marine flask
-  description: A metal flask embossed with the United States Marine Corps logo and probably filled with a slurry of water, motor oil, and medicinal alcohol.
+  name: 海军陆战队水壶
+  description: 一种金属水壶，压印有美国海军陆战队标志，里面很可能装着水、机油和医用酒精混合而成的浆液。
   components:
   - type: Sprite
     state: flask_marine
@@ -83,8 +82,8 @@
 - type: entity
   parent: CMCanteenBase
   id: CMWEYAFlask
-  name: We-Ya flask
-  description: A metal flask embossed with We-Yu's signature logo that some corporate bootlicker probably ordered to be stocked in UA military vessels' canteen vendors.
+  name: We-Ya 水壶
+  description: 一个金属水壶，上面压印着We-Yu的标志性徽标，大概是某个企业马屁精下令备货到UA军舰食堂小卖部的。
   components:
   - type: Sprite
     state: flask_we_ya
@@ -92,8 +91,8 @@
 - type: entity
   parent: [CMCanteenBase, DrinkBaseOpenable, DrinkVisualsOpenable]
   id: RMCWeYaThermos
-  name: We-Ya thermos
-  description: A sleek metal thermos, decorated with the colours of the Weyland-Yutani Corporation. The marketing claims it can withstands equivalent to a nuclear blast, though that's probably just PR talking.
+  name: We-Ya 保温瓶
+  description: 一款造型流畅的金属保温瓶，饰有维兰德-汤谷公司的配色。营销宣传声称它能承受相当于核爆的冲击，不过这大概只是公关说辞。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/weya_thermos.rsi

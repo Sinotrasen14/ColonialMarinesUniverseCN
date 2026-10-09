@@ -1,8 +1,8 @@
 - type: entity
   id: CMWashingMachine
   parent: BaseStructure
-  name: washing machine
-  description: The WM-321 is a rugged, cylindrical powerhouse, equipped with a transparent window. This one is not operational.
+  name: 洗衣机
+  description: WM-321 是一款坚固耐用的圆柱形强力设备，配备透明视窗。这一台无法运行。
   placement:
     mode: SnapgridCenter
   components:
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.3
         density: 155
         mask:
@@ -28,8 +27,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior
@@ -48,7 +46,7 @@
     sprite: _RMC14/Structures/Furniture/washing_machine.rsi
     layers:
     - state: washing_machine_closed
-      map: [ "enum.OpenableVisuals.Layer" ]
+      map: ["enum.OpenableVisuals.Layer"]
     snapCardinals: true
   - type: Openable
     openOnActivate: true
@@ -62,25 +60,25 @@
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: { state: washing_machine_open }
-          False: { state: washing_machine_closed }
+          true: {state: washing_machine_open}
+          false: {state: washing_machine_closed}
   - type: RMCMesonsNonviewable
 
 - type: entity
   parent: CMWashingMachine
   id: CMWashingMachineDouble
-  name: washing machine (double)
+  name: 洗衣机（双缸）
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/washing_machine.rsi
     offset: "0.0,0.09"
     layers:
     - state: washing_machine_double_closed
-      map: [ "enum.OpenableVisuals.Layer" ]
+      map: ["enum.OpenableVisuals.Layer"]
     snapCardinals: true
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: { state: washing_machine_double_open }
-          False: { state: washing_machine_double_closed }
+          true: {state: washing_machine_double_open}
+          false: {state: washing_machine_double_closed}

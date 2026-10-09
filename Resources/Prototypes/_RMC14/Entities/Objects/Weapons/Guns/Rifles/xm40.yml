@@ -1,16 +1,16 @@
-﻿- type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: XM40 assault rifle
+- type: entity
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: XM40突击步枪
   id: RMCWeaponRifleXM40
-  description: One of the experimental predecessors to the M41A line that never saw widespread adoption beyond elite marine units. Of the rifles in the USCM inventory that are still in production, this is the only one to feature an integrated suppressor. It can accept M41A MK2 magazines, but also features its own proprietary magazine system. Extremely lethal in burstfire mode.
+  description: M41A系列的实验性前身之一，除精英海军陆战队外从未被广泛采用。在USCM库存中仍在生产的步枪中，这是唯一一款配备一体化消音器的。它可以使用M41A MK2弹匣，但也拥有自己的专有弹匣系统。在点射模式下极其致命。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/xm40.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/xm40.rsi
   - type: ContainerContainer
@@ -45,7 +45,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleXM40HEAP
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -92,14 +92,14 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleXM40AP
-  name: "XM40 AP magazine (10x24mm)"
+  name: "XM40 AP弹匣（10x24毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleXM40AP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mmAP
@@ -123,14 +123,14 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleXM40HEAP
-  name: "XM40 HEAP magazine (10x24mm)"
+  name: "XM40高爆穿甲弹匣（10×24毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleXM40HEAP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle10x24mmHEAP

@@ -1,9 +1,9 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem, BaseBagOpenClose ]
+  parent: [BaseItem, BaseBagOpenClose]
   id: RMCBeerCoolerBase
-  name: freezer crate
-  description: A cozy cooler for your beer and other beverages.
+  name: 冷冻箱
+  description: 为你的啤酒和其他饮料准备的舒适冷藏箱。
   suffix: Empty
   components:
   - type: Storage
@@ -12,8 +12,8 @@
     maxItemSize: Normal
     whitelist:
       tags:
-        - RMCAlcohol
-        - RMCCannedDrink
+      - RMCAlcohol
+      - RMCCannedDrink
   - type: Sprite
     sprite: _RMC14/Structures/Storage/beer_cooler.rsi
     noRot: true
@@ -33,8 +33,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:DoActsBehavior

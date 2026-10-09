@@ -3,12 +3,12 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechCrewMedicalEquipment
-  name: ColMarTech medical equipment rack
-  description: An automated equipment vendor for the Medical Department.
+  name: ColMarTech 医疗设备架
+  description: 医疗部的自动设备售货机。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessMedical" ]
+    - ["CMAccessMedical"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/medical_equipment.rsi
   - type: CMAutomatedVendor
@@ -19,7 +19,7 @@
     - CMResearcher
     - CMCMO
     sections:
-    - name: Medical Set (Mandatory)
+    - name: 医疗套装（必填）
       jobs:
       - CMDoctor
       - RMCFieldDoctor
@@ -28,24 +28,24 @@
       takeAll: CMMedicalSet
       entries:
       - id: RMCVendorBundleCrewMedicalEssentialsDoctor
-    - name: Medical Set (Mandatory)
+    - name: 医疗套装（必填）
       jobs:
       - CMNurse
       takeAll: CMMedicalSet
       entries:
       - id: CMVendorBundleCrewMedicalEssentialsNurse
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMHandsLatex
       - id: CMHeadsetMedical
-    - name: Eyewear
-      choices: { CMEyewear: 1 }
+    - name: 眼镜
+      choices: {CMEyewear: 1}
       entries:
       - id: RMCGlassesMedicalHUDGlasses
 #      - id: Prescription Medical HUD Glasses
-    - name: Uniform
-      choices: { CMUniform: 1 }
+    - name: 制服
+      choices: {CMUniform: 1}
       entries:
       - id: CMScrubsGreen
       - id: CMScrubsBlue
@@ -53,16 +53,16 @@
       - id: CMScrubsPurple
       - id: RMCScrubsOlive
       - id: RMCScrubsGrey
-    - name: Suit
+    - name: 西装
       jobs:
       - CMNurse
-      choices: { CMSuit: 1 }
+      choices: {CMSuit: 1}
       entries:
       - id: RMCMedicalApron
-    - name: Suit
+    - name: 西装
       jobs:
       - CMDoctor
-      choices: { CMSuit: 1 }
+      choices: {CMSuit: 1}
       entries:
       - id: RMCLabcoat
       - id: RMCMedicalApron
@@ -72,68 +72,68 @@
 #      - id: Snowcoat
 #      - id: Balaclava
 #      - id: Snow Scarf
-    - name: Headwear
-      choices: { CMHeadwear: 1 }
+    - name: 头饰
+      choices: {CMHeadwear: 1}
       entries:
       - id: CMHeadCapSurgOrange
       - id: CMHeadCapSurgBlue
       - id: CMHeadCapSurgPurple
       - id: CMHeadCapSurgGreen
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: CMBeltMedicBagFilled
-        name: M276 pattern lifesaver bag (Full)
+        name: M276 型救生包（全套）
       - id: CMBeltMedicalFilled
-        name: M276 pattern medical storage rig (Full)
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+        name: M276型医疗储物胸挂（满）
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: CMBackpackMarine
-        name: backpack
+        name: 背包
         replaceSlot: back
       - id: CMSatchelMarine
-        name: satchel
+        name: 挎包
         replaceSlot: back
       - id: CMBackpackMedical
         replaceSlot: back
       - id: CMSatchelMedical
         replaceSlot: back
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchAutoinjector
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可填充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救袋（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救药袋（药丸）
       - id: RMCPouchFirstResponder
       - id: RMCPouchMedical
       - id: RMCPouchMedkit
         recommended: true
       - id: RMCPouchReagentCanisterBicaridine
         recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Bicaridine)
+        name: "加压试剂罐袋\n（比卡利定）"
       - id: RMCPouchReagentCanisterKelotane
         recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Kelotane)
+        name: "加压试剂罐袋\n（凯洛坦）"
       - id: RMCPouchReagentCanisterTricordrazineRevival
         recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Tricordrazine)
+        name: 增压试剂罐袋\n（复活混合剂 - 三可待因）
       #      - id: CMPressurizedReagentCanisterPouchPeridaxonRevivalMix
       #        recommended: true
       #        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Peridaxon)
       - id: RMCPouchReagentCanisterTricordrazine
         recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Tricordrazine)
+        name: "加压试剂罐袋\n（三可拉嗪）"
       - id: RMCPouchReagentCanister
         recommended: true
-        name: Pressurized Reagent Canister Pouch\n(EMPTY)
+        name: "加压试剂罐袋\n（空）"
       - id: RMCPouchSling
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+    - name: 配件
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
       - id: CMWebbingBlack

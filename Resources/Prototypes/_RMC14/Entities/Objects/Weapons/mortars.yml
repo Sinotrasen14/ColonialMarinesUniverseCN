@@ -1,9 +1,9 @@
 - type: entity
   parent: BaseItem
   id: RMCMortarKit
-  name: M402 mortar portable kit
+  name: M402迫击炮便携套件
   suffix: Classic
-  description: A manual, crew-operated mortar system intended to rain down 80mm goodness on anything it's aimed at. Uses an advanced targeting computer, which can toggle between coordinate and laser targeting. Needs to be set down first.
+  description: 一种手动、由班组操作的迫击炮系统，旨在向任何被瞄准的目标倾泻80毫米的“好东西”。它使用先进的瞄准计算机，可在坐标瞄准与激光瞄准之间切换。需要先架设好。
   components:
   - type: GuideHelp
     guides:
@@ -13,13 +13,12 @@
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/mortar/classic.rsi
     layers:
-    - map: [ "mortar" ]
+    - map: ["mortar"]
       state: mortar_m402_carry
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 20
         mask:
@@ -27,8 +26,7 @@
         restitution: 0.3
         friction: 0.2
       mortar:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20
         layer:
@@ -51,12 +49,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: UserInterface
     interfaces:
       enum.MortarUiKey.Key:
@@ -75,8 +72,8 @@
     visuals:
       enum.MortarVisualLayers.State:
         mortar:
-          Item: { state: mortar_m402_carry }
-          Deployed: { state: mortar_m402 }
+          Item: {state: mortar_m402_carry}
+          Deployed: {state: mortar_m402}
   - type: InteractedBlacklist
     blacklist:
       components:
@@ -104,15 +101,14 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/_RMC14/Structures/metalhit.ogg"
+        path: "/Audio/_RMC14/Structures/metalhit.ogg"
 
 - type: entity
   abstract: true
   parent: BaseItem
   id: RMCMortarShellBase
-  name: 80mm mortar shell
-  description: An unlabeled 80mm mortar shell, probably a casing.
+  name: 80毫米迫击炮弹
+  description: 一枚未标记的80毫米迫击炮弹，可能是一个外壳。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/mortar.rsi
@@ -124,8 +120,8 @@
 - type: entity
   parent: RMCMortarShellBase
   id: RMCMortarShellHE
-  name: M889 HE mortar shell
-  description: An 80mm mortar shell loaded with an high explosive charge.
+  name: M889高爆迫击炮弹
+  description: 一枚装有高爆装药的80毫米迫击炮弹。
   components:
   - type: Item
     heldPrefix: he
@@ -147,8 +143,8 @@
 - type: entity
   parent: RMCMortarShellBase
   id: AU14MortarShellHEATMP
-  name: M971 HEAT-MP mortar shell
-  description: An 80mm mortar shell loaded with an high explosive anti tank multi purpose charge. It has a smaller blast radius than an HE round, but a devastating effect.
+  name: M971高爆反坦克多用途迫击炮弹
+  description: 一枚装有高爆反坦克多用途装药的80毫米迫击炮弹。它的爆炸半径比高爆弹更小，但效果极具毁灭性。
   components:
   - type: Item
     heldPrefix: heat
@@ -169,8 +165,8 @@
 - type: entity
   parent: RMCMortarShellBase
   id: RMCMortarShellIncendiary
-  name: M902 HE-INC mortar shell
-  description: An 80mm mortar shell loaded with an high explosive incendiary charge. Perfect for long-range area denial.
+  name: M902高爆燃烧迫击炮弹
+  description: 一种装有高爆燃烧装药的80毫米迫击炮弹。非常适合远程区域封锁。
   components:
   - type: Item
     heldPrefix: inc
@@ -193,8 +189,8 @@
 - type: entity
   parent: RMCMortarShellBase
   id: RMCMortarShellFlare
-  name: M853 ILLUM-OBS mortar shell
-  description: An 80mm mortar shell, loaded with an illumination flare and observation camera, attached to a parachute.
+  name: M853照明观测迫击炮弹
+  description: 一枚80毫米迫击炮弹，装有照明弹和观测相机，并连接有降落伞。
   components:
   - type: Item
     heldPrefix: flr
@@ -206,8 +202,8 @@
 
 - type: entity
   id: RMCMortarFlare
-  name: illumination flare
-  description: It's really bright, and unreachable.
+  name: 照明弹
+  description: 它非常明亮，而且无法触及。
   components:
   - type: ExpendableLight
     startsActivated: true
@@ -218,16 +214,16 @@
     iconStateSpent: overlay
   - type: LightBehaviour
     behaviours:
-      - !type:FadeBehaviour
-        id: turn_on
-        maxDuration: 5.0
-        startValue: 2.5
-        endValue: 20.0
-      - !type:FadeBehaviour
-        id: fade_out
-        maxDuration: 30
-        startValue: 20.0
-        endValue: 3.0
+    - !type:FadeBehaviour
+      id: turn_on
+      maxDuration: 5.0
+      startValue: 2.5
+      endValue: 20.0
+    - !type:FadeBehaviour
+      id: fade_out
+      maxDuration: 30
+      startValue: 20.0
+      endValue: 3.0
   - type: Appearance
   - type: Transform
     anchored: true
@@ -244,8 +240,8 @@
 
 - type: entity
   id: AU14MortarFlareRed
-  name: red illumination flare
-  description: It's really bright, and unreachable.
+  name: 红色照明弹
+  description: 它非常明亮，而且无法触及。
   components:
   - type: ExpendableLight
     startsActivated: true
@@ -282,8 +278,8 @@
 
 - type: entity
   id: AU14MortarFlareGreen
-  name: green illumination flare
-  description: It's really bright, and unreachable.
+  name: 绿色照明弹
+  description: 真的很亮，而且无法触及。
   components:
   - type: ExpendableLight
     startsActivated: true
@@ -320,7 +316,7 @@
 
 - type: entity
   id: RMCMortarCamera
-  name: para-cam
+  name: para-cam摄像头
   components:
   - type: Transform
     anchored: true

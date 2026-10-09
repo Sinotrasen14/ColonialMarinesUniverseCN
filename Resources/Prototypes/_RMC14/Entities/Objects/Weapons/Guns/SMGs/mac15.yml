@@ -1,17 +1,17 @@
 - type: entity
   parent: CMBaseWeaponSMG
-  name: MAC-15 submachinegun
+  name: MAC-15冲锋枪
   id: WeaponSMGMAC15 # TODO RMC14 10% chance to have an underbarrel grenade launcher
-  description: A cheap, reliable design and manufacture make this ubiquitous submachinegun useful despite the age.
+  description: 廉价而可靠的设计与制造，使这款随处可见的冲锋枪尽管老旧却依然实用。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/mac15.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/mac15.rsi
   - type: Gun
@@ -38,11 +38,11 @@
     accuracyMultiplierUnwielded: 1
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSMGMAC15
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -89,15 +89,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSMGMAC15
-  name: MAC-15 magazine (9mm)
-  description: A 9mm magazine for the MAC-15.
+  name: MAC-15 弹匣（9毫米）
+  description: 用于 MAC-15 的 9 毫米弹匣。
   components:
   - type: Tag
     tags:
     - CMMagazineSmg
     - RMCMagazineSMGMAC15
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridge9mmSMGMAC15
@@ -120,7 +120,7 @@
 - type: entity
   parent: RMCMagazineSMGMAC15
   id: RMCMagazineSMGMAC15Ext
-  name: MAC-15 extended magazine (9mm)
+  name: MAC-15 加长弹匣（9毫米）
   components:
   - type: BallisticAmmoProvider
     capacity: 50
@@ -139,7 +139,7 @@
 - type: entity
   parent: CMCartridge9mmSMG
   id: RMCCartridge9mmSMGMAC15
-  description: A 9mm cartridge for the mac-15 submachinegun.
+  description: 用于 MAC-15 冲锋枪的 9 毫米子弹。
   components:
   - type: Tag
     tags:

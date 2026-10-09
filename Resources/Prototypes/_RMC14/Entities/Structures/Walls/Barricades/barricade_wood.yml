@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBarricadeBase
   id: RMCBarricadeWood
-  name: wooden barricade
-  description: A wall made out of wooden planks nailed together. Not very sturdy, but can provide some concealment.
+  name: 木制路障
+  description: 由木板钉合而成的墙。不太坚固，但能提供一些遮蔽。
   components:
   - type: VehicleSmashable
   - type: Sprite
@@ -10,7 +10,7 @@
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
     - state: wooden
-    - map: [ "acided" ]
+    - map: ["acided"]
   - type: Appearance
   - type: Damageable
     damageModifierSet: Wood
@@ -22,8 +22,7 @@
       RMCWood: 100
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 600
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -35,7 +34,7 @@
         sound:
           collection: WoodDestroy
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Construction
     graph: BarricadeWoodGraph
     node: nodeWood

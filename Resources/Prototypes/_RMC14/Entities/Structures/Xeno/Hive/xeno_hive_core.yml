@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseHiveStructure
   id: HiveCoreXeno
-  name: hive core
-  description: A giant pulsating mound of mass. It looks very much alive.
+  name: 蜂巢核心
+  description: 一团巨大、不断搏动的物质堆。它看起来充满了生机。
   components:
   - type: Transform
     anchored: true
@@ -10,15 +10,13 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         layer:
         - BulletImpassable
         density: 200
       xeno_hive_core:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 1
         hard: false
         mask:
@@ -28,13 +26,12 @@
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/hive_structures.rsi
     layers:
-     - sprite: _RMC14/Structures/Xenos/xeno_weeds.rsi
-       state: hive_weed0
-     - state: core
+    - sprite: _RMC14/Structures/Xenos/xeno_weeds.rsi
+      state: hive_weed0
+    - state: core
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1200
       behaviors:
       - !type:DoActsBehavior
@@ -90,8 +87,8 @@
 - type: entity
   id: HiveCoreXenoConstructionNode
   parent: BaseHiveStructureNode
-  name: hive core
-  description: A strange wriggling lump. Looks like a marker for something.
+  name: 蜂巢核心
+  description: 一个奇怪且蠕动的团块。看起来像是某样东西的标记。
   suffix: Construction
   components:
   - type: Sprite
@@ -104,8 +101,7 @@
       scale: 0.8, 0.8
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300 # TODO RMC14
       behaviors:
       - !type:DoActsBehavior
@@ -127,19 +123,18 @@
 - type: entity
   parent: BaseHiveStructure
   id: HivePylonXeno
-  name: hive pylon
-  description: A towering spike of resin. Its base pulsates with large tendrils.
+  name: 蜂巢塔
+  description: 高耸的树脂尖刺。其底部随巨大的触须搏动。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/hive_structures.rsi
     layers:
-     - sprite: _RMC14/Structures/Xenos/xeno_weeds.rsi
-       state: hive_weed0
-     - state: pylon
+    - sprite: _RMC14/Structures/Xenos/xeno_weeds.rsi
+      state: hive_weed0
+    - state: pylon
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior

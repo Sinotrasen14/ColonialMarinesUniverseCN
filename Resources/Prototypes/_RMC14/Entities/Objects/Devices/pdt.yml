@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseItem, PowerCellSlotSmallItem ]
+  parent: [BaseItem, PowerCellSlotSmallItem]
   id: RMCPDTLocatorTube
-  name: PDT/L locator tube
-  description: A handheld locator tube paired with a wrist PDT bracelet. It gives a direction and range readout to its partner bracelet.
+  name: PDT/L定位管
+  description: 一种手持式定位管，可与腕戴式 PDT 手环配对使用。它可向配对的手环提供方向和距离读数。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/pdt_locator_tube.rsi
@@ -11,11 +11,11 @@
     - state: screen
       shader: unshaded
       visible: false
-      map: [ "enum.PDTLocatorVisualLayers.Screen" ]
+      map: ["enum.PDTLocatorVisualLayers.Screen"]
     - state: unlinked
       shader: unshaded
       visible: false
-      map: [ "enum.PDTLocatorVisualLayers.Bracelet" ]
+      map: ["enum.PDTLocatorVisualLayers.Bracelet"]
   - type: Item
     size: Small
   - type: Tag
@@ -26,15 +26,15 @@
     visuals:
       enum.PDTLocatorVisuals.Screen:
         enum.PDTLocatorVisualLayers.Screen:
-          Off: { visible: false }
-          Normal: { state: screen, visible: true }
-          Yellow: { state: screen-yellow, visible: true }
-          Red: { state: screen-red, visible: true }
+          Off: {visible: false}
+          Normal: {state: screen, visible: true}
+          Yellow: {state: screen-yellow, visible: true}
+          Red: {state: screen-red, visible: true}
       enum.PDTLocatorVisuals.Bracelet:
         enum.PDTLocatorVisualLayers.Bracelet:
-          Hidden: { visible: false }
-          Linked: { state: linked, visible: true }
-          Unlinked: { state: unlinked, visible: true }
+          Hidden: {visible: false}
+          Linked: {state: linked, visible: true}
+          Unlinked: {state: unlinked, visible: true}
   - type: PDTLocator
   - type: UseDelay
     delay: 1
@@ -47,14 +47,14 @@
 - type: entity
   parent: RMCWatchBaseL
   id: RMCPDTBracelet
-  name: PDT wrist bracelet
-  description: A wrist-worn personal data transmitter bracelet intended to be paired with a PDT/L locator tube.
+  name: PDT腕带手环
+  description: 一种腕戴式个人数据发射器手环，旨在与PDT/L定位管配对使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/pdt.rsi
     layers:
     - state: icon
-      map: [ "base" ]
+      map: ["base"]
   - type: RandomSprite
     available:
     - base:
@@ -74,8 +74,8 @@
 - type: entity
   parent: RMCWatchCase
   id: CMSparePDTLBattleBuddyKit
-  name: Boots! PDT/L Battle Buddy kit
-  description: A rugged little case containing a PDT/L locator tube, its paired wrist PDT bracelet, and a spare We-Ya mini-battery.
+  name: 靴子！PDT/L 战斗伙伴套装
+  description: 一个坚固的小箱子，内含一根 PDT/L 定位管、与其配对的手腕 PDT 手环，以及一块备用的 We-Ya 微型电池。
   components:
   - type: Storage
     maxItemSize: Normal

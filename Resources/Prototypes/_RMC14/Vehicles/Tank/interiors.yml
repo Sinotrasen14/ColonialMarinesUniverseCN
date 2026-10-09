@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: VehicleTankInteriorBase
-  name: tank interior piece
-  description: A decorative interior piece for the tank.
+  name: 鱼缸内部装饰件
+  description: 鱼缸内部的装饰件。
   placement:
     mode: SnapgridCenter
   components:
@@ -16,8 +16,8 @@
 - type: entity
   abstract: true
   id: VehicleTankRoofBase
-  name: tank interior roof
-  description: A removable roof section for the tank interior.
+  name: 坦克内部顶盖
+  description: 坦克内部的可拆卸顶盖部分。
   placement:
     mode: SnapgridCenter
   components:
@@ -45,8 +45,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -74,8 +73,8 @@
   abstract: true
   parent: CMClosetBase
   id: VehicleTankLockerBase
-  name: tank interior locker
-  description: A storage locker for tank interiors.
+  name: 坦克内部储物柜
+  description: 用于坦克内部的储物柜。
   placement:
     mode: PlaceFree
   components:
@@ -233,7 +232,7 @@
   - type: Sprite
     layers:
     - state: tank_right_2
-      map: [ "roof" ]
+      map: ["roof"]
   - type: RMCSpriteFade
     targetAlpha: 0.35
     changeRate: 4.0
@@ -249,7 +248,7 @@
   - type: Sprite
     layers:
     - state: tank_right_3
-      map: [ "roof" ]
+      map: ["roof"]
 
 - type: entity
   parent: VehicleTankDoorBase
@@ -320,8 +319,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -408,12 +406,12 @@
 - type: entity
   parent: VehicleTankLockerBase
   id: VehicleTankLocker
-  name: tank locker
+  name: 坦克储物柜
 
 - type: entity
   parent: VehicleTankLockerBase
   id: VehicleTankLockerOpen
-  name: tank locker (open)
+  name: 坦克储物柜（打开）
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: locker_open
@@ -422,8 +420,8 @@
 - type: entity
   parent: VehicleAmmoLoader
   id: VehicleTankAmmoLoader
-  name: tank ammo loader
-  description: A loader for tank hardpoint ammunition.
+  name: 坦克弹药装载器
+  description: 用于坦克挂点弹药的装载器。
   components:
   - type: Sprite
     drawdepth: LowFloors

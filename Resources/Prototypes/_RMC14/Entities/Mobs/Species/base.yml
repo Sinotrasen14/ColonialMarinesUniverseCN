@@ -3,7 +3,7 @@
   parent: [BaseSpeciesMob, BaseSlicingRefinable]
   id: RMCBaseMobSpeciesOrganic
   abstract: true
-  name: Urist C.M. McHands
+  name: 乌里斯特·C.M.·麦克汉兹 | Urist C.M. McHands
   suffix: RMC14
   components:
   - type: Butcherable
@@ -24,8 +24,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 185
         restitution: 0.0
@@ -37,8 +36,7 @@
         - Opaque
         - XenoProjectileImpassable
       fix2:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.25
         density: 0
         restitution: 0.0
@@ -136,7 +134,7 @@
   - type: PainShock
   - type: CMUPainFeedback
   - type: Damageable
-    damageModifierSet: null
+    damageModifierSet:
   - type: Injurable
     damageContainer: Biological
     healthBarThreshold: 5
@@ -296,9 +294,9 @@
         - RequisitionsCrate #Lockers/Crates
   - type: Language
     spokenLanguages:
-      - English
+    - English
     understoodLanguages:
-      - English
+    - English
     currentLanguage: English
     defaultLanguage: English
   - type: MobThresholds
@@ -313,7 +311,7 @@
       Dead:
       - CMActionGhost
   - type: Destructible
-    thresholds: [ ]
+    thresholds: []
   - type: NpcFactionMember
     factions:
     - AUColonist
@@ -326,8 +324,8 @@
     visuals:
       enum.CreamPiedVisuals.Creamed:
         clownedon:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.UserAcidedVisuals.Acided:
         acided:
           None:
@@ -430,7 +428,7 @@
       Dead: BelowMobs
   - type: IVDripTarget
   - type: FixedIdentity
-    name: rmc-host
+    name: rmc主机 | rmc-host
     whitelist:
       components:
       - Xeno

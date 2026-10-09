@@ -1,37 +1,36 @@
-﻿- type: entity
+- type: entity
   parent: CMBarricadeBase
   id: CMBarricadeSandbag
-  name: sandbag barricade
-  description: A makeshift barricade made out of the sand from the ground. Tough to beat but easy to pierce.
+  name: 沙袋路障
+  description: 用地面上的沙子搭成的简易路障。难以攻破，但容易刺穿。
   components:
   - type: BarricadeSandbag
   - type: Climbable
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Effects/Footsteps/snowstep1.ogg"
+        path: "/Audio/Effects/Footsteps/snowstep1.ogg"
   - type: Sprite
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
     - state: DamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/sandbag_cracks.rsi
-    - map: [ "acided" ]
+    - map: ["acided"]
     drawdepth: WallTops
   - type: GenericVisualizer
     visuals:
       enum.BarbedWireVisualLayers.Wire:
         barbWired:
-          UnWired: { state: sandbag_wire, visible: false }
-          WiredClosed: { state: sandbag_wire, visible: true }
+          UnWired: {state: sandbag_wire, visible: false}
+          WiredClosed: {state: sandbag_wire, visible: true}
       enum.SprayAcidedVisuals.Acided:
         acided:
-          True:
+          true:
             sprite: _RMC14/Effects/xeno_spray_acid.rsi
             state: acid
             visible: true
-          False:
+          false:
             visible: false
   - type: Damageable
     damageModifierSet: CMSandbag
@@ -39,15 +38,14 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1300
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DamageVisuals
     thresholds: [4, 8, 12]
     damageDivisor: 28.125
@@ -86,33 +84,32 @@
 - type: entity
   parent: CMBarricadeBase
   id: CMBarricadeHesco
-  name: HESCO barricade
-  description: A sandbag wall. Provides better protection than a makeshift sandbag barricade, but requires specialized equipment to set up.
+  name: HESCO防爆墙
+  description: 沙袋墙。比临时沙袋路障提供更好的防护，但需要专用设备来搭建。
   components:
   - type: BarricadeSandbag
   - type: Climbable
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Effects/Footsteps/snowstep1.ogg"
+        path: "/Audio/Effects/Footsteps/snowstep1.ogg"
   - type: Sprite
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
     - state: hesco
       color: "#a98c7c"
-    - map: [ "acided" ]
+    - map: ["acided"]
     drawdepth: WallTops
   - type: GenericVisualizer
     visuals:
       enum.BarbedWireVisualLayers.Wire:
       enum.SprayAcidedVisuals.Acided:
         acided:
-          True:
+          true:
             sprite: _RMC14/Effects/xeno_spray_acid.rsi
             state: acid
             visible: true
-          False:
+          false:
             visible: false
   - type: Damageable
     damageModifierSet: CMHescoBarricade
@@ -120,21 +117,20 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 500
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: BaseItem
   id: CMSandbagEmpty
-  name: empty sandbags
-  description: Some empty sandbags, best to fill them up if you want to use them.
+  name: 空沙袋
+  description: 一些空沙袋，想用的话最好先装满。
   components:
   - type: Item
     sprite: _RMC14/Objects/Misc/sandbags.rsi
@@ -148,7 +144,7 @@
     sprite: _RMC14/Objects/Misc/sandbags.rsi
     layers:
     - state: sandbag_stack
-    - map: [ "acided" ]
+    - map: ["acided"]
   - type: EmptySandbag
   - type: Stack
     stackType: CMSandbagEmpty
@@ -189,8 +185,8 @@
 - type: entity
   parent: BaseItem
   id: CMSandbagFull
-  name: sandbags
-  description: Some bags filled with sand. For now, just cumbersome, but soon to be used for fortifications.
+  name: 沙袋
+  description: 一些装满沙子的袋子。目前只是笨重累赘，但很快会被用于修筑防御工事。
   components:
   - type: Item
     sprite: _RMC14/Objects/Misc/sandbags.rsi
@@ -204,7 +200,7 @@
     sprite: _RMC14/Objects/Misc/sandbags.rsi
     layers:
     - state: sandbag_pile
-    - map: [ "acided" ]
+    - map: ["acided"]
   - type: FullSandbag
   - type: Stack
     stackType: CMSandbagFull
@@ -248,13 +244,13 @@
 
 - type: stack
   id: CMSandbagEmpty
-  name: empty sandbags
+  name: 空沙袋
   spawn: CMSandbagEmpty
   maxCount: 50
 
 - type: stack
   id: CMSandbagFull
-  name: empty sandbags
+  name: 空沙袋
   spawn: CMSandbagFull
   maxCount: 50
 

@@ -1,19 +1,19 @@
-﻿- type: entity
+- type: entity
   parent: DrinkBaseCup
   id: RMCPintGlass
-  name: pint glass
-  description: A proper geezer's pint glass. Rarely seen without a frothy head of beer.
+  name: 品脱杯
+  description: 一个纯正老炮儿的品脱杯。很少见到它不带一层啤酒泡沫。
   components:
   - type: Solution
     solution:
-        maxVol: 100
+      maxVol: 100
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/pint_glass.rsi
     layers:
-      - state: icon-0
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        state: icon-3
-        visible: false
+    - state: icon-0
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      state: icon-3
+      visible: false
   - type: Item
     size: Small
   - type: DamageOnLand
@@ -38,28 +38,28 @@
   components:
   - type: Solution
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Beer
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Beer
+        Quantity: 100
 
 - type: entity
   parent: DrinkBaseCup
   id: RMCDrinkGlass
-  name: drink glass
-  description: Your standard drinking glass.
+  name: 玻璃杯
+  description: 你的标准玻璃杯。
   components:
   - type: Solution
     id: drink
     solution:
-        maxVol: 50
+      maxVol: 50
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/drink_glass.rsi
     layers:
     - state: icon
-      map: [ "enum.SolutionContainerLayers.Base" ]
+      map: ["enum.SolutionContainerLayers.Base"]
     - state: fill-1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Item
     size: Small

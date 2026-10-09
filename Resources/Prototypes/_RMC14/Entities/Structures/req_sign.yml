@@ -1,13 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCSignRequisitions
-  name: requisitions office guidelines
-  description: 1. You are not entitled to service or equipment. Attachments are a privilege, not a right.
-
-    2. You must be fully dressed in uniform to obtain service. Underwear is non-permissible.
-
-    3. The Logistics Officer has the final say and the right to decline service. Only the Acting Commander may override their decisions.
-
-    4. Please treat your Requisitions staff with respect. They work hard.
+  name: 物资申领办公室指南
+  description: "1. 你无权享受服务或获得装备。附加物资是一种特权，而非权利。\n2. 你必须穿着全套制服才能获得服务。不允许只穿内衣。\n3. 后勤军官有最终决定权，并有权拒绝提供服务。只有代理指挥官可以推翻其决定。\n4. 请尊重物资申领处工作人员。他们工作很努力。"
   placement:
     mode: SnapgridCenter
   components:
@@ -22,8 +16,8 @@
 - type: entity
   parent: RMCSignRequisitions
   id: RMCSignRequisitionsCreed
-  name: LOC creed plaque
-  description: The short version of the Logistics Officer Creed, this on is purely decorative and ceremonial version which is much shorter and doesn't include more modern edits.
+  name: 后勤军官信条牌匾
+  description: 后勤军官信条的简短版本，这一版本纯粹是装饰性和仪式性的版本，篇幅要短得多，并且不包含更多现代修订。
   components:
   - type: Sprite
     state: rocreed

@@ -13,8 +13,8 @@
 - type: entity
   parent: RMCVehicleKeyBase
   id: RMCVehicleKey
-  name: vehicle key
-  description: A vehicle key cut for a specific lock.
+  name: 车辆钥匙
+  description: 为特定锁具切割的车辆钥匙。
   components:
   - type: VehicleKey
     mode: Normal
@@ -22,8 +22,8 @@
 - type: entity
   parent: RMCVehicleKeyBase
   id: RMCVehicleKeyBlank
-  name: blank vehicle key
-  description: An unprogrammed vehicle key that can be imprinted to a vehicle.
+  name: 空白车辆钥匙
+  description: 一种未编程的车辆钥匙，可写入车辆。
   components:
   - type: VehicleKey
     mode: Blank
@@ -31,8 +31,8 @@
 - type: entity
   parent: RMCVehicleKeyBase
   id: RMCVehicleKeyDuplicator
-  name: duplicate vehicle key blank
-  description: A blank vehicle key designed to copy an existing vehicle key.
+  name: 车辆钥匙复制坯
+  description: 一种用于复制现有车辆钥匙的空白车辆钥匙。
   components:
   - type: VehicleKey
     mode: Duplicator

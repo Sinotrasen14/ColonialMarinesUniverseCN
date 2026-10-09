@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: RMCDigitalClock
-  name: digital clock
-  description: A battery powered clock, able to keep time within about 5 seconds... it was never that accurate.
+  name: 数字时钟
+  description: 一个电池供电的时钟，能够将走时误差控制在约5秒内……它从来就没那么准过。
   components:
   - type: Item
     size: Small
@@ -13,8 +13,8 @@
 
 - type: entity
   id: RMCCatClock
-  name: cat clock
-  description: An unbelievably creepy cat clock that surveys the room with every tick and every tock.
+  name: 猫钟
+  description: 一台令人难以置信地诡异的猫钟，每一声滴答都在扫视着房间。
   components:
   - type: Sprite
     drawdepth: WallMountedItems
@@ -30,8 +30,8 @@
 
 - type: entity
   id: RMCWoodClock
-  name: wood clock
-  description: An ordinary clock, for telling the time.
+  name: 木钟
+  description: 一个普通的钟，用来查看时间。
   components:
   - type: Sprite
     drawdepth: WallMountedItems
@@ -48,8 +48,8 @@
 - type: entity
   parent: RMCWoodClock
   id: RMCGoldClock
-  name: gold clock
-  description: An ostentatious clock, for telling people how rich you are.
+  name: 黄金钟
+  description: 一座招摇的钟，用来向别人炫耀你有多富有。
   components:
   - type: Sprite
     drawdepth: WallMountedItems

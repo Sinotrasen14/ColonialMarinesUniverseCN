@@ -4,23 +4,22 @@
 - type: entity
   parent: CMBarricadeBase
   id: CMBarricadeMetal
-  name: metal barricade
-  description: A sturdy and easily assembled barricade made of metal plates, often used for quick fortifications. Use a blowtorch to repair.
+  name: 金属路障
+  description: 一种由金属板制成的坚固且易于组装的路障，常用于快速构建防御工事。使用喷灯进行修理。
   components:
   - type: Climbable
   - type: Anchorable
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/_RMC14/Structures/metalhit.ogg"
+        path: "/Audio/_RMC14/Structures/metalhit.ogg"
   - type: Sprite
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
     - state: DamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/metal_barricade_cracks.rsi
-    - map: [ "acided" ]
+    - map: ["acided"]
     drawdepth: WallTops
   - type: InteractionPopup
     interactSuccessString: fence-rattle-success
@@ -40,8 +39,7 @@
       CMPlasteel: 200
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 450
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -53,7 +51,7 @@
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DamageVisuals
     thresholds: [4, 8, 12]
     damageDivisor: 28.125
@@ -84,8 +82,8 @@
   id: RMCBarricadeMetalAltDrawdepth
   suffix: Layers over Platforms
   components:
-    - type: Sprite
-      drawdepth: SmallObjects
+  - type: Sprite
+    drawdepth: SmallObjects
 
 # Metal Barricade Upgrades
 - type: entity
@@ -93,338 +91,336 @@
   id: CMBarricadeBurn
   suffix: Biohazard
   components:
-    - type: Sprite
-      sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
-      layers:
-      - state: DamageOverlay_0
-        map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
-        sprite: _RMC14/Structures/Walls/Barricades/metal_barricade_cracks.rsi
-      - state: AdditionalDamageOverlay_0
-        map: [ "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay" ]
-        sprite: _RMC14/Structures/Walls/Barricades/burn_barricade_cracks.rsi
-      - map: [ "acided" ]
-    - type: DamageVisuals
-      targetLayers:
-      - "enum.RMCDamageOverlayVisuals.DamageOverlay"
-      - "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"
-    - type: Damageable
-      damageModifierSet: CMBurnBarricade
-    - type: Injurable
-      damageContainer: Inorganic
-    - type: RMCConstructionUpgradeTarget
-      upgrades: null
-      downgrade: RMCBiohazardUpgrade
-    - type: Flammable
-      damage:
-        types:
-          Heat: 1.5
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    layers:
+    - state: DamageOverlay_0
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
+      sprite: _RMC14/Structures/Walls/Barricades/metal_barricade_cracks.rsi
+    - state: AdditionalDamageOverlay_0
+      map: ["enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"]
+      sprite: _RMC14/Structures/Walls/Barricades/burn_barricade_cracks.rsi
+    - map: ["acided"]
+  - type: DamageVisuals
+    targetLayers:
+    - "enum.RMCDamageOverlayVisuals.DamageOverlay"
+    - "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"
+  - type: Damageable
+    damageModifierSet: CMBurnBarricade
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: RMCConstructionUpgradeTarget
+    upgrades:
+    downgrade: RMCBiohazardUpgrade
+  - type: Flammable
+    damage:
+      types:
+        Heat: 1.5
 
 - type: entity
   parent: CMBarricadeMetal
   id: CMBarricadeBrute
   suffix: Reinforced
   components:
-    - type: Sprite
-      sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
-      layers:
-      - state: DamageOverlay_0
-        map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
-        sprite: _RMC14/Structures/Walls/Barricades/metal_barricade_cracks.rsi
-      - state: AdditionalDamageOverlay_0
-        map: [ "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay" ]
-        sprite: _RMC14/Structures/Walls/Barricades/brute_barricade_cracks.rsi
-      - map: [ "acided" ]
-    - type: DamageVisuals
-      targetLayers:
-      - "enum.RMCDamageOverlayVisuals.DamageOverlay"
-      - "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"
-    - type: Damageable
-      damageModifierSet: CMBruteBarricade
-    - type: Injurable
-      damageContainer: Inorganic
-    - type: RMCConstructionUpgradeTarget
-      upgrades: null
-      downgrade: RMCBruteUpgrade
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    layers:
+    - state: DamageOverlay_0
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
+      sprite: _RMC14/Structures/Walls/Barricades/metal_barricade_cracks.rsi
+    - state: AdditionalDamageOverlay_0
+      map: ["enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"]
+      sprite: _RMC14/Structures/Walls/Barricades/brute_barricade_cracks.rsi
+    - map: ["acided"]
+  - type: DamageVisuals
+    targetLayers:
+    - "enum.RMCDamageOverlayVisuals.DamageOverlay"
+    - "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"
+  - type: Damageable
+    damageModifierSet: CMBruteBarricade
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: RMCConstructionUpgradeTarget
+    upgrades:
+    downgrade: RMCBruteUpgrade
 
 - type: entity
   parent: CMBarricadeMetal
   id: CMBarricadeExplosive
   suffix: Composite
   components:
-    - type: Sprite
-      sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
-      layers:
-      - state: metal
-      - state: DamageOverlay_0
-        map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
-        sprite: _RMC14/Structures/Walls/Barricades/metal_barricade_cracks.rsi
-      - state: AdditionalDamageOverlay_0
-        map: [ "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay" ]
-        sprite: _RMC14/Structures/Walls/Barricades/explosive_barricade_cracks.rsi
-      - map: [ "acided" ]
-    - type: DamageVisuals
-      targetLayers:
-      - "enum.RMCDamageOverlayVisuals.DamageOverlay"
-      - "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"
-    - type: ExplosionResistance
-      damageCoefficient: 0.5
-    - type: RMCConstructionUpgradeTarget
-      upgrades: null
-      downgrade: RMCExplosiveUpgrade
-    - type: Flammable
-      damage:
-        types:
-          Heat: 1
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    layers:
+    - state: metal
+    - state: DamageOverlay_0
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
+      sprite: _RMC14/Structures/Walls/Barricades/metal_barricade_cracks.rsi
+    - state: AdditionalDamageOverlay_0
+      map: ["enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"]
+      sprite: _RMC14/Structures/Walls/Barricades/explosive_barricade_cracks.rsi
+    - map: ["acided"]
+  - type: DamageVisuals
+    targetLayers:
+    - "enum.RMCDamageOverlayVisuals.DamageOverlay"
+    - "enum.RMCDamageOverlayVisuals.AdditionalDamageOverlay"
+  - type: ExplosionResistance
+    damageCoefficient: 0.5
+  - type: RMCConstructionUpgradeTarget
+    upgrades:
+    downgrade: RMCExplosiveUpgrade
+  - type: Flammable
+    damage:
+      types:
+        Heat: 1
 
 # Turnstile (not sure how to make a one-way door so for now it is a glorified fence)
 - type: entity
   parent: CMBarricadeBase
   id: CMBarricadeTurnstile
-  name: turnstile
-  description: A railing to prevent marines from stepping out of line.
+  name: 十字转门
+  description: 用于防止海军陆战队员走出队列的栏杆。
   components:
-    - type: Anchorable
-    - type: Sprite
-      sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
-      layers:
-      - state: turnstile
-      - map: [ "acided" ]
-    - type: Damageable
-    - type: Injurable
-      damageContainer: Inorganic
-    - type: Destructible
-      thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-        - !type:PlaySoundBehavior
-          sound:
-            collection: MetalBreak
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - type: Construction
-      graph: BarricadeTurnstileGraph
-      node: nodeTurnstile
+  - type: Anchorable
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    layers:
+    - state: turnstile
+    - map: ["acided"]
+  - type: Damageable
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Construction
+    graph: BarricadeTurnstileGraph
+    node: nodeTurnstile
 
 - type: entity
   parent: CMBarricadeTurnstile
   id: CMBarricadeTurnstileMed
-  name: turnstile
-  description: A railing to prevent marines from stepping out of line. This one is designed specifically for medical.
+  name: 旋转闸门
+  description: 一种防止陆战队员脱离队列的栏杆。这一款专为医疗设计。
   components:
-    - type: Sprite
-      sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
-      layers:
-      - state: turnstile_med
-      - map: [ "acided" ]
-    - type: Construction
-      graph: BarricadeTurnstileGraph
-      node: nodeTurnstile
+  - type: Sprite
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    layers:
+    - state: turnstile_med
+    - map: ["acided"]
+  - type: Construction
+    graph: BarricadeTurnstileGraph
+    node: nodeTurnstile
 
 # Handrails
 - type: entity
   parent: CMBarricadeBase
   id: RMCBarricadeHandrail
-  name: handrail
-  description: A railing, for your hands. Woooow.
+  name: 扶手
+  description: 扶手，给你的手用的。哇哦。
   components:
-    - type: VehicleSmashable
-    - type: Transform
-      gridTraversal: false
-    - type: Anchorable
-    - type: Sprite
-      drawdepth: WallTops
-      sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
-      layers:
-      - state: handrail_a_0
-      - map: [ "acided" ]
-    - type: Physics
-    - type: RMCRepairable
-      heal: 200
-      skill: RMCSkillConstruction
-      delay: 10
-      fuelUsed: 2
-    - type: Damageable
-      damageModifierSet: StructuralMarine
-    - type: Injurable
-      damageContainer: StructuralMarine
-    - type: Destructible
-      thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 30
-        behaviors:
-        - !type:PlaySoundBehavior
-          sound:
-            collection: MetalBreak
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - type: Climbable
-    - type: Construction
-      graph: BarricadeHandrailGraph
-      node: nodeHandrail
-    - type: XenoCrusherChargable
-      instantDestroy: true
-      passOnDestroy: true
+  - type: VehicleSmashable
+  - type: Transform
+    gridTraversal: false
+  - type: Anchorable
+  - type: Sprite
+    drawdepth: WallTops
+    sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
+    layers:
+    - state: handrail_a_0
+    - map: ["acided"]
+  - type: Physics
+  - type: RMCRepairable
+    heal: 200
+    skill: RMCSkillConstruction
+    delay: 10
+    fuelUsed: 2
+  - type: Damageable
+    damageModifierSet: StructuralMarine
+  - type: Injurable
+    damageContainer: StructuralMarine
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: Climbable
+  - type: Construction
+    graph: BarricadeHandrailGraph
+    node: nodeHandrail
+  - type: XenoCrusherChargable
+    instantDestroy: true
+    passOnDestroy: true
 
 - type: entity
   parent: RMCBarricadeHandrail
   id: RMCBarricadeHandrailAlt
   components:
-    - type: Sprite
-      layers:
-      - state: handrail_b_0
-      - map: [ "acided" ]
-    - type: Construction
-      graph: BarricadeHandrailGraph
-      node: nodeHandrail
+  - type: Sprite
+    layers:
+    - state: handrail_b_0
+    - map: ["acided"]
+  - type: Construction
+    graph: BarricadeHandrailGraph
+    node: nodeHandrail
 
 - type: entity
   parent: RMCBarricadeHandrailAlt
   id: RMCBarricadeHandrailAltDrawdepth
   suffix: Layers over Platforms
   components:
-    - type: Sprite
-      drawdepth: SmallObjects
+  - type: Sprite
+    drawdepth: SmallObjects
 
 - type: entity
   parent: RMCBarricadeHandrail
   id: RMCBarricadeHandrailMed
   components:
-    - type: Sprite
-      layers:
-      - state: handrail_med
-      - map: [ "acided" ]
-    - type: Construction
-      graph: BarricadeHandrailGraph
-      node: nodeHandrail
+  - type: Sprite
+    layers:
+    - state: handrail_med
+    - map: ["acided"]
+  - type: Construction
+    graph: BarricadeHandrailGraph
+    node: nodeHandrail
 
 - type: entity
   parent: RMCBarricadeHandrail
   id: RMCBarricadeHandrailStrata
   components:
-    - type: Sprite
-      layers:
-      - state: handrail_strata
-      - map: [ "acided" ]
-    - type: Construction
-      graph: BarricadeHandrailGraph
-      node: nodeHandrail
+  - type: Sprite
+    layers:
+    - state: handrail_strata
+    - map: ["acided"]
+  - type: Construction
+    graph: BarricadeHandrailGraph
+    node: nodeHandrail
 
 - type: entity
   parent: RMCBarricadeHandrailStrata
   id: RMCBarricadeHandrailStrataAltDrawdepth
   suffix: Layers over Platforms
   components:
-    - type: Sprite
-      drawdepth: SmallObjects
+  - type: Sprite
+    drawdepth: SmallObjects
 
 - type: entity
   parent: RMCBarricadeHandrail
   id: RMCBarricadeHandrailKutjevo
   components:
-    - type: Sprite
-      layers:
-      - state: hr_kutjevo
-      - map: [ "acided" ]
-    - type: Construction
-      graph: BarricadeHandrailGraph
-      node: nodeHandrail
+  - type: Sprite
+    layers:
+    - state: hr_kutjevo
+    - map: ["acided"]
+  - type: Construction
+    graph: BarricadeHandrailGraph
+    node: nodeHandrail
 
 - type: entity
   parent: RMCBarricadeHandrail
   id: RMCBarricadeWireRail
   components:
-    - type: Sprite
-      layers:
-      - state: wire_rail
-      - map: [ "acided" ]
-    - type: Construction
-      graph: BarricadeHandrailGraph
-      node: nodeHandrail
+  - type: Sprite
+    layers:
+    - state: wire_rail
+    - map: ["acided"]
+  - type: Construction
+    graph: BarricadeHandrailGraph
+    node: nodeHandrail
 
 - type: entity
   parent: RMCBarricadeWireRail
   id: RMCBarricadeWireRailAltDrawdepth
   suffix: Layers over Platforms
   components:
-    - type: Sprite
-      drawdepth: SmallObjects
+  - type: Sprite
+    drawdepth: SmallObjects
 
 - type: entity
   parent: RMCBarricadeHandrail
   id: RMCBarricadeHybrisa
   components:
-    - type: Sprite
-      layers:
-      - state: handrail_hybrisa
-      - map: [ "acided" ]
-    - type: Construction
-      graph: BarricadeHandrailGraph
-      node: nodeHandrail
+  - type: Sprite
+    layers:
+    - state: handrail_hybrisa
+    - map: ["acided"]
+  - type: Construction
+    graph: BarricadeHandrailGraph
+    node: nodeHandrail
 
 - type: entity
   parent: RMCBarricadeHandrail
   id: RMCBarricadeHybrisaCenterRoad
   components:
-    - type: Sprite
-      layers:
-      - state: centerroadbarrier2
-      - map: [ "acided" ]
-    - type: Construction
-      graph: BarricadeHandrailGraph
-      node: nodeHandrail
+  - type: Sprite
+    layers:
+    - state: centerroadbarrier2
+    - map: ["acided"]
+  - type: Construction
+    graph: BarricadeHandrailGraph
+    node: nodeHandrail
 
 - type: entity
   parent: RMCBarricadeHybrisaCenterRoad
   id: RMCBarricadeHybrisaCenterRoadDouble
   suffix: Double
   components:
-    - type: Sprite
-      offset: 0,-0.15
-      layers:
-      - state: centerroadbarrier1
-      - map: [ "acided" ]
+  - type: Sprite
+    offset: 0,-0.15
+    layers:
+    - state: centerroadbarrier1
+    - map: ["acided"]
 
 
 - type: entity
   parent: RMCBarricadeHandrail
   id: RMCBarricadeHybrisaPlasticRoadBarrier
-  name: plastic road barrier
+  name: 塑料路障
   components:
-    - type: Sprite
-      layers:
-      - state: plasticroadbarrierred
-      - map: [ "acided" ]
-    - type: Construction
-      graph: BarricadeHandrailGraph
-      node: nodeHandrail
+  - type: Sprite
+    layers:
+    - state: plasticroadbarrierred
+    - map: ["acided"]
+  - type: Construction
+    graph: BarricadeHandrailGraph
+    node: nodeHandrail
 
 - type: entity
   parent: RMCBarricadeHybrisaPlasticRoadBarrier
   id: RMCBarricadeHybrisaPlasticRoadBarrierBlue
   components:
-    - type: Sprite
-      layers:
-      - state: plasticroadbarrierblue
-      - map: [ "acided" ]
+  - type: Sprite
+    layers:
+    - state: plasticroadbarrierblue
+    - map: ["acided"]
 
 - type: entity
   parent: RMCBarricadeHybrisaPlasticRoadBarrier
   id: RMCBarricadeHybrisaPlasticRoadBarrierBlack
   components:
-    - type: Sprite
-      layers:
-      - state: plasticroadbarrierblack
-      - map: [ "acided" ]
+  - type: Sprite
+    layers:
+    - state: plasticroadbarrierblack
+    - map: ["acided"]
 
 # Metal Barricade Doors
 - type: entity
   parent: CMBarricadeBase
   id: CMBarricadeMetalDoor
-  name: folding metal barricade
-  description: A folding metal barricade weaker than the non-folding counterpart. Able to be opened and closed at a moment's notice. Repair with a welder.
+  name: 折叠金属路障
+  description: 一种比非折叠式同类更脆弱的折叠金属路障。能够随时开合。用焊枪修理。
   components:
   - type: VehicleSmashable
     requiredVehicleTag: VehicleHeavy
@@ -432,8 +428,7 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/_RMC14/Structures/metalhit.ogg"
+        path: "/Audio/_RMC14/Structures/metalhit.ogg"
   - type: Sprite
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi
     layers:
@@ -441,9 +436,9 @@
       map: ["enum.DoorVisualLayers.Base"]
       visible: false
     - state: DamageOverlay_0
-      map: [ "enum.RMCDamageOverlayVisuals.DamageOverlay" ]
+      map: ["enum.RMCDamageOverlayVisuals.DamageOverlay"]
       sprite: _RMC14/Structures/Walls/Barricades/folding_metal_cracks.rsi
-    - map: [ "acided" ]
+    - map: ["acided"]
     drawdepth: WallTops
   - type: RMCRepairable
     heal: 200
@@ -458,8 +453,7 @@
       CMPlasteel: 180
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 400
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -471,27 +465,27 @@
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: AnimationPlayer
   - type: GenericVisualizer
     visuals:
       enum.BarbedWireVisualLayers.Wire:
         barbWired:
-          UnWired: { state: folding_metal_closed_wire, visible: false }
-          WiredClosed: { state: folding_metal_wire, visible: true }
-          WiredOpen: { state: folding_metal_closed_wire, visible: true }
+          UnWired: {state: folding_metal_closed_wire, visible: false}
+          WiredClosed: {state: folding_metal_wire, visible: true}
+          WiredOpen: {state: folding_metal_closed_wire, visible: true}
       enum.SprayAcidedVisuals.Acided:
         acided:
-          True:
+          true:
             sprite: _RMC14/Effects/xeno_spray_acid.rsi
             state: acid
             visible: true
-          False:
+          false:
             visible: false
       enum.DoorVisuals.State:
         enum.RMCDamageOverlayVisuals.DamageOverlay:
-          Open: { sprite: _RMC14/Structures/Walls/Barricades/folding_metal_closed_cracks.rsi }
-          Closed: { sprite: _RMC14/Structures/Walls/Barricades/folding_metal_cracks.rsi }
+          Open: {sprite: _RMC14/Structures/Walls/Barricades/folding_metal_closed_cracks.rsi}
+          Closed: {sprite: _RMC14/Structures/Walls/Barricades/folding_metal_cracks.rsi}
   - type: DamageVisuals
     thresholds: [4, 8, 12]
     damageDivisor: 25

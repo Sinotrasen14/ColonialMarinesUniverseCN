@@ -14,8 +14,7 @@
     fixtures:
       fix1:
         hard: false
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         mask:
         - ItemMask
@@ -34,8 +33,8 @@
 - type: entity
   parent: BaseFoam
   id: Smoke
-  name: smoke
-  categories: [ HideSpawnMenu ]
+  name: 烟雾 | smoke
+  categories: [HideSpawnMenu]
   components:
   - type: Occluder
   - type: Sprite
@@ -50,8 +49,8 @@
 - type: entity
   parent: BaseFoam
   id: TearGasSmoke
-  name: tear gas
-  categories: [ HideSpawnMenu ]
+  name: 催泪瓦斯 | tear gas
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Effects/chemsmoke.rsi
@@ -65,7 +64,7 @@
 - type: entity
   parent: TearGasSmoke
   id: TearGasSmokeWhite
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: chemsmoke_white
@@ -73,8 +72,8 @@
 - type: entity
   parent: Smoke
   id: WizardSmoke
-  name: smoke
-  categories: [ HideSpawnMenu ]
+  name: 烟雾 | smoke
+  categories: [HideSpawnMenu]
   components:
   - type: Smoke
     spreadAmount: 5
@@ -82,8 +81,8 @@
 - type: entity
   parent: BaseFoam
   id: Foam
-  name: foam
-  categories: [ HideSpawnMenu ]
+  name: 泡沫 | foam
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     color: "#ffffffcc"
@@ -91,13 +90,13 @@
     layers:
     - state: foam
       map: ["enum.FoamVisualLayers.Base"]
-    - map: [ "enum.EdgeLayer.South" ]
+    - map: ["enum.EdgeLayer.South"]
       state: foam-south
-    - map: [ "enum.EdgeLayer.East" ]
+    - map: ["enum.EdgeLayer.East"]
       state: foam-east
-    - map: [ "enum.EdgeLayer.North" ]
+    - map: ["enum.EdgeLayer.North"]
       state: foam-north
-    - map: [ "enum.EdgeLayer.West" ]
+    - map: ["enum.EdgeLayer.West"]
       state: foam-west
   - type: SmoothEdge
   - type: IconSmooth
@@ -114,8 +113,8 @@
 
 - type: entity
   id: MetalFoam
-  name: metal foam
-  categories: [ HideSpawnMenu ]
+  name: 泡沫金属 | metal foam
+  categories: [HideSpawnMenu]
   parent: Foam
   components:
   - type: Sprite
@@ -124,13 +123,13 @@
     layers:
     - state: m_foam
       map: ["enum.FoamVisualLayers.Base"]
-    - map: [ "enum.EdgeLayer.South" ]
+    - map: ["enum.EdgeLayer.South"]
       state: m_foam-south
-    - map: [ "enum.EdgeLayer.East" ]
+    - map: ["enum.EdgeLayer.East"]
       state: m_foam-east
-    - map: [ "enum.EdgeLayer.North" ]
+    - map: ["enum.EdgeLayer.North"]
       state: m_foam-north
-    - map: [ "enum.EdgeLayer.West" ]
+    - map: ["enum.EdgeLayer.West"]
       state: m_foam-west
   - type: EdgeSpreader
     id: MetalFoam
@@ -140,8 +139,8 @@
 
 - type: entity
   id: IronMetalFoam
-  name: iron metal foam
-  categories: [ HideSpawnMenu ]
+  name: 铁金属泡沫 | iron metal foam
+  categories: [HideSpawnMenu]
   parent: MetalFoam
   components:
   - type: SpawnOnDespawn
@@ -149,8 +148,8 @@
 
 - type: entity
   id: AluminiumMetalFoam
-  name: aluminium metal foam
-  categories: [ HideSpawnMenu ]
+  name: 铝金属泡沫 | aluminium metal foam
+  categories: [HideSpawnMenu]
   parent: MetalFoam
   components:
   - type: SpawnOnDespawn
@@ -160,7 +159,7 @@
   abstract: true
   parent: StructureHealthBarrierWeak
   id: BaseFoamedMetal
-  name: base foamed metal
+  name: 基体泡沫金属 | base foamed metal
   placement:
     mode: SnapgridCenter
     snap:
@@ -178,8 +177,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb {}
+        shape: !type:PhysShapeAabb {}
         layer:
         - WallLayer
         mask:
@@ -202,8 +200,8 @@
 
 - type: entity
   id: FoamedIronMetal
-  name: foamed iron metal
-  description: "For sealing hull breaches."
+  name: 泡沫铁金属 | foamed iron metal
+  description: "用于密封船体破口。 | For sealing hull breaches."
   parent: BaseFoamedMetal
   components:
   - type: Sprite
@@ -213,20 +211,20 @@
     layers:
     - state: iron_foam
       map: ["enum.FoamVisualLayers.Base"]
-    - map: [ "enum.EdgeLayer.South" ]
+    - map: ["enum.EdgeLayer.South"]
       state: iron_foam-south
-    - map: [ "enum.EdgeLayer.East" ]
+    - map: ["enum.EdgeLayer.East"]
       state: iron_foam-east
-    - map: [ "enum.EdgeLayer.North" ]
+    - map: ["enum.EdgeLayer.North"]
       state: iron_foam-north
-    - map: [ "enum.EdgeLayer.West" ]
+    - map: ["enum.EdgeLayer.West"]
       state: iron_foam-west
 
 - type: entity
   parent: BaseFoamedMetal
   id: FoamedAluminiumMetal
-  name: foamed aluminium metal
-  description: "Leftover sparse foam from an aluminum foam grenade. Easily destroyed."
+  name: 泡沫铝金属 | foamed aluminium metal
+  description: "泡沫铝手榴弹残留的稀疏泡沫。易被摧毁。 | Leftover sparse foam from an aluminum foam grenade. Easily destroyed."
   components:
   - type: Sprite
     drawdepth: Effects
@@ -235,26 +233,25 @@
     layers:
     - state: metal_foam
       map: ["enum.FoamVisualLayers.Base"]
-    - map: [ "enum.EdgeLayer.South" ]
+    - map: ["enum.EdgeLayer.South"]
       state: metal_foam-south
-    - map: [ "enum.EdgeLayer.East" ]
+    - map: ["enum.EdgeLayer.East"]
       state: metal_foam-east
-    - map: [ "enum.EdgeLayer.North" ]
+    - map: ["enum.EdgeLayer.North"]
       state: metal_foam-north
-    - map: [ "enum.EdgeLayer.West" ]
+    - map: ["enum.EdgeLayer.West"]
       state: metal_foam-west
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1 # Intentionally very weak to encourage speedy repair, think of it as thin webbing
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   id: ReactionFlash
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: PointLight
     enabled: true

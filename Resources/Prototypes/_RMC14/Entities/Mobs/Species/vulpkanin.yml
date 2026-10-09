@@ -4,7 +4,7 @@
   - AppearanceVulpkanin
   - RMCBaseMobSpeciesOrganic
   id: RMCMobVulpkanin
-  name: Urist C.M McVulp
+  name: 乌里斯特·C.M·麦克沃尔普 | Urist C.M McVulp
   suffix: RMC14
   components:
   - type: HumanoidProfile
@@ -37,7 +37,7 @@
   - type: VulpkaninAccent
   - type: Speech
     speechVerb: Vulpkanin
-    allowedEmotes: [ 'Bark', 'Snarl', 'Whine', 'Growl', 'Yip' ]
+    allowedEmotes: ['Bark', 'Snarl', 'Whine', 'Growl', 'Yip']
   - type: Vocal
   - type: Wagging
     action: ActionToggleVulpkaninWagging
@@ -56,10 +56,10 @@
 
 - type: entity
   parent: AppearanceVulpkanin
-  name: Vulpkanin Dummy
+  name: 狐人占位角色 | Vulpkanin Dummy
   id: MobVulpkaninDummy
-  categories: [ HideSpawnMenu ]
-  description: A dummy vulpkanin meant to be used in character setup.
+  categories: [HideSpawnMenu]
+  description: 用于角色设置界面的狐人占位角色。 | A dummy vulpkanin meant to be used in character setup.
   components:
   - type: HumanoidProfile
     species: Vulpkanin

@@ -1,16 +1,16 @@
 - type: entity
   parent: BaseItem
   id: VehicleSPPVanTurret
-  name: SPP van turret
-  description: A roof-mounted turret fitted to an SPP van.
+  name: SPP厢式车炮塔
+  description: 安装在SPP厢式车车顶的炮塔。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       turret-cannon: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/sppvan.rsi
     state: van_turret_0
@@ -59,15 +59,15 @@
 - type: entity
   parent: VehicleHumveeCannon
   id: VehicleSPPVanCannon
-  name: SPP van cannon
-  description: A turret-mounted cannon for an SPP van.
+  name: SPP厢式货车加农炮
+  description: 一种用于SPP厢式货车的炮塔式加农炮。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/sppvan.rsi
     state: t60p3m_0
@@ -118,8 +118,8 @@
 - type: entity
   parent: RMCVanWheel
   id: VehicleSPPVanWheel
-  name: SPP van wheel
-  description: A reinforced wheel for SPP vans.
+  name: SPP厢式货车车轮
+  description: 用于SPP厢式货车的加固车轮。
   components:
   - type: HardpointIntegrity
     integrity: 250

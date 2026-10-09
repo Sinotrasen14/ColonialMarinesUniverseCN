@@ -2,8 +2,8 @@
   abstract: true
   parent: GrenadeBase
   id: CMGrenadeBase
-  name: grenade
-  description: Duck and cover.
+  name: 手榴弹
+  description: 卧倒并掩护。
   components:
   - type: Explosive
     explosionType: RMC
@@ -24,7 +24,7 @@
         volume: -5
     initialBeepDelay: 0
     beepInterval: 10
-    popup: null
+    popup:
   - type: TimerTriggerVisuals
   - type: IgnorePredictionHide
   - type: Clothing
@@ -46,8 +46,8 @@
     - RMCGrenadeM40
 
 - type: entity
-  name: flashbang
-  description: Excellent for stopping groups of Rioters. Don't expect sunglasses to protect you...
+  name: 闪光弹
+  description: 非常适合阻止成群的暴乱者。别指望太阳镜能保护你……
   parent: CMGrenadeBase
   id: RMCGrenadeFlashBang
   components:
@@ -83,8 +83,8 @@
   - RMCM40DPTags
   id: CMGrenadeHighExplosive
   # cmu edit start: M40 HEDP designation and impact fuse (cmss13-pve#517)
-  name: M40 HEDP grenade
-  description: High-Explosive Dual-Purpose. A small, but deceptively strong grenade that has been phasing out the M15 HE grenade. Explodes with a powerful blast. Can be fired from a grenade launcher for impact detonation, or primed in-hand and thrown to detonate after 4 seconds.
+  name: M40高爆双用途榴弹
+  description: 高爆双用途。一种小巧却强得出奇的榴弹，正在逐步淘汰 M15 高爆榴弹。爆炸时会产生强力爆破。可由榴弹发射器发射以撞击引爆，也可在手中激活引信后投掷，4 秒后引爆。
   # cmu edit end
   components:
   # cmu edit start: detonate on impact when fired from a launcher (cmss13-pve#517)
@@ -115,8 +115,8 @@
   - RMCM40DPTags
   id: CMGrenadeSmoke
   # cmu edit start: M47 HSDP designation and impact fuse (cmss13-pve#517)
-  name: M47 HSDP smoke grenade
-  description: The M47 HSDP is a small, but powerful smoke grenade. Based off the same platform as the M40 HEDP. Can be fired from a grenade launcher for impact detonation, or primed in-hand and thrown to detonate after 2.5 seconds.
+  name: M47 HSDP烟雾弹
+  description: M47 HSDP是一种小巧但威力强大的烟雾弹，与M40 HEDP基于同一平台。它可由榴弹发射器发射，撞击引爆，也可在手中激活引信后投掷，2.5秒后爆炸。
   # cmu edit end
   components:
   # cmu edit start: detonate on impact when fired from a launcher (cmss13-pve#517)
@@ -136,7 +136,7 @@
   - type: DeleteOnTrigger
   # cmu edit start: use the standard grenade arm sound
   - type: TimerTriggerVisuals
-    primingSound: null
+    primingSound:
   # cmu edit end
   - type: Tag
     tags:
@@ -189,7 +189,7 @@
 - type: entity
   parent: Smoke
   id: RMCSmokePhosphorusNoSpread
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Transform
     anchored: true
@@ -264,8 +264,8 @@
 - type: entity
   parent: CMGrenadeHighExplosive
   id: CMGrenadeFrag
-  name: 30mm HEFA grenade
-  description: High-Explosive Fragmenting-Antipersonnel. A small, but deceptively strong fragmentation grenade that has been phasing out the M15 fragmentation grenades alongside the 30mm HEDP. Capable of being loaded in grenade launchers, or thrown by hand.
+  name: 30毫米高爆破片杀伤榴弹
+  description: 高爆破片杀伤人员弹。一种体型小巧但威力出人意料地强的破片榴弹，正与30毫米高爆双用途弹一同逐步取代M15破片榴弹。可装填进榴弹发射器，也可用手投掷。
   components:
   # cmu edit start: not dual-purpose, so no impact fuse; the launcher's own fuse sets it off (cmss13-pve#517)
   - type: TriggerOnFixedDistanceStop
@@ -302,9 +302,9 @@
 - type: entity
   parent: CMGrenadeHighExplosive
   id: CMGrenadeFragOld
-  name: M15 fragmentation grenade
+  name: M15破片手榴弹
   # cmu edit start: no UNMC mentions
-  description: An outdated fragmentation grenade. After decades of service, the old M15 Fragmentation Grenade is slowly being replaced by the slightly safer 30mm-series grenades. It is set to detonate in 4 seconds.
+  description: 过时的破片手榴弹。服役数十年后，老旧的M15破片手榴弹正逐渐被稍微更安全的30毫米系列手榴弹取代。它被设定为4秒后引爆。
   # cmu edit end
   components:
   # cmu edit start: not dual-purpose, so no impact fuse; the launcher's own fuse sets it off (cmss13-pve#517)
@@ -345,8 +345,8 @@
 - type: entity
   parent: CMGrenadeFragOld
   id: RMCGrenadeBlastM12
-  name: M12 blast grenade
-  description: A high-explosive grenade produced for private security firms. It explodes around 4 seconds after the pin has been pulled.
+  name: M12爆破手榴弹
+  description: 为私营安保公司生产的高爆手榴弹。拔出保险销后约4秒爆炸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/m12blast.rsi
@@ -375,8 +375,8 @@
 - type: entity
   parent: CMGrenadeBase
   id: RMCGrenadeTraining
-  name: M07 Training Grenade
-  description: A harmless reusable version of the 30mm HEDP, used for training. Capable of being loaded into a grenade launcher, or thrown by hand.
+  name: M07训练榴弹
+  description: 一种用于训练的30毫米高爆双用途弹的无害可重复使用版本。可装入榴弹发射器，也可用手投掷。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/m07training.rsi
@@ -397,8 +397,8 @@
   - CMGrenadeBase
   id: RMCGrenadeIncendiary
   # cmu edit start: M77 HIAM designation (cmss13-pve#517)
-  name: M77 HIAM incendiary grenade
-  description: High-explosive-Incendiary, Anti-Mobility. The M77 is a small, but deceptively strong incendiary grenade designed to disrupt enemy mobility with long-lasting Type B napalm spread by a small explosive charge within the casing. It is set to detonate in 4 seconds.
+  name: M77 HIAM 燃烧手榴弹
+  description: 高爆燃烧、反机动。M77是一种小型但威力出奇强大的燃烧手榴弹，旨在通过弹壳内的小型爆炸装药散布持久的B型凝固汽油，从而扰乱敌方机动能力。其设定为4秒后引爆。
   # cmu edit end
   components:
   - type: Sprite
@@ -416,8 +416,8 @@
   - RMCM40DPTags
   - CMGrenadeBase
   id: RMCGrenadeWhitePhosphorus
-  name: 30mm WPDP white phosphorus grenade
-  description: The 30mm WPDP is a small, but powerful phosphorus grenade. It is set to detonate in 2 seconds.
+  name: 30毫米WPDP白磷手榴弹
+  description: 30毫米WPDP是一种小型但威力强大的白磷手榴弹。它被设定为2秒后引爆。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/m40wpdp.rsi
@@ -428,7 +428,7 @@
   - type: DeleteOnTrigger
   # cmu edit start: use the standard grenade arm sound
   - type: TimerTriggerVisuals
-    primingSound: null
+    primingSound:
   # cmu edit end
   - type: SpawnOnTrigger
     proto: RMCSmokePhosphorusWeak
@@ -440,8 +440,8 @@
   parent: RMCGrenadeWhitePhosphorus
   id: RMCGrenadeWhitePhosphorusCompound
   # cmu edit start: M60 WPSI designation and white-cap sprite (cmss13-pve#517)
-  name: M60 WPSI grenade
-  description: The M60 WPSI is a small, but powerful chemical compound grenade, designated as such with a white cap. Usable for both smoke-screen purposes and as an incendiary device.
+  name: M60 WPSI手榴弹
+  description: M60 WPSI是一种小巧但威力强大的化学复合手榴弹，以白色顶盖作为标识。它既可用于制造烟幕，也可用作燃烧装置。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/wpsi.rsi
@@ -452,8 +452,8 @@
 - type: entity
   parent: CMUIEDBase
   id: RMCGrenadeMolotov
-  name: improvised firebomb
-  description: A potent, improvised firebomb, coupled with a pinch of gunpowder. Cheap, very effective, and deadly in confined spaces. Commonly found in the hands of rebels and terrorists. It can be difficult to predict how many seconds you have before it goes off, so be careful. Chances are, it might explode in your face.
+  name: 简易燃烧弹
+  description: 一种强效的简易燃烧弹，掺入少许火药。廉价、非常有效，在封闭空间内致命。常见于叛军和恐怖分子手中。很难预测它还有多少秒就会爆炸，所以要小心。很有可能，它会在你脸上炸开。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/molotov.rsi
@@ -467,7 +467,7 @@
     keyOut: trigger
     examinable: false
     initialBeepDelay: 0
-    beepSound: null
+    beepSound:
   - type: RandomTimerTrigger
     min: 1
     max: 4
@@ -483,8 +483,8 @@
 - type: entity
   parent: CMGrenadeBase
   id: RMCGrenadeIED
-  name: throwable improvised explosive device
-  description: An improvised chemical explosive grenade. Designed to kill through fragmentation.
+  name: 可投掷简易爆炸装置
+  description: 一种简易化学爆炸手榴弹。旨在通过破片杀伤。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/ied.rsi
@@ -513,9 +513,9 @@
 - type: entity
   parent: CMGrenadeBase
   id: RMCGrenade20mmIncendiary
-  name: L109A2 20mm incendiary grenade
+  name: L109A2 20毫米燃烧榴弹
   suffix: PvE
-  description: A 20mm grenade that creates flames upon impact. Less powerful than full-sized grenades. Be careful how you handle these.
+  description: 一种撞击后产生火焰的20毫米榴弹。威力低于全尺寸榴弹。处理这些时要小心。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/rcm20mm/incend.rsi
@@ -535,9 +535,9 @@
 - type: entity
   parent: CMGrenadeBase
   id: RMCGrenade20mmHE
-  name: L109A1 20mm HE grenade
+  name: L109A1 20毫米高爆榴弹
   suffix: PVE
-  description: A 20mm grenade that explodes upon impact. Less powerful than full-sized grenades. Be careful how you handle these.
+  description: 一种撞击时爆炸的20毫米榴弹。威力不如全尺寸榴弹。请小心处理这些榴弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/rcm20mm/he.rsi
@@ -561,7 +561,7 @@
 
 - type: entity
   id: CMExplosionEffectGrenade
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Effects/grenade_explosion.rsi
@@ -571,7 +571,7 @@
 
 - type: entity
   id: RMCExplosionEffectGrenadeShockWave
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TimedDespawn
     lifetime: 0.5
@@ -579,7 +579,7 @@
 
 - type: entity
   id: CMExplosionEffectShrapnel1
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: CollisionWake
   - type: Physics
@@ -588,8 +588,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 20
         mask:
@@ -606,7 +605,7 @@
 - type: entity
   parent: CMExplosionEffectShrapnel1
   id: CMExplosionEffectShrapnel2
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: shrapnel_bright2

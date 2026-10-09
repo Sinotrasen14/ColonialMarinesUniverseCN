@@ -21,8 +21,8 @@
 - type: entity
   parent: CMBaseWindow
   id: RMCWindowPrison
-  name: window
-  description: A glass window. It looks thin and flimsy. A few knocks with anything should shatter it.
+  name: 窗户
+  description: 一扇玻璃窗。它看起来又薄又脆弱。用任何东西敲几下就能把它打碎。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/prison_window.rsi
@@ -39,29 +39,27 @@
   - type: Repairable
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 600 # excessive damage destroys window and frame
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 40
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              CMShardGlass:
-                min: 1
-                max: 1
-          - !type:ChangeConstructionNodeBehavior
-            node: windowFramePrison
+    - trigger: !type:DamageTrigger
+        damage: 600   # excessive damage destroys window and frame
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: windowFramePrison
   - type: RMCWallExplosionDeletable
   - type: DestroyedByExplosionType
   - type: Construction
@@ -76,8 +74,8 @@
 - type: entity
   parent: RMCWindowPrison
   id: RMCWindowPrisonCell
-  name: cell window
-  description: A glass window with a special rod matrix inside a wall frame.
+  name: 牢房窗
+  description: 一扇玻璃窗，墙框内带有特殊的杆状矩阵。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/prison_cellwindow.rsi
@@ -95,8 +93,8 @@
 - type: entity
   parent: CMBaseWindow
   id: RMCWindowPrisonReinforced
-  name: reinforced window
-  description: A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+  name: 加固窗
+  description: 一扇墙框内带有特殊杆状矩阵的玻璃窗。它看起来相当坚固。可能需要重重击打几下才能打碎它。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/prison_rwindow.rsi
@@ -113,32 +111,30 @@
   - type: Repairable
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 600 # excessive damage destroys window and frame
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              CMShardGlass:
-                min: 1
-                max: 1
-              CMRodMetal:
-                min: 1
-                max: 1
-          - !type:ChangeConstructionNodeBehavior
-            node: windowFramePrison
+    - trigger: !type:DamageTrigger
+        damage: 600   # excessive damage destroys window and frame
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+          CMRodMetal:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: windowFramePrison
   - type: RMCWallExplosionDeletable
   - type: DestroyedByExplosionType
   - type: Construction
@@ -152,8 +148,8 @@
 - type: entity
   parent: CMBaseWindowIndestructible
   id: RMCWindowPrisonHull
-  name: hull window
-  description: A glass window with a special rod matrix inside a wall frame. This one has an automatic shutter system to prevent any atmospheric breach.
+  name: 船体窗
+  description: 一扇在壁框内带有特殊杆矩阵的玻璃窗。这一扇配有自动遮板系统，以防止任何大气泄漏。
   components:
   - type: Corrodible
     isCorrodible: false

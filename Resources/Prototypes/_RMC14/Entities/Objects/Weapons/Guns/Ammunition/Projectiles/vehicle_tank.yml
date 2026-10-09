@@ -1,15 +1,15 @@
 - type: entity
   parent: RMCProjectileRocket84mm
   id: RMCProjectileLTBCannon
-  name: LTB HESH cannon shell
-  categories: [ HideSpawnMenu ]
+  name: LTB碎甲炮弹
+  categories: [HideSpawnMenu]
   components:
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: DeleteOnFixedDistanceStop
   - type: TriggerOnCollide
     fixtureID: projectile

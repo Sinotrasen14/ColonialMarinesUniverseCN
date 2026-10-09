@@ -1,9 +1,8 @@
-
 - type: entity
   parent: CMWallMetal
   id: RMCWallPrison
-  name: metal wall
-  description: A huge chunk of metal used to separate rooms.
+  name: 金属墙
+  description: 一大块用来分隔房间的金属。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/prison_wall.rsi
@@ -21,8 +20,8 @@
 - type: entity
   parent: RMCBaseWallReinforced
   id: RMCWallPrisonReinforced
-  name: reinforced metal wall
-  description: A huge chunk of ultra-reinforced metal used to separate rooms.
+  name: 强化金属墙
+  description: 一大块用于分隔房间的超强化金属。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/prison_rwall.rsi
@@ -40,8 +39,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallPrisonHull
-  name: heavy reinforced wall
-  description: A huge chunk of ultra-reinforced metal used to separate rooms. Looks virtually indestructible.
+  name: 重型加固墙
+  description: 一大块超强化金属，用于分隔房间。看起来几乎坚不可摧。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/prison_rwall.rsi
@@ -59,8 +58,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallBoneResin
-  name: skeletal resin
-  description: A wall made of molted old resin. This place is more alive than you are.
+  name: 骸骨树脂
+  description: 一堵由蜕下的旧树脂筑成的墙。这个地方比你更有生气。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/bone_resin.rsi

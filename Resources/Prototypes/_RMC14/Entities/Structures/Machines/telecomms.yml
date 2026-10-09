@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseMachinePowered, ConstructibleMachine ]
+  parent: [BaseMachinePowered, ConstructibleMachine]
   id: CMTelecomServer
-  name: telecommunication server
-  description: When powered and filled with encryption keys it allows radio headset communication.
+  name: 电信服务器
+  description: 通电并填入加密密钥后，它允许无线电耳机通信。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/telecomms.rsi
@@ -35,8 +35,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         density: 190
         mask:
@@ -45,8 +44,7 @@
         - MachineLayer
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior

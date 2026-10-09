@@ -20,10 +20,10 @@
       - Tree
 
 - type: entity
-  parent: [ RMCBaseMeleeWeapon, BaseKnife, RMCAttachableBase ]
+  parent: [RMCBaseMeleeWeapon, BaseKnife, RMCAttachableBase]
   id: RMCM5Bayonet # bayonet
-  name: "M5 'Night Raider' bayonet"
-  description: The standard-issue bayonet of the Marines. You can slide this knife into your boots, or attach it to the end of a rifle.
+  name: "M5“夜袭者”刺刀"
+  description: 海军陆战队的制式刺刀。你可以把这把刀滑入靴中，或将其安装在步枪末端。
   components:
   - type: Clothing
     slots:
@@ -92,8 +92,8 @@
 - type: entity
   parent: RMCM5Bayonet
   id: RMCCombatUtilityKnifeA
-  name: "'Druzhina' combat utility knife"
-  description: A heavy combat knife, designed for SPP special forces. Its heft and durability makes it popular for various uses in the field.
+  name: "“德鲁日纳”战斗多用途刀"
+  description: 一把重型战斗刀，专为SPP特种部队设计。其分量与耐用性使其在实战中的各种用途中广受欢迎。
   components:
   - type: Clothing
     slots:
@@ -114,8 +114,8 @@
 - type: entity
   parent: RMCM5Bayonet
   id: RMCCombatUtilityKnifeB
-  name: "'Druzhina' combat utility knife"
-  description: A heavy combat knife, designed for SPP special forces. Its heft and durability makes it popular for various uses in the field.
+  name: "“德鲁日纳”战斗多用途刀"
+  description: 一把重型战斗刀，专为SPP特种部队设计。其分量和耐用性使其在野外各种用途中广受欢迎。
   components:
   - type: Clothing
     slots:
@@ -136,8 +136,8 @@
 - type: entity
   parent: RMCM5Bayonet
   id: RMCTantoA # bayonet
-  name: "MK3 infantry service tanto"
-  description: Forged for the elite forces of the Royal Marines Commando, the sleek, tempered construction of this blade has been lauded by its wielders.
+  name: "MK3步兵制式短刀"
+  description: 此刀为皇家海军陆战队突击队精锐部队锻造，其流畅且经过回火处理的构造深受使用者赞誉。
   components:
   - type: Clothing
     slots:
@@ -158,8 +158,8 @@
 - type: entity
   parent: RMCM5Bayonet
   id: RMCTantoB # bayonet
-  name: "MK3 infantry service tanto"
-  description: Forged for the elite forces of the Royal Marines Commando, the sleek, tempered construction of this blade has been lauded by its wielders.
+  name: "MK3步兵制式短刀"
+  description: 为皇家海军陆战队突击队的精锐部队锻造，这把短刀流畅且经过回火处理的构造备受其使用者赞誉。
   components:
   - type: Clothing
     slots:
@@ -180,8 +180,8 @@
 - type: entity
   parent: RMCM5Bayonet
   id: RMCSawtoothDaggerA # bayonet
-  name: "Fiore-pattern trench dagger"
-  description: This thin, yet rigid dagger is favored for its combination of elegant features and lethality in hand-to-hand combat.
+  name: "菲奥雷式战壕匕首"
+  description: 这把纤细却坚固的匕首因其优雅特质与近身格斗中的致命性相结合而备受青睐。
   components:
   - type: Clothing
     slots:
@@ -202,8 +202,8 @@
 - type: entity
   parent: RMCM5Bayonet
   id: RMCSawtoothDaggerB # bayonet
-  name: "Fiore-pattern trench dagger"
-  description: This thin, yet rigid dagger is favored for its combination of elegant features and lethality in hand-to-hand combat.
+  name: "菲奥雷式战壕匕首"
+  description: 这把纤细却坚硬的匕首因其优雅特质与近身格斗中的致命性相结合而备受青睐。
   components:
   - type: Clothing
     slots:
@@ -222,10 +222,10 @@
     prefix: daggerb
 
 - type: entity
-  name: M11 throwing knife
-  parent: [ RMCBaseMeleeWeapon, BaseKnife ]
+  name: M11投掷刀
+  parent: [RMCBaseMeleeWeapon, BaseKnife]
   id: CMM11Knife
-  description: A military knife designed to be thrown at the enemy.
+  description: 一种设计用于向敌人投掷的军用刀具。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Melee/m11_knife.rsi
@@ -264,10 +264,10 @@
   - type: DeleteOnExplosion
 
 - type: entity
-  parent: [ RMCBaseMeleeWeapon, BaseKnife ]
+  parent: [RMCBaseMeleeWeapon, BaseKnife]
   id: CMM2132Machete
-  name: M2132 machete
-  description: Latest issue of the Marine Machete.
+  name: M2132 砍刀
+  description: 最新款M2132砍刀。
   components:
   - type: Clothing
     slots:
@@ -323,8 +323,8 @@
 - type: entity
   parent: CMM2132Machete
   id: RMCCeremonialSword
-  name: ceremonial sabre
-  description: A fancy ceremonial sabre passed down from generation to generation. Despite this, it has been very well cared for, and is in top condition.
+  name: 礼仪佩剑
+  description: 一把世代相传的华丽礼仪佩剑。尽管如此，它一直得到精心保养，状态极佳。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Melee/co_sabre.rsi
@@ -340,8 +340,8 @@
 - type: entity
   parent: CMM2132Machete
   id: RMCM2100Machete
-  name: M2100 "Ngájhe" machete
-  description: An older issue UNMC machete, never left testing. Designed in the Central African Republic. The notching made it hard to clean, and as such the UNMC refused to adopt it - despite the superior bludgeoning power offered.
+  name: M2100“Ngájhe”砍刀
+  description: 一把旧式配发的 UNMC 砍刀，从未脱离测试阶段。设计于中非共和国。刀身的缺口使其难以清洁，因此 UNMC 拒绝采用它——尽管它能提供更强的钝击威力。
   components:
   - type: Tag
     tags:
@@ -359,10 +359,10 @@
   - type: UsableWhileDevoured
 
 - type: entity
-  parent: [ RMCBaseMeleeWeapon, BaseKnife ]
+  parent: [RMCBaseMeleeWeapon, BaseKnife]
   id: RMCStraightRazor
-  name: straight razor
-  description: The commandant's favorite weapon against marines who dare break the grooming standards.
+  name: 直剃刀
+  description: 陆战队司令对付胆敢违反仪容标准的海军陆战队员时最爱用的武器。
   components:
   - type: Tag
     tags:
@@ -372,13 +372,13 @@
     sprite: _RMC14/Objects/Weapons/Melee/straight_razor.rsi
     layers:
     - state: razor-off
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: { state: razor }
-          False: { state: razor-off }
+          true: {state: razor}
+          false: {state: razor-off}
   - type: Appearance
   - type: Item
     size: Small

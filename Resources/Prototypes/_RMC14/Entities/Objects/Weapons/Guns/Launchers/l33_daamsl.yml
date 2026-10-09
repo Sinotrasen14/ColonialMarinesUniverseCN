@@ -1,15 +1,15 @@
 - type: entity
   parent: RMCBaseWeaponLauncher
   id: RMCWeaponLauncherL33
-  name: L33 DAAMSL
+  name: L33一次性反装甲导弹发射器
   suffix: PVE, RCM, AT
-  description: "The L33 Disposable Anti-Armour Missile Launcher, standard-issue anti-tank system of the TWE's Royal Marines; a single-use, shoulder-fired weapon capable of disabling or outright destroying moving vehicles even out to 1,250m.\n\nThe optic appears to be damaged. Guess you'll have to eyeball it."
+  description: "L33一次性反装甲导弹发射器，TWE皇家海军陆战队的标准制式反坦克系统；一种一次性肩射武器，能够使移动车辆失能或直接将其摧毁，即便远至1250米。\n\n光学瞄具似乎损坏了。看来你只能靠肉眼瞄准了。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/RocketLaunchers/l33/icon.rsi
     layers:
-      - state: icon
-        map: ["enum.GunVisualLayers.Base"]
+    - state: icon
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/RocketLaunchers/l33/inhands.rsi
   - type: Item

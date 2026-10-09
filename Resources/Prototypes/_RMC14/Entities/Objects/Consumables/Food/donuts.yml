@@ -1,8 +1,8 @@
-﻿- type: entity
-  parent: [ RMCBoxCardboard, BaseBagOpenClose ]
+- type: entity
+  parent: [RMCBoxCardboard, BaseBagOpenClose]
   id: RMCBoxDonutEmpty
-  name: Yum! donuts
-  description: A box of mouth-watering "Yum!" brand donuts
+  name: Yum！甜甜圈
+  description: 一盒令人垂涎的“Yum！”品牌甜甜圈
   suffix: Empty
   components:
   - type: Sprite #TODO RMC14 - the different donuts have diff storage sprites that should show up based on varieties
@@ -85,8 +85,8 @@
 - type: entity
   parent: FoodInjectableBase
   id: RMCFoodDonut
-  name: donut
-  description: A donut. Rare on the frontier, so take care of it.
+  name: 甜甜圈
+  description: 一个甜甜圈。在边境很稀有，所以要好好保管它。
   components:
   - type: Edible
     transferAmount: 1 # 3 bites
@@ -99,16 +99,16 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 5
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
+      maxVol: 5
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 3
   - type: Item
     sprite: Objects/Consumable/Food/Baked/donut.rsi
     size: Tiny
   - type: FlavorProfile
     flavors:
-      - bread
+    - bread
   - type: Extractable
     grindableSolutionName: food
   - type: InjectableSolution
@@ -119,8 +119,8 @@
 - type: entity
   parent: RMCFoodDonut
   id: RMCFoodDonutFrosted
-  name: frosted donut
-  description: A pink frosted donut. Even more rare on the frontier.
+  name: 糖霜甜甜圈
+  description: 一个粉色糖霜甜甜圈。在边境更加罕见。
   components:
   - type: Edible
     transferAmount: 2 # 3 bites
@@ -129,15 +129,15 @@
   - type: Solution
     id: food
     solution:
-        maxVol: 5
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
-        - ReagentId: RMCSprinkles
-          Quantity: 2
+      maxVol: 5
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 3
+      - ReagentId: RMCSprinkles
+        Quantity: 2
   - type: Item
     heldPrefix: pink
   - type: FlavorProfile
     flavors:
-      - bread
-      - sweet
+    - bread
+    - sweet

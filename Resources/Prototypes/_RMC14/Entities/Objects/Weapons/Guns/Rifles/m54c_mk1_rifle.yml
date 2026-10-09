@@ -1,16 +1,16 @@
-﻿- type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: M41A pulse rifle MK1
+- type: entity
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: M41A 脉冲步枪 MK1
   id: RMCWeaponRifleM54CMK1
-  description: An older design of the Pulse Rifle commonly used by the Marine Corps. Uses 10x24mm caseless ammunition.
+  description: 一种较旧设计的脉冲步枪，通常由海军陆战队使用。使用10×24毫米无壳弹药。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m54cmk1.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m54cmk1.rsi
   - type: ContainerContainer
@@ -55,7 +55,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -114,7 +114,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -126,7 +126,7 @@
           - RMCMagazineRifleM54CMK1HEAP
           - RMCMagazineRifleM54CMK1WP
           - CMMagazineRifleM54CMK1TracerTag
-        startingItem: null
+        startingItem:
 
 - type: entity
   parent: RMCWeaponRifleM54CMK1
@@ -135,7 +135,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -148,14 +148,14 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: CMMagazineRifleM54CMK1
-  name: "M41A MK1 magazine (10x24mm)"
+  name: "M41A MK1 弹匣（10×24毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - CMMagazineRifleM54CMK1
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mm
@@ -175,7 +175,7 @@
 - type: entity
   parent: CMMagazineRifleM54CMK1
   id: CMMagazineRifleM54CMK1AP
-  name: "M41A MK1 AP magazine (10x24mm)"
+  name: "M41A MK1 穿甲弹匣（10x24mm）"
   suffix: AP
   components:
   - type: Tag
@@ -202,7 +202,7 @@
 - type: entity
   parent: CMMagazineRifleM54CMK1
   id: CMMagazineRifleM54CMK1Tracer
-  name: "M41A MK1 Tracer magazine (10x24mm)"
+  name: "M41A MK1 曳光弹弹匣（10×24mm）"
   suffix: Tracer
   components:
   - type: Tag
@@ -227,7 +227,7 @@
 - type: entity
   parent: CMMagazineRifleM54CMK1
   id: RMCMagazineRifleM54CMK1Incendiary
-  name: "M41A MK1 Incendiary magazine (10x24mm)"
+  name: "M41A MK1 燃烧弹弹匣（10x24mm）"
   suffix: AP
   components:
   - type: Tag
@@ -254,7 +254,7 @@
 - type: entity
   parent: CMMagazineRifleM54CMK1
   id: RMCMagazineRifleM54CMK1HEAP
-  name: "M41A MK1 HEAP magazine (10x24mm)"
+  name: "M41A MK1 高爆穿甲弹匣（10x24毫米）"
   suffix: HEAP
   components:
   - type: Tag
@@ -276,12 +276,12 @@
     - state: ammo_band
       color: "#9C9A19"
   - type: RefillableByBulletBox
-    bulletType: null
+    bulletType:
 
 - type: entity
   parent: CMMagazineRifleM54CMK1
   id: RMCMagazineRifleM54CMK1WP
-  name: "M54C MK1 WP magazine (10x24mm)"
+  name: "M54C MK1 WP 弹匣（10×24毫米）"
   suffix: WP
   components:
   - type: Tag

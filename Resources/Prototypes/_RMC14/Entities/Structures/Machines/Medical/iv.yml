@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: CMIV
-  name: intravenous drip
-  description: Allows you to inject blood into a patient or extract blood from them to do a blood transfusion.
+  name: 静脉滴注
+  description: 允许你向患者注入血液，或从患者体内抽取血液，以进行输血。
   suffix: IV, empty
   components:
   - type: Physics
@@ -10,8 +10,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 60
         mask:
@@ -26,9 +25,9 @@
     sprite: _RMC14/Structures/Machines/Medical/iv_drip.rsi
     layers:
     - state: unhooked
-      map: [ "enum.IVDripVisualLayers.Base" ]
+      map: ["enum.IVDripVisualLayers.Base"]
     - state: reagent0
-      map: [ "enum.IVDripVisualLayers.Reagent" ]
+      map: ["enum.IVDripVisualLayers.Reagent"]
   - type: IVDrip
     reagentStates:
     - 0: reagent0
@@ -44,7 +43,7 @@
   - type: ItemSlots
     slots:
       pack:
-        name: pack
+        name: 包
         whitelist:
           components:
           - BloodPack
@@ -60,8 +59,8 @@
 - type: entity
   parent: BaseItem
   id: CMBloodPack # TODO RMC14 blood types
-  name: blood pack
-  description: A blood pack. Contains fluids, typically used for transfusions.
+  name: 血袋
+  description: 血袋。含有液体，通常用于输血。
   suffix: CM, empty
   components:
   - type: BloodPack
@@ -101,7 +100,7 @@
     price: 30
   - type: Tag
     tags:
-      - CMBloodPack
+    - CMBloodPack
   - type: InteractedBlacklist
     blacklist:
       components:
@@ -117,7 +116,7 @@
 - type: entity
   parent: CMBloodPack
   id: CMBloodPackFull # TODO RMC14 blood types
-  name: blood pack
+  name: 血包
   suffix: CM, Full
   components:
   - type: SolutionContainerManager

@@ -1,17 +1,17 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: nailgun
+  name: 钉枪
   id: WeaponNailgun
-  description: A carpentry tool, used to drive nails into tough surfaces. Of course, if there isn't anything there, that's just a very sharp nail launching at high velocity...
+  description: 一种木工工具，用于将钉子钉入坚硬的表面。当然，如果那里什么都没有，那就只是一枚非常锋利的钉子以高速发射出去……
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/nailgun.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-4
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -53,7 +53,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSMGNailgun
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -75,8 +75,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSMGNailgun
-  name: "nailgun magazine (7x45mm)"
-  description: "A large magazine of oversized plasteel nails. Unfortunately, the production cost of those nail makes them ill-affordable for most military projects, and only some specific construction projects requires them."
+  name: "钉枪弹匣（7×45毫米）"
+  description: "一个装有超大号塑钢钉的大型弹匣。遗憾的是，这些钉子的生产成本让大多数军事项目难以承受，只有某些特定的建筑项目才会用到它们。"
   components:
   - type: Tag
     tags:
@@ -108,7 +108,7 @@
 - type: entity
   parent: CMCartridgeSMGBase
   id: RMCCartridge7x45mm
-  name: nail (7x45mm)
+  name: 钉子（7×45毫米）
   components:
   - type: Tag
     tags:
@@ -120,7 +120,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCNail7x45mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

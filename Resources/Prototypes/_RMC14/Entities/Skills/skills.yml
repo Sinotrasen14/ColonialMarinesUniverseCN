@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   id: RMCSkillBase
   components:
@@ -7,167 +7,167 @@
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillAntagonist
-  name: Antagonist
-  categories: [ HideSpawnMenu ]
+  name: 对手 | Antagonist
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillConstruction
-  name: Construction
-  categories: [ HideSpawnMenu ]
+  name: 建设 | Construction
+  categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
-    delayMultipliers: [ 1, 1, 0.5 ]
+    delayMultipliers: [1, 1, 0.5]
 # Based on barricade weld times, 1 and 0 are full second, 2 is half
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillCqc
   name: Cqc
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
-    delayMultipliers: [ 0.75, 0.5, 0.5, 0.5, 0.25 ]
+    delayMultipliers: [0.75, 0.5, 0.5, 0.5, 0.25]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillDomestics
-  name: Domestics
-  categories: [ HideSpawnMenu ]
+  name: 国内 | Domestics
+  categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
-    delayMultipliers: [ 1, .9, 0.5 ]
+    delayMultipliers: [1, .9, 0.5]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillEndurance
-  name: Endurance
-  categories: [ HideSpawnMenu ]
+  name: 耐力 | Endurance
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillEngineer
-  name: Engineer
-  categories: [ HideSpawnMenu ]
+  name: 工程师 | Engineer
+  categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
-    delayMultipliers: [ 1, 0.75, 0.5, 0.375, 0.25 ]
+    delayMultipliers: [1, 0.75, 0.5, 0.375, 0.25]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillExecution
-  name: Execution
-  categories: [ HideSpawnMenu ]
+  name: 执行 | Execution
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillFirearms
-  name: Firearms
-  categories: [ HideSpawnMenu ]
+  name: 枪支 | Firearms
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillFireman
-  name: Fireman
-  categories: [ HideSpawnMenu ]
+  name: 消防员 | Fireman
+  categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
-    delayMultipliers: [ 1, 0.75, 0.5 ]
+    delayMultipliers: [1, 0.75, 0.5]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillIntel
-  name: Intel
-  categories: [ HideSpawnMenu ]
+  name: 英特尔 | Intel
+  categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
-    delayMultipliers: [ 1, 0.75, 0.5, 0.25, 0.1 ]
+    delayMultipliers: [1, 0.75, 0.5, 0.25, 0.1]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillJtac
   name: Jtac
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillLeadership
-  name: Leadership
-  categories: [ HideSpawnMenu ]
+  name: 领导力 | Leadership
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillMedical
-  name: Medical
-  categories: [ HideSpawnMenu ]
+  name: 医疗 | Medical
+  categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
-    delayMultipliers: [ 1, 1, 1, 0.75, 0.35 ]
+    delayMultipliers: [1, 1, 1, 0.75, 0.35]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillMeleeWeapons
-  name: Melee Weapons
-  categories: [ HideSpawnMenu ]
+  name: 近战武器 | Melee Weapons
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillNavigations
-  name: Navigations
-  categories: [ HideSpawnMenu ]
+  name: 导航 | Navigations
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillOverwatch
-  name: Overwatch
-  categories: [ HideSpawnMenu ]
+  name: 守望先锋 | Overwatch
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillPilot
-  name: Pilot
-  categories: [ HideSpawnMenu ]
+  name: 飞行员 | Pilot
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillPolice
-  name: Police
-  categories: [ HideSpawnMenu ]
+  name: 警察 | Police
+  categories: [HideSpawnMenu]
 
 # Forklift certified
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillPowerLoader
-  name: Power Loader
-  categories: [ HideSpawnMenu ]
+  name: 动力装载机 | Power Loader
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillResearch
-  name: Research
-  categories: [ HideSpawnMenu ]
+  name: 研究 | Research
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillSmartGun
-  name: Smart Gun
-  categories: [ HideSpawnMenu ]
+  name: 智能枪 | Smart Gun
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillSpecialistWeapons
-  name: Specialist Weapons
-  categories: [ HideSpawnMenu ]
+  name: 特种武器 | Specialist Weapons
+  categories: [HideSpawnMenu]
 
 # No longer a week away
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillSurgery
-  name: Surgery
-  categories: [ HideSpawnMenu ]
+  name: 外科 | Surgery
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillVehicles
-  name: Vehicles
-  categories: [ HideSpawnMenu ]
+  name: 车辆 | Vehicles
+  categories: [HideSpawnMenu]

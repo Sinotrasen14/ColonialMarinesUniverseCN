@@ -1,17 +1,17 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: MP27 submachinegun
+  name: MP27冲锋枪
   id: RMCWeaponSMGMP27
-  description: An archaic design going back almost a century, the MP27 was common in its day. Today it sees limited use as cheap computer-printed replicas or family heirlooms. An extremely ergonomic and lightweight design allows easy mass production and surpisingly good handling, but the cheap materials used hurt the weapon's scatter noticeably.
+  description: MP27是一种可追溯至近一个世纪前的古老设计，在它那个年代十分常见。如今，它仅被有限地用作廉价的电脑打印复制品或家族传家宝。极其符合人体工程学且轻量化的设计使其易于大规模生产，操控性也好得出奇，但所使用的廉价材料明显损害了武器的散布。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/mp27.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/mp27.rsi
   - type: Gun
@@ -48,7 +48,7 @@
     accuracyMultiplierUnwielded: 0.9
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: WieldableSpeedModifiers
     base: 0.725
     light: 1
@@ -57,7 +57,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSMGMP27
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -105,15 +105,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSMGMP27
-  name: MP27 magazine (4.6x30mm)
-  description: A 4.6mm magazine for the MP27. Fires large, heavy bullets that have noticeable punch for an SMG but also have equally noticeable scatter and a loss of accuracy.
+  name: MP27弹匣（4.6×30毫米）
+  description: MP27的4.6毫米弹匣。可发射又大又重的子弹，对冲锋枪而言具有明显的冲击力，但同样也有明显的散布和精度损失。
   components:
   - type: Tag
     tags:
     - CMMagazineSmg
     - RMCMagazineSMGMP27
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridge46x30mm
@@ -136,15 +136,15 @@
 - type: entity
   parent: RMCMagazineSMGMP27
   id: RMCMagazineSMGMP27Extend
-  name: MP27 magazine extended (4.6x30mm)
-  description: A 4.6mm extended magazine for the MP27. Fires large, heavy bullets that have noticeable punch for an SMG but also have equally noticeable scatter and a loss of accuracy.
+  name: MP27 加长弹匣（4.6×30毫米）
+  description: 用于MP27的4.6毫米加长弹匣。发射大而重的子弹，对冲锋枪而言具有明显的冲击力，但同样有明显的散布和精度下降。
   components:
   - type: Tag
     tags:
     - CMMagazineSmg
     - RMCMagazineSMGMP27
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridge46x30mm
@@ -161,8 +161,8 @@
 - type: entity
   parent: CMCartridge10x20mm
   id: RMCCartridge46x30mm
-  name: cartridge (46x30mm SMG)
-  description: A 4.6mm cartridge for the MP27 Submachinegun
+  name: 弹药（4.6×30毫米冲锋枪）
+  description: 用于MP27冲锋枪的4.6毫米弹药
   components:
   - type: Tag
     tags:
@@ -174,7 +174,7 @@
 - type: entity
   parent: Bullet10x20mm
   id: RMCBullet46x30mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

@@ -4,8 +4,8 @@
 - type: entity
   parent: SpaceCash
   id: RMCSpaceCash
-  name: dollars
-  description: Ten hundred-dollar bills, minted by the United Nations Treasury. Each are adorned with the face of a long-forgotten diplomat of a once-powerful planet. These bills are more than mere currency, they feel alive, as though they carry the weight of ancient history and the judgments of those who once controlled vast empires. The faces on each bill seem to watch you with silent intensity, as if each one believes it alone should be in your possession..
+  name: 美元
+  description: 十张百元美钞，由联合国财政部铸造。每张都饰有一位昔日强大星球上早已被遗忘的外交官的面孔。这些钞票不仅仅是货币，它们仿佛有生命，仿佛承载着古老历史的重量，以及那些曾掌控庞大帝国之人的评判。每张钞票上的面孔似乎都以无声的强烈注视着你，仿佛每一张都认为，只有它才应当归你所有。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/spacecash.rsi
@@ -14,7 +14,7 @@
       map: ["base"]
   - type: Item
     size: Tiny
-    shape: null
+    shape:
   - type: Tag
     tags:
     - Holdout
@@ -43,21 +43,21 @@
 - type: entity
   parent: RMCSpaceCash
   id: RMCSpaceCash1
-  name: 1 dollar bill
-  description: A single one-dollar bill, minted by the United States Treasury. Its design features the image of a long-forgotten figure from a bygone era, a leader whose legacy now means little to the US populace. While it holds sentimental value for those from certain parts of the country, its actual worth is minimal. In most places, it might fetch you half a hot-dog or a similar low-value snack.
+  name: 1美元纸币
+  description: 一张由美国财政部发行的一美元纸币。其设计上印有一位来自过去时代、早已被遗忘的人物的肖像，这位领袖的遗产如今对美国民众而言已无足轻重。虽然对于来自该国某些地区的人来说，它承载着情感价值，但它的实际价值微乎其微。在大多数地方，它或许只能为你换来半个热狗或类似的廉价零食。
 
 - type: material
   id: Dollar
-  name: 1 dollar bill
+  name: 1美元纸币
   unit: materials-unit-bill
   stackEntity: RMCSpaceCash1
-  icon: { sprite: /Textures/_RMC14/Objects/Misc/spacecash.rsi, state: spacecash }
+  icon: {sprite: /Textures/_RMC14/Objects/Misc/spacecash.rsi, state: spacecash}
   price: 1
 
 - type: stack
   id: Dollar
-  name: 1 dollar bill
-  icon: { sprite: /Textures/_RMC14/Objects/Misc/spacecash.rsi, state: spacecash }
+  name: 1美元纸币
+  icon: {sprite: /Textures/_RMC14/Objects/Misc/spacecash.rsi, state: spacecash}
   spawn: RMCSpaceCash1
 
 - type: Tag

@@ -3,8 +3,8 @@
   parent: BaseToolSurgery
   id: CMBaseToolSurgery
   abstract: true
-  name: retractor
-  description: Retracts stuff.
+  name: 回缩器
+  description: 收回东西。
   components:
   - type: Item
     size: Small
@@ -20,8 +20,8 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMRetractor
-  name: retractor
-  description: Retracts stuff.
+  name: 牵开器
+  description: 牵开东西。
   components:
   - type: CMSurgeryTool
     startSound:
@@ -46,7 +46,7 @@
 - type: entity
   parent: CMRetractor
   id: CMRetractorPredator
-  name: opener
+  name: 开启者
   components:
   - type: Sprite
     state: predator_retractor
@@ -57,8 +57,8 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMHemostat
-  name: hemostat
-  description: You think you have seen this before.
+  name: 止血钳
+  description: 你以为你之前见过这个。
   components:
   - type: CMSurgeryTool
     endSound:
@@ -81,7 +81,7 @@
 - type: entity
   parent: CMHemostat
   id: CMHemostatPredator
-  name: pincher
+  name: 钳子
   components:
   - type: Sprite
     state: predator_hemostat
@@ -92,8 +92,8 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMCautery
-  name: cautery
-  description: This stops bleeding.
+  name: 烧灼器
+  description: 这能止血。
   components:
   - type: CMSurgeryTool
     startSound:
@@ -125,7 +125,7 @@
 - type: entity
   parent: CMCautery
   id: CMCauteryPredator
-  name: cauterizer
+  name: 烧灼器
   components:
   - type: Sprite
     state: predator_cautery
@@ -136,8 +136,8 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMSurgicalDrill
-  name: surgical drill
-  description: You can drill using this item. You dig?
+  name: 手术钻
+  description: 你可以用这个物品钻孔。你懂吗？
   components:
   - type: CMSurgeryTool
     startSound:
@@ -168,7 +168,7 @@
 - type: entity
   parent: CMSurgicalDrill
   id: CMSurgicalDrillPredator
-  name: bone drill
+  name: 骨钻
   components:
   - type: Sprite
     state: predator_drill
@@ -179,8 +179,8 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMScalpel
-  name: scalpel
-  description: Cut, cut, and once more cut.
+  name: 手术刀
+  description: 切，切，再切一次。
   components:
   - type: CMSurgeryTool
     startSound:
@@ -224,7 +224,7 @@
 - type: entity
   parent: CMScalpel
   id: CMScalpelPredator
-  name: cutter
+  name: 切割机
   components:
   - type: Sprite
     state: predator_scalpel
@@ -233,13 +233,13 @@
 - type: entity
   parent: CMScalpel
   id: CMScalpelLaser
-  name: prototype laser scalpel
-  description: A scalpel augmented with a directed laser, for controlling bleeding as the incision is made. Also functions as a cautery. This one looks like an unreliable early model.
+  name: 原型激光手术刀
+  description: 一把加装定向激光的手术刀，用于在切开时控制出血。它也可作为烧灼器使用。这把看起来像是不可靠的早期型号。
   components:
   - type: Sprite
     layers:
     - state: scalpel_laser
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: MeleeWeapon
     damage:
       types:
@@ -262,51 +262,51 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: { state: scalpel_laser_on }
-          False: { state: scalpel_laser }
+          true: {state: scalpel_laser_on}
+          false: {state: scalpel_laser}
 
 # - - Improved
 - type: entity
   parent: CMScalpelLaser
   id: CMScalpelLaserImproved
-  name: laser scalpel
-  description: A scalpel augmented with a directed laser, for controlling bleeding as the incision is made. Also functions as a cautery. This one looks trustworthy, though it could be better.
+  name: 激光手术刀
+  description: 一把配有定向激光的手术刀，用于在切开时控制出血。也可用作烧灼器。这把看起来值得信赖，不过还能更好。
   components:
   - type: Sprite
     layers:
     - state: scalpel_laser_2
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: { state: scalpel_laser_2_on }
-          False: { state: scalpel_laser_2 }
+          true: {state: scalpel_laser_2_on}
+          false: {state: scalpel_laser_2}
 
 # - - Advanced
 - type: entity
   parent: CMScalpelLaser
   id: CMScalpelLaserAdvanced
-  name: advanced laser scalpel
-  description: A scalpel augmented with a directed laser, for controlling bleeding as the incision is made. Also functions as a cautery. This one looks to be the pinnacle of precision energy cutlery!
+  name: 高级激光手术刀
+  description: 一把配有定向激光的手术刀，用于在切开时控制出血。也可用作烧灼器。这把看起来是精密能量刀具的巅峰！
   components:
   - type: Sprite
     layers:
     - state: scalpel_laser_3
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: { state: scalpel_laser_3_on }
-          False: { state: scalpel_laser_3 }
+          true: {state: scalpel_laser_3_on}
+          false: {state: scalpel_laser_3}
 
 # - Pict System
 - type: entity
   parent: CMScalpel
   id: CMScalpelPICT
-  name: PICT system
-  description: The Precision Incision and Cauterization Tool uses a high-frequency vibrating blade, laser cautery, and suction liquid control system to precisely sever target tissues while preventing all fluid leakage. Despite its troubled development program and horrifying price tag, outside of complex experimental surgeries it isn't any better than an ordinary twenty-dollar scalpel and can't create a full-length incision bloodlessly.
+  name: PICT系统
+  description: PICT系统使用高频振动刀片、激光烧灼和抽吸液体控制系统，在防止任何液体泄漏的同时精确切断目标组织。尽管其研发计划波折重重且价格骇人，但在复杂的实验性手术之外，它并不比一把普通的二十美元手术刀更好，也无法无血地切出全长切口。
   components:
   - type: Sprite
     state: pict_system
@@ -316,8 +316,8 @@
 - type: entity
   parent: CMScalpel
   id: CMScalpelManager
-  name: incision management system
-  description: A true extension of the surgeon's body, this marvel instantly and completely prepares an incision allowing for the immediate commencement of therapeutic steps.
+  name: 切口管理系统
+  description: 作为外科医生身体的真正延伸，这一奇迹能即刻、彻底地准备好切口，让治疗步骤得以立即开始。
   components:
   - type: Sprite
     state: scalpel_manager
@@ -329,8 +329,8 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMCircularSaw
-  name: circular saw
-  description: For heavy-duty cutting.
+  name: 圆锯
+  description: 用于重型切割。
   components:
   - type: CMSurgeryTool
     startSound:
@@ -368,7 +368,7 @@
 - type: entity
   parent: CMCircularSaw
   id: CMCircularSawPredator
-  name: bone saw
+  name: 骨锯
   components:
   - type: Sprite
     state: predator_bonesaw
@@ -379,8 +379,8 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMBonesetter
-  name: bone setter
-  description: Used for setting bones back into place.
+  name: 接骨器
+  description: 用于将骨头复位。
   components: # TODO RMC14
   - type: Sprite
     sprite: _RMC14/Objects/Medical/Surgery/bonesetter.rsi
@@ -401,7 +401,7 @@
 - type: entity
   parent: CMBonesetter
   id: CMBonesetterPredator
-  name: bone placer
+  name: 骨头放置器
   components:
   - type: Sprite
     state: predator_bonesetter
@@ -413,8 +413,8 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMWoundClamp
-  name: wound clamp
-  description: Used for clamping wounds after treatment.
+  name: 伤口夹
+  description: 用于治疗后夹闭伤口。
   components: # TODO RMC14
   - type: Sprite
     sprite: _RMC14/Objects/Medical/Surgery/wound_clamp.rsi
@@ -428,8 +428,8 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMAutopsy
-  name: We-Yu Brand Automatic Autopsy System(TM)
-  description: Putting the FUN back in Autopsy.  This little gadget performs an entire autopsy of whatever strange life form you've found in about 30 seconds.
+  name: We-Yu牌自动尸检系统（TM）
+  description: 让尸检重新充满乐趣。这个小装置能在约30秒内，对你发现的任何奇怪生命形式完成一次完整的尸检。
   components: # TODO RMC14
   - type: Sprite
     sprite: _RMC14/Objects/Medical/Surgery/scalpel.rsi
@@ -443,8 +443,8 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMBoneGel
-  name: bottle of bone gel
-  description: A container for bone gel that often needs to be refilled from a specialized machine.
+  name: 骨胶瓶
+  description: 用于盛放骨胶的容器，通常需要从专用机器中重新填充。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/Surgery/bone_gel.rsi

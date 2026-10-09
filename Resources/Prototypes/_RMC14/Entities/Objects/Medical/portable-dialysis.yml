@@ -1,35 +1,35 @@
 - type: entity
-  parent: [ BaseItem, RMCPowerCellSlotUnremovable ]
+  parent: [BaseItem, RMCPowerCellSlotUnremovable]
   id: RMCPortableDialysis
-  name: portable dialysis machine
-  description: A man-portable dialysis machine, with a small internal battery that can be recharged. Filters out all foreign compounds from the bloodstream of whoever it's attached to, but also typically ends up removing some blood as well.
+  name: 便携式透析机
+  description: 一台可由单人携带的透析机，内置可充电的小型电池。它能从所连接对象的血液中过滤掉所有外来化合物，但通常最终也会移除一些血液。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/portable_dialysis.rsi
     layers:
     - state: portadialysis
     - state: unhooked
-      map: [ "enum.DialysisVisualLayers.Attachment" ]
+      map: ["enum.DialysisVisualLayers.Attachment"]
     - state: draining
-      map: [ "enum.DialysisVisualLayers.Effect" ]
+      map: ["enum.DialysisVisualLayers.Effect"]
       visible: false
     - state: filtering
-      map: [ "enum.DialysisVisualLayers.Filtering" ]
+      map: ["enum.DialysisVisualLayers.Filtering"]
       visible: false
     - state: battery0
-      map: [ "enum.DialysisVisualLayers.Battery" ]
+      map: ["enum.DialysisVisualLayers.Battery"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.DialysisVisuals.BatteryLevel:
         DialysisVisualLayers.Battery:
-          Empty: { state: battery0 }
-          VeryLow: { state: battery15 }
-          Low: { state: battery30 }
-          Medium: { state: battery45 }
-          High: { state: battery60 }
-          VeryHigh: { state: battery85 }
-          Full: { state: battery100 }
+          Empty: {state: battery0}
+          VeryLow: {state: battery15}
+          Low: {state: battery30}
+          Medium: {state: battery45}
+          High: {state: battery60}
+          VeryHigh: {state: battery85}
+          Full: {state: battery100}
   - type: Item
     size: Normal
   - type: PortableDialysis

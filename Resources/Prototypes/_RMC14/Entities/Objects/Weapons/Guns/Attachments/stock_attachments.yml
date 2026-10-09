@@ -22,7 +22,7 @@
 
 - type: entity
   abstract: true
-  parent: [ RMCStockAttachmentBase, RMCAttachableToggleableBase ]
+  parent: [RMCStockAttachmentBase, RMCAttachableToggleableBase]
   id: RMCStockAttachmentCollapsibleBase
   components:
   - type: AttachableVisuals
@@ -41,8 +41,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentM42A1WoodenStock
-  name: M42A1 wooden stock
-  description: A non-standard heavy wooden stock for the M42A1 Shotgun. More cumbersome than the standard issue stakeout, but reduces recoil and scatter. Allegedly makes a pretty good club in a fight too.
+  name: M42A1木质枪托
+  description: M42A1霰弹枪的非标准重型木质枪托。比标准配发的Stakeout型更笨重，但能减少后坐力与散布。据称在战斗中也能当作相当不错的棍棒。
   components:
   - type: Sprite
     state: d_stock
@@ -60,7 +60,7 @@
       sprint: -0.101
   - type: AttachableWieldDelayMods
     modifiers:
-      - delay: 0.4
+    - delay: 0.4
   - type: AttachableWeaponRangedMods
     modifiers:
     - conditions:
@@ -85,8 +85,8 @@
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentM42A2CollapsibleStock
-  name: M42A2 collapsible stock
-  description: A wire stock for the M42A2, used to help with recoil control.
+  name: M42A2可伸缩枪托
+  description: M42A2的钢丝枪托，用于辅助控制后坐力。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/m42a2_stocks/desert.rsi
@@ -110,7 +110,7 @@
     actionName: Toggle M42A2 Collapsible Stock
   - type: AttachableSizeMods
     modifiers:
-      - size: 1
+    - size: 1
   - type: AttachableSpeedMods
     modifiers:
     - conditions:
@@ -159,8 +159,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentMOU53Stock
-  name: MOU53 tactical stock
-  description: A metal stock fitted specifically for the MOU53 break action shotgun.
+  name: MOU53战术枪托
+  description: 专为MOU53折开式霰弹枪配装的金属枪托。
   components:
   - type: Sprite
     state: ou_stock
@@ -178,7 +178,7 @@
       sprint: -0.10
   - type: AttachableWieldDelayMods
     modifiers:
-      - delay: 0.3
+    - delay: 0.3
   - type: AttachableWeaponRangedMods
     modifiers:
     - conditions:
@@ -195,8 +195,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentType23Stock
-  name: Type 23 standard stock
-  description: A stamped wooden stock designed to absorb the ridiculous kick the 8 Gauge shotgun causes when fired. Not recommended to remove.
+  name: 23型标准枪托
+  description: 一种冲压木制枪托，旨在吸收8号口径霰弹枪开火时产生的离谱后坐力。不建议拆下。
   components:
   - type: Sprite
     state: type23_stock
@@ -208,7 +208,7 @@
     - RMCAttachmentType23Stock
   - type: AttachableWieldDelayMods
     modifiers:
-      - delay: 0.3
+    - delay: 0.3
   - type: AttachableWeaponRangedMods
     modifiers:
     - conditions:
@@ -225,8 +225,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentType71Stock
-  name: Type 71 Stock
-  description: This isn't supposed to be separated from the gun, how'd this happen?
+  name: 71式枪托
+  description: 这本来不该和枪分开，怎么会这样？
   components:
   - type: Sprite
     state: type71_stock
@@ -245,8 +245,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentXM51Stock
-  name: XM51 stock
-  description: A specialized stock designed for XM51 breaching shotguns. Helps the user absorb the recoil of the weapon while also reducing scatter. Integrated mechanisms inside the stock allow use of a devastating two-shot burst. This comes at a cost of the gun becoming too unwieldy to holster, worse handling and mobility.
+  name: XM51枪托
+  description: 专为XM51破门霰弹枪设计的特制枪托。帮助使用者吸收武器后坐力，同时减少散布。枪托内部的集成机构可实现毁灭性的双发点射。代价是枪会变得过于笨重而无法收入枪套，操控性和机动性更差。
   components:
   - type: Sprite
     state: xm51_stock
@@ -300,8 +300,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentDoubleBarrelShotgunStock
-  name: double barrel shotgun stock
-  description: A chunky piece of wood coated in varnish and age.
+  name: 双管霰弹枪枪托
+  description: 一块厚实的木头，覆着清漆与岁月的痕迹。
   components:
   - type: Sprite
     state: db-stock
@@ -317,8 +317,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentHJRA12Back
-  name: HJRA12 Breach
-  description: Unremovable HJRA12 Breach
+  name: HJRA12 缺口
+  description: 不可移除的HJRA12缺口
   components:
   - type: Sprite
     state: hjra_breech
@@ -336,8 +336,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentM890Stock
-  name: M890 Tactical Stock
-  description: Standard Stock for the M890 tactical shotgun.
+  name: M890 战术枪托
+  description: M890战术霰弹枪的标准枪托。
   components:
   - type: Sprite
     state: tactical_stock_221
@@ -372,8 +372,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentMK221Stock
-  name: MK221 tactical stock
-  description: A metal stock made for the MK221 tactical shotgun.
+  name: MK221战术枪托
+  description: 为MK221战术霰弹枪制造的金属枪托。
   components:
   - type: Sprite
     state: tactical_stock
@@ -399,8 +399,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentSlavicStock
-  name: double barrel shotgun stock
-  description: A chunky piece of wood coated in varnish and age.
+  name: 双管霰弹枪枪托
+  description: 一块厚实的木头，覆着清漆与岁月的痕迹。
   components:
   - type: Sprite
     state: slavicstock
@@ -425,8 +425,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentM54CStockSolid
-  name: M41A solid stock
-  description: A rare stock distributed in small numbers. Compatible with the M41, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
+  name: M41A实心枪托
+  description: 一种仅少量配发的稀有枪托。与 M41 兼容，这款枪托能减少后坐力和散布，但会降低操控性和敏捷性。还能增强用步枪枪托末端敲击物体的威力。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54_stocks/desert.rsi
@@ -474,8 +474,8 @@
 - type: entity
   parent: RMCAttachmentM54CStockSolid
   id: RMCAttachmentM54CStockSolidMarksman
-  name: M54C marksman stock
-  description: A rare stock distributed in small numbers to UNMC forces. Compatible with the M54C, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
+  name: M54C 精确射手枪托
+  description: 一种少量配发给UNMC部队的稀有枪托。与M54C兼容，这款枪托能减少后坐力和散布，但会降低操控性和敏捷性。还能增强用步枪枪托末端敲打物体的效果。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/stock.rsi
@@ -487,13 +487,13 @@
     - RMCAttachmentStock
     - RMCAttachmentM54CStockSolidMarksman
   - type: ItemCamouflage # TODO RMC14
-    camouflageVariations: null
+    camouflageVariations:
 
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentM54CStockCollapsible
-  name: M41A folding stock
-  description: The standard back end of any gun starting with M41A. Compatible with the M41A series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
+  name: M41A折叠枪托
+  description: 任何以 M41A 开头的枪械的标准后端。该枪托兼容 M41A 系列，可减少后坐力和散布，但会降低操控性和敏捷性。还能增强用步枪枪托端敲击物体的效果。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54_stocks/desert.rsi
@@ -514,7 +514,7 @@
     actionName: Toggle M41A Folding Stock
   - type: AttachableSizeMods
     modifiers:
-      - size: 1
+    - size: 1
   - type: AttachableSpeedMods
     modifiers:
     - conditions:
@@ -558,19 +558,19 @@
   parent: RMCAttachmentM54CStockCollapsible
   id: RMCAttachmentM54CMK1StockCollapsible
   suffix: Desert Camo
-  description: The standard back end of any gun starting with M54. Compatible with the M54C series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely desert camo.
+  description: 任何以M54开头的枪械的标准后端。这款枪托与M54C系列兼容，能减少后坐力和散布，但会降低操控性和敏捷性。还能增强用步枪枪托末端敲打物体的效果。涂有漂亮的沙漠迷彩。
   components:
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: entity
   parent: RMCAttachmentM54CStockCollapsible
   id: RMCAttachmentM54C2StockCollapsible
   suffix: PMC
-  description: The standard back end of any gun starting with M41. Compatible with the M41A series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely corporate black camo.
+  description: 任何以M41开头的枪械的标准后部。这种枪托兼容M41A系列，能减少后坐力和散布，但会降低操控性和敏捷性。还能增强用步枪枪托末端敲打东西的效果。涂有漂亮的企业黑色迷彩。
   components:
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54_stocks/urban.rsi
     state: m54c-col
@@ -593,10 +593,10 @@
   parent: RMCAttachmentM54CStockCollapsible
   id: RMCAttachmentM54CStockCollapsibleWhite
   suffix: White Camo
-  description: The standard back end of any gun starting with M54. Compatible with the M54C series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle. Painted in a lovely corporate white camo.
+  description: 任何以M54开头的枪械的标准后部。兼容M54C系列，这款枪托能减少后坐力和散布，但会降低操控性和敏捷性。还能增强用步枪枪托末端敲打东西的效果。涂有漂亮的企业白迷彩。
   components:
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54_stocks/snow.rsi
     state: m54c-col
@@ -614,8 +614,8 @@
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentM13StockCollapsible
-  name: M13 folding stock
-  description: A collapsible stock custom-fitted for the M13 Auto Pistol. Enhances recoil control when deployed, while maintaining compactness for close-quarters use.
+  name: M13折叠枪托
+  description: 专为 M13 自动手枪定制适配的折叠枪托。展开时可增强后坐力控制，同时保持紧凑性，适合近距离作战。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/m13_folding_stocks/desert.rsi
@@ -674,8 +674,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentM13StockSolid
-  name: M13 solid stock
-  description: A fixed polymer stock designed exclusively for the M13 Auto Pistol, improving stability during sustained fire.
+  name: M13 实心枪托
+  description: 一款专为 M13 自动手枪设计的固定聚合物枪托，可提高持续射击时的稳定性。
   components:
   - type: Sprite
     state: m10_stock
@@ -720,8 +720,8 @@
 - type: entity
   parent: RMCAttachableBase
   id: RMCAttachmentM16Stock
-  name: M16 bump stock
-  description: Technically illegal in the state of California.
+  name: M16撞火枪托
+  description: 严格来说，在加利福尼亚州属于非法。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/stock.rsi
@@ -736,8 +736,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentM16StockCollapsible
-  name: collapsible M16 stock
-  description: Very illegal in the state of California.
+  name: M16可伸缩枪托
+  description: 在加利福尼亚州，这是严重违法的。
   components:
   - type: Sprite
     state: m16-folding
@@ -780,8 +780,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentM63Stock
-  name: submachinegun solid stock
-  description: A rare AEGIS stock distributed in small numbers to UNMC forces. Compatible with the M63, this stock reduces recoil and scatter, but at a reduction to handling and agility. Seemingly a bit more effective in a brawl.
+  name: 冲锋枪实心枪托
+  description: 一种稀有的 AEGIS 枪托，少量配发给 UNMC 部队。该枪托兼容 M63，可降低后坐力和散布，但会降低操控性和敏捷性。在混战中似乎更有效一些。
   components:
   - type: Sprite
     state: smgstock
@@ -818,8 +818,8 @@
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentM63StockCollapsible
-  name: submachinegun folding stock
-  description: A Kirchner brand K2 M63 folding stock, standard issue in the UNMC. The stock, when extended, reduces recoil and scatter, but at a reduction to handling and agility. Seemingly a bit more effective in a brawl. This stock can collapse in, removing all positive and negative effects.
+  name: 冲锋枪折叠枪托
+  description: 基尔希纳品牌的 K2 M63 折叠枪托，UNMC 的标准配发装备。枪托展开时，会降低后坐力和散布，但会降低操控性和敏捷性。在近身搏斗中似乎稍微更有效一些。此枪托可以折叠收起，移除所有正面和负面效果。
   components:
   - type: Sprite
     state: smgstockcol
@@ -875,8 +875,8 @@
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentMP5AltStockCollapsible
-  name: MP5A5 folding stock
-  description: MP5A5 folding stock for Alternate MP5
+  name: MP5A5折叠式枪托
+  description: 用于 Alternate MP5 的 MP5A5 折叠式枪托
   components:
   - type: Sprite
     state: mp5_stock
@@ -932,8 +932,8 @@
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentM63ArmBrace
-  name: submachinegun arm brace
-  description: A specialized stock for use on an M63 submachine gun. It makes one handing more accurate at the expense of burst amount. Wielding the weapon with this stock attached confers a major inaccuracy and recoil debuff.
+  name: 冲锋枪臂托
+  description: 一种用于M63冲锋枪的专用臂托。它使单手操控更加精准，但会牺牲点射量。装备此臂托使用该武器时，会带来严重的精准度下降与后坐力增加的减益效果。
   components:
   - type: Sprite
     state: smg-brace
@@ -979,8 +979,8 @@
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentM44MagnumSharpshooterStock
-  name: M44 magnum sharpshooter stock
-  description: A wooden stock modified for use on a 44-magnum. Increases accuracy and reduces recoil at the expense of handling and agility. Less effective in melee as well.
+  name: M44马格南神射手枪托
+  description: 经过改装可用于44马格南的木制枪托。提高精准度并减少后坐力，但会牺牲操控性和敏捷性。近战效果也较差。
   components:
   - type: Sprite
     state: 44stock
@@ -1036,8 +1036,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentXM88Stock
-  name: XM88 padded stock
-  description: A specially made compound polymer stock reinforced with aluminum rods and thick rubber padding to shield the user from recoil. Fitted specifically for the XM88 Heavy Rifle.
+  name: XM88 软垫枪托
+  description: 一种特制的复合聚合物枪托，以铝杆加固，并配有厚橡胶软垫，可保护使用者免受后坐力影响。专为XM88重型步枪定制。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/stock.rsi
@@ -1056,7 +1056,7 @@
       sprint: -0.10
   - type: AttachableWieldDelayMods
     modifiers:
-      - delay: 0.3
+    - delay: 0.3
   - type: AttachableWeaponRangedMods
     modifiers:
     - conditions:
@@ -1081,8 +1081,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentHG3712Stock
-  name: HG3712 stock
-  description: The non-detachable stock of a HG 37-12 pump shotgun.
+  name: HG3712枪托
+  description: HG 37-12 泵动式霰弹枪的不可拆卸枪托。
   components:
   - type: Sprite
     state: hg3712_stock
@@ -1096,8 +1096,8 @@
 - type: entity
   parent: RMCStockAttachmentBase
   id: RMCAttachmentHuntingStock
-  name: Basira-Armstrong stock
-  description: The non-detachable stock of a Basira-Armstrong hunting rifle
+  name: 巴西拉-阿姆斯特朗枪托
+  description: 巴西拉-阿姆斯特朗猎枪的不可拆卸枪托
   components:
   - type: Sprite
     state: huntingstock
@@ -1111,8 +1111,8 @@
 - type: entity
   parent: RMCAttachableBase
   id: RMCAttachmentL83A2Stock
-  name: L83A2 solid stock
-  description: Intergrated into the L83A2. You shouldn't have this.
+  name: L83A2 实心枪托
+  description: 已集成到L83A2中。你本不该拥有此物。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_stock.rsi
@@ -1127,8 +1127,8 @@
 - type: entity
   parent: RMCAttachableBase
   id: RMCAttachmentM54CE2Stock
-  name: M54CE2 solid stock
-  description: Intergrated into the M54CE2. You shouldn't have this.
+  name: M54CE2实心枪托
+  description: 已集成到 M54CE2 中。你不应该拥有这个。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/m54ce2_stocks/desert.rsi
@@ -1151,8 +1151,8 @@
 - type: entity
   parent: RMCAttachableBase
   id: RMCAttachmentL24Stock
-  name: L23 solid stock
-  description: Intergrated into the L23. You shouldn't have this.
+  name: L23实心枪托
+  description: 已集成到L23中。你不应该拥有这个。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/Attachments/royal_stock.rsi
@@ -1168,8 +1168,8 @@
 - type: entity
   parent: RMCAttachableBase
   id: RMCAttachmentL24BStock
-  name: L24B solid stock
-  description: Intergrated into the L24B. You shouldn't have this.
+  name: L24B实心枪托
+  description: 已集成到 L24B 中。你不应该拥有这个。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_stock.rsi
@@ -1184,8 +1184,8 @@
 - type: entity
   parent: RMCAttachableBase
   id: RMCAttachmentL83A3Stock
-  name: L83A3 solid stock
-  description: Integrated into the L83A3. You shouldn't have this.
+  name: L83A3 实心枪托
+  description: 集成在L83A3中。你不应该拥有这个。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_stock.rsi
@@ -1200,13 +1200,13 @@
 - type: entity
   parent: RMCAttachmentM54CStockCollapsible
   id: RMCAttachmentAK4047StockCollapsible
-  name: AK-4047 folding stock
-  description: The standard back end of any gun starting with 'AK'. Compatible with the AK-4047 series, this stock reduces recoil and improves accuracy, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle, just like its ancestors.
+  name: AK-4047折叠枪托
+  description: 任何以“AK”开头的枪的标准后端。兼容AK-4047系列，这款枪托能减轻后坐力并提高精准度，但会降低操控性和敏捷性。还能像其祖先一样，增强用步枪枪托末端敲打东西的效果。
   components:
   - type: AttachableVisuals
     suffix: ""
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_stock.rsi
     state: ak4047_stock
@@ -1229,8 +1229,8 @@
 - type: entity
   parent: RMCAttachableBase
   id: AU14AttachmentTwoBoreStock
-  name: Two Bore Rifle solid stock
-  description: Intergrated into the Two Bore Rifle. You shouldn't have this.
+  name: 2号口径步枪实心枪托
+  description: 已集成到2号口径步枪中。你不应该拥有这个。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/Attachments/stock.rsi
@@ -1245,8 +1245,8 @@
 - type: entity
   parent: RMCAttachableBase
   id: RMCAttachmentL49Stock
-  name: L49 stock
-  description: A fixed stock for the L49 combat shotgun. Adds a bit of heft to the weapon, making it easier to make follow-up shots when shouldered - as well improving its performance as a melee weapon.
+  name: L49枪托
+  description: L49战斗霰弹枪的固定枪托。为武器增添了一些分量，使其在抵肩时更容易进行后续射击，同时也提升了其作为近战武器的性能。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_stock.rsi
@@ -1255,7 +1255,7 @@
     suffix: ""
   - type: AttachableSizeMods
     modifiers:
-      - size: 1
+    - size: 1
   - type: AttachableSpeedMods
     modifiers:
     - conditions:

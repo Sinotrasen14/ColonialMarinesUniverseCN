@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: XenoTrapperTrap
-  name: xeno trap
-  description: A resin trap laid by a Trapper.
+  name: 异形陷阱
+  description: 捕猎者布置的树脂陷阱。
   components:
   - type: FixedIdentity
     name: cmu-job-name-xeno-unknown
@@ -21,8 +21,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 20
         mask:
@@ -32,8 +31,7 @@
         restitution: 0.3
         friction: 0.2
       trap_trigger:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.5
         hard: false
         layer:
@@ -45,18 +43,16 @@
     damageContainer: StructuralXeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 10
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTypeTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTypeTrigger
         damageType: Heat
         damage: 10
       behaviors:
-      - !type:BurnBodyBehavior { }
+      - !type:BurnBodyBehavior {}
   - type: StepTrigger
     requiredTriggeredSpeed: 0
     intersectRatio: 0.1
@@ -76,8 +72,8 @@
 - type: entity
   id: XenoTrapperEmpoweredTrap
   parent: XenoTrapperTrap
-  name: xeno empowered trap
-  description: A strengthened resin trap laid by a Trapper.
+  name: 异形强化陷阱
+  description: 由捕猎者布设的强化树脂陷阱。
   components:
   - type: XenoDeployedTraps
     stunDuration: 3

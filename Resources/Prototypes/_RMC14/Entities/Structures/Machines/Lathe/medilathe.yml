@@ -1,9 +1,9 @@
 - type: entity
   parent: BaseMachinePowered
   id: RMCMedilathe
-  name: medilathe
+  name: 医疗车床
   suffix: Right Output
-  description: A specialized autolathe made for printing medical items.
+  description: 一种专为打印医疗物品而设计的专用自动车床。
   components:
   - type: ApcPowerReceiver
     powerLoad: 0
@@ -29,8 +29,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-1.5,-0.5,0.5,0.5"
         density: 190
         mask:
@@ -57,8 +56,7 @@
       - RMCGlass
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 400
       behaviors:
       - !type:PlaySoundBehavior
@@ -108,8 +106,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,1.5,0.5"
         density: 190
         mask:

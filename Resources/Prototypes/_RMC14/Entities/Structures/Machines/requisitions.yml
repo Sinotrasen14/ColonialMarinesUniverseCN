@@ -1,7 +1,7 @@
 - type: entity
   id: RMCASRSAccount
-  name: ASRS account
-  categories: [ HideSpawnMenu ]
+  name: ASRS账户
+  categories: [HideSpawnMenu]
   components:
   - type: RequisitionsAccount
     randomCrates:
@@ -42,10 +42,10 @@
       - RMCCrateFoodDonuts
 
 - type: entity
-  parent: [ CMBaseStructureCorrodible, CMCargoCatalog ]
+  parent: [CMBaseStructureCorrodible, CMCargoCatalog]
   id: CMASRSConsole
-  name: ASRS console
-  description: A console for the Automated Storage Retrieval System.
+  name: 自动化仓储检索系统控制台
+  description: 自动化仓储检索系统的控制台。
   suffix: Requisitions
   components:
   - type: ItemSlots
@@ -67,8 +67,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.35,0.25,0.35"
         density: 190
         mask:
@@ -84,7 +83,7 @@
     key: enum.RequisitionsUIKey.Key
   - type: ActivatableUIRequiresAccess
   - type: AccessReader
-    access: [ [ "CMAccessRequisitions" ] ]
+    access: [["CMAccessRequisitions"]]
   - type: UserInterface
     interfaces:
       enum.RequisitionsUIKey.Key:
@@ -124,12 +123,12 @@
     containers:
       board: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
       ItemCabinet: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Corrodible
     isCorrodible: false
   - type: InteractedBlacklist
@@ -147,12 +146,12 @@
     containers:
       board: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
       ItemCabinet: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: ApcPowerReceiver
     powerLoad: 0
     needsPower: false # intentionally!
@@ -160,7 +159,7 @@
 
 - type: entity
   id: CMCargoElevator
-  name: cargo elevator
+  name: 载货电梯
   suffix: Lowered, Requisitions
   placement:
     mode: SnapgridCenter
@@ -174,14 +173,13 @@
     drawdepth: LowFloors
     layers:
     - state: supply_elevator_lowered
-      map: [ "enum.RequisitionsElevatorLayers.Base" ]
+      map: ["enum.RequisitionsElevatorLayers.Base"]
   - type: Physics
     bodyType: static
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-2.3,-2.3,2.3,2.3"
         layer:
         - MidImpassable
@@ -204,8 +202,8 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: CMRailing
-  name: retractable railing
-  description: That looks like it doesn't open easily.
+  name: 可伸缩栏杆
+  description: 看起来这不容易打开。
   suffix: Raised
   components:
   - type: Transform
@@ -216,14 +214,13 @@
     offset: 0,0.5
     layers:
     - state: raised
-      map: [ "enum.RequisitionsRailingLayers.Base" ]
+      map: ["enum.RequisitionsRailingLayers.Base"]
     noRot: true
   - type: Physics
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,-0.3"
         layer:
         - TableLayer
@@ -238,7 +235,7 @@
 
 - type: entity
   id: CMGear
-  name: gear
+  name: 齿轮
   description: ""
   placement:
     mode: SnapgridCenter
@@ -251,54 +248,54 @@
     sprite: _RMC14/Structures/gear.rsi
     layers:
     - state: base
-      map: [ "enum.RequisitionsGearLayers.Base" ]
+      map: ["enum.RequisitionsGearLayers.Base"]
   - type: RequisitionsGear
   - type: CargoSellBlacklist
 
 - type: entity
-  parent: [ CMASRSConsole ]
+  parent: [CMASRSConsole]
   id: CMASRSConsoleGovfor
-  name: ASRS console (Govfor)
+  name: ASRS 控制台（Govfor）
   components:
   - type: ContainerContainer
     containers:
       board: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
       ItemCabinet: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: AccessReader
-    access: [ [ "AU14AccessGovforCommand" ], [ "AU14AccessGovforReq" ] ]
+    access: [["AU14AccessGovforCommand"], ["AU14AccessGovforReq"]]
   - type: RequisitionsComputer
     faction: govfor
 
 - type: entity
-  parent: [ CMASRSConsole ]
+  parent: [CMASRSConsole]
   id: CMASRSConsoleOpfor
-  name: ASRS console (Opfor)
+  name: ASRS 控制台（假想敌）
   components:
   - type: ContainerContainer
     containers:
       board: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
       ItemCabinet: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: AccessReader
-    access: [ [ "AU14AccessOpforCommand" ], [ "AU14AccessOpforReq" ] ]
+    access: [["AU14AccessOpforCommand"], ["AU14AccessOpforReq"]]
   - type: RequisitionsComputer
     faction: opfor
 
 - type: entity
   parent: CMCargoElevator
   id: CMCargoElevatorGovfor
-  name: cargo elevator (Govfor)
+  name: 货运电梯（Govfor）
   components:
   - type: RequisitionsElevator
     faction: govfor
@@ -306,35 +303,35 @@
 - type: entity
   parent: CMCargoElevator
   id: CMCargoElevatorOpfor
-  name: cargo elevator (Opfor)
+  name: 货梯（敌军）
   components:
   - type: RequisitionsElevator
     faction: opfor
 
 - type: entity
-  parent: [ CMASRSConsole ]
+  parent: [CMASRSConsole]
   id: CMASRSConsoleColony
-  name: ASRS console (Colony)
+  name: ASRS 控制台（殖民地）
   components:
   - type: ContainerContainer
     containers:
       board: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
       ItemCabinet: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: AccessReader
-    access: [ [ "CMAccessRequisitions" ], [ "CMAccessColonyCommand" ] ]
+    access: [["CMAccessRequisitions"], ["CMAccessColonyCommand"]]
   - type: RequisitionsComputer
     faction: colony
 
 - type: entity
   parent: CMCargoElevator
   id: CMCargoElevatorColony
-  name: cargo elevator (Colony)
+  name: 货运电梯（殖民地）
   components:
   - type: RequisitionsElevator
     faction: colony

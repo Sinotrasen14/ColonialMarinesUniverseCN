@@ -1,8 +1,8 @@
 - type: entity
   id: VehicleTankBase # CMU14
   abstract: true
-  name: M34A2 Longstreet
-  description: "An older light tank made for all ground forces of the United Americas, although being phased out due to being outdated by the American Army and the CCAF, the longstreet still remains in service with USCM and LACN detachments in colonial sectors."
+  name: M34A2 朗斯特里特
+  description: "一种较老旧的轻型坦克，为美洲合众国的所有地面部队制造。尽管因美国陆军和CCAF认为其过时而正在逐步淘汰，朗斯特里特仍继续在殖民地星区的USCM和LACN分遣队中服役。"
   components:
   - type: TankCookOff # CMU14
   - type: RMCNightVisionVisible # CMU14
@@ -89,8 +89,7 @@
   - type: Fixtures
     fixtures:
       world:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -1.2,-1.6,1.2,1.6
         density: 1500
         mask:
@@ -101,8 +100,7 @@
         layer:
         - LargeMobLayer
       mob:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -1.2,-1.6,1.2,1.6
         density: 1500
         mask:
@@ -124,20 +122,20 @@
     drawdepth: Mobs
     sprite: _RMC14/Structures/Vehicles/tank.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: tank_base
-    - map: [ armor ]
+    - map: [armor]
       state: ARMOR
       visible: false
-    - map: [ primary ]
+    - map: [primary]
       state: tank_turret_0
-    - map: [ secondary ]
+    - map: [secondary]
       state: SECONDARY
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: SUPPORT
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: SpriteMovement
     movementLayers:
@@ -249,25 +247,25 @@
   - type: ContainerContainer
     containers:
       armor: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       primary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 1000
   - type: VehicleWheelSlots
@@ -295,8 +293,8 @@
 - type: entity
   parent: VehicleTankBase
   id: VehicleTankPMC
-  name: M34A2 Longstreet 'Yutani'
-  description: A light tank used by the Yutani Corporation for security and military operations, often seen in colonial sectors where Yutani has a presence.
+  name: M34A2 朗斯特里特 ‘汤谷’
+  description: 一种由汤谷公司用于安保和军事行动的轻型坦克，常出现在汤谷公司有势力存在的殖民地星区。
   components:
   - type: TankCookOff # CMU14
     turretSprite:
@@ -306,25 +304,25 @@
   - type: ContainerContainer
     containers:
       armor: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       primary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 1000
   - type: VehicleWheelSlots
@@ -345,20 +343,20 @@
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/wytank.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: tank_base
-    - map: [ armor ]
+    - map: [armor]
       state: ARMOR
       visible: false
-    - map: [ primary ]
+    - map: [primary]
       state: tank_turret_0
-    - map: [ secondary ]
+    - map: [secondary]
       state: SECONDARY
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: SUPPORT
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: ItemSlots
     slots:
@@ -394,8 +392,8 @@
 - type: entity
   parent: VehicleTankBase
   id: VehicleAev # CMU14
-  name: M34E1 Armored Engineering Vehicle
-  description: An unarmed engineering vehicle built on the chassis of a Longstreet Tank, fitted with a reinforced plow, built for hauling personnel/cargo and clearing enemy defenses without interrupting the flow of combat.
+  name: M34E1 装甲工程车
+  description: 一种基于朗斯特里特坦克底盘制造的无武装工程车，配备加固犁铲，用于运送人员/货物以及清除敌方防御设施，且不会中断战斗进程。
   components:
   - type: TankCookOff # CMU14
     enabled: false
@@ -403,17 +401,17 @@
   - type: ContainerContainer
     containers:
       armor: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: VehicleWheelSlots
     slots:
     - wheel-1
@@ -433,15 +431,15 @@
     drawdepth: Mobs
     sprite: _RMC14/Structures/Vehicles/tank.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: aev_base
-    - map: [ armor ]
+    - map: [armor]
       state: ARMOR
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: SUPPORT
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: ItemSlots
     slots:
@@ -524,8 +522,8 @@
 - type: entity
   parent: VehicleTankBase
   id: VehicleSPPTank
-  name: Cheetah 2A Light Tank
-  description: A light-weight tank made for all ground forces of the UPP.
+  name: 猎豹 2A 轻型坦克
+  description: 一种为UPP所有地面部队制造的轻型坦克。
   components:
   - type: TankCookOff # CMU14
     turretSprite:
@@ -535,25 +533,25 @@
   - type: ContainerContainer
     containers:
       armor: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       primary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 1000
   - type: VehicleWheelSlots
@@ -584,20 +582,20 @@
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/spptank.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: tank_base
-    - map: [ armor ]
+    - map: [armor]
       state: ARMOR
       visible: false
-    - map: [ primary ]
+    - map: [primary]
       state: tank_turret_0
-    - map: [ secondary ]
+    - map: [secondary]
       state: SECONDARY
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: SUPPORT
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: ItemSlots
     slots:
@@ -666,32 +664,32 @@
 - type: entity
   parent: VehicleSPPTank
   id: VehicleSPPTankCommand
-  name: Cheetah 2A Light Command Tank
-  description: A light-weight command tank made for all ground forces of the UPP.
+  name: 猎豹2A轻型指挥坦克
+  description: 为UPP所有地面部队制造的轻型指挥坦克。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       armor: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       primary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 1000
   - type: VehicleWheelSlots
@@ -723,8 +721,8 @@
 - type: entity
   parent: VehicleTankBase
   id: VehicleTankTWE
-  name: FV150 Hobelar LCT
-  description: The FV150 ‘Hobelar’ Light Cavalry Tank is a 6m long, 6m wide, 8m tall support vehicle for the RMC. Originally procured for the Special Air Service operations as an Airborne tank, this model has been made into a support vehicle for the Royal Marines thanks to a change of symbol and technological design. Entrance at the back.
+  name: FV150“霍贝拉”轻型骑兵坦克
+  description: FV150“霍贝拉”轻型骑兵坦克是RMC的支援车辆，长6米、宽6米、高8米。它最初作为空降坦克为特种空勤团的行动采购，由于标志和技术设计的改变，该型号已成为皇家海军陆战队的支援车辆。后部入口。
   components:
   - type: TankCookOff # CMU14
     turretSprite:
@@ -734,25 +732,25 @@
   - type: ContainerContainer
     containers:
       primary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       armor: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 1000
   - type: VehicleWheelSlots
@@ -802,8 +800,7 @@
   - type: Fixtures
     fixtures:
       world:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -0.8,-1.2,0.8,1.2
         density: 1500
         mask:
@@ -814,8 +811,7 @@
         layer:
         - LargeMobLayer
       mob:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -0.8,-1.2,0.8,1.2
         density: 1500
         mask:
@@ -827,19 +823,19 @@
   - type: Sprite
     sprite: CMU14/Structures/vehicles/fv150/exterior.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: tank_base
-    - map: [ primary ]
+    - map: [primary]
       state: tank_turret_0
-    - map: [ secondary ]
+    - map: [secondary]
       sprite: _RMC14/Structures/Vehicles/tank.rsi
       state: SECONDARY
       visible: false
-    - map: [ support ]
+    - map: [support]
       sprite: _RMC14/Structures/Vehicles/tank.rsi
       state: SUPPORT
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: ItemSlots
     slots:

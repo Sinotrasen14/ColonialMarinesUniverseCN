@@ -10,8 +10,8 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 9
+      - ReagentId: Nutriment
+        Quantity: 9
   - type: Item
     size: Small
     sprite: _RMC14/Objects/Consumable/Food/prepared.rsi
@@ -25,8 +25,8 @@
 - type: entity
   parent: CMMarinePreparedMealBase
   id: CMMarinePreparedMealCornbread
-  name: prepared meal (cornbread)
-  description: A tray of standard food. Stale cornbread, tomato paste and some green goop fill this tray.
+  name: 预制的饭食（玉米面包）
+  description: 一盘标准餐食。不新鲜的玉米面包、番茄酱和一些绿色的黏糊物装满了这个托盘。
   components:
   - type: Sprite
     state: cornbread
@@ -37,14 +37,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 9
+      - ReagentId: Nutriment
+        Quantity: 9
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: CMMarinePreparedMealChicken
-  name: prepared meal (chicken)
-  description: A tray of standard food. Moist chicken, dry rice and a mildly depressed piece of broccoli fill this tray.
+  name: 预制餐（鸡肉）
+  description: 一盘标准餐食。湿润的鸡肉、干硬的米饭和一块略显沮丧的西兰花，装满了这个餐盘。
   components:
   - type: Sprite
     state: chicken
@@ -55,14 +55,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 10
+      - ReagentId: Nutriment
+        Quantity: 10
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: CMMarinePreparedMealPasta
-  name: prepared meal (pasta)
-  description: A tray of standard food. Overcooked spaghetti, waterlogged carrots and two french fries fill this tray.
+  name: 预制餐（意面）
+  description: 一盘标准食物。煮过头的意大利面、泡水的胡萝卜和两根薯条装满了这个托盘。
   components:
   - type: Sprite
     state: pasta
@@ -73,14 +73,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 9
+      - ReagentId: Nutriment
+        Quantity: 9
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: CMMarinePreparedMealPizza
-  name: prepared meal (pizza)
-  description: A tray of standard food. Cold pizza, wet green beans and a shitty egg fill this tray. Get something other than pizza, lardass.
+  name: 预制餐（披萨）
+  description: 一托盘标准食物。冷披萨、湿漉漉的四季豆和一个糟糕的鸡蛋装满了这个托盘。别光吃披萨了，肥猪。
   components:
   - type: Sprite
     state: pizza
@@ -91,14 +91,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
+      - ReagentId: Nutriment
+        Quantity: 8
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: CMMarinePreparedMealPork
-  name: prepared meal (pork)
-  description: A tray of standard food. Partially raw pork, goopy corn and some watery mashed potatoes fill this tray.
+  name: 预制餐（猪肉）
+  description: 一托盘标准食物。半生不熟的猪肉、黏糊糊的玉米和稀溜溜的土豆泥盛满了这个托盘。
   components:
   - type: Sprite
     state: pork
@@ -109,14 +109,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 9
+      - ReagentId: Nutriment
+        Quantity: 9
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: CMMarinePreparedMealTofu
-  name: prepared meal (tofu)
-  description: The doesn't serve tofu you grass sucking hippie. The flag signifies your defeat.
+  name: 预制餐（豆腐）
+  description: 这里不供应豆腐，你这个啃草的嬉皮士。这面旗帜象征着你的失败。
   components:
   - type: Sprite
     state: tofu
@@ -127,16 +127,16 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 2
+      - ReagentId: Nutriment
+        Quantity: 2
 
 # SPP Tray Meals
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealSPPBanush
-  name: prepared meal (banush)
-  description: A Ukrainian style Banush cornmeal stew, dried apricots, and a couple vienna sausages.
+  name: 准备好的餐食（巴努什）
+  description: 乌克兰风味的巴努什玉米糊炖菜、杏干和几根维也纳香肠。
   components:
   - type: Sprite
     state: spp_banush
@@ -147,14 +147,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealSPPChowMein
-  name: prepared meal (chow mein)
-  description: Chow mein with imitation shrimp, two slightly overcooked spring rolls, some type of porridge and a small tofu cube.
+  name: 预制餐（炒面）
+  description: 配仿虾肉的炒面、两个略微煮过头的春卷、某种粥以及一小块豆腐。
   components:
   - type: Sprite
     state: spp_chowmein
@@ -165,14 +165,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealSPPCuban
-  name: prepared meal (cuban rice)
-  description: Cuban rice with bland-ish eggs pieces, tomato sauce, potato salad, and a dry biscuit.
+  name: 预制餐（古巴米饭）
+  description: 古巴米饭，配有略显寡淡的鸡蛋块、番茄酱、土豆沙拉和一块干饼干。
   components:
   - type: Sprite
     state: spp_cuban
@@ -183,14 +183,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealSPPFrankfurter
-  name: prepared meal (frankfurter)
-  description: A large, juicy frankfurter with mashed potato, crispy potato pancakes and saurkraut.
+  name: 预制餐（法兰克福香肠）
+  description: 一份大而多汁的法兰克福香肠，配土豆泥、酥脆的土豆煎饼和酸菜。
   components:
   - type: Sprite
     state: spp_frankfurter
@@ -201,14 +201,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealSPPJiaozi
-  name: prepared meal (jiaozi)
-  description: Four boiled dumplings, soy-vinegar dipping sauce, pickled red cucumbers and two rye biscuits.
+  name: 预制餐（饺子）
+  description: 四个水煮饺子、酱油醋蘸料、腌红黄瓜和两块黑麦饼干。
   components:
   - type: Sprite
     state: spp_jiaozi
@@ -219,14 +219,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealSPPLuncheon
-  name: prepared meal (luncheon)
-  description: Two scoops of slightly dried out rice, a square of some kind of luncheon meat, two carrot sticks, and a 'fruit' bar.
+  name: 预制餐（午餐）
+  description: 两勺略微发干的米饭，一块某种午餐肉，两根胡萝卜条，以及一根‘水果’棒。
   components:
   - type: Sprite
     state: spp_luncheon
@@ -237,14 +237,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealSPPMeatballs
-  name: prepared meal (meatballs)
-  description: Königsberger Klopse meatballs, a creamy sauce, some spinach, and a scoop of rice. One of the better options out of the pre-packaged meals and is rarely ever in stock.
+  name: 预制餐（肉丸）
+  description: 柯尼斯堡肉丸、奶油酱汁、一些菠菜和一勺米饭。是预制餐中较好的选择之一，而且几乎从来没有现货。
   components:
   - type: Sprite
     state: spp_meatballs
@@ -255,14 +255,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealSPPShrimp
-  name: prepared meal (shrimp)
-  description: A greasy rice patty with bits of fake imitation shrimp and egg flavoring. Smells quite off. On the side there's a slightly soggy spring roll.
+  name: 预制餐（虾仁）
+  description: 一块油腻的米饼，里面夹杂着零星的仿制虾仁碎和蛋味调料。闻起来很不对劲。旁边还有一根略微湿软的春卷。
   components:
   - type: Sprite
     state: spp_meatballs
@@ -273,14 +273,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealSPPWursts
-  name: prepared meal (wursts)
-  description: Two scoops of rice, two Weiner wursts, a tortilla with tomato sauce and a small bowl of Mungbean soup fill this tray.
+  name: 预制餐（香肠）
+  description: 两勺米饭、两根维也纳香肠、一张淋有番茄酱的墨西哥薄饼和一小碗绿豆汤，装满了这个托盘。
   components:
   - type: Sprite
     state: spp_wursts
@@ -291,8 +291,8 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: RMCTrayEmpty
@@ -306,8 +306,8 @@
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealPMCIkanBakar
-  name: PMC prepared meal (Ikan Bakar)
-  description: A chunk of grilled fish, Gado-Gado with 2 hard-boiled eggs, and a fermented soybean cake fill this tray.
+  name: PMC 预制餐（烤鱼）
+  description: 一块烤鱼、配有2个水煮蛋的加多加多，以及一块发酵豆饼，装满了这个托盘。
   components:
   - type: Sprite
     state: pmc_ikanbakar
@@ -318,14 +318,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: RMCMarinePreparedMealPMCIkanBakar
   id: RMCMarinePreparedMealPMCSoba
-  name: PMC prepared meal (Soba Noodles)
-  description: Soba Noodles with Sesame seeds, 2 pieces of Onigiri, and a bowl of Miso soup with surprisingly okay tofu chunks.
+  name: PMC 预制餐（荞麦面）
+  description: 芝麻荞麦面、2个饭团，以及一碗味噌汤，里面的豆腐块意外地还不错。
   components:
   - type: Sprite
     state: pmc_soba
@@ -333,8 +333,8 @@
 - type: entity
   parent: RMCMarinePreparedMealPMCIkanBakar
   id: RMCMarinePreparedMealPMCAlooGobi
-  name: PMC prepared meal (Aloo Gobi Curry)
-  description: A tray filled with Aloo Gobi curry, A thick piece of Paratha flatbread, and a few greasy vegetable Pekoras. A foremost vegetarian option for PMCs.
+  name: PMC预制餐（土豆花菜咖喱）
+  description: 一个托盘，里面装着土豆花菜咖喱、一块厚实的印度抛饼和几块油腻的蔬菜炸饼。对 PMC 来说，这是首屈一指的素食选择。
   components:
   - type: Sprite
     state: pmc_aloogobi
@@ -342,8 +342,8 @@
 - type: entity
   parent: RMCMarinePreparedMealPMCIkanBakar
   id: RMCMarinePreparedMealPMCFishAndChips
-  name: PMC prepared meal (Fish & Chips)
-  description: A tray filled with a piece of crispy fried fish, 3 dry Yorkshire puddings, and a few spoonfuls of runny Baked Beans.
+  name: PMC 预制餐（炸鱼薯条）
+  description: 一个托盘，里面盛着一块酥脆的炸鱼、3 个干硬的约克郡布丁，以及几勺稀稀的茄汁焗豆。
   components:
   - type: Sprite
     state: pmc_fishandchips
@@ -351,8 +351,8 @@
 - type: entity
   parent: RMCMarinePreparedMealPMCIkanBakar
   id: RMCMarinePreparedMealPMCButterChicken
-  name: PMC prepared meal (Butter Chicken)
-  description: A helping of Butter Chicken loaded onto a bed of fluffy rice, alongside a few Samosas and Aloo Tikki with Tamarind sauce.
+  name: PMC 预制餐（黄油鸡）
+  description: 一份黄油鸡铺在松软米饭上，配几个萨莫萨和土豆饼，并佐以罗望子酱。
   components:
   - type: Sprite
     state: pmc_butterchicken
@@ -360,8 +360,8 @@
 - type: entity
   parent: RMCMarinePreparedMealPMCIkanBakar
   id: RMCMarinePreparedMealPMCBirria
-  name: PMC prepared meal (Birria)
-  description: A tray filled with a piece of Birria, alongside a few spoonfuls of Orange Rice and some consommé for dipping.
+  name: PMC 预制餐（墨西哥炖肉）
+  description: 一个托盘里盛有一块墨西哥炖肉，配有几勺橙香米饭和些许用于蘸食的清汤。
   components:
   - type: Sprite
     state: pmc_birria
@@ -369,8 +369,8 @@
 - type: entity
   parent: RMCMarinePreparedMealPMCIkanBakar
   id: RMCMarinePreparedMealPMCBobotie
-  name: PMC prepared meal (Bobotie)
-  description: A tray filled with a slice of Bobotie, a large Roosterkoek breadroll, and spicy Chakalaka.
+  name: PMC 预制餐（博博蒂）
+  description: 一个托盘，盛有一片博博蒂、一个大的罗斯特库克面包卷和香辣查卡拉卡。
   components:
   - type: Sprite
     state: pmc_bobotie
@@ -378,7 +378,7 @@
 - type: entity
   parent: RMCTrayEmpty
   id: RMCTrayEmptyPMC
-  description: A standard WEYA-produced plastic tray, built for PMCs, by PMCs, to help PMCs meet their nutrient requirements.
+  description: WEYA 生产的标准塑料托盘，为 PMC 打造，由 PMC 制造，帮助 PMC 满足其营养需求。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/prepared.rsi
@@ -389,8 +389,8 @@
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealCookies
-  name: "'X-MAS' Meal: Sugar Cookies"
-  description: The M25 Sugar Cookies Meal was designed to give marines a feeling of Christmas joy. But to the bemusement of superior officers, the costs-savings measure of simply fabricating protein bars in the shape of cookies with chocolate substitute chips and the replacement of the expected milk with artificially colored water did not go over well with most marines.
+  name: "‘圣诞’餐：糖饼干"
+  description: M25糖饼干餐旨在让海军陆战队员感受到圣诞节的喜悦。但令上级军官困惑的是，这种节省成本的措施——仅仅将蛋白棒做成带有代巧克力碎粒的饼干形状，并用人工着色水替代原本应有的牛奶——并未受到大多数海军陆战队员的欢迎。
   components:
   - type: Sprite
     state: cookies
@@ -401,16 +401,16 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
-        - ReagentId: RMCSugar
-          Quantity: 9
+      - ReagentId: Nutriment
+        Quantity: 15
+      - ReagentId: RMCSugar
+        Quantity: 9
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealGingerbread
-  name: "'X-MAS' Meal: Gingerbread Cookies"
-  description: The M25 Gingerbread Cookies Meal was designed to give marines convenient and cheap access to gingerbread cookies as a replacement for annual gingerbread making classes due to rising expenses and comically low success rates for the Basic Holidays Festivities Course. However, due to cost saving measures, these cookies seldom inspire happiness, nor holiday spirit.
+  name: "‘X-MAS’餐：姜饼饼干"
+  description: M25姜饼饼干餐的设计初衷，是为了让海军陆战队员能方便且廉价地获取姜饼饼干，以此替代一年一度的姜饼制作课程，因为基础节日庆典课程的开支不断上涨，而成功率又低得滑稽。然而，由于节省成本的措施，这些饼干很少能带来快乐，也无法唤起节日气氛。
   components:
   - type: Sprite
     state: gingerbread
@@ -421,16 +421,16 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
-        - ReagentId: RMCSugar
-          Quantity: 9
+      - ReagentId: Nutriment
+        Quantity: 15
+      - ReagentId: RMCSugar
+        Quantity: 9
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealFruitcake
-  name: "'X-MAS' Meal: Fruitcake"
-  description: The M25 Fruitcake Meal was the third meal designed by an officers' committee as part of the M25 Project; this shows through the terrible hardness and tartness of the bread and raisined fruits. It can be logically deduced that the people who vended this option are worse than the Grinch and the Miser combined, along with the people who designed and prepared this fruitcake.
+  name: "“X-MAS”餐：水果蛋糕"
+  description: M25水果蛋糕餐是军官委员会作为M25计划的一部分设计的第三餐；这一点从面包和葡萄干果那糟糕的坚硬与酸涩中体现出来。可以合乎逻辑地推断，兜售这一选项的人，连同设计和制作这个水果蛋糕的人，比格林奇和吝啬鬼加在一起还要坏。
   components:
   - type: Sprite
     state: fruit_cake
@@ -441,18 +441,18 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
-        - ReagentId: RMCSugar
-          Quantity: 9
+      - ReagentId: Nutriment
+        Quantity: 15
+      - ReagentId: RMCSugar
+        Quantity: 9
 
 # Empty Tray
 
 - type: entity
   parent: BaseItem
   id: RMCTrayEmpty
-  name: empty tray
-  description: Finished with its tour of duty.
+  name: 空托盘
+  description: 已完成其轮值任务。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/prepared.rsi
@@ -470,8 +470,8 @@
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealRCMFish
-  name: RCM prepared meal (seafood platter)
-  description: Numerous kinds of sushi occupy the side-component slots of this tray, with the main component being several slices of salmon sashimi atop cold, boiled rice.
+  name: RCM 预制餐（海鲜拼盘）
+  description: 多种寿司占据了该托盘的配菜槽位，主菜是几片三文鱼刺身，放在冷白米饭上。
   components:
   - type: Sprite
     state: rmc_fish
@@ -482,14 +482,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealRCMKatsu
-  name: RCM prepared meal (katsu curry)
-  description: Breaded chicken strips slathered in a Japanese style curry sauce. Comes with a helping of fluffy rice and an unidentifiable mound of overcooked veg as the side components.
+  name: RCM 预制餐（炸肉排咖喱）
+  description: 裹着面包糠的鸡肉条，浇满日式咖喱酱。配上一份松软的米饭，以及一堆难以辨认、煮过头的蔬菜作为配菜。
   components:
   - type: Sprite
     state: rmc_katsu
@@ -500,14 +500,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealRCMSausage
-  name: RCM prepared meal (sausage and eggs)
-  description: Several overdone sausages, a wodge of scrambled eggs, and a load of sweet potato fries & green beans fill this tray.
+  name: RCM 预制餐（香肠和鸡蛋）
+  description: 几根煎过头的香肠、一大团炒蛋，以及一大堆红薯条和青豆，把这个托盘装得满满当当。
   components:
   - type: Sprite
     state: rmc_sausage
@@ -518,14 +518,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealRCMMeat
-  name: RCM prepared meal (roast beef)
-  description: A slab of imitation beef drenched in too-salty gravy, with a portion of undercooked peas, soggy carrots and oddly dry mashed potatoes.
+  name: RCM 预制餐（烤牛肉）
+  description: 一块仿制牛肉，浸在过咸的肉汁里，配上一份没煮熟的豌豆、湿软的胡萝卜和干得出奇的土豆泥。
   components:
   - type: Sprite
     state: rmc_meat
@@ -536,14 +536,14 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: CMMarinePreparedMealBase
   id: RMCMarinePreparedMealRCMTikka
-  name: RCM prepared meal (tikka curry)
-  description: Chunks of pork and potato submerged in a mass of mild Indian curry sauce, with a side of fluffy rice and a lukewarm bit of naan flatbread.
+  name: RCM预制餐（提卡咖喱）
+  description: 大块猪肉和土豆浸在大量温和的印度咖喱酱汁中，配有一份松软的米饭和一小块微温的印度馕饼。
   components:
   - type: Sprite
     state: rmc_tikka
@@ -554,8 +554,8 @@
     solution:
       maxVol: 50
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
   parent: RMCTrayEmpty

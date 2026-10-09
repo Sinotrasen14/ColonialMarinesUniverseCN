@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: CMIDCardBase
   id: RMCIDCardCLFBase
   abstract: true
@@ -7,13 +7,13 @@
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFSoldier
-  name: clf soldier's ID card
+  name: clf士兵的身份证
 
 
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFEngineer
-  name: clf engineer's ID card
+  name: CLF工程师的身份证
   components:
   - type: PresetIdCard
     job: RMCCLFEngineer
@@ -21,7 +21,7 @@
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFMedic
-  name: clf medic's ID card
+  name: clf医疗兵的身份卡
   components:
   - type: PresetIdCard
     job: RMCCLFMedic
@@ -29,7 +29,7 @@
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFSpecialist
-  name: clf specialists's ID card
+  name: clf 专家的身份证
   components:
   - type: PresetIdCard
     job: RMCCLFSpecialist
@@ -37,7 +37,7 @@
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFCellLeader
-  name: clf cell leader's ID card
+  name: CLF 小组组长的身份证
   components:
   - type: PresetIdCard
     job: RMCCLFCellLeader
@@ -45,7 +45,7 @@
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFCellCommander
-  name: clf cell commander's ID card
+  name: CLF小队指挥官身份卡
   components:
   - type: PresetIdCard
     job: RMCCLFCellCommander
@@ -53,7 +53,7 @@
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFCommanderPVE
-  name: clf commander's ID card
+  name: clf指挥官身份证
   components:
   - type: PresetIdCard
     job: RMCCLFCommanderPVE
@@ -61,7 +61,7 @@
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFDoctorPVE
-  name: clf doctor's ID card
+  name: clf医生的身份证
   components:
   - type: PresetIdCard
     job: RMCCLFDoctorPVE
@@ -69,7 +69,7 @@
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFHeavyGunnerPVE
-  name: clf heavy gunner's ID card
+  name: clf重机枪手的身份卡
   components:
   - type: PresetIdCard
     job: RMCCLFHeavyGunnerPVE
@@ -77,7 +77,7 @@
 - type: entity
   parent: RMCIDCardCLFBase
   id: RMCIDCardCLFStandardPVE
-  name: clf standard's ID card
+  name: clf标准的身份证
   components:
   - type: PresetIdCard
     job: RMCCLFStandardPVE

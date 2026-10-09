@@ -2,121 +2,121 @@
   parent: RMCDoubleDoorAlmayerGlass
   id: RMCDoubleDoorAlmayerGlassRequisitions
   suffix: Almayer, Glass, Locked, Req & Command
-  name: Requisitions Double Door
-  description: A glass door locked to Requisitions.
+  name: 军需处双开门
+  description: 一扇锁着的通往军需处的玻璃门。
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ], [ "CMAccessRequisitions" ] ]
+    access: [["RMCAccessCommand"], ["CMAccessRequisitions"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerGlass
   id: RMCDoubleDoorAlmayerGlassCommand
   suffix: Almayer, Glass, Locked, Command
-  name: Command Double Door
-  description: A glass door locked to Command.
+  name: 指挥中心双开门
+  description: 一扇仅限指挥中心开启的玻璃门。
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ] ]
+    access: [["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerGlass
   id: RMCDoubleDoorAlmayerGlassSEA
   suffix: Almayer, Glass, Locked, SEA & Command
-  name: Double Door
-  description: A glass door locked to Senior Enlisted Advisors.
+  name: 双开门
+  description: 一扇仅限高级士官顾问开启的玻璃门。
   components:
   - type: AccessReader
-    access: [ [ "CMAccessSEA" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessSEA"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerSolid
   id: RMCDoubleDoorAlmayerSolidRequisitions
   suffix: Almayer, Solid, Locked, Req & Command
-  name: Requisitions Double Door
-  description: A door locked to Requisitions.
+  name: 征用室双开门
+  description: 一扇锁着的征用室门。
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ], [ "CMAccessRequisitions" ] ]
+    access: [["RMCAccessCommand"], ["CMAccessRequisitions"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerSolid
   id: RMCDoubleDoorAlmayerSolidCommand
   suffix: Almayer, Solid, Locked, Command
-  name: Command Double Door
-  description: A door locked to Command.
+  name: 指挥室双开门
+  description: 一扇锁定到指挥室的门。
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ] ]
+    access: [["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerSolid
   id: RMCDoubleDoorAlmayerSolidSEA
   suffix: Almayer, Solid, Locked, SEA & Command
-  name: Double Door
-  description: A door locked to Senior Enlisted Advisors.
+  name: 双开门
+  description: 一扇对高级士兵顾问锁住的门。
   components:
   - type: AccessReader
-    access: [ [ "CMAccessSEA" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessSEA"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerGlass
   id: RMCDoubleDoorAlmayerGlassCO
   suffix: Almayer, Glass, Locked, CO
-  description: A glass door locked to the Commanding Officer.
-  name: Commanding Officers Double Door
+  description: 一扇仅限指挥官开启的玻璃门。
+  name: 指挥官双开门
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCO" ] ]
+    access: [["CMAccessCO"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerSolid
   id: RMCDoubleDoorAlmayerSolidCO
   suffix: Almayer, Glass, Locked, CO
-  description: A door locked to the Commanding Officer.
-  name: Commanding Officers Double Door
+  description: 一扇仅限指挥官打开的门。
+  name: 指挥官双开门
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCO" ] ]
+    access: [["CMAccessCO"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerGlass
   id: RMCDoubleDoorAlmayerGlassHC
   suffix: Almayer, Glass, Locked, CO
-  description: A glass door locked to High Command.
-  name: High Command Double Door
+  description: 一扇上锁的玻璃门，仅限高级指挥部开启。
+  name: 高级指挥部双开门
   components:
   - type: AccessReader
-    access: [ [ "CMAccessHighCommand" ] ]
+    access: [["CMAccessHighCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerSolid
   id: RMCDoubleDoorAlmayerSolidHC
   suffix: Almayer, Glass, Locked, HighComm
-  description: A door locked to High Command
-  name: High Command Double Door
+  description: 一扇仅限高级指挥部开启的门
+  name: 高级指挥部双开门
   components:
   - type: AccessReader
-    access: [ [ "CMAccessHighCommand" ] ]
+    access: [["CMAccessHighCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerGlass
   id: RMCDoubleDoorAlmayerGlassSynth
   suffix: Almayer, Glass, Locked, Synth
-  description: A glass door locked to Synths.
-  name: Synthetics Double Door
+  description: 一扇只有合成人能打开的玻璃门。
+  name: 合成人双开门
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSynth" ] ]
+    access: [["RMCAccessSynth"]]
 
 - type: entity
   parent: RMCDoubleDoorAlmayerSolid
   id: RMCDoubleDoorAlmayerSolidSynth
   suffix: Almayer, Glass, Locked, Synth
-  description: A door locked to the Synths.
-  name: Synthetics Double Door
+  description: 一扇对合成人锁住的门。
+  name: 合成人双开门
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSynth" ] ]
+    access: [["RMCAccessSynth"]]
 
 ##
 
@@ -124,60 +124,60 @@
   parent: RMCDoubleDoorCommandGlass
   id: RMCDoubleDoorCommandGlassCommand
   suffix: Almayer, Glass, Locked, Command
-  name: Command Double Door
-  description: A glass door locked to Command.
+  name: 指挥部双开门
+  description: 一扇仅限指挥部打开的玻璃门。
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ] ]
+    access: [["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorCommandSolid
   id: RMCDoubleDoorCommandSolidCommand
   suffix: Almayer, Glass, Locked, Command
-  description: A door locked to Command.
+  description: 一扇仅限指挥部开启的门
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ] ]
+    access: [["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorCommandGlass
   id: RMCDoubleDoorCommandGlassSeniorCommand
   suffix: Almayer, Glass, Locked, Senior Command
-  description: A glass door locked to Senior Command.
-  name: Command Double Door
+  description: 一扇仅限高级指挥部开启的玻璃门。
+  name: 指挥部双开门
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSeniorCommand" ] ]
+    access: [["RMCAccessSeniorCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorCommandSolid
   id: RMCDoubleDoorCommandSolidSeniorCommand
   suffix: Almayer, Glass, Locked, Senior Command
-  description: A door locked to Senior Command.
-  name: Double Door
+  description: 一扇仅限高级指挥部开启的门。
+  name: 双开门
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSeniorCommand" ] ]
+    access: [["RMCAccessSeniorCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorCommandGlass
   id: RMCDoubleDoorCommandGlassCO
   suffix: Almayer, Glass, Locked, CO
-  description: A glass door locked to the Commanding Officer.
-  name: Commanding Officers Double Door
+  description: 一扇仅限指挥官打开的玻璃门。
+  name: 指挥官双开门
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCO" ] ]
+    access: [["CMAccessCO"]]
 
 - type: entity
   parent: RMCDoubleDoorCommandSolid
   id: RMCDoubleDoorCommandSolidCO
   suffix: Almayer, Glass, Locked, CO
-  description: A door locked to the Commanding Officer.
-  name: Commanding Officers Double Door
+  description: 一扇锁定为指挥官专用的门。
+  name: 指挥官双开门
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCO" ] ]
+    access: [["CMAccessCO"]]
 
 ##
 
@@ -185,41 +185,41 @@
   parent: RMCDoubleDoorEngineerGlass
   id: RMCDoubleDoorEngineerGlassEngineering
   suffix: Engineer, Glass, Locked, Engineering
-  description: A glass door locked to Engineering.
-  name: Engineering Double Door
+  description: 一扇仅限工程部打开的玻璃门。
+  name: 工程部双开门
   components:
   - type: AccessReader
-    access: [ [ "CMAccessEngineering" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessEngineering"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorEngineerSolid
   id: RMCDoubleDoorEngineerSolidEngineering
   suffix: Engineer, Solid
-  description: A door locked to Engineering.
-  name: Engineering Double Door
+  description: 一扇仅限工程部解锁的门。
+  name: 工程部双开门
   components:
   - type: AccessReader
-    access: [ [ "CMAccessEngineering" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessEngineering"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorEngineerGlass
   id: RMCDoubleDoorEngineerGlassSeniorCommand
   suffix: Engineer, Glass, Locked, Senior Command
-  description: A glass door locked to Senior Command.
-  name: Senior Command Double Door
+  description: 一扇锁住的玻璃门，仅限高级指挥部打开。
+  name: 高级指挥部双开门
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSeniorCommand" ] ]
+    access: [["RMCAccessSeniorCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorEngineerSolid
   id: RMCDoubleDoorEngineerSolidSeniorCommand
   suffix: Engineer, Solid, Senior Command
-  description: A door locked to Senior Command.
-  name: Senior Command Double Door
+  description: 一扇仅限高级指挥部打开的门
+  name: 高级指挥部双开门
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSeniorCommand" ] ]
+    access: [["RMCAccessSeniorCommand"]]
 
 ##
 
@@ -227,21 +227,21 @@
   parent: RMCDoubleDoorGenericGlass
   id: RMCDoubleDoorGenericGlassPress
   suffix: Generic, Glass, Locked, Press
-  description: A glass door locked to Press.
-  name: Press Double Door
+  description: 一扇锁定到Press的玻璃门。
+  name: Press双开门
   components:
   - type: AccessReader
-    access: [ [ "CMAccessPress" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessPress"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorGenericSolid
   id: RMCDoubleDoorGenericSolidPress
   suffix: Generic, Solid, Locked, Press
-  description: A door locked to Press.
-  name: Press Double Door
+  description: 一扇对媒体锁住的门。
+  name: 媒体双开门
   components:
   - type: AccessReader
-    access: [ [ "CMAccessPress" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessPress"], ["RMCAccessCommand"]]
 
 ##
 
@@ -251,7 +251,7 @@
   suffix: Medical, Glass, Locked, Medical
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMedical" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMedical"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorMedicalSolid
@@ -259,7 +259,7 @@
   suffix: Medical, Solid, Locked, Medical
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMedical" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMedical"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorMedicalSolid
@@ -267,7 +267,7 @@
   suffix: Morgue, Solid, Locked, Medical
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessMorgue" ] ]
+    access: [["RMCAccessMorgue"]]
 
 - type: entity
   parent: RMCDoubleDoorMedicalGlass
@@ -275,7 +275,7 @@
   suffix: Medical, Glass, Locked, Research
   components:
   - type: AccessReader
-    access: [ [ "CMAccessResearch" ], [ "AU14AccessCorporateWEYU" ] ]
+    access: [["CMAccessResearch"], ["AU14AccessCorporateWEYU"]]
 
 - type: entity
   parent: RMCDoubleDoorMedicalSolid
@@ -283,7 +283,7 @@
   suffix: Medical, Solid, Locked, Research
   components:
   - type: AccessReader
-    access: [ [ "CMAccessResearch" ], [ "AU14AccessCorporateWEYU" ] ]
+    access: [["CMAccessResearch"], ["AU14AccessCorporateWEYU"]]
 
 ##
 
@@ -293,7 +293,7 @@
   suffix: Preparations, Locked, Requisitions & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessRequisitions" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessRequisitions"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorPreparations
@@ -301,7 +301,7 @@
   suffix: Preparations, Locked, Prep & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMarinePrep" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMarinePrep"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorPreparations
@@ -309,7 +309,7 @@
   suffix: Preparations, Locked, Squad Leader, Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessSquadLeaderPrep" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessSquadLeaderPrep"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorPreparationsAlpha
@@ -317,7 +317,7 @@
   suffix: Preparations, Alpha, Locked, Prep & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMarinePrep" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMarinePrep"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorPreparationsBravo
@@ -325,7 +325,7 @@
   suffix: Preparations, Bravo, Locked, Prep & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMarinePrep" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMarinePrep"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorPreparationsCharlie
@@ -333,7 +333,7 @@
   suffix: Preparations, Charlie, Locked, Prep & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMarinePrep" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMarinePrep"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorPreparationsDelta
@@ -341,7 +341,7 @@
   suffix: Preparations, Delta, Locked, Prep & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMarinePrep" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMarinePrep"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorPreparationsAlpha
@@ -349,7 +349,7 @@
   suffix: Preparations, Alpha, Locked, Alpha & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessAlpha" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessAlpha"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorPreparationsBravo
@@ -357,7 +357,7 @@
   suffix: Preparations, Bravo, Locked, Bravo & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessBravo" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessBravo"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorPreparationsCharlie
@@ -365,7 +365,7 @@
   suffix: Preparations, Charlie, Locked, Charlie & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessCharlie" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessCharlie"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorPreparationsDelta
@@ -373,7 +373,7 @@
   suffix: Preparations, Delta, Locked, Delta & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessDelta" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessDelta"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorSecurityGlass
@@ -381,7 +381,7 @@
   suffix: Security, Glass, Locked, Brig & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessBrig" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessBrig"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorSecuritySolid
@@ -389,7 +389,7 @@
   suffix: Security, Solid, Locked, Brig & Command
   components:
   - type: AccessReader
-    access: [ [ "CMAccessBrig" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessBrig"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorSecurityGlass
@@ -397,7 +397,7 @@
   suffix: Security, Glass, Locked, Brig
   components:
   - type: AccessReader
-    access: [ [ "CMAccessBrig" ] ]
+    access: [["CMAccessBrig"]]
 
 - type: entity
   parent: RMCDoubleDoorSecuritySolid
@@ -405,7 +405,7 @@
   suffix: Security, Solid, Locked, Brig
   components:
   - type: AccessReader
-    access: [ [ "CMAccessBrig" ] ]
+    access: [["CMAccessBrig"]]
 
 - type: entity
   parent: RMCDoubleDoorSecurityGlass
@@ -413,7 +413,7 @@
   suffix: Security, Glass, Locked, Armory
   components:
   - type: AccessReader
-    access: [ [ "CMAccessArmory" ] ]
+    access: [["CMAccessArmory"]]
 
 - type: entity
   parent: RMCDoubleDoorSecuritySolid
@@ -421,7 +421,7 @@
   suffix: Security, Solid, Locked, Armory
   components:
   - type: AccessReader
-    access: [ [ "CMAccessArmory" ] ]
+    access: [["CMAccessArmory"]]
 
 - type: entity
   parent: RMCDoubleDoorSecurityGlass
@@ -429,7 +429,7 @@
   suffix: Security, Glass, Locked, Senior Command
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSeniorCommand" ] ]
+    access: [["RMCAccessSeniorCommand"]]
 
 - type: entity
   parent: RMCDoubleDoorSecuritySolid
@@ -437,4 +437,4 @@
   suffix: Security, Solid, Locked, Senior Command
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessSeniorCommand" ] ]
+    access: [["RMCAccessSeniorCommand"]]

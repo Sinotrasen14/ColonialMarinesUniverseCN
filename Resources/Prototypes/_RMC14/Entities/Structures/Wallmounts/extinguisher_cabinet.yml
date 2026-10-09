@@ -3,24 +3,24 @@
 - type: entity
   parent: ExtinguisherCabinet
   id: RMCExtinguisherCabinet
-  name: extinguisher cabinet
-  description: A small wall mounted cabinet designed to hold a fire extinguisher.
+  name: 灭火器柜
+  description: 一种用于放置灭火器的小型壁挂式柜子。
   suffix: RMC14
   components:
-    - type: Sprite
-      sprite: _RMC14/Structures/Wallmounts/extinguisher_cabinet.rsi
-      layers:
-      - state: frame
-      - state: extinguisher
-        map: ["enum.ItemCabinetVisuals.Layer"]
-        visible: true
-      - state: closed
-        map: ["enum.OpenableVisuals.Layer"]
-    - type: InteractedBlacklist
-      blacklist:
-        components:
-        - Xeno
-    - type: Corrodible
+  - type: Sprite
+    sprite: _RMC14/Structures/Wallmounts/extinguisher_cabinet.rsi
+    layers:
+    - state: frame
+    - state: extinguisher
+      map: ["enum.ItemCabinetVisuals.Layer"]
+      visible: true
+    - state: closed
+      map: ["enum.OpenableVisuals.Layer"]
+  - type: InteractedBlacklist
+    blacklist:
+      components:
+      - Xeno
+  - type: Corrodible
 
 - type: entity
   parent: RMCExtinguisherCabinet
@@ -50,19 +50,19 @@
 - type: entity
   parent: ExtinguisherCabinet
   id: RMCExtinguisherCabinetAlt
-  name: extinguisher cabinet
-  description: A small wall mounted cabinet designed to hold a fire extinguisher.
+  name: 灭火器柜
+  description: 一种小型壁挂式柜子，用于存放灭火器。
   suffix: RMC14, Alt
   components:
-    - type: Sprite
-      sprite: _RMC14/Structures/Wallmounts/extinguisher_cabinet_alt.rsi
-      layers:
-      - state: frame
-      - state: extinguisher
-        map: ["enum.ItemCabinetVisuals.Layer"]
-        visible: true
-      - state: closed
-        map: ["enum.OpenableVisuals.Layer"]
+  - type: Sprite
+    sprite: _RMC14/Structures/Wallmounts/extinguisher_cabinet_alt.rsi
+    layers:
+    - state: frame
+    - state: extinguisher
+      map: ["enum.ItemCabinetVisuals.Layer"]
+      visible: true
+    - state: closed
+      map: ["enum.OpenableVisuals.Layer"]
 
 - type: entity
   parent: RMCExtinguisherCabinetAlt

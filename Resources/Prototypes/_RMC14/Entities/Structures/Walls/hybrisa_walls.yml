@@ -3,8 +3,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallHybrisaRock
-  name: rock wall
-  description: Massive columns comprised of anicent sedimentary rocks loom before you.
+  name: 岩壁
+  description: 由古老沉积岩构成的巨大石柱矗立在你面前。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/hybrisa_rock.rsi
@@ -50,8 +50,8 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallEngineer
-  name: strange metal wall
-  description: Nigh indestructible walls that make up the hull of an unknown ancient ship, looks like nothing you can do will penetrate the hull.
+  name: 奇怪的金属墙
+  description: 近乎坚不可摧的墙壁，构成了一艘未知古老船只的船体，看起来你做什么都无法穿透这船体。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/hybrisa_engineership.rsi
@@ -71,8 +71,8 @@
 - type: entity
   parent: CMWallMetal
   id: RMCWallHybrisa
-  name: bare metal walls
-  description: A thick and chunky metal wall. The surface is barren and imposing.
+  name: 裸露的金属墙
+  description: 一堵厚重粗犷的金属墙。表面光秃而气势逼人。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/hybrisa_wall.rsi
@@ -90,8 +90,8 @@
 - type: entity
   parent: RMCBaseWallReinforced
   id: RMCWallHybrisaReinforced
-  name: ribbed metal walls
-  description: A thick and chunky metal wall covered in jagged ribs.
+  name: 带肋金属墙
+  description: 一堵厚实粗壮的金属墙，上面布满参差不齐的肋条。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/hybrisa_rwall.rsi
@@ -109,9 +109,9 @@
 - type: entity
   parent: CMBaseWallInvincible
   id: RMCWallHybrisaHull
-  name: ribbed metal walls
+  name: 带肋金属墙
   suffix: hull
-  description: A thick and chunky metal wall that is, just by virtue of its placement and imposing presence, entirely indestructible.
+  description: 一堵厚重粗实的金属墙，仅凭其摆放位置和逼人气势，便完全坚不可摧。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/hybrisa_rwall.rsi
@@ -221,8 +221,8 @@
 - type: entity
   parent: RMCWallHybrisa
   id: RMCWallHybrisaSpacePort
-  name: metal wall
-  description: A huge chunk of metal used to separate rooms.
+  name: 金属墙
+  description: 一块用于分隔房间的巨大金属块。
   suffix: space port
   components:
   - type: Sprite
@@ -242,8 +242,8 @@
   parent: RMCWallHybrisaReinforced
   id: RMCWallHybrisaSpacePortReinforced
   suffix: space port
-  name: reinforced metal wall
-  description: A huge chunk of metal used to separate rooms.
+  name: 加固金属墙
+  description: 一大块用于分隔房间的金属。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/hybrisa_spaceport_reinforced.rsi
@@ -262,8 +262,8 @@
   parent: RMCWallHybrisaHull
   id: RMCWallHybrisaSpacePortHull
   suffix: space port, hull
-  name: heavy reinforced wall
-  description: A huge chunk of ultra-reinforced metal used to separate rooms. Looks virtually indestructible.
+  name: 重型强化墙
+  description: 一大块用于分隔房间的超强化金属。看起来几乎坚不可摧。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/hybrisa_spaceport_reinforced.rsi

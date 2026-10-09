@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: RMCCassettePlayer
-  name: cassette player
-  description: A cassette player that first hit the market over 100 years ago. Crazy how these never went out of style.
+  name: 磁带播放器
+  description: 一种在100多年前首次上市的磁带播放器。真不可思议，这些居然从未过时。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/cassette_player.rsi
@@ -24,8 +24,8 @@
   abstract: true
   parent: BaseItem
   id: RMCCassetteTapeBase
-  name: cassette
-  description: A plastic cassette tape.
+  name: 盒式磁带
+  description: 一个塑料盒式磁带。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/cassette_player.rsi
@@ -38,7 +38,7 @@
 - type: entity
   parent: RMCCassetteTapeBase
   id: RMCCassetteTapeCustom
-  name: custom cassette
+  name: 自定义磁带
   components:
   - type: Sprite
     state: cassette_gray
@@ -51,7 +51,7 @@
 - type: entity
   parent: RMCCassetteTapeBase
   id: RMCCassetteTapeWigWoo1
-  name: WigWoo1 cassette
+  name: WigWoo1 卡带
   components:
   - type: Sprite
     state: cassette_blue
@@ -62,7 +62,7 @@
 - type: entity
   parent: RMCCassetteTapeBase
   id: RMCCassetteTapeMendax
-  name: Mendax cassette
+  name: 门达克斯卡带
   components:
   - type: Sprite
     state: cassette_orange_blue
@@ -75,7 +75,7 @@
 - type: entity
   parent: RMCCassetteTapeBase
   id: RMCCassetteTapeNighty
-  name: Nighty cassette
+  name: 睡衣磁带
   components:
   - type: Sprite
     state: cassette_green
@@ -91,7 +91,7 @@
 - type: entity
   parent: RMCCassetteTapeBase
   id: RMCCassetteTapeGoodShowOldChap
-  name: GoodShowOldChap cassette
+  name: GoodShowOldChap 卡带
   components:
   - type: Sprite
     state: cassette_ocean
@@ -104,7 +104,7 @@
 - type: entity
   parent: RMCCassetteTapeBase
   id: RMCCassetteTapeRedQwesta
-  name: Qwesta cassette
+  name: Qwesta 盒式磁带
   components:
   - type: Sprite
     state: cassette_pink_stripe
@@ -118,7 +118,7 @@
 - type: entity
   parent: RMCCassetteTapeBase
   id: RMCCassetteTapeBolgarich
-  name: Bolgarich cassette
+  name: 博尔加里奇卡带
   components:
   - type: Sprite
     state: cassette_gray
@@ -136,8 +136,8 @@
 - type: entity
   parent: RMCCassetteTapeBase
   id: RMCCassetteTapeQwertyquerty
-  name: Qwertyquerty cassette
-  description: A plastic cassette tape.
+  name: Qwertyquerty 盒式磁带
+  description: 一个塑料盒式磁带。
   components:
   - type: Sprite
     state: cassette_orange
@@ -150,7 +150,7 @@
 - type: entity
   parent: RMCCassetteTapeBase
   id: RMCCassetteTapePigeonBeans
-  name: PigeonBeans cassette
+  name: PigeonBeans 卡带
   components:
   - type: Sprite
     state: cassette_red_stripe

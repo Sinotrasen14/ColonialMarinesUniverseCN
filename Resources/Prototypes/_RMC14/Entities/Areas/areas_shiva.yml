@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaShiva
-  name: Shiva's Snowball
+  name: 湿婆的雪球
   suffix: Shiva Area
   components:
   - type: Sprite
@@ -15,7 +15,7 @@
 - type: entity
   parent: RMCAreaShuttleDrop1
   id: RMCAreaShuttleDrop1Shiva
-  name: Shiva's Snowball - Dropship Alamo Landing Zone
+  name: 湿婆的雪球 - 阿拉莫号运输船着陆区
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_shiva.rsi
@@ -28,7 +28,7 @@
 - type: entity
   parent: RMCAreaShuttleDrop2
   id: RMCAreaShuttleDrop2Shiva
-  name: Shiva's Snowball - Dropship Normandy Landing Zone
+  name: 希瓦的雪球——运输机诺曼底登陆区
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_shiva.rsi
@@ -41,7 +41,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorLz1Console
-  name: Shiva's Snowball - Dropship Alamo Console
+  name: 湿婆的雪球 - 阿拉莫号运输机控制台
   components:
   - type: Area
     minimapColor: '#EBE5E5E3'
@@ -50,7 +50,7 @@
 - type: entity
   parent: RMCAreaShivaExteriorLz1Console
   id: RMCAreaShivaExteriorLz1ConsoleTwo
-  name: Shiva's Snowball - Dropship Normandy Console
+  name: 湿婆的雪球——诺曼底号运输机控制台
   components:
   - type: Area
     minimapColor: '#EBE5E5E3'
@@ -58,7 +58,7 @@
 - type: entity
   parent: RMCAreaShiva
   id: RMCAreaShivaExterior
-  name: Shiva's Snowball - Exterior
+  name: 湿婆的雪球 - 外部
   components:
   - type: Area
     CAS: true
@@ -74,7 +74,7 @@
 - type: entity
   parent: RMCAreaShiva
   id: RMCAreaShivaInterior
-  name: Shiva's Snowball - Interior
+  name: 湿婆的雪球 - 内部
   components:
   - type: Area
     CAS: true
@@ -91,7 +91,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorOob
-  name: Shiva's Snowball - Out Of Bounds
+  name: 湿婆的雪球——出界
   components:
   - type: Sprite
     state: oob
@@ -114,7 +114,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorOob
   id: RMCAreaShivaInteriorOobDevRoom
-  name: Shiva's Snowball - Secret Room
+  name: 湿婆的雪球 - 密室
   components:
   - type: Sprite
     state: shiva
@@ -122,7 +122,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorTelecomm
-  name: Shiva's Snowball - Communications Relay
+  name: 湿婆的雪球——通信中继站
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas.rsi
@@ -131,7 +131,7 @@
 - type: entity
   parent: RMCAreaShivaExteriorTelecomm
   id: RMCAreaShivaExteriorTelecommLz1North
-  name: Shiva's Snowball - North LZ1 Communications Relay
+  name: 湿婆的雪球 - 北 LZ1 通信中继站
   components:
   - type: Area
     minimapColor: '#EBE5E5E3'
@@ -140,7 +140,7 @@
 - type: entity
   parent: RMCAreaShivaExteriorTelecomm
   id: RMCAreaShivaExteriorTelecommLz2Southeast
-  name: Shiva's Snowball - South-East LZ2 Communications Relay
+  name: 湿婆的雪球——东南LZ2通信中继站
   components:
   - type: Area
     minimapColor: '#EBE5E5E3'
@@ -149,7 +149,7 @@
 - type: entity
   parent: RMCAreaShivaExteriorTelecomm
   id: RMCAreaShivaExteriorTelecommLz2Northeast
-  name: Shiva's Snowball - North-East LZ2 Communications Relay
+  name: 湿婆的雪球——东北LZ2通信中继站
   components:
   - type: Area
     minimapColor: '#EBE5E5E3'
@@ -158,7 +158,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorTelecomm
-  name: Shiva's Snowball - Communications Relay
+  name: 湿婆的雪球——通信中继
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas.rsi
@@ -167,7 +167,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorTelecomm
   id: RMCAreaShivaInteriorTelecommLz1Biceps
-  name: Shiva's Snowball - Fort Biceps Communications Relay
+  name: 湿婆的雪球——二头肌堡通讯中继站
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_shiva.rsi
@@ -178,7 +178,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorTelecomm
   id: RMCAreaShivaInteriorTelecommLz1Flight
-  name: Shiva's Snowball - LZ1 Aerodrome Communications Relay
+  name: 湿婆的雪球 - LZ1 机场通信中继站
   components:
   - type: Area
     minimapColor: '#EBE5E5E3'
@@ -192,7 +192,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorTelecomm
   id: RMCAreaShivaInteriorTelecommLz2Research
-  name: Shiva's Snowball - Argentinian Communications Relay
+  name: 湿婆的雪球——阿根廷通信中继
   components:
   - type: Area
     minimapColor: '#EBE5E5E3'
@@ -201,7 +201,7 @@
 - type: entity
   parent: RMCAreaShivaCaves
   id: RMCAreaShivaCavesTelecomm
-  name: Shiva's Snowball - Communications Relay
+  name: 希瓦的雪球 - 通信中继站
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas.rsi
@@ -210,7 +210,7 @@
 - type: entity
   parent: RMCAreaShivaCavesTelecomm
   id: RMCAreaShivaCavesTelecommLz2South
-  name: Shiva's Snowball - Backup Communications Relay
+  name: 湿婆的雪球——备用通信中继
   components:
   - type: Area
     minimapColor: '#EBE5E5E3'
@@ -219,7 +219,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorLz1Valley
-  name: Shiva's Snowball - Landing Valley
+  name: 湿婆的雪球——着陆谷
   components:
   - type: Sprite
     state: landing_valley
@@ -231,7 +231,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorLz2Fortress
-  name: Shiva's Snowball - Landing Bulwark
+  name: 希瓦的雪球——着陆壁垒
   components:
   - type: Sprite
     state: lz2_fortress
@@ -243,7 +243,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorValley
-  name: Shiva's Snowball - Storage Bunker Valley
+  name: 湿婆的雪球——储藏地堡谷
   components:
   - type: Sprite
     state: junkyard1
@@ -251,7 +251,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorSouthwestValley
-  name: Shiva's Snowball - Southwest Valley
+  name: 湿婆的雪球——西南谷
   components:
   - type: Area
     linkedLz: dropship_lz1
@@ -259,7 +259,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorCpColonyGrounds
-  name: Shiva's Snowball - Colony Grounds
+  name: 希瓦的雪球 - 殖民地场地
   components:
   - type: Sprite
     state: junkyard2
@@ -267,7 +267,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorJunkyard
-  name: Shiva's Snowball - Junkyard
+  name: 湿婆的雪球 - 垃圾场
   components:
   - type: Sprite
     state: junkyard0
@@ -275,7 +275,7 @@
 - type: entity
   parent: RMCAreaShivaExteriorJunkyard
   id: RMCAreaShivaExteriorJunkyardFortbiceps
-  name: Shiva's Snowball - Fort Biceps
+  name: 希瓦的雪球 - 二头肌堡
   components:
   - type: Sprite
     state: junkyard1
@@ -283,7 +283,7 @@
 - type: entity
   parent: RMCAreaShivaExteriorJunkyard
   id: RMCAreaShivaExteriorJunkyardCpBar
-  name: Shiva's Snowball - Bar Grounds
+  name: 湿婆的雪球 - 酒吧场地
   components:
   - type: Sprite
     state: bar0
@@ -291,7 +291,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorCpSResearch
-  name: Shiva's Snowball - Research Hab Exterior
+  name: 湿婆的雪球 - 研究居住舱外部
   components:
   - type: Sprite
     state: junkyard1
@@ -299,7 +299,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorCpLz2
-  name: Shiva's Snowball - North Colony Grounds
+  name: 湿婆的雪球——北殖民地场地
   components:
   - type: Sprite
     state: junkyard3
@@ -309,7 +309,7 @@
 - type: entity
   parent: RMCAreaShivaExterior
   id: RMCAreaShivaExteriorResearchAlley
-  name: Shiva's Snowball - South Research Alley
+  name: 湿婆的雪球－南部研究巷
   components:
   - type: Sprite
     state: junkyard2
@@ -319,7 +319,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorCaves
-  name: Shiva's Snowball - Caves
+  name: 湿婆的雪球 - 洞穴
   components:
   - type: Sprite
     state: caves0
@@ -337,7 +337,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorCaves
   id: RMCAreaShivaInteriorCavesRightSpiders
-  name: Shiva's Snowball - Forgotten Passage
+  name: 湿婆的雪球 - 遗忘通道
   components:
   - type: Sprite
     state: caves1
@@ -345,7 +345,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorCaves
   id: RMCAreaShivaInteriorCavesLeftSpiders
-  name: Shiva's Snowball - Crevice Passage
+  name: 希瓦的雪球 - 裂隙通道
   components:
   - type: Sprite
     state: caves2
@@ -353,7 +353,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorCaves
   id: RMCAreaShivaInteriorCavesSLz2
-  name: Shiva's Snowball - South LZ2 Caves
+  name: 湿婆的雪球 - 南 LZ2 洞穴
   components:
   - type: Sprite
     state: caves3
@@ -364,7 +364,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorCaves
   id: RMCAreaShivaInteriorCavesCpCamp
-  name: Shiva's Snowball - Cave Camp
+  name: 湿婆的雪球 - 洞穴营地
   components:
   - type: Sprite
     state: bar3
@@ -374,7 +374,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorCaves
   id: RMCAreaShivaInteriorCavesResearchCaves
-  name: Shiva's Snowball - South Research Hab Caves
+  name: 湿婆的雪球——南部研究居住舱洞穴
   components:
   - type: Sprite
     state: caves2
@@ -384,7 +384,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorCaves
   id: RMCAreaShivaInteriorCavesMedsecengCaves
-  name: Shiva's Snowball - South Med-Sec-Eng Complex Caves
+  name: 希瓦的雪球——南部医疗-安保-工程综合洞穴
   components:
   - type: Sprite
     state: caves3
@@ -392,7 +392,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorColony
-  name: Shiva's Snowball - Colony MegaStruct(TM)
+  name: 希瓦的雪球——殖民地巨型结构™
   components:
   - type: Sprite
     state: res0
@@ -410,7 +410,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaInteriorColonyBotany
-  name: Shiva's Snowball - MegaStruct(TM) Botanical Dorms
+  name: 湿婆的雪球 - MegaStruct™ 植物宿舍
   components:
   - type: Sprite
     state: res1
@@ -420,7 +420,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaInteriorColonySAdmin
-  name: Shiva's Snowball - MegaStruct(TM) Crisis Center
+  name: 湿婆的雪球——MegaStruct(TM) 危机中心
   components:
   - type: Sprite
     state: res2
@@ -428,7 +428,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaInteriorColonyNAdmin
-  name: Shiva's Snowball - MegaStruct(TM) Administration
+  name: 湿婆的雪球——MegaStruct(TM) 管理
   components:
   - type: Sprite
     state: res3
@@ -438,7 +438,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaInteriorColonyCentral
-  name: Shiva's Snowball - MegaStruct(TM) Residential Life
+  name: 湿婆的雪球——MegaStruct™ 住宅生活
   components:
   - type: Sprite
     state: res4
@@ -446,7 +446,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaInteriorColonyResearchHab
-  name: Shiva's Snowball - Research Hab Interior
+  name: 希瓦的雪球——研究居住舱内部
   components:
   - type: Sprite
     state: res2
@@ -454,7 +454,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaInteriorColonyMedseceng
-  name: Shiva's Snowball - Colony MegaStruct(TM) Med-Sec-Eng Segment
+  name: 湿婆的雪球 - 殖民地巨型结构（TM）医疗-安保-工程段
   components:
   - type: Sprite
     state: res0
@@ -462,7 +462,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaInteriorColonyDeck
-  name: Shiva's Snowball - Colony MegaStruct(TM) Open Deck
+  name: 湿婆的雪球——殖民地巨型结构（TM）开放甲板
   components:
   - type: Sprite
     state: res1
@@ -481,7 +481,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorAerodrome
-  name: Shiva's Snowball - Aerodrome
+  name: 湿婆的雪球——机场
   components:
   - type: Sprite
     state: hangars0
@@ -491,7 +491,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorBar
-  name: Shiva's Snowball - Anti-Freeze Bar
+  name: 湿婆的雪球——防冻棒
   components:
   - type: Sprite
     state: hangars0
@@ -499,7 +499,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorFortBiceps
-  name: Shiva's Snowball - Fort Biceps Interior
+  name: 湿婆的雪球——二头肌堡内部
   components:
   - type: Sprite
     state: hangars0
@@ -507,7 +507,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorWarehouse
-  name: Shiva's Snowball - Blue Warehouse
+  name: 湿婆的雪球——蓝色仓库
   components:
   - type: Sprite
     state: hangars1
@@ -517,7 +517,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorWarehouse
   id: RMCAreaShivaInteriorWarehouseCaves
-  name: Shiva's Snowball - Blue Warehouse Ice Cave
+  name: 希瓦的雪球 - 蓝色仓库冰洞
   components:
   - type: Sprite
     state: caves1
@@ -525,7 +525,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorValleyHuts
-  name: Shiva's Snowball - Valley Bunker 1
+  name: 湿婆的雪球——山谷地堡1
   components:
   - type: Sprite
     state: hangars1
@@ -533,7 +533,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorValleyHuts
   id: RMCAreaShivaInteriorValleyHutsNo2
-  name: Shiva's Snowball - Valley Bunker 2
+  name: 湿婆的雪球——山谷地堡2
   components:
   - type: Sprite
     state: hangars2
@@ -541,7 +541,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorValleyHuts
   id: RMCAreaShivaInteriorValleyHutsDisposals
-  name: Shiva's Snowball - Valley Disposals
+  name: 湿婆的雪球 - 山谷处置场
   components:
   - type: Sprite
     state: hangars3
@@ -549,7 +549,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorGarage
-  name: Shiva's Snowball - Cargo Tug Repair Station
+  name: 湿婆的雪球——货运拖船维修站
   components:
   - type: Sprite
     state: hangars2
@@ -557,7 +557,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorLz2Habs
-  name: Shiva's Snowball - Argentinian Research Headquarters
+  name: 湿婆的雪球——阿根廷研究总部
   components:
   - type: Sprite
     state: bar1
@@ -568,7 +568,7 @@
 - type: entity
   parent: RMCAreaShivaInterior
   id: RMCAreaShivaInteriorAuxPower
-  name: Shiva's Snowball - Auxiliary Generator Station
+  name: 湿婆的雪球——辅助发电站
   components:
   - type: Sprite
     state: hangars0
@@ -576,7 +576,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaInteriorColonyCargoShuttle
-  name: Shiva's Snowball - Disabled Cargo Shuttle
+  name: 希瓦的雪球——故障的货运穿梭机
   components:
   - type: Sprite
     state: res2
@@ -584,7 +584,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaExteriorCentralRoof
-  name: Shiva's Snowball - MegaStruct(TM) Central Habitation Roofs
+  name: 湿婆的雪球 - MegaStruct(TM) 中央居住区屋顶
   components:
   - type: Sprite
     state: res2
@@ -592,7 +592,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaExteriorMedSecEngRoof
-  name: Shiva's Snowball - MegaStruct(TM) Med-Sec-Eng
+  name: 湿婆的雪球 - MegaStruct(TM) 医疗-安全-工程
   components:
   - type: Sprite
     state: res2
@@ -600,7 +600,7 @@
 - type: entity
   parent: RMCAreaShivaInteriorColony
   id: RMCAreaShivaExteriorAerodromeRoof
-  name: Shiva's Snowball - Aerodrome Roofs
+  name: 湿婆的雪球——机场屋顶
   components:
   - type: Sprite
     state: res2

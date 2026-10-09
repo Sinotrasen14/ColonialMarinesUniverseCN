@@ -5,7 +5,7 @@
   suffix: Requisitions, Glass, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessRequisitions" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessRequisitions"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: CMDoubleDoorAlmayerSolid
@@ -13,7 +13,7 @@
   suffix: Requisitions, Solid, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessRequisitions" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessRequisitions"], ["RMCAccessCommand"]]
 
 # Engi
 - type: entity
@@ -22,7 +22,7 @@
   suffix: Engineer, Glass, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessEngineering" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessEngineering"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: CMDoubleDoorEngineerSolid
@@ -30,7 +30,7 @@
   suffix: Engineer, Solid, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessEngineering" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessEngineering"], ["RMCAccessCommand"]]
 
 # Medical
 - type: entity
@@ -39,7 +39,7 @@
   suffix: Medical, Glass, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMedical" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMedical"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: CMDoubleDoorMedicalSolid
@@ -47,7 +47,7 @@
   suffix: Medical, Solid, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessMedical" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessMedical"], ["RMCAccessCommand"]]
 
 # Morgue
 - type: entity
@@ -56,7 +56,7 @@
   suffix: Morgue, Solid, Locked
   components:
   - type: AccessReader
-    access: [ [ "RMCAccessMorgue" ] ]
+    access: [["RMCAccessMorgue"]]
 
 # Chemistry
 - type: entity
@@ -65,7 +65,7 @@
   suffix: Chemistry, Glass, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessChemistry" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessChemistry"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: CMDoubleDoorMedicalSolid
@@ -73,17 +73,17 @@
   suffix: Chemistry, Solid, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessChemistry" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessChemistry"], ["RMCAccessCommand"]]
 
 # Research
 - type: entity
   parent: CMDoubleDoorMedicalGlass
   id: CMDoubleDoorResearchGlassLocked
-  name: Research Airlock
+  name: 研究气闸
   suffix: Research, Glass, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessResearch" ], [ "AU14AccessCorporateWEYU" ] ]
+    access: [["CMAccessResearch"], ["AU14AccessCorporateWEYU"]]
 
 - type: entity
   parent: CMDoubleDoorMedicalSolid
@@ -91,7 +91,7 @@
   suffix: Research, Solid, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessResearch" ], [ "AU14AccessCorporateWEYU" ] ]
+    access: [["CMAccessResearch"], ["AU14AccessCorporateWEYU"]]
 
 # Pilots
 - type: entity
@@ -100,7 +100,7 @@
   suffix: Pilots, Glass, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessDropship" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessDropship"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: CMDoubleDoorGenericSolid
@@ -108,7 +108,7 @@
   suffix: Pilots, Solid, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessDropship" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessDropship"], ["RMCAccessCommand"]]
 
 # Security
 - type: entity
@@ -117,7 +117,7 @@
   suffix: Security, Glass, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessBrig" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessBrig"], ["RMCAccessCommand"]]
 
 - type: entity
   parent: CMDoubleDoorSecuritySolid
@@ -125,4 +125,4 @@
   suffix: Security, Solid, Locked
   components:
   - type: AccessReader
-    access: [ [ "CMAccessBrig" ], [ "RMCAccessCommand" ] ]
+    access: [["CMAccessBrig"], ["RMCAccessCommand"]]

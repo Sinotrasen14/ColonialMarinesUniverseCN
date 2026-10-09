@@ -1,21 +1,21 @@
-﻿- type: entity
+- type: entity
   id: RMCMannequin
   parent: Mannequin
-  name: display mannequin
-  description: A generic display mannequin, used to show off clothing.
+  name: 展示人偶
+  description: 一个通用的展示人偶，用于展示服装。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/mannequin.rsi
     state: mannequin
     noRot: true
     layers:
-    - map: [ "mannequin" ]
+    - map: ["mannequin"]
       sprite: _RMC14/Structures/Furniture/mannequin.rsi
       state: mannequin
-    - map: [ "jumpsuit" ]
-    - map: [ "outerClothing" ]
-    - map: [ "eyes" ]
-    - map: [ "neck" ]
-    - map: [ "back" ]
-    - map: [ "mask" ]
-    - map: [ "head" ]
+    - map: ["jumpsuit"]
+    - map: ["outerClothing"]
+    - map: ["eyes"]
+    - map: ["neck"]
+    - map: ["back"]
+    - map: ["mask"]
+    - map: ["head"]

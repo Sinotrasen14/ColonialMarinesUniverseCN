@@ -1,51 +1,51 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechCrewMaintTech
-  name: ColMarTech Maintenance Technician Equipment Rack
-  description: An automated rack hooked up to a colossal storage of Maintenance Technician standard-issue equipment.
+  name: ColMarTech维修技师设备架
+  description: 一个连接到庞大维修技师标准装备储存库的自动化设备架。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessEngineering" ]
+    - ["CMAccessEngineering"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMMaintTech
     sections:
-    - name: Maintenance Set (Mandatory)
+    - name: 维护集（必选）
       takeAll: CMMaintenanceSet
       entries:
       - id: CMVendorBundleCrewMaintenanceEssentials
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMHeadsetEngineer
       - id: CMMRE
         name: MRE
       # map
-    - name: Gloves
-      choices: { CMHands: 1 }
+    - name: 手套
+      choices: {CMHands: 1}
       entries:
       - id: CMHandsInsulated
       - id: CMHandsBlackInsulated
-    - name: Helmet
-      choices: { CMHelmet: 1 }
+    - name: 头盔
+      choices: {CMHelmet: 1}
       entries:
       - id: CMHeadBeretEngineer
       - id: RMCHardhatWhite
       - id: RMCHardhatOrange
       - id: RMCHardhatBlue
       - id: RMCHelmetWelding
-    - name: Suit
-      choices: { CMSuit: 1 }
+    - name: 西装
+      choices: {CMSuit: 1}
       entries:
       - id: RMCHazardVestBlack
       - id: RMCHazardVestBlue
       - id: RMCHazardVest
       - id: RMCHazardVestYellow
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: CMBackpackMarineTech
         replaceSlot: back
@@ -58,42 +58,42 @@
         recommended: true
       - id: RMCSatchelWelderChestrig
         replaceSlot: back
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltUtilityGeneral
       - id: CMBeltUtilityFilled
-        name: M276 Toolbelt Rig (Full)
+        name: M276 工具腰带装备（完整）
         recommended: true
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchGeneralMedium
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救袋（可补充注射器）
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救包（纱布、药膏）                        # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pill packets)
+        name: 急救小袋（药片包）
         recommended: true
       - id: RMCPouchConstruction
         recommended: true
       - id: RMCPouchElectronicsFill
-        name: Electronics Pouch (Full)
+        name: 电子产品收纳袋（已满）
       - id: RMCPouchToolsFill
-        name: Tools pouch (Filled)
+        name: 工具袋（已填充）
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
-    - name: Mask
-      choices: { CMMask: 1 }
+        name: 信号弹袋（满）
+    - name: 面具
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: RMCMaskRebreather
-    - name: Accessories
-      choices: { CMAccessory: 1 }
+    - name: 配件
+      choices: {CMAccessory: 1}
       entries:
       - id: CMWebbingBrown
         recommended: true
@@ -102,7 +102,7 @@
       - id: RMCWebbingLegPouchBlack
       - id: CMWebbing
       - id: RMCWebbingBlackSmall
-    - name: Spare Gear
+    - name: 备用装备
       entries:
       - id: RMCSynthResetKey
         points: 20
@@ -110,8 +110,8 @@
 - type: entity
   parent: CMVendorBundleRiflemanApparel
   id: CMVendorBundleCrewMaintenanceEssentials
-  name: essential maintenance set
-  description: Contains a flashlight and a light replacer.
+  name: 必备维护套装
+  description: 包含一个手电筒和一个灯具更换器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/Janitorial/light_replacer.rsi

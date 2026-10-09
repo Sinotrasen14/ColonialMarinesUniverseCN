@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCOverheadSign
   abstract: true
-  name: sign
+  name: 标志
   placement:
     mode: SnapgridCenter
     snap:
@@ -26,10 +26,10 @@
   - type: Sprite
     sprite: _RMC14/Structures/overhead_neon_signs.rsi
     layers:
-      - state: open_on # Temporary until power works.
-      - state: open
-        visible: false
-        map: [ "light" ]
+    - state: open_on   # Temporary until power works.
+    - state: open
+      visible: false
+      map: ["light"]
   - type: PointLight
     enabled: true
     radius: 4
@@ -45,8 +45,8 @@
 - type: entity
   parent: RMCOverheadSign
   id: RMCOverheadSignBarCrow
-  name: The Drowning Crow Bar
-  description: A sign for 'The Drowning Crow' bar. The sign is old and delapitated.
+  name: 溺水乌鸦酒吧
+  description: 一块“溺水乌鸦”酒吧的招牌。这块招牌老旧且破败不堪。
   components:
   - type: Sprite
     state: crow_bar
@@ -61,10 +61,10 @@
   - type: Sprite
     offset: 0.75,0.5
     layers:
-      - state: arcade_on # Temporary until power works.
-      - state: arcade_off
-        visible: false
-        map: [ "light" ]
+    - state: arcade_on   # Temporary until power works.
+    - state: arcade_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -74,10 +74,10 @@
   components:
   - type: Sprite
     layers:
-      - state: barsign_on # Temporary until power works.
-      - state: barsign_off
-        visible: false
-        map: [ "light" ]
+    - state: barsign_on   # Temporary until power works.
+    - state: barsign_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -88,10 +88,10 @@
   - type: Sprite
     offset: -0.25,0.5
     layers:
-      - state: cafe_on # Temporary until power works.
-      - state: cafe_off
-        visible: false
-        map: [ "light" ]
+    - state: cafe_on   # Temporary until power works.
+    - state: cafe_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -101,10 +101,10 @@
   components:
   - type: Sprite
     layers:
-      - state: cafealt_on # Temporary until power works.
-      - state: cafealt_off
-        visible: false
-        map: [ "light" ]
+    - state: cafealt_on   # Temporary until power works.
+    - state: cafealt_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -114,10 +114,10 @@
   components:
   - type: Sprite
     layers:
-      - state: casinolights_on # Temporary until power works.
-      - state: casinolights_off
-        visible: false
-        map: [ "light" ]
+    - state: casinolights_on   # Temporary until power works.
+    - state: casinolights_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -127,10 +127,10 @@
   components:
   - type: Sprite
     layers:
-      - state: coffee_on # Temporary until power works.
-      - state: coffee_off
-        visible: false
-        map: [ "light" ]
+    - state: coffee_on   # Temporary until power works.
+    - state: coffee_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -140,10 +140,10 @@
   components:
   - type: Sprite
     layers:
-      - state: hotel_on # Temporary until power works.
-      - state: hotel_off
-        visible: false
-        map: [ "light" ]
+    - state: hotel_on   # Temporary until power works.
+    - state: hotel_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -153,10 +153,10 @@
   components:
   - type: Sprite
     layers:
-      - state: jacksopen_on # Temporary until power works.
-      - state: jacksopen
-        visible: false
-        map: [ "light" ]
+    - state: jacksopen_on   # Temporary until power works.
+    - state: jacksopen
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -167,10 +167,10 @@
   - type: Sprite
     offset: -0.25,0.5
     layers:
-      - state: mechanicopen_on2 # Temporary until power works.
-      - state: mechanicopen2
-        visible: false
-        map: [ "light" ]
+    - state: mechanicopen_on2   # Temporary until power works.
+    - state: mechanicopen2
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -180,10 +180,10 @@
   components:
   - type: Sprite
     layers:
-      - state: misc_on # Temporary until power works.
-      - state: misc_off
-        visible: false
-        map: [ "light" ]
+    - state: misc_on   # Temporary until power works.
+    - state: misc_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -194,10 +194,10 @@
   - type: Sprite
     offset: 0.75,0.5
     layers:
-      - state: miscvert_on # Temporary until power works.
-      - state: miscvert_off
-        visible: false
-        map: [ "light" ]
+    - state: miscvert_on   # Temporary until power works.
+    - state: miscvert_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -207,10 +207,10 @@
   components:
   - type: Sprite
     layers:
-      - state: miscvert2_on # Temporary until power works.
-      - state: miscvert2_off
-        visible: false
-        map: [ "light" ]
+    - state: miscvert2_on   # Temporary until power works.
+    - state: miscvert2_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00FF4C"
 
@@ -220,10 +220,10 @@
   components:
   - type: Sprite
     layers:
-      - state: miscvert3_on # Temporary until power works.
-      - state: miscvert3_off
-        visible: false
-        map: [ "light" ]
+    - state: miscvert3_on   # Temporary until power works.
+    - state: miscvert3_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#E24646"
 
@@ -233,10 +233,10 @@
   components:
   - type: Sprite
     layers:
-      - state: miscvert4_on # Temporary until power works.
-      - state: miscvert4_off
-        visible: false
-        map: [ "light" ]
+    - state: miscvert4_on   # Temporary until power works.
+    - state: miscvert4_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -246,10 +246,10 @@
   components:
   - type: Sprite
     layers:
-      - state: miscvert5_on # Temporary until power works.
-      - state: miscvert5_off
-        visible: false
-        map: [ "light" ]
+    - state: miscvert5_on   # Temporary until power works.
+    - state: miscvert5_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#6046e2"
 
@@ -260,10 +260,10 @@
   - type: Sprite
     offset: 0.75,0.5
     layers:
-      - state: miscvert6_on # Temporary until power works.
-      - state: miscvert6_off
-        visible: false
-        map: [ "light" ]
+    - state: miscvert6_on   # Temporary until power works.
+    - state: miscvert6_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#E24646"
 
@@ -273,10 +273,10 @@
   components:
   - type: Sprite
     layers:
-      - state: miscvert7_on # Temporary until power works.
-      - state: miscvert7_off
-        visible: false
-        map: [ "light" ]
+    - state: miscvert7_on   # Temporary until power works.
+    - state: miscvert7_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -286,10 +286,10 @@
   components:
   - type: Sprite
     layers:
-      - state: nightgoldcasinoopen_on # Temporary until power works.
-      - state: nightgoldcasinoopen
-        visible: false
-        map: [ "light" ]
+    - state: nightgoldcasinoopen_on   # Temporary until power works.
+    - state: nightgoldcasinoopen
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#E6991E"
 
@@ -299,10 +299,10 @@
   components:
   - type: Sprite
     layers:
-      - state: open_on # Temporary until power works.
-      - state: open
-        visible: false
-        map: [ "light" ]
+    - state: open_on   # Temporary until power works.
+    - state: open
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -313,10 +313,10 @@
   - type: Sprite
     offset: -0.25,0.5
     layers:
-      - state: open_on2 # Temporary until power works.
-      - state: open2
-        visible: false
-        map: [ "light" ]
+    - state: open_on2   # Temporary until power works.
+    - state: open2
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -326,10 +326,10 @@
   components:
   - type: Sprite
     layers:
-      - state: pharmacy_on # Temporary until power works.
-      - state: pharmacy_off
-        visible: false
-        map: [ "light" ]
+    - state: pharmacy_on   # Temporary until power works.
+    - state: pharmacy_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -340,10 +340,10 @@
   - type: Sprite
     offset: -0.25,0.5
     layers:
-      - state: pizzaneon_on # Temporary until power works.
-      - state: pizzaneon
-        visible: false
-        map: [ "light" ]
+    - state: pizzaneon_on   # Temporary until power works.
+    - state: pizzaneon
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 
@@ -354,10 +354,10 @@
   - type: Sprite
     offset: -0.07,0.75
     layers:
-      - state: weyamartsign2 # Temporary until power works.
-      - state: weyamartsign2_off
-        visible: false
-        map: [ "light" ]
+    - state: weyamartsign2   # Temporary until power works.
+    - state: weyamartsign2_off
+      visible: false
+      map: ["light"]
   - type: PointLight
     color: "#00AAFF"
 

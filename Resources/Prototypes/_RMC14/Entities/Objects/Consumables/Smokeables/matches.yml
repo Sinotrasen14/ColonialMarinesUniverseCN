@@ -1,7 +1,7 @@
 - type: entity
-  name: match box
-  description: A small box of 'Space-Proof' premium matches.
-  parent: [ SmallboxItem, BaseBagOpenClose ]
+  name: 火柴盒
+  description: 一小盒“太空防护”高级火柴。
+  parent: [SmallboxItem, BaseBagOpenClose]
   id: RMCMatchbox
   components:
   - type: EmitSoundOnLand
@@ -9,7 +9,7 @@
       path: /Audio/Items/matchbox_drop.ogg
   - type: Matchbox
   - type: Sprite
-    sprite:  _RMC14/Objects/Consumable/Smokeables/Matchboxes/matchbox.rsi
+    sprite: _RMC14/Objects/Consumable/Smokeables/Matchboxes/matchbox.rsi
     layers:
     - state: matchbox
     - state: matchbox-0
@@ -36,8 +36,8 @@
     visuals:
       enum.StorageVisuals.Open:
         enum.StorageFillLayers.Fill:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Tag
     tags:
     - Trash
@@ -52,7 +52,7 @@
       state: helmet
 
 - type: entity
-  name: match box
+  name: 火柴盒
   parent: RMCMatchbox
   id: RMCMatchboxFull
   suffix: Full
@@ -63,8 +63,8 @@
       amount: 14
 
 - type: entity
-  name: match
-  description: A simple match stick, used for lighting fine smokables.
+  name: 火柴
+  description: 一根简单的火柴，用于点燃优质烟草。
   parent: Matchstick
   id: RMCMatchstick
   components:
@@ -73,8 +73,8 @@
     state: match_unlit
 
 - type: entity
-  name: paper match
-  description: A simple match stick, used for lighting fine smokables.
+  name: 纸火柴
+  description: 一根简单的火柴，用于点燃上等烟草。
   parent: RMCMatchstick
   id: RMCMatchstickPaper
   components:

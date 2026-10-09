@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   abstract: true
   id: RMCHiveBoonBase
-  name: hive boon
+  name: 蜂巢恩惠 | hive boon
   components:
   - type: HiveBoonDefinition
     cost: 1
@@ -9,8 +9,8 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonFireResistance
-  name: Boon of Fire Resistance
-  description: Makes all xenomorphs immune to fire for 5 minutes.
+  name: 火焰抗性恩赐 | Boon of Fire Resistance
+  description: 使所有异形在5分钟内免疫火焰。 | Makes all xenomorphs immune to fire for 5 minutes.
   components:
   - type: HiveBoonDefinition
     duration: 5m
@@ -20,8 +20,8 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonEvolution
-  name: Minor Boon of Evolution
-  description: Doubles evolution speed for 5 minutes.
+  name: 进化次级恩惠 | Minor Boon of Evolution
+  description: 使进化速度翻倍，持续5分钟。 | Doubles evolution speed for 5 minutes.
   components:
   - type: HiveBoonDefinition
     duration: 5m
@@ -33,8 +33,8 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonAggression
-  name: Minor Boon of Aggression
-  description: Increases all xenomorph damage by 5 for 5 minutes.
+  name: 次级攻击恩赐 | Minor Boon of Aggression
+  description: 使所有异形造成的伤害提高5，持续5分钟。 | Increases all xenomorph damage by 5 for 5 minutes.
   components:
   - type: HiveBoonDefinition
     duration: 5m
@@ -46,8 +46,8 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonEvolutionMajor
-  name: Major Boon of Evolution
-  description: Doubles evolution speed for 10 minutes, and allows evolution progress without an ovipositor.
+  name: 进化大恩赐 | Major Boon of Evolution
+  description: 使进化速度加倍，持续10分钟，并允许无需产卵器即可推进进化进度。 | Doubles evolution speed for 10 minutes, and allows evolution progress without an ovipositor.
   components:
   - type: HiveBoonDefinition
     cost: 2
@@ -63,8 +63,8 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonAggressionMajor
-  name: Major Boon of Aggression
-  description: Increases all xenomorph damage by 10 for 10 minutes.
+  name: 攻击大恩惠 | Major Boon of Aggression
+  description: 使所有异形造成的伤害提高10点，持续10分钟。 | Increases all xenomorph damage by 10 for 10 minutes.
   components:
   - type: HiveBoonDefinition
     cost: 2
@@ -79,8 +79,8 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonAdaptability
-  name: Boon of Adaptability
-  description: Allows each xenomorph to change to a different caste of the same tier.
+  name: 适应性恩赐 | Boon of Adaptability
+  description: 允许每个异形变更为同一阶级的不同种姓。 | Allows each xenomorph to change to a different caste of the same tier.
   components:
   - type: HiveBoonDefinition
     cost: 2
@@ -92,8 +92,8 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonLarvaSurge
-  name: Surge of Larva
-  description: Provides 5 larva instantly to the hive.
+  name: 爆虫涌现 | Surge of Larva
+  description: 立即为蜂巢提供5只幼虫。 | Provides 5 larva instantly to the hive.
   components:
   - type: HiveBoonDefinition
     cost: 5
@@ -104,8 +104,8 @@
 - type: entity
   parent: RMCHiveBoonBase
   id: RMCHiveBoonKing
-  name: His Grace
-  description: A huge behemoth of a xenomorph which can tear its way through defenses and flesh alike. Requires open space around the hive core to spawn.
+  name: 阁下 | His Grace
+  description: 一种巨大的异形巨兽，能一路撕裂防御设施与血肉。需要巢穴核心周围有开阔空间才能生成。 | A huge behemoth of a xenomorph which can tear its way through defenses and flesh alike. Requires open space around the hive core to spawn.
   components:
   - type: HiveBoonDefinition
     cost: 0
@@ -121,8 +121,8 @@
 - type: entity
   parent: BaseHiveStructure
   id: RMCHiveCocoonKing
-  name: alien cocoon
-  description: A large pulsating cocoon.
+  name: 外星茧 | alien cocoon
+  description: 一个巨大的搏动着的外星茧。 | A large pulsating cocoon.
   components:
   - type: Transform
     anchored: true
@@ -130,15 +130,13 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         layer:
         - BulletImpassable
         density: 200
       xeno_hive_core:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 1
         hard: false
         mask:
@@ -150,8 +148,7 @@
     state: growing
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 4000
       behaviors:
       - !type:DoActsBehavior

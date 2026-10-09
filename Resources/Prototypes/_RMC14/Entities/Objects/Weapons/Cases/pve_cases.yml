@@ -1,26 +1,25 @@
-
 - type: entity
   parent: RMCCaseBase
   id: RMCBasePVEEquipmentCase
   abstract: true
-  name: base equipment case
-  description: A gun case.
+  name: 基地装备箱
+  description: 一个枪箱。
   suffix: PVE
   components:
   - type: Sprite
     layers:
     - state: base
     - state: gun
-      map: [ gun ]
+      map: [gun]
       visible: false
     - state: lid_closed
-      map: [ lid ]
+      map: [lid]
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed }
+          true: {state: lid_open}
+          false: {state: lid_closed}
   - type: Storage
     maxItemSize: Ginormous
     grid:
@@ -36,8 +35,8 @@
 - type: entity
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseM42A2
-  name: M42A2 shotgun case
-  description: A heavy case for storing an M42A2 pump-action shotgun, an Armat Battlefield Systems modern take on an all-time classic.
+  name: M42A2霰弹枪箱
+  description: 用于存放M42A2泵动式霰弹枪的重型枪箱，阿玛特战场系统对经典之作的现代演绎。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/shotgun.rsi
@@ -68,8 +67,8 @@
 - type: entity
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseSyracuseShotgun
-  name: Syracuse shotgun case
-  description: A heavy case for storing a Syracuse pump-action shotgun, an all-time classic.
+  name: 锡拉丘兹霰弹枪盒
+  description: 用于存放锡拉丘兹泵动式霰弹枪的重型枪盒，这款枪是永不过时的经典。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/shotgun.rsi
@@ -100,8 +99,8 @@
 - type: entity
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseM5SPR
-  name: M5RA battle rifle case
-  description: A large case for storing an M5RA, a modified battle rifle equipped with HV-P Rounds.
+  name: M5RA 战斗步枪箱
+  description: 一个用于存放M5RA的大型箱子，M5RA是一把配备了HV-P弹的改装战斗步枪。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/rifle.rsi
@@ -134,8 +133,8 @@
 - type: entity
   parent: RMCPVECaseM42A2
   id: RMCPVECaseType23
-  name: Type 23 shotgun case
-  description: A heavy case for storing a type 23 pump-action shotgun, a UPP semi-automatic shotgun.
+  name: 23型霰弹枪枪箱
+  description: 用于存放23型泵动式霰弹枪、UPP半自动霰弹枪的重型枪箱。
   components:
   - type: Storage
     maxItemSize: Ginormous
@@ -163,8 +162,8 @@
 - type: entity
   parent: RMCPVECaseM5SPR
   id: RMCPVECaseM5SPR2
-  name: M5RA/2 battle rifle case
-  description: A large case for storing an M5RA/2, a modified PMC battle rifle equipped with HV-P Rounds.
+  name: M5RA/2战斗步枪箱
+  description: 一个用于存放M5RA/2的大型箱子，M5RA/2是一把改装过的PMC战斗步枪，配备HV-P弹药。
   components:
   - type: Storage
     whitelist:
@@ -192,8 +191,8 @@
 - type: entity
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseType64
-  name: Type 64 smg case
-  description: A heavy case for storing a Type 64 submachine-gun, the standard SMG of the Socialist Progressive Peoples.
+  name: 64式冲锋枪箱
+  description: 用于存放64式冲锋枪的重型箱子，该枪是社会主义进步人民的标准冲锋枪。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/type_64.rsi
@@ -223,8 +222,8 @@
 - type: entity
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseType88
-  name: Type 88 DMR case
-  description: A heavy case for storing a Type 88 Designated Marksman Rifle, the standard-issue DMR of the Socialist Progressive Peoples.
+  name: 88式精确射手步枪枪箱
+  description: 用于存放88式精确射手步枪的重型枪箱，该枪是社会主义进步人民的标准制式精确射手步枪。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/type_88.rsi
@@ -254,9 +253,9 @@
 - type: entity
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseL91SWS
-  name: L91 SWS case
+  name: L91 支援武器系统箱
   suffix: PVE, no IFF
-  description: A heavy case for storing a complete L91 Support Weapon System, alongside a suppressor, three drums and three magazines of ammunition - regular and armor-penetrating rounds respectively. This particular case is missing its SASOS, which has been replaced with a standard 2x optic.
+  description: 一个用于存放整套 L91 支援武器系统的重型收纳箱，还配有一个消音器、三个弹鼓和三个弹匣，弹药分别为常规弹和穿甲弹。这个箱子缺少其 SASOS，已被一个标准 2 倍光学瞄准镜替换。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/l91.rsi
@@ -294,7 +293,7 @@
   parent: RMCPVECaseL91SWS
   id: RMCPVECaseL91SWSIFF
   suffix: PVE, SASOS IFF
-  description: A heavy case for storing a complete L91 Support Weapon System, alongside three drums and three magazines of ammunition - regular and armor-penetrating rounds respectively.
+  description: 用于存放一套完整L91支援武器系统的重型收纳箱，以及三个弹鼓和三个弹匣，分别装普通弹和穿甲弹。
   components:
   - type: StorageFill
     contents:
@@ -314,10 +313,10 @@
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseSentry
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 571-C Sentry Gun case
+  name: 571-C哨戒机枪箱
   # cmu edit end
   # cmu edit start: no UA/UN prefix on sentry descriptions
-  description: A gun case containing the 571-C sentry unit and a spare drum.
+  description: 一个装有571-C哨戒机枪和一个备用弹鼓的枪箱。
   # cmu edit end
   components:
   - type: Sprite
@@ -346,8 +345,8 @@
 - type: entity
   parent: RMCPVECaseSentry
   id: RMCPVECaseSentrySPP
-  name: UPP SDS-R8 Sentry Gun case
-  description: A gun case containing the UPP SDS-R8 unit and a spare drum.
+  name: UPP SDS-R8 哨戒炮箱
+  description: 一个装有 UPP SDS-R8 装置和一个备用弹鼓的枪箱。
   components:
   - type: StorageFill
     contents:
@@ -358,8 +357,8 @@
 - type: entity
   parent: RMCPVECaseSentry
   id: RMCPVECaseSentryPMC
-  name: We-Ya 512-M mini sentry case
-  description: A gun case containing the We-Ya 512-M mini sentry and a spare drum.
+  name: We-Ya 512-M 迷你哨戒炮枪箱
+  description: 一个装有 We-Ya 512-M 迷你哨戒炮和一个备用弹鼓的枪箱。
   components:
   - type: Storage
     whitelist:
@@ -384,33 +383,33 @@
 - type: entity
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseFlamerFuel
-  name: M240 fuel canister case
-  description: A heavy case containing six fuel canisters for the M240 incinerator unit.
+  name: M240燃料罐箱
+  description: 一个沉重的箱子，内装六个用于M240焚化器单元的燃料罐。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/flamer_fuel.rsi
     layers:
     - state: base
     - state: ammo_1
-      map: [ ammo_1 ]
+      map: [ammo_1]
       visible: false
     - state: ammo_2
-      map: [ ammo_2 ]
+      map: [ammo_2]
       visible: false
     - state: ammo_3
-      map: [ ammo_3 ]
+      map: [ammo_3]
       visible: false
     - state: ammo_4
-      map: [ ammo_4 ]
+      map: [ammo_4]
       visible: false
     - state: ammo_5
-      map: [ ammo_5 ]
+      map: [ammo_5]
       visible: false
     - state: ammo_6
-      map: [ ammo_6 ]
+      map: [ammo_6]
       visible: false
     - state: lid_closed
-      map: [ lid ]
+      map: [lid]
   - type: Storage
     maxItemSize: Ginormous
     grid:
@@ -462,27 +461,27 @@
 - type: entity
   parent: RMCBasePVEEquipmentCase
   id: RMCPVECaseMotionDetector
-  name: motion detectors case
-  description: A case containing four individual handheld motion detectors.
+  name: 运动探测器箱
+  description: 一个装有四个独立手持式运动探测器的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/md.rsi
     layers:
     - state: base
     - state: ammo_1
-      map: [ ammo_1 ]
+      map: [ammo_1]
       visible: false
     - state: ammo_2
-      map: [ ammo_2 ]
+      map: [ammo_2]
       visible: false
     - state: ammo_3
-      map: [ ammo_3 ]
+      map: [ammo_3]
       visible: false
     - state: ammo_4
-      map: [ ammo_4 ]
+      map: [ammo_4]
       visible: false
     - state: lid_closed
-      map: [ lid ]
+      map: [lid]
   - type: Storage
     maxItemSize: Ginormous
     grid:

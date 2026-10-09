@@ -24,8 +24,8 @@
 - type: entity
   parent: RMCDropshipAttachmentUtility
   id: RMCDropshipAttachmentMedevac
-  name: RMU-4M medevac system
-  description: A winch system to lift injured marines on medical stretchers onto the dropship. Attaches to the crew served attach point at the back of the drop-ship.
+  name: RMU-4M医疗后送系统
+  description: 一种绞盘系统，用于将躺在医用担架上的受伤陆战队员吊运到运输机上。可连接至运输机后部的乘员使用挂载点。
   components:
   - type: Sprite
     layers:
@@ -48,8 +48,8 @@
 - type: entity
   parent: RMCDropshipAttachmentUtility
   id: RMCDropshipAttachmentFulton
-  name: RMU-19 fulton recovery system
-  description: A winch system to collect any fulton recovery balloons in high altitude. Make sure you turn it on!
+  name: RMU-19富尔顿回收系统
+  description: 一种用于在高空回收任何富尔顿回收气球的绞盘系统。请务必将其开启！
   components:
   - type: Sprite
     layers:
@@ -69,7 +69,7 @@
 - type: entity
   parent: RMCDropshipAttachmentUtility
   id: RMCDropshipAttachmentParaDrop
-  name: HPU-1 paradrop deployment system
+  name: HPU-1 空投部署系统
   components:
   - type: Sprite
     layers:
@@ -86,8 +86,8 @@
 - type: entity
   parent: RMCDropshipAttachmentUtility
   id: RMCDropshipAttachmentDoorGun
-  name: MTU-4B Door Gunner Hardpoint System
-  description: A box that deploys a crew-served scoped M56D heavy machine gun. Fits on both the external weapon and crew compartment attach points of dropships.
+  name: MTU-4B 舱门机枪手硬点系统
+  description: 一个可部署一挺需多人操作、带瞄准镜的M56D重机枪的箱体。可安装在运输机的外挂武器挂点和乘员舱挂点上。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/dropship_utility_attachments.rsi
@@ -125,8 +125,8 @@
 - type: entity
   parent: RMCDropshipAttachmentDoorGun
   id: CMUDropshipAttachmentDoorGunM2C
-  name: MTU-4C M2C Door Gunner Hardpoint System
-  description: A box that deploys a crew-served M2C heavy machine gun. Fits on gunship hardpoint attachment points.
+  name: MTU-4C M2C 舱门机枪手挂载点系统
+  description: 一个可展开需多人操作的 M2C 重机枪的箱体。可安装在武装直升机挂载点连接点上。
   components:
   - type: PowerLoaderAttachable
     attachableTypes:
@@ -137,8 +137,8 @@
 - type: entity
   parent: RMCDropshipAttachmentUtility
   id: RMCDropshipAttachmentSentryDefenseSystem
-  name: A/A-32-P Sentry Defense System
-  description: A box that deploys a sentry turret. Fits on both the external weapon and crew compartment attach points of dropships.
+  name: A/A-32-P 哨戒防御系统
+  description: 一个可展开哨戒炮塔的箱体。可同时安装于运输机的外部武器挂点和乘员舱挂点。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/dropship_utility_attachments.rsi
@@ -178,8 +178,8 @@
 - type: entity
   parent: RMCDropshipAttachmentUtility
   id: RMCDropshipAttachmentLaunchBay
-  name: LAG-14 internal sentry launcher
-  description: A launch bay to drop special ordnance. Fits inside the dropship's crew weapon emplacement. Moving this will require some sort of lifter. Accepts the A/C-49-P Air Deployable Sentry as ammunition.
+  name: LAG-14内置哨兵发射器
+  description: 一个用于投放特殊弹药的发射舱。可装入运输机的乘员武器基座内。移动它需要某种起重设备。可使用 A/C-49-P 空投哨兵作为弹药。
   components:
   - type: Sprite
     layers:
@@ -200,8 +200,8 @@
 - type: entity
   parent: RMCDropshipAttachmentUtility
   id: CMUDropshipAttachmentEEXRappelSystem
-  name: EEX Rappel System
-  description: An extendable rappel system for deploying marines from a dropship in tactical hover. Requires solid, unobstructed ground one level below.
+  name: EEX 索降系统
+  description: 一种可展开的索降系统，用于在战术悬停状态下从运输机部署陆战队员。需要下方一层有坚实且无障碍的地面。
   components:
   - type: Sprite
     layers:
@@ -231,8 +231,8 @@
 - type: entity
   parent: CMUZLevelRopeThroughDown2
   id: CMUEEXRappelDropshipEndpoint
-  name: EEX rappel line
-  description: An extendable rappel line leading down from the dropship.
+  name: EEX 索降绳
+  description: 一条从空投飞船垂下的可伸缩索降绳。
   components:
   - type: Sprite
     drawdepth: SmallObjects
@@ -240,5 +240,5 @@
 - type: entity
   parent: CMUZLevelRopeThroughUp
   id: CMUEEXRappelGroundEndpoint
-  name: EEX rappel line
-  description: An extendable rappel line leading back up to the dropship.
+  name: EEX索降绳
+  description: 一条可延长的索降绳，可向上返回至空投飞船。

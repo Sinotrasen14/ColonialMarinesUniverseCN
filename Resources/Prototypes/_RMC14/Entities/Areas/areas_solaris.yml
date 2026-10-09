@@ -11,7 +11,7 @@
 - type: entity
   parent: RMCAreaBigred
   id: RMCAreaBigredGround
-  name: ground
+  name: 地面
   components:
   - type: Sprite
     state: blue
@@ -19,7 +19,7 @@
 - type: entity
   parent: RMCAreaBigred
   id: RMCAreaBigredUground
-  name: uground
+  name: 地下
   components:
   - type: Sprite
     state: blue
@@ -27,7 +27,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundGarageWorkshop
-  name: Garage Workshop
+  name: 车库工作坊
   components:
   - type: Sprite
     state: green
@@ -47,7 +47,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundShip
-  name: Crashed Vessel
+  name: 坠毁的飞船
   components:
   - type: Sprite
     state: syndie-ship
@@ -55,7 +55,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundNexus
-  name: Central Nexus
+  name: 中央枢纽
   components:
   - type: Sprite
     state: hallc1
@@ -70,7 +70,7 @@
 - type: entity
   parent: RMCAreaBigredGroundEngineering
   id: RMCAreaBigredGroundEngineeringEngineeringHall
-  name: Engineering Hallway
+  name: 工程走廊
   components:
   - type: Sprite
     state: engine_hallway
@@ -78,7 +78,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundCentralHall
-  name: Central Hallway
+  name: 中央走廊
   components:
   - type: Sprite
     state: hallc2
@@ -86,7 +86,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundCanteen
-  name: Cafeteria
+  name: 自助餐厅
   components:
   - type: Sprite
     state: cafeteria
@@ -94,7 +94,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundKitchen
-  name: Kitchen
+  name: 厨房
   components:
   - type: Sprite
     state: kitchen
@@ -102,7 +102,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundSecurity
-  name: Security Module
+  name: 安全模块
   components:
   - type: Sprite
     state: security
@@ -110,7 +110,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundBridge
-  name: Command Room
+  name: 指挥室
   components:
   - type: Sprite
     state: bridge
@@ -118,7 +118,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundMedbay
-  name: Medical Bay
+  name: 医疗舱
   components:
   - type: Sprite
     state: medbay
@@ -130,7 +130,7 @@
 - type: entity
   parent: RMCAreaBigredGroundMedical
   id: RMCAreaBigredGroundMedicalLobby
-  name: Medical Lobby
+  name: 医疗游说团体
   components:
   - type: Sprite
     state: medbay2
@@ -138,7 +138,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundCentralHall3
-  name: Central Hallway
+  name: 中央走廊
   components:
   - type: Sprite
     state: hallc3
@@ -146,7 +146,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundGarden
-  name: Garden
+  name: 花园
   components:
   - type: Sprite
     state: garden
@@ -154,7 +154,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundCryogenics
-  name: Cryogenic Vault
+  name: 低温保险库
   components:
   - type: Sprite
     state: auxstorage
@@ -162,7 +162,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundLaundry
-  name: Laundrette
+  name: 自助洗衣店
   components:
   - type: Sprite
     state: green
@@ -170,7 +170,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundHanger
-  name: Hanger
+  name: 衣架
   components:
   - type: Sprite
     state: storage
@@ -178,7 +178,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundCrewQuarters
-  name: Crew Dormitories
+  name: 船员宿舍
   components:
   - type: Sprite
     state: crew_quarters
@@ -186,7 +186,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundForehall
-  name: Fore Hallway
+  name: 前厅走廊
   components:
   - type: Sprite
     state: hallf
@@ -194,7 +194,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundChapel
-  name: Chapel
+  name: 礼拜堂
   components:
   - type: Sprite
     state: chapel
@@ -202,7 +202,7 @@
 - type: entity
   parent: RMCAreaBigredGroundEngineering
   id: RMCAreaBigredGroundEngineeringSmesRoom
-  name: Power Storage
+  name: 电力存储
   components:
   - type: Sprite
     state: engine_storage
@@ -210,7 +210,7 @@
 - type: entity
   parent: RMCAreaBigredGroundEngineering
   id: RMCAreaBigredGroundEngineeringEngineControl
-  name: Core Control
+  name: 核心控制
   components:
   - type: Sprite
     state: engine_control
@@ -218,7 +218,7 @@
 - type: entity
   parent: RMCAreaBigredGroundEngineering
   id: RMCAreaBigredGroundEngineeringEngine
-  name: Engine Room
+  name: 引擎室
   components:
   - type: Sprite
     state: engine
@@ -226,7 +226,7 @@
 - type: entity
   parent: RMCAreaBigredGroundEngineering
   id: RMCAreaBigredGroundEngineeringCustodial
-  name: Custodial Storage
+  name: 托管存储
   components:
   - type: Sprite
     state: janitor
@@ -234,7 +234,7 @@
 - type: entity
   parent: RMCAreaBigredGroundEngineering
   id: RMCAreaBigredGroundEngineeringAtmospherics
-  name: Atmospherics
+  name: 氛围
   components:
   - type: Sprite
     state: atmos
@@ -242,7 +242,7 @@
 - type: entity
   parent: RMCAreaBigredGroundEngineeringAtmospherics
   id: RMCAreaBigredGroundEngineeringAtmosphericsGenerator
-  name: Terraforming Processor
+  name: 地形改造处理器
   components:
   - type: Sprite
     state: atmos
@@ -255,7 +255,7 @@
 - type: entity
   parent: RMCAreaBigredGroundScience
   id: RMCAreaBigredGroundScienceDecon
-  name: Decontamination
+  name: 去污
   components:
   - type: Sprite
     state: decontamination
@@ -263,7 +263,7 @@
 - type: entity
   parent: RMCAreaBigredGroundScience
   id: RMCAreaBigredGroundScienceHall
-  name: Science Hallway
+  name: 科学走廊
   components:
   - type: Sprite
     state: blue-red2
@@ -271,7 +271,7 @@
 - type: entity
   parent: RMCAreaBigredGroundScience
   id: RMCAreaBigredGroundScienceRobotics
-  name: Robotics Laboratory
+  name: 机器人实验室
   components:
   - type: Sprite
     state: mechbay
@@ -279,7 +279,7 @@
 - type: entity
   parent: RMCAreaBigredGroundScience
   id: RMCAreaBigredGroundScienceAssembly
-  name: Assembly room
+  name: 会议室
   components:
   - type: Sprite
     state: mechbay
@@ -287,7 +287,7 @@
 - type: entity
   parent: RMCAreaBigredGroundScience
   id: RMCAreaBigredGroundScienceOffice
-  name: Administration
+  name: 行政管理
   components:
   - type: Sprite
     state: mechbay
@@ -295,7 +295,7 @@
 - type: entity
   parent: RMCAreaBigredGroundScience
   id: RMCAreaBigredGroundScienceResearch
-  name: Research Lab
+  name: 研究实验室
   components:
   - type: Sprite
     state: research
@@ -303,7 +303,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundToilet
-  name: Toilets
+  name: 卫生间
   components:
   - type: Sprite
     state: yellow
@@ -311,7 +311,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundHr
-  name: Human Resources Office
+  name: 人力资源办公室
   components:
   - type: Sprite
     state: head_quarters
@@ -324,7 +324,7 @@
 - type: entity
   parent: RMCAreaBigredGroundMaint
   id: RMCAreaBigredGroundMaintCentral
-  name: Central Maintenance Shaft
+  name: 中央维护竖井
   components:
   - type: Sprite
     state: maintcentral
@@ -332,7 +332,7 @@
 - type: entity
   parent: RMCAreaBigredGroundMaint
   id: RMCAreaBigredGroundMaintScience
-  name: Science Maintenance
+  name: 科学维护
   components:
   - type: Sprite
     state: maint_research_starboard
@@ -340,7 +340,7 @@
 - type: entity
   parent: RMCAreaBigredGroundMaint
   id: RMCAreaBigredGroundMaintCommand
-  name: Command Maintenance
+  name: 命令维护
   components:
   - type: Sprite
     state: maintcentral
@@ -348,7 +348,7 @@
 - type: entity
   parent: RMCAreaBigredGroundMaint
   id: RMCAreaBigredGroundMaintEngineering
-  name: Engineering Maintenance
+  name: 工程维护
   components:
   - type: Sprite
     state: maint_engine
@@ -356,7 +356,7 @@
 - type: entity
   parent: RMCAreaBigredGroundMaint
   id: RMCAreaBigredGroundMaintAtmos
-  name: Atmospherics Maintenance
+  name: 大气系统维护
   components:
   - type: Sprite
     state: asmaint
@@ -364,7 +364,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundExterior
-  name: Underground
+  name: 地下
   components:
   - type: Sprite
     state: blue-red
@@ -372,7 +372,7 @@
 - type: entity
   parent: RMCAreaBigredGroundExterior
   id: RMCAreaBigredGroundExteriorNorth
-  name: Northern Facility Exterior
+  name: 北部设施外部
   components:
   - type: Sprite
     state: north
@@ -380,7 +380,7 @@
 - type: entity
   parent: RMCAreaBigredGroundExterior
   id: RMCAreaBigredGroundExteriorSouth
-  name: Southern Facility Exterior
+  name: 南部设施外部
   components:
   - type: Sprite
     state: south
@@ -388,7 +388,7 @@
 - type: entity
   parent: RMCAreaBigredGroundExterior
   id: RMCAreaBigredGroundExteriorWest
-  name: Western Facility Exterior
+  name: 西部设施外部
   components:
   - type: Sprite
     state: west
@@ -396,7 +396,7 @@
 - type: entity
   parent: RMCAreaBigredGroundExterior
   id: RMCAreaBigredGroundExteriorEast
-  name: Eastern Facility Exterior
+  name: 东部设施外部
   components:
   - type: Sprite
     state: east
@@ -404,7 +404,7 @@
 - type: entity
   parent: RMCAreaBigredGround
   id: RMCAreaBigredGroundCargo
-  name: Cargo Bay
+  name: 货舱
   components:
   - type: Sprite
     state: primarystorage
@@ -412,7 +412,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundLobby
-  name: Research Lobby
+  name: 研究大厅
   components:
   - type: Sprite
     state: research
@@ -420,7 +420,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundHallway
-  name: Research Hallway
+  name: 研究走廊
   components:
   - type: Sprite
     state: research
@@ -428,7 +428,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundXeno
-  name: Xenobiology Lab
+  name: 异种生物学实验室
   components:
   - type: Sprite
     state: xeno_lab
@@ -436,7 +436,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundXenoFlora
-  name: Xeno-Flora Lab
+  name: 异星植物实验室
   components:
   - type: Sprite
     state: xeno_f_lab
@@ -444,7 +444,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundChemistry
-  name: Chemistry Lab
+  name: 化学实验室
   components:
   - type: Sprite
     state: chem
@@ -452,7 +452,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundDisection
-  name: Dissection Lab
+  name: 解剖实验室
   components:
   - type: Sprite
     state: observatory
@@ -460,7 +460,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundMiscLab
-  name: Miscellaneous Lab
+  name: 杂项实验室
   components:
   - type: Sprite
     state: toxmisc
@@ -468,7 +468,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundAnomalyLab
-  name: Anomalous Materials Lab
+  name: 异常材料实验室
   components:
   - type: Sprite
     state: blueold
@@ -476,7 +476,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundTeleporter
-  name: Teleportation Lab
+  name: 传送实验室
   components:
   - type: Sprite
     state: teleporter
@@ -484,7 +484,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundVirology
-  name: Virology Laboratory
+  name: 病毒学实验室
   components:
   - type: Sprite
     state: blue2
@@ -492,7 +492,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundQuarantine
-  name: Quarantine Zone
+  name: 隔离区
   components:
   - type: Sprite
     state: red2
@@ -500,7 +500,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundCargoElevator
-  name: Cargo Elevator
+  name: 载货电梯
   components:
   - type: Sprite
     state: primarystorage
@@ -508,7 +508,7 @@
 - type: entity
   parent: RMCAreaBigredUground
   id: RMCAreaBigredUgroundSafeRoom
-  name: Corporate Saferoom
+  name: 企业安全室
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas.rsi
@@ -534,7 +534,7 @@
 - type: entity
   parent: RMCAreaBigredv2CavesLambda
   id: RMCAreaBigredv2CavesLambdaVirology
-  name: Lambda Virology
+  name: 拉姆达病毒学
   components:
   - type: Sprite
     state: lam_virology
@@ -542,7 +542,7 @@
 - type: entity
   parent: RMCAreaBigredv2CavesLambda
   id: RMCAreaBigredv2CavesLambdaResearch
-  name: Lambda Research
+  name: 拉姆达研究
   components:
   - type: Sprite
     state: lam_research
@@ -550,7 +550,7 @@
 - type: entity
   parent: RMCAreaBigredv2CavesLambda
   id: RMCAreaBigredv2CavesLambdaBreakroom
-  name: Lambda Breakroom
+  name: Lambda 休息室
   components:
   - type: Sprite
     state: lam_break
@@ -558,7 +558,7 @@
 - type: entity
   parent: RMCAreaBigredv2CavesLambda
   id: RMCAreaBigredv2CavesLambdaXenobiology
-  name: Lambda Xenobiology
+  name: 拉姆达异源生物学
   components:
   - type: Sprite
     state: lam_xeno
@@ -566,7 +566,7 @@
 - type: entity
   parent: RMCAreaBigredv2
   id: RMCAreaBigredv2LambdaCaves
-  name: Lambda Lab Caves
+  name: 拉姆达实验室洞穴
   components:
   - type: Sprite
     state: caves_lambda
@@ -585,7 +585,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideLambdaCaveCas
-  name: Lambda Lockdown Caves Entrance
+  name: Lambda封锁洞穴入口
   components:
   - type: Sprite
     state: decontamination
@@ -613,7 +613,7 @@
 - type: entity
   parent: RMCAreaBigredv2
   id: RMCAreaBigredv2Oob
-  name: Big Red Out of Bounds
+  name: 大红出界
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_kutjevo.rsi
@@ -639,7 +639,7 @@
 - type: entity
   parent: RMCAreaBigredv2
   id: RMCAreaBigredv2Outside
-  name: Colony Grounds
+  name: 殖民地场地
   components:
   - type: Sprite
     state: red
@@ -657,7 +657,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideNe
-  name: Northeast Colony Grounds
+  name: 东北殖民地场地
   components:
   - type: Sprite
     state: northeast
@@ -665,7 +665,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideNw
-  name: Northwest Colony Grounds
+  name: 西北殖民地场地
   components:
   - type: Sprite
     state: northwest
@@ -691,7 +691,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideC
-  name: Central Colony Grounds
+  name: 中央殖民地场地
   components:
   - type: Sprite
     state: purple
@@ -699,7 +699,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideN
-  name: Northern Colony Grounds
+  name: 北部殖民地场地
   components:
   - type: Sprite
     state: north
@@ -707,7 +707,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideW
-  name: Western Colony Grounds
+  name: 西部殖民地场地
   components:
   - type: Sprite
     state: west
@@ -717,7 +717,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideE
-  name: Eastern Colony Grounds
+  name: 东部殖民地场地
   components:
   - type: Sprite
     state: east
@@ -725,7 +725,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideSe
-  name: Southeast Colony Grounds
+  name: 东南殖民地场地
   components:
   - type: Sprite
     state: southeast
@@ -733,7 +733,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideS
-  name: Southern Colony Grounds
+  name: 南部殖民地场地
   components:
   - type: Sprite
     state: south
@@ -741,7 +741,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideSw
-  name: Southwest Colony Grounds
+  name: 西南殖民地场地
   components:
   - type: Sprite
     state: southwest
@@ -751,7 +751,7 @@
 - type: entity
   parent: RMCAreaBigredv2
   id: RMCAreaBigredv2Caves
-  name: Unknown Area
+  name: 未知区域
   components:
   - type: Sprite
     state: bluenew
@@ -771,7 +771,7 @@
 - type: entity
   parent: RMCAreaBigredv2Caves
   id: RMCAreaBigredv2CavesMining
-  name: Southwest Abandoned Mining Caves
+  name: 西南废弃矿洞
   components:
   - type: Sprite
     state: bluenew
@@ -794,7 +794,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideEta
-  name: Eta Labs Compound
+  name: Eta 实验室园区
   components:
   - type: Sprite
     state: yellow
@@ -812,7 +812,7 @@
 - type: entity
   parent: RMCAreaBigredv2CavesEta
   id: RMCAreaBigredv2CavesEtaLiving
-  name: Eta Living Quarters
+  name: 伊塔生活区
   components:
   - type: Sprite
     state: eta_living
@@ -820,7 +820,7 @@
 - type: entity
   parent: RMCAreaBigredv2CavesEta
   id: RMCAreaBigredv2CavesEtaXenobiology
-  name: Eta Xenobiology
+  name: 伊塔异种生物学
   components:
   - type: Sprite
     state: eta_xeno
@@ -828,7 +828,7 @@
 - type: entity
   parent: RMCAreaBigredv2CavesEta
   id: RMCAreaBigredv2CavesEtaStorage
-  name: Eta Storage
+  name: Eta 存储
   components:
   - type: Sprite
     state: eta_storage
@@ -836,7 +836,7 @@
 - type: entity
   parent: RMCAreaBigredv2CavesEta
   id: RMCAreaBigredv2CavesEtaResearch
-  name: Eta Research
+  name: 伊塔研究
   components:
   - type: Sprite
     state: eta_research
@@ -844,7 +844,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideCargo
-  name: Cargo
+  name: 货物
   components:
   - type: Sprite
     state: storage
@@ -864,7 +864,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideGeneralStore
-  name: General Store
+  name: 杂货店
   components:
   - type: Sprite
     state: blueold
@@ -884,7 +884,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideMarshalOffice
-  name: Marshal Offices
+  name: 法警办公室
   components:
   - type: Sprite
     state: brig
@@ -905,7 +905,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideMedical
-  name: Hospital
+  name: 医院
   components:
   - type: Sprite
     state: cmo
@@ -926,7 +926,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideAdminBuilding
-  name: Administration
+  name: 管理
   components:
   - type: Sprite
     state: bridge
@@ -946,7 +946,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideFiltrationPlant
-  name: Filtration Plant
+  name: 过滤装置
   components:
   - type: Sprite
     state: atmos
@@ -966,7 +966,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideVirology
-  name: Virology Lab
+  name: 病毒学实验室
   components:
   - type: Sprite
     state: lp
@@ -987,7 +987,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideDorms
-  name: Dormitories
+  name: 宿舍
   components:
   - type: Sprite
     state: fitness
@@ -1006,7 +1006,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideBar
-  name: Bar
+  name: 酒吧
   components:
   - type: Sprite
     state: bar
@@ -1025,7 +1025,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideChapel
-  name: Chapel
+  name: 查佩尔
   components:
   - type: Sprite
     state: courtroom
@@ -1044,7 +1044,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideHydroponics
-  name: Hydroponics
+  name: 水培
   components:
   - type: Sprite
     state: garden
@@ -1063,7 +1063,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideLibrary
-  name: Library
+  name: 图书馆
   components:
   - type: Sprite
     state: library
@@ -1082,7 +1082,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideOfficeComplex
-  name: Office Complex
+  name: 办公综合体
   components:
   - type: Sprite
     state: explored
@@ -1101,7 +1101,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideSpacePort
-  name: Space Port
+  name: 太空港
   components:
   - type: Sprite
     state: green
@@ -1122,7 +1122,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideSpacePortLz2
-  name: Cargo Landing Pad
+  name: 货物着陆平台
   components:
   - type: Sprite
     state: green
@@ -1143,7 +1143,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideTelecomm
-  name: LZ1 Communications Relay
+  name: LZ1 通信中继
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas.rsi
@@ -1165,7 +1165,7 @@
 - type: entity
   parent: RMCAreaBigredv2OutsideTelecomm
   id: RMCAreaBigredv2OutsideTelecommLz2Cave
-  name: Central Grounds Communications Relay
+  name: 中央庭院通信中继站
   components:
   - type: Area
     landingZone: false
@@ -1174,7 +1174,7 @@
 - type: entity
   parent: RMCAreaBigredv2OutsideTelecomm
   id: RMCAreaBigredv2OutsideTelecommNCave
-  name: North Cave Communications Relay
+  name: 北洞通信中继站
   components:
   - type: Area
     landingZone: false
@@ -1183,7 +1183,7 @@
 - type: entity
   parent: RMCAreaBigredv2OutsideTelecomm
   id: RMCAreaBigredv2OutsideTelecommWarehouse
-  name: Warehouse Communications Relay
+  name: 仓库通讯中继器
   components:
   - type: Area
     landingZone: false
@@ -1191,7 +1191,7 @@
 - type: entity
   parent: RMCAreaBigredv2OutsideTelecomm
   id: RMCAreaBigredv2OutsideTelecommSecurity
-  name: Security Communications Relay
+  name: 安全通信中继
   components:
   - type: Area
     landingZone: false
@@ -1199,7 +1199,7 @@
 - type: entity
   parent: RMCAreaBigredv2OutsideTelecomm
   id: RMCAreaBigredv2OutsideTelecommStore
-  name: General Store Communications Relay
+  name: 杂货店通信中继站
   components:
   - type: Area
     landingZone: false
@@ -1207,7 +1207,7 @@
 - type: entity
   parent: RMCAreaBigredv2OutsideTelecomm
   id: RMCAreaBigredv2OutsideTelecommAdmin
-  name: Administrative Communications Relay
+  name: 行政通信中继
   components:
   - type: Area
     landingZone: false
@@ -1215,7 +1215,7 @@
 - type: entity
   parent: RMCAreaBigredv2OutsideTelecomm
   id: RMCAreaBigredv2OutsideTelecommEngi
-  name: Engineering Communications Relay
+  name: 工程通信中继
   components:
   - type: Area
     landingZone: false
@@ -1223,7 +1223,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideEngineering
-  name: Engineering Complex
+  name: 工程综合体
   components:
   - type: Sprite
     state: engine
@@ -1243,15 +1243,15 @@
 - type: entity
   parent: RMCAreaBigredv2OutsideEngineering
   id: RMCAreaBigredv2OutsideEngineeringReactor
-  name: Main Reactor
+  name: 主反应器
   components:
   - type: Area
-    linkedLz: null
+    linkedLz:
 
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideStorage
-  name: Storage
+  name: 存储
   components:
   - type: Sprite
     state: storage
@@ -1270,7 +1270,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideSolarPlant
-  name: Solar Power Plant
+  name: 太阳能发电厂
   components:
   - type: Sprite
     state: substation
@@ -1289,7 +1289,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideAtmos
-  name: Atmospheric Stabilizer
+  name: 大气稳定器
   components:
   - type: Sprite
     state: party
@@ -1308,7 +1308,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideGeneralOffices
-  name: General Offices
+  name: 总办公室
   components:
   - type: Sprite
     state: storage
@@ -1327,7 +1327,7 @@
 - type: entity
   parent: RMCAreaBigredv2
   id: RMCAreaBigredv2CavesVirology
-  name: Virology Caves
+  name: 病毒学洞穴
   components:
   - type: Sprite
     state: caves_virology
@@ -1346,7 +1346,7 @@
 - type: entity
   parent: RMCAreaBigredv2
   id: RMCAreaBigredv2CavesSw
-  name: Southwestern Caves
+  name: 西南洞穴
   components:
   - type: Sprite
     state: caves_sw
@@ -1365,7 +1365,7 @@
 - type: entity
   parent: RMCAreaBigredv2
   id: RMCAreaBigredv2CavesResearch
-  name: We-Yu Research Lab Caves
+  name: We-Yu研究实验室洞穴
   components:
   - type: Sprite
     state: caves_research
@@ -1385,7 +1385,7 @@
 - type: entity
   parent: RMCAreaBigredv2
   id: RMCAreaBigredv2CavesSe
-  name: Southeastern Caves
+  name: 东南洞穴
   components:
   - type: Sprite
     state: caves_se
@@ -1404,7 +1404,7 @@
 - type: entity
   parent: RMCAreaBigredv2
   id: RMCAreaBigredv2CavesEast
-  name: Eastern Caves
+  name: 东部洞穴
   components:
   - type: Sprite
     state: caves_east
@@ -1423,7 +1423,7 @@
 - type: entity
   parent: RMCAreaBigredv2
   id: RMCAreaBigredv2CavesNorth
-  name: Northern Caves
+  name: 北部洞穴
   components:
   - type: Sprite
     state: caves_north
@@ -1452,7 +1452,7 @@
 - type: entity
   parent: RMCAreaBigredv2Landing
   id: RMCAreaBigredv2LandingConsole
-  name: LZ1 'Telecomms'
+  name: LZ1 ‘电信’
   components:
   - type: Area
     weatherEnabled: false
@@ -1460,7 +1460,7 @@
 - type: entity
   parent: RMCAreaBigredv2Landing
   id: RMCAreaBigredv2LandingConsole2
-  name: LZ2 'Cargo'
+  name: LZ2 ‘货物’
   components:
   - type: Area
     weatherEnabled: false
@@ -1468,7 +1468,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideLz1NorthCas
-  name: Northern Caves Entrance
+  name: 北部洞穴入口
   components:
   - type: Sprite
     state: garden
@@ -1488,7 +1488,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideLz1TelecommCas
-  name: Virology Caves Entrance
+  name: 病毒学洞穴入口
   components:
   - type: Sprite
     state: garden
@@ -1508,7 +1508,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideLz2WestCas
-  name: Southwestern Caves Entrance
+  name: 西南洞穴入口
   components:
   - type: Sprite
     state: garden
@@ -1528,7 +1528,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideLz2SouthCas
-  name: ETA Lockdown Caves Entrance
+  name: ETA封锁洞穴入口
   components:
   - type: Sprite
     state: garden
@@ -1548,7 +1548,7 @@
 - type: entity
   parent: RMCAreaBigredv2Outside
   id: RMCAreaBigredv2OutsideFiltrationCaveCas
-  name: Filtration Lockdown Caves Entrance
+  name: 过滤封锁洞穴入口
   components:
   - type: Sprite
     state: garden

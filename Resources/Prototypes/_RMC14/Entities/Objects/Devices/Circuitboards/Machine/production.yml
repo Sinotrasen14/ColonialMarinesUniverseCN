@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: CMSMESMachineCircuitboard
-  name: SMES machine board
-  description: A machine printed circuit board for a SMES.
+  name: SMES 机器电路板
+  description: 用于SMES的机器印刷电路板。
   components:
   - type: Sprite
     state: power_mod
@@ -17,11 +17,11 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: CMAutolatheMachineCircuitboard
-  name: autolathe machine board
-  description: A machine printed circuit board for an autolathe
+  name: 自动车床机器电路板
+  description: 用于自动车床的机器印刷电路板
   components: # TODO RMC14 autolathe
-    - type: MachineBoard
-      prototype: RMCAutolatheEmpty
+  - type: MachineBoard
+    prototype: RMCAutolatheEmpty
 #      requirements:
 #        MatterBin: 3
 #        Manipulator: 1
@@ -31,12 +31,12 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: RMCPortableGeneratorPacmanMachineCircuitBoard
-  name: P.A.C.M.A.N.-type portable generator machine board
+  name: P.A.C.M.A.N.型便携式发电机机器板
   components:
-    - type: Sprite
-      state: power_mod
-    - type: MachineBoard
-      prototype: RMCPortableGenerator
+  - type: Sprite
+    state: power_mod
+  - type: MachineBoard
+    prototype: RMCPortableGenerator
 # TODO RMC14 material requirements
 #		/obj/item/stock_parts/matter_bin = 1,
 #		/obj/item/stock_parts/micro_laser = 1,
@@ -46,12 +46,12 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: RMCPortableGeneratorSuperPacmanMachineCircuitboard
-  name: S.U.P.E.R.P.A.C.M.A.N.-type portable generator machine board
+  name: S.U.P.E.R.P.A.C.M.A.N.型便携式发电机机器板
   components:
-    - type: Sprite
-      state: power_mod
-    - type: MachineBoard
-      prototype: RMCPortableGenerator2
+  - type: Sprite
+    state: power_mod
+  - type: MachineBoard
+    prototype: RMCPortableGenerator2
 # TODO RMC14 material requirements
 #		/obj/item/stock_parts/matter_bin = 1,
 #		/obj/item/stock_parts/micro_laser = 1,
@@ -61,8 +61,8 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: CMCircuitboardDispenserChem
-  name: chem dispenser machine board
-  description: A machine printed circuit board for a chemical dispenser.
+  name: 化学品分配器机器电路板
+  description: 一种用于化学品分配器的机器印刷电路板。
   components:
   - type: Sprite
     state: blank_mod
@@ -73,8 +73,8 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: CMCircuitboardDispenserBooze
-  name: booze dispenser machine board
-  description: A machine printed circuit board for a booze dispenser.
+  name: 酒水分配机电路板
+  description: 用于酒水分配机的机器印刷电路板。
   components:
   - type: Sprite
     state: blank_mod
@@ -85,8 +85,8 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: CMCircuitboardDispenserSoda
-  name: soda dispenser machine board
-  description: A machine printed circuit board for a soda dispenser.
+  name: 汽水机电路板
+  description: 用于汽水机的机器印刷电路板。
   components:
   - type: Sprite
     state: blank_mod
@@ -97,8 +97,8 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: CMCircuitboardChemMaster
-  name: chem master machine board
-  description: A machine printed circuit board for a chem master.
+  name: 化学大师机器电路板
+  description: 用于化学大师的机器印刷电路板。
   components:
   - type: Sprite
     state: blank_mod
@@ -109,8 +109,8 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: RMCCircuitboardIndustrialChemMaster
-  name: chem master machine board
-  description: A machine printed circuit board for a industrial chem master.
+  name: 化学大师机器板
+  description: 用于工业化学大师的机器印刷电路板。
   components:
   - type: Sprite
     state: blank_mod
@@ -121,8 +121,8 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: CMCircuitboardMicrowave
-  name: microwave machine board
-  description: A machine printed circuit board for a microwave.
+  name: 微波炉机器电路板
+  description: 用于微波炉的机器印刷电路板。
   components:
   - type: Sprite
     state: blank_mod
@@ -133,11 +133,11 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: RMCArmylatheMachineCircuitboard
-  name: armylathe machine board
-  description: A machine printed circuit board for an armylathe
+  name: 军用车床机器电路板
+  description: 用于军用车床的机器印刷电路板
   components:
-    - type: MachineBoard
-      prototype: RMCArmylatheEmpty
+  - type: MachineBoard
+    prototype: RMCArmylatheEmpty
 
 # - type: entity
 #   parent: CMBaseMachineCircuitboard

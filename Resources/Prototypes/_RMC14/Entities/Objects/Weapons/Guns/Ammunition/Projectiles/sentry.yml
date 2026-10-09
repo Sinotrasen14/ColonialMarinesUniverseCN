@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: RMCBaseBullet
   id: CMBulletSentry10x50mm
-  name: bullet (10x50mm)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（10x50mm）
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/bullet_projectiles.rsi
@@ -26,8 +26,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCBulletSentry
-  name: bullet (10x28mm)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（10x28mm）
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/bullet_projectiles.rsi
@@ -49,9 +49,9 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCBaseBulletSentryFireProjectile
-  name: flaming ball
-  description: Huh? You shouldn't be able to see this...
-  categories: [ HideSpawnMenu ]
+  name: 火焰球
+  description: 咦？你不应该能看到这个……
+  categories: [HideSpawnMenu]
   components:
   - type: IgniteOnProjectileHit
   - type: IgnorePredictionHide
@@ -79,8 +79,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         hard: false
         mask:
@@ -103,9 +102,9 @@
 - type: entity
   parent: RMCBaseBulletSentryFireProjectile
   id: RMCBulletSentryFireProjectileBlue
-  name: flaming ball blue
-  description: Huh? You shouldn't be able to see this...
-  categories: [ HideSpawnMenu ]
+  name: 蓝色火球
+  description: 咦？你不应该能看到这个……
+  categories: [HideSpawnMenu]
   components:
   - type: IgniteOnProjectileHit
     burnColor: "#00b8ff"
@@ -119,9 +118,9 @@
 - type: entity
   parent: RMCBaseBulletSentryFireProjectile
   id: RMCBulletSentryFireProjectileSmoke
-  name: flaming ball smoke
-  description: Huh? You shouldn't be able to see this...
-  categories: [ HideSpawnMenu ]
+  name: 火球烟雾
+  description: 咦？你不应该能看到这个……
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     deleteOnCollide: true

@@ -1,8 +1,8 @@
 - type: entity
   id: RMCProjectileDespoilerAcidShot
-  name: acid shot
+  name: 酸液射击
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Effects/despoiler_acid_puddle.rsi
@@ -30,9 +30,9 @@
 
 - type: entity
   id: RMCEffectDespoilerLingeringAcid
-  name: lingering acid
-  description: A bubbling pool of corrosive acid.
-  categories: [ HideSpawnMenu ]
+  name: 残留酸液
+  description: 一池冒泡的腐蚀性酸液。
+  categories: [HideSpawnMenu]
   placement:
     mode: SnapgridCenter
   components:
@@ -55,8 +55,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         hard: false
         layer:
@@ -66,9 +65,9 @@
 
 - type: entity
   id: RMCEffectDespoilerAcidSpray
-  name: acid spray
-  description: A hissing burst of acid.
-  categories: [ HideSpawnMenu ]
+  name: 酸液喷溅
+  description: 嘶嘶作响的酸液喷溅。
+  categories: [HideSpawnMenu]
   placement:
     mode: SnapgridCenter
   components:
@@ -93,8 +92,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         hard: false
         layer:
@@ -105,7 +103,7 @@
 - type: entity
   id: RMCEffectDespoilerAcidSprayEmpowered
   parent: RMCEffectDespoilerAcidSpray
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: XenoDespoilerAcidSpray
     damage:
@@ -116,7 +114,7 @@
 - type: entity
   id: RMCEffectDespoilerCausticTelegraph
   parent: RMCEffectXenoTelegraphGreen
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TimedDespawn
     lifetime: 0.25
@@ -126,7 +124,7 @@
 - type: entity
   id: RMCEffectDespoilerOozingTelegraph
   parent: RMCEffectXenoTelegraphGreen
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TimedDespawn
     lifetime: 0.4
@@ -135,8 +133,8 @@
 
 - type: entity
   id: RMCEffectDespoilerCatalyze
-  name: hypertension burst
-  categories: [ HideSpawnMenu ]
+  name: 高血压爆发
+  categories: [HideSpawnMenu]
   components:
   - type: Transform
   - type: Sprite

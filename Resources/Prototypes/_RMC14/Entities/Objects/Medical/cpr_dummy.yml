@@ -1,21 +1,21 @@
 - type: entity
   parent: BaseItem
   id: RMCCPRDummy
-  name: CPR dummy
-  description: A CPR dummy, for training all those privates how to save a life! Does not accurately emulate battle wounds, does not simulate rib breaking, plastic toxic to touch, please contact a doctor if skin irritation persists for more than two hours.
+  name: 心肺复苏假人
+  description: 一个心肺复苏假人，用来训练所有那些列兵如何拯救生命！不能准确模拟战伤，不能模拟肋骨骨折，塑料接触有毒，如果皮肤刺激持续超过两小时，请联系医生。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/cpr_dummy.rsi
     layers:
     - state: cpr_dummy
-      map: [ "base" ]
+      map: ["base"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.CPRDummyVisuals.Deployed:
         base:
-          True: { state: cpr_dummy_deployed }
-          False: { state: cpr_dummy }
+          true: {state: cpr_dummy_deployed}
+          false: {state: cpr_dummy}
   - type: Item
     size: Normal
     sprite: _RMC14/Objects/Medical/cpr_dummy.rsi

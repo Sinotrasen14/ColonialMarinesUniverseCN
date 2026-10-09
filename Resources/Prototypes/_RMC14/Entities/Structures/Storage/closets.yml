@@ -2,8 +2,8 @@
 - type: entity
   parent: ClosetBase
   id: CMClosetBaseUnanchored
-  name: closet
-  description: It's a basic storage unit.
+  name: 壁橱
+  description: 这是一个基本的储物单元。
   suffix: Unanchored
   components:
   - type: XenoCrusherChargable
@@ -24,7 +24,7 @@
     - state: paper
       visible: false
       sprite: Structures/Storage/closet_labels.rsi
-      map: [ "enum.PaperLabelVisuals.Layer" ]
+      map: ["enum.PaperLabelVisuals.Layer"]
   - type: Appearance
   - type: EntityStorageVisuals
     stateBaseClosed: base
@@ -47,12 +47,11 @@
     damageContainer: StructuralMarine
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -77,8 +76,8 @@
 - type: entity
   parent: CMClosetBase
   id: RMCCabinetBase
-  name: cabinet
-  description: Old will forever be in fashion.
+  name: 柜子
+  description: 旧，永远时尚。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/cabinet.rsi
@@ -103,8 +102,8 @@
 - type: entity
   parent: CMClosetBase
   id: RMCClosetBlack
-  name: formal closet
-  description: It's a storage unit for formal clothing.
+  name: 正装衣柜
+  description: 这是一个用于存放正装的储物单元。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/black.rsi
@@ -112,8 +111,8 @@
 - type: entity
   parent: CMClosetBase
   id: RMCClosetBlue
-  name: legal closet
-  description: It's a storage unit for courtroom apparel and items.
+  name: 法律衣柜
+  description: 这是一个用于存放法庭服装和物品的储物柜。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/blue.rsi
@@ -121,8 +120,8 @@
 - type: entity
   parent: CMClosetBase
   id: RMCClosetPurple
-  name: custodial closet
-  description: It's a storage unit for janitorial clothes and gear.
+  name: 保洁储藏室
+  description: 这是一个存放保洁衣物和装备的储物间。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/purple.rsi
@@ -131,8 +130,8 @@
 - type: entity
   parent: CMClosetBase
   id: CMClosetEmergency
-  name: emergency closet
-  description: It's a storage unit for emergency breathmasks and o2 tanks.
+  name: 应急储物柜
+  description: 这是一个存放应急呼吸面罩和氧气罐的储物单元。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/emergency.rsi
@@ -140,8 +139,8 @@
 - type: entity
   parent: CMClosetBase
   id: CMClosetFire
-  name: fire-safety closet
-  description: It's a storage unit for fire-fighting supplies.
+  name: 消防安全柜
+  description: 它是用于存放消防用品的储物柜。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/firecloset.rsi
@@ -149,8 +148,8 @@
 - type: entity
   parent: CMClosetBase
   id: CMClosetTool
-  name: tool closet
-  description: It's a storage unit for tools.
+  name: 工具柜
+  description: 这是一个存放工具的储物柜。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/toolcloset.rsi
@@ -158,8 +157,8 @@
 - type: entity
   parent: CMClosetBase
   id: CMClosetRadiation
-  name: radiation suit closet
-  description: It's a storage unit for rad-protective suits.
+  name: 防辐射服储藏柜
+  description: 这是用于存放防辐射服的储藏柜。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/radsuit.rsi
@@ -167,8 +166,8 @@
 - type: entity
   parent: CMClosetBase
   id: CMClosetBomb
-  name: EOD closet
-  description: It's a storage unit for explosion-protective suits.
+  name: 排爆服储存柜
+  description: 这是一个用于存放排爆服的储存柜。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/bombsuit.rsi
@@ -177,8 +176,8 @@
 - type: entity
   parent: CMClosetBase
   id: CMClosetBio
-  name: level-3 biohazard suit closet
-  description: It's a storage unit for level-3 biohazard gear.
+  name: 三级生物危害防护服储藏柜
+  description: 这是三级生物危害防护装备的储藏柜。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/bio.rsi
@@ -227,8 +226,8 @@
 - type: entity
   parent: CMClosetBase
   id: CMClosetAlien
-  name: strange closet
-  description: It looks alien!
+  name: 奇怪的衣柜
+  description: 它看起来像是外星来的！
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/acloset.rsi
@@ -237,7 +236,7 @@
 - type: entity
   parent: CMClosetBaseUnanchored
   id: RMCClosetMiner
-  name: miner's equipment
+  name: 矿工装备
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Closets/mining.rsi
@@ -246,8 +245,8 @@
 - type: entity
   parent: CMClosetBaseUnanchored
   id: RMCClosetGoldenArrowGear
-  name: personal locker
-  description: An immobile storage unit.
+  name: 个人储物柜
+  description: 不可移动的储物柜。
   suffix: PvE, Sun Riders
   components:
   - type: EntityTableContainerFill
@@ -288,7 +287,7 @@
 - type: entity
   parent: RMCClosetGoldenArrowGear
   id: RMCClosetRCMTroopSgtGear
-  name: troop sergeant locker
+  name: 部队中士储物柜
   suffix: PVE, RCM, Troop Sergeant
   components:
   - type: EntityTableContainerFill
@@ -299,7 +298,7 @@
 - type: entity
   parent: RMCClosetGoldenArrowGear
   id: RMCClosetRCMSectionLeaderGear
-  name: section leader locker
+  name: 分队长储物柜
   suffix: PVE, RCM, Section Leader
   components:
   - type: EntityTableContainerFill
@@ -310,7 +309,7 @@
 - type: entity
   parent: RMCClosetGoldenArrowGear
   id: RMCClosetRCMGPMGGear
-  name: GPMG gunner locker
+  name: 通用机枪手储物柜
   suffix: PVE, RCM, GPMG Gunner
   components:
   - type: EntityTableContainerFill
@@ -321,7 +320,7 @@
 - type: entity
   parent: RMCClosetGoldenArrowGear
   id: RMCClosetRCMTeamLeaderGear
-  name: team leader locker
+  name: 队长储物柜
   suffix: PVE, RCM, Team Leader
   components:
   - type: EntityTableContainerFill
@@ -332,7 +331,7 @@
 - type: entity
   parent: RMCClosetGoldenArrowGear
   id: RMCClosetRCMTroopCommanderGear
-  name: troop commander locker
+  name: 部队指挥官储物柜
   suffix: PVE, RCM, Troop Commander
   components:
   - type: EntityTableContainerFill
@@ -343,7 +342,7 @@
 - type: entity
   parent: RMCClosetGoldenArrowGear
   id: RMCClosetRCMSapperGear
-  name: sapper locker
+  name: 工兵储物柜
   suffix: PVE, RCM, Sapper
   components:
   - type: EntityTableContainerFill

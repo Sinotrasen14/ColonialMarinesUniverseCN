@@ -1,8 +1,8 @@
 - type: entity
   parent: ColMarTechSurplus
   id: RMCCLFSurplusPVE
-  name: CLF Clothing Rack
-  description: A sturdy metal rack made by local friends of the front, filled to the brim with all the load-bearing gear and clothing a rebel could want, coincidentally also made by local friends of the front.
+  name: CLF衣物架
+  description: 一个坚固的金属架，由前线当地的朋友制作，里面塞满了反抗军想要的所有负重装备和衣物，巧合的是这些也由前线当地的朋友制作。
   suffix: PVE, CLF
   components:
   - type: Sprite
@@ -12,51 +12,51 @@
     - "CMAccessMarinePrep"
     hackable: true
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       entries:
       - id: RMCShoesJackboots
-        name: Jackboots
+        name: 长筒军靴
         amount: 15
       - id: RMCJumpsuitCLFSoldier
-        name: CLF Jumpsuit
+        name: CLF 连体裤
         amount: 15
       - id: RMCHandsLeatherBlack
-        name: Leather Gloves
+        name: 皮手套
         amount: 15
       - id: RMCHeadsetDistressCLF
-        name: Radio Headset
+        name: 无线电耳机
         amount: 15
       - id: RMCHeadCapTruckerBlue
-        name: Trucker Hat
+        name: 卡车司机帽
         amount: 15
       - id: RMCHeadBeanie
-        name: Beanie
+        name: 毛线帽
         amount: 15
-    - name: Webbings
+    - name: 织带
       entries:
       - id: CMWebbingBlack
-        name: Webbing, Black
+        name: 黑色织带
         amount: 5
       - id: CMWebbingBrown
-        name: Webbing, Brown
+        name: 棕色织带
         amount: 5
       - id: RMCWebbingLegPouch
-        name: Leg Pouch, Camo Conforming
+        name: 腿包，迷彩服贴
         amount: 5
       - id: RMCWebbingLegPouchBlack
-        name: Leg Pouch, Black
+        name: 腿包，黑色
         amount: 5
       - id: RMCWebbingDropPouch
         amount: 5
-    - name: Armor
+    - name: 护甲
       entries:
       - id: RMCHeadMilitiaHood
-        name: Militia Hood
+        name: 民兵兜帽
         amount: 15
       - id: RMCCoatMilitia
-        name: Militia Armor
+        name: 民兵护甲
         amount: 15
-    - name: Backpack
+    - name: 背包
       entries:
       - id: CMBackpack
         amount: 15
@@ -66,11 +66,11 @@
         amount: 15
       - id: RMCSatchelLightpackWelder
         amount: 15
-    - name: Restricted Backpack
+    - name: 受限背包
       entries:
       - id: RMCBackpackRTO
         amount: 1
-    - name: Belts
+    - name: 腰带
       entries:
       - id: CMBeltMarine
         amount: 15
@@ -84,12 +84,12 @@
         amount: 5
       - id: RMCBeltUtilityGeneral
         amount: 5
-    - name: Pouches
+    - name: 小袋
       entries:
       - id: RMCPouchFirstAid
         amount: 15
       - id: RMCPouchFlareFilled
-        name: flare pouch (Full)
+        name: 信号弹袋（满）
         amount: 15
       - id: RMCPouchMagazine
         amount: 15
@@ -99,7 +99,7 @@
         amount: 15
       - id: RMCPouchPistol
         amount: 15
-    - name: Restricted Pouches
+    - name: 受限袋
       entries:
       - id: RMCPouchConstruction
         amount: 1
@@ -115,7 +115,7 @@
         amount: 1
       - id: RMCPouchShotgun
         amount: 1
-    - name: Mask
+    - name: 面具
       entries:
       - id: CMMaskGas
         amount: 15
@@ -123,16 +123,16 @@
         amount: 10
       - id: CMMaskCoif
         amount: 10
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: RMCGogglesBallistic
-        name: Ballistic Goggles
+        name: 防弹护目镜
         amount: 10
       - id: RMCGogglesBallisticBlack
-        name: Ballistic Goggles, sun shaded
+        name: 防弹护目镜，遮阳型
         amount: 10
       - id: RMCGogglesM1A1Ballistic
-        name: Ballistic Goggles, laser-shaded (brown)
+        name: 防弹护目镜，激光遮光（棕色）
         amount: 10
       - id: RMCCLFArmband
         amount: 15
@@ -142,8 +142,8 @@
 - type: entity
   parent: ColMarTechUtilities
   id: RMCCLFUtilitiesPVE
-  name: CLF Utilities Rack
-  description: A sturdy metal rack taken from a captured UN military shipment loaded with all the gear a rebel could ever want.
+  name: CLF 工具架
+  description: 从缴获的联合国军用物资中取出的坚固金属架，上面装满了叛军梦寐以求的各种装备。
   suffix: PVE, CLF
   components:
   - type: Sprite
@@ -153,22 +153,22 @@
     - "CMAccessMarinePrep"
     hackable: true
     sections:
-    - name: Food
+    - name: 食物
       entries:
       - id: CMMRE
         name: MRE
         amount: 5
       - id: RMCBoxMRE
-        name: MRE Box
+        name: 即食口粮盒
         amount: 1
-    - name: Medical
+    - name: 医疗
       entries:
       - id: CMGauze10
         amount: 15
       - id: CMOintment10
         amount: 15
       - id: CMEmergencyAutoInjector
-        name: Emergency Autoinjector
+        name: 紧急自动注射器
         amount: 15
       - id: CMBicaridineAutoInjector
         amount: 15
@@ -176,7 +176,7 @@
         amount: 15
       - id: CMTricordrazineAutoInjector
         amount: 15
-    - name: Tools
+    - name: 工具
       entries:
       - id: CMEntrenchingTool
         amount: 2
@@ -189,31 +189,31 @@
       - id: CMWrench
         amount: 5
       - id: CMMultitool
-        name: Multitool
+        name: 多功能工具
         amount: 5
       - id: RMCWelderPVE
         amount: 1
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: RMCExplosivePlastic
         amount: 2
       - id: RMCExplosiveBreachingCharge
         amount: 2
-    - name: Flare and Light
+    - name: 闪光与灯光
       entries:
       - id: RMCFlashlight
         amount: 5
       - id: RMCBoxFlashlights
-        name: Box of Flashlights
+        name: 一盒手电筒
         amount: 1
       - id: RMCBoxPackFlare
-        name: Box of Flares
+        name: 一盒信号弹
         amount: 1
       - id: CMPackFlare
         amount: 10
       - id: RMCBoxPackFlareCAS
         amount: 1
-    - name: Sidearms
+    - name: 副武器
       entries:
       - id: RMCWeaponPistolMK45
         amount: 2
@@ -221,18 +221,18 @@
         amount: 2
       - id: RMCWeaponPistolM82F
         amount: 1
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: CMFireExtinguisher
-        name: Extinguisher
+        name: 灭火器
         amount: 5
       - id: CMFireExtinguisherPortable
-        name: Fire Extinguisher (Portable)
+        name: 灭火器（便携式）
         amount: 1
       - id: CMRollerBedSpawnFolded
         amount: 2
       - id: RMCScabbardMacheteFilled
-        name: Machete Scabbard (Full)
+        name: 砍刀刀鞘（满）
         amount: 5
       - id: RMCAttachmentRailFlashlight
         amount: 5

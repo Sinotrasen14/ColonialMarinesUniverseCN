@@ -1,8 +1,8 @@
-﻿# Random spawner
+# Random spawner
 - type: entity
   parent: PottedPlantRandom
   id: CMPottedPlantRandom
-  name: random potted plant spawner
+  name: 随机盆栽生成器
   suffix: RMC
   components:
   - type: RandomSpawner
@@ -46,7 +46,7 @@
   parent: PottedPlantBase
   id: CMPottedPlantBase
   abstract: true
-  name: potted plant
+  name: 盆栽植物
   description: ""
   suffix: RMC
   components:
@@ -60,8 +60,7 @@
       collection: RMCPottedPlantRustle
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:PlaySoundBehavior

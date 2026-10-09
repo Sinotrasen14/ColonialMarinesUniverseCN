@@ -1,8 +1,8 @@
 - type: entity
   parent: CMSeatBase
   id: CMSeatPassenger
-  name: passenger seat
-  description: A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+  name: 乘客座椅
+  description: 一把坚固的椅子，带有可降下并罩住身体的支架。可在车辆碰撞时防止你被甩来甩去并因此受伤。孩子们，系好安全带！若损坏，可用焊接工具修理。
   placement:
     mode: PlaceFree
   components:
@@ -15,7 +15,7 @@
 - type: entity
   parent: CMSeatPassenger
   id: RMCSeatVehiclePassenger
-  description: A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids!
+  description: 一把坚固的椅子，带有可在你身体上方降下的固定架。可防止在车辆碰撞时被甩来甩去并因此受伤。孩子们，系好安全带！
   components:
   - type: RemoveComponents
     components:
@@ -27,8 +27,8 @@
 - type: entity
   parent: CMSeatBase
   id: CMSeatPilot
-  name: pilot's chair
-  description: A specially designed chair for pilots to sit in.
+  name: 飞行员座椅
+  description: 供飞行员乘坐的特制座椅。
   placement:
     mode: PlaceFree
   components:
@@ -45,8 +45,8 @@
 - type: entity
   parent: CMSeatBase
   id: RMCSeatDriver
-  name: driver's chair
-  description: A specially designed chair for driver to sit in.
+  name: 驾驶员座椅
+  description: 专为驾驶员乘坐而设计的座椅。
   placement:
     mode: SnapgridCenter
   components:
@@ -69,8 +69,8 @@
 - type: entity
   parent: CMSeatBase
   id: RMCSeatHunter
-  name: hunter chair
-  description: An exquisitely crafted chair for a large humanoid hunter.
+  name: 猎人椅
+  description: 为大型类人猎人精心制作的椅子。
   placement:
     mode: PlaceFree
   components:
@@ -83,8 +83,8 @@
 - type: entity
   parent: CMSeatBase
   id: RMCSeatWhite
-  name: passenger seat
-  description: A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+  name: 乘客座椅
+  description: 一把坚固的座椅，带有可降下罩住身体的护架。可防止在车辆碰撞时被甩来甩去，从而避免受伤。系好安全带，孩子们！若损坏，请用焊接工具修复。
   placement:
     mode: PlaceFree
   components:
@@ -97,8 +97,8 @@
 - type: entity
   parent: CMSeatBase
   id: RMCSeatDark
-  name: passenger seat
-  description: A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage.
+  name: 乘客座椅
+  description: 一把坚固的椅子，带有可放下并罩在身体上方的护架。可防止在车辆碰撞时被甩来甩去并因此受伤。孩子们，系好安全带！如有损坏，请用焊接工具修复。
   placement:
     mode: PlaceFree
   components:
@@ -112,8 +112,8 @@
   abstract: true
   parent: CMSeatBase
   id: RMCSeatArmoredBase
-  name: armored seat
-  description: A reinforced chair designed for vehicle interiors.
+  name: 装甲座椅
+  description: 一种专为车辆内部设计的加固座椅。
   placement:
     mode: PlaceFree
   components:
@@ -132,12 +132,12 @@
 - type: entity
   parent: RMCSeatArmoredBase
   id: RMCSeatArmored
-  name: armored seat
+  name: 装甲座椅
 
 - type: entity
   parent: RMCSeatArmoredBase
   id: RMCSeatArmoredDriver
-  name: armored driver's seat
+  name: 装甲驾驶员座椅
   components:
   - type: VehicleDriverSeat
     skills:
@@ -146,7 +146,7 @@
 - type: entity
   parent: RMCSeatArmoredBase
   id: RMCSeatArmoredWeaponsOperator
-  name: armored weapons operator seat
+  name: 装甲武器操作员座位
   components:
   - type: VehicleWeaponsSeat
     skills:
@@ -162,7 +162,7 @@
 - type: entity
   parent: RMCSeatArmoredBase
   id: RMCSeatArmoredPortGunOperator
-  name: armored port gun operator seat
+  name: 装甲舷炮操作员座椅
   components:
   - type: VehiclePortGunSeat
     skills:
@@ -171,7 +171,7 @@
 - type: entity
   parent: RMCSeatArmoredBase
   id: RMCSeatTankDriver
-  name: tank driver seat
+  name: 坦克驾驶员座椅
   placement:
     mode: SnapgridCenter
   components:
@@ -194,7 +194,7 @@
 - type: entity
   parent: RMCSeatArmoredBase
   id: RMCSeatTankGunner
-  name: tank gunner seat
+  name: 坦克炮手座位
   placement:
     mode: SnapgridCenter
   components:
@@ -212,7 +212,7 @@
 - type: entity
   parent: RMCSeatArmoredBase
   id: RMCSeatTankCommander
-  name: tank commander seat
+  name: 坦克车长座椅
   placement:
     mode: SnapgridCenter
   components:
@@ -237,7 +237,7 @@
   abstract: true
   parent: CMSeatBase
   id: RMCSeatHumveeBase
-  name: humvee seat
+  name: 悍马座椅
   placement:
     mode: PlaceFree
   components:
@@ -259,12 +259,12 @@
 - type: entity
   parent: RMCSeatHumveeBase
   id: RMCSeatHumveePassenger
-  name: humvee passenger seat
+  name: 悍马副驾驶座椅
 
 - type: entity
   parent: RMCSeatHumveeBase
   id: RMCSeatHumveeDriver
-  name: humvee driver seat
+  name: 悍马驾驶员座椅
   components:
   - type: VehicleDriverSeat
     skills:
@@ -273,7 +273,7 @@
 - type: entity
   parent: RMCSeatHumveeBase
   id: RMCSeatHumveeWeaponsOperator
-  name: humvee gunner seat
+  name: 悍马机枪手座椅
   components:
   - type: VehicleWeaponsSeat
     skills:

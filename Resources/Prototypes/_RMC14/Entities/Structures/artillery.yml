@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCAntiAirProp
-  name: IX-50 MGAD Cannon
-  description: "The IX-50 is a state-of-the-art Micro-Gravity and Air Defense system capable of independently tracking and neutralizing threats with rockets strapped onto them."
+  name: IX-50 微重力与防空加农炮
+  description: "IX-50 是一种最先进的微重力与防空系统，能够独立追踪并消除那些身上绑有火箭的威胁。"
   suffix: Prop
   placement:
     mode: SnapgridCenter
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,0.49,3.49,2.49"
         density: 155
         mask:
@@ -38,8 +37,8 @@
 - type: entity
   parent: RMCAntiAirProp
   id: RMCRailgunProp
-  name: "'BURST' MAC Planetary Battery"
-  description: "The 'BURST' MAC Planetary Battery is an advanced magnetic mass accelerator cannon which utilises a long linear system of magnetic coils to propel metal payloads at incredible speeds."
+  name: "‘BURST’磁力加速炮行星炮台"
+  description: "‘BURST’磁力加速炮行星炮台是一种先进的磁性质量加速炮，利用长长的线性磁线圈系统，以惊人的速度推进金属载荷。"
 
 - type: entity
   parent: RMCRailgunProp

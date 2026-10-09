@@ -6,8 +6,8 @@
   - RMCXenoSpeechSounds
   - RMCXenoMobCollision
   id: RMCXenoKing
-  name: King
-  description: The end of the line.
+  name: 国王 | King
+  description: 路的尽头。 | The end of the line.
   components:
   - type: GhostRole
     name: cmu-job-name-xeno-unknown
@@ -77,8 +77,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 185
         mask:
@@ -87,8 +86,7 @@
         layer:
         - MobLayer
       fix2:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.52
         density: 185
         layer:

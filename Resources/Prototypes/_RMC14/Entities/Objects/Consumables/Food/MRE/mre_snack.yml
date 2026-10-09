@@ -1,9 +1,9 @@
-﻿# Components
+# Components
 - type: entity
   abstract: true
   parent: CMMREComponentBase
   id: CMMRESnackComponentBase
-  description: An MRE snack component. Contains a light snack in case you weren't feeling terribly hungry.
+  description: MRE 零食组件。内含一份轻食，以备你不太饿时食用。
   components:
   - type: Sprite
     state: snack
@@ -11,8 +11,8 @@
 - type: entity
   parent: CMMRESnackComponentBase
   id: CMMREComponentBiscuit
-  name: MRE component (biscuit)
-  description: An MRE snack component. Contains a light snack in case you weren't feeling terribly hungry. This one is biscuit.
+  name: MRE 组件（饼干）
+  description: 一个 MRE 零食组件。内含一份清淡零食，以防你不太饿。这个是饼干。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -21,18 +21,18 @@
 - type: entity
   parent: CMMRESnackComponentBase
   id: CMMREComponentMeatballs
-  name: MRE component (meatballs)
-  description: An MRE snack component. Contains a light snack in case you weren't feeling terribly hungry. This one is meatballs.
+  name: MRE 组件（肉丸）
+  description: MRE 零食组件。内含一份清淡零食，供你不太饿时食用。这一份是肉丸。
   components:
   - type: SpawnItemsOnUse
     items:
     - id: CMMREFoodMeatballs
-    
+
 - type: entity
   parent: CMMRESnackComponentBase
   id: RMCMREComponentMeatzels
-  name: MRE component (meatzels)
-  description: An MRE snack component. Contains a light snack in case you weren't feeling terribly hungry. This one is.. meatzels ?
+  name: MRE组件（肉味椒盐卷饼）
+  description: MRE零食组件。内含一份清淡零食，以防你当时并不太饿。这个是……肉味椒盐卷饼？
   components:
   - type: SpawnItemsOnUse
     items:
@@ -41,8 +41,8 @@
 - type: entity
   parent: CMMRESnackComponentBase
   id: CMMREComponentPretzels
-  name: MRE component (pretzels)
-  description: An MRE snack component. Contains a light snack in case you weren't feeling terribly hungry. This one is pretzels.
+  name: MRE组件（椒盐卷饼）
+  description: 一种MRE零食组件。内含一份小零食，供你不太饿时食用。这一份是椒盐卷饼。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -51,8 +51,8 @@
 - type: entity
   parent: CMMRESnackComponentBase
   id: CMMREComponentPeanuts
-  name: MRE component (peanuts)
-  description: An MRE snack component. Contains a light snack in case you weren't feeling terribly hungry. This one is peanuts.
+  name: MRE 组件（花生）
+  description: MRE 零食组件。内含一份小零食，以防你不太饿。这份是花生。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -61,8 +61,8 @@
 - type: entity
   parent: CMMRESnackComponentBase
   id: CMMREComponentSushi
-  name: MRE component (sushi)
-  description: An MRE snack component. Contains a light snack in case you weren't feeling terribly hungry. This one is sushi.
+  name: MRE 组件（寿司）
+  description: 一个MRE零食组件。内含一份小零食，以防你不太饿。这一份是寿司。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -81,16 +81,16 @@
     solution:
       maxVol: 3
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 4
-        - ReagentId: TableSalt
-          Quantity: 2
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: TableSalt
+        Quantity: 2
 
 - type: entity
   parent: CMMREFoodSnack
   id: CMMREFoodBiscuit
-  name: biscuit
-  description: The contents of a Marine Standard issue MRE. This one is a biscuit.
+  name: 饼干
+  description: 海军陆战队标准配发单兵口粮的内容物。这个是饼干。
   components:
   - type: Sprite
     state: biscuit
@@ -101,8 +101,8 @@
 - type: entity
   parent: CMMREFoodSnack
   id: CMMREFoodMeatballs
-  name: meatballs
-  description: The contents of a Marine Standard issue MRE. This one is meatballs.
+  name: 肉丸
+  description: 海军陆战队标准配发的即食口粮内含物。这一份是肉丸。
   components:
   - type: Sprite
     state: meatballs
@@ -113,8 +113,8 @@
 - type: entity
   parent: CMMREFoodSnack
   id: RMCMREFoodMeatzels
-  name: meatzels
-  description: The contents of a Marine Standard issue MRE. This one is.. meatzels ?
+  name: 肉味脆饼
+  description: 海军陆战队标准配发的即食口粮的内容物。这一份是……肉味脆饼？
   components:
   - type: Sprite
     state: meatzels
@@ -125,8 +125,8 @@
 - type: entity
   parent: CMMREFoodSnack
   id: CMMREFoodPretzels
-  name: pretzels
-  description: The contents of a Marine Standard issue MRE. This one is pretzels.
+  name: 椒盐脆饼
+  description: 海军陆战队标准配发即食口粮的内容物。这一份是椒盐脆饼。
   components:
   - type: Sprite
     state: pretzels
@@ -137,8 +137,8 @@
 - type: entity
   parent: CMMREFoodSnack
   id: CMMREFoodPeanuts
-  name: peanuts
-  description: The contents of a Marine Standard issue MRE. This one is peanuts.
+  name: 花生
+  description: 海军陆战队标准配发即食口粮的内容。这一份是花生。
   components:
   - type: Sprite
     state: peanuts
@@ -149,8 +149,8 @@
 - type: entity
   parent: CMMREFoodSnack
   id: CMMREFoodSushi
-  name: sushi
-  description: The contents of a Marine Standard issue MRE. This one is sushi.
+  name: 寿司
+  description: 海军陆战队标准配发即食口粮的内容。这一份是寿司。
   components:
   - type: Sprite
     state: sushi
@@ -162,24 +162,24 @@
 - type: flavor
   id: Biscuit
   flavorType: Complex
-  description: like biscuits
+  description: 像饼干
 
 - type: flavor
   id: Meatballs
   flavorType: Complex
-  description: like meatballs
+  description: 喜欢肉丸
 
 - type: flavor
   id: Pretzels
   flavorType: Complex
-  description: like pretzels
+  description: 像椒盐卷饼
 
 - type: flavor
   id: Peanuts
   flavorType: Complex
-  description: like peanuts
+  description: 喜欢花生
 
 - type: flavor
   id: Sushi
   flavorType: Complex
-  description: like sushi
+  description: 喜欢寿司

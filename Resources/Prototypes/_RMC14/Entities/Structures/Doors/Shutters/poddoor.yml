@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCShutterBaseIndestructible
   id: RMCPodDoorIndestructible
-  name: podlock
-  description: That looks like it doesn't open easily.
+  name: 挂锁
+  description: 看起来不太容易打开。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Doors/Shutters/poddoor.rsi
@@ -12,8 +12,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49" # don't want this colliding with walls or they won't close
         density: 100
         mask:
@@ -34,7 +33,7 @@
     resistance: 8
   - type: ContainerFill
     containers:
-      board: [ DoorElectronics ]
+      board: [DoorElectronics]
   #- type: Construction
   #  graph: BlastDoor
   #  node: blastdoor
@@ -49,8 +48,8 @@
   parent: RMCShutterBaseIndestructible
   id: RMCPodDoorNonOccluderIndestructible
   abstract: true
-  name: podlock
-  description: That looks like it doesn't open easily.
+  name: 挂锁
+  description: 这看起来不容易打开。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Doors/Shutters/poddoor.rsi
@@ -60,8 +59,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49" # don't want this colliding with walls or they won't close
         density: 100
         mask:
@@ -81,7 +79,7 @@
     resistance: 8
   - type: ContainerFill
     containers:
-      board: [ DoorElectronics ]
+      board: [DoorElectronics]
   #- type: Construction
   #  graph: BlastDoor
   #  node: blastdoor
@@ -96,7 +94,7 @@
   - RMCPodDoorIndestructible
   - RMCShutterBase
   id: RMCPodDoor
-  description: That looks like it doesn't open easily. Maybe look for a button or use a breaching charge?
+  description: 那看起来不太容易打开。也许找找按钮，或者用破门炸药？
   components:
   - type: VehicleSmashable
     smashSound:
@@ -164,8 +162,8 @@
 - type: entity
   parent: RMCPodDoorIndestructible
   id: RMCPodDoorAlmayerContainmentIndestructible
-  name: cell wall
-  description: A metal wall used to separate rooms and make up the ship.
+  name: 舱壁
+  description: 用于分隔舱室并构成船体的金属壁。
   suffix: Indestructible
   components:
   - type: Sprite
@@ -188,7 +186,7 @@
 - type: entity
   parent: RMCPodDoorIndestructible
   id: RMCPodDoorHybrisaIndestructibleUltra
-  description: A heavily reinforced metal-alloy door, designed to be virtually indestructible—nothing can penetrate its defenses.
+  description: 一扇经过重度加固的金属合金门，设计得几乎坚不可摧——任何东西都无法穿透它的防御。
   suffix: Indestructible
   components:
   - type: Sprite
@@ -206,7 +204,7 @@
 - type: entity
   parent: RMCPodDoorHybrisaIndestructibleUltra
   id: RMCPodDoorHybrisaIndestructibleUltraOpen
-  description: A heavily reinforced metal-alloy door, designed to be virtually indestructible—nothing can penetrate its defenses.
+  description: 一扇经过重度加固的金属合金门，设计得几乎坚不可摧——任何东西都无法突破它的防御。
   suffix: Indestructible, Open
   components:
   - type: Door
@@ -223,7 +221,7 @@
 - type: entity
   parent: RMCPodDoorAlmayer
   id: RMCPodDoorAlmayerLocked
-  description: That looks like it doesn't open easily. Maybe look for a button or use a breaching charge?
+  description: 那看起来不容易打开。也许找找按钮，或者使用破门炸药？
   suffix: Locked
   components:
   - type: Door

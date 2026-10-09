@@ -1,10 +1,10 @@
-﻿- type: entity
+- type: entity
   id: Acidifier
-  name: acid
-  description: Melts you into a puddle of yuck!
+  name: 酸液 | acid
+  description: 把你融化成一滩恶心的黏液！ | Melts you into a puddle of yuck!
   components:
   - type: Transform
-    anchored: True
+    anchored: true
   - type: InteractionOutline
   - type: Physics
     bodyType: Static
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       portalFixture:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.48"
         mask:
         - FullTileMask

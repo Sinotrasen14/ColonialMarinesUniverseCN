@@ -131,15 +131,15 @@
   - type: Sprite
     sprite: _CM13/Mobs/Xenos/Warrior/bulwark_warrior.rsi
     layers:
-    - map: [ "enum.XenoVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base"]
       state: alive
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
+    - map: ["enum.RMCDamageVisualLayers.Base"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
+    - map: ["enum.XenoInhandVisualLayers.Left"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
+    - map: ["enum.XenoInhandVisualLayers.Right"]
       visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
+    - map: ["enum.RMCShieldVisuals.Base"]
       sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
   - type: Xeno
@@ -168,8 +168,8 @@
 - type: entity
   parent: RMCXenoCarrierBase
   id: CMXenoReaper
-  name: Reaper
-  description: A xeno support beast that harvests fallen flesh into resin.
+  name: 收割者 | Reaper
+  description: 一种异形支援兽，能将倒下的血肉收割转化为树脂。 | A xeno support beast that harvests fallen flesh into resin.
   components:
   - type: Sprite
     sprite: _CM13/Mobs/Xenos/Reaper/reaper.rsi

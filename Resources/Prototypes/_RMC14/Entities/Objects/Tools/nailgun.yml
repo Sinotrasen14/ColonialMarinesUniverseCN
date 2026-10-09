@@ -1,17 +1,17 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
-  name: compact nailgun
+  name: 紧凑型钉枪
   id: RMCNailgunCompact
-  description: A carpentry tool, used to drive nails into tough surfaces. Cannot fire nails offensively due to a lack of a gas seal around the nail, meaning it cannot build up the pressure to fire.
+  description: 一种木工工具，用于将钉子钉入坚硬表面。由于钉子周围缺少气体密封，它无法以攻击方式发射钉子，这意味着它无法积聚发射所需的压力。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/nailgun_compact.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-4
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/nailgun_compact.rsi
     slots:
@@ -28,7 +28,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 杂志
         startingItem: RMCMagazineSMGNailgun
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -77,9 +77,9 @@
 
 - type: entity
   parent: RMCNailgunCompact
-  name: tactical compact nailgun
+  name: 战术紧凑型钉枪
   id: RMCNailgunTactical
-  description: A carpentry tool, used to drive nails into tough surfaces. This one is military grade, it's olive drab and tacticool. Cannot fire nails as a projectile.
+  description: 一种木工工具，用于将钉子钉入坚硬的表面。这把是军用级，橄榄绿且战术风十足。不能将钉子作为投射物发射。
   suffix: Filled
   components:
   - type: Sprite

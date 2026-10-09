@@ -7,8 +7,8 @@
   - RMCXenoCommendationReceiver
   - RMCXenoMobCollision
   id: RMCXenoRavagerBase
-  name: Ravager
-  description: A huge, nasty red alien with enormous scythed claws.
+  name: 蹂躏者 | Ravager
+  description: 一只巨大、凶恶的红色外星生物，长着巨大的镰刀状利爪。 | A huge, nasty red alien with enormous scythed claws.
   abstract: true
   components:
   - type: GuideHelp
@@ -19,16 +19,16 @@
   - type: Sprite
     sprite: CMU14/Mobs/Xenos/Ravager/ravager.rsi # AU14-Edit
     layers:
-    - map: [ "enum.XenoVisualLayers.Base", "enum.XenoShardVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base", "enum.XenoShardVisualLayers.Base"]
       state: alive
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
+    - map: ["enum.RMCDamageVisualLayers.Base"]
       visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
+    - map: ["enum.RMCShieldVisuals.Base"]
       sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
+    - map: ["enum.XenoInhandVisualLayers.Left"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
+    - map: ["enum.XenoInhandVisualLayers.Right"]
       visible: false
   - type: MobState
     allowedStates:
@@ -109,8 +109,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 185
         mask:
@@ -120,8 +119,7 @@
         layer:
         - MobLayer
       fix2:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.50
         density: 185
         layer:

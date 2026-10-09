@@ -38,8 +38,8 @@
       Heart: OrganAnimalHeart
       Kidneys: OrganAnimalKidneys
     relationships:
-      Torso: [ Legs, Lungs, Stomach, Liver, Heart, Kidneys ]
-      Legs: [ Feet ]
+      Torso: [Legs, Lungs, Stomach, Liver, Heart, Kidneys]
+      Legs: [Feet]
   - type: Climbing
   - type: RMCRevivable
   - type: RMCMedicalExamine
@@ -49,7 +49,7 @@
   - type: CrashLandable
   - type: Woundable
   - type: Damageable
-    damageModifierSet: null
+    damageModifierSet:
   - type: Injurable
     damageContainer: Biological
     healthBarThreshold: 2 # some of these mobs literally only have 10 hit points
@@ -102,7 +102,7 @@
           Thirsty: 0.9
           Parched: 0.72 # Historical 0.9 thirsty and 0.8 parched modifiers stacked.
   - type: FixedIdentity
-    name: rmc-host
+    name: rmc主机 | rmc-host
     whitelist:
       components:
       - Xeno
@@ -110,7 +110,7 @@
 - type: entity
   parent: [RMCSimpleMob, BaseSlicingRefinable]
   id: RMCRodent # Required to preserve upstream mouse behavior for rodent children.
-  name: Abstract rodent
+  name: 抽象啮齿动物 | Abstract rodent
   abstract: true
   suffix: CM
   components:
@@ -127,8 +127,8 @@
       Heart: OrganAnimalHeart
       Kidneys: OrganAnimalKidneys
     relationships:
-      Torso: [ Legs, Lungs, Stomach, Liver, Heart, Kidneys ]
-      Legs: [ Feet ]
+      Torso: [Legs, Lungs, Stomach, Liver, Heart, Kidneys]
+      Legs: [Feet]
   - type: Speech
     speechSounds: Squeak
     speechVerb: SmallMob
@@ -140,7 +140,7 @@
       10: Dead
   - type: NpcFactionMember
     factions:
-      - Mouse
+    - Mouse
   - type: HTN
     rootTask:
       task: MouseCompound
@@ -148,8 +148,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.2
         density: 100
         mask:
@@ -174,8 +173,8 @@
     id: food
     solution:
       reagents:
-        - ReagentId: UncookedAnimalProteins
-          Quantity: 3
+      - ReagentId: UncookedAnimalProteins
+        Quantity: 3
   - type: Butcherable
     spawned:
     - id: FoodMeatRat
@@ -227,7 +226,7 @@
 - type: entity
   id: RMCSmallHost
   parent: [RMCSimpleMob, StripableInventoryBase] # TODO: Consider BaseOrganic once this is safer to change.
-  name: abstract small host
+  name: 抽象小型主机 | abstract small host
   abstract: true
   components:
   - type: CombatMode
@@ -243,8 +242,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 80
         mask:
@@ -258,23 +256,23 @@
     - map: ["enum.DamageStateVisualLayers.Base"]
       sprite: _RMC14/Mobs/Animals/monkeys/monkey.rsi
       state: monkey
-    - map: [ "jumpsuit" ]
-    - map: [ "enum.HumanoidVisualLayers.Handcuffs" ]
+    - map: ["jumpsuit"]
+    - map: ["enum.HumanoidVisualLayers.Handcuffs"]
       color: "#ffffff"
       sprite: Objects/Misc/handcuffs.rsi
       state: body-overlay-2
       visible: false
-    - map: [ "ears" ]
-    - map: [ "id" ]
-    - map: [ "outerClothing" ]
-    - map: [ "mask" ]
-    - map: [ "head" ]
-    - map: [ "clownedon" ]
+    - map: ["ears"]
+    - map: ["id"]
+    - map: ["outerClothing"]
+    - map: ["mask"]
+    - map: ["head"]
+    - map: ["clownedon"]
       sprite: "Effects/creampie.rsi"
       state: "creampie_human"
       visible: false
-    - map: [ "acided" ]
-    - map: [ "hooked" ]
+    - map: ["acided"]
+    - map: ["hooked"]
       sprite: "_RMC14/Effects/xeno_spray_acid.rsi"
       state: hooked
       visible: false
@@ -296,8 +294,8 @@
     visuals:
       enum.CreamPiedVisuals.Creamed:
         clownedon:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
       enum.UserAcidedVisuals.Acided:
         acided:
           None:
@@ -324,8 +322,8 @@
       Heart: OrganAnimalHeart
       Kidneys: OrganAnimalKidneys
     relationships:
-      Torso: [ Hands, Legs, Lungs, Stomach, Liver, Heart, Kidneys ]
-      Legs: [ Feet ]
+      Torso: [Hands, Legs, Lungs, Stomach, Liver, Heart, Kidneys]
+      Legs: [Feet]
   - type: CreamPied
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
@@ -355,7 +353,7 @@
   - type: FactionException
   - type: NpcFactionMember
     factions:
-      - Passive
+    - Passive
   - type: HTN
     rootTask:
       task: SimpleHostileCompound

@@ -10,10 +10,10 @@
     - RMCAttachmentRail
 
 - type: entity
-  parent: [ RMCRailAttachmentBase, RMCAttachableToggleableBase ]
+  parent: [RMCRailAttachmentBase, RMCAttachableToggleableBase]
   id: RMCAttachmentRailFlashlight
-  name: rail flashlight
-  description: A flashlight, for rails, on guns. Can be toggled on and off. A better light source than standard M3 pattern armor lights.
+  name: 导轨手电
+  description: 一种用于枪械导轨的手电筒。可以开关。比标准M3型装甲灯更好的光源。
   components:
   - type: ItemTogglePointLight
   - type: ToggleableVisuals
@@ -61,7 +61,7 @@
     - state: flashlight-on
       shader: unshaded
       visible: false
-      map: [ "light" ]
+      map: ["light"]
   - type: Item
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rail.rsi
   - type: Appearance
@@ -91,8 +91,8 @@
 - type: entity
   parent: RMCRailAttachmentBase
   id: RMCAttachmentMagneticHarness
-  name: magnetic harness
-  description: A magnetically attached harness kit that attaches to the rail mount of a weapon. When dropped, the weapon will sling to any set of Marine armor.
+  name: 磁性挂具
+  description: 一种磁性挂具套件，可安装到武器的导轨安装座上。被丢弃时，武器会挂到任意一套陆战队护甲上。
   components:
   - type: Sprite
     state: magnetic
@@ -109,8 +109,8 @@
 - type: entity
   parent: RMCAttachmentMagneticHarness
   id: RMCAttachmentTwoPointSling # PVE
-  name: two-point sling
-  description: A traditional strip of toughened nylon fabric with clips on either end for attaching to suitable mounting points on most longarms in the UN armed forces arsenals.
+  name: 两点式枪背带
+  description: 一条传统样式的强化尼龙织带，两端带有卡扣，用于连接到联合国武装部队军械库中大多数长枪上合适的安装点。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rifle_sling/classic-desert-jungle.rsi
@@ -138,8 +138,8 @@
 - type: entity
   parent: RMCRailAttachmentBase
   id: RMCAttachmentS5RedDotSight # reddot
-  name: S5 red-dot sight
-  description: An AEGIS S5 red-dot sight. A zero-magnification optic that offers faster, and more accurate target acquisition.
+  name: S5红点瞄准镜
+  description: AEGIS S5红点瞄准镜。一款零倍率光学瞄具，能更快、更精准地捕获目标。
   components:
   - type: Sprite
     state: reddot
@@ -162,8 +162,8 @@
 - type: entity
   parent: RMCRailAttachmentBase
   id: RMCAttachmentS5MicroRedDotSight
-  name: S5-Micro dot sight
-  description: A lightweight, low-profile dot optic designed for rapid target acquisition with minimal weight penalty. Optimized for submachine guns and sidearms, it's ideal for close-quarters combat where speed and agility matter most.
+  name: S5-Micro微型红点瞄准镜
+  description: 轻量、低矮外形红点瞄准镜，旨在实现快速目标捕获，并将重量负担降至最低。针对冲锋枪和手枪优化，非常适合速度与敏捷最为关键的近距离战斗。
   components:
   - type: Sprite
     state: reddot_small
@@ -184,8 +184,8 @@
 - type: entity
   parent: RMCRailAttachmentBase
   id: RMCAttachmentS6ReflexSight # reflex
-  name: S6 reflex sight
-  description: An AEGIS S6 reflex sight. A zero-magnification alternative to iron sights with a more open optic window when compared to the S5 red-dot. Helps to reduce scatter during automated fire.
+  name: S6反射式瞄准镜
+  description: 一款 AEGIS S6 反射式瞄准镜。零倍率，可替代机械瞄具，与 S5 红点相比拥有更开阔的镜窗。有助于减少自动射击时的散布。
   components:
   - type: Sprite
     state: reflex
@@ -209,7 +209,7 @@
 
 - type: entity
   abstract: true
-  parent: [ RMCRailAttachmentBase, RMCAttachableToggleableBase ]
+  parent: [RMCRailAttachmentBase, RMCAttachableToggleableBase]
   id: RMCAttachmentScopeBase
   components:
   - type: AttachableToggleable
@@ -242,8 +242,8 @@
 - type: entity
   parent: RMCAttachmentScopeBase
   id: RMCAttachmentS84xTelescopicScope
-  name: S8 4x telescopic scope
-  description: An AEGIS S8 telescopic eye piece. Fixed at 4x zoom.
+  name: S8 4倍伸缩瞄准镜
+  description: AEGIS S8 伸缩式目镜。固定为4倍变焦。
   components:
   - type: Sprite
     state: sniperscope
@@ -289,8 +289,8 @@
 - type: entity
   parent: RMCAttachmentS84xTelescopicScope
   id: RMCAttachmentSlavicScope
-  name: 4x telescopic scope
-  description: Oppa! How did you get this off glorious Stalin weapon? Blyat, put back on and do job tovarish. Yankee is not shoot self no?
+  name: 4倍瞄准镜
+  description: 哎呀！你怎么把这个从光荣的斯大林武器上拆下来的？妈的，装回去，干活，同志。美国佬不会朝自己开枪，对吧？
   components:
   - type: Sprite
     state: slavicscope
@@ -310,8 +310,8 @@
 - type: entity
   parent: RMCAttachmentScopeBase
   id: RMCAttachmentS42xTelescopicMiniscope # mini
-  name: S4 2x telescopic mini-scope
-  description: An AEGIS S4 telescoping eye piece. Fixed at a modest 2x zoom.
+  name: S4 2倍伸缩式微型瞄准镜
+  description: AEGIS S4 伸缩式目镜。固定为适中的 2 倍变焦。
   components:
   - type: Sprite
     state: miniscope
@@ -360,8 +360,8 @@
 - type: entity
   parent: RMCAttachmentS42xTelescopicMiniscope
   id: RMCAttachmentFP9000Scope # mini
-  name: FP9000 2x telescopic mini-scope
-  description: Scope for the FN FP9000 SMG. Fixed at a modest 2x zoom.
+  name: FP9000 2倍伸缩式迷你瞄准镜
+  description: FN FP9000 冲锋枪的瞄准镜。固定为适中的 2 倍放大倍率。
   components:
   - type: Sprite
     state: miniscope_fp9000
@@ -382,8 +382,8 @@
 - type: entity
   parent: RMCAttachmentS42xTelescopicMiniscope
   id: RMCAttachmentHuntingScope
-  name: 2x hunting mini-scope
-  description: This civilian-grade scope is a common sight on hunting rifles due to its cheap price and great optics. Fixed at a modest 2x zoom.
+  name: 2倍狩猎迷你瞄准镜
+  description: 这款民用级瞄准镜因其价格低廉且光学性能出色，常见于狩猎步枪上。固定为适中的2倍变焦。
   components:
   - type: Sprite
     state: huntingscope
@@ -395,8 +395,8 @@
 - type: entity
   parent: RMCAttachmentS42xTelescopicMiniscope
   id: RMCAttachmentS42xAdvancedTelescopicMiniscope
-  name: WeYa S4 2x advanced telescopic mini-scope
-  description: An AEGIS S4 telescoping eye piece, custom-tuned by WeYa scientists to be as ergonomic as possible.
+  name: WeYa S4 2倍高级伸缩迷你瞄准镜
+  description: AEGIS S4 伸缩式目镜，由 WeYa 科学家定制调校，尽可能符合人体工学。
   components:
   - type: Sprite
     state: miniscope-nsg23
@@ -422,8 +422,8 @@
 - type: entity
   parent: RMCAttachmentS84xTelescopicScope
   id: RMCAttachmentMiniscopeHunting
-  name: 4x hunting mini-scope
-  description: This civilian-grade scope is a common sight on hunting rifles due to its cheap price and great optics. Fixed at a modest 2x zoom.
+  name: 4倍狩猎迷你瞄准镜
+  description: 这款民用级瞄准镜因其低廉的价格和出色的光学性能，在狩猎步枪上十分常见。固定为适中的2倍变焦。
   components:
   - type: Sprite
     state: huntingscope
@@ -443,8 +443,8 @@
 - type: entity
   parent: RMCAttachmentS42xTelescopicMiniscope
   id: RMCAttachmentB8SmartScope
-  name: B8 smart-scope
-  description: An experimental B8 Smart-Scope. Based on the technologies used in the Smart Gun by AEGIS, this sight has integrated IFF systems. It can only attach to the M4SPR Battle Rifle and the M44 Combat Revolver.
+  name: B8智能瞄准镜
+  description: 实验性的B8智能瞄准镜。基于AEGIS的智能枪所使用的技术，该瞄具集成了敌我识别系统。它只能安装在M4SPR战斗步枪和M44战斗左轮手枪上。
   components:
   - type: Sprite
     state: iffbarrel
@@ -473,8 +473,8 @@
 - type: entity
   parent: RMCAttachmentScopeBase
   id: RMCM96SIntegratedScope
-  name: M96S integrated scope
-  description: This isn't supposed to come off the gun. How did you get it?
+  name: M96S 集成式瞄准镜
+  description: 这东西本不该从枪上拆下来。你是怎么拿到它的？
   components:
   - type: Sprite
     state: m96s-scope
@@ -512,12 +512,12 @@
       accuracyAddMult: -0.05
   - type: Scope
     zoomLevels:
-    - name: 4x
+    - name: 4倍
       zoom: 1.6
       offset: 14
       allowMovement: false
       doAfter: 0
-    - name: 2x
+    - name: 2倍
       zoom: 1
       offset: 14
       allowMovement: true
@@ -526,8 +526,8 @@
 - type: entity
   parent: RMCM96SIntegratedScope
   id: RMCXM43E1IntegratedScope
-  name: XM43E1 integrated scope
-  description: This isn't supposed to come off the gun. How did you get it?
+  name: XM43E1 集成瞄准镜
+  description: 这东西本不该从枪上拆下来。你是怎么弄到手的？
   components:
   - type: Sprite
     state: xm43e1_scope
@@ -545,8 +545,8 @@
 - type: entity
   parent: RMCM96SIntegratedScope
   id: RMCType88IntegratedScope
-  name: Type 88 integrated scope
-  description: This isn't supposed to come off the gun. How did you get it?
+  name: 88式一体化瞄准镜
+  description: 这东西本来不该从枪上取下来的。你是怎么弄到手的？
   components:
   - type: Sprite
     state: type88_scope
@@ -564,8 +564,8 @@
 - type: entity
   parent: RMCM96SIntegratedScope
   id: RMCL112IntegratedScope
-  name: L112O1 integrated scope
-  description: Blimey! I don't think that bit was supposed to come off the rifle...
+  name: L112O1 一体式瞄准镜
+  description: 天哪！我觉得那个零件本来不该从步枪上掉下来的……
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_rail.rsi
@@ -585,8 +585,8 @@
 - type: entity
   parent: RMCAttachmentScopeBase
   id: RMCAttachmentXS-9
-  name: XS-9 targeting relay
-  description: While still in development, the XS-9 Targeting Relay has many features -- most of them disabled for the field testing -- functions slightly better than a standard scope.
+  name: XS-9 瞄准中继器
+  description: 尽管仍在开发中，XS-9 瞄准中继器拥有许多功能，其中大部分在实地测试中被禁用，且其运作效果略优于标准瞄准镜。
   components:
   - type: Sprite
     state: d_boomslang-scope
@@ -641,8 +641,8 @@
 - type: entity
   parent: RMCAttachmentScopeBase
   id: RMCAttachmentSASOS
-  name: L91O1 SASOS
-  description: The TSE-produced Small Arms Smart Optical Sight, or SASOS, is an experimental, next-gen IFF-enabling optic designed for use as part of the L91 Support Weapon System.
+  name: L91O1轻武器智能光学瞄准镜
+  description: 由TSE生产的轻武器智能光学瞄准镜（SASOS）是一种实验性的、具备下一代敌我识别能力的光学瞄准镜，设计用作L91支援武器系统的一部分。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_rail.rsi
@@ -688,8 +688,8 @@
 - type: entity
   parent: RMCAttachmentS42xTelescopicMiniscope
   id: RMCAttachmentScopeMGLIntegrated
-  name: L989A2 collimator sight assembly
-  description: Blimey... I think that's supposed to be stuck on...
+  name: L989A2 准直瞄准具组件
+  description: 天哪……我觉得那个应该是粘在上面的……
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rail.rsi
@@ -721,8 +721,8 @@
 - type: entity
   parent: RMCAttachmentS42xTelescopicMiniscope
   id: RMCAttachmentL89Scope
-  name: L89 integrated optic
-  description: The rifle's about as useful as you are now, you wanker. Put it back on.
+  name: L89整合式光学瞄准镜
+  description: 这步枪现在和你一样没用，混蛋。把它装回去。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rmc_rail.rsi

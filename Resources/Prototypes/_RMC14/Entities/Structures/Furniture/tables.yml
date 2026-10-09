@@ -2,8 +2,8 @@
 - type: entity
   parent: TableBase
   id: CMTable
-  name: table
-  description: A square metal surface resting on four legs. Useful to put stuff on.
+  name: 桌子
+  description: 一个由四条腿支撑的方形金属表面。可用来放置物品。
   components:
   - type: ResinClearable # CMU14
   - type: CMUReconFurniture
@@ -18,12 +18,11 @@
     sprite: _RMC14/Structures/Furniture/Tables/standard.rsi
     state: full
   - type: Damageable
-    damageModifierSet: null
+    damageModifierSet:
   - type: Injurable
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -32,7 +31,7 @@
           params:
             volume: -4
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Construction
     graph: RMCTable
     node: Tan
@@ -64,8 +63,8 @@
 - type: entity
   parent: BaseStructure
   id: RMCLargeTable
-  name: table
-  description: A square metal surface resting on four legs. Useful to put stuff on.
+  name: 桌子
+  description: 一个由四条腿支撑的方形金属台面。可以用来放置物品。
   abstract: true
   components:
   - type: Corrodible
@@ -80,8 +79,7 @@
     state: full
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -90,7 +88,7 @@
           params:
             volume: -4
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DamageMultiplierFlags
     flags: Breaching
   - type: XenoLeapDestroyOnPass
@@ -105,8 +103,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,1.45,0.45"
         density: 55
         mask:
@@ -131,8 +128,8 @@
 - type: entity
   parent: CMTable
   id: CMTableReinforced
-  name: reinforced table
-  description: A square metal surface resting on four legs. This one has side panels, making it useful as a desk.
+  name: 加固桌
+  description: 一个由四条腿支撑的方形金属台面。它带有侧板，因此可用作书桌。
   components:
   - type: CMUReconFurniture
     material: Desk
@@ -158,7 +155,7 @@
 - type: entity
   parent: CMTableReinforced
   id: CMTableReinforcedRequisition
-  description: A square metal surface resting on its fat metal bottom.
+  description: 一个方形金属表面，置于其厚实的金属底部之上。
   components:
   - type: CMUReconFurniture
     material: Counter
@@ -186,8 +183,8 @@
 - type: entity
   parent: CMTableReinforced
   id: CMTableReinforcedBlack
-  name: black table
-  description: A sleek black metal table. Its legs are securely bolted to the floor.
+  name: 黑色桌子
+  description: 一张光滑的黑色金属桌子。它的桌腿用螺栓牢牢固定在地板上。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/black.rsi
@@ -198,8 +195,8 @@
 - type: entity
   parent: CMTable
   id: CMTableWooden
-  name: wooden table
-  description: A square wood surface resting on four legs. Useful to put stuff on.
+  name: 木桌
+  description: 一个由四条腿支撑的方形木质台面。可以用来放东西。
   components:
   - type: CMUReconFurniture
     material: WoodTable
@@ -221,8 +218,8 @@
 - type: entity
   parent: CMTableWooden
   id: CMTableWoodenPoor
-  name: poor wooden table
-  description: A semi-poorly constructed wood surface resting on four legs. Useful to put stuff on.
+  name: 简陋的木桌
+  description: 一张做工较为粗糙的木质台面，由四条腿支撑。可以用来放东西。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/poor_wood.rsi
@@ -236,8 +233,8 @@
 - type: entity
   parent: CMTableWooden
   id: CMTableWoodenFancy
-  name: fancy wooden table
-  description: A nicely crafted mahogany wood surface resting on four legs. Useful to put stuff on.
+  name: 精致的木桌
+  description: 做工精美的红木桌面，由四条腿支撑。很适合用来放东西。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/fancy_wood.rsi
@@ -251,8 +248,8 @@
 - type: entity
   parent: CMTableWooden
   id: CMTableWoodenGambling
-  name: gambling table
-  description: A curved wood and carpet surface resting on four legs. Used for gambling games.
+  name: 赌桌
+  description: 一个由四条腿支撑的弧形木质和地毯台面，用于赌博游戏。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/gambling.rsi
@@ -266,8 +263,8 @@
 - type: entity
   parent: CMTable
   id: CMTableAlmayer
-  name: table
-  description: A square metal surface resting on four legs. Useful to put stuff on. Can be flipped in emergencies to act as cover.
+  name: 桌子
+  description: 一个架在四条腿上的方形金属面。适合放东西。紧急情况下可以翻过来充当掩体。
   suffix: Almayer
   components:
   - type: Sprite
@@ -282,8 +279,8 @@
 - type: entity
   parent: CMTableReinforced
   id: RMCTablePrison
-  name: table
-  description: A square metal surface resting on four legs. This one has side panels, making it useful as a desk, but impossible to flip.
+  name: 桌子
+  description: 一个架在四条腿上的方形金属台面。这个带有侧板，因此可用作书桌，但无法翻转。
   suffix: Prison
   components:
   - type: Sprite
@@ -319,8 +316,8 @@
 - type: entity
   parent: CMTable
   id: RMCTableHunter
-  name: table
-  description: A square metal surface resting on four legs. This one has side panels, making it useful as a desk, but impossible to flip.
+  name: 桌子
+  description: 一个由四条腿支撑的方形金属台面。这张桌子带有侧板，因此可用作书桌，但无法翻转。
   suffix: Hunter
   components:
   - type: CMUReconFurniture
@@ -334,8 +331,8 @@
 - type: entity
   parent: RMCLargeTable
   id: RMCLargeTableBar
-  name: bar table
-  description: A wooden table that has seen better days. There's the stickly sensation of spilled drinks within the cracks of the wood.
+  name: 酒吧桌
+  description: 一张已不复往日光景的木桌。木缝里残留着洒出的饮料，带来黏腻的触感。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/bar.rsi
@@ -346,8 +343,8 @@
   abstract: true
   parent: BaseStructure
   id: RMCTableVariantBase
-  name: table
-  description: A manually placed table variant.
+  name: 表格
+  description: 手动放置的表格变体。
   components:
   - type: CMUReconFurniture
     material: Table
@@ -363,8 +360,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 55
         mask:
@@ -393,7 +389,7 @@
 - type: entity
   parent: RMCTableVariantBase
   id: RMCTableCloth
-  name: cloth-covered table
+  name: 铺着桌布的桌子
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/cloth.rsi
@@ -405,7 +401,7 @@
 - type: entity
   parent: RMCTableVariantBase
   id: RMCTableClothMiddle
-  name: cloth-covered table middle
+  name: 铺着布的桌子中间
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/cloth.rsi
@@ -417,7 +413,7 @@
 - type: entity
   parent: RMCTableVariantBase
   id: RMCTableClothEnd
-  name: cloth-covered table end
+  name: 覆有布料的桌子末端
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/cloth.rsi
@@ -429,7 +425,7 @@
 - type: entity
   parent: RMCTableVariantBase
   id: RMCTableClothThick
-  name: cloth-covered thick table
+  name: 铺布厚桌
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/cloth.rsi
@@ -441,7 +437,7 @@
 - type: entity
   parent: RMCTableVariantBase
   id: RMCTableClothDir
-  name: cloth-covered table corner
+  name: 覆盖布料的桌角
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/cloth.rsi
@@ -453,7 +449,7 @@
 - type: entity
   parent: RMCTableVariantBase
   id: RMCTableClothDir2
-  name: cloth-covered table segment
+  name: 铺布桌段
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/cloth.rsi
@@ -465,7 +461,7 @@
 - type: entity
   parent: RMCTableVariantBase
   id: RMCTableClothDir3
-  name: cloth-covered table junction
+  name: 铺着布的桌子交汇处
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/cloth.rsi
@@ -477,7 +473,7 @@
 - type: entity
   parent: RMCTableVariantBase
   id: RMCTableTOCEast
-  name: tactical operations table east
+  name: 东部战术行动表
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/toc.rsi
@@ -489,7 +485,7 @@
 - type: entity
   parent: RMCTableVariantBase
   id: RMCTableTOCWest
-  name: tactical operations table west
+  name: 西部战术行动表
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Tables/toc.rsi

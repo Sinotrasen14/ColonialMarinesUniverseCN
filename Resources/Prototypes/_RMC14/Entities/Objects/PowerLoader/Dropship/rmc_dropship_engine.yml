@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: RMCDropshipAttachmentBase
   id: RMCDropshipAttachmentEngine
@@ -19,8 +19,8 @@
 - type: entity
   parent: RMCDropshipAttachmentEngine
   id: RMCDropshipAttachmentFuelEnhancer
-  name: fuel enhancer
-  description: A fuel enhancement system for dropships. It improves the thrust produced by the fuel combustion for faster travels. Fits inside the engine attach points. You need a powerloader to lift it.
+  name: 燃料增强器
+  description: 用于运输机的燃料增强系统。它能提高燃料燃烧产生的推力，使航行速度更快。可安装在引擎挂载点内。你需要动力装载机才能将其抬起。
   components:
   - type: Sprite
     layers:
@@ -37,8 +37,8 @@
 - type: entity
   parent: RMCDropshipAttachmentEngine
   id: RMCDropshipAttachmentCoolingSystem
-  name: cooling system
-  description: A cooling system for dropships. It produces additional cooling reducing delays between launch. Fits inside the engine attach points. You need a powerloader to lift it.
+  name: 冷却系统
+  description: 用于空投艇的冷却系统。它能产生额外冷却，缩短发射间隔。可装入引擎挂载点内。你需要动力装载机才能将它抬起。
   components:
   - type: Sprite
     layers:

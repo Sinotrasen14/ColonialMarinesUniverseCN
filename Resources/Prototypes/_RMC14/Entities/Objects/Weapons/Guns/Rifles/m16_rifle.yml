@@ -1,17 +1,17 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: WeaponRifleM16 # TODO: Make the M16 grenadier rifle when impact nades exist
-  name: M16 rifle
-  description: An old, reliable design first adopted by the U.N. military in the 1960s. Something like this belongs in a museum of war history. It is chambered in 5.56x45mm.
+  name: M16步枪
+  description: 一种古老、可靠的设计，最早在20世纪60年代被联合国军队采用。这样的东西应该陈列在战争历史博物馆里。它采用5.56×45毫米口径。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m16.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m16.rsi
   - type: Gun
@@ -48,11 +48,11 @@
     accuracyMultiplierUnwielded: 0.65
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleM16
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_m16_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_m16_unload.ogg
@@ -131,16 +131,16 @@
 - type: entity
   parent: WeaponRifleM16
   id: RMCWeaponRifleM16A5
-  name: M16A5 Rifle
-  description: Modernized version of M16 platform rifle, probably originated from bottomless stockpiles of the United Nations when they switched to more modern rifles. It is chambered in 5.56x45mm.
+  name: M16A5步枪
+  description: M16平台步枪的现代化版本，可能源自联合国换装更现代化步枪时留下的深不见底库存。其口径为5.56×45毫米。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m16a5.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m16a5.rsi
   - type: AttachableHolder
@@ -208,15 +208,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleM16
-  name: "M16 Magazine (5.56x45mm)"
-  description: "The original 20-round 5.56x45mm magazine for use in the M16 series rifles."
+  name: "M16弹匣（5.56×45毫米）"
+  description: "原版20发5.56×45毫米弹匣，用于M16系列步枪。"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleM16
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifleM16
@@ -232,12 +232,12 @@
   - type: Appearance
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsRifle556x45MM
-    
+
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleM16
-  name: cartridge (5.56x45mm)
-  description: "A 5.56x45mm cartridge for the M16 rifle."
+  name: 枪弹（5.56×45毫米）
+  description: "用于M16步枪的5.56×45毫米枪弹。"
   components:
   - type: Tag
     tags:
@@ -249,7 +249,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: BulletRifle556x45mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

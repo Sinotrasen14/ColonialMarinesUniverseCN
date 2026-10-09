@@ -2,8 +2,8 @@
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: CMVendorCassettes
-  name: Rec-Vend
-  description: Contains We-Yu approved recreational items, like Cassette Players and Cards.
+  name: 娱乐售货机
+  description: 包含经We-Yu认可的娱乐物品，如磁带播放器和卡牌。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/cassette_player.rsi
@@ -13,7 +13,7 @@
   - type: CMAutomatedVendor
     hackable: true
     sections:
-    - name: Cassettes
+    - name: 盒式磁带
       entries:
       - id: RMCCassettePlayer
         amount: 50
@@ -25,11 +25,11 @@
         amount: 25
       - id: RMCCassetteTapeCustom
         amount: 30
-    - name: Cards
+    - name: 卡片
       entries:
       - id: RMCPlayingCardDeck
         amount: 10
-    - name: Magazines
+    - name: 杂志
       entries:
       - id: RMCMagazineBootsN160
         amount: 10
@@ -75,7 +75,7 @@
         amount: 10
       - id: RMCMagazineWeYaOrreryN258
         amount: 10
-    - name: Pins
+    - name: 别针
       entries:
       - id: RMCClothingNeckLGBTPin
         amount: 15
@@ -103,7 +103,7 @@
         amount: 15
       - id: RMCClothingNeckGoldAutismPin
         amount: 15
-    - name: Other
+    - name: 其他
       entries:
       - id: RMCSpaceGrunts
         amount: 15

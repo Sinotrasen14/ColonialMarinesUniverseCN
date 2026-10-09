@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseStructure
   id: RMCPropPowerPort
-  name: mech bay power port
+  name: 机甲舱电源接口
   suffix: Prop
   components:
   - type: Transform
@@ -23,8 +23,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:DoActsBehavior
@@ -41,8 +40,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.45,0.25,0.45"
         mask:
         - MachineMask

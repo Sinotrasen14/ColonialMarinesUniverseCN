@@ -1,8 +1,8 @@
 - type: entity
   parent: [RMCBaseSlideMagazineVisuals, CMWeaponPistolBase]
   id: RMCWeaponPistolMK45
-  name: "MK-45 'high-power' automagnum"
-  description: Originally designed as a replacement for the UNMC's M44 combat revolver, it was rejected at the last minute by a committee, citing its need to be cocked after every loaded magazine to be too cumbersome and antiquated.
+  name: "MK-45“大威力”自动马格南"
+  description: 该武器最初设计用于替代UNMC的M44战斗左轮手枪，但在最后一刻被委员会否决，理由是其每装填一个弹匣后都需要待击，过于繁琐且过时。
   suffix: Filled
   components:
   - type: RMCSelectiveFire
@@ -31,7 +31,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazinePistolMK45
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
@@ -78,8 +78,8 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolMK45
-  name: MK-45 automagnum magazine (.45)
-  description: A pistol magazine.
+  name: MK-45自动马格南弹匣（.45）
+  description: 手枪弹匣。
   components:
   - type: Tag
     tags:
@@ -88,7 +88,7 @@
   - type: Item
     size: Tiny
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgePistolMK45
@@ -103,11 +103,11 @@
       map: ["enum.GunVisualLayers.Mag"]
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistol45
-    
+
 - type: entity
   parent: CMCartridgePistolBase
   id: CMCartridgePistolMK45
-  name: Cartridge (.45 Automagnum)
+  name: 子弹（.45自动马格南）
   components:
   - type: Tag
     tags:
@@ -119,8 +119,8 @@
 - type: entity
   parent: CMBulletBase
   id: CMBulletPistolMK45
-  name: high-powered pistol bullet (.45)
-  categories: [ HideSpawnMenu ]
+  name: 高威力手枪子弹（.45）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

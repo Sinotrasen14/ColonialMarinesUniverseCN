@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaEndeavour
-  name: UNS Endeavour
+  name: UNS奋进号
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_endeavour.rsi
@@ -28,22 +28,22 @@
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourBrief
-  name: Briefing Hall
+  name: 简报厅
 
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourDormitory
-  name: Dormitory
+  name: 宿舍
 
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourCommandDeck
-  name: Command Deck
+  name: 指挥甲板
 
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourMess
-  name: Mess Hall
+  name: 食堂
   components:
   - type: Sprite
     state: food
@@ -51,7 +51,7 @@
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourHypersleepStorage
-  name: Hypersleep Storage
+  name: 超睡眠储藏库
   components:
   - type: Sprite
     state: hypersleep
@@ -59,7 +59,7 @@
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourMaintenance
-  name: Maintenance
+  name: 维护
   components:
   - type: Sprite
     state: engineering
@@ -67,7 +67,7 @@
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourPrep
-  name: Gear Racks
+  name: 齿条
   components:
   - type: Sprite
     state: prep
@@ -75,7 +75,7 @@
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourMedical
-  name: Infirmary
+  name: 医务室
   components:
   - type: Sprite
     state: medical
@@ -83,7 +83,7 @@
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourHangar
-  name: Hangar
+  name: 机库
   components:
   - type: Sprite
     state: hangar
@@ -91,7 +91,7 @@
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourSupply
-  name: Supply Bay
+  name: 补给湾
   components:
   - type: Sprite
     state: cargo
@@ -99,7 +99,7 @@
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourAICore
-  name: ARES AI Core
+  name: ARES 人工智能核心
   components:
   - type: Sprite
     state: ai
@@ -107,12 +107,12 @@
 - type: entity
   parent: RMCAreaEndeavourAICore
   id: RMCAreaEndeavourSyntheticStorage
-  name: Synthetic Storage
+  name: 合成存储
 
 - type: entity
   parent: RMCAreaEndeavour
   id: RMCAreaEndeavourOOB
-  name: Out Of Bounds
+  name: 界外
   components:
   - type: Sprite
     state: oob

@@ -2,7 +2,7 @@
 - type: entity
   parent: StatusEffectBase
   id: StatusEffectClumsyAll
-  name: clumsy
+  name: 笨拙的 | clumsy
   components:
   - type: ClumsyCatchStatusEffect
     failDamage:
@@ -22,12 +22,12 @@
 
 # :o)
 - type: entity
-  parent: [ StatusEffectClumsyAll, MobStatusEffectBase ]
+  parent: [StatusEffectClumsyAll, MobStatusEffectBase]
   id: StatusEffectClumsyClown
 
 # Monkeys are small clowns
 - type: entity
-  parent: [ StatusEffectClumsyAll, MobStatusEffectBase ]
+  parent: [StatusEffectClumsyAll, MobStatusEffectBase]
   id: StatusEffectClumsyMonkey
   components:
   - type: ClumsyCatchStatusEffect
@@ -45,7 +45,7 @@
 
 # Kobolds are naked monkeys
 - type: entity
-  parent: [ StatusEffectClumsyAll, MobStatusEffectBase ]
+  parent: [StatusEffectClumsyAll, MobStatusEffectBase]
   id: StatusEffectClumsyKobold
   components:
   - type: ClumsyCatchStatusEffect
@@ -65,7 +65,7 @@
 
 # A terrible fate
 - type: entity
-  parent: [ StatusEffectClumsyAll, MobStatusEffectDebuff ]
+  parent: [StatusEffectClumsyAll, MobStatusEffectDebuff]
   id: StatusEffectClumsyCluwne
   components:
   - type: ClumsyCatchStatusEffect
@@ -87,7 +87,7 @@
 
 # A terribler fate
 - type: entity
-  parent: [ StatusEffectClumsyAll, MobStatusEffectDebuff ]
+  parent: [StatusEffectClumsyAll, MobStatusEffectDebuff]
   id: StatusEffectClumsyGuaranteed
   components:
   - type: ClumsyCatchStatusEffect
@@ -103,7 +103,7 @@
 
 # =^_^= nya!
 - type: entity
-  parent: [ StatusEffectClumsyAll, MobStatusEffectDebuff ]
+  parent: [StatusEffectClumsyAll, MobStatusEffectDebuff]
   id: StatusEffectClumsyMaid
   components:
   - type: ClumsyCatchStatusEffect

@@ -1,14 +1,14 @@
 - type: entity
-  parent: [ RMCBaseWeaponShotgun, RMCBaseAttachableHolder ]
-  name: Type 23 riot shotgun
+  parent: [RMCBaseWeaponShotgun, RMCBaseAttachableHolder]
+  name: 23型防暴霰弹枪
   id: RMCWeaponShotgunType23
-  description: As UPP soldiers frequently reported being outmatched by enemy combatants, UPP High Command commissioned a large amount of Type 23 shotguns, originally used for quelling defector colony riots. This slow semi-automatic shotgun chambers 8 gauge, and packs a mean punch.
+  description: 由于UPP士兵经常报告称不敌敌方战斗人员，UPP最高指挥部订购了大量23型霰弹枪，这些枪最初用于镇压叛逃者殖民地的暴乱。这款射速缓慢的半自动霰弹枪装填8号口径弹药，威力极其凶猛。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/type23.rsi
     layers:
     - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/type23.rsi
   - type: Gun
@@ -81,16 +81,16 @@
 
 
 - type: entity
-  name: Type 23 tactical shotgun
+  name: 23型战术霰弹枪
   parent: RMCWeaponShotgunType23
   id: CMUWeaponShotgunType23Tactical
-  description: A Refurbished type 23 in all black. This one seems to fit 18.5 Gauge ammunition too.
+  description: 一把翻新的23型，全黑色。这把似乎也能适配18.5号弹药。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/UPP/type23_tac.rsi
     layers:
     - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: CMU14/Weapons/Guns/UPP/type23_tac.rsi
   - type: BallisticAmmoProvider

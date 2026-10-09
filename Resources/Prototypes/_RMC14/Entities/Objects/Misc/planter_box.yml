@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructure
   id: RMCPlanterBox
-  name: grow box
-  description: A root lattice is half buried inside the grow box.
+  name: 种植箱
+  description: 根格半埋在种植箱内。
   placement:
     mode: SnapgridCenter
   components:
@@ -18,12 +18,11 @@
     state: planter_box
   - type: Appearance
   - type: Damageable
-    damageModifierSet: null
+    damageModifierSet:
   - type: Injurable
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 25
       behaviors:
       - !type:PlaySoundBehavior
@@ -32,7 +31,7 @@
           params:
             volume: -4
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: BarricadeBlock
     bidirectional: true
     blocking: 65
@@ -40,8 +39,8 @@
 - type: entity
   parent: RMCPlanterBox
   id: RMCSoilNet
-  name: soil net
-  description: Scientists use these suspended nets to superimpose a grid over a patch of ground for study.
+  name: 土壤网
+  description: 科学家利用这些悬挂网在一小片地面上叠加网格以进行研究。
   components:
   - type: Sprite
     state: soil_grid

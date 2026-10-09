@@ -1,17 +1,17 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: RMCWeaponRifleL83A3   #In cm13 the L42
-  name: L83A3 rifle
-  description: The L83A3 Battle Rifle, found commonly in Three Suns Empires armories.
+  name: L83A3 步枪
+  description: L83A3战斗步枪，常见于三阳帝国的军械库中。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/L83A3.rsi #Sprites are from the l83a2_rifle and act as placeholders until someboy makes a sprite for them this also includes the magazine sprites and the L83A3F, L83A3M sprites.
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/L83A3.rsi
   - type: Gun
@@ -40,11 +40,11 @@
     accuracyMultiplierUnwielded: 0.75
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL83A3
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -133,7 +133,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL83A3
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -190,15 +190,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleL83A3
-  name: L83A3 Magazine (5.56x45mm)
-  description: "A magazine of 5.56x45mm rounds for the L83A3 rifle."
+  name: L83A3 弹匣（5.56×45毫米）
+  description: "L83A3步枪的5.56×45毫米弹药弹匣。"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleL83A3
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifleL83A # Whoever implemented the L83s did it in a really annoying way
@@ -216,8 +216,8 @@
 - type: entity
   parent: RMCMagazineRifleL83A3
   id: RMCMagazineRifleL83A3AP
-  description: "A magazine of armor-piercing 5.56x45mm rounds for the L83A3 rifle."
-  name: L83A3 AP Magazine (5.56x45mm)
+  description: "L83A3步枪使用的5.56×45毫米穿甲弹弹匣。"
+  name: L83A3 穿甲弹匣（5.56×45毫米）
   suffix: AP
   components:
   - type: Tag
@@ -234,9 +234,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/L83A3.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#1F951F"
   - type: Appearance
@@ -244,8 +244,8 @@
 - type: entity
   parent: RMCMagazineRifleL83A3
   id: RMCMagazineRifleL83A3Extended
-  description: "An extended magazine of 5.56x45mm rounds for the L83A3 rifle."
-  name: L83A3 Extended Magazine (5.56x45mm)
+  description: "L83A3步枪使用的5.56×45毫米加长弹匣。"
+  name: L83A3加长弹匣（5.56×45毫米）
   suffix: Extended
   components:
   - type: Tag
@@ -263,16 +263,16 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/L83A3extended.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Appearance
 
 - type: entity
   parent: RMCMagazineRifleL83A3
   id: RMCMagazineRifleL83A3HEAP
-  description: "A magazine of HEAP 5.56x45mm rounds for the L83A3 rifle."
-  name: L83A3 HEAP Magazine (5.56x45mm)
+  description: "用于L83A3步枪的5.56×45毫米高爆穿甲弹弹匣。"
+  name: L83A3高爆穿甲弹匣（5.56×45毫米）
   suffix: HEAP
   components:
   - type: Tag
@@ -289,9 +289,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/L83A3.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#9C9A19"
   - type: Appearance
@@ -299,8 +299,8 @@
 - type: entity
   parent: RMCMagazineRifleL83A3
   id: RMCMagazineRifleL83A3Incendiary
-  description: "A magazine of incendiary 5.56x45mm rounds for the L83A3 rifle."
-  name: L83A3 Incendiary Magazine (5.56x45mm)
+  description: "用于L83A3步枪的5.56×45毫米燃烧弹弹匣。"
+  name: L83A3燃烧弹弹匣（5.56×45毫米）
   suffix: Incendiary
   components:
   - type: Tag
@@ -317,9 +317,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/L83A3.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#771A10"
   - type: Appearance
@@ -327,8 +327,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleL83AHEAP
-  name: HEAP cartridge (5.56x45mm)
-  description: "A 5.56x45mm HEAP rifle cartridge for the L83A2/L83A3 rifles."
+  name: 高爆穿甲枪弹（5.56×45毫米）
+  description: "用于L83A2/L83A3步枪的5.56×45毫米高爆穿甲步枪弹。"
   components:
   - type: Tag
     tags:
@@ -341,8 +341,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleL83AIncendiary
-  name: Incendiary cartridge (5.56x45mm)
-  description: "A 5.56x45mm incendiary rifle cartridge for the L83A2/L83A3 rifles."
+  name: 燃烧弹（5.56×45毫米）
+  description: "用于L83A2/L83A3步枪的5.56×45毫米燃烧弹。"
   components:
   - type: Tag
     tags:
@@ -369,8 +369,8 @@
   components:
   - type: Projectile
     damage:
-       types:
-          Piercing: 30
+      types:
+        Piercing: 30
   - type: IgniteOnProjectileHit
 
 - type: Tag
@@ -397,19 +397,19 @@
 # L83A3B Variant
 
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: WeaponRifleL83A3F
-  name: L83A3F rifle
-  description: A variant of the L83A3 with a heavily modified firing mechanism, which grants it a burst-fire option.
+  name: L83A3F步枪
+  description: L83A3的一种变体，其发射机构经过大幅改装，从而具备了点射模式。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/L83A3.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/L83A3.rsi
   - type: Gun
@@ -448,11 +448,11 @@
     accuracyMultiplierUnwielded: 0.75
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL83A3
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -541,7 +541,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL83A3
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -598,19 +598,19 @@
 
 # Marksman L83A3 Variant will call it L83A3M (M for Marksman)
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: WeaponRifleL83A3M
-  name: L83A3M rifle
-  description: The L83A3M Battle Rifle is a modification sold to the Three Suns Empire. This particular version of the weapon has been given a custom stock and variable zoom scope. Reliable and deadly.
+  name: L83A3M步枪
+  description: L83A3M战斗步枪是出售给三阳帝国的改装版。这一特定版本的武器配备了定制枪托和可变倍率瞄准镜。可靠且致命。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/L83A3.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/L83A3.rsi
   - type: Gun
@@ -639,11 +639,11 @@
     accuracyMultiplierUnwielded: 0.75
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL83A3AP
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg

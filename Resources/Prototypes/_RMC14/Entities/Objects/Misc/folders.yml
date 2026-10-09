@@ -2,8 +2,8 @@
   parent: BoxBase
   id: CMFolderBaseEmpty
   abstract: true
-  name: folder
-  description: A folder.
+  name: 文件夹
+  description: 一个文件夹。
   suffix: Empty
   components:
   - type: Sprite
@@ -12,7 +12,7 @@
   - type: Item
     sprite: _RMC14/Objects/Misc/paper.rsi
     size: Small
-    shape: null
+    shape:
   - type: Storage
     maxItemSize: Small
     grid:
@@ -53,7 +53,7 @@
 - type: entity
   parent: CMFolderBase
   id: CMFolderBlue
-  description: A formal blue folder.
+  description: 一个正式的蓝色文件夹。
   components:
   - type: Sprite
     state: folder_blue
@@ -61,7 +61,7 @@
 - type: entity
   parent: CMFolderBaseEmpty
   id: CMFolderBlueEmpty
-  description: A formal blue folder.
+  description: 一个正式的蓝色文件夹。
   components:
   - type: Sprite
     state: folder_blue
@@ -69,7 +69,7 @@
 - type: entity
   parent: CMFolderBase
   id: CMFolderRed
-  description: A firey red folder.
+  description: 一个火红色的文件夹。
   components:
   - type: Sprite
     state: folder_red
@@ -77,7 +77,7 @@
 - type: entity
   parent: CMFolderBaseEmpty
   id: CMFolderRedEmpty
-  description: A firey red folder.
+  description: 一个火红色的文件夹。
   components:
   - type: Sprite
     state: folder_red
@@ -85,7 +85,7 @@
 - type: entity
   parent: CMFolderBase
   id: CMFolderYellow
-  description: A cheerful yellow folder.
+  description: 一个欢快的黄色文件夹。
   components:
   - type: Sprite
     state: folder_yellow
@@ -93,7 +93,7 @@
 - type: entity
   parent: CMFolderBaseEmpty
   id: CMFolderYellowEmpty
-  description: A cheerful yellow folder.
+  description: 一个欢快的黄色文件夹。
   components:
   - type: Sprite
     state: folder_yellow
@@ -101,7 +101,7 @@
 - type: entity
   parent: CMFolderBase
   id: CMFolderWhite
-  description: A plain white folder.
+  description: 一个朴素的白色文件夹。
   components:
   - type: Sprite
     state: folder_white
@@ -109,7 +109,7 @@
 - type: entity
   parent: CMFolderBaseEmpty
   id: CMFolderWhiteEmpty
-  description: A plain white folder.
+  description: 一个纯白色的文件夹。
   components:
   - type: Sprite
     state: folder_white
@@ -117,7 +117,7 @@
 - type: entity
   parent: CMFolderBase
   id: CMFolderBlack
-  description: A sleek black folder.
+  description: 一个光滑的黑色文件夹。
   components:
   - type: Sprite
     state: folder_black
@@ -125,7 +125,7 @@
 - type: entity
   parent: CMFolderBaseEmpty
   id: CMFolderBlackEmpty
-  description: A sleek black folder.
+  description: 一个光滑的黑色文件夹。
   components:
   - type: Sprite
     state: folder_black

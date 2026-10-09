@@ -45,8 +45,8 @@
 - type: entity
   parent: CMBaseWindow
   id: RMCWindowSPPReinforced
-  name: military grade window
-  description: A glass window. Light refracts incorrectly when looking through. It looks rather strong. Might take a few good hits to shatter it.
+  name: 军用级窗户
+  description: 一扇玻璃窗。透过它看去，光线会不正常地折射。它看起来相当坚固。可能需要几次有力的击打才能将其打碎。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/spp_window.rsi
@@ -61,32 +61,30 @@
   - type: Repairable
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 600 # excessive damage destroys window and frame
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              CMShardGlass:
-                min: 1
-                max: 1
-              CMRodMetal:
-                min: 1
-                max: 1
-          - !type:ChangeConstructionNodeBehavior
-            node: windowFrameSPPReinforced
+    - trigger: !type:DamageTrigger
+        damage: 600   # excessive damage destroys window and frame
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+          CMRodMetal:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: windowFrameSPPReinforced
   - type: RMCWallExplosionDeletable
   - type: DestroyedByExplosionType
   - type: Construction
@@ -108,32 +106,30 @@
     sprite: _RMC14/Structures/Windows/spp_grey_window.rsi
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 600 # excessive damage destroys window and frame
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              CMShardGlass:
-                min: 1
-                max: 1
-              CMRodMetal:
-                min: 1
-                max: 1
-          - !type:ChangeConstructionNodeBehavior
-            node: windowFrameSPPGreyReinforced
+    - trigger: !type:DamageTrigger
+        damage: 600   # excessive damage destroys window and frame
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+          CMRodMetal:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: windowFrameSPPGreyReinforced
   - type: Construction
     graph: RMCWindowSPPGreyReinforced
     node: windowSPPGreyReinforced
@@ -153,32 +149,30 @@
     sprite: _RMC14/Structures/Windows/spp_white_window.rsi
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 600 # excessive damage destroys window and frame
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              CMShardGlass:
-                min: 1
-                max: 1
-              CMRodMetal:
-                min: 1
-                max: 1
-          - !type:ChangeConstructionNodeBehavior
-            node: windowFrameSPPWhiteReinforced
+    - trigger: !type:DamageTrigger
+        damage: 600   # excessive damage destroys window and frame
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+          CMRodMetal:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: windowFrameSPPWhiteReinforced
   - type: Construction
     graph: RMCWindowSPPWhiteReinforced
     node: windowSPPWhiteReinforced
@@ -190,8 +184,8 @@
 - type: entity
   parent: CMBaseWindowIndestructible
   id: RMCWindowSPPHull
-  name: hull window
-  description: A glass window. Something tells you this one is somehow indestructible.
+  name: 船体窗
+  description: 一扇玻璃窗。直觉告诉你，这一扇不知为何坚不可摧。
   components:
   - type: Corrodible
     isCorrodible: false

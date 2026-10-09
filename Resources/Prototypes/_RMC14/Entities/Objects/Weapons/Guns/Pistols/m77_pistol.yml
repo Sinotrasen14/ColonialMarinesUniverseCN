@@ -1,8 +1,8 @@
 - type: entity
   parent: CMWeaponPistolBase
   id: RMCWeaponPistolM77
-  name: Mod 88 combat pistol # TODO RMC14 sounds
-  description: Standard issue Marine firearm. Also found in the hands of We-Yu PMC teams. Fires 9mm armor shredding rounds and is capable of 3-round burst.
+  name: 88型战斗手枪              # TODO RMC14 sounds
+  description: 海军陆战队制式枪械。也出现在韦-尤私人军事公司小队手中。发射9毫米破甲弹，可进行三发点射。
   components:
   - type: Tag
     tags:
@@ -41,7 +41,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -90,7 +90,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -102,15 +102,15 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMMagazinePistolM77AP
-  name: Mod 88 AP magazine (9mm)
-  description: A 19-round armor-piercing magazine for the Mod 88 combat pistol. It has found common use with We-Yu PMC operators to defeat armored threats when terminal effect is authorized.
+  name: Mod 88 穿甲弹匣（9毫米）
+  description: 用于 Mod 88 战斗手枪的 19 发穿甲弹匣。它已被 We-Yu PMC 操作员普遍用于在授权使用终点效应时击败装甲威胁。
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - CMMagazinePistolM77AP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgePistol9mmAP
@@ -127,11 +127,11 @@
     magState: base_ap
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistol9MMAP
-    
+
 - type: entity
   parent: CMBulletBase
   id: CMBulletPistolM77AP
-  name: bullet (9mm AP)
+  name: 子弹（9mm 穿甲）
   components:
   - type: Projectile
     damage:
@@ -143,8 +143,8 @@
 - type: entity
   parent: CMCartridgePistolBase
   id: CMCartridgePistolM77AP
-  name: cartridge (9mm AP)
-  description: A 9mm armor-piercing cartridge for the Mod 88 combat pistol.
+  name: 弹药（9毫米穿甲弹）
+  description: 用于 Mod 88 战斗手枪的 9 毫米穿甲弹。
   components:
   - type: Tag
     tags:
@@ -156,8 +156,8 @@
 - type: entity
   parent: RMCMagazinePistolM77Rubber
   id: CMMagazinePistolM88Rubber
-  name: Mod 88 rubber magazine (9mm)
-  description: A 19-round rubber magazine for the Mod 88 combat pistol. The blue stripe and safety markings designate the non-lethal load designed to deform and deliver blunt-force trauma on impact. Standard issue to leverage security and suppression without creating unnecessary casualties.
+  name: Mod 88 橡胶弹匣（9毫米）
+  description: 用于 Mod 88 战斗手枪的 19 发橡胶弹匣。蓝色条纹和安全标记表明其非致命弹药属性，该弹药设计为在撞击时变形并造成钝器创伤。标准配发，用于在不造成不必要伤亡的情况下实现安保与压制。
   components:
   - type: BallisticAmmoProvider
     proto: CMCartridgePistolM88Rubber
@@ -165,7 +165,7 @@
 - type: entity
   parent: RMCCartridgePistol9mmRubber
   id: CMCartridgePistolM88Rubber
-  description: A 9mm rubber projectile for the Mod 88 combat pistol.
+  description: 用于88型战斗手枪的9毫米橡胶弹丸。
   # TODO: rubber sprite
 
 - type: Tag

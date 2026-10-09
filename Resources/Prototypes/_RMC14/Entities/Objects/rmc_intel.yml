@@ -6,7 +6,7 @@
   abstract: true
   parent: BaseItem
   id: RMCIntelBase
-  name: intel item
+  name: 情报物品
   components:
   - type: Corrodible
     isCorrodible: false
@@ -28,8 +28,8 @@
 - type: entity
   parent: RMCIntelReadableBase
   id: RMCIntelPaperScrap
-  name: paper scrap
-  description: A scrap of paper, you think some of the words might still be readable.
+  name: 废纸
+  description: 一张废纸，你觉得有些字可能还看得懂。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -44,8 +44,8 @@
 - type: entity
   parent: RMCIntelReadableBase
   id: RMCIntelProgressReport
-  name: progress report
-  description: A written report from someone for their supervisor about the status of some kind of project.
+  name: 进展报告
+  description: 某人给他们的主管写的一份关于某个项目状态的书面报告。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -62,8 +62,8 @@
 - type: entity
   parent: RMCIntelReadableBase
   id: RMCIntelFolder
-  name: intel folder
-  description: A folder with some documents inside.
+  name: 情报文件夹
+  description: 一个里面有些文件的文件夹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -92,8 +92,8 @@
 - type: entity
   parent: RMCIntelReadableBase
   id: RMCIntelTechnicalManual
-  name: technical manual
-  description: A highly specified technical manual, may be of use to someone in the relevant field.
+  name: 技术手册
+  description: 一本高度专业化的技术手册，可能对相关领域的某些人有用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/Books/Other/book.rsi
@@ -132,8 +132,8 @@
 - type: entity
   parent: RMCCommunicationsConsoleBase
   id: RMCTechTreeConsole
-  name: tech tree console
-  description: A console used to make tech purchases.
+  name: 情报科技树控制台
+  description: 一个用来购买科技产品的机器。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
@@ -154,8 +154,8 @@
 - type: entity
   parent: RMCCommunicationsConsoleBase
   id: RMCComputerIntel
-  name: intel computer
-  description: An UNMC Intel Computer for data cataloguing and distribution.
+  name: 情报英特尔电脑
+  description: 一台 UNMC Intel 电脑，用于数据编目和分发。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
@@ -171,8 +171,8 @@
     tree:
       options:
       -
-        - name: Unlock Tier 1
-          description: Transitions the tree to another tier.
+        - name: 解锁一级科技
+          description: 将科技树转到另一个等级。
           cost: 0
           events:
           - !type:TechUnlockTierEvent
@@ -183,7 +183,7 @@
       -
         # CMU14: ARC supply belongs to the WY platoon catalog, not research.
         - name: Requisition Budget Increase
-          description: Distributes resources to requisitions for spending.
+          description: 把资源分配到各个支出申请上。
           cost: 7
           increase: 1
           repurchasable: true
@@ -196,8 +196,8 @@
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: budget_req
-        - name: Dropship Budget Increase
-          description: Distributes resources to the dropship fabricator.
+        - name: 空投预算增加
+          description: 将资源分配到空投制造器。
           cost: 6
           increase: 1
           repurchasable: true
@@ -210,8 +210,8 @@
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: budget_ds
-        - name: Unlock Tier 2
-          description: Transitions the tree to another tier.
+        - name: 解锁二级科技
+          description: 将科技树转到另一个等级
           cost: 5
           events:
           - !type:TechUnlockTierEvent
@@ -226,8 +226,8 @@
             sprite: _RMC14/Interface/tech_tree.rsi
             state: upgrade
       -
-        - name: Additional OB projectiles - HE
-          description: Highly explosive bombardment ammo, to be loaded into the orbital cannon.
+        - name: 额外OB弹药 - 高爆
+          description: 高爆轰炸弹药，用于装入轨道加农炮。
           cost: 5
           increase: 2
           repurchasable: true
@@ -240,8 +240,8 @@
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: ob_he
-        - name: Additional OB projectiles - Incendiary
-          description: Highly flammable bombardment ammo, to be loaded into the orbital cannon.
+        - name: 额外的OB弹药 - 燃烧弹
+          description: 高度易燃的轰击弹药，用于装入轨道加农炮。
           cost: 5
           increase: 2
           repurchasable: true
@@ -254,8 +254,8 @@
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: ob_incend
-        - name: Additional OB projectiles - Cluster
-          description: Highly explosive bombardment ammo that fragments, to be loaded into the orbital cannon.
+        - name: 额外OB弹药 - 集束
+          description: 高爆炸性弹药，会碎裂，用于装载到轨道加农炮里。
           cost: 5
           increase: 2
           repurchasable: true
@@ -268,8 +268,8 @@
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: ob_cluster
-        - name: Unlock Tier 3
-          description: Transitions the tree to another tier.
+        - name: 解锁三级科技
+          description: 将科技树转到另一个等级
           cost: 5
           events:
           - !type:TechUnlockTierEvent
@@ -284,8 +284,8 @@
             sprite: _RMC14/Interface/tech_tree.rsi
             state: upgrade
       -
-        - name: Wake Up Additional Troops
-          description: Wakes up additional troops to fight against any threats.
+        - name: 叫醒增援部队
+          description: 唤醒额外的部队来应对任何威胁。
           cost: 6
           increase: 6
           repurchasable: true
@@ -297,8 +297,8 @@
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: cryotroops
-        - name: Wake Up Additional Specialist
-          description: Wakes up an additional specialist to fight against any threats.
+        - name: 唤醒额外专家
+          description: 唤醒额外的专家来应对任何威胁。
           cost: 8
           events:
           - !type:TechCryoSpecEvent
@@ -308,8 +308,8 @@
           icon:
             sprite: _RMC14/Interface/tech_tree.rsi
             state: overshield
-        - name: Unlock Tier 4
-          description: Transitions the tree to another tier.
+        - name: 解锁四级科技
+          description: 将科技树转到另一个等级
           cost: 5
           events:
           - !type:TechUnlockTierEvent
@@ -324,8 +324,8 @@
             sprite: _RMC14/Interface/tech_tree.rsi
             state: upgrade
       -
-        - name: Nuclear Device
-          description: 	Purchase a nuclear device. Only purchasable 116 minutes into the operation. It's the only way to be sure.
+        - name: 核装置
+          description: 	购买一枚核装置。只能在行动进行116分钟后购买。这是唯一能确保的方式。
           cost: 5
           timeLock: 115m
           events:

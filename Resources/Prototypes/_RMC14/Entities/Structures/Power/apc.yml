@@ -1,9 +1,9 @@
 - type: entity
   abstract: true
   id: CMApcBase
-  name: area power controller
-  description: A control terminal for the area electrical systems.
-  categories: [ HideSpawnMenu ]
+  name: 区域电力控制器
+  description: 区域电力系统的控制终端。
+  categories: [HideSpawnMenu]
   components:
   - type: GuideHelp
     guides:
@@ -11,7 +11,7 @@
   - type: Transform
     anchored: true
   - type: AccessReader
-    access: [ [ "CMAccessEngineering" ] ]
+    access: [["CMAccessEngineering"]]
   - type: Clickable
   - type: InteractionOutline
   - type: Sprite
@@ -19,28 +19,28 @@
     sprite: _RMC14/Structures/Power/apc.rsi
     layers:
     - state: base
-      map: [ "base" ]
+      map: ["base"]
     - state: panel
-      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
       visible: false
     - state: display-charging
       shader: unshaded
-      map: [ "enum.RMCApcSpriteLayers.ChargeState" ]
+      map: ["enum.RMCApcSpriteLayers.ChargeState"]
     - state: apcox-0
       shader: unshaded
-      map: [ "enum.RMCApcSpriteLayers.InterfaceLock" ]
+      map: ["enum.RMCApcSpriteLayers.InterfaceLock"]
     - state: apcox-1
       shader: unshaded
-      map: [ "enum.RMCApcSpriteLayers.PanelLock" ]
+      map: ["enum.RMCApcSpriteLayers.PanelLock"]
     - state: apco0-2
       shader: unshaded
-      map: [ "enum.RMCApcSpriteLayers.Equipment" ]
+      map: ["enum.RMCApcSpriteLayers.Equipment"]
     - state: apco1-2
       shader: unshaded
-      map: [ "enum.RMCApcSpriteLayers.Lighting" ]
+      map: ["enum.RMCApcSpriteLayers.Lighting"]
     - state: apco2-2
       shader: unshaded
-      map: [ "enum.RMCApcSpriteLayers.Environment" ]
+      map: ["enum.RMCApcSpriteLayers.Environment"]
   - type: Appearance
   - type: WallMount
     arc: 360
@@ -62,8 +62,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
@@ -76,47 +75,47 @@
     visuals:
       enum.RMCApcVisualsLayers.Layer:
         base:
-          Working: { state: base }
-          WiresExposed: { state: apcewires }
-          CoverOpenBattery: { state: apc2 }
-          CoverOpenNoBattery: { state: apc1 }
+          Working: {state: base}
+          WiresExposed: {state: apcewires}
+          CoverOpenBattery: {state: apc2}
+          CoverOpenNoBattery: {state: apc1}
         enum.WiresVisualLayers.MaintenancePanel: # TODO RMC14
-          Working: { visible: false }
-          WiresExposed: { visible: false }
+          Working: {visible: false}
+          WiresExposed: {visible: false}
         enum.RMCApcSpriteLayers.ChargeState: # TODO RMC14
-          Working: { visible: true }
-          WiresExposed: { visible: false }
-          CoverOpenBattery: { visible: false }
-          CoverOpenNoBattery: { visible: false }
+          Working: {visible: true}
+          WiresExposed: {visible: false}
+          CoverOpenBattery: {visible: false}
+          CoverOpenNoBattery: {visible: false}
         enum.RMCApcSpriteLayers.InterfaceLock:
-          Working: { visible: true }
-          WiresExposed: { visible: false }
-          CoverOpenBattery: { visible: false }
-          CoverOpenNoBattery: { visible: false }
+          Working: {visible: true}
+          WiresExposed: {visible: false}
+          CoverOpenBattery: {visible: false}
+          CoverOpenNoBattery: {visible: false}
         enum.RMCApcSpriteLayers.PanelLock:
-          Working: { visible: true }
-          WiresExposed: { visible: false }
-          CoverOpenBattery: { visible: false }
-          CoverOpenNoBattery: { visible: false }
+          Working: {visible: true}
+          WiresExposed: {visible: false}
+          CoverOpenBattery: {visible: false}
+          CoverOpenNoBattery: {visible: false}
         enum.RMCApcSpriteLayers.Equipment:
-          Working: { visible: true }
-          WiresExposed: { visible: false }
-          CoverOpenBattery: { visible: false }
-          CoverOpenNoBattery: { visible: false }
+          Working: {visible: true}
+          WiresExposed: {visible: false}
+          CoverOpenBattery: {visible: false}
+          CoverOpenNoBattery: {visible: false}
         enum.RMCApcSpriteLayers.Lighting:
-          Working: { visible: true }
-          WiresExposed: { visible: false }
-          CoverOpenBattery: { visible: false }
-          CoverOpenNoBattery: { visible: false }
+          Working: {visible: true}
+          WiresExposed: {visible: false}
+          CoverOpenBattery: {visible: false}
+          CoverOpenNoBattery: {visible: false}
         enum.RMCApcSpriteLayers.Environment:
-          Working: { visible: true }
-          WiresExposed: { visible: false }
-          CoverOpenBattery: { visible: false }
-          CoverOpenNoBattery: { visible: false }
+          Working: {visible: true}
+          WiresExposed: {visible: false}
+          CoverOpenBattery: {visible: false}
+          CoverOpenNoBattery: {visible: false}
       enum.RMCApcVisualsLayers.Lock:
         enum.RMCApcSpriteLayers.InterfaceLock:
-          true: { state: apcox-1 }
-          false: { state: apcox-0 }
+          true: {state: apcox-1}
+          false: {state: apcox-0}
 #        enum.RMCApcSpriteLayers.PanelLock: # TODO RMC14
 #          Working: { visible: false }
 #          Broken: { visible: false }
@@ -131,9 +130,9 @@
 #          Broken: { visible: false }
       enum.RMCApcVisualsLayers.Power:
         enum.RMCApcSpriteLayers.ChargeState:
-          NotCharging: { state: display-lack }
-          Charging: { state: display-charging }
-          FullCharge: { state: display-full }
+          NotCharging: {state: display-lack}
+          Charging: {state: display-charging}
+          FullCharge: {state: display-full}
   - type: RMCMesonsNonviewable
   - type: ContainerContainer
     containers:
@@ -142,7 +141,7 @@
 
 # APC under construction
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: APCFrame
   id: CMApcFrame
   components:
@@ -153,14 +152,12 @@
     graph: CMApc
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -169,7 +166,7 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 # Constructed APC
 - type: entity

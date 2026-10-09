@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: RMCWeaponRevolverBase
   id: RMCWeaponRevolver38Magnum
-  name: .38 special revolver
-  description: A lean .38 revolver. A timeless classic, from antiquity to the future. This specific model is known to be wildly inaccurate, yet extremely lethal.
+  name: .38特种左轮手枪
+  description: 一把轻巧的.38左轮手枪。永恒的经典，从古代到未来。这款特定型号以精准度极差著称，却极为致命。
   components:
   - type: Tag
     tags:
@@ -20,8 +20,8 @@
       - RMCCartridgeRevolver38
     proto: RMCCartridgeRevolver38
     capacity: 6
-    chambers: [ True, True, True, True, True, True ]
-    ammoSlots: [ null, null, null, null, null, null ]
+    chambers: [true, true, true, true, true, true]
+    ammoSlots: [null, null, null, null, null, null]
   - type: Gun
     selectedMode: SemiAuto
     availableModes:
@@ -56,18 +56,18 @@
   suffix: Empty
   components:
   - type: RevolverAmmoProvider
-    proto: null
+    proto:
     chambers:
-    - null
-    - null
-    - null
-    - null
-    - null
-    - null
+    - 
+    - 
+    - 
+    - 
+    - 
+    - 
 
 - type: entity
   id: RMCBaseSpeedLoader38
-  name: "Speed loader (.38)"
+  name: "快速装弹器（.38）"
   parent: BaseItem
   abstract: true
   components:
@@ -92,16 +92,16 @@
 - type: entity
   parent: RMCBaseSpeedLoader38
   id: RMCSpeedLoader38
-  name: "Speed loader (.38)"
-  description: A revolver speed loader.
+  name: "快速装弹器（.38）"
+  description: 左轮手枪快速装弹器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/SpeedLoaders/38magnum.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: base-5
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: base
     steps: 6
@@ -113,7 +113,7 @@
 
 - type: entity
   id: RMCCartridgeRevolver38
-  name: cartridge (.38)
+  name: 弹药（.38）
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -126,8 +126,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletRevolver38
-  name: bullet (.38)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（.38）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

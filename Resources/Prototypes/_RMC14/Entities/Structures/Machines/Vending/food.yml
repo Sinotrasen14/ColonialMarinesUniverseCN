@@ -3,15 +3,15 @@
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: ColMarTechFood
-  name: ColMarTech food vendor
-  description: Marine Food Vendor, containing standard military Prepared Meals.
+  name: ColMarTech食品售卖机
+  description: 陆战队食品售卖机，内含标准军用预制餐。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/food.rsi
   - type: CMAutomatedVendor
     hackable: true
     sections:
-    - name: Festive Meals
+    - name: 节日餐食
       holidays:
       - FestiveSeason
       entries:
@@ -21,10 +21,10 @@
         amount: 25
       - id: RMCMarinePreparedMealFruitcake
         amount: 25
-    - name: Prepared Meals
+    - name: 预制餐
       entries:
       - id: CMMRE
-        name: Meal Ready to Eat
+        name: 即食餐
         amount: 25
       - id: CMMarinePreparedMealChicken
         amount: 20
@@ -40,12 +40,12 @@
         amount: 20
       - id: CMMarineProteinBar
         amount: 50
-    - name: Flasks
+    - name: 烧瓶
       entries:
       - id: CMCanteen
         amount: 50
       - id: CMMetalFlask
-        name: metal flask (empty)
+        name: 金属瓶（空）
         amount: 10
       - id: CMMarineFlask
         amount: 5
@@ -55,8 +55,8 @@
 - type: entity
   parent: ColMarTechFood
   id: RMCNutriCoVendor
-  name: NutriCo AutoChef
-  description: An autochef food dispenser, capable of distributing food containing all the essential vitamins and nutrients anyone could ever need. Inedible-looking sludge is passed through a variety of heaters, re-shapers, and solidifiers before being artificially flavored to create something that looks and tastes mostly edible.
+  name: NutriCo 自动厨师
+  description: 自动厨师食物分配器，能够分发含有任何人可能需要的所有必需维生素和营养的食物。看似不可食用的污泥经过各种加热器、重塑器和固化器的处理，再被人工调味，制成看起来和尝起来大致可食用的东西。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/NutriCo/food.rsi
@@ -65,29 +65,29 @@
 - type: entity
   parent: RMCNutriCoVendor
   id: RMCVendorNutriCoFoodPMC
-  name: food dispenser
+  name: 食物分配器
   suffix: PMC
 
 - type: entity
   parent: RMCNutriCoVendor
   id: RMCNutriCoVendorRCM
-  name: food dispenser
+  name: 食物分配器
   suffix: RCM
 
 - type: entity
   parent: RMCNutriCoVendor
   id: RMCVendorNutriCoFoodSPP
-  name: food dispenser
+  name: 食物分发器
   suffix: SPP
-  description: A food dispenser, capable of distributing food containing all the essential vitamins and nutrients anyone could ever need.
+  description: 食物分发器，能够分发含有任何人所需的所有必需维生素和营养的食物。
   components:
   - type: CMAutomatedVendor
     hackable: true
     sections:
-    - name: Prepared Meals
+    - name: 预制餐
       entries:
       - id: RMCMRESPP
-        name: UPP Combat Ration
+        name: UPP 战斗口粮
         amount: 15
       - id: RMCMarinePreparedMealSPPBanush
         amount: 15
@@ -108,22 +108,22 @@
       - id: RMCMarinePreparedMealSPPWursts
         amount: 15
       - id: RMCSurvivalRationSPP
-        name: SPP Survival Ration
+        name: SPP生存口粮
         amount: 15
-    - name: Flasks
+    - name: 烧瓶
       entries:
       - id: RMCDrinkWaterSPP
-        name: Water
+        name: 水
         amount: 10
       - id: RMCDrinkTeaSPP
-        name: Tea
+        name: 茶
         amount: 10
 
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: CMVendorBooze
   name: Booze-O-Mat
-  description: A technological marvel, supposedly able to mix just the mixture you'd like to drink the moment you ask for one.
+  description: 一项科技奇迹，据说能在你开口点单的瞬间，调配出你恰好想喝的那种混合饮品。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/boozeomat.rsi
@@ -132,8 +132,8 @@
     - state: "normal-unshaded"
   - type: AccessReader
     access:
-    - [ "CMAccessKitchen" ]
-    - [ "CMAccessColonyPublic" ]
+    - ["CMAccessKitchen"]
+    - ["CMAccessColonyPublic"]
   - type: CMAutomatedVendor
     access:
     - "CMAccessKitchen"
@@ -141,13 +141,13 @@
     hackable: true
     scaling: false
     sections:
-    - name: Alcohol
+    - name: 酒精
       entries:
       - id: CMDrinkCanAle
-        name: ale
+        name: 艾尔啤酒
         amount: 12
       - id: CMDrinkCanBeerLite
-        name: beer
+        name: 啤酒
         amount: 12
       - id: RMCDrinkAlcoholGrenadine
         amount: 5
@@ -175,9 +175,9 @@
         amount: 12 # TODO RMC14 5
 #      - id: DrinkCoffeeLiqueurBottleFull
 #        amount: 5
-    - name: Craft Beers
+    - name: 精酿啤酒
       entries: []
-    - name: Non-Alcohol
+    - name: 无酒精
       entries:
       - id: CMDrinkCanFruitBeer
         amount: 8
@@ -193,10 +193,10 @@
         amount: 4
       - id: CMDrinkCanTonic
         amount: 8
-    - name: Containers
+    - name: 容器
       entries:
       - id: CMMetalFlask
-        name: metal flask (empty)
+        name: 金属瓶（空）
         amount: 5
       - id: DrinkGlass
         amount: 10
@@ -209,7 +209,7 @@
   parent: ColMarTechBaseAnchorable
   id: CMVendorChess
   name: Chess-o-mat
-  description: In 2143 Red Star Drinks, a UPP-CA (Colony Administration) affiliated corporation ran a promotional sweepstakes for drinkers who had found special codes on the inside of the caps of a limited run of Red Star Vodka, shipping them a Chess-O-Mat with unlimited refills.
+  description: 2143年，隶属于UPP-CA（殖民地管理局）的红星饮品公司为那些在限量版红星伏特加瓶盖内侧发现特殊代码的饮酒者举办了一场促销抽奖活动，并向他们寄送一台可无限续杯的Chess-O-Mat。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/chessomat.rsi
@@ -219,30 +219,30 @@
   - type: CMAutomatedVendor
     hackable: true
     sections:
-    - name: Chess
+    - name: 国际象棋
       entries:
       - id: ChessBoard
         amount: 5
-    - name: White Pieces
+    - name: 白棋
       entries:
       - id: RMCDrinkAlcoholVodkaChessWhitePawn
-        name: Pawn
+        name: 兵
         amount: 2
       - id: RMCDrinkAlcoholVodkaChessWhiteBishop
-        name: Bishop
+        name: 毕晓普
         amount: 2
       - id: RMCDrinkAlcoholVodkaChessWhiteKnight
-        name: Knight
+        name: 骑士
         amount: 2
       - id: RMCDrinkAlcoholVodkaChessWhiteRook
-        name: Rook
+        name: 鲁克
         amount: 2
       - id: RMCDrinkAlcoholVodkaChessWhiteKing
-        name: King
+        name: 金
         amount: 2
       - id: RMCDrinkAlcoholVodkaChessWhiteQueen
-        name: Queen
+        name: 女王
         amount: 2
-    - name: Black Pieces
+    - name: 黑棋
       entries: []
     # TODO RMC14 vodka chess pieces

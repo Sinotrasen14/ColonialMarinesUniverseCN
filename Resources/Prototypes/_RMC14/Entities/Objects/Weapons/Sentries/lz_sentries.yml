@@ -2,7 +2,7 @@
   parent: BaseStructure
   abstract: true
   id: RMCBaseTurret
-  name: turret
+  name: 炮塔
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -10,8 +10,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 60
         mask:
@@ -45,10 +44,8 @@
     blackboard:
       SoundTargetInLOS: !type:SoundPathSpecifier
         path: /Audio/Effects/double_beep.ogg
-      VisionRadius: !type:Single
-        10.0
-      AggroVisionRadius: !type:Single
-        10.0
+      VisionRadius: !type:Single 10.0
+      AggroVisionRadius: !type:Single 10.0
   - type: MouseRotator
     angleTolerance: 5
     rotationSpeed: 180
@@ -67,9 +64,9 @@
   parent: RMCBaseTurret
   id: RMCTurretGaussSpaceborne
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 577 spaceborne gauss turret
+  name: 577太空高斯炮塔
   # cmu edit end
-  description: A fully-automated defence turret with mid-range targeting capabilities. Armed with a modified M32-S Autocannon and an internal belt feed.
+  description: 一座全自动防御炮塔，具备中程瞄准能力。装备有一门经过改装的 M32-S 自动炮和内置弹链供弹。
   components:
   - type: UserIFF
     factions: []
@@ -101,10 +98,8 @@
     blackboard:
       SoundTargetInLOS: !type:SoundPathSpecifier
         path: /Audio/Effects/double_beep.ogg
-      VisionRadius: !type:Single
-        10.0
-      AggroVisionRadius: !type:Single
-        10.0
+      VisionRadius: !type:Single 10.0
+      AggroVisionRadius: !type:Single 10.0
   - type: TimedDespawnOnLanding
   - type: MarineIFF
   - type: SleepNPC
@@ -189,7 +184,8 @@
       preset: TargetDistance
   - !type:TargetAccessibleCon
     curve: !type:BoolCurve
-  - !type:TargetBulletLOSCon # CMU14
+                             # CMU14
+  - !type:TargetBulletLOSCon
     curve: !type:BoolCurve
   - !type:CanFaceCon
     curve: !type:BoolCurve
@@ -209,7 +205,8 @@
       preset: TargetDistance
   - !type:TargetAccessibleCon
     curve: !type:BoolCurve
-  - !type:TargetBulletLOSCon # CMU14
+                             # CMU14
+  - !type:TargetBulletLOSCon
     curve: !type:BoolCurve
   - !type:CanFaceCon
     curve: !type:BoolCurve

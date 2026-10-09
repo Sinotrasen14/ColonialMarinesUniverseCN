@@ -21,11 +21,11 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleVTOL
-  name: AD-71E VTOL
-  description: A twin tilt-jet VTOL, the Blackfoot is the Bearcat's ugly big sister. For what she lacks in fire power and agility, she more than makes up for in utility and love handles. First tested by UN Northridge on United Nations soil, the Blackfoot is currently undergoing active combat trials. This craft appears to be undergoing maintenance and is not ready to fly.
+  name: AD-71E垂直起降飞行器
+  description: 一架双倾转喷气式垂直起降飞行器，“黑足”是“熊猫”丑陋的大姐姐。她在火力和敏捷性上有所欠缺，却在实用性和“爱的把手”上远远弥补了回来。最初由联合国北岭在联合国领土上测试，“黑足”目前正在进行实战试验。这架飞行器似乎正在接受维护，尚未准备好飞行。
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_vtol.rsi
     state: vtol
@@ -34,11 +34,11 @@
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleVTOLCrashed
   suffix: Crashed
-  name: AD-71E VTOL
-  description: A twin tilt-jet VTOL, the Blackfoot is the Bearcat's ugly big sister. For what she lacks in fire power and agility, she more than makes up for in utility and love handles. First tested by UN Northridge on United Nations soil, the Blackfoot is currently undergoing active combat trials. This craft appears to have crash landed, and is inoperable.
+  name: AD-71E垂直起降
+  description: 双倾转喷气式垂直起降飞行器“黑脚”是“熊猫”丑陋的大姐姐。她在火力和机动性上的不足，远远被实用性和“游泳圈”弥补了。“黑脚”最初由联合国北岭在联合国领地上进行测试，目前正在进行实战试验。这架飞行器似乎已经坠毁着陆，且无法操作。
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_vtol.rsi
     state: vtol_damaged
@@ -48,21 +48,21 @@
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleEvacBlack
   suffix: Black
-  name: F-44 Aerospace fighter
-  description: A high tech, silver coated F-44 aerospace fighter used by the UNMC in deep recon missions. The thermal-absorbent paint alone probably costs more than your squad's collective paycheck. Unfortunately however, this jet was in the middle of a repair cycle when the northern defences were breached, necessitating an evacuation.
+  name: F-44 空天战斗机
+  description: 一种高科技、覆有银色涂层的 F-44 空天战斗机，由 UNMC 用于深度侦察任务。单是那层吸热涂料，造价可能就超过你所在小队全部薪水的总和。然而不幸的是，北部防线被突破时，这架战机正处于维修周期中，因此不得不将它撤离。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_evac.rsi
     state: evac_black
   - type: Physics
     fixedRotation: true
-    canCollide: False
+    canCollide: false
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleEvacGreen
-  name: F-44 Aerospace fighter
+  name: F-44 空天战斗机
   suffix: Green
-  description: A state of the art F-44 aerospace fighter used by the UNMC. This fighter has seen better days with extensive internal wiring damage and unfinished repairs to the bomb-bays.
+  description: UNMC使用的先进F-44空天战斗机。这架战斗机已风光不再，内部线路严重受损，弹舱维修尚未完成。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_evac.rsi
@@ -71,15 +71,15 @@
     fixedRotation: true
 
 # M887
-    canCollide: False
+    canCollide: false
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleTruck
-  name: M887 Truck
-  description: A small box-type van. It's a compact vehicle with a rectangular cargo area, typically designed for transporting goods or small equipment. It features a high roof and straight sides, providing ample vertical space for storage. Its size makes it maneuverable and ideal for urban driving and tight spaces. This van appears to be non-functional, likely due to excessive use during the recent outbreak.
+  name: M887 卡车
+  description: 一辆小型厢式货车。它是一种紧凑型车辆，带有矩形货厢，通常用于运输货物或小型设备。它采用高车顶和笔直的车身侧面，提供充足的垂直储物空间。其尺寸使其机动灵活，非常适合城市驾驶和狭窄空间。这辆厢式货车似乎已无法使用，可能是因为在近期的疫情爆发期间使用过度。
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_truck.rsi
     state: truck
@@ -90,7 +90,7 @@
   suffix: Broken
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: truck_broken
 
@@ -98,10 +98,10 @@
 - type: entity
   parent: RMCPropTyrargoVehicleTruck
   id: RMCPropTyrargoVehicleTruckAlt
-  name: M991 Truck
+  name: M991 卡车
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_truck.rsi
     state: truck_alt
@@ -112,7 +112,7 @@
   suffix: Broken
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: truck_alt_broken
 
@@ -120,11 +120,11 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleAPC
-  name: M577 Armored Personnel Carrier
-  description: An M577 Armored Personnel Carrier. An armored transport with four big wheels. This one is no longer in working order, serving now as a roadblock.
+  name: M577装甲运兵车
+  description: 一辆M577装甲运兵车。一种装有四个大轮子的装甲运输车。这一辆已经无法正常工作，如今被用作路障。
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_apc.rsi
     state: apc
@@ -135,7 +135,7 @@
   suffix: Destroyed
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: apc_destroyed
 
@@ -145,7 +145,7 @@
   suffix: Medical
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: apc_med
 
@@ -155,7 +155,7 @@
   suffix: Medical, Destroyed
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: apc_med_destroyed
 
@@ -163,11 +163,11 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleATV
-  name: BISON Automated Transport Vehicle
-  description: The BISON ATV is an remote-controlled logistical supply vehicle, intended to assist UNMC rear-line logistics forces in moving supplies. It requires someone to be standing near it for the auto-pilot functions to work. This model is non-functional.
+  name: BISON自动运输车
+  description: BISON自动运输车是一种遥控后勤补给载具，旨在协助UNMC后方后勤部队运送补给。它需要有人站在附近，自动驾驶功能才能运作。此型号无法使用。
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_bison.rsi
     state: bison
@@ -178,7 +178,7 @@
   suffix: Destroyed
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: bison_destroyed
 
@@ -188,7 +188,7 @@
   suffix: Open
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: bison_open
 
@@ -198,7 +198,7 @@
   suffix: Open, Destroyed
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: bison_open_destroyed
 
@@ -206,11 +206,11 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleIFV
-  name: M34 Marshal IFV
-  description: Developed by Weston-Yamada, the RAT (Rover Armed Transport) was originally designed for the TSE military as an armed version of their RT series of expeditionary vehicles, being instead adopted by the UN Marine Corps. It's heavier and and more durable then the M570 series the Marines use, as they don't have a need for APCs capable of being transported via a dropship.
+  name: M34“元帅”步兵战车
+  description: 由韦斯顿-山田开发，RAT（漫游者武装运输车）最初是为TSE军方设计的，作为其RT系列远征车辆的武装版本，结果却被联合国海军陆战队采用。它比海军陆战队使用的M570系列更重、更耐用，因为他们不需要能够通过空投船运输的装甲运兵车。
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_ifv.rsi
     state: ifv
@@ -219,11 +219,11 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleHalfTrack
-  name: M255 Armored Half-Track
-  description: A UN half-track, used everywhere in the Marine Corps. Comes in multiple different configurations, from being able to haul troops to mounting a mobile mortar. Versatile and cheap. This one appears to be non-functional due to overuse during the recent outbreak.
+  name: M255装甲半履带车
+  description: 一辆联合国半履带车，在海军陆战队中随处可见。它有多种不同配置，从运送部队到架设移动迫击炮都行。用途广泛且廉价。这一辆似乎因在近期疫情爆发期间过度使用而无法使用。
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_halftrack.rsi
     state: truck
@@ -234,7 +234,7 @@
   suffix: Destroyed
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: truck_broken
 
@@ -244,7 +244,7 @@
   suffix: Alt
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: truck_alt
 
@@ -254,7 +254,7 @@
   suffix: Alt, Destroyed
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: truck_alt_broken
 
@@ -262,11 +262,11 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleHumvee
-  name: M540-B Armored Recon Carrier
-  description: An M540-B Armored Recon Carrier. A lightly armored reconnaissance and intelligence vehicle. This one has been rendered inoperable.
+  name: M540-B装甲侦察运输车
+  description: 一辆M540-B装甲侦察运输车。一种轻装甲侦察与情报车辆。这辆已无法使用。
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_humvee.rsi
     state: humvee
@@ -277,7 +277,7 @@
   suffix: Destroyed
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: humvee_broken
 
@@ -287,7 +287,7 @@
   suffix: Carrier
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: humvee_carrier
 
@@ -297,7 +297,7 @@
   suffix: Carrier, Destroyed
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: humvee_carrier_broken
 
@@ -307,7 +307,7 @@
   suffix: Medical
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: humvee_med
 
@@ -317,7 +317,7 @@
   suffix: Medical, Destroyed
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: humvee_med_broken
 
@@ -325,10 +325,10 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleHumveeTurret
-  name: M356 'Rattlesnake' 25mm autocannon
+  name: M356“响尾蛇”25毫米自动炮
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_humvee.rsi
     state: humvee_gun
@@ -339,7 +339,7 @@
   suffix: Destroyed
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: humvee_gun_broken
 
@@ -349,12 +349,12 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleTankDestroyed
-  name: M34A2 Longstreet Light Tank
+  name: M34A2“朗斯特里特”轻型坦克
   suffix: Destroyed
-  description: A giant piece of armor with a big gun, it knew what it had to do, and it served its duty.
+  description: 一件配有巨炮的巨大装甲，它知道自己该做什么，并履行了自己的职责。
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_tank.rsi
     state: tank_broken
@@ -362,11 +362,11 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleTankTurret
-  name: M34A2 Longstreet Light Tank turret
+  name: M34A2朗斯特里特轻型坦克炮塔
   description:
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_tank.rsi
     state: turret_broken
@@ -374,12 +374,12 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleTankGLDestroyed
-  name: M34A2 Longstreet Light Tank grenade launcher
+  name: M34A2“朗斯特里特”轻型坦克榴弹发射器
   suffix: Destroyed
   description:
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_tank.rsi
     state: glauncher_broken
@@ -387,12 +387,12 @@
 - type: entity
   parent: RMCPropTyrargoVehicleBase
   id: RMCPropTyrargoVehicleTankBarrelDestroyed
-  name: M34A2 Longstreet Light Tank barrel
+  name: M34A2朗斯特里特轻型坦克炮管
   suffix: Destroyed
   description:
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     sprite: _RMC14/Structures/Tyrargo_Vehicles/tyrargo_tank.rsi
     state: ltb_broken

@@ -16,7 +16,7 @@
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
+      maxVol: 100
   - type: CraftsIntoMolotov
   - type: SolutionTransfer
     canChangeTransferAmount: true
@@ -40,290 +40,290 @@
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholGrenadine
-  name: briar rose grenadine syrup
-  description: Sweet and tangy, a bar syrup used to add color or flavor to drinks.
+  name: 野蔷薇红石榴糖浆
+  description: 酸甜可口，一种用于为饮品增色或调味的酒吧糖浆。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/grenadine.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Grenadine
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Grenadine
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholTequila
-  name: caccavo guaranteed quality tequila
-  description: Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!
+  name: 卡卡沃品质保证龙舌兰酒
+  description: 由优质石油馏分、纯沙利度胺以及其他优质原料制成！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/tequila.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Tequila
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Tequila
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholAbsinthe
-  name: jailbreaker verte
-  description: One sip of this and you just know you're gonna have a good time.
+  name: 绿色越狱者
+  description: 喝上一口，你就知道自己会度过一段美好时光。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/absinthe.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Absinthe
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Absinthe
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholCognac
-  name: chateau de baton premium cognac
-  description: A sweet and strongly alcoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time.
+  name: 巴顿城堡高级干邑
+  description: 一种甜美而烈性的酒精饮料，经多次蒸馏和多年陈酿制成。这次你最好别喊“SHITCURITY”了。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/cognac.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Cognac
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Cognac
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholDavenport
-  name: davenport rye whiskey
-  description: An expensive whiskey with a distinct flavor. The bottle proudly proclaims that it's, 'A True Classic.'
+  name: 达文波特黑麦威士忌
+  description: 一款价格昂贵、风味独特的威士忌。瓶身自豪地宣称，它是“真正的经典”。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/davenport.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 50
-        reagents:
-        - ReagentId: RMCSpecialBlendWhiskey
-          Quantity: 50
+      maxVol: 50
+      reagents:
+      - ReagentId: RMCSpecialBlendWhiskey
+        Quantity: 50
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholDavenportMostlyEmpty
-  name: davenport rye whiskey
-  description: An expensive whiskey with a distinct flavor. The bottle proudly proclaims that it's, 'A True Classic.' Only a tiny bit is left sloshing at the bottom of the bottle.
+  name: 达文波特黑麦威士忌
+  description: 一款风味独特的昂贵威士忌。瓶身自豪地宣称它是“真正的经典”。瓶底只剩下一点点还在晃荡。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/davenport.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 50
-        reagents:
-        - ReagentId: RMCSpecialBlendWhiskey
-          Quantity: 15
+      maxVol: 50
+      reagents:
+      - ReagentId: RMCSpecialBlendWhiskey
+        Quantity: 15
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholGin
-  name: griffeater gin
-  description: A bottle of high-quality gin, produced in the New London Space Station.
+  name: 格里夫特金酒
+  description: 一瓶高品质金酒，产自新伦敦空间站。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/gin.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Gin
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Gin
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholGoldschlager
-  name: college girl goldschlager
-  description: Because they are the only ones who will drink 100 proof cinnamon schnapps.
+  name: 女大学生金箔酒
+  description: 因为她们是唯一会喝100 proof肉桂烈酒的人。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/goldschlager.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Gildlager
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Gildlager
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholKahlua
-  name: robert robust's coffee liqueur
-  description: A widely known, Mexican coffee-flavoured liqueur. In production since 1936, HONK
+  name: 罗伯特·罗布斯特咖啡利口酒
+  description: 一款广为人知的墨西哥咖啡风味利口酒。霍恩克自1936年起生产。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/kahlua.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: CoffeeLiqueur
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: CoffeeLiqueur
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholVermouth
-  name: goldeneye vermouth
-  description: Sweet, sweet dryness~
+  name: 黄金眼味美思
+  description: 甜甜的，甜甜的干爽～
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/vermouth.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Vermouth
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Vermouth
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholMelonLiquor
-  name: emeraldine melon liquor
-  description: A bottle of 46 proof Emeraldine Melon Liquor. Sweet and light.
+  name: 翡翠蜜瓜利口酒
+  description: 一瓶46度的翡翠蜜瓜利口酒。甜而清淡。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/melon_liquor.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: MelonLiquor
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: MelonLiquor
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholBlueCuracao
-  name: miss blue curacao
-  description: A fruity, exceptionally azure drink. Does not allow the imbiber to use the fifth magic.
+  name: 蓝库拉索小姐
+  description: 一种果香浓郁、异常湛蓝的饮品。饮用者无法使用第五魔法。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/blue_curacao.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: BlueCuracao
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: BlueCuracao
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholPatron
-  name: wrapp artiste patron
-  description: Silver laced tequila, served in space night clubs across the galaxy.
+  name: Wrapp 艺术赞助人
+  description: 银丝龙舌兰酒，在银河系各处的太空夜总会中供应。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/patron.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Patron
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Patron
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholPurpleWine
-  name: warlock's velvet
-  description: What a delightful packaging for a surely high-quality wine! The vintage must be amazing!
+  name: 术士的天鹅绒
+  description: 这无疑是一瓶高品质葡萄酒，包装多么令人愉悦！这个年份一定非常棒！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/purple_wine.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Wine
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Wine
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholRum
-  name: captain pete's cuban spiced rum
-  description: Named after the famed Captain 'Cuban' Pete, this rum is about as volatile as his final mission.
+  name: 皮特船长的古巴香料朗姆酒
+  description: 以著名的“古巴”皮特船长命名，这款朗姆酒就像他最后一次任务一样反复无常。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/rum.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Rum
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Rum
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholSake
-  name: weyland-yutani sake
-  description: Sake made with ancient techniques passed down for thousands of years. Fermented in Iowa by the Weyland-Yutani Corporation.
+  name: 维兰德-汤谷清酒
+  description: 采用传承数千年的古老工艺酿制的清酒。由维兰德-汤谷公司在爱荷华州发酵酿成。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/sake.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Sake
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Sake
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholVodka
-  name: red star vodka
-  description: "Red Star Vodka: A staple of the enemy's diet. Who knew that liquid potato could smell this potent. The bottle reads, 'Ra Ra Red Star Man: Lover of the Finer Things.' Or at least that's what you assume...you can't read Russian."
+  name: 红星伏特加
+  description: "红星伏特加：敌方饮食中的主食。谁能想到液态土豆竟能散发出如此浓烈的气味。瓶子上写着，“啦啦红星人：高雅事物的爱好者。”至少你是这么猜的……你读不懂俄语。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/red_star_vodka.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Vodka
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Vodka
+        Quantity: 100
 
 - type: entity
   parent: RMCDrinkAlcoholBase
   id: RMCDrinkAlcoholWhiskey
-  name: uncle git's special reserve
-  description: A premium single-malt whiskey, gently matured for four years by hillbillies in the backwaters of Alabama.
+  name: 吉特叔叔的特别珍藏
+  description: 一款优质单一麦芽威士忌，由阿拉巴马州偏远乡下的乡巴佬们温和陈酿了四年。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/whiskey.rsi
   - type: Solution
     id: drink
     solution:
-        maxVol: 100
-        reagents:
-        - ReagentId: Whiskey
-          Quantity: 100
+      maxVol: 100
+      reagents:
+      - ReagentId: Whiskey
+        Quantity: 100
 
 - type: Tag
   id: RMCAlcohol

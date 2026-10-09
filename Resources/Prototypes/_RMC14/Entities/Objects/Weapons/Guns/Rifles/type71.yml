@@ -1,16 +1,16 @@
-﻿- type: entity # Type 71 Base Rifle
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: Type 71 assault rifle
+- type: entity # Type 71 Base Rifle
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: 71式突击步枪
   id: RMCWeaponRifleType71
-  description: The primary service rifle of the UPP armed forces, the Type 71 is an ergonomic, lightweight assault rifle chambered in 5.45x39mm. In accordance with doctrinal principles of overmatch and suppression, the rifle has a high rate of fire and a high-capacity casket magazine. Despite lackluster precision, an integrated recoil-dampening mechanism makes the rifle surprisingly controllable in bursts.
+  description: 作为UPP武装部队的主力制式步枪，71式是一款符合人体工程学、轻量化的突击步枪，发射5.45×39毫米弹药。按照压倒性优势与压制的条令原则，该步枪具备高射速和高容量弹匣。尽管精度不佳，但内置的减后坐机制使该步枪在点射时出奇地易于控制。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/type71.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/type71.rsi
   - type: ContainerContainer
@@ -45,7 +45,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -99,7 +99,7 @@
       rmc-aslot-stock: -0.5625, -0.03125
       rmc-aslot-underbarrel: 0.34375, -0.34375
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: Tag
     tags:
     - RMCWeaponRifleType71
@@ -116,9 +116,9 @@
     - RMCWeaponRifleType71PVE
 - type: entity # Type 71-F Flamer
   parent: RMCWeaponRifleType71
-  name: Type 71-F assault rifle
+  name: 71-F式突击步枪
   id: RMCWeaponRifleType71Flamer
-  description: This appears to be a less common variant of the Type 71 with an integrated flamethrower that seems especially powerful.
+  description: 这似乎是71式一种较少见的变体，带有内置火焰喷射器，其威力似乎格外强大。
   components:
   - type: AttachableHolder
     slots:
@@ -156,14 +156,14 @@
 - type: entity # Type 71 REG Magazine
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleType71
-  name: "Type 71 magazine (5.45x39mm)"
+  name: "71式弹匣（5.45×39毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleType71
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle545x39mm
@@ -183,14 +183,14 @@
 - type: entity # Type 71 AP Magazine
   parent: RMCMagazineRifleType71
   id: RMCMagazineRifleType71AP
-  name: "Type 71 AP magazine (5.45x39mm)"
+  name: "71式穿甲弹匣（5.45×39毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleType71AP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle545x39mmAP
@@ -211,14 +211,14 @@
 - type: entity # Type 71 HEAP magazine
   parent: RMCMagazineRifleType71
   id: RMCMagazineRifleType71HEAP
-  name: "Type 71 HEAP magazine (5.45x39mm)"
+  name: "71式高爆穿甲弹匣（5.45×39毫米）"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleType71HEAP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifle545x39mmHEAP
@@ -234,13 +234,13 @@
     - state: ammo_band
       color: "#9C9A19"
   - type: RefillableByBulletBox
-    bulletType: null
+    bulletType:
 
 - type: entity # 5.45x39mm REG Cartridge
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifle545x39mm
-  name: cartridge (5.45x39mm)
-  description: A 5.45x39mm cartridge. Fits in 5.45x39mm magazines.
+  name: 弹药（5.45x39mm）
+  description: 一发5.45x39mm弹药。可装入5.45x39mm弹匣。
   components:
   - type: Tag
     tags:
@@ -252,8 +252,8 @@
 - type: entity # 5.45x39mm AP Cartridge
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifle545x39mmAP
-  name: cartridge (5.45x39mm)
-  description: A 5.45x39mm cartridge. Fits in 5.45x39mm magazines.
+  name: 弹药（5.45x39毫米）
+  description: 一枚5.45x39毫米弹药。适用于5.45x39毫米弹匣。
   components:
   - type: Tag
     tags:
@@ -265,8 +265,8 @@
 - type: entity # 5.45x39mm HEAP Cartridge
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifle545x39mmHEAP
-  name: cartridge (5.45x39mm)
-  description: A 5.45x39mm HEAP cartridge. Fits in 5.45x39mm magazines.
+  name: 弹药筒（5.45x39mm）
+  description: 一发5.45x39mm高爆穿甲弹。可装入5.45x39mm弹匣。
   components:
   - type: Tag
     tags:
@@ -278,7 +278,7 @@
 - type: entity # 5.45x39mm REG Projectile 
   parent: RMCBaseBullet
   id: RMCBulletRifle545x39mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -302,7 +302,7 @@
 - type: entity # 5.45x39mm AP Projectile
   parent: RMCBulletRifle545x39mm
   id: RMCBulletRifle545x39mmAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -314,7 +314,7 @@
 - type: entity # 5.45x39mm HEAP Projectile
   parent: RMCBulletRifle545x39mm
   id: RMCBulletRifle545x39mmHEAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

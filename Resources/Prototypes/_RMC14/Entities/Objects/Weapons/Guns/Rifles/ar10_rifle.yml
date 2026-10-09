@@ -1,17 +1,17 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: AR10 assault rifle
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: AR10突击步枪
   id: WeaponRifleAR10
-  description: An earlier version of the more widespread M16 rifle. Considered to be the father of the 20th century rifle. How one of these ended up here is a mystery of its own. It is chambered in 7.62x51mm.
+  description: 更广泛使用的M16步枪的早期版本。被认为是20世纪步枪之父。这样一把枪最终出现在这里，本身就是个谜。它采用7.62×51毫米口径。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/ar10.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - sprite: _RMC14/Objects/Weapons/Guns/Attachments/stock.rsi # Stock has no effects, no reason to make it an attachment
       state: ar10_stock
       offset: -0.5, 0
@@ -43,11 +43,11 @@
         shotsToMaxScatter: 6
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleAR10
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -113,18 +113,18 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleAR10
-  name: "AR10 Magazine (7.62x51mm)"
-  description: A 20-round magazine for the AR10 rifle.
+  name: "AR10弹匣（7.62×51毫米）"
+  description: AR10步枪的20发弹匣。
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleAR10
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
-        - RMCCartridgeRifleAR10
+      - RMCCartridgeRifleAR10
     proto: RMCCartridgeRifleAR10
     capacity: 20
   - type: Sprite
@@ -139,8 +139,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleAR10
-  name: cartridge (7.62x51mm)
-  description: A 7.62x51mm cartridge for the AR10 rifle.
+  name: 弹药（7.62x51mm）
+  description: 用于AR10步枪的7.62x51mm弹药。
   components:
   - type: Tag
     tags:
@@ -152,7 +152,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: BulletRifleAR10
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: DamageImpactProfile
     projectile:

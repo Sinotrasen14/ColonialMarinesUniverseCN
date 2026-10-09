@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: UnfinishedMachineFrame
   id: CMMachineFrameUnfinished
   suffix: RMC14, Unfinished
@@ -17,8 +17,7 @@
     isCorrodible: true
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:ChangeConstructionNodeBehavior
@@ -46,8 +45,7 @@
     isCorrodible: true
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:ChangeConstructionNodeBehavior
@@ -70,8 +68,7 @@
     node: destroyedMachineFrame
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -85,7 +82,7 @@
 - type: entity
   parent: CMMachineFrameUnfinished
   id: RMCComputerFrameUnfinished
-  name: computer frame
+  name: 计算机框架
   suffix: RMC14, Unfinished
   placement:
     mode: SnapgridCenter

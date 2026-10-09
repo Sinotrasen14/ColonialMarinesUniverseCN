@@ -1,8 +1,8 @@
 - type: entity
-  name: Footstep
+  name: 脚步声 | Footstep
   id: Footstep
   save: false
-  description: Trace of liquid
+  description: 液体痕迹 | Trace of liquid
   components:
   - type: Clickable
   - type: Tag
@@ -23,8 +23,7 @@
   - type: Fixtures
     fixtures:
       slipFixture:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         mask:
         - ItemMask

@@ -1,16 +1,16 @@
 - type: entity
   parent: DrinkBottlePlasticBaseFull
   id: RMCDrinkCoffee
-  name: coffee
-  description: Careful, the beverage you're about to enjoy is extremely hot.
+  name: 咖啡
+  description: 小心，您即将享用的饮料非常烫。
   components:
   - type: Solution
     id: drink
     solution:
-        maxVol: 50
-        reagents:
-        - ReagentId: RMCCoffee
-          Quantity: 30
+      maxVol: 50
+      reagents:
+      - ReagentId: RMCCoffee
+        Quantity: 30
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/coffee.rsi
     state: base
@@ -38,8 +38,8 @@
 - type: entity
   parent: RMCDrinkCoffee
   id: RMCDrinkCoffeeGrind
-  name: "Cuppa Joe's Dark Roast Coffee"
-  description: "Rise and Shine! Time to drink your Cuppa Joe's!"
+  name: "Cuppa Joe's 深度烘焙咖啡"
+  description: "起床啦，精神焕发！该喝你的 Cuppa Joe's 了！"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/coffee_joe.rsi
@@ -49,8 +49,8 @@
 - type: entity
   parent: RMCDrinkCoffee
   id: RMCDrinkTea
-  name: Duke Purple tea
-  description: An insult to Duke Purple is an insult to the Space Queen! Any proper gentleman will fight you, if you sully this tea.
+  name: 紫公爵茶
+  description: 侮辱紫公爵，就是侮辱太空女王！任何体面的绅士，只要你玷污这茶，都会与你决斗。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/tea.rsi
@@ -58,17 +58,17 @@
     layers: []
   - type: Solution
     solution:
-        maxVol: 50
-        reagents:
-        - ReagentId: RMCTea
-          Quantity: 30
+      maxVol: 50
+      reagents:
+      - ReagentId: RMCTea
+        Quantity: 30
 
 - type: entity
   parent: RMCDrinkTea
   id: RMCDrinkTeaSPP
-  name: insulated container
+  name: 保温容器
   suffix: Tea
-  description: A small, reusable, insulated container for holding liquids with a sip lid.
+  description: 一个小型、可重复使用的保温容器，用于盛放液体，带有吸嘴盖。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/tea.rsi
@@ -76,29 +76,29 @@
     layers: []
   - type: Solution
     solution:
-        maxVol: 30
-        reagents:
-        - ReagentId: RMCTea
-          Quantity: 30
+      maxVol: 30
+      reagents:
+      - ReagentId: RMCTea
+        Quantity: 30
 
 - type: entity
   parent: RMCDrinkTeaSPP
   id: RMCDrinkWaterSPP
-  name: insulated container
+  name: 保温容器
   suffix: Water
   components:
   - type: Solution
     solution:
-        maxVol: 30
-        reagents:
-        - ReagentId: Water
-          Quantity: 30
+      maxVol: 30
+      reagents:
+      - ReagentId: Water
+        Quantity: 30
 
 - type: entity
   parent: RMCDrinkCoffee
   id: RMCDrinkHotCocoa
-  name: dutch hot cocoa
-  description: Made in Space South America.
+  name: 荷兰热可可
+  description: 南美洲太空制造。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Drinks/hot_cocoa.rsi
@@ -106,7 +106,7 @@
     layers: []
   - type: Solution
     solution:
-        maxVol: 50
-        reagents:
-        - ReagentId: RMCHotCocoa
-          Quantity: 30
+      maxVol: 50
+      reagents:
+      - ReagentId: RMCHotCocoa
+        Quantity: 30

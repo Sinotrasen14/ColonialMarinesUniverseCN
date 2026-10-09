@@ -6,8 +6,8 @@
   - RMCXenoSpeechSounds
   - RMCXenoVentCrawler
   id: CMXenoLesserDrone
-  name: Lesser Drone
-  description: An alien drone. Looks... smaller.
+  name: 次级无人机 | Lesser Drone
+  description: 一架外星无人机。看起来……更小。 | An alien drone. Looks... smaller.
   components:
   - type: GhostRole
     name: cmu-job-name-xeno-unknown
@@ -17,24 +17,24 @@
   - type: Sprite
     sprite: CMU14/Mobs/Xenos/LesserDrone/lesser_drone.rsi # AU14-Edit Start
     layers:
-    - map: [ "enum.XenoVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base"]
       state: alive
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
+    - map: ["enum.XenoInhandVisualLayers.Left"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
+    - map: ["enum.XenoInhandVisualLayers.Right"]
       visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
+    - map: ["enum.RMCShieldVisuals.Base"]
       sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
-    - map: [ "focused" ]
+    - map: ["focused"]
       sprite: _RMC14/Interface/xeno_hud.rsi
       state: hudeye
       visible: false
-    - map: [ "targetedDirection" ]
+    - map: ["targetedDirection"]
       sprite: _RMC14/Effects/targeted.rsi
       state: sniper_lockon_direction
       visible: false
-    - map: [ "targetedDirectionIntense" ]
+    - map: ["targetedDirectionIntense"]
       sprite: _RMC14/Effects/targeted.rsi
       state: sniper_lockon_intense_direction
       visible: false  # AU14-Edit End

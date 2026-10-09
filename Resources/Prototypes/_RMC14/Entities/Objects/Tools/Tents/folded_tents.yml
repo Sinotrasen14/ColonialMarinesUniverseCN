@@ -2,61 +2,59 @@
 - type: entity
   parent: BaseItem
   id: RMCTentUNMCStandardFolded
-  name: folded field tent
-  description: A standard Field Tent. This one is just a general purpose version. Unfold in a suitable location for micro-FOB vibes. ENTRANCE TO THE SOUTH.
+  name: 折叠式野战帐篷
+  description: 标准野战帐篷。这一款只是通用版本。在合适的位置展开，营造微型前沿作战基地的氛围。入口朝南。
   components:
-    - type: Item
-      size: Huge
-    - type: Sprite
-      sprite: _RMC14/Objects/Tents/folded_tents.rsi
-      layers:
-        - state: base_tent
-    - type: RMCDeployable
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: _RMC14/Objects/Tents/folded_tents.rsi
+    layers:
+    - state: base_tent
+  - type: RMCDeployable
       # As an example all fields are listed here even if their values match the default value
-      deployTime: 10
-      collapseTime: 10
-      deployArea:
-        !type:PhysShapeAabb
-        bounds: "-0.4,0.6,1.4,4.4" # The non-perfect rectangle allows the tent to be placed close to the walls
-      collapseToolPrototype: CMEntrenchingTool
-      areaBlockedCheck: true
-      failIfNotSurface: true
-      deploySetups:
-        - prototype: RMCTentUNMCStandard
-          neverRedeployableSetup: false
-          mode: ReactiveParental
-          anchor: true
-          offset: 0.2, 0
-          angle: 0
+    deployTime: 10
+    collapseTime: 10
+    deployArea: !type:PhysShapeAabb
+      bounds: "-0.4,0.6,1.4,4.4"   # The non-perfect rectangle allows the tent to be placed close to the walls
+    collapseToolPrototype: CMEntrenchingTool
+    areaBlockedCheck: true
+    failIfNotSurface: true
+    deploySetups:
+    - prototype: RMCTentUNMCStandard
+      neverRedeployableSetup: false
+      mode: ReactiveParental
+      anchor: true
+      offset: 0.2, 0
+      angle: 0
 
 - type: entity
   parent: RMCTentUNMCStandardFolded
   id: RMCTentUNMCBigFolded
-  name: folded big tent
-  description: A standard Field Tent. This one is just a general purpose, large version. Unfold in a suitable location for micro-FOB vibes. ENTRANCE TO THE SOUTH.
+  name: 折叠的大帐篷
+  description: 标准野战帐篷。这只是通用的大型版本。在合适的地点展开，营造微型前沿作战基地的氛围。入口朝南。
   components:
-    - type: RMCDeployable
-      deployTime: 10
-      collapseTime: 10
-      deployArea:
-        !type:PhysShapeAabb
-        bounds: "-0.4,0.6,2.1,4.4" # The non-perfect rectangle allows the tent to be placed close to the walls
-      collapseToolPrototype: CMEntrenchingTool
-      areaBlockedCheck: true
-      failIfNotSurface: true
-      deploySetups:
-        - prototype: RMCTentUNMCStandard
-          neverRedeployableSetup: false
-          mode: ReactiveParental
-          anchor: true
-          offset: 0.2, 0
-          angle: 0
+  - type: RMCDeployable
+    deployTime: 10
+    collapseTime: 10
+    deployArea: !type:PhysShapeAabb
+      bounds: "-0.4,0.6,2.1,4.4"   # The non-perfect rectangle allows the tent to be placed close to the walls
+    collapseToolPrototype: CMEntrenchingTool
+    areaBlockedCheck: true
+    failIfNotSurface: true
+    deploySetups:
+    - prototype: RMCTentUNMCStandard
+      neverRedeployableSetup: false
+      mode: ReactiveParental
+      anchor: true
+      offset: 0.2, 0
+      angle: 0
 
 - type: entity
   parent: RMCTentUNMCStandardFolded
   id: AU14TentBigFoldedSurgical
-  name: folded surgical tent
-  description: A large surgical field tent. This one comes equipped with advanced field surgery facilities. ENTRANCE TO THE SOUTH.
+  name: 折叠手术帐篷
+  description: 一座大型野战手术帐篷。这一顶配备了先进的野战手术设施。入口朝南。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tents/folded_tents.rsi
@@ -66,8 +64,7 @@
   - type: RMCDeployable
     deployTime: 10
     collapseTime: 10
-    deployArea:
-      !type:PhysShapeAabb
+    deployArea: !type:PhysShapeAabb
       bounds: "-0.4,0.6,2.1,4.4" # The non-perfect rectangle allows the tent to be placed close to the walls
     collapseToolPrototype: CMEntrenchingTool
     areaBlockedCheck: true
@@ -105,294 +102,288 @@
 - type: entity
   parent: BaseItem
   id: RMCTentUNMCStandardCommandFolded
-  name: folded command tent
-  description: A standard Command Tent. This one comes equipped with a self-powered Overwatch Console and a Telephone. Unfold in a suitable location to maximize usefulness. Staff Officer not included. ENTRANCE TO THE SOUTH.
+  name: 折叠的指挥帐篷
+  description: 一顶标准指挥帐篷。这顶配备了自供电的监视控制台和一部电话。在合适的位置展开以发挥最大作用。不包含参谋军官。入口朝南。
   components:
-    - type: Item
-      size: Huge
-    - type: Sprite
-      sprite: _RMC14/Objects/Tents/folded_tents.rsi
-      layers:
-        - state: base_tent
-        - state: cmd_base
-    - type: RMCDeployable
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: _RMC14/Objects/Tents/folded_tents.rsi
+    layers:
+    - state: base_tent
+    - state: cmd_base
+  - type: RMCDeployable
       # As an example all fields are listed here even if their values match the default value
-      deployTime: 10
-      collapseTime: 10
-      deployArea:
-        !type:PhysShapeAabb
-        bounds: "-0.4,0.6,1.4,4.4" # The non-perfect rectangle allows the tent to be placed close to the walls
-      collapseToolPrototype: CMEntrenchingTool
-      areaBlockedCheck: true
-      failIfNotSurface: true
-      deploySetups:
-        - prototype: RMCTentUNMCStandardCommand
-          neverRedeployableSetup: false
-          mode: ReactiveParental
-          anchor: true
-          offset: 0.2, 0
-          angle: 0
-        - prototype: RMCTableBrown
-          neverRedeployableSetup: false
-          mode: Default
-          anchor: true
-          offset: -0.5, 0.5
-          angle: 0
-        - prototype: RMCTableBrown
-          neverRedeployableSetup: false
-          mode: Default
-          anchor: true
-          offset: 0.5, 0.5
-          angle: 0
-        - prototype: RMCOverwatchConsoleRotatingPowered
-          neverRedeployableSetup: false
-          mode: Reactive
-          anchor: true
-          offset: -0.5, 0.5
-          angle: 0
-        - prototype: RMCRotaryPhoneCommandTent
-          neverRedeployableSetup: false
-          mode: Reactive
-          anchor: true
-          offset: 0.5, 0.5
-          angle: 0
-        - prototype: CMChair
-          neverRedeployableSetup: false
-          mode: Default
-          anchor: true
-          offset: -0.5, -0.5
-          angle: 180
-        - prototype: CMChair
-          neverRedeployableSetup: false
-          mode: Default
-          anchor: true
-          offset: 0.5, -0.5
-          angle: 180
+    deployTime: 10
+    collapseTime: 10
+    deployArea: !type:PhysShapeAabb
+      bounds: "-0.4,0.6,1.4,4.4"   # The non-perfect rectangle allows the tent to be placed close to the walls
+    collapseToolPrototype: CMEntrenchingTool
+    areaBlockedCheck: true
+    failIfNotSurface: true
+    deploySetups:
+    - prototype: RMCTentUNMCStandardCommand
+      neverRedeployableSetup: false
+      mode: ReactiveParental
+      anchor: true
+      offset: 0.2, 0
+      angle: 0
+    - prototype: RMCTableBrown
+      neverRedeployableSetup: false
+      mode: Default
+      anchor: true
+      offset: -0.5, 0.5
+      angle: 0
+    - prototype: RMCTableBrown
+      neverRedeployableSetup: false
+      mode: Default
+      anchor: true
+      offset: 0.5, 0.5
+      angle: 0
+    - prototype: RMCOverwatchConsoleRotatingPowered
+      neverRedeployableSetup: false
+      mode: Reactive
+      anchor: true
+      offset: -0.5, 0.5
+      angle: 0
+    - prototype: RMCRotaryPhoneCommandTent
+      neverRedeployableSetup: false
+      mode: Reactive
+      anchor: true
+      offset: 0.5, 0.5
+      angle: 0
+    - prototype: CMChair
+      neverRedeployableSetup: false
+      mode: Default
+      anchor: true
+      offset: -0.5, -0.5
+      angle: 180
+    - prototype: CMChair
+      neverRedeployableSetup: false
+      mode: Default
+      anchor: true
+      offset: 0.5, -0.5
+      angle: 180
 
 - type: entity
   parent: BaseItem
   id: RMCTentUNMCStandardMedicalFolded # TODO RMC14: Bonus to speed up operations and reduce pain
-  name: folded medical tent
-  description: A standard medical tent. Unfold in a suitable location to maximize health gains. ENTRANCE TO THE SOUTH.
+  name: 折叠医疗帐篷
+  description: 标准医疗帐篷。在合适的位置展开以最大化生命值收益。入口朝南。
   components:
-    - type: Item
-      size: Huge
-    - type: Sprite
-      sprite: _RMC14/Objects/Tents/folded_tents.rsi
-      layers:
-        - state: base_tent
-        - state: med_base
-    - type: RMCDeployable
-      deployArea:
-        !type:PhysShapeAabb
-        bounds: "-0.4,0.6,1.4,4.4"
-      collapseToolPrototype: CMEntrenchingTool
-      deploySetups:
-        - prototype: RMCTentUNMCStandardMedical
-          mode: ReactiveParental
-          offset: 0.2, 0
-        - prototype: AU14GeneralMedicalVendorLightAlwaysPowered
-          mode: Reactive
-          offset: -0.5, 0.5
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: _RMC14/Objects/Tents/folded_tents.rsi
+    layers:
+    - state: base_tent
+    - state: med_base
+  - type: RMCDeployable
+    deployArea: !type:PhysShapeAabb
+      bounds: "-0.4,0.6,1.4,4.4"
+    collapseToolPrototype: CMEntrenchingTool
+    deploySetups:
+    - prototype: RMCTentUNMCStandardMedical
+      mode: ReactiveParental
+      offset: 0.2, 0
+    - prototype: AU14GeneralMedicalVendorLightAlwaysPowered
+      mode: Reactive
+      offset: -0.5, 0.5
 
-        - prototype: AU14IVFoldable
-          mode: Reactive
-          offset: -0.5, -0.5
+    - prototype: AU14IVFoldable
+      mode: Reactive
+      offset: -0.5, -0.5
 
-        - prototype: RMCTableBrown
-          mode: Reactive
-          offset: 0.5, 0.5
+    - prototype: RMCTableBrown
+      mode: Reactive
+      offset: 0.5, 0.5
 
-        - prototype: RMCRollerBedHospitalSheet
-          neverRedeployableSetup: true
-          anchor: false
-          offset: 0.5, -0.5
+    - prototype: RMCRollerBedHospitalSheet
+      neverRedeployableSetup: true
+      anchor: false
+      offset: 0.5, -0.5
 
-        - prototype: RMCRollerBedHospital
-          neverRedeployableSetup: true
-          anchor: false
-          offset: 0.5, -1.5
+    - prototype: RMCRollerBedHospital
+      neverRedeployableSetup: true
+      anchor: false
+      offset: 0.5, -1.5
 
 # Extended Tents
 - type: entity
   parent: BaseItem
   id: RMCTentUNMCExtendedFolded
-  name: folded extended field tent
-  description: A standard field Tent. This one is just an extended general purpose version. Unfold in a suitable location for mega FOB vibes. ENTRANCE TO THE SOUTH.
+  name: 折叠式扩展野战帐篷
+  description: 标准野战帐篷。这一款只是扩展的通用版本。在合适的位置展开，营造大型前进作战基地的氛围。入口朝南。
   components:
-    - type: Item
-      size: Huge
-    - type: Sprite
-      sprite: _RMC14/Objects/Tents/folded_tents.rsi
-      layers:
-        - state: big_tent
-    - type: RMCDeployable
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: _RMC14/Objects/Tents/folded_tents.rsi
+    layers:
+    - state: big_tent
+  - type: RMCDeployable
       # As an example all fields are listed here even if their values match the default value
-      deployTime: 10
-      collapseTime: 10
-      deployArea:
-        !type:PhysShapeAabb
-        bounds: "-0.4,0.6,3.4,4.4" # The non-perfect rectangle allows the tent to be placed close to the walls
-      collapseToolPrototype: CMEntrenchingTool
-      areaBlockedCheck: true
-      failIfNotSurface: true
-      deploySetups:
-        - prototype: RMCTentUNMCExtended
-          neverRedeployableSetup: false
-          mode: ReactiveParental
-          anchor: true
-          offset: -0.2, 0
-          angle: 0
+    deployTime: 10
+    collapseTime: 10
+    deployArea: !type:PhysShapeAabb
+      bounds: "-0.4,0.6,3.4,4.4"   # The non-perfect rectangle allows the tent to be placed close to the walls
+    collapseToolPrototype: CMEntrenchingTool
+    areaBlockedCheck: true
+    failIfNotSurface: true
+    deploySetups:
+    - prototype: RMCTentUNMCExtended
+      neverRedeployableSetup: false
+      mode: ReactiveParental
+      anchor: true
+      offset: -0.2, 0
+      angle: 0
 
 - type: entity
   parent: BaseItem
   id: RMCTentUNMCExtendedReqFolded
-  name: folded UNMC Requisitions Tent
-  description: A standard UNMC Requisitions Tent. Now, you can enjoy req line anywhere you go! Unfold in a suitable location to maximize resource distribution. ASRS not included. ENTRANCE TO THE SOUTH.
+  name: 折叠的UNMC军需帐篷
+  description: 标准UNMC军需帐篷。现在，无论走到哪里，你都能享受军需补给线！在合适的位置展开，以最大化资源分配。不包含ASRS。入口朝南。
   components:
-    - type: Item
-      size: Huge
-    - type: Sprite
-      sprite: _RMC14/Objects/Tents/folded_tents.rsi
-      layers:
-        - state: big_tent
-        - state: req_big
-    - type: RMCDeployable
-      deployArea:
-        !type:PhysShapeAabb
-        bounds: "-0.4,0.6,3.4,4.4"
-      collapseToolPrototype: CMEntrenchingTool
-      deploySetups:
-        - prototype: RMCTentUNMCExtendedReq
-          mode: ReactiveParental
-          offset: -0.2, 0
-        - prototype: CMChair
-          offset: -0.5, 0.5
-          angle: 270
-        - prototype: RMCTableBrown
-          offset: -1.5, 0.5
-        - prototype: RMCTableBrown
-          offset: -1.5, -0.5
-        - prototype: RMCRotaryPhoneReqTent
-          mode: Reactive
-          offset: -1.5, 0.5
-        - prototype: CMASRSConsolePowered
-          mode: Reactive
-          offset: 0.5, 0.5
-        - prototype: ColMarTechFOBSupplies
-          mode: Reactive
-          offset: 1.5, 0.5
-        - prototype: CMRack
-          offset: 0.5, -1.5
-        - prototype: CMRack
-          offset: 1.5, -1.5
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: _RMC14/Objects/Tents/folded_tents.rsi
+    layers:
+    - state: big_tent
+    - state: req_big
+  - type: RMCDeployable
+    deployArea: !type:PhysShapeAabb
+      bounds: "-0.4,0.6,3.4,4.4"
+    collapseToolPrototype: CMEntrenchingTool
+    deploySetups:
+    - prototype: RMCTentUNMCExtendedReq
+      mode: ReactiveParental
+      offset: -0.2, 0
+    - prototype: CMChair
+      offset: -0.5, 0.5
+      angle: 270
+    - prototype: RMCTableBrown
+      offset: -1.5, 0.5
+    - prototype: RMCTableBrown
+      offset: -1.5, -0.5
+    - prototype: RMCRotaryPhoneReqTent
+      mode: Reactive
+      offset: -1.5, 0.5
+    - prototype: CMASRSConsolePowered
+      mode: Reactive
+      offset: 0.5, 0.5
+    - prototype: ColMarTechFOBSupplies
+      mode: Reactive
+      offset: 1.5, 0.5
+    - prototype: CMRack
+      offset: 0.5, -1.5
+    - prototype: CMRack
+      offset: 1.5, -1.5
 
 - type: entity
   parent: BaseItem
   id: RMCTentUNMCExtendedMessFolded
-  name: folded mess tent
-  description: A standard Mess Tent. This one comes equipped with a kitchen and dining utilities. Unfold in a suitable location to maximize meal handouts. ENTRANCE TO THE SOUTH.
+  name: 折叠的食堂帐篷
+  description: 标准食堂帐篷。这款配备了厨房和用餐设施。在合适的位置展开，以最大化餐食发放。入口朝南。
   components:
-    - type: Item
-      size: Huge
-    - type: Sprite
-      sprite: _RMC14/Objects/Tents/folded_tents.rsi
-      layers:
-        - state: big_tent
-        - state: mess_big
-    - type: RMCDeployable
-      deployArea:
-        !type:PhysShapeAabb
-        bounds: "-0.4,0.6,3.4,4.4"
-      collapseToolPrototype: CMEntrenchingTool
-      deploySetups:
-        - prototype: RMCTentUNMCExtendedMess
-          mode: ReactiveParental
-          offset: -0.2, 0
-        - prototype: RMCTableBrown
-          offset: -0.5, 0.5
-        - prototype: RMCTableBrown
-          offset: -1.5, 0.5
-        - prototype: RMCTableBrown
-          offset: -1.5, -0.5
-        - prototype: CMMicrowaveLockedPowered
-          mode: Reactive
-          offset: -1.5, 0.5
-        - prototype: RMCRotaryPhoneMessTent
-          mode: Reactive
-          offset: -1.5, -0.5
-        - prototype: CMVendorIngredientsLockedPowered
-          mode: Reactive
-          offset: 0.5, 0.5
-        - prototype: CMRack
-          offset: 1.5, 0.5
-        - prototype: RMCRollingPin
-          neverRedeployableSetup: true
-          anchor: false
-          offset: 1.5, 0.5
-        - prototype: RMCKitchenKnifeChef
-          neverRedeployableSetup: true
-          anchor: false
-          offset: 1.5, 0.5
-        - prototype: RMCTankReagentWaterLocked
-          mode: Reactive
-          offset: 0.5, -1.5
-        - prototype: CMVendorCoffeeLockedPowered
-          mode: Reactive
-          offset: 1.5, -1.5
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: _RMC14/Objects/Tents/folded_tents.rsi
+    layers:
+    - state: big_tent
+    - state: mess_big
+  - type: RMCDeployable
+    deployArea: !type:PhysShapeAabb
+      bounds: "-0.4,0.6,3.4,4.4"
+    collapseToolPrototype: CMEntrenchingTool
+    deploySetups:
+    - prototype: RMCTentUNMCExtendedMess
+      mode: ReactiveParental
+      offset: -0.2, 0
+    - prototype: RMCTableBrown
+      offset: -0.5, 0.5
+    - prototype: RMCTableBrown
+      offset: -1.5, 0.5
+    - prototype: RMCTableBrown
+      offset: -1.5, -0.5
+    - prototype: CMMicrowaveLockedPowered
+      mode: Reactive
+      offset: -1.5, 0.5
+    - prototype: RMCRotaryPhoneMessTent
+      mode: Reactive
+      offset: -1.5, -0.5
+    - prototype: CMVendorIngredientsLockedPowered
+      mode: Reactive
+      offset: 0.5, 0.5
+    - prototype: CMRack
+      offset: 1.5, 0.5
+    - prototype: RMCRollingPin
+      neverRedeployableSetup: true
+      anchor: false
+      offset: 1.5, 0.5
+    - prototype: RMCKitchenKnifeChef
+      neverRedeployableSetup: true
+      anchor: false
+      offset: 1.5, 0.5
+    - prototype: RMCTankReagentWaterLocked
+      mode: Reactive
+      offset: 0.5, -1.5
+    - prototype: CMVendorCoffeeLockedPowered
+      mode: Reactive
+      offset: 1.5, -1.5
         # TODO RMC14: Food processor
 
 - type: entity
   parent: BaseItem
   id: RMCTentUNMCExtendedMPFolded
-  name: folded UNMC Military Police Tent
-  description: A standard UNMC Military Police Tent. This one comes equipped with a single detention cell and detainee handling equipment. Unfold in a suitable location to maximize order enforcement. ENTRANCE TO THE SOUTH.
+  name: 折叠的UNMC宪兵帐篷
+  description: 一座标准的UNMC宪兵帐篷。这一顶配备一间单独的拘留室和在押人员处置设备。请在合适的位置展开，以最大限度地维持秩序。入口朝南。
   components:
-    - type: Item
-      size: Huge
-    - type: Sprite
-      sprite: _RMC14/Objects/Tents/folded_tents.rsi
-      layers:
-        - state: big_tent
-        - state: mp_big
-    - type: RMCDeployable
-      deployArea:
-        !type:PhysShapeAabb
-        bounds: "-0.4,0.6,3.4,4.4"
-      collapseToolPrototype: CMEntrenchingTool
-      deploySetups:
-        - prototype: RMCTentUNMCExtendedMP
-          mode: ReactiveParental
-          offset: -0.2, 0
-        - prototype: CMChair
-          offset: -0.5, 0.5
-          angle: 270
-        - prototype: RMCTableBrown
-          offset: -1.5, 0.5
-        - prototype: RMCTableBrown
-          offset: -1.5, -0.5
-        - prototype: RMCMonitorCameraAlmayer # TODO RMC14: replace with crime record console
-          mode: Reactive
-          offset: -1.5, 0.5
-          angle: 90
-        - prototype: RMCRotaryPhoneMPTent
-          mode: Reactive
-          offset: -1.5, -0.5
-        - prototype: CMWindowStrongReinforcedDirectional
-          mode: Reactive
-          offset: 0.5, 0.5
-          angle: 270
-        - prototype: CMWindoorSecureBrigPowered
-          mode: Reactive
-          offset: 0.5, -0.5
-          angle: 270
-        - prototype: CMToiletEmpty
-          mode: Reactive
-          offset: 1.5, 0.5
-          angle: 270
-        - prototype: CMBed
-          offset: 1.5, -0.5
-        - prototype: CMLockerPolice
-          offset: 0.5, -1.5
-        - prototype: CMLockerPolice
-          offset: 1.5, -1.5
+  - type: Item
+    size: Huge
+  - type: Sprite
+    sprite: _RMC14/Objects/Tents/folded_tents.rsi
+    layers:
+    - state: big_tent
+    - state: mp_big
+  - type: RMCDeployable
+    deployArea: !type:PhysShapeAabb
+      bounds: "-0.4,0.6,3.4,4.4"
+    collapseToolPrototype: CMEntrenchingTool
+    deploySetups:
+    - prototype: RMCTentUNMCExtendedMP
+      mode: ReactiveParental
+      offset: -0.2, 0
+    - prototype: CMChair
+      offset: -0.5, 0.5
+      angle: 270
+    - prototype: RMCTableBrown
+      offset: -1.5, 0.5
+    - prototype: RMCTableBrown
+      offset: -1.5, -0.5
+    - prototype: RMCMonitorCameraAlmayer     # TODO RMC14: replace with crime record console
+      mode: Reactive
+      offset: -1.5, 0.5
+      angle: 90
+    - prototype: RMCRotaryPhoneMPTent
+      mode: Reactive
+      offset: -1.5, -0.5
+    - prototype: CMWindowStrongReinforcedDirectional
+      mode: Reactive
+      offset: 0.5, 0.5
+      angle: 270
+    - prototype: CMWindoorSecureBrigPowered
+      mode: Reactive
+      offset: 0.5, -0.5
+      angle: 270
+    - prototype: CMToiletEmpty
+      mode: Reactive
+      offset: 1.5, 0.5
+      angle: 270
+    - prototype: CMBed
+      offset: 1.5, -0.5
+    - prototype: CMLockerPolice
+      offset: 0.5, -1.5
+    - prototype: CMLockerPolice
+      offset: 1.5, -1.5

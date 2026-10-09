@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructureDynamic
   id: RMCHospitalDivider
-  name: hospital divider
-  description: A hospital divider for privacy.
+  name: 医用隔帘
+  description: 用于保护隐私的医院隔帘。
   components:
   - type: XenoCrusherChargable
     instantDestroy: true
@@ -21,8 +21,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.03
         density: 155
         mask:
@@ -40,8 +39,7 @@
     otherMultiplier: 1
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior

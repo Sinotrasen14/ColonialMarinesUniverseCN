@@ -8,8 +8,8 @@
   - RMCXenoCommendationReceiver
   - RMCXenoMobCollision
   id: CMXenoBoiler
-  name: Boiler
-  description: A huge, grotesque xenonid covered in glowing, oozing acid slime.
+  name: 沸腾者 | Boiler
+  description: 一只巨大、怪诞的异形生物，全身覆盖着发光、渗出的酸性黏液。 | A huge, grotesque xenonid covered in glowing, oozing acid slime.
   components:
   - type: GuideHelp
     guides:
@@ -21,8 +21,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 185
         mask:
@@ -32,8 +31,7 @@
         layer:
         - MobLayer
       fix2:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 185
         layer:
@@ -163,17 +161,17 @@
     affectsDead: false
     affectsInfectedNested: false
     toxinDamage:
-        types:
-          Poison: 1
-          Radiation: 1
+      types:
+        Poison: 1
+        Radiation: 1
     oxygenDamage:
-        types:
-          Asphyxiation: 150
+      types:
+        Asphyxiation: 150
     coughDamage:
-        types:
-          Blunt: 1.66
-          Slash: 1.67
-          Piercing: 1.67
+      types:
+        Blunt: 1.66
+        Slash: 1.67
+        Piercing: 1.67
   - type: RMCXenoDamageVisuals
     prefix: boiler
   - type: TacticalMapIcon
@@ -214,7 +212,7 @@
   - type: NeurotoxinInjector
   - type: XenoEvolution
     strains:
-      - RMCXenoBoilerSapper
+    - RMCXenoBoilerSapper
   - type: RMCActionOrder
     id: RMCXenoBoiler
 

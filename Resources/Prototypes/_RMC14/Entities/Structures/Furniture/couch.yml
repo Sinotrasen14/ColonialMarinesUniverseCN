@@ -2,8 +2,8 @@
 - type: entity
   parent: SeatBase
   id: RMCCouchMid
-  name: couch
-  description: A piece of Swedish flat pack furniture, just dont ask the MTs for an Allen key.
+  name: 沙发
+  description: 一件瑞典平板包装家具，不过别向MTs要内六角扳手。
   suffix: Mid, Double
   placement:
     mode: SnapgridCenter
@@ -31,8 +31,7 @@
     otherMultiplier: 1
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -86,7 +85,7 @@
 - type: entity
   parent: RMCCouchMid
   id: RMCCouchMidRed
-  name: red couch
+  name: 红色沙发
   suffix: Mid
   components:
   - type: Sprite
@@ -96,7 +95,7 @@
 - type: entity
   parent: RMCCouchMidRed
   id: RMCCouchEndLowerRed
-  name: red couch
+  name: 红色沙发
   suffix: End, Lower
   components:
   - type: CMUReconFurniture
@@ -107,7 +106,7 @@
 - type: entity
   parent: RMCCouchMidRed
   id: RMCCouchEndUpperRed
-  name: red couch
+  name: 红色沙发
   suffix: End, Upper
   components:
   - type: CMUReconFurniture
@@ -119,7 +118,7 @@
 - type: entity
   parent: RMCCouchMid
   id: RMCCouchMidBlack
-  name: black couch
+  name: 黑色沙发
   suffix: Mid
   components:
   - type: Sprite
@@ -150,7 +149,7 @@
 - type: entity
   parent: RMCCouchMid
   id: RMCCouchMidBrown
-  name: brown couch
+  name: 棕色沙发
   suffix: Mid
   components:
   - type: Sprite
@@ -181,7 +180,7 @@
 - type: entity
   parent: RMCCouchMidBrown
   id: RMCCouchMidBrownAlt
-  name: brown couch
+  name: 棕色沙发
   suffix: Mid, Alt
   components:
   - type: Sprite
@@ -213,8 +212,8 @@
   parent: RMCCouchMid
   id: RMCCouchLeftBar
   suffix: Left
-  name: bar booth
-  description: An old wooden booth with red cushioning. There are stains in the cushions.
+  name: 酒吧卡座
+  description: 一个旧木制卡座，带有红色软垫。软垫上有污渍。
   components:
   - type: CMUReconFurniture
     material: CouchLeft

@@ -11,8 +11,8 @@
 - type: entity
   parent: VehicleHumveeHardpointBase
   id: VehicleHumveeWheel # CMU14
-  name: humvee wheel
-  description: A reinforced humvee wheel.
+  name: 悍马车轮
+  description: 加固型悍马车轮。
   components:
   - type: Sprite
     state: tires
@@ -31,8 +31,8 @@
 - type: entity
   parent: VehicleHumveeHardpointBase
   id: VehicleHumveeTurret
-  name: humvee turret
-  description: A roof-mounted humvee turret.
+  name: 悍马炮塔
+  description: 车顶安装的悍马炮塔。
   components:
   - type: Sprite
     state: humveeturret
@@ -91,8 +91,8 @@
 - type: entity
   parent: VehicleHumveeTurret
   id: VehicleHumveeTurretArmed
-  name: humvee turret
-  description: A roof-mounted humvee turret pre-fitted with its cannon.
+  name: 悍马炮塔
+  description: 一个安装在车顶的悍马炮塔，已预先配备其火炮。
   components:
   - type: ItemSlots
     slots:
@@ -111,8 +111,8 @@
 - type: entity
   parent: VehicleHumveeTurret
   id: VehicleHumveeARCTurret
-  name: humvee turret
-  description: A roof-mounted humvee turret pre-fitted with its ARC cannon.
+  name: 悍马炮塔
+  description: 一个车顶安装的悍马炮塔，已预装其ARC加农炮。
   components:
   - type: ItemSlots
     slots:
@@ -131,15 +131,15 @@
 - type: entity
   parent: VehicleHumveeHardpointBase
   id: VehicleHumveeCannon
-  name: humvee cannon
-  description: A fixed forward cannon for a humvee hardpoint.
+  name: 悍马机炮
+  description: 用于悍马挂载点的固定前向机炮。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: humveecannon
   - type: HardpointItem
@@ -195,15 +195,15 @@
 - type: entity
   parent: VehicleHumveeCannon
   id: VehicleHumveeARCCannon
-  name: ARC cannon
-  description: A burst-fire cannon configured for an ARC humvee turret.
+  name: ARC 机炮
+  description: 一种为 ARC 悍马车炮塔配置的点射机炮。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 125
   - type: Gun
@@ -217,15 +217,15 @@
 - type: entity
   parent: VehicleHumveeHardpointBase
   id: VehicleHumveeLauncher
-  name: humvee launcher
-  description: A launcher hardpoint for a humvee.
+  name: 悍马发射器
+  description: 悍马的发射器挂载点。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: humveelauncher
   - type: HardpointItem
@@ -276,8 +276,8 @@
 - type: entity
   parent: VehicleHumveeHardpointBase
   id: VehicleHumveeSnowplow
-  name: humvee snowplow
-  description: A reinforced plow attachment for a humvee.
+  name: 悍马雪犁
+  description: 用于悍马的加固型雪犁附件。
   components:
   - type: Sprite
     state: snowplow
@@ -301,8 +301,8 @@
 - type: entity
   parent: VehicleHumveeHardpointBase
   id: VehicleHumveeOverlight
-  name: humvee overlight
-  description: An overlight array for a humvee.
+  name: 悍马顶灯
+  description: 悍马的车顶灯阵列。
   components:
   - type: Sprite
     state: overlight
@@ -323,8 +323,8 @@
 - type: entity
   parent: VehicleHumveeHardpointBase
   id: VehicleHumveeHatch
-  name: humvee hatch
-  description: A hatch assembly for a humvee.
+  name: 悍马舱门
+  description: 一种用于悍马的舱门总成。
   components:
   - type: Sprite
     state: humveehatch

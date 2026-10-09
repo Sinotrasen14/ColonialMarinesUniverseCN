@@ -1,7 +1,7 @@
 - type: entity # TODO RMC14 sound
   id: XenoWeeds
-  name: weeds
-  description: Weird black weeds...
+  name: 杂草
+  description: 怪异的黑色杂草……
   placement:
     mode: SnapgridCenter
     snap:
@@ -20,8 +20,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         layer:
         - SlipLayer
@@ -96,12 +95,11 @@
     damageContainer: StructuralXeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: ImmuneToUnarmed
   - type: CMIconSmooth
     smooth: true
@@ -151,8 +149,8 @@
 - type: entity # TODO RMC14 sound
   parent: XenoWeeds
   id: XenoWeedsSource
-  name: weed node
-  description: A weird, pulsating node
+  name: 杂草节点
+  description: 一个怪异、搏动的节点
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/xeno_weeds.rsi
@@ -162,12 +160,11 @@
     - state: constructionnode
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 11
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: XenoConstructionPlasmaCost
     plasma: 215
   - type: RMCDeleteAnchoredOnInit
@@ -220,7 +217,7 @@
 - type: entity # TODO RMC14 sound
   parent: XenoWeeds
   id: XenoHiveWeeds
-  name: hive weeds
+  name: 蜂巢杂草
   placement:
     mode: SnapgridCenter
     snap:
@@ -286,12 +283,11 @@
         hive_weed15: ""
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 15
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Flamability
     chance: 0.3
     rate: 1.0
@@ -323,8 +319,8 @@
 - type: entity # TODO RMC14 sound
   parent: XenoHiveWeeds
   id: XenoHiveWeedsSource
-  name: hive weed node
-  description: A weird, pulsating node
+  name: 蜂巢杂草节点
+  description: 一个怪异、搏动着的节点
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/xeno_weeds.rsi
@@ -334,12 +330,11 @@
     - state: constructionnode
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 11 # TODO RMC14 30 after it finishes spreading
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: RMCDeleteAnchoredOnInit
     enabled: true
     whitelist:
@@ -386,7 +381,7 @@
 
 - type: entity
   id: XenoWeedsWall
-  name: weeds
+  name: 杂草
   placement:
     mode: SnapgridCenter
     snap:
@@ -400,8 +395,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         layer:
         - WallLayer
@@ -428,12 +422,11 @@
     damageContainer: StructuralXeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: ImmuneToUnarmed
   - type: WallMount
     arc: 360
@@ -459,18 +452,17 @@
     spreadDelay: 3.125
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 10
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity # TODO RMC14 sound
   parent: XenoHardyWeeds
   id: XenoHardyWeedsSource
-  name: hardy weed node
-  description: A weird, pulsating node
+  name: 耐寒杂草节点
+  description: 一个怪异的、搏动着的节点
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/xeno_weeds.rsi
@@ -488,12 +480,11 @@
   - type: QueenEyeVision
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 11
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: XenoWeeds
     healOnStopSpreading:
       types:
@@ -503,7 +494,7 @@
   - type: Tag
     tags:
     - XenoWeedNode
-    
+
 
 - type: entity
   parent: XenoHardyWeeds

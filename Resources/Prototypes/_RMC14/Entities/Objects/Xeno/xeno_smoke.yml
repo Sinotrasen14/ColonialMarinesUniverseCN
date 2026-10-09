@@ -1,7 +1,7 @@
 - type: entity
   id: RMCSmokeAcid
-  name: acid gas
-  categories: [ HideSpawnMenu ]
+  name: 酸性气体
+  categories: [HideSpawnMenu]
   components:
   - type: Transform
     anchored: true
@@ -10,8 +10,7 @@
     fixtures:
       fix1:
         hard: false
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         mask:
         - MobMask
@@ -58,7 +57,7 @@
 
 - type: entity
   id: RMCSmokeNeurotoxin
-  name: neurotoxin gas
+  name: 神经毒素气体
   #categories: [ HideSpawnMenu ]
   components:
   - type: Transform
@@ -68,8 +67,7 @@
     fixtures:
       fix1:
         hard: false
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         mask:
         - MobMask
@@ -99,17 +97,17 @@
     affectsDead: false
     affectsInfectedNested: false
     toxinDamage:
-        types:
-          Poison: 1
-          Radiation: 1
+      types:
+        Poison: 1
+        Radiation: 1
     oxygenDamage:
-        types:
-          Asphyxiation: 150
+      types:
+        Asphyxiation: 150
     coughDamage:
-        types:
-          Blunt: 1.66
-          Slash: 1.67
-          Piercing: 1.67
+      types:
+        Blunt: 1.66
+        Slash: 1.67
+        Piercing: 1.67
   - type: DamageOverTime
     affectsDead: false
     affectsInfectedNested: false
@@ -126,8 +124,8 @@
 
 - type: entity
   id: RMCSmokeRunner
-  name: acid smoke
-  categories: [ HideSpawnMenu ]
+  name: 酸烟
+  categories: [HideSpawnMenu]
   components:
   - type: Transform
     anchored: true
@@ -136,8 +134,7 @@
     fixtures:
       fix1:
         hard: false
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         mask:
         - MobMask
@@ -158,8 +155,8 @@
 
 - type: entity
   id: XenoReaperRedGas
-  name: red gas
-  categories: [ HideSpawnMenu ]
+  name: 红色气体
+  categories: [HideSpawnMenu]
   components:
   - type: Transform
     anchored: true
@@ -168,8 +165,7 @@
     fixtures:
       fix1:
         hard: false
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         mask:
         - MobMask
@@ -190,7 +186,7 @@
 
 - type: entity
   id: RMCSmokeKingDoom
-  name: king doom
+  name: 杜姆王
   components:
   - type: Transform
     anchored: true
@@ -199,8 +195,7 @@
     fixtures:
       fix1:
         hard: false
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         mask:
         - MobMask
@@ -230,8 +225,8 @@
 - type: entity
   parent: RMCSmokeAcid
   id: RMCSmokeAcidShroud
-  name: acid gas
-  categories: [ HideSpawnMenu ]
+  name: 酸性气体
+  categories: [HideSpawnMenu]
   components:
   - type: EvenSmoke
     spawn: RMCSmokeAcidShroud
@@ -240,8 +235,8 @@
 - type: entity
   parent: RMCSmokeNeurotoxin
   id: RMCSmokeNeurotoxinShroud
-  name: neurotoxin gas
-  categories: [ HideSpawnMenu ]
+  name: 神经毒素气体
+  categories: [HideSpawnMenu]
   components:
   - type: EvenSmoke
     spawn: RMCSmokeNeurotoxinShroud
@@ -250,8 +245,8 @@
 - type: entity
   parent: RMCSmokeAcid
   id: RMCSmokeAcidDeathcloud
-  name: acid gas
-  categories: [ HideSpawnMenu ]
+  name: 酸性气体
+  categories: [HideSpawnMenu]
   components:
   - type: EvenSmoke
     spawn: RMCSmokeAcidDeathcloud

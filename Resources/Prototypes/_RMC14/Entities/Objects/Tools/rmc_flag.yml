@@ -1,13 +1,13 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: BaseItem
   id: RMCFlagCarriableBase
-  name: flag
+  name: 旗帜
   components:
   - type: Sprite
     layers:
     - state: icon
-      map: [ "base" ]
+      map: ["base"]
   - type: Item
     size: Large
   - type: Corrodible
@@ -18,14 +18,14 @@
     visuals:
       enum.PlantableFlagVisuals.Planted:
         base:
-          True: { state: deploy }
-          False: { state: icon }
+          true: {state: deploy}
+          false: {state: icon}
 
 - type: entity
   parent: RMCFlagCarriableBase
   id: RMCFlagCarriableUN
-  name: UN flag
-  description: "The flag of the UN." # This one looks ready to be planted into the ground."
+  name: 联合国旗帜
+  description: "联合国旗帜。"              # This one looks ready to be planted into the ground."
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Flags/un_flag.rsi
@@ -37,8 +37,8 @@
 - type: entity
   parent: RMCFlagCarriableBase
   id: RMCFlagCarriableUNMC
-  name: UNMC flag
-  description: "The flag of the UNMC." # This one looks ready to be planted into the ground."
+  name: UNMC旗帜
+  description: "UNMC的旗帜。"              # This one looks ready to be planted into the ground."
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Flags/unmc_flag.rsi

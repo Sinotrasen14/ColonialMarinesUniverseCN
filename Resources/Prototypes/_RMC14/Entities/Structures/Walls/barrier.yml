@@ -1,8 +1,8 @@
 - type: entity
   parent: DeployableBarrier
   id: CMDeployableBarrier
-  name: deployable barrier
-  description: A deployable barrier. Swipe your ID card to lock/unlock it.
+  name: 可部署屏障
+  description: 一种可部署屏障。刷身份卡即可锁定或解锁。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/barrier.rsi
@@ -20,12 +20,11 @@
     unlockTime: 1
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]

@@ -1,15 +1,15 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankLTBCannon # CMU14
-  name: LTB cannon
-  description: A light tank cannon hardpoint.
+  name: LTB火炮
+  description: 轻型坦克火炮挂载点。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: ltb_cannon
   - type: HardpointItem
@@ -73,15 +73,15 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankLTAAAPMinigun
-  name: LTAAAP minigun
-  description: A light anti-air minigun hardpoint.
+  name: LTAAAP 迷你炮
+  description: 轻型防空迷你炮挂载点。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: ltaaap_minigun
   - type: HardpointItem
@@ -165,15 +165,15 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankAceAutocannon # CMU14
-  name: ACE autocannon
-  description: An ACE autocannon hardpoint.
+  name: ACE自动加农炮
+  description: 一个ACE自动加农炮挂点。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: ace_autocannon
   - type: HardpointItem
@@ -243,15 +243,15 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankAutocannonTWE # CMU14
-  name: Improper L26A2 45mm Autocannon
-  description: Tosubishi Heavy Industrial Manufacturing main gun for the FV150. Its rapid fire rate and multipurpose ammunition offers stopping power against infantry, structures, and medium armor. Careful use can even disable tanks.
+  name: 不当 L26A2 45毫米自动炮
+  description: Tosubishi重工业制造公司为FV150制造的主炮。其高射速与多用途弹药对步兵、建筑和中型装甲具有停止作用。谨慎使用甚至能使坦克失能。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: CMU14/Structures/vehicles/fv150/icons.rsi
     state: heavy_autocannon
@@ -320,15 +320,15 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankHeavyElectrolaserTWE # CMU14
-  name: Improper L215A1 Heavy Electrolaser
-  description: An experimental prototype made by Tosubishi Heavy Industrial Manufacturing. An arcing electroshock laser assisted cannon, currently going through field testing. Theoretically it has limitless firing potential, as long as it is powered.
+  name: 非正规 L215A1 重型电激光炮
+  description: 由托苏比希重工业制造公司制造的一款实验性原型机。一门电弧放电式电击激光辅助炮，目前正在进行实地测试。理论上，只要为其供能，它就具有无限的射击潜力。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: CMU14/Structures/vehicles/fv150/icons.rsi
     state: heavy_electrolaser
@@ -396,15 +396,15 @@
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankDragonFlamer # CMU14
-  name: DRGN flamer
-  description: A DRGN flamer hardpoint.
+  name: DRGN 火焰喷射器
+  description: 一个 DRGN 火焰喷射器挂载点。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     state: drgn_flamer
   - type: HardpointItem

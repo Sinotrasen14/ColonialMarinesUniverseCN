@@ -1,14 +1,14 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: RMCWeaponRifleL88A1
-  name: L88A1 bullpup rifle
-  description: The L88A1 is the standard-issue rifle of the RCM's Paramarine regiments, the first iteration in a series of innovative rifle designs offering a lightweight, accurate, and reliable option for the armed forces of the TSE.
+  name: L88A1无托步枪
+  description: L88A1是RCM伞兵陆战团的制式步枪，也是一系列创新步枪设计中的首个型号，为TSE武装部队提供了轻便、精准且可靠的选择。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/l88.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: ItemMapper
     mapLayers:
       mag-0:
@@ -42,11 +42,11 @@
     accuracyMultiplierUnwielded: 0.65
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -93,13 +93,13 @@
 - type: entity
   parent: RMCWeaponRifleL88A1
   id: RMCWeaponRifleL88A2
-  name: L88A2 bullpup rifle
-  description: The L88A2 is the second iteration in the L88 series of rifles. The A2 variant offers greater modularity with a rail spanning the underside of the handguard.
+  name: L88A2无托步枪
+  description: L88A2是L88系列步枪的第二代型号。A2型在护木下方增设了一条导轨，从而具备更高的模块化程度。
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -155,7 +155,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL88
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -196,7 +196,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleL88
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -241,15 +241,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleL88
-  name: L88 magazine (10x24mm)
-  description: "A magazine of 10x24mm rounds for use in L88 pattern rifles."
+  name: L88 弹匣（10×24毫米）
+  description: "用于L88型步枪的10×24毫米弹药弹匣。"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleL88
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mm
@@ -265,12 +265,12 @@
   - type: Appearance
   - type: RefillableByBulletBox
     bulletType: RMCBoxBulletsRifle
-    
+
 - type: entity
   parent: RMCMagazineRifleL88
   id: RMCMagazineRifleL88AP
-  name: L88 AP magazine (10x24mm)
-  description: "A magazine of armor-piercing 10x24mm rounds for use in L88 pattern rifles."
+  name: L88穿甲弹匣（10×24毫米）
+  description: "用于L88型步枪的10×24毫米穿甲弹弹匣。"
   suffix: AP
   components:
   - type: Tag
@@ -286,9 +286,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/l88.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#1F951F"
   - type: Appearance

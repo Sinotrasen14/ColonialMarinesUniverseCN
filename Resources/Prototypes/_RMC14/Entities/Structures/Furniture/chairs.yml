@@ -6,13 +6,13 @@
   abstract: true
   parent: SeatBase
   id: CMSeatBase
-  name: abstract chair
+  name: 抽象椅子
   suffix: RMC
   components:
   - type: ResinClearable # CMU14
   - type: CMUReconFurniture
     material: Chair
-  - type: CMUZPhysics 
+  - type: CMUZPhysics
   - type: Corrodible
     timeToApply: 4
     structure: true
@@ -34,8 +34,7 @@
     otherMultiplier: 1
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -54,10 +53,10 @@
       - Xeno
 
 - type: entity
-  parent: [ CMSeatBase, ChairFolding ]
+  parent: [CMSeatBase, ChairFolding]
   id: CMChair
-  name: chair
-  description: A rectangular metallic frame sitting on four legs with a back panel. Designed to fit the sitting position, more or less comfortably.
+  name: 椅子
+  description: 一个带有靠背板的矩形金属框架，由四条腿支撑。其设计旨在适配坐姿，坐起来或多或少还算舒适。
   components:
   - type: CMUReconFurniture
     material: FoldingChair
@@ -108,8 +107,8 @@
   parent: CMSeatBase
   id: CMChairNonFold
   abstract: true
-  name: chair
-  description: A rectangular metallic frame sitting on four legs with a back panel. Designed to fit the sitting position, more or less comfortably.
+  name: 椅子
+  description: 一个带有靠背板的矩形金属框架，置于四条腿上。设计用于贴合坐姿，或多或少较为舒适。
   components:
   - type: Transform
     anchored: false
@@ -134,8 +133,8 @@
 - type: entity
   parent: CMChairNonFold
   id: RMCStool
-  name: stool
-  description: Apply butt.
+  name: 凳子
+  description: 把屁股放上去。
   components:
   - type: CMUReconFurniture
     material: Stool
@@ -149,8 +148,8 @@
 - type: entity
   parent: CMSeatBase
   id: CMChairComfy
-  name: comfy chair
-  description: A chair with leather padding and adjustable headrest. You could probably sit in one of these for ages.
+  name: 舒适的椅子
+  description: 一把配有皮革软垫和可调节头枕的椅子。你大概能在这类椅子上坐很久。
   placement:
     mode: SnapgridCenter
   components:
@@ -170,7 +169,7 @@
 - type: entity
   parent: CMChairComfy
   id: CMChairComfyARES
-  description: A functional chair designed for comfortably sitting a single person with intent to facilitate interactions with the ship AI.
+  description: 一把功能性座椅，设计用于让单人舒适地坐着，旨在促进与飞船人工智能的互动。
   suffix: RMC|ARES
   components:
   - type: Sprite
@@ -179,7 +178,7 @@
 - type: entity
   parent: CMChairComfyARES
   id: RMCChairComfyAI
-  name: AI interface chair
+  name: AI界面椅
   suffix: RMC|AI
   components:
   - type: Sprite
@@ -236,7 +235,7 @@
 - type: entity
   parent: CMChairComfy
   id: CMChairComfyAlpha
-  description: A simple chair permanently attached to the floor, with the spinning parts removed to force soldiers with low attention spans to keep still during briefings. Covered with a squeaky and way too hard faux-leather, unevenly painted in Alpha squad red. Only for the bravest and freshest Marine recruits.
+  description: 一把简单的椅子，永久固定在地板上，旋转部件已被拆除，以迫使注意力难以持久的士兵在简报期间保持不动。表面覆着吱嘎作响且硬得过分的人造革，用阿尔法小队红色涂得深浅不均。只供最勇敢、最新入伍的海军陆战队新兵使用。
   suffix: RMC|Alpha
   components:
   - type: Sprite
@@ -245,7 +244,7 @@
 - type: entity
   parent: CMChairComfy
   id: CMChairComfyBravo
-  description: A simple chair permanently attached to the floor, with the spinning parts removed to force soldiers with low attention spans to keep still during briefings. Covered with a squeaky and way too hard faux-leather, unevenly painted in Bravo squad brown. Certified fortified on all sides from enemy incursion.
+  description: 一张永久固定在地板上的简易椅子，旋转部件已被拆除，以迫使注意力不集中的士兵在简报期间保持不动。表面覆盖着吱嘎作响且硬得离谱的人造革，涂着不均匀的布拉沃小队棕色。经认证四面加固，可抵御敌军入侵。
   suffix: RMC|Bravo
   components:
   - type: Sprite
@@ -254,7 +253,7 @@
 - type: entity
   parent: CMChairComfy
   id: CMChairComfyCharlie
-  description: A simple chair permanently attached to the floor, with the spinning parts removed to force soldiers with low attention spans to keep still during briefings. Covered with a squeaky and way too hard faux-leather, unevenly painted in Charlie squad purple. Feels out of place without a full breakfast to accompany it.
+  description: 一把简单的椅子，永久固定在地板上，旋转部件被拆掉，以迫使注意力持续时间短的士兵在简报期间保持不动。表面覆盖着吱吱作响且硬得要命的人造革，被不均匀地漆成查理小队紫色。若没有一顿丰盛的早餐与之相伴，就显得格格不入。
   suffix: RMC|Charlie
   components:
   - type: Sprite
@@ -263,7 +262,7 @@
 - type: entity
   parent: CMChairComfy
   id: CMChairComfyDelta
-  description: A simple chair permanently attached to the floor, with the spinning parts removed to force soldiers with low attention spans to keep still during briefings. Covered with a squeaky and way too hard faux-leather, unevenly painted in Delta squad blue. This chair is most likely to be the first to fight and first to die.
+  description: 一把简单的椅子，永久固定在地板上，旋转部件已被拆除，以迫使注意力不集中的士兵在简报期间保持不动。表面覆着吱吱作响且硬得离谱的人造革，用德尔塔小队蓝不均匀地涂装。这把椅子最可能最先投入战斗，也最先阵亡。
   suffix: RMC|Delta
   components:
   - type: Sprite
@@ -272,7 +271,7 @@
 - type: entity
   parent: CMChairComfy
   id: RMCChairComfyAlien
-  name: alien chair
+  name: 外星椅子
   suffix: RMC|Alien
   components:
   - type: Sprite
@@ -282,8 +281,8 @@
 - type: entity
   parent: CMSeatBase
   id: RMCSofa
-  name: sofa
-  description: A very comfortable looking sofa for one. Watch out, lest you fall asleep in it's soft upholstery.
+  name: 沙发
+  description: 一张看起来非常舒适的单人沙发。小心，别在它柔软的软垫上睡着了。
   placement:
     mode: SnapgridCenter
   components:
@@ -301,7 +300,7 @@
 - type: entity
   parent: RMCSofa
   id: RMCSofaRed
-  name: red sofa
+  name: 红色沙发
   components:
   - type: Sprite
     state: sofa_red
@@ -309,7 +308,7 @@
 - type: entity
   parent: RMCSofa
   id: RMCSofaBlack
-  name: black sofa
+  name: 黑色沙发
   components:
   - type: Sprite
     state: sofa_black
@@ -318,7 +317,7 @@
 - type: entity
   parent: CMSeatBase
   id: CMChairOfficeDark
-  name: dark office chair
+  name: 深色办公椅
   components: # RMC14 Non-parity: Not rotatable
   - type: CMUReconFurniture
     material: OfficeChair
@@ -334,7 +333,7 @@
 - type: entity
   parent: CMChairOfficeDark
   id: CMChairOfficeWhite
-  name: white office chair
+  name: 白色办公椅
   components:
   - type: Sprite
     state: officechair_white
@@ -348,8 +347,8 @@
 - type: entity
   parent: CMSeatBase
   id: CMChairWood
-  name: wooden chair
-  description: Old is never too old to not be in fashion.
+  name: 木椅
+  description: 旧永远不会老到不再时尚。
   components:
   - type: CMUReconFurniture
     material: WoodChair
@@ -376,8 +375,7 @@
     otherMultiplier: 1
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -394,7 +392,7 @@
 - type: entity
   parent: CMChairWood
   id: CMChairWoodWings
-  description: Old is never too old to not be in fashion.
+  description: 旧事物永远不会因为太旧而不再时尚。
   components:
   - type: CMUReconFurniture
     material: WoodWingChair

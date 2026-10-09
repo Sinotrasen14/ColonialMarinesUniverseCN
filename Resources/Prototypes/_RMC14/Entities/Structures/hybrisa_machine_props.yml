@@ -2,7 +2,7 @@
   parent: BaseStructure
   id: RMCMachinePropBase
   abstract: true
-  name: machinery
+  name: 机械
   components:
   - type: Sprite
     noRot: true
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 75
         mask:
@@ -32,8 +31,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "0,-0.25,1,0.25"
         density: 75
         mask:
@@ -44,7 +42,7 @@
 - type: entity
   id: RMCMachinePropBaseWall
   abstract: true
-  name: machinery
+  name: 机械
   components:
   - type: Transform
   - type: Sprite
@@ -57,7 +55,7 @@
 - type: entity
   id: RMCMachinePropBaseOverhead
   abstract: true
-  name: machinery
+  name: 机械
   placement:
     mode: SnapgridCenter
     snap:
@@ -214,7 +212,7 @@
 - type: entity
   parent: RMCMachinePropBaseWall
   id: RMCMachinePropSmallVent
-  name: wall vent
+  name: 墙壁通风口
   components:
   - type: Sprite
     state: smallwallvent1
@@ -222,7 +220,7 @@
 - type: entity
   parent: RMCMachinePropBaseWall
   id: RMCMachinePropSmallVent2
-  name: wall vent
+  name: 墙面通风口
   components:
   - type: Sprite
     state: smallwallvent2
@@ -230,7 +228,7 @@
 - type: entity
   parent: RMCMachinePropBaseWall
   id: RMCMachinePropSmallVent3
-  name: wall vent
+  name: 壁式通风口
   components:
   - type: Sprite
     state: smallwallvent3

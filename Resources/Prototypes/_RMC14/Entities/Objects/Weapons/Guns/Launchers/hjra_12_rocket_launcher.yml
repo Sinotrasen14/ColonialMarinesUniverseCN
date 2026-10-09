@@ -1,8 +1,8 @@
 - type: entity
-  name: HJRA-12 Handheld Anti-Tank Grenade Launcher
+  name: HJRA-12手持反坦克榴弹发射器
   parent: [BaseWeaponLauncher, CMBaseWeaponGun, RMCBaseAttachableHolder]
   id: RMCWeaponLauncherHJRA12
-  description: "The HJRA-12 Handheld Anti-Tank Grenade Launcher is the standard Anti-Armor weapon of the UPP. It is designed to be easy to use and to take out or disable armored vehicles."
+  description: "HJRA-12手持反坦克榴弹发射器是UPP的标准反装甲武器。它设计得易于使用，用于摧毁或使装甲车辆失能。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/RocketLaunchers/hjra12/hjra12_inhands.rsi
@@ -85,9 +85,9 @@
 
 - type: entity
   id: RMCRocketHJRA12AT
-  name: HJRA-12 Anti-Tank Rocket
+  name: HJRA-12反坦克火箭弹
   parent: BaseItem
-  description: A rocket for the UPP standard-issue HJRA-12 Handheld Anti-Tank Grenade Launcher. This one is a standard Anti-Tank rocket designed to disable or destroy hostile vehicles.
+  description: 用于UPP制式HJRA-12手持式反坦克榴弹发射器的一种火箭弹。这是一种标准反坦克火箭弹，旨在使敌方车辆失能或将其摧毁。
   components:
   - type: Tag
     tags:
@@ -110,9 +110,9 @@
 
 - type: entity
   id: RMCRocketHJRA12HE
-  name: HJRA-12 High-Explosive Rocket
+  name: HJRA-12高爆火箭弹
   parent: BaseItem
-  description: A rocket for the UPP standard-issue HJRA-12 Handheld Anti-Tank Grenade Launcher. This one is a standard high-explosive rocket for use against light vehicles or as an anti-personnel grenade.
+  description: 一种用于UPP制式HJRA-12手持反坦克榴弹发射器的火箭弹。此型为标准高爆火箭弹，可用于对付轻型车辆，或作为杀伤人员榴弹使用。
   components:
   - type: Tag
     tags:
@@ -135,9 +135,9 @@
 
 - type: entity
   id: RMCRocketHJRA12Incen
-  name: HJRA-12 Extreme-Intensity Incendiary Rocket
+  name: HJRA-12 极高强度燃烧火箭弹
   parent: BaseItem
-  description: A rocket for the UPP standard-issue HJRA-12 Handheld Anti-Tank Grenade Launcher. This one is an extreme-intensity incendiary rocket.
+  description: 用于UPP制式HJRA-12手持反坦克榴弹发射器的火箭弹。这种是极高强度燃烧火箭弹。
   components:
   - type: Tag
     tags:
@@ -162,10 +162,10 @@
 
 - type: entity
   parent: RMCProjectileRocket84mmAntiArmor
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   id: RMCProjectileRocketHJRA12AT
-  name: HJRA-12 Anti-Tank Rocket
-  description: A rocket for the UPP standard-issue HJRA-12 Handheld Anti-Tank Grenade Launcher. This one is a standard Anti-Tank rocket designed to disable or destroy hostile vehicles.
+  name: HJRA-12反坦克火箭弹
+  description: 用于UPP制式HJRA-12手持反坦克榴弹发射器的火箭弹。这是一种标准反坦克火箭弹，旨在使敌方车辆瘫痪或将其摧毁。
   components:
   - type: CartridgeAmmo
     proto: RMCProjectileRocket84mmAntiArmor
@@ -183,10 +183,10 @@
 
 - type: entity
   parent: RMCProjectileRocket84mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   id: RMCProjectileRocketHJRA12HE
-  name: HJRA-12 High-Explosive Rocket
-  description: A rocket for the UPP standard-issue HJRA-12 Handheld Anti-Tank Grenade Launcher. This one is a standard high-explosive rocket for use against light vehicles or as an anti-personnel grenade.
+  name: HJRA-12高爆火箭弹
+  description: UPP标准配发的HJRA-12手持反坦克榴弹发射器所使用的火箭弹。这是一种标准高爆火箭弹，用于打击轻型车辆，或作为杀伤人员榴弹使用。
   components:
   - type: CartridgeAmmo
     proto: RMCProjectileRocket84mm
@@ -203,10 +203,10 @@
   - type: IgnorePredictionHide
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   id: RMCProjectileRocketHJRA12Incen
-  name: HJRA-12 Extreme-Intensity Incendiary Rocket
-  description: A rocket for the UPP standard-issue HJRA-12 Handheld Anti-Tank Grenade Launcher. This one is an extreme-intensity incendiary rocket.
+  name: HJRA-12 超高强度燃烧火箭弹
+  description: 用于UPP制式HJRA-12手持反坦克榴弹发射器的一种火箭弹。这是一种超高强度燃烧火箭弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/hjra.rsi
@@ -222,8 +222,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.15,0.15,0.15"
           # Bigger than bullets. Rectangle won't work since AABB shapes don't rotate. This should help significantly with explosion consistency.
         hard: false

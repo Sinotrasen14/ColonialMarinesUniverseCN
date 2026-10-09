@@ -4,7 +4,7 @@
   id: RMCCorpsePrisoner
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpsePrisoner ]
+    prototypes: [RMCGearCorpsePrisoner]
 
 - type: startingGear
   id: RMCGearCorpsePrisoner
@@ -24,7 +24,7 @@
   id: RMCCorpseChef
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseChef ]
+    prototypes: [RMCGearCorpseChef]
 
 - type: startingGear
   id: RMCGearCorpseChef
@@ -46,7 +46,7 @@
   id: RMCCorpseDoctor
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseDoctor, RMCGearCorpseDoctorAltOne, RMCGearCorpseDoctorAltTwo ]
+    prototypes: [RMCGearCorpseDoctor, RMCGearCorpseDoctorAltOne, RMCGearCorpseDoctorAltTwo]
   - type: VictimBurst
   - type: Rank
     rank: RMCRankCivilianDoctor
@@ -90,7 +90,7 @@
   id: RMCCorpseEngineer
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseEngineer ]
+    prototypes: [RMCGearCorpseEngineer]
   - type: VictimBurst
 
 - type: startingGear
@@ -116,7 +116,7 @@
   id: RMCCorpseScientist
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseScientist ]
+    prototypes: [RMCGearCorpseScientist]
   - type: VictimBurst
   - type: Rank
     rank: RMCRankCivilianDoctor
@@ -145,7 +145,7 @@
   id: RMCCorpseScientistAegis
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseScientistAegis ]
+    prototypes: [RMCGearCorpseScientistAegis]
 
 - type: startingGear
   id: RMCGearCorpseScientistAegis
@@ -238,7 +238,7 @@
   id: RMCCorpseSecurity
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseSecurity ]
+    prototypes: [RMCGearCorpseSecurity]
   - type: VictimBurst
   - type: Rank
     rank: RMCRankCivilianOfficer
@@ -320,7 +320,7 @@
   id: RMCCorpsePrisonGuard
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpsePrisonGuard ]
+    prototypes: [RMCGearCorpsePrisonGuard]
 
 - type: startingGear
   id: RMCGearCorpsePrisonGuard
@@ -341,7 +341,7 @@
   id: RMCCorpseColonist
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseColonist ]
+    prototypes: [RMCGearCorpseColonist]
 
 - type: startingGear
   id: RMCGearCorpseColonist
@@ -363,7 +363,7 @@
   id: RMCCorpseColonistKutjevo
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseColonistKutjevo, RMCGearCorpseColonistKutjevoDrysuit ]
+    prototypes: [RMCGearCorpseColonistKutjevo, RMCGearCorpseColonistKutjevoDrysuit]
 
 - type: startingGear
   id: RMCGearCorpseColonistKutjevo
@@ -390,12 +390,12 @@
 - type: entity
   id: RMCGuidebookCorpseColonistBurst
   parent: MobHuman
-  name: Dead Colonist
-  categories: [ DoNotMap, HideSpawnMenu ]
+  name: 死去的殖民者 | Dead Colonist
+  categories: [DoNotMap, HideSpawnMenu]
   components:
   - type: VictimBurst
   - type: Loadout
-    prototypes: [ RMCGearCorpseColonist ]
+    prototypes: [RMCGearCorpseColonist]
   - type: Damageable
     damage:
       types:
@@ -408,11 +408,11 @@
 - type: entity
   id: RMCGuidebookCorpseMarine
   parent: MobHuman
-  name: Dead Marine
-  categories: [ DoNotMap, HideSpawnMenu ]
+  name: 死去的海军陆战队员 | Dead Marine
+  categories: [DoNotMap, HideSpawnMenu]
   components:
   - type: Loadout
-    prototypes: [ CMGearRiflemanEquipped ]
+    prototypes: [CMGearRiflemanEquipped]
   - type: Damageable
     damage:
       types:
@@ -496,7 +496,7 @@
   id: RMCCorpseWeYaManager
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseWeYaManager ]
+    prototypes: [RMCGearCorpseWeYaManager]
   - type: Rank
     rank: RMCRankWeYaExecutiveSupervisor
   - type: Marine
@@ -526,7 +526,7 @@
   id: RMCCorpseCLF
   components:
   - type: Loadout
-    prototypes: [ RMCGearCorpseCLF ]
+    prototypes: [RMCGearCorpseCLF]
 
 - type: startingGear
   id: RMCGearCorpseCLF

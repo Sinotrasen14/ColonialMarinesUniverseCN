@@ -1,6 +1,6 @@
-﻿- type: entity
+- type: entity
   id: FloorDeathEntity
-  name: death
+  name: 死亡 | death
   placement:
     mode: SnapgridCenter
     snap:
@@ -24,8 +24,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-1,-1,1,1"
         layer:
         - SlipLayer

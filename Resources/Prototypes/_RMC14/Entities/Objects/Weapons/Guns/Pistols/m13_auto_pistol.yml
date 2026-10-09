@@ -1,8 +1,8 @@
 - type: entity
   parent: CMWeaponPistolBase
   id: RMCWeaponPistolM13
-  name: M13 Auto Pistol
-  description: The M13 Auto Pistol, a compact, rapid-firing sidearm designed for close-quarters defense. With a 40-round magazine, it emphasizes fire rate over precision, providing effective suppressive fire in short-range engagements.
+  name: M13自动手枪
+  description: M13自动手枪，一种紧凑、射速快的副武器，专为近距离防御设计。它配备40发弹匣，强调射速而非精度，能在短距离交战中提供有效的压制火力。
   components:
   - type: Tag
     tags:
@@ -32,9 +32,9 @@
     layers:
     - state: base
     - state: camo
-      map: [ "enum.ItemCamouflageLayers.Layer" ]
+      map: ["enum.ItemCamouflageLayers.Layer"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: ItemCamouflage
     colors:
       Jungle: "#ccd08d"
@@ -51,7 +51,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_m10_auto_pistol_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_m10_auto_pistol_unload.ogg
         priority: 2
@@ -107,7 +107,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_m10_auto_pistol_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_m10_auto_pistol_unload.ogg
         priority: 2
@@ -123,14 +123,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolM13
-  name: M13 HV Magazine (10x20mm-APC)
+  name: M13 HV 弹匣（10x20mm-APC）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolM13
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeAutoPistol
@@ -149,14 +149,14 @@
 - type: entity
   parent: RMCMagazinePistolM13
   id: RMCMagazinePistolM13AP
-  name: M13 AP Magazine (10x20mm-APC)
+  name: M13穿甲弹匣（10x20mm-APC）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolM13AP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeAutoPistolAP
@@ -178,14 +178,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolM13Ext
-  name: M13 HV Extended Magazine (10x20mm-APC)
+  name: M13 高速扩容弹匣（10x20mm-APC）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolM13Ext
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeAutoPistol
@@ -204,14 +204,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolM13ExtAP
-  name: M13 AP Extended Magazine (10x20mm-APC)
+  name: M13穿甲扩容弹匣（10x20mm-APC）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolM13ExtAP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeAutoPistolAP
@@ -233,14 +233,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolM13Drum
-  name: M13 HV Drum Magazine (10x20mm-APC)
+  name: M13 HV 弹鼓（10x20mm-APC）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolM13Drum
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeAutoPistol
@@ -259,14 +259,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolM13DrumAP
-  name: M13 AP Drum Magazine (10x20mm-APC)
+  name: M13 穿甲弹鼓（10×20毫米-APC）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolM13DrumAP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeAutoPistolAP
@@ -287,7 +287,7 @@
 - type: entity
   parent: CMCartridgeSMGBase
   id: RMCCartridgeAutoPistol
-  name: cartridge (10x20mm-APC)
+  name: 弹药（10x20mm-APC）
   components:
   - type: Tag
     tags:
@@ -299,7 +299,7 @@
 - type: entity
   parent: CMCartridgeSMGBase
   id: RMCCartridgeAutoPistolAP
-  name: armor-piercing cartridge (10x20mm-APC)
+  name: 穿甲弹（10×20毫米-APC）
   components:
   - type: Tag
     tags:
@@ -311,7 +311,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCBulletAutoPistol
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -335,7 +335,7 @@
 - type: entity
   parent: RMCBulletAutoPistol
   id: RMCBulletAutoPistolAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

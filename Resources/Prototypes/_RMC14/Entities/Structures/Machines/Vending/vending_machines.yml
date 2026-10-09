@@ -2,8 +2,8 @@
 - type: entity
   parent: VendingMachine
   id: CMVendor
-  name: Vendomat
-  description: A generic vending machine.
+  name: 自动售货机
+  description: 一台通用自动售货机。
   components:
   - type: Transform
     anchored: false
@@ -20,8 +20,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.45,0.25,0.45"
         mask:
         - MachineMask
@@ -73,7 +72,7 @@
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
     - state: "off"
-      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: "panel"
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
@@ -88,15 +87,13 @@
       - Xeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
         acts: ["Breakage"]
       - !type:EjectVendorItems
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -105,7 +102,7 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalGlassBreak
@@ -118,8 +115,8 @@
 - type: entity
   parent: CMVendor
   id: CMVendorCoffee
-  name: Hot Drinks machine
-  description: A vending machine which dispenses hot drinks.
+  name: 热饮机
+  description: 一种供应热饮的自动售货机。
   components:
   - type: XenoCrusherChargable
     setDamage:
@@ -158,7 +155,7 @@
 - type: entity
   parent: CMVendorCoffee
   id: RMCVendorCoffeeSimple
-  name: Hot Coffee Machine
+  name: 热咖啡机
   suffix: Simple, Coco and Coffee only
   components:
   - type: VendingMachine
@@ -175,8 +172,8 @@
 - type: entity
   parent: CMVendor
   id: CMVendorSnack
-  name: Hot Foods Machine
-  description: A vending machine full of ready to cook meals, mhmmmm taste the nutritional goodness!
+  name: 热食贩卖机
+  description: 一台装满即煮餐食的自动贩卖机，嗯——尝尝这营养丰富的美味吧！
   components:
   - type: XenoCrusherChargable
     setDamage:
@@ -223,8 +220,8 @@
 - type: entity
   parent: CMVendorSnack
   id: RMCVendorSnackSPP
-  name: Surplus Ration Vendor
-  description: A vending machine full of surplus rations, viewed as the luxury of ready-avaliable UPP rations.
+  name: 剩余口粮售货机
+  description: 一台装满剩余口粮的自动售货机，被视为随时可取用UPP口粮的奢侈享受。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/spp_snack.rsi
@@ -233,8 +230,8 @@
 - type: entity
   parent: CMVendor
   id: CMVendorCola
-  name: Souto Softdrinks
-  description: A softdrink vendor provided by Souto Soda Company, Havana.
+  name: 索托软饮料
+  description: 由哈瓦那索托软饮料公司提供的软饮料供应商。
   components:
   - type: XenoCrusherChargable
     setDamage:
@@ -275,7 +272,7 @@
 - type: entity
   parent: CMVendorCola
   id: RMCVendorColaResearch
-  description: A softdrink vendor provided by Bobda Soda Company, Havana. This one is bound to the Research Budget card and doesn't require swiping
+  description: 由哈瓦那的 Bobda Soda 公司提供的一台软饮料售货机。这一台绑定到研究预算卡，无需刷卡。
   suffix: Research
   components:
   - type: VendingMachine
@@ -297,8 +294,8 @@
 - type: entity
   parent: CMVendorCola
   id: RMCVendorNutriCoDrink
-  name: NutriCo AutoDrink
-  description: A NutriCo AutoDrink dispenser, capable of making a variety of drinks to consume from a mixture of water and instant flavoring juice and caffeine additives.
+  name: NutriCo 自动饮料机
+  description: 一台 NutriCo 自动饮料机，能够用水、速溶调味果汁和咖啡因添加剂混合制作多种饮品供饮用。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/NutriCo/drink.rsi
@@ -307,8 +304,8 @@
 - type: entity
   parent: CMVendorCola
   id: RMCVendorColaSPP
-  name: Xuanshi Drinks
-  description: A drinks vendors from a long forgotten branch of the SPP, selling rationed water mixed with thrice diluted 5% flavourments.
+  name: 玄石饮料
+  description: 一名来自SPP某个早已被遗忘分支的饮料商贩，出售掺有经三次稀释的5%调味剂的配给水。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/spp_cola.rsi
@@ -316,7 +313,7 @@
 - type: entity
   parent: RMCVendorColaSPP
   id: RMCVendorNutriCoDrinkSPP
-  name: drink dispenser
+  name: 饮料分配器
   suffix: SPP
   components:
   - type: Sprite
@@ -326,8 +323,8 @@
 - type: entity
   parent: CMVendor
   id: RMCVendorSoda
-  name: Cold Drinks machine
-  description: A vending machine that contains cold drinks. This one appears to be produced by Tsumetai-Umi, a subsidairy of Neterai Foods International, which itself is subsidiary of Weyland-Yutani.
+  name: 冷饮机
+  description: 一台装有冷饮的自动售货机。这一台似乎由 Tsumetai-Umi 生产，该公司是 Neterai Foods International 的子公司，而 Neterai Foods International 本身又是 Weyland-Yutani 的子公司。
   components:
   - type: XenoCrusherChargable
     setDamage:
@@ -358,8 +355,8 @@
 - type: entity
   parent: CMVendor
   id: CMVendorCigs
-  name: Cigarette Machine
-  description: If you want to get cancer, might as well do it in style!
+  name: 香烟自动售货机
+  description: 如果你想得癌症，不妨也得有格调一点！
   components:
   - type: XenoCrusherChargable
     setDamage:
@@ -416,8 +413,8 @@
 - type: entity
   parent: CMVendorCigs
   id: RMCVendorCigsElectro
-  name: Electro Brand Cigarette Machine
-  description: An Electro brand cigarette vending machine. Comes with Lucky Sloths, Lady Fingers, Electro Golds of course, and a few smaller brands you've barely heard of.
+  name: Electro牌香烟自动售货机
+  description: 一台Electro牌香烟自动售货机。内含Lucky Sloths、Lady Fingers、当然还有Electro Golds，以及一些你几乎没听说过的小品牌。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/electro_cigs.rsi
@@ -443,8 +440,8 @@
 - type: entity
   parent: CMVendorCigs
   id: RMCVendorCigsWeYa
-  name: Weyland-Yutani Brand Cigarette Machine
-  description: A Weyland-Yutani Brand cigarette vending machine, looks like a We-Yu Gold pack. Comes with Emerald Greens, We-Yu Golds of course, Arcturian Aces, and some Three Suns Empire brand you've barely heard of. Executive Selects are still out of stock due to shipping issues...
+  name: 韦兰德-尤塔尼牌香烟自动售货机
+  description: 一台韦兰德-尤塔尼牌香烟自动售货机，看起来像一包“韦-尤金”香烟。里面有“翡翠绿”，当然还有“韦-尤金”、“大角星王牌”，以及某种你几乎没听说过的“三阳帝国”牌。“高管精选”因运输问题仍然缺货……
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/weya_cigs.rsi
@@ -471,8 +468,8 @@
 - type: entity
   parent: CMVendorCigs
   id: RMCVendorCigsSPP
-  name: Komandir Cigarettes Vendor
-  description: A state-owned cigarette vendor. Its drab colour was chosen to discourage purchases, but its existence is an admittance to the necessity for such machines to exist in the first place.
+  name: 指挥官香烟售卖机
+  description: 一台国营香烟售卖机。其单调的色彩是为了抑制购买欲而选择的，但它的存在本身就承认了这类机器从一开始就有存在的必要。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/spp_cigs.rsi
@@ -481,8 +478,8 @@
 - type: entity
   parent: CMVendor
   id: CMVendorSec
-  name: SecTech
-  description: A security equipment vendor.
+  name: 安防科技
+  description: 一家安防设备供应商。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/sec.rsi
@@ -531,8 +528,8 @@
 - type: entity
   parent: CMVendor
   id: RMCVendorSecArmory
-  name: Riot Tech
-  description: A security riot equipment vendor.
+  name: 防暴科技
+  description: 一家安防防暴装备供应商。
   suffix: Military Police
   components:
   - type: Sprite
@@ -565,8 +562,8 @@
 - type: entity
   parent: CMVendor
   id: CMVendorSEA
-  name: SEATech
-  description: An equipment vendor designed to save lives
+  name: 海科
+  description: 一家旨在拯救生命的设备供应商
   suffix: SEA
   components:
   - type: Sprite
@@ -598,8 +595,8 @@
 - type: entity
   parent: CMVendor
   id: CMVendorNutri
-  name: NutriMax
-  description: A plant nutrients vendor.
+  name: 纽崔麦克斯
+  description: 一家植物营养剂供应商。
   components:
   - type: XenoCrusherChargable
     setDamage:
@@ -635,8 +632,8 @@
 - type: entity
   parent: CMVendor
   id: CMVendorSeeds
-  name: MegaSeed Servitor
-  description: When you need seeds fast!
+  name: 巨型种子伺服机
+  description: 当你急需种子时！
   components:
   - type: XenoCrusherChargable
     setDamage:
@@ -701,8 +698,8 @@
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: CMVendorDinnerware
-  name: Dinnerware
-  description: A kitchen and restaurant equipment vendor.
+  name: 餐具
+  description: 一家厨房和餐厅设备供应商。
   components:
   - type: VehicleSmashable
   - type: Sprite
@@ -712,7 +709,7 @@
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
     - state: "normal-unshaded"
-      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: "panel"
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
@@ -729,7 +726,7 @@
   - type: CMAutomatedVendor
     scaling: false
     sections:
-    - name: Products
+    - name: 产品
       entries:
       - id: RMCFork
         amount: 16
@@ -819,8 +816,8 @@
 - type: entity
   parent: CMVendor
   id: CMVendorSodaSoviet
-  name: BODA
-  description: An old sweet water vending machine, how did this end up here?
+  name: 博达
+  description: 一台老旧的甜水自动售货机，它怎么会出现在这里？
   components:
   - type: XenoCrusherChargable
     setDamage:
@@ -842,15 +839,15 @@
 - type: entity
   parent: CMVendorDinnerware
   id: CMVendorIngredients
-  name: Galley Auxiliary Storage Requisition System
-  description: A vending machine meant to be use for cooks.
+  name: 厨房辅助储物申领系统
+  description: 一台供厨师使用的自动售货机。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/snack.rsi
   - type: CMAutomatedVendor
     scaling: false
     sections:
-    - name: Products
+    - name: 产品
       entries:
       - id: FoodContainerEgg
         amount: 12

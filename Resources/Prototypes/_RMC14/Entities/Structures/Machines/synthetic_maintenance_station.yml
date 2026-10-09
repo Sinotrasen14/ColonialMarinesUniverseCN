@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: RMCSyntheticMaintenanceStation
-  name: synthetic maintenance station
-  description: A wall-mounted maintenance cradle for synthetic units.
+  name: 合成人维护站
+  description: 壁挂式合成人维护托架。
   placement:
     mode: SnapgridCenter
   components:
@@ -14,16 +14,15 @@
     noRot: true
     layers:
     - state: borgcharger0
-      map: [ "enum.RMCSyntheticMaintenanceStationLayers.Base" ]
+      map: ["enum.RMCSyntheticMaintenanceStationLayers.Base"]
     - state: statn_c100
       shader: unshaded
-      map: [ "enum.RMCSyntheticMaintenanceStationLayers.Charge" ]
+      map: ["enum.RMCSyntheticMaintenanceStationLayers.Charge"]
   - type: InteractionOutline
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 200
         mask:
@@ -46,28 +45,27 @@
     visuals:
       enum.RMCSyntheticMaintenanceStationVisuals.Status:
         enum.RMCSyntheticMaintenanceStationLayers.Base:
-          Off: { state: borgcharger2 }
-          Empty: { state: borgcharger0 }
-          Occupied: { state: borgcharger1 }
+          Off: {state: borgcharger2}
+          Empty: {state: borgcharger0}
+          Occupied: {state: borgcharger1}
       enum.RMCSyntheticMaintenanceStationVisuals.Charge:
         enum.RMCSyntheticMaintenanceStationLayers.Charge:
-          Empty: { state: statn_c0 }
-          Low: { state: statn_c20 }
-          Medium: { state: statn_c60 }
-          High: { state: statn_c80 }
-          Full: { state: statn_c100 }
+          Empty: {state: statn_c0}
+          Low: {state: statn_c20}
+          Medium: {state: statn_c60}
+          High: {state: statn_c80}
+          Full: {state: statn_c100}
   - type: Damageable
     damageModifierSet: Metallic
   - type: Injurable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak

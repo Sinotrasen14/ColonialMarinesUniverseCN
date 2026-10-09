@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: [RMCBaseSlideMagazineVisualsBallistic, RMCWeaponRevolverBase]
   id: RMCWeaponRevolverM44
-  name: M44 combat revolver
-  description: A bulky revolver, occasionally carried by assault troops and officers in the Marine Corps, as well as civilian law enforcement. Fires .44 Magnum rounds.
+  name: M44战斗左轮手枪
+  description: 一把笨重的左轮手枪，突击部队、海军陆战队军官以及民间执法部门偶尔会携带。发射.44马格南子弹。
   components:
   - type: Tag
     tags:
@@ -22,8 +22,8 @@
       - RMCCartridgeRevolver44Marksman
     proto: RMCCartridgeRevolver44
     capacity: 7
-    chambers: [ True, True, True, True, True, True, True ]
-    ammoSlots: [ null, null, null, null, null, null, null ]
+    chambers: [true, true, true, true, true, true, true]
+    ammoSlots: [null, null, null, null, null, null, null]
   - type: RMCSelectiveFire
     baseFireRate: 2
   - type: AttachableHolder
@@ -75,12 +75,12 @@
   suffix: Empty
   components:
   - type: RevolverAmmoProvider
-    proto: null
-    chambers: [ null, null, null, null, null, null, null ]
+    proto:
+    chambers: [null, null, null, null, null, null, null]
 
 - type: entity
   id: RMCBaseSpeedLoader44
-  name: "M44 speed loader (.44)"
+  name: "M44 快速装弹器（.44）"
   parent: BaseItem
   abstract: true
   components:
@@ -105,16 +105,16 @@
 - type: entity
   parent: RMCBaseSpeedLoader44
   id: RMCSpeedLoaderM44
-  name: "M44 speed loader (.44)"
-  description: A revolver speed loader.
+  name: "M44快速装弹器（.44）"
+  description: 左轮手枪快速装弹器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/SpeedLoaders/m44.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: base-5
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: base
     steps: 6
@@ -127,8 +127,8 @@
 - type: entity
   parent: RMCSpeedLoaderM44
   id: RMCSpeedLoader44Marksman
-  name: "M44 marksman speed loader (.44)"
-  description: A revolver speed loader filled with Marksman ammo.
+  name: "M44 神射手快速装弹器（.44）"
+  description: 一个装满神射手弹药的左轮手枪快速装弹器。
   components:
   - type: Tag
     tags:
@@ -138,19 +138,19 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/SpeedLoaders/m44.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: base-5
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: base-unshaded-5
       color: "#FF744F"
-      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      map: ["enum.GunVisualLayers.MagUnshaded"]
   - type: BallisticAmmoProvider
     proto: RMCCartridgeRevolver44Marksman
     capacity: 7
 
 - type: entity
   id: RMCCartridgeRevolver44
-  name: cartridge (.44)
+  name: 弹药（.44）
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -162,7 +162,7 @@
 
 - type: entity
   id: RMCCartridgeRevolver44Marksman
-  name: cartridge (.44)
+  name: 弹药（.44）
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -175,8 +175,8 @@
 - type: entity
   parent: CMBulletBase
   id: CMBulletRevolver44
-  name: bullet (.44)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（.44）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -190,8 +190,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletRevolver44Marksman
-  name: bullet (.44 Marksman)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（.44 神射手）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

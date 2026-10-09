@@ -1,17 +1,17 @@
-﻿- type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseAttachableHolder, RMCBaseWeaponMagazineVisuals ]
-  name: Basira-Armstrong bolt-action hunting rifle
+- type: entity
+  parent: [CMBaseWeaponRifle, RMCBaseAttachableHolder, RMCBaseWeaponMagazineVisuals]
+  name: 巴西拉-阿姆斯特朗栓动狩猎步枪
   id: RMCWeaponBoltActionRifle
-  description: Named after its eccentric designers, the Basira-Armstrong is a cheap but reliable civilian bolt-action rifle frequently found in the outer colonies. Despite its legally-mandated limited magazine capacity, its light weight and legendary accuracy makes it popular among hunters and competitive shooters.
+  description: 以其古怪的设计师命名，巴西拉-阿姆斯特朗是一支廉价但可靠的民用栓动步枪，常见于外层殖民地。尽管法律强制限制其弹匣容量，但其重量轻、精度传奇，因而深受猎人和竞技射手的欢迎。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/hunting.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/hunting.rsi
   - type: Gun
@@ -41,17 +41,17 @@
       path: "/Audio/_RMC14/Weapons/Guns/Breech/pkd_close_chamber.ogg"
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: GenericVisualizer
     visuals:
       enum.BreechVisuals.Open:
         enum.BreechVisuals.Open:
-          True: { state: bolt-open }
-          False: { state: base }
+          true: {state: bolt-open}
+          false: {state: base}
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleHunting
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -94,7 +94,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleHunting
-  name: "Basira-Armstrong magazine (6.5mm)"
+  name: "巴西拉-阿姆斯特朗弹匣（6.5毫米）"
   components:
   - type: Item
     size: Small
@@ -103,7 +103,7 @@
     - CMMagazineRifle
     - RMCMagazineRifleHunting
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeBoltActionRifle
@@ -121,8 +121,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeBoltActionRifle
-  name: cartridge (6.5mm)
-  description: "A 6.5mm cartridge for the Basira-Armstrong hunting rifle. Compliant with the 15-cartridge limit on civilian hunting rifles."
+  name: 弹药（6.5毫米）
+  description: "用于Basira-Armstrong猎枪的6.5毫米弹药。符合民用猎枪15发弹药限制。"
   components:
   - type: Tag
     tags:
@@ -134,7 +134,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: RMCBulletRifleHunting
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

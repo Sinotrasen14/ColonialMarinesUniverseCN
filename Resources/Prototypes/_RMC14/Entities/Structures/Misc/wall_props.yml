@@ -17,12 +17,11 @@
     damageContainer: StructuralMarine
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 25 # These are pretty weak and are meant to be placed ontop of walls
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DeleteOnExplosion
   - type: Corrodible
     isCorrodible: false
@@ -31,7 +30,7 @@
 - type: entity
   parent: RMCWallPropBase
   id: RMCWallPropBloodWallFloor
-  name: blood
+  name: 血液
   suffix: Wall Blood, Floor Blood, RMC14
   components:
   - type: Sprite
@@ -40,7 +39,7 @@
 - type: entity
   parent: RMCWallPropBloodWallFloor
   id: RMCWallPropBloodWall
-  name: blood
+  name: 血液
   suffix: Wall Blood, RMC14
   components:
   - type: Sprite
@@ -49,7 +48,7 @@
 - type: entity
   parent: RMCWallPropBloodWallFloor
   id: RMCWallPropBloodWallAlt
-  name: blood
+  name: 血液
   suffix: Wall Blood, RMC14, Alt
   components:
   - type: Sprite
@@ -59,7 +58,7 @@
 - type: entity
   parent: RMCWallPropBase
   id: RMCWallPropGraffiti
-  name: graffiti
+  name: 涂鸦
   suffix: Wall Graffiti, RMC14, One
   components:
   - type: Sprite
@@ -117,8 +116,8 @@
 - type: entity
   parent: RMCWallPropBase
   id: RMCWallPropDeadPilot
-  name: decapitated Weyland-Yutani Pilot
-  description: What remains of a Weyland-Yutani Pilot. Their entire head is missing. Where'd it roll off to?...
+  name: 被斩首的维兰德-汤谷飞行员
+  description: 维兰德-汤谷飞行员的残骸。整个头部都不见了。它滚到哪儿去了呢？……
   suffix: RMC14
   components:
   - type: Sprite

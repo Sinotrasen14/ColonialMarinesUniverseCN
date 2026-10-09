@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseItem, RMCBaseSlideMagazineVisualsBallistic, CMBaseWeaponGun, RMCBaseAttachableHolder ]
+  parent: [BaseItem, RMCBaseSlideMagazineVisualsBallistic, CMBaseWeaponGun, RMCBaseAttachableHolder]
   id: RMCWeaponPistolM82F
-  name: M82-F flare gun
-  description: A flare gun issued to JTAC operators to use with flares. Comes with a miniscope. One shot, one... life saved?
+  name: M82-F信号枪
+  description: 配发给JTAC操作员用于配合信号弹使用的信号枪。附带一个迷你瞄准镜。一枪，一……条命得救？
   components:
   - type: AmmoCounter
   - type: Sprite
@@ -56,7 +56,7 @@
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
-        ents: [ ]
+        ents: []
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 1
     accuracyMultiplierUnwielded: 0.5
@@ -90,4 +90,4 @@
   suffix: Empty
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:

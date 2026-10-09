@@ -2,8 +2,8 @@
 - type: entity
   parent: BaseItem
   id: RMCCondiment
-  name: condiment container
-  description: Just your average condiment container.
+  name: 调味品容器
+  description: 只是普通的调味品容器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/condiments.rsi
@@ -52,7 +52,7 @@
   abstract: true
   parent: RMCCondiment
   id: RMCCondimentHotsauce
-  name: hotsauce parent object
+  name: 辣酱父对象
   components:
   - type: Sprite
     state: icon
@@ -61,8 +61,8 @@
     solution:
       maxVol: 60
       reagents:
-        - ReagentId: Hotsauce
-          Quantity: 60
+      - ReagentId: Hotsauce
+        Quantity: 60
   - type: SolutionTransfer
     maxTransferAmount: 60
 
@@ -70,8 +70,8 @@
 - type: entity
   parent: RMCCondiment
   id: RMCCondimentEnzyme
-  name: universal enzyme
-  description: Used in cooking various dishes.
+  name: 万能酶
+  description: 用于烹饪各种菜肴。
   components:
   - type: Sprite
     state: enzyme
@@ -79,22 +79,22 @@
     id: food
     solution:
       reagents:
-        - ReagentId: Enzyme
-          Quantity: 50
+      - ReagentId: Enzyme
+        Quantity: 50
 
 # Sugar
 - type: entity
   parent: RMCCondiment
   id: RMCCondimentSugar
-  name: sugar
-  description: Tasty space sugar!
+  name: 糖
+  description: 美味的太空糖！
   components:
   - type: Solution
     id: food
     solution:
       reagents:
-        - ReagentId: RMCSugar
-          Quantity: 50
+      - ReagentId: RMCSugar
+        Quantity: 50
 
 # Ketchup
 - type: reagent
@@ -118,8 +118,8 @@
 - type: entity
   parent: RMCCondiment
   id: RMCCondimentKetchup
-  name: ketchup
-  description: You feel more American already.
+  name: 番茄酱
+  description: 你已经觉得自己更像美国人了。
   components:
   - type: Sprite
     state: ketchup
@@ -127,8 +127,8 @@
     id: food
     solution:
       reagents:
-        - ReagentId: RMCKetchup
-          Quantity: 50
+      - ReagentId: RMCKetchup
+        Quantity: 50
 
 # Soy Sauce
 - type: reagent
@@ -152,8 +152,8 @@
 - type: entity
   parent: RMCCondiment
   id: RMCCondimentSoysauce
-  name: soy sauce
-  description: A salty soy-based flavoring.
+  name: 酱油
+  description: 一种咸味的、以大豆为基底的调味料。
   components:
   - type: Sprite
     state: soysauce
@@ -161,8 +161,8 @@
     id: food
     solution:
       reagents:
-        - ReagentId: RMCSoysauce
-          Quantity: 50
+      - ReagentId: RMCSoysauce
+        Quantity: 50
 
 # Corn Oil
 - type: reagent
@@ -186,8 +186,8 @@
 - type: entity
   parent: RMCCondiment
   id: RMCCondimentCornOil
-  name: corn oil
-  description: A delicious oil used in cooking. Made from corn.
+  name: 玉米油
+  description: 一种用于烹饪的美味油，由玉米制成。
   components:
   - type: Sprite
     state: oliveoil
@@ -195,15 +195,15 @@
     id: food
     solution:
       reagents:
-        - ReagentId: RMCCornoil
-          Quantity: 50
+      - ReagentId: RMCCornoil
+        Quantity: 50
 
 # Salt
 - type: entity
   parent: RMCCondimentSmall
   id: RMCCondimentSmallSalt
-  name: salt shaker
-  description: Salt. From space oceans, presumably.
+  name: 盐瓶
+  description: 盐。想必来自太空海洋。
   components:
   - type: Sprite
     state: saltshakersmall
@@ -211,15 +211,15 @@
     id: food
     solution:
       reagents:
-        - ReagentId: TableSalt
-          Quantity: 20
+      - ReagentId: TableSalt
+        Quantity: 20
 
 # Pepper
 - type: entity
   parent: RMCCondimentSmall
   id: RMCCondimentSmallPepper
-  name: pepper mill
-  description: Often used to flavor food or make people sneeze.
+  name: 胡椒研磨器
+  description: 常用于给食物调味或让人打喷嚏。
   components:
   - type: Sprite
     state: peppermillsmall
@@ -227,16 +227,16 @@
     id: food
     solution:
       reagents:
-        - ReagentId: Blackpepper
-          Quantity: 50
+      - ReagentId: Blackpepper
+        Quantity: 50
 
 # Hotsauces
 # Cholula
 - type: entity
   parent: RMCCondimentHotsauce
   id: RMCCondimentHotsauceCholula
-  name: Cholula bottle
-  description: A bottle of Weyland-Yutani brand Cholula hot sauce.
+  name: 乔卢拉辣酱瓶
+  description: 一瓶韦兰德-尤塔尼品牌的乔卢拉辣酱。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Sauces/cholula.rsi
@@ -244,8 +244,8 @@
 - type: entity
   parent: RMCCondimentHotsauce
   id: RMCCondimentHotsauceFranks
-  name: red hot bottle
-  description: A bottle of Weyland-Yutani brand Red Hot hot sauce.
+  name: Red Hot辣酱瓶
+  description: 一瓶维兰德-汤谷牌Red Hot辣酱。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Sauces/franks.rsi
@@ -255,8 +255,8 @@
 - type: entity
   parent: RMCCondimentHotsauce
   id: RMCCondimentHotsauceSriracha
-  name: Sriracha bottle
-  description: A bottle of Weyland-Yutani brand Sriracha hot sauce.
+  name: 是拉差辣酱瓶
+  description: 一瓶维兰德-汤谷牌是拉差辣酱。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Sauces/sriracha.rsi
@@ -264,8 +264,8 @@
 - type: entity
   parent: RMCCondimentHotsauce
   id: RMCCondimentHotsauceTabasco
-  name: Tabasco bottle
-  description: A bottle of Weyland-Yutani brand Tabasco hot sauce.
+  name: Tabasco瓶
+  description: 一瓶Weyland-Yutani牌Tabasco辣酱。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Sauces/tabasco.rsi

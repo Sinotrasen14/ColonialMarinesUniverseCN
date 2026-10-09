@@ -9,8 +9,8 @@
   - RMCXenoMobCollision
   - RMCXenoVentCrawler
   id: CMXenoDroneBase
-  name: Drone
-  description: An alien drone.
+  name: 无人机 | Drone
+  description: 一架外星无人机。 | An alien drone.
   components:
   - type: GhostRole
     name: cmu-job-name-xeno-unknown
@@ -190,17 +190,17 @@
   - type: Sprite
     sprite: CMU14/Mobs/Xenos/Drone/gardener_drone.rsi # AU14-Edit
     layers:
-    - map: [ "enum.XenoVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base"]
       state: alive
-    - map: [ "enum.XenoFruitVisualLayers.Base" ]
+    - map: ["enum.XenoFruitVisualLayers.Base"]
       visible: false
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
+    - map: ["enum.RMCDamageVisualLayers.Base"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
+    - map: ["enum.XenoInhandVisualLayers.Left"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
+    - map: ["enum.XenoInhandVisualLayers.Right"]
       visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
+    - map: ["enum.RMCShieldVisuals.Base"]
       sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
   - type: XenoFruitPlanterVisuals
@@ -254,17 +254,17 @@
   - type: Sprite
     sprite: CMU14/Mobs/Xenos/Drone/healer_drone.rsi # AU14-Edit
     layers:
-    - map: [ "enum.XenoVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base"]
       state: alive
-    - map: [ "enum.XenoHealerVisualLayers.Goop" ]
+    - map: ["enum.XenoHealerVisualLayers.Goop"]
       visible: false
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
+    - map: ["enum.RMCDamageVisualLayers.Base"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
+    - map: ["enum.XenoInhandVisualLayers.Left"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
+    - map: ["enum.XenoInhandVisualLayers.Right"]
       visible: false
-    - map: [ "enum.RMCShieldVisuals.Base" ]
+    - map: ["enum.RMCShieldVisuals.Base"]
       sprite: _RMC14/Effects/xeno_shields.rsi
       visible: false
   - type: RMCXenoDamageVisuals

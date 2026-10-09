@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructure
   id: RMCConcreteStatue
-  name: concrete statue
-  description: A decorative statue with the Weyland-Yutani 'Wings' adorned on it, A corporate brutalist piece of art.
+  name: 混凝土雕像
+  description: 一座装饰性雕像，其上饰有维兰德-汤谷的“双翼”，是一件企业粗野主义风格的艺术品。
   components:
   - type: Sprite
     noRot: true
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.25,0.5,0.75"
         density: 75
         mask:
@@ -33,8 +32,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "0,0.25,1,1.25"
         density: 75
         mask:

@@ -2,8 +2,8 @@
   parent: BaseStructureDynamic
   id: CMLinenBin
   suffix: Empty
-  name: linen bin
-  description: A linen bin. It looks rather cosy.
+  name: 亚麻布箱
+  description: 一个亚麻布箱。它看起来相当舒适。
   components:
   - type: Anchorable
   - type: Transform
@@ -16,19 +16,17 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:EmptyAllContainersBehaviour
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
         spawn:
           CMSheetMetal1:
@@ -40,16 +38,16 @@
     sprite: _RMC14/Structures/Furniture/linen_bin.rsi
     layers:
     - state: linenbin_empty
-      map: [ "emptyLayer" ]
+      map: ["emptyLayer"]
     - state: linenbin_half
-      map: [ "partialLayer" ]
+      map: ["partialLayer"]
     - state: linenbin_full
-      map: [ "fullLayer" ]
+      map: ["fullLayer"]
   - type: ItemSlots
   - type: CMItemSlots
     count: 20
     slot:
-      name: bedsheets
+      name: 床单
       whitelist:
         tags:
         - Bedsheet
@@ -62,23 +60,23 @@
     visuals:
       enum.CMItemSlotsLayers.Fill:
         fullLayer:
-          Empty: { visible: false }
-          Low: { visible: false }
-          Medium: { visible: true }
-          High: { visible: true }
-          Full: { visible: true }
+          Empty: {visible: false}
+          Low: {visible: false}
+          Medium: {visible: true}
+          High: {visible: true}
+          Full: {visible: true}
         partialLayer:
-          Empty: { visible: false }
-          Low: { visible: true }
-          Medium: { visible: false }
-          High: { visible: false }
-          Full: { visible: false }
+          Empty: {visible: false}
+          Low: {visible: true}
+          Medium: {visible: false}
+          High: {visible: false}
+          Full: {visible: false}
         emptyLayer:
-          Empty: { visible: true }
-          Low: { visible: false }
-          Medium: { visible: false }
-          High: { visible: false }
-          Full: { visible: false }
+          Empty: {visible: true}
+          Low: {visible: false}
+          Medium: {visible: false}
+          High: {visible: false}
+          Full: {visible: false}
   - type: Flamability
     chance: 0.8
     rate: 3.5

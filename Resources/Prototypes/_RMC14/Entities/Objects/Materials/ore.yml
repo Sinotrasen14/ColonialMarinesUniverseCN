@@ -17,19 +17,18 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.2
         density: 20
         mask:
-          - ItemMask
+        - ItemMask
         restitution: 0.3
         friction: 0.2
 
 - type: entity
   parent: RMCOreBase
   id: RMCCoal
-  name: carbonaceous rock
+  name: 碳质岩Coal
   suffix: Full
   components:
   - type: Stack
@@ -65,7 +64,7 @@
 - type: entity
   parent: RMCOreBase
   id: RMCDiamondOre
-  name: diamonds
+  name: 钻石
   suffix: Full
   components:
   - type: Stack
@@ -85,7 +84,7 @@
 - type: entity
   parent: RMCOreBase
   id: RMCGoldOre
-  name: native gold ore
+  name: 自然金矿石
   suffix: Full
   components:
   - type: Stack
@@ -121,7 +120,7 @@
 - type: entity
   parent: RMCOreBase
   id: RMCIronOre
-  name: hematite
+  name: 赤铁矿
   suffix: Full
   components:
   - type: Stack
@@ -143,13 +142,13 @@
   id: RMCIronOre1
   suffix: Single
   components:
-    - type: Stack
-      count: 1
+  - type: Stack
+    count: 1
 
 - type: entity
   parent: RMCOreBase
   id: RMCPlasmaOre
-  name: phoron crystals
+  name: 等离子矿
   suffix: Full
   components:
   - type: Stack
@@ -176,13 +175,13 @@
   id: RMCPlasmaOre1
   suffix: Single
   components:
-    - type: Stack
-      count: 1
+  - type: Stack
+    count: 1
 
 - type: entity
   parent: RMCOreBase
   id: RMCPlatinumOre
-  name: raw platinum
+  name: 粗铂
   suffix: Full
   components:
   - type: Stack
@@ -210,7 +209,7 @@
 - type: entity
   parent: RMCOreBase
   id: RMCSilverOre
-  name: native silver ore
+  name: 自然银矿石
   suffix: Full
   components:
   - type: Stack
@@ -238,8 +237,8 @@
 - type: entity
   parent: RMCOreBase
   id: RMCUraniumOre
-  name: pitchblende
-  description: An ore containing Uranium. Just looking at it makes your head feel fuzzy... it's slightly luminescent.
+  name: 沥青铀矿
+  description: 一种含铀的矿石。光是看着它就会让你的脑袋变得晕乎乎的……它微微发光。
   suffix: Full
   components:
   - type: Stack

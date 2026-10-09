@@ -2,7 +2,7 @@
   id: RMCBaseBush
   suffix: RMCBaseBush
   abstract: true
-  name: bush
+  name: 布什
   components:
   - type: SpriteFade
   - type: Clickable
@@ -19,14 +19,12 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 400
       behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -36,14 +34,14 @@
             volume: 5
             variation: 0.05
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: RMCBaseBush
   id: RMCBaseGrass
   suffix: RMCBaseGrass
   abstract: true
-  name: grass
+  name: 草
   components:
   - type: ResinClearable # CMU14
   - type: Sprite
@@ -54,7 +52,7 @@
   id: RMCBaseFlowers
   suffix: RMCBaseFlowers
   abstract: true
-  name: flowers
+  name: 花朵
   components:
   - type: Sprite
     sprite: Decals/Flora/flora_flowers.rsi
@@ -64,7 +62,7 @@
   id: RMCBaseRock
   suffix: RMCBaseRock
   abstract: true
-  name: rocks
+  name: 岩石
   components:
   - type: Sprite
     sprite: Decals/Flora/flora_rocks.rsi
@@ -854,8 +852,8 @@
   parent: RMCBaseBush
   id: RMCAlienBush1
   suffix: RMCAlienBush1
-  name: strange tree
-  description: Some kind of bizarre alien tree. It oozes with a sickly yellow sap.
+  name: 奇怪的树
+  description: 某种怪异的外星树。它渗出病态的黄色汁液。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Flora/flora_plantalien.rsi
@@ -863,20 +861,20 @@
   - type: PointLight
     castShadows: false
     radius: 2
-    
+
 # Stumps
 - type: entity
   parent: RMCBaseBush
   id: RMCStump1
   suffix: RMCStump1
-  name: tree stump
-  description: There used to be a tree here.
+  name: 树桩
+  description: 这里曾经有一棵树。
   components:
   - type: Sprite
     sprite: Objects/Decoration/Flora/flora_treessnow.rsi
     state: treestump
     offset: 0,0.7
-    
+
 - type: entity
   parent: RMCStump1
   id: RMCStump2

@@ -1,7 +1,7 @@
 - type: entity
   id: RMCPropSentry
-  name: UH-46 Heavy Sentry Gun
-  description: A large weapons system platform designed to deploy multiple types of automated defense systems. This one has been rendered permanently non-functional.
+  name: UH-46 重型哨戒炮
+  description: 一种旨在部署多种自动化防御系统的大型武器系统平台。这一台已被永久性损坏，无法运作。
   placement:
     mode: SnapgridCenter
   components:
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.6,-0.5,0.5,0.45"
         density: 190
         layer:

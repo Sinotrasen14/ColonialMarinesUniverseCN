@@ -1,13 +1,13 @@
 - type: entity
   id: RMCBasketballHoop
-  name: basketball hoop
-  description: Boom, Shakalaka!
+  name: 篮球框
+  description: 砰，沙卡拉卡！
   placement:
     mode: SnapgridCenter
   components:
   - type: Physics
     bodyType: Static
-    canCollide: False
+    canCollide: false
   - type: Clickable
   - type: InteractionOutline
   - type: Sprite
@@ -20,6 +20,6 @@
   suffix: Alt
   components:
   - type: Physics
-    canCollide: False
+    canCollide: false
   - type: Sprite
     state: hoop_alt

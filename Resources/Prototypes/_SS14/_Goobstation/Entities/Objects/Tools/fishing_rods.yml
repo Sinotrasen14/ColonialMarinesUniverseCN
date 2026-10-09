@@ -8,8 +8,8 @@
 - type: entity
   id: FishingRod
   parent: BaseItem
-  name: fishing rod
-  description: It's time to go fishing!
+  name: 钓鱼竿 | fishing rod
+  description: 是时候去钓鱼了！ | It's time to go fishing!
   components:
   - type: Sprite
     sprite: _SS14/_Goobstation/Objects/Specific/Fishing/fishing_rod.rsi
@@ -32,8 +32,8 @@
   id: FishingRodGoon
   suffix: Goon
   parent: FishingRod
-  name: fishing rod
-  description: It's time to go fishing!
+  name: 钓鱼竿 | fishing rod
+  description: 是时候去钓鱼了！ | It's time to go fishing!
   components:
   - type: Sprite
     sprite: _SS14/_Goobstation/Objects/Specific/Fishing/goon_rod.rsi
@@ -46,8 +46,8 @@
 - type: entity
   id: FishingRodMakeshift
   parent: FishingRod
-  name: makeshift fishing rod
-  description: Probably would be hard to catch a fish using that.
+  name: 简易钓鱼竿 | makeshift fishing rod
+  description: 用那个大概很难钓到鱼吧。 | Probably would be hard to catch a fish using that.
   components:
   - type: Sprite
     sprite: _SS14/_Goobstation/Objects/Specific/Fishing/makeshift_rod.rsi
@@ -66,8 +66,8 @@
 - type: entity
   id: FishingRodGolden
   parent: FishingRod
-  name: golden fishing rod
-  description: Finally, you caught 250 fishes. Here's your trophey.
+  name: 黄金钓鱼竿 | golden fishing rod
+  description: 终于，你钓到了250条鱼。这是你的奖杯。 | Finally, you caught 250 fishes. Here's your trophey.
   components:
   - type: Sprite
     sprite: _SS14/_Goobstation/Objects/Specific/Fishing/golden_rod.rsi
@@ -88,9 +88,9 @@
 - type: entity
   id: FishingLure
   parent: BaseItem
-  name: fishing lure
-  description: fish come here
-  categories: [ HideSpawnMenu ]
+  name: 钓鱼诱饵 | fishing lure
+  description: 鱼儿来这里 | fish come here
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     noRot: true
@@ -104,9 +104,9 @@
 - type: entity
   id: FishingLureMakeshift
   parent: FishingLure
-  name: fishing lure
-  description: fish come here
-  categories: [ HideSpawnMenu ]
+  name: 钓鱼拟饵 | fishing lure
+  description: 鱼儿来这里 | fish come here
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     noRot: true

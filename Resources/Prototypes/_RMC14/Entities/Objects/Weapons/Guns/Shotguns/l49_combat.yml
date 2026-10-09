@@ -1,15 +1,15 @@
-﻿- type: entity
-  parent: [ RMCBaseWeaponShotgun, RMCBaseAttachableHolder ]
-  name: L49 assault shotgun
+- type: entity
+  parent: [RMCBaseWeaponShotgun, RMCBaseAttachableHolder]
+  name: L49突击霰弹枪
   suffix: PVE, RCM
   id: RMCWeaponShotgunL49
-  description: L49 is the official designation for the pump action 12ga shotgun issued to TWE Royal Marine assault engineers and breachers. Designed in tandem with L49B breaching shells, it's a brutally effective, compact, and reliable combined weapon and breaching tool.
+  description: L49是配发给TWE皇家海军陆战队突击工兵和破门手的泵动式12号口径霰弹枪的官方型号。它与L49B破门弹配套设计，是一种极其有效、紧凑且可靠的武器与破门工具结合体。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/l49.rsi
     layers:
     - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/l49.rsi
     slots:
@@ -34,7 +34,7 @@
       - RMCShellShotgunBeanbag
       - RMCShellShotgunL49B
     capacity: 5
-    proto: null
+    proto:
     soundInsert:
       collection: CMShotgunLoad
   - type: RMCWeaponAccuracy

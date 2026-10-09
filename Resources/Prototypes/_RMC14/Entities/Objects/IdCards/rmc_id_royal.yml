@@ -1,6 +1,6 @@
-﻿- type: entity
+- type: entity
   id: FactionRoyalMarines
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: IFFFaction
   - type: FactionFrequencies
@@ -10,20 +10,20 @@
 - type: entity
   parent: CMIDCardStandardDogtag
   id: RMCIDRoyalMarines
-  name: royal marine dogtags
+  name: 皇家海军陆战队狗牌
   components:
   - type: ItemIFF
     factions:
     - FactionRoyalMarines
 - type: entity
-  parent: [ RMCIDCardStandardDogtagHidden, RMCIDRoyalMarines ]
+  parent: [RMCIDCardStandardDogtagHidden, RMCIDRoyalMarines]
   id: RMCIDRoyalMarinesHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesCommando
-  name: Commando's dogtags
+  name: 突击队员的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesCommando
@@ -31,7 +31,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesBreacher
-  name: Breacher's dogtags
+  name: Breacher的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesBreacher
@@ -39,7 +39,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesSGO
-  name: SGO's dogtags
+  name: SGO的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesSGO
@@ -47,7 +47,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesMarksman
-  name: Marksman's dogtags
+  name: 神射手的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesMarksman
@@ -55,7 +55,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesMedic
-  name: Medic's dogtags
+  name: 医疗兵的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesMedic
@@ -63,7 +63,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesTeamlead
-  name: Team Leader's dogtags
+  name: 队长的身份牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesTeamlead
@@ -71,7 +71,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesRiflemanPVE
-  name: Rifleman's dogtags
+  name: 步枪兵的身份牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesRiflemanPVE
@@ -79,7 +79,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesBombSpecPVE
-  name: Bombardment Specialist's dogtags
+  name: 炮击专家的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesBombSpecPVE
@@ -87,7 +87,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesMedicPVE
-  name: Medical Assistant's dogtags
+  name: 医疗助理的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesMedicPVE
@@ -95,7 +95,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesTroopSargePVE
-  name: Troop Sergeant's dogtags
+  name: 小队中士的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesTroopSargePVE
@@ -103,7 +103,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesSectionLeaderPVE
-  name: Section Leader's dogtags
+  name: 班长的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesSectionLeaderPVE
@@ -111,7 +111,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesTeamLeaderPVE
-  name: Team Leader's dogtags
+  name: 队长的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesSectionLeaderPVE
@@ -119,7 +119,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesSmartgunnerPVE
-  name: GPMG Gunner's dogtags
+  name: 通用机枪射手的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesSmartgunnerPVE
@@ -127,7 +127,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesScoutSniperPVE
-  name: Scout Sniper's dogtags
+  name: 侦察狙击手的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesScoutSniperPVE
@@ -135,7 +135,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesAssaultEngineerPVE
-  name: Assault Engineer's dogtags
+  name: 突击工程师的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesAssaultEngineerPVE
@@ -143,7 +143,7 @@
 - type: entity
   parent: RMCIDRoyalMarines
   id: RMCIDRoyalMarinesTroopCommanderPVE
-  name: Troop Commander's dogtags
+  name: 部队指挥官的狗牌
   components:
   - type: PresetIdCard
     job: CMRoyalMarinesTroopCommanderPVE

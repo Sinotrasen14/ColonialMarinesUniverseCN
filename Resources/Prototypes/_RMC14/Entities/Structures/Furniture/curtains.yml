@@ -1,15 +1,14 @@
-﻿- type: entity
+- type: entity
   parent: BaseCurtains
   id: RMCCurtainBase
-  name: curtain
+  name: 窗帘
   abstract: true
   components:
   - type: InteractionOutline
   - type: Clickable
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:DoActsBehavior
@@ -49,7 +48,7 @@
 - type: entity
   parent: RMCCurtainBase
   id: RMCCurtainMedical
-  name: plastic curtain
+  name: 塑料帘
   components:
   - type: Sprite
     snapCardinals: true
@@ -74,7 +73,7 @@
 - type: entity
   parent: RMCCurtainBase
   id: RMCCurtainShower
-  name: shower curtain
+  name: 浴帘
   components:
   - type: Sprite
     snapCardinals: true
@@ -98,7 +97,7 @@
 - type: entity
   parent: RMCCurtainBase
   id: RMCCurtainRed
-  name: red curtain
+  name: 红色窗帘
   components:
   - type: Sprite
     snapCardinals: true
@@ -112,7 +111,7 @@
 - type: entity
   parent: RMCCurtainBase
   id: RMCCurtainColourableTransparent
-  name: blinds
+  name: 百叶窗
   components:
   - type: Sprite
     snapCardinals: true
@@ -136,7 +135,7 @@
 - type: entity
   parent: RMCCurtainColourableTransparent
   id: RMCCurtainColourableTransparentAlt
-  name: blinds
+  name: 百叶窗
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/Curtains/colorable_transparent_alt.rsi

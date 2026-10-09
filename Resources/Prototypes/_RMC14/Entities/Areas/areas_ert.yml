@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaERT
-  name: ERT station
+  name: ERT站
   components:
   - type: Sprite
     state: green
@@ -14,7 +14,7 @@
 - type: entity
   parent: RMCAreaERT
   id: RMCAreaERTFax
-  name: Sector Comms Relay
+  name: 星区通讯中继
   suffix: Fax Responder Outpost, Interior
   components:
   - type: Sprite
@@ -26,7 +26,7 @@
 - type: entity
   parent: RMCAreaERT
   id: RMCAreaERTFaxExterior
-  name: Sector Comms Relay
+  name: 星区通信中继
   suffix: Fax Responder Outpost, Exterior
   components:
   - type: Sprite
@@ -40,7 +40,7 @@
 - type: entity
   parent: RMCAreaBase
   id: RMCAreaShuttleNS #Not Sulaco
-  name: Shuttle
+  name: 穿梭机
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_shiva.rsi
@@ -63,7 +63,7 @@
 - type: entity
   parent: RMCAreaShuttleNS
   id: RMCAreaShuttleERT
-  name: ERT Shuttle
+  name: ERT 穿梭巴士
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_almayer.rsi

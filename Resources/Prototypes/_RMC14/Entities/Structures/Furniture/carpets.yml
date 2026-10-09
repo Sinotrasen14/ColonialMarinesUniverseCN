@@ -1,8 +1,8 @@
 - type: entity
   id: CMCarpetBase
   parent: BaseStructure
-  name: carpet
-  description: "Fancy walking surface."
+  name: 地毯
+  description: "精美的步行表面。"
   abstract: true
   components:
   - type: Sprite
@@ -13,7 +13,7 @@
     key: full
     base: carpet_
   - type: Tag
-    tags: [ Carpet ]
+    tags: [Carpet]
   - type: Physics
     canCollide: false
   - type: Fixtures
@@ -22,18 +22,17 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 10
-        behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
+    - trigger: !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
 
 - type: entity
   id: RMCCarpetBaseNonIconsmooth
   parent: BaseStructure
-  name: carpet
-  description: Fancy walking surface.
+  name: 地毯
+  description: 华丽的步行表面。
   abstract: true
   components:
   - type: Sprite
@@ -41,7 +40,7 @@
   - type: Icon
     state: full
   - type: Tag
-    tags: [ Carpet ]
+    tags: [Carpet]
   - type: Physics
     canCollide: false
   - type: Fixtures
@@ -50,12 +49,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 10
-        behaviors:
-          - !type:DoActsBehavior
-            acts: [ "Destruction" ]
+    - trigger: !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
 
 - type: entity
   id: CMCarpetPrison
@@ -70,7 +68,7 @@
 - type: entity
   id: RMCCarpetBlue1
   parent: RMCCarpetBaseNonIconsmooth
-  name: blue carpet
+  name: 蓝色地毯
   components:
   - type: Clickable
   - type: Sprite
@@ -155,7 +153,7 @@
 - type: entity
   id: RMCCarpetBeige1
   parent: RMCCarpetBaseNonIconsmooth
-  name: beige carpet
+  name: 米色地毯
   components:
   - type: Clickable
   - type: Sprite
@@ -240,7 +238,7 @@
 - type: entity
   id: RMCCarpetGreyBlue1
   parent: RMCCarpetBaseNonIconsmooth
-  name: grey blue carpet
+  name: 灰蓝色地毯
   components:
   - type: Clickable
   - type: Sprite
@@ -325,7 +323,7 @@
 - type: entity
   id: RMCCarpetPink1
   parent: RMCCarpetBaseNonIconsmooth
-  name: pink carpet
+  name: 粉色地毯
   components:
   - type: Clickable
   - type: Sprite
@@ -410,7 +408,7 @@
 - type: entity
   id: RMCCarpetBlack1
   parent: RMCCarpetBaseNonIconsmooth
-  name: black carpet
+  name: 黑色地毯
   components:
   - type: Clickable
   - type: Sprite
@@ -496,7 +494,7 @@
 - type: entity
   id: RMCBaseColourableRug
   abstract: true
-  name: rug
+  name: 地毯
   components:
   - type: Transform
     anchored: false
@@ -513,17 +511,16 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 10
-        behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
+    - trigger: !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
 
 - type: entity
   parent: RMCBaseColourableRug
   id: RMCColourableRugGrey
-  name: rubber mat
+  name: 橡胶垫
   suffix: Grey
   components:
   - type: Sprite
@@ -532,7 +529,7 @@
 - type: entity
   parent: RMCBaseColourableRug
   id: RMCColourableRugRed
-  name: rug
+  name: 地毯
   suffix: Red
   components:
   - type: Sprite
@@ -541,7 +538,7 @@
 - type: entity
   parent: RMCBaseColourableRug
   id: RMCColourableRugBlue
-  name: rug
+  name: 地毯
   suffix: Blue
   components:
   - type: Sprite

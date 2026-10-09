@@ -1,8 +1,8 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomClothingBase
-  name: gun spawner
-  description: spawns a random clothing item
+  name: 枪械生成器 | gun spawner
+  description: 生成一件随机服装物品 | spawns a random clothing item
   suffix: Base
   abstract: true
   components:
@@ -15,8 +15,8 @@
 - type: entity
   parent: RMCSpawnerRandomClothingBase
   id: RMCSpawnerRandomGoggles
-  name: goggles loot spawner
-  description: This is a random set of goggles, for survivors.
+  name: 护目镜战利品生成器 | goggles loot spawner
+  description: 这是一套随机的护目镜，供幸存者使用。 | This is a random set of goggles, for survivors.
   suffix: Guaranteed
   components:
   - type: RandomSpawner

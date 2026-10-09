@@ -1,8 +1,8 @@
 - type: entity
   parent: FaxMachineBase
   id: CMFax
-  name: fax machine
-  description: Liaison's best and only friend.
+  name: 传真机
+  description: Liaison最好且唯一的朋友。
   components:
   - type: ApcPowerReceiver
     needsPower: false # TODO RMC14
@@ -14,7 +14,7 @@
     drawdepth: SmallObjects
     layers:
     - state: icon
-      map: [ "enum.FaxMachineVisuals.VisualState" ]
+      map: ["enum.FaxMachineVisuals.VisualState"]
   - type: Icon
     sprite: _RMC14/Structures/Machines/fax_machine.rsi
     state: icon
@@ -22,7 +22,7 @@
     visuals:
       enum.FaxMachineVisuals.VisualState:
         enum.FaxMachineVisuals.VisualState:
-          Printing: { state: printing }
+          Printing: {state: printing}
           Normal: {state: icon}
   - type: InteractedBlacklist
     blacklist:
@@ -35,11 +35,11 @@
 - type: entity
   parent: CMFax
   id: CMFaxCMB
-  name: colony marshal bureau fax machine
+  name: 殖民地法警局传真机
   suffix: CMB
   components:
   - type: FaxMachine
-    name: "Colony Marshal Bureau"
+    name: "殖民地警长局"
     notifyAdmins: true
     groups:
     - marshal-bureau
@@ -47,21 +47,21 @@
 - type: entity
   parent: CMFax
   id: CMFaxWY
-  name: WY fax machine
+  name: WY传真机
   suffix: WEYA
   components:
   - type: FaxMachine
-    name: "Weyland-Yutani"
+    name: "维兰德-汤谷"
     notifyAdmins: true
 
 - type: entity
   parent: CMFax
   id: CMFaxHighCom
-  name: marine high command fax machine
+  name: 海军陆战队最高指挥部传真机
   suffix: Marine HC
   components:
   - type: FaxMachine
-    name: "Marine High Command"
+    name: "海军陆战队最高指挥部"
     notifyAdmins: true
     groups:
     - military-command
@@ -72,7 +72,7 @@
   suffix: Provost
   components:
   - type: FaxMachine
-    name: "Marine Provost Office"
+    name: "海军陆战队宪兵办公室"
     notifyAdmins: true
     groups:
     - military-command
@@ -83,7 +83,7 @@
   suffix: Press
   components:
   - type: FaxMachine
-    name: "Various Press Organizations"
+    name: "各类新闻机构"
     notifyAdmins: true
 
 
@@ -93,7 +93,7 @@
   suffix: SPP
   components:
   - type: FaxMachine
-    name: "Union of Progressive Peoples"
+    name: "进步人民联盟"
     notifyAdmins: true
 
 - type: entity
@@ -102,17 +102,17 @@
   suffix: TSE
   components:
   - type: FaxMachine
-    name: "Three World Empire"
+    name: "三世界帝国"
     notifyAdmins: true
 
 - type: entity
   parent: CMFax
   id: CMFaxColonyAdmin
-  name: colony administrator fax machine
+  name: 殖民地管理员传真机
   suffix: Admin
   components:
   - type: FaxMachine
-    name: "Colony Administrator"
+    name: "殖民地行政官"
     notifyAdmins: true
 
 - type: entity
@@ -121,7 +121,7 @@
   suffix: Corporate Liaison
   components:
   - type: FaxMachine
-    name: "Corporate Liaison"
+    name: "企业联络员"
   - type: SpecialFax
     faxId: Liaison
 
@@ -129,7 +129,7 @@
   parent: CMFax
   id: RMCFaxColony #todo for RMC: Colony Fax machine that can only fax We-Ya and cannot be faxed by Marines.
   suffix: Colony, Unusable
-  description: This won't be much help to anyone.
+  description: 这对任何人都不会有太大帮助。
   components:
   - type: RemoveComponents
     components:

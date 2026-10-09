@@ -2,14 +2,14 @@
   abstract: true
   parent: BaseStorageItem
   id: RMCCaseBase
-  name: case
+  name: 案例
   components:
   - type: Sprite
     noRot: true
     sprite: _RMC14/Objects/Storage/guncase.rsi
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
   - type: Icon
     sprite: _RMC14/Objects/Storage/guncase.rsi
     state: closed
@@ -18,8 +18,8 @@
     visuals:
       enum.StorageVisuals.Open:
         base:
-          True: { state: open }
-          False: { state: closed }
+          true: {state: open}
+          false: {state: closed}
   - type: Item
     size: Huge
   - type: Storage
@@ -36,8 +36,8 @@
   parent: RMCCaseBase
   id: RMCGunCaseBase
   abstract: true
-  name: base gun case
-  description: A gun case.
+  name: 基础枪盒
+  description: 一个枪盒。
   components:
   - type: RMCUnfoldCardboard
     spawns:
@@ -47,27 +47,27 @@
   parent: RMCCaseBase
   id: RMCBaseEquipmentCase
   abstract: true
-  name: base equipment case
-  description: A loadout case.
+  name: 基础装备箱
+  description: 一个装备配置箱。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/loadout_kits.rsi
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: sniper
-      map: [ label ]
+      map: [label]
   - type: Icon
     sprite: _RMC14/Objects/loadout_kits.rsi
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         base:
-          True: { state: open }
-          False: { state: closed }
+          true: {state: open}
+          false: {state: closed}
         label:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
   - type: Storage
     maxItemSize: Huge
     grid:

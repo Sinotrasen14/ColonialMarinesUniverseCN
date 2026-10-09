@@ -2,7 +2,7 @@
   parent: CMBaseDoor
   id: RMCDropshipDoorBase
   abstract: true
-  name: crew hatch
+  name: 乘员舱门
   placement:
     mode: SnapgridCenter
   components:
@@ -13,11 +13,11 @@
   - type: Sprite
     layers:
     - state: door_closed
-      map: [ "enum.DoorVisualLayers.Base" ]
+      map: ["enum.DoorVisualLayers.Base"]
     - state: unlit
       map: ["enum.DoorVisualLayers.BaseUnlit"]
     - state: unlit
-      map: [ "enum.WeldableLayers.BaseWelded" ]
+      map: ["enum.WeldableLayers.BaseWelded"]
     - state: door_locked
       shader: unshaded
       map: ["enum.DoorVisualLayers.BaseBolted"]
@@ -44,8 +44,7 @@
   - type: DockingSignalControl
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1000
       behaviors:
       - !type:DoActsBehavior
@@ -58,16 +57,16 @@
   parent: RMCDropshipDoorBase
   id: RMCDropshipCockpitBase
   abstract: true
-  name: cockpit
+  name: 驾驶舱
   components:
   - type: Sprite
     layers:
     - state: pilot_door_closed
-      map: [ "enum.DoorVisualLayers.Base" ]
+      map: ["enum.DoorVisualLayers.Base"]
     - state: unlit
       map: ["enum.DoorVisualLayers.BaseUnlit"]
     - state: unlit
-      map: [ "enum.WeldableLayers.BaseWelded" ]
+      map: ["enum.WeldableLayers.BaseWelded"]
     - state: pilot_door_locked
       shader: unshaded
       map: ["enum.DoorVisualLayers.BaseBolted"]
@@ -89,7 +88,7 @@
     powerLoad: 0
     needsPower: false
   - type: AccessReader
-    access: [ [ "AU14AccessGovforPilot" ], [ "AU14AccessOpforPilot" ] ]
+    access: [["AU14AccessGovforPilot"], ["AU14AccessOpforPilot"]]
   - type: BlockTileFire
 
 - type: entity
@@ -104,8 +103,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-1.49,0.49,1.49"
         density: 100
         mask:
@@ -137,8 +135,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,1.49"
         density: 100
         mask:
@@ -169,8 +166,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,1.49"
         density: 100
         mask:

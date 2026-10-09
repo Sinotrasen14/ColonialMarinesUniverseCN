@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCFiltration
-  name: water filtration system
-  description: A water filter that separates both organic and inorganic matter, hazardous waste, and corrosive acids from water so it may be further processed.
+  name: 水过滤系统
+  description: 一种水过滤器，可将有机和无机物质、危险废物以及腐蚀性酸从水中分离，以便进一步处理。
   placement:
     mode: SnapgridCenter
   components:
@@ -12,8 +12,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-1.49,-1.49,1.49,1.49"
         density: 60
         layer:
@@ -27,14 +26,13 @@
 - type: entity
   parent: RMCFiltration
   id: RMCFiltrationDisinfection
-  name: disinfection filter
-  description: A water filter specifically designed to separate micro-organisms, such as viruses and bacteria, from water.
+  name: 消毒过滤器
+  description: 一种专门设计用于从水中分离病毒和细菌等微生物的水过滤器。
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-1.49,-1.49,1.49,0.49"
         density: 60
         layer:
@@ -46,8 +44,8 @@
 - type: entity
   parent: RMCFiltration
   id: RMCFiltrationDistribution
-  name: waste distribution system
-  description: This machine separates the leftover waste from the purification processes to be discarded into space, recycled for supplies, or used for research.
+  name: 废物分配系统
+  description: 这台机器将净化过程中剩余的废物分离出来，以便丢弃到太空、回收为补给品或用于研究。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Filtration/96x96.rsi
@@ -64,8 +62,8 @@
 - type: entity
   parent: RMCFiltration
   id: RMCFiltrationSedimentation
-  name: sedimentation filter
-  description: A water filter specifically designed to capture and remove sediment, such as sand, silt, dirt, and rust, from water without removing the nutritious minerals for that crisp, clean taste every time.
+  name: 沉淀过滤器
+  description: 一款专为拦截并去除水中沉淀物（如沙子、淤泥、污垢和铁锈）而设计的水过滤器，同时不会去除水中有益的矿物质，让您每次都能享受到清爽纯净的口感。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Filtration/96x96.rsi
@@ -78,8 +76,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-1.49,-1.49,1.49,0.49"
         density: 60
         layer:
@@ -91,14 +88,13 @@
 - type: entity
   parent: RMCFiltration
   id: RMCCoagulationArm
-  name: coagulation arm
-  description: An axel with four sides, made to spin to help filter the water.
+  name: 混凝臂
+  description: 一个带有四个面的轴，用于旋转以帮助过滤水。
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 60
         layer:

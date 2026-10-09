@@ -21,8 +21,8 @@
 - type: entity
   parent: CMBaseWindow
   id: RMCWindowCorsatReinforced
-  name: reinforced window
-  description: A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it.
+  name: 加固窗户
+  description: 一扇玻璃窗，墙框内嵌有特殊的杆状矩阵。它看起来相当坚固。可能需要重重击打几下才能将其打碎。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/corsat_rwindow.rsi
@@ -39,32 +39,30 @@
   - type: Repairable
   - type: Destructible
     thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 600 # excessive damage destroys window and frame
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:DoActsBehavior
-            acts: ["Destruction"]
-      - trigger:
-          !type:DamageTrigger
-          damage: 100
-        behaviors:
-          - !type:PlaySoundBehavior
-            sound:
-              collection: WindowShatter
-          - !type:SpawnEntitiesBehavior
-            spawn:
-              CMShardGlass:
-                min: 1
-                max: 1
-              CMRodMetal:
-                min: 1
-                max: 1
-          - !type:ChangeConstructionNodeBehavior
-            node: windowFrameCorsatReinforced
+    - trigger: !type:DamageTrigger
+        damage: 600   # excessive damage destroys window and frame
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: WindowShatter
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+          CMRodMetal:
+            min: 1
+            max: 1
+      - !type:ChangeConstructionNodeBehavior
+        node: windowFrameCorsatReinforced
   - type: RMCWallExplosionDeletable
   - type: DestroyedByExplosionType
   - type: Construction
@@ -78,7 +76,7 @@
 - type: entity
   parent: RMCWindowCorsatReinforced
   id: RMCWindowCorsatReinforcedSecurity
-  description: A red tinted glass window with a special rod matrix inside a wall frame. It looks very strong.
+  description: 一扇红色调的玻璃窗，墙框内带有特殊的杆状矩阵。它看起来非常坚固。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/corsat_rwindow_sec.rsi
@@ -96,7 +94,7 @@
 - type: entity
   parent: RMCWindowCorsatReinforced
   id: RMCWindowCorsatReinforcedResearch
-  description: A purple tinted glass window with a special rod matrix inside a wall frame. It looks quite strong. Might take some good hits to shatter it.
+  description: 一面带有紫色调的玻璃窗，墙框内部有特殊的杆状矩阵。它看起来相当坚固。可能需要用力击打几次才能将其打碎。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Windows/corsat_rwindow_sci.rsi
@@ -114,8 +112,8 @@
 - type: entity
   parent: CMBaseWindow
   id: RMCWindowCorsatHull
-  name: hull window
-  description: A glass window with a special rod matrix inside a wall frame. This one has an automatic shutter system to prevent any atmospheric breach.
+  name: 船体窗
+  description: 一扇玻璃窗，墙框内带有特殊的杆状矩阵。这一扇配有自动遮板系统，以防止任何大气泄漏。
   components:
   - type: Corrodible
     isCorrodible: false

@@ -1,8 +1,8 @@
 - type: entity
   parent: [RMCBaseSlideMagazineVisuals, CMWeaponPistolBase]
   id: RMCWeaponPistolNP92
-  name: NP92 pistol
-  description: The standard issue sidearm of the UPP. The NP92 is a small but powerful sidearm, well-liked by most it is issued to, although some prefer the weapon it was meant to replace, the Type 73. Takes 12 round magazines.
+  name: NP92手枪
+  description: UPP的标准配发副武器。NP92是一种小巧但威力强大的副武器，深受大多数配发者的喜爱，不过有些人更喜欢它原本要取代的武器——73式。使用12发弹匣。
   components:
   - type: Tag
     tags:
@@ -43,7 +43,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -76,8 +76,8 @@
 - type: entity
   parent: CMWeaponPistolBase
   id: RMCWeaponPistolNPZ92
-  name: NPZ92 pistol
-  description: The NPZ92 is a version of the NP92 that includes an integrated suppressor, issued sparingly to Kommando units.
+  name: NPZ92手枪
+  description: NPZ92是NP92的一个版本，包含一体式消音器，仅少量配发给突击队单位。
   components:
   - type: Tag
     tags:
@@ -118,7 +118,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -156,7 +156,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -167,14 +167,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolNP92
-  name: NP92 magazine (9mm)
+  name: NP92弹匣（9mm）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolNP92
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgePistolNP92
@@ -191,18 +191,18 @@
     magState: mag
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistol9MM
-    
+
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolNP92Extended
-  name: NP92 extended magazine (9mm)
+  name: NP92 加长弹匣（9毫米）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolNP92Extended
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgePistolNP92
@@ -219,12 +219,12 @@
     magState: ext
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistol9MM
-    
+
 - type: entity
   parent: CMBulletBase
   id: RMCBulletPistolNP92
-  name: bullet (9mm)
-  categories: [ HideSpawnMenu ]
+  name: 9毫米子弹
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -233,7 +233,7 @@
 
 - type: entity
   id: RMCCartridgePistolNP92
-  name: cartridge (9mm)
+  name: 弹药（9毫米）
   parent: CMCartridgePistolBase
   components:
   - type: Tag

@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseItem
   id: RMCCasingBase
-  name: base casing
-  description:  An empty casing.
+  name: 基础弹壳
+  description: 一个空弹壳。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/CustomOrdnance/m40grenadecasing.rsi
@@ -12,8 +12,8 @@
     size: Small
 
 - type: entity
-  name: 30mm grenade casing
-  description: A casing for an 30mm Grenade.
+  name: 30毫米榴弹弹壳
+  description: 30毫米榴弹的弹壳。
   parent: RMCCasingBase
   id: RMCM40GrenadeCasing
   components:
@@ -24,8 +24,8 @@
       CMSteel: 4250
 
 - type: entity
-  name: M15 grenade casing
-  description: A casing for an M15 Grenade.
+  name: M15手榴弹外壳
+  description: M15手榴弹的外壳。
   parent: RMCCasingBase
   id: RMCM15GrenadeCasing
   components:
@@ -36,8 +36,8 @@
       CMSteel: 7000
 
 - type: entity
-  name: M20 mine casing
-  description: A casing for an M20 Claymore mine.
+  name: M20 地雷外壳
+  description: M20 克莱莫地雷的外壳。
   parent: RMCCasingBase
   id: RMCM20MineCasing
   components:
@@ -48,8 +48,8 @@
       CMSteel: 3750
 
 - type: entity
-  name: C4 plastic casing
-  description: A casing for a plastic explosive.
+  name: C4塑性炸药外壳
+  description: 一个塑性炸药外壳。
   parent: RMCCasingBase
   id: RMCC4PlasticCasing
   components:
@@ -61,8 +61,8 @@
       RMCPlastic: 2000
 
 - type: entity
-  name: 84mm rocket tube
-  description: A tube for a 84mm rocket.
+  name: 84毫米火箭发射管
+  description: 用于84毫米火箭的发射管。
   parent: RMCCasingBase
   id: RMC84mmRocketTube
   components:
@@ -73,8 +73,8 @@
       CMSteel: 7500
 
 - type: entity
-  name: 84mm rocket warhead
-  description: A warhead for a 84mm rocket.
+  name: 84毫米火箭弹弹头
+  description: 用于84毫米火箭弹的弹头。
   parent: RMCCasingBase
   id: RMC84mmRocketWarhead
   components:
@@ -85,8 +85,8 @@
       CMSteel: 11250
 
 - type: entity
-  name: 80mm mortar shell casing
-  description: A shell for a 84mm mortar.
+  name: 80毫米迫击炮弹壳
+  description: 一枚84毫米迫击炮的弹壳。
   parent: RMCCasingBase
   id: RMC80mmMortarShell
   components:
@@ -97,8 +97,8 @@
       CMSteel: 18750
 
 - type: entity
-  name: 80mm mortar shell warhead
-  description: A warhead for a 84mm mortar.
+  name: 80毫米迫击炮弹弹头
+  description: 一枚用于84毫米迫击炮的弹头。
   parent: RMCCasingBase
   id: RMC80mmMortarWarhead
   components:
@@ -109,8 +109,8 @@
       CMSteel: 11250
 
 - type: entity
-  name: 80mm mortar shell camera warhead
-  description: A camera warhead for a 84mm mortar.
+  name: 80毫米迫击炮弹摄像弹头
+  description: 用于84毫米迫击炮的摄像弹头。
   parent: RMCCasingBase
   id: RMC80mmMortarCameraWarhead
   components:
@@ -121,8 +121,8 @@
       CMSteel: 15000
 
 - type: entity
-  name: Custom M240 smoke tank
-  description: An incomplete fuel tank used to store smoke for use in the M240 incinerator unit.
+  name: 定制M240烟雾罐
+  description: 一个未完成的燃料罐，用于储存供M240焚烧器单元使用的烟雾。
   parent: RMCCasingBase
   id: RMCCustomM34A1SmokeTankCase
   components:
@@ -133,7 +133,7 @@
     - state: flametank_custom
     - state: flametank_custom_strip2
     - state: flametank_custom_strip2
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: Item
     size: Normal
   - type: PhysicalComposition

@@ -1,9 +1,8 @@
 - type: entity
   parent: RMCBaseWeaponSniperRifle
   id: RMCM96SBSniperRifle
-  name: M96S-B suppressed scoped rifle
-  description: "A heavy sniper rifle manufactured by AEGIS Armaments. Modified with an integral suppressor, it has a scope system and fires armor penetrating rounds out of a 15-round magazine.
-    'Peace Through Superior Firepower'"
+  name: M96S-B 带瞄准镜的消音步枪
+  description: "由AEGIS军械公司制造的重型狙击步枪。经过一体式消音器改装，配有瞄准镜系统，可从15发弹匣中发射穿甲弹。“以优势火力实现和平”"
   components:
   - type: GuideHelp
     guides:
@@ -12,9 +11,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Snipers/m96s/urban.rsi # TODO RMC14 duplicate this and revise on its own as m96sb.rsi when urban back sprites are fixed
     layers:
     - state: bolt-open
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
       state: suppressed_sniper_barrel
       offset: 0.715, 0.025
@@ -44,7 +43,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineSniperM96S
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg

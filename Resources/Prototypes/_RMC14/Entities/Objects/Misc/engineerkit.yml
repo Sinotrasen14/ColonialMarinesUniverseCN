@@ -1,15 +1,15 @@
 - type: entity
   parent: BaseStorageItem
   id: RMCEngineerKit
-  name: engineer kit
-  description: A combat engineering toolkit intended to carry electrical and mechanical supplies into combat. With engineering training you can fit this in a backpack.
+  name: 工程师工具包
+  description: 战斗工程工具包，旨在将电气和机械补给带入战场。接受过工程训练后，你可以将其装入背包。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/engineer_kit.rsi
     layers:
     - state: toolkit
     - state: toolkit_empty
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
   - type: Storage
     maxItemSize: Small
@@ -42,8 +42,8 @@
     visuals:
       enum.SharedBagOpenVisuals.BagState:
         openLayer:
-          Open: { visible: true }
-          Closed: { visible: false }
+          Open: {visible: true}
+          Closed: {visible: false}
   - type: Appearance
   - type: InteractedBlacklist
     blacklist:

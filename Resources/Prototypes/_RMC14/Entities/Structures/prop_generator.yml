@@ -1,7 +1,7 @@
 - type: entity # from what i can tell this is supposed to be indestructible
   id: RMCPropGenerator
-  name: expended UE-11 Generator Unit
-  description: A special power module designed to be a backup generator in the event of a transformer malfunction. This generator has already been expended.
+  name: 已消耗的 UE-11 发电机单元
+  description: 一种特殊电源模块，设计用于在变压器故障时作为备用发电机。该发电机已消耗。
   placement:
     mode: SnapgridCenter
   components:
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.45"
         density: 190
         layer:

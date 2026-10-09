@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructure
   id: RMCPlanter
-  name: concrete planter
-  description: A decorative concrete planter.
+  name: 混凝土花盆
+  description: 一个装饰性混凝土花盆。
   components:
   - type: Sprite
     noRot: true
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.8"
         density: 75
         mask:

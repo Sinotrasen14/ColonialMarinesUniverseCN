@@ -1,191 +1,181 @@
 - type: entity
   id: RMCGrille
   parent: CMBaseStructure
-  name: grille
-  description: A flimsy lattice of metal rods.
+  name: 格栅
+  description: 一个由金属杆组成的脆弱格栅。
   components:
-    - type: MeleeSound
-      soundGroups:
-        Brute:
-          path:
-            "/Audio/Weapons/grille_hit.ogg"
-    - type: CanBuildWindowOnTop
-    - type: Sprite
-      drawdepth: Walls
-      sprite: _RMC14/Structures/Walls/grille.rsi
-      layers:
-        - state: grille
-        - state: electrified
-          sprite: Effects/electricity.rsi
-          map: ["enum.ElectrifiedLayers.Sparks"]
-          shader: unshaded
-          visible: false
-    - type: Icon
-      sprite: _RMC14/Structures/Walls/grille.rsi
-      state: grille
-    - type: Construction
-      graph: RMCGrille
-      node: Grille
-      deconstructionTarget: start
-    - type: Damageable
-      damageModifierSet: PerforatedMetallic
-    - type: Injurable
-      damageContainer: StructuralInorganic
-    - type: PowerConsumer
-      showInMonitor: false
-    - type: Electrified
-      requirePower: true
-      noWindowInTile: true
-      highVoltageNode: high
-      mediumVoltageNode: medium
-      lowVoltageNode: low
-    - type: NodeContainer
-      nodes:
-        high:
-          !type:CableDeviceNode
-          nodeGroupID: HVPower
-        medium:
-          !type:CableDeviceNode
-          nodeGroupID: MVPower
-        low:
-          !type:CableDeviceNode
-          nodeGroupID: Apc
-    - type: Physics
-      bodyType: Static
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.5,-0.5,0.5,0.5"
-          layer:
-          - GlassLayer
-    - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 150 # Excessive damage
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-        - trigger:
-            !type:DamageTrigger
-            damage: 100
-          behaviors:
-            - !type:ChangeConstructionNodeBehavior
-              node: grilleBroken
-            - !type:DoActsBehavior
-              acts: ["Breakage"]
-    - type: Appearance
-    - type: GenericVisualizer
-      visuals:
-        enum.ElectrifiedVisuals.IsElectrified:
-          enum.ElectrifiedLayers.Sparks:
-            True: { visible: True }
-            False: { visible: False }
-    - type: AnimationPlayer
-    - type: DamageMultiplierFlags
-      flags: Breaching
-    - type: XenoToggleChargingDamage
-      stageLoss: 1
-      damage:
-        types:
-          Blunt: 40
-    - type: XenoCrusherChargable
-      setDamage:
-        types:
-          Blunt: 80
-      destroyDamage: 100
-      passOnDestroy: true
+  - type: MeleeSound
+    soundGroups:
+      Brute:
+        path: "/Audio/Weapons/grille_hit.ogg"
+  - type: CanBuildWindowOnTop
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _RMC14/Structures/Walls/grille.rsi
+    layers:
+    - state: grille
+    - state: electrified
+      sprite: Effects/electricity.rsi
+      map: ["enum.ElectrifiedLayers.Sparks"]
+      shader: unshaded
+      visible: false
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/grille.rsi
+    state: grille
+  - type: Construction
+    graph: RMCGrille
+    node: Grille
+    deconstructionTarget: start
+  - type: Damageable
+    damageModifierSet: PerforatedMetallic
+  - type: Injurable
+    damageContainer: StructuralInorganic
+  - type: PowerConsumer
+    showInMonitor: false
+  - type: Electrified
+    requirePower: true
+    noWindowInTile: true
+    highVoltageNode: high
+    mediumVoltageNode: medium
+    lowVoltageNode: low
+  - type: NodeContainer
+    nodes:
+      high: !type:CableDeviceNode
+        nodeGroupID: HVPower
+      medium: !type:CableDeviceNode
+        nodeGroupID: MVPower
+      low: !type:CableDeviceNode
+        nodeGroupID: Apc
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
+        layer:
+        - GlassLayer
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 150     # Excessive damage
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: grilleBroken
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ElectrifiedVisuals.IsElectrified:
+        enum.ElectrifiedLayers.Sparks:
+          true: {visible: true}
+          false: {visible: false}
+  - type: AnimationPlayer
+  - type: DamageMultiplierFlags
+    flags: Breaching
+  - type: XenoToggleChargingDamage
+    stageLoss: 1
+    damage:
+      types:
+        Blunt: 40
+  - type: XenoCrusherChargable
+    setDamage:
+      types:
+        Blunt: 80
+    destroyDamage: 100
+    passOnDestroy: true
 
 - type: entity
   id: RMCGrilleBroken
   parent: CMBaseStructure
-  name: grille
-  description: A flimsy lattice of metal rods. It has seen better days.
+  name: 格栅
+  description: 由金属杆组成的脆弱格栅。它已风光不再。
   components:
-    - type: Sprite
-      drawdepth: Walls
-      sprite: _RMC14/Structures/Walls/grille.rsi
-      state: brokengrille
-    - type: Icon
-      sprite: _RMC14/Structures/Walls/grille.rsi
-      state: brokengrille
-    - type: Construction
-      graph: RMCGrille
-      node: grilleBroken
-      deconstructionTarget: start
-    - type: Fixtures # overwrite BaseStructure parent.
-    - type: Physics
-      bodyType: Static
-      canCollide: false
-    - type: Damageable
-      damageModifierSet: FlimsyMetallic
-    - type: Injurable
-      damageContainer: Inorganic
-    - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 10
-          behaviors:
-            - !type:ChangeConstructionNodeBehavior
-              node: start
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _RMC14/Structures/Walls/grille.rsi
+    state: brokengrille
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/grille.rsi
+    state: brokengrille
+  - type: Construction
+    graph: RMCGrille
+    node: grilleBroken
+    deconstructionTarget: start
+  - type: Fixtures   # overwrite BaseStructure parent.
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: Damageable
+    damageModifierSet: FlimsyMetallic
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 10
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: start
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
 
 - type: entity
   id: RMCGrilleElectrified
   parent: RMCGrille
-  name: electrified grille
-  description: A dark reinforced mesh grille with warning stripes, equipped with Tesla-like coils to regulate high voltage current. It is highly electrified and dangerous when powered.
+  name: 带电格栅
+  description: 深色加固网状格栅，带有警示条纹，并配备类似特斯拉线圈的线圈，用于调节高压电流。通电时，它会高度带电且十分危险。
   components:
-    - type: Sprite
-      drawdepth: Walls
-      sprite: _RMC14/Structures/Walls/electric_grille.rsi
-      layers:
-        - state: grille
-    - type: Icon
-      sprite: _RMC14/Structures/Walls/electric_grille.rsi
-      state: grille
-    - type: Construction
-      graph: RMCGrilleElectrified
-      node: grilleElectrified
-      deconstructionTarget: start
-    - type: IconSmooth
-      key: walls
-      mode: NoSprite
-    - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 150 # Excessive damage
-          behaviors:
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
-        - trigger:
-            !type:DamageTrigger
-            damage: 100
-          behaviors:
-            - !type:ChangeConstructionNodeBehavior
-              node: grilleBrokenElectrified
-            - !type:DoActsBehavior
-              acts: ["Breakage"]
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _RMC14/Structures/Walls/electric_grille.rsi
+    layers:
+    - state: grille
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/electric_grille.rsi
+    state: grille
+  - type: Construction
+    graph: RMCGrilleElectrified
+    node: grilleElectrified
+    deconstructionTarget: start
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 150     # Excessive damage
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:ChangeConstructionNodeBehavior
+        node: grilleBrokenElectrified
+      - !type:DoActsBehavior
+        acts: ["Breakage"]
 
 - type: entity
   id: RMCGrilleElectrifiedBroken
   parent: RMCGrilleBroken
-  name: broken electrified grille
-  description: A dark reinforced mesh grille with warning stripes, equipped with Tesla-like coils to regulate high voltage current. It is highly electrified and dangerous when powered. It has seen better days.
+  name: 损坏的带电格栅
+  description: 一个带有警告条纹的深色加固网状格栅，配备类似特斯拉线圈的线圈来调节高压电流。通电时它高度带电，十分危险。它已经破旧不堪。
   components:
-    - type: Sprite
-      drawdepth: Walls
-      sprite: _RMC14/Structures/Walls/electric_grille.rsi
-      state: brokengrille
-    - type: Icon
-      sprite: _RMC14/Structures/Walls/electric_grille.rsi
-      state: brokengrille
-    - type: Construction
-      graph: RMCGrilleElectrified
-      node: grilleBrokenElectrified
-      deconstructionTarget: start
+  - type: Sprite
+    drawdepth: Walls
+    sprite: _RMC14/Structures/Walls/electric_grille.rsi
+    state: brokengrille
+  - type: Icon
+    sprite: _RMC14/Structures/Walls/electric_grille.rsi
+    state: brokengrille
+  - type: Construction
+    graph: RMCGrilleElectrified
+    node: grilleBrokenElectrified
+    deconstructionTarget: start

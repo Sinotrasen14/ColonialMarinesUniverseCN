@@ -3,23 +3,23 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechMedicalGear
-  name: ColMarTech squad medical gear rack
-  description: An automated gear rack for hospital corpsmen.
+  name: ColMarTech 小队医疗装备架
+  description: 用于海军医务兵的自动化装备架。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessMedPrep" ]
+    - ["CMAccessMedPrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/medical_gear.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMHospitalCorpsman
     sections:
-    - name: Medical Set (Mandatory)
+    - name: 医疗套装（必填）
       takeAll: CMMedicalSet
       entries:
       - id: CMVendorBundleSquadMedicalEssentials
-    - name: Field Supplies
+    - name: 现场物资
       entries:
       - id: CMBurnKit10
         points: 2
@@ -36,9 +36,9 @@
     #    CMMedicalSplints: 1P
 #        recommended: true
       - id: CMBloodPackFull # TODO RMC14 O-
-        name: blood bag (O-)
+        name: 血袋（O型Rh阴性）
         points: 4
-    - name: Firstaid Kits
+    - name: 急救箱
       entries:
       - id: CMAdvFirstAidKitFilled
         points: 12
@@ -53,7 +53,7 @@
         points: 6
       - id: RMCRadiationAidKitFilled
         points: 6
-    - name: Pill Bottles
+    - name: 药瓶
       entries:
       - id: CMPillCanisterBicaridine
         points: 5
@@ -72,7 +72,7 @@
 #      - id: CMPillCanisterTramadol
 #        points: 5
 #        recommended: true
-    - name: Autoinjectors
+    - name: 自动注射器
       entries:
       - id: CMBicaridineAutoInjector
         points: 1
@@ -90,7 +90,7 @@
 #        points: 1
       - id: CMTricordrazineAutoInjector
         points: 1
-    - name: Medical Utilities
+    - name: 医疗实用工具
       entries:
       - id: CMMiniTank
         points: 6
@@ -101,7 +101,7 @@
         points: 4
       - id: CMStasisBagFolded
         points: 6
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 18
@@ -123,7 +123,7 @@
         points: 20
     # - id: RMCElectroshockGrenadex3
     #   points: 16
-    - name: Primary Ammunition
+    - name: 主弹药
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 6
@@ -141,7 +141,7 @@
         points: 6
       - id: CMMagazineRifleM54CExt
         points: 6
-    - name: Sidearm Ammunition
+    - name: 副武器弹药
       entries:
       - id: RMCMagazinePistolM13Ext
         points: 6
@@ -157,29 +157,29 @@
         points: 3
       - id: RMCMagazinePistolSU6
         points: 6
-    - name: Armors
+    - name: 护甲
       entries:
       - id: CMArmorB12
         points: 24
       - id: CMArmorM4
         points: 16
-    - name: Restricted Firearms
+    - name: 限制级枪支
       entries:
       - id: RMCGunCasePistolMK80
         points: 8
       - id: RMCGunCasePistolSmart
         points: 12
-    - name: Clothing Items
+    - name: 衣物
       entries:
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
+        name: 砍刀袋（满）
         points: 8
       - id: RMCBackpackRTO
         replaceSlot: back
         points: 15
       - id: RMCWeldingGoggles
         points: 3
-    - name: Utilities
+    - name: 实用工具
       entries:
       - id: CMFireExtinguisherPortable
         points: 3
@@ -187,7 +187,7 @@
         points: 8
       - id: RMCWhistle
         points: 3
-    - name: Binoculars
+    - name: 双筒望远镜
       entries:
       - id: RMCBinoculars
         points: 5
@@ -195,15 +195,15 @@
         points: 10
       - id: RMCLaserDesignator
         points: 15
-    - name: Helmet Optics
+    - name: 头盔光学
       entries:
       - id: RMCVisorWelding
         points: 5
-    - name: Pamphlets
+    - name: 小册子
       entries:
       - id: CMPamphletEngineer
         points: 15
-    - name: Radio Keys
+    - name: 无线电钥匙
       entries:
       - id: CMEncryptionKeyEngineer
         points: 3
@@ -217,12 +217,12 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechMedicalEquipment
-  name: ColMarTech squad medical equipment rack
-  description: An automated rack hooked up to a colossal storage of hospital corpsman standard-issue equipment.
+  name: ColMarTech小队医疗设备架
+  description: 一个自动化设备架，连接着一个庞大的海军医务兵制式装备储备。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessMedPrep" ]
+    - ["CMAccessMedPrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
@@ -230,51 +230,51 @@
     - CMHospitalCorpsman
     - CMPVEHospitalCorpsman
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMVendorBundleSquadMedicalApparel
       - id: RMCHandsLatexMarine
-        name: combat sterile gloves
+        name: 作战无菌手套
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
-    - name: Armor
-      choices: { CMArmor: 1 }
+    - name: 护甲
+      choices: {CMArmor: 1}
       entries:
       - id: RMCArmorVestSquad
       - id: RMCArmorM3LightVariants
-        name: light armor
+        name: 轻甲
       - id: RMCArmorM3MediumVariants
-        name: medium armor
+        name: 中型护甲
         recommended: true
       - id: RMCArmorM3HeavyVariants
-        name: heavy armor
-    - name: Helmet
-      choices: { CMHelmet: 1 }
+        name: 重甲
+    - name: 头盔
+      choices: {CMHelmet: 1}
       entries:
       - id: CMArmorHelmetM10Medic
       - id: RMCArmorHelmetM10MedicWhite
         recommended: true
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: CMBackpackMarineMedic
         replaceSlot: back
       - id: CMSatchelMarineMedic
         replaceSlot: back
         recommended: true
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: CMBeltMedicBagFilled
-        name: M276 lifesaver bag (Full)
+        name: M276 救生包（满）
       - id: CMBeltMedicalFilled
-        name: M276 medical storage rig (Full)
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+        name: M276 医疗储物架（满）
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchReagentCanisterTricordrazineRevival
-        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Tricordrazine)
+        name: "加压试剂罐袋\n（复苏混合液－三可拉嗪）"
         recommended: true
       - id: RMCPouchMedkit
         recommended: true
@@ -284,32 +284,32 @@
       - id: RMCPouchAutoinjector
       - id: RMCPouchFirstResponder
       - id: RMCPouchReagentCanisterBicaridine
-        name: Pressurized Reagent Canister Pouch\n(Bicaridine)
+        name: 加压试剂罐袋\n（比卡里丁）
       - id: RMCPouchReagentCanisterKelotane
-        name: Pressurized Reagent Canister Pouch\n(Kelotane)
+        name: "加压试剂罐袋\n（凯洛坦）"
       - id: RMCPouchReagentCanisterTricordrazine
-        name: Pressurized Reagent Canister Pouch\n(Tricordrazine)
+        name: 加压试剂罐袋\n（三可拉嗪）
       - id: RMCPouchReagentCanister
-        name: Pressurized Reagent Canister Pouch\n(EMPTY)
+        name: "加压试剂罐袋\n（空）"
       - id: RMCPouchVialFill
-        name: vial pouch (Full)
+        name: 药瓶袋（满）
       - id: RMCPouchMedical
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救袋（可补充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救包（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救袋（药丸）
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: 信号弹袋（满）
       - id: RMCPouchGeneralLarge
       - id: RMCPouchSling
       - id: RMCPouchMagazinePistolLarge
       - id: RMCPouchMagazine
       - id: RMCPouchShotgun
       - id: RMCPouchPistol
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+    - name: 配件
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
         recommended: true
@@ -323,8 +323,8 @@
       - id: RMCWebbingDropPouchBlack
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Mask
-      choices: { CMMask: 1 }
+    - name: 面具
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskSterile
       - id: CMMaskGas
@@ -336,13 +336,13 @@
 - type: entity
   parent: ColMarTechBase
   id: RMCColMarTechMedicalEquipmentPVE
-  name: ColMarTech squad medical equipment rack
-  description: An automated rack hooked up to a colossal storage of hospital corpsman standard-issue equipment.
+  name: ColMarTech班用医疗设备架
+  description: 一个自动化设备架，连接着一座存放医护兵标准配发装备的巨大储存库。
   suffix: PVE
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessMedPrep" ]
+    - ["CMAccessMedPrep"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/medical_gear.rsi
   - type: CMAutomatedVendor
@@ -354,42 +354,42 @@
     - RMCFORECONPVECorpsman
     - RMCCLFDoctorPVE
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: RMCHandsLatexMarine
-        name: combat sterile gloves
+        name: 战斗无菌手套
       - id: CMMaskSterile
-    - name: Helmet
-      choices: { CMHelmet: 1 }
+    - name: 头盔
+      choices: {CMHelmet: 1}
       entries:
       - id: CMArmorHelmetM10Medic
       - id: RMCArmorHelmetM10MedicWhite
         recommended: true
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: CMBackpackMarineMedic
       - id: CMSatchelMarineMedic
         recommended: true
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: CMBeltMedicBagFilled
-        name: M276 lifesaver bag (Full)
+        name: M276救生包（满配）
       - id: CMBeltMedicalFilled
-        name: M276 medical storage rig (Full)
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+        name: M276医疗存储装置（满）
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchReagentCanisterMeraBic
-        name: Pressurized Reagent Canister Pouch\n(Meralyne-Bicaridine)
+        name: "加压试剂罐袋\n（美拉林-比卡利定）"
         recommended: true
       - id: RMCPouchReagentCanisterKeloDerm
-        name: Pressurized Reagent Canister Pouch\n(Kelotane-Dermaline)
+        name: "加压试剂罐袋\n（凯洛坦－德玛林）"
         recommended: true
       - id: RMCPouchReagentCanisterTricordrazineRevival
-        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Tricordrazine)
+        name: "加压试剂罐袋\n（复苏混合液 - 三可拉嗪）"
         recommended: true
 #     - id: CMPressurizedReagentCanisterPouchPeridaxonRevivalMix
 #       name: Pressurized Reagent Canister Pouch\n(Revival Mix - Peridaxon)
@@ -399,54 +399,54 @@
       - id: RMCPouchAutoinjector
       - id: RMCPouchFirstResponder
       - id: RMCPouchReagentCanisterTricordrazine
-        name: Pressurized Reagent Canister Pouch\n(Tricordrazine)
+        name: "加压试剂罐袋\n（三可拉嗪）"
       - id: RMCPouchReagentCanister
-        name: Pressurized Reagent Canister Pouch\n(EMPTY)
+        name: "加压试剂罐袋\n（空）"
       - id: RMCPouchVialFill
-        name: vial pouch (Full)
+        name: 药瓶袋（满）
       - id: RMCPouchMedical
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救袋（可再填充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救包（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救包（药丸）
 
 - type: entity
   parent: RMCColMarTechMedicalEquipmentPVE
   id: RMCPMCMedicalEquipmentPVE
-  name: We-Yu squad medical equipment rack
-  description: An automated rack hooked up to a colossal storage of corporate medic standard-issue equipment.
+  name: We-Yu小队医疗设备架
+  description: 一个自动化设备架，连接着庞大的企业医疗兵标准配发装备储备库。
   suffix: PVE, PMC
   components:
   - type: CMAutomatedVendor
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: RMCHandsLatexMarine
-        name: combat sterile gloves
+        name: 作战无菌手套
       - id: CMMaskSterile
       - id: RMCSatchelPMCMedic
         recommended: true
       - id: ArmorHelmetPMC
         recommended: true
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltMedicBagPMCFilled
-        name: M276 medical storage rig (Full)
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+        name: M276医疗储物架（满）
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchReagentCanisterMeraBic
-        name: Pressurized Reagent Canister Pouch\n(Meralyne-Bicaridine)
+        name: "加压试剂罐袋\n（梅拉林-比卡利定）"
         recommended: true
       - id: RMCPouchReagentCanisterKeloDerm
-        name: Pressurized Reagent Canister Pouch\n(Kelotane-Dermaline)
+        name: 增压试剂罐袋\n（Kelotane-Dermaline）
         recommended: true
       - id: RMCPouchReagentCanisterTricordrazineRevival
-        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Tricordrazine)
+        name: "加压试剂罐袋\n（复苏混合剂 - 三可拉嗪）"
         recommended: true
 #     - id: CMPressurizedReagentCanisterPouchPeridaxonRevivalMix
 #       name: Pressurized Reagent Canister Pouch\n(Revival Mix - Peridaxon)
@@ -456,58 +456,58 @@
       - id: RMCPouchAutoinjector
       - id: RMCPouchFirstResponder
       - id: RMCPouchReagentCanisterTricordrazine
-        name: Pressurized Reagent Canister Pouch\n(Tricordrazine)
+        name: "加压试剂罐袋\n（三可定）"
       - id: RMCPouchReagentCanister
-        name: Pressurized Reagent Canister Pouch\n(EMPTY)
+        name: "加压试剂罐袋\n（空）"
       - id: RMCPouchVialFill
-        name: vial pouch (Full)
+        name: 药瓶袋（满）
       - id: RMCPouchMedical
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可补充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救袋（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救包（药丸）
 
 - type: entity
   parent: RMCColMarTechMedicalEquipmentPVE
   id: RMCSPPMedicalEquipmentPVE
-  name: H-Tech squad medical equipment rack
-  description: An automated rack hooked up to a colossal storage of UPP corpsman standard-issue equipment.
+  name: H-Tech小队医疗设备架
+  description: 一个自动化设备架，接入了一个储存着海量UPP医护兵标准配发装备的庞大储备库。
   suffix: PVE, SPP
   components:
   - type: CMAutomatedVendor
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: RMCHandsLatexMarine
-        name: combat sterile gloves
+        name: 战斗无菌手套
       - id: CMMaskSterile
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: CMBackpackMarine # RMC14 TODO: SPP Medic Backpack
       - id: RMCSatchelSPP # RMC14 TODO: SPP Medic Satchel
         recommended: true
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltMedicBagSPPFilled
-        name: Type 41 pattern lifesaver bag (Full)
+        name: 41型救生袋（全套）
       - id: CMBeltMedicalFilled
-        name: M276 medical storage rig (Full) # RMC14 TODO: SPP Medical Storage Rig
-    - name: Pouches
-      choices: { RMCPouch: 2 }
+        name: M276医疗储存装置（满）                   # RMC14 TODO: SPP Medical Storage Rig
+    - name: 小袋
+      choices: {RMCPouch: 2}
       entries:
       - id: RMCPouchReagentCanisterMeraBic
-        name: Pressurized Reagent Canister Pouch\n(Meralyne-Bicaridine)
+        name: "加压试剂罐袋\n（美拉林-比卡定）"
         recommended: true
       - id: RMCPouchReagentCanisterKeloDerm
-        name: Pressurized Reagent Canister Pouch\n(Kelotane-Dermaline)
+        name: "加压试剂罐袋\n（凯洛坦-德玛林）"
         recommended: true
       - id: RMCPouchReagentCanisterTricordrazineRevival
-        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Tricordrazine)
+        name: "加压试剂罐袋\n（复苏混合液 - 三可定）"
         recommended: true
 #     - id: CMPressurizedReagentCanisterPouchPeridaxonRevivalMix
 #       name: Pressurized Reagent Canister Pouch\n(Revival Mix - Peridaxon)
@@ -517,25 +517,25 @@
       - id: RMCPouchAutoinjector
       - id: RMCPouchFirstResponder
       - id: RMCPouchReagentCanisterTricordrazine
-        name: Pressurized Reagent Canister Pouch\n(Tricordrazine)
+        name: "加压试剂罐袋\n（三可拉嗪）"
       - id: RMCPouchReagentCanister
-        name: Pressurized Reagent Canister Pouch\n(EMPTY)
+        name: "加压试剂罐袋\n（空）"
       - id: RMCPouchVialFill
-        name: vial pouch (Full)
+        name: 小瓶袋（满）
       - id: RMCPouchMedical
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可再填充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救包（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救袋（药片）
 
 - type: entity
   parent: RMCColMarTechMedicalEquipmentPVE
   id: ColMarTechMedicalChemicalPVE
   suffix: PVE
-  name: ColMarTech squad medical chemical rack
-  description: An automated gear rack for specialized chemicals for the hospital corpsman.
+  name: ColMarTech小队医疗化学药品架
+  description: 供医务兵使用的专用化学品自动装备架。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/medical_chemical.rsi
@@ -550,7 +550,7 @@
     #     recommended: true
     #   - id: RMCLargeBottleImidazolineAlkysine
     #     recommended: true
-    - name: Pill Bottles
+    - name: 药瓶
       entries:
       - id: RMCPillCanisterMeralyneBicaridine
         points: 60
@@ -563,7 +563,7 @@
         points: 30
       - id: RMCPillCanisterIron
         points: 30
-    - name: Liquid Bottles
+    - name: 液体瓶
       entries:
       - id: RMCLargeBottleMeralyneBicaridine
         points: 40
@@ -581,8 +581,8 @@
   parent: ColMarTechMedicalChemicalPVE
   id: RMCRCMMedicalChemicalPVE
   suffix: PVE, RCM
-  name: We-Yu section medical chemical rack
-  description: An automated gear rack for specialized chemicals for the medical assistants.
+  name: 维宇区医用化学试剂架
+  description: 供医疗助理使用的专用化学品自动化试剂架。
   components:
   - type: CMAutomatedVendor
     jobs:
@@ -597,7 +597,7 @@
     #     recommended: true
     #   - id: RMCLargeBottleImidazolineAlkysine
     #     recommended: true
-    - name: Pill Bottles
+    - name: 药瓶
       entries:
       - id: RMCPillCanisterMeralyneBicaridine
         points: 60
@@ -610,7 +610,7 @@
         points: 30
       - id: RMCPillCanisterIron
         points: 30
-    - name: Liquid Bottles
+    - name: 液体瓶
       entries:
       - id: RMCLargeBottleMeralyneBicaridine
         points: 40

@@ -1,18 +1,18 @@
 - type: entity
   parent: BaseStorageItem
   id: CMMedicalUpgradeKit
-  name: medical upgrade kit
-  description: This kit holds upgraded trauma and burn kits, for critical injuries.
+  name: 医疗升级套件
+  description: 此套件装有升级版创伤和烧伤套件，用于危重伤情。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/medical_upgrade_kit.rsi
     layers:
     - state: medical_upgrade_kit_base
     - state: medical_upgrade_kit_open
-      map: [ "openLayer" ]
+      map: ["openLayer"]
       visible: false
     - state: medical_upgrade_kit_closed
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
       visible: false
   - type: Item
     size: Small
@@ -32,11 +32,11 @@
     visuals:
       enum.SharedBagOpenVisuals.BagState:
         openLayer:
-          Open: { visible: true }
-          Closed: { visible: false }
+          Open: {visible: true}
+          Closed: {visible: false}
         closedLayer:
-          Open: { visible: false }
-          Closed: { visible: true }
+          Open: {visible: false}
+          Closed: {visible: true}
   - type: Appearance
   - type: InteractedBlacklist
     blacklist:

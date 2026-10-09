@@ -1,24 +1,24 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechCrewSynthetic
-  name: ColMarTech Synthetic Equipment Rack
-  description: An automated rack hooked up to a colossal storage of various equipment. Can be accessed only by synthetic units.
+  name: ColMarTech合成人装备架
+  description: 自动化装备架连接着一个储存各类装备的巨型存储库。仅合成人单位可访问。
   components:
   - type: AccessReader
     access:
-    - [ "RMCAccessSynth" ]
+    - ["RMCAccessSynth"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: RMCSynthExperimentalToolsToken
       - id: RMCSynthResetKey
       - id: RMCHeadsetSynth
-    - name: Uniform
-      choices: { CMUniform: 1 }
+    - name: 制服
+      choices: {CMUniform: 1}
       entries:
       - id: RMCJumpsuitSynthetic
         # mandatory: true, TODO allow vendors to mark entries as mandatory
@@ -31,8 +31,8 @@
       - id: CMJumpsuitSPP
       - id: CMJumpsuitSPPMedic
       - id: CMJumpsuitSPPEngi
-    - name: Webbing
-      choices: { CMAccessories: 1 }
+    - name: 织带
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
         recommended: true
@@ -45,8 +45,8 @@
       - id: RMCWebbingBlackSmall
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Shoes
-      choices: { RMCShoes: 1 }
+    - name: 鞋子
+      choices: {RMCShoes: 1}
       entries:
       - id: RMCShoesWhite
         recommended: true
@@ -54,15 +54,15 @@
       - id: CMBootsBrownFilled
       - id: CMBootsGreyFilled
       - id: CMBootsJungleFilled
-    - name: Helmet
-      choices: { CMHelmet: 1 }
+    - name: 头盔
+      choices: {CMHelmet: 1}
       entries:
       - id: RMCHardhatOrange
-        name: orange hard hat
+        name: 橙色安全帽
       - id: RMCHelmetWelding
       - id: CMHeadFlapCap
-    - name: Suit # Parity Vendor Fill has one for the map's camo, then still lets the synth choose from any of the options. Hence why this has so many options.
-      choices: { CMSuit: 1 }
+    - name: 西装   # Parity Vendor Fill has one for the map's camo, then still lets the synth choose from any of the options. Hence why this has so many options.
+      choices: {CMSuit: 1}
       entries:
       - id: CMArmorM3VLSynth
         recommended: true
@@ -77,8 +77,8 @@
       - id: RMCSuitBioWeYa
       - id: RMCCoatSnow
       - id: RMCCoatSnowSoviet
-    - name: Gloves
-      choices: { CMGloves: 1 }
+    - name: 手套
+      choices: {CMGloves: 1}
       entries:
       - id: CMHandsInsulated
         recommended: true
@@ -89,116 +89,116 @@
       - id: RMCHandsGreyMarine
       - id: RMCHandsFingerlessMarine
       - id: CMHandsLatex
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: RMCSmartpack
-        name: S-V42 smartpack, blue
+        name: S-V42 智能包，蓝色
         recommended: true
       - id: RMCSmartpackBlack
-        name: S-V42 smartpack, black
+        name: S-V42智能包装，黑色
       - id: RMCSmartpackGreen
-        name: S-V42 smartpack, green
+        name: S-V42智能包，绿色
       - id: RMCSmartpackTan
-        name: S-V42 smartpack, tan
+        name: S-V42智能包，棕褐色
       - id: RMCSmartpackWhite
-        name: S-V42 smartpack, white
+        name: S-V42 智能包，白色
       - id: RMCSmartpackA1
-        name: S-V42A1 smartpack, blue
+        name: S-V42A1智能包，蓝色
       - id: RMCSmartpackA1Black
-        name: S-V42A1 smartpack, black
+        name: S-V42A1 智能包，黑色
       - id: RMCSmartpackA1Green
-        name: S-V42A1 smartpack, green
+        name: S-V42A1 智能包，绿色
       - id: RMCSmartpackA1Tan
-        name: S-V42A1 smartpack, tan
+        name: S-V42A1智能包，棕褐色
       - id: RMCSmartpackA1White
-        name: S-V42A1 smartpack, white
-    - name: Belt
-      choices: { CMBelt: 1 }
+        name: S-V42A1 智能包，白色
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltUtilityGeneral
       - id: CMBeltMedicBagFilled
-        name: M276 pattern lifesaver bag (Full)
+        name: M276型救生包（满）
       - id: CMBeltMedicalFilled
-        name: M276 medical storage rig (Full)
+        name: M276医疗储物架（满）
       - id: CMBeltUtilityFilled
-        name: M276 Toolbelt Rig (Full)
+        name: M276 工具腰带装备（完整版）
       - id: RMCBeltConstruction
-        name: M277 pattern construction rig
-    - name: Pouches
-      choices: { CMPouch: 2 }
+        name: M277 图案构建装置
+    - name: 小袋
+      choices: {CMPouch: 2}
       entries:
       - id: RMCPouchAutoinjector
       - id: RMCPouchConstruction
       - id: RMCPouchDocument
       - id: RMCPouchElectronicsFill
-        name: electronics pouch (Full)
+        name: 电子产品收纳袋（满）
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可补充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救包（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救袋（药丸）
       - id: RMCPouchFlareFilled
-        name: Flare pouch (Full)
+        name: 照明弹袋（满）
       - id: RMCPouchGeneralLarge
       - id: RMCPouchSling
       - id: RMCPouchMedical
       - id: RMCPouchMedkit
       - id: RMCPouchReagentCanisterTricordrazineRevival
-        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Tricordrazine)
+        name: "加压试剂罐袋\n（复活混合剂 - 三环拉嗪）"
 #     - id: CMPressurizedReagentCanisterPouchPeridaxonRevivalMix
 #       name: Pressurized Reagent Canister Pouch\n(Revival Mix - Peridaxon)
 #        recommended: true
       - id: RMCPouchReagentCanisterBicaridine
-        name: Pressurized Reagent Canister Pouch\n(Bicaridine)
+        name: "加压试剂罐袋\n（比卡立定）"
       - id: RMCPouchReagentCanisterKelotane
-        name: Pressurized Reagent Canister Pouch\n(Kelotane)
+        name: "加压试剂罐袋\n（凯洛坦）"
       - id: RMCPouchReagentCanisterTricordrazine
-        name: Pressurized Reagent Canister Pouch\n(Tricordrazine)
+        name: "加压试剂罐袋\n（三可定）"
       - id: RMCPouchReagentCanister
-        name: Pressurized Reagent Canister Pouch\n(EMPTY)
+        name: "加压试剂罐袋\n（空）"
       - id: RMCPouchToolsFill
-        name: tools pouch (Full)
+        name: 工具袋（满）
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
-    - name: Pouches
-      choices: { CMMask: 1 }
+        name: 砍刀袋（满）
+    - name: 小袋
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskSterile
 
 - type: entity
   parent: ColMarTechCrewSynthetic
   id: ColMarTechCrewSyntheticColony
-  name: ColMarTech Synthetic Equipment Rack
+  name: ColMarTech 合成设备架
   suffix: Colony Synth Access
 
 - type: entity
   parent: ColMarTechBase
   id: WeYaK9SynthVendor
-  name: Wey-Yu Synthetic K9 Equipment Requisitions
-  description: A vendor specially designed to dispense Synthetic K9 equipment.
+  name: 威宇合成K9装备征用处
+  description: 专门设计用于发放合成K9装备的供应商。
   components:
   - type: AccessReader
     access:
-    - [ "RMCAccessSynth" ]
+    - ["RMCAccessSynth"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: RMCHeadsetSynth
       - id: RMCK9SerialIdTags
       - id: RMCK9NameImplanter
-    - name: Handler Kit
-      choices: { RMCK9HandlerKit: 1 }
+    - name: 处理程序套件
+      choices: {RMCK9HandlerKit: 1}
       entries:
       - id: RMCVendorBundleK9HandlerCorpsman
       - id: RMCVendorBundleK9HandlerMP
-    - name: Carry Harness
-      choices: { CMBackpack: 1 }
+    - name: 背负式背带
+      choices: {CMBackpack: 1}
       entries:
       - id: RMCK9SynthMedicalHarness
       - id: RMCK9SynthCargoHarness
@@ -207,17 +207,17 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechCrewSyntheticGear
-  name: ColMarTech Synthetic Auxiliary Gear Rack
-  description: An automated gear rack hooked up to a colossal storage of various medical and engineering supplies. Can be accessed only by synthetic units.
+  name: ColMarTech合成人辅助装备架
+  description: 一个自动化装备架，连接到庞大的各类医疗与工程补给储备库。仅合成人单位可以访问。
   components:
   - type: AccessReader
     access:
-    - [ "RMCAccessSynth" ]
+    - ["RMCAccessSynth"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/gear.rsi
   - type: CMAutomatedVendor
     sections:
-    - name: Engineer Supplies
+    - name: 工程师用品
       entries:
       - id: CMAirlockCircuitBoard
         points: 2
@@ -230,15 +230,15 @@
       - id: RMCLightReplacer
         points: 2
       - id: CMSheetMetal10
-        name: metal x10
+        name: 金属 x10
         points: 5
       - id: CMMultitool
         points: 4
       - id: CMSheetPlasteel10
-        name: plasteel x10
+        name: 塑钢×10
         points: 7
       - id: CMSandbagEmpty25
-        name: sandbags x25
+        name: 沙袋 ×25
         points: 10
       - id: RMCExplosivePlastic
         points: 3
@@ -248,7 +248,7 @@
         points: 1
       - id: RMCTacticalPrybar
         points: 5
-    - name: Firstaid Kits
+    - name: 急救包
       entries:
       - id: CMAdvFirstAidKitFilled
         points: 12
@@ -266,7 +266,7 @@
         points: 8
       - id: RMCSynthRepairKitEliteFilled
         points: 15
-    - name: Medical Supplies
+    - name: 医疗用品
       entries:
       - id: CMBurnKit1
         points: 2
@@ -322,7 +322,7 @@
         points: 4
       - id: CMSynthGraft
         points: 4
-    - name: Other Supplies
+    - name: 其他用品
       entries:
       - id: RMCBinoculars
         points: 5
@@ -345,7 +345,7 @@
       - id: RMCWhistle
         points: 5
       - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
+        name: 砍刀刀鞘（完整）
         points: 2
       - id: RMCStethoscope
         points: 2
@@ -355,18 +355,18 @@
 - type: entity
   parent: ColMarTechBase
   id: WeYaExperimentalToolsVendor
-  name: We-Yu Experimental Tools Vendor
-  description: A smaller vendor hooked up to a cache of specially provisioned, experimental tools and equipment provided by the We-Yu Research and Development Division(TM). Handle with care.
+  name: We-Yu实验工具供应商
+  description: 一个较小的供应商，接入了一批由We-Yu研究与开发部（TM）提供的、专门配置的实验性工具和设备。请小心处理。
   components:
   - type: AccessReader
     access:
-    - [ "RMCAccessSynth" ]
+    - ["RMCAccessSynth"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/experimental.rsi
   - type: CMAutomatedVendor
     pointsType: ExperimentalTools
     sections:
-    - name: Experimental Tools
+    - name: 实验工具
       entries:
       - id: RMCSynthBreachingHammer
         points: 15
@@ -400,8 +400,8 @@
 - type: entity
   parent: CMVendorBundleRiflemanApparel
   id: RMCVendorBundleCompactNailgunKit
-  name: compact nailgun kit
-  description: Contains a compact nailgun, two magazines and a nailgun holster.
+  name: 紧凑型射钉枪套装
+  description: 包含一把紧凑型射钉枪、两个弹匣和一个射钉枪枪套。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/nailgun_compact.rsi
@@ -416,8 +416,8 @@
 - type: entity
   parent: CMVendorBundleRiflemanApparel
   id: RMCVendorBundleK9HandlerCorpsman
-  name: K9 corpsman handler kit
-  description: Contains a medical headset and K9 handler instructional pamphlet.
+  name: K9 医务兵训导员套件
+  description: 包含医疗耳机和 K9 训导员指导手册。
   components:
   - type: CMVendorBundle
     bundle:
@@ -427,8 +427,8 @@
 - type: entity
   parent: CMVendorBundleRiflemanApparel
   id: RMCVendorBundleK9HandlerMP
-  name: K9 MP handler kit
-  description: Contains a military police headset and K9 handler instructional pamphlet.
+  name: K9军警训导员套件
+  description: 包含一副军警耳机和K9训导员教学手册。
   components:
   - type: CMVendorBundle
     bundle:

@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaSpace
-  name: Space
+  name: 空间
   suffix: Space Area
   components:
   - type: Area
@@ -16,7 +16,7 @@
 - type: entity
   parent: RMCAreaBase
   id: RMCAreaAdmin
-  name: Admin room
+  name: 管理员房间
   components:
   - type: Sprite
     state: start
@@ -38,17 +38,17 @@
 - type: entity
   parent: RMCAreaAdminDroppod
   id: RMCAreaAdminDroppodHolding
-  name: Admin Supply Drops Droppod
+  name: 管理员补给空投舱
 
 - type: entity
   parent: RMCAreaAdminDroppod
   id: RMCAreaAdminDroppodLoading
-  name: Admin Supply Drops Loading
+  name: 管理员空投补给加载中
 
 - type: entity
   parent: RMCAreaSpace
   id: RMCAreaSpaceHighalt
-  name: High Altitude
+  name: 高海拔
   components:
   - type: Sprite
     state: blue
@@ -56,7 +56,7 @@
 - type: entity
   parent: RMCAreaBase
   id: RMCAreaStart
-  name: start area
+  name: 起始区域
   components:
   - type: Sprite
     state: start
@@ -74,7 +74,7 @@
 - type: entity
   parent: RMCAreaBase
   id: RMCAreaCentcom
-  name: abandoned Centcom
+  name: 废弃的中央司令部
   components:
   - type: Sprite
     state: centcom
@@ -92,17 +92,17 @@
 - type: entity
   parent: RMCAreaCentcom
   id: RMCAreaCentcomControl
-  name: abandoned Centcom Control
+  name: 废弃的中央司令部控制
 
 - type: entity
   parent: RMCAreaCentcom
   id: RMCAreaCentcomLiving
-  name: abandoned Centcom Living Quarters
+  name: 废弃的中央司令部生活区
 
 - type: entity
   parent: RMCAreaBase
   id: RMCAreaTdome
-  name: abandoned Thunderdome
+  name: 废弃的雷霆穹顶
   components:
   - type: Sprite
     state: thunder
@@ -123,7 +123,7 @@
 - type: entity
   parent: RMCAreaTdome
   id: RMCAreaTdomeTdome1
-  name: abandoned Thunderdome (Team 1)
+  name: 废弃的雷霆穹顶（第1队）
   components:
   - type: Sprite
     state: green
@@ -131,7 +131,7 @@
 - type: entity
   parent: RMCAreaTdome
   id: RMCAreaTdomeTdome2
-  name: abandoned Thunderdome (Team 2)
+  name: 废弃的雷霆穹顶（2队）
   components:
   - type: Sprite
     state: yellow
@@ -139,7 +139,7 @@
 - type: entity
   parent: RMCAreaTdome
   id: RMCAreaTdomeTdomeadmin
-  name: abandoned Thunderdome (Admin.)
+  name: 废弃的雷霆穹顶（管理员）
   components:
   - type: Sprite
     state: purple
@@ -147,7 +147,7 @@
 - type: entity
   parent: RMCAreaTdome
   id: RMCAreaTdomeTdomeobserve
-  name: abandoned Thunderdome (Observer.)
+  name: 废弃的雷霆穹顶（观察者。）
   components:
   - type: Sprite
     state: purple

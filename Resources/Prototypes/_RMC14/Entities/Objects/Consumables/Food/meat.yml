@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: CMFoodBase
   id: RMCFoodMeatFish
-  name: raw fish fillet
-  description: Some sort of fish, probably dredged from some ocean somewhere, or grown in a vat.
+  name: 生鱼柳
+  description: 某种鱼，可能是从某处海洋里拖网捞上来的，或者是在大桶里养出来的。
   components:
   - type: FlavorProfile
     flavors:
@@ -21,10 +21,10 @@
     solution:
       maxVol: 5
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
-        - ReagentId: UncookedAnimalProteins
-          Quantity: 1
+      - ReagentId: Nutriment
+        Quantity: 3
+      - ReagentId: UncookedAnimalProteins
+        Quantity: 1
   - type: Item
     size: Small
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -38,8 +38,8 @@
 - type: entity
   parent: CMFoodBase
   id: RMCFoodMeatFishGrilled
-  name: grilled fish fillet
-  description: Some sort of fish, probably dredged from some ocean somewhere, or grown in a vat.
+  name: 烤鱼柳
+  description: 某种鱼，可能是从某处海洋里捞上来的，或者是在大桶里养出来的。
   components:
   - type: FlavorProfile
     flavors:
@@ -59,10 +59,10 @@
     solution:
       maxVol: 5
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
-        - ReagentId: Protein
-          Quantity: 2
+      - ReagentId: Nutriment
+        Quantity: 3
+      - ReagentId: Protein
+        Quantity: 2
   - type: Item
     size: Small
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -76,8 +76,8 @@
 - type: entity
   parent: CMFoodBase
   id: RMCFoodMeatFishAndChips
-  name: fish & chips
-  description: "A Three-Sun Empire staple, featuring a slab of beer-battered fish and french fries."
+  name: 炸鱼薯条
+  description: "三阳帝国的招牌菜，特色是一大块啤酒面糊炸鱼和炸薯条。"
   components:
   - type: FlavorProfile
     flavors:
@@ -97,10 +97,10 @@
     solution:
       maxVol: 10
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Protein
-          Quantity: 5
+      - ReagentId: Nutriment
+        Quantity: 5
+      - ReagentId: Protein
+        Quantity: 5
   - type: Item
     size: Small
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -114,8 +114,8 @@
 - type: entity
   parent: CMFoodBase
   id: RMCFoodMeatFishSushi
-  name: fish sushi roll
-  description: A piece of indeterminate fish, contained in rice and wrapped in seaweed. A classic dish in the Three-Sun Empire.
+  name: 鱼肉寿司卷
+  description: 一块种类不明的鱼肉，包在米饭中，再以海苔裹住。三阳帝国的经典菜肴。
   components:
   - type: FlavorProfile
     flavors:
@@ -133,8 +133,8 @@
     solution:
       maxVol: 5
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
+      - ReagentId: Nutriment
+        Quantity: 3
   - type: Item
     size: Small
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi

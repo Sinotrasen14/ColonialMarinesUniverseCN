@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: BaseItem
   id: CMFoodBase
@@ -21,8 +21,8 @@
 - type: entity
   parent: RMCFoodDonut
   id: RMCFoodDonutJellyFrosted
-  name: frosted jelly donut
-  description: You jelly?
+  name: 糖霜果酱甜甜圈
+  description: 你嫉妒吗？
   components:
   - type: Edible
     transferAmount: 2 # 3 bites
@@ -30,14 +30,14 @@
     state: jellyDonut2
   - type: Solution
     solution:
-        maxVol: 5
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
-        - ReagentId: Sugar
-          Quantity: 1 # Sprinkles
-        - ReagentId: RMCCherryJelly
-          Quantity: 5
+      maxVol: 5
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 3
+      - ReagentId: Sugar
+        Quantity: 1   # Sprinkles
+      - ReagentId: RMCCherryJelly
+        Quantity: 5
   - type: Item
     heldPrefix: pink
   - type: FlavorProfile
@@ -48,8 +48,8 @@
 - type: entity
   parent: RMCFoodDonut
   id: RMCFoodDonutJelly
-  name: jelly donut
-  description: You jelly?
+  name: 果酱甜甜圈
+  description: 你嫉妒吗？
   components:
   - type: Edible
     transferAmount: 2 # 3 bites
@@ -57,12 +57,12 @@
     state: jellyDonut1
   - type: Solution
     solution:
-        maxVol: 5
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 3
-        - ReagentId: RMCCherryJelly
-          Quantity: 5
+      maxVol: 5
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 3
+      - ReagentId: RMCCherryJelly
+        Quantity: 5
   - type: Item
     heldPrefix: pink
   - type: FlavorProfile
@@ -71,10 +71,10 @@
     - sweet
 
 - type: entity
-  name: peanut butter cookie
+  name: 花生酱曲奇
   parent: CMFoodBase
   id: RMCFoodCookiePeanutButter
-  description: Soft, chewy, and absolutely delicious!
+  description: 柔软、有嚼劲，绝对美味！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -86,20 +86,20 @@
     solution:
       maxVol: 5
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 2
-        - ReagentId: RMCPeanutButter
-          Quantity: 3
+      - ReagentId: Nutriment
+        Quantity: 2
+      - ReagentId: RMCPeanutButter
+        Quantity: 3
   - type: FlavorProfile
     flavors:
     - sweet
     - nutty
 
 - type: entity
-  name: peanut butter and jelly sandwich
+  name: 花生酱果酱三明治
   parent: CMFoodBase
   id: RMCFoodPBJSandwich
-  description: A sweet and savory sandwich loved by adults and marines alike!
+  description: 一款深受成年人和海军陆战队员喜爱的甜咸口味三明治！
   components:
   - type: Edible
     transferAmount: 4
@@ -111,12 +111,12 @@
     solution:
       maxVol: 15
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 4
-        - ReagentId: RMCPeanutButter
-          Quantity: 3
-        - ReagentId: RMCCherryJelly
-          Quantity: 3
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: RMCPeanutButter
+        Quantity: 3
+      - ReagentId: RMCCherryJelly
+        Quantity: 3
   - type: FlavorProfile
     flavors:
     - bread
@@ -124,10 +124,10 @@
     - nutty
 
 - type: entity
-  name: onigiri
+  name: 饭团
   parent: CMFoodBase
   id: RMCFoodOnigiri
-  description: These donuts are great! Jelly-filled are my favorite! Nothing beats a jelly-filled donut!
+  description: 这些饭团太棒了！有馅的饭团是我的最爱！没有什么比有馅的饭团更棒了！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -141,8 +141,8 @@
     solution:
       maxVol: 10
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
+      - ReagentId: Nutriment
+        Quantity: 5
   - type: FlavorProfile
     flavors:
     - rice
@@ -150,10 +150,10 @@
     - salty
 
 - type: entity
-  name: carbonara
+  name: 培根蛋酱意大利面
   parent: FoodNoodlesBase
   id: RMCFoodCarbonara
-  description: Bacon with pasta? YES PLEASE!
+  description: 培根配意大利面？当然要！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -162,10 +162,10 @@
     transferAmount: 3
   - type: Solution
     solution:
-        maxVol: 20
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 10
+      maxVol: 20
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 10
   - type: FlavorProfile
     flavors:
     - pasta
@@ -173,10 +173,10 @@
     - bacon
 
 - type: entity
-  name: sticky mango rice
+  name: 芒果糯米饭
   parent: FoodBowlBase
   id: FoodRiceMango
-  description: It's a grand gesture that isn't the least bit grand.
+  description: 这是一种隆重的姿态，却丝毫谈不上隆重。
   components:
   - type: FlavorProfile
     flavors:
@@ -189,10 +189,10 @@
     - state: mango-rice
 
 - type: entity
-  name: banh mi
+  name: 越南三明治
   parent: [CMFoodBase, BaseSlicingRefinableFood]
   id: FoodBanhMi
-  description: Banh Mi, for Banh You
+  description: 越南三明治，为你而做
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/sandwiches.rsi
@@ -209,18 +209,18 @@
     solution:
       maxVol: 60
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 30
+      - ReagentId: Nutriment
+        Quantity: 30
   - type: ToolRefinable
     refineResult:
     - id: FoodBanhMiHalf
       amount: 2
 
 - type: entity
-  name: banh mi half
+  name: 半份越南法棍三明治
   parent: CMFoodBase
   id: FoodBanhMiHalf
-  description: That's a symphony in a sandwich!
+  description: 这简直是三明治里的交响乐！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/sandwiches.rsi
@@ -237,14 +237,14 @@
     solution:
       maxVol: 20
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
-  name: chicken parm hero
+  name: 帕尔马鸡肉潜艇三明治
   parent: [CMFoodBase, BaseSlicingRefinableFood]
   id: FoodChickenParmHero
-  description: Now thats a sandwich, fuggedaboutit!
+  description: 这才叫三明治，没得说！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/sandwiches.rsi
@@ -262,20 +262,20 @@
     solution:
       maxVol: 60
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 16
-        - ReagentId: Protein
-          Quantity: 10
+      - ReagentId: Nutriment
+        Quantity: 16
+      - ReagentId: Protein
+        Quantity: 10
   - type: ToolRefinable
     refineResult:
     - id: FoodChickenParmHalf
       amount: 2
 
 - type: entity
-  name: chicken parm half
+  name: 半份帕尔马干酪鸡肉
   parent: CMFoodBase
   id: FoodChickenParmHalf
-  description: Better than eating a grilled cheese off the radiator.
+  description: 比在暖气片上吃烤奶酪三明治还要好。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/sandwiches.rsi
@@ -293,16 +293,16 @@
     solution:
       maxVol: 20
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
-        - ReagentId: Protein
-          Quantity: 5
+      - ReagentId: Nutriment
+        Quantity: 8
+      - ReagentId: Protein
+        Quantity: 5
 
 - type: entity
-  name: meatball sub
+  name: 肉丸潜艇三明治
   parent: [CMFoodBase, BaseSlicingRefinableFood]
   id: FoodMeatballSub
-  description: Made with the secrets of Death Kwon Do!
+  description: 用死亡拳道的秘密制作而成！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/sandwiches.rsi
@@ -320,20 +320,20 @@
     solution:
       maxVol: 60
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 16
-        - ReagentId: Protein
-          Quantity: 10
+      - ReagentId: Nutriment
+        Quantity: 16
+      - ReagentId: Protein
+        Quantity: 10
   - type: ToolRefinable
     refineResult:
     - id: FoodMeatballSubHalf
       amount: 2
 
 - type: entity
-  name: meatball sub half
+  name: 半个肉丸潜艇三明治
   parent: CMFoodBase
   id: FoodMeatballSubHalf
-  description: It's enough to make a grown marine cry.
+  description: 这足以让一名成年海军陆战队员落泪。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/sandwiches.rsi
@@ -351,16 +351,16 @@
     solution:
       maxVol: 20
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
-        - ReagentId: Protein
-          Quantity: 5
+      - ReagentId: Nutriment
+        Quantity: 8
+      - ReagentId: Protein
+        Quantity: 5
 
 - type: entity
-  name: gabagool sandwich
+  name: 加巴古尔三明治
   parent: [CMFoodBase, BaseSlicingRefinableFood]
   id: FoodGabagool
-  description: Woke up this morning, got yourself a sandwich.
+  description: 今天早上醒来，给自己弄了个三明治。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/sandwiches.rsi
@@ -378,18 +378,18 @@
     solution:
       maxVol: 60
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 30
+      - ReagentId: Nutriment
+        Quantity: 30
   - type: ToolRefinable
     refineResult:
     - id: FoodGabagoolHalf
       amount: 2
 
 - type: entity
-  name: gabagool sandwich half
+  name: 半份加巴古尔三明治
   parent: CMFoodBase
   id: FoodGabagoolHalf
-  description: Gabagool? Over here!!
+  description: 加巴古尔？这边！！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/sandwiches.rsi
@@ -407,14 +407,14 @@
     solution:
       maxVol: 20
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 15
+      - ReagentId: Nutriment
+        Quantity: 15
 
 - type: entity
-  name: cheesesteak
+  name: 芝士牛排三明治
   parent: [CMFoodBase, BaseSlicingRefinableFood]
   id: FoodCheesesteak
-  description: If your hands aren't greasy holding it, is it really a cheesesteak?
+  description: 如果你的手拿着它时不沾油，那它还算得上是芝士牛排三明治吗？
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/sandwiches.rsi
@@ -431,20 +431,20 @@
     solution:
       maxVol: 60
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 16
-        - ReagentId: Protein
-          Quantity: 10
+      - ReagentId: Nutriment
+        Quantity: 16
+      - ReagentId: Protein
+        Quantity: 10
   - type: ToolRefinable
     refineResult:
     - id: FoodCheesesteakHalf
       amount: 2
 
 - type: entity
-  name: cheesesteak half
+  name: 半份芝士牛肉三明治
   parent: CMFoodBase
   id: FoodCheesesteakHalf
-  description: Served wit-out onions.
+  description: 不含洋葱。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/sandwiches.rsi
@@ -461,16 +461,16 @@
     solution:
       maxVol: 20
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
-        - ReagentId: Protein
-          Quantity: 5
+      - ReagentId: Nutriment
+        Quantity: 8
+      - ReagentId: Protein
+        Quantity: 5
 
 - type: entity
-  name: yorkshire pudding
+  name: 约克郡布丁
   parent: CMFoodBase
   id: FoodYorkshirePudding
-  description: What a delightful pastry!
+  description: 多么美味的糕点啊！
   components:
   - type: Tag
     tags:
@@ -480,7 +480,7 @@
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
     layers:
     - state: yorkshire-pudding
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: RandomSprite
     available:
     - enum.DamageStateVisualLayers.Base:
@@ -491,16 +491,16 @@
     id: food
     solution:
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
+      - ReagentId: Nutriment
+        Quantity: 5
   - type: Edible
     transferAmount: 5
 
 - type: entity
-  name: black forest cake
+  name: 黑森林蛋糕
   parent: [CMFoodBase, BaseSlicingRefinableFood]
   id: FoodCakeBlackForest
-  description: The cake is a lie no more!
+  description: 蛋糕不再是谎言！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -517,18 +517,18 @@
     solution:
       maxVol: 60
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 30
+      - ReagentId: Nutriment
+        Quantity: 30
   - type: ToolRefinable
     refineResult:
     - id: FoodBlackForestSlice
       amount: 6
 
 - type: entity
-  name: black forest cake slice
+  name: 黑森林蛋糕切片
   parent: CMFoodBase
   id: FoodBlackForestSlice
-  description: Now without fish-shaped ethyl benzene!
+  description: 现在不含鱼形乙苯！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -547,14 +547,14 @@
     solution:
       maxVol: 15
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 6
+      - ReagentId: Nutriment
+        Quantity: 6
 
 - type: entity
-  name: uncooked sausage
+  name: 生香肠
   parent: CMFoodBase
   id: FoodMeatSausage
-  description: A piece of mixed, long meat.
+  description: 一块混合的长条肉。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/meat.rsi
@@ -569,17 +569,17 @@
     solution:
       maxVol: 8
       reagents:
-        - ReagentId: Protein
-          Quantity: 4
+      - ReagentId: Protein
+        Quantity: 4
   - type: Construction
     graph: FoodMeatSausage
     node: start
 
 - type: entity
-  name: cooked sausage
+  name: 熟香肠
   parent: CMFoodBase
   id: FoodMeatSausageCooked
-  description: This snagger looks like it just came off the barbie!
+  description: 这根熟香肠看起来就像刚从烧烤架上取下来的一样！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/meat.rsi
@@ -594,16 +594,16 @@
     solution:
       maxVol: 8
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 2
-        - ReagentId: Protein
-          Quantity: 4
+      - ReagentId: Nutriment
+        Quantity: 2
+      - ReagentId: Protein
+        Quantity: 4
 
 - type: entity
-  name: hot dog
+  name: 热狗
   parent: CMFoodBase
   id: FoodHotDog
-  description: Life is tasting pretty good! Oh yes!
+  description: 生活尝起来相当不错！哦耶！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -619,16 +619,16 @@
     solution:
       maxVol: 8
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 6
-        - ReagentId: Protein
-          Quantity: 4
+      - ReagentId: Nutriment
+        Quantity: 6
+      - ReagentId: Protein
+        Quantity: 4
 
 - type: entity
-  name: tapsilog
+  name: 塔普西洛格
   parent: CMFoodBase
   id: FoodTapsilog
-  description: It's like steak and eggs, but better!
+  description: 就像牛排配鸡蛋，但更胜一筹！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -646,16 +646,16 @@
     solution:
       maxVol: 30
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 12
-        - ReagentId: Protein
-          Quantity: 8
+      - ReagentId: Nutriment
+        Quantity: 12
+      - ReagentId: Protein
+        Quantity: 8
 
 - type: entity
-  name: carpsilog
+  name: 鲤鱼蛋炒饭
   parent: CMFoodBase
   id: FoodCarpsilog
-  description: Drenched in enough vinegar to make you forget about that carpotoxin!
+  description: 浸在足量的醋里，让你忘掉那鲤鱼毒素！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -674,16 +674,16 @@
     solution:
       maxVol: 30
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 12
-        - ReagentId: Protein
-          Quantity: 8
+      - ReagentId: Nutriment
+        Quantity: 12
+      - ReagentId: Protein
+        Quantity: 8
 
 - type: entity
-  name: chicksilog
+  name: 鸡肉蒜香炒饭配煎蛋
   parent: CMFoodBase
   id: FoodChicksilog
-  description: Now I know you asked for tonkatsu, but this is all we got today.
+  description: 我知道你点的是炸猪排，但今天我们只有这个了。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -701,16 +701,16 @@
     solution:
       maxVol: 30
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 12
-        - ReagentId: Protein
-          Quantity: 8
+      - ReagentId: Nutriment
+        Quantity: 12
+      - ReagentId: Protein
+        Quantity: 8
 
 - type: entity
-  name: tocilog
+  name: 托西洛格
   parent: CMFoodBase
   id: FoodTocilog
-  description: Looks nothing like bacon, but just as great!
+  description: 看起来一点也不像培根，但同样很棒！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -728,16 +728,16 @@
     solution:
       maxVol: 30
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 12
-        - ReagentId: Protein
-          Quantity: 8
+      - ReagentId: Nutriment
+        Quantity: 12
+      - ReagentId: Protein
+        Quantity: 8
 
 - type: entity
-  name: bangers and mash
+  name: 香肠和土豆泥
   parent: CMFoodBase
   id: FoodBangersMash
-  description: Goes together like fish and chips, beans and.... nevermind.
+  description: 搭配起来就像炸鱼和薯条、豆子和……算了。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -753,16 +753,16 @@
     solution:
       maxVol: 16
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
-        - ReagentId: Protein
-          Quantity: 4
+      - ReagentId: Nutriment
+        Quantity: 8
+      - ReagentId: Protein
+        Quantity: 4
 
 - type: entity
-  name: pie and mash
+  name: 馅饼和土豆泥
   parent: CMFoodBase
   id: FoodPieMash
-  description: Goes together like fish and chips, beans and.... nevermind.
+  description: 搭配起来就像炸鱼和薯条、豆子和……算了。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/misc.rsi
@@ -779,7 +779,7 @@
     solution:
       maxVol: 16
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 8
-        - ReagentId: Protein
-          Quantity: 4
+      - ReagentId: Nutriment
+        Quantity: 8
+      - ReagentId: Protein
+        Quantity: 4

@@ -2,8 +2,8 @@
 
 - type: entity
   id: CMMedilinkSupplyPort
-  name: medilink supply port
-  description: A complex network of pipes and machinery, linking to large storage systems below the deck. Medical vendors linked to this port will be able to infinitely restock supplies.
+  name: 医疗链接补给端口
+  description: 由管道和机械构成的复杂网络，连接着甲板下方的大型储存系统。与该端口相连的医疗供应商将能够无限补充物资。
   placement:
     mode: SnapgridCenter
   components:
@@ -19,8 +19,8 @@
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: CMVendorMedicalAllAccess
-  name: We-Yu-Med Plus
-  description: Medical pharmaceutical dispenser. Provided by We-Yu Pharmaceuticals Division(TM).
+  name: 威宇医药加强版
+  description: 医用药品分配器。由威宇医药事业部（TM）提供。
   suffix: All Access
   components:
   - type: Sprite
@@ -57,7 +57,7 @@
     randomUnstockAmount: -1 # -1 is between 1 and the original amount
     randomEmptyChance: 0.25 # 25% chance
     sections:
-    - name: Field supplies
+    - name: 野外用品
       entries:
       - id: CMBurnKit10
         amount: 10
@@ -69,7 +69,7 @@
         amount: 10
 #      - id: CMSplints10 # TODO RMC14
 #        amount: 10
-    - name: Autoinjectors
+    - name: 自动注射器
       entries:
       - id: CMBicaridineAutoInjector
         amount: 5
@@ -91,7 +91,7 @@
 #        amount: 5
       - id: CMTricordrazineAutoInjector
         amount: 5
-    - name: Liquid bottles
+    - name: 液体瓶
       entries:
       - id: CMBottleBicaridine
         amount: 3
@@ -109,7 +109,7 @@
 #        amount: 3
 #      - id: CMBottleTramadol # TODO RMC14
 #        amount: 3
-    - name: Pill bottles
+    - name: 药瓶
       entries:
       - id: CMPillCanisterBicaridine
         amount: 4
@@ -127,7 +127,7 @@
 #        amount: 3
 #      - id: CMPillCanisterTramadol # TODO RMC14
 #        amount: 4
-    - name: Medical utilities
+    - name: 医疗实用工具
       entries:
       - id: CMDefibrillator
         amount: 3
@@ -163,7 +163,7 @@
   components:
   - type: CMAutomatedVendor # TODO RMC14 different ui style
     sections:
-    - name: Field supplies
+    - name: 现场物资
       entries:
       - id: CMBurnKit10
         amount: 10
@@ -175,7 +175,7 @@
         amount: 10
 #      - id: CMSplints10 # TODO RMC14
 #        amount: 10
-    - name: Autoinjectors
+    - name: 自动注射器
       entries:
       - id: CMBicaridineAutoInjector
         amount: 5
@@ -197,7 +197,7 @@
 #        amount: 5
       - id: CMTricordrazineAutoInjector
         amount: 5
-    - name: Liquid bottles
+    - name: 液体瓶
       entries:
       - id: CMBottleBicaridine
         amount: 3
@@ -215,7 +215,7 @@
 #        amount: 3
 #      - id: CMBottleTramadol # TODO RMC14
 #        amount: 3
-    - name: Pill bottles
+    - name: 药瓶
       entries:
       - id: RMCPillCanisterMeralyneBicaridine
         amount: 4
@@ -239,7 +239,7 @@
 #        amount: 3
 #      - id: CMPillCanisterTramadol # TODO RMC14
 #        amount: 4
-    - name: Medical utilities
+    - name: 医疗公用设施
       entries:
       - id: CMSurgicalLine
         amount: 2
@@ -261,8 +261,8 @@
 - type: entity
   parent: CMVendorMedical
   id: CMVendorChemistry
-  name: We-Yu-Chem Plus
-  description: Medical chemistry dispenser. Provided by We-Yu Pharmaceuticals Division(TM).
+  name: 威宇化学增强版
+  description: 医用化学药剂分配器。由威宇制药部门（TM）提供。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/chem.rsi
@@ -279,10 +279,10 @@
       - Bottle
   - type: CMAutomatedVendor # TODO RMC14 different ui style
     scaling: false
-    randomUnstockAmount: null
-    randomEmptyChance: null
+    randomUnstockAmount:
+    randomEmptyChance:
     sections:
-    - name: Liquid bottles
+    - name: 液体瓶
       entries:
       - id: CMBottleBicaridine
         amount: 10
@@ -300,13 +300,13 @@
 #        amount: 6
 #      - id: CMBottleTramadol # TODO RMC14
 #        amount: 6
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: CMBeaker
-        name: Beaker (60 units)
+        name: 烧杯（60单位）
         amount: 10
       - id: CMBeakerLarge
-        name: Beaker, Large (120 units)
+        name: 烧杯，大号（120单位）
         amount: 10
       - id: RMCBoxPillCanister
         amount: 10
@@ -321,14 +321,13 @@
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: ColMarTechMarineMedical
-  name: ColMarTech MarineMed
-  description: Medical Pharmaceutical dispenser with basic medical supplies for marines.
+  name: ColMarTech 海军陆战队医疗包
+  description: 附带海军陆战队基础医疗用品的医疗药品分配器。
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.38,-0.5,0.35,0.5"
         mask:
         - MachineMask
@@ -339,9 +338,9 @@
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/marine_medical.rsi
     layers:
     - state: "off"
-      map: [ "enum.VendingMachineVisualLayers.Base" ]
+      map: ["enum.VendingMachineVisualLayers.Base"]
     - state: "normal"
-      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
   - type: CMSolutionRefiller
     current: 600
     max: 600
@@ -355,17 +354,17 @@
       - Hypospray
   - type: CMAutomatedVendor
     sections:
-    - name: Autoinjectors
+    - name: 自动注射器
       entries:
       - id: CMTricordrazineAutoInjectorNoSkill
         amount: 5
 #      - id: CMPainStopAutoinjector
 #        amount: 5
-    - name: Devices
+    - name: 设备
       entries:
       - id: CMHealthAnalyzer
         amount: 3
-    - name: Field Supplies
+    - name: 野外补给
       entries:
       - id: CMFireExtinguisherPortable
         amount: 5
@@ -390,14 +389,13 @@
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: RMCNanoMed
-  name: NanoMed
-  description: A wall-mounted medical equipment dispenser.
+  name: 纳米医疗
+  description: 壁挂式医疗设备分配器。
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.38,-0.5,0.35,0.5"
         mask:
         - MachineMask
@@ -425,7 +423,7 @@
   - type: CMAutomatedVendor
     hackable: true
     sections:
-    - name: Supplies
+    - name: 用品
       entries:
       - id: CMTricordrazineAutoInjectorNoSkill
         amount: 2
@@ -437,7 +435,7 @@
         amount: 4
 #      - id: CMMedicalSplints5
 #        amount: 4
-    - name: Utility
+    - name: 实用工具
       entries:
       - id: CMHealthAnalyzer
         amount: 2
@@ -445,7 +443,7 @@
 - type: entity
   parent: RMCNanoMed
   id: RMCNanoMedLimited
-  description: A wall-mounted medical equipment dispenser. This version is more limited than standard UNMC NanoMeds.
+  description: 壁挂式医疗设备分配器。此版本比标准UNMC纳米药物更有限。
   suffix: Limited
   components:
   - type: CMSolutionRefiller
@@ -463,8 +461,8 @@
 - type: entity
   parent: RMCNanoMed
   id: RMCBobdaMed
-  name: BobdaMed
-  description: In Bobdaland (Trademark pending), one is never more than 6ft away from canned Havana goodness. Drink a Bobda today! For a full selection of Bobda products please visit a licensed retailer or vending machine. Also doubles as basic first aid station.
+  name: 波达医疗
+  description: 在波达乐园（商标申请中），人与罐装哈瓦那美味之间的距离从不超过6英尺。今天就来一罐波达！如需选购波达全系列产品，请前往持证零售商或自动售货机。还可兼作基础急救站。
   components:
   - type: Sprite
     drawdepth: WallMountedItems
@@ -472,54 +470,54 @@
   - type: CMAutomatedVendor
     hackable: true
     sections:
-    - name: Supplies
+    - name: 用品
       entries:
       - id: CMTricordrazineAutoInjectorNoSkill
-        name: First-Aid Autoinjector
+        name: 急救自动注射器
         amount: 2
 #      - id: CMPainStopAutoinjector
 #        name: Pain-Stop Autoinjector
 #        amount: 2
       - id: CMGauze10
-        name: Roll of Gauze
+        name: 纱布卷
         amount: 4
       - id: CMOintment10
-        name: Ointment
+        name: 软膏
         amount: 4
       #- id: CMMedicalSplints5
       #  name: Medical Splints
       #  amount: 4
-    - name: Utility
+    - name: 工具
       entries:
       - id: CMHealthAnalyzer
-        name: HF2 Health Analyzer
+        name: HF2 健康分析仪
         amount: 2
     - name: Bobda
       entries:
       - id: CMDrinkCanBobdaClassic
-        name: Bobda Classic
+        name: Bobda经典
         amount: 1
       - id: CMDrinkCanBobdaClassicDiet
-        name: Diet Bobda Classic
+        name: 低卡鲍勃达经典
         amount: 1
       - id: CMDrinkCanBobdaCranberry
-        name: Bobda Cranberry
+        name: 博布达·克兰伯里
         amount: 1
       - id: CMDrinkCanBobdaCranberryDiet
-        name: Diet Bobda Cranberry
+        name: 低糖波布达蔓越莓
         amount: 1
       - id: CMDrinkCanBobdaGrape
-        name: Bobda Grape
+        name: 博布达·格雷普
         amount: 1
       - id: CMDrinkCanBobdaGrapeDiet
-        name: Diet Bobda Grape
+        name: 低卡博布达葡萄
         amount: 1
 
 - type: entity
   parent: ColMarTechBaseAnchorable
   id: CMVendorBlood
-  name: MM Blood Dispenser
-  description: The Marine Med Brand Blood Pack Dispensary is the premier, top-of-the-line blood dispenser of 2105! Get yours today! #dont update year, that`s a joke from cm13
+  name: MM血液分配器
+  description: 海洋医疗品牌血包分配器是2105年首屈一指的顶级血液分配器！立即购买吧！                                                                                 #dont update year, that`s a joke from cm13
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/blood.rsi
@@ -528,7 +526,7 @@
     - state: "off"
       map: ["enum.VendingMachineVisualLayers.Base"]
     - state: "normal-unshaded"
-      map: [ "enum.VendingMachineVisualLayers.BaseUnshaded" ]
+      map: ["enum.VendingMachineVisualLayers.BaseUnshaded"]
       shader: unshaded
     - state: "panel"
       visible: false
@@ -538,16 +536,16 @@
     powerLoad: 0
   - type: AccessReader
     access:
-    - [ "CMAccessMedical" ]
+    - ["CMAccessMedical"]
   - type: CMAutomatedVendor
     hackable: true
     sections:
-    - name: Blood Packs
+    - name: 血包
       entries:
       - id: CMBloodPackFull
         amount: 30 # 6 blood types, 5 each
-    - name: Miscellaneous
+    - name: 其他
       entries:
       - id: CMBloodPack
         amount: 5
-        name: empty blood pack
+        name: 空血袋

@@ -1,6 +1,6 @@
 - type: entity
   id: RMCBaseTree
-  description: Yep, it's a tree.
+  description: 是的，这是一棵树。
   abstract: true
   components:
   - type: ResinClearable # CMU14
@@ -25,8 +25,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.4,0.35,0.4"
         density: 1000
         layer:
@@ -46,14 +45,12 @@
           variation: 0.05
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1250
       behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 1250
       behaviors:
       - !type:PlaySoundBehavior
@@ -63,7 +60,7 @@
             volume: 5
             variation: 0.05
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: RMCMesonsNonviewable
 
 - type: entity
@@ -77,22 +74,19 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.3,0.1,0.3"
         density: 4000
         layer:
         - WallLayer
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 4500
       behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -108,7 +102,7 @@
             max: 1
         offset: 0
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 - type: ore
   id: OreWood
   oreEntity: Log
@@ -126,8 +120,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.18,-0.35,0.18,0.35"
         density: 2000
         layer:
@@ -144,22 +137,19 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.35,0.1,0.35"
         density: 3500
         layer:
         - WallLayer
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 400
       behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -175,14 +165,14 @@
             max: 1
         offset: 0
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: RMCBaseTree
   id: RMCBaseTreeAlien
   abstract: true
-  name: strange tree
-  description: Some kind of bizarre alien tree. It oozes with a sickly yellow sap.
+  name: 奇怪的树
+  description: 某种奇异的异星树木。它渗出病态的黄色树液。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Flora/flora_treealien.rsi
@@ -190,22 +180,19 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.3,0.1,0.3"
         density: 4000
         layer:
         - WallLayer
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 400
       behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -221,7 +208,7 @@
             max: 1
         offset: 0
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: RMCBaseTree
@@ -236,8 +223,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-1.15,0.35,-0.3"
         density: 1000
         layer:
@@ -247,7 +233,7 @@
   parent: RMCBaseTree
   id: RMCFloraTree01
   suffix: RMCFloraTree01
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: tree01
@@ -256,7 +242,7 @@
   parent: RMCBaseTree
   id: RMCFloraTree02
   suffix: RMCFloraTree02
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: tree02
@@ -265,7 +251,7 @@
   parent: RMCBaseTree
   id: RMCFloraTree03
   suffix: RMCFloraTree03
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: tree03
@@ -274,7 +260,7 @@
   parent: RMCBaseTree
   id: RMCFloraTree04
   suffix: RMCFloraTree04
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: tree04
@@ -283,7 +269,7 @@
   parent: RMCBaseTree
   id: RMCFloraTree05
   suffix: RMCFloraTree05
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: tree05
@@ -292,7 +278,7 @@
   parent: RMCBaseTree
   id: RMCFloraTree06
   suffix: RMCFloraTree06
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: tree06
@@ -301,7 +287,7 @@
   parent: RMCBaseTreeSnow
   id: RMCFloraTreeSnow01
   suffix: RMCFloraTreeSnow01
-  name: snowy tree
+  name: 雪树
   components:
   - type: Sprite
     state: treesnow01
@@ -310,7 +296,7 @@
   parent: RMCBaseTreeSnow
   id: RMCFloraTreeSnow02
   suffix: RMCFloraTreeSnow02
-  name: snowy tree
+  name: 雪树
   components:
   - type: Sprite
     state: treesnow02
@@ -319,7 +305,7 @@
   parent: RMCBaseTreeSnow
   id: RMCFloraTreeSnow03
   suffix: RMCFloraTreeSnow03
-  name: snowy tree
+  name: 雪树
   components:
   - type: Sprite
     state: treesnow03
@@ -328,7 +314,7 @@
   parent: RMCBaseTreeSnow
   id: RMCFloraTreeSnow04
   suffix: RMCFloraTreeSnow04
-  name: snowy tree
+  name: 雪树
   components:
   - type: Sprite
     state: treesnow04
@@ -337,7 +323,7 @@
   parent: RMCBaseTreeSnow
   id: RMCFloraTreeSnow05
   suffix: RMCFloraTreeSnow05
-  name: snowy tree
+  name: 雪树
   components:
   - type: Sprite
     state: treesnow05
@@ -346,7 +332,7 @@
   parent: RMCBaseTreeSnow
   id: RMCFloraTreeSnow06
   suffix: RMCFloraTreeSnow06
-  name: snowy tree
+  name: 雪树
   components:
   - type: Sprite
     state: treesnow06
@@ -355,7 +341,7 @@
   parent: RMCBaseTreeSnow
   id: RMCFloraTreeStump
   suffix: RMCFloraTreeStump
-  name: tree stump
+  name: 树桩
   components:
   - type: Sprite
     state: treestump
@@ -364,7 +350,7 @@
   parent: RMCBaseTreeLarge
   id: RMCFloraTreeLarge01
   suffix: RMCFloraTreeLarge01
-  name: large tree
+  name: 大树
   components:
   - type: Sprite
     state: treelarge01
@@ -373,7 +359,7 @@
   parent: RMCBaseTreeLarge
   id: RMCFloraTreeLarge02
   suffix: RMCFloraTreeLarge02
-  name: large tree
+  name: 大树
   components:
   - type: Sprite
     state: treelarge02
@@ -382,7 +368,7 @@
   parent: RMCBaseTreeLarge
   id: RMCFloraTreeLarge03
   suffix: RMCFloraTreeLarge03
-  name: large tree
+  name: 大树
   components:
   - type: Sprite
     state: treelarge03
@@ -391,7 +377,7 @@
   parent: RMCBaseTreeLarge
   id: RMCFloraTreeLarge04
   suffix: RMCFloraTreeLarge04
-  name: large tree
+  name: 大树
   components:
   - type: Sprite
     state: treelarge04
@@ -400,7 +386,7 @@
   parent: RMCBaseTreeLarge
   id: RMCFloraTreeLarge05
   suffix: RMCFloraTreeLarge05
-  name: large tree
+  name: 大树
   components:
   - type: Sprite
     state: treelarge05
@@ -409,7 +395,7 @@
   parent: RMCBaseTreeLarge
   id: RMCFloraTreeLarge06
   suffix: RMCFloraTreeLarge06
-  name: large tree
+  name: 大树
   components:
   - type: Sprite
     state: treelarge06
@@ -418,7 +404,7 @@
   parent: RMCBaseTreeConifer
   id: RMCFloraTreeConifer01
   suffix: RMCFloraTreeConifer01
-  name: snowy conifer
+  name: 覆雪的针叶树
   components:
   - type: Sprite
     state: treeconifer01
@@ -427,7 +413,7 @@
   parent: RMCBaseTreeConifer
   id: RMCFloraTreeConifer02
   suffix: RMCFloraTreeConifer02
-  name: snowy conifer
+  name: 覆雪的针叶树
   components:
   - type: Sprite
     state: treeconifer02
@@ -436,7 +422,7 @@
   parent: RMCBaseTreeConifer
   id: RMCFloraTreeConifer03
   suffix: RMCFloraTreeConifer03
-  name: snowy conifer
+  name: 覆雪针叶树
   components:
   - type: Sprite
     state: treeconifer03
@@ -445,7 +431,7 @@
   parent: RMCBaseTreeConifer
   id: RMCFloraTreeStumpConifer
   suffix: RMCFloraTreeStumpConifer
-  name: tree stump
+  name: 树桩
   components:
   - type: Sprite
     state: treestumpconifer
@@ -462,7 +448,7 @@
   parent: RMCBaseTreeTyrargo
   id: RMCFloraTreeTyrargo01
   suffix: RMCFloraTreeTyrargo01
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: treetyrargo01
@@ -471,7 +457,7 @@
   parent: RMCBaseTreeTyrargo
   id: RMCFloraTreeTyrargo02
   suffix: RMCFloraTreeTyrargo02
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: treetyrargo02
@@ -480,7 +466,7 @@
   parent: RMCBaseTreeTyrargo
   id: RMCFloraTreeTyrargo03
   suffix: RMCFloraTreeTyrargo03
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: treetyrargo03
@@ -489,7 +475,7 @@
   parent: RMCBaseTreeTyrargo
   id: RMCFloraTreeTyrargoBald01
   suffix: RMCFloraTreeTyrargoBald01
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: treetyrargo_bald01
@@ -498,7 +484,7 @@
   parent: RMCBaseTreeTyrargo
   id: RMCFloraTreeTyrargoDead01
   suffix: RMCFloraTreeTyrargoDead01
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: treetyrargo_dead01
@@ -507,7 +493,7 @@
   parent: RMCBaseTreeTyrargo
   id: RMCFloraTreeTyrargoDead02
   suffix: RMCFloraTreeTyrargoDead02
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: treetyrargo_dead02
@@ -516,7 +502,7 @@
   parent: RMCBaseTreeTyrargo
   id: RMCFloraTreeTyrargoDead03
   suffix: RMCFloraTreeTyrargoDead03
-  name: tree
+  name: 树
   components:
   - type: Sprite
     state: treetyrargo_dead03
@@ -525,7 +511,7 @@
   parent: RMCBaseTreeSnow
   id: RMCFloraTyrargoDeadTree01
   suffix: RMCFloraTyrargoDeadTree01
-  name: dead tree
+  name: 枯树
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Flora/Trees/flora_trees_tyrargodead.rsi
@@ -567,7 +553,7 @@
   parent: RMCFloraTyrargoDeadTree01
   id: RMCFloraTyrargoTreeStump01
   suffix: RMCFloraTyrargoTreeStump01
-  name: tree stump
+  name: 树桩
   components:
   - type: Sprite
     state: tyrargo_treestump01

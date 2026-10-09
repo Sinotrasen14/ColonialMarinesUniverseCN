@@ -1,8 +1,8 @@
-﻿- type: entity
-  parent: [ BaseMachinePowered, RMCConstructibleMachine ]
+- type: entity
+  parent: [BaseMachinePowered, RMCConstructibleMachine]
   id: RMCTelevision
-  name: television set
-  description: An old TV hooked up to a video cassette recorder, you can even use it to time shift WOW.
+  name: 电视机
+  description: 一台连接着录像机的旧电视机，你甚至可以用它来时光平移《魔兽世界》。
   components:
   - type: Transform
     anchored: true
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 190
         mask:
@@ -48,8 +47,8 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: RMCCircuitboardTelevision
-  name: circuit board (television set)
-  description: A machine printed circuit board for a television set.
+  name: 电视机电路板
+  description: 用于电视机的机器印刷电路板。
   components:
   - type: MachineBoard
     prototype: RMCTelevision
@@ -71,8 +70,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 190
         mask:

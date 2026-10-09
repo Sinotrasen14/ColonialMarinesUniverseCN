@@ -1,8 +1,8 @@
 - type: entity
   parent: CigPackBase
   id: CMCigarettePackLuckySlothsMini
-  name: lucky strikes mini packet
-  description: These four-packs of Luckies come in every MRE. They're not as good as the Embassy Crowns found in some TWE MREs, but at least they're free.
+  name: 好彩迷你烟包
+  description: 这些四包装的好彩烟每个MRE里都有。它们不如某些TWE MRE里的大使皇冠烟好，但至少是免费的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/lucky_sloths_4.rsi
@@ -67,8 +67,8 @@
 - type: entity
   parent: CigPackBase
   id: RMCCigarettePackLuckySloths
-  name: lucky strikes packet
-  description: Lucky Strikes Means Fine Tobacco! 9/10 doctors agree on Lucky Strikes...as the leading cause of marine lung cancer.
+  name: 好彩香烟包
+  description: 好彩香烟意味着优质烟草！十分之九的医生都认同好彩香烟……是海洋肺癌的主要成因。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/lucky_sloths.rsi
@@ -193,7 +193,7 @@
 - type: entity
   parent: Cigarette
   id: RMCCigarette
-  description: An unfiltered roll of tobacco and nicotine. Smoking this releases even more tar and soot into your mouth.
+  description: 一根未过滤的烟草与尼古丁烟卷。吸食它会让更多焦油和烟灰进入你的嘴里。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/unfiltered_roll.rsi
@@ -211,18 +211,18 @@
   - type: Solution
     id: smokable
     solution:
-        maxVol: 20
+      maxVol: 20
   - type: Tag
     tags:
-      - Cigarette
-      - Trash
-      - Burnt
+    - Cigarette
+    - Trash
+    - Burnt
 
 - type: entity
   parent: RMCCigarettePackLuckySloths
   id: RMCCigarettePackWeYaGold
-  name: We-Yu gold packet
-  description: Building Better Worlds, and rolling better cigarettes. These fancy cigarettes are Weyland-Yutani's entry into the market. Comes backed by a fierce legal team.
+  name: We-Yu 金装烟包
+  description: 建设更美好的世界，卷出更好的香烟。这些精美香烟是维兰德-尤塔尼进军市场的产品，背后有强悍的法律团队撑腰。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/we_ya_gold_packet.rsi
@@ -234,8 +234,8 @@
 - type: entity
   parent: RMCCigarettePackLuckySloths
   id: RMCCigarettePackExecutiveSelect
-  name: executive select packet
-  description: These cigarettes are the height of luxury. They're smooth, they're cool, and they smell like victory...and cigarette smoke.
+  name: 高管精选烟包
+  description: 这些香烟是奢华的极致。它们口感顺滑，格调酷炫，闻起来有胜利的气息……还有香烟烟雾的味道。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/executive_select.rsi
@@ -247,8 +247,8 @@
 - type: entity
   parent: RMCCigarettePackLuckySloths
   id: RMCCigarettePackArcturianAce
-  name: arcturian ace
-  description: An entry level brand of cigarettes with a bright blue packaging. You're guessing these aren't really good for you, but it doesn't matter when it's Arcturian baby!
+  name: 大角星王牌
+  description: 一个入门级香烟品牌，采用亮蓝色包装。你大概也猜得到，这些烟对你其实没什么好处，但既然是大角星出品，宝贝，那又有什么关系呢！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/arcturian_ace.rsi
@@ -256,8 +256,8 @@
 - type: entity
   parent: RMCCigarettePackLuckySloths
   id: RMCCigarettePackLadyFingers
-  name: lady fingers
-  description: These intensely strong unfiltered menthol cigarettes don't seem very ladylike. They don't seem very fingerlike for that matter, either. Smoking may kill, but poor branding is almost as bad.
+  name: 淑女手指
+  description: 这些极其浓烈、没有过滤嘴的薄荷香烟似乎不太有淑女风范。就此而言，它们也似乎不太像手指。吸烟可能会致死，但糟糕的品牌包装几乎同样糟糕。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/lady_fingers.rsi
@@ -267,8 +267,8 @@
 - type: entity
   parent: RMCCigarettePackLuckySloths
   id: RMCCigarettePackElectroGolds
-  name: Kierlan electro golds
-  description: Lovingly machine-rolled for YOUR pleasure. For when you want to look cool and the risk of a slow horrible death isn't really a factor.
+  name: 基尔兰电子金香烟
+  description: 满怀爱意地机器卷制，只为取悦你。适合当你想要显得酷，而缓慢而可怕的死亡风险并不真正构成考虑因素之时。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/electro_golds.rsi
@@ -278,8 +278,8 @@
 - type: entity
   parent: RMCCigarettePackLuckySloths
   id: RMCCigarettePackEmeraldGreens
-  name: emerald greens
-  description: They remind you of a gross, tar-filled version of Ireland. These cheap cigarettes are Weyland-Yutani's entry into the general market.
+  name: 翡翠绿
+  description: 它们会让你想起一个恶心、满是焦油的爱尔兰翻版。这些廉价香烟是韦兰-尤塔尼进军大众市场的产品。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/emerald_greens.rsi
@@ -289,8 +289,8 @@
 - type: entity
   parent: RMCCigarettePackLuckySloths
   id: RMCCigarettePackSolRedsTurquoise
-  name: turquoise sol reds
-  description: Claims to be all-natural and organic, with no additives. Not much better for your health than other brands, but they taste good and are highly addictive.
+  name: 绿松石红日
+  description: 声称纯天然、有机，不含添加剂。对健康并不比其他品牌好多少，但味道不错，而且极易上瘾。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/sol_reds.rsi
@@ -298,8 +298,8 @@
 - type: entity
   parent: RMCCigarettePackLuckySloths
   id: RMCCigarettePackSolRedsYellow
-  name: yellow sol reds
-  description: Claims to be all-natural and organic, with no additives. Not much better for your health than other brands, but they taste good and are highly addictive. This type seems to have a more mellow flavor.
+  name: 黄太阳红
+  description: 宣称全天然、有机，无添加剂。对健康并不比其他品牌好多少，但味道不错，而且极易上瘾。这种似乎风味更醇厚。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Smokeables/Cigarettes/sol_reds_yellow.rsi

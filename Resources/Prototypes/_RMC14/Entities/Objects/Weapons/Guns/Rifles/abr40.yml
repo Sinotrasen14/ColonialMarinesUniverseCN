@@ -1,17 +1,17 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: ABR-40 hunting rifle
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: ABR-40 狩猎步枪
   id: RMCWeaponRifleABR40
-  description: The civilian version of the L42A battle rifle. Almost identical and even cross-compatible with L42 magazines, just don't take the stock off.
+  description: L42A战斗步枪的民用版。几乎完全相同，甚至可与L42弹匣交叉通用，只是别把枪托拆下来。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/abr40.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - sprite: _RMC14/Objects/Weapons/Guns/Attachments/stock.rsi # Stock has no effects, no reason to make it an attachment
       state: abr40stock
       offset: -0.5, 0
@@ -33,11 +33,11 @@
     baseFireRate: 2.857
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleABR40
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
@@ -91,19 +91,19 @@
   - type: GunRequiresWield
 
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: ABR-40 Tactical hunting rifle
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: ABR-40 战术狩猎步枪
   id: RMCWeaponRifleABR40Tactical
-  description: The civilian version of the L42A battle rifle that is often wielded by Marines. Almost identical and even cross-compatible with L42 magazines, just don't take the stock off. This rifle seems to have unique tacticool blue-black furniture alongside some miscellaneous aftermarket modding.
+  description: L42A 战斗步枪的民用版本，常由海军陆战队使用。它几乎与 L42 完全相同，甚至能与 L42 弹匣交叉通用，只是别把枪托拆下来。这支步枪似乎有着独特的战术风蓝黑色枪身部件，以及一些杂七杂八的售后改装。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/abr40tac.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - sprite: _RMC14/Objects/Weapons/Guns/Attachments/stock.rsi # Stock has no effects, no reason to make it an attachment
       state: abr40stock_tac
       offset: -0.5, 0
@@ -136,11 +136,11 @@
     falloffMultiplier: 0
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleABR40
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
@@ -194,15 +194,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleABR40
-  name: ABR-40 magazine (10x24mm)
-  description: An ABR-40 magazine loaded with full metal jacket ammunition, for use at the firing range or while hunting. Theoretically cross-compatible with an L42A battle rifle.
+  name: ABR-40 弹匣（10×24毫米）
+  description: 一个装有全金属被甲弹的 ABR-40 弹匣，可在射击场或狩猎时使用。理论上可与 L42A 战斗步枪交叉兼容。
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - RMCMagazineRifleABR40
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mm

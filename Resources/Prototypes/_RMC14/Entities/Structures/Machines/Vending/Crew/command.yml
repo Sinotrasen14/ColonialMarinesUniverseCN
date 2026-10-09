@@ -4,42 +4,42 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechStaffOfficerEquipment
-  name: ColMarTech Staff Officer Equipment Rack
-  description: An automated equipment vendor for Staff Officers
+  name: ColMarTech参谋军官装备架
+  description: 供参谋军官使用的自动装备售卖机
   components:
   - type: AccessReader
     access:
-    - [ "RMCAccessCommand" ]
+    - ["RMCAccessCommand"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/equipment.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMStaffOfficer
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMBootsBlackFilled
       - id: RMCHeadsetMarineCommand
       - id: CMMRE
-    - name: Standard Equipment
+    - name: 标准配置
       takeAll: CMUniform
       entries:
       - id: CMJumpsuitBO
-        name: service uniform
+        name: 服务制服
       - id: CMJumpsuitOperations
-        name: operations uniform
+        name: 运营制服
         recommended: true
       - id: CMHandsBlackInsulated
-    - name: Jacket
-      choices: { CMCoat: 1}
+    - name: 夹克
+      choices: {CMCoat: 1}
       entries:
       - id: RMCCoatService
         recommended: true
       - id: RMCCoatAllWeather # RMC Addition
         recommended: true
-    - name: Hat
-      choices: { CMHat: 1 }
+    - name: 帽子
+      choices: {CMHat: 1}
       entries:
       - id: RMCHeadBeret
         recommended: true
@@ -49,40 +49,40 @@
         recommended: true
       - id: CMHeadCapPeakedService
         recommended: true
-    - name: Patches
+    - name: 补丁
       takeAll: RMCPatch
       entries:
       - id: RMCPatchFallingFalcons
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国肩章
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 坠落猎鹰大号胸章
       - id: RMCPatchUNMC
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
-    - name: Personal Sidearm
-      choices: { CMWeapon: 1 }
+        name: 联合国肩章
+    - name: 个人随身武器
+      choices: {CMWeapon: 1}
       entries:
       - id: RMCMK80BeltFilled
-        name: MK80 pistol
+        name: MK80手枪
         recommended: true
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1984制式手枪
         recommended: true
       - id: RMCM77BeltFilled
-        name: M77 pistol
+        name: M77手枪
         recommended: true
       - id: RMCM44BeltFilled
-        name: M44 revolver
+        name: M44左轮手枪
         recommended: true
-    - name: Backpack
-      choices: { CMBackpack: 1 }
+    - name: 背包
+      choices: {CMBackpack: 1}
       entries:
       - id: CMBackpack
       - id: CMSatchel
-    - name: Other Supplies
+    - name: 其他用品
       entries:
       - id: RMCBinoculars
         points: 5
@@ -107,19 +107,19 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechStaffOfficerWeapon
-  name: ColMarTech Staff Officer Armory Weapon Rack
-  description: An automated combat equipment vendor for Staff Officers.
+  name: ColMarTech 参谋军官军械库武器架
+  description: 参谋军官专用自动化战斗装备售卖机。
   components:
   - type: AccessReader
     access:
-    - [ "RMCAccessCommand" ]
+    - ["RMCAccessCommand"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMStaffOfficer
     sections:
-    - name: Combat Equipment
+    - name: 作战装备
       takeAll: CMCombatEquipment
       entries:
       - id: RMCArmorVestOfficer
@@ -130,41 +130,41 @@
       - id: CMMRE
       - id: RMCGlassesAviators
       - id: RMCM5Bayonet
-    - name: Specialisation Kit
+    - name: 专精套件
       takeOne: CMBundle
       entries:
       - id: CMVendorBundleCombatTechnicianEssentials
       - id: CMVendorBundleSquadMedicalEssentials
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltUtilityGeneral
         recommended: true
       - id: CMBeltMarine
         recommended: true
       - id: CMBeltUtilityFilled
-        name: M276 pattern toolbelt rig (Full)
+        name: M276 型工具腰带挂具（完整版）
       - id: CMBeltMedicBagFilled
-        name: M276 pattern lifesaver bag (Full)
+        name: M276型救生包（满载）
       - id: CMBeltMedicalFilled
-        name: M276 medical storage rig (Full)
+        name: M276医疗储物装置（满）
       - id: RMCBeltHolsterSMGPouch
       - id: RMCM82FHolsterFilled
       - id: RMCM276ShotgunShellLoadingRig
       - id: RMCBeltGrenade
-    - name: Pouches
-      choices: { CMPouches: 2 }
+    - name: 小袋
+      choices: {CMPouches: 2}
       entries:
       - id: RMCPouchAutoinjector
       - id: RMCPouchConstruction
       - id: RMCPouchDocument
       - id: RMCPouchElectronicsFill
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救袋（可填充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救袋（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救袋（药丸）
       - id: RMCPouchFirstResponder
       - id: RMCPouchFlareFilled
       - id: RMCPouchFuelTank
@@ -178,8 +178,8 @@
       - id: RMCPouchPistol
       - id: RMCPouchSling
       - id: RMCPouchToolsFill
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+    - name: 配件
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
         recommended: true
@@ -192,13 +192,13 @@
       - id: CMWebbing
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Mask
-      choices: { CMMask: 1 }
+    - name: 掩码
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: RMCMaskRebreather
-    - name: Other Supplies
+    - name: 其他用品
       entries:
       - id: RMCVisorWelding
         points: 5
@@ -236,12 +236,12 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechExecutiveOfficerWeapon
-  name: ColMarTech Executive Officer Weapon Rack
-  description: An automated weapons rack for the Executive Officer. It features a decent selection of weaponry meant only for the second in command of a ship.
+  name: ColMarTech 副舰长武器架
+  description: 为副舰长准备的自动武器架，配备了一套精选武器，仅供舰上二把手使用。
   components:
   - type: AccessReader
     access:
-    - [ "RMCAccessCommand" ]
+    - ["RMCAccessCommand"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
   - type: CMAutomatedVendor
@@ -249,13 +249,13 @@
     - CMExecutiveOfficer
     pointsType: Specialist
     sections:
-    - name: Captain's Primary
+    - name: 队长的主武器
       takeOne: CMPrimary
       entries:
       - id: RMCM54CMK1CaseAP
-        name: M54C MK1 assault rifle
+        name: M54C MK1突击步枪
       - id: RMCVendorBundleXOShotgun
-    - name: Primary Ammunition
+    - name: 主要弹药
       entries:
       - id: CMMagazineRifleM54CMK1
         points: 40
@@ -269,12 +269,12 @@
         points: 20
       - id: RMCBoxShotgunFlechette
         points: 20
-    - name: Specilisation Kit
+    - name: 专精套件
       takeOne: CMBundle
       entries:
       - id: CMVendorBundleSquadMedicalEssentials
       - id: CMVendorBundleCombatTechnicianEssentials
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 15
@@ -282,7 +282,7 @@
         points: 15
       - id: RMCPacketGrenadeWhitePhosphorusFilled
         points: 15
-    - name: Rail Attachments
+    - name: 轨道附件
       entries:
       - id: RMCAttachmentMagneticHarness
         points: 12
@@ -294,7 +294,7 @@
         points: 15
       - id: RMCAttachmentS42xTelescopicMiniscope
         points: 15
-    - name: Underbarrel Attachments
+    - name: 下挂配件
       entries:
       - id: RMCAttachmentLaserSight
         points: 15
@@ -310,7 +310,7 @@
         points: 15
       - id: RMCAttachmentU1GrenadeLauncher
         points: 5
-    - name: Barrel Attachments
+    - name: 枪管配件
       entries:
       - id: RMCAttachmentExtendedBarrel
         points: 15
@@ -320,7 +320,7 @@
         points: 15
       - id: RMCAttachmentSuppressor
         points: 15
-    - name: Other Supplies
+    - name: 其他用品
       entries:
       - id: CMHandsInsulated
         points: 3
@@ -360,19 +360,19 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechCommandingOfficerClothing
-  name: ColMarTech Commanding Officer Clothing Rack
-  description: An automated closet hooked up to a colossal storage of standard-issue dress uniform variants.
+  name: ColMarTech指挥官服装架
+  description: 一个自动化衣柜，连接着一个巨大的标准配发礼服制服变体存储库。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessCO" ]
+    - ["CMAccessCO"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMCommandingOfficer
     sections:
-    - name: Utility
+    - name: 实用工具
       entries:
       - id: CMJumpsuitBO
       - id: CMJumpsuitCO
@@ -384,14 +384,14 @@
       - id: CMBootsBrown
       - id: CMHandsBlackMarine
       - id: CMHandsBrown
-    - name: Utility Extras
+    - name: 实用工具附加项
       entries:
       - id: RMCSunglasses
       - id: RMCSunglassesBig
       - id: RMCGlassesAviators
       - id: RMCGlassesMarineRpg
       - id: RMCGlassesMarineRpgOld
-    - name: Service
+    - name: 服务
       entries:
       - id: CMJumpsuitCOService
       - id: CMJumpsuitCOFormalWhite
@@ -403,28 +403,28 @@
       - id: RMCShoesLaceupBrown # RMC Addition
       - id: RMCJumpsuitCOUniform
       - id: RMCJumpsuitCOUniformGray
-    - name: Service Headwear
+    - name: 服务头饰
       entries:
       - id: CMHeadBeretCO
       - id: CMHeadBeretCOWhite
       - id: CMHeadBeretCOBlack
       - id: RMCHeadCapFlippable # TODO: Check this is the service variant. If so, parent and rename.
       - id: CMHeadCapPeakedService
-    - name: Service Extras
+    - name: 服务附加项
       entries:
       - id: RMCCoatCOServiceJacketStandard
       - id: RMCCoatCOServiceJacketGreen
       - id: RMCCoatCOServiceJacketPurple
       - id: RMCCoatCOServiceJacketGrey
       - id: CMCoatCOBomber
-    - name: Dress
+    - name: 连衣裙
       entries:
       - id: CMCoatDressBluesGeneral
       - id: CMCoatXOFormal
       - id: RMCMarineUniformDressSenior
       - id: CMHandsWhite
       - id: RMCShoesLaceup
-    - name: Dress Headwear
+    - name: 礼服头饰
       entries:
       - id: CMHeadDressBluesOfficer
     # - name: Dress Extras
@@ -433,29 +433,29 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechCommandingOfficerEquipment
-  name: ColMarTech Commanding Officer Equipment Rack
-  description: An automated equipment vendor for the Commanding Officer. Contains a prime selection of equipment for only the UNMC's top officers.
+  name: ColMarTech指挥官装备架
+  description: 为指挥官提供的自动装备售卖机。内含仅供UNMC高级军官选用的精选装备。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessCO" ]
+    - ["CMAccessCO"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/equipment.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMCommandingOfficer
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMHeadsetSeniorCommand
       - id: CMMRE
-    - name: Commanding Officer Essentials Kit
+    - name: 指挥官必备工具包
       takeAll: CMBundle
       entries:
       - id: RMCCommandingOfficerEssentialsBundle # TODO RMC14 Paper Map
-    - name: Bags
-      choices: { CMBag: 1 }
+    - name: 包袋
+      choices: {CMBag: 1}
       entries:
       - id: CMBackpackCommand
       - id: CMSatchelCommandSecure
@@ -463,7 +463,7 @@
       - id: CMSatchelMarineIntel
       - id: RMCSatchelMarineIntelChestrig
       - id: RMCSatchelMarineIntelSatchel
-    - name: Combat Equipment
+    - name: 战斗装备
       takeAll: CMCombatEquipment
       entries:
       - id: RMCArmorVestCommandingOfficer
@@ -471,8 +471,8 @@
       - id: CMArmorHelmetM11CCO
       - id: RMCHandsDeluxeMarine
       - id: CMBootsBlackFilled
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+    - name: 配件
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
         recommended: true
@@ -486,37 +486,37 @@
       - id: RMCWebbingBlackSmall
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Huds
-      choices: { CMHud: 1 }
+    - name: 哈兹
+      choices: {CMHud: 1}
       entries:
       - id: RMCGlassesMedicalHUDGlasses
         recommended: true
       - id: CMGlassesSecurity
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltUtilityGeneral
         recommended: true
       - id: CMBeltSecurityMPFilled
-        name: M276 pattern security rig (Full)
+        name: M276型安保装备（全套）
       - id: CMBeltMedicalFilled
-        name: M276 pattern medical storage rig (Full)
+        name: M276 型医疗储物胸挂（满）
         recommended: true
       - id: CMBeltMedicBagFilled
-        name: M276 pattern lifesaver bag (Full)
+        name: M276 型救生包（满）
       - id: CMBeltMarine
       - id: CMBeltUtilityCombat
       - id: RMCM82FHolsterFilled
       - id: RMCM276ShotgunShellLoadingRig
-    - name: Pouches
-      choices: { CMPouch: 2 }
+    - name: 小袋
+      choices: {CMPouch: 2}
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可补充式注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救袋（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救袋（药丸）
         recommended: true
       - id: RMCPouchMedkit
       - id: RMCPouchAutoinjectorFill
@@ -527,61 +527,61 @@
       - id: RMCPouchPistol
       - id: RMCPouchShotgunLarge
       - id: RMCPouchToolsFill
-    - name: Mask
-      choices: { CMMask: 1 }
+    - name: 面具
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: RMCMaskRebreather
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: RMCPatchFallingFalcons
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国肩章
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 坠落猎鹰大号胸章
       - id: RMCPatchUNMC
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: 联合国肩章
 
 
 # Weapon Vend
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechCommandingOfficerWeapon
-  name: ColMarTech Commanding Officer Weapon Rack
-  description: An automated weapons rack for the Commanding Officer. It features a robust selection of weaponry meant only for the UNMC's top officers.
+  name: ColMarTech 指挥官武器架
+  description: 指挥官专用的自动武器架。它配备了仅供UNMC高级军官使用的多种精良武器。
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessCO" ]
+    - ["CMAccessCO"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
   - type: CMAutomatedVendor
     jobs:
     - CMCommandingOfficer
     sections:
-    - name: Commander's Primary
+    - name: 指挥官的主武器
       takeOne: CMProtagGun
       entries:
       - id: RMCM59ACaseAP
-        name: M59A Prototype Rifle
+        name: M59A原型步枪
       - id: CMCOSmartGunOperatorEquipmentCaseBelt
-        name: Commander's Smartgun
+        name: 指挥官的智能枪
         recommended: true # TODO RMC14 Make choices: colour the options brown
-    - name: Commander's Secondary Belt
-      choices: { CMSecondary: 1 }
+    - name: 指挥官副腰带
+      choices: {CMSecondary: 1}
       entries:
       - id: RMCD50WinterWyvernBeltFilledAmmo
       - id: RMCMatebaBeltFilledAmmo
-    - name: Ceremonial Weapon
-      choices: { CMCeremonial: 1 }
+    - name: 仪式武器
+      choices: {CMCeremonial: 1}
       entries:
       - id: RMCScabbardCeremonialFilled
-        name: Commander's Ceremonial Sabre
-    - name: Primary Ammunition
+        name: 指挥官的仪仗军刀
+    - name: 主弹药
       entries:
       - id: CMMagazineRifleM54CMK1
         points: 30
@@ -595,7 +595,7 @@
         points: 20
       - id: RMCMagazineSmartGun
         points: 20
-    - name: Sidearm Ammunition
+    - name: 副武器弹药
       entries:
       - id: RMCSpeedLoaderMatebaHighImpact
         points: 15
@@ -605,7 +605,7 @@
         points: 15
       - id: RMCMagazinePistolHandcannonHIAP
         points: 20
-    - name: Shotgun Ammunition
+    - name: 霰弹枪弹药
       entries:
       - id: RMCBoxShotgunBuckshot
         points: 20
@@ -613,13 +613,13 @@
         points: 20
       - id: RMCBoxShotgunFlechette
         points: 20
-    - name: Special Ammunition
+    - name: 特殊弹药
       entries:
       - id: RMCMagazineRifleM54CRubber
         points: 10
       - id: RMCBoxShotgunBeanbag
         points: 10
-    - name: Explosives
+    - name: 爆炸物
       entries:
       - id: CMPacketGrenadeHighExplosiveFilled
         points: 15
@@ -628,7 +628,7 @@
       - id: RMCPacketGrenadeWhitePhosphorusFilled
         points: 15
       #- id: CMPacketGrenadesG2Filled (x3) # TODO RMC14 Port Electroshock (G2) Grenades
-    - name: Rail Attachments
+    - name: 轨道附件
       entries:
       - id: RMCAttachmentS5RedDotSight
         points: 15
@@ -638,7 +638,7 @@
         points: 15
       - id: RMCAttachmentS42xTelescopicMiniscope
         points: 15
-    - name: Helmet Visors
+    - name: 头盔面罩
       entries:
       - id: RMCVisorNightVision
         points: 10
@@ -647,7 +647,7 @@
         points: 5
       - id: RMCVisorMedicalAdvanced
         points: 5
-    - name: Underbarrel Attachments
+    - name: 下挂配件
       entries:
       - id: RMCAttachmentLaserSight
         points: 15
@@ -663,7 +663,7 @@
         points: 15
       - id: RMCAttachmentU1GrenadeLauncher
         points: 5
-    - name: Barrel Attachments
+    - name: 枪管附件
       entries:
       - id: RMCAttachmentExtendedBarrel
         points: 15
@@ -682,9 +682,9 @@
 - type: entity
   parent: CMVendorBundleRiflemanApparel
   id: RMCVendorBundleXOFormal
-  name: formal uniform
-  description: Contains a peaked cap, formal uniform and jacket.
-  categories: [ HideSpawnMenu ]
+  name: 正式制服
+  description: 包含大檐帽、正式制服和夹克。
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/coat_formal.rsi
@@ -698,9 +698,9 @@
 - type: entity
   parent: CMVendorBundleRiflemanApparel
   id: RMCVendorBundleXOShotgun
-  name: M890 tactical shotgun
-  description: Contains the M890 tactical shotgun and various shells.
-  categories: [ HideSpawnMenu ]
+  name: M890战术霰弹枪
+  description: 包含M890战术霰弹枪和多种霰弹。
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m890.rsi
@@ -714,9 +714,9 @@
 - type: entity
   parent: CMVendorBundleRiflemanApparel
   id: RMCVendorBundleMilitaryPoliceApparelCMP
-  name: Essential Police Set
-  description: Contains security HUD-glasses and a filled security belt.
-  categories: [ HideSpawnMenu ]
+  name: 必备警用套装
+  description: 包含安保HUD眼镜和一条装满的安保腰带。
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/security_glasses.rsi
@@ -731,12 +731,12 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechSeniorOfficerEquipment
-  name: ColMarTech Senior Officer Equipment Rack
-  description: An automated equipment vendor for Senior Officers.
+  name: 科尔马科技高级军官装备架
+  description: 高级军官的自动化装备供应商。
   components:
   - type: AccessReader
     access:
-    - [ "RMCAccessCommand" ]
+    - ["RMCAccessCommand"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/equipment.rsi
   - type: CMAutomatedVendor
@@ -751,7 +751,7 @@
     # ////////////////////////////////////
     # Executive Officer
     # ////////////////////////////////////
-    - name: Standard Equipment
+    - name: 标准设备
       jobs:
       - CMExecutiveOfficer
       takeAll: CMStandard
@@ -759,49 +759,49 @@
       - id: CMHeadsetSeniorCommand
       - id: CMSatchel
       - id: CMMRE
-    - name: Uniform # TODO: Port this.
+    - name: 制服      # TODO: Port this.
       jobs:
       - CMExecutiveOfficer
-      choices: { CMUniform: 1 }
+      choices: {CMUniform: 1}
       entries:
       - id: CMJumpsuitBO
       - id: CMJumpsuitOperations
       - id: RMCVendorBundleXOFormal
-    - name: Personal Weapon
+    - name: 个人武器
       jobs:
       - CMExecutiveOfficer
-      choices: { CMWeapon: 1 }
+      choices: {CMWeapon: 1}
       entries:
       - id: RMCMK80BeltFilled
-        name: MK80 pistol
+        name: MK80手枪
         recommended: true
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1984制式手枪
       - id: RMCM77BeltFilled
-        name: M77 pistol
+        name: M77手枪
       - id: RMCM44BeltFilled
-        name: M44 revolver
-    - name: Belt
+        name: M44左轮手枪
+    - name: 腰带
       jobs:
       - CMExecutiveOfficer
-      choices: { CMBelt: 1 }
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltUtilityGeneral
         recommended: true
       - id: CMBeltSecurityMPFilled
-        name: M276 pattern security rig (Full)
+        name: M276型安保枪套（满）
         recommended: true
       - id: CMBeltMedicalFilled
-        name: M276 pattern medical storage rig (Full)
+        name: M276型医疗储存装备（满装）
         recommended: true
       - id: CMBeltMedicBagFilled
-        name: M276 pattern lifesaver bag (Full)
+        name: M276型救生包（满）
         recommended: true
       - id: CMBeltMarine
         recommended: true
       - id: CMBeltUtilityCombat
         recommended: true
-    - name: Combat Equipment
+    - name: 战斗装备
       jobs:
       - CMExecutiveOfficer
       takeAll: CMEquipment
@@ -812,10 +812,10 @@
       - id: CMBootsBlackFilled
       - id: CMHandsBlackMarine
       - id: RMCM82FHolsterFilled
-    - name: Eyewear
+    - name: 眼镜
       jobs:
       - CMExecutiveOfficer
-      choices: { CMEyewear: 1 }
+      choices: {CMEyewear: 1}
       entries:
       - id: RMCGlassesMedicalHUDGlasses
         recommended: true
@@ -823,32 +823,32 @@
       - id: RMCSunglassesBig
         recommended: true
       - id: RMCGlassesAviators
-    - name: Patches
+    - name: 帕奇斯
       jobs:
       - CMExecutiveOfficer
       takeAll: RMCPatch
       entries:
       - id: RMCPatchFallingFalcons
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国肩章
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 坠落猎鹰大号胸章
       - id: RMCPatchUNMC
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
-    - name: Pouches
+        name: 联合国臂章
+    - name: 小袋
       jobs:
       - CMExecutiveOfficer
-      choices: { CMPouches: 2 }
+      choices: {CMPouches: 2}
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救袋（可再填充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救包（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救袋（药丸）
         recommended: true
       - id: RMCPouchGeneralLarge
       - id: RMCPouchMagazineLarge
@@ -863,10 +863,10 @@
       - id: RMCPouchElectronicsFill
       - id: RMCPouchFlareFilled
       - id: RMCPouchFuelTank
-    - name: Accessories
+    - name: 配件
       jobs:
       - CMExecutiveOfficer
-      choices: { CMAccessories: 1 }
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
         recommended: true
@@ -879,10 +879,10 @@
       - id: CMWebbing
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Hats
+    - name: 帽子
       jobs:
       - CMExecutiveOfficer
-      choices: { CMHat: 1 }
+      choices: {CMHat: 1}
       entries:
       - id: RMCHeadBeret # TODO: Port Officer Beret
       - id: CMHeadCapPeakedService
@@ -891,13 +891,13 @@
     # ////////////////////////////////////
     # Chief MP
     # ////////////////////////////////////
-    - name: Police Set (Mandatory)
+    - name: 警察套装（强制）
       jobs:
       - CMChiefMP
       takeAll: CMStandard
       entries:
       - id: RMCVendorBundleMilitaryPoliceApparelCMP
-    - name: Standard Equipment
+    - name: 标准设备
       jobs:
       - CMChiefMP
       takeAll: CMStandard
@@ -906,92 +906,92 @@
       - id: CMJumpsuitWO
       - id: CMHeadsetCMP
       - id: CMBootsBlackFilled
-    - name: Helmet
+    - name: 头盔
       jobs:
       - CMChiefMP
-      choices: { CMHelmet: 1 }
+      choices: {CMHelmet: 1}
       entries:
       - id: CMArmorHelmetM10ChiefMP
-    - name: Armor
+    - name: 护甲
       jobs:
       - CMChiefMP
-      choices: { CMArmor: 1 }
+      choices: {CMArmor: 1}
       entries:
       - id: CMArmorM3WO
       - id: RMCArmorVestMP
-    - name: Hat
+    - name: 帽子
       jobs:
       - CMChiefMP
-      choices: { CMHat: 1 }
+      choices: {CMHat: 1}
       entries:
       - id: CMHeadBeretCMP
       - id: CMCMPFlatBeret
-    - name: Handgun Case
+    - name: 手枪盒
       jobs:
       - CMChiefMP
-      choices: { CMWeapon: 1 }
+      choices: {CMWeapon: 1}
       entries:
       - id: RMCGunCaseRevolverRSh9
       - id: RMCGunCasePistolM77
       - id: RMCGunCasePistolM44
       - id: RMCGunCasePistolM1984
-    - name: Backpack
+    - name: 背包
       jobs:
       - CMChiefMP
-      choices: { CMBackpack: 1 }
+      choices: {CMBackpack: 1}
       entries:
       - id: CMSatchelSecurity
-    - name: Belt
+    - name: 腰带
       jobs:
       - CMChiefMP
-      choices: { CMBelt: 1 }
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltHolsterPistol
       - id: RMCBeltHolsterRevolver
       - id: RMCBeltUtilityGeneral
-    - name: Patches
+    - name: 帕奇斯
       jobs:
       - CMChiefMP
       takeAll: RMCPatch
       entries:
       - id: RMCPatchFallingFalcons
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国臂章
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 坠落猎鹰大号胸前贴片
       - id: RMCPatchUNMC
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
-    - name: Pouches
+        name: 联合国肩章
+    - name: 小袋
       jobs:
       - CMChiefMP
-      choices: { CMPouches: 2 }
+      choices: {CMPouches: 2}
       entries:
       - id: RMCPouchGeneralMedium
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可补充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救袋（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救包（药片）
         recommended: true
       - id: RMCPouchMagazinePistol
       - id: RMCPouchPistol
       - id: RMCPouchGeneralLarge
-    - name: Mask
+    - name: 面具
       jobs:
       - CMChiefMP
-      choices: { CMMask: 1 }
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: RMCMaskRebreather
-    - name: Accessories
+    - name: 配件
       jobs:
       - CMChiefMP
-      choices: { CMAccessories: 1 }
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
       - id: CMWebbingBlack
@@ -1004,7 +1004,7 @@
       - id: RMCWebbingHolsterBlack
       - id: CMWebbing
       - id: RMCWebbingBlackSmall
-    - name: Books
+    - name: 书籍
       jobs:
       - CMChiefMP
       entries:
@@ -1016,11 +1016,11 @@
     # Chief Engineer
     # ////////////////////////////////////
     # CE Shipside Gear
-    - name: Shipside Gear
-      entries: [ ]
+    - name: 船舷装备
+      entries: []
       jobs:
       - CMChiefEngineer
-    - name: Standard Equipment
+    - name: 标准设备
       jobs:
       - CMChiefEngineer
       takeAll: CMStandard
@@ -1030,34 +1030,34 @@
       - id: ClothingEyesGlassesMeson # TODO change to CM13 engi goggles.
       - id: RMCNailgunTactical
       # TODO KN5500/2 PDA
-    - name: Uniform
+    - name: 制服
       jobs:
       - CMChiefEngineer
-      choices: { CMUniform: 1 }
+      choices: {CMUniform: 1}
       entries:
       - id: CMJumpsuitChiefEngineer
         recommended: true
       - id: CMJumpsuitBO
-    - name: Gloves
+    - name: 手套
       jobs:
       - CMChiefEngineer
-      choices: { CMHands: 1 }
+      choices: {CMHands: 1}
       entries:
       - id: CMHandsInsulated
       - id: CMHandsBlackInsulated
-    - name: Helmet
+    - name: 头盔
       jobs:
       - CMChiefEngineer
-      choices: { CMHelmet: 1 }
+      choices: {CMHelmet: 1}
       entries:
       - id: CMHeadBeretEngineer
       - id: RMCHardhatWhite
       - id: RMCHeadCapFlippable
       - id: RMCHelmetWelding
-    - name: Suit
+    - name: 西装
       jobs:
       - CMChiefEngineer
-      choices: { CMSuit: 1 }
+      choices: {CMSuit: 1}
       entries:
       - id: RMCHazardVestBlack
       - id: RMCHazardVestBlue
@@ -1065,83 +1065,83 @@
       - id: RMCHazardVestYellow
       - id: RMCCoatService
       - id: RMCCoatAllWeather # RMC Addition
-    - name: Backpack
+    - name: 背包
       jobs:
       - CMChiefEngineer
-      choices: { CMBackpack: 1 }
+      choices: {CMBackpack: 1}
       entries:
       - id: CMSatchel
       - id: CMSatchelMarineTech
       - id: RMCSatchelWelder
       - id: RMCSatchelWelderChestrig
       - id: CMBackpackWelder
-    - name: Belt
+    - name: 腰带
       jobs:
       - CMChiefEngineer
-      choices: { CMBelt: 1 }
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltConstruction
       - id: RMCBeltUtilityGeneral
       - id: CMBeltUtilityFilled
-        name: M276 pattern toolbelt rig (Full)
-    - name: Patches
+        name: M276型工具腰带挂具（完整版）
+    - name: 帕奇斯
       jobs:
       - CMChiefEngineer
       takeAll: RMCPatch
       entries:
       - id: RMCPatchFallingFalcons
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国肩章
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 坠落猎鹰大号胸章
       - id: RMCPatchUNMC
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
-    - name: Pouches
+        name: 联合国臂章
+    - name: 小袋
       jobs:
       - CMChiefEngineer
-      choices: { CMPouches: 2 }
+      choices: {CMPouches: 2}
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可填充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救包（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救包（药丸）
       - id: RMCPouchGeneralLarge
       - id: RMCPouchToolsFill
-        name: tools pouch (Full)
+        name: 工具袋（满）
       - id: RMCPouchConstruction
       - id: RMCPouchElectronicsFill
-        name: electronics pouch (Full)
+        name: 电子产品收纳袋（全套）
       - id: RMCPouchMagazine
       - id: RMCPouchShotgun
       - id: RMCPouchPistol
       - id: RMCPouchFlareFilled
-        name: flare pouch (Full)
+        name: 信号弹袋（满）
       - id: RMCPouchFuelTank
       - id: RMCPouchEngineerKit
       - id: RMCPouchSling
-    - name: Personal Sidearms
+    - name: 个人随身武器
       jobs:
       - CMChiefEngineer
-      choices: { CMWeapon: 1 }
+      choices: {CMWeapon: 1}
       entries:
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1984制式手枪
         recommended: true
       - id: RMCM77BeltFilled
-        name: M77 pistol
+        name: M77手枪
         recommended: true
       - id: RMCM44BeltFilled
-        name: M44 revolver
+        name: M44左轮手枪
         recommended: true
-    - name: Accessories
+    - name: 配件
       jobs:
       - CMChiefEngineer
-      choices: { CMAccessories: 1 }
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBlack
       - id: CMWebbingBrown
@@ -1154,13 +1154,13 @@
       - id: RMCWebbingDropPouch
       - id: RMCWebbingDropPouchBlack
       - id: RMCToolWebbingSmallFilled
-        name: small tool webbing (Full)
+        name: 小型工具织带（满）
     # CE Deployment Gear
-    - name: Deployment Gear
-      entries: [ ]
+    - name: 部署装备
+      entries: []
       jobs:
       - CMChiefEngineer
-    - name: Combat Equipment
+    - name: 战斗装备
       jobs:
       - CMChiefEngineer
       takeAll: CMStandard
@@ -1169,33 +1169,33 @@
       - id: RMCArmorM3SO
       - id: CMBootsBlackFilled
       - id: RMCLaserDesignator
-    - name: Combat Helmet
+    - name: 战斗头盔
       jobs:
       - CMChiefEngineer
-      choices: { CMCombatHelmet: 1 }
+      choices: {CMCombatHelmet: 1}
       entries:
       - id: RMCArmorHelmetM10SO
       - id: CMArmorHelmetM10Tech
-    - name: Mask
+    - name: 面具
       jobs:
       - CMChiefEngineer
-      choices: { CMMask: 1 }
+      choices: {CMMask: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: RMCMaskRebreather
-    - name: Primary Firearms
+    - name: 主要枪械
       jobs:
       - CMChiefEngineer
-      choices: { CMWeaponPrimary: 1 }
+      choices: {CMWeaponPrimary: 1}
       entries:
       - id: RMCM42A2ShotgunCase
-        name: M42A2 pump shotgun
+        name: M42A2泵动式霰弹枪
       - id: RMCM54CMK2Case
-        name: M54C assault rifle MK2
+        name: M54C突击步枪MK2
       - id: RMCCaseFlamer
-        name: M240 incinerator unit #cmu14
-    - name: Spare Equipment
+        name: M240焚化装置              #cmu14
+    - name: 备用设备
       jobs:
       - CMChiefEngineer
       entries:
@@ -1206,42 +1206,42 @@
     # ////////////////////////////////////
     # Logistics Officer
     # ////////////////////////////////////
-    - name: Standard Equipment
+    - name: 标准设备
       jobs:
       - CMQuartermaster
       takeAll: CMStandard
       entries:
       - id: CMSatchel
       - id: RMCQuartermasterJacket
-    - name: Gloves
+    - name: 手套
       jobs:
       - CMQuartermaster
-      choices: { CMHands: 1 }
+      choices: {CMHands: 1}
       entries:
       - id: CMHandsBlackInsulated
-    - name: Headgear
+    - name: 头饰
       jobs:
       - CMQuartermaster
-      choices: { CMHelmet: 1 }
+      choices: {CMHelmet: 1}
       entries:
       - id: RMCHeadBeretQuartermaster
         recommended: true
       - id: CMHeadCapCargo
-    - name: Personal Sidearm
+    - name: 个人随身武器
       jobs:
       - CMQuartermaster
-      choices: { CMWeapon: 1 }
+      choices: {CMWeapon: 1}
       entries:
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1984制式手枪
         recommended: true
       - id: RMCM77BeltFilled
-        name: M77 pistol
+        name: M77手枪
         recommended: true
       - id: RMCM44BeltFilled
-        name: M44 revolver
+        name: M44左轮手枪
         recommended: true
-    - name: Combat Equipment
+    - name: 战斗装备
       jobs:
       - CMQuartermaster
       takeAll: CMStandard
@@ -1249,41 +1249,41 @@
       - id: RMCArmorVestOfficer
       - id: RMCArmorM3SO
       - id: RMCArmorHelmetM10SO
-    - name: Patches
+    - name: 补丁
       jobs:
       - CMQuartermaster
       takeAll: RMCPatch
       entries:
       - id: RMCPatchFallingFalcons
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国肩章
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 坠落猎鹰大号胸章
       - id: RMCPatchUNMC
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
-    - name: Pouches
+        name: 联合国臂章
+    - name: 小袋
       jobs:
       - CMQuartermaster
-      choices: { CMPouches: 2 }
+      choices: {CMPouches: 2}
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可补充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救袋（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救袋（药丸）
         recommended: true
       - id: RMCPouchGeneralLarge
       - id: RMCPouchTools
-        name: tools pouch (empty)
+        name: 工具袋（空）
       - id: RMCPouchConstruction
-    - name: Accessories
+    - name: 配件
       jobs:
       - CMQuartermaster
-      choices: { CMAccessories: 1 }
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBlack
       - id: CMWebbingBrown
@@ -1291,7 +1291,7 @@
       - id: RMCWebbingLegPouch
       - id: RMCWebbingLegPouchBlack
       - id: CMWebbing
-    - name: Spare Equipment
+    - name: 备用设备
       jobs:
       - CMQuartermaster
       entries:
@@ -1300,32 +1300,32 @@
     # ////////////////////////////////////
     # Chief Medical Officer
     # ////////////////////////////////////
-    - name: Medical Set (Mandatory)
+    - name: 医疗套装（必填）
       jobs:
       - CMCMO
       takeAll: CMMedicalSet
       entries:
       - id: RMCVendorBundleCrewMedicalEssentialsDoctor
-    - name: Standard Equipment
+    - name: 标准设备
       jobs:
       - CMCMO
       takeAll: CMStandard
       entries:
       - id: CMHandsLatex
       - id: CMHeadsetCMO
-    - name: Eyewear
+    - name: 眼镜
       jobs:
       - CMCMO
-      choices: { CMEyewear: 1 }
+      choices: {CMEyewear: 1}
       entries:
       - id: RMCGlassesMedicalHUDGlasses
       # - id: RMCGlassesMedicalHUDGlassesPrescription TODO
       # - id: RMCGlasesReagentScannerHUD TODO
       # - id: RMCGlasesReagentScannerHUDPrescription TODO
-    - name: Uniform
+    - name: 制服
       jobs:
       - CMCMO
-      choices: { CMUniform: 1 }
+      choices: {CMUniform: 1}
       entries:
       - id: CMJumpsuitCMO
         recommended: true
@@ -1335,30 +1335,30 @@
       - id: CMScrubsPurple
       - id: RMCScrubsOlive
       - id: RMCScrubsGrey
-    - name: Suit
+    - name: 西装
       jobs:
       - CMCMO
-      choices: { CMSuit: 1 }
+      choices: {CMSuit: 1}
       entries:
       - id: RMCLabcoatCMO
         recommended: true
       - id: RMCLabcoat
         recommended: true
       - id: RMCMedicalApron
-    - name: Headwear
+    - name: 头饰
       jobs:
       - CMCMO
-      choices: { CMHelmet: 1 }
+      choices: {CMHelmet: 1}
       entries:
       - id: CMHeadCapCMO
       - id: CMHeadCapSurgOrange
       - id: CMHeadCapSurgBlue
       - id: CMHeadCapSurgPurple
       - id: CMHeadCapSurgGreen
-    - name: Bag
+    - name: 包
       jobs:
       - CMCMO
-      choices: { CMBag: 1 }
+      choices: {CMBag: 1}
       entries:
       - id: CMSatchelMarine
       - id: CMBackpackMarine
@@ -1366,28 +1366,28 @@
         recommended: true
       - id: CMBackpackMedical
         recommended: true
-    - name: Belt
+    - name: 腰带
       jobs:
       - CMCMO
-      choices: { CMBelt: 1 }
+      choices: {CMBelt: 1}
       entries:
       - id: CMBeltMedicBagFilled
-        name: M276 pattern lifesaver bag (Full)
+        name: M276型救生包（满载）
       - id: CMBeltMedicalFilled
-        name: M276 medical storage rig (Full)
-    - name: Personal Sidearm
+        name: M276 医疗储物架（已满）
+    - name: 个人随身武器
       jobs:
       - CMCMO
-      choices: { CMWeapon: 1 }
+      choices: {CMWeapon: 1}
       entries:
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1984制式手枪
       - id: RMCM77BeltFilled
-        name: M77 pistol
+        name: M77手枪
       - id: RMCM44BeltFilled
-        name: M44 revolver
+        name: M44左轮手枪
         recommended: true
-    - name: Combat Equipment (Combat Use Only)
+    - name: 作战装备（仅限作战使用）
       jobs:
       - CMCMO
       takeAll: CMStandard
@@ -1396,60 +1396,60 @@
       - id: RMCArmorM3SO
       - id: RMCArmorHelmetM10SO
       - id: CMBootsBlackFilled
-    - name: Patches
+    - name: 帕奇斯
       jobs:
       - CMCMO
       takeAll: RMCPatch
       entries:
       - id: RMCPatchFallingFalcons
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国肩章
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 坠落猎鹰大号胸章
       - id: RMCPatchUNMC
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
-    - name: Pouches
+        name: 联合国肩章
+    - name: 小袋
       jobs:
       - CMCMO
-      choices: { CMPouches: 2 }
+      choices: {CMPouches: 2}
       entries:
       - id: RMCPouchAutoinjector
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可再填充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救包（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救袋（药片）
       - id: RMCPouchFirstResponder
       - id: RMCPouchMedical
       - id: RMCPouchMedkit
       - id: RMCPouchReagentCanisterBicaridine
         recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Bicaridine)
+        name: "加压试剂罐袋\n（比卡利定）"
       - id: RMCPouchReagentCanisterKelotane
         recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Kelotane)
+        name: "加压试剂罐袋\n（凯洛坦）"
       - id: RMCPouchReagentCanisterTricordrazineRevival
         recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Tricordrazine)
+        name: "加压试剂罐袋\n（复活混合液－三可拉嗪）"
       #      - id: CMPressurizedReagentCanisterPouchPeridaxonRevivalMix
       #        recommended: true
       #        name: Pressurized Reagent Canister Pouch\n(Revival Mix - Peridaxon)
       - id: RMCPouchReagentCanisterTricordrazine
         recommended: true
-        name: Pressurized Reagent Canister Pouch\n(Tricordrazine)
+        name: "加压试剂罐袋\n（三卡曲拉嗪）"
       - id: RMCPouchReagentCanister
         recommended: true
-        name: Pressurized Reagent Canister Pouch\n(EMPTY)
+        name: 加压试剂罐袋\n（空）
       - id: RMCPouchGeneralLarge
       - id: RMCPouchSling
-    - name: Accessories
+    - name: 配件
       jobs:
       - CMCMO
-      choices: { CMAccessories: 1 }
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
       - id: CMWebbingBlack
@@ -1459,7 +1459,7 @@
       - id: CMWebbing
       - id: RMCWebbingDropPouch
       - id: RMCWebbingDropPouchBlack
-    - name: Spare Equipment
+    - name: 备用设备
       jobs:
       - CMCMO
       entries:
@@ -1470,10 +1470,10 @@
     # ////////////////////////////////////
     # Auxiliary Support Officer
     # ////////////////////////////////////
-    - name: Uniform
+    - name: 制服
       jobs:
       - CMAuxiliarySupportOfficer
-      choices: { CMUniform: 1 }
+      choices: {CMUniform: 1}
       entries:
       - id: CMJumpsuitBO
       - id: RMCJumpsuitASOBlack
@@ -1481,54 +1481,54 @@
       - id: RMCJumpsuitASOFormalAlt
       - id: RMCJumpsuitASOBlackAlt
       - id: RMCJumpsuitASOOperations
-    - name: Outer Wear
+    - name: 外套
       jobs:
       - CMAuxiliarySupportOfficer
-      choices: { CMSuit: 1 }
+      choices: {CMSuit: 1}
       entries:
       - id: CMCoatASO
       - id: RMCCoatASOBlack
       - id: RMCCoatASOWhite
       - id: RMCCoatASOBlackAlt
       - id: RMCCoatASOWhiteAlt
-    - name: Headset
+    - name: 头戴式耳机
       jobs:
       - CMAuxiliarySupportOfficer
       takeAll: CMStandard
       entries:
       - id: CMHeadsetSeniorCommand
-    - name: Gloves
+    - name: 手套
       jobs:
       - CMAuxiliarySupportOfficer
-      choices: { CMHands: 1 }
+      choices: {CMHands: 1}
       entries:
       - id: CMHandsInsulated
       - id: CMHandsBlackInsulated
-    - name: Bag
+    - name: 包
       jobs:
       - CMAuxiliarySupportOfficer
-      choices: { CMBag: 1 }
+      choices: {CMBag: 1}
       entries:
       - id: CMSatchelMarineTech
       - id: CMSatchel
-    - name: Personal Sidearm
+    - name: 个人随身武器
       jobs:
       - CMAuxiliarySupportOfficer
-      choices: { CMWeapon: 1 }
+      choices: {CMWeapon: 1}
       entries:
       - id: RMCM1984BeltFilled
-        name: M1984 service pistol
+        name: M1984制式手枪
         recommended: true
       - id: RMCM77BeltFilled
-        name: M77 pistol
+        name: M77手枪
         recommended: true
       - id: RMCM44BeltFilled
-        name: M44 revolver
+        name: M44转轮手枪
         recommended: true
-    - name: Hat
+    - name: 帽子
       jobs:
       - CMAuxiliarySupportOfficer
-      choices: { CMHelmet: 1 }
+      choices: {CMHelmet: 1}
       entries:
       - id: RMCHeadCapASO
       - id: RMCHeadCapPeakedASO
@@ -1538,7 +1538,7 @@
       - id: RMCHeadCapFlippable
       - id: CMHeadCapPeakedService
       - id: CMHeadBeretTan
-    - name: Combat Equipment
+    - name: 作战装备
       jobs:
       - CMAuxiliarySupportOfficer
       takeAll: CMStandard
@@ -1547,43 +1547,43 @@
       - id: RMCArmorM3SO
       - id: RMCArmorHelmetM10SO
       - id: CMBootsBlackFilled
-    - name: Patches
+    - name: 补丁
       jobs:
       - CMAuxiliarySupportOfficer
       takeAll: RMCPatch
       entries:
       - id: RMCPatchFallingFalcons
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国肩章
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 坠落猎鹰大号胸章
       - id: RMCPatchUNMC
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
-    - name: Pouches
+        name: 联合国肩章
+    - name: 小袋
       jobs:
       - CMAuxiliarySupportOfficer
-      choices: { CMPouches: 2 }
+      choices: {CMPouches: 2}
       entries:
       - id: RMCPouchDocument
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救袋（可补充注射器）
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment) # TODO RMC14 splints comma
+        name: 急救袋（纱布、药膏）                        # TODO RMC14 splints comma
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救包（药丸）
         recommended: true
       - id: RMCPouchGeneralLarge
       - id: RMCPouchTools
-        name: tools pouch (empty)
+        name: 工具袋（空）
       - id: RMCPouchConstruction
       - id: RMCPouchSling
-    - name: Accessories
+    - name: 配件
       jobs:
       - CMAuxiliarySupportOfficer
-      choices: { CMAccessories: 1 }
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
       - id: CMWebbingBlack

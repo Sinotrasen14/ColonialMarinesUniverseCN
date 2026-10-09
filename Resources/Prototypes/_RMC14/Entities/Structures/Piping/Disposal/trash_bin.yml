@@ -2,8 +2,8 @@
   abstract: true
   id: RMCTrashBinBase
   parent: BaseStructure
-  name: trash bin
-  description: A Weyland-Yutani trash bin used for disposing your unwanted items, or you can just throw your shit on the ground like every other asshole.
+  name: 垃圾桶
+  description: 一个维兰德-汤谷垃圾桶，用来处理你不想要的物品，或者你也可以像其他所有混蛋一样，直接把你的屎扔在地上。
   placement:
     mode: SnapgridCenter
     snap:
@@ -13,62 +13,60 @@
     sprite: _RMC14/Structures/Piping/disposal.rsi
     layers:
     - state: trashcan
-      map: [ "enum.DisposalUnitVisualLayers.Base" ]
+      map: ["enum.DisposalUnitVisualLayers.Base"]
     - state: disposal-flush
-      map: [ "enum.DisposalUnitVisualLayers.OverlayFlushing" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayFlushing"]
       visible: false
     - state: dispover-ready
-      map: [ "enum.DisposalUnitVisualLayers.OverlayCharging" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayCharging"]
     - state: dispover-full
-      map: [ "enum.DisposalUnitVisualLayers.OverlayFull" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayFull"]
       visible: false
     - state: dispover-handle
-      map: [ "enum.DisposalUnitVisualLayers.OverlayEngaged" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayEngaged"]
       visible: false
   - type: GenericVisualizer
     visuals:
       enum.DisposalUnitVisuals.IsReady:
         enum.DisposalUnitVisualLayers.Base:
-          True: { state: trashcan }
-          False: { state: trashcan }
+          true: {state: trashcan}
+          false: {state: trashcan}
       enum.DisposalUnitVisuals.IsFlushing:
         enum.DisposalUnitVisualLayers.OverlayFlushing:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.DisposalUnitVisuals.IsEngaged:
         enum.DisposalUnitVisualLayers.OverlayEngaged:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.DisposalUnitVisuals.IsCharging:
         enum.DisposalUnitVisualLayers.OverlayCharging:
-          True: { state: dispover-charge, visible: true }
-          False: { state: dispover-ready, visible: true }
+          true: {state: dispover-charge, visible: true}
+          false: {state: dispover-ready, visible: true}
       enum.DisposalUnitVisuals.IsFull:
         enum.DisposalUnitVisualLayers.OverlayFull:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.AnchorVisuals.Anchored:
         enum.DisposalUnitVisualLayers.Base:
-          True: { state: trashcan }
-          False: { state: condisposal }
+          true: {state: trashcan}
+          false: {state: condisposal}
         enum.DisposalUnitVisualLayers.OverlayEngaged:
-          False: { visible: false }
+          false: {visible: false}
         enum.DisposalUnitVisualLayers.OverlayCharging:
-          False: { visible: false }
+          false: {visible: false}
         enum.DisposalUnitVisualLayers.OverlayFull:
-          False: { visible: false }
+          false: {visible: false}
   - type: Physics
     bodyType: Static
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
@@ -107,50 +105,50 @@
   - type: Sprite
     layers:
     - state: trashgreen
-      map: [ "enum.DisposalUnitVisualLayers.Base" ]
+      map: ["enum.DisposalUnitVisualLayers.Base"]
     - state: trashgreen
-      map: [ "enum.DisposalUnitVisualLayers.OverlayFlushing" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayFlushing"]
       visible: false
     - state: trashgreen
-      map: [ "enum.DisposalUnitVisualLayers.OverlayCharging" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayCharging"]
     - state: trashgreen
-      map: [ "enum.DisposalUnitVisualLayers.OverlayFull" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayFull"]
       visible: false
     - state: trashgreen
-      map: [ "enum.DisposalUnitVisualLayers.OverlayEngaged" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayEngaged"]
       visible: false
   - type: GenericVisualizer
     visuals:
       enum.DisposalUnitVisuals.IsReady:
         enum.DisposalUnitVisualLayers.Base:
-          True: { state: trashgreen }
-          False: { state: trashgreen }
+          true: {state: trashgreen}
+          false: {state: trashgreen}
       enum.DisposalUnitVisuals.IsFlushing:
         enum.DisposalUnitVisualLayers.OverlayFlushing:
-          True: { state: trashgreen, visible: true }
-          False: { visible: false }
+          true: {state: trashgreen, visible: true}
+          false: {visible: false}
       enum.DisposalUnitVisuals.IsEngaged:
         enum.DisposalUnitVisualLayers.OverlayEngaged:
-          True: { state: trashgreen, visible: true }
-          False: { visible: false }
+          true: {state: trashgreen, visible: true}
+          false: {visible: false}
       enum.DisposalUnitVisuals.IsCharging:
         enum.DisposalUnitVisualLayers.OverlayCharging:
-          True: { state: trashgreen, visible: true }
-          False: { state: trashgreen, visible: true }
+          true: {state: trashgreen, visible: true}
+          false: {state: trashgreen, visible: true}
       enum.DisposalUnitVisuals.IsFull:
         enum.DisposalUnitVisualLayers.OverlayFull:
-          True: { state: trashgreen, visible: true }
-          False: { visible: false }
+          true: {state: trashgreen, visible: true}
+          false: {visible: false}
       enum.AnchorVisuals.Anchored:
         enum.DisposalUnitVisualLayers.Base:
-          True: { state: trashgreen }
-          False: { state: trashgreen }
+          true: {state: trashgreen}
+          false: {state: trashgreen}
   - type: DisposalUnit
     flushingState: trashgreen
     container:
       ents: []
-      showEnts: False
-      occludes: True
+      showEnts: false
+      occludes: true
 - type: entity
   parent: RMCTrashBinBase
   id: RMCTrashBinBlue
@@ -158,47 +156,47 @@
   - type: Sprite
     layers:
     - state: trashblue
-      map: [ "enum.DisposalUnitVisualLayers.Base" ]
+      map: ["enum.DisposalUnitVisualLayers.Base"]
     - state: trashblue
-      map: [ "enum.DisposalUnitVisualLayers.OverlayFlushing" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayFlushing"]
       visible: false
     - state: trashblue
-      map: [ "enum.DisposalUnitVisualLayers.OverlayCharging" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayCharging"]
     - state: trashblue
-      map: [ "enum.DisposalUnitVisualLayers.OverlayFull" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayFull"]
       visible: false
     - state: trashblue
-      map: [ "enum.DisposalUnitVisualLayers.OverlayEngaged" ]
+      map: ["enum.DisposalUnitVisualLayers.OverlayEngaged"]
       visible: false
   - type: GenericVisualizer
     visuals:
       enum.DisposalUnitVisuals.IsReady:
         enum.DisposalUnitVisualLayers.Base:
-          True: { state: trashblue }
-          False: { state: trashblue }
+          true: {state: trashblue}
+          false: {state: trashblue}
       enum.DisposalUnitVisuals.IsFlushing:
         enum.DisposalUnitVisualLayers.OverlayFlushing:
-          True: { state: trashblue, visible: true }
-          False: { visible: false }
+          true: {state: trashblue, visible: true}
+          false: {visible: false}
       enum.DisposalUnitVisuals.IsEngaged:
         enum.DisposalUnitVisualLayers.OverlayEngaged:
-          True: { state: trashblue, visible: true }
-          False: { visible: false }
+          true: {state: trashblue, visible: true}
+          false: {visible: false}
       enum.DisposalUnitVisuals.IsCharging:
         enum.DisposalUnitVisualLayers.OverlayCharging:
-          True: { state: trashblue, visible: true }
-          False: { state: trashblue, visible: true }
+          true: {state: trashblue, visible: true}
+          false: {state: trashblue, visible: true}
       enum.DisposalUnitVisuals.IsFull:
         enum.DisposalUnitVisualLayers.OverlayFull:
-          True: { state: trashblue, visible: true }
-          False: { visible: false }
+          true: {state: trashblue, visible: true}
+          false: {visible: false}
       enum.AnchorVisuals.Anchored:
         enum.DisposalUnitVisualLayers.Base:
-          True: { state: trashblue }
-          False: { state: trashblue }
+          true: {state: trashblue}
+          false: {state: trashblue}
   - type: DisposalUnit
     flushingState: trashblue
     container:
       ents: []
-      showEnts: False
-      occludes: True
+      showEnts: false
+      occludes: true

@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ CMBaseWeaponGun, BaseItem]
+  parent: [CMBaseWeaponGun, BaseItem]
   id: RMCSmartGunMounted
-  name: M56D heavy machine gun
-  description: The top half of a M56D heavy machine gun post. However it ain't much use without the tripod.
+  name: M56D重型机枪
+  description: M56D重型机枪阵地的上半部分。不过没有三脚架的话，它可没什么用。
   components:
   - type: Item
     size: Huge
@@ -28,7 +28,7 @@
     layers:
     - state: ml66d_gun_e
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     slots:
     - suitStorage
@@ -68,7 +68,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         priority: 2
@@ -96,8 +96,8 @@
     angleIncrease: 0
     accuracyAddMult: 0
   - type: Scope
-    scopePopup: null
-    unScopePopup: null
+    scopePopup:
+    unScopePopup:
     canUseInsideContainer: true
     canUseNightVision: true
     zoomLevels:
@@ -105,7 +105,7 @@
       offset: 7
       doAfter: 0
       allowMovement: true
-    scopingToggleAction: null
+    scopingToggleAction:
   - type: Tag
     tags:
     - RMCSmartGunMounted
@@ -114,12 +114,12 @@
   parent: RMCSmartGunMounted
   id: RMCSmartGunMountedLoaded
   suffix: Loaded
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineML66D
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
@@ -132,7 +132,7 @@
 - type: entity
   parent: RMCSmartGunMounted
   id: RMCSmartGunMountedStatic
-  name: M56D heavy machine gun
+  name: M56D重机枪
   suffix: Scoped
   components:
   - type: MagazineAmmoProvider
@@ -145,7 +145,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineML66DLarge
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
@@ -159,7 +159,7 @@
       offset: 12
       doAfter: 0
       allowMovement: true
-    scopingToggleAction: null
+    scopingToggleAction:
   - type: GunRequiresSkills
     skills:
       RMCSkillEngineer: 0
@@ -171,8 +171,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineML66D
-  name: M56D drum magazine (10x28mm)
-  description: A box of 700, 10x28mm caseless tungsten rounds for the M56D heavy machine gun system.
+  name: M56D弹鼓（10×28毫米）
+  description: 一盒700发10×28毫米无壳钨弹，用于M56D重机枪系统。
   components:
   - type: Tag
     tags:
@@ -200,8 +200,8 @@
 - type: entity
   parent: RMCMagazineML66D
   id: RMCMagazineML66DLarge
-  name: large M56D drum magazine (10x28mm)
-  description: A box of 1500, 10x28mm caseless tungsten rounds for the M56D heavy machine gun system.
+  name: 大型M56D弹鼓（10x28mm）
+  description: 一箱1500发10x28mm无壳钨弹，用于M56D重机枪系统。
   components:
   - type: Tag
     tags:
@@ -218,7 +218,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeHMG10x28mm
-  name: cartridge (10x28mm)
+  name: 弹药（10x28mm）
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
@@ -235,7 +235,7 @@
 - type: entity
   parent: RMCCartridgeHMG10x28mm
   id: RMCCartridgeHMG10x28mmOffset #DIfferent muzzle flash location
-  name: cartridge (10x28mm)
+  name: 弹药（10x28mm）
   components:
   - type: CartridgeAmmo
     muzzleFlashOffset: 0.25, 0
@@ -246,8 +246,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletHMG10x28mm
-  name: bullet (10x28mm)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（10x28mm）
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/bullet_projectiles.rsi

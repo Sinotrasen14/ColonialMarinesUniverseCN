@@ -1,9 +1,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomCrateLoot
-  name: random crate loot spawner
-  description: This is a random crate loot spawner
-  categories: [ HideSpawnMenu ]
+  name: 随机箱子战利品生成器
+  description: 这是一个随机箱子战利品生成器
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -29,9 +29,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomMiniAmmoCrateLoot
-  name: random crate loot spawner
-  description: This is a random crate loot spawner
-  categories: [ HideSpawnMenu ]
+  name: 随机箱子战利品生成器
+  description: 这是一个随机箱子战利品生成器
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -54,9 +54,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomMiniMedcase
-  name: random crate loot spawner
-  description: This is a random crate loot spawner
-  categories: [ HideSpawnMenu ]
+  name: 随机箱子战利品生成器
+  description: 这是一个随机箱子战利品生成器
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -83,9 +83,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomMERCGuns
-  name: random crate loot spawner
-  description: This is a random crate loot spawner
-  categories: [ HideSpawnMenu ]
+  name: 随机箱子战利品生成器
+  description: 这是一个随机箱子战利品生成器
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -122,9 +122,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomConfiscatedEquipment
-  name: random crate loot spawner
-  description: This is a random crate loot spawner
-  categories: [ HideSpawnMenu ]
+  name: 随机箱子战利品生成器
+  description: 这是一个随机箱子战利品生成器
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -137,9 +137,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomConfiscatedWeaponry
-  name: random crate loot spawner
-  description: This is a random crate loot spawner
-  categories: [ HideSpawnMenu ]
+  name: 随机箱子战利品生成器
+  description: 这是一个随机箱子战利品生成器
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -152,9 +152,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomHalyconGuns
-  name: random crate loot spawner
-  description: This is a random crate loot spawner
-  categories: [ HideSpawnMenu ]
+  name: 随机箱子战利品生成器
+  description: 这是一个随机箱子战利品生成器
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -178,9 +178,9 @@
 - type: entity
   parent: MarkerBase
   id: RMCSpawnerRandomUNMCGuns
-  name: random crate loot spawner
-  description: This is a random crate loot spawner
-  categories: [ HideSpawnMenu ]
+  name: 随机箱子战利品生成器
+  description: 这是一个随机箱子战利品生成器
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Markers/landmarks.rsi
@@ -213,8 +213,8 @@
 - type: entity
   parent: RMCCrateOpenableBase
   id: RMCCrateLarge
-  name: large crate
-  description: A hefty wooden crate.
+  name: 大木箱
+  description: 一个沉重的木箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/densecrate.rsi
@@ -238,8 +238,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.29"
         density: 50
         mask:
@@ -254,8 +253,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -284,8 +282,8 @@
 - type: entity
   parent: RMCCrateLarge
   id: RMCCrateHalyconFireArms
-  name: Halycon firearm crate
-  description: A hefty wooden crate.
+  name: Halycon 枪械箱
+  description: 一个沉重的木箱。
   components:
   - type: SpawnOnTerminate
     spawn: RMCSpawnerRandomHalyconGuns
@@ -295,8 +293,8 @@
 - type: entity
   parent: RMCCrateLarge
   id: RMCCrateBlackmarketFireArms
-  name: Black market firearm crate
-  description: A hefty wooden crate.
+  name: 黑市枪械箱
+  description: 一个沉重的木箱。
   components:
   - type: SpawnOnTerminate
     spawn: RMCSpawnerRandomMERCGuns
@@ -304,8 +302,8 @@
 - type: entity
   parent: RMCSecureCaseDouble #Evilass hidden GUN GAMBA CRATEEEEEEEE For CHANCESSSS CLAIMEEEEEEEEEEEEEE
   id: RMCCrateBlackmarketFireArmsHidden
-  name: supply crate
-  description: A hefty wooden crate.
+  name: 补给箱
+  description: 一个沉重的木箱。
   components:
   - type: SpawnOnTerminate
     spawn: RMCSpawnerRandomMERCGuns
@@ -313,7 +311,7 @@
 - type: entity
   parent: RMCCrateLarge
   id: RMCCrateBlackmarketConfiscatedEquipment # TODO crate heat 10 and dollar cost 70
-  name: seized foreign equipment crate
+  name: 缴获的外国装备箱
   components:
   - type: SpawnOnTerminate
     spawn: RMCSpawnerRandomConfiscatedEquipment
@@ -321,7 +319,7 @@
 - type: entity
   parent: RMCCrateLarge
   id: RMCCrateBlackmarketConfiscatedWeaponry # TODO crate heat 15 and dollar cost 45
-  name: seized foreign weaponry crate
+  name: 缴获的外国武器箱
   components:
   - type: SpawnOnTerminate
     spawn: RMCSpawnerRandomConfiscatedWeaponry
@@ -331,9 +329,9 @@
 - type: entity
   parent: RMCCrateLarge # TDLR (randomized spawn does not work with crateopenable spawn a object that uses Spawnonterminate for it) Part of UNMC Guns Crate
   id: RMCCrateUNMCGunsDecoyObject
-  name: Decoy Object UNMC firearms crate (x3)
-  description: Decoy Object.
-  categories: [ HideSpawnMenu ]
+  name: 诱饵物体 UNMC 枪械箱（x3）
+  description: 诱饵物体。
+  categories: [HideSpawnMenu]
   components:
   - type: TimedDespawn
     lifetime: 0.005
@@ -343,8 +341,8 @@
 - type: entity
   parent: RMCCrateLarge # UNMC Guns Crate
   id: RMCCrateUNMCGuns
-  name: UNMC firearms crate (x3)
-  description: A supply crate containing 3 firearms used by UNMC forces.
+  name: UNMC枪械箱（×3）
+  description: 一个装有UNMC部队使用的3件枪械的补给箱。
   components:
   - type: CrateOpenable
     spawn:
@@ -356,8 +354,8 @@
 - type: entity
   parent: RMCCrateLarge # UNMC Guns Crate
   id: RMCCrateUNMCGunsSingle
-  name: UNMC firearms crate
-  description: A supply crate containing firearms used by UNMC forces.
+  name: UNMC枪械箱
+  description: 一个装有UNMC部队使用枪械的补给箱。
   components:
   - type: SpawnOnTerminate
     spawn: RMCSpawnerRandomUNMCGuns
@@ -365,8 +363,8 @@
 - type: entity
   parent: RMCSecureCaseMedicalBig #Medical Vendor Crate
   id: RMCCrateMedicalVendor
-  name: We-Yu-Med Plus crate
-  description: A crate containing one We-Yu-Med Plus vendor.
+  name: We-Yu-Med Plus 板条箱
+  description: 一个装有一台 We-Yu-Med Plus 售货机的板条箱。
   components:
   - type: SpawnOnTerminate
     spawn: CMVendorMedicalAllAccess
@@ -374,8 +372,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped #Generator Crate
   id: RMCCrateGeneratorPACMAN
-  name: P.A.C.M.A.N. crate
-  description: A crate containing a P.A.C.M.A.N. generator, some fuel, and some cable coil to get your power up and going.
+  name: P.A.C.M.A.N. 板条箱
+  description: 一个装有 P.A.C.M.A.N. 发电机、一些燃料和一些电缆线圈的板条箱，可让你的电力系统启动并持续运转。
   components:
   - type: CrateOpenable
     spawn:
@@ -391,8 +389,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped #Floodlights (funny drag stuff)
   id: RMCCrateFloodlightX4
-  name: floodlight crate (x4)
-  description: A crate containing four floodlights. "Warning It might be bit tangled!" written on the side.
+  name: 泛光灯板条箱（x4）
+  description: 一个装有四盏泛光灯的板条箱。侧面写着“警告，它可能有点缠结！”
   components:
   - type: CrateOpenable
     spawn:
@@ -404,8 +402,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped #Floodlights (funny drag stuff)
   id: RMCCrateTablesAndRacks
-  name: storage solutions crate (x10, x10)
-  description: A crate containing ten table parts, and ten rack parts, for easy storage setup.
+  name: 储物解决方案箱（x10，x10）
+  description: 一个箱子，内含十份桌子部件和十份架子部件，便于轻松搭建储物设施。
   components:
   - type: CrateOpenable
     spawn:
@@ -419,8 +417,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped #Water Bottles
   id: RMCCrateBottledWaterX50
-  name: We-Yu Bottled Water crate (x50)
-  description: A crate containing fifty We-Yu Bottled Spring Water bottles.
+  name: We-Yu 瓶装水板条箱（x50）
+  description: 一个装有五十瓶We-Yu瓶装泉水的板条箱。
   components:
   - type: CrateOpenable
     spawn:
@@ -432,8 +430,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped #Flare Boxes
   id: RMCCrateFlares200
-  name: Flare supply crate (x200)
-  description: A supply crate containing two crates of flares.
+  name: 照明弹补给箱（x200）
+  description: 一个装有兩箱照明弹的补给箱。
   components:
   - type: CrateOpenable
     spawn:
@@ -445,8 +443,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped #Powerloader
   id: RMCCratePowerLoaderYellow
-  name: Powerloader crate
-  description: A crate containing one folded, but fully assembled, LU-50 Power Loader and included pamphlet for quick training.
+  name: 动力装载机板条箱
+  description: 一个板条箱，内含一台已折叠但完全组装好的LU-50动力装载机，以及一本用于快速培训的随附小册子。
   components:
   - type: CrateOpenable
     spawn:
@@ -458,8 +456,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped #Powerloader Fujin
   id: RMCCratePowerLoaderGreen
-  name: Fujin Powerloader crate
-  description: A crate containing one folded, but fully assembled, LU-43 Power Loader and included pamphlet for quick training.
+  name: 风神动力装载机货箱
+  description: 一个货箱，内含一台已折叠但完全组装好的LU-43动力装载机，以及随附的快速培训手册。
   components:
   - type: CrateOpenable
     spawn:
@@ -471,8 +469,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped #Powerloader Ferret
   id: RMCCratePowerLoaderBlue
-  name: Ferret Powerloader crate
-  description: A crate containing one folded, but fully assembled, LU-52 Power Loader and included pamphlet for quick training.
+  name: 雪貂动力装载机货箱
+  description: 一个货箱，内含一台已折叠但完全组装好的LU-52动力装载机，以及随附的快速培训手册。
   components:
   - type: CrateOpenable
     spawn:
@@ -484,8 +482,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped # 4 x25 Sandbags
   id: RMCCrateSandbags100
-  name: sandbag supply crate (x100)
-  description: A supply crate containing four piles of twenty-five sandbags.
+  name: 沙袋补给箱（100个）
+  description: 一个装有四堆沙袋的补给箱，每堆二十五个。
   components:
   - type: CrateOpenable
     spawn:
@@ -497,8 +495,8 @@
 - type: entity
   parent: RMCSecureCaseStrapped # 2 x30 Plasteel Sheets
   id: RMCCratePlasteel60
-  name: plasteel supply crate (x60)
-  description: A supply crate containing two stacks of 30 plasteel sheets.
+  name: 塑钢补给箱（×60）
+  description: 一个补给箱，内含两叠塑钢钢板，每叠30块。
   components:
   - type: CrateOpenable
     spawn:
@@ -512,8 +510,8 @@
 - type: entity
   parent: RMCCrateOpenableBase
   id: RMCOreBox
-  name: ore box
-  description: A heavy box used for storing ore.
+  name: 矿石箱
+  description: 一个用于储存矿石的重型箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/orebox.rsi
@@ -528,8 +526,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.29"
         density: 50
         mask:
@@ -544,8 +541,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -565,8 +561,8 @@
 - type: entity
   parent: RMCCrateOpenableBase
   id: RMCSecureCase
-  name: storage case
-  description: A black storage case.
+  name: 储物盒
+  description: 一个黑色储物盒。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/case.rsi
@@ -584,8 +580,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.42,-0.42,0.4,0.15"
         density: 50
         mask:
@@ -600,8 +595,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -613,8 +607,8 @@
 - type: entity
   parent: RMCSecureCase
   id: RMCSecureCaseDouble
-  name: cases
-  description: A stack of black storage cases.
+  name: 储物箱
+  description: 一堆黑色储物箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/casedouble.rsi
@@ -629,8 +623,8 @@
 - type: entity
   parent: RMCSecureCase
   id: RMCSecureCaseSmall
-  name: small cases
-  description: Two small black storage cases.
+  name: 小收纳盒
+  description: 两个黑色小收纳盒。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/casesmall.rsi
@@ -645,8 +639,8 @@
 - type: entity
   parent: RMCCrateOpenableBase
   id: RMCSecureCaseChest
-  name: chest
-  description: hefty wooden crate.
+  name: 箱子
+  description: 沉重的木箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/chest.rsi
@@ -664,8 +658,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.42,-0.42,0.4,0.35"
         density: 50
         mask:
@@ -680,8 +673,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -693,8 +685,8 @@
 - type: entity
   parent: RMCSecureCaseChest
   id: RMCSecureCaseStrapped
-  name: secure supply crate
-  description: A hefty wooden crate.
+  name: 安全的补给箱
+  description: 一个沉重的木箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/securecrate.rsi
@@ -709,8 +701,8 @@
 - type: entity
   parent: RMCSecureCaseChest
   id: RMCSecureCaseMedicalBig
-  name: medical crate
-  description: A crate containing medical supplies.
+  name: 医疗补给箱
+  description: 一个装有医疗补给的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/chestwhite.rsi
@@ -725,8 +717,8 @@
 - type: entity
   parent: RMCCrateOpenableBase
   id: RMCSmallChestYellow
-  name: small chest
-  description: A small plastic crate wrapped with securing elastic straps.
+  name: 小箱子
+  description: 一个用固定弹性绑带缠绕的小塑料箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/minichest.rsi
@@ -744,8 +736,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.3,0.2,0.3"
         density: 50
         mask:
@@ -760,8 +751,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -773,8 +763,8 @@
 - type: entity
   parent: RMCSmallChestYellow
   id: RMCSmallChestBlue
-  name: small chest
-  description: A small plastic crate wrapped with securing elastic straps.
+  name: 小箱子
+  description: 一个用固定弹性绑带捆扎的小塑料箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/minichestb.rsi
@@ -789,8 +779,8 @@
 - type: entity
   parent: RMCSmallChestYellow
   id: RMCSmallChestRed
-  name: small chest
-  description: A small plastic crate wrapped with securing elastic straps.
+  name: 小箱子
+  description: 一个用固定弹性带缠绕的小型塑料箱。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/minichestc.rsi
@@ -805,8 +795,8 @@
 - type: entity
   parent: RMCSmallChestYellow
   id: RMCSecureCaseMedicalSmall
-  name: small medcase
-  description: A small metal crate. Here, Freeman take this medkit!
+  name: 小医疗箱
+  description: 一个小金属箱。来，弗里曼，拿着这个医疗箱！
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/minimedcase.rsi
@@ -823,8 +813,8 @@
 - type: entity
   parent: RMCSmallChestYellow
   id: RMCSecureCaseAmmoMini
-  name: small ammocase
-  description: A small metal crate. Here, Freeman ammo!
+  name: 小型弹药箱
+  description: 一个小金属箱。给，弗里曼，弹药！
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/miniammo.rsi
@@ -841,8 +831,8 @@
 - type: entity
   parent: RMCSmallChestYellow
   id: RMCCrateMini
-  name: small crate
-  description: The large supply crate's cousin, 1st removed.
+  name: 小箱子
+  description: 大型补给箱隔一代的表亲。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/minicrate.rsi
@@ -863,8 +853,8 @@
 - type: entity
   parent: RMCCrateOpenableBase
   id: RMCSecureCaseMini
-  name: small case
-  description: A small hard-shell case. What could be inside?
+  name: 小箱子
+  description: 一个小硬壳箱。里面会是什么呢？
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Crates/minicase.rsi
@@ -882,8 +872,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.3,0.2,0.2"
         density: 50
         mask:
@@ -898,8 +887,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior

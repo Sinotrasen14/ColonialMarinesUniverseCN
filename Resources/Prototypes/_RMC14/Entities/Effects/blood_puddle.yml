@@ -1,7 +1,7 @@
 - type: entity
-  name: blood puddle
+  name: 血泊 | blood puddle
   id: BloodDecalPuddle
-  description: A puddle of blood.
+  description: 一滩血。 | A puddle of blood.
   placement:
     mode: SnapgridCenter
   components:
@@ -17,8 +17,7 @@
   - type: Fixtures
     fixtures:
       slipFixture:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         mask:
         - ItemMask

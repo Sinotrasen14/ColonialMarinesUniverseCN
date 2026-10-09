@@ -1,11 +1,11 @@
-﻿- type: entity
+- type: entity
   id: CMSurgeryBase
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: CMSurgeryBase
   id: CMSurgeryOpenIncision
-  name: Open Incision
+  name: 开放性切口 | Open Incision
   components:
   - type: CMSurgery
     steps:
@@ -16,7 +16,7 @@
 - type: entity
   parent: CMSurgeryBase
   id: CMSurgeryCloseIncision
-  name: Close Incision
+  name: 关闭切口 | Close Incision
   components:
   - type: CMSurgery
     priority: 1
@@ -28,7 +28,7 @@
 - type: entity
   parent: CMSurgeryBase
   id: CMSurgeryOpenRibcage
-  name: Open Ribcage
+  name: 打开胸腔 | Open Ribcage
   components:
   - type: CMSurgery
     requirement: CMSurgeryOpenIncision
@@ -41,8 +41,8 @@
 - type: entity
   parent: CMSurgeryBase
   id: CMSurgeryAlienEmbryoRemoval
-  name: Alien Embryo Removal
-  description: Removal of an alien embryo from the body.
+  name: 外星胚胎移除 | Alien Embryo Removal
+  description: 从体内移除外星胚胎。 | Removal of an alien embryo from the body.
   components:
   - type: CMSurgery
     priority: -1
@@ -57,8 +57,8 @@
 - type: entity
   parent: CMSurgeryBase
   id: RMCSurgeryAlienHeartRemoval
-  name: Experimental Harvesting Surgery
-  description: Harvest the heart of an deceased alien.
+  name: 实验性摘取手术 | Experimental Harvesting Surgery
+  description: 摘取已死亡外星人的心脏。 | Harvest the heart of an deceased alien.
   components:
   - type: CMSurgery
     priority: -1

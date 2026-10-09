@@ -3,15 +3,15 @@
   - CMXenoRunner
   - RMCXenoCommendationReceiver
   id: RMCXenoRouny
-  name: Rouny
+  name: 圆仔 | Rouny
   suffix: RMC14
-  description: thas a fuckin rouny.
+  description: 这是他妈的圆仔。 | thas a fuckin rouny.
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Rouny/rouny.rsi
   - type: XenoEvolution
     max: 200
-    evolvesTo: [ ]
+    evolvesTo: []
   - type: XenoHidden
   - type: FixedIdentity
     name: cmu-job-name-xeno-unknown
@@ -21,14 +21,14 @@
   - CMXenoRunner
   - RMCXenoCommendationReceiver
   id: RMCXenoWehny
-  name: Wehny
-  description: A cruel, cruel joke made by some sick individual.
+  name: 温尼 | Wehny
+  description: 某个病态的人开的一个残忍、残忍的玩笑。 | A cruel, cruel joke made by some sick individual.
   components:
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Wehny/wehny.rsi
   - type: XenoEvolution
     max: 200
-    evolvesTo: [ ]
+    evolvesTo: []
   - type: XenoHidden
   - type: FixedIdentity
     name: cmu-job-name-xeno-unknown
@@ -40,8 +40,8 @@
   - CMXenoFlammable
   - RMCXenoSpeechSounds
   id: RMCXenoLesserCarrier
-  name: Lesser Carrier
-  description: A strange-looking alien creature. It carries a number of scuttling jointed crablike creatures. Looks... smaller.
+  name: 次级运载者 | Lesser Carrier
+  description: 一个外形怪异的外星生物。它携带着许多四处乱爬、有分节、像螃蟹一样的生物。看起来……更小。 | A strange-looking alien creature. It carries a number of scuttling jointed crablike creatures. Looks... smaller.
   components:
   - type: GhostRole
     name: roles-lesser-carrier-name
@@ -55,17 +55,17 @@
   - type: Sprite
     sprite: _RMC14/Mobs/Xenonids/Extras/lesser_carrier.rsi
     layers:
-    - map: [ "enum.XenoVisualLayers.Base" ]
+    - map: ["enum.XenoVisualLayers.Base"]
       state: alive
-    - map: [ "enum.RMCDamageVisualLayers.Base" ]
+    - map: ["enum.RMCDamageVisualLayers.Base"]
       visible: false
-    - map: [ "enum.ParasiteOverlayLayers.RightArm" ]
+    - map: ["enum.ParasiteOverlayLayers.RightArm"]
       visible: false
-    - map: [ "enum.ParasiteOverlayLayers.Head" ]
+    - map: ["enum.ParasiteOverlayLayers.Head"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Left" ]
+    - map: ["enum.XenoInhandVisualLayers.Left"]
       visible: false
-    - map: [ "enum.XenoInhandVisualLayers.Right" ]
+    - map: ["enum.XenoInhandVisualLayers.Right"]
       visible: false
   - type: Xeno
     role: CMXenoLesserDrone

@@ -1,17 +1,17 @@
-﻿- type: entity
+- type: entity
   parent: CMBaseWeaponSMG
-  name: Type-19 Submachinegun
+  name: 19型冲锋枪
   id: RMCWeaponSMGType19
-  description: An outdated, but reliable and powerful, submachinegun originating in the Union of Progressive Peoples, it is still in limited service in the UPP but is most often used by paramilitary groups or corporate security forces. It is usually used with a 35 round stick magazine, or a 71 round drum.
+  description: 一种过时但可靠且威力强大的冲锋枪，源自进步人民联盟，如今仍在UPP中有限服役，但最常由准军事组织或企业安保部队使用。它通常使用35发直弹匣或71发弹鼓。
   suffix: Filled
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/type19.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     size: Normal
   - type: Clothing
@@ -48,7 +48,7 @@
     accuracyMultiplierUnwielded: 0.75
   - type: MagazineAmmoProvider
     autoEject: false
-    soundAutoEject: null
+    soundAutoEject:
   - type: WieldableSpeedModifiers
     base: 0.725
     light: 1
@@ -57,7 +57,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSMGType19
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -100,15 +100,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSMGType19
-  name: Type-19 stick magazine (7.62x25mm)
-  description: A 35-round stick magazine for the Type-19 SMG.
+  name: 19式长弹匣（7.62×25毫米）
+  description: 19式冲锋枪的35发长弹匣。
   components:
   - type: Tag
     tags:
     - CMMagazineSmg
     - RMCMagazineSMGType19
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridge762x25mm
@@ -129,19 +129,19 @@
   - type: Appearance
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsSMGType19
-    
+
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineSMGType19Drum
-  name: Type-19 drum magazine (7.62x25mm)
-  description: A 71-round drum magazine for the Type-19 SMG.
+  name: 19式弹鼓（7.62×25毫米）
+  description: 19式冲锋枪的71发弹鼓。
   components:
   - type: Tag
     tags:
     - CMMagazineSmg
     - RMCMagazineSMGType19Drum
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridge762x25mm
@@ -162,12 +162,12 @@
   - type: Appearance
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsSMGType19
-    
+
 - type: entity
   parent: CMCartridge10x20mm
   id: RMCCartridge762x25mm
-  name: cartridge (7.62x25mm SMG)
-  description: A 7.62x25mm cartridge for the Type-19 SMG.
+  name: 7.62×25毫米冲锋枪弹
+  description: 19式冲锋枪使用的7.62×25毫米枪弹。
   components:
   - type: Tag
     tags:
@@ -179,7 +179,7 @@
 - type: entity
   parent: Bullet10x20mm
   id: RMCBullet762x25mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:

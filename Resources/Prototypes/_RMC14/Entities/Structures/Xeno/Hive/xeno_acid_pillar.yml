@@ -1,7 +1,7 @@
 - type: entity
   id: HiveAcidPillarXeno
-  name: acid pillar
-  description: A tall pillar that is capable of firing weak acid.
+  name: 酸液柱
+  description: 一座能够喷射弱酸的高柱。
   components:
   - type: Transform
     anchored: true
@@ -10,8 +10,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         layer:
         - BulletImpassable
@@ -22,18 +21,17 @@
     sprite: _RMC14/Structures/Xenos/xeno_acid_pillar.rsi
     layers:
     - state: idle
-      map: [ "rmc_flick_animation" ]
+      map: ["rmc_flick_animation"]
   - type: Damageable
   - type: Injurable
     damageContainer: StructuralXeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: ImmuneToUnarmed
   - type: MeleeSound
     soundGroups:

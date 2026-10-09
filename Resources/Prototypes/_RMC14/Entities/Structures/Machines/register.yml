@@ -1,9 +1,9 @@
-﻿- type: entity
+- type: entity
   abstract: true
-  parent: [ CMBaseStructure, BaseBagOpenClose ]
+  parent: [CMBaseStructure, BaseBagOpenClose]
   id: RMCCashRegisterBase
-  name: cash register
-  description: A Novaris brand point of sales system that accepts credit chits... and cash assuming it is operated. Rumor has it these use the same logic board as Novaris Average Joes. You are becoming financially unstable.
+  name: 收银机
+  description: 一套诺瓦里斯品牌的销售点系统，能接受信用筹码……以及现金，前提是有人操作它。有传言说，这些机器使用与诺瓦里斯“普通人”相同的逻辑板。你的财务状况正变得不稳定。
   components:
   - type: Storage
     grid:
@@ -11,7 +11,7 @@
     maxItemSize: Normal
     whitelist:
       tags:
-        - RMCSpaceCash
+      - RMCSpaceCash
   - type: Transform
     anchored: false
   - type: Physics
@@ -20,7 +20,7 @@
     drawdepth: SmallObjects
     sprite: _RMC14/Structures/Machines/computer.rsi
     state: on
-    layers: [ ]
+    layers: []
   - type: Clickable
   - type: Corrodible
     isCorrodible: false
@@ -34,8 +34,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:DoActsBehavior

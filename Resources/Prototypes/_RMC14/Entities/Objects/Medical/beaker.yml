@@ -9,8 +9,7 @@
       - Xeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -21,7 +20,7 @@
       - !type:SpillBehavior
         solution: beaker
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DamageOnLand
     damage: {}
   - type: DamageOtherOnHit
@@ -42,8 +41,7 @@
       - Xeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
@@ -54,13 +52,13 @@
       - !type:SpillBehavior
         solution: beaker
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: CMBeakerBase
   id: CMBeaker
-  name: beaker
-  description: A beaker. Can hold up to 60 units.
+  name: 烧杯
+  description: 一个烧杯。最多可容纳 60 个单位。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/beaker.rsi
@@ -81,20 +79,20 @@
   - type: Solution
     id: beaker
     solution:
-        maxVol: 60
+      maxVol: 60
   - type: Openable
     opened: true
     closeable: true
     examineText: rmc-bottle-closed
     openVerbText: rmc-bottle-remove-lid
     closeVerbText: rmc-bottle-put-lid
-    sound: null
+    sound:
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}
   - type: Spillable
     solution: beaker
   - type: StaticPrice
@@ -110,8 +108,8 @@
 - type: entity
   parent: CMBeakerBase
   id: CMBeakerLarge
-  name: large beaker
-  description: A large beaker. Can hold up to 120 units.
+  name: 大烧杯
+  description: 一个大烧杯。最多可容纳120个单位。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/large_beaker.rsi
@@ -128,7 +126,7 @@
   - type: Solution
     id: beaker
     solution:
-        maxVol: 120
+      maxVol: 120
   - type: SolutionContainerVisuals
     maxFillLevels: 5
     fillBaseName: beakerlarge
@@ -138,13 +136,13 @@
     examineText: rmc-bottle-closed
     openVerbText: rmc-bottle-remove-lid
     closeVerbText: rmc-bottle-put-lid
-    sound: null
+    sound:
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}
   - type: Spillable
     solution: beaker
   - type: StaticPrice
@@ -156,8 +154,8 @@
 - type: entity
   parent: RMCBeakerBaseMetallic
   id: RMCBeakerHighCapacity
-  name: high-capacity beaker
-  description: A beaker with an enlarged holding capacity, made with blue-tinted plexiglass in order to withstand greater pressure. Can hold up to 300 units.
+  name: 大容量烧杯
+  description: 容量扩大的烧杯，以蓝色调有机玻璃制成，可承受更大压力，最多可容纳300单位。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/high_capacity_beaker.rsi
@@ -173,7 +171,7 @@
     sprite: _RMC14/Objects/Medical/high_capacity_beaker.rsi
   - type: Solution
     solution:
-        maxVol: 300
+      maxVol: 300
   - type: SolutionContainerVisuals
     maxFillLevels: 5
     fillBaseName: beakerbluespace
@@ -201,13 +199,13 @@
     examineText: rmc-bottle-closed
     openVerbText: rmc-bottle-remove-lid
     closeVerbText: rmc-bottle-put-lid
-    sound: null
+    sound:
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}
   - type: Spillable
     solution: beaker
   - type: StaticPrice
@@ -232,8 +230,7 @@
       - Xeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -244,7 +241,7 @@
       - !type:SpillBehavior
         solution: beaker
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: MeleeWeapon
     soundNoDamage:
       path: "/Audio/Effects/Fluids/splat.ogg"
@@ -280,8 +277,8 @@
 - type: entity
   parent: RMCBeakerBaseMetallic
   id: CMMiniTank
-  name: MS-11 Smart Refill Tank
-  description: A robust little tank capable of refilling autoinjectors that previously required a nanomed system to refill. Using the wonders of microchips, it automatically sorts the correct chemicals into most single reagent autoinjectors. It is unable to partially fill them however. A valve exists on the top to transfer reagents to another container or to flush it entirely.
+  name: MS-11智能补充罐
+  description: 一个坚固的小型储罐，能够为以前需要纳米医疗系统才能补充的自动注射器进行补充。借助微芯片的奇妙功能，它会自动将正确的化学物质装入大多数单试剂自动注射器中。不过，它无法部分填充这些注射器。顶部有一个阀门，可将试剂转移到另一个容器，或将其完全排空。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tanks/minitank.rsi
@@ -295,7 +292,7 @@
     sprite: _RMC14/Objects/Tanks/minitank.rsi
   - type: Solution
     solution:
-        maxVol: 180
+      maxVol: 180
   - type: SolutionContainerVisuals
     maxFillLevels: 5
     fillBaseName: minitank
@@ -332,8 +329,8 @@
 - type: entity
   parent: RMCSealedChemicalContainer
   id: RMCPressurizedCanister
-  name: pressurized canister
-  description: A pressurized container. The inner part of a pressurized reagent canister pouch. Only compatible with its pouch, machinery or a storage tank.
+  name: 加压罐
+  description: 一个加压容器。加压试剂罐软袋的内部部件。仅与其软袋、机器或储罐兼容。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tanks/pressurized_reagent_container.rsi
@@ -456,8 +453,8 @@
 - type: entity
   parent: CMBeakerBase
   id: RMCVial
-  name: vial
-  description: A small glass vial. Can hold up to 30 units.
+  name: 小瓶
+  description: 一个小玻璃瓶。最多可容纳30个单位。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Chemistry/vials.rsi
@@ -477,7 +474,7 @@
   - type: Solution
     id: beaker
     solution:
-        maxVol: 30
+      maxVol: 30
   - type: SolutionTransfer
     transferAmount: 5
     maxTransferAmount: 30
@@ -496,13 +493,13 @@
     examineText: rmc-bottle-closed
     openVerbText: rmc-bottle-remove-lid
     closeVerbText: rmc-bottle-put-lid
-    sound: null
+    sound:
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}
   - type: Vial
   - type: StaticPrice
     price: 10
@@ -512,17 +509,17 @@
 - type: entity
   parent: RMCVial
   id: RMCVialTricordrazine
-  name: tricordrazine vial
-  description: A small glass vial. Can hold up to 30 units. Contains Tricordrazine, a weak general use medicine for treating damage.
+  name: 三可拉嗪药瓶
+  description: 一个小玻璃药瓶。最多可容纳30单位。内含三可拉嗪，一种用于治疗损伤的弱效通用药物。
   suffix: Filled, Tricordrazine
   components:
   - type: Solution
     id: beaker
     solution:
-        maxVol: 30
-        reagents:
-        - ReagentId: CMTricordrazine
-          Quantity: 30
+      maxVol: 30
+      reagents:
+      - ReagentId: CMTricordrazine
+        Quantity: 30
   - type: CMRefillableSolution
     solution: beaker
     reagents:

@@ -2,8 +2,8 @@
 - type: entity
   parent: CMClosetBase
   id: CMLockerBase
-  name: secure locker
-  description: It's an immobile card-locked storage unit.
+  name: 安全储物柜
+  description: 这是一个不可移动的、用卡片锁定的储物柜。
   components:
   - type: VehicleSmashable
   - type: Sprite
@@ -23,7 +23,7 @@
       visible: false
       sprite: Structures/Storage/closet_labels.rsi
       offset: "-0.065,0"
-      map: [ "enum.PaperLabelVisuals.Layer" ]
+      map: ["enum.PaperLabelVisuals.Layer"]
   - type: Appearance
   - type: LockVisuals
   - type: EntityStorageVisuals
@@ -38,8 +38,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.48"
         density: 75
         mask:
@@ -51,7 +50,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerCommander
-  name: commanding officer's locker
+  name: 指挥官储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/commander.rsi
@@ -61,8 +60,8 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerCommanderSecure
-  name: commanding officer's secure box
-  description: A safe for the Commanding Officer to store any equipment they need to have ready at a moment's notice. There's a note inside saying that whatever was inside it before was moved out.
+  name: 指挥官的保险箱
+  description: 一个供指挥官存放任何需要随时待命使用的装备的保险箱。里面有一张便条，写着之前放在里面的东西都被移走了。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/safe.rsi
@@ -72,8 +71,8 @@
 - type: entity
   parent: CMLockerBase
   id: RMCLockerSecureSafe
-  name: secure safe
-  description: A safe for an important person to store any valuables or equipment they need. The hinges have begun to rust.
+  name: 安全保险箱
+  description: 一个供重要人物存放所需任何贵重物品或装备的保险箱。其铰链已经开始生锈。
   suffix: All Access
   components:
   - type: Sprite
@@ -82,8 +81,8 @@
 - type: entity
   parent: CMLockerBase
   id: RMCLockerIntelSafe
-  name: secure safe
-  description: May contain valuable information
+  name: 安全保险箱
+  description: 可能包含有价值的信息
   suffix: Intel
   components:
   - type: UserInterface
@@ -91,7 +90,7 @@
       enum.DialogUiKey.Key:
         type: DialogBui
   - type: AccessReader
-    access: [ [ "CMAccessColonyCommand" ] ]
+    access: [["CMAccessColonyCommand"]]
 
 - type: entity
   parent: RMCLockerSecureSafe
@@ -106,7 +105,7 @@
 - type: entity
   parent: RMCLockerSecureSafe
   id: RMCLockerSecureSafeLiaison
-  description: A huge chunk of metal with a dial embedded in it. Fine print on the dial reads "Scarborough Arms - 2 tumbler safe, guaranteed thermite resistant, and explosion resistant."
+  description: 一大块金属，上面嵌有一个转盘。转盘上的小字写着“斯卡伯勒军械——双制栓保险箱，保证耐铝热剂且防爆。”
   suffix: Corporate Liaison
   components:
   - type: Sprite
@@ -117,7 +116,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerStaff
-  name: staff officer's locker
+  name: 参谋军官的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/staff.rsi
@@ -127,7 +126,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerPilot
-  name: pilot's locker
+  name: 飞行员储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/pilot.rsi
@@ -137,7 +136,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerPolice
-  name: military police's locker
+  name: 宪兵的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/police.rsi
@@ -147,13 +146,13 @@
 - type: entity
   parent: CMLockerPolice
   id: RMCLockerPoliceSoro
-  name: security officer's locker
+  name: 保安储物柜
 
 - type: entity
   parent: CMLockerBase
   id: RMCLockerGunBase
-  name: gun cabinet
-  description: It's an immobile card-locked storage unit.
+  name: 枪柜
+  description: 这是一个不可移动的卡片锁定储物单元。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/gun_cabinet.rsi
@@ -168,8 +167,8 @@
 - type: entity
   parent: RMCLockerGunBase
   id: RMCLockerGunStorageBrig
-  name: Storage Cabinet
-  description: It's an immobile card-locked storage unit.
+  name: 储物柜
+  description: 这是一个不可移动的刷卡锁定储物柜。
   components:
   - type: AccessReader
     access: [["CMAccessBrig"]]
@@ -177,8 +176,8 @@
 - type: entity
   parent: RMCLockerGunBase
   id: RMCLockerGunStorageCommand
-  name: Storage Cabinet
-  description: It's an immobile card-locked storage unit.
+  name: 储物柜
+  description: 这是一个不可移动的卡锁储物柜。
   components:
   - type: AccessReader
     access: [["RMCAccessCommand"]]
@@ -186,8 +185,8 @@
 - type: entity
   parent: RMCLockerGunBase
   id: RMCLockerGun
-  name: gun cabinet
-  description: It's an immobile card-locked storage unit.
+  name: 枪柜
+  description: 这是一个不可移动的、用卡片锁定的储物单元。
   suffix: Colony
   components:
   - type: AccessReader
@@ -198,7 +197,7 @@
 - type: entity
   parent: RMCLockerGunBase
   id: RMCLockerGunBlue
-  name: riot control equipment Cabinet
+  name: 防暴装备柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/armory_locker.rsi
@@ -208,7 +207,7 @@
 - type: entity
   parent: RMCLockerGunBase
   id: RMCLockerGunRed
-  name: red alert gun cabinet
+  name: 红色警戒枪柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/armory_locker.rsi
@@ -219,7 +218,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerCMP
-  name: chief MP's locker
+  name: 宪兵队长的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/cmp.rsi
@@ -229,7 +228,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerWarden
-  name: warden's locker
+  name: 典狱长的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/warden.rsi
@@ -239,7 +238,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerMedical
-  name: medical doctor's locker
+  name: 医生的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/medical.rsi
@@ -249,7 +248,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerMedicalWhite
-  name: medical locker
+  name: 医用柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/medical_white.rsi
@@ -259,7 +258,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerHydroResearch
-  name: hydroponics research locker
+  name: 水培研究储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/medical_white.rsi
@@ -269,7 +268,7 @@
 - type: entity
   parent: CMLockerBase
   id: RMCLockerHydro
-  name: botanist's locker
+  name: 植物学家的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/hydro.rsi
@@ -279,7 +278,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerQM
-  name: Logistics Officer's locker
+  name: 后勤官的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/qm.rsi
@@ -287,12 +286,12 @@
     access: [["CMAccessQM"]]
   - type: StorageFill
     contents:
-      - id: RMCMegaphone
+    - id: RMCMegaphone
 
 - type: entity
   parent: CMLockerBase
   id: CMLockerCargo
-  name: requisitions technician's locker
+  name: 物资申领技术员的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/cargo.rsi
@@ -302,7 +301,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerSEA
-  name: SEA's locker
+  name: SEA的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/commander.rsi
@@ -312,7 +311,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerResearcher
-  name: researcher's locker
+  name: 研究员的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/researcher.rsi
@@ -322,7 +321,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerCMO
-  name: chief medical officer's locker
+  name: 首席医疗官的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/cmo.rsi
@@ -333,7 +332,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerCE
-  name: chief engineer's locker
+  name: 轮机长储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/ce.rsi
@@ -343,7 +342,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerEngineer
-  name: engineer's locker
+  name: 工程师的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/engineer.rsi
@@ -353,7 +352,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerEngineerElectrical
-  name: electrical supplies
+  name: 电气用品
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/engineer_electric.rsi
@@ -363,7 +362,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerEngineerWelder
-  name: welding supplies
+  name: 焊接用品
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/engineer_welder.rsi
@@ -373,7 +372,7 @@
 - type: entity
   parent: CMLockerBase
   id: RMCLockerEngineerGeneric
-  name: workshop materials
+  name: 工作坊材料
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/engineer_generic.rsi
@@ -384,7 +383,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerAlpha
-  name: alpha squad locker
+  name: 阿尔法小队储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/alpha.rsi
@@ -394,7 +393,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerBravo
-  name: bravo squad locker
+  name: 布拉沃小队储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/bravo.rsi
@@ -404,7 +403,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerCharlie
-  name: charlie squad locker
+  name: 查理小队储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/charlie.rsi
@@ -414,7 +413,7 @@
 - type: entity
   parent: CMLockerBase
   id: CMLockerDelta
-  name: delta squad locker
+  name: 德尔塔小队储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/delta.rsi
@@ -426,7 +425,7 @@
 - type: entity
   parent: CMLockerBase
   id: RMCLockerResearchDirector
-  name: research director's locker
+  name: 研究主任的储物柜
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/rd.rsi
@@ -436,7 +435,7 @@
 - type: entity
   parent: CMLockerBase
   id: RMCCabinet
-  name: cabinet
+  name: 柜子
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/cabinet.rsi
@@ -444,7 +443,7 @@
 - type: entity
   parent: CMLockerBase
   id: RMCLockerDetective
-  name: detective's cabinet
+  name: 侦探的柜子
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/detective.rsi
@@ -454,7 +453,7 @@
 - type: entity
   parent: CMLockerBase
   id: RMCLockerSquadLeader
-  name: section sergeant locker
+  name: 分队长储物柜
   components:
   - type: AccessReader
     access: [["CMAccessSquadLeaderPrep"]]
@@ -466,7 +465,7 @@
 - type: entity
   parent: CMLockerBase
   id: RMCLockerSmartGunOperatorOne
-  name: squad one smartgun operator locker
+  name: 第一小队智能枪操作员储物柜
   components:
   - type: AccessReader
     access: [["CMAccessSmartPrep"]]
@@ -478,22 +477,22 @@
 - type: entity
   parent: RMCLockerSmartGunOperatorOne
   id: RMCLockerSmartGunOperatorTwo
-  name: squad two smartgun operator locker
+  name: 第二小队智能枪操作员储物柜
 
 - type: entity
   parent: RMCLockerSmartGunOperatorOne
   id: RMCLockerSmartGunOperatorThree
-  name: squad three smartgun operator locker
+  name: 第三小队智能枪操作员储物柜
 
 - type: entity
   parent: RMCLockerSmartGunOperatorOne
   id: RMCLockerSmartGunOperatorFour
-  name: squad four smartgun operator locker
+  name: 第四小队智能枪操作员储物柜
 
 - type: entity
   parent: RMCLockerSquadLeader
   id: RMCLockerSquadLeaderPMC
-  name: force lead locker
+  name: 强力铅制储物柜
   components:
   - type: EntityTableContainerFill
     containers:
@@ -503,7 +502,7 @@
 - type: entity
   parent: RMCLockerSmartGunOperatorOne
   id: RMCLockerSmartGunOperatorPMCOne
-  name: squad one support gunner locker
+  name: 一号小队支援机枪手储物柜
   components:
   - type: EntityTableContainerFill
     containers:
@@ -513,12 +512,12 @@
 - type: entity
   parent: RMCLockerSmartGunOperatorPMCOne
   id: RMCLockerSmartGunOperatorPMCTwo
-  name: squad two support gunner locker
+  name: 第二班支援机枪手储物柜
 
 - type: entity
   parent: RMCLockerSmartGunOperatorOne
   id: RMCLockerHeavyGunnerCLF
-  name: heavy gunner locker
+  name: 重型机枪手储物柜
   components:
   - type: EntityTableContainerFill
     containers:
@@ -528,7 +527,7 @@
 - type: entity
   parent: RMCCabinet
   id: RMCCabinetTSEPAInspector
-  name: inspector's cabinet
+  name: 检查员的柜子
   components:
   - type: AccessReader
     access: [["RMCAccessTSEPAInspector"]]
@@ -536,7 +535,7 @@
 - type: entity
   parent: CMLockerBase
   id: RMCLockerTSEPASeniorConstable
-  name: senior constable's locker
+  name: 高级警员的储物柜
   components:
   - type: AccessReader
     access: [["RMCAccessTSEPABrig"]]
@@ -548,7 +547,7 @@
 - type: entity
   parent: CMLockerPolice
   id: RMCLockerTSEPA
-  name: constable's locker
+  name: 警官的储物柜
   components:
   - type: AccessReader
     access: [["RMCAccessTSEPA"]]
@@ -561,7 +560,7 @@
 - type: entity
   parent: RMCLockerSquadLeader
   id: RMCLockerSquadLeaderSPP
-  name: section lead locker
+  name: 部门主管储物柜
   components:
   - type: EntityTableContainerFill
     containers:
@@ -571,7 +570,7 @@
 - type: entity
   parent: RMCLockerSmartGunOperatorOne
   id: RMCLockerSmartGunOperatorSPPOne
-  name: squad one heavy gunner locker
+  name: 一号小队重机枪手储物柜
   components:
   - type: EntityTableContainerFill
     containers:
@@ -581,4 +580,4 @@
 - type: entity
   parent: RMCLockerSmartGunOperatorSPPOne
   id: RMCLockerSmartGunOperatorSPPTwo
-  name: squad two heavy gunner locker
+  name: 第二小队重机枪手储物柜

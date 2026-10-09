@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCBaseRockDestructible
   id: RMCBoulderLarge
-  name: boulder
-  description: A large rock. It's not cooking anything.
+  name: 巨石
+  description: 一块巨石。它没有在煮任何东西。
   placement:
     mode: SnapgridBorder
   components:
@@ -14,12 +14,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: RMCBoulderLarge

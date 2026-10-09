@@ -3,31 +3,31 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackM34IncineratorEmpty
-  name: M240 Incinerator rack
+  name: M240焚化器枪架
   suffix: M240 Incinerator, Empty
-  description: AEGIS-produced gun rack for storage of long guns. While initial model was supposed to be extremely modifiable, USMC commissioned racks with fixed slots which only fit M240 Incinerator Units. Some say they were cheaper, and some say the main reason was marine's ability to easily break anything more complex than a tungsten ball.
+  description: AEGIS 生产的长枪存放枪架。虽然初始型号原本应具备极强的可改装性，但美国海军陆战队委托制造了带固定插槽的枪架，这些插槽只能适配 M240 焚化器单元。有人说这些枪架更便宜，也有人说主要原因是海军陆战队员能轻易弄坏任何比钨球更复杂的东西。
   components:
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
       item_2: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/m34_rack.rsi
   - type: ItemSlots
     slots:
       item_1:
-        name: M240 Incinerator
+        name: M240 焚化器
         whitelist:
           tags:
           - RMCWeaponIncineratorM34
       item_2:
-        name: M240 Incinerator
+        name: M240焚化器
         whitelist:
           tags:
           - RMCWeaponIncineratorM34
@@ -61,16 +61,16 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackMAR50WallEmpty
-  name: MAR-50 wooden rack
+  name: MAR-50木制枪架
   suffix: MAR-50, Empty
-  description: A wooden rack, mounted onto a wall with exposed notches to rest a MAR-50 on.
+  description: 一个木制枪架，安装在墙上，带有外露的凹槽，用来放置 MAR-50。
   components:
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/mar50_wall_rack.rsi
   - type: ItemSlots
@@ -103,22 +103,22 @@
 - type: entity
   parent: RMCGunRackBase
   id: RMCGunRackM357WallEmpty
-  name: M357 Rival wooden rack
+  name: M357 Rival 木制枪架
   suffix: M357 Rival, Empty
-  description: A wooden rack, mounted onto a wall with exposed notches to rest a M357 Rival on.
+  description: 一个安装在墙上的木制枪架，带有外露的凹槽，用于搁放 M357 Rival。
   components:
   - type: ContainerContainer
     containers:
       item_1: !type:ContainerSlot
-        showEnts: False
-        occludes: True
-        ent: null
+        showEnts: false
+        occludes: true
+        ent:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/GunRacks/m357_wall_rack.rsi
   - type: ItemSlots
     slots:
       item_1:
-        name: M357 Rival
+        name: M357 对手
         whitelist:
           tags:
           - RMCWeaponShotgunM357

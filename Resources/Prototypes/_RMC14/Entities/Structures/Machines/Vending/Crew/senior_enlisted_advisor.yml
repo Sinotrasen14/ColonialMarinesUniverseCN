@@ -1,8 +1,8 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechEquipmentSEA
-  name: ColMarTech SEA equipment rack
-  description: An automated rack hooked up to a colossal storage of Senior Enlisted Advisor standard-issue equipment.
+  name: ColMarTech高级士兵顾问装备架
+  description: 一个自动化装备架，连接着一座存储高级士兵顾问标准配发装备的巨型仓库。
   suffix: SEA
   components:
   - type: AccessReader
@@ -13,31 +13,31 @@
     jobs:
     - CMSeniorEnlistedAdvisor
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMStandard
       entries:
       - id: CMSatchelSecureStandard
       - id: CMBootsBlackFilled
       - id: CMMRE
       - id: RMCStampSEA
-    - name: Gloves
-      choices: { CMGloves: 1 }
+    - name: 手套
+      choices: {CMGloves: 1}
       entries:
       - id: CMHandsBlackMarine
       - id: CMHandsInsulated
       - id: CMHandsBlackInsulated
-    - name: Belt
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltUtilityGeneral
       - id: CMBeltUtilityFilled
-        name: M276 pattern toolbelt rig (Full)
+        name: M276 型工具腰带装具（完整）
       - id: CMBeltMedicBagFilled
-        name: M276 pattern lifesaver bag (Full)
+        name: M276型救生包（完整版）
       - id: CMBeltUtilityCombatFilled
-        name: M276 pattern combat toolbelt rig (Full)
-    - name: Pouches
-      choices: { CMPouches: 2 }
+        name: M276型战斗工具腰带装具（完整）
+    - name: 小袋
+      choices: {CMPouches: 2}
       entries:
       - id: RMCPouchAutoinjectorFill
       - id: RMCPouchGeneralLarge
@@ -47,23 +47,23 @@
       - id: RMCPouchMedkit
       - id: RMCPouchPistol
       - id: RMCPouchSling
-    - name: Helmet
-      choices: { CMHelmet: 1 }
+    - name: 头盔
+      choices: {CMHelmet: 1}
       entries:
       - id: ArmorHelmetM10
-    - name: Armor
-      choices: { CMArmor: 1 }
+    - name: 护甲
+      choices: {CMArmor: 1}
       entries:
       - id: CMArmorM3VLBallistics
       - id: RMCArmorM3LightPadded
       - id: RMCArmorM3MediumVariants
-    - name: Jacket
-      choices: { CMCoat: 1 }
+    - name: 夹克
+      choices: {CMCoat: 1}
       entries:
       - id: RMCCoatService
       - id: RMCCoatAllWeather
-    - name: Eyewear
-      choices: { CMEyewear: 1 }
+    - name: 眼镜
+      choices: {CMEyewear: 1}
       entries:
       - id: RMCWeldingGoggles
       - id: RMCGlassesMedicalHUDGlasses
@@ -71,8 +71,8 @@
       - id: CMGlassesSecurity
       - id: RMCGlassesMarineRpg #Sunglasses Placeholder
       - id: RMCSunglasses
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+    - name: 配件
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
       - id: CMWebbingBlack
@@ -84,38 +84,38 @@
       - id: RMCWebbingBlackSmall
       - id: RMCWebbingDropPouch
       - id: RMCWebbingDropPouchBlack
-    - name: Tools of the Trade
+    - name: 行业工具
       takeAll: RMCSEATrainingTools
       entries:
       - id: RMCCPRDummy
         amount: 5
-    - name: Books
+    - name: 书籍
       takeAll: RMCBook
       entries:
       - id: AU14GuidebookLawMarine
         amount: 10
       - id: AU14GuidebookSOP
         amount: 10
-    - name: Patches
+    - name: 帕奇
       takeAll: RMCPatch
       entries:
       - id: RMCPatchFallingFalcons
       - id: RMCPatchFallingFalconsAlt
-        name: Falling Falcons UN shoulder patch
+        name: 坠落猎鹰联合国肩章
       - id: RMCPatchFallingFalconsLarge
-        name: Falling Falcons large chest patch
+        name: 坠落猎鹰大号胸前徽章
       - id: RMCPatchUNMC
       - id: RMCPatchUnitedNationsSquare
-        name: United Nations flag shoulder patch
+        name: 联合国旗帜肩章
       - id: RMCPatchUnitedNations
-        name: United Nations shoulder patch
+        name: 联合国肩章
       - id: RMCPatchSEA
 
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechGunsSEA
-  name: ColMarTech SEA weapon rack
-  description: An automated rack hooked up to a colossal storage of Senior Enlisted Advisor standard-issue equipment.
+  name: ColMarTech 高级士官顾问武器架
+  description: 一个自动化武器架，连接到庞大的高级士官顾问标准配发装备储备。
   suffix: SEA
   components:
   - type: AccessReader
@@ -126,16 +126,16 @@
     jobs:
     - CMSeniorEnlistedAdvisor
     sections:
-    - name: Personal Primary
-      choices: { CMPrimary: 1 }
+    - name: 个人主要
+      choices: {CMPrimary: 1}
       entries:
       - id: RMCWeaponRifleM54CMK1
-    - name: Personal Secondary
-      choices: { CMSecondary: 1 }
+    - name: 个人中学
+      choices: {CMSecondary: 1}
       entries:
       - id: RMCGunCasePistolM1984
       - id: RMCGunCasePistolM77
-    - name: Ammunition
+    - name: 弹药
       entries:
       - id: CMMagazineRifleM54CMK1
         points: 9
@@ -145,8 +145,8 @@
         points: 5
       - id: CMMagazinePistolM77AP
         points: 5
-    - name: Gun Attachments
-      choices: { CMAttachments: 1 }
+    - name: 枪械配件
+      choices: {CMAttachments: 1}
       entries:
       - id: RMCAttachmentLaserSight
       - id: RMCAttachmentS5RedDotSight

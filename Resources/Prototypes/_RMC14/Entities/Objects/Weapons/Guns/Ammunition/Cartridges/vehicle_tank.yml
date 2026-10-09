@@ -1,7 +1,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: VehicleCartridgeLTBCannon
-  name: cartridge (LTB cannon, HESH)
+  name: 炮弹（LTB火炮，碎甲弹）
   components:
   - type: Sprite
     sprite: CMU14/Structures/vehicles/ammo/vehicles.rsi
@@ -22,7 +22,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: VehicleCartridgeAceAutocannon
-  name: cartridge (ACE autocannon)
+  name: 炮弹（ACE自动炮）
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
@@ -36,7 +36,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: VehicleCartridgeElectrolaser
-  name: Power Bank (Electrolaser)
+  name: 移动电源（电激光器）
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
@@ -50,7 +50,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: VehicleCartridgeDragonFlame
-  name: cartridge (DRGN flame)
+  name: 弹药筒（龙焰）
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
@@ -64,7 +64,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: VehicleCartridgeTankFlamer
-  name: cartridge (tank flamer)
+  name: 弹药筒（坦克喷火器）
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
@@ -78,7 +78,7 @@
 - type: entity
   parent: CMCartridge10x20mmAP
   id: VehicleCartridgeLTAAAP
-  name: cartridge (10x20mm-APC)
+  name: 弹药筒（10x20mm-APC）
   components:
   - type: CartridgeAmmo
     proto: VehicleBulletLTAAAP
@@ -86,8 +86,8 @@
 # Projectiles
 - type: entity
   id: VehicleLTBCannonImpact
-  name: LTB HESH cannon impact
-  categories: [ HideSpawnMenu ]
+  name: LTB碎甲弹火炮命中
+  categories: [HideSpawnMenu]
   components:
   - type: TriggerOnSpawn
   - type: ExplodeOnTrigger
@@ -110,15 +110,15 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCProjectileAceAutocannonFlak
-  name: ACE flak round
-  categories: [ HideSpawnMenu ]
+  name: ACE高射炮弹
+  categories: [HideSpawnMenu]
   components:
   - type: ContainerContainer
     containers:
       cluster-payload: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/bullet_projectiles.rsi
     drawdepth: Effects
@@ -166,8 +166,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCProjectileElectrolaser
-  name: Electrolaser Projectile
-  categories: [ HideSpawnMenu ]
+  name: 电激光射弹
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Structures/Power/Generation/Tesla/energy_miniball.rsi
@@ -207,8 +207,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: VehicleProjectileDragonFlame
-  name: DRGN flame jet
-  categories: [ HideSpawnMenu ]
+  name: 龙焰喷射
+  categories: [HideSpawnMenu]
   components:
   - type: DeleteOnFixedDistanceStop
   - type: TriggerOnCollide
@@ -224,12 +224,12 @@
       shader: unshaded
   - type: Projectile
     deleteOnCollide: true
-    impactEffect: null
+    impactEffect:
     forceSound: true
     damage:
       types:
         Heat: 30
-    soundHit: null
+    soundHit:
   - type: TriggerOnFixedDistanceStop
     delay: 0
   - type: DeleteOnTrigger
@@ -242,8 +242,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         hard: false
         mask:
@@ -253,8 +252,8 @@
 - type: entity
   parent: Bullet10x20mmAP
   id: VehicleBulletLTAAAP
-  name: bullet (10x20mm-APC)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（10x20mm-APC）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -265,8 +264,8 @@
 
 - type: entity
   id: VehicleDragonFlameImpact
-  name: DRGN flame impact
-  categories: [ HideSpawnMenu ]
+  name: 龙焰冲击
+  categories: [HideSpawnMenu]
   components:
   - type: TriggerOnSpawn
   - type: SpawnOnTrigger
@@ -275,13 +274,13 @@
   - type: TileFireOnTrigger
     range: 1
     spawn: RMCTileFireBlue
-    sound: null
+    sound:
 
 - type: entity
   parent: RMCBaseBullet
   id: VehicleProjectileDragonFlameShard
-  name: DRGN flame jet
-  categories: [ HideSpawnMenu ]
+  name: DRGN 火焰喷射
+  categories: [HideSpawnMenu]
   components:
   - type: IgniteOnProjectileHit
   - type: RMCFireProjectile
@@ -293,12 +292,12 @@
       shader: unshaded
   - type: Projectile
     deleteOnCollide: true
-    impactEffect: null
+    impactEffect:
     forceSound: true
     damage:
       types:
         Heat: 30
-    soundHit: null
+    soundHit:
   - type: TriggerOnFixedDistanceStop
     delay: 0
   - type: DeleteOnTrigger
@@ -309,8 +308,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         hard: false
         mask:
@@ -320,8 +318,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: VehicleProjectileTankFlamer
-  name: tank flamer jet
-  categories: [ HideSpawnMenu ]
+  name: 坦克喷火器喷气机
+  categories: [HideSpawnMenu]
   components:
   - type: IgniteOnProjectileHit
   - type: RMCFireProjectile
@@ -349,8 +347,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         hard: false
         mask:
@@ -359,8 +356,8 @@
 
 - type: entity
   id: VehicleTankFlamerImpact
-  name: tank flamer impact
-  categories: [ HideSpawnMenu ]
+  name: 坦克喷火器冲击
+  categories: [HideSpawnMenu]
   components:
   - type: TriggerOnSpawn
   - type: SpawnOnTrigger

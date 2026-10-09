@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseWallXeno
   id: WallXenoResin
-  name: resin wall
-  description: Weird slime solidified into a wall.
+  name: 树脂墙
+  description: 奇怪的黏液凝固成了一堵墙。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/xeno_resin_wall.rsi
@@ -14,8 +14,7 @@
     base: resin
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 900
       behaviors:
       - !type:DoActsBehavior
@@ -52,8 +51,8 @@
 - type: entity
   parent: WallXenoResinThick
   id: WallXenoResinImpenetrable
-  name: impenetrable resin wall
-  description: Completely invulnerable. It should degrade into a vulnerable state given enough time.
+  name: 不可穿透的树脂墙
+  description: 完全无敌。经过足够时间后，它应该会退化为可受伤的状态。
   suffix: Invincible, 25 minutes
   components:
   - type: InvincibleHiveStructure
@@ -62,8 +61,8 @@
 - type: entity
   parent: DoorXenoResinThick
   id: DoorXenoResinImpenetrable
-  name: impenetrable resin door
-  description: Completely invulnerable. It should degrade into a vulnerable state given enough time.
+  name: 坚不可摧的树脂门
+  description: 完全不可摧毁。经过足够时间后，它应该会退化为可被破坏的状态。
   suffix: Invincible, 25 minutes
   components:
   - type: InvincibleHiveStructure
@@ -72,17 +71,16 @@
 
 - type: entity
   id: RMCBlockerMarine
-  name: marine blocker
+  name: 海洋阻断剂
   suffix: DO NOT MAP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Physics
     bodyType: Static
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49" # don't want this colliding with walls or they won't close
         density: 100
         mask:
@@ -92,8 +90,8 @@
 - type: entity
   parent: WallXenoResin
   id: WallXenoResinThick
-  name: thick resin wall
-  description: Weird slime solidified into a thick wall.
+  name: 厚树脂墙
+  description: 奇怪的黏液凝固成了一堵厚墙。
   components:
   - type: VehicleReinforcedObstacle
   - type: Sprite
@@ -106,8 +104,7 @@
     base: thickresin
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1350
       behaviors:
       - !type:DoActsBehavior
@@ -134,18 +131,17 @@
     plasma: 170
     scalingCost: true
   - type: XenoStructureUpgradeable
-    to: null
+    to:
 
 - type: entity
   parent: CMBaseWallXeno
   id: BaseMembraneXeno
-  name: resin membrane
+  name: 树脂膜
   abstract: true
   components:
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:DoActsBehavior
@@ -157,8 +153,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -178,8 +173,8 @@
 - type: entity
   parent: BaseMembraneXeno
   id: WallXenoMembrane
-  name: resin membrane
-  description: Weird slime translucent enough to let light pass through.
+  name: 树脂膜
+  description: 奇怪的黏液，半透明得足以让光线透过。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/xeno_resin_wall.rsi
@@ -188,8 +183,7 @@
     state: membrane
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:DoActsBehavior
@@ -204,8 +198,8 @@
 - type: entity
   parent: BaseMembraneXeno
   id: WallXenoMembraneThick
-  name: thick resin membrane
-  description: Weird thick slime just translucent enough to let light pass through.
+  name: 厚树脂膜
+  description: 奇怪的浓稠黏液，半透明得刚好能让光线透过。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/xeno_resin_wall.rsi
@@ -214,8 +208,7 @@
     state: thickmembrane
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 600
       behaviors:
       - !type:DoActsBehavior
@@ -234,13 +227,12 @@
 - type: entity
   parent: WallXenoResin
   id: WallXenoResinWeak
-  name: weak resin wall
-  description: Weird slime solidified into a wall. It already looks on the verge of collapsing...
+  name: 脆弱的树脂墙
+  description: 奇怪的黏液凝固成了一堵墙。它看起来已经摇摇欲坠……
   components:
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100 # very weak
       behaviors:
       - !type:DoActsBehavior
@@ -248,13 +240,13 @@
   - type: TimedDespawn
     lifetime: 5.0
   - type: XenoStructureUpgradeable
-    to: null
+    to:
 
 - type: entity
   parent: WallXenoResin
   id: WallXenoResinWeedbound
-  name: weedbound resin wall
-  description: Weird slime solidified into a wall, bound to weeds.
+  name: 杂草缠绕的树脂墙
+  description: 奇怪的黏液凝固成墙，被杂草缠绕。
   components:
   - type: GuideHelp
     guides:
@@ -275,8 +267,8 @@
 - type: entity
   parent: WallXenoResinThick
   id: WallXenoResinThickWeedbound
-  name: thick weedbound resin wall
-  description: Weird slime solidified into a thick wall, bound to weeds.
+  name: 厚实的缠满杂草的树脂墙
+  description: 奇怪的黏液凝固成一道厚墙，上面缠满了杂草。
   components:
   - type: GuideHelp
     guides:
@@ -296,8 +288,8 @@
   abstract: true
   parent: WallXenoResin
   id: BaseWallXenoResinReflective
-  name: reflective resin wall
-  description: Weird hardened slime solidified into a fine, smooth wall.
+  name: 反光树脂墙
+  description: 奇怪的硬化黏液凝固成了一面细腻光滑的墙。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/bone_resin.rsi
@@ -309,8 +301,7 @@
     base: bone_resin
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:DoActsBehavior
@@ -323,7 +314,7 @@
     plasma: 145
     scalingCost: true
   - type: XenoStructureUpgradeable
-    to: null
+    to:
   - type: RMCReflective
   - type: ExplosionRandomResistance
     min: 0.3
@@ -340,16 +331,15 @@
 - type: entity
   parent: WallXenoResinReflective
   id: WallXenoResinReflectiveUnstable
-  name: weakened reflective wall
-  description: Weird slime with strange hardened fragments solidified into a wall. It looks like it last for moment before it will collapse.
+  name: 弱化的反射墙
+  description: 奇怪的史莱姆带着奇特的硬化碎片凝固成了一堵墙。看起来它只能维持片刻，随后就会崩塌。
   components:
   - type: TimedDespawn
     lifetime: 13.0
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]

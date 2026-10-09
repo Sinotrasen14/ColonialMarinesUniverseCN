@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: MarkerBase
   id: RMCDropshipDoorBlocker
-  name: dropship door blocker
-  description: Blocks barricades from being pulled into the dropship.
+  name: 运输船舱门阻挡器
+  description: 阻止路障被拉入运输船。
   components:
   - type: Transform
     anchored: true
@@ -11,8 +11,7 @@
   - type: Fixtures
     fixtures:
       dropship:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 100
         layer:
@@ -21,8 +20,8 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: RMCUtilityAttachmentPoint
-  name: utility attach point
-  description: An attachment point for utility systems
+  name: 公用设施连接点
+  description: 公用设施系统的连接点
   components:
   - type: GuideHelp
     guides:
@@ -31,9 +30,9 @@
     sprite: _RMC14/Structures/Machines/dropship_attachment_points.rsi
     layers:
     - state: "equip_base"
-      map: [ "enum.DropshipPointVisualsLayers.AttachedUtility"]
+      map: ["enum.DropshipPointVisualsLayers.AttachedUtility"]
     - state: "equip_base"
-      map: [ "enum.DropshipPointVisualsLayers.AttachmentBase"]
+      map: ["enum.DropshipPointVisualsLayers.AttachmentBase"]
   - type: Icon
     sprite: _RMC14/Structures/Machines/dropship_attachment_points.rsi
     state: "equip_base"
@@ -53,8 +52,8 @@
 - type: entity
   parent: RMCUtilityAttachmentPoint
   id: CMUGunshipHardpointAttachmentPoint
-  name: hardpoint attachment point
-  description: A restricted attachment point for crew-served gunship hardpoint systems.
+  name: 挂点连接点
+  description: 一种用于需多人操作的炮艇挂载点系统的受限连接点。
   components:
   - type: GunshipHardpointAttachmentPoint
   - type: Tag
@@ -64,8 +63,8 @@
 - type: entity
   parent: RMCUtilityAttachmentPoint
   id: CMUGunshipUtilityAttachmentPoint
-  name: gunship utility attachment point
-  description: A restricted attachment point for gunship utility systems.
+  name: 炮艇通用系统挂载点
+  description: 用于炮艇通用系统的受限挂载点。
   components:
   - type: GunshipUtilityAttachmentPoint
   - type: Tag
@@ -75,8 +74,8 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: RMCEngineAttachmentPoint
-  name: engine system attach point
-  description: A place where heavy equipment can be installed with a powerloader.
+  name: 引擎系统安装点
+  description: 一个可以使用动力装载机安装重型设备的地方。
   components:
   - type: GuideHelp
     guides:
@@ -87,11 +86,11 @@
     sprite: _RMC14/Objects/dropship_attachments.rsi
     layers:
     - state: "fuel_base"
-      map: [ "enum.DropshipPointVisualsLayers.AttachedUtility"]
+      map: ["enum.DropshipPointVisualsLayers.AttachedUtility"]
       rotation: 180
       visible: false
     - state: "fuel_base"
-      map: [ "enum.DropshipPointVisualsLayers.AttachmentBase"]
+      map: ["enum.DropshipPointVisualsLayers.AttachmentBase"]
   - type: Icon
     sprite: _RMC14/Objects/dropship_attachments.rsi
     state: "fuel_base"
@@ -115,9 +114,9 @@
   abstract: true
   parent: CMBaseStructureCorrodible
   id: RMCElectronicSystemAttachPoint
-  categories: [ HideSpawnMenu ]
-  name: electronic system attach point
-  description: A place where heavy equipment can be installed with a powerloader.
+  categories: [HideSpawnMenu]
+  name: 电子系统挂载点
+  description: 可使用动力装载机安装重型设备的地点。
   components:
   - type: InteractionOutline
   - type: Clickable

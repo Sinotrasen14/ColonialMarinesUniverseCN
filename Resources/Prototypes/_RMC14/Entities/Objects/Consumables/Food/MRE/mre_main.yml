@@ -1,9 +1,9 @@
-﻿# Components
+# Components
 - type: entity
   abstract: true
   parent: CMMREComponentBase
   id: CMMREMainComponentBase
-  description: An MRE entree component. Contains the main course for nutrients.
+  description: MRE 主菜组件。包含提供营养的主菜。
   components:
   - type: Sprite
     state: entree
@@ -12,7 +12,7 @@
   abstract: true
   parent: CMMREMainComponentBase
   id: RMCMREMainComponentWeya
-  description: An MRE entree component. Contains the main course for nutrients.
+  description: MRE主菜组件。包含提供营养的主菜。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/mre_weya.rsi
@@ -21,8 +21,8 @@
 - type: entity
   parent: CMMREMainComponentBase
   id: CMMREComponentBonelessPorkRibs
-  name: MRE component (boneless pork ribs)
-  description: An MRE entree component. Contains the main course for nutrients. This one is boneless pork ribs.
+  name: MRE组件（无骨猪肋排）
+  description: 一个MRE主菜组件。包含提供营养的主菜。这一款是无骨猪肋排。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -31,14 +31,14 @@
 - type: entity
   parent: [RMCMREMainComponentWeya, CMMREComponentBonelessPorkRibs]
   id: RMCMREComponentBonelessPorkRibsWeya
-  name: MRE component (boneless pork ribs)
-  description: An MRE entree component. Contains the main course for nutrients. This one is boneless pork ribs.
+  name: MRE 组件（无骨猪排）
+  description: MRE 主菜组件。包含提供营养的主菜。这一份是无骨猪排。
 
 - type: entity
   parent: CMMREMainComponentBase
   id: CMMREComponentGrilledChicken
-  name: MRE component (grilled chicken)
-  description: An MRE entree component. Contains the main course for nutrients. This one is grilled chicken.
+  name: MRE 组件（烤鸡）
+  description: 一份 MRE 主菜组件。包含提供营养的主菜。这个是烤鸡。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -47,14 +47,14 @@
 - type: entity
   parent: [RMCMREMainComponentWeya, CMMREComponentGrilledChicken]
   id: RMCMREComponentGrilledChickenWeya
-  name: MRE component (grilled chicken)
-  description: An MRE entree component. Contains the main course for nutrients. This one is grilled chicken.
+  name: MRE 组件（烤鸡）
+  description: MRE 主菜组件。包含提供营养的主菜。这个是烤鸡。
 
 - type: entity
   parent: CMMREMainComponentBase
   id: CMMREComponentPizzaSquare
-  name: MRE component (pizza square)
-  description: An MRE entree component. Contains the main course for nutrients. This one is a pizza square.
+  name: MRE组件（方形披萨）
+  description: 一个MRE主菜组件。包含提供营养的主菜。这个是方形披萨。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -63,8 +63,8 @@
 - type: entity
   parent: CMMREMainComponentBase
   id: CMMREComponentSpaghettiChunks
-  name: MRE component (spaghetti chunks)
-  description: An MRE entree component. Contains the main course for nutrients. This one is spaghetti chunks.
+  name: MRE 组件（意大利面块）
+  description: 一份 MRE 主菜组件。包含提供营养的主菜。这一份是意大利面块。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -73,14 +73,14 @@
 - type: entity
   parent: [RMCMREMainComponentWeya, CMMREComponentSpaghettiChunks]
   id: RMCMREComponentSpaghettiChunksWeya
-  name: MRE component (spaghetti chunks)
-  description: An MRE entree component. Contains the main course for nutrients. This one is spaghetti chunks.
+  name: MRE组件（意大利面块）
+  description: 一个MRE主菜组件。包含提供营养的主菜。这个是意大利面块。
 
 - type: entity
   parent: CMMREMainComponentBase
   id: CMMREComponentChickenTender
-  name: MRE component (chicken tender)
-  description: An MRE entree component. Contains the main course for nutrients. This one is a chicken tender.
+  name: MRE 组件（鸡柳）
+  description: 一份MRE主菜组件。包含用于提供营养的主菜。这个是鸡柳。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -89,8 +89,8 @@
 - type: entity
   parent: [RMCMREMainComponentWeya, CMMREComponentChickenTender]
   id: RMCMREComponentChickenTenderWeya
-  name: MRE component (chicken tender)
-  description: An MRE entree component. Contains the main course for nutrients. This one is a chicken tender.
+  name: MRE 组件（鸡柳）
+  description: 一份MRE主菜组件。包含提供营养的主菜。这一份是鸡柳。
 
 # Foods
 - type: entity
@@ -105,10 +105,10 @@
     solution:
       maxVol: 20
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 14
-        - ReagentId: TableSalt
-          Quantity: 6
+      - ReagentId: Nutriment
+        Quantity: 14
+      - ReagentId: TableSalt
+        Quantity: 6
   - type: Extractable
     grindableSolutionName: food
   - type: InjectableSolution
@@ -117,8 +117,8 @@
 - type: entity
   parent: CMMREFoodMain
   id: CMMREFoodBonelessPorkRibs
-  name: boneless pork ribs
-  description: The contents of a Marine Standard issue MRE. This one is boneless pork ribs.
+  name: 无骨猪肋排
+  description: 美国海军陆战队标准配发即食口粮的内容。这一份是无骨猪肋排。
   components:
   - type: Sprite
     state: boneless_pork_ribs
@@ -129,8 +129,8 @@
 - type: entity
   parent: CMMREFoodMain
   id: CMMREFoodGrilledChicken
-  name: grilled chicken
-  description: The contents of a Marine Standard issue MRE. This one is grilled chicken.
+  name: 烤鸡
+  description: 海军陆战队标准配发单兵即食口粮的内容物。这份是烤鸡。
   components:
   - type: Sprite
     state: grilled_chicken
@@ -141,8 +141,8 @@
 - type: entity
   parent: CMMREFoodMain
   id: CMMREFoodPizzaSquare
-  name: pizza square
-  description: The contents of a Marine Standard issue MRE. This one is a pizza square.
+  name: 方形披萨
+  description: 海军陆战队标准配发即食口粮的内容。这一份是方形披萨。
   components:
   - type: Sprite
     state: pizza_square
@@ -153,8 +153,8 @@
 - type: entity
   parent: CMMREFoodMain
   id: CMMREFoodSpaghettiChunks
-  name: spaghetti chunks
-  description: The contents of a Marine Standard issue MRE. This one is spaghetti chunks.
+  name: 意大利面块
+  description: 海军陆战队标准配发即食口粮的内容物。这份是意大利面块。
   components:
   - type: Sprite
     state: spaghetti_chunks
@@ -165,8 +165,8 @@
 - type: entity
   parent: CMMREFoodMain
   id: CMMREFoodChickenTender
-  name: chicken tender
-  description: The contents of a Marine Standard issue MRE. This one is a chicken tender.
+  name: 鸡柳
+  description: 美国海军陆战队标准配发单兵口粮的内容。这一份是鸡柳。
   components:
   - type: Sprite
     state: chicken_tender
@@ -190,16 +190,16 @@
     solution:
       maxVol: 30
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 26
-        - ReagentId: TableSalt
-          Quantity: 4
+      - ReagentId: Nutriment
+        Quantity: 26
+      - ReagentId: TableSalt
+        Quantity: 4
 
 - type: entity
   parent: RMCMREFoodCLF
   id: RMCMREFoodMeatSlab
-  name: wrapped meat slab
-  description: A wrapped, rare slab of some meat that has been quickly grilled.
+  name: 包裹肉排
+  description: 一块包裹着、快速烤过的半熟肉排。
   components:
   - type: Sprite
     state: open_meat
@@ -210,8 +210,8 @@
 - type: entity
   parent: RMCMREFoodCLF
   id: RMCMREFoodMeatSlabCheese
-  name: wrapped cheesy meat slab
-  description: A wrapped, rare slab of some meat that has been quickly grilled and covered in melted cheese. Wonderfully greasy.
+  name: 奶酪肉排卷
+  description: 一卷包好的半熟肉排，快速烤过后覆满融化的奶酪。油润得妙不可言。
   components:
   - type: Sprite
     state: open_meat_cheese
@@ -223,8 +223,8 @@
 - type: entity
   parent: RMCMREFoodCLF
   id: RMCMREFoodBread
-  name: wrapped sourdough bread
-  description: A wrapped, small loaf of dry sourdough bread.
+  name: 包装好的酸面包
+  description: 一条包装好的小干酸面包。
   components:
   - type: Sprite
     state: open_bread
@@ -235,8 +235,8 @@
 - type: entity
   parent: RMCMREFoodMeatSlabCheese
   id: RMCMREFoodMargaritaPizza
-  name: wrapped margarita pizza
-  description: A wrapped, small margarita pizza.
+  name: 包装好的玛格丽塔披萨
+  description: 一个包装好的小玛格丽塔披萨。
   components:
   - type: Sprite
     state: open_pizza
@@ -246,9 +246,9 @@
 - type: entity
   parent: CMMREFoodMain
   id: RMCMRESPPSurvivalRationTypeA
-  name: survival ration
+  name: 生存口粮
   suffix: Type A
-  description: A compact chunk of freeze-dried meat or fish featuring nutrient additives in the form of a dense powder. Having little flavoring or colouration as a result of its preparation for long term storage, the appeal of this item is purely in its capacity to provide sustenance.
+  description: 一块紧实的冻干肉或冻干鱼，含有以浓缩粉末形式添加的营养剂。由于为长期储存而制备，它几乎没有调味或色泽，这种物品的吸引力纯粹在于其提供营养的能力。
   components:
   - type: Item
     size: Tiny
@@ -258,9 +258,9 @@
 - type: entity
   parent: CMMREFoodMain
   id: RMCMRESPPSurvivalRationTypeB
-  name: survival ration
+  name: 生存口粮
   suffix: Type B
-  description: A compact ball of dough-like rice or oats featuring nutrient additives in the form of a dense powder. Having little flavoring or colouration as a result of its preparation for long term storage, the appeal of this item is purely in its capacity to provide sustenance.
+  description: 一团紧实的、类似面团的米或燕麦球，含有以致密粉末形式添加的营养剂。由于为长期储存而制作，它几乎没有调味或着色，其吸引力纯粹在于能够提供维持生存的养分。
   components:
   - type: Item
     size: Tiny
@@ -271,24 +271,24 @@
 - type: flavor
   id: BonelessPorkRibs
   flavorType: Complex
-  description: like boneless pork ribs
+  description: 类似无骨猪肋排
 
 - type: flavor
   id: GrilledChicken
   flavorType: Complex
-  description: like grilled chicken
+  description: 喜欢烤鸡
 
 - type: flavor
   id: PizzaSquare
   flavorType: Complex
-  description: like pizza
+  description: 喜欢披萨
 
 - type: flavor
   id: SpaghettiChunks
   flavorType: Complex
-  description: like spaghetti
+  description: 像意大利面
 
 - type: flavor
   id: ChickenTender
   flavorType: Complex
-  description: like chicken
+  description: 像鸡肉

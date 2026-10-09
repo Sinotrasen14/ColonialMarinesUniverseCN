@@ -1,8 +1,8 @@
 - type: entity
   id: VehicleAPCBase # CMU14
   abstract: true
-  name: armored personnel carrier
-  description: A rugged armored personnel carrier outfitted for battlefield support.
+  name: 装甲运兵车
+  description: 一辆坚固的装甲运兵车，装备用于战场支援。
   components:
   - type: RMCNightVisionVisible # CMU14
     priority: -2
@@ -65,8 +65,7 @@
   - type: Fixtures
     fixtures:
       world:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -1,-1.7,1,1.7
         density: 1200
         mask:
@@ -77,8 +76,7 @@
         layer:
         - LargeMobLayer
       mob:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -1,-1.7,1,1.7
         density: 1200
         mask:
@@ -99,21 +97,21 @@
     drawdepth: Mobs
     sprite: _RMC14/Structures/Vehicles/apc.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: apc_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ primary ]
+    - map: [primary]
       state: PRIMARY
       visible: false
-    - map: [ secondary ]
+    - map: [secondary]
       state: SECONDARY
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: SUPPORT
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: SpriteMovement
     movementLayers:
@@ -216,29 +214,29 @@
   - type: ContainerContainer
     containers:
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       port-gun-north: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       port-gun-south: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       primary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 1000
   - type: VehicleWheelSlots
@@ -259,36 +257,36 @@
 - type: entity
   parent: VehicleAPCBase
   id: VehicleAPCMed
-  name: armored personnel carrier (medical)
-  description: A medical-configured APC outfitted with triage markings.
+  name: 装甲运兵车（医疗）
+  description: 一辆配备检伤分类标记的医疗配置装甲运兵车。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       port-gun-north: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       port-gun-south: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       primary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 1000
   - type: VehicleWheelSlots
@@ -301,21 +299,21 @@
     energy: 3
   - type: Sprite
     layers:
-    - map: [ base ]
+    - map: [base]
       state: apc_base_med
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ primary ]
+    - map: [primary]
       state: PRIMARY
       visible: false
-    - map: [ secondary ]
+    - map: [secondary]
       state: SECONDARY
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: SUPPORT
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: VehicleEnter
     interiorPath: /Maps/_RMC14/Vehicles/apc_medical_interior.yml
@@ -343,36 +341,36 @@
 - type: entity
   parent: VehicleAPCBase
   id: VehicleAPCCommand
-  name: armored personnel carrier (command)
-  description: A command-configured APC bristling with sensors and comms gear.
+  name: 装甲运兵车（指挥型）
+  description: 一辆指挥型装甲运兵车，密布传感器和通信设备。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       port-gun-north: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       port-gun-south: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       primary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 1000
   - type: VehicleWheelSlots
@@ -385,21 +383,21 @@
     energy: 3
   - type: Sprite
     layers:
-    - map: [ base ]
+    - map: [base]
       state: apc_base_com
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ primary ]
+    - map: [primary]
       state: PRIMARY
       visible: false
-    - map: [ secondary ]
+    - map: [secondary]
       state: SECONDARY
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: SUPPORT
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: VehicleEnter
     interiorPath: /Maps/_RMC14/Vehicles/apc_command_interior.yml
@@ -427,36 +425,36 @@
 - type: entity
   parent: VehicleAPCBase
   id: VehicleSPPAPC
-  name: UPP armored personnel carrier
-  description: An armored personnel carrier configured for UPP forces.
+  name: UPP装甲运兵车
+  description: 为UPP部队配置的装甲运兵车。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       port-gun-north: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       port-gun-south: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       primary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 1000
   - type: VehicleWheelSlots
@@ -484,26 +482,26 @@
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/sppapc.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: sppapc_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ primary ]
+    - map: [primary]
       state: PRIMARY
       visible: false
-    - map: [ secondary ]
+    - map: [secondary]
       state: SECONDARIES
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: SUPPORT
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: ItemSlots
     slots:
       port-gun-north:
-        startingItem: null
+        startingItem:
         insertOnInteract: false
         ejectOnInteract: false
         ejectOnUse: false
@@ -513,7 +511,7 @@
           components:
           - VehiclePortGun
       port-gun-south:
-        startingItem: null
+        startingItem:
         insertOnInteract: false
         ejectOnInteract: false
         ejectOnUse: false
@@ -582,36 +580,36 @@
 - type: entity
   parent: VehicleAPCBase
   id: VehicleAPCPMC
-  name: Weyland-Yutani armored personnel carrier
-  description: An armored personnel carrier operated by Weyland-Yutani's private military contractors.
+  name: 维兰德-汤谷装甲运兵车
+  description: 由维兰德-汤谷的私人军事承包商运营的装甲运兵车。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       port-gun-north: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       port-gun-south: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       primary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       secondary: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       support: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 1000
   - type: VehicleWheelSlots
@@ -625,20 +623,20 @@
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/apc.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       sprite: _RMC14/Structures/Vehicles/apc_pmc.rsi
       state: hull_wy
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ primary ]
+    - map: [primary]
       state: PRIMARY
       visible: false
-    - map: [ secondary ]
+    - map: [secondary]
       state: SECONDARY
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: SUPPORT
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1

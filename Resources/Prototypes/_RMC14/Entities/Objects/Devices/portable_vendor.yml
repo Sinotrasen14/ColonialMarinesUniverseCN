@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: RMCPortableVendor
-  name: automated storage briefcase
-  description: A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items.
+  name: 自动化存储公文包
+  description: 一个手提箱大小的自动化存储与检索系统。旨在高效存储并选择性地分发小件物品。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/Briefcases/secure.rsi
@@ -24,14 +24,14 @@
 - type: entity
   parent: RMCPortableVendor
   id: RMCPortableVendorCorporate
-  name: Weyland-Yutani automated storage briefcase
-  description: A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items. This one has the Weyland-Yutani logo stamped on its side.
+  name: 维兰德-汤谷自动存储公文包
+  description: 一个手提箱大小的自动存储与检索系统。设计用于高效存放并选择性分发小件物品。这一套的侧面印有维兰德-汤谷的标志。
   components:
   - type: CMAutomatedVendor
     jobs:
     - AU14JobCivilianCorporateLiaison
     sections:
-    - name: Incentives
+    - name: 激励措施
       entries:
       #- id: /obj/item/handheld_distress_beacon/bodyguard
       #  points: 50
@@ -47,9 +47,9 @@
       #- id: /obj/item/trash/ceramic_plate
       #  points: 10
       - id: RMCSpaceCash1000 # TODO RMC14 counterfiet
-        name: $1000 USD, unmarked bills
+        name: 1000美元，未标记的钞票
         points: 20
-    - name: Smokables
+    - name: 可吸食物品
       entries:
       - id: AU14CigarettePackBalajj
         points: 5
@@ -67,7 +67,7 @@
         points: 5
       - id: RMCZippoGold
         points: 10
-    - name: Drinkables
+    - name: 饮品
       entries:
       - id: RMCDrinkAlcoholSake
         points: 5
@@ -79,7 +79,7 @@
         points: 5
       - id: RMCDrinkGlass
         points: 1
-    - name: Stationary
+    - name: 静止的
       entries:
       - id: CMPenClicky
         points: 1
@@ -89,18 +89,18 @@
       #  points: 1
       - id: CMClipboard
         points: 1
-    - name: Misc
+    - name: 杂项
       entries:
       - id: RMCHollowCane
-        name: hollow cane
+        name: 空心手杖
         points: 10
-    - name: Weapons & Ammo
+    - name: 武器与弹药
       entries:
       - id: RMCWeaponPistolPK7
         points: 30
       - id: RMCMagazinePistolPK7
         points: 15
-    - name: Radio keys
+    - name: 无线电按键
       entries:
       - id: CMEncryptionKeyColony
         points: 5

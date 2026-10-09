@@ -9,8 +9,8 @@
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/RocketLaunchers/m5spec.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     quickEquip: true
     slots:
@@ -23,7 +23,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - RMCRocketAmmo84mm
+      - RMCRocketAmmo84mm
     capacity: 1
     cycleable: true
     mayTransfer: false
@@ -64,16 +64,16 @@
 
 - type: entity
   parent: [RMCBaseWeaponLauncher, RMCBaseAttachableHolder]
-  name: M7-SMAW
+  name: M7肩射多用途突击武器
   id: RMCWeaponLauncherM5ATL
-  description: "The M7 Shoulder Launched Multipurpose Assault Weapon is a powerful anti-armor infantry weapon. Used to take out light-tanks and enemy structures, it is a dangerous weapon with a variety of combat uses, depending on the loaded ammunition, and is capable of firing both shells and rocket-propelled grenades."
+  description: "M7肩射多用途突击武器是一种威力强大的反装甲步兵武器。它用于摧毁轻型坦克和敌方建筑，是一种具有多种战斗用途的危险武器，具体取决于装填的弹药，并且能够发射炮弹和火箭推进榴弹。"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/RocketLaunchers/m5atl/m5atl_inhands.rsi
     layers:
-      - state: base
-        sprite: _RMC14/Objects/Weapons/Guns/RocketLaunchers/m5atl/m5atl_icon.rsi
-        map: ["enum.GunVisualLayers.Base"]
+    - state: base
+      sprite: _RMC14/Objects/Weapons/Guns/RocketLaunchers/m5atl/m5atl_icon.rsi
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/RocketLaunchers/m5atl/m5atl_inhands.rsi
   - type: Gun
@@ -102,18 +102,18 @@
   parent: [RMCBaseWeaponLauncher, RMCBaseAttachableHolder]
   name: EMBLR
   id: CMUWeaponLauncherEMBLR
-  description: "A German designed MANPAD system designed to replace the aging Russian-made 'spear' missile launchers. It offers reasonable air defence capabilities at the platoon-level for members of the UPPAC. This ones electronic systems seems to be taken off, rendering it as a 'Anti-Tank Weapon'"
+  description: "一种德国设计的便携式防空导弹系统，旨在取代老旧的俄制“长矛”导弹发射器。它在排级层面为UPPAC成员提供了尚可的防空能力。该装备的电子系统似乎已被拆除，使其变成一种“反坦克武器”。"
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/UPP/emblr/emblr_inhands.rsi
     layers:
-      - state: base
-        sprite: CMU14/Weapons/Guns/UPP/emblr/emblr_icon.rsi
-        map: ["enum.GunVisualLayers.Base"]
+    - state: base
+      sprite: CMU14/Weapons/Guns/UPP/emblr/emblr_icon.rsi
+      map: ["enum.GunVisualLayers.Base"]
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - CMURocketAmmo70mm
+      - CMURocketAmmo70mm
     capacity: 1
     cycleable: true
     mayTransfer: false
@@ -147,9 +147,9 @@
 # 84mm HE
 - type: entity
   id: RMCRocket84mm
-  name: 84mm high-explosive rocket
+  name: 84毫米高爆火箭弹
   parent: BaseItem
-  description: A rocket tube compatible with the M5-ATL loaded with a HE warhead. Deals high damage to soft targets on direct hit and splashes other targets in a 5-meter-wide area. Has decreased effect on heavily armored targets.
+  description: 可与M5-ATL兼容并装有高爆弹头的火箭发射管。直接命中时对软目标造成高额伤害，并在5米宽范围内溅射其他目标。对重装甲目标效果减弱。
   components:
   - type: Tag
     tags:
@@ -173,9 +173,9 @@
 
 - type: entity
   id: CMURocket70mm
-  name: 70mm high-explosive rocket
+  name: 70毫米高爆火箭弹
   parent: BaseItem
-  description: A squat missile canister for the EMBLR surface-to-air weapons system. Unlike it's USCM counterpart, the Goose carries a small but powerful warhead. This one has 'High-Explosive' written on the side.
+  description: 一个用于EMBLR地对空武器系统的矮粗导弹发射筒。与其USCM对应型号不同，“鹅”携带一个小而威力强大的弹头。这一个的侧面写有‘高爆’。
   components:
   - type: Tag
     tags:
@@ -199,9 +199,9 @@
 
 - type: entity
   id: CMUProjectileRocket70mm
-  name: 70mm high-explosive rocket
-  categories: [ HideSpawnMenu ]
-  description: Uh oh.
+  name: 70毫米高爆火箭弹
+  categories: [HideSpawnMenu]
+  description: 哎呀。
   components:
   - type: Physics
     bodyType: Dynamic
@@ -209,8 +209,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.15,0.15,0.15"
           # Bigger than bullets. Rectangle won't work since AABB shapes don't rotate. This should help significantly with explosion consistency.
         hard: false
@@ -241,9 +240,9 @@
 - type: entity
   parent: CMUProjectileRocket70mm
   id: CMUProjectileRocket70mmHE
-  name: 70mm high-explosive rocket
-  categories: [ HideSpawnMenu ]
-  description: Uh oh.
+  name: 70毫米高爆火箭弹
+  categories: [HideSpawnMenu]
+  description: 哎呀。
   components:
   - type: TriggerOnCollide
     # TODO RMC14 Make TriggerOnCollide spawn the explosion on the OtherEntity tile more consistently, so the explosion is centered properly
@@ -272,9 +271,9 @@
 
 - type: entity
   id: RMCBaseProjectileRocket84mm
-  name: 84mm high-explosive rocket
-  categories: [ HideSpawnMenu ]
-  description: Uh oh.
+  name: 84毫米高爆火箭弹
+  categories: [HideSpawnMenu]
+  description: 哎呀。
   components:
   - type: Physics
     bodyType: Dynamic
@@ -282,8 +281,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.15,0.15,0.15"
           # Bigger than bullets. Rectangle won't work since AABB shapes don't rotate. This should help significantly with explosion consistency.
         hard: false
@@ -314,9 +312,9 @@
 - type: entity
   parent: RMCBaseProjectileRocket84mm
   id: RMCProjectileRocket84mm
-  name: 84mm high-explosive rocket
-  categories: [ HideSpawnMenu ]
-  description: Uh oh.
+  name: 84毫米高爆火箭弹
+  categories: [HideSpawnMenu]
+  description: 哎呀。
   components:
   - type: TriggerOnCollide
     # TODO RMC14 Make TriggerOnCollide spawn the explosion on the OtherEntity tile more consistently, so the explosion is centered properly
@@ -347,9 +345,9 @@
 
 - type: entity
   id: RMCRocket84mmAntiArmor
-  name: 84mm anti-armor rocket
+  name: 84毫米反装甲火箭
   parent: RMCRocket84mm
-  description: A rocket tube compatible with the M5-ATL loaded with an AP warhead. Capable of piercing and downing heavily armored targets. Deals very little to no splash damage. Inflicts guaranteed stun to most targets. Has high accuracy within 7 meters.
+  description: 一种与M5-ATL兼容的火箭筒，装有穿甲弹头。能够穿透并击倒重装甲目标。几乎不造成溅射伤害。对大多数目标必定造成眩晕。在7米内具有高精度。
   components:
   - type: CartridgeAmmo
     proto: RMCProjectileRocket84mmAntiArmor
@@ -366,9 +364,9 @@
 
 - type: entity
   id: CMURocket70mmAntiArmor
-  name: 70mm anti-armor rocket
+  name: 70毫米反装甲火箭
   parent: CMURocket70mm
-  description: A squat missile canister for the EMBLR surface-to-air weapons system. Unlike it's USCM counterpart, the Goose carries a small but powerful warhead. This one has 'Armor-Piercing' written on the side.
+  description: 一个用于EMBLR地对空武器系统的粗短导弹发射筒。与美国殖民地海军陆战队的对应型号不同，“鹅”式携带了一枚小巧但威力强大的弹头。这一枚的侧面写有“穿甲”字样。
   components:
   - type: CartridgeAmmo
     proto: RMCProjectileRocket84mmAntiArmor
@@ -385,9 +383,9 @@
 
 - type: entity
   id: CMUProjectileRocket70mmAntiArmor
-  name: 70mm anti-armor rocket
+  name: 70毫米反装甲火箭弹
   parent: CMUProjectileRocket70mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TankCookOffProjectile # CMU14
   - type: Projectile
@@ -427,9 +425,9 @@
 
 - type: entity
   id: RMCProjectileRocket84mmAntiArmor
-  name: 84mm anti-armor rocket
+  name: 84毫米反装甲火箭
   parent: RMCProjectileRocket84mm
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TankCookOffProjectile # CMU14
   - type: Projectile
@@ -468,8 +466,8 @@
 - type: entity
   parent: RMCRocket84mm
   id: RMCRocket84mmWhitePhosphorus
-  name: 84mm white phosphorus rocket
-  description: A rocket tube loaded with a white phosphorus incendiary warhead. Has two damaging factors. On hit disperses X-Variant Napthal (blue flames) in a 4-meter radius circle, ignoring cover, while simultaneously bursting into highly heated shrapnel that ignites targets within slightly bigger area.
+  name: 84毫米白磷火箭弹
+  description: 一种装有白磷燃烧弹头的火箭弹。具有两种伤害方式。命中时会在半径4米的圆形范围内散布X变体纳帕尔（蓝色火焰），无视掩体，同时爆裂成高温破片，点燃略大范围内的目标。
   components:
   - type: CartridgeAmmo
     proto: RMCProjectileRocket84mmWhitePhosphorus
@@ -487,8 +485,8 @@
 - type: entity
   parent: CMURocket70mm
   id: CMURocket70mmWhitePhosphorus
-  name: 70mm white phosphorus rocket
-  description: A squat missile canister for the EMBLR surface-to-air weapons system. Unlike it's USCM counterpart, the Goose carries a small but powerful warhead. This one has 'WP' written on the side.
+  name: 70毫米白磷火箭弹
+  description: 一种用于 EMBLR 地对空武器系统的短粗导弹发射筒。与 USCM 的对应型号不同，“鹅”搭载的弹头虽小但威力强大。这一具的侧面写有“WP”。
   components:
   - type: CartridgeAmmo
     proto: RMCProjectileRocket84mmWhitePhosphorus
@@ -506,8 +504,8 @@
 - type: entity
   parent: RMCBaseProjectileRocket84mm
   id: RMCProjectileRocket84mmWhitePhosphorus
-  name: 84mm white phosphorus rocket
-  categories: [ HideSpawnMenu ]
+  name: 84毫米白磷火箭弹
+  categories: [HideSpawnMenu]
   components:
   - type: TriggerOnCollide
     fixtureID: projectile
@@ -538,7 +536,7 @@
 - type: entity
   parent: Smoke
   id: RMCSmokeWhitePhosphorusNoSpread
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Transform
     anchored: true

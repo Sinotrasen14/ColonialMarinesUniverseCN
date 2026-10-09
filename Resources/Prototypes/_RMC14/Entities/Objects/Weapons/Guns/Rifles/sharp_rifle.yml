@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: RMCWeaponRifleSharp
-  name: P9 SHARP rifle
-  description: An experimental harpoon launcher rifle, produced by AEGIS Armaments. It uses specialized 9X dart magazines and is designed to deny areas with embedded explosive and incendiary payloads.
+  name: P9 SHARP步枪
+  description: 一种由AEGIS军械公司生产的实验性鱼叉发射步枪。它使用专用的9X飞镖弹匣，旨在通过内置的爆炸与燃烧载荷实现区域拒止。
   components:
   - type: GuideHelp
     guides:
@@ -12,7 +12,7 @@
     layers:
     - state: base
       sprite: _RMC14/Objects/Weapons/Guns/Rifles/sharp/sharp_icon.rsi
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/sharp/sharp_inhands.rsi
   - type: SharpGun
@@ -65,7 +65,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
         priority: 2
@@ -82,8 +82,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RMCMagazineRifleSharpExplosive
-  name: 9X-E sticky explosive dart magazine
-  description: A specialized P9 SHARP rifle magazine loaded with sticky explosive darts.
+  name: 9X-E 黏性爆炸飞镖弹匣
+  description: 一种P9 SHARP步枪专用弹匣，装填有黏性爆炸飞镖。
   components:
   - type: Tag
     tags:
@@ -104,8 +104,8 @@
 - type: entity
   parent: RMCMagazineRifleSharpExplosive
   id: RMCMagazineRifleSharpIncendiary
-  name: 9X-T sticky incendiary dart magazine
-  description: A specialized P9 SHARP rifle magazine loaded with sticky incendiary darts.
+  name: 9X-T黏性燃烧飞镖弹匣
+  description: 一种专用于P9 SHARP步枪的弹匣，装填有黏性燃烧飞镖。
   components:
   - type: BallisticAmmoProvider
     proto: RMCCartridgeRifleSharpIncendiary
@@ -117,8 +117,8 @@
 - type: entity
   parent: RMCMagazineRifleSharpExplosive
   id: RMCMagazineRifleSharpFlechette
-  name: 9X-F flechette dart magazine
-  description: A specialized P9 SHARP rifle magazine loaded with flechette darts.
+  name: 9X-F 箭形飞镖弹匣
+  description: 一种装有箭形飞镖的P9 SHARP步枪专用弹匣。
   components:
   - type: BallisticAmmoProvider
     proto: RMCCartridgeRifleSharpFlechette
@@ -130,8 +130,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleSharpExplosive
-  name: cartridge (9X-E sticky explosive dart)
-  description: A 9X-E sticky explosive dart cartridge. Fits in P9 SHARP rifle magazines.
+  name: 弹药筒（9X-E粘性爆炸飞镖）
+  description: 9X-E粘性爆炸飞镖弹药筒。可装入P9 SHARP步枪弹匣。
   components:
   - type: Tag
     tags:
@@ -143,8 +143,8 @@
 - type: entity
   parent: RMCCartridgeRifleSharpExplosive
   id: RMCCartridgeRifleSharpIncendiary
-  name: cartridge (9X-T sticky incendiary dart)
-  description: A 9X-T sticky incendiary dart cartridge. Fits in P9 SHARP rifle magazines.
+  name: 弹药（9X-T黏性燃烧飞镖）
+  description: 一种9X-T黏性燃烧飞镖弹。可装入P9 SHARP步枪弹匣。
   components:
   - type: CartridgeAmmo
     proto: RMCProjectileSharpIncendiary
@@ -152,8 +152,8 @@
 - type: entity
   parent: RMCCartridgeRifleSharpExplosive
   id: RMCCartridgeRifleSharpFlechette
-  name: cartridge (9X-F flechette dart)
-  description: A 9X-F flechette dart cartridge. Fits in P9 SHARP rifle magazines.
+  name: 弹药（9X-F 箭形飞镖弹）
+  description: 一发9X-F箭形飞镖弹。可装入P9 SHARP步枪弹匣。
   components:
   - type: CartridgeAmmo
     proto: RMCProjectileSharpFlechette
@@ -161,8 +161,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCProjectileSharpExplosive
-  name: explosive dart
-  categories: [ HideSpawnMenu ]
+  name: 爆炸飞镖
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/sharp_darts.rsi
@@ -203,8 +203,8 @@
 - type: entity
   parent: RMCProjectileSharpExplosive
   id: RMCProjectileSharpIncendiary
-  name: incendiary dart
-  categories: [ HideSpawnMenu ]
+  name: 燃烧飞镖
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/sharp_darts.rsi
@@ -219,8 +219,8 @@
 - type: entity
   parent: RMCProjectileSharpExplosive
   id: RMCProjectileSharpFlechette
-  name: flechette dart
-  categories: [ HideSpawnMenu ]
+  name: 飞镖
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/sharp_darts.rsi
@@ -258,8 +258,8 @@
 - type: entity
   parent: MarkerBase
   id: RMCSharpExplosiveDirectEffect
-  name: SHARP explosive dart impact
-  categories: [ HideSpawnMenu ]
+  name: SHARP爆炸飞镖撞击
+  categories: [HideSpawnMenu]
   components:
   - type: Explosive
     explosionType: RMC
@@ -280,8 +280,8 @@
 - type: entity
   parent: RMCSharpExplosiveDirectEffect
   id: RMCSharpExplosiveMineEffect1
-  name: SHARP explosive mine detonation level 1
-  categories: [ HideSpawnMenu ]
+  name: SHARP 爆炸地雷引爆等级 1
+  categories: [HideSpawnMenu]
   components:
   - type: Explosive
     explosionType: RMC
@@ -295,8 +295,8 @@
 - type: entity
   parent: RMCSharpExplosiveMineEffect1
   id: RMCSharpExplosiveMineEffect2
-  name: SHARP explosive mine detonation level 2
-  categories: [ HideSpawnMenu ]
+  name: SHARP爆炸地雷引爆等级2
+  categories: [HideSpawnMenu]
   components:
   - type: Explosive
     explosionType: RMC
@@ -308,8 +308,8 @@
 - type: entity
   parent: RMCSharpExplosiveMineEffect1
   id: RMCSharpExplosiveMineEffect3
-  name: SHARP explosive mine detonation level 3
-  categories: [ HideSpawnMenu ]
+  name: SHARP 爆炸地雷引爆等级 3
+  categories: [HideSpawnMenu]
   components:
   - type: Explosive
     explosionType: RMC
@@ -321,8 +321,8 @@
 - type: entity
   parent: RMCSharpExplosiveMineEffect1
   id: RMCSharpExplosiveMineEffect4
-  name: SHARP explosive mine detonation level 4
-  categories: [ HideSpawnMenu ]
+  name: SHARP 爆炸地雷引爆等级 4
+  categories: [HideSpawnMenu]
   components:
   - type: Explosive
     explosionType: RMC
@@ -334,8 +334,8 @@
 - type: entity
   parent: MarkerBase
   id: RMCSharpIncendiaryDirectEffect
-  name: SHARP incendiary dart impact
-  categories: [ HideSpawnMenu ]
+  name: SHARP燃烧飞镖撞击
+  categories: [HideSpawnMenu]
   components:
   - type: TileFireOnTrigger
     spawn: RMCTileFire
@@ -347,14 +347,14 @@
 - type: entity
   parent: RMCSharpIncendiaryDirectEffect
   id: RMCSharpIncendiaryMineEffect1
-  name: SHARP incendiary mine detonation level 1
-  categories: [ HideSpawnMenu ]
+  name: SHARP 燃烧地雷引爆等级 1
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSharpIncendiaryDirectEffect
   id: RMCSharpIncendiaryMineEffect2
-  name: SHARP incendiary mine detonation level 2
-  categories: [ HideSpawnMenu ]
+  name: SHARP燃烧地雷引爆等级2
+  categories: [HideSpawnMenu]
   components:
   - type: TileFireOnTrigger
     spawn: RMCTileFireGreen
@@ -365,8 +365,8 @@
 - type: entity
   parent: RMCSharpIncendiaryDirectEffect
   id: RMCSharpIncendiaryMineEffect3
-  name: SHARP incendiary mine detonation level 3
-  categories: [ HideSpawnMenu ]
+  name: SHARP燃烧地雷引爆等级3
+  categories: [HideSpawnMenu]
   components:
   - type: TileFireOnTrigger
     spawn: RMCTileFireNapalm
@@ -377,8 +377,8 @@
 - type: entity
   parent: RMCSharpIncendiaryDirectEffect
   id: RMCSharpIncendiaryMineEffect4
-  name: SHARP incendiary mine detonation level 4
-  categories: [ HideSpawnMenu ]
+  name: SHARP 燃烧地雷引爆等级4
+  categories: [HideSpawnMenu]
   components:
   - type: TileFireOnTrigger
     spawn: RMCTileFireNapalm
@@ -389,8 +389,8 @@
 - type: entity
   parent: CMPelletShotgunBase
   id: RMCSharpFlechetteShard
-  name: flechette shard
-  categories: [ HideSpawnMenu ]
+  name: 飞镖碎片
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/shotgun_projectiles.rsi
@@ -414,20 +414,19 @@
 - type: entity
   parent: BaseItem
   id: RMCSharpExplosiveDartMine
-  name: SHARP explosive dart mine
-  description: A SHARP explosive dart embedded in the ground. It deploys into a proximity mine shortly after landing and grows more dangerous the longer it is left armed.
+  name: SHARP爆炸飞镖地雷
+  description: 一枚嵌入地面的SHARP爆炸飞镖。着陆后不久会展开成感应地雷，且布防时间越长越危险。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Explosives/Mines/sharp_darts.rsi
     drawdepth: BelowMobs
     layers:
     - state: sharp_explosive_mine
-      map: [ "enum.SharpMineVisuals.Layer" ]
+      map: ["enum.SharpMineVisuals.Layer"]
   - type: Fixtures
     fixtures:
       trigger:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-1.5,-1.5,1.5,1.5"
         hard: false
         layer:
@@ -435,16 +434,14 @@
         mask:
         - MobLayer
       hitbox:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         hard: false
         layer:
         - BulletImpassable
         - XenoProjectileImpassable
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 20
         mask:
@@ -456,19 +453,18 @@
     visuals:
       enum.SharpMineVisuals.State:
         enum.SharpMineVisuals.Layer:
-          Inactive: { state: sharp_explosive_mine }
-          Active1: { state: sharp_explosive_mine_active }
-          Active2: { state: sharp_explosive_mine_active_2 }
-          Active3: { state: sharp_explosive_mine_active_3 }
-          Active4: { state: sharp_explosive_mine_active_4 }
-          Disarmed: { state: sharp_mine_disarmed }
+          Inactive: {state: sharp_explosive_mine}
+          Active1: {state: sharp_explosive_mine_active}
+          Active2: {state: sharp_explosive_mine_active_2}
+          Active3: {state: sharp_explosive_mine_active_3}
+          Active4: {state: sharp_explosive_mine_active_4}
+          Disarmed: {state: sharp_mine_disarmed}
   - type: Damageable
   - type: Injurable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:TriggerBehavior
@@ -506,24 +502,24 @@
 - type: entity
   parent: RMCSharpExplosiveDartMine
   id: RMCSharpIncendiaryDartMine
-  name: SHARP incendiary dart mine
-  description: A SHARP incendiary dart embedded in the ground. It deploys into a proximity mine shortly after landing and grows more dangerous the longer it is left armed.
+  name: SHARP燃烧飞镖地雷
+  description: 一枚嵌入地面的SHARP燃烧飞镖。它在落地后不久展开为感应地雷，并且处于待发状态的时间越长就越危险。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Explosives/Mines/sharp_darts.rsi
     layers:
     - state: sharp_incendiary_mine
-      map: [ "enum.SharpMineVisuals.Layer" ]
+      map: ["enum.SharpMineVisuals.Layer"]
   - type: GenericVisualizer
     visuals:
       enum.SharpMineVisuals.State:
         enum.SharpMineVisuals.Layer:
-          Inactive: { state: sharp_incendiary_mine }
-          Active1: { state: sharp_incendiary_mine_active }
-          Active2: { state: sharp_incendiary_mine_active_2 }
-          Active3: { state: sharp_incendiary_mine_active_3 }
-          Active4: { state: sharp_incendiary_mine_active_4 }
-          Disarmed: { state: sharp_mine_disarmed }
+          Inactive: {state: sharp_incendiary_mine}
+          Active1: {state: sharp_incendiary_mine_active}
+          Active2: {state: sharp_incendiary_mine_active_2}
+          Active3: {state: sharp_incendiary_mine_active_3}
+          Active4: {state: sharp_incendiary_mine_active_4}
+          Disarmed: {state: sharp_mine_disarmed}
   - type: SharpMine
     kind: Incendiary
     inactiveState: sharp_incendiary_mine

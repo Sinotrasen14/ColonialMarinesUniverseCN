@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   abstract: true
   id: RMCContainerBase
-  name: cargo container
-  description: A huge industrial shipping container.
+  name: 货运集装箱
+  description: 一个巨大的工业货运集装箱。
   placement:
     mode: SnapgridCenter
   components:
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,1.5"
         density: 190
         layer:
@@ -38,12 +37,11 @@
     damageContainer: StructuralMarine
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: ImmuneToUnarmed
   - type: ExplosionResistance
     damageCoefficient: 2 # takes 2x explosion damage
@@ -129,8 +127,8 @@
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerFujinLeft
-  name: Fujin Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from Fujin, a manufacturer of a variety of electronical and mechanical products.\nAt least, that is what is says on the container. You have literally never heard of this company before."
+  name: 富金货运集装箱
+  description: "一个巨大的工业货运集装箱。\n这个是富金生产的，富金是一家生产各种电子和机械产品的制造商。\n至少，集装箱上是这么写的。你以前真的从未听说过这家公司。"
   suffix: Fujin, Left
   components:
   - type: Sprite
@@ -147,8 +145,8 @@
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerApocraphyLeft
-  name: Apocraphy Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from The Apocrahpy Corporation, a manufacturer of medical and biotechnological parts.\nYou remember hearing about one of their latest drugs, and how dangerous it was... though they claimed to be close to finding a solution."
+  name: 阿波克拉菲货物集装箱
+  description: "一个巨大的工业货运集装箱。\n这一个来自阿波克拉菲公司，一家医疗和生物技术零件制造商。\n你记得听说过他们最新的一款药物，以及它有多危险……尽管他们声称快要找到解决方案了。"
   suffix: Apocraphy, Left
   components:
   - type: Sprite
@@ -165,8 +163,8 @@
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerPathosLeft
-  name: Pathos Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from Pathos, a computer parts and motion detector manufacturer.\nYou still wonder why we have a container of old Motion Detectors, and if they even still work."
+  name: 帕索斯货运集装箱
+  description: "一个巨大的工业货运集装箱。\n这个来自帕索斯，一家计算机零件和运动探测器制造商。\n你仍然想知道为什么我们有一集装箱旧运动探测器，以及它们是否还能用。"
   suffix: Pathos, Left
   components:
   - type: Sprite
@@ -183,8 +181,8 @@
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerWeYaLeft
-  name: Weyland-Yutani Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from The Weyland-Yutani Corporation, you have probably heard of them before."
+  name: 维兰德-汤谷货运集装箱
+  description: "一个巨大的工业货运集装箱。\n这个是来自维兰德-汤谷公司的，你以前很可能听说过他们。"
   suffix: WeYa, Left
   components:
   - type: Sprite
@@ -233,8 +231,8 @@
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerTrijentLeft
-  name: Trijent Corporation Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from The Trijent Corporation's mining operations.\nIf this breaks open, you figure you probably shouldn't breathe in what's inside."
+  name: Trijent公司货运集装箱
+  description: "一个巨大的工业货运集装箱。\n这个来自Trijent公司的采矿作业。\n如果它裂开了，你大概不该吸入里面的东西。"
   suffix: Trijent, Left
   components:
   - type: Sprite
@@ -283,8 +281,8 @@
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerFerretLeft
-  name: Ferret Heavy Industries Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from Ferret Heavy Industries, a manufacturer of terrestrial crawlers and powerloaders.\nUnfortunately, the company went bankrupt. Fortunately, these containers are really cheap now."
+  name: 雪貂重工业货运集装箱
+  description: "一个巨大的工业货运集装箱。\n这个来自雪貂重工业，一家地面履带车和动力装载机制造商。\n不幸的是，这家公司破产了。幸运的是，这些集装箱现在真的很便宜。"
   suffix: Ferret, Left
   components:
   - type: Sprite
@@ -309,8 +307,8 @@
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerNovarisLeft
-  name: Novaris Cargo Container
-  description: "A huge industrial shipping containerThis one is from Novaris, they makes just about anything and everything.\nYou notice this container has a peeling note on it, saying all contents were transferred from another station decades ago, how long has it been here?"
+  name: 诺瓦里斯货运集装箱
+  description: "一个巨大的工业货运集装箱。这一个来自诺瓦里斯，他们几乎什么都制造，什么都做。\n你注意到这个集装箱上贴着一张剥落的字条，上面写着所有内装物都是几十年前从另一个站点转移过来的，它在这里已经多久了？"
   suffix: Novaris, Left
   components:
   - type: Sprite
@@ -335,8 +333,8 @@
 - type: entity
   parent: RMCContainerBase
   id: RMCContainerAICMiddle
-  name: AIC Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from the Asian Industrial Collective, which was absorded into the UPP. Their massive industrial output has ensured that cargo containers bearing their symbols and name won't be disappearing any time soon."
+  name: AIC货运集装箱
+  description: "一个巨大的工业货运集装箱。\n这一个来自亚洲工业联合体，该组织已被并入UPP。其庞大的工业产能确保了带有其标志和名称的货运集装箱短期内不会消失。"
   suffix: AIC, Middle
   components:
   - type: Sprite
@@ -346,8 +344,8 @@
   parent: RMCContainerBase
   id: RMCContainerSPPLeft
   suffix: SPP, Left
-  name: UPP Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from the Socialist Progressive Peoples, as indicated by the massive symbol on the side."
+  name: UPP货运集装箱
+  description: "一个巨大的工业货运集装箱。\n这个来自社会主义进步人民，正如侧面巨大的标志所示。"
   components:
   - type: Sprite
     state: sppcontainerleft
@@ -396,8 +394,8 @@
   parent: RMCContainerBase
   id: RMCContainerMSPLeft
   suffix: MSP, Left
-  name: Ministry of Space Protection Cargo Container
-  description: "A huge industrial shipping container.\nThis one belongs to the UPP's Ministry of Space Protection."
+  name: 太空保护部货运集装箱
+  description: "一个巨大的工业货运集装箱。\n这一个属于UPP的太空保护部。"
   components:
   - type: Sprite
     state: mspcontainerleft
@@ -422,8 +420,8 @@
   parent: RMCContainerBase
   id: RMCContainerUNMCLeft
   suffix: UNMC, Left
-  name: United Nations Marine Corps Cargo Container
-  description: "A huge industrial shipping container.\nThis one belongs to the UN's United Nations Marine Corps."
+  name: 联合国海军陆战队货运集装箱
+  description: "一个巨大的工业货运集装箱。\n这一个属于联合国的联合国海军陆战队。"
   components:
   - type: Sprite
     state: unmccontainerleft
@@ -448,8 +446,8 @@
   parent: RMCContainerBase
   id: RMCContainerAegisLeft
   suffix: AEGIS, Left
-  name: AEGIS Cargo Container
-  description: "A huge industrial shipping container.\nThis one is from AEGIS, the defense contractors behind the M54C and other marine weaponry."
+  name: AEGIS货运集装箱
+  description: "一个巨大的工业货运集装箱。\n这个来自AEGIS，也就是M54C及其他海军武器背后的国防承包商。"
   components:
   - type: Sprite
     state: aegiscontainerleft
@@ -488,8 +486,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 190
         layer:
@@ -956,7 +953,7 @@
 - type: entity
   parent: RMCContainerTartarusLeft
   id: RMCContainerAMSLeft
-  description: A huge industrial shipping container. This one belongs to the Asian Multinational Shipping Line, a bulk-freight Weyland-Yutani subsidiary.
+  description: 一个巨大的工业运输集装箱。这个集装箱属于亚洲跨国航运公司，该公司是维兰德-汤谷旗下的一家散货运输子公司。
   suffix: AMS, Left
   components:
   - type: Sprite
@@ -980,8 +977,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,1.35,0.5"
         density: 190
         layer:

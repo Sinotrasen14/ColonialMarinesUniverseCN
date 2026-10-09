@@ -1,11 +1,11 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaSupply
 
 - type: entity
   parent: RMCAreaSupply
   id: RMCAreaSupplyStation
-  name: Supply Shuttle
+  name: 补给穿梭机
   components:
   - type: Sprite
     state: shuttle3
@@ -13,7 +13,7 @@
 - type: entity
   parent: RMCAreaSupply
   id: RMCAreaSupplyDock
-  name: Supply Shuttle
+  name: 补给穿梭
   components:
   - type: Sprite
     state: shuttle3
@@ -21,7 +21,7 @@
 - type: entity
   parent: RMCAreaSupply
   id: RMCAreaSupplyStationVehicle
-  name: Vehicle ASRS
+  name: 车辆自动存取系统
   components:
   - type: Sprite
     state: shuttle3
@@ -29,7 +29,7 @@
 - type: entity
   parent: RMCAreaSupply
   id: RMCAreaSupplyDockVehicle
-  name: Vehicle ASRS
+  name: 车辆自动存取系统
   components:
   - type: Sprite
     state: shuttle3

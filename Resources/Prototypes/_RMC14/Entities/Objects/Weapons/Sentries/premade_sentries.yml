@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: RMCSentryPremade
-  name: turret
-  description: A deployable, semi-automated turret with AI targeting capabilities. Armed with an M30 Autocannon and a 500-round drum magazine.
+  name: 炮塔
+  description: 一种可部署的半自动炮塔，具备人工智能瞄准能力。配备一门M30自动加农炮和一个500发弹鼓。
   components:
   - type: Physics
     bodyType: Dynamic
@@ -16,8 +16,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.25
         density: 20
         mask:
@@ -25,8 +24,7 @@
         restitution: 0.3
         friction: 0.2
       sentry:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 20
         layer:
@@ -43,9 +41,9 @@
     drawdepth: Mobs
     noRot: true
     layers:
-    - map: [ "base" ]
+    - map: ["base"]
       state: defense_base_off
-    - map: [ "sentry" ]
+    - map: ["sentry"]
       state: normal_uac_sentry_handheld
   - type: Icon
     sprite: _RMC14/Objects/Weapons/Sentries/sentry.rsi
@@ -55,13 +53,13 @@
     visuals:
       enum.SentryLayers.Layer:
         base:
-          Item: { state: "", visible: false }
-          Off: { state: defense_base_off, visible: true }
-          On: { state: defense_base, visible: true }
+          Item: {state: "", visible: false}
+          Off: {state: defense_base_off, visible: true}
+          On: {state: defense_base, visible: true}
         sentry:
-          Item: { state: normal_uac_sentry_handheld }
-          Off: { state: normal_uac_sentry_noammo }
-          On: { state: normal_uac_sentry_on }
+          Item: {state: normal_uac_sentry_handheld}
+          Off: {state: normal_uac_sentry_noammo}
+          On: {state: normal_uac_sentry_on}
   - type: CombatMode
     toggleMouseRotator: false
   - type: Gun
@@ -80,10 +78,8 @@
     blackboard:
       SoundTargetInLOS: !type:SoundPathSpecifier
         path: /Audio/Effects/double_beep.ogg
-      VisionRadius: !type:Single
-        6.0
-      AggroVisionRadius: !type:Single
-        6.0
+      VisionRadius: !type:Single 6.0
+      AggroVisionRadius: !type:Single 6.0
   - type: MouseRotator
     angleTolerance: 5
     rotationSpeed: 180
@@ -98,15 +94,14 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: UserInterface
     interfaces:
       enum.SentryUiKey.Key:
@@ -130,9 +125,9 @@
   parent: RMCBaseTurret
   id: RMCSentryDropship
   # cmu edit start: no UA/UN prefix on sentry names
-  name: 571-D omnidirectional sentry gun
+  name: 571-D 全向哨戒炮
   # cmu edit end
-  description: A deployable, semi-automated turret with 360 degree range AI targeting capabilities. Armed with an M30 Autocannon and a 500-round drum magazine.
+  description: 一种可部署的半自动炮塔，具备360度范围的AI瞄准能力。配备M30自动机炮和500发弹鼓。
   suffix: Deployed
   components:
   - type: UserIFF
@@ -141,8 +136,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 60
         mask:
@@ -169,24 +163,21 @@
     blackboard:
       SoundTargetInLOS: !type:SoundPathSpecifier
         path: /Audio/Effects/double_beep.ogg
-      VisionRadius: !type:Single
-        5.5
-      AggroVisionRadius: !type:Single
-        5.5
+      VisionRadius: !type:Single 5.5
+      AggroVisionRadius: !type:Single 5.5
   - type: Damageable
   - type: Injurable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: MouseRotator
     angleTolerance: 5
     rotationSpeed: 180

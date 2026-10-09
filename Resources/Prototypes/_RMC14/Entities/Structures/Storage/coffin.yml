@@ -1,8 +1,8 @@
 - type: entity
   parent: CrateCoffin
   id: CMCoffin
-  name: coffin
-  description: It's a burial receptacle for the dearly departed.
+  name: 棺材
+  description: 这是为逝去亲人准备的安葬容器。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Coffins/standard.rsi
@@ -18,8 +18,7 @@
     stateDoorClosed: closed
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 15
       behaviors:
       - !type:PlaySoundBehavior
@@ -31,13 +30,13 @@
             min: 1
             max: 4
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: CMCoffin
   id: CMCoffinMarine
-  name: Marine coffin
-  description: A burial receptacle for dearly departed Marines, adorned in red and finished with the Corps' emblem on the interior. Semper fi.
+  name: 海军陆战队棺材
+  description: 为深爱的已故海军陆战队员准备的棺材，饰以红色，内部饰有海军陆战队徽章。永远忠诚。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Coffins/marine.rsi
@@ -45,8 +44,8 @@
 - type: entity
   parent: CMCoffin
   id: CMCoffinPred
-  name: strange coffin
-  description: It's a burial receptacle for the dearly departed. Seems to have weird markings on the side..?
+  name: 奇怪的棺材
+  description: 这是为逝去的挚爱之人准备的葬具。侧面似乎有奇怪的标记……？
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Coffins/pred.rsi

@@ -1,15 +1,14 @@
 - type: entity
   parent: hydroponicsSoil
-  name: hydroponics tray
+  name: 水培托盘
   id: CMHydroponicsTray
-  description: Used for growing plants.
+  description: 用于种植植物。
   components:
   - type: VehicleSmashable
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.1"
         density: 190
         hard: false
@@ -21,8 +20,7 @@
   - type: Pullable
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -35,43 +33,43 @@
     layers:
     - state: hydrotray3
     - state: over_lowhealth3
-      map: [ "health_alert" ]
+      map: ["health_alert"]
       visible: false
     - state: over_lowwater3
-      map: [ "water_alert" ]
+      map: ["water_alert"]
       visible: false
     - state: over_lownutri3
-      map: [ "nutri_alert" ]
+      map: ["nutri_alert"]
       visible: false
     - state: over_alert3
-      map: [ "undefined_alert" ]
+      map: ["undefined_alert"]
       visible: false
     - state: over_harvest3
-      map: [ "harvest_alert" ]
+      map: ["harvest_alert"]
       visible: false
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.PlantTrayVisuals.HealthLight:
         health_alert:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PlantTrayVisuals.WaterLight:
         water_alert:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PlantTrayVisuals.NutritionLight:
         nutri_alert:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PlantTrayVisuals.AlertLight:
         undefined_alert:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PlantTrayVisuals.HarvestLight:
         harvest_alert:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: PlantTray
     drawWarnings: true
   - type: AmbientSound

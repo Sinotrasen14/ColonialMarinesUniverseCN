@@ -1,17 +1,17 @@
 - type: entity
   parent: BaseItem
   id: CMHypospray
-  name: hypospray
-  description: The DeForest Medical Corporation hypospray is a sterile, air-needle auto-injector for rapid administration of drugs to patients.
+  name: 无针注射器
+  description: 德福雷斯特医疗公司的无针注射器是一种无菌的空气针自动注射器，用于向患者快速给药。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/hypospray.rsi
     layers:
-      - state: empty
-        map: [ "enum.VialVisuals.Occupied" ]
-      - state: hypospray1
-        map: [ "enum.SolutionContainerLayers.Fill" ]
-        visible: false
+    - state: empty
+      map: ["enum.VialVisuals.Occupied"]
+    - state: hypospray1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: SolutionContainerVisuals
     maxFillLevels: 6
     fillBaseName: hypospray
@@ -32,7 +32,7 @@
   - type: ItemSlots
     slots:
       vial:
-        name: Vial
+        name: 小瓶
         insertSound: /Audio/_RMC14/Weapons/safety_toggle.ogg
         ejectSound: /Audio/Items/screwdriver2.ogg
         whitelist:
@@ -45,8 +45,8 @@
     visuals:
       enum.VialVisuals.Occupied:
         enum.VialVisuals.Occupied:
-          False: { state: "empty"}
-          True: { state: "hypospray" }
+          false: {state: "empty"}
+          true: {state: "hypospray"}
   - type: RMCHypospray
     slotId: vial
     tacticalSkills:

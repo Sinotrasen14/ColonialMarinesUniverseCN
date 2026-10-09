@@ -1,21 +1,21 @@
 - type: entity
-  parent: [ RMCBaseSlideMagazineVisualsBallistic, RMCBaseWeaponGrenadeLauncher ]
+  parent: [RMCBaseSlideMagazineVisualsBallistic, RMCBaseWeaponGrenadeLauncher]
   id: RMCWeaponLauncherM85A1
-  name: M85A1 grenade launcher
-  description: A heavy, low-angle, break-action 40mm grenade launcher. Archaic in core design, inferior to more modern semi automatic M92, M95 grenade launchers and M94 impact launcher, but doesn't require a magnetic armature or an advanced expertice to operate, not to mention near flawless reliability, extremely low cost and low weight due to mostly being made out of polymer materials.
+  name: M85A1榴弹发射器
+  description: 一种重型、低角度、折开式40毫米榴弹发射器。核心设计陈旧，逊于更现代的M92、M95半自动榴弹发射器和M94撞击式发射器，但操作它既不需要磁性衔铁，也不需要高深的专业技能，更不必说近乎无瑕的可靠性、极低的成本和极轻的重量，因为其大部分由聚合物材料制成。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/GrenadeLaunchers/m85a1/m85a1_inhands.rsi
     layers:
     - sprite: _RMC14/Objects/Weapons/Guns/GrenadeLaunchers/m85a1/m85a1_icon.rsi
       state: base
-      map: [ "enum.BreechVisuals.Open" ]
+      map: ["enum.BreechVisuals.Open"]
   - type: GenericVisualizer
     visuals:
       enum.BreechVisuals.Open:
         enum.BreechVisuals.Open:
-          True: { state: bolt-open }
-          False: { state: base }
+          true: {state: bolt-open}
+          false: {state: base}
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/GrenadeLaunchers/m85a1/m85a1_inhands.rsi
     slots:

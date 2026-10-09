@@ -2,12 +2,12 @@
 - type: entity
   id: CMAPCElectronics
   parent: CMBaseElectronics
-  name: power control module
-  description: Circuit used in APC construction.
+  name: 功率控制模块
+  description: 用于APC构建的电路。
   components:
-    - type: ApcElectronics
-    - type: Sprite
-      sprite: _RMC14/Objects/Misc/module.rsi
-      state: power_mod
-    - type: StaticPrice
-      price: 34
+  - type: ApcElectronics
+  - type: Sprite
+    sprite: _RMC14/Objects/Misc/module.rsi
+    state: power_mod
+  - type: StaticPrice
+    price: 34

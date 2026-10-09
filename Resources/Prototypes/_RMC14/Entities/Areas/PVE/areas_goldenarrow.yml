@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaGA
-  name: Golden Arrow
+  name: 金箭
   components:
   - type: Sprite
     sprite: _RMC14/Areas/hybrisareas.rsi
@@ -28,7 +28,7 @@
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGAHypersleepStorageA
-  name: Hypersleep Storage A
+  name: 超睡眠储藏室A
   components:
   - type: Sprite
     state: medical
@@ -36,22 +36,22 @@
 - type: entity
   parent: RMCAreaGAHypersleepStorageA
   id: RMCAreaGAHypersleepStorageB
-  name: Hypersleep Storage B
+  name: 超睡眠储藏室B
 
 - type: entity
   parent: RMCAreaGAHypersleepStorageA
   id: RMCAreaGAHypersleepStorageC
-  name: Hypersleep Storage C
+  name: 超睡眠储藏区 C
 
 - type: entity
   parent: RMCAreaGAHypersleepStorageA
   id: RMCAreaGAHypersleepStorageD
-  name: Hypersleep Storage D
+  name: 超睡眠储存区 D
 
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGAHypersleepGearLockers
-  name: Hypersleep Gear Lockers
+  name: 超睡眠装备储物柜
   components:
   - type: Sprite
     state: derelictship
@@ -59,17 +59,17 @@
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGAMessHall
-  name: Mess Hall
+  name: 食堂
 
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGABathroom
-  name: Bathroom
+  name: 浴室
 
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGADisposals
-  name: Disposals
+  name: 处置
   components:
   - type: Sprite
     state: recycling
@@ -77,7 +77,7 @@
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGAMedical
-  name: Medical
+  name: 医疗
   components:
   - type: Sprite
     state: medical
@@ -85,7 +85,7 @@
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGABriefRoom
-  name: Briefing Room
+  name: 简报室
   components:
   - type: Sprite
     state: caves_central
@@ -93,17 +93,17 @@
 - type: entity
   parent: RMCAreaGABriefRoom
   id: RMCAreaGACommandDeck
-  name: Platoon Command Deck
+  name: 排指挥甲板
 
 - type: entity
   parent: RMCAreaGABriefRoom
   id: RMCAreaGACommandRooms
-  name: Platoon Command Rooms
+  name: 排指挥室
 
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGAPrep
-  name: Platoon Prep
+  name: 排级准备
   components:
   - type: Sprite
     state: security_hub
@@ -111,12 +111,12 @@
 - type: entity
   parent: RMCAreaGAPrep
   id: RMCAreaGAArmoury
-  name: Platoon Armoury
+  name: 排军械库
 
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGAHangar
-  name: Hangar
+  name: 机库
   components:
   - type: Sprite
     state: lz
@@ -124,7 +124,7 @@
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGASupply
-  name: Supply
+  name: 供应
   components:
   - type: Sprite
     state: maints
@@ -132,12 +132,12 @@
 - type: entity
   parent: RMCAreaGASupply
   id: RMCAreaGAMaint
-  name: Maintenance
+  name: 维护
 
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGAEngineering
-  name: Engineering
+  name: 工程
   components:
   - type: Sprite
     state: power0
@@ -145,7 +145,7 @@
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGASynth
-  name: Synthetic Storage Closet
+  name: 合成储物柜
   components:
   - type: Sprite
     state: synthetic
@@ -153,7 +153,7 @@
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGAAI
-  name: AI Interface
+  name: AI 界面
   components:
   - type: Sprite
     state: wylab
@@ -161,7 +161,7 @@
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGALiaisonOffice
-  name: Liaison Office
+  name: 联络处
   components:
   - type: Sprite
     state: wyoffice
@@ -169,7 +169,7 @@
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGASupplyDrop
-  name: Supply Drop Bay
+  name: 补给投放舱
   components:
   - type: Sprite
     state: wyspaceportcargo
@@ -177,7 +177,7 @@
 - type: entity
   parent: RMCAreaGA
   id: RMCAreaGAOOB
-  name: Out Of Bounds
+  name: 越界
   components:
   - type: Sprite
     state: oob

@@ -3,8 +3,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolSmart
-  name: SU-6 smart pistol case
-  description: A gun case containing the SU-6 smart pistol. Comes with a full belt holster.
+  name: SU-6智能手枪盒
+  description: 装有SU-6智能手枪的枪盒。附带全套腰带枪套。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -23,8 +23,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolMK80
-  name: VP78 pistol case
-  description: A gun case containing the VP78. Comes with two magazines.
+  name: VP78手枪盒
+  description: 一个装有VP78的枪盒。随附两个弹匣。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -43,8 +43,8 @@
 - type: entity
   parent: BaseStorageItem
   id: RMCD18Case
-  name: D18 pistol case
-  description: A fairly decorated and sturdy box containing a D18 Hummingbird and a single additional magazine for it. If the gun doesn't make you feel secure, the box sure does.
+  name: D18手枪盒
+  description: 一个装饰相当精美且结实的盒子，里面装有一把D18蜂鸟手枪和一个额外的备用弹匣。如果这把枪不能让你感到安心，那这个盒子肯定能。
   components:
   - type: Item
     size: Small
@@ -73,8 +73,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolM77
-  name: Mod 88 Combat Pistol case
-  description: A gun case containing a Mod 88 Combat Pistol. Comes with a rail flashlight and 6 magazines.
+  name: Mod 88战斗手枪枪盒
+  description: 一个装有Mod 88战斗手枪的枪盒。附带一个导轨手电和6个弹匣。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -96,8 +96,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolM44
-  name: M44 Combat Revolver case
-  description: A gun case containing an M44 Combat Revolver loaded with marksman ammo.
+  name: M44战斗左轮手枪枪盒
+  description: 一个装有M44战斗左轮手枪的枪盒，枪内已装填神射手弹药。
   components:
   - type: Item
     size: Small
@@ -121,38 +121,38 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolM44Custom
-  name: Custom M44 combat revolver case
-  description: A case containing a loaded custom M44 combat revolver and two speedloaders for it.
+  name: 定制M44战斗左轮手枪枪盒
+  description: 一个装有已装弹的定制M44战斗左轮手枪和两个配套快速装弹器的枪盒。
   components:
-    - type: Item
-      size: Small
-    - type: Sprite
-      noRot: false
-      sprite: _RMC14/Objects/Storage/D18case.rsi # Needs proper 'closed' Sprites, Open/Closed are identical atm
-      layers:
-      - state: closed
-    - type: Icon
-      sprite: _RMC14/Objects/Storage/D18case.rsi
-      state: closed
-    - type: Storage
-      maxItemSize: Huge
-      grid:
-      - 0,0,5,1
-      whitelist:
-       tags:
-       - RMCWeaponRevolverM44
-       - RMCSpeedLoaderM44
-    - type: StorageFill
-      contents:
-      - id: RMCWeaponRevolverM44Custom
-      - id: RMCSpeedLoaderM44
-        amount: 2
+  - type: Item
+    size: Small
+  - type: Sprite
+    noRot: false
+    sprite: _RMC14/Objects/Storage/D18case.rsi   # Needs proper 'closed' Sprites, Open/Closed are identical atm
+    layers:
+    - state: closed
+  - type: Icon
+    sprite: _RMC14/Objects/Storage/D18case.rsi
+    state: closed
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,5,1
+    whitelist:
+      tags:
+      - RMCWeaponRevolverM44
+      - RMCSpeedLoaderM44
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponRevolverM44Custom
+    - id: RMCSpeedLoaderM44
+      amount: 2
 
 # M1984 service pistol
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolM1984
-  name: M4A3 service pistol case
+  name: M4A3制式手枪盒
   description:
   components:
   - type: Storage
@@ -175,36 +175,36 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolM1984Custom
-  name: Custom M4A3 service pistol case
-  description: A case containing a loaded custom M4A3 service pistol and two magazines for it.
+  name: 定制M4A3制式手枪盒
+  description: 一个装有已装填弹药的定制M4A3制式手枪及两个配套弹匣的枪盒。
   components:
-   - type: Sprite
-     noRot: false
-     sprite: _RMC14/Objects/Storage/D18case.rsi # Needs proper 'closed' Sprites, Open/Closed are identical atm
-     layers:
-     - state: closed
-   - type: Icon
-     sprite: _RMC14/Objects/Storage/D18case.rsi
-     state: closed
-   - type: Storage
-     maxItemSize: Huge
-     grid:
-     - 0,0,5,1
-     whitelist:
+  - type: Sprite
+    noRot: false
+    sprite: _RMC14/Objects/Storage/D18case.rsi  # Needs proper 'closed' Sprites, Open/Closed are identical atm
+    layers:
+    - state: closed
+  - type: Icon
+    sprite: _RMC14/Objects/Storage/D18case.rsi
+    state: closed
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,5,1
+    whitelist:
       tags:
-       - CMWeaponPistolM1984
-       - CMMagazinePistolM1984
-   - type: StorageFill
-     contents:
-     - id: CMWeaponPistolM1984Custom
-     - id: CMMagazinePistolM1984
-       amount: 2
+      - CMWeaponPistolM1984
+      - CMMagazinePistolM1984
+  - type: StorageFill
+    contents:
+    - id: CMWeaponPistolM1984Custom
+    - id: CMMagazinePistolM1984
+      amount: 2
 
 # RSh9 Assault Revolver
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCaseRevolverRSh9
-  name: RSh9 Assault Revolver case
+  name: RSh9突击左轮手枪盒
   description:
   components:
   - type: Storage
@@ -227,131 +227,131 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolHG45Aguila
-  name: HG-45 'Aguila' pistol case
-  description: A case containing a loaded HG-45 'Aguila' and two magazines for it.
+  name: HG-45‘Aguila’手枪箱
+  description: 一个装有已上膛的HG-45“Aguila”手枪及其两个弹匣的箱子。
   components:
-    - type: Item
-      size: Small
-    - type: Sprite
-      noRot: false
-      sprite: _RMC14/Objects/Storage/D18case.rsi # Needs proper 'closed' Sprites, Open/Closed are identical atm
-      layers:
-      - state: closed
-    - type: Icon
-      sprite: _RMC14/Objects/Storage/D18case.rsi
-      state: closed
-    - type: Storage
-      maxItemSize: Huge
-      grid:
-      - 0,0,5,1
-      whitelist:
-       tags:
-       - RMCMK45
-       - RMCMagazinePistolMK45
-    - type: StorageFill
-      contents:
-      - id: RMCWeaponPistolHG45Aguila
-      - id: RMCMagazinePistolMK45
-        amount: 2
+  - type: Item
+    size: Small
+  - type: Sprite
+    noRot: false
+    sprite: _RMC14/Objects/Storage/D18case.rsi   # Needs proper 'closed' Sprites, Open/Closed are identical atm
+    layers:
+    - state: closed
+  - type: Icon
+    sprite: _RMC14/Objects/Storage/D18case.rsi
+    state: closed
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,5,1
+    whitelist:
+      tags:
+      - RMCMK45
+      - RMCMagazinePistolMK45
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponPistolHG45Aguila
+    - id: RMCMagazinePistolMK45
+      amount: 2
 
 # HG-45 'Marina' pistol
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolHG45Marina
-  name: HG-45 'Marina' pistol case
-  description: A case containing a loaded HG-45 'Marina' and two magazines for it.
+  name: HG-45‘Marina’手枪盒
+  description: 一个装有已装弹的HG-45‘Marina’和两个其配用弹匣的枪盒。
   components:
-    - type: Item
-      size: Small
-    - type: Sprite
-      noRot: false
-      sprite: _RMC14/Objects/Storage/D18case.rsi # Needs proper 'closed' Sprites, Open/Closed are identical atm
-      layers:
-      - state: closed
-    - type: Icon
-      sprite: _RMC14/Objects/Storage/D18case.rsi
-      state: closed
-    - type: Storage
-      maxItemSize: Huge
-      grid:
-      - 0,0,5,1
-      whitelist:
-       tags:
-       - RMCMK45
-       - RMCMagazinePistolMK45
-    - type: StorageFill
-      contents:
-      - id: RMCWeaponPistolHG45Marina
-      - id: RMCMagazinePistolMK45
-        amount: 2
+  - type: Item
+    size: Small
+  - type: Sprite
+    noRot: false
+    sprite: _RMC14/Objects/Storage/D18case.rsi   # Needs proper 'closed' Sprites, Open/Closed are identical atm
+    layers:
+    - state: closed
+  - type: Icon
+    sprite: _RMC14/Objects/Storage/D18case.rsi
+    state: closed
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,5,1
+    whitelist:
+      tags:
+      - RMCMK45
+      - RMCMagazinePistolMK45
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponPistolHG45Marina
+    - id: RMCMagazinePistolMK45
+      amount: 2
 
 # T73
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolT73
-  name: Type 73 pistol case
-  description: A case containing a loaded Type 73 and two magazines for it.
+  name: 73式手枪盒
+  description: 一个装有已装弹的73式手枪及两个配套弹匣的盒子。
   components:
-    - type: Item
-      size: Small
-    - type: Sprite
-      noRot: false
-      sprite: _RMC14/Objects/Storage/D18case.rsi # Needs proper 'closed' Sprites, Open/Closed are identical atm
-      layers:
-      - state: closed
-    - type: Icon
-      sprite: _RMC14/Objects/Storage/D18case.rsi
-      state: closed
-    - type: Storage
-      maxItemSize: Huge
-      grid:
-      - 0,0,5,1
-      whitelist:
-       tags:
-       - RMCWeaponPistolT73
-       - RMCMagazinePistolT73
-    - type: StorageFill
-      contents:
-      - id: RMCWeaponPistolT73
-      - id: RMCMagazinePistolT73
-        amount: 2
+  - type: Item
+    size: Small
+  - type: Sprite
+    noRot: false
+    sprite: _RMC14/Objects/Storage/D18case.rsi   # Needs proper 'closed' Sprites, Open/Closed are identical atm
+    layers:
+    - state: closed
+  - type: Icon
+    sprite: _RMC14/Objects/Storage/D18case.rsi
+    state: closed
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,5,1
+    whitelist:
+      tags:
+      - RMCWeaponPistolT73
+      - RMCMagazinePistolT73
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponPistolT73
+    - id: RMCMagazinePistolT73
+      amount: 2
 
 # ZHNK72
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolZHNK72
-  name: ZHNK-72 revolver case
-  description: A case containing a loaded ZHNK-72 and two speedloaders for it.
+  name: ZHNK-72左轮手枪盒
+  description: 一个装有已装弹的ZHNK-72左轮手枪和两个其专用快速装弹器的枪盒。
   components:
-    - type: Item
-      size: Small
-    - type: Sprite
-      noRot: false
-      sprite: _RMC14/Objects/Storage/D18case.rsi # Needs proper 'closed' Sprites, Open/Closed are identical atm
-      layers:
-      - state: closed
-    - type: Icon
-      sprite: _RMC14/Objects/Storage/D18case.rsi
-      state: closed
-    - type: Storage
-      maxItemSize: Huge
-      grid:
-      - 0,0,5,1
-      whitelist:
-       tags:
-       - RMCWeaponRevolverZHNK72
-       - RMCSpeedLoaderZHNK72
-    - type: StorageFill
-      contents:
-      - id: RMCWeaponRevolverZHNK72
-      - id: RMCSpeedLoaderZHNK72
-        amount: 2
+  - type: Item
+    size: Small
+  - type: Sprite
+    noRot: false
+    sprite: _RMC14/Objects/Storage/D18case.rsi   # Needs proper 'closed' Sprites, Open/Closed are identical atm
+    layers:
+    - state: closed
+  - type: Icon
+    sprite: _RMC14/Objects/Storage/D18case.rsi
+    state: closed
+  - type: Storage
+    maxItemSize: Huge
+    grid:
+    - 0,0,5,1
+    whitelist:
+      tags:
+      - RMCWeaponRevolverZHNK72
+      - RMCSpeedLoaderZHNK72
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponRevolverZHNK72
+    - id: RMCSpeedLoaderZHNK72
+      amount: 2
 
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCasePistolM13
-  name: M13 auto-pistol case
-  description: A gun case containing the necessary attachments to assemble a custom M13 auto-pistol. Comes with two extended & two extended (AP) magazines.
+  name: M13自动手枪枪盒
+  description: 一个枪盒，内含组装定制M13自动手枪所需的必要配件。附带两个加长弹匣和两个加长（AP）弹匣。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -391,8 +391,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCaseRifleM54C
-  name: M41 assault rifle MK2 case
-  description: A gun case containing the M41 assault rifle MK2.
+  name: M41突击步枪MK2枪箱
+  description: 一个装有M41突击步枪MK2的枪箱。
   components:
   - type: Storage
     maxItemSize: Ginormous
@@ -414,8 +414,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCGunCaseRifleM54CE2
-  name: M41AE2 heavy assault rifle case
-  description: A gun case containing the M41AE2 heavy pulse rifle. You can get additional ammunition at requisitions.
+  name: M41AE2重型突击步枪箱
+  description: 装有M41AE2重型突击步枪的枪箱。你可以在军需处获取额外弹药。
   components:
   - type: Storage
     maxItemSize: Colossal
@@ -437,8 +437,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCCaseXM88
-  name: XM88 heavy rifle case
-  description: A gun case containing the XM88 Heavy Rifle, a prototype weapon designed for use against heavily armored infantry targets and light vehicles. Contains an ammunition belt, two boxes of ammunition, the XS-9 Targeting Relay attachment, and the stock for the rifle.
+  name: XM88重型步枪枪箱
+  description: 一个装有XM88重型步枪的枪箱，这是一种为对抗重装甲步兵目标和轻型车辆而设计的原型武器。内含一条弹链、两盒弹药、XS-9瞄准中继器配件以及步枪枪托。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -467,8 +467,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCXM51Case
-  name: XM51 breaching scattergun case
-  description: A gun case containing the XM51 Breaching Scattergun. Comes with two spare magazines, two spare shell boxes, an optional stock and a belt to holster the weapon.
+  name: XM51破门霰弹枪箱
+  description: 一个装有XM51破门霰弹枪的枪箱，随附两个备用弹匣、两个备用霰弹盒、一个可选枪托，以及一条用于挂载该武器的腰带。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -502,8 +502,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCMOU53Case
-  name: MOU53 shotgun case
-  description: A gun case containing the MOU53 shotgun. It does come loaded, but you'll still have to find ammunition as you go.
+  name: MOU53霰弹枪枪盒
+  description: 一个装有MOU53霰弹枪的枪盒。它确实已装填弹药，但你仍需要沿途寻找弹药。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -521,8 +521,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: CMUOlympietsCase
-  name: Olympiets shotgun case
-  description: A gun case containing the Olympiets shotgun. It does come loaded, but you'll still have to find ammunition as you go.
+  name: Olympiets霰弹枪枪盒
+  description: 一个装有 Olympiets 霰弹枪的枪盒。它确实装填有弹药，但你仍需要在途中寻找弹药。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -542,8 +542,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCM54CMK1Case
-  name: M54C assault rifle MK1 case
-  description: A gun case containing the M54C assault rifle MK1. It can only use proprietary MK1 magazines.
+  name: M54C突击步枪MK1枪箱
+  description: 一个装有M54C突击步枪MK1的枪箱。它只能使用专有的MK1弹匣。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -562,8 +562,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCM54CMK1CaseAP
-  name: M41A pulse rifle MK1 AP case
-  description: A gun case containing the M41A pulse rifle MK1 loaded with AP rounds. It can only use proprietary MK1 magazines.
+  name: M41A脉冲步枪MK1穿甲弹枪箱
+  description: 一个枪箱，内含已装填穿甲弹的M41A脉冲步枪MK1。它只能使用专有MK1弹匣。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -582,8 +582,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCM59ACaseAP
-  name: M59A prototype rifle AP case
-  description: A gun case containing the M59A prototype rifle loaded with AP rounds. Experimental and back issue only, built to outperform the standard M54C. While this case contains MK1 rifle magazines, the weapon also supports MK2 rifle magazines.
+  name: M59A原型步枪穿甲弹箱
+  description: 一个装有装填穿甲弹的M59A原型步枪的枪箱。仅限实验与后方配发，为超越标准型M54C而制造。虽然该枪箱内装有MK1步枪弹匣，但该武器也支持MK2步枪弹匣。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -602,8 +602,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCM54CMK2Case
-  name: M41A pulse rifle MK2 case
-  description: A gun case containing the M41A pulse rifle MK2.
+  name: M41A脉冲步枪MK2枪箱
+  description: 一个装有M41A脉冲步枪MK2的枪箱。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -624,8 +624,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCM37A1ShotgunCase
-  name: M37A1 pump shotgun case
-  description: A gun case containing the M37A1 pump shotgun.
+  name: M37A1泵动式霰弹枪枪盒
+  description: 装有M37A1泵动式霰弹枪的枪盒。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -672,8 +672,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCM42A2ShotgunCase
-  name: M37A3 pump shotgun case
-  description: A gun case containing the M37A3 pump shotgun.
+  name: M37A3泵动式霰弹枪枪箱
+  description: 一个装有M37A3泵动式霰弹枪的枪箱。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -720,8 +720,8 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: RMCMK481ShotgunCase
-  name: heavy shotgunner equipment case
-  description: A gun case containing an MK481 heavy shotgun, a box of high-dispersive shock grenades, and a box of buckshot shells.
+  name: 重型霰弹枪手装备箱
+  description: 一个装有MK481重型霰弹枪、一盒高扩散震荡手雷和一盒鹿弹的枪箱。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -742,8 +742,8 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: CMUType23ShotgunCase
-  name: type 23 shotgunner equipment case
-  description: A gun case containing an Type 23 tactical shotgun, a box of high-dispersive shock grenades, and a box of buckshot shells.
+  name: 23型霰弹枪手装备箱
+  description: 一个装有23型战术霰弹枪、一盒高扩散震荡手榴弹和一盒鹿弹弹药的枪箱。
   components:
   - type: Item
     size: Ginormous # CMU14
@@ -769,8 +769,8 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: AU14HAZOPSShotgunCase
-  name: heavy shotgunner equipment case
-  description: A gun case containing an spas-12 shotgun.
+  name: 重型霰弹枪手装备箱
+  description: 一个装有SPAS-12霰弹枪的枪箱。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -789,8 +789,8 @@
 - type: entity
   parent: RMCBaseEquipmentCase
   id: RMCM707VultureCase
-  name: M707 vulture rifle equipment case
-  description: A gun case containing the M707 "Vulture" anti-materiel rifle, a spotter kit, and two instructional pamphlets.
+  name: M707“秃鹫”步枪装备箱
+  description: 一个装有M707“秃鹫”反器材步枪、一套观测手装备和两本指导手册的枪箱。
   components:
   - type: Storage
     maxItemSize: Huge
@@ -818,7 +818,7 @@
 - type: entity
   parent: RMCKitSpotter
   id: AU14KitSpotterM707
-  name: M707 spotter kit
+  name: M707观察员套件
   components:
   - type: Storage
     maxItemSize: Huge
@@ -840,7 +840,7 @@
 - type: entity
   parent: RMCKitSpotter
   id: AU14KitSpotter
-  name: spotter kit
+  name: 观察员套装
   components:
   - type: Storage
     maxItemSize: Huge
@@ -868,8 +868,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCM85A1Case
-  name: M85A1 grenade launcher case
-  description: A gun case containing the M85A1 grenade launcher. Comes with three different grenade packets
+  name: M85A1榴弹发射器箱
+  description: 装有M85A1榴弹发射器的枪箱。附带三种不同的榴弹包。
   components:
   - type: Storage
     maxItemSize: Ginormous
@@ -890,8 +890,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCML66DCase
-  name: M56D heavy machine gun case
-  description: A gun case containing the M56D heavy machine gun. Comes with 2 magazines
+  name: M56D重机枪枪箱
+  description: 装有M56D重机枪的枪箱。附带2个弹匣
   components:
   - type: Storage
     maxItemSize: Ginormous
@@ -920,8 +920,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCM2CCase
-  name: M2C heavy machine gun case
-  description: A gun case containing the M2C heavy machine gun. Comes with 4 magazines
+  name: M2C重机枪箱
+  description: 一个装有M2C重机枪的枪箱。附带4个弹匣。
   components:
   - type: Storage
     maxItemSize: Ginormous
@@ -947,8 +947,8 @@
 - type: entity
   parent: RMCCaseBase
   id: CMUGunCaseRifleNSG23
-  name: NSG23 Rifle case
-  description: A gun case containing the NSG23.
+  name: NSG23步枪箱
+  description: 装有NSG23的枪箱。
   components:
   - type: Storage
     maxItemSize: Huge

@@ -1,7 +1,7 @@
 - type: entity
   id: RMCBaseMapIcon
   parent: BaseItem
-  name: Icon
+  name: 图标 | Icon
   abstract: true
   suffix: GuideBookEntity
   components:
@@ -12,8 +12,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCLesserMapIcon
-  name: Lesser
-  categories: [ HideSpawnMenu ]
+  name: 莱瑟 | Lesser
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -23,8 +23,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCParasiteMapIcon
-  name: Parasite
-  categories: [ HideSpawnMenu ]
+  name: 寄生虫 | Parasite
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -34,8 +34,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCLarvaMapIcon
-  name: Larva
-  categories: [ HideSpawnMenu ]
+  name: 幼虫 | Larva
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -46,8 +46,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCDroneMapIcon
-  name: Drone
-  categories: [ HideSpawnMenu ]
+  name: 无人机 | Drone
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -57,8 +57,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCHivelordMapIcon
-  name: Hivelord
-  categories: [ HideSpawnMenu ]
+  name: 蜂巢领主 | Hivelord
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -68,8 +68,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCBurrowerMapIcon
-  name: Burrower
-  categories: [ HideSpawnMenu ]
+  name: 掘地者 | Burrower
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -79,8 +79,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCCarrierMapIcon
-  name: Carrier
-  categories: [ HideSpawnMenu ]
+  name: 承运商 | Carrier
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -91,8 +91,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCDefenderMapIcon
-  name: Defender
-  categories: [ HideSpawnMenu ]
+  name: 防御者 | Defender
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -102,8 +102,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCWarriorMapIcon
-  name: Warrior
-  categories: [ HideSpawnMenu ]
+  name: 战士 | Warrior
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -113,8 +113,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCCrusherMapIcon
-  name: Crusher
-  categories: [ HideSpawnMenu ]
+  name: 粉碎者 | Crusher
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -124,8 +124,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCSentinelMapIcon
-  name: Sentinel
-  categories: [ HideSpawnMenu ]
+  name: 哨兵 | Sentinel
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -135,8 +135,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCSpitterMapIcon
-  name: Spitter
-  categories: [ HideSpawnMenu ]
+  name: 喷吐者 | Spitter
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -146,8 +146,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCBoilerMapIcon
-  name: Boiler
-  categories: [ HideSpawnMenu ]
+  name: 锅炉 | Boiler
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -158,8 +158,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCRunnerMapIcon
-  name: Runner
-  categories: [ HideSpawnMenu ]
+  name: 跑步者 | Runner
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -169,8 +169,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCLurkerMapIcon
-  name: Lurker
-  categories: [ HideSpawnMenu ]
+  name: 潜伏者 | Lurker
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -180,8 +180,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCRavagerMapIcon
-  name: Ravager
-  categories: [ HideSpawnMenu ]
+  name: 毁灭者 | Ravager
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -193,8 +193,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCPraetorianMapIcon
-  name: Praetorian
-  categories: [ HideSpawnMenu ]
+  name: 禁卫军 | Praetorian
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -204,8 +204,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCQueenMapIcon
-  name: Queen
-  categories: [ HideSpawnMenu ]
+  name: 女王 | Queen
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -215,7 +215,7 @@
 - type: entity
   parent: CMXenoQueen
   id: RMCGuidebookXenoQueen
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: RemoveComponents
     components:
@@ -229,8 +229,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCLeaderMapIcon
-  name: Leader Crown
-  categories: [ HideSpawnMenu ]
+  name: 领袖王冠 | Leader Crown
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -243,8 +243,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCHiveCoreMapIcon
-  name: Hive core
-  categories: [ HideSpawnMenu ]
+  name: Hive 核心 | Hive core
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: core
@@ -252,8 +252,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCMorpherMapIcon
-  name: Egg morpher
-  categories: [ HideSpawnMenu ]
+  name: 蛋变形器 | Egg morpher
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: morpher
@@ -261,8 +261,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCClusterMapIcon
-  name: Hive cluster
-  categories: [ HideSpawnMenu ]
+  name: Hive集群 | Hive cluster
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: cluster
@@ -270,8 +270,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCTunnelMapIcon
-  name: Tunnel
-  categories: [ HideSpawnMenu ]
+  name: 隧道 | Tunnel
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: xenotunnel
@@ -279,8 +279,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCRecovNodeMapIcon
-  name: Recovery node
-  categories: [ HideSpawnMenu ]
+  name: 恢复节点 | Recovery node
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: recovery_node
@@ -288,8 +288,8 @@
 - type: entity
   parent: RMCBaseMapIcon
   id: RMCPylonMapIcon
-  name: hive pylon
-  categories: [ HideSpawnMenu ]
+  name: 蜂巢塔 | hive pylon
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: pylon

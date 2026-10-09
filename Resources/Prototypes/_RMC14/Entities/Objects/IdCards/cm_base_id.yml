@@ -2,13 +2,13 @@
 - type: entity
   parent: [Clothing, CMIDCardBase]
   id: CMIDCardStandardDogtag
-  name: dog tag
-  description: A marine dog tag.
-  categories: [ HideSpawnMenu ]
+  name: 狗牌
+  description: 一枚海军陆战队狗牌。
+  categories: [HideSpawnMenu]
   components:
   - type: Item
     size: Tiny
-    heldPrefix: null
+    heldPrefix:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/dogtags.rsi
     layers:
@@ -38,15 +38,15 @@
     visuals:
       enum.DogtagVisuals.Taken:
         enum.DogtagVisuals.Taken:
-          True: { state: "dogtag_taken" }
-          False: { state: "dogtag" }
+          true: {state: "dogtag_taken"}
+          false: {state: "dogtag"}
       enum.FoldedVisuals.State:
         foldedLayer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
         unfoldedLayer:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}
   - type: Corrodible
     isCorrodible: false
   - type: RMCUnstrippable
@@ -54,7 +54,7 @@
 - type: entity
   parent: CMIDCardStandardDogtag
   id: RMCIDCardStandardDogtagHidden
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Foldable
     folded: true
@@ -65,7 +65,7 @@
   - type: Sprite
     layers:
     - state: dogtag
-      map: [ "unfoldedLayer" ]
+      map: ["unfoldedLayer"]
       visible: false
     - state: dogtag
       map: ["foldedLayer"]
@@ -74,8 +74,8 @@
 - type: entity
   parent: BaseItem
   id: RMCInformationDogtagProp
-  name: faded information dog tag
-  description: A fallen marine's information dog tag. It looks battered and the name is worn out.
+  name: 褪色的信息狗牌
+  description: 一名阵亡陆战队员的信息狗牌。它看起来破旧不堪，名字也已磨损。
   components:
   - type: Item
     size: Tiny
@@ -89,16 +89,16 @@
 - type: entity
   parent: BaseItem
   id: RMCInformationDogtag
-  name: information dog tag
-  description: A fallen marine's information dog tag.
+  name: 信息狗牌
+  description: 一名阵亡陆战队员的信息狗牌。
   components:
   - type: Item
     size: Tiny
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/infotags.rsi
     layers:
-        - state: dogtag_1
-          map: ["enum.InfoTagVisuals.Number"]
+    - state: dogtag_1
+      map: ["enum.InfoTagVisuals.Number"]
   - type: InformationTags
   - type: Corrodible
     isCorrodible: false
@@ -107,31 +107,31 @@
     visuals:
       enum.InfoTagVisuals.Number:
         enum.InfoTagVisuals.Number:
-          0: { state: "dogtag_0" }
-          1: { state: "dogtag_1" }
-          2: { state: "dogtag_2" }
-          3: { state: "dogtag_3" }
-          4: { state: "dogtag_4" }
-          5: { state: "dogtag_5" }
-          6: { state: "dogtag_6" }
-          7: { state: "dogtag_7" }
-          8: { state: "dogtag_8" }
-          9: { state: "dogtag_9" }
-          10: { state: "dogtag_10" }
-          11: { state: "dogtag_11" }
-          12: { state: "dogtag_12" }
-          13: { state: "dogtag_13" }
-          14: { state: "dogtag_14" }
-          15: { state: "dogtag_15" }
-          16: { state: "dogtag_16" }
-          17: { state: "dogtag_17" }
-          18: { state: "dogtag_18" }
-          19: { state: "dogtag_19" }
-          20: { state: "dogtag_20" }
-          21: { state: "dogtag_21" }
-          22: { state: "dogtag_22" }
-          23: { state: "dogtag_23" }
-          24: { state: "dogtag_24" }
+          0: {state: "dogtag_0"}
+          1: {state: "dogtag_1"}
+          2: {state: "dogtag_2"}
+          3: {state: "dogtag_3"}
+          4: {state: "dogtag_4"}
+          5: {state: "dogtag_5"}
+          6: {state: "dogtag_6"}
+          7: {state: "dogtag_7"}
+          8: {state: "dogtag_8"}
+          9: {state: "dogtag_9"}
+          10: {state: "dogtag_10"}
+          11: {state: "dogtag_11"}
+          12: {state: "dogtag_12"}
+          13: {state: "dogtag_13"}
+          14: {state: "dogtag_14"}
+          15: {state: "dogtag_15"}
+          16: {state: "dogtag_16"}
+          17: {state: "dogtag_17"}
+          18: {state: "dogtag_18"}
+          19: {state: "dogtag_19"}
+          20: {state: "dogtag_20"}
+          21: {state: "dogtag_21"}
+          22: {state: "dogtag_22"}
+          23: {state: "dogtag_23"}
+          24: {state: "dogtag_24"}
   - type: Clothing
     slots:
     - neck
@@ -139,13 +139,13 @@
 - type: entity
   parent: RMCInformationDogtag
   id: CMUAllergyDogtag
-  name: medical alert tag
-  description: A tag listing a medical condition its wearer needs treated carefully.
+  name: 医疗警示标签
+  description: 列出佩戴者需谨慎治疗的医疗状况的标签。
 
 - type: entity
   id: RMCDogtagProp
-  name: dog tag
-  description: A fallen marine's dog tag, no body in sight.
+  name: 狗牌
+  description: 一名阵亡海军陆战队员的狗牌，不见尸体。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/dogtags.rsi
@@ -157,9 +157,9 @@
 - type: entity
   parent: Clothing
   id: CMIDCardBase
-  name: identification holo-badge
-  description: A slice of encoded compressed fiber glass. Used for identification and access control.
-  categories: [ HideSpawnMenu ]
+  name: 身份识别全息徽章
+  description: 一片经过编码的压缩玻璃纤维。用于身份识别和访问控制。
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/id.rsi
@@ -186,9 +186,9 @@
 - type: entity
   parent: CMIDCardBase
   id: CMIDCardGold
-  name: gold identification holo-badge
-  description: A gold plated holo-badge which shows power and might.
-  categories: [ HideSpawnMenu ]
+  name: 金色身份识别全息徽章
+  description: 一枚镀金全息徽章，彰显权力与威势。
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/gold_id.rsi
@@ -201,9 +201,9 @@
 - type: entity
   parent: CMIDCardBase
   id: CMIDCardSilver
-  name: silver identification holo-badge
-  description: A silver plated holo-badge which shows honour and dedication.
-  categories: [ HideSpawnMenu ]
+  name: 银色身份识别全息徽章
+  description: 一枚镀银全息徽章，彰显荣誉与奉献。
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/silver_id.rsi
@@ -216,9 +216,9 @@
 - type: entity
   parent: CMIDCardBase
   id: CMIDCardLanyard
-  name: identification holo-lanyard
-  description: A crude holo-lanyard. As cheap as they come.
-  categories: [ HideSpawnMenu ]
+  name: 身份识别全息挂绳
+  description: 粗糙的全息挂绳。要多廉价有多廉价。
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/CMIDs/lanyard.rsi
@@ -230,7 +230,7 @@
 
 - type: entity
   id: FactionMarine
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: IFFFaction
   - type: FactionFrequencies
@@ -253,7 +253,7 @@
 
 - type: entity
   id: FactionSurvivor
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: IFFFaction
   - type: FactionFrequencies
@@ -262,7 +262,7 @@
 
 - type: entity
   id: FactionTSE
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: IFFFaction
   - type: FactionFrequencies

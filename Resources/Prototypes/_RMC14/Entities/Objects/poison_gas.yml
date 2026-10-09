@@ -1,6 +1,6 @@
-﻿- type: entity
+- type: entity
   id: RMCLandingZoneGas
-  name: CN20-X miasma
+  name: CN20-X 瘴气
   components:
   - type: Transform
     anchored: true
@@ -14,8 +14,7 @@
     fixtures:
       fix1:
         hard: false
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         mask:
         - MobMask
@@ -46,7 +45,7 @@
 
 - type: entity
   id: RMCGasWeedKiller
-  name: C10-W weedkiller
+  name: C10-W 除草剂
   components:
   - type: Transform
     anchored: true

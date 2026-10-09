@@ -3,7 +3,7 @@
 - type: entity
   abstract: true
   id: RMCWallRiverBase
-  description: A huge chunk of metal used to separate rooms.
+  description: 一大块用来分隔房间的金属。
   placement:
     mode: SnapgridCenter
     snap:
@@ -23,8 +23,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - TableMask
@@ -44,7 +43,7 @@
 - type: entity
   parent: RMCWallRiverBase
   id: RMCWallRiver
-  name: river wall
+  name: 河堤
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Walls/river_wall.rsi

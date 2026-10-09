@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructureDynamic
   id: RMCCanisterBase
-  name: canister
-  description: A gas canister.
+  name: 气罐
+  description: 一个气罐。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/atmos.rsi
@@ -11,8 +11,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.3
         density: 155
         mask:
@@ -20,14 +19,13 @@
         layer:
         - MachineLayer
   - type: Damageable
-    damageModifierSet: null
+    damageModifierSet:
   - type: Injurable
     damageContainer: Inorganic
   - type: InteractionOutline
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:DoActsBehavior
@@ -45,35 +43,35 @@
 - type: entity
   parent: RMCCanisterBase
   id: RMCCanisterGrey
-  name: canister (Air)
-  description: A gas canister.
+  name: 气罐（空气）
+  description: 一个气罐。
   components:
   - type: Sprite
-    state: grey 
+    state: grey
 
 - type: entity
   parent: RMCCanisterBase
   id: RMCCanisterBlack
-  name: canister (CO2)
-  description: A gas canister.
+  name: 二氧化碳罐
+  description: 一个气罐。
   components:
   - type: Sprite
-    state: black 
-    
+    state: black
+
 - type: entity
   parent: RMCCanisterBase
   id: RMCCanisterBlue
-  name: canister (O2)
-  description: A gas canister.
+  name: 氧气罐（O2）
+  description: 一个气罐。
   components:
   - type: Sprite
     state: blue
-    
+
 - type: entity
   parent: RMCCanisterBase
   id: RMCCanisterRed
-  name: canister (N2)
-  description: A gas canister.
+  name: 氮气罐（N2）
+  description: 一个气罐。
   components:
   - type: Sprite
     state: red
@@ -81,40 +79,39 @@
 - type: entity
   parent: RMCCanisterBase
   id: RMCCanisterOrange
-  name: canister (Phoron)
-  description: A gas canister.
+  name: 福隆气罐
+  description: 一个气罐。
   components:
   - type: Sprite
-    state: orange 
-    
+    state: orange
+
 - type: entity
   parent: RMCCanisterBase
   id: RMCCanisterRedWhite
-  name: canister (N2O)
-  description: A gas canister.
+  name: 气罐（N2O）
+  description: 一个气罐。
   components:
   - type: Sprite
     state: redws
-    
+
 # Broken
 - type: entity
   parent: RMCCanisterBase
   id: RMCCanisterBrokenBase
-  name: broken canister
-  description: A broken gas canister. Completely useless.
-  components:  
+  name: 破损的气罐
+  description: 一个破损的气罐。完全没用。
+  components:
   - type: Sprite
     sprite: _RMC14/Structures/atmos.rsi
     state: yellow-1
     noRot: true
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak

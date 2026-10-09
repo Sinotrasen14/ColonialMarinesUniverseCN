@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   abstract: true
   id: CMVinesBase
-  name: vines
+  name: 藤蔓
   placement:
     mode: SnapgridCenter
     snap:
@@ -10,8 +10,7 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Weapons/slash.ogg"
+        path: "/Audio/Weapons/slash.ogg"
   - type: Sprite
     sprite: _RMC14/Objects/vines.rsi
     state: heavy_1
@@ -36,8 +35,7 @@
       fix1:
         hard: false
         density: 7
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         layer:
         - MidImpassable
@@ -46,12 +44,11 @@
   - type: Injurable
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 10
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: TemperatureDamage
     heatDamage:
       types:
@@ -83,8 +80,8 @@
 - type: entity
   parent: CMVinesBase
   id: CMVinesLight
-  name: vines
-  description: A mass of twisted vines.
+  name: 藤蔓
+  description: 一团缠绕的藤蔓。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/vines.rsi
@@ -99,8 +96,8 @@
 - type: entity
   parent: CMVinesBase
   id: CMVinesHeavy
-  name: vines
-  description: A thick, coiled mass of twisted vines.
+  name: 藤蔓
+  description: 一大团粗壮盘绕的扭曲藤蔓。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/vines.rsi

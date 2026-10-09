@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: VehicleSPPTankInteriorBase
-  name: UPP tank interior piece
-  description: A decorative interior piece for an UPP tank.
+  name: UPP坦克内部装饰件
+  description: UPP坦克的内部装饰件。
   placement:
     mode: PlaceFree
   components:
@@ -14,8 +14,8 @@
 - type: entity
   abstract: true
   id: VehicleSPPTankChassisBase
-  name: UPP tank interior chassis
-  description: A chassis segment for an UPP tank interior.
+  name: UPP坦克内部底盘
+  description: UPP坦克内部底盘的一个底盘段。
   placement:
     mode: PlaceFree
   components:
@@ -52,8 +52,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -109,8 +108,8 @@
   abstract: true
   parent: CMClosetBase
   id: VehicleSPPTankLockerBase
-  name: UPP tank locker
-  description: A storage locker for UPP tank interiors.
+  name: UPP坦克储物柜
+  description: 用于UPP坦克内部的储物柜。
   placement:
     mode: PlaceFree
   components:
@@ -137,14 +136,14 @@
 - type: entity
   parent: VehicleSPPTankLockerBase
   id: VehicleSPPTankLocker
-  name: UPP tank locker
+  name: UPP 储罐柜
 
 - type: entity
   abstract: true
   parent: CMClosetBase
   id: VehicleSPPTankSmallLockerBase
-  name: UPP tank small locker
-  description: A small storage locker for UPP tank interiors.
+  name: UPP坦克小型储物柜
+  description: 用于UPP坦克内部的小型储物柜。
   placement:
     mode: PlaceFree
   components:
@@ -171,14 +170,14 @@
 - type: entity
   parent: VehicleSPPTankSmallLockerBase
   id: VehicleSPPTankSmallLocker
-  name: UPP tank small locker
+  name: UPP储罐小型储物柜
 
 - type: entity
   abstract: true
   parent: CMClosetBase
   id: VehicleSPPTankSmallLockerAltBase
-  name: UPP tank small locker (alt)
-  description: An alternate small storage locker for UPP tank interiors.
+  name: UPP坦克小型储物柜（备选）
+  description: UPP坦克内部备选的小型储物柜。
   placement:
     mode: PlaceFree
   components:
@@ -205,14 +204,14 @@
 - type: entity
   parent: VehicleSPPTankSmallLockerAltBase
   id: VehicleSPPTankSmallLockerAlt
-  name: UPP tank small locker (alt)
+  name: UPP 坦克小型储物柜（备用）
 
 - type: entity
   abstract: true
   parent: CMClosetBase
   id: VehicleSPPTankAmmoStorageBase
-  name: UPP tank ammunition storage
-  description: Ammunition storage for UPP tank interiors.
+  name: UPP坦克弹药储存
+  description: UPP坦克内部的弹药储存。
   placement:
     mode: PlaceFree
   components:
@@ -239,13 +238,13 @@
 - type: entity
   parent: VehicleSPPTankAmmoStorageBase
   id: VehicleSPPTankAmmoStorage
-  name: UPP tank ammunition storage
+  name: UPP坦克弹药储存
 
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleSPPTankAmmoLoader
-  name: UPP tank ammo loader
-  description: A loader for UPP tank hardpoint ammunition.
+  name: UPP坦克弹药装填器
+  description: 用于UPP坦克挂载点弹药的装填器。
   components:
   - type: Sprite
     drawdepth: BelowMobs

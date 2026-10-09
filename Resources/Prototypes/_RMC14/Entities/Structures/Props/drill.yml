@@ -1,14 +1,13 @@
-﻿- type: entity
+- type: entity
   parent: RMCPropBase
   id: RMCDrill
-  name: mining drill
-  description: An old mining drill, seemingly used for mining. And possibly drilling.
+  name: 采矿钻机
+  description: 一台老旧的采矿钻机，似乎用于采矿。也可能用于钻孔。
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,1.5"
         density: 190
         layer:

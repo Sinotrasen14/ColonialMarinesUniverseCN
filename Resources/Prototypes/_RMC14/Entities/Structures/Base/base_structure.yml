@@ -83,7 +83,7 @@
 - type: entity
   abstract: true
   id: RMCBaseWallInvincibleNoIcon
-  description: A huge chunk of metal used to separate rooms.
+  description: 一大块用于分隔房间的金属。
   placement:
     mode: SnapgridCenter
     snap:
@@ -104,8 +104,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -133,7 +132,7 @@
   abstract: true
   parent: RMCBaseWallInvincibleNoIcon
   id: CMBaseWallInvincible
-  description: A huge chunk of metal used to separate rooms.
+  description: 一大块用于分隔房间的金属。
   placement:
     mode: SnapgridCenter
     snap:
@@ -146,7 +145,7 @@
   abstract: true
   parent: CMBaseWallInvincible
   id: CMBaseWall
-  description: A huge chunk of metal used to separate rooms.
+  description: 用来分隔房间的一大块金属。
   components:
   - type: Damageable
     damageModifierSet: CMU14StructuralMarine
@@ -193,7 +192,7 @@
   - BaseWall
   - CMBaseXenoStructure
   id: CMBaseWallXeno
-  name: resin wall
+  name: 树脂墙
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -229,7 +228,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCWallInvisibleBulletPassible
-  name: wall blocker
+  name: 墙壁阻挡器
   suffix: Projectile Passible
   placement:
     mode: SnapgridCenter
@@ -249,8 +248,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -266,7 +264,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCWallInvisibleBulletBlocker
-  name: wall blocker
+  name: 墙壁阻挡器
   suffix: Projectile Blocker
   placement:
     mode: SnapgridCenter
@@ -286,8 +284,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         hard: true
         mask:
@@ -305,7 +302,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCWallInvisibleBulletLightBlocker
-  name: wall blocker
+  name: 墙壁阻挡器
   suffix: Projectile + Light Blocker
   placement:
     mode: SnapgridCenter
@@ -324,8 +321,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         hard: true
         mask:
@@ -344,7 +340,7 @@
 - type: entity
   parent: MarkerBase
   id: RMCBlockerAirtight
-  name: airtight blocker
+  name: 气密封堵器
   placement:
     mode: SnapgridCenter
   components:

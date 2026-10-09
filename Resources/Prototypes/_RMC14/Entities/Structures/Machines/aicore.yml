@@ -1,7 +1,7 @@
 - type: entity
   id: RMCAICore
   name: ARES v3.2
-  description: This is the artificial intelligence system for the UNS Almayer. Like many other military-grade AI systems, this one was manufactured by We-Yu.
+  description: 这是 UNS Almayer 的人工智能系统。与许多其他军用级人工智能系统一样，这个系统由 We-Yu 制造。
   placement:
     mode: SnapgridCenter
   components: #has no collission in 13 they have invisible walls behind it
@@ -28,16 +28,15 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Damageable
     damageModifierSet: Metallic
   - type: Injurable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1000 # Okey hear me out down there... Health is 1000 in 13 but you can go over 1000+ and it goes on...
 #      behaviors:
 #      - !type:DoActsBehavior Commented this part out because in 13 after 200+ damage it fucking explodes
@@ -46,8 +45,8 @@
 
 - type: entity
   id: RMCAICoreProcessor
-  name: ARES Processor
-  description: An external processor for ARES, used to process vast amounts of information.
+  name: ARES 处理器
+  description: ARES 的外部处理器，用于处理海量信息。
   placement:
     mode: SnapgridCenter
   components: #has no collission in 13 they have invisible walls behind it
@@ -73,15 +72,14 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Physics
     bodyType: Static
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         density: 190
         mask:
@@ -94,8 +92,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1000 # Okey hear me out down there... Health is 1000 in 13 but you can go over 1000+ and it goes on...
 #      behaviors:
 #      - !type:DoActsBehavior
@@ -104,8 +101,8 @@
 - type: entity
   id: RMCAICoreProcessorBioscan
   parent: RMCAICoreProcessor
-  name: ARES Processor (Bioscan)
-  description: The external component of ARES' Bioscan systems. Without this, the UNS Almayer would be incapable of running bioscans!
+  name: ARES 处理器（生物扫描）
+  description: ARES 生物扫描系统的外部组件。没有它，UNS Almayer 将无法运行生物扫描！
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/aicoremachinery.rsi
@@ -117,8 +114,8 @@
 - type: entity
   id: RMCAICoreProcessorInterface
   parent: RMCAICoreProcessor
-  name: ARES Processor (Interface)
-  description: An external processor for ARES; this one handles core processes for interfacing with the crew, including radio transmissions and broadcasts.
+  name: ARES 处理器（接口）
+  description: ARES 的外部处理器；该处理器负责处理与船员交互的核心流程，包括无线电传输和广播。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/aicoremachinery.rsi
@@ -130,8 +127,8 @@
 - type: entity
   id: RMCAICoreProcessorHERMES
   parent: RMCAICoreProcessor
-  name: ARES Processor (HERMES)
-  description: The external component of ARES' HERMES processor. Primarily responsible for coordinating Average Joes and Maintenance Drones. It definitely wasn't stolen from Novaris Industries.
+  name: ARES 处理器（HERMES）
+  description: ARES 处理器（HERMES）的外部组件。主要负责协调普通人与维护无人机。它绝对不是从诺瓦里斯工业偷来的。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/aicoremachinery.rsi
@@ -143,8 +140,8 @@
 - type: entity
   id: RMCAICoreCPU
   parent: RMCAICoreProcessor
-  name: ARES CPU
-  description: This is ARES' central processor. Made of a casing designed to withstand nuclear blasts, the CPU also contains ARES' blackbox recorder.
+  name: ARES中央处理器
+  description: 这是ARES的中央处理器。其外壳设计可抵御核爆，该中央处理器还包含ARES的黑匣子记录器。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/aicoremachinery.rsi
@@ -156,8 +153,8 @@
 - type: entity
   id: RMCAICoreSubstrate
   parent: RMCAICoreProcessor
-  name: ARES Substrate
-  description: The memory substrate of ARES, containing complex protocols and information. Limited capabilities can operate on substrate alone, without the main ARES Unit operational.
+  name: ARES 基质
+  description: ARES 的记忆基质，包含复杂的协议和信息。有限的能力可以仅靠基质运行，无需主 ARES 单元处于运行状态。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/aicoremachinery.rsi
@@ -169,8 +166,8 @@
 - type: entity
   parent: RMCCommunicationsConsoleBase
   id: RMCAIConsoleARES
-  name: ARES Interface
-  description: A console built to interface with ARES, allowing for 1:1 communication.
+  name: ARES 接口
+  description: 一个用于与 ARES 对接的控制台，支持一对一通信。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/aicoremachinery.rsi
@@ -182,8 +179,8 @@
 - type: entity
   parent: RMCAIConsoleARES
   id: RMCAIConsoleInterface
-  name: AI interface console
-  description: A large, bulky computer intended to allow the user to interface with the ship's AI.
+  name: AI接口控制台
+  description: 一台庞大笨重的计算机，旨在让用户与飞船的人工智能进行交互。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/aiconsoleinterface.rsi
@@ -193,14 +190,14 @@
 - type: entity
   parent: RMCCommunicationsConsoleBase
   id: RMCAIConsoleHERMES
-  name: HERMES Maintenance Controller
-  description: A console built to facilitate Average Joes and their operation, allowing for simple allocation of resources.
+  name: HERMES 维护控制器
+  description: 一个为方便普通用户及其操作而构建的控制台，让资源分配变得简单。
   components:
   - type: Sprite
     drawdepth: SmallObjects
     sprite: _RMC14/Structures/Machines/AIStuff/aicoremachinery.rsi
     state: console
-    layers: [ ]
+    layers: []
   - type: ApcPowerReceiver
     powerLoad: 0
     needsPower: false # Intentional
@@ -216,7 +213,7 @@
 - type: entity
   abstract: true
   id: MasterARESLogType
-  name: SYS Error Log
+  name: SYS错误日志
   components:
   - type: ARESLogType
 
@@ -226,7 +223,7 @@
 - type: entity
   parent: MasterARESLogType
   id: ARESTabRequisitionsLogs
-  name: Requisitions Logs
+  name: 请购单日志
   components:
   - type: ARESLogType
     permissions:
@@ -235,7 +232,7 @@
 - type: entity
   parent: MasterARESLogType
   id: ARESTabAnnouncementLogs
-  name: Announcement Logs
+  name: 公告日志
   components:
   - type: ARESLogType
     permissions:
@@ -244,7 +241,7 @@
 - type: entity
   parent: MasterARESLogType
   id: ARESTabOrbitalCannonLogs
-  name: Orbital Cannon Logs
+  name: 轨道炮日志
   components:
   - type: ARESLogType
     permissions:
@@ -253,7 +250,7 @@
 - type: entity
   parent: MasterARESLogType
   id: ARESTabMedicalLogs
-  name: Medical Logs
+  name: 医疗日志
   components:
   - type: ARESLogType
     permissions:
@@ -262,7 +259,7 @@
 - type: entity
   parent: MasterARESLogType
   id: ARESTabARESLogs
-  name: ARES Logs
+  name: ARES 日志
   components:
   - type: ARESLogType
     permissions:
@@ -271,7 +268,7 @@
 - type: entity
   parent: MasterARESLogType
   id: ARESTabIdentificationLogs
-  name: Identification Logs
+  name: 识别日志
   components:
   - type: ARESLogType
     permissions:
@@ -280,7 +277,7 @@
 - type: entity
   parent: MasterARESLogType
   id: ARESTabManufacturingLogs
-  name: Manufacturing Logs
+  name: 制造日志
   components:
   - type: ARESLogType
     permissions:
@@ -289,7 +286,7 @@
 - type: entity
   parent: MasterARESLogType
   id: ARESTabIntelLogs
-  name: Intel Logs
+  name: 情报日志
   components:
   - type: ARESLogType
     permissions:
@@ -298,7 +295,7 @@
 - type: entity
   parent: MasterARESLogType
   id: ARESTabDropshipLogs
-  name: Dropship Logs
+  name: 代发货日志
   components:
   - type: ARESLogType
     permissions:

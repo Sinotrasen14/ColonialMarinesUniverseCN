@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,-0.36"
         density: 1500
         mask:
@@ -29,18 +28,18 @@
       map: ["enum.DoorVisualLayers.Base"]
     - state: closed_unlit
       shader: unshaded
-      map: [ "enum.DoorVisualLayers.BaseUnlit" ]
+      map: ["enum.DoorVisualLayers.BaseUnlit"]
     - state: welded
-      map: [ "enum.WeldableLayers.BaseWelded" ]
+      map: ["enum.WeldableLayers.BaseWelded"]
       visible: false
     - state: bolted
       shader: unshaded
-      map: [ "enum.DoorVisualLayers.BaseBolted" ]
+      map: ["enum.DoorVisualLayers.BaseBolted"]
     - state: emergency
       shader: unshaded
-      map: [ "enum.DoorVisualLayers.BaseEmergencyAccess" ]
+      map: ["enum.DoorVisualLayers.BaseEmergencyAccess"]
     - state: panel_open
-      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
       visible: false
   - type: AnimationPlayer
   - type: ApcPowerReceiver
@@ -59,9 +58,9 @@
     requiresDoorUnpowered: true
   - type: ContainerFill
     containers:
-      board: [ DoorElectronics ]
+      board: [DoorElectronics]
   - type: AccessReader
-    containerAccessProvider: null
+    containerAccessProvider:
   - type: ContainerContainer
     containers:
       board: !type:Container
@@ -101,13 +100,13 @@
     visuals:
       enum.ElectrifiedVisuals.ShowSparks:
         enum.ElectrifiedLayers.Sparks:
-          True: { visible: True }
-          False: { visible: False }
+          true: {visible: true}
+          false: {visible: false}
   - type: WiresVisuals
   - type: Airtight
     noAirWhenFullyAirBlocked: false
     airBlockedDirection:
-      - South
+    - South
   - type: Construction
     graph: CMWindoor
     node: windoor
@@ -119,8 +118,8 @@
 - type: entity
   parent: CMBaseWindoor
   id: CMWindoor
-  name: glass door
-  description: A window, that is also a door. A windoor if you will.
+  name: 玻璃门
+  description: 一扇窗，同时也是一扇门。如果你愿意，也可以叫它“窗门”。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Doors/Windoors/windoor.rsi
@@ -129,26 +128,25 @@
     structure: true
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: WindowShatter
       - !type:SpawnEntitiesBehavior
-          spawn:
-            CMShardGlass:
-              min: 1
-              max: 1
-            RMCCableCoil1: #dropping a cable coil more than was used to make it, because... parity!
-              min: 2
-              max: 2
-            DoorElectronics:
-              min: 1
-              mix: 1
+        spawn:
+          CMShardGlass:
+            min: 1
+            max: 1
+          RMCCableCoil1:   #dropping a cable coil more than was used to make it, because... parity!
+            min: 2
+            max: 2
+          DoorElectronics:
+            min: 1
+            mix: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: XenoCrusherChargable
   - type: RMCMesonsNonviewable
   - type: RMCHijackRandomDamageTarget
@@ -171,8 +169,8 @@
 - type: entity
   parent: CMBaseWindoor
   id: CMWindoorSecure
-  name: secure glass door
-  description: A thick chunk of tempered glass on metal track. Probably more robust than you.
+  name: 安全玻璃门
+  description: 一块厚实的钢化玻璃，装在金属轨道上。大概比你还结实。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Doors/Windoors/secure.rsi
@@ -184,26 +182,25 @@
   - type: ImmuneToUnarmed
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: WindowShatter
       - !type:SpawnEntitiesBehavior
-          spawn:
-            CMShardGlass: #doesn't drop Reinforced glass shard, because parity.
-              min: 1
-              max: 1
-            RMCCableCoil1: #double cable coil again.
-              min: 2
-              max: 2
-            DoorElectronics:
-              min: 1
-              mix: 1
+        spawn:
+          CMShardGlass:   #doesn't drop Reinforced glass shard, because parity.
+            min: 1
+            max: 1
+          RMCCableCoil1:   #double cable coil again.
+            min: 2
+            max: 2
+          DoorElectronics:
+            min: 1
+            mix: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: RMCHijackRandomDamageTarget
     category: Windoor
     damage:

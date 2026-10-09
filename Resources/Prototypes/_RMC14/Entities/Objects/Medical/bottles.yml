@@ -28,17 +28,16 @@
     examineText: rmc-bottle-closed
     openVerbText: rmc-bottle-remove-lid
     closeVerbText: rmc-bottle-put-lid
-    sound: null
+    sound:
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
@@ -46,7 +45,7 @@
           collection: GlassBreak
           params:
             volume: -4
-      - !type:SpillBehavior { }
+      - !type:SpillBehavior {}
       - !type:SpawnEntitiesBehavior
         spawn:
           CMShardGlass:
@@ -54,7 +53,7 @@
             max: 1
         transferForensics: true
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: InteractedBlacklist
     blacklist:
       components:
@@ -94,8 +93,8 @@
 - type: entity
   parent: CMBottleFilled
   id: CMBottleBicaridine
-  name: bicaridine bottle
-  description: A small bottle. Contains Bicaridine - Used to treat brute damage.
+  name: 比卡利定瓶
+  description: 一个小瓶子。内含比卡利定，用于治疗外伤。
   components:
   - type: Solution
     id: drink
@@ -111,8 +110,8 @@
 - type: entity
   parent: CMBottleFilled
   id: CMBottleKelotane
-  name: kelotane bottle
-  description: A small bottle. Contains kelotane - used to treat burned areas.
+  name: 凯洛坦瓶
+  description: 一个小瓶子。内装凯洛坦，用于治疗烧伤部位。
   components:
   - type: Solution
     id: drink
@@ -128,8 +127,8 @@
 - type: entity
   parent: CMBottleFilled
   id: CMBottleDylovene
-  name: dylovene bottle
-  description: A small bottle of dylovene. Counters poisons, and repairs toxin damage. A wonder drug.
+  name: 地洛芬药瓶
+  description: 一小瓶地洛芬。可抵抗毒素，修复毒素伤害。一种神奇药物。
   components:
   - type: Solution
     id: drink
@@ -145,8 +144,8 @@
 - type: entity
   parent: CMBottleFilled
   id: CMBottleDexalin
-  name: dexalin bottle
-  description: A small bottle. Contains dexalin - used to treat oxygen deprivation.
+  name: 地塞林瓶
+  description: 一个小瓶子。内含地塞林——用于治疗缺氧。
   components:
   - type: Solution
     id: drink
@@ -162,8 +161,8 @@
 - type: entity
   parent: CMBottleFilled
   id: CMBottleInaprovaline
-  name: inaprovaline bottle
-  description: A small bottle. Contains inaprovaline - used to stabilize patients.
+  name: 伊纳普罗瓦林瓶
+  description: 一个小瓶子。内含伊纳普罗瓦林，用于稳定患者。
   components:
   - type: Solution
     id: drink
@@ -179,8 +178,8 @@
 - type: entity
   parent: CMBottleFilled
   id: CMBottleTricordrazine
-  name: tricordrazine bottle
-  description: A small bottle. Contains tricordrazine - A weak but catch-all medicine for treating all sorts of damage.
+  name: 三可拉嗪瓶
+  description: 一个小瓶子。内含三可拉嗪——一种药效较弱但能治疗各种损伤的万用药物。
   components:
   - type: Solution
     id: drink
@@ -199,8 +198,8 @@
   parent: CMBottleFilled
   id: RMCBottleAntiZed
   suffix: DO NOT MAP
-  name: "'Pathogen' cure bottle"
-  description: The bottle has a biohazard symbol on the front, and has a label, designating its use against Agent A0-3959X.91–15, colloquially known as the "Black Goo".
+  name: "“病原体”解药瓶"
+  description: 瓶身正面有一个生物危害标志，并贴有标签，标明其用于对抗 A0-3959X.91–15 病原体，俗称“黑水”。
   components:
   - type: Sprite
     layers:
@@ -223,8 +222,8 @@
 - type: entity
   parent: CMBottleFilled
   id: RMCBottleMindbreaker
-  name: mindbreaker bottle
-  description: A small bottle. Contains mindbreaker toxin - Fucks up anyone who takes it.
+  name: 精神破坏毒素瓶
+  description: 一个小瓶子。装有精神破坏毒素——会让任何服用它的人完蛋。
   components:
   - type: Solution
     id: drink
@@ -242,7 +241,7 @@
 - type: entity
   parent: CMBottleEmpty
   id: RMCLargeBottleEmpty
-  name: A large bottle.
+  name: 一个大瓶子。
   components:
   - type: Solution
     id: drink
@@ -277,8 +276,8 @@
 - type: entity
   parent: RMCLargeBottleFilled
   id: RMCLargeBottleDexalinPlus
-  name: large dexalin plus bottle
-  description: A large bottle. Contains dexalin plus - used to instantly treat oxygen deprivation.
+  name: 大瓶地塞林加
+  description: 一大瓶。含有地塞林加——用于立即治疗缺氧。
   components:
   - type: Solution
     id: drink
@@ -294,8 +293,8 @@
 - type: entity
   parent: RMCLargeBottleFilled
   id: RMCLargeBottleMeralyneBicaridine
-  name: large meralyne-bicaridine bottle
-  description: A large bottle. Contains a mix of meralyne and bicaridine - used to treat brute damage.
+  name: 大瓶美拉林-比卡立定
+  description: 一个大瓶子。含有美拉林和比卡立定的混合物，用于治疗钝击伤害。
   components:
   - type: Solution
     id: drink
@@ -314,8 +313,8 @@
 - type: entity
   parent: RMCLargeBottleFilled
   id: RMCLargeBottleKelotaneDermaline
-  name: large kelotane-dermaline bottle
-  description: A large bottle. Contains a mix of kelotane and dermaline - used to treat burned areas.
+  name: 大瓶凯洛坦-德玛林药瓶
+  description: 一个大瓶子。内含凯洛坦与德玛林的混合物，用于治疗烧伤部位。
   components:
   - type: Solution
     id: drink

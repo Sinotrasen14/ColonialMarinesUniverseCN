@@ -4,12 +4,12 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechDropshipCrewEquipment
-  name: ColMarTech Dropship Crew Equipment Rack
-  description: An automated equipment vendor for Dropship Crew
+  name: ColMarTech 运输机乘员装备架
+  description: 运输机乘员用的自动装备售卖机
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessPilot" ]
+    - ["CMAccessPilot"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/equipment.rsi
   - type: CMAutomatedVendor
@@ -18,7 +18,7 @@
     - CMPilotDropship
     - CMPilotGunship
     sections:
-    - name: Standard Equipment
+    - name: 标准设备
       takeAll: CMEquipment
       entries:
       # - id: CMJumpsuitPilot TODO RMC14: split DCC and Pilot Officer equipment vendors
@@ -29,33 +29,33 @@
       - id: RMCHeadCapPatrol
       - id: CMSatchel
       - id: CMMRE
-    - name: Gloves
-      choices: { CMHands: 1 }
+    - name: 手套
+      choices: {CMHands: 1}
       entries:
       - id: CMHandsInsulated
       - id: CMHandsBlackInsulated
-    - name: Armour
-      choices: { CMArmour: 1 }
+    - name: 盔甲
+      choices: {CMArmour: 1}
       entries:
       # - id: RMCArmorVestFlak TODO RMC14: same as the one in line 24
       - id: CMArmorM3VLFlakVest
       # - id: RMCCoatPilot TODO RMC14: same as the one in line 24
       - id: CMArmorM3VLBallistics
-    - name: Personal Sidearm
-      choices: { CMSidearm: 1 }
+    - name: 个人随身武器
+      choices: {CMSidearm: 1}
       entries:
       - id: CMWeaponPistolM1984
       - id: RMCMK80
-    - name: Belts
-      choices: { CMBelt: 1 }
+    - name: 腰带
+      choices: {CMBelt: 1}
       entries:
       - id: RMCBeltUtilityGeneral
       - id: CMBeltMarine
       - id: CMBeltMedicBagFilled
-        name: M276 pattern lifesaver bag (Full)
+        name: M276型救生包（满）
         recommended: true
       - id: CMBeltMedicalFilled
-        name: M276 pattern medical storage rig (Full)
+        name: M276型医疗储物胸挂（满）
         recommended: true
       - id: RMCBeltHolsterSMGPouch
       - id: RMCBeltHolsterPistol
@@ -63,21 +63,21 @@
       - id: RMCBeltHolsterRevolver
       - id: RMCM82FHolster
       - id: RMCM276ShotgunShellLoadingRig
-    - name: Pouches
-      choices: { CMPouches: 2 }
+    - name: 小袋
+      choices: {CMPouches: 2}
       entries:
       - id: RMCPouchFirstAidInjectors
-        name: first-aid pouch (refillable injectors)
+        name: 急救包（可再填充注射器）
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: first-aid pouch (gauze, ointment)
+        name: 急救包（纱布、药膏）
         recommended: true
       - id: RMCPouchFirstAidPills
-        name: first-aid pouch (pills)
+        name: 急救包（药丸）
         recommended: true
       - id: RMCPouchFirstResponder
       - id: RMCPouchFlareFilled
-        name: flare pouch (Full)
+        name: 信号弹袋（满）
       - id: RMCPouchGeneralLarge
       - id: RMCPouchMagazineLarge
       - id: RMCPouchMagazinePistolLarge
@@ -86,8 +86,8 @@
       - id: RMCPouchMedkit
       - id: RMCPouchPistol
       - id: RMCPouchSling
-    - name: Accessories
-      choices: { CMAccessories: 1 }
+    - name: 配件
+      choices: {CMAccessories: 1}
       entries:
       - id: CMWebbingBrown
         recommended: true
@@ -101,15 +101,15 @@
       - id: RMCWebbingBlackSmall
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
-    - name: Glasses
-      choices: { CMGlasses: 1 }
+    - name: 眼镜
+      choices: {CMGlasses: 1}
       entries:
       - id: RMCSunglasses
       - id: RMCGlassesMedicalHUDGlasses
         recommended: true
       - id: RMCGlassesAviators
-    - name: Flight Visor
-      choices: { CMFlightVisor: 1 }
+    - name: 飞行护目镜
+      choices: {CMFlightVisor: 1}
       entries:
       - id: RMCVisorPilotBlack
       - id: RMCVisorPilotDarkblue
@@ -117,13 +117,13 @@
       - id: RMCVisorPilotPurple
       - id: RMCVisorPilotRed
       - id: RMCVisorPilotYellow
-    - name: Masks
-      choices: { CMMasks: 1 }
+    - name: 面具
+      choices: {CMMasks: 1}
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif
       - id: RMCMaskRebreather
-    - name: Attachments
+    - name: 附件
       entries:
       - id: RMCAttachmentAngledGrip
         points: 10
@@ -161,7 +161,7 @@
         points: 10
       - id: RMCAttachmentVerticalGrip
         points: 10
-    - name: Ammunition
+    - name: 弹药
       entries:
       - id: CMMagazineRifleM4SPRAP
         points: 10
@@ -177,22 +177,22 @@
         points: 10
       - id: RMCSpeedLoader44Marksman
         points: 10
-    - name: Utilities
+    - name: 实用工具
       entries:
       # - id: CMPOFlightsuit # TODO: Port Flightsuit (not the uniform they normally wear)
       #   points: 10
       - id: CMFireExtinguisherPortable
-        name: Fire Extinguisher (Portable)
+        name: 灭火器（便携式）
         points: 5
       - id: RMCPouchGeneralLarge
         points: 15
       - id: RMCPouchMagazineLarge
         points: 15
       - id: RMCScabbardMacheteFilled
-        name: machete scabbard (Full)
+        name: 砍刀鞘（满）
         points: 10
       - id: RMCPouchMacheteFilled
-        name: machete pouch (Full)
+        name: 砍刀袋（满）
         points: 15
       - id: RMCMotionDetector
         points: 15
@@ -202,12 +202,12 @@
 - type: entity
   parent: ColMarTechBase
   id: ColMarTechDropshipCrewWeapon
-  name: ColMarTech Dropship Crew Weapon Rack
-  description: An automated combat equipment vendor for Dropship Crew
+  name: ColMarTech 运输机机组武器架
+  description: 运输机机组专用的自动战斗装备售货机
   components:
   - type: AccessReader
     access:
-    - [ "CMAccessPilot" ]
+    - ["CMAccessPilot"]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/guns.rsi
   - type: CMAutomatedVendor
@@ -216,7 +216,7 @@
     - CMPilotDropship
     - CMPilotGunship
     sections:
-    - name: Primary Firearms
+    - name: 主要枪械
       entries:
       - id: WeaponRifleM4SPR
         amount: 4
@@ -226,7 +226,7 @@
         amount: 4
       - id: RMCWeaponRifleM54C
         amount: 4
-    - name: Primary Ammunition
+    - name: 主弹药
       entries:
       - id: RMCBoxShotgunBuckshot
         amount: 12
@@ -240,7 +240,7 @@
         amount: 24
       - id: CMMagazineRifleM54C
         amount: 24
-    - name: Sidearms
+    - name: 副武器
       entries:
       - id: RMCWeaponPistolM77Empty
         amount: 4
@@ -252,7 +252,7 @@
         amount: 4
       - id: RMCWeaponPistolM82FEmpty
         amount: 4
-    - name: Sidearm Ammunition
+    - name: 副武器弹药
       entries:
       - id: CMMagazinePistolM77AP
         amount: 20
@@ -268,13 +268,13 @@
         amount: 16
       - id: RMCMagazinePistolM13
         amount: 10
-    - name: Attachments
+    - name: 附件
       entries:
       - id: RMCAttachmentRailFlashlight
         amount: 8
       - id: RMCAttachmentFlashlightGrip
         amount: 4
-    - name: Utilities
+    - name: 公用事业
       entries:
       - id: RMCFlashlight
         amount: 4

@@ -47,7 +47,7 @@
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectForcedSleeping
-  name: forced sleep
+  name: 强制睡眠 | forced sleep
   components:
   - type: ForcedSleepingStatusEffect
   - type: StunnedStatusEffect
@@ -57,7 +57,7 @@
 - type: entity
   parent: MobStatusEffectBase # Not even rejuvenate can cure SSD...
   id: StatusEffectSSDSleeping
-  name: forced sleep
+  name: 强制睡眠 | forced sleep
   components:
   - type: ForcedSleepingStatusEffect
   - type: StunnedStatusEffect
@@ -68,7 +68,7 @@
 - type: entity
   parent: MobStatusEffectBase
   id: StatusEffectPressureImmunity
-  name: pressure immunity
+  name: 压力免疫 | pressure immunity
   components:
   - type: PressureImmunityStatusEffect
 
@@ -77,14 +77,14 @@
   abstract: true
   parent: MobStatusEffectBase
   id: MutedStatusEffectBase
-  name: muted
+  name: 已静音 | muted
   components:
   - type: StatusEffectAlert
     alert: Muted
   - type: MutedStatusEffect
 
 - type: entity
-  parent: [ MutedStatusEffectBase, MobStatusEffectDebuff ]
+  parent: [MutedStatusEffectBase, MobStatusEffectDebuff]
   id: StatusEffectMuted
 
 - type: entity
@@ -109,9 +109,9 @@
     speakPopup: ventriloquist-puppet-cant-speak
 
 - type: entity
-  parent: [ MobStatusEffectBase, MobStatusEffectDebuff ]
+  parent: [MobStatusEffectBase, MobStatusEffectDebuff]
   id: StatusEffectChangelingMuted
-  name: imperceptibly muted
+  name: 难以察觉地柔和 | imperceptibly muted
   components:
   - type: MutedStatusEffect
 
@@ -119,7 +119,7 @@
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectDrowsiness
-  name: drowsiness
+  name: 困倦 | drowsiness
   components:
   - type: DrowsinessStatusEffect
 
@@ -127,7 +127,7 @@
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectSeeingRainbow
-  name: hallucinations
+  name: 幻觉 | hallucinations
   components:
   - type: SeeingRainbowsStatusEffect
   - type: ExaminableStatusEffect
@@ -137,15 +137,15 @@
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectWoozy
-  name: woozy
+  name: 头晕的 | woozy
   components:
   - type: DrunkStatusEffect
 
 # Causes you to get drunk
 - type: entity
-  parent: [ StatusEffectWoozy, StatusEffectSlurred, StatusEffectClumsyDrunk ]
+  parent: [StatusEffectWoozy, StatusEffectSlurred, StatusEffectClumsyDrunk]
   id: StatusEffectDrunk
-  name: drunk
+  name: 醉酒 | drunk
   components:
   - type: ExaminableStatusEffect
     messageId: status-effect-examine-drunk
@@ -156,7 +156,7 @@
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectBlindness
-  name: temporary blindness
+  name: 暂时性失明 | temporary blindness
   components:
   - type: StatusEffect
     whitelist:
@@ -172,7 +172,7 @@
 - type: entity
   parent: MobStatusEffectDebuff
   id: StatusEffectFlashed
-  name: flashed
+  name: 闪现 | flashed
   components:
   - type: StatusEffect
     whitelist:

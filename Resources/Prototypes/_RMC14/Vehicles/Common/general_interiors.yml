@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: VehicleInteriorGeneralBase
-  name: vehicle interior piece
-  description: A decorative vehicle interior fixture.
+  name: 车辆内饰件
+  description: 一种装饰性车辆内饰固定装置。
   placement:
     mode: SnapgridCenter
   components:
@@ -17,8 +17,8 @@
   abstract: true
   parent: VehicleInteriorGeneralBase
   id: VehicleInteriorWallMountedBase
-  name: vehicle interior wall mount
-  description: A wall-mounted vehicle interior fixture.
+  name: 车辆内饰壁挂件
+  description: 一种壁挂式车辆内饰固定装置。
   placement:
     mode: PlaceFree
   components:
@@ -29,8 +29,8 @@
   abstract: true
   parent: CMClosetBase
   id: VehicleInteriorLockerBase
-  name: vehicle interior locker
-  description: A storage locker for vehicle interiors.
+  name: 车内储物柜
+  description: 用于车辆内部的储物柜。
   placement:
     mode: PlaceFree
   components:
@@ -57,8 +57,8 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleAmmoLoader
-  name: vehicle ammo loader
-  description: A loader for vehicle hardpoint ammunition.
+  name: 载具弹药装填器
+  description: 一种用于载具挂载点弹药的装填器。
   components:
   - type: Sprite
     state: weapons_loader
@@ -76,7 +76,7 @@
 - type: entity
   parent: VehicleInteriorGeneralBase
   id: VehicleInteriorArmorChairOld
-  name: armor chair (old)
+  name: 盔甲椅（旧）
   components:
   - type: Sprite
     state: armor_chair_old
@@ -87,7 +87,7 @@
 - type: entity
   parent: VehicleInteriorGeneralBase
   id: VehicleInteriorArmorChairUnfold
-  name: armor chair (unfolded)
+  name: 装甲椅（展开）
   components:
   - type: Sprite
     state: armor_chair_unfold
@@ -98,7 +98,7 @@
 - type: entity
   parent: VehicleInteriorGeneralBase
   id: VehicleInteriorArmorChair
-  name: armor chair
+  name: 盔甲椅
   components:
   - type: Sprite
     state: armor_chair
@@ -109,7 +109,7 @@
 - type: entity
   parent: VehicleInteriorGeneralBase
   id: VehicleInteriorArmorChairBuckled
-  name: armor chair (buckled)
+  name: 护甲椅（带扣）
   components:
   - type: Sprite
     state: armor_chair_buckled
@@ -120,7 +120,7 @@
 - type: entity
   parent: VehicleInteriorGeneralBase
   id: VehicleInteriorVehicleSeat
-  name: vehicle seat
+  name: 车辆座椅
   components:
   - type: Sprite
     state: vehicle_seat
@@ -128,7 +128,7 @@
 - type: entity
   parent: VehicleInteriorGeneralBase
   id: VehicleInteriorVehicleSeatBuckled
-  name: vehicle seat (buckled)
+  name: 车辆座椅（已系安全带）
   components:
   - type: Sprite
     state: vehicle_seat_buckled
@@ -136,7 +136,7 @@
 - type: entity
   parent: VehicleInteriorGeneralBase
   id: VehicleInteriorVehicleBars
-  name: vehicle bars
+  name: 车辆杆件
   components:
   - type: Sprite
     state: vehicle_bars
@@ -144,7 +144,7 @@
 - type: entity
   parent: VehicleInteriorGeneralBase
   id: VehicleInteriorVehicleSeatDestroyed
-  name: vehicle seat (destroyed)
+  name: 车辆座椅（已摧毁）
   components:
   - type: Sprite
     state: vehicle_seat_destroyed
@@ -152,7 +152,7 @@
 - type: entity
   parent: VehicleInteriorLockerBase
   id: VehicleInteriorLockerOpen
-  name: interior locker (open)
+  name: 内部储物柜（打开）
   components:
   - type: EntityStorageVisuals
     stateBaseClosed: locker_open
@@ -161,12 +161,12 @@
 - type: entity
   parent: VehicleInteriorLockerBase
   id: VehicleInteriorLocker
-  name: interior locker
+  name: 内部储物柜
 
 - type: entity
   parent: VehicleInteriorLockerBase
   id: VehicleInteriorLockerMedical
-  name: interior locker (medical)
+  name: 内部储物柜（医疗）
   components:
   - type: Sprite
     layers:
@@ -182,8 +182,8 @@
   abstract: true
   parent: RMCExtinguisherCabinet
   id: VehicleInteriorExtinguisherCabinetBase
-  name: interior extinguisher cabinet
-  description: A wall-mounted fire extinguisher cabinet for vehicle interiors.
+  name: 车内灭火器柜
+  description: 壁挂式车内灭火器柜
   placement:
     mode: PlaceFree
   components:
@@ -203,17 +203,17 @@
     visuals:
       enum.ItemCabinetVisuals.ContainsItem:
         enum.ItemCabinetVisuals.Layer:
-          True: { state: extinguisher_full }
-          False: { state: extinguisher_empty }
+          true: {state: extinguisher_full}
+          false: {state: extinguisher_empty}
       enum.OpenableVisuals.Opened:
         enum.ItemCabinetVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
 
 - type: entity
   parent: VehicleInteriorExtinguisherCabinetBase
   id: VehicleInteriorExtinguisher
-  name: interior extinguisher
+  name: 室内灭火器
   components:
   - type: ContainerFill
     containers:
@@ -223,7 +223,7 @@
 - type: entity
   parent: VehicleInteriorExtinguisherCabinetBase
   id: VehicleInteriorExtinguisherClosed
-  name: interior extinguisher (closed)
+  name: 内部灭火器（关闭）
   components:
   - type: ContainerFill
     containers:
@@ -233,7 +233,7 @@
 - type: entity
   parent: VehicleInteriorExtinguisherCabinetBase
   id: VehicleInteriorExtinguisherFull
-  name: interior extinguisher (full)
+  name: 内部灭火器（满）
   components:
   - type: Openable
     opened: true
@@ -245,7 +245,7 @@
 - type: entity
   parent: VehicleInteriorExtinguisherCabinetBase
   id: VehicleInteriorExtinguisherMini
-  name: interior extinguisher (mini)
+  name: 内部灭火器（迷你）
   components:
   - type: Openable
     opened: true
@@ -263,17 +263,17 @@
     visuals:
       enum.ItemCabinetVisuals.ContainsItem:
         enum.ItemCabinetVisuals.Layer:
-          True: { state: extinguisher_mini }
-          False: { state: extinguisher_empty }
+          true: {state: extinguisher_mini}
+          false: {state: extinguisher_empty}
       enum.OpenableVisuals.Opened:
         enum.ItemCabinetVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
 
 - type: entity
   parent: VehicleInteriorExtinguisherCabinetBase
   id: VehicleInteriorExtinguisherEmpty
-  name: interior extinguisher (empty)
+  name: 内置灭火器（空）
   components:
   - type: Openable
     opened: true
@@ -281,7 +281,7 @@
 - type: entity
   parent: RMCNanoMed
   id: VehicleInteriorNanomed
-  name: nanomed
+  name: 纳米医学
   placement:
     mode: PlaceFree
   components:
@@ -305,18 +305,18 @@
 - type: entity
   parent: VehicleInteriorNanomed
   id: VehicleInteriorNanomedVend
-  name: nanomed (vend)
+  name: 纳米医学（供应商）
 
 - type: entity
   parent: VehicleInteriorNanomed
   id: VehicleInteriorNanomedDeny
-  name: nanomed (deny)
+  name: 纳米医学（拒绝）
 
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorMedVendor
-  name: medical vendor
-  description: Medical pharmaceutical dispenser. Provided by Weyland-Yutani's Pharmaceuticals Division.
+  name: 医疗用品售货机
+  description: 医疗药品售货机。由维兰德-汤谷公司制药部门提供。
   components:
   - type: Sprite
     state: med
@@ -334,7 +334,7 @@
       sprite: _RMC14/Structures/Vehicles/Interiors/general.rsi
       state: med_vend
     sections:
-    - name: Field supplies
+    - name: 现场用品
       entries:
       - id: CMBurnKit10
         amount: 10
@@ -344,7 +344,7 @@
         amount: 10
       - id: CMGauze10
         amount: 10
-    - name: Autoinjectors
+    - name: 自动注射器
       entries:
       - id: CMBicaridineAutoInjector
         amount: 5
@@ -360,7 +360,7 @@
         amount: 5
       - id: CMTricordrazineAutoInjector
         amount: 5
-    - name: Liquid bottles
+    - name: 液体瓶
       entries:
       - id: CMBottleBicaridine
         amount: 3
@@ -372,7 +372,7 @@
         amount: 3
       - id: CMBottleKelotane
         amount: 3
-    - name: Pill bottles
+    - name: 药瓶
       entries:
       - id: CMPillCanisterBicaridine
         amount: 4
@@ -384,7 +384,7 @@
         amount: 4
       - id: CMPillCanisterKelotane
         amount: 4
-    - name: Medical utilities
+    - name: 医疗实用工具
       entries:
       - id: CMDefibrillator
         amount: 3
@@ -410,7 +410,7 @@
 - type: entity
   parent: VehicleInteriorMedVendor
   id: VehicleInteriorMedVendorVend
-  name: medical vendor (vend)
+  name: 医疗供应商（vend）
   components:
   - type: Sprite
     state: med_vend
@@ -418,7 +418,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorMedVendorDeny
-  name: medical vendor (deny)
+  name: 医疗供应商（拒绝）
   components:
   - type: Sprite
     state: med_deny
@@ -426,7 +426,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorMedVendorOff
-  name: medical vendor (off)
+  name: 医疗供应商（关闭）
   components:
   - type: Sprite
     state: med_off
@@ -434,7 +434,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorMedVendorBroken
-  name: medical vendor (broken)
+  name: 医疗供应商（已损坏）
   components:
   - type: Sprite
     state: med_broken
@@ -442,7 +442,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorMedVendorPanel
-  name: medical vendor (panel)
+  name: 医疗供应商（小组）
   components:
   - type: Sprite
     state: med_panel
@@ -450,8 +450,8 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorBloodVendor
-  name: blood vendor
-  description: The Avant Biomedical Blood Pack Dispensary is the premier, top-of-the-line blood dispenser! Get yours today! Made by Avant Biomedical.
+  name: 血液供应商
+  description: Avant Biomedical 血包发放机是首屈一指、顶级的血液分配器！今天就获取您的吧！由 Avant Biomedical 制造。
   components:
   - type: Sprite
     state: blood
@@ -469,20 +469,20 @@
       sprite: _RMC14/Structures/Vehicles/Interiors/general.rsi
       state: blood_vend
     sections:
-    - name: Blood Packs
+    - name: 血包
       entries:
       - id: CMBloodPackFull
         amount: 30
-    - name: Miscellaneous
+    - name: 杂项
       entries:
       - id: CMBloodPack
         amount: 5
-        name: empty blood pack
+        name: 空血袋
 
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorBloodVendorVend
-  name: blood vendor (vend)
+  name: 血液商人（vend）
   components:
   - type: Sprite
     state: blood_vend
@@ -490,7 +490,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorBloodVendorDeny
-  name: blood vendor (deny)
+  name: 血液供应商（拒绝）
   components:
   - type: Sprite
     state: blood_deny
@@ -498,7 +498,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorBloodVendorOff
-  name: blood vendor (off)
+  name: 血液商人（关闭）
   components:
   - type: Sprite
     state: blood_off
@@ -506,7 +506,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorBloodVendorBroken
-  name: blood vendor (broken)
+  name: 血液商人（损坏）
   components:
   - type: Sprite
     state: blood_broken
@@ -514,7 +514,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorBloodVendorPanel
-  name: blood vendor (panel)
+  name: 血液商贩（面板）
   components:
   - type: Sprite
     state: blood_panel
@@ -522,7 +522,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorSupplyVendor
-  name: supply vendor
+  name: 供应商
   components:
   - type: Sprite
     state: supply
@@ -530,7 +530,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorSupplyVendorOff
-  name: supply vendor (off)
+  name: 供货厂商（关）
   components:
   - type: Sprite
     state: supply_off
@@ -538,7 +538,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorSupplyVendorBroken
-  name: supply vendor (broken)
+  name: 供应商（已损坏）
   components:
   - type: Sprite
     state: supply_broken
@@ -546,7 +546,7 @@
 - type: entity
   parent: VehicleInteriorWallMountedBase
   id: VehicleInteriorSupplyVendorPanel
-  name: supply vendor (panel)
+  name: 供应厂商（面板）
   components:
   - type: Sprite
     state: supply_panel
@@ -554,7 +554,7 @@
 - type: entity
   parent: RMCRotaryPhoneWallmount
   id: VehicleInteriorWallPhone
-  name: wall phone
+  name: 壁挂电话
   placement:
     mode: PlaceFree
   components:
@@ -563,29 +563,29 @@
     drawdepth: Overdoors
     layers:
     - state: wall_phone
-      map: [ "base" ]
+      map: ["base"]
   - type: GenericVisualizer
     visuals:
       enum.RotaryPhoneLayers.Layer:
         base:
-          Base: { state: wall_phone }
-          Ring: { state: wall_phone_ring }
-          Ear: { state: wall_phone_ear }
+          Base: {state: wall_phone}
+          Ring: {state: wall_phone_ring}
+          Ear: {state: wall_phone_ear}
 
 - type: entity
   parent: VehicleInteriorWallPhone
   id: VehicleInteriorWallPhoneRing
-  name: wall phone (ringing)
+  name: 壁挂电话（正在响铃）
 
 - type: entity
   parent: VehicleInteriorWallPhone
   id: VehicleInteriorWallPhoneEar
-  name: wall phone (off hook)
+  name: 壁挂式电话（摘机）
 
 - type: entity
   parent: RMCSurveillanceCameraAlmayer
   id: VehicleInteriorCamera
-  name: vehicle camera
+  name: 车载摄像头
   placement:
     mode: PlaceFree
   components:
@@ -597,7 +597,7 @@
     sprite: _RMC14/Structures/Wallmounts/camera.rsi
     drawdepth: Overdoors
     layers:
-    - map: [ "enum.SurveillanceCameraVisualsKey.Layer" ]
+    - map: ["enum.SurveillanceCameraVisualsKey.Layer"]
       state: camera
       cycle: true
   - type: SurveillanceCameraVisuals
@@ -610,7 +610,7 @@
 - type: entity
   parent: VehicleInteriorCamera
   id: VehicleInteriorCameraEMP
-  name: vehicle camera (EMP)
+  name: 车载摄像头（EMP）
   components:
   - type: SurveillanceCameraVisuals
     sprites:
@@ -622,8 +622,8 @@
 - type: entity
   parent: VehicleInteriorGeneralBase
   id: VehicleInvisibleWall
-  name: invisible wall (blocks vision)
-  description: An invisible blocking wall for vehicle interiors.
+  name: 隐形墙（阻挡视线）
+  description: 用于车辆内部的隐形阻挡墙。
   placement:
     mode: PlaceFree
   components:
@@ -635,8 +635,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -655,8 +654,8 @@
 - type: entity
   parent: VehicleInteriorGeneralBase
   id: VehicleInvisibleWallNoVision
-  name: invisible wall (no vision block)
-  description: An invisible blocking wall for vehicle interiors that does not block vision or light.
+  name: 隐形墙（不阻挡视野）
+  description: 用于车辆内部的隐形阻挡墙，不会阻挡视野或光线。
   placement:
     mode: PlaceFree
   components:
@@ -667,8 +666,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true

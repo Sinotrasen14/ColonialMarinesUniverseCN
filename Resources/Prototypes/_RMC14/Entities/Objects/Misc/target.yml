@@ -1,8 +1,8 @@
 - type: entity
-  name: human target
+  name: 人类目标
   id: RMCTargetHuman
   parent: BaseStructureDynamic
-  description: A shooting target. This one is a Human.
+  description: 一个射击目标。这个目标是人类。
   suffix: RMC
   components:
   - type: Sprite
@@ -18,8 +18,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 200
         mask:
@@ -33,14 +32,12 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 9999998
       behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 9999999
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -52,7 +49,7 @@
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: RMCAdjustableArmorValue
   - type: UserInterface
     interfaces:
@@ -68,8 +65,8 @@
         Heat: 1
   - type: Reactive
     groups:
-      Flammable: [ Touch ]
-      Extinguish: [ Touch ]
+      Flammable: [Touch]
+      Extinguish: [Touch]
   - type: FireVisuals
     sprite: _RMC14/Mobs/Effects/on_fire_xeno.rsi
     normalState: simple_onfire
@@ -81,10 +78,10 @@
   - type: CanBeFirePatted
 
 - type: entity
-  name: xenonid target
+  name: 异形靶
   id: RMCTargetXeno
   parent: RMCTargetHuman
-  description: A shooting target. This one is a xenonid.
+  description: 一个射击靶。这个是异形。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/target.rsi
@@ -93,38 +90,38 @@
 - type: entity
   id: RMCTargetArmored
   parent: RMCTargetHuman
-  name: shooting target
-  description: A shooting target. This one is an armored human.
+  name: 射击靶
+  description: 一个射击靶。这个靶子是一个装甲人。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/target.rsi
     state: target_a
 
 - type: entity
-  name: syndicate target
+  name: 辛迪加标靶
   id: RMCTargetSyndicate
   parent: RMCTargetHuman
-  description: A shooting target. This one is a syndicate agent.
+  description: 一个射击标靶。这个是辛迪加特工。
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi
     state: target_s
 
 - type: entity
-  name: clown target
+  name: 小丑靶
   id: RMCTargetClown
   parent: RMCTargetHuman
-  description: A shooting target. This one is a clown.
+  description: 一个射击靶。这个小丑造型的靶子。
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi
     state: target_c
 
 - type: entity
-  name: felinid target
+  name: 猫人靶子
   id: RMCTargetStrange
   parent: RMCTargetHuman
-  description: A shooting target. You aren't quite sure what this one is, but it seems to be extra robust.
+  description: 一个射击靶。你不太确定这是什么，但它似乎格外结实。
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi

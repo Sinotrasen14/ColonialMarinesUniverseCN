@@ -18,8 +18,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         layer:
         - SlipLayer
@@ -39,12 +38,11 @@
     damageContainer: StructuralXeno
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 45
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: ImmuneToUnarmed
   - type: MeleeSound
     soundGroups:
@@ -76,8 +74,8 @@
 - type: entity
   parent: XenoBaseFloorResin
   id: XenoStickyResin
-  name: sticky resin
-  description: A layer of disgusting sticky slime.
+  name: 黏性树脂
+  description: 一层令人恶心的黏滑黏液。
   components:
   - type: XenoConstructionPlasmaCost
     plasma: 55
@@ -89,8 +87,8 @@
 - type: entity
   parent: XenoStickyResin
   id: XenoStickyResinWeak
-  name: weak sticky resin
-  description: A thin and weak layer of disgusting sticky slime. It looks like it's already melting...
+  name: 微弱的黏性树脂
+  description: 一层又薄又弱的恶心黏稠黏液。看起来它已经在融化了……
   components:
   - type: Sprite
     state: sticky_weak
@@ -103,8 +101,8 @@
 - type: entity
   parent: XenoBaseFloorResin
   id: XenoFastResin
-  name: fast resin
-  description: A layer of disgusting sleek slime.
+  name: 速滑树脂
+  description: 一层令人恶心的光滑黏液。
   components:
   - type: Sprite
     state: fast
@@ -116,8 +114,8 @@
 - type: entity
   parent: XenoStickyResin
   id: XenoStickyResinWeakWeedbound
-  name: weak sticky resin
-  description: A thin and weak layer of disgusting sticky slime.
+  name: 弱效黏性树脂
+  description: 一层薄而微弱的恶心黏滑黏液。
   components:
   - type: Sprite
     state: sticky_weak
@@ -128,8 +126,8 @@
 - type: entity
   parent: XenoBaseFloorResin
   id: XenoResinSpikes
-  name: resin spikes
-  description: A small cluster of bone spikes. Ouch.
+  name: 树脂尖刺
+  description: 一小簇骨刺。哎哟。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/xeno_resin_spikes.rsi
@@ -137,8 +135,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.35,0.35,0.35"
         layer:
         - SlipLayer

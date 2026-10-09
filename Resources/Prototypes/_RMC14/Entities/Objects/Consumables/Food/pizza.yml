@@ -24,12 +24,12 @@
     heldPrefix: pizza
   - type: Solution
     solution:
-        maxVol: 40
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 30
-        - ReagentId: Vitamin
-          Quantity: 5
+      maxVol: 40
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 30
+      - ReagentId: Vitamin
+        Quantity: 5
 
 - type: entity
   abstract: true
@@ -43,20 +43,20 @@
     size: Tiny
   - type: Solution
     solution:
-        maxVol: 6
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 5
-        - ReagentId: Vitamin
-          Quantity: 0.8
+      maxVol: 6
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 5
+      - ReagentId: Vitamin
+        Quantity: 0.8
 
 # Food Pizzas
 
 - type: entity
   parent: RMCFoodPizzaFullBase
   id: RMCFoodPizzaMargheritaFull
-  name: margherita
-  description: The golden standard of pizzas.
+  name: 玛格丽特
+  description: 披萨的黄金标准。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/margherita.rsi
@@ -75,8 +75,8 @@
 - type: entity
   parent: RMCFoodPizzaSliceBase
   id: RMCFoodPizzaMargheritaSlice
-  name: margherita slice
-  description: A slice of the classic pizza.
+  name: 玛格丽特披萨切片
+  description: 一片经典披萨。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/margherita.rsi
@@ -90,8 +90,8 @@
 - type: entity
   parent: RMCFoodPizzaFullBase
   id: RMCFoodPizzaMeatFull
-  name: meat pizza
-  description: A pizza with meat topping.
+  name: 肉披萨
+  description: 一种带有肉类配料的披萨。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/meat.rsi
@@ -109,8 +109,8 @@
 - type: entity
   parent: RMCFoodPizzaSliceBase
   id: RMCFoodPizzaMeatSlice
-  name: meat pizza slice
-  description: A slice of a meaty pizza.
+  name: 肉披萨切片
+  description: 一片肉披萨。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/meat.rsi
@@ -125,8 +125,8 @@
 - type: entity
   parent: RMCFoodPizzaFullBase
   id: RMCFoodPizzaMushroomFull
-  name: mushroom pizza
-  description: Very special pizza.
+  name: 蘑菇披萨
+  description: 非常特别的披萨。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/mushroom.rsi
@@ -143,8 +143,8 @@
 - type: entity
   parent: RMCFoodPizzaSliceBase
   id: RMCFoodPizzaMushroomSlice
-  name: mushroom pizza slice
-  description: Maybe it is the last slice of pizza in your life.
+  name: 蘑菇披萨片
+  description: 也许这是你人生中最后一片披萨。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/mushroom.rsi
@@ -158,8 +158,8 @@
 - type: entity
   parent: RMCFoodPizzaFullBase
   id: RMCFoodPizzaVegetableFull
-  name: vegetable pizza
-  description: No one of Tomato Sapiens were harmed during making this pizza.
+  name: 蔬菜披萨
+  description: 制作这份披萨时，没有任何番茄智人受到伤害。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/vegetable.rsi
@@ -176,18 +176,18 @@
       amount: 6
   - type: Solution
     solution:
-        maxVol: 40
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 25
-        - ReagentId: Vitamin
-          Quantity: 5
+      maxVol: 40
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 25
+      - ReagentId: Vitamin
+        Quantity: 5
 
 - type: entity
   parent: RMCFoodPizzaSliceBase
   id: RMCFoodPizzaVegetableSlice
-  name: vegetable slice
-  description: A slice of the most green pizza of all pizzas not containing green ingredients.
+  name: 蔬菜披萨片
+  description: 所有不含绿色食材的披萨中，最“绿色”的那款披萨的一片。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/vegetable.rsi
@@ -200,18 +200,18 @@
     - bread
   - type: Solution
     solution:
-        maxVol: 6
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 4
-        - ReagentId: Vitamin
-          Quantity: 1
+      maxVol: 6
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: Vitamin
+        Quantity: 1
 
 - type: entity
   parent: RMCFoodPizzaFullBase
   id: RMCFoodPizzaHawaiianFull
-  name: hawaiian pizza
-  description: Makes people burst into tears. Tears of joy or sadness depends on the person's fondness for pineapple.
+  name: 夏威夷披萨
+  description: 让人泪流满面。究竟是喜悦的泪水还是悲伤的泪水，取决于个人对菠萝的喜爱程度。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/hawaiian.rsi
@@ -232,8 +232,8 @@
 - type: entity
   parent: RMCFoodPizzaSliceBase
   id: RMCFoodPizzaHawaiianSlice
-  name: hawaiian slice
-  description: A slice of joy/sin.
+  name: 夏威夷切片
+  description: 一片欢乐／罪恶。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/hawaiian.rsi
@@ -246,20 +246,20 @@
     - bread
   - type: Solution
     solution:
-        maxVol: 6
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 4
-        - ReagentId: JuicePineapple
-          Quantity: 1
-        - ReagentId: Vitamin
-          Quantity: 1
+      maxVol: 6
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: JuicePineapple
+        Quantity: 1
+      - ReagentId: Vitamin
+        Quantity: 1
 
 - type: entity
   parent: RMCFoodPizzaFullBase
   id: RMCFoodPizzaSupremeFull
-  name: supreme pizza
-  description: With this many toppings, it lives up to its name.
+  name: 至尊披萨
+  description: 有这么多配料，它无愧于“至尊披萨”之名。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/supreme.rsi
@@ -280,8 +280,8 @@
 - type: entity
   parent: RMCFoodPizzaSliceBase
   id: RMCFoodPizzaSupremeSlice
-  name: supreme slice
-  description: A slice of the top.
+  name: 至尊切片
+  description: 顶端的一片。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/supreme.rsi
@@ -294,20 +294,20 @@
     - bread
   - type: Solution
     solution:
-        maxVol: 6
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 4
-        - ReagentId: Vitamin
-          Quantity: 1
-        - ReagentId: Protein
-          Quantity: 1
+      maxVol: 6
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: Vitamin
+        Quantity: 1
+      - ReagentId: Protein
+        Quantity: 1
 
 - type: entity
   parent: RMCFoodPizzaFullBase
   id: RMCFoodPizzaCalabresaFull
-  name: calabresa pizza
-  description: Pizza so good it will make you see Cristo Redentor!
+  name: 卡拉布雷萨披萨
+  description: 披萨美味到让你看见救世基督像！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/calabresa.rsi
@@ -327,8 +327,8 @@
 - type: entity
   parent: RMCFoodPizzaSliceBase
   id: RMCFoodPizzaCalabresaSlice
-  name: slice de calabresa
-  description: A slice of paraíso.
+  name: 卡拉布雷萨香肠片
+  description: 一片天堂。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Consumable/Food/Pizza/calabresa.rsi
@@ -340,21 +340,21 @@
     - bread
   - type: Solution
     solution:
-        maxVol: 6
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 4
-        - ReagentId: Vitamin
-          Quantity: 1
-        - ReagentId: Protein
-          Quantity: 1
+      maxVol: 6
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 4
+      - ReagentId: Vitamin
+        Quantity: 1
+      - ReagentId: Protein
+        Quantity: 1
 
 # Pizza Box Base
 - type: entity
   parent: BaseStorageItem
   id: RMCBoxPizza
-  name: pizza box
-  description: A box suited for pizzas.
+  name: 披萨盒
+  description: 适合装披萨的盒子。
   suffix: Empty
   components:
   - type: Sprite
@@ -390,8 +390,8 @@
 - type: entity
   parent: RMCBoxPizza
   id: RMCBoxPizzaGalaxy
-  name: Pizza Galaxy pizza box
-  description: A box suited for the finest pizzas.
+  name: 披萨银河披萨盒
+  description: 适合最上等披萨的盒子。
   suffix: Galaxy, Empty
   components:
   - type: Sprite
@@ -405,7 +405,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCFoodPizzaMargheritaFull
+    - id: RMCFoodPizzaMargheritaFull
 
 - type: entity
   parent: RMCBoxPizzaGalaxy
@@ -414,7 +414,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCFoodPizzaMargheritaFull
+    - id: RMCFoodPizzaMargheritaFull
 
 - type: entity
   parent: RMCBoxPizza
@@ -423,7 +423,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCFoodPizzaMeatFull
+    - id: RMCFoodPizzaMeatFull
 
 - type: entity
   parent: RMCBoxPizzaGalaxy
@@ -432,7 +432,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCFoodPizzaMeatFull
+    - id: RMCFoodPizzaMeatFull
 
 - type: entity
   parent: RMCBoxPizza
@@ -441,7 +441,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCFoodPizzaMushroomFull
+    - id: RMCFoodPizzaMushroomFull
 
 - type: entity
   parent: RMCBoxPizzaGalaxy
@@ -450,7 +450,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCFoodPizzaMushroomFull
+    - id: RMCFoodPizzaMushroomFull
 
 - type: entity
   parent: RMCBoxPizza
@@ -459,7 +459,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCFoodPizzaVegetableFull
+    - id: RMCFoodPizzaVegetableFull
 
 - type: entity
   parent: RMCBoxPizzaGalaxy
@@ -468,7 +468,7 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCFoodPizzaVegetableFull
+    - id: RMCFoodPizzaVegetableFull
 
 - type: entity
   parent: RMCBoxPizza
@@ -477,14 +477,14 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCFoodPizzaMargheritaFull
-        prob: 0.25
-      - id: RMCFoodPizzaVegetableFull
-        prob: 0.25
-      - id: RMCFoodPizzaMushroomFull
-        prob: 0.25
-      - id: RMCFoodPizzaVegetableFull
-        prob: 0.25
+    - id: RMCFoodPizzaMargheritaFull
+      prob: 0.25
+    - id: RMCFoodPizzaVegetableFull
+      prob: 0.25
+    - id: RMCFoodPizzaMushroomFull
+      prob: 0.25
+    - id: RMCFoodPizzaVegetableFull
+      prob: 0.25
 
 - type: entity
   parent: RMCBoxPizzaGalaxy
@@ -493,11 +493,11 @@
   components:
   - type: StorageFill
     contents:
-      - id: RMCFoodPizzaMargheritaFull
-        prob: 0.25
-      - id: RMCFoodPizzaVegetableFull
-        prob: 0.25
-      - id: RMCFoodPizzaMushroomFull
-        prob: 0.25
-      - id: RMCFoodPizzaVegetableFull
-        prob: 0.25
+    - id: RMCFoodPizzaMargheritaFull
+      prob: 0.25
+    - id: RMCFoodPizzaVegetableFull
+      prob: 0.25
+    - id: RMCFoodPizzaMushroomFull
+      prob: 0.25
+    - id: RMCFoodPizzaVegetableFull
+      prob: 0.25

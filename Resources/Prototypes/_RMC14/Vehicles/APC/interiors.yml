@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: VehicleAPCInteriorBase
-  name: APC interior piece
-  description: A decorative interior piece for the APC.
+  name: APC内部装饰件
+  description: APC内部装饰件。
   placement:
     mode: SnapgridCenter
   components:
@@ -16,8 +16,8 @@
 - type: entity
   abstract: true
   id: VehicleAPCRoofBase
-  name: APC interior roof
-  description: A removable roof section for the APC interior.
+  name: APC内部车顶
+  description: APC内部的可拆卸车顶部分。
   placement:
     mode: SnapgridCenter
   components:
@@ -52,8 +52,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 20000
         hard: true
@@ -243,7 +242,7 @@
   - type: Sprite
     layers:
     - state: wall_door_front
-      map: [ "roof" ]
+      map: ["roof"]
   - type: RMCSpriteFade
     targetAlpha: 0.35
     changeRate: 4.0
@@ -484,7 +483,7 @@
   - type: Sprite
     layers:
     - state: apc_right_3
-      map: [ "roof" ]
+      map: ["roof"]
   - type: RMCSpriteFade
     targetAlpha: 0.35
     changeRate: 4.0

@@ -1,8 +1,8 @@
 - type: entity
   id: CMShower
-  name: shower
+  name: 淋浴器
   suffix: Empty
-  description: The HS-451. Installed in the 2050s by the WeYa Hygiene Division.
+  description: HS-451。由 WeYa 卫生部门于 2050 年代安装。
   placement:
     mode: SnapgridCenter
   components:
@@ -23,18 +23,16 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak

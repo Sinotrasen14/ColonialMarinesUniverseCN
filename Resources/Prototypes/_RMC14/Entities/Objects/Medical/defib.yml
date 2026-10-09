@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: CMBaseDefibrillator
-  name: emergency defibrillator
-  description: A handheld emergency defibrillator, used to restore fibrillating patients. Can optionally bring people back from the dead.
+  name: 急救除颤器
+  description: 一种手持式急救除颤器，用于使发生心室颤动的患者恢复心律。可选择性地让人起死回生。
   abstract: true
   components:
   - type: Sprite
@@ -10,15 +10,15 @@
     layers:
     - state: defib
     - state: defib_on
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
       visible: false
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Item
     size: Normal
     sprite: _RMC14/Objects/Medical/defib.rsi
@@ -92,7 +92,7 @@
   - type: UseOnSynthBlocked
     whitelist:
       components:
-        - Marine
+      - Marine
 
 - type: entity
   id: CMDefibrillatorEmpty
@@ -112,8 +112,8 @@
 - type: entity
   id: RMCDefibrillatorCompact
   parent: CMDefibrillator
-  name: automated external defibrillator
-  description: This particular defibrillator has little charge capacity compared to the standard lifepak, but is smaller and quick to use.
+  name: 自动体外除颤器
+  description: 此款除颤器与标准 Lifepak 相比充电容量较小，但体积更小，使用更快捷。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/compact_defib.rsi
@@ -173,15 +173,15 @@
 - type: entity
   id: CMUDefibrillatorCompactSynth
   parent: RMCDefibrillatorCompact
-  name: advanced automated external defibrillator
-  description: A modificatied version of a normal automated external defibrillator, it uses a experimental battery to retain its compact size, while still holding considerably more charge then traditional compact defibrillator. Unfortunately, due to technology still being in the early stages, the metals within are so dense and heavy that only a synthetic can reasonably carry and use the device.
+  name: 高级自动体外除颤器
+  description: 普通自动体外除颤器的改良版本，它使用一种实验性电池来保持其紧凑尺寸，同时仍能比传统紧凑型除颤器储存多得多的电量。遗憾的是，由于该技术仍处于早期阶段，其内部金属密度极高且十分沉重，只有合成人才能较为合理地携带并使用该设备。
   components:
   - type: PowerCellDraw
     useCharge: 132
   - type: WhitelistPickupBy
     whitelist:
       components:
-        - Synth
+      - Synth
   - type: RMCSynthItemRestriction
 
 # TODO RMC14: synth reset key sprites currently all use a makeshift_key placeholder.
@@ -189,15 +189,15 @@
 - type: entity
   parent: [CMBaseDefibrillator, RMCPowerCellSlotUnremovable]
   id: RMCSynthResetKey
-  name: We-Yu synthetic reset key
-  description: This device can fix major glitches or programming errors of synthetic units, as well as being able to restart a synthetic that has suffered critical failure. It must be recharged after use.
+  name: We-Yu 合成体重置钥匙
+  description: 该设备可以修复合成体的重大故障或程序错误，并且能够重启遭遇严重故障的合成体。使用后必须重新充电。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/synth_reset_key.rsi
     layers:
     - state: reset_key
     - state: reset_key_on
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
       visible: false
   - type: PowerCellDraw
     enabled: false
@@ -233,12 +233,12 @@
     popup: rmc-species-synth-reset-key-invalid
     whitelist:
       components:
-        - Marine
+      - Marine
   - type: SynthRepairer
   - type: Item
     size: Small
     sprite: _RMC14/Objects/Devices/synth_reset_key.rsi
-    heldPrefix: null
+    heldPrefix:
   - type: Tag
     tags:
     - RMCSynthResetKey
@@ -246,14 +246,14 @@
 - type: entity
   parent: RMCSynthResetKey
   id: RMCSynthResetKeySMART
-  name: SMART We-Yu synthetic reset key
-  description: This device can fix major glitches or programming errors of synthetic units, as well as being able to restart a synthetic that has suffered critical failure. It must be recharged after use. This one has a microfunction AI and can be operated by anyone.
+  name: SMART We-Yu 合成人重置钥匙
+  description: 该装置可以修复合成人的重大故障或编程错误，还能重启遭遇严重故障的合成人。使用后必须充电。这个装置搭载了微功能人工智能，任何人都能操作。
   components:
   - type: Sprite
     layers:
     - state: reset_key_ns
     - state: reset_key_ns_on
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
       visible: false
   - type: RequiresSkill
     skills:
@@ -262,66 +262,66 @@
 - type: entity
   parent: RMCSynthResetKey
   id: RMCSynthResetKeyHyperdyne
-  name: Hyperdyne synthetic reset key
-  description: A Hyperdyne-pattern reset key for rebooting synthetic units after critical failure. It must be recharged after use.
+  name: Hyperdyne合成体重置钥匙
+  description: 一种Hyperdyne型重置钥匙，用于在严重故障后重启合成体单位。使用后必须充电。
   components:
   - type: Sprite
     layers:
     - state: hyper_reset_key
     - state: hyper_reset_key_on
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
       visible: false
 
 - type: entity
   parent: RMCSynthResetKeySMART
   id: RMCSynthResetKeyHyperdyneSMART
-  name: SMART Hyperdyne synthetic reset key
-  description: A Hyperdyne-pattern reset key with a microfunction AI, allowing anyone to operate it. It must be recharged after use.
+  name: 智能 Hyperdyne 合成重置钥匙
+  description: 一把带有微型功能 AI 的 Hyperdyne 型重置钥匙，任何人都可以操作。使用后必须充电。
   components:
   - type: Sprite
     layers:
     - state: hyper_reset_ns_key
     - state: hyper_reset_ns_key_on
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
       visible: false
 
 - type: entity
   parent: RMCSynthResetKeySMART
   id: RMCSynthResetKeySeegson
-  name: Seegson Working Joe reboot key
-  description: A rugged reboot key designed for Seegson Working Joe synthetic units. It must be recharged after use.
+  name: 西格森工作乔重启钥匙
+  description: 一款为西格森工作乔合成人单元设计的坚固重启钥匙。使用后必须充电。
   components:
   - type: Sprite
     layers:
     - state: seeg_reset_key
     - state: seeg_reset_key_on
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
       visible: false
 
 - type: entity
   parent: RMCSynthResetKeySMART
   id: RMCSynthResetKeyMakeshift
-  name: makeshift synthetic sparker
-  description: A crude synthetic reboot device assembled from scavenged sparking electronics. It must be recharged after use.
+  name: 简易合成火花器
+  description: 一个由拾荒得到的火花电子元件拼装而成的粗制合成重启装置。使用后必须充电。
   components:
   - type: Sprite
     layers:
     - state: makeshift_key
     - state: makeshift_key_on
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
       visible: false
 
 - type: entity
   parent: RMCSynthResetKey
   id: RMCSynthResetKeyNovaris
-  name: Novaris synthetic reset key
-  description: An independent Novaris design, based on a previous collaboration with Weyland-Yutani. This device can fix major glitches or programming errors of synthetic units, as well as being able to restart a synthetic that has suffered critical failure. It must be recharged after use.
+  name: 诺瓦里斯生化人重置钥匙
+  description: 诺瓦里斯的独立设计，基于此前与维兰德-汤谷公司的合作。该设备可以修复生化人单位的重大故障或编程错误，还能重启遭遇严重故障的生化人。使用后必须充电。
 
 - type: entity
   parent: RMCSynthResetKey
   id: RMCSynthResetKeyNovarisSMART
-  name: SMART Novaris synthetic reset key
-  description: An independent Novaris design, based on a previous collaboration with Weyland-Yutani. This device can fix major glitches or programming errors of synthetic units, as well as being able to restart a synthetic that has suffered critical failure. It must be recharged after use. This one has a micro-function AI and can be operated by anyone.
+  name: SMART Novaris 合成人重置钥匙
+  description: 一种独立的 Novaris 设计，基于此前与维兰德-汤谷的合作。该设备可以修复合成人的重大故障或编程错误，也能重启遭遇严重故障的合成人。使用后必须充电。此设备搭载微型功能人工智能，任何人都可以操作。
   components:
   - type: RequiresSkill
     skills:

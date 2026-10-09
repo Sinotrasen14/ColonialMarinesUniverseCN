@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaKutjevo
-  name: Kutjevo Refinery
+  name: 库特耶沃炼油厂
   suffix: Kutjevo Area
   components:
   - type: Sprite
@@ -15,7 +15,7 @@
 - type: entity
   parent: RMCAreaShuttleDrop1
   id: RMCAreaShuttleDrop1Kutjevo
-  name: Kutjevo - Dropship Alamo Landing Zone
+  name: 库特耶沃 - 阿拉莫运输船着陆区
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_kutjevo.rsi
@@ -27,7 +27,7 @@
 - type: entity
   parent: RMCAreaShuttleDrop2
   id: RMCAreaShuttleDrop2Kutjevo
-  name: Kutjevo - Dropship Normandy Landing Zone
+  name: 库特耶沃——诺曼底号运输机着陆区
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_kutjevo.rsi
@@ -39,7 +39,7 @@
 - type: entity
   parent: RMCAreaKutjevo
   id: RMCAreaKutjevoExterior
-  name: Kutjevo - Exterior
+  name: Kutjevo - 外观
   components:
   - type: Sprite
     state: ext
@@ -58,7 +58,7 @@
 - type: entity
   parent: RMCAreaKutjevo
   id: RMCAreaKutjevoInterior
-  name: Kutjevo - Interior
+  name: 库特耶沃 - 内部
   components:
   - type: Sprite
     state: int
@@ -77,7 +77,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorOob
-  name: Kutjevo - Out Of Bounds
+  name: 库特耶沃 - 界外
   components:
   - type: Sprite
     state: oob
@@ -100,7 +100,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorOob
   id: RMCAreaKutjevoInteriorOobDevRoom
-  name: Kutjevo - Credits Room
+  name: 库特耶沃 - 制作人员名单室
   components:
   - type: Sprite
     state: kutjevo
@@ -108,7 +108,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorLzPad
-  name: Kutjevo Auxilliary Landing Zone
+  name: 库特耶沃辅助着陆区
   components:
   - type: Sprite
     state: lz_pad
@@ -119,7 +119,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorLzDunes
-  name: Kutjevo - Landing Zone Dunes
+  name: 库特耶沃 - 沙丘着陆区
   components:
   - type: Sprite
     state: lz_dunes
@@ -130,7 +130,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorLzRiver
-  name: Kutjevo - Power Station River
+  name: 库特耶沃 - 发电站河
   components:
   - type: Sprite
     state: lz_river
@@ -140,7 +140,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorSpring
-  name: Kutjevo - Southern Spring
+  name: 库特耶沃——南方之春
   components:
   - type: Sprite
     state: lz_river
@@ -148,7 +148,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorScrubland
-  name: Kutjevo - North Scrubland
+  name: 库特耶沃 - 北部灌丛地
   components:
   - type: Sprite
     state: scrubland
@@ -158,7 +158,7 @@
 - type: entity
   parent: RMCAreaKutjevoExteriorScrubland
   id: RMCAreaKutjevoExteriorScrublandSouth
-  name: Kutjevo - South Scrubland
+  name: 库特耶沃－南灌木地
   components:
   - type: Area
     linkedLz: dropship_lz1, dropship_lz2
@@ -166,7 +166,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorStonyfields
-  name: Kutjevo - Stony Fields
+  name: 库特耶沃——多石的田野
   components:
   - type: Sprite
     state: stone_fields
@@ -176,7 +176,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorNorthwestColony
-  name: Kutjevo - Northwest Colony Grounds
+  name: 库特耶沃——西北殖民地场地
   components:
   - type: Sprite
     state: rf_dunes
@@ -186,7 +186,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorRunoffDunes
-  name: Kutjevo - Runoff Dunes
+  name: 库特耶沃 - 径流沙丘
   components:
   - type: Sprite
     state: rf_dunes
@@ -196,7 +196,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorRunoffRiver
-  name: Kutjevo - Runoff River
+  name: 库特耶沃——径流式水电站
   components:
   - type: Sprite
     state: rf_river
@@ -204,7 +204,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorRunoffBridge
-  name: Kutjevo - Runoff Bridge
+  name: Kutjevo——径流桥
   components:
   - type: Sprite
     state: rf_bridge
@@ -212,7 +212,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorOverlook
-  name: Kutjevo - Runoff River Overlook
+  name: 库特耶沃 - 径流河观景台
   components:
   - type: Sprite
     state: rf_overlook
@@ -220,7 +220,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorBotanyBayExt
-  name: Kutjevo - Space Weed Farm Exterior
+  name: 库特耶沃 - 太空大麻农场外部
   components:
   - type: Sprite
     state: weed_ext
@@ -228,7 +228,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorConstruction
-  name: Kutjevo - Abandoned Construction
+  name: 库特耶沃——废弃建筑
   components:
   - type: Sprite
     state: construction
@@ -236,7 +236,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorComplexBorder
-  name: Kutjevo Complex - Exterior
+  name: 库特耶沃建筑群 - 外观
   components:
   - type: Sprite
     state: kutjevo
@@ -244,7 +244,7 @@
 - type: entity
   parent: RMCAreaKutjevoExteriorComplexBorder
   id: RMCAreaKutjevoExteriorComplexBorderBotanyMedicalCave
-  name: Kutjevo Complex - Botany - Medical Cave
+  name: 库特耶沃综合体——植物学——医疗洞穴
   components:
   - type: Sprite
     state: med_ext
@@ -252,7 +252,7 @@
 - type: entity
   parent: RMCAreaKutjevoExteriorComplexBorder
   id: RMCAreaKutjevoExteriorComplexBorderMedPark
-  name: Kutjevo Complex - Medical Park
+  name: 库特耶沃综合体 - 医疗园区
   components:
   - type: Sprite
     state: med_ext
@@ -260,7 +260,7 @@
 - type: entity
   parent: RMCAreaKutjevoExteriorComplexBorder
   id: RMCAreaKutjevoExteriorComplexBorderMedRec
-  name: Kutjevo Complex - Water Tank Cave
+  name: 库特耶沃洞群——水箱洞
   components:
   - type: Sprite
     state: construction2
@@ -268,7 +268,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorTelecomm
-  name: Kutjevo - Communications Relay
+  name: 库特耶沃——通信中继站
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas.rsi
@@ -277,7 +277,7 @@
 - type: entity
   parent: RMCAreaKutjevoExteriorTelecomm
   id: RMCAreaKutjevoExteriorTelecommLz1North
-  name: Kutjevo - North LZ1 Communications Relay
+  name: 库特耶沃 - 北 LZ1 通信中继
   components:
   - type: Area
     linkedLz: dropship_lz1
@@ -285,7 +285,7 @@
 - type: entity
   parent: RMCAreaKutjevoExteriorTelecomm
   id: RMCAreaKutjevoExteriorTelecommLz1South
-  name: Kutjevo - South LZ1 Communications Relay
+  name: 库特耶沃 - 南部 LZ1 通信中继
   components:
   - type: Area
     linkedLz: dropship_lz1
@@ -293,7 +293,7 @@
 - type: entity
   parent: RMCAreaKutjevoExteriorTelecomm
   id: RMCAreaKutjevoExteriorTelecommLz2North
-  name: Kutjevo - North LZ2 Communications Relay
+  name: 库特耶沃－北LZ2通信中继
   components:
   - type: Area
     linkedLz: dropship_lz2
@@ -301,7 +301,7 @@
 - type: entity
   parent: RMCAreaKutjevoExteriorTelecomm
   id: RMCAreaKutjevoExteriorTelecommLz2South
-  name: Kutjevo - South LZ2 Communications Relay
+  name: 库特耶沃 - 南部 LZ2 通信中继
   components:
   - type: Area
     linkedLz: dropship_lz2
@@ -309,7 +309,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorComplex
-  name: Kutjevo Complex
+  name: 库特耶沃综合体
   components:
   - type: Sprite
     state: kutjevo
@@ -327,7 +327,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplex
   id: RMCAreaKutjevoInteriorComplexBotany
-  name: Kutjevo Complex - Botany Bay
+  name: 库特耶沃综合体——植物学湾
   components:
   - type: Sprite
     state: botany0
@@ -337,7 +337,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplexBotany
   id: RMCAreaKutjevoInteriorComplexBotanyEast
-  name: Kutjevo Complex - Botany East Hall
+  name: 库特耶沃综合体－植物学东楼
   components:
   - type: Sprite
     state: botany1
@@ -345,7 +345,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplexBotany
   id: RMCAreaKutjevoInteriorComplexBotanyEastTech
-  name: Kutjevo Complex - Powerplant Access Hall
+  name: 库特耶沃综合体 - 发电厂入口大厅
   components:
   - type: Sprite
     state: botany1
@@ -353,7 +353,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplexBotany
   id: RMCAreaKutjevoInteriorComplexBotanyLocks
-  name: Kutjevo Complex - Botany Stormlocks
+  name: 库特耶沃综合体——植物学风暴锁
   components:
   - type: Sprite
     state: botany0
@@ -361,7 +361,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplex
   id: RMCAreaKutjevoInteriorComplexMed
-  name: Kutjevo Complex - Medical Foyer
+  name: Kutjevo综合楼 - 医疗大厅
   components:
   - type: Sprite
     state: med0
@@ -371,7 +371,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplexMed
   id: RMCAreaKutjevoInteriorComplexMedAutoDoc
-  name: Kutjevo Complex - Medical Autodoc Hallway
+  name: 库特耶沃综合设施—医疗自动医生走廊
   components:
   - type: Sprite
     state: med2
@@ -379,7 +379,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplexMed
   id: RMCAreaKutjevoInteriorComplexMedOperating
-  name: Kutjevo Complex - Medical Operation Hallway
+  name: 库特耶沃综合设施—医疗手术走廊
   components:
   - type: Sprite
     state: med3
@@ -387,7 +387,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplexMed
   id: RMCAreaKutjevoInteriorComplexMedTriage
-  name: Kutjevo Complex - Medical Triage Hallway
+  name: 库特耶沃综合体——医疗分诊走廊
   components:
   - type: Sprite
     state: med4
@@ -395,7 +395,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplexMed
   id: RMCAreaKutjevoInteriorComplexMedCells
-  name: Kutjevo Complex - Medical Cryocells
+  name: 库特耶沃综合设施 - 医用冷冻细胞
   components:
   - type: Sprite
     state: med5
@@ -403,7 +403,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplexMed
   id: RMCAreaKutjevoInteriorComplexMedPano
-  name: Kutjevo Complex - Medical Panopticon
+  name: 库特耶沃综合体——医疗圆形监狱
   components:
   - type: Sprite
     state: med3
@@ -411,7 +411,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplexMed
   id: RMCAreaKutjevoInteriorComplexMedLocks
-  name: Kutjevo Complex - Medical Stormlocks
+  name: 库特耶沃综合体 - 医疗风暴锁
   components:
   - type: Sprite
     state: med1
@@ -419,7 +419,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplex
   id: RMCAreaKutjevoInteriorComplexNorthwestDorms
-  name: Kutjevo Complex - Northwest Colony Dorms
+  name: 库特耶沃综合体——西北殖民地宿舍
   components:
   - type: Sprite
     state: colony_int
@@ -439,7 +439,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplex
   id: RMCAreaKutjevoInteriorComplexNorthwestFlightControl
-  name: Kutjevo Complex - Northwest Flight Control Room
+  name: 库特耶沃综合体——西北飞行控制室
   components:
   - type: Sprite
     state: colony_int
@@ -459,7 +459,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorComplex
   id: RMCAreaKutjevoInteriorComplexNorthwestSecurityCheckpoint
-  name: Kutjevo Complex - Northwest Security Checkpoint
+  name: 库特耶沃综合设施 - 西北安全检查站
   components:
   - type: Sprite
     state: colony_int
@@ -480,7 +480,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorPower
-  name: Kutjevo - Hydroelectric Dam Substation
+  name: 库特耶沃－水电站变电站
   components:
   - type: Sprite
     state: power
@@ -500,7 +500,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorPower
   id: RMCAreaKutjevoInteriorPowerComms
-  name: Kutjevo - Hydroelectric Dam Comms Relay
+  name: Kutjevo - 水电站大坝通信中继
   components:
   - type: Sprite
     state: power
@@ -518,7 +518,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorConstruction
-  name: Kutjevo - Abandoned Construction Interior
+  name: 库特耶沃——废弃建筑内部
   components:
   - type: Sprite
     state: construction_int
@@ -536,7 +536,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorConstruction
   id: RMCAreaKutjevoInteriorConstructionNorth
-  name: Kutjevo - Northern Abandoned Construction Interior
+  name: Kutjevo - 北部废弃建筑内部
   components:
   - type: Sprite
     state: construction
@@ -544,7 +544,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorConstruction
   id: RMCAreaKutjevoInteriorConstructionEast
-  name: Kutjevo - Eastern Abandoned Construction Interior
+  name: 库特耶沃——东部废弃建筑内部
   components:
   - type: Sprite
     state: construction
@@ -552,7 +552,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorConstruction
   id: RMCAreaKutjevoInteriorConstructionSignalTower
-  name: Kutjevo - Abandoned Signal Tower
+  name: 库特耶沃 - 废弃信号塔
   components:
   - type: Sprite
     state: construction2
@@ -560,7 +560,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorForemansOffice
-  name: Kutjevo - Foreman's Office
+  name: 库特耶沃 - 工头办公室
   components:
   - type: Sprite
     state: foremans
@@ -578,7 +578,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorBotanyBayInt
-  name: Kutjevo - Space Weed Farm Interior
+  name: 库特耶沃 - 太空大麻农场内部
   components:
   - type: Sprite
     state: weed_int
@@ -596,7 +596,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorPowerPt2ElectricBoogaloo
-  name: Kutjevo - Power Plant
+  name: 库特耶沃 - 发电厂
   components:
   - type: Sprite
     state: power_2
@@ -614,7 +614,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorColony
-  name: Kutjevo - Colony Building Interior
+  name: Kutjevo - 殖民地建筑内部
   components:
   - type: Sprite
     state: colony_int
@@ -632,7 +632,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorColonyCentral
-  name: Kutjevo - Central Colony Caves
+  name: 库特耶沃 - 中央殖民地洞穴
   components:
   - type: Sprite
     state: colony_caves_0
@@ -651,7 +651,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorColonyCentral
   id: RMCAreaKutjevoInteriorColonyCentralMineElevator
-  name: Kutjevo - Central Colony Elevator
+  name: 库特耶沃 - 中央聚居区升降机
   components:
   - type: Sprite
     state: colony_caves_0
@@ -669,7 +669,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorColonyNorth
-  name: Kutjevo - North Colony Caves
+  name: 库特耶沃－北殖民地洞穴群
   components:
   - type: Sprite
     state: colony_caves_1
@@ -687,7 +687,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorColonySEast
-  name: Kutjevo - Southeast Colony Caves
+  name: 库特耶沃－东南殖民地洞穴
   components:
   - type: Sprite
     state: colony_caves_2
@@ -705,7 +705,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorColonyNEast
-  name: Kutjevo - Northeast Colony Caves
+  name: 库特耶沃－东北殖民地洞穴
   components:
   - type: Sprite
     state: colony_caves_2
@@ -723,7 +723,7 @@
 - type: entity
   parent: RMCAreaKutjevoInterior
   id: RMCAreaKutjevoInteriorColonySouth
-  name: Kutjevo - South Colony Caves
+  name: 库特耶沃 - 南部聚居地洞穴
   components:
   - type: Sprite
     state: colony_caves_3
@@ -741,7 +741,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorColonySouth
   id: RMCAreaKutjevoInteriorColonySouthPower2
-  name: Kutjevo - South Colony Treatment Plant - North
+  name: 库特耶沃 - 南殖民地处理厂 - 北部
   components:
   - type: Sprite
     state: colony_caves_3
@@ -760,7 +760,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorColonySouth
   id: RMCAreaKutjevoInteriorColonySouthPower2South
-  name: Kutjevo - South Colony Treatment Plant - South
+  name: 库特耶沃 - 南部殖民地处理厂 - 南部
   components:
   - type: Sprite
     state: colony_caves_3
@@ -780,7 +780,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorColony
   id: RMCAreaKutjevoInteriorColonyLandingZoneCheckpoint
-  name: Kutjevo - Landing Zone Checkpoint
+  name: Kutjevo - 着陆区检查站
   components:
   - type: Sprite
     state: colony_int
@@ -788,7 +788,7 @@
 - type: entity
   parent: RMCAreaKutjevoInteriorColony
   id: RMCAreaKutjevoInteriorColonyCLFShuttle
-  name: Kutjevo - Unregistered Freighter
+  name: 库特耶沃 - 未注册货轮
   components:
   - type: Sprite
     state: colony_int
@@ -796,7 +796,7 @@
 - type: entity
   parent: RMCAreaKutjevoExterior
   id: RMCAreaKutjevoExteriorCLFLZ
-  name: Kutjevo - Tertiary Landing Zone
+  name: 库特耶沃 - 第三着陆区
   components:
   - type: Sprite
     state: ext

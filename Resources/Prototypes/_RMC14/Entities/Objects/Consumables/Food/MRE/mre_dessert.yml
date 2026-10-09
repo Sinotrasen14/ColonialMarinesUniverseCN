@@ -1,9 +1,9 @@
-﻿# Components
+# Components
 - type: entity
   abstract: true
   parent: CMMREComponentBase
   id: CMMREDessertComponentBase
-  description: An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious).
+  description: 一个MRE配菜组件。包含一份甜点，应在主菜之后食用（如果你很叛逆，也可以在主菜之前食用）。
   components:
   - type: Sprite
     state: dessert
@@ -11,8 +11,8 @@
 - type: entity
   parent: CMMREDessertComponentBase
   id: CMMREComponentSpicedApples
-  name: MRE component (spiced apples)
-  description: An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is spiced apples.
+  name: MRE 组件（香料苹果）
+  description: MRE 的配菜组件。内含一份甜点，应在主餐后食用（如果你够叛逆，也可以在主餐前吃）。这一款是香料苹果。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -21,8 +21,8 @@
 - type: entity
   parent: CMMREDessertComponentBase
   id: CMMREComponentChocolateBrownie
-  name: MRE component (chocolate brownie)
-  description: An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is a chocolate brownie.
+  name: MRE 组件（巧克力布朗尼）
+  description: MRE 配菜组件。内含一份甜点，应在主餐后食用（如果你够叛逆，也可以在主餐前食用）。这一款是巧克力布朗尼。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -31,8 +31,8 @@
 - type: entity
   parent: CMMREDessertComponentBase
   id: CMMREComponentSugarCookie
-  name: MRE component (sugar cookie)
-  description: An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is a sugar cookie.
+  name: MRE 组件（糖饼干）
+  description: MRE 的配餐组件。内含一份甜点，应在主餐后食用（如果你够叛逆，也可以在主餐前吃）。这一份是糖饼干。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -41,8 +41,8 @@
 - type: entity
   parent: CMMREDessertComponentBase
   id: CMMREComponentCocoBar
-  name: MRE component (coco bar)
-  description: An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is a coco bar.
+  name: MRE 组件（可可棒）
+  description: 一个 MRE 配餐组件。内含一份甜点，应在主餐后食用（或者，如果你很叛逆，也可以在主餐前吃）。这个是可可棒。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -51,8 +51,8 @@
 - type: entity
   parent: CMMREDessertComponentBase
   id: CMMREComponentFlan
-  name: MRE component (flan)
-  description: An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is flan.
+  name: MRE 组件（焦糖布丁）
+  description: MRE 的配菜组件。内含一份甜点，应在主菜后食用（如果你比较叛逆，也可以在主菜前吃）。这一份是焦糖布丁。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -61,8 +61,8 @@
 - type: entity
   parent: CMMREDessertComponentBase
   id: CMMREComponentHoneyFlan
-  name: MRE component (honey flan)
-  description: An MRE side component. Contains a sweet dessert, to be eaten after the main (or before, if you're rebellious). This one is honey flan.
+  name: MRE 组件（蜂蜜焦糖布丁）
+  description: 一种 MRE 配菜组件。内含一份甜点，应在主餐后食用（如果你比较叛逆，也可以在主餐前吃）。这一款是蜂蜜焦糖布丁。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -81,18 +81,18 @@
     solution:
       maxVol: 3
       reagents:
-        - ReagentId: Nutriment
-          Quantity: 2
-        - ReagentId: RMCSugar
-          Quantity: 2
-        - ReagentId: Theobromine
-          Quantity: 1
+      - ReagentId: Nutriment
+        Quantity: 2
+      - ReagentId: RMCSugar
+        Quantity: 2
+      - ReagentId: Theobromine
+        Quantity: 1
 
 - type: entity
   parent: CMMREFoodDessert
   id: CMMREFoodSpicedApples
-  name: spiced apples
-  description: The contents of a Marine Standard issue MRE. This one is spiced apples.
+  name: 香料苹果
+  description: 海军陆战队标准配发即食口粮的内容物。这一份是香料苹果。
   components:
   - type: Sprite
     state: spiced_apples
@@ -103,8 +103,8 @@
 - type: entity
   parent: CMMREFoodDessert
   id: CMMREFoodChocolateBrownie
-  name: chocolate brownie
-  description: The contents of a Marine Standard issue MRE. This one is a chocolate brownie.
+  name: 巧克力布朗尼
+  description: 一份海军陆战队标准配发即食口粮的内容物。这一份是巧克力布朗尼。
   components:
   - type: Sprite
     state: chocolate_brownie
@@ -115,8 +115,8 @@
 - type: entity
   parent: CMMREFoodDessert
   id: CMMREFoodSugarCookie
-  name: sugar cookie
-  description: The contents of a Marine Standard issue MRE. This one is a sugar cookie.
+  name: 糖饼干
+  description: 海军陆战队标准配发单兵口粮的内容物。这一份是糖饼干。
   components:
   - type: Sprite
     state: sugar_cookie
@@ -127,8 +127,8 @@
 - type: entity
   parent: CMMREFoodDessert
   id: CMMREFoodCocoBar
-  name: coco bar
-  description: The contents of a Marine Standard issue MRE. This one is a coco bar.
+  name: 椰子棒
+  description: 海军陆战队标准配发即食口粮的内容。这一份是椰子棒。
   components:
   - type: Sprite
     state: coco_bar
@@ -139,8 +139,8 @@
 - type: entity
   parent: CMMREFoodDessert
   id: CMMREFoodFlan
-  name: flan
-  description: The contents of a Marine Standard issue MRE. This one is flan.
+  name: 焦糖布丁
+  description: 海军陆战队标准配发即食口粮的内容。这一份是焦糖布丁。
   components:
   - type: Sprite
     state: flan
@@ -151,8 +151,8 @@
 - type: entity
   parent: CMMREFoodDessert
   id: CMMREFoodHoneyFlan
-  name: honey flan
-  description: The contents of a Marine Standard issue MRE. This one is honey flan.
+  name: 蜂蜜焦糖布丁
+  description: 海军陆战队标准配发即食口粮的内容物。这一份是蜂蜜焦糖布丁。
   components:
   - type: Sprite
     state: honey_flan
@@ -164,29 +164,29 @@
 - type: flavor
   id: SpicedApples
   flavorType: Complex
-  description: like spiced apples
+  description: 像加香料的苹果
 
 - type: flavor
   id: ChocolateBrownie
   flavorType: Complex
-  description: like chocolate brownies
+  description: 喜欢巧克力布朗尼
 
 - type: flavor
   id: SugarCookie
   flavorType: Complex
-  description: like sugar cookie
+  description: 像糖饼干
 
 - type: flavor
   id: CocoBar
   flavorType: Complex
-  description: like chocolate
+  description: 喜欢巧克力
 
 - type: flavor
   id: Flan
   flavorType: Complex
-  description: like flan
+  description: 像焦糖布丁
 
 - type: flavor
   id: HoneyFlan
   flavorType: Complex
-  description: like honey flan
+  description: 像蜂蜜布丁一样

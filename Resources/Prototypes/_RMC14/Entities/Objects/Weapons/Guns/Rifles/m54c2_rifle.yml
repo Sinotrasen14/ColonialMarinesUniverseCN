@@ -1,16 +1,16 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: M41A/2 assault rifle MK2
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: M41A/2突击步枪 MK2
   id: RMCWeaponRifleM54C2
-  description: A modified version M41A pulse rifle MK2, re-engineered for better weight, handling and accuracy. Fires precise two-round bursts. A very rare sight, often seen in use by wealthy PMCs.
+  description: M41A脉冲步枪MK2的改装版本，经过重新设计以优化重量、操控性和精准度。可进行精准的两发点射。极为罕见，常为富有的私人军事公司所使用。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/WY/m41a2.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: CMU14/Weapons/Guns/WY/m41a2.rsi
   - type: ContainerContainer
@@ -45,7 +45,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineRifleM54CAP
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -116,7 +116,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleM54CHEAP
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg

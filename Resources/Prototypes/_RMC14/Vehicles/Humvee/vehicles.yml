@@ -1,8 +1,8 @@
 - type: entity
   id: VehicleHumveeBase # CMU14
   abstract: true
-  name: humvee
-  description: A fast armored utility vehicle outfitted for patrols and support.
+  name: 悍马
+  description: 一款为巡逻和支援任务配备的快速装甲多用途车辆。
   components:
   - type: RMCNightVisionVisible # CMU14
     priority: -2
@@ -70,8 +70,7 @@
   - type: Fixtures
     fixtures:
       world:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -0.65,-1.2,0.65,1.2
         density: 1000
         mask:
@@ -82,8 +81,7 @@
         layer:
         - LargeMobLayer
       mob:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: -0.65,-1.2,0.65,1.2
         density: 1000
         mask:
@@ -97,24 +95,24 @@
     drawdepth: Mobs
     sprite: _RMC14/Structures/Vehicles/humvee.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: humvee_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ primary ]
+    - map: [primary]
       state: PRIMARY
       visible: false
-    - map: [ secondary ]
+    - map: [secondary]
       state: SECONDARY
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: ATTACH
       visible: false
-    - map: [ support-2 ]
+    - map: [support-2]
       state: ATTACH
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: SpriteMovement
     movementLayers:
@@ -216,21 +214,21 @@
   - type: ContainerContainer
     containers:
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       turret: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       roof: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       front: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: VehicleWheelSlots
     slots:
     - wheel-1
@@ -259,23 +257,23 @@
 - type: entity
   parent: VehicleHumveeBase
   id: VehicleHumveeMedical # CMU14
-  name: humvee (medical)
-  description: A medical-configured humvee outfitted for field triage.
+  name: 悍马（医疗）
+  description: 一辆配置为医疗用途、用于野战检伤分类的悍马。
   components:
   - type: ContainerContainer
     containers:
       roof: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       front: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointState
   - type: VehicleWheelSlots
     slots:
@@ -295,18 +293,18 @@
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/humvee_medical.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: humvee_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: ATTACH
       visible: false
-    - map: [ support-2 ]
+    - map: [support-2]
       state: ATTACH
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: HardpointSlots
     vehicleFamily: Humvee
@@ -353,23 +351,23 @@
 - type: entity
   parent: VehicleHumveeBase
   id: VehicleHumveeTransport
-  name: humvee (transport)
-  description: A transport humvee configured for passenger movement.
+  name: 悍马（运输型）
+  description: 一辆用于运送乘客的运输型悍马。
   components:
   - type: ContainerContainer
     containers:
       roof: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       front: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: HardpointState
   - type: VehicleWheelSlots
     slots:
@@ -389,18 +387,18 @@
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/humvee_transport.rsi
     layers:
-    - map: [ base ]
+    - map: [base]
       state: humvee_base
-    - map: [ damaged_frame ]
+    - map: [damaged_frame]
       state: damaged_frame
       visible: false
-    - map: [ support ]
+    - map: [support]
       state: ATTACH
       visible: false
-    - map: [ support-2 ]
+    - map: [support-2]
       state: ATTACH
       visible: false
-    - map: [ rmc-wheels ]
+    - map: [rmc-wheels]
       state: wheels_1
   - type: HardpointSlots
     vehicleFamily: Humvee
@@ -447,28 +445,28 @@
 - type: entity
   parent: VehicleHumveeBase
   id: VehicleHumveeARC
-  name: humvee (arc)
-  description: A humvee configured for ARC interior layout.
+  name: 悍马（ARC）
+  description: 配置为ARC内饰布局的悍马。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       wheel-1: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       turret: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       roof: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
       front: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: VehicleWheelSlots
     slots:
     - wheel-1

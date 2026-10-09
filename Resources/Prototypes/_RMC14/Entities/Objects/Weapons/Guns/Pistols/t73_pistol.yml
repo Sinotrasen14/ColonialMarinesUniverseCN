@@ -1,8 +1,8 @@
 - type: entity
   parent: [RMCBaseSlideMagazineVisuals, CMWeaponPistolBase]
   id: RMCWeaponPistolT73
-  name: Type 73 pistol
-  description: The Type 73 is the once-standard issue sidearm of the UPP. Replaced by the NP92 in UPP use, it remains popular with veteran UPP troops due to familiarity and extra power. Due to an extremely large amount being produced, they tend to end up in the hands of forces attempting to arm themselves on a budget. Users include the Union of Progressive Peoples, Colonial Liberation Front, and just about any mercenary or pirate group out there.
+  name: 73式手枪
+  description: 73式手枪曾是UPP标准配发的副武器。在UPP中已被NP92取代，但由于熟悉度和额外威力，它仍受UPP老兵欢迎。由于产量极大，它们往往会流入那些试图以有限预算武装自己的部队手中。使用者包括进步人民联盟、殖民解放阵线，以及几乎任何雇佣兵或海盗团体。
   components:
   - type: Tag
     tags:
@@ -43,7 +43,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -79,8 +79,8 @@
 - type: entity
   parent: CMWeaponPistolBase
   id: RMCWeaponPistolT74
-  name: Type 74 pistol
-  description: The Type 74 is the designation for a specially modified Type 73 with an integrated laser sight system, multiple lightning cuts to reduce weight in order to allow a higher pressure round to be used with the same recoil sping, and a more comfortable grip. Due to the adoption of the NP92, the Type 74 was produced in limited numbers, because of this it is typically only issued on request to high-ranking officers
+  name: 74式手枪
+  description: 74式是经过特殊改装的73式的型号名称，配有集成式激光瞄准系统、多处为减轻重量而设置的减重切口，以便在沿用相同复进簧的情况下使用更高膛压的弹药，并采用更舒适的握把。由于NP92的列装，74式仅有限量生产，因此通常只应要求配发给高级军官。
   components:
   - type: Tag
     tags:
@@ -111,7 +111,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -149,7 +149,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -160,14 +160,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolT73
-  name: Type 73 magazine (7.62x25mm)
+  name: 73式弹匣（7.62×25毫米）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolT73
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgePistolT73
@@ -184,18 +184,18 @@
     magState: mag
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistolType73
-    
+
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolT74Impact
-  name: Type 74 impact magazine (7.62x25mm)
+  name: 74式冲击弹匣（7.62×25毫米）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolT74Impact
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgePistolT74Impact
@@ -214,8 +214,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletPistolT73
-  name: bullet (7.62x25mm)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（7.62×25毫米）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -224,8 +224,8 @@
 
 - type: entity
   id: RMCCartridgePistolT73
-  name: cartridge (7.62x25mm)
-  description: A 7.62x25mm cartridge for the T73/T74 pistols.
+  name: 弹药（7.62x25mm）
+  description: 用于T73/T74手枪的7.62×25毫米弹药。
   parent: CMCartridgePistolBase
   components:
   - type: Tag
@@ -238,8 +238,8 @@
 - type: entity
   parent: CMBulletBase
   id: RMCBulletPistolT74Impact
-  name: bullet (7.62x25mm impact)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（7.62×25毫米 冲击）
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -256,8 +256,8 @@
 
 - type: entity
   id: RMCCartridgePistolT74Impact
-  name: cartridge (7.62x25mm impact)
-  description: A 7.62x25mm impact cartridge for the T74 pistol.
+  name: 7.62×25毫米冲击弹
+  description: T74手枪使用的7.62×25毫米冲击弹。
   parent: CMCartridgePistolBase
   components:
   - type: Tag

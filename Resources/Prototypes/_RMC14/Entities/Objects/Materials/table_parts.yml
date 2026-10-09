@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseItem
   id: RMCTablePartBase
-  name: table parts
-  description: A kit for a table, including a large, flat metal surface and four legs. Some assembly required.
+  name: 桌子部件
+  description: 一套桌子组件，包括一个大而平的金属台面和四条腿。需要自行组装。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Materials/table_parts.rsi
@@ -30,7 +30,7 @@
 - type: entity
   parent: RMCTablePartBase
   id: RMCTablePartTan
-  name: tan table parts
+  name: 棕褐色桌子部件
   components:
   - type: Sprite
     state: tan
@@ -42,8 +42,8 @@
       - state: tan-inhand-right
   - type: Tag
     tags:
-      - RMCTablePartTan
-      - RMCTablePartMetal
+    - RMCTablePartTan
+    - RMCTablePartMetal
 
 - type: Tag
   id: RMCTablePartTan
@@ -51,8 +51,8 @@
 - type: entity
   parent: RMCTablePartBase
   id: RMCTablePartReinforced
-  name: reinforced table parts
-  description: A kit for a table, including a large, flat metal surface and four legs. This kit has side panels. Some assembly required.
+  name: 加固桌部件
+  description: 桌子套件，包括一大块平整的金属台面和四条桌腿。此套件带有侧板。需要部分组装。
   components:
   - type: Sprite
     state: reinforced
@@ -64,8 +64,8 @@
       - state: reinf-inhand-right
   - type: Tag
     tags:
-      - RMCTablePartReinforced
-      - RMCTablePartMetalReinforced
+    - RMCTablePartReinforced
+    - RMCTablePartMetalReinforced
   - type: Construction
     node: MetalReinforced
   - type: Material
@@ -79,8 +79,8 @@
 - type: entity
   parent: RMCTablePartBase
   id: RMCTablePartWood
-  name: wooden table parts
-  description: A kit for a table, including a large, flat wooden surface and four legs. Some assembly required.
+  name: 木桌部件
+  description: 一套桌子组件，包括一块大而平的木质表面和四条桌腿。需要一些组装。
   components:
   - type: Sprite
     state: wood
@@ -92,8 +92,8 @@
       - state: wood-inhand-right
   - type: Tag
     tags:
-      - RMCTablePartWood
-      - RMCTablePartWoodPart
+    - RMCTablePartWood
+    - RMCTablePartWoodPart
   - type: Construction
     node: Wood
 
@@ -103,8 +103,8 @@
 - type: entity
   parent: RMCTablePartWood
   id: RMCTablePartWoodPoor
-  name: poor wooden table parts
-  description: A kit for a poorly crafted table, including a large, flat wooden surface and four legs. Some assembly required.
+  name: 劣质木桌部件
+  description: 一套劣质木桌套件，包含一块大而平整的木质表面和四条桌腿。需要自行进行部分组装。
   components:
   - type: Sprite
     state: poor_wood
@@ -116,8 +116,8 @@
       - state: pwood-inhand-right
   - type: Tag
     tags:
-      - RMCTablePartWoodPoor
-      - RMCTablePartWoodPart
+    - RMCTablePartWoodPoor
+    - RMCTablePartWoodPart
 
 - type: Tag
   id: RMCTablePartWoodPoor
@@ -125,8 +125,8 @@
 - type: entity
   parent: RMCTablePartWood
   id: RMCTablePartWoodFancy
-  name: fancy wooden table parts
-  description: A kit for a finely crafted mahogany table, including a large, flat wooden surface and four legs. Some assembly required.
+  name: 精美木桌部件
+  description: 一套用于组装精美红木桌的套件，包含一块宽大平整的木质桌面和四条桌腿。需自行组装。
   components:
   - type: Sprite
     state: fancy_wood
@@ -138,8 +138,8 @@
       - state: fwood-inhand-right
   - type: Tag
     tags:
-      - RMCTablePartWoodFancy
-      - RMCTablePartWoodPart
+    - RMCTablePartWoodFancy
+    - RMCTablePartWoodPart
 
 - type: Tag
   id: RMCTablePartWoodFancy
@@ -147,7 +147,7 @@
 - type: entity
   parent: RMCTablePartBase
   id: RMCTablePartGambling
-  name: gambling table parts
+  name: 赌桌部件
   components:
   - type: Sprite
     state: gamble
@@ -159,8 +159,8 @@
       - state: gamble-inhand-right
   - type: Tag
     tags:
-      - RMCTablePartGambling
-      - RMCTablePartWoodCarpet
+    - RMCTablePartGambling
+    - RMCTablePartWoodCarpet
   - type: Construction
     node: WoodCarpet
 
@@ -170,7 +170,7 @@
 - type: entity
   parent: RMCTablePartBase
   id: RMCTablePartAlmayer
-  name: gray table parts
+  name: 灰色桌子零件
   components:
   - type: Sprite
     state: almayer
@@ -182,8 +182,8 @@
       - state: almayer-inhand-right
   - type: Tag
     tags:
-      - RMCTablePartAlmayer
-      - RMCTablePartMetal
+    - RMCTablePartAlmayer
+    - RMCTablePartMetal
 
 - type: Tag
   id: RMCTablePartAlmayer

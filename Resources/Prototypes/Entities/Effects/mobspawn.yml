@@ -1,10 +1,10 @@
 - type: entity
   id: MobSpawnCrabQuartz
-  name: mobspawner quartzcrab
-  categories: [ HideSpawnMenu, Spawner ]
+  name: 石英蟹刷怪笼 | mobspawner quartzcrab
+  categories: [HideSpawnMenu, Spawner]
   components:
   - type: Transform
-    anchored: True
+    anchored: true
   - type: InteractionOutline
   - type: Physics
     bodyType: Static
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       portalFixture:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.48"
         mask:
         - FullTileMask
@@ -30,8 +29,8 @@
 - type: entity
   id: MobSpawnCrabIron
   parent: MobSpawnCrabQuartz
-  name: mobspawner ironcrab
-  categories: [ HideSpawnMenu, Spawner ]
+  name: 怪物生成器 铁蟹 | mobspawner ironcrab
+  categories: [HideSpawnMenu, Spawner]
   components:
   - type: Sprite
     sprite: /Textures/Effects/mobspawn.rsi
@@ -42,8 +41,8 @@
 - type: entity
   id: MobSpawnCrabCoal
   parent: MobSpawnCrabQuartz
-  name: mobspawner coalcrab
-  categories: [ HideSpawnMenu, Spawner ]
+  name: 煤蟹刷怪笼 | mobspawner coalcrab
+  categories: [HideSpawnMenu, Spawner]
   components:
   - type: Sprite
     sprite: /Textures/Effects/mobspawn.rsi
@@ -54,8 +53,8 @@
 - type: entity
   id: MobSpawnCrabSilver
   parent: MobSpawnCrabQuartz
-  name: mobspawner silvercrab
-  categories: [ HideSpawnMenu, Spawner ]
+  name: 银蟹刷怪笼 | mobspawner silvercrab
+  categories: [HideSpawnMenu, Spawner]
   components:
   - type: Sprite
     sprite: /Textures/Effects/mobspawn.rsi
@@ -66,8 +65,8 @@
 - type: entity
   id: MobSpawnCrabGold
   parent: MobSpawnCrabQuartz
-  name: mobspawner goldcrab
-  categories: [ HideSpawnMenu, Spawner ]
+  name: 金蟹刷怪笼 | mobspawner goldcrab
+  categories: [HideSpawnMenu, Spawner]
   components:
   - type: Sprite
     sprite: /Textures/Effects/mobspawn.rsi
@@ -78,8 +77,8 @@
 - type: entity
   id: MobSpawnCrabUranium
   parent: MobSpawnCrabQuartz
-  name: mobspawner uraniumcrab
-  categories: [ HideSpawnMenu, Spawner ]
+  name: 铀蟹刷怪笼 | mobspawner uraniumcrab
+  categories: [HideSpawnMenu, Spawner]
   components:
   - type: Sprite
     sprite: /Textures/Effects/mobspawn.rsi
@@ -90,8 +89,8 @@
 - type: entity
   id: MobSpawnCrabBananium
   parent: MobSpawnCrabQuartz
-  name: mobspawner bananiumcrab
-  categories: [ HideSpawnMenu, Spawner ]
+  name: 生物生成器 蓝钡蟹 | mobspawner bananiumcrab
+  categories: [HideSpawnMenu, Spawner]
   components:
   - type: Sprite
     sprite: /Textures/Effects/mobspawn.rsi
@@ -101,7 +100,7 @@
 
 - type: entity
   id: EffectAnomalyFloraBulb
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TimedDespawn
     lifetime: 0.4
@@ -109,14 +108,14 @@
     drawdepth: Effects
     noRot: true
     layers:
-      - shader: unshaded
-        map: ["enum.EffectLayers.Unshaded"]
-        sprite: Effects/emp.rsi
-        state: emp_disable
+    - shader: unshaded
+      map: ["enum.EffectLayers.Unshaded"]
+      sprite: Effects/emp.rsi
+      state: emp_disable
   - type: EffectVisuals
   - type: Tag
     tags:
-      - HideContextMenu
+    - HideContextMenu
   - type: AnimationPlayer
   - type: EntityTableSpawner
     deleteSpawnerAfterSpawn: false

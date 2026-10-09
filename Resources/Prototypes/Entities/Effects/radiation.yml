@@ -1,8 +1,8 @@
 - type: entity
-  name: shimmering anomaly
+  name: 闪烁异常体 | shimmering anomaly
   id: RadiationPulse
-  categories: [ HideSpawnMenu ]
-  description: Looking at this anomaly makes you feel strange, like something is pushing at your eyes.
+  categories: [HideSpawnMenu]
+  description: 看着这个异常体让你感到奇怪，仿佛有什么东西在推挤你的眼睛。 | Looking at this anomaly makes you feel strange, like something is pushing at your eyes.
   components:
   - type: RadiationSource
     intensity: 5
@@ -10,6 +10,5 @@
     lifetime: 2
   - type: EmitSoundOnSpawn
     sound:
-      collection:
-        RadiationPulse
+      collection: RadiationPulse
   - type: RadiationPulse

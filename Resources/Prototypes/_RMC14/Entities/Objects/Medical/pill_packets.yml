@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseStorageItem
   id: CMPacketPills
-  name: pill packet
-  description: Contains pills. Once you take them out, they don't go back in.
+  name: 药片包
+  description: 装有药片。一旦取出，就无法放回。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/pill_packets.rsi
@@ -38,8 +38,8 @@
 - type: entity
   parent: CMPacketPills
   id: CMPacketPillsTricordrazine
-  name: tricordazine pill packet
-  description: This packet contains tricordazine pills. Heals all types of damage slightly. Once you take them out, they don't go back in. Don't take more than 2 pills in a short period.
+  name: 三卡地嗪药片包
+  description: 这个药片包内装有三卡地嗪药片。能轻微治愈所有类型的伤害。一旦取出，就无法放回。短时间内不要服用超过2片。
   components:
   - type: Sprite
     state: tricordrazine_packet
@@ -53,8 +53,8 @@
 - type: entity
   parent: CMPacketPills
   id: CMPacketPillsBicaridine
-  name: bicaridine pill packet
-  description: This packet contains bicaridine pills. Heals brute damage effectively. Once you take them out, they don't go back in. Don't take more than 2 pills in a short period.
+  name: 比卡立定药片包
+  description: 这个药包内装有比卡立定药片。能有效治疗钝击伤害。一旦取出，就无法放回。短时间内不要服用超过2片。
   components:
   - type: Sprite
     state: bicaridine_packet
@@ -68,8 +68,8 @@
 - type: entity
   parent: CMPacketPills
   id: CMPacketPillsKelotane
-  name: kelotane pill packet
-  description: This packet contains kelotane pills. Heals burn damage effectively. Once you take them out, they don't go back in. Don't take more than 2 pills in a short period.
+  name: 凯洛坦药丸包
+  description: 这个药丸包内装有凯洛坦药丸。能有效治疗烧伤。一旦取出，就无法再放回。短时间内不要服用超过2粒。
   components:
   - type: Sprite
     state: kelotane_packet

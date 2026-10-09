@@ -1,20 +1,20 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: M4RA battle rifle
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  name: M4RA战斗步枪
   id: WeaponRifleM4SPR
-  description: The M4RA battle rifle is a designated marksman rifle in service with the Marine. Sporting a bullpup configuration, the M4RA battle rifle is perfect for reconnaissance and fire support teams.
+  description: M4RA战斗步枪是一种装备于海军陆战队的精确射手步枪。采用无托结构，M4RA战斗步枪非常适合侦察与火力支援小队。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/desert.rsi
     layers:
     - state: bolt-open
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
       state: d_m4spr_barrel
       offset: 0.65, 0
-      map: [ "barrel" ]
+      map: ["barrel"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m4spr/desert.rsi
   - type: Gun
@@ -45,7 +45,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
         priority: 2
@@ -95,7 +95,7 @@
       rmc-aslot-rail: 0.225, 0.125
       rmc-aslot-underbarrel: 0.62, -0.31
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
     layers:
       barrel:
         Jungle: d_m4spr_barrel
@@ -111,21 +111,21 @@
 
 - type: entity
   parent: WeaponRifleM4SPR
-  name: M5RA battle rifle
+  name: M5RA战斗步枪
   id: WeaponRifleM5SPR
-  description: The M5RA battle rifle is a modified version of the M4RA, able to chamber High Velocity Piercing rounds, and equipped a two-burst configuration.
+  description: M5RA战斗步枪是M4RA的改进版本，能够装填高速穿甲弹，并配备双发点射配置。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/desert.rsi
     layers:
     - state: bolt-open
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
       state: d_m4spr_custom_barrel
       offset: 0.65, 0
-      map: [ "barrel" ]
+      map: ["barrel"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m4spr_custom/desert.rsi
   - type: RMCSelectiveFire
@@ -152,7 +152,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleM5SPRHVP
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
@@ -168,7 +168,7 @@
           - RMCMagazineRifleM5SPRHVP
           - RMCMagazineRifleM5SPRHVHIP
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
     layers:
       barrel:
         Jungle: d_m4spr_custom_barrel
@@ -183,20 +183,20 @@
 - type: entity
   parent: WeaponRifleM5SPR
   id: WeaponRifleM5SPR2
-  name: M5RA/2 battle rifle
-  description: The M5RA/2 battle rifle is a modified version of the M5RA, designed for PMC Operatives to take out targets at longer ranges.
+  name: M5RA/2 战斗步枪
+  description: M5RA/2 战斗步枪是 M5RA 的改进版本，专为 PMC 干员设计，用于在更远距离消灭目标。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m5spr2.rsi
     layers:
     - state: bolt-open
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
       state: m5spr2_barrel
       offset: 0.65, 0
-      map: [ "barrel" ]
+      map: ["barrel"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/m5spr2.rsi
   - type: RMCSelectiveFire
@@ -212,7 +212,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleM5SPRHVP
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
@@ -246,7 +246,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMMagazineRifleM4SPR
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
@@ -263,15 +263,15 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: CMMagazineRifleM4SPR
-  name: "M4RA magazine (10x24mm)"
-  description: "A magazine of standard 10x24mm rounds for use in the M4SPR battle rifle."
+  name: "M4RA 弹匣（10×24毫米）"
+  description: "用于 M4SPR 战斗步枪的标准 10×24 毫米弹药弹匣。"
   components:
   - type: Tag
     tags:
     - CMMagazineRifle
     - CMMagazineRifleM4SPR
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgeRifle10x24mm
@@ -285,8 +285,8 @@
 - type: entity
   parent: CMMagazineRifleM4SPR
   id: RMCMagazineRifleM4SPRWP
-  name: M4RA WP magazine (10x24mm)
-  description: "A magazine of wall-piercing 10x24mm rounds for use in the M4RA battle rifle."
+  name: M4RA 穿墙弹匣（10×24毫米）
+  description: "用于 M4RA 战斗步枪的穿墙 10×24 毫米弹药弹匣。"
   suffix: WP
   components:
   - type: Tag
@@ -297,9 +297,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m4spr.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#6365E6"
   - type: BallisticAmmoProvider
@@ -313,8 +313,8 @@
 - type: entity
   parent: CMMagazineRifleM4SPR
   id: RMCMagazineRifleM4SPRIncendiary
-  name: M4RA incendiary magazine (10x24mm)
-  description: "A magazine of Incendiary 10x24mm rounds for use in the M4RA battle rifle."
+  name: M4RA 燃烧弹弹匣（10×24毫米）
+  description: "供M4RA战斗步枪使用的10×24毫米燃烧弹弹匣。"
   suffix: Incendiary
   components:
   - type: Tag
@@ -325,9 +325,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m4spr.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#771A10"
   - type: BallisticAmmoProvider
@@ -341,8 +341,8 @@
 - type: entity
   parent: CMMagazineRifleM4SPR
   id: RMCMagazineRifleM4SPRHEAP
-  name: M4RA HEAP magazine (10x24mm)
-  description: "A magazine of high-explosive-armor-piercing 10x24mm rounds for use in the M4RA battle rifle."
+  name: M4RA高爆穿甲弹匣（10×24毫米）
+  description: "用于M4RA战斗步枪的10×24毫米高爆穿甲弹匣。"
   suffix: HEAP
   components:
   - type: Tag
@@ -353,9 +353,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m4spr.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#9C9A19"
   - type: BallisticAmmoProvider
@@ -369,8 +369,8 @@
 - type: entity
   parent: CMMagazineRifleM4SPR
   id: CMMagazineRifleM4SPRAP
-  name: M4RA AP magazine (10x24mm)
-  description: "A magazine of armor-piercing 10x24mm rounds for use in the M4RA battle rifle."
+  name: M4RA穿甲弹匣（10×24毫米）
+  description: "供M4RA战斗步枪使用的10×24毫米穿甲弹弹匣。"
   suffix: AP
   components:
   - type: Tag
@@ -381,9 +381,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m4spr.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#1F951F"
   - type: BallisticAmmoProvider
@@ -400,13 +400,13 @@
   suffix: AP, Empty
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:
 
 - type: entity
   parent: CMMagazineRifleM4SPR
   id: CMMagazineRifleM4SPRExt
-  name: "M4RA extended magazine (10x24mm)"
-  description: "An extended magazine of standard 10x24mm rounds for use in the M4RA battle rifle."
+  name: "M4RA 扩容弹匣（10x24mm）"
+  description: "用于M4RA战斗步枪的标准10x24毫米弹药扩容弹匣。"
   components:
   - type: BallisticAmmoProvider
     capacity: 35
@@ -425,11 +425,11 @@
 - type: entity
   parent: CMMagazineRifleM4SPR
   id: RMCMagazineRifleM5SPRHVP
-  name: "M5RA HV-Piercing magazine (10x24mm)"
-  description: "A magazine of HV-Piercing 10x24mm rounds for use in the M5RA battle rifle."
+  name: "M5RA高初速穿甲弹匣（10×24毫米）"
+  description: "用于M5RA战斗步枪的10×24毫米高初速穿甲弹弹匣。"
   components:
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifleM5SPRHVP
@@ -439,9 +439,9 @@
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/m4spr.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
       color: "#2d9c75"
   - type: Tag
@@ -452,8 +452,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleM5SPRHVP
-  name: cartridge (HV-Piercing)
-  description: A high-velocity HV-Piercing cartridge. Fits in M5RA custom magazines.
+  name: 弹药（高速穿甲）
+  description: 一种高速HV穿甲弹药。可装入M5RA定制弹匣。
   components:
   - type: Tag
     tags:
@@ -466,7 +466,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: BulletRifleM5SPRHVP
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: DamageImpactProfile
     projectile:
@@ -498,8 +498,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeRifleM5SPRHVHIP
-  name: cartridge (HVHI-Piercing)
-  description: A high-velocity HVHI-Piercing cartridge. Fits in M5RA custom magazines.
+  name: 弹药（HVHI穿甲）
+  description: 一种高速HVHI穿甲弹药。适配M5RA定制弹匣。
   components:
   - type: Tag
     tags:
@@ -526,11 +526,11 @@
 - type: entity
   parent: RMCMagazineRifleM5SPRHVP
   id: RMCMagazineRifleM5SPRHVHIP
-  name: "M5RA HVHI-Piercing magazine (10x24mm)"
-  description: "A magazine of HVHI-Piercing 10x24mm rounds for use in the M5RA battle rifle."
+  name: "M5RA HVHI穿甲弹匣（10×24毫米）"
+  description: "用于M5RA战斗步枪的HVHI穿甲10×24毫米弹药弹匣。"
   components:
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeRifleM5SPRHVHIP

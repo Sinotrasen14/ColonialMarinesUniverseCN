@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructure
   id: RMCCommunicationsTower
-  name: TC-3T static telecommunications tower
-  description: A static heavy-duty TC-3T telecommunications tower. Used to set up subspace communications lines between planetary and extra-planetary locations. Will need to have extra communication frequencies programmed into it by multitool.
+  name: TC-3T固定式电信塔
+  description: 一座固定式重型TC-3T电信塔。用于在行星与行星外地点之间建立亚空间通信线路。需要使用多功能工具将额外通信频率编程到其中。
   components:
   - type: GuideHelp
     guides:
@@ -16,8 +16,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,1.49,1.49"
         density: 200
         mask:
@@ -27,25 +26,24 @@
     offset: 0.5, 1.5
     layers:
     - state: static1_broken
-      map: [ "base" ]
+      map: ["base"]
     - state: resin_idle
-      map: [ "resin" ]
+      map: ["resin"]
       visible: false
   - type: Damageable
-    damageModifierSet: null
+    damageModifierSet:
   - type: Injurable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 450
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Breakage" ]
+        acts: ["Breakage"]
   - type: CommunicationsTower
   - type: RMCRepairable
     heal: 150
@@ -61,13 +59,13 @@
     visuals:
       enum.CommunicationsTowerLayers.Layer:
         base:
-          Broken: { state: static1_broken }
-          Off: { state: static1_off }
-          On: { state: static1 }
+          Broken: {state: static1_broken}
+          Off: {state: static1_off}
+          On: {state: static1}
       enum.WeededEntityLayers.Layer:
         resin:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
   - type: MaxDamage
     max: 500
   - type: MarineMapTracked
@@ -128,7 +126,7 @@
   abstract: true
   parent: MarkerBase
   id: RMCSpawnerCommunicationsTowerBase
-  name: static comms
+  name: 静态通信
   components: # TODO RMC14 some start broken
   - type: Sprite
     sprite: _RMC14/Structures/communications_tower.rsi
@@ -160,8 +158,8 @@
 - type: entity
   parent: BaseStructure
   id: RMCCommunicationsTowerProp
-  name: destroyed comms tower
-  description: An old company comms tower used to transmit communications between subspace bodies. Looks like this one has seen better days.
+  name: 被摧毁的通讯塔
+  description: 一座旧的公司通讯塔，曾用于在子空间实体之间传输通信。看来这一座已经风光不再。
   components:
   - type: Transform
     anchored: true
@@ -172,8 +170,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 200
         mask:
@@ -191,8 +188,8 @@
 - type: entity
   parent: RMCCommunicationsTowerProp
   id: RMCCommunicationsTowerPropAlt0
-  name: destroyed comms tower
-  description: An old company comms tower used to transmit communications between subspace bodies. Looks like this one has seen better days.
+  name: 被摧毁的通信塔
+  description: 一座老旧的公司通信塔，曾用于在子空间体之间传输通信。看来这一座已经风光不再了。
   components:
   - type: Sprite
     drawdepth: Mobs
@@ -202,8 +199,8 @@
 - type: entity
   parent: RMCCommunicationsTowerProp
   id: RMCCommunicationsTowerPropAlt1
-  name: destroyed comms tower
-  description: An old company comms tower used to transmit communications between subspace bodies. Looks like this one has seen better days.
+  name: 被摧毁的通信塔
+  description: 一座旧的公司通信塔，曾用于在子空间体之间传输通信。看起来这一座已经破旧不堪了。
   components:
   - type: Sprite
     drawdepth: Mobs

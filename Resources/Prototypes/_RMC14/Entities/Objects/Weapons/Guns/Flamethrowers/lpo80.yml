@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCWeaponFlamer
   id: RMCWeaponFlamerSPP
-  name: LPO80 incinerator unit
-  description: An aged but effective lightweight combat incinerator officially in service as a anti-fortification tool but, in practice, utilized in close quarters combat for flushing out enemy combatants.
+  name: LPO80焚烧装置
+  description: 一种老旧但有效的轻型战斗焚烧装置，官方作为反工事工具服役，但实际中用于近距离战斗，以逼出敌方战斗人员。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Flamethrower/lpo80.rsi
@@ -13,7 +13,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Tank
+        name: 坦克
         startingItem: RMCTankFlamerSPP
         insertSound: /Audio/_RMC14/Weapons/Handling/flamer_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Handling/flamer_unload.ogg
@@ -48,8 +48,8 @@
 - type: entity
   parent: RMCWeaponFlamer
   id: RMCWeaponFlamerSpecUPP
-  name: LPO80-T incinerator unit
-  description: An aged but effective lightweight combat incinerator officially in service as a anti-fortification tool but, in practice, utilized in close quarters combat for flushing out enemy combatants. This one seems to be refurbished to fit certain fuel tanks.
+  name: LPO80-T 焚烧器单元
+  description: 一台老旧但有效的轻型战斗焚烧器，官方服役用途是作为反工事工具，但实际上被用于近距离战斗中，以逼出敌方战斗人员。这一台似乎经过翻新，以适配某些燃料箱。
   components:
   - type: Corrodible
     isCorrodible: false
@@ -70,7 +70,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Tank
+        name: 坦克
         startingItem: RMCTankFlamerLargeUPP
         insertSound: /Audio/_RMC14/Weapons/Handling/flamer_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Handling/flamer_unload.ogg
@@ -105,8 +105,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerSPP
-  name: LPO80 incinerator tank
-  description: A fuel tank used to store fuel for use in the LPO80 incinerator unit. Handle with care.
+  name: LPO80焚烧炉燃料箱
+  description: 用于储存供LPO80焚烧炉设备使用燃料的燃料箱。请小心搬运。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/lpo80.rsi
@@ -115,7 +115,7 @@
     - state: flametank
     - state: flametank_strip1
     - state: flametank_strip2
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
     maxFillLevels: 2
     fillBaseName: flametank_strip
@@ -126,8 +126,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerLargeUPP
-  name: LPO80-T incinerator tank
-  description: A fuel tank used to store fuel for use in the LPO80 incinerator unit. Handle with care. This one seems to be larger than the standard LPO80 tank, and is likely used for extended operations.
+  name: LPO80-T焚烧炉储罐
+  description: 用于储存供LPO80焚烧炉装置使用的燃料的燃料储罐。请小心搬运。这个似乎比标准LPO80储罐更大，可能用于长时间运行。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/lpo80.rsi
@@ -136,7 +136,7 @@
     - state: flametank
     - state: flametank_strip1
     - state: flametank_strip2
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerManager
     solutions:
       rmc_flamer_tank:
@@ -157,8 +157,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerXLargeUPP
-  name: LPO80-T incinerator tank (X)
-  description: A fuel tank used to store fuel for use in the LPO80 incinerator unit. Handle with care. This one seems to be larger than the standard LPO80 tank, and is likely used for extended operations.
+  name: LPO80-T 焚化炉燃料箱（X）
+  description: 用于储存燃料以供 LPO80 焚化炉单元使用的燃料箱。请小心搬运。这个似乎比标准 LPO80 燃料箱更大，可能用于长时间作业。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/lpo80.rsi
@@ -167,7 +167,7 @@
     - state: flametank
     - state: flametank_strip1
     - state: flametank_strip2
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerManager
     solutions:
       rmc_flamer_tank:
@@ -188,8 +188,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: RMCTankFlamerBLargeUPP
-  name: LPO80-T incinerator tank (B)
-  description: A fuel tank used to store fuel for use in the LPO80 incinerator unit. Handle with care. This one seems to be larger than the standard LPO80 tank, and is likely used for extended operations.
+  name: LPO80-T 焚烧炉燃料箱（B）
+  description: 一个用于储存燃料以供 LPO80 焚烧炉装置使用的燃料箱。小心处理。这个看起来比标准 LPO80 燃料箱更大，可能用于长时间运行。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/lpo80.rsi
@@ -198,7 +198,7 @@
     - state: flametank
     - state: flametank_strip1
     - state: flametank_strip2
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerManager
     solutions:
       rmc_flamer_tank:

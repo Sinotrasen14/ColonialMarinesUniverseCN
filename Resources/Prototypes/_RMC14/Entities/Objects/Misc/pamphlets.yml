@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: CMPamphlet
-  name: instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge.
+  name: 教学小册子
+  description: 用于快速传授重要知识的小册子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/pamphlets.rsi
@@ -41,8 +41,8 @@
 - type: entity
   parent: CMPamphlet
   id: CMPamphletMedical
-  name: medical instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has a medical insignia.
+  name: 医学教学小册子
+  description: 一本用于快速传授重要知识的小册子。这本带有一个医学徽记。
   components:
   - type: Sprite
     state: pamphlet_medical
@@ -54,8 +54,8 @@
 - type: entity
   parent: CMPamphlet
   id: CMPamphletEngineer
-  name: engineer instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has an engineering insignia.
+  name: 工程师指导手册
+  description: 一本用于快速传授重要知识的小册子。这一本带有工程学徽记。
   components:
   - type: Sprite
     state: pamphlet_construction
@@ -68,8 +68,8 @@
 - type: entity
   parent: CMPamphlet
   id: CMPamphletJTAC
-  name: JTAC instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has the image of a radio on it.
+  name: JTAC 教学手册
+  description: 一本用于快速传授关键知识的小册子。这本上面有无线电的图案。
   components:
   - type: Sprite
     state: pamphlet_jtac
@@ -81,8 +81,8 @@
 - type: entity
   parent: CMPamphlet
   id: CMPamphletSpotter
-  name: spotter instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has the image of a pair of binoculars on it.
+  name: 观察员指导手册
+  description: 一本用于快速传授重要知识的小册子。这一本上有一副双筒望远镜的图案。
   components:
   - type: Sprite
     state: pamphlet_spotter
@@ -109,8 +109,8 @@
 - type: entity
   parent: CMPamphlet
   id: RMCPamphletVulture
-  name: M707 instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has the image of the M707 "Vulture" on it.
+  name: M707 教学手册
+  description: 一本用于快速传授重要知识的小册子。这本小册子上印有 M707“秃鹫”的图像。
   components:
   - type: Sprite
     state: pamphlet_vulture
@@ -122,8 +122,8 @@
 - type: entity
   parent: CMPamphlet
   id: RMCPamphletSharp
-  name: SHARP operator instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one contains P9 SHARP operator notes.
+  name: SHARP操作员教学手册
+  description: 一本用于快速传授关键知识的小册子。这本包含P9 SHARP操作员笔记。
   components:
   - type: Sprite
     state: pamphlet_written
@@ -136,22 +136,22 @@
 - type: entity
   parent: CMPamphlet
   id: CMPamphletPowerloader
-  name: powerloader instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has a powerloader insignia. The title reads 'Moving freight and squishing heads - a practical guide to a Work Loader'.
+  name: 动力装载机教学手册
+  description: 一本用于快速传授重要知识的小册子。这一本带有动力装载机徽记。标题为“搬运货物与压碎头颅——工作装载机实用指南”。
   components:
-    - type: Sprite
-      state: pamphlet_powerloader
-    - type: SkillPamphlet
-      addSkills:
-        RMCSkillPowerLoader: 1
-      bypassLimit: true
+  - type: Sprite
+    state: pamphlet_powerloader
+  - type: SkillPamphlet
+    addSkills:
+      RMCSkillPowerLoader: 1
+    bypassLimit: true
 
 # gives police skill / bypasses limit
 - type: entity
   parent: CMPamphlet
   id: CMPamphletPolice
-  name: policing instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has the image of a radio on it.
+  name: 警务教学手册
+  description: 一本用于快速传授重要知识的小册子。这本小册子上印有收音机的图案。
   components:
   - type: Sprite
     state: pamphlet_jtac
@@ -164,8 +164,8 @@
 - type: entity
   parent: CMPamphlet
   id: CMPamphletSurgery
-  name: surgery instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has a medical insignia.
+  name: 外科手术教学手册
+  description: 一本用于快速传授关键知识的小册子。这本带有医疗徽记。
   components:
   - type: Sprite
     state: pamphlet_medical
@@ -178,8 +178,8 @@
 - type: entity
   parent: CMPamphlet
   id: CMPamphletIntel
-  name: field intelligence instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has an intelligence insignia.
+  name: 战地情报教学手册
+  description: 一本用于快速传授重要知识的小册子。这本附有情报徽章。
   components:
   - type: Sprite
     state: pamphlet_reading
@@ -187,14 +187,14 @@
     addSkills:
       RMCSkillIntel: 1
     addComps:
-      - type: ViewIntelObjectives
+    - type: ViewIntelObjectives
     bypassLimit: true
 
 - type: entity
   parent: CMPamphlet
   id: RMCPamphletLoader
-  name: loader instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has the image of a rocket on it.
+  name: 装填手教学手册
+  description: 一本用于快速传授重要知识的小册子。这一本上面有一个火箭的图案。
   components:
   - type: Sprite
     state: pamphlet_loader
@@ -222,8 +222,8 @@
 - type: entity
   parent: CMPamphlet
   id: RMCPamphletMortarOperator
-  name: mortar operator instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has the image of a mortar on it.
+  name: 迫击炮操作员教学手册
+  description: 一本用于快速传授重要知识的小册子。这本小册子上有一幅迫击炮的图案。
   components:
   - type: Sprite
     state: pamphlet_mortar
@@ -248,8 +248,8 @@
 - type: entity
   parent: CMPamphlet
   id: RMCPamphletHeavyMachineGunner
-  name: heavy machinegunner instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one has an engineering and a machinegun insignia
+  name: 重机枪手指导手册
+  description: 一本用于快速传授重要知识的小册子。这本册子带有工程兵和机枪的徽章。
   components:
   - type: Sprite
     state: pamphlet_machinegunner
@@ -264,8 +264,8 @@
 - type: entity
   parent: CMPamphlet
   id: RMCPamphletHonorGuard
-  name: honor guard instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge. This one details the responsibilities of an Honor Guard.
+  name: 荣誉卫队指导手册
+  description: 一本用于快速传授重要知识的小册子。这本小册子详细说明了荣誉卫队的职责。
   components:
   - type: Sprite
     state: pamphlet_honorguard
@@ -291,8 +291,8 @@
 - type: entity
   parent: CMPamphlet
   id: CMPamphletLanguage
-  name: translation pamphlet
-  description: A pamphlet used by lazy Marine interpreters to quickly learn new languages on the spot.
+  name: 翻译小册子
+  description: 一本供懒惰的海军陆战队口译员在现场快速学习新语言使用的小册子。
   abstract: true
   components:
   - type: SkillPamphlet
@@ -302,8 +302,8 @@
 - type: entity
   parent: CMPamphletLanguage
   id: CMPamphletLanguageJapanese
-  name: Pages of Turedobando Yohei Adobencha Zohuken
-  description: A dog-eared volume of a popular isekai manga. Even if you don’t care about the plot, the annotated sound effects and dialogue provide a surprisingly solid foundation in the language.
+  name: 《Turedobando Yohei Adobencha Zohuken》的书页
+  description: 一本卷了角的热门异世界漫画。即使你不在意剧情，带有注释的拟声词和对话也能为学习这门语言打下出乎意料的扎实基础。
   components:
   - type: SkillPamphlet
     language: Japanese
@@ -312,8 +312,8 @@
 - type: entity
   parent: CMPamphletLanguage
   id: CMPamphletLanguageMandarin
-  name: Pages from the Little Red Book
-  description: A dense, laminated technical manual for SPP industrial hardware. Navigating the maintenance protocols is a trial by fire, but you’ll learn the script eventually.
+  name: 《小红皮书》中的几页
+  description: 一本为 SPP 工业硬件编写的、内容密集的覆膜技术手册。摸索维护规程犹如烈火试炼，但你最终会学会这套操作。
   components:
   - type: SkillPamphlet
     language: Mandarin
@@ -323,8 +323,8 @@
 - type: entity
   parent: CMPamphletLanguage
   id: CMPamphletLanguageGerman
-  name: Translated Lyrics to 99 Luftballons
-  description: A beer-stained lyric sheet used for karaoke. It’s mostly 20th-century pop hits, but it’s enough to help you navigate a German-speaking mining colony without getting punched.
+  name: 《99个气球》歌词翻译
+  description: 一张沾满啤酒渍的卡拉OK歌词单。上面大多是20世纪流行金曲，但足以帮你在一个讲德语的采矿殖民地中周旋而不挨揍。
   components:
   - type: SkillPamphlet
     language: German
@@ -333,8 +333,8 @@
 - type: entity
   parent: CMPamphletLanguage
   id: CMPamphletLanguageSpanish
-  name: America Latina - A Quick Translation Guide
-  description: A "Inter-Colony Relations" pamphlet issued by the United Nations. It was intended for peace-keeping efforts, but mostly serves as a guide for Marines looking for the nearest bar.
+  name: 拉丁美洲——快速翻译指南
+  description: 一本由联合国发行的“殖民地间关系”小册子。它本意是用于维和行动，但主要还是成了海军陆战队员寻找最近酒吧的指南。
   components:
   - type: SkillPamphlet
     language: Spanish
@@ -343,8 +343,8 @@
 - type: entity
   parent: CMPamphletLanguage
   id: CMPamphletLanguageFrench
-  name: Dog-eared Pages of Le Petit Prince
-  description: A few tattered pages from a fashion journal from the early 2100s. It teaches you just enough high-society vocabulary to sound sophisticated, or at least like an arrogant tourist.
+  name: 《小王子》的折角书页
+  description: 几页来自22世纪初一本时尚杂志的破烂书页。它能教你刚好够用的上流社会词汇，让你听起来有格调，或者至少像个傲慢的游客。
   components:
   - type: SkillPamphlet
     language: French
@@ -353,8 +353,8 @@
 - type: entity
   parent: CMPamphletLanguage
   id: CMPamphletLanguageRussian
-  name: Crumpled Transliteration Notes
-  description: Gritty field notes scribbled on the pages of an old journal. Between the phonetic spellings of how to follow orders, win a bar fight, and toast the fallen, there is enough grammar hidden in the margins to learn the basics.
+  name: 皱巴巴的音译笔记
+  description: 潦草地写在旧日记本页面上的粗粝实地笔记。在如何服从命令、打赢酒吧斗殴、向阵亡者敬酒这些音译拼写之间，页边空白处藏着足够学会基础的语法。
   components:
   - type: SkillPamphlet
     language: Russian
@@ -363,8 +363,8 @@
 - type: entity
   parent: CMPamphletLanguage
   id: CMPamphletLanguageSign
-  name: Illustrated Hand Signals Guide
-  description: A UNMC laminated guide to 'Tactical Hand Signs.' It covers the essential hand signals used for coordination when any noise is a death sentence, plus a few unofficial gestures for insulting your squadmates without the CO hearing you.
+  name: 图解手势信号指南
+  description: 一份 UNMC 覆膜指南，介绍“战术手势信号”。它涵盖了当任何声响都可能招致杀身之祸时用于协调的基本手势，还包括几个非官方手势，用来在不让指挥官听到的情况下侮辱队友。
   components:
   - type: SkillPamphlet
     language: SignLanguage
@@ -377,8 +377,8 @@
 - type: entity
   parent: CMPamphletLanguage
   id: CMPamphletLanguageXenonid
-  name: Xenobiologist's file
-  description: A heavily redacted Weston-Yamada research summary. It details the clicks, hisses, and pheromonal triggers of the 'Xenonid' in high detail. Attempting these sounds makes your throat ache and your skin crawl.
+  name: 异星生物学家的档案
+  description: 一份经过大量涂黑的韦斯顿-山田研究摘要。它极为详细地记述了“异星生物”的咔嗒声、嘶嘶声和信息素触发机制。尝试模仿这些声音会让你的喉咙发痛，并令你毛骨悚然。
   components:
   - type: SkillPamphlet
     language: Xeno
@@ -387,8 +387,8 @@
 - type: entity
   parent: CMPamphletLanguage
   id: CMPamphletLanguagePrimitive
-  name: scribbled drawings
-  description: A collection of crude drawings involving bananas and apes. It is either a masterpiece of primal communication or the work of a Marine who found an unattended box of crayons.
+  name: 乱涂乱画的涂鸦
+  description: 一堆涉及香蕉和猿猴的粗糙涂鸦。它要么是原始交流的杰作，要么是一名海军陆战队员发现了一盒无人看管的蜡笔后的作品。
   components:
   - type: SkillPamphlet
     language: Primitive
@@ -397,8 +397,8 @@
 - type: entity
   parent: CMPamphlet
   id: CMPamphletK9Handler
-  name: K9 handler instructional pamphlet
-  description: A pamphlet used to quickly impart vital knowledge on handling synthetic K9 units.
+  name: K9训导员指导手册
+  description: 一本用于快速传授处理合成K9单位关键知识的小册子。
   components:
   - type: Sprite
     state: pamphlet_k9_handler

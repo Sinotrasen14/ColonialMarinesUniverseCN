@@ -1,12 +1,12 @@
 - type: entity
   parent: [AppearanceCMUHuman, RMCBaseMobSpeciesOrganic]
   id: RMCTrainingDummy
-  name: training dummy
-  description: A training dummy used by the UNMC to simulate a humanoid body. Feels almost too lifelike.
+  name: 训练假人 | training dummy
+  description: UNMC使用的训练假人，用于模拟人形躯体。触感几乎过于逼真。 | A training dummy used by the UNMC to simulate a humanoid body. Feels almost too lifelike.
   suffix: RMC14
   components:
   - type: Loadout
-    prototypes: [ RMCGearTrainingDummy ]
+    prototypes: [RMCGearTrainingDummy]
   - type: FixedIdentity
     name: cm-chatsan-replacement-synthetic
   - type: RMCTrainingDummy
@@ -14,9 +14,9 @@
     - type: CanEnterCryostorage
     - type: CommendationReceiver
     - type: Satiation
-      satiations: { }
+      satiations: {}
     - type: SatiationSpeedModifier
-      satiations: { }
+      satiations: {}
     - type: Infectable
     - type: Marine
     - type: MarineMapTracked
@@ -37,7 +37,7 @@
 - type: entity
   parent: MarkerBase
   id: SpawnRMCTrainingDummy
-  name: RMC Training Dummy Spawner
+  name: RMC 训练假人生成器 | RMC Training Dummy Spawner
   components:
   - type: Sprite
     layers:
@@ -51,9 +51,9 @@
 - type: entity
   parent: CMLockerBase
   id: RMCLockerTrainingDummy
-  name: training dummy cabinet
+  name: 训练假人柜 | training dummy cabinet
   suffix: South, Empty
-  description: An ultrasafe cabinet containing a training dummy. Only accessible by Chief Medical Officers and Senior Enlisted Advisors.
+  description: 一个装有训练假人的超安全柜。仅可由首席医疗官和高级军士顾问打开。 | An ultrasafe cabinet containing a training dummy. Only accessible by Chief Medical Officers and Senior Enlisted Advisors.
   # description: An ultrasafe cabinet containing Professor DUMMY and its tablet. Only accessible by Chief Medical Officers and Senior Listed Advisors.
   placement:
     mode: SnapgridCenter
@@ -61,7 +61,7 @@
   - type: Corrodible
     isCorrodible: false
   - type: Destructible
-    thresholds: [ ]
+    thresholds: []
   - type: WallMount
     arc: 360
   - type: Sprite

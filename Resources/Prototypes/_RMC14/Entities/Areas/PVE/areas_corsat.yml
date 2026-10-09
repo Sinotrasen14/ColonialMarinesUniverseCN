@@ -1,1348 +1,1348 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaCorsat
-  name: CORSAT
+  name: 科萨特
   suffix: CORSAT Area
   components:
-    - type: Sprite
-      sprite: _RMC14/Areas/areas_corsat.rsi
-      state: corsat_hull
-    - type: Area
-      buildSpecial: true
-      CAS: true
-      fulton: true
-      mortarPlacement: true
-      mortarFire: true
-      lasing: true
-      medevac: true
-      OB: true
-      supplyDrop: true
-      weatherEnabled: true
-      minimapColor: "#6C6767D8"
+  - type: Sprite
+    sprite: _RMC14/Areas/areas_corsat.rsi
+    state: corsat_hull
+  - type: Area
+    buildSpecial: true
+    CAS: true
+    fulton: true
+    mortarPlacement: true
+    mortarFire: true
+    lasing: true
+    medevac: true
+    OB: true
+    supplyDrop: true
+    weatherEnabled: true
+    minimapColor: "#6C6767D8"
 
 - type: entity
   parent: RMCAreaCorsat
   id: RMCAreaCorsatLandingConsole
-  name: "LZ1 'Gamma'"
+  name: "LZ1 ‘伽马’"
   components:
-    - type: Sprite
-      state: corsat_telecomms
-    - type: Area
-      alwaysPowered: true
+  - type: Sprite
+    state: corsat_telecomms
+  - type: Area
+    alwaysPowered: true
 
 - type: entity
   parent: RMCAreaCorsat
   id: RMCAreaCorsatLandingConsole2
-  name: "LZ2 'Sigma'"
+  name: "LZ2 ‘西格玛’"
   components:
-    - type: Sprite
-      state: corsat_telecomms
-    - type: Area
-      alwaysPowered: true
+  - type: Sprite
+    state: corsat_telecomms
+  - type: Area
+    alwaysPowered: true
 
 - type: entity
   parent: RMCAreaCorsat
   id: RMCAreaCorsatEmergencyAccess
-  name: Unknown Area
+  name: 未知区域
   components:
-    - type: Sprite
-      state: corsat_hull
-    - type: Area
-      CAS: false
-      fulton: false
-      lasing: false
-      mortarPlacement: false
-      mortarFire: false
-      medevac: false
-      OB: false
-      supplyDrop: false
-      weatherEnabled: false
-      alwaysPowered: true
+  - type: Sprite
+    state: corsat_hull
+  - type: Area
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    OB: false
+    supplyDrop: false
+    weatherEnabled: false
+    alwaysPowered: true
 
 - type: entity
   parent: RMCAreaCorsat
   id: RMCAreaCorsatSigma
-  name: Sigma Sector
+  name: 西格玛区
   components:
-    - type: Sprite
-      state: corsat_hull
+  - type: Sprite
+    state: corsat_hull
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaNorth
-  name: Sigma Sector North Hallway
+  name: 西格玛区北走廊
   components:
-    - type: Sprite
-      state: sigma_hallway_north
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_hallway_north
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaHangar
-  name: Landing Bay Sigma
+  name: 西格玛登陆湾
   components:
-    - type: Sprite
-      state: sigma_hangar
-    - type: Area
-      linkedLz: dropship_lz2
-      minimapColor: "#ebe5e5e3"
+  - type: Sprite
+    state: sigma_hangar
+  - type: Area
+    linkedLz: dropship_lz2
+    minimapColor: "#ebe5e5e3"
 
 - type: entity
   parent: RMCAreaCorsatSigmaHangar
   id: RMCAreaCorsatSigmaHangarMonorail
-  name: Sigma Monorail Station
+  name: 西格玛单轨站
   components:
-    - type: Sprite
-      state: monorail
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: monorail
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigmaHangarMonorail
   id: RMCAreaCorsatSigmaHangarMonorailControl
-  name: Sigma Monorail Control
+  name: Sigma单轨控制
   components:
-    - type: Sprite
-      state: monorail
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: monorail
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigmaHangarMonorail
   id: RMCAreaCorsatSigmaHangarMonorailRailcart
-  name: CORSAT Monorail
+  name: CORSAT单轨列车
   components:
-    - type: Sprite
-      state: railcart
-    - type: Area
-      linkedLz: dropship_lz2
-      CAS: false
-      fulton: false
-      lasing: false
-      mortarPlacement: false
-      mortarFire: false
-      medevac: false
-      OB: false
-      supplyDrop: false
-      weatherEnabled: false
+  - type: Sprite
+    state: railcart
+  - type: Area
+    linkedLz: dropship_lz2
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    OB: false
+    supplyDrop: false
+    weatherEnabled: false
 
 - type: entity
   parent: RMCAreaCorsatSigmaHangarMonorail
   id: RMCAreaCorsatSigmaHangarMonorailRailcart_transit
-  name: CORSAT Monorail transit
+  name: CORSAT单轨交通
   components:
-    - type: Sprite
-      state: railcart
-    - type: Area
-      CAS: false
-      fulton: false
-      lasing: false
-      mortarPlacement: false
-      mortarFire: false
-      medevac: false
-      OB: false
-      supplyDrop: false
-      weatherEnabled: false
-      noTunnel: true
+  - type: Sprite
+    state: railcart
+  - type: Area
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    OB: false
+    supplyDrop: false
+    weatherEnabled: false
+    noTunnel: true
 
 - type: entity
   parent: RMCAreaCorsatSigmaHangar
   id: RMCAreaCorsatSigmaHangarCargo
-  name: Sigma Hangar Cargo Checkpoint
+  name: 西格玛机库货物检查站
   components:
-    - type: Sprite
-      state: sigma_hangar
+  - type: Sprite
+    state: sigma_hangar
 
 - type: entity
   parent: RMCAreaCorsatSigmaHangar
   id: RMCAreaCorsatSigmaHangarCheckpoint
-  name: Sigma Hangar Checkpoint
+  name: 西格玛机库检查点
   components:
-    - type: Sprite
-      state: sigma_hangar
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_hangar
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigmaHangar
   id: RMCAreaCorsatSigmaHangarId
-  name: Sigma Hangar ID Checkpoint
+  name: 西格玛机库 ID 检查点
   components:
-    - type: Sprite
-      state: corsat_id
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: corsat_id
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigmaHangar
   id: RMCAreaCorsatSigmaHangarArrivals
-  name: Sigma Arrivals
+  name: 西格玛到达
   components:
-    - type: Sprite
-      state: sigma_arrivals
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_arrivals
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigmaHangar
   id: RMCAreaCorsatSigmaHangarOffice
-  name: Sigma Hangar Office
+  name: 西格玛机库办公室
   components:
-    - type: Sprite
-      state: sigma_hangar_office
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_hangar_office
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigmaHangar
   id: RMCAreaCorsatSigmaHangarSecurity
-  name: Sigma Hangar Security
+  name: 西格玛机库安保
   components:
-    - type: Sprite
-      state: sigma_hangar_security
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_hangar_security
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaAirlockEast
-  name: Sigma Dome East Airlock
+  name: 西格玛穹顶东气闸
   components:
-    - type: Sprite
-      state: sigma_airlock_east
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_airlock_east
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigmaAirlockEast
   id: RMCAreaCorsatSigmaAirlockEastId
-  name: Sigma East ID Checkpoint
+  name: 西格玛东区身份检查站
   components:
-    - type: Sprite
-      state: corsat_id
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: corsat_id
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaAirlockSouth
-  name: Sigma Dome South Airlock
+  name: 西格玛穹顶南气闸
   components:
-    - type: Sprite
-      state: sigma_airlock_south
+  - type: Sprite
+    state: sigma_airlock_south
 
 - type: entity
   parent: RMCAreaCorsatSigmaAirlockSouth
   id: RMCAreaCorsatSigmaAirlockSouthId
-  name: Sigma South ID Checkpoint
+  name: 西格玛南部身份检查站
   components:
-    - type: Sprite
-      state: corsat_id
+  - type: Sprite
+    state: corsat_id
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaAirlockControl
-  name: Sigma Dome Control Module
+  name: 西格玛穹顶控制模块
   components:
-    - type: Sprite
-      state: sigma_control
+  - type: Sprite
+    state: sigma_control
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaCargo
-  name: Sigma Cargo
+  name: 西格玛货运
   components:
-    - type: Sprite
-      state: sigma_cargo
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_cargo
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaLaundry
-  name: Sigma Laundry
+  name: 西格玛洗衣店
   components:
-    - type: Sprite
-      state: sigma_laundry
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_laundry
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaLavatory
-  name: Sigma Lavatory
+  name: 西格玛盥洗室
   components:
-    - type: Sprite
-      state: sigma_lavatory
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_lavatory
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaCafe
-  name: Sigma Cafe
+  name: 西格玛咖啡馆
   components:
-    - type: Sprite
-      state: sigma_cafe
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_cafe
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaDorms
-  name: Sigma Residential Module
+  name: Sigma住宅模块
   components:
-    - type: Sprite
-      state: sigma_residential
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_residential
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaCheckpoint
-  name: Sigma Security Checkpoint
+  name: Sigma安全检查站
   components:
-    - type: Sprite
-      state: sigma_security_checkpoint
-    - type: Area
-      linkedLz: dropship_lz2
+  - type: Sprite
+    state: sigma_security_checkpoint
+  - type: Area
+    linkedLz: dropship_lz2
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaSoutheast
-  name: Sigma Sector Southeast Hallways
+  name: 西格玛区东南走廊
   components:
-    - type: Sprite
-      state: sigma_hallway_southeast
+  - type: Sprite
+    state: sigma_hallway_southeast
 
 - type: entity
   parent: RMCAreaCorsatSigmaSoutheast
   id: RMCAreaCorsatSigmaSoutheastGenerator
-  name: CORSAT Secondary Generators
+  name: CORSAT 次级发电机
   components:
-    - type: Sprite
-      state: secondary_core
-    - type: Area
-      CAS: true
-      fulton: true
-      mortarPlacement: false
-      mortarFire: true
-      lasing: false
-      medevac: false
-      OB: true
-      supplyDrop: true
-      weatherEnabled: false
-      minimapColor: "#c19504e7"
+  - type: Sprite
+    state: secondary_core
+  - type: Area
+    CAS: true
+    fulton: true
+    mortarPlacement: false
+    mortarFire: true
+    lasing: false
+    medevac: false
+    OB: true
+    supplyDrop: true
+    weatherEnabled: false
+    minimapColor: "#c19504e7"
 
 - type: entity
   parent: RMCAreaCorsatSigmaSoutheast
   id: RMCAreaCorsatSigmaSoutheastTelecomm
-  name: CORSAT Telecommunications
+  name: CORSAT电信
   components:
-    - type: Sprite
-      state: corsat_telecomms
-    - type: Area
-      CAS: true
-      fulton: true
-      mortarPlacement: false
-      mortarFire: true
-      lasing: false
-      medevac: false
-      OB: true
-      supplyDrop: true
-      weatherEnabled: false
+  - type: Sprite
+    state: corsat_telecomms
+  - type: Area
+    CAS: true
+    fulton: true
+    mortarPlacement: false
+    mortarFire: true
+    lasing: false
+    medevac: false
+    OB: true
+    supplyDrop: true
+    weatherEnabled: false
 
 - type: entity
   parent: RMCAreaCorsatSigmaSoutheast
   id: RMCAreaCorsatSigmaSoutheastDatalab
-  name: Sigma Data Laboratory
+  name: 西格玛数据实验室
   components:
-    - type: Sprite
-      state: sigma_data_lab
-    - type: Area
-      CAS: true
-      fulton: true
-      mortarPlacement: false
-      mortarFire: true
-      lasing: false
-      medevac: false
-      OB: true
-      supplyDrop: true
-      weatherEnabled: false
+  - type: Sprite
+    state: sigma_data_lab
+  - type: Area
+    CAS: true
+    fulton: true
+    mortarPlacement: false
+    mortarFire: true
+    lasing: false
+    medevac: false
+    OB: true
+    supplyDrop: true
+    weatherEnabled: false
 
 - type: entity
   parent: RMCAreaCorsatSigmaSoutheast
   id: RMCAreaCorsatSigmaSoutheastDataoffice
-  name: Sigma Data Office
+  name: 西格玛数据办公室
   components:
-    - type: Sprite
-      state: sigma_data_offices
+  - type: Sprite
+    state: sigma_data_offices
 
 - type: entity
   parent: RMCAreaCorsatSigmaSoutheast
   id: RMCAreaCorsatSigmaSoutheastDatamaint
-  name: Sigma Data Maintenance
+  name: Sigma数据维护
   components:
-    - type: Sprite
-      state: sigma_data_lab
+  - type: Sprite
+    state: sigma_data_lab
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaSouth
-  name: Sigma Sector South Hallways
+  name: 西格玛区南走廊
   components:
-    - type: Sprite
-      state: sigma_hallway_south
+  - type: Sprite
+    state: sigma_hallway_south
 
 - type: entity
   parent: RMCAreaCorsatSigmaSouth
   id: RMCAreaCorsatSigmaSouthComplex
-  name: Sigma Research Complex
+  name: 西格玛研究综合体
   components:
-    - type: Sprite
-      state: sigma_complex
-    - type: Area
-      minimapColor: "#812da2ee"
+  - type: Sprite
+    state: sigma_complex
+  - type: Area
+    minimapColor: "#812da2ee"
 
 - type: entity
   parent: RMCAreaCorsatSigmaSouthComplex
   id: RMCAreaCorsatSigmaSouthComplexTeleporter
-  name: Sigma Teleporter
+  name: 西格玛传送器
   components:
-    - type: Sprite
-      sprite: _RMC14/Areas/areas.rsi
-      state: shuttle
-    - type: Area
-      CAS: true
-      fulton: true
-      mortarPlacement: false
-      mortarFire: true
-      lasing: false
-      medevac: false
-      OB: true
-      supplyDrop: true
-      weatherEnabled: false
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: shuttle
+  - type: Area
+    CAS: true
+    fulton: true
+    mortarPlacement: false
+    mortarFire: true
+    lasing: false
+    medevac: false
+    OB: true
+    supplyDrop: true
+    weatherEnabled: false
 
 - type: entity
   parent: RMCAreaCorsatSigmaSouth
   id: RMCAreaCorsatSigmaSouthRobotics
-  name: Sigma Robotics Laboratory
+  name: 西格玛机器人实验室
   components:
-    - type: Sprite
-      state: robotics
-    - type: Area
-      minimapColor: "#c19504e7"
+  - type: Sprite
+    state: robotics
+  - type: Area
+    minimapColor: "#c19504e7"
 
 - type: entity
   parent: RMCAreaCorsatSigmaSouth
   id: RMCAreaCorsatSigmaSouthEngineering
-  name: Sigma Engineering
+  name: 西格玛工程
   components:
-    - type: Sprite
-      state: sigma_engineering
-    - type: Area
-      minimapColor: "#c19504e7"
+  - type: Sprite
+    state: sigma_engineering
+  - type: Area
+    minimapColor: "#c19504e7"
 
 - type: entity
   parent: RMCAreaCorsatSigmaSouth
   id: RMCAreaCorsatSigmaSouthSecurity
-  name: Sigma Security Hub
+  name: 西格玛安全中心
   components:
-    - type: Sprite
-      state: sigma_security
-    - type: Area
-      minimapColor: "#a22d2dee"
+  - type: Sprite
+    state: sigma_security
+  - type: Area
+    minimapColor: "#a22d2dee"
 
 - type: entity
   parent: RMCAreaCorsatSigmaSouth
   id: RMCAreaCorsatSigmaSouthOffices
-  name: Sigma Offices
+  name: 西格玛办公室
   components:
-    - type: Sprite
-      state: sigma_offices
+  - type: Sprite
+    state: sigma_offices
 
 - type: entity
   parent: RMCAreaCorsatSigma
   id: RMCAreaCorsatSigmaBiodome
-  name: Biodome Sigma
+  name: 生物穹顶西格玛
   components:
-    - type: Sprite
-      state: sigma_biodome
+  - type: Sprite
+    state: sigma_biodome
 
 - type: entity
   parent: RMCAreaCorsatSigmaBiodome
   id: RMCAreaCorsatSigmaBiodomeIce
-  name: Biodome Sigma
+  name: 西格玛生物穹顶
   components:
-    - type: Sprite
-      state: sigma_biodome
+  - type: Sprite
+    state: sigma_biodome
 
 - type: entity
   parent: RMCAreaCorsatSigmaBiodome
   id: RMCAreaCorsatSigmaBiodomeTestgrounds
-  name: Sigma Biodome Testing Grounds
+  name: Sigma生物穹顶试验场
   components:
-    - type: Sprite
-      state: sigma_testgrounds
+  - type: Sprite
+    state: sigma_testgrounds
 
 - type: entity
   parent: RMCAreaCorsatSigmaBiodome
   id: RMCAreaCorsatSigmaBiodomeGunrange
-  name: Sigma Biodome Firing Range
+  name: 西格玛生物穹顶射击场
   components:
-    - type: Sprite
-      state: sigma_gunrange
+  - type: Sprite
+    state: sigma_gunrange
 
 - type: entity
   parent: RMCAreaCorsatSigmaBiodome
   id: RMCAreaCorsatSigmaBiodomeScrapyard
-  name: Sigma Biodome Scrapyard
+  name: 西格玛生物穹顶废料场
   components:
-    - type: Sprite
-      state: sigma_scrapyard
+  - type: Sprite
+    state: sigma_scrapyard
 
 - type: entity
   parent: RMCAreaCorsat
   id: RMCAreaCorsatGamma
-  name: Gamma Sector
+  name: 伽马区
   components:
-    - type: Sprite
-      state: corsat_hull
+  - type: Sprite
+    state: corsat_hull
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaHangar
-  name: Landing Bay Gamma
+  name: 伽马着陆湾
   components:
-    - type: Sprite
-      state: gamma_hangar
-    - type: Area
-      linkedLz: dropship_lz1
-      minimapColor: "#ebe5e5e3"
+  - type: Sprite
+    state: gamma_hangar
+  - type: Area
+    linkedLz: dropship_lz1
+    minimapColor: "#ebe5e5e3"
 
 - type: entity
   parent: RMCAreaCorsatGammaHangar
   id: RMCAreaCorsatGammaHangarMonorail
-  name: Gamma Monorail Station
+  name: 伽马单轨站
   components:
-    - type: Sprite
-      state: monorail
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: monorail
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaHangarMonorail
   id: RMCAreaCorsatGammaHangarMonorailControl
-  name: Gamma Monorail Control
+  name: 伽马单轨控制
   components:
-    - type: Sprite
-      state: monorail
+  - type: Sprite
+    state: monorail
 
 - type: entity
   parent: RMCAreaCorsatGammaHangarMonorail
   id: RMCAreaCorsatGammaHangarMonorailRailcart
-  name: CORSAT Railcart
+  name: CORSAT 轨道车
   components:
-    - type: Sprite
-      state: railcart
-    - type: Area
-      linkedLz: dropship_lz1
-      CAS: false
-      fulton: false
-      lasing: false
-      mortarPlacement: false
-      mortarFire: false
-      medevac: false
-      OB: false
-      supplyDrop: false
-      weatherEnabled: false
+  - type: Sprite
+    state: railcart
+  - type: Area
+    linkedLz: dropship_lz1
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    OB: false
+    supplyDrop: false
+    weatherEnabled: false
 
 - type: entity
   parent: RMCAreaCorsatGammaHangar
   id: RMCAreaCorsatGammaHangarCargo
-  name: Gamma Hangar Cargo Checkpoint
+  name: 伽马机库货物检查站
   components:
-    - type: Sprite
-      state: gamma_hangar
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_hangar
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaHangar
   id: RMCAreaCorsatGammaHangarCheckpoint
-  name: Gamma Hangar Checkpoint
+  name: 伽马机库检查点
   components:
-    - type: Sprite
-      state: gamma_hangar
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_hangar
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaHangar
   id: RMCAreaCorsatGammaHangarOffice
-  name: Gamma Hangar Office
+  name: 伽马机库办公室
   components:
-    - type: Sprite
-      state: gamma_hangar_office
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_hangar_office
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaHangar
   id: RMCAreaCorsatGammaHangarFlightcontrol
-  name: CORSAT Flight Control Center
+  name: CORSAT飞行控制中心
   components:
-    - type: Sprite
-      state: flight_center
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: flight_center
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaHangar
   id: RMCAreaCorsatGammaHangarSecurity
-  name: Gamma Hangar Security
+  name: 伽马机库安保
   components:
-    - type: Sprite
-      state: gamma_hangar_security
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_hangar_security
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaHangar
   id: RMCAreaCorsatGammaHangarArrivals
-  name: Gamma Arrivals
+  name: 伽马到达
   components:
-    - type: Sprite
-      state: gamma_arrivals
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_arrivals
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaFoyer
-  name: Gamma Foyer
+  name: 伽马门厅
   components:
-    - type: Sprite
-      state: gamma_foyer
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_foyer
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaHallwaymain
-  name: Gamma Sector West Hallway
+  name: 伽马区西走廊
   components:
-    - type: Sprite
-      state: gamma_hallway_main
+  - type: Sprite
+    state: gamma_hallway_main
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaHallwaysouth
-  name: Gamma Sector South Hallways
+  name: 伽马扇区南走廊
   components:
-    - type: Sprite
-      state: gamma_hallway_south
+  - type: Sprite
+    state: gamma_hallway_south
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaResidential
-  name: Gamma Residential Hallway
+  name: 伽马宿舍走廊
   components:
-    - type: Sprite
-      state: gamma_hallway_main
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_hallway_main
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaResidential
   id: RMCAreaCorsatGammaResidentialWest
-  name: CORSAT Academy
+  name: CORSAT学院
   components:
-    - type: Sprite
-      state: gamma_residential_west
+  - type: Sprite
+    state: gamma_residential_west
 
 - type: entity
   parent: RMCAreaCorsatGammaResidential
   id: RMCAreaCorsatGammaResidentialEast
-  name: Gamma North Residential
+  name: 伽马北住宅区
   components:
-    - type: Sprite
-      state: gamma_residential_east
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_residential_east
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaResidential
   id: RMCAreaCorsatGammaResidentialMaint
-  name: Gamma Residential Maintenance
+  name: 伽马住宅维护
   components:
-    - type: Sprite
-      state: gamma_residential_maint
+  - type: Sprite
+    state: gamma_residential_maint
 
 - type: entity
   parent: RMCAreaCorsatGammaResidential
   id: RMCAreaCorsatGammaResidentialResearcher
-  name: Researcher Quarters
+  name: 研究员宿舍
   components:
-    - type: Sprite
-      state: researcher_quarters
+  - type: Sprite
+    state: researcher_quarters
 
 - type: entity
   parent: RMCAreaCorsatGammaResidential
   id: RMCAreaCorsatGammaResidentialLounge
-  name: Researcher Lounge
+  name: 研究员休息室
   components:
-    - type: Sprite
-      state: researcher_lounge
+  - type: Sprite
+    state: researcher_lounge
 
 - type: entity
   parent: RMCAreaCorsatGammaResidential
   id: RMCAreaCorsatGammaResidentialLavatory
-  name: Gamma Lavatory
+  name: 伽马盥洗室
   components:
-    - type: Sprite
-      state: gamma_lavatory
+  - type: Sprite
+    state: gamma_lavatory
 
 - type: entity
   parent: RMCAreaCorsatGammaResidential
   id: RMCAreaCorsatGammaResidentialShowers
-  name: Gamma Showers
+  name: 伽马簇射
   components:
-    - type: Sprite
-      state: gamma_showers
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_showers
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaResidential
   id: RMCAreaCorsatGammaResidentialLaundry
-  name: Gamma Laundry
+  name: 伽马洗衣
   components:
-    - type: Sprite
-      state: gamma_laundry
+  - type: Sprite
+    state: gamma_laundry
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaCargo
-  name: Gamma Cargo
+  name: 伽马货运
   components:
-    - type: Sprite
-      state: gamma_cargo
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_cargo
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaCargo
   id: RMCAreaCorsatGammaCargoLobby
-  name: Gamma Cargo Lobby
+  name: 伽马货运大厅
   components:
-    - type: Sprite
-      state: gamma_cargo_lobby
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: gamma_cargo_lobby
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaCargo
   id: RMCAreaCorsatGammaCargoDisposal
-  name: Gamma Disposals
+  name: 伽马处置
   components:
-    - type: Sprite
-      state: gamma_disposals
+  - type: Sprite
+    state: gamma_disposals
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaMedbay
-  name: CORSAT Medbay
+  name: CORSAT医疗舱
   components:
-    - type: Sprite
-      state: corsat_medbay
-    - type: Area
-      minimapColor: "#3dbf75ee"
+  - type: Sprite
+    state: corsat_medbay
+  - type: Area
+    minimapColor: "#3dbf75ee"
 
 - type: entity
   parent: RMCAreaCorsatGammaMedbay
   id: RMCAreaCorsatGammaMedbayMorgue
-  name: CORSAT Morgue
+  name: CORSAT 太平间
   components:
-    - type: Sprite
-      state: corsat_morgue
+  - type: Sprite
+    state: corsat_morgue
 
 - type: entity
   parent: RMCAreaCorsatGammaMedbay
   id: RMCAreaCorsatGammaMedbayChemistry
-  name: CORSAT Chemistry
+  name: CORSAT 化学
   components:
-    - type: Sprite
-      state: corsat_chemistry
+  - type: Sprite
+    state: corsat_chemistry
 
 - type: entity
   parent: RMCAreaCorsatGammaMedbay
   id: RMCAreaCorsatGammaMedbaySurgery
-  name: CORSAT Surgery
+  name: CORSAT手术
   components:
-    - type: Sprite
-      state: corsat_surgery
+  - type: Sprite
+    state: corsat_surgery
 
 - type: entity
   parent: RMCAreaCorsatGammaMedbay
   id: RMCAreaCorsatGammaMedbayLobby
-  name: CORSAT Medbay Lobby
+  name: CORSAT医疗舱大厅
   components:
-    - type: Sprite
-      state: medbay_lobby
+  - type: Sprite
+    state: medbay_lobby
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaHydroponics
-  name: CORSAT Hydroponics
+  name: CORSAT水培
   components:
-    - type: Sprite
-      state: corsat_hydroponics
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: corsat_hydroponics
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaCanteen
-  name: CORSAT Canteen
+  name: CORSAT食堂
   components:
-    - type: Sprite
-      state: corsat_canteen
+  - type: Sprite
+    state: corsat_canteen
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaKitchen
-  name: CORSAT Kitchen
+  name: CORSAT厨房
   components:
-    - type: Sprite
-      state: corsat_kitchen
+  - type: Sprite
+    state: corsat_kitchen
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaFreezer
-  name: CORSAT Food Storage
+  name: CORSAT 食品储存
   components:
-    - type: Sprite
-      state: food_storage
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: food_storage
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaAdministration
-  name: CORSAT Administration Center
+  name: CORSAT 行政中心
   components:
-    - type: Sprite
-      state: corsat_administration
-    - type: Area
-      minimapColor: "#2d3fa2ee"
+  - type: Sprite
+    state: corsat_administration
+  - type: Area
+    minimapColor: "#2d3fa2ee"
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaSecurity
-  name: CORSAT Security Hub
+  name: CORSAT 安全中心
   components:
-    - type: Sprite
-      state: gamma_security
-    - type: Area
-      linkedLz: dropship_lz1
-      minimapColor: "#a22d2dee"
+  - type: Sprite
+    state: gamma_security
+  - type: Area
+    linkedLz: dropship_lz1
+    minimapColor: "#a22d2dee"
 
 - type: entity
   parent: RMCAreaCorsatGammaSecurity
   id: RMCAreaCorsatGammaSecurityCells
-  name: CORSAT Security Cells
+  name: CORSAT安全小组
   components:
-    - type: Sprite
-      state: security_cell
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: security_cell
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaSecurity
   id: RMCAreaCorsatGammaSecurityArmory
-  name: CORSAT Armory
+  name: CORSAT 军械库
   components:
-    - type: Sprite
-      state: corsat_armory
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: corsat_armory
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaRnr
-  name: CORSAT R&R
+  name: CORSAT休整
   components:
-    - type: Sprite
-      state: corsat_rnr
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: corsat_rnr
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaRnr
   id: RMCAreaCorsatGammaRnrBar
-  name: CORSAT Bar
+  name: CORSAT酒吧
   components:
-    - type: Sprite
-      state: corsat_bar
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: corsat_bar
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaRnr
   id: RMCAreaCorsatGammaRnrArcade
-  name: CORSAT Arcade
+  name: CORSAT 街机
   components:
-    - type: Sprite
-      state: corsat_arcade
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: corsat_arcade
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGammaRnr
   id: RMCAreaCorsatGammaRnrLibrary
-  name: CORSAT Library
+  name: CORSAT图书馆
   components:
-    - type: Sprite
-      state: corsat_library
+  - type: Sprite
+    state: corsat_library
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaEngineering
-  name: Gamma Engineering
+  name: 伽马工程
   components:
-    - type: Sprite
-      state: gamma_engineering
-    - type: Area
-      linkedLz: dropship_lz1
-      minimapColor: "#c19504e7"
+  - type: Sprite
+    state: gamma_engineering
+  - type: Area
+    linkedLz: dropship_lz1
+    minimapColor: "#c19504e7"
 
 - type: entity
   parent: RMCAreaCorsatGammaEngineering
   id: RMCAreaCorsatGammaEngineeringLobby
-  name: Gamma Engineering Lobby
+  name: 伽马工程大堂
   components:
-    - type: Sprite
-      state: gamma_engineering
+  - type: Sprite
+    state: gamma_engineering
 
 - type: entity
   parent: RMCAreaCorsatGammaEngineering
   id: RMCAreaCorsatGammaEngineeringAtmos
-  name: CORSAT Atmospherics
+  name: CORSAT大气环境
   components:
-    - type: Sprite
-      state: gamma_atmos
+  - type: Sprite
+    state: gamma_atmos
 
 - type: entity
   parent: RMCAreaCorsatGammaEngineering
   id: RMCAreaCorsatGammaEngineeringCore
-  name: CORSAT Generator Core
+  name: CORSAT 发电机核心
   components:
-    - type: Sprite
-      state: corsat_core
-    - type: Area
-      linkedLz: dropship_lz1
+  - type: Sprite
+    state: corsat_core
+  - type: Area
+    linkedLz: dropship_lz1
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaSigmaremote
-  name: Sigma Remote Complex
+  name: Sigma远程综合体
   components:
-    - type: Sprite
-      state: sigma_complex_remote
-    - type: Area
-      minimapColor: "#812da2ee"
+  - type: Sprite
+    state: sigma_complex_remote
+  - type: Area
+    minimapColor: "#812da2ee"
 
 - type: entity
   parent: RMCAreaCorsatGammaSigmaremote
   id: RMCAreaCorsatGammaSigmaremoteTeleporter
-  name: Sigma Remote Teleporter
+  name: 西格玛远程传送器
   components:
-    - type: Sprite
-      sprite: _RMC14/Areas/areas.rsi
-      state: shuttle
-    - type: Area
-      CAS: false
-      fulton: false
-      lasing: false
-      mortarPlacement: false
-      mortarFire: false
-      medevac: false
-      OB: false
-      supplyDrop: false
-      weatherEnabled: false
+  - type: Sprite
+    sprite: _RMC14/Areas/areas.rsi
+    state: shuttle
+  - type: Area
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    OB: false
+    supplyDrop: false
+    weatherEnabled: false
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaAirlockNorth
-  name: Gamma Dome North Airlock
+  name: 伽马穹顶北气闸
   components:
-    - type: Sprite
-      state: gamma_airlock_north
-    - type: Area
-      CAS: true
-      fulton: true
-      mortarPlacement: true
-      mortarFire: true
-      lasing: true
-      medevac: true
-      OB: true
-      supplyDrop: true
-      weatherEnabled: true
+  - type: Sprite
+    state: gamma_airlock_north
+  - type: Area
+    CAS: true
+    fulton: true
+    mortarPlacement: true
+    mortarFire: true
+    lasing: true
+    medevac: true
+    OB: true
+    supplyDrop: true
+    weatherEnabled: true
 
 - type: entity
   parent: RMCAreaCorsatGammaAirlockNorth
   id: RMCAreaCorsatGammaAirlockNorthId
-  name: Gamma North ID Checkpoint
+  name: 伽马北身份检查站
   components:
-    - type: Sprite
-      state: corsat_id
+  - type: Sprite
+    state: corsat_id
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaAirlockSouth
-  name: Gamma Dome South Airlock
+  name: 伽马穹顶南气闸
   components:
-    - type: Sprite
-      state: gamma_airlock_south
+  - type: Sprite
+    state: gamma_airlock_south
 
 - type: entity
   parent: RMCAreaCorsatGammaAirlockSouth
   id: RMCAreaCorsatGammaAirlockSouthId
-  name: Gamma South ID Checkpoint
+  name: 伽马南部身份检查站
   components:
-    - type: Sprite
-      state: corsat_id
+  - type: Sprite
+    state: corsat_id
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaAirlockControl
-  name: Gamma Dome Control Module
+  name: 伽马穹顶控制模块
   components:
-    - type: Sprite
-      state: gamma_control
-    - type: Area
-      CAS: true
-      fulton: true
-      mortarPlacement: true
-      mortarFire: true
-      lasing: true
-      medevac: true
-      OB: true
-      supplyDrop: true
-      weatherEnabled: true
+  - type: Sprite
+    state: gamma_control
+  - type: Area
+    CAS: true
+    fulton: true
+    mortarPlacement: true
+    mortarFire: true
+    lasing: true
+    medevac: true
+    OB: true
+    supplyDrop: true
+    weatherEnabled: true
 
 - type: entity
   parent: RMCAreaCorsatGamma
   id: RMCAreaCorsatGammaBiodome
-  name: Biodome Gamma
+  name: 生物穹顶伽马
   components:
-    - type: Sprite
-      state: gamma_biodome
-    - type: Area
-      CAS: true
-      fulton: true
-      mortarPlacement: true
-      mortarFire: true
-      lasing: true
-      medevac: true
-      OB: true
-      supplyDrop: true
-      weatherEnabled: true
+  - type: Sprite
+    state: gamma_biodome
+  - type: Area
+    CAS: true
+    fulton: true
+    mortarPlacement: true
+    mortarFire: true
+    lasing: true
+    medevac: true
+    OB: true
+    supplyDrop: true
+    weatherEnabled: true
 
 - type: entity
   parent: RMCAreaCorsatGammaBiodome
   id: RMCAreaCorsatGammaBiodomeComplex
-  name: Gamma Research Complex
+  name: 伽马研究综合体
   components:
-    - type: Sprite
-      state: gamma_complex
-    - type: Area
-      minimapColor: "#812da2ee"
+  - type: Sprite
+    state: gamma_complex
+  - type: Area
+    minimapColor: "#812da2ee"
 
 - type: entity
   parent: RMCAreaCorsatGammaBiodome
   id: RMCAreaCorsatGammaBiodomeVirology
-  name: Gamma Virology Wing
+  name: 伽马病毒学翼楼
   components:
-    - type: Sprite
-      state: gamma_virology
-    - type: Area
-      minimapColor: "#812da2ee"
+  - type: Sprite
+    state: gamma_virology
+  - type: Area
+    minimapColor: "#812da2ee"
 
 - type: entity
   parent: RMCAreaCorsatGammaBiodome
   id: RMCAreaCorsatGammaBiodomeToxins
-  name: Gamma Toxins Wing
+  name: 伽马毒素联队
   components:
-    - type: Sprite
-      state: gamma_toxin
-    - type: Area
-      minimapColor: "#812da2ee"
+  - type: Sprite
+    state: gamma_toxin
+  - type: Area
+    minimapColor: "#812da2ee"
 
 - type: entity
   parent: RMCAreaCorsat
   id: RMCAreaCorsatTheta
-  name: Theta Sector
+  name: 西塔领域
   components:
-    - type: Sprite
-      state: corsat_hull
-    - type: Area
-      CAS: true
-      fulton: true
-      mortarPlacement: true
-      mortarFire: true
-      lasing: true
-      medevac: true
-      OB: true
-      supplyDrop: true
-      weatherEnabled: true
+  - type: Sprite
+    state: corsat_hull
+  - type: Area
+    CAS: true
+    fulton: true
+    mortarPlacement: true
+    mortarFire: true
+    lasing: true
+    medevac: true
+    OB: true
+    supplyDrop: true
+    weatherEnabled: true
 
 - type: entity
   parent: RMCAreaCorsatTheta
   id: RMCAreaCorsatThetaBiodome
-  name: Biodome Theta
+  name: 西塔生物穹顶
   components:
-    - type: Sprite
-      state: theta_biodome
+  - type: Sprite
+    state: theta_biodome
 
 - type: entity
   parent: RMCAreaCorsatThetaBiodome
   id: RMCAreaCorsatThetaBiodomeComplex
-  name: Theta Research Complex
+  name: 西塔研究综合体
   components:
-    - type: Sprite
-      state: theta_complex
-    - type: Area
-      minimapColor: "#812da2ee"
+  - type: Sprite
+    state: theta_complex
+  - type: Area
+    minimapColor: "#812da2ee"
 
 - type: entity
   parent: RMCAreaCorsatThetaBiodome
   id: RMCAreaCorsatThetaBiodomeHydroeast
-  name: Theta East Hydroponics Wing
+  name: 西塔东水培翼楼
   components:
-    - type: Sprite
-      state: theta_hydro_east
-    - type: Area
-      minimapColor: "#812da2ee"
+  - type: Sprite
+    state: theta_hydro_east
+  - type: Area
+    minimapColor: "#812da2ee"
 
 - type: entity
   parent: RMCAreaCorsatThetaBiodome
   id: RMCAreaCorsatThetaBiodomeHydrowest
-  name: Theta West Hydroponics Wing
+  name: 西塔西水培区
   components:
-    - type: Sprite
-      state: theta_hydro_west
+  - type: Sprite
+    state: theta_hydro_west
 
 - type: entity
   parent: RMCAreaCorsatTheta
   id: RMCAreaCorsatThetaAirlockWest
-  name: Theta Dome West Airlock
+  name: 西塔穹顶西侧气闸
   components:
-    - type: Sprite
-      state: theta_airlock_west
+  - type: Sprite
+    state: theta_airlock_west
 
 - type: entity
   parent: RMCAreaCorsatThetaAirlockWest
   id: RMCAreaCorsatThetaAirlockWestId
-  name: Theta West ID Checkpoint
+  name: 西塔西部身份检查站
   components:
-    - type: Sprite
-      state: corsat_id
+  - type: Sprite
+    state: corsat_id
 
 - type: entity
   parent: RMCAreaCorsatTheta
   id: RMCAreaCorsatThetaAirlockEast
-  name: Theta Dome East Airlock
+  name: 西塔穹顶东气闸
   components:
-    - type: Sprite
-      state: theta_airlock_east
+  - type: Sprite
+    state: theta_airlock_east
 
 - type: entity
   parent: RMCAreaCorsatThetaAirlockEast
   id: RMCAreaCorsatThetaAirlockEastId
-  name: Theta East ID Checkpoint
+  name: 西塔东部身份检查站
   components:
-    - type: Sprite
-      state: corsat_id
+  - type: Sprite
+    state: corsat_id
 
 - type: entity
   parent: RMCAreaCorsatTheta
   id: RMCAreaCorsatThetaAirlockControl
-  name: Theta Dome Control Module
+  name: 西塔穹顶控制模块
   components:
-    - type: Sprite
-      state: theta_control
+  - type: Sprite
+    state: theta_control
 
 - type: entity
   parent: RMCAreaCorsat
   id: RMCAreaCorsatOmega
-  name: Sector Omega
+  name: 欧米伽区
   components:
-    - type: Sprite
-      state: corsat_hull
-    - type: Area
-      CAS: false
-      fulton: false
-      lasing: false
-      mortarPlacement: false
-      mortarFire: false
-      medevac: false
-      OB: false
-      supplyDrop: false
-      weatherEnabled: false
+  - type: Sprite
+    state: corsat_hull
+  - type: Area
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    OB: false
+    supplyDrop: false
+    weatherEnabled: false
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaBiodome
-  name: Biodome Omega
+  name: 欧米伽生物穹顶
   components:
-    - type: Sprite
-      state: omega_biodome
+  - type: Sprite
+    state: omega_biodome
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaHangar
-  name: Landing Bay Omega
+  name: 欧米伽着陆湾
   components:
-    - type: Sprite
-      state: omega_hangar
+  - type: Sprite
+    state: omega_hangar
 
 - type: entity
   parent: RMCAreaCorsatOmegaHangar
   id: RMCAreaCorsatOmegaHangarOffice
-  name: Omega Hangar Office
+  name: 欧米伽机库办公室
   components:
-    - type: Sprite
-      state: omega_hangar_office
+  - type: Sprite
+    state: omega_hangar_office
 
 - type: entity
   parent: RMCAreaCorsatOmegaHangar
   id: RMCAreaCorsatOmegaHangarSecurity
-  name: Omega Hangar Security
+  name: 欧米伽机库安保
   components:
-    - type: Sprite
-      state: omega_hangar_security
+  - type: Sprite
+    state: omega_hangar_security
 
 - type: entity
   parent: RMCAreaCorsatOmegaHangar
   id: RMCAreaCorsatOmegaHangarCorporate_shuttle
-  name: Omega Hangar Corporate Shuttle
+  name: 欧米伽机库企业穿梭机
   components:
-    - type: Sprite
-      state: corporate_shuttle
+  - type: Sprite
+    state: corporate_shuttle
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaHallways
-  name: Omega Sector Hallways
+  name: 欧米伽区走廊
   components:
-    - type: Sprite
-      state: omega_hallway
+  - type: Sprite
+    state: omega_hallway
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaComplex
-  name: Omega Research Complex
+  name: 欧米伽研究综合体
   components:
-    - type: Sprite
-      state: omega_complex
-    - type: Area
-      minimapColor: "#812da2ee"
+  - type: Sprite
+    state: omega_complex
+  - type: Area
+    minimapColor: "#812da2ee"
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaContainment
-  name: Omega Research Containment
+  name: 欧米伽研究收容
   components:
-    - type: Sprite
-      state: omega_containment
+  - type: Sprite
+    state: omega_containment
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaSecurity
-  name: Omega Security Hub
+  name: 欧米伽安全中心
   components:
-    - type: Sprite
-      state: omega_security
-    - type: Area
-      minimapColor: "#a22d2dee"
+  - type: Sprite
+    state: omega_security
+  - type: Area
+    minimapColor: "#a22d2dee"
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaCheckpoint
-  name: Omega Access Checkpoint
+  name: 欧米伽访问检查点
   components:
-    - type: Sprite
-      state: omega_checkpoint
-    - type: Area
-      minimapColor: "#a22d2dee"
+  - type: Sprite
+    state: omega_checkpoint
+  - type: Area
+    minimapColor: "#a22d2dee"
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaOffices
-  name: Omega Offices
+  name: 欧米茄办公室
   components:
-    - type: Sprite
-      state: omega_offices
+  - type: Sprite
+    state: omega_offices
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaCargo
-  name: Omega Cargo
+  name: 欧米伽货运
   components:
-    - type: Sprite
-      state: omega_cargo
+  - type: Sprite
+    state: omega_cargo
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaMaint
-  name: Omega Maintenance
+  name: Omega 维护
   components:
-    - type: Sprite
-      state: omega_maintenance
+  - type: Sprite
+    state: omega_maintenance
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaAirlocknorth
-  name: Omega Dome North Airlock
+  name: 欧米伽穹顶北气闸
   components:
-    - type: Sprite
-      state: omega_airlock
+  - type: Sprite
+    state: omega_airlock
 
 - type: entity
   parent: RMCAreaCorsatOmegaAirlocknorth
   id: RMCAreaCorsatOmegaAirlocknorthId
-  name: Omega North ID Checkpoint
+  name: 欧米伽北身份检查站
   components:
-    - type: Sprite
-      state: corsat_id
+  - type: Sprite
+    state: corsat_id
 
 - type: entity
   parent: RMCAreaCorsatOmega
   id: RMCAreaCorsatOmegaControl
-  name: Omega Dome Control Module
+  name: 欧米伽穹顶控制模块
   components:
-    - type: Sprite
-      state: omega_control
+  - type: Sprite
+    state: omega_control
 
 - type: entity
   parent: RMCAreaCorsat
   id: RMCAreaCorsatInaccessible
-  name: Unknown Location
+  name: 未知位置
   components:
-    - type: Sprite
-      state: corsat_hull
-    - type: Area
-      CAS: false
-      fulton: false
-      lasing: false
-      mortarPlacement: false
-      mortarFire: false
-      medevac: false
-      OB: false
-      supplyDrop: false
-      weatherEnabled: false
-      noTunnel: true
-      alwaysPowered: true
+  - type: Sprite
+    state: corsat_hull
+  - type: Area
+    CAS: false
+    fulton: false
+    lasing: false
+    mortarPlacement: false
+    mortarFire: false
+    medevac: false
+    OB: false
+    supplyDrop: false
+    weatherEnabled: false
+    noTunnel: true
+    alwaysPowered: true

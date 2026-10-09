@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructureDynamic
   id: RMCSmallFloodlight
-  name: small floodlight
-  description: A small bit of light in the darkness.
+  name: 小型泛光灯
+  description: 黑暗中的一点微光。
   components:
   - type: XenoCrusherChargable
     instantDestroy: true
@@ -17,10 +17,10 @@
     noRot: true
     sprite: _RMC14/Objects/Misc/Lights/floodlight.rsi
     layers:
-      - state: smallfloodon # Temporary until power works.
-      - state: smallflood
-        visible: false
-        map: [ "light" ]
+    - state: smallfloodon   # Temporary until power works.
+    - state: smallflood
+      visible: false
+      map: ["light"]
   - type: InteractionOutline
   - type: Repairable
   - type: Damageable
@@ -36,8 +36,7 @@
     lightMask: ConeQuad
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:PlaySoundBehavior
@@ -52,12 +51,11 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         density: 50
         mask:
@@ -69,20 +67,20 @@
 - type: entity
   parent: RMCSmallFloodlight
   id: RMCSmallFloodlightUnanchored
-  name: small floodlight
-  description: A small bit of light in the darkness.
-  categories: [ HideSpawnMenu ]
+  name: 小型泛光灯
+  description: 黑暗中的一点微光。
+  categories: [HideSpawnMenu]
   components:
-    - type: Transform
-      anchored: False
-    - type: Physics
-      bodyType: Dynamic
+  - type: Transform
+    anchored: false
+  - type: Physics
+    bodyType: Dynamic
 
 - type: entity
   parent: BaseStructure
   id: RMCTallFloodlight # CMU14
-  name: tall floodlight
-  description: A pillar of light in the darkness.
+  name: 高杆泛光灯
+  description: 黑暗中的一束光柱。
   placement:
     mode: SnapgridCenter
   components:
@@ -99,10 +97,10 @@
     noRot: true
     sprite: _RMC14/Objects/Misc/Lights/floodlightbig.rsi
     layers:
-      - state: bigflood
-      - state: bigfloodon
-        visible: true
-        map: [ "light" ]
+    - state: bigflood
+    - state: bigfloodon
+      visible: true
+      map: ["light"]
     offset: "0.0,0.5"
     drawdepth: Mobs
   - type: Construction
@@ -121,8 +119,7 @@
     lightMask: ConeQuad
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:PlaySoundBehavior
@@ -136,8 +133,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         density: 50
         mask:
@@ -154,8 +150,8 @@
 - type: entity
   parent: BaseStructure
   id: RMCFloodlightBroken # CMU14
-  name: tall broken floodlight
-  description: A pasted on note says 'To fix, unscrew the panel, crowbar out the damaged assembly, weld it fixed, add 2 cable, then close the panel.'
+  name: 高大的损坏泛光灯
+  description: 一张粘贴的便条上写着“要修理，拧下面板，用撬棍撬出损坏的组件，把它焊好，添加2根电缆，然后合上面板。”
   components:
   - type: Transform
     anchored: true
@@ -180,8 +176,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         density: 155
         mask:
@@ -194,8 +189,8 @@
 - type: entity
   parent: BaseStructure
   id: RMCLZFloodlight
-  name: landing light
-  description: A powerful light usually stationed near landing zones to provide better visibility. This one seems to have been bolted down and is unable to be moved.
+  name: 着陆灯
+  description: 一种强光灯，通常安置在着陆区附近，以提供更好的能见度。这个似乎已被螺栓固定，无法移动。
   placement:
     mode: SnapgridCenter
   components:
@@ -213,8 +208,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         density: 50
         mask:
@@ -227,8 +221,8 @@
 - type: entity
   abstract: true
   id: LandingZoneLightBase
-  name: landing light
-  description: A landing light, if it's flashing stay clear!
+  name: 着陆灯
+  description: 着陆灯，如果正在闪烁，请保持距离！
   placement:
     mode: SnapgridCenter
   components:
@@ -239,7 +233,7 @@
     layers:
     - map: ["enum.LandingLightVisuals.Off"]
       state: landingstripe
-    - map: [ "enum.LandingLightVisuals.On" ]
+    - map: ["enum.LandingLightVisuals.On"]
       state: landingstripe0
       visible: false
   - type: Appearance
@@ -268,7 +262,7 @@
     layers:
     - map: ["enum.LandingLightVisuals.Off"]
       state: landingstripe
-    - map: [ "enum.LandingLightVisuals.On" ]
+    - map: ["enum.LandingLightVisuals.On"]
       state: landingstripe1
       visible: false
   - type: LandingLight
@@ -284,7 +278,7 @@
     layers:
     - map: ["enum.LandingLightVisuals.Off"]
       state: landingstripe
-    - map: [ "enum.LandingLightVisuals.On" ]
+    - map: ["enum.LandingLightVisuals.On"]
       state: landingstripe2
       visible: false
   - type: LandingLight
@@ -300,7 +294,7 @@
     layers:
     - map: ["enum.LandingLightVisuals.Off"]
       state: landingstripe
-    - map: [ "enum.LandingLightVisuals.On" ]
+    - map: ["enum.LandingLightVisuals.On"]
       state: landingstripe3
       visible: false
   - type: LandingLight
@@ -315,7 +309,7 @@
     layers:
     - map: ["enum.LandingLightVisuals.Off"]
       state: lz_spoke_light
-    - map: [ "enum.LandingLightVisuals.On" ]
+    - map: ["enum.LandingLightVisuals.On"]
       state: lz_spoke_light1
       visible: false
   - type: LandingLight
@@ -332,8 +326,8 @@
 - type: entity
   parent: RMCLZFloodlight
   id: RMCEngineerShipLight
-  name: circular light
-  description: A huge circular light
+  name: 圆形光
+  description: 巨大的圆形光
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/Lights/engineer_ship.rsi
@@ -349,13 +343,12 @@
 - type: entity
   parent: RMCTallFloodlight
   id: RMCStreetlight
-  name: colony streetlight
+  name: 殖民地路灯
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         density: 50
         mask:
@@ -367,10 +360,10 @@
     sprite: _RMC14/Objects/Misc/Lights/streetlight.rsi
     offset: 0.0,0.8
     layers:
-      - state: street_off
-      - state: street_on
-        visible: true
-        map: [ "light" ]
+    - state: street_off
+    - state: street_on
+      visible: true
+      map: ["light"]
     drawdepth: Mobs
   - type: Construction
     graph: RMCStreetlightBroken
@@ -379,8 +372,8 @@
 - type: entity
   parent: RMCFloodlightBroken
   id: RMCStreetlightBroken
-  name: broken colony streetlight
-  description: A pasted on note says 'To fix, unscrew the panel, crowbar out the damaged assembly, weld it fixed, add 2 cable, then close the panel.'
+  name: 损坏的殖民地路灯
+  description: 一张贴着的便条上写着“要修理，拧下面板，用撬棍撬出损坏的组件，把它焊好，添加2根电缆，然后合上面板。”
   components:
   - type: Sprite
     noRot: true
@@ -394,8 +387,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         density: 50
         mask:
@@ -408,8 +400,8 @@
 - type: entity
   parent: BaseStructure
   id: RMCTrafficLightBase # CMU14
-  name: traffic light
-  description: A traffic light.
+  name: 交通信号灯
+  description: 一个交通信号灯。
   abstract: true
   placement:
     mode: SnapgridCenter
@@ -428,16 +420,15 @@
     sprite: _RMC14/Objects/Misc/Lights/trafficlights.rsi
     offset: 0.65,0.8
     layers:
-      - state: trafficlight
-      - state: trafficlight_on
-        visible: false
-        map: [ "light" ]
+    - state: trafficlight
+    - state: trafficlight_on
+      visible: false
+      map: ["light"]
     drawdepth: Mobs
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         density: 50
         mask:
@@ -453,8 +444,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:PlaySoundBehavior
@@ -483,8 +473,8 @@
 - type: entity
   parent: RMCStreetlightBroken
   id: RMCTrafficLightBroken
-  name: broken traffic light
-  description: A pasted on note says 'To fix, unscrew the panel, crowbar out the damaged assembly, weld it fixed, add 2 cable, then close the panel.'
+  name: 损坏的交通信号灯
+  description: 一张粘贴的便条上写着“要修理，拧下面板，用撬棍撬出损坏的组件，把它焊好，加上2根电缆，然后合上面板。”
   components:
   - type: Sprite
     noRot: true
@@ -503,10 +493,10 @@
   components:
   - type: Sprite
     layers:
-      - state: trafficlight_alt
-      - state: trafficlight_alt_on
-        visible: false
-        map: [ "light" ]
+    - state: trafficlight_alt
+    - state: trafficlight_alt_on
+      visible: false
+      map: ["light"]
   - type: Construction
     graph: RMCTrafficLightBrokenAlt
     node: completed

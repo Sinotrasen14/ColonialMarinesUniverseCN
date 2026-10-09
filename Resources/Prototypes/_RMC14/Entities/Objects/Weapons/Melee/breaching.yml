@@ -1,8 +1,8 @@
 - type: entity
   parent: [RMCBaseMeleeWeapon, Sledgehammer]
   id: RMCSynthBreachingHammer
-  name: b5 breaching hammer
-  description: This 100-pound monstrosity of a sledgehammer is made of solid tungsten carbide and hits with enough force to level walls like they’re made of paper. It tears through steel and concrete without slowing down, and is completely unusable by anyone without superhuman strength. It’s too heavy for a normal person to even lift.
+  name: B5破门锤
+  description: 这把重达100磅的巨型大锤由实心碳化钨制成，击打力道足以把墙壁像纸糊的一样夷为平地。它能毫不减速地撕裂钢铁和混凝土，任何没有超人力量的人都完全无法使用。它重得连普通人都抬不起来。
   suffix: RMC
   components:
   - type: Sprite
@@ -33,13 +33,12 @@
   - type: WhitelistPickupBy
     whitelist:
       components:
-        - Synth
+      - Synth
   - type: RMCSynthItemRestriction
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 300
         mask:

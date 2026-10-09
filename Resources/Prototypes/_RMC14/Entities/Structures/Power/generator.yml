@@ -1,6 +1,6 @@
 - type: entity
   id: RMCGeneratorFusionFake
-  name: permanently destroyed S-52 fusion reactor
+  name: 永久摧毁的 S-52 聚变反应堆
   suffix: RMC # CMU14
   placement:
     mode: SnapgridCenter
@@ -11,8 +11,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 100
         mask:
@@ -25,13 +24,13 @@
     sprite: _RMC14/Structures/Power/fusion_reactor.rsi
     layers:
     - state: "off"
-      map: [ "base" ]
+      map: ["base"]
   - type: Clickable
 
 - type: entity
   parent: RMCGeneratorFusionFake
   id: RMCGeneratorFusion
-  name: S-52 fusion reactor
+  name: S-52聚变反应堆
   suffix: RMC # CMU14
   placement:
     mode: SnapgridCenter
@@ -53,25 +52,25 @@
     visuals:
       enum.RMCFusionReactorLayers.Layer:
         base:
-          Off: { state: "off" }
-          Weld: { state: "weld" }
-          Wire: { state: "wire" }
-          Wrench: { state: "wrench" }
-          Ten: { state: "on-10" }
-          TwentyFive: { state: "on-25" }
-          Fifty: { state: "on-50" }
-          SeventyFive: { state: "on-75" }
-          Hundred: { state: "on-100" }
-          Overloaded: { state: "overloaded" }
+          Off: {state: "off"}
+          Weld: {state: "weld"}
+          Wire: {state: "wire"}
+          Wrench: {state: "wrench"}
+          Ten: {state: "on-10"}
+          TwentyFive: {state: "on-25"}
+          Fifty: {state: "on-50"}
+          SeventyFive: {state: "on-75"}
+          Hundred: {state: "on-100"}
+          Overloaded: {state: "overloaded"}
   - type: BlockXenoConstruction
   - type: RMCMesonsNonviewable
 
 - type: entity
   parent: RMCGeneratorFusion
   id: RMCGeneratorFusionColony
-  name: G-11 geothermal generator
+  name: G-11地热发电机
   suffix: RMC # CMU14
-  description: A thermoelectric generator sitting atop a plasma-filled borehole.
+  description: 一台安放在充满等离子体钻孔顶部的热电发电机。
   components:
   - type: RMCFusionReactor
     watts: 100000
@@ -84,15 +83,15 @@
     visuals:
       enum.RMCFusionReactorLayers.Layer:
         base:
-          Off: { state: "off" }
-          Weld: { state: "weld" }
-          Wire: { state: "wire" }
-          Wrench: { state: "wrench" }
-          Ten: { state: "on-10" }
-          TwentyFive: { state: "on-25" }
-          Fifty: { state: "on-50" }
-          SeventyFive: { state: "on-75" }
-          Hundred: { state: "on-100" }
+          Off: {state: "off"}
+          Weld: {state: "weld"}
+          Wire: {state: "wire"}
+          Wrench: {state: "wrench"}
+          Ten: {state: "on-10"}
+          TwentyFive: {state: "on-25"}
+          Fifty: {state: "on-50"}
+          SeventyFive: {state: "on-75"}
+          Hundred: {state: "on-100"}
   - type: MarineMapTracked
   - type: XenoMapTracked
   - type: TacticalMapTracked
@@ -119,9 +118,9 @@
 - type: entity
   parent: BaseItem
   id: RMCGeneratorFusionCell
-  name: WL-6 universal fuel cell
+  name: WL-6通用燃料电池
   suffix: RMC # CMU14
-  description: A rechargeable fuel cell for fusion reactors. # CMU14: cells no longer expire
+  description: 用于聚变反应堆的可充电燃料电池。                              # CMU14: cells no longer expire
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Power/fusion_fuel_cell.rsi
@@ -134,113 +133,110 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseMachine, SmallConstructibleMachine, StructureWheeled]
+  parent: [BaseMachine, SmallConstructibleMachine, StructureWheeled]
   id: RMCPortableGeneratorBase
   suffix: RMC # CMU14
   components:
-    - type: XenoCrusherChargable
-      instantDestroy: true
-      passOnDestroy: true
-    - type: GuideHelp
-      guides:
-      - RMCGuideRoleCombatTechnician
-    - type: Transform
-      anchored: False
-    - type: Physics
-      bodyType: Dynamic
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.40,-0.40,0.40,0.40"
-          density: 155
-          mask:
-            - MachineMask
-          layer:
-            - MachineLayer
-    - type: Appearance
-    - type: Sprite
-      sprite: _RMC14/Structures/Power/generators.rsi
-      noRot: true
-    - type: InteractionOutline
-    - type: Corrodible
-      isCorrodible: false
-    - type: RMCPortableGenerator
-    - type: UserInterface
-      interfaces:
-        enum.RMCPortableGeneratorUiKey.Key:
-          type: RMCPortableGeneratorBui
-    - type: ActivatableUI
-      key: enum.RMCPortableGeneratorUiKey.Key
-    - type: ActivatableUIBlacklist
-      blacklist:
-        components:
-        - Xeno
-    - type: AmbientSound
-      range: 5
-      volume: -5
-      sound:
-        path: /Audio/Ambience/Objects/engine_hum.ogg
-      enabled: false
-    - type: Destructible
-      thresholds:
-        - trigger:
-            !type:DamageTrigger
-            damage: 200
-          behaviors:
-            - !type:DoActsBehavior
-              acts: [ "Destruction" ]
-        - trigger:
-            !type:DamageTrigger
-            damage: 100
-          behaviors:
-            - !type:PlaySoundBehavior
-              sound:
-                collection: MetalBreak
-            - !type:ChangeConstructionNodeBehavior
-              node: machineFrame
-            - !type:DoActsBehavior
-              acts: ["Destruction"]
+  - type: XenoCrusherChargable
+    instantDestroy: true
+    passOnDestroy: true
+  - type: GuideHelp
+    guides:
+    - RMCGuideRoleCombatTechnician
+  - type: Transform
+    anchored: false
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: "-0.40,-0.40,0.40,0.40"
+        density: 155
+        mask:
+        - MachineMask
+        layer:
+        - MachineLayer
+  - type: Appearance
+  - type: Sprite
+    sprite: _RMC14/Structures/Power/generators.rsi
+    noRot: true
+  - type: InteractionOutline
+  - type: Corrodible
+    isCorrodible: false
+  - type: RMCPortableGenerator
+  - type: UserInterface
+    interfaces:
+      enum.RMCPortableGeneratorUiKey.Key:
+        type: RMCPortableGeneratorBui
+  - type: ActivatableUI
+    key: enum.RMCPortableGeneratorUiKey.Key
+  - type: ActivatableUIBlacklist
+    blacklist:
+      components:
+      - Xeno
+  - type: AmbientSound
+    range: 5
+    volume: -5
+    sound:
+      path: /Audio/Ambience/Objects/engine_hum.ogg
+    enabled: false
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 200
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
+        damage: 100
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:ChangeConstructionNodeBehavior
+        node: machineFrame
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
 
 - type: entity
   parent: RMCPortableGeneratorBase
   id: RMCPortableGenerator
-  name: "P.A.C.M.A.N.-type Portable Generator"
-  description: A portable generator for emergency backup power.
+  name: "P.A.C.M.A.N.型便携式发电机"
+  description: 用于紧急备用电源的便携式发电机。
   suffix: RMC # CMU14
   components:
-    - type: Sprite
-      state: portgen0
-    - type: Machine
-      board: RMCPortableGeneratorPacmanMachineCircuitBoard
-    - type: RMCPortableGenerator
-      watts: 5000
-      timePerSheet: 70
-      fuelStackType: CMPhoron
-      fuelEntity: CMSheetPhoron1
-      fuelName: phoron
-      explosionIntensity: 50
-      explosionSlope: 5
-      explosionMaxIntensity: 10
+  - type: Sprite
+    state: portgen0
+  - type: Machine
+    board: RMCPortableGeneratorPacmanMachineCircuitBoard
+  - type: RMCPortableGenerator
+    watts: 5000
+    timePerSheet: 70
+    fuelStackType: CMPhoron
+    fuelEntity: CMSheetPhoron1
+    fuelName: phoron
+    explosionIntensity: 50
+    explosionSlope: 5
+    explosionMaxIntensity: 10
 
 - type: entity
   parent: RMCPortableGeneratorBase
   id: RMCPortableGenerator2
-  name: "S.U.P.E.R.P.A.C.M.A.N.-type Portable Generator"
-  description: A portable generator for emergency backup power.
+  name: "S.U.P.E.R.P.A.C.M.A.N.型便携式发电机"
+  description: 一种用于应急备用电源的便携式发电机。
   suffix: RMC # CMU14
   components:
-    - type: Sprite
-      state: portgen1
-    - type: Machine
-      board: RMCPortableGeneratorSuperPacmanMachineCircuitboard
-    - type: RMCPortableGenerator
-      watts: 15000
-      timePerSheet: 120
-      fuelStackType: Uranium
-      fuelEntity: SheetUranium1
-      fuelName: uranium
-      explosionIntensity: 80
-      explosionSlope: 3
-      explosionMaxIntensity: 15
+  - type: Sprite
+    state: portgen1
+  - type: Machine
+    board: RMCPortableGeneratorSuperPacmanMachineCircuitboard
+  - type: RMCPortableGenerator
+    watts: 15000
+    timePerSheet: 120
+    fuelStackType: Uranium
+    fuelEntity: SheetUranium1
+    fuelName: uranium
+    explosionIntensity: 80
+    explosionSlope: 3
+    explosionMaxIntensity: 15

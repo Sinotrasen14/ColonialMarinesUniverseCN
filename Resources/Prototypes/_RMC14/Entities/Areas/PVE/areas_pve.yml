@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaPVE
   abstract: true
@@ -14,7 +14,7 @@
 - type: entity
   parent: RMCAreaPVE
   id: RMCAreaPVEOOB
-  name: Out Of Bounds
+  name: 越界
   components:
   - type: Sprite
     state: oob
@@ -36,7 +36,7 @@
 - type: entity
   parent: RMCAreaPVE
   id: RMCAreaPVEOutdoors
-  name: Outdoors
+  name: 户外
   components:
   - type: Sprite
     state: base_icon
@@ -55,7 +55,7 @@
 - type: entity
   parent: RMCAreaPVEOutdoors
   id: RMCAreaPVELZ
-  name: Landing Zone
+  name: 登陆区
   components:
   - type: Sprite
     state: base_icon
@@ -75,7 +75,7 @@
 - type: entity
   parent: RMCAreaPVE
   id: RMCAreaPVEIndoors
-  name: Indoors
+  name: 室内
   components:
   - type: Sprite
     sprite: _RMC14/Areas/areas_kutjevo.rsi
@@ -95,7 +95,7 @@
 - type: entity
   parent: RMCAreaPVEIndoors
   id: RMCAreaPVEShuttle
-  name: Shuttle
+  name: 穿梭巴士
   components:
   - type: Area
     alwaysPowered: true

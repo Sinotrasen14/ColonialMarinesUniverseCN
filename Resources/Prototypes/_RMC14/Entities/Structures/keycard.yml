@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: RMCKeycardDevice
-  name: keycard authentication device
-  description: This device is used to trigger station functions, which require multiple swipes of an ID card to authenticate.
+  name: 钥匙卡认证设备
+  description: 该设备用于触发站点功能，这些功能需要多次刷身份卡才能认证。
   placement:
     mode: SnapgridCenter
   components:
@@ -16,7 +16,7 @@
   - type: Appearance
   - type: KeycardDevice
   - type: AccessReader
-    access: [ [ "RMCAccessCommand" ] ]
+    access: [["RMCAccessCommand"]]
   - type: UserInterface
     interfaces:
       enum.DialogUiKey.Key:

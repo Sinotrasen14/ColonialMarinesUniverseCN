@@ -2,9 +2,9 @@
   abstract: true
   id: BarbedWireBase
   parent: BaseItem
-  name: barbed wire
+  name: 带刺铁丝网
   suffix: Filled
-  description: A type of metal fencing wire constructed with sharp edges or points arranged at intervals along the strands. In short, it hurts to touch it. A lot. Place on barricades to prevent unwants from breaking through painlessly.
+  description: 一种金属围栏铁丝，沿铁丝以一定间隔布置有锋利边缘或尖刺。简而言之，碰到它会很疼。非常疼。将其放在路障上，可防止不速之客毫无痛感地突破。
   components:
   - type: Tag
     tags:
@@ -14,12 +14,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Stack
     stackType: BarbedWire
     baseLayer: base

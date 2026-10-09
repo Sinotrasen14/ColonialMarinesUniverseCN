@@ -1,9 +1,9 @@
 - type: entity
-  name: L989A2 multiple grenade launcher
+  name: L989A2 多发榴弹发射器
   suffix: PVE
-  parent: [ RMCBaseWeaponGrenadeLauncher ]
+  parent: [RMCBaseWeaponGrenadeLauncher]
   id: RMCRoyalGrenadeLauncher
-  description: A lightweight support weapon fielded by the Royal Crown Marines. Chambered in small 20mm grenades, it lacks the punch of larger bore grenade launchers, but makes up for that in rate of fire.
+  description: 皇家皇冠陆战队装备的一种轻型支援武器。使用小型20毫米榴弹，威力不及大口径榴弹发射器，但射速弥补了这一不足。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/GrenadeLaunchers/rcmgl.rsi
@@ -22,8 +22,8 @@
   - type: BallisticAmmoProvider
     capacity: 7
     proto: RMCGrenade20mmHE
-    whitelist: 
-      tags: 
+    whitelist:
+      tags:
       - LauncherCompatibleGrenade
       - RMCGrenade20mm
   - type: GunUserWhitelist

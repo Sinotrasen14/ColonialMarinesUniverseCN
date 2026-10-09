@@ -12,8 +12,8 @@
 - type: entity
   parent: VehicleSPPAPCHardpointBase
   id: VehicleSPPAPCWheel # CMU14
-  name: UPP APC wheel
-  description: A reinforced APC wheel produced for UPP vehicles.
+  name: UPP装甲运兵车车轮
+  description: 为UPP车辆生产的强化装甲运兵车车轮。
   components:
   - type: Sprite
     state: spp_tires
@@ -36,16 +36,16 @@
 - type: entity
   parent: VehicleSPPAPCHardpointBase
   id: VehicleSPPAPCTurret
-  name: UPP APC turret
-  description: A rotating turret mount for an UPP APC.
+  name: UPP APC炮塔
+  description: UPP APC的旋转炮塔底座。
   components:
   - type: HardpointState
   - type: ContainerContainer
     containers:
       turret-cannon: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/sppapc.rsi
     state: apc_turret_0
@@ -94,15 +94,15 @@
 - type: entity
   parent: RMCAPCDualCannon
   id: VehicleSPPAPCMinigun
-  name: UPP APC minigun
-  description: A minigun fitted to an UPP APC turret.
+  name: UPP APC 加特林机枪
+  description: 一挺安装在UPP APC炮塔上的加特林机枪。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 500
   - type: Sprite
@@ -140,15 +140,15 @@
 - type: entity
   parent: RMCAPCFrontCannon
   id: VehicleSPPAPCAutocannon
-  name: UPP APC autocannon
-  description: A frontal autocannon hardpoint for an UPP APC.
+  name: UPP APC 自动加农炮
+  description: UPP APC 的前置自动加农炮挂点。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 350
   - type: Sprite
@@ -171,15 +171,15 @@
 - type: entity
   parent: VehicleTankTowLauncher
   id: VehicleSPPAPCHJ35Launcher
-  name: HJ35 APC launcher
-  description: A missile launcher fitted to the secondary mount of an UPP APC.
+  name: HJ35 APC 发射器
+  description: 安装在UPP APC副炮架上的导弹发射器。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Structures/Vehicles/hardpoints/sppapc.rsi
     state: hj35launcher
@@ -198,15 +198,15 @@
 - type: entity
   parent: RMCAPCFlareLauncher
   id: VehicleSPPAPCFlareLauncher
-  name: UPP APC flare launcher
-  description: A flare launcher hardpoint for UPP APC support slots.
+  name: UPP APC 照明弹发射器
+  description: 用于UPP APC支援槽位的照明弹发射器挂点。
   components:
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
   - type: HardpointIntegrity
     integrity: 500
   - type: Sprite

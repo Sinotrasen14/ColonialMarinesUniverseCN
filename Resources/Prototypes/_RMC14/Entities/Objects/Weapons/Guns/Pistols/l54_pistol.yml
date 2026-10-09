@@ -1,8 +1,8 @@
 - type: entity
   parent: CMWeaponPistolM1984
   id: RMCWeaponPistolL54
-  name: L54A2 service pistol # TSE service pistol - same stats as the M1984
-  description: Standard issue semi-automatic service pistol of the NSPA. Chambered in 9mm, it is comparable to the popular M1984 pistol utilized by the UNCMC.  Until recently, it was also the standard issue pistol for the RMC before being replace by the L165A1.
+  name: L54A2制式手枪            # TSE service pistol - same stats as the M1984
+  description: NSPA的标准配发半自动制式手枪。采用9毫米口径，可与UNCMC广泛使用的M1984手枪相媲美。直到最近，它也曾是RMC的标准配发手枪，后被L165A1取代。
   components:
   - type: Tag
     tags:
@@ -18,7 +18,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_unload.ogg
         priority: 2
@@ -35,7 +35,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_unload.ogg
         priority: 2
@@ -46,14 +46,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolL54
-  name: L54 magazine (9mm)
+  name: L54 弹匣（9毫米）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolL54
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgePistol9mm
@@ -70,7 +70,7 @@
     magState: mag
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistol9MM
-    
+
 - type: Tag
   id: RMCWeaponPistolL54
 

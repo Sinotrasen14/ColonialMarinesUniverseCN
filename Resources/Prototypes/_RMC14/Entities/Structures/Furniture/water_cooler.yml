@@ -1,8 +1,8 @@
 - type: entity
   parent: StorageTank
   id: RMCWaterCooler
-  name: water cooler
-  description: A machine that dispenses water to drink. It has levers for hot and cold, but it only dispenses room-temperature water.
+  name: 饮水机
+  description: 一种用于分配饮用水的机器。它设有冷热两个拨杆，但只会放出常温水。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Furniture/water_cooler.rsi
@@ -10,8 +10,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.3
         density: 155
         mask:
@@ -23,10 +22,10 @@
   - type: Solution
     id: tank
     solution:
-        maxVol: 500
-        reagents:
-        - ReagentId: Water
-          Quantity: 500
+      maxVol: 500
+      reagents:
+      - ReagentId: Water
+        Quantity: 500
   - type: ContainerContainer
     containers:
       bin-container: !type:Container

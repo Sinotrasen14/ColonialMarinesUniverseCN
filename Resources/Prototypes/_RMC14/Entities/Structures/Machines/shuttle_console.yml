@@ -13,8 +13,8 @@
 - type: entity
   parent: CMComputerDropship
   id: CMComputerDropshipNavigation
-  name: dropship navigation computer
-  description: A flight computer that can be used for autopilot or long-range flights.
+  name: 运输机导航计算机
+  description: 一种可用于自动驾驶或长途飞行的飞行计算机。
   components:
   - type: Sprite
     state: console
@@ -22,7 +22,7 @@
   - type: ActivatableUI
     key: enum.DropshipNavigationUiKey.Key
   - type: AccessReader
-    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
+    access: [["AU14AccessGovforFTL"], ["AU14AccessGovforPilot"], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
   - type: ActivatableUIRequiresAccess
   - type: UserInterface
     interfaces:
@@ -34,11 +34,11 @@
 - type: entity
   parent: CMComputerDropshipNavigation
   id: CMComputerDropshipNavigationOpfor
-  name: dropship navigation computer
+  name: 运输机导航计算机
   suffix: Opfor
   components:
   - type: AccessReader
-    access: [ [ "AU14AccessOpforFTL" ], [ "AU14AccessOpforPilot" ] ]
+    access: [["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
   - type: WhitelistedShuttle
     faction: opfor
     ShuttleType: Dropship
@@ -46,8 +46,8 @@
 - type: entity
   parent: CMComputerDropshipNavigation
   id: CMComputerDropshipNavigationERT
-  name: transport shuttle
-  description: A transport shuttle flight computer.
+  name: 运输穿梭机
+  description: 运输穿梭机的飞行计算机。
   components:
   - type: Sprite
     state: syndishuttle
@@ -57,8 +57,8 @@
 - type: entity
   parent: CMComputerDropshipNavigation
   id: CMComputerDropshipNavigationERTTSE
-  name: transport shuttle
-  description: A transport shuttle flight computer.
+  name: 运输穿梭机
+  description: 运输穿梭机的飞行计算机。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/hybrisa_computer_props.rsi
@@ -71,8 +71,8 @@
 - type: entity
   parent: CMComputerDropshipNavigation
   id: CMComputerDropshipNavigationERTCLF
-  name: transport shuttle
-  description: A transport shuttle flight computer.
+  name: 运输穿梭机
+  description: 运输穿梭机的飞行计算机。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Dropships/clf.rsi
@@ -121,8 +121,8 @@
 - type: entity
   parent: CMComputerDropship
   id: CMComputerDropshipNavigationPlanetside
-  name: dropship navigation computer
-  description: A flight computer that can be used to direct linked dropships.
+  name: 运输机导航计算机
+  description: 一种可用于指挥已链接运输机的飞行计算机。
   suffix: Planetside
   components:
   - type: Sprite
@@ -142,8 +142,8 @@
 - type: entity
   parent: CMBaseStructure
   id: RMCComputerDropshipNavigationSmall
-  name: dropship navigation computer
-  description: A flight computer that can be used for autopilot or long-range flights.
+  name: 运输船导航计算机
+  description: 一种可用于自动驾驶或远程飞行的飞行计算机。
   components:
   - type: Transform
     anchored: false
@@ -154,7 +154,7 @@
     drawdepth: Objects
     sprite: _RMC14/Structures/Machines/computer.rsi
     state: security_cam
-    layers: [ ]
+    layers: []
   - type: Clickable
   - type: Corrodible
     isCorrodible: false
@@ -165,7 +165,7 @@
   - type: ActivatableUI
     key: enum.DropshipNavigationUiKey.Key
   - type: AccessReader
-    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
+    access: [["AU14AccessGovforFTL"], ["AU14AccessGovforPilot"], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
   - type: ActivatableUIRequiresAccess
   - type: UserInterface
     interfaces:
@@ -185,8 +185,8 @@
 - type: entity
   parent: CMBaseStructure
   id: RMCComputerDropshipWeaponsSmall
-  name: dropship weapons computer
-  description: A compact computer that can manage equipment, weapons and simulations installed on the dropship.
+  name: 运输机武器计算机
+  description: 一种紧凑型计算机，可管理运输机上安装的设备、武器和模拟程序。
   components:
   - type: Transform
     anchored: false
@@ -197,7 +197,7 @@
     drawdepth: Objects
     sprite: _RMC14/Structures/Machines/computer.rsi
     state: security_cam
-    layers: [ ]
+    layers: []
   - type: Clickable
   - type: Corrodible
     isCorrodible: false
@@ -211,7 +211,7 @@
   - type: ActivatableUI
     key: enum.DropshipTerminalWeaponsUi.Key
   - type: AccessReader
-    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
+    access: [["AU14AccessGovforFTL"], ["AU14AccessGovforPilot"], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
   - type: ActivatableUIRequiresAccess
   - type: UserInterface
     interfaces:
@@ -234,8 +234,8 @@
 - type: entity
   parent: CMComputerDropship
   id: CMComputerDropshipCamerasAlamo
-  name: camera controls
-  description: A computer to monitor cameras linked to the dropship.
+  name: 摄像头控制
+  description: 一台用于监控与运输舰相连的摄像头的计算机。
   components:
   - type: GuideHelp
     guides:
@@ -256,8 +256,8 @@
 - type: entity
   parent: CMComputerDropshipCamerasAlamo
   id: RMCComputerDropshipCamerasNormandy
-  name: camera controls
-  description: A computer to monitor cameras linked to the dropship.
+  name: 摄像机控制
+  description: 一台用于监控与运输舰相连的摄像头的计算机。
   suffix: Normandy
   components:
   - type: RMCCameraComputer
@@ -268,8 +268,8 @@
 - type: entity
   parent: CMComputerDropship
   id: CMComputerDropshipWeapons
-  name: weapons controls
-  description: A computer to manage equipment, weapons and simulations installed on the dropship.
+  name: 武器控制
+  description: 用于管理运输机上安装的装备、武器和模拟程序的计算机。
   components:
   - type: Sprite
     state: consoleright
@@ -277,7 +277,7 @@
     key: enum.DropshipTerminalWeaponsUi.Key
   - type: AccessReader
     #access: [ [ "CMAccessPilot" ], [ "CMAccessSquadLeaderPrep" ], [ "AU14AccessCorporateWEYUFlight" ] ]
-    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
+    access: [["AU14AccessGovforFTL"], ["AU14AccessGovforPilot"], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
   - type: ActivatableUIRequiresAccess
   - type: UserInterface
     interfaces:
@@ -291,9 +291,9 @@
 - type: entity
   parent: CMBaseStructure
   id: AU14GovforComputerDropshipWeaponsSmall
-  name: dropship weapons computer
+  name: 运输机武器计算机
   suffix: Govfor, small
-  description: A compact computer that can manage equipment, weapons and simulations installed on the dropship.
+  description: 一种紧凑型计算机，可管理运输机上安装的设备、武器和模拟系统。
   components:
   - type: Transform
     anchored: false
@@ -304,7 +304,7 @@
     drawdepth: Objects
     sprite: _RMC14/Structures/Machines/computer.rsi
     state: security_cam
-    layers: [ ]
+    layers: []
   - type: Clickable
   - type: Corrodible
     isCorrodible: false
@@ -319,7 +319,7 @@
     key: enum.DropshipTerminalWeaponsUi.Key
   - type: AccessReader
     #access: [ [ "CMAccessPilot" ], [ "CMAccessSquadLeaderPrep" ], [ "AU14AccessCorporateWEYUFlight" ] ]
-    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
+    access: [["AU14AccessGovforFTL"], ["AU14AccessGovforPilot"], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
   - type: ActivatableUIRequiresAccess
   - type: UserInterface
     interfaces:
@@ -346,8 +346,8 @@
 - type: entity
   parent: CMComputerDropship
   id: CMComputerDropshipWeaponsGovfor
-  name: weapons controls
-  description: A computer to manage equipment, weapons and simulations installed on the govfor dropship.
+  name: 武器控制
+  description: 一台用于管理安装在政府军运输舰上的装备、武器和模拟系统的计算机。
   suffix: Govfor
   components:
   - type: Sprite
@@ -356,7 +356,7 @@
     key: enum.DropshipTerminalWeaponsUi.Key
   - type: AccessReader
     #access: [ [ "CMAccessPilot" ], [ "CMAccessSquadLeaderPrep" ], [ "AU14AccessCorporateWEYUFlight" ] ]
-    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
+    access: [["AU14AccessGovforFTL"], ["AU14AccessGovforPilot"], ["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
   - type: ActivatableUIRequiresAccess
   - type: UserInterface
     interfaces:
@@ -375,8 +375,8 @@
 - type: entity
   parent: CMComputerDropship
   id: CMComputerDropshipWeaponsOpfor
-  name: weapons controls
-  description: A computer to manage equipment, weapons and simulations installed on the opfor dropship.
+  name: 武器控制
+  description: 一台用于管理安装在假想敌运输舰上的装备、武器和模拟系统的计算机。
   suffix: Opfor
   components:
   - type: Sprite
@@ -385,7 +385,7 @@
     key: enum.DropshipTerminalWeaponsUi.Key
   - type: AccessReader
     #access: [ [ "CMAccessPilot" ], [ "CMAccessSquadLeaderPrep" ], [ "AU14AccessCorporateWEYUFlight" ] ]
-    access: [ [ "AU14AccessOpforFTL" ], [ "AU14AccessOpforPilot" ] ]
+    access: [["AU14AccessOpforFTL"], ["AU14AccessOpforPilot"]]
   - type: ActivatableUIRequiresAccess
   - type: UserInterface
     interfaces:
@@ -404,8 +404,8 @@
 - type: entity
   parent: MarkerBase
   id: CMDropshipDestination
-  name: dropship destination
-  description: Defines a valid location for the dropships to FTL to when piloted.
+  name: 运输船目的地
+  description: 定义运输船在被驾驶时可进行超光速跃迁前往的有效位置。
   placement:
     mode: SnapgridCenter
   components:
@@ -419,8 +419,8 @@
 - type: entity
   parent: MarkerBase
   id: CMDropshipDestinationHome
-  name: dropship destination(home)
-  description: Defines a valid location for the dropships to FTL to when piloted. (home)
+  name: 运输舰目的地（家园）
+  description: 定义运输舰在有人驾驶时可进行超光速跃迁前往的有效位置。（家园）
   placement:
     mode: SnapgridCenter
   components:
@@ -435,8 +435,8 @@
 - type: entity
   parent: MarkerBase
   id: CMDropshipDestinationOpforWhitelist
-  name: dropship destination
-  description: Defines a valid location for the dropships to FTL to when piloted.
+  name: 运输机目的地
+  description: 定义运输机在被驾驶时进行超光速跳跃前往的有效位置。
   placement:
     mode: SnapgridCenter
   components:
@@ -451,8 +451,8 @@
 - type: entity
   parent: MarkerBase
   id: CMDropshipHijackDestination
-  name: hijack destination
-  description: Defines a valid location for the dropships to FTL to when hijacked.
+  name: 劫持目的地
+  description: 定义运输舰被劫持时可超光速跃迁前往的有效地点。
   placement:
     mode: SnapgridCenter
   components:
@@ -466,8 +466,8 @@
 - type: entity
   parent: MarkerBase
   id: CMDropshipDestinationThirdPartyWhitelist
-  name: dropship destination (third party)
-  description: Defines a valid location for third party dropships to FTL to when piloted.
+  name: 运输艇目的地（第三方）
+  description: 定义第三方运输艇在有人驾驶时可超光速跃迁前往的有效位置。
   placement:
     mode: SnapgridCenter
   components:
@@ -482,14 +482,14 @@
 - type: entity
   parent: CMDropshipDestinationThirdPartyWhitelist
   id: CMDropshipDestinationThirdPartyReturn
-  name: Return to Deep Space
-  description: Sends a third party dropship back to its holding pattern.
+  name: 返回深空
+  description: 将第三方运输舰送回其等待航线。
 
 - type: entity
   parent: MarkerBase
   id: CMDropshipDestinationGovforWhitelist
-  name: dropship destination (govfor)
-  description: Defines a valid location for third party dropships to FTL to when piloted.
+  name: 运输舰目的地（政府军）
+  description: 定义第三方运输舰由驾驶员操控时能够跃迁前往的有效地点。
   placement:
     mode: SnapgridCenter
   components:
@@ -504,10 +504,10 @@
 - type: entity
   parent: CMComputerDropshipNavigation
   id: CMComputerDropshipNavigationGovfor
-  name: dropship navigation computer (govfor)
+  name: 运输机导航计算机（政府军）
   components:
   - type: AccessReader
-    access: [ [ "AU14AccessGovforFTL" ], [ "AU14AccessGovforPilot" ] ]
+    access: [["AU14AccessGovforFTL"], ["AU14AccessGovforPilot"]]
   - type: WhitelistedShuttle
     faction: govfor
     ShuttleType: Dropship
@@ -515,9 +515,9 @@
 - type: entity
   parent: CMComputerDropshipNavigation
   id: AU14GovforComputerDropshipPilotSmall
-  name: dropship navigation computer
+  name: 空投艇导航计算机
   suffix: Govfor, small
-  description: A compact computer that can pilot the dropship and designate tactical landings.
+  description: 一种紧凑型计算机，能够驾驶空投艇并指定战术着陆点。
   components:
   - type: Transform
     anchored: false
@@ -528,7 +528,7 @@
     drawdepth: Objects
     sprite: _RMC14/Structures/Machines/computer.rsi
     state: security_cam
-    layers: [ ]
+    layers: []
   - type: Clickable
   - type: Corrodible
     isCorrodible: false
@@ -556,7 +556,7 @@
 - type: entity
   parent: CMComputerDropshipNavigation
   id: CMComputerDropshipNavigationThirdParty
-  name: dropship navigation computer (Third Party)
+  name: 运输机导航计算机（第三方）
   components:
   - type: WhitelistedShuttle
     faction: thirdparty

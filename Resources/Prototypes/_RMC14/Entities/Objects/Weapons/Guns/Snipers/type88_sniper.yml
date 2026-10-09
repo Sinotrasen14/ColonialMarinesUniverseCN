@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
+  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
   id: RMCType88SniperRifle
-  name: Type 88 designated marksman rifle
-  description: The standard issue DMR of the UPP, the Type 88 is sought after by competitive shooters and terrorists alike for its high degree of accuracy. Typically loaded with armor-piercing 7.62x54mmR rounds in a 12 round magazine.
+  name: 88式精确射手步枪
+  description: UPP的制式精确射手步枪，88式因其高精度而受到竞技射手与恐怖分子的共同追捧。通常使用12发弹匣装填7.62×54mmR穿甲弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Snipers/type88/type88_inhands.rsi
@@ -11,10 +11,10 @@
       sprite: _RMC14/Objects/Weapons/Guns/Snipers/type88/type88_icon.rsi
     - state: bolt-open
       sprite: _RMC14/Objects/Weapons/Guns/Snipers/type88/type88_icon.rsi
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/Snipers/type88/type88_icon.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     size: Large
   - type: Clothing
@@ -55,7 +55,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSniperType88
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg
@@ -107,15 +107,15 @@
 - type: entity
   parent: CMMagazineSniperM96S
   id: RMCMagazineSniperType88
-  name: "Type 88 marksman magazine (7.62x54mmR)"
-  description: A magazine of type 88 marksman ammo.
+  name: "88式射手步枪弹匣（7.62×54mmR）"
+  description: 88式射手步枪弹药的弹匣。
   components:
   - type: Tag
     tags:
     - CMMagazineSniper
     - RMCMagazineSniperType88
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - RMCCartridgeSniperType88
@@ -132,7 +132,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RMCCartridgeSniperType88
-  name: cartridge (7.62x54mmR)
+  name: 弹药（7.62×54mmR）
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
@@ -149,8 +149,8 @@
 - type: entity
   parent: RMCBaseBullet
   id: RMCBulletSniperType88
-  name: bullet (7.62x54mmR)
-  categories: [ HideSpawnMenu ]
+  name: 子弹（7.62x54mmR）
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/bullet_projectiles.rsi

@@ -1,15 +1,15 @@
 - type: entity
-  parent: [ RMCBaseWeaponShotgun, RMCBaseAttachableHolder ]
-  name: M37-17 pump shotgun
+  parent: [RMCBaseWeaponShotgun, RMCBaseAttachableHolder]
+  name: M37-17 泵动式霰弹枪
   id: RMCWeaponShotgunM3717
-  description: A military version of the iconic HG 37-12, this design can fit one extra shell in each of its dual-tube internal magazines, and fires shells with increased velocity, resulting in more damage. Issued to select UNMC vessels and stations in the outer veil. # TODO RMC14 : A button on the side toggles the internal tubes.
+  description: 标志性 HG 37-12 的军用版本，这种设计使其双管内置弹仓各可多容纳一发霰弹，并以更高速度发射霰弹，从而造成更高伤害。该型号配发给外帷中特定的 UNMC 舰船与空间站。                                                                                                                                                                        # TODO RMC14 : A button on the side toggles the internal tubes.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m3717/m3717_inhands.rsi
     layers:
     - sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m3717/m3717_icon.rsi
       state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Shotguns/m3717/m3717_inhands.rsi
   - type: Gun

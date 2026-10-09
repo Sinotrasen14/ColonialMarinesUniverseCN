@@ -1,14 +1,14 @@
 - type: entity
   parent: Ashtray
   id: RMCAshtray
-  name: plastic ashtray
-  description: Cheap platic ashtray.
+  name: 塑料烟灰缸
+  description: 便宜的塑料烟灰缸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Decoration/ashtray.rsi
     layers:
-      - state: icon-0
-        map: ["enum.StorageFillLayers.Fill"]
+    - state: icon-0
+      map: ["enum.StorageFillLayers.Fill"]
   - type: StorageFillVisualizer
     fillBaseName: icon
     maxFillLevels: 2
@@ -22,14 +22,14 @@
 - type: entity
   parent: RMCAshtray
   id: RMCAshtrayBronze
-  name: bronze ashtray
-  description: Massive bronze ashtray.
+  name: 青铜烟灰缸
+  description: 厚重的青铜烟灰缸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Decoration/ashtray-br.rsi
     layers:
-      - state: icon-0
-        map: ["enum.StorageFillLayers.Fill"]
+    - state: icon-0
+      map: ["enum.StorageFillLayers.Fill"]
   - type: PhysicalComposition
     materialComposition:
       CMSteel: 80
@@ -37,14 +37,14 @@
 - type: entity
   parent: RMCAshtray
   id: RMCAshtrayGlass
-  name: glass ashtray
-  description: Glass ashtray. Looks fragile.
+  name: 玻璃烟灰缸
+  description: 玻璃烟灰缸。看起来很易碎。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Decoration/ashtray-gl.rsi
     layers:
-      - state: icon-0
-        map: ["enum.StorageFillLayers.Fill"]
+    - state: icon-0
+      map: ["enum.StorageFillLayers.Fill"]
   - type: PhysicalComposition
     materialComposition:
       CMGlass: 60

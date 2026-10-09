@@ -1,17 +1,17 @@
-﻿- type: entity
+- type: entity
   parent: [AppearanceCMUHuman, RMCBaseMobSpeciesOrganic]
   id: CMTestDummy
-  name: test dummy
+  name: 测试假人 | test dummy
   suffix: RMC14
   components:
   - type: Marine
   - type: Loadout
-    prototypes: [ CMGearStaffOfficer ]
+    prototypes: [CMGearStaffOfficer]
 
 - type: entity
   parent: MarkerBase
   id: SpawnCMTestDummy
-  name: RMC Test Dummy Spawner
+  name: RMC测试假人生成器 | RMC Test Dummy Spawner
   suffix: DEBUG
   components:
   - type: Sprite

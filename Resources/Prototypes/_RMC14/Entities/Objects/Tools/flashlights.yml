@@ -13,20 +13,20 @@
     radiatingBehaviourId: radiating
   - type: LightBehaviour
     behaviours:
-      - !type:FadeBehaviour
-        id: radiating
-        maxDuration: 2.0
-        startValue: 3.0
-        endValue: 2.0
-        isLooped: true
-        reverseWhenFinished: true
-      - !type:PulseBehaviour
-        id: blinking
-        interpolate: Nearest
-        maxDuration: 1.0
-        startValue: 0.1
-        endValue: 2.0
-        isLooped: true
+    - !type:FadeBehaviour
+      id: radiating
+      maxDuration: 2.0
+      startValue: 3.0
+      endValue: 2.0
+      isLooped: true
+      reverseWhenFinished: true
+    - !type:PulseBehaviour
+      id: blinking
+      interpolate: Nearest
+      maxDuration: 1.0
+      startValue: 0.1
+      endValue: 2.0
+      isLooped: true
   - type: ItemTogglePointLight
   - type: ToggleableVisuals
     spriteLayer: light
@@ -63,8 +63,8 @@
 - type: entity
   parent: RMCBoxMagazineSupplyBase
   id: RMCBoxFlashlightsEmpty
-  name: box of flashlights (x8)
-  description: A box of flashlights to brighten your day!
+  name: 一盒手电筒（x8）
+  description: 一盒手电筒，点亮你的一天！
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -74,7 +74,7 @@
   - type: CMItemSlots
     count: 8
     slot:
-      name: Flashlight
+      name: 手电筒
       whitelist:
         tags:
         - Flashlight
@@ -83,12 +83,12 @@
     - state: supply_box
       color: "#887b67"
     - state: supply_ammo_full
-      map: [ "enum.CMItemSlotsLayers.Fill" ]
+      map: ["enum.CMItemSlotsLayers.Fill"]
       color: "#b2bdc4"
     - state: supply_box_flashlight
       color: "#887b67"
     - state: supply_lid_closed
-      map: [ "lid" ]
+      map: ["lid"]
       color: "#887b67"
   - type: Appearance
 
@@ -103,16 +103,16 @@
 - type: entity
   parent: RMCFlashlightBase
   id: RMCFlashlight
-  name: flashlight
-  description: A hand-held emergency light.
+  name: 手电筒
+  description: 一种手持式应急灯。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/Light/flashlight.rsi
     layers:
-      - state: flashlight
-      - state: flashlight-on
-        visible: false
-        map: [ "light" ]
+    - state: flashlight
+    - state: flashlight-on
+      visible: false
+      map: ["light"]
   - type: Item
     size: Small
   - type: Construction
@@ -122,18 +122,18 @@
 - type: entity
   parent: RMCFlashlightBase
   id: RMCFlashlightPen
-  name: penlight
-  description: A pen-sized light, used by medical staff.
+  name: 笔灯
+  description: 一种笔式大小的灯，供医务人员使用。
   components:
   - type: HandheldLight
     addPrefix: false
   - type: Sprite
     sprite: _RMC14/Objects/Tools/Light/penlight.rsi
     layers:
-      - state: penlight
-      - state: penlight-on
-        visible: false
-        map: [ "light" ]
+    - state: penlight
+    - state: penlight-on
+      visible: false
+      map: ["light"]
   - type: Item
     size: Tiny
   - type: Tag
@@ -156,75 +156,75 @@
 - type: entity
   parent: RMCFlashlightBase
   id: RMCLamp
-  name: desk lamp
-  description: A desk lamp with an adjustable mount.
+  name: 台灯
+  description: 一盏带有可调节支架的台灯。
   components:
   - type: HandheldLight
     addPrefix: false
   - type: Sprite
     sprite: _RMC14/Objects/Tools/Light/lamp.rsi
     layers:
-      - state: lamp
-      - state: lamp-on
-        visible: false
-        map: [ "light" ]
+    - state: lamp
+    - state: lamp-on
+      visible: false
+      map: ["light"]
   - type: Item
     size: Large
 
 - type: entity
   parent: RMCLamp
   id: RMCLampGreen
-  description: A classic green-shaded desk lamp.
+  description: 一盏经典的绿色灯罩台灯。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/Light/green_lamp.rsi
     layers:
-      - state: lampgreen
-      - state: lampgreen-on
-        visible: false
-        map: [ "light" ]
+    - state: lampgreen
+    - state: lampgreen-on
+      visible: false
+      map: ["light"]
 
 - type: entity
   parent: RMCLamp
   id: RMCLampMenorah
-  name: Menorah
-  description: For celebrating Chanukah.
+  name: 光明节灯台
+  description: 用于庆祝光明节。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/Light/menorah.rsi
     layers:
-      - state: menorah
-      - state: menorah-on
-        visible: false
-        map: [ "light" ]
+    - state: menorah
+    - state: menorah-on
+      visible: false
+      map: ["light"]
 
 - type: entity
   parent: RMCLamp
   id: RMCLampCandelabra
-  name: candelabra
-  description: A fire hazard that can be used to thwack things with impunity.
+  name: 枝形烛台
+  description: 一种火灾隐患，可以用来毫无顾忌地敲打东西。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/Light/candelabra.rsi
     layers:
-      - state: candelabra
-      - state: candelabra-on
-        visible: false
-        map: [ "light" ]
+    - state: candelabra
+    - state: candelabra-on
+      visible: false
+      map: ["light"]
 
 - type: entity
   parent: RMCLamp
   id: RMCLampTripod
-  name: tripod lamp
-  description: An emergency light tube mounted onto a tripod. It seemingly lasts forever.
+  name: 三脚架灯
+  description: 安装在三脚架上的应急灯管。它似乎能永远亮下去。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/Light/tripod_lamp.rsi
     layers:
-      - state: tripod_lamp
-      - state: tripod_lamp-on
-        visible: false
-        map: [ "light" ]
+    - state: tripod_lamp
+    - state: tripod_lamp-on
+      visible: false
+      map: ["light"]
   - type: PointLight
     radius: 6
 
@@ -235,24 +235,24 @@
   - type: Sprite
     sprite: _RMC14/Objects/Tools/Light/tripod_lamp_grey.rsi
     layers:
-      - state: tripod_lamp_grey
-      - state: tripod_lamp_grey-on
-        visible: false
-        map: [ "light" ]
+    - state: tripod_lamp_grey
+    - state: tripod_lamp_grey-on
+      visible: false
+      map: ["light"]
 
 - type: entity
   parent: RMCFlashlightBase
   id: RMCFlashlightLantern
-  name: lantern
-  description: A mining lantern.
+  name: 矿灯
+  description: 一盏矿灯。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Tools/Light/lantern.rsi
     layers:
-      - state: lantern
-      - state: lantern-on
-        visible: false
-        map: [ "light" ]
+    - state: lantern
+    - state: lantern-on
+      visible: false
+      map: ["light"]
   - type: PointLight
     radius: 6
     color: "#FFC458FF"

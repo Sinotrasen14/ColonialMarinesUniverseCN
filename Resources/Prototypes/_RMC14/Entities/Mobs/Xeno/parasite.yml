@@ -5,7 +5,7 @@
   - CMXenoFlammable
   - RMCXenoVentCrawler
   id: CMXenoParasiteBase
-  name: Facehugger
+  name: 抱脸虫 | Facehugger
   components:
   - type: GuideHelp
     guides:
@@ -55,8 +55,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.2
         density: 185
         mask:
@@ -109,7 +108,7 @@
     - Snout
   - type: Speech
     speechSounds: XenonidLarva
-    allowedEmotes: [ "XenoRoar" ]
+    allowedEmotes: ["XenoRoar"]
   - type: RMCSize
     size: Small
   - type: CanEscapeInventory
@@ -119,8 +118,7 @@
       task: RMCParasiteActiveCompound
     planCooldown: 0.1 # CMU14: replan fast enough to act inside the trap's wake window
     blackboard:
-      VisionRadius: !type:Single
-        3.0
+      VisionRadius: !type:Single 3.0
   - type: TacticalMapIcon
     icon:
       sprite: /Textures/_RMC14/Interface/map_blips.rsi
@@ -129,7 +127,7 @@
     accent: mumble
   - type: Blindfold
   - type: StandingState
-    downSound: null
+    downSound:
   - type: XenoInhandSprite
     stateName: parasite
   - type: RMCBuckleOffset

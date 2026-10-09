@@ -1,17 +1,16 @@
-﻿- type: entity
+- type: entity
   id: CMWindowDirectionalBase
   parent: BaseWindowStructureDirectional
   abstract: true
-  name: window
-  description: A glass window. It looks thin and flimsy. A few knocks with anything should shatter it.
+  name: 窗户
+  description: 一扇玻璃窗。它看起来又薄又脆弱。用任何东西敲几下应该就能把它打碎。
   components:
   - type: Transform
     anchored: true
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,-0.38"
         density: 1500
         mask:
@@ -42,17 +41,15 @@
   components:
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150 #Excess damage check.
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: WindowShatter
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 25 #TODO RMC14: Proper damage values.
       behaviors:
       - !type:PlaySoundBehavior
@@ -64,7 +61,7 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Construction
     graph: RMCWindowDirectional
     node: windowDirectional
@@ -80,8 +77,8 @@
 - type: entity
   id: CMWindowReinforcedDirectional
   parent: CMWindowDirectionalBase
-  name: reinforced window
-  description: A glass window reinforced with bracing rods. It looks rather strong. Might take a few good hits to shatter it.
+  name: 加固窗户
+  description: 一扇用支撑杆加固的玻璃窗。看起来相当坚固。可能需要猛击几下才能将其打碎。
   components:
   - type: Sprite
     state: rwindow
@@ -90,17 +87,15 @@
     state: rwindow
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150 #Excess damage check.
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: WindowShatter
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 25 #TODO RMC14: Proper damage values.
       behaviors:
       - !type:PlaySoundBehavior
@@ -115,7 +110,7 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Construction
     graph: RMCWindowDirectional
     node: windowReinforcedDirectional
@@ -123,8 +118,8 @@
 - type: entity
   id: CMWindowStrongReinforcedDirectional
   parent: CMWindowDirectionalBase
-  name: strong reinforced window
-  description: A glass window reinforced with bracing rods. It looks very strong. You can't break it with your fists.
+  name: 坚固的加固窗
+  description: 一扇用支撑杆加固的玻璃窗。它看起来非常坚固。你用拳头打不破它。
   components:
   - type: Sprite
     state: rwindow
@@ -134,8 +129,7 @@
   - type: ImmuneToUnarmed
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:PlaySoundBehavior
@@ -150,7 +144,7 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Construction
     graph: RMCWindowDirectional
     node: windowDirectional
@@ -158,8 +152,8 @@
 - type: entity
   id: CMWindowTintedDirectional
   parent: CMWindowDirectional
-  name: tinted window
-  description: A tinted glass window. It looks rather strong and opaque. Might take a few good hits to shatter it.
+  name: 有色玻璃窗
+  description: 一扇有色玻璃窗。它看起来相当坚固且不透明。可能需要几下重击才能将其打碎。
   components:
   - type: Sprite
     state: twindow
@@ -186,8 +180,8 @@
 - type: entity
   id: CMWindowUltraDirectional
   parent: CMWindowDirectional
-  name: ultra-reinforced window
-  description: An ultra-reinforced window designed to keep the briefing podium a secure area.
+  name: 超强化窗户
+  description: 一扇旨在使简报讲台保持为安全区域的超强化窗户。
   components:
   - type: Sprite
     state: fwindow

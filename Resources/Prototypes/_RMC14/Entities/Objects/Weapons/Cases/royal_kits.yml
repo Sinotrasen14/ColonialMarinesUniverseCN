@@ -1,28 +1,28 @@
 - type: entity
   parent: CMSniperEquipmentCase
   id: RMCScoutSniperSniperEquipmentCase
-  name: scout-sniper equipment case
-  description: "A large case containing an M96S-B suppressed scoped rifle, its corresponding head-mounted sight, six spare magazines of standard ammo, and a bipod. \n\nNOTE: You cannot put items back inside this case."
+  name: 侦察狙击手装备箱
+  description: "一个大型箱子，内含一把带消音器和瞄准镜的M96S-B步枪、其配套的头戴式瞄具、六个装标准弹药的备用弹匣以及一个两脚架。\n\n注意：你无法将物品放回此箱内。"
   suffix: Sniper
   components:
   - type: Sprite
     sprite: _RMC14/Objects/loadout_kits.rsi
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: sniper
-      map: [ label ]
+      map: [label]
   - type: Icon
     sprite: _RMC14/Objects/loadout_kits.rsi
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         base:
-          True: { state: open }
-          False: { state: closed }
+          true: {state: open}
+          false: {state: closed}
         label:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -41,28 +41,28 @@
 - type: entity
   parent: CMSniperEquipmentCase
   id: RMCScoutSniperMarksmanEquipmentCase
-  name: scout-sniper equipment case
-  description: "A large case containing an L112A1 designated marksman rifle, its corresponding head-mounted sight, ten spare magazines of squash-head rounds, and a bipod."
+  name: 侦察狙击手装备箱
+  description: "一个大型装备箱，内含一支L112A1精确射手步枪、其配套的头戴式瞄准镜、十个装满碎甲弹的备用弹匣以及一个两脚架。"
   suffix: Marksman
   components:
   - type: Sprite
     sprite: _RMC14/Objects/loadout_kits.rsi
     layers:
     - state: closed
-      map: [ base ]
+      map: [base]
     - state: sniper
-      map: [ label ]
+      map: [label]
   - type: Icon
     sprite: _RMC14/Objects/loadout_kits.rsi
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         base:
-          True: { state: open }
-          False: { state: closed }
+          true: {state: open}
+          false: {state: closed}
         label:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
   - type: Storage
     maxItemSize: Huge
     grid:
@@ -86,9 +86,9 @@
 - type: entity
   parent: RMCGunCaseBase
   id: RMCL49Case
-  name: L49 assault shotgun case
+  name: L49突击霰弹枪枪箱
   suffix: PVE, RCM
-  description: A gun case containing the L49 assault shotgun. Contains the L49 weapon, two boxes of L49B breaching ammunition, and an L28-pattern shotgun shell rig.
+  description: 装有L49突击霰弹枪的枪箱。内含L49武器、两盒L49B破门弹药以及一个L28型霰弹枪弹挂具。
   components:
   - type: Storage
     maxItemSize: Ginormous

@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: RMCAreaBase
   id: RMCAreaHF
-  name: Haurchefant
+  name: 奥尔什方
   components:
   - type: Sprite
     sprite: _RMC14/Areas/hybrisareas.rsi
@@ -27,7 +27,7 @@
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFHypersleepStorageA
-  name: Hypersleep Storage
+  name: 超睡眠储藏库
   components:
   - type: Sprite
     state: medical
@@ -35,7 +35,7 @@
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFHypersleepGearLockers
-  name: Hypersleep Gear Lockers
+  name: 超睡眠装备储物柜
   components:
   - type: Sprite
     state: derelictship
@@ -43,37 +43,37 @@
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFMessHall
-  name: Mess Hall
+  name: 食堂
 
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFBathroom
-  name: Bathroom
+  name: 浴室
 
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFOffice
-  name: Office
+  name: 办公室
 
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFEngineering
-  name: Engineering
+  name: 工程
 
 - type: entity
   parent: RMCAreaHFEngineering
   id: RMCAreaHFSyntheticCloset
-  name: Synthetic Closet
+  name: 合成衣柜
 
 - type: entity
   parent: RMCAreaHFEngineering
   id: RMCAreaHFAICore
-  name: AI Core
+  name: AI核心
 
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFDisposals
-  name: Disposals
+  name: 处置
   components:
   - type: Sprite
     state: recycling
@@ -81,7 +81,7 @@
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFMedical
-  name: Medical
+  name: 医疗
   components:
   - type: Sprite
     state: medical
@@ -89,7 +89,7 @@
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFBriefRoom
-  name: Briefing Room
+  name: 简报室
   components:
   - type: Sprite
     state: caves_central
@@ -97,12 +97,12 @@
 - type: entity
   parent: RMCAreaHFBriefRoom
   id: RMCAreaHFCommandDeck
-  name: Force Command Deck
+  name: 原力指挥甲板
 
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFPrep
-  name: Force Prep
+  name: 部队准备
   components:
   - type: Sprite
     state: security_hub
@@ -110,12 +110,12 @@
 - type: entity
   parent: RMCAreaHFPrep
   id: RMCAreaHFArmoury
-  name: Force Armoury
+  name: 部队军械库
 
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFHangar
-  name: Hangar
+  name: 机库
   components:
   - type: Sprite
     state: lz
@@ -123,12 +123,12 @@
 - type: entity
   parent: RMCAreaHFHangar
   id: RMCAreaHFHangar2
-  name: Lower Hangar
+  name: 下层机库
 
 - type: entity
   parent: RMCAreaHF
   id: RMCAreaHFOOB
-  name: Out Of Bounds
+  name: 越界
   components:
   - type: Sprite
     state: oob

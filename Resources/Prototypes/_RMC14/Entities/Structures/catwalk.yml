@@ -1,7 +1,7 @@
 - type: entity
   id: CMCatwalk
-  name: catwalk
-  description: A catwalk for easier EVA maneuvering and cable placement.
+  name: 走道
+  description: 便于舱外活动机动和电缆敷设的走道。
   placement:
     mode: SnapgridCenter
   components:
@@ -30,14 +30,12 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 500
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -46,7 +44,7 @@
             min: 0
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: CMCatwalk
@@ -93,7 +91,7 @@
 - type: entity
   parent: CMCatwalk
   id: RMCCatwalkHybrisa
-  name: solid metal grate
+  name: 实心金属格栅
   components:
   - type: Sprite
     state: solidgrate1
@@ -101,7 +99,7 @@
 - type: entity
   parent: CMCatwalk
   id: RMCCatwalkHybrisaLattice
-  name: structural lattice
+  name: 结构晶格
   components:
   - type: Sprite
     state: latticefull
@@ -109,7 +107,7 @@
 - type: entity
   parent: CMCatwalk
   id: RMCCatwalkHybrisaElevator
-  name: solid metal grate
+  name: 实心金属格栅
   components:
   - type: Sprite
     state: solidgrate5
@@ -118,8 +116,8 @@
 
 - type: entity
   id: RMCMonorailStraight
-  name: monorail track
-  description: The rail system for the CORSAT monorail.
+  name: 单轨轨道
+  description: CORSAT 单轨的轨道系统。
   placement:
     mode: SnapgridCenter
   components:
@@ -160,8 +158,8 @@
 - type: entity
   parent: RMCMonorailStraight
   id: RMCRailroadStraight
-  name: rails
-  description: Minecarts and rail vehicles go on these.
+  name: 铁轨
+  description: 矿车和轨道车辆在上面行驶。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/catwalk.rsi
@@ -186,8 +184,8 @@
 - type: entity
   parent: RMCRailroadStraight
   id: RMCRailroadBumper
-  name: rail bumpers
-  description: This (usually) stops minecarts and other rail vehicles at the end of a line of track.
+  name: 轨道缓冲器
+  description: 这个（通常）会在轨道末端使矿车和其他轨道车辆停下。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/catwalk.rsi

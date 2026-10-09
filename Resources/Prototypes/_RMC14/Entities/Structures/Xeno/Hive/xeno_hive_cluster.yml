@@ -1,19 +1,18 @@
 - type: entity
   id: HiveClusterXeno
   parent: BaseHiveStructure
-  name: hive cluster
-  description: A large clump of gooey mass. It rhythmically pulses, as if its pumping something into the weeds below...
+  name: 蜂巢簇
+  description: 一大团黏稠的物质。它有节奏地脉动着，仿佛正把什么东西泵入下方的杂草里……
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Xenos/hive_cluster.rsi
     layers:
-     - sprite: _RMC14/Structures/Xenos/xeno_weeds.rsi
-       state: hive_weed0
-     - state: hive_cluster_idle
+    - sprite: _RMC14/Structures/Xenos/xeno_weeds.rsi
+      state: hive_weed0
+    - state: hive_cluster_idle
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1200
       behaviors:
       - !type:DoActsBehavior
@@ -51,8 +50,8 @@
 - type: entity
   id: HiveClusterXenoConstructionNode
   parent: BaseHiveStructureNode
-  name: hive cluster
-  description: A large clump of gooey mass. Looks like a marker for something.
+  name: 蜂巢簇
+  description: 一大团黏稠的物质。看起来像是某种东西的标记。
   components:
   - type: Sprite
     color: '#FFFFFFAA'
@@ -64,8 +63,7 @@
       scale: 0.8, 0.8
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:DoActsBehavior

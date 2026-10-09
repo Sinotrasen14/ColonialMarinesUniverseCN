@@ -1,9 +1,9 @@
-﻿- type: entity
-  parent: [ CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder ]
+- type: entity
+  parent: [CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder]
   id: RMCSmartGunPVENoCamo
   abstract: true
-  name: ML66A heavy support gun
-  description: The actual firearm in the Support Gun System. Essentially a heavy, mobile machinegun.
+  name: ML66A重型支援机枪
+  description: 支援机枪系统中的实际枪械。本质上是一挺重型、可移动的机枪。
   suffix: PVE
   components:
   - type: Wieldable
@@ -39,7 +39,7 @@
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
     slots:
@@ -79,13 +79,13 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
-      cell_slot: !type:ContainerSlot { }
+      cell_slot: !type:ContainerSlot {}
   - type: PowerCellSlot
     cellSlotId: cell_slot
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSmartGun
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
@@ -137,7 +137,7 @@
   - type: MotionDetector
     handToggleable: false
     deactivateOnDrop: false
-    toggleSound: null
+    toggleSound:
   - type: SmartGun
   - type: AttachableHolder
     slots:
@@ -171,10 +171,10 @@
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
     - state: camo
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
-      map: [ "enum.ItemCamouflageLayers.Layer" ]
+      map: ["enum.ItemCamouflageLayers.Layer"]
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml66a.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: ItemCamouflage
     colors:
       Jungle: "#ccd08d"
@@ -186,8 +186,8 @@
 - type: entity
   parent: RMCSmartGunPVENoCamo
   id: RMCSmartGunPMCPVE
-  name: ML79A heavy support gun
-  description: The actual firearm in the Support Gun System, modified for We-Ya PMCs. Essentially a heavy, mobile machinegun.
+  name: ML79A重型支援机枪
+  description: 支援枪系统中的实际枪械，为We-Ya PMC改装而成。本质上是一挺重型、可机动的机枪。
   suffix: PVE, PMC
   components:
   - type: Sprite
@@ -197,13 +197,13 @@
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml79a.rsi
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml79a.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/ml79a.rsi
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSmartGunirradiated
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
@@ -222,9 +222,9 @@
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: RMCAttachmentSmartgunHarness # TODO RMC14 - This should remove GunRequiresWield when active
-  categories: [ HideSpawnMenu ]
-  name: ML66A heavy support gun harness
-  description: A specialized harness for the ML66A heavy support gun, assisting with recoil control and stability, while also allowing for easy manuvering of the weapon and even suspending it without a grip.
+  categories: [HideSpawnMenu]
+  name: ML66A重型支援枪挂具
+  description: 一款专为ML66A重型支援枪设计的专用挂具，有助于控制后坐力并保持稳定，同时便于轻松操控武器，甚至无需握持即可将其悬挂。
   suffix: PVE
   components:
   - type: Sprite
@@ -261,8 +261,8 @@
 - type: entity
   parent: RMCSmartGunPVENoCamo
   id: RMCSmartGunRCMPVE
-  name: ML66C general purpose machine gun
-  description: A heavy, mobile machinegun used by the Royal Crown Marines. Heavily modified from the UN's ML66A platform, it fires 10x30mm holotargeting rounds. # In parity this is 10x28 HT but I don't want to make more unnecessary duplicate gear
+  name: ML66C通用机枪
+  description: 一款由皇家皇冠海军陆战队使用的重型、机动式机枪。它在联合国ML66A平台基础上经过大幅改装，发射10×30毫米全息制导弹药。                                                                                    # In parity this is 10x28 HT but I don't want to make more unnecessary duplicate gear
   suffix: PVE, RCM
   components:
   - type: Gun
@@ -280,13 +280,13 @@
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/royal_gpmg.rsi
     - state: mag-0
       sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/royal_gpmg.rsi
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/SmartGuns/royal_gpmg.rsi
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineSmartGunHT
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg

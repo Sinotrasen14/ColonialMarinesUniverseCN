@@ -1,9 +1,9 @@
 - type: entity
   parent: [RMCBaseSlideMagazineVisuals, CMWeaponPistolBase]
   id: RMCWeaponPistolL14
-  name: L14 combat pistol
+  name: L14战斗手枪
   suffix: PVE
-  description: The L14 is the standard issue sidearm of the Royal Crown Marines, and the product of an inordinate amount of time and capital investment by the TSE. It is a compact but accurate high-capacity combat pistol chambered in 9mm, capable of tight two-round bursts. This piece can usually be found on junior officers and supporting roles within the RCM.
+  description: L14是皇家皇冠海军陆战队的标准制式副武器，也是TSE耗费大量时间和资金投入的产物。它是一款紧凑但精准的9毫米高弹容量战斗手枪，能够进行紧密的两发点射。这款枪通常配备给RCM内的下级军官和支援岗位人员。
   components:
   - type: Tag
     tags:
@@ -39,7 +39,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_unload.ogg
         priority: 2
@@ -79,14 +79,14 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: RMCMagazinePistolL14
-  name: L14 magazine (9mm)
+  name: L14弹匣（9毫米）
   components:
   - type: Tag
     tags:
     - CMMagazinePistol
     - RMCMagazinePistolL14
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgePistol9mm
@@ -103,11 +103,11 @@
     magState: mag
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistol9MM
-    
+
 - type: entity
   parent: RMCMagazinePistolL14
   id: RMCMagazinePistolL14AP
-  name: L14 AP magazine (9mm)
+  name: L14 穿甲弹匣（9毫米）
   components:
   - type: Tag
     tags:
@@ -115,7 +115,7 @@
     - RMCMagazinePistolL14
     - RMCMagazinePistolL14AP
   - type: BallisticAmmoProvider
-    mayTransfer: True
+    mayTransfer: true
     whitelist:
       tags:
       - CMCartridgePistol9mmAP
@@ -134,7 +134,7 @@
     magState: mag
   - type: RefillableByBulletBox
     bulletType: CMUBoxBulletsPistol9MMAP
-    
+
 - type: Tag
   id: RMCWeaponPistolL14
 

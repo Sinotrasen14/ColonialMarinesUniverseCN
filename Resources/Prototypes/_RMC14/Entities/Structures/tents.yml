@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   id: RMCPropTentBase
-  name: tent
+  name: 帐篷
   placement:
     mode: SnapgridCenter
   components:
@@ -10,8 +10,7 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/_RMC14/Items/paper_ripped.ogg"
+        path: "/Audio/_RMC14/Items/paper_ripped.ogg"
         params:
           volume: 3
   - type: Physics
@@ -20,8 +19,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-1.5,-0.5,1.4,2"
         density: 190
         layer:
@@ -35,12 +33,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Clickable
   - type: InteractionOutline
   - type: Corrodible
@@ -49,7 +46,7 @@
 - type: entity
   parent: RMCPropTentBase
   id: RMCPropTentSmall
-  name: small tent
+  name: 小帐篷
   components:
   - type: Sprite
     state: small_tent
@@ -57,7 +54,7 @@
 - type: entity
   parent: RMCPropTentBase
   id: RMCPropTentMedical
-  name: medical tent
+  name: 医疗帐篷
   components:
   - type: Sprite
     state: medical_tent
@@ -65,7 +62,7 @@
 - type: entity
   parent: RMCPropTentBase
   id: RMCPropTentCommand
-  name: command tent
+  name: 指挥帐篷
   components:
   - type: Sprite
     state: command_tent
@@ -73,7 +70,7 @@
 - type: entity
   parent: RMCPropTentBase
   id: RMCPropTentSupply
-  name: supply tent
+  name: 补给帐篷
   components:
   - type: Sprite
     state: supply_tent
@@ -82,7 +79,7 @@
   parent: RMCPropTentBase
   id: RMCPropTentSmallBack
   suffix: Back
-  name: small tent
+  name: 小帐篷
   components:
   - type: Sprite
     state: small_tent_back

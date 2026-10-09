@@ -2,9 +2,9 @@
   abstract: true
   parent: BaseItem
   id: CMAutoInjectorBase
-  name: autoinjector
-  description: An autoinjector.
-  categories: [ HideSpawnMenu ]
+  name: 自动注射器
+  description: 一种自动注射器。
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/auto_injectors.rsi
@@ -15,8 +15,8 @@
       visible: false
   - type: Item
     size: Small
-    sprite: null
-    inhandVisuals: { }
+    sprite:
+    inhandVisuals: {}
   - type: Hypospray
     solutionName: pen
     injectSound: /Audio/_RMC14/Medical/hypospray.ogg
@@ -67,8 +67,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMEmergencyAutoInjector
-  name: emergency autoinjector (CAUTION)
-  description: An autoinjector loaded with a special cocktail of chemicals, to be used in life-threatening situations. Doesn't require any training to use.
+  name: 应急自动注射器（注意）
+  description: 一种装有特殊化学药剂混合物的自动注射器，用于危及生命的情况。无需任何培训即可使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/emergency_auto_injector.rsi
@@ -78,7 +78,7 @@
       map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Item
-    sprite: null
+    sprite:
   - type: Hypospray
     transferAmount: 58 # TODO RMC14 77
     injectSound: /Audio/_RMC14/Medical/air_release.ogg
@@ -105,8 +105,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMTricordrazineAutoInjector
-  name: tricordrazine autoinjector
-  description: An autoinjector loaded with 3 uses of Tricordrazine, a weak general use medicine for treating damage.
+  name: 三可拉嗪自动注射器
+  description: 一支装有3次使用剂量的三可拉嗪的自动注射器，一种用于治疗损伤的弱效通用药物。
   components:
   - type: SolutionContainerManager
     solutions:
@@ -124,8 +124,8 @@
 - type: entity
   parent: CMTricordrazineAutoInjector
   id: CMTricordrazineAutoInjectorNoSkill
-  name: first-aid autoinjector
-  description: An autoinjector loaded with a small dose of medicine for marines to treat themselves with.
+  name: 急救自动注射器
+  description: 一个装有少量药物的自动注射器，供陆战队员自我治疗使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/auto_injectors.rsi
@@ -155,8 +155,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMKelotaneAutoInjector
-  name: kelotane autoinjector
-  description: An autoinjector loaded with 3 uses of Kelotane, a common burn medicine.
+  name: 凯洛坦自动注射器
+  description: 一支装有3剂凯洛坦的自动注射器，凯洛坦是一种常见的烧伤药。
   components:
   - type: SolutionContainerManager
     solutions:
@@ -174,8 +174,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMDexalinPlusAutoInjector
-  name: dexalin plus autoinjector
-  description: An autoinjector loaded with 3 uses of Dexalin+, designed to immediately oxygenate the entire body.
+  name: 地塞林+自动注射器
+  description: 一支装有3次使用剂量的地塞林+的自动注射器，旨在立即为全身供氧。
   components:
   - type: Hypospray
     transferAmount: 1
@@ -195,8 +195,8 @@
 - type: entity
   parent: CMAutoInjector
   id: RMCDyloveneAutoInjector
-  name: dylovene autoinjector
-  description: An autoinjector loaded with 3 doses of 15u of Dylovene, a common toxin damage medicine. You can refill it at Weya-Med vending machines.
+  name: 地洛文自动注射器
+  description: 一支装有3剂15u地洛文的自动注射器，这是一种常见的毒素损伤治疗药物。你可以在Weya-Med自动售货机处为其补充。
   components:
   - type: SolutionContainerManager
     solutions:
@@ -216,8 +216,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMBicaridineAutoInjector
-  name: bicaridine autoinjector
-  description: An autoinjector loaded with 3 uses of Bicaridine, a common brute and circulatory damage medicine.
+  name: 比卡瑞丁自动注射器
+  description: 一支装有3次使用剂量的比卡瑞丁的自动注射器，比卡瑞丁是一种常见的治疗钝击和循环系统损伤的药物。
   components:
   - type: SolutionContainerManager
     solutions:
@@ -235,8 +235,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMInaprovalineAutoInjector
-  name: inaprovaline autoinjector
-  description: An autoinjector loaded with 3 uses of Inaprovaline, an emergency stabilization medicine for patients in critical condition.
+  name: 依诺伐林自动注射器
+  description: 一支装有3次用量依诺伐林的自动注射器，依诺伐林是一种用于危重患者的紧急稳定药物。
   components:
   - type: Hypospray
     transferAmount: 30
@@ -258,8 +258,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMEpinephrineAutoInjector
-  name: epinephrine autoinjector
-  description: An autoinjector loaded with 3 uses of Epinephrine, better known as Adrenaline, a nerve stimulant useful in restarting the heart.
+  name: 肾上腺素自动注射器
+  description: 一支装有3次用量肾上腺素的自动注射器，肾上腺素更常被称为Adrenaline，是一种神经兴奋剂，可用于使心脏重新起搏。
   components:
   - type: Hypospray
     transferAmount: 5.25
@@ -279,8 +279,8 @@
 - type: entity
   parent: CMAutoInjector
   id: RMCIronAutoInjector
-  name: iron autoinjector
-  description: An autoinjector loaded with 3 uses of iron, a chemical commonly used to treat blood loss.
+  name: 铁剂自动注射器
+  description: 一支装有三剂铁剂的自动注射器，铁剂是一种常用于治疗失血的化学物质。
   components:
   - type: SolutionContainerManager
     solutions:
@@ -298,8 +298,8 @@
 - type: entity
   parent: CMAutoInjector
   id: RMCDermalineAutoInjector
-  name: dermaline autoinjector
-  description: An autoinjector loaded with 3 uses of Dermaline, an advanced burn treatment chemical.
+  name: 德玛林自动注射器
+  description: 一支装有3剂德玛林的自动注射器，德玛林是一种高级烧伤治疗化学药剂。
   components:
   - type: SolutionContainerManager
     solutions:
@@ -317,8 +317,8 @@
 - type: entity
   parent: RMCMedicAutoInjectorBase
   id: RMCMedicAutoInjector15
-  name: medic autoinjector (M-XL)
-  description: A custom-made professional injector, likely from research. Has a similar lock to pill bottles, and fits up to 6 injections.
+  name: 医疗自动注射器（M-XL）
+  description: 定制的专业注射器，可能用于研究。其锁与药瓶类似，最多可容纳6次注射。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/medic_auto_injector.rsi
@@ -344,7 +344,7 @@
 - type: entity
   parent: RMCMedicAutoInjector15
   id: RMCMedicAutoInjector30
-  name: medic autoinjector (M-XXL)
+  name: 医疗自动注射器（M-XXL）
   components:
   - type: Sprite
     layers:
@@ -364,8 +364,8 @@
 - type: entity
   parent: RMCMedicAutoInjectorBase
   id: RMCMedicAutoInjectorEZ1
-  name: autoinjector (E-U)
-  description: A custom-made EZ autoinjector, likely from research. Injects its entire payload immediately and doesn't require any training.
+  name: 自动注射器（E-U）
+  description: 定制的EZ自动注射器，很可能来自研究。会立即注射全部药液，且无需任何培训。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/ez_medic_auto_injector.rsi
@@ -388,7 +388,7 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ5
-  name: autoinjector (E-T)
+  name: 自动注射器（E-T）
   components:
   - type: Sprite
     layers:
@@ -408,7 +408,7 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ10
-  name: autoinjector (E-XXS)
+  name: 自动注射器（E-XXS）
   components:
   - type: Sprite
     layers:
@@ -428,7 +428,7 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ15
-  name: autoinjector (E-XS)
+  name: 自动注射器（E-XS）
   components:
   - type: Sprite
     layers:
@@ -448,7 +448,7 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ30
-  name: autoinjector (E-S)
+  name: 自动注射器（E-S）
   components:
   - type: Sprite
     layers:
@@ -468,7 +468,7 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ45
-  name: autoinjector (E-M)
+  name: 自动注射器（E-M）
   components:
   - type: Sprite
     layers:
@@ -488,7 +488,7 @@
 - type: entity
   parent: RMCMedicAutoInjectorEZ1
   id: RMCMedicAutoInjectorEZ60
-  name: autoinjector (E-L)
+  name: 自动注射器（E-L）
   components:
   - type: Sprite
     layers:
@@ -607,8 +607,8 @@
 - type: entity
   parent: RMCMedicAutoInjectorBase
   id: RMCMedicAutoInjectorCS5
-  name: autoinjector (C-XS)
-  description: A custom-made autoinjector, likely from research.
+  name: 自动注射器（C-XS）
+  description: 一种定制的自动注射器，可能来自研究。
   components:
   - type: Sprite
     layers:
@@ -629,7 +629,7 @@
 - type: entity
   parent: RMCMedicAutoInjectorCS5
   id: RMCMedicAutoInjectorCS15
-  name: autoinjector (C-M)
+  name: 自动注射器（C-M）
   components:
   - type: Sprite
     layers:
@@ -649,7 +649,7 @@
 - type: entity
   parent: RMCMedicAutoInjectorCS5
   id: RMCMedicAutoInjectorCS30
-  name: autoinjector (C-XL)
+  name: 自动注射器（C-XL）
   components:
   - type: Sprite
     layers:
@@ -669,7 +669,7 @@
 - type: entity
   parent: RMCMedicAutoInjectorCS5
   id: RMCMedicAutoInjectorCS60
-  name: autoinjector (C-XXL)
+  name: 自动注射器（C-XXL）
   components:
   - type: Sprite
     layers:

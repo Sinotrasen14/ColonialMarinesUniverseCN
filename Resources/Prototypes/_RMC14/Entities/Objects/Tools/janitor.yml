@@ -1,16 +1,16 @@
 - type: entity
   parent: BaseItem
   id: CMMop
-  name: mop
-  description: The world of janitalia wouldn't be complete without a mop.
+  name: 拖把
+  description: 没有拖把，janitalia的世界就不完整。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/Janitorial/mop.rsi
     layers:
-      - state: mop
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        state: mop_fill-1
-        visible: false
+    - state: mop
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      state: mop_fill-1
+      visible: false
   - type: Item
     sprite: _RMC14/Objects/Misc/Janitorial/mop.rsi
     size: Normal
@@ -38,14 +38,14 @@
       CMSteel: 110
   - type: Tag
     tags:
-      - Mop
-      - MopBasic
+    - Mop
+    - MopBasic
 
 - type: entity
   parent: BaseItem
   id: CMWetSign
-  name: wet floor sign
-  description: Caution! Wet Floor!
+  name: 小心地滑标志
+  description: 小心！地面湿滑！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/Janitorial/caution.rsi
@@ -58,13 +58,13 @@
       RMCPlastic: 110
   - type: Tag
     tags:
-      - WetFloorSign
+    - WetFloorSign
 
 - type: entity
   parent: ClothingHeadBase
   id: CMWarningCone
-  name: warning cone
-  description: This cone is trying to warn you of something!
+  name: 警告锥
+  description: 这个警告锥正试图警告你某件事！
   components:
   - type: ClothingSpeedModifier
     walkModifier: 0.5
@@ -84,8 +84,8 @@
 - type: entity
   parent: BaseItem
   id: RMCLightReplacer
-  name: light replacer
-  description: A device to automatically replace lights. Refill with working lightbulbs.
+  name: 灯泡替换器
+  description: 一种自动替换灯泡的装置。用能正常工作的灯泡补充。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/Janitorial/light_replacer.rsi
@@ -128,7 +128,7 @@
 - type: entity
   parent: RMCLightReplacer
   id: RMCSprayBottleSpaceCleaner
-  name: light replacer
+  name: 光源替换器
   suffix: Empty
   components:
   - type: EntityProvider

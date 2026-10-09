@@ -1,17 +1,17 @@
 - type: entity
   parent: RMCBaseWeaponRifleNoMagazineProvider
-  name: XM88 Heavy Rifle
+  name: XM88重型步枪
   id: WeaponRifleXM88
-  description: An experimental man-portable anti-materiel rifle chambered in .458 SOCOM. It must be manually chambered for every shot.
+  description: 一种实验性单兵便携式反器材步枪，采用 .458 SOCOM 口径。每次射击都必须手动上膛。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/xm88/desert.rsi
     layers:
     - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - sprite: _RMC14/Areas/areas.rsi
       state: blank
-      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      map: ["enum.GunVisualLayers.MagUnshaded"]
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/xm88/desert.rsi
   - type: Gun
@@ -109,7 +109,7 @@
 - type: entity
   parent: BulletRifle10x24mm
   id: RMCBullet458SOCOM
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Projectile
     damage:
@@ -134,8 +134,8 @@
 - type: entity
   parent: RMCBoxShotgunBase
   id: RMCBox458SOCOM
-  name: box of .458 SOCOM rounds
-  description: A box filled with handfuls of .458 SOCOM rounds, designed for use with the XM88 heavy rifle.
+  name: 一盒 .458 SOCOM 子弹
+  description: 一个装满了成把 .458 SOCOM 子弹的盒子，专为 XM88 重型步枪使用而设计。
   components:
   - type: Storage
     grid:
@@ -157,9 +157,9 @@
       color: "#ffffff"
     - state: smallshell_ammo_full_12g_color
       color: "#719380"
-      map: [ "full" ]
+      map: ["full"]
     - state: smallshell_empty
-      map: [ "empty" ]
+      map: ["empty"]
       color: "#62757b"
   - type: RMCStorageEjectHand
   - type: Tag
