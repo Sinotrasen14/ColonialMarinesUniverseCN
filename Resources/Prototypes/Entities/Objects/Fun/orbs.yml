@@ -6,8 +6,8 @@
 - type: entity
   parent: BaseItem
   id: SingularityToy
-  name: singuloth-brand toy
-  description: Mass-produced by a sadistic corporate conglomerate!
+  name: 辛古洛斯牌玩具 | singuloth-brand toy
+  description: 由一家虐待狂企业集团批量生产！ | Mass-produced by a sadistic corporate conglomerate!
   components:
   - type: Sprite
     sprite: Objects/Fun/toy_singularity.rsi
@@ -31,8 +31,8 @@
 - type: entity
   parent: BaseItem
   id: TeslaToy
-  name: Teddy Tesla
-  description: The favorite toy of the great engineer Nikola Tesla.
+  name: 泰迪·特斯拉 | Teddy Tesla
+  description: 伟大的工程师尼古拉·特斯拉最喜欢的玩具。 | The favorite toy of the great engineer Nikola Tesla.
   components:
   - type: Sprite
     sprite: Structures/Power/Generation/Tesla/energy_miniball.rsi
@@ -63,10 +63,10 @@
         volume: -10
 
 - type: entity
-  parent: [ BaseItem, BaseMagicalContraband ]
+  parent: [BaseItem, BaseMagicalContraband]
   id: PonderingOrb
-  name: pondering orb
-  description: Ponderous, man... Really ponderous.
+  name: 沉思之球 | pondering orb
+  description: 沉重，老兄……真的很沉重。 | Ponderous, man... Really ponderous.
   components:
   - type: Sprite
     sprite: Objects/Fun/pondering_orb.rsi
@@ -86,8 +86,8 @@
 - type: entity
   parent: PonderingOrb
   id: PonderingOrbWizard
-  name: pondering orb
-  description: Ponderous, man... Really ponderous. Magically shows the station's camera network.
+  name: 沉思宝珠 | pondering orb
+  description: 沉重，伙计……真的很沉重。魔法般地显示空间站的摄像头网络。 | Ponderous, man... Really ponderous. Magically shows the station's camera network.
   suffix: Wizard
   components:
   - type: ActivatableUI
@@ -106,8 +106,8 @@
 - type: entity
   parent: BaseItem
   id: Magic9Ball
-  name: magic 9 ball
-  description: An endless source of wisdom... Now with a speaker included!
+  name: 魔法9球 | magic 9 ball
+  description: 无尽的智慧之源……现在还内置了扬声器！ | An endless source of wisdom... Now with a speaker included!
   components:
   - type: Sprite
     sprite: Objects/Fun/Balls/magic9ball.rsi
@@ -149,8 +149,7 @@
       collection: GlassBreak
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 20
       behaviors:
       - !type:PlaySoundBehavior
@@ -161,7 +160,7 @@
       - !type:SpillBehavior
         solution: solution
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: PhysicalComposition
     materialComposition:
       Plastic: 50

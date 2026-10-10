@@ -1,14 +1,14 @@
 - type: entity
-  name: stun prod
+  name: 电击棒 | stun prod
   parent: [BaseItem, BaseMinorContraband]
   id: Stunprod
-  description: A stun prod for illegal incapacitation.
+  description: 用于非法制伏的电击棒。 | A stun prod for illegal incapacitation.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/stunprod.rsi
     layers:
     - state: stunprod_off
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: ItemToggleExaminableStatus
   - type: ItemToggleRequiresCharge
     requiredCharge: 120
@@ -69,8 +69,8 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: {state: stunprod_on}
-          False: {state: stunprod_off}
+          true: {state: stunprod_on}
+          false: {state: stunprod_off}
   - type: StaticPrice
     price: 100
   - type: Construction

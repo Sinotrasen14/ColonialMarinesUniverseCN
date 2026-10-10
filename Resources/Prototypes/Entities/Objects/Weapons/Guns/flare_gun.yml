@@ -1,14 +1,14 @@
 - type: entity
-  name: flare gun
+  name: 信号枪 | flare gun
   parent: BaseItem
   id: WeaponFlareGun
-  description: A compact, single-shot pistol that fires shotgun shells. Comes with a safety feature that prevents the user from fitting lethal shells inside.
+  description: 一把紧凑型单发手枪，可发射霰弹。配有安全装置，防止使用者装入致命弹药。 | A compact, single-shot pistol that fires shotgun shells. Comes with a safety feature that prevents the user from fitting lethal shells inside.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/flaregun.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
   - type: Item
     size: Small
     shape:
@@ -18,13 +18,13 @@
   - type: ItemSlots
     slots:
       gun_chamber:
-        name: Chamber
+        name: 腔室 | Chamber
         startingItem: ShellShotgunFlare
         priority: 1
         whitelist:
           tags: ## TODO: Add a risk of the gun blowing up if using non-light shotgun shells, and then re-enable them.
             ## - ShellShotgun
-            - ShellShotgunLight
+          - ShellShotgunLight
   - type: ContainerContainer
     containers:
       gun_chamber: !type:ContainerSlot
@@ -46,33 +46,33 @@
     fireRate: 8
     selectedMode: SemiAuto
     availableModes:
-      - SemiAuto
+    - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/flaregun.ogg
 
 
 - type: entity
-  name: security shell gun
+  name: 安保霰弹枪 | security shell gun
   parent: [WeaponFlareGun, BaseSecurityContraband]
   id: WeaponFlareGunSecurity
-  description: A modified flare gun originally designed to be used by security to launch non-lethal shotgun shells, however it can also fire lethal shells without risk.
+  description: 一把经过改装的信号枪，最初设计用于安保人员发射非致命霰弹，但它也能无风险地发射致命弹药。 | A modified flare gun originally designed to be used by security to launch non-lethal shotgun shells, however it can also fire lethal shells without risk.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Shotguns/flaregun_security.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
   - type: Item
     size: Small
     sprite: Objects/Weapons/Guns/Shotguns/flaregun_security.rsi
   - type: ItemSlots
     slots:
       gun_chamber:
-        name: Chamber
+        name: 钱伯斯 | Chamber
         priority: 1
         whitelist:
           tags:
-            - ShellShotgun
+          - ShellShotgun
   - type: Tag
     tags:
     - Sidearm

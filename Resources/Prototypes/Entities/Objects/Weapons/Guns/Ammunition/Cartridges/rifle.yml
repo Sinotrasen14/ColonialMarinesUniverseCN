@@ -1,12 +1,12 @@
 - type: entity
   abstract: true
-  parent: [ BaseCartridge, BaseSecurityContraband ]
+  parent: [BaseCartridge, BaseSecurityContraband]
   id: BaseCartridgeRifle
-  name: cartridge (.20 rifle)
+  name: 弹匣（.20步枪） | cartridge (.20 rifle)
   components:
   - type: Tag
     tags:
-      - CartridgeRifle
+    - CartridgeRifle
   - type: CartridgeAmmo
     proto: BulletRifle
   - type: Sprite
@@ -20,8 +20,8 @@
 - type: entity
   parent: BaseCartridgeRifle
   id: CartridgeRifle
-  name: cartridge (.20 rifle)
-  description: A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
+  name: 弹药（.20步枪） | cartridge (.20 rifle)
+  description: 一种用于战斗步枪的现代中间型弹药。标准动能弹药在大多数情况下都很常见且实用。 | A modern intermediate cartridge for combat rifles. Standard kinetic ammunition is common and useful in most situations.
   components:
   - type: CartridgeAmmo
     proto: BulletRifle
@@ -29,47 +29,47 @@
 - type: entity
   parent: BaseCartridgeRifle
   id: CartridgeRiflePractice
-  name: cartridge (.20 rifle practice)
-  description: A modern intermediate cartridge for combat rifles. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  name: 弹药（.20步枪训练弹） | cartridge (.20 rifle practice)
+  description: 一种用于战斗步枪的现代中间型弹药。训练弹发射 chalk 弹丸，只会造成轻微刺痛，除此之外不会造成持久伤害。 | A modern intermediate cartridge for combat rifles. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
   components:
   - type: CartridgeAmmo
     proto: BulletRiflePractice
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#dbdbdb"
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+    - state: tip
+      map: ["enum.AmmoVisualLayers.Tip"]
+      color: "#dbdbdb"
 
 - type: entity
   parent: BaseCartridgeRifle
   id: CartridgeRifleIncendiary
-  name: cartridge (.20 rifle incendiary)
-  description: A modern intermediate cartridge for combat rifles. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
+  name: .20步枪燃烧弹 | cartridge (.20 rifle incendiary)
+  description: 一种用于战斗步枪的现代中间型弹药。燃烧弹含有自燃化合物，可使目标着火燃烧。 | A modern intermediate cartridge for combat rifles. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
   components:
   - type: CartridgeAmmo
     proto: BulletRifleIncendiary
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#ff6e52"
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+    - state: tip
+      map: ["enum.AmmoVisualLayers.Tip"]
+      color: "#ff6e52"
 
 - type: entity
   parent: BaseCartridgeRifle
   id: CartridgeRifleUranium
-  name: cartridge (.20 rifle uranium)
-  description: A modern intermediate cartridge for combat rifles. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
+  name: 弹药（.20步枪铀弹） | cartridge (.20 rifle uranium)
+  description: 一种用于战斗步枪的现代中间型弹药。铀弹将弹头内的铅芯替换为裂变材料，从内部对目标造成辐射。 | A modern intermediate cartridge for combat rifles. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
   components:
   - type: CartridgeAmmo
     proto: BulletRifleUranium
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#65fe08"
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+    - state: tip
+      map: ["enum.AmmoVisualLayers.Tip"]
+      color: "#65fe08"

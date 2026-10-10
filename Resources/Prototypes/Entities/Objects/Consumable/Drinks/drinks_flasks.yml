@@ -19,8 +19,8 @@
 - type: entity
   parent: [DrinkBaseMaterialStrongMetal, SolutionSmall, DrinkBase]
   id: DrinkFlaskOld
-  name: old flask
-  description: A decrepit old flask, its lid seems to be missing.
+  name: 旧瓶子 | old flask
+  description: 一个破旧的旧瓶子，它的盖子似乎不见了。 | A decrepit old flask, its lid seems to be missing.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/flask_old.rsi
@@ -30,8 +30,8 @@
 - type: entity
   parent: FlaskBase
   id: DrinkShinyFlask
-  name: shiny flask
-  description: A shiny metal flask. It appears to have a Greek symbol inscribed on it.
+  name: 闪亮烧瓶 | shiny flask
+  description: 一个闪亮的金属烧瓶。上面似乎刻有一个希腊符号。 | A shiny metal flask. It appears to have a Greek symbol inscribed on it.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/shinyflask.rsi
@@ -40,8 +40,8 @@
   parent: FlaskBase
   id: DrinkMREFlask
   suffix: Full
-  name: MRE flask
-  description: An old military flask, filled with the finest contents for soldiers.
+  name: MRE军用水壶 | MRE flask
+  description: 一个旧军用水壶，装满了给士兵们最好的东西。 | An old military flask, filled with the finest contents for soldiers.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/mreflask.rsi
@@ -56,8 +56,8 @@
 - type: entity
   parent: FlaskBase
   id: DrinkDetFlask
-  name: inspector's flask
-  description: A metal flask with a leather band and golden badge belonging to the inspector.
+  name: 督察的烧瓶 | inspector's flask
+  description: 属于督察的金属烧瓶，带有皮革束带和金色徽章。 | A metal flask with a leather band and golden badge belonging to the inspector.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/detflask.rsi
@@ -65,8 +65,8 @@
 - type: entity
   parent: FlaskBase
   id: DrinkHosFlask
-  name: hos's flask
-  description: A metal flask, fit for a hard working HoS.
+  name: 主管的烧瓶 | hos's flask
+  description: 一个金属烧瓶，适合辛勤工作的HoS。 | A metal flask, fit for a hard working HoS.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/hosflask.rsi
@@ -74,8 +74,8 @@
 - type: entity
   parent: FlaskBase
   id: DrinkFlask
-  name: captain's flask
-  description: A metal flask belonging to the captain.
+  name: 船长的酒壶 | captain's flask
+  description: 属于船长的金属酒壶。 | A metal flask belonging to the captain.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/flask.rsi
@@ -83,17 +83,17 @@
 - type: entity
   parent: FlaskBase
   id: DrinkFlaskBar
-  name: flask
-  description: A reusable metal flask. Classier than drinking straight from a bottle.
+  name: 烧瓶 | flask
+  description: 一个可重复使用的金属烧瓶。比直接从瓶子里喝更有格调。 | A reusable metal flask. Classier than drinking straight from a bottle.
   components:
-    - type: Sprite
-      sprite: Objects/Consumable/Drinks/barflask.rsi
+  - type: Sprite
+    sprite: Objects/Consumable/Drinks/barflask.rsi
 
 - type: entity
   parent: FlaskBase
   id: DrinkLithiumFlask
-  name: lithium flask
-  description: A flask with a Lithium Atom symbol on it.
+  name: 锂烧瓶 | lithium flask
+  description: 一个上面带有锂原子符号的烧瓶。 | A flask with a Lithium Atom symbol on it.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/lithiumflask.rsi
@@ -101,8 +101,8 @@
 - type: entity
   parent: FlaskBase
   id: DrinkVacuumFlask
-  name: vacuum flask
-  description: Keeping your drinks at the perfect temperature since 1892.
+  name: 保温瓶 | vacuum flask
+  description: 自1892年以来，让您的饮品保持完美温度。 | Keeping your drinks at the perfect temperature since 1892.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/vacuumflask.rsi

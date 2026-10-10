@@ -1,14 +1,14 @@
 - type: entity
-  parent: [ BaseItem, BaseItemDestructible, BaseSecurityContraband ]
+  parent: [BaseItem, BaseItemDestructible, BaseSecurityContraband]
   id: EmptyDetonator
-  name: detonator cap
-  description: A detonator cap. Requires a trigger and wire.
+  name: 雷管 | detonator cap
+  description: 一个雷管。需要触发器和导线。 | A detonator cap. Requires a trigger and wire.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Bombs/detonator.rsi
     layers:
     - state: empty
-      map: [ "enum.ConstructionVisuals.Layer" ]
+      map: ["enum.ConstructionVisuals.Layer"]
   - type: Item
     size: Small
   - type: PayloadCase
@@ -19,14 +19,13 @@
     damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTypeTrigger
+    - trigger: !type:DamageTypeTrigger
         damageType: Structural # as close as we can get to only letting explosives trigger it.
         damage: 120
       behaviors:
       - !type:TriggerBehavior
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
     # the 50 damage destruction node is inherited from the parent
     # idea here is to prevent you from just beating it until it explodes.
   - type: Appearance
@@ -34,22 +33,22 @@
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          emptyDetonator: { state: empty }
-          detonatorWithTrigger: { state: addtrigger }
-          wiredDetonator: { state: complete }
+          emptyDetonator: {state: empty}
+          detonatorWithTrigger: {state: addtrigger}
+          wiredDetonator: {state: complete}
       enum.Trigger.TriggerVisuals.VisualState:
         enum.ConstructionVisuals.Layer:
-          Primed: { state: primed }
-          Unprimed: { state: complete }
+          Primed: {state: primed}
+          Unprimed: {state: complete}
   - type: StaticPrice
     price: 25
 
 - type: entity
   parent: EmptyDetonator
   id: WiredDetonator
-  name: detonator cap
-  description: A detonator cap.
-  categories: [ HideSpawnMenu ]
+  name: 雷管 | detonator cap
+  description: 一个雷管。 | A detonator cap.
+  categories: [HideSpawnMenu]
   components:
   - type: Explosive # this is the cord, but its a little smaller because I dont want these to be grenades. They need to not really break walls themselves, but do enough to set off the cable. ~125 structural.
     explosionType: DemolitionCharge

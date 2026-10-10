@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: StructureHealthMachineFlimsy
   id: BaseLandMine
@@ -19,12 +19,11 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.2,0.2,0.2"
         hard: false
         layer:
-          - LowImpassable
+        - LowImpassable
   - type: Sprite
     drawdepth: Items
     sprite: Objects/Misc/landmine.rsi
@@ -32,28 +31,27 @@
     - state: landmine
     - state: landmine-unshaded
       shader: unshaded
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
   - type: Damageable
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:TriggerBehavior
   - type: LandMine
     sound:
-        path: /Audio/Effects/beep_landmine.ogg
-        params:
-            maxDistance: 10
+      path: /Audio/Effects/beep_landmine.ogg
+      params:
+        maxDistance: 10
   - type: Armable
   - type: StepTrigger
     requiredTriggeredSpeed: 0
@@ -61,7 +59,7 @@
 
 - type: entity
   id: LandMineKickUnarmed
-  name: kick mine
+  name: 踢我的世界 | kick mine
   parent: BaseLandMine
   components:
   - type: GhostKickOnTrigger
@@ -79,8 +77,8 @@
   - type: Armable
 
 - type: entity
-  name: modular mine
-  description: This bad boy could be packing any number of dangers. Or a bike horn.
+  name: 模块化地雷 | modular mine
+  description: 这个坏小子可能藏着无数危险。也可能只是个自行车喇叭。 | This bad boy could be packing any number of dangers. Or a bike horn.
   parent: BaseLandMine
   id: LandMineModularUnarmed
   components:
@@ -100,7 +98,7 @@
   - type: Armable
 
 - type: entity
-  name: explosive mine
+  name: 爆炸地雷 | explosive mine
   parent: BaseLandMine
   id: LandMineExplosiveUnarmed
   components:

@@ -4,8 +4,8 @@
 - type: entity
   parent: BaseItem
   id: SnapPop
-  name: snap pop
-  description: Throw it at the floor and listen to it POP!
+  name: 噼啪爆响 | snap pop
+  description: 把它扔到地板上，听它噼啪爆响！ | Throw it at the floor and listen to it POP!
   components:
   - type: Sprite
     sprite: Objects/Fun/snap_pops.rsi
@@ -17,8 +17,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1
       behaviors:
       - !type:DoActsBehavior
@@ -44,8 +43,8 @@
 - type: entity
   parent: BaseStorageItem
   id: SnapPopBox
-  name: snap pop box
-  description: Contains snap pops for a few minutes of popping fun!
+  name: 啪响盒 | snap pop box
+  description: 包含啪响盒，可享受几分钟的啪啪乐趣！ | Contains snap pops for a few minutes of popping fun!
   components:
   - type: Item
     size: Normal
@@ -71,9 +70,9 @@
 - type: entity
   parent: [SolutionSmall, FoodProduceBase]
   id: PlasticBanana
-  name: banana
+  name: 香蕉 | banana
   suffix: Plastic
-  description: A plastic banana.
+  description: 一个塑料香蕉。 | A plastic banana.
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/banana.rsi
@@ -93,8 +92,8 @@
 - type: entity
   parent: [SolutionSmall, DrinkBase]
   id: CrazyGlue
-  name: crazy glue
-  description:  A bottle of crazy glue manufactured by Honk! Co.
+  name: 疯狂胶水 | crazy glue
+  description: 一瓶由Honk！公司生产的疯狂胶水。 | A bottle of crazy glue manufactured by Honk! Co.
   components:
   - type: Sprite
     sprite: Objects/Fun/glue.rsi
@@ -107,8 +106,8 @@
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "icon_open"}
-          False: {state: "icon"}
+          true: {state: "icon_open"}
+          false: {state: "icon"}
   - type: Glue
     consumptionUnit: 10
   - type: Item
@@ -127,8 +126,8 @@
 - type: entity
   parent: [SolutionSmall, DrinkBase]
   id: CrazyLube
-  name: crazy lube
-  description: A bottle of super slipery crazy lube manufactured by Honk! Co.
+  name: 疯狂润滑液 | crazy lube
+  description: 一瓶由Honk！公司生产的超级润滑疯狂润滑液。 | A bottle of super slipery crazy lube manufactured by Honk! Co.
   components:
   - type: Openable
     sound:
@@ -148,18 +147,18 @@
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "icon_open"}
-          False: {state: "icon"}
+          true: {state: "icon_open"}
+          false: {state: "icon"}
   - type: Lube
   - type: TrashOnSolutionEmpty
     solution: drink
 
 - type: entity
-  parent: [ BaseItem, MobCombat ]
+  parent: [BaseItem, MobCombat]
   id: MrChips
-  name: mr chips
+  name: 薯片先生 | mr chips
   suffix: Dummy
-  description: It's a dummy, dummy!
+  description: 这是个假人，假人！ | It's a dummy, dummy!
   components:
   - type: Sprite
     sprite: Objects/Fun/mrchips.rsi
@@ -192,16 +191,16 @@
 - type: entity
   parent: MrChips
   id: MrDips
-  name: mr dips
+  name: 迪普斯先生 | mr dips
   components:
   - type: Sprite
     sprite: Objects/Fun/mrdips.rsi
 
 - type: entity
-  parent: [ SolutionFood, SolutionSmall, BaseItem ]
+  parent: [SolutionFood, SolutionSmall, BaseItem]
   id: Error
-  name: error
-  description: Hmmmm. Something went wrong.
+  name: 错误 | error
+  description: 嗯……出问题了。 | Hmmmm. Something went wrong.
   components:
   - type: Sprite
     sprite: error.rsi
@@ -227,15 +226,13 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.3,0.4,0.3"
         hard: false
         layer:
         - SlipLayer
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.3,0.4,0.3"
         density: 30
         mask:
@@ -244,9 +241,9 @@
 - type: entity
   parent: BaseItem
   id: SpectralLocatorUnpowered
-  name: spectral locator
+  name: 光谱定位器 | spectral locator
   suffix: Always Powered
-  description: Appears to be a modified anomaly locator. Seems very old.
+  description: 似乎是一个经过改装的光谱定位器。看起来很旧。 | Appears to be a modified anomaly locator. Seems very old.
   components:
   - type: Sprite
     sprite: Objects/Fun/spectrallocator.rsi
@@ -261,8 +258,8 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: ItemToggleExaminableStatus
   - type: ItemToggle
   - type: ProximityBeeper
@@ -281,7 +278,7 @@
         volume: -8
 
 - type: entity
-  parent: [ SpectralLocatorUnpowered, PowerCellSlotSmallItem ]
+  parent: [SpectralLocatorUnpowered, PowerCellSlotSmallItem]
   id: SpectralLocator
   suffix: ""
   components:

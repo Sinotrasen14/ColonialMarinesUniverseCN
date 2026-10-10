@@ -51,8 +51,8 @@
 - type: entity
   parent: WeaponWaterGunBase
   id: WeaponWaterPistol
-  name: water pistol
-  description: The dinkiest of water-based weaponry. You swear the trigger doesn't do anything.
+  name: 水枪 | water pistol
+  description: 最迷你的水基武器。你发誓那扳机根本没用。 | The dinkiest of water-based weaponry. You swear the trigger doesn't do anything.
   components:
   - type: Item
     shape:
@@ -64,17 +64,17 @@
     layers:
     - state: detail
     - state: icon
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: RandomSprite
     available:
-      - enum.DamageStateVisualLayers.Base:
-          icon: Rainbow
+    - enum.DamageStateVisualLayers.Base:
+        icon: Rainbow
 
 - type: entity
   parent: [SolutionNormal, WeaponWaterGunBase] # 24 shots
   id: WeaponWaterBlaster
-  name: water blaster
-  description: With this bad boy, you'll be the coolest kid at the summer barbecue.
+  name: 水枪 | water blaster
+  description: 有了这个厉害玩意儿，你就是夏日烧烤派对上最酷的小孩。 | With this bad boy, you'll be the coolest kid at the summer barbecue.
   components:
   - type: Gun
     cameraRecoilScalar: 0 #no recoil
@@ -91,7 +91,7 @@
     - state: detail2
       map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: icon
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: Item
     sprite: Objects/Weapons/Guns/Pistols/soaker.rsi
     size: Normal
@@ -100,16 +100,16 @@
   - type: RandomSprite
     getAllGroups: true
     available:
-      - enum.DamageStateVisualLayers.Base:
-          icon: Rainbow
-      - enum.PowerDeviceVisualLayers.Powered:
-          detail2: Sixteen
+    - enum.DamageStateVisualLayers.Base:
+        icon: Rainbow
+    - enum.PowerDeviceVisualLayers.Powered:
+        detail2: Sixteen
 
 - type: entity
   parent: [SolutionHuge, WeaponWaterGunBase] # 96 shots
   id: WeaponWaterBlasterSuper
-  name: super water blaster
-  description: No! No! Not in the eyes!
+  name: 超级水枪 | super water blaster
+  description: 不！不！别对着眼睛！ | No! No! Not in the eyes!
   components:
   - type: Gun
     cameraRecoilScalar: 0 #no recoil
@@ -126,7 +126,7 @@
     - state: detail2
       map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: icon
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: Item
     sprite: Objects/Weapons/Guns/Pistols/soaker.rsi
     size: Large
@@ -135,7 +135,7 @@
   - type: RandomSprite
     getAllGroups: true
     available:
-      - enum.DamageStateVisualLayers.Base:
-          icon: Rainbow
-      - enum.PowerDeviceVisualLayers.Powered:
-          detail2: Sixteen
+    - enum.DamageStateVisualLayers.Base:
+        icon: Rainbow
+    - enum.PowerDeviceVisualLayers.Powered:
+        detail2: Sixteen

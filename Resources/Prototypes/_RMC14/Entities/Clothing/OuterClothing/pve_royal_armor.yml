@@ -1,10 +1,11 @@
-# standard
 - type: entity
-  parent: [RMCBaseArmorPVE, RMCBaseUniformAccessoryItemArmorPVE]
+  parent:
+  - RMCBaseArmorPVE
+  - RMCBaseUniformAccessoryItemArmorPVE
   id: RMCArmorRoyalPVE
   suffix: PVE, RCM
-  name: L3A Kestrel modular vest
-  description: The ubiquitous Assault variant of the L3 Kestrel modular vest, standard issue body armor for Royal Crown Marines.
+  name: L3A 红隼模块化背心
+  description: L3红隼模块化背心的常见突击型，是皇家王冠海军陆战队的标准配发护甲。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PVE/Royal/kestrelmedium.rsi
@@ -16,8 +17,8 @@
   - type: RMCArmorSpeedTier
     speedTier: light
   - type: ClothingSpeedModifier
-    walkModifier: .725
-    sprintModifier: .725
+    walkModifier: 0.725
+    sprintModifier: 0.725
   - type: ExplosionResistance
     damageCoefficient: 0
     worn: false
@@ -33,23 +34,21 @@
     whitelist:
       tags:
       - ArmorWebbing
-
 - type: entity
   parent: RMCArmorRoyalPVE
   id: RMCArmorRoyalLightPVE
   suffix: PVE, RCM
-  name: L3S Kestrel modular vest
-  description: The light Support variant of the L3 Kestrel modular vest, standard issue body armor for officers and support personnel of the Royal Crown Marines.
+  name: L3S 红隼模块化背心
+  description: L3 红隼模块化背心的轻型支援型号，皇家王冠海军陆战队军官与支援人员的标准配发护
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PVE/Royal/kestrellight.rsi
-
 - type: entity
   parent: RMCArmorRoyalPVE
   id: RMCArmorRoyalPointmanPVE
   suffix: PVE, RCM
-  name: L3T Kestrel modular vest
-  description: The robust Technician variant of the L3 Kestrel modular vest, standard issue body armor for sappers and breachers of the Royal Crown Marines.
+  name: L3T 红隼模块化背心
+  description: L3 红隼模块化背心的坚固技师型，是皇家皇冠海军陆战队工兵与破门手的标准配发护甲。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PVE/Royal/kestrelheavy.rsi
@@ -63,26 +62,23 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.666
     sprintModifier: 0.666
-
 - type: entity
   parent: RMCArmorRoyalPVE
   id: RMCArmorRoyalHarnessPVE
   suffix: PVE, RCM
-  name: L3H Kestrel modular harness
-  description: The aptly-named Harness variant of the L3 Kestrel modular vest, standard issue body armor for gunners of the Royal Crown Marines.
+  name: L3H 红隼模块化胸挂
+  description: The aptly-named Harness variant of the L3 Kestrel modular vest, standard
+    issue body armor for gunners of the Royal Crown Marines.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PVE/Royal/kestrelharness.rsi
   - type: ClothingBlockBackpack
   - type: SmartGunArmor
-
-# Armour Cases
-
 - type: entity
   parent: RMCPVEArmorCaseBase
   id: RMCPVEArmorCaseRoyal
-  name: L3A Kestrel modular armor kit
-  description: A case containing the L3A Kestrel modular vest, L5A2 helmet, and relevant accoutrements.
+  name: L3A红隼模块化装甲套件
+  description: 一个装有 L3A 红隼模块化背心、L5A2 头盔及相关配件的箱子。
   components:
   - type: Icon
     sprite: _RMC14/Objects/Storage/PVE_Cases/Armor/royal.rsi
@@ -92,16 +88,20 @@
     layers:
     - state: base
     - state: armor
-      map: [ armor ]
+      map:
+      - armor
       visible: false
     - state: lid_closed_a
-      map: [ lid ]
+      map:
+      - lid
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed_a }
+          true:
+            state: lid_open
+          false:
+            state: lid_closed_a
   - type: StorageFill
     contents:
     - id: RMCHeadRoyalHelmet
@@ -112,28 +112,31 @@
     - id: RMCPVEArmorGroinPlateKestrel
     - id: RMCPVEArmorShinGuardKestrel
     - id: RMCPVEArmorKneeGuardKestrel
-
 - type: entity
   parent: RMCPVEArmorCaseRoyal
   id: RMCPVEArmorCaseRoyalLight
-  name: L3S Kestrel modular armor kit
-  description: A case containing the L3S Kestrel modular vest, L5A3 helmet, and relevant accoutrements.
+  name: L3S Kestrel模块化护甲套装
+  description: 一个装有L3S Kestrel模块化背心、L5A3头盔及相关装具的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/Armor/royal.rsi
     layers:
     - state: base
     - state: armor
-      map: [ armor ]
+      map:
+      - armor
       visible: false
     - state: lid_closed_s
-      map: [ lid ]
+      map:
+      - lid
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed_s }
+          true:
+            state: lid_open
+          false:
+            state: lid_closed_s
   - type: StorageFill
     contents:
     - id: RMCHeadRoyalHelmetBallistic
@@ -144,28 +147,31 @@
     - id: RMCPVEArmorGroinPlateKestrel
     - id: RMCPVEArmorShinGuardKestrel
     - id: RMCPVEArmorKneeGuardKestrel
-
 - type: entity
   parent: RMCPVEArmorCaseRoyal
   id: RMCPVEArmorCaseRoyalPointman
-  name: L3T Kestrel modular armor kit
-  description: A case containing the L3T Kestrel modular vest, L5A3 helmet, and relevant accoutrements.
+  name: L3T 红隼模块化护甲套件
+  description: 一个装有 L3T 红隼模块化护甲套件、L5A3 头盔及相关配件的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/Armor/royal.rsi
     layers:
     - state: base
     - state: armor
-      map: [ armor ]
+      map:
+      - armor
       visible: false
     - state: lid_closed_t
-      map: [ lid ]
+      map:
+      - lid
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed_t }
+          true:
+            state: lid_open
+          false:
+            state: lid_closed_t
   - type: StorageFill
     contents:
     - id: RMCHeadRoyalHelmetBallistic
@@ -176,28 +182,31 @@
     - id: RMCPVEArmorGroinPlateKestrel
     - id: RMCPVEArmorShinGuardKestrel
     - id: RMCPVEArmorKneeGuardKestrel
-
 - type: entity
   parent: RMCPVEArmorCaseRoyal
   id: RMCPVEArmorCaseRoyalHarness
-  name: L3H Kestrel modular harness kit
-  description: A case containing the L3H Kestrel modular harness, L5A3 helmet, and relevant accoutrements.
+  name: L3H“红隼”模块化胸挂套装
+  description: 一个装有L3H“红隼”模块化胸挂套装、L5A3头盔及相关配件的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/Armor/royal.rsi
     layers:
     - state: base
     - state: armor
-      map: [ armor ]
+      map:
+      - armor
       visible: false
     - state: lid_closed_h
-      map: [ lid ]
+      map:
+      - lid
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed_h }
+          true:
+            state: lid_open
+          false:
+            state: lid_closed_h
   - type: StorageFill
     contents:
     - id: RMCHeadRoyalHelmetBallistic

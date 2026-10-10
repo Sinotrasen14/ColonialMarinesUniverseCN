@@ -76,10 +76,10 @@
     temperature: 700
 
 - type: entity
-  name: energy sword
+  name: 能量剑 | energy sword
   parent: [BaseMeleeWeaponEnergy, BaseSyndicateContraband]
   id: EnergySword
-  description: A very loud & dangerous sword with a beam made of pure, concentrated plasma. Cuts through unarmored targets like butter.
+  description: 一把非常响亮且危险的剑，其光束由纯净浓缩等离子制成。像切黄油一样切开无装甲目标。 | A very loud & dangerous sword with a beam made of pure, concentrated plasma. Cuts through unarmored targets like butter.
   components:
   - type: ItemToggleExaminableStatus
   - type: Sprite
@@ -90,17 +90,17 @@
       color: "#FFFFFF"
       visible: false
       shader: unshaded
-      map: [ "blade" ]
+      map: ["blade"]
   - type: Item
     sprite: Objects/Weapons/Melee/e_sword-inhands.rsi
   - type: StaticPrice
     price: 2500
 
 - type: entity
-  name: energy dagger
+  name: 能量匕首 | energy dagger
   parent: [BaseMeleeWeaponEnergy, BaseSyndicateContraband]
   id: EnergyDaggerLoud
-  description: A not as loud and dangerous dagger with a beam made of pure, concentrated plasma. This one is completely undisguised.
+  description: 一把不那么响亮和危险的匕首，其光束由纯净浓缩的等离子体制成。这一把完全没有伪装。 | A not as loud and dangerous dagger with a beam made of pure, concentrated plasma. This one is completely undisguised.
   components:
   - type: ItemToggleExaminableStatus
   - type: ItemToggle
@@ -119,9 +119,9 @@
         volume: -3
         variation: 0.250
     activatedDamage:
-        types:
-            Slash: 10
-            Heat: 10
+      types:
+        Slash: 10
+        Heat: 10
     deactivatedSecret: true
   - type: ItemToggleActiveSound
     activeSound:
@@ -140,12 +140,12 @@
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_dagger_loud.rsi
     layers:
-      - state: e_sword
-      - state: e_sword_blade
-        color: "#FFFFFF"
-        visible: false
-        shader: unshaded
-        map: [ "blade" ]
+    - state: e_sword
+    - state: e_sword_blade
+      color: "#FFFFFF"
+      visible: false
+      shader: unshaded
+      map: ["blade"]
   - type: MeleeWeapon
     wideAnimationRotation: 145
     attackRate: 1
@@ -164,11 +164,11 @@
     netsync: false
 
 - type: entity
-  name: pen
+  name: 笔 | pen
   parent: [BaseMeleeWeaponEnergy, SelectableLock]
   id: EnergyDagger
   suffix: E-Dagger
-  description: 'A dark ink pen.'
+  description: '一支深色墨水的笔。 | A dark ink pen.'
   components:
   - type: ItemToggle
     soundActivate:
@@ -209,12 +209,12 @@
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_dagger.rsi
     layers:
-      - state: e_sword
-      - state: e_sword_blade
-        color: "#FFFFFF"
-        visible: false
-        shader: unshaded
-        map: [ "blade" ]
+    - state: e_sword
+    - state: e_sword_blade
+      color: "#FFFFFF"
+      visible: false
+      shader: unshaded
+      map: ["blade"]
   - type: Item
     size: Tiny
     sprite: Objects/Weapons/Melee/e_dagger.rsi
@@ -240,7 +240,7 @@
   - type: UseDelay
     delay: 1.5
   - type: ItemToggleRequiresLock #  TODO: FIX THIS VERB IS COOKED
-    lockedPopup: null
+    lockedPopup:
   - type: Tag
     tags:
     - Write
@@ -248,9 +248,9 @@
 - type: entity
   parent: [BaseItem, BaseSyndicateContraband]
   id: EnergyDaggerBox
-  name: e-dagger box
+  name: 电子匕首盒 | e-dagger box
   suffix: E-Dagger
-  description: A small box containing an e-dagger. Packaging disintegrates when opened, leaving no evidence behind.
+  description: 一个装有电子匕首的小盒子。包装在打开时会分解，不留任何痕迹。 | A small box containing an e-dagger. Packaging disintegrates when opened, leaving no evidence behind.
   components:
   - type: Item
     size: Tiny
@@ -264,35 +264,35 @@
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
-  name: energy cutlass
+  name: 能量弯刀 | energy cutlass
   parent: [BaseMeleeWeaponEnergy, BaseMajorContraband]
   id: EnergyCutlass
-  description: An exotic energy weapon.
+  description: 一把异域能量武器。 | An exotic energy weapon.
   components:
   - type: ItemToggleExaminableStatus
   - type: ItemToggleMeleeWeapon
     activatedDamage:
-        types:
-            Slash: 10
-            Heat: 12
+      types:
+        Slash: 10
+        Heat: 12
     deactivatedSecret: true
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_cutlass.rsi
     layers:
-      - state: e_cutlass
-      - state: e_cutlass_blade
-        color: "#e95151"
-        visible: false
-        shader: unshaded
-        map: [ "blade" ]
+    - state: e_cutlass
+    - state: e_cutlass_blade
+      color: "#e95151"
+      visible: false
+      shader: unshaded
+      map: ["blade"]
   - type: Item
     sprite: Objects/Weapons/Melee/e_cutlass.rsi
 
 - type: entity
-  name: double-bladed energy sword
+  name: 双刃能量剑 | double-bladed energy sword
   parent: [BaseMeleeWeaponEnergy, BaseSyndicateContraband]
   id: EnergySwordDouble
-  description: Syndicate Command Interns thought that having one blade on the energy sword was not enough. This can be stored in pockets.
+  description: 辛迪加指挥实习生认为能量剑上只有一片刀刃还不够。这个可以放在口袋里。 | Syndicate Command Interns thought that having one blade on the energy sword was not enough. This can be stored in pockets.
   components:
   - type: ItemToggleExaminableStatus
   - type: ItemToggle
@@ -313,9 +313,9 @@
         volume: 3
         variation: 0.250
     activatedDamage:
-        types:
-            Slash: 12
-            Heat: 12
+      types:
+        Slash: 12
+        Heat: 12
   - type: ItemToggleActiveSound
     activeSound:
       path: /Audio/Weapons/ebladehum.ogg
@@ -331,7 +331,7 @@
       qualities:
       - Slicing
   - type: Wieldable
-    wieldSound: null # esword light sound instead
+    wieldSound:      # esword light sound instead
   - type: MeleeWeapon
     wideAnimationRotation: -135
     attackRate: 1.5
@@ -342,12 +342,12 @@
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword_double.rsi
     layers:
-      - state: e_sword_double
-      - state: e_sword_double_blade
-        color: "#FFFFFF"
-        visible: false
-        shader: unshaded
-        map: [ "blade" ]
+    - state: e_sword_double
+    - state: e_sword_double_blade
+      color: "#FFFFFF"
+      visible: false
+      shader: unshaded
+      map: ["blade"]
   - type: Item
     size: Small
     sprite: Objects/Weapons/Melee/e_sword_double-inhands.rsi
@@ -359,8 +359,8 @@
 - type: entity
   parent: EnergySwordDouble
   id: HyperEutacticBlade
-  name: hypereutactic-blade
-  description: A supermassive weapon envisioned to cleave the very fabric of space and time itself in twain, the hypereutactic blade dynamically flash-forges a hypereutactic crystaline nanostructure capable of passing through most known forms of matter like a hot knife through butter.
+  name: 超共晶之刃 | hypereutactic-blade
+  description: 一种被设想为能将时空结构本身一分为二的超大质量武器，超共晶之刃会动态闪铸出一种超共晶晶体纳米结构，能够像热刀切黄油一样穿过大多数已知形式的物质。 | A supermassive weapon envisioned to cleave the very fabric of space and time itself in twain, the hypereutactic blade dynamically flash-forges a hypereutactic crystaline nanostructure capable of passing through most known forms of matter like a hot knife through butter.
   components:
   - type: MeleeWeapon
     wideAnimationRotation: 180
@@ -396,12 +396,12 @@
       color: "#FFFFFF"
       visible: false
       shader: unshaded
-      map: [ "blade" ]
+      map: ["blade"]
     - state: hypereutactic_gem
       color: "#FFFFFF"
       visible: false
       shader: unshaded
-      map: [ "gem" ]
+      map: ["gem"]
   - type: Item
     size: Small
     sprite: Objects/Weapons/Melee/hypereutactic_blade_inhands.rsi
@@ -415,19 +415,19 @@
   parent: EnergySword
   id: CyborgEnergySword
   suffix: For Borgs
-  description: A very loud & dangerous sword with a beam made of pure, concentrated plasma. Specially designed for syndicate cyborgs.
+  description: 一把极其响亮且危险的剑，其剑刃由纯粹浓缩的等离子体构成。专为辛迪加赛博格设计。 | A very loud & dangerous sword with a beam made of pure, concentrated plasma. Specially designed for syndicate cyborgs.
 
 - type: entity
   parent: EnergySwordDouble
   id: CyborgEnergySwordDouble # why is this invalid if ID is BorgEnergySwordDouble
   suffix: One-Handed, For Borgs
-  description: Syndicate Command Interns thought that having one blade on the energy sword was not enough. Specially designed for syndicate cyborgs.
+  description: 辛迪加指挥实习生认为能量剑上只有一片刀刃还不够。专为辛迪加赛博格设计。 | Syndicate Command Interns thought that having one blade on the energy sword was not enough. Specially designed for syndicate cyborgs.
   components: # could add energy-draining like the L6C
   - type: Wieldable
     freeHandsRequired: 0 # because borg has no off-hand to wield with.  Without this, it will be unable to activate the esword
 
 - type: entity
-  parent: [ EnergyDaggerLoud, BaseXenoborgContraband ]
+  parent: [EnergyDaggerLoud, BaseXenoborgContraband]
   id: EnergyDaggerLoudBlue
   suffix: blue
   components:

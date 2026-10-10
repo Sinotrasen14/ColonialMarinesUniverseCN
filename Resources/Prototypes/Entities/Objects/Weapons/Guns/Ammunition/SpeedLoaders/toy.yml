@@ -2,16 +2,16 @@
   abstract: true
   parent: BaseItem
   id: BaseSpeedLoaderCap
-  name: "cap gun loader"
+  name: "玩具枪装弹器 | cap gun loader"
   components:
   - type: Tag
     tags:
-      - SpeedLoaderCap
+    - SpeedLoaderCap
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - CartridgeCap
+      - CartridgeCap
     capacity: 6
   - type: Sprite
     layers:
@@ -32,8 +32,8 @@
 - type: entity
   parent: BaseSpeedLoaderCap
   id: SpeedLoaderCap
-  name: "cap gun loader"
-  description: Designed to quickly load up to six cartridges into an empty cap gun.
+  name: "玩具枪快速装弹器 | cap gun loader"
+  description: 用于将最多六发弹药快速装入空玩具枪的装弹器。 | Designed to quickly load up to six cartridges into an empty cap gun.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCap

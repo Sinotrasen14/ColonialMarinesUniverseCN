@@ -3,8 +3,8 @@
 - type: entity
   parent: [FoodBreadSliceBase, BaseSlicingRefinable]
   id: FoodCottonBun
-  name: cotton bun
-  description: A cotton hamburger bun. Soft, round and convenient to hold.
+  name: 棉质汉堡胚 | cotton bun
+  description: 一个棉质汉堡胚。柔软、圆润，方便拿握。 | A cotton hamburger bun. Soft, round and convenient to hold.
   components:
   - type: Edible
     # requiresSpecialDigestion remains false for RMC; see 8c44d4fdfe.
@@ -36,8 +36,8 @@
 - type: entity
   parent: FoodBreadSliceBase
   id: FoodCottonBunBottom
-  name: cotton bottom bun
-  description: It's time for moths to experience the burger tower.
+  name: 棉质底堡 | cotton bottom bun
+  description: 是时候让飞蛾们体验汉堡塔了。 | It's time for moths to experience the burger tower.
   components:
   - type: Item
     size: Normal #patch until there is an adequate resizing system in place
@@ -76,8 +76,8 @@
 - type: entity
   parent: FoodBreadSliceBase
   id: FoodCottonBunTop
-  name: cotton top bun
-  description: The perfect finish for your fibrous burger tower.
+  name: 棉顶面包 | cotton top bun
+  description: 为你的纤维汉堡塔画上完美句号。 | The perfect finish for your fibrous burger tower.
   components:
   - type: Edible
   - type: Sprite

@@ -1,12 +1,12 @@
 - type: entity
-  description: "If you want to get cancer, might as well do it in style."
+  description: "如果你想得癌症，不妨也得个有格调的。 | If you want to get cancer, might as well do it in style."
   id: BaseSmokable
   parent: [SolutionSmokable, SolutionTiny, BaseItem]
   abstract: true
   components:
   - type: Reactive
     groups:
-      Extinguish: [ Touch ]
+      Extinguish: [Touch]
   - type: ExtinguishableSetCollisionWake
   - type: Smokable
   - type: Sprite
@@ -55,7 +55,7 @@
       name: smoking-pipe-slot-component-slot-name-bowl
       whitelist:
         tags:
-          - Smokable
+        - Smokable
       insertSound:
         path: /Audio/Weapons/Guns/Empty/empty.ogg
       ejectSound:

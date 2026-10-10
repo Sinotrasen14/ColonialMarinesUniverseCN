@@ -1,50 +1,50 @@
 - type: entity
   id: BaseDefibrillator
   parent: BaseItem
-  name: defibrillator
-  description: CLEAR! Zzzzat!
+  name: 除颤器 | defibrillator
+  description: 清除！嗞嗞嗞！ | CLEAR! Zzzzat!
   abstract: true
   components:
-    - type: Sprite
-      sprite: Objects/Specific/Medical/defib.rsi
-      layers:
-        - state: icon
-        - state: screen
-          map: [ "enum.ToggleableVisuals.Layer" ]
-          visible: false
-          shader: unshaded
-    - type: Appearance
-    - type: GenericVisualizer
-      visuals:
-        enum.ToggleableVisuals.Enabled:
-          enum.ToggleableVisuals.Layer:
-            True: { visible: true }
-            False: { visible: false }
-    - type: Item
-      size: Large
-    - type: Speech
-      speechVerb: Robotic
-    - type: ItemToggleExaminableStatus
-    - type: ItemToggle
-      soundActivate:
-        path: /Audio/Items/Defib/defib_safety_on.ogg
-      soundDeactivate:
-        path: /Audio/Items/Defib/defib_safety_off.ogg
-    - type: Defibrillator
-      zapHeal:
-        types:
-          Asphyxiation: -40
-    - type: DoAfter
-    - type: UseDelay
-    - type: StaticPrice
-      price: 30
-    - type: GuideHelp
-      guides:
-      - MedicalDoctor
+  - type: Sprite
+    sprite: Objects/Specific/Medical/defib.rsi
+    layers:
+    - state: icon
+    - state: screen
+      map: ["enum.ToggleableVisuals.Layer"]
+      visible: false
+      shader: unshaded
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ToggleableVisuals.Enabled:
+        enum.ToggleableVisuals.Layer:
+          true: {visible: true}
+          false: {visible: false}
+  - type: Item
+    size: Large
+  - type: Speech
+    speechVerb: Robotic
+  - type: ItemToggleExaminableStatus
+  - type: ItemToggle
+    soundActivate:
+      path: /Audio/Items/Defib/defib_safety_on.ogg
+    soundDeactivate:
+      path: /Audio/Items/Defib/defib_safety_off.ogg
+  - type: Defibrillator
+    zapHeal:
+      types:
+        Asphyxiation: -40
+  - type: DoAfter
+  - type: UseDelay
+  - type: StaticPrice
+    price: 30
+  - type: GuideHelp
+    guides:
+    - MedicalDoctor
 
 - type: entity
   id: Defibrillator
-  parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
+  parent: [BaseDefibrillator, PowerCellSlotMediumItem]
   components:
   - type: MultiHandedItem
   - type: ToggleCellDraw
@@ -68,21 +68,21 @@
 
 - type: entity
   id: DefibrillatorCompact # This should be a research item at some point
-  parent: [ BaseDefibrillator, PowerCellSlotMediumItem ]
-  name: compact defibrillator
-  description: Now in fun size!
+  parent: [BaseDefibrillator, PowerCellSlotMediumItem]
+  name: 紧凑型除颤器 | compact defibrillator
+  description: 现在有迷你版啦！ | Now in fun size!
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/defibsmall.rsi
     layers:
-      - state: icon
-      - state: screen
-        map: [ "enum.ToggleableVisuals.Layer" ]
-        visible: false
-        shader: unshaded
-      - state: ready
-        map: ["enum.PowerDeviceVisualLayers.Powered"]
-        shader: unshaded
+    - state: icon
+    - state: screen
+      map: ["enum.ToggleableVisuals.Layer"]
+      visible: false
+      shader: unshaded
+    - state: ready
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      shader: unshaded
   - type: Item
     size: Normal
   - type: ToggleCellDraw
@@ -98,21 +98,21 @@
 
 - type: entity
   id: DefibrillatorSyndicate
-  parent: [ DefibrillatorCompact, BaseSyndicateContraband ]
-  name: interdyne defibrillator
-  description: Doubles as a self-defense weapon against war-crime inclined tiders.
+  parent: [DefibrillatorCompact, BaseSyndicateContraband]
+  name: 因特戴恩除颤器 | interdyne defibrillator
+  description: 兼作对抗倾向战争罪行的潮汐人的自卫武器。 | Doubles as a self-defense weapon against war-crime inclined tiders.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/defibsyndi.rsi
     layers:
-      - state: icon
-      - state: screen
-        map: [ "enum.ToggleableVisuals.Layer" ]
-        visible: false
-        shader: unshaded
-      - state: ready
-        map: ["enum.PowerDeviceVisualLayers.Powered"]
-        shader: unshaded
+    - state: icon
+    - state: screen
+      map: ["enum.ToggleableVisuals.Layer"]
+      visible: false
+      shader: unshaded
+    - state: ready
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      shader: unshaded
   - type: MeleeWeapon
     damage:
       types:

@@ -1,4 +1,4 @@
-﻿# ScatteringGrenade is intended for grenades that spawn entities, especially those with timers
+# ScatteringGrenade is intended for grenades that spawn entities, especially those with timers
 - type: entity
   abstract: true
   parent: GrenadeBase
@@ -12,8 +12,8 @@
 - type: entity
   parent: [FragileGrenadeBase, ScatteringGrenadeBase, TimerGrenadeBase, BaseSecurityContraband]
   id: ClusterBang
-  name: clusterbang
-  description: Can be used only with flashbangs. Explodes several times.
+  name: 集束闪光弹 | clusterbang
+  description: 只能与闪光弹配合使用。会爆炸数次。 | Can be used only with flashbangs. Explodes several times.
   components:
   - type: ScatteringGrenade
     whitelist:
@@ -30,8 +30,8 @@
 - type: entity
   parent: ClusterBang
   id: ClusterBangFull
-  name: clusterbang
-  description: Launches three flashbangs after the timer runs out.
+  name: 集束闪光弹 | clusterbang
+  description: 计时器结束后发射三枚闪光弹。 | Launches three flashbangs after the timer runs out.
   suffix: Full
   components:
   - type: Sprite
@@ -53,8 +53,8 @@
     visuals:
       enum.Trigger.TriggerVisuals.VisualState:
         enum.ConstructionVisuals.Layer:
-          Primed: { state: primed }
-          Unprimed: { state: icon }
+          Primed: {state: primed}
+          Unprimed: {state: icon}
   - type: EmitSoundOnTrigger
     keysIn:
     - timer
@@ -65,8 +65,8 @@
 - type: entity
   parent: [VolatileGrenadeBase, ScatteringGrenadeBase, TimerGrenadeBase, BaseSyndicateContraband]
   id: ClusterGrenade
-  name: clustergrenade
-  description: Why use one grenade when you can use three at once!
+  name: 集束手雷 | clustergrenade
+  description: 为什么只用一颗手雷，当你可以一次用三颗呢！ | Why use one grenade when you can use three at once!
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/clusterbomb.rsi
@@ -95,8 +95,8 @@
 - type: entity
   parent: [ScatteringGrenadeBase, ImpactGrenadeBase, BaseSyndicateContraband]
   id: ClusterBananaPeel
-  name: cluster banana peel
-  description: Splits into 6 explosive banana peels after throwing, guaranteed fun!
+  name: 爆炸香蕉皮簇 | cluster banana peel
+  description: 投掷后分裂成6个爆炸香蕉皮，保证好玩！ | Splits into 6 explosive banana peels after throwing, guaranteed fun!
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/banana.rsi
@@ -122,8 +122,8 @@
 - type: entity
   parent: [SoapSyndie, ScatteringGrenadeBase, ImpactGrenadeBase, BaseSyndicateContraband]
   id: SlipocalypseClusterSoap
-  name: slipocalypse clustersoap
-  description: Spreads small pieces of syndicate soap over an area upon landing on the floor.
+  name: 滑倒末日凝皂 | slipocalypse clustersoap
+  description: 落地时在地面散布小块辛迪加凝皂。 | Spreads small pieces of syndicate soap over an area upon landing on the floor.
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/soap.rsi
@@ -154,8 +154,8 @@
 - type: entity
   parent: [FragileGrenadeBase, ScatteringGrenadeBase, TimerGrenadeBase]
   id: GrenadeFoamDart
-  name: foam dart grenade
-  description: Releases a bothersome spray of foam darts that cause severe welching.
+  name: 泡沫飞镖手雷 | foam dart grenade
+  description: 释放出一阵烦人的泡沫飞镖喷雾，造成严重的赖账效果。 | Releases a bothersome spray of foam darts that cause severe welching.
   components:
   - type: Sprite
     sprite: Objects/Fun/Foam/foam_grenade.rsi

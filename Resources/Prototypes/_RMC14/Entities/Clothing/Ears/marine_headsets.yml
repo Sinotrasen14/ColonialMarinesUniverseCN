@@ -10,13 +10,11 @@
     - SeniorEnlistedAdvisor
     - PrimaryLandingZone
   - type: HeadsetAutoSquad
-
-# ├──[ Alpha ]───────────────────────────────────────────────────────┤
 - type: entity
   parent: RMCHeadsetMarine
   id: CMHeadsetAlpha
-  name: marine alpha radio headset
-  description: This is used by Alpha squad members.
+  name: 海军陆战队阿尔法无线电耳机
+  description: 这是由阿尔法小队成员使用的。
   components:
   - type: Sprite
     state: alpha_headset
@@ -27,12 +25,11 @@
     containers:
       key_slots:
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetAlpha
   id: CMHeadsetAlphaLeader
-  name: marine alpha leader radio headset
-  description: This is used by the marine Alpha squad leader.
+  name: 海军陆战队阿尔法队长无线电耳机
+  description: 这是海军陆战队阿尔法小队队长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -48,12 +45,11 @@
     - SquadLeader
     - FireteamLeader
     - PrimaryLandingZone
-
 - type: entity
   parent: CMHeadsetAlpha
   id: CMHeadsetAlphaTeamLeader
-  name: marine alpha team leader radio headset
-  description: This is used by the marine Alpha team leader.
+  name: 海军陆战队阿尔法小队队长无线电耳机
+  description: 这是由海军陆战队阿尔法小队队长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -62,37 +58,33 @@
       - CMEncryptionKeyJTAC
   - type: RMCHeadset
     radioTextIncrease: 2
-
 - type: entity
   parent: CMHeadsetAlpha
   id: CMHeadsetAlphaEngineer
-  name: marine alpha engineer radio headset
-  description: This is used by the marine Alpha combat engineers.
+  name: 海军陆战队阿尔法工兵无线电耳机
+  description: 这是海军陆战队阿尔法战斗工兵使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyEngineer
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetAlpha
   id: CMHeadsetAlphaMedic
-  name: marine alpha corpsman radio headset
-  description: This is used by the marine Alpha combat medics.
+  name: 海军陆战队阿尔法卫生兵无线电耳机
+  description: 这是由海军陆战队阿尔法战斗卫生兵使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyMedical
       - CMEncryptionKeyCommon
-
-# ├──[ Bravo ]───────────────────────────────────────────────────────┤
 - type: entity
   parent: RMCHeadsetMarine
   id: CMHeadsetBravo
-  name: marine bravo radio headset
-  description: This is used by Bravo squad members.
+  name: 海军陆战队布拉沃无线电耳机
+  description: 这是布拉沃小队成员使用的。
   components:
   - type: Sprite
     state: bravo_headset
@@ -103,12 +95,11 @@
     containers:
       key_slots:
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetBravo
   id: CMHeadsetBravoLeader
-  name: marine bravo leader radio headset
-  description: This is used by the marine Bravo squad leader.
+  name: 海军陆战队布拉沃队长无线电耳机
+  description: 这是海军陆战队布拉沃小队队长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -124,12 +115,11 @@
     - SquadLeader
     - FireteamLeader
     - PrimaryLandingZone
-
 - type: entity
   parent: CMHeadsetBravo
   id: CMHeadsetBravoTeamLeader
-  name: marine bravo team leader radio headset
-  description: This is used by the marine Bravo team leader.
+  name: 海军陆战队布拉沃小队队长无线电耳机
+  description: 这是由海军陆战队布拉沃小队队长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -138,37 +128,33 @@
       - CMEncryptionKeyJTAC
   - type: RMCHeadset
     radioTextIncrease: 2
-
 - type: entity
   parent: CMHeadsetBravo
   id: CMHeadsetBravoEngineer
-  name: marine bravo engineer radio headset
-  description: This is used by the marine Bravo combat engineers.
+  name: 海军陆战队布拉沃工兵无线电耳机
+  description: 这是海军陆战队布拉沃战斗工兵使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyEngineer
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetBravo
   id: CMHeadsetBravoMedic
-  name: marine bravo corpsman radio headset
-  description: This is used by the marine Bravo combat medics.
+  name: 海军陆战队布拉沃卫生兵无线电耳机
+  description: 这是海军陆战队布拉沃战斗卫生兵使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyMedical
       - CMEncryptionKeyCommon
-
-# ├──[ Charlie ]─────────────────────────────────────────────────────┤
 - type: entity
   parent: RMCHeadsetMarine
   id: CMHeadsetCharlie
-  name: marine charlie radio headset
-  description: This is used by Charlie squad members.
+  name: 海军陆战队查理无线耳机
+  description: 这是查理小队成员使用的。
   components:
   - type: Sprite
     state: charlie_headset
@@ -179,12 +165,11 @@
     containers:
       key_slots:
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetCharlie
   id: CMHeadsetCharlieLeader
-  name: marine charlie leader radio headset
-  description: This is used by the marine Charlie squad leader.
+  name: 海军陆战队查理队长无线耳机
+  description: 这是由海军陆战队查理小队队长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -200,12 +185,11 @@
     - SquadLeader
     - FireteamLeader
     - PrimaryLandingZone
-
 - type: entity
   parent: CMHeadsetCharlie
   id: CMHeadsetCharlieTeamLeader
-  name: marine charlie team leader radio headset
-  description: This is used by the marine Charlie team leader.
+  name: 海军陆战队查理组长无线耳机
+  description: 这是海军陆战队查理组长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -214,37 +198,33 @@
       - CMEncryptionKeyJTAC
   - type: RMCHeadset
     radioTextIncrease: 2
-
 - type: entity
   parent: CMHeadsetCharlie
   id: CMHeadsetCharlieEngineer
-  name: marine charlie engineer radio headset
-  description: This is used by the marine Charlie combat engineers.
+  name: 海军陆战队查理工程师无线耳机
+  description: 这是海军陆战队查理战斗工程师使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyEngineer
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetCharlie
   id: CMHeadsetCharlieMedic
-  name: marine charlie corpsman radio headset
-  description: This is used by the marine Charlie combat medics.
+  name: 海军陆战队查理医务兵无线耳机
+  description: 这是海军陆战队查理战斗医务兵使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyMedical
       - CMEncryptionKeyCommon
-
-# ├──[ Delta ]───────────────────────────────────────────────────────┤
 - type: entity
   parent: RMCHeadsetMarine
   id: CMHeadsetDelta
-  name: marine delta radio headset
-  description: This is used by Delta squad members.
+  name: 海军陆战队德尔塔无线耳机
+  description: 这是德尔塔小队成员使用的。
   components:
   - type: Sprite
     state: delta_headset
@@ -255,12 +235,11 @@
     containers:
       key_slots:
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetDelta
   id: CMHeadsetDeltaLeader
-  name: marine delta leader radio headset
-  description: This is used by the marine Delta squad leader.
+  name: 海军陆战队德尔塔队长无线耳机
+  description: 这是由海军陆战队德尔塔小队队长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -276,12 +255,11 @@
     - SquadLeader
     - FireteamLeader
     - PrimaryLandingZone
-
 - type: entity
   parent: CMHeadsetDelta
   id: CMHeadsetDeltaTeamLeader
-  name: marine delta team leader radio headset
-  description: This is used by the marine Delta team leader.
+  name: 海军陆战队德尔塔组长无线耳机
+  description: 这是海军陆战队德尔塔组长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -290,37 +268,33 @@
       - CMEncryptionKeyJTAC
   - type: RMCHeadset
     radioTextIncrease: 2
-
 - type: entity
   parent: CMHeadsetDelta
   id: CMHeadsetDeltaEngineer
-  name: marine delta engineer radio headset
-  description: This is used by the marine Delta combat engineers.
+  name: 海军陆战队德尔塔工程师无线耳机
+  description: 这是由海军陆战队德尔塔战斗工程师使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyEngineer
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetDelta
   id: CMHeadsetDeltaMedic
-  name: marine delta corpsman radio headset
-  description: This is used by the marine Delta combat medics.
+  name: 海军陆战队德尔塔医务兵无线耳机
+  description: 这是海军陆战队德尔塔战斗医务兵使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyMedical
       - CMEncryptionKeyCommon
-
-# ├──[ Echo ]────────────────────────────────────────────────────────┤
 - type: entity
   parent: RMCHeadsetMarine
   id: CMHeadsetEcho
   name: marine echo radio headset
-  description: This is used by Echo squad members.
+  description: 这是回声小队成员使用的。
   components:
   - type: Sprite
     state: echo_headset
@@ -331,12 +305,11 @@
     containers:
       key_slots:
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetEcho
   id: CMHeadsetEchoLeader
-  name: marine echo leader radio headset
-  description: This is used by the marine Echo squad leader.
+  name: 海军陆战队Echo小队队长无线电耳机
+  description: 这是海军陆战队Echo小队队长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -345,12 +318,11 @@
       - CMEncryptionKeySquadLeader
   - type: RMCHeadset
     radioTextIncrease: 3
-
 - type: entity
   parent: CMHeadsetEcho
   id: CMHeadsetEchoTeamLeader
-  name: marine echo team leader radio headset
-  description: This is used by the marine Echo team leader.
+  name: 海军陆战队 Echo 小队队长无线电耳机
+  description: 这是海军陆战队 Echo 小队队长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -366,37 +338,33 @@
     - SquadLeader
     - FireteamLeader
     - PrimaryLandingZone
-
 - type: entity
   parent: CMHeadsetEcho
   id: CMHeadsetEchoEngineer
-  name: marine echo engineer radio headset
-  description: This is used by the marine Echo combat engineers.
+  name: 海军陆战队回声工程师无线电耳机
+  description: 这是供海军陆战队回声战斗工程师使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyEngineer
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetEcho
   id: CMHeadsetEchoMedic
-  name: marine echo corpsman radio headset
-  description: This is used by the marine Echo combat medics.
+  name: 海军陆战队回声医务兵无线电耳机
+  description: 这是海军陆战队回声战斗医务兵使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyMedical
       - CMEncryptionKeyCommon
-
-# ├──[ Foxtrot ]─────────────────────────────────────────────────────┤
 - type: entity
   parent: RMCHeadsetMarine
   id: CMHeadsetFoxtrot
   name: marine foxtrot radio headset
-  description: This is used by Foxtrot squad members.
+  description: 这是由狐步小队成员使用的。
   components:
   - type: Sprite
     state: cryo_headset
@@ -407,12 +375,11 @@
     containers:
       key_slots:
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetFoxtrot
   id: CMHeadsetFoxtrotLeader
-  name: marine foxtrot leader radio headset
-  description: This is used by the marine Foxtrot squad leader.
+  name: 海军陆战队狐步小队队长无线电耳机
+  description: 这是由海军陆战队狐步小队队长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -421,12 +388,11 @@
       - CMEncryptionKeySquadLeader
   - type: RMCHeadset
     radioTextIncrease: 3
-
 - type: entity
   parent: CMHeadsetFoxtrot
   id: CMHeadsetFoxtrotTeamLeader
-  name: marine foxtrot team leader radio headset
-  description: This is used by the marine Foxtrot team leader.
+  name: 海军陆战队狐步小队队长无线电耳机
+  description: 这是由海军陆战队狐步小队队长使用的。
   components:
   - type: ContainerFill
     containers:
@@ -442,37 +408,33 @@
     - SquadLeader
     - FireteamLeader
     - PrimaryLandingZone
-
 - type: entity
   parent: CMHeadsetFoxtrot
   id: CMHeadsetFoxtrotEngineer
-  name: marine foxtrot engineer radio headset
-  description: This is used by the marine Foxtrot combat engineers.
+  name: 海军陆战队狐步工兵无线电耳机
+  description: 这是由海军陆战队狐步战斗工兵使用的。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyEngineer
       - CMEncryptionKeyCommon
-
 - type: entity
   parent: CMHeadsetFoxtrot
   id: CMHeadsetFoxtrotMedic
-  name: marine foxtrot corpsman radio headset
-  description: This is used by the marine Foxtrot combat medics.
+  name: 海军陆战队狐步医务兵无线电耳机
+  description: 此物由海军陆战队 Foxtrot 战斗医护兵使用。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyMedical
       - CMEncryptionKeyCommon
-
-# ├──[ PVE ]─────────────────────────────────────────────────────────┤
 - type: entity
   parent: RMCHeadsetShip
   id: RMCHeadsetGoldenArrow
-  name: sun riders radio headset
-  description: This is used by the UNMC Sun Riders Platoon.
+  name: 太阳骑士无线电耳机
+  description: 此物由 UNMC 太阳骑士排使用。
   components:
   - type: Sprite
     state: delta_headset

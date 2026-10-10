@@ -1,40 +1,36 @@
-# Other
 - type: entity
   parent: CMHeadset
   id: CMHeadsetColony
-  name: colony headset
-  description: A standard headset used by colonists.
+  name: 殖民地耳机
+  description: 殖民地居民使用的标准耳机。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyColony
-
 - type: entity
   parent: RMCHeadsetIcons
   id: RMCHeadsetColonyIcons
-  name: colony headset
-  description: A standard headset used by colonists.
+  name: 殖民地耳机
+  description: 殖民地居民使用的标准耳机。
   suffix: With HUD Icons
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyColony
-
-# For CLF
 - type: entity
-  parent: [RMCHeadsetIconsCLF, CMHeadsetColony]
+  parent:
+  - RMCHeadsetIconsCLF
+  - CMHeadsetColony
   id: RMCHeadsetDistressCLF
-  name: CLF headset
-  description: A special headset used by small groups of trained operatives. Or terrorists.
-
-# For Bureau Marshals
+  name: CLF耳机
+  description: 一种供一小群训练有素的特工使用的特殊耳机。也可能是恐怖分子。
 - type: entity
   parent: RMCHeadsetIconsCMB
   id: RMCHeadsetDistressBureau
-  name: bureau earpiece
-  description: A sleek headset used by The Colony Marshal Bureau. Low profile and comfortable. No one is above the law.
+  name: 局用耳机
+  description: 一款殖民地法警局使用的流线型耳机。低调舒适。无人能凌驾于法律之上。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/headsets.rsi
@@ -43,25 +39,21 @@
     containers:
       key_slots:
       - RMCEncryptionKeyBureau
-
-# For CMB and ICB survivors.
 - type: entity
   parent: RMCHeadsetDistressBureau
   id: RMCHeadsetDistressBureauDamaged
-  name: damaged bureau earpiece
-  description: A sleek headset used by The Colony Marshal Bureau. Low profile and comfortable. No one is above the law. This one is pretty beat up, and seems to be missing a few frequencies.
+  name: 损坏的局用耳机
+  description: 一副由殖民地法警局使用的流线型耳机。低调而舒适。无人能凌驾于法律之上。这一副已经相当破旧，而且似乎缺少了几个频率。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - RMCEncryptionKeyBureauDamaged
-
-# For WeYa civilians
 - type: entity
   parent: RMCHeadsetIconsWeYa
   id: RMCHeadsetDistressWeYa
-  name: WeYa corporate headset
-  description: A headset commonly worn by WeYa corporate personnel.
+  name: WeYa企业耳机
+  description: WeYa企业人员常佩戴的一款耳机。
   suffix: WeYa, Colony
   components:
   - type: Sprite
@@ -71,20 +63,17 @@
     containers:
       key_slots:
       - CMEncryptionKeyWEYUColony
-
-# For WeYa PMC
 - type: entity
   parent: RMCHeadsetDistressWeYa
   id: RMCHeadsetDistressPMC
-  name: PMC headset
-  description: A special headset used by corporate personnel.
+  name: PMC耳机
+  description: 一种供企业人员使用的特殊耳机。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyCommon
       - RMCEncryptionKeyLiaison
-
   - type: GrantSquadLeaderTracker
     defaultMode: LeaderPmc
     trackerModes:
@@ -93,12 +82,11 @@
     - DirectorPmc
     - LeaderPmc
     - CorporateLiaison
-
 - type: entity
   parent: RMCHeadsetDistressWeYa
   id: RMCHeadsetDistressPMCPVE
-  name: corporate headset
-  description: A special headset used by corporate personnel.
+  name: 企业耳机
+  description: 企业人员使用的一种特殊耳机。
   suffix: PVE
   components:
   - type: ContainerFill
@@ -110,21 +98,19 @@
     trackerModes:
     - SquadLeader
     - FireteamLeader
-
 - type: entity
   parent: RMCHeadsetDistressPMC
   id: RMCHeadsetDistressPMCLeader
   suffix: Leader
-  description:
+  description: null
   components:
   - type: RMCHeadset
     radioTextIncrease: 2
-
 - type: entity
   parent: RMCHeadsetDistressWeYa
   id: RMCHeadsetDistressPMCDirector
-  name: PMC headset
-  description: A special headset used by corporate personnel.
+  name: PMC耳机
+  description: 企业人员使用的专用耳机。
   suffix: Director
   components:
   - type: ContainerFill
@@ -132,7 +118,6 @@
       key_slots:
       - CMEncryptionKeyCommon
       - RMCEncryptionKeyLiaison
-
   - type: RMCHeadset
     radioTextIncrease: 3
   - type: GrantSquadLeaderTracker
@@ -141,13 +126,11 @@
     - DirectorPmc
     - LeaderPmc
     - CorporateLiaison
-
-# For WeYa lawyers
 - type: entity
   parent: RMCHeadsetDistressWeYa
   id: RMCHeadsetDistressGoon
-  name: We-Ya headset
-  description: A special headset used by corporate personnel.
+  name: We-Ya耳机
+  description: 企业人员使用的特殊耳机。
   components:
   - type: ContainerFill
     containers:
@@ -155,7 +138,6 @@
       - CMEncryptionKeyCommon
       - RMCEncryptionKeyLiaison
   - type: GrantMarineIcons
-
   - type: GrantSquadLeaderTracker
     defaultMode: LeaderGoon
     trackerModes:
@@ -165,21 +147,19 @@
     - CorporateLiaison
     - LawyerWeYa
     - LeaderGoon
-
 - type: entity
   parent: RMCHeadsetDistressGoon
   id: RMCHeadsetDistressGoonLeader
   suffix: Leader
-  description:
+  description: null
   components:
   - type: RMCHeadset
     radioTextIncrease: 2
-
 - type: entity
   parent: RMCHeadsetDistressWeYa
   id: RMCHeadsetDistressLawyerWeYa
-  name: We-Ya headset
-  description: A special headset used by corporate personnel.
+  name: We-Ya耳机
+  description: 企业人员使用的专用耳机。
   suffix: Director
   components:
   - type: ContainerFill
@@ -188,7 +168,6 @@
       - CMEncryptionKeyCommon
       - RMCEncryptionKeyLiaison
   - type: GrantMarineIcons
-
   - type: RMCHeadset
     radioTextIncrease: 3
   - type: GrantSquadLeaderTracker
@@ -197,13 +176,11 @@
     - SupervisorWeYa
     - LawyerWeYa
     - LeaderGoon
-
-# For Duke's Dozen/Freelancer
 - type: entity
   parent: RMCHeadsetIcons
   id: RMCHeadsetDistressDukes
   name: Duke's Dozen headset
-  description: A special headset used by small groups of trained operatives. Or terrorists.
+  description: 一种特殊耳机，供训练有素的特工小队使用。或者恐怖分子。
   components:
   - type: ContainerFill
     containers:
@@ -214,20 +191,17 @@
     defaultMode: FreelancerLeader
     trackerModes:
     - FreelancerLeader
-
 - type: entity
   parent: RMCHeadsetDistressDukes
   id: RMCHeadsetDistressDukesLeader
   components:
   - type: RMCHeadset
     radioTextIncrease: 3
-
-# Survivor SOF/FORECON
 - type: entity
   parent: RMCHeadsetMarine
   id: RMCHeadsetForecon
-  name: UNMC SOF headset
-  description: Issued exclusively to Marine Raiders and members of the UNMC's Force Reconnaissance.
+  name: UNMC特战部队耳机
+  description: 仅配发给海军陆战队突袭者以及UNMC部队侦察队成员。
   suffix: Survivor
   components:
   - type: Sprite
@@ -248,78 +222,70 @@
     trackerModes:
     - SquadLeader
     - FORECONCommandingOfficer
-
-# Paramarine Hybrisa survivor insert
 - type: entity
   parent: RMCHeadsetIconsPara
   id: RMCHeadsetPara
-  name: paramarine headset
-  description: A sleek headset used by the RCM's Paramarines. Low profile enough to fit under any headgear.
+  name: 伞降陆战队耳机
+  description: 一款造型流畅的耳机，供RCM的伞降陆战队使用。外形足够低调，可戴在任何头饰之下。
   suffix: Survivor, Paramarine
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/headsets.rsi
-      state: vai_headset
-    - type: ContainerFill
-      containers:
-        key_slots:
-          - CMEncryptionKeyColony
-    - type: RMCHeadset
-      channels:
-        - TWESOF
-    - type: GrantSquadLeaderTracker
-      defaultMode: ParaTeamLeader
-      trackerModes:
-        - ParaTeamLeader
-        - ParaCommander
-
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/headsets.rsi
+    state: vai_headset
+  - type: ContainerFill
+    containers:
+      key_slots:
+      - CMEncryptionKeyColony
+  - type: RMCHeadset
+    channels:
+    - TWESOF
+  - type: GrantSquadLeaderTracker
+    defaultMode: ParaTeamLeader
+    trackerModes:
+    - ParaTeamLeader
+    - ParaCommander
 - type: entity
   parent: RMCHeadsetPara
   id: RMCHeadsetParaTeamLead
-  name: paramarine team leader's headset
-  description: A sleek headset used by the RCM's Paramarines. Low profile enough to fit under any headgear.
+  name: 伞兵小队队长的耳机
+  description: RCM伞兵小队使用的流线型耳机。外形足够低矮，可戴在任何头饰之下。
   suffix: Survivor, Paramarine
   components:
-    - type: RMCHeadset
-      channels:
-        - TWESOF
-      radioTextIncrease: 2
-    - type: GrantSquadLeaderTracker
-      defaultMode: ParaCommander
-
+  - type: RMCHeadset
+    channels:
+    - TWESOF
+    radioTextIncrease: 2
+  - type: GrantSquadLeaderTracker
+    defaultMode: ParaCommander
 - type: entity
   parent: RMCHeadsetPara
   id: RMCHeadsetParaOfficer
-  name: paramarine officer's headset
-  description: A sleek headset used by the RCM's Paramarines. Low profile enough to fit under any headgear. This one is heavier with the weight of responsibility.
+  name: 伞兵军官耳机
+  description: 一款供RCM伞兵部队使用的流线型耳机。低轮廓设计，足以佩戴在任何头部装备之下。这一副更为沉重，承载着责任的重量。
   suffix: Survivor, Paramarine
   components:
-    - type: RMCHeadset
-      channels:
-        - TWESOF
-      radioTextIncrease: 3
-    - type: GrantSquadLeaderTracker
-      defaultMode: ParaTeamLeader
-
-#for UNMC personnel
+  - type: RMCHeadset
+    channels:
+    - TWESOF
+    radioTextIncrease: 3
+  - type: GrantSquadLeaderTracker
+    defaultMode: ParaTeamLeader
 - type: entity
   parent: RMCHeadsetMarine
   id: RMCHeadsetMarineDistress
-  name: UNMC headset
-  description: A standard issue UNMC headset. This one is used by marines on colonial protection duties, and only comes equipped with civilian channels.
+  name: UNMC耳机
+  description: 标准配发的UNMC耳机。这款由执行殖民地保护任务的陆战队员使用，仅配备民用频道。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyColony
   - type: GrantMarineIcons
-
-# For MARSOC
 - type: entity
   parent: RMCHeadsetForecon
   id: RMCHeadsetMARSOC
-  name: UNMC SOF headset
-  description: Issued exclusively to Marine Raiders and members of the UNMC's Force Reconnaissance.
+  name: UNMC特种作战部队耳机
+  description: 仅配发给海军陆战队突击队员和UNMC部队侦察队成员。
   suffix: ERT
   components:
   - type: ContainerFill
@@ -327,7 +293,6 @@
       key_slots:
       - CMEncryptionKeySOF
   - type: GrantMarineIcons
-
   - type: GrantSquadLeaderTracker
     defaultMode: MARSOCLeader
     trackerModes:

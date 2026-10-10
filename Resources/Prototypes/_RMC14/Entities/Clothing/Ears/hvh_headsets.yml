@@ -1,9 +1,8 @@
-# For WeYa PMCs
 - type: entity
   parent: RMCHeadsetIconsWeYa
   id: RMCHeadsetHvHWeYaPMC
-  name: WeYa corporate headset
-  description: A special headset used by corporate personnel.
+  name: WeYa 企业耳机
+  description: 企业人员使用的特殊耳机。
   suffix: WeYa, PMC, HvH,
   components:
   - type: Sprite
@@ -13,7 +12,6 @@
     containers:
       key_slots:
       - CMEncryptionKeyWEYUColony
-
   - type: GrantSquadLeaderTracker
     defaultMode: LeaderPmc
     trackerModes:
@@ -22,49 +20,41 @@
     - DirectorPmc
     - LeaderPmc
     - CorporateLiaison
-
 - type: entity
   parent: RMCHeadsetHvHWeYaPMC
   id: RMCHeadsetHvHWeYaPMCMedic
-  name: PMC-MED headset
+  name: PMC-MED 耳机
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyWEYUColony
-      # TODO RMC14: /obj/item/device/encryptionkey/pmc/medic
-
 - type: entity
   parent: RMCHeadsetHvHWeYaPMC
   id: RMCHeadsetHvHWeYaPMCEngineer
-  name: PMC-CCT headset
+  name: PMC-CCT 耳机
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyWEYUColony
-      # TODO RMC14: /obj/item/device/encryptionkey/pmc/engi
-
 - type: entity
   parent: RMCHeadsetHvHWeYaPMC
   id: RMCHeadsetHvHWeYaPMCLeader
-  name: PMC-CMD headset
+  name: PMC-CMD 耳机
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyWEYUColony
-      # TODO RMC14: /obj/item/device/encryptionkey/pmc/command
-
 - type: entity
   parent: RMCHeadsetHvHWeYaPMC
   id: RMCHeadsetHvHWeYaPMCCommando
-  name: We-Ya Commando headset
+  name: We-Ya 突击队耳机
   suffix: WeYa, PMC Commando, HvH
-  description: A special headset used by unidentified operatives.
+  description: 身份不明的特工使用的特殊耳机。
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - CMEncryptionKeyWEYUColony
-      # TODO RMC14: /obj/item/device/encryptionkey/pmc

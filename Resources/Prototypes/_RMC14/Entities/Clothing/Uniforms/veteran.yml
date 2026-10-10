@@ -6,16 +6,16 @@
   - type: Tag
     tags:
     - RMCUniformPMC
-
 - type: entity
-  parent: [RMCVeteranUniformBase, RMCAlternateFoldableUniformBase]
+  parent:
+  - RMCVeteranUniformBase
+  - RMCAlternateFoldableUniformBase
   id: RMCJumpsuitVeteranPMCNoWebbing
-  name: PMC fatigues
-  description: A white set of fatigues, designed for private security operators. The symbol of the Weyland-Yutani corporation is emblazed on the suit.
+  name: 私人军事承包商作训服
+  description: 一套专为私人安保人员设计的白色作训服。作训服上印有维兰德-汤谷公司的标志。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/standard.rsi
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCNoWebbing
   id: RMCJumpsuitVeteranPMCNoWebbingPatch
@@ -24,7 +24,6 @@
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYa
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCNoWebbing
   id: RMCJumpsuitVeteranPMCNoWebbingPatchFolded
@@ -34,7 +33,6 @@
     activatedPrefix: jacket
   - type: Clothing
     equippedPrefix: jacket
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCNoWebbing
   id: RMCJumpsuitVeteranPMC
@@ -42,7 +40,6 @@
   components:
   - type: WebbingClothing
     startingWebbing: RMCWebbingPMC
-
 - type: entity
   parent: RMCJumpsuitVeteranPMC
   id: RMCJumpsuitVeteranPMCMedic
@@ -50,7 +47,6 @@
   components:
   - type: WebbingClothing
     startingWebbing: RMCWebbingPMCMedic
-
 - type: entity
   parent: RMCJumpsuitVeteranPMC
   id: RMCJumpsuitVeteranPMCGunner
@@ -58,7 +54,6 @@
   components:
   - type: WebbingClothing
     startingWebbing: RMCWebbingPMCGunner
-
 - type: entity
   parent: RMCJumpsuitVeteranPMC
   id: RMCJumpsuitVeteranPMCSynth
@@ -69,16 +64,14 @@
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYa
-
 - type: entity
   parent: RMCVeteranUniformBase
   id: RMCJumpsuitVeteranPMCEngineerNoWebbing
-  name: PMC engineer fatigues
-  description: A black set of fatigues, designed for private security engineers. The symbol of the Weyland-Yutani corporation is emblazed on the suit.
+  name: PMC工程师制服
+  description: 一套黑色作训服，专为私人安保工程师设计。制服上印有维兰德-汤谷公司的标志。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/engineer.rsi
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCEngineerNoWebbing
   id: RMCJumpsuitVeteranPMCEngineerNoWebbingPatch
@@ -86,23 +79,20 @@
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYa
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCEngineerNoWebbing
   id: RMCJumpsuitVeteranPMCEngineer
   components:
   - type: WebbingClothing
     startingWebbing: RMCWebbingPMCEngineer
-
 - type: entity
   parent: RMCVeteranUniformBase
   id: RMCJumpsuitVeteranPMCLeaderNoWebbing
-  name: PMC command fatigues
-  description: A white set of fatigues, designed for private security operators. The symbol of the Weyland-Yutani corporation is emblazed on the suit. This particular suit looks like it belongs to a high-ranking officer.
+  name: PMC指挥作训服
+  description: 一套为私人安保操作员设计的白色作训服，上面印有维兰德-汤谷公司的标志。这套作训服看起来属于一名高级军官。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/officer.rsi
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCLeaderNoWebbing
   id: RMCJumpsuitVeteranPMCLeaderNoWebbingPatch
@@ -110,7 +100,6 @@
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYa
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCLeaderNoWebbingPatch
   id: RMCJumpsuitVeteranPMCLeaderHolsterPatch
@@ -121,78 +110,74 @@
     - RMCPatchWeYa
   - type: WebbingClothing
     startingWebbing: RMCWebbingHolsterMK80
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCLeaderNoWebbing
   id: RMCJumpsuitVeteranPMCLeader
-  name: PMC command fatigues
-  description: A white set of fatigues, designed for private security operators. The symbol of the Weyland-Yutani corporation is emblazed on the suit. This particular suit looks like it belongs to a high-ranking officer.
+  name: 私营军事公司
+  description: 一套为私营安保人员设计的白色
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/officer.rsi
   - type: WebbingClothing
     startingWebbing: RMCWebbingPMC
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCLeaderNoWebbing
   id: RMCJumpsuitVeteranPMCCommandoSurvivor
-  name: We-Ya Commando fatigues
-  description: An armored uniform worn by We-Ya elite commandos. It is well protected while remaining light and comfortable.
+  name: We-Ya突击队作战服
+  description: We-Ya精英突击队所穿着的装甲制服。它在保持轻便舒适的同时具备良好的防护能力。
   components:
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCPatchWeYa
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCLeader
   id: RMCJumpsuitVeteranPMCCommando
-  name: PMC commando uniform
-  description: An armored uniform worn by We-Yu elite commandos. It is well protected while remaining light and comfortable.
+  name: PMC突击队制服
+  description: 威宇精英突击队员穿着的装甲制服。它防护周全，同时保持轻便舒适。
   components:
   - type: WebbingClothing
     startingWebbing: RMCWebbingPMCWhiteout
-
 - type: entity
-  parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
+  parent:
+  - RMCVeteranUniformBase
+  - RMCFoldableUniformBase
   id: RMCJumpsuitVeteranPMCCorporate
-  name: We-Yu corporate security uniform
-  description: An armored uniform worn by We-Yu corporate security members. This variant is commonly worn by what are known as 'goons'.
+  name: We-Yu 公司安保制服
+  description: 由 We-Yu 公司安保成员穿着的装甲制服。这种款式通常由被称为“打手”的人穿着。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/corporate.rsi
   - type: Foldable
     unfoldVerbText: rmc-sleeves-verb-unfold
     foldVerbText: rmc-sleeves-verb-fold
-
 - type: entity
-  parent: [RMCVeteranUniformBase, RMCFoldableUniformBase]
+  parent:
+  - RMCVeteranUniformBase
+  - RMCFoldableUniformBase
   id: RMCJumpsuitVeteranPMCCorporateLead
-  name: We-Yu corporate security uniform
-  description: An armored uniform worn by We-Yu corporate security members. This variant is commonly worn by the lead of the 'goonsquad', as they are colloquially known.
+  name: We-Yu 企业安保制服
+  description: 一件由 We-Yu 企业安保人员穿着的装甲制服。这种款式通常由俗称“打手小队”的队长穿着。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/corporate_lead.rsi
   - type: Foldable
     unfoldVerbText: rmc-sleeves-verb-unfold
     foldVerbText: rmc-sleeves-verb-fold
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCCorporate
   id: RMCJumpsuitVeteranPMCKutjevo
-  description: An armored uniform worn by We-Yu corporate security members. This variant is more breathable for use in hot, dry environments.
+  description: We-Yu公司安保人员穿着的装甲制服。这种款式更透气，适合在炎热干燥的环境中使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/kutjevo.rsi
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCCorporateLead
   id: RMCJumpsuitVeteranPMCKutjevoLead
-  description: An armored uniform worn by We-Yu corporate security members. This variant is more breathable for use in hot, dry environments and has gold armbands denoting the team leader
+  description: We-Yu公司安保人员穿着的装甲制服。此款式在炎热干燥环境中穿着更为透气，并带有金色臂章以标示队长身份。
   suffix: Kutjevo
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/kutjevo_lead.rsi
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCCorporate
   id: RMCJumpsuitVeteranPMCHybrisa
@@ -200,7 +185,6 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/hybrisa.rsi
-
 - type: entity
   parent: RMCJumpsuitVeteranPMCCorporateLead
   id: RMCJumpsuitVeteranPMCHybrisaLead
@@ -208,12 +192,11 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/hybrisa_lead.rsi
-
 - type: entity
   parent: RMCMarineUniformBase
   id: RMCJumpsuitVeteranPMCDirector
-  name: director's suit
-  description: It's a suit that oozes with authority. Belongs to someone very important.
+  name: 董事的西装
+  description: 这是一套散发着权威气息的西装。属于一位非常重要的人物。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/PMC/director.rsi

@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseItem
   id: BoxDonkSoftBase
-  name: toy ammunition box
+  name: 玩具弹药箱 | toy ammunition box
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
@@ -17,26 +17,26 @@
 - type: entity
   parent: BoxDonkSoftBase
   id: BoxDonkSoftBox
-  name: foam dart box
-  description: A cardboard box of foam darts.
+  name: 泡沫飞镖盒 | foam dart box
+  description: 一个装满泡沫飞镖的纸板盒。 | A cardboard box of foam darts.
   components:
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - BulletFoam
+      - BulletFoam
     capacity: 40
     proto: BulletFoam
   - type: Sprite
     sprite: Objects/Storage/boxes.rsi
     layers:
-      - state: boxwidetoy
-      - state: shelltoy
+    - state: boxwidetoy
+    - state: shelltoy
 
 - type: entity
   parent: BaseMagazineBoxMagnum
   id: BoxCartridgeCap
-  name: cap gun cartridge box
-  description: A cardboard box of cap gun cartridges.
+  name: 玩具枪弹药盒 | cap gun cartridge box
+  description: 一个装有玩具枪弹药的纸板盒。 | A cardboard box of cap gun cartridges.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeCap
@@ -48,8 +48,8 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Boxes/magnum.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-cap-1
-        map: ["enum.GunVisualLayers.Mag"]
-      - state: capbase
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-cap-1
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: capbase

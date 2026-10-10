@@ -1,8 +1,8 @@
 - type: entity
-  name: generic rubber stamp
+  name: 普通橡皮图章 | generic rubber stamp
   parent: BaseItem
   id: RubberStampBase
-  description: A rubber stamp for stamping important documents.
+  description: 用于在重要文件上盖章的橡皮图章。 | A rubber stamp for stamping important documents.
   abstract: true
   components:
   - type: Stamp
@@ -39,7 +39,7 @@
     - Stamp
 
 - type: entity
-  name: alternate rubber stamp
+  name: 备用橡皮图章 | alternate rubber stamp
   parent: RubberStampBase
   id: RubberStampBaseAlt
   abstract: true
@@ -54,10 +54,10 @@
         maxDistance: 5
 
 - type: entity
-  name: captain's rubber stamp
+  name: 船长的橡皮图章 | captain's rubber stamp
   parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampCaptain
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-captain
@@ -77,10 +77,10 @@
         color: "#3681bb"
 
 - type: entity
-  name: CentComm rubber stamp
+  name: 中央指挥部橡皮图章 | CentComm rubber stamp
   parent: RubberStampBase
   id: RubberStampCentcom
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-centcom
@@ -100,10 +100,10 @@
         color: "#006600"
 
 - type: entity
-  name: chaplain's rubber stamp
+  name: 牧师橡皮图章 | chaplain's rubber stamp
   parent: RubberStampBase
   id: RubberStampChaplain
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-chaplain
@@ -123,10 +123,10 @@
         color: "#7f7f7f"
 
 - type: entity
-  name: lawyer's rubber stamp
+  name: 律师的橡皮图章 | lawyer's rubber stamp
   parent: RubberStampBase
   id: RubberStampLawyer
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-lawyer
@@ -146,10 +146,10 @@
         color: "#162742"
 
 - type: entity
-  name: clown's rubber stamp
+  name: 小丑的橡皮图章 | clown's rubber stamp
   parent: RubberStampBase
   id: RubberStampClown
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-clown
@@ -169,10 +169,10 @@
         color: "#ff33cc"
 
 - type: entity
-  name: chief engineer's rubber stamp
+  name: 总工程师的橡皮图章 | chief engineer's rubber stamp
   parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampCE
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-ce
@@ -192,10 +192,10 @@
         color: "#e09e00"
 
 - type: entity
-  name: chief medical officer's rubber stamp
+  name: 首席医疗官的橡皮图章 | chief medical officer's rubber stamp
   parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampCMO
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-cmo
@@ -215,10 +215,10 @@
         color: "#3366ff"
 
 - type: entity
-  name: head of personnel's rubber stamp
+  name: 人事主管的橡皮图章 | head of personnel's rubber stamp
   parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampHop
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-hop
@@ -238,10 +238,10 @@
         color: "#004f71"
 
 - type: entity
-  name: head of security's rubber stamp
+  name: 保安主管的橡皮图章 | head of security's rubber stamp
   parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampHos
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-hos
@@ -261,16 +261,16 @@
         color: "#cc0000"
 
 - type: entity
-  name: mime's rubber stamp
+  name: 模仿的橡皮图章 | mime's rubber stamp
   parent: RubberStampBase
   id: RubberStampMime
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-mime
     stampedColor: "#777777"
     stampState: "paper_stamp-mime"
-    sound: null
+    sound:
   - type: Sprite
     state: stamp-mime
   - type: Item
@@ -285,10 +285,10 @@
         color: "#777777"
 
 - type: entity
-  name: quartermaster's rubber stamp
+  name: 军需官的橡皮图章 | quartermaster's rubber stamp
   parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampQm
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-qm
@@ -308,10 +308,10 @@
         color: "#906633"
 
 - type: entity
-  name: research director's rubber stamp
+  name: 研究主任的橡皮图章 | research director's rubber stamp
   parent: [RubberStampBase, BaseCommandContraband]
   id: RubberStampRd
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-rd
@@ -331,7 +331,7 @@
         color: "#7e59bb"
 
 - type: entity
-  name: trader's rubber stamp
+  name: 商人的橡皮图章 | trader's rubber stamp
   parent: RubberStampBase
   id: RubberStampTrader
   components:
@@ -353,10 +353,10 @@
         color: "#000000"
 
 - type: entity
-  name: syndicate rubber stamp
+  name: 辛迪加橡皮图章 | syndicate rubber stamp
   parent: [RubberStampBase, BaseSyndicateContraband]
   id: RubberStampSyndicate
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-syndicate
@@ -378,10 +378,10 @@
         color: "#850000"
 
 - type: entity
-  name: warden's rubber stamp
+  name: 典狱长的橡皮图章 | warden's rubber stamp
   parent: [RubberStampBase, BaseSecurityContraband]
   id: RubberStampWarden
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-warden
@@ -401,7 +401,7 @@
         color: "#7b1d1f"
 
 - type: entity
-  name: APPROVED rubber stamp
+  name: 已批准橡皮图章 | APPROVED rubber stamp
   parent: RubberStampBaseAlt
   id: RubberStampApproved
   components:
@@ -423,7 +423,7 @@
         color: "#00be00"
 
 - type: entity
-  name: DENIED rubber stamp
+  name: 拒绝橡皮图章 | DENIED rubber stamp
   parent: RubberStampBaseAlt
   id: RubberStampDenied
   components:
@@ -445,10 +445,10 @@
         color: "#7d0b00"
 
 - type: entity
-  name: detective's rubber stamp
+  name: 侦探的橡皮图章 | detective's rubber stamp
   parent: [RubberStampBase, BaseSecurityContraband]
   id: RubberStampDetective
-  categories: [ DoNotMap ]
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-detective
@@ -468,10 +468,10 @@
         color: "#754731"
 
 - type: entity
-  name: greytide's rubber stamp
+  name: 灰潮的橡皮图章 | greytide's rubber stamp
   parent: RubberStampBase
   id: RubberStampGreytide
-  description: A rubber stamp for stamping important documents. The tide washes over you, just looking at it...
+  description: 用来给重要文件盖章的橡皮图章。光是看着它，灰潮便涌上心头…… | A rubber stamp for stamping important documents. The tide washes over you, just looking at it...
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-greytide
@@ -491,11 +491,11 @@
         color: "#323232"
 
 - type: entity
-  name: psychologist's rubber stamp
+  name: 心理学家的橡皮图章 | psychologist's rubber stamp
   parent: RubberStampBase
   id: RubberStampPsychologist
-  categories: [ DoNotMap ]
-  description: A rubber stamp for stamping important documents. Prescribe those treatments!
+  categories: [DoNotMap]
+  description: 用来给重要文件盖章的橡皮图章。开那些处方吧！ | A rubber stamp for stamping important documents. Prescribe those treatments!
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-psychologist
@@ -515,11 +515,11 @@
         color: "#5B97BC"
 
 - type: entity
-  name: wizard's rubber stamp
+  name: 巫师的橡皮图章 | wizard's rubber stamp
   parent: [RubberStampBase, BaseMagicalContraband]
   id: RubberStampWizard
-  description: A chaotic wizard stamp for serving unchaotic paperwork, how ironic.
-  categories: [ DoNotMap ]
+  description: 一个为处理井然有序的文件而设的混乱巫师印章，真是讽刺。 | A chaotic wizard stamp for serving unchaotic paperwork, how ironic.
+  categories: [DoNotMap]
   components:
   - type: Stamp
     stampedName: Wizard

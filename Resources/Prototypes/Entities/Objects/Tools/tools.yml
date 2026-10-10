@@ -1,8 +1,8 @@
 - type: entity
-  name: wirecutter
+  name: 断线钳 | wirecutter
   parent: BaseItem
   id: Wirecutter
-  description: This kills the wire.
+  description: 这会把电线剪断。 | This kills the wire.
   components:
   - type: EmitSoundOnLand
     sound:
@@ -14,7 +14,7 @@
     sprite: Objects/Tools/wirecutters.rsi
     layers:
     - state: cutters
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
     - state: cutters-cutty-thingy
   - type: MeleeWeapon
     wideAnimationRotation: -90
@@ -30,14 +30,14 @@
       penetration: Low
   - type: Tool
     qualities:
-      - Cutting
-      - Shearing
+    - Cutting
+    - Shearing
     useSound:
       path: /Audio/Items/wirecutter.ogg
   - type: RandomSprite
     available:
-      - enum.DamageStateVisualLayers.Base:
-          cutters: Rainbow
+    - enum.DamageStateVisualLayers.Base:
+        cutters: Rainbow
   - type: Item
     sprite: Objects/Tools/wirecutters.rsi
     storedRotation: -90
@@ -57,10 +57,10 @@
   - type: BotanySampleTaker
 
 - type: entity
-  name: screwdriver
+  name: 螺丝刀 | screwdriver
   parent: BaseItem
   id: Screwdriver
-  description: Industrial grade torque in a small screwdriving package.
+  description: 工业级扭矩，小巧螺丝刀机身。 | Industrial grade torque in a small screwdriving package.
   components:
   - type: EmitSoundOnLand
     sound:
@@ -71,9 +71,9 @@
   - type: Sprite
     sprite: Objects/Tools/screwdriver.rsi
     layers:
-      - state: screwdriver
-        map: [ "enum.DamageStateVisualLayers.Base" ]
-      - state: screwdriver-screwybits
+    - state: screwdriver
+      map: ["enum.DamageStateVisualLayers.Base"]
+    - state: screwdriver-screwybits
   - type: Item
     sprite: Objects/Tools/screwdriver.rsi
     storedRotation: -90
@@ -91,13 +91,13 @@
       penetration: Low
   - type: Tool
     qualities:
-      - Screwing
+    - Screwing
     useSound:
       collection: Screwdriver
   - type: RandomSprite
     available:
-      - enum.DamageStateVisualLayers.Base:
-          screwdriver: Rainbow
+    - enum.DamageStateVisualLayers.Base:
+        screwdriver: Rainbow
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
@@ -113,10 +113,10 @@
     failurePenalty: 1
 
 - type: entity
-  name: wrench
+  name: 扳手 | wrench
   parent: BaseItem
   id: Wrench
-  description: 'A common tool for assembly and disassembly. Remember: lefty latchy, righty removey.'
+  description: '一种用于组装和拆卸的常用工具。记住：左松右紧。 | A common tool for assembly and disassembly. Remember: lefty latchy, righty removey.'
   components:
   - type: EmitSoundOnLand
     sound:
@@ -146,7 +146,7 @@
       penetration: None
   - type: Tool
     qualities:
-      - Anchoring
+    - Anchoring
     useSound:
       path: /Audio/Items/ratchet.ogg
   - type: PhysicalComposition
@@ -166,10 +166,10 @@
     mishapDamageAmount: 4
 
 - type: entity
-  name: multitool
+  name: 多功能工具 | multitool
   parent: BaseItem
   id: Multitool
-  description: An advanced tool to copy, store, and send electrical pulses and signals through wires and machines.
+  description: 一种高级工具，用于通过电线和机器复制、存储和发送电脉冲与信号。 | An advanced tool to copy, store, and send electrical pulses and signals through wires and machines.
   components:
   - type: EmitSoundOnLand
     sound:
@@ -189,7 +189,7 @@
     - Belt
   - type: Tool
     qualities:
-      - Pulsing
+    - Pulsing
   - type: NetworkConfigurator
   - type: ActivatableUI
     key: enum.NetworkConfiguratorUiKey.List
@@ -204,8 +204,8 @@
         type: NetworkConfiguratorBoundUserInterface
   - type: Tag
     tags:
-      - Multitool
-      - DoorElectronicsConfigurator
+    - Multitool
+    - DoorElectronicsConfigurator
   - type: PhysicalComposition
     materialComposition:
       Steel: 100
@@ -220,63 +220,63 @@
     - InspectingPower
 
 - type: entity
-  name: network configurator
+  name: 网络配置器 | network configurator
   parent: BaseItem
   id: NetworkConfigurator
-  description: A tool for linking devices together. Has two modes, a list mode for mass linking devices and a linking mode for advanced device linking.
+  description: 用于将设备连接在一起的工具。有两种模式：列表模式用于批量连接设备，连接模式用于高级设备连接。 | A tool for linking devices together. Has two modes, a list mode for mass linking devices and a linking mode for advanced device linking.
   components:
-    - type: EmitSoundOnLand
-      sound:
-        path: /Audio/Items/multitool_drop.ogg
-    - type: Sprite
-      sprite: Objects/Tools/network_configurator.rsi
-      layers:
-        - state: icon
-        - state: mode-link
-          map: ["enum.NetworkConfiguratorLayers.ModeLight"]
-          shader: unshaded
-    - type: Item
-      size: Small
-    - type: Clothing
-      sprite: Objects/Tools/network_configurator.rsi
-      quickEquip: false
-      slots:
-        - Belt
-    - type: Appearance
-    - type: GenericVisualizer
-      visuals:
-        enum.NetworkConfiguratorVisuals.Mode:
-          enum.NetworkConfiguratorLayers.ModeLight:
-            True: { state: mode-link }
-            False: { state: mode-list }
-    - type: NetworkConfigurator
-    - type: ActivatableUI
-      key: enum.NetworkConfiguratorUiKey.List
-      inHandsOnly: true
-    - type: Tag
-      tags:
-        - DoorElectronicsConfigurator
-    - type: UserInterface
-      interfaces:
-        enum.NetworkConfiguratorUiKey.List:
-          type: NetworkConfiguratorBoundUserInterface
-        enum.NetworkConfiguratorUiKey.Configure:
-          type: NetworkConfiguratorBoundUserInterface
-        enum.NetworkConfiguratorUiKey.Link:
-          type: NetworkConfiguratorBoundUserInterface
-    - type: StaticPrice
-      price: 56
-    - type: GuideHelp
-      guides:
-      - Networking
+  - type: EmitSoundOnLand
+    sound:
+      path: /Audio/Items/multitool_drop.ogg
+  - type: Sprite
+    sprite: Objects/Tools/network_configurator.rsi
+    layers:
+    - state: icon
+    - state: mode-link
+      map: ["enum.NetworkConfiguratorLayers.ModeLight"]
+      shader: unshaded
+  - type: Item
+    size: Small
+  - type: Clothing
+    sprite: Objects/Tools/network_configurator.rsi
+    quickEquip: false
+    slots:
+    - Belt
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.NetworkConfiguratorVisuals.Mode:
+        enum.NetworkConfiguratorLayers.ModeLight:
+          true: {state: mode-link}
+          false: {state: mode-list}
+  - type: NetworkConfigurator
+  - type: ActivatableUI
+    key: enum.NetworkConfiguratorUiKey.List
+    inHandsOnly: true
+  - type: Tag
+    tags:
+    - DoorElectronicsConfigurator
+  - type: UserInterface
+    interfaces:
+      enum.NetworkConfiguratorUiKey.List:
+        type: NetworkConfiguratorBoundUserInterface
+      enum.NetworkConfiguratorUiKey.Configure:
+        type: NetworkConfiguratorBoundUserInterface
+      enum.NetworkConfiguratorUiKey.Link:
+        type: NetworkConfiguratorBoundUserInterface
+  - type: StaticPrice
+    price: 56
+  - type: GuideHelp
+    guides:
+    - Networking
 
 #Power tools
 #Later on these should switch probably switch damage when changing the tool behavior.
 - type: entity
-  name: power drill
+  name: 电钻 | power drill
   parent: BaseItem
   id: PowerDrill
-  description: A simple powered hand drill.
+  description: 一个简单的手持电钻。 | A simple powered hand drill.
   components:
   - type: Tag
     tags:
@@ -289,7 +289,7 @@
     size: Small
   - type: Tool
     qualities:
-      - Screwing
+    - Screwing
     speedModifier: 1.5
     useSound: !type:SoundPathSpecifier
       path: /Audio/Items/drill_use.ogg
@@ -298,30 +298,30 @@
   - type: MultipleTool
     statusShowBehavior: true
     entries:
-      - behavior: [ Screwing ]
-        sprite:
-          sprite: Objects/Tools/drill.rsi
-          state: drill_screw
-        useSound: !type:SoundPathSpecifier
-          path: /Audio/Items/drill_use.ogg
-          params:
-            volume: -2.5
-        changeSound: !type:SoundPathSpecifier
-          path: /Audio/Items/change_drill.ogg
-          params:
-            volume: -5
-      - behavior: [ Anchoring ]
-        sprite:
-          sprite: Objects/Tools/drill.rsi
-          state: drill_bolt
-        useSound: !type:SoundPathSpecifier
-          path: /Audio/Items/drill_use.ogg
-          params:
-            volume: -2.5
-        changeSound: !type:SoundPathSpecifier
-          path: /Audio/Items/change_drill.ogg
-          params:
-            volume: -5
+    - behavior: [Screwing]
+      sprite:
+        sprite: Objects/Tools/drill.rsi
+        state: drill_screw
+      useSound: !type:SoundPathSpecifier
+        path: /Audio/Items/drill_use.ogg
+        params:
+          volume: -2.5
+      changeSound: !type:SoundPathSpecifier
+        path: /Audio/Items/change_drill.ogg
+        params:
+          volume: -5
+    - behavior: [Anchoring]
+      sprite:
+        sprite: Objects/Tools/drill.rsi
+        state: drill_bolt
+      useSound: !type:SoundPathSpecifier
+        path: /Audio/Items/drill_use.ogg
+        params:
+          volume: -2.5
+      changeSound: !type:SoundPathSpecifier
+        path: /Audio/Items/change_drill.ogg
+        params:
+          volume: -5
   - type: PhysicalComposition
     materialComposition:
       Steel: 300
@@ -339,9 +339,9 @@
 
 - type: entity
   id: RCD
-  parent: [ BaseItem, BaseEngineeringContraband ]
-  name: RCD
-  description: The rapid construction device can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function.
+  parent: [BaseItem, BaseEngineeringContraband]
+  name: 快速建造设备 | RCD
+  description: 快速建造设备可用于快速放置和移除各种空间站结构和设施。需要压缩物质才能运作。 | The rapid construction device can be used to quickly place and remove various station structures and fixtures. Requires compressed matter to function.
   components:
   - type: RCD
     availablePrototypes:
@@ -401,8 +401,8 @@
 - type: entity
   id: RCDRecharging
   parent: RCD
-  name: experimental RCD
-  description: Cyborg-mounted Rapid Construction Device which creates compressed matter on the fly using an internal fabricator.
+  name: 实验型RCD | experimental RCD
+  description: 半机械体搭载的快速建造装置，利用内部制造机即时生成压缩物质。 | Cyborg-mounted Rapid Construction Device which creates compressed matter on the fly using an internal fabricator.
   suffix: AutoRecharge
   components:
   - type: LimitedCharges
@@ -414,17 +414,17 @@
   id: RCDExperimental
   parent: RCD
   suffix: Admeme
-  name: experimental RCD
-  description: A bluespace-enhanced rapid construction device that passively generates its own compressed matter.
+  name: 实验型快速建造装置 | experimental RCD
+  description: 一种蓝空间增强型快速建造装置，可被动生成自身的压缩物质。 | A bluespace-enhanced rapid construction device that passively generates its own compressed matter.
   components:
   - type: AutoRecharge
     rechargeDuration: 1
 
 - type: entity
-  name: compressed matter
+  name: 压缩物质 | compressed matter
   parent: BaseItem
   id: RCDAmmo
-  description: A cartridge of raw matter compacted by bluespace technology. Used in rapid construction devices.
+  description: 一盒由蓝空间技术压缩的原始物质。用于快速建造设备。 | A cartridge of raw matter compacted by bluespace technology. Used in rapid construction devices.
   components:
   - type: RCDAmmo
   - type: Sprite
@@ -441,10 +441,10 @@
     price: 60
 
 - type: entity
-  name: omnitool
+  name: 全能工具 | omnitool
   parent: BaseItem
   id: Omnitool
-  description: A drone's best friend.
+  description: 无人机最好的朋友。 | A drone's best friend.
   components:
   - type: Sprite
     sprite: Objects/Tools/omnitool.rsi
@@ -459,58 +459,58 @@
     enabled: false
   - type: Tool
     qualities:
-      - Screwing
+    - Screwing
     speedModifier: 1.2 # Kept for future adjustments. Currently 1.2x for balance
     useSound: /Audio/Items/drill_use.ogg
   - type: ToolTileCompatible
   - type: MultipleTool
     statusShowBehavior: true
     entries:
-      - behavior: [ Screwing ]
-        sprite:
-          sprite: Objects/Tools/omnitool.rsi
-          state: omnitool-screwing
-        useSound:
-          path: /Audio/Items/drill_use.ogg
-        changeSound:
-          path: /Audio/Items/change_drill.ogg
-      - behavior: [ Prying ]
-        sprite:
-          sprite: Objects/Tools/omnitool.rsi
-          state: omnitool-prying
-        useSound:
-          path: /Audio/Items/jaws_pry.ogg
-        changeSound:
-          path: /Audio/Items/change_drill.ogg
-      - behavior: [ Anchoring ]
-        sprite:
-          sprite: Objects/Tools/omnitool.rsi
-          state: omnitool-wrenching
-        useSound:
-          path: /Audio/Items/ratchet.ogg
-        changeSound:
-          path: /Audio/Items/change_drill.ogg
-      - behavior: [ Cutting ]
-        sprite:
-          sprite: Objects/Tools/omnitool.rsi
-          state: omnitool-snipping
-        useSound:
-          path: /Audio/Items/jaws_cut.ogg
-        changeSound:
-          path: /Audio/Items/change_drill.ogg
-      - behavior: [ Pulsing ]
-        sprite:
-          sprite: Objects/Tools/omnitool.rsi
-          state: omnitool-pulsing
-        changeSound:
-          path: /Audio/Items/change_drill.ogg
+    - behavior: [Screwing]
+      sprite:
+        sprite: Objects/Tools/omnitool.rsi
+        state: omnitool-screwing
+      useSound:
+        path: /Audio/Items/drill_use.ogg
+      changeSound:
+        path: /Audio/Items/change_drill.ogg
+    - behavior: [Prying]
+      sprite:
+        sprite: Objects/Tools/omnitool.rsi
+        state: omnitool-prying
+      useSound:
+        path: /Audio/Items/jaws_pry.ogg
+      changeSound:
+        path: /Audio/Items/change_drill.ogg
+    - behavior: [Anchoring]
+      sprite:
+        sprite: Objects/Tools/omnitool.rsi
+        state: omnitool-wrenching
+      useSound:
+        path: /Audio/Items/ratchet.ogg
+      changeSound:
+        path: /Audio/Items/change_drill.ogg
+    - behavior: [Cutting]
+      sprite:
+        sprite: Objects/Tools/omnitool.rsi
+        state: omnitool-snipping
+      useSound:
+        path: /Audio/Items/jaws_cut.ogg
+      changeSound:
+        path: /Audio/Items/change_drill.ogg
+    - behavior: [Pulsing]
+      sprite:
+        sprite: Objects/Tools/omnitool.rsi
+        state: omnitool-pulsing
+      changeSound:
+        path: /Audio/Items/change_drill.ogg
 
 #Other
 - type: entity
-  name: shovel
+  name: 铁锹 | shovel
   parent: BaseItem
   id: Shovel
-  description: A large tool for digging and moving dirt.
+  description: 一把用于挖掘和搬运泥土的大型工具。 | A large tool for digging and moving dirt.
   components:
   - type: Sprite
     sprite: Objects/Tools/shovel.rsi
@@ -540,8 +540,8 @@
 - type: entity
   parent: BaseItem
   id: RollingPin
-  name: rolling pin
-  description: A tool used to shape and flatten dough.
+  name: 擀面杖 | rolling pin
+  description: 用来塑形和压平面团的工具。 | A tool used to shape and flatten dough.
   components:
   - type: Sprite
     sprite: Objects/Tools/rolling_pin.rsi

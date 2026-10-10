@@ -6,7 +6,7 @@
   abstract: true
   parent: [SolutionCompositeSmallStackable, BaseItem, BaseItemDestructible]
   id: CableStack
-  name: cable stack
+  name: 电缆桥架 | cable stack
   suffix: Full
   components:
   - type: Tag
@@ -51,9 +51,9 @@
 - type: entity
   id: CableHVStack
   parent: CableStack
-  name: HV cable coil
+  name: 高压电缆线圈 | HV cable coil
   suffix: Full
-  description: HV cables for connecting engines to heavy duty machinery, SMESes, and substations.
+  description: 用于将引擎连接到重型机械、超导磁储能装置和变电站的高压电缆。 | HV cables for connecting engines to heavy duty machinery, SMESes, and substations.
   components:
   - type: Stack
     stackType: CableHV
@@ -105,9 +105,9 @@
 - type: entity
   parent: [SolutionCompositeCable, CableStack]
   id: CableMVStack
-  name: MV cable coil
+  name: 中压电缆卷 | MV cable coil
   suffix: Full
-  description: MV cables for connecting substations to APCs, and also powering a select few things like emitters.
+  description: 用于连接变电站与APC的中压电缆，同时也为少数设备（如发射器）供电。 | MV cables for connecting substations to APCs, and also powering a select few things like emitters.
   components:
   - type: Stack
     stackType: CableMV
@@ -163,8 +163,8 @@
 - type: entity
   parent: [SolutionCompositeCable, CableStack]
   id: CableApcStack
-  name: LV cable coil
-  description: Low-Voltage stack of wires for connecting APCs to machines and other purposes.
+  name: 低压电缆卷 | LV cable coil
+  description: 用于将APC连接到机器及其他用途的低压电缆卷。 | Low-Voltage stack of wires for connecting APCs to machines and other purposes.
   suffix: Full
   components:
   - type: Sprite
@@ -189,10 +189,10 @@
   id: CableApcStack10
   suffix: 10
   components:
-    - type: Sprite
-      state: coillv-10
-    - type: Stack
-      count: 10
+  - type: Sprite
+    state: coillv-10
+  - type: Stack
+    count: 10
 
 - type: entity
   parent: CableApcStack

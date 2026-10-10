@@ -5,13 +5,12 @@
   abstract: true
   parent: BaseItem
   id: BaseBoardEntity # Board item
-  name: board
-  description: A blank board.
+  name: 板 | board
+  description: 一块空白的板。 | A blank board.
   components:
   - type: TabletopGame
     size: 256, 256
-    setup:
-      !type:TabletopEmptySetup
+    setup: !type:TabletopEmptySetup
       boardPrototype: Crowbar
   - type: Tag
     tags:
@@ -31,8 +30,8 @@
 - type: entity
   abstract: true
   id: BaseBoardTabletop
-  name: baseboard
-  categories: [ HideSpawnMenu ]
+  name: 踢脚板 | baseboard
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     noRot: false

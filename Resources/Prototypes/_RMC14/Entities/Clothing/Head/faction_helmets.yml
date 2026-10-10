@@ -1,28 +1,24 @@
-# Marine raider
 - type: entity
   parent: ArmorHelmetM10
   id: RMCArmorHelmetMARSOC
-  name: SOF operator helmet
-  description: A special variant of the M10 Pattern Helmet worn by USCM SOF.
+  name: SOF干员头盔
+  description: 一种由USCM SOF干员佩戴的M10型头盔的特殊变体。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/marsoc.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Helmets/marsoc.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: CMArmor
     melee: 25
     bullet: 30
     bio: 25
-    # armor_energy = 15
-
-# Dutch's Dozen
 - type: entity
   parent: ArmorHelmetM10
   id: RMCArmorHelmetDutch
   name: dutch's dozen helmet
-  description: A protective helmet worn by some seriously experienced mercs.
+  description: 一顶由一些经验极其丰富的雇佣兵佩戴的防护头盔。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Dutch/helmet.rsi
@@ -34,83 +30,70 @@
     melee: 30
     bullet: 35
     explosionArmor: 20
-    # armor_energy = 15
-    # armor_rad = 20
-
 - type: entity
   parent: RMCArmorHelmetDutch
   id: RMCArmorHelmetDutchCap
-  name: dutch's dozen cap
-  description: A protective cap worn by some seriously experienced mercs.
+  name: 荷兰人的十二人队帽子
+  description: 一顶由某些经验极为丰富的雇佣兵佩戴的防护帽。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Dutch/cap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Dutch/cap.rsi
-
 - type: entity
   parent: RMCArmorHelmetDutch
   id: RMCArmorHelmetDutchBand
   name: dutch's dozen band
-  description: A protective band worn by some seriously experienced mercs.
+  description: 一些经验极其丰富的佣兵佩戴的防护带。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Dutch/band.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Dutch/band.rsi
-
-# Iron Bear
-# I can't find this in cm?
 - type: entity
   parent: RMCArmorHelmetDutch
   id: RMCArmorHelmetBear
-  name: iron bear helmet
-  description: Is good for winter, because it has hole to put vodka through.
+  name: 铁熊头盔
+  description: 很适合冬天，因为它有个洞，可以把伏特加灌进去。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Dutch/helmet.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Dutch/helmet.rsi
-
-# Skullcap
 - type: entity
-  parent: [RMCHelmetBase, RMCFoldableHelmetBase]
+  parent:
+  - RMCHelmetBase
+  - RMCFoldableHelmetBase
   id: RMCArmorHelmetSkullcap
   name: skullcap
-  description: Good for keeping sweat out of your eyes.
+  description: 有助于防止汗水流入眼睛。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/skullcap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Helmets/skullcap.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: CMArmor
     melee: 30
     bullet: 15
     bio: 15
     explosionArmor: 10
-    # armor_laser = 10
-    # armor_rad = 15
-    # armor_internaldamage = 10
-
 - type: entity
   parent: RMCArmorHelmetSkullcap
   id: RMCArmorHelmetSkullcapCowl
-  name: M8 marksman cowl
-  description: A cowl worn to conceal the face of a marksman in the jungle.
+  name: M8射手兜帽
+  description: 用于在丛林中遮住射手面部的兜帽。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/skullcapm.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Helmets/skullcapm.rsi
-
-# Mercenaries
 - type: entity
   parent: ArmorHelmetM10
   id: RMCArmorHelmetMercenary
-  name: mercenary K12 ceramic helmet
-  description: A sturdy helmet worn by an unknown mercenary group.
+  name: 雇佣兵K12陶瓷头盔
+  description: 一顶结实的头盔，由一个未知的雇佣兵组织佩戴。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Mercenary/heavy.rsi
@@ -123,50 +106,41 @@
     bullet: 40
     bio: 35
     explosionArmor: 20
-    # armor_energy = 15
-    # armor_rad = 20
-    # armor_internaldamage = 35
-
 - type: entity
   parent: RMCArmorHelmetMercenary
   id: RMCArmorHelmetMercenaryReinforced
-  name: mercenary modified K12 ceramic helmet
-  description: A sturdy helmet worn by an unknown mercenary group. Reinforced with extra plating.
+  name: 佣兵改装的K12陶瓷头盔
+  description: 一顶由不明佣兵团体佩戴的坚固头盔。用额外的装甲板加固。
   components:
   - type: CMArmor
     melee: 50
     bullet: 55
     explosionArmor: 35
-    # armor_rad = 20
-    # armor_internaldamage = 45
-
 - type: entity
   parent: RMCArmorHelmetMercenary
   id: RMCArmorHelmetMercenaryMiner
-  name: mercenary Y8 miner helmet
-  description: A sturdy helmet, specialised for mining, worn by an unknown mercenary group.
+  name: 佣兵Y8矿工头盔
+  description: 一顶坚固的头盔，专为采矿设计，由一支身份不明的佣兵团佩戴。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Mercenary/miner.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Mercenary/miner.rsi
-
 - type: entity
   parent: RMCArmorHelmetMercenary
   id: RMCArmorHelmetMercenarySupport
-  name: mercenary Z7 support helmet
-  description: A sturdy helmet worn by an unknown mercenary group.
+  name: 雇佣兵Z7支援头盔
+  description: 一顶由未知雇佣兵组织佩戴的坚固头盔。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Mercenary/engi.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Mercenary/engi.rsi
-
 - type: entity
   parent: RMCArmorHelmetMercenarySupport
   id: RMCArmorHelmetMercenaryEngineer
-  name: mercenary Z7 engineer helmet
-  description: A sturdy helmet worn by an unknown mercenary group. This one includes a protective welding visor.
+  name: 雇佣兵Z7工程师头盔
+  description: 一顶由未知雇佣兵组织佩戴的坚固头盔。这顶配有防护焊接面罩。
   components:
   - type: CycleableVisor
     containers:
@@ -177,50 +151,42 @@
     visorsToAdd:
     - RMCVisorSquadIntegrated
     - RMCVisorWeldingIntegrated
-
-# HEFA
-# TODO: actually implement this
 - type: entity
   parent: RMCArmorHelmetM3G4
   id: RMCArmorHelmetHEFA
-  name: HEFA helmet
-  description: For some reason, seeing this helmet causes you to feel extremely distressed.
+  name: HEFA头盔
+  description: 不知为何，看到这顶头盔会让你感到极度痛苦。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Mercenary/hefa.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Mercenary/hefa.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: CMArmor
     melee: 40
     bullet: 40
     bio: 30
     explosionArmor: 70
-    # armor_rad = 30
-    # armor_internaldamage = 30
-
-# CBRN
 - type: entity
   parent: ArmorHelmetM10
   id: RMCArmorHelmetCBRN
-  name: CBRN M3 MOPP mask
-  description: The M3 MOPP mask includes a full covering cowl that securely attaches to the MOPP suit. The mask filters out harmful particles in the air to allow the wearer to breathe safely in the field. Depending on the hostility of the contaminated area the mask’s filter will last an average of 12 hours or less.
+  name: CBRN M3 MOPP 防毒面具
+  description: M3 MOPP 防毒面具包含一个全覆盖式头罩，可牢固连接到 MOPP 服。该面具可过滤空气中的有害颗粒，使佩戴者能在野外安全呼吸。根据污染区域的危险程度，面具滤毒罐平均可使用
+    12 小时或更短时间。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/cbrn.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Helmets/cbrn.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: CMArmor
     melee: 30
     bullet: 15
     bio: 100
     explosionArmor: 20
-    # armor_rad = 55
   - type: ClothingGrantComponents
     components:
     - type: RMCImmuneToIgnition
     - type: RMCImmuneToFireTileDamage
-# TODO: add advanced version of CBRN helmet

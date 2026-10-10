@@ -1,8 +1,8 @@
 - type: entity
   id: BaseBorgModule
   parent: BaseItem
-  name: borg module
-  description: A piece of tech that gives cyborgs new abilities.
+  name: 赛博格模块 | borg module
+  description: 一种赋予赛博格新能力的技术装置。 | A piece of tech that gives cyborgs new abilities.
   abstract: true
   components:
   - type: Item
@@ -30,7 +30,7 @@
     borgFitTypes:
     - borg-type-all
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: no-action }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: no-action}
   - type: StaticPrice
     price: 100
   - type: Tag
@@ -48,14 +48,14 @@
   - type: SelectableBorgModule
   - type: ContainerContainer
     containers:
-      holding_container: !type:Container { }
+      holding_container: !type:Container {}
 
 - type: entity
   parent: BaseAction
   id: ActionBorgSwapModule
   # Name and description will normally be changed by BorgSystem
-  name: Swap Module
-  description: Select this module, enabling you to use the tools it provides.
+  name: 交换模块 | Swap Module
+  description: 选择此模块，使您能够使用其提供的工具。 | Select this module, enabling you to use the tools it provides.
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -455,9 +455,9 @@
 # generic modules
 - type: entity
   id: BorgModulePrying
-  parent: [ BaseBorgModule ]
-  name: prying module
-  description: A universal cyborg module which allows the unit to pry open doors.
+  parent: [BaseBorgModule]
+  name: 撬门模块 | prying module
+  description: 一个通用义体模块，允许单位撬开门。 | A universal cyborg module which allows the unit to pry open doors.
   components:
   - type: Sprite
     layers:
@@ -472,9 +472,9 @@
 
 - type: entity
   id: BorgModuleCable
-  parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: cable cyborg module
-  description: A universal cyborg module which allows the unit to install and manipulate electrical systems.
+  parent: [BaseBorgModule, BaseProviderBorgModule]
+  name: 电缆赛博格模块 | cable cyborg module
+  description: 一个通用赛博格模块，允许单位安装和操作电气系统。 | A universal cyborg module which allows the unit to install and manipulate electrical systems.
   components:
   - type: Sprite
     layers:
@@ -507,13 +507,13 @@
     - item: Crowbar
     - item: trayScanner
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: wire-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: wire-module}
 
 - type: entity
   id: BorgModuleArtistry
-  parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: artistry cyborg module
-  description: A module for arts & crafts whilst the station burns!
+  parent: [BaseBorgModule, BaseProviderBorgModule]
+  name: 艺术义体模块 | artistry cyborg module
+  description: 当空间站在燃烧时，用于艺术和手工艺的模块！ | A module for arts & crafts whilst the station burns!
   components:
   - type: Sprite
     layers:
@@ -524,13 +524,13 @@
     - item: SprayPainterBorg
     - item: CrayonBorg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: artistry-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: artistry-module}
 
 - type: entity
   id: BorgModuleFireExtinguisher
-  parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: thruster cyborg module
-  description: NT assigned a team to design a jetpack for cyborg units, but they ran out of funding and just made a bigger fire extinguisher. It comes with a integrated GPS and mass scanner though!
+  parent: [BaseBorgModule, BaseProviderBorgModule]
+  name: 推进器赛博格模块 | thruster cyborg module
+  description: NT指派了一个团队为赛博格单位设计喷气背包，但资金耗尽，只造出了一个更大的灭火器。不过它配备了集成GPS和质量扫描仪！ | NT assigned a team to design a jetpack for cyborg units, but they ran out of funding and just made a bigger fire extinguisher. It comes with a integrated GPS and mass scanner though!
   components:
   - type: Sprite
     layers:
@@ -543,12 +543,12 @@
     - item: HandheldStationMapUnpowered
     - item: HandHeldMassScannerBorg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: extinguisher-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: extinguisher-module}
 
 - type: entity
   id: BorgModuleTool
-  parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: tool cyborg module
+  parent: [BaseBorgModule, BaseProviderBorgModule]
+  name: 工具赛博格模块 | tool cyborg module
   components:
   - type: Sprite
     layers:
@@ -563,12 +563,12 @@
     - item: WelderIndustrial
     - item: Multitool
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: tool-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: tool-module}
 
 - type: entity
   id: BorgModuleInflatable
-  parent: [ BaseBorgModule, BaseProviderBorgModule ]
-  name: inflatable cyborg module
+  parent: [BaseBorgModule, BaseProviderBorgModule]
+  name: 充气赛博格模块 | inflatable cyborg module
   components:
   - type: Sprite
     layers:
@@ -593,13 +593,13 @@
     - item: BoxInflatable
     - item: WeaponMeleeNeedle
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: inflatable-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: inflatable-module}
 
 # cargo modules
 - type: entity
   id: BorgModuleAppraisal
-  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
-  name: appraisal cyborg module
+  parent: [BaseBorgModuleCargo, BaseProviderBorgModule]
+  name: 评估赛博格模块 | appraisal cyborg module
   components:
   - type: Sprite
     layers:
@@ -614,12 +614,12 @@
     - item: RubberStampDenied
     - item: RadioHandheld
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: appraisal-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: appraisal-module}
 
 - type: entity
   id: BorgModuleMining
-  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
-  name: mining cyborg module
+  parent: [BaseBorgModuleCargo, BaseProviderBorgModule]
+  name: 采矿赛博格模块 | mining cyborg module
   components:
   - type: Sprite
     layers:
@@ -632,13 +632,13 @@
     - item: MineralScannerUnpowered
     - item: BorgOreBag
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: mining-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: mining-module}
 
 - type: entity
   id: BorgModuleAdvancedMining
-  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
-  name: advanced mining cyborg module
-  description: Advanced cargo module containing advanced mining equipment. Studies show it advances productivity of a cyborg by 150%.
+  parent: [BaseBorgModuleCargo, BaseProviderBorgModule]
+  name: 高级采矿赛博格模块 | advanced mining cyborg module
+  description: 包含高级采矿设备的高级货运模块。研究表明，它可将赛博格的生产力提高150%。 | Advanced cargo module containing advanced mining equipment. Studies show it advances productivity of a cyborg by 150%.
   components:
   - type: Sprite
     layers:
@@ -651,12 +651,12 @@
     - item: AdvancedMineralScannerUnpowered
     - item: BorgOreBagOfHolding
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: adv-mining-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: adv-mining-module}
 
 - type: entity
   id: BorgModuleTraversal
-  parent: [ BaseBorgModuleCargo, BaseProviderBorgModule ]
-  name: traversal cyborg module
+  parent: [BaseBorgModuleCargo, BaseProviderBorgModule]
+  name: 遍历赛博格模块 | traversal cyborg module
   components:
   - type: Sprite
     layers:
@@ -669,14 +669,14 @@
     - item: BorgHandheldGPSBasic
     - item: HandHeldMassScannerBorg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: grappling-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: grappling-module}
 
 # engineering modules
 - type: entity
   id: BorgModuleAdvancedTool
-  parent: [ BaseBorgModuleEngineering, BaseProviderBorgModule ]
-  name: advanced tool cyborg module
-  description: Advanced engineering module containing cutting-edge tools.
+  parent: [BaseBorgModuleEngineering, BaseProviderBorgModule]
+  name: 高级工具赛博格模块 | advanced tool cyborg module
+  description: 包含尖端工具的高级工程模块。 | Advanced engineering module containing cutting-edge tools.
   components:
   - type: Sprite
     layers:
@@ -690,7 +690,7 @@
     - item: Multitool
     - item: RemoteSignallerAdvanced
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: adv-tools-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: adv-tools-module}
 
 - type: entity
   id: BorgModuleConstructionMaterialPlaceholder
@@ -702,8 +702,8 @@
 
 - type: entity
   id: BorgModuleConstruction
-  parent: [ BaseBorgModuleEngineering, BaseProviderBorgModule ]
-  name: construction cyborg module
+  parent: [BaseBorgModuleEngineering, BaseProviderBorgModule]
+  name: 建筑赛博格模块 | construction cyborg module
   components:
   - type: Sprite
     layers:
@@ -769,12 +769,12 @@
           components:
           - FloorTile
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: construction-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: construction-module}
 
 - type: entity
   id: BorgModuleRCD
-  parent: [ BaseBorgModuleEngineering, BaseProviderBorgModule ]
-  name: engineering cyborg module
+  parent: [BaseBorgModuleEngineering, BaseProviderBorgModule]
+  name: 工程赛博格模块 | engineering cyborg module
   components:
   - type: Sprite
     layers:
@@ -789,13 +789,13 @@
     - item: HolofanProjectorBorg
     - item: GeigerCounter
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: rcd-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: rcd-module}
 
 # janitorial modules (this gets its own unique things because janis are epic)
 - type: entity
   id: BorgModuleCustodial
-  parent: [ BaseBorgModuleJanitor, BaseProviderBorgModule ]
-  name: custodial cyborg module
+  parent: [BaseBorgModuleJanitor, BaseProviderBorgModule]
+  name: 监护赛博格模块 | custodial cyborg module
   components:
   - type: Sprite
     layers:
@@ -814,12 +814,12 @@
           tags:
           - Soap
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: light-replacer-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: light-replacer-module}
 
 - type: entity
   id: BorgModuleCleaning
-  parent: [ BaseBorgModuleJanitor, BaseProviderBorgModule ]
-  name: cleaning cyborg module
+  parent: [BaseBorgModuleJanitor, BaseProviderBorgModule]
+  name: 清洁赛博格模块 | cleaning cyborg module
   components:
   - type: Sprite
     layers:
@@ -833,13 +833,13 @@
     - item: BorgSprayBottle
     - item: HoloprojectorBorg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: cleaning-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: cleaning-module}
 
 - type: entity
   id: BorgModuleAdvancedCleaning
-  parent: [ BaseBorgModuleJanitor, BaseProviderBorgModule ]
-  name: advanced cleaning cyborg module
-  description: Advanced janitorial module containing, well... advanced janitor equipment. What were you expecting?
+  parent: [BaseBorgModuleJanitor, BaseProviderBorgModule]
+  name: 高级清洁赛博格模块 | advanced cleaning cyborg module
+  description: 包含高级清洁设备的先进清洁模块……不然你还期待什么？ | Advanced janitorial module containing, well... advanced janitor equipment. What were you expecting?
   components:
   - type: Sprite
     layers:
@@ -860,13 +860,13 @@
           components:
           - FitsInDispenser
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: adv-cleaning-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: adv-cleaning-module}
 
 # medical modules
 - type: entity
   id: BorgModuleDiagnosis # todo: reuse when med refractor is finished
-  parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
-  name: diagnosis cyborg module
+  parent: [BaseBorgModuleMedical, BaseProviderBorgModule]
+  name: 诊断赛博格模块 | diagnosis cyborg module
   components:
   - type: Sprite
     layers:
@@ -877,12 +877,12 @@
     - item: HandheldHealthAnalyzer
     - item: ClothingNeckStethoscope
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: diagnosis-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: diagnosis-module}
 
 - type: entity
   id: BorgModuleTopicals
-  parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
-  name: first aid cyborg module
+  parent: [BaseBorgModuleMedical, BaseProviderBorgModule]
+  name: 急救赛博格模块 | first aid cyborg module
   components:
   - type: Sprite
     layers:
@@ -914,12 +914,12 @@
           components:
           - Healing
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: treatment-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: treatment-module}
 
 - type: entity
   id: BorgModuleRescue
-  parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
-  name: rescue cyborg module
+  parent: [BaseBorgModuleMedical, BaseProviderBorgModule]
+  name: 救援赛博格模块 | rescue cyborg module
   components:
   - type: Sprite
     layers:
@@ -933,12 +933,12 @@
     - item: BorgFireExtinguisher
     - item: BorgHandheldGPSBasic
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: defib-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: defib-module}
 
 - type: entity
   id: BorgModuleChemical
-  parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
-  name: chemical cyborg module
+  parent: [BaseBorgModuleMedical, BaseProviderBorgModule]
+  name: 化学赛博格模块 | chemical cyborg module
   components:
   - type: Sprite
     layers:
@@ -983,13 +983,13 @@
           tags:
           - ChemDispensable
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: chem-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: chem-module}
 
 - type: entity
   id: BorgModuleAdvancedTopical
-  parent: [ BaseBorgModuleMedical, BaseProviderBorgModule ]
-  name: advanced first aid cyborg module
-  description: Advanced medical module containing the cyborg adaptation of the highly coveted hypospray. Now your cyborgs can inject crew-harmers with chloral hydrate even faster!
+  parent: [BaseBorgModuleMedical, BaseProviderBorgModule]
+  name: 高级急救赛博格模块 | advanced first aid cyborg module
+  description: 高级医疗模块，包含备受追捧的催眠注射器的赛博格适配版本。现在你的赛博格可以更快地给船员伤害者注射水合氯醛了！ | Advanced medical module containing the cyborg adaptation of the highly coveted hypospray. Now your cyborgs can inject crew-harmers with chloral hydrate even faster!
   components:
   - type: Sprite
     layers:
@@ -1021,14 +1021,14 @@
           components:
           - Healing
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: adv-chem-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: adv-chem-module}
 
 # science modules
 # todo: if science ever gets their own custom robot, add more "sci" modules.
 - type: entity
   id: BorgModuleArtifact
-  parent: [ BaseBorgModuleScience, BaseProviderBorgModule ]
-  name: artifact cyborg module
+  parent: [BaseBorgModuleScience, BaseProviderBorgModule]
+  name: 人工制品赛博格模块 | artifact cyborg module
   components:
   - type: Sprite
     layers:
@@ -1049,12 +1049,12 @@
           - FitsInDispenser
     - item: GeigerCounter
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: node-scanner-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: node-scanner-module}
 
 - type: entity
   id: BorgModuleAnomaly
-  parent: [ BaseBorgModuleScience, BaseProviderBorgModule ]
-  name: anomaly cyborg module
+  parent: [BaseBorgModuleScience, BaseProviderBorgModule]
+  name: 异常赛博格模块 | anomaly cyborg module
   components:
   - type: Sprite
     layers:
@@ -1079,13 +1079,13 @@
           tags:
           - ConstructionMaterial
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: anomaly-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: anomaly-module}
 
 # service modules
 - type: entity
   id: BorgModuleService
-  parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
-  name: service cyborg module
+  parent: [BaseBorgModuleService, BaseProviderBorgModule]
+  name: 赛博格服务模块 | service cyborg module
   components:
   - type: Sprite
     layers:
@@ -1130,12 +1130,12 @@
           - FitsInDispenser
     - item: BarSpoon
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: service-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: service-module}
 
 - type: entity
   id: BorgModuleMusique
-  parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
-  name: musique cyborg module
+  parent: [BaseBorgModuleService, BaseProviderBorgModule]
+  name: 赛博格音乐模块 | musique cyborg module
   components:
   - type: Sprite
     layers:
@@ -1165,12 +1165,12 @@
           components:
           - Instrument
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: musical-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: musical-module}
 
 - type: entity
   id: BorgModuleGardening
-  parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
-  name: gardening cyborg module
+  parent: [BaseBorgModuleService, BaseProviderBorgModule]
+  name: 园艺赛博格模块 | gardening cyborg module
   components:
   - type: Sprite
     layers:
@@ -1183,12 +1183,12 @@
     - item: HydroponicsToolClippers
     - item: Bucket
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: gardening-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: gardening-module}
 
 - type: entity
   id: BorgModuleHarvesting
-  parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
-  name: harvesting cyborg module
+  parent: [BaseBorgModuleService, BaseProviderBorgModule]
+  name: 采集赛博格模块 | harvesting cyborg module
   components:
   - type: Sprite
     layers:
@@ -1200,12 +1200,12 @@
     - item: HydroponicsToolHatchet
     - item: PlantBag
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: harvesting-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: harvesting-module}
 
 - type: entity
   id: BorgModuleClowning
-  parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
-  name: clowning cyborg module
+  parent: [BaseBorgModuleService, BaseProviderBorgModule]
+  name: 小丑赛博格模块 | clowning cyborg module
   components:
   - type: Sprite
     layers:
@@ -1217,13 +1217,13 @@
     - item: ClownRecorder
     - item: BikeHornInstrument
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: clowning-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: clowning-module}
 
 - type: entity
   id: BorgModuleAdvancedClowning
-  parent: [ BaseBorgModuleService, BaseProviderBorgModule ]
-  name: advanced clowning cyborg module
-  description: Advanced service module for only the silliest cyborgs! Comes with a built-in oven that bakes pies automatically over time, a holopeel projector, and a push horn.
+  parent: [BaseBorgModuleService, BaseProviderBorgModule]
+  name: 高级小丑赛博格模块 | advanced clowning cyborg module
+  description: 仅供最滑稽的赛博格使用的高级服务模块！内置烤箱会随时间自动烤制派，还有全息香蕉皮投影仪和气动喇叭。 | Advanced service module for only the silliest cyborgs! Comes with a built-in oven that bakes pies automatically over time, a holopeel projector, and a push horn.
   components:
   - type: Sprite
     layers:
@@ -1237,13 +1237,13 @@
     - item: PushHorn
     - item: BikeHornInstrument
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: adv-clowning-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: adv-clowning-module}
 
 #syndicate modules
 - type: entity
-  parent: [ BaseBorgModule, BaseProviderBorgModule, BaseSyndicateContraband ]
+  parent: [BaseBorgModule, BaseProviderBorgModule, BaseSyndicateContraband]
   id: BorgModuleSyndicateWeapon
-  name: weapon cyborg module
+  name: 武器赛博格模块 | weapon cyborg module
   components:
   - type: Sprite
     layers:
@@ -1254,7 +1254,7 @@
     - item: WeaponPistolEchis
     - item: EnergyDaggerLoud
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-weapon-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: syndicate-weapon-module}
   - type: Item
     inhandVisuals:
       left:
@@ -1277,29 +1277,29 @@
     price: 2500
 
 - type: entity
-  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
+  parent: [BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband]
   id: BorgModuleOperative
-  name: operative cyborg module
-  description: A module that comes with a crowbar, an Emag, an Access Breaker and a syndicate pinpointer.
+  name: 特工赛博格模块 | operative cyborg module
+  description: 一个包含撬棍、电磁枪、门禁破解器和辛迪加定位器的模块。 | A module that comes with a crowbar, an Emag, an Access Breaker and a syndicate pinpointer.
   components:
-    - type: Sprite
-      layers:
-      - state: syndicate
-      - state: icon-syndicate
-    - type: ItemBorgModule
-      hands:
-      - item: Crowbar
-      - item: Emag
-      - item: AccessBreaker
-      - item: PinpointerSyndicateNuclear
-    - type: BorgModuleIcon
-      icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-operative-module }
+  - type: Sprite
+    layers:
+    - state: syndicate
+    - state: icon-syndicate
+  - type: ItemBorgModule
+    hands:
+    - item: Crowbar
+    - item: Emag
+    - item: AccessBreaker
+    - item: PinpointerSyndicateNuclear
+  - type: BorgModuleIcon
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: syndicate-operative-module}
 
 - type: entity
-  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
+  parent: [BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband]
   id: BorgModuleEsword
-  name: energy sword cyborg module
-  description: A weapons module that comes with an energy sword.
+  name: 能量剑赛博格模块 | energy sword cyborg module
+  description: 一个附带能量剑的武器模块。 | A weapons module that comes with an energy sword.
   components:
   - type: Sprite
     layers:
@@ -1310,13 +1310,13 @@
     - item: CyborgEnergySword
     - item: PinpointerSyndicateNuclear
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-esword-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: syndicate-esword-module}
 
 - type: entity
   id: BorgModuleDoubleEsword
-  parent: [ BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband ]
-  name: double energy sword cyborg module
-  description: A weapons module that comes with a double energy sword.
+  parent: [BaseBorgModuleSyndicate, BaseProviderBorgModule, BaseSyndicateContraband]
+  name: 双能量剑赛博格模块 | double energy sword cyborg module
+  description: 一个附带双能量剑的武器模块。 | A weapons module that comes with a double energy sword.
   components:
   - type: Sprite
     layers:
@@ -1327,13 +1327,13 @@
     - item: CyborgEnergySwordDouble
     - item: PinpointerSyndicateNuclear
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-desword-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: syndicate-desword-module}
 
 - type: entity
-  parent: [ BaseBorgModuleSyndicateAssault, BaseProviderBorgModule, BaseSyndicateContraband ]
+  parent: [BaseBorgModuleSyndicateAssault, BaseProviderBorgModule, BaseSyndicateContraband]
   id: BorgModuleL6C
-  name: L6C ROW cyborg module
-  description: A weapons module that comes with a L6C.
+  name: L6C ROW 赛博格模块 | L6C ROW cyborg module
+  description: 一个随L6C附带的武器模块。 | A weapons module that comes with a L6C.
   components:
   - type: Sprite
     layers:
@@ -1344,13 +1344,13 @@
     - item: WeaponLightMachineGunL6C
     - item: PinpointerSyndicateNuclear
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-l6c-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: syndicate-l6c-module}
 
 - type: entity
-  parent: [ BaseBorgModuleSyndicateAssault, BaseProviderBorgModule, BaseSyndicateContraband ]
+  parent: [BaseBorgModuleSyndicateAssault, BaseProviderBorgModule, BaseSyndicateContraband]
   id: BorgModuleC20r
-  name: C-20r ROW cyborg module
-  description: A weapons module that comes with a burst-fire C-20r.
+  name: C-20r ROW 赛博格模块 | C-20r ROW cyborg module
+  description: 一个附带三连发C-20r的武器模块。 | A weapons module that comes with a burst-fire C-20r.
   components:
   - type: Sprite
     layers:
@@ -1361,50 +1361,50 @@
     - item: WeaponSubMachineGunC20rROW
     - item: PinpointerSyndicateNuclear
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-c20r-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: syndicate-c20r-module}
 
 - type: entity
-  parent: [ BaseBorgModule, BaseProviderBorgModule, BaseSyndicateContraband ]
+  parent: [BaseBorgModule, BaseProviderBorgModule, BaseSyndicateContraband]
   id: BorgModuleMartyr
-  name: martyr cyborg module
-  description: "A module that comes with an explosive you probably don't want to handle yourself."
+  name: 殉道者赛博格模块 | martyr cyborg module
+  description: "一个附带爆炸物的模块，你大概不想亲自处理它。 | A module that comes with an explosive you probably don't want to handle yourself."
   components:
-    - type: Sprite
-      layers:
-        - state: syndicateborgbomb
-        - state: icon-bomb
-    - type: ItemBorgModule
-      hands:
-      - item: SelfDestructSeq
-    - type: BorgModuleIcon
-      icon: { sprite: Interface/Actions/actions_borg.rsi, state: syndicate-martyr-module }
-    - type: Item
-      inhandVisuals:
-        left:
-        - state: base-icon-inhand-left
-          color: "#FF0000"
-        - state: base-module-inhand-left
-          color: "#891417"
-        - state: base-part-inhand-left
-        - state: base-stripes-inhand-left
-          color: "#7B0F12"
-        right:
-        - state: base-icon-inhand-right
-          color: "#FF0000"
-        - state: base-module-inhand-right
-          color: "#891417"
-        - state: base-part-inhand-right
-        - state: base-stripes-inhand-right
-          color: "#7B0F12"
-    - type: StaticPrice
-      price: 2000
+  - type: Sprite
+    layers:
+    - state: syndicateborgbomb
+    - state: icon-bomb
+  - type: ItemBorgModule
+    hands:
+    - item: SelfDestructSeq
+  - type: BorgModuleIcon
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: syndicate-martyr-module}
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-icon-inhand-left
+        color: "#FF0000"
+      - state: base-module-inhand-left
+        color: "#891417"
+      - state: base-part-inhand-left
+      - state: base-stripes-inhand-left
+        color: "#7B0F12"
+      right:
+      - state: base-icon-inhand-right
+        color: "#FF0000"
+      - state: base-module-inhand-right
+        color: "#891417"
+      - state: base-part-inhand-right
+      - state: base-stripes-inhand-right
+        color: "#7B0F12"
+  - type: StaticPrice
+    price: 2000
 
 # mothership module
 - type: entity
-  parent: [ BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband]
   id: MothershipModule
-  name: mothership module
-  description: A module that helps the mothership borg brains and install other modules.
+  name: 母舰模块 | mothership module
+  description: 帮助母舰博格大脑并安装其他模块的模块。 | A module that helps the mothership borg brains and install other modules.
   components:
   - type: Tag
     tags:
@@ -1452,14 +1452,14 @@
     - item: WelderExperimental
     - item: Multitool
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-module-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-module-module}
 
 # xenoborg modules
 - type: entity
-  parent: [ BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleBasic
-  name: basic xenoborg module
-  description: Essential items for any Xenoborg.
+  name: 基础异星生化模块 | basic xenoborg module
+  description: 任何异星生化机器人的必备物品。 | Essential items for any Xenoborg.
   components:
   - type: Sprite
     layers:
@@ -1483,13 +1483,13 @@
     - item: PinpointerMothership
     - item: HandheldGPSBasic
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-basic-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-basic-module}
 
 - type: entity
-  parent: [ BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleGeneric, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleTool
-  name: tool xenoborg module
-  description: Simple tools for most Xenoborgs.
+  name: 工具异生体模块 | tool xenoborg module
+  description: 大多数异生体工具。 | Simple tools for most Xenoborgs.
   components:
   - type: Sprite
     layers:
@@ -1504,13 +1504,13 @@
     - item: Multitool
     - item: RefuelingWelder
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-tool-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-tool-module}
 
 - type: entity
-  parent: [ BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleAdvancedTool
-  name: advanced tool xenoborg module
-  description: Advanced engineering module containing advanced xenoborg technology.
+  name: 高级工具异形生化模块 | advanced tool xenoborg module
+  description: 包含高级异形生化技术的先进工程模块。 | Advanced engineering module containing advanced xenoborg technology.
   components:
   - type: Sprite
     layers:
@@ -1526,13 +1526,13 @@
     - item: RCDRecharging
     - item: SelfRechargingFireExtinguisher
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-adv-tools-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-adv-tools-module}
 
 - type: entity
-  parent: [ BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleAccessBreaker
-  name: access breaker xenoborg module
-  description: Module with an access breaker.
+  name: 访问断路器异星机械模块 | access breaker xenoborg module
+  description: 带有访问断路器的模块。 | Module with an access breaker.
   components:
   - type: Sprite
     layers:
@@ -1546,16 +1546,16 @@
     hands:
     - item: XenoborgAccessBreaker
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-access-breaker-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-access-breaker-module}
   - type: Tag
     tags:
     - XenoborgModuleEngi
     - XenoborgModuleAccessBreaker
 
 - type: entity
-  parent: [ BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleConstruction
-  name: construction xenoborg module
+  name: 建造异星机械模块 | construction xenoborg module
   components:
   - type: Sprite
     layers:
@@ -1603,13 +1603,13 @@
           components:
           - Flatpack
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-construction-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-construction-module}
 
 - type: entity
-  parent: [ BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleDeflectorField
-  name: deflector field xenoborg module
-  description: Module with a self-recharging deflector field projector.
+  name: 偏导场异星生化模块 | deflector field xenoborg module
+  description: 带有自充能偏导场投射器的模块。 | Module with a self-recharging deflector field projector.
   components:
   - type: Sprite
     layers:
@@ -1619,13 +1619,13 @@
     hands:
     - item: HoloprojectorXenoField
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-deflector-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-deflector-module}
 
 - type: entity
-  parent: [ BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleDoorControl
-  name: door control xenoborg module
-  description: Module that allows Xenoborgs to control airlocks.
+  name: 门控制异形生化模块 | door control xenoborg module
+  description: 允许异形生化人控制气闸的模块。 | Module that allows Xenoborgs to control airlocks.
   components:
   - type: Sprite
     layers:
@@ -1641,41 +1641,41 @@
     - item: XenoborgAccessBreaker
     - item: AccessConfiguratorXenoborg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-door-remote-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-door-remote-module}
   - type: Tag
     tags:
     - XenoborgModuleEngi
     - XenoborgModuleAccessBreaker
 
 - type: entity
-  parent: [ BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleTileGun
-  name: tile gun xenoborg module
-  description: Module with a tile gun. wait, a what?
+  name: 瓷砖枪异星生化人模块 | tile gun xenoborg module
+  description: 带有瓷砖枪的模块。等等，什么？ | Module with a tile gun. wait, a what?
   components:
   - type: Sprite
     layers:
     - state: xenoborg_engi
     - state: icon-xenoborg-tile
   - type: BorgModuleWhitelist
-    moduleBlacklist: &secondaryWeapon
+    moduleBlacklist:
       tags:
       - XenoborgModuleSecondaryWeapon
   - type: ItemBorgModule
     hands:
     - item: WeaponTileGun
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-tile-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-tile-module}
   - type: Tag
     tags:
     - XenoborgModuleEngi
     - XenoborgModuleSecondaryWeapon
 
 - type: entity
-  parent: [ BaseXenoborgModuleEngi, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleEngi, BaseXenoborgContraband]
   id: XenoborgModuleZap
-  name: zap xenoborg module
-  description: Module that disables the grounding of the xenoborg, making them electrified. Shocking!
+  name: 电击异种机械体模块 | zap xenoborg module
+  description: 使异种机械体失去接地保护的模块，使其带电。电击！ | Module that disables the grounding of the xenoborg, making them electrified. Shocking!
   components:
   - type: Sprite
     layers:
@@ -1690,10 +1690,10 @@
       shockTime: 0.25
 
 - type: entity
-  parent: [ BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleOilGun
-  name: oil gun xenoborg module
-  description: Module with a gun that shoots ampoules filled with flammable oil.
+  name: 喷油枪异星生化模块 | oil gun xenoborg module
+  description: 装有喷油枪的模块，可发射装满易燃油的安瓿。 | Module with a gun that shoots ampoules filled with flammable oil.
   components:
   - type: Sprite
     layers:
@@ -1707,17 +1707,17 @@
     hands:
     - item: WeaponOilGun
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-oil-gun-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-oil-gun-module}
   - type: Tag
     tags:
     - XenoborgModuleEngi
     - XenoborgModulePrimaryWeapon
 
 - type: entity
-  parent: [ BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleEngi, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleNaniteGun
-  name: nanite gun xenoborg module
-  description: Module that allows Xenoborgs to have a crystal firing nanite gun.
+  name: 纳米机器人枪异生体模块 | nanite gun xenoborg module
+  description: 允许异生体拥有发射水晶的纳米机器人枪的模块。 | Module that allows Xenoborgs to have a crystal firing nanite gun.
   components:
   - type: Sprite
     layers:
@@ -1729,17 +1729,17 @@
     hands:
     - item: WeaponNaniteGun
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-nanite-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-nanite-module}
   - type: Tag
     tags:
     - XenoborgModuleEngi
     - XenoborgModulePrimaryWeapon
 
 - type: entity
-  parent: [ BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleJammer
-  name: jammer xenoborg module
-  description: Module with a communication jammer.
+  name: 干扰器异星机械模块 | jammer xenoborg module
+  description: 带有通信干扰器的模块。 | Module with a communication jammer.
   components:
   - type: Sprite
     layers:
@@ -1749,13 +1749,13 @@
     hands:
     - item: XenoborgRadioJammer
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-jammer-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-jammer-module}
 
 - type: entity
-  parent: [ BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleLaser
-  name: laser xenoborg module
-  description: Module with a laser gun.
+  name: 激光异星机械模块 | laser xenoborg module
+  description: 带有激光枪的模块。 | Module with a laser gun.
   components:
   - type: Sprite
     layers:
@@ -1767,17 +1767,17 @@
     hands:
     - item: WeaponLaserGunXenoborg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser-module}
   - type: Tag
     tags:
     - XenoborgModuleHeavy
     - XenoborgModulePrimaryWeapon
 
 - type: entity
-  parent: [ BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleHeavyLaser
-  name: laser cannon xenoborg module
-  description: Module with a laser cannon.
+  name: 激光炮异星机械模块 | laser cannon xenoborg module
+  description: 带有激光炮的模块。 | Module with a laser cannon.
   components:
   - type: Sprite
     layers:
@@ -1789,17 +1789,17 @@
     hands:
     - item: WeaponLaserCannonXenoborg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser2-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser2-module}
   - type: Tag
     tags:
     - XenoborgModuleHeavy
     - XenoborgModulePrimaryWeapon
 
 - type: entity
-  parent: [ BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleGuidedMissileLauncher
-  name: guided missile launcher xenoborg module
-  description: Module with guided missile launcher and a range finder to set targets.
+  name: 带有导弹发射器和测距仪的异形机械体模块，用于设定目标。 | guided missile launcher xenoborg module
+  description: 带有导弹发射器和测距仪的异形机械体模块，用于设定目标。 | Module with guided missile launcher and a range finder to set targets.
   components:
   - type: Sprite
     layers:
@@ -1821,7 +1821,7 @@
     - item: WeaponGuidedMissileLauncherXenoborg
     - item: WeaponRangeFinderXenoborg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-guided-missile-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-guided-missile-module}
   - type: Tag
     tags:
     - XenoborgModuleHeavy
@@ -1829,10 +1829,10 @@
     - XenoborgModuleWithSimpleOverlay
 
 - type: entity
-  parent: [ BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleRocket
-  name: rocket module
-  description: A module with a rocket launcher designed to destroy structures.
+  name: 火箭模块 | rocket module
+  description: 一种装有火箭发射器的模块，旨在摧毁建筑。 | A module with a rocket launcher designed to destroy structures.
   components:
   - type: Sprite
     layers:
@@ -1848,7 +1848,7 @@
     - item: WeaponRocketLauncherXenoborg
     - item: WeaponRocketLauncherXenoborg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-rocket-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-rocket-module}
   - type: ComponentBorgModule
     components:
     - type: SimpleSpriteOverlay
@@ -1862,10 +1862,10 @@
     - XenoborgModuleWithSimpleOverlay
 
 - type: entity
-  parent: [ BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleHeavy, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleBurstFireLaser
-  name: burst fire laser xenoborg module
-  description: Module with a burst fire incendiary laser.
+  name: 连发激光异星生化模块 | burst fire laser xenoborg module
+  description: 具有连发燃烧激光的模块。 | Module with a burst fire incendiary laser.
   components:
   - type: Sprite
     layers:
@@ -1877,17 +1877,17 @@
     hands:
     - item: WeaponBurstFireLaserXenoborg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser3-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-laser3-module}
   - type: Tag
     tags:
     - XenoborgModuleHeavy
     - XenoborgModulePrimaryWeapon
 
 - type: entity
-  parent: [ BaseXenoborgModuleHeavy, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleHeavy, BaseXenoborgContraband]
   id: XenoborgModuleHeavyRadioactive
-  name: radioactive xenoborg module
-  description: Module that causes a xenoborg to emanate radioactive energy.
+  name: 放射性异星生化模块 | radioactive xenoborg module
+  description: 使异星生化人散发放射性能量的模块。 | Module that causes a xenoborg to emanate radioactive energy.
   components:
   - type: PointLight
     color: green
@@ -1895,10 +1895,10 @@
     energy: 1
   - type: Sprite
     layers:
-      - state: xenoborg_heavy
-      - state: icon-xenoborg-radioactive
+    - state: xenoborg_heavy
+    - state: icon-xenoborg-radioactive
   - type: BorgModuleWhitelist
-    moduleBlacklist: &moduleWithSimpleOverlay
+    moduleBlacklist:
       tags:
       - XenoborgModuleWithSimpleOverlay
   - type: ComponentBorgModule
@@ -1922,10 +1922,10 @@
     - XenoborgModuleWithSimpleOverlay
 
 - type: entity
-  parent: [ BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleSpaceMovement
-  name: space movement xenoborg module
-  description: Module that helps a Xenoborg move better in space.
+  name: 太空移动异星机械模块 | space movement xenoborg module
+  description: 帮助异星机械在太空中更好移动的模块。 | Module that helps a Xenoborg move better in space.
   components:
   - type: Sprite
     layers:
@@ -1940,13 +1940,13 @@
     - item: WeaponGrapplingGun
     - item: JetpackXenoborg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-space-movement-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-space-movement-module}
 
 - type: entity
-  parent: [ BaseXenoborgModuleScout, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleScout, BaseXenoborgContraband]
   id: XenoborgModuleJump
-  name: xenoborg jump module
-  description: Module that allows a xenoborg to jump forward.
+  name: 异形生化人跳跃模块 | xenoborg jump module
+  description: 允许异形生化人向前跳跃的模块。 | Module that allows a xenoborg to jump forward.
   components:
   - type: ComponentBorgModule
     components:
@@ -1960,10 +1960,10 @@
     - state: icon-xenoborg-jump
 
 - type: entity
-  parent: [ BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleSword
-  name: knife xenoborg module
-  description: Module with a kukri knife.
+  name: 刀 异星生化模块 | knife xenoborg module
+  description: 带有库克力弯刀的模块。 | Module with a kukri knife.
   components:
   - type: Sprite
     layers:
@@ -1976,17 +1976,17 @@
     - item: KukriKnife
     - item: JetpackXenoborg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-sword-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-sword-module}
   - type: Tag
     tags:
     - XenoborgModuleScout
     - XenoborgModulePrimaryWeapon
 
 - type: entity
-  parent: [ BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleEnergySword
-  name: energy dagger xenoborg module
-  description: Module with an energy dagger.
+  name: 能量匕首异星生化模块 | energy dagger xenoborg module
+  description: 带有能量匕首的模块。 | Module with an energy dagger.
   components:
   - type: Sprite
     layers:
@@ -1999,17 +1999,17 @@
     - item: EnergyDaggerLoudBlue
     - item: JetpackXenoborg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-sword2-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-sword2-module}
   - type: Tag
     tags:
     - XenoborgModuleScout
     - XenoborgModulePrimaryWeapon
 
 - type: entity
-  parent: [ BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleScout, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleBioKinfe
-  name: bio knife xenoborg module
-  description: Module with an bio knife.
+  name: 生物刀异星机械模块 | bio knife xenoborg module
+  description: 带有生物刀的模块。 | Module with an bio knife.
   components:
   - type: Sprite
     layers:
@@ -2022,17 +2022,17 @@
     - item: XenoborgBioKnife
     - item: JetpackXenoborg
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-bio-knife }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-bio-knife}
   - type: Tag
     tags:
     - XenoborgModuleScout
     - XenoborgModulePrimaryWeapon
 
 - type: entity
-  parent: [ BaseXenoborgModuleStealth, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleStealth, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleHypo
-  name: nocturine hypo xenoborg module
-  description: Module with a self-refilling nocturine hypo.
+  name: 夜宁注射器异体改造模块 | nocturine hypo xenoborg module
+  description: 带有自填充夜宁注射器的模块。 | Module with a self-refilling nocturine hypo.
   components:
   - type: Sprite
     layers:
@@ -2044,17 +2044,17 @@
     hands:
     - item: NocturineHypo
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-hypo-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-hypo-module}
   - type: Tag
     tags:
     - XenoborgModuleStealth
     - XenoborgModulePrimaryWeapon
 
 - type: entity
-  parent: [ BaseXenoborgModuleStealth, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleStealth, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleChameleonProjector
-  name: chameleon projector xenoborg module
-  description: Module with a chameleon projector.
+  name: 变色龙投影异星机械模块 | chameleon projector xenoborg module
+  description: 带有变色龙投影器的模块。 | Module with a chameleon projector.
   components:
   - type: Sprite
     layers:
@@ -2064,13 +2064,13 @@
     hands:
     - item: ChameleonProjectorNoBattery
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-projector-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-projector-module}
 
 - type: entity
-  parent: [ BaseXenoborgModuleStealth, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleStealth, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleCloakDevice
-  name: cloaking device xenoborg module
-  description: Module with a device that allows xenoborgs to become semi-invisible for some time.
+  name: 隐形装置异形生化模块 | cloaking device xenoborg module
+  description: 带有一种装置的模块，可让异形生化人暂时变为半隐形状态。 | Module with a device that allows xenoborgs to become semi-invisible for some time.
   components:
   - type: Sprite
     layers:
@@ -2084,17 +2084,17 @@
     hands:
     - item: CloakingDevice
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-eye-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-eye-module}
   - type: Tag
     tags:
     - XenoborgModuleStealth
     - XenoborgModuleInvisibility
 
 - type: entity
-  parent: [ BaseXenoborgModuleStealth, BaseProviderBorgModule, BaseXenoborgContraband ]
+  parent: [BaseXenoborgModuleStealth, BaseProviderBorgModule, BaseXenoborgContraband]
   id: XenoborgModuleSuperCloakDevice
-  name: invisibility device xenoborg module
-  description: Module with a device that allows xenoborgs to become truly invisible for a short amount of time.
+  name: 隐身装置异种赛博格模块 | invisibility device xenoborg module
+  description: 带有一种装置的模块，可让异种赛博格在短时间内真正隐形。 | Module with a device that allows xenoborgs to become truly invisible for a short amount of time.
   components:
   - type: Sprite
     layers:
@@ -2108,7 +2108,7 @@
     hands:
     - item: SuperCloakingDevice
   - type: BorgModuleIcon
-    icon: { sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-eye2-module }
+    icon: {sprite: Interface/Actions/actions_borg.rsi, state: xenoborg-eye2-module}
   - type: Tag
     tags:
     - XenoborgModuleStealth

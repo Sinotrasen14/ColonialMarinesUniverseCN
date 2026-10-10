@@ -3,8 +3,8 @@
 - type: entity
   parent: BaseItem
   id: PersonalAI
-  name: personal ai device
-  description: Your electronic pal who's fun to be with!
+  name: 个人AI设备 | personal ai device
+  description: 你的电子伙伴，与你共度欢乐时光！ | Your electronic pal who's fun to be with!
   components:
   - type: Instrument
     allowPercussion: false
@@ -81,21 +81,21 @@
     # Note that the personal AI never "dies".
   - type: MobState
     allowedStates:
-      - Alive
+    - Alive
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ToggleableGhostRoleVisuals.Status:
         screen:
-          Off: { state: pai-off-overlay }
-          Searching: { state: pai-searching-overlay }
-          On: { state: pai-on-overlay }
+          Off: {state: pai-off-overlay}
+          Searching: {state: pai-searching-overlay}
+          On: {state: pai-on-overlay}
   - type: StationMap
   - type: ChangeVoiceInContainer
     whitelist:
       components:
-        - SecretStash
-        - WrappedParcel
+      - SecretStash
+      - WrappedParcel
   - type: Vocal
     emoteSounds: UnisexSilicon
   - type: Tag
@@ -109,10 +109,10 @@
       - state: base-inhand-right
 
 - type: entity
-  parent: [ PersonalAI, BaseSyndicateContraband]
+  parent: [PersonalAI, BaseSyndicateContraband]
   id: SyndicatePersonalAI
-  name: syndicate personal ai device
-  description: Your Syndicate pal who's fun to be with!
+  name: 辛迪加个人人工智能设备 | syndicate personal ai device
+  description: 你的辛迪加伙伴，与你共度欢乐时光！ | Your Syndicate pal who's fun to be with!
   components:
   - type: Sprite
     sprite: Objects/Fun/pai.rsi
@@ -138,9 +138,9 @@
     visuals:
       enum.ToggleableGhostRoleVisuals.Status:
         screen:
-          Off: { state: syndicate-pai-off-overlay }
-          Searching: { state: syndicate-pai-searching-overlay }
-          On: { state: syndicate-pai-on-overlay }
+          Off: {state: syndicate-pai-off-overlay}
+          Searching: {state: syndicate-pai-searching-overlay}
+          On: {state: syndicate-pai-on-overlay}
   - type: StaticPrice
     price: 500
   - type: Vocal
@@ -155,8 +155,8 @@
 - type: entity
   parent: PersonalAI
   id: GoldenPersonalAI
-  name: golden personal ai device
-  description: Your electronic pal who's fun to be with! Special golden edition!
+  name: 金色个人AI设备 | golden personal ai device
+  description: 你的电子伙伴，与你共度欢乐时光！特别金色版！ | Your electronic pal who's fun to be with! Special golden edition!
   components:
   - type: Sprite
     sprite: Objects/Fun/pai.rsi
@@ -176,8 +176,8 @@
 - type: entity
   parent: PersonalAI
   id: PotatoAI
-  name: potato artificial intelligence
-  description: It's a potato. You forced it to be sentient, you monster.
+  name: 土豆人工智能 | potato artificial intelligence
+  description: 它是一个土豆。你强迫它有了知觉，你这个怪物。 | It's a potato. You forced it to be sentient, you monster.
   components:
   - type: Sprite
     sprite: Objects/Fun/pai.rsi
@@ -197,9 +197,9 @@
     visuals:
       enum.ToggleableGhostRoleVisuals.Status:
         screen:
-          Off: { state: potato-off-overlay }
-          Searching: { state: potato-searching-overlay }
-          On: { state: potato-on-overlay }
+          Off: {state: potato-off-overlay}
+          Searching: {state: potato-searching-overlay}
+          On: {state: potato-on-overlay}
   - type: Construction
     graph: PotatoAI
     node: potatoai
@@ -215,14 +215,14 @@
 - type: entity
   parent: ActionIntrinsicStore
   id: ActionPAIOpenShop
-  name: Software Catalog
-  description: Install new software to assist your owner.
+  name: 软件目录 | Software Catalog
+  description: 安装新软件以协助你的主人。 | Install new software to assist your owner.
 
 - type: entity
   parent: BaseMentalAction
   id: ActionPAIMassScanner
-  name: Mass Scanner
-  description: View a mass scanner interface.
+  name: 质量扫描仪 | Mass Scanner
+  description: 查看质量扫描仪界面。 | View a mass scanner interface.
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -237,8 +237,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionPAIPlayMidi
-  name: Play MIDI
-  description: Open your portable MIDI interface to soothe your owner.
+  name: 播放MIDI | Play MIDI
+  description: 打开你的便携式MIDI接口来安抚你的主人。 | Open your portable MIDI interface to soothe your owner.
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -252,8 +252,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionPAIOpenMap
-  name: Open Map
-  description: Open your map interface and guide your owner.
+  name: 打开地图 | Open Map
+  description: 打开你的地图界面并引导你的主人。 | Open your map interface and guide your owner.
   components:
   - type: Action
     itemIconStyle: NoItem

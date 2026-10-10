@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
-  parent: [ BaseCartridge, BaseSecurityContraband ]
+  parent: [BaseCartridge, BaseSecurityContraband]
   id: BaseCartridgeLightRifle
-  name: cartridge (.30 rifle)
+  name: 弹药筒（.30步枪） | cartridge (.30 rifle)
   components:
   - type: Tag
     tags:
@@ -20,8 +20,8 @@
 - type: entity
   parent: BaseCartridgeLightRifle
   id: CartridgeLightRifle
-  name: cartridge (.30 rifle)
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Standard kinetic ammunition is common and useful in most situations.
+  name: 弹药（.30步枪） | cartridge (.30 rifle)
+  description: 一种经典的中间型弹药，被许多战斗步枪和轻机枪使用。标准动能弹药很常见，在大多数情况下都很有用。 | A classic intermediate cartridge used by many combat rifles and LMGs. Standard kinetic ammunition is common and useful in most situations.
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifle
@@ -29,47 +29,47 @@
 - type: entity
   parent: BaseCartridgeLightRifle
   id: CartridgeLightRiflePractice
-  name: cartridge (.30 rifle practice)
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  name: 弹药（.30步枪训练弹） | cartridge (.30 rifle practice)
+  description: 一种经典的中间型弹药，被许多战斗步枪和轻机枪使用。训练弹发射 chalk 弹头，只会造成轻微刺痛，除此之外不会造成持久伤害。 | A classic intermediate cartridge used by many combat rifles and LMGs. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
   components:
   - type: CartridgeAmmo
     proto: BulletLightRiflePractice
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#dbdbdb"
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+    - state: tip
+      map: ["enum.AmmoVisualLayers.Tip"]
+      color: "#dbdbdb"
 
 - type: entity
   parent: BaseCartridgeLightRifle
   id: CartridgeLightRifleIncendiary
-  name: cartridge (.30 rifle incendiary)
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
+  name: 弹药（.30步枪燃烧弹） | cartridge (.30 rifle incendiary)
+  description: 一种经典的中间型弹药，被许多战斗步枪和轻机枪使用。燃烧弹含有自燃化合物，可使目标着火燃烧。 | A classic intermediate cartridge used by many combat rifles and LMGs. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleIncendiary
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#ff6e52"
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+    - state: tip
+      map: ["enum.AmmoVisualLayers.Tip"]
+      color: "#ff6e52"
 
 - type: entity
   parent: BaseCartridgeLightRifle
   id: CartridgeLightRifleUranium
-  name: cartridge (.30 rifle uranium)
-  description: A classic intermediate cartridge used by many combat rifles and LMGs. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
+  name: 弹药（.30步枪铀弹） | cartridge (.30 rifle uranium)
+  description: 一种经典的中间型弹药，被许多战斗步枪和轻机枪使用。铀弹将弹头的铅芯替换为裂变材料，从内部辐照目标。 | A classic intermediate cartridge used by many combat rifles and LMGs. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
   components:
   - type: CartridgeAmmo
     proto: BulletLightRifleUranium
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#65fe08"
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+    - state: tip
+      map: ["enum.AmmoVisualLayers.Tip"]
+      color: "#65fe08"

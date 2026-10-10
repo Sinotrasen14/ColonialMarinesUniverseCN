@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: BaseMeteor
-  name: meteor
-  description: You prefer them when they're burning up in the atmosphere.
+  name: 流星 | meteor
+  description: 你更喜欢它们在大气层中燃烧殆尽的样子。 | You prefer them when they're burning up in the atmosphere.
   components:
   - type: Sprite
     noRot: false
@@ -23,8 +23,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.4
         density: 100
         hard: false
@@ -48,16 +47,15 @@
 - type: entity
   parent: BaseMeteor
   id: MeteorSpaceDust
-  name: space dust
-  description: Makes a station sneeze.
+  name: 太空尘埃 | space dust
+  description: 让空间站打喷嚏。 | Makes a station sneeze.
   components:
   - type: Sprite
     state: space_dust
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 100
         hard: false
@@ -70,12 +68,11 @@
     totalIntensity: 25
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -91,8 +88,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.25
         density: 100
         hard: false
@@ -105,12 +101,11 @@
     totalIntensity: 50
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -131,8 +126,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.3
         density: 100
         hard: false
@@ -145,12 +139,11 @@
     totalIntensity: 100
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 450
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -173,12 +166,11 @@
     totalIntensity: 150
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 900
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -192,15 +184,15 @@
 
 - type: entity
   abstract: true
-  parent: [ SolutionHuge, BaseMeteor ]
+  parent: [SolutionHuge, BaseMeteor]
   id: BaseSolutionMeteor
 
 - type: entity
   parent: BaseMeteor
   id: MeteorUrist
-  name: Urist McMeteor
+  name: 乌里斯特·麦克米蒂尔 | Urist McMeteor
   suffix: Meteor
-  description: As a successful member of society with a stable unflinching psyche and limitless drive, natural affinity for finance and domination, you have been selected, no, you have been effortlessly guided by divine (biological) trauma towards this moment. The gates of destiny fling open, and once again you're left standing on pulsating nothingness. A strobing headache of the soul.
+  description: 作为社会中的成功一员，拥有稳定不屈的心智和无限的驱动力，对金融和统治有着天生的亲和力，你被选中了，不，你是被神圣的（生物性）创伤毫不费力地引导至这一刻。命运之门猛然敞开，而你再一次站在了脉动的虚无之上。灵魂中闪烁的头痛。 | As a successful member of society with a stable unflinching psyche and limitless drive, natural affinity for finance and domination, you have been selected, no, you have been effortlessly guided by divine (biological) trauma towards this moment. The gates of destiny fling open, and once again you're left standing on pulsating nothingness. A strobing headache of the soul.
   components:
   - type: Sprite
     state: human_pixel
@@ -213,12 +205,11 @@
     totalIntensity: 25
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1500
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MaleScreams
@@ -237,9 +228,9 @@
 - type: entity
   parent: BaseSolutionMeteor
   id: MeteorCow
-  name: Cosmic cow
+  name: 宇宙奶牛 | Cosmic cow
   suffix: Meteor
-  description: Moo-ving at relativistic speeds!
+  description: 以相对论速度哞哞移动！ | Moo-ving at relativistic speeds!
   components:
   - type: Sprite
     state: cow_pixel
@@ -252,12 +243,11 @@
         Quantity: 480
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1500
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Animals/cow_moo.ogg
@@ -277,9 +267,9 @@
 - type: entity
   parent: BaseSolutionMeteor
   id: MeteorClown
-  name: Honksteroid
+  name: 鸣笛星 | Honksteroid
   suffix: Meteor
-  description: The final honkening!
+  description: 最后的鸣笛！ | The final honkening!
   components:
   - type: Sprite
     state: clown_pixel
@@ -292,12 +282,11 @@
         Quantity: 480
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1500
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Items/bikehorn.ogg
@@ -320,8 +309,8 @@
 - type: entity
   parent: BaseSolutionMeteor
   id: MeteorPotato
-  name: Space potato
-  description: A starchy threat from the depths of the space. Contains 200% of your daily sodium intake!
+  name: 太空土豆 | Space potato
+  description: 来自太空深处的淀粉质威胁。含有你每日钠摄入量的200%！ | A starchy threat from the depths of the space. Contains 200% of your daily sodium intake!
   components:
   - type: Sprite
     state: potato
@@ -334,12 +323,11 @@
         Quantity: 120
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1500
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:SpillBehavior
         solution: solution
       - !type:SpawnEntitiesBehavior

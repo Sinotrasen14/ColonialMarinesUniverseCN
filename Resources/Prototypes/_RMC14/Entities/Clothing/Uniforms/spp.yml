@@ -1,8 +1,10 @@
 - type: entity
-  parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
+  parent:
+  - RMCMarineUniformBase
+  - RMCFoldableUniformBase
   id: CMJumpsuitSPP
-  name: UPP fatigues
-  description: A set of UPP fatigues, mass produced for the armed-forces of the Union of Progressive Peoples.
+  name: UPP 作训服
+  description: 一套 UPP 作训服，为进步人民联盟的武装部队批量生产。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/uniform.rsi
@@ -15,140 +17,123 @@
   - type: Tag
     tags:
     - RMCUniformSPP
-
 - type: entity
   parent: CMJumpsuitSPP
   id: RMCJumpsuitSPPWebbing
   components:
   - type: WebbingClothing
     startingWebbing: CMWebbing
-
 - type: entity
   parent: CMJumpsuitSPP
   id: RMCJumpsuitSPPWebbingVestBlack
   components:
   - type: WebbingClothing
     startingWebbing: CMWebbingBlack
-
 - type: entity
   parent: CMJumpsuitSPP
   id: RMCJumpsuitSPPWebbingTools
   components:
   - type: WebbingClothing
     startingWebbing: RMCToolWebbingFilled
-
 - type: entity
   parent: CMJumpsuitSPP
   id: CMJumpsuitSPPMedic
-  name: UPP medic fatigues
-  description: A set of UPP medic fatigues, mass produced for the armed-forces of the Union of Progressive Peoples.
+  name: UPP医疗兵制服
+  description: 一套为进步人民联盟武装部队批量生产的UPP医疗兵制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/medic.rsi
-
 - type: entity
   parent: CMJumpsuitSPP
   id: CMJumpsuitSPPEngi
-  name: UPP engineer fatigues
-  description: A set of UPP engineer fatigues, mass produced for the armed-forces of the Union of Progressive Peoples.
+  name: UPP工程师工作服
+  description: 一套UPP工程师工作服，为进步人民联盟武装部队批量生产。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/engi.rsi
-
 - type: entity
   parent: CMJumpsuitSPP
   id: CMJumpsuitSPPMP
-  name: UPP military police fatigues
-  description: A set of UPP military police fatigues, mass produced for the armed-forces of the Union of Progressive Peoples.
+  name: UPP宪兵作训服
+  description: 一套UPP宪兵作训服，为进步人民联盟武装部队批量生产。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/mp.rsi
-
 - type: entity
   parent: CMJumpsuitSPP
   id: CMJumpsuitSPPOfficer
-  name: UPP officer fatigues
-  description: A set of UPP officer fatigues, mass produced for the armed-forces of the Union of Progressive Peoples.
+  name: UPP军官制服
+  description: 一套UPP军官作训服，为进步人民联盟的武装部队批量生产。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/officer.rsi
-
 - type: entity
   parent: CMJumpsuitSPP
   id: RMCJumpsuitSPPPaP
-  name: PaP service uniform
-  description: A pair of blue-grey slacks coupled with a blue shirt, featuring venlar armor inserts at critical areas to protect from blades and low caliber ballistics.
+  name: PaP 勤务制服
+  description: 一条蓝灰色长裤搭配一件蓝色衬衫，关键部位配有文拉尔护甲插片，可防御刀刃和低口径弹道。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/pap.rsi
-
 - type: entity
   parent: CMJumpsuitSPP
   id: RMCJumpsuitSPPArmy
-  name: UPP army fatigues
-  description: A set of UPP fatigues, mass produced for the Armed Collective of the Union of Progressive Peoples. A rare sight, especially in 3WE zones. This particular set sports the standard UPP pattern of the UPP Army's 202nd Infantry Regiment.
+  name: UPP陆军作训服
+  description: 一套为进步人民联盟武装集体批量生产的UPP作训服。十分罕见，尤其是在3WE区域。这套作训服采用UPP陆军第202步兵团的标准UPP图案。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/army.rsi
-
 - type: entity
   parent: RMCJumpsuitSPPArmy
   id: RMCJumpsuitUPPArmyAlt
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/army_alt.rsi
-
-# Civilians
 - type: entity
   parent: RMCUniformBase
   id: CMJumpsuitSPPCiv1
-  name: UPP civilian-style orange overalls
-  description: A set of civilian-style orange overalls with a dark tan undershirt. The material is of a poor quality, however it's better than nothing. Clothing of this style is typically given out to those who work laborious jobs.
+  name: UPP民用款橙色工装裤
+  description: 一套民用款橙色工装裤，内搭一件深棕褐色汗衫。材质质量低劣，但聊胜于无。这种款式的服装通常会发给从事繁重劳动的人。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/civ1.rsi
-
 - type: entity
   parent: CMJumpsuitSPPCiv1
   id: CMJumpsuitSPPCiv2
-  name: UPP civilian-style tan overalls
-  description: A set of civilian-style tan overalls with a blue undershirt. The material is of a poor quality, however it's better than nothing. Clothing of this style is typically given to those who work laborious jobs.
+  name: UPP民用风格棕褐色工装裤
+  description: 一套民用风格的棕褐色工装裤，配一件蓝色内衫。材质质量很差，不过总比没有好。这种风格的服装通常发给从事繁重劳动的人。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/civ2.rsi
-
 - type: entity
   parent: CMJumpsuitSPPCiv1
   id: CMJumpsuitSPPCiv3
-  name: UPP civilian-style shirt and pants
-  description: A set of civilian-style tan shirt and jeans. The material, while poor, is comfortable enough to be worn during all periods of the day.
+  name: UPP平民风格衬衫和裤子
+  description: 一套平民风格的棕褐色衬衫和牛仔裤。材质虽然低劣，但足够舒适，可在一天中的任何时段穿着。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/civ3.rsi
-
 - type: entity
   parent: CMJumpsuitSPPCiv1
   id: CMJumpsuitSPPCiv4
-  name: UPP civilian-style vest and pants
-  description: A set of civilian-style brown vest and orange pants. The material is surprisingly decent, something not often worn by the civilians of the UPP for two reasons. They typically can't afford such clothing, and if they can, it paints a target on their back.
+  name: UPP平民风格背心和裤子
+  description: 一套平民风格的棕色背心和橙色裤子。材质出奇地不错，而UPP的平民并不常穿这种衣服，原因有两个。他们通常买不起这样的衣服，而就算买得起，也会让自己成为靶子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/civ4.rsi
-
 - type: entity
   parent: CMJumpsuitSPPCiv1
   id: RMCJumpsuitSPPCiv5
-  name: "Chǎnyè Combine mining overalls"
-  description: "A durable, olive-green jumpsuit worn beneath a sleeveless, puffy orange work vest—standard issue for Chǎnyè Combine laborers. The vest's faded fabric is lined with reinforced padding, offering minimal protection against workplace hazards. A red star insignia is stamped on the back, marking its wearer as part of the Combine’s industrial workforce. Stiff, uncomfortable, and mass-produced, but better than nothing in the unforgiving conditions of deep-space labor."
+  name: 产业联合体矿用工作服
+  description: 一件耐用的橄榄绿色连体服，穿在无袖、蓬松的橙色工作背心里面——产业联合体劳工的标准配发装备。背心褪色的面料内衬有加固衬垫，对工作场所的危险只能提供最低限度的防护。背上印有一颗红星徽记，表明穿戴者是产业联合体工业劳动力的一员。僵硬、不舒适、批量生产，但在深空劳动的严酷环境中，有总比没有好。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/civ5.rsi
-
 - type: entity
   parent: CMJumpsuitSPPCiv1
   id: CMJumpsuitSPPBear
-  name: Iron Bear uniform
-  description: A uniform worn by Iron Bears mercenaries. Smells a little like an actual bear.
+  name: 铁熊制服
+  description: 铁熊雇佣兵所穿的制服。闻起来有点像真正的熊。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/SPP/bear.rsi

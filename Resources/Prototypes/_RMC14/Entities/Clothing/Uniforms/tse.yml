@@ -1,20 +1,18 @@
-# TSEPA
-
 - type: entity
   parent: RMCArmoredUniformBase
   id: RMCJumpsuitTSEPA
-  name: nspa uniform
-  description: The standard uniform of a Neroid Sector Policing Authority officer.
+  name: NSPA制服
+  description: NSPA警官的标准制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/TSE/TSEPA/standard.rsi
-
-# Royal
 - type: entity
-  parent: [RMCJumpsuitTSEPA, RMCAlternateFoldableUniformBase]
+  parent:
+  - RMCJumpsuitTSEPA
+  - RMCAlternateFoldableUniformBase
   id: RMCJumpsuitMarineRoyal
-  name: royal marine commando uniform
-  description: The field uniform of the royal marine commandoes. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar USCMC equipment.
+  name: 皇家海军陆战队突击队制服
+  description: 皇家海军陆战队突击队的野战制服。他们配有轻质凯夫拉碎片，有助于防御刺击武器和子弹。与类似的美国殖民地海军陆战队装备相当。
   suffix: Filled, Royal
   components:
   - type: Sprite
@@ -27,7 +25,6 @@
     - RMCPatchTSE
   - type: ItemCamouflage
     camouflageVariations: {}
-
 - type: entity
   parent: RMCJumpsuitMarineRoyal
   id: RMCJumpsuitMarineRoyalMK80
@@ -35,7 +32,6 @@
   components:
   - type: WebbingClothing
     startingWebbing: RMCShoulderHolsterMK80
-
 - type: entity
   parent: RMCJumpsuitMarineRoyal
   id: RMCJumpsuitMarineRoyalMedic
@@ -43,7 +39,6 @@
   components:
   - type: WebbingClothing
     startingWebbing: CMWebbingSurgicalBlue
-
 - type: entity
   parent: RMCJumpsuitMarineRoyal
   id: RMCJumpsuitMarineRoyalDropPouch
@@ -51,12 +46,13 @@
   components:
   - type: WebbingClothing
     startingWebbing: RMCWebbingDropPouchRoyal
-
 - type: entity
-  parent: [RMCJumpsuitTSEPA, RMCAlternateFoldableUniformBase]
+  parent:
+  - RMCJumpsuitTSEPA
+  - RMCAlternateFoldableUniformBase
   id: RMCJumpsuitMarineRoyalTeamlead
-  name: royal marine commando uniform
-  description: The field uniform of the royal marine commandoes. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar USCMC equipment.
+  name: 皇家海军陆战队突击队制服
+  description: 皇家海军陆战队突击队的野战制服。它们配有轻型凯夫拉护片，有助于抵御刺击武器和子弹，与类似的美国殖民地海军陆战队装备不相上下。
   suffix: Filled, Royal, Teamlead
   components:
   - type: Sprite
@@ -67,14 +63,13 @@
     startingAccessories:
     - RMCPatchTSEMarines
     - RMCPatchTSE
-
-# PVE RCM jumpsuit without webbings
-
 - type: entity
-  parent: [RMCJumpsuitTSEPA, RMCFoldableUniformBase]
+  parent:
+  - RMCJumpsuitTSEPA
+  - RMCFoldableUniformBase
   id: RMCJumpsuitMarineRoyalPVE
-  name: royal crown marine uniform
-  description: The field uniform of the royal crown marines. They have shards of light Kevlar to help protect against stabbing weapons and bullets. Onpar with similar UNMC equipment.
+  name: 皇家王冠海军陆战队制服
+  description: 皇家王冠海军陆战队的野战制服。其中含有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。与类似的UNMC装备相当。
   suffix: Royal, PVE
   components:
   - type: Sprite
@@ -90,13 +85,13 @@
     foldVerbText: rmc-sleeves-verb-fold
   - type: FoldableClothing
     foldedEquippedPrefix: sleeves
-    
-# RCM Paramarines
 - type: entity
-  parent: [RMCJumpsuitTSEPA, RMCFoldableUniformBase]
+  parent:
+  - RMCJumpsuitTSEPA
+  - RMCFoldableUniformBase
   id: RMCJumpsuitMarinePara
-  name: paratropper battle dress uniform
-  description: No.8 Pattern BDU used by the IASF's Paratrooper regiments. Identical in cut and protection to standard issue uniforms, but issued in woodland camouflage. Lightweight Kevlar mesh offers limited protection against shrapnel and close-quarters threats.
+  name: 伞兵战斗服
+  description: IASF伞兵团使用的8号样式作战服。剪裁与防护性能与标准配发制服相同，但配发为丛林迷彩。轻质凯夫拉网面可对弹片和近距威胁提供有限防护。
   suffix: Survivor, Paratrooper
   components:
   - type: Sprite
@@ -114,41 +109,39 @@
     foldVerbText: rmc-sleeves-verb-fold
   - type: FoldableClothing
     foldedEquippedPrefix: sleeves
-    
 - type: entity
   parent: RMCJumpsuitMarinePara
   id: RMCJumpsuitMarineParaL88
   suffix: Survivor, Paratrooper, Webbing, L88
   components:
-    - type: WebbingClothing
-      startingWebbing: RMCParaWebbingL88
-    
+  - type: WebbingClothing
+    startingWebbing: RMCParaWebbingL88
 - type: entity
   parent: RMCJumpsuitMarinePara
   id: RMCJumpsuitMarineParaPDW90
   suffix: Survivor, Paratrooper, Webbing. PDW90AP
   components:
-    - type: WebbingClothing
-      startingWebbing: RMCParaWebbingPDW90AP
-    
+  - type: WebbingClothing
+    startingWebbing: RMCParaWebbingPDW90AP
 - type: entity
-  parent: [RMCJumpsuitTSEPA, RMCFoldableUniformBase]
+  parent:
+  - RMCJumpsuitTSEPA
+  - RMCFoldableUniformBase
   id: RMCJumpsuitMarineParaService
-  name: paratrooper service uniform
-  description: A formal No.2 service uniform worn by IASF Paratrooper's officers. Features the same upper torso cut as the No.8 BDU, but paired with pressed khaki trousers. Issued for inspections, ceremonial duties, or when deployed in an advisory role.
+  name: 伞兵常服
+  description: IASF伞兵军官穿着的正式2号勤务服。上身剪裁与8号作战服相同，但搭配熨烫平整的卡其裤。配发于检阅、礼仪任务或部署担任顾问职务时使用。
   suffix: Survivor, Paratrooper
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/Uniforms/TSE/RCM/para_officer.rsi
-    - type: UniformAccessoryHolder
-      startingAccessories:
-        - AU14TWEPatch
-        - RMCPatchTSEPara
-    - type: ItemCamouflage
-      camouflageVariations: {}
-    - type: Foldable
-      unfoldVerbText: rmc-sleeves-verb-unfold
-      foldVerbText: rmc-sleeves-verb-fold
-    - type: FoldableClothing
-      foldedEquippedPrefix: sleeves
-      
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Uniforms/TSE/RCM/para_officer.rsi
+  - type: UniformAccessoryHolder
+    startingAccessories:
+    - AU14TWEPatch
+    - RMCPatchTSEPara
+  - type: ItemCamouflage
+    camouflageVariations: {}
+  - type: Foldable
+    unfoldVerbText: rmc-sleeves-verb-unfold
+    foldVerbText: rmc-sleeves-verb-fold
+  - type: FoldableClothing
+    foldedEquippedPrefix: sleeves

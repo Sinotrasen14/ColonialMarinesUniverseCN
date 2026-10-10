@@ -3,13 +3,13 @@
 - type: entity
   parent: [SolutionVeryTiny, FoodInjectableBase, ItemHeftyBase]
   id: FoodEggBase
-  description: An egg!
+  description: 一个鸡蛋！ | An egg!
   abstract: true
   components:
   - type: Tag
     tags:
-      - Egg
-      - Meat
+    - Egg
+    - Meat
   - type: Edible
     trash:
     - Eggshells
@@ -40,8 +40,7 @@
     damageContainer: Biological
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1
       behaviors:
       - !type:PlaySoundBehavior
@@ -56,7 +55,7 @@
             max: 1
           # Wow double-yolk you're so lucky!
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   # all below are for egg cooking/exploding
   - type: AtmosExposed
   - type: Temperature
@@ -68,10 +67,10 @@
 
 # Splat
 - type: entity
-  name: eggshells
+  name: 蛋壳 | eggshells
   parent: BaseItem
   id: Eggshells
-  description: You're walkin' on 'em bud.
+  description: 你正踩在上面呢，伙计。 | You're walkin' on 'em bud.
   components:
   - type: Edible
   - type: Sprite
@@ -90,17 +89,17 @@
 - type: entity
   parent: FoodEggBase
   id: FoodEgg
-  name: egg
+  name: 蛋 | egg
   components:
   - type: Sprite
     layers:
-      - state: icon
-        map: [ "enum.DamageStateVisualLayers.Base" ]
+    - state: icon
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: RandomSprite
     available:
-      - enum.DamageStateVisualLayers.Base:
-          icon: ""
-          white: ""
+    - enum.DamageStateVisualLayers.Base:
+        icon: ""
+        white: ""
   - type: Construction
     graph: Egg
     node: start
@@ -108,13 +107,13 @@
 - type: entity
   parent: FoodEggBase
   id: FoodEggBoiled
-  name: boiled egg
-  description: A delicious hardboiled egg.
+  name: 水煮蛋 | boiled egg
+  description: 一颗美味的全熟水煮蛋。 | A delicious hardboiled egg.
   components:
   - type: Sprite
     layers:
     - state: icon
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: Solution
     solution:
       reagents:

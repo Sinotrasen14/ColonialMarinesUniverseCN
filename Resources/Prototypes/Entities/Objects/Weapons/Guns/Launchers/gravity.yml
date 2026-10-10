@@ -22,21 +22,21 @@
     visuals:
       enum.TetherVisualsStatus.Key:
         unshaded:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
 
 - type: entity
-  parent: [ BaseWeaponGravityGun, PowerCellSlotMediumItem ]
+  parent: [BaseWeaponGravityGun, PowerCellSlotMediumItem]
   id: WeaponTetherGun
-  name: tether gun
-  description: Manipulates gravity around objects to fling them at high velocities.
+  name: 牵引枪 | tether gun
+  description: 操纵物体周围的引力，将其以高速抛射出去。 | Manipulates gravity around objects to fling them at high velocities.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/tether_gun.rsi
     layers:
     - state: base
     - state: base-unshaded
-      map: [ "unshaded" ]
+      map: ["unshaded"]
       shader: unshaded
       visible: false
   - type: PowerCellDraw
@@ -56,17 +56,17 @@
         name: power-cell-slot-component-slot-name-default
 
 - type: entity
-  parent: [ BaseWeaponGravityGun, PowerCellSlotMediumItem ]
+  parent: [BaseWeaponGravityGun, PowerCellSlotMediumItem]
   id: WeaponForceGun
-  name: force gun
-  description: Manipulates gravity around objects to fling them at high velocities.
+  name: 重力枪 | force gun
+  description: 操控物体周围的重力，将其高速抛掷。 | Manipulates gravity around objects to fling them at high velocities.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/force_gun.rsi
     layers:
     - state: base
     - state: base-unshaded
-      map: [ "unshaded" ]
+      map: ["unshaded"]
       shader: unshaded
       visible: false
   - type: PowerCellDraw
@@ -95,8 +95,8 @@
 - type: entity
   parent: WeaponTetherGun
   id: WeaponTetherGunAdmin
-  name: tether gun
-  description: Manipulates gravity around objects to fling them at high velocities.
+  name: 牵引枪 | tether gun
+  description: 操纵物体周围的引力，将其高速抛射出去。 | Manipulates gravity around objects to fling them at high velocities.
   suffix: Admeme
   components:
   - type: TetherGun
@@ -110,8 +110,8 @@
 - type: entity
   parent: WeaponForceGun
   id: WeaponForceGunAdmin
-  name: force gun
-  description: Manipulates gravity around objects to fling them at high velocities.
+  name: 重力枪 | force gun
+  description: 操纵物体周围的重力，将其高速抛射出去。 | Manipulates gravity around objects to fling them at high velocities.
   suffix: Admeme
   components:
   - type: ForceGun

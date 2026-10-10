@@ -1,8 +1,8 @@
 - type: entity
   parent: StructureHealthFurnitureWeak
   id: WoodenSign
-  name: wooden sign
-  description: He's pointing somewhere.
+  name: 木制标牌 | wooden sign
+  description: 他正指向某个地方。 | He's pointing somewhere.
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.4,0.35,0.4"
         density: 100
   - type: Damageable
@@ -28,8 +27,7 @@
           variation: 0.05
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - &SoundWoodDestroy !type:PlaySoundBehavior
@@ -53,7 +51,7 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseStructure, StructureHealthFurniture ]
+  parent: [BaseStructure, StructureHealthFurniture]
   id: BaseWoodenSupport
   placement:
     mode: SnapgridCenter
@@ -70,8 +68,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - *SoundWoodDestroy
@@ -92,8 +89,8 @@
 - type: entity
   parent: BaseWoodenSupport
   id: WoodenSupport
-  name: wooden support
-  description: Increases your confidence that a rock won't fall on your head.
+  name: 木质支架 | wooden support
+  description: 增加你对石头不会砸到头的信心。 | Increases your confidence that a rock won't fall on your head.
   components:
   - type: StructuralSupport
     isVerticalSupport: true
@@ -101,8 +98,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.5,0.1,0.5"
         mask:
         - FullTileMask
@@ -113,7 +109,7 @@
 - type: entity
   parent: BaseWoodenSupport
   id: WoodenSupportBeam
-  name: wooden support beam
+  name: 木质支撑梁 | wooden support beam
   components:
   - type: StructuralSupport
     isVerticalSupport: true
@@ -124,8 +120,7 @@
     fixtures:
       fix1:
         hard: false
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -136,8 +131,8 @@
 - type: entity
   parent: BaseWoodenSupport
   id: WoodenSupportWall
-  name: wooden support wall
-  description: An old, rotten wall.
+  name: 木质支撑墙 | wooden support wall
+  description: 一堵老旧、腐烂的墙。 | An old, rotten wall.
   components:
   - type: Tag
     tags:
@@ -149,8 +144,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask

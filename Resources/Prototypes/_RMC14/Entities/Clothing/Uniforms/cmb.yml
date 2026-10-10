@@ -7,37 +7,35 @@
     tags:
     - RMCUniformMarine
     - RMCUniformCMB
-
 - type: entity
   parent: RMCCMBUniformBase
   id: RMCSwatCMBUniform
-  name: CMB Riot Control uniform
-  description: A dark set of tactical uniform utilized by the Colony Marshals, designed to be used by units of riot suppression on the distant worlds, under colony jurisdiction.
+  name: CMB防暴制服
+  description: 一套由殖民地法警使用的深色战术制服，专为殖民地管辖下遥远星球上的防暴部队设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/CMB/cmb_swat_uniform.rsi
-
 - type: entity
   parent: RMCSwatCMBUniform
   id: RMCSwatCMBUniformSpearhead
   components:
   - type: WebbingClothing
     startingWebbing: RMCWebbingHolsterBlackSpearhead
-
 - type: entity
   parent: RMCCMBUniformBase
   id: RMCSwatLeaderCMBUniform
-  name: CMB Riot Control Marshal uniform
-  description: A dark set of tactical uniform utilized by the Colony Marshals, designed to be used by units of riot suppression on the distant worlds, under colony jurisdiction.
+  name: CMB 防暴控制执法官制服
+  description: 一套深色战术制服，由殖民地执法官使用，专为殖民地管辖下遥远星球上的防暴控制部队设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/CMB/cmb_swatleader_uniform.rsi
-
 - type: entity
-  parent: [RMCCMBUniformBase, RMCAlternateFoldableUniformBase]
+  parent:
+  - RMCCMBUniformBase
+  - RMCAlternateFoldableUniformBase
   id: RMCMarshalCMBUniform
-  name: colony marshal uniform
-  description: A pair of off-white slacks and a blue button-down shirt with a dark brown tie; the standard uniform of the Colony Marshals.
+  name: 殖民地执法官制服
+  description: 一条米白色长裤和一件蓝色纽扣领衬衫，配深棕色领带，是殖民地执法官的标准制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/CMB/cmb_marshal_uniform.rsi

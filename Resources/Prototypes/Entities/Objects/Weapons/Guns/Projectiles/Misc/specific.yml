@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseBullet
   id: BulletAcid
-  categories: [ HideSpawnMenu ]
-  name: acid spit
+  categories: [HideSpawnMenu]
+  name: 酸性唾液 | acid spit
   components:
   - type: Projectile
     damage:
@@ -13,13 +13,13 @@
     layers:
     - state: xeno_toxic
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:
 
 - type: entity
-  parent: [ SolutionVapor, SolutionSmall ]
+  parent: [SolutionVapor, SolutionSmall]
   id: BulletWaterShot
-  categories: [ HideSpawnMenu ]
-  name: water
+  categories: [HideSpawnMenu]
+  name: 水 | water
   components:
   - type: Clickable
   - type: Physics
@@ -36,9 +36,9 @@
     sprite: Objects/Weapons/Guns/Projectiles/water_shot.rsi
     layers:
     - state: icon
-      map: [ "enum.VaporVisualLayers.Base" ]
+      map: ["enum.VaporVisualLayers.Base"]
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:
   - type: Fixtures
     fixtures:
       projectile:
@@ -57,8 +57,8 @@
 - type: entity
   parent: BaseBullet
   id: BulletHivebot
-  categories: [ HideSpawnMenu ]
-  name: hivebot bullet
+  categories: [HideSpawnMenu]
+  name: 蜂巢机器人子弹 | hivebot bullet
   components:
   - type: Projectile
     damage:
@@ -67,8 +67,8 @@
 
 - type: entity
   id: GrapplingHook
-  categories: [ HideSpawnMenu ]
-  name: grappling hook
+  categories: [HideSpawnMenu]
+  name: 抓钩 | grappling hook
   components:
   - type: EmbeddableProjectile
     deleteOnRemove: true
@@ -102,10 +102,10 @@
 - type: entity
   parent: GrapplingHook
   id: StickyHandPalm
-  categories: [ HideSpawnMenu ]
-  name: sticky hand palm
+  categories: [HideSpawnMenu]
+  name: 粘手手掌 | sticky hand palm
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/sticky_hand.rsi
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:

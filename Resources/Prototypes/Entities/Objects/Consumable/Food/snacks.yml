@@ -8,7 +8,7 @@
   components:
   - type: Tag
     tags:
-      - FoodSnack
+    - FoodSnack
   - type: Sprite
     sprite: Objects/Consumable/Food/snacks.rsi
   - type: Solution
@@ -26,14 +26,14 @@
 # reagents and shit for healing or different effects.
 
 - type: entity
-  name: boritos
+  name: 博里托斯 | boritos
   parent: FoodSnackBase
   id: FoodSnackBoritos
-  description: Crunchy, salty tortilla chips. You could probably make nachos with these.
+  description: 酥脆咸香的玉米片。你大概可以用这些做玉米片蘸酱。 | Crunchy, salty tortilla chips. You could probably make nachos with these.
   components:
   - type: FlavorProfile
     flavors:
-      - boritos
+    - boritos
   - type: Sprite
     state: boritos
   - type: Item
@@ -46,11 +46,11 @@
   name: C&Ds
   parent: FoodSnackBase
   id: FoodSnackCnDs
-  description: Legally, we cannot say that these won't melt in your hands.
+  description: 从法律上讲，我们不能说这些不会在你手中融化。 | Legally, we cannot say that these won't melt in your hands.
   components:
   - type: FlavorProfile
     flavors:
-      - chocolate
+    - chocolate
   - type: Sprite
     state: cnds
   - type: Item
@@ -60,15 +60,15 @@
     - FoodPacketCnDsTrash
 
 - type: entity
-  name: cheesie honkers
+  name: 芝士鸣叫脆片 | cheesie honkers
   parent: FoodSnackBase
   id: FoodSnackCheesie
-  description: Bite sized cheesie snacks that will honk all over your mouth.
+  description: 一口大小的芝士零食，会在你嘴里鸣叫。 | Bite sized cheesie snacks that will honk all over your mouth.
   components:
   - type: FlavorProfile
     flavors:
-      - cheesy
-      - funny
+    - cheesy
+    - funny
   - type: Sprite
     state: cheesiehonkers
   - type: Item
@@ -78,16 +78,16 @@
     - FoodPacketCheesieTrash
 
 - type: entity
-  name: chips
+  name: 薯片 | chips
   parent: FoodSnackBase
   id: FoodSnackChips
-  description: Commander Riker's What-The-Crisps.
+  description: 赖克指挥官的惊爆薯片。 | Commander Riker's What-The-Crisps.
   components:
   - type: FlavorProfile
     flavors:
-      - oily
-      - salty
-      - potatoes
+    - oily
+    - salty
+    - potatoes
   - type: Sprite
     state: chips
   - type: Item
@@ -99,8 +99,8 @@
 - type: entity
   parent: BaseItem
   id: FoodSnackChocolate
-  name: chocolate bar
-  description: Tastes like cardboard.
+  name: 巧克力棒 | chocolate bar
+  description: 尝起来像纸板。 | Tastes like cardboard.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/snacks.rsi
@@ -111,23 +111,23 @@
     storedOffset: 1,-1
   - type: Tag
     tags:
-      - FoodSnack
+    - FoodSnack
   - type: SpawnItemsOnUse
     items:
-      - id: FoodPacketChocolateTrash
-      - id: FoodSnackChocolateBar
+    - id: FoodPacketChocolateTrash
+    - id: FoodSnackChocolateBar
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   parent: FoodSnackBase
   id: FoodSnackChocolateBar
-  name: chocolate bar
-  description: Tastes like cardboard.
+  name: 巧克力棒 | chocolate bar
+  description: 尝起来像纸板。 | Tastes like cardboard.
   components:
   - type: FlavorProfile
     flavors:
-      - chocolate
+    - chocolate
   - type: Sprite
     state: chocolatebar-open
   - type: Item
@@ -135,8 +135,8 @@
     storedOffset: 1,-2
   - type: Tag
     tags:
-      - FoodSnack
-      - ReptilianFood
+    - FoodSnack
+    - ReptilianFood
   - type: Solution
     solution:
       reagents:
@@ -150,8 +150,8 @@
 - type: entity
   parent: FoodSnackBase
   id: FoodSnackEnergy
-  name: energy bar
-  description: An energy bar with a lot of punch.
+  name: 能量棒 | energy bar
+  description: 能量满满的能量棒。 | An energy bar with a lot of punch.
   components:
   - type: Sprite
     state: energybar
@@ -160,23 +160,23 @@
     storedOffset: 0,-1
   - type: SpawnItemsOnUse
     items:
-      - id: FoodPacketEnergyTrash
-      - id: FoodSnackEnergyBar
+    - id: FoodPacketEnergyTrash
+    - id: FoodSnackEnergyBar
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   parent: FoodSnackBase
   id: FoodSnackEnergyBar
-  name: energy bar
-  description: An energy bar with a lot of punch.
+  name: 能量棒 | energy bar
+  description: 能量十足的能量棒。 | An energy bar with a lot of punch.
   components:
   - type: FlavorProfile
     flavors:
-      - nutty
-      - oats
-      - fiber
-      - sweet
+    - nutty
+    - oats
+    - fiber
+    - sweet
   - type: Sprite
     state: energybar-open
   - type: Item
@@ -186,13 +186,13 @@
 - type: entity
   parent: FoodSnackBase
   id: FoodSnackPistachios
-  name: Sweetie's pistachios
-  description: Sweeties's name-brand pistachios. Probably won't give you diseases. Probably.
+  name: 甜心的开心果 | Sweetie's pistachios
+  description: 甜心的名牌开心果。大概不会让你得病。大概吧。 | Sweeties's name-brand pistachios. Probably won't give you diseases. Probably.
   components:
   - type: FlavorProfile
     flavors:
-      - salty
-      - nutty
+    - salty
+    - nutty
   - type: Sprite
     state: pistachio
   - type: Item
@@ -207,16 +207,16 @@
     - Pistachios # Added tag due to CrateServiceGetMore interaction with BountyFruit.
 
 - type: entity
-  name: popcorn
+  name: 爆米花 | popcorn
   parent: FoodSnackBase
   id: FoodSnackPopcorn
-  description: Grown on an unknown planet, by an unknown farmer, popped by some jerk on a space station.
+  description: 在未知星球上由未知农夫种植，被空间站上的某个混蛋爆开。 | Grown on an unknown planet, by an unknown farmer, popped by some jerk on a space station.
   components:
   - type: FlavorProfile
     flavors:
-      - corn
-      - salty
-      - butter
+    - corn
+    - salty
+    - butter
   - type: Sprite
     state: popcorn
   - type: Item
@@ -226,14 +226,14 @@
     - FoodPacketPopcornTrash
 
 - type: entity
-  name: 4no raisins
+  name: 4号葡萄干 | 4no raisins
   parent: FoodSnackBase
   id: FoodSnackRaisins
-  description: Best raisins in the universe. Not sure why.
+  description: 宇宙中最好的葡萄干。不知道为什么。 | Best raisins in the universe. Not sure why.
   components:
   - type: FlavorProfile
     flavors:
-      - raisins
+    - raisins
   - type: Sprite
     state: raisins
   - type: Item
@@ -248,12 +248,12 @@
 - type: entity
   parent: FoodSnackBase
   id: FoodSnackSemki
-  name: bob's semki sunflower seeds
-  description: Proudly produced by the Bob Bobson nutritional corporation. Perfect for spitting at people.
+  name: 鲍勃的塞姆基葵花籽 | bob's semki sunflower seeds
+  description: 由鲍勃·鲍勃森营养公司自豪出品。非常适合用来朝人吐口水。 | Proudly produced by the Bob Bobson nutritional corporation. Perfect for spitting at people.
   components:
   - type: FlavorProfile
     flavors:
-      - nutty
+    - nutty
   - type: Sprite
     state: semki
   - type: Item
@@ -264,14 +264,14 @@
     - FoodPacketSemkiTrash
 
 - type: entity
-  name: sus jerky
+  name: 可疑肉干 | sus jerky
   parent: FoodSnackBase
   id: FoodSnackSus
-  description: Something about this packet makes you feel incredibly uneasy. Jerky's good though.
+  description: 这包东西让你感到莫名地不安。不过肉干倒是挺好吃的。 | Something about this packet makes you feel incredibly uneasy. Jerky's good though.
   components:
   - type: FlavorProfile
     flavors:
-      - susjerky
+    - susjerky
   - type: Sprite
     state: susjerky
   - type: Item
@@ -284,14 +284,14 @@
     - Meat
 
 - type: entity
-  name: syndi-cakes
+  name: 辛迪蛋糕 | syndi-cakes
   parent: FoodSnackBase
   id: FoodSnackSyndi
-  description: An extremely moist snack cake that tastes just as good after being nuked.
+  description: 一种极其湿润的零食蛋糕，即使微波加热后味道依然很好。 | An extremely moist snack cake that tastes just as good after being nuked.
   components:
   - type: FlavorProfile
     flavors:
-      - syndicakes
+    - syndicakes
   - type: Sprite
     state: syndicakes
   - type: Item
@@ -303,8 +303,8 @@
 - type: entity
   parent: FoodSnackBase
   id: DrinkRamen
-  name: cup ramen
-  description: A cheap food with a taste that reminds you of your school years.
+  name: 杯面 | cup ramen
+  description: 一种廉价食物，味道让你想起学生时代。 | A cheap food with a taste that reminds you of your school years.
   components:
   - type: RefillableSolution
     solution: food
@@ -329,8 +329,8 @@
 - type: entity
   parent: DrinkRamen
   id: DrinkHellRamen
-  name: hell ramen
-  description: Super spicy flavor!
+  name: 地狱拉面 | hell ramen
+  description: 超辣口味！ | Super spicy flavor!
   components:
   - type: Solution
     solution:
@@ -343,14 +343,14 @@
 - type: entity
   parent: FoodSnackBase
   id: FoodSnackChowMein
-  name: chow mein
-  description: A salty fried noodle snack. Looks like they forgot the vegetables.
+  name: 炒面 | chow mein
+  description: 一种咸味的炒面零食。看起来他们忘了放蔬菜。 | A salty fried noodle snack. Looks like they forgot the vegetables.
   components:
   - type: FlavorProfile
     flavors:
-      - cheapnoodles
-      - salty
-      - oily
+    - cheapnoodles
+    - salty
+    - oily
   - type: Sprite
     state: chinese1
   - type: Item
@@ -370,14 +370,14 @@
 - type: entity
   parent: FoodSnackBase
   id: FoodSnackDanDanNoodles
-  name: dan dan noodles
-  description: A spicy Sichuan noodle snack. The chili oil slick pools on top.
+  name: 担担面 | dan dan noodles
+  description: 四川麻辣面食小吃。红油浮在表面。 | A spicy Sichuan noodle snack. The chili oil slick pools on top.
   components:
   - type: FlavorProfile
     flavors:
-      - cheapnoodles
-      - oily
-      - spicy
+    - cheapnoodles
+    - oily
+    - spicy
   - type: Sprite
     state: chinese2
   - type: Item
@@ -399,12 +399,12 @@
 - type: entity
   parent: FoodSnackBase
   id: FoodSnackCookieFortune
-  name: fortune cookie
-  description: A boring cardboard tasting snack with a fortune inside. Surprise! You're boring too.
+  name: 幸运饼干 | fortune cookie
+  description: 一块味同嚼蜡的纸板零食，里面藏着一张运势签。惊喜！你也很无聊。 | A boring cardboard tasting snack with a fortune inside. Surprise! You're boring too.
   components:
   - type: FlavorProfile
     flavors:
-      - fortunecookie
+    - fortunecookie
   - type: Sprite
     state: cookie_fortune
   - type: Solution
@@ -425,8 +425,8 @@
 - type: entity
   parent: BaseItem
   id: FoodSnackNutribrick
-  name: nutribrick
-  description: A carefully synthesized brick designed to contain the highest ratio of nutriment to volume. Tastes like shit.
+  name: 营养砖 | nutribrick
+  description: 一种精心合成的砖块，旨在以最小体积蕴含最高比例的养分。尝起来像屎。 | A carefully synthesized brick designed to contain the highest ratio of nutriment to volume. Tastes like shit.
   components:
   - type: Item
     size: Small
@@ -434,41 +434,41 @@
     heldPrefix: nutribrick
   - type: Tag
     tags:
-      - FoodSnack
+    - FoodSnack
   - type: Sprite
     sprite: Objects/Consumable/Food/snacks.rsi
     state: nutribrick
   - type: SpawnItemsOnUse
     items:
-      - id: FoodPacketMRETrash
-      - id: FoodSnackNutribrickOpen
+    - id: FoodPacketMRETrash
+    - id: FoodSnackNutribrickOpen
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   parent: FoodSnackBase
   id: FoodSnackNutribrickOpen
-  name: nutribrick
-  description: A carefully synthesized brick designed to contain the highest ratio of nutriment to volume. Tastes like shit.
+  name: 营养砖 | nutribrick
+  description: 一种精心合成的砖块，旨在以最小体积蕴含最高比例的养分。尝起来像屎。 | A carefully synthesized brick designed to contain the highest ratio of nutriment to volume. Tastes like shit.
   components:
   - type: FlavorProfile
     flavors:
-      - nutribrick
+    - nutribrick
   - type: Item
     size: Small
     storedOffset: -1,0
     heldPrefix: nutribrick-open
   - type: Tag
     tags:
-      - ReptilianFood
+    - ReptilianFood
   - type: Sprite
     state: nutribrick-open
 
 - type: entity
   parent: BaseItem
   id: FoodSnackMREBrownie
-  name: brownie
-  description: A precisely mixed brownie, made to withstand blunt trauma and harsh conditions. Tastes like shit.
+  name: 布朗尼 | brownie
+  description: 一块精确调配的布朗尼，专为承受钝器创伤和恶劣环境而制。尝起来像屎。 | A precisely mixed brownie, made to withstand blunt trauma and harsh conditions. Tastes like shit.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/snacks.rsi
@@ -479,24 +479,24 @@
     storedOffset: -1,-1
   - type: Tag
     tags:
-      - FoodSnack
+    - FoodSnack
   - type: SpawnItemsOnUse
     items:
-      - id: FoodPacketMRETrash
-      - id: FoodSnackMREBrownieOpen
+    - id: FoodPacketMRETrash
+    - id: FoodSnackMREBrownieOpen
     sound:
       path: /Audio/Effects/unwrap.ogg
 
 - type: entity
   parent: [SolutionVeryTiny, FoodSnackBase]
   id: FoodSnackMREBrownieOpen
-  name: brownie
+  name: 布朗尼 | brownie
   suffix: MRE
-  description: A precisely mixed brownie, made to withstand blunt trauma and harsh conditions. Tastes like shit.
+  description: 一块精确调配的布朗尼，专为承受钝器创伤和恶劣环境而制。尝起来像屎。 | A precisely mixed brownie, made to withstand blunt trauma and harsh conditions. Tastes like shit.
   components:
   - type: FlavorProfile
     flavors:
-      - mrebrownie
+    - mrebrownie
   - type: Sprite
     state: mre-brownie-open
   - type: Item
@@ -513,8 +513,8 @@
 - type: entity
   parent: FoodSnackBase
   id: FoodSnackSwirlLollipop
-  name: swirl lollipop
-  description: A swirly circle of pure concentrated sugar. Who's the biggest kid on the playground now?
+  name: 漩涡棒棒糖 | swirl lollipop
+  description: 一圈螺旋状的纯浓缩糖。现在谁是操场上最厉害的小孩？ | A swirly circle of pure concentrated sugar. Who's the biggest kid on the playground now?
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/candy.rsi
@@ -548,10 +548,10 @@
 # Trash
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: [SolutionFood, SolutionVeryTiny, BaseItem]
   id: FoodPacketTrash
-  description: This is rubbish.
+  description: 这是垃圾。 | This is rubbish.
   abstract: true
   components:
   - type: Sprite
@@ -578,10 +578,10 @@
     requiresSpecialDigestion: true
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketBoritosTrash
-  name: boritos bag
+  name: 博里托斯包 | boritos bag
   components:
   - type: Sprite
     state: boritos-trash
@@ -595,10 +595,10 @@
         color: "#4F54BE"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketCnDsTrash
-  name: C&Ds bag
+  name: C&Ds包 | C&Ds bag
   components:
   - type: Sprite
     state: cnds-trash
@@ -612,10 +612,10 @@
         color: "#915145"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketCheesieTrash
-  name: cheesie honkers
+  name: 芝士脆脆 | cheesie honkers
   components:
   - type: Sprite
     state: cheesiehonkers-trash
@@ -629,10 +629,10 @@
         color: "#FFCC33"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketChipsTrash
-  name: chips
+  name: 薯条 | chips
   components:
   - type: Sprite
     state: chips-trash
@@ -646,10 +646,10 @@
         color: "#008000"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketChocolateTrash
-  name: chocolate wrapper
+  name: 巧克力包装纸 | chocolate wrapper
   components:
   - type: Sprite
     state: chocolatebar-trash
@@ -663,10 +663,10 @@
         color: "#A20000"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketEnergyTrash
-  name: energybar wrapper
+  name: 能量棒包装 | energybar wrapper
   components:
   - type: Sprite
     state: energybar-trash
@@ -680,10 +680,10 @@
         color: "#9AFF1F"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketPistachioTrash
-  name: pistachios packet
+  name: 开心果包装袋 | pistachios packet
   components:
   - type: Sprite
     state: pistachio-trash
@@ -697,10 +697,10 @@
         color: "#99B334"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketPopcornTrash
-  name: popcorn box
+  name: 爆米花盒 | popcorn box
   components:
   - type: Sprite
     state: popcorn-trash
@@ -714,10 +714,10 @@
         color: "#5193FF"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketRaisinsTrash
-  name: 4no raisins
+  name: 4无葡萄干 | 4no raisins
   components:
   - type: Sprite
     state: raisins-trash
@@ -731,10 +731,10 @@
         color: "#FF0033"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketSemkiTrash
-  name: semki packet
+  name: semki 包 | semki packet
   components:
   - type: Sprite
     state: semki-trash
@@ -748,10 +748,10 @@
         color: "#C2821E"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketSusTrash
-  name: sus jerky
+  name: 牛肉干 | sus jerky
   components:
   - type: Sprite
     state: susjerky-trash
@@ -765,10 +765,10 @@
         color: "#990033"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketSyndiTrash
-  name: syndi-cakes box
+  name: 辛迪蛋糕盒 | syndi-cakes box
   components:
   - type: Sprite
     state: syndicakes-trash
@@ -782,10 +782,10 @@
         color: "#FFFFFF"
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketCupRamenTrash
-  name: empty cup ramen
+  name: 空杯拉面 | empty cup ramen
   components:
   - type: Sprite
     state: ramen
@@ -793,10 +793,10 @@
     heldPrefix: ramen
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketChowMeinTrash
-  name: empty chow mein box
+  name: 空炒面盒 | empty chow mein box
   components:
   - type: Sprite
     state: chinese1
@@ -804,10 +804,10 @@
     heldPrefix: chinese1
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketDanDanTrash
-  name: empty dan dan box
+  name: 空丹丹盒 | empty dan dan box
   components:
   - type: Sprite
     state: chinese2
@@ -815,11 +815,11 @@
     heldPrefix: chinese2
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodCookieFortune
-  name: cookie fortune
-  description: "The fortune reads: The end is near...and it's all your fault."
+  name: 饼干签文 | cookie fortune
+  description: "签文上写着：末日将至……而这全是你的错。 | The fortune reads: The end is near...and it's all your fault."
   components:
   - type: Sprite
     state: fortune
@@ -828,11 +828,11 @@
     descriptionSegments: [DescriptionsCookieFortune]
 
 - type: entity
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: FoodPacketTrash
   id: FoodPacketMRETrash
-  name: MRE wrapper
-  description: A general purpose wrapper for a variety of military food goods.
+  name: 军用口粮包装袋 | MRE wrapper
+  description: 一种用于多种军用食品的通用包装袋。 | A general purpose wrapper for a variety of military food goods.
   components:
   - type: Edible
     requiresSpecialDigestion: true

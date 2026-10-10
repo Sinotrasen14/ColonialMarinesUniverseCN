@@ -2,8 +2,8 @@
 - type: entity
   parent: RMCBaseArmor
   id: RMCSuitEVABase
-  name: pressure suit
-  description: A heavy and bulky space suit.
+  name: 压力服
+  description: 一套又重又笨的太空服。
   abstract: true
   components:
   - type: Sprite
@@ -38,8 +38,8 @@
   parent: RMCHardHat
   id: RMCHelmetEVABase
   categories: [ HideSpawnMenu ]
-  name: pressure helmet
-  description: A heavy space helmet, designed to be coupled with a pressure suit.
+  name: 压力头盔
+  description: 一个沉重的太空头盔，设计用来与压力服配合使用。
   abstract: true
   components:
   - type: Sprite
@@ -80,9 +80,9 @@
 - type: entity
   parent: RMCSuitEVABase
   id: RMCSuitEVASGO
-  name: smart gun compatable pressure suit
+  name: 智能枪兼容压力服
   suffix: Smart Gun harness
-  description: A heavy and bulky space suit. For whatever reason, it seems this suit has the fittings for a smart weapon system.
+  description: 一个又重又笨的太空服。不知为何，这套服装似乎配备了智能武器系统的接口。
   abstract: true
   components:
   - type: ClothingBlockBackpack
@@ -92,8 +92,8 @@
 - type: entity
   parent: RMCSuitEVABase
   id: RMCSuitEVAUNMC
-  name: UNMC MK.35 pressure suit
-  description: A heavy and bulky military-grade space suit utilized by the United Nations Marine Corps and a few other UN organizations.
+  name: UNMC MK.35 压力服
+  description: 一套又重又笨的军用级宇航服，由联合国海军陆战队和其他一些联合国组织使用。
   components:
   - type: ContainerContainer
     containers:
@@ -139,8 +139,8 @@
 - type: entity
   parent: RMCSuitEVASGO
   id: RMCSuitEVAUNMCSGO
-  name: UNMC MK.35 ML66A compatable pressure suit
-  description: A heavy and bulky military-grade space suit utilized by the United Nations Marine Corps and a few other UN organizations. Seems this suit has the required fittings to be compatable with an ML66A Smart Gun.
+  name: UNMC MK.35 ML66A 兼容压力服
+  description: 一套厚重笨重的军用级太空服，由联合国海军陆战队和其他一些联合国组织使用。看起来这套服装有必要的接口，可以兼容 ML66A 智能枪。
   components:
   - type: ContainerContainer
     containers:
@@ -158,8 +158,8 @@
   parent: RMCHelmetEVABase
   id: RMCHelmetEVAUNMC
   categories: [ HideSpawnMenu ]
-  name: UNMC MK.35 pressure helmet
-  description: A heavy space helmet, designed to be coupled with the MK.35 pressure suit utilized by the United Nations Marine Corps and a few other UN organizations.
+  name: UNMC MK.35 压力头盔
+  description: 一个沉重的太空头盔，设计用于与联合国海军陆战队和其他一些联合国组织使用的MK.35压⼒服配合使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/unmc.rsi
@@ -177,8 +177,8 @@
 - type: entity
   parent: RMCSuitEVABase
   id: RMCSuitEVASPP
-  name: SPP Type 2 pressure suit
-  description: A heavy and bulky military-grade space suit utilized by the Socialist Progressive People and a few other SPP organizations.
+  name: SPP Type 2 压力服
+  description: 一款由社会主义进步人民和其他一些SPP组织使用的沉重笨重的军用太空服。
   components:
   - type: ContainerContainer
     containers:
@@ -204,8 +204,8 @@
   parent: RMCHelmetEVABase
   id: RMCHelmetEVASPP
   categories: [ HideSpawnMenu ]
-  name: SPP Type 2 pressure helmet
-  description: A heavy space helmet, designed to be coupled with the Type 2 pressure suit utilized by the Socialist Progressive People and a few other SPP organizations.
+  name: SPP Type 2 压力头盔
+  description: 一个沉重的太空头盔，设计用于与社会主义进步人民及其他一些SPP组织使用的2型压力服配合。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/spp.rsi
@@ -223,7 +223,7 @@
 - type: entity
   parent: RMCSuitEVABase
   id: RMCSuitEVACivilian
-  name: white pressure suit
+  name: 白色压力服
   components:
   - type: ContainerContainer
     containers:
@@ -246,7 +246,7 @@
   parent: RMCHelmetEVABase
   id: RMCHelmetEVACivilian
   categories: [ HideSpawnMenu ]
-  name: white pressure helmet
+  name: 白色压力头盔
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/EVA/white.rsi # TODO

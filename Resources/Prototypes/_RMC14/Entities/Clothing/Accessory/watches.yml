@@ -1,9 +1,11 @@
 - type: entity
   abstract: true
-  parent: [RMCBaseUniformAccessory, ClothingHandsBase]
+  parent:
+  - RMCBaseUniformAccessory
+  - ClothingHandsBase
   id: RMCWatchBaseL
   name: watchL
-  description: An abstract watch.
+  description: 一块抽象的手表。
   components:
   - type: UniformAccessory
     category: WristL
@@ -15,13 +17,14 @@
     - Watch
   - type: Item
     size: Normal
-
 - type: entity
   abstract: true
-  parent: [RMCBaseUniformAccessory, ClothingHandsBase]
+  parent:
+  - RMCBaseUniformAccessory
+  - ClothingHandsBase
   id: RMCWatchBaseR
-  name: watchR
-  description: An abstract watch.
+  name: 手表R
+  description: 一块抽象的手表。
   components:
   - type: UniformAccessory
     category: WristR
@@ -33,12 +36,11 @@
     - Watch
   - type: Item
     size: Normal
-
 - type: entity
   parent: RMCWatchBaseL
   id: RMCWatchCheap
-  name: cheap digital watch
-  description: A cheap 24-hour only digital wrist watch. It has a crappy red display, great for looking at in the dark!
+  name: 便宜的电子表
+  description: 一款廉价的仅支持24小时制的数字腕表。它有个糟糕的红色显示屏，在黑暗中看倒是很不错！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/cheap.rsi
@@ -52,12 +54,11 @@
   - type: Tag
     tags:
     - Watch
-
 - type: entity
   parent: RMCWatchBaseL
   id: RMCWatchBasic
-  name: Seikaku Pulsemeter wristwatch
-  description: Model S448-209A, a durable quartz-based wristwatch issued to most Marines who pass through basic training.
+  name: Seikaku 脉搏计腕表
+  description: 型号S448-209A，一款耐用的石英腕表，发放给大多数通过基础训练的海军陆战队员。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/black.rsi
@@ -68,12 +69,11 @@
       state: watchL
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/black.rsi
-
 - type: entity
   parent: RMCWatchBaseL
   id: RMCWatchSynth
-  name: Seikaku 13B6-2000 wristwatch
-  description: A fancy black-bodied wristwatch. Once set correctly, it always holds the right time. For the connoisseurs of precision.
+  name: Seikaku 13B6-2000 腕表
+  description: 一款别致的黑色表壳腕表。一旦设置正确，它总能保持准确时间。专为精度的鉴赏家而设。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/synth.rsi
@@ -84,12 +84,11 @@
       state: watchL
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/black.rsi
-
 - type: entity
   parent: RMCWatchBaseL
   id: RMCWatchSurv
-  name: Seikaku 13B6-3000 wristwatch
-  description: With the pioneering design of analog quartz chronographs beating inside it, this asymetric wristwatch is perfect for anyone who can remain standing where others have all fallen.
+  name: Seikaku 13B6-3000 腕表
+  description: 其内部搭载着开创性的模拟石英计时码表设计，这款不对称腕表非常适合任何能在其他人都倒下时依然站立的人。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/surv.rsi
@@ -100,12 +99,11 @@
       state: watchL
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/silver.rsi
-
 - type: entity
   parent: RMCWatchBaseL
   id: RMCWatchLiaison
-  name: Seikaku H487-9098 wristwatch
-  description: A more upmarket wristwatch tailored towards junior executives & 'company guys' all across the galaxy. Flashy, but not horribly ostentatious.
+  name: Seikaku H487-9098 腕表
+  description: 一款更高端的腕表，专为银河系各地的高管新秀和‘公司人’量身打造。很花哨，但不会过分招摇。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/silver.rsi
@@ -116,12 +114,11 @@
       state: watchL
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/silver.rsi
-
 - type: entity
   parent: RMCWatchBaseL
   id: RMCWatchPilot
-  name: Veniti E-338 wristwatch
-  description: Advertised as being 'A new dawn of precision digital watches', the E-338 became a popular hit with members of the civil aerospace industry.
+  name: Veniti E-338 腕表
+  description: E-338被宣传为‘精密数字腕表的新曙光’，并在民用航空航天业人士中大受欢迎。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Watches/fancy.rsi

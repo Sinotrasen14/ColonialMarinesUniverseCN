@@ -1,26 +1,24 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem ]
+  parent: [BaseItem]
   id: BasePDA
-  name: PDA
-  description: Personal Data Assistant.
+  name: 个人数字助理 | PDA
+  description: 个人数字助理。 | Personal Data Assistant.
   components:
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda
+      enum.PdaVisuals.PdaType: !type:String pda
   - type: Sprite
     sprite: Objects/Devices/pda.rsi
     layers:
-    - map: [ "enum.PdaVisualLayers.Base" ]
+    - map: ["enum.PdaVisualLayers.Base"]
       state: "pda"
     - state: "light_overlay"
-      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      map: ["enum.PdaVisualLayers.Flashlight"]
       shader: "unshaded"
       visible: false
     - state: "id_overlay"
-      map: [ "enum.PdaVisualLayers.IdLight" ]
+      map: ["enum.PdaVisualLayers.IdLight"]
       shader: "unshaded"
       visible: false
   - type: Icon
@@ -87,7 +85,7 @@
       insertSound: /Audio/Machines/id_insert.ogg
       whitelist:
         components:
-          - Cartridge
+        - Cartridge
   - type: EntityTableContainerFill
     containers:
       preinstalled-program-container: !type:AllSelector
@@ -137,14 +135,14 @@
   - type: Sprite
     sprite: Objects/Devices/pda.rsi
     layers:
-    - map: [ "enum.PdaVisualLayers.Base" ]
+    - map: ["enum.PdaVisualLayers.Base"]
       state: "pda"
     - state: "light_overlay_wide"
-      map: [ "enum.PdaVisualLayers.Flashlight" ]
+      map: ["enum.PdaVisualLayers.Flashlight"]
       shader: "unshaded"
       visible: false
     - state: "id_overlay_wide"
-      map: [ "enum.PdaVisualLayers.IdLight" ]
+      map: ["enum.PdaVisualLayers.IdLight"]
       shader: "unshaded"
       visible: false
 
@@ -181,8 +179,8 @@
 - type: entity
   parent: BasePDA
   id: PassengerPDA
-  name: passenger PDA
-  description: Why isn't it gray?
+  name: 乘客PDA | passenger PDA
+  description: 为什么不灰？ | Why isn't it gray?
   components:
   - type: Pda
     id: PassengerIDCard
@@ -192,16 +190,14 @@
 - type: entity
   parent: BasePDA
   id: TechnicalAssistantPDA
-  name: technical assistant PDA
-  description: Why isn't it yellow?
+  name: 技术助理PDA | technical assistant PDA
+  description: 为什么它不是黄色的？ | Why isn't it yellow?
   components:
   - type: Pda
     id: TechnicalAssistantIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-interntech
+      enum.PdaVisuals.PdaType: !type:String pda-interntech
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#949137"
@@ -211,16 +207,14 @@
 - type: entity
   parent: BaseMedicalPDA
   id: MedicalInternPDA
-  name: medical intern PDA
-  description: Why isn't it white?
+  name: 医疗实习生PDA | medical intern PDA
+  description: 为什么它不是白色的？ | Why isn't it white?
   components:
   - type: Pda
     id: MedicalInternIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-internmed
+      enum.PdaVisuals.PdaType: !type:String pda-internmed
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#447987"
@@ -233,16 +227,14 @@
 - type: entity
   parent: BaseSecurityPDA
   id: SecurityCadetPDA
-  name: security cadet PDA
-  description: Why isn't it red?
+  name: 安全学员PDA | security cadet PDA
+  description: 为什么它不是红色的？ | Why isn't it red?
   components:
   - type: Pda
     id: SecurityCadetIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-interncadet
+      enum.PdaVisuals.PdaType: !type:String pda-interncadet
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#A32D26"
@@ -252,16 +244,14 @@
 - type: entity
   parent: BasePDA
   id: ResearchAssistantPDA
-  name: research assistant PDA
-  description: Why isn't it purple?
+  name: 研究助理PDA | research assistant PDA
+  description: 为什么它不是紫色的？ | Why isn't it purple?
   components:
   - type: Pda
     id: ResearchAssistantIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-internsci
+      enum.PdaVisuals.PdaType: !type:String pda-internsci
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#8900c9"
@@ -271,16 +261,14 @@
 - type: entity
   parent: BasePDA
   id: ServiceWorkerPDA
-  name: service worker PDA
-  description: Why isn't it gray?
+  name: 服务工作线程PDA | service worker PDA
+  description: 为什么不显示为灰色？ | Why isn't it gray?
   components:
   - type: Pda
     id: ServiceWorkerIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-internservice
+      enum.PdaVisuals.PdaType: !type:String pda-internservice
   - type: PdaBorderColor
     borderColor: "#717059"
     accentVColor: "#00cc35"
@@ -290,16 +278,14 @@
 - type: entity
   parent: BasePDA
   id: ChefPDA
-  name: chef PDA
-  description: Covered in grease and flour.
+  name: 厨师PDA | chef PDA
+  description: 沾满油脂和面粉。 | Covered in grease and flour.
   components:
   - type: Pda
     id: ChefIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-cook
+      enum.PdaVisuals.PdaType: !type:String pda-cook
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
   - type: Icon
@@ -308,16 +294,14 @@
 - type: entity
   parent: BasePDA
   id: BotanistPDA
-  name: botanist PDA
-  description: Has an earthy scent.
+  name: 植物学家PDA | botanist PDA
+  description: 有一种泥土的气味。 | Has an earthy scent.
   components:
   - type: Pda
     id: BotanistIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-hydro
+      enum.PdaVisuals.PdaType: !type:String pda-hydro
   - type: PdaBorderColor
     borderColor: "#44843c"
     accentVColor: "#00cc35"
@@ -327,8 +311,8 @@
 - type: entity
   parent: BasePDA
   id: ClownPDA
-  name: clown PDA
-  description: Looks can be deceiving.
+  name: 小丑PDA | clown PDA
+  description: 外表可能具有欺骗性。 | Looks can be deceiving.
   components:
   - type: Pda
     id: ClownIDCard
@@ -343,9 +327,7 @@
         - Write
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-clown
+      enum.PdaVisuals.PdaType: !type:String pda-clown
   - type: PdaBorderColor
     borderColor: "#C18199"
   - type: Icon
@@ -359,15 +341,13 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.3,0.4,0.3"
         hard: false
         layer:
-          - SlipLayer
+        - SlipLayer
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.3,0.4,0.3"
         density: 5
         mask:
@@ -387,22 +367,22 @@
 - type: entity
   parent: BasePDA
   id: MimePDA
-  name: mime PDA
-  description: Suprisingly not on mute.
+  name: 拟态个人数字助理 | mime PDA
+  description: 令人惊讶的是，并未静音。 | Suprisingly not on mute.
   components:
   - type: Pda
     id: MimeIDCard
     paiSlot:
       priority: -2
-      ejectSound: null
-      insertSound: null
+      ejectSound:
+      insertSound:
       whitelist:
         components:
         - PAI
     idSlot:
       name: access-id-card-component-default
-      ejectSound: null # mime is silent
-      insertSound: null
+      ejectSound:      # mime is silent
+      insertSound:
       whitelist:
         components:
         - IdCard
@@ -412,20 +392,18 @@
       whitelist:
         tags:
         - Write
-      ejectSound: null
-      insertSound: null
+      ejectSound:
+      insertSound:
   - type: CartridgeLoader
     cartridgeSlot:
-      ejectSound: null
-      insertSound: null
+      ejectSound:
+      insertSound:
       whitelist:
         components:
         - Cartridge
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-mime
+      enum.PdaVisuals.PdaType: !type:String pda-mime
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentHColor: "#333333"
@@ -442,18 +420,16 @@
     - TraitStatusEffectMuted
 
 - type: entity
-  name: chaplain PDA
+  name: 牧师PDA | chaplain PDA
   parent: BasePDA
   id: ChaplainPDA
-  description: God's chosen PDA.
+  description: 上帝选中的PDA。 | God's chosen PDA.
   components:
   - type: Pda
     id: ChaplainIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-chaplain
+      enum.PdaVisuals.PdaType: !type:String pda-chaplain
   - type: PdaBorderColor
     borderColor: "#333333"
   - type: Icon
@@ -471,18 +447,16 @@
     - DoorBumpOpener
 
 - type: entity
-  name: quartermaster PDA
+  name: 军需官个人数字助理 | quartermaster PDA
   parent: BasePDA
   id: QuartermasterPDA
-  description: PDA for the guy that orders the guns.
+  description: 为订购枪支的人配备的个人数字助理。 | PDA for the guy that orders the guns.
   components:
   - type: Pda
     id: QuartermasterIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-qm
+      enum.PdaVisuals.PdaType: !type:String pda-qm
   - type: PdaBorderColor
     borderColor: "#e39751"
     accentVColor: "#a23e3e"
@@ -501,16 +475,14 @@
 - type: entity
   parent: BasePDA
   id: CargoPDA
-  name: cargo PDA
-  description: PDA for the guys that order the pizzas.
+  name: 货物PDA | cargo PDA
+  description: 给订披萨的人用的PDA。 | PDA for the guys that order the pizzas.
   components:
   - type: Pda
     id: CargoIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-cargo
+      enum.PdaVisuals.PdaType: !type:String pda-cargo
   - type: PdaBorderColor
     borderColor: "#e39751"
   - type: Icon
@@ -519,16 +491,14 @@
 - type: entity
   parent: BasePDA
   id: SalvagePDA
-  name: salvage PDA
-  description: Smells like ash.
+  name: 打捞 PDA | salvage PDA
+  description: 闻起来像灰烬。 | Smells like ash.
   components:
   - type: Pda
     id: SalvageIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-miner
+      enum.PdaVisuals.PdaType: !type:String pda-miner
   - type: PdaBorderColor
     borderColor: "#af9366"
     accentVColor: "#8900c9"
@@ -547,16 +517,14 @@
 - type: entity
   parent: BasePDA
   id: BartenderPDA
-  name: bartender PDA
-  description: Smells like beer.
+  name: 酒保PDA | bartender PDA
+  description: 闻起来像啤酒。 | Smells like beer.
   components:
   - type: Pda
     id: BartenderIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-bartender
+      enum.PdaVisuals.PdaType: !type:String pda-bartender
   - type: PdaBorderColor
     borderColor: "#333333"
   - type: Icon
@@ -565,8 +533,8 @@
 - type: entity
   parent: BaseWidePDA
   id: LibrarianPDA
-  name: librarian PDA
-  description: Smells like books.
+  name: 图书管理员掌上电脑 | librarian PDA
+  description: 闻起来像书。 | Smells like books.
   components:
   - type: Pda
     id: LibrarianIDCard
@@ -578,9 +546,7 @@
         - Write
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-library
+      enum.PdaVisuals.PdaType: !type:String pda-library
   - type: PdaBorderColor
     borderColor: "#858585"
   - type: Icon
@@ -600,8 +566,8 @@
 - type: entity
   parent: BaseSecurityPDA
   id: LawyerPDA
-  name: lawyer PDA
-  description: For lawyers to poach dubious clients.
+  name: 律师PDA | lawyer PDA
+  description: 供律师挖走可疑客户使用。 | For lawyers to poach dubious clients.
   components:
   - type: Pda
     id: LawyerIDCard
@@ -613,9 +579,7 @@
         - Write
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-lawyer
+      enum.PdaVisuals.PdaType: !type:String pda-lawyer
   - type: PdaBorderColor
     borderColor: "#6f6192"
   - type: Icon
@@ -635,16 +599,14 @@
 - type: entity
   parent: BasePDA
   id: JanitorPDA
-  name: janitor PDA
-  description: Smells like bleach.
+  name: 清洁工PDA | janitor PDA
+  description: 闻起来像漂白剂。 | Smells like bleach.
   components:
   - type: Pda
     id: JanitorIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-janitor
+      enum.PdaVisuals.PdaType: !type:String pda-janitor
   - type: PdaBorderColor
     borderColor: "#5D2D56"
   - type: Icon
@@ -653,8 +615,8 @@
 - type: entity
   parent: BasePDA
   id: CaptainPDA
-  name: captain PDA
-  description: Surprisingly no different from your PDA.
+  name: PDA队长 | captain PDA
+  description: 令人惊讶的是，它与你的PDA并无不同。 | Surprisingly no different from your PDA.
   components:
   - type: Pda
     id: CaptainIDCard
@@ -666,9 +628,7 @@
         - Write
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-captain
+      enum.PdaVisuals.PdaType: !type:String pda-captain
   - type: PdaBorderColor
     borderColor: "#7C5D00"
   - type: Icon
@@ -677,8 +637,8 @@
 - type: entity
   parent: BasePDA
   id: HoPPDA
-  name: head of personnel PDA
-  description: Looks like it's been chewed on.
+  name: 人事主管PDA | head of personnel PDA
+  description: 看起来被嚼过了。 | Looks like it's been chewed on.
   components:
   - type: Pda
     id: HoPIDCard
@@ -690,9 +650,7 @@
         - Write
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-hop
+      enum.PdaVisuals.PdaType: !type:String pda-hop
   - type: PdaBorderColor
     borderColor: "#789876"
     accentHColor: "#447987"
@@ -702,16 +660,14 @@
 - type: entity
   parent: BasePDA
   id: CEPDA
-  name: chief engineer PDA
-  description: Looks like it's barely been used.
+  name: 总工程师PDA | chief engineer PDA
+  description: 看起来几乎没怎么用过。 | Looks like it's barely been used.
   components:
   - type: Pda
     id: CEIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-ce
+      enum.PdaVisuals.PdaType: !type:String pda-ce
   - type: PdaBorderColor
     borderColor: "#949137"
     accentHColor: "#447987"
@@ -721,16 +677,14 @@
 - type: entity
   parent: BasePDA
   id: EngineerPDA
-  name: engineer PDA
-  description: Rugged and well-worn.
+  name: 工程师PDA | engineer PDA
+  description: 坚固耐用且饱经风霜。 | Rugged and well-worn.
   components:
   - type: Pda
     id: EngineeringIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-engineer
+      enum.PdaVisuals.PdaType: !type:String pda-engineer
   - type: PdaBorderColor
     borderColor: "#949137"
     accentVColor: "#A32D26"
@@ -740,16 +694,14 @@
 - type: entity
   parent: BaseMedicalPDA
   id: CMOPDA
-  name: chief medical officer PDA
-  description: Extraordinarily shiny and sterile.
+  name: 首席医疗官个人数字助理 | chief medical officer PDA
+  description: 异常闪亮且无菌。 | Extraordinarily shiny and sterile.
   components:
   - type: Pda
     id: CMOIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-cmo
+      enum.PdaVisuals.PdaType: !type:String pda-cmo
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentHColor: "#447987"
@@ -760,16 +712,14 @@
 - type: entity
   parent: BaseMedicalPDA
   id: MedicalPDA
-  name: medical PDA
-  description: Shiny and sterile.
+  name: 医疗PDA | medical PDA
+  description: 闪亮且无菌。 | Shiny and sterile.
   components:
   - type: Pda
     id: MedicalIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-medical
+      enum.PdaVisuals.PdaType: !type:String pda-medical
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#447987"
@@ -793,16 +743,14 @@
 - type: entity
   parent: BaseMedicalPDA
   id: ParamedicPDA
-  name: paramedic PDA
-  description: Shiny and sterile.
+  name: 急救员个人数字助理 | paramedic PDA
+  description: 闪亮又无菌。 | Shiny and sterile.
   components:
   - type: Pda
     id: ParamedicIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-paramedic
+      enum.PdaVisuals.PdaType: !type:String pda-paramedic
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#2a4b5b"
@@ -812,16 +760,14 @@
 - type: entity
   parent: BaseMedicalPDA
   id: ChemistryPDA
-  name: chemistry PDA
-  description: It has a few discolored blotches here and there.
+  name: 化学PDA | chemistry PDA
+  description: 上面有一些褪色的斑点。 | It has a few discolored blotches here and there.
   components:
   - type: Pda
     id: ChemistIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-chemistry
+      enum.PdaVisuals.PdaType: !type:String pda-chemistry
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#B34200"
@@ -831,16 +777,14 @@
 - type: entity
   parent: BasePDA
   id: RnDPDA
-  name: research director PDA
-  description: It appears surprisingly ordinary.
+  name: 研究主任PDA | research director PDA
+  description: 它看起来出奇地普通。 | It appears surprisingly ordinary.
   components:
   - type: Pda
     id: RDIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-rd
+      enum.PdaVisuals.PdaType: !type:String pda-rd
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentHColor: "#447987"
@@ -851,16 +795,14 @@
 - type: entity
   parent: BasePDA
   id: SciencePDA
-  name: science PDA
-  description: It's covered with an unknown gooey substance.
+  name: 科学PDA | science PDA
+  description: 上面覆盖着一种未知的黏稠物质。 | It's covered with an unknown gooey substance.
   components:
   - type: Pda
     id: ResearchIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-science
+      enum.PdaVisuals.PdaType: !type:String pda-science
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#8900c9"
@@ -870,16 +812,14 @@
 - type: entity
   parent: BaseSecurityPDA
   id: HoSPDA
-  name: head of security PDA
-  description: Whosoever bears this PDA is the law.
+  name: 安保主管PDA | head of security PDA
+  description: 凡持此PDA者，即为法律。 | Whosoever bears this PDA is the law.
   components:
   - type: Pda
     id: HoSIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-hos
+      enum.PdaVisuals.PdaType: !type:String pda-hos
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentHColor: "#447987"
@@ -899,16 +839,14 @@
 - type: entity
   parent: BaseSecurityPDA
   id: WardenPDA
-  name: warden PDA
-  description: The OS appears to have been jailbroken.
+  name: 监狱长PDA | warden PDA
+  description: 操作系统似乎已被越狱。 | The OS appears to have been jailbroken.
   components:
   - type: Pda
     id: WardenIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-warden
+      enum.PdaVisuals.PdaType: !type:String pda-warden
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentVColor: "#949137"
@@ -918,16 +856,14 @@
 - type: entity
   parent: BaseSecurityPDA
   id: SecurityPDA
-  name: security PDA
-  description: Red to hide the stains of passenger blood.
+  name: 安全PDA | security PDA
+  description: 红色用来掩盖乘客血迹。 | Red to hide the stains of passenger blood.
   components:
   - type: Pda
     id: SecurityIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-security
+      enum.PdaVisuals.PdaType: !type:String pda-security
   - type: PdaBorderColor
     borderColor: "#A32D26"
   - type: Icon
@@ -936,8 +872,8 @@
 - type: entity
   parent: BaseSecurityPDA
   id: CentcomPDA
-  name: CentComm PDA
-  description: Light green sign of walking bureaucracy.
+  name: 中央指挥部个人数字助理 | CentComm PDA
+  description: 浅绿色标志，行走的官僚作风。 | Light green sign of walking bureaucracy.
   components:
   - type: Pda
     id: CentcomIDCard
@@ -949,9 +885,7 @@
         - Write
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-centcom
+      enum.PdaVisuals.PdaType: !type:String pda-centcom
   - type: PdaBorderColor
     borderColor: "#00842e"
   - type: Icon
@@ -972,14 +906,14 @@
 - type: entity
   parent: CentcomPDA
   id: AdminPDA
-  name: Admin PDA
+  name: 管理员PDA | Admin PDA
   suffix: Admin
-  description: If you are not an admin please return this PDA to the nearest admin.
+  description: 如果你不是管理员，请将此PDA交给最近的管理员。 | If you are not an admin please return this PDA to the nearest admin.
   components:
   - type: Pda
     id: UniversalIDCard
   - type: HealthAnalyzer
-    maxScanRange: null
+    maxScanRange:
     scanDelay: 0
     silent: true
   - type: CartridgeLoader
@@ -1014,16 +948,14 @@
 - type: entity
   parent: BasePDA
   id: MusicianPDA
-  name: musician PDA
-  description: It fills you with inspiration.
+  name: 音乐家PDA | musician PDA
+  description: 它让你充满灵感。 | It fills you with inspiration.
   components:
   - type: Pda
     id: MusicianIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-musician
+      enum.PdaVisuals.PdaType: !type:String pda-musician
   - type: PdaBorderColor
     borderColor: "#333333"
   - type: Icon
@@ -1048,16 +980,14 @@
 - type: entity
   parent: BasePDA
   id: AtmosPDA
-  name: atmos PDA
-  description: Still smells like plasma.
+  name: 大气个人数字助理 | atmos PDA
+  description: 仍然闻起来像等离子体。 | Still smells like plasma.
   components:
   - type: Pda
     id: AtmosIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-atmos
+      enum.PdaVisuals.PdaType: !type:String pda-atmos
   - type: PdaBorderColor
     borderColor: "#949137"
     accentVColor: "#447987"
@@ -1067,16 +997,14 @@
 - type: entity
   parent: BasePDA
   id: ClearPDA
-  name: clear PDA
-  description: 99 and 44/100ths percent pure plastic.
+  name: 透明PDA | clear PDA
+  description: 99又44/100%纯塑料。 | 99 and 44/100ths percent pure plastic.
   components:
   - type: Pda
     id: PassengerIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-clear
+      enum.PdaVisuals.PdaType: !type:String pda-clear
   - type: PdaBorderColor
     borderColor: "#288e4d"
   - type: Icon
@@ -1093,18 +1021,16 @@
     - DoorBumpOpener
 
 - type: entity
-  parent: [ BasePDA, BaseSyndicateContraband ]
+  parent: [BasePDA, BaseSyndicateContraband]
   id: SyndiPDA
-  name: syndicate PDA
-  description: Ok, time to be a productive member of- oh cool I'm a bad guy time to kill people!
+  name: 辛迪加个人数字助理 | syndicate PDA
+  description: 好，是时候做个有生产力的社会成员了——哦太酷了，我是个坏人，是时候去杀人了！ | Ok, time to be a productive member of- oh cool I'm a bad guy time to kill people!
   components:
   - type: Pda
     id: SyndicateIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-syndi
+      enum.PdaVisuals.PdaType: !type:String pda-syndi
   - type: PdaBorderColor
     borderColor: "#891417"
   - type: Icon
@@ -1117,34 +1043,30 @@
         - id: NanoTaskCartridge
 
 - type: entity
-  parent: [ SyndiPDA, BaseSyndicateContraband ]
+  parent: [SyndiPDA, BaseSyndicateContraband]
   id: SyndiOperativePDA
-  name: syndicate operative PDA
-  description: Death to NT!
+  name: 辛迪加特工个人数字助理 | syndicate operative PDA
+  description: NT去死！ | Death to NT!
   components:
   - type: Pda
     id: SyndiOperativeIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-syndi-operative
+      enum.PdaVisuals.PdaType: !type:String pda-syndi-operative
   - type: Icon
     state: pda-syndi-operative
 
 - type: entity
-  parent: [ SyndiOperativePDA, BaseSyndicateContraband ]
+  parent: [SyndiOperativePDA, BaseSyndicateContraband]
   id: SyndiCorpsmanPDA
-  name: syndicate corpsman PDA
-  description: Commander... I need to cook!
+  name: 辛迪加医护兵个人数字助手 | syndicate corpsman PDA
+  description: 指挥官……我得去做饭了！ | Commander... I need to cook!
   components:
   - type: Pda
     id: SyndiCorpsmanIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-syndi-corpsman
+      enum.PdaVisuals.PdaType: !type:String pda-syndi-corpsman
   - type: Icon
     state: pda-syndi-corpsman
   - type: EntityTableContainerFill
@@ -1156,35 +1078,31 @@
         - id: MedTekCartridge
 
 - type: entity
-  parent: [ SyndiOperativePDA, BaseSyndicateContraband ]
+  parent: [SyndiOperativePDA, BaseSyndicateContraband]
   id: SyndiCommanderPDA
-  name: syndicate commander PDA
-  description: So what are we, some kind of Nukie squad?
+  name: 辛迪加指挥官个人数字助理 | syndicate commander PDA
+  description: 那我们算什么，某种核子小队吗？ | So what are we, some kind of Nukie squad?
   components:
   - type: Pda
     id: SyndiCommanderIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-syndi-commander
+      enum.PdaVisuals.PdaType: !type:String pda-syndi-commander
   - type: Icon
     state: pda-syndi-commander
 
 - type: entity
   parent: BaseSecurityPDA
   id: ERTLeaderPDA
-  name: ERT Leader PDA
+  name: ERT队长PDA | ERT Leader PDA
   suffix: Leader
-  description: Red for firepower.
+  description: 红色代表火力。 | Red for firepower.
   components:
   - type: Pda
     id: ERTLeaderIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-ert
+      enum.PdaVisuals.PdaType: !type:String pda-ert
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentHColor: "#447987"
@@ -1207,9 +1125,9 @@
 - type: entity
   parent: ERTLeaderPDA
   id: ERTChaplainPDA
-  name: ERT Chaplain PDA
+  name: ERT牧师PDA | ERT Chaplain PDA
   suffix: Chaplain
-  description: Red for firepower, it's blessed.
+  description: 红色代表火力，它受到了祝福。 | Red for firepower, it's blessed.
   components:
   - type: Pda
     id: ERTChaplainIDCard
@@ -1217,9 +1135,9 @@
 - type: entity
   parent: ERTLeaderPDA
   id: ERTEngineerPDA
-  name: ERT Engineer PDA
+  name: ERT工程师PDA | ERT Engineer PDA
   suffix: Engineer
-  description: Red for firepower, it's well-worn.
+  description: 红色代表火力，已经磨损得很厉害了。 | Red for firepower, it's well-worn.
   components:
   - type: Pda
     id: ERTEngineerIDCard
@@ -1227,9 +1145,9 @@
 - type: entity
   parent: ERTLeaderPDA
   id: ERTJanitorPDA
-  name: ERT Janitor PDA
+  name: ERT清洁工PDA | ERT Janitor PDA
   suffix: Janitor
-  description: Red for firepower, it's squeaky clean.
+  description: 红色代表火力，干净得一尘不染。 | Red for firepower, it's squeaky clean.
   components:
   - type: Pda
     id: ERTJanitorIDCard
@@ -1237,9 +1155,9 @@
 - type: entity
   parent: ERTLeaderPDA
   id: ERTMedicPDA
-  name: ERT Medic PDA
+  name: ERT医疗兵PDA | ERT Medic PDA
   suffix: Medic
-  description: Red for firepower, it's shiny and sterile.
+  description: 红色代表火力，闪亮而洁净。 | Red for firepower, it's shiny and sterile.
   components:
   - type: Pda
     id: ERTMedicIDCard
@@ -1247,9 +1165,9 @@
 - type: entity
   parent: ERTLeaderPDA
   id: ERTSecurityPDA
-  name: ERT Security PDA
+  name: ERT安保掌上电脑 | ERT Security PDA
   suffix: Security
-  description: Red for firepower, it has tally marks etched on the side.
+  description: 红色代表火力，侧面刻有计数标记。 | Red for firepower, it has tally marks etched on the side.
   components:
   - type: Pda
     id: ERTSecurityIDCard
@@ -1257,8 +1175,8 @@
 - type: entity
   parent: ERTLeaderPDA
   id: CBURNPDA
-  name: CBURN PDA
-  description: Smells like rotten flesh.
+  name: CBURN个人数字助理 | CBURN PDA
+  description: 闻起来像腐烂的肉。 | Smells like rotten flesh.
   components:
   - type: Pda
     id: CBURNIDcard
@@ -1270,16 +1188,14 @@
 - type: entity
   parent: BasePDA
   id: PsychologistPDA
-  name: psychologist PDA
-  description: Looks immaculately cleaned.
+  name: 心理学家PDA | psychologist PDA
+  description: 看起来一尘不染。 | Looks immaculately cleaned.
   components:
   - type: Pda
     id: PsychologistIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-medical
+      enum.PdaVisuals.PdaType: !type:String pda-medical
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentVColor: "#447987"
@@ -1289,16 +1205,14 @@
 - type: entity
   parent: BasePDA
   id: TramDriverPDA
-  name: tram driver PDA
-  description: A serious driver will always arrive on time.
+  name: 电车司机PDA | tram driver PDA
+  description: 认真的司机会永远准时到达。 | A serious driver will always arrive on time.
   components:
   - type: Pda
     id: TramDriverIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-tramdriver
+      enum.PdaVisuals.PdaType: !type:String pda-tramdriver
   - type: PdaBorderColor
     borderColor: "#454a50"
     accentVColor: "#ffc500"
@@ -1308,8 +1222,8 @@
 - type: entity
   parent: BasePDA
   id: ReporterPDA
-  name: reporter PDA
-  description: Smells like freshly printed press.
+  name: 记者PDA | reporter PDA
+  description: 闻起来像刚印好的报纸。 | Smells like freshly printed press.
   components:
   - type: Pda
     id: ReporterIDCard
@@ -1321,9 +1235,7 @@
         - Write
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-reporter
+      enum.PdaVisuals.PdaType: !type:String pda-reporter
   - type: PdaBorderColor
     borderColor: "#3f3f74"
   - type: Icon
@@ -1332,16 +1244,14 @@
 - type: entity
   parent: BasePDA
   id: ZookeeperPDA
-  name: zookeeper PDA
-  description: Made with genuine synthetic leather. Crikey!
+  name: 动物园管理员PDA | zookeeper PDA
+  description: 用真正的合成皮革制成。哎呀！ | Made with genuine synthetic leather. Crikey!
   components:
   - type: Pda
     id: ZookeeperIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-zookeeper
+      enum.PdaVisuals.PdaType: !type:String pda-zookeeper
   - type: PdaBorderColor
     borderColor: "#ffe685"
   - type: Icon
@@ -1350,16 +1260,14 @@
 - type: entity
   parent: BasePDA
   id: BoxerPDA
-  name: boxer PDA
-  description: Float like a butterfly, ringtone like a bee.
+  name: 拳击手PDA | boxer PDA
+  description: 像蝴蝶一样轻盈，像蜜蜂一样响铃。 | Float like a butterfly, ringtone like a bee.
   components:
   - type: Pda
     id: BoxerIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-boxer
+      enum.PdaVisuals.PdaType: !type:String pda-boxer
   - type: PdaBorderColor
     borderColor: "#333333"
     accentVColor: "#390504"
@@ -1369,16 +1277,14 @@
 - type: entity
   parent: BaseSecurityPDA
   id: DetectivePDA
-  name: detective PDA
-  description: Smells like rain... pouring down the rooftops...
+  name: 侦探PDA | detective PDA
+  description: 闻起来像雨……从屋顶倾泻而下…… | Smells like rain... pouring down the rooftops...
   components:
   - type: Pda
     id: DetectiveIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-detective
+      enum.PdaVisuals.PdaType: !type:String pda-detective
   - type: PdaBorderColor
     borderColor: "#774705"
   - type: Icon
@@ -1398,15 +1304,13 @@
   parent: BaseMedicalPDA
   id: BrigmedicPDA
   name: brigmedic PDA
-  description: I wonder whose pulse is on the screen? I hope it doesn't stop...
+  description: 我想知道屏幕上是谁的脉搏？希望它不要停…… | I wonder whose pulse is on the screen? I hope it doesn't stop...
   components:
   - type: Pda
     id: BrigmedicIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-brigmedic
+      enum.PdaVisuals.PdaType: !type:String pda-brigmedic
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentHColor: "#d7d7d0"
@@ -1427,9 +1331,9 @@
 - type: entity
   parent: ClownPDA
   id: CluwnePDA
-  name: cluwne PDA
+  name: 被诅咒的小丑PDA | cluwne PDA
   suffix: Unremoveable
-  description: Cursed cluwne PDA.
+  description: 被诅咒的小丑PDA。 | Cursed cluwne PDA.
   components:
   - type: Pda
     id: CluwneIDCard
@@ -1442,9 +1346,7 @@
         - Write
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-cluwne
+      enum.PdaVisuals.PdaType: !type:String pda-cluwne
   - type: PdaBorderColor
     borderColor: "#1c8f4d"
   - type: Icon
@@ -1454,16 +1356,14 @@
 - type: entity
   parent: BasePDA
   id: SeniorEngineerPDA
-  name: senior engineer PDA
-  description: Seems to have been taken apart and put back together several times.
+  name: 高级工程师PDA | senior engineer PDA
+  description: 似乎被拆开又重新组装过好几次。 | Seems to have been taken apart and put back together several times.
   components:
   - type: Pda
     id: SeniorEngineerIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-seniorengineer
+      enum.PdaVisuals.PdaType: !type:String pda-seniorengineer
   - type: PdaBorderColor
     borderColor: "#949137"
     accentVColor: "#CD6900"
@@ -1473,16 +1373,14 @@
 - type: entity
   parent: BasePDA
   id: SeniorResearcherPDA
-  name: senior researcher PDA
-  description: Looks like it's been through years of chemical burns and explosions.
+  name: 高级研究员PDA | senior researcher PDA
+  description: 看起来它经历了多年的化学灼烧和爆炸。 | Looks like it's been through years of chemical burns and explosions.
   components:
   - type: Pda
     id: SeniorResearcherIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-seniorresearcher
+      enum.PdaVisuals.PdaType: !type:String pda-seniorresearcher
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentHColor: "#8900c9"
@@ -1493,16 +1391,14 @@
 - type: entity
   parent: BaseMedicalPDA
   id: SeniorPhysicianPDA
-  name: senior physician PDA
-  description: Smells faintly like iron and chemicals.
+  name: 高级医师PDA | senior physician PDA
+  description: 闻起来有淡淡的铁锈和化学品味。 | Smells faintly like iron and chemicals.
   components:
   - type: Pda
     id: SeniorPhysicianIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-seniorphysician
+      enum.PdaVisuals.PdaType: !type:String pda-seniorphysician
   - type: PdaBorderColor
     borderColor: "#d7d7d0"
     accentHColor: "#447987"
@@ -1513,16 +1409,14 @@
 - type: entity
   parent: BaseSecurityPDA
   id: SeniorOfficerPDA
-  name: senior officer PDA
-  description: Beaten, battered and broken, but just barely useable.
+  name: 高级军官个人数字助理 | senior officer PDA
+  description: 被打得遍体鳞伤、破烂不堪，但勉强还能用。 | Beaten, battered and broken, but just barely useable.
   components:
   - type: Pda
     id: SeniorOfficerIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-seniorofficer
+      enum.PdaVisuals.PdaType: !type:String pda-seniorofficer
   - type: PdaBorderColor
     borderColor: "#A32D26"
     accentVColor: "#DFDFDF"
@@ -1532,16 +1426,14 @@
 - type: entity
   parent: BasePDA
   id: SeniorCourierPDA
-  name: senior courier PDA
-  description: Smells like postage stamps and shuttle fuel.
+  name: 高级快递员PDA | senior courier PDA
+  description: 闻起来像邮票和航天飞机燃料。 | Smells like postage stamps and shuttle fuel.
   components:
   - type: Pda
     id: SeniorCourierIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-seniorcourier
+      enum.PdaVisuals.PdaType: !type:String pda-seniorcourier
   - type: PdaBorderColor
     borderColor: "#e39751"
     accentVColor: "#DFDFDF"
@@ -1549,42 +1441,38 @@
     state: pda-seniorcourier
 
 - type: entity
-  parent: [ BaseHighlyIllegalContraband, BasePDA ]
+  parent: [BaseHighlyIllegalContraband, BasePDA]
   id: NinjaPDA
-  name: ninja PDA
-  description: You stealthy bastard, you!
+  name: 忍者PDA | ninja PDA
+  description: 你个鬼鬼祟祟的家伙！ | You stealthy bastard, you!
   components:
   - type: Pda
     id: NinjaIDCard
   - type: Appearance
     appearanceDataInit:
-      enum.PdaVisuals.PdaType:
-        !type:String
-        pda-ninja
+      enum.PdaVisuals.PdaType: !type:String pda-ninja
   - type: Icon
     state: pda-ninja
 
 - type: entity
-  parent: [ BaseMajorContraband, SyndiPDA ]
+  parent: [BaseMajorContraband, SyndiPDA]
   id: PiratePDA
-  name: pirate PDA
-  description: Yargh!
+  name: 海盗掌上电脑 | pirate PDA
+  description: 呀！ | Yargh!
   components:
   - type: Pda
     id: PirateIDCard
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-pirate
+      enum.PdaVisuals.PdaType: !type:String pda-pirate
   - type: Icon
     state: pda-pirate
 
 - type: entity
   parent: [BasePDA, SelectableLock]
   id: ChameleonPDA
-  name: passenger PDA
-  description: Why isn't it gray?
+  name: 乘客PDA | passenger PDA
+  description: 为什么不是灰色的？ | Why isn't it gray?
   suffix: Chameleon
   components:
   - type: PdaBorderColor
@@ -1622,8 +1510,8 @@
 - type: entity
   parent: BaseWidePDA
   id: WizardPDA
-  name: wizard PDA
-  description: You hear faint whispers coming from it.
+  name: 巫师掌上电脑 | wizard PDA
+  description: 你听到从中传来微弱的低语声。 | You hear faint whispers coming from it.
   components:
   - type: Pda
     id: WizardIDCard
@@ -1635,9 +1523,7 @@
         - Write
   - type: Appearance
     appearanceDataInit:
-     enum.PdaVisuals.PdaType:
-       !type:String
-       pda-wizard
+      enum.PdaVisuals.PdaType: !type:String pda-wizard
   - type: PdaBorderColor
     borderColor: "#7F3300"
   - type: Icon
@@ -1646,7 +1532,7 @@
 - type: entity
   parent: ClearPDA
   id: ScurretPDA
-  description: A temporary PDA granted to scurret temps. Doesn't do much. Wawa!
+  description: 授予鼠类临时工的临时个人数字助理。没什么大用。哇哇！ | A temporary PDA granted to scurret temps. Doesn't do much. Wawa!
   components:
   - type: Pda
     id: VisitorIDCard

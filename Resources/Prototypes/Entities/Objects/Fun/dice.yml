@@ -17,8 +17,8 @@
 - type: entity
   parent: BaseDice
   id: PercentileDie
-  name: percentile die
-  description: A die with ten sides. Works better for d100 rolls than a golf ball.
+  name: 百分位骰 | percentile die
+  description: 一个十面骰。用于d100投掷比高尔夫球更合适。 | A die with ten sides. Works better for d100 rolls than a golf ball.
   components:
   - type: Dice
     sides: 10
@@ -32,7 +32,7 @@
   parent: BaseDice
   id: d20Dice
   name: d20
-  description: A die with twenty sides. The preferred die to throw at the GM.
+  description: 一个二十面的骰子。用来砸GM的最佳选择。 | A die with twenty sides. The preferred die to throw at the GM.
   components:
   - type: Dice
     sides: 20
@@ -44,7 +44,7 @@
   parent: BaseDice
   id: d12Dice
   name: d12
-  description: A die with twelve sides. There's an air of neglect about it.
+  description: 一个十二面的骰子。它透着一股被冷落的气息。 | A die with twelve sides. There's an air of neglect about it.
   components:
   - type: Dice
     sides: 12
@@ -56,7 +56,7 @@
   parent: BaseDice
   id: d10Dice
   name: d10
-  description: A die with ten sides. Useful for percentages.
+  description: 一个十面骰子。适用于百分比。 | A die with ten sides. Useful for percentages.
   components:
   - type: Dice
     sides: 10
@@ -69,7 +69,7 @@
   parent: BaseDice
   id: d8Dice
   name: d8
-  description: A die with eight sides. It feels... lucky.
+  description: 一个八面骰子。它感觉……很幸运。 | A die with eight sides. It feels... lucky.
   components:
   - type: Dice
     sides: 8
@@ -81,7 +81,7 @@
   parent: BaseDice
   id: d6Dice
   name: d6
-  description: A die with six sides. Basic and serviceable.
+  description: 一个六面骰子。基础且实用。 | A die with six sides. Basic and serviceable.
   components:
   - type: Dice
     sides: 6
@@ -102,7 +102,7 @@
   parent: BaseDice
   id: d4Dice
   name: d4
-  description: A die with four sides. The nerd's caltrop.
+  description: 四面骰。书呆子的铁蒺藜。 | A die with four sides. The nerd's caltrop.
   components:
   - type: Dice
     sides: 4
@@ -114,15 +114,13 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.2,0.2,0.2"
         hard: false
         layer:
         - LowImpassable
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.2,0.2,0.2"
         density: 30
         mask:
@@ -146,8 +144,8 @@
 - type: entity
   parent: BaseCoin
   id: d2Dice
-  name: Heads or Tails Coin
-  description: Some sort of two-sided die. Designed to represent the struggle between Nanotrasen and the Syndicate.
+  name: 正面或反面硬币 | Heads or Tails Coin
+  description: 某种双面骰子。旨在代表纳米传思与辛迪加之间的斗争。 | Some sort of two-sided die. Designed to represent the struggle between Nanotrasen and the Syndicate.
   components:
   - type: Sprite
     state: d2_1
@@ -166,8 +164,8 @@
 - type: entity
   parent: BaseStorageItem
   id: DiceBag
-  name: bag of dice
-  description: Contains all the luck you'll ever need.
+  name: 一袋骰子 | bag of dice
+  description: 包含你所需的所有运气。 | Contains all the luck you'll ever need.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -200,7 +198,7 @@
 - type: entity
   parent: DiceBag
   id: MagicDiceBag
-  name: bag of dice
+  name: 一袋骰子 | bag of dice
   components:
   - type: Sprite
     sprite: Objects/Fun/dice.rsi

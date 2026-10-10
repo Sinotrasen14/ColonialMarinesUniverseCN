@@ -9,19 +9,21 @@
     hideOnToggle: true
   - type: IdentityBlocker
   - type: Appearance
-
 - type: entity
-  parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
+  parent:
+  - CMBaseMask
+  - CMUBaseGasMaskFilterSlot
   id: CMMaskGas
-  name: gas mask
-  description: A face-covering mask that can be connected to an air supply. Filters harmful gases from the air.
+  name: 防毒面具
+  description: 一种可连接供气源的面罩。可过滤空气中的有害气体。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/gas.rsi
     layers:
     - state: base
     - state: camo
-      map: [ "enum.ItemCamouflageLayers.Layer" ]
+      map:
+      - enum.ItemCamouflageLayers.Layer
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/gas.rsi
     slots:
@@ -29,11 +31,11 @@
     - Suitstorage
   - type: ItemCamouflage
     colors:
-      Jungle: "#ccd08d"
-      Desert: "#ffd2a6"
-      Snow: "#ddcbc9"
-      Classic: "#c7e7d9"
-      Urban: "#acb8c7"
+      Jungle: '#ccd08d'
+      Desert: '#ffd2a6'
+      Snow: '#ddcbc9'
+      Classic: '#c7e7d9'
+      Urban: '#acb8c7'
   - type: Item
     size: Small
   - type: Tag
@@ -44,12 +46,13 @@
   - type: CMUItemStain
     wornStates:
       mask: gasmask_blood
-
 - type: entity
-  parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
+  parent:
+  - CMBaseMask
+  - CMUBaseGasMaskFilterSlot
   id: RMCMaskGasSPP
-  name: ShMB/4 gasmask
-  description: The standard issue gasmask utilized by the UPP Vanguard Collective and many UPP civilian organizations.
+  name: ShMB/4防毒面具
+  description: UPP先锋集体及许多UPP民用组织配发的标准防毒面具。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/spp_gasmask.rsi
@@ -71,35 +74,29 @@
   - type: CMUItemStain
     wornStates:
       mask: gasmask_blood
-
 - type: Tag
   id: GasMask
-
-# Prescription variants
-
 - type: entity
   parent: CMMaskGas
   id: CMMaskPrescriptionGas
-  name: prescription gas mask
-  description: A face-covering mask that can be connected to an air supply. Filters harmful gases from the air. Contains prescription lenses.
+  name: 处方防毒面具
+  description: 一种可连接供气源的面罩。可过滤空气中的有害气体。带有处方镜片。
   components:
   - type: VisionCorrection
     visionBonus: -4
-
 - type: entity
   parent: RMCMaskGasSPP
   id: RMCMaskPrescriptionGasSPP
-  name: prescription ShMB/4 gasmask
-  description: The standard issue gasmask utilized by the UPP Vanguard Collective and many UPP civilian organizations. Contains prescription lenses.
+  name: 处方ShMB/4防毒面具
+  description: UPP先锋集体及许多UPP民用组织配发的标准防毒面具。带有处方镜片。
   components:
   - type: VisionCorrection
     visionBonus: -4
-
 - type: entity
   parent: CMBaseMask
   id: CMMaskSterile
-  name: sterile mask
-  description: A sterile mask designed to help prevent the spread of diseases.
+  name: 无菌口罩
+  description: 一种用于帮助防止疾病传播的无菌口罩。
   components:
   - type: IdentityBlocker
     coverage: MOUTH
@@ -115,15 +112,13 @@
   - type: CMUItemStain
     wornStates:
       mask: sterile_blood
-
 - type: Tag
   id: SterileMask
-
-- type: entity # TODO RMC14 this needs a lizard sprite
+- type: entity
   parent: ClothingMaskGas
   id: CMMaskGasMedical
-  name: medical gas mask
-  description: A close-fitting sterile mask that can be connected to an air supply.
+  name: 医用防毒面具
+  description: 一种可连接供气源的紧贴面部的无菌口罩。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/medical.rsi
@@ -134,12 +129,11 @@
   - type: CMUItemStain
     wornStates:
       mask: gasmask_blood
-
 - type: entity
   parent: CMBaseMask
   id: RMCMaskBreath
-  name: breath mask
-  description: A close-fitting mask that can be connected to an air supply.
+  name: 呼吸面罩
+  description: 一种可连接供气源的紧贴面部的面罩。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/breath.rsi
@@ -151,12 +145,13 @@
     size: Small
   - type: MycotoxinProtection
     fullProtection: false
-
 - type: entity
-  parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
+  parent:
+  - CMBaseMask
+  - CMUBaseGasMaskFilterSlot
   id: RMCMaskRebreather
-  name: rebreather
-  description: A close-fitting device that instantly heats or cools down air when you inhale so it doesn't damage your lungs.
+  name: 循环呼吸器
+  description: 一种紧贴式装置，可在吸气时立即加热或冷却空气，以免损伤肺部。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/rebreather.rsi
@@ -168,12 +163,13 @@
     size: Small
   - type: MycotoxinProtection
     fullProtection: false
-
 - type: entity
-  parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
+  parent:
+  - CMBaseMask
+  - CMUBaseGasMaskFilterSlot
   id: RMCMaskKutjevoRespirator
-  name: kutjevo respirator
-  description: A respirator worn on the face that filters out harmful air particles often present in the air of Kutjevo.
+  name: 库捷沃呼吸器
+  description: 一种佩戴在面部的呼吸器，可过滤掉库捷沃空气中常有的有害颗粒。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/kutjevo_respirator.rsi
@@ -185,21 +181,23 @@
     size: Small
   - type: MycotoxinProtection
     fullProtection: false
-
-# Coifs
 - type: entity
-  parent: [ClothingMaskBase, BaseFoldable]
+  parent:
+  - ClothingMaskBase
+  - BaseFoldable
   id: CMMaskCoif
-  name: heat absorbent coif
-  description: A close-fitting cap that covers the top, back, and sides of the head. Can also be adjusted to cover the lower part of the face so it keeps the user warm in harsh conditions.
+  name: 吸热头巾
+  description: 一种贴合头部的帽子，覆盖头顶、后脑和头部两侧。也可调整以遮住面部下半部分，从而在恶劣环境中为用户保暖。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/coif.rsi
     layers:
     - state: icon
-      map: [ "unfoldedLayer" ]
+      map:
+      - unfoldedLayer
     - state: icon
-      map: ["foldedLayer"]
+      map:
+      - foldedLayer
       visible: false
   - type: HideLayerClothing
     slots:
@@ -232,11 +230,10 @@
     - HeadTop
     - HeadSide
     - Snout
-
 - type: entity
   parent: CMMaskCoif
   id: RMCMaskCoifGreen
-  name: UNMC green balaclava
+  name: UNMC绿色巴拉克拉瓦头套
   components:
   - type: HideLayerClothing
     layers:
@@ -248,11 +245,10 @@
     sprite: _RMC14/Objects/Clothing/Mask/green_coif.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/green_coif.rsi
-
 - type: entity
   parent: CMMaskCoif
   id: RMCMaskCoifGrey
-  name: UNMC grey balaclava
+  name: UNMC灰色巴拉克拉瓦帽
   components:
   - type: HideLayerClothing
     layers:
@@ -264,11 +260,10 @@
     sprite: _RMC14/Objects/Clothing/Mask/grey_coif.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/grey_coif.rsi
-
 - type: entity
   parent: CMMaskCoif
   id: RMCMaskCoifTan
-  name: UNMC tan balaclava
+  name: UNMC 棕褐色巴拉克拉瓦头套
   components:
   - type: HideLayerClothing
     layers:
@@ -280,12 +275,11 @@
     sprite: _RMC14/Objects/Clothing/Mask/tan_coif.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/tan_coif.rsi
-
 - type: entity
   parent: CMMaskCoif
   id: RMCMaskCoifPMC
-  name: M8 pattern armored coif
-  description: An armored coif designed to conceal both the identity of the operator and act as an air-filter.
+  name: M8型装甲头罩
+  description: 一种装甲头罩，旨在隐藏使用者的身份并充当空气过滤器。
   components:
   - type: HideLayerClothing
     layers:
@@ -297,13 +291,11 @@
     melee: 20
     bio: 30
     explosionArmor: 10
-
-# Balaclavas
 - type: entity
   parent: CMBaseMask
   id: RMCMaskBalaclava
-  name: balaclava
-  description: A basic single eye-hole balaclava, available in almost every sporting goods, outdoor supply, or military surplus store in existence, protects your face from the cold almost as well as it conceals it. This one is in a standard black color.
+  name: 巴拉克拉瓦头套
+  description: 一个基础款单眼孔巴拉克拉瓦头套，几乎在所有现存的体育用品店、户外用品店或军品剩余物资店都能买到，它保护面部免受寒冷的效果，几乎不亚于它遮掩面部的效果。这一款是标准的黑色。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/balaclava.rsi
@@ -318,24 +310,21 @@
     - HeadSide
     - Hair
     - Snout
-
 - type: entity
   parent: RMCMaskBalaclava
   id: RMCMaskBalaclavaGreen
-  name: green balaclava
-  description: A basic single eye-hole balaclava, available in almost every sporting goods, outdoor supply, or military surplus store in existence, protects your face from the cold almost as well as it conceals it. This one is in a non-standard green color.
+  name: 绿色巴拉克拉瓦头套
+  description: 一款基本的单眼孔巴拉克拉瓦头套，几乎在任何现有的体育用品店、户外用品店或军用剩余物资商店都能买到，它保护面部御寒的效果，几乎和遮掩面部的效果一样好。这一款采用非标准的绿色。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/swatclava.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/swatclava.rsi
-
 - type: entity
   parent: RMCMaskCoifPMC
   id: RMCMaskBalaclavaMARSOC
-  name: SOF armored balaclava
-  description: Designed for maximum protection -- and badassery. Provides protection against facial attacks, filters toxins, and conceals the wearer's identity.
-
+  name: 特种部队装甲巴拉克拉瓦头套
+  description: 专为极致防护——以及霸气——而设计。可抵御面部攻击、过滤毒素，并隐藏佩戴者身份。
   components:
   - type: HideLayerClothing
     layers:
@@ -346,7 +335,7 @@
 - type: entity
   parent: RMCMaskBalaclavaMARSOC
   id: RMCMaskBalaclavaSPPCommando
-  name: UPP armored commando balaclava
+  name: UPP装甲突击队巴拉克拉瓦头套
   components:
   - type: HideLayerClothing
     layers:
@@ -358,34 +347,33 @@
     sprite: _RMC14/Objects/Clothing/Mask/spp_commando_coif.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/spp_commando_coif.rsi
-
 - type: entity
   parent: RMCMaskBalaclava
   id: RMCMaskBalaclavaSkullBlue
-  name: skull balaclava
-  description: The face of your nightmares. Or at least that's how you imagined it'd be. Additionally protects against the cold.
+  name: 骷髅头套
+  description: 你噩梦中的脸。至少你曾想象它是这样。此外还能防寒。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/skull_coif_blue.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/skull_coif_blue.rsi
-
 - type: entity
   parent: RMCMaskBalaclavaSkullBlue
   id: RMCMaskBalaclavaSkullBlack
-  description: The face of your nightmares. Or at least that's how you imagined it'd be. Now in black!
+  description: 你噩梦中的那张脸。至少你曾想象过它是这样。现在推出黑色款！
   suffix: Black
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/skull_coif.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/skull_coif.rsi
-
 - type: entity
-  parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
+  parent:
+  - CMBaseMask
+  - CMUBaseGasMaskFilterSlot
   id: RMCMaskSWAT
-  name: SWAT mask
-  description: A close-fitting tactical mask that can be connected to an air supply.
+  name: 特警面罩
+  description: 一种可连接供气装置的贴身战术面罩。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/swat_mask.rsi
@@ -397,12 +385,13 @@
     size: Small
   - type: MycotoxinProtection
     fullProtection: true
-
 - type: entity
-  parent: [CMBaseMask, RMCHelmetGarbToggleableBase]
+  parent:
+  - CMBaseMask
+  - RMCHelmetGarbToggleableBase
   id: RMCVisorSWAT
-  name: TC2 CMB riot shield
-  description: Yellowish protective glass piece, can be lifted up when needed, makes you see everything in yellow.
+  name: TC2 CMB防暴盾牌
+  description: 偏黄色的防护玻璃片，需要时可向上掀起，让你看到的一切都呈黄色。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Mask/swat_shield.rsi
@@ -421,15 +410,11 @@
       state: helmet-down
   - type: ItemToggle
     activated: true
-
-
-# Keffiyehs
-
 - type: entity
   parent: CMMaskCoif
   id: RMCMaskKeffiyeh
-  name: keffiyeh
-  description: A traditional headscarf worn for protection from the elements and to conceal the face. Typically made of cotton, it can provide shade from the sun, guard against dust, and serve as camouflage in arid environments. Often worn by soldiers and civilians alike in desert and hostile regions, the keffiyeh has become a symbol of cultural identity and resilience.
+  name: 阿拉伯头巾
+  description: 一种传统头巾，用于抵御恶劣天气并遮挡面部。通常由棉布制成，可遮阳、防尘，并在干旱环境中充当伪装。在沙漠和敌对地区，士兵与平民都常佩戴这种凯菲耶头巾，它已成为文化认同与坚韧精神的象征。
   components:
   - type: HideLayerClothing
     layers:
@@ -442,8 +427,7 @@
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/Keffiyeh/keffiyeh.rsi
   - type: FoldableClothing
-    foldedHideLayers: [ ]
-
+    foldedHideLayers: []
 - type: entity
   parent: RMCMaskKeffiyeh
   id: RMCMaskKeffiyehBlack
@@ -458,7 +442,6 @@
     sprite: _RMC14/Objects/Clothing/Mask/Keffiyeh/keffiyeh_black.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/Keffiyeh/keffiyeh_black.rsi
-
 - type: entity
   parent: RMCMaskKeffiyeh
   id: RMCMaskKeffiyehBlue
@@ -473,7 +456,6 @@
     sprite: _RMC14/Objects/Clothing/Mask/Keffiyeh/keffiyeh_blue.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/Keffiyeh/keffiyeh_blue.rsi
-
 - type: entity
   parent: RMCMaskKeffiyeh
   id: RMCMaskKeffiyehGreen
@@ -488,7 +470,6 @@
     sprite: _RMC14/Objects/Clothing/Mask/Keffiyeh/keffiyeh_green.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/Keffiyeh/keffiyeh_green.rsi
-
 - type: entity
   parent: RMCMaskKeffiyeh
   id: RMCMaskKeffiyehWhite
@@ -503,7 +484,6 @@
     sprite: _RMC14/Objects/Clothing/Mask/Keffiyeh/keffiyeh_white.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Mask/Keffiyeh/keffiyeh_white.rsi
-
 - type: entity
   parent: RMCMaskKeffiyeh
   id: RMCMaskKeffiyehRed

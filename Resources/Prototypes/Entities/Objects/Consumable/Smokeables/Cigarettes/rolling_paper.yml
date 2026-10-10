@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStorageItem
-  name: pack of rolling paper
+  name: 一包卷烟纸 | pack of rolling paper
   id: PackPaperRolling
-  description: A pack of thin pieces of paper used to make fine smokeables.
+  description: 一包薄纸，用于制作精细的烟制品。 | A pack of thin pieces of paper used to make fine smokeables.
   components:
   - type: Storage
     grid:
@@ -24,9 +24,9 @@
 
 - type: entity
   parent: PackPaperRolling
-  name: pack of rolling paper with filters
+  name: 带滤嘴的卷烟纸包 | pack of rolling paper with filters
   id: PackPaperRollingFilters
-  description: A pack of filters and thin pieces of paper used to make fine smokeables.
+  description: 一包滤嘴和薄纸，用于制作精细的烟制品。 | A pack of filters and thin pieces of paper used to make fine smokeables.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -39,8 +39,8 @@
 
 - type: entity
   id: PaperRolling
-  name: rolling paper
-  description: A thin piece of paper used to make fine smokeables.
+  name: 卷烟纸 | rolling paper
+  description: 用来制作精细烟卷的薄纸。 | A thin piece of paper used to make fine smokeables.
   suffix: Full
   parent: BaseItem
   components:
@@ -64,13 +64,13 @@
   suffix: Single
   parent: PaperRolling
   components:
-    - type: Stack
-      count: 1
+  - type: Stack
+    count: 1
 
 - type: entity
   id: CigaretteFilter
-  name: cigarette filter
-  description: A strip of firm paper used as a filter for handmade cigarettes.
+  name: 香烟过滤嘴 | cigarette filter
+  description: 一条坚硬的纸条，用作手工卷烟的过滤嘴。 | A strip of firm paper used as a filter for handmade cigarettes.
   suffix: Full
   parent: BaseItem
   components:
@@ -93,5 +93,5 @@
   suffix: Single
   parent: CigaretteFilter
   components:
-    - type: Stack
-      count: 1
+  - type: Stack
+    count: 1

@@ -1,8 +1,8 @@
 - type: entity
-  name: spider clan charge
-  description: A modified C-4 charge supplied to you by the Spider Clan. Its explosive power has been juiced up, but only works in one specific area.
+  name: 蜘蛛氏族炸药 | spider clan charge
+  description: 蜘蛛氏族提供给你的改良C-4炸药。它的爆炸威力得到了增强，但只能在特定区域发挥作用。 | A modified C-4 charge supplied to you by the Spider Clan. Its explosive power has been juiced up, but only works in one specific area.
   # not actually modified C-4! oh the horror!
-  parent: [ BaseItem, BaseHighlyIllegalContraband ]
+  parent: [BaseItem, BaseHighlyIllegalContraband]
   id: SpiderCharge
   components:
   - type: Sprite
@@ -44,5 +44,5 @@
     visuals:
       enum.Trigger.TriggerVisuals.VisualState:
         base:
-          Primed: { state: primed }
-          Unprimed: { state: icon }
+          Primed: {state: primed}
+          Unprimed: {state: icon}

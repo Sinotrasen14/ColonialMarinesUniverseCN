@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseItem, BaseXenoborgContraband ]
+  parent: [BaseItem, BaseXenoborgContraband]
   id: CloakingDevice
-  name: cloaking device
-  description: A device that allows Xenoborgs to go invisible.
+  name: 隐形装置 | cloaking device
+  description: 一种能让异形生化人隐形的装置。 | A device that allows Xenoborgs to go invisible.
   components:
   - type: Sprite
     sprite: Objects/Specific/Research/anomalyscanner.rsi
@@ -33,8 +33,8 @@
 - type: entity
   parent: CloakingDevice
   id: SuperCloakingDevice
-  name: super cloaking device
-  description: A device that allows Xenoborgs to go truly invisible.
+  name: 超级隐形装置 | super cloaking device
+  description: 一种能让异形机械体真正隐形的装置。 | A device that allows Xenoborgs to go truly invisible.
   components:
   - type: ComponentToggler
     parent: true

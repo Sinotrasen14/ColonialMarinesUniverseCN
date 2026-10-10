@@ -1,8 +1,8 @@
 - type: entity
-  name: BaseSMG
+  name: 基础冲锋枪 | BaseSMG
   parent: BaseItem
   id: BaseWeaponSubMachineGun
-  description: A rooty tooty point and shooty.
+  description: 一把土里土气的突突枪。 | A rooty tooty point and shooty.
   abstract: true
   components:
   - type: Sprite
@@ -37,21 +37,21 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: MagazinePistolSubMachineGun
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistolSubMachineGun
+          - MagazinePistolSubMachineGun
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
-        name: Chamber
+        name: 腔室 | Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+          - CartridgePistol
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -60,10 +60,10 @@
     price: 500
 
 - type: entity
-  name: Atreides
+  name: 阿特雷德斯 | Atreides
   parent: [BaseWeaponSubMachineGun, BaseMajorContraband]
   id: WeaponSubMachineGunAtreides
-  description: A rare machine pistol hailing from the Corporate Wars. Its extremely high fire rate and compact profile make it useful in close quarters combat. Despite its age, it is in remarkably good condition. Feeds from .35 SMG magazines.
+  description: 一款源自企业战争的稀有冲锋手枪。其极高的射速和紧凑的外形使其在近身战斗中十分实用。尽管年代久远，它的状态却出奇地好。使用.35冲锋枪弹匣供弹。 | A rare machine pistol hailing from the Corporate Wars. Its extremely high fire rate and compact profile make it useful in close quarters combat. Despite its age, it is in remarkably good condition. Feeds from .35 SMG magazines.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/atreides.rsi
@@ -83,10 +83,10 @@
   - type: Appearance
 
 - type: entity
-  name: C-20r submachine gun
+  name: C-20r冲锋枪 | C-20r submachine gun
   parent: [BaseWeaponSubMachineGun, BaseSyndicateContraband]
   id: WeaponSubMachineGunC20r
-  description: A classic and widespread submachine gun, infamous for its use by the Gorlex Marauders. One of the first homegrown Waffle Corp. designs, it remains in service today. Feeds from .35 SMG magazines.
+  description: 一种经典且广泛使用冲锋枪，因被戈雷克斯掠夺者使用而臭名昭著。作为华夫公司最早的自主设计之一，它至今仍在服役。使用.35冲锋枪弹匣供弹。 | A classic and widespread submachine gun, infamous for its use by the Gorlex Marauders. One of the first homegrown Waffle Corp. designs, it remains in service today. Feeds from .35 SMG magazines.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/c20r.rsi
@@ -123,10 +123,10 @@
     price: 5000
 
 - type: entity
-  name: C-20r ROW #I think ROW stands for Recharging Onboard Weapon so i'm following the L6C's example
+  name: C-20r 连发冲锋枪 | C-20r ROW #I think ROW stands for Recharging Onboard Weapon so i'm following the L6C's example
   id: WeaponSubMachineGunC20rROW
   parent: BaseItem
-  description: A burst-fire C-20r submachine gun for use by cyborgs. Creates .35 caliber ammo on the fly from an internal ammo fabricator, which slowly self-charges.
+  description: 一种用于半机械人的连发C-20r冲锋枪。可通过内置弹药制造器即时生成.35口径弹药，该制造器会缓慢自充电。 | A burst-fire C-20r submachine gun for use by cyborgs. Creates .35 caliber ammo on the fly from an internal ammo fabricator, which slowly self-charges.
   components:
   - type: Gun
     minAngle: 2
@@ -165,86 +165,86 @@
   - type: AmmoCounter
 
 - type: entity
-  name: Drozd
+  name: 德罗兹 | Drozd
   parent: [BaseWeaponSubMachineGun, BaseSecurityContraband]
   id: WeaponSubMachineGunDrozd
-  description: A modern SMG manufactured by Nanotrasen’s Small Arms Division. It features an exceptional rate of fire in burst mode, useful for holding defensive angles or engaging hostiles at longer ranges. Feeds from .35 SMG magazines.
+  description: 由纳米传讯轻武器部门制造的现代冲锋枪。它在连发模式下具有出色的射速，适合守住防御角度或在较远距离与敌人交战。使用.35冲锋枪弹匣供弹。 | A modern SMG manufactured by Nanotrasen’s Small Arms Division. It features an exceptional rate of fire in burst mode, useful for holding defensive angles or engaging hostiles at longer ranges. Feeds from .35 SMG magazines.
   components:
-    - type: Sprite
-      sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
-      layers:
-        - state: base
-          map: ["enum.GunVisualLayers.Base"]
-        - state: mag-0
-          map: ["enum.GunVisualLayers.Mag"]
-    - type: Clothing
-      sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
-    - type: Wieldable
-      unwieldOnUse: false
-    - type: GunWieldBonus
-      minAngle: -19
-      maxAngle: -16
-    - type: Gun
-      minAngle: 21
-      maxAngle: 32
-      fireRate: 6
-      burstFireRate: 18
-      soundGunshot:
-        path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
-      selectedMode: Burst
-      availableModes:
-      - Burst
-      - FullAuto
-      - SemiAuto
-      shotsPerBurst: 3
-      burstCooldown: 0.375
-    - type: ItemSlots
-      slots:
-        gun_magazine:
-          name: Magazine
-          startingItem: MagazinePistolSubMachineGun
-          insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
-          ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
-          priority: 2
-          whitelist:
-            tags:
-              - MagazinePistolSubMachineGun
-          whitelistFailPopup: gun-magazine-whitelist-fail
-        gun_chamber:
-          name: Chamber
-          priority: 1
-          whitelist:
-            tags:
-              - CartridgePistol
-    - type: MagazineVisuals
-      magState: mag
-      steps: 5
-      zeroVisible: true
-    - type: Appearance
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+  - type: Clothing
+    sprite: Objects/Weapons/Guns/SMGs/drozd.rsi
+  - type: Wieldable
+    unwieldOnUse: false
+  - type: GunWieldBonus
+    minAngle: -19
+    maxAngle: -16
+  - type: Gun
+    minAngle: 21
+    maxAngle: 32
+    fireRate: 6
+    burstFireRate: 18
+    soundGunshot:
+      path: /Audio/Weapons/Guns/Gunshots/atreides.ogg
+    selectedMode: Burst
+    availableModes:
+    - Burst
+    - FullAuto
+    - SemiAuto
+    shotsPerBurst: 3
+    burstCooldown: 0.375
+  - type: ItemSlots
+    slots:
+      gun_magazine:
+        name: 弹匣 | Magazine
+        startingItem: MagazinePistolSubMachineGun
+        insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
+        ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
+        priority: 2
+        whitelist:
+          tags:
+          - MagazinePistolSubMachineGun
+        whitelistFailPopup: gun-magazine-whitelist-fail
+      gun_chamber:
+        name: 腔室 | Chamber
+        priority: 1
+        whitelist:
+          tags:
+          - CartridgePistol
+  - type: MagazineVisuals
+    magState: mag
+    steps: 5
+    zeroVisible: true
+  - type: Appearance
 
 - type: entity
   name: WT550
   parent: [BaseWeaponSubMachineGun, BaseSecurityContraband]
   id: WeaponSubMachineGunWt550
-  description: A truly unique firearm, the WT550 was designed by Nanotrasen's Small Arms Division as a compact submachine gun fully controllable with one hand. It contains an exotic internal recoil buffer and feeds from special top-mounted .35 magazines.
+  description: 一款真正独特的枪械，WT550由纳米传思轻武器部门设计，是一款可完全单手控制的紧凑型冲锋枪。它内置异乎寻常的后坐缓冲器，并使用特殊的顶部安装式.35弹匣供弹。 | A truly unique firearm, the WT550 was designed by Nanotrasen's Small Arms Division as a compact submachine gun fully controllable with one hand. It contains an exotic internal recoil buffer and feeds from special top-mounted .35 magazines.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: base-unshaded
-        map: ["enum.GunVisualLayers.BaseUnshaded"]
-        shader: unshaded
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
-      - state: mag-unshaded-0
-        map: ["enum.GunVisualLayers.MagUnshaded"]
-        shader: unshaded
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: base-unshaded
+      map: ["enum.GunVisualLayers.BaseUnshaded"]
+      shader: unshaded
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/SMGs/wt550.rsi
   - type: ChamberMagazineAmmoProvider
-    boltClosed: null
+    boltClosed:
   - type: Gun
     fireRate: 5.5
     minAngle: 1
@@ -262,21 +262,21 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: MagazinePistolSubMachineGunTopMounted
         insertSound: /Audio/Weapons/Guns/MagIn/smg_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/smg_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistolSubMachineGunTopMounted
+          - MagazinePistolSubMachineGunTopMounted
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
-        name: Chamber
+        name: 腔室 | Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+          - CartridgePistol
   - type: MagazineVisuals
     magState: mag
     steps: 6
@@ -284,10 +284,10 @@
   - type: Appearance
 
 - type: entity
-  name: brown briefcase
+  name: 棕色公文包 | brown briefcase
   parent: [BaseWeaponSubMachineGun]
   id: WeaponSubMachineGunBriefcase
-  description: Useful for carrying items in your hands.
+  description: 用于手持携带物品。 | Useful for carrying items in your hands.
   suffix: Gun
   components:
   - type: Item
@@ -296,13 +296,13 @@
     - 0,0,4,3
     inhandVisuals:
       left:
-        - sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
-          state: inhand-left
-        - state: inhand-left-muzzle
+      - sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
+        state: inhand-left
+      - state: inhand-left-muzzle
       right:
-        - sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
-          state: inhand-right
-        - state: inhand-right-muzzle
+      - sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
+        state: inhand-right
+      - state: inhand-right-muzzle
   - type: Sprite
     sprite: Objects/Weapons/Guns/SMGs/briefcase.rsi
     layers:

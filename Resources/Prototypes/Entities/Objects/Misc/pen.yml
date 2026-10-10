@@ -1,8 +1,8 @@
 - type: entity
-  name: pen
+  name: 笔 | pen
   parent: BaseItem
   id: Pen
-  description: A dark ink pen.
+  description: 一支深色墨水的笔。 | A dark ink pen.
   components:
   - type: Sprite
     sprite: Objects/Misc/pens.rsi
@@ -69,10 +69,10 @@
 #TODO: I want the luxury pen to write a cool font like Merriweather in the future.
 
 - type: entity
-  name: luxury pen
+  name: 豪华钢笔 | luxury pen
   parent: Pen
   id: LuxuryPen
-  description: A fancy and expensive pen that you only deserve to own if you're qualified to handle vast amounts of paperwork.
+  description: 一支精美而昂贵的钢笔，只有当你够格处理大量文书工作时，才配拥有它。 | A fancy and expensive pen that you only deserve to own if you're qualified to handle vast amounts of paperwork.
   components:
   - type: Sprite
     state: luxury_pen
@@ -103,10 +103,10 @@
       collection: Screwdriver
 
 - type: entity
-  name: Cybersun pen
+  name: 赛博太阳笔 | Cybersun pen
   parent: [BaseAdvancedPen, BaseSyndicateContraband]
   id: CyberPen
-  description: A high-tech pen straight from Cybersun's legal department, capable of refracting hard-light at impossible angles through its diamond tip in order to write. So powerful, it's even able to rewrite officially stamped documents should the need arise.
+  description: 一支来自赛博太阳公司法务部的高科技笔，能够通过其钻石笔尖以不可能的角度折射硬光来书写。它强大到甚至可以在需要时改写已盖章的官方文件。 | A high-tech pen straight from Cybersun's legal department, capable of refracting hard-light at impossible angles through its diamond tip in order to write. So powerful, it's even able to rewrite officially stamped documents should the need arise.
   components:
   - type: Sprite
     state: overpriced_pen
@@ -116,10 +116,10 @@
     price: 500
 
 - type: entity
-  name: CentComm pen
+  name: 中央指挥部笔 | CentComm pen
   parent: [BaseAdvancedPen, BaseCentcommContraband]
   id: PenCentcom
-  description: In an attempt to keep up with the "power" of the cybersun bureaucracy, NT made a replica of cyber pen, in their corporate style.
+  description: 为了跟上“赛博太阳官僚机构”的“权力”，NT以他们的企业风格制作了一支赛博笔的复制品。 | In an attempt to keep up with the "power" of the cybersun bureaucracy, NT made a replica of cyber pen, in their corporate style.
   components:
   - type: Sprite
     state: pen_centcom
@@ -127,28 +127,28 @@
     heldPrefix: pen_centcom
 
 - type: entity
-  name: captain's fountain pen
+  name: 船长的钢笔 | captain's fountain pen
   parent: PenEmbeddable
   id: PenCap
-  description: A luxurious fountain pen for the captain of the station.
+  description: 一支为站长准备的豪华钢笔。 | A luxurious fountain pen for the captain of the station.
   components:
   - type: Sprite
     state: pen_cap
 
 - type: entity
-  name: HoP's fountain pen
+  name: 站长豪华钢笔 | HoP's fountain pen
   parent: PenEmbeddable
   id: PenHop
-  description: A luxurious fountain pen for the HoP of the station.
+  description: 站长豪华钢笔：为站长准备的豪华钢笔。 | A luxurious fountain pen for the HoP of the station.
   components:
   - type: Sprite
     state: pen_hop
 
 - type: entity
-  name: wizard's magical pen
-  parent: [ PenEmbeddable, BaseMagicalContraband ]
+  name: 巫师的魔法笔 | wizard's magical pen
+  parent: [PenEmbeddable, BaseMagicalContraband]
   id: PenWiz
-  description: A luxurious fountain pen. Seems to have a magical crystal eraser.
+  description: 一支奢华的钢笔。似乎带有一块魔法水晶橡皮擦。 | A luxurious fountain pen. Seems to have a magical crystal eraser.
   components:
   - type: Sprite
     state: pen_wizard

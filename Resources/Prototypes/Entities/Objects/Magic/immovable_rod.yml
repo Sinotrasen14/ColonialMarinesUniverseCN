@@ -1,7 +1,7 @@
 - type: entity
   id: ImmovableRod
-  name: immovable rod
-  description: You can sense that it's hungry. That's usually a bad sign.
+  name: 不动的杆 | immovable rod
+  description: 你能感觉到它饿了。这通常是个坏兆头。 | You can sense that it's hungry. That's usually a bad sign.
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -27,8 +27,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.5
         density: 1
         hard: false
@@ -101,8 +100,8 @@
 - type: entity
   parent: ImmovableRodKeepTilesStill
   id: ImmovableRodMop
-  name: immovable mop
-  description: Hurled like a javelin, with the power of a thousand furious janitors.
+  name: 不可移动的拖把 | immovable mop
+  description: 像标枪一样被投掷出去，带着一千个愤怒清洁工的威力。 | Hurled like a javelin, with the power of a thousand furious janitors.
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/mop.rsi
@@ -113,8 +112,8 @@
 - type: entity
   parent: ImmovableRodKeepTilesStill
   id: ImmovableRodShark
-  name: immovable shark
-  description: SHARK TORNADO!
+  name: 不动的鲨鱼 | immovable shark
+  description: 鲨鱼龙卷风！ | SHARK TORNADO!
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/shark.rsi
@@ -125,8 +124,8 @@
 - type: entity
   parent: ImmovableRodKeepTilesStill
   id: ImmovableRodClown
-  name: immovable clown
-  description: Ejected from the neighbouring station one solar system over. HONK!
+  name: 不可移动的小丑 | immovable clown
+  description: 被从邻近的太阳系空间站驱逐出来。HONK！ | Ejected from the neighbouring station one solar system over. HONK!
   components:
   - type: Sprite
     sprite: Markers/jobs.rsi
@@ -137,8 +136,8 @@
 - type: entity
   parent: ImmovableRodKeepTilesStill
   id: ImmovableRodBanana
-  name: immovable banana
-  description: At least you won't slip on it.
+  name: 不动的香蕉 | immovable banana
+  description: 至少你不会被它滑倒。 | At least you won't slip on it.
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/banana.rsi
@@ -148,8 +147,8 @@
 - type: entity
   parent: ImmovableRodKeepTilesStill
   id: ImmovableRodHammer
-  name: immovable hammer
-  description: Bwoink.
+  name: 不动的锤子 | immovable hammer
+  description: 不动的锤子。 | Bwoink.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/sledgehammer.rsi
@@ -160,8 +159,8 @@
 - type: entity
   parent: ImmovableRodKeepTilesStill
   id: ImmovableRodThrongler
-  name: immovable throngler
-  description: If you catch it, you can keep it.
+  name: 不可移动的群集器 | immovable throngler
+  description: 如果你抓住了它，就可以留着它。 | If you catch it, you can keep it.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/Throngler2.rsi
@@ -172,8 +171,8 @@
 - type: entity
   parent: ImmovableRodKeepTilesStill
   id: ImmovableRodGibstick
-  name: immovable gibstick
-  description: What did you expect?
+  name: 不可移动的吉布斯棒 | immovable gibstick
+  description: 你期待什么呢？ | What did you expect?
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/debug.rsi
@@ -184,8 +183,8 @@
 - type: entity
   parent: ImmovableRodKeepTilesStill
   id: ImmovableRodWeh
-  name: immovable weh
-  description: WEH!
+  name: 不可移动的WEH | immovable weh
+  description: WEH！ | WEH!
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/lizard.rsi

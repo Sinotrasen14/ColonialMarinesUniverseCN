@@ -1,49 +1,48 @@
 - type: entity
   parent: BaseMinorContraband
   id: ThiefBeacon
-  name: thieving beacon
-  description: A device that will teleport everything around it to the thief's vault at the end of the shift.
+  name: 窃贼信标 | thieving beacon
+  description: 一个会在轮班结束时将其周围所有东西传送到窃贼金库的装置。 | A device that will teleport everything around it to the thief's vault at the end of the shift.
   components:
-    - type: ThiefBeacon
-    - type: StealArea
-      range: 2 # Slightly larger than fulton beacon's random offset
-    - type: Item
-      size: Normal
-    - type: Physics
-      bodyType: Dynamic
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.25,-0.4,0.25,0.1"
-          density: 20
-          mask:
-            - Impassable
-    - type: Foldable
-      folded: true
-    - type: Clickable
-    - type: InteractionOutline
-    - type: Appearance
-    - type: GenericVisualizer
-      visuals:
-        enum.FoldedVisuals.State:
-          foldedLayer:
-            True: { state: folded_extraction }
-            False: { state: extraction_point }
-    - type: Sprite
-      sprite: Objects/Tools/thief_beacon.rsi
-      drawdepth: SmallObjects
-      noRot: true
-      layers:
-        - state: extraction_point
-          map: [ "foldedLayer" ]
+  - type: ThiefBeacon
+  - type: StealArea
+    range: 2   # Slightly larger than fulton beacon's random offset
+  - type: Item
+    size: Normal
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: "-0.25,-0.4,0.25,0.1"
+        density: 20
+        mask:
+        - Impassable
+  - type: Foldable
+    folded: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.FoldedVisuals.State:
+        foldedLayer:
+          true: {state: folded_extraction}
+          false: {state: extraction_point}
+  - type: Sprite
+    sprite: Objects/Tools/thief_beacon.rsi
+    drawdepth: SmallObjects
+    noRot: true
+    layers:
+    - state: extraction_point
+      map: ["foldedLayer"]
 
 - type: entity
   id: ToolboxThief
-  name: undetermined thieving toolbox
-  description: This is where your favorite thief's supplies lie. Try to remember which ones.
-  parent: [ BaseItem, BaseMinorContraband ]
+  name: 未确定的盗窃工具箱 | undetermined thieving toolbox
+  description: 这是你最喜欢的小偷工具存放之处。试着记住是哪些。 | This is where your favorite thief's supplies lie. Try to remember which ones.
+  parent: [BaseItem, BaseMinorContraband]
   components:
   - type: Sprite
     sprite: Objects/Tools/Toolboxes/toolbox_thief.rsi
@@ -67,8 +66,8 @@
 
 - type: entity
   id: SatchelThief
-  name: undetermined thieving satchel
-  description: This is where your favorite thief's supplies lie. Folded for your convenience.
+  name: 未确定的盗窃挎包 | undetermined thieving satchel
+  description: 这是你最喜欢的小偷存放补给品的地方。为你方便而折叠好了。 | This is where your favorite thief's supplies lie. Folded for your convenience.
   parent: ToolboxThief
   components:
   - type: Sprite

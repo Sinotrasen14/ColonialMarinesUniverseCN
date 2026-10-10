@@ -1,15 +1,13 @@
-# Correspondent
 - type: entity
   parent: RMCBaseJacket
   id: RMCCoatCorrespondent
-  name: combat correspondent jacket
-  description: A jacket for the most fashionable war correspondents.
+  name: 战地记者夹克
+  description: 为最时尚的战地记者准备的夹克
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Correspondent/brown.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Correspondent/brown.rsi
-
 - type: entity
   parent: RMCCoatCorrespondent
   id: RMCCoatCorrespondentGreen
@@ -18,7 +16,6 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Correspondent/green.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Correspondent/green.rsi
-
 - type: entity
   parent: RMCCoatCorrespondent
   id: RMCCoatCorrespondentBlack
@@ -27,7 +24,6 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Correspondent/black.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Correspondent/black.rsi
-
 - type: entity
   parent: RMCCoatCorrespondent
   id: RMCCoatCorrespondentBlue
@@ -36,13 +32,13 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Correspondent/blue.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Correspondent/blue.rsi
-
-# Hazard vests
 - type: entity
-  parent: [RMCAllowSuitStorageClothingHazardVest, RMCBaseJacket]
+  parent:
+  - RMCAllowSuitStorageClothingHazardVest
+  - RMCBaseJacket
   id: RMCHazardVest
-  name: orange hazard vest
-  description: An orange high-visibility vest used in work zones.
+  name: 橙色危险警示背心
+  description: 一件在工作区域使用的橙色高能见度背心。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/orange.rsi
@@ -51,101 +47,93 @@
   - type: CMUItemStain
     wornStates:
       outerClothing: vest_blood
-
 - type: entity
   parent: RMCHazardVest
   id: RMCHazardVestBlue
-  name: blue hazard vest
-  description: A blue high-visibility vest used in work zones.
+  name: 蓝色危险防护背心
+  description: 用于作业区的蓝色高可视性背心。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/blue.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/blue.rsi
-
 - type: entity
   parent: RMCHazardVest
-  name: yellow hazard vest
+  name: 黄色警示背心
   id: RMCHazardVestYellow
-  description: A yellow high-visibility vest used in work zones.
+  description: 用于工作区域的黄色高可见度背心。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/yellow.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/yellow.rsi
-
 - type: entity
   parent: RMCHazardVest
   id: RMCHazardVestBlack
-  name: black hazard vest
-  description: A niche-market, black, allegedly high-visibility vest supposedly used in work zones. Features extra-reflective tapes. The etiquette on the vest insists that it's fully compliant with all the United Nations workplace safety standards.
+  name: 黑色警示背心
+  description: 一款面向小众市场的黑色背心，据称是高可见度背心，据称用于工作区域。配有超反光条带。背心上的标签坚称，它完全符合联合国所有工作场所安全标准。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/black.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/black.rsi
-
 - type: entity
   parent: RMCHazardVest
   id: RMCHazardVestGreen
-  name: green hazard vest
-  description: A green and white high-visibility vest used in work zones.
+  name: 绿色警示背心
+  description: 绿色和白色高可见度背心，用于作业区域。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/green.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/green.rsi
-
 - type: entity
   parent: RMCHazardVest
   id: RMCHazardVestWeyamart
-  name: weymart vest
-  description: A blue 'WeyMart' employee vest, with name tag and all.
+  name: WeyMart 背心
+  description: 一件蓝色的“WeyMart”员工背心，带有姓名牌等所有配件。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/weyamart.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/weyamart.rsi
-
 - type: entity
   parent: RMCHazardVest
   id: RMCHazardVestTMCC
-  name: Tartarus-Mining hazard vest
-  description: A black high-visibility vest used in work zones.
+  name: 塔尔塔罗斯矿业危险警示背心
+  description: 用于作业区域的黑色高可视性背心。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/tmcc.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/tmcc.rsi
-
 - type: entity
   parent: RMCHazardVest
   id: RMCHazardVestEMT
-  name: EMT - red hazard vest
-  description: A red and white EMT high-visibility hazard vest used in work zones.
+  name: EMT - 红色警示背心
+  description: 一件红白相间的EMT高可视性危险警示背心，用于工作区域。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/emt.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/emt.rsi
-
 - type: entity
   parent: RMCHazardVest
   id: RMCHazardVestEMTGreen
   name: EMT - green hazard vest
-  description: A green and white EMT high-visibility hazard vest used in work zones.
+  description: 一件用于工作区域的绿白相间 EMT 高能见度警示背心。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/emt_green.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/HazardVests/emt_green.rsi
-
-# Labcoats + Medical Apron
 - type: entity
-  parent: [RMCAllowSuitStorageClothingLabcoat, RMCBaseJacketButtonable]
+  parent:
+  - RMCAllowSuitStorageClothingLabcoat
+  - RMCBaseJacketButtonable
   id: RMCLabcoat
-  name: labcoat
-  description: A suit that protects against minor chemical spills.
+  name: 实验服
+  description: 一套可防止轻微化学品溢溅的防护服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/labcoat.rsi
@@ -156,17 +144,17 @@
   - type: CMUItemStain
     wornStates:
       outerClothing: coat_blood
-
 - type: entity
-  parent: [RMCBaseJacketButtonableOpened, RMCLabcoat]
+  parent:
+  - RMCBaseJacketButtonableOpened
+  - RMCLabcoat
   id: RMCLabcoatOpened
-  name: labcoat
-
+  name: 实验服
 - type: entity
   parent: RMCLabcoat
   id: RMCLabcoatCMO
-  name: chief medical officer's labcoat
-  description: A green sleek long labcoat, designed to distinguish a higher ranking medical personnel. Fabric has a better protection against chemical hazards.
+  name: 首席医疗官的实验服
+  description: 一件绿色流线型长款实验服，旨在彰显更高级别的医疗人员。其面料对化学危害有更好的防护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/cmolabcoat.rsi
@@ -174,12 +162,12 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/cmolabcoat.rsi
   - type: CMArmor
     bio: 20
-
 - type: entity
-  parent: [RMCBaseJacketButtonableOpened, RMCLabcoatCMO]
+  parent:
+  - RMCBaseJacketButtonableOpened
+  - RMCLabcoatCMO
   id: RMCLabcoatCMOOpened
-  name: chief medical officer's labcoat
-
+  name: 首席医疗官的实验服
 - type: entity
   parent: RMCLabcoat
   id: RMCLabcoatLong
@@ -189,12 +177,12 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/long.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/long.rsi
-
 - type: entity
-  parent: [RMCBaseJacketButtonableOpened, RMCLabcoatLong]
+  parent:
+  - RMCBaseJacketButtonableOpened
+  - RMCLabcoatLong
   id: RMCLabcoatLongOpened
-  name: labcoat
-
+  name: 实验服
 - type: entity
   parent: RMCLabcoat
   id: RMCLabcoatShort
@@ -204,12 +192,12 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/short.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/short.rsi
-
 - type: entity
-  parent: [RMCBaseJacketButtonableOpened, RMCLabcoatShort]
+  parent:
+  - RMCBaseJacketButtonableOpened
+  - RMCLabcoatShort
   id: RMCLabcoatShortOpened
-  name: labcoat
-
+  name: 实验服
 - type: entity
   parent: RMCLabcoat
   id: RMCLabcoatBrown
@@ -219,34 +207,34 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/brown.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/brown.rsi
-
 - type: entity
-  parent: [RMCBaseJacketButtonableOpened, RMCLabcoatBrown]
+  parent:
+  - RMCBaseJacketButtonableOpened
+  - RMCLabcoatBrown
   id: RMCLabcoatBrownOpened
-  name: labcoat
-
+  name: 实验服
 - type: entity
   parent: RMCLabcoat
   id: RMCLabcoatVirology
   suffix: Virology
-  name: Virologist labcoat
-  description: A suit that protects against minor chemical spills. Offers slightly more protection against biohazards than the standard model. Has a green stripe on the shoulder.
+  name: 病毒学家的实验服
+  description: 一件能防护轻微化学泼溅的防护服。对生物危害的防护略优于标准型号。肩部有一条绿色条纹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/virology.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/virology.rsi
-
 - type: entity
-  parent: [RMCBaseJacketButtonableOpened, RMCLabcoatVirology]
+  parent:
+  - RMCBaseJacketButtonableOpened
+  - RMCLabcoatVirology
   id: RMCLabcoatVirologyOpened
-  name: labcoat
-
+  name: 实验服
 - type: entity
   parent: RMCLabcoat
   id: RMCLabcoatScience
-  name: researcher's labcoat
-  description: A high-quality labcoat, seemingly worn by scholars and researchers alike. It has a distinct leathery feel to it, and goads you towards adventure.
+  name: 研究员的实验服
+  description: 一件高品质的实验服，似乎学者和研究人员都会穿。它有一种独特的皮革质感，并促使你踏上冒险之旅。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/sciencecoat.rsi
@@ -254,17 +242,19 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/sciencecoat.rsi
   - type: CMArmor
     bio: 20
-
 - type: entity
-  parent: [RMCBaseJacketButtonableOpened, RMCLabcoatScience]
+  parent:
+  - RMCBaseJacketButtonableOpened
+  - RMCLabcoatScience
   id: RMCLabcoatScienceOpened
-  name: researcher's labcoat
-
+  name: 研究员的实验服
 - type: entity
-  parent: [RMCAllowSuitStorageClothingChefApron, ClothingOuterBase]
+  parent:
+  - RMCAllowSuitStorageClothingChefApron
+  - ClothingOuterBase
   id: RMCMedicalApron
-  name: medical apron
-  description: A basic and sterile white apron, good for surgical and, of course, other medical practices.
+  name: 医用围裙
+  description: 一件基础且无菌的白色围裙，适合手术，当然也适合其他医疗操作。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/medicalapron.rsi
@@ -273,46 +263,43 @@
   - type: CMUItemStain
     wornStates:
       outerClothing: apron_blood
-
 - type: entity
   parent: RMCMedicalApron
   id: RMCHydroApron
-  name: apron
-  description: A basic blue apron.
+  name: 围裙
+  description: 一件基础的蓝色围裙。
   components:
   - type: Sprite
     sprite: Clothing/OuterClothing/Misc/apronbotanist.rsi
   - type: Clothing
     sprite: Clothing/OuterClothing/Misc/apronbotanist.rsi
-
 - type: entity
   parent: RMCMedicalApron
   id: RMCChefApron
-  name: A classic chef's apron
-  description: A basic, dull, white chef's apron.
-
+  name: 经典厨师围裙
+  description: 一件基础、单调的白色厨师围裙。
 - type: entity
   parent: RMCMedicalApron
   id: RMCDailyGrindApron
-  name: red apron
-  description: A basic red apron.
+  name: 红色围裙
+  description: 一件基础的红色围裙。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/apron_daily_grind.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Labcoats/apron_daily_grind.rsi
-
 - type: entity
-  parent: [RMCAllowSuitStorageClothingChefApron, ClothingOuterBase]
+  parent:
+  - RMCAllowSuitStorageClothingChefApron
+  - ClothingOuterBase
   id: RMCOuterEngineeringUtilityOversuit
-  name: Weyland-Yutani engineer utility oversuit
-  description: A Weyland-Yutani engineer utility uniform. Used as a general purpose utility oversuit by Weyland-Yutani colony engineers.
+  name: 维兰德-汤谷工程师通用外罩服
+  description: 一套维兰德-汤谷工程师多用途制服。被维兰德-汤谷殖民地工程师用作通用多用途外罩服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/weya_engineer_jacket.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/weya_engineer_jacket.rsi
-
 - type: entity
   parent: RMCOuterEngineeringUtilityOversuit
   id: RMCOuterEngineeringUtilityOversuitAlt

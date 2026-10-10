@@ -1,8 +1,10 @@
 - type: entity
-  parent: [ Clothing, ClothingSlotBase ]
+  parent:
+  - Clothing
+  - ClothingSlotBase
   id: RMCBackpackBroiler
-  name: Broiler-T flexible refueling system
-  description: A specialized back harness that carries the Broiler-T flexible refueling system. Designed by and for USCM Pyrotechnicians.
+  name: Broiler-T 柔性加油系统
+  description: 一种专用背部背带，用于携带Broiler-T柔性加油系统。由USCM烟火技师设计并供其使用。
   components:
   - type: Corrodible
     isCorrodible: false
@@ -38,7 +40,7 @@
     - RMCTankFlamerLargeB
     - RMCTankFlamerLargeX
     slot:
-      name: Tank
+      name: 坦克
       whitelist:
         tags:
         - RMCTankFlamer
@@ -46,7 +48,7 @@
   - type: ItemSlots
     slots:
       item:
-        name: Incinerator
+        name: 焚烧炉
         insertVerbText: sheath-insert-verb
         ejectVerbText: sheath-eject-verb
         insertSound: /Audio/_RMC14/Weapons/Guns/gun_rifle_draw.ogg
@@ -58,13 +60,14 @@
     camouflageVariations: {}
   - type: RMCMagneticItemReceiver
   - type: RMCBroiler
-
 - type: entity
-  parent: [ Clothing, ClothingSlotBase ]
+  parent:
+  - Clothing
+  - ClothingSlotBase
   id: RMCBackpackBroilerUPP
-  name: Broiler-T flexible refueling system
+  name: Broiler-T柔性加油系统
   suffix: UPP
-  description: A specialized back harness that carries the Broiler-T flexible refueling system. A reverse engineered version for UPP Pyrotechnicians.
+  description: 一种专用背部背带，用于承载 Broiler-T 柔性加油系统。这是为 UPP 烟火技师制作的逆向工程版本。
   components:
   - type: Corrodible
     isCorrodible: false
@@ -100,7 +103,7 @@
     - RMCTankFlamerBLargeUPP
     - RMCTankFlamerXLargeUPP
     slot:
-      name: Tank
+      name: 坦克
       whitelist:
         tags:
         - RMCTankFlamerLargeUPP
@@ -110,7 +113,7 @@
   - type: ItemSlots
     slots:
       item:
-        name: Incinerator
+        name: 焚化炉
         insertVerbText: sheath-insert-verb
         ejectVerbText: sheath-eject-verb
         insertSound: /Audio/_RMC14/Weapons/Guns/gun_rifle_draw.ogg
@@ -122,7 +125,6 @@
     camouflageVariations: {}
   - type: RMCMagneticItemReceiver
   - type: RMCBroiler
-
 - type: entity
   parent: RMCBackpackBroiler
   id: RMCBackpackBroilerEmpty

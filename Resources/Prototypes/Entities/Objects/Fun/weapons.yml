@@ -12,10 +12,10 @@
     clumsyProof: true # Clown proficiency
 
 - type: entity
-  parent: [ BaseItem, BaseToyGun ]
+  parent: [BaseItem, BaseToyGun]
   id: FoamCrossbow
-  name: foam crossbow
-  description: Aiming this at Security may get you filled with lead.
+  name: 泡沫弩 | foam crossbow
+  description: 把这家伙瞄准保安，可能会让你吃满子弹。 | Aiming this at Security may get you filled with lead.
   components:
   - type: Sprite
     sprite: Objects/Fun/Foam/foam_crossbow.rsi
@@ -43,10 +43,10 @@
         ents: []
 
 - type: entity
-  name: Foam Force Astro Ace
-  parent: [ BaseToyGun, BaseWeaponShotgun, BaseGunWieldable ]
+  name: 泡沫力量星际王牌 | Foam Force Astro Ace
+  parent: [BaseToyGun, BaseWeaponShotgun, BaseGunWieldable]
   id: WeaponRifleFoam
-  description: A premium foam rifle of the highest quality. Its plastic feels rugged, and its mechanisms sturdy.
+  description: 一把最高品质的高级泡沫步枪。它的塑料手感坚固，机械结构也很结实。 | A premium foam rifle of the highest quality. Its plastic feels rugged, and its mechanisms sturdy.
   components:
   - type: Sprite
     sprite: Objects/Fun/Foam/foam_rifle.rsi
@@ -75,10 +75,10 @@
     price: 100
 
 - type: entity
-  parent: [ BaseItem, BaseToyGun ]
+  parent: [BaseItem, BaseToyGun]
   id: RevolverCapGun
-  name: cap gun
-  description: Looks almost like the real thing! Ages 8 and up.
+  name: 玩具枪 | cap gun
+  description: 看起来几乎和真的一样！适合8岁及以上。 | Looks almost like the real thing! Ages 8 and up.
   components:
   - type: Sprite
     sprite: Objects/Fun/capgun.rsi
@@ -112,8 +112,8 @@
       - SpeedLoaderCap
     proto: CartridgeCap
     capacity: 6
-    chambers: [ True, True, True, True, True, True ]
-    ammoSlots: [ null, null, null, null, null, null ]
+    chambers: [true, true, true, true, true, true]
+    ammoSlots: [null, null, null, null, null, null]
     soundInsert:
       path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
   - type: ContainerContainer
@@ -135,10 +135,10 @@
     proto: CartridgeMagnumAP
 
 - type: entity
-  parent: [ BaseItem, BaseToyGun ]
+  parent: [BaseItem, BaseToyGun]
   id: WeaponStickyHand
-  name: sticky hand
-  description: They're saying you're reaching. They're saying it's a stretch. You'll show them all, and you'll stick it to them.
+  name: 黏手 | sticky hand
+  description: 他们说你在牵强附会。他们说这太勉强了。你会向他们所有人证明，你会让他们自食其果。 | They're saying you're reaching. They're saying it's a stretch. You'll show them all, and you'll stick it to them.
   components:
   - type: GrapplingGun
     cycleSound: /Audio/Misc/woosh.ogg
@@ -175,10 +175,10 @@
     undamagedAlertThreshold: 0
 
 - type: entity
-  parent: [ BaseItem, BaseToySword ]
+  parent: [BaseItem, BaseToySword]
   id: FoamBlade
-  name: foamblade
-  description: It says "Sternside Changs number 1 fan" on it.
+  name: 泡沫刃 | foamblade
+  description: 上面写着“斯特恩赛德·张的头号粉丝”。 | It says "Sternside Changs number 1 fan" on it.
   components:
   - type: Sprite
     sprite: Objects/Fun/Foam/foam_blade.rsi
@@ -193,10 +193,10 @@
     sprite: Objects/Fun/Foam/foam_blade.rsi
 
 - type: entity
-  parent: [ BaseItem, BaseToySword ]
+  parent: [BaseItem, BaseToySword]
   id: FoamCutlass
-  name: foam cutlass
-  description: Cosplay as a pirate and force your friends to walk the plank.
+  name: 泡沫弯刀 | foam cutlass
+  description: 扮演海盗，强迫你的朋友走跳板。 | Cosplay as a pirate and force your friends to walk the plank.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/cutlass.rsi
@@ -214,10 +214,10 @@
     - 0,0,0,2
 
 - type: entity
-  parent: [ BaseItem, BaseToySword ]
+  parent: [BaseItem, BaseToySword]
   id: ToySword
-  name: toy sword
-  description: New Sandy-Cat plastic sword! Comes with realistic sound and full color! Looks almost like the real thing!
+  name: 玩具剑 | toy sword
+  description: 全新桑迪猫塑料剑！配有逼真音效和全彩外观！看起来几乎和真的一模一样！ | New Sandy-Cat plastic sword! Comes with realistic sound and full color! Looks almost like the real thing!
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/e_sword.rsi
@@ -227,7 +227,7 @@
       color: "#FFFFFF"
       visible: false
       shader: unshaded
-      map: [ "blade" ]
+      map: ["blade"]
   - type: EnergySword
   - type: ItemToggleExaminableStatus
   - type: ItemToggle
@@ -283,10 +283,10 @@
         Heat: 0.3
 
 - type: entity
-  parent: [ BaseItem, BaseToySword ]
+  parent: [BaseItem, BaseToySword]
   id: CardSword
-  name: cardboard sword
-  description: A cardboard tube fashioned into the shape of a sword.
+  name: 纸板剑 | cardboard sword
+  description: 一个用纸板管做成的剑形物品。 | A cardboard tube fashioned into the shape of a sword.
   components:
   - type: Sprite
     sprite: Objects/Fun/card_sword.rsi
@@ -314,10 +314,10 @@
     - 0,0,1,3
 
 - type: entity
-  parent: [ BaseItem, BaseToySword ]
+  parent: [BaseItem, BaseToySword]
   id: ToyHammer
-  name: rubber hammer
-  description: A brightly colored hammer made of rubber.
+  name: 橡胶锤 | rubber hammer
+  description: 一把色彩鲜艳的橡胶锤。 | A brightly colored hammer made of rubber.
   components:
   - type: Sprite
     sprite: Objects/Fun/rubber_hammer.rsi

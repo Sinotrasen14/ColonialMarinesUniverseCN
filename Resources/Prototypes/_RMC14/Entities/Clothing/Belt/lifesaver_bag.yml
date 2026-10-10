@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBeltMedical
   id: CMBeltMedicBag
-  name: M276 pattern lifesaver bag # TODO: differentiate from medical storage rig
-  description: The M276 is standard load-bearing equipment. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies, and is common among medics.
+  name: M276型救命包
+  description: M276是标准承载装备。此配置安装了一个装有各种注射器和轻型医疗用品的行李袋，在医疗兵中十分常见。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/medicbag/jungle-classic.rsi
@@ -11,7 +11,7 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,13,5 # 21 slots
+    - 0,0,13,5
     whitelist:
       tags:
       - DiscreteHealthAnalyzer
@@ -39,24 +39,13 @@
       - CigPack
       - RMCPenlight
       - Flare
-      # New Med
-      # - CMRetractor
-      # - CMHemostat
-      # - CMBoneSaw
-      # - CMCautery
-      # - CMSurgicalDrill
-      # - RMCScalpel
-      # - CMBoneSetter
-      # - CMBoneGel
       - CMUBoneGraft
       - CMUCastItem
       - CMUOrganClamp
       - CMUSplintItem
-      # cmu edit start
       - CMUCPRMask
-      # cmu edit end
       components:
-      - CMSurgeryTool # catch-all for above commented out NewMed tags
+      - CMSurgeryTool
       - Hypospray
       - Defibrillator
       - Pill
@@ -79,7 +68,6 @@
   - type: Tag
     tags:
     - RMCBeltMedical
-
 - type: entity
   parent: CMBeltMedicBag
   id: RMCBeltMedicBagERTFilled
@@ -89,9 +77,9 @@
     - id: CMTraumaKit10
       amount: 2
     - id: CMBurnKit10
-      amount: 2 # TODO RMC14 2x5 splints
+      amount: 2
     - id: CMEpinephrineAutoInjector
-    - id: CMDexalinPlusAutoInjector # TODO RMC14 3 oxycodone autoinjectors
+    - id: CMDexalinPlusAutoInjector
     - id: CMPillCanisterBicaridine
       amount: 2
     - id: CMPillCanisterKelotane
@@ -101,18 +89,15 @@
     - id: CMPillCanisterDylovene
       amount: 1
     - id: CMPillCanisterInaprovaline
-      amount: 1 # TODO RMC14 1 pill canister tramadol and peridaxon
-
+      amount: 1
 - type: entity
   parent: CMBeltMedicBag
   id: RMCBeltMedicBagSPP
-  name: Type 41 pattern lifesaver bag
-  description: The Type 41 load rig is the standard load-bearing equipment of the UPP military. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies, and is common among medics.
+  name: 41式救生包
+  description: 41式负载装具是UPP军队的标准承载装备。该配置挂载了一个装满各种注射器和轻型医疗用品的行李袋，在医疗兵中很常见。
   components:
-  # TODO RMC14 - Sprites
   - type: ItemCamouflage
     camouflageVariations: {}
-
 - type: entity
   parent: RMCBeltMedicBagSPP
   id: RMCBeltMedicBagSPPCommandoFilled
@@ -124,10 +109,8 @@
     - id: CMTraumaKit10
     - id: CMBurnKit10
     - id: CMBurnKit10
-    # TODO RMC: splints
     - id: CMEpinephrineAutoInjector
     - id: CMDexalinPlusAutoInjector
-    # TODO RMC: oxycodone autoinjector
     - id: CMPillCanisterBicaridine
     - id: CMPillCanisterBicaridine
     - id: CMPillCanisterKelotane
@@ -135,20 +118,16 @@
     - id: CMPillCanisterDexalin
     - id: CMPillCanisterDylovene
     - id: CMPillCanisterInaprovaline
-    # TODO RMC: tramadol pills
-    # TODO RMC: peridaxon
-
 - type: entity
   parent: RMCBeltMedicBagSPP
   id: RMCBeltMedicBagPMC
-  name: WY-TM625 pattern medical bag
-  description: The WY-TM625 is the standard load-bearing equipment of the W-Y security forces. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies, and is common among medics.
+  name: WY-TM625型医疗包
+  description: WY-TM625是W-Y保安部队的标准承载装备。此配置搭载一个装有多种注射器和轻型医疗用品的行李袋，在医疗兵中十分常见。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/medicbag_pmc.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/medicbag_pmc.rsi
-
 - type: entity
   parent: RMCBeltMedicBagPMC
   id: RMCBeltMedicBagPMCFilled
@@ -162,18 +141,13 @@
     - id: CMBurnKit10
     - id: CMEpinephrineAutoInjector
     - id: CMDexalinPlusAutoInjector
-    # TODO RMC: oxycodone autoinjector
     - id: CMPillCanisterBicaridine
     - id: CMPillCanisterDexalin
     - id: CMPillCanisterDylovene
     - id: CMPillCanisterKelotane
     - id: CMPillCanisterInaprovaline
-    # TODO RMC: tramadol pills
-    # TODO RMC: splint nano
     - id: CMHealthAnalyzer
-    - id: RMCPillCanisterImidazoline # you're welcome, whoever was here last. fly high, mercenary
-    # TODO RMC: alkysine pills
-
+    - id: RMCPillCanisterImidazoline
 - type: entity
   parent: CMBeltMedicBag
   id: RMCBeltMedicBagRoyal
@@ -185,17 +159,12 @@
     - id: CMPillCanisterBicaridine
     - id: CMPillCanisterKelotane
     - id: CMPillCanisterKelotane
-    # - id: CMPillCanisterTramadol
-    # - id: CMPillCanisterTramadol
     - id: CMPillCanisterDylovene
-    # - id: CMPillCanisterPeridaxon
     - id: CMPillCanisterDexalin
-    # - id: CMPillCanisterAlkysine
     - id: RMCPillCanisterImidazoline
     - id: CMTraumaKit10
       amount: 3
     - id: CMBurnKit10
       amount: 3
-    # - id: RMCSplint
     - id: CMDexalinPlusAutoInjector
     - id: CMHealthAnalyzer

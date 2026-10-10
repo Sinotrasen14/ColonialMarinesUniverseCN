@@ -1,12 +1,12 @@
 - type: entity
-  name: urn
-  description: Store the Dead smart and Compact since 2300.
+  name: 瓮 | urn
+  description: 自2300年起，以智能紧凑的方式存放逝者。 | Store the Dead smart and Compact since 2300.
   parent: BaseStorageItem
   id: Urn
   components:
   - type: Storage
     grid:
-      - 0,0,0,1
+    - 0,0,0,1
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:

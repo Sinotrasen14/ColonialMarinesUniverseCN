@@ -2,19 +2,18 @@
   abstract: true
   parent: RMCBaseUniformAccessory
   id: RMCTieBase
-  name: tie
-  description: An abstract tie.
+  name: 联系
+  description: 一种抽象的联系。
   components:
   - type: UniformAccessory
     category: Tie
     limit: 1
     hiddenByJacketRolling: false
-
 - type: entity
   parent: RMCTieBase
   id: RMCTie
-  name: blue tie
-  description: A neosilk clip-on tie.
+  name: 蓝色领带
+  description: 一条新丝质夹扣式领带。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ties/blue.rsi
@@ -23,11 +22,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Ties/blue.rsi
       state: tie
-
 - type: entity
   parent: RMCTie
   id: RMCTieBlack
-  name: black tie
+  name: 黑色领结
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ties/black.rsi
@@ -36,11 +34,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Ties/black.rsi
       state: tie
-
 - type: entity
   parent: RMCTie
   id: RMCTieGold
-  name: gold tie
+  name: 金色领带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ties/gold.rsi
@@ -49,11 +46,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Ties/gold.rsi
       state: tie
-
 - type: entity
   parent: RMCTie
   id: RMCTieGreen
-  name: green tie
+  name: 绿色领带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ties/green.rsi
@@ -62,11 +58,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Ties/green.rsi
       state: tie
-
 - type: entity
   parent: RMCTie
   id: RMCTiePurple
-  name: purple tie
+  name: 紫色领带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ties/purple.rsi
@@ -75,11 +70,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Ties/purple.rsi
       state: tie
-
 - type: entity
   parent: RMCTie
   id: RMCTieRed
-  name: red tie
+  name: 红色领带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ties/red.rsi
@@ -88,11 +82,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Ties/red.rsi
       state: tie
-
 - type: entity
   parent: RMCTie
   id: RMCTieHorrible
-  name: horrible tie
+  name: 糟糕的领带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ties/horrible.rsi

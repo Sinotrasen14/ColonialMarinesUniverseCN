@@ -1,8 +1,8 @@
 - type: entity
-  name: BaseWeaponHeavyMachineGun
+  name: 基础武器重型机枪 | BaseWeaponHeavyMachineGun
   parent: BaseItem
   id: BaseWeaponHeavyMachineGun
-  description: Spray and pray.
+  description: 扫射祈祷。 | Spray and pray.
   abstract: true
   components:
   - type: Sprite
@@ -27,10 +27,10 @@
   # No chamber because HMG may want its own
 
 - type: entity
-  name: minigun
+  name: 迷你枪 | minigun
   id: WeaponMinigun
-  parent: [ BaseWeaponHeavyMachineGun, BaseMajorContraband ]
-  description: Vzzzzzt! Rahrahrahrah! Vrrrrr! Uses .10 rifle ammo.
+  parent: [BaseWeaponHeavyMachineGun, BaseMajorContraband]
+  description: 嗡嗡嗡嗡！啦啦啦啦！呜呜呜呜！使用.10步枪弹药。 | Vzzzzzt! Rahrahrahrah! Vrrrrr! Uses .10 rifle ammo.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/HMGs/minigun.rsi

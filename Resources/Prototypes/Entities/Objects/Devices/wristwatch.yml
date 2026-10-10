@@ -1,15 +1,15 @@
 - type: entity
   id: Wristwatch
-  parent: [ BaseItem, BaseItemDestructible ]
-  name: wristwatch
-  description: A cheap watch for telling time. How much did you waste playing Space Station 14?
+  parent: [BaseItem, BaseItemDestructible]
+  name: 手表 | wristwatch
+  description: 一块用来看时间的廉价手表。你在玩太空站14上浪费了多少时间？ | A cheap watch for telling time. How much did you waste playing Space Station 14?
   components:
   - type: Sprite
     sprite: Objects/Devices/wristwatch.rsi
     layers:
     - state: wristwatch
-    - map: [ "enum.ClockVisualLayers.MinuteHand"]
-    - map: [ "enum.ClockVisualLayers.HourHand"]
+    - map: ["enum.ClockVisualLayers.MinuteHand"]
+    - map: ["enum.ClockVisualLayers.HourHand"]
   - type: Clock
   - type: Item
     sprite: Objects/Devices/wristwatch.rsi
@@ -26,13 +26,12 @@
     price: 50
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageGroupTrigger
+    - trigger: !type:DamageGroupTrigger
         damageGroup: Brute
         damage: 5
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Breakage" ]
+        acts: ["Breakage"]
   - type: PhysicalComposition
     materialComposition:
       Steel: 300
@@ -40,15 +39,15 @@
 - type: entity
   id: WristwatchGold
   parent: Wristwatch
-  name: gold watch
-  description: A fancy watch worth more than your kidney. It was owned by the notorious Syndicate mobster Vunibaldo "200 Pound Horse Meat Grinder" Frediani.
+  name: 金表 | gold watch
+  description: 一块比你的肾还值钱的高级手表。它曾属于臭名昭著的辛迪加黑帮分子武尼巴尔多“两百磅马肉绞肉机”弗雷迪亚尼。 | A fancy watch worth more than your kidney. It was owned by the notorious Syndicate mobster Vunibaldo "200 Pound Horse Meat Grinder" Frediani.
   components:
   - type: Sprite
     sprite: Objects/Devices/goldwatch.rsi
     layers:
     - state: goldwatch
-    - map: [ "enum.ClockVisualLayers.MinuteHand"]
-    - map: [ "enum.ClockVisualLayers.HourHand"]
+    - map: ["enum.ClockVisualLayers.MinuteHand"]
+    - map: ["enum.ClockVisualLayers.HourHand"]
   - type: Item
     sprite: Objects/Devices/goldwatch.rsi
   - type: Clothing

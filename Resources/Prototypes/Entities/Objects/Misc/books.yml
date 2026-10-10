@@ -1,8 +1,8 @@
 - type: entity
-  name: book
+  name: 书 | book
   parent: BaseItem
   id: BookBase
-  description: A hardcover book.
+  description: 一本精装书。 | A hardcover book.
   components:
   - type: Sprite
     sprite: Objects/Misc/books.rsi
@@ -10,14 +10,14 @@
     - state: paper
     - state: cover_base
       color: "#332d27"
-      map: [ "cover" ]
+      map: ["cover"]
     - state: decor_wingette
       color: "#453f3a"
-      map: [ "decor" ]
+      map: ["decor"]
     - state: icon_text
-      map: [ "icon" ]
+      map: ["icon"]
     - state: overlay_null
-      map: [ "overlay" ]
+      map: ["overlay"]
   - type: Paper
     contentSize: 12000
   - type: ActivatableUI
@@ -73,8 +73,8 @@
 - type: entity
   id: BookSpaceEncyclopedia
   parent: BaseGuidebook
-  name: space encyclopedia
-  description: An encyclopedia containing all the knowledge. The author of this encyclopedia is unknown.
+  name: 太空百科全书 | space encyclopedia
+  description: 一本包含所有知识的百科全书。这本百科全书的作者未知。 | An encyclopedia containing all the knowledge. The author of this encyclopedia is unknown.
   components:
   - type: Sprite
     layers:
@@ -94,8 +94,8 @@
 - type: entity
   id: BookTheBookOfControl
   parent: BaseGuidebook
-  name: the book of control
-  description: Essential to become robust.
+  name: 控制之书 | the book of control
+  description: 成为强者之根本。 | Essential to become robust.
   components:
   - type: Sprite
     layers:
@@ -115,8 +115,8 @@
 - type: entity
   id: BookBartendersManual
   parent: BaseGuidebook
-  name: bartender's manual
-  description: This manual is stained with beer.
+  name: 酒保手册 | bartender's manual
+  description: 这本手册上沾满了啤酒渍。 | This manual is stained with beer.
   components:
   - type: Sprite
     layers:
@@ -134,8 +134,8 @@
 - type: entity
   id: BookHowToCookForFortySpaceman
   parent: BaseGuidebook
-  name: How To Cook For Forty Spacemen
-  description: A book about cooking written by a space chef.
+  name: 如何为四十名太空人做饭 | How To Cook For Forty Spacemen
+  description: 一本由太空厨师撰写的烹饪书。 | A book about cooking written by a space chef.
   components:
   - type: Sprite
     layers:
@@ -152,8 +152,8 @@
 - type: entity
   id: BookLeafLoversSecret
   parent: BaseGuidebook
-  name: leaf lover's secret
-  description: It has a strong weed smell. It motivates you to feed and seed.
+  name: 叶爱者的秘密 | leaf lover's secret
+  description: 它有一股浓烈的杂草味。它激励你去喂养和播种。 | It has a strong weed smell. It motivates you to feed and seed.
   components:
   - type: Sprite
     layers:
@@ -173,8 +173,8 @@
 - type: entity
   id: BookEngineersHandbook
   parent: BaseGuidebook
-  name: engineer's handbook
-  description: A handbook about engineering written by Nanotrasen.
+  name: 工程师手册 | engineer's handbook
+  description: 一本由Nanotrasen撰写的关于工程学的手册。 | A handbook about engineering written by Nanotrasen.
   components:
   - type: Sprite
     layers:
@@ -193,8 +193,8 @@
 - type: entity
   id: BookScientistsGuidebook
   parent: BaseGuidebook
-  name: scientist's guidebook
-  description: A guidebook about science written by Nanotrasen.
+  name: 科学家的指南 | scientist's guidebook
+  description: 一本由Nanotrasen撰写的科学指南。 | A guidebook about science written by Nanotrasen.
   components:
   - type: Sprite
     layers:
@@ -211,8 +211,8 @@
 - type: entity
   id: BookSecurity
   parent: BaseGuidebook
-  name: security 101
-  description: A book about security written by Nanotrasen. The book is stained with blood. It seems to have been used more as a weapon than reading material.
+  name: 安全入门 | security 101
+  description: 一本由Nanotrasen编写的关于安全的书。书上沾满了血迹。它似乎更多地被用作武器，而不是阅读材料。 | A book about security written by Nanotrasen. The book is stained with blood. It seems to have been used more as a weapon than reading material.
   components:
   - type: Sprite
     layers:
@@ -235,8 +235,8 @@
 - type: entity
   id: BookHowToKeepStationClean
   parent: BaseGuidebook
-  name: how to keep station clean
-  description: This book is very clean.
+  name: 如何保持车站清洁 | how to keep station clean
+  description: 这本书非常干净。 | This book is very clean.
   components:
   - type: Sprite
     layers:
@@ -252,8 +252,8 @@
 - type: entity
   id: BookHowToRockAndStone
   parent: BaseGuidebook
-  name: how to rock and stone
-  description: A very detailed guide about salvage written by Karl, a legendary space miner, however he's missing. It motivates you to rock and stone.
+  name: 如何采石与摇滚 | how to rock and stone
+  description: 卡尔，一位传奇太空矿工，写了一份关于打捞的非常详细的指南，但他失踪了。它激励你去采石与摇滚。 | A very detailed guide about salvage written by Karl, a legendary space miner, however he's missing. It motivates you to rock and stone.
   components:
   - type: Sprite
     layers:
@@ -273,8 +273,8 @@
 - type: entity
   id: BookMedicalReferenceBook
   parent: BaseGuidebook
-  name: medical reference book
-  description: A reference book about medical written by an old doctor. The handwriting is barely comprehensible.
+  name: 医学参考书 | medical reference book
+  description: 一本由老医生撰写的医学参考书。字迹几乎无法辨认。 | A reference book about medical written by an old doctor. The handwriting is barely comprehensible.
   components:
   - type: Sprite
     layers:
@@ -292,8 +292,8 @@
 - type: entity
   id: BookHowToSurvive
   parent: BaseGuidebook
-  name: how to survive
-  description: Ironically the author of this book is dead.
+  name: 如何生存 | how to survive
+  description: 讽刺的是，这本书的作者已经去世了。 | Ironically the author of this book is dead.
   components:
   - type: Sprite
     layers:
@@ -313,8 +313,8 @@
 - type: entity
   id: BookChemicalCompendium
   parent: BaseGuidebook
-  name: chempendium
-  description: A comprehensive guide written by some old skeleton of a professor about chemical synthesis.
+  name: 化学大全 | chempendium
+  description: 一本由某位老教授撰写的关于化学合成的综合指南。 | A comprehensive guide written by some old skeleton of a professor about chemical synthesis.
   components:
   - type: Sprite
     layers:
@@ -332,8 +332,8 @@
 - type: entity
   id: BookAILawCompendium
   parent: BaseGuidebook
-  name: My, Robot
-  description: A dictionary of all the ways silicons can go wrong. By Isaac Crewsimov.
+  name: 天哪，机器人 | My, Robot
+  description: 一本收录硅基生命所有出错方式的词典。作者：艾萨克·克鲁西莫夫。 | A dictionary of all the ways silicons can go wrong. By Isaac Crewsimov.
   components:
   - type: Sprite
     layers:
@@ -351,8 +351,8 @@
 - type: entity
   id: BookSpaceLaw
   parent: BaseGuidebook
-  name: space law
-  description: A set of Nanotrasen guidelines for keeping law and order on their space stations.
+  name: 太空法 | space law
+  description: 一套纳米传讯公司在其空间站上维持法律与秩序的指导方针。 | A set of Nanotrasen guidelines for keeping law and order on their space stations.
   components:
   - type: Sprite
     layers:
@@ -369,7 +369,7 @@
   parent: BookBase
   id: BookRandom
   suffix: random visual
-  description: Each book is unique! What is hidden in this one?
+  description: 每本书都是独一无二的！这本里藏着什么呢？ | Each book is unique! What is hidden in this one?
   components:
   - type: RandomMetadata
     nameSegments:
@@ -378,57 +378,57 @@
     nameFormat: name-format-book
   - type: RandomSprite
     available:
-      - cover:
-          cover_base: Sixteen
-          cover_old: Sixteen
-          cover_strong: Sixteen
-        decor:
-          decor_wingette: Sixteen
-          decor_wingette_circle: Sixteen
-          decor_bottom: Sixteen
-          decor_middle: Sixteen
-          decor_spine: Sixteen
-          decor_diagonal: Sixteen
-          decor_vertical_middle: Sixteen
-          icon_corner: Sixteen
-          icon_mount: ""
-        icon:
-          icon_biohazard: Sixteen
-          icon_borg: ""
-          icon_banana: ""
-          icon_glow: Sixteen
-          icon_hacking: ""
-          icon_law: Sixteen
-          icon_magnifier: ""
-          icon_nuclear: ""
-          icon_time: Sixteen
-          icon_aurora: Sixteen
-          icon_briefcase: ""
-          icon_eye: ""
-          icon_letter_N: ""
-          icon_letter_P: ""
-          icon_lightning: ""
-          icon_planet: ""
-          icon_possum: ""
-          icon_question: Sixteen
-          icon_scmmd: ""
-          icon_stars: Sixteen
-          icon_stars2: Sixteen
-          icon_temple: Sixteen
-          icon_tree: ""
-          icon_pentagramm: Sixteen
-          icon_fish: ""
-          icon_origami: ""
-          icon_skull: ""
-          icon_text: ""
-          icon_text2: ""
-          icon_text3: ""
-        overlay:
-          overlay_blood: ""
-          overlay_dirt: Sixteen
-          detail_bookmark: Sixteen
-          detail_rivets: Sixteen
-          overlay_null: ""
+    - cover:
+        cover_base: Sixteen
+        cover_old: Sixteen
+        cover_strong: Sixteen
+      decor:
+        decor_wingette: Sixteen
+        decor_wingette_circle: Sixteen
+        decor_bottom: Sixteen
+        decor_middle: Sixteen
+        decor_spine: Sixteen
+        decor_diagonal: Sixteen
+        decor_vertical_middle: Sixteen
+        icon_corner: Sixteen
+        icon_mount: ""
+      icon:
+        icon_biohazard: Sixteen
+        icon_borg: ""
+        icon_banana: ""
+        icon_glow: Sixteen
+        icon_hacking: ""
+        icon_law: Sixteen
+        icon_magnifier: ""
+        icon_nuclear: ""
+        icon_time: Sixteen
+        icon_aurora: Sixteen
+        icon_briefcase: ""
+        icon_eye: ""
+        icon_letter_N: ""
+        icon_letter_P: ""
+        icon_lightning: ""
+        icon_planet: ""
+        icon_possum: ""
+        icon_question: Sixteen
+        icon_scmmd: ""
+        icon_stars: Sixteen
+        icon_stars2: Sixteen
+        icon_temple: Sixteen
+        icon_tree: ""
+        icon_pentagramm: Sixteen
+        icon_fish: ""
+        icon_origami: ""
+        icon_skull: ""
+        icon_text: ""
+        icon_text2: ""
+        icon_text3: ""
+      overlay:
+        overlay_blood: ""
+        overlay_dirt: Sixteen
+        detail_bookmark: Sixteen
+        detail_rivets: Sixteen
+        overlay_null: ""
 
 - type: entity
   parent: BookRandom
@@ -441,8 +441,8 @@
 - type: entity
   parent: BookBase
   id: BookAtmosDistro
-  name: "Newton's Guide to Atmos: The Distro"
-  description: There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
+  name: "牛顿的大气指南：发行版 | Newton's Guide to Atmos: The Distro"
+  description: 页边空白处写满了难以辨认的笔记。大部分文字都被手写的问号覆盖了。 | There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
   components:
   - type: Sprite
     layers:
@@ -460,8 +460,8 @@
 - type: entity
   parent: BookBase
   id: BookAtmosWaste
-  name: "Newton's Guide to Atmos: Waste"
-  description: There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
+  name: "牛顿的大气指南：废物 | Newton's Guide to Atmos: Waste"
+  description: 页边空白处写满了无穷无尽、难以辨认的笔记。大部分文字都被手写的问号覆盖了。 | There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
   components:
   - type: Sprite
     layers:
@@ -479,8 +479,8 @@
 - type: entity
   parent: BookBase
   id: BookAtmosAirAlarms
-  name: "Newton's Guide to Atmos: Air Alarms"
-  description: There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
+  name: "牛顿的大气指南：空气警报 | Newton's Guide to Atmos: Air Alarms"
+  description: 页边空白处写满了无数难以辨认的笔记。大部分文字上都覆盖着手写的问号。 | There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
   components:
   - type: Sprite
     layers:
@@ -498,8 +498,8 @@
 - type: entity
   parent: BookBase
   id: BookAtmosVentsMore
-  name: "Newton's Guide to Atmos: Vents and More"
-  description: There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
+  name: "牛顿的大气指南：喷口及其他 | Newton's Guide to Atmos: Vents and More"
+  description: 页边空白处潦草地写着无数难以辨认的笔记。大部分文字都被手写的问号覆盖了。 | There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
   components:
   - type: Sprite
     layers:

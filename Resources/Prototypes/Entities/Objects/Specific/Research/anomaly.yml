@@ -1,31 +1,31 @@
 - type: entity
   parent: BaseItem
   id: AnomalyScanner
-  name: anomaly scanner
-  description: A hand-held scanner built to collect information on various anomalous objects.
+  name: 异常扫描仪 | anomaly scanner
+  description: 一种手持式扫描仪，用于收集各种异常物体的信息。 | A hand-held scanner built to collect information on various anomalous objects.
   components:
   - type: Sprite
     sprite: Objects/Specific/Research/anomalyscanner.rsi
     layers:
-      - state: icon
-        map: ["enum.AnomalyScannerVisualLayers.Base"]
-      - map: ["enum.AnomalyScannerVisualLayers.Screen"]
-        visible: false
-        shader: unshaded
-      - state: severity_mask
-        map: ["enum.AnomalyScannerVisualLayers.SeverityMask"]
-        visible: false
-        shader: unshaded
-      - map: ["enum.AnomalyScannerVisualLayers.Stability"]
-        visible: false
-        shader: unshaded
-      - visible: false
-        map: ["enum.AnomalyScannerVisualLayers.Pulse"]
-        shader: unshaded
-      - state: supercritical
-        map: ["enum.AnomalyScannerVisualLayers.Supercritical"]
-        shader: unshaded
-        visible: false
+    - state: icon
+      map: ["enum.AnomalyScannerVisualLayers.Base"]
+    - map: ["enum.AnomalyScannerVisualLayers.Screen"]
+      visible: false
+      shader: unshaded
+    - state: severity_mask
+      map: ["enum.AnomalyScannerVisualLayers.SeverityMask"]
+      visible: false
+      shader: unshaded
+    - map: ["enum.AnomalyScannerVisualLayers.Stability"]
+      visible: false
+      shader: unshaded
+    - visible: false
+      map: ["enum.AnomalyScannerVisualLayers.Pulse"]
+      shader: unshaded
+    - state: supercritical
+      map: ["enum.AnomalyScannerVisualLayers.Supercritical"]
+      shader: unshaded
+      visible: false
   - type: ActivatableUI
     key: enum.AnomalyScannerUiKey.Key
     requireActiveHand: false
@@ -39,28 +39,28 @@
     visuals:
       enum.AnomalyScannerVisuals.HasAnomaly:
         enum.AnomalyScannerVisualLayers.Screen:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         enum.AnomalyScannerVisualLayers.SeverityMask:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.AnomalyScannerVisuals.AnomalyStability:
         enum.AnomalyScannerVisualLayers.Stability:
-          Stable: { visible: false }
-          Decaying: { visible: true, state: decaying }
-          Growing: { visible: true, state: growing }
+          Stable: {visible: false}
+          Decaying: {visible: true, state: decaying}
+          Growing: {visible: true, state: growing}
       enum.AnomalyScannerVisuals.AnomalyNextPulse:
         enum.AnomalyScannerVisualLayers.Pulse:
-          0: { visible: false }
-          1: { visible: true, state: timer_1 }
-          2: { visible: true, state: timer_2 }
-          3: { visible: true, state: timer_3 }
-          4: { visible: true, state: timer_4 }
-          5: { visible: true, state: timer_5 }
+          0: {visible: false}
+          1: {visible: true, state: timer_1}
+          2: {visible: true, state: timer_2}
+          3: {visible: true, state: timer_3}
+          4: {visible: true, state: timer_4}
+          5: {visible: true, state: timer_5}
       enum.AnomalyScannerVisuals.AnomalyIsSupercritical:
         enum.AnomalyScannerVisualLayers.Supercritical:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: AnomalyScanner
   - type: AnomalyScannerScreen
   - type: GuideHelp
@@ -72,8 +72,8 @@
 - type: entity
   parent: AnomalyScanner
   id: AnomalyScannerAdmin
-  name: admin anomaly scanner
-  description: A hand-held scanner built to collect information on various anomalous objects. This one seems to have a few extra features.
+  name: 管理员异常扫描仪 | admin anomaly scanner
+  description: 一种用于收集各种异常物体信息的手持扫描仪。这一台似乎有一些额外功能。 | A hand-held scanner built to collect information on various anomalous objects. This one seems to have a few extra features.
   suffix: Admin
   components:
   - type: AnomalyScanner
@@ -84,25 +84,25 @@
 - type: entity
   id: AnomalyLocatorUnpowered
   parent: BaseItem
-  name: anomaly locator
-  description: A device designed to aid in the locating of anomalies. Did you check the gas miners?
+  name: 异常定位器 | anomaly locator
+  description: 一种旨在帮助定位异常的装置。你检查过气体采矿机了吗？ | A device designed to aid in the locating of anomalies. Did you check the gas miners?
   suffix: Always Powered
   components:
   - type: Sprite
     sprite: Objects/Specific/Research/anomalylocator.rsi
     layers:
-      - state: icon
-      - state: screen
-        shader: unshaded
-        visible: false
-        map: ["enum.ToggleableVisuals.Layer"]
+    - state: icon
+    - state: screen
+      shader: unshaded
+      visible: false
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: ItemToggleExaminableStatus
   - type: ItemToggle
   - type: ProximityBeeper
@@ -122,7 +122,7 @@
 
 - type: entity
   id: AnomalyLocator
-  parent: [ AnomalyLocatorUnpowered, PowerCellSlotSmallItem ]
+  parent: [AnomalyLocatorUnpowered, PowerCellSlotSmallItem]
   suffix: ""
   components:
   - type: PowerCellDraw
@@ -143,8 +143,8 @@
 - type: entity
   id: AnomalyLocatorWideUnpowered
   parent: AnomalyLocatorUnpowered
-  name: wide-spectrum anomaly locator
-  description: A device that looks for anomalies from an extended distance, but has no way to determine the distance to them.
+  name: 广谱异常定位器 | wide-spectrum anomaly locator
+  description: 一种从远距离寻找异常，但无法确定其距离的装置。 | A device that looks for anomalies from an extended distance, but has no way to determine the distance to them.
   suffix: Always Powered
   components:
   - type: Sprite
@@ -157,7 +157,7 @@
 
 - type: entity
   id: AnomalyLocatorWide
-  parent: [ AnomalyLocatorWideUnpowered, PowerCellSlotSmallItem ]
+  parent: [AnomalyLocatorWideUnpowered, PowerCellSlotSmallItem]
   suffix: ""
   components:
   - type: PowerCellDraw
@@ -176,10 +176,10 @@
         name: power-cell-slot-component-slot-name-default
 
 - type: entity
-  name: G.O.R.I.L.L.A. gauntlet
+  name: G.O.R.I.L.L.A.护手 | G.O.R.I.L.L.A. gauntlet
   parent: BaseItem
   id: WeaponGauntletGorilla
-  description: A robust piece of research equipment. When powered with an anomaly core, a single blow can launch anomalous objects through the air.
+  description: 一件坚固的研究设备。当用异常核心供能时，一击就能将异常物体击飞至空中。 | A robust piece of research equipment. When powered with an anomaly core, a single blow can launch anomalous objects through the air.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/gorilla.rsi

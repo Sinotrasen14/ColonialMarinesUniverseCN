@@ -2,7 +2,7 @@
   abstract: true
   parent: [BaseItem, BaseSecurityContraband]
   id: BaseBola
-  name: bola
+  name: 球 | bola
   components:
   - type: Item
     size: Normal
@@ -18,15 +18,14 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 15
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DamageOnLand
     damage:
       types:
@@ -55,8 +54,8 @@
 - type: entity
   parent: BaseBola
   id: Bola
-  name: makeshift bola
-  description: A makeshift bola, cobbled together with some spare cuffs and metal. It doesn't look like it's going to stay together for very long.
+  name: 简易套索 | makeshift bola
+  description: 一个简易套索，用一些备用镣铐和金属拼凑而成。看起来撑不了多久。 | A makeshift bola, cobbled together with some spare cuffs and metal. It doesn't look like it's going to stay together for very long.
   components:
   - type: Construction
     graph: Bola
@@ -65,8 +64,8 @@
 - type: entity
   parent: BaseBola
   id: SecurityBola
-  name: tactical bola
-  description: A bola, comprised of steel anchors linked together with a wire cable. Reliable and reusable.
+  name: 战术流星锤 | tactical bola
+  description: 一种流星锤，由钢制锚钩通过钢丝绳连接而成。可靠且可重复使用。 | A bola, comprised of steel anchors linked together with a wire cable. Reliable and reusable.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Throwable/securitybola.rsi

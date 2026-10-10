@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ DrinkBaseMaterialGlass, DrinkBase, DrinkBaseOpenable, DrinkBaseEmptyTrash, DrinkVisualsAll ]
+  parent: [DrinkBaseMaterialGlass, DrinkBase, DrinkBaseOpenable, DrinkBaseEmptyTrash, DrinkVisualsAll]
   id: BaseChemistryVial
   components:
   - type: Item
@@ -27,7 +27,7 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseItem, DrinkBaseMaterialGlass, DrinkBaseEmptyTrash, DrinkVisualsAll ]
+  parent: [BaseItem, DrinkBaseMaterialGlass, DrinkBaseEmptyTrash, DrinkVisualsAll]
   id: BaseChemistryAmpoule # like a vial, but you can't open, you have to break it.
   components:
   - type: Item
@@ -47,8 +47,8 @@
 - type: entity
   parent: [SolutionTiny, BaseChemistryVial]
   id: ChemistryEmptyVial
-  name: vial
-  description: A small vial.
+  name: 小瓶 | vial
+  description: 一个小瓶。 | A small vial.
   components:
   - type: Item
     sprite: Objects/Specific/Chemistry/vial.rsi
@@ -63,8 +63,7 @@
     price: 100
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -77,8 +76,8 @@
 - type: entity
   parent: [SolutionVeryTiny, BaseChemistryVial]
   id: ChemistryEmptyVialSmall
-  name: mini vial
-  description: A smaller vial.
+  name: 迷你瓶 | mini vial
+  description: 一个更小的瓶子。 | A smaller vial.
   components:
   - type: Item
     sprite: Objects/Specific/Chemistry/vial_mini.rsi
@@ -98,8 +97,8 @@
 - type: entity
   parent: [SolutionTiny, BaseChemistryAmpoule]
   id: ChemistryEmptyAmpoule
-  name: ampoule
-  description: Break to open.
+  name: 安瓿 | ampoule
+  description: 折断开启。 | Break to open.
   components:
   - type: Item
     sprite: Objects/Specific/Chemistry/ampoule.rsi
@@ -115,8 +114,7 @@
       Glass: 10
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -141,7 +139,8 @@
       - ReagentId: Vestine
         Quantity: 30
   - type: Tag
-    tags: &TagVial # Remove trash tag when we have a filled solution
+    tags: &TagVial
+                   # Remove trash tag when we have a filled solution
     - CentrifugeCompatible
 
 - type: entity
@@ -202,7 +201,7 @@
   - type: Solution
     solution:
       reagents:
-        - ReagentId: XenoborgOil
-          Quantity: 30
+      - ReagentId: XenoborgOil
+        Quantity: 30
   - type: Tag
     tags: *TagVial

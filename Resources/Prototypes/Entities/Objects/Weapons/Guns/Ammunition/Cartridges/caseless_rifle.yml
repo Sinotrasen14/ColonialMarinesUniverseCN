@@ -1,12 +1,12 @@
 - type: entity
   abstract: true
-  parent: [ BaseCartridge, BaseSecurityContraband ]
+  parent: [BaseCartridge, BaseSecurityContraband]
   id: BaseCartridgeCaselessRifle
-  name: cartridge (.25 caseless)
+  name: 弹匣（.25无壳弹） | cartridge (.25 caseless)
   components:
   - type: Tag
     tags:
-      - CartridgeCaselessRifle
+    - CartridgeCaselessRifle
   - type: CartridgeAmmo
     deleteOnSpawn: true
   - type: Sprite
@@ -23,8 +23,8 @@
 - type: entity
   parent: BaseCartridgeCaselessRifle
   id: CartridgeCaselessRifle
-  name: cartridge (.25 caseless)
-  description: A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Standard kinetic ammunition is common and useful in most situations.
+  name: 弹药（.25无壳弹） | cartridge (.25 caseless)
+  description: 一种使用无壳技术的小口径弹药，摒弃了传统的黄铜弹壳，转而采用硬化发射药。标准动能弹药在大多数情况下都很常见且实用。 | A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Standard kinetic ammunition is common and useful in most situations.
   components:
   - type: CartridgeAmmo
     proto: BulletCaselessRifle
@@ -32,15 +32,15 @@
 - type: entity
   parent: BaseCartridgeCaselessRifle
   id: CartridgeCaselessRiflePractice
-  name: cartridge (.25 caseless practice)
-  description: A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  name: 弹药（.25无壳练习弹） | cartridge (.25 caseless practice)
+  description: 一种采用无壳技术的小口径弹药，去除了传统的黄铜弹壳，改用硬化推进剂。练习弹发射的粉笔弹丸只会造成轻微刺痛，除此之外不会造成持久伤害。 | A small caliber utilizing caseless technology, omitting conventional brass casing in favor of hardened propellant. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
   components:
   - type: CartridgeAmmo
     proto: BulletCaselessRiflePractice
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#dbdbdb"
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+    - state: tip
+      map: ["enum.AmmoVisualLayers.Tip"]
+      color: "#dbdbdb"

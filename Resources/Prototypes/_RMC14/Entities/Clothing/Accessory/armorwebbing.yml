@@ -2,7 +2,7 @@
   parent: BaseItem
   abstract: true
   id: RMCArmorWebbingBase
-  name: armor webbing
+  name: 有甲弹挂
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/ArmorWebbing/pouch.rsi
@@ -48,8 +48,8 @@
 - type: entity
   parent: RMCArmorWebbingBase
   id: RMCArmorWebbingDrum
-  name: drum armor webbing
-  description: A brown harness fitted with a pair of large pouches capable of carrying high-capacity drums and other large magazines.
+  name: 鼓式有甲弹挂
+  description: 一个棕色背带，配有一对大口袋，可以装高容量弹鼓和其他大弹夹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/ArmorWebbing/drum.rsi
@@ -98,8 +98,8 @@
 - type: entity
   parent: RMCArmorWebbingBase
   id: RMCArmorWebbingMag
-  name: magazine armor webbing
-  description: A brown harness fitted with a set of four magazine pouches.
+  name: 弹匣有甲弹挂
+  description: 一条棕色背带，配有四个弹匣口袋。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/ArmorWebbing/mag.rsi
@@ -146,8 +146,8 @@
 - type: entity
   parent: RMCArmorWebbingBase
   id: RMCArmorWebbingGrenade
-  name: grenade armor webbing
-  description: A brown harness fitted with an array of small pouches, capable of holding up to 6 grenades.
+  name: 手榴弹有甲弹挂
+  description: 一条棕色背带，配有一系列小口袋，可容纳多达6枚手榴弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/ArmorWebbing/nade.rsi
@@ -180,8 +180,8 @@
 - type: entity
   parent: RMCArmorWebbingBase
   id: RMCArmorWebbingPouch
-  name: general armor webbing
-  description: A brown harness fitted with several small pouches, capable of carrying assorted small items.
+  name: 普通有甲弹挂
+  description: 一个棕色的背带，带有几个小口袋，可以装各种小物件。
   components:
   - type: Sprite
     state: webbing
@@ -223,8 +223,8 @@
 - type: entity
   parent: RMCArmorWebbingBase
   id: RMCArmorWebbingShell
-  name: shell armor webbing
-  description: A brown harness fitted with a number of loops designed to hold loose shotgun shells.
+  name: 霰弹有甲弹挂
+  description: 一条棕色背带，上面有多个环，用来放散装的猎枪子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/ArmorWebbing/shell.rsi

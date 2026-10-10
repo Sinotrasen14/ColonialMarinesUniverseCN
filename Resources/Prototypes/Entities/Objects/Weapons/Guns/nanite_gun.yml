@@ -1,8 +1,8 @@
 - type: entity
   parent: [BaseItem, BaseXenoborgContraband]
   id: WeaponNaniteGun
-  name: nanite gun
-  description: A strange gun that shoots nanites encased in crystal shards that heals borgs but hurts fleshy inferior beings.
+  name: 纳米机炮 | nanite gun
+  description: 一把奇特的枪，发射包裹在晶体碎片中的纳米机器人，能治疗半机械人，但会伤害血肉之躯的低等生物。 | A strange gun that shoots nanites encased in crystal shards that heals borgs but hurts fleshy inferior beings.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/nanite.rsi
@@ -44,4 +44,4 @@
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
-        ents: [ ]
+        ents: []

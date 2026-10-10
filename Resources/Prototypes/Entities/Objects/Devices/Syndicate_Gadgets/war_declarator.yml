@@ -1,26 +1,26 @@
 - type: entity
-  parent: [BaseItem, BaseSyndicateContraband ]
+  parent: [BaseItem, BaseSyndicateContraband]
   id: NukeOpsDeclarationOfWar
-  name: war declarator
-  description: Use to send a declaration of hostilities to the target, delaying your shuttle departure while they prepare for your assault. Such a brazen move will attract the attention of powerful benefactors within the Syndicate, who will supply your team with a massive amount of bonus telecrystals. Must be used at start of mission, or your benefactors will lose interest.
+  name: 宣战器 | war declarator
+  description: 用于向目标发送敌对声明，在他们准备应对你的攻击时延迟你的穿梭机出发。如此明目张胆的举动会吸引辛迪加内部强大赞助者的注意，他们会为你的团队提供大量额外传送晶体。必须在任务开始时使用，否则你的赞助者将失去兴趣。 | Use to send a declaration of hostilities to the target, delaying your shuttle departure while they prepare for your assault. Such a brazen move will attract the attention of powerful benefactors within the Syndicate, who will supply your team with a massive amount of bonus telecrystals. Must be used at start of mission, or your benefactors will lose interest.
   components:
-    - type: Sprite
-      sprite: Objects/Devices/declaration_of_war.rsi
-      layers:
-        - state: declarator
-    - type: Item
-    - type: UseDelay
-      delay: 0.5
-    - type: ActivatableUI
-      inHandsOnly: true
-      singleUser: true
-      requireActiveHand: false
-      key: enum.WarDeclaratorUiKey.Key
-    - type: UserInterface
-      interfaces:
-        enum.WarDeclaratorUiKey.Key:
-          type: WarDeclaratorBoundUserInterface
-    - type: WarDeclarator
-      message: war-declarator-default-message
-    - type: AccessReader
-      access: [["NuclearOperative"]]
+  - type: Sprite
+    sprite: Objects/Devices/declaration_of_war.rsi
+    layers:
+    - state: declarator
+  - type: Item
+  - type: UseDelay
+    delay: 0.5
+  - type: ActivatableUI
+    inHandsOnly: true
+    singleUser: true
+    requireActiveHand: false
+    key: enum.WarDeclaratorUiKey.Key
+  - type: UserInterface
+    interfaces:
+      enum.WarDeclaratorUiKey.Key:
+        type: WarDeclaratorBoundUserInterface
+  - type: WarDeclarator
+    message: war-declarator-default-message
+  - type: AccessReader
+    access: [["NuclearOperative"]]

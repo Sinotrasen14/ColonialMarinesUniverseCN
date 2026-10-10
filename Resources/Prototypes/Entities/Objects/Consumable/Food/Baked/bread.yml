@@ -10,7 +10,7 @@
     size: Normal
   - type: FlavorProfile
     flavors:
-      - bread
+    - bread
   - type: Sprite
     sprite: Objects/Consumable/Food/Baked/bread.rsi
   - type: Tag
@@ -31,7 +31,7 @@
     size: Tiny
   - type: FlavorProfile
     flavors:
-      - bread
+    - bread
   - type: Tag
     tags:
     - Bread
@@ -45,10 +45,10 @@
 # Custom Bread Example
 
 - type: entity
-  name: volcanic loaf
+  name: 火山面包 | volcanic loaf
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadVolcanic
-  description: A dark loaf. Resembles pumice.
+  description: 一块深色的面包。看起来像浮石。 | A dark loaf. Resembles pumice.
   components:
   - type: Sprite
     layers:
@@ -62,10 +62,10 @@
       amount: 8
 
 - type: entity
-  name: volcanic slice
+  name: 火山岩切片 | volcanic slice
   parent: FoodBreadSliceBase
   id: FoodBreadVolcanicSlice
-  description: A slice of dark loaf. Resembles pumice.
+  description: 一块深色面包片。类似浮石。 | A slice of dark loaf. Resembles pumice.
   components:
   - type: Sprite
     layers:
@@ -77,15 +77,15 @@
 # Bread
 
 - type: entity
-  name: banana bread
+  name: 香蕉面包 | banana bread
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadBanana
-  description: A heavenly and filling treat.
+  description: 一份天堂般美味又饱腹的甜点。 | A heavenly and filling treat.
   components:
   - type: FlavorProfile
     flavors:
-      - banana
-      - bread
+    - banana
+    - bread
   - type: Sprite
     layers:
     - state: banana
@@ -100,15 +100,15 @@
 # Tastes like bread, banana, nut.
 
 - type: entity
-  name: banana bread slice
+  name: 香蕉面包片 | banana bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadBananaSlice
-  description: A slice of delicious banana bread.
+  description: 一片美味的香蕉面包。 | A slice of delicious banana bread.
   components:
   - type: FlavorProfile
     flavors:
-      - banana
-      - bread
+    - banana
+    - bread
   - type: Sprite
     layers:
     - state: banana-slice
@@ -121,8 +121,8 @@
 - type: entity
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadCotton
-  name: cotton bread
-  description: Bread, but for moff.
+  name: 棉面包 | cotton bread
+  description: 面包，但给莫夫吃的。 | Bread, but for moff.
   components:
   - type: FlavorProfile
     flavors:
@@ -148,10 +148,10 @@
         Quantity: 40
 
 - type: entity
-  name: cotton bread slice
+  name: 棉絮面包片 | cotton bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadCottonSlice
-  description: A slice of (maybe) delicious cotton bread.
+  description: 一片（也许）美味的棉絮面包。 | A slice of (maybe) delicious cotton bread.
   components:
   - type: FlavorProfile
     flavors:
@@ -174,15 +174,15 @@
         Quantity: 5
 
 - type: entity
-  name: cornbread
+  name: 玉米面包 | cornbread
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadCorn
-  description: Some good down-home country-style, rootin'-tootin', revolver-shootin', dad-gum yeehaw cornbread.
+  description: 一些地道的乡村风味、带劲十足、左轮手枪砰砰响、天哪咿哈的玉米面包。 | Some good down-home country-style, rootin'-tootin', revolver-shootin', dad-gum yeehaw cornbread.
   components:
   - type: FlavorProfile
     flavors:
-      - bread
-      - corn
+    - bread
+    - corn
   - type: Sprite
     layers:
     - state: cornbread
@@ -193,30 +193,30 @@
 # Tastes like bread, banana, nut.
 
 - type: entity
-  name: cornbread slice
+  name: 玉米面包片 | cornbread slice
   parent: FoodBreadSliceBase
   id: FoodBreadCornSlice
-  description: A slice of cornbread.
+  description: 一片玉米面包。 | A slice of cornbread.
   components:
   - type: FlavorProfile
     flavors:
-      - bread
-      - corn
+    - bread
+    - corn
   - type: Sprite
     layers:
     - state: cornbread-slice
 
 - type: entity
-  name: cream cheese bread
+  name: 奶油芝士面包 | cream cheese bread
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadCreamcheese
-  description: Yum yum yum!
+  description: 好吃好吃好吃！ | Yum yum yum!
   components:
   - type: FlavorProfile
     flavors:
-      - cheesy
-      - creamy
-      - bread
+    - cheesy
+    - creamy
+    - bread
   - type: Sprite
     layers:
     - state: creamcheese
@@ -234,16 +234,16 @@
 # Tastes like bread, cheese.
 
 - type: entity
-  name: cream cheese bread slice
+  name: 奶油芝士面包片 | cream cheese bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadCreamcheeseSlice
-  description: A slice of yum!
+  description: 一片美味！ | A slice of yum!
   components:
   - type: FlavorProfile
     flavors:
-      - cheesy
-      - creamy
-      - bread
+    - cheesy
+    - creamy
+    - bread
   - type: Sprite
     layers:
     - state: creamcheese-slice
@@ -256,15 +256,15 @@
         Quantity: 0.5
 
 - type: entity
-  name: meat bread
+  name: 肉面包 | meat bread
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadMeat
-  description: The culinary base of every self-respecting eloquen/tg/entleman.
+  description: 每个有自尊的雄辩/tg/绅士的烹饪基础。 | The culinary base of every self-respecting eloquen/tg/entleman.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - bread
+    - meaty
+    - bread
   - type: Sprite
     layers:
     - state: meat
@@ -288,15 +288,15 @@
 # Tastes like bread, meat.
 
 - type: entity
-  name: meat bread slice
+  name: 肉面包片 | meat bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadMeatSlice
-  description: A slice of delicious meatbread.
+  description: 一片美味的肉面包。 | A slice of delicious meatbread.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - bread
+    - meaty
+    - bread
   - type: Sprite
     layers:
     - state: meat-slice
@@ -316,15 +316,15 @@
     - Slice
 
 - type: entity
-  name: mimana bread
+  name: 米玛娜面包 | mimana bread
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadMimana
-  description: Best eaten in silence.
+  description: 最好在沉默中品尝。 | Best eaten in silence.
   components:
   - type: FlavorProfile
     flavors:
-      - nothing
-      - bread
+    - nothing
+    - bread
   - type: Sprite
     layers:
     - state: mimana
@@ -344,15 +344,15 @@
 # Tastes like bread, cheese.
 
 - type: entity
-  name: mimana bread slice
+  name: mimana面包片 | mimana bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadMimanaSlice
-  description: A slice of silence!
+  description: 一片寂静！ | A slice of silence!
   components:
   - type: FlavorProfile
     flavors:
-      - nothing
-      - bread
+    - nothing
+    - bread
   - type: Sprite
     layers:
     - state: mimana-slice
@@ -367,10 +367,10 @@
         Quantity: 1.25
 
 - type: entity
-  name: bread
+  name: 面包 | bread
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadPlain
-  description: Some plain old earthen bread.
+  description: 一些普通的老式土制面包。 | Some plain old earthen bread.
   components:
   - type: Sprite
     layers:
@@ -381,25 +381,25 @@
       amount: 8
 
 - type: entity
-  name: bread slice
+  name: 面包片 | bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadPlainSlice
-  description: A slice of home.
+  description: 一片家的味道。 | A slice of home.
   components:
   - type: Sprite
     layers:
     - state: plain-slice
 
 - type: entity
-  name: sausage bread
+  name: 香肠面包 | sausage bread
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadSausage
-  description: Dont think too much about it.
+  description: 别想太多。 | Dont think too much about it.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - bread
+    - meaty
+    - bread
   - type: Sprite
     layers:
     - state: sausage
@@ -420,15 +420,15 @@
     - Bread
 
 - type: entity
-  name: sausage bread slice
+  name: 香肠面包片 | sausage bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadSausageSlice
-  description: Dont think too much about it.
+  description: 别想太多。 | Dont think too much about it.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - bread
+    - meaty
+    - bread
   - type: Sprite
     layers:
     - state: sausage-slice
@@ -446,15 +446,15 @@
     - Slice
 
 - type: entity
-  name: spider meat bread
+  name: 蜘蛛肉面包 | spider meat bread
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadMeatSpider
-  description: Reassuringly green meatloaf made from spider meat.
+  description: 用蜘蛛肉制成的令人安心的绿色肉糕。 | Reassuringly green meatloaf made from spider meat.
   components:
   - type: FlavorProfile
     flavors:
-      - cobwebs
-      - bread
+    - cobwebs
+    - bread
   - type: Sprite
     layers:
     - state: spidermeat
@@ -478,15 +478,15 @@
 # Tastes like bread, cobwebs.
 
 - type: entity
-  name: spider meat bread slice
+  name: 蜘蛛肉面包片 | spider meat bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadMeatSpiderSlice
-  description: A slice of meatloaf made from an animal that most likely still wants you dead.
+  description: 一片由很可能仍想置你于死地的动物制成的肉糕。 | A slice of meatloaf made from an animal that most likely still wants you dead.
   components:
   - type: FlavorProfile
     flavors:
-      - cobwebs
-      - bread
+    - cobwebs
+    - bread
   - type: Sprite
     layers:
     - state: spidermeat-slice
@@ -506,15 +506,15 @@
     - Slice
 
 - type: entity
-  name: tofu bread
+  name: 豆腐面包 | tofu bread
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadTofu
-  description: Like meatbread but for vegetarians. Brag to your crewmates about how much better it is.
+  description: 像肉面包，但是给素食者的。向你的船员吹嘘它有多好。 | Like meatbread but for vegetarians. Brag to your crewmates about how much better it is.
   components:
   - type: FlavorProfile
     flavors:
-      - tofu
-      - bread
+    - tofu
+    - bread
   - type: Sprite
     layers:
     - state: tofu
@@ -532,15 +532,15 @@
 # Tastes like bread, tofu.
 
 - type: entity
-  name: tofu bread slice
+  name: 豆腐面包片 | tofu bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadTofuSlice
-  description: A slice of delicious tofu bread.
+  description: 一片美味的豆腐面包。 | A slice of delicious tofu bread.
   components:
   - type: FlavorProfile
     flavors:
-      - tofu
-      - bread
+    - tofu
+    - bread
   - type: Sprite
     layers:
     - state: tofu-slice
@@ -553,15 +553,15 @@
         Quantity: 1.25
 
 - type: entity
-  name: xeno meat bread
+  name: 异星肉面包 | xeno meat bread
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadMeatXeno
-  description: A fitting, and filling, end to xeno scum.
+  description: 对异星渣滓而言，这是一个恰当而饱腹的结局。 | A fitting, and filling, end to xeno scum.
   components:
   - type: FlavorProfile
     flavors:
-      - acid
-      - bread
+    - acid
+    - bread
   - type: Sprite
     layers:
     - state: xenomeat
@@ -585,15 +585,15 @@
 # Tastes like bread, acid.
 
 - type: entity
-  name: xeno meat bread slice
+  name: 异星肉面包片 | xeno meat bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadMeatXenoSlice
-  description: A slice of xeno scum.
+  description: 一片异星渣滓。 | A slice of xeno scum.
   components:
   - type: FlavorProfile
     flavors:
-      - acid
-      - bread
+    - acid
+    - bread
   - type: Sprite
     layers:
     - state: xenomeat-slice
@@ -617,8 +617,8 @@
 - type: entity
   parent: [FoodBreadBase, BaseSlicingRefinableFood]
   id: FoodBreadBaguette
-  name: baguette
-  description: Bon appétit!
+  name: 法棍 | baguette
+  description: 祝你好胃口！ | Bon appétit!
   components:
   - type: Sprite
     state: baguette
@@ -638,7 +638,7 @@
       - ReagentId: Blackpepper
         Quantity: 1
   - type: Clothing
-    slots: [ BELT ]
+    slots: [BELT]
     equippedPrefix: baguette
     quickEquip: false
   - type: Item
@@ -660,7 +660,7 @@
 - type: entity
   parent: [FoodBreadBaguette, BaseSlicingRefinableFood]
   id: FoodBreadBaguetteCotton
-  name: cotton baguette
+  name: 棉质法棍包 | cotton baguette
   description: Bon azzétit!
   components:
   - type: Sprite
@@ -699,10 +699,10 @@
         Quantity: 1
 
 - type: entity
-  name: crostini
+  name: 克罗斯蒂尼 | crostini
   parent: FoodBreadSliceBase
   id: FoodBreadBaguetteSlice
-  description: Bon ap-pétite!
+  description: 祝你好胃口！ | Bon ap-pétite!
   components:
   - type: Sprite
     state: crostini
@@ -721,8 +721,8 @@
 - type: entity
   parent: FoodBreadBaguetteSlice
   id: FoodBreadBaguetteCottonSlice
-  name: cotton crostini
-  description: Bon az-zétite!
+  name: 棉质烤面包片 | cotton crostini
+  description: 祝您用餐愉快！ | Bon az-zétite!
   components:
   - type: Sprite
     state: crostini-cotton
@@ -746,15 +746,15 @@
         Quantity: 0.1
 
 - type: entity
-  name: buttered toast
+  name: 黄油吐司 | buttered toast
   parent: FoodBreadSliceBase
   id: FoodBreadButteredToast
-  description: Crunchy.
+  description: 酥脆。 | Crunchy.
   components:
   - type: FlavorProfile
     flavors:
-      - butter
-      - bread
+    - butter
+    - bread
   - type: Sprite
     state: buttered-toast
   - type: Solution
@@ -767,15 +767,15 @@
 # Tastes like bread, butter.
 
 - type: entity
-  name: french toast
+  name: 法式吐司 | french toast
   parent: [SolutionTiny, FoodBreadSliceBase]
   id: FoodBreadFrenchToast
-  description: A slice of bread soaked in a beaten egg mixture.
+  description: 一片浸泡在打散的蛋液中的面包。 | A slice of bread soaked in a beaten egg mixture.
   components:
   - type: FlavorProfile
     flavors:
-      - syrupy
-      - bread
+    - syrupy
+    - bread
   - type: Sprite
     state: french-toast
   - type: Solution
@@ -792,15 +792,15 @@
 # Tastes like bread, butter.
 
 - type: entity
-  name: garlic bread
+  name: 蒜香面包 | garlic bread
   parent: [SolutionTiny, FoodBreadSliceBase]
   id: FoodBreadGarlicSlice
-  description: Alas, it is limited.
+  description: 唉，它是有限的。 | Alas, it is limited.
   components:
   - type: FlavorProfile
     flavors:
-      - bread
-      - garlic
+    - bread
+    - garlic
   - type: Sprite
     layers:
     - state: garlic-slice
@@ -818,15 +818,15 @@
 # Tastes like garlic, Italy.
 
 - type: entity
-  name: jelly toast
+  name: 果冻吐司 | jelly toast
   parent: [SolutionTiny, FoodBreadSliceBase]
   id: FoodBreadJellySlice
-  description: As if science are gonna give up their slimes for toast!
+  description: 好像科学会为了吐司放弃他们的史莱姆似的！ | As if science are gonna give up their slimes for toast!
   components:
   - type: FlavorProfile
     flavors:
-      - bread
-      - slimy
+    - bread
+    - slimy
   - type: Sprite
     layers:
     - state: jelly-toast
@@ -840,10 +840,10 @@
 # Tastes like garlic, Italy.
 
 - type: entity
-  name: moldy bread slice
+  name: 发霉的面包片 | moldy bread slice
   parent: FoodBreadSliceBase
   id: FoodBreadMoldySlice
-  description: Entire stations have been ripped apart over arguing whether this is still good to eat.
+  description: 整个站点因为争论这是否还能吃而被撕成碎片。 | Entire stations have been ripped apart over arguing whether this is still good to eat.
   components:
   - type: Sprite
     layers:
@@ -861,10 +861,10 @@
 # Tastes like decaying fungus.
 
 - type: entity
-  name: two slice
+  name: 两片 | two slice
   parent: [SolutionTiny, FoodBreadSliceBase]
   id: FoodBreadTwoSlice
-  description: Classy.
+  description: 优雅。 | Classy.
   components:
   - type: Sprite
     layers:
@@ -879,10 +879,10 @@
 # Tastes like decaying fungus.
 
 - type: entity
-  name: bread dog
+  name: 面包狗 | bread dog
   id: MobBreadDog
   parent: [SolutionLarge, FoodBase, BaseSlicingRefinableFood]
-  description: It's a bread. It's a dog. It's a... breaddog?
+  description: 这是面包。这是狗。这是……面包狗？ | It's a bread. It's a dog. It's a... breaddog?
   components:
   - type: FlavorProfile
     flavors:
@@ -913,8 +913,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 50
         mask:
@@ -944,8 +943,8 @@
     speechSounds: Dog
     speechVerb: SmallMob
   - type: MovementSpeedModifier
-    baseWalkSpeed : 5
-    baseSprintSpeed : 3
+    baseWalkSpeed: 5
+    baseSprintSpeed: 3
   - type: Tag
     tags:
     - VimPilot
@@ -970,8 +969,8 @@
 - type: entity
   parent: [SolutionVeryTiny, FoodBreadSliceBase]
   id: FoodBreadNutriBatard
-  name: nutri-bâtard
-  description: bon 'pétite!
+  name: 营养杂种 | nutri-bâtard
+  description: 好的，小宝贝！ | bon 'pétite!
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/Baked/bread.rsi
@@ -993,8 +992,8 @@
 - type: entity
   parent: FoodBreadNutriBatard
   id: FoodBreadCottonNutriBatard
-  name: cotton nutri-bâtard
-  description: bon 'pétite!
+  name: 棉质营养混血儿 | cotton nutri-bâtard
+  description: 好的，小可爱！ | bon 'pétite!
   components:
   - type: Edible
     requiresSpecialDigestion: true

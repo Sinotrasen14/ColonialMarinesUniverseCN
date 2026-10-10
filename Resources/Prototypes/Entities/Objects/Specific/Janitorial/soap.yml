@@ -4,7 +4,7 @@
   abstract: true
   parent: [SolutionSoapBase, BaseItem]
   id: BaseSoap
-  name: soap
+  name: 肥皂 | soap
   components:
   - type: Tag
     tags:
@@ -29,15 +29,13 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.3,0.4,0.3"
         layer:
         - SlipLayer
         hard: false
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.3,0.4,0.3"
         density: 10
         mask:
@@ -73,7 +71,7 @@
 - type: entity
   parent: BaseSoap
   id: Soap
-  description: A cheap bar of soap. Doesn't smell.
+  description: 一块便宜的肥皂。没有气味。 | A cheap bar of soap. Doesn't smell.
   components:
   - type: Sprite
     layers:
@@ -90,7 +88,7 @@
 - type: entity
   parent: Soap
   id: SoapNT
-  description: A Nanotrasen brand bar of soap. Smells of plasma.
+  description: 纳米传森牌肥皂。闻起来有等离子体的味道。 | A Nanotrasen brand bar of soap. Smells of plasma.
   components:
   - type: Sprite
     layers:
@@ -113,7 +111,7 @@
 - type: entity
   parent: Soap
   id: SoapDeluxe
-  description: A deluxe Waffle Co. brand bar of soap. Smells of strawberries.
+  description: 一块豪华的Waffle Co.品牌肥皂。闻起来有草莓味。 | A deluxe Waffle Co. brand bar of soap. Smells of strawberries.
   components:
   - type: Sprite
     layers:
@@ -129,7 +127,7 @@
 - type: entity
   parent: [Soap, BaseSyndicateContraband]
   id: SoapSyndie
-  description: An untrustworthy bar of soap. Smells of fear.
+  description: 一块不可信的肥皂。闻起来有恐惧的味道。 | An untrustworthy bar of soap. Smells of fear.
   components:
   - type: Sprite
     layers:
@@ -146,8 +144,8 @@
     heldPrefix: syndie
   - type: FlavorProfile
     flavors:
-      - clean
-      - punishment
+    - clean
+    - punishment
   - type: CleansForensics
     cleanDelay: 8.0
   - type: Residue
@@ -158,9 +156,9 @@
 - type: entity
   parent: BaseSoap
   id: SoapletSyndie
-  name: soaplet
-  description: A tiny piece of syndicate soap.
-  categories: [ HideSpawnMenu ]
+  name: 小块肥皂 | soaplet
+  description: 一小块辛迪加肥皂。 | A tiny piece of syndicate soap.
+  categories: [HideSpawnMenu]
   components:
   - type: Solution
     id: soap
@@ -185,15 +183,13 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.08,-0.06,0.08,0.06"
         layer:
         - SlipLayer
         hard: false
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.08,-0.06,0.08,0.06"
         density: 1
         mask:
@@ -213,7 +209,7 @@
 - type: entity
   parent: Soap
   id: SoapHomemade
-  description: A homemade bar of soap. Smells of... well....
+  description: 一块自制肥皂。闻起来……嗯…… | A homemade bar of soap. Smells of... well....
   components:
   - type: Sprite
     layers:
@@ -225,16 +221,16 @@
     heldPrefix: gibs
   - type: FlavorProfile
     flavors:
-      - clean
-      - meaty
+    - clean
+    - meaty
   - type: Residue
     residueColor: residue-red
 
 - type: entity
   parent: [SolutionLarge, BaseSoap]
   id: SoapOmega
-  name: omega soap
-  description: The most advanced soap known to mankind. Smells of bluespace.
+  name: 欧米伽肥皂 | omega soap
+  description: 人类已知最先进的肥皂。闻起来像蓝空间。 | The most advanced soap known to mankind. Smells of bluespace.
   components:
   - type: Sprite
     layers:

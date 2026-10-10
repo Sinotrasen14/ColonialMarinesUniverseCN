@@ -1,6 +1,6 @@
 - type: entity
-  name: handcuffs
-  description: Used to detain criminals and other assholes.
+  name: 手铐 | handcuffs
+  description: 用来拘留罪犯和其他混蛋。 | Used to detain criminals and other assholes.
   id: Handcuffs
   parent: [BaseItem, BaseSecurityCommandContraband]
   components:
@@ -31,8 +31,8 @@
     delay: 3
 
 - type: entity
-  name: makeshift handcuffs
-  description: Homemade handcuffs crafted from spare cables.
+  name: 简易手铐 | makeshift handcuffs
+  description: 用备用线缆制作的简易手铐。 | Homemade handcuffs crafted from spare cables.
   id: Cablecuffs
   parent: Handcuffs
   components:
@@ -59,19 +59,19 @@
   - type: Item
     inhandVisuals:
       left:
-        - state: inhand-left
-          color: forestgreen
+      - state: inhand-left
+        color: forestgreen
       right:
-        - state: inhand-right
-          color: forestgreen
+      - state: inhand-right
+        color: forestgreen
   - type: Sprite
     sprite: Objects/Misc/cablecuffs.rsi
     state: cuff
     color: forestgreen
 
 - type: entity
-  name: zipties
-  description: Tough single-use plastic zipties, ideal for restraining rowdy prisoners.
+  name: 扎带 | zipties
+  description: 坚固的一次性塑料扎带，非常适合约束不守规矩的囚犯。 | Tough single-use plastic zipties, ideal for restraining rowdy prisoners.
   id: Zipties
   parent: Handcuffs
   components:
@@ -113,8 +113,8 @@
       Plastic: 25
 
 - type: entity
-  name: broken zipties
-  description: These zipties look like they tried to manage the wrong cables.
+  name: 损坏的扎带 | broken zipties
+  description: 这些扎带看起来像是试图管理了不该管理的线缆。 | These zipties look like they tried to manage the wrong cables.
   id: ZiptiesBroken
   parent: BaseHandcuffsBroken
   components:
@@ -123,8 +123,8 @@
     state: cuff-broken
 
 - type: entity
-  name: broken cables
-  description: These cables are broken in several places and don't seem very useful.
+  name: 破损的电缆 | broken cables
+  description: 这些电缆在好几处都破损了，似乎不太有用。 | These cables are broken in several places and don't seem very useful.
   id: CablecuffsBroken
   parent: BaseHandcuffsBroken
   components:
@@ -135,17 +135,17 @@
   - type: Item
     inhandVisuals:
       left:
-        - state: inhand-left
-          color: forestgreen
+      - state: inhand-left
+        color: forestgreen
       right:
-        - state: inhand-right
-          color: forestgreen
+      - state: inhand-right
+        color: forestgreen
 
 - type: entity
   parent: Handcuffs
   id: ClothingOuterStraightjacket
-  name: straitjacket
-  description: Used to restrain those who may cause harm to themselves or others.
+  name: 拘束衣 | straitjacket
+  description: 用于约束可能对自己或他人造成伤害的人。 | Used to restrain those who may cause harm to themselves or others.
   components:
   - type: Item
     size: Normal

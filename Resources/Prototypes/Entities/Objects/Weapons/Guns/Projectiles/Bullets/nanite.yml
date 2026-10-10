@@ -1,6 +1,6 @@
 - type: entity
   id: MuzzleFlashEffectNanite
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TimedDespawn
     lifetime: 0.4
@@ -8,10 +8,10 @@
     drawdepth: BelowMobs
     offset: -.25, 0
     layers:
-     - shader: unshaded
-       map: ["enum.EffectLayers.Unshaded"]
-       sprite: Objects/Weapons/Guns/Projectiles/nanite_crystal.rsi
-       state: muzzle_nanite
+    - shader: unshaded
+      map: ["enum.EffectLayers.Unshaded"]
+      sprite: Objects/Weapons/Guns/Projectiles/nanite_crystal.rsi
+      state: muzzle_nanite
   - type: EffectVisuals
   - type: Tag
     tags:
@@ -20,17 +20,17 @@
 
 - type: entity
   id: BulletImpactEffectNanite
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TimedDespawn
     lifetime: 0.25
   - type: Sprite
     drawdepth: Effects
     layers:
-     - shader: unshaded
-       map: ["enum.EffectLayers.Unshaded"]
-       sprite: Objects/Weapons/Guns/Projectiles/nanite_crystal.rsi
-       state: impact_nanite
+    - shader: unshaded
+      map: ["enum.EffectLayers.Unshaded"]
+      sprite: Objects/Weapons/Guns/Projectiles/nanite_crystal.rsi
+      state: impact_nanite
   - type: EffectVisuals
   - type: Tag
     tags:
@@ -39,8 +39,8 @@
 - type: entity
   parent: BaseBullet
   id: BulletNanite
-  categories: [ HideSpawnMenu ]
-  name: nanite crystal
+  categories: [HideSpawnMenu]
+  name: 纳米晶体 | nanite crystal
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/nanite_crystal.rsi

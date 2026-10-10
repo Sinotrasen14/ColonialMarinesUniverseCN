@@ -1,6 +1,6 @@
 - type: entity
-  name: explosive grenade
-  description: Grenade that creates a small but devastating explosion.
+  name: 高爆手雷 | explosive grenade
+  description: 制造小型但毁灭性爆炸的手雷。 | Grenade that creates a small but devastating explosion.
   parent: [VolatileGrenadeBase, TimerGrenadeBase, BaseSyndicateContraband]
   id: ExGrenade
   components:
@@ -22,9 +22,9 @@
     beepInterval: 2 # 2 beeps total (at 0 and 2)
 
 - type: entity
-  name: flashbang
+  name: 闪光弹 | flashbang
   description: Eeeeeeeeeeeeeeeeeeeeee.
-  parent: [ FragileGrenadeBase, TimerGrenadeBase, BaseSecurityContraband ]
+  parent: [FragileGrenadeBase, TimerGrenadeBase, BaseSecurityContraband]
   id: GrenadeFlashBang
   components:
   - type: Sprite
@@ -62,23 +62,23 @@
 
 - type: entity
   id: GrenadeFlashEffect
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: PointLight
-      enabled: true
-      radius: 5
-      energy: 8
-      netsync: false
-    - type: LightFade
-      duration: 0.5
-    - type: TimedDespawn
-      lifetime: 0.5
+  - type: PointLight
+    enabled: true
+    radius: 5
+    energy: 8
+    netsync: false
+  - type: LightFade
+    duration: 0.5
+  - type: TimedDespawn
+    lifetime: 0.5
 
 # Tuned to be a general bomb that deals equipment damage without explicitly gibbing, however it will still gladly instakill anyone that mishandles it.
 # One of the few syndie bombs that should punch holes in space.
 - type: entity
-  name: syndicate minibomb
-  description: A syndicate-manufactured explosive used to stow destruction and cause chaos.
+  name: 辛迪加迷你炸弹 | syndicate minibomb
+  description: 辛迪加制造的爆炸物，用于制造破坏并引发混乱。 | A syndicate-manufactured explosive used to stow destruction and cause chaos.
   parent: [VolatileGrenadeBase, TimerGrenadeBase, BaseSyndicateContraband]
   id: SyndieMiniBomb
   components:
@@ -106,11 +106,11 @@
     price: 2000
 
 - type: entity
-  name: self destruct
-  description: Go out on your own terms!
+  name: 自毁 | self destruct
+  description: 按你自己的方式退场！ | Go out on your own terms!
   parent: TimerGrenadeBase
   id: SelfDestructSeq
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: ExplodeOnTrigger
     keysIn:
@@ -144,7 +144,8 @@
     speed: 360
   - type: LightBehaviour
     behaviours:
-    - !type:FadeBehaviour # have the radius start small and get larger as it starts to burn
+                          # have the radius start small and get larger as it starts to burn
+    - !type:FadeBehaviour
       id: activate
       maxDuration: 5
       startValue: 1
@@ -152,10 +153,10 @@
 
 
 - type: entity
-  parent: [ FragileGrenadeBase, TimerGrenadeBase, BaseSyndicateContraband ]
+  parent: [FragileGrenadeBase, TimerGrenadeBase, BaseSyndicateContraband]
   id: SingularityGrenade
-  name: singularity grenade
-  description: Grenade that simulates the power of a singularity, pulling things in a heap.
+  name: 奇点手雷 | singularity grenade
+  description: 模拟奇点力量的榴弹，将物体拉成一堆。 | Grenade that simulates the power of a singularity, pulling things in a heap.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/singularitygrenade.rsi
@@ -187,45 +188,45 @@
     - timer
     triggerDelay: 10.45
     components:
-      - type: AmbientSound
-        enabled: true
-        volume: -5
-        range: 14
-        sound:
-          path: /Audio/Effects/Grenades/Supermatter/supermatter_loop.ogg
-      - type: GravityWell
-        maxRange: 5
-        minRange: 0.25
-        baseRadialAcceleration: 25
-        baseTangentialAcceleration: 5
-        gravPulsePeriod: 0.03
-      - type: SingularityDistortion
-        intensity: 150
-        falloffPower: 1.5
-      - type: PointLight
-        enabled: true
-        color: "#ffaa44"
-        energy: 8
-        radius: 6
-        softness: 1
-        offset: "0, 0"
-      - type: EmitSoundOnTrigger
-        sound:
-          path: /Audio/Effects/Grenades/Supermatter/supermatter_end.ogg
-          params:
-            volume: 5
-        positional: true
-        keysIn:
-        - stageTwo
-      - type: DeleteOnTrigger
-        keysIn:
-        - stageTwo
+    - type: AmbientSound
+      enabled: true
+      volume: -5
+      range: 14
+      sound:
+        path: /Audio/Effects/Grenades/Supermatter/supermatter_loop.ogg
+    - type: GravityWell
+      maxRange: 5
+      minRange: 0.25
+      baseRadialAcceleration: 25
+      baseTangentialAcceleration: 5
+      gravPulsePeriod: 0.03
+    - type: SingularityDistortion
+      intensity: 150
+      falloffPower: 1.5
+    - type: PointLight
+      enabled: true
+      color: "#ffaa44"
+      energy: 8
+      radius: 6
+      softness: 1
+      offset: "0, 0"
+    - type: EmitSoundOnTrigger
+      sound:
+        path: /Audio/Effects/Grenades/Supermatter/supermatter_end.ogg
+        params:
+          volume: 5
+      positional: true
+      keysIn:
+      - stageTwo
+    - type: DeleteOnTrigger
+      keysIn:
+      - stageTwo
   - type: StaticPrice
     price: 1000
 
 - type: entity
-  name: whitehole grenade
-  description: Grenade that repulses everything around for some time.
+  name: 白洞手雷 | whitehole grenade
+  description: 能在一段时间内排斥周围一切的手雷。 | Grenade that repulses everything around for some time.
   parent: SingularityGrenade
   id: WhiteholeGrenade
   components:
@@ -248,45 +249,45 @@
   - type: TwoStageTrigger
     triggerDelay: 11.14
     components:
-      - type: AmbientSound
-        enabled: true
-        volume: -5
-        range: 14
-        sound:
-          path: /Audio/Effects/Grenades/Supermatter/whitehole_loop.ogg
-      - type: GravityWell
-        maxRange: 7
-        baseRadialAcceleration: -10
-        baseTangentialAcceleration: -1
-        gravPulsePeriod: 0.03
-      - type: SingularityDistortion
-        intensity: -200
-        falloffPower: 1.5
-      - type: PointLight
-        enabled: true
-        color: "#ffffff"
-        energy: 8
-        radius: 6
-        softness: 1
-        offset: "0, 0"
-      - type: EmitSoundOnTrigger
-        keysIn:
-        - stageTwo
-        sound:
-          path: /Audio/Effects/Grenades/Supermatter/supermatter_end.ogg
-          params:
-            volume: 15
-        positional: true
-      - type: DeleteOnTrigger
-        keysIn:
-        - stageTwo
+    - type: AmbientSound
+      enabled: true
+      volume: -5
+      range: 14
+      sound:
+        path: /Audio/Effects/Grenades/Supermatter/whitehole_loop.ogg
+    - type: GravityWell
+      maxRange: 7
+      baseRadialAcceleration: -10
+      baseTangentialAcceleration: -1
+      gravPulsePeriod: 0.03
+    - type: SingularityDistortion
+      intensity: -200
+      falloffPower: 1.5
+    - type: PointLight
+      enabled: true
+      color: "#ffffff"
+      energy: 8
+      radius: 6
+      softness: 1
+      offset: "0, 0"
+    - type: EmitSoundOnTrigger
+      keysIn:
+      - stageTwo
+      sound:
+        path: /Audio/Effects/Grenades/Supermatter/supermatter_end.ogg
+        params:
+          volume: 15
+      positional: true
+    - type: DeleteOnTrigger
+      keysIn:
+      - stageTwo
   - type: StaticPrice
     price: 1000
 
 - type: entity
-  parent: [ VolatileGrenadeBase, TimerGrenadeBase ]
-  name: the nuclear option
-  description: Please don't throw it, think of the children.
+  parent: [VolatileGrenadeBase, TimerGrenadeBase]
+  name: 核选项 | the nuclear option
+  description: 请不要扔掉它，想想孩子们。 | Please don't throw it, think of the children.
   id: NuclearGrenade
   components:
   - type: Sprite
@@ -307,16 +308,16 @@
       path: /Audio/Effects/countdown.ogg
 
 - type: entity
-  parent: [ BaseItem, BaseItemDestructible ]
+  parent: [BaseItem, BaseItemDestructible]
   id: ModularGrenade
-  name: modular grenade
-  description: A grenade casing. Requires a trigger and a payload.
+  name: 模块化手榴弹 | modular grenade
+  description: 一个手榴弹外壳。需要安装引信和装药。 | A grenade casing. Requires a trigger and a payload.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/modular.rsi
     layers:
     - state: empty
-      map: [ "enum.ConstructionVisuals.Layer" ]
+      map: ["enum.ConstructionVisuals.Layer"]
   - type: Item
     size: Small
   - type: Tag
@@ -328,8 +329,7 @@
     node: emptyCase
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:TriggerBehavior
@@ -338,21 +338,21 @@
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          emptyCase: { state: empty }
-          wiredCase: { state: wired }
-          caseWithTrigger: { state: no-payload }
-          caseWithPayload: { state: no-trigger }
-          grenade: { state: complete }
+          emptyCase: {state: empty}
+          wiredCase: {state: wired}
+          caseWithTrigger: {state: no-payload}
+          caseWithPayload: {state: no-trigger}
+          grenade: {state: complete}
       enum.Trigger.TriggerVisuals.VisualState:
         enum.ConstructionVisuals.Layer:
-          Primed: { state: primed }
+          Primed: {state: primed}
           # Unprimed: <Use state determined by enum.ConstructionVisuals.Layer>
   - type: StaticPrice
     price: 75
 
 - type: entity
-  name: EMP grenade
-  description: A grenade designed to wreak havoc on electronic systems.
+  name: 电磁脉冲手雷 | EMP grenade
+  description: 一种旨在对电子系统造成严重破坏的手雷。 | A grenade designed to wreak havoc on electronic systems.
   parent: [ImpactGrenadeBase, BaseSyndicateContraband]
   id: EmpGrenade
   components:
@@ -370,8 +370,8 @@
     price: 666 # 2000 for 3, I love fractions
 
 - type: entity
-  name: holy hand grenade
-  description: O Lord, bless this thy hand grenade, that with it thou mayst blow thine enemies to tiny bits, in thy mercy.
+  name: 神圣手榴弹 | holy hand grenade
+  description: 主啊，请赐福于这枚手榴弹，让你以慈悲之心，用它把敌人炸成碎片。 | O Lord, bless this thy hand grenade, that with it thou mayst blow thine enemies to tiny bits, in thy mercy.
   parent: [TimerGrenadeBase, BaseSyndicateContraband]
   id: HolyHandGrenade
   components:
@@ -401,8 +401,8 @@
 # Non-explosive "dummy" grenades to use as a distraction.
 
 - type: entity
-  name: trick grenade
-  description: All the grenade without any of the boom.
+  name: 诡雷 | trick grenade
+  description: 所有手雷的乐趣，没有爆炸的危险。 | All the grenade without any of the boom.
   parent: TimerGrenadeBase
   id: GrenadeDummy
   components:
@@ -428,8 +428,8 @@
       path: /Audio/Effects/countdown.ogg
 
 - type: entity
-  name: syndicate trickybomb
-  description: A syndicate-manufactured explosive used to make an excellent distraction.
+  name: 辛迪加诡雷 | syndicate trickybomb
+  description: 辛迪加制造的炸药，用来制造绝佳的干扰。 | A syndicate-manufactured explosive used to make an excellent distraction.
   parent: [GrenadeDummy, BaseSyndicateContraband]
   id: SyndieTrickyBomb
   components:

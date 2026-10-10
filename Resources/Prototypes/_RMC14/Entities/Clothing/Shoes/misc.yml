@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingShoesBase
   id: RMCShoesLaceup
-  name: laceup shoes
-  description: The height of fashion, and they're pre-polished!
+  name: 系带鞋
+  description: 时尚的巅峰，而且它们已经预先擦亮！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/laceup.rsi
@@ -14,7 +14,7 @@
   - type: ItemSlots
     slots:
       item:
-        name: rmc-gun
+        name: rmc枪
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         whitelist:
@@ -28,8 +28,8 @@
 - type: entity
   parent: RMCShoesLaceup
   id: RMCShoesLaceupDress
-  name: dress shoes
-  description: Pre-polished fancy dress shoes. You can see your reflection in them.
+  name: 正装鞋
+  description: 预先抛光过的华丽正装鞋。你可以在鞋面上看到自己的倒影。
   components:
   - type: NoSlip
   # - siemensCoefficent: 0.6 TODO RMC14: Siemens coefficient
@@ -46,8 +46,8 @@
 - type: entity
   parent: RMCShoesLaceup
   id: RMCShoesFancyLeather
-  name: fancy leather shoes
-  description: A fancy pair of leather shoes.
+  name: 精致皮鞋
+  description: 一双精致的皮鞋。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/fancy_leather.rsi
@@ -58,8 +58,8 @@
 - type: entity
   parent: CMBootsBlack
   id: RMCShoesJackboots
-  name: jackboots
-  description: Security combat boots for combat scenarios or combat situations. All combat, all the time.
+  name: 长筒军靴
+  description: 安保作战靴，适用于作战场景或作战情况。全程作战，时刻作战。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/jackboots.rsi
@@ -75,15 +75,15 @@
 - type: entity
   parent: RMCShoesOrange
   id: RMCShoesPrisoner
-  name: prisoner shoes
-  description: A pair of orange shoes worn by prisoners as directed by Marine Law.
+  name: 囚犯鞋
+  description: 囚犯依《海军陆战队法》规定所穿的一双橙色鞋子。
 
 # Galoshes
 - type: entity
   parent: RMCShoesLaceup
   id: RMCShoesGaloshes
-  name: galoshes
-  description: A pair of rubber boots.
+  name: 橡胶套鞋
+  description: 一双橡胶靴。
   components:
   - type: Sprite
     sprite: Clothing/Shoes/Specific/galoshes.rsi
@@ -94,8 +94,8 @@
 - type: entity
   parent: RMCShoesLaceup
   id: RMCShoesWeYaStompers
-  name: Weyland-Yutani stompers
-  description: A pair of sneakers designed to elicit a morale boosting response within anyone that witnesses them.
+  name: 维兰德-汤谷踏步鞋
+  description: 一双旨在让任何目睹它们的人产生鼓舞士气反应的运动鞋。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Misc/stompers.rsi
@@ -106,8 +106,8 @@
 - type: entity
   parent: RMCShoesLaceup
   id: RMCShoesSandals
-  name: sandals
-  description: A pair of rather plain, wooden sandals.
+  name: 凉鞋
+  description: 一双相当朴素的木制凉鞋。
   suffix: RMC
   components:
   - type: Sprite
@@ -119,8 +119,8 @@
 - type: entity
   parent: RMCShoesLaceup
   id: RMCShoesSnow
-  name: snow boots
-  description: When your feet are as cold as your heart.
+  name: 雪地靴
+  description: 当你的双脚和你的心一样冰冷时。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/swat.rsi

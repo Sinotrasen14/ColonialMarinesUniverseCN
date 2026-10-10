@@ -7,18 +7,18 @@
   # - Giving this to traitors makes them overlap with changelings or paradox clones too much.
   # - It completely makes the voice mask redundant.
   # - Unlike when disguising yourself as someone else, there is no way to get caught.
-  name: DNA injector
-  description: Can be used to take a DNA sample from someone and inject it into another person, turning them into a clone of the original.
+  name: DNA注射器 | DNA injector
+  description: 可用于从某人身上提取DNA样本并注射到另一个人体内，将其变成原主的克隆体。 | Can be used to take a DNA sample from someone and inject it into another person, turning them into a clone of the original.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/implanter.rsi
     state: implanter0
     layers:
     - state: implanter0
-      map: [ "injector" ]
+      map: ["injector"]
       visible: true
     - state: implanter1
-      map: [ "fillState" ]
+      map: ["fillState"]
       visible: false
   - type: Item
     sprite: Objects/Specific/Medical/implanter.rsi

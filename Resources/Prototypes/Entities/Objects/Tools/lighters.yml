@@ -2,7 +2,7 @@
   abstract: true
   parent: [SolutionWelder, BaseItem]
   id: BaseLighter
-  name: basic lighter
+  name: 基本打火机 | basic lighter
   components:
   - type: IgnitionSource
     ignited: false
@@ -67,34 +67,34 @@
 - type: entity
   parent: [SolutionLighter, BaseLighter]
   id: Lighter
-  name: basic lighter
-  description: A simple plastic cigarette lighter.
+  name: 基本打火机 | basic lighter
+  description: 一个简单的塑料打火机。 | A simple plastic cigarette lighter.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/lighters.rsi
     layers:
     - state: icon_map
     - state: cheap_icon_base
-      map: [ "skin" ]
+      map: ["skin"]
     - state: basic_icon_top
     - state: lighter_flame
       visible: false
       shader: unshaded
-      map: [ "flame" ]
+      map: ["flame"]
   - type: RandomSprite
     available:
-      - skin:
-          basic_icon_base-1: ""
-          basic_icon_base-2: ""
-          basic_icon_base-3: ""
-          basic_icon_base-4: ""
-          basic_icon_base-5: ""
-          basic_icon_base-6: ""
-          basic_icon_base-7: ""
-          basic_icon_base-8: ""
-          basic_icon_base-9: ""
-          basic_icon_base-10: ""
-          basic_icon_base-11: ""
+    - skin:
+        basic_icon_base-1: ""
+        basic_icon_base-2: ""
+        basic_icon_base-3: ""
+        basic_icon_base-4: ""
+        basic_icon_base-5: ""
+        basic_icon_base-6: ""
+        basic_icon_base-7: ""
+        basic_icon_base-8: ""
+        basic_icon_base-9: ""
+        basic_icon_base-10: ""
+        basic_icon_base-11: ""
   - type: ToggleableVisuals
     spriteLayer: flame
     inhandVisuals:
@@ -110,33 +110,33 @@
 - type: entity
   parent: Lighter
   id: CheapLighter
-  name: cheap lighter
-  description: "A dangerously inexpensive plastic lighter. Don't burn your thumb!"
+  name: 廉价打火机 | cheap lighter
+  description: "一个危险廉价的塑料打火机。别烧到你的拇指！ | A dangerously inexpensive plastic lighter. Don't burn your thumb!"
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/lighters.rsi
     layers:
     - state: icon_map
     - state: cheap_icon_base
-      map: [ "skin" ]
+      map: ["skin"]
     - state: cheap_icon_top
     - state: lighter_flame
       visible: false
       shader: unshaded
-      map: [ "flame" ]
+      map: ["flame"]
   - type: RandomSprite
     available:
-      - skin:
-          cheap_icon_base: Rainbow
+    - skin:
+        cheap_icon_base: Rainbow
   - type: Welder
     fuelConsumption: 0.02
     fuelLitCost: 0.2
 
 - type: entity
-  parent: [ SolutionLighter, BaseLighter ]
+  parent: [SolutionLighter, BaseLighter]
   id: DiscountDanLighter
-  name: Discount Dan's lighter
-  description: The worst lighter ever produced. Lighter burn is inevitable, do not refuel while lit.
+  name: 折扣丹的打火机 | Discount Dan's lighter
+  description: 史上最差的打火机。打火机烧起来是不可避免的，点燃时请勿加油。 | The worst lighter ever produced. Lighter burn is inevitable, do not refuel while lit.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/lighters.rsi
@@ -147,7 +147,7 @@
     - state: lighter_flame
       visible: false
       shader: unshaded
-      map: [ "flame" ]
+      map: ["flame"]
   - type: Welder # the single worst lighter invented by mankind
     fuelConsumption: 0.4
     fuelLitCost: 0.2
@@ -193,29 +193,29 @@
   - type: Sprite
     layers:
     - state: icon
-      map: [ "base" ]
+      map: ["base"]
     - state: top
-      map: [ "top" ]
+      map: ["top"]
       visible: false
     - state: open
-      map: [ "open" ]
+      map: ["open"]
       visible: false
     - state: flame
-      map: [ "flame" ]
+      map: ["flame"]
       visible: false
       shader: unshaded
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
         open:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         top:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         base:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
   - type: ToggleableVisuals
     spriteLayer: flame
     inhandVisuals:
@@ -231,8 +231,8 @@
 - type: entity
   parent: BaseBrandedLighter
   id: FlippoLighter
-  name: flippo lighter
-  description: A rugged metal lighter that lasts quite a while.
+  name: 翻盖打火机 | flippo lighter
+  description: 一个坚固的金属打火机，能用上很久。 | A rugged metal lighter that lasts quite a while.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/lighters.rsi
@@ -264,8 +264,8 @@
 - type: entity
   parent: FlippoLighter
   id: FlippoEngravedLighter
-  name: flippo engraved lighter
-  description: A rugged golden lighter that lasts quite a while. Engravings serve no tactical advantage whatsoever.
+  name: flippo雕刻打火机 | flippo engraved lighter
+  description: 一个坚固的金色打火机，能用上很久。雕刻没有任何战术优势。 | A rugged golden lighter that lasts quite a while. Engravings serve no tactical advantage whatsoever.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/lighters.rsi
@@ -288,8 +288,8 @@
 - type: entity
   parent: [BaseBrandedLighter, BaseSyndicateContraband]
   id: SyndicateFlippo
-  name: Blood-red flippo
-  description: "A 'Valid' choice in lighters. Contains no copper."
+  name: 血红色的翻盖打火机 | Blood-red flippo
+  description: "打火机中的“明智”之选。不含铜。 | A 'Valid' choice in lighters. Contains no copper."
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/syndielighter.rsi
@@ -301,8 +301,8 @@
 - type: entity
   parent: [BaseBrandedLighter, BaseSyndicateContraband]
   id: CybersunFlippo
-  name: CyberSun Flippo
-  description: A sleek black and magenta flippo lighter, bearing the logo and iconography of CyberSun Industries.
+  name: 赛博太阳翻盖打火机 | CyberSun Flippo
+  description: 一款时尚的黑色与洋红色翻盖打火机，带有赛博太阳工业的标志和图案。 | A sleek black and magenta flippo lighter, bearing the logo and iconography of CyberSun Industries.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/cybersun.rsi
@@ -314,8 +314,8 @@
 - type: entity
   parent: [BaseBrandedLighter, BaseSyndicateContraband]
   id: InterdyneFlippo
-  name: Interdyne Flippo
-  description: "A deep blue flippo lighter, decorated with the logo of Interdyne Pharmaceuticals' 'Gene Clean' clinics. Become the master of your own cigarette."
+  name: 英特戴恩翻盖打火机 | Interdyne Flippo
+  description: "一个深蓝色的翻盖打火机，上面装饰着英特戴恩制药公司“基因净化”诊所的标志。成为你自己香烟的主人。 | A deep blue flippo lighter, decorated with the logo of Interdyne Pharmaceuticals' 'Gene Clean' clinics. Become the master of your own cigarette."
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/interdyne.rsi
@@ -331,8 +331,8 @@
 - type: entity
   parent: [BaseBrandedLighter]
   id: NanotrasenFlippo
-  name: Nanotrasen Flippo
-  description: A navy blue luxury flippo, generally handed out to loyal heads of staff instead of a pay raise. Fueled with liquid plasma.
+  name: 纳米传思纪念币 | Nanotrasen Flippo
+  description: 一枚海军蓝的豪华甩币，通常发给忠诚的部门主管以代替加薪。以液态等离子为燃料。 | A navy blue luxury flippo, generally handed out to loyal heads of staff instead of a pay raise. Fueled with liquid plasma.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/nanotrasen.rsi
@@ -353,8 +353,8 @@
 - type: entity
   parent: [SolutionToolWelderExperimental, BaseBrandedLighter, BaseCentcommContraband]
   id: CentCommFlippo
-  name: Gilded CentComm Flippo
-  description: An Ornate, jade embossed and gilded flippo frame containing a bluespace powered jet. The latch is secured by a miniature access reader that only responds to CentComm officials. The nicest lighter known to man.
+  name: 镀金中央司令部翻盖打火机 | Gilded CentComm Flippo
+  description: 一个华丽、饰有翡翠浮雕并镀金的翻盖打火机框架，内含一个蓝空间驱动的喷气装置。搭扣由一个微型访问读取器固定，只对中央司令部官员响应。人类已知最精美的打火机。 | An Ornate, jade embossed and gilded flippo frame containing a bluespace powered jet. The latch is secured by a miniature access reader that only responds to CentComm officials. The nicest lighter known to man.
   suffix: DO NOT MAP
   components:
   - type: Sprite
@@ -373,7 +373,7 @@
   - type: Tool
     useSound:
       collection: Welder
-    qualities: [ Welding ]
+    qualities: [Welding]
   - type: Lock
   - type: AccessReader
     access: [["CentralCommand"]]
@@ -381,8 +381,8 @@
 - type: entity
   parent: [BaseBrandedLighter, BaseMajorContraband]
   id: SpiderclanFlippo
-  name: Spider-Clan lighter
-  description: A high tech jet lighter, engineered to function even in deep space. Runs on a tiny microfusion cell.
+  name: 蜘蛛氏族打火机 | Spider-Clan lighter
+  description: 一种高科技喷射打火机，经过精心设计，即使在深空也能正常工作。依靠微小的微聚变电池运行。 | A high tech jet lighter, engineered to function even in deep space. Runs on a tiny microfusion cell.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/spiderclan.rsi
@@ -397,8 +397,8 @@
 - type: entity
   parent: [BaseBrandedLighter, BaseSyndicateContraband]
   id: WaffleCoFlippo
-  name: Waffle Co. flippo
-  description: A robust mass produced lighter. The Waffle Co. logo turns the spark wheel when pushed up, minimising risk of lighter burns for even the most inept user.
+  name: 华夫公司翻盖打火机 | Waffle Co. flippo
+  description: 一款坚固耐用的量产打火机。向上推动时，华夫公司的标志会转动火花轮，即使是最笨拙的用户也能将烫伤风险降到最低。 | A robust mass produced lighter. The Waffle Co. logo turns the spark wheel when pushed up, minimising risk of lighter burns for even the most inept user.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/waffleco.rsi
@@ -410,8 +410,8 @@
 - type: entity
   parent: [BaseBrandedLighter]
   id: HonkCoFlippo
-  name: Honk Co. flippo
-  description: A gag lighter hidden inside of a banana peel. Produced by Honk Co.
+  name: Honk Co. 翻盖打火机 | Honk Co. flippo
+  description: 一个藏在香蕉皮里的整蛊打火机。由Honk Co.生产。 | A gag lighter hidden inside of a banana peel. Produced by Honk Co.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/honkco.rsi
@@ -427,8 +427,8 @@
 - type: entity
   parent: [SolutionLighter, BaseBrandedLighter]
   id: DonkcoLighter
-  name: Donk Co. flippo
-  description: The flippo of choice for the seasoned traitor. An edible novelty lighter made by Donk Co.
+  name: Donk公司打火机 | Donk Co. flippo
+  description: 经验丰富的叛徒的首选打火机。Donk公司制造的可食用新奇打火机。 | The flippo of choice for the seasoned traitor. An edible novelty lighter made by Donk Co.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/donkco.rsi

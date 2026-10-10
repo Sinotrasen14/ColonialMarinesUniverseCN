@@ -1,8 +1,8 @@
 - type: entity
   parent: [BaseItem, BaseXenoborgContraband]
   id: WeaponTileGun
-  name: tile gun
-  description: A strange gun that shoots tiles. Shoot them with the floor!
+  name: 瓷砖枪 | tile gun
+  description: 一把奇怪的枪，能发射瓷砖。用地板射击它们！ | A strange gun that shoots tiles. Shoot them with the floor!
   components:
   - type: Appearance
   - type: Sprite
@@ -60,4 +60,4 @@
   suffix: empty
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:

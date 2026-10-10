@@ -10,10 +10,10 @@
     size: Small
 
 - type: entity
-  name: match stick
+  name: 火柴 | match stick
   parent: BaseItem
   id: Matchstick
-  description: A simple match stick, used for lighting fine smokables.
+  description: 一根简单的火柴，用于点燃上好的烟草。 | A simple match stick, used for lighting fine smokables.
   components:
   - type: Tag
     tags:
@@ -23,7 +23,7 @@
   - type: Sprite
     sprite: Objects/Tools/matches.rsi
     layers:
-      - state: match_unlit
+    - state: match_unlit
   - type: Item
     sprite: Objects/Tools/matches.rsi
     heldPrefix: unlit
@@ -55,15 +55,15 @@
   components:
   - type: Sprite
     layers:
-      - state: match_burnt
+    - state: match_burnt
   - type: Matchstick
     state: Burnt
 
 - type: entity
-  name: match box
-  parent: [ SmallboxItem, BaseBagOpenClose ]
+  name: 火柴盒 | match box
+  parent: [SmallboxItem, BaseBagOpenClose]
   id: Matchbox
-  description: A small box of Almost But Not Quite Plasma Premium Matches.
+  description: 一小盒“近乎但并非完全等离子”高级火柴。 | A small box of Almost But Not Quite Plasma Premium Matches.
   components:
   - type: EmitSoundOnDrop
     sound:
@@ -120,8 +120,8 @@
 - type: entity
   parent: [Matchbox, BaseSyndicateContraband]
   id: GorlexMatchbox
-  name: Gorlex match box
-  description: "A pneumatic match box styled after the Gorlex Marauders' equipment. Contains 24 matches."
+  name: 戈雷克斯火柴盒 | Gorlex match box
+  description: "一种气动火柴盒，仿照戈雷克斯掠夺者的装备风格设计。内含24根火柴。 | A pneumatic match box styled after the Gorlex Marauders' equipment. Contains 24 matches."
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/gorlex.rsi
@@ -138,15 +138,15 @@
   - type: Matchbox
 
 - type: entity
-  name: match stick
+  name: 火柴 | match stick
   parent: [Matchstick, BaseSyndicateContraband]
   id: GorlexMatchstick
-  description: A military grade match stick, used for lighting fine smokables and noncombatants alike.
+  description: 军用级火柴，可用于点燃优质烟草和平民。 | A military grade match stick, used for lighting fine smokables and noncombatants alike.
   components:
   - type: Sprite
     sprite: Objects/Tools/Lighters/gorlexmatch.rsi
     layers:
-      - state: match_unlit
+    - state: match_unlit
   - type: Item
     sprite: Objects/Tools/Lighters/gorlexmatch.rsi
     heldPrefix: unlit

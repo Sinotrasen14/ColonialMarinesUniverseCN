@@ -2,8 +2,8 @@
   parent: BaseItem
   id: BaseScrap
   abstract: true
-  name: scrap
-  description: Worthless junk. You could probably get some materials out of it though.
+  name: 废料 | scrap
+  description: 一文不值的废料。不过你或许能从中回收一些材料。 | Worthless junk. You could probably get some materials out of it though.
   suffix: Scrap
   components:
   - type: Sprite
@@ -17,12 +17,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Tag
     tags:
     - Recyclable
@@ -32,8 +31,8 @@
   parent: BaseStructure
   id: BaseScrapLarge
   abstract: true
-  name: scrap
-  description: Worthless junk. You could probably get some materials out of it though.
+  name: 废料 | scrap
+  description: 一文不值的垃圾。不过你也许能从中回收一些材料。 | Worthless junk. You could probably get some materials out of it though.
   suffix: Scrap
   components:
   - type: InteractionOutline
@@ -43,42 +42,40 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Tag
     tags:
     - Recyclable
   - type: Transform
-    anchored: False
+    anchored: false
     noRot: true
   - type: Physics
     bodyType: Dynamic
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.40,-0.40,0.40,0.40"
         density: 200
         mask:
-          - MachineMask
+        - MachineMask
         layer:
-          - MachineLayer
+        - MachineLayer
 
 - type: entity
   parent: BaseScrap
   id: ScrapSteel
-  name: blasted steel pile
-  description: An pile of steel welded together in extreme heat. It's of a decent size overall; you could probably get a fair amount of sheets out of it.
+  name: 熔炼过的钢堆 | blasted steel pile
+  description: 一堆在高温下焊接在一起的钢。整体尺寸还算不错；你大概能从中得到相当数量的钢板。 | An pile of steel welded together in extreme heat. It's of a decent size overall; you could probably get a fair amount of sheets out of it.
   components:
   - type: Sprite
     layers:
-      - state: metal-1
-        map: [ "base" ]
+    - state: metal-1
+      map: ["base"]
   - type: Item
     size: Large
     shape:
@@ -104,13 +101,13 @@
 - type: entity
   parent: BaseScrap
   id: ScrapGlass
-  name: scrap circuitry
-  description: A huge lump of various circuits, strangely fused together. You could likely extract some materials out of this.
+  name: 废电路 | scrap circuitry
+  description: 一大块各种电路奇怪地熔合在一起。你很可能可以从中提取一些材料。 | A huge lump of various circuits, strangely fused together. You could likely extract some materials out of this.
   components:
   - type: Sprite
     layers:
     - state: glass-1
-      map: [ "base" ]
+      map: ["base"]
   - type: Item
     heldPrefix: "glass"
     size: Large
@@ -138,13 +135,13 @@
 - type: entity
   parent: BaseScrap
   id: ScrapAirlock1
-  name: airlock door
-  description: This used to keep air in. Now it doesn't seem to be doing anything at all.
+  name: 气闸门 | airlock door
+  description: 这曾经用来保持空气。现在它似乎完全不起作用了。 | This used to keep air in. Now it doesn't seem to be doing anything at all.
   components:
   - type: Sprite
     layers:
     - state: junk-airlock-1
-      map: [ "base" ]
+      map: ["base"]
   - type: RandomSprite
     available:
     - base:
@@ -168,8 +165,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapAirlock2
-  name: airlock light
-  description: Serves it right for flashing red all those times.
+  name: 气闸灯 | airlock light
+  description: 闪了那么多次红灯，活该。 | Serves it right for flashing red all those times.
   components:
   - type: Sprite
     layers:
@@ -192,8 +189,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapBucket
-  name: busted bucket
-  description: Dear god...
+  name: 破桶 | busted bucket
+  description: 天哪…… | Dear god...
   components:
   - type: Sprite
     layers:
@@ -212,8 +209,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapCamera
-  name: broken camera
-  description: It might still be watching.
+  name: 坏掉的摄像头 | broken camera
+  description: 它可能还在看着。 | It might still be watching.
   components:
   - type: Sprite
     layers:
@@ -233,8 +230,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapCanister1
-  name: canister handle
-  description: Helpful for holding a canister. Now you just need the actual canister part.
+  name: 罐体把手 | canister handle
+  description: 有助于握住罐体。现在你只需要实际的罐体部分。 | Helpful for holding a canister. Now you just need the actual canister part.
   components:
   - type: Sprite
     layers:
@@ -253,8 +250,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapCanister2
-  name: canister valve
-  description: A valve from a gas canister.
+  name: 罐阀 | canister valve
+  description: 来自气罐的阀门。 | A valve from a gas canister.
   components:
   - type: Sprite
     layers:
@@ -274,8 +271,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapCloset
-  name: closet door
-  description: A blown off door from a maintenance closet. Looks like a nice piece of wall decor.
+  name: 壁橱门 | closet door
+  description: 一扇从维修壁橱上掉下来的门。看起来是件不错的墙面装饰品。 | A blown off door from a maintenance closet. Looks like a nice piece of wall decor.
   components:
   - type: Sprite
     layers:
@@ -298,8 +295,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapFaxMachine
-  name: fax machine
-  description: The unfortunate result of one too many ASCII arts being sent to Central Command.
+  name: 传真机 | fax machine
+  description: 发送给中央司令部的ASCII艺术图太多了，结果不幸如此。 | The unfortunate result of one too many ASCII arts being sent to Central Command.
   components:
   - type: Sprite
     layers:
@@ -321,8 +318,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapFireExtinguisher
-  name: split fire extinguisher
-  description: The large gash down the center makes you worry for the previous user.
+  name: 裂开的灭火器 | split fire extinguisher
+  description: 中间那道巨大的裂口让你不禁为之前的使用者担心。 | The large gash down the center makes you worry for the previous user.
   components:
   - type: Sprite
     layers:
@@ -341,8 +338,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapFirelock1
-  name: firelock door
-  description: At least you still know what it's meant for.
+  name: 防火门 | firelock door
+  description: 至少你还知道它是干什么用的。 | At least you still know what it's meant for.
   components:
   - type: Sprite
     layers:
@@ -365,8 +362,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapFirelock2
-  name: firelock door
-  description: OH! That's where the other half went!
+  name: 火门 | firelock door
+  description: 哦！原来另一半去那儿了！ | OH! That's where the other half went!
   components:
   - type: Sprite
     layers:
@@ -389,7 +386,7 @@
 - type: entity
   parent: BaseScrap
   id: ScrapFirelock3
-  name: firelock frame
+  name: 火锁框架 | firelock frame
   components:
   - type: Sprite
     layers:
@@ -409,13 +406,13 @@
 - type: entity
   parent: BaseScrap
   id: ScrapIntercom
-  name: intercom scrap
-  description: You wish it at least came with some encryption keys.
+  name: 对讲机废料 | intercom scrap
+  description: 你希望它至少附带一些加密密钥。 | You wish it at least came with some encryption keys.
   components:
   - type: Sprite
     layers:
     - state: junk-intercom-1
-      map: [ "base" ]
+      map: ["base"]
   - type: RandomSprite
     available:
     - base:
@@ -437,8 +434,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapJetpack
-  name: busted jetpack
-  description: Looks like it won't be flying any more.
+  name: 坏掉的喷气背包 | busted jetpack
+  description: 看起来它再也飞不起来了。 | Looks like it won't be flying any more.
   components:
   - type: Sprite
     layers:
@@ -459,13 +456,13 @@
 - type: entity
   parent: BaseScrap
   id: ScrapMedkit
-  name: snapped medkit
-  description: Hopefully they got some use out of it.
+  name: 折断的医疗包 | snapped medkit
+  description: 希望他们能派上点用场。 | Hopefully they got some use out of it.
   components:
   - type: Sprite
     layers:
     - state: junk-medkit-1
-      map: [ "base" ]
+      map: ["base"]
   - type: RandomSprite
     available:
     - base:
@@ -486,8 +483,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapMopBucket
-  name: half a mop bucket
-  description: Tiders die. Janitors survive.
+  name: 半个拖把桶 | half a mop bucket
+  description: 潮汐会消亡。清洁工则存活。 | Tiders die. Janitors survive.
   components:
   - type: Sprite
     layers:
@@ -507,8 +504,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapTarget
-  name: bloodied target
-  description: Seems like something must have gotten in the way of its purpose.
+  name: 染血的目标 | bloodied target
+  description: 似乎有什么东西妨碍了它的目的。 | Seems like something must have gotten in the way of its purpose.
   components:
   - type: Sprite
     layers:
@@ -523,8 +520,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapPAI
-  name: personal ai device
-  description: A buddy! You still in there? Hello? Buddy???
+  name: 个人人工智能设备 | personal ai device
+  description: 伙计！你还在里面吗？喂？伙计？？？ | A buddy! You still in there? Hello? Buddy???
   components:
   - type: Sprite
     layers:
@@ -545,8 +542,8 @@
 - type: entity
   parent: BaseScrap
   id: ScrapPAIGold
-  name: gilded personal ai device
-  description: Wow! What a one-in-a-million find! This would be worth a fortune... if it was in good condition.
+  name: 镀金个人AI设备 | gilded personal ai device
+  description: 哇！真是万里挑一的发现！如果保存完好的话，这东西可值一大笔钱…… | Wow! What a one-in-a-million find! This would be worth a fortune... if it was in good condition.
   components:
   - type: Sprite
     layers:
@@ -567,13 +564,13 @@
 - type: entity
   parent: BaseScrap
   id: ScrapTube
-  name: shattered sample tube
-  description: A glass tube containing some kind of rare sample. Or at least, it used to contain it. Not much left in there now.
+  name: 破碎的样本管 | shattered sample tube
+  description: 一个装有某种稀有样本的玻璃管。或者说，它曾经装着。现在里面没剩多少了。 | A glass tube containing some kind of rare sample. Or at least, it used to contain it. Not much left in there now.
   components:
   - type: Sprite
     layers:
     - state: tube
-      map: [ "base" ]
+      map: ["base"]
   - type: RandomSprite
     available:
     - base:
@@ -599,15 +596,15 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorPlasmaLeaking
-  name: leaking P.A.C.M.A.N. generator
-  description: An old looking P.A.C.M.A.N. generator whos plasma tanks started leaking.
+  name: 泄漏的P.A.C.M.A.N.发电机 | leaking P.A.C.M.A.N. generator
+  description: 一个看起来老旧的P.A.C.M.A.N.发电机，其等离子罐开始泄漏。 | An old looking P.A.C.M.A.N. generator whos plasma tanks started leaking.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
     snapCardinals: true
     layers:
-      - state: old_generator_plasma
-      - state: old_generator_plasma_fuel_leak
+    - state: old_generator_plasma
+    - state: old_generator_plasma_fuel_leak
   - type: Tag
     tags:
     - Recyclable
@@ -621,13 +618,13 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorPlasma
-  name: old P.A.C.M.A.N. generator
-  description: An old looking P.A.C.M.A.N. generator. It's in very poor condition and non functional.
+  name: 老旧的P.A.C.M.A.N.发电机 | old P.A.C.M.A.N. generator
+  description: 一个外观老旧的P.A.C.M.A.N.发电机。它状况极差，无法运作。 | An old looking P.A.C.M.A.N. generator. It's in very poor condition and non functional.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
     layers:
-      - state: old_generator_plasma
+    - state: old_generator_plasma
   - type: Tag
     tags:
     - Recyclable
@@ -641,18 +638,18 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorUraniumLeaking
-  name: leaking S.U.P.E.R.P.A.C.M.A.N. generator
-  description: A S.U.P.E.R.P.A.C.M.A.N. generator that appears to have had some kind of catastrophic failure. It's leaking uranium.
+  name: 泄漏的S.U.P.E.R.P.A.C.M.A.N.发电机 | leaking S.U.P.E.R.P.A.C.M.A.N. generator
+  description: 一个似乎发生了某种灾难性故障的S.U.P.E.R.P.A.C.M.A.N.发电机。它正在泄漏铀。 | A S.U.P.E.R.P.A.C.M.A.N. generator that appears to have had some kind of catastrophic failure. It's leaking uranium.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
     layers:
-      - state: uranium_generator
-      - map: [ "extra" ]
-      - state: rad_dripping
-        shader: unshaded
-      - state: rad_outline
-        shader: unshaded
+    - state: uranium_generator
+    - map: ["extra"]
+    - state: rad_dripping
+      shader: unshaded
+    - state: rad_outline
+      shader: unshaded
   - type: RandomSprite
     available:
     - extra:
@@ -674,14 +671,14 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorUranium
-  name: destroyed S.U.P.E.R.P.A.C.M.A.N. generator
-  description: A S.U.P.E.R.P.A.C.M.A.N. generator that appears to have had some kind of catastrophic failure.
+  name: 被摧毁的S.U.P.E.R.P.A.C.M.A.N.发电机 | destroyed S.U.P.E.R.P.A.C.M.A.N. generator
+  description: 一个似乎经历了某种灾难性故障的S.U.P.E.R.P.A.C.M.A.N.发电机。 | A S.U.P.E.R.P.A.C.M.A.N. generator that appears to have had some kind of catastrophic failure.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
     layers:
-      - state: uranium_generator
-      - map: [ "extra" ]
+    - state: uranium_generator
+    - map: ["extra"]
   - type: RandomSprite
     available:
     - extra:
@@ -702,13 +699,13 @@
 - type: entity
   parent: BaseScrapLarge
   id: ScrapGeneratorFrame
-  name: generator frame
-  description: A frame of a P.A.C.M.A.N. or S.U.P.E.R.P.A.C.M.A.N. type generator. Where is the rest of it?
+  name: 发电机框架 | generator frame
+  description: P.A.C.M.A.N.或S.U.P.E.R.P.A.C.M.A.N.型发电机的框架。其余部分在哪里？ | A frame of a P.A.C.M.A.N. or S.U.P.E.R.P.A.C.M.A.N. type generator. Where is the rest of it?
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
     layers:
-      - state: generator_frame
+    - state: generator_frame
   - type: Tag
     tags:
     - Recyclable
@@ -720,13 +717,13 @@
 - type: entity
   parent: BaseScrap
   id: ScrapGeneratorFuelTank
-  name: fuel tank
-  description: A fuel tank from a S.U.P.E.R.P.A.C.M.A.N. type generator. The gauge indicates its got a little fuel left.
+  name: 燃料箱 | fuel tank
+  description: 来自S.U.P.E.R.P.A.C.M.A.N.型发电机的燃料箱。仪表显示还剩一点燃料。 | A fuel tank from a S.U.P.E.R.P.A.C.M.A.N. type generator. The gauge indicates its got a little fuel left.
   components:
   - type: Sprite
     sprite: Objects/Materials/Scrap/generator.rsi
     layers:
-      - state: uranium_generator_fuel_tank
+    - state: uranium_generator_fuel_tank
   - type: Item
     sprite: Objects/Materials/Scrap/generator.rsi
     heldPrefix: "fuel"

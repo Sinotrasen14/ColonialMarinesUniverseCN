@@ -1,8 +1,8 @@
 - type: entity
   parent: Clothing
   id: RMCParachute
-  name: parachute
-  description: A surprisingly small yet bulky pack with just enough safety straps to make RnD pass health and safety. The label says the pack comes with two parachutes - main and reserve, but you doubt the pack can fit even one.
+  name: 降落伞
+  description: 一个出奇地小却又笨重的背包，配有刚好足以让研发部通过健康与安全检查的安全带。标签上写着这个背包配有两个降落伞——主伞和备用伞，但你怀疑这包连一个都装不下。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/Parachute/parachute.rsi
@@ -15,10 +15,9 @@
     - back
   - type: ClothingIgnoreBlockBackpack
   - type: GrantParaDroppable
-
 - type: entity
   id: RMCParachuteDeployed
-  name: deployed parachute
+  name: 已展开的降落伞
   components:
   - type: Sprite
     noRot: true

@@ -1,7 +1,7 @@
 # Implanters
 
 - type: entity
-  name: implanter
+  name: 植入器 | implanter
   id: BaseImplanter
   parent: BaseItem
   abstract: true
@@ -9,7 +9,7 @@
   - type: ItemSlots
   - type: ContainerContainer
     containers:
-      implanter_slot: !type:ContainerSlot { }
+      implanter_slot: !type:ContainerSlot {}
   - type: Implanter
     whitelist:
       components:
@@ -21,8 +21,8 @@
       - Unimplantable
     currentMode: Draw
     implanterSlot:
-      name: Implant
-      locked: True
+      name: 植入物 | Implant
+      locked: true
       priority: 0
       whitelist:
         tags:
@@ -57,10 +57,10 @@
     state: implanter0
     layers:
     - state: implanter0
-      map: [ "implantOnly" ]
+      map: ["implantOnly"]
       visible: true
     - state: implanter1
-      map: [ "implantFull" ]
+      map: ["implantFull"]
       visible: false
   - type: Item
     sprite: Objects/Specific/Medical/implanter.rsi
@@ -71,12 +71,12 @@
     visuals:
       enum.ImplanterVisuals.Full:
         implantFull:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
       enum.ImplanterImplantOnlyVisuals.ImplantOnly:
         implantOnly:
-          True: {state: broken}
-          False: {state: implanter0}
+          true: {state: broken}
+          false: {state: implanter0}
   - type: UserInterface
     interfaces:
       enum.DeimplantUiKey.Key:
@@ -85,8 +85,8 @@
 - type: entity
   id: Implanter
   parent: BaseImplanter
-  name: implant extractor
-  description: "A dual-purpose syringe designed for the removal of specific subdermal implants. Once an implant is extracted, it is stored within and can be re-administered.\nWARNING: Operator error, such as selecting a non-present implant type, causes severe genetic trauma to the operator."
+  name: 植入物提取器 | implant extractor
+  description: "一种双用途注射器，专为取出特定皮下植入物而设计。植入物一旦被取出，便会储存在其中并可重新注入。\n警告：操作失误，例如选择不存在的植入物类型，会对操作者造成严重的基因创伤。 | A dual-purpose syringe designed for the removal of specific subdermal implants. Once an implant is extracted, it is stored within and can be re-administered.\nWARNING: Operator error, such as selecting a non-present implant type, causes severe genetic trauma to the operator."
   components:
   - type: Tag
     tags:
@@ -99,15 +99,15 @@
   components:
   - type: Implanter
     # go wild with sentient chairs with macrobombs
-    whitelist: null
-    blacklist: null
+    whitelist:
+    blacklist:
     implantTime: 5
     drawTime: 5
 
 - type: entity
   id: BaseImplantOnlyImplanter
   parent: Implanter
-  description: A disposable syringe exclusively designed for the injection of subdermal implants.
+  description: 一次性注射器，专为皮下植入物注射而设计。 | A disposable syringe exclusively designed for the injection of subdermal implants.
   abstract: true
   components:
   - type: Sprite
@@ -115,10 +115,10 @@
     state: implanter0
     layers:
     - state: implanter1
-      map: [ "implantFull" ]
+      map: ["implantFull"]
       visible: true
     - state: implanter0
-      map: [ "implantOnly" ]
+      map: ["implantOnly"]
   - type: Implanter
     currentMode: Inject
     implantOnly: true
@@ -126,8 +126,8 @@
 - type: entity
   id: BaseImplantOnlyImplanterSyndi
   parent: [BaseImplantOnlyImplanter, BaseSyndicateContraband]
-  name: syndicate implanter
-  description: A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap to remove residual DNA after use!
+  name: 辛迪加植入器 | syndicate implanter
+  description: 一种专为皮下植入物注射而设计的紧凑型一次性注射器。使用后请务必用肥皂擦洗，以去除残留的DNA！ | A compact disposable syringe exclusively designed for the injection of subdermal implants. Make sure to scrub it with soap to remove residual DNA after use!
   abstract: true
   components:
   - type: Item
@@ -138,20 +138,20 @@
     state: implanter1
     layers:
     - state: implanter0
-      map: [ "implantFull" ]
+      map: ["implantFull"]
       visible: true
     - state: implanter1
-      map: [ "implantOnly" ]
+      map: ["implantOnly"]
   - type: GenericVisualizer
     visuals:
       enum.ImplanterVisuals.Full:
         implantFull:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
       enum.ImplanterImplantOnlyVisuals.ImplantOnly:
         implantOnly:
-          True: {state: broken}
-          False: {state: implanter1}
+          true: {state: broken}
+          false: {state: implanter1}
   - type: Tag
     tags: []
 
@@ -159,7 +159,7 @@
 
 - type: entity
   id: SadTromboneImplanter
-  name: sad trombone implanter
+  name: 悲伤长号植入器 | sad trombone implanter
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter
@@ -167,7 +167,7 @@
 
 - type: entity
   id: LightImplanter
-  name: light implanter
+  name: 光注入机 | light implanter
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter
@@ -175,7 +175,7 @@
 
 - type: entity
   id: BikeHornImplanter
-  name: bike horn implanter
+  name: 自行车喇叭植入器 | bike horn implanter
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter
@@ -185,7 +185,7 @@
 
 - type: entity
   id: TrackingImplanter
-  name: tracking implanter
+  name: 追踪植入器 | tracking implanter
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter
@@ -195,7 +195,7 @@
 
 - type: entity
   id: StorageImplanter
-  name: storage implanter
+  name: 存储植入器 | storage implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -203,7 +203,7 @@
 
 - type: entity
   id: FreedomImplanter
-  name: freedom implanter
+  name: 自由植入器 | freedom implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -211,7 +211,7 @@
 
 - type: entity
   id: RadioImplanter
-  name: syndicate radio implanter
+  name: 辛迪加无线电植入器 | syndicate radio implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -219,7 +219,7 @@
 
 - type: entity
   id: UplinkImplanter
-  name: uplink implanter
+  name: 上行植入器 | uplink implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -227,7 +227,7 @@
 
 - type: entity
   id: EmpImplanter
-  name: EMP implanter
+  name: EMP注入机 | EMP implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -235,7 +235,7 @@
 
 - type: entity
   id: ScramImplanter
-  name: scram implanter
+  name: 干扰植入器 | scram implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -243,7 +243,7 @@
 
 - type: entity
   id: DnaScramblerImplanter
-  name: DNA scrambler implanter
+  name: DNA干扰器植入器 | DNA scrambler implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -251,7 +251,7 @@
 
 - type: entity
   id: ChameleonControllerImplanter
-  name: chameleon controller implanter
+  name: 变色龙控制器植入器 | chameleon controller implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -259,7 +259,7 @@
 
 - type: entity
   id: VoiceMaskImplanter
-  name: identity mask implanter
+  name: 身份面具植入器 | identity mask implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -269,7 +269,7 @@
 
 - type: entity
   id: MicroBombImplanter
-  name: micro-bomb implanter
+  name: 微型炸弹植入器 | micro-bomb implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -277,7 +277,7 @@
 
 - type: entity
   id: MacroBombImplanter
-  name: macro-bomb implanter
+  name: 宏炸弹植入器 | macro-bomb implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -285,7 +285,7 @@
 
 - type: entity
   id: DeathRattleImplanter
-  name: death rattle implanter
+  name: 死亡低语植入器 | death rattle implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -293,7 +293,7 @@
 
 - type: entity
   id: DeathAcidifierImplanter
-  name: death acidifier implanter
+  name: 死亡酸化植入器 | death acidifier implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -301,7 +301,7 @@
 
 - type: entity
   id: FakeMindShieldImplanter
-  name: fake mindshield implanter
+  name: 假心灵护盾植入器 | fake mindshield implanter
   parent: BaseImplantOnlyImplanterSyndi
   components:
   - type: Implanter
@@ -311,7 +311,7 @@
 
 - type: entity
   id: MindShieldImplanter
-  name: mindshield implanter
+  name: 思维护盾植入器 | mindshield implanter
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter
@@ -321,7 +321,7 @@
 
 - type: entity
   id: RadioImplanterCentcomm
-  name: centcomm radio implanter
+  name: 中央通信无线电植入器 | centcomm radio implanter
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter
@@ -329,7 +329,7 @@
 
 - type: entity
   id: DeathRattleImplanterCentcomm
-  name: centcomm death rattle implanter
+  name: 中央指挥部死亡遗言植入器 | centcomm death rattle implanter
   parent: BaseImplantOnlyImplanter
   components:
   - type: Implanter

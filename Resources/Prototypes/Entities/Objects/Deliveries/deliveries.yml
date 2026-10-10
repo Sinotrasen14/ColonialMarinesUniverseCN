@@ -8,34 +8,34 @@
     visuals:
       enum.DeliveryVisuals.IsFragile:
         enum.DeliveryVisualLayers.FragileStamp:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.DeliveryVisuals.IsLocked:
         enum.DeliveryVisualLayers.Lock:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.DeliveryVisuals.PriorityState:
         enum.DeliveryVisualLayers.PriorityTape:
-          Off: { visible: false }
-          Active: { visible: true, shader: unshaded, state: priority }
-          Inactive: { visible: true, shader: shaded, state: priority_inactive }
+          Off: {visible: false}
+          Active: {visible: true, shader: unshaded, state: priority}
+          Inactive: {visible: true, shader: shaded, state: priority_inactive}
       enum.DeliveryVisuals.IsBroken:
         enum.DeliveryVisualLayers.Breakage:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.DeliveryVisuals.IsTrash:
         enum.DeliveryVisualLayers.Trash:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.DeliveryVisuals.IsBomb:
         enum.DeliveryVisualLayers.Bomb:
-          Off: { visible: false }
-          Inactive: { visible: true }
-          Primed: { visible: true }
+          Off: {visible: false}
+          Inactive: {visible: true}
+          Primed: {visible: true}
         enum.DeliveryVisualLayers.BombPrimed:
-          Off: { visible: false }
-          Inactive: { visible: false }
-          Primed: { visible: true }
+          Off: {visible: false}
+          Inactive: {visible: false}
+          Primed: {visible: true}
   - type: Label
     examinable: false
   - type: FingerprintReader
@@ -56,36 +56,36 @@
 - type: entity
   parent: BaseDelivery
   id: PackageDelivery
-  name: package
+  name: 包 | package
   components:
   - type: Sprite
     sprite: Objects/Specific/Cargo/mail_large.rsi
     layers:
     - state: icon
-      map: [ "enum.DeliveryVisualLayers.Icon" ]
+      map: ["enum.DeliveryVisualLayers.Icon"]
     - state: trash
-      map: [ "enum.DeliveryVisualLayers.Trash" ]
+      map: ["enum.DeliveryVisualLayers.Trash"]
       visible: false
     - state: priority
-      map: [ "enum.DeliveryVisualLayers.PriorityTape" ]
+      map: ["enum.DeliveryVisualLayers.PriorityTape"]
       visible: false
       shader: unshaded
     - state: fragile
-      map: [ "enum.DeliveryVisualLayers.FragileStamp" ]
+      map: ["enum.DeliveryVisualLayers.FragileStamp"]
       visible: false
     - state: postmark
-    - map: [ "enum.DeliveryVisualLayers.JobStamp" ]
+    - map: ["enum.DeliveryVisualLayers.JobStamp"]
       offset: -0.21875, -0.25
     - state: locked
-      map: [ "enum.DeliveryVisualLayers.Lock" ]
+      map: ["enum.DeliveryVisualLayers.Lock"]
     - state: broken
-      map: [ "enum.DeliveryVisualLayers.Breakage" ]
+      map: ["enum.DeliveryVisualLayers.Breakage"]
       visible: false
     - state: bomb
-      map: [ "enum.DeliveryVisualLayers.Bomb" ]
+      map: ["enum.DeliveryVisualLayers.Bomb"]
       visible: false
     - state: bomb_unshaded
-      map: [ "enum.DeliveryVisualLayers.BombPrimed" ]
+      map: ["enum.DeliveryVisualLayers.BombPrimed"]
       shader: unshaded
       visible: false
   - type: MultiHandedItem
@@ -104,41 +104,41 @@
         tableId: PackageDeliveryRewards
   - type: Tag
     tags:
-      - PackageDelivery
+    - PackageDelivery
 
 - type: entity
   parent: BaseDelivery
   id: LetterDelivery
-  name: letter
+  name: 信 | letter
   components:
   - type: Sprite
     sprite: Objects/Specific/Cargo/mail.rsi
     layers:
     - state: icon
-      map: [ "enum.DeliveryVisualLayers.Icon" ]
+      map: ["enum.DeliveryVisualLayers.Icon"]
     - state: trash
-      map: [ "enum.DeliveryVisualLayers.Trash" ]
+      map: ["enum.DeliveryVisualLayers.Trash"]
       visible: false
     - state: priority
-      map: [ "enum.DeliveryVisualLayers.PriorityTape" ]
+      map: ["enum.DeliveryVisualLayers.PriorityTape"]
       visible: false
       shader: unshaded
     - state: fragile
-      map: [ "enum.DeliveryVisualLayers.FragileStamp" ]
+      map: ["enum.DeliveryVisualLayers.FragileStamp"]
       visible: false
     - state: postmark
-    - map: [ "enum.DeliveryVisualLayers.JobStamp" ]
+    - map: ["enum.DeliveryVisualLayers.JobStamp"]
       offset: -0.125, -0.0625
     - state: locked
-      map: [ "enum.DeliveryVisualLayers.Lock" ]
+      map: ["enum.DeliveryVisualLayers.Lock"]
     - state: broken
-      map: [ "enum.DeliveryVisualLayers.Breakage" ]
+      map: ["enum.DeliveryVisualLayers.Breakage"]
       visible: false
     - state: bomb
-      map: [ "enum.DeliveryVisualLayers.Bomb" ]
+      map: ["enum.DeliveryVisualLayers.Bomb"]
       visible: false
     - state: bomb_unshaded
-      map: [ "enum.DeliveryVisualLayers.BombPrimed" ]
+      map: ["enum.DeliveryVisualLayers.BombPrimed"]
       shader: unshaded
       visible: false
   - type: Item
@@ -168,15 +168,15 @@
 
 - type: entity
   id: DeliveryModifierPriority
-  description: Components to add when a delivery is rolled as priority.
-  categories: [ HideSpawnMenu ]
+  description: 当配送被标记为优先时要添加的组件。 | Components to add when a delivery is rolled as priority.
+  categories: [HideSpawnMenu]
   components:
   - type: DeliveryPriority
 
 - type: entity
   id: DeliveryModifierFragile
-  description: Components to add when a delivery is rolled as fragile.
-  categories: [ HideSpawnMenu ]
+  description: 当配送被标记为易碎品时需要添加的组件。 | Components to add when a delivery is rolled as fragile.
+  categories: [HideSpawnMenu]
   components:
   - type: DeliveryFragile
   - type: Damageable
@@ -195,20 +195,19 @@
         Blunt: 1
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: DeliveryOpenSounds
       - !type:DoActsBehavior
-        acts: [ "Breakage" ]
+        acts: ["Breakage"]
 
 - type: entity
   id: DeliveryModifierBomb
-  description: Components to add when a delivery is rolled as a bomb.
-  categories: [ HideSpawnMenu ]
+  description: 当配送被当作炸弹滚动时要添加的组件。 | Components to add when a delivery is rolled as a bomb.
+  categories: [HideSpawnMenu]
   components:
   - type: DeliveryBomb
   - type: AmbientSound

@@ -1,9 +1,8 @@
-# Military Police
 - type: entity
   parent: JumpsuitMarine
   id: CMJumpsuitMP
-  name: military police jumpsuit
-  description: Standard-issue Military Police uniform. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: 宪兵连体服
+  description: 标准配发的宪兵制服。它含有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/standard/jungle.rsi
@@ -20,22 +19,19 @@
     tags:
     - RMCUniformMarine
     - RMCUniformMP
-
 - type: entity
   parent: RMCMarineUniformBase
   id: RMCJumpsuitMPCorporate
-  name: corporate security officer's jumpsuit
-  description: It's made of a slightly sturdier material than standard jumpsuits, to allow for robust protection.
+  name: 企业保安人员的连体服
+  description: 它由比标准连体服更结实的材料制成，以提供强力保护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/standard/corporate.rsi
-
-# Military Warden
 - type: entity
   parent: JumpsuitMarine
   id: CMJumpsuitWarden
   name: military warden uniform
-  description: Standard-issue Military Warden uniform. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  description: 标准配发的军用狱警制服。它含有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/warden/jungle.rsi
@@ -52,58 +48,55 @@
     tags:
     - RMCUniformMarine
     - RMCUniformWarden
-
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitWardenBlue
-  name: blue warden uniform
-  description: The insignia on this uniform tells you that this uniform belongs to the Warden.
+  name: 蓝色典狱长制服
+  description: 这件制服上的徽章表明它属于典狱长。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/Warden/blue.rsi
-
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitWardenRed
-  name: red warden uniform
-  description: A standard-issue warden uniform.
+  name: 红色典狱长制服
+  description: 标准配发的典狱长制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/Warden/red.rsi
-
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitWardenCorporate
-  name: corporate warden uniform
-  description: A standard-issue warden uniform.
+  name: 公司典狱长制服
+  description: 标准配发的典狱长制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/Warden/corporate.rsi
-
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitWardenNavy
-  name: navy warden uniform
-  description: A navy variant of warden uniform.
+  name: 海军典狱长制服
+  description: 海军版典狱长制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/Warden/navy.rsi
-
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitWardenTan
-  name: tan warden uniform
-  description: A standard-issue warden uniform.
+  name: 棕褐色典狱长制服
+  description: 一件标准配发的典狱长制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/Warden/tan.rsi
-
-# Warrant Officer / CMP
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitWO
-  name: chief MP uniform
-  description: A uniform typically worn by a Chief MP of the UNMC. It has shards of light Kevlar to help protect against stabbing weapons, bullets, and shrapnel from explosions. This uniform includes a small EMF distributor to help nullify energy-based weapon fire, along with a hazmat chemical filter woven throughout the material to ward off biological and radiation hazards.
+  name: 宪兵队长制服
+  description: A uniform typically worn by a Chief MP of the UNMC. It has shards of
+    light Kevlar to help protect against stabbing weapons, bullets, and shrapnel from
+    explosions. This uniform includes a small EMF distributor to help nullify energy-based
+    weapon fire, along with a hazmat chemical filter woven throughout the material
+    to ward off biological and radiation hazards.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/wo/jungle.rsi
@@ -118,22 +111,19 @@
     tags:
     - RMCUniformMarine
     - RMCUniformCMP
-
-# Prisoner
 - type: entity
   parent: RMCMarineUniformBase
   id: RMCScrubsPrisonMedsec
-  name: prisoner medium custody scrubs
-  description: Orange scrubs worn by prisoners as directed by Marine Law. Marked with yellow for medium custody prisoners.
+  name: 中等监管囚犯服
+  description: 囚犯根据《海军陆战队法》规定穿着的橙色囚服。用黄色标记，表示中等羁押囚犯。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/prisoner/medsec.rsi
-
 - type: entity
   parent: RMCMarineUniformBase
   id: RMCScrubsPrisonMaxsec
-  name: prisoner maximum custody scrubs
-  description: Orange scrubs worn by prisoners as directed by Marine Law. Marked with red for maximum custody prisoners.
+  name: 最高监管囚犯服
+  description: 囚犯根据《海军陆战队法》规定穿着的橙色囚服。用红色标记，表示最高羁押囚犯。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/MP/prisoner/maxsec.rsi

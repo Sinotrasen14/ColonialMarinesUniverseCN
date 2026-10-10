@@ -52,8 +52,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieThrongler
-  name: throngler plushie
-  description: A stuffed toy to remind cargo techs of what they can no longer have.
+  name: 挤压玩偶 | throngler plushie
+  description: 一个毛绒玩具，用来提醒货物技师们他们再也得不到的东西。 | A stuffed toy to remind cargo techs of what they can no longer have.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/ThronglerPlushie.rsi
@@ -75,8 +75,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieGhost
-  name: ghost soft toy
-  description: The start of your personal GHOST GANG!
+  name: 幽灵毛绒玩具 | ghost soft toy
+  description: 你个人幽灵帮派的起点！ | The start of your personal GHOST GANG!
   components:
   - type: Sprite
     sprite: Mobs/Ghosts/ghost_human.rsi
@@ -91,8 +91,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 20
         mask:
@@ -118,9 +117,9 @@
 - type: entity
   parent: PlushieGhost
   id: PlushieGhostRevenant
-  categories: [ DoNotMap ]
-  name: revenant soft toy
-  description: So soft it almost makes you want to take a nap...
+  categories: [DoNotMap]
+  name: 亡魂毛绒玩具 | revenant soft toy
+  description: 柔软得几乎让你想打个盹…… | So soft it almost makes you want to take a nap...
   components:
   - type: Sprite
     sprite: Mobs/Ghosts/revenant.rsi
@@ -139,8 +138,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieBee
-  name: bee plushie
-  description: A cute toy that resembles an even cuter programmer. You'd have to be a monster to grind this up.
+  name: 蜜蜂毛绒玩具 | bee plushie
+  description: 一个可爱的玩具，长得像一位更可爱的程序员。你要是个怪物才会把它磨碎。 | A cute toy that resembles an even cuter programmer. You'd have to be a monster to grind this up.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/bee.rsi
@@ -169,8 +168,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieHampter
-  name: hampter plushie
-  description: A cute stuffed toy that resembles a hamster. Its face looks squished.
+  name: 仓鼠毛绒玩具 | hampter plushie
+  description: 一个可爱的毛绒玩具，外形像仓鼠。它的脸看起来被挤扁了。 | A cute stuffed toy that resembles a hamster. Its face looks squished.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/hampter.rsi
@@ -206,14 +205,14 @@
 - type: entity
   parent: PlushieBee
   id: PlushieRGBee
-  name: RGBee plushie
-  description: A cute toy that resembles a bee plushie while you're on LSD.
+  name: RGBee毛绒玩具 | RGBee plushie
+  description: 一个可爱的玩具，看起来像一只蜜蜂毛绒玩偶，仿佛你正在嗑药时看到的那样。 | A cute toy that resembles a bee plushie while you're on LSD.
   components:
   - type: PointLight
     radius: 1.5
     energy: 2
   - type: RgbLightController
-    layers: [ 0 ]
+    layers: [0]
   - type: Item
     inhandVisuals:
       left:
@@ -231,8 +230,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieNuke
-  name: nukie plushie
-  description: A stuffed toy that resembles a syndicate nuclear operative. The tag claims operatives to be purely fictitious.
+  name: 核弹特工毛绒玩具 | nukie plushie
+  description: 一个类似辛迪加核特工的毛绒玩具。标签上声称特工纯属虚构。 | A stuffed toy that resembles a syndicate nuclear operative. The tag claims operatives to be purely fictitious.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/nukie.rsi
@@ -253,8 +252,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieRouny
-  name: rouny plushie
-  description: Rouny.
+  name: Rouny毛绒玩具 | rouny plushie
+  description: 鲁尼。 | Rouny.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/rouny.rsi
@@ -275,8 +274,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieLamp
-  name: lamp plushie
-  description: A light emitting friend!
+  name: 灯毛绒玩具 | lamp plushie
+  description: 一个会发光的朋友！ | A light emitting friend!
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/lamp.rsi
@@ -292,8 +291,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieArachind
-  name: arachnid plushie
-  description: An adorable stuffed toy that resembles an arachnid. It feels silky..
+  name: 蛛形纲动物毛绒玩具 | arachnid plushie
+  description: 一个可爱的毛绒玩具，外形像蛛形纲动物。摸起来很丝滑。。 | An adorable stuffed toy that resembles an arachnid. It feels silky..
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/arachnid.rsi
@@ -325,8 +324,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieLizard #Weh!
-  name: lizard plushie
-  description: An adorable stuffed toy that resembles a lizardperson. Made by CentComm as a token initiative to combat speciesism in work environments. "Welcome your new colleagues as you do this plush, with open arms!"
+  name: 蜥蜴毛绒玩具 | lizard plushie
+  description: 一个可爱的毛绒玩具，外形像蜥蜴人。由中央指挥部制作，作为在工作环境中打击物种歧视的象征性举措。“像对待这个毛绒玩具一样，张开双臂欢迎你的新同事！” | An adorable stuffed toy that resembles a lizardperson. Made by CentComm as a token initiative to combat speciesism in work environments. "Welcome your new colleagues as you do this plush, with open arms!"
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/lizard.rsi
@@ -386,8 +385,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieExperiment #Arf!
-  name: experiment plushie
-  description: A plushie of a canid of sorts. It yearns to be detonated on a landmine.
+  name: 实验毛绒玩具 | experiment plushie
+  description: 某种犬科动物的毛绒玩具。它渴望在地雷上被引爆。 | A plushie of a canid of sorts. It yearns to be detonated on a landmine.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/expi.rsi
@@ -438,8 +437,8 @@
 - type: entity
   parent: PlushieLizard
   id: PlushieRainbowLizard #Weh but gay
-  name: rainbow lizard plushie
-  description: An adorable stuffed toy that resembles a lizardperson of every color. You just might trip while staring at it...
+  name: 彩虹蜥蜴人毛绒玩具 | rainbow lizard plushie
+  description: 一个可爱的毛绒玩具，形似拥有各种颜色的蜥蜴人。盯着它看时，你可能会绊倒…… | An adorable stuffed toy that resembles a lizardperson of every color. You just might trip while staring at it...
   components:
   - type: Sprite
     state: rainbowlizardplush
@@ -447,7 +446,7 @@
     radius: 1.5
     energy: 2
   - type: RgbLightController
-    layers: [ 0 ]
+    layers: [0]
   - type: Clothing
     clothingVisuals:
       head:
@@ -475,8 +474,8 @@
 - type: entity
   parent: PlushieLizard
   id: PlushieSpaceLizard #ᵂᵉʰ!
-  name: space lizard plushie
-  description: An adorable stuffed toy that resembles a lizardperson in an EVA suit. Made by CentComm as a token initiative to combat speciesism in space environments. "Welcome your new colleagues as you do this plush, with open arms!"
+  name: 太空蜥蜴毛绒玩具 | space lizard plushie
+  description: 一个可爱的毛绒玩具，外形酷似穿着EVA宇航服的蜥蜴人。由CentComm制作，作为在太空环境中对抗物种歧视的象征性倡议。“像拥抱这个毛绒玩具一样，张开双臂欢迎你的新同事！” | An adorable stuffed toy that resembles a lizardperson in an EVA suit. Made by CentComm as a token initiative to combat speciesism in space environments. "Welcome your new colleagues as you do this plush, with open arms!"
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/lizard.rsi
@@ -517,8 +516,8 @@
 - type: entity
   parent: PlushieLizard
   id: PlushieLizardInversed #Hew!
-  name: drazil plushie
-  description: An adorable stuffed toy that resembles a lizardperson from an inversed dimension. Hew!
+  name: 德拉齐尔毛绒玩具 | drazil plushie
+  description: 一个可爱的毛绒玩具，外形酷似来自反转维度的蜥蜴人。呼！ | An adorable stuffed toy that resembles a lizardperson from an inversed dimension. Hew!
   components:
   - type: Sprite
     state: plushie_lizard_inversed
@@ -570,15 +569,15 @@
 - type: entity
   parent: BasePlushie
   id: PlushieDiona # TODO Better way of doing the flowering visuals. Probably make it an "AppearanceChangeEntityEffect" on reactive?
-  name: diona plushie
-  description: An adorable stuffed toy that resembles a diona. Love water and cuddles. Do not wet!
+  name: 迪奥娜毛绒玩具 | diona plushie
+  description: 一个可爱的毛绒玩具，外形酷似迪奥娜。喜欢水和拥抱。切勿弄湿！ | An adorable stuffed toy that resembles a diona. Love water and cuddles. Do not wet!
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/diona.rsi
     layers:
     - state: plushie_diona
     - state: plushie_diona1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: EmitSoundOnUse
     sound: &PlushieDionaSound
@@ -607,8 +606,8 @@
   - type: Appearance
   - type: Reactive
     reactions:
-    - reagents: [ Water ]
-      methods: [ Touch ]
+    - reagents: [Water]
+      methods: [Touch]
       effects:
       - !type:AddReagentToSolution
         reagent: Water
@@ -616,15 +615,13 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.3,-0.3,0.3,0.3"
         density: 15
         mask:
         - ItemMask
       rehydrate:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.3,-0.3,0.3,0.3"
         hard: false
         layer:
@@ -647,8 +644,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieSharkBlue
-  name: blue shark soft toy
-  description: Big and safe to have by your side if you want to discover the world below the surface of the ocean.
+  name: 蓝色鲨鱼毛绒玩具 | blue shark soft toy
+  description: 如果你想探索海底世界，有它陪在身边，既大只又安全。 | Big and safe to have by your side if you want to discover the world below the surface of the ocean.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/shark.rsi
@@ -685,8 +682,8 @@
 - type: entity
   parent: PlushieSharkBlue
   id: PlushieSharkPink
-  name: pink shark soft toy
-  description: Hehe shonk :)
+  name: 粉色鲨鱼毛绒玩具 | pink shark soft toy
+  description: 呵呵 鲨鲨 :) | Hehe shonk :)
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/shark.rsi
@@ -705,8 +702,8 @@
 - type: entity
   parent: PlushieSharkBlue
   id: PlushieSharkGrey
-  name: grey shark soft toy
-  description: A quiet, reserved kind of shonk. Loves to ride the grey tide.
+  name: 灰色鲨鱼毛绒玩具 | grey shark soft toy
+  description: 一只安静、内敛的鲨鱼。喜欢乘着灰色浪潮。 | A quiet, reserved kind of shonk. Loves to ride the grey tide.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/shark.rsi
@@ -725,8 +722,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieRatvar
-  name: ratvar plushie
-  description: A large stuffed doll of the elder god Ratvar.
+  name: 拉特瓦尔毛绒玩偶 | ratvar plushie
+  description: 一个巨大的旧日支配者拉特瓦尔毛绒玩偶。 | A large stuffed doll of the elder god Ratvar.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/ratvar.rsi
@@ -747,8 +744,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieNar
-  name: nar'sie plushie
-  description: A large stuffed doll of the elder goddess Nar'Sie.
+  name: 纳尔西毛绒玩偶 | nar'sie plushie
+  description: 一个远古女神纳尔西的大型毛绒玩偶。 | A large stuffed doll of the elder goddess Nar'Sie.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/narsie.rsi
@@ -769,8 +766,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieCarp
-  name: carp plushie
-  description: An adorable stuffed toy that resembles the monstrous space carp.
+  name: 鲤鱼毛绒玩具 | carp plushie
+  description: 一个可爱的毛绒玩具，外形酷似那只巨大的太空鲤鱼。 | An adorable stuffed toy that resembles the monstrous space carp.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/carp.rsi
@@ -809,8 +806,8 @@
 - type: entity
   parent: PlushieCarp
   id: PlushieMagicarp
-  name: magicarp plushie
-  description: An adorable stuffed toy resembling the exceedingly rare magicarp.
+  name: 鲤鱼王毛绒玩具 | magicarp plushie
+  description: 一个可爱的毛绒玩具，外形酷似极其稀有的鲤鱼王。 | An adorable stuffed toy resembling the exceedingly rare magicarp.
   components:
   - type: Sprite
     state: magicplush
@@ -832,8 +829,8 @@
 - type: entity
   parent: PlushieCarp
   id: PlushieRainbowCarp
-  name: rainbow carp plushie
-  description: An adorable stuffed toy resembling the legendary rainbow carp.
+  name: 彩虹鲤鱼毛绒玩具 | rainbow carp plushie
+  description: 一个可爱的毛绒玩具，外形酷似传说中的彩虹鲤鱼。 | An adorable stuffed toy resembling the legendary rainbow carp.
   components:
   - type: Sprite
     state: rainbowcarpplush
@@ -841,7 +838,7 @@
     radius: 1.5
     energy: 2
   - type: RgbLightController
-    layers: [ 0 ]
+    layers: [0]
   - type: Item
     inhandVisuals:
       left:
@@ -854,8 +851,8 @@
 - type: entity
   parent: PlushieCarp
   id: PlushieHolocarp
-  name: holocarp plushie
-  description: A holographic stuffed toy resembling science's nemesis - the holocarp.
+  name: 全息鲤鱼玩偶 | holocarp plushie
+  description: 一个全息毛绒玩具，外形酷似科学的天敌——全息鲤鱼。 | A holographic stuffed toy resembling science's nemesis - the holocarp.
   components:
   - type: Sprite
     state: holoplush
@@ -877,8 +874,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieSlime
-  name: slime plushie
-  description: An adorable stuffed toy that resembles a slime. It's basically a hacky sack.
+  name: 史莱姆毛绒玩具 | slime plushie
+  description: 一个可爱的毛绒玩具，外形像史莱姆。基本上就是个沙包。 | An adorable stuffed toy that resembles a slime. It's basically a hacky sack.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/slime.rsi
@@ -910,8 +907,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieSnake
-  name: snake plushie
-  description: An adorable stuffed toy that resembles a snake.
+  name: 蛇形毛绒玩具 | snake plushie
+  description: 一个可爱的毛绒玩具，外形像蛇。 | An adorable stuffed toy that resembles a snake.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/snake.rsi
@@ -948,8 +945,8 @@
 - type: entity
   parent: BasePlushie
   id: ToyMouse
-  name: mouse toy
-  description: A colorful toy mouse!
+  name: 老鼠玩具 | mouse toy
+  description: 一个色彩缤纷的玩具老鼠！ | A colorful toy mouse!
   components:
   - type: Sprite
     sprite: Objects/Fun/toy_mouse.rsi
@@ -982,8 +979,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieVox
-  name: vox plushie
-  description: SKREEEEEEEEEEEE!
+  name: vox毛绒玩偶 | vox plushie
+  description: 嘶嘶嘶嘶嘶嘶嘶嘶嘶！ | SKREEEEEEEEEEEE!
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/vox.rsi
@@ -1021,8 +1018,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieAtmosian
-  name: atmosian plushie
-  description: An adorable stuffed toy that resembles a brave atmosian. Unfortunately, he won't fix those depressurizations for you.
+  name: 大气人毛绒玩具 | atmosian plushie
+  description: 一个可爱的毛绒玩具，外形像一位勇敢的大气人。可惜的是，他不会帮你解决那些失压问题。 | An adorable stuffed toy that resembles a brave atmosian. Unfortunately, he won't fix those depressurizations for you.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/atmosian.rsi
@@ -1043,8 +1040,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieXeno
-  name: xeno plushie
-  description: An adorable stuffed toy that resembles a scary xenomorf. You're lucky it's just a toy.
+  name: 异形毛绒玩具 | xeno plushie
+  description: 一个可爱的毛绒玩具，外形像可怕的异形。幸好它只是个玩具。 | An adorable stuffed toy that resembles a scary xenomorf. You're lucky it's just a toy.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/xeno.rsi
@@ -1084,8 +1081,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushiePenguin
-  name: penguin plushie
-  description: I use arch btw!
+  name: 企鹅毛绒玩具 | penguin plushie
+  description: 顺便说一下，我用的是arch！ | I use arch btw!
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/penguin.rsi
@@ -1102,8 +1099,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieHuman
-  name: human plushie
-  description: This is a felt plush of a human. All craftsmanship is of the lowest quality. The human is naked. The human is crying. The human is screaming.
+  name: 人类毛绒玩偶 | human plushie
+  description: 这是一个毛毡制的人类毛绒玩偶。所有工艺均为最低品质。这个人类是裸体的。这个人类在哭泣。这个人类在尖叫。 | This is a felt plush of a human. All craftsmanship is of the lowest quality. The human is naked. The human is crying. The human is screaming.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/human.rsi
@@ -1149,8 +1146,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieMoth
-  name: moth plushie
-  description: Cute and fluffy moth plushie. Enjoy, bz!
+  name: 飞蛾毛绒玩偶 | moth plushie
+  description: 可爱蓬松的飞蛾毛绒玩偶。请享用，bz！ | Cute and fluffy moth plushie. Enjoy, bz!
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/moth.rsi
@@ -1182,8 +1179,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieSheep
-  name: sheep plushie
-  description: A soft, wooly, stuffed sheep. 100% cotton.
+  name: 绵羊毛绒玩具 | sheep plushie
+  description: 一只柔软、毛茸茸的绵羊毛绒玩具。100%纯棉。 | A soft, wooly, stuffed sheep. 100% cotton.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/sheep.rsi
@@ -1223,8 +1220,8 @@
 - type: entity
   parent: PlushieSheep
   id: PlushieSpaceSheep
-  name: space sheep plushie
-  description: A soft, wooly, cosmically stuffed sheep. 100% cotton.
+  name: 太空羊毛绒玩具 | space sheep plushie
+  description: 一只柔软、毛茸茸、充满宇宙感的填充绵羊。100%纯棉。 | A soft, wooly, cosmically stuffed sheep. 100% cotton.
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/sheep.rsi
@@ -1258,8 +1255,8 @@
 - type: entity
   parent: BasePlushie
   id: PlushieVulp
-  name: vulpkanin plushie
-  description: An adorable stuffed toy that resembles a vulpkanin. Yip! Yap!
+  name: 狐卡宁毛绒玩具 | vulpkanin plushie
+  description: 一个可爱的毛绒玩具，外形像一只狐卡宁。嘤！嗷！ | An adorable stuffed toy that resembles a vulpkanin. Yip! Yap!
   components:
   - type: Sprite
     sprite: Objects/Fun/Plushies/vulp.rsi
@@ -1299,8 +1296,8 @@
 - type: entity
   parent: BasePlushie
   id: ToyIan
-  name: ian toy
-  description: Unable to eat, but just as fluffy as the real guy!
+  name: 伊恩玩具 | ian toy
+  description: 不能吃，但和真家伙一样毛茸茸的！ | Unable to eat, but just as fluffy as the real guy!
   components:
   - type: Sprite
     sprite: Objects/Fun/toy_ian.rsi
@@ -1338,14 +1335,14 @@
 - type: entity
   parent: BasePlushie
   id: ToyAmongPequeno
-  name: among pequeño
-  description: Sus!
+  name: 在 pequeño 之中 | among pequeño
+  description: 苏斯！ | Sus!
   components:
   - type: Sprite
     sprite: Objects/Fun/pequeno.rsi
     layers:
     - state: base
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
     - state: visor
   - type: Clothing
     sprite: Objects/Fun/pequeno.rsi

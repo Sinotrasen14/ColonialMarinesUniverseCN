@@ -1,8 +1,8 @@
 - type: entity
-  name: BaseWeaponSniper
+  name: 基础武器狙击枪 | BaseWeaponSniper
   parent: BaseItem
   id: BaseWeaponSniper
-  description: A rooty tooty point and shooty.
+  description: 一把土里土气、指哪打哪的枪。 | A rooty tooty point and shooty.
   abstract: true
   components:
   - type: Sprite
@@ -39,17 +39,17 @@
     price: 500
 
 - type: entity
-  name: Kardashev-Mosin
+  name: 卡达谢夫-莫辛 | Kardashev-Mosin
   parent: [BaseWeaponSniper, BaseGunWieldable, SolutionDart, BaseMajorContraband]
   id: WeaponSniperMosin
-  description: A true relic, the Kardashev-Mosin has served in nearly every armed conflict since its creation 670 years ago. The bolt-action design of the rifle remains virtually identical to its original design, whether used for hunting, sniping, or endless trench warfare. Loads 10 rounds of .30 rifle.
+  description: 真正的遗物，卡达谢夫-莫辛自670年前问世以来，几乎参与了每一场武装冲突。无论是用于狩猎、狙击还是无尽的堑壕战，这支步枪的栓动设计几乎与其原始设计完全一致。装填10发.30步枪弹。 | A true relic, the Kardashev-Mosin has served in nearly every armed conflict since its creation 670 years ago. The bolt-action design of the rifle remains virtually identical to its original design, whether used for hunting, sniping, or endless trench warfare. Loads 10 rounds of .30 rifle.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Snipers/bolt_gun_wood.rsi
     layers:
     - state: base
     - state: base1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
@@ -80,17 +80,17 @@
   - type: SolutionTransfer
     maxTransferAmount: 2
   - type: Tool
-    qualities: [ Slicing ]
+    qualities: [Slicing]
     speedModifier: 0.5 #It's a bayonet
   - type: GunRequiresWield
   - type: StaticPrice
     price: 500
 
 - type: entity
-  name: Hristov
+  name: 赫里斯托夫 | Hristov
   parent: [BaseWeaponSniper, BaseGunWieldable, BaseSyndicateContraband]
   id: WeaponSniperHristov
-  description: For when you absolutely, positively need to make someone regret their life choices from a safe distance. Uses .60 anti-materiel ammo.
+  description: 当你绝对、肯定需要从安全距离让某人后悔他们的人生选择时。使用.60反器材弹药。 | For when you absolutely, positively need to make someone regret their life choices from a safe distance. Uses .60 anti-materiel ammo.
   components:
   - type: Item
     size: Huge
@@ -128,10 +128,10 @@
     price: 3500
 
 - type: entity
-  name: musket
-  parent: [ BaseWeaponSniper, BaseGunWieldable, BaseMajorContraband ]
+  name: 火枪 | musket
+  parent: [BaseWeaponSniper, BaseGunWieldable, BaseMajorContraband]
   id: Musket
-  description: This should've been in a museum long before you were born. Uses .60 anti-materiel ammo.
+  description: 这玩意儿在你出生前就该进博物馆了。使用.60反器材弹药。 | This should've been in a museum long before you were born. Uses .60 anti-materiel ammo.
   components:
   - type: Tool
     qualities:
@@ -169,10 +169,10 @@
   - type: GunRequiresWield
 
 - type: entity
-  name: flintlock pistol
+  name: 燧发手枪 | flintlock pistol
   parent: [BaseWeaponSniper, BaseMajorContraband]
   id: WeaponPistolFlintlock
-  description: A pirate's companion. Yarrr! Uses .45 magnum ammo.
+  description: 海盗的伙伴。呀嘿嘿！使用.45马格南弹药。 | A pirate's companion. Yarrr! Uses .45 magnum ammo.
   components:
   - type: Gun
     minAngle: 0
@@ -193,7 +193,7 @@
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - CartridgeMagnum # changed from Anti-material rifle rounds because it's a flintlock pistol not a Hristov
+      - CartridgeMagnum   # changed from Anti-material rifle rounds because it's a flintlock pistol not a Hristov
     capacity: 1
     proto: CartridgeMagnum
   - type: StaticPrice
@@ -205,4 +205,4 @@
   suffix: Empty
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:

@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCArmorVest
   id: RMCArmorVestTSEPA
-  name: NSPA armored vest
-  description: An Neroid Sector Policing Authority armored vest that protects against some damage.
+  name: NSPA装甲背心
+  description: 一件NSPA装甲背心，可抵挡部分伤害。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/tsepa_police_vest.rsi
@@ -13,23 +13,16 @@
     bullet: 20
     bio: 20
     explosionArmor: 10
-
 - type: entity
   id: RMCBaseTSEArmor
   abstract: true
-#  components:
-#  - type: ClothingRequireEquipped
-#    autoUnequip: true
-#    denyReason: rmc-armor-not-tse-jumpsuit
-#    whitelist:
-#      tags:
-#      - RMCUniformTSE
-
 - type: entity
-  parent: [RMCBaseTSEArmor, RMCBaseMarineArmorLight]
+  parent:
+  - RMCBaseTSEArmor
+  - RMCBaseMarineArmorLight
   id: RMCArmourM4TSEPA
-  name: M4 pattern light NSPA armour
-  description: A modified variant of the M4R armor, stripped of additional riot plating for civilian officer use. A Neroid Sector Policing Authority badge is sewn into the chestplate.
+  name: M4型NSPA轻型护甲
+  description: M4R护甲的改装型号，去除了额外的防暴装甲板，供文职警官使用。胸甲上缝有一枚内罗伊德星区治安局徽章。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/standard.rsi
@@ -41,12 +34,13 @@
   - type: ClothingSpeedModifier
     walkModifier: 0.897
     sprintModifier: 0.897
-
 - type: entity
-  parent: [RMCBaseTSEArmor, RMCBaseMarineArmorLight]
+  parent:
+  - RMCBaseTSEArmor
+  - RMCBaseMarineArmorLight
   id: RMCArmourM4TSEPAChief
-  name: M4 pattern inspector NSPA armour
-  description: A modified variant of the M4 Neroid Sector Policing Authority armour to have the additional riot plating returned, feauturing a golden insignia on the chestplate.
+  name: M4型NSPA督察护甲
+  description: M4型NSPA督察护甲的改装变体，恢复了附加防暴装甲板，胸甲上饰有金色徽章。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/marshal.rsi
@@ -63,21 +57,24 @@
   - type: ExplosionResistance
     damageCoefficient: 0
     worn: false
-
 - type: entity
-  parent: [RMCJacketWindbreaker, RMCAllowSuitStorageClothingJacketMB]
+  parent:
+  - RMCJacketWindbreaker
+  - RMCAllowSuitStorageClothingJacketMB
   id: RMCJacketParaCombatJacket
-  name: paratrooper combat jacket
-  description: A rugged, all-weather combat jacket issued to the IASF Paratrooper regiments. Designed for versatility, it serves as both a field garment and a lightweight layer of protection. Reinforced with ballistic fibers and treated for weather resistance, it offers limited defense against shrapnel and small arms fire while keeping Paramarines comfortable in harsh conditions. Its deep green color and durable fabric make it a staple for both active deployment and off-duty wear.
+  name: 伞兵作战夹克
+  description: 一件坚固耐用、适应全天候的作战夹克，配发给IASF伞兵团。它设计灵活多用，既可作为野战服装，也可作为轻便的防护层。采用防弹纤维加固并经过耐候处理，能对弹片和轻武器射击提供有限防护，同时让伞兵在严酷环境中保持舒适。其深绿色外观与耐用面料，使其成为现役部署与休班穿着的必备之选。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para.rsi
     layers:
     - state: icon
-      map: [ "unfoldedLayer" ]
+      map:
+      - unfoldedLayer
       visible: true
     - state: jacket-icon
-      map: ["foldedLayer"]
+      map:
+      - foldedLayer
       visible: false
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para.rsi
@@ -86,39 +83,38 @@
     bullet: 15
     bio: 10
     explosionArmor: 10
-
 - type: entity
-  parent: [RMCAllowSuitStorageClothingJacketMB, RMCBaseJacket]
+  parent:
+  - RMCAllowSuitStorageClothingJacketMB
+  - RMCBaseJacket
   id: RMCJacketParaCOJacket
-  name: paratrooper commanding officer’s service jacket
-  description: A service jacket typically worn by Commanding Officers of the IASF Paratrooper regiments. Reinforced with lightweight Kevlar shards, it offers limited protection against stabbing weapons and small arms fire while maintaining a formal yet practical design for leadership in the field.
+  name: 伞兵指挥官勤务夹克
+  description: IASF 伞兵团指挥官通常穿着的一种制服夹克。它用轻质凯夫拉碎片加固，能对刺击武器和小型枪械火力提供有限防护，同时保持正式而实用的设计，便于在战场上领导。
   suffix: Survivor, Paramarine, CO
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co.rsi
-    - type: Clothing
-      sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co.rsi
-    - type: CMArmor
-      melee: 10
-      bullet: 10
-
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co.rsi
+  - type: CMArmor
+    melee: 10
+    bullet: 10
 - type: entity
   parent: RMCJacketParaCOJacket
   id: RMCJacketParaCOJacketAlt
-  name: paratrooper commanding officer’s service jacket
-  description: A service jacket typically worn by Commanding Officers of the RCM's Paramarine regiments. Reinforced with lightweight Kevlar shards, it offers limited protection against stabbing weapons and small arms fire while maintaining a formal yet practical design for leadership in the field.
+  name: 伞兵指挥官勤务夹克
+  description: RCM 的伞降陆战队团指挥官通常穿着的一种制服夹克。它用轻质凯夫拉碎片加固，能对刺击武器和小型枪械火力提供有限防护，同时保持正式而实用的设计，便于在战场上领导。
   suffix: Survivor, Paramarine, CO alt
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co_alt.rsi
-    - type: Clothing
-      sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co_alt.rsi
-
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co_alt.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/para_co_alt.rsi
 - type: entity
   parent: RMCJacketParaCOJacket
   id: RMCJacketParaCOJacketFilled
   suffix: Survivor, Paramarine, Filled, CO
   components:
-    - type: StorageFill
-      contents:
-        - id: RMCTacticalPrybar
+  - type: StorageFill
+    contents:
+    - id: RMCTacticalPrybar

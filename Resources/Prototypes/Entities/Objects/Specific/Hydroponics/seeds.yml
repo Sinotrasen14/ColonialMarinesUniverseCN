@@ -1,870 +1,870 @@
 - type: entity
-  parent: [ BaseItem, BasePaperLabelable ] #TODO: Add sprites for different types of paper, replace BasePaperLabelable with BasePaperLabelableVisualized
+  parent: [BaseItem, BasePaperLabelable]   #TODO: Add sprites for different types of paper, replace BasePaperLabelable with BasePaperLabelableVisualized
   id: SeedBase
   abstract: true
   components:
-    - type: Sprite
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/seeds.rsi
+    layers:
+    - state: seed
+    - state: paper
+      visible: false
+      map: ["enum.PaperLabelVisuals.Layer"]
       sprite: Objects/Specific/Hydroponics/seeds.rsi
-      layers:
-      - state: seed
-      - state: paper
-        visible: false
-        map: ["enum.PaperLabelVisuals.Layer"]
-        sprite: Objects/Specific/Hydroponics/seeds.rsi
-    - type: Appearance
-    - type: GenericVisualizer
-      visuals:
-        enum.PaperLabelVisuals.HasLabel:
-          enum.PaperLabelVisuals.Layer:
-            True: { visible: true }
-            False: { visible: false }
-    - type: Item
-      size: Tiny
-    - type: StaticPrice
-      price: 20
-    - type: PhysicalComposition
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.PaperLabelVisuals.HasLabel:
+        enum.PaperLabelVisuals.Layer:
+          true: {visible: true}
+          false: {visible: false}
+  - type: Item
+    size: Tiny
+  - type: StaticPrice
+    price: 20
+  - type: PhysicalComposition
 
 - type: entity
   parent: SeedBase
-  name: packet of wheat seeds
+  name: 一包小麦种子 | packet of wheat seeds
   id: WheatSeeds
   components:
-    - type: Seed
-      plantId: WheatPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/wheat.rsi
+  - type: Seed
+    plantId: WheatPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/wheat.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of meatwheat seeds
-  description: "If you ever wanted to drive a vegetarian to insanity, here's how."
+  name: 一包肉麦种子 | packet of meatwheat seeds
+  description: "如果你曾想让一个素食主义者发疯，这就是方法。 | If you ever wanted to drive a vegetarian to insanity, here's how."
   id: MeatwheatSeeds
   components:
-    - type: Seed
-      plantId: MeatWheatPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/meatwheat.rsi
+  - type: Seed
+    plantId: MeatWheatPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/meatwheat.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of oat seeds
+  name: 一包燕麦种子 | packet of oat seeds
   id: OatSeeds
   components:
-    - type: Seed
-      plantId: OatPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/oat.rsi
+  - type: Seed
+    plantId: OatPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/oat.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of banana seeds
+  name: 一包香蕉种子 | packet of banana seeds
   id: BananaSeeds
   components:
-    - type: Seed
-      plantId: BananaPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/banana.rsi
+  - type: Seed
+    plantId: BananaPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/banana.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of mimana seeds
+  name: 一包米玛纳种子 | packet of mimana seeds
   id: MimanaSeeds
   components:
-    - type: Seed
-      plantId: MimanaPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/mimana.rsi
+  - type: Seed
+    plantId: MimanaPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/mimana.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of carrot seeds
+  name: 一包胡萝卜种子 | packet of carrot seeds
   id: CarrotSeeds
   components:
-    - type: Seed
-      plantId: CarrotPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/carrot.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 6
-          reagents:
-          - ReagentId: CMUPhenol
-            Quantity: 3
-          - ReagentId: CMUConiine
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: CarrotPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/carrot.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: CMUPhenol
+          Quantity: 3
+        - ReagentId: CMUConiine
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of cabbage seeds
+  name: 一包卷心菜种子 | packet of cabbage seeds
   id: CabbageSeeds
   components:
-    - type: Seed
-      plantId: CabbagePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/cabbage.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUPsoralen
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: CabbagePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/cabbage.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUPsoralen
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of garlic seeds
+  name: 一包蒜种 | packet of garlic seeds
   id: GarlicSeeds
   components:
-    - type: Seed
-      plantId: GarlicPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/garlic.rsi
+  - type: Seed
+    plantId: GarlicPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/garlic.rsi
 
 - type: entity
   parent: SeedBase
   id: LaughinPeaSeeds
-  name: packet of laughin' pea pods
-  description: "These seeds give off a very soft purple glow.. they should grow into Laughin' Peas."
+  name: 一包笑豆荚 | packet of laughin' pea pods
+  description: "这些种子散发着柔和的紫色光芒……它们应该会长成笑豆。 | These seeds give off a very soft purple glow.. they should grow into Laughin' Peas."
   components:
-    - type: Seed
-      plantId: LaughinPeaPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/laughin_pea.rsi
+  - type: Seed
+    plantId: LaughinPeaPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/laughin_pea.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of lemon seeds
+  name: 一包柠檬种子 | packet of lemon seeds
   id: LemonSeeds
   components:
-    - type: Seed
-      plantId: LemonPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/lemon.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUPsoralen
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: LemonPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/lemon.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUPsoralen
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of lemoon seeds
+  name: 一包柠檬种子 | packet of lemoon seeds
   id: LemoonSeeds
   components:
-    - type: Seed
-      plantId: LemoonPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/lemoon.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUPsoralen
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: LemoonPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/lemoon.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUPsoralen
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of lime seeds
+  name: 一包酸橙种子 | packet of lime seeds
   id: LimeSeeds
   components:
-    - type: Seed
-      plantId: LimePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/lime.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUPsoralen
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: LimePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/lime.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUPsoralen
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of orange seeds
+  name: 一包橙子种子 | packet of orange seeds
   id: OrangeSeeds
   components:
-    - type: Seed
-      plantId: OrangePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/orange.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUPsoralen
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: OrangePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/orange.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUPsoralen
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of extradimensional orange seeds
-  description: "Polygonal seeds."
+  name: 一包异次元橙种子 | packet of extradimensional orange seeds
+  description: "多边形的种子。 | Polygonal seeds."
   id: ExtradimensionalOrangeSeeds
   components:
-    - type: Seed
-      plantId: ExtradimensionalOrangePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/extradimensional_orange.rsi
+  - type: Seed
+    plantId: ExtradimensionalOrangePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/extradimensional_orange.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of pineapple seeds
+  name: 一包菠萝种子 | packet of pineapple seeds
   id: PineappleSeeds
   components:
-    - type: Seed
-      plantId: PineapplePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/pineapple.rsi
+  - type: Seed
+    plantId: PineapplePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/pineapple.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of potato seeds
+  name: 一包土豆种子 | packet of potato seeds
   id: PotatoSeeds
   components:
-    - type: Seed
-      plantId: PotatoPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/potato.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUAtropine
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: PotatoPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/potato.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUAtropine
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of sugarcane seeds
+  name: 一包甘蔗种子 | packet of sugarcane seeds
   id: SugarcaneSeeds
   components:
-    - type: Seed
-      plantId: SugarcanePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/sugarcane.rsi
+  - type: Seed
+    plantId: SugarcanePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/sugarcane.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of tea plant seeds
+  name: 一包茶树种子 | packet of tea plant seeds
   id: TeaPlantSeeds
   components:
-    - type: Seed
-      plantId: TeaPlantPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/tea_plant.rsi
+  - type: Seed
+    plantId: TeaPlantPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/tea_plant.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of papercane seeds
+  name: 一包纸藤种子 | packet of papercane seeds
   id: PapercaneSeeds
   components:
-    - type: Seed
-      plantId: PapercanePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/papercane.rsi
+  - type: Seed
+    plantId: PapercanePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/papercane.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of tower cap spores
+  name: 塔冠菌孢子包 | packet of tower cap spores
   id: TowercapSeeds
   components:
-    - type: Seed
-      plantId: TowercapPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/towercap.rsi
+  - type: Seed
+    plantId: TowercapPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/towercap.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of steel cap spores
+  name: 一包钢帽孢子 | packet of steel cap spores
   id: SteelcapSeeds
   components:
-    - type: Seed
-      plantId: SteelcapPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/steelcap.rsi
+  - type: Seed
+    plantId: SteelcapPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/steelcap.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of tomato seeds
+  name: 一包番茄种子 | packet of tomato seeds
   id: TomatoSeeds
   components:
-    - type: Seed
-      plantId: TomatoPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/tomato.rsi
+  - type: Seed
+    plantId: TomatoPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/tomato.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of blue tomato seeds
+  name: 一包蓝色番茄种子 | packet of blue tomato seeds
   id: BlueTomatoSeeds
   components:
-    - type: Seed
-      plantId: BlueTomatoPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/blue_tomato.rsi
+  - type: Seed
+    plantId: BlueTomatoPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/blue_tomato.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of blood tomato seeds
+  name: 一包血番茄种子 | packet of blood tomato seeds
   id: BloodTomatoSeeds
   components:
-    - type: Seed
-      plantId: BloodTomatoPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/blood_tomato.rsi
+  - type: Seed
+    plantId: BloodTomatoPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/blood_tomato.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of killer tomato seeds
+  name: 一包杀手番茄种子 | packet of killer tomato seeds
   id: KillerTomatoSeeds
   components:
-    - type: Seed
-      plantId: KillerTomatoPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/tomatokiller.rsi
+  - type: Seed
+    plantId: KillerTomatoPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/tomatokiller.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of eggplant seeds
+  name: 一包茄子种子 | packet of eggplant seeds
   id: EggplantSeeds
   components:
-    - type: Seed
-      plantId: EggplantPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/eggplant.rsi
+  - type: Seed
+    plantId: EggplantPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/eggplant.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of apple seeds
+  name: 一包苹果种子 | packet of apple seeds
   id: AppleSeeds
   components:
-    - type: Seed
-      plantId: ApplePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/apple.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUCyanide
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: ApplePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/apple.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUCyanide
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of golden apple seeds
+  name: 一包金苹果种子 | packet of golden apple seeds
   id: GoldenAppleSeeds
   components:
-    - type: Seed
-      plantId: GoldenApplePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/golden_apple.rsi
+  - type: Seed
+    plantId: GoldenApplePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/golden_apple.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of corn seeds
+  name: 一包玉米种子 | packet of corn seeds
   id: CornSeeds
   components:
-    - type: Seed
-      plantId: CornPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/corn.rsi
+  - type: Seed
+    plantId: CornPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/corn.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of chanterelle spores
+  name: 鸡油菌孢子包 | packet of chanterelle spores
   id: ChanterelleSeeds
   components:
-    - type: Seed
-      plantId: ChanterellePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/chanterelle.rsi
+  - type: Seed
+    plantId: ChanterellePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/chanterelle.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of egg-plant seeds
+  name: 一包茄子种子 | packet of egg-plant seeds
   id: EggySeeds
   components:
-    - type: Seed
-      plantId: EggyPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/eggy.rsi
+  - type: Seed
+    plantId: EggyPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/eggy.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of tobacco seeds
-  description: "These seeds grow into tobacco plants."
+  name: 一包烟草种子 | packet of tobacco seeds
+  description: "这些种子会长成烟草植株。 | These seeds grow into tobacco plants."
   id: TobaccoSeeds
   components:
-    - type: Seed
-      plantId: TobaccoPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/tobacco.rsi
+  - type: Seed
+    plantId: TobaccoPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/tobacco.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of cannabis seeds
-  description: "Taxable."
+  name: 一包大麻种子 | packet of cannabis seeds
+  description: "应税。 | Taxable."
   id: CannabisSeeds
   components:
-    - type: Seed
-      plantId: CannabisPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/cannabis.rsi
+  - type: Seed
+    plantId: CannabisPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/cannabis.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of rainbow cannabis seeds
-  description: "These seeds grow into rainbow weed. Groovy... and also highly addictive."
+  name: 一包彩虹大麻种子 | packet of rainbow cannabis seeds
+  description: "这些种子会长成彩虹大麻。太酷了……而且极易上瘾。 | These seeds grow into rainbow weed. Groovy... and also highly addictive."
   id: RainbowCannabisSeeds
   components:
-    - type: Seed
-      plantId: RainbowCannabisPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/rainbow_cannabis.rsi
+  - type: Seed
+    plantId: RainbowCannabisPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/rainbow_cannabis.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of nettle seeds
-  description: "Handle with gloves."
+  name: 一包荨麻种子 | packet of nettle seeds
+  description: "戴手套处理。 | Handle with gloves."
   id: NettleSeeds
   components:
-    - type: Seed
-      plantId: NettlePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/nettle.rsi
+  - type: Seed
+    plantId: NettlePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/nettle.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of death nettle seeds
-  description: "Handle with very thick gloves."
+  name: 一包死亡荨麻种子 | packet of death nettle seeds
+  description: "请戴上非常厚的手套处理。 | Handle with very thick gloves."
   id: DeathNettleSeeds
   components:
-    - type: Seed
-      plantId: DeathNettlePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/death_nettle.rsi
+  - type: Seed
+    plantId: DeathNettlePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/death_nettle.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of chili seeds
-  description: "Spicy."
+  name: 一包辣椒种子 | packet of chili seeds
+  description: "辣。 | Spicy."
   id: ChiliSeeds
   components:
-    - type: Seed
-      plantId: ChiliPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/chili.rsi
+  - type: Seed
+    plantId: ChiliPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/chili.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of chilly seeds
-  description: "Frostburn."
+  name: 一包冰冷种子 | packet of chilly seeds
+  description: "霜灼。 | Frostburn."
   id: ChillySeeds
   components:
-    - type: Seed
-      plantId: ChillyPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/chilly.rsi
+  - type: Seed
+    plantId: ChillyPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/chilly.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of aloe seeds
-  description: "Soothing."
+  name: 一包芦荟种子 | packet of aloe seeds
+  description: "舒缓。 | Soothing."
   id: AloeSeeds
   components:
-    - type: Seed
-      plantId: AloePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/aloe.rsi
+  - type: Seed
+    plantId: AloePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/aloe.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of poppy seeds
-  description: "Do not eat within 72 hours of a drug test."
+  name: 一包罂粟籽 | packet of poppy seeds
+  description: "药物检测前72小时内请勿食用。 | Do not eat within 72 hours of a drug test."
   id: PoppySeeds
   components:
-    - type: Seed
-      plantId: PoppyPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/poppy.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUAtropine
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: PoppyPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/poppy.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUAtropine
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 
 - type: entity
   parent: SeedBase
-  name: packet of lily seeds
-  description: "These seeds grow into lilies."
+  name: 一包百合种子 | packet of lily seeds
+  description: "这些种子会长成百合。 | These seeds grow into lilies."
   id: LilySeeds
   components:
-    - type: Seed
-      plantId: LilyPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/lily.rsi
+  - type: Seed
+    plantId: LilyPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/lily.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of lingzhi spores
-  description: "Also known as reishi."
+  name: 灵芝孢子粉包 | packet of lingzhi spores
+  description: "又称灵芝。 | Also known as reishi."
   id: LingzhiSeeds
   components:
-    - type: Seed
-      plantId: LingzhiPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/lingzhi.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUZygacine
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: LingzhiPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/lingzhi.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUZygacine
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of ambrosia vulgaris seeds
-  description: "A medicinal plant for the common folk."
+  name: 一包普通仙草种子 | packet of ambrosia vulgaris seeds
+  description: "一种平民百姓用的药用植物。 | A medicinal plant for the common folk."
   id: AmbrosiaVulgarisSeeds
   components:
-    - type: Seed
-      plantId: AmbrosiaVulgarisPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/ambrosia_vulgaris.rsi
+  - type: Seed
+    plantId: AmbrosiaVulgarisPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/ambrosia_vulgaris.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of ambrosia deus seeds
-  description: "A medicinal plant for the gods themselves."
+  name: 一包仙馔神种 | packet of ambrosia deus seeds
+  description: "一种供神明自己使用的药用植物。 | A medicinal plant for the gods themselves."
   id: AmbrosiaDeusSeeds
   components:
-    - type: Seed
-      plantId: AmbrosiaDeusPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/ambrosia_deus.rsi
+  - type: Seed
+    plantId: AmbrosiaDeusPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/ambrosia_deus.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of galaxythistle seeds
-  description: "Brushes of starry nights."
+  name: 一包银河蓟种子 | packet of galaxythistle seeds
+  description: "繁星之夜的画笔。 | Brushes of starry nights."
   id: GalaxythistleSeeds
   components:
-    - type: Seed
-      plantId: GalaxythistlePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/galaxythistle.rsi
+  - type: Seed
+    plantId: GalaxythistlePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/galaxythistle.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of glasstle seeds
-  description: "Scars of gloomy nights."
+  name: 一包玻璃荨麻种子 | packet of glasstle seeds
+  description: "阴郁之夜的伤痕。 | Scars of gloomy nights."
   id: GlasstleSeeds
   components:
-    - type: Seed
-      plantId: GlasstlePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/glasstle.rsi
+  - type: Seed
+    plantId: GlasstlePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/glasstle.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of fly amanita spores
-  description: "The iconic, extremely deadly mushroom to be used for purely ornamental purposes."
+  name: 一包毒蝇伞孢子 | packet of fly amanita spores
+  description: "标志性的、极其致命的蘑菇，仅用于纯装饰目的。 | The iconic, extremely deadly mushroom to be used for purely ornamental purposes."
   id: FlyAmanitaSeeds
   components:
-    - type: Seed
-      plantId: FlyAmanitaPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/fly_amanita.rsi
+  - type: Seed
+    plantId: FlyAmanitaPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/fly_amanita.rsi
 
 - type: entity
   parent: [SeedBase, BaseSyndicateContraband]
-  name: packet of gatfruit seeds
-  description: "These are no peashooters."
+  name: 一包加特林豌豆种子 | packet of gatfruit seeds
+  description: "这些可不是豌豆射手。 | These are no peashooters."
   id: GatfruitSeeds
   components:
-    - type: Seed
-      plantId: GatfruitPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/gatfruit.rsi
+  - type: Seed
+    plantId: GatfruitPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/gatfruit.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of onion seeds
-  description: "Not a shallot."
+  name: 一包洋葱种子 | packet of onion seeds
+  description: "不是红葱头。 | Not a shallot."
   id: OnionSeeds
   components:
-    - type: Seed
-      plantId: OnionPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/onion.rsi
+  - type: Seed
+    plantId: OnionPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/onion.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of rice seeds
+  name: 一包水稻种子 | packet of rice seeds
   id: RiceSeeds
   components:
-    - type: Seed
-      plantId: RicePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/rice.rsi
+  - type: Seed
+    plantId: RicePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/rice.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of soybean seeds
+  name: 一包大豆种子 | packet of soybean seeds
   id: SoybeanSeeds
   components:
-    - type: Seed
-      plantId: SoybeanPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/soybeans.rsi
+  - type: Seed
+    plantId: SoybeanPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/soybeans.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of spaceman's trumpet seeds
+  name: 一包曼陀罗种子 | packet of spaceman's trumpet seeds
   id: SpacemansTrumpetSeeds
   components:
-    - type: Seed
-      plantId: SpacemansTrumpetPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/spacemans_trumpet.rsi
+  - type: Seed
+    plantId: SpacemansTrumpetPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/spacemans_trumpet.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of koibean seeds
+  name: 一包科伊豆种子 | packet of koibean seeds
   id: KoibeanSeeds
   components:
-    - type: Seed
-      plantId: KoibeanPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/koibean.rsi
+  - type: Seed
+    plantId: KoibeanPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/koibean.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of red onion seeds
-  description: "Purple despite the name."
+  name: 一包红洋葱种子 | packet of red onion seeds
+  description: "紫色，尽管名字如此。 | Purple despite the name."
   id: OnionRedSeeds
   components:
-    - type: Seed
-      plantId: OnionRedPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/onion_red.rsi
+  - type: Seed
+    plantId: OnionRedPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/onion_red.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of watermelon seeds
+  name: 一包西瓜种子 | packet of watermelon seeds
   id: WatermelonSeeds
   components:
-    - type: Seed
-      plantId: WatermelonPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/watermelon.rsi
+  - type: Seed
+    plantId: WatermelonPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/watermelon.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of holymelon seeds
+  name: 一包神圣瓜种子 | packet of holymelon seeds
   id: HolymelonSeeds
   components:
-    - type: Seed
-      plantId: HolymelonPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/holymelon.rsi
+  - type: Seed
+    plantId: HolymelonPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/holymelon.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of grape seeds
+  name: 一包葡萄籽 | packet of grape seeds
   id: GrapeSeeds
   components:
-    - type: Seed
-      plantId: GrapePlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/grape.rsi
+  - type: Seed
+    plantId: GrapePlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/grape.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of cocoa seeds
+  name: 一包可可种子 | packet of cocoa seeds
   id: CocoaSeeds
   components:
-    - type: Seed
-      plantId: CocoaPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/cocoa.rsi
+  - type: Seed
+    plantId: CocoaPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/cocoa.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of berry seeds
+  name: 一包浆果种子 | packet of berry seeds
   id: BerrySeeds
   components:
-    - type: Seed
-      plantId: BerryPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/berries.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUThymol
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: BerryPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/berries.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUThymol
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of bungo seeds
-  description: "Don't eat the pits."
+  name: 一包丰后种子 | packet of bungo seeds
+  description: "不要吃果核。 | Don't eat the pits."
   id: BungoSeeds
   components:
-    - type: Seed
-      plantId: BungoPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/bungo.rsi
+  - type: Seed
+    plantId: BungoPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/bungo.rsi
 
 - type: entity
   parent: SeedBase
   id: PeaSeeds
-  name: packet of pea pods
-  description: "These humble plants were once a vital part in the study of genetics."
+  name: 一包豌豆荚 | packet of pea pods
+  description: "这些不起眼的植物曾是遗传学研究中的重要部分。 | These humble plants were once a vital part in the study of genetics."
   components:
-    - type: Seed
-      plantId: PeaPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/pea.rsi
+  - type: Seed
+    plantId: PeaPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/pea.rsi
 
 - type: entity
   parent: SeedBase
   id: WorldPeaSeeds
-  name: packet of world pea seeds
-  description: "These rather large seeds give off a soothing blue glow."
+  name: 一包世界豌豆种子 | packet of world pea seeds
+  description: "这些相当大的种子散发出柔和的蓝色光芒。 | These rather large seeds give off a soothing blue glow."
   components:
-    - type: Seed
-      plantId: WorldPeaPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/world_pea.rsi
+  - type: Seed
+    plantId: WorldPeaPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/world_pea.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of pumpkin seeds
+  name: 一包南瓜籽 | packet of pumpkin seeds
   id: PumpkinSeeds
   components:
-    - type: Seed
-      plantId: PumpkinPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/pumpkin.rsi
+  - type: Seed
+    plantId: PumpkinPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/pumpkin.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of blue pumpkin seeds
+  name: 一包蓝色南瓜种子 | packet of blue pumpkin seeds
   id: BluePumpkinSeeds
   components:
-    - type: Seed
-      plantId: BluePumpkinPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/blue_pumpkin.rsi
+  - type: Seed
+    plantId: BluePumpkinPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/blue_pumpkin.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of cotton seeds
+  name: 一包棉籽 | packet of cotton seeds
   id: CottonSeeds
   components:
-    - type: Seed
-      plantId: CottonPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/cotton.rsi
+  - type: Seed
+    plantId: CottonPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/cotton.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of pyrotton seeds
+  name: 一包派罗顿种子 | packet of pyrotton seeds
   id: PyrottonSeeds
   components:
-    - type: Seed
-      plantId: PyrottonPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/pyrotton.rsi
+  - type: Seed
+    plantId: PyrottonPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/pyrotton.rsi
 
 - type: entity
   parent: SeedBase
   id: RealCapfruitSeeds
-  name: packet of capfruit seeds
-  description: "Is it real, or is it fake?"
+  name: 一包帽果种子 | packet of capfruit seeds
+  description: "是真的，还是假的？ | Is it real, or is it fake?"
   components:
-    - type: Seed
-      plantId: RealCapfruitPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/capfruit.rsi
+  - type: Seed
+    plantId: RealCapfruitPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/capfruit.rsi
 
 - type: entity
   parent: RealCapfruitSeeds
   id: FakeCapfruitSeeds
   suffix: Fake
   components:
-    - type: Seed
-      plantId: FakeCapfruitPlants
+  - type: Seed
+    plantId: FakeCapfruitPlants
 
 - type: entity
   parent: SeedBase
-  name: packet of cherry seeds
+  name: 一包樱桃种子 | packet of cherry seeds
   id: CherrySeeds
   components:
-    - type: Seed
-      plantId: CherryPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/cherry.rsi
-    - type: SolutionContainerManager
-      solutions:
-        food:
-          maxVol: 3
-          reagents:
-          - ReagentId: CMUCyanide
-            Quantity: 3
-    - type: Extractable
-      grindableSolutionName: food
+  - type: Seed
+    plantId: CherryPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/cherry.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 3
+        reagents:
+        - ReagentId: CMUCyanide
+          Quantity: 3
+  - type: Extractable
+    grindableSolutionName: food
 
 - type: entity
   parent: SeedBase
-  name: packet of anomaly berry seeds
+  name: 一包异常浆果种子 | packet of anomaly berry seeds
   id: AnomalyBerrySeeds
   components:
-    - type: Seed
-      plantId: AnomalyBerryPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/anomaly_berry.rsi
+  - type: Seed
+    plantId: AnomalyBerryPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/anomaly_berry.rsi
 
 - type: entity
   parent: SeedBase
-  name: packet of bloonion seeds
+  name: 一包气球洋葱种子 | packet of bloonion seeds
   id: BloonionSeeds
   components:
-    - type: Seed
-      plantId: BloonionPlants
-    - type: Sprite
-      sprite: Objects/Specific/Hydroponics/bloonion.rsi
+  - type: Seed
+    plantId: BloonionPlants
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/bloonion.rsi

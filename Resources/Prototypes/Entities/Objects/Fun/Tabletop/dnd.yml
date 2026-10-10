@@ -1,12 +1,12 @@
-﻿# When adding a new battlemap, also add it to id: AllBattlemapsTable
+# When adding a new battlemap, also add it to id: AllBattlemapsTable
 
 # Board item (given to players)
 - type: entity
   abstract: true
   parent: BaseBoardEntity
   id: BaseBattlemap
-  name: battlemap
-  description: A battlemap for your epic dungeon exploring to begin, pieces not included!
+  name: 战斗地图 | battlemap
+  description: 一张用于开启史诗地牢探索的战斗地图，棋子不包含在内！ | A battlemap for your epic dungeon exploring to begin, pieces not included!
   components:
   - type: Sprite
     state: icon
@@ -16,75 +16,70 @@
 - type: entity
   parent: BaseBattlemap
   id: GrassBattlemap
-  name: grass battlemap
-  description: A battlemap for your epic dungeon exploring to begin, pieces not included!
+  name: 草地战斗地图 | grass battlemap
+  description: 一张用于开启史诗地牢探索的战斗地图，棋子不包含在内！ | A battlemap for your epic dungeon exploring to begin, pieces not included!
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/Battlemaps/grassbm.rsi
   - type: TabletopGame
-    setup:
-      !type:TabletopEmptySetup
+    setup: !type:TabletopEmptySetup
       boardPrototype: &GrassBoard GrassBoardTabletop
 
 - type: entity
   parent: BaseBattlemap
   id: MoonBattlemap
-  name: moon battlemap
-  description: A battlemap for your epic moon exploring to begin, pieces not included!
+  name: 月亮战斗地图 | moon battlemap
+  description: 一张用于开启史诗级月亮探索的战斗地图，棋子不包含在内！ | A battlemap for your epic moon exploring to begin, pieces not included!
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/Battlemaps/moonbm.rsi
   - type: TabletopGame
-    setup:
-      !type:TabletopEmptySetup
+    setup: !type:TabletopEmptySetup
       boardPrototype: &MoonBoard MoonBoardTabletop
 
 - type: entity
   parent: BaseBattlemap
   id: SandBattlemap
-  name: sand battlemap
-  description: A battlemap for your epic beach episodes to begin, pieces not included!
+  name: 沙滩战斗地图 | sand battlemap
+  description: 一个供你开启史诗级沙滩剧情的战斗地图，棋子不包含在内！ | A battlemap for your epic beach episodes to begin, pieces not included!
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/Battlemaps/sandbm.rsi
   - type: TabletopGame
-    setup:
-      !type:TabletopEmptySetup
+    setup: !type:TabletopEmptySetup
       boardPrototype: &SandBoard SandBoardTabletop
 
 - type: entity
   parent: BaseBattlemap
   id: SnowBattlemap
-  name: snow battlemap
-  description: A battlemap for your frigid exploring to begin, pieces not included! # if this isn't funny enough i can remove it
+  name: 雪地战斗地图 | snow battlemap
+  description: 一张供你开启寒冷探索的战斗地图，棋子不包含在内！ | A battlemap for your frigid exploring to begin, pieces not included! # if this isn't funny enough i can remove it
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/Battlemaps/snowbm.rsi
   - type: TabletopGame
-    setup:
-      !type:TabletopEmptySetup
+    setup: !type:TabletopEmptySetup
       boardPrototype: &SnowBoard SnowBoardTabletop
 
 - type: entity
   parent: BaseBattlemap
   id: ShipBattlemap
-  name: ship battlemap
-  description: A battlemap for your epic space exploring to begin, pieces not included!
+  name: 飞船战斗地图 | ship battlemap
+  description: 一张用于开启史诗级太空探索的战斗地图，棋子不包含在内！ | A battlemap for your epic space exploring to begin, pieces not included!
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/Battlemaps/shipbm.rsi
   - type: TabletopGame
     size: 543, 543
-    setup:
-      !type:TabletopEmptySetup
+    setup: !type:TabletopEmptySetup
       boardPrototype: &ShipBoard ShipBoardTabletop
 
 # Background entity (actually shown in the board)
 - type: entity
   parent: BaseBoardTabletop
   id: *GrassBoard
-  name: grass battlemap
-  categories: [ HideSpawnMenu ]
+  name: 草地战斗地图 | grass battlemap
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/Battlemaps/grassbm_tabletop.rsi
@@ -93,8 +88,8 @@
 - type: entity
   parent: BaseBoardTabletop
   id: *MoonBoard
-  name: grass battlemap
-  categories: [ HideSpawnMenu ]
+  name: 草地战斗地图 | grass battlemap
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/Battlemaps/moonbm_tabletop.rsi
@@ -103,8 +98,8 @@
 - type: entity
   parent: BaseBoardTabletop
   id: *SandBoard
-  name: sand battlemap
-  categories: [ HideSpawnMenu ]
+  name: 沙地战斗地图 | sand battlemap
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/Battlemaps/sandbm_tabletop.rsi
@@ -113,8 +108,8 @@
 - type: entity
   parent: BaseBoardTabletop
   id: *SnowBoard
-  name: snow battlemap
-  categories: [ HideSpawnMenu ]
+  name: 雪地战斗地图 | snow battlemap
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/Battlemaps/snowbm_tabletop.rsi
@@ -123,8 +118,8 @@
 - type: entity
   parent: BaseBoardTabletop
   id: *ShipBoard
-  name: ship battlemap
-  categories: [ HideSpawnMenu ]
+  name: 舰船战斗地图 | ship battlemap
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Fun/Tabletop/Battlemaps/shipbm_tabletop.rsi

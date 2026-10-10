@@ -1,7 +1,7 @@
 # Stack
 - type: stack
   id: Fulton
-  name: stack-fulton
+  name: 斯塔克-富尔顿 | stack-fulton
   icon:
     sprite: /Textures/Objects/Tools/fulton.rsi
     state: extraction_pack
@@ -12,49 +12,48 @@
 - type: entity
   id: FultonBeacon
   parent: BaseFoldable
-  name: fulton beacon
-  description: Beacon to receive fulton extractions.
+  name: 富尔顿信标 | fulton beacon
+  description: 用于接收富尔顿回收的信标。 | Beacon to receive fulton extractions.
   components:
-    - type: Physics
-      bodyType: Dynamic
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.25,-0.4,0.25,0.1"
-          density: 20
-          mask:
-            - Impassable
-    - type: Item
-      size: Normal
-      inhandVisuals:
-        left:
-        - state: inhand-left-beacon
-        right:
-        - state: inhand-right-beacon
-    - type: Foldable
-      folded: true
-    - type: Clickable
-    - type: InteractionOutline
-    - type: FultonBeacon
-    - type: Sprite
-      sprite: Objects/Tools/fulton.rsi
-      drawdepth: SmallObjects
-      noRot: true
-      layers:
-        - state: extraction_point
-          map: ["unfoldedLayer"]
-          visible: false
-        - state: folded_extraction
-          map: ["foldedLayer"]
+  - type: Physics
+    bodyType: Dynamic
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: "-0.25,-0.4,0.25,0.1"
+        density: 20
+        mask:
+        - Impassable
+  - type: Item
+    size: Normal
+    inhandVisuals:
+      left:
+      - state: inhand-left-beacon
+      right:
+      - state: inhand-right-beacon
+  - type: Foldable
+    folded: true
+  - type: Clickable
+  - type: InteractionOutline
+  - type: FultonBeacon
+  - type: Sprite
+    sprite: Objects/Tools/fulton.rsi
+    drawdepth: SmallObjects
+    noRot: true
+    layers:
+    - state: extraction_point
+      map: ["unfoldedLayer"]
+      visible: false
+    - state: folded_extraction
+      map: ["foldedLayer"]
 
 - type: entity
-  parent: [ BaseItem, BaseItemDestructible ]
+  parent: [BaseItem, BaseItemDestructible]
   id: Fulton
-  name: fulton
+  name: 气球回收 | fulton
   suffix: Full
-  description: Used to extract containers, items, or forcibly recruit people into your base of operations.
+  description: 用于提取容器、物品或强行将人员招募到你的行动基地。 | Used to extract containers, items, or forcibly recruit people into your base of operations.
   components:
   - type: Fulton
   - type: Item
@@ -75,7 +74,7 @@
 - type: entity
   id: Fulton1
   parent: Fulton
-  name: fulton
+  name: 富尔顿 | fulton
   suffix: One
   components:
   - type: Stack
@@ -83,8 +82,8 @@
 
 - type: entity
   id: FultonEffect
-  categories: [ HideSpawnMenu ]
-  name: fulton effect
+  categories: [HideSpawnMenu]
+  name: 富尔顿效应 | fulton effect
   components:
   - type: TimedDespawn
     lifetime: 60
@@ -93,10 +92,10 @@
     noRot: true
     offset: 0,0.5
     layers:
-      - map: [ "enum.FultonVisualLayers.Base" ]
-        sprite: Objects/Tools/fulton_balloon.rsi
-        state: fulton_balloon
+    - map: ["enum.FultonVisualLayers.Base"]
+      sprite: Objects/Tools/fulton_balloon.rsi
+      state: fulton_balloon
   - type: Tag
     tags:
-      - HideContextMenu
+    - HideContextMenu
   - type: AnimationPlayer

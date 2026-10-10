@@ -2,10 +2,10 @@
 # TODO We have mortar and pestle, all these ground items are very stupid and should just be made by grinding leaves instead of through construction.
 
 - type: entity
-  name: cannabis leaves
+  name: 大麻叶 | cannabis leaves
   parent: ProduceBaseRuminant
   id: LeavesCannabis
-  description: "Recently legalized in most galaxies."
+  description: "最近在大多数星系中合法化了。 | Recently legalized in most galaxies."
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/cannabis.rsi
@@ -19,10 +19,10 @@
         Quantity: 15
 
 - type: entity
-  name: dried cannabis leaves
+  name: 干燥的大麻叶 | dried cannabis leaves
   parent: ProduceBaseRuminant
   id: LeavesCannabisDried
-  description: "Dried cannabis leaves, ready to be ground."
+  description: "干燥的大麻叶，准备研磨。 | Dried cannabis leaves, ready to be ground."
   components:
   - type: Stack
     stackType: LeavesCannabisDried
@@ -32,10 +32,10 @@
     state: dried
 
 - type: entity
-  name: ground cannabis
+  name: 研磨大麻 | ground cannabis
   parent: [SolutionFood, SolutionTiny, BaseItem]
   id: GroundCannabis
-  description: "Ground cannabis, ready to take you on a trip."
+  description: "研磨大麻，准备带你踏上旅程。 | Ground cannabis, ready to take you on a trip."
   components:
   - type: Stack
     stackType: GroundCannabis
@@ -54,15 +54,15 @@
     node: ground
   - type: Tag
     tags:
-      - Smokable
+    - Smokable
   - type: Item
     size: Tiny
 
 - type: entity
-  name: rainbow cannabis leaves
+  name: 彩虹大麻叶 | rainbow cannabis leaves
   parent: LeavesCannabis
   id: LeavesCannabisRainbow
-  description: "Is it supposed to be glowing like that...?"
+  description: "它应该是那样发光的吗……？ | Is it supposed to be glowing like that...?"
   components:
   - type: Sprite
     layers:
@@ -94,10 +94,10 @@
         Quantity: 1
 
 - type: entity
-  name: dried rainbow cannabis leaves
+  name: 干燥的彩虹大麻叶 | dried rainbow cannabis leaves
   parent: LeavesCannabisRainbow
   id: LeavesCannabisRainbowDried
-  description: "Dried rainbow cannabis leaves, ready to be ground."
+  description: "干燥的彩虹大麻叶，准备研磨。 | Dried rainbow cannabis leaves, ready to be ground."
   components:
   - type: Stack
     stackType: LeavesCannabisRainbowDried
@@ -107,10 +107,10 @@
     state: dried
 
 - type: entity
-  name: ground rainbow cannabis
+  name: 研磨彩虹大麻 | ground rainbow cannabis
   parent: GroundCannabis
   id: GroundCannabisRainbow
-  description: "Ground rainbow cannabis, ready to take you on a trip."
+  description: "研磨彩虹大麻，准备带你踏上旅程。 | Ground rainbow cannabis, ready to take you on a trip."
   components:
   - type: Stack
     stackType: GroundCannabisRainbow
@@ -139,10 +139,10 @@
     node: groundRainbow
 
 - type: entity
-  name: tea leaves
+  name: 茶叶 | tea leaves
   parent: ProduceBaseRuminant
   id: LeavesTea
-  description: "Can be dried out to make tea."
+  description: "可以晒干制成茶叶。 | Can be dried out to make tea."
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/tea_plant.rsi
@@ -155,10 +155,10 @@
         Quantity: 15
 
 - type: entity
-  name: dried tea leaves
+  name: 干茶叶 | dried tea leaves
   parent: ProduceBaseRuminant
   id: LeavesTeaDried
-  description: "Dried tea leaves, ready to be ground."
+  description: "干茶叶，准备研磨。 | Dried tea leaves, ready to be ground."
   components:
   - type: Solution
     solution:
@@ -172,10 +172,10 @@
     state: dried
 
 - type: entity
-  name: tobacco leaves
+  name: 烟叶 | tobacco leaves
   parent: ProduceBaseRuminant
   id: LeavesTobacco
-  description: "Dry them out to make some smokes."
+  description: "把它们晒干来制作一些烟。 | Dry them out to make some smokes."
   components:
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/tobacco.rsi
@@ -188,10 +188,10 @@
         Quantity: 2.5
 
 - type: entity
-  name: dried tobacco leaves
+  name: 干燥的烟叶 | dried tobacco leaves
   parent: LeavesTobacco
   id: LeavesTobaccoDried
-  description: "Dried tobacco leaves, ready to be ground."
+  description: "干燥的烟叶，准备研磨。 | Dried tobacco leaves, ready to be ground."
   components:
   - type: Stack
     stackType: LeavesTobaccoDried
@@ -201,10 +201,10 @@
     state: dried
 
 - type: entity
-  name: ground tobacco
+  name: 烟丝 | ground tobacco
   parent: [SolutionFood, SolutionTiny, BaseItem]
   id: GroundTobacco
-  description: "Ground tobacco, perfect for hand-rolled cigarettes."
+  description: "烟丝，非常适合手卷烟。 | Ground tobacco, perfect for hand-rolled cigarettes."
   components:
   - type: Stack
     stackType: GroundTobacco
@@ -223,6 +223,6 @@
     node: ground
   - type: Tag
     tags:
-      - Smokable
+    - Smokable
   - type: Item
     size: Tiny

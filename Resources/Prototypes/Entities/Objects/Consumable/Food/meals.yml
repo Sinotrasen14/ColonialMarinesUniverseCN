@@ -8,7 +8,7 @@
   abstract: true
   parent: FoodInjectableBase
   id: FoodMealBase
-  description: A delicious meal, cooked with love.
+  description: 一顿用爱烹饪的美味佳肴。 | A delicious meal, cooked with love.
   components:
   - type: Item
     shape:
@@ -26,15 +26,15 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealPotatoLoaded
-  name: loaded baked potato
-  description: Totally baked.
+  name: 加载式烤土豆 | loaded baked potato
+  description: 完全烤熟了。 | Totally baked.
   components:
   - type: Item
     storedOffset: 0,-2
   - type: FlavorProfile
     flavors:
-      - cheesy
-      - potatoes
+    - cheesy
+    - potatoes
   - type: Sprite
     state: loadedbakedpotato
 # Tastes like potato.
@@ -42,15 +42,15 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealFries
-  name: space fries
-  description: AKA, French Fries, Freedom Fries, etc.
+  name: 太空薯条 | space fries
+  description: 又名炸薯条、自由薯条等。 | AKA, French Fries, Freedom Fries, etc.
   components:
   - type: Item
     storedOffset: 0,-3
   - type: FlavorProfile
     flavors:
-      - potatoes
-      - salty
+    - potatoes
+    - salty
   - type: Sprite
     state: fries
 # Tastes like fries, salt.
@@ -58,16 +58,16 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealFriesCheesy
-  name: cheesy fries
-  description: Fries. Covered in cheese. Duh.
+  name: 芝士薯条 | cheesy fries
+  description: 薯条。淋上芝士。这还用问。 | Fries. Covered in cheese. Duh.
   components:
   - type: Item
     storedOffset: 0,-3
   - type: FlavorProfile
     flavors:
-      - potatoes
-      - salty
-      - cheesy
+    - potatoes
+    - salty
+    - cheesy
   - type: Sprite
     state: fries-cheesy
 # Tastes like fries, cheese.
@@ -75,15 +75,15 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealFriesCarrot
-  name: carrot fries
-  description: Tasty fries from fresh carrots.
+  name: 胡萝卜薯条 | carrot fries
+  description: 美味的鲜胡萝卜薯条。 | Tasty fries from fresh carrots.
   components:
   - type: Item
     storedOffset: 0,-3
   - type: FlavorProfile
     flavors:
-      - carrot
-      - salty
+    - carrot
+    - salty
   - type: Sprite
     state: fries-carrot
   - type: Tag
@@ -101,8 +101,8 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealNachos
-  name: nachos
-  description: Chips from Space Mexico.
+  name: 太空墨西哥玉米片 | nachos
+  description: 来自太空墨西哥的玉米片。 | Chips from Space Mexico.
   components:
   - type: Item
     storedOffset: 0,-2
@@ -111,7 +111,7 @@
     - FoodPlateSmall
   - type: FlavorProfile
     flavors:
-      - nachos
+    - nachos
   - type: Sprite
     state: nachos
   - type: Solution
@@ -126,8 +126,8 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealNachosCheesy
-  name: cheesy nachos
-  description: The delicious combination of nachos and melting cheese.
+  name: 芝士玉米片 | cheesy nachos
+  description: 玉米片与融化芝士的美味组合。 | The delicious combination of nachos and melting cheese.
   components:
   - type: Item
     storedOffset: 0,-2
@@ -136,8 +136,8 @@
     - FoodPlateSmall
   - type: FlavorProfile
     flavors:
-      - nachos
-      - cheesy
+    - nachos
+    - cheesy
   - type: Sprite
     state: nachos-cheesy
   - type: Solution
@@ -152,8 +152,8 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealNachosCuban
-  name: Cuban nachos
-  description: That's some dangerously spicy nachos.
+  name: 古巴玉米片 | Cuban nachos
+  description: 这真是辣得危险的玉米片。 | That's some dangerously spicy nachos.
   components:
   - type: Item
     storedOffset: 0,-2
@@ -162,9 +162,9 @@
     - FoodPlateSmall
   - type: FlavorProfile
     flavors:
-      - nachos
-      - tomato
-      - spicy
+    - nachos
+    - tomato
+    - spicy
   - type: Sprite
     state: nachos-cuban
   - type: Solution
@@ -181,8 +181,8 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealMint
-  name: mint
-  description: It's wafer thin.
+  name: 薄荷 | mint
+  description: 它薄如蝉翼。 | It's wafer thin.
   components:
   - type: Edible
     trash:
@@ -191,7 +191,7 @@
     storedOffset: 0,-1
   - type: FlavorProfile
     flavors:
-      - minty
+    - minty
   - type: Sprite
     state: mint
   - type: Solution
@@ -206,15 +206,15 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealEggplantParm
-  name: eggplant parmigiana
-  description: The only good recipe for eggplant.
+  name: 茄子帕尔马干酪 | eggplant parmigiana
+  description: 唯一好吃的茄子食谱。 | The only good recipe for eggplant.
   components:
   - type: Item
     storedOffset: 0,-2
   - type: FlavorProfile
     flavors:
-      - eggplant
-      - cheesy
+    - eggplant
+    - cheesy
   - type: Sprite
     state: eggplantparm
   - type: Tag
@@ -225,15 +225,15 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealPotatoYaki
-  name: yaki imo
-  description: Made with roasted sweet potatoes!
+  name: 烤红薯 | yaki imo
+  description: 用烤红薯做的！ | Made with roasted sweet potatoes!
   components:
   - type: Item
     storedOffset: 0,-2
   - type: FlavorProfile
     flavors:
-      - sweet
-      - potatoes
+    - sweet
+    - potatoes
   - type: Sprite
     state: yakiimo
 # Tastes like sweet potato.
@@ -241,8 +241,8 @@
 - type: entity
   parent: [SolutionNormal, FoodMealBase]
   id: FoodMealCubancarp
-  name: Cuban carp
-  description: A grifftastic sandwich that burns your tongue and then leaves it numb!
+  name: 古巴鲤鱼 | Cuban carp
+  description: 一种绝妙的古巴鲤鱼三明治，辣得你舌头火烧火燎，随后又麻木不已！ | A grifftastic sandwich that burns your tongue and then leaves it numb!
   components:
   - type: Item
     size: Normal
@@ -250,9 +250,9 @@
     storedOffset: 3,-7
   - type: FlavorProfile
     flavors:
-      - fishy
-      - batter
-      - spicy
+    - fishy
+    - batter
+    - spicy
   - type: Sprite
     state: cubancarp
   - type: Solution
@@ -275,15 +275,15 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealCornedbeef
-  name: corned beef and cabbage
-  description: Now you can feel like a real tourist vacationing in Ireland.
+  name: 咸牛肉和卷心菜 | corned beef and cabbage
+  description: 现在你可以感觉自己像个在爱尔兰度假的真正游客了。 | Now you can feel like a real tourist vacationing in Ireland.
   components:
   - type: Item
     storedOffset: 0,-1
   - type: FlavorProfile
     flavors:
-      - meaty
-      - cabbage
+    - meaty
+    - cabbage
   - type: Sprite
     state: cornedbeef
   - type: Tag
@@ -294,8 +294,8 @@
 - type: entity
   parent: [SolutionNormal, FoodMealBase]
   id: FoodMealBearsteak
-  name: filet migrawr
-  description: Because eating bear wasn't manly enough.
+  name: 菲力米格罗 | filet migrawr
+  description: 因为吃熊还不够有男子气概。 | Because eating bear wasn't manly enough.
   components:
   - type: Item
     size: Normal
@@ -303,8 +303,8 @@
     storedOffset: -1,4
   - type: FlavorProfile
     flavors:
-      - meaty
-      - fishy
+    - meaty
+    - fishy
   - type: Sprite
     state: bearsteak
   - type: Tag
@@ -315,16 +315,16 @@
 - type: entity
   parent: [SolutionTiny, FoodMealBase]
   id: FoodMealPigblanket
-  name: pig in a blanket
-  description: A tiny sausage wrapped in a flakey, buttery roll. Free this pig from its blanket prison by eating it.
+  name: 猪裹毯 | pig in a blanket
+  description: 一根小香肠裹在酥脆的黄油卷中。吃掉它，把这头猪从毯子监狱里解救出来。 | A tiny sausage wrapped in a flakey, buttery roll. Free this pig from its blanket prison by eating it.
   components:
   - type: Item
     size: Tiny
     shape:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - butter
+    - meaty
+    - butter
   - type: Sprite
     state: pigblanket
   - type: Tag
@@ -335,8 +335,8 @@
 - type: entity
   parent: [SolutionNormal, FoodMealBase]
   id: FoodMealRibs
-  name: bbq ribs
-  description: BBQ ribs, slathered in a healthy coating of BBQ sauce. The least vegan thing to ever exist.
+  name: 烧烤排骨 | bbq ribs
+  description: 烧烤排骨，裹着一层厚厚的烧烤酱。有史以来最不纯素的东西。 | BBQ ribs, slathered in a healthy coating of BBQ sauce. The least vegan thing to ever exist.
   components:
   - type: Item
     size: Normal
@@ -347,8 +347,8 @@
     - FoodKebabSkewer
   - type: FlavorProfile
     flavors:
-      - meaty
-      - smokey
+    - meaty
+    - smokey
   - type: Sprite
     state: ribs
   - type: Solution
@@ -368,14 +368,14 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealEggsbenedict
-  name: eggs benedict
-  description: There is only one egg on this, how rude.
+  name: 班尼迪克蛋 | eggs benedict
+  description: 这上面只有一个蛋，太无礼了。 | There is only one egg on this, how rude.
   components:
   - type: FlavorProfile
     flavors:
-      - egg
-      - bacon
-      - bun
+    - egg
+    - bacon
+    - bun
   - type: Sprite
     state: benedict
   - type: Tag
@@ -386,15 +386,15 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealOmelette
-  name: cheese omelette
-  description: Cheesy.
+  name: 奶酪煎蛋卷 | cheese omelette
+  description: 芝士味浓郁。 | Cheesy.
   components:
   - type: Item
     storedOffset: 0,-1
   - type: FlavorProfile
     flavors:
-      - egg
-      - cheesy
+    - egg
+    - cheesy
   - type: Sprite
     state: omelette
   - type: Tag
@@ -405,16 +405,16 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealFriedegg
-  name: fried egg
-  description: A fried egg, with a touch of salt and pepper.
+  name: 煎蛋 | fried egg
+  description: 一个煎蛋，撒上少许盐和胡椒。 | A fried egg, with a touch of salt and pepper.
   components:
   - type: Item
     storedOffset: 0,-1
   - type: FlavorProfile
     flavors:
-      - egg
-      - salty
-      - peppery
+    - egg
+    - salty
+    - peppery
   - type: Sprite
     state: friedegg
   - type: Tag
@@ -430,16 +430,16 @@
 - type: entity
   parent: [SolutionNormal, FoodMealBase]
   id: FoodMealMilkape
-  name: milk ape
-  description: The king of Jungle Thick.
+  name: 奶猿 | milk ape
+  description: 丛林密林之王。 | The king of Jungle Thick.
   components:
   - type: Item
     size: Normal
     shape:
   - type: FlavorProfile
     flavors:
-      - milk
-      - chocolate
+    - milk
+    - chocolate
   - type: Sprite
     state: milkape
 # Tastes like milk, chocolate, the jungle.
@@ -447,15 +447,15 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealMemoryleek
-  name: memory leek
-  description: This should refresh your memory.
+  name: 内存泄漏 | memory leek
+  description: 这应该能让你恢复记忆。 | This should refresh your memory.
   components:
   - type: Item
     shape:
     - 0,0,0,1
   - type: FlavorProfile
     flavors:
-      - memoryleek
+    - memoryleek
   - type: Sprite
     state: memoryLeek
 # Tastes like pain.
@@ -463,8 +463,8 @@
 - type: entity
   parent: [SolutionNormal, FoodMealBase]
   id: DisgustingSweptSoup
-  name: salty sweet miso cola soup
-  description: Jesus christ.
+  name: 咸甜味噌可乐汤 | salty sweet miso cola soup
+  description: 天啊。 | Jesus christ.
   components:
   - type: Item
     size: Normal
@@ -477,27 +477,27 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealQueso
-  name: queso
-  description: A classic dipping sauce that you can't go wrong with.
+  name: 奶酪蘸酱 | queso
+  description: 一种经典的蘸酱，怎么选都不会出错。 | A classic dipping sauce that you can't go wrong with.
   components:
-    - type: Item
-      storedOffset: 0,-6
-    - type: FlavorProfile
-      flavors:
-        - cheesy
-    - type: Sprite
-      state: queso
+  - type: Item
+    storedOffset: 0,-6
+  - type: FlavorProfile
+    flavors:
+    - cheesy
+  - type: Sprite
+    state: queso
 # Its queso! Everyone loves queso... Right?.
 
 - type: entity
-  name: sashimi
+  name: 刺身 | sashimi
   parent: FoodMealBase
   id: FoodMealSashimi
-  description: Its taste can only be described as "Exotic". The poisoning though? That's pretty common.
+  description: 它的味道只能用“异域风情”来形容。至于中毒？那倒是挺常见的。 | Its taste can only be described as "Exotic". The poisoning though? That's pretty common.
   components:
   - type: FlavorProfile
     flavors:
-      - fishy
+    - fishy
   - type: Sprite
     state: sashimi
   - type: Solution
@@ -517,37 +517,37 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealEnchiladas
-  name: enchiladas
-  description: Viva La Mexico!
+  name: 墨西哥辣酱馅饼 | enchiladas
+  description: 墨西哥万岁！ | Viva La Mexico!
   components:
-    - type: Item
-      storedOffset: -1,0
-    - type: FlavorProfile
-      flavors:
-        - meaty
-    - type: Sprite
-      state: enchiladas
-    - type: Solution
-      solution:
-        reagents:
-        - ReagentId: Nutriment
-          Quantity: 25
-        - ReagentId: Protein
-          Quantity: 5
-        - ReagentId: CapsaicinOil
-          Quantity: 10
-        - ReagentId: Vitamin
-          Quantity: 5
-    - type: Tag
-      tags:
-      - Meat
+  - type: Item
+    storedOffset: -1,0
+  - type: FlavorProfile
+    flavors:
+    - meaty
+  - type: Sprite
+    state: enchiladas
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Nutriment
+        Quantity: 25
+      - ReagentId: Protein
+        Quantity: 5
+      - ReagentId: CapsaicinOil
+        Quantity: 10
+      - ReagentId: Vitamin
+        Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
 # What do Europeans eat instead of enchiladas? 25.4 millimeter-iladas.
 
 - type: entity
   parent: [SolutionNormal, FoodMealBase]
   id: FoodSaladWatermelonFruitBowl
-  name: melon fruit bowl
-  description: The only salad where you can eat the bowl.
+  name: 瓜果碗 | melon fruit bowl
+  description: 唯一可以连碗一起吃的沙拉。 | The only salad where you can eat the bowl.
   components:
   - type: Item
     size: Normal
@@ -555,8 +555,8 @@
     storedOffset: 0,-3
   - type: FlavorProfile
     flavors:
-      - fruity
-      - sour
+    - fruity
+    - sour
   - type: Sprite
     state: melonfruitbowl
   - type: Solution
@@ -579,8 +579,8 @@
 - type: entity
   parent: FoodMealBase
   id: FoodMealCornInButter
-  name: corn in butter
-  description: Buttery.
+  name: 黄油玉米 | corn in butter
+  description: 黄油味浓郁。 | Buttery.
   components:
   - type: Item
     storedOffset: 0,-5
@@ -589,8 +589,8 @@
     - FoodPlate
   - type: FlavorProfile
     flavors:
-      - corn
-      - butter
+    - corn
+    - butter
   - type: Sprite
     state: corn-in-butter
   - type: Solution

@@ -1,9 +1,10 @@
-# riot
 - type: entity
-  parent: [RMCHelmetBase, RMCFoldableHelmetBase]
+  parent:
+  - RMCHelmetBase
+  - RMCFoldableHelmetBase
   id: ArmorHelmetRiot
-  name: riot helmet
-  description: It's a helmet specifically designed to protect against close range attacks. It covers your ears.
+  name: 防暴头盔
+  description: 这是一种专门设计用于抵御近距离攻击的头盔。它可以护住耳朵。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/riot.rsi
@@ -12,15 +13,11 @@
   - type: CMArmor
     melee: 30
     bullet: 10
-    # armor_laser = 10
-    # armor_energy = 10
-    # armor_internaldamage = 25
   - type: CMHardArmor
-
 - type: entity
   parent: ArmorHelmetRiot
   id: ArmorHelmetRiotOld
-  description: BA scarred riot helmet covered in cobwebs. It still protects your ears.
+  description: BA 伤痕累累的防暴头盔，布满蛛网。它仍然可以护住耳朵。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/old_riot.rsi
@@ -30,13 +27,13 @@
     sprite: _RMC14/Objects/Clothing/Head/Helmets/old_riot.rsi
     equipDelay: 2
     unequipDelay: 2
-
-# basic
 - type: entity
-  parent: [RMCHelmetBase, RMCFoldableHelmetBase]
+  parent:
+  - RMCHelmetBase
+  - RMCFoldableHelmetBase
   id: RMCArmorHelmetSecurity
-  name: helmet
-  description: Standard security gear. Protects the head from impacts.
+  name: 头盔
+  description: 标准安保装备。可保护头部免受撞击。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/security.rsi
@@ -45,6 +42,3 @@
   - type: CMArmor
     melee: 20
     bullet: 15
-    # armor_laser = 10
-    # armor_energy = 10
-    # armor_internaldamage = 20

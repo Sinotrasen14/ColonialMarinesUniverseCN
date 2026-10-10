@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem, BaseItemDestructible ]
+  parent: [BaseItem, BaseItemDestructible]
   id: BaseDeskBell
   components:
   - type: Sprite
@@ -11,8 +11,7 @@
     node: start
   - type: Destructible
     thresholds:
-    - trigger: &DamageTrigger50
-        !type:DamageTrigger
+    - trigger: &DamageTrigger50 !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -40,8 +39,8 @@
 - type: entity
   parent: BaseDeskBell
   id: EmptyDeskBell
-  name: unfinished desk bell
-  description: An empty bell missing its noise maker.
+  name: 未完成的桌面铃 | unfinished desk bell
+  description: 一个空铃铛，缺少了发声装置。 | An empty bell missing its noise maker.
   components:
   - type: Destructible
     thresholds:
@@ -56,8 +55,8 @@
 - type: entity
   parent: BaseDeskBell
   id: DeskBell
-  name: desk bell
-  description: The cornerstone of any customer service job. You feel an unending urge to ring it.
+  name: 桌面铃 | desk bell
+  description: 任何客户服务工作的基石。你会有一种按响它的无尽冲动。 | The cornerstone of any customer service job. You feel an unending urge to ring it.
   components:
   - type: Sprite
     state: icon-bell
@@ -93,8 +92,8 @@
 - type: entity
   parent: BaseDeskBell
   id: DeskBuzzer
-  name: desk buzzer
-  description: An advanced customer service tool. You feel an unending urge to buzz it.
+  name: 桌面蜂鸣器 | desk buzzer
+  description: 一个高级客服工具。你感到一种无尽的冲动想要按响它。 | An advanced customer service tool. You feel an unending urge to buzz it.
   components:
   - type: Sprite
     state: icon-buzzer
@@ -141,8 +140,8 @@
 - type: entity
   parent: BaseDeskBell
   id: DeskHorn
-  name: desk horn
-  description: The cornerstone of any clown business. You feel an unending urge to honk it.
+  name: 桌面喇叭 | desk horn
+  description: 任何小丑生意的基石。你感到一股无尽的冲动想要按响它。 | The cornerstone of any clown business. You feel an unending urge to honk it.
   components:
   - type: Sprite
     state: icon-buzzer

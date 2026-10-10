@@ -16,17 +16,17 @@
     size: Normal
   - type: Utensil
     types:
-      - Knife
+    - Knife
   - type: Tool
     qualities:
     - Slicing
 
 #Shortswords
 - type: entity
-  name: cutlass
-  parent: [ BaseSword, BaseMajorContraband ]
+  name: 弯刀 | cutlass
+  parent: [BaseSword, BaseMajorContraband]
   id: Cutlass
-  description: A wickedly curved blade, often seen in the hands of space pirates.
+  description: 一把邪恶的弯刀，常出现在太空海盗手中。 | A wickedly curved blade, often seen in the hands of space pirates.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/cutlass.rsi
@@ -45,10 +45,10 @@
   - type: DisarmMalus
 
 - type: entity
-  name: machete
-  parent: [ BaseSword, BaseMajorContraband ]
+  name: 砍刀 | machete
+  parent: [BaseSword, BaseMajorContraband]
   id: Machete
-  description: A large, vicious looking blade.
+  description: 一把巨大、凶恶的砍刀。 | A large, vicious looking blade.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/machete.rsi
@@ -76,10 +76,10 @@
 
 #Longswords
 - type: entity
-  name: captain's sabre
-  parent: [ BaseSword, BaseCommandContraband ]
+  name: 船长佩剑 | captain's sabre
+  parent: [BaseSword, BaseCommandContraband]
   id: CaptainSabre
-  description: A ceremonial weapon belonging to the captain of the station.
+  description: 属于空间站船长的一件礼仪武器。 | A ceremonial weapon belonging to the captain of the station.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/captain_sabre.rsi
@@ -89,7 +89,7 @@
       types:
         Slash: 17 #cmon, it has to be at least BETTER than the rest.
     soundHit:
-        path: /Audio/Weapons/bladeslice.ogg
+      path: /Audio/Weapons/bladeslice.ogg
   - type: Reflect
     reflectProb: .1
     spread: 90
@@ -112,10 +112,10 @@
     stealGroup: CaptainSword
 
 - type: entity
-  name: katana
-  parent: [ BaseSword, BaseMajorContraband ]
+  name: 武士刀 | katana
+  parent: [BaseSword, BaseMajorContraband]
   id: Katana
-  description: Ancient craftwork made with not so ancient plasteel.
+  description: 用不那么古老的塑钢制成的古老工艺品。 | Ancient craftwork made with not so ancient plasteel.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/katana.rsi
@@ -124,7 +124,7 @@
       types:
         Slash: 15
     soundHit:
-        path: /Audio/Weapons/bladeslice.ogg
+      path: /Audio/Weapons/bladeslice.ogg
   - type: Item
     storedSprite:
       state: storage
@@ -139,10 +139,10 @@
   - type: DisarmMalus
 
 - type: entity
-  name: energy katana
+  name: 能量武士刀 | energy katana
   parent: Katana
   id: EnergyKatana
-  description: A katana infused with strong energy.
+  description: 一把注入了强大能量的武士刀。 | A katana infused with strong energy.
   components:
   - type: Contraband
     severity: HighlyIllegal
@@ -175,10 +175,10 @@
 
 #Greatswords
 - type: entity
-  name: claymore
-  parent: [ BaseSword, BaseMajorContraband ]
+  name: 双手大剑 | claymore
+  parent: [BaseSword, BaseMajorContraband]
   id: Claymore
-  description: An ancient war blade.
+  description: 一把古老的战刃。 | An ancient war blade.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/claymore.rsi
@@ -188,7 +188,7 @@
       types:
         Slash: 20
     soundHit:
-        path: /Audio/Weapons/bladeslice.ogg
+      path: /Audio/Weapons/bladeslice.ogg
   - type: Item
     storedSprite:
       state: storage
@@ -204,36 +204,36 @@
 
 #Other/Weird
 - type: entity
-  name: throngler
-  parent: [ BaseSword, BaseMajorContraband ]
+  name: 人群 | throngler
+  parent: [BaseSword, BaseMajorContraband]
   id: Throngler
-  description: If Security dares take it from you, just remind them that they are indeed mortal.
+  description: 如果安保人员胆敢从你手中夺走它，只需提醒他们，他们确实终有一死。 | If Security dares take it from you, just remind them that they are indeed mortal.
   components:
-    - type: Sprite
-      sprite: Objects/Weapons/Melee/Throngler2.rsi
-    - type: MeleeWeapon
-      attackRate: 10
-      damage:
-        types:
-          Structural: 60
-          Slash: 20 #Horror
-          Blunt: 20
-          Heat: 20
-          Piercing: 20
-          Radiation: 10
-      soundHit:
-        path: /Audio/Effects/explosion_small1.ogg
-    - type: Reflect
-      reflectProb: .25
-      spread: 90
-    - type: Item
-      size: Ginormous
-      sprite: Objects/Weapons/Melee/Throngler-in-hand.rsi
-      shape:
-      - 0,0,3,3
-      - 1,4,2,6
-      storedRotation: -45
-    - type: DisarmMalus
-    - type: Grammar
-      attributes:
-        proper: true
+  - type: Sprite
+    sprite: Objects/Weapons/Melee/Throngler2.rsi
+  - type: MeleeWeapon
+    attackRate: 10
+    damage:
+      types:
+        Structural: 60
+        Slash: 20   #Horror
+        Blunt: 20
+        Heat: 20
+        Piercing: 20
+        Radiation: 10
+    soundHit:
+      path: /Audio/Effects/explosion_small1.ogg
+  - type: Reflect
+    reflectProb: .25
+    spread: 90
+  - type: Item
+    size: Ginormous
+    sprite: Objects/Weapons/Melee/Throngler-in-hand.rsi
+    shape:
+    - 0,0,3,3
+    - 1,4,2,6
+    storedRotation: -45
+  - type: DisarmMalus
+  - type: Grammar
+    attributes:
+      proper: true

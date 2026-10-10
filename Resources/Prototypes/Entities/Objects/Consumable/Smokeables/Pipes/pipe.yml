@@ -1,15 +1,15 @@
 - type: entity
   id: SmokingPipe
   parent: BaseSmokingPipe
-  name: pipe
-  description: Just like grandpappy used to smoke.
+  name: 烟斗 | pipe
+  description: 就像爷爷过去抽的那样。 | Just like grandpappy used to smoke.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Pipes/pipe.rsi
     state: unlit-icon
   - type: Clothing
     sprite: Objects/Consumable/Smokeables/Pipes/pipe.rsi
-    slots: [ mask ]
+    slots: [mask]
     equippedPrefix: unlit
   - type: Item
     size: Tiny
@@ -21,9 +21,9 @@
 - type: entity
   id: SmokingPipeFilledTobacco
   parent: SmokingPipe
-  name: pipe
+  name: 烟斗 | pipe
   suffix: Tobacco
-  description: Just like grandpappy used to smoke.
+  description: 就像爷爷以前抽的那样。 | Just like grandpappy used to smoke.
   components:
   - type: ContainerContainer
     containers:
@@ -35,7 +35,7 @@
       startingItem: GroundTobacco
       whitelist:
         tags:
-          - Smokable
+        - Smokable
       insertSound:
         path: /Audio/Weapons/Guns/Empty/empty.ogg
       ejectSound:
@@ -44,9 +44,9 @@
 - type: entity
   id: SmokingPipeFilledCannabis
   parent: SmokingPipe
-  name: pipe
+  name: 烟斗 | pipe
   suffix: Cannabis
-  description: Just like grandpappy used to smoke.
+  description: 就像爷爷以前抽的那样。 | Just like grandpappy used to smoke.
   components:
   - type: ContainerContainer
     containers:
@@ -58,7 +58,7 @@
       startingItem: GroundCannabis
       whitelist:
         tags:
-          - Smokable
+        - Smokable
       insertSound:
         path: /Audio/Weapons/Guns/Empty/empty.ogg
       ejectSound:
@@ -67,9 +67,9 @@
 - type: entity
   id: SmokingPipeFilledCannabisRainbow
   parent: SmokingPipe
-  name: pipe
+  name: 烟斗 | pipe
   suffix: Rainbow Cannabis
-  description: Just like grandpappy used to smoke.
+  description: 就像爷爷以前抽的那样。 | Just like grandpappy used to smoke.
   components:
   - type: ContainerContainer
     containers:
@@ -81,7 +81,7 @@
       startingItem: GroundCannabisRainbow
       whitelist:
         tags:
-          - Smokable
+        - Smokable
       insertSound:
         path: /Audio/Weapons/Guns/Empty/empty.ogg
       ejectSound:

@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 200
         mask:
@@ -35,8 +34,7 @@
   components:
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 500
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -48,14 +46,14 @@
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 
 - type: entity
   parent: BaseTarget
   id: TargetHuman
-  name: human target
-  description: A shooting target. This one is a human.
+  name: 人类靶 | human target
+  description: 一个射击靶。这个是人类的。 | A shooting target. This one is a human.
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi
@@ -64,8 +62,8 @@
 - type: entity
   parent: BaseTarget
   id: TargetSyndicate
-  name: syndicate target
-  description: A shooting target. This one is a syndicate agent.
+  name: 辛迪加目标 | syndicate target
+  description: 一个射击靶。这个是辛迪加特工。 | A shooting target. This one is a syndicate agent.
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi
@@ -74,8 +72,8 @@
 - type: entity
   parent: BaseTarget
   id: TargetClown
-  name: clown target
-  description: A shooting target. This one is a clown.
+  name: 小丑靶 | clown target
+  description: 一个射击靶。这个是“小丑靶”。 | A shooting target. This one is a clown.
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi
@@ -85,8 +83,8 @@
 - type: entity
   parent: BaseTargetIndestructible
   id: TargetStrange
-  name: strange target
-  description: A shooting target. You aren't quite sure what this one is, but it seems to be extra robust.
+  name: 奇怪的目标 | strange target
+  description: 一个射击目标。你不太确定这个是什么，但它似乎格外坚固。 | A shooting target. You aren't quite sure what this one is, but it seems to be extra robust.
   components:
   - type: Sprite
     sprite: Objects/Specific/Security/target.rsi

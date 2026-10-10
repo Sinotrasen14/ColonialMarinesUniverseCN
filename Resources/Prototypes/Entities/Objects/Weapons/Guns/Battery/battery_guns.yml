@@ -89,14 +89,14 @@
   - type: ItemSlots
     slots:
       cell_slot:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: PowerCellSmall
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         whitelist:
           tags:
-            - PowerCell
-            - PowerCellSmall
+          - PowerCell
+          - PowerCellSmall
   - type: PowerCellSlot
     cellSlotId: cell_slot
   - type: Appearance
@@ -143,10 +143,10 @@
     - Belt
 
 - type: entity
-  name: svalinn laser pistol
+  name: 斯瓦林激光手枪 | svalinn laser pistol
   parent: [BaseWeaponPowerCellSmall, BaseSecurityContraband]
   id: WeaponLaserSvalinn
-  description: A cheap and widely used laser pistol.
+  description: 一把廉价且广泛使用的激光手枪。 | A cheap and widely used laser pistol.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/svalinn.rsi
@@ -172,10 +172,10 @@
     - LaserWeapon
 
 - type: entity
-  name: retro laser blaster
+  name: 复古激光爆能枪 | retro laser blaster
   parent: [BaseWeaponBatterySmall, BaseMajorContraband]
   id: WeaponLaserGun
-  description: A weapon using light amplified by the stimulated emission of radiation.
+  description: 一种利用受激辐射光放大原理的武器。 | A weapon using light amplified by the stimulated emission of radiation.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/laser_retro.rsi
@@ -201,10 +201,10 @@
     - LaserWeapon
 
 - type: entity
-  name: makeshift laser pistol
+  name: 简易激光手枪 | makeshift laser pistol
   parent: [BaseWeaponBatterySmall, BaseMinorContraband]
   id: WeaponMakeshiftLaser
-  description: Better pray it won't burn your hands off.
+  description: 最好祈祷它不会把你的手烧掉。 | Better pray it won't burn your hands off.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/makeshift.rsi
@@ -235,10 +235,10 @@
     - LaserWeapon
 
 - type: entity
-  name: tesla gun
+  name: 特斯拉枪 | tesla gun
   parent: [BaseWeaponBattery, BaseMajorContraband]
   id: WeaponTeslaGun
-  description: The power of the primordial element of lightning in your hands.
+  description: 原始闪电元素之力掌握在你手中。 | The power of the primordial element of lightning in your hands.
   components:
   - type: Item
     size: Large
@@ -247,11 +247,11 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/tesla_gun.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-unshaded-4
-        map: ["enum.GunVisualLayers.MagUnshaded"]
-        shader: unshaded
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
   - type: Gun
     projectileSpeed: 10
     soundGunshot:
@@ -268,16 +268,16 @@
   - type: Appearance
 
 - type: entity
-  name: laser carbine
+  name: 激光卡宾枪 | laser carbine
   parent: [BaseLaserRifle, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponLaserCarbine
-  description: Favoured by Nanotrasen Security for being cheap and easy to use.
+  description: 因廉价且易于使用而受到纳米传讯安保的青睐。 | Favoured by Nanotrasen Security for being cheap and easy to use.
 
 - type: entity
-  name: practice laser carbine
+  name: 练习用激光卡宾枪 | practice laser carbine
   parent: [BaseLaserRifle, BaseGunWieldable]
   id: WeaponLaserCarbinePractice
-  description: This modified laser carbine fires nearly harmless beams in the 40-watt range, for target practice.
+  description: 这把改装过的激光卡宾枪发射功率约40瓦、几乎无害的光束，用于打靶练习。 | This modified laser carbine fires nearly harmless beams in the 40-watt range, for target practice.
   components:
   - type: StaticPrice
     price: 300
@@ -287,10 +287,10 @@
   - type: PacifismAllowedGun
 
 - type: entity
-  name: pulse pistol
+  name: 脉冲手枪 | pulse pistol
   parent: [BaseWeaponBatterySmall, BaseCentcommContraband]
   id: WeaponPulsePistol
-  description: A state of the art energy pistol favoured as a sidearm by the NT operatives.
+  description: 一种最先进的能量手枪，被NT特工作为首选副武器。 | A state of the art energy pistol favoured as a sidearm by the NT operatives.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/pulse_pistol.rsi
@@ -327,10 +327,10 @@
     - LaserWeapon
 
 - type: entity
-  name: pulse carbine
+  name: 脉冲卡宾枪 | pulse carbine
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband]
   id: WeaponPulseCarbine
-  description: A high tech energy carbine favoured by the NT-ERT operatives.
+  description: NT-ERT特工青睐的高科技能量卡宾枪。 | A high tech energy carbine favoured by the NT-ERT operatives.
   components:
   - type: Item
     size: Large
@@ -353,8 +353,8 @@
     selectedMode: FullAuto
     fireRate: 3
     availableModes:
-      - SemiAuto
-      - FullAuto
+    - SemiAuto
+    - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/laser3.ogg
   - type: BatteryAmmoProvider
@@ -365,10 +365,10 @@
     startingCharge: 5000
 
 - type: entity
-  name: pulse rifle
+  name: 脉冲步枪 | pulse rifle
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseCentcommContraband]
   id: WeaponPulseRifle
-  description: A weapon that is almost as infamous as its users.
+  description: 一种几乎与其使用者一样臭名昭著的武器。 | A weapon that is almost as infamous as its users.
   components:
   - type: Item
     size: Huge
@@ -401,10 +401,10 @@
     startingCharge: 40000
 
 - type: entity
-  name: laser cannon
+  name: 激光炮 | laser cannon
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponLaserCannon
-  description: A heavy duty, high powered laser weapon.
+  description: 一种重型高能激光武器。 | A heavy duty, high powered laser weapon.
   components:
   - type: Item
     size: Huge
@@ -437,43 +437,43 @@
     - TurretCompatibleWeapon
 
 - type: entity
-  name: portable particle decelerator
+  name: 便携式粒子减速器 | portable particle decelerator
   parent: [BaseWeaponBattery, BaseEngineeringContraband]
   id: WeaponParticleDecelerator
-  description: A portable particle decelerator capable of decomposing a tesla or singularity.
+  description: 一种能够分解特斯拉或奇点的便携式粒子减速器。 | A portable particle decelerator capable of decomposing a tesla or singularity.
   components:
-    - type: Item
-      size: Ginormous
-      shape:
-      - 0,0,7,3
-    - type: MultiHandedItem
-    - type: ClothingSpeedModifier
-      walkModifier: 0.6
-      sprintModifier: 0.6
-    - type: HeldSpeedModifier
-    - type: Sprite
-      sprite: Objects/Weapons/Guns/Battery/particle_decelerator.rsi
-      layers:
-        - state: base
-          map: ["enum.GunVisualLayers.Base"]
-    - type: Gun
-      fireRate: 0.5
-      soundGunshot:
-        path: /Audio/Weapons/emitter.ogg
-        params:
-          pitch: 2
-    - type: BatteryAmmoProvider
-      proto: AntiParticlesProjectile
-      fireCost: 500
-    - type: Battery
-      maxCharge: 10000
-      startingCharge: 10000
+  - type: Item
+    size: Ginormous
+    shape:
+    - 0,0,7,3
+  - type: MultiHandedItem
+  - type: ClothingSpeedModifier
+    walkModifier: 0.6
+    sprintModifier: 0.6
+  - type: HeldSpeedModifier
+  - type: Sprite
+    sprite: Objects/Weapons/Guns/Battery/particle_decelerator.rsi
+    layers:
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+  - type: Gun
+    fireRate: 0.5
+    soundGunshot:
+      path: /Audio/Weapons/emitter.ogg
+      params:
+        pitch: 2
+  - type: BatteryAmmoProvider
+    proto: AntiParticlesProjectile
+    fireCost: 500
+  - type: Battery
+    maxCharge: 10000
+    startingCharge: 10000
 
 - type: entity
-  name: x-ray cannon
+  name: X射线炮 | x-ray cannon
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponXrayCannon
-  description: An experimental weapon that uses concentrated x-ray energy against its target.
+  description: 一种实验性武器，利用集中的X射线能量攻击目标。 | An experimental weapon that uses concentrated x-ray energy against its target.
   components:
   - type: Item
     size: Huge
@@ -502,10 +502,10 @@
   - type: Appearance
 
 - type: entity
-  name: practice disabler
+  name: 练习型瘫痪器 | practice disabler
   parent: BaseWeaponBatterySmall
   id: WeaponDisablerPractice
-  description: A self-defense weapon that exhausts organic targets, weakening them until they collapse. This one has been undertuned for cadets making it mostly harmless.
+  description: 一种自卫武器，能使有机目标精疲力竭，逐渐虚弱直至倒下。这一把已为学员调低功率，因此基本无害。 | A self-defense weapon that exhausts organic targets, weakening them until they collapse. This one has been undertuned for cadets making it mostly harmless.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/practice_disabler.rsi
@@ -544,25 +544,25 @@
   - type: PacifismAllowedGun
 
 - type: entity
-  name: disabler
+  name: 瘫痪器 | disabler
   parent: [WeaponDisablerPractice, BaseSecurityCommandContraband]
   id: WeaponDisabler
-  description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
+  description: 一种自卫武器，能使有机目标精疲力竭，逐渐虚弱直至崩溃。 | A self-defense weapon that exhausts organic targets, weakening them until they collapse.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/disabler.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-unshaded-0
-        map: ["enum.GunVisualLayers.MagUnshaded"]
-        shader: unshaded
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
   - type: Clothing
     sprite: Objects/Weapons/Guns/Battery/disabler.rsi
     quickEquip: false
     slots:
-      - suitStorage
-      - Belt
+    - suitStorage
+    - Belt
   - type: BatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 62.5
@@ -573,10 +573,10 @@
   - type: PacifismAllowedGun
 
 - type: entity
-  name: disabler SMG
+  name: 干扰者冲锋枪 | disabler SMG
   parent: [BaseWeaponBattery, BaseSecurityContraband]
   id: WeaponDisablerSMG
-  description: Advanced weapon that exhausts organic targets, weakening them until they collapse.
+  description: 高级武器，可使有机目标精疲力竭，使其虚弱直至崩溃。 | Advanced weapon that exhausts organic targets, weakening them until they collapse.
   components:
   - type: Item
     size: Large
@@ -584,21 +584,21 @@
     - 0,0,2,1
   - type: Tag
     tags:
-      - Taser
+    - Taser
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/disabler_smg.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-unshaded-0
-        map: ["enum.GunVisualLayers.MagUnshaded"]
-        shader: unshaded
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-0
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
   - type: Gun
     selectedMode: FullAuto
     fireRate: 4.5
     availableModes:
-      - SemiAuto
-      - FullAuto
+    - SemiAuto
+    - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/taser2.ogg
   - type: BatteryAmmoProvider
@@ -614,10 +614,10 @@
   - type: PacifismAllowedGun
 
 - type: entity
-  name: taser
+  name: 泰瑟枪 | taser
   parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
   id: WeaponTaser
-  description: A low-capacity, energy-based stun gun used by security teams to subdue targets at close range.
+  description: 一种低容量、基于能量的电击枪，安保团队用于在近距离制服目标。 | A low-capacity, energy-based stun gun used by security teams to subdue targets at close range.
   components:
   - type: Tag
     tags:
@@ -653,11 +653,11 @@
   - type: PacifismAllowedGun
 
 - type: entity
-  name: elite taser
-  parent: [ BaseCentcommContraband, WeaponTaser ]
+  name: 精英电击枪 | elite taser
+  parent: [BaseCentcommContraband, WeaponTaser]
   id: WeaponTaserSuper
   suffix: ADMEME
-  description: A low-capacity, energy-based stun gun used by elite security teams to disable even the toughest of targets.
+  description: 精英安保团队使用的低容量能量电击枪，甚至能制服最顽强的目标。 | A low-capacity, energy-based stun gun used by elite security teams to disable even the toughest of targets.
   components:
   - type: Gun
     fireRate: 0.5
@@ -670,10 +670,10 @@
     fireCost: 200
 
 - type: entity
-  name: antique laser pistol
+  name: 古董激光手枪 | antique laser pistol
   parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
   id: WeaponAntiqueLaser
-  description: This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with a mahogany grip and chrome filigree. The object menaces with spikes of energy. On the item is an image of a captain and a clown. The clown is dead. The captain is striking a heroic pose.
+  description: 这是一把古董激光手枪。所有工艺均为最高品质。它装饰着红木握把和铬丝细工。该物品带有能量尖刺，令人望而生畏。物品上有一幅上尉和小丑的图像。小丑已死。上尉摆出英勇的姿态。 | This is an antique laser pistol. All craftsmanship is of the highest quality. It is decorated with a mahogany grip and chrome filigree. The object menaces with spikes of energy. On the item is an image of a captain and a clown. The clown is dead. The captain is striking a heroic pose.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/antiquelasergun.rsi
@@ -714,10 +714,10 @@
     # not putting a BlockMovement component here cause that's funny.
 
 - type: entity
-  name: advanced laser pistol
+  name: 高级激光手枪 | advanced laser pistol
   parent: [BaseWeaponBatterySmall, BaseSecurityContraband]
   id: WeaponAdvancedLaser
-  description: An experimental high-energy laser pistol with a self-charging nuclear battery.
+  description: 一种实验性高能激光手枪，配备自充电核电池。 | An experimental high-energy laser pistol with a self-charging nuclear battery.
   components:
   - type: Item
     size: Normal
@@ -754,10 +754,10 @@
     - LaserWeapon
 
 - type: entity
-  name: C.H.I.M.P. handcannon
+  name: C.H.I.M.P.手炮 | C.H.I.M.P. handcannon
   parent: [BaseWeaponBatterySmall, BaseScienceContraband]
   id: WeaponPistolCHIMP
-  description: Just because it's a little C.H.I.M.P. doesn't mean it can't punch like an A.P.E.
+  description: 仅仅因为它是一把小小的C.H.I.M.P.手炮，并不意味着它不能像A.P.E.一样猛烈开火。 | Just because it's a little C.H.I.M.P. doesn't mean it can't punch like an A.P.E.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Revolvers/chimp.rsi
@@ -820,10 +820,10 @@
       fireCost: 100
 
 - type: entity
-  name: eye of a behonker
+  name: 比洪克之眼 | eye of a behonker
   parent: BaseWeaponBatterySmall
   id: WeaponBehonkerLaser
-  description: The eye of a behonker, it fires a laser when squeezed.
+  description: 比洪克之眼，挤压时会发射激光。 | The eye of a behonker, it fires a laser when squeezed.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/behonker_eye.rsi
@@ -847,19 +847,19 @@
     - LaserWeapon
 
 - type: entity
-  name: energy shotgun
+  name: 能量霰弹枪 | energy shotgun
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponEnergyShotgun
-  description: A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
+  description: 一种独一无二的原型能量武器，采用各种霰弹枪配置。它既能进行致命射击，也能进行非致命射击，使其成为一种多用途武器。 | A one-of-a-kind prototype energy weapon that uses various shotgun configurations. It offers the possibility of both lethal and non-lethal shots, making it a versatile weapon.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/energy_shotgun.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-unshaded-4
-        map: ["enum.GunVisualLayers.MagUnshaded"]
-        shader: unshaded
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-unshaded-4
+      map: ["enum.GunVisualLayers.MagUnshaded"]
+      shader: unshaded
   - type: MagazineVisuals
     magState: mag
     steps: 5
@@ -891,19 +891,19 @@
     startingCharge: 480
 
 - type: entity
-  name: energy magnum
+  name: 能量马格南 | energy magnum
   parent: [BaseWeaponBatterySmall, BaseGrandTheftContraband]
   id: WeaponEnergyMagnum
-  description: A high powered self-charging energy pistol designed for elite security personnel. It has has three firing modes allowing for either high damage, window piercing, or non-lethal disabling.
+  description: 一把为精英安保人员设计的高能自充能能量手枪。它具有三种射击模式，可实现高伤害、穿窗或非致命制服。 | A high powered self-charging energy pistol designed for elite security personnel. It has has three firing modes allowing for either high damage, window piercing, or non-lethal disabling.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/energy_magnum.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-unshaded-1
       visible: false
-      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: MagazineVisuals
     magState: mag
@@ -938,10 +938,10 @@
     autoRechargePauseTime: 10
 
 - type: entity
-  name: temperature gun
+  name: 温度枪 | temperature gun
   parent: [BaseWeaponBattery, BaseGunWieldable, BaseSecurityContraband]
   id: WeaponTemperatureGun
-  description: An advanced gun that shoots body-temperature-changing beams. This probably constitutes as some kind of war crime.
+  description: 一把高级枪械，能射出改变体温的光束。这大概算得上某种战争罪行。 | An advanced gun that shoots body-temperature-changing beams. This probably constitutes as some kind of war crime.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/temp_gun.rsi
@@ -984,7 +984,7 @@
 - type: entity
   parent: [WeaponAdvancedLaser, BaseXenoborgContraband]
   id: WeaponLaserGunXenoborg
-  name: xenoborg laser gun
+  name: 异星机械激光枪 | xenoborg laser gun
   components:
   - type: BatteryAmmoProvider
     proto: XenoborgLaser
@@ -992,14 +992,14 @@
     sprite: Objects/Weapons/Guns/Battery/xenoborg_laser_gun.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-unshaded-4
-      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      map: ["enum.GunVisualLayers.MagUnshaded"]
 
 - type: entity
   parent: [WeaponLaserCannon, BaseXenoborgContraband]
   id: WeaponLaserCannonXenoborg
-  name: xenoborg laser cannon
+  name: 异星机械激光炮 | xenoborg laser cannon
   components:
   - type: BatteryAmmoProvider
     proto: XenoborgHeavyLaser
@@ -1008,9 +1008,9 @@
     sprite: Objects/Weapons/Guns/Battery/xenoborg_laser_cannon.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-unshaded-4
-      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      map: ["enum.GunVisualLayers.MagUnshaded"]
   - type: BatterySelfRecharger
     autoRechargeRate: 50
   # "remove" wield bonus and penalty so borgs can use it
@@ -1025,16 +1025,16 @@
 - type: entity
   parent: [WeaponAdvancedLaser, BaseXenoborgContraband]
   id: WeaponBurstFireLaserXenoborg
-  name: xenoborg burst fire laser
-  description: An alien weapon, channelling a burst-fire laser through a prism, causing targets to burst into fire.
+  name: 异星机械爆发式激光 | xenoborg burst fire laser
+  description: 一种异星武器，通过棱镜引导爆发式激光，使目标燃起火焰。 | An alien weapon, channelling a burst-fire laser through a prism, causing targets to burst into fire.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/xenoborg_burstfire.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-unshaded-4
-      map: [ "enum.GunVisualLayers.MagUnshaded" ]
+      map: ["enum.GunVisualLayers.MagUnshaded"]
       shader: unshaded
   - type: BatterySelfRecharger
     autoRechargeRate: 60
@@ -1056,13 +1056,13 @@
 - type: entity
   parent: [BaseWeaponBatteryNoAmmoCounter, BaseXenoborgContraband]
   id: WeaponRangeFinderXenoborg
-  name: xenoborg range finder
+  name: 异星机械测距仪 | xenoborg range finder
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Battery/xenoborg_range_finder.rsi
     layers:
     - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Battery
     maxCharge: 1
     startingCharge: 1

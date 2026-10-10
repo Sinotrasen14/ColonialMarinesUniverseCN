@@ -1,8 +1,8 @@
 - type: entity
   parent: [BaseItem, BaseSyndicateContraband]
   id: HoloparasiteInjector
-  name: holoparasite injector
-  description: A complex artwork of handheld machinery allowing the user to host a holoparasite guardian.
+  name: 全息寄生体注射器 | holoparasite injector
+  description: 一种复杂的手持机械装置艺术品，允许使用者寄宿一个全息寄生体守护者。 | A complex artwork of handheld machinery allowing the user to host a holoparasite guardian.
   components:
   - type: Sprite
     sprite: Objects/Specific/Medical/hypospray.rsi
@@ -13,8 +13,8 @@
 - type: entity
   parent: HoloparasiteInjector
   id: HoloClownInjector
-  name: holoclown injector
-  description: A complex artwork of handheld machinery allowing the user to host a holoclown guardian.
+  name: 全息小丑注射器 | holoclown injector
+  description: 一种复杂的手持机械装置艺术品，允许使用者承载一个全息小丑守卫。 | A complex artwork of handheld machinery allowing the user to host a holoclown guardian.
   components:
   - type: GuardianCreator
     guardianProto: MobHoloClownGuardian
@@ -22,13 +22,13 @@
 - type: entity
   parent: [BaseItem, BaseMagicalContraband]
   id: GuardianDeck
-  name: guardian deck
-  description: A deck of guardian tarot cards, capable of binding a personal guardian to your body.
+  name: 守护者牌组 | guardian deck
+  description: 一副守护者塔罗牌，能够将个人守护者绑定到你的身体上。 | A deck of guardian tarot cards, capable of binding a personal guardian to your body.
   components:
   - type: Sprite
     sprite: Objects/Magic/deck.rsi
     layers:
-      - state: deck
+    - state: deck
   - type: GuardianCreator
     guardianProto: MobIfritGuardian
     emptyPopup: guardian-deck-invalid-creation
@@ -38,8 +38,8 @@
 - type: entity
   parent: [BoxCardboard, BaseSyndicateContraband]
   id: BoxHoloparasite
-  name: holoparasite box
-  description: A box containing a holoparasite injector.
+  name: 全息寄生体盒 | holoparasite box
+  description: 一个装有全息寄生体注射器的盒子。 | A box containing a holoparasite injector.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -50,14 +50,14 @@
         - id: ClothingHeadHatBizarreSoft
   - type: Sprite
     layers:
-      - state: box
-      - state: holo
+    - state: box
+    - state: holo
 
 - type: entity
   parent: [BoxCardboard, BaseSyndicateContraband]
   id: BoxHoloclown
-  name: holoclown box
-  description: A box containing a holoclown injector.
+  name: 全息小丑盒 | holoclown box
+  description: 一个装有全息小丑注射器的盒子。 | A box containing a holoclown injector.
   components:
   - type: EntityTableContainerFill
     containers:
@@ -68,8 +68,8 @@
         - id: ToyHammer
   - type: Sprite
     layers:
-      - state: box_hug
-      - state: holo
+    - state: box_hug
+    - state: holo
   - type: Tag
     tags:
     - BoxCardboard

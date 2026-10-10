@@ -1,8 +1,8 @@
 - type: entity
   parent: [BaseItem, BaseMinorContraband]
   id: ThrowingStar
-  name: throwing star
-  description: An ancient weapon still used to this day, due to its ease of lodging itself into its victim's body parts.
+  name: 飞镖 | throwing star
+  description: 一种古老的武器，至今仍在使用，因为它容易嵌入受害者身体部位。 | An ancient weapon still used to this day, due to its ease of lodging itself into its victim's body parts.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Throwable/throwing_star.rsi
@@ -18,7 +18,7 @@
     visuals:
       enum.HolidayVisuals.Holiday:
         base:
-          festive: { state: festive }
+          festive: {state: festive}
   - type: Fixtures
     fixtures:
       fix1:
@@ -45,7 +45,7 @@
 - type: entity
   parent: ThrowingStar
   id: ThrowingStarNinja
-  name: ninja throwing star
+  name: 忍者飞镖 | ninja throwing star
   components:
   # prevent ninja crashing server + filling bag with 20 stars to instakill a single person
   # also limits the crew's use

@@ -2,10 +2,10 @@
 # ideally it would be dynamic and work by actually sparking the solution but that doesnt exist yet :(
 # with that you could make napalm ied instead of welding fuel with no additional complexity
 - type: entity
-  parent: [ BaseItem, BaseItemDestructible, BaseMinorContraband ]
+  parent: [BaseItem, BaseItemDestructible, BaseMinorContraband]
   id: FireBomb
-  name: fire bomb
-  description: A weak, improvised incendiary device.
+  name: 燃烧弹 | fire bomb
+  description: 一种简陋的简易燃烧装置。 | A weak, improvised incendiary device.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Bombs/ied.rsi
@@ -43,8 +43,7 @@
     unprimedSprite: base
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:ExplodeBehavior
@@ -54,11 +53,11 @@
 
 # has igniter but no fuel or wires
 - type: entity
-  parent: [ DrinkColaCanEmpty, BaseMinorContraband ]
+  parent: [DrinkColaCanEmpty, BaseMinorContraband]
   id: FireBombEmpty
-  name: fire bomb
+  name: 燃烧瓶 | fire bomb
   suffix: empty
-  description: A weak, improvised incendiary device. This one has no fuel.
+  description: 一个简陋的简易燃烧装置。这个没有燃料。 | A weak, improvised incendiary device. This one has no fuel.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Bombs/ied.rsi
@@ -70,8 +69,8 @@
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "base"}
-          False: {state: "base"}
+          true: {state: "base"}
+          false: {state: "base"}
   - type: Construction
     graph: FireBomb
     node: empty
@@ -85,7 +84,7 @@
   parent: FireBombEmpty
   id: FireBombFuel
   suffix: fuel
-  description: A weak, improvised incendiary device. This one is missing wires.
+  description: 一个简陋的临时燃烧装置。这个缺少导线。 | A weak, improvised incendiary device. This one is missing wires.
   components:
   - type: Sprite
     layers:

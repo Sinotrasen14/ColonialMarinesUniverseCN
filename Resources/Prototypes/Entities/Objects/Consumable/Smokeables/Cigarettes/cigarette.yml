@@ -1,16 +1,16 @@
 - type: entity
   id: Cigarette
   parent: BaseCigar
-  name: cigarette
-  description: A roll of tobacco and nicotine.
+  name: 香烟 | cigarette
+  description: 一卷烟草和尼古丁。 | A roll of tobacco and nicotine.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
     state: unlit-icon
   - type: Tag
     tags:
-      - Cigarette
-      - Trash
+    - Cigarette
+    - Trash
   - type: SpaceGarbage
   - type: Clothing
     sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
@@ -37,21 +37,21 @@
 - type: entity
   id: SoakedCigarette
   parent: BaseCigar
-  name: cigarette
+  name: 香烟 | cigarette
   suffix: Soaked
-  description: A roll of tobacco and nicotine soaked in some chemical.
+  description: 一卷浸泡过化学物质的烟草和尼古丁。 | A roll of tobacco and nicotine soaked in some chemical.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
     state: unlit-icon
   - type: Tag
     tags:
-      - Cigarette
-      - Trash
+    - Cigarette
+    - Trash
   - type: SpaceGarbage
   - type: Clothing
     sprite: Objects/Consumable/Smokeables/Cigarettes/cigarette.rsi
-    slots: [ mask ]
+    slots: [mask]
     equippedPrefix: unlit
   - type: Item
     size: Tiny
@@ -70,28 +70,28 @@
     state: Burnt
   - type: Tag
     tags:
-      - Cigarette
-      - Trash
-      - Burnt
+    - Cigarette
+    - Trash
+    - Burnt
 
 - type: entity
   id: CigaretteSyndicate
   suffix: syndicate
   parent: Cigarette
-  name: cigarette
+  name: 香烟 | cigarette
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Omnizine
-          Quantity: 20
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Omnizine
+        Quantity: 20
 
 - type: entity
   id: CigaretteOmnizine
   parent: SoakedCigarette
-  name: Hot Dog Water Flavor Explosion
+  name: 热狗水风味大爆发 | Hot Dog Water Flavor Explosion
   components:
   - type: Solution
     solution:
@@ -104,7 +104,7 @@
 - type: entity
   id: CigaretteIron
   parent: SoakedCigarette
-  name: Rusty Orange Baja Blast
+  name: 锈橙色巴哈爆炸 | Rusty Orange Baja Blast
   components:
   - type: Solution
     solution:
@@ -117,7 +117,7 @@
 - type: entity
   id: CigaretteTricordrazine
   parent: SoakedCigarette
-  name: Licorice Allsorts
+  name: 甘草什锦糖 | Licorice Allsorts
   components:
   - type: Solution
     solution:
@@ -130,254 +130,254 @@
 - type: entity
   id: CigaretteDylovene
   parent: SoakedCigarette
-  name: Urinal Cake Dissolver
+  name: 小便池除臭块溶解剂 | Urinal Cake Dissolver
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Dylovene
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Dylovene
+        Quantity: 10
 
 - type: entity
   id: CigaretteDermaline
   parent: SoakedCigarette
-  name: Aloe Peanut Butter Medley
+  name: 芦荟花生酱混合 | Aloe Peanut Butter Medley
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Dermaline
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Dermaline
+        Quantity: 10
 
 - type: entity
   id: CigaretteArithrazine
   parent: SoakedCigarette
-  name: Roman Pipe Works
+  name: 罗马管道工厂 | Roman Pipe Works
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Arithrazine
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Arithrazine
+        Quantity: 10
 
 - type: entity
   id: CigaretteNutriment
   parent: SoakedCigarette
-  name: Grandma's Christmas Fruitcake
+  name: 奶奶的圣诞水果蛋糕 | Grandma's Christmas Fruitcake
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Nutriment
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Nutriment
+        Quantity: 10
 
 - type: entity
   id: CigaretteBicaridine
   parent: SoakedCigarette
-  name: Wet Dog Enhanced Cigarette
+  name: 湿狗增强型香烟 | Wet Dog Enhanced Cigarette
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Bicaridine
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Bicaridine
+        Quantity: 10
 
 - type: entity
   id: CigaretteDexalin
   parent: SoakedCigarette
-  name: Rocky Mountain Musk
+  name: 落基山麝香 | Rocky Mountain Musk
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Dexalin
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Dexalin
+        Quantity: 10
 
 - type: entity
   id: CigaretteSaline
   parent: SoakedCigarette
-  name: North Atlantic Cruise
+  name: 北大西洋邮轮 | North Atlantic Cruise
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Saline
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Saline
+        Quantity: 10
 
 - type: entity
   id: CigaretteBbqSauce
   parent: SoakedCigarette
-  name: Spicy Wood Aroma
+  name: 辛辣木香 | Spicy Wood Aroma
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: BbqSauce
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: BbqSauce
+        Quantity: 10
 
 - type: entity
   id: CigaretteFrezon
   parent: SoakedCigarette
-  name: Atmospheric Adventure
+  name: 大气冒险 | Atmospheric Adventure
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Frezon
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Frezon
+        Quantity: 10
 
 - type: entity
   id: CigaretteCapsaicinOil
   parent: SoakedCigarette
-  name: Chilly P
+  name: 冷P | Chilly P
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: CapsaicinOil
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: CapsaicinOil
+        Quantity: 10
 
 - type: entity
   id: CigaretteRadium
   parent: SoakedCigarette
-  name: Ex Ray
+  name: 前射线 | Ex Ray
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Radium
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Radium
+        Quantity: 10
 
 - type: entity
   id: CigaretteHaloperidol
   parent: SoakedCigarette
-  name: Warm Bovine Extract
+  name: 温牛提取物 | Warm Bovine Extract
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Haloperidol
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Haloperidol
+        Quantity: 10
 
 - type: entity
   id: CigaretteLaughter
   parent: SoakedCigarette
-  name: Clown Adjacency Bonus
+  name: 小丑相邻加成 | Clown Adjacency Bonus
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Laughter
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Laughter
+        Quantity: 10
 
 - type: entity
   id: CigaretteLipolicide
   parent: SoakedCigarette
-  name: 80's Workout Routine
+  name: 80年代健身操 | 80's Workout Routine
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Lipolicide
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Lipolicide
+        Quantity: 10
 
 - type: entity
   id: CigaretteSodiumPolyacrylate
   parent: SoakedCigarette
-  name: Unhealthy Habits
+  name: 不健康习惯 | Unhealthy Habits
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: SodiumPolyacrylate
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: SodiumPolyacrylate
+        Quantity: 10
 
 - type: entity
   id: CigaretteMold
   parent: SoakedCigarette
-  name: Beneath The Sink Experience
+  name: 水槽下的体验 | Beneath The Sink Experience
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Mold
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Mold
+        Quantity: 10
 
 - type: entity
   id: CigaretteLicoxide
   parent: SoakedCigarette
-  name: Wake Up Call
+  name: 唤醒电话 | Wake Up Call
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: Licoxide
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: Licoxide
+        Quantity: 10
 
 - type: entity
   id: CigaretteWeldingFuel
   parent: SoakedCigarette
-  name: Plasma Sauce
+  name: 等离子酱 | Plasma Sauce
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: WeldingFuel
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: WeldingFuel
+        Quantity: 10
 
 - type: entity
   id: CigaretteRobustHarvest
   parent: SoakedCigarette
-  name: Hippie Romance Novel
+  name: 嬉皮浪漫小说 | Hippie Romance Novel
   components:
   - type: Solution
     solution:
       reagents:
-        - ReagentId: Nicotine
-          Quantity: 10
-        - ReagentId: RobustHarvest
-          Quantity: 10
+      - ReagentId: Nicotine
+        Quantity: 10
+      - ReagentId: RobustHarvest
+        Quantity: 10
 
 - type: entity
   id: CigarettePhlogiston
   parent: SoakedCigarette
-  name: Dragon Dating Sim
+  name: 龙之约会模拟 | Dragon Dating Sim
   components:
   - type: Solution
     solution:
@@ -390,7 +390,7 @@
 - type: entity
   id: CigaretteBanana
   parent: SoakedCigarette
-  name: Pun Pun's Tropical Getaway
+  name: Pun Pun的热带度假胜地 | Pun Pun's Tropical Getaway
   components:
   - type: Solution
     solution:
@@ -403,7 +403,7 @@
 - type: entity
   id: CigaretteBlackPepper
   parent: SoakedCigarette
-  name: English Spice
+  name: 英式香料 | English Spice
   components:
   - type: Solution
     solution:

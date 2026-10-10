@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseSheet
   id: SheetOtherBase
-  description: A sheet of material, used often on the station in various applications.
+  description: 一张材料板，常用于空间站的各种应用中。 | A sheet of material, used often on the station in various applications.
   components:
   - type: Sprite
     sprite: Objects/Materials/Sheets/other.rsi
@@ -12,7 +12,7 @@
 - type: entity
   parent: SheetOtherBase
   id: SheetPaper
-  name: paper
+  name: 纸 | paper
   suffix: Full
   components:
   - type: Stack
@@ -41,7 +41,7 @@
 - type: entity
   parent: SheetPaper
   id: SheetPaper1
-  name: paper
+  name: 纸 | paper
   suffix: Single
   components:
   - type: Sprite
@@ -52,7 +52,7 @@
 - type: entity
   parent: SheetOtherBase
   id: SheetPlasma
-  name: plasma
+  name: 等离子体 | plasma
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -91,7 +91,7 @@
 - type: entity
   parent: SheetPlasma
   id: SheetPlasma1
-  name: plasma
+  name: 等离子体 | plasma
   suffix: Single
   components:
   - type: Sprite
@@ -102,7 +102,7 @@
 - type: entity
   parent: SheetOtherBase
   id: SheetPlastic
-  name: plastic
+  name: 塑料 | plastic
   suffix: Full
   components:
   - type: Tag
@@ -138,7 +138,7 @@
 - type: entity
   parent: SheetPlastic
   id: SheetPlastic10
-  name: plastic
+  name: 塑料 | plastic
   suffix: 10
   components:
   - type: Sprite
@@ -149,7 +149,7 @@
 - type: entity
   parent: SheetPlastic
   id: SheetPlastic1
-  name: plastic
+  name: 塑料 | plastic
   suffix: Single
   components:
   - type: Sprite
@@ -160,7 +160,7 @@
 - type: entity
   parent: [SheetOtherBase, FoodBase]
   id: SheetUranium
-  name: uranium
+  name: 铀 | uranium
   suffix: Full
   components:
   - type: Edible
@@ -195,7 +195,7 @@
 - type: entity
   parent: SheetUranium
   id: SheetUranium1
-  name: uranium
+  name: 铀 | uranium
   suffix: Single
   components:
   - type: Stack
@@ -204,45 +204,45 @@
 - type: entity
   parent: SheetOtherBase
   id: MaterialSheetMeat
-  name: meat sheet
+  name: 肉片 | meat sheet
   suffix: Full
   components:
-    - type: Sprite
-      sprite: Objects/Materials/Sheets/meaterial.rsi
-      layers:
-      - state: meat_3
-        map: [ "base" ]
-    - type: Tag
-      tags:
-      - Sheet
-    - type: Material
-    - type: PhysicalComposition
-      materialComposition:
-        Meaterial: 100
-    - type: Stack
-      stackType: MeatSheets
-      baseLayer: base
-      layerStates:
-        - meat
-        - meat_2
-        - meat_3
-    - type: Item
-      sprite: Objects/Materials/Sheets/meaterial.rsi
-      heldPrefix: meat
-    - type: Solution
-      solution:
-        reagents:
-        - ReagentId: Protein
-          Quantity: 7
-        - ReagentId: Fat
-          Quantity: 3
+  - type: Sprite
+    sprite: Objects/Materials/Sheets/meaterial.rsi
+    layers:
+    - state: meat_3
+      map: ["base"]
+  - type: Tag
+    tags:
+    - Sheet
+  - type: Material
+  - type: PhysicalComposition
+    materialComposition:
+      Meaterial: 100
+  - type: Stack
+    stackType: MeatSheets
+    baseLayer: base
+    layerStates:
+    - meat
+    - meat_2
+    - meat_3
+  - type: Item
+    sprite: Objects/Materials/Sheets/meaterial.rsi
+    heldPrefix: meat
+  - type: Solution
+    solution:
+      reagents:
+      - ReagentId: Protein
+        Quantity: 7
+      - ReagentId: Fat
+        Quantity: 3
 
 - type: entity
   parent: MaterialSheetMeat
   id: MaterialSheetMeat1
   suffix: Single
   components:
-    - type: Sprite
-      state: meat
-    - type: Stack
-      count: 1
+  - type: Sprite
+    state: meat
+  - type: Stack
+    count: 1

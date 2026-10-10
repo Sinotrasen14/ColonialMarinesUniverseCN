@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCHelmetBase
   id: RMCHardHat
-  name: hard hat
-  description: A piece of headgear used in dangerous working conditions to protect the head. Comes with a built-in flashlight.
+  name: 安全帽
+  description: 一种在危险工作环境中用于保护头部的头戴装备。配有内置手电筒。
   components:
   - type: Item
     heldPrefix: off
@@ -12,7 +12,7 @@
     - state: icon
     - state: icon_on
       visible: false
-      map: [ "light" ]
+      map: ["light"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Helmets/Hardhats/yellow.rsi
     equippedPrefix: off
@@ -83,7 +83,7 @@
 - type: entity
   parent: RMCHardHat
   id: RMCHardhatRed
-  name: firefighter helmet
+  name: 消防员头盔
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/Hardhats/red.rsi
@@ -125,7 +125,7 @@
 - type: entity
   parent: RMCHardHat
   id: RMCHardhatWhiteAlt
-  name: "Chǎnyè Combine mining helmet"
+  name: "产业联合体采矿头盔"
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/Hardhats/white_alt.rsi
@@ -135,4 +135,4 @@
 - type: entity
   parent: RMCHardhatRed
   id: RMCHardhatRedTMCC
-  name: tartarus-mining hard hat
+  name: 塔尔塔罗斯采矿安全帽

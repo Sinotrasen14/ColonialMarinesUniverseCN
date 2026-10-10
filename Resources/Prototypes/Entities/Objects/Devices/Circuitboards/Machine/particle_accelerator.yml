@@ -1,89 +1,89 @@
-﻿- type: entity
+- type: entity
   id: MachineParticleAcceleratorEndCapCircuitboard
   parent: BaseMachineCircuitboard
-  name: PA end cap board
-  description: A machine board for a particle accelerator end cap.
+  name: PA端盖板 | PA end cap board
+  description: 用于粒子加速器端盖的机器板。 | A machine board for a particle accelerator end cap.
   components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: ParticleAcceleratorEndCapUnfinished
-      stackRequirements:
-        Glass: 15
-        Steel: 15
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: ParticleAcceleratorEndCapUnfinished
+    stackRequirements:
+      Glass: 15
+      Steel: 15
 
 - type: entity
   id: MachineParticleAcceleratorFuelChamberCircuitboard
   parent: BaseMachineCircuitboard
-  name: PA fuel chamber board
-  description: A machine board for a particle accelerator fuel chamber.
+  name: 粒子加速器燃料室板 | PA fuel chamber board
+  description: 粒子加速器燃料室的机器板。 | A machine board for a particle accelerator fuel chamber.
   components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: ParticleAcceleratorFuelChamberUnfinished
-      componentRequirements:
-        AmeFuelContainer:
-          amount: 1
-          defaultPrototype: AmeJar
-      stackRequirements:
-        Glass: 10
-        Steel: 10
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: ParticleAcceleratorFuelChamberUnfinished
+    componentRequirements:
+      AmeFuelContainer:
+        amount: 1
+        defaultPrototype: AmeJar
+    stackRequirements:
+      Glass: 10
+      Steel: 10
 
 - type: entity
   id: MachineParticleAcceleratorPowerBoxCircuitboard
   parent: BaseMachineCircuitboard
-  name: PA power box board
-  description: A machine board for a particle accelerator power box.
+  name: 粒子加速器电源箱板 | PA power box board
+  description: 粒子加速器电源箱的机器板。 | A machine board for a particle accelerator power box.
   components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: ParticleAcceleratorPowerBoxUnfinished
-      stackRequirements:
-        Glass: 5
-        Steel: 5
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: ParticleAcceleratorPowerBoxUnfinished
+    stackRequirements:
+      Glass: 5
+      Steel: 5
 
 # Emitter
 
 - type: entity
   id: MachineParticleAcceleratorEmitterStarboardCircuitboard
   parent: BaseMachineCircuitboard
-  name: PA starboard emitter board
-  description: A machine board for a particle accelerator left emitter.
+  name: 粒子加速器右舷发射器板 | PA starboard emitter board
+  description: 粒子加速器左发射器机板。 | A machine board for a particle accelerator left emitter.
   components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: ParticleAcceleratorEmitterStarboardUnfinished
-      stackRequirements:
-        Glass: 5
-        Steel: 5
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: ParticleAcceleratorEmitterStarboardUnfinished
+    stackRequirements:
+      Glass: 5
+      Steel: 5
 
 - type: entity
   id: MachineParticleAcceleratorEmitterForeCircuitboard
   parent: BaseMachineCircuitboard
-  name: PA fore emitter board
-  description: A machine board for a particle accelerator center emitter.
+  name: PA前发射器板 | PA fore emitter board
+  description: 用于粒子加速器中心发射器的机器板。 | A machine board for a particle accelerator center emitter.
   components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: ParticleAcceleratorEmitterForeUnfinished
-      stackRequirements:
-        Glass: 5
-        Steel: 5
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: ParticleAcceleratorEmitterForeUnfinished
+    stackRequirements:
+      Glass: 5
+      Steel: 5
 
 - type: entity
   id: MachineParticleAcceleratorEmitterPortCircuitboard
   parent: BaseMachineCircuitboard
-  name: PA port emitter board
-  description: A machine board for a particle accelerator right emitter.
+  name: 粒子加速器右发射器端口板 | PA port emitter board
+  description: 粒子加速器右发射器的机器板。 | A machine board for a particle accelerator right emitter.
   components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: ParticleAcceleratorEmitterPortUnfinished
-      stackRequirements:
-        Glass: 5
-        Steel: 5
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: ParticleAcceleratorEmitterPortUnfinished
+    stackRequirements:
+      Glass: 5
+      Steel: 5

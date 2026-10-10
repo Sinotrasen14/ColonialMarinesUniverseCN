@@ -1,19 +1,19 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem, BaseSecurityContraband ]
+  parent: [BaseItem, BaseSecurityContraband]
   id: BaseMagazineRifle
-  name: "magazine (.20 rifle)"
+  name: "弹匣（.20步枪） | magazine (.20 rifle)"
   components:
   - type: Tag
     tags:
-      - MagazineRifle
+    - MagazineRifle
   - type: Item
     size: Small
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle
+      - CartridgeRifle
     capacity: 25
   - type: ContainerContainer
     containers:
@@ -34,8 +34,8 @@
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifle
-  name: "magazine (.20 rifle)"
-  description: 25-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
+  name: "弹匣（.20步枪） | magazine (.20 rifle)"
+  description: 25发双排弹匣，用于战斗步枪。设计用于装填通用动能弹药。 | 25-round double stack magazine for combat rifles. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifle
@@ -55,12 +55,12 @@
 - type: entity
   parent: MagazineRifle
   id: MagazineRifleEmpty
-  name: "magazine (.20 rifle any)"
+  name: "弹匣（.20步枪通用） | magazine (.20 rifle any)"
   suffix: empty
-  description: 25-round double stack magazine for combat rifles.
+  description: 25发双排弹匣，适用于战斗步枪。 | 25-round double stack magazine for combat rifles.
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:
   - type: Sprite
     layers:
     - state: base
@@ -77,8 +77,8 @@
 - type: entity
   parent: MagazineRifle
   id: MagazineRifleIncendiary
-  name: "magazine (.20 rifle incendiary)"
-  description: 25-round double stack magazine for combat rifles. Intended to hold self-igniting incendiary ammunition.
+  name: "弹匣（.20步枪燃烧弹） | magazine (.20 rifle incendiary)"
+  description: 25发双排弹匣，用于战斗步枪。设计用于装填自燃燃烧弹。 | 25-round double stack magazine for combat rifles. Intended to hold self-igniting incendiary ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleIncendiary
@@ -104,8 +104,8 @@
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRiflePractice
-  name: "magazine (.20 rifle practice)"
-  description: 25-round double stack magazine for combat rifles. Intended to hold harmless practice ammunition.
+  name: "弹匣（.20步枪练习用） | magazine (.20 rifle practice)"
+  description: 25发双排弹匣，用于战斗步枪。用于装填无害练习弹药。 | 25-round double stack magazine for combat rifles. Intended to hold harmless practice ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRiflePractice
@@ -131,8 +131,8 @@
 - type: entity
   parent: BaseMagazineRifle
   id: MagazineRifleUranium
-  name: "magazine (.20 rifle uranium)"
-  description: 25-round double stack magazine for combat rifles. Intended to hold exotic uranium-core ammunition.
+  name: "弹匣（.20步枪铀弹） | magazine (.20 rifle uranium)"
+  description: 25发双排弹匣，用于战斗步枪。设计用于装填异域铀芯弹药。 | 25-round double stack magazine for combat rifles. Intended to hold exotic uranium-core ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleUranium

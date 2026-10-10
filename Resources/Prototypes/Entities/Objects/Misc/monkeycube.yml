@@ -1,8 +1,8 @@
 - type: entity
   parent: BoxCardboard
-  name: monkey cube box
+  name: 猴子方块盒 | monkey cube box
   id: MonkeyCubeBox
-  description: Drymate brand monkey cubes. Just add water!
+  description: Drymate品牌的猴子方块。只需加水！ | Drymate brand monkey cubes. Just add water!
   components:
   - type: EntityTableContainerFill
     containers:
@@ -29,9 +29,9 @@
 
 - type: entity
   parent: BaseWrappedCube
-  name: monkey cube
+  name: 猴子方块 | monkey cube
   id: MonkeyCubeWrapped
-  description: Unwrap this to get a monkey cube.
+  description: 展开这个以获得猴子方块。 | Unwrap this to get a monkey cube.
   components:
   - type: SpawnItemsOnUse
     items:
@@ -44,9 +44,9 @@
 
 - type: entity
   parent: MonkeyCubeBox
-  name: kobold cube box
+  name: 狗头人方块盒 | kobold cube box
   id: KoboldCubeBox
-  description: Condensed kobolds in a cube. Just add water!
+  description: 浓缩在方块里的狗头人。只需加水！ | Condensed kobolds in a cube. Just add water!
   components:
   - type: EntityTableContainerFill
     containers:
@@ -59,9 +59,9 @@
 
 - type: entity
   parent: MonkeyCubeBox
-  name: variant cube box
+  name: 变体方块盒 | variant cube box
   id: VariantCubeBox
-  description: Both kobold cubes and monkey cubes. Just add water!
+  description: 狗头人方块和猴子方块。只需加水！ | Both kobold cubes and monkey cubes. Just add water!
   components:
   - type: EntityTableContainerFill
     containers:
@@ -77,22 +77,22 @@
 
 - type: entity
   parent: BaseWrappedCube
-  name: kobold cube
+  name: 狗头人方块 | kobold cube
   id: KoboldCubeWrapped
-  description: Unwrap this to get a kobold cube.
+  description: 打开这个就能得到一个狗头人方块。 | Unwrap this to get a kobold cube.
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: KoboldCube
+    - id: KoboldCube
   - type: Sprite
     state: wrapper_kobold
 
 - type: entity
   parent: MonkeyCubeBox
-  name: monkey cube box
+  name: 猴立方盒 | monkey cube box
   suffix: Syndicate
   id: SyndicateSpongeBox
-  description: Drymate brand monkey cubes. Just add water!
+  description: Drymate品牌的猴立方。只需加水！ | Drymate brand monkey cubes. Just add water!
   components:
   - type: EntityTableContainerFill
     containers:
@@ -105,10 +105,10 @@
 
 - type: entity
   parent: MonkeyCubeWrapped
-  name: monkey cube
+  name: 猴子方块 | monkey cube
   suffix: Wrapped, Syndicate
   id: SyndicateSpongeWrapped
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: SyndicateSponge
+    - id: SyndicateSponge

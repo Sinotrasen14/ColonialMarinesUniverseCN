@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: RMCHeadsetIconsTSE
   id: RMCHeadsetRoyalMarine
-  name: royal marine headset
-  description: A sleek headset used by the Royal Crown Marines. Low profile enough to fit under their unique helmets.
+  name: 皇家海军陆战队耳机
+  description: 一款皇家海军陆战队使用的流线型耳机。外形足够轻薄，可佩戴在他们独特的头盔下。
   components:
   - type: GrantSquadLeaderTracker
     defaultMode: RCMTeamLead
@@ -18,13 +18,11 @@
   - type: RMCHeadset
     channels:
     - TWESOF
-
-
 - type: entity
   parent: RMCHeadsetRoyalMarine
   id: RMCHeadsetRoyalMarineLeader
-  name: royal marine leader's headset
-  description: A sleek headset used by the Royal Crown Marines. Low profile enough to fit under their unique helmets.
+  name: 皇家海军陆战队领袖的耳机
+  description: 一款皇家海军陆战队使用的时尚耳机。外形足够低矮，可佩戴在他们独特的头盔下。
   components:
   - type: ContainerFill
     containers:
@@ -32,13 +30,11 @@
       - RMCEncryptionKeyRoyalMarineCommand
   - type: RMCHeadset
     radioTextIncrease: 2
-
-
 - type: entity
   parent: RMCHeadsetRoyalMarine
   id: RMCHeadsetRoyalMarineOfficer
-  name: royal marine officer's headset
-  description: A sleek headset used by the Royal Crown Marines. Low profile enough to fit under their unique helmets. This one is heavier with the weight of responsibility.
+  name: 皇家海军陆战队军官耳机
+  description: 一款皇家海军陆战队使用的流线型耳机。外形足够低矮，可佩戴在他们独特的头盔下。这一款更重，承载着责任的重量。
   components:
   - type: ContainerFill
     containers:
@@ -46,14 +42,12 @@
       - RMCEncryptionKeyRoyalMarineCommand
   - type: RMCHeadset
     radioTextIncrease: 3
-
-
 - type: entity
   parent: RMCHeadsetRoyalMarine
   id: RMCHeadsetRoyalMarinePVE
-  name: royal marine's headset
+  name: 皇家海军陆战队耳机
   suffix: PVE
-  description: A sleek headset used by the Royal Crown Marines. Low profile enough to fit under their unique helmets.
+  description: 皇家王冠海军陆战队使用的一款流线型耳麦。其轮廓足够低，能戴在他们独特的头盔下。
   components:
   - type: GrantSquadLeaderTracker
     defaultMode: RCMPVETroopCommander
@@ -65,14 +59,12 @@
   - type: RMCHeadset
     channels:
     - TWESOF
-
-
 - type: entity
   parent: RMCHeadsetRoyalMarinePVE
   id: RMCHeadsetRoyalMarineLeaderPVE
-  name: royal marine leader's headset
+  name: 皇家海军陆战队领袖的耳机
   suffix: PVE
-  description: A sleek headset used by the Royal Crown Marines. Low profile enough to fit under their unique helmets. This one is heavier with the weight of responsibility.
+  description: 皇家王冠海军陆战队使用的一款流线型耳麦。其轮廓足够低，能戴在他们独特的头盔下。这一款则更重，承载着责任的重量。
   components:
   - type: ContainerFill
     containers:
@@ -80,12 +72,10 @@
       - RMCEncryptionKeyRoyalMarineCommand
   - type: RMCHeadset
     radioTextIncrease: 3
-
-
 - type: entity
   parent: CMEncryptionKey
   id: RMCEncryptionKeyRoyalMarine
-  name: royal marine radio encryption key
+  name: 皇家海军陆战队无线电加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -94,11 +84,10 @@
     defaultChannel: TWESOF
   - type: Sprite
     state: sl_key
-
 - type: entity
   parent: RMCEncryptionKeyRoyalMarine
   id: RMCEncryptionKeyRoyalMarineCommand
-  name: royal marine command radio encryption key
+  name: 皇家海军陆战队司令部无线电加密密钥
   components:
   - type: EncryptionKey
     channels:

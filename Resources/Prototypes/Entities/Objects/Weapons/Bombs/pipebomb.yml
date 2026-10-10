@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ TimerGrenadeBase, BaseMinorContraband ]
+  parent: [TimerGrenadeBase, BaseMinorContraband]
   id: PipeBomb
-  name: pipe bomb
-  description: An improvised explosive made from pipes and wire.
+  name: 管道炸弹 | pipe bomb
+  description: 用管道和导线制成的简易爆炸物。 | An improvised explosive made from pipes and wire.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Bombs/pipebomb.rsi
@@ -35,10 +35,10 @@
     node: pipebomb
 
 - type: entity
-  parent: [ BaseItem, BaseMinorContraband ]
+  parent: [BaseItem, BaseMinorContraband]
   id: PipeBombGunpowder
-  name: pipe bomb
-  description: An improvised explosive made from a pipe. This one has no gunpowder.
+  name: 管道炸弹 | pipe bomb
+  description: 一个用管道制成的简易爆炸物。这个没有火药。 | An improvised explosive made from a pipe. This one has no gunpowder.
   suffix: Gunpowder
   components:
   - type: Sprite
@@ -50,10 +50,10 @@
     defaultTarget: pipebomb
 
 - type: entity
-  parent: [ BaseItem, BaseMinorContraband ]
+  parent: [BaseItem, BaseMinorContraband]
   id: PipeBombCable
-  name: pipe bomb
-  description: An improvised explosive made from a pipe. This one has no cable.
+  name: 管道炸弹 | pipe bomb
+  description: 一个用管道制成的简易爆炸物。这个没有线缆。 | An improvised explosive made from a pipe. This one has no cable.
   suffix: Cable
   components:
   - type: Sprite

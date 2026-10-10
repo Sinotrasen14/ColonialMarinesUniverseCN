@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseStructure, StructureHealthFurnitureStrong ]
+  parent: [BaseStructure, StructureHealthFurnitureStrong]
   id: WeaponTurretSyndicateBroken
-  name: ballistic turret (broken)
-  description: A ballistic machine gun auto-turret.
+  name: 弹道炮塔（损坏） | ballistic turret (broken)
+  description: 一挺弹道机枪自动炮塔。 | A ballistic machine gun auto-turret.
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -15,8 +15,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior

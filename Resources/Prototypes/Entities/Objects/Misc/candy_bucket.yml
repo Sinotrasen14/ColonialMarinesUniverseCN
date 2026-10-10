@@ -1,14 +1,14 @@
 - type: entity
   parent: BaseItem
   id: CandyBucket
-  name: candy bucket
-  description: A festive bucket for all your treats.
+  name: 糖果桶 | candy bucket
+  description: 一个装满你所有糖果的节日桶。 | A festive bucket for all your treats.
   components:
   - type: Sprite
     sprite: Objects/Fun/candy_bucket.rsi
     layers:
     - state: empty_icon
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: ContainerHeld
     threshold: 1
   - type: Item
@@ -17,19 +17,19 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-     enum.ToggleableVisuals.Enabled:
+      enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: {state: full_icon}
-          False: {state: empty_icon}
+          true: {state: full_icon}
+          false: {state: empty_icon}
   - type: Storage
     maxItemSize: Small
     grid:
     - 0,0,3,2
     whitelist:
       components:
-        - Pill
+      - Pill
       tags:
-        - FoodSnack
+      - FoodSnack
   - type: ContainerContainer
     containers:
       storagebase: !type:Container

@@ -1,17 +1,17 @@
 - type: entity
   parent: BaseItem
   id: GeigerCounter
-  name: Geiger counter
-  description: A handheld device used for detecting and measuring radiation pulses.
+  name: 盖革计数器 | Geiger counter
+  description: 一种用于检测和测量辐射脉冲的手持设备。 | A handheld device used for detecting and measuring radiation pulses.
   components:
   - type: Sprite
     sprite: Objects/Tools/geiger.rsi
     layers:
-      - state: geiger_base
-      - state: geiger_on_idle
-        map: ["enum.GeigerLayers.Screen"]
-        shader: unshaded
-        visible: false
+    - state: geiger_base
+    - state: geiger_on_idle
+      map: ["enum.GeigerLayers.Screen"]
+      shader: unshaded
+      visible: false
   - type: Item
     sprite: Objects/Tools/geiger.rsi
   - type: Geiger
@@ -23,8 +23,8 @@
     visuals:
       enum.GeigerVisuals.IsEnabled:
         GeigerLayers.Screen:
-          True: { visible: True }
-          False: { visible: False }
+          true: {visible: true}
+          false: {visible: false}
       enum.GeigerVisuals.DangerLevel:
         GeigerLayers.Screen:
           None: {state: geiger_on_idle}

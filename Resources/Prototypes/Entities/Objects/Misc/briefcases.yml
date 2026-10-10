@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseStorageItem
   id: BriefcaseBase
-  description: Useful for carrying items in your hands.
+  description: 用于手持物品。 | Useful for carrying items in your hands.
   abstract: true
   components:
   - type: Item
@@ -17,7 +17,7 @@
 - type: entity
   parent: BriefcaseBase
   id: BriefcaseBrown
-  name: brown briefcase
+  name: 棕色公文包 | brown briefcase
   components:
   - type: Sprite
     sprite: Objects/Storage/Briefcases/briefcase_brown.rsi
@@ -36,21 +36,21 @@
 - type: entity
   parent: [BriefcaseBase, BaseSyndicateContraband]
   id: BriefcaseWeapon
-  name: secure weapon case
+  name: 安全武器箱 | secure weapon case
   suffix: Gun, Empty
-  description: Useful for aspiring mercenaries, whether you're fighting for a company, a nation or anyone else. Or just making a really big omelette.
+  description: 对于有志成为雇佣兵的人来说很有用，无论你是为公司、国家还是其他任何人而战。或者只是做一个超大的煎蛋卷。 | Useful for aspiring mercenaries, whether you're fighting for a company, a nation or anyone else. Or just making a really big omelette.
   components:
   - type: Appearance
   - type: Sprite
     sprite: Objects/Storage/Briefcases/weapon_case_large.rsi
     layers:
     - state: icon
-      map: [ base ]
+      map: [base]
     - state: locked
-      map: [ "enum.LockVisualLayers.Lock" ]
+      map: ["enum.LockVisualLayers.Lock"]
       shader: unshaded
     - state: unlocked
-      map: [ light ]
+      map: [light]
       shader: unshaded
   - type: Lock
   - type: LockVisuals
@@ -58,11 +58,11 @@
     visuals:
       enum.StorageVisuals.Open:
         base:
-          True: { state: icon-open }
-          False: { state: icon }
+          true: {state: icon-open}
+          false: {state: icon}
         light:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
 
 - type: entity
   parent: BriefcaseWeapon

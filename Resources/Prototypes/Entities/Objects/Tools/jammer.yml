@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseItem
   id: BaseJammer
-  name: radio jammer
-  description: This device will disrupt any nearby outgoing radio communication as well as suit sensors when activated.
+  name: 无线电干扰器 | radio jammer
+  description: 该设备激活后，会干扰附近所有外发的无线电通信以及宇航服传感器。 | This device will disrupt any nearby outgoing radio communication as well as suit sensors when activated.
   components:
   - type: Sprite
     sprite: Objects/Devices/jammer.rsi
@@ -29,29 +29,29 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: BatteryVisuals
   - type: StaticPrice
     price: 1500
 
 - type: entity
-  name: radio jammer
+  name: 无线电干扰器 | radio jammer
   parent: [BaseJammer, PowerCellSlotMediumItem, BaseSyndicateContraband]
   id: RadioJammer
-  description: This device will disrupt any nearby outgoing and incoming radio communication as well as suit sensors when activated.
+  description: 该设备激活后，会干扰附近所有进出无线电通信以及宇航服传感器。 | This device will disrupt any nearby outgoing and incoming radio communication as well as suit sensors when activated.
   components:
   - type: GenericVisualizer
     visuals:
       enum.BatteryVisuals.State:
         enum.PowerDeviceVisualLayers.Powered:
-          Full: { state: jammer_high_charge }
-          Neither: { state: jammer_medium_charge }
-          Empty: { state: jammer_low_charge }
+          Full: {state: jammer_high_charge}
+          Neither: {state: jammer_medium_charge}
+          Empty: {state: jammer_low_charge}
       enum.ToggleableVisuals.Enabled:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: ToggleCellDraw
   - type: BatteryVisuals
   - type: StaticPrice
@@ -60,7 +60,7 @@
 - type: entity
   parent: [BaseJammer, BaseXenoborgContraband]
   id: XenoborgRadioJammer
-  name: xenoborg radio jammer
+  name: 异星机械无线电阻断器 | xenoborg radio jammer
   components:
   - type: RadioJammer
     frequenciesExcluded:

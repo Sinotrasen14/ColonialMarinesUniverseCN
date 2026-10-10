@@ -1,8 +1,8 @@
 - type: entity
-  name: bow
+  name: 弓 | bow
   parent: [BaseItem, BaseMinorContraband]
   id: BaseBow
-  description: The original rooty tooty point and shooty.
+  description: 最初的弓弦嘣嘣、瞄准发射的玩意儿。 | The original rooty tooty point and shooty.
   abstract: true
   components:
   - type: Sprite
@@ -12,8 +12,8 @@
   - type: Clothing
     quickEquip: false
     slots:
-      - Back
-      - suitStorage
+    - Back
+    - suitStorage
   - type: Wieldable
     wieldSound:
       path: /Audio/Items/bow_pull.ogg
@@ -29,12 +29,12 @@
     - SemiAuto
     soundGunshot:
       collection: BulletMiss
-    soundEmpty: null
+    soundEmpty:
   - type: ItemSlots
     slots:
       projectiles:
-        name: Projectiles
-        startingItem: null
+        name: 弹射物 | Projectiles
+        startingItem:
         insertSound: /Audio/Weapons/Guns/Misc/arrow_nock.ogg
         whitelist:
           tags:
@@ -49,17 +49,17 @@
 - type: entity
   id: BowImprovised
   parent: BaseBow
-  name: improvised shortbow
+  name: 临时短弓 | improvised shortbow
   components:
   - type: Sprite
     layers:
     - state: unwielded
-      map: [ base ]
+      map: [base]
     - state: unwielded-arrow
-      map: [ arrow ]
+      map: [arrow]
       visible: false
     - state: unwielded-plunger
-      map: [ plunger ]
+      map: [plunger]
       visible: false
   # to elucidate whats intended here:
   # arrow is inserted -> ItemMapper sets layer with map `arrow` to visible
@@ -83,14 +83,14 @@
     visuals:
       enum.WieldableVisuals.Wielded:
         arrow:
-          True: { state: wielded-arrow }
-          False: { state: unwielded-arrow }
+          true: {state: wielded-arrow}
+          false: {state: unwielded-arrow}
         plunger:
-          True: { state: wielded-plunger }
-          False: { state: unwielded-plunger }
+          true: {state: wielded-plunger}
+          false: {state: unwielded-plunger}
         base:
-          True: { state: wielded }
-          False: { state: unwielded }
+          true: {state: wielded}
+          false: {state: unwielded}
   - type: Construction
     graph: ImprovisedBow
     node: ImprovisedBow

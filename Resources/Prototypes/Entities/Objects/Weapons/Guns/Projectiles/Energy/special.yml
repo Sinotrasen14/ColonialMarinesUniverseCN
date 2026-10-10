@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseBullet
   id: EmitterBolt
-  categories: [ HideSpawnMenu ]
-  name: emitter bolt
+  categories: [HideSpawnMenu]
+  name: 发射器螺栓 | emitter bolt
   components:
   - type: Sprite
     sprite: Structures/Power/Generation/Singularity/emitter.rsi
@@ -13,14 +13,13 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.2,0.2,0.2"
         hard: false
         mask:
         - Opaque
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:
   - type: Projectile
     #soundHit: Waiting on serv3
     damage:

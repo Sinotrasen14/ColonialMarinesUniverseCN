@@ -2,8 +2,8 @@
   abstract: true
   parent: [BaseWeaponEnergyTurretIndestructible, ConstructibleMachine, StructureHealthMachineStrong]
   id: WeaponEnergyTurretStationBase
-  name: sentry turret
-  description: A high-tech autonomous weapons system designed to keep unauthorized personnel out of sensitive areas.
+  name: 哨戒炮塔 | sentry turret
+  description: 一种高科技自主武器系统，旨在阻止未经授权人员进入敏感区域。 | A high-tech autonomous weapons system designed to keep unauthorized personnel out of sensitive areas.
   components:
   - type: Anchorable
     flags:
@@ -12,21 +12,19 @@
   - type: Fixtures
     fixtures:
       body:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 60
         mask:
-          - Impassable
+        - Impassable
       turret:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 60
         mask:
-          - MachineMask
+        - MachineMask
         layer:
-          - MachineLayer
+        - MachineLayer
         hard: false
   - type: Sprite
     sprite: Objects/Weapons/Guns/Turrets/sentry_turret.rsi
@@ -36,23 +34,23 @@
     - state: support
       renderingStrategy: NoRotation
     - state: base_shadow
-      map: [ "shadow" ]
+      map: ["shadow"]
     - state: base
-      map: [ "base" ]
+      map: ["base"]
     - state: stun
-      map: [ "enum.DeployableTurretVisuals.Weapon" ]
+      map: ["enum.DeployableTurretVisuals.Weapon"]
       shader: "unshaded"
       visible: false
     - state: cover_closed
-      map: [ "enum.DeployableTurretVisuals.Turret" ]
+      map: ["enum.DeployableTurretVisuals.Turret"]
       renderingStrategy: NoRotation
     - state: cover_light_on
-      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
       shader: "unshaded"
       renderingStrategy: NoRotation
       visible: false
     - state: panel
-      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
       renderingStrategy: NoRotation
       visible: false
   - type: AnimationPlayer
@@ -61,12 +59,12 @@
     visuals:
       enum.BatteryWeaponFireModeVisuals.State:
         enum.DeployableTurretVisuals.Weapon:
-          BulletEnergyTurretDisabler: { state: stun }
-          BulletEnergyTurretLaser: { state: lethal }
+          BulletEnergyTurretDisabler: {state: stun}
+          BulletEnergyTurretLaser: {state: lethal}
       enum.DeployableTurretVisuals.Broken:
         base:
-          True: { state: destroyed }
-          False: { state: base }
+          true: {state: destroyed}
+          false: {state: base}
   - type: HTN
     enabled: false
   - type: StationAiWhitelist
@@ -92,15 +90,13 @@
     allowSelfRepair: false
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 275
       behaviors:
       - !type:PlaySoundBehavior

@@ -1,10 +1,11 @@
-# m3
 - type: entity
-  parent: [RMCBaseArmorPVE, RMCBaseUniformAccessoryItemArmorPVE]
+  parent:
+  - RMCBaseArmorPVE
+  - RMCBaseUniformAccessoryItemArmorPVE
   id: RMCArmorM3PVE
   suffix: PVE, Standard
-  name: M3 pattern marine armor
-  description: Standard UNMC issue M3 Pattern Personal Armor. Composite ballistic armor, integral biomonitoring system, and brackets for the IMP system as well as the TNR Shoulder Lamp.
+  name: M3型海军陆战队装甲
+  description: 标准UNMC配发M3型个人装甲。复合弹道装甲、集成生物监测系统，以及用于IMP系统和TNR肩灯的支架。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/standard/jungle.rsi
@@ -16,8 +17,8 @@
   - type: RMCArmorSpeedTier
     speedTier: light
   - type: ClothingSpeedModifier
-    walkModifier: .725
-    sprintModifier: .725
+    walkModifier: 0.725
+    sprintModifier: 0.725
   - type: ExplosionResistance
     damageCoefficient: 0
     worn: false
@@ -36,7 +37,6 @@
       Snow: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/standard/snow.rsi
       Classic: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/standard/classic.rsi
       Urban: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/standard/urban.rsi
-
 - type: entity
   parent: RMCArmorM3PVE
   id: RMCArmorM3PVESmooth
@@ -51,7 +51,6 @@
       Snow: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/smooth/snow.rsi
       Classic: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/smooth/classic.rsi
       Urban: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/smooth/urban.rsi
-
 - type: entity
   parent: RMCArmorM3PVE
   id: RMCArmorM3PVERidged
@@ -66,13 +65,12 @@
       Snow: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/ridged/snow.rsi
       Classic: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/ridged/classic.rsi
       Urban: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/ridged/urban.rsi
-
 - type: entity
   parent: RMCArmorM3PVE
   id: RMCArmorB12PVE
   suffix: PVE, B12
-  name: B12 pattern marine armor
-  description: Semi-experimental body armor system similar to M3, incorporating primarily carbon fiber instead of boron carbide.
+  name: B12型海军陆战队装甲
+  description: 半实验性装甲系统，类似于M3，主要采用碳纤维而非碳化硼。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/b12/jungle.rsi
@@ -91,13 +89,12 @@
       Snow: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/b12/snow.rsi
       Classic: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/b12/classic.rsi
       Urban: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/b12/urban.rsi
-
 - type: entity
   parent: RMCArmorM3PVE
   id: RMCArmorM3PVESGO
   suffix: PVE, Smart Gun harness
-  name: ML66A combat harness
-  description: Lightweight vest composed of ballistic micromesh and a ceramic composite chestplate for practical protection, as well as the computers, straps, and armature required for operating the ML66A Smart Gun itself.
+  name: ML66A 作战背具
+  description: 轻量化作战背具由防弹微网和陶瓷复合胸甲组成，可提供实用防护，并包含操作 ML66A 智能枪本身所需的计算机、束带和机械臂架。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/sg/jungle.rsi
@@ -110,14 +107,11 @@
       Urban: _RMC14/Objects/Clothing/OuterClothing/PVE/Marines/sg/urban.rsi
   - type: ClothingBlockBackpack
   - type: SmartGunArmor
-
-# Armour Cases
-
 - type: entity
   parent: RMCBasePVEEquipmentCase
   id: RMCPVEArmorCaseBase
-  name: base armor case
-  description: An armor set case.
+  name: 基础护甲箱
+  description: 一个护甲套装箱。
   components:
   - type: Icon
     sprite: _RMC14/Objects/Storage/PVE_Cases/Armor/marine.rsi
@@ -127,16 +121,20 @@
     layers:
     - state: base
     - state: armor
-      map: [ armor ]
+      map:
+      - armor
       visible: false
     - state: lid_closed
-      map: [ lid ]
+      map:
+      - lid
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed }
+          true:
+            state: lid_open
+          false:
+            state: lid_closed
   - type: Storage
     maxItemSize: Ginormous
     grid:
@@ -177,28 +175,31 @@
       path: /Audio/Items/wirecutter_drop.ogg
       params:
         volume: -4
-
 - type: entity
   parent: RMCPVEArmorCaseBase
   id: RMCPVEArmorCaseM3
-  name: standard M3 pattern marine armor set
-  description: A case containing standard M3 pattern marine armor, an M10 helmet, and attachable armor pieces.
+  name: 标准 M3 型陆战队装甲套装
+  description: 一个装有标准 M3 型陆战队装甲、M10 头盔和可附加装甲部件的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/Armor/marine.rsi
     layers:
     - state: base
     - state: armor
-      map: [ armor ]
+      map:
+      - armor
       visible: false
     - state: lid_closed_standard
-      map: [ lid ]
+      map:
+      - lid
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed_standard }
+          true:
+            state: lid_open
+          false:
+            state: lid_closed_standard
   - type: StorageFill
     contents:
     - id: ArmorHelmetM10
@@ -209,28 +210,31 @@
     - id: RMCPVEArmorGroinPlate
     - id: RMCPVEArmorShinGuard
     - id: RMCPVEArmorKneeGuard
-
 - type: entity
   parent: RMCPVEArmorCaseBase
   id: RMCPVEArmorCaseM3Smooth
-  name: smooth M3 pattern marine armor set
-  description: A case containing smooth M3 pattern marine armor, an M10 helmet, and attachable armor pieces.
+  name: 光滑M3型海军陆战队装甲套装
+  description: 一个装有光滑M3型海军陆战队装甲、M10头盔和可附加装甲部件的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/Armor/marine.rsi
     layers:
     - state: base
     - state: armor
-      map: [ armor ]
+      map:
+      - armor
       visible: false
     - state: lid_closed_smooth
-      map: [ lid ]
+      map:
+      - lid
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed_smooth }
+          true:
+            state: lid_open
+          false:
+            state: lid_closed_smooth
   - type: StorageFill
     contents:
     - id: ArmorHelmetM10
@@ -241,28 +245,31 @@
     - id: RMCPVEArmorGroinPlate
     - id: RMCPVEArmorShinGuard
     - id: RMCPVEArmorKneeGuard
-
 - type: entity
   parent: RMCPVEArmorCaseBase
   id: RMCPVEArmorCaseM3Ridged
-  name: ridged M3 pattern marine armor set
-  description: A case containing ridged M3 pattern marine armor, an M10 helmet, and attachable armor pieces.
+  name: 带脊纹的M3型陆战队装甲套装
+  description: 一个装有带脊纹M3型陆战队装甲、M10头盔和可附加装甲部件的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/Armor/marine.rsi
     layers:
     - state: base
     - state: armor
-      map: [ armor ]
+      map:
+      - armor
       visible: false
     - state: lid_closed_ridged
-      map: [ lid ]
+      map:
+      - lid
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed_ridged }
+          true:
+            state: lid_open
+          false:
+            state: lid_closed_ridged
   - type: StorageFill
     contents:
     - id: ArmorHelmetM10
@@ -273,28 +280,31 @@
     - id: RMCPVEArmorGroinPlate
     - id: RMCPVEArmorShinGuard
     - id: RMCPVEArmorKneeGuard
-
 - type: entity
   parent: RMCPVEArmorCaseBase
   id: RMCPVEArmorCaseB12
-  name: B12 pattern marine armor set
-  description: A case containing B12 pattern marine armor, an M10 helmet, and attachable armor pieces.
+  name: B12型海军陆战队装甲套装
+  description: 一个装有B12型海军陆战队装甲、M10头盔和可附加装甲部件的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/Armor/marine.rsi
     layers:
     - state: base
     - state: armor
-      map: [ armor ]
+      map:
+      - armor
       visible: false
     - state: lid_closed_b12
-      map: [ lid ]
+      map:
+      - lid
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed_b12 }
+          true:
+            state: lid_open
+          false:
+            state: lid_closed_b12
   - type: StorageFill
     contents:
     - id: ArmorHelmetM10
@@ -305,28 +315,31 @@
     - id: RMCPVEArmorGroinPlate
     - id: RMCPVEArmorShinGuard
     - id: RMCPVEArmorKneeGuard
-
 - type: entity
   parent: RMCPVEArmorCaseBase
   id: RMCPVEArmorCaseM3SGO
-  name: ML66A combat harness set
-  description: A case containing an ML66A combat harness, an M10 helmet, and attachable armor pieces.
+  name: ML66A 战斗背带套装
+  description: 一个装有ML66A战斗背带、M10头盔和可附加装甲部件的箱子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/PVE_Cases/Armor/marine.rsi
     layers:
     - state: base
     - state: armor
-      map: [ armor ]
+      map:
+      - armor
       visible: false
     - state: lid_closed_sg
-      map: [ lid ]
+      map:
+      - lid
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         lid:
-          True: { state: lid_open }
-          False: { state: lid_closed_sg }
+          true:
+            state: lid_open
+          false:
+            state: lid_closed_sg
   - type: StorageFill
     contents:
     - id: ArmorHelmetM10

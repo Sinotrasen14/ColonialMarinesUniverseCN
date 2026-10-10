@@ -2,19 +2,18 @@
   abstract: true
   parent: RMCBaseUniformAccessory
   id: RMCUtilityBase
-  name: utility accessory
-  description: An abstract utility accessory.
+  name: 实用配件
+  description: 一种抽象的实用配件。
   components:
   - type: UniformAccessory
     category: Utility
     limit: 1
     hiddenByJacketRolling: false
-
 - type: entity
   parent: RMCUtilityBase
   id: RMCStethoscope
-  name: stethoscope
-  description: An outdated, but still useful medical apparatus for listening to the sounds of the human body. It also makes you look like you know what you're doing.
+  name: 听诊器
+  description: 一种过时但仍然有用的医疗器具，用于聆听人体发出的声音。它还能让你看起来像知道自己在做什么。
   components:
   - type: Item
     size: Small
@@ -34,12 +33,11 @@
       sprite: _RMC14/Objects/Medical/stethoscope.rsi
       state: utility
   - type: RMCStethoscope
-
 - type: entity
   parent: RMCUtilityBase
   id: RMCHorizonFlower
-  name: blue horizon flower
-  description: A beautiful blue flower that symbolizes hope and rememberance.
+  name: 蓝色地平线花
+  description: 一朵美丽的蓝色花，象征着希望与怀念。
   components:
   - type: Item
     size: Small

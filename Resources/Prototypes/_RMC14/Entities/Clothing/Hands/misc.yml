@@ -1,8 +1,8 @@
 - type: entity
   parent: CMHandsInsulated
   id: CMHandsCaptain
-  name: captain's gloves
-  description: A pair of captain's gloves.
+  name: 船长手套
+  description: 一副船长手套。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/captain.rsi
@@ -11,12 +11,11 @@
   - type: Fiber
     fiberMaterial: fibers-durathread
     fiberColor: fibers-brown
-
 - type: entity
   parent: ClothingHandsBase
   id: CMHandsLatex
-  name: latex gloves
-  description: A pair of latex gloves.
+  name: 乳胶手套
+  description: 一副乳胶手套。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/latex.rsi
@@ -28,23 +27,5 @@
   - type: Tag
     tags:
     - RMCGlovesLatex
-
 - type: Tag
   id: RMCGlovesLatex
-
-# - type: entity
-#   parent: RMCHandsVeteran
-#   id: RMCHandsTychoGloves # CMU14 - moved
-#   name: Tycho 4000 radiation protection gloves
-#   description: The burn-resistant gloves for the Weyland-Yutani Tycho 4000 Radiation Protection Suit. It's lined with lead, and is pretty heavy, but it'll keep you safe from Radiological materials.
-#   components:
-#   - type: Sprite
-#     sprite: _RMC14/Objects/Clothing/Hands/Gloves/rad_gloves_weya.rsi
-#   - type: Clothing
-#     sprite: _RMC14/Objects/Clothing/Hands/Gloves/rad_gloves_weya.rsi
-#   - type: CMArmor
-#     bio: 100
-#     melee: 25
-#     bullet: 15
-#     explosionArmor: 10
-#     #rad: 50

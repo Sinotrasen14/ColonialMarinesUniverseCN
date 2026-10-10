@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem, SolutionDart ]
+  parent: [BaseItem, SolutionDart]
   id: BaseArrow
   components:
   - type: Sprite
@@ -18,8 +18,7 @@
         restitution: 0.3
         friction: 0.2
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.3,0.1,-0.1"
         hard: false
         mask:
@@ -31,7 +30,7 @@
   - type: ThrowingAngle
     angle: 0
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:
   - type: Tag
     tags:
     - Arrow
@@ -58,8 +57,8 @@
 - type: entity
   parent: BaseArrow
   id: ArrowRegular
-  name: arrow
-  description: You can feel the power of the steppe within you.
+  name: 箭 | arrow
+  description: 你能感受到体内草原的力量。 | You can feel the power of the steppe within you.
   components:
   - type: Sprite
     layers:
@@ -69,7 +68,7 @@
       color: brown
     - state: tip
     - state: solution1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Projectile
     damage:
@@ -79,8 +78,8 @@
 - type: entity
   parent: BaseArrow
   id: ArrowImprovised
-  name: glass shard arrow
-  description: The greyshirt's preferred projectile.
+  name: 玻璃碎片箭 | glass shard arrow
+  description: 灰衫军偏爱的投射物。 | The greyshirt's preferred projectile.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
@@ -92,7 +91,7 @@
     - state: tip
       color: lightblue
     - state: solution1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Projectile
     damage:
@@ -105,8 +104,8 @@
 - type: entity
   parent: BaseArrow
   id: ArrowImprovisedPlasma
-  name: plasma glass shard arrow
-  description: The greyshirt's preferred projectile. Now with extra lethality!
+  name: 等离子玻璃碎片箭 | plasma glass shard arrow
+  description: 灰衫军的首选投射物。现在更具致命性！ | The greyshirt's preferred projectile. Now with extra lethality!
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
@@ -118,7 +117,7 @@
     - state: tip
       color: purple
     - state: solution1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Projectile
     damage:
@@ -131,8 +130,8 @@
 - type: entity
   parent: BaseArrow
   id: ArrowImprovisedUranium
-  name: uranium glass shard arrow
-  description: The greyshirt's preferred projectile. Now with added radiation!
+  name: 铀玻璃碎片箭 | uranium glass shard arrow
+  description: 灰衫军偏爱的投射物。现在添加了辐射！ | The greyshirt's preferred projectile. Now with added radiation!
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
@@ -144,7 +143,7 @@
     - state: tip
       color: green
     - state: solution1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Projectile
     damage:
@@ -158,8 +157,8 @@
 - type: entity
   parent: BaseArrow
   id: ArrowImprovisedCarp
-  name: carp tooth arrow
-  description: The salvager's preferred arrow. Kill your enemies with the teeth of their families.
+  name: 鲤鱼牙箭 | carp tooth arrow
+  description: 打捞者偏爱的箭。用敌人亲族的牙齿杀死他们。 | The salvager's preferred arrow. Kill your enemies with the teeth of their families.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
@@ -171,7 +170,7 @@
     - state: tip
       color: white
     - state: solution1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Projectile
     damage:
@@ -184,8 +183,8 @@
 - type: entity
   parent: BaseArrow
   id: ArrowCard
-  name: cardboard arrow
-  description: Careful, you'll poke an eye out!
+  name: 纸板箭 | cardboard arrow
+  description: 小心，会戳到眼睛的！ | Careful, you'll poke an eye out!
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/arrows.rsi
@@ -197,7 +196,7 @@
     - state: tip
       color: brown
     - state: solution1
-      map: [ "enum.SolutionContainerLayers.Fill" ]
+      map: ["enum.SolutionContainerLayers.Fill"]
       visible: false
   - type: Projectile
     damage:

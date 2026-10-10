@@ -2,7 +2,7 @@
   abstract: true
   parent: MaterialBase
   id: ShardBase
-  description: It's a shard of some unknown material.
+  description: 这是一些未知材料的碎片。 | It's a shard of some unknown material.
   components:
   - type: Tool
     qualities:
@@ -11,15 +11,15 @@
     doAfterDuration: 4.0
   - type: Sprite
     layers:
-      - sprite: Objects/Materials/Shards/shard.rsi
-        state: shard1
-        map: [ "enum.DamageStateVisualLayers.Base" ]
+    - sprite: Objects/Materials/Shards/shard.rsi
+      state: shard1
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: RandomSprite
     available:
-      - enum.DamageStateVisualLayers.Base:
-          shard1: ""
-          shard2: ""
-          shard3: ""
+    - enum.DamageStateVisualLayers.Base:
+        shard1: ""
+        shard2: ""
+        shard3: ""
   - type: MeleeWeapon
     attackRate: 1
     damage:
@@ -33,15 +33,13 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.2,0.2,0.2"
         hard: false
         layer:
         - LowImpassable
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.2,0.2,0.2"
         density: 30
         mask:
@@ -93,8 +91,8 @@
 - type: entity
   parent: ShardBase
   id: ShardGlass
-  name: glass shard
-  description: A small piece of glass.
+  name: 玻璃碎片 | glass shard
+  description: 一小块玻璃。 | A small piece of glass.
   components:
   - type: Sprite
     color: "#bbeeff"
@@ -107,8 +105,8 @@
         Piercing: 4.5
   - type: Tag
     tags:
-      - GlassShard
-      - Trash
+    - GlassShard
+    - Trash
   - type: Solution
     solution:
       maxVol: 5
@@ -122,8 +120,8 @@
 - type: entity
   parent: ShardBase
   id: ShardGlassReinforced
-  name: reinforced glass shard
-  description: A small piece of reinforced glass.
+  name: 强化玻璃碎片 | reinforced glass shard
+  description: 一小块强化玻璃碎片。 | A small piece of reinforced glass.
   components:
   - type: Sprite
     color: "#96cdef"
@@ -141,8 +139,8 @@
         Piercing: 5.5
   - type: Tag
     tags:
-      - ReinforcedGlassShard
-      - Trash
+    - ReinforcedGlassShard
+    - Trash
   - type: Solution
     solution:
       reagents:
@@ -159,8 +157,8 @@
 - type: entity
   parent: ShardBase
   id: ShardGlassPlasma
-  name: plasma glass shard
-  description: A small piece of plasma glass.
+  name: 等离子玻璃碎片 | plasma glass shard
+  description: 一小块等离子玻璃碎片。 | A small piece of plasma glass.
   components:
   - type: Sprite
     color: "#FF72E7"
@@ -178,8 +176,8 @@
         Piercing: 6.5
   - type: Tag
     tags:
-      - PlasmaGlassShard
-      - Trash
+    - PlasmaGlassShard
+    - Trash
   - type: Solution
     solution:
       reagents:
@@ -194,8 +192,8 @@
 - type: entity
   parent: ShardBase
   id: ShardGlassUranium
-  name: uranium glass shard
-  description: A small piece of uranium glass.
+  name: 铀玻璃碎片 | uranium glass shard
+  description: 一小块铀玻璃。 | A small piece of uranium glass.
   components:
   - type: Sprite
     color: "#8eff7a"
@@ -215,8 +213,8 @@
         Radiation: 2.5
   - type: Tag
     tags:
-      - UraniumGlassShard
-      - Trash
+    - UraniumGlassShard
+    - Trash
   - type: Solution
     solution:
       reagents:
@@ -231,8 +229,8 @@
 - type: entity
   parent: ShardBase
   id: ShardGlassClockwork
-  name: clockwork glass shard
-  description: A small piece of brass-infused glass.
+  name: 发条玻璃碎片 | clockwork glass shard
+  description: 一小块掺有黄铜的玻璃。 | A small piece of brass-infused glass.
   components:
   - type: Sprite
     color: "#e0aa36"

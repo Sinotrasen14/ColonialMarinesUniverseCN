@@ -1,9 +1,8 @@
-# Veteran
 - type: entity
   parent: CMHandsBlackMarine
   id: RMCHandsVeteran
-  name: armored gloves
-  description: Non-standard kevlon fiber gloves. They're insulated and heavily armored.
+  name: 装甲手套
+  description: 非标准凯夫隆纤维手套。它们绝缘且装甲厚重。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/veteran.rsi
@@ -14,8 +13,6 @@
     bullet: 40
     explosionArmor: 20
   - type: Insulated
-
-# SPP
 - type: entity
   parent: RMCHandsVeteran
   id: RMCHandsVeteranSPP
@@ -24,25 +21,21 @@
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/brown.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/brown.rsi
-
-# Insulated
 - type: entity
   parent: RMCHandsVeteran
   id: RMCHandsVeteranInsulated
-  name: insulated armored gloves
-  description: Non-standard kevlon fiber gloves. These are apparently ESPECIALLY insulated.
+  name: 绝缘装甲手套
+  description: 非标准凯夫隆纤维手套。这些显然经过了特别绝缘处理。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/insulated.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/insulated.rsi
-
-# PMC
 - type: entity
   parent: RMCHandsVeteran
   id: RMCHandsVeteranPMC
-  name: WY PMC gloves
-  description: Standard issue kevlon fiber gloves manufactured for and by Weyland-Yutani PMC dispatch division. They are insulated against electrical shock.
+  name: 维兰德-汤谷 PMC 手套
+  description: 标准配发凯夫隆纤维手套，由维兰德-汤谷 PMC 调度部制造并供其使用。手套具有防触电绝缘性能。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/pmc.rsi
@@ -66,13 +59,11 @@
     melee:
       contact: Crush
       penetration: None
-
-# PMC Commando
 - type: entity
   parent: RMCHandsVeteranPMC
   id: RMCHandsVeteranPMCCommandoSurvivor
-  name: We-Ya Commando gloves
-  description: Standard issue kevlon fiber gloves manufactured for and by Weyland-Yutani Commandos. They are insulated against electrical shock.
+  name: 维雅突击队手套
+  description: 标准配发的凯夫隆纤维手套，由维雅突击队制造并供维雅突击队使用。它们经过绝缘处理，可防电击。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/gauntlets.rsi
@@ -96,36 +87,31 @@
     melee:
       contact: Crush
       penetration: None
-
 - type: entity
   parent: RMCHandsVeteranPMC
   id: RMCHandsVeteranPMCCommando
-  name: M5X gauntlets
-  description: A pair of heavily armored gloves made to complete the M5X exoskeleton armor.
+  name: M5X护手
+  description: 一副重型装甲手套，用于补全M5X外骨骼装甲。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/gauntlets.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/gauntlets.rsi
-
-# Royal Marine
 - type: entity
   parent: RMCHandsVeteran
   id: RMCHandsVeteranRoyalMarine
-  name: L6 pattern combat gloves
-  description: Standard issue tactical gloves used by the Royal Crown Marines.
+  name: L6型战斗手套
+  description: 皇家皇冠海军陆战队使用的标准配发战术手套。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/royal_marine.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/royal_marine.rsi
-
-# CBRN
 - type: entity
   parent: RMCHandsVeteran
   id: RMCHandsVeteranCBRN
-  name: M3 MOPP gloves
-  description: M3 MOPP gloves are made of treated venlar designed to protect the user’s hands against contamination whilst working in CBRN environments. Special care has been taken to give the user’s hands enough dexterity to fully service a rifle or utilize most handheld tools, while circular adhesive patterns on the fingers provide the user with enhanced grips. Standard CBRN protocol dictates that the gloves are expected to have a lifespan of maximum effectiveness of around twenty-four hours once exposed to moderate levels of contamination and that users are recommended to discard and replace them afterwards.
+  name: M3 MOPP手套
+  description: M3 MOPP手套由经过处理的venlar制成，旨在保护使用者在CBRN环境中作业时双手免受污染。特别注重让使用者的双手具有足够灵活性，以完整操作步枪或使用大多数手持工具，同时手指上的圆形粘合图案可为使用者提供更强的抓握力。标准CBRN规程规定，手套在暴露于中等污染水平后，其最大有效使用寿命约为二十四小时，并建议使用者在此之后将其丢弃并更换。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/cbrn.rsi

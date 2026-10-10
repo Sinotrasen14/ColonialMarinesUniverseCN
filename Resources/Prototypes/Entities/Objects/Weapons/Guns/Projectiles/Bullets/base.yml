@@ -2,8 +2,8 @@
 - type: entity
   abstract: true
   id: BaseBullet
-  name: BaseBullet
-  description: If you can see this you're probably dead!
+  name: 基础子弹 | BaseBullet
+  description: 如果你能看到这个，你大概已经死了！ | If you can see this you're probably dead!
   components:
   - type: Sprite
     noRot: false
@@ -40,8 +40,8 @@
 - type: entity
   parent: BaseBullet
   id: BaseBulletTrigger # Trigger-on-collide bullets
-  categories: [ HideSpawnMenu ]
-  name: base bullet trigger
+  categories: [HideSpawnMenu]
+  name: 基础子弹触发器 | base bullet trigger
   components:
   - type: TriggerOnCollide
     fixtureID: projectile
@@ -63,8 +63,8 @@
 - type: entity
   parent: BaseBullet
   id: BaseBulletPractice
-  categories: [ HideSpawnMenu ]
-  name: base bullet practice
+  categories: [HideSpawnMenu]
+  name: 基础子弹练习 | base bullet practice
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -78,8 +78,8 @@
 - type: entity
   parent: BaseBullet
   id: BaseBulletIncendiary
-  categories: [ HideSpawnMenu ]
-  name: base bullet incendiary
+  categories: [HideSpawnMenu]
+  name: 基础燃烧弹 | base bullet incendiary
   components:
   - type: Projectile
     damage:
@@ -97,8 +97,8 @@
 - type: entity
   parent: BaseBullet
   id: BaseBulletAP
-  categories: [ HideSpawnMenu ]
-  name: base bullet AP
+  categories: [HideSpawnMenu]
+  name: 基础子弹穿甲 | base bullet AP
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
@@ -113,8 +113,8 @@
 - type: entity
   parent: BaseBullet
   id: BaseBulletUranium
-  categories: [ HideSpawnMenu ]
-  name: base bullet uranium
+  categories: [HideSpawnMenu]
+  name: 基础子弹铀 | base bullet uranium
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi

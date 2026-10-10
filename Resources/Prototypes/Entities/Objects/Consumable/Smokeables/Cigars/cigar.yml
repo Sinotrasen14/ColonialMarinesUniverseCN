@@ -1,19 +1,19 @@
 - type: entity
   id: Cigar
   parent: BaseCigar
-  name: cigar
-  description: "A brown roll of tobacco and... well, you're not quite sure."
+  name: 雪茄 | cigar
+  description: "一卷棕色的烟草，还有……嗯，你不太确定。 | A brown roll of tobacco and... well, you're not quite sure."
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigars/cigar.rsi
     state: unlit-icon
   - type: Tag
     tags:
-      - Cigar
-      - Trash
+    - Cigar
+    - Trash
   - type: Clothing
     sprite: Objects/Consumable/Smokeables/Cigars/cigar.rsi
-    slots: [ mask ]
+    slots: [mask]
     equippedPrefix: unlit
   - type: Item
     size: Tiny
@@ -31,22 +31,22 @@
     state: Burnt
   - type: Tag
     tags:
-      - Cigar
-      - Trash
-      - Burnt
+    - Cigar
+    - Trash
+    - Burnt
 
 - type: entity
   id: CigarGold
   parent: Cigar
-  name: premium Havanian cigar
-  description: A cigar fit for only the best of the best.
+  name: 上等哈瓦那雪茄 | premium Havanian cigar
+  description: 一支只配最顶尖中的顶尖享用的雪茄。 | A cigar fit for only the best of the best.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
     state: unlit-icon
   - type: Clothing
     sprite: Objects/Consumable/Smokeables/Cigars/cigar-gold.rsi
-    slots: [ mask ]
+    slots: [mask]
     equippedPrefix: unlit
   - type: Item
     size: Tiny

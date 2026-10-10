@@ -1,7 +1,7 @@
 - type: entity
   id: CigPackBase
-  parent: [ BaseStorageItem, BaseBagOpenClose ]
-  name: cigarette pack
+  parent: [BaseStorageItem, BaseBagOpenClose]
+  name: 香烟盒 | cigarette pack
   abstract: true
   components:
   - type: Sprite
@@ -70,8 +70,8 @@
 
 - type: entity
   id: CigPackMixedBase
-  parent: [ BaseStorageItem, BaseBagOpenClose ]
-  name: soaked cigarette pack
+  parent: [BaseStorageItem, BaseBagOpenClose]
+  name: 浸湿的烟盒 | soaked cigarette pack
   abstract: true
   components:
   - type: Sprite
@@ -136,8 +136,8 @@
 - type: entity
   id: CigPackGreen
   parent: CigPackBase
-  name: Spessman's Smokes packet
-  description: A label on the packaging reads, Wouldn't a slow death make a change?
+  name: 斯佩斯曼的香烟包 | Spessman's Smokes packet
+  description: 包装上的一枚标签写着，缓慢的死亡难道不会带来改变吗？ | A label on the packaging reads, Wouldn't a slow death make a change?
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/green.rsi
@@ -147,8 +147,8 @@
 - type: entity
   id: CigPackRed
   parent: CigPackBase
-  name: DromedaryCo packet
-  description: The most popular brand of Space Cigarettes, sponsors of the Space Olympics.
+  name: DromedaryCo 烟包 | DromedaryCo packet
+  description: 太空香烟最受欢迎的品牌，太空奥运会的赞助商。 | The most popular brand of Space Cigarettes, sponsors of the Space Olympics.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/red.rsi
@@ -158,8 +158,8 @@
 - type: entity
   id: CigPackBlue
   parent: CigPackBase
-  name: AcmeCo packet
-  description: For those who somehow want to obtain the record for the most amount of cancerous tumors.
+  name: AcmeCo数据包 | AcmeCo packet
+  description: 对于那些不知为何想要获得最多癌性肿瘤记录的人。 | For those who somehow want to obtain the record for the most amount of cancerous tumors.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/blue.rsi
@@ -169,8 +169,8 @@
 - type: entity
   id: CigPackBlack
   parent: CigPackBase
-  name: Nomads packet
-  description: Nomads's extra strong, for when your life is more extra hard.
+  name: 游民包 | Nomads packet
+  description: 游民的特强装，专为生活格外艰难之时准备。 | Nomads's extra strong, for when your life is more extra hard.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/black.rsi
@@ -180,8 +180,8 @@
 - type: entity
   id: CigPackSyndicate
   parent: [CigPackBase, BaseSyndicateContraband]
-  name: Interdyne herbals packet
-  description: Elite cigarettes for elite syndicate agents. Infused with medicine for when you need to do more than calm your nerves.
+  name: Interdyne草药包 | Interdyne herbals packet
+  description: 为精英辛迪加特工准备的精英香烟。注入了药物，当你需要做的不仅仅是镇定神经时使用。 | Elite cigarettes for elite syndicate agents. Infused with medicine for when you need to do more than calm your nerves.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/syndicate.rsi
@@ -196,9 +196,9 @@
 - type: entity
   id: CigPackMixed
   parent: CigPackMixedBase
-  name: Dan's soaked smokes
+  name: 丹的湿烟 | Dan's soaked smokes
   suffix: Mixed
-  description: Dan worked with NT chemistry to dispose of excess chemicals, ENJOY.
+  description: 丹与NT化学部门合作处理了多余的化学品，尽情享受吧。 | Dan worked with NT chemistry to dispose of excess chemicals, ENJOY.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cigarettes/Packs/mixed.rsi

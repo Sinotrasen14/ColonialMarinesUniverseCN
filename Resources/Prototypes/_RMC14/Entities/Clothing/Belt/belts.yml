@@ -2,8 +2,8 @@
 - type: entity
   parent: ClothingBeltBase
   id: CMBeltInflatable
-  name: inflatable duck
-  description: No bother to sink or swim when you can just float!
+  name: 充气鸭
+  description: 既然能漂着，就不用操心沉浮！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/inflatable.rsi
@@ -14,8 +14,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: CMBeltMarine
-  name: M276 pattern ammo load rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+  name: M276型弹药携行装具
+  description: M276是美国殖民地海军陆战队的标准负重装具。它由一条模块化腰带和各种扣具组成。这是标准型号，专为大批量弹药携行行动设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/marine/jungle-classic.rsi
@@ -65,8 +65,8 @@
 - type: entity
   parent: RMCBeltBaseStorageNoVisuals
   id: RMCM276ShotgunShellLoadingRig
-  name: M276 pattern shotgun shell loading rig
-  description: An ammunition belt designed to hold shotgun shells. # or individual bullets. TODO RMC14
+  name: M276型霰弹枪弹装填带
+  description: 一条设计用于装填霰弹枪弹的弹药带。                                   # or individual bullets. TODO RMC14
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/shotgun/jungle-classic.rsi
@@ -152,8 +152,8 @@
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltPMC
-  name: M305 pattern ammo load rig
-  description: The M305 is the standard load-bearing equipment of Weyland-Yutani PMCs. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+  name: M305 型弹药携行装具
+  description: M305 是韦兰-尤塔尼私人军事承包商的标准负载携行装具。它由一条配有各种卡扣的模块化腰带组成。这是标准型号，专为大批量弹药携行行动而设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/pmc.rsi
@@ -183,8 +183,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: CMBeltUtility
-  name: M276 pattern toolbelt rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version lacks any combat functionality, and is commonly used by engineers to transport important tools.
+  name: M276型工具腰带装具
+  description: M276是USCM的标准负重装备。它由带有各种卡扣的模块化腰带组成。此版本不具备任何战斗功能，通常由工程师用来运送重要工具。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/utility.rsi
@@ -228,8 +228,8 @@
 - type: entity
   parent: CMBeltUtility
   id: RMCBeltConstruction
-  name: M277 pattern construction rig
-  description: The M277 is a common rig used by Combat Technicians to carry around materials and other supplies. It consists of a modular belt with various clips. This version sacrifices storage space for specialized material loading clips.
+  name: M277型建造装具
+  description: M277型是一种常见的装具，战斗技师用它来携带材料和其他补给。它由一条模块化腰带和各类扣具组成。这一版本牺牲了储物空间，以配备专用的材料装载扣。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/construction.rsi
@@ -280,8 +280,8 @@
 - type: entity
   parent: CMBeltUtility
   id: CMBeltUtilityCombat
-  name: M276 pattern combat toolbelt rig
-  description: The M276 pattern combat toolbelt rig is an alternative load-bearing equipment of the USCM for engineers conducting repairs within combat zones. It consists of a modular belt with various clips and pouches for tools along with a holster for a sidearm. Due to the bulk of the sidearm, it is unable to hold as many tools as its standard counterpart.
+  name: M276型战斗工具腰带挂具
+  description: M276型战斗工具腰带挂具是USCM工程兵在战斗区域内进行维修时使用的一种替代性负重装备。它由一条模块化腰带组成，腰带上带有各种用于工具的卡扣和袋具，以及一个副武器枪套。由于副武器体积较大，它无法像其标准型号那样容纳那么多工具。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/combat_utility.rsi
@@ -290,14 +290,14 @@
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m1984 # TODO RMC14 per-gun underlay
       offset: -0.3125, -0.09375
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - sprite: _RMC14/Objects/Clothing/Belt/combat_utility.rsi
       state: icon-front
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/combat_utility.rsi
   - type: Storage
@@ -346,8 +346,8 @@
 - type: entity
   parent: CMBeltBase
   id: CMBeltKnife
-  name: M276 pattern knife rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is specially designed to store knives. Not commonly issued, but kept in service.
+  name: M276型刀具挂具
+  description: M276是USCM的标准承重装备。它由一条带有各种卡扣的模块化腰带组成。此版本专为存放刀具而设计。虽不常配发，但仍在服役。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/knife/jungle-classic.rsi
@@ -361,7 +361,7 @@
     cooldownPopup: You need to wait before drawing another knife!
     count: 12
     slot:
-      name: Knife
+      name: 刀
       whitelist:
         tags:
         - ThrowingKnife
@@ -376,8 +376,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: CMBeltMedical
-  name: M276 pattern medical storage rig # TODO: differentiate from pattern lifesaver
-  description: The M276 is standard load-bearing equipment. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport bulkier medical supplies.
+  name: M276 型医疗储物挂具                     # TODO: differentiate from pattern lifesaver
+  description: M276 型是标准承重装备。它由一条配有多种夹扣的模块化腰带组成。此版本为较少见的配置，用于运送更笨重的医疗用品。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/medical.rsi
@@ -444,8 +444,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: CMBeltMortar
-  name: M276 pattern mortar operator belt
-  description: An M276 load-bearing rig configured to carry ammunition for the M402 mortar, along with a sidearm.
+  name: M276型迫击炮操作员腰带
+  description: 一套M276型承载装具，配置用于携带M402迫击炮的弹药，并配有一把副武器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/mortar/jungle-classic.rsi
@@ -453,13 +453,13 @@
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m1984 # TODO RMC14 per-gun underlay
       offset: 0.375, 0
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - state: icon
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/mortar/jungle-classic.rsi
   - type: Storage
@@ -499,8 +499,8 @@
 - type: entity
   parent: CMBeltMarine
   id: CMBeltSmartGunOperator
-  name: M280 pattern smart gun operator drum belt
-  description: Despite the fact that 1. drum magazines are incredibly non-ergonomical, and 2. require incredibly precise machining in order to fit universally (spoiler, they don't, adding further to the myth of 'Smart Gun Personalities'), the Marines decided to issue a modified marine belt (more formally known by the designation M280) with hooks and dust covers (overly complex for the average jarhead) for the ML66A system's drum munitions. When the carry catch on the drum isn't getting stuck in the oiled up velcro, the rig actually does do a decent job at holding a plentiful amount of drums. But at the end of the day, compared to standard rigs... it sucks, but isn't that what being a Marine is all about?
+  name: M280型智能枪操作员弹鼓腰带
+  description: 尽管弹鼓第一，极其不符合人体工学，第二，需要极其精密的加工才能通用适配（剧透一下，它们并不能，这进一步助长了‘智能枪个性’的迷思），海军陆战队还是决定为 ML66A 系统的弹鼓弹药配发一种改良型陆战队腰带（更正式的编号为 M280），上面带有挂钩和防尘盖（对普通陆战队员来说过于复杂）。当弹鼓上的携行卡扣没有卡在浸了油的魔术贴里时，这套装具实际上确实能相当不错地固定住大量弹鼓。但归根结底，和标准装具相比……它很烂，可这不正是当海军陆战队员的意义所在吗？
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/smart_gun_operator/jungle-classic.rsi
@@ -537,8 +537,8 @@
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltSmartGunOperatorPistol
-  name: M802 pattern smart gun operator sidearm rig
-  description: The M802 is a limited-issue mark of USCM load-bearing equipment, designed to carry smartgun ammunition and a sidearm.
+  name: M802型智能枪操作员副武器携行具
+  description: M802是美国殖民地海军陆战队携行装备的一种限量配发型号，设计用于携带智能枪弹药和副武器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/smart_gun_operator_pistol.rsi
@@ -547,14 +547,14 @@
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m1984 # TODO RMC14 per-gun underlay
       offset: 0.15625, 0.0
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - sprite: _RMC14/Objects/Clothing/Belt/smart_gun_operator_pistol.rsi
       state: icon-front
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/smart_gun_operator_pistol.rsi
   - type: Storage   # Holds up to 4 drums/magazines and 1 sidearm
@@ -594,7 +594,7 @@
     tags:
     - RMCSmartGunSidearmHolster
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: Tag
   id: RMCSmartGunSidearmHolster
@@ -613,8 +613,8 @@
 - type: entity
   parent: RMCBeltSmartGunOperatorPistol
   id: RMCBeltSmartGunOperatorPistolCLF
-  name: M802 pattern 'Freedom' smart gun operator sidearm rig
-  description: A modification of the standard M802 load-bearing equipment, designed to carry smart gun ammunition and a Mateba revolver. This one has the CLF logo carved over the manufacturing stamp.
+  name: M802型‘自由’智能枪操作员副武器携行具
+  description: 标准 M802 承载装备的改装型，设计用于携带智能枪弹药和一把马特巴左轮手枪。这一件在制造钢印上刻有 CLF 标志。
   suffix: Filled, Mateba
   components:
   - type: StorageFill
@@ -627,8 +627,8 @@
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltGrenade
-  name: M276 pattern M40 grenade rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is designed to carry up to 12 of the M40 series of grenades.
+  name: M276型M40榴弹携行具
+  description: M276是美国殖民地海军陆战队（USCM）的标准负重装备。它由一条带有各种卡扣的模块化腰带组成。此版本设计用于携带最多12枚M40系列榴弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/grenade.rsi
@@ -643,13 +643,13 @@
       - Grenade
   - type: FixedItemSizeStorage
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: entity
   parent: RMCBeltGrenade
   id: RMCBeltGrenadeLarge
-  name: M276 pattern 30mm grenade rig Mk. II
-  description: The M276 Mk. II is an upgraded version of the M276 grenade rig, with more storage capacity.
+  name: M276型30毫米榴弹携行具Mk. II
+  description: M276 Mk. II 是 M276 榴弹携行具的升级版，具有更大的存储容量。
   components:
   - type: Storage
     maxItemSize: Normal
@@ -663,8 +663,8 @@
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltSharp
-  name: M103 pattern SHARP magazine belt
-  description: A modified M103 pattern rig designed to hold P9 SHARP rifle magazines.
+  name: M103 型 SHARP 弹匣腰带
+  description: 一种经过改装的 M103 型装具，用于容纳 P9 SHARP 步枪弹匣。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/tankbelt.rsi
@@ -681,13 +681,13 @@
       - RMCMagazineRifleSharp
   - type: FixedItemSizeStorage
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltSmartPistol
-  name: M276 pattern SU-6 smart pistol holster rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is for the SU-6 smartpistol.
+  name: M276型SU-6智能手枪枪套挂具
+  description: M276是美国殖民地海军陆战队的标准承载装备。它由一条带有各种卡扣的模块化腰带组成。此版本适用于SU-6智能手枪。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/smart_pistol.rsi
@@ -696,14 +696,14 @@
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: smartpistol
       offset: -0.1875, 0.0
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - sprite: _RMC14/Objects/Clothing/Belt/smart_pistol.rsi
       state: icon-front
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/smart_pistol.rsi
     slots:
@@ -737,7 +737,7 @@
     tags:
     - RMCSmartPistolHolster
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: Tag
   id: RMCSmartPistolHolster
@@ -745,8 +745,8 @@
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltHolsterPistol
-  name: M276 pattern general pistol holster rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+  name: M276 型通用手枪枪套挂具
+  description: M276 是美国殖民海军陆战队（USCM）的标准承载装备。它由一条带有各种卡扣的模块化腰带组成。此版本配有一个枪套组件，可携带最常见的手枪。它还包含可存放大多数手枪弹匣的侧袋。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_pistol/classic-jungle.rsi
@@ -754,43 +754,43 @@
     - state: icon
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: _m77
-      map: [ "_m77_fill" ]
+      map: ["_m77_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m1984
-      map: [ "m1984_fill" ]
+      map: ["m1984_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: mk80
-      map: [ "mk80_fill" ]
+      map: ["mk80_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: b92fs
-      map: [ "b92fs_fill" ]
+      map: ["b92fs_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m13
-      map: [ "m13_fill" ]
+      map: ["m13_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: highpower
-      map: [ "mk45_fill" ]
+      map: ["mk45_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: tt
-      map: [ "t73_fill" ]
+      map: ["t73_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: l54
-      map: [ "l54_fill" ]
+      map: ["l54_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: deagle
-      map: [ "handcannon_fill" ]
+      map: ["handcannon_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: g_deagle
-      map: [ "g_handcannon_fill" ]
+      map: ["g_handcannon_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: c_deagle
-      map: [ "co_handcannon_fill" ]
+      map: ["co_handcannon_fill"]
     - state: icon-front
-      map: [ "holstered" ]
+      map: ["holstered"]
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/holster_pistol/classic-jungle.rsi
     slots:
@@ -905,8 +905,8 @@
 - type: entity
   parent: RMCBeltHolsterPistol
   id: RMCBeltHolsterPistolWeYa
-  name: WY-TM892 pattern general pistol holster rig
-  description: The WY-TM892 is the standard load-bearing equipment of the W-Y security forces. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+  name: WY-TM892 型通用手枪枪套挂具
+  description: WY-TM892 是 W-Y 安保部队的标准承载装备。它由一条带有各种卡扣的模块化腰带组成。此版本配有枪套组件，可携带最常见的手枪。它还包含侧袋，可存放大多数手枪弹匣。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_weya.rsi
@@ -929,8 +929,8 @@
 - type: entity
   parent: RMCBeltHolsterPistol
   id: RMCBeltHolsterPistolSPP
-  name: Type 47-S pistol holster rig
-  description: The Type 47-S is the standard load-bearing equipment of the UPP. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+  name: 47-S型手枪枪套挂具
+  description: 47-S型是UPP的标准承载装备。它由一条带有各种卡扣的模块化腰带组成。此版本配有枪套组件，可携带最常见的手枪。它还包含能够存放大多数手枪弹匣的侧袋。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_spp.rsi
@@ -964,8 +964,8 @@
 - type: entity
   parent: RMCBeltHolsterPistol
   id: RMCBeltHolsterPistolTSE
-  name: pistol belt
-  description: A dark brown leather pistol belt. It accommodates most sidearms along with spare magazines. Standard issue across law enforcement, military, and security forces.
+  name: 手枪腰带
+  description: 深棕色皮革手枪腰带。可适配大多数手枪并携带备用弹匣。执法、军事和安全部队的标准配发装备。
   suffix: NSPA
   components:
   - type: Sprite
@@ -978,14 +978,14 @@
 - type: entity
   parent: RMCBeltHolsterPistolSPP
   id: RMCBeltHolsterPistolPMC
-  name: M301 pistol holster rig
-  description: The M301 is the standard load-bearing equipment of Weyland-Yutani PMC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+  name: M301 手枪枪套挂具
+  description: M301是维兰德-汤谷PMC的标准承重装备。它由一条带有各种扣具的模块化腰带组成。此版本配有枪套组件，可让人携带最常见的手枪。它还包含可存放大多数手枪弹匣的侧袋。
 
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltHolsterRevolver
-  name: M276 pattern general revolver holster rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is universal and adjustable for different revolvers, along with six small pouches for speedloaders. It smells faintly of hay.
+  name: M276型通用左轮手枪枪套挂具
+  description: M276是USCM的标准承载装备。它由一条带有各种扣件的模块化腰带组成。此版本通用，可针对不同左轮手枪调节，并配有六个用于快速装弹器的小袋。它散发着淡淡的干草味。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_revolver.rsi
@@ -993,14 +993,14 @@
     - state: icon
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m44r # TODO RMC14 per-gun underlay
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - sprite: _RMC14/Objects/Clothing/Belt/holster_revolver.rsi
       state: icon-front
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/holster_revolver.rsi
     slots:
@@ -1034,7 +1034,7 @@
     tags:
     - RMCGeneralRevolverHolster
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: Tag
   id: RMCGeneralRevolverHolster
@@ -1050,14 +1050,14 @@
     - state: icon
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m44r # TODO RMC14 per-gun underlay
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - sprite: _RMC14/Objects/Clothing/Belt/holster_spearhead.rsi
       state: icon-front
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/holster_spearhead.rsi
     slots:
@@ -1085,8 +1085,8 @@
 - type: entity
   parent: ClothingBeltBase # Can't have storage slots on this one
   id: RMCBeltHolsterSMG
-  name: M276 pattern M39 holster rig
-  description: Special issue variant of the M276 designed to holster a M39 submachine gun.
+  name: M276 型 M39 枪套挂具
+  description: M276 的特殊配发型号，专为佩挂 M39 冲锋枪而设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_smg.rsi
@@ -1094,7 +1094,7 @@
     - state: icon
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m63 # TODO RMC14 per-gun underlay
-      map: [ "enum.CMItemSlotsLayers.Fill" ]
+      map: ["enum.CMItemSlotsLayers.Fill"]
       visible: false
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/holster_smg.rsi
@@ -1109,7 +1109,7 @@
   - type: ItemSlots
     slots:
       pouch:
-        name: M63 holster
+        name: M63枪套
         insertSound: /Audio/_RMC14/Weapons/Guns/gun_pistol_sheathe.ogg # TODO RMC14 sounds
         ejectSound: /Audio/_RMC14/Weapons/Guns/gun_pistol_draw.ogg
         whitelist:
@@ -1132,8 +1132,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCBeltUtilityGeneral
-  name: M276 G8-A general utility pouch
-  description: A small, lightweight pouch that can be clipped onto M3 Pattern armor to provide additional storage. The newer G8-A model, while uncomfortable, can also be clipped around the waist.
+  name: M276 G8-A 通用工具袋
+  description: 一个小巧轻便的袋子，可以夹挂在 M3 制式护甲上，以提供额外储物空间。较新的 G8-A 型号虽然不舒适，但也可以扣在腰间。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/sparepouch/jungle-classic.rsi
@@ -1167,8 +1167,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCBeltHolsterSMGPouch
-  name: M276 pattern M39 holster rig
-  description: Special issue variant of the M276 designed to holster a M39 submachine gun and two spare magazines. Uncommonly issued to USCM support and specialist personnel.
+  name: M276型M39枪套挂具
+  description: M276型的特别配发改型，设计用于收纳一把M39冲锋枪和两个备用弹匣。不常配发给USCM支援与专业人员。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/smg_mags.rsi
@@ -1177,13 +1177,13 @@
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m63
       offset: -0.34375, 0.0
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - state: weapon
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/smg_mags.rsi
     slots:
@@ -1237,20 +1237,20 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCMatebaBelt
-  name: M276 pattern Mateba holster rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. It was included with the mail-order USCM edition of the Mateba autorevolver in the early 2170s.
+  name: M276 型 Mateba 枪套挂具
+  description: M276 是 USCM 的标准负重装备。它由一条带有多种扣具的模块化腰带组成。此版本用于威力强大的 Mateba 马格南左轮手枪，并配有五个用于快速装弹器的小袋。它随 2170 年代初邮购的 USCM 版 Mateba 自动左轮手枪一同提供。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/mateba_belt.rsi
     layers:
     - state: cmateba
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - state: icon
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     slots:
     - suitStorage
@@ -1285,20 +1285,20 @@
 - type: entity
   parent: RMCMatebaBelt
   id: RMCMatebaBeltLuxurious
-  name: luxurious M276 pattern Mateba holster rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is for the powerful Mateba magnum revolver, along with five small pouches for speedloaders. This specific one is tinted black and engraved with gold, heavily customized for a high-ranking official.
+  name: 奢华M276型马特巴枪套套装
+  description: M276是美国殖民海军陆战队标准的负重装备。它由一条模块化腰带和多种卡扣组成。此版本专为威力强大的马特巴马格南左轮手枪打造，并配有五个用于快速装弹器的小包。这一款采用黑色调并饰有金色雕刻，是为一名高级官员重度定制的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/amateba_belt.rsi
     layers:
     - state: amateba
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - state: icon
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     slots:
     - suitStorage
@@ -1428,14 +1428,14 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCBeltXM51
-  name: M276 pattern XM51 holster rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is for the XM51 breaching scattergun, allowing easier storage of the weapon. It features pouches for storing two magazines along with extra shells.
+  name: M276型XM51枪套挂具
+  description: M276是USCM的标准承载装具。它由一条带有各种卡扣的模块化腰带组成。此版本用于XM51破门霰弹枪，便于存放该武器。它配有可存放两个弹匣以及额外霰弹的袋囊。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/xm51.rsi
     layers:
     - state: xm51
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       offset: 0.35, 0
       visible: false
     - state: icon
@@ -1471,8 +1471,8 @@
         tags:
         - RMCMagazineShotgunXM51
   - type: CMStorageVisualizer
-    storageClosed: null
-    storageOpen: null
+    storageClosed:
+    storageOpen:
   - type: Tag
     tags:
     - RMCXM51Holster
@@ -1483,8 +1483,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCM300SOCOMBelt
-  name: M300 pattern .458 SOCOM loading rig
-  description: An ammunition belt designed to hold the large .458 SOCOM caliber bullets for the XM88 heavy rifle.
+  name: M300 型 .458 SOCOM 装弹装置
+  description: 一种用于容纳 XM88 重型步枪所用大号 .458 SOCOM 口径子弹的弹药带。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/xm88/jungle-classic.rsi
@@ -1562,8 +1562,8 @@
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltHolsterM13
-  name: M276 pattern M13 holster rig
-  description: Special issue variant of the M276 - designed exclusively to securely hold an M13 Auto Pistol and seven spare magazines, allowing quick access in close-quarters situations. Ideal for defending against boarding threats, this belt supports rapid deployment of high-rate sidearms while maintaining stability in zero-G environments.
+  name: M276 型 M13 枪套挂具
+  description: M276 的特别配发型号——专为安全固定一把 M13 自动手枪和七个备用弹匣而设计，便于在近距离情况下快速取用。这款腰带非常适合防御登舰威胁，能支持高射速副武器的快速部署，同时在零重力环境中保持稳定性。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_autopistol.rsi
@@ -1571,13 +1571,13 @@
     - state: icon
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m13
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       offset: -0.34375, -0.15625
       visible: false
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/holster_autopistol.rsi
     slots:
@@ -1618,7 +1618,7 @@
       tags:
       - RMCWeaponPistolM13
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: Tag
     tags:
     - RMCBeltHolsterM13
@@ -1710,8 +1710,8 @@
 - type: entity
   parent: RMCBeltSmartGunOperatorPistol
   id: RMCBeltSmartGunOperatorPistolPMC
-  name: WY-TM410 pattern smargunner sidearm rig
-  description: A special pattern of We-Ya made combat belt, designed to carry smartgun ammunition and a sidearm.
+  name: WY-TM410型智能枪手副武器挂具
+  description: 一种WY制造的特殊款式战斗腰带，专为携带智能枪弹药和副武器而设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/smart_gun_operator_pistol_wy.rsi
@@ -1720,14 +1720,14 @@
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m1984 # TODO RMC14 per-gun underlay
       offset: 0.15625, 0.0
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - sprite: _RMC14/Objects/Clothing/Belt/smart_gun_operator_pistol_wy.rsi
       state: icon-front
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/smart_gun_operator_pistol_wy.rsi
 
@@ -1752,7 +1752,7 @@
   - type: ItemSlots
     slots:
       pouch:
-        name: M63 holster
+        name: M63枪套
         startingItem: RMCWeaponSMGM63B2
         insertSound: /Audio/_RMC14/Weapons/Guns/gun_pistol_sheathe.ogg # TODO RMC14 sounds
         ejectSound: /Audio/_RMC14/Weapons/Guns/gun_pistol_draw.ogg
@@ -1764,8 +1764,8 @@
 - type: entity
   parent: RMCBeltHolsterPistol
   id: RMCBeltHolsterNailgun
-  name: customized nailgun holster
-  description: Combination of a M276 pistol holster and engineering toolbelt that have been cannibalized into a unique belt that can holster a compact nailgun and two spare nailgun magazines.
+  name: 定制钉枪枪套
+  description: 由M276手枪枪套与工程工具腰带拆解改装而成的独特腰带，可收纳一把紧凑型钉枪和两个备用钉枪弹匣。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_nailgun.rsi
@@ -1773,19 +1773,19 @@
     - state: icon
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: nailgun_tac
-      map: [ "nailguntactical_fill" ]
+      map: ["nailguntactical_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: nailgun_compact
-      map: [ "nailguncompact_fill" ]
+      map: ["nailguncompact_fill"]
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: nailgun
-      map: [ "nailgun_fill" ]
+      map: ["nailgun_fill"]
     - state: icon-front
-      map: [ "holstered" ]
+      map: ["holstered"]
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/holster_nailgun.rsi
   - type: Storage # holds up to 2 mags plus gun
@@ -1840,13 +1840,13 @@
           tags:
           - RMCNailgunTactical
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: entity
   parent: RMCBeltBaseStorageNoVisuals
   id: RMCM82FHolster
-  name: M276 pattern M82F flare gun holster rig
-  description: he M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is for the M82F flare gun and can additionally store up to 16 flares.
+  name: M276 制式 M82F 信号枪枪套挂具
+  description: M276 是 USCM 的标准承载装备。它由一条带有各种夹扣的模块化腰带组成。此版本用于 M82F 信号枪，并且还可额外存放最多 16 发信号弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/holster_flaregun.rsi
@@ -1854,18 +1854,18 @@
     - state: icon
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m82f
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       offset: -0.03625, -0.08
       visible: false
     - sprite: _RMC14/Objects/Clothing/Belt/holster_flaregun.rsi
       state: icon-front
-      map: [ "holstered" ]
+      map: ["holstered"]
     - sprite: _RMC14/Objects/Clothing/Belt/holster_flaregun.rsi
       state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - sprite: _RMC14/Objects/Clothing/Belt/holster_flaregun.rsi
       state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/holster_flaregun.rsi
     slots:
@@ -1916,8 +1916,8 @@
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltSPPBrown
-  name: 6B80 pattern ammo rig
-  description: The 6B80 is an outdated but reliable ammo rig, formerly standard for the UPP Army. Its modular belt holds various munitions, still used by UPP security forces and reserves for its rugged design.
+  name: 6B80型弹药携行具
+  description: 6B80是一种过时但可靠的弹药携行具，曾是UPP陆军的标准装备。其模块化腰带可装载多种弹药，因其坚固耐用的设计，仍被UPP安全部队和预备役使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/spp_brown.rsi
@@ -1939,8 +1939,8 @@
 - type: entity
   parent: CMBeltUtility
   id: RMCBeltMachineGunner
-  name: M804 heavygunner storage rig
-  description: The M804 heavygunner storage rig is an M276 pattern toolbelt rig modified to carry ammunition for heavy machinegun systems, and engineering tools for the gunner.
+  name: M804 重机枪手储物装具
+  description: M804重机枪手储物装具是经过改装的M276式工具腰带装具，可携带重机枪系统所用弹药以及机枪手的工程工具。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/machinegunner.rsi
@@ -1983,55 +1983,55 @@
 - type: entity
   parent: CMBeltMedical
   id: RMCMedicalL75RCM
-  name: L75 pattern medical storage rig
-  description: The L75 is the standard load-bearing equipment of the RCM. It consists of a modular belt with various clips. This version is designed to transport medical supplies and pistol ammunition.
+  name: L75式医疗储物携行具
+  description: L75是RCM的标准携行具。它由一条配有各种卡扣的模块化腰带组成。此型号设计用于运送医疗用品和手枪弹药。
   suffix: RCM, Medical
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/Belt/rcm_medical.rsi
-    - type: Clothing
-      sprite: _RMC14/Objects/Clothing/Belt/rcm_medical.rsi
-    - type: Storage
-      maxItemSize: Normal
-      grid:
-        - 0,0,13,5 # 21 slots
-      whitelist:
-        tags:
-          - CMMagazinePistol
-          - DiscreteHealthAnalyzer
-          - Dropper
-          - GlassBeaker
-          - Bottle
-          - PillPacket
-          - PillCanister
-          - Syringe
-          - CMSurgicalLine
-          - CMSynthGraft
-          - Brutepack
-          - CMBloodPack
-          - Gauze
-          - Ointment
-          - CMOintment
-          - CMTraumaKit
-          - CMBurnKit
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Belt/rcm_medical.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Belt/rcm_medical.rsi
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,13,5     # 21 slots
+    whitelist:
+      tags:
+      - CMMagazinePistol
+      - DiscreteHealthAnalyzer
+      - Dropper
+      - GlassBeaker
+      - Bottle
+      - PillPacket
+      - PillCanister
+      - Syringe
+      - CMSurgicalLine
+      - CMSynthGraft
+      - Brutepack
+      - CMBloodPack
+      - Gauze
+      - Ointment
+      - CMOintment
+      - CMTraumaKit
+      - CMBurnKit
           #      - # TODO RMC14 splints
-          - CMAutoInjector
-          - CMRollerItem
-          - BodyBag
-          - RMCGlovesLatex
-          - SterileMask
-          - Hypospray
-          - CigPack
-          - RMCPenlight
-          - Flare
-          - RMCMiniTank
+      - CMAutoInjector
+      - CMRollerItem
+      - BodyBag
+      - RMCGlovesLatex
+      - SterileMask
+      - Hypospray
+      - CigPack
+      - RMCPenlight
+      - Flare
+      - RMCMiniTank
           #      - # TODO RMC14 reagent analyzer
           #      - # TODO RMC14 plant analyzer
-        components:
-          - Hypospray
-          - Defibrillator
-          - Pill
-          - RMCLighter
+      components:
+      - Hypospray
+      - Defibrillator
+      - Pill
+      - RMCLighter
 
 - type: entity
   parent: RMCMedicalL75RCM
@@ -2064,36 +2064,36 @@
   id: RMCMedicalL75RCMFillPara
   suffix: Paramarine, Survivor, Filled, Medical
   components:
-    - type: StorageFill
-      contents:
-        - id: CMPillCanisterBicaridine
-        - id: CMPillCanisterKelotane
+  - type: StorageFill
+    contents:
+    - id: CMPillCanisterBicaridine
+    - id: CMPillCanisterKelotane
         # - id: CMPillCanisterTramadol
-        - id: CMPillCanisterTricordrazine
-        - id: CMTraumaKit10
-        - id: CMBurnKit10
+    - id: CMPillCanisterTricordrazine
+    - id: CMTraumaKit10
+    - id: CMBurnKit10
         # - id: 5 splints
-        - id: CMHealthAnalyzer
+    - id: CMHealthAnalyzer
 
 - type: entity
   parent: CMBeltMarine
   id: RMCBeltRCM
-  name: L70 pattern ammo load rig
-  description: Good for carrying around extra ammo in the heat of the jungle. Made of special rot-resistant fabric.
+  name: L70式弹药携行具
+  description: 适合在丛林酷热中携带额外弹药。由特殊防霉织物制成。
   suffix: RCM, Ammo
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/Belt/rcm_ammo.rsi
-    - type: Clothing
-      sprite: _RMC14/Objects/Clothing/Belt/rcm_ammo.rsi
-    - type: ItemCamouflage
-      camouflageVariations: {}
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Belt/rcm_ammo.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Belt/rcm_ammo.rsi
+  - type: ItemCamouflage
+    camouflageVariations: {}
 
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCBeltUtilityGeneralRCM
-  name: L26 general utility belt
-  description: A small, lightweight pouch that can be clipped onto armor to provide additional storage. This new RCM model, while uncomfortable, can also be clipped around the waist.
+  name: L26通用工具腰带
+  description: 一个小巧轻便的袋子，可夹在护甲上以提供额外储物空间。这款新的RCM型号虽然不舒服，但也可以夹在腰间。
   suffix: PVP, RCM
   components:
   - type: Sprite
@@ -2106,11 +2106,11 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-      - 0,0,14,1 # 15 slots
+    - 0,0,14,1   # 15 slots
     blacklist:
       tags:
-        - CMFirstAidKit
-        - RMCEngineerKit
+      - CMFirstAidKit
+      - RMCEngineerKit
   - type: Tag
     tags:
     - RMCG8Pouch
@@ -2118,176 +2118,176 @@
 - type: entity
   parent: RMCBeltHolsterPistol
   id: RMCBeltHolsterPistolRCM
-  name: L80 general pistol holster rig
-  description: The L80 is the standard load-bearing equipment of the Royal Crown Marines. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+  name: L80 通用手枪枪套挂具
+  description: L80是皇家王冠海军陆战队的标准负重装备。它由一条带有各种卡扣的模块化腰带构成。该版本配有枪套组件，可携带最常见的手枪。它还包含侧袋，可存放大多数手枪弹匣。
   suffix: RCM, Pistol Belt
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_rcm.rsi
-    - type: Clothing
-      sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_rcm.rsi
-    - type: ItemCamouflage
-      camouflageVariations: {}
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_rcm.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_rcm.rsi
+  - type: ItemCamouflage
+    camouflageVariations: {}
 
 - type: entity
   parent: RMCBeltHolsterPistol
   id: RMCBeltHolsterPistolPara
-  name: paramarine load bearing rig
-  description: A sturdy belt fitted with a black leather holster designed for RCM Paramarines. A large utility pouch and several smaller compartments provide ample space for extra ammunition and field essentials — standard gear for Paramarines dropping into hostile territory.
+  name: 伞兵负重装具
+  description: 一条结实的腰带，配有专为RCM伞兵设计的黑色皮革枪套。一个大型工具袋和若干较小的隔层为额外弹药和野外必需品提供了充足空间——这是伞兵空降至敌占区时的标准装备。
   suffix: Paramarine, Survivor
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para.rsi
-      layers:
-      - state: icon
-      - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
-        state: warwick
-        map: [ "warwick_fill" ]
-        visible: false
-      - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
-        state: l54
-        map: [ "l54_fill" ]
-      - sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para.rsi
-        state: icon-front
-        map: [ "holstered" ]
-      - state: half
-        map: [ "openLayer" ]
-      - state: full
-        map: [ "closedLayer" ]
-    - type: Clothing
-      sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para.rsi
-    - type: ItemCamouflage
-      camouflageVariations: {}
-    - type: Storage # holds up to 7 mags plus gun
-      maxItemSize: Normal
-      grid:
-        - 0,0,15,1 # 8 slots
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para.rsi
+    layers:
+    - state: icon
+    - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
+      state: warwick
+      map: ["warwick_fill"]
+      visible: false
+    - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
+      state: l54
+      map: ["l54_fill"]
+    - sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para.rsi
+      state: icon-front
+      map: ["holstered"]
+    - state: half
+      map: ["openLayer"]
+    - state: full
+      map: ["closedLayer"]
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para.rsi
+  - type: ItemCamouflage
+    camouflageVariations: {}
+  - type: Storage   # holds up to 7 mags plus gun
+    maxItemSize: Normal
+    grid:
+    - 0,0,15,1     # 8 slots
+    whitelist:
+      tags:
+      - Sidearm
+      - CMMagazinePistol
+      - RMCRevolver
+      - RMCMagazineRevolver
+    blacklist:
+      tags:
+      - RMCSmartPistol
+      - RMCMagazinePistolSU6
+  - type: FixedItemSizeStorage
+  - type: LimitedStorage
+    limits:
+    - popup: rmc-storage-limit-one-gun
       whitelist:
         tags:
-          - Sidearm
-          - CMMagazinePistol
-          - RMCRevolver
-          - RMCMagazineRevolver
-      blacklist:
-        tags:
-          - RMCSmartPistol
-          - RMCMagazinePistolSU6
-    - type: FixedItemSizeStorage
-    - type: LimitedStorage
-      limits:
-        - popup: rmc-storage-limit-one-gun
-          whitelist:
-            tags:
-              - Sidearm
-              - RMCRevolver
-        - popup: rmc-storage-limit-max-loaders
-          count: 7
-          whitelist:
-            tags:
-              - CMMagazinePistol
-              - RMCMagazineRevolver
-    - type: CMHolster
+        - Sidearm
+        - RMCRevolver
+    - popup: rmc-storage-limit-max-loaders
+      count: 7
       whitelist:
         tags:
+        - CMMagazinePistol
+        - RMCMagazineRevolver
+  - type: CMHolster
+    whitelist:
+      tags:
+      - Sidearm
+  - type: ItemMapper
+    spriteLayers:
+    - holstered
+    - warwick_fill
+    - l54_fill
+    mapLayers:
+      holstered:
+        whitelist:
+          tags:
           - Sidearm
-    - type: ItemMapper
-      spriteLayers:
-        - holstered
-        - warwick_fill
-        - l54_fill
-      mapLayers:
-        holstered:
-          whitelist:
-            tags:
-              - Sidearm
-        warwick_fill:
-          whitelist:
-            tags:
-              - RMCWeaponRevolverWarwickMkVII
-        l54_fill:
-          whitelist:
-            tags:
-              - RMCWeaponPistolL54
+      warwick_fill:
+        whitelist:
+          tags:
+          - RMCWeaponRevolverWarwickMkVII
+      l54_fill:
+        whitelist:
+          tags:
+          - RMCWeaponPistolL54
 
 - type: entity
   parent: RMCBeltHolsterPistolPara
   id: RMCBeltHolsterPistolParaM44
   suffix: Paramarine, Survivor, Filled, Warwick
   components:
-    - type: StorageFill
-      contents:
-        - id: RMCWeaponRevolverWarwickMkVII
-        - id: RMCSpeedLoaderM44
-          amount: 7
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponRevolverWarwickMkVII
+    - id: RMCSpeedLoaderM44
+      amount: 7
 
 - type: entity
   parent: RMCBeltHolsterPistolPara
   id: RMCBeltHolsterPistolParaM44Random
   suffix: Paramarine, Survivor, Random, Warwick
   components:
-    - type: StorageFill
-      contents:
-        - id: RMCWeaponRevolverWarwickMkVII
-        - id: RMCSpeedLoaderM44
-        - id: RMCSpeedLoaderM44
-          prob: 0.66
-        - id: RMCSpeedLoaderM44
-          prob: 0.33
+  - type: StorageFill
+    contents:
+    - id: RMCWeaponRevolverWarwickMkVII
+    - id: RMCSpeedLoaderM44
+    - id: RMCSpeedLoaderM44
+      prob: 0.66
+    - id: RMCSpeedLoaderM44
+      prob: 0.33
 
 - type: entity
   parent: RMCBeltHolsterPistolPara
   id: RMCBeltHolsterPistolParaCustom
-  name: paramarine custom load-bearing rig
-  description: A modified RCM Paramarine belt featuring a black leather holster with gold inlay, a large utility pouch, and several smaller compartments provide ample space for extra ammunition and field essentials — standard gear for Paramarines dropping into hostile territory.
+  name: 伞兵定制承载装具
+  description: 一条改装的RCM伞兵腰带，配有带金色镶嵌的黑色皮革枪套、一个大号多功能袋和若干较小隔层，为额外弹药和野战必需品提供充足空间——伞兵空降至敌占区时的标准装备。
   suffix: Paramarine, Survivor, Filled, L54 Custom
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para_custom.rsi
-      layers:
-      - state: icon
-      - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
-        state: warwick
-        map: [ "warwick_fill" ]
-        visible: false
-      - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
-        state: l54
-        map: [ "l54_fill" ]
-      - sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para_custom.rsi
-        state: icon-front
-        map: [ "holstered" ]
-      - state: half
-        map: [ "openLayer" ]
-      - state: full
-        map: [ "closedLayer" ]
-    - type: Clothing
-      sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para_custom.rsi
-    - type: ItemCamouflage
-      camouflageVariations: { }
-    - type: ItemMapper
-      spriteLayers:
-        - holstered
-        - warwick_fill
-        - l54_fill
-      mapLayers:
-        holstered:
-          whitelist:
-            tags:
-              - Sidearm
-        warwick_fill:
-          whitelist:
-            tags:
-              - RMCWeaponRevolverWarwickMkVII
-        l54_fill:
-          whitelist:
-            tags:
-              - RMCWeaponPistolL54
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para_custom.rsi
+    layers:
+    - state: icon
+    - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
+      state: warwick
+      map: ["warwick_fill"]
+      visible: false
+    - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
+      state: l54
+      map: ["l54_fill"]
+    - sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para_custom.rsi
+      state: icon-front
+      map: ["holstered"]
+    - state: half
+      map: ["openLayer"]
+    - state: full
+      map: ["closedLayer"]
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Belt/holster_pistol_para_custom.rsi
+  - type: ItemCamouflage
+    camouflageVariations: {}
+  - type: ItemMapper
+    spriteLayers:
+    - holstered
+    - warwick_fill
+    - l54_fill
+    mapLayers:
+      holstered:
+        whitelist:
+          tags:
+          - Sidearm
+      warwick_fill:
+        whitelist:
+          tags:
+          - RMCWeaponRevolverWarwickMkVII
+      l54_fill:
+        whitelist:
+          tags:
+          - RMCWeaponPistolL54
 
 # PVE RCM belts
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCBeltRoyalMortar
-  name: L79 pattern load-bearing rig
-  description: An L79 pattern load-bearing rig configured to carry support ammunition for either the light mortar or L989A2 multiple grenade launcher, along with a sidearm & magazine. Made of special rot-resistant fabric.
+  name: L79式负重装具
+  description: 一种L79式负重装具，配置用于携带轻型迫击炮或L989A2多发榴弹发射器的支援弹药，以及副武器和弹匣。由特殊抗腐烂面料制成。
   suffix: PVE, RCM, Filled
   components:
   - type: Sprite
@@ -2296,13 +2296,13 @@
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m1984 # TODO RMC14 per-gun underlay
       offset: 0.375, 0
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       visible: false
     - state: icon
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/mortar/snow-urban.rsi
   - type: Storage
@@ -2354,8 +2354,8 @@
 - type: entity
   parent: RMCBeltHolsterPistolTSE
   id: RMCBeltHolsterPistolRCML29Filled
-  name: L29 sidearm rig
-  description: A dark brown leather pistol belt commonly issued to RCM officers. Although designed for the L14 service pistol, it accommodates most sidearms along with spare magazines. Standard issue across TSE law enforcement, military, and security forces.
+  name: L29副武器挂具
+  description: 深棕色皮质手枪腰带，通常配发给 RCM 警官。虽然专为 L14 制式手枪设计，但可容纳大多数副武器以及备用弹匣。TSE 执法部门、军队和安全部队的标准配发装备。
   suffix: PVE, RCM, Filled
   components:
   - type: StorageFill
@@ -2370,38 +2370,38 @@
   id: RMCBeltUtilityGeneralRCMPVE
   suffix: PVE, RCM
   components:
-    - type: Storage
-      maxItemSize: Normal
-      grid:
-        - 0,0,9,1 # 10 slots
-      blacklist:
-        tags:
-          - CMFirstAidKit
-          - RMCEngineerKit
+  - type: Storage
+    maxItemSize: Normal
+    grid:
+    - 0,0,9,1     # 10 slots
+    blacklist:
+      tags:
+      - CMFirstAidKit
+      - RMCEngineerKit
 
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCBeltL49
-  name: L28-pattern shotgun shell rig
+  name: L28型霰弹枪弹壳挂具
   suffix: PVE, RCM
-  description: "An L28-pattern shotgun holster rig, equipped with loops to hold loose 12ga shells and featuring a holster on the back capable of holding an L49 assault shotgun.\nShotguns equipped with magnetic harnesses or slings can be strapped directly to the belt, preventing them from being dropped."
+  description: "L28型霰弹枪弹壳挂具，配有用于固定散装12号霰弹的弹环，背面设有一个可容纳L49突击霰弹枪的枪套。\n配备磁性挂具或背带的霰弹枪可直接绑在腰带上，以防掉落。"
   components:
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
         ents: []
-        showEnts: False
-        occludes: True
+        showEnts: false
+        occludes: true
       item: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/l49.rsi
     layers:
     - state: icon
     - state: l49
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
       offset: 0, 0
       visible: false
     - state: icon-front
@@ -2435,12 +2435,12 @@
         components:
         - Gun
   - type: CMStorageVisualizer
-    storageClosed: null
-    storageOpen: null
+    storageClosed:
+    storageOpen:
   - type: ItemSlots
     slots:
       item:
-        name: L49 assault shotgun
+        name: L49突击霰弹枪
         insertVerbText: sheath-insert-verb
         ejectVerbText: sheath-eject-verb
         insertSound: /Audio/_RMC14/Weapons/Guns/gun_rifle_draw.ogg
@@ -2480,8 +2480,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: RMCBeltBrowne
-  name: M276 'Sam Browne' duty belt
-  description: The M276 'Sam Browne' duty belt is an alternative piece of load-bearing equipment offered to senior officers, military police, and senior enlisted advisors. It consists of a leather belt, a supporting strap worn over the right shoulder, a holster for a sidearm, and a small pouch capable of holding binoculars, a megaphone, policing tools, and other miscellaneous items - even a command tablet.
+  name: M276“萨姆·布朗”勤务腰带
+  description: M276“萨姆·布朗”勤务腰带是提供给高级军官、宪兵和高级士官顾问的另一种承载装备。它由一条皮带、一条佩戴在右肩上的支撑带、一个随身武器枪套以及一个小袋组成，小袋可容纳双筒望远镜、扩音器、警务工具和其他杂项物品——甚至一台指挥平板电脑。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/browne.rsi
@@ -2489,14 +2489,14 @@
     - state: icon
     - sprite: _RMC14/Objects/Weapons/Guns/gun_underlays.rsi
       state: m1984 # TODO RMC14 per-gun underlay
-      map: [ "enum.CMHolsterLayers.Fill" ]
+      map: ["enum.CMHolsterLayers.Fill"]
     - sprite: _RMC14/Objects/Clothing/Belt/browne.rsi
       state: icon-front
-      map: [ "holstered" ]
+      map: ["holstered"]
     - state: half
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: full
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Belt/browne.rsi
   - type: Storage

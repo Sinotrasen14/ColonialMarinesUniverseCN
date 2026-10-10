@@ -1,20 +1,20 @@
-﻿- type: entity
+- type: entity
   id: AutolatheMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: autolathe machine board
-  description: A machine printed circuit board for an autolathe.
+  name: 自动车床机器电路板 | autolathe machine board
+  description: 自动车床的机器印刷电路板。 | A machine printed circuit board for an autolathe.
   components:
-    - type: MachineBoard
-      prototype: Autolathe
-      stackRequirements:
-        Manipulator: 4
-        Glass: 1
+  - type: MachineBoard
+    prototype: Autolathe
+    stackRequirements:
+      Manipulator: 4
+      Glass: 1
 
 - type: entity
   parent: BaseMachineCircuitboard
   id: AutolatheHyperConvectionMachineCircuitboard
-  name: hyper convection autolathe machine board
-  description: A machine printed circuit board for a hyper convection autolathe.
+  name: 超对流自动车床机器板 | hyper convection autolathe machine board
+  description: 超对流自动车床的机器印刷电路板。 | A machine printed circuit board for a hyper convection autolathe.
   components:
   - type: MachineBoard
     prototype: AutolatheHyperConvection
@@ -29,8 +29,8 @@
 - type: entity
   id: ProtolatheMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: protolathe machine board
-  description: A machine printed circuit board for a protolathe.
+  name: 原型机电路板 | protolathe machine board
+  description: 用于原型机的高级电路板。 | A machine printed circuit board for a protolathe.
   components:
   - type: Sprite
     state: science
@@ -46,8 +46,8 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: ProtolatheHyperConvectionMachineCircuitboard
-  name: hyper convection protolathe machine board
-  description: A machine printed circuit board for a hyper convection protolathe.
+  name: 超对流原型车床机器板 | hyper convection protolathe machine board
+  description: 超对流原型车床的机器印刷电路板。 | A machine printed circuit board for a hyper convection protolathe.
   components:
   - type: Sprite
     state: science
@@ -66,8 +66,8 @@
 - type: entity
   id: BiofabricatorMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: biocube fabricator machine board
-  description: A machine printed circuit board for a biocube fabricator.
+  name: 生物立方制造机机器板 | biocube fabricator machine board
+  description: 生物立方制造机的机器印刷电路板。 | A machine printed circuit board for a biocube fabricator.
   components:
   - type: Sprite
     state: service
@@ -80,56 +80,56 @@
 - type: entity
   id: SecurityTechFabCircuitboard
   parent: BaseMachineCircuitboard
-  name: security techfab machine board
-  description: A machine printed circuit board for a security techfab.
+  name: 安全技术制造机电路板 | security techfab machine board
+  description: 用于安全技术制造机的机器印刷电路板。 | A machine printed circuit board for a security techfab.
   components:
-    - type: Sprite
-      state: security
-    - type: MachineBoard
-      prototype: SecurityTechFab
-      stackRequirements:
-        Manipulator: 4
-      tagRequirements:
-        GlassBeaker:
-          amount: 2
-          defaultPrototype: Beaker
+  - type: Sprite
+    state: security
+  - type: MachineBoard
+    prototype: SecurityTechFab
+    stackRequirements:
+      Manipulator: 4
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
 
 - type: entity
   id: AmmoTechFabCircuitboard
   parent: BaseMachineCircuitboard
-  name: ammo techfab circuit board
-  description: A machine printed circuit board for an ammo techfab.
+  name: 弹药技术制造机电路板 | ammo techfab circuit board
+  description: 弹药技术制造机的机器印刷电路板。 | A machine printed circuit board for an ammo techfab.
   components:
-    - type: Sprite
-      state: security
-    - type: MachineBoard
-      prototype: AmmoTechFab
-      stackRequirements:
-        Manipulator: 2
+  - type: Sprite
+    state: security
+  - type: MachineBoard
+    prototype: AmmoTechFab
+    stackRequirements:
+      Manipulator: 2
 
 - type: entity
   id: MedicalTechFabCircuitboard
   parent: BaseMachineCircuitboard
-  name: medical techfab machine board
-  description: A machine printed circuit board for a medical techfab.
+  name: 医疗科技制造机电路板 | medical techfab machine board
+  description: 医疗科技制造机的机器印刷电路板。 | A machine printed circuit board for a medical techfab.
   components:
-    - type: Sprite
-      state: medical
-    - type: MachineBoard
-      prototype: MedicalTechFab
-      stackRequirements:
-        Manipulator: 4
-      tagRequirements:
-        GlassBeaker:
-          amount: 2
-          defaultPrototype: Beaker
-    - type: StealTarget
-      stealGroup: MedicalTechFabCircuitboard
+  - type: Sprite
+    state: medical
+  - type: MachineBoard
+    prototype: MedicalTechFab
+    stackRequirements:
+      Manipulator: 4
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
+  - type: StealTarget
+    stealGroup: MedicalTechFabCircuitboard
 
 - type: entity
   id: CircuitImprinterMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: circuit imprinter machine board
+  name: 电路印刷机板 | circuit imprinter machine board
   components:
   - type: Sprite
     state: science
@@ -145,8 +145,8 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: CircuitImprinterHyperConvectionMachineCircuitboard
-  name: hyper convection circuit imprinter machine board
-  description: A machine printed circuit board for a hyper convection circuit imprinter.
+  name: 超对流电路压印机机器板 | hyper convection circuit imprinter machine board
+  description: 超对流电路压印机的机器印刷电路板。 | A machine printed circuit board for a hyper convection circuit imprinter.
   components:
   - type: Sprite
     state: science
@@ -165,7 +165,7 @@
 - type: entity
   id: ExosuitFabricatorMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: exosuit fabricator machine board
+  name: 外骨骼装甲制造机机器板 | exosuit fabricator machine board
   components:
   - type: Sprite
     state: science
@@ -182,8 +182,8 @@
 - type: entity
   id: ResearchAndDevelopmentServerMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: R&D server machine board
-  description: A machine printed circuit board for the R&D server.
+  name: 研发服务器机器板 | R&D server machine board
+  description: 研发服务器机器板。 | A machine printed circuit board for the R&D server.
   components:
   - type: Sprite
     state: science
@@ -195,8 +195,8 @@
 - type: entity
   id: BiogeneratorMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: biogenerator machine board
-  description: A machine printed circuit board for a biogenerator.
+  name: 生物发生器机器板 | biogenerator machine board
+  description: 生物发生器的机器印刷电路板。 | A machine printed circuit board for a biogenerator.
   components:
   - type: Sprite
     state: service
@@ -212,7 +212,7 @@
 - type: entity
   id: UniformPrinterMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: uniform printer machine board
+  name: 制服打印机机板 | uniform printer machine board
   components:
   - type: MachineBoard
     prototype: UniformPrinter
@@ -222,7 +222,7 @@
 - type: entity
   id: VaccinatorMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: vaccinator machine board
+  name: 疫苗接种机板 | vaccinator machine board
   components:
   - type: Sprite
     state: medical
@@ -232,14 +232,14 @@
       Manipulator: 2
       Cable: 5
     tagRequirements:
-        GlassBeaker:
-          amount: 1
-          defaultPrototype: Beaker
+      GlassBeaker:
+        amount: 1
+        defaultPrototype: Beaker
 
 - type: entity
   id: DiagnoserMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: diagnoser machine board
+  name: 诊断机板 | diagnoser machine board
   components:
   - type: Sprite
     state: medical
@@ -259,22 +259,22 @@
 - type: entity
   id: ArtifactAnalyzerMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: artifact analyzer machine board
-  description: A machine printed circuit board for an artifact analyzer.
+  name: 工件分析仪机器板 | artifact analyzer machine board
+  description: 用于工件分析仪的机器印刷电路板。 | A machine printed circuit board for an artifact analyzer.
   components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineArtifactAnalyzer
-      stackRequirements:
-        Manipulator: 1
-        Glass: 5
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: MachineArtifactAnalyzer
+    stackRequirements:
+      Manipulator: 1
+      Glass: 5
 
 - type: entity
   id: ArtifactCrusherMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: artifact crusher machine board
-  description: A machine printed circuit board for an artifact crusher.
+  name: 文物破碎机机器板 | artifact crusher machine board
+  description: 一件用于文物破碎机的机器印刷电路板。 | A machine printed circuit board for an artifact crusher.
   components:
   - type: Sprite
     state: science
@@ -288,8 +288,8 @@
 - type: entity
   id: StationTeleporterMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: teleporter machine board
-  description: A machine printed circuit board for a bluespace teleporter.
+  name: 传送器机器电路板 | teleporter machine board
+  description: 蓝空间传送器的机器印刷电路板。 | A machine printed circuit board for a bluespace teleporter.
   components:
   - type: Sprite
     state: science
@@ -303,23 +303,23 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: AnomalyVesselCircuitboard
-  name: anomaly vessel machine board
-  description: A machine printed circuit board for an anomaly vessel.
+  name: 异常容器机器板 | anomaly vessel machine board
+  description: 异常容器机器板，用于异常容器的机器印刷电路板。 | A machine printed circuit board for an anomaly vessel.
   components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineAnomalyVessel
-      stackRequirements:
-        Manipulator: 3
-        Cable: 1
-        PlasmaGlass: 10
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: MachineAnomalyVessel
+    stackRequirements:
+      Manipulator: 3
+      Cable: 1
+      PlasmaGlass: 10
 
 - type: entity
   parent: BaseMachineCircuitboard
   id: AnomalyVesselExperimentalCircuitboard
-  name: experimental anomaly vessel machine board
-  description: A machine printed circuit board for an experimental anomaly vessel.
+  name: 实验性异常容器机器板 | experimental anomaly vessel machine board
+  description: 实验性异常容器机器的印刷电路板。 | A machine printed circuit board for an experimental anomaly vessel.
   components:
   - type: Sprite
     state: science
@@ -334,38 +334,38 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: AnomalySynchronizerCircuitboard
-  name: anomaly synchronizer machine board
-  description: A machine printed circuit board for an anomaly synchronizer.
+  name: 异常同步器机器板 | anomaly synchronizer machine board
+  description: 用于异常同步器的机器印刷电路板。 | A machine printed circuit board for an anomaly synchronizer.
   components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineAnomalySynchronizer
-      stackRequirements:
-        Manipulator: 7
-        PlasmaGlass: 5
-        Cable: 5
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: MachineAnomalySynchronizer
+    stackRequirements:
+      Manipulator: 7
+      PlasmaGlass: 5
+      Cable: 5
 
 - type: entity
   parent: BaseMachineCircuitboard
   id: APECircuitboard
-  name: A.P.E. machine board
-  description: A machine printed circuit board for an A.P.E.
+  name: A.P.E. 机器电路板 | A.P.E. machine board
+  description: A.P.E.的机器印刷电路板 | A machine printed circuit board for an A.P.E.
   components:
-    - type: Sprite
-      state: science
-    - type: MachineBoard
-      prototype: MachineAPE
-      stackRequirements:
-        Manipulator: 2
-        Cable: 1
-        Glass: 1
+  - type: Sprite
+    state: science
+  - type: MachineBoard
+    prototype: MachineAPE
+    stackRequirements:
+      Manipulator: 2
+      Cable: 1
+      Glass: 1
 
 - type: entity
   id: ThermomachineFreezerMachineCircuitBoard
   parent: BaseMachineCircuitboard
-  name: freezer thermomachine machine board
-  description: Looks like you could use a screwdriver to change the board type.
+  name: 冷冻机热机机板 | freezer thermomachine machine board
+  description: 看起来你可以用螺丝刀来更换机板类型。 | Looks like you could use a screwdriver to change the board type.
   components:
   - type: Sprite
     state: engineering
@@ -375,15 +375,15 @@
       Manipulator: 4
       Cable: 5
   - type: Construction
-    deconstructionTarget: null
+    deconstructionTarget:
     graph: ThermomachineBoard
     node: freezer
 
 - type: entity
   id: ThermomachineHeaterMachineCircuitBoard
   parent: BaseMachineCircuitboard
-  name: heater thermomachine machine board
-  description: Looks like you could use a screwdriver to change the board type.
+  name: 加热器热机机器板 | heater thermomachine machine board
+  description: 看起来你可以用螺丝刀来更换电路板类型。 | Looks like you could use a screwdriver to change the board type.
   components:
   - type: Sprite
     state: engineering
@@ -394,14 +394,14 @@
       Cable: 5
   - type: Construction
     graph: ThermomachineBoard
-    deconstructionTarget: null
+    deconstructionTarget:
     node: heater
 
 - type: entity
   parent: BaseMachineCircuitboard
   id: HellfireFreezerMachineCircuitBoard
-  name: hellfire freezer machine board
-  description: Looks like you could use a screwdriver to change the board type.
+  name: 地狱火冷冻机电路板 | hellfire freezer machine board
+  description: 看起来你可以用螺丝刀来更改电路板类型。 | Looks like you could use a screwdriver to change the board type.
   components:
   - type: Sprite
     state: engineering
@@ -411,15 +411,15 @@
       Manipulator: 4
       Plasma: 1
   - type: Construction
-    deconstructionTarget: null
+    deconstructionTarget:
     graph: ThermomachineBoard
     node: hellfirefreezer
 
 - type: entity
   parent: BaseMachineCircuitboard
   id: HellfireHeaterMachineCircuitBoard
-  name: hellfire heater machine board
-  description: Looks like you could use a screwdriver to change the board type.
+  name: 地狱火加热器机器板 | hellfire heater machine board
+  description: 看起来你可以用螺丝刀来更换电路板类型。 | Looks like you could use a screwdriver to change the board type.
   components:
   - type: Sprite
     state: engineering
@@ -430,14 +430,14 @@
       Plasma: 1
   - type: Construction
     graph: ThermomachineBoard
-    deconstructionTarget: null
+    deconstructionTarget:
     node: hellfireheater
 
 - type: entity
   id: CondenserMachineCircuitBoard
   parent: BaseMachineCircuitboard
-  name: condenser machine board
-  description: A machine printed circuit board for a condenser.
+  name: 冷凝器机器板 | condenser machine board
+  description: 冷凝器机器印刷电路板。 | A machine printed circuit board for a condenser.
   components:
   - type: Sprite
     state: engineering
@@ -450,8 +450,8 @@
 - type: entity
   id: PortableScrubberMachineCircuitBoard
   parent: BaseMachineCircuitboard
-  name: portable scrubber machine board
-  description: A machine printed circuit board for a portable scrubber.
+  name: 便携式洗地机电路板 | portable scrubber machine board
+  description: 一种用于便携式洗地机的机器印刷电路板。 | A machine printed circuit board for a portable scrubber.
   components:
   - type: Sprite
     state: engineering
@@ -465,8 +465,8 @@
 - type: entity
   id: SpaceHeaterMachineCircuitBoard
   parent: BaseMachineCircuitboard
-  name: space heater machine board
-  description: A machine printed circuit board for a space heater.
+  name: 空间加热器机器板 | space heater machine board
+  description: 用于空间加热器的机器印刷电路板。 | A machine printed circuit board for a space heater.
   components:
   - type: Sprite
     state: engineering
@@ -479,102 +479,102 @@
 - type: entity
   id: CloningPodMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: cloning pod machine board
-  description: A machine printed circuit board for a cloning pod.
+  name: 克隆舱机器板 | cloning pod machine board
+  description: 克隆舱的机器印刷电路板。 | A machine printed circuit board for a cloning pod.
   components:
-    - type: Sprite
-      state: medical
-    - type: MachineBoard
-      prototype: CloningPod
-      stackRequirements:
-        Manipulator: 4
-        Glass: 1
-        Cable: 1
+  - type: Sprite
+    state: medical
+  - type: MachineBoard
+    prototype: CloningPod
+    stackRequirements:
+      Manipulator: 4
+      Glass: 1
+      Cable: 1
 
 - type: entity
   id: MedicalScannerMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: medical scanner machine board
-  description: A machine printed circuit board for a medical scanner.
+  name: 医疗扫描仪机器电路板 | medical scanner machine board
+  description: 医疗扫描仪的机器印刷电路板。 | A machine printed circuit board for a medical scanner.
   components:
-    - type: Sprite
-      state: medical
-    - type: MachineBoard
-      prototype: MedicalScanner
-      stackRequirements:
-        Manipulator: 1
-        Glass: 5
-        Cable: 1
+  - type: Sprite
+    state: medical
+  - type: MachineBoard
+    prototype: MedicalScanner
+    stackRequirements:
+      Manipulator: 1
+      Glass: 5
+      Cable: 1
 
 - type: entity
   id: CrewMonitoringServerMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: crew monitoring server machine board
-  description: A machine printed circuit board for a crew monitoring server.
+  name: 船员监控服务器机器电路板 | crew monitoring server machine board
+  description: 用于船员监控服务器的机器印刷电路板。 | A machine printed circuit board for a crew monitoring server.
   components:
-    - type: MachineBoard
-      prototype: CrewMonitoringServer
-      stackRequirements:
-        Steel: 1
-        Cable: 2
+  - type: MachineBoard
+    prototype: CrewMonitoringServer
+    stackRequirements:
+      Steel: 1
+      Cable: 2
 
 - type: entity
   id: CryoPodMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: cryo pod machine board
-  description: A machine printed circuit board for a cryo pod.
+  name: 低温舱机器电路板 | cryo pod machine board
+  description: 低温舱机器的印刷电路板。 | A machine printed circuit board for a cryo pod.
   components:
-    - type: Sprite
-      state: medical
-    - type: MachineBoard
-      prototype: CryoPod
-      stackRequirements:
-        Glass: 5
-        Cable: 1
+  - type: Sprite
+    state: medical
+  - type: MachineBoard
+    prototype: CryoPod
+    stackRequirements:
+      Glass: 5
+      Cable: 1
 
 - type: entity
   id: ChemMasterMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: ChemMaster 4000 machine board
-  description: A machine printed circuit board for a ChemMaster 4000.
+  name: ChemMaster 4000 机器电路板 | ChemMaster 4000 machine board
+  description: 一块用于ChemMaster 4000的机器印刷电路板。 | A machine printed circuit board for a ChemMaster 4000.
   components:
-    - type: Sprite
-      state: medical
-    - type: MachineBoard
-      prototype: ChemMaster
-      stackRequirements:
-        Manipulator: 1
-        Glass: 1
-        Cable: 1
-      tagRequirements:
-        GlassBeaker:
-          amount: 2
-          defaultPrototype: Beaker
+  - type: Sprite
+    state: medical
+  - type: MachineBoard
+    prototype: ChemMaster
+    stackRequirements:
+      Manipulator: 1
+      Glass: 1
+      Cable: 1
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
 
 - type: entity
   id: ChemDispenserMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: chem dispenser machine board
-  description: A machine printed circuit board for a chem dispenser.
+  name: 化学分配器机器板 | chem dispenser machine board
+  description: 化学分配器机器电路板。 | A machine printed circuit board for a chem dispenser.
   components:
-    - type: Sprite
-      state: medical
-    - type: MachineBoard
-      prototype: ChemDispenserEmpty
-      stackRequirements:
-        Manipulator: 1
-        Glass: 1
-        Plastic: 3
-      tagRequirements:
-        GlassBeaker:
-          amount: 2
-          defaultPrototype: Beaker
+  - type: Sprite
+    state: medical
+  - type: MachineBoard
+    prototype: ChemDispenserEmpty
+    stackRequirements:
+      Manipulator: 1
+      Glass: 1
+      Plastic: 3
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
 
 - type: entity
   id: BiomassReclaimerMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: biomass reclaimer machine board
-  description: A machine printed circuit board for a biomass reclaimer.
+  name: 生物质回收机电路板 | biomass reclaimer machine board
+  description: 生物质回收机的机器印刷电路板。 | A machine printed circuit board for a biomass reclaimer.
   components:
   - type: Sprite
     state: medical
@@ -592,62 +592,62 @@
 - type: entity
   id: HydroponicsTrayMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: hydroponics tray machine board
-  description: A machine printed circuit board for a hydroponics tray.
+  name: 水培托盘机器电路板 | hydroponics tray machine board
+  description: 水培托盘机器的印刷电路板。 | A machine printed circuit board for a hydroponics tray.
   components:
-    - type: Sprite
-      state: service
-    - type: MachineBoard
-      prototype: HydroponicsTrayEmpty
-      stackRequirements:
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: HydroponicsTrayEmpty
+    stackRequirements:
         # replacing the console screen
-        Glass: 5
-        Cable: 2
-      tagRequirements:
-        GlassBeaker:
-          amount: 2
-          defaultPrototype: Beaker
+      Glass: 5
+      Cable: 2
+    tagRequirements:
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker
 
 - type: entity
   id: SeedExtractorMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: seed extractor machine board
-  description: A machine printed circuit board for a seed extractor.
+  name: 种子提取机机器板 | seed extractor machine board
+  description: 种子提取机的机器印刷电路板。 | A machine printed circuit board for a seed extractor.
   components:
-    - type: Sprite
-      state: service
-    - type: MachineBoard
-      prototype: SeedExtractor
-      stackRequirements:
-        Manipulator: 3
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: SeedExtractor
+    stackRequirements:
+      Manipulator: 3
         # replacing the console screen
-        Glass: 1
-        Cable: 2
+      Glass: 1
+      Cable: 2
 
 - type: entity
   id: SMESMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: SMES machine board
-  description: A machine printed circuit board for a SMES.
+  name: SMES机器电路板 | SMES machine board
+  description: 用于SMES的机器印刷电路板。 | A machine printed circuit board for a SMES.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: power_mod
-    - type: MachineBoard
-      prototype: SMESBasicEmpty
-      stackRequirements:
-        Manipulator: 1
-        CableHV: 10
-      componentRequirements:
-        PowerCell:
-          amount: 4
-          defaultPrototype: PowerCellSmall
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: power_mod
+  - type: MachineBoard
+    prototype: SMESBasicEmpty
+    stackRequirements:
+      Manipulator: 1
+      CableHV: 10
+    componentRequirements:
+      PowerCell:
+        amount: 4
+        defaultPrototype: PowerCellSmall
 
 - type: entity
   id: SMESAdvancedMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: advanced SMES machine board
-  description: A machine printed circuit board for an Advanced SMES.
+  name: 先进超导储能机电路板 | advanced SMES machine board
+  description: 先进超导储能机的印刷电路板。 | A machine printed circuit board for an Advanced SMES.
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
@@ -665,93 +665,93 @@
 - type: entity
   id: CellRechargerCircuitboard
   parent: BaseMachineCircuitboard
-  name: cell recharger machine board
-  description: A machine printed circuit board for a cell recharger.
+  name: 电池充电器机器电路板 | cell recharger machine board
+  description: 用于电池充电器的机器印刷电路板。 | A machine printed circuit board for a cell recharger.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: charger_APC
-    - type: MachineBoard
-      prototype: PowerCellRecharger
-      stackRequirements:
-        Manipulator: 2
-        Cable: 5
-    - type: PhysicalComposition
-      materialComposition:
-        Steel: 25
-        Plastic: 25
-    - type: StaticPrice
-      price: 15
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: charger_APC
+  - type: MachineBoard
+    prototype: PowerCellRecharger
+    stackRequirements:
+      Manipulator: 2
+      Cable: 5
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 25
+      Plastic: 25
+  - type: StaticPrice
+    price: 15
 
 - type: entity
   id: PowerCageRechargerCircuitboard
   parent: BaseMachineCircuitboard
-  name: cage recharger machine board
-  description: A machine printed circuit board for a energy cage recharger.
+  name: 笼式充电器机器电路板 | cage recharger machine board
+  description: 用于能量笼式充电器的机器印刷电路板。 | A machine printed circuit board for a energy cage recharger.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: charger_APC
-    - type: MachineBoard
-      prototype: PowerCageRecharger
-      stackRequirements:
-        Manipulator: 4
-        Plasteel: 5
-        Cable: 10
-    - type: PhysicalComposition
-      materialComposition:
-        Steel: 30
-        Plastic: 30
-    - type: StaticPrice
-      price: 30
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: charger_APC
+  - type: MachineBoard
+    prototype: PowerCageRecharger
+    stackRequirements:
+      Manipulator: 4
+      Plasteel: 5
+      Cable: 10
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 30
+      Plastic: 30
+  - type: StaticPrice
+    price: 30
 
 - type: entity
   id: BorgChargerCircuitboard
   parent: BaseMachineCircuitboard
-  name: cyborg recharging station machine board
-  description: A machine printed circuit board for a robot recharging station.
+  name: 赛博格充电站机器电路板 | cyborg recharging station machine board
+  description: 机器人充电站的机器印刷电路板。 | A machine printed circuit board for a robot recharging station.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: charger_APC
-    - type: MachineBoard
-      prototype: BorgCharger
-      stackRequirements:
-        Manipulator: 2
-        Cable: 5
-    - type: PhysicalComposition
-      materialComposition:
-        Steel: 25
-        Plastic: 25
-    - type: StaticPrice
-      price: 15
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: charger_APC
+  - type: MachineBoard
+    prototype: BorgCharger
+    stackRequirements:
+      Manipulator: 2
+      Cable: 5
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 25
+      Plastic: 25
+  - type: StaticPrice
+    price: 15
 
 - type: entity
   id: WeaponCapacitorRechargerCircuitboard
   parent: BaseMachineCircuitboard
-  name: recharger machine board
-  description: A machine printed circuit board for a recharger.
+  name: 充电器机器板 | recharger machine board
+  description: 充电器的机器印刷电路板。 | A machine printed circuit board for a recharger.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/module.rsi
-      state: charger_APC
-    - type: MachineBoard
-      prototype: WeaponCapacitorRecharger
-      stackRequirements:
-        Manipulator: 2
-        CableMV: 5
-    - type: PhysicalComposition
-      materialComposition:
-        Steel: 25
-        Plastic: 25
-    - type: StaticPrice
-      price: 15
+  - type: Sprite
+    sprite: Objects/Misc/module.rsi
+    state: charger_APC
+  - type: MachineBoard
+    prototype: WeaponCapacitorRecharger
+    stackRequirements:
+      Manipulator: 2
+      CableMV: 5
+  - type: PhysicalComposition
+    materialComposition:
+      Steel: 25
+      Plastic: 25
+  - type: StaticPrice
+    price: 15
 
 - type: entity
   id: TurboItemRechargerCircuitboard
   parent: BaseMachineCircuitboard
-  name: turbo recharger machine board
-  description: A machine printed circuit board for a turbo recharger.
+  name: 涡轮增压充电器机器电路板 | turbo recharger machine board
+  description: 涡轮增压充电器的机器印刷电路板。 | A machine printed circuit board for a turbo recharger.
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
@@ -769,31 +769,31 @@
 - type: entity
   id: SubstationMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: substation machine board
-  description: A machine printed circuit board for a substation.
+  name: 变电站机器板 | substation machine board
+  description: 变电站机器印刷电路板。 | A machine printed circuit board for a substation.
   components:
-    - type: MachineBoard
-      prototype: SubstationBasicEmpty
-      stackRequirements:
-        Manipulator: 1
-        CableMV: 5
-        CableHV: 5
-      componentRequirements:
-        PowerCell:
-          amount: 1
-          defaultPrototype: PowerCellSmall
-    - type: PhysicalComposition
-      materialComposition:
-        Glass: 200
-      chemicalComposition:
-        Silicon: 20
-    - type: StaticPrice
-      price: 58
+  - type: MachineBoard
+    prototype: SubstationBasicEmpty
+    stackRequirements:
+      Manipulator: 1
+      CableMV: 5
+      CableHV: 5
+    componentRequirements:
+      PowerCell:
+        amount: 1
+        defaultPrototype: PowerCellSmall
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 200
+    chemicalComposition:
+      Silicon: 20
+  - type: StaticPrice
+    price: 58
 
 - type: entity
   parent: BaseMachineCircuitboard
   id: DawInstrumentMachineCircuitboard
-  name: digital audio workstation machine board
+  name: 数字音频工作站机器板 | digital audio workstation machine board
   components:
   - type: Sprite
     state: service
@@ -804,51 +804,51 @@
       Cable: 1
     tagRequirements:
 #      One instrument to bring them all and in the darkness bind them...
-       KeyedInstrument:
-          amount: 1
-          defaultPrototype: SynthesizerInstrument
-          examineName: construction-insert-info-examine-name-instrument-keyed
-       StringInstrument:
-          amount: 1
-          defaultPrototype: AcousticGuitarInstrument
-          examineName: construction-insert-info-examine-name-instrument-string
-       PercussionInstrument:
-          amount: 1
-          defaultPrototype: GlockenspielInstrument
-          examineName: construction-insert-info-examine-name-instrument-percussion
-       BrassInstrument:
-          amount: 1
-          defaultPrototype: TrumpetInstrument
-          examineName: construction-insert-info-examine-name-instrument-brass
-       WoodwindInstrument:
-          amount: 1
-          defaultPrototype: SaxophoneInstrument
-          examineName: construction-insert-info-examine-name-instrument-woodwind
+      KeyedInstrument:
+        amount: 1
+        defaultPrototype: SynthesizerInstrument
+        examineName: construction-insert-info-examine-name-instrument-keyed
+      StringInstrument:
+        amount: 1
+        defaultPrototype: AcousticGuitarInstrument
+        examineName: construction-insert-info-examine-name-instrument-string
+      PercussionInstrument:
+        amount: 1
+        defaultPrototype: GlockenspielInstrument
+        examineName: construction-insert-info-examine-name-instrument-percussion
+      BrassInstrument:
+        amount: 1
+        defaultPrototype: TrumpetInstrument
+        examineName: construction-insert-info-examine-name-instrument-brass
+      WoodwindInstrument:
+        amount: 1
+        defaultPrototype: SaxophoneInstrument
+        examineName: construction-insert-info-examine-name-instrument-woodwind
 
 - type: entity
   id: PortableGeneratorPacmanMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: P.A.C.M.A.N.-type portable generator machine board
+  name: P.A.C.M.A.N.型便携式发电机机器板 | P.A.C.M.A.N.-type portable generator machine board
   components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: PortableGeneratorPacman
-      stackRequirements:
-        Manipulator: 1
-        CableHV: 5
-    - type: PhysicalComposition
-      materialComposition:
-        Glass: 200
-      chemicalComposition:
-        Silicon: 20
-    - type: StaticPrice
-      price: 40
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: PortableGeneratorPacman
+    stackRequirements:
+      Manipulator: 1
+      CableHV: 5
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 200
+    chemicalComposition:
+      Silicon: 20
+  - type: StaticPrice
+    price: 40
 
 - type: entity
   id: ThrusterMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: thruster machine board
+  name: 推进器机板 | thruster machine board
   components:
   - type: Sprite
     state: supply
@@ -861,7 +861,7 @@
 - type: entity
   id: GyroscopeMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: gyroscope machine board
+  name: 陀螺仪机板 | gyroscope machine board
   components:
   - type: Sprite
     state: supply
@@ -874,63 +874,63 @@
 - type: entity
   id: PortableGeneratorSuperPacmanMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: S.U.P.E.R.P.A.C.M.A.N.-type portable generator machine board
+  name: S.U.P.E.R.P.A.C.M.A.N.型便携式发电机机器板 | S.U.P.E.R.P.A.C.M.A.N.-type portable generator machine board
   components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: PortableGeneratorSuperPacman
-      stackRequirements:
-        Manipulator: 2
-        CableHV: 10
-    - type: PhysicalComposition
-      materialComposition:
-        Glass: 200
-      chemicalComposition:
-        Silicon: 20
-    - type: StaticPrice
-      price: 40
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: PortableGeneratorSuperPacman
+    stackRequirements:
+      Manipulator: 2
+      CableHV: 10
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 200
+    chemicalComposition:
+      Silicon: 20
+  - type: StaticPrice
+    price: 40
 
 - type: entity
   id: PortableGeneratorJrPacmanMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: J.R.P.A.C.M.A.N.-type portable generator machine board
+  name: J.R.P.A.C.M.A.N.型便携式发电机机器板 | J.R.P.A.C.M.A.N.-type portable generator machine board
   components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: PortableGeneratorJrPacman
-      stackRequirements:
-        Manipulator: 1
-        Cable: 10
-    - type: PhysicalComposition
-      materialComposition:
-        Glass: 200
-      chemicalComposition:
-        Silicon: 20
-    - type: StaticPrice
-      price: 40
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: PortableGeneratorJrPacman
+    stackRequirements:
+      Manipulator: 1
+      Cable: 10
+  - type: PhysicalComposition
+    materialComposition:
+      Glass: 200
+    chemicalComposition:
+      Silicon: 20
+  - type: StaticPrice
+    price: 40
 
 - type: entity
   id: ReagentGrinderMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: reagent grinder machine board
-  description: A machine printed circuit board for a reagent grinder.
+  name: 试剂研磨机电路板 | reagent grinder machine board
+  description: 用于试剂研磨机的机器印刷电路板。 | A machine printed circuit board for a reagent grinder.
   components:
-    - type: MachineBoard
-      prototype: KitchenReagentGrinder
-      stackRequirements:
-        Manipulator: 4
-      tagRequirements:
-        GlassBeaker:
-          amount: 1
-          defaultPrototype: Beaker
+  - type: MachineBoard
+    prototype: KitchenReagentGrinder
+    stackRequirements:
+      Manipulator: 4
+    tagRequirements:
+      GlassBeaker:
+        amount: 1
+        defaultPrototype: Beaker
 
 - type: entity
   id: HotplateMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: hotplate machine board
-  description: A machine printed circuit board for a hotplate.
+  name: 加热板机器电路板 | hotplate machine board
+  description: 加热板机器的印刷电路板。 | A machine printed circuit board for a hotplate.
   components:
   - type: Sprite
     state: medical
@@ -943,8 +943,8 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: ElectricGrillMachineCircuitboard
-  name: electric grill machine board
-  description: A machine printed circuit board for an electric grill.
+  name: 电烤架机器板 | electric grill machine board
+  description: 电烤架机器板，用于电烤架。 | A machine printed circuit board for an electric grill.
   components:
   - type: Sprite
     state: service
@@ -958,22 +958,22 @@
 - type: entity
   id: StasisBedMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: stasis bed machine board
+  name: 停滞床机器板 | stasis bed machine board
   components:
-    - type: Sprite
-      state: medical
-    - type: MachineBoard
-      prototype: StasisBed
-      stackRequirements:
-        Manipulator: 2
-        Cable: 3
-        Steel: 2
+  - type: Sprite
+    state: medical
+  - type: MachineBoard
+    prototype: StasisBed
+    stackRequirements:
+      Manipulator: 2
+      Cable: 3
+      Steel: 2
 
 - type: entity
   id: ElectrolysisUnitMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: electrolysis unit machine board
-  description: A machine printed circuit board for an electrolysis unit.
+  name: 电解装置机器板 | electrolysis unit machine board
+  description: 电解装置机器印刷电路板。 | A machine printed circuit board for an electrolysis unit.
   components:
   - type: Sprite
     state: medical
@@ -986,8 +986,8 @@
 - type: entity
   id: CentrifugeMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: centrifuge machine board
-  description: A machine printed circuit board for a centrifuge.
+  name: 离心机机器板 | centrifuge machine board
+  description: 离心机的机器印刷电路板。 | A machine printed circuit board for a centrifuge.
   components:
   - type: Sprite
     state: medical
@@ -1000,7 +1000,7 @@
 - type: entity
   id: MaterialSiloMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: material silo machine board
+  name: 料仓机板 | material silo machine board
   components:
   - type: Sprite
     state: supply
@@ -1013,20 +1013,20 @@
 - type: entity
   id: OreProcessorMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: ore processor machine board
+  name: 矿石加工机板 | ore processor machine board
   components:
-    - type: Sprite
-      state: supply
-    - type: MachineBoard
-      prototype: OreProcessor
-      stackRequirements:
-        Manipulator: 4
-        Glass: 1
+  - type: Sprite
+    state: supply
+  - type: MachineBoard
+    prototype: OreProcessor
+    stackRequirements:
+      Manipulator: 4
+      Glass: 1
 
 - type: entity
   parent: BaseMachineCircuitboard
   id: OreProcessorIndustrialMachineCircuitboard
-  name: industrial ore processor machine board
+  name: 工业矿石处理机电路板 | industrial ore processor machine board
   components:
   - type: Sprite
     state: supply
@@ -1039,7 +1039,7 @@
 - type: entity
   id: SheetifierMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: sheet-meister 2000 machine board
+  name: sheet-meister 2000 机器板 | sheet-meister 2000 machine board
   components:
   - type: MachineBoard
     prototype: Sheetifier
@@ -1049,55 +1049,55 @@
 - type: entity
   id: MicrowaveMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: microwave machine board
+  name: 微波炉主板 | microwave machine board
   components:
-    - type: Sprite
-      state: service
-    - type: MachineBoard
-      prototype: KitchenMicrowave
-      stackRequirements:
-        Manipulator: 1
-        Glass: 2
-        Cable: 2
-    - type: Tag
-      tags:
-      - MicrowaveMachineBoard
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: KitchenMicrowave
+    stackRequirements:
+      Manipulator: 1
+      Glass: 2
+      Cable: 2
+  - type: Tag
+    tags:
+    - MicrowaveMachineBoard
 
 - type: entity
   id: SyndicateMicrowaveMachineCircuitboard
-  parent: [ BaseMachineCircuitboard, BaseSyndicateContraband ]
-  name: donk co. microwave machine board
+  parent: [BaseMachineCircuitboard, BaseSyndicateContraband]
+  name: donk co. 微波炉电路板 | donk co. microwave machine board
   components:
-    - type: Sprite
-      state: service
-    - type: MachineBoard
-      prototype: SyndicateMicrowave
-      stackRequirements:
-        Manipulator: 1
-        Glass: 2
-        Cable: 2
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: SyndicateMicrowave
+    stackRequirements:
+      Manipulator: 1
+      Glass: 2
+      Cable: 2
 
 - type: entity
   id: FatExtractorMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: lipid extractor machine board
+  name: 脂质提取机板 | lipid extractor machine board
   components:
-    - type: Sprite
-      state: service
-    - type: MachineBoard
-      prototype: FatExtractor
-      stackRequirements:
-        Manipulator: 1
-      componentRequirements:
-        Utensil:
-          amount: 1
-          defaultPrototype: ForkPlastic
-          examineName: construction-insert-info-examine-name-utensil
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: FatExtractor
+    stackRequirements:
+      Manipulator: 1
+    componentRequirements:
+      Utensil:
+        amount: 1
+        defaultPrototype: ForkPlastic
+        examineName: construction-insert-info-examine-name-utensil
 
 - type: entity
   parent: BaseMachineCircuitboard
   id: FlatpackerMachineCircuitboard
-  name: Flatpacker 1001 machine board
+  name: 扁平包装机1001机器板 | Flatpacker 1001 machine board
   components:
   - type: MachineBoard
     prototype: MachineFlatpacker
@@ -1108,23 +1108,23 @@
 - type: entity
   id: EmitterCircuitboard
   parent: BaseMachineCircuitboard
-  name: emitter machine board
+  name: 发射器机器板 | emitter machine board
   components:
-    - type: Sprite
-      state: engineering
-    - type: MachineBoard
-      prototype: Emitter
-      stackRequirements:
-        Manipulator: 2
-        CableHV: 5
-        Glass: 2
-        Plasteel: 2
+  - type: Sprite
+    state: engineering
+  - type: MachineBoard
+    prototype: Emitter
+    stackRequirements:
+      Manipulator: 2
+      CableHV: 5
+      Glass: 2
+      Plasteel: 2
 
 - type: entity
   id: SurveillanceCameraRouterCircuitboard
   parent: BaseMachineCircuitboard
-  name: surveillance camera router board
-  description: A machine printed circuit board for a surveillance camera router.
+  name: 监控摄像头路由器板 | surveillance camera router board
+  description: 监控摄像头路由器的机器印刷电路板。 | A machine printed circuit board for a surveillance camera router.
   components:
   - type: Sprite
     state: security
@@ -1136,8 +1136,8 @@
 - type: entity
   id: SurveillanceCameraWirelessRouterCircuitboard
   parent: BaseMachineCircuitboard
-  name: surveillance camera wireless router board
-  description: A machine printed circuit board for a surveillance camera wireless router.
+  name: 监控摄像头无线路由器板 | surveillance camera wireless router board
+  description: 监控摄像头无线路由器用的机器印刷电路板。 | A machine printed circuit board for a surveillance camera wireless router.
   components:
   - type: Sprite
     state: service
@@ -1150,8 +1150,8 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: SurveillanceCameraWirelessRouterXenoborgCircuitboard
-  name: xenoborg camera wireless router
-  description: A machine printed circuit board for a xenoborg camera wireless router.
+  name: 异星生化摄像无线电路由器 | xenoborg camera wireless router
+  description: 异星生化摄像无线电路由器的机器印刷电路板。 | A machine printed circuit board for a xenoborg camera wireless router.
   components:
   - type: Sprite
     state: generic
@@ -1164,8 +1164,8 @@
 - type: entity
   id: SurveillanceWirelessCameraMovableCircuitboard
   parent: BaseMachineCircuitboard
-  name: movable wireless camera board
-  description: A machine printed circuit board for a movable wireless camera.
+  name: 可移动无线摄像头板 | movable wireless camera board
+  description: 可移动无线摄像头的机器印刷电路板。 | A machine printed circuit board for a movable wireless camera.
   components:
   - type: Sprite
     state: service
@@ -1178,8 +1178,8 @@
 - type: entity
   id: SurveillanceWirelessCameraAnchoredCircuitboard
   parent: BaseMachineCircuitboard
-  name: wireless camera board
-  description: A machine printed circuit board for a wireless camera.
+  name: 无线摄像头电路板 | wireless camera board
+  description: 无线摄像头的机器印刷电路板。 | A machine printed circuit board for a wireless camera.
   components:
   - type: Sprite
     state: service
@@ -1192,8 +1192,8 @@
 - type: entity
   id: GasRecyclerMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: gas recycler board
-  description: A printed circuit board for a gas recycler.
+  name: 气体回收器电路板 | gas recycler board
+  description: 气体回收器的印刷电路板。 | A printed circuit board for a gas recycler.
   components:
   - type: Sprite
     state: engineering
@@ -1207,39 +1207,39 @@
 - type: entity
   id: BoozeDispenserMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: booze dispenser machine board
-  description: A machine printed circuit board for a booze dispenser.
+  name: 酒水分配器机器电路板 | booze dispenser machine board
+  description: 酒水分配器的机器印刷电路板。 | A machine printed circuit board for a booze dispenser.
   components:
-    - type: Sprite
-      state: service
-    - type: MachineBoard
-      prototype: BoozeDispenserEmpty
-      stackRequirements:
-        Plastic: 5
-      tagRequirements:
-          GlassBeaker:
-            amount: 1
-            defaultPrototype: Beaker
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: BoozeDispenserEmpty
+    stackRequirements:
+      Plastic: 5
+    tagRequirements:
+      GlassBeaker:
+        amount: 1
+        defaultPrototype: Beaker
 
 - type: entity
   id: CargoTelepadMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: cargo telepad machine board
-  description: A machine printed circuit board for a cargo telepad.
+  name: 货物传送台机器电路板 | cargo telepad machine board
+  description: 货物传送台的机器印刷电路板。 | A machine printed circuit board for a cargo telepad.
   components:
-    - type: Sprite
-      state: supply
-    - type: MachineBoard
-      prototype: CargoTelepad
-      stackRequirements:
-        Manipulator: 2
-        Steel: 5
+  - type: Sprite
+    state: supply
+  - type: MachineBoard
+    prototype: CargoTelepad
+    stackRequirements:
+      Manipulator: 2
+      Steel: 5
 
 - type: entity
   id: MailTeleporterMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: mail teleporter machine board
-  description: A machine printed circuit board for a mail teleporter.
+  name: 邮件传送机机器板 | mail teleporter machine board
+  description: 邮件传送机的机器印刷电路板。 | A machine printed circuit board for a mail teleporter.
   components:
   - type: Sprite
     state: supply
@@ -1252,25 +1252,25 @@
 - type: entity
   id: SodaDispenserMachineCircuitboard
   parent: BaseMachineCircuitboard
-  name: soda dispenser machine board
-  description: A machine printed circuit board for a soda dispenser.
+  name: 汽水机电路板 | soda dispenser machine board
+  description: 汽水机的机器印刷电路板。 | A machine printed circuit board for a soda dispenser.
   components:
-    - type: Sprite
-      state: service
-    - type: MachineBoard
-      prototype: SodaDispenserEmpty
-      stackRequirements:
-        Plastic: 5
-      tagRequirements:
-          GlassBeaker:
-            amount: 1
-            defaultPrototype: Beaker
+  - type: Sprite
+    state: service
+  - type: MachineBoard
+    prototype: SodaDispenserEmpty
+    stackRequirements:
+      Plastic: 5
+    tagRequirements:
+      GlassBeaker:
+        amount: 1
+        defaultPrototype: Beaker
 
 - type: entity
   id: TelecomServerCircuitboard
   parent: BaseMachineCircuitboard
-  name: telecommunication server machine board
-  description: A machine printed circuit board for an telecommunication server.
+  name: 电信服务器机器板 | telecommunication server machine board
+  description: 一种用于电信服务器的机器印刷电路板。 | A machine printed circuit board for an telecommunication server.
   components:
   - type: Sprite
     state: engineering
@@ -1283,8 +1283,8 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: SalvageMagnetMachineCircuitboard
-  name: salvage magnet machine board
-  description: A machine printed circuit board for a salvage magnet.
+  name: 打捞磁铁机器电路板 | salvage magnet machine board
+  description: 打捞磁铁机器的印刷电路板。 | A machine printed circuit board for a salvage magnet.
   components:
   - type: Sprite
     state: supply
@@ -1299,8 +1299,8 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: MiniGravityGeneratorCircuitboard
-  name: mini gravity generator machine board
-  description: A machine printed circuit board for a mini gravity generator.
+  name: 迷你重力发生器机器板 | mini gravity generator machine board
+  description: 迷你重力发生器的机器印刷电路板。 | A machine printed circuit board for a mini gravity generator.
   components:
   - type: Sprite
     state: supply
@@ -1315,8 +1315,8 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: StationAnchorCircuitboard
-  name: station anchor machine board
-  description: A machine printed circuit board for a station anchor.
+  name: 基站锚点机器板 | station anchor machine board
+  description: 用于基站锚点的机器印刷电路板。 | A machine printed circuit board for a station anchor.
   components:
   - type: MachineBoard
     prototype: StationAnchor
@@ -1330,7 +1330,7 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: ReagentGrinderIndustrialMachineCircuitboard
-  name: industrial reagent grinder machine board
+  name: 工业试剂研磨机板 | industrial reagent grinder machine board
   components:
   - type: MachineBoard
     prototype: ReagentGrinderIndustrial
@@ -1341,8 +1341,8 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: JukeboxCircuitBoard
-  name: jukebox machine board
-  description: A machine printed circuit board for a jukebox.
+  name: 点唱机机器电路板 | jukebox machine board
+  description: 点唱机的机器印刷电路板。 | A machine printed circuit board for a jukebox.
   components:
   - type: Sprite
     state: service
@@ -1357,7 +1357,7 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: CutterMachineCircuitboard
-  name: cutter machine board
+  name: 切割机板 | cutter machine board
   components:
   - type: MachineBoard
     prototype: CutterMachine
@@ -1369,8 +1369,8 @@
 - type: entity
   parent: BaseMachineCircuitboard
   id: SmartFridgeCircuitboard
-  name: SmartFridge machine board
-  description: A machine printed circuit board for a SmartFridge.
+  name: 智能冰箱机器板 | SmartFridge machine board
+  description: 智能冰箱的机器印刷电路板。 | A machine printed circuit board for a SmartFridge.
   components:
   - type: Sprite
     state: service
@@ -1380,6 +1380,6 @@
       Glass: 5
       Manipulator: 2
     tagRequirements:
-        GlassBeaker:
-          amount: 2
-          defaultPrototype: Beaker
+      GlassBeaker:
+        amount: 2
+        defaultPrototype: Beaker

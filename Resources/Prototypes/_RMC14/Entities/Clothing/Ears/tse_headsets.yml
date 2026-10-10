@@ -1,16 +1,15 @@
-﻿- type: radioChannel
+- type: radioChannel
   id: TSE
   name: chat-radio-tse
-  keycode: "'" # I hate this
+  keycode: ''''
   frequency: 155.1
-  color: "#9a1228"
+  color: '#9a1228'
   longRange: true
   tower: true
-
 - type: entity
   parent: CMEncryptionKey
   id: RMCEncryptionKeyTSE
-  name: TSE radio encryption key
+  name: TSE无线电加密密钥
   components:
   - type: Sprite
     state: cmp_key
@@ -18,18 +17,16 @@
     channels:
     - TSE
     defaultChannel: TSE
-
 - type: entity
   parent: RMCEncryptionKeyTSE
   id: RMCEncryptionKeyTSEPA
-  name: TSEPA radio encryption key
+  name: TSEPA无线电加密密钥
   components:
   - type: EncryptionKey
     channels:
     - TSE
     - Colony
     defaultChannel: TSE
-
 - type: entity
   abstract: true
   parent: RMCHeadsetIconsTSE
@@ -40,22 +37,19 @@
     trackerModes:
     - InspectorTSEPA
     - SeniorConstableTSEPA
-
-
 - type: entity
   parent: RMCHeadsetTSEAbstract
   id: RMCHeadsetTSE
-  name: TSE headset
+  name: TSE耳机
   components:
   - type: ContainerFill
     containers:
       key_slots:
       - RMCEncryptionKeyTSE
-
 - type: entity
   parent: RMCHeadsetTSEAbstract
   id: RMCHeadsetTSEPA
-  name: TSEPA headset
+  name: TSEPA耳机
   components:
   - type: ContainerFill
     containers:

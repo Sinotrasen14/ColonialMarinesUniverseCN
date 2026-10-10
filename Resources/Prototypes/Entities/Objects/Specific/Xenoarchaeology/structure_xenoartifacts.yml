@@ -1,7 +1,7 @@
 - type: entity
   parent: [BaseStructureDynamic, BaseXenoArtifact]
   id: BaseXenoArtifactStructure
-  name: artifact
+  name: 人工制品 | artifact
   abstract: true
   components:
   # Visual
@@ -11,12 +11,12 @@
     noRot: true
     layers:
     - state: ano30
-      map: [ "enum.ArtifactsVisualLayers.Base" ]
+      map: ["enum.ArtifactsVisualLayers.Base"]
     - state: ano30_on
-      map: [ "enum.ArtifactsVisualLayers.UnlockingEffect" ]
+      map: ["enum.ArtifactsVisualLayers.UnlockingEffect"]
       visible: false
     - state: artifact-activation
-      map: [ "enum.ArtifactsVisualLayers.ActivationEffect" ]
+      map: ["enum.ArtifactsVisualLayers.ActivationEffect"]
       visible: false
   - type: Physics
     bodyType: KinematicController
@@ -31,8 +31,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 75
         layer: # doesn't collide with artifact storage
@@ -43,7 +42,7 @@
 - type: entity
   id: DummyArtifactStructure
   parent: BaseXenoArtifactStructure
-  name: artifact
+  name: 人工制品 | artifact
   suffix: Debug
   components:
   - type: XenoArtifact

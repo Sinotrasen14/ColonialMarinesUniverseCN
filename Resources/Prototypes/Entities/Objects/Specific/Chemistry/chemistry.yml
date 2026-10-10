@@ -9,10 +9,10 @@
   - type: Sprite
     sprite: Objects/Specific/Chemistry/beaker.rsi
     layers:
-      - state: beaker
-      - state: beaker1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
+    - state: beaker
+    - state: beaker1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: Item
     sprite: Objects/Specific/Chemistry/beaker.rsi
   - type: MeleeWeapon
@@ -59,8 +59,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
@@ -77,7 +76,7 @@
             max: 1
         transferForensics: true
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DamageOnLand
     damage:
       types:
@@ -106,10 +105,10 @@
   - type: Sprite
     sprite: Objects/Specific/Chemistry/beaker.rsi
     layers:
-      - state: beaker
-      - state: beaker1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
+    - state: beaker
+    - state: beaker1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: Item
     sprite: Objects/Specific/Chemistry/beaker.rsi
   - type: MeleeWeapon
@@ -159,9 +158,9 @@
   - type: DnaSubstanceTrace
 
 - type: entity
-  name: beaker
+  name: 烧杯 | beaker
   parent: BaseBeaker
-  description: Used to contain a moderate amount of chemicals and solutions.
+  description: 用于盛放适量化学品和溶液。 | Used to contain a moderate amount of chemicals and solutions.
   id: Beaker
   components:
   - type: Spillable
@@ -269,9 +268,9 @@
         Quantity: 60
 
 - type: entity
-  name: large beaker
+  name: 大烧杯 | large beaker
   parent: [SolutionNormal, BaseBeaker]
-  description: Used to contain a large amount of chemicals or solutions.
+  description: 用于盛放大量化学品或溶液。 | Used to contain a large amount of chemicals or solutions.
   id: LargeBeaker
   components:
   - type: Spillable
@@ -279,10 +278,10 @@
   - type: Sprite
     sprite: Objects/Specific/Chemistry/beaker_large.rsi
     layers:
-      - state: beakerlarge
-      - state: beakerlarge1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
+    - state: beakerlarge
+    - state: beakerlarge1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: Item
     size: Normal
     sprite: Objects/Specific/Chemistry/beaker_large.rsi
@@ -299,9 +298,9 @@
     price: 20
 
 - type: entity
-  name: cryostasis beaker
+  name: 冷冻保藏烧杯 | cryostasis beaker
   parent: [SolutionCryo, BaseBeakerMetallic]
-  description: Used to contain chemicals or solutions without reactions.
+  description: 用于盛装化学品或溶液，不会发生反应。 | Used to contain chemicals or solutions without reactions.
   id: CryostasisBeaker
   components:
   - type: Spillable
@@ -309,14 +308,14 @@
   - type: Sprite
     sprite: Objects/Specific/Chemistry/beaker_cryostasis.rsi
     layers:
-      - state: beakernoreact
+    - state: beakernoreact
   - type: SolutionContainerVisuals
     maxFillLevels: 0
 
 - type: entity
-  name: bluespace beaker
+  name: 蓝空间烧杯 | bluespace beaker
   parent: [SolutionGinormous, BaseBeakerMetallic] # Bluespace items hold 8x the solution of regular items (240u a tile)
-  description: Powered by experimental bluespace technology.
+  description: 由实验性蓝空间技术驱动。 | Powered by experimental bluespace technology.
   id: BluespaceBeaker
   components:
   - type: Spillable
@@ -324,25 +323,25 @@
   - type: Sprite
     sprite: Objects/Specific/Chemistry/beaker_bluespace.rsi
     layers:
-      - state: beakerbluespace
+    - state: beakerbluespace
   - type: SolutionContainerVisuals
     maxFillLevels: 0
   - type: Item
     size: Normal
 
 - type: entity
-  name: dropper
+  name: 滴管 | dropper
   parent: [SolutionInjector, SolutionToolTiny, BaseItem]
-  description: Used to transfer small amounts of chemical solution between containers.
+  description: 用于在容器之间转移少量化学溶液。 | Used to transfer small amounts of chemical solution between containers.
   id: Dropper
   components:
   - type: Sprite
     sprite: Objects/Specific/Chemistry/dropper.rsi
     layers:
-      - state: dropper
-      - state: dropper1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
+    - state: dropper
+    - state: dropper1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: Injector
     ignoreMobs: true
     ignoreClosed: false
@@ -379,34 +378,34 @@
 - type: entity
   parent: Dropper
   id: BorgDropper
-  name: hydraulic pipette
-  description: State-of-the-art hydraulic dropper built for cyborgs.
+  name: 液压移液管 | hydraulic pipette
+  description: 为赛博格打造的最先进液压滴管。 | State-of-the-art hydraulic dropper built for cyborgs.
   components:
   - type: Sprite
     sprite: Objects/Specific/Chemistry/dropper.rsi
     layers:
-      - state: borgdropper
-      - state: dropper1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
+    - state: borgdropper
+    - state: dropper1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: Item
     sprite: Objects/Specific/Chemistry/dropper.rsi
 
 - type: entity
-  name: syringe
+  name: 注射器 | syringe
   parent: [SolutionInjector, SolutionToolTiny, BaseItem]
-  description: Used to draw blood samples from mobs, or to inject them with reagents.
+  description: 用于从生物身上抽取血液样本，或向其注射试剂。 | Used to draw blood samples from mobs, or to inject them with reagents.
   id: BaseSyringe
   abstract: true
   components:
   - type: Sprite
     sprite: Objects/Specific/Chemistry/syringe.rsi
     layers:
-      - state: syringe1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
-      - state: syringe_base0
-        map: ["enum.SolutionContainerLayers.Base"]
+    - state: syringe1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: syringe_base0
+      map: ["enum.SolutionContainerLayers.Base"]
   - type: Icon
     sprite: Objects/Specific/Chemistry/syringe.rsi
     state: "syringe_base0"
@@ -445,18 +444,18 @@
     - Trash
 
 - type: entity
-  name: mini syringe
+  name: 迷你注射器 | mini syringe
   parent: [SolutionToolVeryTiny, Syringe]
-  description: A regular syringe, reshaped to fit inside of a gun.
+  description: 一把普通注射器，经过改造以适配枪械内部。 | A regular syringe, reshaped to fit inside of a gun.
   id: MiniSyringe
   components:
   - type: Sprite
     sprite: Objects/Specific/Chemistry/syringe.rsi
     layers:
-      - state: minisyringe1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
-      - state: syringeproj
+    - state: minisyringe1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+    - state: syringeproj
   - type: SolutionContainerVisuals
     maxFillLevels: 3
     fillBaseName: minisyringe
@@ -485,8 +484,7 @@
         restitution: 0.3
         friction: 0.2
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.3,0.1,0.3"
         hard: false
         mask:
@@ -515,8 +513,8 @@
 - type: entity
   id: SyringeBluespace
   parent: [SolutionToolLarge, BaseSyringe]
-  name: bluespace syringe
-  description: Injecting with advanced bluespace technology.
+  name: 蓝空间注射器 | bluespace syringe
+  description: 使用先进蓝空间技术进行注射。 | Injecting with advanced bluespace technology.
   components:
   - type: Sprite
     layers:
@@ -544,8 +542,8 @@
 - type: entity
   id: SyringeCryostasis
   parent: [SolutionCryo, BaseSyringe]
-  name: cryostasis syringe
-  description: A syringe used to contain chemicals or solutions without reactions.
+  name: 低温休眠注射器 | cryostasis syringe
+  description: 用于盛装化学物质或溶液而不发生反应的注射器。 | A syringe used to contain chemicals or solutions without reactions.
   components:
   - type: Sprite
     layers:
@@ -563,10 +561,10 @@
     - Trash
 
 - type: entity
-  name: pill
+  name: 药丸 | pill
   parent: [SolutionPill, BaseItem]
   id: Pill
-  description: It's not a suppository.
+  description: 这不是栓剂。 | It's not a suppository.
   components:
   - type: Sprite
     sprite: Objects/Specific/Chemistry/pills.rsi
@@ -578,7 +576,7 @@
   - type: Edible
     delay: 0.6
     forceFeedDelay: 2
-    transferAmount: null
+    transferAmount:
     edible: Pill
   - type: BadFood
   - type: FlavorProfile
@@ -590,14 +588,13 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 10
       behaviors:
       - !type:SpillBehavior
         solution: food
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: SolutionSpiker
     sourceSolution: food
   - type: Extractable
@@ -619,10 +616,10 @@
       maxVol: 20
 
 - type: entity
-  name: pill canister
+  name: 药丸罐 | pill canister
   id: PillCanister
   parent: BaseStorageItem
-  description: Holds up to 10 pills.
+  description: 最多可容纳10粒药丸。 | Holds up to 10 pills.
   components:
   - type: Item
     size: Tiny
@@ -632,7 +629,7 @@
     state: pill_canister
   - type: Tag
     tags:
-      - PillCanister
+    - PillCanister
   - type: Storage
     grid:
     - 0,0,4,1

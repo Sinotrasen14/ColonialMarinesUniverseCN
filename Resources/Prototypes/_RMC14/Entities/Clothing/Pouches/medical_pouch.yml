@@ -1,8 +1,10 @@
 - type: entity
-  parent: [RMCPouchOpenClosed, RMCPouchStorage]
+  parent:
+  - RMCPouchOpenClosed
+  - RMCPouchStorage
   id: RMCPouchMedical
-  name: medical pouch
-  description: It can carry small medical supplies.
+  name: 医疗袋
+  description: 它可以携带小型医疗用品。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Pouches/medical.rsi
@@ -14,7 +16,7 @@
   - type: Storage
     maxItemSize: Large
     grid:
-    - 0,0,13,1 #7 slots
+    - 0,0,13,1
     whitelist:
       tags:
       - DiscreteHealthAnalyzer
@@ -28,7 +30,6 @@
       - CMOintment
       - Brutepack
       - CMBloodPack
-      #      - TODO RMC14 splint
       - RMCPenlight
       - CMAutoInjector
       - CMFireExtinguisherPortable
@@ -41,7 +42,6 @@
       - Hypospray
       - Defibrillator
   - type: FixedItemSizeStorage
-
 - type: entity
   parent: RMCPouchMedical
   id: RMCPouchMedicalFill
@@ -50,10 +50,8 @@
   - type: StorageFill
     contents:
     - id: CMHealthAnalyzer
-      # splint
     - id: CMBurnKit10
     - id: CMTraumaKit10
-
 - type: entity
   parent: RMCPouchMedical
   id: RMCPouchMedicalPills
@@ -61,11 +59,9 @@
   components:
   - type: StorageFill
     contents:
-    # TODO RMC14 pill bottle tramadol
     - id: CMPillCanisterBicaridine
     - id: CMPillCanisterKelotane
     - id: CMPillCanisterDexalin
-
 - type: entity
   parent: RMCPouchMedical
   id: RMCPouchMedicalERT

@@ -1,33 +1,35 @@
-# SPP armors
 - type: entity
   parent: CMArmorM3Medium
   id: RMCArmorSPP
-  name: UM5 personal armor
-  description: Standard body armor of the UPP military, the UM5 (Union Medium MK5) is a medium body armor, roughly on par with the M3 pattern body armor in service with the UNMC, specialized towards ballistics protection. Unlike the M3, however, the plate has a heavier neckplate. This has earned many UN members to refer to UPP soldiers as 'tin men'.
+  name: UM5个人护甲
+  description: Standard body armor of the UPP military, the UM5 (Union Medium MK5)
+    is a medium body armor, roughly on par with the M3 pattern body armor in service
+    with the UNMC, specialized towards ballistics protection. Unlike the M3, however,
+    the plate has a heavier neckplate. This has earned many UN members to refer to
+    UPP soldiers as 'tin men'.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/spp.rsi
   - type: CMArmor
-    bullet: 30 # CLOTHING_ARMOR_HIGH
-    bio: 15 # CLOTHING_ARMOR_MEDIUMLOW
-    explosionArmor: 20 # CLOTHING_ARMOR_MEDIUM
+    bullet: 30
+    bio: 15
+    explosionArmor: 20
   - type: RMCArmorSpeedTier
     speedTier: medium
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_MEDIUM
+  - type: ClothingSpeedModifier
     walkModifier: 0.666
     sprintModifier: 0.666
   - type: Storage
     grid:
-    - 0,0,1,1 # 1 slot
+    - 0,0,1,1
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: ClothingRequireEquipped
     autoUnequip: true
     denyReason: rmc-armor-not-spp-jumpsuit
     whitelist:
       tags:
       - RMCUniformSPP
-
 - type: entity
   parent: RMCArmorSPP
   id: RMCArmorSPPRifleman
@@ -36,31 +38,29 @@
   - type: StorageFill
     contents:
     - id: RMCBinoculars
-
 - type: entity
   parent: RMCArmorSPP
   id: RMCArmorSPPSupport
-  name: UL6 personal armor
-  description: Standard body armor of the UPP military, the UL6 (Union Light MK6) is a light body armor, slightly weaker than the M3 pattern body armor in service with the UNMC, specialized towards ballistics protection. This set of personal armor lacks the iconic neck piece and some of the armor in favor of user mobility.
+  name: UL6个人护甲
+  description: UPP军队的标准护甲，UL6（Union Light MK6）是一种轻型护甲，比UNMC现役的M3制式护甲稍弱，专门偏向弹道防护。这套个人护甲为了使用者的机动性，舍弃了标志性的颈部护件和部分护甲。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/support.rsi
   - type: CMArmor
-    melee: 30 # CLOTHING_ARMOR_HIGH
+    melee: 30
   - type: RMCArmorSpeedTier
     speedTier: light
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+  - type: ClothingSpeedModifier
     walkModifier: 0.725
     sprintModifier: 0.725
   - type: Storage
     grid:
-    - 0,0,5,1 # 3 slots
-
+    - 0,0,5,1
 - type: entity
   parent: RMCArmorSPPSupport
   id: RMCArmorSPPSupportSynth
-  name: UPP UL6 synthetic personal armor
-  description: Modified variant of the UL6 personal armor system intended to be usable by Synthetic units. Offers no protection but very little movement impairment.
+  name: UPP UL6 合成人个人装甲
+  description: UL6 个人装甲系统的改装型号，旨在供合成人单位使用。不提供防护，但对移动的影响极小。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/support.rsi
@@ -68,58 +68,58 @@
     equipDelay: 1
     unequipDelay: 0.5
   - type: CMArmor
-    melee: 0 # CLOTHING_ARMOR_NONE
+    melee: 0
     bullet: 0
     bio: 0
     explosionArmor: 0
   - type: RMCArmorSpeedTier
     speedTier: very light
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_VERY_LIGHT
+  - type: ClothingSpeedModifier
     walkModifier: 0.897
     sprintModifier: 0.897
-
 - type: entity
   parent: RMCArmorSPP
   id: RMCArmorSPPCommando
-  name: UPP UM5CU personal armor
-  description: A modification of the UM5, designed for stealth operations.
+  name: UPP UM5CU 个人装甲
+  description: UM5 的改进型，专为潜行行动设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/commando.rsi
   - type: RMCArmorSpeedTier
     speedTier: light
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+  - type: ClothingSpeedModifier
     walkModifier: 0.725
     sprintModifier: 0.725
   - type: Tag
     tags:
-      - RMCScoutArmor
+    - RMCScoutArmor
   - type: Storage
     grid:
-    - 0,0,3,1 # 2 slots
-
+    - 0,0,3,1
 - type: entity
   parent: RMCArmorSPP
   id: RMCArmorSPPHeavy
-  name: UH7 heavy plated armor
-  description: An extremely heavy-duty set of body armor in service with the SPP military, the UH7 (Union Heavy MK7) is known for having powerful ballistic protection, alongside a noticeable neck guard, fortified in order to allow the wearer to endure the stresses of the bulky helmet.
+  name: UH7重型板甲
+  description: An extremely heavy-duty set of body armor in service with the SPP military,
+    the UH7 (Union Heavy MK7) is known for having powerful ballistic protection, alongside
+    a noticeable neck guard, fortified in order to allow the wearer to endure the
+    stresses of the bulky helmet.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/heavy.rsi
   - type: RMCArmorSpeedTier
     speedTier: heavy
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_HEAVY
+  - type: ClothingSpeedModifier
     walkModifier: 0.62
     sprintModifier: 0.62
   - type: CMArmor
-    melee: 25 # CLOTHING_ARMOR_MEDIUMHIGH (melee)
-    bullet: 35 # CLOTHING_ARMOR_HIGHPLUS (bullets)
-    bio: 20 # CLOTHING_ARMOR_MEDIUM
-    explosionArmor: 30 # CLOTHING_ARMOR_HIGH
+    melee: 25
+    bullet: 35
+    bio: 20
+    explosionArmor: 30
   - type: Storage
     grid:
-    - 0,0,5,1 # 3 slots
-
+    - 0,0,5,1
 - type: entity
   parent: RMCArmorSPPHeavy
   id: RMCArmorSPPHeavySpecialist
@@ -133,12 +133,11 @@
     contents:
     - id: RMCMagazineLMGQYJ72
       amount: 3
-
 - type: entity
   parent: CMArmorM3Medium
   id: RMCArmorSPPArmy
-  name: 6B80 personal body armor
-  description: An older UPP personal armor system that's since been replaced by the UPP Army Standard 6B90 body armor. It is still used by certain UPP Army units that the UPP doesn't expect to see much combat.
+  name: 6B80单兵护甲
+  description: 一种较旧的UPP单兵护甲系统，后来已被UPP陆军标准6B90护甲取代。某些UPP陆军部队仍在使用它，UPP预计这些部队不会参与太多战斗。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/army.rsi
@@ -146,31 +145,26 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/army.rsi
   - type: RMCArmorSpeedTier
     speedTier: light
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+  - type: ClothingSpeedModifier
     walkModifier: 0.725
     sprintModifier: 0.725
   - type: CMArmor
-    melee: 30 # CLOTHING_ARMOR_MEDIUMLOW
-    bullet: 15 # CLOTHING_ARMOR_MEDIUM
-    #energy: 15 # CLOTHING_ARMOR_MEDIUMLOW
-    #rad: 20 # CLOTHING_ARMOR_MEDIUM
-    explosionArmor: 15 # CLOTHING_ARMOR_MEDIUMLOW
-    #internal: 20 # CLOTHING_ARMOR_MEDIUM
+    melee: 30
+    bullet: 15
+    explosionArmor: 15
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: ClothingRequireEquipped
     autoUnequip: true
     denyReason: rmc-armor-not-spp-jumpsuit
     whitelist:
       tags:
       - RMCUniformSPP
-
-# SPP coats
 - type: entity
   parent: RMCCoatBureauDeputy
   id: RMCCoatSPP
-  name: UPP UL4 officer jacket
-  description: A lightweight jacket, issued to officers of the UPP's military. Slightly protective from incoming damage, best off with proper armor however.
+  name: UPP UL4军官夹克
+  description: 一种轻型夹克，配发给UPP军队的军官。对来袭伤害有轻微防护作用，不过最好还是搭配适当的护甲。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/officer.rsi
@@ -186,14 +180,13 @@
     worn: false
   - type: Storage
     grid:
-    - 0,0,5,1 # 3 slots
+    - 0,0,5,1
   - type: FixedItemSizeStorage
-
 - type: entity
   parent: RMCCoatBureauDeputy
   id: RMCCoatSPPSenior
-  name: UPP UL4 senior officer jacket
-  description: A lightweight jacket, issued to senior officers of the UPP's military. Made of high-quality materials, even going as far as having the ranks and insignia of the Kapitan and their Company emblazoned on the shoulders and front of the jacket. Slightly protective from incoming damage, best off with proper armor however.
+  name: UPP UL4 高级军官夹克
+  description: 一件轻便夹克，配发给UPP军方的高级军官。采用高品质材料制成，甚至在夹克肩部和前部绣有上尉及其连队的军衔和徽章。对来袭伤害有轻微防护作用，不过最好还是搭配正规护甲。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/senior.rsi
@@ -206,13 +199,12 @@
     explosionArmor: 10
   - type: Storage
     grid:
-    - 0,0,7,1 # 4 slots
-
+    - 0,0,7,1
 - type: entity
   parent: RMCCoatSPPSenior
   id: RMCCoatSPPMP
-  name: UPP UL4 camouflaged jacket
-  description: A lightweight jacket, issued to troops when they're not expected to engage in combat. Still studded to the brim with kevlar shards, though the synthread construction reduces its effectiveness.
+  name: UPP UL4 迷彩夹克
+  description: 一件轻型夹克，配发给预计不会
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/mp.rsi
@@ -223,7 +215,6 @@
     bullet: 10
     bio: 10
     explosionArmor: 10
-
 - type: entity
   parent: RMCCoatSPPSenior
   id: RMCCoatSPPSeniorFilled
@@ -233,12 +224,11 @@
     contents:
     - id: RMCRangefinder
     - id: CMGauze10
-
 - type: entity
   parent: RMCCoatBureauDeputy
   id: RMCCoatOfficerShortWhite
   name: SPP UL5-W
-  description: A somewhat armored jacket that is primarily utilised by Naval or Marine Infantry COs.
+  description: 一件略具装甲防护的夹克，主要由海军或海军陆战队步兵指挥官使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/kommisarwhitecoat.rsi
@@ -251,35 +241,32 @@
     explosionArmor: 10
   - type: Storage
     grid:
-    - 0,0,5,1 # 3 slots
-
+    - 0,0,5,1
 - type: entity
   parent: RMCCoatOfficerShortWhite
   id: RMCCoatOfficerLongWhite
-  name:  SPP UL5-W Shinel
-  description: A longer variant of the Naval UL5-W jacket found mainly during ceremonial functions and the winter months. Primarily used by COs.
+  name: SPP UL5-W 军大衣
+  description: 海军 UL5-W 夹克的长款变体，主要见于礼仪活动和冬季。主要由指挥官使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/kommisarwhiteshinel.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/kommisarwhiteshinel.rsi
-
 - type: entity
   parent: RMCCoatOfficerShortWhite
   id: RMCCoatKommissarShortBlack
   name: SPP UL5-B
-  description: A somewhat armored jacket that is primarily utilised by Political Kommisars, reminds you of october.
+  description: 一件略带护甲的夹克，主要供政治委员使用，会让你想起十月。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/kommisarblackcoat.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/kommisarblackcoat.rsi
-
 - type: entity
   parent: RMCCoatOfficerShortWhite
   id: RMCCoatKommissarLongBlack
-  name:  SPP UL5-B Shinel
-  description: A longer variant of the Naval UPL5-B jacket found mainly during ceremonial functions and the winter months, this black variant is most common during celebrations of the founding of the SPP, it reminds you of october.
+  name: SPP UL5-B 军大衣
+  description: 海军 UPL5-B 夹克的长款变体，主要出现在仪式活动和冬季，这款黑色变体在 SPP 成立庆典期间最为常见，让你想起十月。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/kommisarblackshinel.rsi

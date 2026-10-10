@@ -1,8 +1,8 @@
 - type: entity
-  name: baseball bat
+  name: 棒球棒 | baseball bat
   parent: [BaseItem, BaseMinorContraband]
   id: BaseBallBat
-  description: A robust baseball bat.
+  description: 一根结实的棒球棒。 | A robust baseball bat.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/baseball_bat.rsi
@@ -48,10 +48,10 @@
     - BaseballBat
 
 - type: entity
-  name: incomplete baseball bat
+  name: 不完整的棒球棒 | incomplete baseball bat
   parent: BaseItem
   id: IncompleteBaseBallBat
-  description: A few planks of wood stuck together.
+  description: 几块粘在一起的木板。 | A few planks of wood stuck together.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Melee/incomplete_bat.rsi
@@ -69,11 +69,11 @@
     node: incompleteBat
 
 - type: entity
-  name: knockback stick
+  name: 击退棒 | knockback stick
   parent: BaseBallBat
   id: WeaponMeleeKnockbackStick
-  description: And then he spleefed all over.
-  categories: [ DoNotMap ]
+  description: 然后他到处玩起了挖脚下。 | And then he spleefed all over.
+  categories: [DoNotMap]
   components:
   - type: MeleeThrowOnHit
   - type: MeleeWeapon

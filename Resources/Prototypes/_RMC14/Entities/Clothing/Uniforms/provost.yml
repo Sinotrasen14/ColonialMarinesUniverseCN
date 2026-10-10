@@ -1,9 +1,10 @@
-
 - type: entity
-  parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
+  parent:
+  - RMCMarineUniformBase
+  - RMCFoldableUniformBase
   id: CMJumpsuitProvost
-  name: provost uniform
-  description: The crisp uniform of a Provost Officer.
+  name: 宪兵制服
+  description: 宪兵军官笔挺的制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Provost/officer.rsi
@@ -19,40 +20,35 @@
     - RMCUniformMP
     - RMCUniformWarden
     - RMCUniformCMP
-
 - type: entity
   parent: CMJumpsuitProvost
   id: CMJumpsuitProvostCI
-  name: provost uniform # Not sure what this should be called
-  description: The crisp uniform of a Provost Officer.
+  name: 宪兵制服
+  description: 宪兵军官笔挺的制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Provost/ci.rsi
-
 - type: entity
   parent: CMJumpsuitProvost
   id: CMJumpsuitProvostSenior
-  name: provost senior uniform
-  description: The crisp uniform of a senior member of the Provost Office.
+  name: 教务长办公室高级成员制服
+  description: 教务长办公室高级成员穿着的笔挺制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Provost/senior.rsi
-
 - type: entity
   parent: CMJumpsuitProvost
   id: CMJumpsuitProvostMarshal
-  name: provost marshal uniform
-  description: The crisp uniform of a Provost Marshal.
+  name: 宪兵司令制服
+  description: 宪兵司令笔挺的制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Provost/marshal.rsi
-
-
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitProvostAgent
-  name: special agent uniform
-  description: A modified Provost uniform, with its original insignia replaced by those of the Intelligence Service. Special Agents are often recruited from the upper echelons of law enforcement agencies in various armed forces. These recruits often take all their gear, uniform included with them and later modify them to include intelligence service insignia.
+  name: 特工制服
+  description: 一件经过改装的宪兵制服，其原有徽章已被替换为情报局的徽章。特工通常从各武装部队执法机构的高层中招募。这些新招募者往往会把包括制服在内的全部装备一并带来，随后将其改装并加上情报局徽章。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Provost/agent.rsi

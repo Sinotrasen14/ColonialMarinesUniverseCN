@@ -17,10 +17,10 @@
     sound: *SoundSportsBounce
 
 - type: entity
-  parent: [ BaseItem, BaseSportsBall ]
+  parent: [BaseItem, BaseSportsBall]
   id: Basketball
-  name: basketball
-  description: Where dah courts at?
+  name: 篮球 | basketball
+  description: 篮球场在哪里？ | Where dah courts at?
   components:
   - type: Sprite
     sprite: Objects/Fun/Balls/basketball.rsi
@@ -42,10 +42,10 @@
     modifier: 0.5
 
 - type: entity
-  parent: [ BaseItem, BaseSportsBall ]
+  parent: [BaseItem, BaseSportsBall]
   id: Football
-  name: football
-  description: Otherwise known as a handegg.
+  name: 橄榄球 | football
+  description: 也称为手蛋。 | Otherwise known as a handegg.
   components:
   - type: Sprite
     sprite: Objects/Fun/Balls/football.rsi
@@ -65,10 +65,10 @@
     sprite: Objects/Fun/Balls/football.rsi
 
 - type: entity
-  parent: [ BaseItem, BaseSportsBall ]
+  parent: [BaseItem, BaseSportsBall]
   id: TennisBall
-  name: tennis ball
-  description: A fuzzy orb of endless betrayal.
+  name: 网球 | tennis ball
+  description: 一个毛茸茸的球体，无尽的背叛。 | A fuzzy orb of endless betrayal.
   components:
   - type: Sprite
     sprite: Objects/Fun/Balls/tennisball.rsi
@@ -99,10 +99,10 @@
     - PetWearable
 
 - type: entity
-  parent: [ BaseItem, BaseSportsBall ]
+  parent: [BaseItem, BaseSportsBall]
   id: BeachBall
-  name: beach ball
-  description: The simple beach ball is one of Nanotrasen's most popular products. 'Why do we make beach balls? Because we can! (TM)' - Nanotrasen
+  name: 沙滩球 | beach ball
+  description: 简单的沙滩球是纳米传思最受欢迎的产品之一。“我们为什么制造沙滩球？因为我们能！（TM）”——纳米传思 | The simple beach ball is one of Nanotrasen's most popular products. 'Why do we make beach balls? Because we can! (TM)' - Nanotrasen
   components:
   - type: Sprite
     sprite: Objects/Fun/Balls/beach_ball.rsi
@@ -128,7 +128,7 @@
   parent: BeachBall
   id: EvilBeachBall
   suffix: EVIL/ADMEME
-  description: Someone's drawn ">:3c" on the side of this beach ball in indelible ink.
+  description: 有人在沙滩球的一侧用不褪色墨水画了“>:3c”。 | Someone's drawn ">:3c" on the side of this beach ball in indelible ink.
   components:
   - type: Fixtures
     fixtures:

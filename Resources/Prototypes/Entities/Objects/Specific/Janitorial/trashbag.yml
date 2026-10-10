@@ -1,13 +1,13 @@
 - type: entity
-  name: trash bag
+  name: 垃圾袋 | trash bag
   id: TrashBag
   parent: BaseStorageItem
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/trashbag.rsi
     layers:
-      - state: icon-0
-        map: ["enum.StorageFillLayers.Fill"]
+    - state: icon-0
+      map: ["enum.StorageFillLayers.Fill"]
   - type: Storage
     maxItemSize: Normal
     grid:
@@ -20,7 +20,7 @@
       collection: trashBagRustle
     whitelist:
       tags:
-        - Trash
+      - Trash
   - type: UseDelay
     delay: 0.5
   - type: Tag
@@ -41,13 +41,13 @@
 - type: entity
   id: TrashBagHolding
   parent: TrashBag
-  name: trash bag of holding
-  description: A trash bag that opens into a localized pocket of bluespace.
+  name: 次元垃圾袋 | trash bag of holding
+  description: 一个通向局部蓝空间口袋的次元垃圾袋。 | A trash bag that opens into a localized pocket of bluespace.
   components:
   - type: Sprite
     layers:
-      - state: blue-icon-0
-        map: ["enum.StorageFillLayers.Fill"]
+    - state: blue-icon-0
+      map: ["enum.StorageFillLayers.Fill"]
   - type: Item
     heldPrefix: blue
   - type: StorageFillVisualizer
@@ -70,8 +70,8 @@
 - type: entity
   parent: TrashBag
   id: BorgTrashBag
-  name: internal trash bag
-  description: An upgraded trash bag with a larger internal volume, installed directly into a custodial cyborg.
+  name: 内部垃圾袋 | internal trash bag
+  description: 一种升级版垃圾袋，内部容量更大，直接安装到保管生化人内部。 | An upgraded trash bag with a larger internal volume, installed directly into a custodial cyborg.
   components:
   - type: Storage
     maxItemSize: Huge

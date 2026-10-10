@@ -1,23 +1,23 @@
 - type: entity
   id: AirAlarmElectronics
   parent: BaseElectronics
-  name: air alarm electronics
-  description: An electronics board used in air alarms.
+  name: 空气警报电子设备 | air alarm electronics
+  description: 用于空气警报的电子设备板。 | An electronics board used in air alarms.
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
     state: airalarm_electronics
   - type: Tag
     tags:
-      - AirAlarmElectronics
+    - AirAlarmElectronics
   - type: StaticPrice
     price: 61
 
 - type: entity
   id: FireAlarmElectronics
   parent: BaseElectronics
-  name: fire alarm electronics
-  description: An electronics board used in fire alarms.
+  name: 火灾报警电子设备 | fire alarm electronics
+  description: 用于火灾报警的电子设备板。 | An electronics board used in fire alarms.
   components:
   - type: Item
     storedRotation: 0
@@ -26,6 +26,6 @@
     state: airalarm_electronics
   - type: Tag
     tags:
-      - FireAlarmElectronics
+    - FireAlarmElectronics
   - type: StaticPrice
     price: 61

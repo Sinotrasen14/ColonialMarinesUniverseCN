@@ -5,13 +5,13 @@
   abstract: true
   parent: [SolutionVeryTiny, FoodInjectableBase]
   id: FoodBagelBase
-  description: A delicious bagel.
+  description: 一个美味的百吉饼。 | A delicious bagel.
   components:
   - type: Item
     size: Tiny
   - type: FlavorProfile
     flavors:
-      - bread
+    - bread
   - type: Sprite
     sprite: Objects/Consumable/Food/Baked/bagel.rsi
     state: bagel
@@ -24,18 +24,18 @@
 - type: entity
   parent: FoodBagelBase
   id: FoodBagel
-  name: bagel
+  name: 百吉饼 | bagel
 
 - type: entity
   parent: FoodBagelBase
   id: FoodBagelPoppy
-  name: poppy seed bagel
-  description: A delicious bagel topped with bicaridine-infused poppy seeds.
+  name: 罂粟籽百吉饼 | poppy seed bagel
+  description: 一个美味的百吉饼，上面撒有注入比卡立定的罂粟籽。 | A delicious bagel topped with bicaridine-infused poppy seeds.
   components:
   - type: FlavorProfile
     flavors:
-      - bread
-      - medicine
+    - bread
+    - medicine
   - type: Sprite
     state: bagel-poppy
   - type: Solution
@@ -49,8 +49,8 @@
 - type: entity
   parent: FoodBagelBase
   id: FoodBagelCotton
-  name: cotton bagel
-  description: A delicious bagel made with cotton dough.
+  name: 棉花贝果 | cotton bagel
+  description: 一种用棉花面团制成的美味贝果。 | A delicious bagel made with cotton dough.
   components:
   - type: FlavorProfile
     flavors:

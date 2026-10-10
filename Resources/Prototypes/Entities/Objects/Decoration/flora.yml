@@ -4,8 +4,8 @@
 - type: entity
   abstract: true
   id: BaseRock
-  name: boulder
-  description: Heavy as a really heavy thing.
+  name: 巨石 | boulder
+  description: 重得像一块非常重的巨石。 | Heavy as a really heavy thing.
   components:
   - type: Clickable
   - type: Sprite
@@ -16,8 +16,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.4
         density: 1000
         layer:
@@ -29,7 +28,7 @@
   abstract: true
   parent: StructureHealthFurnitureStrong
   id: BaseTree
-  description: Yep, it's a tree.
+  description: 是的，这是一棵树。 | Yep, it's a tree.
   components:
   - type: SpriteFade
   - type: Clickable
@@ -43,8 +42,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.4,0.35,0.4"
         density: 1000
         layer:
@@ -64,8 +62,7 @@
     damageContainer: StructuralBiological
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior
@@ -93,8 +90,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.3,0.1,0.3"
         density: 4000
         layer:
@@ -111,8 +107,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.18,-0.35,0.18,0.35"
         density: 2000
         layer:
@@ -129,8 +124,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.35,0.1,0.35"
         density: 3500
         layer:
@@ -140,7 +134,7 @@
 #region Rocks
 
 - type: entity
-  parent: [ BaseRock, StructureHealthFurnitureStrong ]
+  parent: [BaseRock, StructureHealthFurnitureStrong]
   id: FloraRockSolid
   components:
   - type: Sprite
@@ -157,8 +151,7 @@
     damageModifierSet: RockMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior
@@ -166,17 +159,16 @@
           path: /Audio/Effects/break_stone.ogg
 
 - type: entity
-  parent: [ BaseRock, StructureHealthFurnitureWeak ]
+  parent: [BaseRock, StructureHealthFurnitureWeak]
   id: FloraStalagmite
-  name: stalagmite
-  description: Natural stone spikes.
+  name: 石笋 | stalagmite
+  description: 天然石刺。 | Natural stone spikes.
   components:
   - type: Damageable
     damageModifierSet: RockMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
@@ -222,7 +214,7 @@
 - type: entity
   parent: BaseTree
   id: FloraTree
-  name: tree
+  name: 树 | tree
   components:
   - type: Sprite
     layers:
@@ -241,7 +233,7 @@
 - type: entity
   parent: BaseTreeSnow
   id: FloraTreeSnow
-  name: snowy tree
+  name: 雪树 | snowy tree
   components:
   - type: Sprite
     layers:
@@ -260,7 +252,7 @@
 - type: entity
   parent: BaseTreeSnow
   id: FloraTreeStump
-  name: tree stump
+  name: 树桩 | tree stump
   components:
   - type: Sprite
     state: treestump
@@ -268,7 +260,7 @@
 - type: entity
   parent: BaseTreeLarge
   id: FloraTreeLarge
-  name: large tree
+  name: 大树 | large tree
   components:
   - type: Sprite
     layers:
@@ -287,7 +279,7 @@
 - type: entity
   parent: BaseTreeConifer
   id: FloraTreeConifer
-  name: snowy conifer
+  name: 雪中针叶树 | snowy conifer
   components:
   - type: Sprite
     layers:
@@ -303,7 +295,7 @@
 - type: entity
   parent: BaseTreeConifer
   id: FloraTreeChristmas01
-  name: christmas tree
+  name: 圣诞树 | christmas tree
   components:
   - type: Sprite
     state: treechristmas01
@@ -312,29 +304,28 @@
   parent: BaseTreeConifer
   id: FloraTreeChristmas02
   suffix: Safe Presents
-  name: christmas tree
+  name: 圣诞树 | christmas tree
   components:
   - type: Sprite
     state: treechristmas02
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,0,0.5,0.75"
         density: 4500
         layer:
         - WallLayer
   - type: LimitedItemGiver
     spawnEntries:
-      - id: PresentRandom
-        orGroup: present
-      - id: PresentRandomCash # buy your own.
-        prob: 0.1
-        orGroup: present
-      - id: PresentRandomCoal # naughty
-        prob: 0.05
-        orGroup: present
+    - id: PresentRandom
+      orGroup: present
+    - id: PresentRandomCash   # buy your own.
+      prob: 0.1
+      orGroup: present
+    - id: PresentRandomCoal   # naughty
+      prob: 0.05
+      orGroup: present
     receivedPopup: christmas-tree-got-gift
     deniedPopup: christmas-tree-no-gift
     requiredHoliday: FestiveSeason
@@ -343,23 +334,23 @@
   parent: FloraTreeChristmas02
   id: FloraTreeChristmas03
   suffix: Insane Presents
-  name: christmas tree
+  name: 圣诞树 | christmas tree
   components:
   - type: LimitedItemGiver
     spawnEntries:
-      - id: PresentRandom
-        orGroup: present
-      - id: PresentRandomUnsafe
-        prob: 0.5
-        orGroup: present
-      - id: PresentRandomInsane
-        prob: 0.2
-        orGroup: present
+    - id: PresentRandom
+      orGroup: present
+    - id: PresentRandomUnsafe
+      prob: 0.5
+      orGroup: present
+    - id: PresentRandomInsane
+      prob: 0.2
+      orGroup: present
 
 - type: entity
   parent: BaseTreeConifer
   id: FloraTreeStumpConifer
-  name: tree stump
+  name: 树桩 | tree stump
   components:
   - type: Sprite
     state: treestumpconifer
@@ -367,8 +358,8 @@
 - type: entity
   parent: FloraTree
   id: ShadowTree
-  name: dark wood
-  description: The leaves are whispering about you.
+  name: 暗木 | dark wood
+  description: 树叶在低声议论你。 | The leaves are whispering about you.
   components:
   - type: Sprite
     sprite: Objects/Decoration/Flora/flora_shadow_trees.rsi
@@ -376,8 +367,8 @@
 - type: entity
   parent: BaseTree
   id: LightTree
-  name: glowing tree
-  description: A marvelous tree filled with strange energy.
+  name: 发光的树 | glowing tree
+  description: 一棵充满奇异能量的奇妙树木。 | A marvelous tree filled with strange energy.
   components:
   - type: PointLight
     radius: 2.0
@@ -399,8 +390,7 @@
         tree06: ""
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:SpawnEntitiesBehavior

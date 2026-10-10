@@ -1,16 +1,16 @@
 - type: entity
   parent: BaseItem
   id: ProximitySensor
-  name: proximity sensor
-  description: Senses things in close proximity.
+  name: 接近传感器 | proximity sensor
+  description: 感应近距离内的物体。 | Senses things in close proximity.
   components:
   - type: Sprite
     sprite: Objects/Misc/proximity_sensor.rsi
     state: icon
   - type: Tag
     tags:
-      - ProximitySensor
-      - SalvageTier1
+    - ProximitySensor
+    - SalvageTier1
   - type: StaticPrice
     price: 40
 
@@ -37,7 +37,7 @@
 - type: entity
   id: LeftArmBorg
   parent: PartSilicon
-  name: cyborg left arm
+  name: 赛博格左臂 | cyborg left arm
   components:
   - type: Sprite
     state: borg_l_arm
@@ -52,7 +52,7 @@
 - type: entity
   id: RightArmBorg
   parent: PartSilicon
-  name: cyborg right arm
+  name: 赛博格右臂 | cyborg right arm
   components:
   - type: Sprite
     state: borg_r_arm
@@ -67,7 +67,7 @@
 - type: entity
   id: LeftLegBorg
   parent: PartSilicon
-  name: cyborg left leg
+  name: 赛博格左腿 | cyborg left leg
   components:
   - type: Sprite
     state: borg_l_leg
@@ -82,7 +82,7 @@
 - type: entity
   id: RightLegBorg
   parent: PartSilicon
-  name: cyborg right leg
+  name: 赛博格右腿 | cyborg right leg
   components:
   - type: Sprite
     state: borg_r_leg
@@ -97,7 +97,7 @@
 - type: entity
   id: LightHeadBorg
   parent: PartSilicon
-  name: cyborg head
+  name: 赛博格头部 | cyborg head
   components:
   - type: Sprite
     state: borg_head
@@ -111,7 +111,7 @@
 - type: entity
   id: TorsoBorg
   parent: PartSilicon
-  name: cyborg torso
+  name: 赛博格躯干 | cyborg torso
   components:
   - type: Sprite
     state: borg_chest

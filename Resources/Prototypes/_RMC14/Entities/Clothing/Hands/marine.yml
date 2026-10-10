@@ -1,8 +1,10 @@
 - type: entity
-  parent: [ClothingHandsBase, RMCBaseUniformAccessoryItemGloves]
-  id: CMHandsBlackMarine # CMU14: armored
-  name: marine combat gloves
-  description: "Standard issue marine tactical gloves. It reads: 'knit by Marine Widows Association'."
+  parent:
+  - ClothingHandsBase
+  - RMCBaseUniformAccessoryItemGloves
+  id: CMHandsBlackMarine
+  name: 海军作战手套
+  description: 标准配发的海军陆战队战术手套。上面写着：‘由海军陆战队遗孀协会编织’。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/black.rsi
@@ -12,10 +14,10 @@
     fiberMaterial: fibers-leather
     fiberColor: fibers-black
   - type: FingerprintMask
-  - type: CMArmor # CMU14: armored like AU14GlovesBase/RMCHandsVeteran
-    melee: 40 # CMU14
-    bullet: 40 # CMU14
-    explosionArmor: 20 # CMU14
+  - type: CMArmor
+    melee: 40
+    bullet: 40
+    explosionArmor: 20
   - type: SquadArmor
     layer: Gloves
     slot: GLOVES
@@ -25,12 +27,11 @@
     leaderRsi:
       sprite: _RMC14/Objects/Clothing/Hands/glove_overlays.rsi
       state: std-gloves
-
 - type: entity
   parent: CMHandsBlackMarine
-  id: RMCHandsLatexMarine # TODO RMC14 armor
-  name: marine medical combat gloves
-  description: Standard issue marine sterile gloves, offers regular protection whilst offering the user a better grip when performing medical work.
+  id: RMCHandsLatexMarine
+  name: 海军陆战队医疗战斗手套
+  description: 标准配发的海军陆战队无菌手套，提供常规防护，同时让使用者在进行医疗工作时拥有更好的抓握力。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/latex.rsi
@@ -42,12 +43,11 @@
   - type: Tag
     tags:
     - RMCGlovesLatex
-
 - type: entity
   parent: CMHandsBlackMarine
   id: RMCHandsDeluxeMarine
-  name: deluxe combat gloves
-  description: Combat gloves finished in an almost golden-looking fabric. Insulated, fashionable, and capable of protecting the soft hands it's likely wrapped around.
+  name: 豪华战斗手套
+  description: 战斗手套以近乎金色的面料精制而成。保暖、时尚，并能保护它很可能包裹着的柔嫩双手。
   components:
   - type: Insulated
   - type: Sprite
@@ -57,12 +57,11 @@
   - type: Fiber
     fiberMaterial: fibers-durathread
     fiberColor: fibers-yellow
-
 - type: entity
   parent: CMHandsBlackMarine
   id: RMCHandsM3G4
-  name: M3-G4 grenadier gloves
-  description: A pair of plated, but nimble, gloves.
+  name: M3-G4掷弹兵手套
+  description: 一双镶有甲片却依然灵活的手套。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/grenadier.rsi
@@ -72,31 +71,28 @@
     melee: 40
     bullet: 40
     explosionArmor: 50
-
 - type: entity
   parent: CMHandsBlackMarine
   id: RMCHandsBrownMarine
-  name: marine brown combat gloves
-  description: "Standard issue marine tactical gloves. It reads: 'knit by Marine Widows Association'. These are brown instead of the classic black."
+  name: 海军陆战队棕色作战手套
+  description: 标准配发的海军陆战队战术手套。上面写着：“由海军陆战队遗孀协会编织”。这些是棕色的，而非经典的黑色。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/brown.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/brown.rsi
-
 - type: entity
   parent: CMHandsBlackMarine
   id: RMCHandsGreyMarine
-  name: marine grey combat gloves
-  description: "Standard issue marine tactical gloves. It reads: 'knit by Marine Widows Association'. These are a shade of grey instead of the classic black."
+  name: 海军陆战队灰色战斗手套
+  description: 标准配发海军陆战队战术手套。上面写着：“由海军陆战队遗孀协会编织”。这些手套是灰色的，而非经典的黑色。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/grey.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/grey.rsi
-
 - type: entity
   parent: CMHandsBlackMarine
   id: RMCHandsFingerlessMarine
-  name: marine fingerless combat gloves
-  description: "Standard issue marine tactical gloves. It reads: 'knit by Marine Widows Association'. These ones have been modified by having the fingertips removed."
+  name: 海军陆战队露指战斗手套
+  description: 标准配发的海军陆战队战术手套。上面写着：‘由海军陆战队遗孀协会编织’。这些手套经过改装，去掉了指尖。

@@ -1,649 +1,650 @@
 - type: entity
   parent: BookBase
   id: BookNarsieLegend
-  name: the legend of nar'sie
-  description: The book is an old, leather-bound tome with intricate engravings on the cover. The pages are yellowed and fragile with age, with the ink of the text faded in some places. It appears to have been well-read and well-loved, with dog-eared pages and marginalia scrawled in the margins. Despite its aged appearance, the book still exudes a sense of mystical power and wonder, hinting at the secrets and knowledge contained within its pages.
+  name: 纳尔西的传说 | the legend of nar'sie
+  description: 这本书是一本古老的皮革装订书，封面上有复杂的雕刻。书页因年久发黄而脆弱，部分文字墨迹已经褪色。它似乎曾被反复阅读并备受珍爱，书页有折角，页边空白处还潦草地写着批注。尽管外观陈旧，这本书仍散发着一种神秘的力量与惊奇感，暗示着书页中蕴含的秘密与知识。 | The book is an old, leather-bound tome with intricate engravings on the cover. The pages are yellowed and fragile with age, with the ink of the text faded in some places. It appears to have been well-read and well-loved, with dog-eared pages and marginalia scrawled in the margins. Despite its aged appearance, the book still exudes a sense of mystical power and wonder, hinting at the secrets and knowledge contained within its pages.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_old
-        color: "#a6161d"
-      - state: decor_bottom
-        color: "#6e1022"
-      - state: decor_wingette
-        color: "#4a101b"
-      - state: icon_pentagramm
-        color: "#911129"
-      - state: detail_bookmark
-        color: red 
-    - type: Paper
-      content: book-text-narsielegend
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_old
+      color: "#a6161d"
+    - state: decor_bottom
+      color: "#6e1022"
+    - state: decor_wingette
+      color: "#4a101b"
+    - state: icon_pentagramm
+      color: "#911129"
+    - state: detail_bookmark
+      color: red
+  - type: Paper
+    content: book-text-narsielegend
 
 - type: entity
   parent: BookBase
   id: BookTruth
-  name: exploring different philosophical perspectives on truth and the complexity of lying
-  description: A book exploring the different philosophical perspectives on truth and lying has a worn cover, with creases and marks indicating frequent use and thoughtful contemplation. The spine shows signs of wear from being pulled off the shelf again and again. The pages themselves are filled with underlines, notes in the margins, and highlighted passages as readers grapple with the nuances and complexities of the topic.
+  name: 探索关于真相的不同哲学视角以及说谎的复杂性 | exploring different philosophical perspectives on truth and the complexity of lying
+  description: 一本探讨关于真相与说谎的不同哲学视角的书，封面已经磨损，折痕和痕迹表明它被频繁翻阅并引发深思。书脊因一次又一次从书架上被抽出而显出磨损迹象。书页上满是下划线、页边批注和重点标记，显示出读者在努力思索这一主题的细微之处与复杂内涵。 | A book exploring the different philosophical perspectives on truth and lying has a worn cover, with creases and marks indicating frequent use and thoughtful contemplation. The spine shows signs of wear from being pulled off the shelf again and again. The pages themselves are filled with underlines, notes in the margins, and highlighted passages as readers grapple with the nuances and complexities of the topic.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_strong
-        color: "#c9752a"
-      - state: decor_diagonal
-        color: "#cf792d"
-      - state: decor_wingette_circle
-        color: gold
-      - state: icon_question
-      - state: detail_bookmark
-        color: "#cf792d"
-    - type: Paper
-      content: book-text-truth
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_strong
+      color: "#c9752a"
+    - state: decor_diagonal
+      color: "#cf792d"
+    - state: decor_wingette_circle
+      color: gold
+    - state: icon_question
+    - state: detail_bookmark
+      color: "#cf792d"
+  - type: Paper
+    content: book-text-truth
 
 - type: entity
   parent: BookBase
   id: BookWorld
-  name: shaping the state of the world - interplay of forces and choices
-  description: The book is a well-preserved hardcover with a simple, elegant design on the cover, depicting the image of a world in motion. The pages are crisp and clean, with no signs of wear or tear, suggesting that it has been well-cared for and valued by its previous owner. The text is printed in a clear, legible font, and the chapters are organized in a logical and easy-to-follow manner, making it accessible to readers of all levels of expertise.
+  name: 塑造世界的状态——力量与选择的相互作用 | shaping the state of the world - interplay of forces and choices
+  description: 这本书是一本保存完好的精装书，封面设计简洁优雅，描绘了一个运动中的世界形象。书页干净整洁，没有磨损或撕裂的痕迹，说明它曾被前主人精心照料和珍视。文字采用清晰易读的字体印刷，章节组织逻辑清晰、易于跟随，使各个专业水平的读者都能轻松阅读。 | The book is a well-preserved hardcover with a simple, elegant design on the cover, depicting the image of a world in motion. The pages are crisp and clean, with no signs of wear or tear, suggesting that it has been well-cared for and valued by its previous owner. The text is printed in a clear, legible font, and the chapters are organized in a logical and easy-to-follow manner, making it accessible to readers of all levels of expertise.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#215e9e"
-      - state: icon_planet
-      - state: icon_text
-      - state: detail_bookmark
-        color: "#2dab24"
-    - type: Paper
-      content: book-text-world
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#215e9e"
+    - state: icon_planet
+    - state: icon_text
+    - state: detail_bookmark
+      color: "#2dab24"
+  - type: Paper
+    content: book-text-world
 
 - type: entity
   parent: BookBase
   id: BookIanAntarctica
-  name: adventures of robert & ian - exploring antarctica
-  description: The book is a small paperback in good condition, with an illustration of Ian the corgi and the colony of penguins on the cover. The title, "Ian and Robert's Antarctic Adventure", is written in bold white letters against a blue background. The back cover features a brief summary of the story, highlighting the themes of humility, resilience, and the beauty of nature.
+  name: 罗伯特与伊恩的冒险——探索南极洲 | adventures of robert & ian - exploring antarctica
+  description: 这本书是一本品相良好的平装小书，封面上绘有柯基伊恩和企鹅群落的插图。书名“伊恩与罗伯特的南极冒险”以醒目的白色粗体字印在蓝色背景上。封底有故事简介，突出了谦逊、坚韧和自然之美等主题。 | The book is a small paperback in good condition, with an illustration of Ian the corgi and the colony of penguins on the cover. The title, "Ian and Robert's Antarctic Adventure", is written in bold white letters against a blue background. The back cover features a brief summary of the story, highlighting the themes of humility, resilience, and the beauty of nature.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#5779c9"
-      - state: icon_stars2
-      - state: decor_bottom
-      - state: icon_ian
-      - state: detail_bookmark
-        color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-antarctica
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#5779c9"
+    - state: icon_stars2
+    - state: decor_bottom
+    - state: icon_ian
+    - state: detail_bookmark
+      color: "#ab5e24"
+  - type: Paper
+    content: book-text-ian-antarctica
 
 - type: entity
   parent: BookBase
   id: BookSlothClownSSS
-  name: the sloth and the clown - space station shenanigans
-  description: The book looks new, with a glossy cover featuring Chuckles the clown and Snuggles the sloth floating in space with a backdrop of stars and planets. Chuckles is dressed in his banana costume and Snuggles is sleeping on a hammock made of space ropes. The title "The Sloth and the Clown - Space Station Shenanigans" is written in bold and colorful letters.
+  name: 树懒和小丑——太空站恶作剧 | the sloth and the clown - space station shenanigans
+  description: 这本书看起来是新的，封面光滑闪亮，上面画着小丑查克尔斯和树懒斯纳格斯漂浮在太空中，背景是星星和行星。查克尔斯穿着他的香蕉服装，斯纳格斯睡在一张由太空绳索制成的吊床上。标题“树懒和小丑——太空站恶作剧”用粗体彩色字母写成。 | The book looks new, with a glossy cover featuring Chuckles the clown and Snuggles the sloth floating in space with a backdrop of stars and planets. Chuckles is dressed in his banana costume and Snuggles is sleeping on a hammock made of space ropes. The title "The Sloth and the Clown - Space Station Shenanigans" is written in bold and colorful letters.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#e838b9"
-      - state: decor_wingette
-        color: "#ab22ba"
-      - state: decor_spine
-        color: "#f7cc2f"
-      - state: icon_banana
-      - state: detail_bookmark
-        color: "#f7cc2f"
-    - type: Paper
-      content: book-text-sloth-clown-sss
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#e838b9"
+    - state: decor_wingette
+      color: "#ab22ba"
+    - state: decor_spine
+      color: "#f7cc2f"
+    - state: icon_banana
+    - state: detail_bookmark
+      color: "#f7cc2f"
+  - type: Paper
+    content: book-text-sloth-clown-sss
 
 - type: entity
   parent: BookBase
   id: BookSlothClownPranks
-  name: the sloth and the clown - pranks on zorgs
-  description: The book is in excellent condition, with crisp pages and a bright cover. The cover of the book features Chuckles and Snuggles, surrounded by the different species they encountered during their adventures in space. In the background, the Zorgs can be seen peeking out from behind a spaceship.
+  name: 树懒和小丑——对佐格人的恶作剧 | the sloth and the clown - pranks on zorgs
+  description: 这本书品相极佳，书页崭新，封面鲜亮。封面上画着查克尔斯和斯纳格尔斯，周围是他们在太空冒险中遇到的各种物种。背景中可以看到佐格人从一艘宇宙飞船后面探出头来。 | The book is in excellent condition, with crisp pages and a bright cover. The cover of the book features Chuckles and Snuggles, surrounded by the different species they encountered during their adventures in space. In the background, the Zorgs can be seen peeking out from behind a spaceship.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#f7cc2f"
-      - state: decor_wingette
-        color: "#ab22ba"
-      - state: decor_spine
-        color: "#e838b9"
-      - state: icon_banana
-      - state: detail_bookmark
-        color: "#ab22ba"
-    - type: Paper
-      content: book-text-sloth-clown-pz
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#f7cc2f"
+    - state: decor_wingette
+      color: "#ab22ba"
+    - state: decor_spine
+      color: "#e838b9"
+    - state: icon_banana
+    - state: detail_bookmark
+      color: "#ab22ba"
+  - type: Paper
+    content: book-text-sloth-clown-pz
 
 - type: entity
   parent: BookBase
   id: BookSlothClownMMD
-  name: the sloth and the clown - maze maze danger
-  description: The book looks new and vibrant, with an image of Chuckles and Snuggles standing in front of the changing maze on the cover. The title "The Sloth and the Clown - Maze Maze Danger" is written in bold, colorful letters that pop against a background of space and stars.
+  name: 树懒与小丑——迷宫迷宫危险 | the sloth and the clown - maze maze danger
+  description: 这本书看起来崭新而鲜艳，封面上有查克尔斯和斯纳格尔斯站在变幻莫测的迷宫前的图像。书名“树懒与小丑——迷宫迷宫危险”以粗体、色彩斑斓的字母写成，在太空和星星的背景衬托下格外醒目。 | The book looks new and vibrant, with an image of Chuckles and Snuggles standing in front of the changing maze on the cover. The title "The Sloth and the Clown - Maze Maze Danger" is written in bold, colorful letters that pop against a background of space and stars.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#e838b9"
-      - state: decor_wingette
-        color: "#ab22ba"
-      - state: decor_spine
-        color: "#f7cc2f"
-      - state: icon_scmmd
-      - state: detail_bookmark
-        color: "#ab22ba"
-    - type: Paper
-      content: book-text-sloth-clown-mmd
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#e838b9"
+    - state: decor_wingette
+      color: "#ab22ba"
+    - state: decor_spine
+      color: "#f7cc2f"
+    - state: icon_scmmd
+    - state: detail_bookmark
+      color: "#ab22ba"
+  - type: Paper
+    content: book-text-sloth-clown-mmd
 
 - type: entity
   parent: BookBase
   id: BookStruck
-  name: the humbling and transformative experience of being struck by lightning
-  description: The cover of the book is an electrifying image of lightning striking the ground, with a silhouette of a person standing in the midst of it. The title is written in bold letters in white against a black background, conveying the power and intensity of the experience. The subtitle is written in smaller letters below the title, providing a hint of the philosophical and spiritual themes explored within.
+  name: 被闪电击中的令人谦卑且具有变革性的经历 | the humbling and transformative experience of being struck by lightning
+  description: 这本书的封面是一幅震撼人心的画面，闪电击中地面，其中站立着一个人影。标题以粗体白色字母写在黑色背景上，传达出这种经历的强大力量和强烈冲击。副标题以较小的字体写在标题下方，暗示了书中探讨的哲学和精神主题。 | The cover of the book is an electrifying image of lightning striking the ground, with a silhouette of a person standing in the midst of it. The title is written in bold letters in white against a black background, conveying the power and intensity of the experience. The subtitle is written in smaller letters below the title, providing a hint of the philosophical and spiritual themes explored within.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_strong
-        color: "#2c384d"
-      - state: decor_wingette
-        color: "#3a4a66"
-      - state: decor_wingette_circle
-        color: "#6d7c9c"
-      - state: icon_glow
-        color: "#f7bb2f"
-      - state: icon_lightning
-        color: "#f7bb2f"
-      - state: detail_bookmark
-        color: "#f7bb2f"
-    - type: Paper
-      content: book-text-struck
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_strong
+      color: "#2c384d"
+    - state: decor_wingette
+      color: "#3a4a66"
+    - state: decor_wingette_circle
+      color: "#6d7c9c"
+    - state: icon_glow
+      color: "#f7bb2f"
+    - state: icon_lightning
+      color: "#f7bb2f"
+    - state: detail_bookmark
+      color: "#f7bb2f"
+  - type: Paper
+    content: book-text-struck
 
 - type: entity
   parent: BookBase
   id: BookSun
-  name: reaching for the sun - a plant's quest for life
-  description: The book is new, with a bright and vibrant cover featuring a plant stretching its leaves towards the sun. The title, "Reaching for the Sun - A Plant's Quest for Life," is written in bold, green letters, with an image of the sun rising behind the plant. The cover evokes a sense of growth, energy, and the beauty of nature.
+  name: 向着太阳 - 植物对生命的追求 | reaching for the sun - a plant's quest for life
+  description: 这本书是新的，封面明亮而充满生机，描绘了一株植物向太阳伸展叶片。书名“向着太阳——植物对生命的追求”以醒目的绿色字体写成，植物背后是一轮正在升起的太阳。封面唤起生长、活力与自然之美。 | The book is new, with a bright and vibrant cover featuring a plant stretching its leaves towards the sun. The title, "Reaching for the Sun - A Plant's Quest for Life," is written in bold, green letters, with an image of the sun rising behind the plant. The cover evokes a sense of growth, energy, and the beauty of nature.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#255c8a"
-      - state: decor_bottom
-        color: "#2d2e12"
-      - state: icon_glow
-        color: "#f7bb2f"
-      - state: icon_cabbage
-      - state: detail_bookmark
-        color: "#f7bb2f"
-      - state: detail_rivets
-        color: "#f7bb2f"
-    - type: Paper
-      content: book-text-sun
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#255c8a"
+    - state: decor_bottom
+      color: "#2d2e12"
+    - state: icon_glow
+      color: "#f7bb2f"
+    - state: icon_cabbage
+    - state: detail_bookmark
+      color: "#f7bb2f"
+    - state: detail_rivets
+      color: "#f7bb2f"
+  - type: Paper
+    content: book-text-sun
 
 - type: entity
   parent: BookBase
   id: BookPossum
-  name: fallen ambitions - the tragic tale of morty the possum
-  description: The book is in good condition, with a hardcover and a dark green forest background. In the center of the cover, there is a sad looking possum sitting on a branch, with a distant and lonely expression on its face. The title, "Fallen Ambitions - The Tragic Tale of Morty the Possum," is written in bold, gold letters above the possum.
+  name: 陨落的雄心——负鼠莫蒂的悲剧故事 | fallen ambitions - the tragic tale of morty the possum
+  description: 这本书品相良好，精装封面以深绿色森林为背景。封面中央，一只神情悲伤的负鼠坐在树枝上，脸上带着遥远而孤独的表情。负鼠上方用粗体金色字母写着书名：“陨落的雄心——负鼠莫蒂的悲剧故事”。 | The book is in good condition, with a hardcover and a dark green forest background. In the center of the cover, there is a sad looking possum sitting on a branch, with a distant and lonely expression on its face. The title, "Fallen Ambitions - The Tragic Tale of Morty the Possum," is written in bold, gold letters above the possum.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_old
-        color: "#a3bfae"
-      - state: icon_possum
-      - state: detail_bookmark
-        color: "#2b593d"
-      - state: overlay_blood
-    - type: Paper
-      content: book-text-possum
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_old
+      color: "#a3bfae"
+    - state: icon_possum
+    - state: detail_bookmark
+      color: "#2b593d"
+    - state: overlay_blood
+  - type: Paper
+    content: book-text-possum
 
 - type: entity
   parent: BookBase
   id: BookCafe
-  name: the cafe possum
-  description: The book is in new condition, with a vibrant and whimsical cover that features a charming illustration of a tiny possum peeking out from behind a coffee cup, with a colorful and bustling cafe scene in the background. The title "The Cafe Possum" is written in bold, playful lettering, and the author's name is printed in a smaller font below it.
+  name: 咖啡馆负鼠 | the cafe possum
+  description: 这本书是全新品相，封面鲜艳而富有奇思妙想，上面有一幅迷人的插画：一只小小的负鼠从咖啡杯后面探出头来，背景是色彩缤纷、熙熙攘攘的咖啡馆场景。书名“咖啡馆负鼠”以粗体、俏皮的字体写成，作者的名字则以较小的字体印在下方。 | The book is in new condition, with a vibrant and whimsical cover that features a charming illustration of a tiny possum peeking out from behind a coffee cup, with a colorful and bustling cafe scene in the background. The title "The Cafe Possum" is written in bold, playful lettering, and the author's name is printed in a smaller font below it.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_strong
-        color: "#e8ab6d"
-      - state: icon_possum
-      - state: detail_bookmark
-        color: "#2b593d"
-    - type: Paper
-      content: book-text-cafe
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_strong
+      color: "#e8ab6d"
+    - state: icon_possum
+    - state: detail_bookmark
+      color: "#2b593d"
+  - type: Paper
+    content: book-text-cafe
 
 - type: entity
   parent: BookBase
   id: BookFeather
-  name: a feather of magic - the wandering bird's journey to belonging
-  description: The book would be in new condition, with a glossy cover depicting the wandering bird surrounded by a glowing forest, with the magical feather at the center. The title, "A Feather of Magic," would be written in bold, glittering letters, while the subtitle, "The Wandering Bird's Journey to Belonging," would be written in smaller print underneath. The back cover would feature a brief summary of the story, along with reviews from critics praising the book's themes of hope and renewal.
+  name: 魔法之羽——流浪鸟的归属之旅 | a feather of magic - the wandering bird's journey to belonging
+  description: 这本书将是全新状态，封面光滑闪亮，描绘着被发光森林环绕的流浪鸟，魔法之羽位于中央。标题“魔法之羽”会用粗体闪亮的字母书写，而副标题“流浪鸟的归属之旅”则会以较小的字体写在下方。封底会印有故事的简要概述，以及评论家对书中希望与重生主题的赞誉。 | The book would be in new condition, with a glossy cover depicting the wandering bird surrounded by a glowing forest, with the magical feather at the center. The title, "A Feather of Magic," would be written in bold, glittering letters, while the subtitle, "The Wandering Bird's Journey to Belonging," would be written in smaller print underneath. The back cover would feature a brief summary of the story, along with reviews from critics praising the book's themes of hope and renewal.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_strong
-        color: "#abebed"
-      - state: decor_wingette
-        color: "#a081cc"
-      - state: icon_atmos
-      - state: icon_magic
-      - state: detail_bookmark
-        color: "#7396f5"
-    - type: Paper
-      content: book-text-feather
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_strong
+      color: "#abebed"
+    - state: decor_wingette
+      color: "#a081cc"
+    - state: icon_atmos
+    - state: icon_magic
+    - state: detail_bookmark
+      color: "#7396f5"
+  - type: Paper
+    content: book-text-feather
 
 - type: entity
   parent: BookBase
   id: BookIanLostWolfPup
-  name: the adventures of ian and renault - finding the lost wolf pup
-  description: The book is a new condition with a colorful cover, depicting Ian the corgi and Renault the fox on a journey through the forest, with the lost wolf pup to their feet. The title "The Adventures of Ian and Renault - Finding the Lost Wolf Pup" is prominently displayed at the top, with the author's name below. The cover has a whimsical and adventurous feel to it, attracting readers of all ages.
+  name: 伊恩和雷诺的冒险——寻找丢失的小狼崽 | the adventures of ian and renault - finding the lost wolf pup
+  description: 这本书是全新品相，封面色彩丰富，描绘了柯基犬伊恩和狐狸雷诺在森林中踏上旅程，丢失的小狼崽就在他们脚边。标题“伊恩和雷诺的冒险——寻找丢失的小狼崽”醒目地展示在顶部，作者的名字位于下方。封面充满奇思妙想和冒险气息，吸引各年龄段的读者。 | The book is a new condition with a colorful cover, depicting Ian the corgi and Renault the fox on a journey through the forest, with the lost wolf pup to their feet. The title "The Adventures of Ian and Renault - Finding the Lost Wolf Pup" is prominently displayed at the top, with the author's name below. The cover has a whimsical and adventurous feel to it, attracting readers of all ages.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#3a9e57"
-      - state: decor_bottom
-        color: "#1c6330"
-      - state: icon_ian
-      - state: detail_bookmark
-        color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-wolfpup
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#3a9e57"
+    - state: decor_bottom
+      color: "#1c6330"
+    - state: icon_ian
+    - state: detail_bookmark
+      color: "#ab5e24"
+  - type: Paper
+    content: book-text-ian-wolfpup
 
 - type: entity
   parent: BookBase
   id: BookIanRanch
-  name: the adventures of ian and renault - ranch expedition
-  description: The book appears to be new, with crisp pages and an unblemished cover. The cover features a colorful illustration of Ian and Renault, surrounded by various animals they encountered on the ranch, including horses, cows, and chickens. The title, "The Adventures of Ian and Renault - Ranch Expedition," is written in bold letters above the image, with the subtitle, "Helping Animals in Need," written below.
+  name: 伊恩和雷诺的冒险——牧场探险 | the adventures of ian and renault - ranch expedition
+  description: 这本书看起来是新的，书页挺括，封面完好无损。封面上有一幅色彩鲜艳的插画，画着伊恩和雷诺，周围是他们在牧场遇到的各种动物，包括马、牛和鸡。标题“伊恩和雷诺的冒险——牧场探险”以粗体字写在图片上方，副标题“帮助有需要的动物”写在下方。 | The book appears to be new, with crisp pages and an unblemished cover. The cover features a colorful illustration of Ian and Renault, surrounded by various animals they encountered on the ranch, including horses, cows, and chickens. The title, "The Adventures of Ian and Renault - Ranch Expedition," is written in bold letters above the image, with the subtitle, "Helping Animals in Need," written below.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#ccab64"
-      - state: decor_bottom
-        color: "#946e38"
-      - state: icon_ian
-      - state: detail_bookmark
-        color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-ranch
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#ccab64"
+    - state: decor_bottom
+      color: "#946e38"
+    - state: icon_ian
+    - state: detail_bookmark
+      color: "#ab5e24"
+  - type: Paper
+    content: book-text-ian-ranch
 
 - type: entity
   parent: BookBase
   id: BookIanOcean
-  name: the adventures of ian and renault - an ocean adventure
-  description: The book is new and in excellent condition. The cover shows Ian and Renault running and playing on the beach, with the blue ocean and golden sand in the background. The title is written in bold, playful letters, and the subtitle reads "An Ocean Adventure."
+  name: 伊恩和雷诺的冒险——海洋探险 | the adventures of ian and renault - an ocean adventure
+  description: 这本书是全新的，品相极佳。封面上画着伊恩和雷诺在沙滩上奔跑玩耍，背景是蓝色的大海和金色的沙滩。标题用粗大活泼的字体写成，副标题是“海洋探险”。 | The book is new and in excellent condition. The cover shows Ian and Renault running and playing on the beach, with the blue ocean and golden sand in the background. The title is written in bold, playful letters, and the subtitle reads "An Ocean Adventure."
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#567cd6"
-      - state: decor_bottom
-        color: "#272782"
-      - state: icon_ian
-      - state: detail_bookmark
-        color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-ocean
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#567cd6"
+    - state: decor_bottom
+      color: "#272782"
+    - state: icon_ian
+    - state: detail_bookmark
+      color: "#ab5e24"
+  - type: Paper
+    content: book-text-ian-ocean
 
 - type: entity
   parent: BookBase
   id: BookIanMountain
-  name: the adventures of ian and renault - a mountain expedition
-  description: The book is in new condition. The cover is a stunning mountain landscape with Ian and Renault in the foreground, looking out over the vista of the surrounding peaks and valleys. The title is written in bold, block letters at the top, with the subtitle, "A Mountain Expedition," written underneath.
+  name: 伊恩和雷诺的冒险——山地探险 | the adventures of ian and renault - a mountain expedition
+  description: 这本书是全新状态。封面是一幅令人惊叹的山地景观，伊恩和雷诺位于前景，眺望着周围山峰和山谷的壮丽景色。标题以粗体大写字母写在顶部，副标题“山地探险”写在下方。 | The book is in new condition. The cover is a stunning mountain landscape with Ian and Renault in the foreground, looking out over the vista of the surrounding peaks and valleys. The title is written in bold, block letters at the top, with the subtitle, "A Mountain Expedition," written underneath.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#86b4d9"
-      - state: icon_mount
-      - state: icon_ian
-      - state: detail_bookmark
-        color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-mountain
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#86b4d9"
+    - state: icon_mount
+    - state: icon_ian
+    - state: detail_bookmark
+      color: "#ab5e24"
+  - type: Paper
+    content: book-text-ian-mountain
 
 - type: entity
   parent: BookBase
   id: BookIanCity
-  name: the adventures of ian and renault - exploring the city
-  description: The book is in new condition, with crisp pages and a glossy cover. The cover features a colorful illustration of Ian and Renault exploring the city, with tall buildings and bustling streets in the background. Ian is leading the way, with his tail wagging excitedly, while Renault follows close behind, her ears perked up and her eyes wide with wonder. The title, "The Adventures of Ian and Renault," is written in bold, playful letters, with the subtitle, "Exploring the City," written below in smaller font.
+  name: 伊恩和雷诺的冒险——探索城市 | the adventures of ian and renault - exploring the city
+  description: 这本书是全新状态，书页清爽，封面光亮。封面上有一幅色彩鲜艳的插画，画着伊恩和雷诺探索城市，背景是高楼大厦和熙熙攘攘的街道。伊恩走在前面，兴奋地摇着尾巴，雷诺紧跟在后，耳朵竖起，眼睛睁得大大的，充满惊奇。标题“伊恩和雷诺的冒险”用粗大活泼的字体写成，副标题“探索城市”则以较小的字体写在下方。 | The book is in new condition, with crisp pages and a glossy cover. The cover features a colorful illustration of Ian and Renault exploring the city, with tall buildings and bustling streets in the background. Ian is leading the way, with his tail wagging excitedly, while Renault follows close behind, her ears perked up and her eyes wide with wonder. The title, "The Adventures of Ian and Renault," is written in bold, playful letters, with the subtitle, "Exploring the City," written below in smaller font.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#9a9b9c"
-      - state: decor_bottom
-        color: "#5f6061"
-      - state: icon_ian
-      - state: detail_bookmark
-        color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-city
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#9a9b9c"
+    - state: decor_bottom
+      color: "#5f6061"
+    - state: icon_ian
+    - state: detail_bookmark
+      color: "#ab5e24"
+  - type: Paper
+    content: book-text-ian-city
 
 - type: entity
   parent: BookBase
   id: BookIanArctic
-  name: the adventures of ian and renault - an arctic journey of courage and friendship
+  name: 伊恩和雷诺的冒险——勇气与友谊的北极之旅 | the adventures of ian and renault - an arctic journey of courage and friendship
   description: |
-    The book looks new and adventurous, with a picture of Ian and Renault standing in front of an icy landscape with snowflakes falling all around them. The title, "The Adventures of Ian and Renault," is written in bold letters at the top, with a subtitle that reads, "An Arctic Journey of Courage and Friendship."
+    这本书看起来崭新又充满冒险气息，画面上伊恩和雷诺站在冰雪覆盖的风景前，四周雪花纷飞。顶部用粗体字写着书名“伊恩和雷诺的冒险”，副标题是“勇气与友谊的北极之旅”。
+    第二版。 | The book looks new and adventurous, with a picture of Ian and Renault standing in front of an icy landscape with snowflakes falling all around them. The title, "The Adventures of Ian and Renault," is written in bold letters at the top, with a subtitle that reads, "An Arctic Journey of Courage and Friendship."
     2nd Edition.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#5779c9"
-      - state: icon_stars2
-      - state: decor_bottom
-      - state: icon_ian
-      - state: detail_bookmark
-        color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-arctic
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#5779c9"
+    - state: icon_stars2
+    - state: decor_bottom
+    - state: icon_ian
+    - state: detail_bookmark
+      color: "#ab5e24"
+  - type: Paper
+    content: book-text-ian-arctic
 
 - type: entity
   parent: BookBase
   id: BookIanDesert
-  name: the adventures of ian and renault - exploring the mysterious desert
-  description: The book is in new condition and would have a colorful cover depicting Ian and Renault against a desert backdrop. The cover would feature images of various animals and plants that the two encountered on their adventure, such as a rattlesnake, coyotes, sand dunes, and an oasis. The title, "The Adventures of Ian and Renault" is prominently displayed on the cover in bold letters, while the subtitle "Exploring the Mysterious Desert" is written in smaller letters underneath.
+  name: 伊恩和雷诺的冒险——探索神秘沙漠 | the adventures of ian and renault - exploring the mysterious desert
+  description: 这本书是全新状态，封面色彩鲜艳，描绘了伊恩和雷诺在沙漠背景下的形象。封面上会展示两人冒险途中遇到的各种动植物，比如响尾蛇、郊狼、沙丘和绿洲。书名“伊恩和雷诺的冒险”以粗体字醒目地显示在封面上，而副标题“探索神秘沙漠”则用较小的字体写在下方。 | The book is in new condition and would have a colorful cover depicting Ian and Renault against a desert backdrop. The cover would feature images of various animals and plants that the two encountered on their adventure, such as a rattlesnake, coyotes, sand dunes, and an oasis. The title, "The Adventures of Ian and Renault" is prominently displayed on the cover in bold letters, while the subtitle "Exploring the Mysterious Desert" is written in smaller letters underneath.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#507bad"
-      - state: decor_bottom
-        color: "#bd9a55"
-      - state: icon_ian
-      - state: detail_bookmark
-        color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-desert
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#507bad"
+    - state: decor_bottom
+      color: "#bd9a55"
+    - state: icon_ian
+    - state: detail_bookmark
+      color: "#ab5e24"
+  - type: Paper
+    content: book-text-ian-desert
 
 - type: entity
   parent: BookBase
   id: BookNames
-  name: the power of names - a philosophical exploration
-  description: The book is a gently used philosophy text, with a cover that features a close-up of a person's mouth, with the word "names" written on their lips. The title is "The Power of Names - A Philosophical Exploration," and the author's name is prominently displayed underneath. The overall design is simple and elegant, with the focus on the text rather than any flashy graphics or images.
+  name: 名字的力量——一次哲学探索 | the power of names - a philosophical exploration
+  description: 这本书是一本轻度使用过的哲学教材，封面特写了一个人的嘴部，嘴唇上写着“名字”一词。书名是“名字的力量——一次哲学探索”，作者的名字醒目地展示在下方。整体设计简洁优雅，重点放在文字上，而不是任何花哨的图形或图像。 | The book is a gently used philosophy text, with a cover that features a close-up of a person's mouth, with the word "names" written on their lips. The title is "The Power of Names - A Philosophical Exploration," and the author's name is prominently displayed underneath. The overall design is simple and elegant, with the focus on the text rather than any flashy graphics or images.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#8c8c8c"
-      - state: decor_wingette_circle
-      - state: icon_letter_N
-      - state: detail_bookmark
-      - state: overlay_dirt
-    - type: Paper
-      content: book-text-names
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#8c8c8c"
+    - state: decor_wingette_circle
+    - state: icon_letter_N
+    - state: detail_bookmark
+    - state: overlay_dirt
+  - type: Paper
+    content: book-text-names
 
 - type: entity
   parent: BookBase
   id: BookEarth
-  name: earthly longing
-  description: The book is in good condition, with a slightly faded cover due to exposure to sunlight.  The cover of the book depicts a panoramic view of the Earth from space, with a bright blue ocean and green landmasses. In the foreground, a lone astronaut is seen sitting in front of a window, gazing wistfully at the Earth. The title of the book, "Earthly Longing," is written in bold white letters against a black background at the top of the cover.
+  name: 地球的渴望 | earthly longing
+  description: 这本书品相良好，封面因日晒而略显褪色。封面描绘了从太空俯瞰地球的全景，蔚蓝的海洋与翠绿的大陆交相辉映。前景中，一名孤独的宇航员坐在窗前，怅然地凝望着地球。书名“地球的渴望”以醒目的白色字体印在封面顶部的黑色背景上。 | The book is in good condition, with a slightly faded cover due to exposure to sunlight.  The cover of the book depicts a panoramic view of the Earth from space, with a bright blue ocean and green landmasses. In the foreground, a lone astronaut is seen sitting in front of a window, gazing wistfully at the Earth. The title of the book, "Earthly Longing," is written in bold white letters against a black background at the top of the cover.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_strong
-        color: "#0f204f"
-      - state: decor_wingette_circle
-        color: "#2c5491"
-      - state: decor_vertical_middle
-        color: "#3c6ab0"
-      - state: icon_planet
-      - state: icon_text3
-      - state: detail_bookmark
-        color: "#2c5491"
-    - type: Paper
-      content: book-text-earth
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_strong
+      color: "#0f204f"
+    - state: decor_wingette_circle
+      color: "#2c5491"
+    - state: decor_vertical_middle
+      color: "#3c6ab0"
+    - state: icon_planet
+    - state: icon_text3
+    - state: detail_bookmark
+      color: "#2c5491"
+  - type: Paper
+    content: book-text-earth
 
 - type: entity
   parent: BookBase
   id: BookAurora
-  name: journey beyond - the starship aurora mission
-  description: The book is in excellent condition, with a shiny cover depicting a spaceship hovering above a planet, perhaps with the Earth in the background. The title "Journey Beyond - The Starship Aurora Mission" is written in bold, silver letters. The cover also features a quote from a review, "A breathtaking tale of human achievement and exploration" to entice potential readers.
+  name: 超越之旅——星舰极光任务 | journey beyond - the starship aurora mission
+  description: 这本书品相极佳，封面闪亮，描绘了一艘飞船悬停在一颗行星上方，背景中或许还有地球。书名“超越之旅——星舰极光任务”以醒目的银色粗体字呈现。封面上还印有一句评论引言，“一个关于人类成就与探索的惊心动魄的故事”，以吸引潜在读者。 | The book is in excellent condition, with a shiny cover depicting a spaceship hovering above a planet, perhaps with the Earth in the background. The title "Journey Beyond - The Starship Aurora Mission" is written in bold, silver letters. The cover also features a quote from a review, "A breathtaking tale of human achievement and exploration" to entice potential readers.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#0f204f"
-      - state: decor_vertical_middle
-        color: "#3c6ab0" 
-      - state: decor_spine
-        color: "#3c6ab0" 
-      - state: icon_stars2
-      - state: icon_aurora
-      - state: detail_bookmark
-        color: "#2c5491"
-      - state: detail_rivets
-        color: "#799dd4"
-    - type: Paper
-      content: book-text-aurora
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#0f204f"
+    - state: decor_vertical_middle
+      color: "#3c6ab0"
+    - state: decor_spine
+      color: "#3c6ab0"
+    - state: icon_stars2
+    - state: icon_aurora
+    - state: detail_bookmark
+      color: "#2c5491"
+    - state: detail_rivets
+      color: "#799dd4"
+  - type: Paper
+    content: book-text-aurora
 
 - type: entity
   parent: BookBase
   id: BookTemple
-  name: the nature of the divine - embracing the many gods
-  description: The book appears new with crisp pages and an uncreased spine. The cover features an image of a temple with a glowing, multicolored aura around it, symbolizing the various gods discussed in the book. The title is displayed prominently in gold lettering, with the author's name and a brief summary of the book written in smaller text below.
+  name: 神性本质——拥抱众神 | the nature of the divine - embracing the many gods
+  description: 这本书看起来是新的，书页平整，书脊没有折痕。封面上有一座神庙的图像，周围环绕着发光的多彩光环，象征着书中讨论的各位神明。书名以金色字体醒目展示，下方用较小字体写着作者姓名和书的简要介绍。 | The book appears new with crisp pages and an uncreased spine. The cover features an image of a temple with a glowing, multicolored aura around it, symbolizing the various gods discussed in the book. The title is displayed prominently in gold lettering, with the author's name and a brief summary of the book written in smaller text below.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#542e80"
-      - state: decor_vertical_middle
-        color: "#39205e"
-      - state: decor_wingette_circle
-        color: "#914fb8"
-      - state: icon_temple
-      - state: detail_bookmark
-        color: "#bfbfbf"
-    - type: Paper
-      content: book-text-temple
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#542e80"
+    - state: decor_vertical_middle
+      color: "#39205e"
+    - state: decor_wingette_circle
+      color: "#914fb8"
+    - state: icon_temple
+    - state: detail_bookmark
+      color: "#bfbfbf"
+  - type: Paper
+    content: book-text-temple
 
 - type: entity
   parent: BookBase
   id: BookWatched
-  name: watched
-  description: The book is in good condition, with a slightly worn cover that features a dark and ominous space station looming in the background. The title "Watched" is written in bold letters that seem to be staring back at the reader, conveying the feeling of being constantly observed. The blurb on the back cover hints at a thrilling and suspenseful tale of paranoia and danger in a confined setting.
+  name: 被监视 | watched
+  description: 这本书品相良好，封面略有磨损，背景中隐约可见一座阴暗而不祥的空间站。书名“被监视”以粗体字母写成，仿佛正回望着读者，传达出一种时刻被注视的感觉。封底简介暗示了一个发生在封闭环境中的偏执与危险的惊悚悬疑故事。 | The book is in good condition, with a slightly worn cover that features a dark and ominous space station looming in the background. The title "Watched" is written in bold letters that seem to be staring back at the reader, conveying the feeling of being constantly observed. The blurb on the back cover hints at a thrilling and suspenseful tale of paranoia and danger in a confined setting.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#611e10"
-      - state: overlay_dirt
-        color: "#4f1206"
-      - state: decor_wingette_circle
-        color: "#241e1d"
-      - state: icon_eye
-      - state: detail_bookmark
-        color: "#bfbfbf"
-    - type: Paper
-      content: book-text-watched
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#611e10"
+    - state: overlay_dirt
+      color: "#4f1206"
+    - state: decor_wingette_circle
+      color: "#241e1d"
+    - state: icon_eye
+    - state: detail_bookmark
+      color: "#bfbfbf"
+  - type: Paper
+    content: book-text-watched
 
 - type: entity
   parent: BookBase
   id: BookMedicalOfficer
-  name: horizon's battle - a medical officer's tale of trust and survival
-  description: The cover features Smith, the medical officer, in his uniform, looking determined and ready to face any challenge. The backdrop shows the SS Horizon under attack, with explosions and smoke filling the space station. In the foreground, a wizard with a staff can be seen, adding an element of mystery and intrigue to the scene. The title is prominently displayed in bold letters, with the author's name and a tagline indicating the book's action-packed and suspenseful nature.
+  name: 地平线之战——一位医疗官的信任与生存故事 | horizon's battle - a medical officer's tale of trust and survival
+  description: 封面展示了医疗官史密斯身穿制服，神情坚定，准备迎接任何挑战。背景中，SS Horizon号正遭受攻击，爆炸和烟雾弥漫整个空间站。前景中可以看到一位手持法杖的巫师，为场景增添了神秘和引人入胜的元素。标题以粗体字醒目展示，作者姓名和一句标语表明了本书动作丰富、悬念迭起的特质。 | The cover features Smith, the medical officer, in his uniform, looking determined and ready to face any challenge. The backdrop shows the SS Horizon under attack, with explosions and smoke filling the space station. In the foreground, a wizard with a staff can be seen, adding an element of mystery and intrigue to the scene. The title is prominently displayed in bold letters, with the author's name and a tagline indicating the book's action-packed and suspenseful nature.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#d7dadb"
-      - state: decor_wingette_circle
-        color: "#55b0d4"
-      - state: icon_medical_cross
-        color: "#55b0d4"
-      - state: detail_bookmark
-        color: "#55b0d4"
-    - type: Paper
-      content: book-text-medical-officer
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#d7dadb"
+    - state: decor_wingette_circle
+      color: "#55b0d4"
+    - state: icon_medical_cross
+      color: "#55b0d4"
+    - state: detail_bookmark
+      color: "#55b0d4"
+  - type: Paper
+    content: book-text-medical-officer
 
 - type: entity
   parent: BookBase
   id: BookMorgue
-  name: the ghostly residents of the abandoned morgue
-  description: The book looks old and worn, with faded lettering on the cover. The cover depicts a dark and eerie morgue, with a full moon casting an ominous glow over the scene. In the foreground are Morty the possum and Morticia the raccoon, with mischievous expressions on their faces, peeking out from behind a metal shelf. The title is written in bold, spooky letters, with the subtitle "A Tale of Animal Spirits" written in smaller font below.
+  name: 废弃停尸房里的幽灵居民 | the ghostly residents of the abandoned morgue
+  description: 这本书看起来又旧又破，封面上的字迹已经褪色。封面上描绘了一座阴暗恐怖的停尸房，一轮满月投下不祥的光芒。前景中是负鼠莫蒂和浣熊莫蒂西亚，它们脸上带着调皮的表情，从金属架子后面探出头来。标题用粗大、诡异的字体写成，副标题“动物幽灵的故事”则以较小的字体写在下方。 | The book looks old and worn, with faded lettering on the cover. The cover depicts a dark and eerie morgue, with a full moon casting an ominous glow over the scene. In the foreground are Morty the possum and Morticia the raccoon, with mischievous expressions on their faces, peeking out from behind a metal shelf. The title is written in bold, spooky letters, with the subtitle "A Tale of Animal Spirits" written in smaller font below.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_old
-        color: "#d7dadb"
-      - state: icon_text2
-        color: "#61363d"
-      - state: overlay_dirt
-      - state: detail_bookmark
-        color: "#61363d"
-    - type: Paper
-      content: book-text-morgue
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_old
+      color: "#d7dadb"
+    - state: icon_text2
+      color: "#61363d"
+    - state: overlay_dirt
+    - state: detail_bookmark
+      color: "#61363d"
+  - type: Paper
+    content: book-text-morgue
 
 - type: entity
   parent: BookBase
   id: BookRufus
-  name: rufus and the mischievous fairy
-  description: The book is in new condition, with vibrant colors and illustrations on the cover. The cover shows Rufus on his bicycle, with Blossom flying beside him in a playful manner. The title is written in bold, whimsical font, with the characters' names highlighted in a contrasting color. The overall aesthetic is charming and inviting, appealing to children and adults alike.
+  name: 鲁弗斯与调皮仙女 | rufus and the mischievous fairy
+  description: 这本书是全新状态，封面色彩鲜艳，插图生动。封面上画着鲁弗斯骑着自行车，布洛瑟姆在他身旁调皮地飞舞。书名采用粗体、奇思妙想的字体，角色的名字用对比色突出显示。整体美学迷人而诱人，吸引儿童和成人。 | The book is in new condition, with vibrant colors and illustrations on the cover. The cover shows Rufus on his bicycle, with Blossom flying beside him in a playful manner. The title is written in bold, whimsical font, with the characters' names highlighted in a contrasting color. The overall aesthetic is charming and inviting, appealing to children and adults alike.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#6597c9"
-      - state: decor_bottom
-        color: "#113a63"
-      - state: decor_diagonal
-        color: "#113a63"
-      - state: icon_text3
-        color: "#ffde7d"
-      - state: detail_bookmark
-        color: "#61363d"
-      - state: detail_rivets
-        color: "#ffde7d"
-    - type: Paper
-      content: book-text-rufus
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#6597c9"
+    - state: decor_bottom
+      color: "#113a63"
+    - state: decor_diagonal
+      color: "#113a63"
+    - state: icon_text3
+      color: "#ffde7d"
+    - state: detail_bookmark
+      color: "#61363d"
+    - state: detail_rivets
+      color: "#ffde7d"
+  - type: Paper
+    content: book-text-rufus
 
 - type: entity
   parent: BookBase
   id: BookMap
-  name: the map of adventure
-  description: The book is in a good condition, with a glossy cover depicting a jungle scene with vibrant colors and intricate details. The title "The Map of Adventure," is written in bold, gold lettering. The cover also features an image of a mysterious suitcase with the map spilling out of it.
+  name: 冒险地图 | the map of adventure
+  description: 这本书品相良好，封面光滑，描绘了一幅色彩鲜艳、细节繁复的丛林场景。标题“冒险地图”以醒目的金色字体书写。封面上还有一只神秘手提箱的图像，地图正从箱中散落出来。 | The book is in a good condition, with a glossy cover depicting a jungle scene with vibrant colors and intricate details. The title "The Map of Adventure," is written in bold, gold lettering. The cover also features an image of a mysterious suitcase with the map spilling out of it.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#56c463"
-      - state: icon_briefcase
-      - state: decor_wingette
-        color: "#298033"
-      - state: icon_briefcase
-      - state: detail_bookmark
-        color: "#61363d"
-      - state: detail_rivets
-        color: "#ffde7d"
-    - type: Paper
-      content: book-text-map
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#56c463"
+    - state: icon_briefcase
+    - state: decor_wingette
+      color: "#298033"
+    - state: icon_briefcase
+    - state: detail_bookmark
+      color: "#61363d"
+    - state: detail_rivets
+      color: "#ffde7d"
+  - type: Paper
+    content: book-text-map
 
 - type: entity
   parent: BookBase
   id: BookJourney
-  name: a journey of music, mountains, and self-discovery
-  description: The book is in excellent condition, with crisp pages and a glossy cover. The cover features a striking image of a mountain range, with a silhouette of a climber with a guitar on their back in the foreground. The title is bold and eye-catching, with the subtitle "A Journey of Music, Mountains, and Self-Discovery."
+  name: 一段关于音乐、群山与自我发现的旅程 | a journey of music, mountains, and self-discovery
+  description: 这本书品相极佳，书页挺括，封面光洁。封面上是一幅引人注目的山脉图像，前景中有一个背着吉他的登山者的剪影。书名醒目抢眼，副标题为“一段关于音乐、群山与自我发现的旅程”。 | The book is in excellent condition, with crisp pages and a glossy cover. The cover features a striking image of a mountain range, with a silhouette of a climber with a guitar on their back in the foreground. The title is bold and eye-catching, with the subtitle "A Journey of Music, Mountains, and Self-Discovery."
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#9bc1c9"
-      - state: icon_briefcase
-      - state: icon_mount
-      - state: detail_bookmark
-        color: "#61363d"
-      - state: detail_rivets
-        color: "#ffde7d"
-    - type: Paper
-      content: book-text-journ-mount
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#9bc1c9"
+    - state: icon_briefcase
+    - state: icon_mount
+    - state: detail_bookmark
+      color: "#61363d"
+    - state: detail_rivets
+      color: "#ffde7d"
+  - type: Paper
+    content: book-text-journ-mount
 
 - type: entity
   parent: BookBase
   id: BookInspiration
-  name: finding inspiration - a writer's journey through the woods
-  description: The book is in a new condition with a cover depicting a serene forest scene with a waterfall and colorful wildflowers. The title of the book "Finding Inspiration - A Writer's Journey Through the Woods" and the author's name are prominently displayed at the bottom.
+  name: 寻找灵感——一位作家穿越森林的旅程 | finding inspiration - a writer's journey through the woods
+  description: 这本书是全新状态，封面描绘了一片宁静的森林景象，有瀑布和五彩斑斓的野花。书名“寻找灵感——一位作家穿越森林的旅程”和作者姓名醒目地展示在底部。 | The book is in a new condition with a cover depicting a serene forest scene with a waterfall and colorful wildflowers. The title of the book "Finding Inspiration - A Writer's Journey Through the Woods" and the author's name are prominently displayed at the bottom.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/books.rsi
-      layers:
-      - state: paper
-      - state: cover_base
-        color: "#1d662c"
-      - state: decor_spine
-        color: "#2a8c58"
-      - state: icon_glow
-        color: "#b9edc4"
-      - state: icon_tree
-      - state: detail_bookmark
-        color: "#61363d"
-    - type: Paper
-      content: book-text-inspiration
+  - type: Sprite
+    sprite: Objects/Misc/books.rsi
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#1d662c"
+    - state: decor_spine
+      color: "#2a8c58"
+    - state: icon_glow
+      color: "#b9edc4"
+    - state: icon_tree
+    - state: detail_bookmark
+      color: "#61363d"
+  - type: Paper
+    content: book-text-inspiration
 
 - type: entity
   parent: BookBase
   id: BookJanitorTale
-  name: the tales of a tired janitor
-  description: A clean looking book, smelling vaguely of soap and bleach. 
+  name: 疲惫清洁工的故事 | the tales of a tired janitor
+  description: 一本看起来很干净的书，隐约散发着肥皂和漂白剂的气味。 | A clean looking book, smelling vaguely of soap and bleach.
   components:
   - type: Sprite
     sprite: Objects/Misc/books.rsi

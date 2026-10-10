@@ -5,7 +5,7 @@
   abstract: true
   parent: [SolutionSmall, FoodInjectableBase]
   id: FoodNoodlesBase
-  description: Now that's a nice pasta!
+  description: 这真是一道美味的意面！ | Now that's a nice pasta!
   components:
   - type: Item
     shape:
@@ -23,14 +23,14 @@
 - type: entity
   parent: FoodNoodlesBase
   id: FoodNoodlesBoiled
-  name: boiled spaghetti
-  description: A plain dish of noodles, this needs more ingredients.
+  name: 煮意大利面 | boiled spaghetti
+  description: 一盘普通的面条，还需要更多配料。 | A plain dish of noodles, this needs more ingredients.
   components:
   - type: Item
     storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
-      - pasta
+    - pasta
   - type: Sprite
     state: boiled
 # Tastes like pasta.
@@ -38,15 +38,15 @@
 - type: entity
   parent: FoodNoodlesBase
   id: FoodNoodles
-  name: spaghetti
-  description: Spaghetti and crushed tomatoes. Just like your abusive father used to make!
+  name: 意大利面 | spaghetti
+  description: 意大利面配碎番茄。就像你那个虐待狂父亲以前做的一样！ | Spaghetti and crushed tomatoes. Just like your abusive father used to make!
   components:
   - type: Item
     storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
-      - pasta
-      - tomato
+    - pasta
+    - tomato
   - type: Sprite
     state: tomato
   - type: Solution
@@ -64,8 +64,8 @@
 - type: entity
   parent: [SolutionNormal, FoodNoodlesBase]
   id: FoodNoodlesCopy
-  name: copypasta
-  description: You probably shouldn't try this, you always hear people talking about how bad it is...
+  name: 复制粘贴文 | copypasta
+  description: 你可能不该尝试这个，你总是听人说它有多糟糕…… | You probably shouldn't try this, you always hear people talking about how bad it is...
   components:
   - type: Item
     size: Normal
@@ -77,7 +77,7 @@
     - FoodPlateSmall
   - type: FlavorProfile
     flavors:
-      - copypasta
+    - copypasta
   - type: Sprite
     state: copypasta
   - type: Solution
@@ -92,15 +92,15 @@
 - type: entity
   parent: FoodNoodlesBase
   id: FoodNoodlesMeatball
-  name: spaghetti and meatballs
-  description: Now that's a nice-a meatball!
+  name: 意大利面配肉丸 | spaghetti and meatballs
+  description: 这才是个好肉丸！ | Now that's a nice-a meatball!
   components:
   - type: Item
     storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
-      - pasta
-      - meaty
+    - pasta
+    - meaty
   - type: Sprite
     state: meatball
   - type: Solution
@@ -118,31 +118,31 @@
 - type: entity
   parent: FoodNoodlesBase
   id: FoodNoodlesSpesslaw
-  name: spesslaw
-  description: A lawyer's favourite.
+  name: 斯佩斯劳 | spesslaw
+  description: 律师的最爱。 | A lawyer's favourite.
   components:
   - type: Item
     storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
-      - pasta
-      - meaty
+    - pasta
+    - meaty
   - type: Sprite
     state: spesslaw
 # Tastes like pasta, meat.
 
 - type: entity
-  name: chow mein
+  name: 炒面 | chow mein
   parent: FoodNoodlesBase
   id: FoodNoodlesChowmein
-  description: A nice mix of noodles and fried vegetables.
+  description: 美味的面条和炒蔬菜的完美结合。 | A nice mix of noodles and fried vegetables.
   components:
   - type: FlavorProfile
     flavors:
-      - pasta
-      - oily
-      - eggplant
-      - carrot
+    - pasta
+    - oily
+    - eggplant
+    - carrot
   - type: Sprite
     state: chowmein
   - type: Solution
@@ -157,15 +157,15 @@
 - type: entity
   parent: FoodNoodlesBase
   id: FoodNoodlesButter
-  name: butter noodles
-  description: Noodles covered in savory butter. Simple and slippery, but delicious.
+  name: 黄油面条 | butter noodles
+  description: 裹着咸香黄油的面条。简单顺滑，却十分美味。 | Noodles covered in savory butter. Simple and slippery, but delicious.
   components:
   - type: Item
     storedOffset: 0,-4
   - type: FlavorProfile
     flavors:
-      - pasta
-      - butter
+    - pasta
+    - butter
   - type: Sprite
     state: butter
   - type: Solution

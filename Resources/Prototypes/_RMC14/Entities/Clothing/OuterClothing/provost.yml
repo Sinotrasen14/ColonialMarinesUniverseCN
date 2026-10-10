@@ -1,38 +1,35 @@
-# Provost
 - type: entity
   parent: CMArmorM2MP
   id: RMCArmorProvost
-  name: M3 pattern provost armor
-  description: A standard Provost M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+  name: M3型宪兵护甲
+  description: 标准宪兵M3型胸甲。可保护胸部免受枪弹、利器和意外事故的伤害。其上绑有一个小皮革袋，可提供有限的储物空间。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Provost/medium.rsi
   - type: Item
     size: Normal
   - type: CMArmor
-    bullet: 20 # CLOTHING_ARMOR_MEDIUM
+    bullet: 20
     bio: 15
-    explosionArmor: 25 # CLOTHING_ARMOR_MEDIUMHIGH
+    explosionArmor: 25
   - type: RMCArmorSpeedTier
     speedTier: light
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+  - type: ClothingSpeedModifier
     walkModifier: 0.725
     sprintModifier: 0.725
   - type: Storage
     grid:
-    - 0,0,5,1 # 3 slots
+    - 0,0,5,1
   - type: ItemCamouflage
-    camouflageVariations: { }
-
+    camouflageVariations: {}
 - type: entity
   parent: RMCArmorProvost
   id: RMCArmorProvostSenior
-  name: M3 pattern senior provost armor
-  description: A more refined Provost M3 Pattern Chestplate for senior officers. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+  name: M3型高级宪兵护甲
+  description: 为高级军官设计的更精致宪兵M3型胸甲。可保护胸部免受子弹、利器和意外事故的伤害。其上用带子固定着一个小皮革袋，用于有限的储物。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Provost/senior.rsi
-
 - type: entity
   parent: RMCArmorProvostSenior
   id: RMCArmorProvostSeniorFilled
@@ -41,38 +38,35 @@
     contents:
     - id: CMFlash
     - id: RMCHandcuffs
-
 - type: entity
   parent: RMCArmorProvost
   id: RMCArmorProvostMarshal
-  name: M5 pattern provost marshal armor
-  description: A custom fit luxury armor suit for Provost Marshals. Useful for letting your men know who is in charge when taking to the field.
+  name: M5型宪兵司令护甲
+  description: 为宪兵司令量身定制的奢华护甲套装。在奔赴战场时，有助于让部下知道谁才是长官。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Provost/marshal.rsi
   - type: Storage
     grid:
-    - 0,0,7,1 # 4 slots
-
+    - 0,0,7,1
 - type: entity
   parent: RMCArmorProvost
   id: RMCArmorProvostLight
-  name: M3 pattern provost light armor
-  description: A lighter Provost M3 Pattern Chestplate. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+  name: M3型宪兵轻型护甲
+  description: 一件更轻便的M3型宪兵胸甲。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Provost/light.rsi
   - type: RMCArmorSpeedTier
     speedTier: very light
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_VERY_LIGHT
+  - type: ClothingSpeedModifier
     walkModifier: 0.897
     sprintModifier: 0.897
-
 - type: entity
   parent: RMCArmorProvost
   id: RMCArmorProvostFlexi
-  name: M3 pattern provost flexi-armor
-  description: A more refined Provost M3 Pattern Chestplate for senior officers. Protects the chest from ballistic rounds, bladed objects and accidents. It has a small leather pouch strapped to it for limited storage.
+  name: M3型宪兵柔性护甲
+  description: 为高级军官准备的更精致的宪兵 M3 型胸甲。可保护胸部免受枪弹、利器及意外伤害。其上绑有一个小皮革袋，用于有限储物。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Provost/flexi.rsi
@@ -80,24 +74,24 @@
     size: Normal
   - type: Storage
     grid:
-    - 0,0,3,1 # 2 slots
-
-# Special agent
+    - 0,0,3,1
 - type: entity
-  parent: [CMArmorM3Medium, RMCAllowSuitStorageClothingArmorMP]
+  parent:
+  - CMArmorM3Medium
+  - RMCAllowSuitStorageClothingArmorMP
   id: RMCArmorProvostAgent
-  name: M3 pattern special agent armor
-  description: A modified luxury armor, originally meant for a Provost Marshall, modified to use the colors and insignia of the intelligence service.
+  name: M3型特工护甲
+  description: 一件经过改装的豪华护甲，原为宪兵司令设计，后改装为采用情报部门的颜色和徽章。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Provost/special.rsi
   - type: CMArmor
     melee: 25
-    bullet: 25 # CLOTHING_ARMOR_MEDIUMHIGH
+    bullet: 25
     bio: 20
-    explosionArmor: 20 # CLOTHING_ARMOR_MEDIUM
+    explosionArmor: 20
   - type: Storage
     grid:
-    - 0,0,3,1 # 2 slots
+    - 0,0,3,1
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}

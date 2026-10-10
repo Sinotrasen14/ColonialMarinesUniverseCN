@@ -1,8 +1,8 @@
 - type: entity
-  name: handheld mass scanner
+  name: 手持式质量扫描仪 | handheld mass scanner
   parent: BaseHandheldComputer
   id: HandHeldMassScanner
-  description: A hand-held mass scanner.
+  description: 一个手持式质量扫描仪。 | A hand-held mass scanner.
   components:
   - type: Item
     sprite: Objects/Tools/handheld_mass_scanner.rsi
@@ -10,11 +10,11 @@
     sprite: Objects/Tools/handheld_mass_scanner.rsi
     state: icon
     layers:
-      - state: icon
-      - state: scanner
-        shader: unshaded
-        visible: false
-        map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+    - state: icon
+    - state: scanner
+      shader: unshaded
+      visible: false
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: RadarConsole
     maxRange: 256
     followEntity: true
@@ -24,9 +24,9 @@
     visuals:
       enum.BatteryVisuals.State:
         enum.PowerDeviceVisualLayers.Powered:
-          Full: { visible: true }
-          Neither: { visible: true }
-          Empty: { visible: false }
+          Full: {visible: true}
+          Neither: {visible: true}
+          Empty: {visible: false}
   - type: PowerCellDraw
     drawRate: 1.5
   - type: ToggleCellDraw

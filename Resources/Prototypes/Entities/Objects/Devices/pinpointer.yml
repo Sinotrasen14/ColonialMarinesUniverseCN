@@ -1,14 +1,14 @@
 - type: entity
-  name: pinpointer
-  description: A handheld tracking device. While typically far more capable, this one has been configured to lock onto certain signals. Keep upright to retain accuracy.
+  name: 寻的器 | pinpointer
+  description: 一种手持追踪设备。虽然通常功能更为强大，但这一台已被配置为锁定特定信号。保持竖直以维持精度。 | A handheld tracking device. While typically far more capable, this one has been configured to lock onto certain signals. Keep upright to retain accuracy.
   parent: BaseItem
   id: PinpointerBase
   abstract: true
   components:
   - type: Transform
-    noRot: True
+    noRot: true
   - type: Sprite
-    noRot: True
+    noRot: true
     sprite: Objects/Devices/pinpointer.rsi
     layers:
     - state: pinpointer
@@ -41,31 +41,31 @@
     visuals:
       enum.PinpointerVisuals.IsActive:
         enum.PinpointerLayers.Screen:
-          True: { visible: True }
-          False: { visible: False }
+          true: {visible: true}
+          false: {visible: false}
       enum.PinpointerVisuals.TargetDistance:
         enum.PinpointerLayers.Screen:
-          Unknown: { state: pinonnull }
-          Reached: { state: pinondirect }
-          Close: { state: pinonclose }
-          Medium: { state: pinonmedium }
-          Far: { state: pinonfar }
+          Unknown: {state: pinonnull}
+          Reached: {state: pinondirect}
+          Close: {state: pinonclose}
+          Medium: {state: pinonmedium}
+          Far: {state: pinonfar}
   - type: AnimationPlayer
 
 - type: entity
-  name: pinpointer
+  name: 寻针器 | pinpointer
   id: PinpointerNuclear
-  parent: [ PinpointerBase, BaseCommandContraband ]
+  parent: [PinpointerBase, BaseCommandContraband]
   components:
   - type: Pinpointer
     component: NukeDisk
     targetName: nuclear authentication disk
 
 - type: entity
-  name: syndicate pinpointer
-  description: Produced specifically for nuclear operative missions, get that disk!
+  name: 辛迪加指示器 | syndicate pinpointer
+  description: 专为核行动任务生产，拿到那张磁盘！ | Produced specifically for nuclear operative missions, get that disk!
   id: PinpointerSyndicateNuclear
-  parent: [ PinpointerBase, BaseSyndicateContraband ]
+  parent: [PinpointerBase, BaseSyndicateContraband]
   components:
   - type: Sprite
     layers:
@@ -96,8 +96,8 @@
     targetName: nuclear authentication disk
 
 - type: entity
-  name: universal pinpointer
-  description: A handheld tracking device that locks onto any physical entity while off. Keep upright to retain accuracy.
+  name: 通用定位器 | universal pinpointer
+  description: 一种手持追踪设备，在关闭状态下可锁定任何物理实体。保持竖直以维持准确性。 | A handheld tracking device that locks onto any physical entity while off. Keep upright to retain accuracy.
   id: PinpointerUniversal
   parent: PinpointerBase
   components:
@@ -131,8 +131,8 @@
 
 - type: entity
   parent: PinpointerBase
-  name: station pinpointer
-  description: A handheld tracking device that leads to the direction of any nearby station.
+  name: 空间站定位器 | station pinpointer
+  description: 一个手持追踪装置，可指向附近任何空间站的方向。 | A handheld tracking device that leads to the direction of any nearby station.
   id: PinpointerStation
   suffix: Station
   components:
@@ -165,10 +165,10 @@
     targetName: the station
 
 - type: entity
-  parent: [ PinpointerBase, BaseXenoborgContraband ]
+  parent: [PinpointerBase, BaseXenoborgContraband]
   id: PinpointerMothership
-  name: core pinpointer
-  description: A handheld tracking device that leads to the direction of the Mothership core.
+  name: 核心定位器 | core pinpointer
+  description: 一种手持追踪设备，可引导至母舰核心的方向。 | A handheld tracking device that leads to the direction of the Mothership core.
   components:
   - type: Sprite
     layers:
@@ -201,14 +201,14 @@
 - type: entity
   parent: BaseItem
   id: PinpointerMothershipPiece
-  name: piece of core pinpointer
-  description: A piece of a core pinpointer. You need four pieces to repair it.
+  name: 核心定位器碎片 | piece of core pinpointer
+  description: 一块核心定位器碎片。你需要四块碎片来修复它。 | A piece of a core pinpointer. You need four pieces to repair it.
   components:
   - type: Sprite
     sprite: Objects/Devices/pinpointer.rsi
     layers:
     - state: pinpointer-xenoborg-piece-1
-      map: [ "base" ]
+      map: ["base"]
   - type: RandomSprite
     available:
     - base:
@@ -224,8 +224,8 @@
 - type: entity
   parent: PinpointerMothership
   id: PinpointerMothershipRepaired
-  name: repaired core pinpointer
-  description: A handheld tracking device that leads to the direction of the Mothership core. This one has seen better days.
+  name: 修复后的核心指示器 | repaired core pinpointer
+  description: 一个手持追踪装置，可指向母舰核心的方向。这一个已经破旧不堪了。 | A handheld tracking device that leads to the direction of the Mothership core. This one has seen better days.
   components:
   - type: Sprite
     layers:

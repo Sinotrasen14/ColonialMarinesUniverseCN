@@ -2,8 +2,8 @@
 - type: entity
   parent: RMCShoesLaceupDress
   id: CMShoesLaceupCommander
-  name: commanding officer dress shoes
-  description: Has special soles for better trampling those underneath.
+  name: 指挥官礼服鞋
+  description: 配有特制鞋底，能更好地践踏下方的人。
 
 - type: entity
   abstract: true
@@ -16,7 +16,7 @@
   - type: ItemSlots
     slots:
       item:
-        name: cm-knife
+        name: 厘米刀
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         whitelist:
@@ -35,15 +35,15 @@
 - type: entity
   parent: ClothingShoesMilitaryBase
   id: CMBootsBlack
-  name: combat boots
-  description: Standard issue combat boots for combat scenarios or combat situations. All combat, all the time.
+  name: 作战靴
+  description: 标准配发作战靴，适用于战斗场景或战斗情况。随时随地，皆为战斗。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/black.rsi
     layers:
     - state: icon
     - state: filled
-      map: [ "enum.CMItemSlotsLayers.Fill" ]
+      map: ["enum.CMItemSlotsLayers.Fill"]
   - type: EmitSoundOnDrop
     sound:
       collection: RMCEquipArmor
@@ -64,7 +64,7 @@
   - type: ItemSlots
     slots:
       item:
-        name: cm-knife
+        name: CM刀
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         whitelist:
@@ -90,8 +90,8 @@
 - type: entity
   parent: CMBootsBlackFilled
   id: RMCScoutShoes
-  name: infiltrator boots # Could probably use it's own sprite
-  description: A modified pair of combat boots, including several trimmed down areas and padded with cloth alongside some form of leather.
+  name: 渗透者靴              # Could probably use it's own sprite
+  description: 一双经过改装的作战靴，几处经过削薄处理，并用布料以及某种皮革作为衬垫。
   components:
   - type: FootstepModifier
     footstepSoundCollection:
@@ -103,8 +103,8 @@
 - type: entity
   parent: CMBootsBlack
   id: RMCShoesCombat
-  name: combat boots
-  description: When you REALLY want to turn up the heat.
+  name: 战斗靴
+  description: 当你真的想火力全开时。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/swat.rsi
@@ -115,7 +115,7 @@
 - type: entity
   parent: CMBootsBlack
   id: CMBootsBrown
-  description: Standard issue combat boots for combat scenarios or combat situations. All combat, all the time. These are brown.
+  description: 标准配发作战靴，用于战斗场景或战斗情况。一切皆为战斗，时刻如此。这些是棕色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/brown.rsi
@@ -131,8 +131,8 @@
 - type: entity
   parent: CMBootsBlack
   id: CMBootsUrban
-  name: urban boots
-  description: Don't go walkin' slow, the devil's on the loose.
+  name: 都市靴
+  description: 别慢吞吞地走，恶魔已经脱缰了。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/urban.rsi
@@ -148,8 +148,8 @@
 - type: entity
   parent: CMBootsBlack
   id: CMBootsGrey
-  name: grey boots
-  description: Standard issue combat boots for combat scenarios or combat situations. All combat, all the time. These are grey.
+  name: 灰色靴子
+  description: 标准配发作战靴，适用于作战场景或作战情况。永远作战，时刻作战。这双靴子是灰色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/grey.rsi
@@ -165,8 +165,8 @@
 - type: entity
   parent: CMBootsBlack
   id: CMBootsJungle
-  name: jungle boots
-  description: Don't go walkin' slow, the devil's on the loose.
+  name: 丛林靴
+  description: 别慢吞吞地走，魔鬼已经脱缰了。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/jungle.rsi
@@ -182,15 +182,15 @@
 - type: entity
   parent: CMBootsBlack
   id: RMCBootsCorporate
-  name: rugged boots
-  description: These synth-leather boots seem high quality when first worn, but quickly deteriorate, especially in the environments the corporate security members these are issued to operate in. Still, better than nothing.
+  name: 结实的靴子
+  description: 这些合成革靴子刚穿上时看起来质量很高，但很快就会损坏，尤其是在配发这些靴子的公司安保人员执行任务的环境中。不过，有总比没有好。
 
 
 # SPP
 - type: entity
   parent: CMBootsBrown
   id: RMCBootsSPP
-  name: military combat boots
+  name: 军用作战靴
 
 - type: entity
   parent: [RMCItemSlotM5Bayonet, RMCBootsSPP]
@@ -200,7 +200,7 @@
   - type: ItemSlots
     slots:
       item:
-        name: cm-knife
+        name: 厘米刀
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         whitelist:
@@ -217,7 +217,7 @@
 - type: entity
   parent: CMBootsBlack
   id: RMCBootsSPPBlack
-  name: military combat boots
+  name: 军用作战靴
 
 - type: entity
   parent: [RMCItemSlotM5Bayonet, RMCBootsSPPBlack]
@@ -227,7 +227,7 @@
   - type: ItemSlots
     slots:
       item:
-        name: cm-knife
+        name: 厘米刀
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         whitelist:
@@ -245,8 +245,8 @@
 - type: entity
   parent: CMBootsBlack
   id: RMCBootsPMC
-  name: polished shoes
-  description: The height of fashion, but these look to be woven with protective fiber.
+  name: 锃亮的鞋子
+  description: 时尚的巅峰，但这些看起来是用防护纤维编织而成的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/jackboots.rsi
@@ -262,8 +262,8 @@
 - type: entity
   parent: RMCBootsPMC
   id: RMCBootsPMCCommando
-  name: PMC commando boots
-  description: A pair of heavily armored, acid-resistant boots.
+  name: PMC突击队靴
+  description: 一双重装甲、耐酸的靴子。
 
 - type: entity
   parent: [RMCItemSlotM5Bayonet, RMCBootsPMCCommando]
@@ -274,15 +274,15 @@
 - type: entity
   parent: [RMCItemSlotM5Bayonet, RMCBootsPMC]
   id: RMCBootsVanBandolier
-  name: hiking boots
-  description: Over stone, over ice, through sun and sand, mud and snow, into raging water and hungry bog, these will never let you down.
+  name: 登山靴
+  description: 越过岩石，越过冰面，穿过烈日与沙地、泥泞与积雪，踏入汹涌水流和噬人的沼泽，它们绝不会让你失望。
 
 # CBRN
 - type: entity
   parent: [RMCItemSlotM5Bayonet, RMCBootsPMCCommando]
   id: RMCBootsCBRN
-  name: M3 MOPP boots
-  description: M3 MOPP boots have been designed to protect the wearer from contact with any possible infection vectors or hazardous substances that may have contaminated the area of operations. This includes further enhancements in conjunction with the standard durability of M3 boots, reducing the probability of punctures or cuts as well as the effects of radiation.
+  name: M3 MOPP靴
+  description: M3 MOPP靴旨在保护穿着者免于接触任何可能污染作战区域的感染媒介或危险物质。这包括在M3靴标准耐用性基础上进行的进一步强化，从而降低被刺穿或割伤的可能性以及辐射影响。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/cbrn.rsi
@@ -305,8 +305,8 @@
 - type: entity
   parent: CMBootsBlack
   id: RMCBootsRoyal
-  name: L10 pattern combat boots
-  description: Standard issue combat boots for combat scenarios or combat situations. Used by the Three World Empire's Royal Marines Commandos.
+  name: L10型作战靴
+  description: 标准配发作战靴，用于战斗场景或战斗情况。由三世界帝国的皇家海军陆战队突击队使用。
   suffix: TSE, RCM
   components:
   - type: Sprite
@@ -322,7 +322,7 @@
   - type: ItemSlots
     slots:
       item:
-        name: cm-knife
+        name: cm刀
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m42a2.ogg
         whitelist:

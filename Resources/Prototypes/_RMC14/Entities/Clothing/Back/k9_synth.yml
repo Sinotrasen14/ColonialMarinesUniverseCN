@@ -2,18 +2,20 @@
   parent: CMPersonalStorageBase
   id: RMCK9SynthHarnessBase
   abstract: true
-  name: K9 carry harness
-  description: A form-fitted carry harness for synthetic K9 units.
+  name: K9携行背带
+  description: 一款为合成K9单位设计的贴身携行背带。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/K9Synth/harnesses.rsi
     layers:
     - state: marinepack_k9
     - state: marinepack_k9
-      map: [ "openLayer" ]
+      map:
+      - openLayer
       visible: false
     - state: marinepack_k9
-      map: [ "closedLayer" ]
+      map:
+      - closedLayer
       visible: true
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Back/K9Synth/harnesses.rsi
@@ -21,43 +23,44 @@
     maxItemSize: Normal
     grid:
     - 0,0,20,1
-
 - type: entity
   parent: RMCK9SynthHarnessBase
   id: RMCK9SynthCargoHarness
-  name: M209 portable K9 backpack
-  description: Form fitted for the K9 Rescue Unit line of synthetics. Designed to lug gear into the battlefield.
-
+  name: M209便携式K9背包
+  description: 为K9救援队合成材质系列贴身定制。专为将装备搬运至战场而设计。
 - type: entity
   parent: RMCK9SynthHarnessBase
   id: RMCK9SynthMedicalHarness
-  name: M210 portable K9 medical backpack
-  description: Form fitted for the K9 Rescue Unit line of synthetics. For carrying medical supplies.
+  name: M210便携式K9医疗背包
+  description: 为K9救援单位合成材料系列贴身设计。用于携带医疗用品。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/K9Synth/harnesses.rsi
     layers:
     - state: marinepack_medic_k9
     - state: marinepack_medic_k9
-      map: [ "openLayer" ]
+      map:
+      - openLayer
       visible: false
     - state: marinepack_medic_k9
-      map: [ "closedLayer" ]
+      map:
+      - closedLayer
       visible: true
-
 - type: entity
   parent: RMCK9SynthHarnessBase
   id: RMCK9SynthMPHarness
-  name: M553 portable K9 police backpack
-  description: Form fitted for the K9 Rescue Unit line of synthetics. For carrying MP Equipment.
+  name: M553便携式K9警用背包
+  description: 为K9救援队合成材料系列贴身定制。用于携带MP装备。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/K9Synth/harnesses.rsi
     layers:
     - state: mppack_k9
     - state: mppack_k9
-      map: [ "openLayer" ]
+      map:
+      - openLayer
       visible: false
     - state: mppack_k9
-      map: [ "closedLayer" ]
+      map:
+      - closedLayer
       visible: true

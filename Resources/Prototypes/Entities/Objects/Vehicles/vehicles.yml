@@ -24,8 +24,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.4
         density: 360
         restitution: 0.0
@@ -41,8 +40,8 @@
 - type: entity
   id: VehicleWheelchair
   parent: [BaseVehicleStrap, BaseFoldable, BaseItem]
-  name: wheelchair
-  description: A chair with big wheels. It looks like you can move in these on your own.
+  name: 轮椅 | wheelchair
+  description: 一把带有大轮子的椅子。看起来你可以自己用它在周围移动。 | A chair with big wheels. It looks like you can move in these on your own.
   components:
   - type: Sprite
     sprite: Objects/Vehicles/wheelchair.rsi
@@ -67,8 +66,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.2
         density: 360
         restitution: 0.0
@@ -82,8 +80,8 @@
 - type: entity
   id: VehicleJanicart
   parent: BaseVehicleStrap
-  name: janicart
-  description: The janitor's trusty steed.
+  name: 清洁车 | janicart
+  description: 清洁工可靠的坐骑。 | The janitor's trusty steed.
   components:
   - type: Sprite
     sprite: Objects/Vehicles/janicart.rsi
@@ -116,14 +114,12 @@
   - type: GravityAffected
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 500
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTrigger
         damage: 250
       behaviors:
       - !type:DoActsBehavior

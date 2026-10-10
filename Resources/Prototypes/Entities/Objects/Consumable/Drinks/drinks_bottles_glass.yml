@@ -2,7 +2,7 @@
 
 - type: entity
   abstract: true
-  parent: [ DrinkBaseMaterialGlass, SolutionNormal, DrinkBase, DrinkBaseOpenable, DrinkBaseEmptyTrash ]
+  parent: [DrinkBaseMaterialGlass, SolutionNormal, DrinkBase, DrinkBaseOpenable, DrinkBaseEmptyTrash]
   id: DrinkBottleGlassBase
   components:
   - type: Openable
@@ -25,8 +25,7 @@
     - Trash
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -48,7 +47,7 @@
 
 - type: entity
   abstract: true
-  parent: [ SolutionSmall, DrinkBottleGlassBase ]
+  parent: [SolutionSmall, DrinkBottleGlassBase]
   id: DrinkBottleGlassSmallBase
   components:
   - type: Item
@@ -66,7 +65,7 @@
 
 - type: entity
   abstract: true
-  parent: [ SolutionLarge, DrinkBottleGlassBase ]
+  parent: [SolutionLarge, DrinkBottleGlassBase]
   id: DrinkBottleGlassLargeBaseFull
   suffix: Full
   components:
@@ -80,8 +79,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottleAbsinthe
-  name: Jailbreaker Verte
-  description: One sip of this and you just know you're gonna have a good time.
+  name: 越狱者 Verte | Jailbreaker Verte
+  description: 喝上一口，你就知道你将会度过一段美好时光。 | One sip of this and you just know you're gonna have a good time.
   components:
   - type: Label
     currentLabel: reagent-name-absinthe
@@ -102,8 +101,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottleAlcoClear
-  name: Miss Blue Curaçao
-  description: A fruity, exceptionally azure drink. Does not allow the imbiber to use the fifth magic.
+  name: 蓝库拉索小姐 | Miss Blue Curaçao
+  description: 一种果味浓郁、色泽格外湛蓝的饮品。饮用者无法使用第五魔法。 | A fruity, exceptionally azure drink. Does not allow the imbiber to use the fifth magic.
   components:
   - type: Label
     currentLabel: reagent-name-blue-curacao
@@ -131,8 +130,8 @@
 - type: entity
   parent: [DrinkVisualsOpenable, DrinkBottleGlassBaseFull]
   id: DrinkBottleOfNothingFull
-  name: bottle of nothing
-  description: A bottle filled with nothing.
+  name: 空瓶 | bottle of nothing
+  description: 一个装满虚无的瓶子。 | A bottle filled with nothing.
   components:
   - type: Solution
     solution:
@@ -147,8 +146,8 @@
 - type: entity
   parent: [DrinkVisualsOpenable, DrinkBottleGlassBaseFull]
   id: DrinkChampagneBottleFull
-  name: champagne bottle
-  description: Only people devoid of imagination can't find an excuse for champagne.
+  name: 香槟瓶 | champagne bottle
+  description: 只有缺乏想象力的人才找不到喝香槟的借口。 | Only people devoid of imagination can't find an excuse for champagne.
   components:
   - type: Solution
     solution:
@@ -167,8 +166,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottleCognac
-  name: cognac bottle
-  description: A sweet and strongly alcoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time.
+  name: 干邑瓶 | cognac bottle
+  description: 一种甜美而烈性十足的饮品，经过多次蒸馏和多年陈酿而成。这次你最好别喊“SHITCURITY”了。 | A sweet and strongly alcoholic drink, made after numerous distillations and years of maturing. You might as well not scream 'SHITCURITY' this time.
   components:
   - type: Label
     currentLabel: reagent-name-cognac
@@ -189,8 +188,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
   id: DrinkGrenadineBottleFull
-  name: Briar Rose grenadine syrup bottle
-  description: Sweet and tangy, a bar syrup used to add color or flavor to drinks.
+  name: 荆棘玫瑰红石榴糖浆瓶 | Briar Rose grenadine syrup bottle
+  description: 酸甜可口，一种用于为饮品增添色彩或风味的酒吧糖浆。 | Sweet and tangy, a bar syrup used to add color or flavor to drinks.
   components:
   - type: Solution
     solution:
@@ -212,8 +211,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottleGin
-  name: Griffeater gin
-  description: A bottle of high quality gin, produced in the New London Space Station.
+  name: 格里菲特杜松子酒 | Griffeater gin
+  description: 一瓶高品质的杜松子酒，产自新伦敦空间站。 | A bottle of high quality gin, produced in the New London Space Station.
   components:
   - type: Label
     currentLabel: reagent-name-gin
@@ -234,8 +233,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottleGildlager
-  name: Gildlager bottle
-  description: 100 proof cinnamon schnapps, made for alcoholic teen girls on spring break.
+  name: 吉尔德拉格瓶 | Gildlager bottle
+  description: 100 proof肉桂烈酒，专为春假期间酗酒的少女们打造。 | 100 proof cinnamon schnapps, made for alcoholic teen girls on spring break.
   components:
   - type: Label
     currentLabel: reagent-name-gildlager
@@ -254,10 +253,10 @@
         Quantity: 120
 
 - type: entity
-  parent: [ DrinkVisualsOpenable, DrinkBottleGlassBase ]
+  parent: [DrinkVisualsOpenable, DrinkBottleGlassBase]
   id: DrinkBottleCoffeeLiqueur
-  name: coffee liqueur bottle
-  description: The great taste of coffee with none of the benifits.
+  name: 咖啡利口酒瓶 | coffee liqueur bottle
+  description: 咖啡的美味，毫无益处。 | The great taste of coffee with none of the benifits.
   components:
   - type: Label
     currentLabel: reagent-name-coffeeliqueur
@@ -278,8 +277,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBaseFull]
   id: DrinkMelonLiquorBottleFull
-  name: Emeraldine melon liquor
-  description: A bottle of 46 proof Emeraldine melon liquor. Sweet and light.
+  name: 翡翠瓜利口酒 | Emeraldine melon liquor
+  description: 一瓶46度的翡翠瓜利口酒。香甜清淡。 | A bottle of 46 proof Emeraldine melon liquor. Sweet and light.
   components:
   - type: Solution
     solution:
@@ -291,18 +290,18 @@
   - type: Sprite
     sprite: Objects/Consumable/Drinks/alco-bottle.rsi
     layers:
-      - state: icon_empty
-        map: ["enum.OpenableVisuals.Layer"]
-      - state: fill-6
-        map: ["enum.SolutionContainerLayers.Fill"]
+    - state: icon_empty
+      map: ["enum.OpenableVisuals.Layer"]
+    - state: fill-6
+      map: ["enum.SolutionContainerLayers.Fill"]
   - type: SolutionContainerVisuals
     maxFillLevels: 6
 
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottlePatron
-  name: Wrapp Artiste Patrón bottle
-  description: Silver laced tequila, served in space night clubs across the galaxy.
+  name: 包装艺术家培恩瓶 | Wrapp Artiste Patrón bottle
+  description: 银色蕾丝龙舌兰酒，供应于银河系各处的太空夜总会。 | Silver laced tequila, served in space night clubs across the galaxy.
   components:
   - type: Label
     currentLabel: reagent-name-patron
@@ -323,8 +322,8 @@
 - type: entity
   parent: [DrinkVisualsOpenable, DrinkBottleGlassBase]
   id: DrinkBottlePoisonWine
-  name: Warlock's Velvet bottle
-  description: What a delightful packaging for a surely high quality wine! The vintage must be amazing!
+  name: 术士的天鹅绒酒瓶 | Warlock's Velvet bottle
+  description: surely 高质量葡萄酒的包装真是令人愉悦！这款年份酒一定非常出色！ | What a delightful packaging for a surely high quality wine! The vintage must be amazing!
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/pwinebottle.rsi
@@ -337,7 +336,7 @@
 - type: entity
   parent: DrinkBottlePoisonWine
   id: DrinkPoisonWinebottleFull
-  name: Warlock's Velvet bottle
+  name: 术士的天鹅绒瓶 | Warlock's Velvet bottle
   suffix: Full
   components:
   - type: Solution
@@ -353,8 +352,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottleRum
-  name: Captain Pete's Cuban spiced rum
-  description: This isn't just rum, oh no. It's practically GRIFF in a bottle.
+  name: 皮特船长的古巴香料朗姆酒 | Captain Pete's Cuban spiced rum
+  description: 这可不是普通的朗姆酒，哦不。这简直是瓶装的格里芬。 | This isn't just rum, oh no. It's practically GRIFF in a bottle.
   components:
   - type: Label
     currentLabel: reagent-name-rum
@@ -375,8 +374,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottleTequila
-  name: Caccavo Guaranteed Quality tequila bottle
-  description: Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!
+  name: 卡卡沃保证品质龙舌兰酒瓶 | Caccavo Guaranteed Quality tequila bottle
+  description: 由优质石油馏分、纯沙利度胺及其他上等原料制成！ | Made from premium petroleum distillates, pure thalidomide and other fine quality ingredients!
   components:
   - type: Label
     currentLabel: reagent-name-tequila
@@ -397,8 +396,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottleVermouth
-  name: Goldeneye vermouth bottle
-  description: Sweet, sweet dryness!
+  name: 金眼苦艾酒瓶 | Goldeneye vermouth bottle
+  description: 甜蜜，甜蜜的干爽！ | Sweet, sweet dryness!
   components:
   - type: Label
     currentLabel: reagent-name-vermouth
@@ -419,8 +418,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottleVodka
-  name: vodka bottle
-  description: Aah, vodka. Prime choice of drink AND fuel by Russians worldwide.
+  name: 伏特加瓶 | vodka bottle
+  description: 啊，伏特加。全世界俄罗斯人的首选饮品兼燃料。 | Aah, vodka. Prime choice of drink AND fuel by Russians worldwide.
   components:
   - type: Label
     currentLabel: reagent-name-vodka
@@ -441,8 +440,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassBase]
   id: DrinkBottleWhiskey
-  name: Uncle Git's Special Reserve
-  description: A premium single-malt whiskey, gently matured inside the tunnels of a nuclear shelter. TUNNEL WHISKEY RULES.
+  name: 吉特叔叔的特别珍藏 | Uncle Git's Special Reserve
+  description: 一款优质单一麦芽威士忌，在核掩体的隧道中温和陈酿。隧道威士忌万岁。 | A premium single-malt whiskey, gently matured inside the tunnels of a nuclear shelter. TUNNEL WHISKEY RULES.
   components:
   - type: Label
     currentLabel: reagent-name-whiskey
@@ -463,8 +462,8 @@
 - type: entity
   parent: [DrinkVisualsOpenable, DrinkBottleGlassBase]
   id: DrinkBottleWine
-  name: Doublebearded Bearded Special wine bottle
-  description: A faint aura of unease and asspainery surrounds the bottle.
+  name: 双须胡须特酿葡萄酒瓶 | Doublebearded Bearded Special wine bottle
+  description: 瓶身周围萦绕着一丝淡淡的不安与蛋疼气息。 | A faint aura of unease and asspainery surrounds the bottle.
   components:
   - type: Label
     currentLabel: reagent-name-wine
@@ -492,7 +491,7 @@
     - DrinkBottle
 
 - type: entity
-  name: nt cahors bottle
+  name: nt cahors 酒瓶 | nt cahors bottle
   parent: DrinkBottleGlassBase
   id: DrinkBottleNTCahors
   components:
@@ -505,7 +504,7 @@
     - Trash
 
 - type: entity
-  name: nt cahors bottle
+  name: nt cahors 酒瓶 | nt cahors bottle
   parent: DrinkBottleNTCahors
   id: DrinkNTCahorsBottleFull
   suffix: Full
@@ -525,8 +524,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassLargeBaseFull]
   id: DrinkBeerGrowler # todo Needs to be renamed DrinkBeerBottleFullGrowler
-  name: beer growler  # beer it is. coffee. beer? coff-ee? be-er? c-o... b-e
-  description: An alcoholic beverage made from malted grains, hops, yeast, and water. XL growler bottle.
+  name: 啤酒格罗勒瓶 | beer growler # beer it is. coffee. beer? coff-ee? be-er? c-o... b-e
+  description: 一种由发芽谷物、啤酒花、酵母和水制成的酒精饮料。特大号格罗勒瓶。 | An alcoholic beverage made from malted grains, hops, yeast, and water. XL growler bottle.
   components:
   - type: Solution
     solution:
@@ -549,8 +548,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassLargeBaseFull]
   id: DrinkAleBottleFullGrowler
-  name: Magm-Ale growler
-  description: A true dorf's drink of choice. XL growler bottle.
+  name: 岩浆麦芽酒大酒瓶 | Magm-Ale growler
+  description: 真正的矮人首选饮品。超大酒瓶。 | A true dorf's drink of choice. XL growler bottle.
   components:
   - type: Solution
     solution:
@@ -572,8 +571,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassSmallBase]
   id: DrinkBottleBeer
-  name: beer bottle # beer it is. coffee. beer? coff-ee? be-er? c-o... b-e
-  description: An alcoholic beverage made from malted grains, hops, yeast, and water.
+  name: 啤酒瓶 | beer bottle # beer it is. coffee. beer? coff-ee? be-er? c-o... b-e
+  description: 一种由发芽谷物、啤酒花、酵母和水制成的酒精饮料。 | An alcoholic beverage made from malted grains, hops, yeast, and water.
   components:
   - type: Label
     currentLabel: reagent-name-beer
@@ -601,8 +600,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassSmallBase]
   id: DrinkBottleAle
-  name: Magm-Ale bottle
-  description: A true dorf's drink of choice.
+  name: 岩浆麦酒瓶 | Magm-Ale bottle
+  description: 真正的矮人首选饮品。 | A true dorf's drink of choice.
   components:
   - type: Label
     currentLabel: reagent-name-ale
@@ -627,8 +626,8 @@
 - type: entity
   parent: [DrinkVisualsOpenable, DrinkBottleGlassSmallBaseFull]
   id: DrinkSakeBottleFull
-  name: small sake bottle
-  description: The regret of the next morning seems to be nipping on the bottle too.
+  name: 小酒瓶 | small sake bottle
+  description: 第二天早上的悔意似乎也在啃噬着这只小酒瓶。 | The regret of the next morning seems to be nipping on the bottle too.
   components:
   - type: Solution
     solution:

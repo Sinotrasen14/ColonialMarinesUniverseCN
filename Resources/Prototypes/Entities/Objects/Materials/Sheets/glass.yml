@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseSheet
   id: SheetGlassBase
-  name: glass
-  description: A sheet of glass, used often on the station in various applications.
+  name: 玻璃 | glass
+  description: 一块玻璃，常用于空间站的各种应用中。 | A sheet of glass, used often on the station in various applications.
   components:
   - type: Sprite
     sprite: Objects/Materials/Sheets/glass.rsi
@@ -47,8 +47,7 @@
         Quantity: 10
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -87,8 +86,8 @@
 - type: entity
   parent: SheetGlassBase
   id: SheetRGlass
-  name: reinforced glass
-  description: A reinforced sheet of glass.
+  name: 强化玻璃 | reinforced glass
+  description: 一块强化玻璃板。 | A reinforced sheet of glass.
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -116,8 +115,7 @@
     node: SheetRGlass
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -144,7 +142,7 @@
 - type: entity
   parent: SheetRGlass
   id: SheetRGlass1
-  name: reinforced glass
+  name: 强化玻璃 | reinforced glass
   suffix: Single
   components:
   - type: Sprite
@@ -156,8 +154,8 @@
 - type: entity
   parent: SheetGlassBase
   id: SheetPGlass
-  name: plasma glass
-  description: A sheet of translucent plasma.
+  name: 等离子玻璃 | plasma glass
+  description: 一片半透明等离子体。 | A sheet of translucent plasma.
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -182,8 +180,7 @@
     node: SheetPGlass
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -208,7 +205,7 @@
 - type: entity
   parent: SheetPGlass
   id: SheetPGlass1
-  name: plasma glass
+  name: 等离子玻璃 | plasma glass
   suffix: Single
   components:
   - type: Sprite
@@ -220,8 +217,8 @@
 - type: entity
   parent: SheetPGlass
   id: SheetRPGlass
-  name: reinforced plasma glass
-  description: A reinforced sheet of translucent plasma.
+  name: 强化等离子玻璃 | reinforced plasma glass
+  description: 一块强化后的半透明等离子板。 | A reinforced sheet of translucent plasma.
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -260,7 +257,7 @@
 - type: entity
   parent: SheetRPGlass
   id: SheetRPGlass1
-  name: reinforced plasma glass
+  name: 强化等离子玻璃 | reinforced plasma glass
   suffix: Single
   components:
   - type: Sprite
@@ -272,8 +269,8 @@
 - type: entity
   parent: SheetGlassBase
   id: SheetUGlass
-  name: uranium glass
-  description: A sheet of uranium glass.
+  name: 铀玻璃 | uranium glass
+  description: 一片铀玻璃。 | A sheet of uranium glass.
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -298,8 +295,7 @@
     node: SheetUGlass
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -324,7 +320,7 @@
 - type: entity
   parent: SheetUGlass
   id: SheetUGlass1
-  name: uranium glass
+  name: 铀玻璃 | uranium glass
   suffix: Single
   components:
   - type: Sprite
@@ -336,8 +332,8 @@
 - type: entity
   parent: SheetUGlass
   id: SheetRUGlass
-  name: reinforced uranium glass
-  description: A reinforced sheet of uranium.
+  name: 强化铀玻璃 | reinforced uranium glass
+  description: 一块强化铀板。 | A reinforced sheet of uranium.
   components:
   - type: PhysicalComposition
     materialComposition:
@@ -375,7 +371,7 @@
 - type: entity
   parent: SheetRUGlass
   id: SheetRUGlass1
-  name: reinforced uranium glass
+  name: 强化铀玻璃 | reinforced uranium glass
   suffix: Single
   components:
   - type: Sprite
@@ -387,8 +383,8 @@
 - type: entity
   parent: SheetGlassBase
   id: SheetClockworkGlass
-  name: clockwork glass
-  description: A sheet of brass-hardened glass, primarily used by clockwork enthusiasts and remnants of Ratvarian cults.
+  name: 发条玻璃 | clockwork glass
+  description: 一块黄铜硬化玻璃板，主要由发条爱好者和拉特瓦尔教派残余分子使用。 | A sheet of brass-hardened glass, primarily used by clockwork enthusiasts and remnants of Ratvarian cults.
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -413,8 +409,7 @@
     node: SheetClockworkGlass
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -439,7 +434,7 @@
 - type: entity
   parent: SheetClockworkGlass
   id: SheetClockworkGlass1
-  name: clockwork glass
+  name: 发条玻璃 | clockwork glass
   suffix: Single
   components:
   - type: Sprite

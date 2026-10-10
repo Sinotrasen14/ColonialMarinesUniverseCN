@@ -4,8 +4,8 @@
   abstract: true
   parent: BaseItem
   id: BaseFigurine
-  name: figurine
-  description: A small miniature.
+  name: 小雕像 | figurine
+  description: 一个小型微缩模型。 | A small miniature.
   components:
   - type: Sprite
     sprite: Objects/Fun/figurines.rsi
@@ -39,8 +39,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineHeadOfPersonnel
-  name: head of personnel figure
-  description: A figurine depicting the glorious head of all personnel, away from their office as usual.
+  name: 人事主管手办 | head of personnel figure
+  description: 一个描绘所有人事主管光辉形象的手办，一如既往地不在办公室。 | A figurine depicting the glorious head of all personnel, away from their office as usual.
   components:
   - type: Sprite
     state: hop
@@ -50,8 +50,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurinePassenger
-  name: passenger figure
-  description: A figurine depicting an every day, run-of-the-mill passenger. No funny business here.
+  name: 乘客模型 | passenger figure
+  description: 一个描绘日常普通乘客的小雕像。这里没什么花招。 | A figurine depicting an every day, run-of-the-mill passenger. No funny business here.
   components:
   - type: Sprite
     state: passenger
@@ -61,8 +61,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineGreytider
-  name: greytider figure
-  description: A figurine depicting a dubious-looking passenger. Greytide worldwide!
+  name: 灰色浪潮人偶 | greytider figure
+  description: 一个描绘形迹可疑乘客的小人偶。灰色浪潮席卷全球！ | A figurine depicting a dubious-looking passenger. Greytide worldwide!
   components:
   - type: Sprite
     state: passenger_greytide
@@ -72,8 +72,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineClown
-  name: clown figure
-  description: A figurine depicting a clown. You shudder to think of what people have probably done to this figurine before.
+  name: 小丑雕像 | clown figure
+  description: 一个描绘小丑的小雕像。你不寒而栗地想到人们之前可能对这个雕像做过什么。 | A figurine depicting a clown. You shudder to think of what people have probably done to this figurine before.
   components:
   - type: Sprite
     state: clown
@@ -83,8 +83,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineHoloClown
-  name: holoclown figure
-  description: A figurine depicting a holoclown. Even more annoying than a clown and no less real.
+  name: 全息小丑手办 | holoclown figure
+  description: 一个描绘全息小丑的手办。比小丑更烦人，但同样真实。 | A figurine depicting a holoclown. Even more annoying than a clown and no less real.
   components:
   - type: Sprite
     state: holoclown
@@ -94,8 +94,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineMime
-  name: mime figure
-  description: A figurine depicting that silent bastard you are all too familiar with.
+  name: 哑剧人偶 | mime figure
+  description: 一个描绘那个你们都很熟悉的沉默混蛋的小雕像。 | A figurine depicting that silent bastard you are all too familiar with.
   components:
   - type: Sprite
     state: mime
@@ -105,8 +105,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineMusician
-  name: musician figure
-  description: A figurine depicting a Musician, his music was electrifying.
+  name: 音乐家雕像 | musician figure
+  description: 一尊描绘音乐家的雕像，他的音乐令人振奋。 | A figurine depicting a Musician, his music was electrifying.
   components:
   - type: Sprite
     state: musician
@@ -116,8 +116,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineBoxer
-  name: boxer figure
-  description: A figurine depicting a Boxer holding their red gloves.
+  name: 拳击手人偶 | boxer figure
+  description: 一个描绘拳击手手持红色手套的人偶。 | A figurine depicting a Boxer holding their red gloves.
   components:
   - type: Sprite
     state: boxer
@@ -127,8 +127,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineCaptain
-  name: captain figure
-  description: A figurine depicting the standard outfit of a captain belonging to a civilian-sector Nanotrasen vessel.
+  name: 船长手办 | captain figure
+  description: 一个描绘民用部门纳米传讯公司船只船长标准服装的手办。 | A figurine depicting the standard outfit of a captain belonging to a civilian-sector Nanotrasen vessel.
   components:
   - type: Sprite
     state: captain
@@ -138,8 +138,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineHeadOfSecurity
-  name: head of security figure
-  description: A figurine depicting the glorious head of the Security department.
+  name: 安保部门负责人人偶 | head of security figure
+  description: 一尊描绘安保部门光荣负责人的小雕像。 | A figurine depicting the glorious head of the Security department.
   components:
   - type: Sprite
     state: hos
@@ -149,8 +149,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineWarden
-  name: warden figure
-  description: A figurine depicting a Warden, ready to jail someone at any moment.
+  name: 典狱长人偶 | warden figure
+  description: 一个描绘典狱长的人偶，随时准备将某人关进监狱。 | A figurine depicting a Warden, ready to jail someone at any moment.
   components:
   - type: Sprite
     state: warden
@@ -160,8 +160,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineDetective
-  name: detective figure
-  description: A figurine depicting a Detective wearing their iconic trench coat.
+  name: 侦探手办 | detective figure
+  description: 一个描绘穿着标志性风衣的侦探的手办。 | A figurine depicting a Detective wearing their iconic trench coat.
   components:
   - type: Sprite
     state: detective
@@ -171,8 +171,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineSecurity
-  name: security officer figure
-  description: A figurine depicting a Security Officer holding a stunbaton, ready to defend the station.
+  name: 安保人员模型 | security officer figure
+  description: 一个描绘安保人员手持电击棍、准备保卫空间站的模型。 | A figurine depicting a Security Officer holding a stunbaton, ready to defend the station.
   components:
   - type: Sprite
     state: security
@@ -182,8 +182,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineLawyer
-  name: lawyer figure
-  description: A figurine depicting a Lawyer sporting a freshly tailored suit.
+  name: 律师人偶 | lawyer figure
+  description: 一个描绘身着新裁西装的律师的人偶。 | A figurine depicting a Lawyer sporting a freshly tailored suit.
   components:
   - type: Sprite
     state: lawyer
@@ -193,8 +193,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineCargoTech
-  name: cargo technican figure
-  description: A figurine depicting a reptillian Cargo Technican.
+  name: 货物技术员手办 | cargo technican figure
+  description: 一个描绘爬行动物货物技术员的手办。 | A figurine depicting a reptillian Cargo Technican.
   components:
   - type: Sprite
     state: cargotech
@@ -204,8 +204,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineSalvage
-  name: salvage specialist figure
-  description: A figurine depicting a Salvage Specialist holding a survival knife.
+  name: 打捞专家人偶 | salvage specialist figure
+  description: 一尊描绘打捞专家手持生存刀的模型人偶。 | A figurine depicting a Salvage Specialist holding a survival knife.
   components:
   - type: Sprite
     state: salvage
@@ -215,8 +215,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineQuartermaster
-  name: quartermaster figure
-  description: A figurine depicting the glorious head of the Cargo department.
+  name: 军需官人偶 | quartermaster figure
+  description: 一尊描绘货物部门光荣首脑的小雕像。 | A figurine depicting the glorious head of the Cargo department.
   components:
   - type: Sprite
     state: qm
@@ -226,8 +226,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineChiefEngineer
-  name: chief engineer figure
-  description: A figurine depicting the glorious head of the Engineering department.
+  name: 总工程师人偶 | chief engineer figure
+  description: 一尊描绘工程部光荣首脑的人偶。 | A figurine depicting the glorious head of the Engineering department.
   components:
   - type: Sprite
     state: ce
@@ -237,8 +237,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineEngineer
-  name: station engineer figure
-  description: A figurine depicting a Station Engineer holding a crowbar at-ready.
+  name: 车站工程师手办 | station engineer figure
+  description: 一个描绘手持撬棍、随时准备行动的车站工程师的手办。 | A figurine depicting a Station Engineer holding a crowbar at-ready.
   components:
   - type: Sprite
     state: engineer
@@ -248,8 +248,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineAtmosTech
-  name: atmospheric technician figure
-  description: A figurine depicting an Atmos Tech holding an unlit welder.
+  name: 大气技术员手办 | atmospheric technician figure
+  description: 一个描绘手持未点燃焊接器的大气技术员手办。 | A figurine depicting an Atmos Tech holding an unlit welder.
   components:
   - type: Sprite
     state: atmos
@@ -259,8 +259,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineResearchDirector
-  name: research director figure
-  description: A figurine depicting the glorious head of the Science department.
+  name: 科研主任人偶 | research director figure
+  description: 一尊描绘科研部光荣主任的人偶。 | A figurine depicting the glorious head of the Science department.
   components:
   - type: Sprite
     state: rd
@@ -270,8 +270,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineScientist
-  name: scientist figurine
-  description: A figurine depicting a Scientist donning a labcoat.
+  name: 科学家小雕像 | scientist figurine
+  description: 一尊描绘身穿实验服的科学家的小雕像。 | A figurine depicting a Scientist donning a labcoat.
   components:
   - type: Sprite
     state: scientist
@@ -281,8 +281,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineChiefMedicalOfficer
-  name: chief medical officer figure
-  description: A figurine depicting the glorious head of the Medical department.
+  name: 首席医疗官人偶 | chief medical officer figure
+  description: 一个描绘医疗部光荣首脑的人偶。 | A figurine depicting the glorious head of the Medical department.
   components:
   - type: Sprite
     state: cmo
@@ -292,8 +292,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineChemist
-  name: chemist figure
-  description: A figurine depicting a Chemist probably planning to make meth.
+  name: 化学家模型 | chemist figure
+  description: 一个化学家模型，可能正在计划制作冰毒。 | A figurine depicting a Chemist probably planning to make meth.
   components:
   - type: Sprite
     state: chemist
@@ -303,8 +303,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineParamedic
-  name: paramedic figure
-  description: A figurine depicting a Paramedic wearing their void suit.
+  name: 护理人员模型 | paramedic figure
+  description: 一个描绘护理人员穿着虚空服的人偶。 | A figurine depicting a Paramedic wearing their void suit.
   components:
   - type: Sprite
     state: paramedic
@@ -314,8 +314,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineMedicalDoctor
-  name: medical doctor figure
-  description: A figurine depicting a Medical Doctor, donning a labcoat & syringe.
+  name: 医生手办 | medical doctor figure
+  description: 一个描绘医生的手办，身穿白大褂，手持注射器。 | A figurine depicting a Medical Doctor, donning a labcoat & syringe.
   components:
   - type: Sprite
     state: medical
@@ -325,8 +325,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineLibrarian
-  name: librarian figure
-  description: A figurine depicting the one-and-only librarian.
+  name: 图书管理员手办 | librarian figure
+  description: 一个描绘独一无二图书管理员的手办。 | A figurine depicting the one-and-only librarian.
   components:
   - type: Sprite
     state: librarian
@@ -336,8 +336,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineChaplain
-  name: chaplain figure
-  description: A figurine depicting a Chaplain hopefully praying for good things.
+  name: 牧师人偶 | chaplain figure
+  description: 一个描绘牧师人偶祈祷好运的雕像。 | A figurine depicting a Chaplain hopefully praying for good things.
   components:
   - type: Sprite
     state: chaplain
@@ -347,8 +347,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineChef
-  name: chef figure
-  description: A figurine depicting a chef, master of the culinary arts!.. most of the time.
+  name: 厨师手办 | chef figure
+  description: 一个描绘厨师的手办，烹饪艺术的大师！……大多数时候是这样。 | A figurine depicting a chef, master of the culinary arts!.. most of the time.
   components:
   - type: Sprite
     state: chef
@@ -358,8 +358,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineBartender
-  name: bartender figure
-  description: A figurine depicting a Bartender looking stylish with their rockin shades and tophat.
+  name: 酒保手办 | bartender figure
+  description: 一个酒保手办，戴着炫酷的墨镜和礼帽，看起来很有型。 | A figurine depicting a Bartender looking stylish with their rockin shades and tophat.
   components:
   - type: Sprite
     state: bartender
@@ -369,8 +369,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineBotanist
-  name: botanist figure
-  description: A figurine depicting a Botanist that surely won't let kudzu get out of control.
+  name: 植物学家手办 | botanist figure
+  description: 一个植物学家手办，肯定不会让葛藤失控。 | A figurine depicting a Botanist that surely won't let kudzu get out of control.
   components:
   - type: Sprite
     state: botanist
@@ -380,8 +380,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineJanitor
-  name: janitor figure
-  description: A figurine depicting a Janitor with their galoshes.
+  name: 清洁工手办 | janitor figure
+  description: 一个描绘穿着橡胶套鞋的清洁工的手办。 | A figurine depicting a Janitor with their galoshes.
   components:
   - type: Sprite
     state: janitor
@@ -391,8 +391,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineNukie
-  name: syndicate operative figure
-  description: A figurine depicting someone in a blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
+  name: 辛迪加特工模型 | syndicate operative figure
+  description: 一个描绘身着血红硬质宇航服人物的模型，类似于核特工小队成员可能穿着的装备。 | A figurine depicting someone in a blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
   components:
   - type: Sprite
     state: nukie
@@ -402,8 +402,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineNukieElite
-  name: elite syndicate operative figure
-  description: A figurine depicting someone in an elite blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
+  name: 精英辛迪加特工模型 | elite syndicate operative figure
+  description: 一个描绘身穿精英血红色硬质装甲的人物模型，类似于核特工队成员可能穿着的装备。 | A figurine depicting someone in an elite blood-red hardsuit, similar to what someone on a nuclear operative team might wear.
   components:
   - type: Sprite
     state: nukie_elite
@@ -413,8 +413,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineNukieCommander
-  name: syndicate operative commander figure
-  description: A figurine depicting someone in a beefed-up blood-red hardsuit, similar to what the commander of a nuclear operative team might wear.
+  name: 辛迪加特工指挥官人偶 | syndicate operative commander figure
+  description: 一个描绘身着强化血红色硬质装甲的人物的人偶，类似于核特工队指挥官可能穿着的装备。 | A figurine depicting someone in a beefed-up blood-red hardsuit, similar to what the commander of a nuclear operative team might wear.
   components:
   - type: Sprite
     state: nukie_commander
@@ -424,8 +424,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineFootsoldier
-  name: syndicate footsoldier figure
-  description: A figurine depicting the outfit of a syndicate footsoldier.
+  name: 辛迪加士兵人偶 | syndicate footsoldier figure
+  description: 一个描绘辛迪加士兵装束的人偶。 | A figurine depicting the outfit of a syndicate footsoldier.
   components:
   - type: Sprite
     state: footsoldier
@@ -435,8 +435,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineWizard
-  name: wizard figure
-  description: A figurine depicting someone with a long, silky beard wearing a wizard outfit. Warlocks wish they had anything on this.
+  name: 巫师雕像 | wizard figure
+  description: 一座小雕像，刻画着一位留着丝滑长须、身穿巫师袍的人。术士们巴不得能有这样的东西。 | A figurine depicting someone with a long, silky beard wearing a wizard outfit. Warlocks wish they had anything on this.
   components:
   - type: Sprite
     state: wizard
@@ -446,8 +446,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineWizardFake
-  name: fake wizard figure
-  description: A figurine depicting someone in a fake-ass wizard costume. What a ripoff!
+  name: 假巫师人偶 | fake wizard figure
+  description: 一个描绘穿着劣质巫师服装之人的小雕像。真是个山寨货！ | A figurine depicting someone in a fake-ass wizard costume. What a ripoff!
   components:
   - type: Sprite
     state: wizard_fake
@@ -457,8 +457,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineGriffin
-  name: griffin figure
-  description: A figurine depicting 'The Griffin', criminal mastermind.
+  name: 狮鹫手办 | griffin figure
+  description: 一个描绘犯罪首脑“狮鹫”的手办。 | A figurine depicting 'The Griffin', criminal mastermind.
   components:
   - type: Sprite
     state: griffin
@@ -468,8 +468,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineOwlman
-  name: owlman figure
-  description: A figurine depicting 'Owlman', the defender of justice.
+  name: 猫头鹰人模型 | owlman figure
+  description: 一个描绘正义守护者“猫头鹰人”的小雕像。 | A figurine depicting 'Owlman', the defender of justice.
   components:
   - type: Sprite
     state: owlman
@@ -479,8 +479,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineSkeleton
-  name: skeleton figure
-  description: A figurine depicting a spooky scary skeleton.
+  name: 骷髅手办 | skeleton figure
+  description: 一个描绘阴森恐怖骷髅的手办。 | A figurine depicting a spooky scary skeleton.
   components:
   - type: Sprite
     state: skeleton
@@ -490,8 +490,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineThief
-  name: thief figure
-  description: A figurine depicting a kleptomaniac that hides in the shadows.
+  name: 小偷人偶 | thief figure
+  description: 一个描绘着潜伏在阴影中的盗窃癖者的小人偶。 | A figurine depicting a kleptomaniac that hides in the shadows.
   components:
   - type: Sprite
     state: thief
@@ -503,8 +503,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyNuke
-  name: nuke toy
-  description: A plastic model of a Nuclear Fission Explosive. No uranium included... probably.
+  name: 核弹玩具 | nuke toy
+  description: 核裂变爆炸物的塑料模型。不含铀……大概吧。 | A plastic model of a Nuclear Fission Explosive. No uranium included... probably.
   components:
   - type: Sprite
     sprite: Objects/Fun/toy_nuke.rsi
@@ -534,8 +534,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineSpaceDragon
-  name: space dragon figure
-  description: A large figurine depicting a space dragon, its red eyes on gazing on its prey.
+  name: 太空龙模型 | space dragon figure
+  description: 一个大型小雕像，描绘了一只太空龙，它红色的眼睛凝视着猎物。 | A large figurine depicting a space dragon, its red eyes on gazing on its prey.
   components:
   - type: Sprite
     state: spacedragon
@@ -545,8 +545,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineQueen
-  name: xeno queen figure
-  description: A large figurine depicting a xeno queen, ready to attack.
+  name: 异形女王手办 | xeno queen figure
+  description: 一个大型手办，描绘了一只准备攻击的异形女王。 | A large figurine depicting a xeno queen, ready to attack.
   components:
   - type: Sprite
     state: queen
@@ -556,8 +556,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineRatKing
-  name: rat king figure
-  description: A large figurine depicting a rat king, prepared to make its nest.
+  name: 鼠王雕像 | rat king figure
+  description: 一座描绘鼠王的大型雕像，正准备筑巢。 | A large figurine depicting a rat king, prepared to make its nest.
   components:
   - type: Sprite
     state: ratking
@@ -567,8 +567,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineRatServant
-  name: rat servant figure
-  description: A figurine depicting a rat serving the king of rats!
+  name: 老鼠仆从雕像 | rat servant figure
+  description: 一尊描绘老鼠侍奉鼠王的雕像！ | A figurine depicting a rat serving the king of rats!
   components:
   - type: Sprite
     state: ratservant
@@ -578,8 +578,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineMouse
-  name: mouse figure
-  description: A figurine depicting a mouse scuttling away to the nearest piece of food.
+  name: 老鼠摆件 | mouse figure
+  description: 一个描绘老鼠匆匆奔向最近食物的摆件。 | A figurine depicting a mouse scuttling away to the nearest piece of food.
   components:
   - type: Sprite
     state: mouse
@@ -589,8 +589,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineSlime
-  name: slime figure
-  description: A figurine depicting a translucent blue slime.
+  name: 史莱姆手办 | slime figure
+  description: 一个描绘半透明蓝色史莱姆的手办。 | A figurine depicting a translucent blue slime.
   components:
   - type: Sprite
     state: slime
@@ -600,8 +600,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyFigurineHamlet
-  name: hamlet figure
-  description: A figurine depicting Hamlet, microwave not included.
+  name: 哈姆雷特人偶 | hamlet figure
+  description: 一个描绘哈姆雷特的人偶，不含微波炉。 | A figurine depicting Hamlet, microwave not included.
   components:
   - type: Sprite
     state: hamlet
@@ -611,8 +611,8 @@
 - type: entity
   parent: BaseFigurine
   id: ToyAi
-  name: AI toy
-  description: A scaled-down toy AI core.
+  name: AI玩具 | AI toy
+  description: 一个缩小版的玩具AI核心。 | A scaled-down toy AI core.
   components:
   - type: Sprite
     sprite: Objects/Fun/AI.rsi

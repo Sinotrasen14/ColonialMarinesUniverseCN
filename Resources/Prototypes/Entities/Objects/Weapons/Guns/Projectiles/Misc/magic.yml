@@ -1,9 +1,9 @@
 - type: entity
   parent: BulletRocket
   id: ProjectileFireball
-  categories: [ HideSpawnMenu ]
-  name: fireball
-  description: You better GITTAH WEIGH.
+  categories: [HideSpawnMenu]
+  name: 火球 | fireball
+  description: 你最好赶紧滚开。 | You better GITTAH WEIGH.
   components:
   - type: PointLight
     color: "#E25822"
@@ -33,9 +33,9 @@
 - type: entity
   parent: BaseBulletTrigger
   id: ProjectileDragonsBreath
-  categories: [ HideSpawnMenu ]
-  name: dragon's breath
-  description: Try not to get toasted.
+  categories: [HideSpawnMenu]
+  name: 龙息 | dragon's breath
+  description: 尽量不要被烤焦。 | Try not to get toasted.
   components:
   - type: PointLight
     color: "#E25822"
@@ -66,9 +66,9 @@
 - type: entity
   parent: ProjectileFireball
   id: ProjectileAnomalyFireball
-  categories: [ HideSpawnMenu ]
-  name: fireball
-  description: Hovering blob of flame.
+  categories: [HideSpawnMenu]
+  name: 火球 | fireball
+  description: 悬浮的火球。 | Hovering blob of flame.
   components:
   - type: TimedDespawn
     lifetime: 30
@@ -82,9 +82,9 @@
 - type: entity
   parent: ClosetSteelBase
   id: ProjectileLocker
-  categories: [ HideSpawnMenu ]
-  name: cursed locker
-  description: A cursed magical locker! Can you resist?
+  categories: [HideSpawnMenu]
+  name: 被诅咒的储物柜 | cursed locker
+  description: 一个被诅咒的魔法储物柜！你能抵挡住诱惑吗？ | A cursed magical locker! Can you resist?
   components:
   - type: ResistLocker
     resistTime: 30
@@ -100,7 +100,7 @@
   - type: Lock
     breakOnAccessBreaker: false
   - type: AccessReader
-    access: [[ "Wizard" ]]
+    access: [["Wizard"]]
     breakOnAccessBreaker: false
   - type: Projectile
     deleteOnCollide: false
@@ -112,18 +112,18 @@
     sprite: Structures/Storage/closet.rsi
     layers:
     - state: cursed
-      map: [ "enum.StorageVisualLayers.Base" ]
+      map: ["enum.StorageVisualLayers.Base"]
     - state: decursed_door
-      map: [ "enum.StorageVisualLayers.Door" ]
+      map: ["enum.StorageVisualLayers.Door"]
     - state: paper
       visible: false
       sprite: Structures/Storage/closet_labels.rsi
-      map: [ "enum.PaperLabelVisuals.Layer" ]
+      map: ["enum.PaperLabelVisuals.Layer"]
     - state: cursed_door
-      map: [ "enum.LockVisualLayers.Lock" ]
+      map: ["enum.LockVisualLayers.Lock"]
     - state: welded
       visible: false
-      map: [ "enum.WeldableLayers.BaseWelded" ]
+      map: ["enum.WeldableLayers.BaseWelded"]
   #TODO: Will have to eventually make a custom visualizer for cursed lockers
   - type: EntityStorageVisuals
     stateBaseClosed: decursed
@@ -132,8 +132,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.48"
         density: 75
         mask:
@@ -141,8 +140,7 @@
         layer:
         - MachineLayer
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         hard: false
         mask:
@@ -162,7 +160,7 @@
   abstract: true
   parent: BaseBullet
   id: ProjectilePolyboltBase
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
@@ -177,16 +175,16 @@
     fixtureID: projectile
     # Projectile.DeleteOnCollide is true, but allow this to hit multiple entities if they're
     # stacked up (they will all trigger a collide), so this isn't frustrating to use
-    maxTriggers: null
+    maxTriggers:
   - type: PolymorphOnTrigger
     targetUser: true
 
 - type: entity
   parent: ProjectilePolyboltBase
   id: ProjectilePolyboltCarp
-  categories: [ HideSpawnMenu ]
-  name: carp polybolt
-  description: Nooo, I don't wanna be fish!
+  categories: [HideSpawnMenu]
+  name: 鲤鱼多螺栓 | carp polybolt
+  description: 不，我不想变成鱼！ | Nooo, I don't wanna be fish!
   components:
   - type: PolymorphOnTrigger
     polymorph: WizardForcedCarp
@@ -198,9 +196,9 @@
 - type: entity
   parent: ProjectilePolyboltBase
   id: ProjectilePolyboltMonkey
-  categories: [ HideSpawnMenu ]
-  name: monkey polybolt
-  description: Nooo, I don't wanna be monkey!
+  categories: [HideSpawnMenu]
+  name: 猴子多聚螺栓 | monkey polybolt
+  description: 不，我不想变成猴子！ | Nooo, I don't wanna be monkey!
   components:
   - type: PolymorphOnTrigger
     polymorph: WizardForcedMonkey
@@ -212,9 +210,9 @@
 - type: entity
   parent: ProjectilePolyboltBase
   id: ProjectilePolyboltDoor
-  categories: [ HideSpawnMenu ]
-  name: door polybolt
-  description: Nooo, I don't wanna be door!
+  categories: [HideSpawnMenu]
+  name: 门多利螺栓 | door polybolt
+  description: 不，我不想变成门！ | Nooo, I don't wanna be door!
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
@@ -233,9 +231,9 @@
 - type: entity
   parent: BaseBullet
   id: ProjectileHealingBolt
-  categories: [ HideSpawnMenu ]
-  name: healing bolt
-  description: I COMMAND YOU TO LIVE!
+  categories: [HideSpawnMenu]
+  name: 治疗箭 | healing bolt
+  description: 我命令你活下去！ | I COMMAND YOU TO LIVE!
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/magic.rsi
@@ -261,9 +259,9 @@
 - type: entity
   parent: BaseBullet
   id: BulletInstakillMagic
-  categories: [ HideSpawnMenu ]
-  name: magical lead cylinder
-  description: This looks familiar.
+  categories: [HideSpawnMenu]
+  name: 魔法铅柱 | magical lead cylinder
+  description: 这看起来很眼熟。 | This looks familiar.
   components:
   - type: Projectile
     damage:
@@ -274,9 +272,9 @@
 - type: entity
   parent: ProjectilePolyboltBase
   id: ProjectilePolyboltCluwne
-  categories: [ HideSpawnMenu ]
-  name: cluwne polybolt
-  description: KnoH KnoH!
+  categories: [HideSpawnMenu]
+  name: 克卢恩多态弹 | cluwne polybolt
+  description: KnoH KnoH！ | KnoH KnoH!
   components:
   - type: PolymorphOnTrigger
     polymorph: WizardForcedCluwne
@@ -288,9 +286,9 @@
 - type: entity
   parent: BaseBullet
   id: ProjectileIcicle
-  categories: [ HideSpawnMenu ]
-  name: icicle
-  description: Brrrrr.
+  categories: [HideSpawnMenu]
+  name: 冰柱 | icicle
+  description: 呼——好冷。 | Brrrrr.
   components:
   - type: Sprite
     sprite: Structures/Specific/Anomalies/ice_anom.rsi
@@ -303,9 +301,9 @@
 - type: entity
   parent: ProjectilePolyboltBase
   id: ProjectilePolyboltBread
-  categories: [ HideSpawnMenu ]
-  name: bread polybolt
-  description: Nooo, I don't wanna be bread!
+  categories: [HideSpawnMenu]
+  name: 面包多栓 | bread polybolt
+  description: 不，我不想变成面包！ | Nooo, I don't wanna be bread!
   components:
   - type: PolymorphOnTrigger
     polymorph: BreadMorph

@@ -1,8 +1,10 @@
-﻿- type: entity
-  parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
+- type: entity
+  parent:
+  - RMCAllowSuitStorageClothingArmorVest
+  - RMCBaseArmor
   id: RMCArmorVest
-  name: armor vest
-  description: An armored vest that protects against some damage.
+  name: 护甲背心
+  description: 一件能够抵御部分伤害的护甲背心。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/armored_vest.rsi
@@ -22,12 +24,11 @@
   - type: CMUItemStain
     wornStates:
       outerClothing: vest_blood
-
 - type: entity
   parent: RMCArmorVest
   id: RMCArmorVestFlak
-  name: M70 flak jacket
-  description: A flak jacket used by dropship pilots to protect themselves while flying in the cockpit. Excels in protecting the wearer against high-velocity solid projectiles.
+  name: M70防弹衣
+  description: 一种由运输机飞行员在驾驶舱飞行时用来保护自己的防弹衣。在保护穿戴者抵御高速实心弹丸方面表现出色。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/pilot/jungle.rsi
@@ -43,42 +44,37 @@
     bullet: 20
     bio: 10
     explosionArmor: 10
-
 - type: entity
   parent: RMCArmorVest
   id: RMCArmorVestWeYa
   name: We-Ya security armor vest
-  description: An armored vest that protects against some damage. This one has a Weyland-Yutani corporate badge.
-
+  description: 一件能抵御部分伤害的装甲背心。这一件带有维兰德-汤谷公司的企业徽章。
 - type: entity
   parent: RMCArmorVestWeYa
   id: RMCArmorSecurity
-  name: security armor vest
+  name: 安保防弹背心
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/security_armor.rsi
-
 - type: entity
   parent: RMCArmorVest
   id: RMCArmorVestCivilian
-  name: armored vest
-  description: An general-use, unmarked armored vest that protects against some damage.
+  name: 装甲背心
+  description: 一件通用型无标识装甲背心，可抵御部分伤害。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/security_armor.rsi
-
 - type: entity
   parent: RMCArmorVest
   id: RMCArmorBulletproof
-  name: bulletproof vest
-  description: A vest that excels in protecting the wearer against high-velocity solid projectiles.
+  name: 防弹背心
+  description: 一件能出色保护穿着者免受高速固体弹丸伤害的背心。
   suffix: RMC
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/bulletproof/vest.rsi
-  - type: CMArmor # TODO 20 internal damage armor
+  - type: CMArmor
     bullet: 30
-
 - type: entity
   parent: RMCArmorBulletproof
   id: RMCArmorBulletproofBadge
@@ -86,14 +82,16 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/bulletproof/badge.rsi
-
-# M3-XL
 - type: entity
-  parent: [ClothingOuterBase, RMCAllowSuitStorageClothingArmorMP, BaseStorageItem, RMCBaseUniformAccessoryItemOuterClothing]
+  parent:
+  - ClothingOuterBase
+  - RMCAllowSuitStorageClothingArmorMP
+  - BaseStorageItem
+  - RMCBaseUniformAccessoryItemOuterClothing
   id: RMCArmorVestXLBase
   abstract: true
-  name: M3-XL pattern armor vest
-  description: A type of body armor designed for protection against internal threats. It absorbs the impact of firearm projectiles, while retaining ease of movement. Does not protect against cuts, explosions or bio-threats. Not recommended for direct combat.
+  name: M3-XL型防弹背心
+  description: 一种防弹衣，旨在防御内部威胁。它能吸收枪械弹丸的冲击，同时保持行动自如。无法抵御切割、爆炸或生物威胁。不建议用于直接战斗。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/standard/jungle.rsi
@@ -130,7 +128,7 @@
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,3,1 # 2 slots
+    - 0,0,3,1
   - type: FixedItemSizeStorage
   - type: RMCStorageEjectHand
   - type: IgnoreContentsSize
@@ -151,36 +149,29 @@
   - type: CMUItemStain
     wornStates:
       outerClothing: vest_blood
-
-# MP
-
 - type: entity
   parent: RMCArmorVestXLBase
   id: RMCArmorVestMP
-  name: M3-XL pattern MP armor vest
-  description: A type of body armor designed for protection against internal threats. It absorbs the impact of firearm projectiles, while retaining ease of movement. Does not protect against cuts, explosions or bio-threats. Not recommended for direct combat or for deployment use against hostiles.
+  name: M3-XL 型 MP 防弹背心
+  description: 一种旨在防御内部威胁的防弹衣。它能吸收枪械弹丸的冲击，同时保持行动灵活。无法抵御切割、爆炸或生物威胁。不建议用于直接作战或针对敌方的部署用途。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/mp.rsi
-
-# Officers
-
 - type: entity
   parent: RMCArmorVestXLBase
   id: RMCArmorVestIntel
-  name: M3-XL pattern intel armor vest
-  description: A type of body armor designed for mobility. It absorbs the impact of firearm projectiles, while retaining ease of movement. Does not protect against explosions, or bio-threats. Not recommended for direct combat.
+  name: M3-XL型情报装甲背心
+  description: 一种专为机动性设计的护甲。可吸收枪械弹丸的冲击，同时保持行动便利。无法抵御爆炸或生物威胁。不建议用于直接战斗。
   components:
   - type: CMArmor
     melee: 20
     bullet: 10
     bio: 0
     explosionArmor: 0
-
 - type: entity
   parent: RMCArmorVestIntel
   id: RMCArmorVestOfficer
-  name: M3-XL pattern officer armor vest
+  name: M3-XL 图案军官护甲背心
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/officer/classic-jungle.rsi
@@ -191,26 +182,22 @@
       Snow: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/officer/desert-snow-urban.rsi
       Classic: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/officer/classic-jungle.rsi
       Urban: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/officer/desert-snow-urban.rsi
-
 - type: entity
   parent: RMCArmorVestOfficer
   id: RMCArmorVestSeniorOfficer
-  name: M3-XL pattern senior officer armor vest
-  description: A type of body armor designed for mobility with additional padding for senior officers. It absorbs the impact of firearm projectiles, while retaining ease of movement. Does not protect against explosions. Not recommended for direct combat.
+  name: M3-XL型高级军官护甲背心
+  description: 一种为高级军官设计的护甲背心，注重机动性并带有额外衬垫。它能吸收枪械弹丸的冲击，同时保持行动便利。无法防御爆炸。不建议用于直接战斗。
   components:
   - type: CMArmor
     melee: 20
     bullet: 10
     bio: 10
     explosionArmor: 0
-#    rad: 10
-#    internal: 10
-
 - type: entity
   parent: RMCArmorVestSeniorOfficer
   id: RMCArmorVestCommandingOfficer
-  name: M3-XL pattern commanding officer armor vest
-  description: A type of body armor designed for mobility with additional padding for commanding officers. It absorbs the impact of firearm projectiles, while retaining ease of movement. Does not protect against explosions. Not recommended for direct combat.
+  name: M3-XL型指挥官护甲背心
+  description: 一种专为指挥官设计的护甲，兼顾机动性并带有额外衬垫。它能吸收枪械弹丸的冲击，同时保持行动灵活。无法防护爆炸。不建议用于直接战斗。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/commanding_officer/jungle.rsi
@@ -221,13 +208,11 @@
       Snow: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/commanding_officer/snow.rsi
       Classic: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/commanding_officer/classic.rsi
       Urban: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/commanding_officer/urban.rsi
-
-# Squad
 - type: entity
   parent: RMCArmorVestXLBase
   id: RMCArmorVestSquad
-  name: M3-XL pattern marine armor vest
-  description: A type of M3-XL body armor, standard issue for UNMC marines. The shoulder pads have been taken off for ease of movement. Not recommended for direct combat or for deployment use against hostiles.
+  name: M3-XL 型海军陆战队护甲背心
+  description: 一种M3-XL型护甲背心，UNMC海军陆战队的标准配发装备。为便于活动已取下肩垫。不建议用于直接战斗或针对敌人的部署行动。
   components:
   - type: CMArmor
     melee: 0
@@ -239,12 +224,11 @@
       Snow: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/standard/snow.rsi
       Classic: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/standard/classic.rsi
       Urban: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/extra-light/standard/urban.rsi
-
 - type: entity
   parent: RMCArmorVestSquad
   id: RMCArmorVestSquadLeader
-  name: M3-XL pattern squad leader armor vest
-  description: A type of M3-XL body armor, made specially for squad leaders, with a dedicated pouch for a box of zip ties. The shoulder pads have been taken off for ease of movement. Not recommended for direct combat or for deployment use against hostiles.
+  name: M3-XL 型班长护甲背心
+  description: 一种专为班长制作的 M3-XL 型护甲背心，配有一个用于装一盒扎带的专用袋。为方便活动，肩垫已被取下。不建议用于直接战斗，也不建议部署用于对抗敌人。
   suffix: Zipties
   components:
   - type: Storage

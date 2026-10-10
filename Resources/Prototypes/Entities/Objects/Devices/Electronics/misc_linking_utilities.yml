@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: voicesensor
-  name: voice sensor
-  description: This microphone, invented by Micheal Phone during his time working at Michealsoft, sends signals when a prerecorded code phrase is uttered!
+  name: 语音传感器 | voice sensor
+  description: 这款麦克风由Micheal Phone在Michealsoft工作期间发明，当有人说出一段预先录制的代码短语时，它就会发送信号！ | This microphone, invented by Micheal Phone during his time working at Michealsoft, sends signals when a prerecorded code phrase is uttered!
   components:
   - type: Sprite
     sprite: Objects/Devices/voicesensor.rsi
@@ -11,7 +11,7 @@
     price: 40
   - type: DeviceLinkSource
     ports:
-      - Trigger
+    - Trigger
   - type: SignalOnTrigger
     port: Trigger
   - type: TriggerOnVoice

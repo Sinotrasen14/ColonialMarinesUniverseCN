@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: RMCHelmetGarbBase
   abstract: true
@@ -8,7 +8,6 @@
     size: Tiny
   - type: HelmetAccessory
   - type: Appearance
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbToggleableBase
@@ -18,14 +17,11 @@
     activated: false
     verbToggleOff: rmc-helmetgarbs-off
     verbToggleOn: rmc-helmetgarbs-on
-
-# NVG
-
 - type: entity
   parent: RMCHelmetGarbToggleableBase
   id: RMCHelmetGarbNightVision
-  name: old M2 night vision goggles
-  description: This pair has been gutted of all electronics and therefore not working. But hey, they make you feel tacticool, and that's all that matters, right?
+  name: 旧式M2夜视镜
+  description: 这副夜视镜的电子元件已被全部掏空，因此无法工作。不过嘿，它们能让你感觉自己战术感十足，而这才是最重要的，对吧？
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/nv_goggles.rsi
@@ -39,12 +35,14 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/nv_goggles.rsi
       state: helmet-down
-
 - type: entity
   parent: RMCHelmetGarbToggleableBase
   id: RMCHelmetGarbNightVisionPVE
-  name: old M1 multi-spectrum visor
-  description: A failed prototype for next generation HUD optics for the Marine Corps that was surpassed by the current issue integrated IR optic, this flip down visor offers a full visor suite with multi-spectrum capabilities. A really cool piece until you realize you are one headbang away from losing night capability.
+  name: 旧式M1多光谱护目镜
+  description: A failed prototype for next generation HUD optics for the Marine Corps
+    that was surpassed by the current issue integrated IR optic, this flip down visor
+    offers a full visor suite with multi-spectrum capabilities. A really cool piece
+    until you realize you are one headbang away from losing night capability.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/nv_goggles_alt.rsi
@@ -58,14 +56,11 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/nv_goggles_alt.rsi
       state: helmet-down
-
-# Netting
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbNetting
-  name: combat netting
-  description: Probably combat netting for a helmet. Probably just an extra hairnet that got ordered for the phantom Almayer cooking staff. Probably useless.
+  name: 作战网
+  description: 大概是头盔用的作战网。大概只是给幽灵般的阿尔迈耶号炊事人员订购的多余发网。大概没什么用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/netting.rsi
@@ -76,11 +71,10 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/netting.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbNetting
   id: RMCHelmetGarbNettingUrban
-  name: urban combat netting
+  name: 城市作战网
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/netting_urban.rsi
@@ -91,11 +85,10 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/netting_urban.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbNetting
   id: RMCHelmetGarbNettingDesert
-  name: desert combat netting
+  name: 沙漠作战网
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/netting_desert.rsi
@@ -106,11 +99,10 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/netting_desert.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbNetting
   id: RMCHelmetGarbNettingJungle
-  name: jungle combat netting
+  name: 丛林作战网
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/netting_jungle.rsi
@@ -121,14 +113,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/netting_jungle.rsi
       state: helmet
-
-# Rain Cover
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbRainCover
-  name: raincover
-  description: The standard M10 combat helmet is already water-resistant at depths of up to 10 meters. This makes the top potentially water-proof. At least it's something.
+  name: 防雨罩
+  description: 标准M10战斗头盔在深达10米的水下已经具备抗水性。这让顶部有可能防水。至少聊胜于无。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/raincover.rsi
@@ -139,11 +128,10 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/raincover.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbRainCover
   id: RMCHelmetGarbRainCoverUrban
-  name: urban raincover
+  name: 城市防雨罩
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/raincover_urban.rsi
@@ -154,11 +142,10 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/raincover_urban.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbRainCover
   id: RMCHelmetGarbRainCoverDesert
-  name: desert raincover
+  name: 沙漠防雨罩
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/raincover_desert.rsi
@@ -169,11 +156,10 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/raincover_desert.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbRainCover
   id: RMCHelmetGarbRainCoverJungle
-  name: jungle raincover
+  name: 丛林防雨罩
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/raincover_jungle.rsi
@@ -184,14 +170,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/HelmetCovers/raincover_jungle.rsi
       state: helmet
-
-# Ammo
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbBuckshot
-  name: spent buckshot
-  description: Three spent rounds of good ol' buckshot. You know they used to paint these green? Strange times.
+  name: 用过的鹿弹
+  description: 三发用过的老式鹿弹。你知道吗，他们以前会把这些涂成绿色？真是奇怪的时代。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/buckshot.rsi
@@ -202,12 +185,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/buckshot.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbFlechette
-  name: spent flechette
-  description: The more you fire these, the more you're reminded that a fragmentation grenade is probably more effective at fulfilling the same purpose. Say, aren't these supposed to eject from your gun?
+  name: 用过的飞镖弹
+  description: 你发射这些的次数越多，就越会想起，破片手雷在实现同样目的上大概更有效。话说，这些不是应该从你的枪里弹出来吗？
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/flechette.rsi
@@ -218,12 +200,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/flechette.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbSlug
-  name: spent slugs
-  description: For when you need to knock your target down with superior stopping power. These three have already been fired.
+  name: 用过的弹头
+  description: 当你需要用更强的停止作用击倒目标时。这三枚已经发射过了。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/slug.rsi
@@ -234,12 +215,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/slug.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbCartridge
-  name: cartridge
-  description: This is the bullet from a Type 54 Assault Rifle. It is deformed from impact against an armored surface. It's been reduced to a lucky keepsake now.
+  name: 子弹
+  description: 这是一颗来自54式突击步枪的子弹。它因撞击装甲表面而变形。如今已成为一件幸运的纪念品。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/cartridge.rsi
@@ -250,14 +230,15 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/cartridge.rsi
       state: helmet
-
-# Visors
-
 - type: entity
-  parent: [RMCHelmetGarbBase, CMUBaseGasMaskFilterSlot]
+  parent:
+  - RMCHelmetGarbBase
+  - CMUBaseGasMaskFilterSlot
   id: RMCHelmetGarbGasmask
-  name: M5 integrated gasmask
-  description: The UNMC had its funding pulled for these when it became apparent that not every deployed enlisted was wearing a helmet 24/7; much to the bafflement of UN High Command.
+  name: M5集成防毒面具
+  description: The UNMC had its funding pulled for these when it became apparent that
+    not every deployed enlisted was wearing a helmet 24/7; much to the bafflement
+    of UN High Command.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/Gasmasks/gasmask.rsi
@@ -268,11 +249,10 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Gasmasks/gasmask.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbGasmask
   id: RMCHelmetGarbGasmaskDesert
-  name: Desert M5 integrated gasmask
+  name: 沙漠M5集成防毒面具
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/Gasmasks/gasmask_desert.rsi
@@ -283,12 +263,10 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Gasmasks/gasmask_desert.rsi
       state: helmet
-
-
 - type: entity
   parent: RMCHelmetGarbGasmask
   id: RMCHelmetGarbGasmaskJungle
-  name: Jungle M5 integrated gasmask
+  name: 丛林 M5 一体式防毒面具
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/Gasmasks/gasmask_jungle.rsi
@@ -299,11 +277,10 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Gasmasks/gasmask_jungle.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbGasmask
   id: RMCHelmetGarbGasmaskUrban
-  name: Urban M5 integrated gasmask
+  name: Urban M5 一体式防毒面具
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/Gasmasks/gasmask_urban.rsi
@@ -314,12 +291,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Gasmasks/gasmask_urban.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCRC6RiotShield
-  name: RC6 riot shield
-  description: The complimentary, but sold separate face shield associated with the RC6 riot helmet.
+  name: RC6防暴盾
+  description: 与RC6防暴头盔配套的面罩，但需单独购买。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/riot_shield.rsi
@@ -330,17 +306,14 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/riot_shield.rsi
       state: helmet
-
-# Feathers
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbFeather
-  name: lucky white feather
-  description: A sniper's greatest asset is his mind, not his rifle.
+  name: 幸运白羽毛
+  description: 狙击手最大的财富是他的头脑，而非他的步枪。
   components:
   - type: Sprite
-    sprite:  _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather.rsi
+    sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather.rsi
     state: icon
   - type: Item
     sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather.rsi
@@ -348,12 +321,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbFeather
   id: RMCHelmetGarbFeatherRed
-  name: lucky red feather
-  description: It is a riotous red color, made of really crummy plastic and synthetic threading, you know, the same sort of material every Corporate Liaison's spine is made of.
+  name: 幸运红羽毛
+  description: 它是一种张扬的红色，由极其劣质的塑料和合成线制成，你知道，就是每个公司联络员的脊梁骨所用的同一种材料。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather_red.rsi
@@ -364,12 +336,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather_red.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbFeather
   id: RMCHelmetGarbFeatherBlue
-  name: lucky blue feather
-  description: It is a brilliant blue color. You think you might have seen a bluejay in a holo-theatre once.
+  name: 幸运的蓝色羽毛
+  description: 它呈现出鲜艳的蓝色。你觉得你或许曾在一间全息剧院里见过一只冠蓝鸦。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather_blue.rsi
@@ -380,12 +351,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather_blue.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbFeather
   id: RMCHelmetGarbFeatherPurple
-  name: lucky purple feather
-  description: It is a plucky purple color. Legend has it a station AI known as Shakespeare simulated 1000 monkeys typing gibberish in order to replicate the actual works of Shakespeare. Art critics are on the fence if this is the first instance of true artificial abstract art.
+  name: 幸运紫色羽毛
+  description: 这是一种大胆的紫色。传说一个被称为莎士比亚的空间站人工智能为了复现莎士比亚的真实作品，模拟了1000只猴子胡乱打字。艺术评论家们对于这是否是
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather_purple.rsi
@@ -396,12 +366,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather_purple.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbFeather
   id: RMCHelmetGarbFeatherYellow
-  name: lucky yellow feather
-  description: It is an unyielding yellow color. They say the New Kansas colony produces more carpenters per capita than any other colony in all of UN controlled space.
+  name: 幸运的黄色羽毛
+  description: 它是一种毫不妥协的黄色。据说，在所有联合国控制空间中，新堪萨斯殖民地的人均木匠数量超过其他任何殖民地。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather_yellow.rsi
@@ -412,14 +381,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/Feathers/feather_yellow.rsi
       state: helmet
-
-# Misc
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbGunOil
-  name: CLP weapon lubricant
-  description: "A standardized cleaner, lubricant and preservative issued to maintain small arms and crew-served weapons. Removes carbon fouling, reduces friction and protects metal surfaces from corrosion. Reliable in most environments, though not specialized for extreme conditions. Also collectively known as 'rifle piss'."
+  name: CLP武器润滑剂
+  description: 一种标准化的清洁剂、润滑剂和防腐剂，配发用于保养轻武器和班组武器。可清除积碳、降低摩擦，并保护金属表面免受腐蚀。在大多数环境中性能可靠，但并非专为极端条件设计。也被统称为‘步枪尿’。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/gun_oil.rsi
@@ -430,12 +396,13 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/gun_oil.rsi
       state: helmet
-
 - type: entity
-  parent: [RMCHelmetGarbBase, RMCUtilityBase]
+  parent:
+  - RMCHelmetGarbBase
+  - RMCUtilityBase
   id: RMCHelmetGarbRosary
-  name: rosary
-  description: Jesus Saves Lives!
+  name: 玫瑰经
+  description: 耶稣拯救生命！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/rosary.rsi
@@ -450,12 +417,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/rosary.rsi
       state: neck
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbPrescription
-  name: prescription medication
-  description: Anti-anxiety meds? Amphetamines? The cure for Sudden Sleep Disorder? The label can't be read, leaving the now absent contents forever a mystery. The cap is screwed on tighter than any ID lock.
+  name: 处方药
+  description: 抗焦虑药？安非他命？突发性睡眠障碍的解药？标签无法辨认，使现已缺失的内装物永远成谜。瓶盖拧得比任何身份识别锁都紧。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/prescription.rsi
@@ -466,12 +432,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/prescription.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbWire
-  name: trimmed barbed wire
-  description: It is a length of barbed wire that's had most of the sharp points filed down so that it is safe to handle.
+  name: 修剪过的带刺铁丝网
+  description: 这是一段带刺铁丝网，其大部分尖刺已被锉平，因此可以安全拿取。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/trimmed_barb_wire.rsi
@@ -482,12 +447,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/trimmed_barb_wire.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbChaplainPatch
-  name: chaplain helmet patch
-  description: A Chaplain's patch.
+  name: 牧师头盔贴片
+  description: 一枚牧师的贴片。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/chaplain_patch.rsi
@@ -498,12 +462,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/chaplain_patch.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbPeaceFlair
-  name: peace flair
-  description: Doesn't matter when it's Arcturian, baby..
+  name: 和平天赋
+  description: 是大角星人的话，就无所谓了，宝贝……
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/peace_flair.rsi
@@ -514,12 +477,13 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/peace_flair.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbIoFlair
   name: io flair
-  description: The Arcturians might be our allies now, but Io is forever a stain on trans-species relations. Never forget those who gave their lives aboard the USS Doramin..
+  description: The Arcturians might be our allies now, but Io is forever a stain on
+    trans-species relations. Never forget those who gave their lives aboard the USS
+    Doramin..
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/io_flair.rsi
@@ -530,12 +494,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/io_flair.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbTerraTekFlair
-  name: TerraTek flair
-  description: Flair for some weird tech company back on Earth. How did they get promotional material this far out in the rim?.
+  name: TerraTek 徽章
+  description: 某个地球上古怪科技公司的徽章。他们是怎么把宣传材料弄到边陲这么远的地方的？
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/terratek_flair.rsi
@@ -546,12 +509,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/terratek_flair.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbUNMCFlair
-  name: UNMC flair
-  description: These pins get handed out like candy at enlistment offices. Wear it with pride marine.
+  name: UNMC 徽章
+  description: 这些徽章在征兵办公室就像糖果一样随意发放。自豪地戴上它吧，陆战队员。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/unmc_flair.rsi
@@ -562,12 +524,11 @@
     rsi:
       sprite: _RMC14/Objects/Clothing/HelmetGarb/unmc_flair.rsi
       state: helmet
-
 - type: entity
   parent: RMCHelmetGarbBase
   id: RMCHelmetGarbMovieTicket
-  name: movie ticket
-  description: A pair of red movie tickets. It reminds you of a time you could watch more than the same 5 or so VHS films the ship has.
+  name: 电影票
+  description: 两张红色电影票。它让你想起从前，那时你能看的电影不止是船上仅有的那五部左右、反复播放的VHS录像带。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/HelmetGarb/movie_ticket.rsi

@@ -1,23 +1,22 @@
 - type: entity
   parent: RMCBaseArmor
   id: RMCSuitBombSuit
-  name: bomb suit
-  description: A suit designed for safety when handling explosives.
+  name: 排爆服
+  description: 一种为在处理爆炸物时确保安全而设计的防护服。
   suffix: RMC
   components:
-  - type: Sprite  #RMC14 TODO: Make a new sprite which doesn't look silly
+  - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/bombsuit.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/bombsuit.rsi
   - type: CMHardArmor
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+  - type: ClothingSpeedModifier
     walkModifier: 0.725
     sprintModifier: 0.725
   - type: RMCArmorSpeedTier
     speedTier: light
   - type: CMArmor
     explosionArmor: 50
-
 - type: entity
   parent: RMCSuitBombSuit
   id: RMCSuitBombSuitSecurity

@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseItem
   id: BaseHandheldInstrument
-  description: That's an instrument.
+  description: 那是一件乐器。 | That's an instrument.
   components:
   - type: Sprite
     state: icon
@@ -24,9 +24,9 @@
 #These are for instruments that are larger, can't be picked up, or have collision
 - type: entity
   abstract: true
-  parent: [ BaseStructureDynamic, StructureHealthFurnitureStrong ]
+  parent: [BaseStructureDynamic, StructureHealthFurnitureStrong]
   id: BasePlaceableInstrument
-  name: baseinstrument
+  name: 基础仪器 | baseinstrument
   components:
   - type: Instrument
   - type: ActivatableUI
@@ -46,8 +46,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 80
         mask:
@@ -69,7 +68,7 @@
   abstract: true
   parent: BasePlaceableInstrument
   id: BasePlaceableInstrumentRotatable
-  name: baseinstrumentrotatable
+  name: 基础仪器可旋转 | baseinstrumentrotatable
   components:
   - type: Rotatable
     rotateWhileAnchored: true

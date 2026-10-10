@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseBullet
   id: BulletLaser
-  categories: [ HideSpawnMenu ]
-  name: laser bolt
+  categories: [HideSpawnMenu]
+  name: 激光束 | laser bolt
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
@@ -21,8 +21,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.3,0.15,0.3"
         hard: false
         mask:
@@ -39,8 +38,8 @@
 - type: entity
   parent: BulletLaser
   id: BulletLaserSpread
-  categories: [ HideSpawnMenu ]
-  name: wide laser barrage
+  categories: [HideSpawnMenu]
+  name: 宽激光弹幕 | wide laser barrage
   components:
   - type: ProjectileSpread
     proto: BulletLaser
@@ -50,8 +49,8 @@
 - type: entity
   parent: BulletLaser
   id: BulletLaserSpreadNarrow
-  categories: [ HideSpawnMenu ]
-  name: lethal laser barrage
+  categories: [HideSpawnMenu]
+  name: 致命激光弹幕 | lethal laser barrage
   components:
   - type: ProjectileSpread
     proto: BulletLaser
@@ -61,8 +60,8 @@
 - type: entity
   parent: BulletLaser
   id: BulletLaserMagnum
-  categories: [ HideSpawnMenu ]
-  name: magnum laser bolt
+  categories: [HideSpawnMenu]
+  name: 马格南激光弩箭 | magnum laser bolt
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_magnum.rsi
@@ -81,8 +80,8 @@
 - type: entity
   parent: BulletLaser
   id: BulletLaserWindowPiercingMagnum
-  categories: [ HideSpawnMenu ]
-  name: magnum window-piercing bolt
+  categories: [HideSpawnMenu]
+  name: 大号穿窗螺栓 | magnum window-piercing bolt
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_magnum.rsi
@@ -100,8 +99,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.1"
         hard: false
         mask:

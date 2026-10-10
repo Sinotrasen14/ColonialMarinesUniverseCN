@@ -17,7 +17,7 @@
     - trigger
     - stuck
     delay: 10
-    delayOptions: [ 10, 30, 60, 120, 300 ]
+    delayOptions: [10, 30, 60, 120, 300]
     initialBeepDelay: 0
     beepSound: /Audio/Machines/Nuke/general_beep.ogg
   - type: Sticky
@@ -42,15 +42,14 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseItem, BaseItemDestructible, BasePlasticExplosiveTrigger ]
+  parent: [BaseItem, BaseItemDestructible, BasePlasticExplosiveTrigger]
   id: BasePlasticExplosive
   components:
   - type: Item
     size: Small
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:ExplodeBehavior
@@ -66,15 +65,15 @@
     visuals:
       enum.Trigger.TriggerVisuals.VisualState:
         base:
-          Primed: { state: primed }
-          Unprimed: { state: icon }
+          Primed: {state: primed}
+          Unprimed: {state: icon}
 
 ## Plastic Explosives used in game
 - type: entity
   parent: [BasePlasticExplosive, BaseSyndicateContraband]
   id: C4
-  name: composition C-4
-  description: Used to put holes in specific areas without too much extra hole. A saboteur's favorite.
+  name: C-4塑胶炸药 | composition C-4
+  description: 用于在特定区域打孔而不会造成过多额外孔洞。破坏者的最爱。 | Used to put holes in specific areas without too much extra hole. A saboteur's favorite.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Bombs/c4.rsi
@@ -100,10 +99,10 @@
     price: 625 # 5000 for a bundle of 8
 
 - type: entity
-  parent: [ BasePlasticExplosive, BaseSecurityCargoContraband ]
+  parent: [BasePlasticExplosive, BaseSecurityCargoContraband]
   id: SeismicCharge
-  name: seismic charge
-  description: Concussion based explosive designed to destroy large amounts of rock.
+  name: 地震装药 | seismic charge
+  description: 基于震荡的炸药，旨在摧毁大量岩石。 | Concussion based explosive designed to destroy large amounts of rock.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Bombs/seismic.rsi

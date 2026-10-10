@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseStructure, StructureHealthBarrierStrong ]
+  parent: [BaseStructure, StructureHealthBarrierStrong]
   id: DeployableBarrier
-  name: deployable barrier
-  description: A deployable barrier. Swipe your ID card to lock/unlock it.
+  name: 可部署屏障 | deployable barrier
+  description: 一个可部署屏障。刷身份证即可锁定或解锁。 | A deployable barrier. Swipe your ID card to lock/unlock it.
   components:
   - type: Transform
     anchored: false
@@ -22,15 +22,13 @@
   - type: Fixtures
     fixtures:
       base:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 75
         mask:
         - MachineMask
       barrier:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         layer:
         - WallLayer
@@ -47,8 +45,7 @@
     damageModifierSet: PlasteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 120
       behaviors:
       - !type:SpawnEntitiesBehavior

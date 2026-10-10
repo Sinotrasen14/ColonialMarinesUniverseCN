@@ -10,8 +10,8 @@
   - type: Appearance
   - type: Reactive
     groups:
-      Flammable: [ Touch ]
-      Extinguish: [ Touch ]
+      Flammable: [Touch]
+      Extinguish: [Touch]
   - type: ExtinguishableSetCollisionWake
   - type: Flammable
     fireSpread: true
@@ -28,8 +28,7 @@
   - type: Injurable
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 15
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -38,7 +37,7 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Edible
     delay: 7
     forceFeedDelay: 7
@@ -73,8 +72,8 @@
 - type: entity
   parent: BasePaper
   id: Paper
-  name: paper
-  description: A piece of white paper.
+  name: 纸 | paper
+  description: 一张白纸。 | A piece of white paper.
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -101,10 +100,10 @@
   - type: StationAiWhitelist
 
 - type: entity
-  name: paper scrap
+  name: 纸团 | paper scrap
   parent: BasePaper
   id: PaperScrap
-  description: 'A crumpled up piece of white paper.'
+  description: '一张揉皱的白纸。 | A crumpled up piece of white paper.'
   components:
   - type: Tag
     tags:
@@ -117,10 +116,10 @@
     - state: scrap
 
 - type: entity
-  name: office paper
+  name: 办公用纸 | office paper
   parent: Paper
   id: PaperOffice
-  description: 'A plain sheet of office paper.'
+  description: '一张普通的办公用纸。 | A plain sheet of office paper.'
   components:
   - type: PaperVisuals
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
@@ -129,10 +128,10 @@
     contentMargin: 16.0, 16.0, 16.0, 16.0
 
 - type: entity
-  name: artifact analyzer printout
+  name: 神器分析仪打印输出 | artifact analyzer printout
   parent: Paper
   id: PaperArtifactAnalyzer
-  description: The readout of a device forgotten to time.
+  description: 被时间遗忘的设备的读数。 | The readout of a device forgotten to time.
   components:
   - type: Sprite
     layers:
@@ -156,10 +155,10 @@
     maxWritableArea: 400.0, 0.0
 
 - type: entity
-  name: captain's thoughts
+  name: 船长的思绪 | captain's thoughts
   parent: Paper
   id: PaperCaptainsThoughts
-  description: "A page of the captain's journal. In luxurious lavender."
+  description: "一页船长的日志。奢华的薰衣草色。 | A page of the captain's journal. In luxurious lavender."
   components:
   - type: Sprite
     layers:
@@ -190,10 +189,10 @@
         color: "#e6e6fa"
 
 - type: entity
-  name: cargo invoice
+  name: 货物发票 | cargo invoice
   parent: Paper
   id: PaperCargoInvoice
-  description: 'A single unit of bureaucracy.'
+  description: '一个官僚单位。 | A single unit of bureaucracy.'
   components:
   - type: Sprite
     layers:
@@ -234,8 +233,8 @@
 - type: entity
   id: PaperNanoTaskItem
   parent: Paper
-  name: NanoTask item
-  description: A printed NanoTask item. Can be inserted into your PDA to add it to your tasks.
+  name: 纳米任务物品 | NanoTask item
+  description: 一张打印的纳米任务物品。可以插入你的PDA，将其添加到你的任务中。 | A printed NanoTask item. Can be inserted into your PDA to add it to your tasks.
   components:
   - type: Tag
     tags:
@@ -268,8 +267,8 @@
 - type: entity
   id: PaperCargoBountyManifest
   parent: PaperCargoInvoice
-  name: bounty manifest
-  description: A paper label designating a crate as containing a bounty. Selling a crate with this label will fulfill the bounty.
+  name: 赏金清单 | bounty manifest
+  description: 一个纸质标签，标明板条箱内装有赏金。出售带有此标签的板条箱即可完成赏金。 | A paper label designating a crate as containing a bounty. Selling a crate with this label will fulfill the bounty.
   components:
   - type: Sprite
     layers:
@@ -317,8 +316,8 @@
 - type: entity
   id: PaperSalvageJobLabel
   parent: PaperCargoInvoice
-  name: salvage job shipment label
-  description: A paper label designating a crate as containing a shipment to fulfill a salvage job. Selling a crate with this will fulfill the job.
+  name: 打捞任务货物标签 | salvage job shipment label
+  description: 一个纸质标签，标明某个板条箱内装有用于完成打捞任务的货物。出售带有此标签的板条箱即可完成任务。 | A paper label designating a crate as containing a shipment to fulfill a salvage job. Selling a crate with this will fulfill the job.
   components:
   - type: Sprite
     layers:
@@ -358,25 +357,25 @@
         color: "#f7e574"
 
 - type: entity
-  name: character sheet
+  name: 角色卡 | character sheet
   parent: Paper
   id: PaperCNCSheet # legally gray zone of using "D&D" and "DND"
-  description: 'A sheet for your Carps and Crypts characters.'
+  description: '一张用于你的“鲤鱼与墓穴”角色的角色卡。 | A sheet for your Carps and Crypts characters.'
   components:
   - type: Paper
     contentSize: 10000
     content: book-cnc-sheet
   - type: Sprite
     layers:
-      - state: paper
-        color: "#cccccc"
-      - state: paper_words
-        map: ["enum.PaperVisualLayers.Writing"]
-        color: "#cccccc" #aaaaaaaaaaaaaaaaaaaaaaa
-        visible: false
-      - state: paper_stamp-generic
-        map: ["enum.PaperVisualLayers.Stamp"]
-        visible: false
+    - state: paper
+      color: "#cccccc"
+    - state: paper_words
+      map: ["enum.PaperVisualLayers.Writing"]
+      color: "#cccccc"   #aaaaaaaaaaaaaaaaaaaaaaa
+      visible: false
+    - state: paper_stamp-generic
+      map: ["enum.PaperVisualLayers.Stamp"]
+      visible: false
   - type: PaperVisuals
     backgroundImagePath: "/Textures/Interface/Paper/paper_background_default.svg.96dpi.png"
     contentImagePath: "/Textures/Interface/Paper/paper_content_lined.svg.96dpi.png"
@@ -396,7 +395,7 @@
 - type: entity
   parent: Paper
   id: PaperWritten
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -407,7 +406,7 @@
 - type: entity
   parent: Paper
   id: NukeCodePaper
-  name: nuclear authentication codes
+  name: 核认证代码 | nuclear authentication codes
   components:
   - type: NukeCodePaper
     allNukesAvailable: true
@@ -422,17 +421,17 @@
 - type: entity
   parent: [Paper, BaseSyndicateContraband] # eat or burn your damn piece of paper damn thieves
   id: TraitorCodePaper
-  name: syndicate codeword
-  description: A leaked codeword to possibly get in touch with the Syndicate.
-  categories: [ DoNotMap ]
+  name: 辛迪加暗语 | syndicate codeword
+  description: 一个泄露的暗语，可能可以用来联系辛迪加。 | A leaked codeword to possibly get in touch with the Syndicate.
+  categories: [DoNotMap]
   components:
   - type: TraitorCodePaper
 
 - type: entity
   parent: [Paper, BaseSyndicateContraband]
   id: AllTraitorCodesPaper
-  name: syndicate codewords registry
-  description: A registry of all active Syndicate codewords.
+  name: 辛迪加暗码登记册 | syndicate codewords registry
+  description: 辛迪加所有有效暗码的登记册。 | A registry of all active Syndicate codewords.
   suffix: Admeme
   components:
   - type: TraitorCodePaper
@@ -440,10 +439,10 @@
     codewordShowAll: true
 
 - type: entity
-  name: envelope
+  name: 信封 | envelope
   parent: BaseItem
   id: Envelope
-  description: 'A small envelope for keeping prying eyes off of your sensitive documents.'
+  description: '一个用来防止窥探你敏感文件的小信封。 | A small envelope for keeping prying eyes off of your sensitive documents.'
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi
@@ -478,9 +477,9 @@
         ejectSound: /Audio/Effects/packetrip.ogg
         whitelist:
           components:
-            - Cash
+          - Cash
           tags:
-            - Paper
+          - Paper
   - type: ActivatableUI
     key: enum.PaperUiKey.Key
     requiresComplex: false
@@ -515,12 +514,11 @@
     damageModifierSet: Wood
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 15
       behaviors:
       - !type:EmptyAllContainersBehaviour
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Injurable
   - type: StationAiWhitelist

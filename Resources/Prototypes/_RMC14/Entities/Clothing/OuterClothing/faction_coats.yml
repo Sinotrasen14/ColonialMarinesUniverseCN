@@ -1,44 +1,38 @@
-# Bureau
-
 - type: entity
   parent: RMCOuterClothingExternalWebbing
   id: RMCCoatBureauTrenchCoatBrown
-  name: brown trench-coat
-  description: A worn, brown, old style trench-coat. When a bum sees a cop coming, he don't stick around.
+  name: 棕色风衣
+  description: 一件破旧的棕色老式风衣。流浪汉看到警察过来时，绝不会逗留。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/trench_brown.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/trench_brown.rsi
-
 - type: entity
   parent: RMCCoatBureauTrenchCoatBrown
   id: RMCCoatBureauTrenchCoatGrey
-  name: grey trench-coat
-  description: A worn, grey, old style trench-coat. When a bum sees a cop coming, he don't stick around.
+  name: 灰色风衣
+  description: 一件破旧、灰色、老式的风衣。流浪汉看到警察过来时，可不会留在附近。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/trench_grey.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/trench_grey.rsi
-
 - type: entity
   parent: RMCCoatBureauTrenchCoatBrown
   id: RMCCoatBureauTrenchCoatBeige
-  name: beige trench-coat
-  description: A worn, tan, old style trench-coat. A classic of noir-style apparel.
+  name: 米色风衣
+  description: 一件破旧的、棕褐色的旧式风衣。黑色电影风格服装中的经典。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/trench_beige.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/trench_beige.rsi
-
-# Bureau Deputy
 - type: entity
   parent: RMCOuterClothingExternalWebbing
   id: RMCCoatBureauDeputy
-  name: CMB deputy jacket
-  description: A thick and stylish black leather jacket with a Marshal's Deputy badge pinned to it. The back is enscribed with the powerful letters of 'DEPUTY' representing justice, authority, and protection in the outer rim.
+  name: CMB副官夹克
+  description: 一件厚实时尚的黑色皮夹克，上面别着一枚执法官副官徽章。背面刻有醒目的“DEPUTY”字样，代表着外环的正义、权威与保护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/deputy.rsi
@@ -49,30 +43,26 @@
     bullet: 15
     bio: 10
     explosionArmor: 10
-
 - type: entity
   parent: RMCCoatBureauDeputy
   id: RMCCoatBureauMarshal
-  name: CMB marshal jacket
-  description: A thick and stylish black leather jacket with a Marshal's badge pinned to it. The back is enscribed with the powerful letters of 'MARSHAL' representing justice, authority, and protection in the outer rim.
+  name: CMB执法官夹克
+  description: 一件厚实且有型的黑色皮夹克，上面别着一枚执法官徽章。背面铭刻着醒目的“MARSHAL”字样，代表着外环的正义、权威与守护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/marshal.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/Bureau/marshal.rsi
-
-# Fur coats
 - type: entity
   parent: RMCCoatBureauDeputy
   id: RMCCoatExpensiveFur
-  name: expensive fur-lined trench-coat
-  description: A luxurious fur-lined, antique-styled trench coat that exudes classic noir elegance. This exquisite garment is far beyond the average person's budget, accessible only to high-level executives and elite military personnel.
+  name: 昂贵毛皮衬里风衣
+  description: 一件奢华的毛皮衬里、复古风格的风衣，散发着经典黑色电影的优雅气息。这件精美衣物远超普通人的预算，只有高层管理人员和精英军事人员才能拥有。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/FurCoat/fur_coat.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/FurCoat/fur_coat.rsi
-
 - type: entity
   parent: RMCCoatExpensiveFur
   id: RMCCoatExpensiveFurAlt
@@ -82,14 +72,11 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/FurCoat/fur_coat_alt.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/FurCoat/fur_coat_alt.rsi
-
-# High Command
-
 - type: entity
   parent: RMCCoatBureauDeputy
   id: RMCCoatJacketGeneral
-  name: general's jacket
-  description: A black trench coat with gold metallic trim. Flashy, highly protective, and over-the-top. Fit for a king - or, in this case, a General. Has quite a few pockets.
+  name: 将军夹克
+  description: 一件黑色风衣，饰有金色金属镶边。华丽、防护性极强，而且夸张到极点。适合国王——或者说，在这种情况下，适合一位将军。口袋相当多。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/jacket_general.rsi
@@ -105,14 +92,13 @@
     worn: false
   - type: Storage
     grid:
-    - 0,0,7,1 # 4 slots
+    - 0,0,7,1
   - type: Foldable
     canFoldInsideContainer: true
     unfoldVerbText: rmc-buttons-verb-fold
     foldVerbText: rmc-buttons-verb-fold
   - type: FoldableClothing
     foldedEquippedPrefix: jacket
-
 - type: entity
   parent: RMCCoatJacketGeneral
   id: RMCCoatJacketGeneralFilled
@@ -126,13 +112,11 @@
       amount: 1
     - id: RMCHandcuffs
       amount: 1
-
-# TSEPA
 - type: entity
   parent: RMCOuterClothingExternalWebbing
   id: RMCCoatTSEPA
-  name: NSPA police jacket
-  description: A black polyester jacket with a silver Sakura emblem of the Neroid Sector Policing Authority pinned to it. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds.
+  name: NSPA警察夹克
+  description: 一件黑色聚酯夹克，上面别着一枚尼罗伊德星区治安局的银色樱花徽章。帝国与荣誉，职责所系。职责超越边界，正义遍及诸界。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/jacket.rsi
@@ -143,59 +127,53 @@
     bullet: 15
     bio: 10
     explosionArmor: 10
-
 - type: entity
   parent: RMCCoatTSEPA
   id: RMCCoatTSEPAFormal
-  name: NSPA police formal jacket
-  description: A heavy woolen formal coat commonly used by Neroid Sector Policing Authority Constables. Empire and Honor, Bound by Duty. Duty Beyond Borders, Justice Across Worlds.
+  name: NSPA警察正装夹克
+  description: 一件尼罗伊德星区警务管理局警员常用的厚重羊毛正装外套。帝国与荣耀，恪尽职守。职责无疆界，正义遍世界。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/formal_jacket.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/formal_jacket.rsi
-
 - type: entity
   parent: RMCCoatTSEPA
   id: RMCCoatTSEPAHighVis
-  name: NSPA high-vis jacket
-  description: A green and white striped (high-visibility) polyester vest commonly used by Neroid Sector Policing Authority personnel.
+  name: NSPA高可见度夹克
+  description: 一件绿白条纹（高可见度）聚酯背心，通常供内罗伊德星区警务管理局人员使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/highvis_jacket.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/highvis_jacket.rsi
-
 - type: entity
   parent: RMCCoatTSEPA
   id: RMCCoatTSEPAHighVisVest
-  name: NSPA hazard vest
-  description: A green and white striped (high-visibility) polyester vest commonly used by Neroid Sector Policing Authority personnel.
+  name: NSPA警示背心
+  description: 一件绿白条纹（高可见度）聚酯背心，通常由 Neroid 区警务管理局人员使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/highvis_vest.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/TSE/TSEPA/highvis_vest.rsi
-
-# SPP PaP
-
 - type: entity
   parent: RMCCoatBureauDeputy
   id: RMCCoatPaP
-  name: PaP uniform jacket
-  description: A People's Armed Police service jacket featuring small dispersed para-aramid inserts providing the barest of defensive functionality, and a Personal Light Unit rig.
+  name: 武警制服夹克
+  description: A People's Armed Police service jacket featuring small dispersed para-aramid
+    inserts providing the barest of defensive functionality, and a Personal Light
+    Unit rig.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/pap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/pap.rsi
-
-# WeYa pilot
 - type: entity
   parent: RMCBaseJacket
   id: RMCCoatWeYaPilot
-  name: Weyland-Yutani Pilot formal-jacket
-  description: A suit-style jacket with a fur lined collar and golden epaulettes signifying rank. Worn by Weyland-Yutani qualified civilian Pilots, akin to old Earth formal Pilots-wear.
+  name: 维兰德-尤坦尼飞行员正装夹克
+  description: 一款西装式夹克，配有毛皮衬里衣领和象征等级的金色肩章。由维兰德-尤坦尼合格的民用飞行员穿着，类似旧地球的正式飞行员装束。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Coats/weya_pilot.rsi

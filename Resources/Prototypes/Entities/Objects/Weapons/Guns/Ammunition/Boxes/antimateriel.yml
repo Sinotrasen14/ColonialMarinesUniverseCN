@@ -1,14 +1,14 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem, BaseSecurityContraband ]
+  parent: [BaseItem, BaseSecurityContraband]
   id: BaseMagazineBoxAntiMateriel
-  name: ammunition box (.60 anti-materiel)
+  name: 弹药箱（.60反器材） | ammunition box (.60 anti-materiel)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeAntiMateriel
+      - CartridgeAntiMateriel
     proto: CartridgeAntiMateriel
     capacity: 10
   - type: Item
@@ -28,8 +28,8 @@
 - type: entity
   parent: BaseMagazineBoxAntiMateriel
   id: MagazineBoxAntiMateriel
-  name: ammunition box (.60 anti-materiel)
-  description: A cardboard box of .60 anti-materiel rounds.
+  name: 弹药箱（.60反器材） | ammunition box (.60 anti-materiel)
+  description: 一盒.60反器材弹药的纸板箱。 | A cardboard box of .60 anti-materiel rounds.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeAntiMateriel

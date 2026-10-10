@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseItem
   id: BoxFolderNuclearCodes
-  name: nuclear code folder
+  name: 核代码文件夹 | nuclear code folder
   components:
   - type: Sprite
     sprite: Objects/Misc/folders.rsi
@@ -32,8 +32,8 @@
 - type: entity
   parent: BoxBase
   id: BoxFolderBaseEmpty
-  name: folder
-  description: A folder filled with top secret paperwork.
+  name: 文件夹 | folder
+  description: 一个装满绝密文件的文件夹。 | A folder filled with top secret paperwork.
   components:
   - type: Sprite
     sprite: Objects/Misc/folders.rsi
@@ -55,7 +55,7 @@
   - type: Item
     sprite: Objects/Misc/folders.rsi
     size: Small
-    shape: null
+    shape:
     inhandVisuals:
       left:
       - state: inhand-left
@@ -320,9 +320,9 @@
 - type: entity
   parent: BoxFolderBaseEmpty
   id: BoxFolderCentComEmpty
-  categories: [ DoNotMap ]
-  name: CentComm folder
-  description: CentComm's miserable little pile of secrets!
+  categories: [DoNotMap]
+  name: CentComm文件夹 | CentComm folder
+  description: CentComm那可怜的小秘密堆！ | CentComm's miserable little pile of secrets!
   components:
   - type: Sprite
     layers:
@@ -350,8 +350,8 @@
 - type: entity
   parent: BoxFolderBaseEmpty
   id: BoxFolderClipboardEmpty
-  name: clipboard
-  description: The weapon of choice for those on the front lines of bureaucracy.
+  name: 剪贴板 | clipboard
+  description: 官僚前线人员的首选武器。 | The weapon of choice for those on the front lines of bureaucracy.
   components:
   - type: Sprite
     sprite: Objects/Misc/clipboard.rsi
@@ -418,8 +418,8 @@
 - type: entity
   parent: BoxFolderClipboardEmpty
   id: BoxFolderPlasticClipboardEmpty
-  name: plastic clipboard
-  description: A cheap clipboard made of blue plastic. For those who aren't yet ready to wield the bureaucratic might of a proper wooden clipboard.
+  name: 塑料写字板 | plastic clipboard
+  description: 一块廉价的蓝色塑料写字板。适合那些还没准备好驾驭正规木质写字板那种官僚威严的人。 | A cheap clipboard made of blue plastic. For those who aren't yet ready to wield the bureaucratic might of a proper wooden clipboard.
   components:
   - type: Sprite
     sprite: Objects/Misc/plastic_clipboard.rsi
@@ -452,8 +452,8 @@
 - type: entity
   parent: BoxFolderClipboardEmpty
   id: BoxFolderCentComClipboardEmpty
-  name: CentComm clipboard
-  description: A luxurious clipboard upholstered with green velvet. Often seen carried by CentComm officials, seldom seen actually used.
+  name: 中央指挥部剪贴板 | CentComm clipboard
+  description: 一个用绿色天鹅绒包裹的豪华剪贴板。常见于中央指挥部官员手中，却鲜见其真正被使用。 | A luxurious clipboard upholstered with green velvet. Often seen carried by CentComm officials, seldom seen actually used.
   components:
   - type: Sprite
     sprite: Objects/Misc/cc-clipboard.rsi
@@ -487,8 +487,8 @@
 - type: entity
   parent: [BoxFolderClipboardEmpty, BaseGrandTheftContraband]
   id: BoxFolderQmClipboard
-  name: requisition digi-board
-  description: A bulky electric clipboard, filled with shipping orders and financing details. With so many compromising documents, you ought to keep this safe.
+  name: 征用数字板 | requisition digi-board
+  description: 一个笨重的电子记事板，上面满是运输订单和融资细节。这么多敏感文件，你该好好保管它。 | A bulky electric clipboard, filled with shipping orders and financing details. With so many compromising documents, you ought to keep this safe.
   components:
   - type: Sprite
     sprite: Objects/Misc/qm_clipboard.rsi
@@ -529,7 +529,7 @@
           tags:
           - Write
   - type: CargoOrderConsole
-    removeLimitAccess: [ "Quartermaster" ]
+    removeLimitAccess: ["Quartermaster"]
   - type: ActivatableUI
     verbText: qm-clipboard-computer-verb-text
     key: enum.CargoConsoleUiKey.Orders

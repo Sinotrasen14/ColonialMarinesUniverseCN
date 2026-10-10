@@ -1,8 +1,10 @@
 - type: entity
-  parent: [ClothingHeadBase, CMUBaseGasMaskFilterSlot]
+  parent:
+  - ClothingHeadBase
+  - CMUBaseGasMaskFilterSlot
   id: RMCHoodBioGeneral
-  name: bio hood
-  description: A hood that protects the head and face from biological contaminants.
+  name: 生物防护头罩
+  description: 保护头部和面部免受生物污染物侵害的头罩。
   suffix: Generic, RMC
   components:
   - type: Sprite
@@ -16,12 +18,9 @@
       HeadTop: HEAD
       HeadSide: HEAD
   - type: CMArmor
-    bio: 100 # CLOTHING_ARMOR_HARDCORE
-    # armor_rad = 20
-    # armor_internaldamage = 10
+    bio: 100
   - type: MycotoxinProtection
     fullProtection: true
-
 - type: entity
   parent: RMCHoodBioGeneral
   id: RMCHoodBioMedical
@@ -33,7 +32,6 @@
     sprite: _RMC14/Objects/Clothing/Head/Helmets/biohelmet_medical.rsi
   - type: MycotoxinProtection
     fullProtection: true
-
 - type: entity
   parent: RMCHoodBioGeneral
   id: RMCHoodBioScientist
@@ -45,7 +43,6 @@
     sprite: _RMC14/Objects/Clothing/Head/Helmets/biohelmet_scientist.rsi
   - type: MycotoxinProtection
     fullProtection: true
-
 - type: entity
   parent: RMCHoodBioGeneral
   id: RMCHoodBioSecurity
@@ -57,7 +54,6 @@
     sprite: _RMC14/Objects/Clothing/Head/Helmets/biohelmet_security.rsi
   - type: MycotoxinProtection
     fullProtection: true
-
 - type: entity
   parent: RMCHoodBioGeneral
   id: RMCHoodBioVirology
@@ -69,12 +65,13 @@
     sprite: _RMC14/Objects/Clothing/Head/Helmets/biohelmet_virology.rsi
   - type: MycotoxinProtection
     fullProtection: true
-
 - type: entity
   parent: RMCHoodBioGeneral
   id: RMCHoodBioWeYa
-  name: WeYu-TSS MK II - bio hood
-  description: The 'Weyland-Yutani TerraScientia bio-suit MK II'. An advanced light-weight bio-suit developed in-house by Weyland-Yutani. It's a hood that protects the head and face from biological contaminants, synthetic compliant. Offers no real protection.
+  name: WeYu-TSS MK II - 生物防护头罩
+  description: The 'Weyland-Yutani TerraScientia bio-suit MK II'. An advanced light-weight
+    bio-suit developed in-house by Weyland-Yutani. It's a hood that protects the head
+    and face from biological contaminants, synthetic compliant. Offers no real protection.
   suffix: Generic, WeYu
   components:
   - type: Sprite
@@ -83,12 +80,13 @@
     sprite: _RMC14/Objects/Clothing/Head/Helmets/biohelmet_weya.rsi
   - type: MycotoxinProtection
     fullProtection: true
-
 - type: entity
   parent: RMCHoodBioWeYa
   id: RMCHoodBioWeYaAlt
-  name: WeYu-TSS MK I - bio hood
-  description: The 'Weyland-Yutani TerraScientia bio-suit MK I'. An advanced light-weight bio-suit developed in-house by Weyland-Yutani. It's a hood that protects the head and face from biological contaminants.
+  name: WeYu-TSS MK I－生物防护头罩
+  description: The 'Weyland-Yutani TerraScientia bio-suit MK I'. An advanced light-weight
+    bio-suit developed in-house by Weyland-Yutani. It's a hood that protects the head
+    and face from biological contaminants.
   suffix: Generic, WeYu, Alt
   components:
   - type: Sprite

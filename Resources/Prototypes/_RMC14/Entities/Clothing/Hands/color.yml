@@ -1,8 +1,8 @@
 - type: entity
   parent: CMHandsBlackMarine
   id: RMCHandsBlack
-  name: black gloves
-  description: A simple pair of black gloves.
+  name: 黑色手套
+  description: 一双简单的黑色手套。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/black.rsi
@@ -10,20 +10,18 @@
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/black.rsi
   - type: Fiber
     fiberColor: fibers-black
-
 - type: entity
   parent: RMCHandsBlack
   id: RMCHandsCombat
-  name: combat gloves
-  description: These tactical gloves are somewhat fire and impact resistant.
+  name: 作战手套
+  description: 这些战术手套在一定程度上防火、抗冲击。
   components:
   - type: Insulated
-
 - type: entity
   parent: CMHandsBlackMarine
   id: CMHandsInsulated
-  name: insulated gloves
-  description: These gloves will protect the wearer from electric shocks.
+  name: 绝缘手套
+  description: 这些手套可以保护佩戴者免受电击。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/insulated.rsi
@@ -33,30 +31,28 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-brown
-
 - type: entity
   parent: ClothingHandsBase
   id: CMHandsBrown
-  name: insulated combat gloves
-  description: A pair of brown gloves.
+  name: 绝缘作战手套
+  description: 一双棕色手套。
   components:
   - type: Insulated
-  - type: CMArmor # CMU14: armored like AU14GlovesBase/RMCHandsVeteran
-    melee: 40 # CMU14
-    bullet: 40 # CMU14
-    explosionArmor: 20 # CMU14
+  - type: CMArmor
+    melee: 40
+    bullet: 40
+    explosionArmor: 20
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/brown.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/brown.rsi
   - type: Fiber
     fiberColor: fibers-brown
-
 - type: entity
   parent: ClothingHandsBase
   id: CMHandsLightBrown
-  name: light brown gloves
-  description: A pair of light brown gloves.
+  name: 浅棕色手套
+  description: 一双浅棕色手套。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/light_brown.rsi
@@ -64,12 +60,11 @@
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/light_brown.rsi
   - type: Fiber
     fiberColor: fibers-brown
-
 - type: entity
   parent: ClothingHandsBase
   id: CMHandsWhite
-  name: white gloves
-  description: A pair of white gloves.
+  name: 白色手套
+  description: 一双白色手套。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/white.rsi
@@ -77,34 +72,31 @@
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/white.rsi
   - type: Fiber
     fiberColor: fibers-white
-
 - type: entity
   parent: CMHandsWhite
   id: CMHandsWhiteDress
-  name: dress gloves
-  description: A pair of fashionable white gloves, worn by marines in dress.
+  name: 礼服手套
+  description: 一双时尚的白色手套，由身着礼服的海军陆战队员佩戴。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/white.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/white.rsi
-
 - type: entity
   parent: CMHandsWhite
   id: RMCHandsPurple
-  name: purple gloves
-  description: A pair of gloves, they don't look special in any way.
+  name: 紫色手套
+  description: 一双手套，看起来没有任何特别之处。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/purple.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/purple.rsi
-
 - type: entity
   parent: CMHandsInsulated
   id: CMHandsBlackInsulated
-  name: black insulated gloves
-  description: These gloves will protect the wearer from electric shocks. Now in black.
+  name: 黑色绝缘手套
+  description: 这些手套可以保护佩戴者免受电击。现在有黑色款。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/insulated_black.rsi
@@ -114,12 +106,11 @@
   - type: Fiber
     fiberMaterial: fibers-insulative
     fiberColor: fibers-black
-
 - type: entity
   parent: RMCHandsBlack
   id: RMCHandsLeatherBlack
-  name: black leather gloves
-  description: Supple, black leather gloves crafted from the finest leather. Stylish, durable, and ready for work or play.
+  name: 黑色皮手套
+  description: 柔软的黑皮手套，由上等皮革精制而成。时尚、耐用，适合工作或休闲。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/leather_black.rsi

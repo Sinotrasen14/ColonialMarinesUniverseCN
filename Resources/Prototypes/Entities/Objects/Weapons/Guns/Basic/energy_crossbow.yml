@@ -23,8 +23,8 @@
     visuals:
       enum.AmmoVisuals.HasAmmo:
         empty-icon:
-          True: { visible: False }
-          False: { visible: True }
+          true: {visible: false}
+          false: {visible: true}
   - type: RechargeBasicEntityAmmo
     rechargeCooldown: 5 #2 seconds of KD, should always have CD > KD
     rechargeSound:
@@ -37,8 +37,8 @@
 - type: entity
   parent: [WeaponEnergyCrossbowBase, BaseSyndicateContraband]
   id: WeaponEnergyCrossbow
-  name: mini energy crossbow
-  description: Launches renewable toxic arrows capable of flooring targets instantly.
+  name: 迷你能量弩 | mini energy crossbow
+  description: 发射可再生的毒箭，能够瞬间击倒目标。 | Launches renewable toxic arrows capable of flooring targets instantly.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Basic/energy_crossbow.rsi

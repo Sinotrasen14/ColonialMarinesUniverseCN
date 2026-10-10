@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: ChopSticks
-  name: chopsticks
-  description: A very traditional utensil.
+  name: 筷子 | chopsticks
+  description: 一种非常传统的餐具。 | A very traditional utensil.
   components:
   - type: Sprite
     sprite: Objects/Misc/chopstick.rsi
@@ -19,13 +19,13 @@
 
 - type: entity
   parent: BaseItem
-  name: paired chopsticks
+  name: 配对筷子 | paired chopsticks
   id: PairedChopsticks
-  description: You should probably separate them.
+  description: 你或许应该把它们分开。 | You should probably separate them.
   components:
   - type: SpawnItemsOnUse
     items:
-      - id: ChopSticks
+    - id: ChopSticks
     sound:
       path: /Audio/Effects/chopstickbreak.ogg
   - type: Sprite

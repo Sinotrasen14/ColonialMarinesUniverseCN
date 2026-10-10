@@ -2,15 +2,17 @@
   id: RMCBaseCMBArmor
   abstract: true
   components:
-  - type: ClothingSpeedModifier # light armor speed
-    walkModifier: .725
-    sprintModifier: .725
-
+  - type: ClothingSpeedModifier
+    walkModifier: 0.725
+    sprintModifier: 0.725
 - type: entity
-  parent: [RMCBaseCMBArmor, RMCBaseMarineArmorLight]
+  parent:
+  - RMCBaseCMBArmor
+  - RMCBaseMarineArmorLight
   id: RMCArmorM4RLight
-  name: M4R pattern CMB light armor
-  description: A dark set of armor, which is a modification of the security variant of AEGIS Armaments M3 armor. Designed for riot control and protest suppression in mind. The side of it has a metallic insignia with 'CMB RIOT CONTROL' on it.
+  name: M4R型CMB轻型护甲
+  description: 一套深色护甲，是对AEGIS Armaments M3护甲安保型号的改装，设计用于防暴和镇压抗议。其侧面有一枚金属徽章，上面写有“CMB
+    RIOT CONTROL”。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/CMB/cmb_light_armor.rsi
@@ -21,20 +23,22 @@
     explosionArmor: 20
   - type: RMCArmorSpeedTier
     speedTier: light
-  - type: ClothingSpeedModifier # light armor speed
-    walkModifier: 0.80
-    sprintModifier: 0.80
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
   - type: ExplosionResistance
     damageCoefficient: 0
     worn: false
   - type: ItemCamouflage
-    camouflageVariations: { }
-
+    camouflageVariations: {}
 - type: entity
-  parent: [RMCBaseCMBArmor, RMCBaseMarineArmorLight]
+  parent:
+  - RMCBaseCMBArmor
+  - RMCBaseMarineArmorLight
   id: RMCArmorM4RMedium
-  name: M4R pattern CMB armor
-  description: A dark set of armor, which is a modification of the security variant of AEGIS Armaments M3 armor. Designed for riot control and protest suppression in mind. The side of it has a metallic insignia with 'CMB RIOT CONTROL' on it.
+  name: M4R型CMB护甲
+  description: 一套深色护甲，是AEGIS Armaments M3护甲安保型的改装版。设计用于防暴和镇压抗议。其侧面有一枚金属徽章，上面写着“CMB
+    RIOT CONTROL”。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/CMB/cmb_heavy_armor.rsi
@@ -52,13 +56,14 @@
     damageCoefficient: 0
     worn: false
   - type: ItemCamouflage
-    camouflageVariations: { }
-
+    camouflageVariations: {}
 - type: entity
-  parent: [RMCBaseCMBArmor, RMCBaseMarineArmorLight]
+  parent:
+  - RMCBaseCMBArmor
+  - RMCBaseMarineArmorLight
   id: RMCArmorM4RMarshallMedium
-  name: M4R pattern CMB Marshal armor
-  description: A custom fit variation of the CMB Riot armor, intended to be worn the Marshals themselves, has a golden lining with rank insignia. Has additional layer of lightweight protective materials.
+  name: M4R型CMB执法官护甲
+  description: CMB防暴护甲的定制合身版本，专为执法官本人穿着而设计，配有饰有军衔徽章的金色内衬，并增加了一层轻质防护材料。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/CMB/cmb_sheriff_armor.rsi
@@ -76,4 +81,4 @@
     damageCoefficient: 0
     worn: false
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}

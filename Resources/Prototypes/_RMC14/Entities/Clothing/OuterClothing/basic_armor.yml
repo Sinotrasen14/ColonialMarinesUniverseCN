@@ -1,9 +1,8 @@
-﻿# riot
 - type: entity
   parent: RMCBaseArmor
   id: CMArmorRiot
-  name: M5 riot control armor
-  description: A heavily modified suit of M2 MP Armor used to suppress riots from buckethead marines. Slows you down a lot.
+  name: M5防暴装甲
+  description: 一套经过重度改装的M2宪兵装甲，用于镇压桶头陆战队员发动的暴乱。会让你行动迟缓很多。
   suffix: Marine
   components:
   - type: Sprite
@@ -13,7 +12,7 @@
     unequipDelay: 2
   - type: RMCArmorSpeedTier
     speedTier: heavy
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LOWHEAVY
+  - type: ClothingSpeedModifier
     walkModifier: 0.64
     sprintModifier: 0.64
   - type: CMArmor
@@ -24,26 +23,24 @@
   - type: RMCNameItemOnVend
     item: Armor
   - type: RMCBulkyArmor
-
 - type: entity
   parent: CMArmorRiot
   id: RMCArmorRiotCivilian
-  name: riot suit
-  description: A suit of armor with heavy padding to protect against melee attacks. Looks like it might impair movement.
+  name: 防暴服
+  description: 一套带有厚重衬垫的装甲，用于抵御近战攻击。看起来可能会影响行动。
   suffix: Civilian
   components:
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_HEAVY
+  - type: ClothingSpeedModifier
     walkModifier: 0.62
     sprintModifier: 0.62
   - type: CMArmor
     melee: 30
     bullet: 10
     explosionArmor: 10
-
 - type: entity
   parent: CMArmorRiot
   id: CMArmorRiotOld
-  description: Barring the slightly off-color plates, it's preserved quite well.
+  description: 除了几块颜色稍有偏差的护板外，它保存得相当完好。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/old_riot.rsi

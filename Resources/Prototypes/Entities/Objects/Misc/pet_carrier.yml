@@ -1,7 +1,7 @@
 - type: entity
   id: PetCarrier
-  name: pet carrier
-  description: Allows large animals to be carried comfortably. It smells vaguely of toilet water and explosives.
+  name: 宠物航空箱 | pet carrier
+  description: 让大型动物也能舒适地被携带。它隐约散发着花露水和爆炸物的气味。 | Allows large animals to be carried comfortably. It smells vaguely of toilet water and explosives.
   parent: BaseStructureDynamic
   components:
   - type: Sprite
@@ -25,8 +25,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 25
         mask:
@@ -36,7 +35,7 @@
     airtight: false
     whitelist:
       tags:
-        - VimPilot # If it can fit in a Vim it can fit in a pet carrier.
+      - VimPilot   # If it can fit in a Vim it can fit in a pet carrier.
   - type: Weldable
   - type: ResistLocker
   - type: PlaceableSurface
@@ -47,8 +46,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:DoActsBehavior

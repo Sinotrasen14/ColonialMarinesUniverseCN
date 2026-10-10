@@ -1,9 +1,9 @@
 - type: entity
-  name: bottle
+  name: 瓶子 | bottle
   parent: [SolutionDrink, SolutionTiny, BaseItem] # This solution name is hardcoded in ChemMasterComponent
   id: BaseChemistryEmptyBottle
   abstract: true
-  description: A small bottle.
+  description: 一个小瓶子。 | A small bottle.
   components:
   - type: Tag
     tags:
@@ -77,8 +77,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
@@ -86,7 +85,7 @@
           collection: GlassBreak
           params:
             volume: -4
-      - !type:SpillBehavior { }
+      - !type:SpillBehavior {}
       - !type:SpawnEntitiesBehavior
         spawn:
           ShardGlass:
@@ -94,7 +93,7 @@
             max: 1
         transferForensics: true
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DnaSubstanceTrace
 
 - type: entity

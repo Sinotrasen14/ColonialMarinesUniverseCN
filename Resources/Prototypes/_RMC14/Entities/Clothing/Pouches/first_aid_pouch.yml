@@ -1,40 +1,38 @@
-﻿- type: entity
-  parent: [RMCPouchOpenClosed, RMCPouchStorage]
+- type: entity
+  parent:
+  - RMCPouchOpenClosed
+  - RMCPouchStorage
   id: RMCPouchFirstAid
-  name: first-aid pouch
-  description: It contains, by default, autoinjectors. But it may also hold ointments, bandages, and pill packets.
+  name: 急救袋
+  description: 默认情况下，里面装有自动注射器，但也可能装有药膏、绷带和药片包。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Pouches/firstaid.rsi
   - type: Storage
     grid:
-    - 0,0,7,1 #4 slots
+    - 0,0,7,1
     whitelist:
       tags:
       - CMOintment
       - CMAutoInjector
       - Brutepack
-      # TODO RMC14 splint
       - PillPacket
   - type: FixedItemSizeStorage
   - type: IgnoreContentsSize
     items:
       tags:
       - PillPacket
-
 - type: entity
   parent: RMCPouchFirstAid
   id: RMCPouchFirstAidInjectors
   suffix: Injectors
-  description: Contains a variety of autoinjectors for quickly treating injuries.
+  description: 包含多种用于快速治疗伤势的自动注射器。
   components:
   - type: StorageFill
     contents:
     - id: CMBicaridineAutoInjector
     - id: CMKelotaneAutoInjector
-    #- id: CMTramadolAutoInjector # TODO RMC14
     - id: CMEmergencyAutoInjector
-
 - type: entity
   parent: RMCPouchFirstAid
   id: RMCPouchFirstAidSplintsGauzeOintment
@@ -43,10 +41,8 @@
   - type: StorageFill
     contents:
     - id: CMTricordrazineAutoInjector
-    #    - id: CMSplints5
     - id: CMOintment10
     - id: CMGauze10
-
 - type: entity
   parent: RMCPouchFirstAid
   id: RMCPouchFirstAidPills
@@ -56,22 +52,16 @@
     contents:
     - id: CMPacketPillsBicaridine
     - id: CMPacketPillsKelotane
-#    - id: CMPacketPillsTramadol # TODO RMC14
-#    - id: CMPacketPillsTramadol # TODO RMC14
-
-
-# First Aid ERT
 - type: entity
   parent: RMCPouchFirstAid
   id: RMCPouchFirstAidERT
-  description: It can contain autoinjectors, ointments, and bandages. This one has some extra stuff.
+  description: 它可以包含自动注射器、药膏和绷带。这个里面有一些额外的东西。
   suffix: ERT
   components:
   - type: Storage
     grid:
-    - 0,0,9,1 #5 slots
+    - 0,0,9,1
   - type: FixedItemSizeStorage
-
 - type: entity
   parent: RMCPouchFirstAidERT
   id: RMCPouchFirstAidERTFill
@@ -81,19 +71,16 @@
     contents:
     - id: CMBicaridineAutoInjector
     - id: CMKelotaneAutoInjector
-    #- id: CMTramadolAutoInjector
     - id: CMEmergencyAutoInjector
     - id: CMGauze10
-
 - type: entity
   parent: RMCPouchFirstAid
   id: RMCPouchFirstAidPMC
   name: We-Yu first-aid pouch
-  description: Contains a variety of autoinjectors for quickly treating injuries.
+  description: 包含多种用于快速治疗伤势的自动注射器。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Pouches/wy_firstaid.rsi
-
 - type: entity
   parent: RMCPouchFirstAidPMC
   id: RMCPouchFirstAidPMCFill
@@ -103,18 +90,15 @@
     contents:
     - id: CMBicaridineAutoInjector
     - id: CMKelotaneAutoInjector
-    #- id: CMTramadolAutoInjector
     - id: CMEmergencyAutoInjector
-
 - type: entity
   parent: RMCPouchFirstAidPMC
   id: RMCPouchFirstAidSPPArmyFill
-  name: first-aid pouch
+  name: 急救包
   suffix: Filled
   components:
   - type: StorageFill
     contents:
     - id: CMBicaridineAutoInjector
     - id: CMKelotaneAutoInjector
-    #- id: CMTramadolAutoInjector
     - id: CMEmergencyAutoInjector

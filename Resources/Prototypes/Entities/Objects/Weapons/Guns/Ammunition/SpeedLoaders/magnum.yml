@@ -1,17 +1,17 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem, BaseSecurityContraband ]
+  parent: [BaseItem, BaseSecurityContraband]
   id: BaseSpeedLoaderMagnum
-  name: "speed loader (.45 magnum)"
+  name: "快速装弹器（.45马格南） | speed loader (.45 magnum)"
   components:
   - type: Tag
     tags:
-      - SpeedLoaderMagnum
+    - SpeedLoaderMagnum
   - type: SpeedLoader
   - type: BallisticAmmoProvider
     whitelist:
       tags:
-        - CartridgeMagnum
+      - CartridgeMagnum
     capacity: 6
   - type: Sprite
   - type: ContainerContainer
@@ -22,18 +22,18 @@
 - type: entity
   parent: BaseSpeedLoaderMagnum
   id: SpeedLoaderMagnum
-  name: "speed loader (.45 magnum)"
-  description: Designed to quickly load up to six rounds of .45 magnum into an empty revolver. Intended to hold general-purpose kinetic ammunition.
+  name: "快速装弹器（.45马格南） | speed loader (.45 magnum)"
+  description: 用于将最多六发.45马格南子弹快速装入空左轮手枪。设计用于装填通用动能弹药。 | Designed to quickly load up to six rounds of .45 magnum into an empty revolver. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnum
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
     layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: base-6
-        map: [ "enum.GunVisualLayers.Mag" ]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: base-6
+      map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: base
     steps: 7
@@ -51,22 +51,22 @@
 - type: entity
   parent: SpeedLoaderMagnum
   id: SpeedLoaderMagnumEmpty
-  name: "speed loader (.45 magnum any)"
+  name: "快速装弹器（.45马格南任意） | speed loader (.45 magnum any)"
   suffix: empty
-  description: Designed to quickly load up to six rounds of .45 magnum into an empty revolver.
+  description: 用于将最多六发.45马格南快速装入空左轮手枪。 | Designed to quickly load up to six rounds of .45 magnum into an empty revolver.
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
     layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
       # TODO: This is actually a issue with all the speed loaders:
       #       You can mix different ammo types, but it will always
       #       use the one it was printed for.
-      - state: base-6
-        map: [ "enum.GunVisualLayers.Mag" ]
+    - state: base-6
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     inhandVisuals:
       left:
@@ -77,8 +77,8 @@
 - type: entity
   parent: SpeedLoaderMagnum
   id: SpeedLoaderMagnumIncendiary
-  name: "speed loader (.45 magnum incendiary)"
-  description: Designed to quickly load up to six rounds of .45 magnum into an empty revolver. Intended to hold self-igniting incendiary ammunition.
+  name: "快速装弹器（.45马格南燃烧弹） | speed loader (.45 magnum incendiary)"
+  description: 用于将最多六发.45马格南快速装入空左轮手枪。设计用于容纳自燃燃烧弹。 | Designed to quickly load up to six rounds of .45 magnum into an empty revolver. Intended to hold self-igniting incendiary ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumIncendiary
@@ -86,18 +86,18 @@
 - type: entity
   parent: BaseSpeedLoaderMagnum
   id: SpeedLoaderMagnumPractice
-  name: "speed loader (.45 magnum practice)"
-  description: Designed to quickly load up to six rounds of .45 magnum into an empty revolver. Intended to hold harmless practice ammunition.
+  name: "快速装弹器（.45马格南练习弹） | speed loader (.45 magnum practice)"
+  description: 设计用于快速将最多六发.45马格南子弹装入空左轮手枪。旨在装填无害练习弹药。 | Designed to quickly load up to six rounds of .45 magnum into an empty revolver. Intended to hold harmless practice ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumPractice
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
     layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: practice-6
-        map: [ "enum.GunVisualLayers.Mag" ]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: practice-6
+      map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: practice
     steps: 7
@@ -119,18 +119,18 @@
 - type: entity
   parent: BaseSpeedLoaderMagnum
   id: SpeedLoaderMagnumAP
-  name: "speed loader (.45 magnum armor-piercing)"
-  description: Designed to quickly load up to six rounds of .45 magnum into an empty revolver. Intended to hold specialized armor-piercing ammunition.
+  name: "快速装弹器（.45马格南穿甲弹） | speed loader (.45 magnum armor-piercing)"
+  description: 用于将最多六发.45马格南子弹快速装入空左轮手枪。专为容纳特制穿甲弹药而设计。 | Designed to quickly load up to six rounds of .45 magnum into an empty revolver. Intended to hold specialized armor-piercing ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumAP
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
     layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: piercing-6
-        map: [ "enum.GunVisualLayers.Mag" ]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: piercing-6
+      map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: piercing
     steps: 7
@@ -152,18 +152,18 @@
 - type: entity
   parent: BaseSpeedLoaderMagnum
   id: SpeedLoaderMagnumUranium
-  name: "speed loader (.45 magnum uranium)"
-  description: Designed to quickly load up to six rounds of .45 magnum into an empty revolver. Intended to hold exotic uranium-core ammunition.
+  name: "快速装弹器（.45马格南铀弹） | speed loader (.45 magnum uranium)"
+  description: 用于将最多六发.45马格南弹快速装入空左轮手枪。设计用于容纳异种铀芯弹药。 | Designed to quickly load up to six rounds of .45 magnum into an empty revolver. Intended to hold exotic uranium-core ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumUranium
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/SpeedLoaders/Magnum/magnum_speed_loader.rsi
     layers:
-      - state: base
-        map: [ "enum.GunVisualLayers.Base" ]
-      - state: uranium-6
-        map: [ "enum.GunVisualLayers.Mag" ]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: uranium-6
+      map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
     magState: uranium
     steps: 7

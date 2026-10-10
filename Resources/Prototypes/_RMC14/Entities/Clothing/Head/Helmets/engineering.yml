@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingHeadHatWelding
   id: RMCHelmetWelding
-  name: welding helmet
-  description: A head-mounted face cover designed to protect the wearer completely from space-arc eye
+  name: 焊接面罩
+  description: 一种头戴式面罩，旨在完全保护佩戴者免受太空电弧眼伤害
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/welding_helmet.rsi
@@ -21,8 +21,10 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: {state: icon-on}
-          False: {state: icon}
+          true:
+            state: icon-on
+          false:
+            state: icon
   - type: Appearance
   - type: Tag
     tags:
@@ -37,8 +39,8 @@
       sprite: _RMC14/Objects/Clothing/Head/Helmets/welding_helmet.rsi
       state: helmet-down
   - type: CMArmor
-    melee: 20 # CLOTHING_ARMOR_LOW
-    bio: 10 # CLOTHING_ARMOR_LOW
+    melee: 20
+    bio: 10
   - type: RemoveComponents
     components:
     - type: IngestionBlocker
@@ -46,6 +48,5 @@
     blacklist:
       components:
       - Xeno
-
 - type: Tag
   id: RMCHelmetWelding

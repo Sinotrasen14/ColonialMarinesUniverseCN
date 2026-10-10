@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseBullet
   id: WatcherBolt
-  categories: [ HideSpawnMenu ]
-  name: watcher bolt
+  categories: [HideSpawnMenu]
+  name: 看守螺栓 | watcher bolt
   components:
   - type: FlyBySound
     sound:
@@ -41,8 +41,8 @@
 - type: entity
   parent: WatcherBolt
   id: WatcherBoltMagmawing
-  categories: [ HideSpawnMenu ]
-  name: magmawing watcher bolt
+  categories: [HideSpawnMenu]
+  name: 岩浆翼监视者闪电 | magmawing watcher bolt
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles_tg.rsi
@@ -64,8 +64,8 @@
 - type: entity
   parent: BaseBullet
   id: BasiliskRay
-  categories: [ HideSpawnMenu ]
-  name: basilisk ray
+  categories: [HideSpawnMenu]
+  name: 巴西利斯克鳐 | basilisk ray
   components:
   - type: FlyBySound
     sound:
@@ -78,7 +78,7 @@
     - state: ice
       shader: unshaded
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:
   - type: Physics
   - type: Fixtures
     fixtures:

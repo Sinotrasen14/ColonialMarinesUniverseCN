@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: TravelCamera
-  name: travel camera
-  description: A picture says more than a thousand words. Comes with an ultrabright flash and internal recharging photo roll.
+  name: 旅行相机 | travel camera
+  description: 一张照片胜过千言万语。配备超亮闪光灯和内置可充电相册。 | A picture says more than a thousand words. Comes with an ultrabright flash and internal recharging photo roll.
   components:
     # aptly named component for picture taking
   - type: PictureTaker
@@ -38,7 +38,7 @@
   abstract: true
   parent: BasePaper
   id: BasePhotograph
-  name: photograph
+  name: 照片 | photograph
 
 - type: entity
   parent: BasePhotograph

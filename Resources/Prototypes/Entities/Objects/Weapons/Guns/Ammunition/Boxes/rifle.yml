@@ -7,7 +7,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeRifle
+      - CartridgeRifle
     proto: CartridgeRifle
     capacity: 50
   - type: Item
@@ -27,7 +27,7 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifleBig
-  name: ammunition box (.20 rifle)
+  name: 弹药箱（.20步枪） | ammunition box (.20 rifle)
   suffix: Big
   components:
   - type: BallisticAmmoProvider
@@ -48,8 +48,8 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRifle
-  name: ammunition box (.20 rifle)
-  description: A cardboard box of .20 rifle rounds. Intended to hold general-purpose kinetic ammunition.
+  name: 弹药盒（.20步枪） | ammunition box (.20 rifle)
+  description: 一盒纸板装的.20步枪弹。用于盛放通用动能弹药。 | A cardboard box of .20 rifle rounds. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifle
@@ -63,8 +63,8 @@
 - type: entity
   parent: BaseMagazineBoxRifle
   id: MagazineBoxRiflePractice
-  name: ammunition box (.20 rifle practice)
-  description: A cardboard box of .20 rifle rounds. Intended to hold harmless practice ammunition.
+  name: 弹药盒（.20步枪练习弹） | ammunition box (.20 rifle practice)
+  description: 一个装有.20步枪弹的纸板盒。用于盛放无害的练习弹药。 | A cardboard box of .20 rifle rounds. Intended to hold harmless practice ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRiflePractice
@@ -79,8 +79,8 @@
 - type: entity
   id: MagazineBoxRifleIncendiary
   parent: BaseMagazineBoxRifle
-  name: ammunition box (.20 rifle incendiary)
-  description: A cardboard box of .20 rifle rounds. Intended to hold self-igniting incendiary ammunition.
+  name: 弹药盒（.20步枪燃烧弹） | ammunition box (.20 rifle incendiary)
+  description: 一盒纸板装的.20步枪子弹。用于盛放自燃燃烧弹。 | A cardboard box of .20 rifle rounds. Intended to hold self-igniting incendiary ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleIncendiary
@@ -95,8 +95,8 @@
 - type: entity
   id: MagazineBoxRifleUranium
   parent: BaseMagazineBoxRifle
-  name: ammunition box (.20 rifle uranium)
-  description: A cardboard box of .20 rifle rounds. Intended to hold exotic uranium-core ammunition.
+  name: 弹药盒（.20步枪铀弹） | ammunition box (.20 rifle uranium)
+  description: 一盒纸板装的.20步枪子弹。用于盛放异种铀芯弹药。 | A cardboard box of .20 rifle rounds. Intended to hold exotic uranium-core ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeRifleUranium

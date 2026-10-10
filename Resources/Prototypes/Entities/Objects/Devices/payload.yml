@@ -13,16 +13,15 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
-  name: explosive payload
-  parent: [ BasePayload, BaseSecurityContraband ]
+  name: 爆炸载荷 | explosive payload
+  parent: [BasePayload, BaseSecurityContraband]
   id: ExplosivePayload
   components:
   - type: Sprite
@@ -37,10 +36,10 @@
   - type: ExplodeOnTrigger
 
 - type: entity
-  name: chemical payload
-  parent: [ BasePayload, BaseMedicalScienceContraband ]
+  name: 化学有效载荷 | chemical payload
+  parent: [BasePayload, BaseMedicalScienceContraband]
   id: ChemicalPayload
-  description: A chemical payload. Has space to store two beakers. In combination with a trigger and a case, this can be used to initiate chemical reactions.
+  description: 化学有效载荷。有空间储存两个烧杯。与触发器和容器结合使用，可用于引发化学反应。 | A chemical payload. Has space to store two beakers. In combination with a trigger and a case, this can be used to initiate chemical reactions.
   components:
   - type: Sprite
     sprite: Objects/Devices/payload.rsi
@@ -60,10 +59,10 @@
     visuals:
       enum.ChemicalPayloadVisuals.Slots:
         base:
-          None: { state: payload-empty }
-          Left: { state: payload-chemical-left }
-          Right: { state: payload-chemical-right }
-          Both: { state: payload-chemical-armed }
+          None: {state: payload-empty}
+          Left: {state: payload-chemical-left}
+          Right: {state: payload-chemical-right}
+          Both: {state: payload-chemical-armed}
   - type: ItemSlots
   - type: ContainerContainer
     containers:
@@ -73,18 +72,18 @@
     price: 60
 
 - type: entity
-  name: flash payload
-  parent: [ BasePayload, BaseSecurityScienceCommandContraband ]
+  name: 一次性闪存载荷 | flash payload
+  parent: [BasePayload, BaseSecurityScienceCommandContraband]
   id: FlashPayload
-  description: A single-use flash payload.
+  description: 一次性闪存载荷。 | A single-use flash payload.
   components:
-    - type: Sprite
-      sprite: Objects/Devices/payload.rsi
-      state: payload-flash-armed
-    - type: DeleteOnTrigger
-    - type: FlashOnTrigger
-      range: 6
-    - type: EmitSoundOnTrigger
-      sound:
-        path: "/Audio/Effects/flash_bang.ogg"
-      positional: true
+  - type: Sprite
+    sprite: Objects/Devices/payload.rsi
+    state: payload-flash-armed
+  - type: DeleteOnTrigger
+  - type: FlashOnTrigger
+    range: 6
+  - type: EmitSoundOnTrigger
+    sound:
+      path: "/Audio/Effects/flash_bang.ogg"
+    positional: true

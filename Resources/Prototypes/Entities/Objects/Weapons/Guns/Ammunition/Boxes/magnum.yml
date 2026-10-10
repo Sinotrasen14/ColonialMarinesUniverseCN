@@ -7,7 +7,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeMagnum
+      - CartridgeMagnum
     proto: CartridgeMagnum
     capacity: 12
   - type: Item
@@ -27,8 +27,8 @@
 - type: entity
   parent: BaseMagazineBoxMagnum
   id: MagazineBoxMagnum
-  name: ammunition box (.45 magnum)
-  description: A cardboard box of .45 magnum rounds. Intended to hold general-purpose kinetic ammunition.
+  name: 弹药盒（.45马格南） | ammunition box (.45 magnum)
+  description: 一盒纸板装的.45马格南子弹。用于存放通用动能弹药。 | A cardboard box of .45 magnum rounds. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnum
@@ -42,8 +42,8 @@
 - type: entity
   parent: BaseMagazineBoxMagnum
   id: MagazineBoxMagnumPractice
-  name: ammunition box (.45 magnum practice)
-  description: A cardboard box of .45 magnum rounds. Intended to hold harmless practice ammunition.
+  name: 弹药盒（.45马格南练习弹） | ammunition box (.45 magnum practice)
+  description: 一盒纸板装的.45马格南子弹。用于装填无害的练习弹药。 | A cardboard box of .45 magnum rounds. Intended to hold harmless practice ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumPractice
@@ -58,8 +58,8 @@
 - type: entity
   id: MagazineBoxMagnumIncendiary
   parent: BaseMagazineBoxMagnum
-  name: ammunition box (.45 magnum incendiary)
-  description: A cardboard box of .45 magnum rounds. Intended to hold self-igniting incendiary ammunition.
+  name: 弹药盒（.45马格南燃烧弹） | ammunition box (.45 magnum incendiary)
+  description: 一盒纸板装的.45马格南子弹。用于存放自燃燃烧弹。 | A cardboard box of .45 magnum rounds. Intended to hold self-igniting incendiary ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumIncendiary
@@ -74,8 +74,8 @@
 - type: entity
   id: MagazineBoxMagnumUranium
   parent: BaseMagazineBoxMagnum
-  name: ammunition box (.45 magnum uranium)
-  description: A cardboard box of .45 magnum rounds. Intended to hold exotic uranium-core ammunition.
+  name: 弹药盒（.45马格南铀弹） | ammunition box (.45 magnum uranium)
+  description: 一盒纸板装的.45马格南子弹。用于装填异域铀芯弹药。 | A cardboard box of .45 magnum rounds. Intended to hold exotic uranium-core ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumUranium
@@ -90,8 +90,8 @@
 - type: entity
   id: MagazineBoxMagnumAP
   parent: BaseMagazineBoxMagnum
-  name: ammunition box (.45 magnum armor-piercing)
-  description: A cardboard box of .45 magnum rounds. Intended to hold specialized armor-piercing ammunition.
+  name: 弹药盒（.45马格南穿甲弹） | ammunition box (.45 magnum armor-piercing)
+  description: 一盒纸板装的.45马格南子弹。用于存放专用穿甲弹药。 | A cardboard box of .45 magnum rounds. Intended to hold specialized armor-piercing ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumAP

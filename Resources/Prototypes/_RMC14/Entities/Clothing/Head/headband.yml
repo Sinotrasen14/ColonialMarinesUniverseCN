@@ -1,9 +1,8 @@
-# Headbands
 - type: entity
   parent: CMHeadCap
   id: CMHeadBandGreen
-  name: green headband
-  description: Piece of cloth to wrap around the head.
+  name: 绿色头带
+  description: 一块缠在头上的布。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/green.rsi
@@ -23,11 +22,10 @@
     mishapChance: 0.14
     mishapDamageType: Blunt
     mishapDamageAmount: 2
-
 - type: entity
   parent: CMHeadBandGreen
   id: CMHeadBandBrown
-  name: brown headband
+  name: 棕色头带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/brown.rsi
@@ -40,11 +38,10 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/brown.rsi
       state: hat
-
 - type: entity
   parent: CMHeadBandGreen
   id: CMHeadBandGray
-  name: gray headband
+  name: 灰色头带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/gray.rsi
@@ -57,11 +54,10 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/gray.rsi
       state: hat
-
 - type: entity
   parent: CMHeadBandGreen
   id: CMHeadBandRed
-  name: red headband
+  name: 红色头带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/red.rsi
@@ -74,11 +70,10 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/red.rsi
       state: hat
-
 - type: entity
   parent: CMHeadBandGreen
   id: CMHeadBandTan
-  name: tan headband
+  name: 棕褐色头带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/tan.rsi
@@ -91,12 +86,10 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/tan.rsi
       state: hat
-
-# Squad headbands
 - type: entity
   parent: CMHeadBandGreen
   id: RMCHeadBandSquad
-  name: UNMC squad headband
+  name: UNMC小队头带
   suffix: DO NOT MAP
   components:
   - type: Sprite
@@ -112,12 +105,11 @@
       SquadEcho: CMHeadBandEcho
       SquadFoxtrot: CMHeadBandFoxtrot
       SquadIntel: CMHeadBandIntel
-
 - type: entity
   parent: CMHeadBandGreen
   id: CMHeadBandAlpha
-  name: alpha headband
-  description: Piece of cloth in colors of your squad.
+  name: alpha头带
+  description: 一块带有你小队颜色的布。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/alpha.rsi
@@ -130,11 +122,10 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/alpha.rsi
       state: hat
-
 - type: entity
   parent: CMHeadBandAlpha
   id: CMHeadBandBravo
-  name: bravo headband
+  name: bravo头带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/bravo.rsi
@@ -147,11 +138,10 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/bravo.rsi
       state: hat
-
 - type: entity
   parent: CMHeadBandAlpha
   id: CMHeadBandCharlie
-  name: charlie headband
+  name: charlie头带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/charlie.rsi
@@ -164,11 +154,10 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/charlie.rsi
       state: hat
-
 - type: entity
   parent: CMHeadBandAlpha
   id: CMHeadBandDelta
-  name: delta headband
+  name: delta头带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/delta.rsi
@@ -181,11 +170,10 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/delta.rsi
       state: hat
-
 - type: entity
   parent: CMHeadBandAlpha
   id: CMHeadBandEcho
-  name: echo headband
+  name: 回声头带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/echo.rsi
@@ -198,11 +186,10 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/echo.rsi
       state: hat
-
 - type: entity
   parent: CMHeadBandAlpha
   id: CMHeadBandFoxtrot
-  name: foxtrot headband
+  name: 狐步发带
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/foxtrot.rsi
@@ -215,13 +202,11 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/foxtrot.rsi
       state: hat
-
-# Role specific
 - type: entity
   parent: CMHeadBandRed
   id: CMHeadBandIntel
-  name: intel headband
-  description: A piece of cloth that belonged to an experienced special forces operative, nobody seems to recall his name though. Viper..? Serpent..?
+  name: 情报头带
+  description: 一块曾属于一名经验丰富的特种部队特工的布料，不过似乎没人记得他的名字。蝰蛇……？毒蛇……？
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/intel.rsi
@@ -234,13 +219,11 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/headband/intel.rsi
       state: hat
-
-# civilian
 - type: entity
   parent: CMHeadCap
   id: CMHeadBandRebel
-  name: rebel headband
-  description: A headband made from a simple strip of cloth. The words "DOWN WITH TYRANTS" are emblazoned on the front.
+  name: 叛军头带
+  description: 由一条简单布条制成的头带。正面印有“打倒暴君”的字样。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/headband/rebel.rsi

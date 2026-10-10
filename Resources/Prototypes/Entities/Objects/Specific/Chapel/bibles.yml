@@ -1,6 +1,6 @@
 - type: entity
-  name: space bible
-  description: New Interstellar Version 2340.
+  name: 太空圣经 | space bible
+  description: 新星际版本2340。 | New Interstellar Version 2340.
   parent: BaseStorageItem
   id: Bible
   components:
@@ -63,8 +63,8 @@
 
 - type: entity
   parent: [Bible, BaseSyndicateContraband]
-  name: necronomicon
-  description: "There's a note: Klatuu, Verata, Nikto -- Don't forget it again!"
+  name: 死灵之书 | necronomicon
+  description: "有一张纸条：克拉图，维拉塔，尼克托——别再忘了！ | There's a note: Klatuu, Verata, Nikto -- Don't forget it again!"
   id: BibleNecronomicon
   components:
   - type: Bible
@@ -98,8 +98,8 @@
 - type: entity
   parent: BaseAction
   id: ActionBibleSummon
-  name: Summon familiar
-  description: Summon a familiar that will aid you and gain humanlike intelligence once inhabited by a soul.
+  name: 召唤魔宠 | Summon familiar
+  description: 召唤一个魔宠来协助你，一旦有灵魂入驻，它便会获得类人的智慧。 | Summon a familiar that will aid you and gain humanlike intelligence once inhabited by a soul.
   components:
   - type: Action
     useDelay: 1
@@ -112,9 +112,9 @@
 
 - type: entity
   id: BibleDruid
-  name: druidic tablet
+  name: 德鲁伊石板 | druidic tablet
   parent: Bible
-  description: "It's the mystery of the druids!"
+  description: "这是德鲁伊的谜团！ | It's the mystery of the druids!"
   components:
   - type: Sprite
     sprite: Objects/Specific/Chapel/mysteryofthedruids.rsi
@@ -123,9 +123,9 @@
 
 - type: entity
   id: BibleCommunistManifesto
-  name: communist manifesto
+  name: 共产党宣言 | communist manifesto
   parent: Bible
-  description: "Remove the mask of humanity from Capital."
+  description: "从资本身上撕下人性的面具。 | Remove the mask of humanity from Capital."
   components:
   - type: Sprite
     sprite: Objects/Specific/Chapel/communistmanifesto.rsi
@@ -134,9 +134,9 @@
 
 - type: entity
   id: BibleNarsie
-  name: tome of nar'sie
+  name: 纳尔西之书 | tome of nar'sie
   parent: Bible
-  description: "What could possibly go wrong with a book covered in blood?"
+  description: "一本沾满鲜血的书能出什么岔子呢？ | What could possibly go wrong with a book covered in blood?"
   components:
   - type: Sprite
     sprite: Objects/Specific/Chapel/tomeofnarsie.rsi
@@ -145,9 +145,9 @@
 
 - type: entity
   id: BibleNanoTrasen
-  name: codex nanotrasimus
+  name: 法典纳米特拉西姆斯 | codex nanotrasimus
   parent: Bible
-  description: "A familiar book containing the Sacred Operating Procedures."
+  description: "一本熟悉的书，内含神圣操作程序。 | A familiar book containing the Sacred Operating Procedures."
   components:
   - type: Sprite
     sprite: Objects/Specific/Chapel/codexnanotrasimus.rsi
@@ -156,9 +156,9 @@
 
 - type: entity
   id: BibleHonk
-  name: mirth of the honkmother
+  name: 欢愉之母的喜悦 | mirth of the honkmother
   parent: Bible
-  description: "Oh great and glorious Mother, Mistress of Mirth, Matron of Mask and Merriments, Blessed is she amongst us jesters."
+  description: "哦，伟大而光荣的母亲，欢愉的女主人，面具与欢乐的守护者，她在我们这些弄臣之中是有福的。 | Oh great and glorious Mother, Mistress of Mirth, Matron of Mask and Merriments, Blessed is she amongst us jesters."
   components:
   - type: Sprite
     sprite: Objects/Specific/Chapel/honk.rsi
@@ -167,9 +167,9 @@
 
 - type: entity
   id: BibleRatvar
-  name: tablet of ratvar
+  name: 拉特瓦尔的石板 | tablet of ratvar
   parent: Bible
-  description: "A holy relic of the Clockwork Cult, blessed by the Clockwork Justice, Ratvar."
+  description: "发条邪教的圣物，由发条正义者拉特瓦尔赐福。 | A holy relic of the Clockwork Cult, blessed by the Clockwork Justice, Ratvar."
   components:
   - type: Sprite
     sprite: Objects/Specific/Chapel/ratvartablet.rsi
@@ -178,23 +178,23 @@
 
 - type: entity
   id: HolyLightEffect
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: PointLight
-      enabled: true
-      radius: 1.5
-      energy: 20
-      color: lightgoldenrodyellow
-      netsync: false
-    - type: LightFade
-      duration: 0.7
-    - type: TimedDespawn
-      lifetime: 0.7
+  - type: PointLight
+    enabled: true
+    radius: 1.5
+    energy: 20
+    color: lightgoldenrodyellow
+    netsync: false
+  - type: LightFade
+    duration: 0.7
+  - type: TimedDespawn
+    lifetime: 0.7
 
 - type: entity
   id: EvilLightEffect
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   parent: HolyLightEffect
   components:
-    - type: PointLight
-      color: red
+  - type: PointLight
+    color: red

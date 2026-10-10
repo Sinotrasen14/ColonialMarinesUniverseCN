@@ -4,8 +4,8 @@
 - type: entity
   parent: [FoodBreadSliceBase, BaseSlicingRefinableFood]
   id: FoodBreadBun
-  name: bun
-  description: A hamburger bun. Round and convenient to hold.
+  name: 小圆面包 | bun
+  description: 一个汉堡面包。圆圆的，方便拿握。 | A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/burger.rsi
@@ -19,8 +19,8 @@
 - type: entity
   parent: FoodBreadSliceBase
   id: FoodBreadBunBottom
-  name: bottom bun
-  description: It's time to start building the burger tower.
+  name: 底部面包 | bottom bun
+  description: 是时候开始搭建汉堡塔了。 | It's time to start building the burger tower.
   components:
   - type: Item
     size: Normal #patch until there is an adequate resizing system in place
@@ -52,8 +52,8 @@
 - type: entity
   parent: FoodBreadSliceBase
   id: FoodBreadBunTop
-  name: top bun
-  description: The perfect finish for your burger tower.
+  name: 顶层小圆面包 | top bun
+  description: 为你的汉堡塔画上完美的句号。 | The perfect finish for your burger tower.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/burger_sequence.rsi
@@ -79,8 +79,8 @@
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - meaty
+    - bun
+    - meaty
   - type: Sprite
     sprite: Objects/Consumable/Food/burger.rsi
   - type: Solution
@@ -102,13 +102,13 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerJelly
-  name: jelly burger
-  description: Culinary delight..?
+  name: 果冻汉堡 | jelly burger
+  description: 烹饪乐趣……？ | Culinary delight..?
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - jelly
+    - bun
+    - jelly
   - type: Sprite
     layers:
     - state: custburg-bottom
@@ -135,13 +135,13 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerAppendix
-  name: appendix burger
-  description: Tastes like appendicitis.
+  name: 阑尾汉堡 | appendix burger
+  description: 尝起来像阑尾炎。 | Tastes like appendicitis.
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - grass
+    - bun
+    - grass
   - type: Sprite
     state: appendix
   - type: Tag
@@ -166,13 +166,13 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerBacon
-  name: bacon burger
-  description: The perfect combination of all things American.
+  name: 培根汉堡 | bacon burger
+  description: 美式风味的完美结合。 | The perfect combination of all things American.
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - bacon
+    - bun
+    - bacon
   - type: Sprite
     state: bacon
   - type: Solution
@@ -204,15 +204,15 @@
 # Tastes like bun, bacon.
 
 - type: entity
-  parent: [ FoodBurgerBase, BaseSportsBall ]
+  parent: [FoodBurgerBase, BaseSportsBall]
   id: FoodBurgerBaseball
-  name: baseball burger
-  description: It's still warm. The steam coming off of it smells kinda sweaty.
+  name: 棒球汉堡 | baseball burger
+  description: 它还热乎着。冒出来的蒸汽闻起来有点汗味。 | It's still warm. The steam coming off of it smells kinda sweaty.
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - homerun
+    - bun
+    - homerun
   - type: Sprite
     state: baseball
   - type: Solution
@@ -241,8 +241,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerBear
-  name: bearger
-  description: Best served rawr.
+  name: 熊獾 | bearger
+  description: 最好生吃，嗷呜。 | Best served rawr.
   components:
   - type: Item
     storedOffset: 0,1
@@ -253,8 +253,8 @@
       - state: bear-inhand-right
   - type: FlavorProfile
     flavors:
-      - bun
-      - meaty
+    - bun
+    - meaty
   - type: Sprite
     state: bearger
   - type: Tag
@@ -264,8 +264,8 @@
 - type: entity
   parent: [SolutionNormal, FoodBurgerBase]
   id: FoodBurgerBig
-  name: big bite burger
-  description: Forget the Big Mac. THIS is the future!
+  name: 大咬汉堡 | big bite burger
+  description: 忘掉巨无霸吧。这才是未来！ | Forget the Big Mac. THIS is the future!
   components:
   - type: Item
     size: Normal
@@ -278,9 +278,9 @@
       - state: burger-big-inhand-right
   - type: FlavorProfile
     flavors: # What bun?
-      - meaty
-      - oily
-      - cheesy
+    - meaty
+    - oily
+    - cheesy
   - type: Solution
     solution:
       reagents:
@@ -302,8 +302,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerBrain
-  name: brain burger
-  description: A strange looking burger. It looks almost sentient.
+  name: 脑汉堡 | brain burger
+  description: 一个看起来怪异的汉堡。它看起来几乎有知觉。 | A strange looking burger. It looks almost sentient.
   components:
   - type: Item
     storedOffset: 0,1
@@ -314,8 +314,8 @@
       - state: brain-inhand-right
   - type: FlavorProfile
     flavors:
-      - bun
-      - meaty
+    - bun
+    - meaty
   - type: Sprite
     state: brain
   - type: Tag
@@ -326,8 +326,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerCat
-  name: cat burger
-  description: Finally those cats and catpeople are worth something!
+  name: 猫肉汉堡 | cat burger
+  description: 终于那些猫和猫人有点价值了！ | Finally those cats and catpeople are worth something!
   components:
   - type: Item
     storedOffset: -1,1
@@ -342,9 +342,9 @@
     state: cat
   - type: FlavorProfile
     flavors:
-      - bun
-      - meaty
-      - cat
+    - bun
+    - meaty
+    - cat
   - type: Tag
     tags:
     - Meat
@@ -352,14 +352,14 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerCheese
-  name: cheese burger
-  description: This noble burger stands proudly clad in golden cheese.
+  name: 芝士汉堡 | cheese burger
+  description: 这款高贵的汉堡自豪地披着金黄的芝士。 | This noble burger stands proudly clad in golden cheese.
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - meaty
-      - cheesy
+    - bun
+    - meaty
+    - cheesy
   - type: Sprite
     state: cheese
   - type: Solution
@@ -391,13 +391,13 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerChicken
-  name: chicken sandwich
-  description: A delicious chicken sandwich, it is said the proceeds from this treat helps criminalize disarming people on the space frontier.
+  name: 鸡肉三明治 | chicken sandwich
+  description: 一份美味的鸡肉三明治，据说这款美食的收益有助于将太空边疆的解除武装行为定为犯罪。 | A delicious chicken sandwich, it is said the proceeds from this treat helps criminalize disarming people on the space frontier.
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - chicken
+    - bun
+    - chicken
   - type: Sprite
     state: chicken
   - type: Solution
@@ -433,8 +433,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerClown
-  name: clown burger
-  description: This tastes funny...
+  name: 小丑汉堡 | clown burger
+  description: 这个尝起来怪怪的…… | This tastes funny...
   components:
   - type: Item
     storedOffset: 0,1
@@ -445,8 +445,8 @@
       - state: clown-inhand-right
   - type: FlavorProfile
     flavors:
-      - bun
-      - funny
+    - bun
+    - funny
   - type: Sprite
     state: clown
   - type: Tag
@@ -456,13 +456,13 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerCorgi
-  name: corger #not curger
-  description: The Head of Personnel's favorite!
+  name: corgi | corger #not curger
+  description: 人事主管的最爱！ | The Head of Personnel's favorite!
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - validhunting
+    - bun
+    - validhunting
   - type: Sprite
     state: ian
   - type: Solution
@@ -487,13 +487,13 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerCrab
-  name: crab burger
-  description: A delicious patty of the crabby kind, slapped in between a bun.
+  name: 蟹肉汉堡 | crab burger
+  description: 美味的蟹肉饼，夹在汉堡胚中。 | A delicious patty of the crabby kind, slapped in between a bun.
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - crabby
+    - bun
+    - crabby
   - type: Sprite
     state: crab
   - type: Tag
@@ -517,8 +517,8 @@
 - type: entity
   parent: [SolutionNormal, FoodBurgerBase]
   id: FoodBurgerCrazy
-  name: crazy hamburger # Burger for you euro-cucks
-  description: This looks like the sort of food that a demented clown in a trenchcoat would make.
+  name: 疯狂汉堡 | crazy hamburger # Burger for you euro-cucks
+  description: 这看起来就像是一个穿着风衣的疯狂小丑会做出来的食物。 | This looks like the sort of food that a demented clown in a trenchcoat would make.
   components:
   - type: Item
     size: Normal
@@ -532,10 +532,10 @@
       - state: crazy-inhand-right
   - type: FlavorProfile
     flavors:
-      - bun
-      - meaty
-      - cheesy
-      - flare
+    - bun
+    - meaty
+    - cheesy
+    - flare
   - type: Sprite
     state: crazy
   - type: Solution
@@ -572,8 +572,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerDuck
-  name: duck sandwich # Burger for you sick bastards
-  description: A duck sandwich, only the criminally insane would dare to eat the meat of such an adorable creature.
+  name: 鸭肉三明治 | duck sandwich # Burger for you sick bastards
+  description: 鸭肉三明治，只有丧心病狂的人才敢吃这么可爱生物的肉。 | A duck sandwich, only the criminally insane would dare to eat the meat of such an adorable creature.
   components:
   - type: Item
     storedOffset: 0,1
@@ -592,8 +592,8 @@
         color: "#e8b348"
   - type: FlavorProfile
     flavors:
-      - bun
-      - duck
+    - bun
+    - duck
   - type: Sprite
     state: chicken
   - type: Tag
@@ -604,8 +604,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerEmpowered
-  name: empowered burger
-  description: It's shockingly good, if you live off of electricity that is.
+  name: 强化汉堡 | empowered burger
+  description: 如果你靠电力为生的话，这东西好得惊人。 | It's shockingly good, if you live off of electricity that is.
   components:
   - type: Item
     storedOffset: -2,1
@@ -618,8 +618,8 @@
     state: empowered
   - type: FlavorProfile
     flavors:
-      - bun
-      - shocking
+    - bun
+    - shocking
   - type: Solution
     solution:
       reagents:
@@ -634,8 +634,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerCarp
-  name: fillet-o-carp burger
-  description: Almost like a carp is yelling somewhere...
+  name: 鱼柳鲤鱼汉堡 | fillet-o-carp burger
+  description: 几乎就像有条鲤鱼在什么地方喊叫…… | Almost like a carp is yelling somewhere...
   components:
   - type: Item
     storedOffset: 0,1
@@ -654,8 +654,8 @@
         color: "#f4bb53"
   - type: FlavorProfile
     flavors:
-      - bun
-      - fishy
+    - bun
+    - fishy
   - type: Sprite
     state: fish
   - type: Tag
@@ -666,8 +666,8 @@
 - type: entity
   parent: [SolutionNormal, FoodBurgerBase]
   id: FoodBurgerFive
-  name: five alarm burger
-  description: HOT! HOT! HOT!
+  name: 五级警报汉堡 | five alarm burger
+  description: 热！热！热！ | HOT! HOT! HOT!
   components:
   - type: Item
     size: Normal
@@ -680,8 +680,8 @@
       - state: plain-inhand-right
   - type: FlavorProfile
     flavors:
-      - meaty
-      - spicy
+    - meaty
+    - spicy
   - type: Sprite
     state: fivealarm
   - type: Solution
@@ -706,8 +706,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerGhost
-  name: ghost burger
-  description: Too spooky!
+  name: 幽灵汉堡 | ghost burger
+  description: 太吓人了！ | Too spooky!
   components:
   - type: Item
     size: Normal # Just annoying to store not actually that big :)
@@ -730,8 +730,8 @@
         color: "#95a79f"
   - type: FlavorProfile
     flavors:
-      - bun
-      - spooky
+    - bun
+    - spooky
   - type: Sprite
     state: ghost
   - type: Solution
@@ -745,20 +745,20 @@
         Quantity: 15
   - type: Tag
     tags:
-      - ClothMade
-      - Meat
+    - ClothMade
+    - Meat
 # Tastes like bun, ectoplasm.
 
 - type: entity
-  name: human burger
+  name: 人肉汉堡 | human burger
   parent: FoodBurgerBase
   id: FoodBurgerHuman
-  description: You cant tell who this is made of...
+  description: 你分辨不出这是用什么人做的…… | You cant tell who this is made of...
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - people
+    - bun
+    - people
   - type: Sprite
     state: human
   - type: Tag
@@ -774,8 +774,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerMcguffin
-  name: McGuffin
-  description: A cheap and greasy imitation of an eggs Benedict.
+  name: 麦高芬 | McGuffin
+  description: 一个廉价油腻的班尼迪克蛋仿制品。 | A cheap and greasy imitation of an eggs Benedict.
   components:
   - type: Item
     storedOffset: 0,1
@@ -794,8 +794,8 @@
         color: "#e3756d"
   - type: FlavorProfile
     flavors:
-      - muffin
-      - egg
+    - muffin
+    - egg
   - type: Sprite
     state: mcguffin
   - type: Solution
@@ -816,16 +816,16 @@
 - type: entity
   parent: [SolutionNormal, FoodBurgerBase]
   id: FoodBurgerMcrib
-  name: BBQ Rib Sandwich
-  description: An elusive rib shaped burger with limited availability across the galaxy. Not as good as you remember it.
+  name: 烧烤肋排三明治 | BBQ Rib Sandwich
+  description: 一种难以捉摸的肋排形状汉堡，在全银河系供应有限。没有你记忆中那么好。 | An elusive rib shaped burger with limited availability across the galaxy. Not as good as you remember it.
   components:
   - type: Edible
     trash:
     - FoodKebabSkewer
   - type: FlavorProfile
     flavors:
-      - bun
-      - bacon
+    - bun
+    - bacon
   - type: Sprite
     state: mcrib
   - type: Solution
@@ -863,15 +863,15 @@
 # Tastes like bun, pork patty.
 
 - type: entity
-  name: mime burger
+  name: 哑剧汉堡 | mime burger
   parent: FoodBurgerBase
   id: FoodBurgerMime
-  description: Its taste defies language.
+  description: 它的味道无法用语言形容。 | Its taste defies language.
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - nothing
+    - bun
+    - nothing
   - type: Sprite
     state: mime
   - type: Solution
@@ -892,15 +892,15 @@
 # Tastes like  .
 
 - type: entity
-  name: plain burger
+  name: 普通汉堡 | plain burger
   parent: FoodBurgerBase
   id: FoodBurgerPlain
-  description: A boring, dry burger.
+  description: 一个无聊、干巴巴的汉堡。 | A boring, dry burger.
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - meaty
+    - bun
+    - meaty
   - type: Sprite
     state: plain
   - type: Tag
@@ -914,15 +914,15 @@
       - state: plain-inhand-right
 
 - type: entity
-  name: rat burger
+  name: 老鼠汉堡 | rat burger
   parent: FoodBurgerBase
   id: FoodBurgerRat
-  description: Pretty much what you'd expect...
+  description: 差不多就是你想的那样…… | Pretty much what you'd expect...
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - meaty
+    - bun
+    - meaty
   - type: Sprite
     state: rat
   - type: Solution
@@ -951,16 +951,16 @@
 # Tastes like bun, HEAT.
 
 - type: entity
-  name: roburger
+  name: 机器人汉堡 | roburger
   parent: FoodBurgerBase
   id: FoodBurgerRobot
-  description: The lettuce is the only organic component. Beep.
+  description: 生菜是唯一有机成分。哔。 | The lettuce is the only organic component. Beep.
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - leafy
-      - metallic
+    - bun
+    - leafy
+    - metallic
   - type: Sprite
     state: ro
   - type: Solution
@@ -1004,8 +1004,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerSoy
-  name: soylent burger
-  description: After eating this you have the overwhelming urge to purchase overpriced figurines of superheroes.
+  name: 大豆汉堡 | soylent burger
+  description: 吃了这个之后，你会强烈地想要购买价格过高的超级英雄手办。 | After eating this you have the overwhelming urge to purchase overpriced figurines of superheroes.
   components:
   - type: Item
     storedOffset: 0,1
@@ -1024,8 +1024,8 @@
         color: "#91d90b"
   - type: FlavorProfile
     flavors:
-      - bun
-      - soy
+    - bun
+    - soy
   - type: Sprite
     state: soylent
   - type: Solution
@@ -1042,8 +1042,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerSpell
-  name: spell burger
-  description: This is absolutely Ei Nath.
+  name: 法术汉堡 | spell burger
+  description: 这绝对是Ei Nath。 | This is absolutely Ei Nath.
   components:
   - type: Item
     size: Normal
@@ -1057,8 +1057,8 @@
       - state: spell-inhand-right
   - type: FlavorProfile
     flavors:
-      - bun
-      - magical
+    - bun
+    - magical
   - type: Sprite
     state: spell
 # Tastes like bun, silver.
@@ -1066,8 +1066,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerSuper
-  name: super bite burger
-  description: This is a mountain of a burger. FOOD!
+  name: 超级咬汉堡 | super bite burger
+  description: 这是一个汉堡堆成的小山。食物！ | This is a mountain of a burger. FOOD!
   components:
   - type: Item
     size: Normal
@@ -1080,9 +1080,9 @@
       - state: burger-super-inhand-right
   - type: FlavorProfile
     flavors: # What bun?
-      - meaty
-      - oily
-      - cheesy
+    - meaty
+    - oily
+    - cheesy
   - type: Solution
     solution:
       reagents:
@@ -1104,15 +1104,15 @@
 # Tastes like bun, diabetes.
 
 - type: entity
-  name: tofu burger
+  name: 豆腐汉堡 | tofu burger
   parent: FoodBurgerBase
   id: FoodBurgerTofu
-  description: What... is that meat?
+  description: 什么……那是肉吗？ | What... is that meat?
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - tofu
+    - bun
+    - tofu
   - type: Sprite
     state: tofu
   - type: Solution
@@ -1141,16 +1141,16 @@
 # Tastes like bun, tofu.
 
 - type: entity
-  name: xenoburger
+  name: 异种汉堡 | xenoburger
   parent: FoodBurgerBase
   id: FoodBurgerXeno
-  description: Smells caustic. Tastes like heresy.
+  description: 气味刺鼻。尝起来像异端。 | Smells caustic. Tastes like heresy.
   components:
   - type: FlavorProfile
     flavors:
-      - bun
-      - meaty
-      - acid
+    - bun
+    - meaty
+    - acid
   - type: Sprite
     state: x
   - type: Tag
@@ -1178,8 +1178,8 @@
 - type: entity
   parent: FoodBurgerBase
   id: FoodBurgerMothRoach
-  name: mothroachburger
-  description: The last lamp it saw was the one inside the microwave.
+  name: 飞蛾蟑螂汉堡 | mothroachburger
+  description: 它见到的最后一盏灯是微波炉里的那盏。 | The last lamp it saw was the one inside the microwave.
   components:
   - type: Item
     shape:
@@ -1191,9 +1191,9 @@
       - state: mothroach-inhand-right
   - type: FlavorProfile
     flavors:
-      - bun
-      - meaty
-      - light
+    - bun
+    - meaty
+    - light
   - type: Sprite
     state: mothroach
   - type: Tag

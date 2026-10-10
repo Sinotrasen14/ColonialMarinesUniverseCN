@@ -3,7 +3,7 @@
   parent: ClothingHeadBase
   id: RMCHelmetBase
   abstract: true
-  name: helmet
+  name: 头盔
   components:
   - type: Item
     size: Normal
@@ -42,7 +42,7 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
-        ents: [ ]
+        ents: []
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:
@@ -161,7 +161,7 @@
     - state: icon
     - state: icon-flash
       visible: false
-      map: [ "light" ]
+      map: ["light"]
   - type: ItemTogglePointLight
   - type: ToggleableVisuals
     spriteLayer: light
@@ -229,5 +229,5 @@
     - Hair
     - HeadTop
     - HeadSide
-    unfoldedHideLayers: [ ]
+    unfoldedHideLayers: []
   - type: HideLayerClothing

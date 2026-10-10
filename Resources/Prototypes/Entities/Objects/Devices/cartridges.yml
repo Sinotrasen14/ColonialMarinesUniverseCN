@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseItem
   id: BasePDACartridge
   abstract: true
@@ -11,8 +11,8 @@
 - type: entity
   parent: BasePDACartridge
   id: NotekeeperCartridge
-  name: notekeeper cartridge
-  description: A program for keeping notes.
+  name: 记事本墨盒 | notekeeper cartridge
+  description: 用于记录笔记的程序。 | A program for keeping notes.
   components:
   - type: Sprite
     state: cart-y
@@ -21,15 +21,15 @@
   - type: Cartridge
     programName: notekeeper-program-name
     icon:
-      sprite:  Objects/Misc/books.rsi
+      sprite: Objects/Misc/books.rsi
       state: book_icon
   - type: NotekeeperCartridge
 
 - type: entity
   parent: BasePDACartridge
   id: NanoTaskCartridge
-  name: NanoTask cartridge
-  description: A program that allows you to keep a list of tasks to do.
+  name: NanoTask 卡带 | NanoTask cartridge
+  description: 一个可以让你记录待办任务清单的程序。 | A program that allows you to keep a list of tasks to do.
   components:
   - type: Sprite
     state: cart-nav
@@ -45,8 +45,8 @@
 - type: entity
   parent: BasePDACartridge
   id: NewsReaderCartridge
-  name: news cartridge
-  description: A program for reading news.
+  name: 新闻卡带 | news cartridge
+  description: 一个阅读新闻的程序。 | A program for reading news.
   components:
   - type: Sprite
     state: cart-y
@@ -62,65 +62,65 @@
 - type: entity
   parent: BasePDACartridge
   id: CrewManifestCartridge
-  name: crew manifest cartridge
-  description: A program for listing your fellow crewmembers.
+  name: 船员名单卡带 | crew manifest cartridge
+  description: 列出你的船员同伴的程序。 | A program for listing your fellow crewmembers.
   components:
-    - type: Sprite
-      state: cart-y
-    - type: UIFragment
-      ui: !type:CrewManifestUi
-    - type: Cartridge
-      programName: crew-manifest-program-name
-      icon:
-        sprite: Interface/Misc/program_icons.rsi
-        state: crew_manifest
-    - type: CrewManifestCartridge
+  - type: Sprite
+    state: cart-y
+  - type: UIFragment
+    ui: !type:CrewManifestUi
+  - type: Cartridge
+    programName: crew-manifest-program-name
+    icon:
+      sprite: Interface/Misc/program_icons.rsi
+      state: crew_manifest
+  - type: CrewManifestCartridge
 
 - type: entity
   parent: BasePDACartridge
   id: NetProbeCartridge
-  name: NetProbe cartridge
-  description: A program for getting the address and frequency of network devices.
+  name: NetProbe 插件 | NetProbe cartridge
+  description: 用于获取网络设备地址和频率的程序。 | A program for getting the address and frequency of network devices.
   components:
-    - type: Sprite
-      state: cart-y
-    - type: UIFragment
-      ui: !type:NetProbeUi
-    - type: Cartridge
-      programName: net-probe-program-name
-      icon:
-        sprite: Structures/Machines/server.rsi
-        state: server
-    - type: NetProbeCartridge
+  - type: Sprite
+    state: cart-y
+  - type: UIFragment
+    ui: !type:NetProbeUi
+  - type: Cartridge
+    programName: net-probe-program-name
+    icon:
+      sprite: Structures/Machines/server.rsi
+      state: server
+  - type: NetProbeCartridge
 
 - type: entity
   parent: BasePDACartridge
   id: LogProbeCartridge
-  name: LogProbe cartridge
-  description: A program for getting access logs from devices.
+  name: LogProbe 数据采集器 | LogProbe cartridge
+  description: 用于从设备获取访问日志的程序。 | A program for getting access logs from devices.
   components:
-    - type: Sprite
-      state: cart-log
-    - type: Icon
-      sprite: Objects/Devices/cartridge.rsi
-      state: cart-log
-    - type: UIFragment
-      ui: !type:LogProbeUi
-    - type: Cartridge
-      programName: log-probe-program-name
-      icon:
-        sprite: Structures/Doors/Airlocks/Standard/security-base.rsi
-        state: closed
-    - type: LogProbeCartridge
-    - type: GuideHelp
-      guides:
-      - Forensics
+  - type: Sprite
+    state: cart-log
+  - type: Icon
+    sprite: Objects/Devices/cartridge.rsi
+    state: cart-log
+  - type: UIFragment
+    ui: !type:LogProbeUi
+  - type: Cartridge
+    programName: log-probe-program-name
+    icon:
+      sprite: Structures/Doors/Airlocks/Standard/security-base.rsi
+      state: closed
+  - type: LogProbeCartridge
+  - type: GuideHelp
+    guides:
+    - Forensics
 
 - type: entity
   parent: BasePDACartridge
   id: WantedListCartridge
-  name: Wanted list cartridge
-  description: A program to get a list of wanted persons.
+  name: 通缉名单插件 | Wanted list cartridge
+  description: 一个获取通缉人员名单的程序。 | A program to get a list of wanted persons.
   components:
   - type: Sprite
     state: cart-sec
@@ -141,35 +141,35 @@
 - type: entity
   parent: BasePDACartridge
   id: MedTekCartridge
-  name: MedTek cartridge
-  description: A program that provides medical diagnostic tools.
+  name: MedTek 检测盒 | MedTek cartridge
+  description: 提供医疗诊断工具的程序。 | A program that provides medical diagnostic tools.
   components:
-    - type: Sprite
-      state: cart-med
-    - type: Icon
-      sprite: Objects/Devices/cartridge.rsi
-      state: cart-med
-    - type: Cartridge
-      programName: med-tek-program-name
-      icon:
-        sprite: Objects/Specific/Medical/healthanalyzer.rsi
-        state: icon
-    - type: MedTekCartridge
+  - type: Sprite
+    state: cart-med
+  - type: Icon
+    sprite: Objects/Devices/cartridge.rsi
+    state: cart-med
+  - type: Cartridge
+    programName: med-tek-program-name
+    icon:
+      sprite: Objects/Specific/Medical/healthanalyzer.rsi
+      state: icon
+  - type: MedTekCartridge
 
 - type: entity
   parent: BasePDACartridge
   id: AstroNavCartridge
-  name: AstroNav cartridge
-  description: A program for navigation that provides GPS coordinates.
+  name: AstroNav 导航程序盒 | AstroNav cartridge
+  description: 提供GPS坐标的导航程序。 | A program for navigation that provides GPS coordinates.
   components:
-    - type: Sprite
-      state: cart-nav
-    - type: Icon
-      sprite: Objects/Devices/cartridge.rsi
-      state: cart-nav
-    - type: Cartridge
-      programName: astro-nav-program-name
-      icon:
-        sprite: Objects/Devices/gps.rsi
-        state: icon
-    - type: AstroNavCartridge
+  - type: Sprite
+    state: cart-nav
+  - type: Icon
+    sprite: Objects/Devices/cartridge.rsi
+    state: cart-nav
+  - type: Cartridge
+    programName: astro-nav-program-name
+    icon:
+      sprite: Objects/Devices/gps.rsi
+      state: icon
+  - type: AstroNavCartridge

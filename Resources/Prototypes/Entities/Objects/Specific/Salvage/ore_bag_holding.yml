@@ -1,8 +1,8 @@
 - type: entity
-  name: ore bag of holding
+  name: 矿石收纳袋 | ore bag of holding
   id: OreBagOfHolding
   parent: OreBag
-  description: A robust bag of holding for salvage billionaires and rich miners alike to carry large amounts of ore. Magnetises any nearby ores when attached to a belt.
+  description: 一个坚固的收纳袋，适合废品回收亿万富翁和富有的矿工携带大量矿石。挂在腰带上时，会磁化附近的矿石。 | A robust bag of holding for salvage billionaires and rich miners alike to carry large amounts of ore. Magnetises any nearby ores when attached to a belt.
   components:
   - type: MagnetPickup
     range: 2
@@ -18,10 +18,10 @@
 - type: entity
   parent: OreBagOfHolding
   id: BorgOreBagOfHolding
-  name: integrated ore bag of holding
-  description: A very large ore bag built into the frame of a rich mining cyborg. Magnetises any nearby ores when held.
+  name: 内置的矿石收纳袋 | integrated ore bag of holding
+  description: 一个内置在富矿赛博格框架中的超大矿石收纳袋。持有时会磁化附近的矿石。 | A very large ore bag built into the frame of a rich mining cyborg. Magnetises any nearby ores when held.
   components:
-    - type: MagnetPickup
-      slotFlags: null
-      range: 2
-      requireActiveHand: true
+  - type: MagnetPickup
+    slotFlags:
+    range: 2
+    requireActiveHand: true

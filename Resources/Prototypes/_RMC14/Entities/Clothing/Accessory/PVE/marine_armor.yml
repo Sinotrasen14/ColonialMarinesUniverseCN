@@ -1,10 +1,9 @@
-# Base
 - type: entity
   abstract: true
   parent: RMCBaseUniformAccessory
   id: RMCPVEArmorAccessoryBase
-  name: armor accessory
-  description: Abstract armor accessories.
+  name: 护甲配件
+  description: 抽象的护甲配件。
   suffix: PVE
   components:
   - type: Sprite
@@ -16,7 +15,6 @@
   - type: Tag
     tags:
     - RMCPVEArmorAccessory
-
 - type: entity
   abstract: true
   parent: RMCPVEArmorAccessoryBase
@@ -24,7 +22,6 @@
   components:
   - type: UniformAccessory
     category: Pads
-
 - type: entity
   abstract: true
   parent: RMCPVEArmorPadsBase
@@ -32,7 +29,6 @@
   components:
   - type: UniformAccessory
     category: Bracers
-
 - type: entity
   abstract: true
   parent: RMCPVEArmorPadsBase
@@ -40,7 +36,6 @@
   components:
   - type: UniformAccessory
     category: NeckGuard
-
 - type: entity
   abstract: true
   parent: RMCPVEArmorPadsBase
@@ -48,7 +43,6 @@
   components:
   - type: UniformAccessory
     category: GroinPlate
-
 - type: entity
   abstract: true
   parent: RMCPVEArmorPadsBase
@@ -56,7 +50,6 @@
   components:
   - type: UniformAccessory
     category: ShinGuard
-
 - type: entity
   abstract: true
   parent: RMCPVEArmorPadsBase
@@ -64,7 +57,6 @@
   components:
   - type: UniformAccessory
     category: KneeGuard
-
 - type: entity
   abstract: true
   parent: RMCPVEArmorPadsBase
@@ -72,13 +64,11 @@
   components:
   - type: UniformAccessory
     category: Paint
-
-# Pads
 - type: entity
   parent: RMCPVEArmorPadsBase
   id: RMCPVEArmorPads
-  name: M3 Pauldrons
-  description: Attachable supplementary armor for the M3 armor system. Protects from glancing hits and covers the arm opening in the cuirass against shrapnel.
+  name: M3 肩甲
+  description: 用于M3装甲系统的可附加补充装甲。可抵御擦掠命中，并遮盖胸甲上的手臂开口，以防弹片。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/pads/jungle.rsi
@@ -89,13 +79,11 @@
       Classic: _RMC14/Objects/Clothing/Accessory/PVE/Marine/pads/classic.rsi
       Snow: _RMC14/Objects/Clothing/Accessory/PVE/Marine/pads/snow.rsi
       Urban: _RMC14/Objects/Clothing/Accessory/PVE/Marine/pads/urban.rsi
-
-# Bracers
 - type: entity
   parent: RMCPVEArmorBracersBase
   id: RMCPVEArmorBracers
-  name: M3 Vambraces
-  description: Attachable supplementary armor for the M3 armor system. A pair of composite ballistic vambraces to shield the forearms, with straps to ensure it doesn't ride up or down.
+  name: M3 护臂
+  description: M3护甲系统的可附加补充护甲。一对复合防弹护臂，用于保护前臂，并配有绑带以确保其不会上下滑动。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/bracers/jungle.rsi
@@ -106,13 +94,11 @@
       Classic: _RMC14/Objects/Clothing/Accessory/PVE/Marine/bracers/classic.rsi
       Snow: _RMC14/Objects/Clothing/Accessory/PVE/Marine/bracers/snow.rsi
       Urban: _RMC14/Objects/Clothing/Accessory/PVE/Marine/bracers/urban.rsi
-
-# Neck Guard
 - type: entity
   parent: RMCPVEArmorNeckGuardBase
   id: RMCPVEArmorNeckGuard
-  name: M3 Gorget
-  description: Attachable supplementary armor for the M3 armor system. A simple polymer ballistic plate to resist ricochets and shrapnel.
+  name: M3 护颈
+  description: M3护甲系统的可附加辅助护甲。一块简易的聚合物防弹板，用于抵御跳弹和破片。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/neckguard/jungle.rsi
@@ -123,13 +109,11 @@
       Classic: _RMC14/Objects/Clothing/Accessory/PVE/Marine/neckguard/classic.rsi
       Snow: _RMC14/Objects/Clothing/Accessory/PVE/Marine/neckguard/snow.rsi
       Urban: _RMC14/Objects/Clothing/Accessory/PVE/Marine/neckguard/urban.rsi
-
-# Groin Plate
 - type: entity
   parent: RMCPVEArmorGroinPlateBase
   id: RMCPVEArmorGroinPlate
-  name: M3 Lap Panel
-  description: Attachable supplementary armor for the M3 armor system. Shear thickening liquid armor piece covering the abdomen and groin, with an additional ruggedized boron carbide. Clasps to the inside of the M3 cuirass.
+  name: M3 腿甲板
+  description: M3护甲系统的可附加辅助护甲。覆盖腹部和腹股沟的剪切增稠液体护甲部件，并附加一层加固型碳化硼。可扣合至M3胸甲内侧。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/groinplate/jungle.rsi
@@ -140,13 +124,11 @@
       Classic: _RMC14/Objects/Clothing/Accessory/PVE/Marine/groinplate/classic.rsi
       Snow: _RMC14/Objects/Clothing/Accessory/PVE/Marine/groinplate/snow.rsi
       Urban: _RMC14/Objects/Clothing/Accessory/PVE/Marine/groinplate/urban.rsi
-
-# Shin Guard
 - type: entity
   parent: RMCPVEArmorShinGuardBase
   id: RMCPVEArmorShinGuard
-  name: M3 Greaves
-  description: Attachable supplementary armor for the M3 armor system. Lightweight polymer clamshell-style plates enclose the lower legs to provide shrapnel and pistol protection.
+  name: M3 胫甲
+  description: 可附装的补充护甲，用于M3护甲系统。轻质聚合物蛤壳式护板包覆小腿，可提供防破片和手枪防护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/shinguards/jungle.rsi
@@ -157,13 +139,11 @@
       Classic: _RMC14/Objects/Clothing/Accessory/PVE/Marine/shinguards/classic.rsi
       Snow: _RMC14/Objects/Clothing/Accessory/PVE/Marine/shinguards/snow.rsi
       Urban: _RMC14/Objects/Clothing/Accessory/PVE/Marine/shinguards/urban.rsi
-
-# Knee Guard
 - type: entity
   parent: RMCPVEArmorKneeGuardBase
   id: RMCPVEArmorKneeGuard
-  name: M3 Kneepads
-  description: Attachable supplementary armor for the M3 armor system. High impact ruggedized outer shell and polymer internals protect from shrapnel as well as low power ballistics.
+  name: M3 护膝
+  description: M3 装甲系统的可附加补充装甲。高抗冲击强化外壳和聚合物内部结构可抵御弹片以及低威力弹道。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/thighguards/jungle.rsi
@@ -174,13 +154,11 @@
       Classic: _RMC14/Objects/Clothing/Accessory/PVE/Marine/thighguards/classic.rsi
       Snow: _RMC14/Objects/Clothing/Accessory/PVE/Marine/thighguards/snow.rsi
       Urban: _RMC14/Objects/Clothing/Accessory/PVE/Marine/thighguards/urban.rsi
-
-# Paint
 - type: entity
   parent: RMCPVEArmorPaintBase
   id: RMCPVEArmorPaintSkull
-  name: skull armor paint
-  description: A set of paint tones to etch a skull into a Marine's armor.
+  name: 骷髅护甲涂装
+  description: 一套将骷髅蚀刻到陆战队员护甲上的涂料色调。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/skull.rsi
@@ -188,12 +166,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/skull.rsi
       state: equipped
-
 - type: entity
   parent: RMCPVEArmorPaintBase
   id: RMCPVEArmorPaintHeart
-  name: heart armor paint
-  description: A set of paint tones to etch a heart into a Marine's armor.
+  name: 爱心护甲涂装
+  description: 一套用于将爱心蚀刻在陆战队员护甲上的涂料色调。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/heart.rsi
@@ -201,12 +178,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/heart.rsi
       state: equipped
-
 - type: entity
   parent: RMCPVEArmorPaintBase
   id: RMCPVEArmorPaintMedic
-  name: medical cross armor paint
-  description: A set of paint tones to etch a blue cross into a Marine's armor.
+  name: 医疗十字护甲涂装
+  description: 一套用于在陆战队员护甲上蚀刻出蓝色十字的涂装色调。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/medic.rsi
@@ -214,12 +190,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/medic.rsi
       state: equipped
-
 - type: entity
   parent: RMCPVEArmorPaintBase
   id: RMCPVEArmorPaintUN
-  name: UN flag armor paint
-  description: A set of paint tones to etch the white and blue into a Marine's armor.
+  name: 联合国旗装甲涂装
+  description: 一套将白色与蓝色蚀刻到陆战队员装甲上的涂装色调。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/un.rsi
@@ -227,12 +202,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/un.rsi
       state: equipped
-
 - type: entity
   parent: RMCPVEArmorPaintBase
   id: RMCPVEArmorPaintTarget
-  name: target armor paint
-  description: A set of paint tones to etch a target pattern into a Marine's armor.
+  name: 目标装甲涂装
+  description: 一套用于在陆战队员装甲上蚀刻出目标图案的涂料色调。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/target.rsi
@@ -240,12 +214,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/target.rsi
       state: equipped
-
 - type: entity
   parent: RMCPVEArmorPaintBase
   id: RMCPVEArmorPaintSmileyFace
-  name: smileyface armor paint
-  description: A set of paint tones to etch a happy face into a Marine's armor.
+  name: 笑脸装甲涂装
+  description: 一套用于在海军陆战队员的装甲上蚀刻出笑脸的涂料色调。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/smiley.rsi
@@ -253,12 +226,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/smiley.rsi
       state: equipped
-
 - type: entity
   parent: RMCPVEArmorPaintBase
   id: RMCPVEArmorPaintNeutralFace
-  name: neutralface armor paint
-  description: A set of paint tones to etch a neutral face into a Marine's armor.
+  name: 中性脸装甲涂装
+  description: 一套用于将中性脸蚀刻到陆战队员装甲上的颜料色调。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/neutral.rsi
@@ -266,12 +238,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/neutral.rsi
       state: equipped
-
 - type: entity
   parent: RMCPVEArmorPaintBase
   id: RMCPVEArmorPaintCross
-  name: cross armor paint
-  description: A set of paint tones to etch a religious symbol into a Marine's armor.
+  name: 十字架盔甲涂装
+  description: 一套用于将宗教符号蚀刻到陆战队员盔甲上的涂料色调。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/cross.rsi
@@ -279,12 +250,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/cross.rsi
       state: equipped
-
 - type: entity
   parent: RMCPVEArmorPaintBase
   id: RMCPVEArmorPaintInscription
-  name: inscription armor paint
-  description: A set of paint tones to etch a text phrase into a Marine's armor.
+  name: 铭文护甲涂装
+  description: 一套用于将文字短语蚀刻到陆战队员护甲上的涂装色调。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/inscription.rsi
@@ -292,12 +262,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/inscription.rsi
       state: equipped
-
 - type: entity
   parent: RMCPVEArmorPaintBase
   id: RMCPVEArmorPaintMixtape
-  name: flames armor paint
-  description: A set of paint tones to etch straight heat into a Marine's armor.
+  name: 烈焰装甲涂装
+  description: 一套能将炽热直接蚀刻进陆战队员装甲的涂装色调。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/mixtape.rsi
@@ -305,4 +274,3 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/PVE/Marine/paint/mixtape.rsi
       state: equipped
-

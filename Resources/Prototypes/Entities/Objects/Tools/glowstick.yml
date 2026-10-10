@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseItem
   id: GlowstickBase
-  name: glowstick
-  description: Useful for raves and emergencies.
+  name: 荧光棒 | glowstick
+  description: 对狂欢派对和紧急情况很有用。 | Useful for raves and emergencies.
   components:
   - type: SpaceGarbage
   - type: ExpendableLight
@@ -19,13 +19,13 @@
   - type: Sprite
     sprite: Objects/Misc/glowstick.rsi
     layers:
-    - map: [ enum.ExpendableLightVisualLayers.Base ]
+    - map: [enum.ExpendableLightVisualLayers.Base]
       state: glowstick_base
-    - map: [ enum.ExpendableLightVisualLayers.Glow ]
+    - map: [enum.ExpendableLightVisualLayers.Glow]
       state: glowstick_glow
       visible: false
       shader: unshaded
-    - map: [ enum.ExpendableLightVisualLayers.Overlay ]
+    - map: [enum.ExpendableLightVisualLayers.Overlay]
       state: glowstick_unlit
   - type: Item
     sprite: Objects/Misc/glowstick.rsi
@@ -39,21 +39,24 @@
     netsync: false
   - type: LightBehaviour
     behaviours:
-    - !type:FadeBehaviour # slowly fade in once activated
+                          # slowly fade in once activated
+    - !type:FadeBehaviour
       id: turn_on
       interpolate: Linear
       maxDuration: 10.0
       startValue: 0.0
       endValue: 3.0
       property: Energy
-    - !type:FadeBehaviour # fade out energy as it burns out
+                          # fade out energy as it burns out
+    - !type:FadeBehaviour
       id: fade_out
       interpolate: Linear
       maxDuration: 10 # 300.0
       startValue: 3.0
       endValue: 0.2
       property: Energy
-    - !type:FadeBehaviour # fade out radius as it burns out
+                          # fade out radius as it burns out
+    - !type:FadeBehaviour
       id: fade_out
       interpolate: Linear
       maxDuration: 10 # 300.0
@@ -66,7 +69,7 @@
 - type: entity
   parent: GlowstickBase
   id: GlowstickRed
-  name: red glowstick
+  name: 红色荧光棒 | red glowstick
   components:
   - type: ExpendableLight
     spentName: expendable-light-spent-red-glowstick-name
@@ -77,7 +80,7 @@
 - type: entity
   parent: GlowstickBase
   id: GlowstickPurple
-  name: purple glowstick
+  name: 紫色荧光棒 | purple glowstick
   components:
   - type: ExpendableLight
     spentName: expendable-light-spent-purple-glowstick-name
@@ -88,7 +91,7 @@
 - type: entity
   parent: GlowstickBase
   id: GlowstickYellow
-  name: yellow glowstick
+  name: 黄色荧光棒 | yellow glowstick
   components:
   - type: ExpendableLight
     spentName: expendable-light-spent-yellow-glowstick-name
@@ -99,7 +102,7 @@
 - type: entity
   parent: GlowstickBase
   id: GlowstickBlue
-  name: blue glowstick
+  name: 蓝色荧光棒 | blue glowstick
   components:
   - type: ExpendableLight
     spentName: expendable-light-spent-blue-glowstick-name
@@ -110,7 +113,7 @@
 - type: entity
   parent: GlowstickBase
   id: GlowstickGreen
-  name: green glowstick
+  name: 绿色荧光棒 | green glowstick
   components:
   - type: ExpendableLight
     spentName: expendable-light-spent-green-glowstick-name
@@ -122,10 +125,10 @@
 # THE FOLLOWING ARE ALL DUMMY ENTITIES USED TO TEST THE LIGHT BEHAVIOUR SYSTEM
 # ----------------------------------------------------------------------------
 - type: entity
-  name: light pulse test
+  name: 光脉冲测试 | light pulse test
   parent: BaseItem
   id: LightBehaviourTest1
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Misc/glowstick.rsi
@@ -153,10 +156,10 @@
       enabled: true
 
 - type: entity
-  name: color cycle test
+  name: 颜色循环测试 | color cycle test
   parent: BaseItem
   id: LightBehaviourTest2
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Misc/glowstick.rsi
@@ -185,10 +188,10 @@
       - green
 
 - type: entity
-  name: multi-behaviour light test
+  name: 多行为光测试 | multi-behaviour light test
   parent: BaseItem
   id: LightBehaviourTest3
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Misc/glowstick.rsi
@@ -225,10 +228,10 @@
       - green
 
 - type: entity
-  name: light fade in test
+  name: 光衰减测试 | light fade in test
   parent: BaseItem
   id: LightBehaviourTest4
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Misc/glowstick.rsi
@@ -256,10 +259,10 @@
       enabled: true
 
 - type: entity
-  name: light pulse radius test
+  name: 光脉冲半径测试 | light pulse radius test
   parent: BaseItem
   id: LightBehaviourTest5
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Misc/glowstick.rsi
@@ -287,10 +290,10 @@
       enabled: true
 
 - type: entity
-  name: light randomize radius test
+  name: 光照随机化半径测试 | light randomize radius test
   parent: BaseItem
   id: LightBehaviourTest6
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Misc/glowstick.rsi

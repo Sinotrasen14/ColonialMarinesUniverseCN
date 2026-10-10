@@ -3,8 +3,8 @@
 - type: entity
   parent: [SolutionSmall, FoodMealBase]
   id: FoodTacoShell
-  name: taco shell
-  description: A taco shell, easy to hold, but falls on its side when put down.
+  name: 墨西哥卷饼壳 | taco shell
+  description: 一个墨西哥卷饼壳，容易拿握，但放下时会侧翻。 | A taco shell, easy to hold, but falls on its side when put down.
   components:
   - type: Item
     storedOffset: 0,-3
@@ -42,8 +42,8 @@
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - cheesy
+    - meaty
+    - cheesy
   - type: Edible
     transferAmount: 3
   - type: Sprite
@@ -62,36 +62,36 @@
     storedOffset: 0,1
   - type: Tag
     tags:
-      - Meat
+    - Meat
 
 - type: entity
-  name: beef taco
+  name: 牛肉塔可 | beef taco
   parent: FoodTacoBase
   id: FoodTacoBeef
-  description: A very basic and run of the mill beef taco, now with cheese!
+  description: 非常基础且普通的牛肉塔可，现在加了奶酪！ | A very basic and run of the mill beef taco, now with cheese!
   components:
   - type: Sprite
     state: beeftaco
 
 - type: entity
-  name: chicken taco
+  name: 鸡肉塔可 | chicken taco
   parent: FoodTacoBase
   id: FoodTacoChicken
-  description: A very basic and run of the mill chicken taco, now with cheese!
+  description: 非常基础且普通的鸡肉塔可，现在加了奶酪！ | A very basic and run of the mill chicken taco, now with cheese!
   components:
   - type: Sprite
     state: chickentaco
 
 - type: entity
-  name: fish taco
+  name: 鱼肉卷饼 | fish taco
   parent: FoodTacoBase
   id: FoodTacoFish
-  description: Sounds kinda gross, but it's actually not that bad.
+  description: 听起来有点恶心，但其实没那么糟。 | Sounds kinda gross, but it's actually not that bad.
   components:
   - type: FlavorProfile
     flavors:
-      - onion
-      - fishy
+    - onion
+    - fishy
   - type: Sprite
     state: fishtaco
   - type: Solution
@@ -107,19 +107,19 @@
         Quantity: 9
 
 - type: entity
-  name: rat taco
+  name: 老鼠塔可 | rat taco
   parent: FoodTacoBase
   id: FoodTacoRat
-  description: Yeah, that looks about right...
+  description: 是的，看起来差不多就是这样…… | Yeah, that looks about right...
   components:
   - type: Sprite
     state: rattaco
 
 - type: entity
-  name: beef taco supreme
+  name: 至尊牛肉塔可 | beef taco supreme
   parent: FoodTacoBase
   id: FoodTacoBeefSupreme
-  description: It's like a regular beef taco, but supreme!
+  description: 就像普通的牛肉塔可，但是至尊版！ | It's like a regular beef taco, but supreme!
   components:
   - type: Sprite
     state: beeftacosupreme
@@ -136,10 +136,10 @@
         Quantity: 9
 
 - type: entity
-  name: chicken taco supreme
+  name: 至尊鸡肉塔可 | chicken taco supreme
   parent: FoodTacoBase
   id: FoodTacoChickenSupreme
-  description: It's like a regular chicken taco, but supreme!
+  description: 它就像普通的鸡肉塔可，但更至尊！ | It's like a regular chicken taco, but supreme!
   components:
   - type: Sprite
     state: chickentacosupreme
@@ -158,8 +158,8 @@
 - type: entity
   parent: FoodTacoBase
   id: FoodTacoDragon
-  name: draco
-  description: A dragon taco, which is technically also a fish taco.
+  name: 德拉科 | draco
+  description: 德拉科塔可，严格来说也是一种鱼肉塔可。 | A dragon taco, which is technically also a fish taco.
   components:
   - type: Item
     storedOffset: 0,3
@@ -184,19 +184,19 @@
         Quantity: 3
 
 - type: entity
-  name: soft taco
+  name: 软塔可 | soft taco
   parent: FoodMealBase
   id: FoodMealSoftTaco
-  description: Take a bite!
+  description: 咬一口！ | Take a bite!
   components:
   - type: FlavorProfile
     flavors:
-      - cheesy
-      - tomato
-      - meaty
-      - onion
+    - cheesy
+    - tomato
+    - meaty
+    - onion
   - type: Sprite
     state: softtaco
   - type: Tag
     tags:
-      - Meat
+    - Meat

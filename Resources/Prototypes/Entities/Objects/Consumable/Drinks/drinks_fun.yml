@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ DrinkBaseMaterialPlastic, SolutionSmall, DrinkBase, DrinkBaseOpenable, DrinkVisualsAllFilled ]
+  parent: [DrinkBaseMaterialPlastic, SolutionSmall, DrinkBase, DrinkBaseOpenable, DrinkVisualsAllFilled]
   id: BaseSqueezeBottle
   components:
   - type: Openable
@@ -11,9 +11,9 @@
     - state: icon_empty
       map: ["enum.OpenableVisuals.Layer"]
     - state: fill-6
-      map: [ "enum.SolutionContainerLayers.Fill" ] # already has liquid, so no visible: false
+      map: ["enum.SolutionContainerLayers.Fill"]   # already has liquid, so no visible: false
     - state: icon-front
-      map: [ "enum.SolutionContainerLayers.Overlay" ]
+      map: ["enum.SolutionContainerLayers.Overlay"]
   - type: SolutionContainerVisuals
     maxFillLevels: 6
   - type: TrashOnSolutionEmpty
@@ -22,8 +22,8 @@
 - type: entity
   parent: BaseSqueezeBottle
   id: DrinkSpaceGlue
-  name: space glue tube
-  description: High performance glue intended for maintenance of extremely complex mechanical equipment. DON'T DRINK!
+  name: 太空胶水管 | space glue tube
+  description: 高性能胶水，用于维护极其复杂的机械设备。请勿饮用！ | High performance glue intended for maintenance of extremely complex mechanical equipment. DON'T DRINK!
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/glue-tube.rsi
@@ -37,8 +37,8 @@
 - type: entity
   parent: BaseSqueezeBottle
   id: DrinkSpaceLube
-  name: space lube tube
-  description: High performance lubricant intended for maintenance of extremely complex mechanical equipment.
+  name: 太空润滑管 | space lube tube
+  description: 用于维护极其复杂机械设备的髙性能润滑剂。 | High performance lubricant intended for maintenance of extremely complex mechanical equipment.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/lube-tube.rsi
@@ -53,9 +53,9 @@
 - type: entity
   parent: BluespaceBeaker
   id: BottomlessLube
-  name: bottomless lube beaker
+  name: 无尽润滑烧杯 | bottomless lube beaker
   suffix: DEBUG
-  description: This anomalous beaker infinitely produces space lube and as such is to be closely guarded such that it doesn't fall in the wrong hands.
+  description: 这个异常烧杯会无限产生太空润滑剂，因此必须严加看管，以免落入不法之徒手中。 | This anomalous beaker infinitely produces space lube and as such is to be closely guarded such that it doesn't fall in the wrong hands.
   components:
   - type: Solution
     solution:
@@ -71,8 +71,8 @@
 - type: entity
   parent: [DrinkBaseMaterialGlass, DrinkBase]
   id: DrinkJarWhat
-  name: jar of something
-  description: You can't really tell what this is.
+  name: 一罐东西 | jar of something
+  description: 你根本看不出这是什么。 | You can't really tell what this is.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Drinks/jar_what.rsi
@@ -80,8 +80,7 @@
     solution: drink
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -141,8 +140,8 @@
 - type: entity
   parent: [DrinkVisualsAllFilled, DrinkBottleGlassSmallBaseFull]
   id: DrinkMopwataBottleRandom
-  name: delicious mopwata
-  description: A foggy brown bottle with a faded label depicting a mop. It comes full of murky... vintage.
+  name: 美味拖把水 | delicious mopwata
+  description: 一个雾蒙蒙的棕色瓶子，标签已经褪色，上面画着一把拖把。里面装满了浑浊的……陈年旧货。 | A foggy brown bottle with a faded label depicting a mop. It comes full of murky... vintage.
   components:
   - type: Solution
     solution:

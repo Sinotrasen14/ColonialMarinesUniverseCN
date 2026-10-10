@@ -49,20 +49,20 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: { state: fire_extinguisher_open }
-          False: { state: fire_extinguisher_closed }
+          true: {state: fire_extinguisher_open}
+          false: {state: fire_extinguisher_closed}
 
 - type: entity
   parent: [SolutionFireExtinguisher, BaseFireExtinguisher]
   id: FireExtinguisher
-  name: fire extinguisher
-  description: It extinguishes fires.
+  name: 灭火器 | fire extinguisher
+  description: 它能灭火。 | It extinguishes fires.
   components:
   - type: Sprite
     sprite: Objects/Misc/fire_extinguisher.rsi
     layers:
     - state: fire_extinguisher_closed
-      map: [ "enum.ToggleableVisuals.Layer" ]
+      map: ["enum.ToggleableVisuals.Layer"]
   - type: Item
     sprite: Objects/Misc/fire_extinguisher.rsi
     size: Normal
@@ -80,7 +80,7 @@
 - type: entity
   parent: [SolutionSpray, SolutionNormal]
   id: SolutionFireExtinguisher
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Solution
     solution:
@@ -91,13 +91,13 @@
 - type: entity
   parent: [SolutionFireExtinguisherLarge, FireExtinguisher]
   id: BorgFireExtinguisher
-  name: maneuvering jet
-  description: Based on fire extinguisher technology, the maneuvering jet is... well yes, its just a bigger fire extinguisher.
+  name: 机动喷气器 | maneuvering jet
+  description: 基于灭火器技术，机动喷气器……嗯，没错，它就是个更大的灭火器。 | Based on fire extinguisher technology, the maneuvering jet is... well yes, its just a bigger fire extinguisher.
 
 - type: entity
   parent: [SolutionSpray, SolutionLarge]
   id: SolutionFireExtinguisherLarge
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Solution
     solution:
@@ -106,16 +106,15 @@
         Quantity: 240
 
 - type: entity
-  name: extinguisher spray
+  name: 灭火器喷雾 | extinguisher spray
   id: ExtinguisherSpray
   parent: Vapor
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         hard: false
         mask:
@@ -128,8 +127,8 @@
   - type: Sprite
     sprite: Effects/extinguisherSpray.rsi
     layers:
-      - state: extinguish
-        map: [ "enum.VaporVisualLayers.Base" ]
+    - state: extinguish
+      map: ["enum.VaporVisualLayers.Base"]
   - type: Physics
     bodyType: Dynamic
   - type: Appearance
@@ -138,16 +137,16 @@
     animationState: extinguish
 
 - type: entity
-  name: pocket fire extinguisher
+  name: 袖珍灭火器 | pocket fire extinguisher
   parent: [SolutionFireExtinguisherMini, BaseFireExtinguisher]
   id: FireExtinguisherMini
-  description: A light and compact fibreglass-framed model fire extinguisher. It holds less water than its bigger brother.
+  description: 一个轻便紧凑的玻璃纤维框架模型灭火器。它比它的大兄弟装的水少。 | A light and compact fibreglass-framed model fire extinguisher. It holds less water than its bigger brother.
   components:
   - type: Sprite
     sprite: Objects/Misc/fire_extinguisher_mini.rsi
     layers:
-        - state: fire_extinguisher_closed
-          map: [ "enabled" ]
+    - state: fire_extinguisher_closed
+      map: ["enabled"]
   - type: Item
     sprite: Objects/Misc/fire_extinguisher_mini.rsi
     size: Small
@@ -166,7 +165,7 @@
 - type: entity
   parent: [SolutionSpray, SolutionSmall]
   id: SolutionFireExtinguisherMini
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Solution
     solution:
@@ -176,10 +175,10 @@
 
 # used for a engi xenoborg module
 - type: entity
-  parent: [ FireExtinguisher, BaseXenoborgContraband ]
+  parent: [FireExtinguisher, BaseXenoborgContraband]
   id: SelfRechargingFireExtinguisher
-  name: self-recharging fire extinguisher
-  description: It extinguishes fires. it slowly refills with water.
+  name: 自动补充灭火器 | self-recharging fire extinguisher
+  description: 它能灭火。它会缓慢地重新注满水。 | It extinguishes fires. it slowly refills with water.
   components:
   - type: SolutionRegeneration
     generated:

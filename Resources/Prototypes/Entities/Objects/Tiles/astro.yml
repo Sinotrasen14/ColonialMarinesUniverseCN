@@ -1,10 +1,9 @@
-
 # Faux science tiles
 - type: entity
   id: FloorTileItemAstroGrass
   parent: FloorTileItemBase
-  name: astro-grass
-  description: Fake grass that covers up wires and even comes with realistic NanoTrimmings!
+  name: 天文草 | astro-grass
+  description: 覆盖电线的假草，甚至配有逼真的纳米修剪！ | Fake grass that covers up wires and even comes with realistic NanoTrimmings!
   components:
   - type: Sprite
     state: astrograss
@@ -20,8 +19,8 @@
 - type: entity
   id: FloorTileItemMowedAstroGrass
   parent: FloorTileItemBase
-  name: mowed astro-grass
-  description: Fake grass that covers up wires and even comes with realistic NanoTrimmings!
+  name: 修剪过的太空草 | mowed astro-grass
+  description: 覆盖电线的假草，甚至还有逼真的纳米修剪！ | Fake grass that covers up wires and even comes with realistic NanoTrimmings!
   components:
   - type: Sprite
     state: grass
@@ -37,8 +36,8 @@
 - type: entity
   id: FloorTileItemJungleAstroGrass
   parent: FloorTileItemBase
-  name: jungle astro-grass
-  description: Fake grass that covers up wires and even comes with realistic NanoTrimmings!
+  name: 丛林太空草 | jungle astro-grass
+  description: 覆盖电线的假草，甚至配有逼真的纳米修剪！ | Fake grass that covers up wires and even comes with realistic NanoTrimmings!
   components:
   - type: Sprite
     state: grassjungle
@@ -54,8 +53,8 @@
 - type: entity
   parent: FloorTileItemBase
   id: FloorTileItemDarkAstroGrass
-  name: dark astro-grass
-  description: Fake grass that covers up wires and even comes with realistic NanoTrimmings!
+  name: 暗色太空草 | dark astro-grass
+  description: 覆盖电线的假草，甚至还有逼真的纳米修剪！ | Fake grass that covers up wires and even comes with realistic NanoTrimmings!
   components:
   - type: Sprite
     state: grassdark
@@ -71,8 +70,8 @@
 - type: entity
   id: FloorTileItemAstroIce
   parent: FloorTileItemBase
-  name: astro-ice
-  description: Fake ice that's as slippery as the real thing, while being easily removable!
+  name: 天文冰 | astro-ice
+  description: 假冰，滑溜程度和真冰一样，却很容易清除！ | Fake ice that's as slippery as the real thing, while being easily removable!
   components:
   - type: Sprite
     state: astroice
@@ -88,8 +87,8 @@
 - type: entity
   id: FloorTileItemAstroSnow
   parent: FloorTileItemBase
-  name: astro-snow
-  description: Fake snow that's as fluffy as the real thing, while being easily removable!
+  name: 天文雪 | astro-snow
+  description: 人造雪，像真雪一样蓬松，却易于清除！ | Fake snow that's as fluffy as the real thing, while being easily removable!
   components:
   - type: Sprite
     state: snow
@@ -105,8 +104,8 @@
 - type: entity
   id: FloorTileItemAstroAsteroidSand
   parent: FloorTileItemBase
-  name: asteroid astro-sand
-  description: Fake sand. Luckily, it's not as coarse as the real thing.
+  name: 小行星太空沙 | asteroid astro-sand
+  description: 假沙子。幸运的是，它不像真沙子那么粗糙。 | Fake sand. Luckily, it's not as coarse as the real thing.
   components:
   - type: Sprite
     state: astro-asteroid
@@ -122,8 +121,8 @@
 - type: entity
   id: FloorTileItemAstroAsteroidSandBorderless
   parent: FloorTileItemBase
-  name: borderless asteroid astro-sand
-  description: Fake sand. Luckily, it's not as coarse as the real thing.
+  name: 无边界小行星太空沙 | borderless asteroid astro-sand
+  description: 假沙子。幸运的是，它不像真沙子那么粗糙。 | Fake sand. Luckily, it's not as coarse as the real thing.
   components:
   - type: Sprite
     state: asteroid
@@ -139,8 +138,8 @@
 - type: entity
   parent: FloorTileItemBase
   id: FloorTileItemAstroIronsand
-  name: astro-ironsand
-  description: Fake red sand. Imported from fake Mars.
+  name: 星际铁砂 | astro-ironsand
+  description: 假红沙。从假火星进口。 | Fake red sand. Imported from fake Mars.
   components:
   - type: Sprite
     state: astro-ironsand
@@ -156,8 +155,8 @@
 - type: entity
   parent: FloorTileItemBase
   id: FloorTileItemAstroIronsandBorderless
-  name: borderless astro-ironsand
-  description: Fake red sand. Imported from fake Mars.
+  name: 无边框星际铁砂 | borderless astro-ironsand
+  description: 假红沙。从假火星进口。 | Fake red sand. Imported from fake Mars.
   components:
   - type: Sprite
     state: ironsand
@@ -173,8 +172,8 @@
 - type: entity
   parent: FloorTileItemBase
   id: FloorTileItemDesertAstroSand
-  name: desert astro-sand
-  description: Fake sand, designed to be fine.
+  name: 沙漠天文沙 | desert astro-sand
+  description: 假沙，设计为细沙。 | Fake sand, designed to be fine.
   components:
   - type: Sprite
     state: desertsand
@@ -188,7 +187,7 @@
     stackType: FloorTileDesertAstroSand
 
 - type: entity
-  name: large wood floor
+  name: 大木地板 | large wood floor
   parent: FloorTileItemBase
   id: FloorTileItemWoodLarge
   components:

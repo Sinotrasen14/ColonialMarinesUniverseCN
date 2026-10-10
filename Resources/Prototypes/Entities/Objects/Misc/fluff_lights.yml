@@ -1,5 +1,5 @@
 - type: entity
-  name: lantern
+  name: 灯笼 | lantern
   parent: BaseItem
   id: BaseLamp
   abstract: true
@@ -10,20 +10,20 @@
     radiatingBehaviourId: radiating
   - type: LightBehaviour
     behaviours:
-      - !type:FadeBehaviour
-        id: radiating
-        maxDuration: 2.0
-        startValue: 3.0
-        endValue: 2.0
-        isLooped: true
-        reverseWhenFinished: true
-      - !type:PulseBehaviour
-        id: blinking
-        interpolate: Nearest
-        maxDuration: 1.0
-        startValue: 0.1
-        endValue: 2.0
-        isLooped: true
+    - !type:FadeBehaviour
+      id: radiating
+      maxDuration: 2.0
+      startValue: 3.0
+      endValue: 2.0
+      isLooped: true
+      reverseWhenFinished: true
+    - !type:PulseBehaviour
+      id: blinking
+      interpolate: Nearest
+      maxDuration: 1.0
+      startValue: 0.1
+      endValue: 2.0
+      isLooped: true
   - type: PowerCellSlot
     cellSlotId: cell_slot
   - type: ItemSlots
@@ -55,20 +55,20 @@
     stealGroup: LAMP
 
 - type: entity
-  name: lamp
+  name: 灯 | lamp
   id: Lamp
   parent: BaseLamp
-  description: A light emitting device.
+  description: 一种发光装置。 | A light emitting device.
   components:
   - type: Sprite
     sprite: Objects/Misc/Lights/lamp.rsi
     layers:
-      - state: lamp
-        map: [ "base" ]
-      - state: lamp-on
-        shader: unshaded
-        visible: false
-        map: [ "light" ]
+    - state: lamp
+      map: ["base"]
+    - state: lamp-on
+      shader: unshaded
+      visible: false
+      map: ["light"]
   - type: Item
     sprite: Objects/Misc/Lights/lamp.rsi
   - type: HolidayVisuals
@@ -79,39 +79,39 @@
     visuals:
       enum.HolidayVisuals.Holiday:
         base:
-          festive: { state: christmaslamp }
+          festive: {state: christmaslamp}
         light:
-          festive: { state: christmaslamp-on }
+          festive: {state: christmaslamp-on}
 
 - type: entity
-  name: banana lamp
+  name: 香蕉灯 | banana lamp
   id: LampBanana
   parent: BaseLamp
-  description: A light emitting device, shaped like a banana.
+  description: 一种发光装置，形状像香蕉。 | A light emitting device, shaped like a banana.
   components:
   - type: Sprite
     layers:
-      - state: bananalamp
-      - state: bananalamp_on
-        shader: unshaded
-        visible: false
-        map: [ "light" ]
+    - state: bananalamp
+    - state: bananalamp_on
+      shader: unshaded
+      visible: false
+      map: ["light"]
 
 - type: entity
-  name: desk lamp
+  name: 台灯 | desk lamp
   id: LampGold
   parent: BaseLamp
-  description: A light emitting device that would look great on a desk.
+  description: 一个放在书桌上会很好看的发光装置。 | A light emitting device that would look great on a desk.
   components:
   - type: Sprite
     sprite: Objects/Misc/Lights/lampgreen.rsi
     layers:
-      - state: lampgreen
-        map: [ "base" ]
-      - state: lampgreen-on
-        shader: unshaded
-        visible: false
-        map: [ "light" ]
+    - state: lampgreen
+      map: ["base"]
+    - state: lampgreen-on
+      shader: unshaded
+      visible: false
+      map: ["light"]
   - type: Item
     sprite: Objects/Misc/Lights/lampgreen.rsi
   - type: HolidayVisuals
@@ -131,23 +131,23 @@
             state: christmaslamp-on
 
 - type: entity
-  name: interrogator lamp
+  name: 审讯灯 | interrogator lamp
   id: LampInterrogator
-  parent: [ BaseLamp, BaseSecurityContraband ]
-  description: Ultra-bright lamp for the bad cop.
+  parent: [BaseLamp, BaseSecurityContraband]
+  description: 超亮灯，专为坏警察准备。 | Ultra-bright lamp for the bad cop.
   components:
   - type: Sprite
     sprite: Objects/Misc/Lights/lampint.rsi
     layers:
-      - state: lamp-int
-        map: [ "enum.FlashVisualLayers.BaseLayer" ]
-      - state: lamp-int-on
-        shader: unshaded
-        visible: false
-        map: [ "light" ]
-      - state: flashing
-        map: [ "enum.FlashVisualLayers.LightLayer" ]
-        visible: false
+    - state: lamp-int
+      map: ["enum.FlashVisualLayers.BaseLayer"]
+    - state: lamp-int-on
+      shader: unshaded
+      visible: false
+      map: ["light"]
+    - state: flashing
+      map: ["enum.FlashVisualLayers.LightLayer"]
+      visible: false
   - type: Item
     sprite: Objects/Misc/Lights/lampint.rsi
   - type: StaticPrice
@@ -181,36 +181,35 @@
     visuals:
       enum.FlashVisuals.Burnt:
         enum.FlashVisualLayers.BaseLayer:
-          True: {state: burnt}
+          true: {state: burnt}
       enum.FlashVisuals.Flashing:
         enum.FlashVisualLayers.LightLayer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
 
 - type: entity
-  name: floodlight
+  name: 泛光灯 | floodlight
   id: Floodlight
   parent: BaseLamp
-  description: A pole with powerful mounted lights on it.
+  description: 一根装有强力固定灯的杆子。 | A pole with powerful mounted lights on it.
   components:
   - type: Item
     size: Normal
   - type: Sprite
     sprite: Objects/Misc/Lights/lights.rsi
     layers:
-      - state: floodlight
-        map: [ "base" ]
-      - state: floodlight-on
-        shader: unshaded
-        visible: false
-        map: [ "light" ]
+    - state: floodlight
+      map: ["base"]
+    - state: floodlight-on
+      shader: unshaded
+      visible: false
+      map: ["light"]
   - type: Physics
     canCollide: true
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2, -0.5, 0.2, 0.5"
         density: 50
         mask:
@@ -231,8 +230,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 10
       behaviors:
       - !type:PlaySoundBehavior
@@ -244,17 +242,17 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: PhysicalComposition
     materialComposition:
       Glass: 500
       Steel: 200
 
 - type: entity
-  name: broken floodlight
+  name: 损坏的泛光灯 | broken floodlight
   id: FloodlightBroken
   parent: BaseItem
-  description: A pole with powerful mounted lights on it. It's broken.
+  description: 一根杆子上装有强力照明灯。它已经损坏了。 | A pole with powerful mounted lights on it. It's broken.
   components:
   - type: Item
     size: Normal
@@ -270,8 +268,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 20
       behaviors:
       - !type:PlaySoundBehavior
@@ -283,13 +280,12 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Physics
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2, -0.5, 0.2, 0.5"
         density: 50
         mask:

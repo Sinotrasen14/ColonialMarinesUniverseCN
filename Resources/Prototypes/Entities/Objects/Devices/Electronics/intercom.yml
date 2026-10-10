@@ -1,14 +1,14 @@
 - type: entity
   id: IntercomElectronics
   parent: BaseElectronics
-  name: intercom electronics
-  description: An electronics board used in intercoms.
+  name: 对讲机电子设备 | intercom electronics
+  description: 用于对讲机的电子板。 | An electronics board used in intercoms.
   components:
   - type: Sprite
     sprite: Objects/Misc/module.rsi
     state: id_mod
   - type: Tag
     tags:
-      - IntercomElectronics
+    - IntercomElectronics
   - type: StaticPrice
     price: 55

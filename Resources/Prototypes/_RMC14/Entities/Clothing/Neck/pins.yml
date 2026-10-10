@@ -2,8 +2,8 @@
   abstract: true
   parent: RMCBaseUniformAccessory
   id: RMCPridePinBase
-  name: pride pin
-  description: An abstract pride pin.
+  name: 骄傲徽章
+  description: 一个抽象的骄傲徽章。
   components:
   - type: UniformAccessory
     category: PridePin
@@ -11,9 +11,10 @@
     hiddenByJacketRolling: true
   - type: Corrodible
     isCorrodible: false
-
 - type: entity
-  parent: [ ClothingNeckLGBTPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckLGBTPin
+  - RMCPridePinBase
   id: RMCClothingNeckLGBTPin
   components:
   - type: HelmetAccessory
@@ -24,9 +25,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: lgbt-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckAromanticPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckAromanticPin
+  - RMCPridePinBase
   id: RMCClothingNeckAromanticPin
   components:
   - type: HelmetAccessory
@@ -37,9 +39,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: aro-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckAsexualPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckAsexualPin
+  - RMCPridePinBase
   id: RMCClothingNeckAsexualPin
   components:
   - type: HelmetAccessory
@@ -50,9 +53,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: asex-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckBisexualPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckBisexualPin
+  - RMCPridePinBase
   id: RMCClothingNeckBisexualPin
   components:
   - type: HelmetAccessory
@@ -63,9 +67,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: bi-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckGayPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckGayPin
+  - RMCPridePinBase
   id: RMCClothingNeckGayPin
   components:
   - type: HelmetAccessory
@@ -76,9 +81,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: gay-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckIntersexPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckIntersexPin
+  - RMCPridePinBase
   id: RMCClothingNeckIntersexPin
   components:
   - type: HelmetAccessory
@@ -89,9 +95,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: inter-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckLesbianPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckLesbianPin
+  - RMCPridePinBase
   id: RMCClothingNeckLesbianPin
   components:
   - type: HelmetAccessory
@@ -102,9 +109,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: les-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckNonBinaryPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckNonBinaryPin
+  - RMCPridePinBase
   id: RMCClothingNeckNonBinaryPin
   components:
   - type: HelmetAccessory
@@ -115,9 +123,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: non-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckPansexualPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckPansexualPin
+  - RMCPridePinBase
   id: RMCClothingNeckPansexualPin
   components:
   - type: HelmetAccessory
@@ -128,9 +137,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: pan-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckOmnisexualPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckOmnisexualPin
+  - RMCPridePinBase
   id: RMCClothingNeckOmnisexualPin
   components:
   - type: HelmetAccessory
@@ -141,9 +151,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: omni-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckTransPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckTransPin
+  - RMCPridePinBase
   id: RMCClothingNeckTransPin
   components:
   - type: HelmetAccessory
@@ -154,9 +165,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: trans-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckAutismPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckAutismPin
+  - RMCPridePinBase
   id: RMCClothingNeckAutismPin
   components:
   - type: HelmetAccessory
@@ -167,9 +179,10 @@
     playerSprite:
       sprite: Clothing/Neck/Misc/pins.rsi
       state: autism-equipped-NECK
-
 - type: entity
-  parent: [ClothingNeckGoldAutismPin, RMCPridePinBase ]
+  parent:
+  - ClothingNeckGoldAutismPin
+  - RMCPridePinBase
   id: RMCClothingNeckGoldAutismPin
   components:
   - type: HelmetAccessory

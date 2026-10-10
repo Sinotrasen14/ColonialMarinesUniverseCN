@@ -1,8 +1,8 @@
 - type: entity
-  name: t-ray scanner
+  name: T射线扫描仪 | t-ray scanner
   parent: BaseItem
   id: trayScanner
-  description: A high-tech scanning device that uses Terahertz Radiation to detect subfloor infrastructure.
+  description: 一种高科技扫描设备，利用太赫兹辐射探测地板下基础设施。 | A high-tech scanning device that uses Terahertz Radiation to detect subfloor infrastructure.
   components:
   - type: Sprite
     sprite: Objects/Tools/t-ray.rsi
@@ -17,8 +17,8 @@
     visuals:
       enum.TrayScannerVisual.Visual:
         base:
-          On: { state: tray-on }
-          Off: { state: tray-off }
+          On: {state: tray-on}
+          Off: {state: tray-off}
   - type: PhysicalComposition
     materialComposition:
       Steel: 400

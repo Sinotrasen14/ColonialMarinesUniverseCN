@@ -1,6 +1,6 @@
 - type: entity
-  name: handheld radio
-  description: A handy handheld radio.
+  name: 手持无线电 | handheld radio
+  description: 一个方便的手持无线电。 | A handy handheld radio.
   parent: BaseItem
   id: RadioHandheld
   components:
@@ -27,9 +27,9 @@
   - type: ChatRepeatIgnoreSender # RMC14
 
 - type: entity
-  name: security radio
-  description: A handy security radio.
-  parent: [ RadioHandheld, BaseSecurityContraband ]
+  name: 安保对讲机 | security radio
+  description: 一个方便的安保对讲机。 | A handy security radio.
+  parent: [RadioHandheld, BaseSecurityContraband]
   id: RadioHandheldSecurity
   components:
   - type: RadioMicrophone

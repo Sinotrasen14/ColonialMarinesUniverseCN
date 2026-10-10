@@ -1,4 +1,3 @@
-
 # Operative Balloons, looks just like the real thing!
 
 - type: entity
@@ -16,12 +15,11 @@
       visible: false
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           path: /Audio/Effects/pop_high.ogg
@@ -67,8 +65,8 @@
 - type: entity
   parent: BaseDecoy
   id: BalloonOperative
-  name: operative balloon
-  description: Upon closer inspection, this Syndicate operative is actually a balloon.
+  name: 特工气球 | operative balloon
+  description: 仔细一看，这个辛迪加特工其实是个气球。 | Upon closer inspection, this Syndicate operative is actually a balloon.
   components:
   - type: Sprite
     sprite: Objects/Tools/Decoys/operative_decoy.rsi
@@ -82,8 +80,8 @@
 - type: entity
   parent: BaseDecoy
   id: BalloonAgent
-  name: corpsman balloon
-  description: Upon closer inspection, this Syndicate corpsman is actually a balloon.
+  name: 医疗气球兵 | corpsman balloon
+  description: 仔细观察后，这名辛迪加医疗兵实际上是一个气球。 | Upon closer inspection, this Syndicate corpsman is actually a balloon.
   components:
   - type: Sprite
     sprite: Objects/Tools/Decoys/agent_decoy.rsi
@@ -97,8 +95,8 @@
 - type: entity
   parent: BaseDecoy
   id: BalloonElite
-  name: elite operative balloon
-  description: Upon closer inspection, this Syndicate elite operative is actually a balloon.
+  name: 精英特工气球 | elite operative balloon
+  description: 仔细一看，这个辛迪加精英特工其实是个气球。 | Upon closer inspection, this Syndicate elite operative is actually a balloon.
   components:
   - type: Sprite
     sprite: Objects/Tools/Decoys/elite_decoy.rsi
@@ -114,8 +112,8 @@
 - type: entity
   parent: BaseDecoy
   id: BalloonJuggernaut
-  name: juggernaut balloon
-  description: Upon closer inspection, this Syndicate juggernaut is actually a balloon.
+  name: 主宰气球 | juggernaut balloon
+  description: 仔细观察后，这个辛迪加主宰气球其实是个气球。 | Upon closer inspection, this Syndicate juggernaut is actually a balloon.
   components:
   - type: Sprite
     sprite: Objects/Tools/Decoys/juggernaut_decoy.rsi
@@ -129,8 +127,8 @@
 - type: entity
   parent: BaseDecoy
   id: BalloonCommander
-  name: commander balloon
-  description: Upon closer inspection, this Syndicate commander is actually a balloon.
+  name: 指挥官气球 | commander balloon
+  description: 仔细一看，这个辛迪加指挥官其实是个气球。 | Upon closer inspection, this Syndicate commander is actually a balloon.
   components:
   - type: Sprite
     sprite: Objects/Tools/Decoys/commander_decoy.rsi

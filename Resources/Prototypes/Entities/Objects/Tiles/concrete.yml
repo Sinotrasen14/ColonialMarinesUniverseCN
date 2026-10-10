@@ -2,7 +2,7 @@
 - type: entity
   parent: FloorTileItemBase
   id: FloorTileItemConcrete
-  name: concrete tile
+  name: 混凝土瓦 | concrete tile
   components:
   - type: Sprite
     state: concrete
@@ -16,7 +16,7 @@
     stackType: FloorTileConcrete
 
 - type: entity
-  name: concrete mono tile
+  name: 混凝土单色瓷砖 | concrete mono tile
   parent: FloorTileItemConcrete
   id: FloorTileItemConcreteMono
   components:
@@ -30,7 +30,7 @@
     stackType: FloorTileConcreteMono
 
 - type: entity
-  name: concrete smooth
+  name: 混凝土光滑 | concrete smooth
   parent: FloorTileItemConcrete
   id: FloorTileItemConcreteSmooth
   components:

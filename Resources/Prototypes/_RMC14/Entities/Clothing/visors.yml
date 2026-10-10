@@ -8,12 +8,13 @@
   - type: Item
     size: Tiny
   - type: ToggleVisor
-
 - type: entity
-  parent: [ RMCVisorBase, RMCPowerCellSlotUnremovableSuper ]
+  parent:
+  - RMCVisorBase
+  - RMCPowerCellSlotUnremovableSuper
   id: RMCVisorNightVision
-  name: night vision optic
-  description: An insertable visor HUD into a standard UNMC helmet. This type gives a form of night vision and is standard issue in units with regular funding. It can be inserted into a recharger to recharge its internal battery.
+  name: 夜视光学设备
+  description: 一种可插入标准UNMC头盔的面罩式平视显示器。此型号可提供一种夜视能力，是经费正常的部队中标准配发的装备。可将其插入充电器，为内部电池充电。
   components:
   - type: Sprite
     state: nvg_sight
@@ -36,13 +37,12 @@
       enabled: true
       radius: 1.7
       softness: 1
-      color: "#008000"
-
+      color: '#008000'
 - type: entity
   parent: RMCVisorBase
   id: RMCVisorMedical
-  name: basic medical optic
-  description: An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display that shows data about nearby humanoids health status.
+  name: 基础医疗光学目镜
+  description: 一种可插入标准UNMC头盔的护目镜式平视显示器。此类型可提供抬头显示，显示附近类人生物的健康状态数据。
   components:
   - type: Sprite
     state: med_sight
@@ -62,12 +62,11 @@
     - type: ShowHealthIcons
       damageContainers:
       - Biological
-
 - type: entity
   parent: RMCVisorMedical
   id: RMCVisorMedicalAdvanced
-  name: advanced medical optic
-  description: An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display that shows data about nearby humanoids health status and research notes.
+  name: 高级医疗光学目镜
+  description: 一种可插入标准UNMC头盔的护目镜式HUD。该型号提供平视显示，可显示附近类人生物的健康状况与研究笔记数据。
   components:
   - type: Sprite
     state: med_adv_sight
@@ -78,8 +77,6 @@
     skillsRequired:
       all:
         RMCSkillMedical: 2
-# TODO RMC14 view publications action
-
 - type: entity
   parent: RMCVisorMedicalAdvanced
   id: RMCVisorMedicalAdvancedIntegrated
@@ -90,12 +87,11 @@
     toggledSprite:
       sprite: _RMC14/Objects/Clothing/Head/Helmets/huds.rsi
       state: med_sight_left
-
 - type: entity
   parent: RMCVisorBase
   id: RMCVisorWelding
-  name: welding visor
-  description: An insertable visor HUD into a standard UNMC helmet. This type protects the eyes from welders.
+  name: 焊接护目镜
+  description: 可插入标准UNMC头盔的护目镜式HUD。此类型可保护眼睛免受焊接作业伤害。
   components:
   - type: Sprite
     state: sight_empty
@@ -110,19 +106,17 @@
     components:
     - type: EyeProtection
     - type: WeldingVision
-
 - type: entity
   parent: RMCVisorWelding
   id: RMCVisorWeldingIntegrated
   suffix: Integrated
   components:
   - type: UnremovableVisor
-
 - type: entity
   parent: RMCVisorBase
   id: RMCVisorSquad
-  name: squad optic
-  description: An insertable visor HUD into a standard UNMC helmet. This type gives a heads-up display of marine squads.
+  name: 小队光学目镜
+  description: 一种可插入标准UNMC头盔的护目镜式HUD。该型号可为海军陆战队小队提供平视显示。
   components:
   - type: Sprite
     state: hud_sight
@@ -136,7 +130,6 @@
   - type: ComponentToggler
     components:
     - type: GrantMarineIcons
-
 - type: entity
   parent: RMCVisorSquad
   id: RMCVisorSquadIntegrated
@@ -147,12 +140,11 @@
     toggledSprite:
       sprite: _RMC14/Objects/Clothing/Head/Helmets/huds.rsi
       state: hud_sight_left
-
 - type: entity
   parent: RMCVisorBase
   id: RMCVisorPilotBlack
-  name: MK30 black flight visor
-  description: A standard issue snap-on visor used by UNMC dropship pilots. Polarized to reduce glare and protect the eyes during atmospheric re-entry and orbital deployment.
+  name: MK30黑色飞行护目镜
+  description: UNMC 空降艇飞行员使用的标准配发卡扣式护目镜。采用偏光设计以减少眩光，并在大气层再入和轨道部署期间保护眼睛。
   components:
   - type: Sprite
     state: po_visor
@@ -161,7 +153,7 @@
   - type: ComponentToggler
     components:
     - type: GunshipPilotVisor
-      nightVisionTint: "#AEB7C2"
+      nightVisionTint: '#AEB7C2'
   - type: Visor
     toggledSprite:
       sprite: _RMC14/Objects/Clothing/Head/Helmets/huds.rsi
@@ -169,18 +161,17 @@
     onIcon:
       sprite: _RMC14/Objects/Clothing/helmet_visors.rsi
       state: po_visor_down
-
 - type: entity
   parent: RMCVisorPilotBlack
   id: RMCVisorPilotDarkblue
-  name: MK30 dark blue flight visor
+  name: MK30深蓝色飞行遮阳板
   components:
   - type: Sprite
     state: po_visor_darkblue
   - type: ComponentToggler
     components:
     - type: GunshipPilotVisor
-      nightVisionTint: "#315EA8"
+      nightVisionTint: '#315EA8'
   - type: Visor
     toggledSprite:
       sprite: _RMC14/Objects/Clothing/Head/Helmets/huds.rsi
@@ -188,18 +179,17 @@
     onIcon:
       sprite: _RMC14/Objects/Clothing/helmet_visors.rsi
       state: po_visor_darkblue_down
-
 - type: entity
   parent: RMCVisorPilotBlack
   id: RMCVisorPilotLightblue
-  name: MK30 light blue flight visor
+  name: MK30浅蓝色飞行遮阳板
   components:
   - type: Sprite
     state: po_visor_lightblue
   - type: ComponentToggler
     components:
     - type: GunshipPilotVisor
-      nightVisionTint: "#55BCEB"
+      nightVisionTint: '#55BCEB'
   - type: Visor
     toggledSprite:
       sprite: _RMC14/Objects/Clothing/Head/Helmets/huds.rsi
@@ -207,18 +197,17 @@
     onIcon:
       sprite: _RMC14/Objects/Clothing/helmet_visors.rsi
       state: po_visor_lightblue_down
-
 - type: entity
   parent: RMCVisorPilotBlack
   id: RMCVisorPilotPurple
-  name: MK30 purple flight visor
+  name: MK30 紫色飞行面罩
   components:
   - type: Sprite
     state: po_visor_purple
   - type: ComponentToggler
     components:
     - type: GunshipPilotVisor
-      nightVisionTint: "#A45BC7"
+      nightVisionTint: '#A45BC7'
   - type: Visor
     toggledSprite:
       sprite: _RMC14/Objects/Clothing/Head/Helmets/huds.rsi
@@ -226,18 +215,17 @@
     onIcon:
       sprite: _RMC14/Objects/Clothing/helmet_visors.rsi
       state: po_visor_purple_down
-
 - type: entity
   parent: RMCVisorPilotBlack
   id: RMCVisorPilotRed
-  name: MK30 red flight visor
+  name: MK30红色飞行面罩
   components:
   - type: Sprite
     state: po_visor_red
   - type: ComponentToggler
     components:
     - type: GunshipPilotVisor
-      nightVisionTint: "#D95757"
+      nightVisionTint: '#D95757'
   - type: Visor
     toggledSprite:
       sprite: _RMC14/Objects/Clothing/Head/Helmets/huds.rsi
@@ -245,18 +233,17 @@
     onIcon:
       sprite: _RMC14/Objects/Clothing/helmet_visors.rsi
       state: po_visor_red_down
-
 - type: entity
   parent: RMCVisorPilotBlack
   id: RMCVisorPilotYellow
-  name: MK30 yellow flight visor
+  name: MK30黄色飞行遮阳板
   components:
   - type: Sprite
     state: po_visor_yellow
   - type: ComponentToggler
     components:
     - type: GunshipPilotVisor
-      nightVisionTint: "#D9BD43"
+      nightVisionTint: '#D9BD43'
   - type: Visor
     toggledSprite:
       sprite: _RMC14/Objects/Clothing/Head/Helmets/huds.rsi
@@ -264,31 +251,21 @@
     onIcon:
       sprite: _RMC14/Objects/Clothing/helmet_visors.rsi
       state: po_visor_yellow_down
-
-
-# Factions variants
-
-# RMC
-
 - type: entity
   parent: RMCVisorSquad
   id: AU14VisorSquadRMC
-  description: An insertable visor HUD into a standard RMC helmet.
-
+  description: 可插入标准 RMC 头盔的护目镜式 HUD。
 - type: entity
   parent: RMCVisorSquadIntegrated
   id: AU14VisorSquadIntegratedRMC
-  description: An insertable visor HUD into a standard RMC helmet.
-
+  description: 一种可插入标准RMC头盔的面罩式HUD。
 - type: entity
   parent: RMCVisorMedical
   id: AU14VisorMedicalRMC
-  name: HBVS visor
-  description: One of the few successful components from the otherwise disastrous Commando Upgrade Program ran in the mid 2170s, the head-mounted, biomonitor vision system comes as standard in all RMC helmets.
-
-
+  name: HBVS 面罩
+  description: 作为2170年代中期开展的、除此之外堪称灾难的“突击队升级计划”中少数成功的组件之一，这种头戴式生物监测视觉系统是所有RMC头盔的标准配置。
 - type: entity
   parent: RMCVisorMedicalAdvancedIntegrated
   id: AU14VisorMedicalAdvancedIntegratedRMC
-  name: HBVS-A visor
-  description: One of the few successful components from the otherwise disastrous Commando Upgrade Program ran in the mid 2170s, the head-mounted, biomonitor vision system comes as standard in all RMC helmets.
+  name: HBVS-A面罩
+  description: 作为2170年代中期开展的、除此之外堪称灾难的“突击队升级计划”中少数成功的组件之一，这种头戴式生物监测视觉系统是所有RMC头盔的标准配置。

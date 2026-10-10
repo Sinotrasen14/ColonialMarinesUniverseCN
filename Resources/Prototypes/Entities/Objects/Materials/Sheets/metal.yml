@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseSheet
   id: SheetMetalBase
-  description: A sheet of metal, used often on the station in various applications.
+  description: 一块金属板，常用于空间站的各种应用中。 | A sheet of metal, used often on the station in various applications.
   components:
   - type: Sprite
     sprite: Objects/Materials/Sheets/metal.rsi
@@ -22,7 +22,7 @@
 - type: entity
   parent: SheetMetalBase
   id: SheetSteel
-  name: steel
+  name: 钢 | steel
   suffix: Full
   components:
   - type: Material
@@ -54,7 +54,7 @@
 - type: entity
   parent: SheetSteel
   id: SheetSteel10
-  name: steel
+  name: 钢 | steel
   suffix: 10
   components:
   - type: Sprite
@@ -66,7 +66,7 @@
 - type: entity
   parent: SheetSteel
   id: SheetSteel1
-  name: steel
+  name: 钢 | steel
   suffix: Single
   components:
   - type: Sprite
@@ -78,8 +78,8 @@
 - type: entity
   parent: SheetMetalBase
   id: SheetBrass
-  name: brass
-  description: A sheet of brass, primarily used by clockwork enthusiasts and the remnants of Ratvarian cults.
+  name: 黄铜 | brass
+  description: 一块黄铜板，主要由发条装置爱好者与拉特瓦尔教派的残余信徒使用。 | A sheet of brass, primarily used by clockwork enthusiasts and the remnants of Ratvarian cults.
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -108,7 +108,7 @@
 - type: entity
   parent: SheetBrass
   id: SheetBrass10
-  name: brass
+  name: 黄铜 | brass
   suffix: 10
   components:
   - type: Sprite
@@ -120,7 +120,7 @@
 - type: entity
   parent: SheetBrass
   id: SheetBrass1
-  name: brass
+  name: 黄铜 | brass
   suffix: Single
   components:
   - type: Sprite
@@ -132,7 +132,7 @@
 - type: entity
   parent: SheetMetalBase
   id: SheetPlasteel
-  name: plasteel
+  name: 塑钢 | plasteel
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -166,7 +166,7 @@
 - type: entity
   parent: SheetPlasteel
   id: SheetPlasteel10
-  name: plasteel
+  name: 塑钢 | plasteel
   suffix: 10
   components:
   - type: Sprite
@@ -178,7 +178,7 @@
 - type: entity
   parent: SheetPlasteel
   id: SheetPlasteel1
-  name: plasteel
+  name: 塑钢 | plasteel
   suffix: Single
   components:
   - type: Sprite

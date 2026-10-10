@@ -1,8 +1,8 @@
 - type: entity
   id: MineralScannerUnpowered
   parent: BaseItem
-  name: mineral scanner
-  description: A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work.
+  name: 矿物扫描仪 | mineral scanner
+  description: 一种扫描仪，用于检测周围岩石中的有用矿物。必须拿在手中或放在口袋里才能工作。 | A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work.
   suffix: Always Powered
   components:
   - type: Sprite
@@ -30,8 +30,8 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: ItemToggleExaminableStatus
   - type: ItemToggle
     soundActivate:
@@ -42,7 +42,7 @@
 
 - type: entity
   id: MineralScanner
-  parent: [ MineralScannerUnpowered, PowerCellSlotMediumItem ]
+  parent: [MineralScannerUnpowered, PowerCellSlotMediumItem]
   suffix: ""
   components:
   - type: ToggleCellDraw
@@ -63,8 +63,8 @@
 - type: entity
   id: AdvancedMineralScannerUnpowered
   parent: MineralScannerUnpowered
-  name: advanced mineral scanner
-  description: A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work. This one has an extended range.
+  name: 高级矿物扫描仪 | advanced mineral scanner
+  description: 一种检查周围岩石中是否有有用矿物的扫描仪。必须拿在手中或放在口袋里才能工作。这一款具有扩展范围。 | A scanner that checks surrounding rock for useful minerals. It must be in your hand or pocket to work. This one has an extended range.
   suffix: Always Powered
   components:
   - type: Sprite
@@ -86,7 +86,7 @@
 
 - type: entity
   id: AdvancedMineralScanner
-  parent: [ AdvancedMineralScannerUnpowered, PowerCellSlotMediumItem ]
+  parent: [AdvancedMineralScannerUnpowered, PowerCellSlotMediumItem]
   suffix: ""
   components:
   - type: ToggleCellDraw

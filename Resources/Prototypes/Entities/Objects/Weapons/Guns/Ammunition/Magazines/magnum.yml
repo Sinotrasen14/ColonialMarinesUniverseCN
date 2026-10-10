@@ -1,28 +1,28 @@
 - type: entity
   abstract: true
-  parent: [ BaseMagazinePistol, BaseSecurityContraband ]
+  parent: [BaseMagazinePistol, BaseSecurityContraband]
   id: BaseMagazineMagnum
-  name: pistol magazine (.45 magnum)
+  name: 手枪弹匣（.45马格南） | pistol magazine (.45 magnum)
   components:
   - type: Tag
     tags:
-      - MagazineMagnum
+    - MagazineMagnum
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgeMagnum
+      - CartridgeMagnum
     capacity: 7
 
 - type: entity
   parent: BaseMagazineMagnum
   id: MagazineMagnumEmpty
-  name: pistol magazine (.45 magnum any)
+  name: 手枪弹匣（.45马格南任意） | pistol magazine (.45 magnum any)
   suffix: empty
-  description: 7-round single stack magazine for large-caliber pistols.
+  description: 7发单排弹匣，适用于大口径手枪。 | 7-round single stack magazine for large-caliber pistols.
   components:
   - type: BallisticAmmoProvider
-    proto: null
+    proto:
   - type: Sprite
     layers:
     - state: base
@@ -39,8 +39,8 @@
 - type: entity
   parent: BaseMagazineMagnum
   id: MagazineMagnum
-  name: pistol magazine (.45 magnum)
-  description: 7-round single stack magazine for large-caliber pistols. Intended to hold general-purpose kinetic ammunition.
+  name: 手枪弹匣（.45马格南） | pistol magazine (.45 magnum)
+  description: 7发单排弹匣，适用于大口径手枪。用于容纳通用动能弹药。 | 7-round single stack magazine for large-caliber pistols. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnum
@@ -60,8 +60,8 @@
 - type: entity
   parent: BaseMagazineMagnum
   id: MagazineMagnumPractice
-  name: pistol magazine (.45 magnum practice)
-  description: 7-round single stack magazine for large-caliber pistols. Intended to hold harmless practice ammunition.
+  name: 手枪弹匣（.45马格南练习弹） | pistol magazine (.45 magnum practice)
+  description: 7发单排弹匣，适用于大口径手枪。用于装填无害练习弹药。 | 7-round single stack magazine for large-caliber pistols. Intended to hold harmless practice ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumPractice
@@ -87,8 +87,8 @@
 - type: entity
   parent: BaseMagazineMagnum
   id: MagazineMagnumUranium
-  name: pistol magazine (.45 magnum uranium)
-  description: 7-round single stack magazine for large-caliber pistols. Intended to hold exotic uranium-core ammunition.
+  name: 手枪弹匣（.45马格南铀弹） | pistol magazine (.45 magnum uranium)
+  description: 7发单排弹匣，适用于大口径手枪。用于装填异域铀芯弹药。 | 7-round single stack magazine for large-caliber pistols. Intended to hold exotic uranium-core ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumUranium
@@ -114,8 +114,8 @@
 - type: entity
   parent: BaseMagazineMagnum
   id: MagazineMagnumAP
-  name: pistol magazine (.45 magnum armor-piercing)
-  description: 7-round single stack magazine for large-caliber pistols. Intended to hold specialized armor-piercing ammunition.
+  name: 手枪弹匣（.45马格南穿甲弹） | pistol magazine (.45 magnum armor-piercing)
+  description: 7发单排弹匣，适用于大口径手枪。用于装填专用穿甲弹药。 | 7-round single stack magazine for large-caliber pistols. Intended to hold specialized armor-piercing ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgeMagnumAP

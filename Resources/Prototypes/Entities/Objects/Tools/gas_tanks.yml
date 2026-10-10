@@ -8,11 +8,11 @@
     layers:
     - state: icon
     - state: integrity-unshaded-0
-      map: [ "enum.MaxPressureVisualLayers.BaseUnshaded" ]
+      map: ["enum.MaxPressureVisualLayers.BaseUnshaded"]
       shader: unshaded
       visible: false
     - state: mask
-      map: [ "enum.MaxPressureVisualLayers.Base" ]
+      map: ["enum.MaxPressureVisualLayers.Base"]
       visible: false
   - type: Appearance
   - type: MaxPressureVisuals
@@ -74,8 +74,8 @@
 - type: entity
   parent: GasTankRoundBase
   id: OxygenTank
-  name: oxygen tank
-  description: A standard cylindrical gas tank for oxygen. It can hold 5 L of gas.
+  name: 氧气罐 | oxygen tank
+  description: 一个标准的圆柱形氧气罐，可容纳5升气体。 | A standard cylindrical gas tank for oxygen. It can hold 5 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/oxygen.rsi
@@ -87,8 +87,8 @@
 - type: entity
   parent: GasTankRoundBase
   id: NitrogenTank
-  name: nitrogen tank
-  description: A standard cylindrical gas tank for nitrogen. It can hold 5 L of gas.
+  name: 氮气罐 | nitrogen tank
+  description: 用于储存氮气的标准圆柱形气罐。可容纳5升气体。 | A standard cylindrical gas tank for nitrogen. It can hold 5 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/red.rsi
@@ -100,8 +100,8 @@
 - type: entity
   parent: GasTankRoundBase
   id: EmergencyOxygenTank
-  name: emergency oxygen tank
-  description: An easily portable tank for emergencies. Contains very little oxygen, rated for survival use only. It can hold 0.66 L of gas.
+  name: 应急氧气罐 | emergency oxygen tank
+  description: 一个便于携带的应急氧气罐。氧气含量极少，仅供生存使用。可容纳0.66升气体。 | An easily portable tank for emergencies. Contains very little oxygen, rated for survival use only. It can hold 0.66 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency.rsi
@@ -133,8 +133,8 @@
 - type: entity
   parent: EmergencyOxygenTank
   id: EmergencyNitrogenTank
-  name: emergency nitrogen tank
-  description: An easily portable tank for emergencies. Contains very little nitrogen, rated for survival use only. It can hold 0.66 L of gas.
+  name: 应急氮气罐 | emergency nitrogen tank
+  description: 一种便于携带的应急储罐。内含极少量氮气，仅评定用于生存用途。可容纳0.66升气体。 | An easily portable tank for emergencies. Contains very little nitrogen, rated for survival use only. It can hold 0.66 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_red.rsi
@@ -149,8 +149,8 @@
 - type: entity
   parent: EmergencyOxygenTank
   id: ExtendedEmergencyOxygenTank
-  name: extended-capacity emergency oxygen tank
-  description: An emergency tank with extended capacity. Technically rated for prolonged use. It can hold 1.5 L of gas.
+  name: 扩容应急氧气瓶 | extended-capacity emergency oxygen tank
+  description: 一个容量扩增的应急氧气瓶。技术上额定可供长时间使用。可容纳1.5升气体。 | An emergency tank with extended capacity. Technically rated for prolonged use. It can hold 1.5 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_extended.rsi
@@ -169,8 +169,8 @@
 - type: entity
   parent: ExtendedEmergencyOxygenTank
   id: ExtendedEmergencyNitrogenTank
-  name: extended-capacity emergency nitrogen tank
-  description: An emergency tank with extended capacity. Technically rated for prolonged use. It can hold 1.5 L of gas.
+  name: 扩容应急氮气罐 | extended-capacity emergency nitrogen tank
+  description: 一个容量扩大的应急气罐。技术上额定用于长时间使用。它可容纳1.5升气体。 | An emergency tank with extended capacity. Technically rated for prolonged use. It can hold 1.5 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_extended_red.rsi
@@ -185,8 +185,8 @@
 - type: entity
   parent: ExtendedEmergencyOxygenTank
   id: DoubleEmergencyOxygenTank
-  name: double emergency oxygen tank
-  description: A high-grade dual-tank emergency life support container. It holds a decent amount of oxygen for its small size. It can hold 2.5 L of gas.
+  name: 双应急氧气瓶 | double emergency oxygen tank
+  description: 一个高级双瓶应急生命维持容器。尽管体积小巧，却能容纳相当数量的氧气。可储存2.5升气体。 | A high-grade dual-tank emergency life support container. It holds a decent amount of oxygen for its small size. It can hold 2.5 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_double.rsi
@@ -210,8 +210,8 @@
 - type: entity
   parent: DoubleEmergencyOxygenTank
   id: DoubleEmergencyNitrogenTank
-  name: double emergency nitrogen tank
-  description: A high-grade dual-tank emergency life support container. It holds a decent amount of nitrogen for its small size. It can hold 2.5 L of gas.
+  name: 双紧急氮气罐 | double emergency nitrogen tank
+  description: 一个高级双罐紧急生命维持容器。就其小巧体积而言，它能容纳相当数量的氮气。可储存2.5升气体。 | A high-grade dual-tank emergency life support container. It holds a decent amount of nitrogen for its small size. It can hold 2.5 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_double_red.rsi
@@ -226,8 +226,8 @@
 - type: entity
   parent: EmergencyOxygenTank
   id: EmergencyFunnyOxygenTank
-  name: funny emergency oxygen tank
-  description: An easily portable tank for emergencies. Contains very little oxygen with an extra of funny gas, rated for survival use only. It can hold 0.66 L of gas.
+  name: 有趣的应急氧气罐 | funny emergency oxygen tank
+  description: 一种便于携带的应急氧气罐。内含极少量氧气，并额外添加了笑气，仅评定为生存用途。可容纳0.66升气体。 | An easily portable tank for emergencies. Contains very little oxygen with an extra of funny gas, rated for survival use only. It can hold 0.66 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/emergency_clown.rsi
@@ -242,8 +242,8 @@
 - type: entity
   parent: GasTankRoundBase
   id: AirTank
-  name: air tank
-  description: Mixed anyone? It can hold 5 L of gas.
+  name: 空气罐 | air tank
+  description: 要混合气体吗？它可以容纳5升气体。 | Mixed anyone? It can hold 5 L of gas.
   components:
   - type: GasTank
     releasePressure: 101.3
@@ -251,8 +251,8 @@
 - type: entity
   parent: GasTankRoundBase
   id: NitrousOxideTank
-  name: nitrous oxide tank
-  description: Contains a mixture of air and nitrous oxide. Make sure you don't refill it with pure N2O. It can hold 5 L of gas.
+  name: 一氧化二氮罐 | nitrous oxide tank
+  description: 包含空气和一氧化二氮的混合气体。确保不要将其重新充装为纯一氧化二氮。它可以容纳5升气体。 | Contains a mixture of air and nitrous oxide. Make sure you don't refill it with pure N2O. It can hold 5 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/anesthetic.rsi
@@ -267,8 +267,8 @@
   # it's a square so no rolling dough
   parent: GasTankBase
   id: PlasmaTank
-  name: plasma tank
-  description: Contains dangerous plasma. Do not inhale. Extremely flammable. It can hold 5 L of gas.
+  name: 等离子罐 | plasma tank
+  description: 含有危险的等离子体。请勿吸入。极易燃。可容纳5升气体。 | Contains dangerous plasma. Do not inhale. Extremely flammable. It can hold 5 L of gas.
   components:
   - type: Sprite
     sprite: Objects/Tanks/plasma.rsi

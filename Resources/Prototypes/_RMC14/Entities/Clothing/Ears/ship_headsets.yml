@@ -4,8 +4,8 @@
 - type: entity
   parent: Clothing
   id: CMHeadset
-  name: radio headset
-  description: An updated, modular intercom that fits over the head. Takes encryption keys.
+  name: 无线电头戴式耳机
+  description: 一种升级版模块化头戴式对讲机。可搭载加密密钥。
   components:
   - type: ContainerContainer
     containers:
@@ -43,8 +43,8 @@
 - type: entity
   parent: RMCHeadsetIconsUNMC
   id: RMCHeadsetShip
-  name: marine radio headset
-  description: A standard military radio headset. Bulkier than combat models.
+  name: 海军陆战队无线电耳机
+  description: 标准军用无线电耳机。比作战型号更笨重。
   suffix: RMC
   components:
   - type: ContainerFill
@@ -57,8 +57,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetPilot
-  name: marine pilot radio headset
-  description: Used by Dropship and Gunship Pilots.
+  name: 陆战队飞行员无线电耳机
+  description: 供运输机和炮艇机飞行员使用。
   components:
   - type: ContainerFill
     containers:
@@ -80,8 +80,8 @@
 - type: entity
   parent: RMCHeadsetMarine
   id: CMHeadsetIntel
-  name: marine intel radio headset
-  description: Used by Intelligence Officers.
+  name: 海军陆战队情报无线电耳机
+  description: 由情报军官使用。
   components:
   - type: ContainerFill
     containers:
@@ -110,8 +110,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetReporter
-  name: reporter radio headset
-  description: Used by the combat correspondent to get the scoop.
+  name: 记者无线电耳机
+  description: 战地记者用它获取独家新闻。
   components:
   - type: ContainerFill
     containers:
@@ -122,14 +122,14 @@
 - type: entity
   parent: RMCHeadsetShip
   id: RMCHeadsetPrisoner
-  name: prisoner headset
-  description: Headset provided to prisoners as directed by Marine Law.
+  name: 囚犯耳机
+  description: 按《海军陆战队法》规定向囚犯提供的耳机。
 
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetRequisition
-  name: requisitions radio headset
-  description: Used by the Requisitions Technicians, lightweight and portable.
+  name: 征用无线电耳机
+  description: 供征用技术员使用，轻便易携。
   components:
   - type: Sprite
     state: req_headset
@@ -150,8 +150,8 @@
 - type: entity
   parent: CMHeadsetRequisition
   id: CMHeadsetChef
-  name: kitchen radio headset
-  description: Used by the onboard kitchen staff, filled with background noise of sizzling pots.
+  name: 厨房无线电耳机
+  description: 供船上厨房工作人员使用，充满锅具滋滋作响的背景噪音。
   components:
   - type: ContainerFill
     containers:
@@ -162,8 +162,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetEngineer
-  name: engineering radio headset
-  description: Useful for coordinating maintenance bars and orbital bombardments. Of robust and sturdy construction.
+  name: 工程无线电耳机
+  description: 可用于协调维护酒吧和轨道轰炸。结构坚固耐用。
   components:
   - type: Sprite
     state: eng_headset
@@ -180,8 +180,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetMedical
-  name: medical radio headset
-  description: A headset used by the highly trained staff of the medbay.
+  name: 医疗无线电耳机
+  description: 医疗舱训练有素的工作人员使用的耳机。
   components:
   - type: Sprite
     state: med_headset
@@ -198,8 +198,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetResearcher
-  name: researcher radio headset
-  description: A headset used by medbay's skilled researchers.
+  name: 研究员无线电耳机
+  description: 医疗舱技术娴熟的研究员使用的耳机。
   components:
   - type: Sprite
     state: med_headset
@@ -217,8 +217,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetSeniorCommand
-  name: marine senior command headset
-  description: Issued only to senior command staff.
+  name: 海军高级指挥耳机
+  description: 仅发放给高级指挥人员。
   components:
   - type: Sprite
     state: mco_headset
@@ -239,8 +239,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetHighCommand
-  name: UNMC high command headset
-  description: Issued only to high command staff.
+  name: UNMC高级指挥部耳机
+  description: 仅发放给高级指挥部人员。
   components:
   - type: Sprite
     state: mco_headset
@@ -283,8 +283,8 @@
 - type: entity
   parent: CMHeadsetSeniorCommand
   id: RMCHeadsetSEA
-  name: marine senior enlisted advisor headset
-  description: Issued only to senior enlisted advisors.
+  name: 海军陆战队高级士兵顾问耳机
+  description: 仅发放给高级士兵顾问。
   components:
   - type: Sprite
     state: mco_headset
@@ -307,8 +307,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: RMCHeadsetMarineCommand
-  name: marine command radio headset
-  description: Used by CIC staff and higher-ups, features a non-standard brace.
+  name: 海军陆战队指挥无线电耳机
+  description: 由CIC工作人员和高层使用，配有非标准支架。
   components:
   - type: Sprite
     state: mcom_headset
@@ -336,8 +336,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetCE
-  name: chief engineer's headset
-  description: The headset of the guy in charge of spooling engines, managing MTs, and tearing up the floor for scrap metal. Of robust and sturdy construction.
+  name: 总工程师的耳机
+  description: 那位负责让引擎加速、管理 MTs、为了废金属拆地板的家伙的耳机。结构坚固耐用。
   components:
   - type: Sprite
     state: ce_headset
@@ -367,8 +367,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetCMO
-  name: chief medical officer's headset
-  description: A headset issued to the top brass of medical professionals.
+  name: 首席医疗官的耳机
+  description: 配发给医疗专业人员高层的耳机。
   components:
   - type: Sprite
     state: cmo_headset
@@ -393,8 +393,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetQM
-  name: Logistics Officer radio headset
-  description: A headset used by the Logistics Officer.
+  name: 后勤官无线电耳机
+  description: 后勤官使用的耳机。
   components:
   - type: Sprite
     state: ro_headset
@@ -420,8 +420,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetCMP
-  name: marine chief MP radio headset
-  description: For discussing the purchase of donuts and arresting of hooligans.
+  name: 海军陆战队宪兵队长无线电耳机
+  description: 用于讨论购买甜甜圈和逮捕流氓。
   components:
   - type: Sprite
     state: sec_headset
@@ -451,8 +451,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: RMCHeadsetLiaison
-  name: corporate liaison radio headset
-  description: Used by the CL to convince people to sign NDAs.
+  name: 企业联络员无线电耳机
+  description: 企业联络员用它说服人们签署保密协议。
   components:
   - type: Sprite
     state: we_ya_headset
@@ -475,8 +475,8 @@
 - type: entity
   parent: CMHeadsetSeniorCommand
   id: RMCHeadsetSynth
-  name: marine synth headset
-  description: Issued only to UNMC synthetics.
+  name: 海军陆战队合成人耳机
+  description: 仅配发给海军陆战队合成人。
   components:
   - type: Sprite
     state: ms_headset
@@ -498,8 +498,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: CMHeadsetMPO
-  name: marine military police radio headset
-  description: This is used by marine military police members.
+  name: 海军陆战队宪兵无线电耳机
+  description: 该物品由海军陆战队宪兵成员使用。
   components:
   - type: Sprite
     state: sec_headset
@@ -518,8 +518,8 @@
 - type: entity
   parent: CMHeadsetCMP
   id: RMCHeadsetMW
-  name: marine military warden radio headset
-  description: It seems oddly similar to the CMP's... Smells like donuts too.
+  name: 海军陆战队军事监狱长无线电耳机
+  description: 它似乎和 CMP 的异常相似……闻起来也像甜甜圈。
   components:
   - type: GrantSquadLeaderTracker
     defaultMode: ChiefMilitaryPolice
@@ -532,8 +532,8 @@
 - type: entity
   parent: CMHeadsetMPO
   id: RMCHeadsetMPHonor
-  name: marine honor guard radio headset
-  description: This is used by members of the marine honor guard.
+  name: 海军陆战队仪仗队无线电耳机
+  description: 这是由海军陆战队仪仗队成员使用的。
   components:
   - type: RMCHeadset
     radioTextIncrease: 2

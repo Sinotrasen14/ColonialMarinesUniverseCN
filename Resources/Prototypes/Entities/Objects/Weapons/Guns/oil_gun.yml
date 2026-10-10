@@ -1,8 +1,8 @@
 - type: entity
   parent: [BaseItem, BaseXenoborgContraband]
   id: WeaponOilGun
-  name: oil gun
-  description: This gun launches ampoules of xenoborg oil to make organics slip or become flammable if hit with a direct hit. It comes with a tiny flame to light them on fire!
+  name: 喷油枪 | oil gun
+  description: 这把枪发射异星机械油安瓿，使有机物滑倒，若直接命中则使其变得易燃。它还附带一簇小火焰，可将它们点燃！ | This gun launches ampoules of xenoborg oil to make organics slip or become flammable if hit with a direct hit. It comes with a tiny flame to light them on fire!
   components:
   - type: Appearance
   - type: Sprite
@@ -24,8 +24,8 @@
     visuals:
       enum.AmmoVisuals.IsFull:
         reloading:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}
   - type: Item
     size: Large
   - type: CustomSpriteAmmoCounter

@@ -45,8 +45,7 @@
   # packet can be broken open
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 2
       behaviors:
       - !type:PlaySoundBehavior
@@ -55,7 +54,7 @@
       - !type:SpillBehavior
         solution: food
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   # packet contents can be splashed when open
   - type: MeleeWeapon
     soundNoDamage:
@@ -96,16 +95,16 @@
 - type: entity
   parent: [ReagentPacket, ItemHeftyBase]
   id: ReagentContainerFlour
-  name: flour bag
-  description: A big bag of flour. Good for baking!
+  name: 面粉袋 | flour bag
+  description: 一大袋面粉。很适合烘焙！ | A big bag of flour. Good for baking!
   components:
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "flour-big_open"} # open
-          False: {state: "flour-big"} # closed
+          true: {state: "flour-big_open"} # open
+          false: {state: "flour-big"} # closed
   - type: Sprite
     layers:
     - state: flour-big
@@ -119,8 +118,8 @@
 - type: entity
   parent: [ReagentPacketSmall, ItemHeftyBase]
   id: ReagentContainerFlourSmall
-  name: flour pack
-  description: A pack of flour. Good for baking!
+  name: 面粉包 | flour pack
+  description: 一包面粉。适合烘焙！ | A pack of flour. Good for baking!
   components:
   - type: Sprite
     state: flour-small
@@ -133,16 +132,16 @@
 - type: entity
   parent: [ReagentPacket, ItemHeftyBase]
   id: ReagentContainerCornmeal
-  name: cornmeal bag
-  description: A big bag of cornmeal. Good for cooking!
+  name: 玉米粉袋 | cornmeal bag
+  description: 一大袋玉米粉。适合烹饪！ | A big bag of cornmeal. Good for cooking!
   components:
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "cornmeal-big_open"} # open
-          False: {state: "cornmeal-big"} # closed
+          true: {state: "cornmeal-big_open"} # open
+          false: {state: "cornmeal-big"} # closed
   - type: Sprite
     layers:
     - state: cornmeal-big
@@ -156,8 +155,8 @@
 - type: entity
   parent: [ReagentPacketSmall, ItemHeftyBase]
   id: ReagentContainerCornmealSmall
-  name: cornmeal pack
-  description: A pack of cornmeal. Good for cooking!
+  name: 玉米粉包 | cornmeal pack
+  description: 一包玉米粉。适合烹饪！ | A pack of cornmeal. Good for cooking!
   components:
   - type: Sprite
     state: cornmeal
@@ -170,16 +169,16 @@
 - type: entity
   parent: [ReagentPacket, ItemHeftyBase]
   id: ReagentContainerRice
-  name: rice bag
-  description: A big bag of rice. Good for cooking!
+  name: 米袋 | rice bag
+  description: 一大袋米。很适合做饭！ | A big bag of rice. Good for cooking!
   components:
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "rice-big_open"} # open
-          False: {state: "rice-big"} # closed
+          true: {state: "rice-big_open"} # open
+          false: {state: "rice-big"} # closed
   - type: Sprite
     layers:
     - state: rice-big
@@ -193,8 +192,8 @@
 - type: entity
   parent: [ReagentPacketSmall, ItemHeftyBase]
   id: ReagentContainerRiceSmall
-  name: rice pack
-  description: A pack of rice. Good for cooking!
+  name: 大米包 | rice pack
+  description: 一包大米。适合烹饪！ | A pack of rice. Good for cooking!
   components:
   - type: Sprite
     state: rice-small
@@ -207,16 +206,16 @@
 - type: entity
   parent: [ReagentPacket, ItemHeftyBase]
   id: ReagentContainerSugar
-  name: sugar bag
-  description: A big bag of tasty spacey sugar.
+  name: 糖袋 | sugar bag
+  description: 一大袋美味又迷幻的糖。 | A big bag of tasty spacey sugar.
   components:
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "sugar-big_open"} # open
-          False: {state: "sugar-big"} # closed
+          true: {state: "sugar-big_open"} # open
+          false: {state: "sugar-big"} # closed
   - type: Sprite
     layers:
     - state: sugar-big
@@ -230,8 +229,8 @@
 - type: entity
   parent: [ReagentPacketSmall, ItemHeftyBase]
   id: ReagentContainerSugarSmall
-  name: sugar pack
-  description: A pack of tasty spacey sugar.
+  name: 糖包 | sugar pack
+  description: 一包美味的太空糖。 | A pack of tasty spacey sugar.
   components:
   - type: Sprite
     state: sugar-small
@@ -246,16 +245,16 @@
 - type: entity
   parent: ReagentPacketBase # TODO Move to condiments.yml and parent off of BaseFoodCondimentBottle
   id: ReagentContainerOliveoil
-  name: olive oil
-  description: Olive oil. From space olives presumably.
+  name: 橄榄油 | olive oil
+  description: 橄榄油。大概来自太空橄榄。 | Olive oil. From space olives presumably.
   components:
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "oliveoil_open"} # open
-          False: {state: "oliveoil"} # closed
+          true: {state: "oliveoil_open"} # open
+          false: {state: "oliveoil"} # closed
   - type: Sprite
     layers:
     - state: oliveoil
@@ -272,16 +271,16 @@
 - type: entity
   parent: ReagentPacketBase # TODO Move to condiments.yml and parent off of BaseFoodCondimentBottle
   id: ReagentContainerMayo
-  name: mayonnaise
-  description: Bottle of mayonnaise.
+  name: 蛋黄酱 | mayonnaise
+  description: 一瓶蛋黄酱。 | Bottle of mayonnaise.
   components:
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "mayo_open"} # open
-          False: {state: "mayo"} # closed
+          true: {state: "mayo_open"} # open
+          false: {state: "mayo"} # closed
   - type: Sprite
     layers:
     - state: mayo
@@ -294,7 +293,7 @@
         Quantity: 50
   - type: Tag
     tags:
-      - Mayo
+    - Mayo
 
 # Baking
 
@@ -302,7 +301,7 @@
   abstract: true
   parent: FoodBaseTrash
   id: FoodBakingBase
-  description: Used in various recipes.
+  description: 用于各种食谱。 | Used in various recipes.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/ingredients.rsi
@@ -313,7 +312,7 @@
   abstract: true
   parent: FoodBakingBase
   id: FoodBakingMixableBase
-  description: Mixed into various recipes.
+  description: 混入各种食谱中。 | Mixed into various recipes.
   components:
   - type: SolutionSpiker
     sourceSolution: food
@@ -373,8 +372,8 @@
 - type: entity
   parent: [FoodDoughBase, BaseSlicingRefinableFood]
   id: FoodDough
-  name: dough
-  description: A piece of dough.
+  name: 面团 | dough
+  description: 一块面团。 | A piece of dough.
   components:
   - type: Sprite
     state: dough
@@ -389,8 +388,8 @@
 - type: entity
   parent: FoodDoughSliceBase
   id: FoodDoughSlice
-  name: dough slice
-  description: A slice of dough. Can be cooked into a bun.
+  name: 面团片 | dough slice
+  description: 一片面团。可以烹饪成包子。 | A slice of dough. Can be cooked into a bun.
   components:
   - type: Sprite
     state: dough-slice
@@ -401,8 +400,8 @@
 - type: entity
   parent: FoodDoughRopeBase
   id: FoodDoughRope
-  name: dough rope
-  description: A thin noodle of dough. Can be cooked into a bagel.
+  name: 面团条 | dough rope
+  description: 一条细长的面团。可以煮成百吉饼。 | A thin noodle of dough. Can be cooked into a bagel.
   components:
   - type: Sprite
     state: dough-rope
@@ -413,8 +412,8 @@
 - type: entity
   parent: [FoodDoughBase, BaseSlicingRefinableFood]
   id: FoodDoughCornmeal
-  name: cornmeal dough
-  description: A piece of cornmeal dough.
+  name: 玉米面团 | cornmeal dough
+  description: 一块玉米面团。 | A piece of cornmeal dough.
   components:
   - type: Sprite
     state: cornmealdough
@@ -426,8 +425,8 @@
 - type: entity
   parent: FoodDoughSliceBase
   id: FoodDoughCornmealSlice
-  name: cornmeal dough slice
-  description: A slice of cornmeal dough.
+  name: 玉米面团片 | cornmeal dough slice
+  description: 一片玉米面团。 | A slice of cornmeal dough.
   components:
   - type: Sprite
     state: cornmealdough-slice
@@ -435,8 +434,8 @@
 - type: entity
   parent: [FoodDoughBase, BaseSlicingRefinableFood]
   id: FoodDoughTortilla
-  name: tortilla dough
-  description: A piece of tortilla dough.
+  name: 玉米饼面团 | tortilla dough
+  description: 一块玉米饼面团。 | A piece of tortilla dough.
   components:
   - type: Sprite
     state: tortilladough
@@ -448,8 +447,8 @@
 - type: entity
   parent: FoodDoughSliceBase
   id: FoodDoughTortillaSlice
-  name: tortilla dough slice
-  description: A slice of tortilla dough.
+  name: 玉米饼面团片 | tortilla dough slice
+  description: 一片玉米饼面团。 | A slice of tortilla dough.
   components:
   - type: Sprite
     state: tortilladough-slice
@@ -460,8 +459,8 @@
 - type: entity
   parent: [SolutionVeryTiny, FoodDoughBase]
   id: FoodDoughTortillaFlat
-  name: flattened tortilla dough
-  description: A flattened slice of tortilla dough, cook this to get a taco shell.
+  name: 压平的玉米饼面团 | flattened tortilla dough
+  description: 一片压平的玉米饼面团，烹饪后可得到墨西哥卷饼壳。 | A flattened slice of tortilla dough, cook this to get a taco shell.
   components:
   - type: Sprite
     state: tortilladough-flat
@@ -477,8 +476,8 @@
 - type: entity
   parent: [FoodDoughBase, BaseSlicingRefinableFood]
   id: FoodDoughCotton
-  name: cotton dough
-  description: A piece of fabric dough.
+  name: 棉面团 | cotton dough
+  description: 一块棉面团。 | A piece of fabric dough.
   components:
   - type: FlavorProfile
     flavors:
@@ -507,8 +506,8 @@
 - type: entity
   parent: FoodDoughSliceBase
   id: FoodDoughCottonSlice
-  name: cotton dough slice
-  description: A slice of cotton dough.
+  name: 棉团片 | cotton dough slice
+  description: 一片棉团。 | A slice of cotton dough.
   components:
   - type: FlavorProfile
     flavors:
@@ -534,8 +533,8 @@
 - type: entity
   parent: FoodDoughRopeBase
   id: FoodDoughCottonRope
-  name: cotton dough rope
-  description: A thin noodle of cotton dough. Can be cooked into a cotton bagel.
+  name: 棉面团绳 | cotton dough rope
+  description: 一根细长的棉面团条。可以煮成棉贝果。 | A thin noodle of cotton dough. Can be cooked into a cotton bagel.
   components:
   - type: FlavorProfile
     flavors:
@@ -555,22 +554,22 @@
         Quantity: 5
   - type: Tag
     tags:
-     - ClothMade
+    - ClothMade
 
 - type: entity
-  name: raw pastry base
+  name: 生糕点底 | raw pastry base
   parent: FoodBakingBase
   id: FoodDoughPastryBaseRaw # Unused
-  description: Must be cooked before use.
+  description: 使用前必须煮熟。 | Must be cooked before use.
   components:
   - type: Sprite
     state: dough-pastry
 
 - type: entity
-  name: pastry base
+  name: 糕点底 | pastry base
   parent: FoodBakingBase
   id: FoodDoughPastryBase # Unused
-  description: A base for any self-respecting pastry.
+  description: 任何有尊严的糕点的基础。 | A base for any self-respecting pastry.
   components:
   - type: Sprite
     state: dough-pastry-baked
@@ -578,8 +577,8 @@
 - type: entity
   parent: FoodDoughBase
   id: FoodDoughPie
-  name: pie dough
-  description: Cook it to get a pie.
+  name: 派皮 | pie dough
+  description: 把它烹饪成派。 | Cook it to get a pie.
   components:
   - type: Sprite
     state: dough-pie
@@ -587,8 +586,8 @@
 - type: entity
   parent: [FoodDough, BaseSlicingRefinableFood]
   id: FoodDoughFlat
-  name: flat dough
-  description: A flattened dough.
+  name: 扁平面团 | flat dough
+  description: 一块扁平面团。 | A flattened dough.
   components:
   - type: Item
     shape:
@@ -606,8 +605,8 @@
 - type: entity
   parent: [FoodDoughCotton, BaseSlicingRefinableFood]
   id: FoodDoughCottonFlat
-  name: flat cotton dough
-  description: A flattened cotton dough.
+  name: 扁平面团 | flat cotton dough
+  description: 一块压扁的棉絮面团。 | A flattened cotton dough.
   components:
   - type: Item
     shape:
@@ -625,8 +624,8 @@
 - type: entity
   parent: FoodDough
   id: FoodDoughPizzaBaked
-  name: pizza bread
-  description: Add ingredients to make a pizza.
+  name: 披萨面包 | pizza bread
+  description: 加入食材制作披萨。 | Add ingredients to make a pizza.
   components:
   - type: FlavorProfile
     flavors:
@@ -641,20 +640,20 @@
 - type: entity
   parent: FoodDoughBase
   id: FoodCakeBatter
-  name: cake batter
-  description: Cook it to get a cake.
+  name: 蛋糕面糊 | cake batter
+  description: 把它烹饪一下就能得到蛋糕。 | Cook it to get a cake.
   components:
   - type: FlavorProfile
     flavors:
-      - sweetdough
+    - sweetdough
   - type: Sprite
     state: cakebatter
 
 - type: entity
   parent: [SolutionSmall, FoodBakingMixableBase, BaseSlicingRefinableFood]
   id: FoodButter
-  name: stick of butter
-  description: A stick of delicious, golden, fatty goodness.
+  name: 一块黄油 | stick of butter
+  description: 一块美味、金黄、油脂丰富的好东西。 | A stick of delicious, golden, fatty goodness.
   components:
   - type: Item
     shape:
@@ -671,15 +670,13 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.3,-0.2,0.3,0.2"
         layer:
         - SlipLayer
         hard: false
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.3,-0.2,0.3,0.2"
         density: 10
         mask:
@@ -697,8 +694,8 @@
 - type: entity
   parent: [SolutionVeryTiny, FoodBakingMixableBase]
   id: FoodButterSlice
-  name: butter slice
-  description: A pat of delicious, golden, fatty goodness.
+  name: 黄油片 | butter slice
+  description: 一片美味、金黄、富含脂肪的黄油。 | A pat of delicious, golden, fatty goodness.
   components:
   - type: Item
     size: Tiny
@@ -715,10 +712,10 @@
     - Slice
 
 - type: entity
-  name: stick of cannabis butter
+  name: 大麻黄油棒 | stick of cannabis butter
   parent: FoodButter
   id: FoodCannabisButter
-  description: Add this to your favorite baked goods for an irie time.
+  description: 把它加到你最喜欢的烘焙食品中，享受一段惬意的时光。 | Add this to your favorite baked goods for an irie time.
   components:
   - type: Sprite
     state: butter
@@ -734,16 +731,16 @@
     grindableSolutionName: food
 
 - type: entity
-  name: cheese wheel
+  name: 奶酪轮 | cheese wheel
   parent: [SolutionNormal, FoodBakingBase, BaseSlicingRefinableFood]
   id: FoodCheese
-  description: A big wheel of delicious Cheddar.
+  description: 一大轮美味的切达奶酪。 | A big wheel of delicious Cheddar.
   components:
   - type: Item
     size: Normal
   - type: FlavorProfile
     flavors:
-      - cheesy
+    - cheesy
   - type: Sprite
     state: cheesewheel
   - type: ToolRefinable
@@ -759,12 +756,12 @@
 - type: entity
   parent: [SolutionTiny, FoodBakingBase]
   id: FoodCheeseSlice
-  name: cheese wedge
-  description: A wedge of delicious Cheddar. The cheese wheel it was cut from can't have gone far.
+  name: 奶酪楔 | cheese wedge
+  description: 一块美味的切达奶酪楔。它被切下来的那个奶酪轮肯定就在附近。 | A wedge of delicious Cheddar. The cheese wheel it was cut from can't have gone far.
   components:
   - type: FlavorProfile
     flavors:
-      - cheesy
+    - cheesy
   - type: Sprite
     state: cheesewedge
   - type: Solution
@@ -791,8 +788,8 @@
 - type: entity
   parent: [SolutionSmall, FoodBakingBase, BaseSlicingRefinableFood]
   id: FoodChevre
-  name: chèvre log
-  description: A soft log of creamy Chèvre.
+  name: 羊奶酪卷 | chèvre log
+  description: 一款柔软的奶油羊奶酪卷。 | A soft log of creamy Chèvre.
   components:
   - type: Item
     shape:
@@ -800,8 +797,8 @@
     storedOffset: 0,-2
   - type: FlavorProfile
     flavors:
-      - nutty
-      - creamy
+    - nutty
+    - creamy
   - type: Sprite
     state: chevrelog
   - type: ToolRefinable
@@ -819,15 +816,15 @@
 - type: entity
   parent: [SolutionTiny, FoodBakingBase]
   id: FoodChevreSlice
-  name: chèvre disk
-  description: A small disk of creamy Chèvre. An ideal adornment for French side dishes.
+  name: 山羊奶酪圆盘 | chèvre disk
+  description: 一小盘奶油山羊奶酪。法式配菜的理想点缀。 | A small disk of creamy Chèvre. An ideal adornment for French side dishes.
   components:
   - type: Item
     size: Tiny
   - type: FlavorProfile
     flavors:
-      - nutty
-      - creamy
+    - nutty
+    - creamy
   - type: Sprite
     state: chevredisk
   - type: Solution
@@ -845,14 +842,14 @@
 - type: entity
   parent: [SolutionNormal, FoodBakingBase, BaseSlicingRefinableFood]
   id: FoodTofu
-  name: tofu
-  description: Solid white block with a subtle flavor.
+  name: 豆腐 | tofu
+  description: 结实的白色块状物，味道清淡。 | Solid white block with a subtle flavor.
   components:
   - type: Item
     size: Normal
   - type: FlavorProfile
     flavors:
-      - tofu
+    - tofu
   - type: Sprite
     state: tofu
   - type: Solution
@@ -870,14 +867,14 @@
 - type: entity
   parent: [SolutionTiny, FoodBakingBase]
   id: FoodTofuSlice
-  name: tofu slice
-  description: A slice of tofu. Ingredient of various vegetarian dishes.
+  name: 豆腐片 | tofu slice
+  description: 一片豆腐。各种素食菜肴的配料。 | A slice of tofu. Ingredient of various vegetarian dishes.
   components:
   - type: Item
     size: Tiny
   - type: FlavorProfile
     flavors:
-      - tofu
+    - tofu
   - type: Sprite
     state: tofu-slice
   - type: Solution
@@ -892,14 +889,14 @@
     - Slice
 
 - type: entity
-  name: burned mess
+  name: 烧焦的一团 | burned mess
   parent: [SolutionSmall, FoodBakingBase]
   id: FoodBadRecipe
-  description: Someone should be demoted from cook for this.
+  description: 应该有人因为这个被从厨师降职。 | Someone should be demoted from cook for this.
   components:
   - type: FlavorProfile
     flavors:
-      - terrible
+    - terrible
   - type: Sprite
     state: badrecipe
   - type: Solution
@@ -916,16 +913,16 @@
     - Trash
 
 - type: entity
-  name: cocoa beans
+  name: 可可豆 | cocoa beans
   parent: FoodProduceBase
   id: FoodCocoaBeans
-  description: You can never have too much chocolate!
+  description: 巧克力永远不嫌多！ | You can never have too much chocolate!
   components:
   - type: Item
     size: Tiny
   - type: FlavorProfile
     flavors:
-      - chocolate
+    - chocolate
   - type: Sprite
     sprite: Objects/Specific/Hydroponics/cocoa.rsi
     state: produce-beans
@@ -951,8 +948,8 @@
 - type: entity
   parent: [SolutionSmall, FoodBakingBase]
   id: FoodCroissantRaw
-  name: raw croissant
-  description: Buttery, flaky goodness waiting to happen.
+  name: 生牛角包 | raw croissant
+  description: 黄油香浓、酥脆可口的幸福即将呈现。 | Buttery, flaky goodness waiting to happen.
   components:
   - type: Item
     shape:
@@ -961,7 +958,7 @@
     storedOffset: -2,-4
   - type: FlavorProfile
     flavors:
-      - dough
+    - dough
   - type: Sprite
     state: croissant-raw
   - type: Solution
@@ -973,8 +970,8 @@
 - type: entity
   parent: FoodCroissantRaw
   id: FoodCroissantRawCotton
-  name: raw cotton croissant
-  description: Buttery, flaky, fibery goodness waiting to happen.
+  name: 生棉羊角包 | raw cotton croissant
+  description: 黄油香浓、酥脆掉渣、纤维感十足的美味即将呈现。 | Buttery, flaky, fibery goodness waiting to happen.
   components:
   - type: Item
     shape:

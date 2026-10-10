@@ -1,18 +1,17 @@
 - type: entity
   parent: ClothingHeadBase
   id: RMCClothingHeadHelmetBombSuit
-  name: bomb hood
-  description: Use in case of bomb
+  name: 防爆头罩
+  description: 遇炸弹时使用
   suffix: RMC
   components:
-  - type: Sprite #RMC14 TODO: Make a new sprite which doesn't look silly
+  - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/bombsuit_helmet.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Helmets/bombsuit_helmet.rsi
   - type: CMArmor
     explosionArmor: 50
   - type: RMCEarProtection
-
 - type: entity
   parent: RMCClothingHeadHelmetBombSuit
   id: RMCClothingHeadHelmetBombSuitSecurity

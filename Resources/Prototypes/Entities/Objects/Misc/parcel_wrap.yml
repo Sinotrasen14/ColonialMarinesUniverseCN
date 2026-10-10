@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: ParcelWrap
-  name: parcel wrap
-  description: Paper used contain items for transport.
+  name: 包裹包装纸 | parcel wrap
+  description: 用于盛装物品以便运输的纸。 | Paper used contain items for transport.
   components:
   - type: Sprite
     sprite: Objects/Misc/ParcelWrap/parcel_wrap.rsi
@@ -32,13 +32,13 @@
 - type: entity
   parent: ParcelWrap
   id: ParcelWrapAdmeme
-  name: bluespace wrap
+  name: 蓝空间包装纸 | bluespace wrap
   suffix: Admeme
-  description: Paper used contain items for transport. This one seems to be able to store an unusual amount of space within it.
+  description: 用于包裹物品以便运输的纸。这一张似乎能在其中储存异常大量的空间。 | Paper used contain items for transport. This one seems to be able to store an unusual amount of space within it.
   components:
   - type: ParcelWrap
-    whitelist: null
-    blacklist: null
+    whitelist:
+    blacklist:
     canSelfUnwrap: false # admins held me at gunpoint until I added this bool
 
 - type: entity
@@ -68,8 +68,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 8
       behaviors:
       - !type:PlaySoundBehavior
@@ -78,9 +77,8 @@
           params:
             volume: -4
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
-    - trigger:
-        !type:DamageTypeTrigger
+        acts: ["Destruction"]
+    - trigger: !type:DamageTypeTrigger
         damageType: Slash
         damage: 5
       behaviors:
@@ -90,43 +88,43 @@
           params:
             volume: -4
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Tag
     tags:
     - Recyclable # Parcel entity is recyclable, and when it's destroyed, it'll drop its contents.
 
 - type: entity
-  parent: [ BaseItem, BaseWrappedParcel ]
+  parent: [BaseItem, BaseWrappedParcel]
   id: WrappedParcel
-  name: wrapped parcel
-  description: Something wrapped up in paper. I wonder what's inside...
+  name: 纸包 | wrapped parcel
+  description: 用纸包起来的东西。不知道里面是什么…… | Something wrapped up in paper. I wonder what's inside...
   components:
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.WrappedParcelVisuals.Size:
         enum.WrappedParcelVisuals.Layer:
-          "Tiny": { state: "parcel-tiny" }
-          "Small": { state: "parcel-small" }
-          "Medium": { state: "parcel-medium" }
-          "Large": { state: "parcel-medium" }
-          "Huge": { state: "parcel-large" }
-          "Ginormous": { state: "parcel-large" }
+          "Tiny": {state: "parcel-tiny"}
+          "Small": {state: "parcel-small"}
+          "Medium": {state: "parcel-medium"}
+          "Large": {state: "parcel-medium"}
+          "Huge": {state: "parcel-large"}
+          "Ginormous": {state: "parcel-large"}
       enum.PaperLabelVisuals.HasLabel:
         enum.PaperLabelVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PaperLabelVisuals.LabelType:
         enum.PaperLabelVisuals.Layer:
-          Paper: { state: paper }
-          Bounty: { state: bounty }
-          CaptainsPaper: { state: captains_paper }
-          Invoice: { state: invoice }
+          Paper: {state: paper}
+          Bounty: {state: bounty}
+          CaptainsPaper: {state: captains_paper}
+          Invoice: {state: invoice}
   - type: Sprite
     sprite: Objects/Misc/ParcelWrap/wrapped_parcel.rsi
     layers:
     - state: parcel-medium
-      map: [ "enum.WrappedParcelVisuals.Layer" ]
+      map: ["enum.WrappedParcelVisuals.Layer"]
     - state: paper
       visible: false
       sprite: Objects/Misc/ParcelWrap/paper_labels.rsi
@@ -135,8 +133,8 @@
 - type: entity
   parent: BaseWrappedParcel
   id: WrappedParcelHumanoid
-  name: wrapped parcel
-  description: Something wrapped up in paper. It's suspiciously human-shaped.
+  name: 包裹 | wrapped parcel
+  description: 用纸包着的东西。形状可疑地像人。 | Something wrapped up in paper. It's suspiciously human-shaped.
   components:
   - type: Physics
     fixedRotation: false
@@ -148,8 +146,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 185
         restitution: 0.0
@@ -161,9 +158,9 @@
 - type: entity
   parent: BaseItem
   id: ParcelWrapTrash
-  categories: [ HideSpawnMenu ]
-  name: parcel wrap
-  description: The disappointing remnants of an unwrapped parcel.
+  categories: [HideSpawnMenu]
+  name: 包裹包装纸 | parcel wrap
+  description: 令人失望的未包装包裹残骸。 | The disappointing remnants of an unwrapped parcel.
   components:
   - type: Sprite
     sprite: Objects/Misc/ParcelWrap/parcel_wrap_trash.rsi

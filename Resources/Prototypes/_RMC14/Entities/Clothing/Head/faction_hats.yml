@@ -1,169 +1,145 @@
-# Bureau Cap
 - type: entity
   parent: CMHeadCap
   id: RMCHeadCapBureau
-  name: bureau cap
-  description: A dark cap inscribed with the powerful letters of 'MARSHAL' representing justice, authority, and protection in the outer rim.
+  name: 警帽
+  description: 一顶深色警帽，上面刻有醒目的“MARSHAL”字样，在外环象征着正义、权威与守护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/bureau_cap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/bureau_cap.rsi
-
-# Provost
 - type: entity
   parent: CMHeadBeretRed
   id: RMCHeadBeretProvost
-  name: USCM provost beret
-  description: A beret with the USCMC Military Police insignia emblazoned on it.
+  name: USCM宪兵贝雷帽
+  description: 一顶饰有USCMC宪兵徽章的贝雷帽。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_wo.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_wo.rsi
-
 - type: entity
   parent: RMCHeadBeretProvost
   id: RMCHeadBeretProvostSenior
-  name: USCM senior provost beret
+  name: 美国殖民地海军陆战队高级宪兵贝雷帽
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/CO/beret_black.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/CO/beret_black.rsi
-
 - type: entity
   parent: RMCHeadBeretProvost
   id: RMCArmorCapProvost
-  name: provost marshal cap
-  description: The expensive headwear of a Provost Marshal. Contains shards of kevlar to keep its valuable contents safe.
+  name: 宪兵司令帽
+  description: 宪兵司令的昂贵帽子。内含凯夫拉碎片，以保护其宝贵的内容物安全。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/provost.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Helmets/provost.rsi
-
-# Special agent
 - type: entity
   parent: CMHeadBeretRed
   id: RMCHeadBeretAgent
-  name: special agent beret
-  description: A beret with the intelligence service insignia emblazoned on it.
+  name: 特工贝雷帽
+  description: 一顶饰有情报部门徽章的贝雷帽。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_tis.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_tis.rsi
-
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadBeretAgentIvan
-  name: black beret
-  description: Worn by officers of special units.
+  name: 黑色贝雷帽
+  description: 由特种部队军官佩戴。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_ivan.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_ivan.rsi
-
-# Freelancer
 - type: entity
   parent: CMHeadCap
   id: RMCHeadCapFreelancer
-  name: armored freelancer cap
-  description: A sturdy freelancer's cap. More protective than it seems.
+  name: armored freelancer cap 装甲自由职业者帽
+  description: 一顶结实的自由职业者帽。比看上去更具防护性。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/cap_freelancer.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/cap_freelancer.rsi
-
 - type: entity
   parent: RMCHeadCapFreelancer
   id: RMCHeadBeretFreelancer
-  name: armored freelancer beret
-  description: A sturdy freelancer's beret. More protective than it seems.
+  name: 自由职业者装甲贝雷帽
+  description: 一顶结实的自由职业者贝雷帽。防护性比看起来更强。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_freelancer.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_freelancer.rsi
-
-# Rebel hood
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadMilitiaHood
-  name: armored militia cowl
+  name: 装甲民兵兜帽
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/hood_rebel.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/hood_rebel.rsi
-
-# Bucket
 - type: entity
   parent: RMCHeadMilitiaHood
   id: RMCHeadMilitiaBucket
-  name: militia bucket
+  name: 民兵水桶
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/bucket.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/bucket.rsi
-
-# General's cap
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadCapGeneral
-  name: armored general's cap
-  description: A sturdy general officer's cap. More protective than it seems. Please don't ditch this for a helmet like a punk.
+  name: 装甲将军帽
+  description: 一顶结实的将军帽。防护性比看上去更强。请不要像个混混一样，为了头盔就把它丢掉。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/general.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Helmets/general.rsi
-
-
 - type: entity
   parent: RMCHeadCapGeneral
   id: RMCHeadBeretGeneral
-  name: armored general's beret
-  description: A sturdy general officer's beret. More protective and stylish than it seems. Please don't ditch this for a helmet like a punk.
+  name: 装甲将军贝雷帽
+  description: 一顶结实的将军贝雷帽。它比看起来更能提供防护，也更有型。请不要像个朋克一样为了头盔就把它丢掉。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_general.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_general.rsi
-
-# Logistics Officer hats
 - type: entity
   parent: CMHeadCapCargo
   id: RMCHeadCapQuartermaster
-  name: USCM quartermaster cap
-  description: It's a fancy hat for a not-so-fancy military supply clerk.
+  name: USCM 军需官帽
+  description: 这是一顶华丽帽子，属于一位不太起眼的军队补给员。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/quartermaster_cap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/quartermaster_cap.rsi
-
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadBeretQuartermaster
-  name: USCM quartermaster beret
-  description: A beret with the sergeant insignia emblazoned on it. It symbolizes hard work and shady business.
+  name: USCM军需官贝雷帽
+  description: 一顶饰有中士徽章的贝雷帽。它象征着辛勤劳作与见不得光的勾当。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_quartermaster.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Hats/beret_quartermaster.rsi
-
-#UNMC Headset
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadUNMCHeadset
-  name: headset
-  description: A headset typically found in use by radio-operators and officers. This one appears to be malfunctioning.
+  name: 耳机
+  description: 一种通常由无线电操作员和军官使用的耳机。这个似乎出了故障。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/unmc_headset.rsi
@@ -176,6 +152,4 @@
     hatRsi:
       sprite: _RMC14/Objects/Clothing/Head/Hats/unmc_headset.rsi
       state: hat
-  # cmu edit start
   - type: CMUCombatEarProtection
-  # cmu edit end

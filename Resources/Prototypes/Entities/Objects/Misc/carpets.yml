@@ -1,6 +1,6 @@
 # TODO once tiles can be smoothed and carpets ported over to that, add them to the FloorTile outputs
 - type: entity
-  name: carpet
+  name: 地毯 | carpet
   parent: FloorTileItemBase
   id: FloorCarpetItemRed
   suffix: Red
@@ -11,7 +11,7 @@
     heldPrefix: carpet-red
   - type: FloorTile
     outputs:
-      - Plating
+    - Plating
   - type: Stack
     stackType: FloorCarpetRed
   - type: SpawnAfterInteract #Nuke after convert to FloorTile

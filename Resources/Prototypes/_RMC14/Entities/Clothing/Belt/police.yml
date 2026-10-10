@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: CMBeltSecurity
-  name: M276 pattern security rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This configuration is commonly seen among Marine Military Police and peacekeepers, though it can hold some light munitions.
+  name: M276型安保装具
+  description: M276 是 USCM 的标准承载装具。它由一条带各种卡扣的模块化腰带组成。这种配置常见于海军陆战队宪兵和维和人员中，不过它也能携带一些轻型弹药。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/security.rsi
@@ -11,7 +11,7 @@
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,13,1 # 7 slots
+    - 0,0,13,1
     whitelist:
       tags:
       - Stunbaton
@@ -34,37 +34,33 @@
       - Gun
       - RMCLighter
   - type: FixedItemSizeStorage
-
 - type: entity
   parent: CMBeltSecurity
   id: CMBeltSecurityMP
-  name: M276 pattern military police rig
-  description: The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This version is filled with an array of small pouches, meant to carry non-lethal equipment and restraints.
+  name: M276型宪兵携行具
+  description: M276是美国殖民地海军陆战队（USCM）的标准携行具。它由一条配有各种卡扣的模块化
   components:
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,11,1 # 6 slots
-
+    - 0,0,11,1
 - type: entity
   parent: CMBeltSecurity
   id: RMCBeltSecurityWeYa
-  name: M276-C corporate security rig
-  description: A Weyland-Yutani adaptation of the M276 load-bearing equipment, designed for corporate security forces. This modular black rig features multiple pouches for carrying restraints, ammunition, and a mix of lethal and non-lethal equipment for maintaining order.
-
+  name: M276-C 企业安保携行具
+  description: 维兰德-汤谷对 M276 携行具的改型，专为企业安保
 - type: entity
   parent: CMBeltSecurityMP
   id: CMBeltSecuritySPP
-  name: Type 43 military police rig
-  description: The Type 43 is the standard load-bearing equipment of the UPP. It consists of a modular belt with various clips. This version is filled with an array of small pouches, meant to carry non-lethal equipment and restraints.
-
+  name: 43型宪兵装具
+  description: 43型是UPP的标准负重装具。它由一条模块化腰带和各种卡扣组成。此版本配有一系列小袋，用于携带非致命装备和约束器具。
 - type: entity
   parent: CMBeltSecurityMP
   id: CMBeltSecurityMarshal
-  name: law enforcement duty belt
-  description: The black duty belt used to carry the instruments of a law enforcement officer. It is a heavy police belt with several pouches to contain various law enforcement items.
+  name: 执法执勤腰带
+  description: 黑色执勤腰带，用于携带执法人员的装备。这是一条重型警用腰带，配有若干小包，用于存放各类执法物品。
   components:
   - type: Storage
     maxItemSize: Normal
     grid:
-    - 0,0,15,1 # 8 slots
+    - 0,0,15,1

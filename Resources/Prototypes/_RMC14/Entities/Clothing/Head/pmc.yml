@@ -1,37 +1,34 @@
-# PMC headgear
 - type: entity
   parent: ArmorHelmetM10
   id: ArmorHelmetPMC
-  name: PMC tactical cap
-  description: A protective cap made from flexible kevlar. Standard issue for most security forms in the place of a helmet.
+  name: PMC战术帽
+  description: 一种由柔性凯夫拉制成的防护帽。大多数安保单位的标准配发装备，用以代替头盔。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/cap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/cap.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: CMArmor
     bio: 10
     explosionArmor: 20
-    # armor_energy = 15
-    # armor_internaldamage = 10
-
 - type: entity
   parent: ArmorHelmetPMC
   id: RMCArmorHelmetPMCBlack
-  name: PMC black tactical cap
+  name: PMC黑色战术帽
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/black_cap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/black_cap.rsi
-
 - type: entity
-  parent: [ArmorHelmetPMC, RMCMarineHelmetWithLightBase]
+  parent:
+  - ArmorHelmetPMC
+  - RMCMarineHelmetWithLightBase
   id: RMCArmorHelmetPMCTactical
-  name: tactical helmet
-  description: A contender for service with the Royal Crown Marines, it is presently, exclusively, field tested by Weyland-Yutani mercenaries. Features a ballistic mask and integrated display connected to the visor.
+  name: 战术头盔
+  description: 作为皇家皇冠海军陆战队服役装备的候选之一，目前仅由维兰德-汤谷公司的雇佣兵进行实地测试。配备防弹面罩以及与护目镜相连的集成显示屏。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/helmet.rsi
@@ -46,11 +43,10 @@
       - state: equipped-HELMET-reptilian
       head-vulpkanin:
       - state: equipped-HELMET-vulpkanin
-    equippedPrefix: off
+    equippedPrefix: false
   - type: CMArmor
     bullet: 25
     bio: 15
-    # armor_internaldamage = 15
   - type: HideLayerClothing
     slots:
     - Hair
@@ -59,24 +55,22 @@
     - Snout
     - FacialHair
   - type: PointLight
-    color: "#73e6f5"
-
+    color: '#73e6f5'
 - type: entity
   parent: ArmorHelmetPMC
   id: ArmorHelmetPMCOfficer
-  name: PMC beret
-  description: The pinnacle of fashion for any aspiring mercenary leader. Designed to protect the head from light impacts.
+  name: PMC贝雷帽
+  description: 对于任何有志成为雇佣兵领袖的人来说，这都是时尚的巅峰。旨在保护头部免受轻微撞击。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/officer.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/officer.rsi
-
 - type: entity
   parent: ArmorHelmetPMC
   id: ArmorHelmetPMCFieldOfficer
-  name: PMC field officer beret
-  description: The pinnacle of fashion for any aspiring mercenary leader. Designed to protect the head from light impacts.
+  name: PMC战地军官贝雷帽
+  description: 对于任何有志成为雇佣兵领袖的人来说，这都是时尚的巅峰。旨在保护头部免受轻微撞击。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/field_officer.rsi
@@ -85,13 +79,11 @@
   - type: CMArmor
     bullet: 25
     bio: 15
-    # armor_internaldamage = 15
-
 - type: entity
   parent: RMCArmorHelmetPMCTactical
   id: ArmorHelmetPMCGunner
-  name: PMC specialist operator helmet
-  description: A modification of the standard PMC tactical helmet, featuring a frontal shield to protect the user's from shrapnel and small arms fire while operating heavy weaponry.
+  name: PMC专家操作员头盔
+  description: 标准PMC战术头盔的改装型，配有前置护盾，可在操作重型武器时保护使用者免受弹片和轻武器火力的伤害。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/heavy.rsi
@@ -100,106 +92,96 @@
     clothingVisuals:
       head:
       - state: equipped-HELMET
-    equippedPrefix: off
+    equippedPrefix: false
 - type: entity
   parent: ArmorHelmetM10
   id: ArmorHelmetPMCCommandoSurvivor
-  name: damaged We-Ya Commando helmet
-  description: A standard enclosed helmet utilized by Weyland-Yutani Commandos. Has been through a lot of wear and tear.
+  name: 受损的We-Ya突击队头盔
+  description: 威兰-汤谷突击队使用的标准封闭式头盔。历经大量磨损。
   components:
   - type: ItemCamouflage
-    camouflageVariations: { }
-  - type: Sprite # TODO: Sprites
+    camouflageVariations: {}
+  - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/commando.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/commando.rsi
   - type: CMArmor
     melee: 20
     bio: 20
-    # armor_internaldamage = 20
   - type: Corrodible
     isCorrodible: false
-
 - type: entity
   parent: RMCArmorHelmetPMCTactical
   id: ArmorHelmetPMCCommando
-  name: PMC M5X helmet
-  description: A fully enclosed, armored helmet made to complete the M5X exoskeleton armor.
+  name: PMC M5X头盔
+  description: 全封闭式装甲头盔，用于完善M5X外骨骼装甲。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/commando.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/commando.rsi
-    equippedPrefix: off
+    equippedPrefix: false
   - type: CMArmor
     melee: 45
     bullet: 15
     bio: 45
     explosionArmor: 15
-    # armor_laser = 15
-    # armor_energy = 15
-    # armor_internaldamage = 30
   - type: Corrodible
     isCorrodible: false
   - type: ParasiteResistance
     maxCount: 100
   - type: RMCEarProtection
   - type: PointLight
-    color: "#e41c1f"
-
+    color: '#e41c1f'
 - type: entity
   parent: ArmorHelmetPMCCommando
   id: RMCArmorHelmetPMCCommandoAlt
   suffix: Alt
-  description: A fully enclosed, armored helmet made to complete the M5X exoskeleton armor. This one has had a skull scratched into the visor.
+  description: 一个全封闭的装甲头盔，用于补全M5X外骨骼装甲。这一顶的面罩上被刻上了一个骷髅头。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/commando_alt.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/commando_alt.rsi
-    equippedPrefix: off
+    equippedPrefix: false
 - type: entity
   parent: ArmorHelmetPMC
   id: RMCArmorHelmetPMCDark
-  name: We-Ya armored cap
+  name: We-Ya装甲帽
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/hybrisa_cap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/hybrisa_cap.rsi
-
 - type: entity
   parent: ArmorHelmetPMC
   id: ArmorHelmetPMCCorporate
-  name: WY corporate security helmet
-  description: A basic skull-helm worn by corporate security assets, graded to protect your head from an unruly scientist armed with a crowbar.
+  name: WY企业安全头盔
+  description: 一种由企业安保人员佩戴的基础颅盔，防护等级足以保护你的头部免受一名手持撬棍、不守规矩的科学家的伤害。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/corporate.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/corporate.rsi
-
 - type: entity
   parent: ArmorHelmetPMCCorporate
   id: ArmorHelmetPMCCorporateLead
-  description: A basic skull-helm worn by corporate security assets. This variant is worn by low-level guards that have too much brainmatter to fit into the old one. Or so they say.
+  description: 一种供企业安保人员佩戴的基础骷髅头盔。此型号由低级警卫佩戴，他们的脑物质太多，旧款装不下。至少他们这么说。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/corporate_lead.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/corporate_lead.rsi
-
 - type: entity
   parent: ArmorHelmetPMC
   id: ArmorHelmetPMCRiot
-  name: RC6 helmet
-  description: The standard UA Riot Control 6 helmet is of odd design, lacking a face shield by default (mounting points are available). The distinct white pattern and red emblem are synonymous with oppression throughout the rim.
+  name: RC6头盔
+  description: 标准 UA 防暴控制 6 头盔的设计颇为怪异，默认不配备面罩（但有安装点）。其独特的白色纹样与红色徽记，在整个边缘世界都是压迫的代名词。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/riot.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/riot.rsi
-
 - type: entity
   parent: ArmorHelmetPMCRiot
   id: ArmorHelmetPMCRiotShield
@@ -207,63 +189,58 @@
   - type: StorageFill
     contents:
     - id: RMCRC6RiotShield
-
 - type: entity
   parent: ArmorHelmetPMC
   id: ArmorHelmetPMCKutjevo
-  name: kutjevo helmet
-  description: Standard issued helmet for the workers of Kutjevo. Contains a small webbing to hold small items like pens, oil or even a photo of a loved one.
+  name: 库特耶沃头盔
+  description: 库特耶沃工人标准配发的头盔。带有一个小网兜，可放置笔、油，甚至亲人的照片等小物品。
   suffix: Kutjevo
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/kutjevo.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/kutjevo.rsi
-
 - type: entity
   parent: ArmorHelmetPMC
   id: RMCArmorHelmetPMCKutjevoSecurity
-  name: We-Yu corporate security helmet
-  description: A basic skull-helm worn by corporate security assets. This variant comes with a wider brim to protect the user from the harsh climate of the desert.
+  name: We-Yu企业安保头盔
+  description: 企业安保人员佩戴的基础骷髅头盔。此型号配有更宽的帽檐，以保护使用者免受沙漠恶劣气候的侵袭。
   suffix: Kutjevo
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/kutjevo_security.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/kutjevo_security.rsi
-
 - type: entity
   parent: ArmorHelmetPMC
   id: RMCArmorHelmetPMCKutjevoMedical
-  name: We-Yu corporate medic helmet
-  description: A basic skull-helm worn by corporate security assets. This variant comes with a wider brim to protect the user from the harsh climate of the desert and has a medical cross across the front.
+  name: We-Yu 企业医疗兵头盔
+  description: 一种基础骷髅头盔，供企业安保人员佩戴。此型号配有更宽的帽檐，以保护使用者免受沙漠严酷气候的影响，正面饰有一个医疗十字标志。
   suffix: Kutjevo
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/kutjevo_medical.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/kutjevo_medical.rsi
-
 - type: entity
   parent: RMCArmorHelmetPMCTactical
   id: ArmorHelmetPMCEngineer
-  name: pmc engineer helmet
-  description: An advanced technician helmet with a black finish, including advanced welding protection and resistance to the potential industrial hazards, but has less kevlar against potential firefights.
+  name: PMC工程师头盔
+  description: 一款采用黑色涂装的先进工程师头盔，具备高级焊接防护与对潜在工业危害的抵御能力，但面对潜在枪战时凯夫拉防护较少。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/engineer.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/engineer.rsi
-    equippedPrefix: off
+    equippedPrefix: false
   - type: EyeProtection
   - type: PointLight
-    color: "#c51ce4"
-
+    color: '#c51ce4'
 - type: entity
   parent: CMHeadCap
   id: ArmorHelmetPMCDirector
-  name: director's hat
-  description: Belongs to someone very important. Has minor protection to all damage types.
+  name: 导演的帽子
+  description: 属于某个非常重要的人。对所有伤害类型提供轻微防护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/director.rsi
@@ -274,16 +251,11 @@
     bullet: 15
     bio: 20
     explosionArmor: 10
-    # armor_laser = 10
-    # armor_energy = 10
-    # armor_rad = 10
-    # armor_internaldamage = 20
-
 - type: entity
   parent: ArmorHelmetPMCDirector
   id: RMCHeadCapManager
-  name: manager's hat
-  description: Belongs to someone very important. Has minor protection to all damage types.
+  name: 经理的帽子
+  description: 属于某位非常重要的人。对所有伤害类型有轻微防护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/manager.rsi
@@ -292,47 +264,43 @@
   - type: CMArmor
     melee: 30
     bullet: 10
-
 - type: entity
   parent: RMCHeadCapFlippable
   id: RMCHeadCapWestonYamadaDark
-  name: Weyland-Yutani cap
-  description: A dark cap enscribed with the Weyland-Yutani 'Wings' logo, representing corporate justice.
+  name: 维兰德-汤谷帽
+  description: 一顶深色的帽子，上面印有维兰德-汤谷的“翅膀”标志，象征着企业正义。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/hybrisa_cap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/hybrisa_cap.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
-
+    camouflageVariations: {}
 - type: entity
   parent: ArmorHelmetPMCCorporate
   id: RMCArmorHelmetPMCCorporateHybrisa
-  description: A basic skull-helm with a orange safety visor fitted. Worn by corporate security assets, graded to protect your head from an unruly scientist armed with a crowbar.
+  description: 一顶基础骷髅头盔，配有橙色安全面罩。由企业安保人员佩戴，防护等级足以让你的头部免受一名手持撬棍、桀骜不驯的科学家伤害。
   suffix: Hybrisa
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/hybrisa.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/hybrisa.rsi
-
 - type: entity
   parent: ArmorHelmetPMCCorporate
   id: RMCArmorHelmetPMCCorporateLeadHybrisa
-  description: A basic skull-helm with a orange safety visor fitted. Worn by corporate security assets. This variant is worn by low-level guards that have too much brainmatter to fit into the old one. Or so they say.
+  description: 一顶装有橙色安全护目镜的基础骷髅头盔。由企业安保资产佩戴。这个型号由低阶警卫佩戴，他们的脑物质太多，塞不进旧款。至少他们自己是这么说的。
   suffix: Hybrisa
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/hybrisa_lead.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/PMC/hybrisa_lead.rsi
-
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadBeretWeYa
-  name: Weyland-Yutani beret
-  description: Show off your megacorp pride with this stylish beret!
+  name: 维兰德-汤谷贝雷帽
+  description: 用这款时尚的贝雷帽展现你的巨型企业自豪感吧！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/PMC/weya_beret.rsi

@@ -1,16 +1,16 @@
 - type: entity
   parent: [SolutionMopLarge, BaseItem]
-  name: mop
+  name: 拖把 | mop
   id: MopItem
-  description: A mop that can't be stopped, viscera cleanup detail awaits.
+  description: 一把停不下来的拖把，内脏清理细节在等着。 | A mop that can't be stopped, viscera cleanup detail awaits.
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/mop.rsi
     layers:
-      - state: mop
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        state: fill-3
-        visible: false
+    - state: mop
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      state: fill-3
+      visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 3
@@ -46,8 +46,8 @@
       Plastic: 50
   - type: Tag
     tags:
-      - Mop
-      - MopBasic
+    - Mop
+    - MopBasic
   - type: GuideHelp
     guides:
     - Janitorial
@@ -57,56 +57,56 @@
 - type: entity
   parent: [SolutionMop, SolutionToolSmall]
   id: SolutionMopSmall
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: [SolutionMop, SolutionToolNormal]
   id: SolutionMopNormal
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: [SolutionMop, SolutionToolLarge]
   id: SolutionMopLarge
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: MopItem
-  name: advanced mop
+  name: 高级拖把 | advanced mop
   id: AdvMopItem
-  description: Motorized mop that has a bigger reservoir and quickly replaces reagents inside with water. Automatic Clown Countermeasure not included.
+  description: 电动拖把，配有更大的水箱，可快速将内部试剂替换为水。不包含自动小丑应对装置。 | Motorized mop that has a bigger reservoir and quickly replaces reagents inside with water. Automatic Clown Countermeasure not included.
   components:
-    - type: Sprite
-      sprite: Objects/Specific/Janitorial/advmop.rsi
-      layers:
-      - state: advmop
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        state: fill-2
-        visible: false
-    - type: SolutionContainerVisuals
-      maxFillLevels: 2
-    - type: Item
-      sprite: Objects/Specific/Janitorial/advmop.rsi
-    - type: Absorbent
-      pickupAmount: 100
-    - type: SolutionRegeneration
-      generated:
-        reagents:
-        - ReagentId: Water
-          Quantity: 5
-    - type: SolutionPurge
-      preserve:
-      - Water
-      quantity: 10
-    - type: Tag
-      tags:
-        - Mop
-        - MopAdv
+  - type: Sprite
+    sprite: Objects/Specific/Janitorial/advmop.rsi
+    layers:
+    - state: advmop
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      state: fill-2
+      visible: false
+  - type: SolutionContainerVisuals
+    maxFillLevels: 2
+  - type: Item
+    sprite: Objects/Specific/Janitorial/advmop.rsi
+  - type: Absorbent
+    pickupAmount: 100
+  - type: SolutionRegeneration
+    generated:
+      reagents:
+      - ReagentId: Water
+        Quantity: 5
+  - type: SolutionPurge
+    preserve:
+    - Water
+    quantity: 10
+  - type: Tag
+    tags:
+    - Mop
+    - MopAdv
 
 - type: entity
-  name: wet floor sign
+  name: 小心地滑标志 | wet floor sign
   id: WetFloorSign
   parent: ClothingOuterBase
-  description: Caution! Wet Floor!
+  description: 小心地滑！ | Caution! Wet Floor!
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/wet_floor_sign.rsi
@@ -123,8 +123,8 @@
       Plastic: 50
   - type: Tag
     tags:
-      - WetFloorSign
-      - WhitelistChameleon
+    - WetFloorSign
+    - WhitelistChameleon
 
 
 - type: entity
@@ -143,15 +143,13 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.2,0.2,0.2"
         hard: false
         layer:
-          - LowImpassable
+        - LowImpassable
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.2,0.2,0.2"
         density: 30
         mask:
@@ -188,15 +186,15 @@
     - WetFloorSign
 
 - type: entity
-  name: plunger
+  name: 皮搋子 | plunger
   id: Plunger
   parent: BaseItem
-  description: A plunger with a red plastic suction-cup and a wooden handle. Used to unclog drains.
+  description: 一个带有红色塑料吸盘和木制手柄的皮搋子。用于疏通排水管。 | A plunger with a red plastic suction-cup and a wooden handle. Used to unclog drains.
   components:
   - type: Tag
     tags:
-       - Plunger
-       - WhitelistChameleon
+    - Plunger
+    - WhitelistChameleon
   - type: Sprite
     sprite: Objects/Specific/Janitorial/plunger.rsi
     state: plunger
@@ -209,11 +207,11 @@
   - type: Clothing
     sprite: Objects/Specific/Janitorial/plunger.rsi
     slots:
-      - HEAD
+    - HEAD
     clothingVisuals:
       head:
-        - state: equipped-HELMET
-          offset: "0, 0.15625"
+      - state: equipped-HELMET
+        offset: "0, 0.15625"
   - type: Fixtures
     fixtures:
       fix1:
@@ -225,8 +223,7 @@
         restitution: 0.3
         friction: 0.2
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.4,0.2,-0.1"
         hard: false
         mask:
@@ -234,13 +231,13 @@
         - BulletImpassable
   - type: EmbeddableProjectile
     sound: /Audio/Weapons/pop.ogg
-    embedOnThrow: True
+    embedOnThrow: true
     offset: "0,-0.1"
   - type: ThrowingAngle
     angle: 0
   - type: LandAtCursor
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:
   - type: Projectile
     deleteOnCollide: false
     onlyCollideWhenShot: true
@@ -253,10 +250,10 @@
       Wood: 100
 
 - type: entity
-  name: golden plunger
+  name: 金色马桶搋子 | golden plunger
   id: GoldenPlunger
   parent: Plunger
-  description: A plunger with a plastic suction cup coated in a thin layer of gold given as a token of appreciation for years of service. Still used to unclog drains.
+  description: 一个带有塑料吸盘、表面覆有一层薄金的马桶搋子，作为对多年服务的感谢赠礼。仍然用来疏通下水道。 | A plunger with a plastic suction cup coated in a thin layer of gold given as a token of appreciation for years of service. Still used to unclog drains.
   components:
   - type: Tag # TODO change Plunger into a tool so we dont got to layer Tags like below.
     tags:
@@ -272,11 +269,11 @@
   - type: Clothing
     sprite: Objects/Specific/Janitorial/golden_plunger.rsi
     slots:
-      - HEAD
+    - HEAD
     clothingVisuals:
       head:
-        - state: equipped-HELMET
-          offset: "0, 0.15625"
+      - state: equipped-HELMET
+        offset: "0, 0.15625"
   - type: PointLight
     radius: 1.5
     energy: 0.75
@@ -299,54 +296,54 @@
 - type: entity
   parent: [SolutionMopSmall, BaseItem]
   id: RagItem
-  name: damp rag
-  description: For cleaning up messes, you suppose.
+  name: 湿抹布 | damp rag
+  description: 用来清理脏乱的，你想。 | For cleaning up messes, you suppose.
   components:
-    - type: Sprite
-      sprite: Objects/Specific/Janitorial/rag.rsi
-      layers:
-      - state: rag
-      - map: ["enum.SolutionContainerLayers.Fill"]
-        state: fill-3
-        visible: false
-    - type: Appearance
-    - type: SolutionContainerVisuals
-      maxFillLevels: 3
-      fillBaseName: fill-
-    - type: Spillable
-      solution: absorbed
-      spillWhenThrown: false
-    - type: DrainableSolution
-      solution: absorbed
-    - type: MeleeWeapon
-      soundNoDamage:
-        path: "/Audio/Effects/Fluids/splat.ogg"
-      damage:
-        types:
-          Blunt: 0
-    - type: Item
-      size: Small
-      sprite: Objects/Specific/Janitorial/rag.rsi
-    - type: Absorbent
-      pickupAmount: 15
-      useAbsorberSolution: true
-    - type: Construction
-      graph: Rag
-      node: rag
-    - type: UseDelay
-      delay: 1.5
-    - type: Tag
-      tags:
-        - Mop
-    - type: Fiber
-      fiberColor: fibers-white
-    - type: DnaSubstanceTrace
+  - type: Sprite
+    sprite: Objects/Specific/Janitorial/rag.rsi
+    layers:
+    - state: rag
+    - map: ["enum.SolutionContainerLayers.Fill"]
+      state: fill-3
+      visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 3
+    fillBaseName: fill-
+  - type: Spillable
+    solution: absorbed
+    spillWhenThrown: false
+  - type: DrainableSolution
+    solution: absorbed
+  - type: MeleeWeapon
+    soundNoDamage:
+      path: "/Audio/Effects/Fluids/splat.ogg"
+    damage:
+      types:
+        Blunt: 0
+  - type: Item
+    size: Small
+    sprite: Objects/Specific/Janitorial/rag.rsi
+  - type: Absorbent
+    pickupAmount: 15
+    useAbsorberSolution: true
+  - type: Construction
+    graph: Rag
+    node: rag
+  - type: UseDelay
+    delay: 1.5
+  - type: Tag
+    tags:
+    - Mop
+  - type: Fiber
+    fiberColor: fibers-white
+  - type: DnaSubstanceTrace
 
 - type: entity
   parent: BaseItem
   id: WireBrush
-  name: wire brush
-  description: A bristly steel wire brush, perfect for scraping away even the toughest patches of rust.
+  name: 钢丝刷 | wire brush
+  description: 一把硬毛钢丝刷，非常适合刮除哪怕是最顽固的锈斑。 | A bristly steel wire brush, perfect for scraping away even the toughest patches of rust.
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/wirebrush.rsi
@@ -381,8 +378,8 @@
 - type: entity
   parent: WireBrush
   id: WireBrushElectrical
-  name: electrical wire brush
-  description: A bristly steel wire brush with a moving head, allowing for a way easier time cleaning.
+  name: 电线刷 | electrical wire brush
+  description: 一种刷毛为钢丝的电线刷，带有可移动刷头，让清洁工作轻松许多。 | A bristly steel wire brush with a moving head, allowing for a way easier time cleaning.
   components:
   - type: Tool
     speedModifier: 1.5

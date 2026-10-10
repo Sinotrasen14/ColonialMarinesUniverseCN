@@ -1,7 +1,7 @@
 # Used to animate the hitscan effects because effectsystem doesn't support it
 - type: entity
   id: HitscanEffect
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: TimedDespawn
     lifetime: 2.0
@@ -13,13 +13,13 @@
   - type: EffectVisuals
   - type: Tag
     tags:
-      - HideContextMenu
+    - HideContextMenu
   - type: AnimationPlayer
 
 - type: entity
   id: BasicHitscan
-  name: basic hitscan
-  categories: [ HideSpawnMenu ]
+  name: 基础即时命中 | basic hitscan
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanAmmo
   - type: HitscanBasicRaycast
@@ -39,16 +39,16 @@
 - type: entity
   parent: BasicHitscan
   id: LaserHitscanBase
-  name: basic laser ray
-  categories: [ HideSpawnMenu ]
+  name: 基础激光射线 | basic laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: LaserProjectile
 
 - type: entity
   parent: LaserHitscanBase
   id: RedLightLaser
-  name: red light laser ray
-  categories: [ HideSpawnMenu ]
+  name: 红光激光射线 | red light laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -58,8 +58,8 @@
 - type: entity
   parent: LaserHitscanBase
   id: RangeLaser
-  name: green laser
-  categories: [ HideSpawnMenu ]
+  name: 绿色激光 | green laser
+  categories: [HideSpawnMenu]
   components:
   - type: TargetFinderHitscan
   - type: HitscanBasicVisuals
@@ -76,8 +76,8 @@
 - type: entity
   parent: LaserHitscanBase
   id: RedLaser
-  name: red laser ray
-  categories: [ HideSpawnMenu ]
+  name: 红色激光射线 | red laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -87,8 +87,8 @@
 - type: entity
   parent: LaserHitscanBase
   id: RedMediumLaser
-  name: red amplified laser ray
-  categories: [ HideSpawnMenu ]
+  name: 红色放大激光射线 | red amplified laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -98,8 +98,8 @@
 - type: entity
   parent: LaserHitscanBase
   id: XenoborgLaser
-  name: blue amplified laser ray
-  categories: [ HideSpawnMenu ]
+  name: 蓝色放大激光射线 | blue amplified laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -119,8 +119,8 @@
 - type: entity
   parent: LaserHitscanBase
   id: RedHeavyLaser
-  name: red high-energy laser ray
-  categories: [ HideSpawnMenu ]
+  name: 红色高能激光射线 | red high-energy laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -140,8 +140,8 @@
 - type: entity
   parent: RedMediumLaser
   id: XenoborgFireLaser
-  name: xenoborg fire laser ray
-  categories: [ HideSpawnMenu ]
+  name: 异星机械体发射激光射线 | xenoborg fire laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -163,8 +163,8 @@
 - type: entity
   parent: LaserHitscanBase
   id: XenoborgHeavyLaser
-  name: blue high-energy laser ray
-  categories: [ HideSpawnMenu ]
+  name: 蓝色高能激光射线 | blue high-energy laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -184,8 +184,8 @@
 - type: entity
   parent: LaserHitscanBase
   id: RedLaserPractice
-  name: red practice laser ray
-  categories: [ HideSpawnMenu ]
+  name: 红色练习激光射线 | red practice laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -195,8 +195,8 @@
 - type: entity
   parent: BasicHitscan
   id: XrayLaser
-  name: X-ray pulse beam
-  categories: [ HideSpawnMenu ]
+  name: X射线脉冲束 | X-ray pulse beam
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -217,8 +217,8 @@
 - type: entity
   parent: BasicHitscan
   id: Pulse
-  name: blue high-energy laser ray
-  categories: [ HideSpawnMenu ]
+  name: 蓝色高能激光射线 | blue high-energy laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -238,8 +238,8 @@
 - type: entity
   parent: LaserHitscanBase
   id: RedShuttleLaser
-  name: shuttle class red laser ray
-  categories: [ HideSpawnMenu ]
+  name: 穿梭级红色激光射线 | shuttle class red laser ray
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicRaycast
     maxDistance: 60.0
@@ -262,9 +262,9 @@
 - type: entity
   parent: LaserHitscanBase
   id: DebugLaser
-  name: debug laser ray
+  name: 调试激光射线 | debug laser ray
   suffix: DEBUG
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:
@@ -284,9 +284,9 @@
 - type: entity
   parent: DebugLaser
   id: DebugLaserGib
-  name: debug gibbing ray
+  name: 调试射线 | debug gibbing ray
   suffix: DEBUG
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: HitscanBasicDamage
     damage:

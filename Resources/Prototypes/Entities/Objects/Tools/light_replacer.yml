@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
-  name: light replacer
+  name: 灯泡替换器 | light replacer
   id: LightReplacer
-  description: An item which uses magnets to easily replace broken lights. Refill by adding more lights into the replacer.
+  description: 一个使用磁铁轻松替换损坏灯泡的物品。通过向替换器中添加更多灯泡来补充。 | An item which uses magnets to easily replace broken lights. Refill by adding more lights into the replacer.
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/light_replacer.rsi
@@ -40,7 +40,7 @@
 # The following entities are solely used for sprites in the radial menu.
 - type: entity
   id: EjectTubes
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/light_replacer.rsi
@@ -48,7 +48,7 @@
 
 - type: entity
   id: EjectBulbs
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: Objects/Specific/Janitorial/light_replacer.rsi

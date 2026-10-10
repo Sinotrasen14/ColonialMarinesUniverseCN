@@ -1,7 +1,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialCardboard
-  name: cardboard
+  name: 纸板 | cardboard
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -57,12 +57,12 @@
 - type: entity
   parent: [MaterialBase, FoodBase]
   id: MaterialCloth
-  name: cloth
+  name: 布 | cloth
   suffix: Full
   components:
   - type: Healing
     damageContainers:
-      - Biological
+    - Biological
     damage:
       types:
         Slash: -0.5
@@ -108,10 +108,10 @@
         Quantity: 10
   - type: Tag
     tags:
-      - ClothMade
-      - Gauze
-      - RawMaterial
-      - ConstructionMaterial
+    - ClothMade
+    - Gauze
+    - RawMaterial
+    - ConstructionMaterial
   - type: Construction
     graph: WebObjects # not sure if I should either keep this here or just make another prototype. Will keep it here just in case.
     node: cloth
@@ -141,7 +141,7 @@
 - type: entity
   parent: [MaterialBase, FoodBase]
   id: MaterialDurathread
-  name: durathread
+  name: 耐久线 | durathread
   suffix: Full
   components:
   - type: Stack
@@ -177,9 +177,9 @@
         Quantity: 5
   - type: Tag
     tags:
-      - ClothMade
-      - RawMaterial
-      - ConstructionMaterial
+    - ClothMade
+    - RawMaterial
+    - ConstructionMaterial
   - type: Item
     heldPrefix: durathread
 
@@ -196,7 +196,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialWoodPlank
-  name: wood
+  name: 木 | wood
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -254,7 +254,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialBiomass
-  name: biomass
+  name: 生物质 | biomass
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -283,14 +283,14 @@
 - type: entity
   parent: MaterialBase
   id: MaterialHideBear
-  name: bear hide
+  name: 熊皮 | bear hide
   components:
   - type: Sprite
     sprite: Objects/Materials/materials.rsi
     layers:
-    - map: [ "enum.DamageStateVisualLayers.Base" ]
+    - map: ["enum.DamageStateVisualLayers.Base"]
       state: bearpelt
-    - map: [ "enum.DamageStateVisualLayers.BaseUnshaded" ]
+    - map: ["enum.DamageStateVisualLayers.BaseUnshaded"]
       state: bearpelt_glow
       shader: unshaded
   - type: Item
@@ -300,7 +300,7 @@
     sprite: Clothing/Head/Misc/hides.rsi
     equippedPrefix: bear
     slots:
-      - HEAD
+    - HEAD
   - type: PointLight
     radius: 1.2
     energy: 2.7
@@ -310,8 +310,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialHideCorgi
-  name: corgi hide
-  description: Luxury pelt used in only the most elite fashion. Rumors say this is found when a corgi is sent to the nice farm.
+  name: 柯基皮 | corgi hide
+  description: 奢华毛皮，只用于最高端的时尚。有传言说，当柯基被送到“快乐农场”时，就能找到它。 | Luxury pelt used in only the most elite fashion. Rumors say this is found when a corgi is sent to the nice farm.
   components:
   - type: Sprite
     sprite: Objects/Materials/materials.rsi
@@ -330,7 +330,7 @@
 - type: entity
   parent: MaterialBase
   id: MaterialDiamond
-  name: refined diamond
+  name: 精炼钻石 | refined diamond
   suffix: Full
   components:
   - type: Stack
@@ -372,7 +372,7 @@
 - type: entity
   parent: [SolutionCompositeSmallStackable, MaterialBase, FoodBase]
   id: MaterialCotton
-  name: cotton
+  name: 棉 | cotton
   suffix: Full
   components:
   - type: Stack
@@ -401,9 +401,9 @@
         Quantity: 2.5
   - type: Tag
     tags:
-      - ClothMade
-      - RawMaterial
-      - Boll
+    - ClothMade
+    - RawMaterial
+    - Boll
   - type: PhysicalComposition
     materialComposition:
       Cotton: 100
@@ -423,7 +423,7 @@
 - type: entity
   parent: [SolutionCompositeSmallStackable, MaterialBase, FoodBase]
   id: MaterialPyrotton
-  name: pyrotton
+  name: 皮罗顿 | pyrotton
   suffix: Full
   components:
   - type: Stack
@@ -450,8 +450,8 @@
         Quantity: 2.5
   - type: Tag
     tags:
-      - ClothMade
-      - RawMaterial
+    - ClothMade
+    - RawMaterial
   - type: Item
     heldPrefix: pyrotton
 
@@ -466,9 +466,9 @@
     count: 1
 
 - type: entity
-  parent: [ MaterialBase, FoodBase ]
+  parent: [MaterialBase, FoodBase]
   id: MaterialBananium
-  name: bananium
+  name: 香蕉素 | bananium
   suffix: Full
   components:
   - type: PhysicalComposition
@@ -479,7 +479,7 @@
     state: bananium-3
     layers:
     - state: bananium-3
-      map: [ "base" ]
+      map: ["base"]
   - type: Stack
     stackType: Bananium
     count: 10
@@ -529,8 +529,8 @@
 - type: entity
   parent: [SolutionCompositeNormalStackable, MaterialBase, FoodBase]
   id: MaterialWebSilk
-  name: silk
-  description: A webby material.
+  name: 丝绸 | silk
+  description: 一种网状材料。 | A webby material.
   suffix: Full
   components:
   - type: Material
@@ -548,9 +548,9 @@
     solution: composite
   - type: FlavorProfile
     flavors:
-      - cobwebs
+    - cobwebs
     ignoreReagents:
-      - Fiber
+    - Fiber
   - type: Solution
     solution:
       reagents:
@@ -558,8 +558,8 @@
         Quantity: 10
   - type: Tag
     tags:
-      - ClothMade
-      - RawMaterial
+    - ClothMade
+    - RawMaterial
   - type: Item
     sprite: Objects/Materials/silk.rsi
     heldPrefix: silk
@@ -583,15 +583,15 @@
 - type: entity
   parent: MaterialBase
   id: MaterialToothSpaceCarp
-  name: space carp tooth
-  description: Pretty small but plenty nasty. You like them best when they're not sinking into you.
+  name: 太空鲤鱼牙 | space carp tooth
+  description: 虽然很小，但非常讨厌。你最喜欢它们的时候，就是它们没有扎进你身体的时候。 | Pretty small but plenty nasty. You like them best when they're not sinking into you.
   suffix: Full
   components:
   - type: Sprite
     sprite: Objects/Materials/Mob/carptooth.rsi
     layers:
     - state: tooth
-      map: [ "base" ]
+      map: ["base"]
   - type: Item
     sprite: Objects/Materials/Mob/carptooth.rsi
     size: Normal
@@ -619,10 +619,10 @@
     count: 1
 
 - type: entity
-  parent: [ MaterialBase, BaseKnife ]
+  parent: [MaterialBase, BaseKnife]
   id: MaterialToothSharkminnow
-  name: sharkminnow tooth
-  description: Looks sharp. Sharp enough to poke someone's eye out. Holy fuck it's big.
+  name: 鲨鱼牙 | sharkminnow tooth
+  description: 看起来很锋利。锋利到能把别人的眼睛戳出来。我操，它真大。 | Looks sharp. Sharp enough to poke someone's eye out. Holy fuck it's big.
   suffix: Full
   components:
   - type: MeleeWeapon
@@ -633,7 +633,7 @@
     sprite: Objects/Materials/Mob/sharktooth.rsi
     layers:
     - state: tooth
-      map: [ "base" ]
+      map: ["base"]
   - type: Item
     sprite: Objects/Materials/Mob/sharktooth.rsi
     size: Normal
@@ -664,7 +664,7 @@
 - type: entity
   parent: [MaterialBase, FoodBase]
   id: MaterialBones
-  name: bones
+  name: 骨骼 | bones
   suffix: Full
   components:
   - type: Stack
@@ -703,8 +703,8 @@
 - type: entity
   parent: MaterialBase
   id: MaterialGunpowder
-  name: gunpowder
-  description: An explosive compound.
+  name: 火药 | gunpowder
+  description: 一种爆炸性化合物。 | An explosive compound.
   components:
   - type: Stack
     stackType: Gunpowder
@@ -722,15 +722,15 @@
 - type: entity
   parent: MaterialBase
   id: MaterialGoliathHide
-  name: goliath hide plates
-  description: Pieces of a goliath's rocky hide, these might be able to make your suit a bit more durable to attack from the local fauna.
+  name: 歌利亚皮甲板 | goliath hide plates
+  description: 歌利亚坚硬外皮的碎片，或许能让你的防护服更耐当地动物的攻击。 | Pieces of a goliath's rocky hide, these might be able to make your suit a bit more durable to attack from the local fauna.
   suffix: Full
   components:
   - type: Sprite
     sprite: Objects/Materials/hide.rsi
     layers:
     - state: goliath_hide
-      map: [ "base" ]
+      map: ["base"]
   - type: StaticPrice
     price: 0
   - type: StackPrice

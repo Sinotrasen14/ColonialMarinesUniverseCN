@@ -1,78 +1,67 @@
-# CMO
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitCMO
-  name: chief medical officer's jumpsuit
-  description: It's a jumpsuit worn by those with the experience to be Chief Medical Officer. It provides minor biological protection.
+  name: 首席医疗官的连体服
+  description: 这是一件由具备首席医疗官经验者穿的连体服。它提供轻微的生物防护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/cmo.rsi
-
-# Research
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitResearch
-  name: reseacher clothes
-  description: A simple set of civilian clothes worn by researchers.
+  name: 研究员服装
+  description: 一套研究人员穿的简单便服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/research.rsi
-
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitRD
-  name: research director's uniform
-  description: It's made of a special fiber that provides minor protection against biohazards. It has markings that denote the wearer is a Research Director.
+  name: 研究主任的制服
+  description: 它由一种特殊纤维制成，可提供轻微的生物危害防护。它带有标记，表明穿戴者是研究主任。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/research_director.rsi
-
-# Scrubs
 - type: entity
   parent: RMCMarineUniformBase
   id: CMScrubsBlue
-  name: blue medical scrubs
-  description: They're made of a special fiber that provides minor protection against biohazards. These are in blue.
+  name: 蓝色医用洗手服
+  description: 它们由一种特殊纤维制成，可提供轻微的生物危害防护。这些是蓝色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Scrubs/blue.rsi
-
 - type: entity
   parent: CMScrubsBlue
   id: CMScrubsGreen
-  name: green medical scrubs
-  description: It's made of a special fiber that provides minor protection against biohazards. This one is in dark green.
+  name: 绿色医用洗手服
+  description: 它由一种特殊纤维制成，可提供轻微的生物危害防护。这一件是深绿色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Scrubs/green.rsi
-
 - type: entity
   parent: CMScrubsBlue
   id: CMScrubsPurple
-  name: purple medical scrubs
-  description: It's made of a special fiber that provides minor protection against biohazards. This one is in purple.
+  name: 紫色医用洗手服
+  description: 它由一种特殊纤维制成，可提供轻微的生物危害防护。这一件是紫色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Scrubs/purple.rsi
-
 - type: entity
   parent: CMScrubsBlue
   id: CMScrubsOrange
-  name: orange medical scrubs
-  description: It's made of a special fiber that provides minor protection against biohazards. This one is in prisoner orange.
+  name: 橙色医用洗手服
+  description: 它由一种特殊纤维制成，可提供轻微的生物危害防护。这一件是囚犯橙色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Scrubs/orange.rsi
-
 - type: entity
   parent: CMScrubsBlue
   id: RMCScrubsLightBlue
-  name: light blue medical scrubs
-  description: It's made of a special fiber that provides minor protection against biohazards. This one is in light blue.
+  name: 浅蓝色医用洗手服
+  description: 它由一种特殊纤维制成，可提供轻微的生物危害防护。这一件是浅蓝色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Scrubs/lightblue.rsi
-
 - type: entity
   parent: RMCScrubsLightBlue
   id: RMCScrubsLightBlueArmband
@@ -81,16 +70,14 @@
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCNurseArmband
-
 - type: entity
   parent: CMScrubsBlue
   id: RMCScrubsOlive
-  name: olive medical scrubs
-  description: It's made of a special fiber that provides minor protection against biohazards. This one is in olive green.
+  name: 橄榄色医用洗手服
+  description: 它由一种特殊纤维制成，可提供轻微的生物危害防护。这一件是橄榄绿色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Scrubs/olive.rsi
-
 - type: entity
   parent: RMCScrubsOlive
   id: RMCScrubsOliveNurse
@@ -100,12 +87,11 @@
   - type: UniformAccessoryHolder
     startingAccessories:
     - RMCNurseArmband
-
 - type: entity
   parent: CMScrubsBlue
   id: RMCScrubsGrey
-  name: grey medical scrubs
-  description: It's made of a special fiber that provides minor protection against biohazards. This one is in mundane grey.
+  name: 灰色医用洗手服
+  description: 它由一种特殊纤维制成，可提供轻微的生物危害防护。这一件是普通灰色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Scrubs/grey.rsi

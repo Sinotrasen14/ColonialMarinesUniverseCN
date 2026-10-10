@@ -1,20 +1,20 @@
 - type: entity
   id: Joint
   parent: BaseCigar
-  name: joint
-  description: A roll of dried plant matter wrapped in thin paper.
+  name: 大麻烟卷 | joint
+  description: 一卷用薄纸包裹的干燥植物物质。 | A roll of dried plant matter wrapped in thin paper.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cannabis/joint.rsi
     state: unlit-icon
   - type: Tag
     tags:
-      - Cigarette
-      - Trash
+    - Cigarette
+    - Trash
   - type: SpaceGarbage
   - type: Clothing
     sprite: Objects/Consumable/Smokeables/Cannabis/joint.rsi
-    slots: [ mask ]
+    slots: [mask]
     equippedPrefix: unlit
   - type: Item
     size: Tiny
@@ -32,9 +32,9 @@
 - type: entity
   id: JointRainbow
   parent: Joint
-  name: joint
+  name: 烟卷 | joint
   suffix: Rainbow
-  description: A roll of dried plant matter wrapped in thin paper. Seems to be colorful inside.
+  description: 一卷用薄纸包裹的干燥植物物质。里面似乎色彩斑斓。 | A roll of dried plant matter wrapped in thin paper. Seems to be colorful inside.
   components:
   - type: Construction
     graph: smokeableJointRainbow
@@ -58,20 +58,20 @@
 - type: entity
   id: Blunt
   parent: BaseCigar
-  name: blunt
-  description: A roll of dried plant matter wrapped in a dried tobacco leaf.
+  name: 钝头烟 | blunt
+  description: 一卷干枯的植物材料，用干燥的烟叶包裹而成。 | A roll of dried plant matter wrapped in a dried tobacco leaf.
   components:
   - type: Sprite
     sprite: Objects/Consumable/Smokeables/Cannabis/blunt.rsi
     state: unlit-icon
   - type: Tag
     tags:
-      - Cigarette
-      - Trash
+    - Cigarette
+    - Trash
   - type: SpaceGarbage
   - type: Clothing
     sprite: Objects/Consumable/Smokeables/Cannabis/blunt.rsi
-    slots: [ mask ]
+    slots: [mask]
     equippedPrefix: unlit
   - type: Item
     size: Tiny
@@ -89,9 +89,9 @@
 - type: entity
   id: BluntRainbow
   parent: Blunt
-  name: blunt
+  name: 钝烟 | blunt
   suffix: Rainbow
-  description: A roll of dried plant matter wrapped in a dried tobacco leaf. Seems to be colorful inside.
+  description: 一卷干植物物质，包裹在干燥的烟叶中。里面似乎色彩斑斓。 | A roll of dried plant matter wrapped in a dried tobacco leaf. Seems to be colorful inside.
   components:
   - type: Construction
     graph: smokeableBluntRainbow

@@ -1,9 +1,9 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem, BaseGunWieldable ]
+  parent: [BaseItem, BaseGunWieldable]
   id: BaseWeaponLauncher
-  name: BaseWeaponLauncher
-  description: A rooty tooty point and shooty.
+  name: 基础武器发射器 | BaseWeaponLauncher
+  description: 一把土里土气的突突枪。 | A rooty tooty point and shooty.
   components:
   - type: Sprite
   - type: ContainerContainer
@@ -18,7 +18,7 @@
   - type: Item
     size: Ginormous
     shape:
-      - 0,0,6,3
+    - 0,0,6,3
   - type: StaticPrice
     price: 500
   - type: Gun
@@ -31,16 +31,16 @@
       path: /Audio/Weapons/Guns/Gunshots/grenade_launcher.ogg
 
 - type: entity
-  parent: [ BaseWeaponLauncher, BaseSyndicateContraband ]
+  parent: [BaseWeaponLauncher, BaseSyndicateContraband]
   id: WeaponLauncherChinaLake
-  name: china lake
-  description: PLOOP.
+  name: 中国湖 | china lake
+  description: 噗噜。 | PLOOP.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/china_lake.rsi
     layers:
     - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Item
     size: Huge
     shape:
@@ -64,16 +64,16 @@
     price: 10000
 
 - type: entity
-  parent: [ BaseWeaponLauncher, BaseMajorContraband ]
+  parent: [BaseWeaponLauncher, BaseMajorContraband]
   id: WeaponLauncherHydra
-  name: hydra
-  description: PLOOP... FSSSSSS...
+  name: 九头蛇 | hydra
+  description: 噗噜……嘶嘶嘶…… | PLOOP... FSSSSSS...
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/hydra_launcher.rsi
     layers:
     - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: Item
     size: Huge
   - type: ContainerContainer
@@ -92,8 +92,8 @@
       - Grenade
     proto: GrenadeCleanade
     capacity: 6
-    chambers: [ True, True, True, True, True, True ]
-    ammoSlots: [ null, null, null, null, null, null ]
+    chambers: [true, true, true, true, true, true]
+    ammoSlots: [null, null, null, null, null, null]
     soundEject:
       path: /Audio/Weapons/Guns/MagOut/sfrifle_magout.ogg
     soundInsert:
@@ -108,18 +108,18 @@
     proto: GrenadeFrag
 
 - type: entity
-  parent: [ BaseWeaponLauncher, BaseMajorContraband ]
+  parent: [BaseWeaponLauncher, BaseMajorContraband]
   id: WeaponLauncherRocket
   name: RPG-7
-  description: A modified ancient rocket-propelled grenade launcher.
+  description: 一把经过改装的古老火箭推进榴弹发射器。 | A modified ancient rocket-propelled grenade launcher.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/rocket.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: Objects/Weapons/Guns/Launchers/rocket.rsi
   - type: Gun
@@ -141,18 +141,18 @@
   - type: Appearance
 
 - type: entity
-  parent: [ BaseItem, BaseXenoborgContraband ]
+  parent: [BaseItem, BaseXenoborgContraband]
   id: WeaponGuidedMissileLauncherXenoborg
   name: XB GML-78 # Xenoborg Guided Missile Launcher 78
-  description: A guided missile launcher.
+  description: 一种制导导弹发射器。 | A guided missile launcher.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/xenoborg_guided_missile_launcher.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-3
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Appearance
   - type: MagazineVisuals
     magState: mag
@@ -184,16 +184,16 @@
 - type: entity
   parent: BaseWeaponLauncher
   id: WeaponLauncherMultipleRocket
-  name: multiple rocket launcher
-  description: A modified ancient rocket-propelled grenade launcher.
+  name: 多管火箭发射器 | multiple rocket launcher
+  description: 一种经过改装的古代火箭推进榴弹发射器。 | A modified ancient rocket-propelled grenade launcher.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/rocket.rsi
     layers:
     - state: base
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-0
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: Objects/Weapons/Guns/Launchers/rocket.rsi
   - type: Gun
@@ -217,18 +217,18 @@
   - type: Appearance
 
 - type: entity
-  parent: [ BaseItem, BaseXenoborgContraband ]
+  parent: [BaseItem, BaseXenoborgContraband]
   id: WeaponRocketLauncherXenoborg
   name: XB MRL-97-D # Xenoborg Multi Rocket Launcher 97 D (Demolition)
-  description: A alien rocket launcher fitted with special demolition rockets.
+  description: 一种配备了特殊爆破火箭的外星火箭发射器。 | A alien rocket launcher fitted with special demolition rockets.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/xb_mlr.rsi
     layers:
     - state: mlr
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
     - state: mag-6
-      map: [ "enum.GunVisualLayers.Mag" ]
+      map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -262,14 +262,14 @@
 - type: entity
   parent: BaseWeaponLauncher
   id: WeaponLauncherPirateCannon
-  name: pirate cannon
-  description: Kaboom!
+  name: 海盗炮 | pirate cannon
+  description: 砰！ | Kaboom!
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/pirate_cannon.rsi
     layers:
     - state: icon
-      map: [ "enum.GunVisualLayers.Base" ]
+      map: ["enum.GunVisualLayers.Base"]
   - type: ContainerContainer
     containers:
       balistic-ammo: !type:Container
@@ -294,14 +294,14 @@
 - type: entity
   parent: BaseItem
   id: WeaponGrapplingGun
-  name: grappling gun
+  name: 抓钩枪 | grappling gun
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Launchers/grappling_gun.rsi
     layers:
     - state: base
     - state: base-unshaded
-      map: [ "unshaded" ]
+      map: ["unshaded"]
       visible: true
   - type: Item
     size: Small
@@ -325,17 +325,17 @@
     visuals:
       enum.TetherVisualsStatus.Key:
         unshaded:
-          True: { state: base-unshaded }
-          False: { state: base-unshaded-off }
+          true: {state: base-unshaded}
+          false: {state: base-unshaded-off}
   - type: PacifismAllowedGun
 
 # Admeme
 - type: entity
   parent: WeaponLauncherMultipleRocket
   id: WeaponLauncherAdmemeMeteorLarge
-  name: meteor launcher
+  name: 流星发射器 | meteor launcher
   suffix: Admeme
-  description: It fires large meteors.
+  description: 它发射大型流星。 | It fires large meteors.
   components:
   - type: BallisticAmmoProvider
     proto: MeteorMedium
@@ -343,9 +343,9 @@
 - type: entity
   parent: WeaponLauncherAdmemeMeteorLarge
   id: WeaponLauncherAdmemeImmovableRodSlow
-  name: immovable rod launcher
+  name: 固定杆发射器 | immovable rod launcher
   suffix: Admeme
-  description: It fires slow immovable rods.
+  description: 它发射缓慢的固定杆。 | It fires slow immovable rods.
   components:
   - type: BallisticAmmoProvider
     proto: ImmovableRodSlow

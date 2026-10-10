@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
-  parent: [ BaseItem, BaseSecurityContraband ]
+  parent: [BaseItem, BaseSecurityContraband]
   id: BaseMagazineGrenade
-  name: grenade cartridge
+  name: 枪榴弹 | grenade cartridge
   components:
   - type: Tag
     tags:
@@ -11,7 +11,7 @@
     mayTransfer: true
     whitelist:
       tags:
-        - Grenade
+      - Grenade
     capacity: 5
     soundRack:
       path: /Audio/Weapons/Guns/Bolt/lmg_bolt_closed.ogg
@@ -42,14 +42,14 @@
 - type: entity
   parent: BaseMagazineGrenade
   id: MagazineGrenadeEmpty
-  name: grenade cartridge
+  name: 枪榴弹 | grenade cartridge
   components:
   - type: BallisticAmmoProvider
 
 - type: entity
   parent: BaseMagazineGrenade
   id: MagazineGrenadeFrag
-  name: frag grenade cartridge
+  name: 破片手榴弹弹壳 | frag grenade cartridge
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeFrag
@@ -57,7 +57,7 @@
 - type: entity
   parent: BaseMagazineGrenade
   id: MagazineGrenadeEMP
-  name: EMP grenade cartridge
+  name: 电磁脉冲手榴弹弹匣 | EMP grenade cartridge
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeEMP
@@ -65,7 +65,7 @@
 - type: entity
   parent: BaseMagazineGrenade
   id: MagazineGrenadeFlash
-  name: flash grenade cartridge
+  name: 闪光弹弹匣 | flash grenade cartridge
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeFlash
@@ -73,7 +73,7 @@
 - type: entity
   parent: BaseMagazineGrenade
   id: MagazineGrenadeBlast
-  name: blast grenade cartridge
+  name: 爆裂榴弹弹筒 | blast grenade cartridge
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeBlast
@@ -81,7 +81,7 @@
 - type: entity
   parent: BaseMagazineGrenade
   id: MagazineGrenadeBaton
-  name: baton grenade cartridge
+  name: 警棍榴弹弹药 | baton grenade cartridge
   components:
   - type: BallisticAmmoProvider
     proto: GrenadeBaton

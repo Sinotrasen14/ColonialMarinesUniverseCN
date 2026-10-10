@@ -1,19 +1,20 @@
 - type: entity
   parent: CMBootsBlack
   id: CMBootsThigh
-  name: thigh boots
-  description: Part the river one step at a time.
+  name: 大腿靴
+  description: 一步一步分开河流。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/thigh.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/thigh.rsi
-
 - type: entity
-  parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
+  parent:
+  - RMCMarineUniformBase
+  - RMCFoldableUniformBase
   id: CMJumpsuitFishingColonist
-  name: fishing clothes
-  description: Water-resistant overalls covering a colonist jumpsuit.
+  name: 钓鱼服
+  description: 防水背带裤，覆盖在殖民者连体服外。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Survivor/shepfisher.rsi

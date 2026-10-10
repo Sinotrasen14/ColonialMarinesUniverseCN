@@ -22,8 +22,7 @@
       fix1:
         hard: false
         density: 7
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         layer:
         - MidImpassable
@@ -32,16 +31,15 @@
     heatCapacity: 21000
 
 - type: entity
-  parent: [ BaseKudzu, SolutionFood ]
+  parent: [BaseKudzu, SolutionFood]
   id: Kudzu
-  name: kudzu
-  description: A rapidly growing, dangerous plant. WHY ARE YOU STOPPING TO LOOK AT IT?!
+  name: 葛藤 | kudzu
+  description: 一种生长迅速、危险的植物。你为什么要停下来看它？！ | A rapidly growing, dangerous plant. WHY ARE YOU STOPPING TO LOOK AT IT?!
   components:
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Weapons/slash.ogg"
+        path: "/Audio/Weapons/slash.ogg"
   - type: Sprite
     sprite: Objects/Misc/kudzu.rsi
     state: kudzu_11
@@ -53,12 +51,11 @@
   - type: Injurable
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 10
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: TemperatureDamage
     heatDamage:
       types:
@@ -126,8 +123,8 @@
 - type: entity
   parent: Kudzu
   id: KudzuFlowerFriendly
-  name: floral carpet
-  description: A colorful carpet of flowers sprawling in every direction. You're not sure whether to take it down or leave it up.
+  name: 花毯 | floral carpet
+  description: 一块色彩斑斓的花毯向四面八方铺展开来。你拿不准是该把它取下来还是就这么留着。 | A colorful carpet of flowers sprawling in every direction. You're not sure whether to take it down or leave it up.
   suffix: Friendly, Floral Anomaly
   components:
   - type: Sprite
@@ -183,16 +180,15 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseKudzu, SolutionFood ]
+  parent: [BaseKudzu, SolutionFood]
   id: BaseFleshKudzu
-  name: tendons
-  description: A rapidly growing cluster of meaty tendons. WHY ARE YOU STOPPING TO LOOK AT IT?!
+  name: 肌腱 | tendons
+  description: 一簇迅速生长的肉筋。你为什么要停下来看它？！ | A rapidly growing cluster of meaty tendons. WHY ARE YOU STOPPING TO LOOK AT IT?!
   components:
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Weapons/slash.ogg"
+        path: "/Audio/Weapons/slash.ogg"
   - type: Sprite
     sprite: CMU14/Objects/Misc/fleshkudzu.rsi # CMU14
     state: kudzu_11
@@ -203,12 +199,11 @@
   - type: Injurable
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: DamageContacts
     damage:
       types:
@@ -292,9 +287,9 @@
   suffix: Space
 
 - type: entity
-  parent: [ BaseKudzu, BaseShadow ]
+  parent: [BaseKudzu, BaseShadow]
   id: ShadowKudzu
-  name: dark haze
+  name: 暗雾 | dark haze
   components:
   - type: Physics
     canCollide: false
@@ -330,14 +325,14 @@
     visuals:
       base:
       - options: Default
-        data: { state: spookysmoke }
+        data: {state: spookysmoke}
       - options: ReducedMotion
-        data: { state: spookysmoke_static }
+        data: {state: spookysmoke_static}
 
 - type: entity
   parent: ShadowKudzu
   id: ShadowKudzuWeak
-  name: haze
+  name: 霾 | haze
   components:
   - type: Kudzu
     spreadChance: 0 #appears during pulsation. It shouldnt spreading.

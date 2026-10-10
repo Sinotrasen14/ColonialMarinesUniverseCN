@@ -1,8 +1,8 @@
 - type: entity
-  name: BaseWeaponRifle
+  name: 基础武器步枪 | BaseWeaponRifle
   parent: [BaseItem, BaseGunWieldable]
   id: BaseWeaponRifle
-  description: A rooty tooty point and shooty.
+  description: 一把土里土气、指哪打哪的射击家伙。 | A rooty tooty point and shooty.
   abstract: true
   components:
   - type: Sprite
@@ -21,8 +21,8 @@
     fireRate: 5
     selectedMode: FullAuto
     availableModes:
-      - FullAuto
-      - SemiAuto
+    - FullAuto
+    - SemiAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/batrifle.ogg
   - type: ChamberMagazineAmmoProvider
@@ -31,21 +31,21 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: MagazineLightRifle
         insertSound: /Audio/Weapons/Guns/MagIn/batrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/batrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineLightRifle
+          - MagazineLightRifle
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
-        name: Chamber
+        name: 钱伯斯 | Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgeLightRifle
+          - CartridgeLightRifle
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -57,15 +57,15 @@
   name: AKMS
   parent: [BaseWeaponRifle, BaseSecurityContraband]
   id: WeaponRifleAk
-  description: A somewhat battered combat rifle of a design originating from old Earth. Favored by criminals, militias, and terrorists due to its famed reliability and easy-to-manufacture design. Feeds from .30 rifle magazines.
+  description: 一把略显破旧的战斗步枪，其设计源自旧地球。因其著名的可靠性和易于制造的构造而受到罪犯、民兵和恐怖分子的青睐。使用.30步枪弹匣供弹。 | A somewhat battered combat rifle of a design originating from old Earth. Favored by criminals, militias, and terrorists due to its famed reliability and easy-to-manufacture design. Feeds from .30 rifle magazines.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/ak.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Gun
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/rifle2.ogg
@@ -75,21 +75,21 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: MagazineLightRifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineLightRifle
+          - MagazineLightRifle
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
-        name: Chamber
+        name: 钱伯 | Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgeLightRifle
+          - CartridgeLightRifle
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -101,18 +101,18 @@
   - type: Appearance
 
 - type: entity
-  name: Lecter
+  name: 莱克特 | Lecter
   parent: [BaseWeaponRifle, BaseSecurityContraband]
   id: WeaponRifleLecter
-  description: "Popular gas-operated combat rifle used heavily by Nanotrasen and SolGov. Operating in semi or fully automatic, its accuracy, stopping power, and reliability make it excel in all manner of environments.\nFeeds from .20 rifle magazines."
+  description: "被纳米传思和太阳系政府大量使用的流行气动战斗步枪。可半自动或全自动射击，其精度、停止作用和可靠性使其在各种环境中都表现出色。\n使用.20步枪弹匣供弹。 | Popular gas-operated combat rifle used heavily by Nanotrasen and SolGov. Operating in semi or fully automatic, its accuracy, stopping power, and reliability make it excel in all manner of environments.\nFeeds from .20 rifle magazines."
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Clothing
     sprite: Objects/Weapons/Guns/Rifles/lecter.rsi
   - type: Gun
@@ -121,21 +121,21 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: MagazineRifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineRifle
+          - MagazineRifle
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
-        name: Chamber
+        name: 钱伯斯 | Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgeRifle
+          - CartridgeRifle
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -151,7 +151,9 @@
   id: WeaponRifleLecterXL8
   name: XL8
   description: |-
-    The Experimental Lecter 8
+    实验型莱克特8
+    一把昂贵得离谱的军用级突击步枪，配有集成光学瞄准镜。
+    使用.20步枪弹药。 | The Experimental Lecter 8
     An unreasonably expensive military grade assault rifle with integrated optic.
     Uses .20 rifle ammo.
   components:
@@ -174,10 +176,10 @@
     - FullAuto
 
 - type: entity
-  name: Estoc DMR
+  name: 埃斯托克精确射手步枪 | Estoc DMR
   parent: [BaseWeaponRifle, BaseSyndicateContraband]
   id: WeaponRifleEstoc
-  description: "A designated marksman rifle firing in 3-round bursts. The Estoc was designed as the Lecter’s long-range counterpart, equipped with an extended 20-inch barrel and telescopic sight.\nFeeds from .20 rifle magazines."
+  description: "一种以三发点射方式射击的精确射手步枪。埃斯托克被设计为莱克特的长距离对应型号，配备了加长的20英寸枪管和望远式瞄准镜。\n使用.20步枪弹匣供弹。 | A designated marksman rifle firing in 3-round bursts. The Estoc was designed as the Lecter’s long-range counterpart, equipped with an extended 20-inch barrel and telescopic sight.\nFeeds from .20 rifle magazines."
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Rifles/estoc.rsi
@@ -203,7 +205,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: MagazineRifle
         insertSound: /Audio/Weapons/Guns/MagIn/ltrifle_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/ltrifle_magout.ogg
@@ -213,7 +215,7 @@
           - MagazineRifle
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
-        name: Chamber
+        name: 钱伯斯 | Chamber
         priority: 1
         whitelist:
           tags:

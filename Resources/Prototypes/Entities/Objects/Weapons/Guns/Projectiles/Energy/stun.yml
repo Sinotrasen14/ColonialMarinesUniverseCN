@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseBullet
   id: BulletTaser
-  categories: [ HideSpawnMenu ]
-  name: taser bolt
+  categories: [HideSpawnMenu]
+  name: 泰瑟枪弩箭 | taser bolt
   components:
   - type: FlyBySound
     sound:
@@ -20,8 +20,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         hard: false
         mask:
@@ -52,9 +51,9 @@
 - type: entity
   parent: BulletTaser
   id: BulletTaserSuper
-  categories: [ HideSpawnMenu ]
-  name: taser bolt
-  description: If you can see this, you've probably been stun-meta'd
+  categories: [HideSpawnMenu]
+  name: 泰瑟电击弹 | taser bolt
+  description: 如果你能看到这个，你大概已经被电击套路了 | If you can see this, you've probably been stun-meta'd
   components:
   - type: Sprite
     noRot: true
@@ -81,8 +80,8 @@
 - type: entity
   parent: BaseBullet
   id: BulletDisabler
-  categories: [ HideSpawnMenu ]
-  name: disabler bolt
+  categories: [HideSpawnMenu]
+  name: 禁用螺栓 | disabler bolt
   components:
   - type: Reflective
     reflective:
@@ -101,8 +100,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.3,0.15,0.3"
         hard: false
         mask:
@@ -124,8 +122,8 @@
 - type: entity
   parent: BaseBullet
   id: BulletDisablerPractice
-  categories: [ HideSpawnMenu ]
-  name: disabler bolt practice
+  categories: [HideSpawnMenu]
+  name: 禁用螺栓实践 | disabler bolt practice
   components:
   - type: FlyBySound
     sound:
@@ -141,8 +139,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.3,0.15,0.3"
         hard: false
         mask:
@@ -164,8 +161,8 @@
 - type: entity
   parent: BaseBullet
   id: BulletDisablerSmg
-  categories: [ HideSpawnMenu ]
-  name: disabler bolt smg
+  categories: [HideSpawnMenu]
+  name: 禁用者螺栓冲锋枪 | disabler bolt smg
   components:
   - type: Reflective
     reflective:
@@ -184,8 +181,7 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.3,0.15,0.3"
         hard: false
         mask:
@@ -207,8 +203,8 @@
 - type: entity
   parent: BulletDisablerSmg
   id: BulletDisablerSmgSpread
-  categories: [ HideSpawnMenu ]
-  name: disabling laser barrage
+  categories: [HideSpawnMenu]
+  name: 禁用激光弹幕 | disabling laser barrage
   components:
   - type: ProjectileSpread
     proto: BulletDisablerSmg
@@ -217,17 +213,17 @@
 
 # Energy crossbow
 - type: entity
-  parent: [ SolutionAmmo, BaseBullet ]
+  parent: [SolutionAmmo, BaseBullet]
   id: EnergyCrossbowBolt
-  categories: [ HideSpawnMenu ]
-  name: energy bolt
-  description: This'll hurt.
+  categories: [HideSpawnMenu]
+  name: 能量弹 | energy bolt
+  description: 这会很疼。 | This'll hurt.
   components:
   - type: Reflective
     reflective:
     - NonEnergy
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Projectiles/projectiles2.rsi
     layers:

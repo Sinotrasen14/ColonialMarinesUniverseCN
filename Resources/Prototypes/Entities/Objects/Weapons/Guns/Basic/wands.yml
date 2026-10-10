@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: WeaponWandBase
   id: WeaponWandPolymorphBase
   abstract: true
@@ -17,10 +17,10 @@
     capacity: 5
 
 - type: entity
-  name: wand of carp polymorph
+  name: 鲤鱼变形魔杖 | wand of carp polymorph
   parent: WeaponWandPolymorphBase
   id: WeaponWandPolymorphCarp
-  description: For when you need a carp filet quick and the clown is looking juicy.
+  description: 当你需要快速得到一块鲤鱼片，而小丑看起来又多汁的时候。 | For when you need a carp filet quick and the clown is looking juicy.
   components:
   - type: BasicEntityAmmoProvider
     proto: ProjectilePolyboltCarp
@@ -28,10 +28,10 @@
     count: 5
 
 - type: entity
-  name: wand of monkey polymorph
+  name: 猴子变形魔杖 | wand of monkey polymorph
   parent: WeaponWandPolymorphBase
   id: WeaponWandPolymorphMonkey
-  description: For when you need a monkey friend.
+  description: 当你需要一个猴子朋友时。 | For when you need a monkey friend.
   components:
   - type: BasicEntityAmmoProvider
     proto: ProjectilePolyboltMonkey
@@ -39,10 +39,10 @@
     count: 5
 
 - type: entity
-  name: wand of fireball
+  name: 火球魔杖 | wand of fireball
   parent: WeaponWandBase
   id: WeaponWandFireball
-  description: Great big balls of fire!
+  description: 巨大的火球！ | Great big balls of fire!
   components:
   - type: Sprite
     layers:
@@ -60,8 +60,8 @@
     count: 5
 
 - type: entity
-  name: wand of the locker
-  description: Stuff nerds at a distance!
+  name: 储物柜魔杖 | wand of the locker
+  description: 把书呆子们远远地塞进去！ | Stuff nerds at a distance!
   parent: WeaponWandBase
   id: WeaponWandLocker
   components:
@@ -90,17 +90,17 @@
     visuals:
       enum.AmmoVisuals.HasAmmo:
         effect:
-          True: { visible: False }
-          False: { visible: True }
+          true: {visible: false}
+          false: {visible: true}
         base:
-          True: { visible: True }
-          False: { visible: False }
+          true: {visible: true}
+          false: {visible: false}
 
 - type: entity
-  name: magical wand of instant death
+  name: 瞬间死亡魔法棒 | magical wand of instant death
   parent: WeaponWandBase
   id: WeaponWandDeath
-  description: Only the best and brightest of the Space Wizards R&D team worked together to create this beauty.
+  description: 只有太空巫师研发团队中最优秀、最聪明的人齐心协力才创造出了这件杰作。 | Only the best and brightest of the Space Wizards R&D team worked together to create this beauty.
   components:
   - type: Sprite
     layers:
@@ -117,10 +117,10 @@
     count: 3
 
 - type: entity
-  name: wand of entrance
+  name: 入口魔杖 | wand of entrance
   parent: WeaponWandBase
   id: WeaponWandPolymorphDoor
-  description: For when you need a get-away route.
+  description: 当你需要一条逃生路线时。 | For when you need a get-away route.
   components:
   - type: Sprite
     layers:
@@ -137,10 +137,10 @@
     count: 10
 
 - type: entity
-  name: wand of cluwning
+  name: cluwne化法杖 | wand of cluwning
   parent: WeaponWandPolymorphBase
   id: WeaponWandCluwne
-  description: Make their situation worse by turning them into a cluwne.
+  description: 让他们的处境更糟，把他们变成小丑。 | Make their situation worse by turning them into a cluwne.
   components:
   - type: BasicEntityAmmoProvider
     proto: ProjectilePolyboltCluwne
@@ -150,8 +150,8 @@
 - type: entity
   parent: WeaponWandPolymorphBase
   id: WeaponWandPolymorphBread
-  name: magic bread wand
-  description: Turn all your friends into bread! Your boss! Your enemies! Your dog! Make everything bread!
+  name: 魔法面包棒 | magic bread wand
+  description: 把你所有的朋友都变成面包！你的老板！你的敌人！你的狗！让一切都变成面包！ | Turn all your friends into bread! Your boss! Your enemies! Your dog! Make everything bread!
   components:
   - type: BasicEntityAmmoProvider
     proto: ProjectilePolyboltBread

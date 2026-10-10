@@ -1,27 +1,27 @@
 - type: entity
   abstract: true
-  parent: [ BaseCartridge, BaseSecurityContraband ]
+  parent: [BaseCartridge, BaseSecurityContraband]
   id: BaseCartridgePistol
-  name: cartridge (.35 auto)
+  name: 弹匣（.35自动） | cartridge (.35 auto)
   components:
   - type: Tag
     tags:
-      - CartridgePistol
+    - CartridgePistol
   - type: CartridgeAmmo
     proto: BulletPistol
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
   - type: Appearance
   - type: SpentAmmoVisuals
 
 - type: entity
   parent: BaseCartridgePistol
   id: CartridgePistol
-  name: cartridge (.35 auto)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Standard kinetic ammunition is common and useful in most situations.
+  name: 弹药（.35自动） | cartridge (.35 auto)
+  description: 可以说是市场上最受欢迎的弹药口径，各种手枪和冲锋枪都在使用。标准动能弹药很常见，在大多数情况下都很有用。 | Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Standard kinetic ammunition is common and useful in most situations.
   components:
   - type: CartridgeAmmo
     proto: BulletPistol
@@ -29,62 +29,62 @@
 - type: entity
   parent: BaseCartridgePistol
   id: CartridgePistolPractice
-  name: cartridge (.35 auto practice)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
+  name: 弹药（.35自动手枪练习弹） | cartridge (.35 auto practice)
+  description: 可以说是市场上最受欢迎的口径，被各种手枪和冲锋枪使用。练习弹发射一种粉笔弹丸，只会造成轻微刺痛，除此之外不会造成持久伤害。 | Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Practice ammunition fires a chalk projectile that stings a little, but otherwise causes no lasting damage.
   components:
   - type: CartridgeAmmo
     proto: BulletPistolPractice
-  -  type: Sprite
-     layers:
-       - state: base
-         map: [ "enum.AmmoVisualLayers.Base" ]
-       - state: tip
-         map: [ "enum.AmmoVisualLayers.Tip" ]
-         color: "#dbdbdb"
+  - type: Sprite
+    layers:
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+    - state: tip
+      map: ["enum.AmmoVisualLayers.Tip"]
+      color: "#dbdbdb"
 
 - type: entity
   parent: BaseCartridgePistol
   id: CartridgePistolIncendiary
-  name: cartridge (.35 auto incendiary)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
+  name: 弹药（.35自动燃烧弹） | cartridge (.35 auto incendiary)
+  description: 可以说是市场上最受欢迎的弹药口径，各种手枪和冲锋枪都在使用。燃烧弹含有自燃化合物，可使目标着火燃烧。 | Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Incendiary ammunition contains a self-igniting compound that sets targets ablaze.
   components:
   - type: CartridgeAmmo
     proto: BulletPistolIncendiary
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#ff6e52"
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+    - state: tip
+      map: ["enum.AmmoVisualLayers.Tip"]
+      color: "#ff6e52"
 
 - type: entity
   id: CartridgePistolUranium
-  name: cartridge (.35 auto uranium)
-  description: Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
+  name: 弹药（.35自动铀弹） | cartridge (.35 auto uranium)
+  description: 可以说是市场上最受欢迎的口径，各种手枪和冲锋枪都在使用。铀弹将子弹的铅芯替换为裂变材料，从内部对目标造成辐射。 | Arguably the most popular caliber on the market, used by all manner of pistols and submachine guns. Uranium ammunition replaces the lead core of the bullet with fissile material, irradiating targets from the inside.
   parent: BaseCartridgePistol
   components:
   - type: CartridgeAmmo
     proto: BulletPistolUranium
   - type: Sprite
     layers:
-      - state: base
-        map: [ "enum.AmmoVisualLayers.Base" ]
-      - state: tip
-        map: [ "enum.AmmoVisualLayers.Tip" ]
-        color: "#65fe08"
+    - state: base
+      map: ["enum.AmmoVisualLayers.Base"]
+    - state: tip
+      map: ["enum.AmmoVisualLayers.Tip"]
+      color: "#65fe08"
 
 - type: entity
   parent: BaseCartridgePistol
   id: CartridgePistolSpent
-  name: cartridge (.35 auto)
+  name: 弹药筒（.35自动） | cartridge (.35 auto)
   suffix: spent
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
     layers:
     - state: base-spent
-      map: [ "enum.AmmoVisualLayers.Base" ]
+      map: ["enum.AmmoVisualLayers.Base"]
   - type: SpentAmmoVisuals
   - type: CartridgeAmmo
     proto: BulletPistol

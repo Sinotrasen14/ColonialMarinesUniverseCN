@@ -1,15 +1,14 @@
-﻿- type: entity
+- type: entity
   parent: RMCPouchGeneral
   id: RMCPouchGeneralLarge
-  name: large general pouch
-  description: A general-purpose pouch used to carry more differently sized items.
+  name: 大号通用收纳袋
+  description: 一种通用收纳袋，用于携带更多不同尺寸的物品。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Pouches/large_drop.rsi
   - type: Storage
     grid:
-    - 0,0,5,1 #6 slot
-
+    - 0,0,5,1
 - type: entity
   parent: RMCPouchGeneralLarge
   id: RMCPouchGeneralLargeFilledSmartGunDrums
@@ -19,7 +18,6 @@
     contents:
     - id: RMCMagazineSmartGunHT
       amount: 2
-
 - type: entity
   parent: RMCPouchGeneralLarge
   id: RMCPouchGeneralLargeFilledRoyalCommando
@@ -28,8 +26,7 @@
   - type: StorageFill
     contents:
     - id: RMCHeadRoyalBeret
-    - id: CMMaskGas # TODO RMC14 royal marine gas masks
-
+    - id: CMMaskGas
 - type: entity
   parent: RMCPouchGeneralLarge
   id: RMCPouchGeneralLargeFilledSPPCommand
@@ -37,17 +34,14 @@
   components:
   - type: StorageFill
     contents:
-    - id: CMGrenadeFragOld #TODO rmc14, port SPP grenades.
     - id: CMGrenadeFragOld
-#TODO rmc14, someone please port Phosphorus greandes. I have naught the ability to add those.
-
+    - id: CMGrenadeFragOld
 - type: entity
   parent: RMCPouchGeneralLarge
   id: RMCPouchGeneralLargeFilledParaCO
   suffix: Survivor, Paramarine, Filled, CO
   components:
-    - type: StorageFill
-      contents:
-        - id: CMClipboard #notepad
-        - id: CMPenFountain 
-          
+  - type: StorageFill
+    contents:
+    - id: CMClipboard
+    - id: CMPenFountain

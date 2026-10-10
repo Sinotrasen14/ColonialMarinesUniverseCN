@@ -4,13 +4,13 @@
   abstract: true
   components:
   - type: UniformAccessoryHolder
-    startingAccessories: [ RMCPatchUNMC ]
+    startingAccessories: [RMCPatchUNMC]
 
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: JumpsuitMarine
-  name: USCMC uniform
-  description: Standard-issue United States Marine uniform. They have shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: 美国殖民地海军陆战队制服
+  description: 标准配发的美国殖民地海军陆战队制服。这些制服内嵌有轻型凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Marine/standard/jungle.rsi
@@ -32,7 +32,7 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitMarineFormal
-  name: formal marine uniform
+  name: 海军陆战队礼服
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Marine/formal.rsi
@@ -41,8 +41,8 @@
 - type: entity
   parent: JumpsuitMarine
   id: CMJumpsuitMarineEngineer
-  name: USCMC ComTech uniform
-  description: Standard-issue United States Marine combat technician fatigues. They have shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: 美国殖民地海军陆战队战斗技术员制服
+  description: 标准配发的美国海军陆战队战斗技术员制服。它们配有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Marine/engineer/jungle.rsi
@@ -63,8 +63,8 @@
 - type: entity
   parent: JumpsuitMarine
   id: CMJumpsuitMarineMedic
-  name: USCMC corpsman uniform
-  description: Standard-issue United States Marine hospital corpsman fatigues. They have shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: USCMC医务兵制服
+  description: 标准配发的美国海军陆战队医务兵制服。它们带有轻质凯夫拉防护片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Marine/medic/jungle.rsi
@@ -85,8 +85,8 @@
 - type: entity
   parent: JumpsuitMarine
   id: CMJumpsuitMarineRTO
-  name: USCMC radio telephone operator uniform
-  description: Standard-issue United States RTO fatigues. They have shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: USCMC 无线电话务员制服
+  description: 标准配发的美国无线电话务员制服。上面有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Marine/rto/jungle.rsi
@@ -107,13 +107,13 @@
 - type: entity
   parent: JumpsuitMarine
   id: CMJumpsuitMarineSniper
-  name: USCMC sniper uniform
+  name: USCMC狙击手制服
 
 # Tanker
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitMarineTanker
-  name: USCMC tanker uniform
+  name: USCMC坦克兵制服
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Marine/tanker/jungle.rsi
@@ -123,15 +123,15 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: RMCCBRNSuit
-  name: M3 MOPP Suit
-  description: M3 MOPP suits are specially designed and engineered to protect the wearer from unshielded exposure to any Chemical, Biological, Radiological, or Nuclear (CBRN) threats in the field. The suit has a recommended lifespan of twenty-four hours once contact with a toxic environment is made, but depending on the severity this can be shortened to eight hours or less.
+  name: M3 MOPP 防护服
+  description: M3 MOPP 防护服经过专门设计和制造，可在战场上保护穿戴者，使其免于无防护地暴露于任何化学、生物、放射或核（CBRN）威胁。一旦接触有毒环境，该防护服的建议使用寿命为二十四小时，但视严重程度而定，可缩短至八小时或更短。
   components:
   - type: ContainerContainer
     containers:
       toggleable-clothing: !type:ContainerSlot
-        ent: null
-        showEnts: False
-        occludes: True
+        ent:
+        showEnts: false
+        occludes: true
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Marine/cbrnsuit.rsi
   - type: CMArmor
@@ -152,7 +152,7 @@
   id: RMCJumpsuitSunRiders
   components:
   - type: UniformAccessoryHolder
-    startingAccessories: [ RMCPatchSolarDevils ]
+    startingAccessories: [RMCPatchSolarDevils]
 
 # Supply
 
@@ -160,8 +160,8 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitQM
-  name: Logistics Officer suit
-  description: A nicely-fitting military suit for a Logistics Officer. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: 后勤军官套装
+  description: 一件合身的后勤军官军装。它带有轻质凯夫拉护片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Supply/ro.rsi
@@ -170,8 +170,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitCargoTech
-  name: USCMC Requisitions Technician Uniform
-  description: A standard-issue United States Marine Corps requisitions tech uniform.
+  name: 美国殖民地海军陆战队军需技术员制服
+  description: 一件标准配发的美国殖民地海军陆战队军需技术员制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Supply/cargo_tech.rsi
@@ -183,8 +183,8 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitMessTech
-  name: USCMC Mess Technician uniform
-  description: Standard-issue United States Marine Corps Mess Technician uniform. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: 美国殖民地海军陆战队食堂技术员制服
+  description: 标准配发的美国海军陆战队食堂技术员制服。它带有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Supply/chef.rsi
@@ -195,8 +195,8 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitChiefEngineer
-  name: USCMC Chief Engineer Uniform
-  description: A uniform for a military engineer. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: USCMC总工程师制服
+  description: 军事工程师的制服。它带有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Engineering/ec.rsi
@@ -207,8 +207,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: CMJumpsuitMaintTech
-  name: Technician Uniform
-  description: A uniform for a military engineer. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: 技术员制服
+  description: 军用工程师制服。它带有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Engineering/mt.rsi
@@ -219,8 +219,8 @@
 - type: entity
   parent: CMJumpsuitMaintTech
   id: CMJumpsuitOrdnanceTech
-  name: Officer Tech Uniform
-  description: A uniform for an Officer.
+  name: 军官科技制服
+  description: 军官的制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Engineering/ot.rsi
@@ -233,8 +233,8 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitCO
-  name: USCMC Commanding Officer Uniform
-  description: A standard-issue United States Marine Corps commanding officer uniform.
+  name: 美国殖民地海军陆战队指挥官制服
+  description: 标准配发的美国海军陆战队指挥官制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/CO/standard/jungle.rsi
@@ -250,71 +250,71 @@
 - type: entity
   parent: CMJumpsuitCO
   id: CMJumpsuitCOFormalBlack
-  name: USCMC Formal Commanding Officer Uniform
-  description: The standard-issue formal uniform for a United States Marine Corps commanding officer.
+  name: USCMC正式指挥官制服
+  description: 美国海军陆战队指挥官的标准配发正式制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/CO/formal_black.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: entity
   parent: CMJumpsuitCO
   id: CMJumpsuitCOFormalWhite
-  name: USCMC Formal Commanding Officer Uniform
-  description: The standard-issue formal uniform for a United States Marine Corps commanding officer.
+  name: 美国殖民地海军陆战队正式指挥官制服
+  description: 美国殖民地海军陆战队指挥官的标准配发正式制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/CO/formal_white.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: entity
   parent: CMJumpsuitCO
   id: CMJumpsuitCOService
-  name: USCMC Commanding Officer's Dress Shirt
-  description: The shirt and tie of a two-piece Navy service dress uniform for high-ranking officers. Wear with style and substance.
+  name: USCMC指挥官礼服衬衫
+  description: 高级军官两件式海军礼服制服的衬衫和领带。穿出风格与内涵。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/CO/service.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: entity
   parent: CMJumpsuitCOService
   id: RMCJumsuitWhiteService
-  name: White Service Uniform
-  description: A white dress shirt and tie with sleek pants. Standard clothing for anyone on professional business.
+  name: 白色服务制服
+  description: 白色正装衬衫和领带，搭配修身长裤。任何从事专业商务人士的标准着装。
 
 - type: entity
   parent: CMJumpsuitCO
   id: RMCJumpsuitCOUniform
-  name: USCMC officer uniform
-  description: The well-ironed utility uniform of a USCMC officer. Even looking at it the wrong way could result in being court-martialed. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: 美国殖民地海军陆战队军官制服
+  description: 美国殖民地海军陆战队军官那熨烫平整的勤务制服。哪怕只是看它的眼神不对，都可能让你被送上军事法庭。它带有轻质凯夫拉碎片，有助于防御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/CO/jumpsuit.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 - type: entity
   parent: CMJumpsuitCO
   id: RMCJumpsuitCOUniformGray
-  name: Commanding Officer's gray formal uniform
-  description: A well-ironed USCMC officer uniform  intended for parades or hot weather. Wear this with pride.
+  name: 指挥官灰色礼服
+  description: 一件熨烫平整的USCMC军官制服，适合阅兵或炎热天气穿着。自豪地穿上它吧。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/CO/grey_jumpsuit.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
 
 # Executive officer
 
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitXOFormal
-  name: USCMC Marine Formal Service Uniform
-  description: A formal service uniform typically worn by marines of the UNMC. Still practicable while still being more formal than the standard service uniform.
+  name: 美国殖民地海军陆战队正式勤务制服
+  description: 一种通常由美国殖民地海军陆战队队员穿着的正式勤务制服。比标准勤务制服更正式，同时仍然实用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/formal_service.rsi
@@ -327,8 +327,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: RMCJumpsuitASOBlack
-  name: USCMC Auxiliary Support Officer Black Uniform
-  description: A service uniform typycally used by Auxiliary Support Officers. This one is colored black.
+  name: USCMC辅助支援官黑色制服
+  description: 辅助支援官通常穿着的勤务制服。这件是黑色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/ASO/aso_black.rsi
@@ -339,8 +339,8 @@
 - type: entity
   parent: RMCJumpsuitASOBlack
   id: RMCJumpsuitASOFormal
-  name: USCMC Auxiliary Support Officer Formal Uniform
-  description: A pearly white formal uniform used by Auxiliary Support Officers.
+  name: USCMC辅助支援军官正式制服
+  description: 一套供辅助支援军官使用的珍珠白色正式制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/ASO/aso_formal.rsi
@@ -349,9 +349,9 @@
 - type: entity
   parent: RMCJumpsuitASOBlack
   id: RMCJumpsuitASOFormalAlt
-  name: USCMC Auxiliary Support Officer Formal Uniform
+  name: USCMC辅助支援军官正式制服
   suffix: Alternative
-  description: A pearly white formal uniform with black pants used by Auxiliary Support Officers.
+  description: 一套配黑色裤子的珍珠白正式制服，供辅助支援军官使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/ASO/aso_formal_alt.rsi
@@ -359,9 +359,9 @@
 - type: entity
   parent: RMCJumpsuitASOBlack
   id: RMCJumpsuitASOBlackAlt
-  name: Auxiliary Support Officer Black Uniform
+  name: 辅助支援官黑色制服
   suffix: Alternative
-  description: A service uniform typycally used by Auxiliary Support Officers. This one is colored black with green stripes.
+  description: 一种通常由辅助支援官穿着的勤务制服。这件为黑色，带有绿色条纹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/ASO/aso_black_alt.rsi
@@ -369,8 +369,8 @@
 - type: entity
   parent: RMCJumpsuitASOBlack
   id: RMCJumpsuitASOOperations
-  name: auxiliary support officer operations uniform
-  description: An operations uniform typically used by Auxiliary Support Officers. This one has a dark blue camo pattern.
+  name: 辅助支援官行动制服
+  description: 一种通常由辅助支援官使用的行动制服。这件制服采用深蓝色迷彩图案。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/ASO/aso_operations.rsi
@@ -379,8 +379,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitBO
-  name: USCMC Marine Service Uniform
-  description: A service uniform worn by members of the USCMC. Do the corps proud. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: 美国殖民地海军陆战队常服
+  description: 美国殖民地海军陆战队成员穿着的常服。为陆战队争光。它带有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/bo.rsi
@@ -391,8 +391,8 @@
 - type: entity
   parent: CMJumpsuitBO
   id: CMJumpsuitOperations
-  name: USCMC Marine Operations Uniform
-  description: An operations uniform worn by members of the USCMC. Do the corps proud. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: USCMC 海军陆战队作战制服
+  description: USCMC成员穿着的作战制服。为陆战队争光。它带有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/boiler/jungle.rsi
@@ -412,8 +412,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: RMCUniformIntel
-  name: USCMC Marine Intelligence Officer Uniform
-  description: Tighter than a vice. Slicker than beard oil. Covered from head to toe in pouches, pockets, bags, straps, and belts. Clearly, you are not only the most intelligent of intelligence officers, but the most fashionable as well. This suit took an entire R&D team five days to develop. It is more expensive than the entire Almayer... probably.
+  name: USCMC海军陆战队情报官制服
+  description: 比老虎钳还紧。比胡须油还顺滑。从头到脚挂满小袋、口袋、包、绑带和腰带。显然，你不仅是情报官中最聪明的一位，也是最时尚的一位。这套制服花了整个研发团队五天时间开发。它比整艘阿尔迈耶号还贵……大概吧。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/intel/jungle.rsi
@@ -439,8 +439,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitPilot
-  name: USCMC Pilot Bodysuit
-  description: A bodysuit worn by pilots of the united states marines, and is meant for survival in inhospitable conditions. Fly the marines onwards to glory. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: 美国殖民地海军陆战队飞行员连体服
+  description: 美国殖民地海军陆战队飞行员穿着的连体服，旨在在恶劣环境中求生。让海军陆战队继续飞向荣耀。它带有轻质凯夫拉碎片，有助于抵御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Auxiliary/pilot/jungle.rsi
@@ -451,8 +451,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: RMCJumpsuitPilotAlt
-  name: tactical pilot officer flightsuit
-  description: A flightsuit worn by pilot officers of the UNMC, with plenty of leather straps, pouches, and other essential gear you will never use. Looks badass.
+  name: 战术飞行员军官飞行服
+  description: UNMC飞行员军官穿着的飞行服，配有许多皮革束带、小包和其他你永远用不上的必备装备。看起来帅爆了。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Auxiliary/pilot_alt.rsi
@@ -461,8 +461,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: CMJumpsuitDCC
-  name: USCMC Dropship Crew Chief Bodysuit
-  description: A bodysuit worn by dropship crew chiefs of the USCMC, and is meant for survival in inhospitable conditions. It has shards of light Kevlar to help protect against stabbing weapons and bullets.
+  name: USCMC运输机机组长连体服
+  description: 一种由USCMC运输机机组长穿着的连体服，旨在在恶劣环境中生存。它带有轻质凯夫拉碎片，有助于防御刺击武器和子弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Auxiliary/crewchief.rsi
@@ -473,8 +473,8 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitTShirtWhite
-  name: white tshirt
-  description: Simple pair of tshirt and pants.
+  name: 白色T恤
+  description: 简单的T恤和裤子搭配。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/T-shirt/white.rsi
@@ -482,7 +482,7 @@
 - type: entity
   parent: CMJumpsuitTShirtWhite
   id: CMJumpsuitTShirtRed
-  name: red tshirt
+  name: 红色T恤
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/T-shirt/red.rsi
@@ -490,7 +490,7 @@
 - type: entity
   parent: CMJumpsuitTShirtWhite
   id: CMJumpsuitTShirtGray
-  name: gray tshirt
+  name: 灰色T恤
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/T-shirt/gray.rsi
@@ -501,8 +501,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitColonist
-  name: colonist uniform
-  description: A stylish gray-green jumpsuit - standard issue for colonists.
+  name: 殖民者制服
+  description: 一件时尚的灰绿色连体服——殖民者的标准配发服装。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Survivor/colonist.rsi
@@ -511,8 +511,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitSurvivorMarine
-  name: USCMC uniform
-  description: Torn, Burned and blood stained. This uniform has seen much more than you could possibly imagine.
+  name: 美国殖民地海军陆战队制服
+  description: 破损、烧焦且血迹斑斑。这套制服所经历的远比你所能想象的要多得多。
   suffix: FORECON, Survivor
   components:
   - type: Sprite
@@ -539,8 +539,8 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitGeneral
-  name: general's uniform
-  description: A uniform worn by a fleet general. It comes in a shade of deep black, and has a light shimmer to it. The weave looks strong enough to provide some light protections.
+  name: 将军制服
+  description: 舰队将军所穿的制服。它呈深黑色，并带有淡淡的光泽。其织法看起来足够结实，能提供一些轻微防护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Command/general.rsi
@@ -549,8 +549,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCFoldableUniformBase]
   id: CMJumpsuitSyntheticPristine
-  name: USCMC pristine support uniform
-  description: A simple uniform made for synthetic crew members, this one is in Weyland-Yutani's signature black and orange color scheme.
+  name: USCMC崭新支援制服
+  description: 为合成人船员制作的简单制服，这件采用维兰德-尤坦尼标志性的黑橙配色。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Synthetic/pristine.rsi
@@ -561,8 +561,8 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitAverageJoe
-  name: working joe uniform
-  description: A cheap, utilitarian uniform made for Novaris Industries' Working Joe line of synthetics.
+  name: 工作乔制服
+  description: 一种为诺瓦里斯工业公司的工作乔系列合成人制作的廉价、实用的制服。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Synthetic/joe.rsi
@@ -570,8 +570,8 @@
 - type: entity
   parent: RMCMarineUniformBase
   id: CMJumpsuitSyntheticOutdated
-  name: outdated synthetic support uniform
-  description: An outdated version of the USCMC synthetic support uniform. Despite the age, it is still very stylish and practical.
+  name: 过时的合成人支援制服
+  description: USCMC合成人支援制服的过时版本。尽管年代久远，它仍然非常时尚且实用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Synthetic/outdated_synth.rsi
@@ -579,8 +579,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: RMCJumpsuitSynthetic
-  name: USCMC Support Uniform
-  description: A simple uniform made for Synthetic crewmembers
+  name: USCMC支援制服
+  description: 一件为合成人船员制作的简易制服
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Uniforms/Synthetic/synthetic_support.rsi

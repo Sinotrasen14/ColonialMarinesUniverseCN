@@ -2,13 +2,13 @@
   abstract: true
   parent: BaseItem
   id: BaseMagazineBoxPistol
-  name: ammunition box (.35 auto)
+  name: 弹药箱（.35自动） | ammunition box (.35 auto)
   components:
   - type: BallisticAmmoProvider
     mayTransfer: true
     whitelist:
       tags:
-        - CartridgePistol
+      - CartridgePistol
     proto: CartridgePistol
     capacity: 60
   - type: Item
@@ -28,8 +28,8 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistol
-  name: ammunition box (.35 auto)
-  description: A cardboard box of .35 auto rounds. Intended to hold general-purpose kinetic ammunition.
+  name: 弹药盒（.35自动） | ammunition box (.35 auto)
+  description: 一盒纸板装的.35自动子弹。用于盛放通用动能弹药。 | A cardboard box of .35 auto rounds. Intended to hold general-purpose kinetic ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistol
@@ -43,8 +43,8 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolPractice
-  name: ammunition box (.35 auto practice)
-  description: A cardboard box of .35 auto rounds. Intended to hold harmless practice ammunition.
+  name: 弹药盒（.35自动手枪练习弹） | ammunition box (.35 auto practice)
+  description: 一盒纸板装的.35自动手枪练习弹。用于装填无害的练习弹药。 | A cardboard box of .35 auto rounds. Intended to hold harmless practice ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolPractice
@@ -59,8 +59,8 @@
 - type: entity
   id: MagazineBoxPistolIncendiary
   parent: BaseMagazineBoxPistol
-  name: ammunition box (.35 auto incendiary)
-  description: A cardboard box of .35 auto rounds. Intended to hold self-igniting incendiary ammunition.
+  name: 弹药盒（.35自动燃烧弹） | ammunition box (.35 auto incendiary)
+  description: 一盒纸板装的.35自动子弹。用于装填自燃燃烧弹。 | A cardboard box of .35 auto rounds. Intended to hold self-igniting incendiary ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolIncendiary
@@ -75,8 +75,8 @@
 - type: entity
   parent: BaseMagazineBoxPistol
   id: MagazineBoxPistolUranium
-  name: ammunition box (.35 auto uranium)
-  description: A cardboard box of .35 auto rounds. Intended to hold exotic uranium-core ammunition.
+  name: 弹药盒（.35自动铀弹） | ammunition box (.35 auto uranium)
+  description: 一盒纸板装的.35自动子弹。用于装填异种铀芯弹药。 | A cardboard box of .35 auto rounds. Intended to hold exotic uranium-core ammunition.
   components:
   - type: BallisticAmmoProvider
     proto: CartridgePistolUranium

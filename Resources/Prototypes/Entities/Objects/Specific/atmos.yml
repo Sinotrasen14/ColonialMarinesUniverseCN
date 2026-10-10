@@ -1,15 +1,15 @@
 - type: entity
-  name: gas analyzer
+  name: 气体分析仪 | gas analyzer
   parent: BaseItem
   id: GasAnalyzer
-  description: A hand-held environmental scanner which reports current gas levels.
+  description: 手持式环境扫描仪，可报告当前气体水平。 | A hand-held environmental scanner which reports current gas levels.
   suffix: Use CMUAtmosScanner # CMU14
   components:
   - type: Sprite
     sprite: Objects/Specific/Atmos/gasanalyzer.rsi
     layers:
-      - state: icon
-        map: ["analyzer"]
+    - state: icon
+      map: ["analyzer"]
   - type: GasAnalyzer
   - type: ActivatableUI
     inHandsOnly: true
@@ -23,10 +23,10 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-        enum.GasAnalyzerVisuals.Enabled:
-          enabled:
-            True: { state: working }
-            False: { state: icon }
+      enum.GasAnalyzerVisuals.Enabled:
+        enabled:
+          true: {state: working}
+          false: {state: icon}
   - type: StaticPrice
     price: 80
   - type: PhysicalComposition

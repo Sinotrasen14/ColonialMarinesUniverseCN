@@ -9,7 +9,6 @@
       - CrewMonitoringConsole
       tags:
       - Stunbaton
-      #TODO any analyzer - plant etc
       - Radio
       - RMCG8Pouch
       - Crowbar
@@ -27,19 +26,21 @@
       - RMCMacheteScabbard
       - RMCScabbardKatana
       - RMCDetector
-
 - type: entity
-  parent: [ClothingOuterStorageBase, RMCAllowSuitStorageClothingExternalWebbing, RMCBaseUniformAccessoryItemOuterClothing]
+  parent:
+  - ClothingOuterStorageBase
+  - RMCAllowSuitStorageClothingExternalWebbing
+  - RMCBaseUniformAccessoryItemOuterClothing
   id: RMCOuterClothingExternalWebbing
-  name: external webbing
-  description: Designed to be worn over a jumpsuit rather than clipped on.
+  name: 外部织带
+  description: 设计为穿在连体服外，而不是夹扣固定。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/external_webbing.rsi
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,3,1 # 2 slots
+    - 0,0,3,1
   - type: FixedItemSizeStorage
   - type: IgnoreContentsSize
     items:
@@ -49,7 +50,6 @@
       - PillCanister
       - CMSurgicalCase
       - RMCSyringeCase
-
 - type: entity
   parent: RMCOuterClothingExternalWebbing
   id: RMCOuterClothingExternalWebbingBrown
@@ -57,7 +57,6 @@
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/external_webbing_brown.rsi
-
 - type: entity
   parent: RMCOuterClothingExternalWebbing
   id: RMCOuterClothingExternalWebbingBlack

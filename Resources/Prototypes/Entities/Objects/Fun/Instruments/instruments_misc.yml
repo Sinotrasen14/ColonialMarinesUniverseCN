@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: BaseHandheldInstrument
   id: MusicalLungInstrument
-  name: musical lung
-  description: The spiritual and magical lung of a former opera singer. Though, to be honest, the vocal chords make the performance.
+  name: 音乐肺 | musical lung
+  description: 前歌剧歌手的精神与魔法之肺。不过，说实话，声带才是表演的关键。 | The spiritual and magical lung of a former opera singer. Though, to be honest, the vocal chords make the performance.
   components:
   - type: Sprite
     sprite: Mobs/Species/Human/organs.rsi
@@ -15,8 +15,8 @@
 - type: entity
   parent: BaseHandheldInstrument
   id: SeashellInstrument
-  name: seashell
-  description: For laying down the shoreline beat.
+  name: 海螺 | seashell
+  description: 为了定下海岸线的节奏。 | For laying down the shoreline beat.
   components:
   - type: Sprite
     sprite: Objects/Fun/Instruments/otherinstruments.rsi
@@ -29,8 +29,8 @@
 - type: entity
   parent: BaseHandheldInstrument
   id: BirdToyInstrument
-  name: bird whistle
-  description: A delightful little whistle in the shape of a bird. It sings beautifully.
+  name: 鸟哨 | bird whistle
+  description: 一只造型为小鸟的可爱哨子。它唱起歌来十分动听。 | A delightful little whistle in the shape of a bird. It sings beautifully.
   components:
   - type: Sprite
     sprite: Objects/Fun/Instruments/otherinstruments.rsi
@@ -44,15 +44,15 @@
 - type: entity
   parent: BaseHandheldInstrument
   id: PhoneInstrument
-  name: red phone
-  description: Should anything ever go wrong...
+  name: 红色电话 | red phone
+  description: 万一出了什么差错…… | Should anything ever go wrong...
   components:
   - type: Sprite
     sprite: Objects/Fun/Instruments/otherinstruments.rsi
     state: red_phone
   - type: EmitSoundOnLand
     sound:
-       path: /Audio/Items/ring.ogg
+      path: /Audio/Items/ring.ogg
   - type: Instrument
     program: 124
   - type: Item
@@ -62,13 +62,13 @@
     sentMessage: prayer-popup-notify-centcom-sent
     notificationPrefix: prayer-chat-notify-centcom
     verb: prayer-verbs-call
-    verbImage: null
+    verbImage:
 
 - type: entity
   parent: PhoneInstrument
   id: PhoneInstrumentSyndicate
-  name: blood-red phone
-  description: For evil people to call their friends.
+  name: 血红色的电话 | blood-red phone
+  description: 供邪恶之人给他们的朋友打电话用。 | For evil people to call their friends.
   components:
   - type: Sprite
     sprite: Objects/Fun/Instruments/blood_red_phone.rsi
@@ -80,8 +80,8 @@
 - type: entity
   parent: BaseHandheldInstrument
   id: HelicopterInstrument
-  name: toy helicopter
-  description: Ch-ka-ch-ka-ch-ka-ch-ka-ch-ka-ch-ka...
+  name: 玩具直升机 | toy helicopter
+  description: 咔-咔-咔-咔-咔-咔-咔-咔-咔…… | Ch-ka-ch-ka-ch-ka-ch-ka-ch-ka-ch-ka...
   components:
   - type: Sprite
     sprite: Objects/Fun/Instruments/otherinstruments.rsi
@@ -95,8 +95,8 @@
 - type: entity
   parent: BaseHandheldInstrument
   id: CannedApplauseInstrument
-  name: canned applause
-  description: Seems like someone already used it all up...
+  name: 罐装掌声 | canned applause
+  description: 看起来有人已经把它用光了…… | Seems like someone already used it all up...
   components:
   - type: Sprite
     sprite: Objects/Fun/Instruments/otherinstruments.rsi
@@ -109,8 +109,8 @@
 - type: entity
   parent: BaseHandheldInstrument
   id: GunpetInstrument
-  name: gunpet
-  description: Why do you need to examine this? Is it not self-explanatory?
+  name: 枪宠 | gunpet
+  description: 你为什么需要检查这个？这不是不言自明吗？ | Why do you need to examine this? Is it not self-explanatory?
   components:
   - type: Instrument
     program: 127
@@ -127,8 +127,8 @@
 - type: entity
   parent: BaseHandheldInstrument
   id: BikeHornInstrument
-  name: gilded bike horn
-  description: An exquisitely decorated bike horn, capable of honking in a variety of notes.
+  name: 镀金自行车喇叭 | gilded bike horn
+  description: 一个装饰精美的自行车喇叭，能够发出各种音调。 | An exquisitely decorated bike horn, capable of honking in a variety of notes.
   components:
   - type: Instrument
     program: 1
@@ -148,14 +148,14 @@
 - type: entity
   parent: PhoneInstrument
   id: BananaPhoneInstrument
-  name: banana phone
-  description: A direct line to the Honkmother. Seems to always go to voicemail.
+  name: 香蕉电话 | banana phone
+  description: 直通小丑圣母的专线。似乎总是转到语音信箱。 | A direct line to the Honkmother. Seems to always go to voicemail.
   components:
   - type: Sprite
     state: banana_phone
   - type: EmitSoundOnLand
     sound:
-       path: /Audio/Items/bikehorn.ogg
+      path: /Audio/Items/bikehorn.ogg
   - type: Slippery
   - type: StepTrigger
   - type: CollisionWake
@@ -163,15 +163,13 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.3,0.4,0.3"
         hard: false
         layer:
         - SlipLayer
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.3,0.4,0.3"
         density: 5
         mask:
@@ -180,4 +178,4 @@
     sentMessage: prayer-popup-notify-honkmother-sent
     notificationPrefix: prayer-chat-notify-honkmother
     verb: prayer-verbs-call
-    verbImage: null
+    verbImage:

@@ -1,8 +1,8 @@
 - type: entity
   id: BodyBag
-  parent: [ BaseDeployFoldable, BasePaperLabelableVisualized ]
-  name: body bag
-  description: A plastic bag designed for the storage and transportation of cadavers to stop body decomposition.
+  parent: [BaseDeployFoldable, BasePaperLabelableVisualized]
+  name: 尸袋 | body bag
+  description: 一种用于存放和运输尸体以阻止尸体腐烂的塑料袋。 | A plastic bag designed for the storage and transportation of cadavers to stop body decomposition.
   components:
   - type: Item
     size: Small
@@ -36,8 +36,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.4,0.25,0.1"
         density: 80
         mask:
@@ -47,8 +46,8 @@
     isCollidableWhenOpen: true
     whitelist: # Use a tag whitelist rather than filtering for PerishableComponent to avoid chefs using body bags for food preservation
       tags:
-        - VimPilot # Pets
-        - CanPilot # People
+      - VimPilot   # Pets
+      - CanPilot   # People
     closeSound:
       path: /Audio/Misc/zip.ogg
     openSound:
@@ -61,21 +60,21 @@
     visuals:
       enum.PaperLabelVisuals.HasLabel:
         enum.PaperLabelVisuals.Layer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
       enum.PaperLabelVisuals.LabelType:
         enum.PaperLabelVisuals.Layer:
-          Paper: { state: paper }
-          Bounty: { state: bounty }
-          CaptainsPaper: { state: captains_paper }
-          Invoice: { state: invoice }
+          Paper: {state: paper}
+          Bounty: {state: bounty}
+          CaptainsPaper: {state: captains_paper}
+          Invoice: {state: invoice}
       enum.FoldedVisuals.State:
         foldedLayer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
         unfoldedLayer:
-          True: {visible: false}
-          False: {visible: true}
+          true: {visible: false}
+          false: {visible: true}
   - type: Pullable
   - type: AntiRottingContainer
   - type: ContainerContainer
@@ -87,8 +86,8 @@
 
 - type: entity
   id: BodyBagFolded
-  name: body bag
-  description: A plastic bag designed for the storage and transportation of cadavers to stop body decomposition.
+  name: 尸袋 | body bag
+  description: 一种用于存放和运输尸体以阻止尸体腐烂的塑料袋。 | A plastic bag designed for the storage and transportation of cadavers to stop body decomposition.
   parent: BodyBag
   suffix: folded
   components:
@@ -102,8 +101,8 @@
 - type: entity
   parent: [SolutionFood, SolutionTiny, BaseItem]
   id: Ash
-  name: ash
-  description: This used to be something, but now it's not.
+  name: 灰 | ash
+  description: 这曾经是某种东西，但现在不是了。 | This used to be something, but now it's not.
   components:
   - type: Item
     size: Tiny
@@ -130,16 +129,16 @@
 - type: entity
   parent: Ash
   id: Ectoplasm
-  name: ectoplasm
-  description: Much less deadly in this form.
+  name: 灵质 | ectoplasm
+  description: 在这种形态下致命性大大降低。 | Much less deadly in this form.
   components:
   - type: Sprite
     sprite: Mobs/Ghosts/revenant.rsi
     state: ectoplasm
   - type: Tag
     tags:
-      - Trash
-      - Ectoplasm
+    - Trash
+    - Ectoplasm
   - type: Solution
     solution:
       reagents:

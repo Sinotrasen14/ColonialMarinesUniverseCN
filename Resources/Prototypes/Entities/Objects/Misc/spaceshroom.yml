@@ -1,59 +1,57 @@
 - type: entity
-  parent: [ BaseStructure, StructureHealthFurniture ]
+  parent: [BaseStructure, StructureHealthFurniture]
   id: Spaceshroom
-  name: spaceshroom
+  name: 太空蘑菇 | spaceshroom
   suffix: Structure
-  description: A cluster of wild mushrooms that likes to grow in dark, moist environments.
+  description: 一簇喜欢在阴暗潮湿环境中生长的野生蘑菇。 | A cluster of wild mushrooms that likes to grow in dark, moist environments.
   components:
-    - type: Sprite
-      sprite: Objects/Misc/spaceshroom.rsi
-      state: structure
-    - type: Transform
-      anchored: true
-    - type: Physics
-      bodyType: Static
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeCircle
-            radius: 0.2
-    - type: InteractionOutline
-    - type: Gatherable
-      toolWhitelist:
-        components:
-          - Hands
-      loot:
-        All: !type:GroupSelector
-          children:
-          - id: FoodSpaceshroom
-    - type: Damageable
-      damageModifierSet: WoodMod
-    - type: Injurable
-      damageContainer: StructuralBiological
-    - type: Destructible
-      thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 40
-        behaviors:
-        - !type:PlaySoundBehavior
-          sound:
-            path: /Audio/Effects/tree_fell.ogg
-            params:
-              volume: -5
-              variation: 0.05
-        - !type:SpawnEntitiesBehavior
-          spawn:
-            FoodSpaceshroom:
-              min: 0
-              max: 1
+  - type: Sprite
+    sprite: Objects/Misc/spaceshroom.rsi
+    state: structure
+  - type: Transform
+    anchored: true
+  - type: Physics
+    bodyType: Static
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeCircle
+          radius: 0.2
+  - type: InteractionOutline
+  - type: Gatherable
+    toolWhitelist:
+      components:
+      - Hands
+    loot:
+      All: !type:GroupSelector
+        children:
+        - id: FoodSpaceshroom
+  - type: Damageable
+    damageModifierSet: WoodMod
+  - type: Injurable
+    damageContainer: StructuralBiological
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 40
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          path: /Audio/Effects/tree_fell.ogg
+          params:
+            volume: -5
+            variation: 0.05
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          FoodSpaceshroom:
+            min: 0
+            max: 1
 
 - type: entity
-  name: spaceshroom
+  name: 太空蘑菇 | spaceshroom
   parent: [SolutionSmall, FoodProduceBase]
   id: FoodSpaceshroom
-  description: A wild mushroom. There's no telling what effect it could have...
+  description: 一朵野生蘑菇。无法预知它会产生什么效果…… | A wild mushroom. There's no telling what effect it could have...
   components:
   - type: Produce
   - type: Sprite
@@ -61,7 +59,7 @@
     state: object
   - type: FlavorProfile
     flavors:
-      - spaceshroom
+    - spaceshroom
   - type: Extractable
     juiceSolution:
       reagents:
@@ -82,8 +80,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 1
         mask:
@@ -131,14 +128,14 @@
 
 # Cooked Object
 - type: entity
-  name: cooked spaceshroom
+  name: 熟太空菇 | cooked spaceshroom
   parent: [SolutionSmall, FoodProduceBase]
   id: FoodSpaceshroomCooked
-  description: A wild mushroom that has been cooked through. It seems the heat has removed its chemical effects.
+  description: 一种煮熟的野生蘑菇。高温似乎已经去除了它的化学效果。 | A wild mushroom that has been cooked through. It seems the heat has removed its chemical effects.
   components:
   - type: FlavorProfile
     flavors:
-      - spaceshroomcooked
+    - spaceshroomcooked
   - type: Solution
     solution:
       reagents: # Cooked means no drugs I guess? Lame!

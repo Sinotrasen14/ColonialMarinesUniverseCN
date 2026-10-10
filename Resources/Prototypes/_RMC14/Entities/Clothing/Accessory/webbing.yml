@@ -2,7 +2,7 @@
   parent: BaseItem
   abstract: true
   id: CMWebbingBase
-  name: webbing
+  name: 胸挂
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Webbing/webbing.rsi
@@ -45,7 +45,7 @@
 - type: entity
   parent: CMWebbingBase
   id: CMWebbing
-  name: webbing
+  name: 胸挂
   description: A sturdy mess of synthcotton belts and buckles, ready to share your burden.
   components:
   - type: Sprite
@@ -98,7 +98,7 @@
 - type: entity
   parent: CMWebbingBrown
   id: RMCWebbingLegPouch
-  name: leg pouch
+  name: 腿包
   description: A camo conforming leg pouch usually worn by hunters, military and people who dream of being military.
   components:
   - type: Sprite
@@ -116,7 +116,7 @@
 - type: entity
   parent: CMWebbingBrown
   id: RMCWebbingLegPouchBlack
-  name: black leg pouch
+  name: 黑色腿包
   description: A black leg pouch usually worn by hunters, military and people who dream of being military.
   components:
   - type: Sprite
@@ -126,7 +126,7 @@
 - type: entity
   parent: CMWebbing
   id: RMCWebbingBlackSmall
-  name: black webbing
+  name: 黑色胸挂
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Webbing/webbing_black_small.rsi
@@ -139,7 +139,7 @@
 - type: entity
   parent: CMWebbingBase
   id: CMWebbingBlack
-  name: black webbing vest
+  name: 黑色胸挂背心
   description: Robust black synthcotton vest with lots of pockets to hold whatever you need, but cannot hold in hands.
   components:
   - type: Sprite
@@ -189,7 +189,7 @@
 - type: entity
   parent: CMWebbingBlack
   id: CMWebbingBrown
-  name: brown webbing vest
+  name: 棕色胸挂背心
   description: Worn brownish synthcotton vest with lots of pockets to unload your hands.
   components:
   - type: Sprite
@@ -223,7 +223,7 @@
 - type: entity
   parent: CMWebbingBase
   id: CMWebbingHolster
-  name: shoulder holster
+  name: 肩部枪套
   description: A handgun holster with an attached pouch, allowing two magazines or speedloaders to be stored along with it.
   components:
   - type: Sprite
@@ -297,7 +297,7 @@
 - type: entity
   parent: CMWebbing
   id: RMCParaWebbing
-  name: paramarine webbing
+  name: 伞兵胸挂
   description: A durable harness system issued to the RCM's Paramarines, designed to distribute weight evenly for comfort and mobility. Fitted with reinforced pouches for carrying essential gear during high-risk insertions.
   suffix: Paramarine, Survivor
   components:
@@ -309,7 +309,7 @@
 - type: entity
   parent: RMCParaWebbing
   id: RMCParaWebbingL88
-  name: paramarine webbing
+  name: 医疗兵胸挂
   suffix: Paramarine, Survivor, Filled, L88
   components:
     - type: StorageFill
@@ -321,7 +321,7 @@
 - type: entity
   parent: RMCParaWebbing
   id: RMCParaWebbingPDW90AP
-  name: paramarine webbing
+  name: 医疗兵胸挂
   suffix: Paramarine, Survivor, Filled, PDW90
   components:
     - type: StorageFill
@@ -344,7 +344,7 @@
 - type: entity
   parent: CMWebbingHolster
   id: RMCWebbingHolsterBlack
-  name: black shoulder holster
+  name: 黑色肩部枪套
   description: A black handgun holster with an attached pouch, allowing two magazines or speedloaders to be stored along with it.
   components:
   - type: Sprite
@@ -402,8 +402,8 @@
 - type: entity
   parent: CMWebbingBase
   id: RMCWebbingDropPouch
-  name: drop pouch
-  description: A convenient pouch to carry loose items around.
+  name: 小口袋
+  description: 一个方便携带零散物品的小袋子。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Webbing/drop_pouch.rsi
@@ -451,7 +451,7 @@
 - type: entity
   parent: RMCWebbingDropPouch
   id: RMCWebbingDropPouchBlack
-  name: black drop pouch
+  name: 黑色小口袋
   description: A convenient pouch to carry loose items around.
   components:
   - type: Sprite
@@ -492,8 +492,8 @@
 - type: entity
   parent: CMWebbingBase
   id: RMCWebbingClipOnPouch
-  name: clip-on pouch
-  description: A clip on synth-leather pouch designed to house a small collection of items for ML66A weapon operators.
+  name: 夹式小包
+  description: 一个带夹子的合成皮革袋，设计用来存放ML66A武器操作员的小型物品收藏。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Webbing/ml66a_pouch.rsi
@@ -530,8 +530,8 @@
 - type: entity
   parent: CMWebbingBase
   id: RMCWebbingGrenade
-  name: clip-on grenade band
-  description: A sturdy mess of synth-leather band designed to store a few grenades for ML66A weapon operators.
+  name: 夹式手榴弹带
+  description: 一个结实的合成皮带混乱体，设计用来为 ML66A 武器操作员存放几个手榴弹。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Webbing/grenade_pouch.rsi
@@ -562,7 +562,7 @@
 - type: entity
   parent: CMWebbing
   id: RMCToolWebbingSmall
-  name: small tool webbing
+  name: 小工具袋
   description: A brown synthcotton webbing that is similar in function to civilian tool aprons, but is more durable for field usage. This is the small low-budget version.
   components:
   - type: Sprite
@@ -662,8 +662,8 @@
 - type: entity
   parent: RMCToolWebbingSmall
   id: RMCToolWebbing
-  name: tool webbing
-  description: A brown synthcotton webbing that is similar in function to civilian tool aprons, but is more durable for field usage.
+  name: 工具带
+  description: 一种棕色的合成棉背带，功能类似于民用工具围裙，但更耐用，适合野外使用。
   components:
   - type: Storage
     grid:
@@ -783,8 +783,8 @@
 - type: entity
   parent: CMWebbingBase
   id: CMWebbingKnives
-  name: M272 pattern knife vest
-  description: An older generation M272 pattern knife vest once employed by the UNMC. Can hold up to 5 knives. It is made of synthcotton.
+  name: M272 型刀背心
+  description: 一件老款的 M272 式军刀背心，曾被 UNMC 使用。最多可放 5 把刀。它是合成棉制成的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Webbing/webbing_knife.rsi
@@ -931,8 +931,8 @@
 - type: entity
   parent: CMWebbingBase
   id: CMWebbingSurgicalGreen
-  name: surgical webbing vest
-  description: A robust webbing vest specially designed to hold a fully array of surgical equipment. Typically issued to field doctors or synthetic personnel.
+  name: 手术胸挂背心
+  description: 一款结实的网眼背心，专门用来携带全套外科设备。通常发给野战医生或合成人员。
   suffix: Medical, Filled
   components:
   - type: Sprite
@@ -988,8 +988,8 @@
 - type: entity
   parent: CMWebbingBase
   id: CMWebbingSurgicalBlue
-  name: surgical webbing vest
-  description: A robust blue webbing vest specially designed to hold a fully array of surgical equipment. Typically issued to field doctors or synthetic personnel.
+  name: 手术胸挂背心
+  description: 一款坚固的蓝色织带背心，专为携带全套外科设备设计。通常发给野战医生或合成人员。
   suffix: Medical, Filled
   components:
   - type: Sprite
@@ -1045,7 +1045,7 @@
 - type: entity
   parent: RMCWebbingDropPouch
   id: RMCToolDropPouchFilled
-  name: tool drop pouch
+  name: 工具小袋
   description: A drop pouch loaded with essential field repair tools.
   components:
   - type: Storage
@@ -1077,9 +1077,9 @@
 - type: entity
   parent: CMWebbingBase
   id: RMCWebbingSurgicalRCM
-  name: MOLS medical carry harness
+  name: MOLS 医疗携带背带
   suffix: Royal
-  description: The L1 pattern Modular Operational Load-Bearing System designates the standard issue set of lightweight load-carrying equipment for the RCM. This configuration features a harness and webbing capable of fitting a wide variety of surgical equipment.
+  description: L1 模块化操作负重系统指的是 RCM 的标准轻量级负重装备套装。这套配置配备了能够兼容各种外科设备的吊带和织带。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Webbing/webbing_surgical_blue.rsi

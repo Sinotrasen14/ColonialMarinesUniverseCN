@@ -1,9 +1,9 @@
 - type: entity
-  parent: [ BaseItem, StructureHealthMachineWeak ]
+  parent: [BaseItem, StructureHealthMachineWeak]
   id: BaseStationBeacon
-  name: station beacon
+  name: 空间站信标 | station beacon
   suffix: Not teleport point, Ninja bombing target blacklist
-  description: A small device that transmits information to station maps. Can be configured.
+  description: 向空间站地图发送信息的小型装置。可配置。 | A small device that transmits information to station maps. Can be configured.
   placement:
     mode: SnapgridCenter
   components:
@@ -18,8 +18,8 @@
     visuals:
       enum.NavMapBeaconVisuals.Enabled:
         base:
-          True: {state: blink}
-          False: {state: icon}
+          true: {state: blink}
+          false: {state: icon}
   - type: ConfigurableNavMapBeacon
   - type: NavMapBeacon
     defaultText: station-beacon-general
@@ -48,8 +48,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -108,8 +107,8 @@
 - type: entity
   parent: BaseItem
   id: StationBeaconPart
-  name: station beacon flatpack
-  description: A flatpack used for constructing a station beacon.
+  name: 空间站信标扁平包装 | station beacon flatpack
+  description: 用于建造空间站信标的扁平包装。 | A flatpack used for constructing a station beacon.
   components:
   - type: Item
     size: Small

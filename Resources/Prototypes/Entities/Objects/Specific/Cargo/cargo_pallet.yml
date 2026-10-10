@@ -1,8 +1,8 @@
 - type: entity
   id: BaseCargoPallet
   parent: BaseStructure
-  name: cargo pallet
-  description: Common fixture of logistics and cargo. Subtle reminder where crates go during transport to avoid bruised shins.
+  name: 货物托盘 | cargo pallet
+  description: 物流与货物的常见固定装置。微妙地提醒运输途中板条箱该放哪里，以免撞伤小腿。 | Common fixture of logistics and cargo. Subtle reminder where crates go during transport to avoid bruised shins.
   abstract: true
   components:
   - type: InteractionOutline
@@ -15,8 +15,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 15
         mask:
@@ -33,15 +32,14 @@
     - Cargo
 
 - type: entity
-  parent: [ BaseCargoPallet, StructureHealthMachineWeak ]
+  parent: [BaseCargoPallet, StructureHealthMachineWeak]
   id: CargoPallet
   components:
   - type: Damageable
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -52,8 +50,8 @@
 
 - type: entity
   id: CargoPalletSell
-  name: cargo selling pallet
-  description: Designates valid items to sell. Made of plastitanium to discourage pesky vandals.
+  name: 货物销售托盘 | cargo selling pallet
+  description: 指定可出售的有效物品。由塑钛制成，以防讨厌的破坏者。 | Designates valid items to sell. Made of plastitanium to discourage pesky vandals.
   parent: BaseCargoPallet
   components:
   - type: CargoPallet
@@ -69,8 +67,8 @@
 
 - type: entity
   id: CargoPalletBuy
-  name: cargo buying pallet
-  description: Designates where orders will appear when purchased. Made of plastitanium to discourage pesky vandals.
+  name: 货物购买托盘 | cargo buying pallet
+  description: 指定购买后订单出现的位置。由塑钛制成，以防讨厌的破坏者。 | Designates where orders will appear when purchased. Made of plastitanium to discourage pesky vandals.
   parent: BaseCargoPallet
   components:
   - type: CargoPallet

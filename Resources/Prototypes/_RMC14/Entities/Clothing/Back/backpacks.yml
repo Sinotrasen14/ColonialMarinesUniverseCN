@@ -3,17 +3,17 @@
   parent: ClothingBackpack
   abstract: true
   id: CMPersonalStorageBase
-  name: backpack
-  description: You wear this on your back and put items into it.
+  name: 背包
+  description: 你把它背在背上，将物品放入其中。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Civilians/standard.rsi
     layers:
     - state: icon
     - state: open
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: closed
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: Appearance
   - type: CMStorageVisualizer
     storageClosed: closedLayer
@@ -44,7 +44,7 @@
     - 0,0,20,1
     blacklist:
       tags:
-        - Backpack
+      - Backpack
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
@@ -80,8 +80,8 @@
 - type: entity
   parent: CMPersonalStorageBase
   id: CMBackpack
-  name: backpack
-  description: You wear this on your back and put items into it.
+  name: 背包
+  description: 你把它背在背上，然后往里面放物品。
   components:
   - type: StorageOpenDoAfter
     skipInHand: true
@@ -92,8 +92,8 @@
 - type: entity
   parent: CMBackpack
   id: CMBackpackEngineer
-  name: industrial backpack
-  description: It's a tough backpack lookin' backpack used by engineers and the like.
+  name: 工业背包
+  description: 这是个看起来就结实的背包，工程师之类的人常用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Civilians/engineer.rsi
@@ -101,8 +101,8 @@
 - type: entity
   parent: CMBackpack
   id: CMBackpackMedical
-  name: medical backpack
-  description: It's a backpack especially designed for use in a sterile environment.
+  name: 医用背包
+  description: 这是一个专为无菌环境使用而设计的背包。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Civilians/medical.rsi
@@ -110,8 +110,8 @@
 - type: entity
   parent: CMBackpack
   id: CMBackpackSecurity
-  name: security backpack
-  description: It's a very robust backpack.
+  name: 安全背包
+  description: 它是一款非常坚固的背包。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Civilians/security.rsi
@@ -119,8 +119,8 @@
 - type: entity
   parent: CMBackpack
   id: CMBackpackCommand
-  name: marine commanding officer backpack
-  description: The contents of this backpack are top secret.
+  name: 海军陆战队指挥官背包
+  description: 这个背包内的物品属于最高机密。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/standard.rsi
@@ -133,8 +133,8 @@
 - type: entity
   parent: CMBackpack
   id: CMBackpackMarine
-  name: lightweight IMP backpack
-  description: The standard-issue pack of the USCM forces. Designed to lug gear into the battlefield.
+  name: 轻型IMP背包
+  description: USCM部队的标准配发背包，专为将装备运往战场而设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/standard/jungle-desert-classic.rsi
@@ -149,8 +149,8 @@
 - type: entity
   parent: CMBackpackMarine
   id: CMBackpackMarineMedic
-  name: medical backpack
-  description: A standard-issue medical backpack.
+  name: 医疗背包
+  description: 标准配发的医疗背包。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/medic/jungle-desert-classic.rsi
@@ -165,8 +165,8 @@
 - type: entity
   parent: CMBackpackMarine
   id: CMBackpackMarineTech
-  name: technician backpack
-  description: A standard-issue backpack worn by technicians.
+  name: 技术员背包
+  description: 技术员佩戴的标准配发背包。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/tech/jungle-desert-classic.rsi
@@ -182,8 +182,8 @@
 - type: entity
   parent: CMBackpack
   id: CMBackpackMortar
-  name: USCM mortar shell backpack
-  description: A backpack specifically designed to hold ammunition for the M402 mortar.
+  name: USCM迫击炮弹背包
+  description: 一款专为存放M402迫击炮弹药而设计的背包。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/mortar/jungle-desert-classic.rsi
@@ -206,8 +206,8 @@
 - type: entity
   parent: CMBackpack
   id: CMBackpackWelder
-  name: technician welderpack
-  description: A specialized backpack worn by technicians. It carries a fueltank for quick welder refueling and use.
+  name: 技师焊工背包
+  description: 技师佩戴的专用背包。它装有一个燃料箱，便于焊工快速补充燃料和使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/Marines/welder/jungle-desert-classic.rsi
@@ -257,8 +257,8 @@
 - type: entity
   parent: CMBackpack
   id: RMCBackpackAmmo
-  name: IMP ammo rack
-  description: A bare IMP frame with buckles designed to hold multiple ammo cans, but can fit any cumbersome box thanks to USCM ingenuity. Helps you lug around extra rounds or supplies.
+  name: IMP弹药架
+  description: 一个光秃秃的 IMP 框架，配有扣带，设计用于固定多个弹药箱，但得益于 USCM 的巧思，也能装下任何笨重的箱子。可帮你搬运额外的弹药或补给。
   components:
   - type: Item
     size: Huge
@@ -288,14 +288,14 @@
       - FullSandbag
       - RMCFoldingBarricadeStack
   - type: CMStorageVisualizer
-    storageClosed: null
-    storageOpen: null
+    storageClosed:
+    storageOpen:
 
 - type: entity
   parent: RMCBackpackAmmo
   id: RMCBackpackAmmoRCM
-  name: RCM carry frame
-  description: A backpack specifically designed to hold equipment for RCM commandos.
+  name: RCM 携行框架
+  description: 一款专为装载RCM突击队装备而设计的背包。
   components:
   - type: Storage
     grid:
@@ -314,24 +314,24 @@
 - type: entity
   parent: CMBackpackWelder
   id: RMCBackpackWelderPMC
-  name: pmc technician welderpack
-  description: Ergonomic, protected, high capacity backpack, designed for Weyland-Yutani PMCs. Features a small fueltank for quick blowtorch refueling.
+  name: PMC技术员焊接背包
+  description: 符合人体工程学、具备防护功能的高容量背包，专为维兰德-汤谷PMC设计。配有小型燃料箱，可快速为喷灯补充燃料。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/PMC/welder.rsi
     layers:
     - state: icon
   - type: CMStorageVisualizer
-    storageClosed: null
-    storageOpen: null
+    storageClosed:
+    storageOpen:
   - type: ItemCamouflage
     camouflageVariations: {}
 
 - type: entity
   parent: RMCSatchelPMC
   id: RMCSatchelPMCCommando
-  name: We-Ya Commando combat backpack
-  description: Ergonomic, protected, high capacity backpack, designed for Weyland-Yutani Commandos.
+  name: 维兰德-汤谷突击队战斗背包
+  description: 符合人体工程学、具有防护功能的大容量背包，专为维兰德-汤谷突击队设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Back/Backpacks/PMC/commando.rsi
@@ -341,8 +341,8 @@
 - type: entity
   parent: CMPersonalStorageBase
   id: RMCBackpackRCMSmall
-  name: lightweight RCM backpack
-  description: "A TSE military light-carry RCM combat pack MK3."
+  name: 轻量级RCM背包
+  description: "一款TSE军用轻量携行RCM作战背包MK3。"
   suffix: PVE, RCM
   components:
   - type: Sprite
@@ -350,9 +350,9 @@
     layers:
     - state: icon
     - state: open
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: closed
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: CMStorageVisualizer
     storageClosed: closedLayer
     storageOpen: openLayer
@@ -374,8 +374,8 @@
 - type: entity
   parent: CMPersonalStorageBase
   id: RMCBackpackRCMMedium
-  name: standard RCM backpack
-  description: "A TSE military standard-carry RCM combat pack MK3."
+  name: 标准RCM背包
+  description: "一款TSE军用标准携行RCM作战背包MK3。"
   suffix: PVE, RCM
   components:
   - type: Sprite
@@ -383,9 +383,9 @@
     layers:
     - state: icon
     - state: open
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: closed
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: CMStorageVisualizer
     storageClosed: closedLayer
     storageOpen: openLayer
@@ -409,8 +409,8 @@
 - type: entity
   parent: CMBackpack
   id: RMCBackpackRCMLarge
-  name: heavyweight RCM backpack
-  description: "The heavy-carry pack of the RCM forces. Designed to lug the most amount of gear into the battlefield."
+  name: RCM重型背包
+  description: "RCM部队的重型背包。专为将尽可能多的装备运往战场而设计。"
   suffix: PVE, RCM
   components:
   - type: Sprite
@@ -418,9 +418,9 @@
     layers:
     - state: icon
     - state: open
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: closed
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: CMStorageVisualizer
     storageClosed: closedLayer
     storageOpen: openLayer
@@ -442,8 +442,8 @@
 - type: entity
   parent: RMCSatchelWelder
   id: RMCBackpackRCMTechnician
-  name: RCM engineering backpack
-  description: "A TSE military standard-carry RCM combat pack MK3. Modified by ingenious Royal Engineers to better fit their requirements."
+  name: RCM工程背包
+  description: "TSE军用标准携行RCM战斗背包MK3。由心灵手巧的皇家工程兵改装，以更好地满足他们的需求。"
   suffix: PVE, RCM
   components:
   - type: Sprite
@@ -451,9 +451,9 @@
     layers:
     - state: icon
     - state: open
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: closed
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: CMStorageVisualizer
     storageClosed: closedLayer
     storageOpen: openLayer
@@ -465,8 +465,8 @@
 - type: entity
   parent: CMPersonalStorageBase
   id: RMCBackpackRCMMedic
-  name: RCM medical backpack
-  description: "A TSE military standard-carry RCM combat pack MK3. Modified by Medical Assistants to fit their needs better."
+  name: RCM医疗背包
+  description: "一种TSE军用标准携行RCM战斗背包MK3。由医疗助理改装，以更好地满足其需求。"
   suffix: PVE, RCM
   components:
   - type: Sprite
@@ -474,9 +474,9 @@
     layers:
     - state: icon
     - state: open
-      map: [ "openLayer" ]
+      map: ["openLayer"]
     - state: closed
-      map: [ "closedLayer" ]
+      map: ["closedLayer"]
   - type: CMStorageVisualizer
     storageClosed: closedLayer
     storageOpen: openLayer
@@ -500,10 +500,10 @@
   id: RMCBackpackRCMMedicPVPFilledParaMedic
   suffix: Filled, Paramarine Medic
   components:
-    - type: StorageFill
-      contents:
-        - id: RMCRadioHandheldColony
-        - id: RMCHeadRoyalL1HelmetBallistic
-        - id: CMFireExtinguisherPortable
-        - id: CMDefibrillator
-        - id: CMHealthAnalyzer
+  - type: StorageFill
+    contents:
+    - id: RMCRadioHandheldColony
+    - id: RMCHeadRoyalL1HelmetBallistic
+    - id: CMFireExtinguisherPortable
+    - id: CMDefibrillator
+    - id: CMHealthAnalyzer

@@ -28,7 +28,7 @@
         Quantity: 5
   - type: Tag
     tags:
-      - PowerCell
+    - PowerCell
   - type: Riggable
   - type: Appearance
   - type: BatteryVisuals
@@ -43,7 +43,7 @@
 - type: entity
   parent: Solution
   id: SolutionRiggable
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Solution
     id: battery
@@ -51,8 +51,8 @@
       maxVol: 5
 
 - type: entity
-  name: potato battery
-  description: Someone's stuck two nails and some wire in a large potato. Somehow it provides a little charge.
+  name: 土豆电池 | potato battery
+  description: 有人把两根钉子和一些电线插进了一个大土豆里。不知怎么的，它竟然能提供一点电荷。 | Someone's stuck two nails and some wire in a large potato. Somehow it provides a little charge.
   id: PowerCellPotato
   parent: BasePowerCell
   components:
@@ -64,23 +64,23 @@
     startingCharge: 70
   - type: Tag
     tags:
-      - PotatoBattery
+    - PotatoBattery
   - type: Construction
     graph: PowerCellPotato
     node: potatobattery
 
 - type: entity
-  name: small-capacity power cell
-  description: A rechargeable power cell. This is the cheapest kind you can find.
+  name: 小容量电池 | small-capacity power cell
+  description: 一种可充电电池。这是你能找到的最便宜的一种。 | A rechargeable power cell. This is the cheapest kind you can find.
   id: PowerCellSmall
   suffix: Full
   parent: BasePowerCell
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: small
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -88,7 +88,7 @@
     startingCharge: 360
   - type: Tag
     tags:
-      - PowerCellSmall
+    - PowerCellSmall
 
 - type: entity
   id: PowerCellSmallPrinted
@@ -97,12 +97,12 @@
   components:
   - type: Sprite
     layers:
-      - map: [ "enum.PowerCellVisualLayers.Base" ]
-        state: small
-      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-        state: o2
-        shader: unshaded
-        visible: false
+    - map: ["enum.PowerCellVisualLayers.Base"]
+      state: small
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+      state: o2
+      shader: unshaded
+      visible: false
   - type: Battery
     maxCharge: 360
     startingCharge: 0
@@ -110,8 +110,8 @@
 - type: entity
   parent: PowerCellSmall
   id: PowerCellSmallNuclear
-  name: small-capacity nuclear power cell
-  description: A self rechargeable power cell, designed for fast recharge rate at the expense of capacity.
+  name: 小容量核能电池 | small-capacity nuclear power cell
+  description: 一种自充电电池，以牺牲容量为代价实现快速充电速率。 | A self rechargeable power cell, designed for fast recharge rate at the expense of capacity.
   components:
   - type: BatterySelfRecharger
     autoRechargeRate: 36 # 10 seconds to recharge
@@ -123,17 +123,17 @@
         Quantity: 5
 
 - type: entity
-  name: medium-capacity power cell
-  description: A rechargeable power cell. This is the popular and reliable version.
+  name: 中等容量能量电池 | medium-capacity power cell
+  description: 可充电能量电池。这是广受欢迎且可靠的版本。 | A rechargeable power cell. This is the popular and reliable version.
   id: PowerCellMedium
   suffix: Full
   parent: BasePowerCell
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: medium
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -152,28 +152,28 @@
   components:
   - type: Sprite
     layers:
-      - map: [ "enum.PowerCellVisualLayers.Base" ]
-        state: medium
-      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-        state: o2
-        shader: unshaded
-        visible: false
+    - map: ["enum.PowerCellVisualLayers.Base"]
+      state: medium
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+      state: o2
+      shader: unshaded
+      visible: false
   - type: Battery
     maxCharge: 720
     startingCharge: 0
 
 - type: entity
-  name: high-capacity power cell
-  description: A rechargeable standardized power cell. This premium brand stores up to 50% more energy than the competition.
+  name: 高容量电池 | high-capacity power cell
+  description: 一种可充电的标准化电池。这个高端品牌比同类产品多储存高达50%的能量。 | A rechargeable standardized power cell. This premium brand stores up to 50% more energy than the competition.
   id: PowerCellHigh
   suffix: Full
   parent: BasePowerCell
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: high
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -192,28 +192,28 @@
   components:
   - type: Sprite
     layers:
-      - map: [ "enum.PowerCellVisualLayers.Base" ]
-        state: high
-      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-        state: o2
-        shader: unshaded
-        visible: false
+    - map: ["enum.PowerCellVisualLayers.Base"]
+      state: high
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+      state: o2
+      shader: unshaded
+      visible: false
   - type: Battery
     maxCharge: 1080
     startingCharge: 0
 
 - type: entity
-  name: hyper-capacity power cell
-  description: A rechargeable standardized power cell. This iteration pushes the upper limits of portable power storage, boasting 66% more capacity than its predecessor.
+  name: 超大容量能量电池 | hyper-capacity power cell
+  description: 一种可充电的标准化能量电池。此迭代版本突破了便携式电力存储的上限，容量比前代高出66%。 | A rechargeable standardized power cell. This iteration pushes the upper limits of portable power storage, boasting 66% more capacity than its predecessor.
   id: PowerCellHyper
   suffix: Full
   parent: BasePowerCell
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: hyper
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -232,12 +232,12 @@
   components:
   - type: Sprite
     layers:
-      - map: [ "enum.PowerCellVisualLayers.Base" ]
-        state: hyper
-      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-        state: o2
-        shader: unshaded
-        visible: false
+    - map: ["enum.PowerCellVisualLayers.Base"]
+      state: hyper
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+      state: o2
+      shader: unshaded
+      visible: false
   - type: Battery
     maxCharge: 1800
     startingCharge: 0
@@ -245,15 +245,15 @@
 - type: entity
   parent: BasePowerCell
   id: PowerCellMicroreactor
-  name: microreactor power cell
-  description: A rechargeable standardized microreactor cell. Has lower capacity but slowly recharges by itself.
+  name: 微型反应堆动力电池 | microreactor power cell
+  description: 一种可充电的标准化微型反应堆电池。容量较低，但会自行缓慢充电。 | A rechargeable standardized microreactor cell. Has lower capacity but slowly recharges by itself.
   suffix: Full
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: microreactor
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -274,9 +274,9 @@
   components:
   - type: Sprite
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: microreactor
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
       visible: false
@@ -284,28 +284,28 @@
     startingCharge: 0
 
 - type: entity
-  name: antique power cell prototype
-  description: A small cell that self recharges. Used in old laser arms research.
+  name: 古董电源电池原型 | antique power cell prototype
+  description: 一种可自我充电的小型电池。曾用于旧式激光武器研究。 | A small cell that self recharges. Used in old laser arms research.
   id: PowerCellAntiqueProto
   parent: BasePowerCell
   components:
-    - type: Sprite
-      layers:
-      - map: [ "enum.PowerCellVisualLayers.Base" ]
-        state: antique
-      - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
-        state: o2
-        shader: unshaded
-    - type: Battery
-      maxCharge: 1200
-      startingCharge: 1200
-    - type: BatterySelfRecharger
-      autoRechargeRate: 40
-    - type: Extractable
-      juiceSolution:
-        reagents:
-        - ReagentId: Uranium
-          Quantity: 5
+  - type: Sprite
+    layers:
+    - map: ["enum.PowerCellVisualLayers.Base"]
+      state: antique
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+      state: o2
+      shader: unshaded
+  - type: Battery
+    maxCharge: 1200
+    startingCharge: 1200
+  - type: BatterySelfRecharger
+    autoRechargeRate: 40
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: Uranium
+        Quantity: 5
 
 # Power cage (big heavy power cell for big devices)
 
@@ -333,7 +333,7 @@
         Quantity: 15
   - type: Tag
     tags:
-      - PowerCage
+    - PowerCage
   - type: ClothingSpeedModifier
     walkModifier: 0.8
     sprintModifier: 0.8
@@ -342,7 +342,7 @@
 - type: entity
   parent: SolutionRiggable
   id: SolutionRiggableLarge
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Solution
     id: battery
@@ -352,15 +352,15 @@
 - type: entity
   id: PowerCageSmall
   parent: BasePowerCage
-  name: small-capacity power cage
-  description: A rechargeable power cage for big devices. This is the cheapest kind you can find.
+  name: 小容量电力笼 | small-capacity power cage
+  description: 一种用于大型设备的可充电电力笼。这是你能找到的最便宜的一种。 | A rechargeable power cage for big devices. This is the cheapest kind you can find.
   components:
   - type: Sprite
     sprite: Objects/Power/power_cages.rsi
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: small
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -370,15 +370,15 @@
 - type: entity
   id: PowerCageMedium
   parent: BasePowerCage
-  name: medium-capacity power cage
-  description: A rechargeable power cage for big devices. The gold standard of capacity and cost.
+  name: 中容量电源笼 | medium-capacity power cage
+  description: 大容量设备的可充电电源笼。容量与成本方面的黄金标准。 | A rechargeable power cage for big devices. The gold standard of capacity and cost.
   components:
   - type: Sprite
     sprite: Objects/Power/power_cages.rsi
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: medium
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -393,15 +393,15 @@
 - type: entity
   id: PowerCageHigh
   parent: BasePowerCage
-  name: high-capacity power cage
-  description: A rechargeable power cage for big devices. Increased capacity for increased power levels.
+  name: 高容量能量笼 | high-capacity power cage
+  description: 大容量可充电能量笼，适用于大型设备。容量提升，功率更强。 | A rechargeable power cage for big devices. Increased capacity for increased power levels.
   components:
   - type: Sprite
     sprite: Objects/Power/power_cages.rsi
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: high
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
   - type: Battery
@@ -421,9 +421,9 @@
   - type: Sprite
     sprite: Objects/Power/power_cages.rsi
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: small
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
       visible: false
@@ -439,9 +439,9 @@
   - type: Sprite
     sprite: Objects/Power/power_cages.rsi
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: small
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
       visible: false
@@ -456,9 +456,9 @@
   - type: Sprite
     sprite: Objects/Power/power_cages.rsi
     layers:
-    - map: [ "enum.PowerCellVisualLayers.Base" ]
+    - map: ["enum.PowerCellVisualLayers.Base"]
       state: small
-    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
+    - map: ["enum.PowerCellVisualLayers.Unshaded"]
       state: o2
       shader: unshaded
       visible: false

@@ -1,23 +1,21 @@
 - type: entity
   parent: ArmorHelmetM10
   id: RMCArmorHelmetM10CMB
-  name: M11R pattern CMB Riot helmet
-  description: A CMB variant of the standard M10 pattern. The front plate is reinforced. This one is a lot more tight fitting.
+  name: M11R型CMB防暴头盔
+  description: 标准M10型号的CMB变体。前板经过加固。这一款佩戴起来要紧得多。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/CMB/cmb_helmet.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Helmets/CMB/cmb_helmet.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: CMArmor
     melee: 25
     bullet: 25
     bio: 10
     explosionArmor: 25
-    # armor_energy = 30
   - type: RMCEarProtection
-
 - type: entity
   parent: RMCArmorHelmetM10CMB
   id: RMCArmorHelmetM10CMBVisorSWAT

@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ SolutionLarge, DrinkBaseMaterialStrongPlastic, DrinkBase, DrinkVisualsFill ]
+  parent: [SolutionLarge, DrinkBaseMaterialStrongPlastic, DrinkBase, DrinkVisualsFill]
   id: Bucket
-  name: bucket
-  description: It's a boring old bucket.
+  name: 桶 | bucket
+  description: 这是一个无聊的旧桶。 | It's a boring old bucket.
   components:
   - type: Edible
     utensil: Spoon
@@ -32,10 +32,10 @@
     solution: drink
   - type: SolutionContainerVisuals
     maxFillLevels: 3
-    inHandsFillBaseName: null
+    inHandsFillBaseName:
   - type: Tag
     tags:
-      - Bucket
+    - Bucket
   - type: PhysicalComposition
     materialComposition:
       Plastic: 50
@@ -43,8 +43,8 @@
 - type: entity
   parent: [SolutionHuge, Bucket]
   id: BorgBucket
-  name: internal tank
-  description: The internal reservoir of a custodial cyborg, capable of holding a entire mop bucket worth of water.
+  name: 内部水箱 | internal tank
+  description: 看守型赛博格的内置储水器，能够容纳一整桶拖把水。 | The internal reservoir of a custodial cyborg, capable of holding a entire mop bucket worth of water.
   components:
   - type: SolutionTransfer
     transferAmount: 240

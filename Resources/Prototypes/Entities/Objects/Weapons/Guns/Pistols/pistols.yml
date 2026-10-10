@@ -1,16 +1,16 @@
 - type: entity
-  name: BasePistol
+  name: 基础手枪 | BasePistol
   parent: BaseItem
   id: BaseWeaponPistol
-  description: A rooty tooty point and shooty.
+  description: 一把土里土气的突突枪。 | A rooty tooty point and shooty.
   abstract: true
   components:
   - type: Sprite
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
   - type: Item
     size: Small
     shape:
@@ -30,8 +30,8 @@
     fireRate: 6
     selectedMode: SemiAuto
     availableModes:
-      - SemiAuto
-      - FullAuto
+    - SemiAuto
+    - FullAuto
     soundGunshot:
       path: /Audio/Weapons/Guns/Gunshots/pistol.ogg
   - type: ChamberMagazineAmmoProvider
@@ -40,22 +40,22 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: MagazinePistol
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol
-            - MagazinePistolHighCapacity
+          - MagazinePistol
+          - MagazinePistolHighCapacity
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
-        name: Chamber
+        name: 腔室 | Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+          - CartridgePistol
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -70,10 +70,10 @@
     price: 500
 
 - type: entity
-  name: viper
+  name: 蝰蛇 | viper
   parent: [BaseWeaponPistol, BaseSyndicateContraband]
   id: WeaponPistolViper
-  description: A common handgun illegally modified by the Syndicate. The Viper sports a selector switch between semi-auto and ‘rock and roll’. The standard sidearm for any soldier who fights under the three serpents. Feeds from .35 pistol magazines.
+  description: 一把被辛迪加非法改装过的常见手枪。蝰蛇配有半自动和“摇滚”模式之间的选择开关。任何在三蛇旗下作战的士兵的标准配枪。使用.35手枪弹匣供弹。 | A common handgun illegally modified by the Syndicate. The Viper sports a selector switch between semi-auto and ‘rock and roll’. The standard sidearm for any soldier who fights under the three serpents. Feeds from .35 pistol magazines.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/viper.rsi
@@ -82,22 +82,22 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: MagazinePistolHighCapacity
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistol
-            - MagazinePistolHighCapacity
+          - MagazinePistol
+          - MagazinePistolHighCapacity
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
-        name: Chamber
+        name: 钱伯斯 | Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgePistol
+          - CartridgePistol
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -106,10 +106,10 @@
     price: 1000
 
 - type: entity
-  name: echis
-  parent: [ BaseItem, BaseSyndicateContraband ]
+  name: 蝰蛇 | echis
+  parent: [BaseItem, BaseSyndicateContraband]
   id: WeaponPistolEchis
-  description: A cyborg-mounted weapon system based on the Viper pistol. Creates ammunition on the fly from an internal fabricator, which slowly self-charges.
+  description: 一种基于蝰蛇手枪的赛博格挂载武器系统。通过内部制造器即时生成弹药，该制造器会缓慢自行充能。 | A cyborg-mounted weapon system based on the Viper pistol. Creates ammunition on the fly from an internal fabricator, which slowly self-charges.
   components:
   - type: Gun
     fireRate: 6
@@ -122,10 +122,10 @@
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/viper.rsi
     layers:
-      - state: base
-        map: ["enum.GunVisualLayers.Base"]
-      - state: mag-0
-        map: ["enum.GunVisualLayers.Mag"]
+    - state: base
+      map: ["enum.GunVisualLayers.Base"]
+    - state: mag-0
+      map: ["enum.GunVisualLayers.Mag"]
   - type: ContainerContainer
     containers:
       ballistic-ammo: !type:Container
@@ -142,10 +142,10 @@
   - type: AmmoCounter
 
 - type: entity
-  name: cobra
-  parent: [ BaseWeaponPistol, BaseSyndicateContraband ]
+  name: 眼镜蛇 | cobra
+  parent: [BaseWeaponPistol, BaseSyndicateContraband]
   id: WeaponPistolCobra
-  description: Integrally suppressed semi-automatic pistol used by the Syndicate, firing caseless subsonic rounds. Favored by any agent who likes to keep things quiet and leave no evidence behind. Feeds from .25 pistol magazines.
+  description: 辛迪加使用的内置消音半自动手枪，发射无壳亚音速弹药。任何喜欢保持安静、不留痕迹的特工都青睐它。使用.25手枪弹匣供弹。 | Integrally suppressed semi-automatic pistol used by the Syndicate, firing caseless subsonic rounds. Favored by any agent who likes to keep things quiet and leave no evidence behind. Feeds from .25 pistol magazines.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/cobra.rsi
@@ -157,7 +157,7 @@
   - type: Clothing
     sprite: Objects/Weapons/Guns/Pistols/cobra.rsi
   - type: ChamberMagazineAmmoProvider
-    boltClosed: null
+    boltClosed:
   - type: Gun
     fireRate: 4
     soundGunshot:
@@ -169,21 +169,21 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: MagazinePistolCaselessRifle
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazinePistolCaselessRifle
+          - MagazinePistolCaselessRifle
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
-        name: Chamber
+        name: 钱伯斯 | Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgeCaselessRifle
+          - CartridgeCaselessRifle
   - type: ContainerContainer
     containers:
       gun_magazine: !type:ContainerSlot
@@ -192,10 +192,10 @@
     price: 1500
 
 - type: entity
-  name: mk 58
+  name: Mk58 | mk 58
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolMk58
-  description: Designed by Nanotrasen’s Small Arms Division, the Mk58 is a conventional semi-automatic pistol with a simple recoil-operated action and excellent reliability. The standard sidearm of Nanotrasen’s station security and emergency response teams. Feeds from .35 pistol magazines.
+  description: 由Nanotrasen轻武器部门设计，Mk58是一款传统半自动手枪，采用简单的后坐式操作，可靠性极佳。它是Nanotrasen空间站安保与应急响应团队的标准配枪。使用.35手枪弹匣供弹。 | Designed by Nanotrasen’s Small Arms Division, the Mk58 is a conventional semi-automatic pistol with a simple recoil-operated action and excellent reliability. The standard sidearm of Nanotrasen’s station security and emergency response teams. Feeds from .35 pistol magazines.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/mk58.rsi
@@ -221,7 +221,7 @@
   name: N1984
   parent: [BaseWeaponPistol, BaseSecurityContraband]
   id: WeaponPistolN1984
-  description: An exceptionally powerful ‘hand cannon’ designed as part of Nanotrasen's BFG initiative. Chambered in .45, the lord’s caliber, it is generally considered too unwieldy for standard use but has become something of a status symbol among Nanotrasen officials. Feeds from .45 pistol magazines.
+  description: 一把异常强大的“手炮”，是纳米传讯BFG计划的一部分。使用.45口径，即“上帝的 caliber”，通常被认为过于笨重而不适合标准使用，但已成为纳米传讯官员中的一种身份象征。使用.45手枪弹匣供弹。 | An exceptionally powerful ‘hand cannon’ designed as part of Nanotrasen's BFG initiative. Chambered in .45, the lord’s caliber, it is generally considered too unwieldy for standard use but has become something of a status symbol among Nanotrasen officials. Feeds from .45 pistol magazines.
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Pistols/N1984.rsi
@@ -245,18 +245,18 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣 | Magazine
         startingItem: MagazineMagnum
         insertSound: /Audio/Weapons/Guns/MagIn/pistol_magin.ogg
         ejectSound: /Audio/Weapons/Guns/MagOut/pistol_magout.ogg
         priority: 2
         whitelist:
           tags:
-            - MagazineMagnum
+          - MagazineMagnum
         whitelistFailPopup: gun-magazine-whitelist-fail
       gun_chamber:
-        name: Chamber
+        name: 腔室 | Chamber
         priority: 1
         whitelist:
           tags:
-            - CartridgeMagnum
+          - CartridgeMagnum

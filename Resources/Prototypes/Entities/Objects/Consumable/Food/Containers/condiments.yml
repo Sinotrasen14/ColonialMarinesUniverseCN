@@ -26,9 +26,9 @@
 - type: entity
   parent: BaseFoodCondiment
   id: BaseFoodCondimentPacket
-  name: condiment packet
+  name: 调料包 | condiment packet
   abstract: true
-  description: A small plastic pack with condiments to put on your food.
+  description: 一小包塑料包装的调料，用来撒在食物上。 | A small plastic pack with condiments to put on your food.
   components:
   - type: Item
     size: Tiny
@@ -53,18 +53,18 @@
     maxTransferAmount: 1
   - type: Sprite
     layers:
-      - state: packet-trans-2
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: true
-      - state: packet-layer
-        map: ["enum.OpenableVisuals.Layer"]
-      - state: packet-label
+    - state: packet-trans-2
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: true
+    - state: packet-layer
+      map: ["enum.OpenableVisuals.Layer"]
+    - state: packet-label
   - type: GenericVisualizer
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "packet-layer-open"}
-          False: {state: "packet-layer"}
+          true: {state: "packet-layer-open"}
+          false: {state: "packet-layer"}
   - type: Icon
     state: packet-empty
   - type: PhysicalComposition
@@ -72,7 +72,7 @@
       Plastic: 50
   - type: Tag
     tags:
-      - Packet
+    - Packet
   - type: ExaminableSolution
     exactVolume: true
 
@@ -87,8 +87,8 @@
 - type: entity
   parent: BaseFoodCondimentPacket
   id: FoodCondimentPacketAstrotame
-  name: Astrotame
-  description: The sweetness of a thousand sugars but none of the calories.
+  name: 阿斯巴甜 | Astrotame
+  description: 千糖之甜，零卡之轻。 | The sweetness of a thousand sugars but none of the calories.
   components:
   - type: Solution
     solution:
@@ -97,12 +97,12 @@
         Quantity: 1
   - type: Sprite
     layers:
-      - state: packet-trans-2
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: true
-      - state: packet-layer
-        map: ["enum.OpenableVisuals.Layer"]
-      - state: packet-label-a
+    - state: packet-trans-2
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: true
+    - state: packet-layer
+      map: ["enum.OpenableVisuals.Layer"]
+    - state: packet-label-a
   - type: Icon
     state: packet-astrotame
   - type: Appearance
@@ -113,8 +113,8 @@
 - type: entity
   parent: BaseFoodCondimentPacketDrink
   id: FoodCondimentPacketBbq
-  name: BBQ sauce
-  description: Hand wipes not included.
+  name: 烧烤酱 | BBQ sauce
+  description: 不包含湿巾。 | Hand wipes not included.
   components:
   - type: Solution
     solution:
@@ -131,8 +131,8 @@
 - type: entity
   parent: BaseFoodCondimentPacketDrink
   id: FoodCondimentPacketCornoil
-  name: corn oil
-  description: Corn oil. A delicious oil used in cooking. Made from corn.
+  name: 玉米油 | corn oil
+  description: 玉米油。一种用于烹饪的美味油。由玉米制成。 | Corn oil. A delicious oil used in cooking. Made from corn.
   components:
   - type: Solution
     solution:
@@ -149,8 +149,8 @@
 - type: entity
   parent: BaseFoodCondimentPacketDrink
   id: FoodCondimentPacketColdsauce
-  name: coldsauce
-  description: Coldsauce. Leaves the tongue numb in its passage.
+  name: 冷酱 | coldsauce
+  description: 冷酱。入口时让舌头麻木。 | Coldsauce. Leaves the tongue numb in its passage.
   components:
   - type: Solution
     solution:
@@ -167,8 +167,8 @@
 - type: entity
   parent: BaseFoodCondimentPacketDrink
   id: FoodCondimentPacketHorseradish
-  name: horseradish sauce
-  description: A packet of smelly horseradish sauce.
+  name: 辣根酱 | horseradish sauce
+  description: 一包气味刺鼻的辣根酱。 | A packet of smelly horseradish sauce.
   components:
   - type: Solution
     solution:
@@ -185,8 +185,8 @@
 - type: entity
   parent: BaseFoodCondimentPacketDrink
   id: FoodCondimentPacketHotsauce
-  name: hotsauce
-  description: You can almost TASTE the stomach ulcers now!
+  name: 辣椒酱 | hotsauce
+  description: 你现在几乎能“尝到”胃溃疡的滋味了！ | You can almost TASTE the stomach ulcers now!
   components:
   - type: Solution
     solution:
@@ -203,8 +203,8 @@
 - type: entity
   parent: BaseFoodCondimentPacketDrink
   id: FoodCondimentPacketKetchup
-  name: ketchup
-  description: You feel more American already.
+  name: 番茄酱 | ketchup
+  description: 你已经感觉更像美国人了。 | You feel more American already.
   components:
   - type: Solution
     solution:
@@ -222,8 +222,8 @@
 - type: entity
   parent: BaseFoodCondimentPacketDrink
   id: FoodCondimentPacketMustard
-  name: mustard
-  description: A condiment made from the ground-up seeds of the Mustard plant.
+  name: 芥末 | mustard
+  description: 一种由芥菜籽磨碎制成的调味品。 | A condiment made from the ground-up seeds of the Mustard plant.
   components:
   - type: Solution
     solution:
@@ -240,8 +240,8 @@
 - type: entity
   parent: BaseFoodCondimentPacket
   id: FoodCondimentPacketPepper
-  name: black pepper
-  description: Often used to flavor food or make people sneeze.
+  name: 黑胡椒 | black pepper
+  description: 常用于给食物调味或让人打喷嚏。 | Often used to flavor food or make people sneeze.
   components:
   - type: Solution
     solution:
@@ -258,8 +258,8 @@
 - type: entity
   parent: BaseFoodCondimentPacket
   id: FoodCondimentPacketSalt
-  name: salt
-  description: Salt. From space oceans, presumably.
+  name: 盐 | salt
+  description: 盐。大概来自太空海洋。 | Salt. From space oceans, presumably.
   components:
   - type: Solution
     solution:
@@ -268,13 +268,13 @@
         Quantity: 1
   - type: Sprite
     layers:
-      - state: packet-solid-2
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: true
-      - state: packet-layer
-        map: ["enum.OpenableVisuals.Layer"]
-      - state: packet-label
-        color: black
+    - state: packet-solid-2
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: true
+    - state: packet-layer
+      map: ["enum.OpenableVisuals.Layer"]
+    - state: packet-label
+      color: black
   - type: Icon
     state: packet-salt
   - type: Appearance
@@ -285,8 +285,8 @@
 - type: entity
   parent: BaseFoodCondimentPacketDrink
   id: FoodCondimentPacketSoy
-  name: soy sauce
-  description: A salty soy-based flavoring.
+  name: 酱油 | soy sauce
+  description: 一种以酱油为基础的咸味调味品。 | A salty soy-based flavoring.
   components:
   - type: Solution
     solution:
@@ -303,8 +303,8 @@
 - type: entity
   parent: BaseFoodCondimentPacket
   id: FoodCondimentPacketSugar
-  name: sugar
-  description: Tasty spacey sugar!
+  name: 糖 | sugar
+  description: 美味的太空糖！ | Tasty spacey sugar!
   components:
   - type: Solution
     solution:
@@ -324,8 +324,8 @@
   parent: BaseFoodCondiment
   id: BaseFoodCondimentBottle
   abstract: true
-  name: condiment bottle
-  description: A thin glass bottle used to store condiments.
+  name: 调料瓶 | condiment bottle
+  description: 用来存放调料的细长玻璃瓶。 | A thin glass bottle used to store condiments.
   components:
   - type: Edible
     edible: Drink
@@ -357,8 +357,8 @@
     visuals:
       enum.OpenableVisuals.Opened:
         enum.OpenableVisuals.Layer:
-          True: {state: "bottle-open"}
-          False: {state: "bottle-empty"}
+          true: {state: "bottle-open"}
+          false: {state: "bottle-empty"}
   - type: PhysicalComposition
     materialComposition:
       Glass: 50
@@ -366,8 +366,8 @@
 - type: entity
   parent: BaseFoodCondimentBottle
   id: FoodCondimentBottleColdsauce
-  name: coldsauce bottle
-  description: Leaves the tongue numb in its passage.
+  name: 感冒酱瓶 | coldsauce bottle
+  description: 让舌头在滑过时变得麻木。 | Leaves the tongue numb in its passage.
   components:
   - type: Solution
     solution:
@@ -386,13 +386,13 @@
     state: bottle-coldsauce
   - type: Tag
     tags:
-      - Coldsauce
+    - Coldsauce
 
 - type: entity
   parent: BaseFoodCondimentBottle
   id: FoodCondimentBottleEnzyme
-  name: universal enzyme
-  description: Used in cooking various dishes.
+  name: 通用酶 | universal enzyme
+  description: 用于烹饪各种菜肴。 | Used in cooking various dishes.
   components:
   - type: Solution
     solution:
@@ -411,13 +411,13 @@
     state: bottle-enzyme
   - type: Tag
     tags:
-      - Enzyme
+    - Enzyme
 
 - type: entity
   parent: BaseFoodCondimentBottle
   id: FoodCondimentBottleVinegar
-  name: vinegar bottle
-  description: Used in cooking to enhance flavor.
+  name: 醋瓶 | vinegar bottle
+  description: 用于烹饪以提升风味。 | Used in cooking to enhance flavor.
   components:
   - type: Solution
     solution:
@@ -438,8 +438,8 @@
 - type: entity
   parent: BaseFoodCondimentBottle
   id: FoodCondimentBottleHotsauce
-  name: hotsauce bottle
-  description: You can almost TASTE the stomach ulcers now!
+  name: 辣椒酱瓶 | hotsauce bottle
+  description: 你现在几乎都能“尝到”胃溃疡的味道了！ | You can almost TASTE the stomach ulcers now!
   components:
   - type: Solution
     solution:
@@ -458,13 +458,13 @@
     state: bottle-hotsauce
   - type: Tag
     tags:
-      - Hotsauce
+    - Hotsauce
 
 - type: entity
   parent: BaseFoodCondimentBottle
   id: FoodCondimentBottleKetchup
-  name: ketchup bottle
-  description: You feel more American already.
+  name: 番茄酱瓶 | ketchup bottle
+  description: 你已经感觉更像美国人了。 | You feel more American already.
   components:
   - type: Solution
     solution:
@@ -483,13 +483,13 @@
     state: bottle-ketchup
   - type: Tag
     tags:
-      - Ketchup
+    - Ketchup
 
 - type: entity
   parent: BaseFoodCondimentBottle
   id: FoodCondimentBottleBBQ
-  name: BBQ sauce bottle
-  description: Hand wipes not included.
+  name: 烧烤酱瓶 | BBQ sauce bottle
+  description: 不包括湿巾。 | Hand wipes not included.
   components:
   - type: Solution
     solution:
@@ -509,7 +509,7 @@
     state: bottle-ketchup
   - type: Tag
     tags:
-      - BBQsauce
+    - BBQsauce
 
 # Shakers
 
@@ -517,8 +517,8 @@
   parent: [SolutionVeryTiny, BaseFoodCondiment] # TODO: This should not inherit TrashOnSolutionEmpty, SpaceGarbage and the price of 0
   id: BaseFoodShaker
   abstract: true
-  name: empty shaker
-  description: A shaker used to store and dispense spices.
+  name: 空调料瓶
+  description: 用于储存和分发香料的摇瓶。
   components:
   - type: Item
     size: Tiny
@@ -552,11 +552,12 @@
   - type: RefillableSolution
     solution: food
 
+
 - type: entity
   parent: BaseFoodShaker
   id: FoodShakerSalt
-  name: salt shaker
-  description: Salt. From space oceans, presumably.
+  name: 盐瓶 | salt shaker
+  description: 盐。大概来自太空海洋。 | Salt. From space oceans, presumably.
   components:
   - type: Solution
     solution:
@@ -569,13 +570,13 @@
     state: shaker-salt
   - type: Tag
     tags:
-      - SaltShaker
+    - SaltShaker
 
 - type: entity
   parent: BaseFoodShaker
   id: FoodShakerPepper
-  name: pepper shaker
-  description: Often used to flavor food or make people sneeze.
+  name: 胡椒瓶 | pepper shaker
+  description: 常用于给食物调味或让人打喷嚏。 | Often used to flavor food or make people sneeze.
   components:
   - type: Solution
     solution:
@@ -588,4 +589,4 @@
     state: shaker-pepper
   - type: Tag
     tags:
-      - PepperShaker
+    - PepperShaker

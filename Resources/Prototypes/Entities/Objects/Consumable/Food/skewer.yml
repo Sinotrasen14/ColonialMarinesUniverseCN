@@ -4,8 +4,8 @@
 - type: entity
   parent: BaseItem
   id: FoodKebabSkewer
-  name: skewer
-  description: A thin rod of metal used to skewer just about anything and cook it.
+  name: 扦子 | skewer
+  description: 一根细金属扦子，用来串起各种食材进行烹饪。 | A thin rod of metal used to skewer just about anything and cook it.
   components:
   - type: Item
     shape:
@@ -23,10 +23,10 @@
       fix1:
         shape: !type:PolygonShape
           vertices:
-            - -0.40,-0.20
-            - -0.30,-0.30
-            - 0.50,0.10
-            - 0.40,0.20
+          - -0.40,-0.20
+          - -0.30,-0.30
+          - 0.50,0.10
+          - 0.40,0.20
         density: 20
         mask:
         - ItemMask

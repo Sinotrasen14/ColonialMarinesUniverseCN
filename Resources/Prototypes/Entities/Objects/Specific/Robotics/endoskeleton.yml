@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   id: CyborgEndoskeleton
-  name: cyborg endoskeleton
-  description: A frame that cyborgs are built on. Significantly less spooky than expected.
+  name: 赛博格内骨骼 | cyborg endoskeleton
+  description: 赛博格赖以构建的框架。比预想中要吓人得多。 | A frame that cyborgs are built on. Significantly less spooky than expected.
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -11,8 +11,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 100
         mask:

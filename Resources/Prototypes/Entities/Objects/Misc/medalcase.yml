@@ -1,8 +1,8 @@
 - type: entity
   id: MedalCase
-  name: medal case
-  description: Case with medals.
-  parent: [ BaseStorageItem, BaseBagOpenClose, BaseCommandContraband ]
+  name: 奖牌盒 | medal case
+  description: 装有奖牌的盒子。 | Case with medals.
+  parent: [BaseStorageItem, BaseBagOpenClose, BaseCommandContraband]
   components:
   - type: Sprite
     sprite: Objects/Storage/medalcase.rsi
@@ -20,7 +20,7 @@
     - 0,0,7,1
     whitelist:
       tags:
-        - Medal
+      - Medal
   - type: EntityTableContainerFill
     containers:
       storagebase: !type:AllSelector

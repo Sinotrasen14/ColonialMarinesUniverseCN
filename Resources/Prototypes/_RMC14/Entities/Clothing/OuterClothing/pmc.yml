@@ -1,9 +1,10 @@
-# PMC armors
 - type: entity
-  parent: [RMCBaseMarineArmor, RMCAllowSuitStorageClothingArmorPMC]
+  parent:
+  - RMCBaseMarineArmor
+  - RMCAllowSuitStorageClothingArmorPMC
   id: RMCArmorM4PMCNoLight
-  name: M4 pattern PMC armor
-  description: A modification of the standard M3 armor. Designed for high-profile security operators and corporate mercenaries in mind.
+  name: M4型PMC护甲
+  description: 标准M3护甲的改良版，专为高级安保操作员和企业雇佣兵设计。
   suffix: No Suitlamp
   components:
   - type: RMCArmorSpeedTier
@@ -15,125 +16,121 @@
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/pmc.rsi
   - type: CMArmor
     melee: 20
-    bullet: 25 # CLOTHING_ARMOR_MEDIUMHIGH
-    bio: 20 # CLOTHING_ARMOR_MEDIUM
-    explosionArmor: 20 # CLOTHING_ARMOR_MEDIUM
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+    bullet: 25
+    bio: 20
+    explosionArmor: 20
+  - type: ClothingSpeedModifier
     walkModifier: 0.725
     sprintModifier: 0.725
   - type: Storage
     grid:
-    - 0,0,3,1 # 2 slots
+    - 0,0,3,1
   - type: ItemCamouflage
-    camouflageVariations: { }
-
+    camouflageVariations: {}
 - type: entity
-  parent: [RMCArmorM4PMCNoLight, RMCBasePMCArmorLight]
+  parent:
+  - RMCArmorM4PMCNoLight
+  - RMCBasePMCArmorLight
   id: CMArmorM4PMC
   suffix: Suitlamp
-
 - type: entity
   parent: CMArmorM4PMC
   id: CMArmorM4PMCLight
-  name: M4 pattern light PMC armor
-  description: A modification of the standard M3 armor. Designed for high-profile security operators and corporate mercenaries in mind. Has some armor plating removed for extra mobility.
+  name: M4型轻型PMC护甲
+  description: 标准M3护甲的改装版。专为高级安保操作员和企业雇佣兵设计。拆除了部分装甲板以提高机动性。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/sniper.rsi
   - type: CMArmor
     melee: 30
-    bullet: 20 # CLOTHING_ARMOR_MEDIUM
-    bio: 20 # CLOTHING_ARMOR_MEDIUM
-    explosionArmor: 15 # CLOTHING_ARMOR_MEDIUMLOW
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_VERY_LIGHT
+    bullet: 20
+    bio: 20
+    explosionArmor: 15
+  - type: ClothingSpeedModifier
     walkModifier: 0.897
     sprintModifier: 0.897
-
 - type: entity
   parent: CMArmorM4PMCLight
   id: RMCArmorM4PMCBulletProof
-  name: M4 pattern PMC bulletproof armor
-  description: A modification of the standard M3 armor. Designed for high-profile security operators and corporate mercenaries in mind. This set is designed for protecting against ballistics, and has minimal protection against blades and biohazards.
+  name: M4 型 PMC 防弹护甲
+  description: 标准 M3 护甲的改良版。专为高级安保操作员和企业雇佣兵设计。该套装旨在防御弹道攻击，对刀刃和生物危害的防护能力极低。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/bulletproof.rsi
   - type: CMArmor
-    melee: 20 # CLOTHING_ARMOR_LOW
-    bullet: 30 # CLOTHING_ARMOR_HIGH
-    bio: 10 # CLOTHING_ARMOR_LOW
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_SUPER_LIGHT
+    melee: 20
+    bullet: 30
+    bio: 10
+  - type: ClothingSpeedModifier
     walkModifier: 0.949
     sprintModifier: 0.949
-
 - type: entity
-  parent: [RMCArmorM4PMCNoLight, RMCBaseMarineArmorLight]
+  parent:
+  - RMCArmorM4PMCNoLight
+  - RMCBaseMarineArmorLight
   id: CMArmorM4PMCCorporate
-  name: M1 pattern corporate security armor
-  description: A basic vest with a We-Yu badge on the right breast. This is commonly worn by low-level guards protecting We-Yu facilities.
-  suffix: ""
+  name: M1型企业安保护甲
+  description: A basic vest with a We-Yu badge on the right breast. This is commonly
+    worn by low-level guards protecting We-Yu facilities.
+  suffix: ''
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/corporate.rsi
   - type: CMArmor
     melee: 30
-    bullet: 20 # CLOTHING_ARMOR_MEDIUM
-    bio: 20 # CLOTHING_ARMOR_MEDIUM
-    explosionArmor: 15 # CLOTHING_ARMOR_MEDIUMLOW
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+    bullet: 20
+    bio: 20
+    explosionArmor: 15
+  - type: ClothingSpeedModifier
     walkModifier: 0.725
     sprintModifier: 0.725
-
 - type: entity
   parent: CMArmorM4PMCCorporate
   id: CMArmorM4PMCCorporateLead
-  description: A basic vest with a We-Yu badge on the right breast. This variant is worn by low-level guards that have elevated in rank due to 'good conduct in the field', also known as corporate bootlicking.
+  description: 一件基础背心，右胸前有一枚 We-Yu 徽章。这种款式由因“在外勤中表现良好”而晋升的低级警卫穿着，也被称为对公司溜须拍马。
   suffix: Leader
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/corporate_lead.rsi
-
 - type: entity
   parent: CMArmorM4PMC
   id: CMArmorM4PMCLeader
-  name: M4 pattern PMC leader armor
-  description: A modification of the standard M3 armor. Designed for high-profile security operators and corporate mercenaries in mind. This particular suit looks like it belongs to a high-ranking officer.
+  name: M4型PMC队长护甲
+  description: 标准M3护甲的改进型。专为高级安保操作员和企业雇佣兵设计。这套护甲看起来像是属于一名高级军官的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/officer.rsi
-
 - type: entity
   parent: RMCArmorM4PMCNoLight
   id: CMArmorM4PMCSniper
-  name: M4 pattern PMC sniper armor
-  description: A modification of the standard M3 armor. Designed for high-profile security operators and corporate mercenaries in mind. This particular suit looks like it belongs to a high-ranking officer.
+  name: M4型PMC狙击手护甲
+  description: 标准型 M3 护甲的改进型号。专为高级别安保人员和企业雇佣兵设计。这套护甲看起来像是高级军官的装备。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/sniper.rsi
   - type: CMArmor
     bullet: 25
     explosionArmor: 20
-
 - type: entity
   parent: CMArmorM4PMCLight
   id: CMArmorM4PMCSynth
-  name: M4 pattern PMC synthetic armor
-  description: A serious modification of the standard M3 armor. This variant was designed for PMC Support Units in the field, with every armor insert removed. It's designed with the idea of a high speed lifesaver in mind.
+  name: M4型PMC合成护甲
+  description: 对标准M3护甲的一次重大改装。该型号专为战地PMC支援单位设计，所有护甲插板均被移除。其设计理念着眼于高速救生员。
   components:
   - type: Clothing
     equipDelay: 1
     unequipDelay: 0.5
   - type: CMArmor
-    melee: 0 # CLOTHING_ARMOR_NONE
+    melee: 0
     bullet: 0
     bio: 0
     explosionArmor: 0
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_SUPER_LIGHT
+  - type: ClothingSpeedModifier
     walkModifier: 0.949
     sprintModifier: 0.949
   - type: Storage
     grid:
-    - 0,0,5,1 # 3 slots
-
+    - 0,0,5,1
 - type: entity
   parent: CMArmorM4PMCSynth
   id: RMCArmorM4PMCSynthFilled
@@ -143,47 +140,44 @@
     contents:
     - id: RMCMagazineSMGNailgun
     - id: RMCMagazineSMGNailgun
-    # - id: RMCTelescopicBaton // 8/21/25: telebaton implementation is TODOed
-
 - type: entity
   parent: RMCArmorM4PMCNoLight
   id: CMArmorM4PMHeavy
-  name: PMC heavy armor
-  description: A modification of the standard M3 armor. Featuring additional plating and straps to provide superior protection.
-
+  name: PMC重型护甲
+  description: 标准M3护甲的改装版，配有额外的护板和绑带，以提供更优越的防护。
 - type: entity
   parent: CMArmorM4PMHeavy
   id: CMArmorM4PMCSmartGunHarness
   name: PMC gun operator armor
-  description: A modification of the standard M3 armor. Hooked up with harnesses and straps allowing the user to carry a ML66A Smart Gun.
+  description: 标准M3装甲的改装型号。配有挽具和绑带，使使用者能够携带ML66A智能枪。
   components:
   - type: RMCArmorSpeedTier
     speedTier: light
   - type: Storage
     maxItemSize: Small
     grid:
-    - 0,0,3,1 # 2 slots
+    - 0,0,3,1
   - type: Corrodible
     isCorrodible: false
   - type: ClothingBlockBackpack
   - type: SmartGunArmor
-
 - type: entity
   parent: CMArmorM4PMCSmartGunHarness
   id: CMArmorM4PMCSmartGunHarnessCommando
-  name: M5Xg exoskeleton gun operator armor
-  description: A complex system of overlapping plates intended to render the wearer all but impervious to small arms fire. A passive exoskeleton supports the weight of the armor, allowing a human to carry its massive bulk. This variant is designed to support ML66A Smart Gun.
+  name: M5Xg外骨骼枪械操作员装甲
+  description: 一套由重叠护板构成的复杂系统，旨在使穿戴者几乎不受轻武器火力伤害。被动式外骨骼支撑着装甲的重量，使人类能够承载其庞大体积。此型号专为支撑
+    ML66A 智能枪而设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/commando.rsi
   - type: CMArmor
-    melee: 30 # CLOTHING_ARMOR_HIGH (melee)
-    bullet: 50 # CLOTHING_ARMOR_ULTRAHIGH (bullets)
-    bio: 20 # CLOTHING_ARMOR_MEDIUM
-    explosionArmor: 40 # CLOTHING_ARMOR_VERYHIGH
+    melee: 30
+    bullet: 50
+    bio: 20
+    explosionArmor: 40
   - type: RMCArmorSpeedTier
     speedTier: medium
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_MEDIUM
+  - type: ClothingSpeedModifier
     walkModifier: 0.666
     sprintModifier: 0.666
   - type: Corrodible
@@ -193,12 +187,11 @@
       tags:
       - RMCMagazineSmartGunirradiated
       - RMCMagazineSmartGun
-
 - type: entity
   parent: CMArmorM4PMC
   id: CMArmorM4PMCCommandoSurvivor
-  name: damaged MY7 pattern Commando armor
-  description: A modification of the W-Y PMC armor patterns. Designed for elite corporate mercenaries in mind. This one has a lot of scratches and acid damage.
+  name: 受损的MY7型突击队护甲
+  description: W-Y PMC护甲款式的改型。专为公司的精英雇佣兵设计。这件有许多划痕和酸蚀损伤。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/commando.rsi
@@ -209,61 +202,56 @@
     explosionArmor: 35
   - type: Storage
     grid:
-    - 0,0,5,1 # 3 slots
-
+    - 0,0,5,1
 - type: entity
   parent: RMCArmorM4PMCNoLight
   id: CMArmorM4PMCCommando
-  name: M5X exoskeleton armor
-  description: A complex system of overlapping plates intended to render the wearer all but impervious to small arms fire. A passive exoskeleton supports the weight of the armor, allowing a human to carry its massive bulk.
+  name: M5X外骨骼装甲
+  description: 一套由相互重叠的装甲板构成的复杂系统，旨在让穿戴者几乎免疫轻武器火力。被动式外骨骼支撑着装甲的重量，使人类能够承受其庞大的体量。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/commando.rsi
   - type: CMArmor
-    melee: 40 # CLOTHING_ARMOR_VERYHIGH (melee);
-    bullet: 50 # CLOTHING_ARMOR_ULTRAHIGH (bullets); going with an intermediate value until more damage types get implemented (more likely to be hit by bullets than melee)
-    bio: 20 # CLOTHING_ARMOR_MEDIUM
-    explosionArmor: 40 # CLOTHING_ARMOR_VERYHIGH
+    melee: 40
+    bullet: 50
+    bio: 20
+    explosionArmor: 40
   - type: RMCArmorSpeedTier
     speedTier: light
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_MEDIUM
+  - type: ClothingSpeedModifier
     walkModifier: 0.727
     sprintModifier: 0.727
   - type: Corrodible
     isCorrodible: false
-
-# TODO RMC14: Do we not have something for fire resistance?
 - type: entity
   parent: RMCArmorM4PMCNoLight
   id: RMCArmorM4PMCEngineer
-  name: M4 pattern engineer PMC armor
-  description: A modification of the standard M3 armor. Designed for high elemental protection, like shock, fire and fragments, lacks in terms of kevlar for bullet protection.
+  name: M4型工程师PMC护甲
+  description: 标准M3护甲的改进型号。专为提供高元素防护而设计，例如电击、火焰和破片，但在用于防弹的凯夫拉方面有所不足。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/engineer.rsi
   - type: CMArmor
     melee: 30
-    bullet: 15 # CLOTHING_ARMOR_MEDIUMLOW
-    bio: 20 # CLOTHING_ARMOR_MEDIUM
-    explosionArmor: 20 # CLOTHING_ARMOR_MEDIUM
-  - type: ClothingSpeedModifier # SLOWDOWN_ARMOR_LIGHT
+    bullet: 15
+    bio: 20
+    explosionArmor: 20
+  - type: ClothingSpeedModifier
     walkModifier: 0.725
     sprintModifier: 0.725
-
 - type: entity
   parent: RMCBaseJacket
   id: RMCArmorPMCDirector
   name: director's jacket
-  description: A jacket that belongs to someone very important. It is made of insulating material and offers minor protection from all forms of damage.
+  description: 一件属于某位非常重要人物的夹克。它由绝缘材料制成，能对所有形式的伤害提供轻微防护。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/PMC/director.rsi
-  # TODO RMC14: Taser immunity?
   - type: CMArmor
-    melee: 30 # CLOTHING_ARMOR_MEDIUMLOW
-    bullet: 20 # CLOTHING_ARMOR_MEDIUM
-    bio: 20 # CLOTHING_ARMOR_MEDIUM
-    explosionArmor: 20 # CLOTHING_ARMOR_MEDIUM
+    melee: 30
+    bullet: 20
+    bio: 20
+    explosionArmor: 20
   - type: Storage
     grid:
-    - 0,0,5,1 # 3 slots
+    - 0,0,5,1

@@ -1,8 +1,8 @@
 - type: entity
-  name: fireaxe
+  name: 消防斧 | fireaxe
   parent: [BaseItem, BaseEngineeringContraband]
   id: FireAxe
-  description: Truly, the weapon of a madman. Who would think to fight fire with an axe?
+  description: 说实话，疯子的武器。谁会想到用斧头来灭火呢？ | Truly, the weapon of a madman. Who would think to fight fire with an axe?
   components:
   - type: Tag
     tags:
@@ -60,9 +60,9 @@
 
 - type: entity
   id: FireAxeFlaming
-  name: fire axe
-  parent: [ BaseSyndicateContraband, FireAxe ]
-  description: Why fight fire with an axe when you can fight with fire and axe? Now featuring rugged rubberized handle!
+  name: 火焰斧 | fire axe
+  parent: [BaseSyndicateContraband, FireAxe]
+  description: 既然你能用火和斧头战斗，为什么还要用斧头对抗火焰？现在配备坚固的橡胶手柄！ | Why fight fire with an axe when you can fight with fire and axe? Now featuring rugged rubberized handle!
   components:
   - type: MeleeWeapon
     wideAnimationRotation: 135

@@ -1,28 +1,28 @@
 - type: entity
-  parent: [ BaseItem, BaseItemDestructible ]
+  parent: [BaseItem, BaseItemDestructible]
   id: BaseHandheldStationMap
-  name: station map
-  description: Displays a readout of the current station.
+  name: 车站地图 | station map
+  description: 显示当前车站的读数。 | Displays a readout of the current station.
   abstract: true
   components:
-    - type: StationMap
-    - type: Sprite
-      sprite: Objects/Devices/tablets.rsi
-      layers:
-        - state: tablet
-        - state: generic
-          shader: unshaded
-    - type: ActivatableUI
-      inHandsOnly: true
-      singleUser: true
-      key: enum.StationMapUiKey.Key
-    - type: Damageable
-    - type: Injurable
-      damageContainer: Inorganic
-    - type: UserInterface
-      interfaces:
-        enum.StationMapUiKey.Key:
-          type: StationMapBoundUserInterface
+  - type: StationMap
+  - type: Sprite
+    sprite: Objects/Devices/tablets.rsi
+    layers:
+    - state: tablet
+    - state: generic
+      shader: unshaded
+  - type: ActivatableUI
+    inHandsOnly: true
+    singleUser: true
+    key: enum.StationMapUiKey.Key
+  - type: Damageable
+  - type: Injurable
+    damageContainer: Inorganic
+  - type: UserInterface
+    interfaces:
+      enum.StationMapUiKey.Key:
+        type: StationMapBoundUserInterface
 
 - type: entity
   id: HandheldStationMap
@@ -57,9 +57,9 @@
 - type: entity
   parent: HandheldStationMap
   id: HandheldStationMapNukeops
-  name: target station map
+  name: 目标站点地图 | target station map
   suffix: Handheld, NukeOps
-  description: Displays a readout of the target station.
+  description: 显示目标站点的读数。 | Displays a readout of the target station.
   components:
   - type: Sprite
     sprite: Objects/Devices/tablets.rsi

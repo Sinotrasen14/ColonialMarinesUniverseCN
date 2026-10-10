@@ -2,22 +2,21 @@
   abstract: true
   parent: RMCBaseUniformAccessory
   id: RMCPonchoBase
-  name: poncho
-  description: An abstract poncho.
+  name: 斗篷
+  description: 一件抽象的斗篷。
   components:
   - type: UniformAccessory
     category: Poncho
     limit: 1
     hiddenByJacketRolling: false
-    layerKey: "enum.UniformAccessoryLayer.Base"
+    layerKey: enum.UniformAccessoryLayer.Base
   - type: Item
     size: Normal
-
 - type: entity
   parent: RMCPonchoBase
   id: RMCPoncho
-  name: UNMC poncho
-  description: The standard UNMC poncho has variations for every climate. Custom fitted to be attached to standard UNMC armor variants and worn over uniforms, it is comfortable, warming or cooling as needed, and well-fit. A marine couldn't ask for more. Affectionately referred to as a \"woobie\".
+  name: UNMC雨披
+  description: 标准UNMC雨披为每种气候都提供了不同款式。它经过定制，可连接标准UNMC装甲型号，并穿在制服外，既舒适，又能按需保暖或降温，而且十分合身。一名陆战队员别无所求。它被亲切地称为“woobie”。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ponchos/classic.rsi
@@ -26,12 +25,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Ponchos/classic.rsi
       state: poncho
-
 - type: entity
   parent: RMCPonchoBase
   id: RMCPonchoUrban
-  name: UNMC urban poncho
-  description: The standard UNMC poncho has variations for every climate. Custom fitted to be attached to standard UNMC armor variants and worn over uniforms, it is comfortable, warming or cooling as needed, and well-fit. A marine couldn't ask for more. Affectionately referred to as a \"woobie\".
+  name: UNMC城市斗篷
+  description: 标准的UNMC斗篷针对每种气候都有不同款式。可定制适配标准UNMC装甲变体并穿在制服外，舒适、可按需保暖或降温，且合身。海军陆战队员别无所求。被亲切地称为“呜比”。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ponchos/urban.rsi
@@ -40,12 +38,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Ponchos/urban.rsi
       state: poncho
-
 - type: entity
   parent: RMCPonchoBase
   id: RMCPonchoJungle
-  name: UNMC jungle poncho
-  description: The standard UNMC poncho has variations for every climate. Custom fitted to be attached to standard UNMC armor variants and worn over uniforms, it is comfortable, warming or cooling as needed, and well-fit. A marine couldn't ask for more. Affectionately referred to as a \"woobie\".
+  name: UNMC丛林雨披
+  description: 标准UNMC雨披针对每种气候都有不同款式。它经过定制，可连接标准UNMC装甲型号，并穿在制服外，穿着舒适，可按需保暖或降温，而且十分合身。陆战队员别无所求。它被亲切地称为“woobie”。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ponchos/jungle.rsi
@@ -54,12 +51,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Ponchos/jungle.rsi
       state: poncho
-
 - type: entity
   parent: RMCPonchoBase
   id: RMCPonchoDesert
-  name: UNMC desert poncho
-  description: The standard UNMC poncho has variations for every climate. Custom fitted to be attached to standard UNMC armor variants and worn over uniforms, it is comfortable, warming or cooling as needed, and well-fit. A marine couldn't ask for more. Affectionately referred to as a \"woobie\".
+  name: UNMC沙漠斗篷
+  description: 标准 UNMC 雨披有针对各种气候的型号。它经过定制，可连接到标准 UNMC 装甲型号上，并穿在制服外，舒适，可按需保暖或降温，而且合身。陆战队员别无所求。被亲切地称为“woobie”。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ponchos/desert.rsi
@@ -68,12 +64,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Ponchos/desert.rsi
       state: poncho
-
 - type: entity
   parent: RMCPonchoBase
   id: RMCPonchoSnow
-  name: UNMC snow poncho
-  description: The standard UNMC poncho has variations for every climate. Custom fitted to be attached to standard UNMC armor variants and worn over uniforms, it is comfortable, warming or cooling as needed, and well-fit. A marine couldn't ask for more. Affectionately referred to as a \"woobie\".
+  name: UNMC雪地斗篷
+  description: 标准 UNMC 雨披有针对各种气候的型号。它经过定制，可连接到标准 UNMC 装甲型号上，并穿在制服外，舒适，可按需保暖或降温，而且合身。陆战队员别无所求。被亲切地称为“woobie”。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Ponchos/snow.rsi

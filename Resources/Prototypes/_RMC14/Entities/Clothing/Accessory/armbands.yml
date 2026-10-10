@@ -2,20 +2,18 @@
   abstract: true
   parent: RMCBaseUniformAccessory
   id: RMCArmbandBase
-  name: armband
-  description: An abstract armband.
+  name: 臂章
+  description: 一个抽象的臂章。
   components:
   - type: UniformAccessory
     category: Armband
     limit: 2
     hiddenByJacketRolling: false
-
-# Marine
 - type: entity
   parent: RMCArmbandBase
   id: RMCAlphaArmband
-  name: alpha armband
-  description: An armband in squad colors, worn for ease of identification.
+  name: 阿尔法臂章
+  description: 以小队配色制成的臂章，佩戴以便于识别。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/alpha_armband.rsi
@@ -24,11 +22,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/alpha_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCAlphaArmband
   id: RMCBravoArmband
-  name: bravo armband
+  name: 布拉沃臂章
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/bravo_armband.rsi
@@ -37,11 +34,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/bravo_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCAlphaArmband
   id: RMCCharlieArmband
-  name: charlie armband
+  name: 查理臂章
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/charlie_armband.rsi
@@ -50,11 +46,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/charlie_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCAlphaArmband
   id: RMCDeltaArmband
-  name: delta armband
+  name: 德尔塔臂章
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/delta_armband.rsi
@@ -63,11 +58,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/delta_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCAlphaArmband
   id: RMCEchoArmband
-  name: echo armband
+  name: 回声臂章
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/echo_armband.rsi
@@ -76,11 +70,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/echo_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCAlphaArmband
   id: RMCFoxtrotArmband
-  name: foxtrot armband
+  name: 狐步臂章
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/foxtrot_armband.rsi
@@ -89,11 +82,10 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/foxtrot_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCAlphaArmband
   id: RMCSquadArmband
-  name: squad armband
+  name: 小队臂章
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/squad_armband.rsi
@@ -110,12 +102,11 @@
       SquadDelta: RMCDeltaArmband
       SquadEcho: RMCEchoArmband
       SquadFoxtrot: RMCFoxtrotArmband
-
 - type: entity
   parent: RMCArmbandBase
   id: RMCMPArmband
-  name: MP armband
-  description: An armband worn by UNMC Military Police officers on military installations. It is usually also worn by those from the provost office.
+  name: 宪兵臂章
+  description: UNMC 宪兵军官在军事设施佩戴的臂章。通常也由宪兵处人员佩戴。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/mp_armband.rsi
@@ -124,19 +115,16 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/mp_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCMPArmband
   id: RMCSecurityArmband
-  name: Officer armband
-  description: An armband worn by Colony law enforcement officers.
-
-# Nurse
+  name: 军官臂章
+  description: 殖民地执法人员佩戴的臂章。
 - type: entity
   parent: RMCArmbandBase
   id: RMCNurseArmband
-  name: nurse armband
-  description: An armband, worn by the rookie nurses to display they are still not doctors. This one is dark red.
+  name: 护士臂章
+  description: 一种臂章，由新手护士佩戴，以表明她们仍然不是医生。这一款是深红色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/nurse_armband.rsi
@@ -145,13 +133,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/nurse_armband.rsi
       state: armband
-
-# CLF
 - type: entity
   parent: RMCArmbandBase
   id: RMCCLFArmband
-  name: CLF armband
-  description: A crudely sewn armband. It's dyed in the colors of the Colonial Liberation Front.
+  name: 殖民解放阵线臂章
+  description: 一个缝制粗糙的臂章。它染成了殖民解放阵线的颜色。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/clf_armband.rsi
@@ -163,12 +149,11 @@
   - type: JobTitleChanger
     jobTitle: CLF Fighter
     override: true
-
 - type: entity
   parent: RMCArmbandBase
   id: RMCCLFCellLeaderArmband
-  name: CLF cell leader armband
-  description: A crudely sewn armband. It's dyed in the colors of the Colonial Liberation Front.
+  name: 殖民解放阵线小组领袖臂章
+  description: 一个缝制粗糙的臂章。它染成了殖民解放阵线的颜色。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/clf_armband.rsi
@@ -180,13 +165,11 @@
   - type: JobTitleChanger
     jobTitle: CLF Cell Leader
     override: true
-
-# HEFA
 - type: entity
   parent: RMCArmbandBase
   id: RMCHEFAArmband
-  name: HEFA Order milita armband
-  description: Sworn to the shrapnel and the shards therein. So sayeth her command when the first detonation occured.
+  name: HEFA教团民兵臂章
+  description: 誓忠于弹片与其中的碎片。首次爆炸之时，她的命令如此宣告。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/hefa_armband.rsi
@@ -195,13 +178,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/hefa_armband.rsi
       state: armband
-
-# Misc
 - type: entity
   parent: RMCArmbandBase
   id: RMCRedArmband
-  name: red armband
-  description: A fancy red armband!
+  name: 红色臂章
+  description: 一个华丽的红色臂章！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/red_armband.rsi
@@ -210,18 +191,16 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/red_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCHEFAArmband
   id: RMCCargoArmband
-  name: cargo armband
-  description: An armband, worn by the crew to display which department they're assigned to. This one is brown.
-
+  name: 货运臂章
+  description: 船员佩戴的臂章，用于显示他们所属的部门。这个是棕色的。
 - type: entity
   parent: RMCArmbandBase
   id: RMCScienceArmband
-  name: science armband
-  description: An armband, worn by the crew to display which department they're assigned to. This one is purple.
+  name: 科学部臂章
+  description: 船员佩戴的臂章，用于显示他们所属的部门。这个是紫色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/rnd_armband.rsi
@@ -230,12 +209,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/rnd_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCArmbandBase
   id: RMCHydroArmband
-  name: hydroponics armband
-  description: An armband, worn by the crew to display which department they're assigned to. This one is green and blue.
+  name: 水培臂章
+  description: 船员佩戴的臂章，用于显示他们所属的部门。这个是绿色和蓝色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/hydro_armband.rsi
@@ -244,12 +222,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/hydro_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCArmbandBase
   id: RMCMedArmband
-  name: medical armband
-  description: An armband, worn by the crew to display which department they're assigned to. This one is white.
+  name: 医疗臂章
+  description: 船员佩戴的臂章，用于显示他们所属的部门。这个是白色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/med_armband.rsi
@@ -258,12 +235,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/med_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCArmbandBase
   id: RMCMedEMTArmband
-  name: EMT armband
-  description: An armband, worn by the crew to display which department they're assigned to. This one is white and green.
+  name: 急救员臂章
+  description: 船员佩戴的臂章，用于显示他们所属的部门。这个是白色和绿色的。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/med_green_armband.rsi
@@ -272,12 +248,11 @@
     playerSprite:
       sprite: _RMC14/Objects/Clothing/Accessory/Armbands/med_green_armband.rsi
       state: armband
-
 - type: entity
   parent: RMCArmbandBase
   id: RMCEngiArmband
-  name: engineering armband
-  description: An armband, worn by the crew to display which department they're assigned to. This one is orange with a reflective strip!
+  name: 工程部臂章
+  description: 船员佩戴的臂章，用于显示他们所属的部门。这个是橙色带反光条的！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Accessory/Armbands/engi_armband.rsi

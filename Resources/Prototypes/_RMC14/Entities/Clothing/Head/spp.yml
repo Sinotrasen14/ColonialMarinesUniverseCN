@@ -1,37 +1,32 @@
-# SPP helmets
 - type: entity
   parent: ArmorHelmetM10
   id: ArmorHelmetSPP
-  name: UPP UM4 helmet
-  description: Using highly skilled manufacturing techniques this UM4 helmet manages to be very resistant to ballistics damage, at the cost of its huge weight causing an extreme stress on the occupant's head that will most likely cause neck problems.
+  name: UPP UM4头盔
+  description: 采用高度精湛的制造工艺，这款UM4头盔能够极强地抵御弹道伤害，但其巨大重量会给佩戴者的头部带来极大压力，很可能导致颈部问题。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/helmet.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/helmet.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: CMArmor
     bullet: 30
     bio: 15
     explosionArmor: 20
-    # armor_energy = 20
-    # armor_rad = 15
-    # armor_internaldamage = 30
   - type: RMCEarProtection
-
 - type: entity
   parent: ArmorHelmetSPP
   id: ArmorHelmetSPPEngineer
-  name: UPP UM4-V helmet
-  description: This version of the UM4 helmet has a ballistic-glass visor, allowing for the UPP Engineers to safely weld, but by some reports hindering sight in the process.
+  name: UPP UM4-V头盔
+  description: 这款UM4头盔配备了防弹玻璃面罩，让UPP工程师能够安全焊接，但一些报告称，在此过程中会妨碍视野。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/engi.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/engi.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
+    camouflageVariations: {}
   - type: CMArmor
     melee: 25
     explosionArmor: 30
@@ -44,12 +39,11 @@
     visorsToAdd:
     - RMCVisorSquadIntegrated
     - RMCVisorWeldingIntegrated
-
 - type: entity
   parent: ArmorHelmetSPP
   id: ArmorHelmetSPPHeavy
-  name: UPP UH7 helmet
-  description: Like the UM4, this helmet is very resistant to ballistic damage, but both its flaws and benefits have been doubled. The few UPP Zhergeants that have lived past age 30 have all needed to retire from terminal neck problems caused from the stress of wearing this helmet.
+  name: UPP UH7头盔
+  description: 与UM4一样，这款头盔对弹道伤害有很强的抵抗力，但它的缺陷和优点也都翻了一倍。少数活过30岁的UPP泽尔根特人，全都因佩戴这款头盔带来的压力而患上了终末期颈部问题，不得不退役。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/heavy.rsi
@@ -60,146 +54,133 @@
     bullet: 35
     bio: 20
     explosionArmor: 30
-    # armor_internaldamage = 35
-
 - type: entity
   parent: ArmorHelmetSPP
   id: RMCArmorHelmetSPPArmy
-  name: 6B82 combat helmet
-  description: An older version of the UPP Army's 6B92 combat helmet, still worn by certain units on planets the UPP deems less important.
+  name: 6B82战斗头盔
+  description: UPP陆军6B92战斗头盔的旧式版本，仍被UPP认为不太重要的星球上的某些部队佩戴。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/army_helmet.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/army_helmet.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
-
+    camouflageVariations: {}
 - type: entity
   parent: ArmorHelmetSPP
   id: RMCArmorHelmetSPPFirefighter
-  name: T-20 firefighter helmet
-  description: "A reinforced, heat-resistant helmet issued to UPP emergency responders. Its durable composite shell provides protection against falling debris and extreme heat, while the attached fire-resistant shroud shields the wearer’s neck and shoulders. A red star is emblazoned on the front, marking its service within the socialist's progressive peoples."
+  name: T-20消防头盔
+  description: 一种配发给UPP应急响应人员的强化耐热头盔。其耐用的复合外壳可抵御坠落的碎屑和极端高温，附带的阻燃护罩可保护佩戴者的颈部和肩部。正面饰有一颗红星，标志着它曾在社会主义进步人民中服役。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/fire_helmet.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/fire_helmet.rsi
   - type: ItemCamouflage
-    camouflageVariations: { }
-
-# SPP hats
+    camouflageVariations: {}
 - type: entity
   parent: CMHeadCap
   id: CMHeadCapSPP
-  name: UL2 cap
-  description: UPP headgear issued to soldiers when they're not expected to face combat, and may be requested by officers and above.
+  name: UL2帽
+  description: UPP配发的帽子，发放给预计不会面对战斗的士兵，军官及以上人员可申请领取。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/cap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/cap.rsi
-
 - type: entity
   parent: CMHeadCapSPP
   id: CMHeadCapSPPCivilian
-  name: UPP UL2 civilian cap
-  description: UPP civilian headgear. It's of poor quality, and isn't expected to last all that long, however for as long as it's whole, it appears quite stylish.
+  name: UPP UL2民用帽
+  description: UPP民用帽。质量很差，预计用不了多久，不过只要它完好无损，看起来就相当时髦。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/civ.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/civ.rsi
-
 - type: entity
   parent: CMHeadCapSPPCivilian
   id: RMCHeadCapSPPCivilianPlantWorker
-  name: white worker cap
-  description: A simple white fabric cap, commonly worn by various UPP workers to keep hair contained and maintain cleanliness. Lightweight and practical, but not very durable.
+  name: 白色工人帽
+  description: 一顶简单的白色布帽，通常由各类UPP工人佩戴，用于束住头发并保持清洁。轻便实用，但不太耐用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/white_cap.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/white_cap.rsi
-
 - type: entity
   parent: CMHeadCapSPP
   id: CMHeadCapSPPBeret
-  name: UL3 UPP beret
+  name: UL3 UPP贝雷帽
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/beret.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/beret.rsi
-
 - type: entity
   parent: CMHeadCapSPPBeret
   id: RMCHeadCapSPPBeretArmy
-  name: UPP reservist beret
-  description: A well-made beret worn by reservists of the UPP armed forces. It signifies their continued commitment to the cause, even while not on active duty, and serves as a symbol of unity and service.
+  name: UPP预备役贝雷帽
+  description: 一顶制作精良的贝雷帽，由UPP武装部队的预备役人员佩戴。它象征着他们即使不在现役期间也继续致力于这一事业，并作为团结与服役的象征。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/army_beret.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/army_beret.rsi
-
 - type: entity
   parent: CMHeadCapSPP
   id: CMHeadCapSPPPeaked
-  name: UPP UL3 peaked cap
-  description: UPP headgear issued to Kapitans and above. It is made of high-quality materials, and has the officers rank in gold placed upon the front of the cap.
+  name: UPP UL3 大檐帽
+  description: UPP 大檐帽，配发给上尉及以上军官。它由高品质材料制成，军官军衔以金色置于帽前。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/peaked.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/peaked.rsi
-
 - type: entity
   parent: CMHeadCapSPPPeaked
   id: CMHeadCapSPPPeakedPolice
-  name: UL3 PaP peaked cap
-  description: Standard issue peaked cap of the People's Armed Police.
+  name: UL3 武警大檐帽
+  description: 中国人民武装警察部队标准配发大檐帽。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/peaked_police.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/peaked_police.rsi
-
 - type: entity
   parent: CMHeadCapSPP
   id: RMCHeadCapSPPPolKomWhite
-  name: SPP  UL5 C-1 peaked cap
-  description: SPP headgear issued to high ranking officers in the navy or Marine Infantry corps.
+  name: SPP UL5 C-1 大檐帽
+  description: SPP 头具，配发给海军或海军陆战队步兵部队的高级军官。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/kommisar_cap_white.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/kommisar_cap_white.rsi
-
 - type: entity
   parent: CMHeadCapSPP
   id: RMCHeadCapSPPPolBlack
-  name: SPP  UL5 P-1 peaked cap
-  description: SPP headgear issued to political Kommisars of all types. Reminds you of october.
+  name: SPP UL5 P-1 大檐帽
+  description: 配发给各类政治委员的SPP头饰。让你想起十月。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/kommisar_cap_black.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/kommisar_cap_black.rsi
-
-
 - type: entity
   parent: CMHeadCapSPP
   id: CMHeadCapSPPUshanka
-  name: UPP UL8 ushanka
+  name: UPP UL8 护耳冬帽
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/ushanka.rsi
     layers:
     - state: icon
-      map: [ "unfoldedLayer" ]
+      map:
+      - unfoldedLayer
     - state: icon-up
-      map: ["foldedLayer"]
+      map:
+      - foldedLayer
       visible: false
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/ushanka.rsi
@@ -208,19 +189,20 @@
   - type: FoldableClothing
     foldedEquippedPrefix: up
     foldedHeldPrefix: up
-
 - type: entity
   parent: CMHeadCapSPPUshanka
   id: CMHeadCapSPPUshankaCivilian
-  name: UPP UL8c ushanka
+  name: UPP UL8c 护耳冬帽
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/ushanka_civ.rsi
     layers:
     - state: icon
-      map: [ "unfoldedLayer" ]
+      map:
+      - unfoldedLayer
     - state: icon-up
-      map: ["foldedLayer"]
+      map:
+      - foldedLayer
       visible: false
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/SPP/ushanka_civ.rsi

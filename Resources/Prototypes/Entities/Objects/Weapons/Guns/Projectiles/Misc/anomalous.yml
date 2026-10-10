@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseBullet
   id: AnomalousParticleDelta
-  name: delta particles
-  categories: [ HideSpawnMenu ]
+  name: delta粒子 | delta particles
+  categories: [HideSpawnMenu]
   components:
   - type: PointLight
     enabled: true
@@ -17,7 +17,7 @@
     - state: magicm_red
       shader: unshaded
   - type: Ammo
-    muzzleFlash: null
+    muzzleFlash:
   - type: Physics
   - type: Fixtures
     fixtures:
@@ -40,7 +40,7 @@
 - type: entity
   parent: AnomalousParticleDelta
   id: AnomalousParticleDeltaStrong
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: AnomalousParticle
     particleType: Delta
@@ -52,8 +52,8 @@
 - type: entity
   parent: AnomalousParticleDelta
   id: AnomalousParticleEpsilon
-  name: epsilon particles
-  categories: [ HideSpawnMenu ]
+  name: ε粒子 | epsilon particles
+  categories: [HideSpawnMenu]
   components:
   - type: PointLight
     enabled: true
@@ -70,7 +70,7 @@
 - type: entity
   parent: AnomalousParticleEpsilon
   id: AnomalousParticleEpsilonStrong
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: AnomalousParticle
     particleType: Epsilon
@@ -82,8 +82,8 @@
 - type: entity
   parent: AnomalousParticleDelta
   id: AnomalousParticleZeta
-  name: zeta particles
-  categories: [ HideSpawnMenu ]
+  name: ζ粒子 | zeta particles
+  categories: [HideSpawnMenu]
   components:
   - type: PointLight
     enabled: true
@@ -100,7 +100,7 @@
 - type: entity
   parent: AnomalousParticleZeta
   id: AnomalousParticleZetaStrong
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: AnomalousParticle
     particleType: Zeta
@@ -112,8 +112,8 @@
 - type: entity
   parent: AnomalousParticleDelta
   id: AnomalousParticleOmegaStrong
-  name: omega particles
-  categories: [ HideSpawnMenu ]
+  name: 欧米伽粒子 | omega particles
+  categories: [HideSpawnMenu]
   components:
   - type: PointLight
     enabled: true
@@ -141,8 +141,8 @@
 - type: entity
   parent: AnomalousParticleDelta
   id: AnomalousParticleSigma
-  name: sigma particles
-  categories: [ HideSpawnMenu ]
+  name: σ粒子 | sigma particles
+  categories: [HideSpawnMenu]
   components:
   - type: PointLight
     enabled: true
@@ -159,8 +159,8 @@
 - type: entity
   parent: AnomalousParticleSigma
   id: AnomalousParticleSigmaStrong
-  name: sigma particles
-  categories: [ HideSpawnMenu ]
+  name: σ粒子 | sigma particles
+  categories: [HideSpawnMenu]
   components:
   - type: AnomalousParticle
     particleType: Sigma

@@ -1,10 +1,10 @@
 # Explosive cable below
 - type: entity
-  parent: [ CableStack, BaseSecurityContraband ]
+  parent: [CableStack, BaseSecurityContraband]
   id: CableDetStack
-  name: explosive cord
+  name: 爆炸索 | explosive cord
   suffix: Full
-  description: Explosive cord for removing whatever is in your way.
+  description: 用于清除挡路之物的爆炸索。 | Explosive cord for removing whatever is in your way.
   components:
   - type: Stack
     stackType: CableDet
@@ -39,8 +39,7 @@
     damageContainer: StructuralInorganic
   - type: Destructible # should have the same general explosive behavior as in cables.yml & detonator.yml
     thresholds:
-    - trigger:
-        !type:DamageTypeTrigger
+    - trigger: !type:DamageTypeTrigger
         damageType: Structural # as close as we can get to only letting explosives trigger it.
         damage: 120
       behaviors:

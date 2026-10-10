@@ -76,8 +76,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 1000
         mask:
@@ -100,15 +99,13 @@
     - Robotics
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 400
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 275
       behaviors:
       - !type:PlaySoundBehavior
@@ -118,15 +115,15 @@
 - type: entity
   id: MechRipley
   parent: BaseMech
-  name: Ripley APLU
-  description: Versatile and lightly armored, the Ripley is useful for almost any heavy work scenario. The "APLU" stands for Autonomous Power Loading Unit.
+  name: 里普利自动动力装载机 | Ripley APLU
+  description: 多功能且装甲轻便的里普利几乎适用于任何重型工作场景。“APLU”代表自主动力装载单元。 | Versatile and lightly armored, the Ripley is useful for almost any heavy work scenario. The "APLU" stands for Autonomous Power Loading Unit.
   components:
   - type: Sprite
     drawdepth: Mobs
     noRot: true
     sprite: Objects/Specific/Mech/mecha.rsi
     layers:
-    - map: [ "enum.MechVisualLayers.Base" ]
+    - map: ["enum.MechVisualLayers.Base"]
       state: ripley
   - type: FootstepModifier
     footstepSoundCollection:
@@ -146,7 +143,7 @@
         Shock: 0.75
     operatorWhitelist:
       components:
-        - HumanoidProfile
+      - HumanoidProfile
   - type: VehicleHandBlocker
     blockedHands: 2
   - type: MeleeWeapon
@@ -174,14 +171,14 @@
   parent: BaseMech
   id: MechHonker
   name: H.O.N.K.
-  description: "Produced by \"Tyranny of Honk, INC\", this exosuit is designed as heavy clown-support. Used to spread the fun and joy of life. HONK!"
+  description: "由“鸣笛暴政公司”生产，这款外骨骼装甲被设计为重型小丑支援装备。用于传播生活的乐趣与欢乐。鸣笛！ | Produced by \"Tyranny of Honk, INC\", this exosuit is designed as heavy clown-support. Used to spread the fun and joy of life. HONK!"
   components:
   - type: Sprite
     drawdepth: Mobs
     noRot: true
     sprite: Objects/Specific/Mech/mecha.rsi
     layers:
-    - map: [ "enum.MechVisualLayers.Base" ]
+    - map: ["enum.MechVisualLayers.Base"]
       state: honker
   - type: FootstepModifier
     footstepSoundCollection:
@@ -221,14 +218,14 @@
   parent: BaseMech
   id: MechHamtr
   name: HAMTR
-  description: "An experimental mech which uses a brain–computer interface to connect directly to a hamsters brain."
+  description: "一种实验性机甲，通过脑机接口直接连接到仓鼠的大脑。 | An experimental mech which uses a brain–computer interface to connect directly to a hamsters brain."
   components:
   - type: Sprite
     drawdepth: Mobs
     noRot: true
     sprite: Objects/Specific/Mech/mecha.rsi
     layers:
-    - map: [ "enum.MechVisualLayers.Base" ]
+    - map: ["enum.MechVisualLayers.Base"]
       state: hamtr
   - type: FootstepModifier
     footstepSoundCollection:
@@ -280,21 +277,20 @@
 - type: entity
   parent: BaseMech
   id: MechVim
-  name: Vim
-  description: A miniature exosuit from Nanotrasen, developed to let the irreplaceable station pets live a little longer.
+  name: 维姆 | Vim
+  description: 纳米传讯公司研发的微型外骨骼服，让无可替代的空间站宠物能活得更久一些。 | A miniature exosuit from Nanotrasen, developed to let the irreplaceable station pets live a little longer.
   components:
   - type: Sprite
     drawdepth: Mobs
     noRot: true
     sprite: Objects/Specific/Mech/mecha.rsi
     layers:
-    - map: [ "enum.MechVisualLayers.Base" ]
+    - map: ["enum.MechVisualLayers.Base"]
       state: vim
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.15
         density: 80
         mask:

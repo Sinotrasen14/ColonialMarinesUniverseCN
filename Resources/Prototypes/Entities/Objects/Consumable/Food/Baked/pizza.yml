@@ -8,8 +8,8 @@
   components:
   - type: FlavorProfile
     flavors:
-      - oily
-      - bread
+    - oily
+    - bread
   - type: Sprite
     sprite: Objects/Consumable/Food/Baked/pizza.rsi
   - type: Solution
@@ -32,8 +32,8 @@
   components:
   - type: FlavorProfile
     flavors:
-      - oily
-      - bread
+    - oily
+    - bread
   - type: Sprite
     sprite: Objects/Consumable/Food/Baked/pizza.rsi
   - type: Solution
@@ -55,16 +55,16 @@
 # Pizza
 
 - type: entity
-  name: margherita pizza
+  name: 玛格丽特披萨 | margherita pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaMargherita
-  description: The flavor of Italy.
+  description: 意大利的风味。 | The flavor of Italy.
   components:
   - type: FlavorProfile
     flavors:
-      - cheesy
-      - oily
-      - bread
+    - cheesy
+    - oily
+    - bread
   - type: Sprite
     layers:
     - state: margherita
@@ -74,16 +74,16 @@
       amount: 8
 
 - type: entity
-  name: slice of margherita pizza
+  name: 一片玛格丽特披萨 | slice of margherita pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaMargheritaSlice
-  description: A slice of Italy.
+  description: 一片意大利风情。 | A slice of Italy.
   components:
   - type: FlavorProfile
     flavors:
-      - cheesy
-      - oily
-      - bread
+    - cheesy
+    - oily
+    - bread
   - type: Sprite
     layers:
     - state: margherita-slice
@@ -91,17 +91,17 @@
     heldPrefix: margherita-slice
 
 - type: entity
-  name: meat pizza
+  name: 肉披萨 | meat pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaMeat
-  description: Greasy pizza with delicious meat.
+  description: 油腻的披萨配上美味的肉。 | Greasy pizza with delicious meat.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - cheesy
-      - oily
-      - bread
+    - meaty
+    - cheesy
+    - oily
+    - bread
   - type: Sprite
     layers:
     - state: meat
@@ -115,17 +115,17 @@
     - Pizza
 
 - type: entity
-  name: slice of meat pizza
+  name: 一片肉披萨 | slice of meat pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaMeatSlice
-  description: A nutritious slice of meatpizza.
+  description: 一片营养丰富的肉披萨。 | A nutritious slice of meatpizza.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - cheesy
-      - oily
-      - bread
+    - meaty
+    - cheesy
+    - oily
+    - bread
   - type: Sprite
     layers:
     - state: meat-slice
@@ -139,16 +139,16 @@
 # Tastes like crust, tomato, cheese, meat.
 
 - type: entity
-  name: mushroom pizza
+  name: 蘑菇披萨 | mushroom pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaMushroom
-  description: Very special pizza.
+  description: 非常特别的披萨。 | Very special pizza.
   components:
   - type: FlavorProfile
     flavors:
-      - mushroom
-      - oily
-      - bread
+    - mushroom
+    - oily
+    - bread
   - type: Sprite
     layers:
     - state: mushroom
@@ -158,16 +158,16 @@
       amount: 8
 
 - type: entity
-  name: slice of mushroom pizza
+  name: 一块蘑菇披萨 | slice of mushroom pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaMushroomSlice
-  description: Maybe it is the last slice of pizza in your life.
+  description: 也许这是你人生中最后一块披萨。 | Maybe it is the last slice of pizza in your life.
   components:
   - type: FlavorProfile
     flavors:
-      - mushroom
-      - oily
-      - bread
+    - mushroom
+    - oily
+    - bread
   - type: Sprite
     layers:
     - state: mushroom-slice
@@ -176,19 +176,19 @@
 # Tastes like crust, tomato, cheese, mushroom.
 
 - type: entity
-  name: vegetable pizza
+  name: 蔬菜披萨 | vegetable pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaVegetable
-  description: The station's vegetarians will thank you for making this.
+  description: 站里的素食者会感谢你做这个。 | The station's vegetarians will thank you for making this.
   components:
   - type: FlavorProfile
     flavors:
-      - eggplant
-      - corn
-      - tomato
-      - oily
-      - cheesy
-      - bread
+    - eggplant
+    - corn
+    - tomato
+    - oily
+    - cheesy
+    - bread
   - type: Sprite
     layers:
     - state: vegetable
@@ -198,20 +198,20 @@
       amount: 8
 
 - type: entity
-  name: slice of vegetable pizza
+  name: 一片蔬菜披萨 | slice of vegetable pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaVegetableSlice
-  description: A slice of this is enough to satisfy even the pickiest station personnel.
+  description: 一片这样的披萨就足以让最挑剔的空间站人员也感到满足。 | A slice of this is enough to satisfy even the pickiest station personnel.
   components:
   - type: FlavorProfile
     flavors:
-      - eggplant
-      - corn
-      - tomato
-      - carrot
-      - oily
-      - cheesy
-      - bread
+    - eggplant
+    - corn
+    - tomato
+    - carrot
+    - oily
+    - cheesy
+    - bread
   - type: Sprite
     layers:
     - state: vegetable-slice
@@ -221,14 +221,14 @@
 # Tastes like crust, tomato, cheese, carrot.
 
 - type: entity
-  name: donk-pocket pizza
+  name: 唐克口袋披萨 | donk-pocket pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaDonkpocket
-  description: Who thought this would be a good idea?
+  description: 谁会觉得这是个好主意？ | Who thought this would be a good idea?
   components:
   - type: FlavorProfile
     flavors:
-      - donk
+    - donk
   - type: Sprite
     layers:
     - state: donkpocket
@@ -251,14 +251,14 @@
     - Pizza
 
 - type: entity
-  name: slice of donk-pocket pizza
+  name: 一片donk-pocket披萨 | slice of donk-pocket pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaDonkpocketSlice
-  description: Smells like donk-pocket.
+  description: 闻起来像donk-pocket。 | Smells like donk-pocket.
   components:
   - type: FlavorProfile
     flavors:
-      - donk
+    - donk
   - type: Sprite
     layers:
     - state: donkpocket-slice
@@ -281,17 +281,17 @@
 # Tastes like crust, tomato, cheese, meat, laziness.
 
 - type: entity
-  name: dank pizza
+  name: 丹克披萨 | dank pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaDank
-  description: The hippie's pizza of choice.
+  description: 嬉皮士的首选披萨。 | The hippie's pizza of choice.
   components:
   - type: FlavorProfile
     flavors:
-      - oily
-      - bread
-      - cheesy
-      - leafy
+    - oily
+    - bread
+    - cheesy
+    - leafy
   - type: Sprite
     layers:
     - state: dank
@@ -310,17 +310,17 @@
         Quantity: 30
 
 - type: entity
-  name: slice of dank pizza
+  name: 一块潮湿的披萨 | slice of dank pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaDankSlice
-  description: So good, man...
+  description: 太好吃了，伙计…… | So good, man...
   components:
   - type: FlavorProfile
     flavors:
-      - oily
-      - bread
-      - cheesy
-      - leafy
+    - oily
+    - bread
+    - cheesy
+    - leafy
   - type: Sprite
     layers:
     - state: dank-slice
@@ -338,17 +338,17 @@
 # Tastes like crust, tomato, cheese, meat, satisfaction.
 
 - type: entity
-  name: sassysage pizza
+  name: 傲慢鼠尾草披萨 | sassysage pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaSassysage
-  description: You can really smell the sassiness.
+  description: 你真的能闻到那股傲慢劲儿。 | You can really smell the sassiness.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - cheesy
-      - oily
-      - bread
+    - meaty
+    - cheesy
+    - oily
+    - bread
   - type: Sprite
     layers:
     - state: sassysage
@@ -362,17 +362,17 @@
     - Pizza
 
 - type: entity
-  name: slice of sassysage pizza
+  name: 一块俏皮香肠披萨 | slice of sassysage pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaSassysageSlice
-  description: Deliciously sassy.
+  description: 美味又俏皮。 | Deliciously sassy.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - cheesy
-      - oily
-      - bread
+    - meaty
+    - cheesy
+    - oily
+    - bread
   - type: Sprite
     layers:
     - state: sassysage-slice
@@ -386,18 +386,18 @@
 # Tastes like crust, tomato, cheese, sausage, sass.
 
 - type: entity
-  name: Hawaiian pizza
+  name: 夏威夷披萨 | Hawaiian pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaPineapple
-  description: Makes people burst into tears. Tears of joy or sadness depends on the person's fondness for pineapple.
+  description: 让人泪流满面。是喜悦的泪水还是悲伤的泪水，取决于这个人对菠萝的喜爱程度。 | Makes people burst into tears. Tears of joy or sadness depends on the person's fondness for pineapple.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - pineapple
-      - cheesy
-      - oily
-      - bread
+    - meaty
+    - pineapple
+    - cheesy
+    - oily
+    - bread
   - type: Sprite
     layers:
     - state: pineapple
@@ -411,18 +411,18 @@
     - Pizza
 
 - type: entity
-  name: slice of Hawaiian pizza
+  name: 一块夏威夷披萨 | slice of Hawaiian pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaPineappleSlice
-  description: A slice of joy/sin.
+  description: 一片快乐／罪恶。 | A slice of joy/sin.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - pineapple
-      - cheesy
-      - oily
-      - bread
+    - meaty
+    - pineapple
+    - cheesy
+    - oily
+    - bread
   - type: Sprite
     layers:
     - state: pineapple-slice
@@ -437,18 +437,18 @@
 
 #TODO: This is a meme pizza from /tg/. It has specially coded mechanics.
 - type: entity
-  name: Arnold's pizza
+  name: 阿诺德的披萨 | Arnold's pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaArnold
-  description: Hello, you've reached Arnold's pizza shop. I'm not here now, I'm out killing pepperoni.
+  description: 你好，你已接通阿诺德的披萨店。我现在不在，我出去杀意大利辣香肠了。 | Hello, you've reached Arnold's pizza shop. I'm not here now, I'm out killing pepperoni.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - cheesy
-      - oily
-      - bread
-      - gunpowder
+    - meaty
+    - cheesy
+    - oily
+    - bread
+    - gunpowder
   - type: Sprite
     layers:
     - state: arnold
@@ -475,18 +475,18 @@
     - Pizza
 
 - type: entity
-  name: slice of Arnold's pizza
+  name: 阿诺德披萨的一块 | slice of Arnold's pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaArnoldSlice
-  description: I come over, maybe I give you a pizza, maybe I break off your arm.
+  description: 我过来，也许给你一块披萨，也许把你的胳膊拧下来。 | I come over, maybe I give you a pizza, maybe I break off your arm.
   components:
   - type: FlavorProfile
     flavors:
-      - meaty
-      - cheesy
-      - oily
-      - bread
-      - gunpowder
+    - meaty
+    - cheesy
+    - oily
+    - bread
+    - gunpowder
   - type: Sprite
     layers:
     - state: arnold-slice
@@ -514,16 +514,16 @@
 
 #TODO: Make this do poison damage and make cut pizza slices eventually rot into this.
 - type: entity
-  name: slice of moldy pizza
+  name: 一片发霉的披萨 | slice of moldy pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaMoldySlice
-  description: Once a perfectly good slice of pizza pie, but now it lies here, rancid and bursting with spores.
+  description: 曾经是一片完好的披萨，如今却躺在这里，腐臭不堪，孢子遍布。 | Once a perfectly good slice of pizza pie, but now it lies here, rancid and bursting with spores.
   components:
   - type: FlavorProfile
     flavors:
-      - bitter
-      - terrible
-      - mushroom
+    - bitter
+    - terrible
+    - mushroom
   - type: Sprite
     layers:
     - state: moldy-slice
@@ -544,10 +544,10 @@
 # Tastes like stale crust, rancid cheese, mushroom.
 
 - type: entity
-  name: spicy rock pizza
+  name: 辣味岩石披萨 | spicy rock pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaUranium
-  description: Spicy pizza covered in peppers and uranium.
+  description: 辣味披萨，上面铺满了辣椒和铀。 | Spicy pizza covered in peppers and uranium.
   components:
   - type: FlavorProfile
     flavors:
@@ -584,10 +584,10 @@
         Quantity: 16
 
 - type: entity
-  name: slice of spicy rock pizza
+  name: 一块发光的辣味岩石披萨 | slice of spicy rock pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaUraniumSlice
-  description: A glowing slice of spicy rock pizza.
+  description: 一块发光的辣味岩石披萨。 | A glowing slice of spicy rock pizza.
   components:
   - type: FlavorProfile
     flavors:
@@ -625,10 +625,10 @@
 # Tastes like crust, tomato, cheese, radiation.
 
 - type: entity
-  name: cotton pizza
+  name: 棉质比萨 | cotton pizza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaCotton
-  description: Flat fabric cotton dough with cotton topping. Incredible.
+  description: 用棉质面料制成的扁平棉布饼底，上面铺着棉花配料。不可思议。 | Flat fabric cotton dough with cotton topping. Incredible.
   components:
   - type: FlavorProfile
     flavors:
@@ -658,10 +658,10 @@
         Quantity: 20
 
 - type: entity
-  name: slice of cotton pizza
+  name: 一块棉花披萨 | slice of cotton pizza
   parent: FoodPizzaSliceBase
   id: FoodPizzaCottonSlice
-  description: A slice of cotton pizza. Cotton included.
+  description: 一块棉花披萨。内含棉花。 | A slice of cotton pizza. Cotton included.
   components:
   - type: FlavorProfile
     flavors:
@@ -688,15 +688,15 @@
         Quantity: 2.66
 
 - type: entity
-  name: world peazza
+  name: 世界和平广场 | world peazza
   parent: [FoodPizzaBase, BaseSlicingRefinableFood]
   id: FoodPizzaWorldpeas
-  description: Modern diplomacy in the shape of a disc.
+  description: 现代外交，呈圆盘之形。 | Modern diplomacy in the shape of a disc.
   components:
   - type: FlavorProfile
     flavors:
-      - bread
-      - numbingtranquility
+    - bread
+    - numbingtranquility
   - type: Sprite
     layers:
     - state: worldpeas
@@ -715,15 +715,15 @@
         Quantity: 15
 
 - type: entity
-  name: slice of world peazza
+  name: 世界和平的一角 | slice of world peazza
   parent: FoodPizzaSliceBase
   id: FoodPizzaWorldpeasSlice
-  description: Dividing the world up is a small price to pay for harmony.
+  description: 为了和谐，分割世界只是小小的代价。 | Dividing the world up is a small price to pay for harmony.
   components:
   - type: FlavorProfile
     flavors:
-      - bread
-      - numbingtranquility
+    - bread
+    - numbingtranquility
   - type: Sprite
     layers:
     - state: worldpeas-slice

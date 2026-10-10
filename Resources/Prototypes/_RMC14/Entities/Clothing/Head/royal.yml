@@ -1,134 +1,117 @@
-# Royal Crown Marines hats
 - type: entity
   parent: RMCHeadBeanie
   id: RMCHeadRoyalBeanie
-  name: royal marine beanie
-  description: A standard military beanie.
-
+  name: 皇家海军陆战队便帽
+  description: 一顶标准的军用便帽。
 - type: entity
   parent: RMCHeadRoyalBeanie
   id: RMCHeadRoyalTurban
-  name: royal marine turban
-  description: A standard military turban found in the Royal Crown Marines. Considered a rare item, these kind of turbans are prized by collectors.
+  name: 皇家海军陆战队头巾
+  description: 一种在皇家海军陆战队中装备的标准军用头巾。这类头巾被视为稀有物品，深受收藏家珍视。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Royal/turban.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Royal/turban.rsi
-
 - type: entity
   parent: CMHeadBeret
   id: RMCHeadRoyalBeret
-  name: royal marine beret
-  description: A green beret belonging to the Royal Crown Marines.
+  name: 皇家海军陆战队贝雷帽
+  description: 一顶属于皇家海军陆战队的绿色贝雷帽。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Royal/beret.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Royal/beret.rsi
-
 - type: entity
   parent: RMCHeadRoyalBeret
   id: RMCHeadRoyalBeretLead
-  name: royal marine leader beret
-  description: A green beret belonging to the Royal Crown Marines.
+  name: 皇家海军陆战队领袖贝雷帽
+  description: 属于皇家海军陆战队的绿色贝雷帽。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Royal/beret_tl.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Royal/beret_tl.rsi
-
-
-# Royal marine helmets
 - type: entity
   parent: ArmorHelmetM10
   id: RMCHeadRoyalHelmet
-  name: royal L5A2 ballistic helmet
-  description: A high-cut ballistic helmet. Designed to be used by Royal Crown Marines as part of the Kestrel armour system.
+  name: 皇家L5A2防弹头盔
+  description: 一顶高切防弹头盔。设计为红隼装甲系统的一部分，供皇家皇冠海军陆战队使用。
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/Head/Royal/helmet.rsi
-    - type: Clothing
-      sprite: _RMC14/Objects/Clothing/Head/Royal/helmet.rsi
-    - type: ItemCamouflage
-      camouflageVariations: {}
-    - type: CMArmor
-      bio: 10
-      explosionArmor: 20
-      # armor_energy = 15
-      # armor_internaldamage = 10
-
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Head/Royal/helmet.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Head/Royal/helmet.rsi
+  - type: ItemCamouflage
+    camouflageVariations: {}
+  - type: CMArmor
+    bio: 10
+    explosionArmor: 20
 - type: entity
   parent: RMCHeadRoyalHelmet
   id: RMCHeadRoyalHelmetBallistic
-  name: royal L5A3 ballistic helmet
-  description: A high-cut ballistic helmet featuring an attached mandible. Designed to be used by Royal Crown Marines as part of the Kestrel armour system.
+  name: 皇家L5A3防弹头盔
+  description: 一款高切防弹头盔，带有附加下颌护件。设计供皇家皇冠海军陆战队作为红隼装甲系统的一部分使用。
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/Head/Royal/ballistic.rsi
-    - type: Clothing
-      sprite: _RMC14/Objects/Clothing/Head/Royal/ballistic.rsi
-    - type: CMArmor
-      melee: 30
-      bullet: 35
-      bio: 20
-      explosionArmor: 25
-      # armor_energy = 25
-
-# Paramarines
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Head/Royal/ballistic.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Head/Royal/ballistic.rsi
+  - type: CMArmor
+    melee: 30
+    bullet: 35
+    bio: 20
+    explosionArmor: 25
 - type: entity
   parent: RMCHeadRoyalBeret
   id: RMCHeadParaBeret
-  name: paramarine beret
-  description: A distinctive crimson beret worn by the RCM's Paramarine regiments. Reinforced with flexible Kevlar, it offers minimal protection while maintaining a traditional and respected appearance.
+  name: 伞兵贝雷帽
+  description: 一款由RCM的伞兵陆战团佩戴的独特深红色贝雷帽。用柔韧的凯夫拉加固，在提供最低限度防护的同时，保持了传统且受人尊敬的外观。
   suffix: Paramarine, Survivor
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Royal/para_beret.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Royal/para_beret.rsi
-    
 - type: entity
   parent: RMCHeadRoyalBeret
   id: RMCHeadParaBeretLead
-  name: paramarine team lead beret
-  description: A distinctive crimson beret worn by NCOs of the RCM's Paramarine regiments. Reinforced with flexible Kevlar, it offers minimal protection while maintaining a traditional and respected appearance.
+  name: 伞降陆战队队长贝雷帽
+  description: RCM伞降陆战队各团士官佩戴的独特深红色贝雷帽。用柔性凯夫拉加固，在保持传统且令人敬重外观的同时，仅能提供最低限度的防护。
   suffix: Paramarine, Survivor, Team Leader
   components:
-    - type: Sprite
-      sprite: _RMC14/Objects/Clothing/Head/Royal/para_tl_beret.rsi
-    - type: Clothing
-      sprite: _RMC14/Objects/Clothing/Head/Royal/para_tl_beret.rsi
-
+  - type: Sprite
+    sprite: _RMC14/Objects/Clothing/Head/Royal/para_tl_beret.rsi
+  - type: Clothing
+    sprite: _RMC14/Objects/Clothing/Head/Royal/para_tl_beret.rsi
 - type: entity
   parent: RMCHeadCapTSEPA
   id: RMCHeadCapPeakedPara
-  name: paramarine officer's service cap
-  description: A distinguished service cap worn by officers of the RCM's Paramarine regiments. Featuring a crimson band, gold RCM-P emblem, and a black patent peak, it reflects the discipline and authority of the Empire’s paramarine command.
+  name: 伞降陆战队军官大檐帽
+  description: 一顶尊贵的大檐帽，由RCM伞降陆战队各团的军官佩戴。饰有深红色帽带、金色RCM-P徽章和黑色漆皮帽檐，彰显出帝国伞降陆战队指挥部的纪律与权威。
   suffix: Paramarine, Survivor, CO
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Royal/para_peaked.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Royal/para_peaked.rsi
-
 - type: entity
   parent: RMCHeadRoyalHelmet
   id: RMCHeadRoyalL1HelmetBallistic
-  name: L1 ballistic helmet
-  description: A versatile ballistic helmet designed by Weyland-Yutani for general use across various branches of the TSE military and affiliated organizations. Drawing some design inspiration from the UNMC’s M10 Pattern Helmet, the L1 offers reliable protection against shrapnel and ballistic threats..
+  name: L1防弹头盔
+  description: 由韦兰-尤塔尼设计的一款多用途防弹头盔，供TSE军方各分支及附属组织通用。其设计部分灵感来自UNMC的M10型头盔，L1能可靠抵御弹片和弹道威胁。
   suffix: Paramarine, Survivor
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Royal/l1ballistic.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Head/Royal/l1ballistic.rsi
-
 - type: entity
   parent: RMCHeadRoyalHelmet
   id: RMCHeadRoyalFlightHelmet
-  name: PH-4 'Spitfire' flight helmet
-  description: Standard flight helmet used across the Three Suns Empire’s aerospace forces, from fighter pilots to atmospheric crews. This PH-4 variant is tailored for dropship operations in space, featuring reinforced plating, HUD optics, and encrypted comms. Essential for high-risk insertions, landings, and exfil missions. Nicknamed “Spitfire” for its reliability under fire.
+  name: PH-4“喷火”飞行头盔
+  description: 三阳帝国航空航天部队通用的标准飞行头盔，从战斗机飞行员到大气层内机组人员均配备。这款PH-4变体专为太空中的空投艇行动定制，配有强化装甲板、HUD光学系统和加密通信。对于高风险插入、着陆和撤离任务至关重要。因其在火力下可靠，绰号“喷火”。
   suffix: Paramarine, Survivor
   components:
   - type: Sprite
@@ -138,7 +121,6 @@
   - type: CMArmor
     melee: 25
     explosionArmor: 20
-    # armor_internaldamage = 30
   - type: CycleableVisor
     containers:
     - rmc_visor_one
