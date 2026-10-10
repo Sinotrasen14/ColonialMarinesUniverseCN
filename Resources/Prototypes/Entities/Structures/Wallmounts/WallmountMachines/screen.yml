@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseWallmountMachine, StructureHealthMachineWeak ]
+  parent: [BaseWallmountMachine, StructureHealthMachineWeak]
   id: Screen
-  name: screen
-  description: Displays text or time.
+  name: 屏幕 | screen
+  description: 显示文本或时间。 | Displays text or time.
   components:
   - type: Rotatable
   - type: TextScreenVisuals
@@ -24,8 +24,7 @@
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -51,8 +50,8 @@
 - type: entity
   id: ArrivalsShuttleTimer
   parent: Screen
-  name: arrivals screen
-  description: Displays time of arrivals shuttle ETA.
+  name: 到达屏幕 | arrivals screen
+  description: 显示到达穿梭机预计到达时间。 | Displays time of arrivals shuttle ETA.
   components:
   - type: DeviceNetwork
     deviceNetId: Private

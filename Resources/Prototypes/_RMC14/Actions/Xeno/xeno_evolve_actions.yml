@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: ActionXenoBase
   id: ActionXenoEvolve
-  name: Evolve
-  description: Evolve to the next caste of xenonid or choose a strain if one is available.
+  name: 进化
+  description: 进化到异形的下一阶层，或在有可用变种时选择一个变种。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -17,8 +17,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoDevolve
-  name: De-evolve
-  description: Devolve to the previous caste of xenonid. [color=red]You won't get your evolution points refunded![/color]
+  name: 退化
+  description: 退化为异形的前一个阶层。[color=red]你的进化点不会退还！[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -33,9 +33,9 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoEvolve
-  name: Evolve
-  description: Evolve to the next caste of xenonid or choose a strain if one is available.
-  categories: [ HideSpawnMenu ]
+  name: 进化
+  description: 进化为异形的下一品级，或若有可用品系则选择一个品系。
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: evolve
+  - type: Sprite
+    state: evolve

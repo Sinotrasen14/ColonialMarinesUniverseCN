@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseStructure, StructureHealthFurniture ]
+  parent: [BaseStructure, StructureHealthFurniture]
   id: FleshBlocker
-  name: flesh clump
-  description: An annoying clump of flesh.
+  name: 肉块 | flesh clump
+  description: 一团烦人的肉块。 | An annoying clump of flesh.
   components:
   - type: InteractionOutline
   - type: Sprite
@@ -10,12 +10,11 @@
     sprite: Structures/Decoration/flesh_decoration.rsi
     layers:
     - state: closed
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.3
         density: 190
         mask:
@@ -24,16 +23,15 @@
         - Impassable
   - type: RandomSprite
     available:
-      - enum.DamageStateVisualLayers.Base:
-          closed: ""
-          ajar: ""
-          open: ""
+    - enum.DamageStateVisualLayers.Base:
+        closed: ""
+        ajar: ""
+        open: ""
   - type: Injurable
     damageContainer: StructuralBiological
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:PlaySoundBehavior

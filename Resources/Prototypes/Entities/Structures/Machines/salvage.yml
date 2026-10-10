@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
+  parent: [BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible]
   id: SalvageMagnet
-  name: salvage magnet
-  description: Pulls in salvage.
+  name: 打捞磁铁 | salvage magnet
+  description: 吸入打捞物。 | Pulls in salvage.
   components:
   - type: Sprite
     sprite: Structures/Machines/salvage.rsi
@@ -10,16 +10,16 @@
     - state: salvage-magnet
     - state: salvage-magnet-ready
       visible: false
-      map: [ "ready" ]
+      map: ["ready"]
     - state: salvage-magnet-ready-blinking
       visible: false
-      map: [ "readyBlinking" ]
+      map: ["readyBlinking"]
     - state: salvage-magnet-unready
       visible: false
-      map: [ "unready" ]
+      map: ["unready"]
     - state: salvage-magnet-unready-blinking
       visible: false
-      map: [ "unreadyBlinking" ]
+      map: ["unreadyBlinking"]
     - state: salvage-magnet-o4
       map: ["chargeState"]
       shader: unshaded
@@ -48,8 +48,8 @@
 - type: entity
   parent: SalvageMagnet
   id: SalvageLocator
-  name: salvage locator
-  description: Locates salvage.
+  name: 打捞定位器 | salvage locator
+  description: 定位打捞物。 | Locates salvage.
   components:
   - type: SalvageMagnet
   - type: ApcPowerReceiver

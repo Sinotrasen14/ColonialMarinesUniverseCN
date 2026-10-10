@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ ConstructibleMachine, BaseMachinePowered ]
+  parent: [ConstructibleMachine, BaseMachinePowered]
   id: StationTeleporter
-  name: teleporter
-  description: The peak of bluespace technology. A giant teleporter that allows you to travel vast distances in the blink of an eye.
+  name: 传送器 | teleporter
+  description: 蓝空间技术的巅峰之作。一台巨大的传送器，能让你在眨眼间穿越广袤的距离。 | The peak of bluespace technology. A giant teleporter that allows you to travel vast distances in the blink of an eye.
   suffix: Unknown Coordinates, Without Autolink
   components:
   - type: Machine
@@ -28,12 +28,12 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.LinkedEntityVisuals.HasAnyLinks:
         portal:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: AmbientSound
     enabled: false
     sound:
@@ -48,8 +48,7 @@
   - type: Fixtures
     fixtures:
       portalFixture:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.48"
         mask:
         - FullTileMask

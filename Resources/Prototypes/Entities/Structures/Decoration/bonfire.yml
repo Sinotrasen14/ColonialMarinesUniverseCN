@@ -1,13 +1,12 @@
 - type: entity
   abstract: true
-  parent: [ BaseStructure, StructureHealthFurniture ]
+  parent: [BaseStructure, StructureHealthFurniture]
   id: BaseBonfire
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.4
         mask:
         - Impassable
@@ -25,8 +24,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:PlaySoundBehavior
@@ -46,8 +44,8 @@
 - type: entity
   parent: BaseBonfire
   id: Bonfire
-  name: bonfire
-  description: What can be better than a late evening under the sky with guitar and friends?
+  name: 篝火 | bonfire
+  description: 还有什么比在夜空下，与朋友弹着吉他共度深夜更美好的呢？ | What can be better than a late evening under the sky with guitar and friends?
   components:
   - type: Sprite
     layers:
@@ -59,8 +57,8 @@
 - type: entity
   parent: BaseBonfire
   id: BonfireStake
-  name: bonfire with stake
-  description: A sinister bonfire with a stake for... ceremonial purposes. Best not to ask.
+  name: 带木桩的篝火 | bonfire with stake
+  description: 一个险恶的篝火，带着一根用于……仪式目的的柱子。最好别问。 | A sinister bonfire with a stake for... ceremonial purposes. Best not to ask.
   components:
   - type: Sprite
     sprite: Structures/Decoration/bonfire_stake.rsi
@@ -79,8 +77,8 @@
 - type: entity
   parent: BaseBonfire
   id: LegionnaireBonfire
-  name: legionnaire bonfire
-  description: There, in the land of lava and ash, place to to cook marshmallow and potato.
+  name: 军团篝火 | legionnaire bonfire
+  description: 在那里，在熔岩与灰烬之地，放置着烤棉花糖和土豆的地方。 | There, in the land of lava and ash, place to to cook marshmallow and potato.
   components:
   - type: Sprite
     layers:

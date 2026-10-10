@@ -1,8 +1,8 @@
-﻿- type: entity
-  parent: [ BaseStructure, StructureHealthFurniture ]
+- type: entity
+  parent: [BaseStructure, StructureHealthFurniture]
   id: KitchenSpike
-  name: meat spike
-  description: A spike for collecting meat from animals.
+  name: 肉叉 | meat spike
+  description: 用来从动物身上收集肉的尖刺。 | A spike for collecting meat from animals.
   components:
   - type: InteractionOutline
   - type: Sprite
@@ -16,8 +16,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:PlaySoundBehavior
@@ -40,8 +39,8 @@
     visuals:
       enum.KitchenSpikeVisuals.Status:
         base:
-          Empty: { state: spike }
-          Bloody: { state: spikebloody } # TODO: Add sprites for different species.
+          Empty: {state: spike}
+          Bloody: {state: spikebloody}   # TODO: Add sprites for different species.
   - type: Construction
     graph: MeatSpike
     node: MeatSpike

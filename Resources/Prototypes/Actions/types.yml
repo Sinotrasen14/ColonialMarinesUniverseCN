@@ -67,7 +67,7 @@
 - type: entity
   parent: BaseAction
   id: ActionScream
-  name: Scream
+  name: 尖叫
   description: AAAAAAAAAAAAAAAAAAAAAAAAA
   components:
   - type: Action
@@ -83,8 +83,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionTurnUndead
-  name: Turn Undead
-  description: Succumb to your infection and become a zombie.
+  name: 变为僵尸
+  description: 屈服于你的感染，变成僵尸吧。
   components:
   - type: Action
   - type: Sprite
@@ -96,8 +96,8 @@
 - type: entity
   parent: BaseToggleAction
   id: ActionToggleLight
-  name: Toggle Light
-  description: Turn the light on and off.
+  name: 切换灯
+  description: 切换灯开关
   components:
   - type: Action
     useDelay: 1
@@ -114,8 +114,8 @@
 - type: entity
   parent: BaseAction
   id: ActionOpenStorageImplant
-  name: Toggle Storage Implant
-  description: Opens or closes the storage implant embedded under your skin
+  name: 切换存储植入
+  description: 打开或关闭植入你皮肤下的储存装置
   components:
   - type: Action
     itemIconStyle: BigAction
@@ -131,7 +131,7 @@
 - type: entity
   parent: [BaseSuicideAction, BaseImplantAction]
   id: ActionActivateMicroBomb
-  name: Activate Microbomb
+  name: 启动微型炸弹
   description: Activates your internal microbomb, completely destroying you and your equipment
   components:
   - type: DangerousAction
@@ -263,8 +263,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionCombatModeToggle
-  name: "[color=red]Combat Mode[/color]"
-  description: Enter combat mode
+  name: "[color=red]战斗模式[/color]"
+  description: 进入战斗模式
   components:
   - type: Action
     priority: -100
@@ -289,8 +289,8 @@
 - type: entity
   parent: BaseAction
   id: ActionChangeVoiceMask
-  name: Set name
-  description: Change the name others hear to something else.
+  name: 设置名字
+  description: 把别人听到的名字改成别的。
   components:
   - type: Action
   - type: Sprite
@@ -360,8 +360,8 @@
 - type: entity
   parent: BaseAction
   id: ActionAnimalLayEgg
-  name: Lay egg
-  description: Uses hunger to lay an egg.
+  name: 下蛋
+  description: 用饥饿来下蛋。
   components:
   - type: Action
     useDelay: 60
@@ -375,7 +375,7 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionSleep
-  name: Sleep
+  name: 睡觉
   description: Go to sleep.
   components:
   - type: Action
@@ -389,8 +389,8 @@
 - type: entity
   parent: BaseMentalAction
   id: ActionWake
-  name: Wake up
-  description: Stop sleeping.
+  name: 醒来
+  description: 停止睡觉
   components:
   - type: Action
     startDelay: true
@@ -504,8 +504,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleNightVision
-  name: Toggle night vision
-  description: Toggles the night vision on and off.
+  name: 切换夜视
+  description: 切换夜视开关
   components:
   - type: Action
     useDelay: 2
@@ -531,7 +531,7 @@
 - type: entity
   parent: BaseAction
   id: ActionGravityJump
-  name: Jump
+  name: 跳
   description: Activating the advanced propulsion system, you propel yourself a short distance in the direction of your gaze.
   components:
   - type: Action
@@ -558,7 +558,7 @@
 - type: entity
   parent: BaseAction
   id: ActionVulpkaninGravityJump
-  name: Leap
+  name: 跳跃
   description: Use your agile legs to leap a short distance. Be careful not to bump into anything!
   components:
   - type: Action

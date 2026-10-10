@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ BaseStructure, StructureHealthFurnitureStrong ]
+  parent: [BaseStructure, StructureHealthFurnitureStrong]
   id: BaseStatue
   components:
   - type: Sprite
@@ -9,8 +9,7 @@
     damageModifierSet: RockMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior
@@ -20,9 +19,9 @@
 - type: entity
   parent: BaseStatue
   id: StatueVenusRed
-  name: statue of a pure maiden
+  name: 纯洁少女雕像 | statue of a pure maiden
   suffix: Red
-  description: An ancient marble statue. The subject is depicted with a floor-length braid and is wielding a red toolbox.
+  description: 一座古老的大理石雕像。雕像主体被刻画为留着及地长辫，手持一个红色工具箱。 | An ancient marble statue. The subject is depicted with a floor-length braid and is wielding a red toolbox.
   components:
   - type: Sprite
     noRot: true
@@ -34,9 +33,9 @@
 - type: entity
   parent: BaseStatue
   id: StatueVenusBlue
-  name: statue of a pure maiden
+  name: 纯洁少女的雕像 | statue of a pure maiden
   suffix: Blue
-  description: An ancient marble statue. The subject is depicted with a floor-length braid and is wielding a blue toolbox.
+  description: 一座古老的大理石雕像。雕像主体被描绘成梳着及地长辫，手持蓝色工具箱的形象。 | An ancient marble statue. The subject is depicted with a floor-length braid and is wielding a blue toolbox.
   components:
   - type: Sprite
     noRot: true
@@ -48,8 +47,8 @@
 - type: entity
   parent: BaseStatue
   id: StatueOrnateClown
-  name: ornate savior statue
-  description: A gilded statue. It portrays the return of the savior who will rise up and lead the clowns to the great honk.
+  name: 华丽救世主雕像 | ornate savior statue
+  description: 一座镀金雕像。它描绘了救世主的归来，他将崛起并带领小丑们走向伟大的鸣笛。 | A gilded statue. It portrays the return of the savior who will rise up and lead the clowns to the great honk.
   components:
   - type: Transform
     noRot: true
@@ -67,8 +66,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.25,0.4,0.45"
         density: 60
         mask:
@@ -83,12 +81,11 @@
   abstract: true
   parent: BaseStatue
   id: BaseIronsandStatue
-  description: A mysterious statue found in a desert of iron sand.
+  description: 在铁砂沙漠中发现的神秘雕像。 | A mysterious statue found in a desert of iron sand.
   components:
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -100,7 +97,7 @@
 - type: entity
   parent: BaseIronsandStatue
   id: StatueIronsandSmall
-  name: ironsand small statue
+  name: 铁砂小雕像 | ironsand small statue
   components:
   - type: Sprite
     sprite: Structures/Decoration/ironsand_statue.rsi
@@ -108,8 +105,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 60
         mask:
@@ -120,7 +116,7 @@
 - type: entity
   parent: BaseIronsandStatue
   id: StatueIronsandSmall2
-  name: ironsand small statue
+  name: 铁砂小雕像 | ironsand small statue
   components:
   - type: Sprite
     sprite: Structures/Decoration/ironsand_statue.rsi
@@ -128,8 +124,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.35,0.35,0.35"
         density: 60
         mask:
@@ -140,7 +135,7 @@
 - type: entity
   parent: BaseIronsandStatue
   id: StatueIronsandTall
-  name: ironsand tall statue
+  name: 铁砂高雕像 | ironsand tall statue
   components:
   - type: Sprite
     sprite: Structures/Decoration/ironsand_statue_tall.rsi
@@ -149,8 +144,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.30,-0.30,0.30,0.30"
         density: 60
         mask:
@@ -161,7 +155,7 @@
 - type: entity
   parent: BaseIronsandStatue
   id: StatueIronsandTall2
-  name: ironsand tall statue
+  name: 铁砂高雕像 | ironsand tall statue
   components:
   - type: Sprite
     sprite: Structures/Decoration/ironsand_statue_tall.rsi
@@ -170,8 +164,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.1,0.45,0.1"
         density: 60
         mask:

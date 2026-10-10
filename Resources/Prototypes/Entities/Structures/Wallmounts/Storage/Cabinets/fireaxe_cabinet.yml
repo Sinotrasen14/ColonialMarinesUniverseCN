@@ -1,15 +1,14 @@
 - type: entity
-  parent: [ BaseWallmountCabinetGlass, StructureHealthContainerStrong ]
+  parent: [BaseWallmountCabinetGlass, StructureHealthContainerStrong]
   id: FireAxeCabinet
-  name: fire axe cabinet
-  description: There is a small label that reads "For Emergency use only" along with details for safe use of the axe. As if.
+  name: 消防斧柜 | fire axe cabinet
+  description: 上面有一个小标签，写着“仅供紧急使用”，还附有安全使用斧头的详细说明。说得好像真有人会看似的。 | There is a small label that reads "For Emergency use only" along with details for safe use of the axe. As if.
   placement:
     mode: SnapgridCenter
   components:
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 140
       behaviors:
       - !type:EmptyAllContainersBehaviour

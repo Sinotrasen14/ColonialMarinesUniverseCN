@@ -1,14 +1,13 @@
 - type: entity
-  parent: [ BaseStructure, StructureHealthContainerFlimsy ]
+  parent: [BaseStructure, StructureHealthContainerFlimsy]
   id: Rack
-  name: rack
-  description: A rack for storing things on.
+  name: 架 | rack
+  description: 用来存放物品的架子。 | A rack for storing things on.
   components:
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Weapons/dodgeball.ogg"
+        path: "/Audio/Weapons/dodgeball.ogg"
   - type: Construction
     graph: Rack
     node: Rack
@@ -22,8 +21,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.3,-0.3,0.3,0.3"
         density: 140
         mask:
@@ -34,8 +32,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 20
       behaviors:
       - !type:PlaySoundBehavior

@@ -1,8 +1,8 @@
 - type: entity
   parent: StructureHealthMachineWeak
   id: Morgue
-  name: morgue
-  description: Used to store bodies until someone fetches them. Includes a high-tech alert system for false-positives!
+  name: 停尸房 | morgue
+  description: 用于存放尸体，直到有人来认领。还配备了高科技警报系统，专门应对误报！ | Used to store bodies until someone fetches them. Includes a high-tech alert system for false-positives!
   placement:
     mode: SnapgridCenter
   components:
@@ -28,8 +28,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 1000
         mask:
@@ -56,12 +55,12 @@
       enum.StorageVisuals.Open:
         # basic open.close layer:
         enum.MorgueVisualLayers.Base:
-          True: { state: morgue_open}
-          False: { state: morgue_closed}
+          true: {state: morgue_open}
+          false: {state: morgue_closed}
         # show/hide morgue tray:
         enum.StorageVisualLayers.Door:
-          True: { visible: true}
-          False: { visible: false}
+          true: {visible: true}
+          false: {visible: false}
       enum.MorgueVisuals.Contents:
         # toggle contents light indicator:
         enum.MorgueVisualLayers.Light:
@@ -79,8 +78,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageMachineWeak
-        !type:DamageTrigger
+    - trigger: &DamageMachineWeak !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -97,8 +95,8 @@
 - type: entity
   parent: StructureHealthMachineWeak
   id: Crematorium
-  name: crematorium
-  description: A human incinerator. Works well on barbecue nights.
+  name: 火葬场 | crematorium
+  description: 一个人类焚化炉。在烧烤之夜效果很好。 | A human incinerator. Works well on barbecue nights.
   placement:
     mode: SnapgridCenter
   components:
@@ -125,8 +123,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 190
         mask:
@@ -156,12 +153,12 @@
     visuals:
       enum.CrematoriumVisuals.Burning:
         enum.CrematoriumVisualLayers.LightBurning:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.StorageVisuals.HasContents:
         enum.CrematoriumVisualLayers.LightContent:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Transform
     anchored: true
   - type: RequireProjectileTarget

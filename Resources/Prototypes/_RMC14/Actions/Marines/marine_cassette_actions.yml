@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: ActionMarineBase
   id: RMCActionCassetteBase
@@ -9,8 +9,8 @@
 - type: entity
   parent: RMCActionCassetteBase
   id: RMCActionCassettePlayPause
-  name: Play/Pause
-  description: Starts or stops playing music.
+  name: 播放/暂停
+  description: 开始或停止播放音乐。
   components:
   - type: Action
   - type: Sprite
@@ -24,8 +24,8 @@
 - type: entity
   parent: RMCActionCassetteBase
   id: RMCActionCassetteNext
-  name: Next song
-  description: Moves to the next track.
+  name: 下一首歌曲
+  description: 移动到下一首歌曲。
   components:
   - type: Action
   - type: Sprite
@@ -39,8 +39,8 @@
 - type: entity
   parent: RMCActionCassetteBase
   id: RMCActionCassetteRestart
-  name: Restart song
-  description: Restarts the current track.
+  name: 重新播放歌曲
+  description: 重新开始播放当前曲目。
   components:
   - type: Action
   - type: Sprite

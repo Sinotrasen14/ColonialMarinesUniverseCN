@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   id: SeedExtractor
-  name: seed extractor
-  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
-  description: Extracts seeds from produce.
+  name: 种子提取器 | seed extractor
+  parent: [BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible]
+  description: 从农产品中提取种子。 | Extracts seeds from produce.
   components:
   - type: Sprite
     sprite: Structures/Machines/seed_extractor.rsi
@@ -17,8 +17,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.4,0.25,0.4"
         density: 190
         mask:
@@ -38,8 +37,8 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: SeedExtractor
   - type: Machine
     board: SeedExtractorMachineCircuitboard

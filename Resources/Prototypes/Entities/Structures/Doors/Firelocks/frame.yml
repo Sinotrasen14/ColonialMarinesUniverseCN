@@ -1,8 +1,8 @@
-﻿- type: entity
-  parent: [ BaseStructureDynamic, StructureHealthDoorWeak ]
+- type: entity
+  parent: [BaseStructureDynamic, StructureHealthDoorWeak]
   id: FirelockFrame
-  name: firelock frame
-  description: That is a firelock frame.
+  name: 火枪枪机框架 | firelock frame
+  description: 那是一个火枪枪机框架。 | That is a firelock frame.
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/firelock-base.rsi
@@ -21,8 +21,7 @@
     damageModifierSet: PlasteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -35,8 +34,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 55
         mask:

@@ -1,10 +1,10 @@
 #todo these need a common parent
 
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
   id: SignalSwitch
-  name: signal switch
-  description: It's a switch for toggling power to things.
+  name: 信号开关 | signal switch
+  description: 这是一个用于切换设备电源的开关。 | It's a switch for toggling power to things.
   components:
   - type: WallMount
     arc: 175
@@ -15,9 +15,9 @@
     sprite: Structures/Wallmounts/switch.rsi
     layers:
     - state: base
-    - map: [ "shaded" ]
+    - map: ["shaded"]
       state: off
-    - map: [ "unshaded" ]
+    - map: ["unshaded"]
       state: off-unshaded
       shader: unshaded
   - type: Appearance
@@ -25,11 +25,11 @@
     visuals:
       enum.SwitchVisuals.Visuals:
         shaded:
-          True: { state: on }
-          False: { state: off }
+          true: {state: on}
+          false: {state: off}
         unshaded:
-          True: { state: on-unshaded }
-          False: { state: off-unshaded }
+          true: {state: on-unshaded}
+          false: {state: off-unshaded}
   - type: SignalSwitch
   - type: UseDelay
     delay: 0.5 # prevent light-toggling auto-clickers.
@@ -52,8 +52,7 @@
     anchored: false
   - type: Destructible
     thresholds:
-    - trigger: &DamageMachineFlimsy
-        !type:DamageTrigger
+    - trigger: &DamageMachineFlimsy !type:DamageTrigger
         damage: 50
       behaviors:
       - &SoundMetalBreak !type:PlaySoundBehavior
@@ -63,10 +62,10 @@
             volume: -8
 
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
   id: SignalButton
-  name: signal button
-  description: It's a button for activating something.
+  name: 信号按钮 | signal button
+  description: 这是一个用于激活某物的按钮。 | It's a button for activating something.
   components:
   - type: WallMount
     arc: 175
@@ -96,7 +95,7 @@
     range: 200
   - type: DeviceLinkSource
     ports:
-      - Pressed
+    - Pressed
   - type: Transform
     anchored: false
   - type: Destructible
@@ -106,10 +105,10 @@
       - *SoundMetalBreak
 
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
   id: ApcNetSwitch
-  name: apc net switch
-  description: It's a switch for toggling lights that are connected to the same apc.
+  name: apc网络开关 | apc net switch
+  description: 这是一个用于切换连接到同一apc的灯光的开关。 | It's a switch for toggling lights that are connected to the same apc.
   components:
   - type: Sprite
     offset: 0, -0.25
@@ -117,9 +116,9 @@
     sprite: Structures/Wallmounts/switch.rsi
     layers:
     - state: base
-    - map: [ "shaded" ]
+    - map: ["shaded"]
       state: off
-    - map: [ "unshaded" ]
+    - map: ["unshaded"]
       state: off-unshaded
       shader: unshaded
   - type: Appearance
@@ -127,11 +126,11 @@
     visuals:
       enum.SwitchVisuals.Visuals:
         shaded:
-          True: { state: on }
-          False: { state: off }
+          true: {state: on}
+          false: {state: off}
         unshaded:
-          True: { state: on-unshaded }
-          False: { state: off-unshaded }
+          true: {state: on-unshaded}
+          false: {state: off-unshaded}
   - type: WallMount
     arc: 175
   - type: Rotatable
@@ -156,7 +155,7 @@
 - type: entity
   parent: SignalSwitch
   id: SignalSwitchDirectional
-  name: signal switch
+  name: 信号开关 | signal switch
   suffix: directional
   components:
   - type: WallMount
@@ -168,7 +167,7 @@
 - type: entity
   parent: SignalButton
   id: SignalButtonDirectional
-  name: signal button
+  name: 信号按钮 | signal button
   suffix: directional
   components:
   - type: WallMount
@@ -180,7 +179,7 @@
 - type: entity
   parent: ApcNetSwitch
   id: ApcNetSwitchDirectional
-  name: apc net switch
+  name: apc网络交换机 | apc net switch
   suffix: directional
   components:
   - type: WallMount
@@ -193,8 +192,8 @@
 - type: entity
   parent: SignalButtonDirectional
   id: LockableButton
-  name: lockable button
-  categories: [ HideSpawnMenu ]
+  name: 可锁定按钮 | lockable button
+  categories: [HideSpawnMenu]
   components:
   - type: Lock
   - type: AccessReader
@@ -207,9 +206,9 @@
     - state: button
     - state: button-unshaded
       shader: unshaded
-    - map: [ "lock-shaded" ]
+    - map: ["lock-shaded"]
       state: lock-locked
-    - map: [ "lock-unshaded" ]
+    - map: ["lock-unshaded"]
       state: lock-locked-unshaded
       shader: unshaded
   - type: Appearance
@@ -217,11 +216,11 @@
     visuals:
       enum.LockVisuals.Locked:
         lock-shaded:
-          True: { state: lock-locked }
-          False: { state: lock-unlocked }
+          true: {state: lock-locked}
+          false: {state: lock-unlocked}
         lock-unshaded:
-          True: { state: lock-locked-unshaded }
-          False: { state: lock-unlocked-unshaded }
+          true: {state: lock-locked-unshaded}
+          false: {state: lock-unlocked-unshaded}
 
 - type: entity
   parent: LockableButton
@@ -476,9 +475,9 @@
 - type: entity
   parent: StructureHealthFurnitureWeak
   id: ButtonFrame
-  name: button frame
-  categories: [ HideSpawnMenu ]
-  description: It's a frame to help distinguish switches visually.
+  name: 按钮框 | button frame
+  categories: [HideSpawnMenu]
+  description: 这是一个用于在视觉上区分开关的框架。 | It's a frame to help distinguish switches visually.
   placement:
     mode: SnapgridCenter
   components:

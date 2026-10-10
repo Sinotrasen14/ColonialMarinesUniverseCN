@@ -1,8 +1,8 @@
-﻿- type: entity
-  parent: [ BaseStructureDynamic, StructureHealthContainer ]
+- type: entity
+  parent: [BaseStructureDynamic, StructureHealthContainer]
   id: OreBox
-  name: ore box
-  description: A large storage container for holding unprocessed ores.
+  name: 矿石箱 | ore box
+  description: 一个用于存放未加工矿石的大型储物箱。 | A large storage container for holding unprocessed ores.
   components:
   - type: StaticPrice
     price: 500
@@ -12,8 +12,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:EmptyAllContainersBehaviour
@@ -31,15 +30,15 @@
     layers:
     - state: orebox
     - state: orebox-top
-      map: [ top ]
+      map: [top]
       visible: true
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.StorageVisuals.Open:
         top:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
   - type: Storage
     grid:
     - 0,0,9,5
@@ -56,12 +55,11 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
-        ents: [ ]
+        ents: []
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.3
         # very not dense to make it easy to pull
         density: 20

@@ -1,16 +1,16 @@
 - type: entity
-  parent: [ BaseStructure, StructureHealthFurniture ]
+  parent: [BaseStructure, StructureHealthFurniture]
   id: Bookshelf
-  name: "bookshelf"
-  description: Mostly filled with books.
+  name: "书架 | bookshelf"
+  description: 大部分都摆满了书。 | Mostly filled with books.
   components:
   - type: Sprite
     sprite: Structures/Furniture/bookshelf.rsi
     snapCardinals: true
     layers:
-      - state: base
-      - state: book-0
-      - map: ["enum.StorageFillLayers.Fill"]
+    - state: base
+    - state: book-0
+    - map: ["enum.StorageFillLayers.Fill"]
   - type: Appearance
   - type: StorageFillVisualizer
     maxFillLevels: 21
@@ -19,8 +19,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:PlaySoundBehavior
@@ -48,11 +47,11 @@
     maxItemSize: Normal
     whitelist:
       tags:
-        - Document
-        - Folder
-        - Write
-        - Book
-        - Spellbook
+      - Document
+      - Folder
+      - Write
+      - Book
+      - Spellbook
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:

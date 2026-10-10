@@ -1,16 +1,15 @@
 - type: entity
-  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
+  parent: [BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible]
   id: Holopad
-  name: holopad
-  description: "A floor-mounted device for projecting holographic images."
+  name: 全息投影仪 | holopad
+  description: "一种用于投射全息图像的地面安装设备。 | A floor-mounted device for projecting holographic images."
   components:
   - type: Transform
     anchored: true
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.25
         mask:
         - Impassable
@@ -28,27 +27,27 @@
     snapCardinals: true
     layers:
     - state: base
-    - map: [ "lights" ]
+    - map: ["lights"]
       state: blank
       shader: unshaded
-    - map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+    - map: ["enum.PowerDeviceVisualLayers.Powered"]
       state: unpowered
-    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+    - map: ["enum.WiresVisualLayers.MaintenancePanel"]
       state: panel_open
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.TelephoneVisuals.Key:
         lights:
-          Idle: { state: blank }
-          Calling: { state: lights_calling }
-          Ringing: { state: lights_ringing }
-          InCall: { state: lights_in_call }
-          EndingCall: { state: lights_hanging_up }
+          Idle: {state: blank}
+          Calling: {state: lights_calling}
+          Ringing: {state: lights_ringing}
+          InCall: {state: lights_in_call}
+          EndingCall: {state: lights_hanging_up}
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          False: { visible: true }
-          True: { visible: false }
+          false: {visible: true}
+          true: {visible: false}
   - type: Machine
     board: HolopadMachineCircuitboard
   - type: StationAiWhitelist
@@ -74,17 +73,17 @@
     listeningRange: 2.5
     speakerVolume: Speak
   - type: AccessReader
-    access: [[ "Command" ]]
+    access: [["Command"]]
     examinationText: access-reader-examination-functionality-restricted
   - type: ActivatableUI
     key: enum.HolopadUiKey.InteractionWindow
   - type: ActivatableUIRequiresPower
   - type: UserInterface
     interfaces:
-        enum.HolopadUiKey.InteractionWindow:
-          type: HolopadBoundUserInterface
-        enum.WiresUiKey.Key:
-          type: WiresBoundUserInterface
+      enum.HolopadUiKey.InteractionWindow:
+        type: HolopadBoundUserInterface
+      enum.WiresUiKey.Key:
+        type: WiresBoundUserInterface
   - type: WiresPanel
   - type: WiresVisuals
   - type: Wires
@@ -94,8 +93,7 @@
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:PlaySoundBehavior
@@ -103,8 +101,8 @@
           collection: MetalGlassBreak
 
 - type: entity
-  name: long-range holopad
-  description: "A floor-mounted device for projecting holographic images to similar devices that are far away."
+  name: 远程全息投影仪 | long-range holopad
+  description: "一种安装在地板上的设备，用于将全息图像投射到远处的类似设备上。 | A floor-mounted device for projecting holographic images to similar devices that are far away."
   parent: Holopad
   id: HolopadLongRange
   components:
@@ -116,8 +114,8 @@
     ignoreTelephonesOnSameGrid: true
 
 - type: entity
-  name: quantum entangling holopad
-  description: "An floor-mounted device for projecting holographic images to similar devices at extreme distances."
+  name: 量子纠缠全息投影仪 | quantum entangling holopad
+  description: "一种落地式设备，用于将全息图像投射到极远距离外的同类设备。 | An floor-mounted device for projecting holographic images to similar devices at extreme distances."
   parent: Holopad
   id: HolopadUnlimitedRange
   components:
@@ -129,8 +127,8 @@
     ignoreTelephonesOnSameGrid: true
 
 - type: entity
-  name: bluespace holopad
-  description: "An experimental floor-mounted device for projecting holographic images via bluespace."
+  name: 蓝空间全息投影仪 | bluespace holopad
+  description: "一种实验性的地面安装设备，用于通过蓝空间投射全息影像。 | An experimental floor-mounted device for projecting holographic images via bluespace."
   parent: Holopad
   id: HolopadBluespace
   suffix: Unrestricted range
@@ -146,8 +144,8 @@
 # These are spawned by holopads
 - type: entity
   id: HolopadHologram
-  name: hologram
-  categories: [ HideSpawnMenu, DoNotMap ]
+  name: 全息图 | hologram
+  categories: [HideSpawnMenu, DoNotMap]
   components:
   - type: Transform
     anchored: true

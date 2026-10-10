@@ -8,8 +8,8 @@
 - type: entity
   id: ActionXenoPlantWeeds
   parent: ActionXenoBase
-  name: Plant Weeds (75) # TODO RMC14 proper plasma costs
-  description: Plant a weed node that will spread more weeds.
+  name: 种植杂草（75）         # TODO RMC14 proper plasma costs
+  description: 种下一个会蔓延更多杂草的杂草节点。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -28,8 +28,8 @@
 - type: entity
   id: ActionXenoChooseStructure
   parent: ActionXenoBase
-  name: Choose Resin Structure
-  description: "Choose a structure to secrete with the 'Secrete Resin' action."
+  name: 选择树脂结构
+  description: "选择要用“分泌树脂”动作来分泌的结构。"
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -46,16 +46,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoChooseResinStructure
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: place_resin
+  - type: Sprite
+    state: place_resin
 
 - type: entity
   id: ActionXenoSecreteStructure
   parent: ActionXenoBase
-  name: Secrete Resin
-  description: "Builds the structure chosen with the 'Choose Resin Structure' action."
+  name: 分泌树脂
+  description: "建造通过“选择树脂结构”操作选择的结构。"
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -81,16 +81,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoSecreteResin
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: secrete_resin
+  - type: Sprite
+    state: secrete_resin
 
 - type: entity
   id: ActionXenoCoerceResin
   parent: ActionXenoBase
-  name: Coerce Resin
-  description: "Builds the structure chosen with the 'Choose Resin Structure' action. You may also build within line of sight if you are on weeds."
+  name: 强制树脂
+  description: "建造通过“选择树脂结构”动作选定的结构。如果你位于杂草上，也可以在视野范围内建造。"
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -116,8 +116,8 @@
 - type: entity
   id: ActionXenoOrderConstruction
   parent: ActionXenoBase
-  name: Order Construction
-  description: Starts construction of an important hive structure.
+  name: 下令建造
+  description: 开始建造一个重要的蜂巢结构。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -133,18 +133,18 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoOrderConstruction
-  name: Order Construction
-  description: Starts construction of an important hive structure.
-  categories: [ HideSpawnMenu ]
+  name: 下令建造
+  description: 开始建造重要的蜂巢结构。
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: morph_resin
+  - type: Sprite
+    state: morph_resin
 
 - type: entity
   id: ActionXenoResinHole
   parent: ActionXenoBase
-  name: Plant Resin Hole (200)
-  description: Places a resin hole on weeds. It can be filled with boiler gas, acid, or parasites.
+  name: 植物树脂孔（200）
+  description: 在杂草上放置一个树脂孔。它可以用锅炉气体、酸或寄生虫填充。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -161,17 +161,17 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoPlantResinHole
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: place_trap
+  - type: Sprite
+    state: place_trap
 
 # For gardener drone
 - type: entity
   id: ActionXenoFruitChoose
   parent: ActionXenoBase
-  name: Change Fruit
-  description: Choose a fruit to be planted with 'Plant Resin Fruit' action.
+  name: 更换水果
+  description: 选择一种要使用“种植树脂水果”动作种植的水果。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -187,8 +187,8 @@
 - type: entity
   id: ActionXenoFruitPlant
   parent: ActionXenoBase
-  name: Plant Resin Fruit (100)
-  description: Plant chosen resin fruit on weeds at the cost of health and plasma. Xenos can pick these fruits once they're mature, you can also pick a plant early to get rid of it. Xenos can use them in hand or eat them on the ground to gain their effects. They can also be used on other xenos to feed them. You can only have 6 fruits planted and picked at a time.
+  name: 种植树脂果实（100）
+  description: 将选定的树脂果实种植在杂草上，代价是生命值和血浆。异形可以在这些果实成熟后采摘，你也可以提前采摘一株植物以将其清除。异形可以将其拿在手中使用，或放在地上吃掉以获得其效果。也可以将它们用在其他异形身上来喂食。你一次最多只能种植和采摘6个果实。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -204,8 +204,8 @@
 - type: entity
   id: ActionXenoPlantWeedsHardy
   parent: ActionXenoBase
-  name: Plant Hardy Weeds (125) # TODO RMC14 proper plasma costs
-  description: Plant a weed node that will spread hardier weeds, which grow fruit 25% faster, have slightly more health, and can be spread on some surfaces where normal weeds won't grow.
+  name: 种植坚韧杂草（125）             # TODO RMC14 proper plasma costs
+  description: 种植一个杂草节点，它会传播更坚韧的杂草，这些杂草结果实速度提高25%，生命值略高，并且可以蔓延到一些普通杂草无法生长的表面上。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -224,8 +224,8 @@
 - type: entity
   id: ActionXenoFruitPlantLesser
   parent: ActionXenoFruitPlant
-  name: Plant Resin Fruit (50)
-  description: Plant resin fruit on weeds at the cost of health and plasma.
+  name: 种植树脂果实（50）
+  description: 以生命值和血浆为代价，在杂草上种植树脂果实。
   components:
   - type: InstantAction
     event: !type:XenoFruitPlantActionEvent
@@ -234,8 +234,8 @@
 - type: entity
   id: ActionXenoDigTunnel
   parent: ActionXenoBase
-  name: Dig Tunnel (200)
-  description: Dig a tunnel for speedy transportation across the hive.
+  name: 挖掘隧道（200）
+  description: 挖掘一条隧道，用于在蜂巢中快速运输。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -251,10 +251,10 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoDigTunnel
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: build_tunnel
+  - type: Sprite
+    state: build_tunnel
 
 # For lesser drone
 - type: entity
@@ -268,16 +268,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoPlantWeeds
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: plant_weeds
+  - type: Sprite
+    state: plant_weeds
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoExpandWeeds
-  name: Expand Weeds (50) # TODO RMC14 proper plasma costs
-  description: Expand existing weeds or turn a weed tile into a node.
+  name: 扩展杂草（50）          # TODO RMC14 proper plasma costs
+  description: 扩展现有杂草，或将杂草地块变为节点。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -297,8 +297,8 @@
 - type: entity
   id: ActionXenoDesignerSelectedDesign
   parent: ActionXenoBase
-  name: Selected Design
-  description: Toggle whether newly placed design nodes are wall or door nodes.
+  name: 所选设计
+  description: 切换新放置的设计节点是墙节点还是门节点。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -319,8 +319,8 @@
 - type: entity
   id: ActionXenoDesignerGreaterResinSurge
   parent: ActionXenoBase
-  name: Greater Resin Surge (250)
-  description: Consumes nearby design nodes to create temporary reflective resin walls.
+  name: 强效树脂涌动（250）
+  description: 消耗附近的设计节点，以制造临时的反射树脂墙。
   components:
   - type: Action
     itemIconStyle: NoItem

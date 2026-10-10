@@ -1,12 +1,11 @@
-
 #region Frames
 
 - type: entity
-  parent: [ BaseStructure, StructureHealthFurnitureWeak ]
+  parent: [BaseStructure, StructureHealthFurnitureWeak]
   id: TableFrame
   # BaseStructure and not BaseTable, since these shouldn't be climbable/placeable.
-  name: table frame
-  description: Pieces of metal that make the frame of a table.
+  name: 桌架 | table frame
+  description: 构成桌架的金属件。 | Pieces of metal that make the frame of a table.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/frame.rsi
@@ -16,8 +15,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.40,-0.30,0.40,0.45"
         density: 80
         mask:
@@ -31,8 +29,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageFurnitureWeak
-        !type:DamageTrigger
+    - trigger: &DamageFurnitureWeak !type:DamageTrigger
         damage: 5
       behaviors:
       - &SoundMetalBreak !type:PlaySoundBehavior
@@ -50,10 +47,10 @@
     node: TableFrame
 
 - type: entity
-  parent: [ BaseStructure, StructureHealthFurnitureWeak ]
+  parent: [BaseStructure, StructureHealthFurnitureWeak]
   id: CounterWoodFrame
-  name: wooden counter frame
-  description: Pieces of wood that make the frame of a table.
+  name: 木制柜台框架 | wooden counter frame
+  description: 构成桌子框架的木块。 | Pieces of wood that make the frame of a table.
   components:
   - type: SpriteFade
   - type: Sprite
@@ -64,8 +61,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 55
         mask:
@@ -96,10 +92,10 @@
     node: CounterWoodFrame
 
 - type: entity
-  parent: [ BaseStructure, StructureHealthFurnitureWeak ]
+  parent: [BaseStructure, StructureHealthFurnitureWeak]
   id: CounterMetalFrame
-  name: metal counter frame
-  description: Pieces of metal that make the frame of a table.
+  name: 金属柜台框架 | metal counter frame
+  description: 构成桌子框架的金属件。 | Pieces of metal that make the frame of a table.
   components:
   - type: SpriteFade
   - type: Sprite
@@ -110,8 +106,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 55
         mask:
@@ -141,10 +136,10 @@
 #region Tables
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurniture ]
+  parent: [TableBase, StructureHealthFurniture]
   id: Table
-  name: table
-  description: A square piece of metal standing on four metal legs.
+  name: 桌子 | table
+  description: 一块方形的金属板，由四条金属腿支撑。 | A square piece of metal standing on four metal legs.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/generic.rsi
@@ -154,8 +149,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageFurnitureNormal
-        !type:DamageTrigger
+    - trigger: &DamageFurnitureNormal !type:DamageTrigger
         damage: 40
       behaviors:
       - *SoundMetalBreak
@@ -174,10 +168,10 @@
     node: Table
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurniture ]
+  parent: [TableBase, StructureHealthFurniture]
   id: TableReinforced
-  name: reinforced table
-  description: A square piece of metal standing on four metal legs. Extra robust.
+  name: 加固桌 | reinforced table
+  description: 一块方形金属板，由四条金属腿支撑。格外坚固。 | A square piece of metal standing on four metal legs. Extra robust.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/reinforced.rsi
@@ -213,10 +207,10 @@
     bonkTime: 3
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurnitureWeak ]
+  parent: [TableBase, StructureHealthFurnitureWeak]
   id: TableGlass
-  name: glass table
-  description: A square piece of glass, standing on four metal legs.
+  name: 玻璃桌 | glass table
+  description: 一块方形玻璃，立在四条金属腿上。 | A square piece of glass, standing on four metal legs.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/glass.rsi
@@ -255,10 +249,10 @@
       collection: FootstepTile
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurnitureWeak ]
+  parent: [TableBase, StructureHealthFurnitureWeak]
   id: TableCard
-  name: cardboard table
-  description: Cardboard sheets wrapped around a metal table frame.
+  name: 纸板桌 | cardboard table
+  description: 纸板包裹在金属桌架上。 | Cardboard sheets wrapped around a metal table frame.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/card.rsi
@@ -296,10 +290,10 @@
       collection: FootstepTile
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurniture ]
+  parent: [TableBase, StructureHealthFurniture]
   id: TableReinforcedGlass
-  name: reinforced glass table
-  description: A square piece of glass, standing on four metal legs. Extra robust.
+  name: 强化玻璃桌 | reinforced glass table
+  description: 一块方形玻璃，立于四条金属腿上。格外坚固。 | A square piece of glass, standing on four metal legs. Extra robust.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/r_glass.rsi
@@ -339,10 +333,10 @@
       collection: FootstepTile
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurnitureWeak ]
+  parent: [TableBase, StructureHealthFurnitureWeak]
   id: TablePlasmaGlass
-  name: plasma glass table
-  description: A square piece of plasma glass, standing on four metal legs. Pretty!
+  name: 等离子玻璃桌 | plasma glass table
+  description: 一块方形的等离子玻璃，立在四条金属腿上。真漂亮！ | A square piece of plasma glass, standing on four metal legs. Pretty!
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/plasma.rsi
@@ -382,10 +376,10 @@
       collection: FootstepTile
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurniture ]
+  parent: [TableBase, StructureHealthFurniture]
   id: TableBrass
-  name: brass table
-  description: A shiny, corrosion resistant brass table. Steampunk!
+  name: 黄铜桌 | brass table
+  description: 一张闪亮、耐腐蚀的黄铜桌。蒸汽朋克！ | A shiny, corrosion resistant brass table. Steampunk!
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/brass.rsi
@@ -411,10 +405,10 @@
     node: TableBrass
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurniture ]
+  parent: [TableBase, StructureHealthFurniture]
   id: TableWood
-  name: wood table
-  description: Do not apply fire to this. Rumour says it burns easily.
+  name: 木桌 | wood table
+  description: 不要对它使用火。传言说它很容易燃烧。 | Do not apply fire to this. Rumour says it burns easily.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/wood.rsi
@@ -443,10 +437,10 @@
       collection: FootstepWood
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurnitureWeak ]
+  parent: [TableBase, StructureHealthFurnitureWeak]
   id: TableCarpet
-  name: gambling table
-  description: Play em' cowboy.
+  name: 赌桌 | gambling table
+  description: 来赌一把吧，牛仔。 | Play em' cowboy.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/carpet.rsi
@@ -481,10 +475,10 @@
       collection: FootstepCarpet
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurniture ]
+  parent: [TableBase, StructureHealthFurniture]
   id: TableStone
-  name: stone table
-  description: Literally the sturdiest thing you have ever seen.
+  name: 石桌 | stone table
+  description: 毫不夸张地说，这是你见过的最结实的东西。 | Literally the sturdiest thing you have ever seen.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/stone.rsi
@@ -506,10 +500,10 @@
       collection: FootstepFloor
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurniture ]
+  parent: [TableBase, StructureHealthFurniture]
   id: TableWeb
-  name: web table
-  description: Really smooth and surprisingly durable.
+  name: 网页表格 | web table
+  description: 真的很顺滑，而且耐用得出奇。 | Really smooth and surprisingly durable.
   components:
   - type: Damageable
     damageModifierSet: ThreadMod
@@ -530,8 +524,7 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Weapons/slash.ogg"
+        path: "/Audio/Weapons/slash.ogg"
   - type: IconSmooth
     key: webtable
   - type: Construction
@@ -542,10 +535,10 @@
       collection: FootstepCarpet
 
 - type: entity
-  parent: [ TableBase, StructureHealthFurniture ]
+  parent: [TableBase, StructureHealthFurniture]
   id: TableXeno
-  name: xeno table
-  description: I wouldn't put the silverware on it.
+  name: 异形桌 | xeno table
+  description: 我不会把餐具放在上面。 | I wouldn't put the silverware on it.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/xeno.rsi
@@ -572,10 +565,10 @@
 
 - type: entity
   abstract: true
-  parent: [ TableBase, StructureHealthFurnitureWeak ]
+  parent: [TableBase, StructureHealthFurnitureWeak]
   id: TableFancyBase
-  name: fancy table
-  description: Expensive and rich.
+  name: 华丽桌子 | fancy table
+  description: 昂贵而华丽。 | Expensive and rich.
   components:
   - type: Damageable
     damageModifierSet: WoodMod
@@ -818,10 +811,10 @@
 #Debug
 
 - type: entity
-  parent: [ TableBase, BaseStructureHealth ]
+  parent: [TableBase, BaseStructureHealth]
   id: TableDebug
-  name: table
-  description: PUT ON THEM CODERSOCKS!!
+  name: 桌子 | table
+  description: 穿上编程袜！！ | PUT ON THEM CODERSOCKS!!
   suffix: DEBUG
   components:
   - type: Sprite
@@ -830,8 +823,7 @@
     sprite: Structures/Furniture/Tables/debug.rsi
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1
       behaviors:
       - !type:DoActsBehavior
@@ -840,10 +832,10 @@
 #region Counters
 
 - type: entity
-  parent: [ CounterBase, StructureHealthFurniture ]
+  parent: [CounterBase, StructureHealthFurniture]
   id: TableCounterWood
-  name: wood counter
-  description: Do not apply fire to this. Rumour says it burns easily.
+  name: 木制柜台 | wood counter
+  description: 不要对此使用火。传言说它很容易燃烧。 | Do not apply fire to this. Rumour says it burns easily.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/counterwood.rsi
@@ -882,10 +874,10 @@
     burnDurationMax: 620
 
 - type: entity
-  parent: [ CounterBase, StructureHealthFurniture ]
+  parent: [CounterBase, StructureHealthFurniture]
   id: TableCounterMetal
-  name: metal counter
-  description: Looks like a good place to put a drink down.
+  name: 金属柜台 | metal counter
+  description: 看起来是个放饮料的好地方。 | Looks like a good place to put a drink down.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Tables/countermetal.rsi

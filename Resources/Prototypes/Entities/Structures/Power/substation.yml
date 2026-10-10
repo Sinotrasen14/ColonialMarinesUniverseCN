@@ -14,11 +14,9 @@
   - type: NodeContainer
     examinable: true
     nodes:
-      input:
-        !type:CableDeviceNode
+      input: !type:CableDeviceNode
         nodeGroupID: HVPower
-      output:
-        !type:CableDeviceNode
+      output: !type:CableDeviceNode
         nodeGroupID: MVPower
   - type: BatteryCharger
     voltage: High
@@ -70,9 +68,9 @@
 - type: entity
   abstract: true
   id: BaseSubstation
-  parent: [ CoreSubstation, BaseMachine, ConstructibleMachine, BaseConstructibleMachineDestructible ]
-  name: substation
-  description: Reduces the voltage of electricity put into it.
+  parent: [CoreSubstation, BaseMachine, ConstructibleMachine, BaseConstructibleMachineDestructible]
+  name: 变电站 | substation
+  description: 降低输入电力的电压。 | Reduces the voltage of electricity put into it.
   placement:
     mode: SnapgridCenter
   components:
@@ -98,8 +96,7 @@
     state: substation_static
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:PlaySoundBehavior
@@ -132,11 +129,11 @@
 
 # Compact Wall Substation Base
 - type: entity
-  parent: [ CoreSubstation, StructureHealthMachine ]
+  parent: [CoreSubstation, StructureHealthMachine]
   id: BaseSubstationWall
-  categories: [ HideSpawnMenu ]
-  name: wallmount substation
-  description: A substation designed for compact shuttles and spaces.
+  categories: [HideSpawnMenu]
+  name: 壁挂式变电站 | wallmount substation
+  description: 一种为紧凑穿梭机和空间设计的变电站。 | A substation designed for compact shuttles and spaces.
   placement:
     mode: SnapgridCenter
   components:
@@ -152,7 +149,7 @@
   - type: Clickable
   - type: ContainerFill
     containers:
-      board: [ WallmountSubstationElectronics ]
+      board: [WallmountSubstationElectronics]
   - type: ContainerContainer
     containers:
       board: !type:Container
@@ -180,8 +177,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:ExplodeBehavior
@@ -227,9 +223,9 @@
     startingCharge: 2000000
   - type: ContainerFill
     containers:
-      board: [ WallmountSubstationElectronics ]
-      manipulator: [ MicroManipulatorStockPart ]
-      powercell: [ PowerCellSmall ]
+      board: [WallmountSubstationElectronics]
+      manipulator: [MicroManipulatorStockPart]
+      powercell: [PowerCellSmall]
   - type: ContainerContainer
     containers:
       board: !type:Container
@@ -239,9 +235,9 @@
       # Construction Frame
 - type: entity
   id: BaseSubstationWallFrame
-  categories: [ HideSpawnMenu ]
-  name: wallmount substation frame
-  description: A substation frame for construction.
+  categories: [HideSpawnMenu]
+  name: 壁挂式变电站框架 | wallmount substation frame
+  description: 用于施工的变电站框架。 | A substation frame for construction.
   placement:
     mode: SnapgridCenter
   components:

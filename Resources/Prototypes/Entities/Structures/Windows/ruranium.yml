@@ -1,7 +1,7 @@
 - type: entity
   parent: [BaseDeltaPressureReinforcedPlasma, BaseWindowStructure, BaseRCDResistant, StructureHealthBarrierStrong]
   id: ReinforcedUraniumWindow
-  name: reinforced uranium window
+  name: 强化铀窗 | reinforced uranium window
   components:
   - type: Sprite
     sprite: Structures/Windows/window-uranium-reinf.rsi
@@ -12,8 +12,7 @@
     damageModifierSet: GlassReinforcedMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 120
       behaviors:
       - !type:PlaySoundBehavior
@@ -47,7 +46,7 @@
 - type: entity
   parent: [BaseDeltaPressureReinforcedPlasmaQuarter, BaseWindowStructureDirectional, BaseRCDResistant, StructureHealthBarrier]
   id: UraniumReinforcedWindowDirectional
-  name: directional reinforced uranium window
+  name: 定向增强铀窗 | directional reinforced uranium window
   components:
   - type: Sprite
     sprite: Structures/Windows/directional.rsi
@@ -69,8 +68,7 @@
     damageModifierSet: GlassReinforcedMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior
@@ -103,8 +101,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,-0.28125,-0.28125"
         density: 1500
         mask:
@@ -147,12 +144,11 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PolygonShape
-            vertices:
-            - "-0.5,-0.5"
-            - "0.5,0.5"
-            - "0.5,-0.5"
+        shape: !type:PolygonShape
+          vertices:
+          - "-0.5,-0.5"
+          - "0.5,0.5"
+          - "0.5,-0.5"
         mask:
         - FullTileMask
         layer:

@@ -1,14 +1,13 @@
 - type: entity
   id: CargoMailTeleporter
-  parent: [ BaseMachinePowered, ConstructibleMachine, StructureHealthMachineStrong ]
-  name: mail teleporter
-  description: Periodically teleports in mail to deliver across the station.
+  parent: [BaseMachinePowered, ConstructibleMachine, StructureHealthMachineStrong]
+  name: 邮件传送器 | mail teleporter
+  description: 定期传送邮件到空间站各处进行投递。 | Periodically teleports in mail to deliver across the station.
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.35,0.35,0.35"
         density: 190
         mask:
@@ -21,12 +20,12 @@
     layers:
     - state: icon
     - state: contents
-      map: [ "enum.DeliverySpawnerVisualLayers.Contents" ]
+      map: ["enum.DeliverySpawnerVisualLayers.Contents"]
       visible: false
     - state: unlit
       shader: unshaded
       visible: false
-      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: Damageable
     damageModifierSet: PlasteelMod
   - type: Destructible
@@ -46,12 +45,12 @@
     visuals:
       enum.DeliverySpawnerVisuals.Contents:
         enum.DeliverySpawnerVisualLayers.Contents:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Machine
     board: MailTeleporterMachineCircuitboard
   - type: PowerSwitch

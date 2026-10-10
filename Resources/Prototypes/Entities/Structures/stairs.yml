@@ -11,11 +11,11 @@
     drawdepth: FloorTiles
 
 - type: entity
-  parent: [ BaseFloorDecoration, StructureHealthFurnitureStrong ]
+  parent: [BaseFloorDecoration, StructureHealthFurnitureStrong]
   id: Stairs
-  name: stairs
+  name: 楼梯 | stairs
   suffix: Steel
-  description: The greatest invention since rocket-propelled grenades.
+  description: 自火箭推进榴弹以来最伟大的发明。 | The greatest invention since rocket-propelled grenades.
   components:
   - type: Anchorable
     flags:
@@ -27,8 +27,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:SpawnEntitiesBehavior

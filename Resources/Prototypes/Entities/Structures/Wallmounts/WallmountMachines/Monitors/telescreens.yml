@@ -1,23 +1,22 @@
 - type: entity
-  parent: [ BaseWallmountMachine, StructureHealthMachineWeak ]
+  parent: [BaseWallmountMachine, StructureHealthMachineWeak]
   id: WallmountTelescreen
   suffix: camera monitor
-  name: telescreen
-  description: Finally, some decent reception around here...
+  name: 电幕 | telescreen
+  description: 终于，这附近有像样的信号了…… | Finally, some decent reception around here...
   components:
   - type: Sprite
     sprite: Structures/Machines/computers.rsi
     layers:
-      - map: ["computerLayerBody"]
-        state: telescreen_frame
-      - map: ["computerLayerScreen"]
-        state: telescreen
+    - map: ["computerLayerBody"]
+      state: telescreen_frame
+    - map: ["computerLayerScreen"]
+      state: telescreen
   - type: Damageable
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -50,14 +49,14 @@
   - type: ActivatableUIRequiresVision
   - type: UserInterface
     interfaces:
-        enum.SurveillanceCameraMonitorUiKey.Key:
-          type: SurveillanceCameraMonitorBoundUserInterface
+      enum.SurveillanceCameraMonitorUiKey.Key:
+        type: SurveillanceCameraMonitorBoundUserInterface
 
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
   id: WallmountTelescreenFrame
-  name: telescreen frame
-  description: Finally, some decent reception around here...
+  name: 电幕框架 | telescreen frame
+  description: 终于，这附近有点像样的信号了…… | Finally, some decent reception around here...
   components:
   - type: Construction
     graph: WallmountTelescreen
@@ -71,8 +70,7 @@
       state: telescreen
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior

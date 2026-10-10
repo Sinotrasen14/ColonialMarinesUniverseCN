@@ -1,9 +1,9 @@
 - type: entity
   abstract: true
-  parent: [ BaseStructure, StructureHealthFurnitureStrong ]
+  parent: [BaseStructure, StructureHealthFurnitureStrong]
   id: AltarBase
-  name: altar
-  description: Altar of the Gods.
+  name: 祭坛 | altar
+  description: 众神祭坛。 | Altar of the Gods.
   components:
   - type: Anchorable
   - type: Transform
@@ -22,8 +22,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 55
         mask: #mouse can pass under, but I think this is can understandable by logic
@@ -88,7 +87,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarNanotrasen
-  name: nanotrasen altar
+  name: 纳米特雷森祭坛 | nanotrasen altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
@@ -102,7 +101,7 @@
 - type: entity
   parent: AltarBaseSteel
   id: AltarChaos
-  name: chaos altar
+  name: 混沌祭坛 | chaos altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
@@ -114,7 +113,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarDruid
-  name: druid altar
+  name: 德鲁伊祭坛 | druid altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
@@ -126,7 +125,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarToolbox
-  name: toolbox altar
+  name: 工具箱祭坛 | toolbox altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
@@ -138,7 +137,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarSpaceChristian
-  name: space-Christian altar
+  name: 太空基督教祭坛 | space-Christian altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
@@ -157,7 +156,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarSatana
-  name: satanic altar
+  name: 撒旦祭坛 | satanic altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
@@ -176,7 +175,7 @@
 - type: entity
   parent: AltarBaseSteel
   id: AltarTechnology
-  name: technology altar
+  name: 科技祭坛 | technology altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/nanotrasen.rsi
@@ -195,7 +194,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarConvertFestival
-  name: festival altar
+  name: 节日祭坛 | festival altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
@@ -207,7 +206,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarConvertMaint
-  name: maint altar
+  name: 维护祭坛 | maint altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
@@ -226,7 +225,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarConvertBlue
-  name: blue altar
+  name: 蓝色祭坛 | blue altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
@@ -245,7 +244,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarConvertBurden
-  name: burden altar
+  name: 负担祭坛 | burden altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
@@ -264,7 +263,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarConvert
-  name: convert altar
+  name: 转换祭坛 | convert altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
@@ -283,7 +282,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarConvertOrange
-  name: orange altar
+  name: 橙色祭坛 | orange altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
@@ -302,7 +301,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarConvertRed
-  name: red altar
+  name: 红色祭坛 | red altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
@@ -321,7 +320,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarConvertWhite
-  name: white altar
+  name: 白色祭坛 | white altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
@@ -340,7 +339,7 @@
 - type: entity
   parent: AltarBaseWood
   id: AltarConvertYellow
-  name: yellow altar
+  name: 黄色祭坛 | yellow altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Gods/convertaltar.rsi
@@ -359,7 +358,7 @@
 - type: entity
   parent: AltarBaseSteel
   id: AltarHeaven
-  name: heaven altar
+  name: 天坛 | heaven altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Cults/heaven.rsi
@@ -378,7 +377,7 @@
 - type: entity
   parent: AltarBaseSteel
   id: AltarFangs
-  name: fanged altar
+  name: 尖牙祭坛 | fanged altar
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Cults/fangs.rsi
@@ -397,8 +396,8 @@
 - type: entity
   parent: AltarBase
   id: AltarBananium
-  name: honkmother altar
-  description: A bananium altar dedicated to the honkmother.
+  name: 欢笑圣母祭坛 | honkmother altar
+  description: 一座献给欢笑圣母的香蕉岩祭坛。 | A bananium altar dedicated to the honkmother.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Altars/Cults/bananium.rsi

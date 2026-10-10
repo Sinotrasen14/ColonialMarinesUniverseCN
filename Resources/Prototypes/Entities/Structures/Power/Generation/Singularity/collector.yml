@@ -1,9 +1,9 @@
 - type: entity
   parent: BaseMachineDestructible
   id: RadiationCollector
-  name: radiation collector
+  name: 辐射收集器 | radiation collector
   suffix: Empty tank
-  description: A machine that collects radiation and turns it into power. Requires plasma gas to function.
+  description: 一台收集辐射并将其转化为电力的机器。需要等离子气体才能运作。 | A machine that collects radiation and turns it into power. Requires plasma gas to function.
   placement:
     mode: SnapgridCenter
   components:
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 190
         mask:
@@ -29,27 +28,26 @@
     sprite: Structures/Power/Generation/Singularity/collector.rsi
     snapCardinals: true
     layers:
-      - state: ca_off
-        map: ["enum.RadiationCollectorVisualLayers.Main"]
+    - state: ca_off
+      map: ["enum.RadiationCollectorVisualLayers.Main"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.RadiationCollectorVisuals.TankInserted:
         tankInserted:
-          False: { state: ca-tank, visible: false }
-          True: { state: ca-tank, visible: true }
+          false: {state: ca-tank, visible: false}
+          true: {state: ca-tank, visible: true}
       enum.RadiationCollectorVisuals.PressureState:
         pressureLight:
-          0: { state: ca-o0, shader: "unshaded" }
-          1: { state: ca-o1, shader: "unshaded" }
-          2: { state: ca-o2, shader: "unshaded" }
-          3: { state: ca-o3, shader: "unshaded" }
+          0: {state: ca-o0, shader: "unshaded"}
+          1: {state: ca-o1, shader: "unshaded"}
+          2: {state: ca-o2, shader: "unshaded"}
+          3: {state: ca-o3, shader: "unshaded"}
   - type: AnimationPlayer
   - type: NodeContainer
     examinable: true
     nodes:
-      input:
-        !type:CableDeviceNode
+      input: !type:CableDeviceNode
         nodeGroupID: HVPower
   - type: PowerMonitoringDevice
     group: Generator
@@ -60,9 +58,9 @@
   - type: RadiationCollector
     chargeModifier: 15000
     radiationReactiveGases:
-      - reactantPrototype: Plasma
-        powerGenerationEfficiency: 1
-        reactantBreakdownRate: 0.0001
+    - reactantPrototype: Plasma
+      powerGenerationEfficiency: 1
+      reactantBreakdownRate: 0.0001
   - type: RadiationReceiver
   - type: PowerSupplier
   - type: Anchorable
@@ -86,8 +84,7 @@
     delay: 1
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:PlaySoundBehavior

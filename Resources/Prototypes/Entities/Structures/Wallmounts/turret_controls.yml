@@ -1,9 +1,9 @@
 - type: entity
   parent: StructureHealthMachine
   id: WeaponEnergyTurretControlPanelFrame
-  name: sentry turret control panel assembly
-  description: An incomplete wall-mounted assembly for a sentry turret control panel.
-  categories: [ HideSpawnMenu ]
+  name: 哨戒炮控制面板组件 | sentry turret control panel assembly
+  description: 一个不完整的壁挂式哨戒炮控制面板组件。 | An incomplete wall-mounted assembly for a sentry turret control panel.
+  categories: [HideSpawnMenu]
   placement:
     mode: SnapgridCenter
     snap:
@@ -19,8 +19,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageMachineNormal
-        !type:DamageTrigger
+    - trigger: &DamageMachineNormal !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:PlaySoundBehavior
@@ -46,8 +45,8 @@
   abstract: true
   parent: WeaponEnergyTurretControlPanelFrame
   id: WeaponEnergyTurretStationControlPanelBase
-  name: sentry turret control panel
-  description: A wall-mounted interface for remotely configuring the operational parameters of linked sentry turrets.
+  name: 哨戒炮控制面板 | sentry turret control panel
+  description: 用于远程配置已连接哨戒炮运行参数的壁挂式界面。 | A wall-mounted interface for remotely configuring the operational parameters of linked sentry turrets.
   components:
   - type: Appearance
   - type: Sprite
@@ -66,17 +65,17 @@
     visuals:
       enum.WiresVisualLayers.MaintenancePanel:
         enum.WiresVisualLayers.MaintenancePanel:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.TurretControllerVisuals.ControlPanel:
         enum.PowerDeviceVisualLayers.Powered:
-          -1: { state: safe }
-          0: { state: stun }
-          1: { state: lethal }
+          -1: {state: safe}
+          0: {state: stun}
+          1: {state: lethal}
   - type: Damageable
     damageModifierSet: GlassReinforcedMod
   - type: Destructible

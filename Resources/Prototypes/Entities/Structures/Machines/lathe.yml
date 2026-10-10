@@ -1,28 +1,26 @@
 - type: entity
   id: BaseLathe
-  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
+  parent: [BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible]
   abstract: true
-  name: lathe
+  name: 车床 | lathe
   components:
   - type: Appearance
   - type: WiresVisuals
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         density: 190
         mask:
         - MachineMask
         layer:
-          - MachineLayer
+        - MachineLayer
   - type: Lathe
   - type: MaterialStorage
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:PlaySoundBehavior
@@ -75,7 +73,7 @@
 - type: entity
   parent: [SolutionLube, SolutionLarge]
   id: SolutionLatheLube # Its own prototype since some lathes might interface with solutions in other ways
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   abstract: true
@@ -93,8 +91,8 @@
 - type: entity
   id: Autolathe
   parent: BaseLatheLube
-  name: autolathe
-  description: It produces basic items using metal and glass. Has the ability to process blueprints to print new recipes.
+  name: 自动车床 | autolathe
+  description: 它使用金属和玻璃生产基础物品。能够处理蓝图以打印新配方。 | It produces basic items using metal and glass. Has the ability to process blueprints to print new recipes.
   components:
   - type: Sprite
     sprite: Structures/Machines/autolathe.rsi
@@ -114,9 +112,9 @@
   - type: MaterialStorage
     whitelist: &StandardMaterialWhitelist
       tags:
-        - Sheet
-        - RawMaterial
-        - Ingot
+      - Sheet
+      - RawMaterial
+      - Ingot
   - type: OreSiloClient
   - type: Lathe
     idleState: icon
@@ -158,8 +156,8 @@
 - type: entity
   id: AutolatheHyperConvection
   parent: [Autolathe, BaseHyperlathe]
-  name: hyper convection autolathe
-  description: A highly-experimental autolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
+  name: 超对流自动车床 | hyper convection autolathe
+  description: 一种高度实验性的自动车床，利用极端高温的力量以更经济的方式缓慢制造物品。 | A highly-experimental autolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
   components:
   - type: Sprite
     sprite: Structures/Machines/autolathe_hypercon.rsi
@@ -169,8 +167,8 @@
 - type: entity
   id: Protolathe
   parent: BaseLatheLube
-  name: protolathe
-  description: Converts raw materials into advanced items.
+  name: 原型车床 | protolathe
+  description: 将原材料加工成高级物品。 | Converts raw materials into advanced items.
   components:
   - type: Sprite
     sprite: Structures/Machines/protolathe.rsi
@@ -222,8 +220,8 @@
 - type: entity
   id: ProtolatheHyperConvection
   parent: [Protolathe, BaseHyperlathe]
-  name: hyper convection protolathe
-  description: A highly-experimental protolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
+  name: 超对流原型机 | hyper convection protolathe
+  description: 一种高度实验性的原型机，利用极端高温的力量以更低的成本缓慢制造物品。 | A highly-experimental protolathe that harnesses the power of extreme heat to slowly create objects more cost-effectively.
   components:
   - type: Sprite
     sprite: Structures/Machines/protolathe_hypercon.rsi
@@ -233,8 +231,8 @@
 - type: entity
   id: CircuitImprinter
   parent: BaseLatheLube
-  name: circuit imprinter
-  description: Prints circuit boards for machines.
+  name: 电路印刷机 | circuit imprinter
+  description: 为机器印刷电路板。 | Prints circuit boards for machines.
   components:
   - type: Sprite
     sprite: Structures/Machines/circuit_imprinter.rsi
@@ -279,8 +277,8 @@
 - type: entity
   id: CircuitImprinterHyperConvection
   parent: [CircuitImprinter, BaseHyperlathe]
-  name: hyper convection circuit imprinter
-  description: A highly-experimental circuit imprinter that harnesses the power of extreme heat to slowly create objects more cost-effectively.
+  name: 超对流电路压印机 | hyper convection circuit imprinter
+  description: 一种高度实验性的电路压印机，利用极端高温的力量以更经济的方式缓慢制造物体。 | A highly-experimental circuit imprinter that harnesses the power of extreme heat to slowly create objects more cost-effectively.
   components:
   - type: Sprite
     sprite: Structures/Machines/circuit_imprinter_hypercon.rsi
@@ -290,8 +288,8 @@
 - type: entity
   id: ExosuitFabricator
   parent: BaseLatheLube
-  name: exosuit fabricator
-  description: Creates parts for robotics and other mechanical needs.
+  name: 外骨骼制造机 | exosuit fabricator
+  description: 为机器人技术和其他机械需求制造零件。 | Creates parts for robotics and other mechanical needs.
   components:
   - type: Sprite
     sprite: Structures/Machines/exosuit_fabricator.rsi
@@ -326,8 +324,8 @@
 - type: entity
   id: Biofabricator
   parent: BaseLathe
-  name: biocube fabricator
-  description: Produces animal cubes using biomass.
+  name: 生物立方体制造机 | biocube fabricator
+  description: 使用生物质生产动物立方体。 | Produces animal cubes using biomass.
   components:
   - type: Sprite
     sprite: Structures/Machines/biofabricator.rsi
@@ -351,8 +349,8 @@
     ignoreColor: true
     whitelist:
       tags:
-        - Sheet
-        - RawMaterial
+      - Sheet
+      - RawMaterial
   - type: Lathe
     idleState: icon
     runningState: building
@@ -365,8 +363,8 @@
 - type: entity
   id: SecurityTechFab
   parent: BaseLatheLube
-  name: security techfab
-  description: Prints equipment for use by security crew.
+  name: 安保科技制造台 | security techfab
+  description: 为安保人员打印装备。 | Prints equipment for use by security crew.
   components:
   - type: Sprite
     sprite: Structures/Machines/techfab.rsi
@@ -414,43 +412,43 @@
 - type: entity
   id: AmmoTechFab
   parent: BaseLatheLube
-  name: ammo techfab
-  description: Prints the bare minimum of bullets that any budget military or armory could need. Nothing fancy.
+  name: 弹药科技制造机 | ammo techfab
+  description: 打印出任何预算有限的军队或军械库都可能需要的最低限度子弹。没什么花哨的。 | Prints the bare minimum of bullets that any budget military or armory could need. Nothing fancy.
   components:
-    - type: Sprite
-      sprite: Structures/Machines/techfab.rsi
-      layers:
-        - state: icon
-          map: ["enum.LatheVisualLayers.IsRunning"]
-        - state: ammo
-        - state: unlit
-          shader: unshaded
-          map: ["enum.PowerDeviceVisualLayers.Powered"]
-        - state: inserting
-          map: ["enum.MaterialStorageVisualLayers.Inserting"]
-        - state: panel
-          map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    - type: Machine
-      board: AmmoTechFabCircuitboard
-    - type: Lathe
-      idleState: icon
-      runningState: icon
-      unlitIdleState: unlit
-      unlitRunningState: unlit-building
-      staticPacks:
-      - SecurityAmmoStatic
-    - type: EmagLatheRecipes
-      emagStaticPacks:
-      - SyndicateAmmoStatic
-    - type: MaterialStorage
-      whitelist: *StandardMaterialWhitelist
-    - type: OreSiloClient
+  - type: Sprite
+    sprite: Structures/Machines/techfab.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: ammo
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: AmmoTechFabCircuitboard
+  - type: Lathe
+    idleState: icon
+    runningState: icon
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticPacks:
+    - SecurityAmmoStatic
+  - type: EmagLatheRecipes
+    emagStaticPacks:
+    - SyndicateAmmoStatic
+  - type: MaterialStorage
+    whitelist: *StandardMaterialWhitelist
+  - type: OreSiloClient
 
 - type: entity
   id: MedicalTechFab
   parent: BaseLatheLube
-  name: medical techfab
-  description: Prints equipment for use by the medbay.
+  name: 医疗科技制造台 | medical techfab
+  description: 为医疗舱打印设备。 | Prints equipment for use by the medbay.
   components:
   - type: Sprite
     sprite: Structures/Machines/techfab.rsi
@@ -492,8 +490,8 @@
 - type: entity
   parent: BaseLathe
   id: UniformPrinter
-  name: uniform printer
-  description: Prints new or replacement uniforms.
+  name: 制服打印机 | uniform printer
+  description: 打印新的或替换用的制服。 | Prints new or replacement uniforms.
   components:
   - type: Transform
     noRot: false
@@ -535,8 +533,8 @@
 - type: entity
   id: Biogenerator
   parent: BaseLathe
-  name: biogenerator
-  description: Converts plants into biomass, which can be used to construct useful items.
+  name: 生物发生器 | biogenerator
+  description: 将植物转化为生物质，可用于制造有用的物品。 | Converts plants into biomass, which can be used to construct useful items.
   components:
   - type: Sprite
     sprite: Structures/Machines/biofabricator.rsi
@@ -582,41 +580,41 @@
 - type: entity
   parent: BaseLathe
   id: OreProcessor
-  name: ore processor
-  description: It produces sheets and ingots using ores.
+  name: 矿石处理器 | ore processor
+  description: 它使用矿石生产板材和锭。 | It produces sheets and ingots using ores.
   components:
-    - type: Sprite
-      sprite: Structures/Machines/ore_processor.rsi
-      layers:
-        - state: icon
-          map: ["enum.LatheVisualLayers.IsRunning"]
-        - state: unlit
-          shader: unshaded
-          map: ["enum.PowerDeviceVisualLayers.Powered"]
-        - state: inserting
-          map: ["enum.MaterialStorageVisualLayers.Inserting"]
-        - state: panel
-          map: ["enum.WiresVisualLayers.MaintenancePanel"]
-    - type: Machine
-      board: OreProcessorMachineCircuitboard
-    - type: MaterialStorage
-      ignoreColor: true
-      whitelist:
-        tags:
-          - Ore
-    - type: Lathe
-      idleState: icon
-      runningState: building
-      defaultProductionAmount: 10
-      staticPacks:
-      - OreSmelting
-      - RGlassSmelting
+  - type: Sprite
+    sprite: Structures/Machines/ore_processor.rsi
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: OreProcessorMachineCircuitboard
+  - type: MaterialStorage
+    ignoreColor: true
+    whitelist:
+      tags:
+      - Ore
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    defaultProductionAmount: 10
+    staticPacks:
+    - OreSmelting
+    - RGlassSmelting
 
 - type: entity
   parent: OreProcessor
   id: OreProcessorIndustrial
-  name: industrial ore processor
-  description: An ore processor specifically designed for mass-producing metals in industrial applications.
+  name: 工业矿石处理器 | industrial ore processor
+  description: 一种专为工业应用大规模生产金属而设计的矿石处理器。 | An ore processor specifically designed for mass-producing metals in industrial applications.
   components:
   - type: Sprite
     sprite: Structures/Machines/ore_processor_industrial.rsi
@@ -633,8 +631,8 @@
 - type: entity
   parent: BaseLathe
   id: Sheetifier
-  name: sheet-meister 2000
-  description: A very sheety machine.
+  name: 薄板大师2000 | sheet-meister 2000
+  description: 一台非常薄板的机器。 | A very sheety machine.
   components:
   - type: Sprite
     sprite: Structures/Machines/sheetifier.rsi
@@ -664,8 +662,8 @@
 - type: entity
   parent: BaseLathe
   id: CutterMachine
-  name: cutter machine
-  description: This is a cutter. It cuts. Add variety to your station floor with eye-pleasing patterns! Don't stick your fingers in.
+  name: 切割机 | cutter machine
+  description: 这是一台切割机。它能切割。用赏心悦目的图案为你的站点地面增添多样性！不要将手指伸入。 | This is a cutter. It cuts. Add variety to your station floor with eye-pleasing patterns! Don't stick your fingers in.
   components:
   - type: Sprite
     sprite: Structures/Machines/cuttermachine.rsi

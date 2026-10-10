@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: BaseMachinePowered
   id: BaseGravityGenerator
@@ -49,8 +49,8 @@
 - type: entity
   parent: BaseGravityGenerator # StructureHealthMachineMassive
   id: GravityGenerator
-  name: gravity generator
-  description: It's what keeps you to the floor.
+  name: 重力发生器 | gravity generator
+  description: 正是它让你稳稳站在地板上。 | It's what keeps you to the floor.
   placement:
     mode: AlignTileAny
   components:
@@ -66,8 +66,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-1.5,-1.5,1.5,1.5"
         density: 50
         mask:
@@ -83,11 +82,11 @@
 #    damageModifierSet: PlastitaniumMod
 
 - type: entity
-  parent: [ BaseGravityGenerator, ConstructibleMachine, BaseConstructibleMachineDestructible ]
+  parent: [BaseGravityGenerator, ConstructibleMachine, BaseConstructibleMachineDestructible]
   id: GravityGeneratorMini
-  name: mini gravity generator
+  name: 迷你重力发生器 | mini gravity generator
   suffix: Charged
-  description: It's what keeps you to the floor, now in fun size.
+  description: 正是它让你稳稳站在地面上，现在推出了趣味迷你版。 | It's what keeps you to the floor, now in fun size.
   components:
   - type: Sprite
     sprite: Structures/Machines/gravity_generator_mini.rsi
@@ -104,8 +103,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.4"
         density: 3125
         mask:
@@ -114,8 +112,7 @@
         - WallLayer
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:PlaySoundBehavior

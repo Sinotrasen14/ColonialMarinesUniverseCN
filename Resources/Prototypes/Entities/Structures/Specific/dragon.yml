@@ -1,7 +1,7 @@
 - type: entity
   id: CarpRift
-  name: carp rift
-  description: A rift akin to the ones space carp use to travel long distances.
+  name: 鲤鱼裂隙 | carp rift
+  description: 一道类似于太空鲤鱼用于长途旅行的裂隙。 | A rift akin to the ones space carp use to travel long distances.
   placement:
     mode: SnapgridCenter
   components:
@@ -37,12 +37,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: EmitSoundOnSpawn
     sound:
       path: /Audio/Weapons/Guns/Gunshots/rocket_launcher.ogg

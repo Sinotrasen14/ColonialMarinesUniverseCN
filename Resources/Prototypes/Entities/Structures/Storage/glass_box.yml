@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   parent: BaseStructureDynamic
   id: BaseGlassBox
   abstract: true
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 1000
         mask:
@@ -29,8 +28,8 @@
 - type: entity
   parent: [BaseGlassBox, BaseItemCabinetGlass, StructureHealthContainer]
   id: GlassBox
-  name: glass box
-  description: A sturdy showcase for an expensive exhibit.
+  name: 玻璃展柜 | glass box
+  description: 一个用于昂贵展品的坚固展柜。 | A sturdy showcase for an expensive exhibit.
   abstract: true # TODO: Temporarily abstract. Remove it after item scaling in cabinets is implemented.
   components:
   - type: Sprite
@@ -47,8 +46,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 1000
         mask:
@@ -77,8 +75,7 @@
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:EmptyAllContainersBehaviour
@@ -143,10 +140,10 @@
   suffix: AntiqueLaser, Filled, Open
 
 - type: entity
-  parent: [ BaseGlassBox, StructureHealthContainerWeak ]
+  parent: [BaseGlassBox, StructureHealthContainerWeak]
   id: GlassBoxFrame
-  name: glass box frame
-  description: A glassless sturdy showcase for an expensive exhibit.
+  name: 玻璃展示框 | glass box frame
+  description: 一个用于展示昂贵展品的无玻璃坚固展示柜。 | A glassless sturdy showcase for an expensive exhibit.
   suffix: Frame
   components:
   - type: Sprite
@@ -160,8 +157,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 60
       behaviors:
       - !type:PlaySoundBehavior
@@ -176,8 +172,8 @@
 - type: entity
   parent: GlassBoxFrame
   id: GlassBoxBroken
-  name: broken glass box
-  description: A broken showcase for a stolen expensive exhibit.
+  name: 破碎的玻璃展柜 | broken glass box
+  description: 一个破碎的展柜，里面原本陈列着被盗的昂贵展品。 | A broken showcase for a stolen expensive exhibit.
   suffix: Broken
   components:
   - type: Sprite
@@ -189,8 +185,7 @@
     node: brokenGlassBox
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 60
       behaviors:
       - !type:SpawnEntitiesBehavior

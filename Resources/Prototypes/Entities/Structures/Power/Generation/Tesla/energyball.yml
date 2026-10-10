@@ -36,15 +36,14 @@
 - type: entity
   id: TeslaEnergyBall
   parent: BaseEnergyBall
-  name: ball lightning
-  description: A giant ball of pure energy. The space around it is humming and melting.
+  name: 球状闪电 | ball lightning
+  description: 一个巨大的纯能量球。它周围的空间在嗡鸣并融化。 | A giant ball of pure energy. The space around it is humming and melting.
   components:
   - type: Fixtures
     fixtures:
       EventHorizonCollider:
-        shape:
-          !type:PhysShapeCircle
-            radius: 0.55
+        shape: !type:PhysShapeCircle
+          radius: 0.55
         hard: true
         restitution: 0.8
         density: 99999
@@ -53,9 +52,8 @@
         layer:
         - GlassLayer
       EventHorizonConsumer:
-        shape:
-          !type:PhysShapeCircle
-            radius: 0.65
+        shape: !type:PhysShapeCircle
+          radius: 0.65
         hard: false
         mask:
         - Opaque
@@ -118,8 +116,8 @@
 - type: entity
   id: TeslaMiniEnergyBall
   parent: BaseEnergyBall
-  name: mini ball lightning
-  description: The cub of a destructive energy cage. Not as dangerous, but still not worth touching with bare hands.
+  name: 迷你球状闪电 | mini ball lightning
+  description: 破坏性能量笼的幼体。虽然没那么危险，但仍不值得徒手触碰。 | The cub of a destructive energy cage. Not as dangerous, but still not worth touching with bare hands.
   components:
   - type: ChasingWalk
     minSpeed: 2
@@ -129,9 +127,8 @@
   - type: Fixtures
     fixtures:
       TeslaCollider:
-        shape:
-          !type:PhysShapeCircle
-            radius: 0.35
+        shape: !type:PhysShapeCircle
+          radius: 0.35
         hard: true
         restitution: 0.8
         density: 10

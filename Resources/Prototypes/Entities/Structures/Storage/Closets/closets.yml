@@ -1,9 +1,9 @@
 # Tool closet
 - type: entity
   id: ClosetTool
-  name: tool closet
+  name: 工具柜 | tool closet
   parent: ClosetSteelBase
-  description: It's a storage unit for tools.
+  description: 这是一个用于存放工具的储物柜。 | It's a storage unit for tools.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -14,9 +14,9 @@
 # Radiation suit closet
 - type: entity
   id: ClosetRadiationSuit
-  name: radiation suit closet
+  name: 辐射服衣柜 | radiation suit closet
   parent: ClosetSteelBase
-  description: "More comfortable than radiation poisioning."
+  description: "比辐射中毒舒服多了。 | More comfortable than radiation poisioning."
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -27,9 +27,9 @@
 # Emergency closet
 - type: entity
   id: ClosetEmergency
-  name: emergency closet
+  name: 应急柜 | emergency closet
   parent: ClosetSteelBase
-  description: It's a storage unit for emergency breath masks and O2 tanks.
+  description: 这是一个用于存放应急呼吸面罩和氧气罐的储物柜。 | It's a storage unit for emergency breath masks and O2 tanks.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -40,9 +40,9 @@
 # Emergency N2 closet
 - type: entity
   id: ClosetEmergencyN2
-  name: emergency nitrogen closet
+  name: 应急氮气柜 | emergency nitrogen closet
   parent: ClosetSteelBase
-  description: It's full of life-saving equipment. Assuming, that is, that you breathe nitrogen.
+  description: 里面装满了救生设备。前提是，你得呼吸氮气。 | It's full of life-saving equipment. Assuming, that is, that you breathe nitrogen.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -53,9 +53,9 @@
 # Fire safety closet
 - type: entity
   id: ClosetFire
-  name: fire-safety closet
+  name: 消防器材柜 | fire-safety closet
   parent: ClosetSteelBase
-  description: It's a storage unit for fire-fighting supplies.
+  description: 这是一个用于存放消防用品的储物柜。 | It's a storage unit for fire-fighting supplies.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -66,9 +66,9 @@
 # EOD closet
 - type: entity
   id: ClosetBomb
-  name: EOD closet
+  name: 排爆服存放柜 | EOD closet
   parent: ClosetSteelBase
-  description: It's a storage unit for explosion-protective suits.
+  description: 这是一个用于存放防爆服的存储柜。 | It's a storage unit for explosion-protective suits.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -79,10 +79,10 @@
 # Janitorial bomb suit closet
 - type: entity
   id: ClosetJanitorBomb
-  name: janitorial bomb suit closet
+  name: 清洁工防爆服储藏柜 | janitorial bomb suit closet
   parent: ClosetSteelBase
-  description: It's a storage unit for janitorial explosion-protective suits.
-  categories: [ DoNotMap ]
+  description: 这是一个用于存放清洁工防爆服的储藏柜。 | It's a storage unit for janitorial explosion-protective suits.
+  categories: [DoNotMap]
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -96,8 +96,8 @@
 - type: entity
   id: ClosetL3
   parent: ClosetSteelBase
-  name: level 3 biohazard gear closet
-  description: It's a storage unit for level 3 biohazard gear.
+  name: 三级生物危害防护装备储藏柜 | level 3 biohazard gear closet
+  description: 这是一个用于存放三级生物危害防护装备的储藏柜。 | It's a storage unit for level 3 biohazard gear.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -152,9 +152,9 @@
 # Maintenance closet
 - type: entity
   id: ClosetMaintenance
-  name: maintenance closet
+  name: 维修间 | maintenance closet
   parent: ClosetSteelBase
-  description: It's a storage unit.
+  description: 这是一个储物间。 | It's a storage unit.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -164,9 +164,9 @@
 # Syndicate
 - type: entity
   id: LockerSyndicate
-  name: blood-red closet
+  name: 血红色衣柜 | blood-red closet
   parent: ClosetSteelBase
-  description: It's a storage unit with a blood-red design.
+  description: 这是一个带有血红色设计的储物柜。 | It's a storage unit with a blood-red design.
   components:
   - type: Appearance
   - type: EntityStorageVisuals
@@ -177,45 +177,45 @@
 # Bluespace closet
 - type: entity
   id: ClosetBluespace
-  name: suspicious closet
+  name: 可疑的壁橱 | suspicious closet
   suffix: Bluespace
   parent: ClosetMaintenance
-  description: It's a storage unit... right?
+  description: 这是个储物柜……对吧？ | It's a storage unit... right?
   components:
-    - type: ArrivalsBlacklist
-    - type: BluespaceLocker
-      pickLinksFromSameMap: true
-      minBluespaceLinks: 1
-      behaviorProperties:
-        bluespaceEffectOnTeleportSource: true
-      autoLinksBidirectional: true
-      autoLinksUseProperties: true
-      autoLinkProperties:
-        bluespaceEffectOnTeleportSource: true
+  - type: ArrivalsBlacklist
+  - type: BluespaceLocker
+    pickLinksFromSameMap: true
+    minBluespaceLinks: 1
+    behaviorProperties:
+      bluespaceEffectOnTeleportSource: true
+    autoLinksBidirectional: true
+    autoLinksUseProperties: true
+    autoLinkProperties:
+      bluespaceEffectOnTeleportSource: true
 
 # Unstable bluespace closet
 - type: entity
   id: ClosetBluespaceUnstable
-  name: suspicious closet
+  name: 可疑的壁橱 | suspicious closet
   suffix: Bluespace unstable
   parent: ClosetMaintenance
-  description: It's a storage unit... right?
+  description: 这是个储物柜……对吧？ | It's a storage unit... right?
   components:
-    - type: ArrivalsBlacklist
-    - type: BluespaceLocker
-      pickLinksFromSameMap: true
-      minBluespaceLinks: 1
-      behaviorProperties:
-        clearLinksDebluespaces: true
-        transportEntities: false
-        bluespaceEffectOnTeleportSource: true
-        clearLinksEvery: 2
-      autoLinksBidirectional: true
-      autoLinksUseProperties: true
-      usesSinceLinkClear: -1 # hacky
-      autoLinkProperties:
-        invalidateOneWayLinks: true
-        transportEntities: false
-        bluespaceEffectOnTeleportSource: true
-        destroyAfterUses: 2
-        destroyType: DeleteComponent
+  - type: ArrivalsBlacklist
+  - type: BluespaceLocker
+    pickLinksFromSameMap: true
+    minBluespaceLinks: 1
+    behaviorProperties:
+      clearLinksDebluespaces: true
+      transportEntities: false
+      bluespaceEffectOnTeleportSource: true
+      clearLinksEvery: 2
+    autoLinksBidirectional: true
+    autoLinksUseProperties: true
+    usesSinceLinkClear: -1   # hacky
+    autoLinkProperties:
+      invalidateOneWayLinks: true
+      transportEntities: false
+      bluespaceEffectOnTeleportSource: true
+      destroyAfterUses: 2
+      destroyType: DeleteComponent

@@ -1,62 +1,61 @@
 - type: entity
-  name: particles
-  description: Accelerated particles.
+  name: 粒子 | particles
+  description: 加速粒子。 | Accelerated particles.
   id: ParticlesProjectile
   parent: BaseBullet
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      layers:
-      - sprite: Structures/Power/Generation/PA/particle.rsi
-        state: particle0
-        shader: unshaded
-        map: [ "unshaded" ]
-    - type: Projectile
-      deleteOnCollide: false
-      impactEffect: null
-      soundHit:
-        path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
-      damage:
-        types:
-          Radiation: 25
-    - type: Physics
-    - type: Fixtures
-      fixtures:
-        projectile:
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.48,-0.48,0.48,0.48"
-          hard: false
-          layer: [None]
-          mask:
+  - type: Sprite
+    layers:
+    - sprite: Structures/Power/Generation/PA/particle.rsi
+      state: particle0
+      shader: unshaded
+      map: ["unshaded"]
+  - type: Projectile
+    deleteOnCollide: false
+    impactEffect:
+    soundHit:
+      path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
+    damage:
+      types:
+        Radiation: 25
+  - type: Physics
+  - type: Fixtures
+    fixtures:
+      projectile:
+        shape: !type:PhysShapeAabb
+          bounds: "-0.48,-0.48,0.48,0.48"
+        hard: false
+        layer: [None]
+        mask:
           # Has to hit mobs, singularity, and singularity generator
-          - Opaque
-          - FullTileMask
-    - type: ParticleProjectile
-    - type: SinguloFood
+        - Opaque
+        - FullTileMask
+  - type: ParticleProjectile
+  - type: SinguloFood
       # Energy is setup by the PA particle fire function.
-    - type: TimedDespawn
-      lifetime: 3.0
-    - type: Appearance
-    - type: GenericVisualizer
-      visuals:
-        enum.ParticleAcceleratorVisuals.VisualState:
-          unshaded:
-            Level0: {state: particle0}
-            Level1: {state: particle1}
-            Level2: {state: particle2}
-            Level3: {state: particle3}
-    - type: GuideHelp # why does this even have a guidebook link in the first place
-      guides:
-      - SingularityTeslaEngine
-      - Power
+  - type: TimedDespawn
+    lifetime: 3.0
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.ParticleAcceleratorVisuals.VisualState:
+        unshaded:
+          Level0: {state: particle0}
+          Level1: {state: particle1}
+          Level2: {state: particle2}
+          Level3: {state: particle3}
+  - type: GuideHelp   # why does this even have a guidebook link in the first place
+    guides:
+    - SingularityTeslaEngine
+    - Power
 
 - type: entity
-  name: anti particles
-  description: Accelerated negative particles.
+  name: 反粒子 | anti particles
+  description: 加速的负粒子。 | Accelerated negative particles.
   id: AntiParticlesProjectile
   parent: ParticlesProjectile
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     layers:
@@ -64,13 +63,13 @@
       color: red
       state: particle0
       shader: unshaded
-      map: [ "unshaded" ]
+      map: ["unshaded"]
   - type: Reflective
     reflective:
     - Energy
   - type: Projectile
     deleteOnCollide: false
-    impactEffect: null
+    impactEffect:
     soundHit:
       path: /Audio/Weapons/Guns/Hits/bullet_hit.ogg
     damage:

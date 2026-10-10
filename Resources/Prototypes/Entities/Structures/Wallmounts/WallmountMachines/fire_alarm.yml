@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseWallmountMachine, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMachine, StructureHealthMachineFlimsy]
   id: FireAlarm
-  name: fire alarm
-  description: A fire alarm. Spicy!
+  name: 火警 | fire alarm
+  description: 火警。真够劲！ | A fire alarm. Spicy!
   components:
   - type: LightningTarget
     priority: 0
@@ -27,12 +27,12 @@
   - type: AtmosDevice
   - type: AtmosAlarmable
     syncWith:
-      - FireAlarm
-      - AirSensor
-      - GasVent
-      - GasScrubber
+    - FireAlarm
+    - AirSensor
+    - GasVent
+    - GasScrubber
     monitorAlertTypes:
-      - Temperature
+    - Temperature
   - type: AtmosAlarmableVisuals
     layerMap: "fireAlarmState"
     alarmStates:
@@ -40,16 +40,16 @@
       Warning: fire_0 # shouldn't be alarming at a warning
       Danger: fire_2
       Emagged: fire_emagged
-    hideOnDepowered: [ "fireAlarmState" ]
+    hideOnDepowered: ["fireAlarmState"]
   - type: Tag
     tags:
-      - FireAlarm
+    - FireAlarm
   - type: FireAlarm
   - type: AtmosAlertsDevice
     group: FireAlarm
   - type: ContainerFill
     containers:
-      board: [ FireAlarmElectronics ]
+      board: [FireAlarmElectronics]
   - type: ContainerContainer
     containers:
       board: !type:Container
@@ -94,8 +94,7 @@
     - Networking
   - type: Destructible
     thresholds:
-    - trigger: &DamageMachineFlimsy
-        !type:DamageTrigger
+    - trigger: &DamageMachineFlimsy !type:DamageTrigger
         damage: 50
       behaviors:
       - &SoundMetalGlassBreak !type:PlaySoundBehavior
@@ -106,23 +105,23 @@
   - type: StationAiWhitelist
 
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
   id: FireAlarmAssembly
-  name: fire alarm assembly
-  description: A fire alarm assembly. Very mild.
+  name: 火灾报警装置 | fire alarm assembly
+  description: 火灾报警装置。非常轻微。 | A fire alarm assembly. Very mild.
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/fire-alarm.rsi
     layers:
     - state: frame1
-      map: [ "enum.ConstructionVisuals.Layer" ]
+      map: ["enum.ConstructionVisuals.Layer"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          assembly: { state: frame1 }
-          electronics: { state: frame2 }
+          assembly: {state: frame1}
+          electronics: {state: frame2}
   - type: Construction
     graph: FireAlarm
     node: assembly

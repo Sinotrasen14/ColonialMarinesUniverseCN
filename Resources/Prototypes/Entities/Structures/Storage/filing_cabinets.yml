@@ -39,9 +39,9 @@
       - id: NanoTaskCartridge
 
 - type: entity
-  parent: [ BaseStructureDynamic, BaseBagOpenClose, StructureHealthContainerWeak ]
+  parent: [BaseStructureDynamic, BaseBagOpenClose, StructureHealthContainerWeak]
   id: BaseFilingCabinet
-  description: A cabinet for all your filing needs.
+  description: 满足您所有文件归档需求的柜子。 | A cabinet for all your filing needs.
   suffix: Empty
   abstract: true
   components:
@@ -62,8 +62,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.18,-0.48,0.18,0.48"
         density: 200
         mask:
@@ -78,8 +77,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 60
       behaviors:
       - !type:PlaySoundBehavior
@@ -103,7 +101,7 @@
     burnDurationMax: 620
 
 - type: entity
-  name: filing cabinet
+  name: 文件柜 | filing cabinet
   parent: BaseFilingCabinet
   id: filingCabinet
   components:
@@ -117,7 +115,7 @@
     node: filingCabinet
 
 - type: entity
-  name: tall cabinet
+  name: 高柜 | tall cabinet
   parent: BaseFilingCabinet
   id: filingCabinetTall
   components:
@@ -131,10 +129,10 @@
     node: tallCabinet
 
 - type: entity
-  name: chest drawer
+  name: 带轮抽屉柜 | chest drawer
   parent: BaseFilingCabinet
   id: filingCabinetDrawer
-  description: A small drawer for all your filing needs, Now with wheels!
+  description: 带轮小抽屉，满足你所有文件收纳需求，现在还有轮子啦！ | A small drawer for all your filing needs, Now with wheels!
   components:
   - type: Sprite
     state: chestdrawer
@@ -145,8 +143,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.22,-0.42,0.22,0.34"
         density: 210
         mask:

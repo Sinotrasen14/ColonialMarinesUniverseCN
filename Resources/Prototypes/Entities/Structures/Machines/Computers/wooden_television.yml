@@ -1,8 +1,8 @@
 - type: entity
   parent: ComputerSurveillanceWirelessCameraMonitor
   id: ComputerTelevision
-  name: wooden television
-  description: Finally, some decent reception around here...
+  name: 木制电视机 | wooden television
+  description: 终于，这附近有像样的信号了…… | Finally, some decent reception around here...
   components:
   - type: Sprite
     noRot: true
@@ -21,11 +21,10 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 200
         mask:
-          - TabletopMachineMask
+        - TabletopMachineMask
         layer:
-          - TabletopMachineLayer
+        - TabletopMachineLayer

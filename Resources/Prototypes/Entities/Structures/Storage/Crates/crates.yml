@@ -1,7 +1,7 @@
 - type: entity
   parent: CrateBaseWeldable
   id: CrateGenericSteel
-  name: crate
+  name: 板条箱 | crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/generic.rsi
@@ -20,7 +20,7 @@
 - type: entity
   parent: CrateBaseWeldable
   id: CratePlastic
-  name: plastic crate
+  name: 塑料筐 | plastic crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/plastic.rsi
@@ -39,7 +39,7 @@
 - type: entity
   parent: CratePlastic
   id: CrateFreezer
-  name: freezer
+  name: 冷冻室 | freezer
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/freezer.rsi
@@ -54,12 +54,12 @@
     containers:
     - entity_storage
   - type: Paintable
-    group: null
+    group:
 
 - type: entity
   parent: CratePlastic
   id: CrateHydroponics
-  name: hydroponics crate
+  name: 水培箱 | hydroponics crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/hydroponics.rsi
@@ -69,7 +69,7 @@
 - type: entity
   parent: CratePlastic
   id: CrateMedical
-  name: medical crate
+  name: 医疗箱 | medical crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/medical.rsi
@@ -79,8 +79,8 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateRadiation
-  name: radiation gear crate
-  description: Is not actually lead lined. Do not store your plutonium in this.
+  name: 辐射装备箱 | radiation gear crate
+  description: 实际上并没有铅衬里。不要把你的钚存放在这里面。 | Is not actually lead lined. Do not store your plutonium in this.
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/radiation.rsi
@@ -90,7 +90,7 @@
 - type: entity
   parent: CratePlastic
   id: CrateInternals
-  name: oxygen crate
+  name: 氧气箱 | oxygen crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/o2.rsi
@@ -100,7 +100,7 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateElectrical
-  name: electrical crate
+  name: 电气箱 | electrical crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/electrical.rsi
@@ -110,7 +110,7 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateEngineering
-  name: engineering crate
+  name: 工程箱 | engineering crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/engineering.rsi
@@ -120,7 +120,7 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateScience
-  name: science crate
+  name: 科学板条箱 | science crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/science.rsi
@@ -130,7 +130,7 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateSurgery
-  name: surgery crate
+  name: 手术箱 | surgery crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/surgery.rsi
@@ -138,9 +138,9 @@
     sprite: Structures/Storage/Crates/surgery.rsi
 
 - type: entity
-  parent: [ BaseCrate, StructureHealthContainerFlimsy ]
+  parent: [BaseCrate, StructureHealthContainerFlimsy]
   id: CrateWeb
-  name: web crate
+  name: 网络板条箱 | web crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/web.rsi
@@ -164,8 +164,7 @@
     damageModifierSet: ThreadMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 20
       behaviors:
       - !type:PlaySoundBehavior
@@ -185,9 +184,9 @@
 # Secure Crates
 
 - type: entity
-  parent: [ CrateBaseSecure, BaseSecurityContraband ]
+  parent: [CrateBaseSecure, BaseSecurityContraband]
   id: CrateSecgear
-  name: secgear crate
+  name: secgear 箱子 | secgear crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/sec_gear.rsi
@@ -200,7 +199,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateEngineeringSecure
-  name: secure engineering crate
+  name: 安全工程箱 | secure engineering crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/engicrate_secure.rsi
@@ -212,7 +211,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateMedicalSecure
-  name: secure medical crate
+  name: 安全医疗箱 | secure medical crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/medicalcrate_secure.rsi
@@ -224,19 +223,19 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateChemistrySecure
-  name: secure chemistry crate
+  name: 安全化学箱 | secure chemistry crate
   components:
-    - type: Icon
-      sprite: Structures/Storage/Crates/chemcrate_secure.rsi
-    - type: Sprite
-      sprite: Structures/Storage/Crates/chemcrate_secure.rsi
-    - type: AccessReader
-      access: [["Chemistry"]]
+  - type: Icon
+    sprite: Structures/Storage/Crates/chemcrate_secure.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/chemcrate_secure.rsi
+  - type: AccessReader
+    access: [["Chemistry"]]
 
 - type: entity
   parent: CrateBaseSecure
   id: CratePrivateSecure
-  name: private crate
+  name: 私有 crate | private crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/privatecrate_secure.rsi
@@ -246,7 +245,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateScienceSecure
-  name: secure science crate
+  name: 安全科学箱 | secure science crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/scicrate_secure.rsi
@@ -258,7 +257,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CratePlasma
-  name: plasma crate
+  name: 等离子箱 | plasma crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/plasma.rsi
@@ -270,17 +269,17 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateSecure
-  name: secure crate
+  name: 安全箱 | secure crate
   components:
-    - type: Icon
-      sprite: Structures/Storage/Crates/secure.rsi
-    - type: Sprite
-      sprite: Structures/Storage/Crates/secure.rsi
+  - type: Icon
+    sprite: Structures/Storage/Crates/secure.rsi
+  - type: Sprite
+    sprite: Structures/Storage/Crates/secure.rsi
 
 - type: entity
   parent: CrateBaseSecure
   id: CrateHydroSecure
-  name: secure hydroponics crate
+  name: 安全水培箱 | secure hydroponics crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/hydro_secure.rsi
@@ -292,7 +291,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateWeaponSecure
-  name: secure weapon crate
+  name: 安全武器箱 | secure weapon crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/weapon.rsi
@@ -302,11 +301,11 @@
     access: [["Armory"]]
 
 - type: entity
-  parent: [ CrateBaseSecure, BaseSecurityContraband ]
+  parent: [CrateBaseSecure, BaseSecurityContraband]
   suffix: Armory, Secure
   id: CrateContrabandStorageSecure
-  name: contraband storage crate
-  description: An armory access locked crate for storing contraband confiscated from suspects or prisoners.
+  name: 违禁品储存箱 | contraband storage crate
+  description: 一个军械库权限锁定的箱子，用于存放从嫌疑人或囚犯处没收的违禁品。 | An armory access locked crate for storing contraband confiscated from suspects or prisoners.
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/sec_gear.rsi
@@ -316,7 +315,7 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateCommandSecure
-  name: command crate
+  name: 命令箱 | command crate
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/command.rsi
@@ -328,8 +327,8 @@
 - type: entity
   parent: CrateBaseSecure
   id: CrateSyndicateSecure
-  name: secure syndicate crate
-  description: A dark steel crate with red bands and a letter S embossed on the front.
+  name: 安全辛迪加板条箱 | secure syndicate crate
+  description: 一个深色钢制板条箱，带有红色条带，正面压印着字母S。 | A dark steel crate with red bands and a letter S embossed on the front.
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/syndicate_secure.rsi
@@ -339,9 +338,9 @@
     access: [["SyndicateAgent", "NuclearOperative"]]
 
 - type: entity
-  parent: [ BaseCrate, StructureHealthContainerFlimsy ]
+  parent: [BaseCrate, StructureHealthContainerFlimsy]
   id: CrateLivestock
-  name: livestock crate
+  name: 牲畜板条箱 | livestock crate
   components:
   - type: EntityStorage
     airtight: false
@@ -362,8 +361,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 20
       behaviors:
       - !type:PlaySoundBehavior
@@ -379,8 +377,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.4,0.4,0.29"
         density: 135
         mask:
@@ -396,9 +393,9 @@
     price: 125
 
 - type: entity
-  parent: [ BaseCrate, StructureHealthContainerFlimsy ]
+  parent: [BaseCrate, StructureHealthContainerFlimsy]
   id: CrateRodentCage
-  name: hamster cage
+  name: 仓鼠笼 | hamster cage
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/cage.rsi
@@ -419,8 +416,7 @@
     damageModifierSet: PlasticMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 20
       behaviors:
       - !type:PlaySoundBehavior
@@ -439,8 +435,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,-0.2,0.4,0.29"
         density: 80
         mask:
@@ -453,8 +448,8 @@
 - type: entity
   id: CrateBaseLockBox
   parent: CrateBaseSecure
-  name: lock box
-  description: "A secure lock box. Funds from its sale will be distributed back to the department. Just remember: Cargo always takes a cut."
+  name: 锁箱 | lock box
+  description: "一个安全的锁箱。其出售所得资金将分配回部门。只需记住：货物运输总是要抽成的。 | A secure lock box. Funds from its sale will be distributed back to the department. Just remember: Cargo always takes a cut."
   abstract: true
   components:
   - type: Sprite
@@ -463,24 +458,23 @@
     visuals:
       enum.PaperLabelVisuals.HasLabel:
         enum.PaperLabelVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PaperLabelVisuals.LabelType:
         enum.PaperLabelVisuals.Layer:
-          Paper: { state: paper }
-          Bounty: { state: bounty }
-          CaptainsPaper: { state: captains_paper }
-          Invoice: { state: invoice }
+          Paper: {state: paper}
+          Bounty: {state: bounty}
+          CaptainsPaper: {state: captains_paper}
+          Invoice: {state: invoice}
       enum.StorageVisuals.Open:
         lid_overlay:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
   - type: OverrideSell
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.3,-0.4,0.3,0.19"
         density: 50
         mask:
@@ -488,12 +482,12 @@
         layer:
         - MachineLayer
   - type: Paintable
-    group: null
+    group:
 
 - type: entity
   id: CrateLockBoxEngineering
   parent: CrateBaseLockBox
-  name: engineering lock box
+  name: 工程锁箱 | engineering lock box
   components:
   - type: Sprite
     layers:
@@ -504,7 +498,7 @@
       map: ["enum.StorageVisualLayers.Door"]
     - state: overlay-closed
       color: "#ad8c27"
-      map: [ lid_overlay ]
+      map: [lid_overlay]
     - state: welded
       visible: false
       map: ["enum.WeldableLayers.BaseWelded"]
@@ -523,7 +517,7 @@
 - type: entity
   id: CrateLockBoxMedical
   parent: CrateBaseLockBox
-  name: medical lock box
+  name: 医疗锁箱 | medical lock box
   components:
   - type: Sprite
     layers:
@@ -534,7 +528,7 @@
       map: ["enum.StorageVisualLayers.Door"]
     - state: overlay-closed
       color: "#92c7e8"
-      map: [ lid_overlay ]
+      map: [lid_overlay]
     - state: welded
       visible: false
       map: ["enum.WeldableLayers.BaseWelded"]
@@ -553,7 +547,7 @@
 - type: entity
   id: CrateLockBoxScience
   parent: CrateBaseLockBox
-  name: science lock box
+  name: 科学锁盒 | science lock box
   components:
   - type: Sprite
     layers:
@@ -564,7 +558,7 @@
       map: ["enum.StorageVisualLayers.Door"]
     - state: overlay-closed
       color: "#ba4bf0"
-      map: [ lid_overlay ]
+      map: [lid_overlay]
     - state: welded
       visible: false
       map: ["enum.WeldableLayers.BaseWelded"]
@@ -583,7 +577,7 @@
 - type: entity
   id: CrateLockBoxSecurity
   parent: CrateBaseLockBox
-  name: security lock box
+  name: 保险锁箱 | security lock box
   components:
   - type: Sprite
     layers:
@@ -594,7 +588,7 @@
       map: ["enum.StorageVisualLayers.Door"]
     - state: overlay-closed
       color: "#c12d30"
-      map: [ lid_overlay ]
+      map: [lid_overlay]
     - state: welded
       visible: false
       map: ["enum.WeldableLayers.BaseWelded"]
@@ -613,7 +607,7 @@
 - type: entity
   id: CrateLockBoxService
   parent: CrateBaseLockBox
-  name: service lock box
+  name: 服务锁箱 | service lock box
   components:
   - type: Sprite
     layers:
@@ -624,7 +618,7 @@
       map: ["enum.StorageVisualLayers.Door"]
     - state: overlay-closed
       color: "#53b723"
-      map: [ lid_overlay ]
+      map: [lid_overlay]
     - state: welded
       visible: false
       map: ["enum.WeldableLayers.BaseWelded"]
@@ -643,8 +637,8 @@
 - type: entity
   parent: CrateGeneric
   id: CratePirate
-  name: pirate chest
-  description: A space pirate chest, not for station lubbers.
+  name: 海盗宝箱 | pirate chest
+  description: 一个太空海盗宝箱，不是给空间站旱鸭子准备的。 | A space pirate chest, not for station lubbers.
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/piratechest.rsi
@@ -671,9 +665,9 @@
 - type: entity
   parent: CratePirate
   id: CrateToyBox
-  name: toy box
+  name: 玩具箱 | toy box
   suffix: Empty
-  description: A box overflowing with fun.
+  description: 一个充满乐趣的盒子。 | A box overflowing with fun.
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/toybox.rsi
@@ -692,10 +686,10 @@
     state: crate_icon
 
 - type: entity
-  parent: [ BaseCrate, StructureHealthContainerFlimsy ]
+  parent: [BaseCrate, StructureHealthContainerFlimsy]
   id: CrateCoffin
-  name: coffin
-  description: A comfy coffin, excellent place for the vampires and corpses.
+  name: 棺材 | coffin
+  description: 一个舒适的棺材，是吸血鬼和尸体的绝佳去处。 | A comfy coffin, excellent place for the vampires and corpses.
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/coffin.rsi
@@ -712,8 +706,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 20
       behaviors:
       - !type:PlaySoundBehavior
@@ -731,11 +724,11 @@
     - entity_storage
 
 - type: entity
-  parent: [ BaseCrate, StructureHealthContainer ]
+  parent: [BaseCrate, StructureHealthContainer]
   id: CrateWoodenGrave
-  name: grave
+  name: 坟墓 | grave
   suffix: wooden
-  description: Someone died here...
+  description: 有人死在这里…… | Someone died here...
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/wooden_grave.rsi
@@ -754,8 +747,7 @@
     damageModifierSet: RockMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100 # discourage just beating the grave to break it open
       behaviors:
       - !type:PlaySoundBehavior
@@ -783,9 +775,9 @@
 - type: entity
   parent: CrateWoodenGrave
   id: CrateStoneGrave
-  name: grave
+  name: 坟墓 | grave
   suffix: stone
-  description: Someone died here...
+  description: 有人死在这里…… | Someone died here...
   components:
   - type: Sprite
     sprite: Structures/Storage/Crates/stone_grave.rsi
@@ -804,8 +796,8 @@
 - type: entity
   parent: CrateGenericSteel
   id: CrateSyndicate
-  name: syndicate crate
-  description: A dark steel crate with red bands and a letter S embossed on the front.
+  name: 辛迪加板条箱 | syndicate crate
+  description: 一个深色钢制板条箱，带有红色条带，正面压印着字母S。 | A dark steel crate with red bands and a letter S embossed on the front.
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/syndicate.rsi
@@ -815,7 +807,7 @@
 - type: entity
   parent: [StructureWheeled, CrateBaseWeldable]
   id: CrateTrashCart
-  name: trash cart
+  name: 垃圾车 | trash cart
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/trashcart.rsi
@@ -833,12 +825,12 @@
       offset: "0.0,0.03125"
       map: ["enum.PaperLabelVisuals.Layer"]
   - type: Paintable
-    group: null
+    group:
 
 - type: entity
   parent: CrateBaseSecure
   id: CrateTrashCartJani
-  name: janitorial trash cart
+  name: 清洁垃圾车 | janitorial trash cart
   components:
   - type: Icon
     sprite: Structures/Storage/Crates/trashcart_jani.rsi
@@ -861,7 +853,7 @@
   - type: AccessReader
     access: [["Janitor"]]
   - type: Paintable
-    group: null
+    group:
 
 - type: entity
   parent: CrateBaseWeldable

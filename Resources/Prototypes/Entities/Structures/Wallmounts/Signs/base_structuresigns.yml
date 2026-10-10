@@ -18,14 +18,13 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseWallmountMetallic, BaseSignIndestructible, StructureHealthFurniture ]
+  parent: [BaseWallmountMetallic, BaseSignIndestructible, StructureHealthFurniture]
   id: BaseSign
-  name: base sign
+  name: 基础标志 | base sign
   components:
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:PlaySoundBehavior
@@ -34,15 +33,14 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseSignIndestructible, StructureHealthFurnitureWeak ]
+  parent: [BaseSignIndestructible, StructureHealthFurnitureWeak]
   id: BaseSignWeak
   components:
   - type: Damageable
     damageModifierSet: CardboardMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior

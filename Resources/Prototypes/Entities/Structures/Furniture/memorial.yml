@@ -1,8 +1,8 @@
 - type: entity
   id: Memorial
   parent: BaseStructure
-  name: memorial
-  description: Commemorating something.
+  name: 纪念 | memorial
+  description: 纪念某事。 | Commemorating something.
   components:
   - type: Sprite
     sprite: Structures/Furniture/Memorials/generic_memorial.rsi
@@ -12,8 +12,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.20"
         density: 85
         mask:
@@ -32,25 +31,28 @@
 - type: entity
   id: SS13Memorial
   parent: BaseStructure
-  name: tomb of the unknown employee
+  name: 无名员工之墓 | tomb of the unknown employee
   description: |
-    Here rests an unknown employee
+    这里安息着一位无名员工
+    姓名与职级皆不为人知
+    其事迹却不会被遗忘 | Here rests an unknown employee
     Unknown by name or rank
     Whose acts will not be forgotten
   components:
-    - type: Sprite
-      sprite: Structures/Furniture/Memorials/ss13_memorial.rsi
-      state: memorial
-      drawdepth: Mobs
-      noRot: true
-      offset: "0.0,0.5"
+  - type: Sprite
+    sprite: Structures/Furniture/Memorials/ss13_memorial.rsi
+    state: memorial
+    drawdepth: Mobs
+    noRot: true
+    offset: "0.0,0.5"
 
 - type: entity
   parent: Memorial
   id: Monolith
-  name: monolith
+  name: 巨石 | monolith
   description: |
-    Holy shit modern art.
+    天哪，现代艺术。
+    我敢打赌它值一大笔钱。 | Holy shit modern art.
     I bet it's worth a fortune.
   components:
   - type: Sprite
@@ -58,8 +60,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.20"
         density: 1500 # good luck.
         mask:

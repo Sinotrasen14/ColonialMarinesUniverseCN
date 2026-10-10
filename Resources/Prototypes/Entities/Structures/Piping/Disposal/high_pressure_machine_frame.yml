@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: StructureHealthMachineWeak
   id: DisposalMachineFrame
-  name: high pressure machine frame
-  description: A machine frame made to withstand the amount of pressure used in the station's disposal system.
+  name: 高压机器框架 | high pressure machine frame
+  description: 用于承受空间站处理系统所使用压力的机器框架。 | A machine frame made to withstand the amount of pressure used in the station's disposal system.
   placement:
     mode: SnapgridCenter
   components:
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.4,0.25,0.4"
         density: 190
         mask:
@@ -33,8 +32,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -46,15 +44,15 @@
     sprite: Structures/Piping/high_pressure_machine_frame.rsi
     layers:
     - state: frame
-      map: [ "enum.ConstructionVisuals.Layer" ]
+      map: ["enum.ConstructionVisuals.Layer"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          frame_cable: { state: frame_cables }
-          frame_electronics: { state: frame_electronics }
-          frame_unit: { state: frame_unit }
-          frame_mailing: { state: frame_unit } # not a typo, there is no frame_mailing state.
-          frame_inlet: { state: frame_inlet }
-          frame_outlet: { state: frame_outlet }
+          frame_cable: {state: frame_cables}
+          frame_electronics: {state: frame_electronics}
+          frame_unit: {state: frame_unit}
+          frame_mailing: {state: frame_unit}   # not a typo, there is no frame_mailing state.
+          frame_inlet: {state: frame_inlet}
+          frame_outlet: {state: frame_outlet}

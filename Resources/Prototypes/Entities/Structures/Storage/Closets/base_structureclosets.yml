@@ -1,9 +1,9 @@
 - type: entity
   abstract: true
-  parent: [ BaseStructureDynamic, BasePaperLabelableVisualized ]
+  parent: [BaseStructureDynamic, BasePaperLabelableVisualized]
   id: ClosetBase
-  name: closet
-  description: A standard-issue Nanotrasen storage unit.
+  name: 储物柜 | closet
+  description: 一个标准配发的纳米传思储物单元。 | A standard-issue Nanotrasen storage unit.
   components:
   - type: Animateable
   - type: ResistLocker
@@ -36,8 +36,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.48"
         density: 75
         mask:
@@ -60,17 +59,17 @@
     visuals:
       enum.PaperLabelVisuals.HasLabel:
         enum.PaperLabelVisuals.Layer:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.StorageVisuals.Open:
         enum.PaperLabelVisuals.Layer:
-          True: { visible: false }
+          true: {visible: false}
       enum.PaperLabelVisuals.LabelType:
         enum.PaperLabelVisuals.Layer:
-          Paper: { state: paper }
-          Bounty: { state: bounty }
-          CaptainsPaper: { state: captains_paper }
-          Invoice: { state: invoice }
+          Paper: {state: paper}
+          Bounty: {state: bounty}
+          CaptainsPaper: {state: captains_paper}
+          Invoice: {state: invoice}
   - type: Appearance
   - type: EntityStorageVisuals
     stateBaseClosed: generic
@@ -82,7 +81,7 @@
 
 # steel closet base (that can be constructed/deconstructed)
 - type: entity
-  parent: [ ClosetBase, StructureHealthContainer ]
+  parent: [ClosetBase, StructureHealthContainer]
   id: ClosetSteelBase
   components:
   - type: Construction
@@ -96,8 +95,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -114,10 +112,10 @@
 #Wall Closet
 - type: entity
   abstract: true
-  parent: [ BaseWallmountMetallic, StructureHealthContainerWeak ]
+  parent: [BaseWallmountMetallic, StructureHealthContainerWeak]
   id: BaseWallCloset
-  name: wall closet
-  description: A standard-issue Nanotrasen storage unit, now on walls.
+  name: 壁橱 | wall closet
+  description: 一个标准配发的纳米传思储物单元，现在安装在墙上。 | A standard-issue Nanotrasen storage unit, now on walls.
   components:
   - type: ResistLocker
   - type: Weldable
@@ -152,8 +150,7 @@
         ents: []
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 60
       behaviors:
       - !type:PlaySoundBehavior
@@ -207,10 +204,10 @@
 #Base suit storage unit
 #I am terribly sorry for duplicating the closet almost-wholesale, but the game malds at me if I don't so here we are.
 - type: entity
-  parent: [ BaseStructure, StructureHealthContainerStrong ]
+  parent: [BaseStructure, StructureHealthContainerStrong]
   id: SuitStorageBase
-  name: suit storage unit
-  description: A fancy hi-tech storage unit made for storing space suits.
+  name: 宇航服储存单元 | suit storage unit
+  description: 一个为存放宇航服而设计的高级高科技储存单元。 | A fancy hi-tech storage unit made for storing space suits.
   components:
   - type: AccessReader
   - type: Lock
@@ -246,8 +243,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.48"
         density: 350
         mask:
@@ -269,8 +265,7 @@
     damageModifierSet: PlasteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 140
       behaviors:
       - !type:PlaySoundBehavior

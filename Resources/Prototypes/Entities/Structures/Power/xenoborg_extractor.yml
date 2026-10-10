@@ -1,8 +1,8 @@
 - type: entity
   parent: [BaseMachine, BaseMachineDestructible, BaseXenoborgContraband]
   id: XenoborgExtractor
-  name: xenoborg extractor
-  description: Drains electricity from the grid to produce xenoborg crystals via nuclear fusion.
+  name: 异星体提取器 | xenoborg extractor
+  description: 从电网中抽取电力，通过核聚变生产异星体晶体。 | Drains electricity from the grid to produce xenoborg crystals via nuclear fusion.
   suffix: Unanchored
   placement:
     mode: PlaceFree
@@ -28,18 +28,17 @@
     visuals:
       enum.PowerConsumerVisuals.Consuming:
         base:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
         running:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         light:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:ExplodeBehavior
@@ -63,8 +62,7 @@
   - type: NodeContainer
     examinable: true
     nodes:
-      input_hv:
-        !type:CableDeviceNode
+      input_hv: !type:CableDeviceNode
         nodeGroupID: HVPower
         enabled: true
   - type: PowerConsumerBatteryCharger

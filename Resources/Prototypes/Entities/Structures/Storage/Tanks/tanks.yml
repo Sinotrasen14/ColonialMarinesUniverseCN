@@ -3,8 +3,8 @@
 - type: entity
   id: WeldingFuelTank
   parent: [StorageTank, StructureWheeled]
-  name: fuel tank
-  description: A fuel tank. It's used to store high amounts of fuel.
+  name: 燃料箱 | fuel tank
+  description: 一个燃料箱。它用于储存大量燃料。 | A fuel tank. It's used to store high amounts of fuel.
   suffix: Empty
   components:
   - type: StaticPrice
@@ -12,10 +12,10 @@
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
-      - state: fueltank-2
-      - state: fueltank-2-1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
+    - state: fueltank-2
+    - state: fueltank-2-1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 3
@@ -48,8 +48,8 @@
 - type: entity
   parent: [StorageTankBig, WeldingFuelTank] # StorageTankBig must come first, or else the desnity won't get inherited.
   id: WeldingFuelTankHighCapacity
-  name: high-capacity fuel tank
-  description: A highly pressurized fuel tank made to hold gargantuan amounts of welding fuel.
+  name: 高容量燃料箱 | high-capacity fuel tank
+  description: 一个高度加压的燃料箱，用于容纳巨量焊接燃料。 | A highly pressurized fuel tank made to hold gargantuan amounts of welding fuel.
   suffix: Full
   components:
   - type: StaticPrice
@@ -57,10 +57,10 @@
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
-      - state: highfueltank-2
-      - state: highfueltank-2-1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
+    - state: highfueltank-2
+    - state: highfueltank-2-1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: SolutionContainerVisuals
     maxFillLevels: 7
     fillBaseName: highfueltank-2-
@@ -78,8 +78,8 @@
 - type: entity
   id: WaterTank
   parent: [StorageTank, StructureWheeled]
-  name: water tank
-  description: A water tank. It's used to store high amounts of water.
+  name: 水箱 | water tank
+  description: 一个水箱。它用于储存大量水。 | A water tank. It's used to store high amounts of water.
   suffix: Empty
   components:
   - type: StaticPrice
@@ -87,10 +87,10 @@
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
-      - state: watertank-2
-      - state: watertank-2-1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
+    - state: watertank-2
+    - state: watertank-2-1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 5
@@ -112,16 +112,16 @@
 - type: entity
   parent: [SolutionHuge, StorageTank]
   id: WaterCooler
-  name: water cooler
-  description: Seems like a good place to stand and waste time. It has a stock of paper cups on the side.
+  name: 饮水机 | water cooler
+  description: 似乎是个站着消磨时间的好地方。旁边备有一摞纸杯。 | Seems like a good place to stand and waste time. It has a stock of paper cups on the side.
   components:
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
-      - state: watercooler-2
-      - state: watercooler-2-1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
+    - state: watercooler-2
+    - state: watercooler-2-1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 4
@@ -160,8 +160,8 @@
 - type: entity
   parent: [StorageTankBig, WaterTank]
   id: WaterTankHighCapacity
-  name: high-capacity water tank
-  description: A highly pressurized water tank made to hold gargantuan amounts of water.
+  name: 高容量水箱 | high-capacity water tank
+  description: 一个高压水箱，用于容纳巨量水。 | A highly pressurized water tank made to hold gargantuan amounts of water.
   suffix: Full
   components:
   - type: StaticPrice
@@ -169,10 +169,10 @@
   - type: Sprite
     sprite: Structures/Storage/tanks.rsi
     layers:
-      - state: highwatertank-2
-      - state: highwatertank-2-1
-        map: ["enum.SolutionContainerLayers.Fill"]
-        visible: false
+    - state: highwatertank-2
+    - state: highwatertank-2-1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
   - type: Appearance
   - type: SolutionContainerVisuals
     maxFillLevels: 7
@@ -192,18 +192,18 @@
   parent: [StorageTank, StructureWheeled]
   suffix: Empty
   components:
-    - type: StaticPrice
-      price: 500
-    - type: Sprite
-      sprite: Structures/Storage/tanks.rsi
-      layers:
-        - state: generictank-1
-        - state: watertank-2-1
-          map: ["enum.SolutionContainerLayers.Fill"]
-          visible: false
-    - type: Appearance
-    - type: SolutionContainerVisuals
-      maxFillLevels: 5
-      fillBaseName: watertank-2-
-    - type: ExaminableSolution
-      solution: tank
+  - type: StaticPrice
+    price: 500
+  - type: Sprite
+    sprite: Structures/Storage/tanks.rsi
+    layers:
+    - state: generictank-1
+    - state: watertank-2-1
+      map: ["enum.SolutionContainerLayers.Fill"]
+      visible: false
+  - type: Appearance
+  - type: SolutionContainerVisuals
+    maxFillLevels: 5
+    fillBaseName: watertank-2-
+  - type: ExaminableSolution
+    solution: tank

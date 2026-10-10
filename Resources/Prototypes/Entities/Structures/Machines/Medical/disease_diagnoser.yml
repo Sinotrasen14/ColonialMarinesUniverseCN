@@ -1,8 +1,8 @@
 - type: entity
   id: DiseaseDiagnoser
-  parent: [ BaseMachinePowered, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible ]
-  name: Disease Diagnoser Delta Extreme
-  description: A machine that analyzes disease samples.
+  parent: [BaseMachinePowered, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible]
+  name: 疾病诊断器 Delta Extreme | Disease Diagnoser Delta Extreme
+  description: 一台分析疾病样本的机器。 | A machine that analyzes disease samples.
   placement:
     mode: SnapgridCenter
   components:
@@ -27,10 +27,10 @@
           collection: MetalBreak
 
 - type: entity
-  name: disease diagnoser report
+  name: 疾病诊断报告 | disease diagnoser report
   parent: Paper
   id: DiagnosisReportPaper
-  description: 'A chilling medical receipt.'
+  description: '一份令人不寒而栗的医疗单据。 | A chilling medical receipt.'
   components:
   - type: Sprite
     sprite: Objects/Misc/bureaucracy.rsi

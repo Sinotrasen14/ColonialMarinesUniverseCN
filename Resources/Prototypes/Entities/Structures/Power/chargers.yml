@@ -22,7 +22,7 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseRecharger, BaseSmallConstructibleMachineDestructible ]
+  parent: [BaseRecharger, BaseSmallConstructibleMachineDestructible]
   id: BaseItemRecharger
   components:
   - type: Sprite
@@ -36,8 +36,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.10,-0.10,0.10,0.10"
         density: 500
         mask:
@@ -53,8 +52,7 @@
   - type: RequireProjectileTarget
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:EmptyContainersBehaviour
@@ -67,8 +65,8 @@
 - type: entity
   parent: BaseItemRecharger
   id: PowerCellRecharger
-  name: cell recharger
-  description: An older model recharger that can recharge power cells.
+  name: 电池充电器 | cell recharger
+  description: 一个较旧型号的充电器，可以为能量电池充电。 | An older model recharger that can recharge power cells.
   components:
   - type: Sprite
     sprite: Structures/Power/cell_recharger.rsi
@@ -108,16 +106,15 @@
   - type: MultiHandedItem
 
 - type: entity
-  parent: [ BaseItemRecharger, ConstructibleMachine ]
+  parent: [BaseItemRecharger, ConstructibleMachine]
   id: PowerCageRecharger
-  name: cage recharger
-  description: A specialized machine made for recharging the heavy cage batteries used by ship-mounted weapons.
+  name: 笼式充电器 | cage recharger
+  description: 一种专用机器，用于为舰载武器所使用的重型笼式电池充电。 | A specialized machine made for recharging the heavy cage batteries used by ship-mounted weapons.
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.35,0.25,0.35"
         density: 190
         mask:
@@ -141,7 +138,7 @@
     slots:
       charger_slot:
         ejectOnInteract: true
-        name: Power cage
+        name: 力量笼 | Power cage
         whitelist:
           tags:
           - PowerCage
@@ -153,8 +150,8 @@
 - type: entity
   parent: BaseItemRecharger
   id: WeaponCapacitorRecharger
-  name: recharger
-  description: A modern recharging station that can fit both power cells and small electronic devices.
+  name: 充电器 | recharger
+  description: 一个现代充电站，可容纳动力电池和小型电子设备。 | A modern recharging station that can fit both power cells and small electronic devices.
   components:
   - type: Sprite
     sprite: Structures/Power/recharger.rsi
@@ -180,8 +177,8 @@
 - type: entity
   parent: BaseItemRecharger
   id: TurboItemRecharger
-  name: turbo recharger
-  description: An overclocked recharger. Not recommended for use around asthmatics.
+  name: 涡轮充电器 | turbo recharger
+  description: 超频充电器。不建议在哮喘患者周围使用。 | An overclocked recharger. Not recommended for use around asthmatics.
   components:
   - type: Sprite
     sprite: Structures/Power/turbo_recharger.rsi
@@ -207,10 +204,10 @@
   - type: MultiHandedItem
 
 - type: entity
-  parent: [ BaseItemRecharger, BaseWallmount ]
+  parent: [BaseItemRecharger, BaseWallmount]
   id: WallWeaponCapacitorRecharger
-  name: wall recharger
-  description: A compact wall-mounted recharger. It can only recharge electronic devices and has no space for power cells.
+  name: 墙壁充电器 | wall recharger
+  description: 一个紧凑的壁挂式充电器。它只能为电子设备充电，没有空间放置能量电池。 | A compact wall-mounted recharger. It can only recharge electronic devices and has no space for power cells.
   components:
   - type: Sprite
     sprite: Structures/Power/wall_recharger.rsi
@@ -236,27 +233,27 @@
           - PotatoBattery
 
 - type: entity
-  parent: [ BaseRecharger, BaseConstructibleMachineDestructible ]
+  parent: [BaseRecharger, BaseConstructibleMachineDestructible]
   id: BorgCharger
-  name: cyborg recharging station
-  description: A stationary charger for various robotic and cyborg entities. Surprisingly spacious.
+  name: 赛博格充电站 | cyborg recharging station
+  description: 为各种机器人和赛博格实体提供的固定式充电器。空间出乎意料地宽敞。 | A stationary charger for various robotic and cyborg entities. Surprisingly spacious.
   components:
   - type: Sprite
     sprite: Structures/Power/borg_charger.rsi
-    noRot: True
+    noRot: true
     layers:
-      - state: borgcharger-u1
-        map: ["base"]
-      - state: borgcharger0
-        map: ["enum.PowerDeviceVisualLayers.Powered"]
-        shader: "unshaded"
-      - state: borgcharger1
-        map: ["charged"]
-        shader: "unshaded"
-        visible: false
-      - state: borgdecon1
-        map: ["enum.WiresVisualLayers.MaintenancePanel"]
-        visible: false
+    - state: borgcharger-u1
+      map: ["base"]
+    - state: borgcharger0
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+      shader: "unshaded"
+    - state: borgcharger1
+      map: ["charged"]
+      shader: "unshaded"
+      visible: false
+    - state: borgdecon1
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+      visible: false
   - type: Charger
     chargeRate: 30
     slotId: entity_storage
@@ -276,25 +273,25 @@
     visuals:
       enum.StorageVisuals.Open:
         base:
-          True: { state: borgcharger-u0 }
-          False: { state: borgcharger-u1 }
+          true: {state: borgcharger-u0}
+          false: {state: borgcharger-u1}
         enum.PowerDeviceVisualLayers.Powered:
-          True: { state: borgcharger0 }
-          False: { state: borgcharger2 }
+          true: {state: borgcharger0}
+          false: {state: borgcharger2}
         charged:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         charged:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.CellVisual.Light:
         charged:
-          Off: { visible: false }
-          Empty: { visible: false }
+          Off: {visible: false}
+          Empty: {visible: false}
           Charging:
             visible: true
             state: borgcharger3
@@ -314,8 +311,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.48
         density: 190
         mask:
@@ -324,8 +320,7 @@
         - MachineLayer
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:PlaySoundBehavior
@@ -335,8 +330,8 @@
 - type: entity
   parent: BorgCharger
   id: BorgChargerXenoborg
-  name: xenoborg recharging station
-  description: A stationary charger for xenoborgs. Feels claustrophobic.
+  name: 异星机械体充电站 | xenoborg recharging station
+  description: 一座为异星机械体准备的固定式充电站。让人感到幽闭恐惧。 | A stationary charger for xenoborgs. Feels claustrophobic.
   components:
   - type: Sprite
     sprite: Structures/Power/xenoborg_charger.rsi

@@ -1,8 +1,8 @@
 - type: entity
   id: TeslaGenerator
-  name: tesla generator
+  name: 特斯拉发电机 | tesla generator
   parent: BaseStructureDynamic
-  description: An Odd Device which produces a powerful Tesla ball when set up. Comes with a temporary shutdown containment failsafe.
+  description: 一个奇怪的装置，设置好后能产生强大的特斯拉球。附带临时停机收容失效保护。 | An Odd Device which produces a powerful Tesla ball when set up. Comes with a temporary shutdown containment failsafe.
   components:
   - type: Sprite
     noRot: true
@@ -14,10 +14,9 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
+        shape: !type:PhysShapeCircle
           # Using a circle here makes it a lot easier to pull it all the way from Cargo
-          !type:PhysShapeCircle
-            radius: 0.45
+          radius: 0.45
         density: 190
         # Keep an eye on ParticlesProjectile when adjusting these
         mask:

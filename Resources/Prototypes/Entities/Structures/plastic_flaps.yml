@@ -1,6 +1,6 @@
 - type: entity
   abstract: true
-  parent: [ BaseStructureDynamic, StructureHealthBarrier ]
+  parent: [BaseStructureDynamic, StructureHealthBarrier]
   id: PlasticFlapsBase
   placement:
     mode: SnapgridCenter
@@ -20,8 +20,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 100
         mask:
@@ -32,8 +31,7 @@
     damageModifierSet: PlasticMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -54,9 +52,9 @@
 - type: entity
   id: PlasticFlapsClear
   parent: PlasticFlapsBase
-  name: plastic flaps
+  name: 塑料挡板 | plastic flaps
   suffix: Clear
-  description: Heavy duty, plastic flaps. Definitely can't get past those. No way.
+  description: 重型塑料挡板。绝对过不去。不可能。 | Heavy duty, plastic flaps. Definitely can't get past those. No way.
   components:
   - type: Construction
     graph: PlasticFlapsGraph
@@ -65,15 +63,14 @@
 - type: entity
   id: PlasticFlapsOpaque
   parent: PlasticFlapsBase
-  name: plastic flaps
+  name: 塑料挡板 | plastic flaps
   suffix: Opaque
-  description: Heavy duty, plastic flaps. Definitely can't get past those. No way.
+  description: 重型塑料挡板。绝对过不去。没门。 | Heavy duty, plastic flaps. Definitely can't get past those. No way.
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 100
         mask:
@@ -89,9 +86,9 @@
 - type: entity
   id: PlasticFlapsAirtightClear
   parent: PlasticFlapsBase
-  name: airtight plastic flaps
+  name: 密封塑料挡板 | airtight plastic flaps
   suffix: Airtight, Clear
-  description: Heavy duty, slightly stronger, airtight plastic flaps. Definitely can't get past those. No way.
+  description: 重型、稍强一些的密封塑料挡板。绝对过不去。没门。 | Heavy duty, slightly stronger, airtight plastic flaps. Definitely can't get past those. No way.
   components:
   - type: Airtight
   - type: StaticPrice
@@ -100,9 +97,9 @@
 - type: entity
   id: PlasticFlapsAirtightOpaque
   parent: PlasticFlapsBase
-  name: airtight plastic flaps
+  name: 密封塑料挡板 | airtight plastic flaps
   suffix: Airtight, Opaque
-  description: Heavy duty, slightly stronger, airtight plastic flaps. Definitely can't get past those. No way.
+  description: 重型、略强、密封塑料挡板。绝对过不去。不可能。 | Heavy duty, slightly stronger, airtight plastic flaps. Definitely can't get past those. No way.
   components:
   - type: Airtight
   - type: StaticPrice

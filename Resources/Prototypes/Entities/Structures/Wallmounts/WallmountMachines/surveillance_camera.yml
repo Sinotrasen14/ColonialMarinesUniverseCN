@@ -2,8 +2,8 @@
   abstract: true
   parent: StructureHealthMachineFlimsy
   id: SurveillanceCameraBase
-  name: camera
-  description: A surveillance camera. It's watching you. Kinda.
+  name: 摄像头 | camera
+  description: 一个监控摄像头。它在看着你。算是吧。 | A surveillance camera. It's watching you. Kinda.
   placement:
     mode: SnapgridCenter
     snap:
@@ -14,15 +14,13 @@
   - type: Fixtures
     fixtures:
       light:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.5
         hard: false
         mask:
         - GhostImpassable
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,-0.2,-0.15"
         density: 190
         mask:
@@ -60,8 +58,8 @@
     sprite: Structures/Wallmounts/camera.rsi
     offset: 0, -0.5
     layers:
-      - map: [ "enum.SurveillanceCameraVisualsKey.Layer" ]
-        state: camera
+    - map: ["enum.SurveillanceCameraVisualsKey.Layer"]
+      state: camera
   - type: Appearance
   - type: SurveillanceCameraVisuals
     sprites:
@@ -80,8 +78,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds: &ThresholdsSurveilCamera
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -98,28 +95,28 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: SurveillanceCameraConstructed
-  name: camera
+  name: 相机 | camera
   suffix: Constructed
   components:
-    - type: CameraNetworkMember
-      networks: []
-      sourceKinds: Standard
-    - type: CameraMapMarker
-    - type: SurveillanceCamera
-      setupAvailableNetworks:
-        - SurveillanceCameraEngineering
-        - SurveillanceCameraSecurity
-        - SurveillanceCameraService
-        - SurveillanceCameraSupply
-        - SurveillanceCameraScience
-        - SurveillanceCameraGeneral
-        - SurveillanceCameraMedical
-        - SurveillanceCameraCommand
+  - type: CameraNetworkMember
+    networks: []
+    sourceKinds: Standard
+  - type: CameraMapMarker
+  - type: SurveillanceCamera
+    setupAvailableNetworks:
+    - SurveillanceCameraEngineering
+    - SurveillanceCameraSecurity
+    - SurveillanceCameraService
+    - SurveillanceCameraSupply
+    - SurveillanceCameraScience
+    - SurveillanceCameraGeneral
+    - SurveillanceCameraMedical
+    - SurveillanceCameraCommand
 
 - type: entity
   parent: SurveillanceCameraBase
   id: SurveillanceCameraEngineering
-  name: camera
+  name: 相机 | camera
   suffix: Engineering
   components:
   - type: CameraNetworkMember
@@ -132,7 +129,7 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: SurveillanceCameraSecurity
-  name: camera
+  name: 相机 | camera
   suffix: Security
   components:
   - type: CameraNetworkMember
@@ -145,7 +142,7 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: SurveillanceCameraScience
-  name: camera
+  name: 相机 | camera
   suffix: Science
   components:
   - type: CameraNetworkMember
@@ -158,7 +155,7 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: SurveillanceCameraSupply
-  name: camera
+  name: 相机 | camera
   suffix: Supply
   components:
   - type: CameraNetworkMember
@@ -171,7 +168,7 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: SurveillanceCameraCommand
-  name: camera
+  name: 相机 | camera
   suffix: Command
   components:
   - type: CameraNetworkMember
@@ -184,7 +181,7 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: SurveillanceCameraService
-  name: camera
+  name: 相机 | camera
   suffix: Service
   components:
   - type: CameraNetworkMember
@@ -197,7 +194,7 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: SurveillanceCameraMedical
-  name: camera
+  name: 相机 | camera
   suffix: Medical
   components:
   - type: CameraNetworkMember
@@ -210,7 +207,7 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: SurveillanceCameraGeneral
-  name: camera
+  name: 相机 | camera
   suffix: General
   components:
   - type: CameraNetworkMember
@@ -223,27 +220,27 @@
 - type: entity
   parent: StructureHealthMachineFlimsy
   id: SurveillanceCameraAssembly
-  name: camera
-  description: A surveillance camera. Doesn't seem to be watching anybody any time soon. Probably.
+  name: 摄像头 | camera
+  description: 一个监控摄像头。似乎短期内不会监视任何人。大概吧。 | A surveillance camera. Doesn't seem to be watching anybody any time soon. Probably.
   placement:
     mode: SnapgridCenter
     snap:
     - Wallmount
   components:
-    - type: Clickable
-    - type: InteractionOutline
-    - type: Construction
-      graph: SurveillanceCamera
-      node: assembly
-    - type: WallMount
-    - type: Transform
-      anchored: true
-    - type: Damageable
-      damageModifierSet: SteelMod
-    - type: Destructible
-      thresholds: *ThresholdsSurveilCamera
-    - type: Sprite
-      drawdepth: WallMountedItems
-      sprite: Structures/Wallmounts/camera.rsi
-      layers:
-        - state: camera_off
+  - type: Clickable
+  - type: InteractionOutline
+  - type: Construction
+    graph: SurveillanceCamera
+    node: assembly
+  - type: WallMount
+  - type: Transform
+    anchored: true
+  - type: Damageable
+    damageModifierSet: SteelMod
+  - type: Destructible
+    thresholds: *ThresholdsSurveilCamera
+  - type: Sprite
+    drawdepth: WallMountedItems
+    sprite: Structures/Wallmounts/camera.rsi
+    layers:
+    - state: camera_off

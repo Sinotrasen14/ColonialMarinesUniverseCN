@@ -1,7 +1,7 @@
 - type: entity
   id: RegalWindow
-  name: regal window
-  description: An ornate window adorned with gilded filigree. Expensive!
+  name: 华丽窗户 | regal window
+  description: 一扇装饰着镀金金银丝细工的华丽窗户。昂贵！ | An ornate window adorned with gilded filigree. Expensive!
   parent: [BaseDeltaPressureReinforcedGlass, Window]
   components:
   - type: Sprite
@@ -18,15 +18,14 @@
     fx: EffectRCDDeconstruct6
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: WindowShatter
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: IconSmooth
     base: window
   - type: Appearance

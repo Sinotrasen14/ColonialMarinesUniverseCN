@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseStructure, StructureHealthContainerWeak ]
+  parent: [BaseStructure, StructureHealthContainerWeak]
   id: Dresser
-  name: dresser
-  description: Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
+  name: 梳妆台 | dresser
+  description: 木制梳妆台，内部可以储物，非常适合放内衣，还有某人的肾？…… | Wooden dresser, can store things inside itself, ideal for underwear, and someone's kidneys?...
   components:
   - type: Sprite
     sprite: Structures/Furniture/furniture.rsi
@@ -12,8 +12,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 60
       behaviors:
       - !type:SpawnEntitiesBehavior

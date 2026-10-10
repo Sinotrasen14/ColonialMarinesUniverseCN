@@ -1,20 +1,20 @@
 - type: entity
   id: ResearchAndDevelopmentServer
-  parent: [ BaseMachinePowered, ConstructibleMachine, StructureHealthMachineStrong ]
-  name: R&D server
-  description: Contains the collective knowledge of the station's scientists. Destroying it would send them back to the stone age. You don't want that do you?
+  parent: [BaseMachinePowered, ConstructibleMachine, StructureHealthMachineStrong]
+  name: 研发服务器 | R&D server
+  description: 包含空间站科学家的集体知识。摧毁它会使他们回到石器时代。你不想那样吧？ | Contains the collective knowledge of the station's scientists. Destroying it would send them back to the stone age. You don't want that do you?
   components:
   - type: Sprite
     sprite: Structures/Machines/server.rsi
     snapCardinals: true
     layers:
-      - state: server-off
-      - state: server-on
-        visible: false
-        map: ["enum.PowerDeviceVisualLayers.Powered"]
-      - state: variant-research
-      - state: server_o
-        map: ["enum.WiresVisualLayers.MaintenancePanel"]
+    - state: server-off
+    - state: server-on
+      visible: false
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: variant-research
+    - state: server_o
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: PointLight
     enabled: false
     castShadows: false
@@ -40,8 +40,7 @@
     damageModifierSet: PlasmaMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageMachineStrong
-        !type:DamageTrigger
+    - trigger: &DamageMachineStrong !type:DamageTrigger
         damage: 275
       behaviors:
       - !type:ChangeConstructionNodeBehavior
@@ -57,10 +56,10 @@
   - type: Appearance
   - type: GenericVisualizer
     visuals:
-        enum.PowerDeviceVisuals.Powered:
-          enum.PowerDeviceVisualLayers.Powered:
-            True: {visible: true}
-            False: {visible: false}
+      enum.PowerDeviceVisuals.Powered:
+        enum.PowerDeviceVisualLayers.Powered:
+          true: {visible: true}
+          false: {visible: false}
   - type: AmbientOnPowered
   - type: AmbientSound
     volume: -9
@@ -73,9 +72,9 @@
     - Science
 
 - type: entity
-  parent: [ BaseMachinePowered, StructureHealthMachineStrong ]
+  parent: [BaseMachinePowered, StructureHealthMachineStrong]
   id: BaseResearchAndDevelopmentPointSource
-  name: "base R&D point source"
+  name: "基础研发点数来源 | base R&D point source"
   # We should make this abstract once there are actual point sources.
   components:
   - type: Sprite
@@ -105,8 +104,8 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
   - type: Damageable
     damageModifierSet: PlasteelMod
   - type: Destructible

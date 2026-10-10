@@ -1,8 +1,8 @@
 - type: entity
   id: ActionXenoRest
   parent: ActionXenoBase
-  name: Rest
-  description: Lie down to regenerate health more quickly while on weeds. [color=red]Your rest keybind will also activate this action, Shift+R by default.[/color]
+  name: 休息
+  description: 在杂草上躺下可以更快地恢复生命值。[color=red]你的休息快捷键也会激活此动作，默认是 Shift+R。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -18,9 +18,9 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoRest
-  name: Rest
-  description: Lie down to regenerate health more quickly while on weeds. [color=red]Your rest keybind will also activate this action, Shift+R by default.[/color]
-  categories: [ HideSpawnMenu ]
+  name: 休息
+  description: 躺下以在杂草上更快恢复生命值。[color=red]你的休息快捷键也会激活此动作，默认是 Shift+R。[/color]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: resting
@@ -28,7 +28,7 @@
 - type: entity
   id: ActionXenoWatch
   parent: ActionXenoBase
-  name: Watch Xenonid
+  name: 观察 Xenonid
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -43,17 +43,17 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoWatch
-  name: Watch Xenonid
-  categories: [ HideSpawnMenu ]
+  name: Xenonid手表
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: watch_xeno
+  - type: Sprite
+    state: watch_xeno
 
 - type: entity
   id: ActionXenoPheromones
   parent: ActionXenoBase
-  name: Emit Pheromones (35) # TODO RMC14 proper plasma costs
-  description: Gives a buff to nearby xenonids. [color=cyan]Consumes 2.5 plasma per second.[/color]
+  name: 释放信息素（35）            # TODO RMC14 proper plasma costs
+  description: 为附近的异形提供增益。[color=cyan]每秒消耗2.5等离子体。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -69,9 +69,9 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoPheromones
-  name: Emit Pheromones
-  description: Gives a buff to nearby xenonids.
-  categories: [ HideSpawnMenu ]
+  name: 释放信息素
+  description: 为附近的异形虫提供增益效果
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: emit_pheromones
@@ -79,8 +79,8 @@
 - type: entity
   id: ActionXenoHide
   parent: ActionXenoBase
-  name: Hide
-  description: Hide under tables and other objects.
+  name: 躲藏
+  description: 躲在桌子和其他物体下面。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -96,7 +96,7 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoHide
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: xenohide
@@ -104,8 +104,8 @@
 - type: entity
   id: ActionXenoToggleCrest
   parent: ActionXenoBase
-  name: Toggle Crest Defense
-  description: Increases your resistance to direct damage but slows you down. You count as one size bigger while you're crest is lowered.
+  name: 切换冠饰防御
+  description: 提高你对直接伤害的抗性，但会使你减速。当你的冠饰放下时，你被视为大一号。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -121,16 +121,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoToggleCrestDefence
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: crest_defense
+  - type: Sprite
+    state: crest_defense
 
 - type: entity
   id: ActionXenoFortify
   parent: ActionXenoBase
-  name: Fortify
-  description: Become immobile and impassable to mobs, dramatically increasing your resistance to direct damage and explosions. Damage is further reduced from the direction you are facing. You can't be stunned by minor explosions. You count as two sizes bigger while fortified and still can attack structures or use tail slam.
+  name: 强化
+  description: 你变得无法移动，且生物无法穿过你，并大幅提高你对直接伤害和爆炸的抗性。来自你面向方向的伤害会进一步降低。你不会被小型爆炸眩晕。处于强化状态时，你的体型视为大两级，且仍可攻击建筑或使用尾击。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -146,22 +146,22 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoFortify
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: fortify
+  - type: Sprite
+    state: fortify
 
 - type: entity
   id: ActionXenoFortifySteelcrest
   parent: ActionXenoFortify
-  name: Fortify
-  description: Become much slower, increasing your resistance to direct damage and explosions. Damage is greatly reduced from the direction you are facing. You count as two sizes bigger while fortified and still can attack structures or use tail slam, but your slashes do less damage.
+  name: 固守
+  description: 移动速度大幅降低，提高对直接伤害和爆炸的抗性。来自你面朝方向的伤害会大幅减少。处于固守状态时，你的体型视为大两级，仍可攻击建筑或使用尾击，但斩击伤害降低。
 
 - type: entity
   id: ActionXenoResinWalker
   parent: ActionXenoBase
-  name: Resin Walker (50) # TODO RMC14 proper plasma costs
-  description: Run faster on weeds. [color=cyan]Consumes 30 plasma per second.[/color]
+  name: 树脂行者（50）          # TODO RMC14 proper plasma costs
+  description: 在杂草上跑得更快。[color=cyan]每秒消耗30等离子。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -177,15 +177,15 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoResinWalker
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: toggle_speed
+  - type: Sprite
+    state: toggle_speed
 
 - type: entity
   id: ActionXenoZoom
   parent: ActionXenoBase
-  name: Toggle Long-Range Sight
+  name: 切换远距离瞄准镜
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -201,16 +201,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoToggleLongRangeSight
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: toggle_long_range
+  - type: Sprite
+    state: toggle_long_range
 
 - type: entity
   id: ActionXenoWordQueen
   parent: ActionXenoBase
-  name: Word of the Queen (50) # TODO RMC14 proper plasma costs
-  description: Sends a message to all members of your hive.
+  name: 女王之言（50）               # TODO RMC14 proper plasma costs
+  description: 向你的蜂巢中的所有成员发送一条消息。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -228,8 +228,8 @@
 - type: entity
   id: ActionXenoPsychicWhisper
   parent: ActionXenoBase
-  name: Psychic Whisper
-  description: Whisper a psychic message to a nearby mind.
+  name: 心灵低语
+  description: 向附近的心灵低语一条精神信息。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -253,8 +253,8 @@
 - type: entity
   id: ActionXenoPsychicRadiance
   parent: ActionXenoBase
-  name: Psychic Radiance (100)
-  description: Radiate a psychic message to nearby minds.
+  name: 心灵辐射（100）
+  description: 向周围的心灵辐射心灵讯息。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -271,8 +271,8 @@
 - type: entity
   id: ActionXenoGiveOrder
   parent: ActionXenoBase
-  name: Give Order (100)
-  description: Send a psychic order to the xenonid you are watching.
+  name: 下达命令（100）
+  description: 向你正在观察的异形下达一道灵能命令。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -289,8 +289,8 @@
 - type: entity
   id: ActionXenoGrowOvipositor
   parent: ActionXenoBase
-  name: Grow Ovipositor (500)
-  description: Become immobile and start laying eggs which will produce children. Has a 5 minute cooldown. [color=red]You must be in ovipositor mode for other xenonids to gain evolution points after round-start![/color]
+  name: 长出产卵器（500）
+  description: 变得无法移动并开始产卵，产下的卵会孕育出后代。有5分钟冷却时间。[color=red]回合开始后，你必须处于产卵器模式，其他异形才能获得进化点数！[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -306,18 +306,18 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoGrowOvipositor
-  name: Grow Ovipositor
-  description: Become immobile and start laying eggs which will produce parasites.
-  categories: [ HideSpawnMenu ]
+  name: 长出产卵器
+  description: 变得无法移动，并开始产卵，这些卵会产生寄生虫。
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: grow_ovipositor
+  - type: Sprite
+    state: grow_ovipositor
 
 - type: entity
   id: ActionXenoTurnInvisible
   parent: ActionXenoBase
-  name: Turn Invisible (20) # TODO RMC14 proper plasma costs
-  description: Become partially invisible for 30 seconds, or until you either damage or attempt to devour an enemy. Can be toggled off to become visible again, with a refund of 90% remaining cloak time. Increases your movement speed by 15% until the ability expires.
+  name: 隐身（20）              # TODO RMC14 proper plasma costs
+  description: 进入半隐身状态，持续30秒，或直到你对一名敌人造成伤害或试图吞噬该敌人为止。可以切换关闭以重新显形，并返还剩余隐身时间的90%。在技能结束前，你的移动速度提高15%。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -332,16 +332,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoTurnInvisible
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: lurker_invisibility
+  - type: Sprite
+    state: lurker_invisibility
 
 - type: entity
   id: ActionXenoDefensiveShield
   parent: ActionXenoBase
-  name: Defensive Shield (50)
-  description: Encase yourself in a protective shield that absorbs 100 damage for 7 seconds. Reduces incoming damage by 8 per hit. Reflects enemy projectiles while active. [color=red]Grants brief explosion immunity on activation.[/color]
+  name: 防御护盾（50）
+  description: 将自己包裹在防护护盾中，护盾可吸收100点伤害，持续7秒。每次受击使受到的伤害减少8点。激活期间可反射敌方投射物。[color=red]激活时短暂获得爆炸免疫。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -357,16 +357,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoDefensiveShield
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: empower
+  - type: Sprite
+    state: empower
 
 - type: entity
   id: ActionXenoRetrieveEgg
   parent: ActionXenoBase
-  name: Retrieve Egg
-  description: Retrieves an egg from your storage if you have an empty hand. Using this on an unplanted egg will pick up all nearby unplanted eggs. Using an egg in hand will put it into your storage.
+  name: 取回鸡蛋
+  description: 如果你空着手，就会从你的仓库中取回一个鸡蛋。对未种植的鸡蛋使用此物品时，会捡起附近所有未种植的鸡蛋。使用手中的鸡蛋会将其放入你的仓库中。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -386,16 +386,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoRetrieveEgg
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: retrieve_egg
+  - type: Sprite
+    state: retrieve_egg
 
 - type: entity
   id: ActionXenoThrowParasite
   parent: ActionXenoBase
-  name: Carrier's Bond
-  description: Retrieves a child from your storage if you have an empty hand. Using this on a child on the ground will pickup all nearby children. Targeting a tile with a child in hand will throw it up to 4 tiles away, where the child will be stunned for 5 seconds. Using a child in hand will add it to your storage. [color=green]Children won't die due to time while you hold or carry them.[/color]
+  name: 携带者之羁绊
+  description: 如果空着手，就从你的储物空间中取回一个孩子。对地面上的孩子使用此物，会拾取附近所有孩子。手中拿着孩子时瞄准一个格子，会将其扔到最远4格外，孩子会在那里眩晕5秒。使用手中的孩子，会将其加入你的储物空间。[color=green]当你手持或携带孩子时，孩子不会因时间流逝而死亡。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -416,16 +416,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoThrowParasite
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: throw_parasite
+  - type: Sprite
+    state: throw_parasite
 
 - type: entity
   id: ActionXenoParasiteReserve
   parent: ActionXenoBase
-  name: Set Child Reserve
-  description: Sets your child Reserves. Observers cannot join as a stored child if your children stored is less than or equal to your reserve.
+  name: 设置子级预留
+  description: 设置您的子级预留。如果已存储的子级数小于或等于您的预留数，观察者不能作为已存储子级加入。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -441,15 +441,15 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoSetParasiteReserve
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: reserve_parasite
+  - type: Sprite
+    state: reserve_parasite
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoManageHive
-  name: Manage The Hive
+  name: 管理蜂巢
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -465,8 +465,8 @@
 - type: entity
   id: ActionXenoDodge
   parent: ActionXenoBase
-  name: Dodge (200)
-  description: Gain a speed boost for 15 seconds and move through allies and enemies unimpeded. Your speed is doubled near standing enemies.
+  name: 闪避（200）
+  description: 获得持续15秒的速度提升，并可无阻碍地穿过友军和敌人。在静止的敌人附近时，你的速度翻倍。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -484,8 +484,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoBurrow
-  name: Burrow
-  description: Burrow underground preventing you from getting hit from all sources. Once burrowed click a tile to move to it and resurface after a doafter that depends on distance.
+  name: 钻地
+  description: 钻入地下，使你免受所有来源的攻击。钻入后，点击一个地块即可移动到该处，并在一段取决于距离的动作延迟后重新浮出地面。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -507,16 +507,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoBurrow
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: burrow
+  - type: Sprite
+    state: burrow
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoSoak
-  name: Soak (20)
-  description: Soak in damage for 6 seconds. If you take 140 damage or higher, you regen 75 health and your tail slam gets refreshed.
+  name: 吸收（20）
+  description: 持续吸收伤害6秒。若你受到140点或更高伤害，你回复75点生命值，且你的尾击会刷新。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -533,14 +533,14 @@
 - type: entity
   parent: ActionXenoSoak
   id: ActionXenoCrusherSoak
-  name: Soak (20)
-  description: Brace yourself for incoming damage. If you absorb 240 damage within 6 seconds, heal 120 health and reset your tail stab cooldown. [color=red]If the threshold is not reached, the effect expires with no reward.[/color]
+  name: 吸收（20）
+  description: 做好准备承受来袭伤害。若你在6秒内吸收240点伤害，则恢复120点生命值并重置你的尾刺冷却。 [color=red]若未达到该阈值，效果将结束且不会获得奖励。[/color]
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoEmpower
-  name: Empower (50)
-  description: On first activation it, gain a small amount of shield. After 6 seconds or using it again, get empowered based on surrounding enemies (max 6), gaining shield from each. If you empowered from at least 3 targets, you become Super-Empowered, gaing additional damage on melee attacks, and changing how some of your other abilities work.
+  name: 强化（50）
+  description: 首次激活时，获得少量护盾。6秒后或再次使用后，根据周围敌人（最多6个）获得强化，每个敌人都会为你提供护盾。若你从至少3个目标处获得强化，你将进入超级强化状态，近战攻击获得额外伤害，并改变你其他一些技能的效果。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -556,16 +556,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoEmpower
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: rav_empower
+  - type: Sprite
+    state: rav_empower
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoGenerateEggs
-  name: Generate Eggs (50)
-  description: Generate an egg every 30 seconds, which goes into your storage. [color=cyan]Consumes 15 plasma every 2 seconds.[/color]
+  name: 生成蛋（50）
+  description: 每30秒生成一个蛋，自动存入你的存储中。[color=cyan]每2秒消耗15点等离子体。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -580,16 +580,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoGenerateEggs
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: lay_egg
+  - type: Sprite
+    state: lay_egg
 
 - type: entity
   id: ActionXenoSelfImmolate
   parent: ActionXenoBase
-  name: Self-Immolate (50)
-  description: Ignite yourself and build heat for Heatshield abilities.
+  name: 自焚（50）
+  description: 点燃自身并积攒热量，以供热盾技能使用。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -608,8 +608,8 @@
 - type: entity
   id: ActionXenoThermoregulation
   parent: ActionXenoBase
-  name: Thermoregulation (40)
-  description: Convert active flames into a short burst of speed, then extinguish yourself.
+  name: 体温调节（40）
+  description: 将活跃的火焰转化为短暂的速度爆发，然后熄灭自身。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -628,8 +628,8 @@
 - type: entity
   id: ActionXenoStoreAcid
   parent: ActionXenoBase
-  name: Store Acid (150)
-  description: Store an acid charge, lowering your armor until the charge is spent to hasten an offensive acid ability.
+  name: 储存酸液（150）
+  description: 储存一份酸液充能，降低你的护甲，直到该充能被消耗，以加速一项进攻性酸液技能。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -648,8 +648,8 @@
 - type: entity
   id: ActionXenoEncasedPlates
   parent: ActionXenoBase
-  name: Encased Plates
-  description: Toggle a slower defensive stance with stronger frontal plates.
+  name: 包覆装甲板
+  description: 切换至一种移动更缓慢、正面装甲板更坚固的防御姿态。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -666,8 +666,8 @@
 - type: entity
   id: ActionXenoReflectiveShield
   parent: ActionXenoBase
-  name: Reflective Shield
-  description: Brace your plates to reflect incoming bullets for a short time.
+  name: 反射护盾
+  description: 架起你的装甲板，在短时间内反射来袭的子弹。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -685,8 +685,8 @@
 - type: entity
   id: ActionXenoSelectChemical
   parent: ActionXenoBase
-  name: Select Chemical
-  description: Select the chemical produced by your alchemist glands.
+  name: 选择化学物质
+  description: 选择由你的炼金术士腺体产生的化学物质。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -702,8 +702,8 @@
 - type: entity
   id: ActionXenoProduceChemical
   parent: ActionXenoBase
-  name: Produce Chemical (50)
-  description: Convert plasma into the selected alchemical stockpile.
+  name: 生产化学品（50）
+  description: 将等离子体转化为选定的炼金储备。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -722,8 +722,8 @@
 - type: entity
   id: ActionXenoRemoveChemical
   parent: ActionXenoBase
-  name: Purge Chemical
-  description: Purge the selected alchemical stockpile.
+  name: 清除化学品
+  description: 清除选中的炼金库存。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -739,8 +739,8 @@
 - type: entity
   id: ActionXenoCarrionMantle
   parent: ActionXenoBase
-  name: Carrion Mantle
-  description: Spend flesh resin to mantle yourself or a hivemate in hardened carrion.
+  name: 腐肉披风
+  description: 消耗血肉树脂，将自身或一位巢友裹入硬化腐肉中。
   components:
   - type: Action
     itemIconStyle: NoItem

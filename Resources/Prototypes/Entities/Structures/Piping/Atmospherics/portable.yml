@@ -1,8 +1,8 @@
 - type: entity
   id: PortableScrubber
   parent: [BaseMachinePowered, SmallConstructibleMachine, StructureWheeled, BaseSmallConstructibleMachineDestructible]
-  name: portable scrubber
-  description: It scrubs, portably!
+  name: 便携式洗涤器 | portable scrubber
+  description: 它能便携地擦洗！ | It scrubs, portably!
   components:
   - type: Transform
     anchored: false
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.4
         density: 100
         mask:
@@ -40,8 +39,7 @@
       volume: 1250
   - type: NodeContainer
     nodes:
-      port:
-        !type:PortablePipeNode
+      port: !type:PortablePipeNode
         nodeGroupID: Pipe
         rotationsEnabled: false
         volume: 1
@@ -56,8 +54,8 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
   - type: PortableScrubberVisuals
     idleState: icon
     runningState: icon-running
@@ -75,8 +73,7 @@
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -89,8 +86,8 @@
 - type: entity
   id: SpaceHeater
   parent: [BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible]
-  name: space heater
-  description: A bluespace technology device that alters local temperature. Commonly referred to as a "Space Heater".
+  name: 太空加热器 | space heater
+  description: 一种改变局部温度的蓝空间技术装置。通常被称为“太空加热器”。 | A bluespace technology device that alters local temperature. Commonly referred to as a "Space Heater".
   suffix: Unanchored
   components:
   - type: StationAiWhitelist
@@ -103,8 +100,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.15,-0.35,0.15,0.5"
         density: 100
         mask:
@@ -124,16 +120,16 @@
     - state: sheaterOff
       map: ["enum.SpaceHeaterVisualLayers.Main"]
     - state: sheaterPanelOpen
-      map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.SpaceHeaterVisuals.State:
         SpaceHeaterVisualLayers.Main:
-          Off: { state: sheaterOff }
-          StandBy: { state: sheaterStandby }
-          Heating: { state: sheaterHeat }
-          Cooling: { state: sheaterCool }
+          Off: {state: sheaterOff}
+          StandBy: {state: sheaterStandby}
+          Heating: {state: sheaterHeat}
+          Cooling: {state: sheaterCool}
   - type: Machine
     board: SpaceHeaterMachineCircuitBoard
   - type: WiresPanel
@@ -151,8 +147,7 @@
     atmospheric: true
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:PlaySoundBehavior

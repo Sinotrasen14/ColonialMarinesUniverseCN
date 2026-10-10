@@ -1,15 +1,14 @@
-﻿- type: entity
-  parent: [ BaseStructure, StructureHealthBarrier ]
+- type: entity
+  parent: [BaseStructure, StructureHealthBarrier]
   id: BaseFenceMetal
-  name: chain link fence
-  description: A metal piece of fencing cordoning off something likely very important.
+  name: 铁丝网围栏 | chain link fence
+  description: 一块金属围栏，用来隔离很可能非常重要的东西。 | A metal piece of fencing cordoning off something likely very important.
   abstract: true
   components:
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Weapons/grille_hit.ogg"
+        path: "/Audio/Weapons/grille_hit.ogg"
   - type: Sprite
     sprite: Structures/Walls/fence.rsi
     drawdepth: WallTops
@@ -21,8 +20,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageBarrierNormal
-        !type:DamageTrigger
+    - trigger: &DamageBarrierNormal !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior
@@ -50,22 +48,19 @@
     lowVoltageNode: low
   - type: NodeContainer
     nodes:
-      high:
-        !type:CableDeviceNode
+      high: !type:CableDeviceNode
         nodeGroupID: HVPower
-      medium:
-        !type:CableDeviceNode
+      medium: !type:CableDeviceNode
         nodeGroupID: MVPower
-      low:
-        !type:CableDeviceNode
+      low: !type:CableDeviceNode
         nodeGroupID: Apc
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ElectrifiedVisuals.ShowSparks:
         enum.ElectrifiedLayers.Sparks:
-          True: { visible: True }
-          False: { visible: False }
+          true: {visible: true}
+          false: {visible: false}
   - type: AnimationPlayer
   - type: RCDDeconstructable
     cost: 2
@@ -75,8 +70,8 @@
 - type: entity
   parent: BaseFenceMetal
   id: FenceMetalBroken
-  name: broken chain link fence
-  description: Someone got real mad at an inanimate object.
+  name: 破损的链环围栏 | broken chain link fence
+  description: 有人对一个无生命的物体大发雷霆。 | Someone got real mad at an inanimate object.
   components:
   - type: Sprite
     layers:
@@ -91,8 +86,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.10,-0.5,0.10,0.5"
         density: 1000
         mask:
@@ -127,8 +121,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.10,-0.5,0.10,0.5"
         density: 1000
         mask:
@@ -168,8 +161,7 @@
     fixtures:
       # needs two shapes to properly handle a triangle corner without weirdness
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.5"
         density: 1000
         mask:
@@ -177,8 +169,7 @@
         layer:
         - TableLayer
       fix2:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.1,-0.1,0.1"
         density: 1000
         mask:
@@ -214,8 +205,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.5,0.1,0.0"
         density: 1000
         mask:
@@ -235,8 +225,8 @@
 - type: entity
   parent: BaseFenceMetal
   id: FenceMetalGate
-  name: chain link fence gate
-  description: You could use the door instead of vaulting over--if you're a COWARD, that is.
+  name: 铁丝网门 | chain link fence gate
+  description: 你可以用门，而不是翻越过去——如果你是胆小鬼的话。 | You could use the door instead of vaulting over--if you're a COWARD, that is.
   components:
   - type: Sprite
     layers:
@@ -244,14 +234,13 @@
       map: ["enum.DoorVisualLayers.Base"]
     - state: electrified
       sprite: Effects/electricity.rsi
-      map: [ "enum.ElectrifiedLayers.Sparks" ]
+      map: ["enum.ElectrifiedLayers.Sparks"]
       shader: unshaded
       visible: false
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.1,0.5,0.1"
         density: 1000
         mask:

@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseWallmountCabinet, StructureHealthContainerWeak ]
+  parent: [BaseWallmountCabinet, StructureHealthContainerWeak]
   id: ExtinguisherCabinet
-  name: extinguisher cabinet
-  description: A small wall mounted cabinet designed to hold a fire extinguisher.
+  name: 灭火器柜 | extinguisher cabinet
+  description: 一种设计用于放置灭火器的小型壁挂式柜子。 | A small wall mounted cabinet designed to hold a fire extinguisher.
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/extinguisher-cabinet.rsi
@@ -23,8 +23,7 @@
           - SpraySafety
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 60
       behaviors:
       - !type:EmptyAllContainersBehaviour

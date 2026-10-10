@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   parent: ActionMarineBase
   id: ActionMarineToggleable
@@ -19,8 +19,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionToggleAmmo
-  name: Toggle Ammo Type
-  description: Switch the ammo type fired by this gun. [color=red]You can activate this by pressing the unique gun action keybind, Spacebar by default![/color]
+  name: 切换弹药类型
+  description: 切换这把枪发射的弹药类型。[color=red]你可以按下枪械专属动作键位来激活，默认是空格键！[/color]
   components:
   - type: Action
     useDelay: 0.25
@@ -36,8 +36,8 @@
 - type: entity
   parent: ActionMarineToggleable
   id: RMCActionToggleRecoil
-  name: Toggle Recoil Compensation
-  description: Removes all recoil when firing this gun.
+  name: 切换后坐力补偿
+  description: 使用此枪射击时消除所有后坐力。
   components:
   - type: Action
     useDelay: 0.25
@@ -53,8 +53,8 @@
 - type: entity
   parent: ActionMarineToggleable
   id: RMCActionToggleAutoFire
-  name: Toggle Auto Fire
-  description: Makes the gun automatically shoot a single shot towards a target every couple seconds.
+  name: 切换自动射击
+  description: 每隔几秒自动朝目标射击一次。
   components:
   - type: Action
     useDelay: 0.25
@@ -70,8 +70,8 @@
 - type: entity
   parent: ActionMarineToggleable
   id: RMCActionToggleFarSight
-  name: Toggle Far Sight
-  description: Lets you see slightly farther away.
+  name: 切换远视
+  description: 让你能看得稍微远一些。
   components:
   - type: Action
     useDelay: 0.25
@@ -87,8 +87,8 @@
 - type: entity
   parent: ActionMarineToggleable
   id: RMCActionToggleMotionDetector
-  name: Toggle Motion Detector
-  description: Periodically pings any unknown movement near you.
+  name: 切换运动探测器
+  description: 定期探测你附近的任何未知移动。
   components:
   - type: Action
     useDelay: 0.25
@@ -105,15 +105,15 @@
 - type: entity
   parent: RMCGuidebookActionSmartGunBase
   id: RMCGuidebookActionIFF
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: iff_toggle_on
+  - type: Sprite
+    state: iff_toggle_on
 
 - type: entity
   parent: RMCGuidebookActionSmartGunBase
   id: RMCGuidebookActionMotionDetector
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: motion_detector
+  - type: Sprite
+    state: motion_detector

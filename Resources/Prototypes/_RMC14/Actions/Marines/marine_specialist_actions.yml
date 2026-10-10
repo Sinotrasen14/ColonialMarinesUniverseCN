@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: ActionMarineToggleable
   id: RMCActionSpecialistBase
-  name: Spec Ability
+  name: 专精技能
   abstract: true
   components:
   - type: ActionBlockIfDevoured
@@ -9,8 +9,8 @@
 - type: entity
   parent: RMCActionSpecialistBase
   id: RMCActionGhilliePreparePosition
-  name: Prepare Position
-  description: Use the ghillie suit and the nearby environment to become near invisible.
+  name: 准备就位
+  description: 利用吉利服和周围环境来几乎隐身。
   components:
   - type: Action
     useDelay: 8
@@ -27,8 +27,8 @@
 - type: entity
   parent: RMCActionSpecialistBase
   id: RMCActionToggleCloak
-  name: Toggle Cloak
-  description: Enable or Disable your Thermal Cloak
+  name: 切换斗篷
+  description: 启用或禁用你的热能斗篷
   components:
   - type: Action
     useDelay: 0.5
@@ -44,8 +44,8 @@
 - type: entity
   parent: RMCActionSpecialistBase
   id: RMCActionFireShield
-  name: Activate Fire Shield
-  description: Activate your armor's FIREWALK protocol for a short duration.
+  name: 激活火焰护盾
+  description: 激活你护甲的“火焰行走”协议，持续一小段时间。
   components:
   - type: Action
     useDelay: 21 # 15 cooldown + 6 firewalk time from CMSS13

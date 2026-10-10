@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
   id: StationMapBroken
-  name: station map
-  description: A virtual map of the surrounding station.
+  name: 车站地图 | station map
+  description: 周围车站的虚拟地图。 | A virtual map of the surrounding station.
   suffix: Wall broken
   components:
   - type: Sprite
@@ -13,8 +13,7 @@
     - state: broken
   - type: Destructible
     thresholds:
-    - trigger: &DamageMachineFlimsy
-        !type:DamageTrigger
+    - trigger: &DamageMachineFlimsy !type:DamageTrigger
         damage: 50
       behaviors:
       - &SoundMetalGlassBreak !type:PlaySoundBehavior
@@ -30,10 +29,10 @@
 
 
 - type: entity
-  parent: [ BaseWallmountMachine, StructureHealthMachineWeak ]
+  parent: [BaseWallmountMachine, StructureHealthMachineWeak]
   id: StationMap
-  name: station map
-  description: A virtual map of the surrounding station.
+  name: 空间站地图 | station map
+  description: 周围空间站的虚拟地图。 | A virtual map of the surrounding station.
   suffix: Wall
   components:
   - type: WallMount
@@ -47,7 +46,7 @@
     - state: base
     - state: unshaded
       shader: unshaded
-      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
   - type: Icon
     sprite: Structures/Wallmounts/station-map.rsi
     state: base
@@ -55,11 +54,11 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: ContainerFill
     containers:
-      board: [ StationMapCircuitboard ]
+      board: [StationMapCircuitboard]
   - type: ContainerContainer
     containers:
       board: !type:Container
@@ -79,8 +78,7 @@
     damageModifierSet: GlassReinforcedMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - *SoundMetalGlassBreak
@@ -106,10 +104,10 @@
       - NoConsoleSound
 
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
   id: StationMapAssembly
-  name: station map assembly
-  description: A station map assembly.
+  name: 车站地图组件 | station map assembly
+  description: 车站地图组件。 | A station map assembly.
   components:
   - type: WallMount
     arc: 360
@@ -118,15 +116,15 @@
     offset: 0, -0.25
     layers:
     - state: frame0
-      map: [ "enum.ConstructionVisuals.Layer" ]
+      map: ["enum.ConstructionVisuals.Layer"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          assembly: { state: frame0 }
-          wired: { state: frame1 }
-          electronics: { state: frame2 }
+          assembly: {state: frame0}
+          wired: {state: frame1}
+          electronics: {state: frame2}
   - type: Construction
     graph: StationMap
     node: assembly

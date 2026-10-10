@@ -1,8 +1,8 @@
 - type: entity
   parent: ActionMarineBase
   id: CMActionToggleScope
-  name: Toggle Optics
-  description: Scope in or out with your optics.
+  name: 切换光学瞄具
+  description: 使用光学瞄具开镜或关镜。
   components:
   - type: Action
     useDelay: 0.25
@@ -17,8 +17,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionCycleZoomLevel
-  name: Cycle Zoom Level
-  description: Change the level of magnification of your optics.
+  name: 循环缩放级别
+  description: 更改你的光学设备的放大倍率。
   components:
   - type: Action
     useDelay: 0.25
@@ -36,8 +36,8 @@
 - type: entity
   parent: ActionMarineBase
   id: CMActionToggleScoutVision
-  name: Toggle the M42 scout sight
-  description: Allows you to see even in complete darkness.
+  name: 切换M42侦察瞄准镜
+  description: 即使在完全黑暗中也能看见。
   components:
   - type: Action
     useDelay: 0.25
@@ -56,8 +56,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionToggleExperimentalMesons
-  name: Toggle experimental meson goggles
-  description: Enables synthetic meson-assisted terrain imaging.
+  name: 切换实验性介子护目镜
+  description: 启用合成介子辅助地形成像。
   components:
   - type: Action
     useDelay: 0.25
@@ -76,8 +76,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionToggleSmartGunSight
-  name: Toggle the M56B head mounted sight
-  description: Allows you to see even in complete darkness.
+  name: 切换M56B头戴式瞄准器
+  description: 让你即使在完全黑暗中也能看见。
   components:
   - type: Action
     useDelay: 0.25
@@ -96,8 +96,8 @@
 - type: entity
   parent: ActionMarineToggleable
   id: RMCActionToggleIDLock
-  name: Toggle ID lock
-  description: Toggles the ID lock on the gun, allowing anyone to use it.
+  name: 切换ID锁
+  description: 切换枪械的ID锁，允许任何人使用。
   components:
   - type: Action
   - type: Sprite
@@ -111,8 +111,8 @@
 - type: entity
   parent: ActionMarineToggleable
   id: RMCActionToggleIFF
-  name: Toggle IFF
-  description: Toggles the IFF on the gun.
+  name: 切换敌我识别
+  description: 切换火炮上的敌我识别。
   components:
   - type: Action
   - type: Sprite
@@ -126,8 +126,8 @@
 - type: entity
   parent: ActionMarineBase
   id: CMActionToggleAttachable
-  name: Toggle Attachable
-  description: Toggle an attachable. If you're seeing this, someone forgot to set the description properly.
+  name: 切换可附着物
+  description: 切换一个可附着物。如果你看到这条信息，说明有人忘记正确设置描述。
   components:
   - type: Action
   - type: Sprite
@@ -141,8 +141,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionWhistle
-  name: Whistle
-  description: Blow the whistle.
+  name: 吹哨
+  description: 吹哨。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -158,8 +158,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionTelephone
-  name: Use Phone
-  description: Used to call another phone.
+  name: 使用电话
+  description: 用于呼叫另一部电话。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -178,8 +178,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionToggleMedhud
-  name: Toggle Medical HUD
-  description: Toggle the optical matrix of the medical HUD.
+  name: 切换医疗HUD
+  description: 切换医疗HUD的光学矩阵。
   components:
   - type: Action
     itemIconStyle: BigItem
@@ -189,8 +189,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionToggleSynthHud
-  name: Toggle Synthetic HUD
-  description: Toggle the integrated synthetic medical HUD.
+  name: 切换合成HUD
+  description: 切换集成式合成医疗HUD。
   components:
   - type: Action
     useDelay: 0.25
@@ -209,8 +209,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionToggleSechud
-  name: Toggle Security HUD
-  description: Toggle the optical matrix of the security HUD.
+  name: 切换安保HUD
+  description: 切换安保HUD的光学矩阵。
   components:
   - type: Action
     itemIconStyle: BigItem
@@ -220,8 +220,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionToggleWeldingGoggles
-  name: Toggle the welding goggles
-  description: Change the positions of the welding goggles on your forehead.
+  name: 切换焊接护目镜
+  description: 调整焊接护目镜在额头上的位置。
   components:
   - type: Action
     itemIconStyle: BigItem
@@ -231,8 +231,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionCycleVisor
-  name: Cycle helmet HUD
-  description: Cycles the currently active visor.
+  name: 切换头盔HUD
+  description: 循环切换当前激活的头盔面罩。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -248,8 +248,8 @@
 - type: entity
   parent: ActionMarineToggleable
   id: RMCActionSpotTarget
-  description: Hover your mouse over a target and press the unique action key to start spotting.
-  name: Spot Target
+  description: 将鼠标悬停在目标上，然后按下专属动作键即可开始标记。
+  name: 标记目标
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -264,8 +264,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionToggleLaser
-  name: Toggle Laser
-  description: Toggles your laser on or off
+  name: 切换激光
+  description: 开启或关闭你的激光
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -281,8 +281,8 @@
 - type: entity
   parent: ActionMarineToggleable
   id: RMCActionAimedShot
-  name: Aimed Shot
-  description: While in combat mode and hovering your mouse over a target, press the unique action key to begin aiming.
+  name: 瞄准射击
+  description: 在战斗模式下，将鼠标悬停在目标上时，按下特殊动作键即可开始瞄准。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -297,8 +297,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionVultureScope
-  name: M707 Vulture Scope
-  description: Use the Vulture's integrated scope.
+  name: M707 秃鹫瞄准镜
+  description: 使用秃鹫的集成瞄准镜。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -318,8 +318,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionVultureCycleZoomLevel
-  name: Cycle Vulture Scope Zoom
-  description: Change the Vulture scope's magnification.
+  name: 循环切换秃鹫瞄准镜缩放
+  description: 更改秃鹫瞄准镜的放大倍率。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -338,8 +338,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionVultureScopeForward
-  name: Scope Forward
-  description: Move the Vulture scope view further away.
+  name: 瞄准镜前移
+  description: 将秃鹫瞄准镜视野移得更远。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -355,8 +355,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionVultureScopeBackward
-  name: Scope Back
-  description: Move the Vulture scope view closer.
+  name: 瞄准镜拉远
+  description: 将Vulture瞄准镜视图拉近。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -372,8 +372,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionVultureScopeLeft
-  name: Scope Left
-  description: Move the Vulture scope view to the left.
+  name: 瞄准镜左移
+  description: 将秃鹫瞄准镜视图向左移动。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -389,8 +389,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionVultureScopeRight
-  name: Scope Right
-  description: Move the Vulture scope view to the right.
+  name: 瞄准镜向右
+  description: 将秃鹫瞄准镜视角向右移动。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -406,8 +406,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionVultureWindageLeft
-  name: Windage Left
-  description: Adjust the Vulture crosshair left.
+  name: 风偏向左
+  description: 将秃鹫准星向左调整。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -423,8 +423,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionVultureWindageRight
-  name: Windage Right
-  description: Adjust the Vulture crosshair right.
+  name: 风偏右
+  description: 将秃鹫准星向右调整。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -440,8 +440,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionVultureElevationUp
-  name: Elevation Up
-  description: Adjust the Vulture crosshair up.
+  name: 向上抬高
+  description: 将秃鹫准星向上调整。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -457,8 +457,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionVultureElevationDown
-  name: Elevation Down
-  description: Adjust the Vulture crosshair down.
+  name: 降低高度
+  description: 将秃鹰准星向下调整。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -474,8 +474,8 @@
 - type: entity
   parent: ActionMarineToggleable
   id: RMCActionVultureBreath
-  name: Breath Control
-  description: Hold your breath to temporarily stabilize the Vulture crosshair.
+  name: 呼吸控制
+  description: 屏住呼吸，暂时稳定秃鹫准星。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -491,8 +491,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionBroiler
-  name: Switch Tank
-  description: Switch to a different fuel tank.
+  name: 切换油箱
+  description: 切换到其他油箱。
   components:
   - type: Action
   - type: InstantAction
@@ -501,8 +501,8 @@
 - type: entity
   parent: ActionMarineBase
   id: RMCActionDismount
-  name: Dismount
-  description: Stop using the weapon
+  name: 卸下
+  description: 停止使用该武器
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -519,8 +519,8 @@
 - type: entity
   parent: BaseAction
   id: ActionToggleCBRNHelmet
-  name: Toggle CBRN Mask
-  description: Raise or lower the integrated MOPP mask to toggle full fire protection.
+  name: 切换核生化防护面罩
+  description: 升起或放下集成式核生化防护面罩，以切换全面防火保护。
   components:
   - type: Action
   - type: Sprite
@@ -529,4 +529,4 @@
       state: firewalk
       map: ["enum.ActionVisuals.Icon"]
   - type: InstantAction
-    event: !type:ToggleClothingEvent { }
+    event: !type:ToggleClothingEvent {}

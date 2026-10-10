@@ -1,6 +1,6 @@
-﻿- type: entity
+- type: entity
   abstract: true
-  parent: [ BaseWallmount, StructureHealthFurniture ]
+  parent: [BaseWallmount, StructureHealthFurniture]
   id: BaseWallmountBoard
   components:
   - type: Appearance
@@ -8,8 +8,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:PlaySoundBehavior
@@ -24,8 +23,8 @@
 - type: entity
   parent: BaseWallmountBoard
   id: NoticeBoard
-  name: notice board
-  description: Is there a job for a witcher?
+  name: 告示板 | notice board
+  description: 告示板上会有猎魔人的工作吗？ | Is there a job for a witcher?
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/noticeboard.rsi
@@ -54,10 +53,10 @@
     node: noticeBoard
 
 - type: entity
-  parent: [ BaseWallmountBoard, BasePaperLabelableVisualized ]
+  parent: [BaseWallmountBoard, BasePaperLabelableVisualized]
   id: PostBoard
-  name: post board
-  description: Apply paper directly to the boardhead.
+  name: 贴板 | post board
+  description: 将纸张直接贴到贴板上。 | Apply paper directly to the boardhead.
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/postboard.rsi

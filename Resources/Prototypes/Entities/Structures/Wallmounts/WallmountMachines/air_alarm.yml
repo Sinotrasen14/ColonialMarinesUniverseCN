@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseWallmountMachine, StructureHealthMachineWeak ]
+  parent: [BaseWallmountMachine, StructureHealthMachineWeak]
   id: AirAlarm
-  name: air alarm
-  description: An air alarm. Alarms... air?
+  name: 空气警报器 | air alarm
+  description: 空气警报器。警报……空气？ | An air alarm. Alarms... air?
   components:
   - type: StationAiWhitelist
   - type: Electrified
@@ -45,10 +45,10 @@
       Normal: alarm0
       Warning: alarm1
       Danger: alarm2
-    hideOnDepowered: [ "airAlarmState" ]
+    hideOnDepowered: ["airAlarmState"]
   - type: Tag
     tags:
-      - AirAlarm
+    - AirAlarm
   - type: AtmosDevice
   - type: AirAlarm
   - type: AtmosAlertsDevice
@@ -69,7 +69,7 @@
     access: [["Atmospherics"]]
   - type: ContainerFill
     containers:
-      board: [ AirAlarmElectronics ]
+      board: [AirAlarmElectronics]
   - type: ContainerContainer
     containers:
       board: !type:Container
@@ -90,8 +90,7 @@
     node: air_alarm
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -105,23 +104,23 @@
     - DeviceMonitoringAndControl
 
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
   id: AirAlarmAssembly
-  name: air alarm assembly
-  description: An air alarm. Doesn't look like it'll be alarming air any time soon.
+  name: 空气警报器组件 | air alarm assembly
+  description: 空气警报器。看起来它短时间内不会发出空气警报了。 | An air alarm. Doesn't look like it'll be alarming air any time soon.
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/air-alarm.rsi
     layers:
     - state: panel
-      map: [ "enum.ConstructionVisuals.Layer" ]
+      map: ["enum.ConstructionVisuals.Layer"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          assembly: { state: panel }
-          electronics: { state: panel }
+          assembly: {state: panel}
+          electronics: {state: panel}
   - type: Construction
     graph: AirAlarm
     node: assembly
@@ -129,8 +128,7 @@
     anchored: true
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior

@@ -1,14 +1,13 @@
 - type: entity
-  name: hydroponics tray
-  parent: [ BaseHydroponicsSoil, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible]
+  name: 水培盘 | hydroponics tray
+  parent: [BaseHydroponicsSoil, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible]
   id: hydroponicsTray
-  description: An interstellar-grade space farmplot allowing for rapid growth and selective breeding of crops. Just... keep in mind the space weeds.
+  description: 星际级太空农场种植盘，可实现作物的快速生长与选择性育种。只是……要留意太空杂草。 | An interstellar-grade space farmplot allowing for rapid growth and selective breeding of crops. Just... keep in mind the space weeds.
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.1"
         density: 190
         hard: true
@@ -20,51 +19,51 @@
   - type: Pullable
   - type: Sprite
     layers:
-      - sprite: Structures/Hydroponics/containers.rsi
-        state: hydrotray3
-      - sprite: Structures/Hydroponics/overlays.rsi
-        state: lowhealth3
-        map: [ "health_alert" ]
-        visible: false
-      - sprite: Structures/Hydroponics/overlays.rsi
-        state: lowwater3
-        map: [ "water_alert" ]
-        visible: false
-      - sprite: Structures/Hydroponics/overlays.rsi
-        state: lownutri3
-        map: [ "nutri_alert" ]
-        visible: false
-      - sprite: Structures/Hydroponics/overlays.rsi
-        state: alert3
-        map: [ "undefined_alert" ]
-        visible: false
-      - sprite: Structures/Hydroponics/overlays.rsi
-        state: harvest3
-        map: [ "harvest_alert" ]
-        visible: false
+    - sprite: Structures/Hydroponics/containers.rsi
+      state: hydrotray3
+    - sprite: Structures/Hydroponics/overlays.rsi
+      state: lowhealth3
+      map: ["health_alert"]
+      visible: false
+    - sprite: Structures/Hydroponics/overlays.rsi
+      state: lowwater3
+      map: ["water_alert"]
+      visible: false
+    - sprite: Structures/Hydroponics/overlays.rsi
+      state: lownutri3
+      map: ["nutri_alert"]
+      visible: false
+    - sprite: Structures/Hydroponics/overlays.rsi
+      state: alert3
+      map: ["undefined_alert"]
+      visible: false
+    - sprite: Structures/Hydroponics/overlays.rsi
+      state: harvest3
+      map: ["harvest_alert"]
+      visible: false
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.PlantTrayVisuals.HealthLight:
         health_alert:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PlantTrayVisuals.WaterLight:
         water_alert:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PlantTrayVisuals.NutritionLight:
         nutri_alert:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PlantTrayVisuals.AlertLight:
         undefined_alert:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PlantTrayVisuals.HarvestLight:
         harvest_alert:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: PlantTray
     drawWarnings: true
     wateringSound:
@@ -74,8 +73,7 @@
         variation: 0.20
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior

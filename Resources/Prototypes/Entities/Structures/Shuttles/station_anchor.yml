@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   id: StationAnchorBase
   abstract: true
-  name: station anchor
-  description: Prevents stations from moving.
+  name: 空间站锚点 | station anchor
+  description: 防止空间站移动。 | Prevents stations from moving.
   suffix: On
   placement:
     mode: AlignTileAny
@@ -31,14 +31,13 @@
     visuals:
       enum.PowerChargeVisuals.Active:
         unlit:
-          True: { visible: True }
-          False: { visible: False }
+          true: {visible: true}
+          false: {visible: false}
   - type: Appearance
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.7,-0.7,0.7,0.7"
         density: 190
         mask:
@@ -77,8 +76,7 @@
     damageModifierSet: PlasteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 400
       behaviors:
       - !type:PlaySoundBehavior

@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   id: FatExtractor
-  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
-  name: lipid extractor
-  description: Safely and efficiently extracts excess fat from a subject.
+  parent: [BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible]
+  name: 脂质提取器 | lipid extractor
+  description: 安全有效地从对象中提取多余脂肪。 | Safely and efficiently extracts excess fat from a subject.
   components:
   - type: FatExtractor
     minHungerThreshold: Peckish
@@ -41,31 +41,31 @@
     visuals:
       enum.StorageVisuals.Open:
         enum.StorageVisualLayers.Door:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
       enum.FatExtractorVisuals.Processing:
         enum.StorageVisualLayers.Door:
-          True: { state: fat_door_on }
-          False: { state: fat_door_off }
+          true: {state: fat_door_on}
+          false: {state: fat_door_off}
         enum.FatExtractorVisualLayers.Smoke:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         enum.FatExtractorVisualLayers.Stack:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         enum.FatExtractorVisualLayers.Light:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PowerDeviceVisuals.Powered:
         enum.FatExtractorVisualLayers.Light:
-          False: { visible: false }
+          false: {visible: false}
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.StorageVisuals.HasContents:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { state: fat_yellow }
-          False: { state: fat_red }
+          true: {state: fat_yellow}
+          false: {state: fat_red}
   - type: Construction
     containers:
     - machine_board
@@ -73,7 +73,7 @@
     - entity_storage
   - type: EmptyOnMachineDeconstruct
     containers:
-     - entity_storage
+    - entity_storage
   - type: Damageable
     damageModifierSet: SteelMod
   - type: Destructible

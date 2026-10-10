@@ -1,8 +1,8 @@
 - type: entity
   id: ActionVehicleToggleView
   parent: BaseAction
-  name: Toggle View
-  description: Switch between the interior and exterior view.
+  name: 切换视图
+  description: 在室内和室外视角之间切换。
   components:
   - type: InstantAction
     event: !type:VehicleToggleViewActionEvent
@@ -18,8 +18,8 @@
 
 - type: entity
   id: ActionVehicleDeploy
-  name: Deploy Vehicle
-  description: Deploy or retract the vehicle.
+  name: 部署车辆
+  description: 展开或收回车辆。
   components:
   - type: InstantAction
     event: !type:VehicleDeployActionEvent
@@ -29,8 +29,8 @@
 - type: entity
   id: ActionVehicleLock
   parent: BaseAction
-  name: Toggle Vehicle Lock
-  description: Locks or unlocks vehicle entry doors.
+  name: 切换车辆锁
+  description: 锁上或解锁车辆进门门。
   components:
   - type: InstantAction
     event: !type:VehicleLockActionEvent
@@ -48,8 +48,8 @@
 
 - type: entity
   id: ActionVehicleSelectHardpoint
-  name: Select Hardpoint
-  description: Select this hardpoint for firing.
+  name: 选择挂点
+  description: 选择这个挂载来开火。
   components:
   - type: InstantAction
     event: !type:VehicleHardpointSelectActionEvent
@@ -61,8 +61,8 @@
 - type: entity
   id: ActionVehicleMaintenance
   parent: BaseAction
-  name: Toggle maintenance mode
-  description: Shut down the engine and lock the weapons to open maintenance panels, or close the panels to return to combat. Open panels leave the tank vulnerable.
+  name: 切换维护模式
+  description: 关闭引擎并锁定武器以打开维修面板，或者关闭面板返回战斗。打开的面板会让坦克变得脆弱。
   components:
   - type: Action
     itemIconStyle: BigItem

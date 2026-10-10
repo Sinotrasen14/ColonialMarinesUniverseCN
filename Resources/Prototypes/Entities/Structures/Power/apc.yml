@@ -1,9 +1,9 @@
 - type: entity
-  parent: [ BaseWallmount, StructureHealthMachineWeak ]
-  categories: [ HideSpawnMenu ]
+  parent: [BaseWallmount, StructureHealthMachineWeak]
+  categories: [HideSpawnMenu]
   id: BaseAPC
   name: APC
-  description: A control terminal for the area's electrical systems.
+  description: 该地区电力系统的控制终端。 | A control terminal for the area's electrical systems.
   placement:
     mode: SnapgridCenter
   components:
@@ -52,11 +52,9 @@
   - type: NodeContainer
     examinable: true
     nodes:
-      input:
-        !type:CableDeviceNode
+      input: !type:CableDeviceNode
         nodeGroupID: MVPower
-      output:
-        !type:CableDeviceNode
+      output: !type:CableDeviceNode
         nodeGroupID: Apc
   - type: PowerMonitoringDevice
     group: APC
@@ -100,8 +98,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -134,11 +131,11 @@
 
 # APC under construction
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
-  categories: [ HideSpawnMenu ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
+  categories: [HideSpawnMenu]
   id: APCFrame
-  name: APC frame
-  description: A control terminal for the area's electrical systems, lacking the electronics.
+  name: APC框架 | APC frame
+  description: 该区域电气系统的控制终端，缺少电子设备。 | A control terminal for the area's electrical systems, lacking the electronics.
   placement:
     mode: SnapgridCenter
   components:
@@ -150,8 +147,7 @@
     node: apcFrame
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior

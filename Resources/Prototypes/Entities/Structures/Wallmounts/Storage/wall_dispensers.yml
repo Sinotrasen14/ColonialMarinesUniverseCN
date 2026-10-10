@@ -8,22 +8,19 @@
   - type: Appearance
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTypeTrigger
+    - trigger: !type:DamageTypeTrigger
         damageType: Heat
         damage: 5
       behaviors:
       - !type:SolutionExplosionBehavior
         solution: tank
-    - trigger:
-        !type:DamageTypeTrigger
+    - trigger: !type:DamageTypeTrigger
         damageType: Piercing
         damage: 5
       behaviors:
       - !type:SolutionExplosionBehavior
         solution: tank
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 20
       behaviors:
       - !type:SpillBehavior
@@ -40,8 +37,8 @@
 - type: entity
   parent: BaseDispenser
   id: CleanerDispenser
-  name: space cleaner dispenser
-  description: Wallmount Space Cleaner dispenser.
+  name: 太空清洁剂分配器 | space cleaner dispenser
+  description: 壁挂式太空清洁剂分配器。 | Wallmount Space Cleaner dispenser.
   components:
   - type: Sprite
     layers:
@@ -61,8 +58,8 @@
 - type: entity
   parent: BaseDispenser
   id: FuelDispenser
-  name: fuel dispenser
-  description: Wallmount Fuel dispenser.
+  name: 燃油加油机 | fuel dispenser
+  description: 壁挂式燃油加油机。 | Wallmount Fuel dispenser.
   components:
   - type: Sprite
     layers:

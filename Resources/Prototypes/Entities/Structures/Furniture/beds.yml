@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.05"
         density: 190
         mask:
@@ -42,15 +41,14 @@
   - type: Pullable
 
 - type: entity
-  parent: [ BaseBed, StructureHealthFurniture ]
+  parent: [BaseBed, StructureHealthFurniture]
   id: Bed
-  name: bed
-  description: This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
+  name: 床 | bed
+  description: 这是用来躺卧、睡觉或束缚的。在此休息可提供极慢的愈合。 | This is used to lie in, sleep in or strap on. Resting here provides extremely slow healing.
   components:
   - type: Destructible
     thresholds:
-    - trigger: &DamageFurnitureNormal
-        !type:DamageTrigger
+    - trigger: &DamageFurnitureNormal !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:PlaySoundBehavior
@@ -65,8 +63,8 @@
 - type: entity
   parent: Bed
   id: MedicalBed
-  name: medical bed
-  description: A hospital bed for patients to recover in. Resting here provides fairly slow healing.
+  name: 医疗床 | medical bed
+  description: 一张供病人康复用的医疗床。在此休息可提供相当缓慢的治疗。 | A hospital bed for patients to recover in. Resting here provides fairly slow healing.
   components:
   - type: Sprite
     state: bed-MED
@@ -85,10 +83,10 @@
   - type: AmbientMusicMarkerMedical
 
 - type: entity
-  parent: [ BaseBed, StructureHealthFurniture ]
+  parent: [BaseBed, StructureHealthFurniture]
   id: DogBed
-  name: dog bed
-  description: A comfy-looking dog bed. You can even strap your pet in, in case the gravity turns off.
+  name: 狗床 | dog bed
+  description: 一个看起来很舒服的狗床。你甚至可以把宠物绑在里面，以防重力消失。 | A comfy-looking dog bed. You can even strap your pet in, in case the gravity turns off.
   components:
   - type: Sprite
     state: dogbed
@@ -118,8 +116,8 @@
 - type: entity
   parent: Bed
   id: Mattress
-  name: mattress
-  description: Better sleep in that then on the floor i guess.
+  name: 床垫 | mattress
+  description: 睡在那上面总比睡地板强吧，我想。 | Better sleep in that then on the floor i guess.
   components:
   - type: Sprite
     state: mattress
@@ -127,10 +125,10 @@
     damageModifierSet: PlasticMod
 
 - type: entity
-  parent: [ BaseBed, StructureHealthFurniture ]
+  parent: [BaseBed, StructureHealthFurniture]
   id: WebBed
-  name: web bed
-  description: You got webbed.
+  name: 网床 | web bed
+  description: 你被网住了。 | You got webbed.
   components:
   - type: Damageable
     damageModifierSet: ThreadMod
@@ -152,10 +150,10 @@
     node: bed
 
 - type: entity
-  parent: [ BaseBed,StructureHealthFurnitureStrong ]
+  parent: [BaseBed, StructureHealthFurnitureStrong]
   id: PsychBed
-  name: psychologist bed
-  description: An upholstered bed for the psychological care of patients.
+  name: 心理医生床 | psychologist bed
+  description: 用于心理护理患者的高级软包床。 | An upholstered bed for the psychological care of patients.
   components:
   - type: Sprite
     state: psychbed
@@ -167,8 +165,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - *SoundWoodDestroy

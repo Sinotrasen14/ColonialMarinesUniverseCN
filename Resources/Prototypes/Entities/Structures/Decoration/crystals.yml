@@ -1,15 +1,15 @@
 - type: entity
   abstract: true
-  parent: [ BaseStructure, StructureHealthFurnitureWeak ]
+  parent: [BaseStructure, StructureHealthFurnitureWeak]
   id: BaseCrystalStalagmite
-  name: crystal
-  description: An outcrop of jagged crystals.
+  name: 水晶 | crystal
+  description: 一块嶙峋水晶的露头。 | An outcrop of jagged crystals.
   components:
   - type: Sprite
     layers:
     - sprite: Structures/Decoration/crystal.rsi
       state: big0
-      map: [ "enum.DamageStateVisualLayers.Base" ]
+      map: ["enum.DamageStateVisualLayers.Base"]
   - type: RandomSprite
     available:
     - enum.DamageStateVisualLayers.Base:
@@ -33,8 +33,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 60
         mask:
@@ -51,8 +50,7 @@
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageFurnitureWeak
-        !type:DamageTrigger
+    - trigger: &DamageFurnitureWeak !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
@@ -134,17 +132,17 @@
   id: CrystalBlack
   suffix: black
   components:
-    - type: Sprite
-      color: "#363636"
-    - type: PointLight
-      color: "#363636"
-    - type: Destructible
-      thresholds:
-      - trigger: *DamageFurnitureWeak
-        behaviors:
-        - !type:SpawnEntitiesBehavior
-          spawn:
-            ShardCrystalBlack: *Min1Max2
+  - type: Sprite
+    color: "#363636"
+  - type: PointLight
+    color: "#363636"
+  - type: Destructible
+    thresholds:
+    - trigger: *DamageFurnitureWeak
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ShardCrystalBlack: *Min1Max2
 
 - type: entity
   parent: BaseCrystalStalagmite

@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseStatue
   id: XenoWardingTower
-  name: xeno warding tower
+  name: 异界守护塔 | xeno warding tower
   placement:
     mode: SnapgridCenter
     snap:
@@ -10,36 +10,33 @@
   - type: RangedDamageSound
     soundGroups:
       Brute:
-        collection:
-          MeatBulletImpact
+        collection: MeatBulletImpact
     soundTypes:
       Heat:
-        collection:
-          MeatLaserImpact
+        collection: MeatLaserImpact
   - type: InteractionOutline
   - type: Sprite
     sprite: Structures/Specific/xeno_building.rsi
     layers:
-      - state: wardingtower
-      - state: wardingtower-unshaded
-        shader: unshaded
+    - state: wardingtower
+    - state: wardingtower-unshaded
+      shader: unshaded
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
-          - FullTileMask
+        - FullTileMask
         layer:
-          - WallLayer
+        - WallLayer
         density: 1000
 
 - type: entity
   parent: XenoWardingTower
   id: CarpStatue
-  name: carp statue
-  description: A statue of one of the brave carp that got us where we are today. Made with real teeth!
+  name: 鲤鱼雕像 | carp statue
+  description: 一座勇敢鲤鱼雕像，正是它成就了我们的今天。用真牙制成！ | A statue of one of the brave carp that got us where we are today. Made with real teeth!
   components:
   - type: Sprite
     noRot: true
@@ -54,8 +51,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.35,0.35,0.35"
         density: 60
         mask:
@@ -71,7 +67,7 @@
   parent: CarpStatue
   id: CarpStatueEmpty
   suffix: Empty
-  description: A lump of precious metals, soon to be a brilliant carp statue.
+  description: 一块贵金属，即将成为一尊璀璨的鲤鱼雕像。 | A lump of precious metals, soon to be a brilliant carp statue.
   components:
   - type: Sprite
     layers:
@@ -83,7 +79,7 @@
   parent: CarpStatue
   id: CarpStatueEyes
   suffix: Eyes
-  description: A statue of one of the brave carp that got us where we are today. This one needs a dentist...
+  description: 一尊勇敢鲤鱼雕像，正是它们成就了我们的今天。这一条需要看牙医…… | A statue of one of the brave carp that got us where we are today. This one needs a dentist...
   components:
   - type: Sprite
     layers:

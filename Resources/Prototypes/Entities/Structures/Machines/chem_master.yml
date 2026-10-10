@@ -1,8 +1,8 @@
 - type: entity
   id: ChemMaster
-  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
+  parent: [BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible]
   name: ChemMaster 4000
-  description: An industrial grade chemical manipulator with pill and bottle production included.
+  description: 工业级化学操作器，包含药丸和瓶子生产功能。 | An industrial grade chemical manipulator with pill and bottle production included.
   placement:
     mode: SnapgridCenter
   components:
@@ -31,8 +31,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.4,0.25,0.4"
         density: 190
         mask:
@@ -61,8 +60,8 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   # Machine / Construction stuff
   - type: WiresPanel
   - type: Machine

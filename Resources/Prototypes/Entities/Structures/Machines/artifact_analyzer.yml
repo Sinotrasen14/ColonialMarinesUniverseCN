@@ -1,8 +1,8 @@
 - type: entity
   id: MachineArtifactAnalyzer
-  parent: [ BaseMachinePowered, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible ]
-  name: artifact analyzer
-  description: A platform capable of performing analysis on various types of artifacts.
+  parent: [BaseMachinePowered, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible]
+  name: 工件分析器 | artifact analyzer
+  description: 一个能够对各种类型的工件进行分析的平台。 | A platform capable of performing analysis on various types of artifacts.
   components:
   - type: Sprite
     noRot: true
@@ -25,16 +25,14 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.35,0.35,0.35"
         mask:
         - Impassable
         - HighImpassable
         - MidImpassable
       fix2:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.35,-0.35,0.35,0.35"
         density: 190
         mask:
@@ -44,7 +42,7 @@
         - MidImpassable
         - LowImpassable
         - BulletImpassable
-        hard: False
+        hard: false
   - type: Destructible
     thresholds:
     - trigger: !type:DamageTrigger
@@ -68,7 +66,7 @@
   - type: DeviceList
   - type: DeviceLinkSink
     ports:
-      - ArtifactAnalyzerReceiver
+    - ArtifactAnalyzerReceiver
   - type: Machine
     board: ArtifactAnalyzerMachineCircuitboard
   - type: PointLight
@@ -84,14 +82,14 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
 
 - type: entity
   id: MachineArtifactCrusher
-  parent: [ ConstructibleMachine, BaseMachinePowered, BaseConstructibleMachineDestructible ]
-  name: artifact crusher
-  description: Best not to let your fingers get stuck...
+  parent: [ConstructibleMachine, BaseMachinePowered, BaseConstructibleMachineDestructible]
+  name: 神器粉碎机 | artifact crusher
+  description: 最好不要让手指卡进去…… | Best not to let your fingers get stuck...
   components:
   - type: ArtifactCrusher
     crushingWhitelist:
@@ -121,8 +119,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 50
         mask:
@@ -150,12 +147,12 @@
     visuals:
       enum.ArtifactCrusherVisuals.Crushing:
         pistonlayer:
-          True: {state: piston-push}
-          False: {state: piston}
+          true: {state: piston-push}
+          false: {state: piston}
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: EntityStorageVisuals
     stateDoorClosed: door-closed
     openDrawDepth: 0
@@ -177,8 +174,8 @@
 - type: entity
   parent: MachineArtifactCrusher
   id: MachineArtifactCrusherXenoborg
-  name: body crusher
-  description: Best not to let your head get stuck...
+  name: 身体粉碎机 | body crusher
+  description: 最好不要让你的头卡住…… | Best not to let your head get stuck...
   components:
   - type: Sprite
     sprite: Structures/Machines/body_crusher.rsi

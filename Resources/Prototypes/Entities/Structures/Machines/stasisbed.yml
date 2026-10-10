@@ -1,8 +1,8 @@
 - type: entity
   id: StasisBed
-  name: stasis bed
-  parent: [ BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible ]
-  description: A bed that massively slows down the patient's metabolism and prevents bodily decay, allowing more time to administer a proper treatment for stabilization.
+  name: 停滞床 | stasis bed
+  parent: [BaseMachinePowered, ConstructibleMachine, BaseConstructibleMachineDestructible]
+  description: 一张能大幅减缓病人新陈代谢并防止身体腐烂的床，从而为实施适当的稳定治疗争取更多时间。 | A bed that massively slows down the patient's metabolism and prevents bodily decay, allowing more time to administer a proper treatment for stabilization.
   components:
   - type: StasisBed
   - type: AntiRotOnBuckle
@@ -23,8 +23,8 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         unlit:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Appearance
   - type: ApcPowerReceiver
     powerLoad: 1000
@@ -47,8 +47,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.05"
         density: 190
         mask:

@@ -1,8 +1,8 @@
 - type: entity
   parent: [BaseStructure, StructureWheeled, BaseMajorContraband]
   id: NuclearBomb
-  name: nuclear fission explosive
-  description: You probably shouldn't stick around to see if this is armed.
+  name: 核裂变爆炸物 | nuclear fission explosive
+  description: 你大概不该留下来看看它是否已解除保险。 | You probably shouldn't stick around to see if this is armed.
   components:
   - type: Transform
     anchored: true
@@ -33,28 +33,27 @@
     visuals:
       enum.HolidayVisuals.Holiday:
         christmas:
-          festive: { visible: true }
+          festive: {visible: true}
         pride:
-          pride: { visible: true }
+          pride: {visible: true}
       enum.NukeVisuals.Deployed:
         enum.NukeVisualLayers.Base:
-          False: { state: nuclearbomb_base }
-          True:  { state: nuclearbomb_deployed }
+          false: {state: nuclearbomb_base}
+          true: {state: nuclearbomb_deployed}
         enum.NukeVisualLayers.Unlit:
-          True:  { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.NukeVisuals.State:
         enum.NukeVisualLayers.Unlit:
-          Idle:        { state: nuclearbomb_deployed_unlit }
-          Armed:       { state: nuclearbomb_timing }
-          YoureFucked: { state: nuclearbomb_exploding }
+          Idle: {state: nuclearbomb_deployed_unlit}
+          Armed: {state: nuclearbomb_timing}
+          YoureFucked: {state: nuclearbomb_exploding}
   - type: Physics
     bodyType: Static
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 255 # Has "bluespace technology" to make it lighter, whatever that means. Don't mind the fact that this is lighter then a high capacity fuel tank.
         mask:
@@ -125,9 +124,9 @@
 - type: entity
   parent: StorageTankBig
   id: NuclearBombKeg
-  name: nuclear fission explosive
+  name: 核裂变爆炸物 | nuclear fission explosive
   suffix: keg
-  description: You probably shouldn't stick around to see if this is armed. It has a tap on the side.
+  description: 你大概不该留下来看看它是否已武装。它侧面有一个轻拍装置。 | You probably shouldn't stick around to see if this is armed. It has a tap on the side.
   components:
   - type: Transform
     anchored: false
@@ -140,7 +139,7 @@
       map: ["christmas"]
       visible: false
     - state: nuclearbomb_gay
-      map: [ "pride" ]
+      map: ["pride"]
       visible: false
   - type: Appearance
   - type: HolidayVisuals
@@ -153,16 +152,15 @@
     visuals:
       enum.HolidayVisuals.Holiday:
         christmas:
-          festive: { visible: true }
+          festive: {visible: true}
         pride:
-          pride: { visible: true }
+          pride: {visible: true}
   - type: Physics
     bodyType: Dynamic
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.45
         density: 255
         mask:

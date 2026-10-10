@@ -1,8 +1,8 @@
 # Devices which are not portable but don't link up to anything
 - type: entity
   id: AtmosDeviceFanTiny
-  name: tiny fan
-  description: A tiny fan, releasing a thin gust of air.
+  name: 小风扇 | tiny fan
+  description: 一个小风扇，吹出一阵微风。 | A tiny fan, releasing a thin gust of air.
   placement:
     mode: SnapgridCenter
   components:
@@ -16,20 +16,19 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
-            bounds: "-0.5,-0.5,0.5,0.5"
+        shape: !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
   - type: Airtight
     noAirWhenFullyAirBlocked: false
   - type: Clickable
   - type: Tag
     tags:
-      - SpreaderIgnore
+    - SpreaderIgnore
 
 - type: entity
   id: AtmosDeviceFanDirectional
-  name: directional fan
-  description: A thin fan, stopping the movement of gases across it.
+  name: 定向风扇 | directional fan
+  description: 一个薄型风扇，阻止气体在其间流动。 | A thin fan, stopping the movement of gases across it.
   placement:
     mode: SnapgridCenter
   components:
@@ -43,14 +42,13 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
-            bounds: "-0.48,-0.48,0.48,-0.40"
+        shape: !type:PhysShapeAabb
+          bounds: "-0.48,-0.48,0.48,-0.40"
   - type: Airtight
     noAirWhenFullyAirBlocked: false
     airBlockedDirection:
-      - South
+    - South
   - type: Clickable
   - type: Tag
     tags:
-      - SpreaderIgnore
+    - SpreaderIgnore

@@ -1,4 +1,4 @@
-﻿- type: entity
+- type: entity
   abstract: true
   id: CablePhysBase
   placement:
@@ -23,7 +23,7 @@
 
 - type: entity
   abstract: true
-  parent: [ CablePhysBase, StructureHealthContainerWeak ] # contains electricity :o)
+  parent: [CablePhysBase, StructureHealthContainerWeak]   # contains electricity :o)
   id: CableBase
   components:
   - type: Visibility
@@ -35,8 +35,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageContainerWeak
-        !type:DamageTrigger
+    - trigger: &DamageContainerWeak !type:DamageTrigger
         damage: 60
       behaviors:
       - !type:PlaySoundBehavior
@@ -61,8 +60,8 @@
 - type: entity
   parent: CableBase
   id: CableHV
-  name: HV power cable
-  description: An orange high voltage power cable.
+  name: 高压电力电缆 | HV power cable
+  description: 一根橙色高压电力电缆。 | An orange high voltage power cable.
   components:
   - type: Sprite
     sprite: Structures/Power/Cables/hv_cable.rsi
@@ -73,8 +72,7 @@
     state: hvcable_4
   - type: NodeContainer
     nodes:
-      power:
-        !type:CableNode
+      power: !type:CableNode
         nodeGroupID: HVPower
   - type: Cable
     cableDroppedOnCutPrototype: CableHVStack1
@@ -104,13 +102,13 @@
   suffix: uncuttable
   components:
   - type: Cable
-    cuttingQuality: null
+    cuttingQuality:
 
 - type: entity
   parent: CableBase
   id: CableMV
-  name: MV power cable
-  description: A medium voltage power cable.
+  name: 中压电力电缆 | MV power cable
+  description: 中压电力电缆。 | A medium voltage power cable.
   components:
   - type: Sprite
     sprite: Structures/Power/Cables/mv_cable.rsi
@@ -123,8 +121,7 @@
     state: mvcable_4
   - type: NodeContainer
     nodes:
-      power:
-        !type:CableNode
+      power: !type:CableNode
         nodeGroupID: MVPower
   - type: Cable
     cableDroppedOnCutPrototype: CableMVStack1
@@ -148,13 +145,13 @@
   suffix: uncuttable
   components:
   - type: Cable
-    cuttingQuality: null
+    cuttingQuality:
 
 - type: entity
   parent: CableBase
   id: CableApcExtension
-  name: LV power cable
-  description: A cable used to connect machines to an APC. #APCs aren't area defined anymore so need this cable to connect things to the APC. This description should be dynamic in future.
+  name: 低压电源线 | LV power cable
+  description: 用于将机器连接到APC的电缆。 | A cable used to connect machines to an APC. #APCs aren't area defined anymore so need this cable to connect things to the APC. This description should be dynamic in future.
   components:
   - type: Sprite
     color: Green
@@ -165,8 +162,7 @@
     state: lvcable_4
   - type: NodeContainer
     nodes:
-      power:
-        !type:CableNode
+      power: !type:CableNode
         nodeGroupID: Apc
   - type: PowerProvider
     voltage: Apc
@@ -192,14 +188,14 @@
   suffix: uncuttable
   components:
   - type: Cable
-    cuttingQuality: null
+    cuttingQuality:
 
 # Explosive cable below
 - type: entity
   id: CableDet
-  parent: [ CablePhysBase, BaseSecurityContraband ]
-  name: explosive cord
-  description: Spaghetti for people who hate walls.
+  parent: [CablePhysBase, BaseSecurityContraband]
+  name: 爆炸引线 | explosive cord
+  description: 给讨厌墙壁的人准备的意大利面。 | Spaghetti for people who hate walls.
   components:
   - type: Cable
     cableDroppedOnCutPrototype: CableDetStack1
@@ -216,22 +212,20 @@
     damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTypeTrigger
+    - trigger: !type:DamageTypeTrigger
         damageType: Structural #this is as close as we can get to only letting explosives set it off.
         damage: 120
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
       - !type:ExplodeBehavior
-    - trigger:
-        !type:DamageTrigger #A fallback that deletes it but doesnt explode in case something somehow gets here without exploding violently enough.
+    - trigger: !type:DamageTrigger
+                            #A fallback that deletes it but doesnt explode in case something somehow gets here without exploding violently enough.
         damage: 50
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 35
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -240,13 +234,12 @@
             min: 1
             max: 1
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: CableVis
     node: cordage
   - type: NodeContainer
     nodes:
-      cordage:
-        !type:CableNode
+      cordage: !type:CableNode
         nodeGroupID: ExCable
   - type: CableVisualizer
     statePrefix: excable_

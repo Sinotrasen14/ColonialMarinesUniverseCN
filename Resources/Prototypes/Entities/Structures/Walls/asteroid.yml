@@ -25,8 +25,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -43,8 +42,7 @@
     damageModifierSet: RockMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 30
       behaviors:
       - &SoundStoneBreak !type:PlaySoundBehavior
@@ -66,7 +64,7 @@
     - state: gibtonite_inactive
       sprite: Structures/Walls/stone-ore.rsi
       visible: false
-      map: [ "enum.MiningScannerVisualLayers.Overlay", "gib" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay", "gib"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
@@ -100,16 +98,14 @@
     damageModifierSet: RockMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 3
       behaviors:
       - !type:TimerStartBehavior
       - !type:PlaySoundBehavior
         sound:
           collection: GlassBreak
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 500 # you have to really smack it for it to manually detonate. re-examine once defusal exists
       behaviors:
       - !type:DoActsBehavior
@@ -121,7 +117,7 @@
   abstract: true
   id: BaseVeinCoal
   suffix: Coal
-  description: An ore vein rich with coal.
+  description: 一处富含煤炭的矿脉。 | An ore vein rich with coal.
   components:
   - type: OreVein
     oreChance: 1.0
@@ -130,13 +126,13 @@
     layers:
     - state: rock_coal
       sprite: Structures/Walls/stone-ore.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay"]
 
 - type: entity
   abstract: true
   id: BaseVeinGold
   suffix: Gold
-  description: An ore vein rich with gold.
+  description: 一个富含黄金的矿脉。 | An ore vein rich with gold.
   components:
   - type: OreVein
     oreChance: 1.0
@@ -145,13 +141,13 @@
     layers:
     - state: rock_gold
       sprite: Structures/Walls/stone-ore.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay"]
 
 - type: entity
   abstract: true
   id: BaseVeinDiamond
   suffix: Diamond
-  description: An ore vein rich with diamonds.
+  description: 一个富含钻石的矿脉。 | An ore vein rich with diamonds.
   components:
   - type: OreVein
     oreChance: 1.0
@@ -160,13 +156,13 @@
     layers:
     - state: rock_diamond
       sprite: Structures/Walls/stone-ore.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay"]
 
 - type: entity
   abstract: true
   id: BaseVeinPlasma
   suffix: Plasma
-  description: An ore vein rich with plasma.
+  description: 一处富含等离子体的矿脉。 | An ore vein rich with plasma.
   components:
   - type: OreVein
     oreChance: 1.0
@@ -175,13 +171,13 @@
     layers:
     - state: rock_phoron
       sprite: Structures/Walls/stone-ore.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay"]
 
 - type: entity
   abstract: true
   id: BaseVeinQuartz
   suffix: Quartz
-  description: An ore vein rich with quartz.
+  description: 一条富含石英的矿脉。 | An ore vein rich with quartz.
   components:
   - type: OreVein
     oreChance: 1.0
@@ -190,13 +186,13 @@
     layers:
     - state: rock_quartz
       sprite: Structures/Walls/stone-ore.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay"]
 
 - type: entity
   abstract: true
   id: BaseVeinSilver
   suffix: Silver
-  description: An ore vein rich with silver.
+  description: 一处富含银的矿脉。 | An ore vein rich with silver.
   components:
   - type: OreVein
     oreChance: 1.0
@@ -205,13 +201,13 @@
     layers:
     - state: rock_silver
       sprite: Structures/Walls/stone-ore.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay"]
 
 - type: entity
   abstract: true
   id: BaseVeinSteel
   suffix: Steel
-  description: An ore vein rich with iron.
+  description: 一处富含铁的矿脉。 | An ore vein rich with iron.
   components:
   - type: OreVein
     oreChance: 1.0
@@ -220,13 +216,13 @@
     layers:
     - state: rock_tin
       sprite: Structures/Walls/stone-ore.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay"]
 
 - type: entity
   abstract: true
   id: BaseVeinUranium
   suffix: Uranium
-  description: An ore vein rich with uranium.
+  description: 一处富含铀的矿脉。 | An ore vein rich with uranium.
   components:
   - type: OreVein
     oreChance: 1.0
@@ -235,13 +231,13 @@
     layers:
     - state: rock_uranium
       sprite: Structures/Walls/stone-ore.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay"]
 
 - type: entity
   abstract: true
   id: BaseVeinSalt
   suffix: Salt
-  description: An ore vein rich with salt.
+  description: 富含盐的矿脉。 | An ore vein rich with salt.
   components:
   - type: OreVein
     oreChance: 1.0
@@ -250,13 +246,13 @@
     layers:
     - state: rock_salt
       sprite: Structures/Walls/stone-ore.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay"]
 
 - type: entity
   abstract: true
   id: BaseVeinArtifactFragment
   suffix: Artifact Fragment
-  description: A vein rich with strange artifacts.
+  description: 一条蕴藏奇异神器的矿脉。 | A vein rich with strange artifacts.
   components:
   - type: OreVein
     oreChance: 1.0
@@ -265,13 +261,13 @@
     layers:
     - state: rock_artifact_fragment
       sprite: Structures/Walls/stone-ore.rsi
-      map: [ "enum.MiningScannerVisualLayers.Overlay" ]
+      map: ["enum.MiningScannerVisualLayers.Overlay"]
 
 - type: entity
   abstract: true
   id: BaseVeinRandom
   suffix: 33% Random Ores
-  description: A vein rich with strange artifacts.
+  description: 一条蕴藏奇异神器的矿脉。 | A vein rich with strange artifacts.
   components:
   - type: OreVein
     oreChance: 0.33
@@ -284,8 +280,8 @@
 - type: entity
   abstract: true
   id: BaseAsteroidRockVisuals
-  name: asteroid rock
-  description: A rocky asteroid.
+  name: 小行星岩石 | asteroid rock
+  description: 一颗岩石小行星。 | A rocky asteroid.
   components:
   - type: Icon
     sprite: Structures/Walls/stone.rsi
@@ -294,11 +290,11 @@
     sprite: Structures/Walls/stone.rsi
 
 - type: entity
-  parent: [ BaseAsteroidRockVisuals, BaseAsteroidRock, BaseAsteroidDestructible ]
+  parent: [BaseAsteroidRockVisuals, BaseAsteroidRock, BaseAsteroidDestructible]
   id: AsteroidRock
 
 - type: entity
-  parent: [ BaseVeinCoal, AsteroidRock ]
+  parent: [BaseVeinCoal, AsteroidRock]
   id: AsteroidRockCoal
 
 - type: entity
@@ -310,7 +306,7 @@
     currentOre: OreCoalCrab
 
 - type: entity
-  parent: [ BaseVeinGold, AsteroidRock ]
+  parent: [BaseVeinGold, AsteroidRock]
   id: AsteroidRockGold
 
 - type: entity
@@ -322,15 +318,15 @@
     currentOre: OreGoldCrab
 
 - type: entity
-  parent: [ BaseVeinDiamond, AsteroidRock ]
+  parent: [BaseVeinDiamond, AsteroidRock]
   id: AsteroidRockDiamond
 
 - type: entity
-  parent: [ BaseVeinPlasma, AsteroidRock ]
+  parent: [BaseVeinPlasma, AsteroidRock]
   id: AsteroidRockPlasma
 
 - type: entity
-  parent: [ BaseVeinQuartz, AsteroidRock ]
+  parent: [BaseVeinQuartz, AsteroidRock]
   id: AsteroidRockQuartz
 
 - type: entity
@@ -342,7 +338,7 @@
     currentOre: OreQuartzCrab
 
 - type: entity
-  parent: [ BaseVeinSilver, AsteroidRock ]
+  parent: [BaseVeinSilver, AsteroidRock]
   id: AsteroidRockSilver
 
 - type: entity
@@ -355,7 +351,7 @@
 
 # Yes I know it drops steel but we may get smelting at some point
 - type: entity
-  parent: [ BaseVeinSteel, AsteroidRock ]
+  parent: [BaseVeinSteel, AsteroidRock]
   id: AsteroidRockTin
 
 - type: entity
@@ -367,7 +363,7 @@
     currentOre: OreIronCrab
 
 - type: entity
-  parent: [ BaseVeinUranium, AsteroidRock ]
+  parent: [BaseVeinUranium, AsteroidRock]
   id: AsteroidRockUranium
 
 - type: entity
@@ -379,19 +375,19 @@
     currentOre: OreUraniumCrab
 
 - type: entity
-  parent: [ BaseVeinSalt, AsteroidRock ]
+  parent: [BaseVeinSalt, AsteroidRock]
   id: AsteroidRockSalt
 
 - type: entity
-  parent: [ BaseVeinArtifactFragment, AsteroidRock ]
+  parent: [BaseVeinArtifactFragment, AsteroidRock]
   id: AsteroidRockArtifactFragment
 
 - type: entity
-  parent: [ BaseRockGibtonite, BaseAsteroidRockVisuals, BaseAsteroidRock ]
+  parent: [BaseRockGibtonite, BaseAsteroidRockVisuals, BaseAsteroidRock]
   id: AsteroidRockGibtonite
 
 - type: entity
-  parent: [ BaseVeinRandom, AsteroidRock ]
+  parent: [BaseVeinRandom, AsteroidRock]
   id: AsteroidRockMining
 
 #endregion
@@ -400,8 +396,8 @@
 - type: entity
   abstract: true
   id: BaseIronRockVisuals
-  name: ironrock
-  description: A rocky asteroid.
+  name: 铁岩 | ironrock
+  description: 一块岩石小行星。 | A rocky asteroid.
   components:
   - type: Icon
     sprite: Structures/Walls/stone-ironrock.rsi
@@ -410,55 +406,55 @@
     sprite: Structures/Walls/stone-ironrock.rsi
 
 - type: entity
-  parent: [ BaseIronRockVisuals, BaseAsteroidRock, BaseAsteroidDestructible ]
+  parent: [BaseIronRockVisuals, BaseAsteroidRock, BaseAsteroidDestructible]
   id: IronRock
 
 - type: entity
-  parent: [ BaseVeinRandom, IronRock ]
+  parent: [BaseVeinRandom, IronRock]
   id: IronRockMining
 
 - type: entity
-  parent: [ BaseVeinCoal, IronRock ]
+  parent: [BaseVeinCoal, IronRock]
   id: IronRockCoal
 
 - type: entity
-  parent: [ BaseVeinGold, IronRock ]
+  parent: [BaseVeinGold, IronRock]
   id: IronRockGold
 
 - type: entity
-  parent: [ BaseVeinPlasma, IronRock ]
+  parent: [BaseVeinPlasma, IronRock]
   id: IronRockPlasma
 
 - type: entity
-  parent: [ BaseVeinQuartz, IronRock ]
+  parent: [BaseVeinQuartz, IronRock]
   id: IronRockQuartz
 
 - type: entity
-  parent: [ BaseVeinSilver, IronRock ]
+  parent: [BaseVeinSilver, IronRock]
   id: IronRockSilver
 
 - type: entity
-  parent: [ BaseVeinSteel, IronRock ]
+  parent: [BaseVeinSteel, IronRock]
   id: IronRockIron
 
 - type: entity
-  parent: [ BaseVeinUranium, IronRock ]
+  parent: [BaseVeinUranium, IronRock]
   id: IronRockUranium
 
 - type: entity
-  parent: [ BaseVeinSalt, IronRock ]
+  parent: [BaseVeinSalt, IronRock]
   id: IronRockSalt
 
 - type: entity
-  parent: [ BaseVeinArtifactFragment, IronRock ]
+  parent: [BaseVeinArtifactFragment, IronRock]
   id: IronRockArtifactFragment
 
 - type: entity
-  parent: [ BaseRockGibtonite, BaseIronRockVisuals, IronRock ]
+  parent: [BaseRockGibtonite, BaseIronRockVisuals, IronRock]
   id: IronRockGibtonite
 
 - type: entity
-  parent: [ BaseVeinDiamond, IronRock ]
+  parent: [BaseVeinDiamond, IronRock]
   id: IronRockDiamond
 
 #endregion
@@ -466,9 +462,9 @@
 
 # Rocks and ore veins
 - type: entity
-  parent: [ BaseWall, StructureHealthWallWeak ]
+  parent: [BaseWall, StructureHealthWallWeak]
   id: WallRock
-  name: rock
+  name: 岩石 | rock
   suffix: planetmap
   components:
   - type: Transform
@@ -482,8 +478,7 @@
     damageModifierSet: RockMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 150
       behaviors:
       - *SoundStoneBreak
@@ -500,7 +495,7 @@
 
 # Ore veins
 - type: entity
-  parent: [ BaseVeinCoal, WallRock ]
+  parent: [BaseVeinCoal, WallRock]
   id: WallRockCoal
   components:
   - type: EntityRemap
@@ -511,7 +506,7 @@
       WallRockSnow: WallRockSnowCoal
 
 - type: entity
-  parent: [ BaseVeinGold, WallRock ]
+  parent: [BaseVeinGold, WallRock]
   id: WallRockGold
   components:
   - type: EntityRemap
@@ -522,7 +517,7 @@
       WallRockSnow: WallRockSnowGold
 
 - type: entity
-  parent: [ BaseVeinDiamond, WallRock ]
+  parent: [BaseVeinDiamond, WallRock]
   id: WallRockDiamond
   components:
   - type: EntityRemap
@@ -533,7 +528,7 @@
       WallRockSnow: WallRockSnowDiamond
 
 - type: entity
-  parent: [ BaseVeinPlasma, WallRock ]
+  parent: [BaseVeinPlasma, WallRock]
   id: WallRockPlasma
   components:
   - type: EntityRemap
@@ -544,7 +539,7 @@
       WallRockSnow: WallRockSnowPlasma
 
 - type: entity
-  parent: [ BaseVeinQuartz, WallRock ]
+  parent: [BaseVeinQuartz, WallRock]
   id: WallRockQuartz
   components:
   - type: EntityRemap
@@ -555,7 +550,7 @@
       WallRockSnow: WallRockSnowQuartz
 
 - type: entity
-  parent: [ BaseVeinSilver, WallRock ]
+  parent: [BaseVeinSilver, WallRock]
   id: WallRockSilver
   components:
   - type: EntityRemap
@@ -566,7 +561,7 @@
       WallRockSnow: WallRockSnowSilver
 
 - type: entity
-  parent: [ BaseVeinSteel, WallRock ]
+  parent: [BaseVeinSteel, WallRock]
   id: WallRockTin
   components:
   - type: EntityRemap
@@ -577,7 +572,7 @@
       WallRockSnow: WallRockSnowTin
 
 - type: entity
-  parent: [ BaseVeinUranium, WallRock ]
+  parent: [BaseVeinUranium, WallRock]
   id: WallRockUranium
   components:
   - type: EntityRemap
@@ -588,7 +583,7 @@
       WallRockSnow: WallRockSnowUranium
 
 - type: entity
-  parent: [ BaseVeinArtifactFragment, WallRock ]
+  parent: [BaseVeinArtifactFragment, WallRock]
   id: WallRockArtifactFragment
   components:
   - type: EntityRemap
@@ -599,7 +594,7 @@
       WallRockSnow: WallRockSnowArtifactFragment
 
 - type: entity
-  parent: [ BaseVeinSalt, WallRock ]
+  parent: [BaseVeinSalt, WallRock]
   id: WallRockSalt
   components:
   - type: EntityRemap
@@ -615,7 +610,7 @@
 - type: entity
   parent: WallRock
   id: WallRockSnow
-  name: snowdrift
+  name: 雪堆 | snowdrift
   components:
   - type: Icon
     sprite: Structures/Walls/stone-snow.rsi
@@ -624,43 +619,43 @@
     sprite: Structures/Walls/stone-snow.rsi
 
 - type: entity
-  parent: [ BaseVeinCoal, WallRockSnow ]
+  parent: [BaseVeinCoal, WallRockSnow]
   id: WallRockSnowCoal
 
 - type: entity
-  parent: [ BaseVeinGold, WallRockSnow ]
+  parent: [BaseVeinGold, WallRockSnow]
   id: WallRockSnowGold
 
 - type: entity
-  parent: [ BaseVeinDiamond, WallRockSnow ]
+  parent: [BaseVeinDiamond, WallRockSnow]
   id: WallRockSnowDiamond
 
 - type: entity
-  parent: [ BaseVeinPlasma, WallRockSnow ]
+  parent: [BaseVeinPlasma, WallRockSnow]
   id: WallRockSnowPlasma
 
 - type: entity
-  parent: [ BaseVeinQuartz, WallRockSnow ]
+  parent: [BaseVeinQuartz, WallRockSnow]
   id: WallRockSnowQuartz
 
 - type: entity
-  parent: [ BaseVeinSilver, WallRockSnow ]
+  parent: [BaseVeinSilver, WallRockSnow]
   id: WallRockSnowSilver
 
 - type: entity
-  parent: [ BaseVeinSteel, WallRockSnow ]
+  parent: [BaseVeinSteel, WallRockSnow]
   id: WallRockSnowTin
 
 - type: entity
-  parent: [ BaseVeinUranium, WallRockSnow ]
+  parent: [BaseVeinUranium, WallRockSnow]
   id: WallRockSnowUranium
 
 - type: entity
-  parent: [ BaseVeinArtifactFragment, WallRockSnow ]
+  parent: [BaseVeinArtifactFragment, WallRockSnow]
   id: WallRockSnowArtifactFragment
 
 - type: entity
-  parent: [ BaseVeinSalt, WallRockSnow ]
+  parent: [BaseVeinSalt, WallRockSnow]
   id: WallRockSnowSalt
 
 #endregion
@@ -669,7 +664,7 @@
 - type: entity
   parent: WallRock
   id: WallRockSand
-  name: sandstone
+  name: 砂岩 | sandstone
   components:
   - type: Icon
     sprite: Structures/Walls/stone-sand.rsi
@@ -678,43 +673,43 @@
     sprite: Structures/Walls/stone-sand.rsi
 
 - type: entity
-  parent: [ BaseVeinCoal, WallRockSand ]
+  parent: [BaseVeinCoal, WallRockSand]
   id: WallRockSandCoal
 
 - type: entity
-  parent: [ BaseVeinGold, WallRockSand ]
+  parent: [BaseVeinGold, WallRockSand]
   id: WallRockSandGold
 
 - type: entity
-  parent: [ BaseVeinDiamond, WallRockSand ]
+  parent: [BaseVeinDiamond, WallRockSand]
   id: WallRockSandDiamond
 
 - type: entity
-  parent: [ BaseVeinPlasma, WallRockSand ]
+  parent: [BaseVeinPlasma, WallRockSand]
   id: WallRockSandPlasma
 
 - type: entity
-  parent: [ BaseVeinQuartz, WallRockSand ]
+  parent: [BaseVeinQuartz, WallRockSand]
   id: WallRockSandQuartz
 
 - type: entity
-  parent: [ BaseVeinSilver, WallRockSand ]
+  parent: [BaseVeinSilver, WallRockSand]
   id: WallRockSandSilver
 
 - type: entity
-  parent: [ BaseVeinSteel, WallRockSand ]
+  parent: [BaseVeinSteel, WallRockSand]
   id: WallRockSandTin
 
 - type: entity
-  parent: [ BaseVeinUranium, WallRockSand ]
+  parent: [BaseVeinUranium, WallRockSand]
   id: WallRockSandUranium
 
 - type: entity
-  parent: [ BaseVeinArtifactFragment, WallRockSand ]
+  parent: [BaseVeinArtifactFragment, WallRockSand]
   id: WallRockSandArtifactFragment
 
 - type: entity
-  parent: [ BaseVeinSalt, WallRockSand ]
+  parent: [BaseVeinSalt, WallRockSand]
   id: WallRockSandSalt
 
 #endregion
@@ -722,7 +717,7 @@
 
 - type: entity
   id: WallRockChromite
-  name: chromite
+  name: 铬铁矿 | chromite
   parent: WallRock
   components:
   - type: Icon
@@ -732,43 +727,43 @@
     sprite: Structures/Walls/stone-chromite.rsi
 
 - type: entity
-  parent: [ BaseVeinCoal, WallRockChromite ]
+  parent: [BaseVeinCoal, WallRockChromite]
   id: WallRockChromiteCoal
 
 - type: entity
-  parent: [ BaseVeinGold, WallRockChromite ]
+  parent: [BaseVeinGold, WallRockChromite]
   id: WallRockChromiteGold
 
 - type: entity
-  parent: [ BaseVeinDiamond, WallRockChromite ]
+  parent: [BaseVeinDiamond, WallRockChromite]
   id: WallRockChromiteDiamond
 
 - type: entity
-  parent: [ BaseVeinPlasma, WallRockChromite ]
+  parent: [BaseVeinPlasma, WallRockChromite]
   id: WallRockChromitePlasma
 
 - type: entity
-  parent: [ BaseVeinQuartz, WallRockChromite ]
+  parent: [BaseVeinQuartz, WallRockChromite]
   id: WallRockChromiteQuartz
 
 - type: entity
-  parent: [ BaseVeinSilver, WallRockChromite ]
+  parent: [BaseVeinSilver, WallRockChromite]
   id: WallRockChromiteSilver
 
 - type: entity
-  parent: [ BaseVeinSteel, WallRockChromite ]
+  parent: [BaseVeinSteel, WallRockChromite]
   id: WallRockChromiteTin
 
 - type: entity
-  parent: [ BaseVeinUranium, WallRockChromite ]
+  parent: [BaseVeinUranium, WallRockChromite]
   id: WallRockChromiteUranium
 
 - type: entity
-  parent: [ BaseVeinArtifactFragment, WallRockChromite ]
+  parent: [BaseVeinArtifactFragment, WallRockChromite]
   id: WallRockChromiteArtifactFragment
 
 - type: entity
-  parent: [ BaseVeinSalt, WallRockChromite ]
+  parent: [BaseVeinSalt, WallRockChromite]
   id: WallRockChromiteSalt
 
 #endregion

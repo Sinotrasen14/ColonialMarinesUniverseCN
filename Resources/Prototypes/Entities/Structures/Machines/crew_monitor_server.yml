@@ -1,8 +1,8 @@
 - type: entity
   id: CrewMonitoringServer
-  parent: [ BaseMachinePowered, ConstructibleMachine, StructureHealthMachineStrong ]
-  name: crew monitoring server
-  description: Receives and relays the status of all active suit sensors on the station.
+  parent: [BaseMachinePowered, ConstructibleMachine, StructureHealthMachineStrong]
+  name: 船员监控服务器 | crew monitoring server
+  description: 接收并转发空间站上所有激活的宇航服传感器的状态。 | Receives and relays the status of all active suit sensors on the station.
   components:
   - type: Sprite
     sprite: Structures/Machines/server.rsi
@@ -11,7 +11,7 @@
     - state: server-off
     - state: server-on
       visible: false
-      map: [ "enum.PowerDeviceVisualLayers.Powered" ]
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
     - state: variant-crew
     - state: server_o
       map: ["enum.WiresVisualLayers.MaintenancePanel"]
@@ -46,8 +46,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 275
       behaviors:
       - !type:ChangeConstructionNodeBehavior
@@ -60,8 +59,8 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
   - type: AmbientOnPowered
   - type: AmbientSound
     volume: -9

@@ -2,8 +2,8 @@
 - type: entity
   parent: StructureHealthFurniture
   id: Catwalk
-  name: catwalk
-  description: A catwalk for easier EVA maneuvering and cable placement.
+  name: 舷梯 | catwalk
+  description: 便于舱外活动操作和电缆敷设的舷梯。 | A catwalk for easier EVA maneuvering and cable placement.
   placement:
     mode: SnapgridCenter
   components:
@@ -29,7 +29,7 @@
         volume: 8
   - type: Tag
     tags:
-      - Catwalk
+    - Catwalk
   - type: Construction
     graph: Catwalk
     node: Catwalk
@@ -37,8 +37,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:SpawnEntitiesBehavior

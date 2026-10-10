@@ -9,8 +9,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.35,0.25,0.35"
         density: 190
         mask:
@@ -27,7 +26,7 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseStructureComputerIndestructible, StructureHealthMachineWeak ]
+  parent: [BaseStructureComputerIndestructible, StructureHealthMachineWeak]
   id: BaseStructureComputer
   components:
   - type: Construction
@@ -37,8 +36,7 @@
     damageModifierSet: GlassReinforcedMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -50,30 +48,30 @@
 - type: entity
   id: ComputerFrame
   parent: BaseStructureComputer
-  name: computer frame
-  description: A computer under construction.
+  name: 电脑框架 | computer frame
+  description: 正在建造中的电脑。 | A computer under construction.
   components:
   - type: Sprite
     sprite: Structures/Machines/parts.rsi
     layers:
     - state: 0
-      map: [ "enum.ConstructionVisuals.Layer" ]
+      map: ["enum.ConstructionVisuals.Layer"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ConstructionVisuals.Key:
         enum.ConstructionVisuals.Layer:
-          frameUnsecured: { state: 0 }
-          boardUnsecured: { state: 1 }
-          missingWires: { state: 2 }
-          monitorMissing: { state: 3 }
-          monitorUnsecured: { state: 4 }
+          frameUnsecured: {state: 0}
+          boardUnsecured: {state: 1}
+          missingWires: {state: 2}
+          monitorMissing: {state: 3}
+          monitorUnsecured: {state: 4}
 
 - type: entity
-  parent: [ BaseStructureComputerIndestructible, StructureHealthMachineFlimsy ]
+  parent: [BaseStructureComputerIndestructible, StructureHealthMachineFlimsy]
   id: ComputerBroken
-  name: broken computer
-  description: This computer has seen better days.
+  name: 坏掉的电脑 | broken computer
+  description: 这台电脑已经风光不再了。 | This computer has seen better days.
   components:
   - type: Construction
     graph: Computer
@@ -86,8 +84,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior

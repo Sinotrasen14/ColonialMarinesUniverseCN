@@ -1,8 +1,8 @@
-﻿- type: entity
-  parent: [ BaseWallmountGlass, StructureHealthFurnitureWeak ]
+- type: entity
+  parent: [BaseWallmountGlass, StructureHealthFurnitureWeak]
   id: Mirror
-  name: mirror
-  description: 'Mirror mirror on the wall , who''s the most robust of them all?'
+  name: 镜像 | mirror
+  description: '魔镜魔镜告诉我，谁才是最健壮的？ | Mirror mirror on the wall , who''s the most robust of them all?'
   placement:
     mode: SnapgridCenter
   components:
@@ -15,7 +15,7 @@
     layers:
     - Hair
     - FacialHair
-    changeHairSound: null
+    changeHairSound:
     modifyTime: 0
   - type: ActivatableUI
     key: enum.MagicMirrorUiKey.Key
@@ -28,8 +28,7 @@
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior

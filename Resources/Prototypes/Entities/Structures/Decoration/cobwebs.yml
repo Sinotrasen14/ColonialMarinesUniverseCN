@@ -2,8 +2,8 @@
 
 - type: entity
   id: Cobweb1
-  name: cobweb
-  description: Somebody should remove that.
+  name: 蜘蛛网 | cobweb
+  description: 应该有人把它清理掉。 | Somebody should remove that.
   placement:
     mode: SnapgridCenter
   components:
@@ -23,12 +23,11 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 20 #With the damage modifier you should have a hard time getting through it with something blunt, but an axe or something flammable will do the trick.
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Construction
     graph: CobwebsGraph
     node: start

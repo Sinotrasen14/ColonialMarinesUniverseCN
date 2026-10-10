@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseStructure, StructureHealthDoorWeak ]
+  parent: [BaseStructure, StructureHealthDoorWeak]
   id: WindoorAssembly
-  name: windoor assembly
-  description: It opens, it closes, and you can see through it!
+  name: 风门组件 | windoor assembly
+  description: 它会打开，会关闭，而且你还能透过它看东西！ | It opens, it closes, and you can see through it!
   placement:
     mode: SnapgridCenter
   components:
@@ -15,8 +15,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,-0.2"
         density: 40
         mask:
@@ -33,8 +32,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageDoorWeak
-        !type:DamageTrigger
+    - trigger: &DamageDoorWeak !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -50,8 +48,8 @@
 - type: entity
   parent: WindoorAssembly
   id: WindoorAssemblyPlasma
-  name: plasma windoor assembly
-  description: It opens, it closes, and you can see through it! This one looks purp-, no, pink. Wait...
+  name: 等离子风门组件 | plasma windoor assembly
+  description: 它会打开，它会关闭，而且你能透过它看过去！这个看起来是紫色——不，粉色。等等…… | It opens, it closes, and you can see through it! This one looks purp-, no, pink. Wait...
   components:
   - type: Sprite
     sprite: Structures/Doors/Windoors/plasma.rsi
@@ -72,8 +70,8 @@
 - type: entity
   parent: WindoorAssembly
   id: WindoorAssemblyUranium
-  name: uranium windoor assembly
-  description: It opens, it closes, and you can see through it! This one looks sickly green...
+  name: 铀风门组件 | uranium windoor assembly
+  description: 它会打开，会关闭，还能看穿它！这个看起来是病态的绿色…… | It opens, it closes, and you can see through it! This one looks sickly green...
   components:
   - type: Sprite
     sprite: Structures/Doors/Windoors/uranium.rsi

@@ -1,14 +1,13 @@
 - type: entity
   parent: BaseStructure
   id: ContainmentFieldGenerator
-  name: containment field generator
-  description: A machine that generates a containment field when powered by an emitter. Keeps the Singularity docile.
+  name: 遏制场发生器 | containment field generator
+  description: 一种由发射器供电时生成遏制场的机器。使奇点保持温顺。 | A machine that generates a containment field when powered by an emitter. Keeps the Singularity docile.
   components:
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.4
         density: 190
         mask:
@@ -22,19 +21,19 @@
     state: icon
     noRot: true
     layers:
-      - state: icon
-      - state: p1
-        map: ["powerLight"]
-        visible: false
-        shader: unshaded
-      - state: a1
-        map: ["fieldLight"]
-        visible: false
-        shader: unshaded
-      - state: on
-        map: ["connectedLight"]
-        visible: false
-        shader: unshaded
+    - state: icon
+    - state: p1
+      map: ["powerLight"]
+      visible: false
+      shader: unshaded
+    - state: a1
+      map: ["fieldLight"]
+      visible: false
+      shader: unshaded
+    - state: on
+      map: ["connectedLight"]
+      visible: false
+      shader: unshaded
   - type: Icon
     sprite: Structures/Power/Generation/Singularity/containment.rsi
     state: icon
@@ -62,8 +61,8 @@
           MultipleFields: {visible: true, state: a3}
       enum.ContainmentFieldGeneratorVisuals.OnLight:
         connectedLight:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: GuideHelp
     guides:
     - SingularityTeslaEngine
@@ -73,8 +72,8 @@
 
 - type: entity
   id: ContainmentField
-  name: containment field
-  description: A containment field that repels gravitational singularities.
+  name: 约束场 | containment field
+  description: 一个排斥引力奇点的约束场。 | A containment field that repels gravitational singularities.
   placement:
     mode: SnapgridCenter
   components:
@@ -85,8 +84,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask

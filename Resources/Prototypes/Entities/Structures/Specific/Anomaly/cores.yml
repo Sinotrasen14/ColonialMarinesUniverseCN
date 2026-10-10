@@ -2,8 +2,8 @@
   parent: BaseItem
   id: BaseAnomalyCore
   abstract: true
-  name: anomaly core
-  description: The core of a destroyed incomprehensible object.
+  name: 异常核心 | anomaly core
+  description: 被摧毁的不可理解物体的核心。 | The core of a destroyed incomprehensible object.
   components:
   - type: Sprite
     sprite: Structures/Specific/Anomalies/Cores/gravity_core.rsi
@@ -17,8 +17,8 @@
     visuals:
       enum.AnomalyCoreVisuals.Decaying:
         decay:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: Item
     size: Tiny
   - type: EmitSoundOnUse #placeholder for future unical mechanic
@@ -79,7 +79,7 @@
 - type: entity
   parent: BaseAnomalyCore
   id: AnomalyCoreFlesh
-  description: The core of a destroyed flesh anomaly. Pulsates sickeningly, but might be a hearty meal if cooked.
+  description: 被摧毁的血肉异常的核心。令人作呕地搏动着，但如果煮熟了，也许是一顿丰盛的大餐。 | The core of a destroyed flesh anomaly. Pulsates sickeningly, but might be a hearty meal if cooked.
   suffix: Flesh
   components:
   - type: Sprite
@@ -159,7 +159,7 @@
     castShadows: false
 
 - type: entity
-  parent: [ BaseAnomalyCore, BaseShadow ]
+  parent: [BaseAnomalyCore, BaseShadow]
   id: AnomalyCoreShadow
   suffix: Shadow
   components:
@@ -256,7 +256,7 @@
 - type: entity
   parent: BaseAnomalyInertCore
   id: AnomalyCoreFleshInert # Can be microwaved to turn it into a massive piece of meat
-  description: The inert core of a destroyed flesh anomaly. Pulsates sickeningly, but might be good food in the right hands?
+  description: 被摧毁的血肉异常体的惰性核心。令人作呕地搏动着，但在合适的人手中或许能成为不错的食物？ | The inert core of a destroyed flesh anomaly. Pulsates sickeningly, but might be good food in the right hands?
   suffix: Flesh, Inert
   components:
   - type: Sprite
@@ -335,7 +335,7 @@
     castShadows: false
 
 - type: entity
-  parent: [ BaseAnomalyInertCore, BaseShadow ]
+  parent: [BaseAnomalyInertCore, BaseShadow]
   id: AnomalyCoreShadowInert
   suffix: Shadow, Inert
   components:

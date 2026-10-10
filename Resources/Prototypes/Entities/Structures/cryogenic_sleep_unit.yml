@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructure
   id: CryogenicSleepUnit
-  name: cryogenic sleep unit
-  description: A super-cooled container that keeps crewmates safe during space travel.
+  name: 低温休眠舱 | cryogenic sleep unit
+  description: 一个超低温容器，在太空旅行期间保障船员安全。 | A super-cooled container that keeps crewmates safe during space travel.
   components:
   - type: Anchorable
     flags:
@@ -29,8 +29,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.05"
         density: 190
         mask:
@@ -53,8 +52,8 @@
     visuals:
       enum.CryostorageVisuals.Full:
         base:
-          True: { state: sleeper_1 }
-          False: { state: sleeper_0 }
+          true: {state: sleeper_1}
+          false: {state: sleeper_0}
 
 # This one handles all spawns, latejoin and roundstart.
 - type: entity
@@ -71,6 +70,6 @@
   id: CryogenicSleepUnitSpawnerLateJoin
   suffix: Spawner, LateJoin
   components:
-    - type: ContainerSpawnPoint
-      containerId: storage
-      spawnType: LateJoin
+  - type: ContainerSpawnPoint
+    containerId: storage
+    spawnType: LateJoin

@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseDeltaPressureGlass, StructureHealthBarrierWeak ]
+  parent: [BaseDeltaPressureGlass, StructureHealthBarrierWeak]
   id: InflatableWall
-  name: inflatable barricade
-  description: An inflated membrane. Activate to deflate. Do not puncture.
+  name: 充气路障 | inflatable barricade
+  description: 一个充气膜。激活以放气。请勿刺破。 | An inflated membrane. Activate to deflate. Do not puncture.
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 15
         layer:
@@ -24,8 +23,7 @@
     damageModifierSet: PlasticMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 30
       behaviors:
       - !type:PlaySoundBehavior
@@ -46,10 +44,10 @@
     mode: SnapgridCenter
 
 - type: entity
-  parent: [ BaseStructure, BaseDeltaPressureGlass, StructureHealthBarrierWeak ]
+  parent: [BaseStructure, BaseDeltaPressureGlass, StructureHealthBarrierWeak]
   id: InflatableDoor
-  name: inflatable door
-  description: An inflated membrane. Activate to deflate. Now with a door. Do not puncture.
+  name: 充气门 | inflatable door
+  description: 充气膜。激活以放气。现在带门。请勿刺破。 | An inflated membrane. Activate to deflate. Now with a door. Do not puncture.
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -63,8 +61,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         density: 15
         layer:
@@ -94,8 +91,7 @@
     damageModifierSet: PlasticMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 30
       behaviors:
       - !type:PlaySoundBehavior

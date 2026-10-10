@@ -1,6 +1,6 @@
 - type: entity
   id: ActionToggleMarineHud
-  name: Toggle Marine Hud
+  name: 切换陆战队HUD
   description: Toggle marine icons.
   components:
   - type: Action
@@ -16,7 +16,7 @@
 
 - type: entity
   id: ActionToggleXenoHud
-  name: Toggle Xeno Hud
+  name: 切换异形HUD
   description: Toggle xeno health and plasma bars.
   components:
   - type: Action
@@ -32,8 +32,8 @@
 
 - type: entity
   id: ActionFindParasite
-  name: Find Parasite
-  description: Find Ghostrollable Parasites
+  name: 寻找寄生虫
+  description: 找可操控的幽灵寄生虫
   components:
   - type: Action
     checkCanInteract: false
@@ -47,8 +47,8 @@
 
 - type: entity
   id: ActionJoinXeno
-  name: Join as Xeno
-  description: Find burrowed larva to join as.
+  name: 加入异形
+  description: 找埋在土里的幼虫来加入。
   components:
   - type: Action
     checkCanInteract: false
@@ -63,8 +63,8 @@
 
 - type: entity
   id: ActionToggleVisibility
-  name: Toggle Visibility
-  description: Toggles your visibility, while you're invisible your friend can still hear what you say.
+  name: 切换可见性
+  description: 切换你的可见性，在你隐身的时候，你的朋友仍然可以听到你说的话。
   components:
   - type: Action
     checkCanInteract: false
@@ -78,8 +78,8 @@
 
 - type: entity
   id: ActionStopBeingFriends
-  name: Leave Friend
-  description: Stop being an imaginary friend.
+  name: 离开好友
+  description: 别再当虚拟朋友了。
   components:
   - type: Action
     checkCanInteract: false

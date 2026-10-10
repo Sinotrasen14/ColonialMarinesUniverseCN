@@ -1,8 +1,8 @@
 - type: entity
   id: Mannequin
   parent: [BaseStructureDynamic, StripableInventoryBase, StructureHealthFurniture]
-  name: mannequin
-  description: It can wear any clothing with style.
+  name: 人体模型 | mannequin
+  description: 它可以穿任何风格的服装。 | It can wear any clothing with style.
   components:
   - type: Appearance
   - type: Sprite
@@ -10,22 +10,21 @@
     state: mannequin
     noRot: true
     layers:
-    - map: [ "mannequin" ]
+    - map: ["mannequin"]
       sprite: Structures/Decoration/mannequin.rsi
       state: mannequin
-    - map: [ "jumpsuit" ]
-    - map: [ "outerClothing" ]
-    - map: [ "eyes" ]
-    - map: [ "neck" ]
-    - map: [ "back" ]
-    - map: [ "mask" ]
-    - map: [ "head" ]
+    - map: ["jumpsuit"]
+    - map: ["outerClothing"]
+    - map: ["eyes"]
+    - map: ["neck"]
+    - map: ["back"]
+    - map: ["mask"]
+    - map: ["head"]
   - type: Rotatable
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.2
         density: 200
         mask:
@@ -41,8 +40,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 40
       behaviors:
       - !type:PlaySoundBehavior
@@ -52,36 +50,36 @@
   - type: ContainerContainer
     containers:
       jumpsuit: !type:ContainerSlot
-        showEnts: False
-        occludes: False
-        ent: null
+        showEnts: false
+        occludes: false
+        ent:
       outerClothing: !type:ContainerSlot
-        showEnts: False
-        occludes: False
-        ent: null
+        showEnts: false
+        occludes: false
+        ent:
       neck: !type:ContainerSlot
-        showEnts: False
-        occludes: False
-        ent: null
+        showEnts: false
+        occludes: false
+        ent:
       mask: !type:ContainerSlot
-        showEnts: False
-        occludes: False
-        ent: null
+        showEnts: false
+        occludes: false
+        ent:
       eyes: !type:ContainerSlot
-        showEnts: False
-        occludes: False
-        ent: null
+        showEnts: false
+        occludes: false
+        ent:
       head: !type:ContainerSlot
-        showEnts: False
-        occludes: False
-        ent: null
+        showEnts: false
+        occludes: false
+        ent:
       suitstorage: !type:ContainerSlot
-        showEnts: False
-        occludes: False
-        ent: null
+        showEnts: false
+        occludes: false
+        ent:
       back: !type:ContainerSlot
-        showEnts: False
-        occludes: False
-        ent: null
+        showEnts: false
+        occludes: false
+        ent:
   - type: Inventory
     templateId: mannequin

@@ -1,21 +1,21 @@
 - type: entity
-  parent: [ BaseStructure, StructureHealthFurnitureStrong ]
+  parent: [BaseStructure, StructureHealthFurnitureStrong]
   id: Fireplace
-  name: fireplace
-  description: A place that has fire. Cozy!
+  name: 壁炉 | fireplace
+  description: 一个有火的地方。温馨！ | A place that has fire. Cozy!
   components:
   - type: Sprite
     noRot: true
     sprite: Structures/Decoration/fireplace.rsi
     layers:
-      - state: fireplace
-      - state: fireplacefestive
-        map: ["christmas"]
-        visible: false
-      - state: fireplace_fire4
-        shader: unshaded
-      - state: fireplace_glow
-        shader: unshaded
+    - state: fireplace
+    - state: fireplacefestive
+      map: ["christmas"]
+      visible: false
+    - state: fireplace_fire4
+      shader: unshaded
+    - state: fireplace_glow
+      shader: unshaded
   - type: Appearance
   - type: HolidayVisuals
     holidays:
@@ -25,7 +25,7 @@
     visuals:
       enum.HolidayVisuals.Holiday:
         christmas:
-          festive: { visible: true }
+          festive: {visible: true}
   - type: AmbientSound
     volume: -6
     range: 5
@@ -39,8 +39,7 @@
     damageModifierSet: RockMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior

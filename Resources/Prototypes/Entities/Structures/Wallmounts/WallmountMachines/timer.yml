@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseWallmountMachine, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMachine, StructureHealthMachineFlimsy]
   id: SignalTimer
-  name: signal timer
-  description: It's a timer for sending timed signals to things.
+  name: 信号定时器 | signal timer
+  description: 这是一个用于向物体发送定时信号的定时器。 | It's a timer for sending timed signals to things.
   components:
   - type: StationAiWhitelist
   - type: WallMount
@@ -14,8 +14,7 @@
   - type: Appearance
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -26,11 +25,11 @@
     canEditLabel: false
   - type: DeviceLinkSource
     ports:
-      - Start
-      - Timer
+    - Start
+    - Timer
   - type: DeviceLinkSink
     ports:
-      - Trigger
+    - Trigger
   - type: ActivatableUI
     key: enum.SignalTimerUiKey.Key
   - type: UserInterface
@@ -51,13 +50,13 @@
       board: !type:Container
   - type: ContainerFill
     containers:
-      board: [ SignalTimerElectronics ]
+      board: [SignalTimerElectronics]
 
 - type: entity
   id: ScreenTimer
   parent: SignalTimer
-  name: screen timer
-  description: It's a timer for sending timed signals to things, with a built-in screen.
+  name: 屏幕定时器 | screen timer
+  description: 这是一个用于向物体发送定时信号的定时器，内置屏幕。 | It's a timer for sending timed signals to things, with a built-in screen.
   components:
   - type: SignalTimer
     canEditLabel: true
@@ -79,13 +78,13 @@
     - board
   - type: ContainerFill
     containers:
-      board: [ ScreenTimerElectronics ]
+      board: [ScreenTimerElectronics]
 
 - type: entity
   id: BrigTimer
   parent: ScreenTimer
-  name: brig timer
-  description: It's a timer for brig cells.
+  name: 禁闭室计时器 | brig timer
+  description: 这是一个用于禁闭室的计时器。 | It's a timer for brig cells.
   components:
   - type: AccessReader
     access: [["CMAccessBrig"], ["CMAccessColonyBrig"], ["AU14AccessGovforSecurity"], ["AU14AccessOpforSecurity"]]
@@ -96,7 +95,7 @@
     - board
   - type: ContainerFill
     containers:
-      board: [ BrigTimerElectronics ]
+      board: [BrigTimerElectronics]
   - type: ApcPowerReceiver
     needsPower: false # TODO RMC14 power
 
@@ -104,8 +103,8 @@
 
 - type: entity
   id: TimerFrame
-  name: timer frame
-  description: A construction frame for a timer.
+  name: 定时器框架 | timer frame
+  description: 一个定时器的构造框架。 | A construction frame for a timer.
   components:
   - type: Sprite
     drawdepth: WallMountedItems

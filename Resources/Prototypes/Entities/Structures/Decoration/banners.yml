@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseStructureDynamic, StructureHealthFurnitureStrong ]
+  parent: [BaseStructureDynamic, StructureHealthFurnitureStrong]
   id: BannerBase
-  name: base banner
-  description: It's the concept of a banner, you shouldn't be seeing this.
+  name: 基础横幅 | base banner
+  description: 这是横幅的概念，你不应该看到这个。 | It's the concept of a banner, you shouldn't be seeing this.
   abstract: true
   components:
   - type: Sprite
@@ -14,8 +14,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.2
         density: 190
         mask:
@@ -30,8 +29,7 @@
     damageModifierSet: DurathreadMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior
@@ -41,8 +39,8 @@
 - type: entity
   id: BannerNanotrasen
   parent: BannerBase
-  name: nanotrasen banner
-  description: A banner displaying the Nanotrasen logo. It looks rather cheap.
+  name: 纳米特雷森横幅 | nanotrasen banner
+  description: 一面展示纳米特雷森标志的横幅。它看起来相当廉价。 | A banner displaying the Nanotrasen logo. It looks rather cheap.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -51,8 +49,8 @@
 - type: entity
   id: BannerCargo
   parent: BannerBase
-  name: cargo banner
-  description: A banner displaying the colors of the cargo department. Not. Cargonia.
+  name: 货物横幅 | cargo banner
+  description: 一面展示货物部门颜色的横幅。不是。货物尼亚。 | A banner displaying the colors of the cargo department. Not. Cargonia.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -61,8 +59,8 @@
 - type: entity
   id: BannerEngineering
   parent: BannerBase
-  name: engineering banner
-  description: A banner displaying the colors of the engineering department. Scrungularty.
+  name: 工程系旗帜 | engineering banner
+  description: 一面展示工程系色彩的旗帜。Scrungularty。 | A banner displaying the colors of the engineering department. Scrungularty.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -71,8 +69,8 @@
 - type: entity
   id: BannerMedical
   parent: BannerBase
-  name: medical banner
-  description: A banner displaying the colors of the medical department. How sterile.
+  name: 医疗横幅 | medical banner
+  description: 一面展示医疗部门颜色的横幅。多么无菌。 | A banner displaying the colors of the medical department. How sterile.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -81,8 +79,8 @@
 - type: entity
   id: BannerRevolution
   parent: BannerBase
-  name: revolution banner
-  description: A banner displaying revolution. Viva!
+  name: 革命旗帜 | revolution banner
+  description: 一面展示革命的旗帜。万岁！ | A banner displaying revolution. Viva!
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -91,8 +89,8 @@
 - type: entity
   id: BannerSyndicate
   parent: BannerBase
-  name: syndicate banner
-  description: A banner from which, according to the syndicate, you should feel hatred for NT.
+  name: 辛迪加横幅 | syndicate banner
+  description: 据辛迪加所说，这是一面你应该对NT心怀仇恨的横幅。 | A banner from which, according to the syndicate, you should feel hatred for NT.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -101,8 +99,8 @@
 - type: entity
   id: BannerScience
   parent: BannerBase
-  name: science banner
-  description: A banner displaying the colors of the science department. Where science has no bounds, and regulations are rarely followed.
+  name: 科学旗帜 | science banner
+  description: 一面展示科学部色彩的旗帜。在这里，科学没有边界，规章也鲜少被遵守。 | A banner displaying the colors of the science department. Where science has no bounds, and regulations are rarely followed.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -111,8 +109,8 @@
 - type: entity
   id: BannerSecurity
   parent: BannerBase
-  name: security banner
-  description: A banner displaying the colors of the security department. You're surprised it's not vandalised.
+  name: 安保横幅 | security banner
+  description: 一条展示安保部门颜色的横幅。你很惊讶它居然没有被破坏。 | A banner displaying the colors of the security department. You're surprised it's not vandalised.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -121,8 +119,8 @@
 - type: entity
   id: BannerBlue
   parent: BannerBase
-  name: blue banner
-  description: A banner displaying the color blue. Dabudidabudai.
+  name: 蓝色横幅 | blue banner
+  description: 一个显示蓝色的横幅。哒布迪哒布代。 | A banner displaying the color blue. Dabudidabudai.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -131,8 +129,8 @@
 - type: entity
   id: BannerRed
   parent: BannerBase
-  name: red banner
-  description: A banner displaying the color red. The edgy one.
+  name: 红色横幅 | red banner
+  description: 一面展示红色的横幅。前卫的那一个。 | A banner displaying the color red. The edgy one.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -141,8 +139,8 @@
 - type: entity
   id: BannerYellow
   parent: BannerBase
-  name: yellow banner
-  description: A banner displaying the color yellow. Reminds you of ducks and lemon stands.
+  name: 黄色横幅 | yellow banner
+  description: 一条显示黄色的横幅。让你想起鸭子和柠檬摊。 | A banner displaying the color yellow. Reminds you of ducks and lemon stands.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi
@@ -151,8 +149,8 @@
 - type: entity
   id: BannerGreen
   parent: BannerBase
-  name: green banner
-  description: A banner displaying the color green. Grass, leaves, guacamole.
+  name: 绿色横幅 | green banner
+  description: 一条展示绿色的横幅。草地、树叶、牛油果酱。 | A banner displaying the color green. Grass, leaves, guacamole.
   components:
   - type: Sprite
     sprite: Structures/Decoration/banner.rsi

@@ -1,7 +1,7 @@
 - type: entity
   parent: BaseStructureComputer
   id: BaseComputer
-  name: computer
+  name: 计算机 | computer
   placement:
     mode: SnapgridCenter
   components:
@@ -17,7 +17,7 @@
     graph: Computer
     node: computer
     containers:
-      - board
+    - board
   - type: Computer
   - type: ApcPowerReceiver
     powerLoad: 50
@@ -38,18 +38,18 @@
       state: generic
     - map: ["computerLayerKeys"]
       state: generic_keys
-    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+    - map: ["enum.WiresVisualLayers.MaintenancePanel"]
       state: generic_panel_open
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.ComputerVisuals.Powered:
         computerLayerScreen:
-          True: { visible: true, shader: unshaded }
-          False: { visible: false }
+          true: {visible: true, shader: unshaded}
+          false: {visible: false}
         computerLayerKeys:
-          True: { visible: true, shader: unshaded }
-          False: { visible: true, shader: shaded }
+          true: {visible: true, shader: unshaded}
+          false: {visible: true, shader: shaded}
   - type: LitOnPowered
   - type: PointLight
     radius: 1.5

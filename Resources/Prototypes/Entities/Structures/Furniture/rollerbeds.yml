@@ -1,8 +1,8 @@
 - type: entity
   id: RollerBed
   parent: [BaseItem, BaseDeployFoldable]
-  name: rollerbed
-  description: Used to carry patients around without damaging them.
+  name: 滚轮床 | rollerbed
+  description: 用于运送病人且不会对其造成伤害。 | Used to carry patients around without damaging them.
   components:
   - type: Transform
     noRot: true
@@ -30,8 +30,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 20
         mask:
@@ -41,8 +40,7 @@
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:DoActsBehavior
@@ -57,23 +55,23 @@
     position: Down
     rotation: -90
     buckleOffset: "0,0.15"
-    buckleOnInteractHand: False
+    buckleOnInteractHand: false
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.StrapVisuals.State:
         buckledLayer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
         unfoldedLayer:
-          True: { visible: false }
-          False: { visible: true }
+          true: {visible: false}
+          false: {visible: true}
       enum.FoldedVisuals.State: # Copypasta from BaseFoldable b/c collections don't merge when overriding component prototypes.
         foldedLayer:
-          True: {visible: true}
-          False: {visible: false}
+          true: {visible: true}
+          false: {visible: false}
         unfoldedLayer:
-          True: {visible: false}
+          true: {visible: false}
   - type: StaticPrice
     price: 120
 
@@ -85,13 +83,13 @@
   - type: Foldable
     folded: true
   - type: Strap
-    enabled: False
+    enabled: false
 
 - type: entity
   id: CheapRollerBed
-  name: rollerbed
+  name: 滚轮床 | rollerbed
   parent: RollerBed
-  description: A run-down rollerbed. Used to carry patients around.
+  description: 一个破旧的滚轮床。用于运送病人。 | A run-down rollerbed. Used to carry patients around.
   components:
   - type: Item
     heldPrefix: cheap_rollerbed
@@ -114,13 +112,13 @@
   - type: Foldable
     folded: true
   - type: Strap
-    enabled: False
+    enabled: false
 
 - type: entity
   id: EmergencyRollerBed
-  name: rollerbed
+  name: 滚轮床 | rollerbed
   parent: RollerBed
-  description: A robust looking rollerbed used for emergencies.
+  description: 看起来结实的滚轮床，用于紧急情况。 | A robust looking rollerbed used for emergencies.
   components:
   - type: Item
     heldPrefix: emergency_rollerbed
@@ -143,4 +141,4 @@
   - type: Foldable
     folded: true
   - type: Strap
-    enabled: False
+    enabled: false

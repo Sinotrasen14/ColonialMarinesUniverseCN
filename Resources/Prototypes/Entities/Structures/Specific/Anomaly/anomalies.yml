@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: BaseAnomaly
-  name: anomaly
-  description: An impossible object. Should you be standing this close to it?
+  name: 异常 | anomaly
+  description: 一个不可能存在的物体。你真的应该站得离它这么近吗？ | An impossible object. Should you be standing this close to it?
   components:
   - type: Anomaly
     offset: 0, 0.15
@@ -23,8 +23,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 50
         mask:
@@ -289,8 +288,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.35
         density: 50
         mask:
@@ -298,8 +296,7 @@
         layer:
         - MobLayer
       portalFixture:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.48"
         mask:
         - FullTileMask
@@ -772,9 +769,9 @@
 
 - type: entity
   id: AnomalyFloraBulb
-  name: strange glowing berry
+  name: 奇异发光浆果 | strange glowing berry
   parent: BaseStructure
-  description: It's a beautiful strange glowing berry. It seems to have something growing inside it...
+  description: 这是一颗美丽而奇异的发光浆果。里面似乎有什么东西在生长…… | It's a beautiful strange glowing berry. It seems to have something growing inside it...
   suffix: Flora Anomaly
   components:
   - type: Transform
@@ -784,8 +781,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.2
   - type: InteractionOutline
   - type: Damageable
@@ -794,12 +790,11 @@
     damageContainer: Biological
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:SpawnEntitiesBehavior
         spawn:
           EffectAnomalyFloraBulb:
@@ -987,7 +982,7 @@
     departureSound: /Audio/Items/hiss.ogg
   - type: Tag
     tags:
-      - SpookyFog
+    - SpookyFog
   - type: DamageOnInteract
     damage:
       types:
@@ -1030,12 +1025,12 @@
   - type: TechAnomaly
   - type: DeviceLinkSource
     ports:
-      - Pulse
-      - Timer
+    - Pulse
+    - Timer
 
 - type: entity
   id: AnomalyTechBeam
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     sprite: /Textures/Effects/techanom_beam.rsi
@@ -1058,7 +1053,7 @@
     lifetime: 2.3
   - type: Tag
     tags:
-      - HideContextMenu
+    - HideContextMenu
 
 - type: entity
   id: AnomalySanta

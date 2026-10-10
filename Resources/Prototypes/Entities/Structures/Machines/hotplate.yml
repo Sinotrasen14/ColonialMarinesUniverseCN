@@ -1,22 +1,20 @@
 # heats an entity or solution placed on it
 - type: entity
   abstract: true
-  parent: [ BaseMachinePowered, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible ]
+  parent: [BaseMachinePowered, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible]
   id: BaseHeaterMachine
   components:
   - type: ItemPlacer
   - type: Fixtures
     fixtures:
       itemcollide:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.14,-0.05,0.15,0.25"
         layer:
         - HighImpassable
         hard: false
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.14,-0.05,0.15,0.25"
         mask:
         - TabletopMachineMask
@@ -36,8 +34,8 @@
 - type: entity
   parent: BaseHeaterMachine
   id: ChemistryHotplate
-  name: hotplate
-  description: "The descendent of the microwaves, our newest invention in beaker heating technology: the hotplate!"
+  name: 电热板 | hotplate
+  description: "微波炉的后代，我们烧杯加热技术的最新发明：电热板！ | The descendent of the microwaves, our newest invention in beaker heating technology: the hotplate!"
   components:
   - type: Sprite
     sprite: Structures/Machines/hotplate.rsi
@@ -64,5 +62,5 @@
     visuals:
       enum.SolutionHeaterVisuals.IsOn:
         enum.SolutionHeaterVisuals.IsOn:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}

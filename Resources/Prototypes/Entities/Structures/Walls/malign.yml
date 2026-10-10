@@ -2,7 +2,7 @@
   abstract: true
   parent: BaseStructureWall
   id: WallMalignBase
-  name: malign wall
+  name: 恶性壁 | malign wall
   components:
   - type: Sprite
     sprite: Structures/Walls/malign.rsi
@@ -17,7 +17,7 @@
 - type: entity
   parent: WallMalignBase
   id: WallMalignIndestructibleNoOcclusion
-  name: malign wall
+  name: 恶性壁 | malign wall
   suffix: indestructible, no occlusion
   components:
   - type: Godmode
@@ -25,7 +25,7 @@
 - type: entity
   parent: WallMalignBase
   id: WallMalignIndestructible
-  name: malign wall
+  name: 恶性壁 | malign wall
   suffix: indestructible
   components:
   - type: Occluder
@@ -34,7 +34,7 @@
 - type: entity
   parent: WallMalignBase
   id: WallMalign
-  name: malign wall
+  name: 恶性壁 | malign wall
   components:
   - type: Occluder
   - type: Damageable
@@ -43,8 +43,7 @@
     damageContainer: StructuralInorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior

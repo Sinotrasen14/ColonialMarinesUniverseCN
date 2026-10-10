@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructureHealth
   id: TeslaCoil
-  name: tesla coil
-  description: A machine that converts lightning strikes into an electric current.
+  name: 特斯拉线圈 | tesla coil
+  description: 一种将雷击转化为电流的机器。 | A machine that converts lightning strikes into an electric current.
   placement:
     mode: SnapgridCenter
   components:
@@ -13,8 +13,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 190
         mask:
@@ -26,29 +25,28 @@
     snapCardinals: true
     noRot: true
     layers:
-      - state: coil
-        map: ["enabled"]
-      - state: coilhit
-        visible: false
-        map: ["hit"]
+    - state: coil
+      map: ["enabled"]
+    - state: coilhit
+      visible: false
+      map: ["hit"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.TeslaCoilVisuals.Enabled:
         enabled:
-          True: { state: coil_open }
-          False: { state: coil }
+          true: {state: coil_open}
+          false: {state: coil}
       enum.TeslaCoilVisuals.Lightning:
         hit:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: LightningSparking
   - type: AnimationPlayer
   - type: NodeContainer
     examinable: true
     nodes:
-      input:
-        !type:CableDeviceNode
+      input: !type:CableDeviceNode
         nodeGroupID: HVPower
   - type: PowerMonitoringDevice
     group: Generator
@@ -91,12 +89,11 @@
       sprite: Structures/Power/Generation/Tesla/coil_cracks.rsi
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 225
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
@@ -113,8 +110,8 @@
 - type: entity
   parent: BaseStructureHealth
   id: TeslaGroundingRod
-  name: grounding rod
-  description: A machine that keeps lightning from striking too far away.
+  name: 接地棒 | grounding rod
+  description: 一台防止闪电击中过远地方的机器。 | A machine that keeps lightning from striking too far away.
   placement:
     mode: SnapgridCenter
   components:
@@ -125,8 +122,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 110
         mask:
@@ -138,22 +134,22 @@
     noRot: true
     snapCardinals: true
     layers:
-      - state: grounding_rod
-        map: ["power"]
-      - state: grounding_rodhit
-        visible: false
-        map: ["hit"]
+    - state: grounding_rod
+      map: ["power"]
+    - state: grounding_rodhit
+      visible: false
+      map: ["hit"]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.TeslaCoilVisuals.Lightning:
         hit:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.TeslaCoilVisuals.Enabled:
         power:
-          True: { state: grounding_rod }
-          False: { state: grounding_rod_open }
+          true: {state: grounding_rod}
+          false: {state: grounding_rod_open}
   - type: LightningSparking
   - type: LightningTarget
     priority: 3
@@ -176,12 +172,11 @@
       sprite: Structures/Power/Generation/Tesla/groundingrod_cracks.rsi
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 300
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak

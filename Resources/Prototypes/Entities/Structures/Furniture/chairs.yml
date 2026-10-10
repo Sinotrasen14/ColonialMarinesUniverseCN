@@ -1,11 +1,10 @@
-
 #region Bases
 
 - type: entity
   abstract: true
   id: SeatBase
-  name: chair
-  description: You sit in this. Either by will or force.
+  name: 椅子 | chair
+  description: 你坐在这上面。要么自愿，要么被迫。 | You sit in this. Either by will or force.
   placement:
     mode: PlaceFree
   components:
@@ -18,8 +17,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.2
         density: 100
         mask:
@@ -46,7 +44,7 @@
   abstract: true
   parent: SeatBase
   id: UnanchoredChairBase
-  name: chair
+  name: 椅子 | chair
   components:
   - type: Anchorable
   - type: Rotatable
@@ -56,7 +54,7 @@
   abstract: true
   parent: UnanchoredChairBase
   id: ChairBase
-  name: chair
+  name: 椅子 | chair
   placement:
     mode: SnapgridCenter
   components:
@@ -70,7 +68,7 @@
   abstract: true
   parent: UnanchoredChairBase
   id: OfficeChairBase
-  name: chair
+  name: 椅子 | chair
   components:
   - type: Rotatable
     rotateWhileAnchored: true
@@ -78,7 +76,7 @@
 #Starts unanchored, can be used as a vehicle
 - type: entity
   abstract: true
-  parent: [ OfficeChairBase, BaseVehicleStrap ]
+  parent: [OfficeChairBase, BaseVehicleStrap]
   id: OfficeChairVehicleBase
   components:
   - type: Physics
@@ -96,7 +94,7 @@
   abstract: true
   parent: OfficeChairBase
   id: StoolBase
-  name: stool
+  name: 凳子 | stool
   components:
   - type: Physics
     bodyType: Static
@@ -106,9 +104,9 @@
 #endregion
 
 - type: entity
-  parent: [ ChairBase, StructureHealthFurniture ]
+  parent: [ChairBase, StructureHealthFurniture]
   id: Chair
-  name: chair
+  name: 椅子 | chair
   components:
   - type: Sprite
     state: chair
@@ -119,21 +117,20 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds: &ThresholdsFurnitureNormalSteel
-    - trigger: &DamageFurnitureNormal
-        !type:DamageTrigger
+    - trigger: &DamageFurnitureNormal !type:DamageTrigger
         damage: 40
       behaviors:
       - &SoundMetalBreak !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
-      - &SpawnSteel01 !type:SpawnEntitiesBehavior
+      - !type:SpawnEntitiesBehavior
         spawn:
           SheetSteel1: &Min0Max1
             min: 0
             max: 1
 
 - type: entity
-  name: chair
+  name: 椅子 | chair
   id: ChairGreyscale
   parent: Chair
   suffix: White
@@ -142,10 +139,10 @@
     state: chair-greyscale
 
 - type: entity
-  parent: [ ChairBase, StructureHealthFurniture ]
+  parent: [ChairBase, StructureHealthFurniture]
   id: Stool
-  name: stool
-  description: Apply butt.
+  name: 粪便 | stool
+  description: 涂抹臀部。 | Apply butt.
   components:
   - type: Sprite
     state: stool
@@ -158,9 +155,9 @@
     thresholds: *ThresholdsFurnitureNormalSteel
 
 - type: entity
-  parent: [ StoolBase, StructureHealthFurniture ]
+  parent: [StoolBase, StructureHealthFurniture]
   id: StoolBar
-  name: bar stool
+  name: 吧台凳 | bar stool
   components:
   - type: Sprite
     state: bar
@@ -173,9 +170,9 @@
     thresholds: *ThresholdsFurnitureNormalSteel
 
 - type: entity
-  parent: [ StoolBase, StructureHealthFurniture ]
+  parent: [StoolBase, StructureHealthFurniture]
   id: ChairBrass
-  name: brass chair
+  name: 黄铜椅子 | brass chair
   components:
   - type: Sprite
     state: brass_chair
@@ -194,9 +191,9 @@
           SheetBrass1: *Min0Max1
 
 - type: entity
-  parent: [ OfficeChairVehicleBase, StructureHealthFurniture ]
+  parent: [OfficeChairVehicleBase, StructureHealthFurniture]
   id: ChairOfficeLight
-  name: white office chair
+  name: 白色办公椅 | white office chair
   components:
   - type: Sprite
     state: office-white
@@ -211,7 +208,7 @@
 - type: entity
   parent: OfficeChairVehicleBase
   id: ChairOfficeDark
-  name: dark office chair
+  name: 深色办公椅 | dark office chair
   components:
   - type: Sprite
     state: office-dark
@@ -220,10 +217,10 @@
     node: chairOfficeDark
 
 - type: entity
-  parent: [ ChairBase, StructureHealthFurniture ]
+  parent: [ChairBase, StructureHealthFurniture]
   id: ComfyChair
-  name: comfy chair
-  description: It looks comfy.
+  name: 舒适椅子 | comfy chair
+  description: 它看起来很舒服。 | It looks comfy.
   components:
   - type: Sprite
     state: comfy
@@ -236,10 +233,10 @@
     thresholds: *ThresholdsFurnitureNormalSteel
 
 - type: entity
-  parent: [ ChairBase, StructureHealthFurniture ]
+  parent: [ChairBase, StructureHealthFurniture]
   id: ChairPilotSeat
-  name: pilot seat
-  description: The pilot seat of a prestigious ship.
+  name: 驾驶员座椅 | pilot seat
+  description: 一艘著名飞船的驾驶员座椅。 | The pilot seat of a prestigious ship.
   components:
   - type: Sprite
     state: shuttle
@@ -252,9 +249,9 @@
     thresholds: *ThresholdsFurnitureNormalSteel
 
 - type: entity
-  parent: [ UnanchoredChairBase, StructureHealthFurniture ]
+  parent: [UnanchoredChairBase, StructureHealthFurniture]
   id: ChairWood
-  name: wooden chair
+  name: 木椅 | wooden chair
   components:
   - type: Sprite
     state: wooden
@@ -287,8 +284,8 @@
 - type: entity
   parent: ChairWood
   id: ChairRitual
-  name: ritual chair
-  description: Looks uncomfortable.
+  name: 仪式椅 | ritual chair
+  description: 看起来不舒服。 | Looks uncomfortable.
   components:
   - type: Sprite
     state: ritual
@@ -297,10 +294,10 @@
     node: chairRitual
 
 - type: entity
-  parent: [ UnanchoredChairBase, StructureHealthFurniture ]
-  name: meat chair
+  parent: [UnanchoredChairBase, StructureHealthFurniture]
+  name: 肉椅 | meat chair
   id: ChairMeat
-  description: Uncomfortably sweaty.
+  description: 不舒服地出汗。 | Uncomfortably sweaty.
   components:
   - type: Sprite
     state: meat
@@ -321,10 +318,10 @@
           MaterialSheetMeat1: *Min0Max1
 
 - type: entity
-  name: cursed chair
+  name: 被诅咒的椅子 | cursed chair
   id: ChairCursed
   parent: ChairWood
-  description: It's staring back.
+  description: 它正回望着你。 | It's staring back.
   components:
   - type: Sprite
     state: cursed
@@ -343,10 +340,10 @@
     node: chairCursed
 
 - type: entity
-  parent: [ UnanchoredChairBase, StructureHealthFurniture ]
+  parent: [UnanchoredChairBase, StructureHealthFurniture]
   id: ChairWeb
-  name: web chair
-  description: For true web developers.
+  name: 网络椅子 | web chair
+  description: 给真正的网络开发者。 | For true web developers.
   components:
   - type: Sprite
     sprite: Structures/Web/chair.rsi
@@ -354,8 +351,7 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Weapons/slash.ogg"
+        path: "/Audio/Weapons/slash.ogg"
   - type: Damageable
     damageModifierSet: ThreadMod
   - type: Destructible
@@ -373,8 +369,8 @@
 - type: entity
   parent: [SeatBase, BaseDeployFoldable, StructureHealthFurniture]
   id: ChairFolding
-  name: folding chair
-  description: If you carry six of these you become the coolest kid at church.
+  name: 折叠椅 | folding chair
+  description: 如果你带上六把这样的椅子，你就会成为教堂里最酷的孩子。 | If you carry six of these you become the coolest kid at church.
   components:
   - type: Rotatable
   - type: Sprite
@@ -417,13 +413,13 @@
   - type: Foldable
     folded: true
   - type: Strap
-    enabled: False
+    enabled: false
 
 - type: entity
-  parent: [ ChairBase, StructureHealthFurniture ]
+  parent: [ChairBase, StructureHealthFurniture]
   id: SteelBench
-  name: steel bench
-  description: A long chair made for a metro. Really standard design.
+  name: 钢制长椅 | steel bench
+  description: 为地铁设计的长椅。非常标准的设计。 | A long chair made for a metro. Really standard design.
   components:
   - type: Sprite
     state: steel-bench
@@ -436,10 +432,10 @@
     thresholds: *ThresholdsFurnitureNormalSteel
 
 - type: entity
-  parent: [ UnanchoredChairBase, StructureHealthFurnitureWeak ]
+  parent: [UnanchoredChairBase, StructureHealthFurnitureWeak]
   id: CardStool
-  name: cardboard stool
-  description: Make sure you sit *really* gently.
+  name: 纸板凳 | cardboard stool
+  description: 一定要*非常*轻柔地坐上去。 | Make sure you sit *really* gently.
   components:
   - type: Sprite
     state: card-stool
@@ -450,8 +446,7 @@
     damageModifierSet: CardboardMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 5
       behaviors:
       - !type:PlaySoundBehavior
@@ -462,10 +457,10 @@
           MaterialCardboard: *Min0Max1
 
 - type: entity
-  parent: [ ChairBase, StructureHealthFurniture ]
+  parent: [ChairBase, StructureHealthFurniture]
   id: WoodenBench
-  name: wooden bench
-  description: Did you get a splinter? Well, at least it’s eco friendly.
+  name: 木制长椅 | wooden bench
+  description: 你被木刺扎到了吗？好吧，至少它是环保的。 | Did you get a splinter? Well, at least it’s eco friendly.
   components:
   - type: Sprite
     state: wooden-bench
@@ -494,9 +489,9 @@
     burnDurationMax: 620
 
 - type: entity
-  parent: [ StoolBase, StructureHealthFurniture ]
+  parent: [StoolBase, StructureHealthFurniture]
   id: ChairXeno
-  name: xeno chair
+  name: 异形椅 | xeno chair
   components:
   - type: Sprite
     state: xeno-chair

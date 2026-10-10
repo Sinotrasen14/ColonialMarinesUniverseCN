@@ -19,26 +19,25 @@
 - type: entity
   parent: BaseHoloSign
   id: HolosignWetFloor
-  name: wet floor sign
-  description: The words flicker as if they mean nothing.
+  name: 小心地滑标志 | wet floor sign
+  description: 文字闪烁不定，仿佛毫无意义。 | The words flicker as if they mean nothing.
   components:
   - type: Sprite
     sprite: Structures/Holo/wetfloor.rsi
     state: icon
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 30
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: BaseHoloSign
   id: HoloFan
-  name: holofan
-  description: A barrier of hard light that blocks air, but nothing else.
+  name: 全息风扇 | holofan
+  description: 一道硬光屏障，能阻挡空气，但无法阻挡其他任何东西。 | A barrier of hard light that blocks air, but nothing else.
   components:
   - type: Sprite
     sprite: Structures/Holo/holofan.rsi
@@ -46,27 +45,25 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
-            bounds: "-0.5,-0.5,0.5,0.5"
+        shape: !type:PhysShapeAabb
+          bounds: "-0.5,-0.5,0.5,0.5"
   # - type: TimedDespawn # CMU14
   #   lifetime: 180
   - type: Airtight
     noAirWhenFullyAirBlocked: false
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 30
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: BaseHoloSign
   id: HoloPeel
-  name: holopeel
-  description: A banana peel made of slippery hard light, watch your step!
+  name: 全息香蕉皮 | holopeel
+  description: 由光滑的硬光制成的香蕉皮，小心脚下！ | A banana peel made of slippery hard light, watch your step!
   components:
   - type: Sprite
     sprite: Structures/Holo/peel.rsi
@@ -81,8 +78,7 @@
   - type: Fixtures
     fixtures:
       slips:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.2,0.2,0.2"
         hard: false
         layer:
@@ -91,55 +87,52 @@
     lifetime: 30
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 10
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
 
 - type: entity
   parent: BaseHoloSign
   id: HolosignSecurity
-  name: holographic barrier
-  description: A barrier of hard light that blocks movement, but pretty weak.
+  name: 全息屏障 | holographic barrier
+  description: 一道阻挡移动的硬光屏障，但相当脆弱。 | A barrier of hard light that blocks movement, but pretty weak.
   components:
-    - type: Physics
-      canCollide: true
-    - type: Sprite
-      sprite: Structures/Holo/security.rsi
-      state: icon
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.3,-0.3,0.3,0.3"
-          mask:
-            - TableMask
-          layer:
-            - TableLayer
-    - type: TimedDespawn
-      lifetime: 180
-    - type: PointLight
-      enabled: true
-      radius: 3
-      color: red
-    - type: Climbable
-    - type: Destructible
-      thresholds:
-      - trigger:
-          !type:DamageTrigger
-          damage: 30
-        behaviors:
-        - !type:DoActsBehavior
-          acts: [ "Destruction" ]
+  - type: Physics
+    canCollide: true
+  - type: Sprite
+    sprite: Structures/Holo/security.rsi
+    state: icon
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: "-0.3,-0.3,0.3,0.3"
+        mask:
+        - TableMask
+        layer:
+        - TableLayer
+  - type: TimedDespawn
+    lifetime: 180
+  - type: PointLight
+    enabled: true
+    radius: 3
+    color: red
+  - type: Climbable
+  - type: Destructible
+    thresholds:
+    - trigger: !type:DamageTrigger
+        damage: 30
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
 
 - type: entity
   parent: BaseHoloSign
   id: XenoborgDeflectorField
-  name: deflector field
-  description: An energy matrix, comprised of interlocking fields that deflect projectiles. Powerful, but short-lived.
+  name: 偏导场 | deflector field
+  description: 一个能量矩阵，由相互咬合的偏导场构成，能够偏转射弹。威力强大，但持续时间短暂。 | An energy matrix, comprised of interlocking fields that deflect projectiles. Powerful, but short-lived.
   components:
   - type: Physics
     bodyType: Static
@@ -150,8 +143,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.3,-0.3,0.3,0.3"
         hard: true
         mask:
@@ -171,8 +163,8 @@
 - type: entity
   parent: BaseHoloSign
   id: HolosignForcefield
-  name: holographic force field
-  description: A powerful temporal containment field that doesn't let anything through, not even a tesla or singularity.
+  name: 全息力场 | holographic force field
+  description: 一个强大的时间 containment 场，任何东西都无法穿过，连特斯拉或奇点也不行。 | A powerful temporal containment field that doesn't let anything through, not even a tesla or singularity.
   components:
   - type: Physics
     canCollide: true
@@ -182,8 +174,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -199,9 +190,8 @@
     throwForce: 0
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 60
       behaviors:
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]

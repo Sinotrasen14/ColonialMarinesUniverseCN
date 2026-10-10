@@ -44,8 +44,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.4,0.35,0.4,0.5"
         density: 190
         mask:
@@ -64,8 +63,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageMachineFlimsy
-        !type:DamageTrigger
+    - trigger: &DamageMachineFlimsy !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:EmptyAllContainersBehaviour
@@ -74,11 +72,11 @@
           collection: GlassBreak
 
 - type: entity
-  parent: [ BaseWallLight, BaseLightHousingDestructible ]
+  parent: [BaseWallLight, BaseLightHousingDestructible]
   id: AlwaysPoweredWallLight
-  name: light
+  name: 灯 | light
   suffix: Always powered
-  description: "An always powered light."
+  description: "一盏常亮的灯。 | An always powered light."
   components:
   - type: Construction
     graph: LightFixture
@@ -104,9 +102,9 @@
 - type: entity
   parent: AlwaysPoweredWallLight
   id: PoweredlightEmpty
-  name: light
+  name: 灯 | light
   suffix: Empty
-  description: "A light fixture. Draws power and produces light when equipped with a light tube."
+  description: "一个灯具。装备灯管后消耗电力并产生光照。 | A light fixture. Draws power and produces light when equipped with a light tube."
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/Lighting/light-tube.rsi
@@ -129,9 +127,9 @@
     range: 200
   - type: DeviceLinkSink
     ports:
-      - On
-      - Off
-      - Toggle
+    - On
+    - Off
+    - Toggle
   - type: Appearance
   - type: PoweredLightVisuals
     blinkingSound:
@@ -253,56 +251,55 @@
 
 #Small lights
 - type: entity
-  parent: [ BaseWallLight, BaseLightHousingDestructible ]
+  parent: [BaseWallLight, BaseLightHousingDestructible]
   id: SmallLight
-  name: small light
+  name: 小灯 | small light
   suffix: Always Powered
-  description: "An always powered light."
+  description: "一个常亮的灯。 | An always powered light."
   components:
-    - type: AmbientSound
-      volume: -15
-      range: 2
-      sound:
-        path: /Audio/Ambience/Objects/light_hum.ogg
-    - type: Sprite
-      sprite: Structures/Wallmounts/Lighting/light-small.rsi
-      state: base
-    - type: PointLight
-      color: "#FFD1A3"
-      energy: 1.0
-      radius: 6
-      softness: 1.1
-      enabled: true
-    - type: Fixtures
-      fixtures:
-        fix1:
-          shape:
-            !type:PhysShapeAabb
-            bounds: "-0.1,0.255,0.1,0.5"
-          density: 190
-          mask:
-          - None
-          layer:
-          - TabletopMachineLayer
-    - type: Destructible
-      thresholds:
-      - trigger: *DamageMachineFlimsy
-        behaviors:
-        - !type:SpawnEntitiesBehavior
-          spawn:
-            SheetSteel1:
-              min: 1
-              max: 1
-    - type: Construction
-      graph: LightFixture
-      node: bulbLight
+  - type: AmbientSound
+    volume: -15
+    range: 2
+    sound:
+      path: /Audio/Ambience/Objects/light_hum.ogg
+  - type: Sprite
+    sprite: Structures/Wallmounts/Lighting/light-small.rsi
+    state: base
+  - type: PointLight
+    color: "#FFD1A3"
+    energy: 1.0
+    radius: 6
+    softness: 1.1
+    enabled: true
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape: !type:PhysShapeAabb
+          bounds: "-0.1,0.255,0.1,0.5"
+        density: 190
+        mask:
+        - None
+        layer:
+        - TabletopMachineLayer
+  - type: Destructible
+    thresholds:
+    - trigger: *DamageMachineFlimsy
+      behaviors:
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          SheetSteel1:
+            min: 1
+            max: 1
+  - type: Construction
+    graph: LightFixture
+    node: bulbLight
 
 - type: entity
   parent: SmallLight
   id: PoweredSmallLightEmpty
-  name: small light
+  name: 小灯 | small light
   suffix: Empty
-  description: "A light fixture. Draws power and produces light when equipped with a light bulb."
+  description: "一个灯具。装上灯泡后就会消耗电力并产生光亮。 | A light fixture. Draws power and produces light when equipped with a light bulb."
   components:
   - type: Sprite
     sprite: Structures/Wallmounts/Lighting/light-small.rsi
@@ -334,9 +331,9 @@
       burned: burned
   - type: DeviceLinkSink
     ports:
-      - On
-      - Off
-      - Toggle
+    - On
+    - Off
+    - Toggle
   - type: DamageOnInteract
     damage:
       types:
@@ -415,10 +412,10 @@
 
 #Emergency Lights
 - type: entity
-  parent: [ BaseWallLight, BaseLightHousingDestructible ]
+  parent: [BaseWallLight, BaseLightHousingDestructible]
   id: EmergencyLight
-  name: emergency light
-  description: A small light with an internal battery that turns on as soon as it stops receiving any power. Nanotrasen technology allows it to adapt its color to alert crew to the conditions of the station.
+  name: 应急灯 | emergency light
+  description: 一种内置电池的小型灯具，一旦停止接收电力就会立即亮起。纳米传思技术使其能够调整颜色，以向船员警示空间站的状态。 | A small light with an internal battery that turns on as soon as it stops receiving any power. Nanotrasen technology allows it to adapt its color to alert crew to the conditions of the station.
   components:
   - type: PointLight
     enabled: false
@@ -445,12 +442,12 @@
     offset: 0, 1
     layers:
     - state: base
-      map: [ "enum.EmergencyLightVisualLayers.Base" ]
+      map: ["enum.EmergencyLightVisualLayers.Base"]
     - state: emergency_light_off
-      map: [ "enum.EmergencyLightVisualLayers.LightOff" ]
+      map: ["enum.EmergencyLightVisualLayers.LightOff"]
       color: "#7CFC00"
     - state: emergency_light_on
-      map: [ "enum.EmergencyLightVisualLayers.LightOn" ]
+      map: ["enum.EmergencyLightVisualLayers.LightOn"]
       color: "#7CFC00"
       shader: "unshaded"
       visible: false

@@ -1,9 +1,9 @@
 - type: entity
-  parent: [ BaseWallmountMachine, StructureHealthMachineWeak ]
+  parent: [BaseWallmountMachine, StructureHealthMachineWeak]
   id: WallmountTelevision
   suffix: entertainment
-  name: television
-  description: Finally, some decent reception around here...
+  name: 电视 | television
+  description: 终于，这附近能收到点像样的信号了…… | Finally, some decent reception around here...
   components:
   - type: Construction
     graph: WallmountTelevision
@@ -29,8 +29,8 @@
   - type: ActivatableUIRequiresVision
   - type: UserInterface
     interfaces:
-        enum.SurveillanceCameraMonitorUiKey.Key:
-          type: SurveillanceCameraMonitorBoundUserInterface
+      enum.SurveillanceCameraMonitorUiKey.Key:
+        type: SurveillanceCameraMonitorBoundUserInterface
   - type: PointLight
     radius: 1.5
     energy: 3.0
@@ -39,8 +39,7 @@
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -61,10 +60,10 @@
   - type: StationAiWhitelist
 
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
   id: WallmountTelevisionFrame
-  name: television frame
-  description: Finally, some decent reception around here...
+  name: 电视框架 | television frame
+  description: 终于，这附近能收到像样的信号了…… | Finally, some decent reception around here...
   components:
   - type: Construction
     graph: WallmountTelevision
@@ -79,8 +78,7 @@
       state: television_wallscreen
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior

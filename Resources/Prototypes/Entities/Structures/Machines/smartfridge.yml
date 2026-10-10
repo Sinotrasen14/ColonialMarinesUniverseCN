@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   parent: [BaseStructureDynamic, ConstructibleMachine, BaseMachinePowered, BaseConstructibleMachineDestructible]
   id: SmartFridge
-  name: SmartFridge
-  description: A refrigerated storage unit for keeping items cold and fresh.
+  name: 智能冰箱 | SmartFridge
+  description: 用于保持物品冷藏新鲜的冷藏储存单元。 | A refrigerated storage unit for keeping items cold and fresh.
   components:
   - type: StationAiWhitelist
   - type: Vocalizer
@@ -81,12 +81,11 @@
     bodyType: Static
   - type: Transform
     noRot: true
-    anchored: True
+    anchored: true
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         mask:
         - MachineMask
@@ -119,14 +118,14 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         powered-base:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         powered-open:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
         powered-closed:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: AmbientMusicMarkerMedical
 
 - type: entity

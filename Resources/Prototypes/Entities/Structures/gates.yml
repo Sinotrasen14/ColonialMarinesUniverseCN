@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseItem, BaseItemDestructible ]
+  parent: [BaseItem, BaseItemDestructible]
   id: LogicEmptyCircuit
-  name: empty circuit
-  description: Something seems to be missing.
+  name: 空电路 | empty circuit
+  description: 似乎缺少了什么。 | Something seems to be missing.
   components:
   - type: Sprite
     drawdepth: ThinPipe
@@ -28,8 +28,8 @@
 - type: entity
   parent: BaseLogicItem
   id: LogicGateOr
-  name: logic gate
-  description: A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
+  name: 逻辑门 | logic gate
+  description: 一个具有两个输入和一个输出的逻辑门。技术人员可以使用螺丝刀改变其工作模式。 | A logic gate with two inputs and one output. Technicians can change its mode of operation using a screwdriver.
   suffix: Or
   components:
   - type: Sprite
@@ -38,15 +38,15 @@
     - state: logic
     - state: logic_a
       visible: false
-      map: [ "enum.LogicGateLayers.InputA" ]
+      map: ["enum.LogicGateLayers.InputA"]
     - state: logic_b
       visible: false
-      map: [ "enum.LogicGateLayers.InputB" ]
+      map: ["enum.LogicGateLayers.InputB"]
     - state: logic_o
       visible: false
-      map: [ "enum.LogicGateLayers.Output" ]
+      map: ["enum.LogicGateLayers.Output"]
     - state: or
-      map: [ "enum.LogicGateLayers.Gate" ]
+      map: ["enum.LogicGateLayers.Gate"]
   - type: LogicGate
   - type: UseDelay
     delay: 0.5
@@ -66,24 +66,24 @@
     visuals:
       enum.LogicGateVisuals.Gate:
         enum.LogicGateLayers.Gate:
-          Or: { state: or }
-          And: { state: and }
-          Xor: { state: xor }
-          Nor: { state: nor }
-          Nand: { state: nand }
-          Xnor: { state: xnor }
+          Or: {state: or}
+          And: {state: and}
+          Xor: {state: xor}
+          Nor: {state: nor}
+          Nand: {state: nand}
+          Xnor: {state: xnor}
       enum.LogicGateVisuals.InputA:
         enum.LogicGateLayers.InputA:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.LogicGateVisuals.InputB:
         enum.LogicGateLayers.InputB:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.LogicGateVisuals.Output:
         enum.LogicGateLayers.Output:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
 - type: entity
   parent: LogicGateOr
   id: LogicGateAnd
@@ -95,15 +95,15 @@
     - state: logic
     - state: logic_a
       visible: false
-      map: [ "enum.LogicGateLayers.InputA" ]
+      map: ["enum.LogicGateLayers.InputA"]
     - state: logic_b
       visible: false
-      map: [ "enum.LogicGateLayers.InputB" ]
+      map: ["enum.LogicGateLayers.InputB"]
     - state: logic_o
       visible: false
-      map: [ "enum.LogicGateLayers.Output" ]
+      map: ["enum.LogicGateLayers.Output"]
     - state: and
-      map: [ "enum.LogicGateLayers.Gate" ]
+      map: ["enum.LogicGateLayers.Gate"]
   - type: LogicGate
     gate: And
 
@@ -118,15 +118,15 @@
     - state: logic
     - state: logic_a
       visible: false
-      map: [ "enum.LogicGateLayers.InputA" ]
+      map: ["enum.LogicGateLayers.InputA"]
     - state: logic_b
       visible: false
-      map: [ "enum.LogicGateLayers.InputB" ]
+      map: ["enum.LogicGateLayers.InputB"]
     - state: logic_o
       visible: false
-      map: [ "enum.LogicGateLayers.Output" ]
+      map: ["enum.LogicGateLayers.Output"]
     - state: xor
-      map: [ "enum.LogicGateLayers.Gate" ]
+      map: ["enum.LogicGateLayers.Gate"]
   - type: LogicGate
     gate: Xor
 
@@ -141,15 +141,15 @@
     - state: logic
     - state: logic_a
       visible: false
-      map: [ "enum.LogicGateLayers.InputA" ]
+      map: ["enum.LogicGateLayers.InputA"]
     - state: logic_b
       visible: false
-      map: [ "enum.LogicGateLayers.InputB" ]
+      map: ["enum.LogicGateLayers.InputB"]
     - state: logic_o
       visible: false
-      map: [ "enum.LogicGateLayers.Output" ]
+      map: ["enum.LogicGateLayers.Output"]
     - state: nor
-      map: [ "enum.LogicGateLayers.Gate" ]
+      map: ["enum.LogicGateLayers.Gate"]
   - type: LogicGate
     gate: Nor
 
@@ -164,15 +164,15 @@
     - state: logic
     - state: logic_a
       visible: false
-      map: [ "enum.LogicGateLayers.InputA" ]
+      map: ["enum.LogicGateLayers.InputA"]
     - state: logic_b
       visible: false
-      map: [ "enum.LogicGateLayers.InputB" ]
+      map: ["enum.LogicGateLayers.InputB"]
     - state: logic_o
       visible: false
-      map: [ "enum.LogicGateLayers.Output" ]
+      map: ["enum.LogicGateLayers.Output"]
     - state: nand
-      map: [ "enum.LogicGateLayers.Gate" ]
+      map: ["enum.LogicGateLayers.Gate"]
   - type: LogicGate
     gate: Nand
 
@@ -187,23 +187,23 @@
     - state: logic
     - state: logic_a
       visible: false
-      map: [ "enum.LogicGateLayers.InputA" ]
+      map: ["enum.LogicGateLayers.InputA"]
     - state: logic_b
       visible: false
-      map: [ "enum.LogicGateLayers.InputB" ]
+      map: ["enum.LogicGateLayers.InputB"]
     - state: logic_o
       visible: false
-      map: [ "enum.LogicGateLayers.Output" ]
+      map: ["enum.LogicGateLayers.Output"]
     - state: xnor
-      map: [ "enum.LogicGateLayers.Gate" ]
+      map: ["enum.LogicGateLayers.Gate"]
   - type: LogicGate
     gate: Xnor
 
 - type: entity
   parent: BaseLogicItem
   id: EdgeDetector
-  name: edge detector
-  description: Splits rising and falling edges into unique pulses and detects how edgy you are.
+  name: 边缘检测器 | edge detector
+  description: 将上升沿和下降沿分割为独特的脉冲，并检测你有多前卫。 | Splits rising and falling edges into unique pulses and detects how edgy you are.
   components:
   - type: Sprite
     layers:
@@ -226,8 +226,8 @@
 - type: entity
   parent: BaseLogicItem
   id: PowerSensor
-  name: power sensor
-  description: Generates signals in response to powernet changes. Can be cycled between cable voltages.
+  name: 电力传感器 | power sensor
+  description: 响应电力网络变化生成信号。可在电缆电压之间循环切换。 | Generates signals in response to powernet changes. Can be cycled between cable voltages.
   components:
   - type: Sprite
     layers:
@@ -249,15 +249,12 @@
   - type: NodeContainer
     examinable: true
     nodes:
-      hv:
-        !type:CableDeviceNode
+      hv: !type:CableDeviceNode
         nodeGroupID: HVPower
-      mv:
-        !type:CableDeviceNode
+      mv: !type:CableDeviceNode
         nodeGroupID: MVPower
         enabled: false
-      lv:
-        !type:CableDeviceNode
+      lv: !type:CableDeviceNode
         nodeGroupID: Apc
         enabled: false
   - type: DeviceLinkSource
@@ -273,8 +270,8 @@
 - type: entity
   parent: BaseLogicItem
   id: MemoryCell
-  name: memory cell
-  description: A D-Latch circuit that stores a signal which can be changed depending on input and enable ports.
+  name: 存储单元 | memory cell
+  description: 一种D锁存器电路，用于存储可根据输入端口和使能端口而改变信号。 | A D-Latch circuit that stores a signal which can be changed depending on input and enable ports.
   components:
   - type: Sprite
     layers:
@@ -294,8 +291,8 @@
 - type: entity
   parent: BaseLogicItem
   id: RandomGate
-  name: random gate
-  description: A logic gate that outputs a random signal when input changes.
+  name: 随机门 | random gate
+  description: 当输入变化时输出随机信号的逻辑门。 | A logic gate that outputs a random signal when input changes.
   components:
   - type: Sprite
     layers:

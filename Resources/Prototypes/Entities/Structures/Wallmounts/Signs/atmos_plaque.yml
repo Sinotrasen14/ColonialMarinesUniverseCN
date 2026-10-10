@@ -1,7 +1,7 @@
-﻿- type: entity
+- type: entity
   parent: MarkerBase
   id: PlaqueAtmos
-  name: atmos plaque spawner
+  name: 大气牌匾生成器 | atmos plaque spawner
   suffix: Spawner
   components:
   - type: Sprite
@@ -27,9 +27,9 @@
 - type: entity
   parent: BaseSign
   id: PlaqueAtmosFEA
-  name: FEA Atmospherics Division plaque
+  name: 大气部FEA纪念牌 | FEA Atmospherics Division plaque
   description: This plaque commemorates the fall of the Atmos FEA division. For all the charred, dizzy, and brittle men who have died in its hands.
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: atmosplaque
@@ -37,16 +37,16 @@
 - type: entity
   parent: PlaqueAtmosFEA
   id: PlaqueAtmosLINDA
-  name: LINDA Atmospherics Division plaque
+  name: 琳达大气部门纪念牌 | LINDA Atmospherics Division plaque
   description: This plaque commemorates the fall of the Atmos LINDA division. For all the charred, dizzy, and brittle men who have died in its hands.
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 - type: entity
   parent: PlaqueAtmosFEA
   id: PlaqueAtmosZAS
   name: ZAS Atmospherics Division plaque
   description: This plaque commemorates the fall of the Atmos ZAS division. For all the charred, dizzy, and brittle men who have died in its hands.
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
 
 # If you get the ZUM plaque it means your round will be blessed with good engineering luck.
 - type: entity
@@ -54,7 +54,7 @@
   id: PlaqueAtmosZUM
   name: ZUM Atmospherics Division plaque
   description: This plaque commemorates the rise of the Atmos ZUM division. May they carry the torch that the Atmos ZAS, LINDA and FEA divisions left behind.
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: zumosplaque

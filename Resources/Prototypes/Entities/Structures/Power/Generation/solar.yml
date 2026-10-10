@@ -1,7 +1,7 @@
 - type: entity
   id: SolarPanelBasePhysSprite
-  categories: [ HideSpawnMenu ]
-  name: solar panel
+  categories: [HideSpawnMenu]
+  name: 太阳能电池板 | solar panel
   placement:
     mode: SnapgridCenter
   components:
@@ -18,8 +18,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.1,0.45,0.1"
         density: 550
         mask:
@@ -32,8 +31,7 @@
   - type: NodeContainer
     examinable: true
     nodes:
-      output:
-        !type:CableDeviceNode
+      output: !type:CableDeviceNode
         nodeGroupID: HVPower
   - type: PowerMonitoringDevice
     group: Generator
@@ -55,10 +53,10 @@
     - SolarPanels
 
 - type: entity
-  parent: [ SolarPanelBasePhysSprite, StructureHealthMachine ]
+  parent: [SolarPanelBasePhysSprite, StructureHealthMachine]
   id: SolarPanelPlasma
-  name: solar panel plasma
-  description: A few sheets of plasma glass that generate electricity when hit by photons.
+  name: 太阳能板等离子体 | solar panel plasma
+  description: 几片等离子玻璃，在光子撞击时产生电能。 | A few sheets of plasma glass that generate electricity when hit by photons.
   components:
   - type: PowerSupplier
     supplyRampTolerance: 500
@@ -72,15 +70,13 @@
     damageModifierSet: GlassPlasmaMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageMachineNormal # Excess damage, don't spawn entities
-        !type:DamageTrigger
+    - trigger: &DamageMachineNormal !type:DamageTrigger
         damage: 175
       behaviors:
       - &SoundGlassBreak !type:PlaySoundBehavior
         sound:
           collection: GlassBreak
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 75
       behaviors:
       - *SoundGlassBreak
@@ -91,10 +87,10 @@
     node: solarpanelplasma
 
 - type: entity
-  parent: [ SolarPanelBasePhysSprite, StructureHealthMachineStrong ]
+  parent: [SolarPanelBasePhysSprite, StructureHealthMachineStrong]
   id: SolarPanelUranium
-  name: solar panel uranium
-  description: A few sheets of uranium glass that generate electricity when hit by photons.
+  name: 太阳能板铀 | solar panel uranium
+  description: 几片铀玻璃，在光子照射时会产生电流。 | A few sheets of uranium glass that generate electricity when hit by photons.
   components:
   - type: PowerSupplier
     supplyRampTolerance: 500
@@ -108,13 +104,11 @@
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 275
       behaviors:
       - *SoundGlassBreak
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - *SoundGlassBreak
@@ -125,10 +119,10 @@
     node: solarpaneluranium
 
 - type: entity
-  parent: [ SolarPanelBasePhysSprite, StructureHealthMachineWeak ]
+  parent: [SolarPanelBasePhysSprite, StructureHealthMachineWeak]
   id: SolarPanel
-  name: solar panel
-  description: A few sheets of glass that generate electricity when hit by photons.
+  name: 太阳能电池板 | solar panel
+  description: 几块玻璃板，受到光子撞击时便会发电。 | A few sheets of glass that generate electricity when hit by photons.
   components:
   - type: PowerSupplier
     supplyRampTolerance: 500
@@ -138,13 +132,11 @@
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger: # Excess damage, don't spawn entities
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger # Excess damage, don't spawn entities
         damage: 100
       behaviors:
       - *SoundGlassBreak
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - *SoundGlassBreak
@@ -156,10 +148,10 @@
   - type: SolarPanelReplacementMarker
 
 - type: entity
-  parent: [ SolarPanelBasePhysSprite, StructureHealthMachineFlimsy ]
+  parent: [SolarPanelBasePhysSprite, StructureHealthMachineFlimsy]
   id: SolarPanelBroken
-  name: solar panel
-  description: A broken solar panel.
+  name: 太阳能电池板 | solar panel
+  description: 一块破碎的太阳能电池板。 | A broken solar panel.
   suffix: Broken
   components:
   - type: Sprite
@@ -168,8 +160,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageMachineFlimsy
-        !type:DamageTrigger
+    - trigger: &DamageMachineFlimsy !type:DamageTrigger
         damage: 50
       behaviors:
       - *SoundGlassBreak
@@ -185,10 +176,10 @@
     node: solarpanel_broken
 
 - type: entity
-  parent: [ SolarPanelBasePhysSprite, StructureHealthMachineFlimsy ]
+  parent: [SolarPanelBasePhysSprite, StructureHealthMachineFlimsy]
   id: SolarPanelPlasmaBroken
-  name: plasma solar panel
-  description: A broken plasma solar panel.
+  name: 等离子太阳能板 | plasma solar panel
+  description: 一块损坏的等离子太阳能板。 | A broken plasma solar panel.
   suffix: Broken
   components:
   - type: Sprite
@@ -211,10 +202,10 @@
     node: solarpanelplasma_broken
 
 - type: entity
-  parent: [ SolarPanelBasePhysSprite, StructureHealthMachineFlimsy ]
+  parent: [SolarPanelBasePhysSprite, StructureHealthMachineFlimsy]
   id: SolarPanelUraniumBroken
-  name: uranium solar panel
-  description: A broken uranium solar panel.
+  name: 铀太阳能板 | uranium solar panel
+  description: 一块损坏的铀太阳能板。 | A broken uranium solar panel.
   suffix: Broken
   components:
   - type: Sprite
@@ -239,8 +230,8 @@
 - type: entity
   parent: StructureHealthMachineFlimsy
   id: SolarAssembly
-  name: solar assembly
-  description: A solar assembly. Anchor to a wire to start building a solar panel.
+  name: 太阳能组件 | solar assembly
+  description: 太阳能组件。连接到电线上以开始建造太阳能板。 | A solar assembly. Anchor to a wire to start building a solar panel.
   placement:
     mode: SnapgridCenter
   components:
@@ -251,8 +242,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeCircle
+        shape: !type:PhysShapeCircle
           radius: 0.25
         density: 375
         mask:
@@ -288,8 +278,8 @@
 - type: entity
   parent: StructureHealthMachine
   id: SolarTracker
-  name: solar tracker
-  description: A solar tracker. Tracks the nearest star.
+  name: 太阳追踪器 | solar tracker
+  description: 一个太阳追踪器。追踪最近的恒星。 | A solar tracker. Tracks the nearest star.
   placement:
     mode: SnapgridCenter
   components:
@@ -300,8 +290,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb {}
+        shape: !type:PhysShapeAabb {}
         density: 100
         mask:
         - MachineMask

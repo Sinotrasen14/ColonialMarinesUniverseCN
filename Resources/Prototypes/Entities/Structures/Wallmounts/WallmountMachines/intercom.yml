@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseWallmountMachine, StructureHealthMachineWeak ]
+  parent: [BaseWallmountMachine, StructureHealthMachineWeak]
   id: BaseIntercom
-  name: intercom
-  description: An intercom. For when the station just needs to know something.
+  name: 对讲机 | intercom
+  description: 一个对讲机。用于空间站只需要了解某些情况时。 | An intercom. For when the station just needs to know something.
   abstract: true
   components:
   - type: StationAiWhitelist
@@ -31,7 +31,7 @@
   - type: WiresPanelSecurity
   - type: ContainerFill
     containers:
-      board: [ IntercomElectronics ]
+      board: [IntercomElectronics]
   - type: ContainerContainer
     containers:
       board: !type:Container
@@ -79,8 +79,7 @@
     - key_slots
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -95,26 +94,26 @@
     visuals:
       enum.WiresVisualLayers.MaintenancePanel:
         enum.WiresVisualLayers.MaintenancePanel:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.RadioDeviceVisuals.Broadcasting:
         enum.RadioDeviceVisualLayers.Broadcasting:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.RadioDeviceVisuals.Speaker:
         enum.RadioDeviceVisualLayers.Speaker:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
 
 - type: entity
-  parent: [ BaseWallmountMetallic, StructureHealthMachineFlimsy ]
+  parent: [BaseWallmountMetallic, StructureHealthMachineFlimsy]
   id: IntercomAssembly
-  name: intercom assembly
-  description: An intercom. It doesn't seem very helpful right now.
+  name: 对讲机组装 | intercom assembly
+  description: 一个对讲机。它现在似乎不太有用。 | An intercom. It doesn't seem very helpful right now.
   components:
   - type: Sprite
     drawdepth: SmallObjects
@@ -124,11 +123,10 @@
     - state: build
     - state: panel
       visible: false
-      map: [ "wires" ]
+      map: ["wires"]
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:PlaySoundBehavior
@@ -141,8 +139,8 @@
     visuals:
       enum.ConstructionVisuals.Layer:
         wires:
-          0: { visible: false }
-          1: { visible: true }
+          0: {visible: false}
+          1: {visible: true}
   - type: Construction
     graph: Intercom
     node: assembly
@@ -226,7 +224,7 @@
   id: IntercomCommand
   parent: BaseIntercomSecure
   suffix: Command
-  description: An intercom. It's been reinforced with metal.
+  description: 一个对讲机。它已经用金属加固过了。 | An intercom. It's been reinforced with metal.
   components:
   - type: ContainerFill
     containers:
@@ -279,7 +277,7 @@
   id: IntercomSecurity
   parent: BaseIntercomSecure
   suffix: Security
-  description: An intercom. It's been reinforced with metal from security helmets, making it a bitch-and-a-half to open.
+  description: 一个对讲机。它被用安全头盔上的金属加固过，打开它简直要命。 | An intercom. It's been reinforced with metal from security helmets, making it a bitch-and-a-half to open.
   components:
   - type: ContainerFill
     containers:

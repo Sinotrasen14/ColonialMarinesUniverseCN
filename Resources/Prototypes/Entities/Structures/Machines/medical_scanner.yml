@@ -1,8 +1,8 @@
-﻿- type: entity
+- type: entity
   id: MedicalScanner
-  parent: [ BaseMachinePowered, BaseConstructibleMachineDestructible ]
-  name: medical scanner
-  description: A bulky medical scanner.
+  parent: [BaseMachinePowered, BaseConstructibleMachineDestructible]
+  name: 医疗扫描仪 | medical scanner
+  description: 一台笨重的医疗扫描仪。 | A bulky medical scanner.
   components:
   - type: MedicalScanner
   - type: DeviceNetwork
@@ -11,7 +11,7 @@
   - type: DeviceList
   - type: DeviceLinkSink
     ports:
-      - MedicalScannerReceiver
+    - MedicalScannerReceiver
   - type: Sprite
     sprite: Structures/Machines/scanner.rsi
     snapCardinals: true
@@ -54,8 +54,7 @@
     damageModifierSet: GlassMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 175
       behaviors:
       - !type:PlaySoundBehavior

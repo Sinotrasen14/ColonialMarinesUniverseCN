@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseStructure
   id: Gateway
-  name: gateway
-  description: A mysterious gateway built by unknown hands, it allows for faster than light travel to far-flung locations.
+  name: 星门 | gateway
+  description: 一座由未知之手建造的神秘星门，它允许超光速旅行至遥远的地点。 | A mysterious gateway built by unknown hands, it allows for faster than light travel to far-flung locations.
   components:
   - type: Sprite
     sprite: Structures/Machines/gateway.rsi
@@ -21,12 +21,12 @@
     visuals:
       enum.PowerDeviceVisuals.Powered:
         enum.PowerDeviceVisualLayers.Powered:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.LinkedEntityVisuals.HasAnyLinks:
         portal:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
   - type: InteractionOutline
   - type: Physics
     bodyType: Static
@@ -35,8 +35,7 @@
   - type: Fixtures
     fixtures:
       portalFixture:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.48,0.25,0.48"
         mask:
         - FullTileMask

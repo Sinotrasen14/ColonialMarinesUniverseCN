@@ -1,8 +1,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoAcidNormal
-  name: Corrosive Acid (100)  # TODO RMC14 proper plasma costs
-  description: Melts down a structure or item over time.
+  name: 腐蚀性酸液（100）            # TODO RMC14 proper plasma costs
+  description: 随时间逐渐熔毁建筑或物品。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -28,16 +28,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoCorrosiveAcid
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: corrosive_acid
+  - type: Sprite
+    state: corrosive_acid
 
 - type: entity
   parent: ActionXenoAcidNormal
   id: ActionXenoAcidWeak
-  name: Weak Corrosive Acid (75)  # TODO RMC14 proper plasma costs
-  description: Melts down a structure or item over time.
+  name: 弱腐蚀性酸（75）                 # TODO RMC14 proper plasma costs
+  description: 随时间推移熔毁建筑或物品。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -61,8 +61,8 @@
 - type: entity
   parent: ActionXenoAcidNormal
   id: ActionXenoAcidStrong
-  name: Strong Corrosive Acid (125)  # TODO RMC14 proper plasma costs
-  description: Melts down a structure or item over time.
+  name: 强腐蚀性酸（125）                   # TODO RMC14 proper plasma costs
+  description: 随时间熔毁建筑或物品。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -86,8 +86,8 @@
 - type: entity
   parent: ActionXenoAcidNormal
   id: ActionXenoAcidAcider
-  name: Strong Corrosive Acid (100 acid)
-  description: Melts down barricades or items over time. You cannot melt structures.
+  name: 强腐蚀性酸液（100 酸液）
+  description: 会随着时间的推移熔毁路障或物品。你无法熔毁建筑。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -113,8 +113,8 @@
 - type: entity
   id: ActionXenoRegurgitate
   parent: ActionXenoBase
-  name: Regurgitate
-  description: Eject any devoured marines.
+  name: 吐出
+  description: 吐出任何被吞噬的陆战队员。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -130,8 +130,8 @@
 - type: entity
   id: ActionXenoTailStab
   parent: ActionXenoBase
-  name: Tail Stab
-  description: Launches an attack towards a given direction. The cooldown is faster if you miss.
+  name: 尾刺
+  description: 向指定方向发动攻击。若未命中，冷却时间会更短。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -156,13 +156,13 @@
 - type: entity
   id: ActionXenoTailSlam
   parent: ActionXenoTailStab
-  name: Tail Slam
+  name: 尾部猛击
 
 - type: entity
   parent: ActionXenoTailStab
   id: ActionXenoTailStabCorrosive
-  name: Corrosive Tail Stab
-  description: Launches an attack towards a given direction. The cooldown is faster if you miss. [color=red]It also injects diluted molecular acid into the target, dealing damage over time.[/color]
+  name: 腐蚀尾刺
+  description: 向指定方向发起攻击。未命中时冷却时间更短。[color=red]它还会向目标注入稀释的分子酸，造成持续伤害。[/color]
   components:
   - type: Action
   - type: Sprite
@@ -174,14 +174,14 @@
 - type: entity
   parent: ActionXenoTailStabCorrosive
   id: ActionXenoTailStabBoiler
-  name: Corrosive Tail Stab
-  description: Launches an attack towards a given direction. The cooldown is faster if you miss. [color=red]It also injects diluted molecular acid or neurotoxin into the target, dealing damage or stunning over time. Which type depends on current gas type.[/color]
+  name: 腐蚀尾刺
+  description: 向指定方向发动攻击。未命中时，冷却时间更短。[color=red]它还会向目标注入稀释的分子酸或神经毒素，持续造成伤害或眩晕。具体类型取决于当前气体类型。[/color]
 
 - type: entity
   id: ActionXenoLeap
   parent: ActionXenoBase
-  name: Leap
-  description: Jump towards a given location and knock down the first enemy hit.
+  name: 跳跃
+  description: 向指定位置跳跃，并击倒第一个命中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -201,8 +201,8 @@
 - type: entity
   id: ActionXenoRush
   parent: ActionXenoLeap
-  name: Rush
-  description: Jump towards a given location and slash the enemy you hit, shaking their screen.
+  name: 突进
+  description: 朝指定位置跳跃并斩击你命中的敌人，震动其屏幕。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -215,8 +215,8 @@
 - type: entity
   parent: ActionXenoLeap
   id: ActionXenoPounce
-  name: Pounce (20) # TODO RMC14 proper plasma costs
-  description: Jump towards a given location and knock down the first enemy hit [color=red]if you are invisible.[/color]
+  name: 猛扑（20）      # TODO RMC14 proper plasma costs
+  description: 向指定位置跳跃，并击倒第一个命中的敌人，[color=red]若你处于隐形状态。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -235,16 +235,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoPounce
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: pounce
+  - type: Sprite
+    state: pounce
 
 - type: entity
   parent: ActionXenoLeap
   id: ActionXenoAssault
-  name: Assault (25)
-  description: Charge towards a location. Destroys some objects in your path. Melee slashes reduce assault's cooldown. If Super-Empowered, stuns and flings back the first enemy hit.
+  name: 突击（25）
+  description: 冲向一个位置。摧毁路径上的部分物体。近战斩击可减少突击的冷却时间。若处于超级强化状态，则眩晕并击退第一个命中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -262,16 +262,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoAssault
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: charge
+  - type: Sprite
+    state: charge
 
 - type: entity
   parent: ActionXenoLeap
   id: ActionXenoDash
-  name: Dash (40)
-  description: Dash a short distance towards a given location.
+  name: 冲刺（40）
+  description: 向指定位置冲刺一小段距离。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -289,16 +289,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoDash
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: prae_dash
+  - type: Sprite
+    state: prae_dash
 
 - type: entity
   id: ActionXenoHeadbutt
   parent: ActionXenoBase
-  name: Headbutt (10) # TODO RMC14 proper plasma costs
-  description: Charge towards the targeted enemy and push back the first enemy hit, piercing armor slightly. Does less damage but has more knockback when crest is lowered.
+  name: 头槌（10）        # TODO RMC14 proper plasma costs
+  description: 向目标敌人冲锋，击退首个命中的敌人，并略微穿透护甲。压低冠饰时，造成的伤害更低，但击退效果更强。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -320,16 +320,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoHeadbutt
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: headbutt
+  - type: Sprite
+    state: headbutt
 
 - type: entity
   id: ActionXenoTailSweep
   parent: ActionXenoBase
-  name: Tail Sweep (10) # TODO RMC14 proper plasma costs
-  description: Knock down any enemies close to you.
+  name: 扫尾（10）          # TODO RMC14 proper plasma costs
+  description: 击倒任何靠近你的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -346,16 +346,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoTailSweep
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: tail_sweep
+  - type: Sprite
+    state: tail_sweep
 
 - type: entity
   id: ActionXenoSlowingSpit
   parent: ActionXenoBase
-  name: Slowing Spit (20) # TODO RMC14 proper plasma costs
-  description: Launches a damageless projectile that will slow the first enemy that it hits, and paralyze them if they have no armor. It'll also drain helpful substances from their body.
+  name: 减速唾液（20）          # TODO RMC14 proper plasma costs
+  description: 发射一枚无伤害的投射物，使击中的第一个敌人减速；若其没有护甲，则使其麻痹。该投射物还会从其体内吸取有益物质。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -377,8 +377,8 @@
 - type: entity
   id: ActionXenoScatteredSpit
   parent: ActionXenoBase
-  name: Scattered Spit (20) # TODO RMC14 proper plasma costs
-  description: Launches multiple damageless projectiles that will briefly paralyze any enemies they hit.
+  name: 散射唾液（20）            # TODO RMC14 proper plasma costs
+  description: 发射多个无伤害弹射物，短暂麻痹被击中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -400,16 +400,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoScatteredSpit
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: acid_shotgun
+  - type: Sprite
+    state: acid_shotgun
 
 - type: entity
   id: ActionXenoSpit
   parent: ActionXenoBase
-  name: Xeno Spit (25) # TODO RMC14 proper plasma costs
-  description: Launches a projectile that will deal damage to the first enemy that it hits.
+  name: 异形喷吐（25）       # TODO RMC14 proper plasma costs
+  description: 发射一枚弹体，对第一个命中的敌人造成伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -439,8 +439,8 @@
 - type: entity
   id: ActionXenoToxicSpit
   parent: ActionXenoBase
-  name: Toxic Spit (30)
-  description: Launch a fast toxic projectile that passes over friendlies, deals burn damage, and inflicts Intoxicated stacks on the first enemy it hits.
+  name: 毒性喷吐（30）
+  description: 发射一枚快速毒性弹射物，越过友方，造成灼烧伤害，并对命中的第一个敌人施加中毒层数。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -463,8 +463,8 @@
 - type: entity
   id: ActionXenoToxicSlash
   parent: ActionXenoBase
-  name: Toxic Slash (100)
-  description: Coat your claws with toxin for a short time, gaining 20% movement speed and causing your next three melee hits to inflict Intoxicated stacks.
+  name: 剧毒斩击（100）
+  description: 在短时间内为你的利爪涂上毒素，获得20%移动速度，并使你接下来的三次近战命中施加中毒层数。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -486,8 +486,8 @@
 - type: entity
   id: ActionXenoDrainSting
   parent: ActionXenoBase
-  name: Drain Sting (75)
-  description: Sting an adjacent Intoxicated enemy and consume most of their toxin stacks. The sting deals damage based on the stacks consumed, knocks the victim down, heals you, and restores plasma. If the victim had high stacks, your carapace hardens with a temporary armor surge.
+  name: 吸能刺击（75）
+  description: 刺击一个相邻的中毒敌人并消耗其大部分毒素层数。该刺击根据消耗的层数造成伤害，击倒目标，治疗你，并恢复等离子。如果目标拥有高额层数，你的甲壳会硬化，获得临时护甲激增。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -509,40 +509,40 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoToxicSpit
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: xeno_spit
+  - type: Sprite
+    state: xeno_spit
 
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoToxicSlash
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: neuroclaws_off
+  - type: Sprite
+    state: neuroclaws_off
 
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoDrainSting
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: neuro_sting
+  - type: Sprite
+    state: neuro_sting
 
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoSpit
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: xeno_spit
+  - type: Sprite
+    state: xeno_spit
 
 - type: entity
   id: ActionXenoChargeSpit
   parent: ActionXenoBase
-  name: Charge Spit (50) # TODO RMC14 proper plasma costs
-  description: Charges up your next spit, making it deal more damage and coat the enemy in acid, but have less range. Increases your movement speed until the ability expires.
+  name: 蓄力喷吐（50）         # TODO RMC14 proper plasma costs
+  description: 为你的下一次喷吐蓄力，使其造成更多伤害并使敌人沾上酸液，但射程更短。在技能失效前提高你的移动速度。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -560,16 +560,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoChargeSpit
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: charge_spit
+  - type: Sprite
+    state: charge_spit
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoSprayAcid
-  name: Spray Acid (40)
-  description: Sprays acid along the ground in a line, covering tiles with it. [color=red]Will coat barricades in acid and significantly strengthen acid inflicted from Charge Spit![/color]
+  name: 喷洒酸液（40）
+  description: 沿地面呈直线喷洒酸液，覆盖沿途地块。[color=red]会在路障上覆盖酸液，并显著增强由蓄力喷吐造成的酸液效果！[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -588,15 +588,15 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoSprayAcid
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: spray_acid
+  - type: Sprite
+    state: spray_acid
 
 - type: entity
   parent: ActionXenoSprayAcid
   id: ActionXenoSprayAcidBoiler
-  description: Sprays acid along the ground in a line, covering tiles with it. [color=red]Will coat barricades in acid![/color]
+  description: 沿地面呈直线喷洒酸液，覆盖地砖。[color=red]会让路障沾满酸液！[/color]
   components:
   - type: Action
     useDelay: 10
@@ -610,8 +610,8 @@
 - type: entity
   parent: ActionXenoSprayAcid
   id: ActionXenoSprayAcidPraetorian
-  name: Spray Acid (80)
-  description: Sprays acid along the ground in a line, covering tiles with it. [color=red]Will coat barricades in acid![/color]
+  name: 喷洒酸液（80）
+  description: 沿地面喷洒成一条酸液，覆盖所经地砖。[color=red]会用酸液覆盖路障！[/color]
   components:
   - type: Action
     useDelay: 10
@@ -619,7 +619,7 @@
 - type: entity
   parent: ActionXenoSprayAcidPraetorian
   id: ActionXenoSprayAcidWarden
-  name: Spray Acid (130)
+  name: 喷洒酸液（130）
   components:
   - type: Action
     useDelay: 13
@@ -627,8 +627,8 @@
 - type: entity
   id: ActionXenoAcidBall
   parent: ActionXenoBase
-  name: Acid Ball (80) # TODO RMC14 proper plasma costs
-  description: Throws a projectile that will explode into acid spit in all directions after a short delay.
+  name: 酸液球（80）        # TODO RMC14 proper plasma costs
+  description: 投掷一枚投射物，短暂延迟后会在所有方向爆裂成酸液喷吐。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -648,16 +648,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoAcidBall
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: prae_acid_ball
+  - type: Sprite
+    state: prae_acid_ball
 
 - type: entity
   id: ActionXenoParalyzingSlash
   parent: ActionXenoBase
-  name: Paralyzing Slash (50) # TODO RMC14 proper plasma costs
-  description: Temporarily charge up a melee attack that will knockdown the first enemy it hits after a short delay.
+  name: 麻痹斩击（50）              # TODO RMC14 proper plasma costs
+  description: 短暂蓄力一次近战攻击，短暂延迟后击倒其命中的第一个敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -675,8 +675,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoCripplingStrike
-  name: Crippling Strike (20) # TODO RMC14 proper plasma costs
-  description: Temporarily charge up a melee attack that will slow the first enemy it hits and do 20% more damage.
+  name: 致残打击（20）              # TODO RMC14 proper plasma costs
+  description: 短暂蓄力一次近战攻击，使首个命中的敌人减速，并造成20%额外伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -694,16 +694,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoCripplingStrike
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: lurker_inject_neuro
+  - type: Sprite
+    state: lurker_inject_neuro
 
 - type: entity
   id: ActionXenoBoneChips
   parent: ActionXenoBase
-  name: Bone Chips
-  description: Launch a projectile that will damage and slow down the first enemy it hits.
+  name: 碎骨片
+  description: 发射一枚投射物，对命中的第一个敌人造成伤害并使其减速。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -722,16 +722,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoBoneChips
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: runner_bonespur
+  - type: Sprite
+    state: runner_bonespur
 
 - type: entity
   id: ActionXenoPunch
   parent: ActionXenoBase
-  name: Punch
-  description: Punches the targeted enemy to deal a hefty amount of damage, slowing them and pushing them away.
+  name: 拳击
+  description: 向目标敌人出拳，造成大量伤害，使其减速并将其击退。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -752,16 +752,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoPunch
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: punch
+  - type: Sprite
+    state: punch
 
 - type: entity
   id: ActionXenoFling
   parent: ActionXenoBase
-  name: Fling
-  description: Flings the targeted enemy a few tiles, knocking them down and damaging them.
+  name: 投掷
+  description: 将目标敌人抛掷数格，使其倒地并受到伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -783,16 +783,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoFling
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: fling
+  - type: Sprite
+    state: fling
 
 - type: entity
   id: ActionXenoLunge
   parent: ActionXenoBase
-  name: Lunge
-  description: Lunges towards the targeted enemy and grabs the first enemy hit.
+  name: 猛扑
+  description: 向目标敌人猛扑，并抓住第一个命中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -815,16 +815,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoLunge
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: lunge
+  - type: Sprite
+    state: lunge
 
 - type: entity
   id: ActionXenoScreech
   parent: ActionXenoBase
-  name: Screech (250)
-  description: An ear-splitting screech that debilitates nearby enemies within 7 tiles. [color=red]Severely slows, deafens, restricts vision, and disrupts aim for 8 seconds. Blocked by solid walls, but not windows.[/color]
+  name: 尖啸（250）
+  description: 一声震耳欲聋的尖啸，使7格范围内的附近敌人虚弱。[color=red]严重减速、致聋、限制视野并扰乱瞄准，持续8秒。会被实心墙阻挡，但不会被窗户阻挡。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -841,8 +841,8 @@
 - type: entity
   id: ActionXenoGut
   parent: ActionXenoBase
-  name: Gut (200)
-  description: Gibs the mob you decide to gut.
+  name: 内脏切割（200）
+  description: 将你决定开膛的怪物切成碎块。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -859,8 +859,8 @@
 - type: entity
   id: ActionXenoStomp
   parent: ActionXenoBase
-  name: Stomp (30)
-  description: Slam the ground with a 5x5 AOE, slowing down and disarming all enemies in range. Deals heavy damage to targets you are on top of.
+  name: 践踏（30）
+  description: 以5x5的范围猛击地面，使范围内所有敌人减速并缴械。对被你踩在脚下的目标造成大量伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -876,8 +876,8 @@
 - type: entity
   id: ActionXenoDirectionalStomp
   parent: ActionXenoBase
-  name: Stomp (30)
-  description: Slam the ground in a cone in front of you, dealing heavy damage and knocking back all enemies caught in the blast.
+  name: 践踏（30）
+  description: 猛击你前方的地面，以锥形范围造成大量伤害，并击退所有被冲击波命中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -897,16 +897,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoStomp
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: stomp
+  - type: Sprite
+    state: stomp
 
 - type: entity
   parent: ActionXenoStomp
   id: ActionXenoCrush
-  name: Crush (25)
-  description: Slam the ground with a 7x7 AOE, slowing down and disarming all enemies in range. Deals heavy damage to targets you are on top of.
+  name: 碾压（25）
+  description: 猛击地面，产生7x7范围效果，使范围内所有敌人减速并缴械。对你脚下的目标造成大量伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -922,8 +922,8 @@
 - type: entity
   id: ActionXenoCharge
   parent: ActionXenoBase
-  name: Charge (20)
-  description: Click on a tile you want to charge at, after a brief non cancel-able windup time. Slows around the impact area. [color=green]Cooldown is partially refunded upon attacking an enemy, scaling with the amount of enemies you cleave with your passive.[/color]
+  name: 冲锋（20）
+  description: 点击你想冲锋到的格子，经过短暂且不可取消的前摇后发动。使冲击区域周围减速。[color=green]攻击敌人时会返还部分冷却时间，返还量随你用被动技能顺劈到的敌人数量而提升。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -942,16 +942,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoCharge
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: ready_charge
+  - type: Sprite
+    state: ready_charge
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoCursorCharging
-  name: Begin Charging
-  description: Begin charging, gaining momentum and force. Use this ability again during the charge to lunge forward, throwing yourself as a projectile and dealing massive damage to mobs or vehicles. Barricades will be unanchored on hit.
+  name: 开始蓄力
+  description: 开始蓄力，积攒动能与力量。蓄力期间再次使用此技能，会向前猛冲，将自己像投射物一样发射出去，对怪物或载具造成大量伤害。击中后，路障将解除固定。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -967,8 +967,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoToggleCharging
-  name: Toggle Charging
-  description: Enable charging when moving in a straight line, which increases your speed and impact damage depending on the total distance travelled.
+  name: 切换冲锋
+  description: 启用直线移动时的冲锋，其会根据总移动距离提高你的速度和撞击伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -984,7 +984,7 @@
 - type: entity
   parent: ActionXenoFling
   id: ActionXenoRam
-  name: Ram (10)
+  name: 拉姆（10）
   components:
   - type: Action
     useDelay: 10
@@ -999,8 +999,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoBombard
-  name: Bombard (200)
-  description: Fire either an acidic or neurotoxic glob after a delay.
+  name: 轰击（200）
+  description: 延迟后发射一团酸性或神经毒性的球状物。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1026,16 +1026,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoBombard
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: bombard
+  - type: Sprite
+    state: bombard
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoToggleGasType
-  name: Toggle Gas Type
-  description: Toggle between Acid or Neurotoxic gas types. Your acidic globs will deal continual damage to anything caught in its radius, while neurotoxin will cause targets to suffocate, be slowed down and blinded, alongside eventually knocking them unconscious to be kidnapped.
+  name: 切换气体类型
+  description: 在酸性气体或神经毒气类型之间切换。你的酸液球会对半径内的任何目标造成持续伤害，而神经毒素会使目标窒息、被减速并致盲，最终还会使其失去意识以便被绑架。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1055,16 +1055,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoToggleGasType
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: shift_spit_acid_glob
+  - type: Sprite
+    state: shift_spit_acid_glob
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoAcidShroud
-  name: Acid Shroud
-  description: Create a small cloud of acidic or neurotoxic gas around you to cloak yourself. This will disable your other abilities for a short time to allow you to escape.
+  name: 酸雾笼罩
+  description: 在你周围制造一小团酸性或神经毒性气体来隐蔽自身。这会暂时禁用你的其他能力，以便你逃脱。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1087,16 +1087,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoAcidShroud
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: acid_shroud
+  - type: Sprite
+    state: acid_shroud
 
 - type: entity
   id: ActionXenoTremor
   parent: ActionXenoBase
-  name: Tremor (100)
-  description: Slam the ground with a 7x7 AOE, stunning all enemies in range for a short period of time.
+  name: 震荡（100）
+  description: 猛击地面，产生7x7的范围效果，使范围内的所有敌人短暂眩晕。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1112,16 +1112,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoTremor
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: tremor
+  - type: Sprite
+    state: tremor
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoForTheHive
-  name: For The Hive!
-  description: Prime yourself to detonate in a massive acid explosion in 20 seconds. Requires 200 acid at the minimum. The more acid reserves you have, the larger and more damaging the explosion will be. It will also coat barricades and mobs in acid, in a range equal to 1/2th the damage range. Damage is less the farther the mob is from the explosion. You will be slowed, change visually, and make an a loud wailing sound charging up. Dying will prevent the explosion from going off, but if successful you will respawn as a larva at your hive's hive core or at your corpse if theres none. Using this ability while primed will cancel the explosion at the cost of a 1/4th of your acid reserves.
+  name: 为了蜂巢！
+  description: 激活自身，在20秒后引爆一场巨大的酸液爆炸。至少需要200点酸液。你的酸液储备越多，爆炸范围越大，伤害越高。它还会用酸液覆盖路障和怪物，范围等于伤害范围的一半。怪物离爆炸越远，受到的伤害越低。蓄力期间，你会被减速、外观发生变化，并发出响亮的哀嚎声。死亡会阻止爆炸触发，但如果成功，你将以幼虫形态在你所属蜂巢的蜂巢核心处重生；若没有蜂巢核心，则在你尸体处重生。在准备引爆期间使用此能力将取消爆炸，代价是消耗你四分之一酸液储备。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1136,8 +1136,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoImpale
-  name: Impale (80)
-  description: Impales an adjacent enemy with your tail. Hits twice on a marked target and removes the mark. Pierces armor.
+  name: 穿刺（80）
+  description: 用尾巴刺穿相邻的敌人。对已被标记的目标命中两次并移除标记。穿透护甲。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1161,8 +1161,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTailTrip
-  name: Tail Trip (30)
-  description: Disarms and dazes an unmarked enemy. Stuns and dazes for longer on a marked target, and removes the mark.
+  name: 扫尾绊摔（30）
+  description: 缴械并眩晕一名未标记的敌人。对已标记的目标造成更长时间的昏迷和眩晕，并移除标记。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1185,8 +1185,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoPierce
-  name: Pierce (50)
-  description: Pierce through enemies in a 3 tile range, doing high damage and piercing some armor. Hitting 2 or more recharges your shield.
+  name: 穿刺（50）
+  description: 穿刺3格范围内的敌人，造成高额伤害并穿透部分护甲。命中2个或更多敌人可为你的护盾充能。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1208,16 +1208,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoPierce
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: prae_pierce
+  - type: Sprite
+    state: prae_pierce
 
 - type: entity
   parent: ActionXenoDash
   id: ActionXenoBlitz
-  name: Blitz (50)
-  description: Dash a short distance towards a given location. After 3 seconds or if you use it again before then, damages enemies around you. Hitting 1 or more recharges your shield.
+  name: 闪击（50）
+  description: 向指定位置冲刺一小段距离。3秒后，或在此之前再次使用，会对周围敌人造成伤害。命中1个或更多敌人会为你的护盾充能。
   components:
   - type: Action
     useDelay: 0
@@ -1226,8 +1226,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoCleaveRoot
-  name: Cleave Root
-  description: Root an enemy for a second. The duration is higher if your shield is up.
+  name: 劈砍定身
+  description: 将一名敌人定身一秒。如果你的护盾处于举起状态，持续时间更长。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1252,16 +1252,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoCleaveRoot
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: prae_cleave_root
+  - type: Sprite
+    state: prae_cleave_root
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoCleaveFling
-  name: Cleave Fling
-  description: Fling an enemy. The distance is doubled if your shield is up.
+  name: 劈砍投掷
+  description: 投掷一名敌人。若你举着盾牌，距离翻倍。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1287,10 +1287,10 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoCleaveFling
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: prae_cleave_fling
+  - type: Sprite
+    state: prae_cleave_fling
 
 #- type: entity
 #  parent: ActionXenoBase
@@ -1313,14 +1313,14 @@
 - type: entity
   id: ActionXenoSpitQueen
   parent: ActionXenoSpit
-  name: Xeno Spit (50/25)
-  description: Launches a projectile that will either paralyze the first enemy it hits or damage them and cover them in acid.
+  name: 异形喷吐（50/25）
+  description: 发射一枚投射物，命中首个敌人时，会使其麻痹，或对其造成伤害并用酸液覆盖。
 
 - type: entity
   id: ActionXenoQueenSpit
   parent: ActionXenoBase
-  name: Acid Volley (40)
-  description: Launches three acid projectiles in a narrow cone. Each target can only be hit once.
+  name: 酸液齐射（40）
+  description: 向狭窄锥形区域发射三枚酸液弹。每个目标只能被命中一次。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1345,8 +1345,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoToggleSpitType
-  name: Toggle Spit Type
-  description: Toggle between Neurotoxic or Acidic spit. Neurotoxic has less range and costs 50 plasma, and knocks down the first enemy it hits. Acidic has more range and costs 25 plasma, and damages and covers in acid the first enemy it hits.
+  name: 切换喷吐类型
+  description: 在神经毒素喷吐和酸性喷吐之间切换。神经毒素喷吐射程较短，消耗 50 等离子，并击倒命中的第一个敌人。酸性喷吐射程较远，消耗 25 等离子，对命中的第一个敌人造成伤害并用酸液覆盖。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1365,8 +1365,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoHighGallop
-  name: High Gallop
-  description: Stuns foes in a 2x3 area in targeted direction, and slows them. Also flings back grenades.
+  name: 疾驰
+  description: 击晕目标方向2×3区域内的敌人，并使其减速。还会将手雷掷回。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1386,16 +1386,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoHighGallop
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: stomp
+  - type: Sprite
+    state: stomp
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoScissorCut
-  name: Scissor Cut (25)
-  description: Cuts enemies and fences in a straight line. If Super-Empowered, slows enemies hit too.
+  name: 剪刀切割（25）
+  description: 沿直线切割敌人和栅栏。若处于超级强化状态，还会减速命中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1417,16 +1417,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoScissorCut
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: rav_scissor_cut
+  - type: Sprite
+    state: rav_scissor_cut
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTailSeize
-  name: Tail Seize
-  description: Throw out your tail in front of you. Uses up your melee attack. Pulls in the first enemy hit to you and roots and slows them on arrival. [color=red]Has a 3-tile range![/color]
+  name: 尾擒
+  description: 向前方甩出你的尾巴。消耗你的近战攻击。将命中的第一个敌人拉向你，并在其到达时定身并减速。[color=red]具有3格范围！[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1448,16 +1448,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoTailSeize
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: tail_seize
+  - type: Sprite
+    state: tail_seize
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoAbduct
-  name: Abduct (180)
-  description: Cast out a line that after a small doafter pulls in enemies towards you, disarming them. Catching 1 target slows them, 2 roots them, and 3 or more stuns them.
+  name: 劫持（180）
+  description: 抛出一条绳索，短暂延迟后将敌人拉向你并解除其武装。命中1个目标会使其减速，命中2个会使其定身，命中3个或更多会使其眩晕。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1479,16 +1479,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoAbduct
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: abduct
+  - type: Sprite
+    state: abduct
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTailLash
-  name: Tail Lash (80)
-  description: Fling back foes in a 2x3 area in targeted direction after a very short doafter. Also slows.
+  name: 尾鞭（80）
+  description: 在极短动作延迟后，朝目标方向将2x3区域内的敌人击退，并使其减速。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1509,16 +1509,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoTailLash
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: prae_tail_lash
+  - type: Sprite
+    state: prae_tail_lash
 
 - type: entity
   id: ActionXenoDislocate
   parent: ActionXenoBase
-  name: Dislocate (55)
-  description: Punch a targeted enemy, doing some damage and pushing them back. If the target is slowed, stunned, downed, or rooted, instead roots and completely pierces armor. Reduces the cooldown of Abduct and Tail Lash.
+  name: 脱臼（55）
+  description: 猛击一个目标敌人，造成一定伤害并将其击退。如果目标被减速、眩晕、击倒或定身，则改为将其定身并完全无视护甲。降低“劫持”和“尾击”的冷却时间。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1541,16 +1541,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoDislocate
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: dislocate
+  - type: Sprite
+    state: dislocate
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTailJab
-  name: Tail Jab
-  description: Jab an enemy in a 2.5 tile range, doing high damage and slowing them.
+  name: 尾刺
+  description: 刺击2.5格范围内的敌人，造成高额伤害并使其减速。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1574,8 +1574,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoFlurry
-  name: Flurry
-  description: An attack that has a range of 1x3 tiles, dealing damage per target and healing you.
+  name: 乱舞
+  description: 一种攻击，范围为1×3格，对每个目标造成伤害并治疗你。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1595,16 +1595,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoFlurry
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: rav_spike
+  - type: Sprite
+    state: rav_spike
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoHeadbite
-  name: Headbite
-  description: Instantly kills unconscious targets and heals you for 150 HP.
+  name: 咬头
+  description: 瞬间击杀昏迷目标，并为你恢复150点生命值。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1626,16 +1626,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoHeadbite
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: headbite
+  - type: Sprite
+    state: headbite
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoApprehend
-  name: Apprehend
-  description: Increases your movement speed and applies a slow on the next target you slash.
+  name: 擒获
+  description: 提高你的移动速度，并对你下一次斩击的目标施加减速效果。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1652,8 +1652,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoEviscerate
-  name: Eviscerate
-  description: Eviscerate nearby enemies after a short delay. Costs 1 rage stack.
+  name: 取出内脏
+  description: 短暂延迟后对附近敌人施放剔骨。消耗1层怒气。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1672,7 +1672,7 @@
   parent: ActionXenoBase
   id: ActionXenoClothesline
   name: Clothesline
-  description: Flings a target, doing minimal damage and healing you. The amount healed is higher the more rage stacks you have.
+  description: 抛掷一个目标，造成极低伤害并治疗你。你的怒气层数越多，治疗量越高。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1693,8 +1693,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoChargerLunge
-  name: Lunge
-  description: Leap forwards, knocking back and damaging enemies in your way. If used during charge, inherits all your momentum for a devastating all-in charge.
+  name: 突进
+  description: 向前跃进，击退并伤害途中的敌人。若在冲锋期间使用，则会继承你所有的动量，发动一次毁灭性的全力冲锋。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1710,8 +1710,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTumble
-  name: Tumble (25) # TODO RMC14 proper plasma costs
-  description: Charge towards your side and push back the first enemy hit. Can only be used towards either side of where you are facing.
+  name: 翻滚（25）      # TODO RMC14 proper plasma costs
+  description: 朝你的身侧冲锋，并击退首个命中的敌人。只能朝你面朝方向的任意一侧使用。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1735,8 +1735,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoFireSpikes
-  name: Fire Spikes (75 shards)
-  description: Launch 8 small shards of spikes in the direction you click.
+  name: 火焰尖刺（75碎片）
+  description: 向点击的方向发射8枚小型尖刺碎片。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1758,8 +1758,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoSpikeShed
-  name: Spike Shed (all shards)
-  description: Shred all of your shards to launch them all in all directions around yourself. Lose the bonus armor in the process while also gaining a speed boost. This will disable you from gaining any shards for 30 seconds. Requires 50 shards minimum
+  name: 尖刺飞散（所有碎片）
+  description: 将你所有的碎片撕碎，向自身周围所有方向发射。在此过程中失去额外护甲，同时获得速度提升。这会让你在30秒内无法获得任何碎片。至少需要50个碎片。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1777,8 +1777,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoRend
-  name: Rend (25)
-  description: Claw at enemies around you.
+  name: 撕裂（25）
+  description: 爪击你周围的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1797,8 +1797,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoDestroy
-  name: Destroy
-  description: After a short time, jump to the targeted location, destroying structures and gibbing hostiles within a 3x3 range. Works over barricades and other short barriers.
+  name: 摧毁
+  description: 短暂时间后，跃向目标位置，摧毁3x3范围内的建筑并粉碎敌人。可越过路障及其他矮墙。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1818,8 +1818,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoAcidMine
-  name: Acid Mine (40)
-  description: Cause an acid explosion at the targeted location.
+  name: 酸性地雷（40）
+  description: 在目标位置引发酸液爆炸。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1844,7 +1844,7 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoAcidMine
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: acid_mine
@@ -1852,8 +1852,8 @@
 - type: entity
   id: ActionXenoAcidShotgun
   parent: ActionXenoBase
-  name: Acid Shotgun (40)
-  description: Launches multiple acid projectiles that deal increased damage to trapped targets.
+  name: 酸液霰弹枪（40）
+  description: 发射多枚酸液弹，对被困目标造成更高伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1875,8 +1875,8 @@
 - type: entity
   id: ActionXenoDeployTraps
   parent: ActionXenoBase
-  name: Deploy Traps (60)
-  description: Deploys a line of snaring traps.
+  name: 部署陷阱（60）
+  description: 部署一排诱捕陷阱。
   components:
   - type: Action
     useDelay: 20.5
@@ -1902,7 +1902,7 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoDeployTraps
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
   - type: Sprite
     state: gas_mine
@@ -1910,8 +1910,8 @@
 - type: entity
   id: ActionXenoTailLance
   parent: ActionXenoTailStab
-  name: Tail Lance
-  description: Launches a fast tail thrust. The cooldown is shorter if you miss.
+  name: 尾刺枪
+  description: 发动快速的尾部突刺。若未命中，冷却时间更短。
   components:
   - type: Action
   - type: Sprite
@@ -1925,8 +1925,8 @@
 - type: entity
   id: ActionXenoVenatorCorrosiveSpit
   parent: ActionXenoBase
-  name: Corrosive Spit (45)
-  description: Spit concentrated acid that leaves a small corrosive pool.
+  name: 腐蚀唾液（45）
+  description: 吐出浓缩酸液，留下一小片腐蚀性酸池。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1957,8 +1957,8 @@
 - type: entity
   id: ActionXenoVenatorAcidBlob
   parent: ActionXenoVenatorCorrosiveSpit
-  name: Acid Blob (65)
-  description: Lob a heavier glob of acid that knocks down a direct hit and spreads pools around impact.
+  name: 酸液团（65）
+  description: 投掷一团更重的酸液，直接命中可击倒目标，并在命中点周围扩散酸池。
   components:
   - type: Action
   - type: Sprite
@@ -1985,8 +1985,8 @@
 - type: entity
   id: ActionXenoVenatorEnzymaticBreath
   parent: ActionXenoVenatorCorrosiveSpit
-  name: Enzymatic Breath (55)
-  description: Spit a short spread of acid that marks an area with corrosive pools.
+  name: 酶化吐息（55）
+  description: 喷出一小片酸液，标记一片区域并留下腐蚀性酸池。
   components:
   - type: Action
   - type: Sprite
@@ -2012,8 +2012,8 @@
 - type: entity
   id: ActionXenoPlateBash
   parent: ActionXenoBase
-  name: Plate Bash
-  description: Bash a nearby enemy with your crest plates.
+  name: 冠板猛击
+  description: 用你的冠板猛击附近的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -2035,8 +2035,8 @@
 - type: entity
   id: ActionXenoBulwarkTailSwing
   parent: ActionXenoBase
-  name: Tail Swing
-  description: Sweep nearby enemies with your tail.
+  name: 甩尾
+  description: 用尾巴横扫附近的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -2054,8 +2054,8 @@
 - type: entity
   id: ActionXenoTailInjection
   parent: ActionXenoBase
-  name: Tail Injection
-  description: Inject your stored chemical mixture into a nearby target.
+  name: 尾部注射
+  description: 将储存的化学混合物注入附近的目标。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -2077,8 +2077,8 @@
 - type: entity
   id: ActionXenoRapture
   parent: ActionXenoBase
-  name: Rapture
-  description: Rip flesh resin from a nearby enemy.
+  name: 狂喜
+  description: 从附近的敌人身上撕下血肉树脂。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -2100,8 +2100,8 @@
 - type: entity
   id: ActionXenoReaperRedGas
   parent: ActionXenoBase
-  name: Red Gas
-  description: Spend flesh resin to send a widening cloud of toxic gas marching toward a target.
+  name: 红色毒气
+  description: 消耗血肉树脂，使一团不断扩大的毒气云向目标推进。
   components:
   - type: Action
     itemIconStyle: NoItem

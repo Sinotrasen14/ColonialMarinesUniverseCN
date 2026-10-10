@@ -1,7 +1,7 @@
 - type: entity
   id: MalignWindow
-  name: malign window
-  description: An odd-looking window. Something about it unnerves you...
+  name: 恶兆之窗 | malign window
+  description: 一扇模样古怪的窗户。它让你感到莫名不安…… | An odd-looking window. Something about it unnerves you...
   parent: [BaseDeltaPressureReinforcedGlass, Window]
   components:
   - type: Sprite
@@ -18,15 +18,14 @@
     fx: EffectRCDDeconstruct6
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 155
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: WindowShatter
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: IconSmooth
     base: malign
   - type: Appearance

@@ -1,8 +1,8 @@
 - type: entity
   parent: [SolutionDrain, SolutionGinormous, StructureHealthMachineStrong]
   id: FloorDrain
-  name: drain
-  description: Drains puddles around it. Useful for dumping mop buckets or keeping certain rooms clean.
+  name: 排水口 | drain
+  description: 将其周围的水坑排干。可用于倒拖把桶或保持某些房间清洁。 | Drains puddles around it. Useful for dumping mop buckets or keeping certain rooms clean.
   placement:
     mode: SnapgridCenter
   components:
@@ -11,7 +11,7 @@
     sprite: Objects/Specific/Janitorial/drain.rsi
     layers:
     - state: icon
-    - map: [ "enum.SolutionContainerLayers.Fill" ]
+    - map: ["enum.SolutionContainerLayers.Fill"]
       state: fill-1
       visible: false
   - type: InteractionOutline
@@ -39,8 +39,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 275
       behaviors:
       - !type:PlaySoundBehavior
@@ -52,4 +51,4 @@
 - type: entity
   parent: [SolutionDrain, SolutionNormal]
   id: SolutionDrainNormal
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]

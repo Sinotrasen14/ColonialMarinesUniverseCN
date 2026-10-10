@@ -1,8 +1,8 @@
-﻿- type: entity
-  parent: [ BaseShutter, StructureHealthDoorStrong ]
+- type: entity
+  parent: [BaseShutter, StructureHealthDoorStrong]
   id: BlastDoor
-  name: blast door
-  description: Blast-retardant AND fire-retardant!
+  name: 防爆门 | blast door
+  description: 防爆且阻燃！ | Blast-retardant AND fire-retardant!
   components:
   - type: AccessReader
     containerAccessProvider: board
@@ -37,8 +37,7 @@
     damageModifierSet: PlasteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 350
       behaviors:
       - !type:PlaySoundBehavior
@@ -46,7 +45,7 @@
           collection: MetalBreak
   - type: ContainerFill
     containers:
-      board: [ DoorElectronics ]
+      board: [DoorElectronics]
   - type: Construction
     graph: BlastDoor
     node: blastdoor
@@ -82,10 +81,10 @@
     enabled: false
 
 - type: entity
-  parent: [ BaseStructureDynamic, StructureHealthDoor ]
+  parent: [BaseStructureDynamic, StructureHealthDoor]
   id: BlastDoorFrame
-  name: blast door frame
-  description: Blast-retardant AND fire-retardant!
+  name: 防爆门框 | blast door frame
+  description: 防爆且阻燃！ | Blast-retardant AND fire-retardant!
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/airlock-blastdoor.rsi
@@ -95,8 +94,7 @@
     damageModifierSet: PlasteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 200
       behaviors:
       - !type:PlaySoundBehavior
@@ -107,8 +105,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 55
         mask:
@@ -125,8 +122,8 @@
 - type: entity
   parent: BlastDoor
   id: BlastDoorXeno
-  name: exodermis blast door
-  description: Don't lose an arm!
+  name: 外皮层防爆门 | exodermis blast door
+  description: 别丢了一条胳膊！ | Don't lose an arm!
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/exo-blastdoor.rsi
@@ -167,8 +164,8 @@
 - type: entity
   parent: BlastDoorFrame
   id: BlastDoorXenoFrame
-  name: exodermis blast door frame
-  description: Blast-retardant AND fire-retardant!
+  name: 外皮层防爆门框 | exodermis blast door frame
+  description: 防爆且阻燃！ | Blast-retardant AND fire-retardant!
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/exo-blastdoor.rsi
@@ -177,8 +174,8 @@
 - type: entity
   parent: BlastDoor
   id: BlastDoorXenoborg
-  name: mechadermis blast door
-  description: Don't lose a head!
+  name: 机械真皮防爆门 | mechadermis blast door
+  description: 别掉脑袋！ | Don't lose a head!
   components:
   - type: Sprite
     sprite: Structures/Doors/Airlocks/Standard/airlock-blastdoor.rsi

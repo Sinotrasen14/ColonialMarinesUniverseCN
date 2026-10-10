@@ -1,8 +1,8 @@
 - type: entity
   parent: ActionMarineBase
   id: ActionMarineFocus
-  name: Issue Order - Focus
-  description: Increases gun accuracy for nearby marines.
+  name: 下达命令：专注
+  description: 提高附近陆战队员的枪械精准度。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -17,8 +17,8 @@
 - type: entity
   parent: ActionMarineBase
   id: ActionMarineHold
-  name: Issue Order - Hold
-  description: Increases damage resistance for nearby marines.
+  name: 下达命令 - 坚守
+  description: 增加附近陆战队员的伤害抗性。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -33,8 +33,8 @@
 - type: entity
   id: ActionMarineMove
   parent: ActionMarineBase
-  name: Issue Order - Move
-  description: Increases speed for nearby marines. [color=red]This won't affect anyone without armor![/color]
+  name: 下达命令 - 移动
+  description: 提高附近陆战队员的移动速度。[color=red]这对任何没有护甲的单位都无效！[/color]
   components:
   - type: Action
     itemIconStyle: NoItem

@@ -3,8 +3,8 @@
   abstract: true
   parent: BaseWallmount
   id: ShelfBase
-  name: shelf
-  description: A strange place to place, well, anything really. You feel like you shouldn't be seeing this.
+  name: 架子 | shelf
+  description: 一个奇怪的地方，嗯，放任何东西都是。你觉得自己不该看到这个。 | A strange place to place, well, anything really. You feel like you shouldn't be seeing this.
   components:
   - type: Sprite
     drawdepth: WallMountedItems
@@ -17,21 +17,20 @@
     maxItemSize: Normal
   - type: UserInterface
     interfaces:
-     enum.StorageUiKey.Key:
-      type: StorageBoundUserInterface
+      enum.StorageUiKey.Key:
+        type: StorageBoundUserInterface
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
 
 - type: entity
   abstract: true
-  parent: [ ShelfBase, StructureHealthContainerWeak ]
+  parent: [ShelfBase, StructureHealthContainerWeak]
   id: ShelfBaseWeak
   components:
   - type: Destructible
     thresholds:
-    - trigger: &DamageContainerWeak
-        !type:DamageTrigger
+    - trigger: &DamageContainerWeak !type:DamageTrigger
         damage: 60
       behaviors:
       - !type:EmptyContainersBehaviour
@@ -40,10 +39,10 @@
 
 - type: entity
   abstract: true
-  parent: [ ShelfBase, StructureHealthContainer ]
+  parent: [ShelfBase, StructureHealthContainer]
   id: ShelfBaseReinforced
-  name: reinforced shelf
-  description: It looks as strong as reality itself.
+  name: 加固货架 | reinforced shelf
+  description: 它看起来和现实本身一样坚固。 | It looks as strong as reality itself.
   components:
   - type: Lock
   - type: LockedStorage
@@ -69,8 +68,7 @@
   - type: AccessReader
   - type: Destructible
     thresholds:
-    - trigger: &DamageContainerNormal
-        !type:DamageTrigger
+    - trigger: &DamageContainerNormal !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:EmptyContainersBehaviour
@@ -81,8 +79,8 @@
 - type: entity
   parent: ShelfBaseWeak
   id: ShelfWood
-  name: wooden shelf
-  description: A convenient place to place, well, anything really.
+  name: 木架 | wooden shelf
+  description: 一个方便放置任何东西的地方。 | A convenient place to place, well, anything really.
   components:
   - type: Damageable
     damageModifierSet: WoodMod
@@ -105,8 +103,8 @@
 - type: entity
   parent: ShelfBaseWeak
   id: ShelfMetal
-  name: metal shelf
-  description: A sturdy place to place, well, anything really.
+  name: 金属架子 | metal shelf
+  description: 一个坚固的地方，可以放，嗯，任何东西。 | A sturdy place to place, well, anything really.
   components:
   - type: Sprite
     sprite: Structures/Storage/Shelfs/metal.rsi
@@ -132,8 +130,8 @@
 - type: entity
   parent: ShelfBaseWeak
   id: ShelfGlass
-  name: glass shelf
-  description: A fragile place to place, well, anything really.
+  name: 玻璃架子 | glass shelf
+  description: 一个脆弱的地方，用来放置，嗯，任何东西都行。 | A fragile place to place, well, anything really.
   components:
   - type: Sprite
     sprite: Structures/Storage/Shelfs/glass.rsi
@@ -160,8 +158,8 @@
 - type: entity
   parent: ShelfBaseReinforced
   id: ShelfRWood
-  name: sturdy wood shelf
-  description: A safe place to put your favorite bottle of whiskey.
+  name: 坚固的木架 | sturdy wood shelf
+  description: 一个安全的地方，用来放置你最喜爱的那瓶威士忌。 | A safe place to put your favorite bottle of whiskey.
   components:
   - type: Sprite
     sprite: Structures/Storage/Shelfs/wood.rsi
@@ -195,8 +193,8 @@
 - type: entity
   parent: ShelfBaseReinforced
   id: ShelfRMetal
-  name: sturdy metal shelf
-  description: A strong & shiny place to keep all your vials safe.
+  name: 坚固的金属架子 | sturdy metal shelf
+  description: 一个坚固又闪亮的地方，用来安全存放你所有的药瓶。 | A strong & shiny place to keep all your vials safe.
   components:
   - type: Sprite
     sprite: Structures/Storage/Shelfs/metal.rsi
@@ -227,8 +225,8 @@
 - type: entity
   parent: ShelfBaseReinforced
   id: ShelfRGlass
-  name: sturdy glass shelf
-  description: Crystal clear reinforced glass doors to show off all your fancy bottles you definitely didn't sell a co-worker's favorite mothroach for.
+  name: 坚固的玻璃搁板 | sturdy glass shelf
+  description: 晶莹剔透的强化玻璃门，用来炫耀你那些花哨瓶子——你绝对没有为了它们卖掉同事最爱的蛾蠊。 | Crystal clear reinforced glass doors to show off all your fancy bottles you definitely didn't sell a co-worker's favorite mothroach for.
   components:
   - type: Sprite
     sprite: Structures/Storage/Shelfs/glass.rsi
@@ -260,16 +258,16 @@
 - type: entity
   parent: ShelfBaseWeak
   id: ShelfBar
-  name: bar shelf
-  description: Made out of the finest synthetic wood for all alcohol holding needs.
+  name: 吧台架 | bar shelf
+  description: 由最优质的合成木材制成，满足所有酒类存放需求。 | Made out of the finest synthetic wood for all alcohol holding needs.
   components:
   - type: Sprite
     sprite: Structures/Storage/Shelfs/Departments/Service/bar.rsi
     state: base
     layers:
-      - state: base
-      - state: bar-0
-      - map: ["enum.StorageFillLayers.Fill"]
+    - state: base
+    - state: bar-0
+    - map: ["enum.StorageFillLayers.Fill"]
   - type: Appearance
   - type: StorageFillVisualizer
     maxFillLevels: 13
@@ -299,16 +297,16 @@
 - type: entity
   parent: ShelfBaseWeak
   id: ShelfKitchen
-  name: kitchen shelf
-  description: Holds knifes, spice, and everything nice!
+  name: 厨房置物架 | kitchen shelf
+  description: 放刀具、香料，还有一切美好之物！ | Holds knifes, spice, and everything nice!
   components:
   - type: Sprite
     sprite: Structures/Storage/Shelfs/Departments/Service/kitchen.rsi
     state: base
     layers:
-      - state: base
-      - state: kitchen-0
-      - map: ["enum.StorageFillLayers.Fill"]
+    - state: base
+    - state: kitchen-0
+    - map: ["enum.StorageFillLayers.Fill"]
   - type: Appearance
   - type: StorageFillVisualizer
     maxFillLevels: 13
@@ -344,8 +342,8 @@
 - type: entity
   parent: ShelfBaseReinforced
   id: ShelfChemistry
-  name: chemical shelf
-  description: Keeps all your chemicals safe and out of the clow- er, public hands!
+  name: 化学品架 | chemical shelf
+  description: 保证你所有的化学品安全，不落入小丑——呃，公众手中！ | Keeps all your chemicals safe and out of the clow- er, public hands!
   components:
   - type: Sprite
     sprite: Structures/Storage/Shelfs/Departments/Medical/chemistry.rsi

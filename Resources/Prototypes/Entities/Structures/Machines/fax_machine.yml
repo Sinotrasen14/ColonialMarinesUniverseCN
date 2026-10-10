@@ -1,8 +1,8 @@
 - type: entity
-  parent: [ BaseMachinePowered, StructureHealthMachineWeak ]
+  parent: [BaseMachinePowered, StructureHealthMachineWeak]
   id: FaxMachineBase
-  name: long range fax machine
-  description: Bluespace technologies on the application of bureaucracy.
+  name: 长距离传真机 | long range fax machine
+  description: 蓝空间技术在官僚制度中的应用。 | Bluespace technologies on the application of bureaucracy.
   components:
   - type: Sprite
     sprite: Structures/Machines/fax_machine.rsi
@@ -10,12 +10,12 @@
     layers:
     - state: icon
     - state: idle
-      map: [ "faxEyes" ]
+      map: ["faxEyes"]
     - state: printing
-      map: [ "printing" ]
+      map: ["printing"]
       visible: false
     - state:
-      map: [ "enum.FaxMachineVisuals.VisualState" ]
+      map: ["enum.FaxMachineVisuals.VisualState"]
   - type: Icon
     sprite: Structures/Machines/fax_machine.rsi
     state: icon
@@ -25,8 +25,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 25
         mask:
@@ -61,23 +60,23 @@
       ejectSound: /Audio/Machines/tray_eject.ogg
       whitelist:
         components:
-          - FaxableObject #used to be PaperComponent - brainfood1183
+        - FaxableObject   #used to be PaperComponent - brainfood1183
       blacklist:
         components:
-          - CargoSlip
+        - CargoSlip
   - type: GenericVisualizer
     visuals:
       enum.PowerDeviceVisuals.Powered:
         faxEyes:
-          True: { visible: true }
-          False: { visible: false }
+          true: {visible: true}
+          false: {visible: false}
       enum.FaxMachineVisuals.VisualState:
         printing:
-          Printing: { visible: true }
-          Normal: { visible: false }
+          Printing: {visible: true}
+          Normal: {visible: false}
         enum.FaxMachineVisuals.VisualState:
-          Inserting: { visible: true }
-          Normal: { visible: false }
+          Inserting: {visible: true}
+          Normal: {visible: false}
   - type: ItemSlots
   - type: ContainerContainer
     containers:
@@ -93,7 +92,7 @@
 - type: entity
   parent: FaxMachineBase
   id: FaxMachineCentcom
-  name: CentComm long range fax machine
+  name: 中央指挥部远程传真机 | CentComm long range fax machine
   suffix: CentCom
   components:
   - type: Sprite
@@ -101,20 +100,20 @@
     - state: icon
       color: "#bfe3ff"
     - state: idle
-      map: [ "faxEyes" ]
+      map: ["faxEyes"]
     - state: printing
-      map: [ "printing" ]
+      map: ["printing"]
       visible: false
     - state:
-      map: [ "enum.FaxMachineVisuals.VisualState" ]
+      map: ["enum.FaxMachineVisuals.VisualState"]
   - type: FaxMachine
-    name: "Central Command"
+    name: "中央司令部 | Central Command"
     notifyAdmins: true
 
 - type: entity
   parent: FaxMachineBase
   id: FaxMachineSyndie
-  name: syndicate long range fax machine
+  name: 辛迪加远程传真机 | syndicate long range fax machine
   suffix: Syndicate
   components:
   - type: Sprite
@@ -122,12 +121,12 @@
     - state: icon
       color: "#a3a3a3"
     - state: idle
-      map: [ "faxEyes" ]
+      map: ["faxEyes"]
     - state: printing
-      map: [ "printing" ]
+      map: ["printing"]
       visible: false
     - state:
-      map: [ "enum.FaxMachineVisuals.VisualState" ]
+      map: ["enum.FaxMachineVisuals.VisualState"]
   - type: FaxMachine
     name: "ERR*?*%!"
     responsePings: false
@@ -138,11 +137,11 @@
 - type: entity
   parent: FaxMachineBase
   id: FaxMachineCaptain
-  name: captain long range fax machine
+  name: 船长远程传真机 | captain long range fax machine
   suffix: NukeCodes
   components:
-    - type: FaxMachine
-      name: "Captain's Office"
-      receiveNukeCodes: true
-    - type: StealTarget
-      stealGroup: FaxMachineCaptain
+  - type: FaxMachine
+    name: "船长办公室 | Captain's Office"
+    receiveNukeCodes: true
+  - type: StealTarget
+    stealGroup: FaxMachineCaptain

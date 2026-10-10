@@ -2,14 +2,13 @@
   abstract: true
   parent: BaseStructure
   id: BaseFenceWood
-  name: wooden fence
-  description: Wooden piece of fencing. I hope there is babushka's garden behind it.
+  name: 木栅栏 | wooden fence
+  description: 木制栅栏。我希望它后面是祖母的花园。 | Wooden piece of fencing. I hope there is babushka's garden behind it.
   components:
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Weapons/boxingpunch1.ogg"
+        path: "/Audio/Weapons/boxingpunch1.ogg"
   - type: Tag
     tags:
     - Wooden
@@ -30,15 +29,14 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseFenceWood, StructureHealthBarrier ]
+  parent: [BaseFenceWood, StructureHealthBarrier]
   id: BaseFenceWoodHigh
   components:
   - type: Damageable
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior
@@ -52,15 +50,14 @@
 
 - type: entity
   abstract: true
-  parent: [ BaseFenceWood, StructureHealthBarrierWeak ]
+  parent: [BaseFenceWood, StructureHealthBarrierWeak]
   id: BaseFenceWoodSmall
-  name: small wooden fence
-  description: Wooden piece of small fence. The best protection for the fencing of a private territory!
+  name: 小木栅栏 | small wooden fence
+  description: 小木栅栏的木制部件。私人领地围栏的最佳防护！ | Wooden piece of small fence. The best protection for the fencing of a private territory!
   components:
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 30
       behaviors:
       - !type:PlaySoundBehavior
@@ -90,8 +87,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.10,-0.5,0.10,0.5"
         density: 1000
         mask:
@@ -119,8 +115,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.5,0.1,0.0"
         density: 1000
         mask:
@@ -148,8 +143,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.5"
         density: 1000
         mask:
@@ -157,8 +151,7 @@
         layer:
         - TableLayer
       fix2:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.1,-0.1,0.1"
         density: 1000
         mask:
@@ -186,8 +179,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.10,-0.5,0.10,0.5"
         density: 1000
         mask:
@@ -195,8 +187,7 @@
         layer:
         - TableLayer
       fix2:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.1,-0.1,0.1"
         density: 1000
         mask:
@@ -213,8 +204,8 @@
 - type: entity
   parent: BaseFenceWoodHigh
   id: FenceWoodHighGate
-  name: wooden fence gate
-  description: Do you have any idea what awaits you behind these gates? It can be either a toilet or a luxurious mansion. But you continue to love your emo boys.
+  name: 木栅栏门 | wooden fence gate
+  description: 你知道这些门后等待你的是什么吗？可能是厕所，也可能是豪华宅邸。但你依然爱着你的emo男孩们。 | Do you have any idea what awaits you behind these gates? It can be either a toilet or a luxurious mansion. But you continue to love your emo boys.
   components:
   - type: Sprite
     layers:
@@ -223,8 +214,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.1,0.5,0.1"
         density: 1000
         mask:
@@ -275,8 +265,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.10,-0.5,0.10,0.5"
         density: 1000
         mask:
@@ -303,8 +292,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.5,0.1,0.0"
         density: 1000
         mask:
@@ -331,8 +319,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.1,-0.1,0.1,0.5"
         density: 1000
         mask:
@@ -340,8 +327,7 @@
         layer:
         - TableLayer
       fix2:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.1,-0.1,0.1"
         density: 1000
         mask:
@@ -368,8 +354,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.10,-0.5,0.10,0.5"
         density: 1000
         mask:
@@ -377,8 +362,7 @@
         layer:
         - TableLayer
       fix2:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.1,-0.1,0.1"
         density: 1000
         mask:
@@ -394,8 +378,8 @@
 - type: entity
   parent: BaseFenceWoodSmall
   id: FenceWoodSmallGate
-  name: wooden fence gate
-  description: Looking at this gate, a familiar image pops up in your head. Where's my piggy?
+  name: 木栅栏门 | wooden fence gate
+  description: 看着这扇门，你脑海中浮现出一个熟悉的画面。我的小猪呢？ | Looking at this gate, a familiar image pops up in your head. Where's my piggy?
   components:
   - type: Sprite
     layers:
@@ -404,8 +388,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.1,0.5,0.1"
         density: 1000
         mask:

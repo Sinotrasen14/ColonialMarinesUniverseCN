@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseStructure
   id: BaseStructureWall
-  name: basewall
-  description: Keeps the air in and the greytide out.
+  name: 基础墙 | basewall
+  description: 把空气留在里面，把灰潮挡在外面。 | Keeps the air in and the greytide out.
   placement:
     mode: SnapgridCenter
     snap:
@@ -16,12 +16,10 @@
   - type: RangedDamageSound
     soundGroups:
       Brute:
-        collection:
-          MetalBulletImpact
+        collection: MetalBulletImpact
     soundTypes:
       Heat:
-        collection:
-          MetalLaserImpact
+        collection: MetalLaserImpact
   - type: Wall
   - type: ZLevelWallSupport
   - type: IsRoof
@@ -36,8 +34,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -91,8 +88,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PolygonShape
+        shape: !type:PolygonShape
           vertices:
           - "-0.5,-0.5"
           - "0.5,0.5"
@@ -103,9 +99,9 @@
         - WallLayer
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallWeak ]
+  parent: [BaseWall, StructureHealthWallWeak]
   id: WallBrick
-  name: brick wall
+  name: 砖墙 | brick wall
   components:
   - type: Sprite
     sprite: Structures/Walls/brick.rsi
@@ -119,8 +115,7 @@
     damageModifierSet: RockMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageWallWeak
-        !type:DamageTrigger
+    - trigger: &DamageWallWeak !type:DamageTrigger
         damage: 150
       behaviors:
       - &SoundBreakStone !type:PlaySoundBehavior
@@ -137,9 +132,9 @@
     base: brick
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallWeak ]
+  parent: [BaseWall, StructureHealthWallWeak]
   id: WallBrass
-  name: brass wall
+  name: 黄铜墙 | brass wall
   components:
   - type: Sprite
     sprite: Structures/Walls/brass.rsi
@@ -166,10 +161,10 @@
     base: brass
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallWeak ]
+  parent: [BaseWall, StructureHealthWallWeak]
   id: WallMeat
-  name: meat wall
-  description: Sticky.
+  name: 肉墙 | meat wall
+  description: 黏糊糊的。 | Sticky.
   components:
   - type: Tag
     tags:
@@ -201,9 +196,9 @@
     base: meat
 
 - type: entity
-  parent: [ BaseWall, BaseStructureHealth ]
+  parent: [BaseWall, BaseStructureHealth]
   id: WallDebug
-  name: debug wall
+  name: 调试墙 | debug wall
   suffix: DEBUG
   components:
   - type: Sprite
@@ -212,8 +207,7 @@
     sprite: Structures/Walls/debug.rsi
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 1
       behaviors:
       - *SpawnGirder
@@ -222,9 +216,9 @@
     base: debug
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallWeak ]
+  parent: [BaseWall, StructureHealthWallWeak]
   id: WallGold
-  name: gold wall
+  name: 金墙 | gold wall
   components:
   - type: Sprite
     sprite: Structures/Walls/gold.rsi
@@ -251,8 +245,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -264,9 +257,9 @@
     base: gold
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallWeak ]
+  parent: [BaseWall, StructureHealthWallWeak]
   id: WallPlasma
-  name: plasma wall
+  name: 等离子壁 | plasma wall
   components:
   - type: Sprite
     sprite: Structures/Walls/plasma.rsi
@@ -299,7 +292,7 @@
 - type: entity
   parent: BaseWall
   id: WallPlastitaniumIndestructible
-  name: plastitanium wall
+  name: 塑料钛墙 | plastitanium wall
   suffix: indestructible
   components:
   - type: Sprite
@@ -312,8 +305,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -324,17 +316,16 @@
     resistance: 5
 
 - type: entity
-  parent: [ WallPlastitaniumIndestructible, StructureHealthWallStrong ]
+  parent: [WallPlastitaniumIndestructible, StructureHealthWallStrong]
   id: WallPlastitanium
-  name: plastitanium wall
+  name: 塑钢墙 | plastitanium wall
   suffix: ""
   components:
   - type: Damageable
     damageModifierSet: PlastitaniumMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageWallStrong
-        !type:DamageTrigger
+    - trigger: &DamageWallStrong !type:DamageTrigger
         damage: 350
       behaviors:
       - *SpawnGirder
@@ -342,7 +333,7 @@
 - type: entity
   parent: WallDiagonalBase
   id: WallPlastitaniumDiagonalIndestructible
-  name: plastitanium wall
+  name: 塑钢墙 | plastitanium wall
   suffix: diagonal, indestructible
   components:
   - type: Sprite
@@ -356,9 +347,9 @@
     resistance: 5
 
 - type: entity
-  parent: [ WallPlastitaniumDiagonalIndestructible, StructureHealthWallStrong ]
+  parent: [WallPlastitaniumDiagonalIndestructible, StructureHealthWallStrong]
   id: WallPlastitaniumDiagonal
-  name: plastitanium wall
+  name: 塑钢墙 | plastitanium wall
   suffix: diagonal
   components:
   - type: Sprite
@@ -378,9 +369,9 @@
       - *SpawnGirder
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallStrong ]
+  parent: [BaseWall, StructureHealthWallStrong]
   id: WallReinforced
-  name: reinforced wall
+  name: 加固墙 | reinforced wall
   components:
   - type: Sprite
     sprite: Structures/Walls/solid.rsi
@@ -410,13 +401,13 @@
     visuals:
       enum.ReinforcedWallVisuals.DeconstructionStage:
         ReinforcedWallVisualLayers.Deconstruction:
-          -1: { visible: false }
-          0: { state: reinf_construct-0, visible: true}
-          1: { state: reinf_construct-1, visible: true}
-          2: { state: reinf_construct-2, visible: true}
-          3: { state: reinf_construct-3, visible: true}
-          4: { state: reinf_construct-4, visible: true}
-          5: { state: reinf_construct-5, visible: true}
+          -1: {visible: false}
+          0: {state: reinf_construct-0, visible: true}
+          1: {state: reinf_construct-1, visible: true}
+          2: {state: reinf_construct-2, visible: true}
+          3: {state: reinf_construct-3, visible: true}
+          4: {state: reinf_construct-4, visible: true}
+          5: {state: reinf_construct-5, visible: true}
   - type: ReinforcedWallReplacementMarker
   - type: StaticPrice
     price: 250
@@ -425,8 +416,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -453,9 +443,9 @@
   # Rusted walls should be made weaker through a damage mod status effect.
 
 - type: entity
-  parent: [ WallDiagonalBase, StructureHealthWallStrong ]
+  parent: [WallDiagonalBase, StructureHealthWallStrong]
   id: WallReinforcedDiagonal
-  name: reinforced wall
+  name: 加固墙 | reinforced wall
   components:
   - type: Sprite
     drawdepth: Walls
@@ -477,9 +467,9 @@
     resistance: 5
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallStrong ]
+  parent: [BaseWall, StructureHealthWallStrong]
   id: WallMarble
-  name: marble wall
+  name: 大理石墙 | marble wall
   components:
   - type: Sprite
     sprite: Structures/Walls/marble.rsi
@@ -503,7 +493,7 @@
 - type: entity
   parent: BaseWall
   id: WallMarbleIndestructible
-  name: marble wall
+  name: 大理石墙 | marble wall
   suffix: indestructible
   components:
   - type: Sprite
@@ -516,8 +506,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -528,9 +517,9 @@
     resistance: 5
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallWeak ]
+  parent: [BaseWall, StructureHealthWallWeak]
   id: WallSilver
-  name: silver wall
+  name: 银墙 | silver wall
   components:
   - type: Sprite
     sprite: Structures/Walls/silver.rsi
@@ -560,9 +549,9 @@
 
 #shuttle walls
 - type: entity
-  parent: [ WallDiagonalBase, StructureHealthWallStrong ]
+  parent: [WallDiagonalBase, StructureHealthWallStrong]
   id: WallShuttleDiagonal
-  name: shuttle wall
+  name: 穿梭墙 | shuttle wall
   components:
   - type: Sprite
     drawdepth: Walls
@@ -582,8 +571,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PolygonShape
+        shape: !type:PolygonShape
           vertices:
           - "-0.5,-0.5"
           - "0.5,0.5"
@@ -611,9 +599,9 @@
     price: 200
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallStrong ]
+  parent: [BaseWall, StructureHealthWallStrong]
   id: WallShuttle
-  name: shuttle wall
+  name: 穿梭墙 | shuttle wall
   components:
   - type: Damageable
     damageModifierSet: PlasteelMod
@@ -644,20 +632,19 @@
     visuals:
       enum.ShuttleWallVisuals.DeconstructionStage:
         ShuttleWallVisualLayers.Deconstruction:
-          -1: { visible: false }
-          0: { state: shuttle_construct-0, visible: true}
-          1: { state: shuttle_construct-1, visible: true}
-          2: { state: shuttle_construct-2, visible: true}
-          3: { state: shuttle_construct-3, visible: true}
-          4: { state: shuttle_construct-4, visible: true}
-          5: { state: shuttle_construct-5, visible: true}
+          -1: {visible: false}
+          0: {state: shuttle_construct-0, visible: true}
+          1: {state: shuttle_construct-1, visible: true}
+          2: {state: shuttle_construct-2, visible: true}
+          3: {state: shuttle_construct-3, visible: true}
+          4: {state: shuttle_construct-4, visible: true}
+          5: {state: shuttle_construct-5, visible: true}
   - type: Reflect
     reflectProb: 1
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -666,9 +653,9 @@
         density: 2000
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWall ]
+  parent: [BaseWall, StructureHealthWall]
   id: WallSolid
-  name: solid wall
+  name: 实心墙 | solid wall
   components:
   - type: Sprite
     sprite: Structures/Walls/solid.rsi
@@ -686,8 +673,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageWallNormal
-        !type:DamageTrigger
+    - trigger: &DamageWallNormal !type:DamageTrigger
         damage: 250
       behaviors:
       - *ChangeNodeGirder
@@ -700,9 +686,9 @@
     base: solid
 
 - type: entity
-  parent: [ WallDiagonalBase, StructureHealthWall ]
+  parent: [WallDiagonalBase, StructureHealthWall]
   id: WallSolidDiagonal
-  name: solid wall
+  name: 实心墙 | solid wall
   components:
   - type: Sprite
     drawdepth: Walls
@@ -738,9 +724,9 @@
   # Rusted walls should be made weaker through a damage mod status effect.
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWall ]
+  parent: [BaseWall, StructureHealthWall]
   id: WallSolidChitin
-  name: exodermis wall
+  name: 外皮层壁 | exodermis wall
   components:
   - type: Damageable
     damageModifierSet: SteelMod
@@ -767,9 +753,9 @@
     fx: EffectRCDDeconstruct8
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallStrong ]
+  parent: [BaseWall, StructureHealthWallStrong]
   id: WallReinforcedChitin
-  name: reinforced exodermis
+  name: 强化外皮层 | reinforced exodermis
   components:
   - type: Sprite
     sprite: Structures/Walls/exo.rsi
@@ -790,13 +776,13 @@
     visuals:
       enum.ReinforcedWallVisuals.DeconstructionStage:
         ReinforcedWallVisualLayers.Deconstruction:
-          -1: { visible: false }
-          0: { state: reinf_construct-0, visible: true}
-          1: { state: reinf_construct-1, visible: true}
-          2: { state: reinf_construct-2, visible: true}
-          3: { state: reinf_construct-3, visible: true}
-          4: { state: reinf_construct-4, visible: true}
-          5: { state: reinf_construct-5, visible: true}
+          -1: {visible: false}
+          0: {state: reinf_construct-0, visible: true}
+          1: {state: reinf_construct-1, visible: true}
+          2: {state: reinf_construct-2, visible: true}
+          3: {state: reinf_construct-3, visible: true}
+          4: {state: reinf_construct-4, visible: true}
+          5: {state: reinf_construct-5, visible: true}
   - type: StaticPrice
     price: 250
   - type: RadiationBlocker
@@ -811,7 +797,7 @@
 - type: entity
   parent: WallPlastitanium
   id: WallXenoborg
-  name: mechadermis wall
+  name: 机械真皮墙 | mechadermis wall
   components:
   - type: Sprite
     sprite: Structures/Walls/exo-borg.rsi
@@ -824,7 +810,7 @@
 - type: entity
   parent: WallPlastitaniumDiagonal
   id: WallXenoborgDiagonal
-  name: mechadermis wall
+  name: 机械真皮墙 | mechadermis wall
   suffix: diagonal
   components:
   - type: Sprite
@@ -836,9 +822,9 @@
     state: state0
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWallWeak ]
+  parent: [BaseWall, StructureHealthWallWeak]
   id: WallUranium
-  name: uranium wall
+  name: 铀墙 | uranium wall
   components:
   - type: Sprite
     sprite: Structures/Walls/uranium.rsi
@@ -861,8 +847,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -876,10 +861,10 @@
     resistance: 6
 
 - type: entity
-  parent: [ BaseWall, StructureHealthBarrierStrong ]
+  parent: [BaseWall, StructureHealthBarrierStrong]
   id: WallWood
-  name: wood wall
-  description: The traditional greytide defense.
+  name: 木墙 | wood wall
+  description: 传统的灰潮防御。 | The traditional greytide defense.
   components:
   - type: Sprite
     sprite: Structures/Walls/wood.rsi
@@ -892,8 +877,7 @@
     damageModifierSet: WoodMod
   - type: Destructible
     thresholds:
-    - trigger: &DamageBarrierStrong
-        !type:DamageTrigger
+    - trigger: &DamageBarrierStrong !type:DamageTrigger
         damage: 120
       behaviors:
       - !type:PlaySoundBehavior
@@ -909,16 +893,15 @@
     base: wood
 
 - type: entity
-  parent: [ BaseWall, StructureHealthBarrier ]
+  parent: [BaseWall, StructureHealthBarrier]
   id: WallWeb
-  name: web wall
-  description: Keeps the spiders in and the greytide out.
+  name: 网墙 | web wall
+  description: 把蜘蛛关在里面，把灰潮挡在外面。 | Keeps the spiders in and the greytide out.
   components:
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Weapons/slash.ogg"
+        path: "/Audio/Weapons/slash.ogg"
   - type: Damageable
     damageModifierSet: ThreadMod
   - type: Sprite
@@ -927,8 +910,7 @@
     sprite: Structures/Walls/web.rsi
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior
@@ -945,9 +927,9 @@
     node: wall
 
 - type: entity
-  parent: [ BaseWall, StructureHealthWall ]
+  parent: [BaseWall, StructureHealthWall]
   id: WallMining
-  name: mining wall
+  name: 采矿墙 | mining wall
   components:
   - type: Sprite
     sprite: Structures/Walls/mining.rsi
@@ -967,9 +949,9 @@
   - type: Appearance
 
 - type: entity
-  parent: [ WallDiagonalBase, StructureHealthWall ]
+  parent: [WallDiagonalBase, StructureHealthWall]
   id: WallMiningDiagonal
-  name: mining wall
+  name: 采矿墙 | mining wall
   components:
   - type: Sprite
     drawdepth: Walls
@@ -991,7 +973,7 @@
 
 - type: entity
   id: WallInvisible
-  name: invisible wall
+  name: 隐形墙 | invisible wall
   components:
   - type: TimedDespawn
     lifetime: 15
@@ -1001,8 +983,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -1012,7 +993,7 @@
 
 - type: entity
   id: WallForce
-  name: force wall
+  name: 力墙 | force wall
   components:
   - type: TimedDespawn
     lifetime: 10
@@ -1022,8 +1003,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - SpecialWallLayer
@@ -1038,9 +1018,9 @@
     state: forcewall
 
 - type: entity
-  parent: [ BaseWall, StructureHealthBarrierStrong ]
+  parent: [BaseWall, StructureHealthBarrierStrong]
   id: WallConcrete
-  name: concrete wall
+  name: 混凝土墙 | concrete wall
   components:
   - type: Sprite
     sprite: Structures/Walls/concrete.rsi
@@ -1064,10 +1044,10 @@
 # Cardboard
 
 - type: entity
-  parent: [ BaseStructure, StructureHealthBarrierWeak ]
+  parent: [BaseStructure, StructureHealthBarrierWeak]
   id: Cardwall
-  name: cardboard wall
-  description: Budget cuts are hitting hard.
+  name: 纸板墙 | cardboard wall
+  description: 预算削减正在造成严重冲击。 | Budget cuts are hitting hard.
   placement:
     mode: SnapgridCenter
     snap:
@@ -1076,8 +1056,7 @@
   - type: MeleeSound
     soundGroups:
       Brute:
-        path:
-          "/Audio/Weapons/pierce.ogg"
+        path: "/Audio/Weapons/pierce.ogg"
   - type: Wall
   - type: Sprite
     drawdepth: SmallObjects #so bullets pass 'through'
@@ -1094,8 +1073,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,0.5,0.5"
         mask:
         - FullTileMask
@@ -1105,8 +1083,7 @@
     damageModifierSet: CardboardMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 30
       behaviors:
       - !type:SpawnEntitiesBehavior

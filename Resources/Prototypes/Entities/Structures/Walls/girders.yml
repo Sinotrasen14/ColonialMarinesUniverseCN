@@ -11,8 +11,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 60
         mask:
@@ -22,10 +21,10 @@
   - type: InteractionOutline
 
 - type: entity
-  parent: [ BaseGirder, StructureHealthBarrier ]
+  parent: [BaseGirder, StructureHealthBarrier]
   id: Girder
-  name: girder
-  description: A large structural assembly made out of metal; It requires a layer of metal before it can be considered a wall.
+  name: 梁 | girder
+  description: 一个由金属制成的大型结构组件；它需要覆盖一层金属才能被视为墙壁。 | A large structural assembly made out of metal; It requires a layer of metal before it can be considered a wall.
   components:
   - type: Construction
     graph: Girder
@@ -37,8 +36,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -53,10 +51,10 @@
     price: 30
 
 - type: entity
-  parent: [ BaseGirder, StructureHealthBarrierWeak ]
+  parent: [BaseGirder, StructureHealthBarrierWeak]
   id: ReinforcedGirder
-  name: reinforced girder
-  description: A large structural assembly made out of metal and plasteel; It requires a layer of plasteel before it can be considered a reinforced wall.
+  name: 加固梁 | reinforced girder
+  description: 一种由金属和塑钢制成的大型结构组件；它需要一层塑钢才能被视为加固墙。 | A large structural assembly made out of metal and plasteel; It requires a layer of plasteel before it can be considered a reinforced wall.
   components:
   - type: Sprite
     sprite: Structures/Walls/solid.rsi
@@ -68,8 +66,7 @@
     damageModifierSet: PlasteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 30
       behaviors:
       - !type:SpawnEntitiesBehavior

@@ -1,7 +1,7 @@
 - type: entity
   parent: [BaseDeltaPressureReinforcedGlass, BaseWindowStructure, StructureHealthBarrierStrong]
   id: ReinforcedWindow
-  name: reinforced window
+  name: 加固窗 | reinforced window
   components:
   - type: Sprite
     sprite: Structures/Windows/window-base-reinf.rsi
@@ -19,8 +19,7 @@
     fx: EffectRCDDeconstruct6
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 120
       behaviors:
       - !type:PlaySoundBehavior
@@ -47,7 +46,7 @@
 - type: entity
   parent: [BaseDeltaPressureReinforcedGlassQuarter, BaseWindowStructureDirectional, StructureHealthBarrier]
   id: WindowReinforcedDirectional
-  name: directional reinforced window
+  name: 定向强化窗 | directional reinforced window
   components:
   - type: Sprite
     sprite: Structures/Windows/directional.rsi
@@ -73,8 +72,7 @@
     fx: EffectRCDDeconstruct4
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 80
       behaviors:
       - !type:PlaySoundBehavior
@@ -102,8 +100,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.5,-0.5,-0.28125,-0.28125"
         density: 1500
         mask:
@@ -145,12 +142,11 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PolygonShape
-            vertices:
-            - "-0.5,-0.5"
-            - "0.5,0.5"
-            - "0.5,-0.5"
+        shape: !type:PolygonShape
+          vertices:
+          - "-0.5,-0.5"
+          - "0.5,0.5"
+          - "0.5,-0.5"
         mask:
         - FullTileMask
         layer:

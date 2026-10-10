@@ -1,9 +1,9 @@
 - type: entity
-  parent: [ BaseStructure, BaseLightHousingDestructible ]
+  parent: [BaseStructure, BaseLightHousingDestructible]
   id: LightPostSmall
-  name: post light
+  name: 柱灯 | post light
   suffix: Always Powered
-  description: "An always powered light."
+  description: "一个常亮的灯。 | An always powered light."
   components:
   - type: XenoCrusherChargable
     instantDestroy: true
@@ -23,8 +23,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.17,-0.30,0.17,0.25"
         density: 190
         mask:
@@ -42,8 +41,7 @@
   - type: InteractionOutline
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -58,9 +56,9 @@
 - type: entity
   parent: LightPostSmall
   id: PoweredLightPostSmallEmpty
-  name: post light
+  name: 灯柱 | post light
   suffix: Empty
-  description: "A small light post. Draws power and produces light when equipped with a light tube."
+  description: "一个小灯柱。安装灯管后即可通电并发光。 | A small light post. Draws power and produces light when equipped with a light tube."
   components:
   - type: Sprite
     sprite: Structures/Lighting/LightPosts/small_light_post.rsi
@@ -82,9 +80,9 @@
     range: 200
   - type: DeviceLinkSink
     ports:
-      - On
-      - Off
-      - Toggle
+    - On
+    - Off
+    - Toggle
   - type: Construction
     graph: LightFixture
     node: groundLight
@@ -107,7 +105,7 @@
 - type: entity
   parent: PoweredLightPostSmallEmpty
   id: PoweredLightPostSmall
-  name: post light
+  name: 后灯 | post light
   suffix: ""
   components:
   - type: Sprite
@@ -126,7 +124,7 @@
 - type: entity
   parent: PoweredLightPostSmallEmpty
   id: PoweredLEDLightPostSmall
-  name: post light
+  name: 后灯 | post light
   suffix: LED
   components:
   - type: Sprite

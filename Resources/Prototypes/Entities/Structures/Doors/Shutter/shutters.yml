@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseStructure
   id: BaseShutter
-  name: shutter
-  description: One shudders to think about what might be behind this shutter.
+  name: 快门 | shutter
+  description: 一想到这扇百叶窗后面可能藏着什么，就让人不寒而栗。 | One shudders to think about what might be behind this shutter.
   placement:
     mode: SnapgridCenter
   components:
@@ -24,8 +24,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49" # don't want this colliding with walls or they won't close
         density: 100
         mask:
@@ -34,7 +33,7 @@
         - AirlockLayer
   - type: ContainerFill
     containers:
-      board: [ DoorElectronics ]
+      board: [DoorElectronics]
   - type: ContainerContainer
     containers:
       board: !type:Container
@@ -78,9 +77,9 @@
     range: 200
   - type: DeviceLinkSink
     ports:
-      - Open
-      - Close
-      - Toggle
+    - Open
+    - Close
+    - Toggle
   - type: DeviceLinkSource
     ports:
     - DoorStatus
@@ -114,8 +113,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -143,8 +141,8 @@
 - type: entity
   parent: ShuttersNormal
   id: ShuttersRadiation
-  name: radiation shutters
-  description: These come with extra-radiation-resistant paint.
+  name: 辐射防护百叶窗 | radiation shutters
+  description: 这些配有额外抗辐射涂层。 | These come with extra-radiation-resistant paint.
   components:
   - type: Sprite
     sprite: Structures/Doors/Shutters/shutters-radiation.rsi
@@ -181,8 +179,8 @@
 - type: entity
   id: ShuttersWindow
   parent: [BaseDeltaPressureGlass, BaseShutter, StructureHealthDoorWeak]
-  name: window shutters
-  description: The Best (TM) place to see your friends explode!
+  name: 窗户百叶窗 | window shutters
+  description: 看你的朋友们爆炸的最佳（TM）场所！ | The Best (TM) place to see your friends explode!
   components:
   - type: Sprite
     sprite: Structures/Doors/Shutters/shutters-window.rsi
@@ -202,8 +200,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -228,10 +225,10 @@
 
 # Frame for construction
 - type: entity
-  parent: [ BaseStructureDynamic, StructureHealthDoorWeak ]
+  parent: [BaseStructureDynamic, StructureHealthDoorWeak]
   id: ShuttersFrame
-  name: shutter frame
-  description: A frame for constructing a shutter.
+  name: 百叶窗框架 | shutter frame
+  description: 用于构造百叶窗的框架。 | A frame for constructing a shutter.
   components:
   - type: Sprite
     sprite: Structures/Doors/Shutters/shutters.rsi
@@ -246,8 +243,7 @@
     damageModifierSet: SteelMod
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 100
       behaviors:
       - !type:PlaySoundBehavior
@@ -260,8 +256,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.45,-0.45,0.45,0.45"
         density: 55
         mask:

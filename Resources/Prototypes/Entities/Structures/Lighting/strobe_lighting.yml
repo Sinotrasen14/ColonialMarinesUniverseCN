@@ -1,9 +1,9 @@
 - type: entity
   parent: BaseLightHousingDestructible
   id: AlwaysPoweredStrobeLight
-  name: strobe
+  name: 频闪 | strobe
   suffix: Always powered
-  description: "UH?! Sorry, all I can hear is WEE-OOO-WEE-OOO!"
+  description: "呃？！抱歉，我只听到呜-哦-呜-哦！ | UH?! Sorry, all I can hear is WEE-OOO-WEE-OOO!"
   placement:
     mode: SnapgridCenter
     snap:
@@ -49,8 +49,7 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,0.35,0.2,0.5"
         density: 190
         mask:
@@ -59,8 +58,7 @@
         - TabletopMachineLayer
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:SpawnEntitiesBehavior
@@ -70,8 +68,8 @@
             max: 1
 
 - type: entity
-  name: strobe
-  description: "UH?! Sorry, all I can hear is WEE-OOO-WEE-OOO!"
+  name: 频闪 | strobe
+  description: "呃？！抱歉，我只能听到呜—哦—呜—哦的声音！ | UH?! Sorry, all I can hear is WEE-OOO-WEE-OOO!"
   id: PoweredStrobeLightEmpty
   suffix: Empty
   parent: AlwaysPoweredStrobeLight
@@ -108,9 +106,9 @@
       on: base
   - type: DeviceLinkSink
     ports:
-      - On
-      - Off
-      - Toggle
+    - On
+    - Off
+    - Toggle
   - type: Construction
     graph: LightFixture
     node: strobeLight

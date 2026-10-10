@@ -1,8 +1,8 @@
 - type: entity
   id: ActionXenoTransferPlasma
   parent: ActionXenoBase
-  name: Transfer plasma (50) # TODO RMC14 proper plasma costs
-  description: Give plasma to a nearby xenonid.
+  name: 转移等离子体（50）           # TODO RMC14 proper plasma costs
+  description: 为附近的异形提供等离子体。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -19,16 +19,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoTransferPlasma
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: transfer_plasma
+  - type: Sprite
+    state: transfer_plasma
 
 - type: entity
   id: ActionXenoHealerDroneTransferPlasma
   parent: ActionXenoBase
-  name: Transfer plasma (100) # TODO RMC14 proper plasma costs
-  description: Give plasma to a nearby xenonid.
+  name: 转移等离子体（100）           # TODO RMC14 proper plasma costs
+  description: 为附近的异形提供等离子体。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -46,8 +46,8 @@
 - type: entity
   id: ActionXenoTransferPlasmaHivelord
   parent: ActionXenoBase
-  name: Transfer plasma (200) # TODO RMC14 proper plasma costs
-  description: Give plasma to a xenonid.
+  name: 转移等离子体（200）           # TODO RMC14 proper plasma costs
+  description: 给异形提供等离子体。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -65,8 +65,8 @@
 - type: entity
   id: ActionXenoResinSurge
   parent: ActionXenoBase
-  name: Resin Surge (75)
-  description: Instantly grows a fruit when used (cooldown will be proprotial to growth time), creates temporary walls when used on weeds or use on existing walls to reinforce them with 6000 hp for 15 seconds. Targeting anything else creates a 3x3 patch of weak sticky resin after a small doafter.
+  name: 树脂涌动（75）
+  description: 使用时立即长出一颗果实（冷却时间与生长时间成正比），对杂草使用时生成临时墙，或对现有墙使用以6000点生命值强化它们15秒。瞄准其他任何目标时，会在短暂延迟后生成一片3x3的弱粘性树脂。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -92,8 +92,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoRetrieve
-  name: Retrieve (180 plasma, 100 fury)
-  description: Pulls a xenonid to you if they are still, with a 0.6 second doafter. You can't pull very big xenonids unless they are downed.
+  name: 拉回（180 等离子，100 狂怒）
+  description: 若异形保持静止，则会在 0.6 秒的动作延迟后将其拉到你身边。除非巨型异形已被击倒，否则你无法将其拉回。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -117,16 +117,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoRetrieve
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: retrieve
+  - type: Sprite
+    state: retrieve
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoAidHeal
-  name: Aid Xenonid Healing (100 plasma, 100+ health reserves)
-  description: Heals a nearby ally Xeno. Healing another Xeno will also heal you, and half your remaining health reserves will be consumed for extra healing. [color=red]This can't heal ignited xenonids![/color]
+  name: 协助异形治疗（100 等离子，100+ 生命储备）
+  description: 治疗附近的一只友方异形。治疗另一只异形也会治疗你，并且你剩余生命储备的一半将被消耗，以提供额外治疗。[color=red]这无法治疗已着火的异形！[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -153,8 +153,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoAidRejuvenate
-  name: Aid Xenonid Rejuvenate (100 plasma, 100 health reserves)
-  description: Remove ailments and stuns from a far away ally Xeno.
+  name: 援助异形复苏（100 等离子，100 生命储备）
+  description: 移除远处友方异形身上的异常状态和眩晕。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -200,8 +200,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoLeader
-  name: Choose/Follow Xenonid Leaders
-  description: Promotes and demotes xenonid leaders, or watches them. Promoting a xeno to leader will make them emit your pheromones around themselves.
+  name: 选择/跟随异形领袖
+  description: 晋升或降职异形领袖，或观察它们。将异形晋升为领袖会使其在自身周围释放你的信息素。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -217,18 +217,18 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoLeader
-  name: Choose Leaders
-  description: Promotes and demotes xenonid leaders, or watches them. Promoting a xeno to leader will make them emit your pheromones around themselves.
-  categories: [ HideSpawnMenu ]
+  name: 选择首领
+  description: 提升或降级异形首领，或观察他们。将异形提升为首领会使他们在自身周围释放你的信息素。
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: xeno_lead
+  - type: Sprite
+    state: xeno_lead
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoHeal
-  name: Heal Xenonid (600) # TODO RMC14 proper plasma costs
-  description: Heals xenonids in a 4 tile range around where you click for 30% of their health over 20 seconds.
+  name: 治疗异星虫（600）         # TODO RMC14 proper plasma costs
+  description: 治疗点击位置周围4格范围内的异星虫，在20秒内恢复其生命值30%的生命值。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -249,8 +249,8 @@
 - type: entity
   parent: ActionXenoTransferPlasma
   id: ActionXenoTransferPlasmaQueen
-  name: Give Plasma (400) # TODO RMC14 proper plasma costs
-  description: Remotely restores 75% of a single xenonid's max plasma.
+  name: 给予等离子（400）        # TODO RMC14 proper plasma costs
+  description: 远程恢复单个异形最大等离子体值的75%。
   components:
   - type: Action
     useDelay: 12
@@ -262,13 +262,13 @@
       cost: 400
       amount: 0
       targetPercentage: 0.75
-      range: null
+      range:
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoApplySalve
-  name: Apply Salve (200)
-  description: Apply a salve to use some of your health to heal allied Xenos up to 100 health over 5 seconds. You can stack multiple salves.
+  name: 使用药膏（200）
+  description: 使用药膏，消耗你的一部分生命值，在5秒内为友方异形恢复最多100点生命值。你可以叠加多个药膏。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -288,8 +288,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoSacrifice
-  name: Sacrifice
-  description: Sacrifice your life to heal a sister. [color=red]YOU WILL ONLY RESPAWN IF YOU MAXED OUT YOUR TRANSFERRED HEALTH BY HEALING SISTERS.[/color]
+  name: 牺牲
+  description: 牺牲你的生命来治疗一位姐妹。[color=red]只有当你通过治疗姐妹将你转移的生命值补满后，你才会重生。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -310,8 +310,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTailFountain
-  name: Tail Fountain
-  description: Extinguishes fire from a nearby ally or foe. Uses up your melee attack.
+  name: 尾巴喷泉
+  description: 熄灭附近友方或敌方身上的火。消耗你的近战攻击。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -329,16 +329,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoTailFountain
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: prae_tail_fountain
+  - type: Sprite
+    state: prae_tail_fountain
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoTantrum
-  name: Tantrum (100 plasma, 75 fury)
-  description: Give an ally and yourself temporary armor for a few seconds, which lasts longer on you. Crushers and Ravagers get a speed boost instead.
+  name: 暴怒（100 等离子，75 狂怒）
+  description: 使一名盟友和你自己获得持续几秒的临时护甲，该护甲在你身上持续更久。碾压者和劫掠者则改为获得速度提升。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -357,16 +357,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoTantrum
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: warden_heal
+  - type: Sprite
+    state: warden_heal
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoFightOrFlight
-  name: Fight or Flight (300 plasma, 75 fury)
-  description: Remove ailments and stuns from all allies around you. The radius is longer if you have 75+ fury after paying the cost.
+  name: 战斗或逃跑（300 等离子，75 怒气）
+  description: 移除你周围所有友方身上的异常状态和眩晕。若你在支付费用后拥有 75 点或以上怒气，则作用半径更大。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -386,16 +386,16 @@
 - type: entity
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoFightOrFlight
-  categories: [ HideSpawnMenu ]
+  categories: [HideSpawnMenu]
   components:
-    - type: Sprite
-      state: screech
+  - type: Sprite
+    state: screech
 
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoQueenEye
-  name: Enter Eye Form
-  description: Look around any area with weeds remotely. You can use infinite range abilities while in this form, and build resin from afar.
+  name: 进入眼形态
+  description: 远程查看任何长有杂草的区域。在此形态下，你可以使用无限距离的技能，并能从远处建造树脂。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -411,8 +411,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoSpikeShield
-  name: Spike Shield (150 shards)
-  description: Expend shards to gain a temporary shield that lasts for a short amount of time. Whenever the shield is damaged, spray bone shards around you in a 5x5 AoE centered on yourself. Shield lasts for 2 seconds.
+  name: 尖刺护盾（150碎片）
+  description: 消耗碎片获得一个持续短时间的临时护盾。每当护盾受到伤害时，以自身为中心在5x5范围内迸射骨片。护盾持续2秒。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -430,8 +430,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoBulwarkOfTheHive
-  name: Bulwark Of The Hive
-  description: Grants all hivemembers around you a temporary shield that blocks 200 damage for 10 seconds. While their shield is up, hivemembers can only take damage up to 10% of their health at a time.
+  name: 蜂巢壁垒
+  description: 为你周围的所有蜂巢成员提供一个临时护盾，可在10秒内抵挡200点伤害。当他们的护盾存在时，蜂巢成员每次受到的伤害最多为其生命值的10%。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -448,7 +448,7 @@
   parent: ActionXenoBase
   id: ActionXenoDoom
   name: Doom (50)
-  description: Turns off lights around you for 10 seconds, and slows, dazes, and drains hostiles as well.
+  description: 关闭你周围的灯光，持续10秒，并使敌对目标减速、眩晕，同时吸取其生命。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -466,8 +466,8 @@
 - type: entity
   id: ActionXenoVomitBile
   parent: ActionXenoBase
-  name: Vomit Bile (40)
-  description: Extinguishes a nearby hivemate or sprays volatile bile over enemies in the three tiles in front of you.
+  name: 呕吐胆汁（40）
+  description: 扑灭附近一名巢友身上的火焰，或向你前方三格内的敌人喷洒挥发性胆汁。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -491,8 +491,8 @@
 - type: entity
   id: ActionXenoFleshHarvest
   parent: ActionXenoBase
-  name: Flesh Harvest
-  description: Rip apart a permanently dead marine for flesh resin.
+  name: 血肉收割
+  description: 撕碎一具永久死亡的陆战队员以获取血肉树脂。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -515,8 +515,8 @@
 - type: entity
   id: ActionXenoFleshBloom
   parent: ActionXenoBase
-  name: Flesh Bloom
-  description: Spend flesh resin to grow a telegraphed bloom that slows and poisons enemies while soothing the hive.
+  name: 血肉绽放
+  description: 消耗血肉树脂，生长出一朵带预警的绽放，使敌人减速并中毒，同时安抚蜂巢。
   components:
   - type: Action
     itemIconStyle: NoItem
