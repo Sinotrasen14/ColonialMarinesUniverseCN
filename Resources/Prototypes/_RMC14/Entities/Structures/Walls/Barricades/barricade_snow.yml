@@ -4,6 +4,9 @@
   name: 雪垒
   description: 一堆雪堆成的斜面墙。作为掩体，从统计上看比稀薄的空气要强。
   components:
+  - type: VehicleSmashable
+    minDestroyWeightClass: Light
+    minContinueWeightClass: Medium
   - type: Sprite
     drawdepth: WallTops
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi

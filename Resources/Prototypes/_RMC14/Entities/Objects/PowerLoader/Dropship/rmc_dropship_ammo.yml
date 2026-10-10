@@ -23,6 +23,10 @@
   name: PGU-100多用途30毫米弹药箱
   description: "一箱装满PGU-100 30毫米多用途弹药的弹药箱，专为穿透轻型（非加固）结构而设计，同时可撕碎步兵、IAV、LAV、IMV和MRAP。可在广阔区域内用于对付4级及更高级别的外星虫族侵扰，也符合允许用于对抗4级及更高级别叛乱势力的武器装备规定。然而，它缺乏穿甲能力，因此需要使用反坦克30毫米弹药。可装入GAU-21 30毫米机炮。"
   components:
+  #cmu start
+  - type: RMCGenericExamine
+    message: It can penetrate 1 z-level.
+  #cmu end
   - type: Sprite
     layers:
     - state: 30mm_crate_10
@@ -39,6 +43,8 @@
         Slash: 35
         Piercing: 35
     armorPiercing: 10
+    zLevelPenetration: 1
+    applyEffectsOnPenetrationLevels: true
     weapon: RMCDropshipAttachmentGau21Cannon
     soundCockpit: /Audio/_RMC14/Dropship/gau_incockpit.ogg
     soundGround: /Audio/_RMC14/Dropship/gau.ogg
@@ -53,34 +59,15 @@
     cost: 400
 
 - type: entity
-  parent: RMCDropshipAttachmentAmmo
-  id: CMUDropshipAttachmentAmmoM4332Flares
-  name: M4332大型信号弹箱
-  description: 一个大型加固箱，内含六十枚用于M4332信号弹发射器的信号弹。
-  components:
-  - type: Sprite
-    layers:
-    - state: 30mm_crate_10
-      color: "#8FCF91"
-      map: ["enum.DropshipAmmoVisuals.Fill"]
-  - type: PowerLoaderAttachable
-    attachableTypes:
-    - RMCDropshipDirectFirePoint
-  - type: DropshipAmmo
-    rounds: 15
-    maxRounds: 15
-    roundsPerShot: 1
-    weapon: CMUDropshipAttachmentM4332FlareLauncher
-  - type: DropshipFabricatorPrintable
-    category: Ammo
-    cost: 250
-
-- type: entity
   parent: RMCDropshipAttachmentAmmoGAU
   id: RMCDropshipAttachmentAmmoGAUAP
   name: PGU-105 30毫米反坦克弹药箱
   description: "一整箱PGU-105特种30毫米APFSDS钛钨合金穿甲弹，专为在近距离空中支援中对抗同级和接近同级的装甲运兵车、步兵战车和主战坦克而制造。当从GAU-21发射时，它设计为可击穿最高相当于1350毫米轧制均质装甲的厚度。然而，它对软目标的效能要低得多，这种情况下建议使用30毫米普通弹。警告：如果运输机未以所需速度拉起，弹药脱落的弹托可能有害。请查阅手册第3574页，该手册可在任何AEGIS商店订购。可装填至GAU-21 30毫米机炮。"
   components:
+  #cmu start
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
+  #cmu end
   - type: Sprite
     layers:
     - state: 30mm_crate_hv_10
@@ -95,6 +82,10 @@
         Piercing: 26.67
     armorPiercing: 40
     travelTime: 6
+    #cmu start
+    zLevelPenetration: 2
+    applyEffectsOnPenetrationLevels: true
+    #cmu end
   - type: DropshipFabricatorPrintable
     category: Ammo
     cost: 450
@@ -126,6 +117,10 @@
   id: RMCDropshipAttachmentAmmoRocket
   name: 抽象火箭
   components:
+  #cmu start
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
+  #cmu end
   - type: Sprite
     sprite: _RMC14/Objects/dropship_ammo_64.rsi
     offset: 0.5, 0.5
@@ -150,6 +145,10 @@
     bulletSpread: 0
     travelTime: 6
     fireMissionDelay: 3
+    #cmu start
+    zLevelPenetration: 2
+    applyEffectsOnPenetrationLevels: true
+    #cmu end
     weapon: RMCDropshipAttachmentGuidedMissileLauncher
     soundCockpit: /Audio/_RMC14/Effects/rocketpod_fire.ogg
     soundMarker: /Audio/_RMC14/Effects/rocketpod_fire.ogg #IncommingRocket.ogg sounds better, and more accurate, but this is what is used in parity, i believe it to be a mistake in the original PR, but we can change it in the future
@@ -161,8 +160,16 @@
   name: AIM-224A“寡妇制造者”
   description: AIM-224A导弹是最新空对空导弹技术的改装型。由于对其制导战斗部的改进使其无法被干扰，进而造就了其高击杀率，因此被众多运输机飞行员起了“寡妇制造者”的绰号。它不太适合对地轰炸，但其高速使其能迅速抵达目标。由于运输机弹药短缺，这一枚已被改装为自由落体炸弹。可装入LAU-444制导导弹发射器。
   components:
+  #cmu start
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
+  #cmu end
   - type: DropshipAmmo
     travelTime: 3
+    #cmu start
+    zLevelPenetration: 2
+    applyEffectsOnPenetrationLevels: true
+    #cmu end
     explosion:
       total: 3000
       slope: 5.5
@@ -173,37 +180,24 @@
 
 - type: entity
   parent: RMCDropshipAttachmentAmmoRocket
-  id: AU14DropshipAttachmentAmmoRocketWidowmakerDoubleADMIN
-  name: "AIM-224A“八重寡妇”（不要映射）"
-  description: AIM-224A导弹是对最新空对空导弹技术的改装。由于它由两枚“寡妇制造者”上下堆叠而成，因此获得了“八重寡妇”的绰号。两枚火箭同时发射，且极具不可预测性。它不太适合地面轰炸，但其高速度使其能迅速抵达目标。由于运输舰弹药短缺，这一型已被改装为两发自由落体炸弹。可装载到LAU-444制导导弹发射器中。
-  components:
-  - type: Sprite
-    layers:
-    - state: double
-      map: ["enum.DropshipAmmoVisuals.Fill"]
-  - type: DropshipAmmo
-    rounds: 8
-    maxRounds: 8
-    roundsPerShot: 8
-    bulletSpread: 30
-    travelTime: 3
-    explosion:
-      total: 3000
-      slope: 5.5
-      max: 55
-
-- type: entity
-  parent: RMCDropshipAttachmentAmmoRocket
   id: RMCDropshipAttachmentAmmoRocketKeeper
   name: GBU-67“看守者II”
   description: GBU-67“看守者II”是激光制导武器系列中的最新型号，该系列的历史可追溯至20世纪。其绰号源自“和平看守者”的缩写，而“和平看守者”则来自开发其制导系统的项目，以及它在维和冲突中的多种用途。其战斗部旨在摧毁装甲目标。可装入LAU-444制导导弹发射器。
   components:
+  #cmu start
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
+  #cmu end
   - type: Sprite
     layers:
     - state: paveway
       map: ["enum.DropshipAmmoVisuals.Fill"]
   - type: DropshipAmmo
     travelTime: 2
+    #cmu start
+    zLevelPenetration: 2
+    applyEffectsOnPenetrationLevels: true
+    #cmu end
     explosion:
       total: 905
       slope: 15
@@ -216,15 +210,23 @@
   parent: RMCDropshipAttachmentAmmoRocket
   id: RMCDropshipAttachmentAmmoRocketNapalm
   name: AGM-99“凝固汽油弹”
-  description: AGM-99“凝固汽油弹”是一种燃烧导弹，用于将特定目标区域长时间变成巨大的火球。可装载到 LAU-444 制导导弹发射器中。
+  description: AGM-99 '凝固汽油弹' 是一种燃烧导弹，用于将特定目标区域长时间变成巨大的火球。
   components:
+  #cmu start
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
+  #cmu end
   - type: Sprite
     layers:
     - state: napalm
       map: ["enum.DropshipAmmoVisuals.Fill"]
   - type: DropshipAmmo # TODO RMC14 not usable in fire mission, only direct bombardment
     travelTime: 6
-    fireMissionDelay:
+    #cmu start
+    zLevelPenetration: 2
+    applyEffectsOnPenetrationLevels: true
+    #cmu end
+    fireMissionDelay: null
     explosion:
       total: 1780
       slope: 7.2
@@ -243,12 +245,20 @@
   name: AGM-184“鱼叉 II”
   description: AGM-184“鱼叉 II”是一种反舰导弹，设计用于以低爆炸威力产生的巨大冲击波有效击沉敌舰。该型号经过改装以使用地面信号，可被视为传统弹药的低成本替代品。可装入 LAU-444 制导导弹发射器。
   components:
+  #cmu start
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
+  #cmu end
   - type: Sprite
     layers:
     - state: harpoon
       map: ["enum.DropshipAmmoVisuals.Fill"]
   - type: DropshipAmmo
     travelTime: 5
+    #cmu start
+    zLevelPenetration: 2
+    applyEffectsOnPenetrationLevels: true
+    #cmu end
     explosion:
       total: 1850
       slope: 3.2
@@ -261,14 +271,22 @@
   parent: RMCDropshipAttachmentAmmoRocket
   id: RMCDropshipAttachmentAmmoRocketThermobaric
   name: BLU-200“龙息”
-  description: BLU-200“龙息”是一种温压燃料空气炸弹。气溶胶化的燃料混合物被点燃时会形成真空，对其路径上的人员造成严重伤害。可装载到LAU-444制导导弹发射器中。
+  description: BLU-200“龙息”是一种温压燃料空气炸弹。气溶胶化的燃料混合物被点燃时会形成真空，对其路径上的人员造成严重伤害。
   components:
+  #cmu start
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
+  #cmu end
   - type: Sprite
     layers:
     - state: fatty
       map: ["enum.DropshipAmmoVisuals.Fill"]
   - type: DropshipAmmo
     travelTime: 5
+    #cmu start
+    zLevelPenetration: 2
+    applyEffectsOnPenetrationLevels: true
+    #cmu end
     implosion:
       pullRange: 5.5
       pullDistance: 3.5
@@ -290,12 +308,20 @@
   name: AGM-227“女妖”
   description: AGM-227导弹是经过全面改造的运输机队对抗任何机动或装甲地面目标的中坚力量。它因在即将命中目标前突然发出的哀嚎而获得了“女妖”的绰号。可用于清理大片区域。可装载到LAU-444制导导弹发射器中。
   components:
+  #cmu start
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
+  #cmu end
   - type: Sprite
     layers:
     - state: banshee
       map: ["enum.DropshipAmmoVisuals.Fill"]
   - type: DropshipAmmo
     travelTime: 6
+    #cmu start
+    zLevelPenetration: 2
+    applyEffectsOnPenetrationLevels: true
+    #cmu end
     explosion:
       total: 2000
       slope: 5.5
@@ -317,7 +343,11 @@
   - type: Sprite
     layers:
     - state: minirocket_6
-      map: ["enum.DropshipAmmoVisuals.Fill"]
+      map: [ "enum.DropshipAmmoVisuals.Fill" ]
+  #cmu start
+  - type: RMCGenericExamine
+    message: It can penetrate 1 z-level.
+  #cmu end
   - type: DropshipAmmo
     rounds: 6
     maxRounds: 6
@@ -325,6 +355,10 @@
     bulletSpread: 0
     travelTime: 8
     fireMissionDelay: 2
+    #cmu start
+    zLevelPenetration: 1
+    applyEffectsOnPenetrationLevels: true
+    #cmu end
     weapon: RMCDropshipAttachmentRocketPod
     soundCockpit: /Audio/_RMC14/Effects/rocketpod_fire.ogg
     soundMarker: /Audio/_RMC14/Effects/rocketpod_fire.ogg
@@ -392,214 +426,3 @@
     category: Ammo
     cost: 400
 
-- type: entity
-  parent: RMCDropshipAttachmentAmmoRocket
-  id: AU14DropshipAttachmentAmmoRocketThermobaricTwo
-  name: BLU-176‘超压’
-  description: BLU-176“超压”是一种温压燃料空气炸弹，也是BLU-200“龙息”的较小同类。其雾化燃料混合物在被点燃时会产生真空，对其路径上的一切造成严重毁伤。它可以装载到LAU-444制导导弹发射器中。
-  components:
-  - type: Sprite
-    layers:
-    - state: chubby
-      map: ["enum.DropshipAmmoVisuals.Fill"]
-  - type: DropshipAmmo
-    travelTime: 5
-    implosion:
-      pullRange: 4
-      pullDistance: 2.5
-      pullSpeed: 16
-    fire:
-      type: RMCTileFireThermobaric
-      range: 1
-      cardinalRange: 2
-      ordinalRange: 2
-    soundWarning: /Audio/_RMC14/Effects/rocketpod_fire.ogg
-    markerWarning: true
-    impactEffects:
-    - RMCSmokeExplosionProofSmall
-  - type: DropshipFabricatorPrintable
-    category: Ammo
-    cost: 450
-
-- type: entity
-  parent: RMCSmokeExplosionProof
-  id: AU14SmokeExplosionProofJDAM
-  components:
-  - type: EvenSmoke
-    spawn: RMCSmoke
-    range: 5
-
-- type: entity
-  id: AU14EffectExplosionParticleJDAM
-  name: 爆炸
-  components:
-  - type: Transform
-    anchored: true
-  - type: Sprite
-    sprite: _RMC14/Effects/effects.rsi
-    state: explosion_particle
-  - type: TimedDespawn
-    lifetime: 0.5
-  - type: EffectAlphaAnimation
-  - type: PointLight
-    enabled: true
-    radius: 7
-  - type: RMCScorchEffectOnSpawn
-    probability: 0.9
-    tileLimit: 10
-    scatter: true
-    randomRotation: true
-
-- type: entity
-  parent: RMCDropshipAttachmentAmmoRocket
-  id: AU14DropshipAttachmentAmmoMk102JDAM
-  name: GBU-89B“邮差”
-  description: GBU-89B 联合直接攻击弹药是一种老旧但可靠的大型制导弹药。它的飞行时间极其漫长，但能将整栋建筑夷为平地。它可以装填到 LAU-444 制导导弹发射器中。
-  components:
-  - type: Sprite
-    layers:
-    - state: jdam
-      map: ["enum.DropshipAmmoVisuals.Fill"]
-  - type: DropshipAmmo
-    travelTime: 12
-    explosion:
-      total: 10000
-      slope: 4.5
-      max: 100000000
-    impactEffects:
-    - AU14EffectExplosionParticleJDAM
-  - type: DropshipFabricatorPrintable
-    category: Ammo
-    cost: 7500
-
-- type: entity
-  parent: RMCDropshipAttachmentAmmoRocket
-  id: AU14DropshipAttachmentAmmoGBU89I
-  name: GBU-89C/N“燃烧的邮差”
-  description: GBU-89B/凝固汽油联合直接攻击弹药是一种老旧但可靠的大型制导弹药。其飞行时间极长，但能将整栋建筑夷为平地并点燃。它可以装填进LAU-444制导导弹发射器。
-  components:
-  - type: Sprite
-    layers:
-    - state: jdami
-      map: ["enum.DropshipAmmoVisuals.Fill"]
-  - type: DropshipAmmo
-    travelTime: 11
-    explosion:
-      total: 10000
-      slope: 4.5
-      max: 100000000
-    fire:
-      type: RMCTileFireNapalm
-      range: 3
-      cardinalRange: 5
-    impactEffects:
-    - AU14EffectExplosionParticleJDAM
-    - AU14SmokeExplosionProofJDAM
-  - type: DropshipFabricatorPrintable
-    category: Ammo
-    cost: 8000
-
-- type: entity
-  parent: RMCDropshipAttachmentAmmoRocket
-  id: AU14DropshipAttachmentAmmoCBU250
-  name: CBU-250“晚餐散布”
-  description: CBU-250“晚餐散布”是一种集束弹药，设计用于打击轻装甲车辆和敌方步兵。投放后，该弹药会分离成十二枚低当量子弹药，并将其不均匀地散布在广阔区域内。它可装载到LAU-444制导导弹发射器中。
-  components:
-  - type: Sprite
-    layers:
-    - state: cluster
-      map: ["enum.DropshipAmmoVisuals.Fill"]
-  - type: DropshipAmmo
-    travelTime: 6
-    rounds: 12
-    maxRounds: 12
-    roundsPerShot: 12
-    bulletSpread: 17
-    explosion:
-      total: 110
-      slope: 4
-      max: 8
-    impactEffects:
-    - RMCEffectExplosionParticle
-    - RMCSmokeExplosionProofSmall
-  - type: DropshipFabricatorPrintable
-    category: Ammo
-    cost: 400
-
-- type: entity
-  parent: RMCDropshipAttachmentAmmoRocket
-  id: AU14DropshipAttachmentAmmoRocketWidowmakerDouble
-  name: AIM-224A“双寡妇”挂架
-  description: AIM-224A导弹的双发挂架。由于是两枚“寡妇制造者”上下叠放，因此得名“双寡妇”。两枚火箭同时发射，且极难预测。它不太适合对地轰炸，但其高速使其能迅速抵达目标。由于运输机弹药短缺，这一具已被改装为双发自由落体炸弹。可装入LAU-444制导导弹发射器。
-  components:
-  - type: Sprite
-    layers:
-    - state: double
-      map: ["enum.DropshipAmmoVisuals.Fill"]
-  - type: DropshipAmmo
-    rounds: 2
-    maxRounds: 2
-    roundsPerShot: 2
-    bulletSpread: 9
-    travelTime: 3
-    explosion:
-      total: 3000
-      slope: 5.5
-      max: 55
-  - type: DropshipFabricatorPrintable
-    category: Ammo
-    cost: 900
-
-- type: entity
-  parent: RMCDropshipAttachmentAmmoRocket
-  id: AU14DropshipAttachmentAmmoRocketBansheeHorde
-  name: AIM-207“弯刀”挂架
-  description: AIM-207“弯刀”导弹的四联发射挂架，经改装用于对地打击。该“弯刀”原本是空对空导弹，改装后采用简化制导组件和近炸引信战斗部，使挂架能在指定目标区域以宽幅饱和模式散布全部四枚导弹。它可装入 LAU-444 制导导弹发射器。
-  components:
-  - type: Sprite
-    layers:
-    - state: bansheem
-      map: ["enum.DropshipAmmoVisuals.Fill"]
-  - type: DropshipAmmo
-    rounds: 4
-    maxRounds: 4
-    roundsPerShot: 4
-    bulletSpread: 5
-    travelTime: 6
-    explosion:
-      total: 190
-      slope: 11
-      max: 78
-    impactEffects:
-    - RMCEffectExplosionParticle
-    - RMCSmokeExplosionProofSmall
-  - type: DropshipFabricatorPrintable
-    category: Ammo
-    cost: 700
-
-- type: entity
-  parent: RMCDropshipAttachmentAmmoRocket
-  id: AU14DropshipAttachmentAmmoCBU607
-  name: CBU-607“飞碟射手”挂架
-  description: CBU-607“飞碟射手”是一种可挂载四枚导弹的集束弹药挂架，设计用于对付中型装甲车辆和敌方步兵。投放后，每枚弹药会分离成两个中等威力的小炸弹，将它们密集散布在一小片区域内。它可装入LAU-444制导导弹发射器。
-  components:
-  - type: Sprite
-    layers:
-    - state: sgw
-      map: ["enum.DropshipAmmoVisuals.Fill"]
-  - type: DropshipAmmo
-    travelTime: 4
-    rounds: 6
-    maxRounds: 6
-    roundsPerShot: 6
-    bulletSpread: 5
-    explosion:
-      total: 100
-      slope: 12
-      max: 11
-    impactEffects:
-    - RMCEffectExplosionParticle
-    - RMCSmokeExplosionProofSmall
-  - type: DropshipFabricatorPrintable
-    category: Ammo
-    cost: 500

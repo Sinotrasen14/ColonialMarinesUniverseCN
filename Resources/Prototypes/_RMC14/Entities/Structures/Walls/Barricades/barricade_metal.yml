@@ -7,6 +7,9 @@
   name: 金属路障
   description: 一种由金属板制成的坚固且易于组装的路障，常用于快速构建防御工事。使用喷灯进行修理。
   components:
+  - type: VehicleSmashable
+    minDestroyWeightClass: Light
+    minContinueWeightClass: Medium
   - type: Climbable
   - type: Anchorable
   - type: MeleeSound

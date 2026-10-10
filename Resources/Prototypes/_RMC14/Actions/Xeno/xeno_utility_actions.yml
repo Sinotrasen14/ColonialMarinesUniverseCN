@@ -467,7 +467,8 @@
   id: ActionXenoVomitBile
   parent: ActionXenoBase
   name: 呕吐胆汁（40）
-  description: 扑灭附近一名巢友身上的火焰，或向你前方三格内的敌人喷洒挥发性胆汁。
+  # CMU14: Extinguishes a nearby hivemate or sprays volatile bile over enemies in the three tiles in front of you.
+  description: 熄灭一个同伴或向敌人喷洒挥发性胆汁，并覆盖你前方的三排敌人。当你在燃烧时，会点燃敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -478,7 +479,8 @@
       state: xeno_spit
       map: ["enum.ActionVisuals.Icon"]
   - type: TargetAction
-    range: 1.8
+    # range: 1.8 # CMU14
+    range: 5.4 # CMU14: triple bile targeting range.
     checkCanAccess: false
   - type: EntityTargetAction
     targetCheckCanInteract: false

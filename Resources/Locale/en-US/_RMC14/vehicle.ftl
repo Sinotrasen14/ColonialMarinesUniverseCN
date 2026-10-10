@@ -33,6 +33,7 @@ rmc-hardpoint-ui-integrity = {$current}/{$max}（{$percent}%）
 rmc-hardpoint-ui-no-integrity = 没有完整性数据
 rmc-hardpoint-ui-remove = 移除
 rmc-hardpoint-ui-removing = 移除中……
+rmc-hardpoint-disintegrates = {CAPITALIZE(THE($item))} 在受到的伤害下，它分解成一堆无用的废料。
 rmc-vehicle-ammo-loader-no-vehicle = 装弹机没有连接到载具。
 rmc-vehicle-ammo-loader-no-hardpoint = 没有安装兼容的挂载点。
 rmc-vehicle-ammo-loader-wrong-ammo = 那种弹药装不进这台装弹机。
@@ -146,3 +147,19 @@ rmc-hardpoint-removal-prying-tool = 拿着撬棍或维护千斤顶才能移除�
 # CMU14
 cmu-vehicle-supply-unassigned = 没有排被分配到这座仓库。
 cmu-vehicle-supply-allowance = {$platoon} — 已配发载具：{$used}/{$limit}（最多一辆坦克和一架VTOL）
+
+rmc-vehicle-lock-frame-destroyed = 车辆在车架被破坏时无法上锁。
+
+rmc-hardpoint-remove-blocked = 那个挂点固定在原位。
+
+rmc-vehicle-demolition-frame-intact = 这辆车的车架太结实了，不能放爆炸物。先把它摧毁吧。
+
+rmc-vehicle-demolition-busy = 有人已经在摆弄这辆残破的车了。
+
+rmc-vehicle-demolition-start = 你开始用炸药布置残骸…
+
+rmc-vehicle-demolition-no-skill = 你不知道怎么安装拆除炸药。
+
+rmc-vehicle-too-small-to-damage = 我们太小了，无法对这辆车造成任何重大伤害！
+
+rmc-vehicle-demolition-armed = 炸弹已经放好了，正在倒计时！

@@ -1,8 +1,8 @@
 - type: antagSpecifier
+  parent: CMUAntagSpecifierColonyBase
   id: DrugDealer
   prefRoles: [ DrugDealerRole ]
   jobBlacklistGroup:
-  - AllGovforJobs
   - AllOpforJobs
   - AllCLFJobs
   - AllWeYuJobs
@@ -70,6 +70,8 @@
     back:
     - AUPaperDrugs
     - RMCLighter
+    - CMUDrugCookingKit
+    - PackPaperRolling
 
 - type: entity
   parent: RMCBoxCardboard

@@ -5,6 +5,8 @@
   description: 由木板钉合而成的墙。不太坚固，但能提供一些遮蔽。
   components:
   - type: VehicleSmashable
+    minDestroyWeightClass: Light
+    minContinueWeightClass: Medium
   - type: Sprite
     drawdepth: WallTops
     sprite: _RMC14/Structures/Walls/Barricades/barricade.rsi

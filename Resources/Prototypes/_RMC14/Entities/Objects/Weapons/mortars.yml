@@ -123,6 +123,8 @@
   name: M889高爆迫击炮弹
   description: 一枚装有高爆装药的80毫米迫击炮弹。
   components:
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
   - type: Item
     heldPrefix: he
   - type: Sprite
@@ -137,6 +139,7 @@
   - type: CMExplosionEffect
   - type: RMCScorchEffect
   - type: MortarShell
+    zLevelPenetration: 2
     carvesZLevels: true
     carveFringeRadius: 1
 
@@ -146,6 +149,8 @@
   name: M971高爆反坦克多用途迫击炮弹
   description: 一枚装有高爆反坦克多用途装药的80毫米迫击炮弹。它的爆炸半径比高爆弹更小，但效果极具毁灭性。
   components:
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
   - type: Item
     heldPrefix: heat
   - type: Sprite
@@ -160,6 +165,7 @@
   - type: CMExplosionEffect
   - type: RMCScorchEffect
   - type: MortarShell
+    zLevelPenetration: 2
     createsZLevelOpening: true
 
 - type: entity
@@ -168,6 +174,8 @@
   name: M902高爆燃烧迫击炮弹
   description: 一种装有高爆燃烧装药的80毫米迫击炮弹。非常适合远程区域封锁。
   components:
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
   - type: Item
     heldPrefix: inc
   - type: Sprite
@@ -182,6 +190,7 @@
   - type: CMExplosionEffect
   - type: RMCScorchEffect
   - type: MortarShell
+    zLevelPenetration: 2
   - type: TileFireOnTrigger
     spawn: RMCTileFire
     range: 5
@@ -192,12 +201,15 @@
   name: M853照明观测迫击炮弹
   description: 一枚80毫米迫击炮弹，装有照明弹和观测相机，并连接有降落伞。
   components:
+  - type: RMCGenericExamine
+    message: It can penetrate 2 z-levels.
   - type: Item
     heldPrefix: flr
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/mortar.rsi
     state: mortar_ammo_flr
   - type: MortarShell
+    zLevelPenetration: 2
   - type: MortarCameraShell
 
 - type: entity

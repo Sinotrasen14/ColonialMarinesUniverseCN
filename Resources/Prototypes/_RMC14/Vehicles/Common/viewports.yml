@@ -19,11 +19,12 @@
   - type: RemoveComponents
     components:
     - type: InteractionTransparency
+    - type: Tag
 
 - type: entity
   parent: VehicleViewport
   id: VehicleViewportUnanchored
-  name: 载具观察窗（未锚定）
+  name: 载具观察窗
   description: 用于向外窥视的小型观察窗
   placement:
     mode: PlaceFree
@@ -37,7 +38,7 @@
 - type: entity
   parent: VehicleViewport
   id: VehicleViewportSimple
-  name: 载具观察窗（简易）
+  name: 载具观察窗
   description: 一个用于向外窥视的小型观察窗。
   components:
   - type: Sprite
@@ -60,6 +61,7 @@
   - type: RemoveComponents
     components:
     - type: InteractionTransparency
+    - type: Tag
 
 - type: entity
   parent: VehicleHumveeViewportBase

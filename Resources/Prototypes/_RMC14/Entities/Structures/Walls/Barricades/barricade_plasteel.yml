@@ -5,6 +5,9 @@
   name: 玻璃钢路障
   description: 一种由加固玻璃钢板制成的坚固且易于组装的路障，是防御工事的巅峰。使用喷灯进行修理。
   components:
+  - type: VehicleSmashable
+    minDestroyWeightClass: Light
+    minContinueWeightClass: Medium
   - type: Climbable
   - type: Anchorable
   - type: MeleeSound

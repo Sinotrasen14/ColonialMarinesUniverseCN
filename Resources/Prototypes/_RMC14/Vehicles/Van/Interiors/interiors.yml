@@ -26,6 +26,9 @@
     fadeLayers:
     - "roof"
 
+  - type: Tag
+    tags:
+    - HideContextMenu
 - type: entity
   parent: VehicleVanRoofBase
   id: VehicleVanRoof1
@@ -98,6 +101,9 @@
   placement:
     mode: SnapgridCenter
   components:
+  - type: Tag
+    tags:
+    - HideContextMenu
   - type: Transform
     anchored: true
   - type: Sprite
@@ -136,6 +142,9 @@
         - Opaque
         - InteractImpassable
 
+  - type: Tag
+    tags:
+    - HideContextMenu
 - type: entity
   parent: VehicleVanWallBase
   id: VehicleVanFront1
@@ -352,7 +361,9 @@
   name: 货车背景 1
   components:
   - type: Sprite
-    state: background_1
+    layers:
+    - state: background_1
+      map: [ "roof" ]
   - type: RMCSpriteFade
     targetAlpha: 0.35
     changeRate: 4.0
@@ -374,7 +385,9 @@
   name: 厢式货车背景 3
   components:
   - type: Sprite
-    state: background_3
+    layers:
+    - state: background_3
+      map: [ "roof" ]
   - type: InteractionTransparency
 
 - type: entity
@@ -384,6 +397,7 @@
   components:
   - type: Sprite
     state: interior_door
+    drawdepth: BelowMobs
   - type: Clickable
   - type: InteractionOutline
   - type: RemoveComponents
@@ -432,7 +446,9 @@
   name: 面包车挡风玻璃顶部
   components:
   - type: Sprite
-    state: windshield_viewport_top
+    layers:
+    - state: windshield_viewport_top
+      map: [ "roof" ]
   - type: RMCSpriteFade
     targetAlpha: 0.35
     changeRate: 4.0
@@ -444,7 +460,9 @@
   name: 厢式货车挡风玻璃底部
   components:
   - type: Sprite
-    state: windshield_viewport_bottom
+    layers:
+    - state: windshield_viewport_bottom
+      map: [ "roof" ]
   - type: RMCSpriteFade
     targetAlpha: 0.35
     changeRate: 4.0

@@ -6,6 +6,8 @@
   description: 这是一个不可移动的、用卡片锁定的储物柜。
   components:
   - type: VehicleSmashable
+    minDestroyWeightClass: Light
+    minContinueWeightClass: Medium
   - type: Sprite
     sprite: _RMC14/Structures/Storage/Lockers/standard.rsi
     layers:

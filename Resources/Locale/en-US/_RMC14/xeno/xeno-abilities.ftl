@@ -65,8 +65,11 @@ cm-xeno-evolution-failed-cannot-support = 虫巢暂时无法支持这个种姓�
 cm-xeno-evolution-failed-hive-full = 虫巢无法再支持一个{$tier}阶，请等待更多异形诞生或有人死去。
 rmc-xeno-evolution-devolve-title = 退化为
 rmc-xeno-evolution-devolve = 你退化成了{$xeno}！
-rmc-xeno-evolution-cant-evolve-damaged = 我们必须处于满生命值才能进化。
-rmc-xeno-evolution-cant-strain-damaged = 我们必须处于满生命值才能选择变种。
+# CMU14: evolution health requirement reduced from full health to half health.
+# rmc-xeno-evolution-cant-evolve-damaged = We must be at full health to evolve.
+# rmc-xeno-evolution-cant-strain-damaged = We must be at full health to take a strain.
+rmc-xeno-evolution-cant-evolve-damaged = 我们至少要有50%的生命值才能进化。
+rmc-xeno-evolution-cant-strain-damaged = 我们至少要有50%的生命值才能选择变种。
 rmc-xeno-evolution-cant-devolve-damaged = 我们太虚弱了，无法退化，必须先恢复生命值。
 rmc-xeno-evolution-cant-evolve-recent-queen-death-minutes = 我们必须等待大约{$minutes}分{$seconds}秒，让虫巢从上一位女王的死亡中恢复。
 rmc-xeno-evolution-cant-evolve-recent-queen-death-seconds = 我们必须等待大约{$seconds}秒，让虫巢从上一位女王的死亡中恢复。
@@ -102,6 +105,7 @@ cm-xeno-fortify-cant-headbutt = 我们在固守时无法头槌！
 cm-xeno-fortify-cant-rest = 我们在固守时无法休息！
 cm-xeno-fortify-cant-tail-sweep = 我们在固守时无法尾扫！
 cm-xeno-fortify-cant-toggle-crest = 我们在固守时无法放低头冠！
+cm-xeno-fortify-cant-vehicle = 这辆车挡住我们修防御工事了
 
 # Headbutt
 rmc-xeno-headbutt-too-far = 放低头冠时我们无法在这个距离头槌！

@@ -691,6 +691,10 @@
   name: 棺材 | coffin
   description: 一个舒适的棺材，是吸血鬼和尸体的绝佳去处。 | A comfy coffin, excellent place for the vampires and corpses.
   components:
+  # cmu edit start
+  - type: EntityStorage
+    capacity: 10
+  # cmu edit end
   - type: Sprite
     sprite: Structures/Storage/Crates/coffin.rsi
     layers:

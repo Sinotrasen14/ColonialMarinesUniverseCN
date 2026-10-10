@@ -1,5 +1,7 @@
+﻿#RuMC modified
+
 - type: entity
-  parent: [CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals]
+  parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   name: AK-4047突击步枪
   id: RMCWeaponRifleAK4047
   description: UPP突击步枪，旨在模仿美国M41A的性能。4047的设计更注重实用性，只要使用者定期维护，就能在恶劣环境中使用。许多民用爱好者声称这种武器几乎无敌，但任何曾带着它服役的人都会告诉你，事实远非如此。
@@ -8,9 +10,25 @@
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/ak4047.rsi
     layers:
     - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-0
-      map: ["enum.GunVisualLayers.Mag"]
+      map: [ "enum.GunVisualLayers.Base" ]
+  - type: ItemMapper
+    mapLayers:
+      mag-0:
+        whitelist:
+          tags:
+          - RMCMagazineRifleAK4047
+          - RMCMagazineRifleAK4047AP
+          - RMCMagazineRifleAK4047Incendiary
+          - RMCMagazineRifleAK4047HEAP
+      mag-1:
+        whitelist:
+          tags:
+          - RuMCMagazineRifleAK4047bakelite
+          - RuMCMagazineRifleAK4047APbakelite
+      mag-2:
+        whitelist:
+          tags:
+          - RuMCMagazineRifleAK4047buben
   - type: Clothing
     sprite: _RMC14/Objects/Weapons/Guns/Rifles/ak4047.rsi
   - type: ContainerContainer
@@ -52,6 +70,9 @@
           - RMCMagazineRifleAK4047AP
           - RMCMagazineRifleAK4047Incendiary
           - RMCMagazineRifleAK4047HEAP
+          - RuMCMagazineRifleAK4047bakelite
+          - RuMCMagazineRifleAK4047APbakelite
+          - RuMCMagazineRifleAK4047buben
   - type: GunDamageModifier
     multiplier: 1.1
   - type: AttachableHolder
@@ -196,7 +217,7 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: ammo_band
-      color: "#1F951F"
+      color: "#212121"
   - type: RefillableByBulletBox
     bulletType: RMCBoxBulletsRifleAP
 
