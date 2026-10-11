@@ -8,16 +8,16 @@
   requirements:
   - !type:TotalJobsTimeRequirement
     group: CMJobsDropship
-    time: 18000 # 5 hours
+    time: 0 # 5 hours
   ranks:
     RMCRankSecondLT:
     - !type:RoleTimeRequirement
       role: CMJobPilotDropship
-      time: 252000 # 70 hours
+      time: 0 # 70 hours
     RMCRankChiefWarrantOfficer:
     - !type:RoleTimeRequirement
       role: CMJobPilotDropship
-      time: 90000 # 25 hours
+      time: 0 # 25 hours
     RMCRankWarrantOfficer: []
   startingGear: CMGearPilotDropship
   icon: "CMJobIconPilotDropship"

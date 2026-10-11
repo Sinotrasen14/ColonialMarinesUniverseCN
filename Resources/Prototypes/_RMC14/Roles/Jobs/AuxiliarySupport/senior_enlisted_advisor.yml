@@ -8,31 +8,31 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: CMSquad
-    time: 54000 # 15 hours
+    time: 0 # 15 hours
   - !type:TotalJobsTimeRequirement
     group: CMJobsEngineering
-    time: 36000 # 10 hours
+    time: 0 # 10 hours
   - !type:DepartmentTimeRequirement
     department: CMMilitaryPolice
-    time: 54000 # 15 hours
+    time: 0 # 15 hours
   - !type:TotalJobsTimeRequirement
     group: CMJobsMedical
-    time: 54000 # 15 hours
+    time: 0 # 15 hours
   - !type:DepartmentTimeRequirement
     department: CMCommand
-    time: 54000 # 15 hours
+    time: 0 # 15 hours
   - !type:DepartmentTimeRequirement
     department: CMRequisitions
-    time: 36000 # 10 hours
+    time: 0 # 10 hours
   ranks: # TODO Selectable Ranks for SEA
     RMCRankSergeantMajor:
     - !type:RoleTimeRequirement
       role: CMJobSeniorEnlistedAdvisor
-      time: 252000 # 70 hours
+      time: 0 # 70 hours
     RMCRankFirstSergeant:
     - !type:RoleTimeRequirement
       role: CMJobSeniorEnlistedAdvisor
-      time: 36000 # 10 hours
+      time: 0 # 10 hours
     RMCRankGunnerySergeant: []
   startingGear: CMGearSeniorEnlistedAdvisor
   icon: "CMJobIconSEA"

@@ -7,13 +7,13 @@
   requirements:
   - !type:RoleTimeRequirement
     role: CMJobCombatTech
-    time: 36000 # 10 hours
+    time: 0 # 10 hours
   - !type:RoleTimeRequirement
     role: CMJobHospitalCorpsman
-    time: 36000 # 10 hours
+    time: 0 # 10 hours
   - !type:TotalJobsTimeRequirement
     group: RMCJobsSurvivor
-    time: 5400 # 1.5 hours
+    time: 0 # 1.5 hours
   spawnMenuRoleName: FORECON Support Technician (Survivor)
   special:
   - !type:AddComponentSpecial

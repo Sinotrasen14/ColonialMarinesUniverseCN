@@ -8,16 +8,16 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: CMSquad
-    time: 18000 # 5 hours
+    time: 0 # 5 hours
   ranks:
     RMCRankCorporal:
     - !type:RoleTimeRequirement
       role: CMJobCombatTech
-      time: 252000 # 70 hours
+      time: 0 # 70 hours
     RMCRankLanceCorporal:
     - !type:RoleTimeRequirement
       role: CMJobCombatTech
-      time: 36000 # 10 hours
+      time: 0 # 10 hours
     RMCRankPrivateFirstClass: []
   startingGear: CMGearCombatTech
   dummyStartingGear: CMGearCombatTechEquipped

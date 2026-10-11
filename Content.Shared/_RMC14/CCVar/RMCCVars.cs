@@ -523,10 +523,10 @@ public sealed partial class RMCCVars : CVars
         CVarDef.Create("rmc.hijack_ship_weight", 0.5f, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCMinimumHijackBurrowed =
-    CVarDef.Create("rmc.hijack_minimum_burrowed", 5, CVar.REPLICATED | CVar.SERVER);
+    CVarDef.Create("rmc.hijack_minimum_burrowed", 1, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCDistressXenosMinimum =
-        CVarDef.Create("rmc.distress_xenos_minimum", 4, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.distress_xenos_minimum", 0, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<float> VolumeGainCassettes =
         CVarDef.Create("rmc.volume_gain_cassettes", 0.33f, CVar.REPLICATED | CVar.CLIENT | CVar.ARCHIVE);
@@ -563,7 +563,7 @@ public sealed partial class RMCCVars : CVars
         CVarDef.Create("rmc.lobby_start_paused", false, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCLobbyMinimumPlayers =
-        CVarDef.Create("rmc.lobby_min_players", 20, CVar.REPLICATED | CVar.SERVER);
+        CVarDef.Create("rmc.lobby_min_players", 1, CVar.REPLICATED | CVar.SERVER);
 
     public static readonly CVarDef<int> RMCChatRepeatHistory =
         CVarDef.Create("rmc.chat_repeat_history", 4, CVar.REPLICATED | CVar.SERVER);

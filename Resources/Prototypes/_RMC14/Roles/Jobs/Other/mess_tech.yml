@@ -7,16 +7,16 @@
   requirements:
   - !type:DepartmentTimeRequirement
     department: CMSquad
-    time: 7200 # 2 hours
+    time: 0 # 2 hours
   ranks:
     RMCRankLanceCorporal:
     - !type:RoleTimeRequirement
       role: CMJobMessTech
-      time: 252000 # 70 hours
+      time: 0 # 70 hours
     RMCRankPrivateFirstClass:
     - !type:RoleTimeRequirement
       role: CMJobMessTech
-      time: 36000 # 10 hours
+      time: 0 # 10 hours
     RMCRankPrivate: []
   startingGear: CMGearMessTech
   icon: "CMJobIconMessTech"

@@ -6,20 +6,20 @@
   requirements:
   - !type:TotalDepartmentsTimeRequirement
     group: CMDepartmentsHuman
-    time: 36000 # 10 hours
+    time: 0 # 10 hours
   ranks:
     RMCRankWeYaExecutiveSpecialist:
     - !type:RoleTimeRequirement
       role: CMJobLiaison
-      time: 630000 # 175 hours
+      time: 0 # 175 hours
     RMCRankWeYaSeniorExecutive:
     - !type:RoleTimeRequirement
       role: CMJobLiaison
-      time: 252000 # 70 hours
+      time: 0 # 70 hours
     RMCRankWeYaExecutive:
     - !type:RoleTimeRequirement
       role: CMJobLiaison
-      time: 90000 # 25 hours
+      time: 0 # 25 hours
     RMCRankWeYaJuniorExecutive: []
   playTimeTracker: CMJobLiaison
   startingGear: CMGearLiaison

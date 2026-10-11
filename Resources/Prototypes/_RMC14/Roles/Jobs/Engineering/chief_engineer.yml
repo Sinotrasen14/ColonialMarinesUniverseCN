@@ -8,12 +8,12 @@
   requirements:
   - !type:TotalJobsTimeRequirement
     group: CMJobsEngineering
-    time: 72000 # 20 hours
+    time: 0 # 20 hours
   ranks:
     RMCRankFirstLT:
     - !type:RoleTimeRequirement
       role: CMJobChiefEngineer
-      time: 252000 # 70 hours
+      time: 0 # 70 hours
     RMCRankSecondLT: []
   weight: 5
   startingGear: CMGearChiefEngineer
