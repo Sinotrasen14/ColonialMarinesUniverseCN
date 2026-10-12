@@ -60,9 +60,9 @@
 
 - type: entity
   parent: CMBeltMedicBag
-  id: CMULACNBeltMedical
+  id: CMUBeltMedicBagLACN
   name: LACN救生包
-  description: 一条LACN承重腰带，上面挂着一个行李袋，里面装有一系列注射器和轻型医疗用品。常见于医务兵中。
+  description: 一个 LACN 承重腰带，上面挂着一个装满各种注射器和轻型医疗用品的旅行袋。军医中很常见。右键点击它的图标，然后点击切换腰带模式，就可以通过简单点击来取出瓶子里的药丸。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNmedbelt.rsi
@@ -70,6 +70,13 @@
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNmedbelt.rsi
   - type: ItemCamouflage
     camouflageVariations: { }
+
+- type: entity
+  parent: CMBeltMedical
+  id: CMUBeltMedicalLACN
+  name: LACN medical storage rig
+  suffix: CMU
+  description: The LACN medical storage rig is the standard load-bearing equipment for many LACN corpsmen. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport medical supplies. \nRight click its sprite and click \"toggle belt mode\" to take pills out of bottles by simply clicking them.
 
 - type: entity
   parent: RMCBeltGrenade

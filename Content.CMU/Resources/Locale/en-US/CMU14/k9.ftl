@@ -90,6 +90,7 @@ rmc-k9-arm-grab-escaped-self = 你成功将手臂从狗的咬合中挣脱！
 rmc-k9-arm-grab-escaped-dog = {$target}成功从你的颚中挣脱！
 rmc-k9-arm-grab-broken-damage = 由于严重损伤，狗失去了咬合！
 rmc-k9-arm-grab-xeno = 颚部无法可靠地咬住异形！
+rmc-k9-arm-grab-target-down = 他们已经倒下了。没有什么可以抓住的。
 
 # Track Owner
 rmc-k9-track-master-none = 你没有注册的主人。靠近一名陆战队员并使用“请求绑定”。

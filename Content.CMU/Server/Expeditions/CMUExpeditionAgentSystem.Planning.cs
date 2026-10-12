@@ -14,13 +14,15 @@ public sealed partial class CMUExpeditionAgentSystem
 {
     private bool RunPlan(EntityUid uid, CMUExpeditionAgentComponent agent, bool armed, float damage, bool hit, TimeSpan now)
     {
-        if (!agent.PlanningEnabled || agent.Action == null && !OptionalDecisionReady(agent))
+        if (agent.FlareItem != null || agent.UtilityCleanupItem != null || !agent.PlanningEnabled ||
+            agent.Action == null && !OptionalDecisionReady(agent))
             return false;
         if (agent.Action == null && now < agent.MedicalCoverUntil && armed && !hit && damage < agent.RetreatDamage)
             return false;
         if (agent.Action != null)
         {
-            if (hit || now >= agent.ActionUntil || !ManeuverSupported(uid, agent, now) ||
+            if (hit && !(agent.Action == A.TakeCover && ContinuingDangerEscape(uid, agent, now)) ||
+                now >= agent.ActionUntil || !ManeuverSupported(uid, agent, now) ||
                 GrenadeDanger(Transform(uid).Coordinates) && agent.Action != A.TakeCover)
             {
                 CancelPlan(uid, agent, true);
@@ -33,7 +35,7 @@ public sealed partial class CMUExpeditionAgentSystem
             return StartNextAction(uid, agent, damage, now);
         if (armed && now < agent.NextPlan)
             return false;
-        var spare = SpareAmmunition(uid);
+        var spare = ReloadAmmunition(uid);
         // An empty rifle must not wait for the optional tactical-planning cadence.
         if (now < agent.NextPlan && (armed || spare == null))
             return false;
@@ -51,23 +53,22 @@ public sealed partial class CMUExpeditionAgentSystem
         agent.ActionDestination = null;
         agent.GrenadeTarget = null;
         agent.SmokeGrenade = false;
+        agent.SmokeWithdrawalDestination = null;
+        ClearGrenadeStaging(agent);
         if (goal == CMUTacticalGoal.Fight)
         {
-            if ((armed || safe) && damage < agent.RetreatDamage && available && now >= agent.NextRescue && agent.Stress < 0.65f &&
+            if (!agent.HoldPosition && !agent.CornerHolding && (armed || safe) && damage < agent.RetreatDamage && available && now >= agent.NextRescue && agent.Stress < 0.65f &&
                 (agent.HasCoveringAlly || agent.VisibleThreats.Count == 0))
                 agent.Casualty = FindCasualty(uid, agent);
             if (agent.Casualty != null)
                 goal = CMUTacticalGoal.Rescue;
             else if ((available || agent.State is CMUExpeditionAgentState.Aim or CMUExpeditionAgentState.Engage) &&
                 now >= agent.NextGrenade && GrenadeDecisionAvailable(uid, agent, now) &&
-                Grenade(uid, false) is { } grenade && BlastPoint(uid, agent, grenade) is { } target)
+                TryPlanGrenade(uid, agent, now))
             {
-                agent.GrenadeTarget = target;
-                agent.SmokeGrenade = false;
-                agent.GrenadeDecision = "cluster-or-last-resort";
                 goal = CMUTacticalGoal.Flush;
             }
-            else if (agent.RecoveryUntil <= now && agent.Duty is not (CMUSquadDuty.Overwatch or CMUSquadDuty.RearGuard or CMUSquadDuty.Medic or CMUSquadDuty.Recover) &&
+            else if (agent.AssaultDestination == null && !agent.HoldPosition && !agent.CornerHolding && agent.RecoveryUntil <= now && agent.Duty is not (CMUSquadDuty.Overwatch or CMUSquadDuty.RearGuard or CMUSquadDuty.Medic or CMUSquadDuty.Recover) &&
                 damage < agent.RetreatDamage && available && armed && !agent.Crossfire && now >= agent.NextFlank && agent.HasCoveringAlly &&
                 (agent.Duty == CMUSquadDuty.Advance || agent.Initiative >= (agent.CombatRole == CMUExpeditionCombatRole.Flanker ? 0.4f : 0.6f) * agent.LearnedFlankCost ||
                     agent.RepeatedPeekHits >= 2) && !SquadHasFlanker(uid, agent) &&
@@ -84,8 +85,10 @@ public sealed partial class CMUExpeditionAgentSystem
             (goal is CMUTacticalGoal.Rearm or CMUTacticalGoal.Recover ||
              goal == CMUTacticalGoal.Fight && (!armed || agent.Crossfire && agent.Stress >= 0.6f && agent.HasCoveringAlly)) &&
             now >= agent.NextGrenade && GrenadeDecisionAvailable(uid, agent, now) &&
-            Grenade(uid, true) is { } screen && SmokePoint(uid, agent, screen, Transform(uid).Coordinates) is { } screening)
+            Grenade(uid, true) is { } screen && SmokePoint(uid, agent, screen, Transform(uid).Coordinates) is { } screening &&
+            FindSmokeWithdrawal(uid, agent, screening, agent.LastSeen, out var withdrawal))
         {
+            agent.SmokeWithdrawalDestination = withdrawal;
             agent.GrenadeTarget = screening;
             agent.SmokeGrenade = true;
             agent.GrenadeDecision = "screen-withdrawal";
@@ -168,6 +171,7 @@ public sealed partial class CMUExpeditionAgentSystem
         if (plan == null || plan.Count == 0)
         {
             ReleaseManeuver(uid, agent);
+            ClearGrenadeStaging(agent);
             agent.Casualty = null;
             return false;
         }
@@ -195,12 +199,12 @@ public sealed partial class CMUExpeditionAgentSystem
             case A.Flank:
                 if (agent.ActionDestination is { } destination &&
                     (action != A.TakeCover || agent.Goal != CMUTacticalGoal.Recover ||
-                        damage >= agent.EmergencyHealDamage || TryReserveManeuver(uid, agent, now)))
+                        damage >= agent.EmergencyHealDamage || TryReserveManeuver(uid, agent, now, destination)))
                     success = StartPlanMove(uid, agent, destination, now);
                 break;
             case A.Reload:
                 agent.State = CMUExpeditionAgentState.Reloading;
-                agent.ActionItem = SpareAmmunition(uid);
+                agent.ActionItem = ReloadAmmunition(uid);
                 success = ReloadSafe(uid, agent) && agent.ActionItem != null;
                 break;
             case A.Treat:
@@ -209,31 +213,46 @@ public sealed partial class CMUExpeditionAgentSystem
             case A.ThrowGrenade:
                 agent.State = CMUExpeditionAgentState.Throwing;
                 agent.ActionItem = Grenade(uid, agent.SmokeGrenade);
-                success = agent.GrenadeTarget is { } target && agent.ActionItem is { } grenade && SafeGrenade(uid, target, grenade) &&
+                success = agent.GrenadeTarget is { } target && agent.ActionItem is { } grenade &&
+                    SafeGrenade(uid, target, grenade, agent.GrenadeThrowStance) &&
                     ReserveGrenadeDecision(uid, agent, now);
+                if (success && agent.GrenadeThrowStance is { } stance)
+                {
+                    success = RememberedGrenadeContact(agent, agent.GrenadeTarget!.Value) &&
+                        GrenadeApproachSupported(uid, agent, stance, agent.GrenadeTarget.Value, now);
+                    if (!success)
+                        break;
+                    agent.ActionUntil = now + TimeSpan.FromSeconds(5);
+                    agent.GrenadeReservationUntil = agent.ActionUntil;
+                    ClearCover(agent);
+                    agent.ActiveMoveDestination = stance;
+                    BeginMove(uid, agent, stance, CMUExpeditionAgentState.PlanMove, now);
+                    agent.MoveUntil = agent.ActionUntil - TimeSpan.FromSeconds(1);
+                }
                 break;
             case A.ApproachCasualty:
                 if (ValidCasualty(uid, agent) && TryReserveManeuver(uid, agent, now))
-                    success = StartPlanMove(uid, agent, Transform(agent.Casualty!.Value).Coordinates, now);
+                    success = ApproachCasualty(uid, agent, now);
                 break;
             case A.GrabCasualty:
                 if (_guns.TryGetGun(uid, out var gun))
                     _wield.TryUnwield(gun.Owner, uid);
-                success = ValidCasualty(uid, agent) && _hands.GetEmptyHandCount(uid) > 0 &&
-                    _transform.InRange(Transform(uid).Coordinates, Transform(agent.Casualty!.Value).Coordinates, 1.5f) &&
-                    _pulling.TryStartPull(uid, agent.Casualty.Value);
+                success = ValidCasualty(uid, agent) &&
+                    _transform.InRange(Transform(uid).Coordinates, Transform(agent.Casualty!.Value).Coordinates, 1.5f);
                 agent.State = CMUExpeditionAgentState.Rescuing;
-                agent.ActionComplete = success;
                 break;
             case A.DragCasualty:
                 if (ValidCasualty(uid, agent) && agent.RescueShelter is { } refuge)
                     success = StartPlanMove(uid, agent, refuge, now);
                 break;
         }
-        if (success && action is A.Reload or A.ThrowGrenade && _guns.TryGetGun(uid, out var utilityGun))
+        if (success && action is A.Reload or A.ThrowGrenade && agent.GrenadeThrowStance == null &&
+            _guns.TryGetGun(uid, out _))
         {
-            _steering.Unregister(uid);
-            _wield.TryUnwield(utilityGun.Owner, uid);
+            if (action == A.Reload)
+                _steering.Unregister(uid);
+            if (agent.ActionItem is not { } heldItem || !_hands.IsHolding(uid, heldItem, out _))
+                PrepareUtilityHand(uid);
         }
         if (!success)
             CancelPlan(uid, agent, true);
@@ -242,21 +261,34 @@ public sealed partial class CMUExpeditionAgentSystem
 
     private bool StartPlanMove(EntityUid uid, CMUExpeditionAgentComponent agent, EntityCoordinates point, TimeSpan now)
     {
+        if (agent.AssaultDestination != null && agent.Action == A.Flank)
+            return false;
+        if (agent.UncoveredManeuverDestination is { } reserved &&
+            (reserved != point || now >= agent.ManeuverUntil || !SafeUncoveredStep(uid, agent, point)))
+            return false;
         ClearCover(agent);
-        if (!BuildTacticalRoute(uid, agent, point))
+        if (agent.UncoveredManeuverDestination == null && !BuildTacticalRoute(uid, agent, point))
             return false;
         agent.ActiveMoveDestination = point;
-        BeginMove(uid, agent, point, CMUExpeditionAgentState.PlanMove, now);
+        if (!BeginMove(uid, agent, point, CMUExpeditionAgentState.PlanMove, now))
+            return false;
         agent.MoveUntil = agent.ActionUntil;
         return true;
     }
 
     private bool ContinueAction(EntityUid uid, CMUExpeditionAgentComponent agent, float damage, TimeSpan now)
     {
+        if (agent.Action == A.ThrowGrenade && agent.GrenadeThrowStance == null &&
+            agent.CoverDestination != null)
+            ContinueMove(uid, agent, Transform(uid), now);
+        if (agent.Action == A.ThrowGrenade && agent.GrenadeThrowStance != null)
+            return ContinueGrenadeStaging(uid, agent, now);
         if (agent.Action is A.Reload or A.ThrowGrenade && agent.ActionDoAfter == null && !agent.ActionComplete)
         {
             // Wait for the real virtual-grip removal, not an additional reaction timer.
-            if (_hands.GetEmptyHandCount(uid) == 0 && now - agent.ActionStarted < TimeSpan.FromSeconds(0.5))
+            if (_hands.GetEmptyHandCount(uid) == 0 &&
+                (agent.ActionItem is not { } heldItem || !_hands.IsHolding(uid, heldItem, out _)) &&
+                now - agent.ActionStarted < TimeSpan.FromSeconds(0.5))
                 return true;
             var delay = 0.8;
             if (agent.Action == A.Reload)
@@ -275,6 +307,21 @@ public sealed partial class CMUExpeditionAgentSystem
         {
             CancelPlan(uid, agent, true);
             return false;
+        }
+        if (agent.Action == A.GrabCasualty && !agent.ActionComplete)
+        {
+            // Unwielding queues the virtual grip for deletion. Let the hand become free
+            // before attempting the native pull, just as for reload/grenade preparation.
+            if (_hands.GetEmptyHandCount(uid) == 0 && now - agent.ActionStarted < TimeSpan.FromSeconds(0.5))
+                return true;
+            if (_hands.GetEmptyHandCount(uid) == 0 ||
+                !_transform.InRange(Transform(uid).Coordinates, Transform(agent.Casualty!.Value).Coordinates, 1.5f) ||
+                !_pulling.TryStartPull(uid, agent.Casualty.Value))
+            {
+                CancelPlan(uid, agent, true);
+                return false;
+            }
+            agent.ActionComplete = true;
         }
         if (agent.State == CMUExpeditionAgentState.PlanMove)
         {
@@ -319,6 +366,7 @@ public sealed partial class CMUExpeditionAgentSystem
         agent.Route.Clear();
         agent.RouteDestination = null;
         agent.CoverDestination = null;
+        ClearGrenadeStaging(agent);
         agent.Action = null;
         agent.State = CMUExpeditionAgentState.Guard;
         if (agent.Plan.Count == 0)
@@ -328,6 +376,7 @@ public sealed partial class CMUExpeditionAgentSystem
 
     private void CancelPlan(EntityUid uid, CMUExpeditionAgentComponent agent, bool failed)
     {
+        agent.SmokeWithdrawalDestination = null;
         ClearScavenging(uid, agent);
         ReleaseManeuver(uid, agent);
         CancelMedical(uid, agent, "task-cancelled", failed);
@@ -342,12 +391,14 @@ public sealed partial class CMUExpeditionAgentSystem
         agent.ActionDoAfter = null;
         if (doAfter is { } id && _doAfter.GetStatus(id) == DoAfterStatus.Running)
             _doAfter.Cancel(id);
-        if (agent.ActionItem is { } item && Exists(item) && Supplies(uid, out var supplies))
-            _hands.TryDropIntoContainer(uid, item, supplies.Container);
+        if (agent.ActionItem is { } item)
+            QueueUtilityCleanup(uid, agent, item);
+        RetryUtilityCleanup(uid, agent, _timing.CurTime);
         ReleaseCasualty(uid, agent);
         agent.Action = null;
         agent.ActionItem = null;
         agent.GrenadeReservationUntil = TimeSpan.Zero;
+        ClearGrenadeStaging(agent);
         agent.Casualty = null;
         agent.Plan.Clear();
         agent.Route.Clear();

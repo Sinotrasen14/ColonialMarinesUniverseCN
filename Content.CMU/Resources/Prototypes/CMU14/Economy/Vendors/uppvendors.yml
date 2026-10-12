@@ -409,6 +409,8 @@
       choices: { CMUPlatoonMedicalStorage: 1 }
       entries:
       - id: AU14BeltMedicBagUPP
+        recommended: true
+      - id: AU14BeltMedicalUPP
     - name: General Medical Supplies
       entries:
       - id: CMUSynthBloodPackFull
@@ -561,6 +563,15 @@
       choices: { CMUPlatoonAirCrewFlightVisor: 1 }
       entries:
       - id: AU14GogglesLAH99VisorHighTech
+    - name: Pilot HUD
+      choices: { CMUPlatoonAirCrewPilotHUD: 1 }
+      entries:
+      - id: RMCVisorPilotBlack
+      - id: RMCVisorPilotDarkblue
+      - id: RMCVisorPilotLightblue
+      - id: RMCVisorPilotPurple
+      - id: RMCVisorPilotRed
+      - id: RMCVisorPilotYellow
     - name: Flight Mask
       choices: { CMUPlatoonAirCrewFlightMask: 1 }
       entries:
@@ -746,10 +757,6 @@
         amount: 5
       - id: RuMCUPPNavalInfantryCapUshankaCommander
         amount: 10
-    - name: Backpack
-      entries:
-      - id: RMCBackpackRTOSPP
-        amount: 5
     - name: Pouches
       entries:
       - id: AU14PouchCommandFill
@@ -1130,10 +1137,11 @@
       - id: AU14BeltUtilityCombatFilled
         name: M276 pattern combat toolbelt rig (filled)
         recommended: true
-      - id: AU14PouchToolsFilledComtech
-        name: tactical tools pouch (filled)
+      - id: RMCBeltConstruction
       - id: AU14BeltUtilityFilled
         name: M276 pattern toolbelt rig (filled)
+      - id: AU14PouchToolsFilledComtech
+        name: tactical tools pouch (filled)
     - name: Engineering Storage Bag
       choices: { CMUPouchesCTBag: 1 }
       entries:
@@ -1560,6 +1568,8 @@
         amount: 8
       - id: AU14HescoKit
         amount: 30
+      - id: AU14ConcreteBag
+        amount: 15
       - id: RMCSheetPlastic
         amount: 4
       - id: RMCSheetAluminum

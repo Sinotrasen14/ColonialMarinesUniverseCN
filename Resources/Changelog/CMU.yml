@@ -12630,5 +12630,309 @@
   id: 771
   time: '2026-10-09T23:07:14.0000000+00:00'
   url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2116
+- author: PoltavskaPraca
+  changes:
+  - message: added construction belts to every comtech vendor and added storage rigs
+      to every corpsman vendor
+    type: Add
+  - message: added belt subtypes for medical storage rig belts for larp purposes
+    type: Add
+  id: 772
+  time: '2026-10-10T08:11:55.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2094
+- author: rokudara-sen
+  changes:
+  - message: Splints and casts can be removed by the patient or a medic
+    type: Fix
+  - message: The surgical webbing has room for its cast
+    type: Fix
+  - message: Drone operators are no longer kicked out of their drone by bleeding or
+      pain
+    type: Fix
+  - message: Piloted drones speak their operator's languages
+    type: Fix
+  - message: Riders get a clear button to release a seized host early
+    type: Fix
+  - message: Examining Yautja gear no longer shocks or delimbs humans
+    type: Fix
+  - message: Yautja clan masks block neomorph spores
+    type: Fix
+  - message: Fuelled lifeboats on the USS Bush no longer crash onto the planet after
+      an early evacuation order
+    type: Fix
+  - message: Crashing lifeboats land fully on the planet instead of hanging off the
+      map edge
+    type: Fix
+  - message: The OPFOR advisor and platoon commander can open the rank chevron cases
+    type: Fix
+  - message: The UTES-C mount shows its description
+    type: Fix
+  - message: Boots! and Orrery magazines use USCM and WeYu
+    type: Fix
+  - message: Russian text on UPP items and the liquidator role is translated
+    type: Fix
+  id: 773
+  time: '2026-10-10T08:43:12.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2139
+- author: maertayn
+  changes:
+  - message: The medical storage rig can now hold magazines and documents, an option
+      for the combat-medic, the lifesaver still holds more capacity for the platoon
+      medics.
+    type: Add
+  id: 774
+  time: '2026-10-10T10:17:25.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2137
+- author: HubaBub
+  changes:
+  - message: New PMC "BEAR" - GOVFOR (UPP special forces, the prototype of the Iron
+      Bear)
+    type: Add
+  - message: Various equipment and weapons have been added for UPP and BEAR, including
+      the IRP Marine of Socialism!
+    type: Add
+  - message: A sprite of some UPP items, pouches, and belts.
+    type: Add
+  - message: Corrected cargo UPP, new boxes with cartridges and magazines.
+    type: Add
+  - message: "The Liquidators squad has been added (an anti\u2011biological group\
+      \ of flamethrower operators, summoned by the UPP ambassador)."
+    type: Add
+  - message: A UPP migrant unit has been added (they are ordered through the UPP ambassador,
+      they cannot speak English, and they have a variety of equipment and skills).
+    type: Add
+  id: 775
+  time: '2026-10-10T10:26:21.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2058
+- author: troytroy400
+  changes:
+  - message: You can now build concrete barricades. It needs construction skill 2.
+      Lay a frame with 22 metal rods from the construction menu, then pour a concrete
+      bag onto it. Poured concrete takes 10 minutes to harden. While it's wet it's
+      pale grey, has little HP, can't take barbed wire and examining it shows how
+      long is left. Once hardened it's much tougher than a HESCO against bullets and
+      explosives plus has a larger pool of health, but is suspectable to acid damage.
+    type: Add
+  - message: Platoon requisition vendors now stock 15 concrete bags, and a crate of
+      10 concrete bags can be ordered from the requisitions lift for 600.
+    type: Add
+  - message: Breathing from internals with oxygen in the connected tank now protects
+      you from tear gas, pepper spray, mycotoxin, spore clouds and other inhaled gases,
+      the same way a gas mask filter does. Boiler acid gas still burns you while you're
+      on internals, but you won't take oxygen damage, shake or cough.
+    type: Add
+  - message: Added a rebindable "Open worn storage" key (Controls > CMU). Hover over
+      a belt, backpack or pouch slot and press it to open it. It's unbound by default.
+      CM13 player QOL.
+    type: Add
+  - message: Added an option (Controls > CMU) so that clicking worn storage with an
+      empty hand opens it instead of taking it off. CM13 QOL.
+    type: Add
+  - message: Empty weapon kits now despawn after lying on the ground for a minute.
+    type: Tweak
+  - message: The Mohawk's ramp and ladder controls now require GOVFOR or OPFOR pilot,
+      engineering or command access.
+    type: Tweak
+  - message: The IFAK first-aid autoinjector now holds 15u tricordrazine, 6u paracetamol
+      and 6u dexalin. The infantry first aid guide has been updated to match.
+    type: Tweak
+  - message: Snack, drink, cigarette and recreation vendors on GOVFOR and OPFOR ships
+      now take cash or your ID for payment, like the ones on the planet.
+    type: Tweak
+  - message: The SU6 now uses alt-iff and is buffed to be similar in stats to the
+      M4A4. CMB CIU, USCM, VAIPO and RMC now have three SU6 kits in their req vendors
+      and can order more.
+    type: Tweak
+  - message: You no longer start gasping for air until you've taken at least 20 oxygen
+      damage.
+    type: Tweak
+  - message: BEAR has been removed from rotation.
+    type: Remove
+  id: 776
+  time: '2026-10-10T10:42:57.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2133
+- author: troytroy400
+  changes:
+  - message: Lowered playtime requirements for many GOVFOR and OPFOR jobs. Automatic
+      Rifleman now needs 3h of military time, Fireteam Leader 4h, Radio Traffic Operator
+      2h, Weapons Specialist 3h, Combat Technician 2h and Vehicle Crewman 5h.
+    type: Tweak
+  - message: Hospital Corpsman now needs 2h of military time and 1h in any medical
+      role.
+    type: Tweak
+  - message: Pilot roles now only need 2h of flight crew time.
+    type: Tweak
+  - message: Officer requirements have been lowered. The Executive Officer no longer
+      needs 24h overall. Staff and Engineering Officers need 6h overall and 5h of
+      military time, and the Engineering Officer also needs 5h of military engineering.
+      The Logistics Officer needs 6h overall. The Intelligence Officer only needs
+      2h as Fireteam Leader.
+    type: Tweak
+  - message: Medical Officer needs 5h of military time and 3h in any medical role.
+    type: Tweak
+  - message: The Aux Support Synth no longer has a playtime requirement.
+    type: Tweak
+  - message: Lowered playtime requirements for colony jobs. Law enforcement officers
+      (CMB Deputy, CWPS Ranger, PAP Officer, Colony Security Officer) need 4h overall.
+      Paramedics need 2h in medical roles. Physicians need 3h in medical roles.
+    type: Tweak
+  - message: Head of Service and Head of Engineering now need 5h in their department
+      instead of 10h. Mob Boss needs 2h in criminal jobs. Orbital Arbiter needs 2h
+      as Orbital Counsel.
+    type: Tweak
+  - message: Operations Synthetic and Psychologist no longer have a playtime requirement.
+    type: Tweak
+  id: 777
+  time: '2026-10-10T12:43:21.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2141
+- author: flex5hybrid
+  changes:
+  - message: Speech bubbles now refresh their layout correctly when moving between
+      UI scales.
+    type: Fix
+  - message: Corrected the ammunition bearer pack's entrenching-tool storage whitelist.
+    type: Fix
+  - message: Reduced repeated client and server work during chat, radio, treatment
+      and gameplay events.
+    type: Tweak
+  - message: Added regression coverage and performance workloads for larger populations.
+    type: Code
+  id: 778
+  time: '2026-10-10T13:32:44.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2135
+- author: TheHellFireo
+  changes:
+  - message: Cleaned up content build warnings and updated deprecated API usage.
+    type: Code
+  - message: Fixed missing equipped sprites and client resource errors for the M81
+      riot grenade launcher.
+    type: Fix
+  - message: Fixed expedition casualty pickup, suppression responses after short volleys,
+      shelter arrivals, and fortification approaches.
+    type: Fix
+  - message: Fixed the ammo-bearer backpack's entrenching-tool whitelist.
+    type: Fix
+  id: 779
+  time: '2026-10-10T14:28:56.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2132
+- author: TheHellFireo
+  changes:
+  - message: Expedition squads use improved close-quarters movement, covering fire,
+      corner tactics and cooperative patrols.
+    type: Tweak
+  - message: Expedition agents handle stored weapons, ammunition, healing, flares
+      and nearby fire more reliably.
+    type: Fix
+  - message: Added live squad aim controls and expanded squad diagnostics.
+    type: Admin
+  id: 780
+  time: '2026-10-10T16:23:53.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2142
+- author: Kadeo64
+  changes:
+  - message: Clearance X can now be unlocked at 40 minutes instead of being unlocked
+      at 1 hour.
+    type: Tweak
+  id: 781
+  time: '2026-10-10T21:13:24.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2144
+- author: troytroy400
+  changes:
+  - message: Gas Masks resprited, sprites by Nzzy.
+    type: Tweak
+  id: 782
+  time: '2026-10-11T03:13:51.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2143
+- author: ErinBaking
+  changes:
+  - message: New Wendigo Lobby art
+    type: Add
+  - message: Old Wendigo Lobby art
+    type: Remove
+  id: 783
+  time: '2026-10-11T03:15:35.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2146
+- author: rokudara-sen
+  changes:
+  - message: Third-party dropships can launch at round start instead of waiting out
+      the fueling lockout
+    type: Fix
+  - message: Breaking a flower vase no longer throws an error
+    type: Fix
+  - message: Expedition NPCs throw grenades and finish flanks mid-fight, and stop
+      holding exposed angles while shaken
+    type: Fix
+  - message: Expedition NPCs can reach and drag a downed squadmate again
+    type: Fix
+  - message: Lifeboats crash land on small planets instead of falling back to a bad
+      spot
+    type: Fix
+  id: 784
+  time: '2026-10-11T10:10:38.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2150
+- author: TheHellFireo
+  changes:
+  - message: Expedition AllHostile orders target enemies and armed non-friendlies
+      while sparing unarmed neutrals and protecting allies.
+    type: Fix
+  - message: Expedition NPCs reload from uniform webbing and retain danger awareness
+      when approaching casualties.
+    type: Fix
+  - message: Expedition NPCs preserve medical retreats and coordinate cover departures
+      through weapon readiness delays.
+    type: Fix
+  - message: Expedition gunfire observations follow the actual shot destination.
+    type: Fix
+  id: 785
+  time: '2026-10-11T10:21:19.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2148
+- author: TheHellFireo
+  changes:
+  - message: Expedition squads handle crowded corridors, incoming fire, assault follow-through,
+      reloads, dropped weapons and glass doors more reliably.
+    type: Fix
+  - message: AI scavengers no longer fall asleep from the disconnected-player timer.
+    type: Fix
+  - message: Expedition kits now include HE and smoke throughout all factions and
+      groups, with loaded starting primaries.
+    type: Tweak
+  - message: Expedition AI defaults to 65% aim skill and one tile less sight range,
+      and uses bipods and longer suppressive volleys.
+    type: Tweak
+  id: 786
+  time: '2026-10-11T13:40:48.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2154
+- author: ArturUr1
+  changes:
+  - message: Localization keys have been added for many things. Simplified translation
+      for forks.
+    type: Code
+  id: 787
+  time: '2026-10-11T14:01:28.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2151
+- author: StiffRobot
+  changes:
+  - message: Added Pilot-Visors to the Aircrew vendors of UPP, Prodigy and WY
+    type: Fix
+  id: 788
+  time: '2026-10-11T14:02:29.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2153
+- author: troytroy400
+  changes:
+  - message: Rail flashlights are now more useful. They have the same stats as armor
+      lights with a larger radius, the downside being the light is directional. Rail
+      lights can also now be used inside helmets, just like in CM13.
+    type: Tweak
+  id: 789
+  time: '2026-10-11T16:10:32.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2156
+- author: P-MCT
+  changes:
+  - message: Apollo has just received a distress call from a backwater flyover colony
+      named Fort McNeil.
+    type: Map
+  id: 790
+  time: '2026-10-11T16:24:39.0000000+00:00'
+  url: https://github.com/AU-14/ColonialMarinesUniverse/pull/2096
 Name: CMU
 Order: -1

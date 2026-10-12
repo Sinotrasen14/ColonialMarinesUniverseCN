@@ -25,6 +25,7 @@ lobby-info-gamemode = 游戏模式
 lobby-info-players = 玩家
 lobby-info-round-time = 回合时间
 lobby-info-players-value = {$count}（{$ready}人已准备）
+lobby-info-none = 无
 
 game-ticker-no-map-selected = [color=#FFB500]尚未选择地图！[/color]
 game-ticker-no-map-selected-plain = 尚未选择地图！

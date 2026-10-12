@@ -1,6 +1,12 @@
+using System.Linq;
 using Content.IntegrationTests.Fixtures;
 using Content.IntegrationTests.Fixtures.Attributes;
+using Content.Shared._RMC14.Medical.Wounds;
 using Content.Shared._RMC14.Xenonids;
+using Content.Shared.Body;
+using Content.Shared.Body.Components;
+using Content.Shared.Chemistry.Components.SolutionManager;
+using Content.Shared.Metabolism;
 using Content.Shared._RMC14.Xenonids.Headbite;
 using Content.Shared._RMC14.Xenonids.Punch;
 using Content.Shared.Chemistry.Components;
@@ -18,7 +24,11 @@ namespace Content.IntegrationTests.CMU14.Threats.Wendigo;
 [TestFixture]
 public sealed class CMUWendigoLabPrototypeTest : GameTest
 {
+    private static readonly Robust.Shared.Prototypes.EntProtoId CMUSyringeMH32Prototype = "CMUSyringeMH32";
+    private static readonly Robust.Shared.Prototypes.EntProtoId CMUCrateMH32Prototype = "CMUCrateMH32";
+
     private const string Full = "AU14Wendigo";
+    private const string Lab = "CMUWendigoLab";
     private const string Lesser = "CMUWendigoLesser";
 
     [SidedDependency(Side.Server)] private readonly IComponentFactory _compFactory = default!;
@@ -59,25 +69,25 @@ public sealed class CMUWendigoLabPrototypeTest : GameTest
         var full = SProtoMan.Index<Robust.Shared.Prototypes.EntityPrototype>(Full);
         var lesser = SProtoMan.Index<Robust.Shared.Prototypes.EntityPrototype>(Lesser);
 
-        Assert.That(full.TryGetComponent<MobThresholdsComponent>(out var fullThresholds, _compFactory));
-        Assert.That(lesser.TryGetComponent<MobThresholdsComponent>(out var lesserThresholds, _compFactory));
+        Assert.That(full.TryComp<MobThresholdsComponent>(out var fullThresholds, _compFactory));
+        Assert.That(lesser.TryComp<MobThresholdsComponent>(out var lesserThresholds, _compFactory));
         Assert.That(DeadThreshold(fullThresholds!), Is.EqualTo(FixedPoint2.New(1500)));
         Assert.That(DeadThreshold(lesserThresholds!), Is.EqualTo(FixedPoint2.New(1200)));
 
-        Assert.That(full.TryGetComponent<XenoPunchComponent>(out var fullPunch, _compFactory));
-        Assert.That(lesser.TryGetComponent<XenoPunchComponent>(out var lesserPunch, _compFactory));
+        Assert.That(full.TryComp<XenoPunchComponent>(out var fullPunch, _compFactory));
+        Assert.That(lesser.TryComp<XenoPunchComponent>(out var lesserPunch, _compFactory));
         AssertScaled(fullPunch!.Damage, lesserPunch!.Damage, "punch");
 
-        Assert.That(full.TryGetComponent<MeleeWeaponComponent>(out var fullMelee, _compFactory));
-        Assert.That(lesser.TryGetComponent<MeleeWeaponComponent>(out var lesserMelee, _compFactory));
+        Assert.That(full.TryComp<MeleeWeaponComponent>(out var fullMelee, _compFactory));
+        Assert.That(lesser.TryComp<MeleeWeaponComponent>(out var lesserMelee, _compFactory));
         AssertScaled(fullMelee!.Damage, lesserMelee!.Damage, "melee");
 
-        Assert.That(full.TryGetComponent<XenoHeadbiteComponent>(out var fullBite, _compFactory));
-        Assert.That(lesser.TryGetComponent<XenoHeadbiteComponent>(out var lesserBite, _compFactory));
+        Assert.That(full.TryComp<XenoHeadbiteComponent>(out var fullBite, _compFactory));
+        Assert.That(lesser.TryComp<XenoHeadbiteComponent>(out var lesserBite, _compFactory));
         AssertScaled(fullBite!.Damage, lesserBite!.Damage, "headbite");
 
-        Assert.That(full.TryGetComponent<XenoComponent>(out var fullXeno, _compFactory));
-        Assert.That(lesser.TryGetComponent<XenoComponent>(out var lesserXeno, _compFactory));
+        Assert.That(full.TryComp<XenoComponent>(out var fullXeno, _compFactory));
+        Assert.That(lesser.TryComp<XenoComponent>(out var lesserXeno, _compFactory));
         Assert.That(fullXeno!.ActionIds, Does.Contain("ActionWendigoDoom"));
         Assert.That(lesserXeno!.ActionIds, Does.Not.Contain("ActionWendigoDoom"));
         Assert.That(lesserXeno.ActionIds, Does.Contain("ActionXenoPunch"));
@@ -110,13 +120,13 @@ public sealed class CMUWendigoLabPrototypeTest : GameTest
     [RunOnSide(Side.Server)]
     public void Mh32SyringeAndCrateAreStocked()
     {
-        var syringe = SProtoMan.Index<Robust.Shared.Prototypes.EntityPrototype>("CMUSyringeMH32");
-        Assert.That(syringe.TryGetComponent<SolutionComponent>(out var solution, _compFactory));
+        var syringe = SProtoMan.Index<Robust.Shared.Prototypes.EntityPrototype>(CMUSyringeMH32Prototype);
+        Assert.That(syringe.TryComp<SolutionComponent>(out var solution, _compFactory));
         Assert.That(solution!.Solution.GetTotalPrototypeQuantity("CMUMH32"), Is.EqualTo(FixedPoint2.New(15)));
         Assert.That(solution.Solution.Volume, Is.EqualTo(FixedPoint2.New(15)));
 
-        var crate = SProtoMan.Index<Robust.Shared.Prototypes.EntityPrototype>("CMUCrateMH32");
-        Assert.That(crate.TryGetComponent<StorageFillComponent>(out var fill, _compFactory));
+        var crate = SProtoMan.Index<Robust.Shared.Prototypes.EntityPrototype>(CMUCrateMH32Prototype);
+        Assert.That(crate.TryComp<StorageFillComponent>(out var fill, _compFactory));
         var total = 0;
         foreach (var entry in fill!.Contents)
         {
@@ -125,5 +135,31 @@ public sealed class CMUWendigoLabPrototypeTest : GameTest
         }
 
         Assert.That(total, Is.EqualTo(2));
+    }
+
+    [Test]
+    [RunOnSide(Side.Server)]
+    public void LabWendigosAreTreatableButNaturalOnesAreNot()
+    {
+        foreach (var id in new[] { Lab, Lesser })
+        {
+            var proto = SProtoMan.Index<Robust.Shared.Prototypes.EntityPrototype>(id);
+            Assert.That(proto.TryGetComponent<WoundableComponent>(out _, _compFactory), Is.True,
+                $"{id} must take wound kits and sutures.");
+            Assert.That(proto.TryGetComponent<InjectableSolutionComponent>(out _, _compFactory), Is.True,
+                $"{id} must accept syringes and hyposprays.");
+            Assert.That(proto.TryGetComponent<BloodstreamComponent>(out _, _compFactory), Is.True, id);
+            Assert.That(proto.TryGetComponent<InitialBodyComponent>(out var body, _compFactory), Is.True, id);
+            Assert.That(body!.Organs.Values.Select(organ => organ.Id), Does.Contain("CMUOrganWendigoHeart"),
+                $"{id} needs a metabolising heart so medicine works.");
+        }
+
+        var heart = SProtoMan.Index<Robust.Shared.Prototypes.EntityPrototype>("CMUOrganWendigoHeart");
+        Assert.That(heart.TryGetComponent<MetabolizerComponent>(out _, _compFactory), Is.True);
+
+        var natural = SProtoMan.Index<Robust.Shared.Prototypes.EntityPrototype>(Full);
+        Assert.That(natural.TryGetComponent<WoundableComponent>(out _, _compFactory), Is.False,
+            "Natural Wendigos stay untreatable.");
+        Assert.That(natural.TryGetComponent<InjectableSolutionComponent>(out _, _compFactory), Is.False);
     }
 }

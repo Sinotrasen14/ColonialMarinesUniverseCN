@@ -7,7 +7,7 @@ namespace Content.Shared.CMU14.Threats.Mobs.Wendigo.Lab;
 /// Tracks a human test subject through the Weyland-Yutani Wendigo procedure.
 /// Each stage only accepts its next input once <see cref="StageEndsAt"/> has passed.
 /// </summary>
-[RegisterComponent, NetworkedComponent, AutoGenerateComponentPause]
+[RegisterComponent, AutoGenerateComponentPause]
 public sealed partial class CMUWendigoSubjectComponent : Component
 {
     [DataField]
@@ -15,6 +15,30 @@ public sealed partial class CMUWendigoSubjectComponent : Component
 
     [DataField, AutoPausedField]
     public TimeSpan StageEndsAt;
+
+    /// <summary>
+    /// When the current stage began, for progress readouts.
+    /// </summary>
+    [DataField, AutoPausedField]
+    public TimeSpan StageStartedAt;
+
+    /// <summary>
+    /// Once a stage is ready, its next input must land before this or the subject relapses a stage.
+    /// </summary>
+    [DataField, AutoPausedField]
+    public TimeSpan WindowEndsAt;
+
+    /// <summary>
+    /// Whether the "window closing" warning has played for the current window.
+    /// </summary>
+    [DataField]
+    public bool WindowWarned;
+
+    /// <summary>
+    /// Mistakes accumulated over the procedure. High instability breaks the MH-33 bond; the maximum kills the subject.
+    /// </summary>
+    [DataField]
+    public int Instability;
 
     /// <summary>
     /// Next "ready" reminder (cough, shiver) while the subject waits for its next input.

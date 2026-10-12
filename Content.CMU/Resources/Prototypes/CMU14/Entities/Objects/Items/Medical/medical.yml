@@ -886,7 +886,7 @@
   parent: CMTricordrazineAutoInjector
   id: AU14FirstAidAutoInjectorNoSkill
   name: 急救自动注射器
-  description: 一支装有曲可拉嗪和少量地塞林的自动注射器，供受伤士兵自行治疗使用。
+  description: 一个自动注射器，里面装有一剂三氯达嗪和少量对乙酰氨基酚及德沙林，供受伤的士兵自我使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/auto_injectors.rsi
@@ -895,15 +895,19 @@
       map: ["enum.SolutionContainerLayers.Fill"]
   - type: MedicallyUnskilledDoAfter
     min: 0
+  - type: Hypospray # inject the whole mixed dose at once
+    transferAmount: 27
   - type: SolutionContainerManager
     solutions:
       pen:
-        maxVol: 20
+        maxVol: 27
         reagents:
         - ReagentId: CMTricordrazine
           Quantity: 15
+        - ReagentId: CMUParacetamol
+          Quantity: 6
         - ReagentId: CMDexalin
-          Quantity: 5
+          Quantity: 6
   - type: SolutionContainerVisuals
     maxFillLevels: 1
     emptySpriteName: tricord0
@@ -912,7 +916,8 @@
   - type: CMRefillableSolution
     reagents:
       CMTricordrazine: 15
-      CMDexalin: 5
+      CMUParacetamol: 6
+      CMDexalin: 6
   - type: IconLabel
     labelTextLocId: rmc-first-aid-container-label-text
 

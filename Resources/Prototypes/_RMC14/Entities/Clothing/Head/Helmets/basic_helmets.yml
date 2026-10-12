@@ -42,7 +42,8 @@
   - type: ContainerContainer
     containers:
       storagebase: !type:Container
-        ents: []
+        occludes: false # CMU14: lights stored in a worn helmet shine out of it
+        ents: [ ]
   - type: UserInterface
     interfaces:
       enum.StorageUiKey.Key:

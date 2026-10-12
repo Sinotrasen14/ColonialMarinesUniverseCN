@@ -2,7 +2,6 @@ using Content.Server.Antag.Components;
 using Content.Server.Antag.Selectors;
 using Content.Shared._RMC14.Synth;
 using Content.Shared.CMU14.Threats;
-using Content.Shared.CMU14.Round.Roles; // CMU14
 using Content.Shared.Antag;
 using Content.Shared.Players;
 using Content.Shared.Preferences;
@@ -16,6 +15,14 @@ namespace Content.IntegrationTests.Tests.GameRules;
 public sealed class AntagSpecifierMigrationTest : AntagTest
 // CMU14 Owned Class / Test Fixture: I sure love a good pinning test
 {
+    private static readonly Robust.Shared.Prototypes.ProtoId<AntagSpecifierPrototype> CLFVeteranPrototype = "CLFVeteran";
+    private static readonly Robust.Shared.Prototypes.ProtoId<AntagSpecifierPrototype> CannibalPrototype = "Cannibal";
+    private static readonly Robust.Shared.Prototypes.ProtoId<AntagSpecifierPrototype> CLFSleeperAgentPrototype = "CLFSleeperAgent";
+    private static readonly Robust.Shared.Prototypes.ProtoId<AntagSpecifierPrototype> RunawaySynthPrototype = "RunawaySynth";
+    private static readonly Robust.Shared.Prototypes.ProtoId<AntagSpecifierPrototype> AntagMigrationReplacementPrototype = "AntagMigrationReplacement";
+    private static readonly Robust.Shared.Prototypes.ProtoId<AntagJobBlacklistPrototype> AllGovforJobsPrototype = "AllGovforJobs";
+    private static readonly Robust.Shared.Prototypes.ProtoId<AntagJobBlacklistPrototype> AllOpforJobsPrototype = "AllOpforJobs";
+
     private static readonly string[] MigratedRules =
     [
         "RunawaySynth",
@@ -31,23 +38,15 @@ public sealed class AntagSpecifierMigrationTest : AntagTest
 
     private static readonly Dictionary<string, string[]> JobBlacklistGroups = new()
     {
-        ["RunawaySynth"] = ["AllOpforCommandStaff"],
-        ["Fugitive"] = ["AllOpforJobs", "AllCLFJobs", "AllWeYuJobs", "AllSynthJobs"],
-        ["DrugDealer"] = ["AllOpforJobs", "AllCLFJobs", "AllWeYuJobs", "AllSynthJobs"],
-        ["CorporateSpy"] = ["AllOpforJobs", "AllCLFJobs"],
-        ["CLFVeteran"] = ["AllOpforJobs", "AllCLFJobs", "AllSynthJobs"],
-        ["StrikeOrganizer"] = ["AllOpforJobs", "AllCLFJobs", "AllWeYuJobs"],
-        ["Cannibal"] = ["AllOpforCommandStaff", "AllCLFJobs"],
-        ["SerialKiller"] = ["AllOpforJobs", "AllCLFJobs", "AllSynthJobs"],
+        ["RunawaySynth"] = ["AllGovforCommandStaff", "AllOpforCommandStaff"],
+        ["Fugitive"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllWeYuJobs", "AllSynthJobs"],
+        ["DrugDealer"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllWeYuJobs", "AllSynthJobs"],
+        ["CorporateSpy"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs"],
+        ["CLFVeteran"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllSynthJobs"],
+        ["StrikeOrganizer"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllWeYuJobs"],
+        ["Cannibal"] = ["AllGovforCommandStaff", "AllOpforCommandStaff", "AllCLFJobs"],
+        ["SerialKiller"] = ["AllGovforJobs", "AllOpforJobs", "AllCLFJobs", "AllSynthJobs"],
     };
-
-    private static readonly string[] CommonJobBlacklistGroups =
-    [
-        "AllGovforJobs",
-        "AllColonyDepartmentHeadJobs",
-        "CMUAmbassadorJobs",
-        "CMUColonyLawEnforcementJobs",
-    ];
 
     private static readonly Dictionary<string, string> Roles = new()
     {
@@ -155,7 +154,7 @@ public sealed class AntagSpecifierMigrationTest : AntagTest
             {
                 var specifier = SProtoMan.Index<AntagSpecifierPrototype>(id);
                 var rule = SProtoMan.Index<EntityPrototype>(id);
-                Assert.That(rule.TryGetComponent<AntagSelectionComponent>(out var selection, SEntMan.ComponentFactory),
+                Assert.That(rule.TryComp<AntagSelectionComponent>(out var selection, SEntMan.ComponentFactory),
                     Is.True, id);
                 var selector = selection!.Antags.Single();
                 if (RandomCounts.TryGetValue(id, out var range))
@@ -188,9 +187,10 @@ public sealed class AntagSpecifierMigrationTest : AntagTest
                 else
                     Assert.That(specifier.MindRoles, Is.Null, id);
 
-                var groups = JobBlacklistGroups.GetValueOrDefault(id, []);
-                Assert.That(specifier.JobBlacklistGroup?.Select(group => group.Id),
-                    Is.EquivalentTo(groups.Concat(CommonJobBlacklistGroups)), id);
+                if (JobBlacklistGroups.TryGetValue(id, out var groups))
+                    Assert.That(specifier.JobBlacklistGroup?.Select(group => group.Id), Is.EquivalentTo(groups), id);
+                else
+                    Assert.That(specifier.JobBlacklistGroup, Is.Null, id);
 
                 if (Briefings.TryGetValue(id, out var briefing))
                 {
@@ -208,12 +208,25 @@ public sealed class AntagSpecifierMigrationTest : AntagTest
                 }
             }
 
-            var veteran = SProtoMan.Index<AntagSpecifierPrototype>("CLFVeteran");
+            var veteran = SProtoMan.Index<AntagSpecifierPrototype>(CLFVeteranPrototype);
             Assert.That(veteran.JobBlacklist, Is.Null);
-            Assert.That(SProtoMan.Index<AntagSpecifierPrototype>("Cannibal").JobWhitelist, Is.Null);
-            Assert.That(SProtoMan.Index<AntagSpecifierPrototype>("CLFSleeperAgent").JobWhitelist?.Select(job => job.Id),
+            Assert.That(SProtoMan.Index<AntagSpecifierPrototype>(CannibalPrototype).JobWhitelist, Is.Null);
+            Assert.That(SProtoMan.Index<AntagSpecifierPrototype>(CLFSleeperAgentPrototype).JobWhitelist?.Select(job => job.Id),
                 Is.EquivalentTo(new[]
                 {
+                    "AU14JobCivilianCorporateLiaison",
+                    "AU14JobCivilianCMBMarshal",
+                    "AU14JobCivilianColonyAdministrator",
+                    "AU14JobGOVFORPlatOp",
+                    "AU14JobGOVFORAdjutant",
+                    "AU14JobGOVFORSquadSergeant",
+                    "AU14JobGOVFORSectionSergeant",
+                    "AU14JobGOVFORVehicleCommander",
+                    "AU14JobGOVFORMilitaryPoliceMan",
+                    "AU14JobGOVFOROfficerEngi",
+                    "AU14JobGOVFOROfficerIntel",
+                    "AU14JobGOVFOROfficerLogistics",
+                    "AU14JobGOVFOROfficerMedical",
                     "AU14JobOPFORPlatOp",
                     "AU14JobOPFORAdjutant",
                     "AU14JobOPFORSquadSergeant",
@@ -226,7 +239,7 @@ public sealed class AntagSpecifierMigrationTest : AntagTest
                     "AU14JobOPFOROfficerMedical",
                 }));
 
-            var runaway = SProtoMan.Index<AntagSpecifierPrototype>("RunawaySynth");
+            var runaway = SProtoMan.Index<AntagSpecifierPrototype>(RunawaySynthPrototype);
             var synth = (SynthComponent) runaway.Components["Synth"].Component;
             Assert.Multiple(() =>
             {
@@ -310,14 +323,14 @@ public sealed class AntagSpecifierMigrationTest : AntagTest
             var ruleUid = SEntMan.Spawn("AntagMigrationReplacementRule");
             var selection = SEntMan.GetComponent<AntagSelectionComponent>(ruleUid);
             var rule = new Entity<AntagSelectionComponent>(ruleUid, selection);
-            var replacement = SProtoMan.Index<AntagSpecifierPrototype>("AntagMigrationReplacement");
-            var veteran = SProtoMan.Index<AntagSpecifierPrototype>("CLFVeteran");
+            var replacement = SProtoMan.Index<AntagSpecifierPrototype>(AntagMigrationReplacementPrototype);
+            var veteran = SProtoMan.Index<AntagSpecifierPrototype>(CLFVeteranPrototype);
 
-            roles.MindAddJobRole(mind.Owner, jobPrototype: "AU14JobGOVFORSquadRiflemanUPP");
+            roles.MindAddJobRole(mind.Owner, jobPrototype: "AU14JobGOVFORPlatCo");
             Assert.Multiple(() =>
             {
                 Assert.That(AntagSys.IsMindValid(session, replacement), Is.False,
-                    "GOVFOR side restrictions must reject faction variants absent from the explicit job list");
+                    "a grouped GOVFOR job must be denied");
                 Assert.That(AntagSys.TryMakeAntag(rule, replacement, session, checkPref: false), Is.False);
                 Assert.That(selection.PreSelectedSessions, Is.Empty,
                     "a denied candidate must not consume the one fixed slot");
@@ -339,12 +352,9 @@ public sealed class AntagSpecifierMigrationTest : AntagTest
                     Is.EquivalentTo(new[] { session }));
             });
 
-            var govfor = SProtoMan.Index<AntagJobBlacklistPrototype>("AllGovforJobs");
-            var opfor = SProtoMan.Index<AntagJobBlacklistPrototype>("AllOpforJobs");
+            var govfor = SProtoMan.Index<AntagJobBlacklistPrototype>(AllGovforJobsPrototype);
+            var opfor = SProtoMan.Index<AntagJobBlacklistPrototype>(AllOpforJobsPrototype);
             var expectedGroupJobs = govfor.Jobs.Concat(opfor.Jobs).ToHashSet();
-            expectedGroupJobs.UnionWith(SProtoMan.EnumeratePrototypes<JobPrototype>()
-                .Where(job => job.RoundSide == RoundJobSide.Govfor)
-                .Select(job => (ProtoId<JobPrototype>) job.ID));
             expectedGroupJobs.Add("AU14JobCLFGuerilla");
             var playerJobs = AntagSys.GetAntagJobs(session);
             var allPlayersJobs = AntagSys.GetAntagJobs();

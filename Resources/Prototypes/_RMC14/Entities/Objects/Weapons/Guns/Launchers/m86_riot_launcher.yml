@@ -1,6 +1,6 @@
 - type: entity
   name: M81 防暴榴弹发射器
-  parent: [RMCBaseWeaponGrenadeLauncher]
+  parent: [ RMCBaseWeaponGrenadeLauncher ]
   id: RMCWeaponLauncherM81
   description: M81防暴榴弹发射器是一款单发、肩射、折开式榴弹发射器，专为警察使用低致命弹药而设计。
   components:
@@ -10,7 +10,7 @@
     - state: base
       map: ["enum.BreechVisuals.Open"]
   - type: Clothing
-    sprite: _RMC14/Objects/Weapons/Guns/GrenadeLaunchers/m79.rsi
+    sprite: _RMC14/Objects/Weapons/Guns/GrenadeLaunchers/m81.rsi # CMU14: use the existing M81 equipped sprites.
     slots:
     - Back
     - suitStorage

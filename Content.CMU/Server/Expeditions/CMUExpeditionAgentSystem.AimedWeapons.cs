@@ -24,7 +24,8 @@ public sealed partial class CMUExpeditionAgentSystem
             !TryComp<AimedShotComponent>(weapon, out var aimed) || aimed.Targets.Count == 0 ||
             agent.Target is not { } target || target != agent.AimedTarget || !Visible(uid, target, agent.FireRange) ||
             !AcceptOrderedContact(uid, agent, target) || !_mobs.IsAlive(target) ||
-            !SafeShot(uid, agent, gun.Comp, Transform(target).Coordinates) || agent.RushTarget != null ||
+            !HasSteadyAim(uid, agent, gun) ||
+            !SafeShot(uid, agent, gun, Transform(target).Coordinates) || agent.RushTarget != null ||
             agent.LastHit > agent.AimedStarted || agent.State != CMUExpeditionAgentState.Engage ||
             agent.Action != null || agent.Treatment != null || agent.PendingWeapon != null ||
             agent.SpacingDestination != null || GrenadeDanger(Transform(uid).Coordinates) || now >= agent.AimedUntil)
@@ -39,10 +40,10 @@ public sealed partial class CMUExpeditionAgentSystem
     private bool StartAimedWeapon(EntityUid uid, CMUExpeditionAgentComponent agent, Entity<GunComponent> gun)
     {
         var now = _timing.CurTime;
-        if (now < agent.NextAimedShot || agent.FiringAtFlash || agent.RushTarget != null ||
+        if (now < agent.NextAimedShot || agent.FiringAtFlash || agent.FiringAtSuppression || agent.RushTarget != null ||
             agent.SpacingDestination != null || now - agent.LastHit < TimeSpan.FromSeconds(3) ||
             agent.VisibleThreats.Count > 1 || agent.Target is not { } target ||
-            _transform.InRange(uid, target, 5) || !TryComp<AimedShotComponent>(gun, out var aimed))
+            _transform.InRange(uid, target, 5) || !TryComp<AimedShotComponent>(gun, out var aimed) || !HasSteadyAim(uid, agent, gun))
             return false;
         agent.NextAimedShot = now + TimeSpan.FromSeconds(8);
         if (TryComp<CombatModeComponent>(uid, out var combat))

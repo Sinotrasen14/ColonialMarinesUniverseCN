@@ -5,6 +5,7 @@ cmu-mohawk-camera-omaha = Omaha 摄像头
 cmu-mohawk-camera-midway = Midway 摄像头
 cmu-mohawk-flight-interlock = 飞行联锁会阻止放下舷梯或梯子。
 cmu-mohawk-landing-obstructed = 着陆点没有三个甲板的通行许可。
+cmu-mohawk-controls-no-access = 拒绝访问。只有飞行员、工程师和指挥可以操作坡道和梯子。
 cmu-mohawk-controls-broken = 远程连接损坏了。用多功能工具修理一下。
 cmu-mohawk-controls-unskilled = 你需要工程或飞行训练才能修理这些控制装置。
 cmu-mohawk-controls-sabotaged = 舱口被强行打开时，控制器闪了起来！

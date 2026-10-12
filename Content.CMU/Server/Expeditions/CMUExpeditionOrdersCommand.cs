@@ -39,7 +39,7 @@ public sealed partial class CMUExpeditionOrdersCommand : LocalizedEntityCommands
         }
         if (args.Length == 3)
             return CompletionResult.FromHintOptions(
-                new[] { "move", "guard", "patrol-add", "patrol-start", "patrol-stop", "patrol-clear", "style", "friendly", "target" }
+                new[] { "move", "assault", "guard", "patrol-add", "patrol-start", "patrol-stop", "patrol-clear", "style", "friendly", "target" }
                     .Select(value => new CompletionOption(value, Loc.GetString($"cmu-expedition-order-{value}"))),
                 Loc.GetString("cmu-expedition-hint-order"));
         if (args.Length >= 4 && args.Length == (args[0] == "here" ? 4 : 6) && args[2].Equals("guard", StringComparison.OrdinalIgnoreCase))
@@ -58,7 +58,7 @@ public sealed partial class CMUExpeditionOrdersCommand : LocalizedEntityCommands
                 options.Insert(0, "default");
             return CompletionResult.FromHintOptions(options, Loc.GetString("cmu-expedition-hint-factions"));
         }
-        if (args.Length is 4 or 5 && args[0] != "here" && args[2].ToLowerInvariant() is "move" or "guard" or "patrol-add")
+        if (args.Length is 4 or 5 && args[0] != "here" && args[2].ToLowerInvariant() is "move" or "assault" or "guard" or "patrol-add")
             return CompletionResult.FromHint(Loc.GetString(args.Length == 4 ? "cmu-expedition-hint-x" : "cmu-expedition-hint-y"));
         return CompletionResult.Empty;
     }
@@ -88,7 +88,7 @@ public sealed partial class CMUExpeditionOrdersCommand : LocalizedEntityCommands
         var disposition = CMUExpeditionDisposition.Steady;
         Direction? facing = null;
         var factions = Array.Empty<string>();
-        if (action is "guard" or "move" or "patrol-add")
+        if (action is "guard" or "move" or "assault" or "patrol-add")
         {
             var required = here ? 3 : 5;
             if (args.Length != required && (action != "guard" || args.Length != required + 1) ||
@@ -116,10 +116,8 @@ public sealed partial class CMUExpeditionOrdersCommand : LocalizedEntityCommands
         else if (action is "friendly" or "target")
         {
             if (args.Length != 4) { shell.WriteError(Help); return; }
-            if (args[3] != "default") factions = args[3].Split(',', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries);
-            foreach (var faction in factions)
-                if (!_prototypes.TryIndex<NpcFactionPrototype>(faction, out _))
-                { shell.WriteError(Loc.GetString("cmu-expedition-unknown-faction", ("faction", faction))); return; }
+            if (!_agents.TryParseFactionOrders(args[3], action == "target", out factions, out var invalid))
+            { shell.WriteError(Loc.GetString("cmu-expedition-unknown-faction", ("faction", invalid))); return; }
         }
         else { shell.WriteError(Help); return; }
         var count = 0;
@@ -128,7 +126,7 @@ public sealed partial class CMUExpeditionOrdersCommand : LocalizedEntityCommands
         while (query.MoveNext(out var uid, out var agent, out var transform))
         {
             if (transform.MapUid != map || agent.Squad != squad || !_agents.CanOrderSquadMember(uid)) continue;
-            if (action is "guard" or "move" or "patrol-add")
+            if (action is "guard" or "move" or "assault" or "patrol-add")
             {
                 if (!_agents.OrderSquadPoint(uid, new EntityCoordinates(map, position), action, reserved, facing)) continue;
             }

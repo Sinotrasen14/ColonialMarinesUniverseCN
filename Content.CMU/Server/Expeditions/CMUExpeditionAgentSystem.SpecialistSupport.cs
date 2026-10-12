@@ -12,19 +12,19 @@ public sealed partial class CMUExpeditionAgentSystem
         foreach (var member in plan.Members)
         {
             var buddy = Comp<CMUExpeditionAgentComponent>(member);
-            if (member == uid || buddy.GrenadeReservationUntil <= now || buddy.GrenadeTarget is not { } landing)
+            if (member == uid || buddy.SmokeGrenade || buddy.GrenadeReservationUntil <= now || buddy.GrenadeTarget is not { } landing)
                 continue;
             var next = agent.CoverDestination ?? agent.SpacingDestination ?? agent.ContactDestination;
             if (next == null && agent.OrderRoute.TryPeek(out var waypoint))
                 next = waypoint;
             if (next is not { } destination || Transform(destination.EntityId).MapID != Transform(landing.EntityId).MapID ||
                 SegmentDistance(_transform.ToMapCoordinates(landing).Position, _transform.GetWorldPosition(uid),
-                    _transform.ToMapCoordinates(destination).Position) > (buddy.SmokeGrenade ? 3 : 6))
+                    _transform.ToMapCoordinates(destination).Position) > 6)
                 continue;
             // Keep firing from the current safe stance while the thrower completes the action.
             _steering.Unregister(uid);
             agent.MoveProgressAt = now;
-            Decision(agent, "waiting-for-ordnance", buddy.SmokeGrenade ? "do-not-enter-screen" : "reserved-blast-area");
+            Decision(agent, "waiting-for-ordnance", "reserved-blast-area");
             return true;
         }
         return false;
@@ -42,7 +42,8 @@ public sealed partial class CMUExpeditionAgentSystem
         {
             var rocket = Comp<CMUExpeditionAgentComponent>(member);
             if (member == uid || !rocket.AntiVehicle || now < rocket.NextRocket || rocket.Target is not { } target ||
-                !ArmedVehicle(target) || !Visible(member, target, rocket.FireRange) || !HasReadyRocket(member) ||
+                !Visible(member, target, rocket.FireRange) || !HasReadyRocket(member) ||
+                !RocketOpportunity(member, rocket, target, Transform(target).Coordinates) ||
                 !_transform.InRange(start, Transform(member).Coordinates, 9))
                 continue;
             var muzzle = _transform.GetWorldPosition(member);
@@ -61,7 +62,7 @@ public sealed partial class CMUExpeditionAgentSystem
                 var point = _transform.ToCoordinates(start.EntityId, _transform.ToMapCoordinates(start).Offset(side * offset));
                 if (!ValidOrderPoint(uid, point) || Reserved(uid, point) || !TraversablePassage(uid, start, point) ||
                     ExposureScore(uid, agent, point) > ExposureScore(uid, agent, start) ||
-                    !TryReserveManeuver(uid, agent, now))
+                    !TryReserveManeuver(uid, agent, now, point))
                     continue;
                 Decision(agent, "clear-launch-lane", "supporting-rocketeer", 1);
                 BeginMove(uid, agent, point, CMUExpeditionAgentState.Reposition, now);

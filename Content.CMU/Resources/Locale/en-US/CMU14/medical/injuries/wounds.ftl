@@ -26,9 +26,14 @@ cmu-medical-cast-needed = 打上石膏，以免骨骼错位愈合。
 cmu-medical-cast-verb-remove = 拆除石膏
 cmu-medical-cast-removing = 正在拆除石膏……
 cmu-medical-cast-removed = 石膏已拆除。
+cmu-medical-cast-removed-early = 石膏在骨头还没完全愈合之前就脱落了。
 cmu-medical-cast-ready-remove = 石膏已可以拆除。
 cmu-medical-cast-broke = 骨骼再次断裂，石膏随之裂开。
 cmu-medical-cast-malunion = 骨骼已错位愈合。
+
+cmu-medical-splint-verb-remove = Remove splint
+cmu-medical-splint-removing = Removing splint...
+cmu-medical-splint-removed = The splint is removed.
 
 # Body part picker used by bandaging.
 cmu-medical-body-part-picker-header = 选择要包扎的部位

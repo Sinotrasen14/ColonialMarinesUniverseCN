@@ -27,7 +27,7 @@
     key: enum.VehicleSupplyUIKey.Key
   - type: ActivatableUIRequiresAccess
   - type: AccessReader
-    access: [["RMCAccessVehicleCrew"]]
+    access: [ [ "RMCAccessVehicleCrew", "CMAccessPilot" ] ]
   - type: UserInterface
     interfaces:
       enum.VehicleSupplyUIKey.Key:
@@ -1121,11 +1121,12 @@
         shape: !type:PhysShapeAabb
           bounds: "-2.3,-2.3,2.3,2.3"
         layer:
-        - MidImpassable
+        - WallLayer
         mask:
         - ItemMask
         density: 1000
         hard: false
+  - type: Chasm
   - type: StepTrigger
     requiredTriggeredSpeed: 0
     intersectRatio: 1

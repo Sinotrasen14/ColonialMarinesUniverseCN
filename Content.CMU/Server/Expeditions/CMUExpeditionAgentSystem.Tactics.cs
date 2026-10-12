@@ -1,7 +1,7 @@
 using System.Numerics;
 using System.Linq;
 using Content.Shared.CMU14.Hearing;
-using Content.Shared.Weapons.Ranged.Components;
+using Robust.Shared.Map;
 using Robust.Shared.Player;
 
 namespace Content.Server.CMU14.Expeditions;
@@ -15,11 +15,10 @@ public sealed partial class CMUExpeditionAgentSystem
 
     private void OnNearbyGunfire(ref CMUGunFiredEvent args)
     {
-        if (!_npcs.Enabled || !TryComp<GunComponent>(args.Gun, out var gun) ||
-            gun.ShootCoordinates is not { } aim)
+        if (!_npcs.Enabled)
             return;
         var from = _transform.ToMapCoordinates(args.From);
-        var to = _transform.ToMapCoordinates(aim);
+        var to = _transform.ToMapCoordinates(args.To);
         var direction = to.Position - from.Position;
         if (from.MapId != to.MapId || direction.LengthSquared() < 0.01f)
             return;
@@ -29,16 +28,29 @@ public sealed partial class CMUExpeditionAgentSystem
         var query = EntityQueryEnumerator<CMUExpeditionAgentComponent, TransformComponent>();
         while (query.MoveNext(out var uid, out var agent, out var transform))
         {
-            if (HasComp<ActorComponent>(uid) || !_mobs.IsAlive(uid) || transform.MapID != from.MapId ||
-                !ExpeditionHostiles(uid, agent).Contains(args.User) || !Visible(uid, args.User, agent.DetectionRange))
+            if (HasComp<ActorComponent>(uid) || !_mobs.IsAlive(uid) || transform.MapID != from.MapId)
                 continue;
             var offset = _transform.GetWorldPosition(transform) - from.Position;
             var along = Vector2.Dot(offset, direction);
             if (along < 0 || along > length + 1 || (offset - along * direction).LengthSquared() > 1.5f * 1.5f)
                 continue;
-            // React to nearby hostile fire only when its source is perceived. Hearing does not grant target tracking.
+            // Test the one shooter only after rejecting distant lanes. A nearby-hostile
+            // acquisition query per agent per bullet scales with all surrounding entities.
+            if (!NearbyExpeditionHostile(uid, agent, args.User))
+                continue;
+            var passing = new MapCoordinates(from.Position + direction * along, from.MapId);
+            // A bullet passing the body is observable even when the muzzle or shooter is hidden.
+            // The shot must physically reach this section of its lane, never pass through a wall.
+            if (!RayClear(uid, from, passing, shelter: true))
+                continue;
+            RememberIncomingFire(uid, agent,
+                _transform.ToCoordinates(transform.MapUid!.Value, passing), _timing.CurTime, hit: false);
+            ObserveIncomingLane(uid, agent, passing, direction, _timing.CurTime);
             agent.Stress = Math.Min(1, agent.Stress + 0.22f);
             agent.SuppressedUntil = _timing.CurTime + TimeSpan.FromSeconds(1.8 - agent.Courage);
+            // Local pressure is separate from identifying its source or authorizing a shot.
+            if (!Visible(uid, args.User, agent.DetectionRange))
+                continue;
             var newShooter = !agent.RecentShooters.TryGetValue(args.User, out var until) || until <= _timing.CurTime;
             if (newShooter && agent.RecentShooters.Count >= 16)
                 agent.RecentShooters.Remove(agent.RecentShooters.MinBy(pair => pair.Value).Key);
@@ -46,7 +58,7 @@ public sealed partial class CMUExpeditionAgentSystem
             // Automatic fire from the same attackers need not rerun every spatial search
             // on every bullet. New attackers still interrupt the ordinary think interval.
             if (newShooter)
-                agent.NextThink = _timing.CurTime;
+                RequestThink(agent, _timing.CurTime);
         }
     }
 
@@ -62,15 +74,20 @@ public sealed partial class CMUExpeditionAgentSystem
         {
             if (other == uid || HasComp<ActorComponent>(other) || !_mobs.IsAlive(other) ||
                 buddy.State is CMUExpeditionAgentState.Disabled or CMUExpeditionAgentState.OutOfAmmo or CMUExpeditionAgentState.Incapacitated or CMUExpeditionAgentState.RecoverWeapon ||
-                buddy.Squad != agent.Squad ||
+                !CoordinatedSquadMember(uid, agent, other, buddy) ||
                 !SharedEngagement(agent, buddy) || !IsFriendly(uid, other) ||
                 !_transform.InRange(Transform(uid).Coordinates, Transform(other).Coordinates, 12))
                 continue;
             members++;
             // Empty/blocked rifles cannot indefinitely monopolize the squad's exposure slots.
+            // An unfired volley still owns its bounded native readiness window; otherwise
+            // entering Engage releases the slot before the first round leaves the gun.
             if (CoveringFireReady(other, buddy, out _) ||
                 buddy.State == CMUExpeditionAgentState.Peeking && _timing.CurTime < buddy.MoveUntil ||
-                buddy.State == CMUExpeditionAgentState.Aim && _timing.CurTime < buddy.FireAt + TimeSpan.FromSeconds(0.5))
+                buddy.State == CMUExpeditionAgentState.Aim && _timing.CurTime < buddy.FireAt + TimeSpan.FromSeconds(0.5) ||
+                buddy.State == CMUExpeditionAgentState.Engage && WaitingForFirstShot(buddy, _timing.CurTime) &&
+                buddy.Action == null && buddy.PendingWeapon == null && buddy.Treatment == null &&
+                _guns.TryGetGun(other, out var gun) && WeaponAmmo(gun) > 0)
                 attacking++;
         }
         // Local attack slots stagger exposure; they are released immediately on retreat, injury, death or possession.
@@ -93,7 +110,7 @@ public sealed partial class CMUExpeditionAgentSystem
         while (query.MoveNext(out var other, out var buddy))
         {
             if (other == uid || !_mobs.IsAlive(other) || HasComp<ActorComponent>(other) ||
-                buddy.Squad != agent.Squad || buddy.State is CMUExpeditionAgentState.Disabled or CMUExpeditionAgentState.OutOfAmmo or CMUExpeditionAgentState.Incapacitated or CMUExpeditionAgentState.RecoverWeapon ||
+                !CoordinatedSquadMember(uid, agent, other, buddy) || buddy.State is CMUExpeditionAgentState.Disabled or CMUExpeditionAgentState.OutOfAmmo or CMUExpeditionAgentState.Incapacitated or CMUExpeditionAgentState.RecoverWeapon ||
                 !SharedEngagement(agent, buddy) || !IsFriendly(uid, other) ||
                 !_transform.InRange(Transform(uid).Coordinates, Transform(other).Coordinates, 12))
                 continue;
@@ -109,10 +126,16 @@ public sealed partial class CMUExpeditionAgentSystem
     }
 
     private TimeSpan RecoveryDelay(CMUExpeditionAgentComponent agent) =>
+        agent.FireControlRecovery ?? BaseRecoveryDelay(agent);
+
+    private TimeSpan BaseRecoveryDelay(CMUExpeditionAgentComponent agent) =>
         UrgentFire(agent, _timing.CurTime) ? TimeSpan.FromSeconds(0.1) :
             TimeSpan.FromSeconds(agent.BurstPause.TotalSeconds * (1.2 - agent.Initiative * 0.4 + agent.Stress * 0.6));
 
     private static int VolleySize(CMUExpeditionAgentComponent agent) =>
+        agent.FireControlVolley > 0 ? agent.FireControlVolley : BaseVolleySize(agent);
+
+    private static int BaseVolleySize(CMUExpeditionAgentComponent agent) =>
         Math.Min(agent.WeaponBurstLimit,
             Math.Max(Math.Min(2, agent.BurstSize), agent.BurstSize - (agent.Emotion == CMUExpeditionEmotion.Shaken ? 1 : 0)));
 }

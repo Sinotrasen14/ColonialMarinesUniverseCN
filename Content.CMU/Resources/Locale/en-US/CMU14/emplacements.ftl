@@ -13,3 +13,7 @@ emplacement-mount-CMUMachineGunM2CDropshipLoaded-description-mounted = 安装在
 emplacement-mount-RMCSmartGunMountedStatic-name = ML66D 支架
 emplacement-mount-RMCSmartGunMountedStatic-description = ML66D 的可折叠支架，为 ML66D 提供稳定性。
 emplacement-mount-RMCSmartGunMountedStatic-description-mounted = 可部署的重型机枪。它发射专用钨弹以提高穿甲能力。
+
+emplacement-mount-RuMCMachineGunUTES-C-name = UTES-C 重机枪
+emplacement-mount-RuMCMachineGunUTES-C-description = 拆解后的UTES-C重机枪，折叠起的伸缩三脚架无法开火。
+emplacement-mount-RuMCMachineGunUTES-C-description-mounted = 一个可部署的 UPP 12.7x108mm 重机枪，带三脚架。架设慢、背起来很重，但一旦架好了，就能连续射出重型子弹。

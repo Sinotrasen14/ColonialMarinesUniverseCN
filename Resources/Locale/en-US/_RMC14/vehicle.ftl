@@ -145,21 +145,22 @@ rmc-hardpoint-removal-tool = 拿着维护千斤顶才能移除这个模块。
 rmc-hardpoint-removal-prying-tool = 拿着撬棍或维护千斤顶才能移除这个模块。
 
 # CMU14
-cmu-vehicle-supply-unassigned = 没有排被分配到这座仓库。
-cmu-vehicle-supply-allowance = {$platoon} — 已配发载具：{$used}/{$limit}（最多一辆坦克和一架VTOL）
-
-rmc-vehicle-lock-frame-destroyed = 车辆在车架被破坏时无法上锁。
-
-rmc-hardpoint-remove-blocked = 那个挂点固定在原位。
-
-rmc-vehicle-demolition-frame-intact = 这辆车的车架太结实了，不能放爆炸物。先把它摧毁吧。
-
-rmc-vehicle-demolition-busy = 有人已经在摆弄这辆残破的车了。
-
-rmc-vehicle-demolition-start = 你开始用炸药布置残骸…
-
-rmc-vehicle-demolition-no-skill = 你不知道怎么安装拆除炸药。
-
-rmc-vehicle-too-small-to-damage = 我们太小了，无法对这辆车造成任何重大伤害！
-
-rmc-vehicle-demolition-armed = 炸弹已经放好了，正在倒计时！
+cmu-vehicle-supply-unassigned = 此仓库未分配排。
+cmu-vehicle-supply-allowance = {$platoon} — 已发放载具：{$used}/{$limit}（最多一辆坦克和一架 VTOL）
+cmu-vehicle-supply-preview-title = 载具预览
+cmu-vehicle-supply-stored-vehicles = 已储存载具
+cmu-vehicle-supply-loadout = 载具装备
+cmu-vehicle-supply-raise = 升起
+cmu-vehicle-supply-lower = 降下
+cmu-vehicle-supply-active-none = 无
+cmu-vehicle-supply-status-busy = 忙碌
+cmu-vehicle-supply-status-idle = 空闲
+cmu-vehicle-supply-status-line = 升降：{ $lift } | 状态：{ $status } | 活跃：{ $active }
+cmu-vehicle-supply-lift-none = 无升降
+cmu-vehicle-supply-lift-lowered = 已降下
+cmu-vehicle-supply-lift-raised = 已升起
+cmu-vehicle-supply-lift-lowering = 正在降下
+cmu-vehicle-supply-lift-raising = 正在升起
+cmu-vehicle-supply-lift-preparing = 正在准备
+cmu-vehicle-supply-copies-expanded = 副本 v
+cmu-vehicle-supply-copies-collapsed = 副本 >
