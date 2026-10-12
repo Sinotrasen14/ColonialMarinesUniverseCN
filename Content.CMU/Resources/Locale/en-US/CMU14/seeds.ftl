@@ -1,4 +1,4 @@
-seeds-mtear-name = messa's tears
-seeds-deathberry-name = death berry
-seeds-poisonberry-name = poison berry
-seeds-poisonapple-name = poison apple
+seeds-mtear-name = 梅萨之泪
+seeds-deathberry-name = 死亡浆果
+seeds-poisonberry-name = 毒浆果
+seeds-poisonapple-name = 毒苹果

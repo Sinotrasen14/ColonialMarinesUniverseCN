@@ -1,6 +1,6 @@
 cmu-emergency-lights-mode = { $mode ->
-    [1] You switch on the emergency lights. (Slow)
-    [2] You speed up the emergency lights. (Medium)
-    [3] You speed up the emergency lights. (Fast)
-   *[other] You switch off the emergency lights.
+    [1] 你打开应急灯。（慢速）
+    [2] 你加快应急灯。（中速）
+    [3] 你加快应急灯。（快速）
+   *[other] 你关闭应急灯。
 }

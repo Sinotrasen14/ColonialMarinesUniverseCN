@@ -1,2 +1,2 @@
-tribal-item-restricted-pickup = You cannot pick this up.
-tribal-item-restricted-equip = You cannot equip this.
+tribal-item-restricted-pickup = 你无法拾取这个。
+tribal-item-restricted-equip = 你无法装备这个。

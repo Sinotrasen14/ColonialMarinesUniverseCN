@@ -1,3 +1,3 @@
-gas-mask-filter-integrity-percentage = This filter's integrity is at {$percent}%.
-gas-mask-filter-super = [color=cyan]This filter seems more robust against airborne toxins.[/color]
-gas-mask-filter-broken = [color=red]This filter won't block anything![/color]
+gas-mask-filter-integrity-percentage = 这个滤毒罐的完好度为 {$percent}%。
+gas-mask-filter-super = [color=cyan]这个滤毒罐对空气传播的毒素似乎更强。[/color]
+gas-mask-filter-broken = [color=red]这个滤毒罐什么都挡不住！[/color]

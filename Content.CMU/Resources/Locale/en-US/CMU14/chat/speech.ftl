@@ -1,4 +1,4 @@
-chat-speech-verb-name-working-joe = Working Joe
-chat-speech-verb-working-joe-1 = coldly states
+chat-speech-verb-name-working-joe = 工作乔
+chat-speech-verb-working-joe-1 = 冷冷地说
 cmu-emote-speech-muffled = ...
 cmu-emote-speech-unheard = ...

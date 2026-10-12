@@ -1,3 +1,3 @@
-au14-trait-epilepsy-name = Epilepsy
-au14-trait-epilepsy-desc = You suffer from a neurological disorder that causes sudden seizures roughly every 20 minutes.
-au14-epilepsy-seizure = Your muscles seize up violently and you collapse in convulsions!
+au14-trait-epilepsy-name = 癫痫
+au14-trait-epilepsy-desc = 你患有一种神经系统疾病，大约每20分钟就会突然发作一次。
+au14-epilepsy-seizure = 你的肌肉剧烈抽搐，你倒地抽搐不止！

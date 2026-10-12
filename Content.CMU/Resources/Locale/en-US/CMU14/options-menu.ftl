@@ -1,3 +1,3 @@
-ui-options-general-area-echo = Area echo
-ui-options-area-echo-enabled = Apply echo to audio in large open spaces
-ui-options-area-echo-highres = Use improved but slower calculations for echoes, if enabled
+ui-options-general-area-echo = 区域回声
+ui-options-area-echo-enabled = 对开阔空间中的音频应用回声
+ui-options-area-echo-highres = 若启用，使用改进但较慢的回声计算

@@ -1,14 +1,14 @@
-cm-job-name-xeno-warlock = Warlock
+cm-job-name-xeno-warlock = 术士
 
-ent-CMUActionXenoPsychicCrush = Psychic Crush (40 per pulse)
-    .desc = Channel a crushing orb on a tile up to 6 tiles away. The area grows by a tile each second up to 3 tiles, then goes off on its own after 4 seconds for 200 plasma. Use the ability again to detonate it early and pay less. Deals 25 damage plus 15 per pulse charged, and paralyzes at four pulses or more. [color=red]Two pulses are needed for any effect, and moving, stuns or knockdowns cancel the channel.[/color]
+ent-CMUActionXenoPsychicCrush = 灵能碾压（每脉冲 40）
+    .desc = 在至多 6 格远的一格上引导一个碾压球体。范围每秒扩大一格，最多扩大至 3 格，然后在 4 秒后自行引爆，消耗 200 等离子。再次使用该能力可提前引爆并减少消耗。造成 25 点伤害，外加每充能脉冲 15 点伤害，并在四个或更多脉冲时使目标瘫痪。[color=red]至少需要两个脉冲才能产生任何效果，移动、眩晕或击倒会取消引导。[/color]
 
-ent-CMUActionXenoPsychicBlast = Psychic Blast (100)
-    .desc = Charge for a second, then fire a psychic shockwave at a tile up to 6 tiles away. Deals 35 damage in a 1.25 tile radius, knocks enemies down and slows them for 1.5 seconds, and flings them up to 3 tiles outward. [color=red]Anyone flung deals 30 damage to whoever they crash into. Moving cancels the charge.[/color]
+ent-CMUActionXenoPsychicBlast = 灵能冲击（100）
+    .desc = 蓄力一秒，然后向至多 6 格远的一格发射一道灵能冲击波。在 1.25 格半径内造成 35 点伤害，击倒敌人并使其减速 1.5 秒，并将他们向外抛飞至多 3 格。[color=red]任何被抛飞的人都会对撞到的人造成 30 点伤害。移动会取消蓄力。[/color]
 
-ent-CMUActionXenoPsychicShield = Psychic Shield (300)
-    .desc = Raise a psychic barrier facing the clicked direction for 6 seconds, freezing bullets and fast thrown items that strike it. Use the ability again to detonate it at no extra cost, reflecting the caught projectiles back off its face and knocking down anyone standing against the barrier. It also detonates on its own when the 6 seconds run out. [color=red]You cannot move while the shield is up.[/color]
+ent-CMUActionXenoPsychicShield = 灵能护盾（300）
+    .desc = 朝点击方向举起一道灵能屏障，持续 6 秒，冻结击中它的子弹和快速投掷物。再次使用该能力可无额外消耗地引爆它，将捕获的投射物从屏障表面反射回去，并击倒任何站在屏障旁的人。当 6 秒结束时，它也会自行引爆。[color=red]护盾升起时你无法移动。[/color]
 
-cmu-xeno-warlock-psychic-blast-no-target = Your psychic blast finds no mind to rupture.
-cmu-xeno-warlock-psychic-crush-invalid-target = You need a clear psychic focus.
-cmu-xeno-warlock-psychic-shield-obstructed = Something blocks your psychic shield.
+cmu-xeno-warlock-psychic-blast-no-target = 你的灵能冲击找不到可供撕裂的心智。
+cmu-xeno-warlock-psychic-crush-invalid-target = 你需要一个清晰的灵能焦点。
+cmu-xeno-warlock-psychic-shield-obstructed = 有什么东西挡住了你的灵能护盾。

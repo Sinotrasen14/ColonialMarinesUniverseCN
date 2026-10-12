@@ -1,1 +1,1 @@
-cmu-mp5-rack-pilot-skill-denied = The racks lock refuses to release, it dosn't recognize you as a pilot.
+cmu-mp5-rack-pilot-skill-denied = 机架锁拒绝释放，它不承认你是飞行员。

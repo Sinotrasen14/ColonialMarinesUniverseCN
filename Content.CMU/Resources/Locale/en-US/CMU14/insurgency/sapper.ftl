@@ -1,107 +1,107 @@
 # CLF Sapper role.
-au14-job-name-clfsapper = CLF Sapper
-au14-job-description-clfsapper = A guerilla trained in fieldcraft and demolitions. You lay traps, conceal them, and turn the colony's own ground against GOVFOR.
+au14-job-name-clfsapper = CLF 工兵
+au14-job-description-clfsapper = 一名受过野战技巧和爆破训练的游击队员。你布设陷阱、将其隐藏，并让殖民地自己的土地反噬 GOVFOR。
 # Radio prefix must NOT out the sapper: undercover CLF roles all read as ordinary civilians on comms
 # (same "CIV" prefix as au14-job-prefix-civiliancolonist / the CLF guerilla).
 au14-job-prefix-clfsapper = CIV
 
 # Sapper trap deploy / disarm feedback.
-insfor-sapper-trap-deployed = You plant the charge and it settles out of sight.
-insfor-sapper-trap-disarmed = You cut the tripline and pack the charge away.
-insfor-sapper-trap-deploy-container = You can't plant that in here.
-insfor-sapper-trap-deploy-occupied = There's already a trap on this tile.
-insfor-sapper-trap-unskilled = You fiddle with it, but you have no idea how to set this up.
+insfor-sapper-trap-deployed = 你埋下炸药，它悄然隐没于视线之外。
+insfor-sapper-trap-disarmed = 你剪断绊线，将炸药收了起来。
+insfor-sapper-trap-deploy-container = 你不能把它埋在这里面。
+insfor-sapper-trap-deploy-occupied = 这个格子上已经有一个陷阱了。
+insfor-sapper-trap-unskilled = 你摆弄了一番，但完全不知道怎么设置这东西。
 
 # Two-part tripwire.
-insfor-sapper-tripwire-attached = You lash the explosive onto the tripwire charge.
-insfor-sapper-tripwire-full = There's no room to attach another explosive.
-insfor-sapper-tripwire-need-explosive = You need to attach an explosive to the tripwire before you can plant it.
-insfor-sapper-tripwire-place-other-end = You plant the charge. Now carry the wire to where you want it to end - up to { $range } tiles away, in a straight line and in sight - and use it there.
-insfor-sapper-tripwire-strung = The tripwire is strung tight and set.
-insfor-sapper-tripwire-charge-gone = The charge this wire runs back to is gone.
-insfor-sapper-tripwire-bad-spot = You can't run the wire out here.
-insfor-sapper-tripwire-too-close = You're standing right on top of the charge.
-insfor-sapper-tripwire-not-straight = The wire has to run in a straight line from the charge.
-insfor-sapper-tripwire-too-far = That's too far from the charge to reach.
-insfor-sapper-tripwire-no-los = There's no clear line back to the charge.
-insfor-sapper-tripwire-eject-verb = Remove explosive
-insfor-sapper-tripwire-ejected = You take the explosive back off the charge.
+insfor-sapper-tripwire-attached = 你把炸药绑到了绊线炸药上。
+insfor-sapper-tripwire-full = 没有空间再附加一个炸药了。
+insfor-sapper-tripwire-need-explosive = 你需要先在绊线上附加一个炸药才能布设它。
+insfor-sapper-tripwire-place-other-end = 你埋下了炸药。现在把线牵到你想要它终止的地方——最远 { $range } 格，直线且视线可达——并在那里使用它。
+insfor-sapper-tripwire-strung = 绊线已绷紧并设置完毕。
+insfor-sapper-tripwire-charge-gone = 这条线所连接的炸药已经不见了。
+insfor-sapper-tripwire-bad-spot = 你不能在这里牵线。
+insfor-sapper-tripwire-too-close = 你就站在炸药正上方。
+insfor-sapper-tripwire-not-straight = 线必须从炸药处直线延伸。
+insfor-sapper-tripwire-too-far = 距离炸药太远，够不到。
+insfor-sapper-tripwire-no-los = 到炸药之间没有清晰的视线。
+insfor-sapper-tripwire-eject-verb = 取出炸药
+insfor-sapper-tripwire-ejected = 你把炸药从绊线上取了下来。
 
 # Audio (early-warning) trap.
-insfor-sapper-audio-name-title = Audio Trap
-insfor-sapper-audio-name-prompt = Name this trap
-insfor-sapper-audio-default-name = Unnamed
-insfor-sapper-audio-location-unknown = unknown location
-insfor-sapper-audio-radio-alert = {$name} audio trap has been triggered. Location: {$location}.
+insfor-sapper-audio-name-title = 音频陷阱
+insfor-sapper-audio-name-prompt = 为此陷阱命名
+insfor-sapper-audio-default-name = 未命名
+insfor-sapper-audio-location-unknown = 未知位置
+insfor-sapper-audio-radio-alert = {$name} 音频陷阱已被触发。位置：{$location}。
 
 # Sapper's Workbench.
-insfor-sapper-workbench-deployed = You unfold the workbench and lock its legs down.
-insfor-sapper-workbench-need-materials = The bench is missing materials or loose ingredients (place ingredient items on or next to it).
-insfor-sapper-workbench-crafted = You build {$item}.
-insfor-sapper-workbench-window-title = Sapper's Workbench
-insfor-sapper-workbench-tab-gunsmithing = Gunsmithing
-insfor-sapper-workbench-tab-fabrication = Fabrication
-insfor-sapper-workbench-no-weapon-loaded = No weapon loaded
-insfor-sapper-workbench-take-weapon-button = Take Weapon
-insfor-sapper-workbench-attachment-slots = Attachment Slots
-insfor-sapper-workbench-load-weapon-slots = Load a weapon to show its slots.
-insfor-sapper-workbench-buffs-debuffs = Buffs / Debuffs
-insfor-sapper-workbench-no-modifiers = No attachment modifiers applied.
-insfor-sapper-workbench-empty = empty
-insfor-sapper-workbench-slot = { $slot }: { $attachment }
-insfor-sapper-workbench-add = +Add
-insfor-sapper-workbench-remove = -Remove
-insfor-sapper-workbench-materials = Materials
-insfor-sapper-workbench-no-materials-loaded = No materials loaded
-insfor-sapper-workbench-material = { $name }: { $count }
-insfor-sapper-workbench-eject = Eject
-insfor-sapper-workbench-loose-help = Loose Ingredients Help
-insfor-sapper-workbench-loose-help-description = These must lie loose on or next to the bench to be consumed:
+insfor-sapper-workbench-deployed = 你展开工作台并锁死它的支腿。
+insfor-sapper-workbench-need-materials = 工作台缺少材料或散装原料（将原料物品放在工作台上或旁边）。
+insfor-sapper-workbench-crafted = 你制作了 {$item}。
+insfor-sapper-workbench-window-title = 工兵工作台
+insfor-sapper-workbench-tab-gunsmithing = 枪械改装
+insfor-sapper-workbench-tab-fabrication = 制造
+insfor-sapper-workbench-no-weapon-loaded = 未装载武器
+insfor-sapper-workbench-take-weapon-button = 取走武器
+insfor-sapper-workbench-attachment-slots = 配件槽位
+insfor-sapper-workbench-load-weapon-slots = 装载一把武器以显示其槽位。
+insfor-sapper-workbench-buffs-debuffs = 增益 / 减益
+insfor-sapper-workbench-no-modifiers = 未应用配件修正。
+insfor-sapper-workbench-empty = 空
+insfor-sapper-workbench-slot = { $slot }：{ $attachment }
+insfor-sapper-workbench-add = +添加
+insfor-sapper-workbench-remove = -移除
+insfor-sapper-workbench-materials = 材料
+insfor-sapper-workbench-no-materials-loaded = 未装载材料
+insfor-sapper-workbench-material = { $name }：{ $count }
+insfor-sapper-workbench-eject = 弹出
+insfor-sapper-workbench-loose-help = 散装原料帮助
+insfor-sapper-workbench-loose-help-description = 这些必须散放在工作台上或旁边才能被消耗：
 insfor-sapper-workbench-ingredient = x{ $count } { $name }
-insfor-sapper-workbench-craft = Craft
-insfor-sapper-workbench-no-materials = No materials
+insfor-sapper-workbench-craft = 制作
+insfor-sapper-workbench-no-materials = 无材料
 insfor-sapper-workbench-material-cost = { $name } { $count }
 
 # The "Switch" auto-sear chip.
-au14-switch-on = You flip the switch. The trigger group stops caring.
-au14-switch-off = You flip the switch back off.
-au14-switch-jammed = The action seizes - the gun is jammed!
-au14-switch-exploded = The gun tears itself apart in your hands!
-au14-switch-jammed-shoot = The gun is jammed! Rack it clear first.
-au14-switch-rack-verb = Rack the gun (clear jam)
-au14-switch-rack-fail = You rack the action, but the casing stays wedged in.
-au14-switch-rack-success = The mangled casing flies clear. The gun will fire again.
+au14-switch-on = 你拨动了开关。扳机组不再在乎了。
+au14-switch-off = 你把开关拨了回去。
+au14-switch-jammed = 枪机卡死了——枪卡壳了！
+au14-switch-exploded = 枪在你手中炸开了！
+au14-switch-jammed-shoot = 枪卡壳了！先拉枪机排除故障。
+au14-switch-rack-verb = 拉枪机（排除卡壳）
+au14-switch-rack-fail = 你拉了枪机，但弹壳仍卡在里面。
+au14-switch-rack-success = 变形的弹壳飞了出来。枪又能开火了。
 
 # Workbench gunsmithing (force attach/detach).
-insfor-sapper-workbench-weapon-placed = You lay the weapon out on the bench.
-insfor-sapper-workbench-weapon-occupied = There's already a weapon on the bench.
-insfor-sapper-workbench-no-weapon = Lay a weapon on the bench first.
-insfor-sapper-workbench-slots-full = Every slot on this weapon is already filled.
-insfor-sapper-workbench-attached = You force the attachment into place ({$slot}).
-insfor-sapper-workbench-wrong-slot = That attachment doesn't fit any slot this weapon has.
-insfor-sapper-workbench-hold-attachment = Hold an attachment first.
-insfor-sapper-workbench-take-weapon = Take weapon
-insfor-sapper-workbench-detach = Detach: {$name}
+insfor-sapper-workbench-weapon-placed = 你把武器摊放在工作台上。
+insfor-sapper-workbench-weapon-occupied = 工作台上已经有一把武器了。
+insfor-sapper-workbench-no-weapon = 先在工作台上放一把武器。
+insfor-sapper-workbench-slots-full = 这把武器上的每个槽位都已经装满了。
+insfor-sapper-workbench-attached = 你强行将配件装入到位（{$slot}）。
+insfor-sapper-workbench-wrong-slot = 那个配件不适合这把武器的任何槽位。
+insfor-sapper-workbench-hold-attachment = 先手持一个配件。
+insfor-sapper-workbench-take-weapon = 取走武器
+insfor-sapper-workbench-detach = 拆卸：{$name}
 
 # ATM hacking.
-insfor-sapper-atm-already-hacked = This machine has already been bled dry.
-insfor-sapper-atm-hacked = The ATM shudders and spits out {$amount} in cash.
-insfor-sapper-atm-message-title = Siphon Rig
-insfor-sapper-atm-message-prompt = Leave a message on the ATM's screen until it repairs itself (optional, up to {$max} characters)
-cmu-sapper-atm-logins-leaked = The rig also dumps {$count} cached card {$count ->
-    [one] login
-   *[other] logins
-} with PINs. Use the rig in hand to read them.
-insfor-sapper-atm-malfunction = ERROR: THIS DEVICE HAS MALFUNCTIONED. PLEASE CONTACT YOUR ADMINISTRATOR.
-insfor-sapper-console-drained = The console's funds drain away - {$amount} in cash spills out.
-insfor-sapper-asrs-drained = The ASRS account empties into your hands - {$amount} in cash.
-insfor-sapper-asrs-empty = This terminal has no funds to siphon.
+insfor-sapper-atm-already-hacked = 这台机器已经被榨干了。
+insfor-sapper-atm-hacked = ATM 颤抖着吐出了 {$amount} 现金。
+insfor-sapper-atm-message-title = 抽吸装置
+insfor-sapper-atm-message-prompt = 在 ATM 屏幕上留下一条消息，直到它自行修复（可选，最多 {$max} 个字符）
+cmu-sapper-atm-logins-leaked = 该装置还泄露了 {$count} 条缓存的银行卡 {$count ->
+    [one] 登录信息
+   *[other] 登录信息
+} 及其 PIN 码。使用手持装置读取它们。
+insfor-sapper-atm-malfunction = 错误：此设备已发生故障。请联系您的管理员。
+insfor-sapper-console-drained = 控制台的资金被抽干——{$amount} 现金涌了出来。
+insfor-sapper-asrs-drained = ASRS 账户清空流入你手中——{$amount} 现金。
+insfor-sapper-asrs-empty = 这个终端没有资金可供抽取。
 
 # Spy-camera network.
-device-frequency-prototype-name-surveillance-camera-clf = CLF Spy Cameras
+device-frequency-prototype-name-surveillance-camera-clf = CLF 间谍摄像头
 
 # Snare trap.
-insfor-sapper-snare-caught = A snare whips tight around you, binding your hands and flipping the world!
-insfor-sapper-snare-struggled-free = You wrench yourself free of the snare.
-insfor-sapper-snare-cutting = You start cutting them free of the snare.
-insfor-sapper-snare-cut-free = The snare is cut away and you drop free.
+insfor-sapper-snare-caught = 一个套索猛地收紧缠住你，缚住你的双手，天旋地转！
+insfor-sapper-snare-struggled-free = 你挣脱了套索。
+insfor-sapper-snare-cutting = 你开始割断束缚他们的套索。
+insfor-sapper-snare-cut-free = 套索被割断，你脱身落下。

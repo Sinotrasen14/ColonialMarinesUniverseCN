@@ -1,2 +1,2 @@
-cmu-chat-emote-name-burning = Burning
-cmu-chat-emote-msg-burning = screams as they are engulfed in flames!
+cmu-chat-emote-name-burning = 燃烧
+cmu-chat-emote-msg-burning = 在烈焰吞噬中尖叫！

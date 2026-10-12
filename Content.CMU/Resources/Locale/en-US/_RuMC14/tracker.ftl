@@ -1,4 +1,4 @@
-rmc-squad-info-BEARCommandingOfficer = BEAR CHTORM Commanding Officer
-rmc-squad-info-BEARGROZACommandingOfficer = BEAR GROZA Commanding Officer
-rmc-squad-info-BEARSKALACommandingOfficer = BEAR SKALA Commanding Officer
-rmc-squad-info-LiquidatorCommandingOfficer = Liquidator Commanding Officer
+rmc-squad-info-BEARCommandingOfficer = BEAR CHTORM 舰长
+rmc-squad-info-BEARGROZACommandingOfficer = BEAR GROZA 舰长
+rmc-squad-info-BEARSKALACommandingOfficer = BEAR SKALA 舰长
+rmc-squad-info-LiquidatorCommandingOfficer = 清算者 舰长

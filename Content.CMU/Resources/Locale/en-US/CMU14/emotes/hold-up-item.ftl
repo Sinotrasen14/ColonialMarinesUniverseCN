@@ -1,1 +1,1 @@
-cmu-hold-up-item-emote = holds up {THE($item)}.
+cmu-hold-up-item-emote = 举起{THE($item)}。

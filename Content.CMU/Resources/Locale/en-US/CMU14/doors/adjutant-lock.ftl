@@ -1,1 +1,1 @@
-cmu-machines-button-locked-open = The door is locked open and no longer responds.
+cmu-machines-button-locked-open = 门被锁定在开启状态，不再响应。

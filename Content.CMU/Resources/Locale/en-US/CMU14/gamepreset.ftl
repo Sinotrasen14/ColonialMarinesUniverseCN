@@ -1,8 +1,8 @@
-insurgency-title = Insurgency
-insurgency-description = An extended gamemode.
+insurgency-title = 叛乱
+insurgency-description = 一种扩展游戏模式。
 
 objectives-system-round-end =
-    {$faction} won the round {$message ->
-        [empty] !
-       *[other] by: {$message}
+    {$faction} 赢得了本回合{$message ->
+        [empty] ！
+       *[other] ，原因：{$message}
     }

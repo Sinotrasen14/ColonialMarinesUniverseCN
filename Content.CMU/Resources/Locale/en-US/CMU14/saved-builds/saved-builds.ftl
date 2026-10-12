@@ -2,87 +2,87 @@
 # Copyright (c) 2026 wray-git
 # SPDX-License-Identifier: AGPL-3.0-only
 # Examine line shown on any entity a player constructed.
-construction-player-built-examine = Built by [color=cyan]{ $name }[/color].
+construction-player-built-examine = 由 [color=cyan]{ $name }[/color] 建造。
 
 # Build-partner verbs (right-click another player).
-build-partner-add-verb = Add as Build Partner
-build-partner-remove-verb = Remove Build Partner
-build-partner-added = { $name } can now include your builds in their saves.
-build-partner-removed = { $name } can no longer include your builds in their saves.
+build-partner-add-verb = 添加为建造伙伴
+build-partner-remove-verb = 移除建造伙伴
+build-partner-added = { $name } 现在可以在其存档中包含你的建筑。
+build-partner-removed = { $name } 无法再在其存档中包含你的建筑。
 
 # Saving builds.
-saved-build-success = Saved build "{ $name }" ({ $count } entities, { $tiles } tiles).
-saved-build-error-no-name = Give the build a name first.
-saved-build-error-empty = Nothing you built (or a partner's) is in the selection.
-saved-build-error-serialize = Failed to serialize that build.
-saved-build-error-write = Failed to write the build file.
+saved-build-success = 已保存建筑“{ $name }”（{ $count } 个实体，{ $tiles } 个地砖）。
+saved-build-error-no-name = 请先为建筑命名。
+saved-build-error-empty = 所选范围内没有你（或伙伴）建造的内容。
+saved-build-error-serialize = 无法序列化该建筑。
+saved-build-error-write = 无法写入建筑文件。
 
 # Build-save selection panel (client).
-saved-build-window-title = Save a Build
-saved-build-window-range = Range
-saved-build-window-size = Selection: { $size }x{ $size } tiles
-saved-build-window-append = Append Range
-saved-build-window-clear = Clear
-saved-build-window-selected = Highlighted: { $count } entities, { $tiles } tiles
-saved-build-window-multiz-help = Multi-Z saving is experimental:
-    - Multi-Z builds only work when using "Place at Original".
-    - Place the original build once on each Z-level: build one level, move to the next, then use "Place at Original" again.
-    - For the best stability, make a separate save for each Z-level.
-saved-build-window-name = Build name…
-saved-build-window-save = Save Build
-saved-build-window-open-folder = Open Saved Builds Folder
-saved-build-window-include-tiles = Save tiles
-saved-build-window-include-multiz = Capture other Z-levels (above/below)
+saved-build-window-title = 保存建筑
+saved-build-window-range = 范围
+saved-build-window-size = 选区：{ $size }x{ $size } 个地砖
+saved-build-window-append = 追加范围
+saved-build-window-clear = 清除
+saved-build-window-selected = 已高亮：{ $count } 个实体，{ $tiles } 个地砖
+saved-build-window-multiz-help = 多层 Z 保存为实验性功能：
+    - 多层 Z 建筑仅在使用“放置在原始位置”时有效。
+    - 在每个 Z 层上各放置一次原始建筑：建造一层，移动到下一层，然后再次使用“放置在原始位置”。
+    - 为获得最佳稳定性，请为每个 Z 层分别创建存档。
+saved-build-window-name = 建筑名称…
+saved-build-window-save = 保存建筑
+saved-build-window-open-folder = 打开已保存建筑文件夹
+saved-build-window-include-tiles = 保存地砖
+saved-build-window-include-multiz = 捕获其他 Z 层（上方/下方）
 
 # Saved Builds spawnlist in the construction menu.
-gmod-construction-menu-saved-builds = Saved Builds
-saved-build-card = { $name }  ({ $author } · { $count })
-saved-build-detail-desc = By { $author }
-    { $count } entities · { $source }
-saved-build-none = No saved builds yet. Use the build-save tool to make one.
-saved-build-place-button = Place Build
-saved-build-placed = Placed build ({ $count } pieces).
-saved-build-error-load = Couldn't load that saved build.
-saved-build-error-nogrid = You can only place a build on a grid.
-saved-build-error-noorigin = This build's original location no longer exists.
-saved-build-error-notadmin = Only admins can place a build instantly. Build it with construction ghosts instead.
-saved-build-place-original-button = Place at Original
-saved-build-ghosts-placed = Placed { $count } construction ghosts — build them with materials.
+gmod-construction-menu-saved-builds = 已保存建筑
+saved-build-card = { $name }  （{ $author } · { $count }）
+saved-build-detail-desc = 作者：{ $author }
+    { $count } 个实体 · { $source }
+saved-build-none = 还没有已保存的建筑。使用建筑保存工具创建一个。
+saved-build-place-button = 放置建筑
+saved-build-placed = 已放置建筑（{ $count } 个部件）。
+saved-build-error-load = 无法加载该已保存建筑。
+saved-build-error-nogrid = 你只能在网格上放置建筑。
+saved-build-error-noorigin = 该建筑的原始位置已不存在。
+saved-build-error-notadmin = 只有管理员可以立即放置建筑。请改用建造幽灵来建造。
+saved-build-place-original-button = 放置在原始位置
+saved-build-ghosts-placed = 已放置 { $count } 个建造幽灵——使用材料建造它们。
 
 # Saved-build management (delete + open folder).
-gmod-construction-menu-delete-build = Delete Build
-gmod-construction-menu-open-build-folder = Open Builds Folder
-saved-build-deleted = Deleted that saved build.
-saved-build-error-delete = Failed to delete that saved build.
-saved-build-error-delete-notyours = You can only delete builds you saved. (Admins can delete any.)
+gmod-construction-menu-delete-build = 删除建筑
+gmod-construction-menu-open-build-folder = 打开建筑文件夹
+saved-build-deleted = 已删除该已保存建筑。
+saved-build-error-delete = 无法删除该已保存建筑。
+saved-build-error-delete-notyours = 你只能删除自己保存的建筑。（管理员可以删除任何建筑。）
 
 # Build-mode dropdown at the top of the construction menu.
-gmod-construction-menu-mode-admin = Building: Admin (instant)
-gmod-construction-menu-mode-player = Building: Player (ghosts)
-gmod-construction-menu-mode-mapper = Building: Mapper (any entity)
+gmod-construction-menu-mode-admin = 建造：管理员（即时）
+gmod-construction-menu-mode-player = 建造：玩家（幽灵）
+gmod-construction-menu-mode-mapper = 建造：地图制作者（任意实体）
 
 # Build partners window (the "Partners" button).
-build-partner-window-title = Build Partners
-build-partner-window-desc = Add a player to let them include YOUR built items in their saved builds.
-build-partner-window-empty = No other players are online.
-build-partner-window-add = Add
-build-partner-window-remove = Remove
-build-partner-window-clear-all = Clear all partners
-build-partner-granted-to-you = { $name } added you as a build partner - you can now save their builds.
-build-partner-revoked-from-you = { $name } removed you as a build partner.
+build-partner-window-title = 建造伙伴
+build-partner-window-desc = 添加玩家，让他们可以在其已保存建筑中包含你建造的物品。
+build-partner-window-empty = 没有其他玩家在线。
+build-partner-window-add = 添加
+build-partner-window-remove = 移除
+build-partner-window-clear-all = 清除所有伙伴
+build-partner-granted-to-you = { $name } 已将你添加为建造伙伴——你现在可以保存他们的建筑。
+build-partner-revoked-from-you = { $name } 已将你移除建造伙伴。
 
 # Saved-build window extra option (mapper mode) + detail-panel rename/delete.
-saved-build-window-include-loose = Include loose items
-gmod-construction-menu-rename-build = Rename
-gmod-construction-menu-delete-build-confirm = Confirm Delete?
+saved-build-window-include-loose = 包含散落物品
+gmod-construction-menu-rename-build = 重命名
+gmod-construction-menu-delete-build-confirm = 确认删除？
 
 # Placement controls hint (top-left).
-saved-build-controls-mode-admin = Mode: Admin (instant, free)
-saved-build-controls-mode-player = Mode: Build (ghosts + materials)
-saved-build-controls-gridalign = Alt (toggle): Grid-aligned ({ $state })
-saved-build-controls-rotate = { $key }: Rotate
-saved-build-controls-place = Left Click: Place
-saved-build-controls-cancel = Right Click: Cancel
+saved-build-controls-mode-admin = 模式：管理员（即时、免费）
+saved-build-controls-mode-player = 模式：建造（幽灵 + 材料）
+saved-build-controls-gridalign = Alt（切换）：网格对齐（{ $state }）
+saved-build-controls-rotate = { $key }：旋转
+saved-build-controls-place = 左键单击：放置
+saved-build-controls-cancel = 右键单击：取消
 
 # Multi-z placement
-saved-build-z-skipped = {$count} entities could not be placed - their z-level could not be created here.
+saved-build-z-skipped = {$count} 个实体无法放置——无法在此处创建它们所在的 Z 层。

@@ -1,4 +1,4 @@
-cmu-ghost-gui-color-button = Ghost Color
-cmu-ghost-color-window-title = Ghost Color
-cmu-ghost-color-apply = Apply
-cmu-ghost-color-reset = Reset
+cmu-ghost-gui-color-button = 幽灵颜色
+cmu-ghost-color-window-title = 幽灵颜色
+cmu-ghost-color-apply = 应用
+cmu-ghost-color-reset = 重置

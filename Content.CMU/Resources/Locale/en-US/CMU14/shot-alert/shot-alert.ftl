@@ -1,3 +1,3 @@
-cmu-shot-alert-gunfire = SHOTS FIRED detected near {$location}.
-cmu-shot-alert-explosion = EXPLOSION detected near {$location}.
-cmu-shot-alert-unknown-location = an unknown location
+cmu-shot-alert-gunfire = 在{$location}附近检测到枪击。
+cmu-shot-alert-explosion = 在{$location}附近检测到爆炸。
+cmu-shot-alert-unknown-location = 未知位置

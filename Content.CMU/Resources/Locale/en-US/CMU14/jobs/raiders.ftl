@@ -1,8 +1,8 @@
-cmu-raider-name = Free Company Raider
-cmu-raider-name-leader = Free Company Raider Leader
-cmu-raider-description = A pirate in a free company raiding crew: ex-MARSOC deserters in worn-out, second-hand kit. Not allied with GOVFOR, OPFOR, the UA, the UPP or the colony. They are here to strip the colony of anything worth selling and get rich.
+cmu-raider-name = 自由佣兵劫掠者
+cmu-raider-name-leader = 自由佣兵劫掠者首领
+cmu-raider-description = 自由佣兵劫掠队中的一名海盗：从MARSOC叛逃的老兵，穿着破旧的二手装备。不隶属于GOVFOR、OPFOR、UA、UPP或殖民地。他们来这里是为了把殖民地一切值钱的东西搜刮干净，然后发财。
 cmu-raider-prefix = RDR
 cmu-raider-prefix-leader = RSL
-cmu-raider-leader = the raider leader
-cmu-raider-rules = You are a free company raider: a PIRATE. You are not on anyone's side. GOVFOR, OPFOR, the UA, the UPP, the corporations and the colonists are all just people standing between you and the money. Your goal is to get RICH: find the colony's valuables, cash, gear and anything else worth selling, and get out alive with it. Violence is a tool, not the point. You can threaten, rob, bargain, take hostages, sell to the highest bidder or shoot your way out, as long as it pays.
-cmu-raider-greeting = You are a free company raider. Your crew washed out of MARSOC long ago, and the gear you walked out with is held together with tape and luck. That doesn't matter: this colony is sitting on a fortune, and everyone here is too busy fighting each other to guard it. Strip it. Loot what you can carry, deal with whoever you have to, and don't die before you get paid. You owe nothing to any flag. Follow your leader and get rich.
+cmu-raider-leader = 劫掠者首领
+cmu-raider-rules = 你是自由佣兵劫掠者：一名海盗。你不站在任何人一边。GOVFOR、OPFOR、UA、UPP、各企业和殖民者都只是挡在你和钱之间的人。你的目标是发财：找到殖民地的贵重物品、现金、装备以及其他任何值钱的东西，然后带着它们活着离开。暴力是工具，不是目的。你可以威胁、抢劫、谈判、劫持人质、卖给出价最高的人，或者一路杀出去，只要有钱赚。
+cmu-raider-greeting = 你是自由佣兵劫掠者。你的船员很久以前就被MARSOC淘汰了，你们带出来的装备全靠胶带和运气撑着。那不重要：这个殖民地坐拥一笔财富，而这里所有人都忙着内斗，没人看守。把它搜刮干净。能搬走的都抢走，该对付谁就对付谁，别在拿到钱之前死掉。你不欠任何旗帜什么。跟着你的首领，发财去。

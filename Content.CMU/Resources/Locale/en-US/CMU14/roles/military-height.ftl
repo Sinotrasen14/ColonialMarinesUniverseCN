@@ -1,7 +1,7 @@
-cmu-role-military-age = Character must be { $max } years old or younger.
-cmu-role-military-height = Character must be between { $min } and { $max } tall (closest: { $closest }).
-cmu-role-military-weight = Character must weigh { $range } lbs at { $height } for their sex and age.
-cmu-role-military-weight-alternatives = Or instead, { $fixes }.
-cmu-role-military-fix-height = be { $height } tall
-cmu-role-military-fix-age = be { $age } years old
-cmu-role-military-fix-or = {" "}or{" "}
+cmu-role-military-age = 角色必须年满 { $max } 岁或以下。
+cmu-role-military-height = 角色身高必须在 { $min } 到 { $max } 之间（最接近：{ $closest }）。
+cmu-role-military-weight = 角色在其性别和年龄下，身高 { $height } 时体重必须为 { $range } 磅。
+cmu-role-military-weight-alternatives = 或者，{ $fixes }。
+cmu-role-military-fix-height = 身高为 { $height }
+cmu-role-military-fix-age = 年龄为 { $age } 岁
+cmu-role-military-fix-or = {" "}或{" "}

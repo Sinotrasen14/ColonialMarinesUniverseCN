@@ -1,4 +1,4 @@
-cmu-cpr-mask-remove = You can't perform CPR through {THE($mask)}. Remove it from {THE($target)} first!
-cmu-cpr-mask-pull-down = You can't perform CPR through {THE($mask)}. Pull it down or remove it from {THE($target)} first!
-cmu-cpr-mask-conscious = A CPR mask can only be put on someone who is unconscious.
-cmu-cpr-mask-falls-off = {CAPITALIZE(THE($mask))} slips off as they come to.
+cmu-cpr-mask-remove = 你无法隔着{THE($mask)}进行心肺复苏。请先从{THE($target)}身上取下它！
+cmu-cpr-mask-pull-down = 你无法隔着{THE($mask)}进行心肺复苏。请先将其拉下或从{THE($target)}身上取下！
+cmu-cpr-mask-conscious = 心肺复苏面罩只能给失去意识的人戴上。
+cmu-cpr-mask-falls-off = 当他们恢复意识时，{CAPITALIZE(THE($mask))}滑落了。

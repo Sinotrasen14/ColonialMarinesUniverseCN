@@ -1,4 +1,4 @@
-wendigo-voice-window-title = Wendigo Voice Mimicry
-wendigo-voice-search-placeholder = Search...
-wendigo-voice-category-all = All
-wendigo-voice-no-results = No results.
+wendigo-voice-window-title = 温迪戈语音模仿
+wendigo-voice-search-placeholder = 搜索……
+wendigo-voice-category-all = 全部
+wendigo-voice-no-results = 无结果。

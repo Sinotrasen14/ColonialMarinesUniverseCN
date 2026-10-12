@@ -1,8 +1,8 @@
 # V2-γ — Limb reattach surgery popups.
 
-cmu-medical-reattach-no-limb = You are not holding a matching limb.
-cmu-medical-reattach-slot-occupied = There is no empty slot for that limb.
-cmu-medical-reattach-attach-failed = The limb could not be attached.
-cmu-medical-reattach-success = The limb is reattached.
-cmu-medical-reattach-wrong-side = That limb is the wrong side.
-cmu-medical-reattach-requires-robotic-limb = This patient can only accept robotic limbs.
+cmu-medical-reattach-no-limb = 你手上没有匹配的肢体。
+cmu-medical-reattach-slot-occupied = 该肢体没有可用的空槽位。
+cmu-medical-reattach-attach-failed = 无法接上该肢体。
+cmu-medical-reattach-success = 肢体已重新接上。
+cmu-medical-reattach-wrong-side = 该肢体的侧别不对。
+cmu-medical-reattach-requires-robotic-limb = 该患者只能接受机械肢体。

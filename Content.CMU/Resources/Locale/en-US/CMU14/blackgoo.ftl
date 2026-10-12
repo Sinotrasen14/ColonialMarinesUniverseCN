@@ -1,2 +1,2 @@
-reagent-name-goo = Strange Goop
-reagent-desc-goo = I wouldn't eat this
+reagent-name-goo = 奇怪黏液
+reagent-desc-goo = 我可不会吃这个

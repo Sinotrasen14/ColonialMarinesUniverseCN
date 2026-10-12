@@ -1,434 +1,434 @@
-au14-department-colony-mapspecific = Map Specific
-au14-department-colony-mapspecific-description = Roles limited to specific maps. Hover over job names to see map availability.
+au14-department-colony-mapspecific = 特定地图
+au14-department-colony-mapspecific-description = 仅限于特定地图的职业。将鼠标悬停在职业名称上可查看地图可用性。
 
-au14-department-prometheus = Prometheus
-au14-department-prometheus-description = Roles limited to use on the prometheus gamemode
+au14-department-prometheus = 普罗米修斯
+au14-department-prometheus-description = 仅限于在普罗米修斯游戏模式中使用的职业
 
-au14-department-prison = Prison
-au14-department-prison-description = Roles limited to use on the prison gamemode
+au14-department-prison = 监狱
+au14-department-prison-description = 仅限于在监狱游戏模式中使用的职业
 
-au14-department-isolation = Isolation
-au14-department-isolation-description = Roles limited to use on the Isolation gamemode
+au14-department-isolation = 隔离
+au14-department-isolation-description = 仅限于在隔离游戏模式中使用的职业
 
 
-au14-department-weyu = We-Yu
-au14-department-wyu-description = Jobs part of Weyland Yutani
+au14-department-weyu = 维兰德-汤谷
+au14-department-wyu-description = 属于维兰德-汤谷的职业
 
-au14-job-name-mobboss= Mob Boss
-au14-job-description-mobboss= You're the leader of the local crime syndicate, ensure the goals of your family are met
+au14-job-name-mobboss= 帮派老大
+au14-job-description-mobboss= 你是当地犯罪辛迪加的首领，确保你的家族目标得以实现
 au14-job-prefix-mobboss = MOB
 
-au14-job-name-mobgoon= Mob Goon
-au14-job-description-mobgoon = You're a soldier in local crime syndicate, listen to the boss
+au14-job-name-mobgoon= 帮派打手
+au14-job-description-mobgoon = 你是当地犯罪辛迪加的士兵，听从老大的命令
 
-au14-job-name-wyguard = Security Officer
-au14-job-description-wyguard= You're corporate security hired by Weyland-Yutani. Listen to and protect the employees and company assets
+au14-job-name-wyguard = 安保官
+au14-job-description-wyguard= 你是维兰德-汤谷雇佣的企业安保。听从并保护员工和公司资产
 au14-job-prefix-wyguard = WYSEC
 
-au14-department-third-party = Third Party
-au14-department-third-party-description = Select this job to play as a third party
+au14-department-third-party = 第三方
+au14-department-third-party-description = 选择此职业以第三方身份游玩
 
-au14-department-threat = threat
-au14-department-threat-description = Select this job to play as the threat
+au14-department-threat = 威胁
+au14-department-threat-description = 选择此职业以威胁身份游玩
 
-au14-cmbinvestigate-rules = You are an officer of the law. Investigate the area. You are neutral unless attacked.
+au14-cmbinvestigate-rules = 你是执法官员。调查该区域。除非遭到攻击，否则保持中立。
 
-au14-lacncommandosniper-rules = You have been loaned to the United Americas Allied Command by the LACN for a special mission on this planet, the details of which have not been disclosed to you. You have been ordered to investigate the area and report to the local GOVFOR command. You are friendly to GOVFOR and neutral to civilians.
+au14-lacncommandosniper-rules = 你被LACN借调至联合美洲盟军司令部，在此星球执行一项特殊任务，任务详情尚未向你披露。你已受命调查该区域并向当地GOVFOR指挥部报告。你对GOVFOR友好，对平民中立。
 
-au14-uacglostthreat-rules = You are a Government Forces Third Party! You are friendly to GOVFOR forces and neutral to civilians. This threat asks for a slightly higher level of roleplay than others! Please keep this in mind.
+au14-uacglostthreat-rules = 你是政府军第三方！你对GOVFOR部队友好，对平民中立。此威胁角色要求比其他角色稍高的角色扮演水平！请牢记这一点。
 
-au14-rmcert-rules = You have been dispatched as a Royal Marines Commando Rapid Reaction Troop member. The details of the mission have not been disclosed to you, however your main objective is to assist GOVFOR forces in the area of operation. You are friendly to GOVFOR command and neutral to civilians.
+au14-rmcert-rules = 你已被派遣为皇家海军陆战队突击队快速反应部队成员。任务详情尚未向你披露，但你的主要目标是在作战区域内协助GOVFOR部队。你对GOVFOR指挥部友好，对平民中立。
 
-au14-uppgrom-rules = You are a member of UPP's elite GROM special unit! You do not remember what happened or what is happening in round.
+au14-uppgrom-rules = 你是UPP精英GROM特种部队的成员！你不记得回合中发生了什么或正在发生什么。
 
-au14-uppgrom-greeting = You are a member of UPP's elite GROM special forces unit!
+au14-uppgrom-greeting = 你是UPP精英GROM特种部队的成员！
 
-    Your last mission was disastrous, you lost contact with your mothership and command.
+    你的上次任务以灾难告终，你与母舰和指挥部失去了联系。
 
-    Your supplies are running low, and only by your adaptability you managed you survive.
+    你的补给即将耗尽，仅凭你的适应能力才得以幸存。
 
-    Ensure survival of yourself and your squadmates and contact nearest friendly command.
-    Poland Is Not Yet Lost!
+    确保你自己和战友的生存，并联系最近的友方指挥部。
+    波兰永不灭亡！
 
-    You are not hostile to the UPP and CCA and neutral to other countries!
+    你对UPP和CCA不敌对，对其他国家中立！
 
-au14-unisc-rules = You are a mix of Volunteers from different countries put into a Peacekeeping force, Protect Civilians, Enforce Geneva, Always attempt to be neutral. Remember, nobody is above Geneva.
+au14-unisc-rules = 你是来自不同国家的志愿者组成的维和部队成员，保护平民，执行日内瓦公约，始终保持中立。记住，没有人能凌驾于日内瓦公约之上。
 
-au14-unisc-greeting = You are a mix of Volunteers from different countries put into a Peacekeeping force.
+au14-unisc-greeting = 你是来自不同国家的志愿者组成的维和部队成员。
 
-    You have been dispatched by Platoon Command to investigate a call incoming from a Colony, the one you're currently going towards.
+    你已被排指挥部派遣去调查来自殖民地的求救信号，你目前正前往那里。
 
-    You've got a full Squad, along with your Platoon Operations Officer and an Enforcer Team.
+    你拥有一支完整的班组，以及你的排作战军官和一支执法小队。
 
-    Make sure that the Geneva Convention is upheld, Civilians rights are protected, and ensure the safety of your squad mates aswell.
+    确保日内瓦公约得到遵守，平民权利得到保护，同时确保你战友的安全。
 
-    Your Rules of Engagement are tight, do not fire unless fired upon or in defense of Non-Combatants, always attempt to be neutral, always attempt to avoid acting in anything other than self-defense.
+    你的交战规则非常严格，除非遭到射击或为保卫非战斗人员，否则不要开火，始终尝试保持中立，始终尝试避免采取除自卫以外的任何行动。
 
-    ROE may always be changed by the Platoon Operations Officer or Platoon Commander.
+    交战规则可随时由排作战军官或排指挥官更改。
 
-    You are netrual to all countries, corporations and organizations. You are Allied to the United Nations.
+    你对所有国家、企业和组织保持中立。你与联合国结盟。
 
-au14-job-name-unisc-automatic-rifleman = UNISC Automatic Rifleman
-au14-job-name-unisc-ammo-bearer = UNISC Ammo Bearer
-au14-job-name-unisc-enforcer = UNISC Enforcer
-au14-job-name-unisc-lead-enforcer = UNISC Lead Enforcer
-au14-job-name-unisc-squad-leader = UNISC Squad Leader
-au14-job-name-unisc-platoon-operations-officer = UNISC Platoon Operations Officer
-au14-job-name-unisc-rifleman = UNISC Rifleman
-au14-job-name-unisc-corpsman = UNISC Corpsman
-au14-job-name-unisc-hospital-corpsman = UNISC Hospital Corpsman
-au14-unisc-description = United Nations Interstellar Space Corps personnel (peacekeepers).
+au14-job-name-unisc-automatic-rifleman = UNISC 自动步枪手
+au14-job-name-unisc-ammo-bearer = UNISC 弹药手
+au14-job-name-unisc-enforcer = UNISC 执法者
+au14-job-name-unisc-lead-enforcer = UNISC 执法队长
+au14-job-name-unisc-squad-leader = UNISC 班长
+au14-job-name-unisc-platoon-operations-officer = UNISC 排作战军官
+au14-job-name-unisc-rifleman = UNISC 步枪手
+au14-job-name-unisc-corpsman = UNISC 卫生兵
+au14-job-name-unisc-hospital-corpsman = UNISC 医院卫生兵
+au14-unisc-description = 联合国星际空间军团人员（维和人员）。
 chat-radio-unisc = UNISOF
 
-rmc-squad-info-GROMCommandingOfficer = GROM Commanding Officer
+rmc-squad-info-GROMCommandingOfficer = GROM 指挥官
 
-au14-uppgrom-description = You are a member of UPP's elite GROM special forces unit. Survive with your squad and contact any friendly Command.
+au14-uppgrom-description = 你是UPP精英GROM特种部队的成员。与你的小队一起生存并联系任何友方指挥部。
 
-au-14-job-name-papthirdparty-investigator = PaP Investigator
+au-14-job-name-papthirdparty-investigator = PaP 调查员
 au-14-job-prefix-papthirdparty-investigator = Pap Inv
-au14-papthirdparty-description = You are part of PaP's Investigation group. You were called to a colony to investigate. You are not aware of the situation. Investigate.
+au14-papthirdparty-description = 你是PaP调查组的成员。你被召唤到殖民地进行调查。你并不了解情况。去调查吧。
 
-au-14-job-name-papthirdparty-captain = PaP Senior Investigator
+au-14-job-name-papthirdparty-captain = PaP 高级调查员
 au-14-job-prefix-papthirdparty-captain = PaP SInv
 
-au-14-job-name-papthirdparty-observer = Interstellar Human Rights Observer
-au14-papthirdparty-description-observer = Through hard work, you have managed to make your way onto the frontier alongside a PaP investigation group to document and record any atrocities that may be occurring in this dark sector of space. It’s partly a PR stunt, but it’s important work. In an emergency, you may also be able to provide medical aid to those in need.
+au-14-job-name-papthirdparty-observer = 星际人权观察员
+au14-papthirdparty-description-observer = 通过辛勤工作，你成功跟随PaP调查组来到边疆，记录和记载这个黑暗星域中可能正在发生的暴行。这在一定程度上是公关噱头，但也是重要的工作。在紧急情况下，你也可以为有需要的人提供医疗援助。
 au-14-job-prefix-papthirdparty-observer = PaP Obs
 
-au14-papthirdparty-greeting = You are member of People's armed Police of UPP.
+au14-papthirdparty-greeting = 你是UPP人民武装警察的成员。
 
-    You have been dispatched to investigate colony you are making way to.
+    你已被派遣去调查你正在前往的殖民地。
 
-    You have friendly to GOVFOR, neutral to civilians and hostile to CLF.
+    你对GOVFOR友好，对平民中立，对CLF敌对。
 
-au-14-job-name-upptd-squadleader = Squad Leader
+au-14-job-name-upptd-squadleader = 班长
 au-14-job-prefix-upptd-squadleader = TD SL
-au-14-job-name-upptd-rifleman = Rifleman
+au-14-job-name-upptd-rifleman = 步枪手
 au-14-job-prefix-upptd-rifleman = TD RFN
-au-14-job-name-upptd-loader = Loader
+au-14-job-name-upptd-loader = 装填手
 au-14-job-prefix-upptd-loader = TD LOAD
-au14-upptd-description = You are a member of UPP's Territorial Defense. You were on patrol and.. Well... Now you are lost. Find your command and follow their orders.
+au14-upptd-description = 你是UPP领土防卫队的成员。你正在巡逻，然后……好吧……现在你迷路了。找到你的指挥部并听从他们的命令。
 
-au14-upptd-greeting = You are member of UPP's Territorial Defense.
+au14-upptd-greeting = 你是UPP领土防卫队的成员。
 
-    You have been dispatched to patrol but got lost.
-    Find any local command and join their forces.
-    You have friendly to UPP and CCA, neutral to civilians and other countries, and hostile to CLF.
+    你被派遣去巡逻但迷路了。
+    找到任何当地指挥部并加入他们的部队。
+    你对UPP和CCA友好，对平民和其他国家中立，对CLF敌对。
 
-au14-professorvonbandolier-rules = Blast! No sign of proper game for weeks, and that was your last cup of good tea.
+au14-professorvonbandolier-rules = 该死！好几周都没有像样的猎物了，而且那是你最后一杯好茶。
 
-    You have no allies or allegiences to any faction.
-    Set up in the local area - find, track, and hunt your chosen game.
-    Spare those not worth the hunt, unless they make themselves a problem.
+    你没有任何盟友或对任何派系的效忠。
+    在当地区域安顿下来——寻找、追踪并猎杀你选定的猎物。
+    放过那些不值得猎杀的人，除非他们自己找麻烦。
 
-au14-forecon-rules = You are a member of USCMC FORECON! You do not remember what happened or what is happening in round.
+au14-forecon-rules = 你是USCMC FORECON的成员！你不记得回合中发生了什么或正在发生什么。
 
-au14-forecon-greeting = You are a member of USCMC elite FORECON special forces unit!
+au14-forecon-greeting = 你是USCMC精英FORECON特种部队的成员！
 
-    Your last mission was disastrous, you lost contact with your mothership and command.
+    你的上次任务以灾难告终，你与母舰和指挥部失去了联系。
 
-    Your supplies are running low, and only by your adaptability you managed you survive.
+    你的补给即将耗尽，仅凭你的适应能力才得以幸存。
 
-    Ensure survival of yourself and your squadmates and contact nearest friendly command.
+    确保你自己和战友的生存，并联系最近的友方指挥部。
 
-    You are not hostile to the UA and TWE and neutral to other countries!
+    你对UA和TWE不敌对，对其他国家中立！
 
-au14-forecon-detachment-greeting = You are a member of USCMC elite FORECON special forces unit!
+au14-forecon-detachment-greeting = 你是USCMC精英FORECON特种部队的成员！
 
-    You were dispatched to GOVFOR. Report to command for further orders.
+    你被派遣至GOVFOR。向指挥部报到以获取进一步命令。
 
-    You are part of GOVFOR!
+    你是GOVFOR的一部分！
 
-au14-forecon-detachment-rules = You were dispatched to GOVFOR. Report to command for further orders.
+au14-forecon-detachment-rules = 你被派遣至GOVFOR。向指挥部报到以获取进一步命令。
 
-rmc-job-description-forecon-detachment = You are a member or USCMC FORECON. You were dispatched to GOVFOR. Report to command for further orders.
+rmc-job-description-forecon-detachment = 你是USCMC FORECON的成员。你被派遣至GOVFOR。向指挥部报到以获取进一步命令。
 
-au14-job-name-forecon-spotter = Spotter
+au14-job-name-forecon-spotter = 观察员
 au14-job-prefix-forecon-spotter = SPOT
 
-au-14-job-name-uacg-squadleader = Lost Squad Leader
+au-14-job-name-uacg-squadleader = 失散班长
 au-14-job-prefix-uacg-squadleader = Lost CG SL
 
-au-14-job-name-uacg-rifleman = Lost Rifleman
+au-14-job-name-uacg-rifleman = 失散步枪手
 au-14-job-prefix-uacg-rifleman = CG RFN
 
-au-14-job-name-uacg-ammobearer = Lost Ammo Bearer
+au-14-job-name-uacg-ammobearer = 失散弹药手
 au-14-job-prefix-uacg-ammobearer = CG AB
 
-au14-uacg-rules = You are a Government Forces Third Party! You are friendly to GOVFOR forces and neutral to civilians. This third party asks for a slightly higher level of roleplay than others! Please keep this in mind.
-au14-uacg-description = Your squad was separated from your platoon whilst on a short range patrol from your FOB, when extreme weather had veered you off course. Relink with Government Forces with those who remain.
+au14-uacg-rules = 你是政府军第三方！你对GOVFOR部队友好，对平民中立。此第三方要求比其他角色稍高的角色扮演水平！请牢记这一点。
+au14-uacg-description = 你的小队在从前进基地进行短程巡逻时与排走散，极端天气使你们偏离了路线。与剩余人员一起重新联系政府军。
 
-au14-uacg-greeting = You are a member of UACG patrol!
+au14-uacg-greeting = 你是UACG巡逻队的成员！
 
-    You were patrolling and got lost. Report to local command for further orders.
+    你正在巡逻然后迷路了。向当地指挥部报到以获取进一步命令。
 
-    You are part of GOVFOR!
+    你是GOVFOR的一部分！
 
-au14-usarmy-greeting = You are a member of US Army 1st cavalry division!
+au14-usarmy-greeting = 你是美国陆军第一骑兵师的成员！
 
-    During your last mission you lost contact with HQ.
+    在上次任务中你与总部失去了联系。
 
-    You are aware of the threat.
+    你知晓威胁的存在。
 
-    Your objective is to eliminate the threat.
+    你的目标是消灭威胁。
 
-    You are friendly to UA and neutral to other countries.
+    你对UA友好，对其他国家中立。
 
-au14-usarmy-rules = You are a member of US Army! You do not remember what happened or what is happening in round.
+au14-usarmy-rules = 你是美国陆军的成员！你不记得回合中发生了什么或正在发生什么。
 
-rmc-squad-info-USArmyCommandingOfficer = US Army Commanding Officer
+rmc-squad-info-USArmyCommandingOfficer = 美国陆军指挥官
 
-au14-job-name-usarmy-trooper = Trooper
+au14-job-name-usarmy-trooper = 士兵
 au14-job-prefix-usarmy-trooper = TRP
-au14-job-name-usarmy-trooper-lat = Anti Tank Trooper
+au14-job-name-usarmy-trooper-lat = 反装甲士兵
 au14-job-prefix-usarmy-trooper-lat = LAT
-au14-job-name-usarmy-cet = Combat Engineering Technician
+au14-job-name-usarmy-cet = 战斗工程技术员
 au14-job-prefix-usarmy-cet = CET
-au14-job-name-usarmy-cmt = Combat Medical Technician
+au14-job-name-usarmy-cmt = 战斗医疗技术员
 au14-job-prefix-usarmy-cmt = CMT
-au14-job-name-usarmy-hg = Heavy Gunner
+au14-job-name-usarmy-hg = 重机枪手
 au14-job-prefix-usarmy-hg = HG
-au14-job-description-usarmy = You are a member of US Army. Follow your objectives and achieve victory.
+au14-job-description-usarmy = 你是美国陆军的成员。遵循你的目标并取得胜利。
 
-au14-job-name-usarmy-tankcommander = Tank Commander
+au14-job-name-usarmy-tankcommander = 坦克车长
 au14-job-prefix-usarmy-tankcommander = TC
-au14-job-name-usarmy-tankdriver = Tank Driver
+au14-job-name-usarmy-tankdriver = 坦克驾驶员
 au14-job-prefix-usarmy-tankdriver = TD
-au14-job-name-usarmy-tankgunner = Tank Gunner
+au14-job-name-usarmy-tankgunner = 坦克炮手
 au14-job-prefix-usarmy-tankgunner = TG
-au14-job-name-usarmy-tankloader = Tank Loader
+au14-job-name-usarmy-tankloader = 坦克装填手
 au14-job-prefix-usarmy-tankloader = TLOAD
-au14-job-description-usarmy-tankcrew = You are a member of US Army 32nd Armored Division. You lost contact with HQ and your tank got in the mud. Contact nearest friendly command.
+au14-job-description-usarmy-tankcrew = 你是美国陆军第32装甲师的成员。你与总部失去了联系，你的坦克陷入了泥中。联系最近的友方指挥部。
 
-au14-usarmy-tank-greeting = You are a member of US Army 32nd Armored Division!
+au14-usarmy-tank-greeting = 你是美国陆军第32装甲师的成员！
 
-    You lost contact with HQ, and your tank got into the mud so you abandoned it.
+    你与总部失去了联系，你的坦克陷入了泥中，所以你放弃了它。
 
-    Contact and join nearest friendly forces.
+    联系并加入最近的友方部队。
 
-    You are friendly to UA and neutral to other countries.
+    你对UA友好，对其他国家中立。
 
-au14-usarmy-armored-greeting = You are a member of US Army 32nd Armored Division!
+au14-usarmy-armored-greeting = 你是美国陆军第32装甲师的成员！
 
-    You were dispatched to aid GOVFOR forces in the AO!
+    你被派遣去协助作战区域内的GOVFOR部队！
 
-    Get ready for action and report to the GOVFOR Commanding Officer!
+    做好准备并向GOVFOR指挥官报到！
 
-    You are friendly to GOVFOR, neutral to civilians and hostile to CLF!
+    你对GOVFOR友好，对平民中立，对CLF敌对！
 
-au14-job-description-forecon-killteam = You are a member of FORECON Kill Team. Assasinate your target.
+au14-job-description-forecon-killteam = 你是FORECON击杀小队的成员。暗杀你的目标。
 
-au14-job-description-forecon-killteam-greeting = You are a member of USCMC elite FORECON special forces unit!
+au14-job-description-forecon-killteam-greeting = 你是USCMC精英FORECON特种部队的成员！
 
-    You are a member of Scout Sniper's Kill Team. You were ordered to assasinate High Valuable Target.
-    (If admins did not order you anything, you are to assasinate Colony Admin. Reasoning from High Command was not disclosed to you)
+    你是侦察狙击手击杀小队的成员。你受命暗杀高价值目标。
+    （如果管理员没有给你任何命令，你的任务是暗杀殖民地管理员。来自最高指挥部的理由未向你披露）
 
-    You are NOT a part of GOVFOR, but do not be overly agressive to them. Do whatever is needed to succeed in your mission.
+    你不是GOVFOR的一部分，但不要对他们过于激进。不惜一切代价完成任务。
 
-au14-forecon-killteam-rules = You do not know what is going on in round. Your main goal is to assasinate the target. You are not a part of GOVFOR but do not be overly agressive to them.
+au14-forecon-killteam-rules = 你不知道回合中正在发生什么。你的主要目标是暗杀目标。你不是GOVFOR的一部分，但不要对他们过于激进。
 
-au14-job-description-forecon-firstrecon = You are a member USCMC FORECON 1st Battalion. You are here to investigate WMD.
+au14-job-description-forecon-firstrecon = 你是USCMC FORECON第一营的成员。你来此调查大规模杀伤性武器。
 
-au14-job-description-forecon-firstrecon-greeting = You are a member of USCMC elite FORECON special forces unit!
+au14-job-description-forecon-firstrecon-greeting = 你是USCMC精英FORECON特种部队的成员！
 
-    You are a member of 1st Reconnaissance Battalion.
-    Your Intelligence reports a possibility of Weapons of Mass Destruction (WMD).
-    Find and secure any WMD.
+    你是第一侦察营的成员。
+    你的情报报告可能存在大规模杀伤性武器（WMD）。
+    找到并确保任何WMD的安全。
 
-    Your Right of Engagement are to ONLY return fire. Never attack until provoked. If you are sure of ill intentions, you may fire first within reasonable limits.
-    Godfather is watching you!
+    你的交战规则是仅还击。在未被挑衅前绝不攻击。如果你确信对方有恶意，可以在合理范围内先开火。
+    教父在看着你！
 
-    You are NOT a part of GOVFOR, but you are not hostile until provoked. Your mission is securing or eliminating WMD.
+    你不是GOVFOR的一部分，但在被挑衅前不敌对。你的任务是确保或消除WMD。
 
-au14-job-name-forecon-corpsman = Hospital Corpsman 2. Class
+au14-job-name-forecon-corpsman = 医院卫生兵二级
 au14-job-prefix-forecon-corpsman = HC2
 
-au14-wyht-description = You are a part of Weyland-Yutani Hazard Transportation party. Transport your crate to the nearest WeYu facility or make one to perform crazy experiments!
+au14-wyht-description = 你是维兰德-汤谷危险品运输队的一员。将你的板条箱运送到最近的WeYu设施，或者自己建一个来进行疯狂实验！
 
-au14-wyht-greeting = You are a part of Weyland-Yutani Hazard Transportation party.
+au14-wyht-greeting = 你是维兰德-汤谷危险品运输队的一员。
 
-    Transport your crate to the nearest WeYu facility. If none present, you are equipped with medical tents.
+    将你的板条箱运送到最近的WeYu设施。如果没有，你配备了医疗帐篷。
 
-    Your goal is to perform experiment with given equipment.
+    你的目标是使用给定设备进行实验。
 
-    Company's profit is your goal.
+    公司的利润是你的目标。
 
-    Weyland-Yutani - building better worlds.
+    维兰德-汤谷——建设更美好的世界。
 
-au14-pmcparty-description = You are a part of Weyland-Yutani PMC party! You were called for a special mission in the area, follow your orders.
-au14-pmcparty-greeting = You are a part of Weyland-Yutani PMC party!
+au14-pmcparty-description = 你是维兰德-汤谷PMC小队的一员！你被召唤到该区域执行特殊任务，遵循你的命令。
+au14-pmcparty-greeting = 你是维兰德-汤谷PMC小队的一员！
 
-    You were called for a special mission in the area, follow your orders.
+    你被召唤到该区域执行特殊任务，遵循你的命令。
 
-    Company's profit is your goal.
+    公司的利润是你的目标。
 
-    Weyland-Yutani - building better worlds.
-au14-job-name-wypmc = Private Military Contractor
-au14-job-name-wypmc-contractor = PMC Contractor
-au14-job-name-wypmc-leader = PMC Leader
-au14-job-name-wypmc-smartgun-operator = PMC Smartgun Operator
-au14-job-name-wypmc-sniper = PMC Sniper
-au14-job-name-wypmc-engineer = PMC Combat Engineer
+    维兰德-汤谷——建设更美好的世界。
+au14-job-name-wypmc = 私人军事承包商
+au14-job-name-wypmc-contractor = PMC 契约特工
+au14-job-name-wypmc-leader = PMC 队长
+au14-job-name-wypmc-smartgun-operator = PMC 智能枪操作员
+au14-job-name-wypmc-sniper = PMC 狙击手
+au14-job-name-wypmc-engineer = PMC 战斗工程师
 
-au14-job-name-ipie-lawyer = IPIE Lawyer
-au14-job-name-ipie-ppo = IPIE Personal Protection Officer
-au14-ipie-lawyer-description = You are Intelectual Property Infringement Enforcement Lawyer of Weyland-Yutani Corporation. Defend Corporation's rights!
-au14-ipie-lawyer-greeting = You are Intelectual Property Infringement Enforcement Lawyer of Weyland-Yutani Corporation.
+au14-job-name-ipie-lawyer = IPIE 律师
+au14-job-name-ipie-ppo = IPIE 个人保护官
+au14-ipie-lawyer-description = 你是维兰德-汤谷公司的知识产权侵权执法律师。捍卫公司的权利！
+au14-ipie-lawyer-greeting = 你是维兰德-汤谷公司的知识产权侵权执法律师。
 
-    You were called to investigate Intelectual Property Infringement.
-    If you spawned as a synth, play as normal. You are undercover.
-    Find any inconsistencies and sue everyone!
+    你被召唤来调查知识产权侵权。
+    如果你以合成人身份生成，正常游玩。你是卧底。
+    找出任何不一致之处并起诉所有人！
 
-    Company's profit is your goal.
+    公司的利润是你的目标。
 
-    Weyland-Yutani - building better worlds.
+    维兰德-汤谷——建设更美好的世界。
 
-au14-ipie-ppo-description = You are Weyland-Yutani's Personal Protection Officer. Protect IPIE Lawyer with your life.
-au14-ipie-greeting = You are Weyland-Yutani's Personal Protection Officer. Protect IPIE Lawyer with your life.
+au14-ipie-ppo-description = 你是维兰德-汤谷的个人保护官。用你的生命保护IPIE律师。
+au14-ipie-greeting = 你是维兰德-汤谷的个人保护官。用你的生命保护IPIE律师。
 
-    You were called to investigate Intelectual Property Infringement.
-    Assist the IPIE Lawyer and ensure their safety.
+    你被召唤来调查知识产权侵权。
+    协助IPIE律师并确保他们的安全。
 
-    Company's profit is your goal.
+    公司的利润是你的目标。
 
-    Weyland-Yutani - building better worlds.
+    维兰德-汤谷——建设更美好的世界。
 
-au14-lacncommando-description = You have been loaned to the United Americas Allied Command by the LACN for a special mission on this planet, the details of which have not been disclosed to you. You have been ordered to investigate the area and report to the local GOVFOR command.
+au14-lacncommando-description = 你被LACN借调至联合美洲盟军司令部，在此星球执行一项特殊任务，任务详情尚未向你披露。你已受命调查该区域并向当地GOVFOR指挥部报告。
 
-au14-job-name-vai-mercenary = Contractor
-au14-vai-mercenary-description = You are Vanguard's Arrow Incorporated Mercenary. Follow your contract. For details, consult your primer.
+au14-job-name-vai-mercenary = 契约特工
+au14-vai-mercenary-description = 你是先锋之箭公司的雇佣兵。遵循你的合同。详情请查阅你的入门手册。
 au14-job-prefix-vai-mercenary = VAIC
 
-au14-job-name-vai-teamleader = Team Leader
+au14-job-name-vai-teamleader = 队长
 au14-job-prefix-vai-teamleader = VAITL
 
-au14-job-name-vai-medic = Medical Specialist
+au14-job-name-vai-medic = 医疗专家
 au14-job-prefix-vai-medic = VAIM
 
-au14-job-name-vai-engi = Engineering Specialist
+au14-job-name-vai-engi = 工程专家
 au14-job-prefix-vai-engi = VAIE
 
-au14-job-name-vai-machinegunner = Machinegunner
+au14-job-name-vai-machinegunner = 机枪手
 au14-job-prefix-vai-machinegunner = VAIMG
 
-au14-vaipo-greeting = You are part of Vanguard's Arrow Incorporated Primary Operations.
+au14-vaipo-greeting = 你是先锋之箭公司主要作战部的一部分。
 
-    You received a call from local UA Ambassador and to investigate it.
-    Ensure safety of Ambassador for all cost.
+    你收到了当地UA大使的呼叫并前往调查。
+    不惜一切代价确保大使的安全。
 
-    You are FRIENDLY to all UA units.
+    你对所有UA单位友好。
 
-au14-vaiso-greeting = You are part of Vanguard's Arrow Incorporated Special Operations.
+au14-vaiso-greeting = 你是先锋之箭公司特种作战部的一部分。
 
-    You are tasked unsavory operations, black ops, and the anti-WY work.
+    你负责不光彩的行动、黑色行动以及反WY工作。
 
-    You received intel from local CLF insurgents on Weyland-Yutani research facility.
+    你从当地CLF叛乱分子那里收到了关于维兰德-汤谷研究设施的情报。
 
-    You are to raid it and retrieve any valuable intel.
+    你要突袭它并获取任何有价值的情报。
 
-    Do it quickly, and dont draw unnecessery attention.
+    快速行动，不要引起不必要的注意。
 
-    Remember, you are not here, never was and never will.
+    记住，你不在这里，从未在这里，也永远不会在这里。
 
-    You are FRIENDLY to all UA units.
+    你对所有UA单位友好。
 
-au14-vaisp-greeting = You are part of Vanguard's Arrow Incorporated.
+au14-vaisp-greeting = 你是先锋之箭公司的一部分。
 
-    You are a part of Medical team called by UA Ambassador.
+    你是UA大使召唤的医疗队的一部分。
 
-    Ensure their safety at all cost.
+    不惜一切代价确保他们的安全。
 
-    You are FRIENDLY to all UA units.
+    你对所有UA单位友好。
 
-au14-prodigyparty-description = You are a part of "Prodigy Armed Repair Team" (PART)! You were called for a special mission in the area, follow your orders.
+au14-prodigyparty-description = 你是“奇才武装维修队”（PART）的一员！你被召唤到该区域执行特殊任务，遵循你的命令。
 
-au14-prodigyparty-greeting = You are a part of "Prodigy Armed Repair Team" (PART) party!
+au14-prodigyparty-greeting = 你是“奇才武装维修队”（PART）小队的一员！
 
-    You were called for a special mission in the area, follow your orders.
+    你被召唤到该区域执行特殊任务，遵循你的命令。
 
-    Protecting your hiring member is a top priority along with your mission.
+    保护你的雇佣方成员与你的任务同等重要。
 
-    Prodigy Security - Repairing Our World
+    奇才安保——修复我们的世界
 
-    You are neutral to all WeYu units
+    你对所有WeYu单位中立
 
-au14-prodigyextract-description = You are a Extraction Ship team called in by a Prodigy 3rd Party! Use your ship to get your Contractors out of there!
+au14-prodigyextract-description = 你是被奇才第三方召唤的撤离飞船小队！使用你的飞船将你的契约特工撤离那里！
 
-au14-prodigyextract-greeting = You are a part of "Prodigy Extraction Team" (PET)
+au14-prodigyextract-greeting = 你是“奇才撤离队”（PET）的一员
 
-    You were called for an extraction mission in the area, follow your orders.
+    你被召唤到该区域执行撤离任务，遵循你的命令。
 
-    Protecting your calling team and extracting them is your top priority
+    保护你的呼叫方小队并撤离他们是你的首要任务
 
-    Prodigy Security - Repairing Our World
+    奇才安保——修复我们的世界
 
-    You are neutral to all WeYu units
+    你对所有WeYu单位中立
 
-au14-prodigyhazard-description = You are a Hazard Response Team called in for a special mission involving a Chemical, Biological, Ultraviolet, Radiological, and Nuclear tasking.
+au14-prodigyhazard-description = 你是被召唤执行涉及化学、生物、紫外线、放射性和核任务特殊行动的危险响应队。
 
-au14-prodigyhazard-greeting = You are a part of "Prodigy Hazard Response Team" (HRT)
+au14-prodigyhazard-greeting = 你是“奇才危险响应队”（HRT）的一员
 
-    You were called for special mission involving a Chemical, Biological, Ultraviolet, Radiological, and Nuclear tasking.
+    你被召唤执行涉及化学、生物、紫外线、放射性和核任务特殊行动。
 
-    Completing your mission is your top priority.
+    完成任务是你的首要任务。
 
-    Prodigy Security - Repairing Our World
+    奇才安保——修复我们的世界
 
-    You are neutral to all WeYu units
+    你对所有WeYu单位中立
 
-au14-prodigyrescue-description = You are a Search and Rescue team in the local area that responded to a distress signal in the local area, find out who needs help.
+au14-prodigyrescue-description = 你是当地的一支搜救队，响应了当地的求救信号，找出谁需要帮助。
 
-au14-prodigyrescue-greeting = You are a part of "Prodigy Tactical Advanced Search Squad" (TARS)
+au14-prodigyrescue-greeting = 你是“奇才战术高级搜索小队”（TARS）的一员
 
-    You are a Search and Rescue team in the local area that responded to a distress signal in the local area, find out who needs help.
+    你是当地的一支搜救队，响应了当地的求救信号，找出谁需要帮助。
 
-    Completing your mission is your top priority.
+    完成任务是你的首要任务。
 
-    Prodigy Security - Repairing Our World
+    奇才安保——修复我们的世界
 
-    You are neutral to all WeYu units
+    你对所有WeYu单位中立
 
-au14-job-name-msg-commander = Commander
-au14-job-name-msg-watchstander = Watch Stander
+au14-job-name-msg-commander = 指挥官
+au14-job-name-msg-watchstander = 值班员
 au14-job-prefix-msg-watchstander = WS
-au14-job-description-msg = You are a part of Marine Security Guard. You were called to ensure safety of UA Embassy in the colony.
+au14-job-description-msg = 你是海军陆战队警卫队的成员。你被召唤来确保殖民地上UA大使馆的安全。
 
-au14-job-greeting-msg = You are a part of Marine Security Guard.
-    You were called to ensure safety of UA Embassy on the colony.
-    You are NOT a part of GOVFOR nor hostile to them.
+au14-job-greeting-msg = 你是海军陆战队警卫队的成员。
+    你被召唤来确保殖民地上UA大使馆的安全。
+    你不是GOVFOR的一部分，也不对他们敌对。
 
-au14-wysurv-greeting = Everything has gone wrong, this is a complete disaster.
+au14-wysurv-greeting = 一切都出了问题，这是一场彻底的灾难。
 
-    Ensure your survival at all costs, the knowledge you posess was paid for with many lifes.
+    不惜一切代价确保你的生存，你所拥有的知识是用许多生命换来的。
 
-    Company's profit is your goal.
+    公司的利润是你的目标。
 
-    Weyland-Yutani - building better worlds.
+    维兰德-汤谷——建设更美好的世界。
 
-au14-wysurv-description = You are whats left of the local Weyland-Yutani employees. Survive and ensure your knowledge reaches the company.
+au14-wysurv-description = 你是当地维兰德-汤谷员工的幸存者。生存下去并确保你的知识传达到公司。
 
-au14-job-name-tweiasf-paratrooper = Rifleman
-au14-job-name-tweiasf-ce = Assault Engineer
-au14-job-name-tweiasf-cm = Medical Technician
-au14-job-name-tweiasf-tl = Team Lead
+au14-job-name-tweiasf-paratrooper = 步枪手
+au14-job-name-tweiasf-ce = 突击工程师
+au14-job-name-tweiasf-cm = 医疗技术员
+au14-job-name-tweiasf-tl = 队长
 
 au14-job-prefix-iasf = 24/PARA
 au14-job-prefix-tweiasf-sl = 24/PARA TL
 
-au14-job-name-tweiasf-co = Commander
+au14-job-name-tweiasf-co = 指挥官
 au14-job-prefix-tweiasf-co = 24/PARA CDR
-au14-job-name-tweiasf-pl = Fleet Air Arm Pilot
+au14-job-name-tweiasf-pl = 舰队航空兵飞行员
 au14-job-prefix-tweiasf-pl = 24/PARA PL
 
-au14-job-description-twepara = You are a member of the Imperial Armed Space Forces 24th Parachute Regiment. Follow your orders.
+au14-job-description-twepara = 你是帝国武装太空部队第24伞兵团的成员。遵循你的命令。
 
-au14-job-description-IASFsurv = You are a stranded member of the IASF 24th Parachute Regiment. Fight for Empress, country and also your life.
-au14-job-description-IASFsurv-bosenmori = You are a stranded member of the IASF 24th Parachute Regiment who was training in the areas around the colony of Bosenmori Basho. Fight for your Empress, country and also your life.
+au14-job-description-IASFsurv = 你是IASF第24伞兵团的失散成员。为女皇、国家以及你自己的生命而战。
+au14-job-description-IASFsurv-bosenmori = 你是IASF第24伞兵团的失散成员，曾在Bosenmori Basho殖民地周边地区训练。为你的女皇、国家以及你自己的生命而战。
 
-au14-job-greeting-IASFsurv = You have been stranded in this colony, dropship out of fuel and almost out of ammunition
-    Most of your squad is dead, you are all thats left... For now
+au14-job-greeting-IASFsurv = 你被困在这个殖民地，运输飞船燃料耗尽，弹药也几乎用尽
+    你的小队大部分已经阵亡，你是仅剩的……目前如此
 
-    You are a member of the Three World Empires Imperial Armed Space Forces, you are NEUTRAL to civilians and other countries and HOSTILE to the CLF.
+    你是三世界帝国帝国武装太空部队的成员，你对平民和其他国家中立，对CLF敌对。
 
-au14-job-rules-IASFsurv = You are a member of the TWEs IASF, you are NEUTRAL to civilians and other countries and HOSTILE to the CLF.
-    You are fully aware of the threat after having witnessed it for several days.
+au14-job-rules-IASFsurv = 你是TWE IASF的成员，你对平民和其他国家中立，对CLF敌对。
+    在目睹威胁数天后，你完全知晓其存在。

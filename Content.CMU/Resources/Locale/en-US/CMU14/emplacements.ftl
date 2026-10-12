@@ -1,15 +1,15 @@
-emplacement-mount-CMUMachineGunKramerAutocannon-name = Kramer autocannon
-emplacement-mount-CMUMachineGunKramerAutocannon-description = The disassembled Kramer 30mm autocannon, with its tripod folded up and unable to fire.
-emplacement-mount-CMUMachineGunKramerAutocannon-description-mounted = A deployable 30mm autocannon fielded by the LACN. It fires one heavy explosive round per pull of the trigger, trading rate of fire for the punch to break light vehicles and fortifications.
+emplacement-mount-CMUMachineGunKramerAutocannon-name = Kramer 自动加农炮
+emplacement-mount-CMUMachineGunKramerAutocannon-description = 拆解状态的 Kramer 30mm 自动加农炮，三脚架已折叠，无法开火。
+emplacement-mount-CMUMachineGunKramerAutocannon-description-mounted = LACN 列装的可部署 30mm 自动加农炮。每次扣动扳机发射一发重型爆炸弹，以射速换取足以击穿轻型载具和防御工事的威力。
 
-emplacement-mount-CMUMachineGunKramerEmplaced-name = Kramer emplaced machine gun
-emplacement-mount-CMUMachineGunKramerEmplaced-description = The disassembled Kramer emplaced machine gun, with its tripod folded up and unable to fire.
-emplacement-mount-CMUMachineGunKramerEmplaced-description-mounted = A Kramer Light Support Weapon built onto a folding tripod. The fixed mount keeps it as steady as a deployed bipod, and its IFF lock refuses to fire while friendlies are in the line of fire. Takes Kramer LSW box magazines.
+emplacement-mount-CMUMachineGunKramerEmplaced-name = Kramer 固定式机枪
+emplacement-mount-CMUMachineGunKramerEmplaced-description = 拆解状态的 Kramer 固定式机枪，三脚架已折叠，无法开火。
+emplacement-mount-CMUMachineGunKramerEmplaced-description-mounted = 安装在折叠三脚架上的 Kramer 轻型支援武器。固定支架使其与展开的两脚架一样稳定，其 IFF 锁定会在友军处于射线上时拒绝开火。使用 Kramer LSW 弹匣。
 
-emplacement-mount-CMUMachineGunM2CDropshipLoaded-name = M2C heavy machine gun
-emplacement-mount-CMUMachineGunM2CDropshipLoaded-description = The disassembled M2C HMG, with its telescopic tripods folded up and unable to fire.
-emplacement-mount-CMUMachineGunM2CDropshipLoaded-description-mounted = A dropship-mounted M2C heavy machine gun. The M2C 'Chimp' HB is a modified M2 HB reconfigured to fire 10x28 Caseless Tungsten rounds for USCM use.
+emplacement-mount-CMUMachineGunM2CDropshipLoaded-name = M2C 重机枪
+emplacement-mount-CMUMachineGunM2CDropshipLoaded-description = 拆解状态的 M2C 重机枪，伸缩三脚架已折叠，无法开火。
+emplacement-mount-CMUMachineGunM2CDropshipLoaded-description-mounted = 安装在空投艇上的 M2C 重机枪。M2C“Chimp”HB 是经过改装的 M2 HB，重新配置为发射 10x28 无壳钨弹，供 USCM 使用。
 
-emplacement-mount-RMCSmartGunMountedStatic-name = ML66D mount
-emplacement-mount-RMCSmartGunMountedStatic-description = A foldable mount for the ML66D, provides stability to the ML66D.
-emplacement-mount-RMCSmartGunMountedStatic-description-mounted = A deployable, heavy machine gun. It fires specialized tungsten rounds for increased armor penetration.
+emplacement-mount-RMCSmartGunMountedStatic-name = ML66D 支架
+emplacement-mount-RMCSmartGunMountedStatic-description = ML66D 的可折叠支架，为 ML66D 提供稳定性。
+emplacement-mount-RMCSmartGunMountedStatic-description-mounted = 可部署的重型机枪。它发射专用钨弹以提高穿甲能力。

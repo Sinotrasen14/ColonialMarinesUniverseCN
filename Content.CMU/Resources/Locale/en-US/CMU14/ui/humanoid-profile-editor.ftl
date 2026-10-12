@@ -1,1 +1,1 @@
-cmu-humanoid-profile-editor-segment-flightcrew = Flight Crew
+cmu-humanoid-profile-editor-segment-flightcrew = 飞行船员

@@ -1,19 +1,19 @@
-﻿cm-pill-contents-ethylredoxrazine = Removes confusion, drowsiness, stuttering, blurry vision, blindness, dizziness, and jitteriness. Removes 3u ethanol and other alcohols from the body. Reacts with ethanol to turn into water.
-cm-pill-contents-dermaline = Heals 1.5 burn damage per second. The more effective cousin of Kelotane.
-cm-pill-contents-meralyne = Heals 1.5 brute damage per second. The more effective cousin of Bicaridine.
-cm-pill-contents-imidazoline = Heals 1 eye damage. Fixes blurry vision and blindness.
-cm-pill-contents-cryoxadone = ONLY FUNCTIONS AT LOW TEMPERATURES. Heals 3 radiation damage. Heals 3 brute damage. Heals 3 burn damage. Heals 3 toxin damage. Heals 1 oxygen damage.
-cm-pill-contents-leporazine = Attempts to stabilize patient's temperature. Used to treat extreme cold or extreme heat exposure.
-cm-pill-contents-albuterol = Heals 4 oxygen damage per second. The more effective cousin of Dexalin.
-cm-pill-contents-oxycodone = A heavy painkiller, usually used in surgical procedures. Reduces pain heavily.
-cm-pill-contents-tramadol = A mid-level painkiller. Reduces pain.
-cm-pill-contents-paracetamol = A light painkillers. Reduces a light amount of pain.
-cm-pill-contents-hepatocytin = Heals liver damage.
-cm-pill-contents-pulmovine = Heals lung damage.
-cm-pill-contents-nephronate = Heals kidney damage.
-cm-pill-contents-cardiocaine = Heals heart damage.
-cm-pill-contents-alkysine = Heals brain damage.
-cm-pill-contents-osteocalc = Heals bone damage.
+﻿cm-pill-contents-ethylredoxrazine = 移除混乱、困倦、口吃、视力模糊、失明、眩晕和颤抖。从体内移除 3u 乙醇和其他醇类。与乙醇反应转化为水。
+cm-pill-contents-dermaline = 每秒治疗 1.5 点烧伤。Kelotane 的更有效版本。
+cm-pill-contents-meralyne = 每秒治疗 1.5 点创伤。Bicaridine 的更有效版本。
+cm-pill-contents-imidazoline = 治疗 1 点眼部损伤。修复视力模糊和失明。
+cm-pill-contents-cryoxadone = 仅在低温下生效。治疗 3 点辐射损伤。治疗 3 点创伤。治疗 3 点烧伤。治疗 3 点毒素伤。治疗 1 点缺氧损伤。
+cm-pill-contents-leporazine = 尝试稳定患者的体温。用于治疗极端寒冷或极端高温暴露。
+cm-pill-contents-albuterol = 每秒治疗 4 点缺氧损伤。Dexalin 的更有效版本。
+cm-pill-contents-oxycodone = 一种强效止痛药，通常用于外科手术。大幅减轻疼痛。
+cm-pill-contents-tramadol = 一种中效止痛药。减轻疼痛。
+cm-pill-contents-paracetamol = 一种轻度止痛药。减轻少量疼痛。
+cm-pill-contents-hepatocytin = 治疗肝脏损伤。
+cm-pill-contents-pulmovine = 治疗肺部损伤。
+cm-pill-contents-nephronate = 治疗肾脏损伤。
+cm-pill-contents-cardiocaine = 治疗心脏损伤。
+cm-pill-contents-alkysine = 治疗脑损伤。
+cm-pill-contents-osteocalc = 治疗骨骼损伤。
 
 rmc-ethylredoxrazine-container-label-text = ET
 rmc-dermaline-container-label-text = DE
@@ -32,18 +32,18 @@ rmc-nephronate-container-label-text = NE
 rmc-pulmovine-container-label-text = PE
 rmc-hepatocytin-container-label-text = HN
 
-reagent-name-albuterol = Albuterol
-reagent-desc-albuterol = Repairs 4 oxygen damage. OD of 20u.
+reagent-name-albuterol = 沙丁胺醇
+reagent-desc-albuterol = 修复 4 点缺氧损伤。过量剂量为 20u。
 
-reagent-name-cmnaloxone = Naloxone
-reagent-desc-cmnaloxone = Instantly counteracts toxin damage. Primarily used to treat overdoses.
+reagent-name-cmnaloxone = 纳洛酮
+reagent-desc-cmnaloxone = 立即中和毒素伤。主要用于治疗药物过量。
 
-au14-tq-user-popup = You apply a tourniquet to {$target}.
-au14-tq-target-popup = {$user} applies a tourniquet to you.
-au14-tq-others-popup = {$user} applies a tourniquet to {$target}.
+au14-tq-user-popup = 你对 {$target} 使用了止血带。
+au14-tq-target-popup = {$user} 对你使用了止血带。
+au14-tq-others-popup = {$user} 对 {$target} 使用了止血带。
 
-au14-hs-user-popup = You pack hemostatic gauze into {$target}'s wounds.
-au14-hs-target-popup = {$user} pack hemostatic gauze into your wounds.
-au14-hs-others-popup = {$user} packs hemostatic gauze into {$target}'s wounds.
+au14-hs-user-popup = 你将止血纱布填入 {$target} 的伤口。
+au14-hs-target-popup = {$user} 将止血纱布填入你的伤口。
+au14-hs-others-popup = {$user} 将止血纱布填入 {$target} 的伤口。
 
-au-pill-contents-speed-demon = This is speed demon, a dangerous drug
+au-pill-contents-speed-demon = 这是速魔，一种危险的药物

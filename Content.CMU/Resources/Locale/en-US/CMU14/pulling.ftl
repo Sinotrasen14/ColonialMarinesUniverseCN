@@ -1,1 +1,1 @@
-cmu-pull-aggressive-struggle-hint = The grip is too tight to just slip out of. Move to struggle free!
+cmu-pull-aggressive-struggle-hint = 抓得太紧了，没法直接滑脱。移动以挣脱！

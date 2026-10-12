@@ -1,145 +1,145 @@
-trait-category-language = Languages
+trait-category-language = 语言
 
 # ├──[ Common tongue ]────────────────────────────────────────────┤
-au14-trait-english-language-name = English Language
-au14-trait-english-language-desc = You can speak and understand English. Good day, innit'?
+au14-trait-english-language-name = 英语
+au14-trait-english-language-desc = 你能说和理解英语。日安，对吧？
 
-au14-trait-no-english-name = Forget English Language
-au14-trait-no-english-desc = Sho?
+au14-trait-no-english-name = 遗忘英语
+au14-trait-no-english-desc = 啥？
 
-au14-trait-no-language-learning-name = Language Impairment
-au14-trait-no-language-learning-desc = You are unable to learn new languages.
+au14-trait-no-language-learning-name = 语言障碍
+au14-trait-no-language-learning-desc = 你无法学习新语言。
 
-au14-trait-polyglot-name = Polyglot
-au14-trait-polyglot-desc = Languages just come to you naturally, last time you sneezed you discombobulated a verb in a dialect you've never even heard.
+au14-trait-polyglot-name = 多语通
+au14-trait-polyglot-desc = 语言对你来说浑然天成，上次你打喷嚏时，就用一种你从未听过的方言把动词给搅乱了。
 
-au14-trait-sign-name = Sign Language
-au14-trait-sign-desc = You can speak and understand sign language.
+au14-trait-sign-name = 手语
+au14-trait-sign-desc = 你能说和理解手语。
 
-au14-trait-binary-language-name = Binary Language
-au14-trait-binary-language-desc = You can decipher Binary in real-time. Sarcasm is indistinguishable from a buffer overflow exception, and social nuance is implied with parity bit endings.
+au14-trait-binary-language-name = 二进制语言
+au14-trait-binary-language-desc = 你能实时破译二进制。讽刺与缓冲区溢出异常无法区分，社交微妙之处则通过奇偶校验位结尾来暗示。
 
-au14-trait-latin-language-name = Latin Language
-au14-trait-latin-language-desc = You can speak and understand Vulgar Latin. The Romans would be marginally impressed, that is if they were still around to hear you butcher formal Latin with slang and uneducated corruption.
+au14-trait-latin-language-name = 拉丁语
+au14-trait-latin-language-desc = 你能说和理解通俗拉丁语。罗马人会略微刮目相看，前提是他们还在世，能听到你用俚语和没文化的讹变糟蹋正式拉丁语。
 
-au14-trait-spanish-language-name = Spanish Language
-au14-trait-spanish-language-desc = You can speak and understand Spanish. You now know the exact difference between “ahorita” and “ahorita”, and your tongue rolls Rs like an SGO's prized possession.
+au14-trait-spanish-language-name = 西班牙语
+au14-trait-spanish-language-desc = 你能说和理解西班牙语。你现在知道“ahorita”和“ahorita”之间的确切区别了，你的舌头弹起 R 来就像指挥部最珍视的宝贝。
 
-au14-trait-arabic-language-name = Arabic Language
-au14-trait-arabic-language-desc = You can speak and understand Arabic. Reading Abjad from right to left feels completely natural.
+au14-trait-arabic-language-name = 阿拉伯语
+au14-trait-arabic-language-desc = 你能说和理解阿拉伯语。从右到左阅读辅音音素文字感觉完全自然。
 
-au14-trait-french-language-name = French Language
-au14-trait-french-language-desc = You can speak and understand French. Complain about everything with a certain ~je ne sais quoi~, a menace behind the wheel, and your shrugs convey entire court rulings.
+au14-trait-french-language-name = 法语
+au14-trait-french-language-desc = 你能说和理解法语。带着某种~说不清道不明的味道~抱怨一切，开车时是个 menace，你的耸肩能传达整份法庭裁决。
 
-au14-trait-german-language-name = German Language
-au14-trait-german-language-desc = You can speak and understand German. Your sentences now assemble themselves into compound words of alarming length, and everything you say sounds like a command.
+au14-trait-german-language-name = 德语
+au14-trait-german-language-desc = 你能说和理解德语。你的句子现在会自动组装成长得惊人的复合词，你说的一切听起来都像命令。
 
-au14-trait-russian-language-name = Russian Language
-au14-trait-russian-language-desc = You can speak and understand Russian. The Cyrillic alphabet no longer frightens you, and you can express profound existential despair with a single but often humorously well timed "blyat".
+au14-trait-russian-language-name = 俄语
+au14-trait-russian-language-desc = 你能说和理解俄语。西里尔字母不再让你害怕，你能用一句“blyat”表达深刻的存在主义绝望，而且往往时机幽默得恰到好处。
 
-au14-trait-japanese-language-name = Japanese Language
-au14-trait-japanese-language-desc = You can speak and understand Japanese. Politeness governs you, apologetic bowing occurs automatically at appropriate angles and your inner monologue is fully subtitled.
+au14-trait-japanese-language-name = 日语
+au14-trait-japanese-language-desc = 你能说和理解日语。礼貌支配着你，道歉鞠躬会以适当角度自动发生，你的内心独白完全带字幕。
 
-au14-trait-mandarin-language-name = Mandarin Language
-au14-trait-mandarin-language-desc = You can speak and understand Mandarin. Tones no longer baffle you. A single "ma" can now mean mother, numb, horse, or curse, and you always know which one (mostly).
+au14-trait-mandarin-language-name = 普通话
+au14-trait-mandarin-language-desc = 你能说和理解普通话。声调不再让你困惑。一个“ma”现在可以意味着母亲、麻木、马或咒骂，而你总是知道是哪个（大多数时候）。
 
-au14-trait-turkish-language-name = Turkish Language
-au14-trait-turkish-language-desc = You can speak and understand Turkish. Agglutination no longer frightens you - it obeys you.
+au14-trait-turkish-language-name = 土耳其语
+au14-trait-turkish-language-desc = 你能说和理解土耳其语。黏着法不再让你害怕——它服从你。
 
-au14-trait-polish-language-name = Polish Language
-au14-trait-polish-language-desc = You can speak and understand Polish. Your tongue now survives words with more consonants than vowels.
+au14-trait-polish-language-name = 波兰语
+au14-trait-polish-language-desc = 你能说和理解波兰语。你的舌头现在能在辅音比元音还多的词中幸存下来。
 
-au14-trait-korean-language-name = Korean Language
-au14-trait-korean-language-desc = You can speak and understand Korean. You instinctively know when to bow and when to use honorifics.
+au14-trait-korean-language-name = 韩语
+au14-trait-korean-language-desc = 你能说和理解韩语。你本能地知道何时该鞠躬，何时该使用敬语。
 
 # ├──[ Alternative tongues ]──────────────────────────────────────┤
-au14-trait-portuguese-language-name = Brazilian Portuguese Language
-au14-trait-portuguese-language-desc = You can speak and understand Brazilian Portuguese. It’s not Spanish, and you will correct anyone who implies otherwise, usually with an extended nasal sigh and a short history lesson.
+au14-trait-portuguese-language-name = 巴西葡萄牙语
+au14-trait-portuguese-language-desc = 你能说和理解巴西葡萄牙语。这不是西班牙语，任何暗示相反的人你都会纠正，通常伴随着一声拉长的鼻音叹息和一段简短的历史课。
 
-au14-trait-legalese-language-name = Legalese Language
-au14-trait-legalese-language-desc = You can speak and understand Legalese. Every sentence you utter now requires three sub clauses, a disclaimer, and a binding arbitration clause.
+au14-trait-legalese-language-name = 法律术语
+au14-trait-legalese-language-desc = 你能说和理解法律术语。你说的每句话现在都需要三个从句、一份免责声明和一条有约束力的仲裁条款。
 
-au14-trait-afrikaans-language-name = Afrikaans Language
-au14-trait-afrikaans-language-desc = You can speak and understand Afrikaans. Dutch got simplified and somehow became even more direct.
+au14-trait-afrikaans-language-name = 南非荷兰语
+au14-trait-afrikaans-language-desc = 你能说和理解南非荷兰语。荷兰语被简化了，不知怎么还变得更直接了。
 
-au14-trait-albanian-language-name = Albanian Language
-au14-trait-albanian-language-desc = You can speak and understand Albanian. You are now prepared for one of Europe's most unique languages.
+au14-trait-albanian-language-name = 阿尔巴尼亚语
+au14-trait-albanian-language-desc = 你能说和理解阿尔巴尼亚语。你现在已经为欧洲最独特的语言之一做好了准备。
 
-au14-trait-czech-language-name = Czech Language
-au14-trait-czech-language-desc = You can speak and understand Czech. You can finally order a beer with complete confidence.
+au14-trait-czech-language-name = 捷克语
+au14-trait-czech-language-desc = 你能说和理解捷克语。你终于可以充满信心地点啤酒了。
 
-au14-trait-dutch-language-name = Dutch Language
-au14-trait-dutch-language-desc = You can speak and understand Dutch. Clearing your throat is no longer mistaken for speaking.
+au14-trait-dutch-language-name = 荷兰语
+au14-trait-dutch-language-desc = 你能说和理解荷兰语。清嗓子不再被误认为是在说话。
 
-au14-trait-esperanto-language-name = Esperanto Language
-au14-trait-esperanto-language-desc = You can speak and understand Esperanto. At last, a language where the grammar actually follows the rules.
+au14-trait-esperanto-language-name = 世界语
+au14-trait-esperanto-language-desc = 你能说和理解世界语。终于有了一门语法真正遵循规则的语言。
 
-au14-trait-filipino-language-name = Filipino Language
-au14-trait-filipino-language-desc = You can speak and understand Filipino. You are ready for friendly conversations and endless karaoke nights.
+au14-trait-filipino-language-name = 菲律宾语
+au14-trait-filipino-language-desc = 你能说和理解菲律宾语。你已经准备好进行友好交谈和无数个卡拉 OK 之夜了。
 
-au14-trait-finnish-language-name = Finnish Language
-au14-trait-finnish-language-desc = You can speak and understand Finnish. Fifteen grammatical cases? Sounds perfectly reasonable.
+au14-trait-finnish-language-name = 芬兰语
+au14-trait-finnish-language-desc = 你能说和理解芬兰语。十五个语法格？听起来完全合理。
 
-au14-trait-hindi-language-name = Hindi Language
-au14-trait-hindi-language-desc = You can speak and understand Hindi. Bollywood dialogue suddenly makes much more sense.
+au14-trait-hindi-language-name = 印地语
+au14-trait-hindi-language-desc = 你能说和理解印地语。宝莱坞对白突然变得合理多了。
 
-au14-trait-hungarian-language-name = Hungarian Language
-au14-trait-hungarian-language-desc = You can speak and understand Hungarian. Vowel harmony has become your trusted companion.
+au14-trait-hungarian-language-name = 匈牙利语
+au14-trait-hungarian-language-desc = 你能说和理解匈牙利语。元音和谐已成为你忠实的伙伴。
 
-au14-trait-indonesian-language-name = Indonesian Language
-au14-trait-indonesian-language-desc = You can speak and understand Indonesian. Surprisingly straightforward grammar is your ally.
+au14-trait-indonesian-language-name = 印度尼西亚语
+au14-trait-indonesian-language-desc = 你能说和理解印度尼西亚语。出人意料地直白的语法是你的盟友。
 
-au14-trait-irish-language-name = Irish Language
-au14-trait-irish-language-desc = You can speak and understand Irish. The spelling still looks mysterious, but you know the secrets now.
+au14-trait-irish-language-name = 爱尔兰语
+au14-trait-irish-language-desc = 你能说和理解爱尔兰语。拼写看起来仍然神秘，但你现在知道其中的秘密了。
 
-au14-trait-italian-language-name = Italian Language
-au14-trait-italian-language-desc = You can speak and understand Italian. Hand gestures are now an optional but highly effective communication bonus.
+au14-trait-italian-language-name = 意大利语
+au14-trait-italian-language-desc = 你能说和理解意大利语。手势现在是可选但极其有效的沟通加成。
 
-au14-trait-lithuanian-language-name = Lithuanian Language
-au14-trait-lithuanian-language-desc = You can speak and understand Lithuanian. Ancient Indo-European grammar nods approvingly.
+au14-trait-lithuanian-language-name = 立陶宛语
+au14-trait-lithuanian-language-desc = 你能说和理解立陶宛语。古老的印欧语法赞许地点头。
 
-au14-trait-persian-language-name = Persian Language
-au14-trait-persian-language-desc = You can speak and understand Persian. Poetry references now appear everywhere.
+au14-trait-persian-language-name = 波斯语
+au14-trait-persian-language-desc = 你能说和理解波斯语。诗歌典故现在无处不在。
 
-au14-trait-romanian-language-name = Romanian Language
-au14-trait-romanian-language-desc = You can speak and understand Romanian.
+au14-trait-romanian-language-name = 罗马尼亚语
+au14-trait-romanian-language-desc = 你能说和理解罗马尼亚语。
 
-au14-trait-serbian-language-name = Serbian Language
-au14-trait-serbian-language-desc = You can speak and understand Serbian. Switching between alphabets feels like changing hats.
+au14-trait-serbian-language-name = 塞尔维亚语
+au14-trait-serbian-language-desc = 你能说和理解塞尔维亚语。在两种字母之间切换感觉就像换帽子。
 
-au14-trait-slovak-language-name = Slovak Language
-au14-trait-slovak-language-desc = You can speak and understand Slovak.
+au14-trait-slovak-language-name = 斯洛伐克语
+au14-trait-slovak-language-desc = 你能说和理解斯洛伐克语。
 
-au14-trait-swahili-language-name = Swahili Language
-au14-trait-swahili-language-desc = You can speak and understand Swahili. Hakuna matata is only the beginning of your vocabulary.
+au14-trait-swahili-language-name = 斯瓦希里语
+au14-trait-swahili-language-desc = 你能说和理解斯瓦希里语。Hakuna matata 只是你词汇量的开始。
 
-au14-trait-ukrainian-language-name = Ukrainian Language
-au14-trait-ukrainian-language-desc = You can speak and understand Ukrainian. Perfect for discussing borscht recipes and arguing about the correct way to make varenyky.
+au14-trait-ukrainian-language-name = 乌克兰语
+au14-trait-ukrainian-language-desc = 你能说和理解乌克兰语。非常适合讨论罗宋汤食谱，以及争论制作 varenyky 的正确方法。
 
-au14-trait-urdu-language-name = Urdu Language
-au14-trait-urdu-language-desc = You can speak and understand Urdu. Your compliments now sound exceptionally elegant.
+au14-trait-urdu-language-name = 乌尔都语
+au14-trait-urdu-language-desc = 你能说和理解乌尔都语。你的赞美现在听起来格外优雅。
 
-au14-trait-vietnamese-language-name = Vietnamese Language
-au14-trait-vietnamese-language-desc = You can speak and understand Vietnamese. Your mastery of tones impresses even experienced linguists.
+au14-trait-vietnamese-language-name = 越南语
+au14-trait-vietnamese-language-desc = 你能说和理解越南语。你对声调的掌握甚至让经验丰富的语言学家都印象深刻。
 
-au14-trait-yoruba-language-name = Yoruba Language
-au14-trait-yoruba-language-desc = You can speak and understand Yoruba. Tonal pronunciation mistakes become much less frequent.
+au14-trait-yoruba-language-name = 约鲁巴语
+au14-trait-yoruba-language-desc = 你能说和理解约鲁巴语。声调发音错误变得少多了。
 
-trait-cmu-prosthetic-left-arm-name = Left arm prosthesis
-trait-cmu-prosthetic-left-arm-desc = Your left arm has been replaced with a robotic prosthesis.
+trait-cmu-prosthetic-left-arm-name = 左臂假肢
+trait-cmu-prosthetic-left-arm-desc = 你的左臂已被替换为机械假肢。
 
-trait-cmu-prosthetic-right-arm-name = Right arm prosthesis
-trait-cmu-prosthetic-right-arm-desc = Your right arm has been replaced with a robotic prosthesis.
+trait-cmu-prosthetic-right-arm-name = 右臂假肢
+trait-cmu-prosthetic-right-arm-desc = 你的右臂已被替换为机械假肢。
 
-trait-cmu-prosthetic-left-leg-name = Left leg prosthesis
-trait-cmu-prosthetic-left-leg-desc = Your left leg has been replaced with a robotic prosthesis.
+trait-cmu-prosthetic-left-leg-name = 左腿假肢
+trait-cmu-prosthetic-left-leg-desc = 你的左腿已被替换为机械假肢。
 
-trait-cmu-prosthetic-right-leg-name = Right leg prosthesis
-trait-cmu-prosthetic-right-leg-desc = Your right leg has been replaced with a robotic prosthesis.
+trait-cmu-prosthetic-right-leg-name = 右腿假肢
+trait-cmu-prosthetic-right-leg-desc = 你的右腿已被替换为机械假肢。
 
-trait-cmu-tile-movement-name = Tile Movement
-trait-cmu-tile-movement-desc = You move from tile to tile instead of walking freely, just like the forebears who came before you.
+trait-cmu-tile-movement-name = 格子移动
+trait-cmu-tile-movement-desc = 你从一个格子移动到另一个格子，而不是自由行走，就像你之前的先辈一样。
 
-cmu-trait-category-drinking = Alcohol Tolerance
-cmu-trait-heavyweight-name = Heavyweight drunk
-cmu-trait-heavyweight-desc = This is someone that can hold their liquor.
+cmu-trait-category-drinking = 酒精耐受
+cmu-trait-heavyweight-name = 千杯不醉
+cmu-trait-heavyweight-desc = 这是那种能喝的人。

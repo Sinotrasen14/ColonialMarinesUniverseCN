@@ -1,13 +1,13 @@
-cmu-sas-description = You are part of Special Air Service - Tier One special forces of the TWE. You have been called by TWE Ambassador, report in and protect the Ambassador.
+cmu-sas-description = 你是 TWE 一级特种部队特别空勤团的一员。TWE 大使已召见你，前去报到并保护大使。
 
-cmu-sas-greeting = You are a member of Special Air Service regiment.
-             You have been called by TWE Ambassador on the colony.
-             Report in ASAP, make contact with the Ambassador and protect them.
+cmu-sas-greeting = 你是特别空勤团的一名成员。
+             殖民地上的 TWE 大使已召见你。
+             尽快报到，与大使取得联系并保护他们。
 
-             'We going deep, and we going hard.
+             “我们将深入敌后，全力以赴。
 
-             Surely you can't be serious.
+             你肯定不是在开玩笑吧。
 
-             I am serious, and don't call me Shirley.'
+             我是认真的，别叫我雪莉。”
 
-cmu-sas-rules = You report to the nearest highest authority, either TWE Ambassador or your SAS Commander. Protect the Ambassador at all cost.
+cmu-sas-rules = 你向最近的最高权威报到，无论是 TWE 大使还是你的 SAS 指挥官。不惜一切代价保护大使。

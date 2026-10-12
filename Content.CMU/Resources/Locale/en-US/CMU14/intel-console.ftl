@@ -1,46 +1,46 @@
-cmu-intel-console-claim-start = You begin overriding the CLF intel console...
-cmu-intel-console-claim-examine = [color=red]Government Forces can seize this console to expose the remaining CLF cell.[/color]
-cmu-intel-console-claim-complete = You seize control of the CLF intel console. The remaining CLF cell's identities are being compromised.
-cmu-intel-console-fax-title = CLF Cell Compromised
-cmu-intel-console-fax-stamp = HUMINT CLASSIFIED
+cmu-intel-console-claim-start = 你开始覆写CLF情报终端……
+cmu-intel-console-claim-examine = [color=red]政府军可以夺取此终端以揭露剩余的CLF小组。[/color]
+cmu-intel-console-claim-complete = 你夺取了CLF情报终端的控制权。剩余CLF小组的身份正在被暴露。
+cmu-intel-console-fax-title = CLF小组已暴露
+cmu-intel-console-fax-stamp = 人工情报 机密
 cmu-intel-console-fax-roster-entry = - {$name} — {$job}
-cmu-intel-console-fax-roster-none = No further operatives could be identified during the debrief.
+cmu-intel-console-fax-roster-none = 在汇报过程中无法确认更多特工身份。
 cmu-intel-console-fax-content =
-    {"["}head=3][color=#7a1f1f]⬢ MILITARY CONFIDENTIAL ⬢[/color][/head]
-    {"["}color=#7a1f1f][italic]Provost Marshal Office | Counter-Intelligence Liaison Bulletin[/italic][/color]
+    {"["}head=3][color=#7a1f1f]⬢ 军事机密 ⬢[/color][/head]
+    {"["}color=#7a1f1f][italic]宪兵司令办公室 | 反情报联络公报[/italic][/color]
 
     {"["}color=#7a1f1f]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
 
-    {"["}bold]Case File:[/bold] [color=#7a1f1f]PMO-CI-CLFHUM[/color]
-    {"["}bold]Classification:[/bold] [color=#7a1f1f][bold]MILITARY CONFIDENTIAL | EYES ONLY[/bold][/color]
-    {"["}bold]Distribution:[/bold] [italic]Colony Marshal Bureau // Military Command // Fleet Command[/italic]
-    {"["}bold]Source:[/bold] [bold]HUMINT | Debriefed Personnel[/bold]
+    {"["}bold]案件档案：[/bold] [color=#7a1f1f]PMO-CI-CLFHUM[/color]
+    {"["}bold]密级：[/bold] [color=#7a1f1f][bold]军事机密 | 仅限本人阅读[/bold][/color]
+    {"["}bold]分发：[/bold] [italic]殖民地宪兵局 // 军事指挥部 // 舰队指挥部[/italic]
+    {"["}bold]来源：[/bold] [bold]人工情报 | 已汇报人员[/bold]
     {"["}color=#7a1f1f]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
 
-    Command,
-      A CLF base intelligence console has been seized.
-      Personnel captured in the operation have been relocated off-site for debriefing under Provost custody.
-      HUMINT obtained during interrogation has compromised the identities of the following remaining CLF operatives:
+    指挥部，
+      一个CLF基地情报终端已被夺取。
+      行动中俘获的人员已被转移至场外，由宪兵羁押进行汇报。
+      审讯中获得的人工情报已暴露以下剩余CLF特工的身份：
 
     {$roster}
 
-    Signed,
-    {"["}color=#7a1f1f][bolditalic]Provost Marshal Office | Counter-Intelligence Section[/bolditalic][/color]
+    签署，
+    {"["}color=#7a1f1f][bolditalic]宪兵司令办公室 | 反情报科[/bolditalic][/color]
     {"["}color=#7a1f1f]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
 
-    {"["}color=#7a1f1f]⬢ Unauthorized disclosure, duplication, or diversion of this bulletin from designated channels constitutes a violation of Marine Law. ⬢[/color]
+    {"["}color=#7a1f1f]⬢ 未经授权泄露、复制或将本公报从指定渠道转移，均构成违反《海军陆战队法》。⬢[/color]
 cmu-intel-console-govfor-announcement =
-    Provost advisory: a CLF base intel console has been seized and captured personnel relocated for debriefing.
-    HUMINT from the debrief has identified the remaining CLF operatives. Check the Military Command or Marshal's office fax for the full roster.
+    宪兵通告：一个CLF基地情报终端已被夺取，俘获人员已被转移进行汇报。
+    汇报中获得的人工情报已确认剩余CLF特工的身份。请查看军事指挥部或宪兵办公室传真以获取完整名单。
 cmu-intel-console-govfor-announcement-empty =
-    Provost advisory: a CLF base intel console has been seized and captured personnel relocated for debriefing.
-    No further operatives could be identified. Full report available at the Military Command or Marshal's office fax.
+    宪兵通告：一个CLF基地情报终端已被夺取，俘获人员已被转移进行汇报。
+    无法确认更多特工身份。完整报告可在军事指挥部或宪兵办公室传真处获取。
 cmu-intel-console-colony-announcement =
-    Colony Marshal Bureau advisory: heightened security activity has been reported in the area.
-    Colony residents are advised to remain vigilant and report any suspicious behavior to the nearest security checkpoint.
+    殖民地宪兵局通告：该区域报告有安保活动升级。
+    建议殖民地居民保持警惕，并向最近的安保检查站报告任何可疑行为。
 cmu-intel-console-clf-broadcast =
-    People of the colony, hear us. The occupiers and their Marshal lapdogs have raided one of our outposts and dragged our own into the dark,
-    colonists who wanted nothing more than to set you free. Let it be known, our people are not criminals.
-    They are captives in a war that began the day they set foot on this colony. This setback changes nothing.
-    The Colonial Liberation Front does not break, and we do not forget. For every name taken from us, ten more stand ready.
-    We are still among you, watching. We are still fighting. For you. Keep your heads down, the struggle continues, this is not over.
+    殖民地的民众们，请听我们说。占领者及其宪兵走狗突袭了我们的一处前哨，将我们自己人拖入了黑暗，
+    那些只想让你们获得自由的殖民者。让所有人知道，我们的人不是罪犯。
+    他们是一场从踏上这片殖民地那天起就已开始的战争中的俘虏。这次挫折不会改变任何事。
+    殖民解放阵线不会屈服，我们不会忘记。每一个从我们身边被夺走的名字，都会有十个人站出来。
+    我们仍就在你们中间，注视着。我们仍在战斗。为了你们。保持低调，斗争仍在继续，这一切还没有结束。

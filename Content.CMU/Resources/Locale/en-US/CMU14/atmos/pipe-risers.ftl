@@ -1,7 +1,7 @@
-cmu-pipe-riser-linked = The line couples to the deck {$direction}.
-cmu-pipe-riser-unlinked = Unlinked. No matching riser one deck {$direction}.
-cmu-pipe-riser-dir-toggled = You pry the riser to look {$direction}.
-cmu-z-direction-above = above
-cmu-z-direction-below = below
-cmu-zlevel-panel-closed = Its service panel is sealed. A multitool releases it.
-cmu-zlevel-panel-open = Its service panel is open. Pry the machine apart from here.
+cmu-pipe-riser-linked = 管线连接到甲板{$direction}。
+cmu-pipe-riser-unlinked = 未连接。{$direction}一层甲板上没有匹配的立管。
+cmu-pipe-riser-dir-toggled = 你撬动立管，朝{$direction}查看。
+cmu-z-direction-above = 上方
+cmu-z-direction-below = 下方
+cmu-zlevel-panel-closed = 它的服务面板已密封。用多功能工具可以打开。
+cmu-zlevel-panel-open = 它的服务面板已打开。从这里撬开机器。

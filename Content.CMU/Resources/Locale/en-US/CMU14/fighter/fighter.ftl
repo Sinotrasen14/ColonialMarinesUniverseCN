@@ -1,292 +1,292 @@
-cmu-fighter-preset-name = Fighter flight trial
-cmu-fighter-preset-description = A two-seat reconnaissance flight over Trijent Dam.
-cmu-fighter-pilot = PILOT
-cmu-fighter-observer = WSO
-cmu-fighter-launch = Start approach
-cmu-fighter-ascend = Climb
-cmu-fighter-descend = Descend
-cmu-fighter-return = Return
-cmu-fighter-mark = Mark viewed position
-cmu-fighter-zoom = Toggle optics zoom
-cmu-fighter-center = Recenter the view on the aircraft once. The camera stays there until you pan or recenter again.
-cmu-fighter-center-view = Center view
-cmu-fighter-swap = Change seat
-cmu-fighter-leave = Exit seat
-cmu-fighter-altitude-low = BELOW CLOUD
-cmu-fighter-altitude-cloud = IN CLOUD
-cmu-fighter-altitude-high = ABOVE CLOUD
-cmu-fighter-status = { $role } | { $speed } tiles/s | { $height } m | { $altitude }
-cmu-fighter-pilot-help = Click entry and exit on the chart, then Apply route. W/S: speed · A/D: correction within the pass
-cmu-fighter-observer-help = WASD: pan camera · Lock ground: hold a position · Mark: share position
-cmu-fighter-obscured = OPTICS / CLOUD OBSCURED
-cmu-fighter-clear = OPTICS / LIVE
-cmu-fighter-mark-status = Mark { $x }, { $y } · { $age } s old · last-known position
-cmu-fighter-title = CMU / TWO-SEAT STRIKE & RECON
-cmu-fighter-airspace = AIRSPACE / CUSTOM APPROACH
-cmu-fighter-entry = Set entry
-cmu-fighter-exit = Set exit
-cmu-fighter-entry-short = IN
-cmu-fighter-exit-short = OUT
-cmu-fighter-north = N ↑
-cmu-fighter-apply = Apply route
-cmu-fighter-pick-entry = Click the chart to place the entry point.
-cmu-fighter-pick-exit = Click the chart to place the exit point.
-cmu-fighter-route-locked = Approach committed. Route editable at holding.
-cmu-fighter-invalid-route = Route rejected. While holding, select points at least 40 tiles apart inside the airspace, crossing the battlefield.
-cmu-fighter-standby = CAMERA / STANDBY
-cmu-fighter-height = Set altitude: { $height } m
-cmu-fighter-speed = Set speed: { $speed } tiles/s
-cmu-fighter-no-mark = No observer position mark.
-cmu-fighter-phase-holding = HOLDING — plot the next approach
-cmu-fighter-phase-approach = APPROACH — closing on the entry point
-cmu-fighter-phase-pass = PASS — ground observation available
-cmu-fighter-phase-return = RETURN — repositioning outside the battlefield
-cmu-fighter-training-release = Training release
-cmu-fighter-released = TRAINING IMPACT REGISTERED — no live ordnance
-cmu-fighter-release-ready = RELEASE READY — position aligned and visible
-cmu-fighter-release-blocked = RELEASE CLOSED — requires a visible, in-range mark 4–35 tiles ahead inside the flight corridor
-cmu-fighter-console-route = Plan route
-cmu-fighter-controls = FLIGHT / RECON CONTROLS
-cmu-fighter-console-optics = Ground camera
-cmu-fighter-console-mark = Mark
-cmu-fighter-console-zoom = Zoom
-cmu-fighter-console-center = Center
+cmu-fighter-preset-name = 战斗机飞行试炼
+cmu-fighter-preset-description = 在 Trijent 大坝上空进行双座侦察飞行。
+cmu-fighter-pilot = 飞行员
+cmu-fighter-observer = 武器官
+cmu-fighter-launch = 开始进近
+cmu-fighter-ascend = 爬升
+cmu-fighter-descend = 下降
+cmu-fighter-return = 返回
+cmu-fighter-mark = 标记观察位置
+cmu-fighter-zoom = 切换光学变焦
+cmu-fighter-center = 将视角重新对准飞机一次。在你平移或再次回中之前，镜头会保持在那里。
+cmu-fighter-center-view = 居中视角
+cmu-fighter-swap = 更换座位
+cmu-fighter-leave = 离开座位
+cmu-fighter-altitude-low = 云层以下
+cmu-fighter-altitude-cloud = 云层中
+cmu-fighter-altitude-high = 云层以上
+cmu-fighter-status = { $role } | { $speed } 格/秒 | { $height } 米 | { $altitude }
+cmu-fighter-pilot-help = 在海图上点击进入和退出点，然后应用航线。W/S：速度 · A/D：航程内修正
+cmu-fighter-observer-help = WASD：平移镜头 · 锁定地面：保持一个位置 · 标记：共享位置
+cmu-fighter-obscured = 光学 / 云层遮挡
+cmu-fighter-clear = 光学 / 实时
+cmu-fighter-mark-status = 标记 { $x }，{ $y } · { $age } 秒前 · 最后已知位置
+cmu-fighter-title = CMU / 双座打击与侦察
+cmu-fighter-airspace = 空域 / 自定义进近
+cmu-fighter-entry = 设置进入点
+cmu-fighter-exit = 设置退出点
+cmu-fighter-entry-short = 进
+cmu-fighter-exit-short = 出
+cmu-fighter-north = 北 ↑
+cmu-fighter-apply = 应用航线
+cmu-fighter-pick-entry = 点击海图放置进入点。
+cmu-fighter-pick-exit = 点击海图放置退出点。
+cmu-fighter-route-locked = 进近已确认。盘旋时可编辑航线。
+cmu-fighter-invalid-route = 航线被拒绝。盘旋时，请在空域内选择至少相距 40 格、横穿战场的点。
+cmu-fighter-standby = 镜头 / 待命
+cmu-fighter-height = 设置高度：{ $height } 米
+cmu-fighter-speed = 设置速度：{ $speed } 格/秒
+cmu-fighter-no-mark = 无观察员位置标记。
+cmu-fighter-phase-holding = 盘旋 — 规划下一次进近
+cmu-fighter-phase-approach = 进近 — 正在接近进入点
+cmu-fighter-phase-pass = 航程 — 可进行地面观察
+cmu-fighter-phase-return = 返回 — 正在战场外重新定位
+cmu-fighter-training-release = 训练投放
+cmu-fighter-released = 训练命中已记录 — 无实弹
+cmu-fighter-release-ready = 投放就绪 — 位置已对准且可见
+cmu-fighter-release-blocked = 投放关闭 — 需要在飞行走廊内前方 4–35 格处有一个可见且在范围内的标记
+cmu-fighter-console-route = 规划航线
+cmu-fighter-controls = 飞行 / 侦察控制
+cmu-fighter-console-optics = 地面镜头
+cmu-fighter-console-mark = 标记
+cmu-fighter-console-zoom = 变焦
+cmu-fighter-console-center = 居中
 cmu-fighter-console-flight = { $phase }
-    { $height } m · { $speed } t/s
-cmu-fighter-console-phase-holding = HOLDING
-cmu-fighter-console-phase-approach = APPROACH
-cmu-fighter-console-phase-pass = BATTLEFIELD PASS
-cmu-fighter-console-phase-return = RETURN
-cmu-fighter-console-live = SENSOR LIVE
-    NO DESIGNATION
-cmu-fighter-console-marked = TARGET MARKED
-    SHARED WITH CREW
-cmu-fighter-console-blind = SENSOR OBSCURED
-    CHECK SIGHT
-cmu-fighter-console-impact = TRAINING IMPACT
-    REGISTERED
-cmu-fighter-console-progress = LEG { $progress }%
+    { $height } 米 · { $speed } 格/秒
+cmu-fighter-console-phase-holding = 盘旋
+cmu-fighter-console-phase-approach = 进近
+cmu-fighter-console-phase-pass = 战场航程
+cmu-fighter-console-phase-return = 返回
+cmu-fighter-console-live = 传感器实时
+    无指定目标
+cmu-fighter-console-marked = 目标已标记
+    已与船员共享
+cmu-fighter-console-blind = 传感器被遮挡
+    检查视野
+cmu-fighter-console-impact = 训练命中
+    已记录
+cmu-fighter-console-progress = 航段 { $progress }%
 cmu-fighter-console-crew = { $role } · { $status }
-cmu-fighter-console-empty = EMPTY
-cmu-fighter-console-you = YOU
-cmu-fighter-console-crewed = CREW
-cmu-fighter-console-sight-help = WASD · pan camera
-    Lock · hold ground position
-cmu-fighter-console-flight-help = W/S · speed
-    A/D · correction within pass
-cmu-fighter-pilot-controls = PILOT
-cmu-fighter-observer-controls = WEAPONS OFFICER
-cmu-fighter-spectating-pilot = SPECTATING PILOT
-cmu-fighter-spectating-wso = SPECTATING WEAPONS OFFICER
-cmu-fighter-spectating-help = Read-only crew view
-    Plan route / Targeting · switch display
-cmu-fighter-spectating-exit-help = Read-only crew view
-    Move or Stop observing to leave
-cmu-fighter-stop-observing = Stop observing
-cmu-fighter-lock = Lock
-cmu-fighter-unlock = Unlock
-cmu-fighter-lock-help = Hold the selected ground point. Unlock releases the target without moving the view. WASD pans the unlocked camera; selecting a flare moves the view to it.
-cmu-fighter-range-help = Higher altitude increases camera reach. An out-of-range lock is retained, but its ground feed cuts out until it is in range again.
-cmu-fighter-shared-sight = Targeting shows your independent ground camera in the left display. WASD pans it; Plan route restores flight controls.
+cmu-fighter-console-empty = 空
+cmu-fighter-console-you = 你
+cmu-fighter-console-crewed = 船员
+cmu-fighter-console-sight-help = WASD · 平移镜头
+    锁定 · 保持地面位置
+cmu-fighter-console-flight-help = W/S · 速度
+    A/D · 航程内修正
+cmu-fighter-pilot-controls = 飞行员
+cmu-fighter-observer-controls = 武器官
+cmu-fighter-spectating-pilot = 正在观战飞行员
+cmu-fighter-spectating-wso = 正在观战武器官
+cmu-fighter-spectating-help = 只读船员视角
+    规划航线 / 瞄准 · 切换显示
+cmu-fighter-spectating-exit-help = 只读船员视角
+    移动或停止观察以离开
+cmu-fighter-stop-observing = 停止观察
+cmu-fighter-lock = 锁定
+cmu-fighter-unlock = 解锁
+cmu-fighter-lock-help = 保持选定的地面点。解锁会释放目标而不移动视角。WASD 平移未锁定的镜头；选择信号弹会将视角移动到它那里。
+cmu-fighter-range-help = 更高的高度会增加镜头覆盖范围。超出范围的锁定会保留，但其地面画面会中断，直到再次进入范围。
+cmu-fighter-shared-sight = 瞄准会在左侧显示中显示你独立的地面镜头。WASD 平移它；规划航线会恢复飞行控制。
 cmu-fighter-sensor-status = { $mode }
-    Distance { $distance } / { $range } tiles
-cmu-fighter-sensor-following = MANUAL CAMERA
-cmu-fighter-sensor-locked = GROUND LOCKED
-cmu-fighter-sensor-out-of-range = OUT OF RANGE
-cmu-fighter-release-complete = Training round released
-cmu-fighter-vision-normal = Normal
-cmu-fighter-vision-night = Night vision
-cmu-fighter-vision-thermal = Thermal
-cmu-fighter-night-help = Unlimited night vision. Reveals dark terrain without battery drain, overheating, or a cooldown. Clouds still block the camera.
-cmu-fighter-thermal-help = See through darkness and clouds for up to 2 minutes. Overheating or switching off starts a 6-minute cooldown. Camera range still applies.
-cmu-fighter-thermal-active = THERMAL · { $time } until overheat
-cmu-fighter-thermal-cooling = THERMAL COOLING · { $time }
-cmu-fighter-thermal-ready = THERMAL READY · 2:00 available
-cmu-fighter-thermal-cooling-popup = Thermal optics are still cooling. Normal and night vision remain available.
-cmu-fighter-armament = ARMAMENT / SIX PYLONS + GAU
-cmu-fighter-internal-gau = Internal GAU-21
-cmu-fighter-rocket-pod = LAU-229 rocket pod
-cmu-fighter-empty-pylon = Empty pylon
+    距离 { $distance } / { $range } 格
+cmu-fighter-sensor-following = 手动镜头
+cmu-fighter-sensor-locked = 地面已锁定
+cmu-fighter-sensor-out-of-range = 超出范围
+cmu-fighter-release-complete = 训练弹已投放
+cmu-fighter-vision-normal = 普通
+cmu-fighter-vision-night = 夜视
+cmu-fighter-vision-thermal = 热成像
+cmu-fighter-night-help = 无限夜视。可揭示黑暗地形，无需消耗电池、不会过热，也没有冷却时间。云层仍会遮挡镜头。
+cmu-fighter-thermal-help = 可看穿黑暗和云层，最长持续 2 分钟。过热或关闭会开始 6 分钟冷却。镜头范围仍然适用。
+cmu-fighter-thermal-active = 热成像 · 距离过热还有 { $time }
+cmu-fighter-thermal-cooling = 热成像冷却中 · { $time }
+cmu-fighter-thermal-ready = 热成像就绪 · 可用 2:00
+cmu-fighter-thermal-cooling-popup = 热成像仍在冷却。普通和夜视仍可使用。
+cmu-fighter-armament = 武器 / 六个挂架 + GAU
+cmu-fighter-internal-gau = 内置 GAU-21
+cmu-fighter-rocket-pod = LAU-229 火箭巢
+cmu-fighter-empty-pylon = 空挂架
 cmu-fighter-slot = { $number } · { $kind }
-cmu-fighter-kind-empty = EMPTY
-cmu-fighter-kind-missile = MSL
-cmu-fighter-kind-rockets = RKT
+cmu-fighter-kind-empty = 空
+cmu-fighter-kind-missile = 导弹
+cmu-fighter-kind-rockets = 火箭
 cmu-fighter-kind-gau = GAU
-cmu-fighter-weapon-status = { $name } · { $rounds } rounds
-    Target: { $target }
-cmu-fighter-fire-button = Fire
-cmu-fighter-fire-ready = READY
-cmu-fighter-fire-noweapon = EMPTY PYLON
-cmu-fighter-fire-empty = NO AMMUNITION
-cmu-fighter-fire-pilotonly = PILOT ONLY
-cmu-fighter-fire-notarget = SELECT A FLARE OR LASER
-cmu-fighter-fire-outofrange = OUT OF RANGE
-cmu-fighter-fire-outsideao = WEAPONS SAFE · ENTER THE AO ON A RUN
-cmu-fighter-fire-clouds = CLOUD OBSCURED
-cmu-fighter-fire-protected = COVERED / NO CAS
-cmu-fighter-fire-needrun = APPROACH OR PASS REQUIRED
-cmu-fighter-fire-offcourse = TURN APPROACH TOWARD FLARE
-cmu-fighter-fire-cooldown = WEAPON CYCLING
-cmu-fighter-target-map = Target map
-cmu-fighter-flare-help = Missiles: either crew · inside AO on a run
-    Rockets / GAU: pilot · run only
-cmu-fighter-flare-list-help = Select a target · green means ready
-cmu-fighter-no-flares = Waiting for deployed signal flares
-cmu-fighter-laser = Laser
-cmu-fighter-laser-help = Designate the crosshair for 10 seconds. Visible to everyone on the ground. Select a missile and press Lock & fire for a 2-second lock before launch. Press Laser again to view your existing mark.
-cmu-fighter-pilot-laser = Pilot laser
-cmu-fighter-officer-laser = Officer laser
-cmu-fighter-laser-time = { $name } · { $seconds }s
-cmu-fighter-lock-fire = Lock & fire
-cmu-fighter-lock-countdown = LOCKING · { $seconds }s
-cmu-fighter-fire-locking = LOCKING
-cmu-fighter-fire-missilesonly = LASER REQUIRES A MISSILE
-cmu-fighter-fire-targetexpiring = LASER EXPIRING · CANNOT LOCK
-cmu-fighter-missile-incoming = MISSILE INCOMING
-cmu-fighter-pilot-camera-keys = WASD · pan camera
-    Plan route · flight controls
-cmu-fighter-mount-rejected = Cannot fit this here. Use an empty pylon for missiles, fit a rocket pod before rockets, or load GAU ammunition into the internal feed. Service only between passes.
-cmu-fighter-pylon-examine = Pylon { $number }: direct missiles or a rocket pod. Activate with a power loader to unload ammunition, then remove the pod.
-cmu-fighter-gau-feed = Internal GAU feed: load a 30mm crate with a power loader. The cannon does not use a pylon.
-cmu-fighter-console-release-closed = RELEASE CLOSED
-    Visible mark required within the pass
-cmu-fighter-fire-retreat = DAMAGED · RETURNING TO BASE
-cmu-fighter-fire-grounded = WEAPONS SAFE · TAKE OFF TO ENGAGE
-cmu-fighter-cover = Air cover
-cmu-fighter-cover-title = AIR DEFENCE / SECTOR COVERAGE
-cmu-fighter-cover-help = Either crew member can cover sectors. Enemy aircraft crossing an armed sector trigger an interceptor. Coverage takes 8 seconds to arm; interceptors reload for 15 seconds. Enemy coverage is hidden.
-cmu-fighter-cover-instruction = Click sectors to cover or clear them
-    Green: armed · amber: arming · enemy coverage hidden
-cmu-fighter-cover-status = { $count } / { $max } sectors covered
+cmu-fighter-weapon-status = { $name } · { $rounds } 发
+    目标：{ $target }
+cmu-fighter-fire-button = 开火
+cmu-fighter-fire-ready = 就绪
+cmu-fighter-fire-noweapon = 空挂架
+cmu-fighter-fire-empty = 无弹药
+cmu-fighter-fire-pilotonly = 仅飞行员
+cmu-fighter-fire-notarget = 选择信号弹或镭射
+cmu-fighter-fire-outofrange = 超出范围
+cmu-fighter-fire-outsideao = 武器保险 · 进入行动区执行航程
+cmu-fighter-fire-clouds = 云层遮挡
+cmu-fighter-fire-protected = 被掩护 / 无近距离空中支援
+cmu-fighter-fire-needrun = 需要进近或航程
+cmu-fighter-fire-offcourse = 将进近转向信号弹
+cmu-fighter-fire-cooldown = 武器循环中
+cmu-fighter-target-map = 目标地图
+cmu-fighter-flare-help = 导弹：任一船员 · 行动区内执行航程
+    火箭 / GAU：飞行员 · 仅航程
+cmu-fighter-flare-list-help = 选择目标 · 绿色表示就绪
+cmu-fighter-no-flares = 正在等待部署的信号弹
+cmu-fighter-laser = 镭射
+cmu-fighter-laser-help = 将准星指定 10 秒。地面上所有人都可见。选择一枚导弹并按锁定并开火，在发射前进行 2 秒锁定。再次按镭射可查看你现有的标记。
+cmu-fighter-pilot-laser = 飞行员镭射
+cmu-fighter-officer-laser = 武器官镭射
+cmu-fighter-laser-time = { $name } · { $seconds } 秒
+cmu-fighter-lock-fire = 锁定并开火
+cmu-fighter-lock-countdown = 锁定中 · { $seconds } 秒
+cmu-fighter-fire-locking = 锁定中
+cmu-fighter-fire-missilesonly = 镭射需要导弹
+cmu-fighter-fire-targetexpiring = 镭射即将失效 · 无法锁定
+cmu-fighter-missile-incoming = 导弹来袭
+cmu-fighter-pilot-camera-keys = WASD · 平移镜头
+    规划航线 · 飞行控制
+cmu-fighter-mount-rejected = 无法在此安装。使用空挂架安装导弹，先安装火箭巢再装火箭，或将 GAU 弹药装入内部供弹。只能在航程之间进行维护。
+cmu-fighter-pylon-examine = 挂架 { $number }：直接安装导弹或火箭巢。使用动力装载机激活以卸载弹药，然后移除火箭巢。
+cmu-fighter-gau-feed = 内置 GAU 供弹：使用动力装载机装入 30mm 板条箱。机炮不使用挂架。
+cmu-fighter-console-release-closed = 投放关闭
+    航程内需要可见标记
+cmu-fighter-fire-retreat = 受损 · 返回基地
+cmu-fighter-fire-grounded = 武器保险 · 起飞以交战
+cmu-fighter-cover = 空中掩护
+cmu-fighter-cover-title = 防空 / 区域覆盖
+cmu-fighter-cover-help = 任一船员都可以覆盖区域。敌方飞机穿越已武装区域会触发拦截机。覆盖需要 8 秒武装；拦截机需要 15 秒重新装填。敌方覆盖是隐藏的。
+cmu-fighter-cover-instruction = 点击区域以覆盖或清除
+    绿色：已武装 · 琥珀色：武装中 · 敌方覆盖隐藏
+cmu-fighter-cover-status = 已覆盖 { $count } / { $max } 个区域
     { $status }
-cmu-fighter-cover-ready = READY TO INTERCEPT
-cmu-fighter-cover-arming = ARMING · { $seconds }s
-cmu-fighter-cover-reloading = INTERCEPTOR RELOADING · { $seconds }s
-cmu-fighter-cover-no-faction = NO FRIENDLY IDENTIFICATION
-cmu-fighter-intercept-launch = MSL
-cmu-fighter-air-incoming = MISSILE APPROACHING
-cmu-fighter-ground-incoming = GROUND LAUNCH · MISSILE APPROACHING
-cmu-fighter-takeoff = Take off
-cmu-fighter-land = Land
-cmu-fighter-ground-grounded = GROUNDED · WINGS FOLDED
-cmu-fighter-ground-takingoff = VERTICAL TAKEOFF
-cmu-fighter-ground-returning = RETURNING · WAITING FOR A CLEAR LANDING SITE
-cmu-fighter-ground-landing = VERTICAL LANDING
-cmu-fighter-vtol-help = Vertical flight · wait for the transition to finish
-cmu-fighter-taxi-camera-help = Close the ground camera to taxi
-cmu-fighter-taxi-help = W/S · taxi forward/back
-    A/D · steer while rolling · release to brake
-cmu-fighter-tab-flight = Flight
-cmu-fighter-tab-targeting = Targeting
-cmu-fighter-targeting-keys = WASD · pan camera
-    Plan route · flight controls
-cmu-fighter-ground-officer-help = Pilot controls taxi and takeoff.
-    Targeting becomes available in flight.
-cmu-fighter-route-hint = Plan route · set entry and exit
-    Apply route · start approach
-cmu-fighter-officer-route-hint = Select a flare on the map to view it.
-    Air cover · assign defended sectors
-cmu-fighter-board-blocked = Both seats are occupied, or the aircraft is not safely grounded.
-cmu-fighter-takeoff-blocked = Takeoff needs a clear footprint and open sky. Move away from people, obstacles, roofs and the moving lift.
-cmu-fighter-air-countdown = Impact in { $seconds }s
-cmu-fighter-flares = DEPLOY FLARES
-cmu-fighter-flares-used = FLARES DEPLOYED
-cmu-fighter-flares-pilot = PILOT MUST DEPLOY FLARES
-cmu-fighter-flares-chance = One attempt per incoming missile · { $chance }% evasion chance. Early flares and higher speed improve evasion. A hit forces a retreat.
-cmu-fighter-air-evaded = MISSILE EVADED
-cmu-fighter-air-continue = Aircraft intact · continue the mission
-cmu-fighter-air-hit = AIRCRAFT HIT
-cmu-fighter-retreating = Forced retreat · weapons disabled
-cmu-fighter-repairing = Repairs at base · { $seconds }s
-cmu-fighter-prepare-run = Line up flare
-cmu-fighter-prepare-help = Prepare an editable pass through the selected flare at low altitude and at most 12 tiles/s. Press Start approach when ready. No weapons fire automatically unless you queue a shot.
-cmu-fighter-queue-fire = Queue one shot
-cmu-fighter-cancel-queue = Cancel queue
-cmu-fighter-queue-help = Fire one rocket or one GAU burst when the target is in range, aligned and visible on this run. Click again to cancel. Changing targets or weapons, leaving the seat or returning cancels the queue.
-cmu-fighter-assist-unavailable = Select a strikeable signal flare while holding to prepare a run.
+cmu-fighter-cover-ready = 准备拦截
+cmu-fighter-cover-arming = 武装中 · { $seconds } 秒
+cmu-fighter-cover-reloading = 拦截机重新装填中 · { $seconds } 秒
+cmu-fighter-cover-no-faction = 无友军识别
+cmu-fighter-intercept-launch = 导弹
+cmu-fighter-air-incoming = 导弹接近
+cmu-fighter-ground-incoming = 地面发射 · 导弹接近
+cmu-fighter-takeoff = 起飞
+cmu-fighter-land = 降落
+cmu-fighter-ground-grounded = 已着陆 · 机翼折叠
+cmu-fighter-ground-takingoff = 垂直起飞
+cmu-fighter-ground-returning = 返回中 · 等待空旷着陆点
+cmu-fighter-ground-landing = 垂直降落
+cmu-fighter-vtol-help = 垂直飞行 · 等待过渡完成
+cmu-fighter-taxi-camera-help = 关闭地面镜头以滑行
+cmu-fighter-taxi-help = W/S · 向前/向后滑行
+    A/D · 滚动时转向 · 松开以刹车
+cmu-fighter-tab-flight = 飞行
+cmu-fighter-tab-targeting = 瞄准
+cmu-fighter-targeting-keys = WASD · 平移镜头
+    规划航线 · 飞行控制
+cmu-fighter-ground-officer-help = 飞行员控制滑行和起飞。
+    瞄准在飞行中可用。
+cmu-fighter-route-hint = 规划航线 · 设置进入和退出点
+    应用航线 · 开始进近
+cmu-fighter-officer-route-hint = 在地图上选择信号弹以查看。
+    空中掩护 · 分配防御区域
+cmu-fighter-board-blocked = 两个座位都已占用，或飞机未安全着陆。
+cmu-fighter-takeoff-blocked = 起飞需要空旷的场地和开阔的天空。远离人员、障碍物、屋顶和移动升降机。
+cmu-fighter-air-countdown = { $seconds } 秒后命中
+cmu-fighter-flares = 部署信号弹
+cmu-fighter-flares-used = 信号弹已部署
+cmu-fighter-flares-pilot = 飞行员必须部署信号弹
+cmu-fighter-flares-chance = 每枚来袭导弹一次尝试 · { $chance }% 规避几率。提前发射信号弹和更高速度可提高规避率。被命中会强制撤退。
+cmu-fighter-air-evaded = 导弹已规避
+cmu-fighter-air-continue = 飞机完好 · 继续任务
+cmu-fighter-air-hit = 飞机被命中
+cmu-fighter-retreating = 强制撤退 · 武器禁用
+cmu-fighter-repairing = 基地维修中 · { $seconds } 秒
+cmu-fighter-prepare-run = 对准信号弹
+cmu-fighter-prepare-help = 准备一次可编辑的航程，以低空、最高 12 格/秒的速度穿过选定的信号弹。准备好后按开始进近。除非你排队射击，否则武器不会自动开火。
+cmu-fighter-queue-fire = 排队一次射击
+cmu-fighter-cancel-queue = 取消排队
+cmu-fighter-queue-help = 当目标在本次航程中处于范围内、已对准且可见时，发射一枚火箭或一次 GAU 连射。再次点击可取消。更改目标或武器、离开座位或返回都会取消排队。
+cmu-fighter-assist-unavailable = 盘旋时选择一个可打击的信号弹以准备航程。
 cmu-fighter-run-range = { $status }
-    Target { $distance } / { $range } tiles
-cmu-fighter-form-up = Form up on pad
-cmu-fighter-taxi-forward = Forward
-cmu-fighter-taxi-back = Reverse
-cmu-fighter-taxi-left = Turn left
-cmu-fighter-taxi-right = Turn right
-cmu-fighter-pad-unavailable = No clear, available friendly fighter pad within taxi range.
-cmu-fighter-pad-path-blocked = Taxi assist stopped: the path is blocked. Steer around the obstacle and try again.
-cmu-fighter-pad-ready = Aligned on the VTOL pad. Ready for takeoff.
-cmu-fighter-eject = Eject
-cmu-fighter-eject-warning = EMERGENCY EJECTION
-cmu-fighter-eject-both-warning = This fires BOTH crew seats.
-    You and the weapons officer will parachute to the ground.
-    The unmanned aircraft will return to base.
-cmu-fighter-eject-self-warning = This fires your seat. The pilot stays aboard.
-    You will parachute to the ground.
-cmu-fighter-eject-cancel = Stay aboard
-cmu-fighter-eject-confirm = Confirm ejection
-cmu-fighter-eject-fired = EJECT! Parachute deploying!
-ent-CMUFighterManpad = EMBLR MANPAD
-    .desc = A shoulder-fired anti-air launcher. Load an EMBLR 70mm rocket, wield it with both hands and use Aim at airspace to intercept hostile aircraft crossing your sector. Lowering or dropping it cancels the lock. Reload after each launch.
-ent-CMUActionManpadAim = Aim at airspace
-    .desc = Raise the wielded MANPAD to cover your current sector. Automatically acquire and fire at hostile aircraft. Toggle again to lower it and cancel acquisition.
-cmu-manpad-requires-wield = Hold the MANPAD in your active hand and wield it with both hands first.
-cmu-manpad-aiming = MANPAD raised. Watching your sector for hostile aircraft.
-cmu-manpad-lowered = MANPAD lowered. Acquisition cancelled.
-cmu-manpad-examine-safe = [color=gray]Lowered. Wield it and use Aim at airspace to cover your sector.[/color]
-cmu-manpad-examine-aimed = [color=orange]Aimed at the sky. Covering the operator's current sector.[/color]
-cmu-manpad-iff-unknown = Cannot authenticate your faction. MANPAD remains safe.
-cmu-manpad-empty = MANPAD empty. Load an EMBLR 70mm rocket before aiming.
-ent-CMUFighterManpadNoIFF = EMBLR MANPAD
-    .suffix = No IFF, targets all aircraft
-    .desc = A shoulder-fired anti-air launcher with its IFF interlock bypassed. It automatically engages ANY crewed aircraft crossing your sector while wielded and aimed, including friendly aircraft. Uses EMBLR 70mm ammunition.
-cmu-manpad-aiming-all = MANPAD raised. IFF OFF: engaging any aircraft in your sector, including friendlies.
-cmu-manpad-examine-no-iff = [color=red]IFF bypassed. This launcher can fire at friendly aircraft.[/color]
-cmu-manpad-radar-title = MANPAD / AIRSPACE
-cmu-manpad-radar-iff = IFF ON · HOSTILES ONLY
-cmu-manpad-radar-no-iff = IFF OFF · ALL AIRCRAFT
-cmu-manpad-radar-sector = YOUR SECTOR { $sector } · { $count } contacts
-cmu-manpad-radar-outside = OUTSIDE AO · { $count } contacts
-cmu-manpad-radar-empty = EMPTY · load an EMBLR 70mm rocket
-cmu-manpad-radar-cycling = LAUNCHER CYCLING · { $seconds }s
-cmu-manpad-radar-lowered = LOWERED · use Aim at airspace to engage
-cmu-manpad-radar-lock = ACQUIRING · launch in { $seconds }s
-cmu-manpad-radar-scanning = AIMED · watching your sector
-cmu-manpad-radar-legend = Green: friendly · red: target · yellow: unknown
-    Cyan: you / your sector · ring: acquiring
-cmu-manpad-radar-height = { $height } m
-ent-CMUActionBoilerWatchAirspace = Look at airspace
-    .desc = Watch your current sector and automatically launch plasma at passing aircraft. Stay still under open sky for two seconds to acquire a target. Each shot costs 200 plasma and has a fifteen-second cooldown. Toggle again to stop.
-cmu-boiler-air-watching = You watch the sky, ready to spit plasma at aircraft crossing your sector.
-cmu-boiler-air-lowered = You lower your gaze. Airspace acquisition cancelled.
-cmu-boiler-air-title = BOILER / AIRSPACE
-cmu-boiler-air-cost = AUTO PLASMA · 200 per shot · open sky required
-cmu-boiler-air-empty = INSUFFICIENT PLASMA · need 200 to fire
-cmu-boiler-air-cycling = PLASMA RECOVERING · { $seconds }s
-cmu-fighter-plasma-incoming = INCOMING PLASMA
-cmu-fighter-iff-owner = [color=cyan]IFF ownership: { $faction }.[/color]
-cmu-fighter-iff-unassigned = [color=yellow]IFF ownership unassigned.[/color]
-cmu-fighter-iff-denied = Your faction is not authorized to crew this fighter.
-cmu-fighter-unbuckle = Unbuckle
-cmu-fighter-targeting-ground = The targeting camera becomes available after takeoff.
-cmu-fighter-preset-alt-low = Low ALT
-cmu-fighter-preset-alt-medium = Medium ALT
-cmu-fighter-preset-alt-high = High ALT
-cmu-fighter-preset-speed-stall = Near stall
-cmu-fighter-preset-speed-cruise = Cruise
-cmu-fighter-preset-speed-afterburner = Afterburner
-cmu-fighter-targets-heading = FLARES / LASERS
-cmu-fighter-targets-empty = No signal flares
-    or laser marks
-cmu-fighter-targets-help = Select a mark
-    Green = ready
-cmu-fighter-weapons-heading = WEAPONS
+    目标 { $distance } / { $range } 格
+cmu-fighter-form-up = 在停机坪集结
+cmu-fighter-taxi-forward = 前进
+cmu-fighter-taxi-back = 后退
+cmu-fighter-taxi-left = 左转
+cmu-fighter-taxi-right = 右转
+cmu-fighter-pad-unavailable = 滑行范围内没有空旷可用的友军战斗机停机坪。
+cmu-fighter-pad-path-blocked = 滑行辅助停止：路径被阻挡。绕过障碍物后重试。
+cmu-fighter-pad-ready = 已对准垂直起降停机坪。准备起飞。
+cmu-fighter-eject = 弹射
+cmu-fighter-eject-warning = 紧急弹射
+cmu-fighter-eject-both-warning = 这会弹射两个船员座位。
+    你和武器官将跳伞到地面。
+    无人驾驶的飞机会返回基地。
+cmu-fighter-eject-self-warning = 这会弹射你的座位。飞行员留在机上。
+    你将跳伞到地面。
+cmu-fighter-eject-cancel = 留在机上
+cmu-fighter-eject-confirm = 确认弹射
+cmu-fighter-eject-fired = 弹射！降落伞展开中！
+ent-CMUFighterManpad = EMBLR 便携防空导弹
+    .desc = 一种肩射防空发射器。装入一枚 EMBLR 70mm 火箭，用双手持握，并使用瞄准空域来拦截穿越你区域的敌方飞机。放下或掉落会取消锁定。每次发射后需重新装填。
+ent-CMUActionManpadAim = 瞄准空域
+    .desc = 举起持握的便携防空导弹以覆盖你当前区域。自动获取并射击敌方飞机。再次切换以放下并取消获取。
+cmu-manpad-requires-wield = 先将便携防空导弹握在活跃手中并用双手持握。
+cmu-manpad-aiming = 便携防空导弹已举起。正在监视你的区域以寻找敌方飞机。
+cmu-manpad-lowered = 便携防空导弹已放下。获取已取消。
+cmu-manpad-examine-safe = [color=gray]已放下。持握它并使用瞄准空域来覆盖你的区域。[/color]
+cmu-manpad-examine-aimed = [color=orange]已瞄准天空。正在覆盖操作员的当前区域。[/color]
+cmu-manpad-iff-unknown = 无法验证你的阵营。便携防空导弹保持安全。
+cmu-manpad-empty = 便携防空导弹为空。瞄准前装入一枚 EMBLR 70mm 火箭。
+ent-CMUFighterManpadNoIFF = EMBLR 便携防空导弹
+    .suffix = 无敌我识别，瞄准所有飞机
+    .desc = 一种肩射防空发射器，其敌我识别联锁已被绕过。持握并瞄准时，它会自动攻击穿越你区域的任何有人驾驶飞机，包括友军飞机。使用 EMBLR 70mm 弹药。
+cmu-manpad-aiming-all = 便携防空导弹已举起。敌我识别关闭：攻击你区域内的任何飞机，包括友军。
+cmu-manpad-examine-no-iff = [color=red]敌我识别已绕过。此发射器可向友军飞机开火。[/color]
+cmu-manpad-radar-title = 便携防空导弹 / 空域
+cmu-manpad-radar-iff = 敌我识别开启 · 仅敌方
+cmu-manpad-radar-no-iff = 敌我识别关闭 · 所有飞机
+cmu-manpad-radar-sector = 你的区域 { $sector } · { $count } 个接触目标
+cmu-manpad-radar-outside = 行动区外 · { $count } 个接触目标
+cmu-manpad-radar-empty = 空 · 装入一枚 EMBLR 70mm 火箭
+cmu-manpad-radar-cycling = 发射器循环中 · { $seconds } 秒
+cmu-manpad-radar-lowered = 已放下 · 使用瞄准空域以交战
+cmu-manpad-radar-lock = 获取中 · { $seconds } 秒后发射
+cmu-manpad-radar-scanning = 已瞄准 · 正在监视你的区域
+cmu-manpad-radar-legend = 绿色：友军 · 红色：目标 · 黄色：未知
+    青色：你 / 你的区域 · 圆环：获取中
+cmu-manpad-radar-height = { $height } 米
+ent-CMUActionBoilerWatchAirspace = 观察空域
+    .desc = 监视你当前区域并自动向经过的飞机发射等离子。在开阔天空下保持静止两秒以获取目标。每次射击消耗 200 等离子，并有十五秒冷却时间。再次切换以停止。
+cmu-boiler-air-watching = 你注视着天空，准备向穿越你区域的飞机吐出等离子。
+cmu-boiler-air-lowered = 你垂下目光。空域获取已取消。
+cmu-boiler-air-title = 锅炉 / 空域
+cmu-boiler-air-cost = 自动等离子 · 每次射击 200 · 需要开阔天空
+cmu-boiler-air-empty = 等离子不足 · 需要 200 才能开火
+cmu-boiler-air-cycling = 等离子恢复中 · { $seconds } 秒
+cmu-fighter-plasma-incoming = 等离子来袭
+cmu-fighter-iff-owner = [color=cyan]敌我识别归属：{ $faction }。[/color]
+cmu-fighter-iff-unassigned = [color=yellow]敌我识别归属未分配。[/color]
+cmu-fighter-iff-denied = 你的阵营无权驾驶此战斗机。
+cmu-fighter-unbuckle = 解开安全带
+cmu-fighter-targeting-ground = 瞄准镜头在起飞后可用。
+cmu-fighter-preset-alt-low = 低高度
+cmu-fighter-preset-alt-medium = 中高度
+cmu-fighter-preset-alt-high = 高高度
+cmu-fighter-preset-speed-stall = 接近失速
+cmu-fighter-preset-speed-cruise = 巡航
+cmu-fighter-preset-speed-afterburner = 加力
+cmu-fighter-targets-heading = 信号弹 / 镭射
+cmu-fighter-targets-empty = 无信号弹
+    或镭射标记
+cmu-fighter-targets-help = 选择一个标记
+    绿色 = 就绪
+cmu-fighter-weapons-heading = 武器
 cmu-fighter-weapon-brief = { $name }
-    { $rounds } rounds
-cmu-fighter-flares-short = Flares
-cmu-fighter-flares-idle = Countermeasures become available when a missile is approaching.
-ent-CMUFighterGroundLoaded = two-seat VTOL fighter
-    .desc = A strike and reconnaissance fighter supplied with six different missiles and a full internal GAU ammunition feed. Service its weapons on the ground with a power loader.
-    .suffix = Fully equipped, mixed missiles
+    { $rounds } 发
+cmu-fighter-flares-short = 信号弹
+cmu-fighter-flares-idle = 当导弹来袭时，对抗措施将可用。
+ent-CMUFighterGroundLoaded = 双座垂直起降战斗机
+    .desc = 一种打击与侦察战斗机，配备六种不同的导弹和完整的内部 GAU 弹药供弹。在地面上使用动力装载机维护其武器。
+    .suffix = 全副武装，混合导弹
 
-cmu-fighter-crash-warning = AIRFRAME FAILURE — EJECT! Impact in { $seconds } seconds!
-cmu-fighter-crashed = AIRFRAME LOST — Aircraft cannot be repaired.
-cmu-fighter-exit-blocked = There is no clear footing beside the cockpit to climb out.
+cmu-fighter-crash-warning = 机体故障 — 弹射！{ $seconds } 秒后撞击！
+cmu-fighter-crashed = 机体损毁 — 飞机无法修复。
+cmu-fighter-exit-blocked = 驾驶舱旁没有可供爬出的空旷落脚点。

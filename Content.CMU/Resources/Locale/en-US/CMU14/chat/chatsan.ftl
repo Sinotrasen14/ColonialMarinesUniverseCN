@@ -6,373 +6,373 @@ cm-chatsan-word-tho = tho
 cm-chatsan-replacement-tho = though
 
 cm-chatsan-word-afk = afk
-cm-chatsan-replacement-afk = space sleep disorder
+cm-chatsan-replacement-afk = 太空综合症
 
 cm-chatsan-word-brb = brb
-cm-chatsan-replacement-brb = be right back
+cm-chatsan-replacement-brb = 马上回来
 
 cm-chatsan-word-fr = fr
-cm-chatsan-replacement-fr = for real
+cm-chatsan-replacement-fr = 说真的
 
 cm-chatsan-word-gtg = gtg
-cm-chatsan-replacement-gtg = got to go
+cm-chatsan-replacement-gtg = 得走了
 
 cm-chatsan-word-idc = idc
-cm-chatsan-replacement-idc = I don't care
+cm-chatsan-replacement-idc = 我不在乎
 
 cm-chatsan-word-imho = imho
-cm-chatsan-replacement-imho = in my humble opinion
+cm-chatsan-replacement-imho = 依我浅见
 
 cm-chatsan-word-imo = imo
-cm-chatsan-replacement-imo = in my opinion
+cm-chatsan-replacement-imo = 依我看
 
 cm-chatsan-word-mfw = mfw
-cm-chatsan-replacement-mfw = my face when
+cm-chatsan-replacement-mfw = 我的表情就像
 
 cm-chatsan-word-ngl = ngl
-cm-chatsan-replacement-ngl = not gonna lie
+cm-chatsan-replacement-ngl = 不骗你
 
 cm-chatsan-word-omg = omg
-cm-chatsan-replacement-omg = oh my God
+cm-chatsan-replacement-omg = 我的天
 
 cm-chatsan-word-omfg = omfg
-cm-chatsan-replacement-omfg = oh my God
+cm-chatsan-replacement-omfg = 我的天
 
 cm-chatsan-word-stfu = stfu
-cm-chatsan-replacement-stfu = shut up
+cm-chatsan-replacement-stfu = 闭嘴
 
 cm-chatsan-word-tbh = tbh
-cm-chatsan-replacement-tbh = to be honest
+cm-chatsan-replacement-tbh = 说实话
 
 cm-chatsan-word-ttyl = ttyl
-cm-chatsan-replacement-ttyl = talk to you later
+cm-chatsan-replacement-ttyl = 回头再聊
 
 cm-chatsan-word-tuff = tuff
 cm-chatsan-replacement-tuff = tough
 
 cm-chatsan-word-wtf = wtf
-cm-chatsan-replacement-wtf = what the fuck
+cm-chatsan-replacement-wtf = 搞什么鬼
 
 
 # Species (mob identities)
 cm-chatsan-word-skrell = skrell
-cm-chatsan-replacement-skrell = frog host
+cm-chatsan-replacement-skrell = 青蛙宿主
 
 
 # Marines
 cm-chatsan-word-slopcade = slopcade
-cm-chatsan-replacement-slopcade = bad cades
+cm-chatsan-replacement-slopcade = 劣质工事
 
 cm-chatsan-word-admins-marine = admins
-cm-chatsan-replacement-admins-marine = high command
+cm-chatsan-replacement-admins-marine = 最高指挥部
 
 cm-chatsan-word-eorg-marine = eorg
-cm-chatsan-replacement-eorg-marine = warcrimes
+cm-chatsan-replacement-eorg-marine = 战争罪
 
 cm-chatsan-word-rwall = rwall
-cm-chatsan-replacement-rwall = reinforced wall
+cm-chatsan-replacement-rwall = 加固墙
 
 cm-chatsan-word-ne = ne
-cm-chatsan-replacement-ne = north-east
+cm-chatsan-replacement-ne = 东北
 
 cm-chatsan-word-nw = nw
-cm-chatsan-replacement-nw = north-west
+cm-chatsan-replacement-nw = 西北
 
 cm-chatsan-word-se = se
-cm-chatsan-replacement-se = south-east
+cm-chatsan-replacement-se = 东南
 
 cm-chatsan-word-sw = sw
-cm-chatsan-replacement-sw = south-west
+cm-chatsan-replacement-sw = 西南
 
 
 # Xeno
 cm-chatsan-word-eorg-xeno = eorg
-cm-chatsan-replacement-eorg-xeno = sister harm
+cm-chatsan-replacement-eorg-xeno = 同胞伤害
 
 cm-chatsan-word-sniper = sniper
-cm-chatsan-replacement-sniper = long spitter
+cm-chatsan-replacement-sniper = 远程喷吐者
 
 cm-chatsan-word-m34 = m34
-cm-chatsan-word-replacement-m34 = fire spitter
+cm-chatsan-word-replacement-m34 = 火焰喷吐者
 
 cm-chatsan-word-flare = flare
-cm-chatsan-replacement-flare = glow stick
+cm-chatsan-replacement-flare = 荧光棒
 
 cm-chatsan-word-synth = synth
-cm-chatsan-replacement-synth = fake host
+cm-chatsan-replacement-synth = 假宿主
 
 cm-chatsan-word-synthetic = synthetic
-cm-chatsan-replacement-synthetic = fake host
+cm-chatsan-replacement-synthetic = 假宿主
 
 cm-chatsan-word-synths = synths
-cm-chatsan-replacement-synths = fake hosts
+cm-chatsan-replacement-synths = 假宿主
 
 cm-chatsan-word-synthetics = synthetics
-cm-chatsan-replacement-synthetics = fake hosts
+cm-chatsan-replacement-synthetics = 假宿主
 
 cm-chatsan-word-human = human
-cm-chatsan-replacement-human = tall host
+cm-chatsan-replacement-human = 高个宿主
 
 cm-chatsan-word-humans = humans
-cm-chatsan-replacement-humans = tall hosts
+cm-chatsan-replacement-humans = 高个宿主
 
 cm-chatsan-word-lizard = lizard
-cm-chatsan-replacement-lizard = scaled host
+cm-chatsan-replacement-lizard = 鳞片宿主
 
 cm-chatsan-word-lizards = lizards
-cm-chatsan-replacement-lizards = scaled hosts
+cm-chatsan-replacement-lizards = 鳞片宿主
 
 cm-chatsan-word-reptilian = reptilian
-cm-chatsan-replacement-reptilian = scaled host
+cm-chatsan-replacement-reptilian = 鳞片宿主
 
 cm-chatsan-word-reptilians = reptilians
-cm-chatsan-replacement-reptilians = scaled hosts
+cm-chatsan-replacement-reptilians = 鳞片宿主
 
 cm-chatsan-word-dwarf = dwarf
-cm-chatsan-replacement-dwarf = short host
+cm-chatsan-replacement-dwarf = 矮个宿主
 
 cm-chatsan-word-dwarves = dwarves
-cm-chatsan-replacement-dwarves = short hosts
+cm-chatsan-replacement-dwarves = 矮个宿主
 
 cm-chatsan-word-slime = slime
-cm-chatsan-replacement-slime = slime host
+cm-chatsan-replacement-slime = 黏液宿主
 
 cm-chatsan-word-slimes = slimes
-cm-chatsan-replacement-slimes = slime hosts
+cm-chatsan-replacement-slimes = 黏液宿主
 
 cm-chatsan-word-diona = diona
-cm-chatsan-replacement-diona = plant host
+cm-chatsan-replacement-diona = 植物宿主
 
 cm-chatsan-word-dionas = dionas
-cm-chatsan-replacement-dionas = plant hosts
+cm-chatsan-replacement-dionas = 植物宿主
 
 cm-chatsan-word-moth = moth
-cm-chatsan-replacement-moth = winged host
+cm-chatsan-replacement-moth = 有翼宿主
 
 cm-chatsan-word-moths = moths
-cm-chatsan-replacement-moths = winged hosts
+cm-chatsan-replacement-moths = 有翼宿主
 
 cm-chatsan-word-mothes = mothes
-cm-chatsan-replacement-mothes = winged hosts
+cm-chatsan-replacement-mothes = 有翼宿主
 
 cm-chatsan-word-spider = spider
-cm-chatsan-replacement-spider = webspitter
+cm-chatsan-replacement-spider = 织网喷吐者
 
 cm-chatsan-word-spiders = spiders
-cm-chatsan-replacement-spiders = webspitters
+cm-chatsan-replacement-spiders = 织网喷吐者
 
 cm-chatsan-word-arachnid = arachnid
-cm-chatsan-replacement-arachnid = webspitting host
+cm-chatsan-replacement-arachnid = 织网宿主
 
 cm-chatsan-word-arachnids = arachnids
-cm-chatsan-replacement-arachnids = webspitting hosts
+cm-chatsan-replacement-arachnids = 织网宿主
 
 cm-chatsan-word-dropship = dropship
-cm-chatsan-replacement-dropship = metal bird
+cm-chatsan-replacement-dropship = 金属鸟
 
 cm-chatsan-word-dropships = dropships
-cm-chatsan-replacement-dropships = metal birds
+cm-chatsan-replacement-dropships = 金属鸟
 
 cm-chatsan-word-alamo = alamo
-cm-chatsan-replacement-alamo = metal bird
+cm-chatsan-replacement-alamo = 金属鸟
 
 cm-chatsan-word-normandy = normandy
-cm-chatsan-replacement-normandy = metal bird
+cm-chatsan-replacement-normandy = 金属鸟
 
 cm-chatsan-word-almayer = almayer
-cm-chatsan-replacement-almayer = metal hive
+cm-chatsan-replacement-almayer = 金属巢穴
 
 cm-chatsan-word-ob = ob
-cm-chatsan-replacement-ob = skyfire
+cm-chatsan-replacement-ob = 天火
 
 cm-chatsan-word-orbital = orbital
-cm-chatsan-replacement-orbital = skyfire
+cm-chatsan-replacement-orbital = 天火
 
 cm-chatsan-word-orbital-bomb = orbital bomb
-cm-chatsan-replacement-orbital-bomb = skyfire
+cm-chatsan-replacement-orbital-bomb = 天火
 
 cm-chatsan-word-orbital-bombardment = orbital bombardment
-cm-chatsan-replacement-orbital-bombardment = skyfire
+cm-chatsan-replacement-orbital-bombardment = 天火
 
 cm-chatsan-word-engie = engie
-cm-chatsan-replacement-engie = tall builder
+cm-chatsan-replacement-engie = 高个建造者
 
 cm-chatsan-word-engineer = engineer
-cm-chatsan-replacement-engineer = tall builder
+cm-chatsan-replacement-engineer = 高个建造者
 
 cm-chatsan-word-comtech = comtech
-cm-chatsan-replacement-comtech = tall builder
+cm-chatsan-replacement-comtech = 高个建造者
 
 cm-chatsan-word-combat-technician = combat technician
-cm-chatsan-replacement-combat-technician = tall builder
+cm-chatsan-replacement-combat-technician = 高个建造者
 
 cm-chatsan-word-corpsman = corpsman
-cm-chatsan-replacement-corpsman = tall healer
+cm-chatsan-replacement-corpsman = 高个治疗者
 
 cm-chatsan-word-medic = medic
-cm-chatsan-replacement-medic = tall healer
+cm-chatsan-replacement-medic = 高个治疗者
 
 cm-chatsan-word-doc = doc
-cm-chatsan-replacement-doc = tall healer
+cm-chatsan-replacement-doc = 高个治疗者
 
 cm-chatsan-word-doctor = doctor
-cm-chatsan-replacement-doctor = tall healer
+cm-chatsan-replacement-doctor = 高个治疗者
 
 cm-chatsan-word-squad-leader = squad leader
-cm-chatsan-replacement-squad-leader = tall leader
+cm-chatsan-replacement-squad-leader = 高个领袖
 
 cm-chatsan-word-sl = sl
-cm-chatsan-replacement-sl = tall leader
+cm-chatsan-replacement-sl = 高个领袖
 
 cm-chatsan-word-commanding-officer = commanding officer
-cm-chatsan-replacement-commanding-officer = tall empress
+cm-chatsan-replacement-commanding-officer = 高个女皇
 
 cm-chatsan-word-comm-officer = comm officer
-cm-chatsan-replacement-comm-officer = tall empress
+cm-chatsan-replacement-comm-officer = 高个女皇
 
 cm-chatsan-word-co = co
-cm-chatsan-replacement-co = tall empress
+cm-chatsan-replacement-co = 高个女皇
 
 cm-chatsan-word-staff-officer = staff officer
-cm-chatsan-replacement-staff-officer = tall watcher
+cm-chatsan-replacement-staff-officer = 高个观察者
 
 cm-chatsan-word-staff-officers = staff officers
-cm-chatsan-replacement-staff-officers = tall watchers
+cm-chatsan-replacement-staff-officers = 高个观察者
 
 cm-chatsan-word-xo = xo
-cm-chatsan-replacement-xo = tall queen
+cm-chatsan-replacement-xo = 高个女王
 
 cm-chatsan-word-executive-officer = executive officer
-cm-chatsan-replacement-executive-officer = tall queen
+cm-chatsan-replacement-executive-officer = 高个女王
 
 cm-chatsan-word-exec-officer = exec officer
-cm-chatsan-replacement-exec-officer = tall queen
+cm-chatsan-replacement-exec-officer = 高个女王
 
 cm-chatsan-word-senior-enlisted = senior enlisted
-cm-chatsan-replacement-senior-enlisted = young tall queen
+cm-chatsan-replacement-senior-enlisted = 年轻高个女王
 
 cm-chatsan-word-senior-enlisted-advisor = senior enlisted advisor
-cm-chatsan-replacement-senior-enlisted-advisor = young tall queen
+cm-chatsan-replacement-senior-enlisted-advisor = 年轻高个女王
 
 cm-chatsan-word-senior-enlisted-advisors = senior enlisted advisors
-cm-chatsan-replacement-senior-enlisted-advisors = young tall queens
+cm-chatsan-replacement-senior-enlisted-advisors = 年轻高个女王
 
 rmc-chatsan-word-auxiliary-support-officer = auxiliary support officer
-rmc-chatsan-replacement-auxiliary-support-officer = young tall queen
+rmc-chatsan-replacement-auxiliary-support-officer = 年轻高个女王
 
 rmc-chatsan-word-aux-support-officer = aux support officer
-rmc-chatsan-replacement-aux-support-officer = young tall queen
+rmc-chatsan-replacement-aux-support-officer = 年轻高个女王
 
 rmc-chatsan-word-aso = aso
-rmc-chatsan-replacement-aso = young tall queen
+rmc-chatsan-replacement-aso = 年轻高个女王
 
 rmc-chatsan-word-honor-guard = honor guard
-rmc-chatsan-replacement-honor-guard = tall praetorian
+rmc-chatsan-replacement-honor-guard = 高个禁卫军
 
 rmc-chatsan-word-honor-guards = honor guards
-rmc-chatsan-replacement-honor-guards = tall praetorians
+rmc-chatsan-replacement-honor-guards = 高个禁卫军
 
 rmc-chatsan-word-brigadier = brigadier
-rmc-chatsan-replacement-brigadier = tall queen mother
+rmc-chatsan-replacement-brigadier = 高个太后
 
 rmc-chatsan-word-major-general = major general
-rmc-chatsan-replacement-major-general = tall queen mother
+rmc-chatsan-replacement-major-general = 高个太后
 
 rmc-chatsan-word-lieutenant-general = lieutenant general
-rmc-chatsan-replacement-lieutenant-general = tall queen mother
+rmc-chatsan-replacement-lieutenant-general = 高个太后
 
 rmc-chatsan-word-lt-general = lt general
-rmc-chatsan-replacement-lt-general = tall queen mother
+rmc-chatsan-replacement-lt-general = 高个太后
 
 rmc-chatsan-word-commandant = commandant
-rmc-chatsan-replacement-commandant = tall queen mother
+rmc-chatsan-replacement-commandant = 高个太后
 
 rmc-chatsan-word-high-command = high command
-rmc-chatsan-replacement-high-command = tall queen mother
+rmc-chatsan-replacement-high-command = 高个太后
 
 cm-chatsan-word-lz = lz
-cm-chatsan-replacement-lz = metal bird perch
+cm-chatsan-replacement-lz = 金属鸟栖木
 
 cm-chatsan-word-shoot = shoot
-cm-chatsan-replacement-shoot = spit
+cm-chatsan-replacement-shoot = 喷吐
 
 cm-chatsan-word-felinid = felinid
-cm-chatsan-replacement-felinid = feline host
+cm-chatsan-replacement-felinid = 猫科宿主
 
 cm-chatsan-word-felinids = felinids
-cm-chatsan-replacement-felinids = feline hosts
+cm-chatsan-replacement-felinids = 猫科宿主
 
 cm-chatsan-word-marine = marine
-cm-chatsan-replacement-marine = tall host
+cm-chatsan-replacement-marine = 高个宿主
 
 cm-chatsan-word-marines = marines
-cm-chatsan-replacement-marines = tall hosts
+cm-chatsan-replacement-marines = 高个宿主
 
 cm-chatsan-word-ship = ship
-cm-chatsan-replacement-ship = metal bird
+cm-chatsan-replacement-ship = 金属鸟
 
 cm-chatsan-word-ships = ships
-cm-chatsan-replacement-ships = metal birds
+cm-chatsan-replacement-ships = 金属鸟
 
 cm-chatsan-word-grenade = grenade
-cm-chatsan-replacement-grenade = boomstick
+cm-chatsan-replacement-grenade = 爆炸棍
 
 cm-chatsan-word-grenades = grenades
-cm-chatsan-replacement-grenades = boomsticks
+cm-chatsan-replacement-grenades = 爆炸棍
 
 cm-chatsan-word-gl = gl
-cm-chatsan-replacement-gl = boomstick launcher
+cm-chatsan-replacement-gl = 爆炸棍发射器
 
 cm-chatsan-word-gls = gls
-cm-chatsan-replacement-gls = boomstick launchers
+cm-chatsan-replacement-gls = 爆炸棍发射器
 
 cm-chatsan-word-bullet = bullet
-cm-chatsan-replacement-bullet = spit
+cm-chatsan-replacement-bullet = 喷吐
 
 cm-chatsan-word-bullets = bullets
-cm-chatsan-replacement-bullets = spits
+cm-chatsan-replacement-bullets = 喷吐
 
 cm-chatsan-word-ammo = ammo
-cm-chatsan-replacement-ammo = spits
+cm-chatsan-replacement-ammo = 喷吐
 
 cm-chatsan-word-vulpkanin = vulpkanin
-cm-chatsan-replacement-vulpkanin = canine host
+cm-chatsan-replacement-vulpkanin = 犬科宿主
 
 cm-chatsan-word-vulpkanins = vulpkanins
-cm-chatsan-replacement-vulpkanins = canine hosts
+cm-chatsan-replacement-vulpkanins = 犬科宿主
 
 cm-chatsan-word-vulp = vulp
-cm-chatsan-replacement-vulp = canine host
+cm-chatsan-replacement-vulp = 犬科宿主
 
 cm-chatsan-word-vulps = vulps
-cm-chatsan-replacement-vulps = canine hosts
+cm-chatsan-replacement-vulps = 犬科宿主
 
 cm-chatsan-word-avali = avali
-cm-chatsan-replacement-avali = four-eared host
+cm-chatsan-replacement-avali = 四耳宿主
 
 cm-chatsan-word-avalis = avalis
-cm-chatsan-replacement-avalis = four-eared hosts
+cm-chatsan-replacement-avalis = 四耳宿主
 
 cm-chatsan-word-rodentia = rodentia
-cm-chatsan-replacement-rodentia = squeaking host
+cm-chatsan-replacement-rodentia = 吱吱宿主
 
 cm-chatsan-word-rodentias = rodentias
-cm-chatsan-replacement-rodentias = squeaking hosts
+cm-chatsan-replacement-rodentias = 吱吱宿主
 
 cm-chatsan-word-rodentiae = rodentiae
-cm-chatsan-replacement-rodentiae = squeaking hosts
+cm-chatsan-replacement-rodentiae = 吱吱宿主
 
 cm-chatsan-word-feroxi = feroxi
-cm-chatsan-replacement-feroxi = aquatic host
+cm-chatsan-replacement-feroxi = 水生宿主
 
 cm-chatsan-word-feroxis = feroxis
-cm-chatsan-replacement-feroxis = aquatic hosts
+cm-chatsan-replacement-feroxis = 水生宿主
 
 cm-chatsan-word-shark = shark
-cm-chatsan-replacement-shark = aquatic host
+cm-chatsan-replacement-shark = 水生宿主
 
 cm-chatsan-word-sharks = sharks
-cm-chatsan-replacement-sharks = aquatic hosts
+cm-chatsan-replacement-sharks = 水生宿主
 
 cm-chatsan-word-dog = dog
 cm-chatsan-word-corgi = corgi
@@ -380,30 +380,30 @@ cm-chatsan-word-mrwiggles = mr.wiggles
 cm-chatsan-word-mr-wiggles = mr wiggles
 cm-chatsan-word-mister-wiggles = mister wiggles
 cm-chatsan-word-puppy = puppy
-cm-chatsan-replacement-corgi = canine fuzzy
+cm-chatsan-replacement-corgi = 犬科毛球
 
 cm-chatsan-word-dogs = dogs
 cm-chatsan-word-corgies = corgies
 cm-chatsan-word-puppies = puppies
-cm-chatsan-replacement-dogs = canines
+cm-chatsan-replacement-dogs = 犬科
 
 cm-chatsan-word-cat = cat
 cm-chatsan-word-kitty = kitty
 cm-chatsan-word-kitten = kitten
-cm-chatsan-replacement-cat = feline
+cm-chatsan-replacement-cat = 猫科
 
 cm-chatsan-word-cats = cats
 cm-chatsan-word-kitties = kitties
 cm-chatsan-word-kittens = kittens
-cm-chatsan-replacement-cats = felines
+cm-chatsan-replacement-cats = 猫科
 
 cm-chatsan-word-rat = rat
 cm-chatsan-word-mouse = mouse
-cm-chatsan-replacement-rat = squeaking creature
+cm-chatsan-replacement-rat = 吱吱生物
 
 cm-chatsan-word-rats = rats
 cm-chatsan-word-mice = mice
-cm-chatsan-replacement-rats = squeaking creature
+cm-chatsan-replacement-rats = 吱吱生物
 
 cm-chatsan-word-monkey = monkey
 cm-chatsan-word-monke = monke
@@ -412,7 +412,7 @@ cm-chatsan-word-farwa = farwa
 cm-chatsan-word-stok = stok
 cm-chatsan-word-neaera = neaera
 cm-chatsan-word-yiren = yiren
-cm-chatsan-replacement-monkey = small host
+cm-chatsan-replacement-monkey = 小型宿主
 
 cm-chatsan-word-monkeys = monkeys
 cm-chatsan-word-monkies = monkies
@@ -421,329 +421,329 @@ cm-chatsan-word-farwas = farwas
 cm-chatsan-word-stoks = stoks
 cm-chatsan-word-neaeras = neaeras
 cm-chatsan-word-yirens = yirens
-cm-chatsan-replacement-monkeys = small hosts
+cm-chatsan-replacement-monkeys = 小型宿主
 
 cm-chatsan-word-laser = laser
-cm-chatsan-replacement-laser = dot
+cm-chatsan-replacement-laser = 光点
 
 cm-chatsan-word-lazer = lazer
-cm-chatsan-replacement-lazer = dot
+cm-chatsan-replacement-lazer = 光点
 
 cm-chatsan-word-flamer = flamer
-cm-chatsan-replacement-flamer = fire spitter
+cm-chatsan-replacement-flamer = 火焰喷吐者
 
 cm-chatsan-word-flamethrower = flamethrower
-cm-chatsan-replacement-flamethrower = fire spitter
+cm-chatsan-replacement-flamethrower = 火焰喷吐者
 
 cm-chatsan-word-sadar = sadar
-cm-chatsan-replacement-sadar = tuber
+cm-chatsan-replacement-sadar = 块茎
 
 cm-chatsan-word-rocket = rocket
-cm-chatsan-replacement-rocket = boom spit
+cm-chatsan-replacement-rocket = 爆炸喷吐
 
 cm-chatsan-word-grenadier = grenadier
-cm-chatsan-replacement-grenadier = boomstick spitter
+cm-chatsan-replacement-grenadier = 爆炸棍喷吐者
 
 cm-chatsan-word-scout = scout spec
-cm-chatsan-replacement-scout = tall lurker
+cm-chatsan-replacement-scout = 高个潜伏者
 
 cm-chatsan-word-scout-specialist = scout specialist
-cm-chatsan-replacement-scout-specialist = tall lurker
+cm-chatsan-replacement-scout-specialist = 高个潜伏者
 
 cm-chatsan-word-mortar = mortar
-cm-chatsan-replacement-mortar = skyboom
+cm-chatsan-replacement-mortar = 天爆
 
 cm-chatsan-word-demo = demo
-cm-chatsan-replacement-demo = boom tuber
+cm-chatsan-replacement-demo = 爆炸块茎
 
 cm-chatsan-word-demolitionist = demolitionist
-cm-chatsan-replacement-demolitionist = boom tuber
+cm-chatsan-replacement-demolitionist = 爆炸块茎
 
 cm-chatsan-word-ws = ws
-cm-chatsan-replacement-ws = special tall
+cm-chatsan-replacement-ws = 特殊高个
 
 cm-chatsan-word-spec = spec
-cm-chatsan-replacement-spec = special tall
+cm-chatsan-replacement-spec = 特殊高个
 
 cm-chatsan-word-cas = cas
-cm-chatsan-replacement-cas = skyspit
+cm-chatsan-replacement-cas = 天吐
 
 cm-chatsan-word-sensors = sensors
-cm-chatsan-replacement-sensors = evil eye tower
+cm-chatsan-replacement-sensors = 邪眼塔
 
 cm-chatsan-word-sensor-tower = sensor tower
-cm-chatsan-replacement-sensor-tower = evil eye tower
+cm-chatsan-replacement-sensor-tower = 邪眼塔
 
 cm-chatsan-word-comms = comms
-cm-chatsan-replacement-comms = tall hivemind tower
+cm-chatsan-replacement-comms = 高个蜂巢塔
 
 cm-chatsan-word-tcomms = tcomms
-cm-chatsan-replacement-tcomms = tall hivemind tower
+cm-chatsan-replacement-tcomms = 高个蜂巢塔
 
 cm-chatsan-word-communications-tower = communications tower
-cm-chatsan-replacement-communications-tower = tall hivemind tower
+cm-chatsan-replacement-communications-tower = 高个蜂巢塔
 
 cm-chatsan-word-smart-gun = smart gun
-cm-chatsan-replacement-smart-gun = smart spitter
+cm-chatsan-replacement-smart-gun = 智能喷吐者
 
 cm-chatsan-word-smartgun = smartgun
-cm-chatsan-replacement-smartgun = smart spitter
+cm-chatsan-replacement-smartgun = 智能喷吐者
 
 cm-chatsan-word-smart-gunner = smart gunner
-cm-chatsan-replacement-smart-gunner = smart spitter
+cm-chatsan-replacement-smart-gunner = 智能喷吐者
 
 cm-chatsan-word-smartgunner = smartgunner
-cm-chatsan-replacement-smartgunner = smart spitter
+cm-chatsan-replacement-smartgunner = 智能喷吐者
 
 cm-chatsan-word-sentry = sentry
 cm-chatsan-word-turret = turret
-cm-chatsan-replacement-sentry = auto spitter
+cm-chatsan-replacement-sentry = 自动喷吐者
 
 cm-chatsan-word-sentries = sentries
 cm-chatsan-word-turrets = turrets
-cm-chatsan-replacement-sentries = auto spitters
+cm-chatsan-replacement-sentries = 自动喷吐者
 
 cm-chatsan-word-shotgun = shotgun
-cm-chatsan-replacement-shotgun = scatter spitter
+cm-chatsan-replacement-shotgun = 散射喷吐者
 
 cm-chatsan-word-squad = squad
-cm-chatsan-replacement-squad = caste
+cm-chatsan-replacement-squad = 阶层
 
 cm-chatsan-word-squads = squads
-cm-chatsan-replacement-squads = castes
+cm-chatsan-replacement-squads = 阶层
 
 cm-chatsan-word-sg = sg
-cm-chatsan-replacement-sg = smart spitter
+cm-chatsan-replacement-sg = 智能喷吐者
 
 cm-chatsan-word-sgs = sgs
-cm-chatsan-replacement-sgs = smart spitters
+cm-chatsan-replacement-sgs = 智能喷吐者
 
 cm-chatsan-word-flares = flares
-cm-chatsan-replacement-flares = glow sticks
+cm-chatsan-replacement-flares = 荧光棒
 
 cm-chatsan-word-nade = nade
-cm-chatsan-replacement-nade = boomstick
+cm-chatsan-replacement-nade = 爆炸棍
 
 cm-chatsan-word-nades = nades
-cm-chatsan-replacement-nades = boomsticks
+cm-chatsan-replacement-nades = 爆炸棍
 
 cm-chatsan-word-nuke = nuke
-cm-chatsan-replacement-nuke = hive killer
+cm-chatsan-replacement-nuke = 蜂巢杀手
 
 cm-chatsan-word-intel = intel
-cm-chatsan-replacement-intel = scavenger hosts
+cm-chatsan-replacement-intel = 拾荒宿主
 
 cm-chatsan-word-survivor = survivor
-cm-chatsan-replacement-survivor = planet tall
+cm-chatsan-replacement-survivor = 行星高个
 
 cm-chatsan-word-survivors = survivors
-cm-chatsan-replacement-survivors = planet talls
+cm-chatsan-replacement-survivors = 行星高个
 
 cm-chatsan-word-surv = surv
-cm-chatsan-replacement-surv = planet tall
+cm-chatsan-replacement-surv = 行星高个
 
 cm-chatsan-word-survs = survs
-cm-chatsan-replacement-survs = planet talls
+cm-chatsan-replacement-survs = 行星高个
 
 cm-chatsan-word-bro = bro
-cm-chatsan-replacement-bro = sister
+cm-chatsan-replacement-bro = 姐妹
 
 cm-chatsan-word-bruh = bruh
-cm-chatsan-replacement-bruh = sister
+cm-chatsan-replacement-bruh = 姐妹
 
 cm-chatsan-word-bvro = bvro
-cm-chatsan-replacement-bvro = sister
+cm-chatsan-replacement-bvro = 姐妹
 
 cm-chatsan-word-xro = xro
-cm-chatsan-replacement-xro = sister
+cm-chatsan-replacement-xro = 姐妹
 
 cm-chatsan-word-naur = naur
-cm-chatsan-replacement-naur = no
+cm-chatsan-replacement-naur = 不
 
 cm-chatsan-word-dancer = d*ncer
-cm-chatsan-replacement-dancer = dancer
+cm-chatsan-replacement-dancer = 舞者
 
 cm-chatsan-word-larba = larba
-cm-chatsan-replacement-larba = larva
+cm-chatsan-replacement-larba = 幼虫
 
 cm-chatsan-word-toob = toob
-cm-chatsan-replacement-toob = tube
+cm-chatsan-replacement-toob = 管道
 
 cm-chatsan-word-toober = toober
-cm-chatsan-replacement-toober = tuber
+cm-chatsan-replacement-toober = 块茎
 
 cm-chatsan-word-cooked = cooked
-cm-chatsan-replacement-cooked = doomed
+cm-chatsan-replacement-cooked = 完蛋了
 
 cm-chatsan-word-xooked = xooked
-cm-chatsan-replacement-xooked = doomed
+cm-chatsan-replacement-xooked = 完蛋了
 
 cm-chatsan-word-xibidi = xibidi
-cm-chatsan-replacement-xibidi = tall seat
+cm-chatsan-replacement-xibidi = 高个座椅
 
 cm-chatsan-word-mcxonald = mcxonald
-cm-chatsan-replacement-mcxonald = tall garden
+cm-chatsan-replacement-mcxonald = 高个花园
 
 cm-chatsan-word-mcxonalds = mcxonalds
-cm-chatsan-replacement-mcxonalds = tall garden
+cm-chatsan-replacement-mcxonalds = 高个花园
 
 cm-chatsan-word-slop = slop
-cm-chatsan-replacement-slop = hell
+cm-chatsan-replacement-slop = 地狱
 
 cm-chatsan-word-god = god
-cm-chatsan-replacement-god = queen mother
+cm-chatsan-replacement-god = 太后
 
 cm-chatsan-word-xod = xod
-cm-chatsan-replacement-xod = queen mother
+cm-chatsan-replacement-xod = 太后
 
 cm-chatsan-word-jesus = jesus
-cm-chatsan-replacement-jesus = queen mother
+cm-chatsan-replacement-jesus = 太后
 
 cm-chatsan-word-xesus = xesus
-cm-chatsan-replacement-xesus = queen mother
+cm-chatsan-replacement-xesus = 太后
 
 cm-chatsan-word-jesus-christ = jesus christ
-cm-chatsan-replacement-jesus-christ = queen mother
+cm-chatsan-replacement-jesus-christ = 太后
 
 cm-chatsan-word-yung = yung
-cm-chatsan-replacement-yung = young
+cm-chatsan-replacement-yung = 年轻
 
 cm-chatsan-word-croosh = croosh
-cm-chatsan-replacement-croosh = crush
+cm-chatsan-replacement-croosh = 碾压
 
 cm-chatsan-word-croosher = croosher
-cm-chatsan-replacement-croosher = crusher
+cm-chatsan-replacement-croosher = 碾压者
 
 cm-chatsan-word-bald = bald
-cm-chatsan-replacement-bald = crestless
+cm-chatsan-replacement-bald = 无冠
 
 cm-chatsan-word-woyer = woyer
-cm-chatsan-replacement-woyer = warrior
+cm-chatsan-replacement-woyer = 战士
 
 cm-chatsan-word-sigma = sigma
-cm-chatsan-replacement-sigma = prime
+cm-chatsan-replacement-sigma = 精英
 
 cm-chatsan-word-xigma = xigma
-cm-chatsan-replacement-xigma = prime
+cm-chatsan-replacement-xigma = 精英
 
 cm-chatsan-word-barricade = barricade
 cm-chatsan-word-cade = cade
 cm-chatsan-word-barricades = barricades
 cm-chatsan-word-cades = cades
-cm-chatsan-replacement-barricades = metal resin
+cm-chatsan-replacement-barricades = 金属树脂
 
 cm-chatsan-word-barbed = barbed
-cm-chatsan-replacement-barbed = spiked
+cm-chatsan-replacement-barbed = 带刺
 
 cm-chatsan-word-barbs = barbs
 cm-chatsan-word-barbed-wire = barbed wire
 cm-chatsan-word-barbed-wires = barbed wires
-cm-chatsan-replacement-barbed-wires = spikes
+cm-chatsan-replacement-barbed-wires = 尖刺
 
 cm-chatsan-word-medal = medal
-cm-chatsan-replacement-medal = jelly
+cm-chatsan-replacement-medal = 凝胶
 
 cm-chatsan-word-fob = fob
-cm-chatsan-replacement-fob = tall nest
+cm-chatsan-replacement-fob = 高个巢穴
 
 cm-chatsan-word-rifle = rifle
 cm-chatsan-word-gun = gun
-cm-chatsan-replacement-rifle = spitter
+cm-chatsan-replacement-rifle = 喷吐者
 
 cm-chatsan-word-rifles = rifles
 cm-chatsan-word-guns = guns
-cm-chatsan-replacement-rifles = spitters
+cm-chatsan-replacement-rifles = 喷吐者
 
 cm-chatsan-word-pistol = pistol
-cm-chatsan-replacement-pistol = small spitter
+cm-chatsan-replacement-pistol = 小型喷吐者
 
 cm-chatsan-word-pistols = pistols
-cm-chatsan-replacement-pistols = small spitters
+cm-chatsan-replacement-pistols = 小型喷吐者
 
 cm-chatsan-word-revolver = revolver
-cm-chatsan-replacement-revolver = spinning spitter
+cm-chatsan-replacement-revolver = 旋转喷吐者
 
 cm-chatsan-word-knife = knife
-cm-chatsan-replacement-knife = fang
+cm-chatsan-replacement-knife = 尖牙
 
 cm-chatsan-word-knives = knives
-cm-chatsan-replacement-knives = fangs
+cm-chatsan-replacement-knives = 尖牙
 
 cm-chatsan-word-armor = armor
-cm-chatsan-replacement-armor = carapace
+cm-chatsan-replacement-armor = 甲壳
 
 cm-chatsan-word-armorless = armorless
-cm-chatsan-replacement-armorless = carapaceless
+cm-chatsan-replacement-armorless = 无甲壳
 
 cm-chatsan-word-helmet = helmet
-cm-chatsan-replacement-helmet = head carapace
+cm-chatsan-replacement-helmet = 头部甲壳
 
 cm-chatsan-word-medkit = medkit
-cm-chatsan-replacement-medkit = healing bundle
+cm-chatsan-replacement-medkit = 治疗包
 
 cm-chatsan-word-medkits = medkits
-cm-chatsan-replacement-medkits = healing bundles
+cm-chatsan-replacement-medkits = 治疗包
 
 cm-chatsan-word-injector = injector
 cm-chatsan-word-autoinjector = autoinjector
-cm-chatsan-replacement-injector = sting tool
+cm-chatsan-replacement-injector = 刺针工具
 
 cm-chatsan-word-injectors = injectors
 cm-chatsan-word-autoinjectors = autoinjectors
-cm-chatsan-replacement-injectors = sting tools
+cm-chatsan-replacement-injectors = 刺针工具
 
 cm-chatsan-word-bandage = bandage
-cm-chatsan-replacement-bandage = wrap
+cm-chatsan-replacement-bandage = 包扎带
 
 cm-chatsan-word-bandages = bandages
-cm-chatsan-replacement-bandages = wraps
+cm-chatsan-replacement-bandages = 包扎带
 
 cm-chatsan-word-baton = baton
-cm-chatsan-replacement-baton = shock stick
+cm-chatsan-replacement-baton = 电击棍
 
 cm-chatsan-word-batons = batons
-cm-chatsan-replacement-batons = shock sticks
+cm-chatsan-replacement-batons = 电击棍
 
 cm-chatsan-word-prisoner = prisoner
-cm-chatsan-replacement-prisoner = caged one
+cm-chatsan-replacement-prisoner = 笼中者
 
 cm-chatsan-word-battery = battery
-cm-chatsan-replacement-battery = light core
+cm-chatsan-replacement-battery = 光核
 
 cm-chatsan-word-generator = generator
-cm-chatsan-replacement-generator = light core
+cm-chatsan-replacement-generator = 光核
 
 cm-chatsan-word-generators = generators
-cm-chatsan-replacement-generators = light cores
+cm-chatsan-replacement-generators = 光核
 
 cm-chatsan-word-flashlight = flashlight
-cm-chatsan-replacement-flashlight = glow tube
+cm-chatsan-replacement-flashlight = 发光管
 
 cm-chatsan-word-flashlights = flashlights
-cm-chatsan-replacement-flashlights = glow tubes
+cm-chatsan-replacement-flashlights = 发光管
 
 cm-chatsan-word-light-bulb = light bulb
 cm-chatsan-word-lightbulb = lightbulb
-cm-chatsan-replacement-light-bulb = glow orb
+cm-chatsan-replacement-light-bulb = 发光球
 
 cm-chatsan-word-light-bulbs = light bulbs
 cm-chatsan-word-lightbulbs = lightbulbs
-cm-chatsan-replacement-light-bulbs = glow orbs
+cm-chatsan-replacement-light-bulbs = 发光球
 
 cm-chatsan-word-gunshot = gunshot
-cm-chatsan-replacement-gunshot = spit burst
+cm-chatsan-replacement-gunshot = 喷吐爆发
 
 cm-chatsan-word-gunshots = gunshots
-cm-chatsan-replacement-gunshots = spit bursts
+cm-chatsan-replacement-gunshots = 喷吐爆发
 
 cm-chatsan-word-paper = paper
-cm-chatsan-replacement-paper = message sheet
+cm-chatsan-replacement-paper = 信息纸
 
 cm-chatsan-word-folder = folder
-cm-chatsan-replacement-folder = sheet holder
+cm-chatsan-replacement-folder = 纸张夹
 
 cm-chatsan-word-papers = papers
-cm-chatsan-replacement-papers = message sheets
+cm-chatsan-replacement-papers = 信息纸
 
 cm-chatsan-word-rav = rav
 cm-chatsan-word-replacement-rav = ravager

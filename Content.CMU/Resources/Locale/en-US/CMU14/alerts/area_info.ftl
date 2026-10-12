@@ -1,2 +1,2 @@
-cmu-alerts-area-info-name = Area Info
-cmu-alerts-area-info-desc = Information of the area you are in.
+cmu-alerts-area-info-name = 区域信息
+cmu-alerts-area-info-desc = 您所在区域的信息。

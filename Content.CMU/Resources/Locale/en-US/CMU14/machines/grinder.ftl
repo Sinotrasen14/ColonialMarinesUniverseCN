@@ -1,4 +1,4 @@
-grinder-menu-bottle = bottle
-grinder-menu-dispose = dispose
-grinder-menu-link-button = link
-grinder-lost-link = The reagent grinder lost its smart fridge link.
+grinder-menu-bottle = 瓶子
+grinder-menu-dispose = 丢弃
+grinder-menu-link-button = 连接
+grinder-lost-link = 试剂研磨机失去了与智能冰箱的连接。

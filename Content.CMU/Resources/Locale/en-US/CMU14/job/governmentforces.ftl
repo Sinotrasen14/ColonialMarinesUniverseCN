@@ -1,142 +1,142 @@
-au14-department-govforces-description = Government Forces
-au14-department-govforces = Government Forces
+au14-department-govforces-description = 政府军
+au14-department-govforces = 政府军
 
-au14-job-supervisors-govforplatco = High Command
-au14-job-supervisors-govfor = Commanding Officer
+au14-job-supervisors-govforplatco = 最高指挥部
+au14-job-supervisors-govfor = 舰长
 
-au14-job-name-govforplatco = Commanding Officer
-au14-job-description-govforplatco = Command the unit. Manage strategy, unit coordination and liaise with command from the CIC.
+au14-job-name-govforplatco = 舰长
+au14-job-description-govforplatco = 指挥部队。管理战略、部队协调，并在CIC与指挥部联络。
 au14-job-prefix-govforplatco = CMNDR
 
-au14-job-name-govforadjutant = Executive Officer
-au14-job-description-govforadjutant = Stand ready to assume command. Handle unit administration and keep the chain of command running smoothly.
+au14-job-name-govforadjutant = 执行官
+au14-job-description-govforadjutant = 随时准备接管指挥。处理部队行政事务，保持指挥链顺畅运转。
 au14-job-prefix-govforadjutant = XO
 
-au14-job-name-govforplatop = Staff Officer
-au14-job-description-govforplatop = Plan operations and track the battlefield. Turn the Commanding Officer's intent into orders, assist with coordination, and operational oversight.
+au14-job-name-govforplatop = 参谋军官
+au14-job-description-govforplatop = 规划行动并追踪战场态势。将舰长的意图转化为命令，协助协调与作战监督。
 au14-job-prefix-govforplatop = SO
 
-au14-job-name-govforengineering = Engineering Officer
-au14-job-description-govforengineering = Keep the unit's structures, assets and equipment operational under pressure. Renovate the ship as you deem fit.
+au14-job-name-govforengineering = 工程军官
+au14-job-description-govforengineering = 在压力下保持部队的设施、资产和装备正常运转。按你认为合适的方式改造舰船。
 au14-job-prefix-govforengineering = EO
 
-au14-job-name-govforintel = Intelligence Officer
-au14-job-description-govforintel = Assist the Commanding Officer with intelligence.
+au14-job-name-govforintel = 情报军官
+au14-job-description-govforintel = 协助舰长处理情报事务。
 au14-job-prefix-govforintel = IO
 
-au14-job-name-govforlogistics = Logistics Officer
-au14-job-description-govforlogistics = Keep the frontline supplied. Aid your technicians in managing requisitions and distribution, while keeping the budget under control.
+au14-job-name-govforlogistics = 后勤军官
+au14-job-description-govforlogistics = 保持前线补给。协助你的技术人员管理请领与分发，同时控制预算。
 au14-job-prefix-govforlogistics = LO
 
-au14-job-name-govformo = Chief Medical Officer
-au14-job-description-govformo = Oversee the unit's medical staff and resources. Keep the wounded alive and the sick fit to fight.
+au14-job-name-govformo = 首席医疗官
+au14-job-description-govformo = 监督部队的医疗人员和资源。让伤员活下去，让病员恢复战斗力。
 au14-job-prefix-govformo = CMO
 
-au14-job-name-govforpolicechief = Chief MP Officer
-au14-job-description-govforpolicechief = Oversee military police operations. Enforce discipline and maintain order within the unit.
+au14-job-name-govforpolicechief = 宪兵主任
+au14-job-description-govforpolicechief = 监督宪兵行动。执行纪律，维护部队内部秩序。
 au14-job-prefix-govforpolicechief = CMP
 
-au14-job-name-govfordspilot = Dropship Pilot
-au14-job-description-govfordspilot = Fly the dropship. Insert troops, extract casualties, and deliver fire support.
+au14-job-name-govfordspilot = 运输机飞行员
+au14-job-description-govfordspilot = 驾驶运输机。投送部队、撤离伤员并提供火力支援。
 au14-job-prefix-govfordspilot = DP
 
-au14-job-name-govfortransportpilot = Transport Pilot
-au14-job-description-govfortransportpilot = Fly the dropship. Insert troops, extract casualties, and move supplies between the ship and the front.
+au14-job-name-govfortransportpilot = 运输飞行员
+au14-job-description-govfortransportpilot = 驾驶运输机。投送部队、撤离伤员，并在舰船与前线之间运送补给。
 au14-job-prefix-govfortransportpilot = TP
 
-au14-job-name-govforgunshippilot = Gunship Pilot
-au14-job-description-govforgunshippilot = Fly the gunship. Provide close air support and suppress enemy positions.
+au14-job-name-govforgunshippilot = 炮艇飞行员
+au14-job-description-govforgunshippilot = 驾驶炮艇。提供近距离空中支援并压制敌方阵地。
 au14-job-prefix-govforgunshippilot = GP
 
-au14-job-name-govforfighterpilot = Fighter Pilot
-au14-job-description-govforfighterpilot = Fly the fighter. Win air superiority, intercept enemy aircraft and mark targets.
+au14-job-name-govforfighterpilot = 战斗机飞行员
+au14-job-description-govforfighterpilot = 驾驶战斗机。夺取制空权、拦截敌机并标记目标。
 au14-job-prefix-govforfighterpilot = FP
 
-au14-job-name-govforfightersystemsofficer = Fighter Systems Officer
-au14-job-description-govforfightersystemsofficer = Crew the fighter's back seat. Run its weapon systems and strike targets.
+au14-job-name-govforfightersystemsofficer = 战斗机系统官
+au14-job-description-govforfightersystemsofficer = 担任战斗机后座乘员。操作其武器系统并打击目标。
 au14-job-prefix-govforfightersystemsofficer = FSO
 
-au14-job-name-govfordcc = Dropship Crew Chief
-au14-job-description-govfordcc = Maintain the dropships. Coordinate cargo, passengers, and assist the pilots.
+au14-job-name-govfordcc = 运输机机务长
+au14-job-description-govfordcc = 维护运输机。协调货物、乘客，并协助飞行员。
 au14-job-prefix-govfordcc = DCC
 
-au14-job-name-govforSSG = Senior Sergeant
-au14-job-description-govforSSG = Senior enlisted. Keep the platoon running.
+au14-job-name-govforSSG = 高级军士
+au14-job-description-govforSSG = 高级士兵。保持排部运转。
 au14-job-prefix-govforSSG = SNRSRGT
 
-au14-job-name-govforsquadsergeant = Squad Leader
-au14-job-description-govforsquadsergeant = Lead a Squad. Follow orders from the top and get your people home.
+au14-job-name-govforsquadsergeant = 班长
+au14-job-description-govforsquadsergeant = 领导一个班。服从上级命令，把你的人带回家。
 au14-job-prefix-govforsquadsergeant = SL
 
-au14-job-name-govforsquadrifleman = Rifleman
-au14-job-description-govforsquadrifleman = The backbone of the unit. Follow orders, pull security, and shoot straight.
+au14-job-name-govforsquadrifleman = 步枪兵
+au14-job-description-govforsquadrifleman = 部队的骨干。服从命令、警戒安保、精准射击。
 au14-job-prefix-govforsquadrifleman = RFN
 
-au14-job-name-govforcombatcorrespondent = Combat Correspondent
-au14-job-description-govforcombatcorrespondent = Embed with the unit to report on the operation. Follow orders, pull security, and get the story.
+au14-job-name-govforcombatcorrespondent = 战地记者
+au14-job-description-govforcombatcorrespondent = 随部队嵌入报道行动。服从命令、警戒安保，并获取报道素材。
 au14-job-prefix-govforcombatcorrespondent = CC
 
-au14-job-name-govforsquadautomaticrifleman = Automatic Rifleman
-au14-job-name-govforsquadautomaticrifleman-plural = Automatic Riflemen
-au14-job-description-govforsquadautomaticrifleman = Lay down suppressive fire. Keep the enemy's head down and your squad moving.
+au14-job-name-govforsquadautomaticrifleman = 自动步枪兵
+au14-job-name-govforsquadautomaticrifleman-plural = 自动步枪兵
+au14-job-description-govforsquadautomaticrifleman = 提供压制火力。压制敌人，让你的班继续推进。
 au14-job-prefix-govforsquadautomaticrifleman = ARFN
 
-au14-job-name-govforplatooncorpsman = Hospital Corpsman
-au14-job-description-govforplatooncorpsman = Provide field medical aid. Patch them up, keep them breathing, and get them back in the fight.
-au14-job-name-govforplatooncorpsman-plural = Hospital Corpsmen
+au14-job-name-govforplatooncorpsman = 医院医护兵
+au14-job-description-govforplatooncorpsman = 提供战地医疗救护。包扎伤口、维持呼吸，让他们重返战斗。
+au14-job-name-govforplatooncorpsman-plural = 医院医护兵
 au14-job-prefix-govforplatooncorpsman = HM
 
-au14-job-name-radiotelephoneoperator = Fireteam Leader
-au14-job-name-radiotelephoneoperator-alt = Radio Telephone Operator
-au14-job-description-radiotelephoneoperator = Operate long-range comms and lead fireteams.
+au14-job-name-radiotelephoneoperator = 火力小组组长
+au14-job-name-radiotelephoneoperator-alt = 无线电电话操作员
+au14-job-description-radiotelephoneoperator = 操作远程通信并领导火力小组。
 au14-job-prefix-radiotelephoneoperator = FTL
 
-au14-job-name-radiotrafficoperator = Radio Traffic Operator
-au14-job-description-radiotrafficoperator = Monitor and relay radio traffic between the platoon and command.
+au14-job-name-radiotrafficoperator = 无线电通信操作员
+au14-job-description-radiotrafficoperator = 监控并转达排部与指挥部之间的无线电通信。
 au14-job-prefix-radiotrafficoperator = RTFO
 
-au14-job-name-govforauxsupportsynth = Support Synthetic
-au14-job-description-govforauxsupportsynth = Provide logistics, medical, police and command support for your faction.
+au14-job-name-govforauxsupportsynth = 支援合成人
+au14-job-description-govforauxsupportsynth = 为你的阵营提供后勤、医疗、安保和指挥支援。
 au14-job-prefix-govforauxsupportsynth = SYNTH
 
-au14-job-name-govforsquadcombattech = Combat Technician
-au14-job-description-govforsquadcombattech = Provide engineering and construction support for your faction.
+au14-job-name-govforsquadcombattech = 战斗技术员
+au14-job-description-govforsquadcombattech = 为你的阵营提供工程和建造支援。
 au14-job-prefix-govforsquadcombattech = CT
 
-au14-job-name-govforadvisor = Advisor
-au14-job-description-govforadvisor = Advise command, mentor new soldiers and provide assistance wherever needed.
+au14-job-name-govforadvisor = 顾问
+au14-job-description-govforadvisor = 为指挥部提供建议，指导新兵，并在任何需要的地方提供协助。
 au14-job-prefix-govforadvisor = ADV
 
-au14-job-name-govforMilitaryDoctor = Medical Officer
-au14-job-description-govforMilitaryDoctor = Provide your faction with higher levels of medical care.
+au14-job-name-govforMilitaryDoctor = 医疗军官
+au14-job-description-govforMilitaryDoctor = 为你的阵营提供更高水平的医疗服务。
 au14-job-prefix-govforMilitaryDoctor = DOC
 
-au14-job-name-govformilitarypoliceman = Military Policeman
-au14-job-description-govformilitarypoliceman = Provide your faction with police support.
+au14-job-name-govformilitarypoliceman = 宪兵
+au14-job-description-govformilitarypoliceman = 为你的阵营提供安保支援。
 au14-job-prefix-govformilitarypoliceman = MP
 
-au14-job-name-govforAuxTech = Logistics Technician
-au14-job-description-govforAuxTech = Run requisitions, keep the ship running and tidy. Provide your faction with shipside logistics and engineering support.
+au14-job-name-govforAuxTech = 后勤技术员
+au14-job-description-govforAuxTech = 处理请领事务，保持舰船运转和整洁。为你的阵营提供舰上后勤与工程支援。
 au14-job-prefix-govforAuxTech = AXT
 
-au14-job-name-vehiclecrewman = Vehicle Crewman
-au14-job-description-vehiclecrewman = Operate, maintain and protect your faction's armored vehicles.
+au14-job-name-vehiclecrewman = 载具乘员
+au14-job-description-vehiclecrewman = 操作、维护并保护你所在阵营的装甲载具。
 au14-job-prefix-vehiclecrewman = VC
 
-au14-job-name-vehiclecommander = Vehicle Commander
-au14-job-description-vehiclecommander = Command your faction's armored vehicles. Direct the crew, coordinate with infantry, and keep the vehicle in the fight.
+au14-job-name-vehiclecommander = 载具指挥官
+au14-job-description-vehiclecommander = 指挥你所在阵营的装甲载具。指导乘员、协调步兵，并让载具持续参战。
 au14-job-prefix-vehiclecommander = VCO
 
-au14-job-name-govforweaponsspecialist = Weapons Specialist
-au14-job-description-govforweaponsspecialist = Operate your factions fire support and cover your squad.
+au14-job-name-govforweaponsspecialist = 武器专家
+au14-job-description-govforweaponsspecialist = 操作你所在阵营的火力支援武器并掩护你的班。
 au14-job-prefix-govforweaponsspecialist = WS
 
-au14-job-name-govfornurse = Nurse
-au14-job-description-govfornurse = Assist doctors and corpsmen in treating the wounded.
+au14-job-name-govfornurse = 护士
+au14-job-description-govfornurse = 协助医生和医护兵治疗伤员。
 au14-job-prefix-govfornurse = RN
 
-au14-job-name-govforengineeringtech = Engineering Technician
-au14-job-description-govforengineeringtech = Provide construction and engineering support for your faction.
+au14-job-name-govforengineeringtech = 工程技术员
+au14-job-description-govforengineeringtech = 为你的阵营提供建造和工程支援。
 au14-job-prefix-govforengineeringtech = ET
 
 au14-job-prefix-AU14JobGOVFORPlatCoWYPMC = OPDIR
@@ -167,42 +167,42 @@ au14-job-prefix-AU14JobGOVFORSectionSergeantCMBCIU = ULDR
 au14-job-prefix-AU14JobGOVFORSquadRiflemanCMBCIU = OFF
 au14-job-prefix-AU14JobGOVFORSquadSergeantCMBCIU = TLDR
 
-au14-job-name-govforsquadsergeantRMC = Team Leader
+au14-job-name-govforsquadsergeantRMC = 队长
 au14-job-prefix-govforsquadsergeantRMC = SC
-au14-job-name-govforsquadautomaticriflemanRMC = Machinegunner
+au14-job-name-govforsquadautomaticriflemanRMC = 机枪手
 au14-job-prefix-govforsquadautomaticriflemanRMC = MG
-au14-job-name-govforauxsupportsynthRMC = Support Synthetic
-au14-job-name-govforplatcoRMC = Commanding Officer
-au14-job-name-govforplatooncorpsmanRMC = Hospital Corpsman
-au14-job-name-govfordccRMC = Dropship Chief Crew
-au14-job-name-govforplatopRMC = Staff Officer
-au14-job-name-govfordspilotRMC = Pilot Officer
+au14-job-name-govforauxsupportsynthRMC = 支援合成人
+au14-job-name-govforplatcoRMC = 舰长
+au14-job-name-govforplatooncorpsmanRMC = 医院医护兵
+au14-job-name-govfordccRMC = 运输机机务长
+au14-job-name-govforplatopRMC = 参谋军官
+au14-job-name-govfordspilotRMC = 飞行员军官
 au14-job-prefix-govfordspilotRMC = PO
-au14-job-name-govforSSGRMC = Senior Sergeant
+au14-job-name-govforSSGRMC = 高级军士
 au14-job-prefix-govforSSGRMC = PS
-au14-job-name-radiotelephoneoperatorRMC = Signal Operator
-au14-job-name-govforsquadriflemanRMC = Rifleman
-au14-job-name-govforsquadcombattechRMC = Sapper
+au14-job-name-radiotelephoneoperatorRMC = 通信操作员
+au14-job-name-govforsquadriflemanRMC = 步枪兵
+au14-job-name-govforsquadcombattechRMC = 工兵
 au14-job-prefix-govforsquadcombattechRMC = SPR
-au14-job-name-govforspecialist-marksmanRMC = Marksman
+au14-job-name-govforspecialist-marksmanRMC = 精确射手
 au14-job-prefix-govforspecialist-marksmanRMC = MRN
-au14-job-name-govforspecialist-pointmanRMC = Pointman
+au14-job-name-govforspecialist-pointmanRMC = 尖兵
 au14-job-prefix-govforspecialist-pointmanRMC = PNM
-au14-job-name-govforspecialist-grenadierRMC = Grenadier
+au14-job-name-govforspecialist-grenadierRMC = 掷弹兵
 au14-job-prefix-govforspecialist-grenadierRMC = GNR
 
-au-14-job-name-rmcrrt-commander = Commander
+au-14-job-name-rmcrrt-commander = 指挥官
 au-14-job-prefix-rmcrrt-commander = CMD
 
-au14-job-name-govforspecialist-heavyantitankUPP = Antitank
+au14-job-name-govforspecialist-heavyantitankUPP = 反坦克兵
 au14-job-prefix-govforspecialist-heavyantitankUPP = HAT
-au14-job-name-govforspecialist-marksmanUPP = Marksman
+au14-job-name-govforspecialist-marksmanUPP = 精确射手
 au14-job-prefix-govforspecialist-marksmanUPP = MRN
-au14-job-name-govforspecialist-pointmanUPP = Pointman
+au14-job-name-govforspecialist-pointmanUPP = 尖兵
 au14-job-prefix-govforspecialist-pointmanUPP = PNM
 
-au-14-job-name-uppgrom-squadleader = Squad Leader
+au-14-job-name-uppgrom-squadleader = 班长
 au-14-job-prefix-uppgrom-squadleader = SL
 
-au14-job-name-specialist-pyro = Pyrotechnician
+au14-job-name-specialist-pyro = 烟火技师
 au14-job-prefix-specialist-pyro = PYRO

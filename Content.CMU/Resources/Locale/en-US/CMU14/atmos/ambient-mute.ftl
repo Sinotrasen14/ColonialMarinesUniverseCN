@@ -1,2 +1,2 @@
-cmu-ambient-mute-muted = You loosen the panel, muffling the machine's hum.
-cmu-ambient-mute-unmuted = You screw the panel back in, restoring the hum.
+cmu-ambient-mute-muted = 你松开面板，机器的嗡鸣声被闷住了。
+cmu-ambient-mute-unmuted = 你把面板重新拧上，嗡鸣声恢复了。

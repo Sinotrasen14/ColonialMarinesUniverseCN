@@ -1,5 +1,5 @@
-trait-british-name = British Accent
-trait-british-desc = You speak like a person from England! Wagwan mate.
+trait-british-name = 英国口音
+trait-british-desc = 你说话像个英格兰人！Wagwan mate.
 
 accent-british-words-1 = guy
 accent-british-words-replace-1 = bloke

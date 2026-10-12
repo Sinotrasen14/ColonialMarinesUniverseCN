@@ -1,55 +1,55 @@
-detailed-examine-verb-text = Detailed Examine
-detailed-examine-verb-disabled = You need to get closer to examine them in detail.
-detailed-examine-window-title = Detailed Examine
+detailed-examine-verb-text = 详细检查
+detailed-examine-verb-disabled = 你需要靠近才能详细检查他们。
+detailed-examine-window-title = 详细检查
 
-detailed-examine-age = Age
-detailed-examine-height = Height
-detailed-examine-weight = Weight
-detailed-examine-weight-value = { $weight } lbs
-detailed-examine-build = Build
-detailed-examine-skin-tone = Skin Tone
-detailed-examine-hair-color = Hair Color
-detailed-examine-eye-color = Eye Color
-detailed-examine-allegiance = Allegiance
-detailed-examine-origin = Origin
-detailed-examine-full-description = Full Character Description
-detailed-examine-medical-record = Medical Record
-detailed-examine-criminal-record = Criminal Record
-detailed-examine-general-record = General Record
+detailed-examine-age = 年龄
+detailed-examine-height = 身高
+detailed-examine-weight = 体重
+detailed-examine-weight-value = { $weight } 磅
+detailed-examine-build = 体型
+detailed-examine-skin-tone = 肤色
+detailed-examine-hair-color = 发色
+detailed-examine-eye-color = 瞳色
+detailed-examine-allegiance = 效忠
+detailed-examine-origin = 出身
+detailed-examine-full-description = 完整角色描述
+detailed-examine-medical-record = 医疗记录
+detailed-examine-criminal-record = 犯罪记录
+detailed-examine-general-record = 一般记录
 
-detailed-examine-age-tooltip = The character's age.
-detailed-examine-height-tooltip = The character's height, in feet'inches.
-detailed-examine-weight-tooltip = The character's weight in lbs.
-detailed-examine-build-tooltip = The character's physical build.
-detailed-examine-skin-tone-tooltip = Nearest named color to the character's skin.
-detailed-examine-hair-color-tooltip = Nearest named color to the character's hair.
-detailed-examine-eye-color-tooltip = Nearest named color to the character's eyes.
-detailed-examine-allegiance-tooltip = The character's declared allegiance.
-detailed-examine-origin-tooltip = The character's origin.
-detailed-examine-full-description-tooltip = A full description of the character's appearance and demeanor.
-detailed-examine-medical-record-tooltip = The character's medical record. Disability traits are listed automatically.
-detailed-examine-criminal-record-tooltip = The character's criminal record.
-detailed-examine-general-record-tooltip = The character's general record.
+detailed-examine-age-tooltip = 角色的年龄。
+detailed-examine-height-tooltip = 角色的身高，以英尺'英寸表示。
+detailed-examine-weight-tooltip = 角色的体重，以磅为单位。
+detailed-examine-build-tooltip = 角色的体格。
+detailed-examine-skin-tone-tooltip = 与角色肤色最接近的命名颜色。
+detailed-examine-hair-color-tooltip = 与角色发色最接近的命名颜色。
+detailed-examine-eye-color-tooltip = 与角色瞳色最接近的命名颜色。
+detailed-examine-allegiance-tooltip = 角色声明的效忠对象。
+detailed-examine-origin-tooltip = 角色的出身。
+detailed-examine-full-description-tooltip = 角色外貌与举止的完整描述。
+detailed-examine-medical-record-tooltip = 角色的医疗记录。残疾特质会自动列出。
+detailed-examine-criminal-record-tooltip = 角色的犯罪记录。
+detailed-examine-general-record-tooltip = 角色的一般记录。
 
-medical-record-disability-line = Has { $trait }.
-medical-record-allergy-line = Allergic to { $reagent }.
+medical-record-disability-line = 患有 { $trait }。
+medical-record-allergy-line = 对 { $reagent } 过敏。
 
-build-type-thin = Thin
-build-type-lean = Lean
-build-type-average = Average
-build-type-athletic = Athletic
-build-type-muscular = Muscular
-build-type-broad = Broad
-build-type-stocky = Stocky
-build-type-heavyset = Heavyset
+build-type-thin = 瘦削
+build-type-lean = 精瘦
+build-type-average = 普通
+build-type-athletic = 健壮
+build-type-muscular = 肌肉发达
+build-type-broad = 宽厚
+build-type-stocky = 敦实
+build-type-heavyset = 魁梧
 
-faction-roster-console-window-title = Personnel Roster
-faction-roster-console-refresh-button = Refresh
+faction-roster-console-window-title = 人员名册
+faction-roster-console-refresh-button = 刷新
 faction-roster-console-count = { $count } { $count ->
-    [one] entry
-   *[other] entries
+    [one] 条目
+   *[other] 条目
 }
-faction-roster-console-colonist-job = Colonist
-faction-roster-console-count-tooltip = Number of personnel currently on file.
-faction-roster-console-refresh-tooltip = Re-query the roster for new or departed personnel.
-faction-roster-console-entry-tooltip = Click to open { $name }'s full dossier.
+faction-roster-console-colonist-job = 殖民者
+faction-roster-console-count-tooltip = 当前在册的人员数量。
+faction-roster-console-refresh-tooltip = 重新查询名册以获取新加入或已离开的人员。
+faction-roster-console-entry-tooltip = 点击打开 { $name } 的完整档案。

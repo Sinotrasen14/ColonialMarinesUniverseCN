@@ -1,13 +1,13 @@
-action-name-workingjoe-voice = Voice Synthesizer
-action-desc-workingjoe-voice = Opens a Working Joe Voice Synthesizer.
-working-joe-reboot-verb = Reboot Unit
+action-name-workingjoe-voice = 语音合成器
+action-desc-workingjoe-voice = 打开 Working Joe 语音合成器。
+working-joe-reboot-verb = 重启单元
 
-working-joe-voice-window-title = Working Joe Voice Synthesizer
-working-joe-voice-search-placeholder = Search voicelines...
-working-joe-voice-category-all = All
-working-joe-voice-category-favorites = ★ Favorites
-working-joe-voice-category-recent = ⏲ Recent
-working-joe-voice-category-questions = Questions
-working-joe-voice-favorite-add = Add to favorites
-working-joe-voice-favorite-remove = Remove from favorites
-working-joe-voice-no-results = No results.
+working-joe-voice-window-title = Working Joe 语音合成器
+working-joe-voice-search-placeholder = 搜索语音台词……
+working-joe-voice-category-all = 全部
+working-joe-voice-category-favorites = ★ 收藏
+working-joe-voice-category-recent = ⏲ 最近
+working-joe-voice-category-questions = 问题
+working-joe-voice-favorite-add = 添加到收藏
+working-joe-voice-favorite-remove = 从收藏中移除
+working-joe-voice-no-results = 无结果。

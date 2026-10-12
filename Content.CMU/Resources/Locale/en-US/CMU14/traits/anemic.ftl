@@ -1,3 +1,3 @@
-au14-trait-anemic-name = Anemic
-au14-trait-anemic-desc = You have a reduced red blood cell count and carry less oxygen through your bloodstream than an average person. You bleed out faster.
-au14-anemic-bleeding = You feel lightheaded - you're losing blood faster than you should be.
+au14-trait-anemic-name = 贫血
+au14-trait-anemic-desc = 你的红细胞计数偏低，血液携带氧气的能力低于常人。你失血的速度更快。
+au14-anemic-bleeding = 你感到头晕目眩——你的失血速度比正常情况更快。

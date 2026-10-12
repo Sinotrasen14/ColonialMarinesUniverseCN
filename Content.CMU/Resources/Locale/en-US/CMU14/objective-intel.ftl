@@ -1,7 +1,7 @@
-objective-intel-window-title = Objective Intel
-objective-intel-unlocked = [color=red][bold]Unlocked intel:[/bold][/color]
-objective-intel-points = Intel Points:
-objective-intel-next-tier = Next tier: { $current }/{ $total }
-objective-intel-all-tiers-summary = Next tier: All tiers unlocked
-objective-intel-all-unlocked = All intel tiers unlocked.
-objective-intel-unlock = Unlock: [{ $cost }]
+objective-intel-window-title = 目标情报
+objective-intel-unlocked = [color=red][bold]已解锁情报：[/bold][/color]
+objective-intel-points = 情报点数：
+objective-intel-next-tier = 下一层级：{ $current }/{ $total }
+objective-intel-all-tiers-summary = 下一层级：所有层级已解锁
+objective-intel-all-unlocked = 所有情报层级已解锁。
+objective-intel-unlock = 解锁：[{ $cost }]

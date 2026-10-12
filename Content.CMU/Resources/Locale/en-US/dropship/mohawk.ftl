@@ -1,9 +1,9 @@
-cmu-mohawk-floor = Mohawk deck
-cmu-mohawk-roof = Mohawk upper hull plating
-cmu-mohawk-ramp = Mohawk boarding ramp
-cmu-mohawk-camera-omaha = Omaha cameras
-cmu-mohawk-camera-midway = Midway cameras
-cmu-mohawk-flight-interlock = The flight interlock prevents deploying the ramp or ladder.
+cmu-mohawk-floor = Mohawk 甲板
+cmu-mohawk-roof = Mohawk 上层船体装甲
+cmu-mohawk-ramp = Mohawk 登机坡道
+cmu-mohawk-camera-omaha = Omaha 摄像头
+cmu-mohawk-camera-midway = Midway 摄像头
+cmu-mohawk-flight-interlock = 飞行联锁会阻止放下舷梯或梯子。
 cmu-mohawk-landing-obstructed = The landing site does not have clearance for all three decks.
 cmu-mohawk-controls-broken = The remote connection is damaged. Repair it with a multitool.
 cmu-mohawk-controls-unskilled = You need engineering or piloting training to repair these controls.

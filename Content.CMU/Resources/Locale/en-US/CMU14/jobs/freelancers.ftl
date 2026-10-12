@@ -1,10 +1,10 @@
-cmu-freelancer-name-rifleman = Freelancer Rifleman
-cmu-freelancer-name-medic = Freelancer Medic
-cmu-freelancer-name-leader = Freelancer Leader
-cmu-freelancer-description = A gun for hire. Whoever pays the credits gets the bullets, everyone else gets to take their chances.
+cmu-freelancer-name-rifleman = 自由佣兵步枪手
+cmu-freelancer-name-medic = 自由佣兵医疗兵
+cmu-freelancer-name-leader = 自由佣兵队长
+cmu-freelancer-description = 拿钱办事的枪手。谁付得起信用点，谁就能得到子弹，其他人就只能自求多福了。
 cmu-freelancer-prefix-rifleman = FRFN
 cmu-freelancer-prefix-medic = FMED
 cmu-freelancer-prefix-leader = FSL
-cmu-freelancer-leader = the freelancer team leader
-cmu-freelancer-rules = You are a freelancer, a soldier of fortune. You are neutral toward everyone unless your contract says otherwise. Stay professional, follow the contract, and get paid.
-cmu-freelancer-greeting = You are a freelancer. Your team has taken a contract in this theatre. Follow your leader, honor the contract, and get out rich or not at all.
+cmu-freelancer-leader = 自由佣兵团队的队长
+cmu-freelancer-rules = 你是一名自由佣兵，一个为钱而战的士兵。除非你的合同另有规定，否则你对所有人保持中立。保持专业，遵守合同，拿到报酬。
+cmu-freelancer-greeting = 你是一名自由佣兵。你的团队在这个战区接了一份合同。跟随你的队长，履行合同，要么满载而归，要么有去无回。

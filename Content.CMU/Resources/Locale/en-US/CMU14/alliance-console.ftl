@@ -1,6 +1,6 @@
-alliance-console-title = Alliance Console
-alliance-console-faction-title = Alliance Console — { $faction }
-alliance-console-subtitle = Set the standing of third-party factions.
-alliance-console-status-neutral = Neutral
-alliance-console-status-friendly = Friendly
-alliance-console-status-hostile = Hostile
+alliance-console-title = 联盟控制台
+alliance-console-faction-title = 联盟控制台 — { $faction }
+alliance-console-subtitle = 设置第三方派系的声望。
+alliance-console-status-neutral = 中立
+alliance-console-status-friendly = 友好
+alliance-console-status-hostile = 敌对

@@ -1,29 +1,29 @@
-cmu-aegis-high-command = [font size=16][bold][color=#CECECE]High Command Priority Directive[/color][/bold][/font][font size=16][color=red]
-    {"["}color=#7a1f1f]⬢ MILITARY CONFIDENTIAL // OPERATION AEGIS ⬢[/color]
+cmu-aegis-high-command = [font size=16][bold][color=#CECECE]最高指挥部优先指令[/color][/bold][/font][font size=16][color=red]
+    {"["}color=#7a1f1f]⬢ 军事机密 // 神盾行动 ⬢[/color]
     {"["}color=#7a1f1f]▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄[/color]
-    Attention all personnel,
-    High Command has authorized the deployment of an AEGIS Armaments strategic weapons platform in support of your current operation.
-    This asset represents a significant military investment and is considered mission critical.
-    Your force is hereby tasked with locating the asset and the security authorization key required to activate it.
-    Recovery equipment and activation materials with supporting documentation are being delivered through your logistical support network.
-    Command staff will receive additional operational guidance under separate transmission.
-    {"["}bold]WARNING:[/bold] Once secured, operational authority is granted to employ the asset should tactical conditions warrant its use. Exercise extreme caution!
-    The platform possesses destructive capabilities beyond those of conventional battlefield ordnance.
-    {"["}bold]Under no circumstances is the asset or its activation key to fall into hostile hands.[/bold]
-    Mission success depends upon your discipline and professionalism, more importantly your resolve.
+    全体人员注意，
+    最高指挥部已授权部署一套神盾军备战略武器平台，以支援你当前的行动。
+    该资产代表着一项重大的军事投入，并被视为任务关键。
+    你的部队现受命定位该资产以及激活它所需的安保授权密钥。
+    回收设备与激活材料及相关文件正通过你的后勤支援网络送达。
+    指挥部人员将通过另一份传输收到额外的行动指导。
+    {"["}bold]警告：[/bold]一旦确保该资产，若战术条件需要，你将获得使用该资产的行动授权。务必极度谨慎！
+    该平台拥有超越常规战场弹药的毁灭性能力。
+    {"["}bold]在任何情况下，该资产或其激活密钥都不得落入敌手。[/bold]
+    任务成功取决于你的纪律与专业素养，更重要的是你的决心。
     {"["}color=#7a1f1f]‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾[/color]
-    {"["}italic]Issued by order of High Command.[/italic][/color][/font]
+    {"["}italic]由最高指挥部下令发布。[/italic][/color][/font]
 
-cmu-aegis-queen-mother = [head=3][color=Red]Daughters, danger is amidst you.
-    A powerful device of the tall ones looms above your hive.
-    A special weapon of the skyfire, forged by cold metal and hungerless minds, capable of bringing ruin upon all that surrounds you.
-    It was left behind when the tall ones fled their failed hive.
-    They seek to reclaim its power, but they do not hold the key.
-    The key lies among their dead. They will search for it. They will hunt for it.
-    If they find it, they will turn its fire upon you.
-    {"["}bold]This cannot be allowed.[/bold]
-    My daughters, your carapace is stronger than their metal. Your strength is a legion of indomitable might. You are an army of claw and lightning.
-    You will not yield. You will not fail. In you, my daughters, I have not doubt but faith. Faith in the smallest of lessers. Faith in your Queen.
-    Find the key before they do. Deny them their creation. Break their spirit. Consume all who stand before the hive.
+cmu-aegis-queen-mother = [head=3][color=Red]女儿们，危险已逼近你们。
+    高个子们的一件强大装置正逼近你们的巢穴。
+    一件天火特殊武器，由冰冷金属和无饥之脑锻造而成，能够将毁灭带给你们周围的一切。
+    它是高个子们逃离他们失败的巢穴时留下的。
+    他们企图夺回它的力量，但他们并不持有密钥。
+    密钥就在他们的死者之中。他们会搜寻它。他们会追猎它。
+    若他们找到它，他们就会将其火力转向你们。
+    {"["}bold]这绝不能被允许。[/bold]
+    我的女儿们，你们的甲壳比他们的金属更坚固。你们的力量是无可阻挡的军团。你们是由利爪与闪电组成的军队。
+    你们不会屈服。你们不会失败。对你们，我的女儿们，我没有怀疑，只有信念。信念寄于最渺小的劣者。信念寄于你们的女王。
+    在他们之前找到密钥。剥夺他们的造物。击碎他们的意志。吞噬所有挡在巢穴之前者。
     {"["}/color][/head]
-    {"["}bolditalic][head=2][color=DarkViolet]Fight! For the Hive![/color][/head][/bolditalic]
+    {"["}bolditalic][head=2][color=DarkViolet]战斗！为了巢穴！[/color][/head][/bolditalic]

@@ -1,1 +1,1 @@
-rad-protection-reduction-value = - [color=orange]Radiation[/color] dose reduced by [color=lightblue]{$value}%[/color].
+rad-protection-reduction-value = - [color=orange]辐射[/color]剂量减少 [color=lightblue]{$value}%[/color]。

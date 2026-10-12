@@ -3,17 +3,17 @@
 # SPDX-License-Identifier: AGPL-3.0-only
 ## GmodConstructionMenu.xaml
 
-gmod-construction-menu-spawnlists = Spawnlists
-gmod-construction-menu-tiles = Z-Level (Experimental)
-gmod-construction-menu-your-spawnlists = Your Spawnlists
+gmod-construction-menu-spawnlists = 生成列表
+gmod-construction-menu-tiles = Z 层级（实验性）
+gmod-construction-menu-your-spawnlists = 你的生成列表
 gmod-construction-menu-au14 = AU14
-gmod-construction-menu-all-items = All Items
-gmod-construction-menu-favorites = ★ Favorites
-gmod-construction-menu-steps = Steps
+gmod-construction-menu-all-items = 所有物品
+gmod-construction-menu-favorites = ★ 收藏夹
+gmod-construction-menu-steps = 步骤
 construction-menu-skill-info =
-    You have { $skill } skill points in construction
-    { $discount }% discounted in building
-gmod-construction-menu-tools = Tools
-gmod-construction-menu-construction = Construction
+    你在建造方面有 { $skill } 点技能点
+    建造时享受 { $discount }% 折扣
+gmod-construction-menu-tools = 工具
+gmod-construction-menu-construction = 建造
 gmod-construction-menu-advanced-duplicator = AdvancedAtkinsonatorv2
-gmod-construction-menu-partners = Partners
+gmod-construction-menu-partners = 伙伴

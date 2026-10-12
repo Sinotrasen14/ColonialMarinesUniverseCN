@@ -1,1 +1,1 @@
-cmu-damageevasion-energy = We feel our body surge with energy!
+cmu-damageevasion-energy = 我们感到身体涌动着能量！

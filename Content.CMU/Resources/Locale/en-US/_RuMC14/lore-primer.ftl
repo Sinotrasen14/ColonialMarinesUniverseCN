@@ -1,1 +1,1 @@
-lore-primer-platoon-bear-info = PMC 'BEAR', a covert special operations unit secretly working for the Union of Progressive Peoples. Its ties to the UPP are strictly confidential.
+lore-primer-platoon-bear-info = PMC“BEAR”，一支秘密为进步人民联盟工作的隐蔽特种作战部队。其与 UPP 的关系严格保密。

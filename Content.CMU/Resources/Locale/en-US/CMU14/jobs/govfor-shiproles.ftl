@@ -1,10 +1,10 @@
-cmu-govfor-name-adjutant-dress = High Command Adjutant
-cmu-govfor-description-adjutant-dress = An adjutant of High Command in full dress uniform, all brass and paperwork, dispatched to represent the flag.
+cmu-govfor-name-adjutant-dress = 指挥部副官
+cmu-govfor-description-adjutant-dress = 一位身着全套礼服、满身铜饰与文书气息的指挥部副官，被派来代表旗帜。
 cmu-govfor-prefix-adjutant-dress = ADJ
-cmu-govfor-name-brigadier-general = Brigadier General
-cmu-govfor-description-brigadier-general = A Brigadier General of the colonial marine corps. A walking inspection, and the reason the deck got buffed.
+cmu-govfor-name-brigadier-general = 准将
+cmu-govfor-description-brigadier-general = 殖民地海军陆战队的准将。一场行走的检阅，也是甲板被擦亮的原因。
 cmu-govfor-prefix-brigadier-general = BG
-cmu-govfor-name-vip-escort = VIP Escort Detail
-cmu-govfor-description-vip-escort = A marine of the escort detail assigned to protect visiting dignitaries, in dress blues with a very straight face.
+cmu-govfor-name-vip-escort = 贵宾护送分队
+cmu-govfor-description-vip-escort = 护送分队的一名海军陆战队员，被指派保护来访的要员，身着蓝色礼服，面无表情。
 cmu-govfor-prefix-vip-escort = ESC
-cmu-govfor-supervisors-adjutant-dress = High Command
+cmu-govfor-supervisors-adjutant-dress = 指挥部
