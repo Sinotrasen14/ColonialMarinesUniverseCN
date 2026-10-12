@@ -1,38 +1,38 @@
 <Document>
-  # Medical Machines
+  # 医疗仪器
 
-  Well-equipped medbays have machines that diagnose, treat and even operate on patients. Each pod needs its console within a few tiles to work.
+  装备精良的医务室里配备了能够对伤员进行诊断、治疗乃至直接手术的医疗仪器。每台医疗舱都需要在其数格范围内存在控制台设备，方可正常运作。
 
-  ## Body Scanner
+  ## 人体扫描仪
   <Box>
-    <GuideEntityEmbed Entity="CMUBodyScannerPod" Caption="Body scanner pod"/>
-    <GuideEntityEmbed Entity="CMUBodyScannerConsole" Caption="Body scanner console"/>
+    <GuideEntityEmbed Entity="CMUBodyScannerPod" Caption="人体扫描舱"/>
+    <GuideEntityEmbed Entity="CMUBodyScannerConsole" Caption="人体扫描控制台"/>
   </Box>
-  The body scanner gives a full diagnostic readout of everything wrong with a patient: fractures, internal bleeding, organ damage and more, part by part.
-  - Put the patient in the pod, then use the console. Reading scans needs [bold]surgery training[/bold] (level 1).
-  - [bold]Calibration[/bold]: the console can also calibrate a surgical assist. Tune each scan slice and lock the abnormal readings while the sweep is in the cyan band. You have 2 minutes, and every wrong lock costs you 8 seconds.
-  - Succeed, and your surgery steps on that patient are [bold]twice as fast[/bold] for 10 minutes.
-  - Fail or run out of time, and you're locked out of calibrating that patient for 10 minutes.
+  人体扫描仪可提供伤员身体异常的全面诊断读数：逐个部位详细列出骨折、内出血、脏器受损等各项伤情。
+  - 将伤员送入扫描舱内，然后操作控制台。解读扫描读数需要具备[bold]外科培训[/bold]（1 级）。
+  - [bold]校准[/bold]：控制台还可以校准手术辅助系统。调整每个扫描切片，并在扫描线划过青色波段时锁定异常读数。你有 2 分钟时间，每次错误锁定会扣除 8 秒。
+  - 校准成功后，你在 10 分钟内对该伤员的手术步骤速度将[bold]速度翻倍[/bold]。
+  - 若是校准失败或超时，你在 10 分钟内将无法再次为该伤员进行校准。
 
-  ## Autodoc
+  ## 全自动手术仪（Autodoc）
   <Box>
-    <GuideEntityEmbed Entity="CMUAutodocPod" Caption="Autodoc pod"/>
-    <GuideEntityEmbed Entity="CMUAutodocConsole" Caption="Autodoc console"/>
+    <GuideEntityEmbed Entity="CMUAutodocPod" Caption="自动手术舱"/>
+    <GuideEntityEmbed Entity="CMUAutodocConsole" Caption="自动手术控制台"/>
   </Box>
-  The autodoc operates by itself, so a surgeon can queue up the work and step away.
-  - Put the patient in the pod, then open the console. Queuing procedures needs [bold]surgery training[/bold] (level 2).
-  - Pick a body part and the surgeries it needs, and add them to the queue. It can also run [bold]Repair Wounds / Burns[/bold] as an automated cycle.
-  - Press [bold]Start[/bold]. The pod works through the queue on its own. It's thorough but slow: each step takes the better part of a minute.
-  - [bold]Stop[/bold] pauses it, [bold]Clear[/bold] empties the queue, and [bold]Eject Patient[/bold] takes them out.
-  - The pod counts as an operating table, so its steps never fail because of where the patient is lying.
+  全自动手术仪能够全自动执行手术操作，外科医生只需将手术流程排入队列，即可走开去处理其他事务。
+  - 将伤员送入舱内，然后打开控制台。将手术流程排入队列需要具备[bold]外科培训[/bold]（2 级）。
+  - 选择身体部位及其所需手术，并将其添加到队列中。它还可以作为自动化循环运行[bold]修复创伤 / 烧伤[/bold]。
+  - 点击[bold]开始[/bold]。手术舱将自行依序完成队列中的全部步骤。其操作非常细致但耗时较长：每个步骤大约需要近一分钟。
+  - [bold]停止[/bold]可暂停操作，[bold]清空[/bold]可清空队列，[bold]移出伤员[/bold]可将伤员移出舱体。
+  - 手术舱的规格等同于手术台，因此其步骤绝不会因伤员平躺姿态不当而发生失败。
 
-  ## Cryo Pod
+  ## 冷冻治疗舱
   <Box>
-    <GuideEntityEmbed Entity="CryoPod" Caption="Cryo pod"/>
+    <GuideEntityEmbed Entity="CryoPod" Caption="冷冻舱"/>
   </Box>
-  The cryo pod chills a patient down and heals them with cryoxadone.
-  - Load a beaker of [bold]cryoxadone[/bold] into the pod, and make sure the pod is supplied with cold gas from a freezer.
-  - Put the patient inside. Once their body temperature drops low enough, the cryoxadone slowly heals brute, burn, toxin and suffocation damage all at once.
-  - Cryoxadone does nothing at normal body temperature. The patient has to be properly cold.
-  - It's slow, but it needs nobody standing over it, so it's good for patients who are stable but badly hurt.
+  冷冻舱可降低伤员体温，并通过冷冻酮为其治疗伤势。
+  - 将装有[bold]冷冻酮（cryoxadone）[/bold]的烧杯装入冷冻舱，并确保冷冻舱由气体冷却器供应冷气。
+  - 将伤员放入舱内。一旦伤员体温降得足够低，冷冻酮便会缓慢同时修复钝伤、烧伤、毒素和窒息伤害。
+  - 冷冻酮在正常体温下毫无效果。伤员必须处于充分冷却状态。
+  - 这种治疗方式虽然缓慢，但无需人员在旁守候，非常适合伤势严重但没有继续恶化的伤员。
 </Document>

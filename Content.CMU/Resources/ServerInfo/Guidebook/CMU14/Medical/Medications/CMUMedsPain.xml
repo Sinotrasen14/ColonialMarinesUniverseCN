@@ -1,20 +1,20 @@
 <Document>
-  # Painkillers
+  # 止痛药物
 
-  Painkillers mask pain so the patient can keep going, and strong enough ones let you operate on an awake patient. They don't heal anything. For how pain works, see [textlink="Pain" link="CMUGuideMedicalPain"].
+  止痛药的作用是屏蔽疼痛，使伤员能够继续行动；强效止痛药甚至允许你直接在伤员清醒的状态下进行手术。它们本身不具备任何治疗创伤的效果。关于疼痛机制的详细介绍，请参见[textlink="疼痛" link="CMUGuideMedicalPain"]。
 
-  From weakest to strongest:
-  - [bold]Paracetamol[/bold]: mild relief for light pain. Too weak for surgery. Overdose at 60 units.
-  - [bold]Tramadol[/bold]: moderate relief, strong enough for surgery. Over 30 units it makes the patient drunk and starts poisoning them.
-  - [bold]Sleen[/bold]: a strong experimental painkiller. Overdose at 20 units.
-  - [bold]Oxycodone[/bold]: strong relief, but it makes the patient [color=#FFA500]loopy[/color]: their vision blurs and darkens at the edges. Over 20 units they act drunk and hallucinate, and it poisons them.
-  - [bold]Fentanyl[/bold]: the strongest, and the most dangerous. It blurs vision heavily, and overdoses at only 10 units, where it starts to stop the patient breathing.
-  - [bold]Soporific[/bold]: a strong painkiller that also puts the patient to sleep at 8 units or more. Overdose at 30 units.
+  按药效由弱到强排列：
+  - [bold]扑热息痛（Paracetamol）[/bold]：轻度镇痛，缓解轻微疼痛。药力太弱无法用于外科手术。过量阈值为 60 单位。
+  - [bold]曲马多（Tramadol）[/bold]：中度镇痛，药效足以支持进行手术。超过 30 单位会使伤员产生醉酒感并开始中毒。
+  - [bold]斯林（Sleen）[/bold]：强效实验性止痛药。OD阈值为 20 单位。
+  - [bold]羟考酮（Oxycodone）[/bold]：强效镇痛，但会使伤员感到[color=#FFA500]恍惚眩晕[/color]：视野模糊且边缘发暗。超过 20 单位会出现类似醉酒与幻觉反应，并导致中毒。
+  - [bold]芬太尼（Fentanyl）[/bold]：镇痛效果最强，同时也最为危险。会导致视线严重模糊，且OD阈值极低，仅为 10 单位；一旦过量，就会开始抑制呼吸直至呼吸骤停。
+  - [bold]嗜睡镇痛剂（Soporific）[/bold]：强效镇痛药，剂量达到或超过 8 单位时还会使伤员强制陷入沉睡。OD阈值为 30 单位。
 
-  Every painkiller hurts the patient when overdosed, usually with poison, and at the highest doses by stopping their breathing.
+  任何止痛药一旦超量都会对伤员造成伤害，通常会引发毒素伤害，在超大剂量下甚至会导致呼吸停止。
 
-  ## Reversing an Overdose
-  [bold]Naloxone[/bold] flushes painkillers out of the body at once and clears toxin damage. The patient vomits, and any pain the drugs were masking comes straight back.
+  ## 缓解药物过量
+  [bold]纳洛酮（Naloxone）[/bold]能够迅速将体内的止痛药代谢清除，并消除毒素伤害。但这会导致伤员剧烈呕吐，且此前被药物压制的所有疼痛都会瞬间全面复发。
 
   <GuideReagentEmbed Reagent="CMUParacetamol"/>
   <GuideReagentEmbed Reagent="CMUTramadol"/>

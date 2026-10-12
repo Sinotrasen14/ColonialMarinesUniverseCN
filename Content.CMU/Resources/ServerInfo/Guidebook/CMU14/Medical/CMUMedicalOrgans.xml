@@ -1,55 +1,55 @@
 <Document>
-  # Organs
+  # 器官
 
-  Trauma to the chest and head can damage the organs inside. Each organ has its own health and goes through five stages as it's damaged: [color=#3cff6b]healthy[/color], [color=#ffc300]bruised[/color], [color=#ff8a3d]damaged[/color], [color=#ff3b30]failing[/color] and dead.
+  胸部和头部受到重创可能会损伤内部器官。每个器官都有独立的健康值，并在受损时经历五个阶段：[color=#3cff6b]健康[/color]、[color=#ffc300]挫伤[/color]、[color=#ff8a3d]受损[/color]、[color=#ff3b30]衰竭[/color]以及坏死。
 
-  A health analyzer shows organ damage to trained medics.
+  健康分析仪可向受训医护兵显示具体的器官损伤情况。
 
-  ## Recovery
-  - A healthy or bruised organ slowly heals on its own, but only up to 90% of its health (85% for the brain).
-  - A damaged, failing or dead organ won't recover by itself. It needs organ repair drugs or surgery.
+  ## 康复机制
+  - 处于健康或挫伤阶段的器官会自行缓慢恢复，但最多只能恢复至满健康值的 90%（大脑为 85%）。
+  - 处于受损、衰竭或坏死阶段的器官无法自行恢复。必须使用器官修复药物或进行外科手术。
 
-  ## The Organs
-  ### Heart
-  - [bold]Bruised[/bold]: the heart races (tachycardia).
-  - [bold]Damaged or failing[/bold]: the heartbeat becomes irregular (arrhythmia), the patient slowly suffocates and takes toxin damage. A failing heart also bleeds internally.
-  - If the pulse drops too low for too long, the heart stops: [bold]cardiac arrest[/bold]. The patient can't get oxygen and collapses within seconds.
-  - A defibrillator can't restart a heart that's failing or dead. Repair it first.
+  ## 各器官病变表现
+  ### 心脏
+  - [bold]挫伤[/bold]：心跳急剧加速（心动过速）。
+  - [bold]受损或衰竭[/bold]：心律紊乱不齐（心律失常），伤员会缓慢窒息并承受毒素伤害。衰竭的心脏还会发生体内内出血。
+  - 若脉搏过低且持续时间过长，心脏会发生停跳：[bold]心脏停搏[/bold]。伤员无法获取氧气，将在数秒内休克倒地。
+  - 除颤器无法使衰竭或坏死的心脏复跳。必须先将其修复。
 
-  ### Lungs
-  - Damaged lungs can't take in enough air, so the patient suffocates.
-  - [bold]Pulmonary edema[/bold]: the lungs flood and breathing becomes laboured. Through a stethoscope the lungs sound wet.
-  - Badly damaged lungs make the patient cough up blood, and failing lungs bleed internally.
-  - Breathing from an oxygen tank through internals (a mask connected to the tank) clears suffocation damage three times as fast as normal breathing.
+  ### 肺部
+  - 受损的肺部无法吸入足够的空气，导致伤员窒息缺氧。
+  - [bold]肺水肿[/bold]：肺内积液充血，呼吸极度困难。通过听诊器听诊肺部会闻及湿啰音。
+  - 严重受损的肺部会导致伤员咯血，衰竭的肺部还会发生内出血。
+  - 使用内呼吸装置（连接氧气瓶的面罩）呼吸氧气，清除窒息伤害的速度是正常呼吸的三倍。
 
-  ### Liver
-  - [bold]Hepatic failure[/bold]: a damaged liver stops clearing toxins from the blood.
+  ### 肝脏
+  - [bold]肝衰竭[/bold]：受损的肝脏将无法继续清除血液中的毒素。
 
-  ### Kidneys
-  - [bold]Renal failure[/bold]: damaged kidneys stop filtering the blood, so chemicals linger in the body longer.
+  ### 肾脏
+  - [bold]肾衰竭[/bold]：受损的肾脏将停止过滤血液，导致化学药物和毒物在体内存留更长时间。
 
-  ### Stomach
-  - A damaged stomach causes nausea and vomiting.
+  ### 胃部
+  - 受损的胃部会导致恶心与呕吐。
 
-  ### Brain
-  - Head trauma can cause a [bold]concussion[/bold], [bold]whiplash[/bold] or a [bold]traumatic brain injury[/bold]. A damaged brain causes splitting headaches that leave the patient disoriented.
+  ### 大脑
+  - 头部创伤可能导致[bold]脑震荡[/bold]、[bold]颈部挥鞭样损伤[/bold]或[bold]创伤性脑损伤（TBI）[/bold]。受损的大脑会引发剧烈头痛，使伤员神志不清、迷失方向。
 
-  ### Eyes and Ears
-  - Damaged eyes impair vision.
-  - Loud blasts cause tinnitus and can deafen. See [textlink="Hearing Loss" link="CMUGuideHearingLoss"].
+  ### 眼部与耳部
+  - 受损的眼部会导致视力受损。
+  - 剧烈爆炸会引发耳鸣并可能导致听力丧失致聋。详见[textlink="听力受损" link="CMUGuideHearingLoss"]。
 
-  ## Organ Repair Drugs
-  Each heals its organ a little every cycle while in the bloodstream. All of them overdose at 25u.
-  - [bold]Cardiocaine[/bold]: heart. It also has a small chance each cycle to restart a stopped heart, as long as the heart isn't dead.
-  - [bold]Pulmovine[/bold]: lungs.
-  - [bold]Hepatocytin[/bold]: liver.
-  - [bold]Nephronate[/bold]: kidneys.
-  - [bold]Alkysine[/bold]: brain.
+  ## 器官修复药物
+  药物进入血液循环后，每个代谢周期均可少量修复对应器官。所有此类药物在达到 25u 时发生药物过量（OD）。
+  - [bold]心卡因（Cardiocaine）[/bold]：心脏。在每个代谢周期中，只要心脏尚未彻底坏死，就有小概率使停搏的心脏重新起搏复跳。
+  - [bold]肺复灵（Pulmovine）[/bold]：肺部。
+  - [bold]肝胞素（Hepatocytin）[/bold]：肝脏。
+  - [bold]肾复宁（Nephronate）[/bold]：肾脏。
+  - [bold]脑复新（Alkysine）[/bold]：大脑。
 
-  ## Organ Surgery
-  - [bold]Suture[/bold] a damaged organ to repair it: the heart, lungs, liver, kidneys or stomach.
-  - [bold]Repair Brain[/bold] and [bold]Repair Eyes[/bold] fix the head's organs.
-  - An organ that's beyond saving can be removed and replaced with a donor organ. A health analyzer shows a missing organ as removed.
+  ## 器官外科手术
+  - 通过[bold]器官缝合术[/bold]修复受损器官：心脏、肺部、肝脏、肾脏或胃部。
+  - [bold]脑组织修复术[/bold]与[bold]眼部修复术[/bold]可修复头部器官。
+  - 彻底无法挽救的坏死器官可以摘除，并移植供体器官进行替换。健康分析仪会将缺失的器官显示为已摘除。
 
-  See [textlink="Surgery" link="CMUGuideMedicalSurgery"] for how to operate.
+  具体手术操作详见[textlink="外科手术" link="CMUGuideMedicalSurgery"]。
 </Document>

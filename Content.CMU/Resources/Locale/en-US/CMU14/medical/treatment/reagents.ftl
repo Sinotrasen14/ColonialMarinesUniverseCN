@@ -8,13 +8,13 @@ cmu-medical-defib-heart-destroyed            = 心脏已被摧毁；无法复苏
 cmu-medical-defib-heart-failing              = 心脏损伤过于严重，无法进行除颤。
 cmu-medical-defib-heart-beating              = 心脏已在跳动。
 
-reagent-name-cmu-hepatocytin                 = 肝细胞素
+reagent-name-cmu-hepatocytin                 = 肝胞素
 reagent-desc-cmu-hepatocytin                 = 一种用于肝组织修复的再生化合物。
 reagent-name-cmu-pulmovine                   = 肺复灵
 reagent-desc-cmu-pulmovine                   = 一种用于肺组织修复的雾化药剂。
 reagent-name-cmu-nephronate                  = 肾复宁
 reagent-desc-cmu-nephronate                  = 一种靶向肾脏、用于肾组织修复的化合物。
-reagent-name-cmu-cardiocaine                 = 心肌卡因
+reagent-name-cmu-cardiocaine                 = 心卡因
 reagent-desc-cmu-cardiocaine                 = 一种靶向心脏的化合物；尝试重启停止跳动的心脏。
 reagent-name-cmu-alkysine                    = 脑复新
 reagent-desc-cmu-alkysine                    = 一种靶向神经的化合物；用于脑组织修复。
@@ -23,7 +23,7 @@ reagent-desc-cmu-osteocalc                   = 一种富含钙的浆液，可加
 reagent-name-cmu-biogenic-matrix             = 生物基质
 reagent-desc-cmu-biogenic-matrix             = 一种无菌蛋白质晶格浆液，供肢体打印机制造可直接移植的替换肢体。
 
-reagent-name-cmu-paracetamol                 = 对乙酰氨基酚
+reagent-name-cmu-paracetamol                 = 扑热息痛
 reagent-desc-cmu-paracetamol                 = 一种温和的止痛药。抑制疼痛积累，掩盖一级疼痛，并帮助多余的疼痛消退。
 reagent-name-cmu-tramadol                    = 曲马多
 reagent-desc-cmu-tramadol                    = 一种中效阿片类止痛药。强力掩盖疼痛，并帮助多余的疼痛消退。
@@ -35,7 +35,7 @@ reagent-name-cmu-fentanyl-precursor          = 粗制芬太尼碱
 reagent-desc-cmu-fentanyl-precursor          = 一种不稳定的卤化中间体。需要在精心控制的温度下进行最终合成步骤才能使用。
 reagent-name-cmu-sleen                       = 斯林
 reagent-desc-cmu-sleen                       = 一种强效实验性止痛药。可掩盖剧烈疼痛，但过量会中毒并导致定向障碍。
-reagent-name-cmu-soporific                   = 安眠剂
+reagent-name-cmu-soporific                   = 嗜睡镇痛剂
 reagent-desc-cmu-soporific                   = 一种强效镇静止痛药。会引起嗜睡，在手术剂量下可强制入睡。
 
 reagent-name-cmu-meth-precursor              = 粗制安非他命油

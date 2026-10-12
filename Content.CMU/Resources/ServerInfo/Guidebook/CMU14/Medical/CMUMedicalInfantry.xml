@@ -1,88 +1,87 @@
 <Document>
-  # Start Here: Infantry First Aid
+  # 新手入门：大兵急救
 
-  You're not a medic, but you will get shot. This guide covers everything in your [bold]IFAK[/bold] (infantry first aid kit) and how to use it to keep yourself and your squad alive until a medic arrives. Everything in it works without any medical training.
+  你不是医护兵，但你一定会中弹。本指南涵盖了[bold]单兵急救包（IFAK）[/bold]中的全部装备，以及在医护兵赶到前如何利用它们保全自己和班组成员的生命。急救包内的所有物品均无需任何医疗技能培训即可直接使用。
 
   <Box>
-    <GuideEntityEmbed Entity="AU14PouchIFAKFill" Caption="IFAK pouch"/>
+    <GuideEntityEmbed Entity="AU14PouchIFAKFill" Caption="单兵急救包（IFAK）"/>
   </Box>
 
-  ## What's in Your IFAK
+  ## 急救包物资清单
   <Box>
-    <GuideEntityEmbed Entity="AU14Tourniquet" Caption="Tourniquet"/>
-    <GuideEntityEmbed Entity="AU14HemostaticGauzePacket" Caption="Hemostatic gauze"/>
-    <GuideEntityEmbed Entity="CMOintment10" Caption="Ointment"/>
-    <GuideEntityEmbed Entity="CMUSplintItem" Caption="Splint"/>
+    <GuideEntityEmbed Entity="AU14Tourniquet" Caption="止血带"/>
+    <GuideEntityEmbed Entity="AU14HemostaticGauzePacket" Caption="止血纱布"/>
+    <GuideEntityEmbed Entity="CMOintment10" Caption="药膏"/>
+    <GuideEntityEmbed Entity="CMUSplintItem" Caption="夹板"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="AU14FirstAidAutoInjectorNoSkill" Caption="First-aid autoinjector"/>
-    <GuideEntityEmbed Entity="CMPacketPillsTricordrazine" Caption="Tricordrazine pills"/>
-    <GuideEntityEmbed Entity="AU14PacketPillsTramadol" Caption="Tramadol pills"/>
-    <GuideEntityEmbed Entity="CMUMaskCPR" Caption="CPR mask"/>
+    <GuideEntityEmbed Entity="AU14FirstAidAutoInjectorNoSkill" Caption="急救自动注射笔"/>
+    <GuideEntityEmbed Entity="CMPacketPillsTricordrazine" Caption="三可拉嗪药丸"/>
+    <GuideEntityEmbed Entity="AU14PacketPillsTramadol" Caption="曲马多药丸"/>
+    <GuideEntityEmbed Entity="CMUMaskCPR" Caption="CPR(心肺复苏)面罩"/>
   </Box>
 
-  - [bold]Tourniquet[/bold]: stops a bleeding arm or leg. Quick enough to put on yourself under fire.
-  - [bold]Hemostatic gauze packet[/bold]: use the packet in your hand to open it, then use the gauze on a wound. It dresses one wound, then it's gone.
-  - [bold]Ointment[/bold]: treats burns. Use it on a burned body part; a tube has 10 uses.
-  - [bold]Splint[/bold]: holds a broken arm or leg together so moving on it doesn't make it worse.
-  - [bold]First-aid autoinjector[/bold]: one shot that gives you 15u of tricordrazine, which heals all damage a little, 6u of paracetamol, a mild painkiller, and 6u of dexalin, which helps with suffocation.
-  - [bold]Tricordrazine pill packet[/bold]: four pills that each heal all damage a little. Don't take more than 2 in a short time.
-  - [bold]Tramadol pill packet[/bold]: four painkillers. Take one at a time, and don't take another for a while.
-  - [bold]CPR mask[/bold]: put it on an unconscious squadmate to make your CPR count for more.
+  - [bold]止血带[/bold]：阻止手臂或腿部的大出血。绑扎极为迅速，在敌人火力压制下也能自行完成绑扎。
+  - [bold]止血纱布包[/bold]：拿在手中使用即可拆开包装，随后将止血纱布敷在伤口上。每包仅能包扎一个伤口，用完即失效。
+  - [bold]药膏[/bold]：治疗烧伤。涂抹在烧伤的身体部位上；每支药膏可使用 10 次。
+  - [bold]夹板[/bold]：固定骨折的手臂或腿部，防止移动时伤势恶化。
+  - [bold]急救自动注射笔[/bold]：单次注射，含有可少量修复所有类型伤害的三可拉嗪（tricordrazine），以及可缓解窒息缺氧的德沙林（dexalin）。
+  - [bold]三可拉嗪药丸包[/bold]：内含 4 粒药丸，每粒均可少量治疗各种类型的伤害。短时间内切勿服用超过 2 粒。
+  - [bold]曲马多药丸包[/bold]：内含 4 粒止痛药丸。每次仅限服用 1 粒，短时间内切勿再次服用。
+  - [bold]心肺复苏面罩[/bold]：戴在昏迷休克的队友脸上，可大幅提升你进行心肺复苏（CPR）的效果。
 
-  ## Using Your Kit
-  - To treat yourself, hold the item and click yourself. To treat someone else, hold it and click them.
-  - To take a pill, open the packet and take a pill out, then use it in your hand to swallow it, or click someone to feed it to them.
-  - Right-click someone and choose [bold]Inspect injuries[/bold] to see their wounds and how badly they're bleeding.
+  ## 急救包的使用方法
+  - 救治自己：将物品拿在手中并点击自己。救治他人：拿在手中并点击对方。
+  - 服用药丸：打开包装取出药丸，拿在手中使用即可吞服，或者点击他人进行喂服。
+  - 右键点击伤员并选择[bold]检查伤情[/bold]，可查看其具体伤口及失血严重程度。
 
-  ## When You Get Hit
-  Work through these in order.
+  ## 中弹后的应对流程
+  请严格按照以下优先级依序处理：
 
-  ### 1. Get Out of the Fire
-  Nothing else matters if you keep getting shot. Get into cover first.
+  ### 1. 脱离火线
+  如果你持续遭到射击，任何救治都毫无意义。首先寻找掩体隐蔽。
 
-  ### 2. Stop the Heavy Bleeding
-  - Bleeding kills fastest. [color=red]Arterial bleeding[/color] (spurting blood) can drain you in moments.
-  - Bleeding from an [bold]arm or leg[/bold]: put the tourniquet on it.
-  - [bold]Lost a limb[/bold]: the stump bleeds arterially until a medic closes it with surgery. Aim at the missing limb and put the tourniquet on the stump.
-  - [color=red]A tourniquet kills the limb after 5 minutes.[/color] It's there to keep you alive until a medic can treat the wound properly and take it off. Get to a medic, or have your squad call for one.
+  ### 2. 止住大出血
+  - 出血是致死最快的危险因素。[color=red]动脉大出血[/color]（喷射性出血）可在瞬间抽干体内的血液。
+  - [bold]手臂或腿部[/bold]出血：立即为其打上止血带。
+  - [bold]肢体断裂[/bold]：残端会持续发生动脉大出血，直到医护兵通过外科手术将其封闭。对准断肢部位并将止血带打在残端上。
+  - [color=red]止血带绑扎超过 5 分钟会导致肢体缺血坏死。[/color]止血带的作用仅是在医护兵妥善处理伤口并拆除止血带前保住你的性命。尽快前往救治点找医护兵，或呼叫班组呼救。
 
-  ### 3. Dress the Wounds
-  - Use your hemostatic gauze on your worst wounds. Every open wound bleeds, and untreated wounds stop that body part healing.
-  - You only have two, so save them for wounds that matter.
+  ### 3. 包扎伤口
+  - 将止血纱布敷在最严重的伤口上。任何开放性创口都会持续流血，且未经处理的伤口会导致该身体部位无法愈合。
+  - 你身上只有两份纱布，请留给最关键的重伤部位。
 
-  ### 4. Splint Broken Limbs
-  - If an arm or leg is broken, splint it. Moving on an unsupported fracture hurts and makes it worse.
-  - A splint doesn't heal the bone. A medic needs to put a cast on or operate.
+  ### 4. 骨折肢体上夹板
+  - 若手臂或腿部骨折，立即为其绑上夹板。在缺乏支撑固定的情况下带着骨折活动会剧烈疼痛并使伤势加剧。
+  - 夹板无法治愈骨骼。必须由医护兵为你打石膏或进行外科手术。
 
-  ### 5. Deal with the Pain
-  - Pain slows you down, throws off your aim and can put you into shock, where you keep collapsing.
-  - Take [bold]one[/bold] tramadol pill. It masks the pain but doesn't fix what's causing it.
-  - The first-aid autoinjector's paracetamol also takes the edge off milder pain.
-  - Overdosing on painkillers is dangerous. Don't stack them.
+  ### 5. 控制疼痛
+  - 剧痛会减慢你的移动速度、大幅降低射击精度，甚至导致你陷入反复晕厥的疼痛性休克。
+  - 服用[bold]一粒[/bold]曲马多药丸。它能掩盖疼痛，但无法解决造成疼痛的根本病因。
+  - 止痛药过量（OD）非常危险。切勿连续叠加服药。
 
-  ### 6. Top Up Your Health
-  - Use the first-aid autoinjector, or take a tricordrazine pill, to heal a little of everything.
-  - These won't fix serious injuries; they just buy time.
+  ### 6. 恢复生命体征
+  - 使用急救自动注射笔，或服用一粒三可拉嗪药丸，以全面小幅治疗各项损伤。
+  - 这些药物无法修复严重创伤，它们的作用仅仅是为你争取时间。
 
-  ## When a Squadmate Goes Down
-  - [bold]Return fire and neutralize the threat first.[/bold] Don't stop to treat anyone while you're still being shot at, unless others are covering you. A second casualty helps no one.
-  - [bold]Call for a medic[/bold]. Give your location.
-  - [bold]Stop their bleeding[/bold] with your own tourniquet and gauze if they're bleeding out.
-  - [bold]Unconscious but alive[/bold]: roll them into the [bold]recovery position[/bold] (right-click them). It helps them breathe while you wait.
-  - [bold]Arterial bleeding and stumps keep bleeding after death.[/bold] Get a tourniquet on them even if they're already dead, or there'll be no blood left by the time a medic arrives.
-  - [bold]Dead[/bold]: they can still be brought back for a while. Put your CPR mask on them and do [bold]CPR[/bold] by clicking them with an empty hand. Each round buys them more time until a medic with a defibrillator arrives.
+  ## 队友倒地时的处置
+  - [bold]首先还击并消灭威胁。[/bold]仍然遭受敌方射击时，切勿停下脚步救人，除非有其他队友为你提供掩护。增加额外的伤员对战局毫无益处。
+  - [bold]呼叫医护兵。[/bold]通报你的具体坐标与位置。
+  - [bold]控制出血[/bold]：如果队友正在大量失血，使用你自己的止血带和纱布为其止血。
+  - [bold]昏迷但尚有生命体征[/bold]：将其翻转为[bold]复苏体位[/bold]（右键点击伤员），使其在等待期间有助于保持气道通畅。
+  - [bold]动脉大出血和断肢残端在死亡后仍会继续失血。[/bold]哪怕伤员已经阵亡，也必须为其绑上止血带，否则等医护兵赶到时体内的血液早已流干。
+  - [bold]阵亡[/bold]：阵亡人员在短时间内仍有复苏希望。为其戴上CPR 面罩，空手点击伤员进行[bold]心肺复苏（CPR）[/bold]。每一次有效按压都能为伤员争取更多时间，直到携带除颤器的医护兵赶到。
 
-  ## Leave It to the Medics
-  Your IFAK keeps people alive; it doesn't fix them. A medic is needed for:
-  - taking off a tourniquet safely
-  - casting or operating on broken bones
-  - internal bleeding, which you can't see or dress
-  - damaged organs
-  - bringing back the dead with a defibrillator
+  ## 专业救治交给医护兵
+  你的单兵急救包只能维持生命，无法彻底根治伤情。以下处置必须由专业医护兵执行：
+  - 安全拆除止血带
+  - 为骨折打石膏或进行外科复位手术
+  - 处理肉眼无法察觉且无法包扎的内出血
+  - 修复受损的脏器
+  - 使用除颤器复苏阵亡人员
 
-  ## Restocking
-  Your IFAK pouch can also hold gauze, trauma kits, burn kits, ointment, pills, autoinjectors, splints, blood packs and a CPR mask. Grab spares when you can.
+  ## 补给备品
+  你的单兵急救包收纳袋还可以容纳纱布、创伤急救包、烧伤急救包、药膏、药丸、自动注射笔、夹板、血袋以及CPR 面罩。有机会时尽量多补充备用物资。
 
-  Want to know more? See [textlink="Medical" link="CMUGuideMedical"].
+  想了解更多内容？详见[textlink="医疗" link="CMUGuideMedical"]。
 </Document>

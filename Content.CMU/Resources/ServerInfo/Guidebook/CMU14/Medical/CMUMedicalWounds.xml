@@ -1,63 +1,63 @@
 <Document>
-  # Wounds and Bleeding
+  # 创伤与流血
 
-  Every hit leaves a wound on the body part it struck: cuts, stab wounds, gunshot wounds, bruises and burns. Wounds bleed, and while they're untreated they lower that body part's maximum health.
-
-  <Box>
-    <GuideEntityEmbed Entity="CMGauze10" Caption="Gauze"/>
-    <GuideEntityEmbed Entity="CMTraumaKit10" Caption="Trauma kit"/>
-    <GuideEntityEmbed Entity="CMOintment10" Caption="Ointment"/>
-    <GuideEntityEmbed Entity="CMBurnKit10" Caption="Burn kit"/>
-  </Box>
-
-  ## Treating Wounds
-  - Use a treatment item on the patient. If several body parts are wounded, you pick which one to treat.
-  - Bigger wounds need more than one application before they count as treated. Small cuts take one; the worst wounds take up to four.
-  - Once every wound on a body part is treated, they close up over time and the part can heal back to full health.
-  - Without medical training you can still use most items, but they're slower and heal less.
-
-  ## What Treats What
-  - [bold]Gauze[/bold]: dresses cuts, stab wounds, gunshot wounds and bruises. It can't stop arterial bleeding.
-  - [bold]Trauma kit[/bold]: dresses two brute wounds per use and heals some damage. It also stops arterial bleeding. A trained medic applies it instantly.
-  - [bold]Hemostatic gauze packet[/bold]: open it to get hemostatic gauze, a single-use dressing that treats a brute wound instantly and to the best standard.
-  - [bold]Ointment[/bold]: treats two burns per use, instantly, and heals a little burn damage.
-  - [bold]Burn kit[/bold]: treats two burns per use and heals more burn damage. A trained medic applies it instantly.
-  - [bold]Surgical line[/bold]: stops arterial bleeding and restores a body part's health. It doesn't dress wounds, so dress them first. Trained medics only.
-  - [bold]Synth graft[/bold]: restores health to a burned body part. It doesn't treat burns, so treat them first. Trained medics only.
+  每一次受到攻击后都会在受击部位留下创口：割裂伤、刺伤、枪伤、挫伤和烧伤。开放性的创口导致失血，且在未经处理期间会降低该身体部位的最大健康上限。
 
   <Box>
-    <GuideEntityEmbed Entity="AU14HemostaticGauzePacket" Caption="Hemostatic gauze packet"/>
-    <GuideEntityEmbed Entity="AU14Tourniquet" Caption="Tourniquet"/>
+    <GuideEntityEmbed Entity="CMGauze10" Caption="纱布"/>
+    <GuideEntityEmbed Entity="CMTraumaKit10" Caption="创伤急救包"/>
+    <GuideEntityEmbed Entity="CMOintment10" Caption="药膏"/>
+    <GuideEntityEmbed Entity="CMBurnKit10" Caption="烧伤急救包"/>
   </Box>
 
-  ## Bleeding
-  Open wounds bleed. The injury report and health analyzer show how badly: minor, moderate, severe or [color=red]arterial[/color].
-  - [bold]Arterial bleeding[/bold] is the most dangerous and drains blood fast. Gauze won't stop it; use a trauma kit, a packed trauma kit, surgical line or a tourniquet.
-  - A wound only becomes arterial from one very heavy hit, around 60 damage or more from a bullet, blade or shrapnel.
-  - [bold]Torn-off limbs[/bold] leave a stump that bleeds arterially until it's closed with surgery. Only a tourniquet on the stump holds it in the meantime.
-  - [bold]Packed gauze[/bold] and [bold]packed trauma kits[/bold] can be used just to control bleeding. Packed gauze only works on non-arterial bleeding; a packed trauma kit also stops arterial bleeding.
-  - Blood loss starves the body of oxygen. Replace lost blood with blood packs or IV drips.
-  - [bold]After death[/bold], most bleeding clots on its own once the heart stops pumping. [color=red]Arterial bleeding and open stumps keep bleeding[/color], so a body left like that can lose all its blood before it's revived. Stop them before you revive someone.
+  ## 创口处理
+  - 对伤员使用医疗处置物品。若有多个身体部位受伤，你可以选择要救治的部位。
+  - 大型伤口需要多次使用物品才能彻底处置完毕。若只是小伤口则仅需一次；最严重的伤口则需要多达四次。
+  - 一旦某个身体部位上的所有创口均得到处置，它们便会随时间推移逐渐愈合闭合，该部位也可以重新恢复至满生命值。
+  - 缺乏医疗技能培训的人员依然可以使用大部分医疗物品，但操作速度较慢，且治疗效果较低。
 
-  ## Tourniquets
-  - Put a tourniquet on an arm or leg to stop that limb bleeding. It's quick enough to put on yourself under fire.
-  - [bold]Stumps[/bold]: aim at the missing limb and apply a tourniquet to clamp its stump. A stump tourniquet doesn't kill anything, but the stump starts bleeding again when it comes off, so close it with surgery. See [textlink="Limb Surgery" link="CMUGuideSurgeryLimbs"].
-  - [color=red]After 5 minutes, the limb dies[/color] and becomes necrotic. Treat the wounds properly and take the tourniquet off before then, using the [bold]Remove tourniquet[/bold] option. Taking it off gives it back.
+  ## 医疗物品对症一览
+  - [bold]纱布[/bold]：包扎割裂伤、刺伤、枪弹伤和挫伤。无法阻止动脉大出血。
+  - [bold]创伤急救包[/bold]：每次使用可处置两处钝伤/创伤创口并修复部分伤害。还能止住动脉大出血。受训医护兵可实现瞬间包扎。
+  - [bold]止血纱布包[/bold]：拆开包装即可获得止血纱布，单次使用，能瞬间完成一处创伤的最高标准包扎。
+  - [bold]药膏[/bold]：每次使用可瞬间处置两处烧伤创面，并修复少量烧伤伤害。
+  - [bold]烧伤急救包[/bold]：每次使用可处置两处烧伤创面并修复更多烧伤伤害。受训医护兵可实现瞬间包扎。
+  - [bold]外科缝合线[/bold]：阻止动脉大出血并恢复身体部位的健康值。无法直接包扎创口，因此需先包扎创口。仅限受训医护兵使用。
+  - [bold]合成移植物[/bold]：恢复被烧伤身体部位的健康值。无法直接处置烧伤创面，因此需先处置烧伤。仅限受训医护兵使用。
 
-  ## Internal Bleeding
-  - Some injuries bleed inside the body, where no dressing can reach: compound and shattered fractures, very heavy blunt hits, and failing organs.
-  - A health analyzer shows internal bleeding to anyone with basic medical training.
-  - It needs surgery: see [textlink="Surgery" link="CMUGuideMedicalSurgery"].
+  <Box>
+    <GuideEntityEmbed Entity="AU14HemostaticGauzePacket" Caption="止血纱布包"/>
+    <GuideEntityEmbed Entity="AU14Tourniquet" Caption="止血带"/>
+  </Box>
 
-  ## Burns and Eschar
-  - Burns are wounds too, treated with ointment or a burn kit.
-  - Taking 30 or more burn damage to one body part in a single hit can leave [bold]eschar[/bold], a full-thickness burn. It's painful and doesn't go away on its own, even once the burn is healed.
-  - Eschar has to be cut away with the [bold]Debride Eschar[/bold] surgery. This is a single step using a burn kit or ointment, and can be done on your own arms and legs.
+  ## 流血与出血控制
+  开放性创口会流血。伤情报告和健康分析仪会显示失血严重程度：轻度、中度、重度或[color=red]动脉大出血[/color]。
+  - [bold]动脉大出血[/bold]是致死速度最快的最危险出血，体内的血液会在瞬间流尽。普通纱布无法止住动脉出血；必须使用创伤急救包、压缩创伤包、外科缝合线或止血带。
+  - 仅有单次遭受极其严重的重创时才会导致动脉出血（如枪弹、利刃或破片等，单次造成约 60 点以上的大额伤害）。
+  - [bold]肢体断裂[/bold]会留下发生动脉大出血的断肢残端，直到通过外科手术将其封闭为止。在此期间，只有在残端绑上止血带才能暂时控制出血。
+  - [bold]压缩纱布[/bold]与[bold]压缩创伤包[/bold]可单独用于直接压迫止血。压缩纱布仅对非动脉出血有效；压缩创伤包还能止住动脉大出血。
+  - 失血会导致身体严重缺氧。使用血袋或静脉输液架为伤员补充流失的血液。
+  - [bold]伤员死亡后[/bold]，随着心脏停止泵血，大部分出血创口会自行凝结。但[color=red]动脉大出血和开放的断肢残端在死后仍会持续失血[/color]，导致遗体在被复苏前血液流尽。在电击复苏前务必先止住这些大出血。
 
-  ## Shrapnel
-  - Explosions and some rounds leave fragments embedded in a body part. They hurt whenever you move.
-  - Remove them with a scalpel or knife: right-click the patient and choose [bold]Remove shrapnel[/bold].
+  ## 止血带
+  - 在手臂或腿部绑上止血带可截断该肢体的血流以停止出血。绑扎极为迅速，在敌人火力压制下也能自行完成绑扎。
+  - [bold]断肢残端[/bold]：对准断肢部位并使用止血带，可将其残端钳夹止血。残端上的止血带不会造成肢体坏死，但一旦拆除残端就会再次流血，因此必须尽快通过外科手术封闭残端。详见[textlink="肢体手术" link="CMUGuideSurgeryLimbs"]。
+  - [color=red]绑扎超过 5 分钟后，肢体会缺血坏死[/color]。在此之前务必妥善处置伤口并使用[bold]拆除止血带[/bold]选项将其解下。拆除后止血带会返还至背包或掉落在地面。
 
-  ## Synthetics
-  Synthetics don't bleed or bandage. Repair brute damage with a welder and burns with cable coils. For the full process, including the maintenance station and rebooting with a reset key, see [textlink="Repairing Synthetics" link="CMUGuideEngSynths"].
+  ## 体内内出血
+  - 某些创伤会导致体腔内出血，外用敷料无法触及：复杂骨折与粉碎性骨折、极其沉重的钝击，以及衰竭的内脏器官。
+  - 具备基础医疗培训者使用健康分析仪即可查看内出血情况。
+  - 内出血必须通过外科手术治疗：详见[textlink="外科手术" link="CMUGuideMedicalSurgery"]。
+
+  ## 烧伤与焦痂
+  - 烧伤同样属于创伤创口，使用药膏或烧伤急救包进行处置。
+  - 单次单一部位受到 30 点以上的烧伤伤害可能会形成[bold]坏死焦痂[/bold]（三度全层深度烧伤）。焦痂伴随剧痛，且即使烧伤已治愈也不会自行脱落消失。
+  - 焦痂必须通过[bold]焦痂清创术[/bold]手术切除。这是一个使用烧伤急救包或药膏的单步手术，且可以在自己的手臂和腿部上自行操作。
+
+  ## 嵌入弹片
+  - 爆炸和部分枪弹会在身体部位内留下嵌入的弹片碎屑。只要活动身体就会引发剧烈刺痛。
+  - 使用手术刀或小刀取出弹片：右键点击伤员并选择[bold]取出弹片[/bold]。
+
+  ## 合成人（Synthetics）
+  合成人不会流血，也无法使用绷带包扎。使用焊枪修复创伤，使用线缆修复烧伤。维保平台使用以及重置钥匙重启等完整维保流程，详见[textlink="合成人维修" link="CMUGuideEngSynths"]。
 </Document>

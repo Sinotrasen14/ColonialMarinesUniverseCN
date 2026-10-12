@@ -1,44 +1,45 @@
 <Document>
-  # Medical
+  # 医疗指南
 
-  [bold]Not a medic?[/bold] Start with [textlink="Infantry First Aid" link="CMUGuideMedicalInfantry"]. It covers everything in your IFAK and how to keep yourself and your squad alive until a medic arrives.
+  [bold]你不是医护兵？[/bold]请先阅读[textlink="大兵急救" link="CMUGuideMedicalInfantry"]。该指南介绍了单兵急救包（IFAK）中的所有物品，以及在医护兵赶到之前如何保全自己和班组成员的生命。
 
-  Injuries are tracked on each part of the body. A gunshot to the arm leaves a wound on that arm, a heavy blow can break a bone, and enough trauma to the chest can damage the organs inside it. Treating a patient means finding each of those problems and fixing them one by one.
+  身体各部位会分别记录所受的损伤。手臂中弹会在手臂上留下伤口，受到重击可能会导致骨折，而胸部受到严重的创伤则会损坏你的内脏。救治伤员的核心就在于找出这些问题，并逐一进行处理。
 
   <Box>
-    <GuideEntityEmbed Entity="CMHealthAnalyzer" Caption="Health analyzer"/>
-    <GuideEntityEmbed Entity="CMTraumaKit10" Caption="Trauma kit"/>
-    <GuideEntityEmbed Entity="CMBurnKit10" Caption="Burn kit"/>
-    <GuideEntityEmbed Entity="CMScalpel" Caption="Scalpel"/>
+    <GuideEntityEmbed Entity="CMHealthAnalyzer" Caption="健康分析仪"/>
+    <GuideEntityEmbed Entity="CMTraumaKit10" Caption="创伤急救包"/>
+    <GuideEntityEmbed Entity="CMBurnKit10" Caption="烧伤急救包"/>
+    <GuideEntityEmbed Entity="CMScalpel" Caption="手术刀"/>
   </Box>
 
-  ## How Injuries Work
-  - [bold]Body parts[/bold]: the head, torso, arms, hands, legs and feet each have their own health. Damage lands on the part that was hit.
-  - [bold]Wounds[/bold]: damage leaves wounds on the part it hit. Untreated wounds lower that part's maximum health and can bleed.
-  - [bold]Bones[/bold]: heavy hits can fracture a bone, from a hairline crack up to a shattered bone.
-  - [bold]Organs[/bold]: the heart, lungs, liver, kidneys, stomach, brain and eyes each have their own health, and damaged organs cause their own problems.
-  - [bold]Blood[/bold]: open wounds and internal bleeding drain blood, which starves the body of oxygen.
-  - [bold]Pain[/bold]: injuries hurt. Pain slows you down, ruins your aim and can put you into shock.
+  ## 损伤机制
+  - [bold]身体部位[/bold]：头部、躯干、手臂、手部、腿部和脚部各有独立的生命值。受到的伤害会作用在受击的部位上。
+  - [bold]创伤[/bold]：伤害会在受击部位留伤口。未处理的伤口会降低该部位的生命值上限，并可能导致流血。
+  - [bold]骨骼[/bold]：沉重的打击会导致骨折，严重程度从轻微发丝状裂纹到粉碎性骨折不等。
+  - [bold]器官[/bold]：心脏、肺部、肝脏、肾脏、胃部、大脑和眼部各有独立的健康状态，器官受损会引发各自特有的问题。
+  - [bold]血液[/bold]：开放性伤口和内出血会导致失血，使身体收到缺氧伤害。
+  - [bold]疼痛[/bold]：受伤会带来疼痛。疼痛会减慢你的移动速度、影响射击精度，甚至休克。
 
-  ## Aiming at a Body Part
-  In combat you can choose which part of the body to aim for. The keys to cycle or pick a body zone are under [bold]CMU Medical[/bold] in the controls menu. Aiming only nudges where a hit lands; it doesn't guarantee it.
+  ## 部位瞄准
+  在战斗中，你可以自行选择瞄准身体的具体部位。切换或选择身体部位的按键，可在控制设置菜单中的[bold]CMU Medical[/bold]分类下找到。选择肢体只会提高命中该部位的几率，并不能保证必定命中。
 
-  ## Medical Training
-  Most medical work checks your medical skill:
-  - [bold]No training[/bold]: you can still use basic first aid like gauze and ointment, just more slowly.
-  - [bold]Basic training (medical 1)[/bold]: listen with a stethoscope, see fractures and internal bleeding on a health analyzer, hook up and read a patient monitor.
-  - [bold]Trained medic (medical 2)[/bold]: see organ damage on a health analyzer, use kits at full speed and strength, and use defibrillators.
-  - [bold]Surgery[/bold] uses a separate surgery skill. See [textlink="Surgery" link="CMUGuideMedicalSurgery"].
+  ## 医疗技能
+  大部分医疗操作都需要对应的医疗技能等级：
+  - [bold]未经培训[/bold]：你可以使用纱布和药膏等基础急救用品，但操作速度较慢。
+  - [bold]基础培训（医疗 1）[/bold]：可以使用听诊器来听诊、在健康分析仪上查看骨折和内出血情况，以及连接并读取病人监护仪。
+  - [bold]受训医护兵（医疗 2）[/bold]：可以在健康分析仪上查看器官受损情况、以最快速度和满额效果使用急救包，并且可以使用除颤器。
+  - [bold]外科学[/bold]该技能可让你进行独立的外科手术。详见[textlink="外科手术" link="CMUGuideMedicalSurgery"]。
 
-  ## In This Guide
-  - [textlink="Start Here: Infantry First Aid" link="CMUGuideMedicalInfantry"]: using your IFAK, for riflemen and anyone who isn't a medic.
-  - [textlink="Diagnosis" link="CMUGuideMedicalDiagnosis"]: working out what's wrong with a patient.
-  - [textlink="Wounds and Bleeding" link="CMUGuideMedicalWounds"]: dressing wounds, stopping bleeding and burns.
-  - [textlink="Field Treatment Mixing" link="CMUGuideMedicalFieldCare"]: making dressings in the field.
-  - [textlink="Fractures" link="CMUGuideMedicalBones"]: splints, casts and setting bones.
-  - [textlink="Pain" link="CMUGuideMedicalPain"]: pain, shock and painkillers.
-  - [textlink="Organs" link="CMUGuideMedicalOrgans"]: organ damage and how to fix it.
-  - [textlink="Surgery" link="CMUGuideMedicalSurgery"]: operating on a patient.
-  - [textlink="Resuscitation" link="CMUGuideMedicalResuscitation"]: CPR, the recovery position and bringing back the dead.
-  - [textlink="Defibrillators" link="CMUGuideDefibrillators"]: the Lifepak, the AED and patient monitoring.
+  ## 本指南目录
+  - [textlink="新手入门：大兵急救" link="CMUGuideMedicalInfantry"]：单兵急救包（IFAK）的使用方法，适合步枪手及非医护人员。
+  - [textlink="诊断" link="CMUGuideMedicalDiagnosis"]：查明伤员的具体伤情。
+  - [textlink="创伤与流血" link="CMUGuideMedicalWounds"]：包扎创口、止血与烧伤处理。
+  - [textlink="野战敷料调配" link="CMUGuideMedicalFieldCare"]：在野战环境下制作敷料。
+  - [textlink="骨折" link="CMUGuideMedicalBones"]：夹板、石膏以及正骨复位。
+  - [textlink="疼痛" link="CMUGuideMedicalPain"]：疼痛、休克与止痛药物。
+  - [textlink="器官" link="CMUGuideMedicalOrgans"]：器官损伤及修复方法。
+  - [textlink="外科手术" link="CMUGuideMedicalSurgery"]：为伤员进行外科手术。
+  - [textlink="复苏急救" link="CMUGuideMedicalResuscitation"]：心肺复苏（CPR）、复苏体位以及复苏死者。
+  - [textlink="除颤器" link="CMUGuideDefibrillators"]：Lifepak 除颤监护仪、AED 以及病人监护。
 </Document>
+

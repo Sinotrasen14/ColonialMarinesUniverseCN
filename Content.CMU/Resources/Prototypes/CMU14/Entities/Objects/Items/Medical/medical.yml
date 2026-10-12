@@ -345,7 +345,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterNephronate
-  name: 肾素酸盐药瓶
+  name: 肾复宁药瓶
   suffix: nephronate, 16
   components:
   - type: Item
@@ -368,7 +368,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterPulmovine
-  name: 普尔莫文药瓶
+  name: 肺复灵药瓶
   suffix: pulmovine, 16
   components:
   - type: Item
@@ -391,7 +391,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterHepatocytin
-  name: 肝细胞素药瓶
+  name: 肝胞素药瓶
   suffix: hepatocytin, 16
   components:
   - type: Item
@@ -441,7 +441,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterParacetamol
-  name: 对乙酰氨基酚药瓶
+  name: 扑热息痛药瓶
   suffix: paracetamol, 16
   components:
   - type: Item
@@ -533,7 +533,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterDermaline
-  name: 地尔玛琳药瓶
+  name: 德马林药瓶
   suffix: dermaline, 16
   components:
   - type: Item
@@ -579,7 +579,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterImidazoline
-  name: 咪唑啉药瓶
+  name: 咪达唑啉药瓶
   suffix: imidazoline, 16
   components:
   - type: Item
@@ -602,7 +602,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterCryoxadone
-  name: 低温氧杂环己酮药瓶
+  name: 冷冻酮药瓶
   suffix: cryoxadone, 16
   components:
   - type: Item
@@ -625,7 +625,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterLeporazine
-  name: 来泊拉嗪药瓶
+  name: 勒泊拉嗪药瓶
   suffix: leporazine, 16
   components:
   - type: Item
@@ -886,7 +886,7 @@
   parent: CMTricordrazineAutoInjector
   id: AU14FirstAidAutoInjectorNoSkill
   name: 急救自动注射器
-  description: 一个自动注射器，里面装有一剂三氯达嗪和少量对乙酰氨基酚及德沙林，供受伤的士兵自我使用。
+  description: 一个自动注射器，里面装有一剂三可拉嗪和少量扑热息痛及德沙林，供受伤的士兵自我使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/auto_injectors.rsi
@@ -1000,7 +1000,7 @@
   parent: CMAutoInjector
   id: AU14AlbuDexAutoInjector
   name: 白蛋白-地塞米松自动注射器
-  description: 一支自动注射器，装有3次用量的沙丁胺醇和右旋糖酐，以及一小剂量的右旋糖酐+。
+  description: 一支自动注射器，装有3次用量的沙丁胺醇和德沙林，以及一小剂量的德沙林 Plus。
   components:
   - type: Hypospray
     transferAmount: 30
@@ -1068,8 +1068,8 @@
 - type: entity
   parent: CMAutoInjector
   id: AU14ParacetamolAutoInjector
-  name: 对乙酰氨基酚自动注射器
-  description: 一支装有3次使用量对乙酰氨基酚的自动注射器。
+  name: 扑热息痛自动注射器
+  description: 一支装有3次使用量扑热息痛的自动注射器。
   components:
   - type: Hypospray
     transferAmount: 20

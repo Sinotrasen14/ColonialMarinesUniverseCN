@@ -1,76 +1,77 @@
 <Document>
-  # Diagnosis
+  # 伤情诊断
 
-  Before you can treat a patient you need to know what's wrong. How much you can see depends on your medical training.
+  在救治伤员之前，你必须先明确具体的伤情。你能获取多少伤情信息，取决于你的医疗技能等级。
 
   <Box>
-    <GuideEntityEmbed Entity="CMHealthAnalyzer" Caption="Health analyzer"/>
-    <GuideEntityEmbed Entity="RMCStethoscope" Caption="Stethoscope"/>
+    <GuideEntityEmbed Entity="CMHealthAnalyzer" Caption="健康分析仪"/>
+    <GuideEntityEmbed Entity="RMCStethoscope" Caption="听诊器"/>
   </Box>
 
-  ## Looking at the Patient
-  - [bold]Examining[/bold] someone shows their visible wounds and fractures, and which body part each one is on.
-  - [bold]Inspect injuries[/bold]: right-click a patient and choose Inspect injuries to take a closer look. After a short check you get an injury report listing each body part's wounds and how badly they're bleeding. You can bind a key to this under [bold]CMU Medical[/bold] in the controls menu.
+  ## 检视伤员
+  - [bold]检视（Examining）[/bold]某人可显示其肉眼可见的伤口和骨折，以及各损伤所在的具体身体部位。
+  - [bold]检查伤情[/bold]：右键点击伤员并选择“检查伤情”进行细致检查。短暂检查后，你将获得一份伤情报告，列出各个身体部位的伤口以及失血严重程度。你可以在控制设置菜单中的[bold]CMU Medical[/bold]分类下为此功能绑定快捷键。
 
-  ## The Health Analyzer
-  Use it on a patient to open a full scan.
-  - [bold]Top bar[/bold]: overall health, pulse, blood level, temperature and shock risk, with a status of stable, serious, critical or deceased.
-  - [bold]Body[/bold]: each body part's health, with its wounds, bleeding, embedded shrapnel, eschar, splints, casts and tourniquets.
-  - [bold]Bleeding[/bold]: with basic medical training, the scan shows how bad each bleed is (minor, moderate, severe or [color=red]arterial[/color]), on the blood readout and on each bleeding body part. A missing limb's row shows whether its stump is bleeding arterially or has a tourniquet on it.
-  - [bold]Fractures and internal bleeding[/bold]: need basic medical training. With more training it tells you the exact fracture severity and where the bleeding is.
-  - [bold]Organs[/bold]: need a trained medic. Each organ shows its stage (healthy, bruised, damaged, failing or dead) and health.
-  - [bold]Pain[/bold]: the patient's pain level and how close they are to pain shock.
-  - For a dead patient it also shows roughly how many minutes are left before they can no longer be brought back.
+  ## 健康分析仪
+  对伤员使用健康分析仪可打开全身体检扫描界面。
+  - [bold]顶部状态栏[/bold]：总体生命值、脉搏、血量水平、体温及休克风险，并标有伤员状态（稳定、严重、危重或已死亡）。
+  - [bold]身体部位[/bold]：各身体部位的生命值，以及伤口、出血、嵌入的弹片、烧伤焦痂、夹板、石膏和止血带情况。
+  - [bold]出血情况[/bold]：具备基础医疗培训后，扫描会显示各项出血的严重程度（轻度、中度、重度或[color=red]动脉大出血[/color]），分别标注在血量读数和各出血部位上。若有断肢，其所在行会显示残端是否正在发生动脉大出血，或是否绑有止血带。
+  - [bold]骨折与内出血[/bold]：需要基础医疗培训才能查看。技能等级更高时，还会显示具体的骨折严重程度以及内出血的所在位置。
+  - [bold]器官状态[/bold]：需要受训医护兵才能查看。显示每个器官的病变阶段（健康、挫伤、受损、衰竭或坏死）及健康值。
+  - [bold]疼痛读数[/bold]：伤员当前的疼痛程度，以及距离疼痛休克还有多近。
+  - 对于已死亡的伤员，还会大致显示距离彻底无法复苏还剩多少分钟。
 
-  If the analyzer can't show something because of your training, it says so, so you know to find someone more qualified rather than assuming the patient is fine.
+  如果因医疗技能不足导致分析仪无法显示某些信息，界面会明确说明，以便你知晓应当寻找更专业的人员来处理，而不是误以为伤员没有大碍。
 
-  ## Damage Types
-  The analyzer breaks a patient's damage down by type. Each group heals differently, so knowing which one you're looking at tells you what to reach for.
+  ## 伤害类型
+  分析仪将伤员受到的伤害按类型拆分显示。每类伤害的治愈方式各有不同，了解当前的伤害类型有助于你迅速选择对症的药物与器材。
 
-  [bold]Brute[/bold]: blunt, slash and piercing. Punches, claws, blades and bullets.
-  - Dress the wounds with gauze or a trauma kit, then heal with [bold]bicaridine[/bold].
-  - Heavy brute damage can also break bones and cause internal bleeding.
-  - See [textlink="Brute Medications" link="CMUGuideMedsBrute"].
+  [bold]钝伤/创伤[/bold]：钝击、割裂和穿刺伤害。如拳击、利爪、刀刃和枪弹伤。
+  - 使用纱布或创伤急救包包扎伤口，然后使用[bold]比卡利啶（bicaridine）[/bold]治疗。
+  - 严重的钝击创伤还可能导致骨折和内出血。
+  - 详见[textlink="创伤药物" link="CMUGuideMedsBrute"]。
 
-  [bold]Burn[/bold]: heat, shock, cold and caustic. Fire, electricity, freezing and acid.
-  - Treat the burns with ointment or a burn kit, then heal with [bold]kelotane[/bold] or the stronger [bold]dermaline[/bold].
-  - A big burn in one hit can leave eschar. See [textlink="Wounds and Bleeding" link="CMUGuideMedicalWounds"].
-  - See [textlink="Burn Medications" link="CMUGuideMedsBurn"].
+  [bold]烧伤[/bold]：高温、电击、极寒和酸蚀伤害。如火焰、触电、冻伤和强酸。
+  - 使用药膏或烧伤急救包处理伤处，然后使用[bold]凯洛坦（kelotane）[/bold]或药效更强的[bold]德马林（dermaline）[/bold]治疗。
+  - 单次受到大额烧伤可能会留下坏死焦痂。详见[textlink="创伤与流血" link="CMUGuideMedicalWounds"]。
+  - 详见[textlink="烧伤药物" link="CMUGuideMedsBurn"]。
 
-  [bold]Toxin[/bold]: poison and radiation. Toxic chemicals, overdoses, failing organs and radiation.
-  - Heal with [bold]dylovene[/bold], which also clears hallucinations.
-  - Keep an eye on the liver and kidneys, which filter toxins and get damaged by them. See [textlink="Organs" link="CMUGuideMedicalOrgans"].
-  - See [textlink="Toxin Medications" link="CMUGuideMedsToxin"].
+  [bold]毒素[/bold]：毒物与辐射伤害。如有毒化学品、药物过量（OD）、器官衰竭以及辐射暴露。
+  - 使用[bold]迪洛芬（dylovene）[/bold]治疗，它还能消除幻觉。
+  - 密切关注肝脏和肾脏，这两个器官负责过滤毒素且极易受损。详见[textlink="器官" link="CMUGuideMedicalOrgans"]。
+  - 详见[textlink="毒素药物" link="CMUGuideMedsToxin"]。
 
-  [bold]Suffocation[/bold]: asphyxiation and blood loss. Not breathing, damaged lungs, a stopped heart, or bleeding out.
-  - Heal with [bold]dexalin[/bold], and breathe from an oxygen tank to recover three times as fast.
-  - Blood loss won't go away until the blood is replaced. Stop the bleeding and give blood.
-  - See [textlink="Suffocation Medications" link="CMUGuideMedsSuffocation"].
+  [bold]窒息[/bold]：缺氧窒息与大量失血。如呼吸停止、肺部受损、心脏停搏或失血过多。
+  - 使用[bold]德沙林（dexalin）[/bold]治疗，配合氧气瓶呼吸可使恢复速度提升至三倍。
+  - 失血无法靠药物自愈，必须输血补充。彻底止血并给伤员输血。
+  - 详见[textlink="窒息药物" link="CMUGuideMedsSuffocation"]。
 
-  [bold]Genetic[/bold]: cellular damage. Rare, and only a few things cause it.
-  - Only a few treatments touch it, such as [bold]cryoxadone[/bold] in a cryo pod. See [textlink="Other Medications" link="CMUGuideMedsOther"].
+  [bold]基因损伤[/bold]：细胞层面的损伤。较为罕见，仅有少数诱因会导致。
+  - 仅有少数疗法能够治疗基因损伤，例如在冷冻舱中使用[bold]冷冻酮（cryoxadone）[/bold]。详见[textlink="其他药物" link="CMUGuideMedsOther"]。
 
-  [bold]Tricordrazine[/bold] heals a little of brute, burn, toxin and suffocation all at once, and is a good general-purpose drug when you're not sure what you're dealing with. For every medicine, see [textlink="Medications" link="CMUGuideMedications"].
+  [bold]三可拉嗪（Tricordrazine）[/bold]能同时少量修复钝伤、烧伤、毒素和窒息伤害；在伤情不明时是一款极佳的万能急救药物。全部药物信息详见[textlink="药物指南" link="CMUGuideMedications"]。
 
-  ## The Stethoscope
-  Use it on a patient, or right-click them, and listen for 2 seconds. It needs basic medical training.
-  - [bold]Heart[/bold]: whether there's a heartbeat, and how fast. A trained medic hears the exact rate.
-  - [bold]Lungs[/bold]: you hear the patient breathe:
-    - [bold]Clear[/bold]: healthy lungs.
-    - [bold]Wet[/bold]: crackling breaths. Fluid or blood in the lungs, from pulmonary edema or lung damage.
-    - [bold]Faint[/bold]: quiet, weak breaths. The lungs are failing and barely moving air.
-    - A dead patient isn't breathing, so there's nothing to hear.
-  - A trained medic can also tell how much pain the patient is in.
+  ## 听诊器
+  对伤员使用听诊器，或右键点击伤员，听诊 2 秒。需要具备基础医疗培训。
+  - [bold]心脏[/bold]：是否有心跳以及心率快慢。受训医护兵可听出具体心率数值。
+  - [bold]肺部[/bold]：听取伤员的呼吸音：
+    - [bold]清音[/bold]：肺部健康。
+    - [bold]湿啰音[/bold]：呼吸伴有湿性啰音。肺水肿或肺部受损导致肺内积液或积血。
+    - [bold]微弱音[/bold]：呼吸微弱无力。肺部功能正在衰竭，通气量极小。
+    - 死亡的伤员已无呼吸，因此听不到任何声音。
+  - 受训医护兵还能通过听诊判断伤员当前的疼痛程度。
 
-  ## Holocards
-  Patients get a holocard automatically, based on their condition:
-  - [bold]Stable[/bold]: only minor injuries.
-  - [bold]Trauma[/bold]: fractures or internal bleeding.
-  - [bold]Organ failure[/bold]: at least one organ is failing.
+  ## 全息伤情卡
+  系统会根据伤员的实际情况自动为其分发全息伤情卡：
+  - [bold]稳定[/bold]：仅受轻伤。
+  - [bold]外伤[/bold]：存在骨折或内出血。
+  - [bold]器官衰竭[/bold]：至少有一个内脏器官处于衰竭状态。
 
-  ## Body Scanner
-  The [bold]body scanner pod[/bold] and its console give a full scan of a patient lying in the pod, including enclosed injuries, and help plan surgery. See [textlink="Medical Machines" link="CMUGuideMedicalMachines"].
+  ## 人体扫描仪
+  [bold]人体扫描舱[/bold]及其控制台可对躺在舱内的伤员进行全方位扫描，包括体内深层隐藏损伤，有助于规划外科手术。详见[textlink="医疗器械" link="CMUGuideMedicalMachines"]。
 
-  ## Patient Monitor
-  A Lifepak can be hooked up to a patient to watch their heart rhythm, oxygen, blood pressure and more in real time. See [textlink="Defibrillators" link="CMUGuideDefibrillators"].
+  ## 病人监护仪
+  可以将 Lifepak 除颤监护仪连接至伤员身上，实时监测其心律、血氧、血压等各项生命体征。详见[textlink="除颤器" link="CMUGuideDefibrillators"]。
 </Document>
+

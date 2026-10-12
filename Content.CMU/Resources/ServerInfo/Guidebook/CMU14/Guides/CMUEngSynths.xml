@@ -1,35 +1,35 @@
 <Document>
-  # Repairing Synthetics
+  # 合成人维修
 
   <Box>
-    <GuideEntityEmbed Entity="CMWelder" Caption="Blowtorch"/>
-    <GuideEntityEmbed Entity="RMCCableCoil" Caption="Cable coil"/>
-    <GuideEntityEmbed Entity="RMCSynthResetKey" Caption="Synthetic reset key"/>
-    <GuideEntityEmbed Entity="RMCSyntheticMaintenanceStation" Caption="Maintenance station"/>
+    <GuideEntityEmbed Entity="CMWelder" Caption="焊枪"/>
+    <GuideEntityEmbed Entity="RMCCableCoil" Caption="线缆"/>
+    <GuideEntityEmbed Entity="RMCSynthResetKey" Caption="合成人重置钥匙"/>
+    <GuideEntityEmbed Entity="RMCSyntheticMaintenanceStation" Caption="维保平台"/>
   </Box>
 
-  Synthetics can't be treated like people. Medicine does nothing for them: they have to be [bold]repaired[/bold], and that makes it an engineer's job as much as a medic's.
+  合成人无法像人类那样接受常规救治。药品对其毫无效果：他们只能接受[bold]维修[/bold]，这使得修理合成人既是工程兵的活，也属于医护兵的工作范畴。
 
-  ## Brute Damage: Blowtorch
-  - Use a lit [bold]blowtorch[/bold] on a synthetic to patch the dents. Each pass repairs [bold]15[/bold] each of blunt, piercing and slash damage, and burns 5 fuel.
-  - Only works if they actually have brute damage.
+  ## 创伤：焊枪
+  - 使用点燃的[bold]焊枪[/bold]对准合成人进行修补。每一轮维修可分别修复钝击、穿刺和割裂伤害各 [bold]15 点[/bold]，并消耗 5 点燃料。
+  - 只有合成人身上存在创伤时，焊枪才能修复。
 
-  ## Burn Damage: Cable Coil
-  - Use [bold]cable coil[/bold] on a synthetic to fix burnt wiring. Each pass uses one length of cable and repairs [bold]15[/bold] each of heat, shock, cold and caustic damage.
-  - Only works if they actually have burn damage.
+  ## 烧伤：线缆
+  - 对合成人使用[bold]线缆[/bold]以修复烧毁的线路。每一轮消耗一份线缆，可修复热损伤、电击、冻伤和酸蚀伤害各 [bold]15 点[/bold]。
+  - 只有合成人身上存在烧伤时，线缆才能修复。
 
-  ## How Long It Takes
-  - Each pass takes [bold]7 seconds[/bold], and your construction skill makes it faster. Stay still, or it's interrupted.
-  - A synthetic can repair themselves, but it's slow: [bold]30 seconds[/bold] a pass. Having someone else do it is much quicker.
+  ## 维修耗时
+  - 每一轮维修耗时 [bold]7 秒[/bold]，建造技能等级越高耗时越短。操作期间请保持静止，否则维修会被中断。
+  - 合成人可以自行维修，但速度极慢：每一轮需要 [bold]30 秒[/bold]。由他人协助维修要快得多。
 
-  ## Maintenance Station
-  - The [bold]synthetic maintenance station[/bold] is a cradle that repairs a synthetic automatically while they're inside it. Use the "Enter maintenance station" verb, or drag them into it.
-  - It runs on power, with an internal charge that each repair cycle draws from. Examine it to see how much charge it has left.
-  - If it loses power, it ejects whoever is inside.
+  ## 维保平台
+  - [bold]合成人维保平台[/bold]是一个基座设备，当合成人停在平台时，平台会自动对其进行维修。使用“进入维保平台”动作，或将合成人拖拽入内。
+  - 平台由电力驱动，每个维修循环都会消耗其内部电量。检视维保平台可查看其剩余电量。
+  - 当断电失去动力时，平台会将合成人弹出。
 
-  ## Rebooting a Synthetic
-  - A synthetic that suffers critical failure can't be revived with a defibrillator. It needs a [bold]synthetic reset key[/bold], which works like a defibrillator for synthetics. Repair the damage first, just as you'd heal someone before shocking them.
-  - The reset key also clears major glitches and programming errors, including a synthetic whose programming has been tampered with.
-  - Using one needs engineering training. The [bold]SMART[/bold] reset key can be used by anyone.
-  - The reset key runs on its battery, and needs recharging after use like any other battery-powered item.
+  ## 重启合成人
+  - 遭受致命故障导致停机的合成人无法使用除颤器复苏。它需要使用[bold]合成人重置匙(synthetic reset key)[/bold]，其功能相当于合成人的专属除颤器。在重启前必须先修好其所受伤害，就如同在电击人类前先处理伤势一样。
+  - 重置匙(reset key)还能清除重大系统错误和程序故障，包括程序被篡改的叛乱合成人。
+  - 使用重置匙(reset key)需要具备工程技能培训。[bold]SMART[/bold] 重置匙则任何人均可使用。
+  - 重置匙(reset key)使用内置电池供电，使用后与其他电池供电设备一样需要充电。
 </Document>
