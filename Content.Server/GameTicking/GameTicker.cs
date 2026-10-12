@@ -146,11 +146,6 @@ namespace Content.Server.GameTicking
         private void OnTickerJoinLobbyEvent(Content.Shared.GameTicking.TickerJoinLobbyEvent ev, EntitySessionEventArgs args)
         {
             var presetId = CurrentPreset?.ID?.ToLowerInvariant();
-            if (presetId != "forceonforce")
-            {
-                _chatManager.DispatchServerMessage(args.SenderSession, "Respawn is disabled in this gamemode");
-                return;
-            }
 
             if (_auobjectivesystem.IsWinActive)
             {
