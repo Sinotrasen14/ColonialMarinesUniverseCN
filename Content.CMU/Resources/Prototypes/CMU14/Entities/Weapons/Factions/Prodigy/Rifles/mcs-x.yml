@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: MCS-X Pulse Rifle
+  name: MCS-X脉冲步枪
   id: AU14WeaponRifleprodigyrifleAR
-  description: The Modular Combat System Mark X Pulse Rifle, or MCS-X Pulse Rifle for short, is the standard weapon used by the prodigy security forces employed by Prodigy Corporation. The weapon has a bullpup design, intended for use in cramped urban environments. The MCS-X features a digital ammunition counter, and is capable of holding ninety-five rounds.
+  description: 模块化战斗系统Mark X脉冲步枪，简称MCS-X脉冲步枪，是Prodigy Corporation所雇用的Prodigy安保部队使用的标准武器。该武器采用无托设计，适用于狭窄的城市环境。MCS-X配备数字弹药计数器，可容纳九十五发子弹。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/Prodigy/mcsmxpr32x64.rsi
@@ -51,7 +51,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -94,7 +94,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14WeaponRifleprodigyrifleMagazineStandard
-  name: "MCS-X Pulse Rifle magazine (10x24mm)"
+  name: "MCS-X脉冲步枪弹匣（10x24毫米）"
   components:
   - type: Tag
     tags:
@@ -121,7 +121,7 @@
 - type: entity
   parent: AU14WeaponRifleprodigyrifleMagazineStandard
   id: AU14WeaponRifleprodigyrifleMagazineAP
-  name: "MCS-X Pulse Rifle AP magazine (10x24mm)"
+  name: "MCS-X脉冲步枪AP弹匣（10x24mm）"
   suffix: AP
   components:
   - type: Tag

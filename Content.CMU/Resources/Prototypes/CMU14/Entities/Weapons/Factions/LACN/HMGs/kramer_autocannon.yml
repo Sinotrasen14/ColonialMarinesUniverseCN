@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCM2CMount
   id: CMUKramerAutocannonMount
-  name: Kramer autocannon
-  description: The disassembled Kramer 30mm autocannon, with its tripod folded up and unable to fire.
+  name: 克雷默自动炮
+  description: 拆解后的克莱默30毫米自动加农炮，三脚架已折叠，无法开火。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/LACN/LACNRedux/LACN/kramerautocannon/kramericon.rsi
@@ -53,8 +53,8 @@
   parent: RMCMachineGunM2C
   id: CMUMachineGunKramerAutocannon
   categories: [ HideSpawnMenu ]
-  name: Kramer autocannon
-  description: The top half of a Kramer 30mm autocannon. It is not much use without a tripod.
+  name: 克雷默自动炮
+  description: Kramer 30毫米自动加农炮的上半部分。没有三脚架就没多大用处。
   components:
   - type: MagazineVisuals
     magState: mag
@@ -90,7 +90,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         priority: 2
@@ -105,8 +105,8 @@
 - type: entity
   parent: RMCMagazineM2C
   id: CMUMagazineKramer30mmHE
-  name: Kramer autocannon ammunition link (30mm HE)
-  description: A set of 15 high-explosive 30mm rounds for the Kramer autocannon. Each round bursts into shrapnel on impact.
+  name: 克雷默自动机炮弹链（30毫米高爆弹）
+  description: 一整套15发克拉默自动加农炮用的30毫米高爆弹。每发子弹在命中时都会炸成弹片。
   components:
   - type: Tag
     tags:
@@ -134,8 +134,8 @@
 - type: entity
   parent: CMUMagazineKramer30mmHE
   id: CMUMagazineKramer30mmHEAP
-  name: Kramer autocannon ammunition link (30mm HEAP)
-  description: A set of 15 high-explosive armor-piercing 30mm rounds for the Kramer autocannon. Built to punch through armor rather than spray shrapnel.
+  name: 克雷默自动机炮弹药链接（30毫米高爆穿甲弹）
+  description: 一盒15发克拉默自动炮用30毫米高爆穿甲弹。专为穿透装甲而设计，而非散射破片。
   components:
   - type: Tag
     tags:
@@ -156,7 +156,7 @@
 - type: entity
   parent: VehicleCartridgeAceAutocannon
   id: CMUCartridgeKramer30mmHE
-  name: cartridge (30mm HE)
+  name: 30毫米高爆弹
   components:
   - type: Tag
     tags:
@@ -169,7 +169,7 @@
 - type: entity
   parent: VehicleCartridgeAceAutocannon
   id: CMUCartridgeKramer30mmHEAP
-  name: cartridge (30mm HEAP)
+  name: 30毫米高爆穿甲弹
   components:
   - type: Tag
     tags:
@@ -182,7 +182,7 @@
 - type: entity
   parent: RMCBaseBullet
   id: CMUProjectileKramer30mmHEAP
-  name: 30mm HEAP round
+  name: 30毫米高爆穿甲弹
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -224,8 +224,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: CMUKramerAutocannonCase
-  name: Kramer autocannon case
-  description: A gun case containing the Kramer 30mm autocannon. Comes with two HE and two HEAP ammunition boxes.
+  name: 克莱默自动机炮箱
+  description: 一个装有Kramer 30毫米自动加农炮的枪箱。附带两个高爆弹弹药箱和两个高爆穿甲弹弹药箱。
   components:
   - type: Storage
     maxItemSize: Ginormous

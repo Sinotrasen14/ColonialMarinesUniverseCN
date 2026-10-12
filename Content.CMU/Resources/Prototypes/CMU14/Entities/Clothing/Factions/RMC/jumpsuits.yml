@@ -1,8 +1,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: AU14FatiguesDesertRMC
-  name: desert royal marine fatigues
-  description: Standart-issue Three World Empire Royal Marines Commando fatigues.
+  name: 沙漠皇家海军陆战队制服
+  description: 标准配发的三世界帝国皇家海军陆战队突击队作战服。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/jumpsuits/desert.rsi
@@ -14,7 +14,7 @@
 - type: entity
   parent: AU14FatiguesDesertRMC
   id: AU14FatiguesBlackRMC
-  name: black royal marine fatigues
+  name: 黑色皇家海军陆战队作训服
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/jumpsuits/black.rsi
@@ -22,8 +22,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: AU14FatiguesDesertRMCTeamlead
-  name: desert royal marine team leader fatigues
-  description: Standart-issue Three World Empire Royal Marines Commando fatigues. Usually worn by sergeants or officers.
+  name: 沙漠皇家海军陆战队队长制服
+  description: 标准配发的三界帝国皇家海军陆战队突击队作战服。通常由中士或军官穿着。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/jumpsuits/desert_team_lead.rsi
@@ -35,7 +35,7 @@
 - type: entity
   parent: AU14FatiguesDesertRMCTeamlead
   id: AU14FatiguesBlackRMCTeamlead
-  name: black royal marine team leader fatigues
+  name: 黑色皇家海军陆战队队长制服
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/jumpsuits/black_team_lead.rsi
@@ -43,8 +43,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: AU14FatiguesServiceRMC
-  name: royal marine service uniform
-  description: Standart-issue Three World Empire Royal Marines Commando service uniform. Usually worn by officers.
+  name: 皇家海军陆战队服务部制服
+  description: 三界帝国皇家海军陆战队突击队标准制式服务部制服。通常由军官穿着。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/jumpsuits/service.rsi
@@ -56,8 +56,8 @@
 - type: entity
   parent: [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: AU14PilotJumpsuitRMC
-  name: royal marine aircrew jumpsuit
-  description: A standard RMC Aircrew Jumpsuit. It has shards of light Kevlar to help protect against shrapnel.
+  name: 皇家海军陆战队空勤连身衣
+  description: 一件标准的RMC空勤连身衣。它带有轻型凯夫拉碎片，有助于抵御弹片。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/USASFSecurityForces/USASFPilot/uniform.rsi # TODO: Proper RMC aircrew suit
@@ -69,8 +69,8 @@
 - type: entity
   parent:  [RMCMarineUniformBase, RMCAlternateFoldableUniformBase]
   id: CMU14TWESASJumpsuit
-  name: black jumpsuit
-  description: Black one-piece jumpsuit. While looking simple, it is a high-end piece of gear, resistable to fire and cuts, used by special forces.
+  name: 黑色连身衣
+  description: 黑色连身衣。看似简单，实为高端装备，耐火焰和切割，供特种部队使用。
   components:
   - type: ContainerContainer
     containers:
@@ -100,7 +100,7 @@
 - type: entity
   parent: AU14FatiguesDesertRMC
   id: CMUFatiguesRMC
-  name: royal marine fatigues
+  name: 皇家海军陆战队迷彩服
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/jumpsuits/black.rsi
@@ -115,7 +115,7 @@
 - type: entity
   parent: AU14FatiguesDesertRMCTeamlead
   id: CMUFatiguesRMCTeamlead
-  name: royal marine team leader fatigues
+  name: 皇家海军陆战队队长作战服
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/jumpsuits/black_team_lead.rsi

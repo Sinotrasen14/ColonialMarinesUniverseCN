@@ -147,9 +147,9 @@
 - type: entity
   parent: RMCBeltBaseStorageNoVisuals
   id: AU14M276ShotgunShellLoadingRigBlack
-  name: M276 pattern shotgun shell loading rig
+  name: M276式霰弹装填具
   suffix: Black, AU14
-  description: An ammunition belt designed to hold shotgun shells. # or individual bullets. TODO RMC14
+  description: 一条用于装填霰弹枪弹药的弹药带。 # or individual bullets. TODO RMC14
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UniversalBelts/Black/shotgunbelt.rsi
@@ -231,9 +231,9 @@
 - type: entity
   parent: CMBeltMarine
   id: AU14BeltHolsterPistolBlack
-  name: M276 pattern general pistol holster rig
+  name: M276型通用手枪枪套装置
   suffix: Black, AU14
-  description: The M276 is standard load-bearing equipment. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+  description: M276是标准承重装备。它由一条带有各种扣件的模块化腰带组成。此版本配有枪套组件，可携带最常见的手枪。它还包含可存放大多数手枪弹匣的侧袋。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UniversalBelts/Black/pistolbelt.rsi
@@ -384,9 +384,9 @@
 - type: entity
   parent: CMBeltMarine
   id: AU14BeltSmartGunOperatorBlack
-  name: M280 pattern smart gun drum belt
+  name: M280型智能枪弹鼓弹链
   suffix: Black, AU14
-  description: Despite the fact that 1. drum magazines are incredibly non-ergonomical, and 2. require incredibly precise machining in order to fit universally (spoiler, they don't, adding further to the myth of 'Smart Gun Personalities'), the government decided to issue a modified belt (more formally known by the designation M280) with hooks and dust covers. When the carry catch on the drum isn't getting stuck in the oiled up velcro, the rig actually does do a decent job at holding a plentiful amount of drums. But at the end of the day, compared to standard rigs.
+  description: 尽管1. 弹鼓极其不符合人体工程学，并且2. 需要极其精密的加工才能通用适配（剧透一下，它们并不能，这进一步助长了“智能枪个性”的迷思），政府还是决定配发一种带有挂钩和防尘盖的改进型弹带（正式代号为M280）。当弹鼓上的携行卡扣没有卡在涂了油的魔术贴里时，这套装备其实还算能好好地固定住相当数量的弹鼓。但说到底，跟标准装备比起来。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UniversalBelts/Black/sgbelt.rsi
@@ -417,9 +417,9 @@
 - type: entity
   parent: CMBeltBase
   id: AU14BeltKnifeBlack
-  name: M276 pattern knife rig
+  name: M276型刀具挂架
   suffix: Black, AU14
-  description: The M276 is standard load-bearing equipment. It consists of a modular belt with various clips. This version is specially designed to store knives. Not commonly issued, but kept in service.
+  description: M276是标准承重装备。它由带有各种卡扣的模块化腰带组成。此版本专为存放刀具而设计。不常配发，但仍在服务部保留。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UniversalBelts/Black/knifebelt.rsi
@@ -433,7 +433,7 @@
     cooldownPopup: You need to wait before drawing another knife!
     count: 12
     slot:
-      name: Knife
+      name: 刀
       whitelist:
         tags:
         - ThrowingKnife
@@ -451,9 +451,9 @@
 - type: entity
   parent: CMBeltMarine
   id: AU14BeltSmartGunOperatorPistolBlack
-  name: M802 pattern smart gun sidearm rig
+  name: M802型智能枪侧arm挂具
   suffix: Black, AU14
-  description: The M802 is a limited-issue mark of load-bearing equipment, designed to carry smartgun ammunition and a sidearm.
+  description: M802是一种限量配发的承重装备型号，设计用于携带智能枪弹药和随身武器。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UniversalBelts/Black/sgbeltpistol.rsi
@@ -514,8 +514,8 @@
 - type: entity
   parent: CMBeltMarine
   id: CMUBeltCombatSidearmRig
-  name: M276 pattern combat sidearm rig
-  description: The M276 is standard load-bearing equipment. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store two pistol magazines and three rifle magazines.
+  name: M276型战斗副武器挂具
+  description: M276是标准承重装备。它由一条带有各种卡扣的模块化腰带组成。此版本配有枪套组件，可携带最常见的手枪。它还包含侧袋，可存放两个手枪弹匣和三个步枪弹匣。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Clothing/Belt/sidearm_rig/classic-jungle.rsi
@@ -576,8 +576,8 @@
   parent: CMBeltBaseStorage
   id: AU14BeltUtilityGeneralBlack
   suffix: Black, AU14
-  name: M276 G8-A general utility pouch
-  description: A small, lightweight pouch. The newer G8-A model, while uncomfortable, can also be clipped around the waist.
+  name: M276 G8-A 通用工具袋
+  description: 一个小巧轻便的腰包。较新的G8-A型号虽然不太舒适，但也可以夹在腰间。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UniversalBelts/Black/generalpouchbelt.rsi
@@ -604,8 +604,8 @@
   parent: CMBeltBaseStorage
   id: AU14BeltMarineBlack
   suffix: Black, AU14
-  name: M276 pattern ammo load rig
-  description: The M276 is standard load-bearing equipment. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+  name: M276型弹药携行具
+  description: M276是标准承重装备。它由带有各种卡扣的模块化腰带组成。这是标准型号，专为大批量弹药携带作业而设计。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UniversalBelts/Black/ammorig.rsi
@@ -648,7 +648,7 @@
 - type: entity
   parent: RMCMatebaBelt
   id: AU14MatebaCustomBeltFilledAmmo
-  name: M276 pattern Mateba Custom holster rig
+  name: M276型马特巴定制枪套装置
   suffix: AU14, Mateba Custom, Filled, No Stun
   components:
   - type: StorageFill
@@ -660,7 +660,7 @@
 - type: entity
   parent: AU14BeltHolsterPistolBlack
   id: AU14BeltHolsterPistolBlackHandcannonFilled
-  name: M276 pattern Peregrine handcannon holster rig
+  name: M276型“游隼”手炮枪套装置
   suffix: Black, AU14, Filled, Handcannon
   components:
   - type: StorageFill
@@ -674,7 +674,7 @@
 - type: entity
   parent: AU14BeltHolsterPistolBlack
   id: AU14BeltHolsterPistolBlackHandcannonGoldFilled
-  name: M276 pattern golden Peregrine handcannon holster rig
+  name: M276型金色游隼手炮枪套装置
   suffix: Black, AU14, Filled, Gold Handcannon
   components:
   - type: StorageFill
@@ -688,7 +688,7 @@
 - type: entity
   parent: AU14BeltHolsterPistolBlack
   id: AU14BeltHolsterPistolBlackHandcannonWinterWyvernFilled
-  name: M276 pattern Winter Wyvern handcannon holster rig
+  name: M276型冬龙手炮枪套装置
   suffix: Black, AU14, Filled, Winter Wyvern
   components:
   - type: StorageFill
@@ -702,7 +702,7 @@
 - type: entity
   parent: RMCMatebaBelt
   id: AU14MatebaSpecialBeltFilledAmmo
-  name: M276 pattern Mateba Special holster rig
+  name: M276型Mateba Special枪套装置
   suffix: AU14, Mateba Special, Filled, No Stun
   components:
   - type: StorageFill

@@ -2,8 +2,8 @@
   abstract: true
   parent: RMCCommunicationsConsoleBase
   id: AU14WithdrawConsoleBase
-  name: withdraw console
-  description: A secured command terminal used to formally initiate a faction's withdrawal from the operation.
+  name: 提现控制台
+  description: 一个安全的指挥部终端，用于正式发起派系退出行动。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
@@ -22,9 +22,9 @@
 - type: entity
   parent: AU14WithdrawConsoleBase
   id: AU14WithdrawConsoleGovFor
-  name: withdraw console (GovFor)
+  name: 撤回控制台（GovFor）
   suffix: GovFor
-  description: A secured GovFor command terminal for initiating a formal withdrawal. Requires two authorized IDs to unlock.
+  description: 一个安全的GovFor指挥部终端，用于发起正式撤离。需要两个授权ID才能解锁。
   components:
   - type: WithdrawConsole
     faction: govfor
@@ -32,9 +32,9 @@
 - type: entity
   parent: AU14WithdrawConsoleBase
   id: AU14WithdrawConsoleOpFor
-  name: withdraw console (OpFor)
+  name: 撤回控制台（OpFor）
   suffix: OpFor
-  description: A secured OpFor command terminal for initiating a formal withdrawal. Requires two authorized IDs to unlock.
+  description: 一个安全的假想敌指挥部终端，用于发起正式撤离。需要两个授权ID才能解锁。
   components:
   - type: WithdrawConsole
     faction: opfor
@@ -42,9 +42,9 @@
 - type: entity
   parent: AU14WithdrawConsoleBase
   id: AU14WithdrawConsoleColony
-  name: withdraw console (Colony)
+  name: 撤回控制台（殖民地）
   suffix: Colony
-  description: A secured colony administration terminal for initiating a formal withdrawal. Requires one authorized colony administrator keycard to unlock.
+  description: 一个用于发起正式撤离的安全殖民地管理终端。需要一张授权的殖民地管理员钥匙卡才能解锁。
   components:
   - type: WithdrawConsole
     faction: colony

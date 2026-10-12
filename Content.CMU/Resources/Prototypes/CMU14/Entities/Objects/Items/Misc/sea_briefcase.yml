@@ -1,16 +1,16 @@
 - type: entity
   parent: RMCPortableVendor
   id: AU14PortableVendorSEAUSCM
-  name: senior advisor chevrons briefcase
+  name: 高级顾问臂章公文包
   suffix: USCM
-  description: A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items.
+  description: 一个手提箱大小的自动化存取系统。旨在高效存储并选择性分发小件物品。
   components:
   - type: CMAutomatedVendor
     jobs:
     - AU14JobGOVFORadvisor
     - AU14JobGOVFORPlatCo
     sections:
-    - name: Enlisted
+    - name: 入伍
       entries:
       - id: AU14ChevronUSCMPrivate
         amount: 5
@@ -34,7 +34,7 @@
         amount: 5
       - id: AU14ChevronUSCMSergeantMajor
         amount: 5
-    - name: Warrant Officers
+    - name: 准尉
       entries:
       - id: AU14ChevronUSCMWarrantOfficer
         amount: 5
@@ -46,7 +46,7 @@
         amount: 5
       - id: AU14ChevronUSCMChiefWarrantOfficer5
         amount: 5
-    - name: Officers
+    - name: 军官
       entries:
       - id: AU14ChevronSecondLT
         amount: 5
@@ -60,16 +60,16 @@
 - type: entity
   parent: RMCPortableVendor
   id: AU14PortableVendorRMCRanks
-  name: royal marines rank chevrons briefcase
+  name: 皇家海军陆战队军衔臂章公文包
   suffix: RMC
-  description: A compact RMC-issued rank storage case. Holds standardized chevrons for field replacement and ceremonial use.
+  description: 一个紧凑的RMC配发军衔收纳盒。存放用于战场替换和仪式用途的标准化V形臂章。
   components:
   - type: CMAutomatedVendor
     jobs:
     - AU14JobGOVFORadvisor
     - AU14JobGOVFORPlatCo
     sections:
-    - name: Enlisted
+    - name: 现役
       entries:
       - id: AU14ChevronRMCRecruit
         amount: 5
@@ -83,13 +83,13 @@
         amount: 5
       - id: AU14ChevronRMCCoourlourSergeant
         amount: 5
-    - name: Warrant Officers
+    - name: 准尉
       entries:
       - id: AU14ChevronRMCWarrantOfficer2
         amount: 5
       - id: AU14ChevronRMCWarrantOfficer1
         amount: 5
-    - name: Officers
+    - name: 军官
       entries:
       - id: AU14ChevronRMCOCdt
         amount: 5
@@ -99,7 +99,7 @@
         amount: 5
       - id: AU14ChevronRMCCaptain
         amount: 5
-    - name: Field Officers
+    - name: 外勤干事
       entries:
       - id: AU14ChevronRMCMajor
         amount: 5
@@ -107,16 +107,16 @@
 - type: entity
   parent: RMCPortableVendor
   id: AU14PortableVendorUPPNIRanks
-  name: upp naval infantry rank chevrons briefcase
+  name: 海军陆战队军衔臂章公文包
   suffix: UPP
-  description: A compact UPP-issue rank case. Heavy, red-stamped, and politically overcorrect in every way imaginable.
+  description: 一个紧凑的UPP制式军衔箱。沉重、盖着红色印章，在一切能想到的方面都政治正确地过了头。
   components:
   - type: CMAutomatedVendor
     jobs:
     - AU14JobGOVFORadvisor
     - AU14JobGOVFORPlatCo
     sections:
-    - name: Enlisted
+    - name: 入伍
       entries:
       - id: AU14ChevronUPPNIPrivate
         amount: 5
@@ -136,13 +136,13 @@
         amount: 5
       - id: AU14ChevronUPPNISergeantSergeant
         amount: 5
-    - name: Warrant Officers
+    - name: 准尉
       entries:
       - id: AU14ChevronUPPNIWarrantOfficer
         amount: 5
       - id: AU14ChevronUPPNISeniorWarrantOfficer
         amount: 5
-    - name: Officers
+    - name: 军官
       entries:
       - id: AU14ChevronUPPNIJuniorLieutenant
         amount: 5
@@ -152,7 +152,7 @@
         amount: 5
       - id: AU14ChevronUPPNICaptain
         amount: 5
-    - name: Field Officers
+    - name: 外勤干事
       entries:
       - id: AU14ChevronUPPNIMajor
         amount: 5
@@ -160,16 +160,16 @@
 - type: entity
   parent: RMCPortableVendor
   id: AU14PortableVendorWeYuRanks
-  name: weyu pmc rank chevrons briefcase
+  name: weyu pmc 等级 臂章 公文包
   suffix: WeYu
-  description: A corporate-issued rank storage unit. Everything is color-coded, optimized, and slightly threatening.
+  description: 公司配发的军衔存储装置。一切都按颜色分类、经过优化，还带着一丝威胁意味。
   components:
   - type: CMAutomatedVendor
     jobs:
     - AU14JobGOVFORadvisor
     - AU14JobGOVFORPlatCo
     sections:
-    - name: Operators
+    - name: 运算符
       entries:
       - id: AU14ChevronWeYuAssociateOperator
         amount: 5
@@ -177,7 +177,7 @@
         amount: 5
       - id: AU14ChevronWeYuSeniorOperator
         amount: 5
-    - name: Enforcers
+    - name: 执法者
       entries:
       - id: AU14ChevronWeYuEnforcer
         amount: 5
@@ -185,7 +185,7 @@
         amount: 5
       - id: AU14ChevronWeYuEnforcerLead
         amount: 5
-    - name: Command
+    - name: 指挥部
       entries:
       - id: AU14ChevronWeYuAdjutant
         amount: 5
@@ -193,7 +193,7 @@
         amount: 5
       - id: AU14ChevronWeYuCommanderSenior
         amount: 5
-    - name: Aviation
+    - name: 航空
       entries:
       - id: AU14ChevronWeYuPilot
         amount: 5
@@ -207,16 +207,16 @@
 - type: entity
   parent: RMCPortableVendor
   id: AU14PortableVendorPrDRanks
-  name: prd response unit rank chevrons briefcase
+  name: 公关响应单位军衔臂章公文包
   suffix: PrD
-  description: A cheaply manufactured contractor briefcase filled with laminated rank chevrons and corporate optimism.
+  description: 一个廉价制造的契约特工公文包，里面装满了覆膜军衔臂章和企业式乐观精神。
   components:
   - type: CMAutomatedVendor
     jobs:
     - AU14JobGOVFORadvisor
     - AU14JobGOVFORPlatCo
     sections:
-    - name: Response Units
+    - name: 响应单位
       entries:
       - id: AU14ChevronPrDRecruit
         amount: 5
@@ -238,7 +238,7 @@
         amount: 5
       - id: AU14ChevronPrDCommanderSenior
         amount: 5
-    - name: Aviation
+    - name: 航空
       entries:
       - id: AU14ChevronPrDPilot
         amount: 5
@@ -248,7 +248,7 @@
         amount: 5
       - id: AU14ChevronPrDSeniorCrewChief
         amount: 5
-    - name: Synthetic
+    - name: 合成
       entries:
       - id: AU14ChevronPrDSynth1
         amount: 5
@@ -260,7 +260,7 @@
         amount: 5
       - id: AU14ChevronPrDSynth5
         amount: 5
-    - name: Command
+    - name: 指挥部
       entries:
       - id: AU14ChevronPrDDeputyDirector
         amount: 5
@@ -270,16 +270,16 @@
 - type: entity
   parent: RMCPortableVendor
   id: AU14PortableVendorSEALACN
-  name: senior advisor chevrons briefcase
+  name: 高级顾问 V 形臂章公文包
   suffix: LACN
-  description: A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense naval rank insignia.
+  description: 一个手提箱大小的自动化存取系统。旨在高效存储并选择性发放海军军衔徽章。
   components:
   - type: CMAutomatedVendor
     jobs:
     - AU14JobGOVFORadvisor
     - AU14JobGOVFORPlatCo
     sections:
-    - name: Enlisted
+    - name: 入伍
       entries:
       - id: CMU14ChevronLACNSailor
         amount: 5
@@ -287,7 +287,7 @@
         amount: 5
       - id: CMU14ChevronLACNThirdClassCorporal
         amount: 5
-    - name: NCOs
+    - name: 军士
       entries:
       - id: CMU14ChevronLACNSecondClassCorporal
         amount: 5
@@ -301,7 +301,7 @@
         amount: 5
       - id: CMU14ChevronLACNMasterSergeant
         amount: 5
-    - name: Officers
+    - name: 军官
       entries:
       - id: CMU14ChevronLACNEnsign
         amount: 5
@@ -317,7 +317,7 @@
         amount: 5
       - id: CMU14ChevronLACNViceAdmiral
         amount: 5
-    - name: Flag Officers
+    - name: 将官
       entries:
       - id: CMU14ChevronLACNAdmiral
         amount: 5

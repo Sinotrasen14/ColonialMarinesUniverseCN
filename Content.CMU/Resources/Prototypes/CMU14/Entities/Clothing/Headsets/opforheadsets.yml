@@ -2,14 +2,14 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyOpfor
-  name: OPFOR encryption key
-  description: An encryption key used to communicate on the OPFOR channel, it is automatically assigned the right channel.
+  name: 敌方加密密钥
+  description: 一个用于在假想敌频道上通信的加密密钥，会自动分配正确的频道。
 
 - type: entity
   parent: AU14EncryptionKeyOpfor
   id: AU14EncryptionKeyOpforBravo
-  name: OPFOR Bravo encryption key
-  description: An encryption key used to communicate on the OPFOR Bravo channel.
+  name: 敌方布拉沃加密密钥
+  description: 一个用于在假想敌布拉沃频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -19,8 +19,8 @@
 - type: entity
   parent: AU14EncryptionKeyOpfor
   id: AU14EncryptionKeyOpforCharlie
-  name: OPFOR Charlie encryption key
-  description: An encryption key used to communicate on the OPFOR Charlie channel.
+  name: 敌军查理加密密钥
+  description: 一个用于在假想敌查理频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -30,8 +30,8 @@
 - type: entity
   parent: AU14EncryptionKeyOpfor
   id: AU14EncryptionKeyOpforCommand
-  name: OPFOR Command encryption key
-  description: An encryption key used to communicate on all available OPFOR channels.
+  name: 敌方指挥部加密密钥
+  description: 一条用于在所有可用敌军频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -47,8 +47,8 @@
 - type: entity
   parent: AU14EncryptionKeyOpfor
   id: AU14EncryptionKeyOpforCommandOnly
-  name: OPFOR Command-only encryption key
-  description: An encryption key used to communicate on the OPFOR Command channels.
+  name: 敌方指挥部专用加密密钥
+  description: 一个用于在敌方指挥部频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -58,8 +58,8 @@
 - type: entity
   parent: AU14EncryptionKeyOpfor
   id: AU14EncryptionKeyOpforIntel
-  name: OPFOR Intel encryption key
-  description: An encryption key used to communicate on the OPFOR Intel channel.
+  name: 敌方情报加密密钥
+  description: 一个用于在假想敌情报频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -69,8 +69,8 @@
 - type: entity
   parent: AU14EncryptionKeyOpfor
   id: AU14EncryptionKeyOpforJTAC
-  name: OPFOR JTAC encryption key
-  description: An encryption key used to communicate on the OPFOR ATC channel.
+  name: 敌方JTAC加密密钥
+  description: 一个用于在假想敌ATC频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -79,7 +79,7 @@
 - type: entity
   parent: AU14EncryptionKeyOpfor
   id: AU14EncryptionKeyOpforMILP
-  name: OPFOR MP encryption key
+  name: 敌方 MP 加密密钥
   components:
   - type: EncryptionKey
     channels:
@@ -89,8 +89,8 @@
 - type: entity
   parent: AU14HeadsetMilitaryBase
   id: AU14HeadsetOpforMarine
-  name: OPFOR section radio headset
-  description: This is used by OPFOR personnel to communicate on the radio.
+  name: 敌方小队无线电耳机
+  description: 这是供OPFOR人员通过无线电进行通信使用的。
   components:
   - type: Sprite
     state: generic_headset
@@ -110,8 +110,8 @@
 - type: entity
   parent: AU14HeadsetOpforMarine
   id: AU14HeadsetOpforCommand
-  name: OPFOR Command radio headset
-  description: This is used by OPFOR command members to communicate on the radio.
+  name: 敌军指挥部无线电耳机
+  description: 这是供敌方指挥部成员通过无线电进行通信使用的。
   components:
   - type: Sprite
     state: mco_headset
@@ -132,8 +132,8 @@
 - type: entity
   parent: AU14HeadsetOpforMarine
   id: AU14HeadsetOpforMarineSL
-  name: OPFOR SL radio headset
-  description: This is used by OPFOR section leaders to communicate on the radio.
+  name: 敌方队长无线电耳机
+  description: 这是供OPFOR班长在无线电上通信用途的。
   components:
   - type: ContainerFill
     containers:
@@ -144,8 +144,8 @@
 - type: entity
   parent: AU14HeadsetOpforMarine
   id: AU14HeadsetOpforMarineFTL
-  name: OPFOR FTL radio headset
-  description: This is used by OPFOR fireteam leaders to communicate on the radio.
+  name: 敌方前线指挥官无线电耳机
+  description: 这是供敌方火力小组组长通过无线电进行通信使用的。
   components:
   - type: ContainerFill
     containers:
@@ -157,8 +157,8 @@
 - type: entity
   parent: AU14HeadsetOpforMarine
   id: CMU14HeadsetOpforJTAC
-  name: OPFOR JTAC radio headset
-  description: This is used by OPFOR personnel to communicate on the radio, including the JTAC channel.
+  name: 敌军联合终端攻击控制员无线电耳机
+  description: 这是敌方人员用于通过无线电进行通信的设备，包括JTAC频道。
   components:
   - type: ContainerFill
     containers:
@@ -169,8 +169,8 @@
 - type: entity
   parent: AU14HeadsetOpforMarine
   id: CMUHeadsetOpforMarineAuxiliary
-  name: OPFOR squad auxiliary radio headset
-  description: This is used by OPFOR squad corpsmen and engineers to communicate on the radio, including the auxiliary channel.
+  name: 敌方小队辅助无线电耳机
+  description: 这是供敌军小队医务兵和工程师在无线电上通信使用的，包括辅助频道。
   components:
   - type: ContainerFill
     containers:
@@ -181,8 +181,8 @@
 - type: entity
   parent: AU14HeadsetOpforMarine
   id: CMUHeadsetOpforDroneOperator
-  name: OPFOR drone operator radio headset
-  description: This is used by OPFOR drone operators to communicate on the radio, including the JTAC and auxiliary channels.
+  name: 敌方无人机操作员无线电耳机
+  description: 这是敌方无人机操作员用来通过无线电进行通信的设备，包括JTAC和辅助频道。
   components:
   - type: ContainerFill
     containers:
@@ -194,8 +194,8 @@
 - type: entity
   parent: AU14HeadsetOpforMarine
   id: AU14HeadsetOpforAuxiliary
-  name: OPFOR Auxiliary support radio headset
-  description: This is used by OPFOR auxiliary support personnel to communicate on the radio.
+  name: 敌方辅助支援无线电耳机
+  description: 这是敌方辅助支援人员用来通过无线电进行通信的。
   components:
   - type: ContainerFill
     containers:
@@ -210,8 +210,8 @@
 - type: entity
   parent: AU14HeadsetOpforMarine
   id: AU14HeadsetOpforMarineMP
-  name: OPFOR MP radio headset
-  description: This is used by OPFOR military police to communicate on the radio.
+  name: 敌方宪兵无线电耳机
+  description: 这是敌方宪兵用来通过无线电通信的。
   components:
   - type: ContainerFill
     containers:
@@ -227,8 +227,8 @@
 - type: entity
   parent: RMCBaseUniformAccessory
   id: AU14OPFORIOHeadset
-  name: OPFOR Intel earpiece
-  description: A small, concealable earpiece used by Intelligence operatives. Virtually invisible when worn, it clips discreetly onto a uniform, this one has a built in camera for remote viewing.
+  name: 假想敌情报耳机
+  description: 情报人员使用的小型隐蔽式耳机。佩戴时几乎不可见，可 discreetly 夹在制服上，这款内置摄像头，可用于远程观察。
   suffix: OPFOR, IO
   components:
   - type: Sprite

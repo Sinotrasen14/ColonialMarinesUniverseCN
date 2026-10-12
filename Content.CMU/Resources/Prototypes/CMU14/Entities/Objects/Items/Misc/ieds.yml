@@ -1,8 +1,8 @@
 - type: entity
   parent: RemoteSignaller
   id: AU14RemoteSignallerAdvanced
-  name: ProtonCall XL Portable Telephone
-  description: A Weyland-Yutani brickphone made by a subsidiary of their communications division. Probably pried from the dead hands of some corporate shmuck. This one’s being used for dialing CLF IEDs. Someone etched 'Fuck the United Americas' into the side.
+  name: 质子呼叫 XL 便携式电话
+  description: 一台由维兰德-尤坦尼通信部门子公司制造的砖头手机。大概是从某个公司蠢货的死手里撬出来的。这一台正被用来拨号引爆CLF的IED。有人在侧面刻了“去他妈的联合美洲”。
   components:
   - type: Sprite
     sprite: CMU14/Items/IEDs/signaller.rsi
@@ -19,8 +19,8 @@
     price: 30
 
 - type: entity
-  name: improvised explosive device
-  description: A remote explosive designed to cripple foot soldiers and lightly armored vehicles. A saboteur’s and insurgent’s favorite tool of terror. Be careful... its very unstable.
+  name: 简易爆炸装置
+  description: 一种遥控炸药，旨在瘫痪步兵和轻装甲车辆。破坏者和叛乱分子最喜欢的恐怖工具。小心……它非常不稳定。
   parent: [BasePlasticExplosive, BaseSyndicateContraband]
   id: AU14IED
   components:
@@ -63,8 +63,8 @@
     capacity: 25
 
 - type: entity
-  name: huge improvised explosive device
-  description: A rather large remote explosive designed to cripple foot soldiers and lightly armored vehicles. A saboteur’s and insurgent’s favorite tool of terror. Be careful... its very unstable.
+  name: 巨大的简易爆炸装置
+  description: 一种相当大的遥控炸药，旨在削弱步兵和轻装甲车辆。破坏者和叛乱分子最喜欢的恐怖工具。小心……它非常不稳定。
   parent: [BasePlasticExplosive, BaseSyndicateContraband]
   id: AU14IEDLarge
   components:
@@ -108,8 +108,8 @@
     capacity: 35
 
 - type: entity
-  name: improvised explosive vest
-  description: A worn suicide explosive vest designed to cripple foot soldiers. Those who use it will never return...
+  name: 简易爆炸背心
+  description: 一件破旧的自杀式爆炸背心，旨在重创步兵。使用者将有去无回……
   parent: [RMCBaseJacket, BasePlasticExplosive, BaseSyndicateContraband]
   id: AU14IEDVest
   components:
@@ -166,7 +166,7 @@
 - type: entity
   parent: CMPaperWritten
   id: AU14IEDGuide
-  name: improvised explosives guide
+  name: 简易爆炸物指南
   components:
   - type: Paper
     content: "1. Grab yerself an IED make sure it ain tickin.

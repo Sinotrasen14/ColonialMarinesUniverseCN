@@ -6,7 +6,7 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: CMUSurveillanceCameraColonyGOVFOR
-  name: colony-grade camera
+  name: 殖民地级摄像头
   suffix: Colony, Govfor
   placement:
     mode: SnapgridCenter
@@ -32,7 +32,7 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: CMUSurveillanceCameraColonyWEYU
-  name: colony-grade camera
+  name: 殖民地级摄像头
   suffix: Colony, We-Yu
   placement:
     mode: SnapgridCenter
@@ -58,7 +58,7 @@
 - type: entity
   parent: SurveillanceCameraBase
   id: CMUSurveillanceCameraColonyCMB
-  name: colony-grade camera
+  name: 殖民地级摄像头
   suffix: Colony, CMB
   placement:
     mode: SnapgridCenter
@@ -84,8 +84,8 @@
 - type: entity
   parent: RMCMonitorCameraAlmayer
   id: CMUMonitorCameraColonyGovfor
-  name: colony security cameras
-  description: Used to access the various cameras on the colony.
+  name: 殖民地安保摄像头
+  description: 用于访问殖民地上的各种摄像头。
   suffix: Colony, Govfor
   components:
   - type: Transform
@@ -98,8 +98,8 @@
 - type: entity
   parent: RMCMonitorCameraAlmayer
   id: CMUMonitorCameraColonyWEYU
-  name: colony security cameras
-  description: Used to access the various cameras on the colony.
+  name: 殖民地安保摄像头
+  description: 用于访问殖民地上的各种摄像头。
   suffix: Colony, We-Yu
   components:
   - type: Transform
@@ -112,8 +112,8 @@
 - type: entity
   parent: RMCMonitorCameraAlmayer
   id: CMUMonitorCameraColonyWEYUSpy
-  name: security cameras
-  description: Used to access the various cameras in the facility and the colony.
+  name: 安保摄像头
+  description: 用于访问设施和殖民地中的各种摄像头。
   suffix: Colony, We-Yu, Spy
   components:
   - type: Transform
@@ -126,8 +126,8 @@
 - type: entity
   parent: RMCMonitorCameraAlmayer
   id: CMUMonitorCameraColonyGovforSpy
-  name: security cameras
-  description: Used to access the various cameras in the base and the colony.
+  name: 安保摄像头
+  description: 用于访问基地和殖民地的各种摄像头。
   suffix: Colony, Govfor, Spy
   components:
   - type: Transform
@@ -140,8 +140,8 @@
 - type: entity
   parent: RMCMonitorCameraAlmayer
   id: CMUMonitorCameraColonyCMB
-  name: colony security cameras
-  description: Used to access the various cameras on the colony.
+  name: 殖民地安保摄像头
+  description: 用于访问殖民地的各种摄像头。
   suffix: Colony, CMB
   components:
   - type: Transform

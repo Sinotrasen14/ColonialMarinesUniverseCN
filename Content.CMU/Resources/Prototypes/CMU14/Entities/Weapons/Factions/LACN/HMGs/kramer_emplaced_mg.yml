@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCM2CMount
   id: CMUKramerEmplacedMGMount
-  name: Kramer emplaced machine gun
-  description: A Kramer Light Support Weapon built onto a folding tripod. The fixed mount keeps it as steady as a deployed bipod, and its IFF lock refuses to fire while friendlies are in the line of fire.
+  name: 克雷默固定式机枪
+  description: 架设在折叠三脚架上的克拉默轻型支援武器。固定支架使其如展开的两脚架般稳定，其敌我识别锁定功能可确保友军在射线上时拒绝开火。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/LACN/LACNRedux/LACN/krameremplacedmg/krameremplacedicon.rsi
@@ -53,8 +53,8 @@
   parent: RMCMachineGunM2C
   id: CMUMachineGunKramerEmplaced
   categories: [ HideSpawnMenu ]
-  name: Kramer emplaced machine gun
-  description: The top half of a Kramer emplaced machine gun. It is not much use without its tripod.
+  name: 克雷默架设的机枪
+  description: 克雷默固定式机枪的上半部分。没有三脚架，它没什么用处。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/LACN/LACNRedux/LACN/krameremplacedmg/krameremplacedicon.rsi
@@ -103,7 +103,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -118,8 +118,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: CMUKramerEmplacedMGCase
-  name: Kramer emplaced machine gun case
-  description: A gun case containing the Kramer emplaced machine gun and its tripod. Comes with three standard and one AP Kramer LSW box magazines.
+  name: 克雷默架设式机枪箱
+  description: 一个枪箱，内含Kramer固定式机枪及其三脚架。附带三个标准弹匣和一个AP Kramer LSW弹匣。
   components:
   - type: Storage
     maxItemSize: Ginormous

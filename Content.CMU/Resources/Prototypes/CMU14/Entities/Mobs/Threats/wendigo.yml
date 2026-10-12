@@ -6,11 +6,11 @@
   - RMCXenoCommendationReceiver
   - RMCXenoMobCollision
   id: AU14Wendigo
-  name: Wendigo
-  description: A tall, pale creature that looks uncannily human. Its back is branded "Weyland-Yutani".
+  name: 温迪戈
+  description: 一个高大、苍白、看起来诡异似人的生物。它的背上烙有“Weyland-Yutani”的印记。
   components:
   - type: GhostRole
-    name: Wendigo
+    name: 温迪戈
   - type: Sprite
     sprite: CMU14/Mobs/MiscMob/wendigo.rsi
     layers:
@@ -143,8 +143,8 @@
 - type: entity
   parent: ActionXenoDoom
   id: ActionWendigoDoom
-  name: Screech
-  description: A terrifying screech that turns off lights, slows and dazes nearby hostiles.
+  name: 尖啸
+  description: 一声恐怖的尖啸，关闭灯光，并使附近的敌人减速和眩晕。
   components:
   - type: XenoActionPlasma
     cost: 0
@@ -157,7 +157,7 @@
 - type: job
   parent: CMJobXenoBase
   id: CMXenoWendigo
-  name: Wendigo
+  name: 温迪戈
   playTimeTracker: CMJobXenoWendigo
 - type: playTimeTracker
   id: CMJobXenoWendigo
@@ -165,7 +165,7 @@
 
 - type: entity
   id: ActionWendigoVoice
-  name: Voice Mimicry
+  name: 声音模仿
   parent: ActionXenoBase
   components:
   - type: Action
@@ -181,11 +181,11 @@
 - type: entity
   parent: AU14Wendigo
   id: CMUWendigoLesser
-  name: Wendigo
-  description: A tall, pale creature that looks uncannily human. Its back is branded "Weyland-Yutani".
+  name: 温迪戈
+  description: 一个高大苍白、像人却又诡异得不像人的生物。它的背上烙着“Weyland-Yutani”的字样。
   components:
   - type: GhostRole
-    name: Lesser Wendigo
+    name: 次级温迪戈
   - type: MobThresholds
     thresholds:
       0: Alive

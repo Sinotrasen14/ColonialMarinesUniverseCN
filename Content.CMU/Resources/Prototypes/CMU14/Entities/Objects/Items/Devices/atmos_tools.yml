@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
-  name: '"Canary" AS-5 atmos scanner'
+  name: '“金丝雀”AS-5大气扫描仪'
   id: CMUAtmosScanner
-  description: A bulky, awkward device. Gives a readout of the local atmospheric composition. Field crews call it the Canary, after the bird it replaced. Unlike the bird, it only dies when you do.
+  description: 一个笨重、难用的装置。可读出当地的大气成分。外勤人员称它为“金丝雀”，得名于它所取代的那只鸟。与那只鸟不同，它只在你死的时候才会坏。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/atmos_scanner.rsi
@@ -35,8 +35,8 @@
 - type: entity
   parent: trayScanner
   id: CMTRayScanner
-  name: '"Deep Ear" PS-9 pulse survey unit'
-  description: A chunky survey unit. Pulses low-frequency sound through the deck and paints sub-floor infrastructure, pipes and cables alike, onto a small green CRT. The four-pound manual reassures you it is perfectly safe to operate.
+  name: '“深耳”PS-9脉冲测量单元'
+  description: 一台笨重的勘测设备。它通过甲板发出低频声波，将地板下的基础设施、管道和电缆一并绘制到一块小小的绿色CRT上。那本四磅重的手册向你保证，操作它绝对安全。
   suffix: trayScanner
   components:
   - type: Sprite

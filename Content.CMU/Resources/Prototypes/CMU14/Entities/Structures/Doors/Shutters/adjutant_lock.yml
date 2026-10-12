@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCShutterHybrisa
   id: CMUShutterHybrisaAdjutantLock
-  name: armory shutters
-  description: A heavy set of shutters designed to keep the armory secure. They can be opened by a button in the CIC. If command is not awake to open these shutters, they will open themselves after a time.
+  name: 军械库百叶窗
+  description: 一套厚重的百叶窗，用于确保军械库的安全。可以通过CIC中的按钮打开。如果指挥部没有醒来打开这些百叶窗，它们会在一段时间后自行打开。
   suffix: GOVFOR
   components:
   - type: RMCPodDoor
@@ -12,8 +12,8 @@
 - type: entity
   parent: RMCPodDoorButtonCommand
   id: CMUPodDoorButtonAdjutantLock
-  name: armory shutters control
-  description: A button that locks open on its own if command doesn't show up to operate it.
+  name: 军械库百叶窗控制
+  description: 一个按钮，如果指挥部没有出现来操作它，它就会自行锁定在打开状态。
   suffix: GOVFOR, Armory
   components:
   - type: RMCDoorButton

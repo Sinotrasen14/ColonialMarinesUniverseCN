@@ -1,8 +1,8 @@
 - type: entity
   parent: ClothingMaskBase
   id: AU14MaskLACNPilotOxygen
-  name: LACN Gunship Oxygen Mask
-  description: A mask attached to LACN LAH-99G helmets to provide fighter crews with breathable oxygen.
+  name: LACN 炮艇机氧气面罩
+  description: 一种连接在LACN LAH-99G头盔上的面罩，用于为战斗机机组人员提供可呼吸的氧气。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Shipside/Flightcrew/LACNpilotmask.rsi
@@ -28,8 +28,8 @@
 - type: entity
   parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
   id: CMUMaskGasLACN
-  name: LACN M-9 gas mask
-  description: The standard issue gas mask of the Latin American Colonial Navy.
+  name: LACN M-9防毒面具
+  description: 拉丁美洲殖民海军的标准配发防毒面具。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Masks/LACNgasmask.rsi
@@ -51,8 +51,8 @@
 - type: entity
   parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
   id: CMUMaskGasLACNHooded
-  name: LACN M-9H hooded gas mask
-  description: An M-9 gas mask with an attached protective hood, issued by the Latin American Colonial Navy.
+  name: LACN M-9H 带罩防毒面具
+  description: 一具带有防护头罩的M-9防毒面具，由拉丁美洲殖民海军配发。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Masks/LACNhoodgasmask.rsi
@@ -75,8 +75,8 @@
 - type: entity
   parent: CMUMaskGasLACN
   id: CMUMaskPrescriptionGasLACN
-  name: prescription LACN M-9 gas mask
-  description: The standard issue gas mask of the Latin American Colonial Navy. Contains prescription lenses.
+  name: LACN M-9防毒面具处方
+  description: 拉丁美洲殖民海军标准配发的防毒面具。内含处方镜片。
   components:
   - type: VisionCorrection
     visionBonus: -4
@@ -84,8 +84,8 @@
 - type: entity
   parent: CMUMaskGasLACNHooded
   id: CMUMaskPrescriptionGasLACNHooded
-  name: prescription LACN M-9H hooded gas mask
-  description: An M-9 gas mask with an attached protective hood, issued by the Latin American Colonial Navy. Contains prescription lenses.
+  name: LACN M-9H 头罩式防毒面具处方
+  description: 一具带有防护头罩的M-9防毒面具，由拉丁美洲殖民海军配发。内含处方镜片。
   components:
   - type: VisionCorrection
     visionBonus: -4

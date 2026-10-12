@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseItem
   id: CMUIEDBase
-  name: grenade
-  description: Duck and cover.
+  name: 手榴弹
+  description: 卧倒掩护。
   components:
   - type: Explosive
     explosionType: RMC
@@ -29,8 +29,8 @@
 - type: entity
   parent: CMUIEDBase
   id: CMUPipeBomb
-  name: pipe bomb
-  description: A cheap way to injure someone. Designed by your local insurgent’s.
+  name: 管状炸弹
+  description: 一种廉价的伤人方式。由你们当地的叛乱分子设计。
   components:
   - type: Sprite
     sprite: CMU14/Items/pipebomb.rsi
@@ -70,8 +70,8 @@
 - type: entity
   parent: BaseItem
   id: CMUPipeBombFuse
-  name: pipe bomb
-  description: Incomplete. Seems like it need’s Cable as the fuse
+  name: 管状炸弹
+  description: 不完整。似乎需要线缆作为引信
   suffix: Fuse
   components:
   - type: Sprite
@@ -86,8 +86,8 @@
 - type: entity
   parent: BaseItem
   id: CMUPipeBombCasing
-  name: pipe bomb
-  description: Empty casing. Seems like it need a Lighter.
+  name: 管状炸弹
+  description: 空弹壳。似乎需要一个打火机。
   suffix: Casing
   components:
   - type: Sprite

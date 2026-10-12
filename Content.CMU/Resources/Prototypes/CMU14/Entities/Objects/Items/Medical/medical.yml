@@ -276,7 +276,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterOsteoCalc
-  name: osteocalc pill bottle
+  name: 骨钙素药瓶
   suffix: osteocalc, 16
   components:
   - type: Item
@@ -299,7 +299,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterCardiocaine
-  name: cardiocaine pill bottle
+  name: 强心可卡因药瓶
   suffix: cardiocaine, 16
   components:
   - type: Item
@@ -322,7 +322,7 @@
 - type: entity
   parent: CMPillCanister
   id: CMU14PillCanisterAlkysine
-  name: alkysine pill bottle
+  name: 烷基胺药瓶
   suffix: alkysine, 16
   components:
   - type: Item
@@ -345,7 +345,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterNephronate
-  name: nephronate pill bottle
+  name: 肾素酸盐药瓶
   suffix: nephronate, 16
   components:
   - type: Item
@@ -368,7 +368,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterPulmovine
-  name: pulmovine pill bottle
+  name: 普尔莫文药瓶
   suffix: pulmovine, 16
   components:
   - type: Item
@@ -391,7 +391,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterHepatocytin
-  name: hepatocytin pill bottle
+  name: 肝细胞素药瓶
   suffix: hepatocytin, 16
   components:
   - type: Item
@@ -414,8 +414,8 @@
 - type: entity
   parent: CMPacketPills
   id: AU14PacketPillsTramadol
-  name: tramadol pill packet
-  description: This packet contains tramadol pills. Alleviates moderate amounts of pain. Once you take them out, they don't go back in. Don't take more than 1 pill in a short period.
+  name: 曲马多药片包装
+  description: 这个药包里有曲马多药片。可缓解中度疼痛。一旦取出，就无法放回。短时间内不要服用超过1片。
   components:
   - type: Sprite
     state: tramadol_packet
@@ -429,8 +429,8 @@
 - type: entity
   parent: CMPacketPills
   id: AU14PacketPillsEmpty
-  name: pill packet
-  description: An empty pills packet.
+  name: 药片包装
+  description: 一个空的药片包装袋。
   components:
   - type: Sprite
     state: pill_packet
@@ -441,7 +441,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterParacetamol
-  name: paracetamol pill bottle
+  name: 对乙酰氨基酚药瓶
   suffix: paracetamol, 16
   components:
   - type: Item
@@ -464,7 +464,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterTramadol
-  name: tramadol pill bottle
+  name: 曲马多药瓶
   suffix: tramadol, 16
   components:
   - type: Item
@@ -487,7 +487,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterOxycodone
-  name: oxycodone pill bottle
+  name: 羟考酮药瓶
   suffix: oxycodone, 16
   components:
   - type: Item
@@ -510,7 +510,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterEthylredoxrazine
-  name: ethylredoxrazine pill bottle
+  name: 乙基氧化还原酶药瓶
   suffix: ethylredoxrazine, 16
   components:
   - type: Item
@@ -533,7 +533,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterDermaline
-  name: dermaline pill bottle
+  name: 地尔玛琳药瓶
   suffix: dermaline, 16
   components:
   - type: Item
@@ -556,7 +556,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterMeralyne
-  name: meralyne pill bottle
+  name: 美沙酮药瓶
   suffix: meralyne, 16
   components:
   - type: Item
@@ -579,7 +579,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterImidazoline
-  name: imidazoline pill bottle
+  name: 咪唑啉药瓶
   suffix: imidazoline, 16
   components:
   - type: Item
@@ -602,7 +602,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterCryoxadone
-  name: cryoxadone pill bottle
+  name: 低温氧杂环己酮药瓶
   suffix: cryoxadone, 16
   components:
   - type: Item
@@ -625,7 +625,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterLeporazine
-  name: leporazine pill bottle
+  name: 来泊拉嗪药瓶
   suffix: leporazine, 16
   components:
   - type: Item
@@ -648,7 +648,7 @@
 - type: entity
   parent: CMPillCanister
   id: AU14PillCanisterAlbuterol
-  name: albuterol pill bottle
+  name: 沙丁胺醇药瓶
   suffix: albuterol, 16
   components:
   - type: Item
@@ -790,8 +790,8 @@
 - type: entity
   parent: CMAutoInjector
   id: AU14NaloxoneAutoInjector
-  name: naloxone autoinjector
-  description: An autoinjector loaded with naloxone, used to instantly counteract toxin damage. Primarily used to treat overdoses. Doesn't require any training to use.
+  name: 纳洛酮自动注射器
+  description: 一支装有纳洛酮的自动注射器，用于立即抵消毒素伤。主要用于治疗用药过量。无需任何训练即可使用。
   components:
   - type: Sprite
     sprite: CMU14/Items/naloxone_auto_injector.rsi
@@ -824,8 +824,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMUEpinephrineAutoInjector
-  name: epinephrine autoinjector
-  description: An autoinjector loaded with epinephrine, sometimes referred to as an 'EpiPen'. It is used to treat severe allergic reactions, though it can also be used to help restart someone's heart. Doesn't require any training to use.
+  name: 肾上腺素自动注射器
+  description: 一种装有肾上腺素的自动注射器，有时被称为“EpiPen”。它用于治疗严重的过敏反应，不过也可用于帮助心脏重新跳动。无需任何培训即可使用。
   components:
   - type: Sprite
     sprite: CMU14/Items/naloxone_auto_injector.rsi
@@ -858,8 +858,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMUAsthmaInhaler
-  name: inhaler
-  description: A small, sealed inhaler pre-loaded with a single dose of albuterol. It cannot be refilled or have its medication removed.
+  name: 吸入器
+  description: 一个小型密封吸入器，预装单剂沙丁胺醇。无法重新装填，也无法取出其中的药物。
   components:
   - type: Item
     sprite: null
@@ -885,8 +885,8 @@
 - type: entity
   parent: CMTricordrazineAutoInjector
   id: AU14FirstAidAutoInjectorNoSkill
-  name: first-aid autoinjector
-  description: An autoinjector loaded with a dose of tricordrazine and a small ammount of dexalin for wounded soldiers to treat themselves with.
+  name: 急救自动注射器
+  description: 一支装有曲可拉嗪和少量地塞林的自动注射器，供受伤士兵自行治疗使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Medical/auto_injectors.rsi
@@ -919,8 +919,8 @@
 - type: entity
   parent: CMAutoInjector
   id: AU14MeraBicAutoInjector
-  name: mera-bic autoinjector
-  description: An autoinjector loaded with 3 uses of both Meralyne and Bicaridine.
+  name: Mera-Bic自动注射器
+  description: 一支自动注射器，装有3次用量的Meralyne和Bicaridine。
   components:
   - type: Hypospray
     transferAmount: 30
@@ -943,8 +943,8 @@
 - type: entity
   parent: CMAutoInjector
   id: AU14KeloDermAutoInjector
-  name: kelo-derm autoinjector
-  description: An autoinjector loaded with 3 uses of both Meralyne and Bicaridine.
+  name: 凯洛德姆自动注射器
+  description: 一支自动注射器，装有3次用量的Meralyne和Bicaridine。
   components:
   - type: Hypospray
     transferAmount: 30
@@ -967,8 +967,8 @@
 - type: entity
   parent: CMAutoInjector
   id: AU14RevivalMixAutoInjector
-  name: revival mix autoinjector
-  description: An autoinjector loaded with 3 uses of Epinephrine, Inaprovaline and Tricordrazine.
+  name: 复兴混合自动注射器
+  description: 一支自动注射器，装有3次用量的肾上腺素、肌苷和三角苷。
   components:
   - type: Hypospray
     transferAmount: 30
@@ -994,8 +994,8 @@
 - type: entity
   parent: CMAutoInjector
   id: AU14AlbuDexAutoInjector
-  name: albu-dex autoinjector
-  description: An autoinjector loaded with 3 uses of Albuterol and Dexalin as well as a small dose of Dexalin+.
+  name: 白蛋白-地塞米松自动注射器
+  description: 一支自动注射器，装有3次用量的沙丁胺醇和右旋糖酐，以及一小剂量的右旋糖酐+。
   components:
   - type: Hypospray
     transferAmount: 30
@@ -1021,8 +1021,8 @@
 - type: entity
   parent: CMAutoInjector
   id: AU14OxycodoneAutoInjector
-  name: oxycodone autoinjector
-  description: An autoinjector loaded with 3 uses of Oxycodone.
+  name: 羟考酮自动注射器
+  description: 一支装有3次使用量的羟考酮的自动注射器。
   components:
   - type: Hypospray
     transferAmount: 20
@@ -1042,8 +1042,8 @@
 - type: entity
   parent: CMAutoInjector
   id: AU14TramadolAutoInjector
-  name: tramadol autoinjector
-  description: An autoinjector loaded with 3 uses of Tramadol.
+  name: 曲马多自动注射器
+  description: 一支装有3剂曲马多的自动注射器。
   components:
   - type: Hypospray
     transferAmount: 20
@@ -1063,8 +1063,8 @@
 - type: entity
   parent: CMAutoInjector
   id: AU14ParacetamolAutoInjector
-  name: paracetamol autoinjector
-  description: An autoinjector loaded with 3 uses of Paracetamol.
+  name: 对乙酰氨基酚自动注射器
+  description: 一支装有3次使用量对乙酰氨基酚的自动注射器。
   components:
   - type: Hypospray
     transferAmount: 20
@@ -1084,8 +1084,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMUFentanylAutoInjector
-  name: fentanyl autoinjector
-  description: An autoinjector loaded with 3 uses of Fentanyl.
+  name: 芬太尼自动注射器
+  description: 一个装有3次使用量的芬太尼的自动注射器。
   components:
   - type: Hypospray
     transferAmount: 10
@@ -1105,8 +1105,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMUMethamphetamineAutoInjector
-  name: methamphetamine autoinjector
-  description: An autoinjector loaded with 3 uses of Methamphetamine.
+  name: 甲基苯丙胺自动注射器
+  description: 一支装有3次使用量的甲基苯丙胺自动注射器。
   components:
   - type: Hypospray
     transferAmount: 15
@@ -1128,8 +1128,8 @@
 - type: entity
   parent: CMBaseHealingItem
   id: AU14HemostaticGauzePacket
-  name: hemostatic gauze packet
-  description: A vacuum sealed packet of chemically treated gauze designed to stop arterial bleeding fast. The powder burns like hell, but it works. Single-use. Rip it open, jam it in, hope for the best.
+  name: 止血纱布包
+  description: 一包真空密封的化学处理纱布，专为快速止住动脉出血而设计。那粉末烧得跟地狱一样疼，但确实管用。一次性使用。撕开，塞进去，然后祈祷好运。
   components:
   - type: Sprite
     sprite: CMU14/Items/quickclot.rsi
@@ -1158,8 +1158,8 @@
 - type: entity
   parent: CMBaseHealingItem
   id: AU14HemostaticGauzePacketTrash
-  name: used hemostatic gauze packet
-  description: A vacuum sealed packet of chemically treated gauze designed to stop arterial bleeding fast. The powder burns like hell, but it works. Single-use. This one is trash, its already been used!
+  name: 用过的止血纱布包
+  description: 一包真空密封的化学处理纱布，专为快速止住动脉出血而设计。粉末灼烧感极强，但确实有效。一次性使用。这包是垃圾，已经用过了！
   components:
   - type: Sprite
     sprite: CMU14/Items/quickclot.rsi
@@ -1178,8 +1178,8 @@
 - type: entity
   parent: CMBaseHealingItem
   id: AU14HemostaticGauze
-  name: hemostatic gauze
-  description: A strip of gauze soaked with a powdery clotting agent. Once it’s out of the packet, the clock’s ticking, stuff it deep into the wound and stop the bleeding before it’s too late.
+  name: 止血纱布
+  description: 一条浸有粉末状凝血剂的纱布条。一旦拆开包装，时间就开始倒数，把它深深塞进伤口，在还来得及之前止住出血。
   components:
   - type: Tag
     tags:
@@ -1233,8 +1233,8 @@
 - type: entity
   parent: CMBaseHealingItem
   id: AU14Tourniquet
-  name: tourniquet
-  description: A combat application tourniquet designed for self-application under fire. It uses a high-tension Velcro strap and windlass rod to cut off arterial bleeding on limbs. Effective, painful and not exactly gentle. Overuse can lead to nerve damage or amputation. Still, better maimed than dead. Meant to be used once, but it can be reused in a pinch.
+  name: 止血带
+  description: 一种为在交火中自行使用而设计的战斗应用止血带。它使用高张力魔术贴束带和绞盘杆来切断四肢的动脉出血。有效、疼痛，而且并不温和。过度使用可能导致神经损伤或截肢。不过，残废总比死了好。设计为一次性使用，但紧急情况下也可以重复使用。
   components:
   - type: Tag
     tags:

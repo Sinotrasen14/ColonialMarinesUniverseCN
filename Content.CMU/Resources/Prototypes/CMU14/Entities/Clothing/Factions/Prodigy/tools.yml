@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: AU14ProdigyLaptop
-  name: Prodigy Advanced Systems Tampering System (PASTS)
-  description: A ruggedized military laptop used for remote control and programming made by Prodigy Security Corp. Can be placed on tables for easier access. Works as a sentry laptop as well!
+  name: Prodigy高级系统篡改系统（PASTS）
+  description: Prodigy安保公司制造的一款加固型军用笔记本电脑，用于远程控制和编程。可放置在桌上以便于操作。也可作为哨戒笔记本电脑使用！
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/sentrycomp.rsi
@@ -45,8 +45,8 @@
 - type: entity
   parent: BaseItem
   id: AU14ExtractionTeamBeacon
-  name: Prodigy Extraction Team Beacon
-  description: A disposable uplink used to call the Prodigy extraction team. It's useless after activation. What do you mean its just an expensive laser pointer? (OOC Note, if this fails to work please ahelp and ask them to spawn ProdigyExtractionParty)
+  name: 精英提取队信标
+  description: 一次性链路，用于呼叫神童撤离小队。激活后即失效。你什么意思，它只是个昂贵的镭射笔？（角色之外备注：如果此物品无法生效，请寻求管理员帮助并要求他们生成ProdigyExtractionParty）
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/communication.rsi
@@ -82,8 +82,8 @@
 - type: entity
   parent: AU14ExtractionTeamBeacon
   id: CMU14ProdigyLawyerBeacon
-  name: prodigy lawyer beacon
-  description: A disposable uplink used to call the Prodigy lawyer. It's useless after activation. What do you mean its just an expensive laser pointer? (OOC Note, if this fails to work please ahelp and ask them to spawn ProdigyLawyer)
+  name: 神童律师信标
+  description: 一次性上行链路，用于呼叫神童律师。激活后就没用了。你什么意思，它只是个昂贵的镭射笔？（角色之外备注，如果这不好使，请寻求管理员帮助并要求他们生成ProdigyLawyer）
   components:
   - type: SpawnThirdPartyTool
     party: ProdigyLawyer

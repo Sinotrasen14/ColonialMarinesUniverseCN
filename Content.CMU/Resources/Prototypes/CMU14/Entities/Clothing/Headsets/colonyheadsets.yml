@@ -10,8 +10,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyAdmin
-  name: colony admin encryption key
-  description: An encryption key used to communicate on colony, CMB and colony medical radio channels.
+  name: 殖民地管理员加密密钥
+  description: 一种用于在殖民地、CMB和殖民地医疗无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -23,8 +23,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyWEYU
-  name: Weyland colonial encryption key
-  description: An encryption key used to communicate on colony and weyland radio channels.
+  name: 韦兰殖民地加密密钥
+  description: 用于在殖民地和韦兰无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -35,8 +35,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyProdigy
-  name: prodigy colonial encryption key
-  description: An encryption key used to communicate on colony and prodigy radio channels.
+  name: 天才殖民加密密钥
+  description: 一种用于在殖民地和神童无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -47,9 +47,9 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyCMB
-  name: CMB encryption key
+  name: 招商银行加密密钥
   suffix: Colony, CMB
-  description: An encryption key used to communicate on colony and CMB radio channels.
+  description: 用于在殖民地和CMB无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -60,8 +60,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyCMBOnly
-  name: CMB encryption key
-  description: An encryption key used to communicate on the CMB radio channel.
+  name: 招商银行加密密钥
+  description: 用于在CMB无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -71,8 +71,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyOrbital
-  name: orbital encryption key
-  description: An encryption key used to communicate on colony and Orbital radio channels.
+  name: 轨道加密密钥
+  description: 用于在殖民地和轨道无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -91,8 +91,8 @@
 - type: entity
   parent: RMCHeadsetLiaison
   id: AU14ColonyAdminHeadset
-  name: colony administration headset
-  description: A headset used by the colony administration to communicate.
+  name: 殖民地管理耳机
+  description: 殖民地行政部门用于通讯的耳机。
   suffix: CMB, Colony
   components:
   - type: ContainerFill
@@ -103,8 +103,8 @@
 - type: entity
   parent: RMCHeadsetLiaison
   id: AU14ColonyWeylandHeadset
-  name: colony weyland yutani headset
-  description: A headset used by weyland yutani to communicate.
+  name: 殖民地维兰德汤谷耳机
+  description: 维兰德-汤谷公司用于通讯的耳机。
   suffix: Colony, WEYU
   components:
   - type: ContainerFill
@@ -115,8 +115,8 @@
 - type: entity
   parent: RMCHeadsetLiaison
   id: CMU14ColonyProdigyHeadset
-  name: colony prodigy headset
-  description: A headset used by prodigy to communicate.
+  name: 殖民地神童耳机
+  description: 神童用来通讯的耳机。
   suffix: Colony, Prodigy
   components:
   - type: ContainerFill
@@ -127,8 +127,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: AU14CMBHeadset
-  name: CMB headset
-  description: A headset used by the CMB to communicate.
+  name: CMB耳机
+  description: CMB用于通讯的耳机。
   suffix: CMB, Colony
   components:
   - type: ContainerFill
@@ -139,8 +139,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: AU14CMBHeadsetOnlyCMB
-  name: CMB Earpiece
-  description: A headset used by the CMB to communicate.
+  name: CMB 耳机
+  description: CMB用于通讯的耳机。
   suffix: CMB
   components:
   - type: ContainerFill
@@ -154,8 +154,8 @@
 - type: entity
   parent: AU14HeadsetColonist
   id: AU14HeadsetWorkingJoe
-  name: Working Joe headset
-  description: A common headset used by Working Joes.
+  name: Working Joe耳机
+  description: “工蜂”常用的耳机。
   components:
   - type: Sprite
     state: generic_headset
@@ -165,8 +165,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyTWEAmb
-  name: twe commissioner encryption key
-  description: An encryption key used to communicate on the commissioner's radio channel.
+  name: twe专员加密密钥
+  description: 用于在专员的无线电频道上通信的加密密钥。
   suffix: Ambassador
   components:
   - type: EncryptionKey
@@ -177,8 +177,8 @@
 - type: entity
   parent: AU14ColonyAdminHeadset
   id: AU14ColonyAmbassadorTWEHeadset
-  name: twe commissioner headset
-  description: A headset used by TWE's commissioners to communicate.
+  name: twe 专员耳机
+  description: TWE的专员用来通讯的耳机。
   suffix: Colony, Ambassador
   components:
   - type: ContainerFill
@@ -190,8 +190,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyUAAmb
-  name: ua ambassador encryption key
-  description: An encryption key used to communicate on the ambassador's radio channel.
+  name: UA 大使加密密钥
+  description: 用于在大使的无线电频道上通信的加密密钥。
   suffix: Ambassador
   components:
   - type: EncryptionKey
@@ -202,8 +202,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyUAAmbVAI
-  name: VAI encryption key
-  description: An encryption key used to communicate to the ambassador.
+  name: VAI 加密密钥
+  description: 一个用于与大使通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -213,8 +213,8 @@
 - type: entity
   parent: AU14ColonyAdminHeadset
   id: AU14AmbassadorUAHeadset
-  name: ua ambassador headset
-  description: A headset used by UA's ambassadors to communicate.
+  name: UA大使耳机
+  description: UA大使用来通讯的耳机。
   suffix: Colony, Ambassador
   components:
   - type: ContainerFill
@@ -227,8 +227,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyUPPAmb
-  name: upp ambassador encryption key
-  description: An encryption key used to communicate on the ambassador's radio channel.
+  name: UPP大使加密密钥
+  description: 用于在大使无线电频道上通信的加密密钥。
   suffix: Ambassador
   components:
   - type: EncryptionKey
@@ -239,8 +239,8 @@
 - type: entity
   parent: AU14ColonyAdminHeadset
   id: AU14AmbassadorUPPHeadset
-  name: upp ambassador headset
-  description: A headset used by UPP's ambassadors to communicate.
+  name: 上合组织大使耳机
+  description: UPP大使用于通讯的耳机。
   suffix: Colony, Ambassador
   components:
   - type: ContainerFill
@@ -252,8 +252,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyICSCAmb
-  name: icsc ambassador encryption key
-  description: An encryption key used to communicate on the ambassador's radio channel.
+  name: ICSC大使加密密钥
+  description: 用于在大使无线电频道上通信的加密密钥。
   suffix: Ambassador
   components:
   - type: EncryptionKey
@@ -264,8 +264,8 @@
 - type: entity
   parent: AU14ColonyAdminHeadset
   id: AU14AmbassadorICSCHeadset
-  name: icsc ambassador headset
-  description: A headset used by ICSC's ambassadors to communicate.
+  name: ICSC 大使耳机
+  description: ICSC大使用于通讯的耳机。
   suffix: Colony, Ambassador
   components:
   - type: ContainerFill
@@ -277,8 +277,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyCCAAmb
-  name: cca ambassador encryption key
-  description: An encryption key used to communicate on the ambassador's radio channel.
+  name: cca 大使加密密钥
+  description: 用于在大使的无线电频道上通信的加密密钥。
   suffix: Ambassador
   components:
   - type: EncryptionKey
@@ -289,8 +289,8 @@
 - type: entity
   parent: AU14ColonyAdminHeadset
   id: AU14AmbassadorCCAHeadset
-  name: cca ambassador headset
-  description: A headset used by CCA's ambassadors to communicate.
+  name: cca大使耳机
+  description: CCA大使用来通讯的耳机。
   suffix: Colony, Ambassador
   components:
   - type: ContainerFill
@@ -303,8 +303,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyColonySecurity
-  name: colony security encryption key
-  description: An encryption key used to communicate on colony, CMB, and Weyland radio channels.
+  name: 殖民地安保加密密钥
+  description: 用于在殖民地、CMB和Weyland无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -316,8 +316,8 @@
 - type: entity
   parent: RMCHeadsetLiaison
   id: AU14ColonySecurityHeadset
-  name: colony security headset
-  description: A headset used by colony security to coordinate on CMB and Weyland channels.
+  name: 殖民地安保耳机
+  description: 殖民地安保用于在CMB和维兰德频道上协调的耳机。
   suffix: Colony, CMB, WEYU
   components:
   - type: ContainerFill
@@ -329,8 +329,8 @@
 - type: entity
   parent: AU14HeadsetColonist
   id: AU14OrbitalHeadset
-  name: orbital personnel headset
-  description: A headset used by orbital personnel to communicate with the colony and the orbital station.
+  name: 轨道人员耳机
+  description: 轨道人员用来与殖民地和空间站通信的耳机。
   suffix: Orbital, Colony
   components:
   - type: ContainerFill
@@ -341,7 +341,7 @@
 - type: entity
   parent: AU14HeadsetColonist
   id: AU14OrbitalHeadsetManagement
-  name: orbital management headset
+  name: 轨道管理头戴设备
   suffix: Orbital, Colony, Admin
   components:
   - type: ContainerFill

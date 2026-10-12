@@ -3,8 +3,8 @@
 - type: entity
   parent: [ BaseMachinePowered, SmallConstructibleMachine, BaseSmallConstructibleMachineDestructible ]
   id: CMUGasCrystallizer
-  name: '"Rock Candy" C-7 gas crystallizer'
-  description: A Weyland-Yutani gas crystallizer. Piped gas goes in, solid sheets come out, assuming you hit its preferred temperature window. Field crews call it Rock Candy, and the safety card opens with 'it is not candy'. Raw plasma refuses to crystallize; it just sits there, judging you.
+  name: '“冰糖”C-7 气体结晶器'
+  description: 维兰德-汤谷公司的气体结晶器。管道输入气体，输出固体薄片——前提是你得命中它偏好的温度窗口。现场人员管它叫“冰糖”，而安全卡的开头写着“这不是糖”。未经处理的等离子拒绝结晶；它只是待在那里，审视着你。
   placement:
     mode: SnapgridCenter
   components:
@@ -63,8 +63,8 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: CMUCrystallizerMachineCircuitboard
-  name: '"Rock Candy" C-7 crystallizer machine board'
-  description: A machine printed circuit board for a gas crystallizer.
+  name: '“冰糖”C-7结晶机电路板'
+  description: 一台用于气体结晶器的机器印刷电路板。
   components:
   - type: Sprite
     state: power_mod

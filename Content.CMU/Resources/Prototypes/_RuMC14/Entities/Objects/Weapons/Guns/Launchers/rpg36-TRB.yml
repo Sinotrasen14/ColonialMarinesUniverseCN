@@ -2,7 +2,7 @@
   parent: RMCBaseWeaponLauncher
   id: RuMCWeaponLauncherDisposableTermobaric
   name: RPG-36-T
-  description: "The RPG-36-T is a shot with no second chance. The tube, the charge, and the primer are three elements that come together only to fly apart. Disposability is not a flaw, but a philosophy: it is designed for a single strike, but that strike is enough."
+  description: "RPG-36-T是一次没有第二次机会的射击。发射管、装药和底火这三个元素聚在一起，只为飞散分离。一次性并非缺陷，而是一种哲学：它为单次打击而设计，但那次打击已经足够。"
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Guns/RocketLaunchers/rpg36.rsi
@@ -34,7 +34,7 @@
   parent: [BaseItem, RMCBaseMeleeWeapon]
   id: RuMCWeaponLauncherDisposableTermobaricFolded
   name: RPG-36-T
-  description: "The RPG-36 is a shot with no second chance. The tube, the charge, and the primer are three elements that come together only to fly apart. Disposability is not a flaw, but a philosophy: it is designed for a single strike, but that strike is enough."
+  description: "RPG-36是一次没有第二次机会的射击。发射管、装药和底火这三个要素聚在一起，只为分崩离析。一次性并非缺陷，而是一种哲学：它为单次打击而设计，但那次打击已经足够。"
   suffix: Folded
   components:
   - type: Sprite
@@ -89,8 +89,8 @@
 - type: entity
   parent: BaseItem
   id: RuMCRocketRPG36_Termobaric
-  name: RPG36 Termobaric rocket
-  description: Rocket for the UPP assault units.
+  name: RPG36温压火箭弹
+  description: UPP突击部队的火箭弹。
   suffix: NO SPAWN
   components:
   - type: Tag
@@ -118,8 +118,8 @@
   categories: [ HideSpawnMenu ]
   parent: RMCProjectileRocket84mm
   id: RuMCProjectileRocketRPG36_Termobaric
-  name: RPG36 Termobaric rocket
-  description: Rocket for the UPP assault units.
+  name: RPG36温压火箭弹
+  description: UPP突击部队使用的火箭弹。
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Guns/RocketLaunchers/RPG32/rpg_rocket.rsi

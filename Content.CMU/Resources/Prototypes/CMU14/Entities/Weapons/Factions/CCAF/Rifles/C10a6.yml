@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseWeaponRifle
-  name: "C10A6-BR 'Sundog'"
+  name: "C10A6-BR“幻日”"
   id: AUWeaponRifleC10A6BR
-  description: A reflexive burst rifle designed for the CCAF by Armat Battlefield Systems. It delivers a fast three round burst upon trigger pull, all fired before the operator perceives recoil. The weapon is still in limited field testing among select CCAF infantry units.
+  description: 一把由阿玛特战场系统公司为CCAF设计的反射式点射步枪。扣动扳机后可快速射出三发点射，全部在操作员感受到后坐力之前完成。该武器目前仍在CCAF部分精选步兵单位中进行有限实战测试。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/CCAF/C10A6BR.rsi
@@ -38,7 +38,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -49,7 +49,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineRifleC10A6BR
-  name: "C10A6BR Magazine (.25 ACP)"
+  name: "C10A6BR 弹匣（.25 ACP）"
   components:
   - type: Tag
     tags:
@@ -74,8 +74,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: AU14CartridgeRifleC10A6BR
-  name: Cartridge (.25 ACP)
-  description: A .25 ACP pistol cartridge
+  name: 弹药（.25 ACP）
+  description: 一支.25 ACP手枪弹
   components:
   - type: Tag
     tags:

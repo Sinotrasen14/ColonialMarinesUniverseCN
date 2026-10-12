@@ -26,8 +26,8 @@
 - type: entity
   parent: CMULauncherGrenadeBase
   id: CMUGrenadeHEAP
-  name: M38 HEAP blast grenade
-  description: High-Explosive, Armour Piercing. A small, but deceptively strong blast grenade that can punch through appreciable quantities of armor, making it a solid anti-vehicle round, though it's a little less deadly to troops than the standard M40. Not a hand-grenade, as marked by the yellow color-band on its hull, launcher-fired only. Due to faulty primers, it is inadvisable to fire them directly at hard surfaces like walls, landing them just in front is recommended.
+  name: M38高爆弹
+  description: 高爆穿甲。一种小巧但威力惊人的爆炸榴弹，能够穿透相当厚度的装甲，使其成为可靠的反载具弹药，不过对步兵的杀伤力略低于标准M40。它不是手榴弹，弹体上的黄色色带即为此标识，仅可由发射器发射。由于底火存在缺陷，不建议直接射向墙壁等坚硬表面，建议落在其前方。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/heap.rsi
@@ -51,8 +51,8 @@
 - type: entity
   parent: [ CMGrenadeBase, RMCM40DPTags ]
   id: CMUGrenadeBFAB
-  name: M51A BFAB grenade
-  description: Bounding Fragmentation, Air-Burst. Rather than detonating where it lands, this grenade hops up into the air and bursts into a lethal hail of shrapnel. Effective against troops in the open or in foxholes. Can be fired from a grenade launcher to bound where it lands, or primed in-hand and thrown to bound once it hits the ground.
+  name: M51A BFAB手榴弹
+  description: 弹跳破片空爆弹。这种手榴弹不会在落点直接爆炸，而是弹跳到空中，炸开成致命的破片弹雨。对开阔地带或散兵坑中的部队十分有效。既可从榴弹发射器发射，在落点弹跳，也可在手中拉开引信后投掷，落地后弹跳。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/bfab.rsi
@@ -89,8 +89,8 @@
 - type: entity
   parent: CMULauncherGrenadeBase
   id: CMUGrenadeCanister
-  name: M108 canister grenade
-  description: 30mm canister grenade, effectively low velocity buckshot. Substantial close combat impact when fired from a grenade launcher. No, you can't set it off with a hammer, moron. Not a hand-grenade, as marked by the yellow color-band on its hull, launcher-fired only.
+  name: M108气罐手榴弹
+  description: 30mm气罐弹，实际上是低速霰弹。从榴弹发射器发射时具有可观的近战冲击力。不，你不能用锤子把它引爆，白痴。这不是手榴弹，弹体上的黄色色带就是标记，只能由发射器发射。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/canister.rsi
@@ -142,8 +142,8 @@
 - type: entity
   parent: CMGrenadeSmoke
   id: CMUGrenadeSmokeGreen
-  name: M47-G HSDP smoke grenade
-  description: The M47 HSDP is a small, but powerful smoke grenade. Based off the same platform as the M40 HEDP. Can be fired from a grenade launcher for impact detonation, or primed in-hand and thrown to detonate after 2.5 seconds. The G subtype erupts into a cloud of green smoke upon detonation.
+  name: M47-G HSDP烟雾弹
+  description: M47 HSDP是一种小巧但威力强大的烟雾弹。基于与M40 HEDP相同的平台。可从榴弹发射器发射以撞击引爆，或手持拉环投掷，在2.5秒后引爆。G子类型在引爆时会喷出一团绿色烟雾。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/smoke_green.rsi
@@ -153,8 +153,8 @@
 - type: entity
   parent: CMGrenadeSmoke
   id: CMUGrenadeSmokeRed
-  name: M47-R HSDP smoke grenade
-  description: The M47 HSDP is a small, but powerful smoke grenade. Based off the same platform as the M40 HEDP. Can be fired from a grenade launcher for impact detonation, or primed in-hand and thrown to detonate after 2.5 seconds. The R subtype erupts into a cloud of red smoke upon detonation.
+  name: M47-R HSDP烟雾弹
+  description: M47 HSDP是一种小巧但威力强大的烟雾弹。基于与M40 HEDP相同的平台。可从榴弹发射器发射以撞击引爆，或手持拔销投掷，在2.5秒后引爆。R子型号在引爆时会喷出一团红色烟雾。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/smoke_red.rsi
@@ -199,8 +199,8 @@
 - type: entity
   parent: CMUPacketGrenadePvEBase
   id: CMUPacketGrenadeHEAP
-  name: M38 HEAP grenade packet
-  description: It contains three M38 HEAP blast grenades. Launcher-fired only.
+  name: M38 高爆穿甲弹包
+  description: 它包含三枚M38高爆杀伤榴弹。仅可由发射器发射。
   components:
   - type: Sprite
     layers:
@@ -223,8 +223,8 @@
 - type: entity
   parent: CMUPacketGrenadePvEBase
   id: CMUPacketGrenadeBFAB
-  name: M51A BFAB grenade packet
-  description: It contains three M51A BFAB grenades.
+  name: M51A BFAB 手雷包
+  description: 它包含三枚M51A BFAB手榴弹。
   components:
   - type: Sprite
     layers:
@@ -247,8 +247,8 @@
 - type: entity
   parent: CMUPacketGrenadePvEBase
   id: CMUPacketGrenadeCanister
-  name: M108 canister grenade packet
-  description: It contains three M108 canister grenades. Launcher-fired only.
+  name: M108气罐榴弹包
+  description: 它包含三枚M108气罐榴弹。仅可由发射器发射。
   components:
   - type: Sprite
     layers:
@@ -271,8 +271,8 @@
 - type: entity
   parent: CMUPacketGrenadePvEBase
   id: CMUPacketGrenadeSmokeGreen
-  name: M47-G HSDP grenade packet
-  description: It contains three M47-G green signal smoke grenades.
+  name: M47-G HSDP 榴弹包
+  description: 它包含三枚M47-G绿色信号烟雾弹。
   components:
   - type: Sprite
     layers:
@@ -296,8 +296,8 @@
 - type: entity
   parent: CMUPacketGrenadePvEBase
   id: CMUPacketGrenadeSmokeRed
-  name: M47-R HSDP grenade packet
-  description: It contains three M47-R red signal smoke grenades.
+  name: M47-R HSDP 手榴弹包
+  description: 它包含三枚M47-R红色信号烟雾弹。
   components:
   - type: Sprite
     layers:
@@ -322,7 +322,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadesBFAB
-  name: M51A BFAB grenades crate (x6)
+  name: M51A BFAB手榴弹板条箱（x6）
   components:
   - type: StorageFill
     contents:
@@ -332,7 +332,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadesCanister
-  name: M108 canister grenades crate (x6)
+  name: M108气罐榴弹板条箱（x6）
   components:
   - type: StorageFill
     contents:
@@ -342,7 +342,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadesSmokeGreen
-  name: M47-G HSDP green smoke grenades crate (x6)
+  name: M47-G HSDP 绿色烟雾弹板条箱（x6）
   components:
   - type: StorageFill
     contents:
@@ -352,7 +352,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadesSmokeRed
-  name: M47-R HSDP red smoke grenades crate (x6)
+  name: M47-R HSDP 红色烟雾弹板条箱（x6）
   components:
   - type: StorageFill
     contents:

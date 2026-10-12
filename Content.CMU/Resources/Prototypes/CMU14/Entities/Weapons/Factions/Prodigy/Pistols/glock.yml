@@ -1,8 +1,8 @@
 - type: entity
   parent: CMWeaponPistolM1984
   id: CMU14WeaponPistolGlock75
-  name: Glock 75 pistol
-  description: Austrian legend, designed in XX century, Glock quickly became a major player on the pistol market. This version was produced on a license for Prodigy CORP for security and police forces, features an underbarrel rail for a taser.
+  name: 格洛克75手枪
+  description: 奥地利传奇，设计于二十世纪，格洛克迅速成为手枪市场的主要参与者。此版本由Prodigy CORP授权生产，供安保和警察部队使用，配有用于电击器的下枪管导轨。
   components:
   - type: Tag
     tags:
@@ -24,7 +24,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -93,8 +93,8 @@
 - type: entity
   parent: CMU14WeaponPistolGlock75
   id: CMU14WeaponPistolGlock77
-  name: Glock 77 pistol
-  description: Austrian legend, designed in XX century, Glock quickly became a major player on the pistol market. This version was produced on a license for Prodigy CORP for security and police forces, features an underbarrel rail for a taser and fully automatic mode.
+  name: 格洛克77手枪
+  description: 奥地利传奇，设计于二十世纪，格洛克迅速成为手枪市场的重要参与者。此版本为Prodigy CORP获得许可生产，供安保和警察部队使用，配有用于电击器的下枪管导轨和全自动模式。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Weapons/Guns/Pistols/glock77.rsi
@@ -125,7 +125,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -174,7 +174,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -192,7 +192,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -204,7 +204,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMU14MagazinePistolGlock75
-  name: Glock 75 magazine (9mm)
+  name: 格洛克75弹匣（9毫米）
   components:
   - type: Tag
     tags:
@@ -232,7 +232,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMU14MagazinePistolGlock75AP
-  name: Glock 75 armour piercing magazine (9mm)
+  name: Glock 75 穿甲弹匣（9毫米）
   components:
   - type: Tag
     tags:
@@ -260,7 +260,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMU14MagazinePistolGlock75HP
-  name: Glock 75 hollowpoint magazine (9mm)
+  name: Glock 75 空尖弹弹匣（9毫米）
   components:
   - type: Tag
     tags:
@@ -288,7 +288,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMU14MagazinePistolGlock75Rubber
-  name: Glock 75 rubber magazine (9mm)
+  name: Glock 75橡胶弹匣（9mm）
   components:
   - type: Tag
     tags:
@@ -318,7 +318,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMU14MagazinePistolGlock77
-  name: Glock 77 magazine (9mm)
+  name: 格洛克77弹匣（9毫米）
   components:
   - type: Tag
     tags:
@@ -348,7 +348,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMU14MagazinePistolGlock77Rubber
-  name: Glock 77 rubber magazine (9mm)
+  name: Glock 77橡胶弹匣（9毫米）
   components:
   - type: Tag
     tags:
@@ -376,7 +376,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMU14MagazinePistolGlock77AP
-  name: Glock 77 armour piercing magazine (9mm)
+  name: Glock 77穿甲弹匣（9毫米）
   components:
   - type: Tag
     tags:
@@ -404,7 +404,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: CMU14MagazinePistolGlock77HP
-  name: Glock 77 hollowpoint magazine (9mm)
+  name: 格洛克77空尖弹弹匣（9毫米）
   components:
   - type: Tag
     tags:
@@ -432,8 +432,8 @@
 - type: entity
   parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
   id: CMU14AttachmentUnderbarrelTaser
-  name: underbarrel taser
-  description: Prodigy CORP underbarrel taser for Glock 70-series.
+  name: 下挂电击枪
+  description: Prodigy CORP 为 Glock 70 系列设计的下挂式电击枪。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Weapons/Attachments/underbarreltaser.rsi

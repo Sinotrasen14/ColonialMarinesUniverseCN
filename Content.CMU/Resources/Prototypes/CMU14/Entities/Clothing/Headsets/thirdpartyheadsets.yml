@@ -1,8 +1,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: AU14HeadsetUSArmy
-  name: US Army headset
-  description: Issued to US Army units.
+  name: 美国陆军耳机
+  description: 配发给美国陆军部队。
   suffix: US Army
   components:
   - type: Sprite
@@ -26,8 +26,8 @@
 - type: entity
   parent: AU14HeadsetGovforCommand
   id: AU14HeadsetUSArmyERT
-  name: US Army ERT radio headset
-  description: Issued to US Army units.
+  name: 美国陆军应急反应部队无线电耳机
+  description: 配发给美国陆军部队。
   components:
   - type: RMCHeadset
     channels:
@@ -36,14 +36,14 @@
 - type: entity
   parent: AU14HeadsetUSArmyERT
   id: AU14HeadsetFORECONERT
-  name: UNMC SOF headset
-  description: Issued exclusively to Marine Raiders and members of the UNMC's Force Reconnaissance.
+  name: UNMC特种作战耳机
+  description: 仅配发给海军陆战队突袭兵和UNMC部队侦察部队成员。
 
 - type: entity
   parent: AU14HeadsetGovforCommand
   id: AU14HeadsetRMCRRT
-  name: RMC RRT radio headset
-  description: Issued to Royal Commandos units.
+  name: RMC RRT 无线电耳机
+  description: 配发给皇家突击队部队。
   components:
   - type: RMCHeadset
     channels:
@@ -52,8 +52,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: CMU14HeadsetTWEThirdParty
-  name: TWE SOF radio headset
-  description: Issued to TWE SOF units.
+  name: TWE SOF 无线电耳机
+  description: 发放给TWE SOF单位。
   components:
   - type: RMCHeadset
     channels:
@@ -62,8 +62,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: AU14HeadsetVAI
-  name: vanguard's arrow headset
-  description: A special headset used by Vanguard's Arrow Incorporated mercenaries, features a non-standard brace.
+  name: 先锋之箭耳机
+  description: 先锋“箭矢”公司雇佣兵使用的特殊耳机，配有非标准支架。
   suffix: VAI, Ambassador
   components:
   - type: ContainerFill
@@ -83,9 +83,9 @@
 - type: entity
   parent: AU14HeadsetGovforCommand
   id: AU14HeadsetVAIERT
-  name: vanguard's arrow headset
+  name: 先锋箭矢耳机
   suffix: VAI, GOVFOR
-  description: A special headset used by Vanguard's Arrow Incorporated mercenaries, features a non-standard brace.
+  description: 先锋“箭矢”公司雇佣兵使用的特殊耳机，配有非标准支架。
   components:
   - type: RMCHeadset
     channels:
@@ -94,8 +94,8 @@
 - type: entity
   parent: AU14ColonyAdminHeadset
   id: AU14HeadsetVAIColony
-  name: vanguard's arrow headset
-  description: A special headset used by Vanguard's Arrow Incorporated mercenaries, features a non-standard brace.
+  name: 先锋之箭耳机
+  description: 先锋“箭矢”公司雇佣兵使用的特殊耳机，配有非标准支架。
   suffix: VAI, Colony
   components:
   - type: RMCHeadset
@@ -105,8 +105,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: AU14HeadsetPART
-  name: Prodigy Armed Repair Team headset
-  description: A special headset used by Prodigy Armed Repair Team, features a unique brace.
+  name: 神童武装维修队耳机
+  description: 神童武装维修队使用的特殊耳机，配有独特的支架。
   suffix: PART, 3rd Party
   components:
   - type: ContainerFill

@@ -1,7 +1,7 @@
 - type: entity
   id: ActionGunshipMasterAlarmSilence
-  name: Master Alarm Silence
-  description: Silence or restore all audible gunship alarms. Visual warnings remain active.
+  name: 主警报静音
+  description: 使所有可听武装直升机警报静音或恢复。视觉警告保持激活。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Dropship.TacticalLand.GunshipMasterAlarmToggleActionEvent
@@ -17,8 +17,8 @@
 
 - type: entity
   id: ActionGunshipCycleCamera
-  name: Cycle Maneuvering Camera
-  description: Cycle the maneuvering camera through rear, lower, upper, and off.
+  name: 循环机动摄像机
+  description: 循环切换机动摄像机：后部、下部、上部和关闭。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Dropship.TacticalLand.GunshipCycleCameraActionEvent
@@ -34,8 +34,8 @@
 
 - type: entity
   id: ActionGunshipDropshipOutline
-  name: View Dropship Outline
-  description: Toggle the dropship footprint outline on the upper and lower maneuvering cameras.
+  name: 查看运输机轮廓
+  description: 切换上下机动摄像头上的运输机轮廓线。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Dropship.TacticalLand.GunshipDropshipOutlineToggleActionEvent
@@ -51,8 +51,8 @@
 
 - type: entity
   id: ActionGunshipPilotPanning
-  name: Toggle Pilot Camera Panning
-  description: Enable or disable mouse-directed pilot camera panning.
+  name: 切换飞行员摄像机平移
+  description: 启用或禁用鼠标控制的飞行员摄像机平移。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Dropship.TacticalLand.GunshipPilotPanningToggleActionEvent
@@ -68,8 +68,8 @@
 
 - type: entity
   id: ActionGunshipPilotZoom
-  name: Toggle 1.5x Pilot Zoom
-  description: Toggle scope-style 1.5x magnification for the pilot camera.
+  name: 切换 1.5x 飞行员视角缩放
+  description: 切换飞行员摄像头的瞄准镜式1.5倍放大倍率。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Dropship.TacticalLand.GunshipPilotZoomToggleActionEvent

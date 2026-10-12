@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBackpackMarine
   id: CMUDroneOperatorChoicePackFilled
-  name: drone operator deployment pack
-  description: Contains a drone selection kit. Use the kit to choose humanoid drone, gun UGV, or flamer UGV equipment after deployment.
+  name: 无人机操作员部署包
+  description: 包含一个无人机选择套件。部署后使用该套件选择人形无人机、火炮无人地面载具或火焰无人地面载具装备。
   suffix: Filled
   components:
   - type: Sprite
@@ -18,8 +18,8 @@
 - type: entity
   parent: BaseItem
   id: CMUDronePlatformKit
-  name: drone selection kit
-  description: Use this kit to choose one humanoid drone, gun UGV, or flamer UGV assembly package.
+  name: 无人机选择套件
+  description: 使用此套件选择一种人形无人机、火炮无人地面载具或火焰无人地面载具组装包。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Storage/procase_mini.rsi
@@ -39,8 +39,8 @@
 - type: entity
   parent: BaseItem
   id: CMUDroneControlTablet
-  name: drone control tablet
-  description: A ruggedized command tablet used to link and remotely pilot one drone android or tracked combat drone within a short tactical leash.
+  name: 无人机控制平板
+  description: 一台加固型指挥部平板电脑，用于在短战术范围内链接并远程驾驶一台无人机仿生人或履带式战斗无人机。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/command_tablet.rsi
@@ -53,8 +53,8 @@
 - type: entity
   parent: CMBackpackMarine
   id: CMUDroneOperatorPackFilled
-  name: drone operator field pack
-  description: A compact field pack issued with a drone controller, disassembled drone android frame, tools, and swappable drone modules.
+  name: 无人机操作员野战背包
+  description: 一个紧凑的野战背包，随附无人机控制器、拆解的无人机仿生人框架、工具和可替换的无人机模块。
   suffix: Filled
   components:
   - type: Sprite
@@ -82,8 +82,8 @@
 - type: entity
   parent: BaseItem
   id: CMUDroneBodyFrame
-  name: drone android body frame
-  description: A bare synthetic torso frame with sealed limb ports and an empty activation socket.
+  name: 无人机仿生人体框架
+  description: 一个裸露的合成躯干框架，带有密封的肢体接口和一个空的激活插槽。
   components:
   - type: ContainerContainer
     containers:
@@ -103,8 +103,8 @@
   abstract: true
   parent: BaseItem
   id: CMUDronePartBase
-  name: drone android part
-  description: A stripped synthetic assembly part for a drone android.
+  name: 无人机安卓部件
+  description: 一个用于无人机仿生人的剥离合成装配部件。
   components:
   - type: Sprite
     sprite: CMU14/Mobs/DroneAndroid/parts.rsi
@@ -114,8 +114,8 @@
 - type: entity
   parent: CMUDronePartBase
   id: CMUDroneHeadAssembly
-  name: drone android head
-  description: A bare synthetic head assembly with minimal sensor and control hardware.
+  name: 无人机安卓头部
+  description: 一个仅配备最基础传感器和控制硬件的裸露合成头部组件。
   components:
   - type: Sprite
     state: head_m
@@ -125,8 +125,8 @@
 - type: entity
   parent: CMUDronePartBase
   id: CMUDroneLeftArmAssembly
-  name: drone android left arm
-  description: A left arm assembly with exposed actuator bundles.
+  name: 无人机仿生人左臂
+  description: 一个带有外露执行器束的左臂组件。
   components:
   - type: Sprite
     state: l_arm
@@ -136,8 +136,8 @@
 - type: entity
   parent: CMUDronePartBase
   id: CMUDroneRightArmAssembly
-  name: drone android right arm
-  description: A right arm assembly with exposed actuator bundles.
+  name: 无人机安卓右臂
+  description: 一个右臂组件，带有外露的执行器束。
   components:
   - type: Sprite
     state: r_arm
@@ -147,8 +147,8 @@
 - type: entity
   parent: CMUDronePartBase
   id: CMUDroneLeftLegAssembly
-  name: drone android left leg
-  description: A left leg assembly with reinforced knee servos.
+  name: 无人机安卓左腿
+  description: 一个带有强化膝关节舵机的左腿组件。
   components:
   - type: Sprite
     state: l_leg
@@ -158,8 +158,8 @@
 - type: entity
   parent: CMUDronePartBase
   id: CMUDroneRightLegAssembly
-  name: drone android right leg
-  description: A right leg assembly with reinforced knee servos.
+  name: 无人机 仿生人 右腿
+  description: 一个带有强化膝关节舵机的右腿组件。
   components:
   - type: Sprite
     state: r_leg
@@ -169,8 +169,8 @@
 - type: entity
   parent: BaseItem
   id: CMUDroneSynthKey
-  name: drone synth key
-  description: A locked synthetic authorization key used to bring a completed drone android frame online.
+  name: 无人机合成器键
+  description: 一把锁定的合成授权密钥，用于激活已完成的无人机仿生人框架。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/synth_token.rsi
@@ -183,8 +183,8 @@
   abstract: true
   parent: BaseItem
   id: CMUDroneModuleBase
-  name: drone module
-  description: A swappable control module designed for a drone android's internal tool bus.
+  name: 无人机模块
+  description: 一种可更换的控制模块，专为无人机仿生人的内部工具总线设计。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/module.rsi
@@ -196,8 +196,8 @@
 - type: entity
   parent: CMUDroneModuleBase
   id: CMUDroneModuleCombat
-  name: drone combat module
-  description: A tactical combat module loaded with close-quarters and firearms routines.
+  name: 无人机战斗模块
+  description: 一个战术战斗模块，内置近身格斗与枪械作战程序。
   components:
   - type: Sprite
     state: mcontroller
@@ -209,8 +209,8 @@
 - type: entity
   parent: CMUDroneModuleBase
   id: CMUDroneModuleCare
-  name: drone care module
-  description: A medical care module loaded with doctor-grade treatment and surgery routines.
+  name: 无人机护理模块
+  description: 一个医疗护理模块，搭载了医生级治疗和手术程序。
   components:
   - type: Sprite
     state: power_mod

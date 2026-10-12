@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: XM4RA carbine
+  name: XM4RA卡宾枪
   id: AU14WeaponRifleXM4RA
-  description: The XM4RA carbine is being developed for the United States Colonial Marines Corps as a part of Special Operations Peculiar Carbine (SOPCAR). Originally started as a weapon for the Marine Raiders, this carbine became a prototype for a new generation self defense weapon for tank crews and Marine Secuity Guard.
+  description: XM4RA卡宾枪正在为美国殖民地海军陆战队研发，属于特种作战专用卡宾枪（SOPCAR）项目的一部分。这款卡宾枪最初是作为海军陆战队突击队的武器而启动的，后来成为气瓶乘员和海军陆战队警卫队新一代自卫武器的原型。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/USCM/xm4ra1_32x64.rsi
@@ -54,7 +54,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
         priority: 2
@@ -145,9 +145,9 @@
 
 - type: entity
   parent: AU14WeaponRifleXM4RA
-  name: XM4RA1 carbine
+  name: XM4RA1卡宾枪
   id: AU14WeaponRifleXM4RA1
-  description: The XM4RA1 carbine is a part of Special Operations Peculiar Carbine (SOPCAR). Originally started as a weapon for the Marine Raiders, this carbine became a prototype for a new generation self defense weapon for tank crews and Marine Secuity Guard. This modification has full-auto firemode.
+  description: XM4RA1卡宾枪是特种作战专用卡宾枪（SOPCAR）的一部分。最初作为海军陆战队突袭队的武器，这款卡宾枪后来成为气瓶乘员和海军陆战队安保警卫新一代自卫武器的原型。该改装型具有全自动射击模式。
   components:
   - type: Gun
     shotsPerBurst: 3
@@ -182,9 +182,9 @@
 
 - type: entity
   parent: AU14WeaponRifleXM4RA1
-  name: XM4RA1 SOPMOD carbine
+  name: XM4RA1 SOPMOD卡宾枪
   id: AU14WeaponRifleXM4RA1SOPMOD
-  description: The XM4RA1 SOPMOD carbine is a part of new self-defense and special operations program for USCMC. Specifically SOPMOD modification is being developed for Marine Raiders needs.  
+  description: XM4RA1 SOPMOD卡宾枪是USCMC新型自卫与特种作战项目的一部分。具体而言，SOPMOD改装正是为海军陆战队突袭兵的需求而开发的。
   components:
   - type: RMCSelectiveFire
     baseFireModes:
@@ -207,7 +207,7 @@
   - type: AttachableHolder
     slots:
       rmc-aslot-barrel:
-        startingAttachable: RMCAttachmentSuppressor 
+        startingAttachable: RMCAttachmentSuppressor
         whitelist:
           tags:
           - RMCAttachmentExtendedBarrel
@@ -254,7 +254,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/l42_unload.ogg
         priority: 2

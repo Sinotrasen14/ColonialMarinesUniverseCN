@@ -92,8 +92,8 @@
 - type: entity
   parent: CMUResearchContract
   id: CMUAdminChemicalContract
-  name: materializable chemical contract
-  description: An admin-issued chemical contract carrying authenticated synthesis data.
+  name: 可实现的化学品合同
+  description: 一份由管理员签发的化学品合同，载有经认证的合成数据。
   categories: [ HideSpawnMenu ]
   components:
   - type: ResearchReport
@@ -103,7 +103,7 @@
   parent: CMUWYPaper
   id: CMUCipherHintPaper
   categories: [ HideSpawnMenu ]
-  name: Research Ciphering Breakthrough
+  name: 科研部密码破解突破
   components:
   - type: CipherHintPaper
     spawnCrate: true
@@ -111,14 +111,14 @@
 - type: entity
   parent: CMUWYPaper
   id: CMUCipherHintPaperNoSpawn
-  name: Research Ciphering Breakthrough
+  name: 科研部密码破译突破
   components:
   - type: CipherHintPaper
 
 - type: entity
   parent: CMUWYPaper
   id: CMUCipherHintPaperInformDeliv
-  name: Research Ciphering Breakthrough
+  name: 科研部密码破解突破
   components:
   - type: CipherHintPaper
     informDelivery: true

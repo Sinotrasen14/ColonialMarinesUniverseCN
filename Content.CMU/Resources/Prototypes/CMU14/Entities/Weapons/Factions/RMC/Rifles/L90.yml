@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   id: AU14WeaponRifleL90
-  name: L90 assault rifle # F9030A1 in CM13
-  description: The L90 Rifle, a variant of the old standard-issue rifle of the royal marine.
+  name: L90突击步枪 # F9030A1 in CM13
+  description: L90步枪，是皇家海军陆战队旧制式步枪的变体。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/RMC/L90.rsi
@@ -58,7 +58,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -117,7 +117,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazineRifleL90
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -167,8 +167,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineRifleL90
-  name: L90 Magazine (10x24mm)
-  description: "A magazine of 10x24mm rounds for use in the L90 rifle."
+  name: L90弹匣（10x24毫米）
+  description: "10发24毫米弹匣，用于L90步枪。"
   components:
   - type: Tag
     tags:
@@ -195,8 +195,8 @@
 - type: entity
   parent: AU14MagazineRifleL90
   id: AU14MagazineRifleL90AP
-  description: "A magazine of armor-piercing 10x24mm rounds for use in the L90 rifle."
-  name: L90 AP Magazine (10x24mm)
+  description: "一盒10x24毫米穿甲弹，供L90步枪使用。"
+  name: L90 AP 弹匣（10x24mm）
   suffix: AP
   components:
   - type: Tag
@@ -225,8 +225,8 @@
 - type: entity
   parent: AU14MagazineRifleL90
   id: AU14MagazineRifleL90extended
-  description: "An extended magazine for the L90 rifle."
-  name: L90 Extended Magazine (10x24mm)
+  description: "L90步枪的加长弹匣。"
+  name: L90加长弹匣（10x24毫米）
   suffix: Extended
   components:
   - type: Tag
@@ -254,8 +254,8 @@
 - type: entity
   parent: AU14MagazineRifleL90
   id: AU14MagazineRifleL90HEAP
-  description: "A magazine of HEAP 10x24mm rounds for use in the L90 rifle."
-  name: L90 HEAP Magazine (10x24mm)
+  description: "一盒10x24毫米高爆穿甲弹，供L90步枪使用。"
+  name: L90 HEAP 弹匣（10x24mm）
   suffix: HEAP
   components:
   - type: Tag
@@ -284,8 +284,8 @@
 - type: entity
   parent: AU14MagazineRifleL90
   id: AU14MagazineRifleL90Incendiary
-  description: "A magazine of incendiary 10x24mm rounds for use in the L90 rifle."
-  name: L90 Incendiary Magazine (10x24mm)
+  description: "一盒用于L90步枪的10x24毫米燃烧弹。"
+  name: L90燃烧弹弹匣（10x24毫米）
   suffix: Incendiary
   components:
   - type: Tag
@@ -315,8 +315,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   id: AU14WeaponRifleL90B
-  name: L90/B 'Breacher' assault rifle
-  description: a variant of the old standard-issue rifle of the royal marine with a heavily modified firing mechanism, giving it a burst-fire option. Comes with built-in underbarell shotgun.
+  name: L90/B“破门者”突击步枪
+  description: 皇家海军陆战队旧制式步枪的变体，其击发机构经过大幅改装，增加了点射选项。附带内置下挂式霰弹枪。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/RMC/L90B.rsi
@@ -368,7 +368,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -418,7 +418,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazineRifleL90
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -459,8 +459,8 @@
 - type: entity
   parent: RMCAttachmentS84xTelescopicScope
   id: AU14AttachmentL90MScope
-  name: 4x telescopic scope
-  description: L90 Marksman 4x telescopic eye piece. Fixed at 4x zoom.
+  name: 4倍望远式瞄准镜
+  description: L90 神射手4倍望远目镜。固定4倍变焦。
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -482,8 +482,8 @@
 - type: entity
   parent: RMCAttachmentU7UnderbarrelShotgun
   id: RMCAttachmentL90BUnderbarrelShotgun
-  name: underbarrel shotgun
-  description: Tactical shotgun. Attaches to the underbarrel of most weapons. Only capable of loading up to five buckshot shells. Specialized for breaching into buildings.
+  name: 下挂式霰弹枪
+  description: 战术霰弹枪。可装配在大多数武器的下挂枪管上。最多只能装填五发鹿弹。专为破门突入建筑物而设计。
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -542,8 +542,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   id: AU14WeaponRifleL90M
-  name: L90M Marksman rifle
-  description: The L90M Marksman rifle, a variant of the old standard-issue rifle of the royal marine. This particular version of the weapon has been given a custom stock, a variable zoom scope and a longer barrel. Reliable and deadly.
+  name: L90M 精确射手步枪
+  description: L90M射手步枪，皇家海军陆战队旧制式步枪的变体。这一特定版本配备了定制枪托、可变倍率瞄准镜和更长的枪管。可靠且致命。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/RMC/L90M.rsi
@@ -584,7 +584,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -630,7 +630,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazineRifleL90M
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -646,8 +646,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineRifleL90M
-  name: L90M Magazine (10x24mm)
-  description: "A magazine of 10x24mm rounds for use in the L90M rifle."
+  name: L90M 弹匣（10x24mm）
+  description: "L90M步枪使用的10x24毫米弹匣。"
   components:
   - type: Tag
     tags:
@@ -674,8 +674,8 @@
 - type: entity
   parent: AU14MagazineRifleL90M
   id: AU14MagazineRifleL90MAP
-  description: "A magazine of armor-piercing 10x24mm rounds for use in the L90M rifle."
-  name: L90M AP Magazine (10x24mm)
+  description: "一盒用于L90M步枪的10x24毫米穿甲弹弹匣。"
+  name: L90M AP弹匣（10x24mm）
   suffix: AP
   components:
   - type: Tag
@@ -700,12 +700,12 @@
   - type: Appearance
   - type: RefillableByBulletBox
     bulletType: RMCBoxBulletsRifleAP
-    
+
 - type: entity
   parent: AU14MagazineRifleL90M
   id: AU14MagazineRifleL90Mextended
-  description: "An extended magazine for the L90M rifle."
-  name: L90M Extended Magazine (10x24mm)
+  description: "L90M步枪的加长弹匣。"
+  name: L90M 加长弹匣（10x24毫米）
   suffix: Extended
   components:
   - type: Tag
@@ -732,8 +732,8 @@
 - type: entity
   parent: AU14MagazineRifleL90M
   id: AU14MagazineRifleL90MHEAP
-  description: "A magazine of HEAP 10x24mm rounds for use in the L90M rifle."
-  name: L90M HEAP Magazine (10x24mm)
+  description: "一盒10x24毫米高爆穿甲弹，供L90M步枪使用。"
+  name: L90M 高爆穿甲弹匣（10x24毫米）
   suffix: HEAP
   components:
   - type: Tag
@@ -760,8 +760,8 @@
 - type: entity
   parent: AU14MagazineRifleL90M
   id: AU14MagazineRifleL90MIncendiary
-  description: "A magazine of incendiary 10x24mm rounds for use in the L90M rifle."
-  name: L90M Incendiary Magazine (10x24mm)
+  description: "一盒燃烧型10x24毫米弹药，用于L90M步枪。"
+  name: L90M燃烧弹弹匣（10x24毫米）
   suffix: Incendiary
   components:
   - type: Tag
@@ -790,8 +790,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   id: AU14WeaponSMGL90A2
-  name: L90A2 'Commando' PDW
-  description: The L90A2 personal defense weapon, found commonly in Three World Empire's armories. This version has shortened barrel and modified fire mechanism, allowing full-auto and burst fire. Chambered in 10x20mm Parabellum.
+  name: L90A2“突击队”PDW
+  description: L90A2个人防卫武器，常见于三界帝国的军械库中。此版本采用缩短枪管与改进后的击发机构，可实现全自动与点射射击。使用10x20mm帕拉贝鲁姆弹。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/RMC/L90A2.rsi
@@ -842,7 +842,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -902,7 +902,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazineSMGL90A2extended
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -948,7 +948,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazineSMGL90A2
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -989,8 +989,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineSMGL90A2
-  name: L90A2 Magazine (10x20mm)
-  description: "A magazine of 10x20mm rounds for use in the L90A2 PDW."
+  name: L90A2弹匣（10x20mm）
+  description: "一把10x20毫米弹药弹匣，用于L90A2 PDW。"
   components:
   - type: Tag
     tags:
@@ -1016,8 +1016,8 @@
 - type: entity
   parent: AU14MagazineSMGL90A2
   id: AU14MagazineSMGL90A2AP
-  description: "A magazine of armor-piercing 10x20mm rounds for use in the L90A2 PDW."
-  name: L90A2 AP Magazine (10x20mm)
+  description: "一匣10x20毫米穿甲弹，用于L90A2 PDW。"
+  name: L90A2 AP弹匣（10x20mm）
   suffix: AP
   components:
   - type: Tag
@@ -1045,8 +1045,8 @@
 - type: entity
   parent: AU14MagazineSMGL90A2
   id: AU14MagazineSMGL90A2extended
-  description: "An extended magazine for the L90A2 PDW."
-  name: L90A2 Extended Magazine (10x20mm)
+  description: "L90A2 PDW的加长弹匣。"
+  name: L90A2加长弹匣（10x20mm）
   suffix: Extended
   components:
   - type: Tag
@@ -1073,8 +1073,8 @@
 - type: entity
   parent: AU14MagazineSMGL90A2
   id: AU14MagazineSMGL90A2HEAP
-  description: "A magazine of HEAP 10x20mm rounds for use in the L90A2 PDW."
-  name: L90A2 HEAP Magazine (10x20mm)
+  description: "一盒10x20毫米高爆弹，用于L90A2个人防卫武器。"
+  name: L90A2 高爆穿甲弹匣（10x20毫米）
   suffix: HEAP
   components:
   - type: Tag
@@ -1101,8 +1101,8 @@
 - type: entity
   parent: AU14MagazineSMGL90A2
   id: AU14MagazineSMGL90A2Incendiary
-  description: "A magazine of incendiary 10x20mm rounds for use in the L90A2 PDW."
-  name: L90A2 Incendiary Magazine (10x20mm)
+  description: "一盒用于L90A2 PDW的10x20mm燃烧弹。"
+  name: L90A2燃烧弹弹匣（10x20毫米）
   suffix: Incendiary
   components:
   - type: Tag

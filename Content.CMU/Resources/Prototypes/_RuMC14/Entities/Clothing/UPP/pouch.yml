@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCPouchMagazine
   id: RuMCUPPPouchMagazine
-  name: PM-74-Magazine
-  description: A compact, reinforced pouch for standard assault rifle magazines. Designed for quick access and reliable retention during high-mobility operations. Standard issue for all UPP riflemen.
+  name: PM-74-弹匣
+  description: 一个紧凑、加固的弹匣袋，用于标准突击步枪弹匣。专为高机动行动中的快速取用和可靠固定而设计。所有UPP步枪手的标准装备。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/medium_ammo_mag.rsi
@@ -10,8 +10,8 @@
 - type: entity
   parent: RuMCUPPPouchMagazine
   id: RuMCUPPPouchMagazineLarge
-  name: PM-74-Magazine modified
-  description: An extended variant of the PM-74. Carries a heavy combat load of rifle magazines. Used by automatic riflemen and troops expecting prolonged engagements.
+  name: PM-74-弹匣 改装版
+  description: PM-74的加长型变体。可携带大量步枪弹匣。供自动步枪手和预期将进行长时间交战的部队使用。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/large_ammo_mag.rsi
@@ -23,8 +23,8 @@
 - type: entity
   parent: RMCPouchConstruction
   id: RuMCUPPPouchConstruction
-  name: PM-18-Construction
-  description: The engineer's universal bag. It is equipped with loops and pockets for glass sheets, metal rods, barbed wire, cable coils, and empty sandbags. It also has two external hooks for trench tools or interchangeable lighting devices.
+  name: PM-18-施工
+  description: 工程师的通用包。它配有用于玻璃片、金属杆、带刺铁丝、电缆卷和空沙袋的环扣和口袋。它还有两个外部挂钩，用于放置战壕工具或可互换的照明装置。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/construction.rsi
@@ -32,8 +32,8 @@
 - type: entity
   parent: RMCPouchBayonet
   id: RuMCUPPPouchBayonet
-  name: PM-6-Bayonet
-  description: A secure mount for a bayonet or large combat knife. Provides access to the blade while securely holding it in place, ensuring that it does not get lost during movement. The command still does not understand why troops need these pouches.
+  name: PM-6-刺刀
+  description: 一个用于固定刺刀或大型格斗刀的保险刀座。在牢牢固定刀身的同时，仍可随时取用，确保移动过程中不会丢失。指挥部仍然不明白部队为什么需要这些刀套。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/bayonet.rsi
@@ -41,8 +41,8 @@
 - type: entity
   parent: RMCPouchFuelTank
   id: RuMCUPPPouchFuelTank
-  name: PM-12-Fuel
-  description: A specialized harness with two ring straps designed to securely carry a napalm tank. Handle with care. A single leak could turn a soldier into a torch.
+  name: PM-12-燃料
+  description: 一种专用背带，配有两个环形绑带，用于安全携带凝固汽油气瓶。小心轻放。哪怕只漏一点，也能把士兵变成火把。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/fueltank.rsi
@@ -50,8 +50,8 @@
 - type: entity
   parent: RMCPouchGeneralLarge
   id: RuMCUPPPouchGeneralLarge
-  name: PM-47-General
-  description: A large, general-purpose pouch. Used for carrying a variety of different-sized items, from medical supplies to extra rations. Not designed for a specific role, but useful for almost any.
+  name: PM-47-通用
+  description: 一个大型通用袋。用于携带各种不同尺寸的物品，从医疗用品到额外口粮。并非为特定用途而设计，但几乎对任何用途都很有用。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/large_drop.rsi
@@ -59,8 +59,8 @@
 - type: entity
   parent: RMCPouchExplosive
   id: RuMCUPPPouchExplosive
-  name: PM-54-Explosive
-  description: A robust pouch with reinforced stitching and a secure flap. Designed to safely carry grenades, plastic explosives, and mine components. The universal choice for sappers and demolition experts.
+  name: PM-54-炸药
+  description: 一个带有加固缝线和安全翻盖的强韧袋。专为安全携带手榴弹、塑性炸药和地雷部件而设计。工兵和爆破专家的通用选择。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/large_explosive.rsi
@@ -68,8 +68,8 @@
 - type: entity
   parent: RMCPouchMagazinePistolLarge
   id: RuMCUPPPouchMagazinePistolLarge
-  name: PM-18-Pistol modified
-  description: An oversized pistol magazine pouch, often used by special forces for high-capacity sidearms or to carry additional speedloaders for heavy revolvers. Bulky but effective.
+  name: PM-18-手枪改装型
+  description: 一个超大号手枪弹匣袋，常被特种部队用于高容量副武器，或为重左轮手枪携带额外的快速装弹器。笨重但有效。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/large_pistol_mag.rsi
@@ -77,8 +77,8 @@
 - type: entity
   parent: RMCPouchMagazinePistol
   id: RuMCUPPPouchMagazinePistol
-  name: PM-18-Pistol
-  description: A lightweight pouch for sidearm magazines and revolver speedloaders. Preferred by officers, vehicle crews, and anyone who values having a backup weapon fully loaded. Keeps its contents secure without unnecessary bulk.
+  name: PM-18-手枪
+  description: 一个轻便的腰包，用于携带手枪弹匣和左轮手枪快速装弹器。深受军官、车组人员以及任何重视备用武器满载待命的人青睐。在确保内容物安全的同时，避免了不必要的臃肿。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/medium_pistol_mag.rsi
@@ -86,8 +86,8 @@
 - type: entity
   parent: RMCPouchShotgunLarge
   id: RuMCUPPPouchShotgunLarge
-  name: PM-23-Shotgun modified
-  description: An expanded shotgun shell pouch. Carries a significant ammunition load for sustained close-quarters combat. Essential for those clearing rooms or holding tight corners.
+  name: PM-23-霰弹枪改装型
+  description: 一个扩容的霰弹枪弹袋。可携带大量弹药，适合持续近距战斗。对于清理房间或守住狭窄角落的人来说必不可少。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/large_shotshells.rsi
@@ -95,8 +95,8 @@
 - type: entity
   parent: RMCPouchShotgun
   id: RuMCUPPPouchShotgun
-  name: PM-23-Shotgun
-  description: Designed for 12-gauge and 23mm shotgun shells. Holds enough rounds for a few intense exchanges at close quarters. A must-have for breachers and pointmen.
+  name: PM-23-霰弹枪
+  description: 为12号口径和23毫米霰弹枪弹壳设计。可容纳足够在近距离进行几次激烈交火的弹药。破门手和尖兵的必备之物。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/medium_shotshells.rsi
@@ -110,8 +110,8 @@
 - type: entity
   parent: RMCPouchTools
   id: RuMCUPPPouchTools
-  name: PM-66-Tools
-  description: A dedicated pouch for maintenance tools. Designed to hold screwdrivers, wrenches, cable coils, and a detachable hook for a light replacer. The mark of a field engineer.
+  name: PM-66-工具
+  description: 一个专用于维修工具的收纳袋。设计用于放置螺丝刀、扳手、线缆卷，以及一个用于灯管替换器的可拆卸挂钩。现场工程师的标志。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/tools.rsi
@@ -119,8 +119,8 @@
 - type: entity
   parent: RMCPouchDrumPMC
   id: RuMCUPPPouchDrum
-  name: PM-27-Drum
-  description: A heavy, reinforced pouch specifically designed to carry bulky drum magazines. Provides secure transport for large-capacity magazines, preventing them from clattering or catching on obstacles.
+  name: PM-27-鼓
+  description: 一个沉重、加固的袋子，专门用于携带笨重的弹鼓。为高容量弹匣提供安全运输，防止它们发出碰撞声或卡在障碍物上。
   components:
   - type: Tag
     tags:
@@ -160,8 +160,8 @@
 - type: entity
   parent: AU14PouchIFAK
   id: RuMCUPPPouchIFAK
-  name: PM-61-Medical
-  description: A field medical pouch with reinforced stitching. Holds bandages, hemostatic agents, and essential trauma supplies. Clearly marked for quick identification, keeping vital tools within arm's reach.
+  name: PM-61-医疗
+  description: 一个采用加固缝线的野战医疗包。可存放绷带、止血剂和基本创伤用品。标识清晰，便于快速识别，让关键工具触手可及。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/medical.rsi
@@ -200,8 +200,8 @@
 - type: entity
   parent: RuMCUPPPouchIFAK
   id: RuMCUPPPouchIFAKFill
-  name: PM-61-Medical
-  description: A field medical pouch with reinforced stitching. Holds bandages, hemostatic agents, and essential trauma supplies. Clearly marked for quick identification, keeping vital tools within arm's reach.
+  name: PM-61-医疗
+  description: 一个采用加固缝线的野战医疗包。可存放绷带、止血剂和基本创伤用品。标识清晰，便于快速识别，让关键工具触手可及。
   suffix: Filled
   components:
   - type: StorageFill
@@ -217,8 +217,8 @@
 - type: entity
   parent: RMCPouchFlare
   id: RuMCUPPPouchFlare
-  name: PM-44-Flare
-  description: A compact pouch for signal flares, smoke markers, and illumination devices. Keeps pyrotechnics safe from impact and moisture, ready for immediate deployment.
+  name: PM-44-信号弹
+  description: 一个用于信号弹、烟雾标记和照明装置的紧凑型弹药包。保护烟火器材免受冲击和潮湿影响，随时可立即使用。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/flare.rsi
@@ -233,7 +233,7 @@
     cooldownPopup: You need to wait before taking another flare!
     count: 16
     slot:
-      name: Flare
+      name: 耀斑
       whitelist:
         tags:
         - RuMCFlareRedCAS
@@ -242,8 +242,8 @@
 - type: entity
   parent: RuMCUPPPouchFlare
   id: RuMCUPPPouchFlareFill
-  name: PM-44-Flare
-  description: A compact pouch for signal flares, smoke markers, and illumination devices. Keeps pyrotechnics safe from impact and moisture, ready for immediate deployment.
+  name: PM-44-照明弹
+  description: 一个用于信号弹、烟雾标记和照明装置的紧凑型弹药包。保护烟火免受冲击和潮湿，随时可立即使用。
   suffix: Filled
   components:
   - type: CMItemSlots
@@ -252,7 +252,7 @@
     cooldownPopup: You need to wait before taking another flare!
     count: 16
     slot:
-      name: Flare
+      name: 耀斑
       whitelist:
         tags:
         - RuMCFlareRedCAS
@@ -261,8 +261,8 @@
 - type: entity
   parent: AU14PouchPistolAlt
   id: RuMCUPPPouchPistolAlt
-  name: PM-18-Pistol
-  description: A lightweight pouch for sidearm magazines and revolver speedloaders. Preferred by officers, vehicle crews, and anyone who values having a backup weapon fully loaded. Keeps its contents secure without unnecessary bulk.
+  name: PM-18手枪
+  description: 一个轻便的弹匣包，用于携带手枪弹匣和左轮快速装弹器。警官、车组人员以及任何重视备用武器满弹待命的人都会优先选用。在保持内容物安全的同时，不会带来多余的臃肿。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/pistol.rsi
@@ -301,8 +301,8 @@
 - type: entity
   parent: RMCPouchDocument
   id: RuMCUPPPouchDocument
-  name: PM-68-Document
-  description: It can contain papers, folders, disks, technical manuals, and clipboards.
+  name: PM-68-文件
+  description: 它可以包含文件、文件夹、磁盘、技术手册和剪贴板。
   components:
   - type: Sprite
     sprite: _RuMC14/Clothing/UPP/pouches/document.rsi

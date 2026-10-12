@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: M20a Pulse Rifle
+  name: M20a脉冲步枪
   id: AUWeaponRifleM20A
-  description: More commonly known as the Harrington Rifle, a past designation of the USCMC and the phased out predecessor of the M41A Pulse Rifle. More commonly seen in the hands of territorial guard or in colony armories for emergencies.
+  description: 更常见的叫法是哈林顿步枪，曾是USCMC的制式武器，也是M41A脉冲步枪淘汰的前身。更常见于领土卫队手中，或存放在殖民地军械库中以备紧急情况。
   suffix: Filled
   components:
   - type: Sprite
@@ -56,7 +56,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazineRifleM20A
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -92,7 +92,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineRifleM20A
-  name: "M20a Magazine (10x24mm)"
+  name: "M20a 弹匣（10x24mm）"
   components:
   - type: Tag
     tags:
@@ -120,8 +120,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: AU14CartridgeRifleM20A
-  name: Cartridge (10x24mm)
-  description: A 10x24mm rifle cartridge
+  name: 弹药（10x24毫米）
+  description: 一支10x24毫米步枪弹
   components:
   - type: Tag
     tags:
@@ -169,7 +169,7 @@
 - type: entity
   parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
   id: AU14AttachmentM20AUnderbarrelShotgun
-  name: M20A underbarrel shotgun
+  name: M20A下挂式霰弹枪
   components:
   - type: Sprite
     state: masterkeygone

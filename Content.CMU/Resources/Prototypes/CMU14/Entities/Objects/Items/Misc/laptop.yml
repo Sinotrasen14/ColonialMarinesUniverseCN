@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: AU14PropItemLaptop
-  name: Laptop
-  description: A portable computer.
+  name: 笔记本电脑
+  description: 一台便携式电脑。
   components:
   - type: Transform
     anchored: false
@@ -16,8 +16,8 @@
 - type: entity
   parent: RMCOverwatchConsoleGovfor
   id: AU14ItemLaptopOverwatchGOVFOR
-  name: Overwatch Laptop
-  description: A portable tactical computer for overwatching and monitoring friendly units.
+  name: 守望先锋笔记本电脑
+  description: 一台用于观察和监控友方单位的便携式战术计算机。
   suffix: GOVFOR
   components:
   - type: Transform
@@ -44,8 +44,8 @@
 - type: entity
   parent: RMCOverwatchConsoleOpfor
   id: AU14ItemLaptopOverwatchOPFOR
-  name: Overwatch Laptop
-  description: A portable tactical computer for overwatching and monitoring friendly units.
+  name: 守望先锋笔记本电脑
+  description: 一台用于观察和监视友方单位的便携式战术计算机。
   suffix: OPFOR
   components:
   - type: Transform
@@ -74,8 +74,8 @@
 - type: entity
   parent: AU14PropItemLaptop
   id: AU14ItemLaptopCallsignGOVFOR
-  name: comms net directory
-  description: A field terminal listing every station callsign on the faction net.
+  name: 通信网目录
+  description: 一个列出阵营网络中所有空间站呼号的现场终端。
   suffix: GOVFOR
   components:
   - type: Sprite

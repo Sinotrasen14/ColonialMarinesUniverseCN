@@ -1,8 +1,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenRest
   parent: ActionXenoBase
-  name: Rest
-  description: Lie down to regenerate health more quickly while on weeds. [color=red]Your rest keybind will also activate this action, Shift+R by default.[/color]
+  name: 休息
+  description: 躺在杂草上以更快恢复生命值。[color=red]你的休息快捷键也会激活此动作，默认是 Shift+R。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -18,7 +18,7 @@
 - type: entity
   id: CMU14ActionXenoPathogenWatch
   parent: ActionXenoBase
-  name: Watch Neomorph
+  name: 观察异形
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -33,8 +33,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenPheromones
   parent: ActionXenoBase
-  name: Emit Pheromones (35)
-  description: Gives a buff to nearby neomorph. [color=cyan]Consumes 2.5 plasma per second.[/color]
+  name: 释放信息素（35）
+  description: 给予附近的新形态体增益效果。[color=cyan]每秒消耗2.5点等离子。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -50,8 +50,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenHide
   parent: ActionXenoBase
-  name: Hide
-  description: Hide under tables and other objects.
+  name: 隐藏
+  description: 躲在桌子和其他物体下面。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -67,8 +67,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenToggleCrest
   parent: ActionXenoBase
-  name: Toggle Crest Defense
-  description: Increases your resistance to direct damage but slows you down. You count as one size bigger while your crest is lowered.
+  name: 切换纹章防御
+  description: 提高你对直接伤害的抗性，但会减慢你的速度。当你的冠饰降下时，你被视为大一个体型。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -84,8 +84,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenFortify
   parent: ActionXenoBase
-  name: Fortify
-  description: Become immobile and impassable to mobs, dramatically increasing your resistance to direct damage and explosions. Damage is further reduced from the direction you are facing. You can't be stunned by minor explosions. You count as two sizes bigger while fortified and still can attack structures or use tail slam.
+  name: 强化
+  description: 变为无法移动且生物无法穿过，大幅提高对直接伤害和爆炸的抗性。来自你面向方向的伤害进一步降低。你不会被小型爆炸击晕。加固期间你被视为大两个体型，并且仍然可以攻击建筑或使用尾击。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -101,14 +101,14 @@
 - type: entity
   id: CMU14ActionXenoPathogenFortifySteelcrest
   parent: CMU14ActionXenoPathogenFortify
-  name: Fortify
-  description: Become much slower, increasing your resistance to direct damage and explosions. Damage is greatly reduced from the direction you are facing. You count as two sizes bigger while fortified and still can attack structures or use tail slam, but your slashes do less damage.
+  name: 要塞化
+  description: 变得缓慢许多，提高你对直接伤害和爆炸的抗性。来自你面向方向的伤害大幅降低。防御姿态下你被视为大两个体型，仍然可以攻击建筑或使用尾击，但你的斩击伤害降低。
 
 - type: entity
   id: CMU14ActionXenoPathogenResinWalker
   parent: ActionXenoBase
-  name: Resin Walker (50)
-  description: Run faster on weeds. [color=cyan]Consumes 30 plasma per second.[/color]
+  name: 树脂行者（50）
+  description: 在杂草上跑得更快。[color=cyan]每秒消耗30等离子。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -124,7 +124,7 @@
 - type: entity
   id: CMU14ActionXenoPathogenZoom
   parent: ActionXenoBase
-  name: Toggle Long-Range Sight
+  name: 切换远距离视野
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -140,8 +140,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenWordQueen
   parent: ActionXenoBase
-  name: Word of the Overmind (50)
-  description: Sends a message to all members of your hive.
+  name: 主宰之语（50）
+  description: 向你的巢群所有成员发送一条消息。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -159,8 +159,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenPsychicWhisper
   parent: ActionXenoBase
-  name: Psychic Whisper
-  description: Whisper a psychic message to a nearby mind.
+  name: 灵能低语
+  description: 向附近的心灵低语一段灵能讯息。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -184,8 +184,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenPsychicRadiance
   parent: ActionXenoBase
-  name: Psychic Radiance (100)
-  description: Radiate a psychic message to nearby minds.
+  name: 灵能光辉（100）
+  description: 向附近的心灵散发精神信息。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -202,8 +202,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenGiveOrder
   parent: ActionXenoBase
-  name: Give Order (100)
-  description: Send a psychic order to the neomorph you are watching.
+  name: 下达命令（100）
+  description: 向你正在观察的异形发送一道灵能指令。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -220,8 +220,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenGrowOvipositor
   parent: ActionXenoBase
-  name: Grow Ovipositor (500)
-  description: Become immobile and start laying eggs which will produce children. Has a 5 minute cooldown. [color=red]You must be in ovipositor mode for other neomorphs to gain evolution points after round-start![/color]
+  name: 长出产卵管（500）
+  description: 变得无法移动并开始产卵，卵将产生后代。有5分钟冷却时间。[color=red]回合开始后，你必须处于产卵器模式，其他新形态才能获得进化点！[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -236,7 +236,7 @@
 - type: entity
   id: CMU14ActionXenoPathogenBanish
   parent: ActionXenoBase
-  name: Banish Neomorph
+  name: 放逐异形
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -252,7 +252,7 @@
 - type: entity
   id: CMU14ActionXenoPathogenReadmit
   parent: ActionXenoBase
-  name: Readmit Neomorph
+  name: 重新接纳异形
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -268,8 +268,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenDodge
   parent: ActionXenoBase
-  name: Dodge (200)
-  description: Gain a speed boost for 15 seconds and move through allies and enemies unimpeded. Your speed is doubled near standing enemies.
+  name: 闪避（200）
+  description: 获得15秒速度提升，并可无阻地穿过友军和敌人。在站立的敌人附近时，你的速度加倍。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -287,8 +287,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenBurrow
-  name: Burrow
-  description: Burrow underground preventing you from getting hit from all sources. Once burrowed click a tile to move to it and resurface after a doafter that depends on distance.
+  name: 潜地
+  description: 钻入地下，使你免受所有来源的攻击。钻入后，点击一个地块即可移动到该处，并在一个取决于距离的延迟后重新浮出地面。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -310,8 +310,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenSoak
-  name: Soak (20)
-  description: Soak in damage for 6 seconds. If you take 140 damage or higher, you regen 75 health and your tail slam gets refreshed.
+  name: 浸泡（20）
+  description: 浸泡在伤害中6秒。如果你受到140点或更高的伤害，你将恢复75点生命值，并且你的尾部猛击会刷新。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -328,14 +328,14 @@
 - type: entity
   parent: CMU14ActionXenoPathogenSoak
   id: CMU14ActionXenoPathogenCrusherSoak
-  name: Soak (20)
-  description: Brace yourself for incoming damage. If you absorb 240 damage within 6 seconds, heal 120 health and reset your tail stab cooldown. [color=red]If the threshold is not reached, the effect expires with no reward.[/color]
+  name: 浸泡（20）
+  description: 做好准备承受即将到来的伤害。如果你在6秒内吸收240点伤害，则恢复120点生命值并重置你的尾刺冷却时间。[color=red]如果未达到阈值，效果将失效且没有任何奖励。[/color]
 
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenEmpower
-  name: Empower (50)
-  description: On first activation, gain a small amount of shield. After 6 seconds or using it again, get empowered based on surrounding enemies (max 6), gaining shield from each. If you empowered from at least 3 targets, you become Super-Empowered, gaining additional damage on melee attacks, and changing how some of your other abilities work.
+  name: 赋能（50）
+  description: 首次激活时，获得少量护盾。6秒后或再次使用后，根据周围敌人（最多6个）获得强化，从每个敌人身上获得护盾。如果从至少3个目标处获得强化，你将进入超级强化状态，近战攻击获得额外伤害，并改变你其他一些技能的效果。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -351,8 +351,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenGenerateEggs
-  name: Generate Eggs (50)
-  description: Generate an egg every 30 seconds, which goes into your storage. [color=cyan]Consumes 15 plasma every 2 seconds.[/color]
+  name: 生成卵（50）
+  description: 每30秒生成一颗卵，进入你的储存空间。[color=cyan]每2秒消耗15等离子。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -367,8 +367,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenSelfImmolate
   parent: ActionXenoBase
-  name: Self-Immolate (50)
-  description: Ignite yourself and build heat for Heatshield abilities.
+  name: 自焚（50）
+  description: 点燃自身并积攒热量，用于热盾技能。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -387,8 +387,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenThermoregulation
   parent: ActionXenoBase
-  name: Thermoregulation (40)
-  description: Convert active flames into a short burst of speed, then extinguish yourself.
+  name: 温度调节（40）
+  description: 将活跃的火焰转化为短暂的爆发速度，然后熄灭自身。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -407,8 +407,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenStoreAcid
   parent: ActionXenoBase
-  name: Store Acid (150)
-  description: Store an acid charge, lowering your armor until the charge is spent to hasten an offensive acid ability.
+  name: 储存酸液（150）
+  description: 储存一次酸液充能，降低你的护甲，直到充能耗尽，以加速一个进攻性酸液技能。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -427,8 +427,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenEncasedPlates
   parent: ActionXenoBase
-  name: Encased Plates
-  description: Toggle a slower defensive stance with stronger frontal plates.
+  name: 包覆板
+  description: 切换至更缓慢的防御姿态，正面装甲板更强。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -445,8 +445,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenReflectiveShield
   parent: ActionXenoBase
-  name: Reflective Shield
-  description: Brace your plates to reflect incoming bullets for a short time.
+  name: 反射护盾
+  description: 绷紧护甲，在短时间内反射来袭的子弹。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -463,8 +463,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenSelectChemical
   parent: ActionXenoBase
-  name: Select Chemical
-  description: Select the chemical produced by your alchemist glands.
+  name: 选择化学药剂
+  description: 选择由你的炼金腺体产生的化学物质。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -480,8 +480,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenProduceChemical
   parent: ActionXenoBase
-  name: Produce Chemical (50)
-  description: Convert plasma into the selected alchemical stockpile.
+  name: 产生化学物质（50）
+  description: 将等离子转化为选定的炼金储备。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -500,8 +500,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenRemoveChemical
   parent: ActionXenoBase
-  name: Purge Chemical
-  description: Purge the selected alchemical stockpile.
+  name: 清除化学物质
+  description: 清除选定的炼金术储备。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -517,8 +517,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenCarrionMantle
   parent: ActionXenoBase
-  name: Carrion Mantle
-  description: Spend flesh resin to mantle yourself or a hivemate in hardened carrion.
+  name: 腐肉披风
+  description: 花费血肉树脂，为自己或一位巢友披上硬化腐肉。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -539,8 +539,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenOvermindChangeForm
   parent: ActionXenoBase
-  name: Change Form
-  description: Shift between incorporeal eye and manifested physical form.
+  name: 改变形态
+  description: 在无形之眼与显化实体形态之间切换。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -558,8 +558,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenTransferPlasma
   parent: ActionXenoBase
-  name: Transfer Plasma (50)
-  description: Give plasma to a nearby neomorph.
+  name: 转移等离子（50）
+  description: 给附近的异形注入等离子。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -576,8 +576,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenHealerDroneTransferPlasma
   parent: ActionXenoBase
-  name: Transfer Plasma (100)
-  description: Give plasma to a nearby neomorph.
+  name: 转移等离子（100）
+  description: 给附近的异形注射等离子。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -595,8 +595,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenTransferPlasmaHivelord
   parent: ActionXenoBase
-  name: Transfer Plasma (200)
-  description: Give plasma to a neomorph.
+  name: 转移等离子（200）
+  description: 给一个新生体提供等离子。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -614,8 +614,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenResinSurge
   parent: ActionXenoBase
-  name: Resin Surge (75)
-  description: Instantly grows a fruit when used (cooldown will be proportional to growth time), creates temporary walls when used on weeds or use on existing walls to reinforce them with 6000 hp for 15 seconds. Targeting anything else creates a 3x3 patch of weak sticky resin after a small doafter.
+  name: 树脂涌动（75）
+  description: 使用后立即长出一颗果实（冷却时间与生长时间成正比），对杂草使用时会生成临时墙壁，对现有墙壁使用则将其加固，获得6000点生命值，持续15秒。对任何其他目标使用会在短暂延迟后生成一片3x3的弱粘性树脂。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -641,8 +641,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenRetrieve
-  name: Retrieve (180 plasma, 100 fury)
-  description: Pulls a neomorph to you if they are still, with a 0.6 second doafter. You can't pull very big neomorphs unless they are downed.
+  name: 取回（180等离子，100狂怒）
+  description: 将一只新形态拉向你，前提是它静止不动，需要0.6秒的持续动作。除非目标已倒地，否则你无法拉动体型很大的新形态。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -666,8 +666,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenAidHeal
-  name: Aid Neomorph Healing (100 plasma, 100+ health reserves)
-  description: Heals a nearby ally Xeno. Healing another Xeno will also heal you, and half your remaining health reserves will be consumed for extra healing. [color=red]This can't heal ignited neomorphs![/color]
+  name: 援助新形态治疗（100等离子，100+生命储备）
+  description: 治疗附近的友方异形。治疗其他异形时也会治疗你自己，并消耗你剩余生命储备的一半以提供额外治疗。[color=red]这无法治疗已点燃的新形态异形！[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -694,8 +694,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenAidRejuvenate
-  name: Aid Neomorph Rejuvenate (100 plasma, 100 health reserves)
-  description: Remove ailments and stuns from a far away ally Xeno.
+  name: 帮助新生异形恢复活力（100等离子，100生命储备）
+  description: 从远处的友方异形身上移除病痛和眩晕。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -722,8 +722,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenLeader
-  name: Choose/Follow Neomorph Leaders
-  description: Promotes and demotes neomorph leaders, or watches them. Promoting a xeno to leader will make them emit your pheromones around themselves.
+  name: 选择/跟随新形态领袖
+  description: 提拔或降职新生异形领袖，或观察他们。将异形提拔为领袖将使其在自身周围散发你的信息素。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -739,8 +739,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenHeal
-  name: Heal Neomorph (600)
-  description: Heals neomorph in a 4 tile range around where you click for 30% of their health over 20 seconds.
+  name: 治疗新变体（600）
+  description: 治疗你点击位置周围4格范围内的异形，在20秒内恢复其30%的生命值。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -761,8 +761,8 @@
 - type: entity
   parent: CMU14ActionXenoPathogenTransferPlasma
   id: CMU14ActionXenoPathogenTransferPlasmaQueen
-  name: Give Plasma (400)
-  description: Remotely restores 75% of a single neomorph's max plasma.
+  name: 给予等离子（400）
+  description: 远程恢复单个新生异形最大等离子的75%。
   components:
   - type: Action
     useDelay: 12
@@ -779,8 +779,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenApplySalve
-  name: Apply Salve (200)
-  description: Apply a salve to use some of your health to heal allied Xenos up to 100 health over 5 seconds. You can stack multiple salves.
+  name: 涂抹药膏（200）
+  description: 涂抹药膏，消耗你的一部分生命值，在5秒内为友方异形恢复最多100点生命值。你可以叠加多个药膏。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -800,8 +800,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenSacrifice
-  name: Sacrifice
-  description: Sacrifice your life to heal a sister. [color=red]YOU WILL ONLY RESPAWN IF YOU MAXED OUT YOUR TRANSFERRED HEALTH BY HEALING SISTERS.[/color]
+  name: 献祭
+  description: 牺牲自己的生命来治疗一位姐妹。[color=red]只有当你通过治疗姐妹将转移的生命值补满时，你才会重生。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -822,8 +822,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenTailFountain
-  name: Tail Fountain
-  description: Extinguishes fire from a nearby ally or foe. Uses up your melee attack.
+  name: 尾泉
+  description: 扑灭附近盟友或敌人身上的火。消耗你的近战攻击。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -841,8 +841,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenTantrum
-  name: Tantrum (100 plasma, 75 fury)
-  description: Give an ally and yourself temporary armor for a few seconds, which lasts longer on you. Crushers and Ravagers get a speed boost instead.
+  name: 暴怒（100等离子，75狂怒）
+  description: 给予一名友方和你自己持续几秒的临时护甲，该效果在你身上持续更久。粉碎者和劫掠者改为获得速度提升。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -861,8 +861,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenFightOrFlight
-  name: Fight or Flight (300 plasma, 75 fury)
-  description: Remove ailments and stuns from all allies around you. The radius is longer if you have 75+ fury after paying the cost.
+  name: 战斗或逃跑（300等离子，75狂怒）
+  description: 移除你周围所有盟友的负面状态和眩晕。如果你在支付费用后拥有75点以上狂怒，半径会更大。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -882,8 +882,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenQueenEye
-  name: Enter Eye Form
-  description: Look around any area with weeds remotely. You can use infinite range abilities while in this form, and build resin from afar.
+  name: 进入眼形态
+  description: 在任意有杂草的区域远程观察。在此形态下，你可以使用无限范围的技能，并能从远处建造树脂。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -899,8 +899,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenSpikeShield
-  name: Spike Shield (150 shards)
-  description: Expend shards to gain a temporary shield that lasts for a short amount of time. Whenever the shield is damaged, spray bone shards around you in a 5x5 AoE centered on yourself. Shield lasts for 2 seconds.
+  name: 刺盾（150碎片）
+  description: 消耗碎片以获得一个持续短时间的临时护盾。每当护盾受到伤害时，以自身为中心在5x5范围内喷洒骨片。护盾持续2秒。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -918,8 +918,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenBulwarkOfTheHive
-  name: Bulwark Of The Hive
-  description: Grants all hivemembers around you a temporary shield that blocks 200 damage for 10 seconds. While their shield is up, hivemembers can only take damage up to 10% of their health at a time.
+  name: 虫巢壁垒
+  description: 为你周围的所有蜂群成员提供一个临时护盾，可阻挡200点伤害，持续10秒。当他们的护盾存在时，蜂群成员每次最多只能受到其生命值10%的伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -935,8 +935,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenDoom
-  name: Doom (50)
-  description: Turns off lights around you for 10 seconds, and slows, dazes, and drains hostiles as well.
+  name: 毁灭（50）
+  description: 关闭你周围的灯光，持续10秒，并使敌对目标减速、眩晕并吸取其能量。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -954,8 +954,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenVomitBile
   parent: ActionXenoBase
-  name: Vomit Bile (40)
-  description: Extinguishes a hivemate or sprays volatile bile at an enemy and across three rows in front of you. Ignites enemies while you are burning.
+  name: 呕吐胆汁（40）
+  description: 扑灭一名同巢成员，或向一名敌人及你前方三排喷洒挥发性胆汁。当你处于燃烧状态时，点燃敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -979,8 +979,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenFleshHarvest
   parent: ActionXenoBase
-  name: Flesh Harvest
-  description: Rip apart a permanently dead marine for flesh resin.
+  name: 血肉收割
+  description: 撕开一具永久死亡的陆战队员以获取血肉树脂。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1003,8 +1003,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenFleshBloom
   parent: ActionXenoBase
-  name: Flesh Bloom
-  description: Spend flesh resin to grow a telegraphed bloom that slows and poisons enemies while soothing the hive.
+  name: 血肉绽放
+  description: 消耗血肉树脂，培育一个带有预警提示的血肉绽放，它会减缓并毒害敌人，同时安抚蜂巢。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1026,8 +1026,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenTurnInvisible
   parent: ActionXenoBase
-  name: Turn Invisible (20)
-  description: Become partially invisible for 30 seconds, or until you either damage or attempt to devour an enemy. Can be toggled off to become visible again, with a refund of 90% remaining cloak time. Increases your movement speed by 15% until the ability expires.
+  name: 变为隐形（20）
+  description: 变为半隐形状态，持续30秒，或在伤害或试图吞噬敌人时解除。可以主动关闭以重新显形，并返还剩余隐形时间的90%。在技能失效前，你的移动速度提高15%。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1042,8 +1042,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenDefensiveShield
   parent: ActionXenoBase
-  name: Defensive Shield (50)
-  description: Encase yourself in a protective shield that absorbs 100 damage for 7 seconds. Reduces incoming damage by 8 per hit. Reflects enemy projectiles while active. [color=red]Grants brief explosion immunity on activation.[/color]
+  name: 防御护盾（50）
+  description: 将自己包裹在一层保护护盾中，在7秒内吸收100点伤害。每次受击时减少8点 incoming 伤害。激活期间反射敌方投射物。[color=red]激活时短暂获得爆炸免疫。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem

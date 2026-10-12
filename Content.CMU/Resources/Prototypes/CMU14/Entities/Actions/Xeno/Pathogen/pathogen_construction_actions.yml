@@ -1,8 +1,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenPlantWeeds
   parent: ActionXenoBase
-  name: Plant Weeds (75)
-  description: Plant a weed node that will spread more weeds.
+  name: 种植杂草（75）
+  description: 种植一个杂草节点，它会蔓延出更多杂草。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -22,8 +22,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenChooseStructure
   parent: ActionXenoBase
-  name: Choose Resin Structure
-  description: "Choose a structure to secrete with the 'Secrete Resin' action."
+  name: 选择树脂结构
+  description: "选择一种结构，以使用“分泌树脂”动作进行分泌。"
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -40,8 +40,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenSecreteStructure
   parent: ActionXenoBase
-  name: Secrete Resin
-  description: "Builds the structure chosen with the 'Choose Resin Structure' action."
+  name: 分泌树脂
+  description: "建造通过“选择树脂结构”行动选定的结构。"
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -67,8 +67,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenCoerceResin
   parent: ActionXenoBase
-  name: Coerce Resin
-  description: "Builds the structure chosen with the 'Choose Resin Structure' action. You may also build within line of sight if you are on weeds."
+  name: 胁迫树脂
+  description: "建造通过“选择树脂结构”行动选定的结构。如果你在杂草上，也可以在视线范围内建造。"
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -94,8 +94,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenOrderConstruction
   parent: ActionXenoBase
-  name: Order Construction
-  description: Starts construction of an important hive structure.
+  name: 建造指令
+  description: 开始建造一个重要的巢穴结构。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -111,8 +111,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenResinHole
   parent: ActionXenoBase
-  name: Plant Resin Hole (200)
-  description: Places a resin hole on weeds. It can be filled with boiler gas, acid, or parasites.
+  name: 植物树脂洞（200）
+  description: 在杂草上放置一个树脂洞。它可以被填充沸腾气体、酸液或寄生体。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -129,8 +129,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenFruitChoose
   parent: ActionXenoBase
-  name: Change Fruit
-  description: Choose a fruit to be planted with 'Plant Resin Fruit' action.
+  name: 更换水果
+  description: 选择一种水果，以便通过“种植树脂水果”行动进行种植。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -146,8 +146,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenFruitPlant
   parent: ActionXenoBase
-  name: Plant Resin Fruit (100)
-  description: Plant chosen resin fruit on weeds at the cost of health and plasma. Xenos can pick these fruits once they're mature, you can also pick a plant early to get rid of it. Xenos can use them in hand or eat them on the ground to gain their effects. They can also be used on other xenos to feed them. You can only have 6 fruits planted and picked at a time.
+  name: 植物树脂果实（100）
+  description: 在杂草上种植选定的树脂果实，消耗生命和等离子。异形可以在果实成熟后采摘，你也可以提前拔掉植物以清除它。异形可以在手中使用或在地上食用以获得效果。它们也可以用于其他异形来喂食。你同时只能种植和采摘6个果实。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -163,8 +163,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenPlantWeedsHardy
   parent: ActionXenoBase
-  name: Plant Hardy Weeds (125)
-  description: Plant a weed node that will spread hardier weeds, which grow fruit 25% faster, have slightly more health, and can be spread on some surfaces where normal weeds won't grow.
+  name: 种植耐寒杂草（125）
+  description: 种植一个杂草节点，它会传播更顽强的杂草，这些杂草结果速度提高25%，生命值略高，并且可以传播到一些普通杂草无法生长的表面上。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -182,8 +182,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenFruitPlantLesser
   parent: CMU14ActionXenoPathogenFruitPlant
-  name: Plant Resin Fruit (50)
-  description: Plant resin fruit on weeds at the cost of health and plasma.
+  name: 植物树脂果实（50）
+  description: 以消耗生命和等离子为代价，在杂草上种植树脂果实。
   components:
   - type: InstantAction
     event: !type:XenoFruitPlantActionEvent
@@ -192,8 +192,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenDigTunnel
   parent: ActionXenoBase
-  name: Dig Tunnel (200)
-  description: Dig a tunnel for speedy transportation across the hive.
+  name: 挖掘隧道（200）
+  description: 为蜂巢挖掘一条隧道，以便快速通行。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -217,8 +217,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenExpandWeeds
-  name: Expand Weeds (50)
-  description: Expand existing weeds or turn a weed tile into a node.
+  name: 扩张杂草（50）
+  description: 扩张现有杂草，或将一块杂草地块变为节点。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -240,8 +240,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenDesignerSelectedDesign
   parent: ActionXenoBase
-  name: Selected Design
-  description: Toggle whether newly placed design nodes are wall or door nodes.
+  name: 已选设计
+  description: 切换新放置的设计节点是墙壁节点还是门节点。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -262,8 +262,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenDesignerGreaterResinSurge
   parent: ActionXenoBase
-  name: Greater Resin Surge (250)
-  description: Consumes nearby design nodes to create temporary reflective resin walls.
+  name: 强效树脂涌流（250）
+  description: 消耗附近的设计节点，以创建临时的反射树脂墙。
   components:
   - type: Action
     itemIconStyle: NoItem

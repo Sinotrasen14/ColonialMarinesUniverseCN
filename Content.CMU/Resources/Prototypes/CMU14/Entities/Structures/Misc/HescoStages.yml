@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: AU14HescoKit
-  name: HESCO kit
-  description: A collapsible wire-mesh basket. Deploy it on the ground facing the direction you want it to face, then pack it with dirt using an entrenching tool.
+  name: 赫斯科套件
+  description: 一个可折叠的金属网篮。将其放置在地面上，朝向您希望它面对的方向，然后使用挖壕工具用泥土将其填满。
   components:
   - type: HescoKit
     builds: AU14HescoUnfilled1
@@ -15,8 +15,8 @@
 
 - type: entity
   id: AU14HescoUnfilled1
-  name: unfilled HESCO basket
-  description: An empty wire-mesh HESCO basket. It needs to be packed with dirt before it will do much of anything.
+  name: 未填充的HESCO网箱
+  description: 一个空铁丝网HESCO篮。需要装满泥土才能发挥作用。
   placement:
     mode: SnapgridCenter
   components:
@@ -62,8 +62,8 @@
 
 - type: entity
   id: AU14HescoUnfilled2
-  name: partially filled HESCO basket
-  description: A HESCO basket half-filled with dirt. It needs more before it becomes useful cover.
+  name: 部分填充的HESCO防爆墙
+  description: 一个半填满泥土的HESCO防爆篮。它需要更多泥土才能成为有用的掩体。
   placement:
     mode: SnapgridCenter
   components:
@@ -123,8 +123,8 @@
 
 - type: entity
   id: AU14HescoUnfilled3
-  name: mostly filled HESCO basket
-  description: A HESCO basket mostly filled with dirt. Almost ready to serve as cover.
+  name: 大部分填充的HESCO篮子
+  description: 一个几乎装满泥土的HESCO防爆墙篮。快可以作为掩体使用了。
   placement:
     mode: SnapgridCenter
   components:
@@ -184,8 +184,8 @@
 
 - type: entity
   id: AU14HescoShortComplete
-  name: HESCO barricade
-  description: A sand-filled HESCO basket. Sturdy cover, though still low enough to vault over. It can still be extended higher to become a wall.
+  name: HESCO防爆墙
+  description: 一个装满沙子的HESCO网箱。盖子结实，但高度仍足以翻越。它还可以继续加高，成为一堵墙。
   placement:
     mode: SnapgridCenter
   components:
@@ -256,8 +256,8 @@
 
 - type: entity
   id: AU14HescoTallBuilding1
-  name: raised HESCO basket
-  description: The HESCO basket has been raised higher, but still needs to be packed with more dirt before it will stop bullets or sightlines.
+  name: 高架HESCO防护篮
+  description: HESCO防爆墙篮已被加高，但仍需填充更多泥土，才能阻挡子弹或视线。
   placement:
     mode: SnapgridCenter
   components:

@@ -1,8 +1,8 @@
 - type: entity
   id: AU14AICoreMUTHURCivilian
   parent: AU14AICoreApolloCivilian
-  name: MU/TH/UR 6000 A.I.
-  description: This is the artificial intelligence system for monitoring the space ships, colonies or stations. It is manufactured by Weyland-Yutani.
+  name: MU/TH/UR 6000 人工智能
+  description: 这是用于监控飞船、殖民地或空间站的人工智能系统。它由Weyland-Yutani制造。
   suffix: AU14, Colony
   components:
   - type: NameModifier
@@ -11,8 +11,8 @@
 - type: entity
   id: AU14AICoreCPUMUTHUR
   parent: AU14AICoreCPU
-  name: MU/TH/UR 6000 A.I. CPU
-  description: This is MU/TH/UR's central processor. Made of a casing designed to withstand nuclear blasts, the CPU also contains MU/TH/UR's blackbox recorder.
+  name: MU/TH/UR 6000 人工智能中央处理器
+  description: 这是MU/TH/UR的中央处理器。其外壳设计可抵御核爆冲击，CPU内部还装有MU/TH/UR的黑匣子记录仪。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/AIStuff/aicoremachinery.rsi
@@ -24,19 +24,19 @@
 - type: entity
   id: AU14AICoreSubstrateMUTHUR
   parent: AU14AICoreSubstrate
-  name: MU/TH/UR 6000 A.I. Substrate
-  description: The memory substrate of MU/TH/UR, containing complex protocols and information. Limited capabilities can operate on substrate alone, without the main MU/TH/UR Unit operational.
+  name: MU/TH/UR 6000 人工智能基底
+  description: MU/TH/UR的记忆基底，包含复杂的协议和信息。有限的功能可以仅依靠基底运行，无需主MU/TH/UR单元运作。
 
 - type: entity
   parent: APOLLOAICoreProcessor
   id: MUTHURAICoreProcessor
-  name: MU/TH/UR 6000 A.I. Processor
-  description: An external processor for MU/TH/UR, used to process vast amounts of information.
+  name: MU/TH/UR 6000 人工智能处理器
+  description: 一个用于MU/TH/UR的外部处理器，用于处理海量信息。
 
 - type: entity
   parent: RMCAreaGA
   id: AU14AreaGAAIMUTHUR
-  name: MU/TH/UR 6000 A.I. Interface
+  name: MU/TH/UR 6000 人工智能接口
   components:
   - type: Sprite
     state: wylab
@@ -44,7 +44,7 @@
 - type: entity
   parent: CMChairComfyARES
   id: AU14ChairComfyAIMUTHUR
-  name: MU/TH/UR 6000 A.I. interface chair
+  name: MU/TH/UR 6000 人工智能接口椅
   suffix: AU14, MUTHUR
   components:
   - type: Sprite

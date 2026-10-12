@@ -7,9 +7,9 @@
 - type: entity
   parent: ConstructibleMachine
   id: CMUExhaustVent
-  name: EX-1 exhaust vent
+  name: EX-1排气口
   suffix: CMU
-  description: "One-way waste dump. Discharges line gas into open sky; needs a clear stack above. Screwdriver opens/closes. Multitool opens the panel; pry to deconstruct."
+  description: "单向废气排放口。将管路气体排入露天；上方需有畅通的排放烟囱。螺丝刀可打开/关闭。多功能工具可打开面板；撬开可拆除。"
   placement:
     mode: AlignAtmosPipeLayers
   components:
@@ -91,8 +91,8 @@
 
 - type: construction
   id: CMUExhaustVentRecipe
-  name: exhaust vent
-  description: A one-way waste dump that discharges line gas into open sky. Needs a clear stack above; screwdriver opens and closes it.
+  name: 排气口
+  description: 一个单向废气排放口，将管道气体排入露天环境。上方需要畅通的排放口；用螺丝刀打开和关闭。
   graph: CMUExhaustVentGraph
   startNode: start
   targetNode: built

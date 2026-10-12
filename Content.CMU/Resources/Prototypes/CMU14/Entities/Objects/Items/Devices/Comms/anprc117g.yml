@@ -2,16 +2,14 @@
   id: ANPRC117GRadio
   name: AN/PRC-117G
   description: >-
-    A ruggedized multiband manpack radio, the lifeline between a platoon in
-    the field and its command net. Heavy, over-engineered, and utterly
-    indispensable. Commonly carried by Radio Telephone Operators.
+    一台加固型多频段便携式无线电，是野战排与其指挥部通信网之间的生命线。沉重、过度设计，却不可或缺。通常由无线电电话操作员携带。
   parent: BaseItem
   components:
   - type: Sprite
     sprite: CMU14/Objects/Radio/anprc117g.rsi
     layers:
     - state: base
-      map: [ "base" ]
+      map: ["base"]
   # worn and in-hand art stays on the old pack rsi, the new rsi only carries
   # the ground states
   - type: Item
@@ -23,11 +21,11 @@
     visuals:
       enum.ANPRCPackVisuals.State:
         base:
-          Bare: { sprite: CMU14/Objects/Radio/anprc117g.rsi, state: base, offset: "0,0" }
-          Whip: { sprite: CMU14/Objects/Radio/anprc117g.rsi, state: base_w, offset: "0,0" }
-          Mast: { sprite: CMU14/Objects/Radio/anprc117g.rsi, state: base_m, offset: "0,0" }
-          DeployedWhip: { sprite: CMU14/Objects/Radio/anprc117g_deployed.rsi, state: whip_deploy, offset: "0,0.5" }
-          DeployedMast: { sprite: CMU14/Objects/Radio/anprc117g_deployed.rsi, state: mast_deploy, offset: "0,0.5" }
+          Bare: {sprite: CMU14/Objects/Radio/anprc117g.rsi, state: base, offset: "0,0"}
+          Whip: {sprite: CMU14/Objects/Radio/anprc117g.rsi, state: base_w, offset: "0,0"}
+          Mast: {sprite: CMU14/Objects/Radio/anprc117g.rsi, state: base_m, offset: "0,0"}
+          DeployedWhip: {sprite: CMU14/Objects/Radio/anprc117g_deployed.rsi, state: whip_deploy, offset: "0,0.5"}
+          DeployedMast: {sprite: CMU14/Objects/Radio/anprc117g_deployed.rsi, state: mast_deploy, offset: "0,0.5"}
   - type: ANPRCRadio
     activeSlot: -1
     enabled: true
@@ -75,12 +73,12 @@
   - type: ItemSlots
     slots:
       fill_card:
-        name: COMSEC fill card
+        name: 通信保密填充卡
         whitelist:
           components:
           - ANPRCFillCard
       antenna:
-        name: antenna
+        name: 天线
         whitelist:
           components:
           - ANPRCAntenna
@@ -190,10 +188,9 @@
 - type: entity
   parent: BaseItem
   id: AU14ANPRCHandset
-  name: AN/PRC-117G handset
+  name: AN/PRC-117G 手持机
   description: >-
-    A corded handset wired into an AN/PRC-117G manpack. The cord never
-    stretches quite as far as you need it to.
+    一根有线手持器接入AN/PRC-117G单兵背负电台。线缆永远拉不到你需要的那么远。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/phone.rsi
@@ -263,12 +260,10 @@
 - type: entity
   parent: ANPRC117GRadioCLFFilled
   id: AU14CLFBaseStation
-  name: clandestine base station
+  name: 秘密基地站
   suffix: CLF, Base Station
   description: >-
-    A base station cannibalised from colony survey gear and a stolen military set,
-    bolted into a crate that does not travel well. Too heavy to carry on your back,
-    long-legged enough to hold the cell together from wherever it is hidden.
+    一座由殖民地勘测设备与一套偷来的军用设备拼凑而成的基站，被螺栓固定在一只经不起运输的板条箱里。太重，无法背在背上；腿足够长，无论藏在哪里都能维持整个小组的联络。
   components:
   # no wearable slots: this only ever works planted, so it can be carried in hand to
   # a hiding spot and set up, but never worn as a manpack the way the RTO's set is
@@ -300,12 +295,12 @@
   - type: ItemSlots
     slots:
       fill_card:
-        name: COMSEC fill card
+        name: 通信保密填充卡
         whitelist:
           components:
           - ANPRCFillCard
       antenna:
-        name: antenna
+        name: 天线
         whitelist:
           components:
           - ANPRCAntenna
@@ -317,12 +312,10 @@
 - type: entity
   parent: BaseItem
   id: AU14CLFClandestineRelay
-  name: clandestine relay set
+  name: 秘密中继装置
   suffix: CLF, Cache Relay
   description: >-
-    A stripped transceiver board and a power cell taped into a scavenged field set, with
-    a reel of wire for an antenna. There are no controls on it worth the name - it
-    repeats what it is told to repeat and nothing else.
+    一块拆解过的收发器电路板和一个电源电池，用胶带固定在一台拼凑的野战设备里，还配有一卷用作天线的电线。上面没有任何像样的控制装置——它只会重复被告知要重复的内容，仅此而已。
   components:
   - type: Item
     size: Normal
@@ -335,7 +328,7 @@
     color: "#7a7a5a"
     layers:
     - state: walkietalkie
-      map: [ "base" ]
+      map: ["base"]
   - type: Appearance
   - type: ANPRCRadio
     operatorFaction: clf
@@ -370,12 +363,12 @@
   - type: ItemSlots
     slots:
       fill_card:
-        name: COMSEC fill card
+        name: 通信保密填充卡
         whitelist:
           components:
           - ANPRCFillCard
       antenna:
-        name: antenna
+        name: 天线
         whitelist:
           components:
           - ANPRCAntenna
@@ -391,8 +384,8 @@
 - type: entity
   parent: CMPaperWritten
   id: ANPRCNetLogPrintout
-  name: AN/PRC-117G net log printout
-  description: A strip of thermal paper spat out of a radio's log printer. Smudges if you handle it too much.
+  name: AN/PRC-117G网络日志打印输出
+  description: 一张热敏纸从无线电的记录打印机里吐出来。摸得太多会弄花。
   components:
   - type: Item
     size: Small
@@ -401,8 +394,8 @@
 
 - type: entity
   id: AU14ActionANPRCPhone
-  name: AN/PRC-117G phone
-  description: Call another station on the handset. Answers a ringing set, or hangs up a call in progress.
+  name: AN/PRC-117G 电话
+  description: 用手持机呼叫另一个空间站。接听响铃的设备，或挂断正在进行的通话。
   components:
   - type: Action
     itemIconStyle: NoItem

@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCBaseArmor
   id: AU14BaseArmorLight
-  name: Example
-  description: Example
+  name: 示例
+  description: 示例
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/standard/padded/jungle.rsi
@@ -86,8 +86,8 @@
 - type: entity
   parent: RMCBaseArmor
   id: AU14BaseArmorVest # For shitty armor, f.e. 6B80 of UPP's reservists
-  name: Example
-  description: Example
+  name: 示例
+  description: 示例
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Armor/m3/standard/padded/jungle.rsi
@@ -104,7 +104,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorM3JungleOne
-  name: M3 pattern jungle smooth USCM armor
+  name: M3型丛林光滑USCM装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/JungleArmor/uscmarmorone.rsi
@@ -112,7 +112,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorM3JungleTwo
-  name: M3 pattern jungle ribbed USCM armor
+  name: M3型丛林罗纹USCM装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/JungleArmor/uscmarmortwo.rsi
@@ -120,7 +120,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorM3JungleThree
-  name: M3 pattern jungle dimpled USCM armor
+  name: M3型丛林迷彩凹陷USCM装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/JungleArmor/uscmarmorthree.rsi
@@ -128,7 +128,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorM3DesertOne
-  name: M3 pattern desert smooth USCM armor
+  name: M3型沙漠光滑USCM装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/DesertArmor/uscmarmorone.rsi
@@ -136,7 +136,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorM3DesertTwo
-  name: M3 pattern desert ribbed USCM armor
+  name: M3型沙漠肋纹USCM装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/DesertArmor/uscmarmortwo.rsi
@@ -144,7 +144,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorM3DesertThree
-  name: M3 pattern desert dimpled USCM armor
+  name: M3型沙漠迷彩凹纹USCM装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/DesertArmor/uscmarmorthree.rsi
@@ -152,7 +152,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorM3UACG
-  name: M3 pattern colonial guard armor
+  name: M3型殖民地卫队装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/uacgarmor.rsi
@@ -160,8 +160,8 @@
 - type: entity
   parent: AU14BaseArmorLight
   id: AU14ArmorBallisticVest
-  description: A light ballistic vest.
-  name: ballistic vest
+  description: 一件轻型防弹背心。
+  name: 防弹背心
   components:
   - type: Sprite
     sprite: CMU14/Clothing/ballisticarmor.rsi
@@ -169,8 +169,8 @@
 - type: entity
   parent: AU14BaseArmorLight
   id: AU14ArmorPilotFlakJacket
-  name: aircrew flak jacket
-  description: A light flak jacket designed for USCM aircrew. Provides very little protection.
+  name: 空勤防弹衣
+  description: 一款为USCM空勤人员设计的轻型防弹背心。提供的防护非常有限。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/pilotflakvest.rsi
@@ -178,8 +178,8 @@
 - type: entity
   parent: [ RMCAllowSuitStorageClothingSmartgunner, AU14BaseArmor ]
   id: AU14ArmorSmartGunDesertCombatHarness
-  name: M56 Desert Combat Harness
-  description: An M56 Combat Harness specially made for Smartgunners.
+  name: M56沙漠作战背带
+  description: 一件专为智能枪手制作的M56战斗背带。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/DesertArmor/uscmarmorsmartgunner.rsi
@@ -198,8 +198,8 @@
 - type: entity
   parent: [ RMCAllowSuitStorageClothingSmartgunner, AU14BaseArmor ]
   id: AU14ArmorSmartGunJungleCombatHarness
-  name: M56 Jungle Harness
-  description: An M56 Combat Harness specially made for Smartgunners.
+  name: M56丛林背带
+  description: 一件专为智能枪手特制的M56战斗背带。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/JungleArmor/uscmarmorsmartgunner.rsi
@@ -218,8 +218,8 @@
 - type: entity
   parent: [ClothingOuterStorageBase, RMCAllowSuitStorageClothingExternalWebbing]
   id: AU14ExternalWebbing
-  name: external webbing
-  description: Designed to be worn over a jumpsuit rather than clipped on.
+  name: 外部织带
+  description: 设计为穿在连身衣外，而非夹扣式。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/external_webbing.rsi
@@ -239,8 +239,8 @@
 - type: entity
   parent: AU14ExternalWebbing
   id: AU14ScoutWebbing
-  name: Light scout webbing
-  description: Designed to be worn over a jumpsuit rather than clipped on, special cut and fitted for scout operations with increased storage and some armor.
+  name: 轻型侦察网带
+  description: 专为侦察行动设计的特殊剪裁，穿在连身衣外而非夹扣固定，增加了储物空间并配备了一些护甲。
   components:
   - type: Storage
     maxItemSize: Small
@@ -259,8 +259,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: AU14USASFICPS2
-  name: USASF ICPS-2 Aircrew Armor
-  description: A set of ballistic armor used by USASF aircrew with an attached oxygen tank.
+  name: USASF ICPS-2 空勤人员装甲
+  description: 一套美国空军特种部队空勤人员使用的防弹装甲，附带氧气瓶。
   components:
   - type: ActivatableUI
     key: enum.SharedGasTankUiKey.Key
@@ -296,8 +296,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor, RMCHelmetBase]
   id: foldabletestarmor
-  name: USASF ICPS-2 Aircrew Armor
-  description: A set of ballistic armor used by USASF aircrew.
+  name: USASF ICPS-2 空勤人员装甲
+  description: 一套美国空军特种作战航空兵机组人员使用的防弹装甲。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/USASFSecurityForces/USASFPilot/armor.rsi
@@ -388,8 +388,8 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorGhillie
-  name: M45 pattern jungle ghillie armor
-  description: A lightweight ghillie camouflage suit, used by UA snipers on recon missions. Very lightweight, but doesn't protect much.
+  name: M45型丛林伪装服装甲
+  description: 一件轻便的吉利伪装服，乌克兰狙击手在侦察任务中使用。非常轻便，但防护性不强。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/USCMC/Armor/ghillie.rsi
@@ -419,8 +419,8 @@
   parent: AU14BaseArmorVest
   id: AU14ArmorUSArmy
   suffix: Survivor
-  name: Personal Body Armor System
-  description: The Personnel Body Armor System is the standard issue armor of the US Army, adopted over the M4 series pattern armor during field trials. Surprisingly uncomfortable, but offering far superior protection to the M3 or M4 series armor. At four times the price.
+  name: 单兵防弹衣系统
+  description: 单兵防弹系统是美军的标准配发护甲，在实地测试中取代了M4系列样式护甲。令人意外地不舒适，但防护能力远超M3或M4系列护甲。价格也是它们的四倍。
   components:
   - type: ContainerContainer
     containers:
@@ -444,8 +444,8 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorUSArmyNormal
-  name: Personal Body Armor System
-  description: The Personnel Body Armor System is the standard issue armor of the US Army, adopted over the M4 series pattern armor during field trials. Surprisingly uncomfortable, but offering far superior protection to the M3 or M4 series armor. At four times the price.
+  name: 个人防弹衣系统
+  description: 单兵防弹衣系统是美军的标准配发护甲，在实地测试中取代了M4系列图案护甲。令人意外地不舒适，但防护能力远超M3或M4系列护甲。价格也是它们的四倍。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/US_Army/Armor/armor.rsi
@@ -453,8 +453,8 @@
 - type: entity
   parent: CMArmorM3VLSynth
   id: AU14ArmorUSArmySynth
-  name: Synthetic Body Armor System
-  description: This is a variant of the Personnel Body Armor System, it has been modified extensively to be used by US Army Synthetics. It offers light protection, maximum mobility and more internal storage than its USCM counterpart. The cost of this item could outfit an entire squad of USCM Marines, but you are worth this cost.
+  name: 合成身体装甲系统
+  description: 这是人员护甲系统的一种变体，经过大幅改装以供美国陆军合成人使用。它提供轻量防护、最大机动性，以及比USCM同类装备更多的内部存储空间。这件装备的成本足以装备一整支USCM陆战队员小队，但你的价值配得上这个代价。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/US_Army/Armor/synth.rsi
@@ -465,7 +465,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorM3RForecon
-  name: M3-R pattern light armor
+  name: M3-R型轻型装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/USCMC/Armor/forecon.rsi
@@ -476,7 +476,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14CamoArmorM3Smooth
-  name: M3 pattern smooth USCM armor
+  name: M3型光滑USCM装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/JungleArmor/uscmarmorone.rsi
@@ -491,7 +491,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14CamoArmorM3Ribbed
-  name: M3 pattern ribbed USCM armor
+  name: M3型罗纹USCM装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/JungleArmor/uscmarmortwo.rsi
@@ -506,7 +506,7 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14CamoArmorM3Dimpled
-  name: M3 pattern dimpled USCM armor
+  name: M3型凹点USCM装甲
   components:
   - type: Sprite
     sprite: CMU14/Clothing/JungleArmor/uscmarmorthree.rsi
@@ -521,8 +521,8 @@
 - type: entity
   parent: [ RMCAllowSuitStorageClothingSmartgunner, AU14BaseArmor ]
   id: AU14CamoArmorSmartGunCombatHarness
-  name: M56 Combat Harness
-  description: An M56 Combat Harness specially made for Smartgunners.
+  name: M56战斗背带
+  description: 为智能枪手特制的M56战斗背带。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/JungleArmor/uscmarmorsmartgunner.rsi
@@ -548,8 +548,8 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14ArmorCBRN
-  name: CBRN M3-M armor
-  description: While lacking the appearance of the M3 pattern armor worn in regular service, this armor piece is still a derivative of it. It has been heavily modified to fit over the MOPP suit with additional padding and Venlar composite layers removed, so as not to restrict the wearer’s movement. However, with the reduction of composite layers, the personal protection offered is less than desired with complaints having been lodged since 2165.
+  name: CBRN M3-M装甲
+  description: 虽然外观上不像常规服役中穿着的M3型装甲，这件护甲仍是其衍生型号。它经过了大幅改装，以便套在MOPP防护服外，移除了额外的衬垫和Venlar复合层，以免限制穿着者的活动。然而，由于复合层减少，所提供的个人防护效果不尽如人意，自2165年以来一直有投诉。
   suffix: AU14
   components:
   - type: CMArmor

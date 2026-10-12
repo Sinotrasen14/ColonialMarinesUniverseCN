@@ -2,8 +2,8 @@
   parent: [ CMBaseWeaponGun, BaseItem]
   id: RuMCMachineGunUTES-C
   categories: [ HideSpawnMenu ]
-  name: UTES-C heavy machine gun
-  description: UPP 12.7x108mm heavy machine gun. If you're carrying this without a tripod, you hate your back. If you're shooting it with a tripod, you hate the enemy.
+  name: UTES-C重机枪
+  description: UPP 12.7×108毫米重机枪。如果你不带三脚架扛着它，那你是在跟自己的背过不去。如果你架在三脚架上射击，那你是在跟敌人过不去。
   components:
   - type: Item
     size: Huge
@@ -65,7 +65,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         priority: 2
@@ -112,8 +112,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RuMCMagazineUTES-C
-  name: Box of UTES-C ammunition (12.7x108 mm steel-core cartridges)
-  description: Box of 110 12.7x108 mm armor-piercing cartridges for the UTES-C heavy machine gun.
+  name: 一盒UTES-C弹药（12.7×108毫米钢芯弹）
+  description: 一盒110发12.7×108毫米穿甲弹，用于UTES-C重机枪。
   components:
   - type: Tag
     tags:
@@ -139,8 +139,8 @@
 - type: entity
   parent: RuMCMagazineUTES-C
   id: RuMCMagazineUTES-CTracter
-  name: Box of UTES-C ammunition (12.7x108 mm armor-piercing tracer cartridges)
-  description: A box with 110 12.7x108 mm armor-piercing tracer rounds for the UTES-S heavy machine gun.
+  name: 一盒UTES-C弹药（12.7×108毫米穿甲曳光弹）
+  description: 一个装有110发12.7×108毫米UTES-S重机枪穿甲曳光弹的弹药箱。
   components:
   - type: Tag
     tags:
@@ -174,7 +174,7 @@
 - type: entity
   parent: RuMCCartridgeHMG127x108mm
   id: RuMCCartridgeHMG127x108mmTracer
-  name: 12.7x108mm Tracer
+  name: 12.7x108mm曳光弹
   components:
   - type: CartridgeAmmo
     proto: RuMCBulletHMG127x108mmTracer
@@ -187,7 +187,7 @@
 - type: entity
   parent: CMBulletBase
   id: RuMCBulletHMG127x108mm
-  name: bullet (12.7x108mm)
+  name: 子弹（12.7x108mm）
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -227,7 +227,7 @@
 - type: entity
   parent: RuMCBulletHMG127x108mm
   id: RuMCBulletHMG127x108mmTracer
-  name: bullet (12.7x108mm Tracer)
+  name: 子弹（12.7x108mm曳光弹）
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight

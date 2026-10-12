@@ -2,8 +2,8 @@
   id: CMUFactionRosterConsoleBase
   abstract: true
   parent: RMCCommunicationsConsoleBase
-  name: personnel roster console
-  description: A terminal that pulls dossiers on personnel affiliated with a particular faction.
+  name: 人员名册控制台
+  description: 一台用于调取某一特定派系相关人员档案的终端。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
@@ -22,8 +22,8 @@
 - type: entity
   id: CMUGovforRosterConsole
   parent: CMUFactionRosterConsoleBase
-  name: GOVFOR personnel console
-  description: Lists GOVFOR personnel dossiers.
+  name: 政府军人员控制台
+  description: 列出GOVFOR人员档案。
   suffix: GOVFOR
   components:
   - type: FactionRosterConsole
@@ -32,8 +32,8 @@
 - type: entity
   id: CMUOpforRosterConsole
   parent: CMUFactionRosterConsoleBase
-  name: OPFOR personnel console
-  description: Lists OPFOR personnel dossiers.
+  name: 敌方人员控制台
+  description: 列出敌方人员档案。
   suffix: OPFOR
   components:
   - type: FactionRosterConsole
@@ -42,8 +42,8 @@
 - type: entity
   id: CMUColonyRosterConsole
   parent: CMUFactionRosterConsoleBase
-  name: colony resident console
-  description: Lists colony resident dossiers.
+  name: 殖民地居民控制台
+  description: 列出殖民地居民档案。
   suffix: Colony
   components:
   - type: FactionRosterConsole

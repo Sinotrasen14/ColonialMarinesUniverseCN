@@ -2,7 +2,7 @@
   abstract: true
   parent: RuMCIRPComponentBase
   id: RuMCIRPDesertComponentBase
-  description: Упаковочка для сладкого.
+  description: 甜食的包装。
   components:
   - type: Sprite
     state: pack_desert
@@ -10,8 +10,8 @@
 - type: entity
   parent: RuMCIRPDesertComponentBase
   id: RuMCIRPComponentCandies
-  name: fruit candies pouch
-  description: A sealed pouch containing brightly colored fruit candies. A small piece of home on the battlefield.
+  name: 水果糖果袋
+  description: 一个密封袋，里面装着色彩鲜艳的水果糖。战场上一小片家的味道。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -20,8 +20,8 @@
 - type: entity
   parent: RuMCIRPDesertComponentBase
   id: RuMCIRPComponentCandiesToffees
-  name: toffees pouch
-  description: A sealed pouch of chewy, sticky toffees. A real test for your dental work in the field.
+  name: 太妃糖袋
+  description: 一袋密封的耐嚼、黏牙的太妃糖。在野外，这可是对你补牙材料的真正考验。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -30,8 +30,8 @@
 - type: entity
   parent: RuMCIRPDesertComponentBase
   id: RuMCIRPComponentChocolateCurd
-  name: chocolate curd pouch
-  description: A sealed pouch containing a sweet chocolate-covered curd dessert. Melts in your mouth, not in the ration pack.
+  name: 巧克力凝乳袋
+  description: 一个密封袋，里面装着巧克力包裹的甜味凝乳甜点。只融在口，不融在口粮包里。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -40,8 +40,8 @@
 - type: entity
   parent: RuMCIRPDesertComponentBase
   id: RuMCIRPComponentChocolate
-  name: chocolate bar pouch
-  description: A sealed pouch containing standard-issue field chocolate. A small comfort in the chaos of combat.
+  name: 巧克力棒袋
+  description: 一个密封袋，里面装着标准配给的野战巧克力。在混乱的战斗中带来一丝慰藉。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -50,8 +50,8 @@
 - type: entity
   parent: RuMCIRPDesertComponentBase
   id: RuMCIRPComponentHematogen
-  name: hematogen bar pouch
-  description: A sealed pouch containing a nutrient-rich bar based on bovine blood. An acquired taste, but excellent for restoring strength in the field.
+  name: 血源糕条包装袋
+  description: 一个密封袋，内装以牛血为基底的营养棒。味道需要慢慢适应，但在野外恢复体力效果极佳。
   components:
   - type: SpawnItemsOnUse
     items:

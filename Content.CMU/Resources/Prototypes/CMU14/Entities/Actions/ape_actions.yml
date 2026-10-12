@@ -1,8 +1,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionApeLeap
-  name: Leap
-  description: Jump towards a given location and knock down the first enemy hit.
+  name: 跃迁
+  description: 向指定位置跳跃，并击倒第一个命中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -22,8 +22,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionApeDestroy
-  name: Destroy
-  description: After a short time, jump to the targeted location, destroying structures and gibbing hostiles within a 3x3 range. Works over barricades and other short barriers.
+  name: 摧毁
+  description: 片刻后，跳向目标位置，摧毁3x3范围内的建筑并肢解敌人。可越过路障和其他矮墙。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -43,8 +43,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionApeCharge
-  name: Charge
-  description: Ape-specific charge. Click on a tile to wind up and charge to it, stunning and damaging foes hit.
+  name: 冲锋
+  description: 猿类专属冲锋。点击一个地块蓄力并冲锋至该处，眩晕并伤害被击中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -64,8 +64,8 @@
 - type: entity
   parent: ActionXenoFling
   id: ActionApeRam
-  name: Ram
-  description: Ape-specific ram. Target an enemy to ram them, costing a small amount of plasma.
+  name: 公羊
+  description: 猿类专属冲撞。瞄准一名敌人进行冲撞，消耗少量等离子。
   components:
   - type: Action
     useDelay: 10
@@ -83,8 +83,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionApeHeadbite
-  name: Headbite
-  description: Ape-specific headbite that applies the headbite effect to unconscious targets.
+  name: 头咬
+  description: 猿类专用啃咬头部，对失去意识的目标施加啃咬头部效果。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -106,8 +106,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionApeLimbRip
-  name: Rip Limb
-  description: Tear a limb off a dead body. Limbs make fine throwing material.
+  name: 撕下肢体
+  description: 从尸体上撕下一条肢体。肢体是很好的投掷材料。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -128,8 +128,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionApeHurl
-  name: Hurl Debris
-  description: Rip out a chunk of debris and hurl it at the target. Hits hard, stuns mobs, damages barricades, and reaches the z-level above.
+  name: 投掷碎屑
+  description: 扯下一块碎片，用力掷向目标。攻击力强，可使怪物眩晕，能破坏路障，并可攻击到上一z层。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -148,8 +148,8 @@
 - type: entity
   parent: BaseItem
   id: CMUApeDebrisRock
-  name: hurled debris
-  description: A hefty chunk of rock, torn from the ground by something very strong.
+  name: 抛掷的碎石
+  description: 一块沉重的岩石，被某种非常强大的力量从地面撕扯下来。
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

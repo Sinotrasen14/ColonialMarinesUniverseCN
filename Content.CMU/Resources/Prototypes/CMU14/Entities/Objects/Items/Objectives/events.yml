@@ -2,8 +2,8 @@
 - type: entity
   parent: RMCCrateSupply
   id: CMUCrateAegisLobby
-  name: AEGIS tracking equipment crate (x3 pinpointers, x1 pamphlet)
-  description: A supply crate containing AEGIS ID tracking equipment and documentation.
+  name: “神盾”追踪设备板条箱（3个定位器，1本手册）
+  description: 一个货运部板条箱，内含AEGIS ID追踪设备和文件。
   components:
   - type: StorageFill
     contents:
@@ -25,20 +25,20 @@
 - type: entity
   parent: RMCAegisSpawner
   id: CMUAegisSpawner
-  name: AEGIS abomb spawn
+  name: AEGIS 核弹生成
   suffix: CMU, Add to Warship/Planet
 
 - type: entity
   parent: RMCAegisCorpseSpawner
   id: CMUAegisCorpseSpawner
-  name: AEGIS corpse spawn - Scientist
+  name: AEGIS尸体生成 - 科学家
   suffix: CMU, Id Unlocks AEGIS
 
 # Warhead
 - type: entity
   parent: RMCOrbitalCannonWarheadAegis
   id: CMUOrbitalCannonWarheadAegis
-  description: "AEG-538-KRA, or KRAKEN, an experimental phoron-based orbital warhead, straight from the R&D Division of AEGIS. Designed to be used against targets where a single orbital warhead is simply not enough."
+  description: "AEG-538-KRA，即KRAKEN，一种实验性基于phoron的轨道弹头，直接来自AEGIS的研究与开发部。设计用于对付单个轨道弹头远远不够的目标。"
   name:  AEG-538-KRA
   suffix: CMU
   components:
@@ -54,7 +54,7 @@
 - type: entity
   parent: MarkerBase
   id: CMUOrbitalCannonExplosionAegis
-  name: insane explosive Aegis OB explosion
+  name: 疯狂的爆炸性宙斯盾OB爆炸
   suffix: CMU, FIRES AN OB!!!
   components:
   - type: OrbitalCannonExplosion

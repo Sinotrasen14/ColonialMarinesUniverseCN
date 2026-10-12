@@ -1,19 +1,19 @@
 - type: entity
   parent: RMCPortableVendor
   id: CMU14PortableVendorProdigy
-  name: Prodigy automated storage briefcase
-  description: A suitcase-sized automated storage and retrieval system. Designed to efficiently store and selectively dispense small items. This one has the Prodigy logo stamped on its side.
+  name: Prodigy自动存储公文包
+  description: 一个手提箱大小的自动化存取系统。设计用于高效存储并选择性地分发小件物品。这一台的侧面印有Prodigy标志。
   components:
   - type: CMAutomatedVendor
     jobs:
     - CMU14JobCivilianProdigyLiaison
     sections:
-    - name: Incentives
+    - name: 激励措施
       entries:
       - id: RMCSpaceCash1000
-        name: $1000 USD, unmarked bills
+        name: 1000美元，不连号钞票
         points: 20
-    - name: Smokables
+    - name: 可抽吸物
       entries:
       - id: AU14CigarettePackBalajj
         points: 5
@@ -27,7 +27,7 @@
         points: 5
       - id: RMCZippoGold
         points: 5
-    - name: Drinkables
+    - name: 饮品
       entries:
       - id: RMCDrinkAlcoholPurpleWine
         points: 5
@@ -39,7 +39,7 @@
         points: 5
       - id: RMCDrinkGlass
         points: 1
-    - name: Stationary
+    - name: 固定的
       entries:
       - id: CMPenFountain
         points: 1
@@ -47,14 +47,14 @@
         points: 1
       - id: CMClipboard
         points: 1
-    - name: Misc
+    - name: 杂项
       entries:
       - id: RMCHollowCane
-        name: hollow cane
+        name: 空心手杖
         points: 10
       - id: CMU14ProdigyLawyerBeacon
         points: 5
-    - name: Clothing
+    - name: 服装
       entries:
       - id: CMU14ProdigySuitBlackSkirt
         points: 5
@@ -72,7 +72,7 @@
         points: 1
       - id: AU14ProdigyCap
         points: 1
-    - name: Weapons & Ammo
+    - name: 武器与弹药
       entries:
       - id: CMU14WeaponPistolGlock75Taser
         points: 40
@@ -82,7 +82,7 @@
         points: 10
       - id: CMU14MagazinePistolGlock75Rubber
         points: 5
-    - name: Radio keys
+    - name: 无线电按键
       entries:
       - id: CMEncryptionKeyColony
         points: 5

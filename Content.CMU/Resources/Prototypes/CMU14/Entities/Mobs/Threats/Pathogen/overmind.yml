@@ -2,8 +2,8 @@
   abstract: true
   parent: CMU14XenoPathogenMatureBase
   id: CMU14XenoOvermindBase
-  name: Overmind
-  description: The mind that connects the Confluence. You are everywhere and nowhere.
+  name: 主宰
+  description: 连接汇流的意识。你无处不在，又无处可寻。
   components:
   - type: GhostRole
     name: cmu-job-name-pathogen-overmind
@@ -193,24 +193,24 @@
 - type: entity
   parent: CMU14XenoOvermindBase
   id: CMU14XenoOvermind
-  name: Overmind
+  name: 主宰
 
 - type: entity
   id: CMU14XenoOvermindEyeOrder
   parent: CMU14XenoOvermindBase
-  name: Overmind
+  name: 主宰
   categories: [ HideSpawnMenu, DoNotMap ]
 
 - type: entity
   id: CMU14XenoOvermindPhysicalOrder
   parent: CMU14XenoOvermindBase
-  name: Overmind
+  name: 主宰
   categories: [ HideSpawnMenu, DoNotMap ]
 
 - type: entity
   parent: StationAiHolo
   id: CMU14XenoOvermindEye
-  name: overmind eye
+  name: 主脑之眼
   categories: [ HideSpawnMenu, DoNotMap ]
   components:
   - type: Sprite

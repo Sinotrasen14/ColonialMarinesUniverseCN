@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: XM20A2 Pulse Rifle
+  name: XM20A2脉冲步枪
   id: AUWeaponRifleXM20A2HAZOPS
-  description: Devolped as a possible successor to the M20A Harrington rifle, the XM20A2 never entered full service in the USCM and was succeeded by the M41. This heavily modified variant is issued to HAZOPS to bolster their mid-long range capablites. Big magazine, and big firerate, but the drum magazines can't load anything other than standard 10x24mm, and the rails can't mount modern attachments.
+  description: 作为M20A哈林顿步枪的可能后继型号而研发，XM20A2从未在美国殖民海军陆战队中全面服役，并被M41所取代。这种经过大幅改装的变体被配发给HAZOPS，以增强他们的中远距离作战能力。大弹匣，高射速，但弹鼓只能装填标准10x24mm弹药，且导轨无法安装现代配件。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/HAZOPS/XM20A246x32.rsi
@@ -48,7 +48,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazineRifleXM20A2
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -65,7 +65,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineRifleXM20A2
-  name: XM20A2 magazine (10x24mm)
+  name: XM20A2 弹匣（10x24mm）
   components:
   - type: Tag
     tags:
@@ -89,6 +89,6 @@
   - type: Appearance
   - type: RefillableByBulletBox
     bulletType: RMCBoxBulletsRifle
-    
+
 - type: Tag
   id: AU14MagazineRifleXM20A2

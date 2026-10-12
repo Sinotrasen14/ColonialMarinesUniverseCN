@@ -4,8 +4,8 @@
   parent: RubberStampBase
   id: AU14StampBase
   abstract: true
-  name: rubber stamp
-  description: A rubber stamp for stamping important documents.
+  name: 橡皮图章
+  description: 一枚用于在重要文件上盖章的橡皮图章。
   components:
   - type: Item
     heldPrefix: stamp
@@ -21,7 +21,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampAO
-  name: adjutant's rubber stamp
+  name: 副官的橡皮图章
   components:
   - type: Sprite
     state: stamp-hop
@@ -33,7 +33,7 @@
 - type: entity
   parent: AU14StampAO
   id: AU14StampCO
-  name: commanding officer's rubber stamp
+  name: 舰长的橡皮图章
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-au14-co
@@ -41,7 +41,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampSO
-  name: staff officer's rubber stamp
+  name: 参谋的橡皮图章
   components:
   - type: Sprite
     state: stamp-ce
@@ -53,7 +53,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampIO
-  name: intelligence officer's rubber stamp
+  name: 情报官员的橡皮图章
   components:
   - type: Sprite
     state: stamp-clown
@@ -65,7 +65,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampCMP
-  name: chief MP officer's rubber stamp
+  name: 首席宪兵军官的橡皮图章
   components:
   - type: Sprite
     state: stamp-hos
@@ -77,7 +77,7 @@
 - type: entity
   parent: AU14StampCMP
   id: AU14StampMP
-  name: military police's rubber stamp
+  name: 宪兵的橡皮图章
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-au14-mp
@@ -87,7 +87,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampCMO
-  name: chief medical officer's rubber stamp
+  name: 首席医疗官的橡皮图章
   components:
   - type: Sprite
     state: stamp-cmo
@@ -99,7 +99,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampMO
-  name: medical officer's rubber stamp
+  name: 医务人员的橡皮图章
   components:
   - type: Sprite
     state: stamp-cmo
@@ -111,7 +111,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampAUX
-  name: auxiliary technician's rubber stamp
+  name: 辅助技术员橡皮图章
   components:
   - type: Sprite
     state: stamp-ro
@@ -123,7 +123,7 @@
 - type: entity
   parent: AU14StampAUX
   id: AU14StampLO
-  name: logistics officer's rubber stamp
+  name: 后勤官的橡皮图章
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-au14-lo
@@ -133,7 +133,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampEO
-  name: engineering officer's rubber stamp
+  name: 工程部职员的橡皮图章
   components:
   - type: Sprite
     state: stamp-ce
@@ -145,7 +145,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampSEA
-  name: advisor's rubber stamp
+  name: 顾问的橡皮图章
   components:
   - type: Sprite
     state: stamp-sea
@@ -159,7 +159,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampLiaison
-  name: corporate liaison's rubber stamp
+  name: 公司联络人的橡皮图章
   components:
   - type: Sprite
     state: stamp-we_ya
@@ -171,7 +171,7 @@
 - type: entity
   parent: AU14StampLiaison
   id: AU14StampWYSci
-  name: corporate scientist's rubber stamp
+  name: 企业科学家的橡皮图章
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-au14-cs
@@ -181,7 +181,7 @@
 - type: entity
   parent: AU14StampBase
   id: CMU14StampProdigyLiaison
-  name: prodigy liaison's rubber stamp
+  name: 神童联络员的橡皮图章
   components:
   - type: Sprite
     state: stamp-rd
@@ -193,7 +193,7 @@
 - type: entity
   parent: AU14StampBase
   id: CMU14StampProdigySupervisor
-  name: prodigy supervisor's rubber stamp
+  name: 神童主管的橡皮图章
   components:
   - type: Sprite
     state: stamp-rd
@@ -205,7 +205,7 @@
 - type: entity
   parent: AU14StampBase
   id: CMU14StampProdigyLawyer
-  name: prodigy lawyer's rubber stamp
+  name: 神童律师的橡皮图章
   components:
   - type: Sprite
     state: stamp-rd
@@ -219,7 +219,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampLLiaison
-  name: laselle liaison's rubber stamp
+  name: 拉塞尔联络官的橡皮图章
   components:
   - type: Sprite
     state: stamp-rd
@@ -231,7 +231,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampUAA
-  name: ua ambassador's rubber stamp
+  name: UA大使的橡皮图章
   components:
   - type: Sprite
     state: stamp-marine
@@ -243,7 +243,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampUPPA
-  name: upp ambassador's rubber stamp
+  name: 上合组织大使印章
   components:
   - type: Sprite
     state: stamp-spp
@@ -255,7 +255,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampTWEA
-  name: twe ambassador's rubber stamp
+  name: 大使的橡皮图章
   components:
   - type: Sprite
     state: stamp-tse
@@ -267,7 +267,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampICSCA
-  name: iscs ambassador's rubber stamp
+  name: iscs 大使的橡皮图章
   components:
   - type: Sprite
     state: stamp-rd
@@ -279,7 +279,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampCCAA
-  name: cca ambassador's rubber stamp
+  name: 中国民航局大使印章
   components:
   - type: Sprite
     state: stamp-cap
@@ -293,7 +293,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampAdmin
-  name: colony administrator's rubber stamp
+  name: 殖民地管理者的橡皮图章
   components:
   - type: Sprite
     state: stamp-hop
@@ -305,7 +305,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampDepAdmin
-  name: deputy administrator's rubber stamp
+  name: 副署长印章
   components:
   - type: Sprite
     state: stamp-hop
@@ -317,7 +317,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampFore
-  name: foreman's rubber stamp
+  name: 工头的橡皮图章
   components:
   - type: Sprite
     state: stamp-ro
@@ -329,7 +329,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampHENG
-  name: head of engineering rubber stamp
+  name: 工程部长印章
   components:
   - type: Sprite
     state: stamp-ce
@@ -341,7 +341,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampHOS
-  name: head of service rubber stamp
+  name: 服务部主管橡皮图章
   components:
   - type: Sprite
     state: stamp-cap
@@ -353,7 +353,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampHPHY
-  name: head physician's rubber stamp
+  name: 主任医师的橡皮图章
   components:
   - type: Sprite
     state: stamp-cmo
@@ -365,7 +365,7 @@
 - type: entity
   parent: AU14StampCMB
   id: AU14StampCMBM
-  name: cmb marshal's rubber stamp
+  name: 海关总署署长的橡皮图章
   components:
   - type: Sprite
     state: stamp-hos
@@ -375,7 +375,7 @@
 - type: entity
   parent: AU14StampLiaison
   id: AU14StampKelland
-  name: kelland warden's rubber stamp
+  name: 凯兰典狱长的橡皮图章
   components:
   - type: Sprite
     state: stamp-we_ya
@@ -386,7 +386,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampJoe
-  name: working joe's rubber stamp
+  name: 工作乔的橡皮图章
   components:
   - type: Sprite
     state: stamp-free-press
@@ -398,7 +398,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampRecruiter
-  name: ua recruiter's rubber stamp
+  name: UA招募员的橡皮图章
   components:
   - type: Sprite
     state: stamp-marine
@@ -412,7 +412,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampOrbitalMan
-  name: orbital manager's rubber stamp
+  name: 轨道管理员的橡皮图章
   components:
   - type: Sprite
     state: stamp-rd
@@ -424,7 +424,7 @@
 - type: entity
   parent: AU14StampOrbitalMan
   id: AU14StampOrbitalArb
-  name: orbital arbiter's rubber stamp
+  name: 轨道仲裁者的橡皮图章
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-au14-oarb
@@ -432,7 +432,7 @@
 - type: entity
   parent: AU14StampOrbitalMan
   id: AU14StampOrbitalCnsl
-  name: orbital counsel's rubber stamp
+  name: 轨道顾问的橡皮图章
   components:
   - type: Stamp
     stampedName: stamp-component-stamped-name-au14-ocnsl
@@ -444,7 +444,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampInterstellarObserver
-  name: ihro rubber stamp
+  name: 星际观察者橡胶印章
   components:
   - type: Sprite
     state: stamp-provost
@@ -456,7 +456,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampNSPA
-  name: nspa inspector's rubber stamp
+  name: nspa检查员橡皮图章
   components:
   - type: Sprite
     state: stamp-provost
@@ -468,7 +468,7 @@
 - type: entity
   parent: AU14StampBase
   id: CMUStampProvostInspector
-  name: provost inspector rubber stamp
+  name: 教务长检查员橡皮图章
   components:
   - type: Sprite
     state: stamp-provost
@@ -480,7 +480,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampInterstellarLiaison
-  name: icc liaison's rubber stamp
+  name: 星际联络员的橡皮图章
   components:
   - type: Sprite
     state: stamp-provost
@@ -494,7 +494,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampCLFCell
-  name: cell lead's rubber stamp
+  name: 组长印章
   suffix: CLF
   components:
   - type: Sprite
@@ -509,7 +509,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampApproved
-  name: APPROVED rubber stamp
+  name: 已批准橡皮图章
   components:
   - type: Sprite
     state: stamp-approve
@@ -521,7 +521,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampDenied
-  name: DENIED rubber stamp
+  name: “拒绝”橡皮图章
   components:
   - type: Sprite
     state: stamp-deny
@@ -535,7 +535,7 @@
 - type: entity
   parent: AU14StampLiaison
   id: AU14StampWeYu
-  name: weyland-yutani rubber stamp
+  name: 维兰德-汤谷橡皮图章
   suffix: Admin
   components:
   - type: Stamp
@@ -544,7 +544,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampMarine
-  name: marine rubber stamp
+  name: 海洋橡皮图章
   suffix: Admin, UNMC
   components:
   - type: Sprite
@@ -557,7 +557,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampCMB
-  name: colony marshal bureau rubber stamp
+  name: 殖民地执法局橡皮图章
   suffix: Admin, CMB
   components:
   - type: Sprite
@@ -570,7 +570,7 @@
 - type: entity
   parent: AU14StampBase
   id: CMUStampProvost
-  name: provost rubber stamp
+  name: 教务长橡皮图章
   components:
   - type: Sprite
     state: stamp-provost # RMC14 Todo: update sprite
@@ -582,7 +582,7 @@
 - type: entity
   parent: AU14StampBase
   id: CMUStampAegis
-  name: AEGIS armaments rubber stamp
+  name: AEGIS军备橡皮图章
   components:
   - type: Sprite
     state: stamp-marine
@@ -594,7 +594,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampCLF
-  name: colony liberation front rubber stamp
+  name: 殖民地解放阵线橡皮图章
   suffix: Admin, CLF
   components:
   - type: Sprite
@@ -607,7 +607,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampSPP
-  name: socialist progressive peoples rubber stamp
+  name: 社会主义进步人民橡皮图章
   suffix: Admin, UPP
   components:
   - type: Sprite
@@ -620,7 +620,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampTWE
-  name: three world empire rubber stamp
+  name: 三界帝国橡皮图章
   suffix: Admin, TWE
   components:
   - type: Sprite
@@ -633,7 +633,7 @@
 - type: entity
   parent: AU14StampBase
   id: AU14StampFreePress
-  name: free press rubber stamp
+  name: 自由新闻橡皮图章
   suffix: Admin, Press
   components:
   - type: Sprite

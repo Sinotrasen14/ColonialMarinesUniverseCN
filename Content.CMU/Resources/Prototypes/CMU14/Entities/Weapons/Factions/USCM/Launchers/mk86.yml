@@ -1,8 +1,8 @@
 - type: entity
   parent: [RMCBaseWeaponMount, BaseItem]
   id: AU14MK86Mount
-  name: mk86 automatic grenade launcher
-  description: The disassembled Mk86 AGL, with its telescopic tripods folded up and unable to fire.
+  name: MK86自动榴弹发射器
+  description: 拆解后的Mk86自动榴弹发射器，伸缩式三脚架已折叠，无法射击。
   components:
   - type: Item
     size: Huge
@@ -70,8 +70,8 @@
   parent: [ CMBaseWeaponGun, BaseItem]
   id: AU14AGLMK86
   categories: [ HideSpawnMenu ]
-  name: mk86 automatic grenade launcher
-  description: The top half of a Mk86 AGL. However it ain't much use without a tripod.
+  name: MK86自动榴弹发射器
+  description: Mk86 AGL的上半部分。不过没有三脚架的话，它可没什么用。
   components:
   - type: Item
     size: Huge
@@ -140,7 +140,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         priority: 2
@@ -184,8 +184,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineMk86Frag
-  name: Mk86 Ammunition Box (AGM-F 40mm frag grenade)
-  description: A box of 15, AGM-F 40mm frag grenade rounds for the mk86 automatic grenade launcher system.
+  name: Mk86弹药箱（AGM-F 40毫米破片手榴弹）
+  description: 一盒15发，AGM-F 40毫米破片榴弹，用于mk86自动榴弹发射器系统。
   components:
   - type: Tag
     tags:
@@ -211,8 +211,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineMk86Hornet
-  name: Mk86 Ammunition Box (AGM-H 40mm hornet grenade)
-  description: A box of 15, AGM-H 40mm hornet grenade rounds for the mk86 automatic grenade launcher system.
+  name: Mk86弹药箱（AGM-H 40mm黄蜂榴弹）
+  description: 一盒15发AGM-H 40毫米“大黄蜂”榴弹，用于Mk86自动榴弹发射器系统。
   components:
   - type: Tag
     tags:
@@ -238,8 +238,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineMk86Smoke
-  name: Mk86 Ammunition Box (AGM-S 40mm smoke grenade)
-  description: A box of 15, AGM-S 40mm smoke grenade rounds for the mk86 automatic grenade launcher system.
+  name: Mk86弹药箱（AGM-S 40mm烟雾弹）
+  description: 一盒15发AGM-S 40毫米烟雾弹，用于mk86自动榴弹发射器系统。
   components:
   - type: Tag
     tags:
@@ -265,8 +265,8 @@
 - type: entity
   parent: RMCGunCaseBase
   id: AU14Mk86Case
-  name: Mk86 automatic grenade launcher case
-  description: A gun case containing the Mk86 automatic grenade launcher. Comes with 5 magazines
+  name: Mk86自动榴弹发射器机箱
+  description: 一个装有Mk86自动榴弹发射器的枪箱。附带5个弹匣
   components:
   - type: Storage
     maxItemSize: Ginormous

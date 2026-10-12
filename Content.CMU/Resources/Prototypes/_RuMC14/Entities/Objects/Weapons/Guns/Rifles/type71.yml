@@ -1,7 +1,7 @@
 ﻿- type: entity
   parent: RMCMagazineRifleType71
   id: RuMCMagazineRifleType71Tracer
-  name: "Type71 magazine (5.45x39mm Tracer)"
+  name: "71式弹匣（5.45×39毫米曳光弹）"
   components:
   - type: Tag
     tags:
@@ -31,7 +31,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RuMCCartridgeRifle545x39mmTracer
-  name: 5.45x39mm Tracer
+  name: 5.45x39mm曳光弹
   components:
   - type: CartridgeAmmo
     proto: RuMCBullet545x39mmTracer
@@ -43,7 +43,7 @@
 - type: entity
   parent: RMCBulletRifle545x39mm
   id: RuMCBullet545x39mmTracer
-  name: bullet (5.45x39mm Tracer)
+  name: 子弹（5.45×39毫米曳光弹）
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight

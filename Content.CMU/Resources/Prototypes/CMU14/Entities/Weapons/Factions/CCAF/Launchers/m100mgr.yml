@@ -2,7 +2,7 @@
   parent: CMBaseWeaponRifle
   name: M100 MGR
   id: AUWeaponRifleM100MGR
-  description: An airburst grenade launcher platform designed for CCAF section grenadiers, replacing the M41As underslung launcher. It fires mag-fed 40mm airburst grenades. This weapon is equipped with IFF and is still in limited field testing among select CCAF infantry units.
+  description: 一款为CCAF班组掷弹兵设计的空爆榴弹发射器平台，用于取代M41A的下挂式发射器。它发射弹匣供弹的40毫米空爆榴弹。该武器配备敌我识别系统，目前仍在部分CCAF步兵单位中进行有限实地测试。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/CCAF/M100MGR.rsi
@@ -55,7 +55,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -76,7 +76,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineRifleM100MGR
-  name: "M100MGR Magazine (40mm)"
+  name: "M100MGR 弹匣（40mm）"
   components:
   - type: Tag
     tags:

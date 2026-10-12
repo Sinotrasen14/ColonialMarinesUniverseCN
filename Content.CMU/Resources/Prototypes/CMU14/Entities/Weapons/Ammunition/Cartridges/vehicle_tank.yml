@@ -1,7 +1,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: CMUCartridgeLTBCannonAPFSDS
-  name: cartridge (LTB cannon, APFSDS)
+  name: 弹壳（轻型坦克炮，尾翼稳定脱壳穿甲弹）
   components:
   - type: Sprite
     sprite: CMU14/Structures/vehicles/ammo/vehicles.rsi
@@ -22,7 +22,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: CMUCartridgeLTBCannonHEAT
-  name: cartridge (LTB cannon, HEAT)
+  name: 炮弹（LTB火炮，破甲弹）
   components:
   - type: Sprite
     sprite: CMU14/Structures/vehicles/ammo/vehicles.rsi
@@ -43,7 +43,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: CMUCartridgeLTBCannonHE
-  name: cartridge (LTB cannon, HE)
+  name: (LTB火炮，高爆弹)
   components:
   - type: Sprite
     sprite: CMU14/Structures/vehicles/ammo/vehicles.rsi
@@ -64,7 +64,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: CMUCartridgeLTBCannonCanister
-  name: cartridge (LTB cannon, canister)
+  name: 弹药筒（LTB炮，气罐）
   components:
   - type: Sprite
     sprite: CMU14/Structures/vehicles/ammo/vehicles.rsi
@@ -85,7 +85,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: CMUCartridgeLTBCannonNapalm
-  name: cartridge (LTB cannon, napalm)
+  name: 燃烧弹（LTB炮，凝固汽油弹）
   components:
   - type: Sprite
     sprite: CMU14/Structures/vehicles/ammo/vehicles.rsi
@@ -106,7 +106,7 @@
 # Impacts
 - type: entity
   id: CMULTBCannonImpactAPFSDS
-  name: LTB APFSDS cannon impact
+  name: LTB APFSDS 炮弹命中
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
@@ -117,7 +117,7 @@
 
 - type: entity
   id: CMULTBCannonImpactHEAT
-  name: LTB HEAT cannon impact
+  name: LTB破甲弹炮击
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
@@ -140,7 +140,7 @@
 
 - type: entity
   id: CMULTBCannonImpactHE
-  name: LTB HE cannon impact
+  name: 轻型坦克高爆炮弹着点
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
@@ -163,7 +163,7 @@
 
 - type: entity
   id: CMULTBCannonImpactCanister
-  name: LTB canister cannon impact
+  name: LTB气罐炮冲击
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn
@@ -174,7 +174,7 @@
 
 - type: entity
   id: CMULTBCannonImpactNapalm
-  name: LTB napalm cannon impact
+  name: LTB凝固汽油炮冲击
   categories: [ HideSpawnMenu ]
   components:
   - type: TriggerOnSpawn

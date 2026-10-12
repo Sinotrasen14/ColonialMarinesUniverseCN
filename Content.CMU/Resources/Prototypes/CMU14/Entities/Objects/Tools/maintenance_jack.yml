@@ -2,8 +2,8 @@
 - type: entity
   parent: [BaseItem, RMCBaseMeleeWeapon]
   id: AU14MaintenanceJack
-  name: K92 Maintenance Jack
-  description: A small carryable maintenance jack used to service vehicles, can also act as a bludgeoning device that comes in handy in emergencies. Can be used to disengage door jacks.
+  name: K92 维修道千斤顶
+  description: 一个小型可携带的维修千斤顶，用于维修车辆，也可作为钝击装置，在紧急情况下派上用场。可用于松开门用千斤顶。
   suffix: CMU
   components:
   - type: Sprite
@@ -64,8 +64,8 @@
 - type: entity
   parent: AU14MaintenanceJack
   id: AU14MaintenanceJackSpecialAdmin
-  name: K92-S Modified Maintenance Jack
-  description: A combination crowbar, wrench, screwdriver, and generally large bludgeoning device that comes in handy in emergencies. Can be used to disengage door jacks. A K92-S Special with a severe weight reduction, so anyone can lift it.
+  name: K92-S改装维修道千斤顶
+  description: 一个集撬棍、扳手、螺丝刀于一体的工具，也是一把大体型钝击装置，在紧急情况下非常实用。可用于解除门控千斤顶。这是一把经过大幅减重的K92-S Special，任何人都能举起。
   suffix: Admin, DO NOT MAP, CMU
   components:
   - type: Tag
@@ -123,8 +123,8 @@
 - type: entity
   parent: AU14MaintenanceJackSpecialAdmin
   id: AU14MaintenanceJackSpecial
-  name: K92-S Special Maintenance Jack
-  description: A very-heavy combination crowbar, wrench, screwdriver, and generally large bludgeoning device that comes in handy in emergencies. Can be used to disengage door jacks. Incredibly hefty, though.
+  name: K92-S 专用维修道千斤顶
+  description: 一把非常沉重的多功能撬棍、扳手、螺丝刀，以及通常可用作大型钝击装置的工具，在紧急情况下非常实用。可用于分离门式千斤顶。不过极其笨重。
   suffix: CMU, Synth
   components:
   - type: RMCSynthItemRestriction

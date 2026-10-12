@@ -8,8 +8,8 @@
 - type: entity
   parent: CMBaseWallXeno
   id: CMU14XenoMyceliumWall
-  name: mycelium wall
-  description: A dense wall of pale, fibrous mycelium secreted by a Neomorph. It pulses faintly with bioluminescent light.
+  name: 菌丝墙
+  description: 由新变体分泌的一堵由苍白纤维状菌丝构成的致密墙壁。它随着生物荧光微微脉动。
   components:
   - type: Sprite
     sprite: CMU14/Structures/Xeno/Pathogen/mycelium_wall.rsi
@@ -61,8 +61,8 @@
 - type: entity
   parent: CMU14XenoMyceliumWall
   id: CMU14XenoThickMyceliumWall
-  name: thick mycelium wall
-  description: A heavily reinforced mycelium wall. The fibrous strands have fused into a dense, almost chitinous mass.
+  name: 厚菌丝墙
+  description: 一堵经过重度加固的菌丝墙。纤维状的菌丝已融合成致密、近乎几丁质的块体。
   components:
   - type: Sprite
     sprite: CMU14/Structures/Xeno/Pathogen/mycelium_wall.rsi
@@ -108,8 +108,8 @@
 - type: entity
   parent: CMBaseWallXeno
   id: CMU14XenoMyceliumMembrane
-  name: mycelium membrane
-  description: A translucent sheet of mycelium, thin enough to see through but tough enough to slow a marine advance.
+  name: 菌丝体膜
+  description: 一片半透明的菌丝薄片，薄到可以看穿，却坚韧到足以延缓海军陆战队的推进。
   components:
   - type: Sprite
     sprite: CMU14/Structures/Xeno/Pathogen/mycelium_wall.rsi
@@ -174,8 +174,8 @@
 - type: entity
   parent: CMU14XenoMyceliumMembrane
   id: CMU14XenoThickMyceliumMembrane
-  name: thick mycelium membrane
-  description: A reinforced mycelium membrane. It remains just translucent enough to make out shapes on the other side.
+  name: 厚菌丝膜
+  description: 一种强化菌丝膜。它仍保持半透明，足以辨认另一侧的轮廓。
   components:
   - type: Sprite
     sprite: CMU14/Structures/Xeno/Pathogen/mycelium_wall.rsi
@@ -221,8 +221,8 @@
 - type: entity
   parent: CMBaseXenoStructure
   id: CMU14XenoMyceliumDoor
-  name: mycelium door
-  description: A curtain of living mycelium fibres that parts when an ally approaches. It smells faintly of spores.
+  name: 菌丝门
+  description: 一层活菌丝纤维制成的帘幕，友军靠近时会分开。它散发着淡淡的孢子气味。
   placement:
     mode: SnapgridCenter
   components:
@@ -329,8 +329,8 @@
 - type: entity
   parent: CMU14XenoMyceliumDoor
   id: CMU14XenoThickMyceliumDoor
-  name: thick mycelium door
-  description: A dense, reinforced curtain of mycelium. The fibres have hardened into something almost solid.
+  name: 厚菌丝门
+  description: 一层致密、加固的菌丝帘幕。纤维已经硬化，几乎变成了固体。
   components:
   - type: Sprite
     sprite: CMU14/Effects/pathogen_effects.rsi
@@ -387,8 +387,8 @@
 
 - type: entity
   id: CMU14XenoMyceliumNest
-  name: mycelium nest
-  description: A cradle of pale, sticky mycelium fibres woven into a nest shape. A captured host would be held fast by its adhesive strands.
+  name: 菌丝巢
+  description: 一窝苍白、黏稠的菌丝纤维编织成巢穴形状。被捕获的宿主会被其黏性丝线牢牢固定。
   placement:
     mode: SnapgridCenter
     snap:

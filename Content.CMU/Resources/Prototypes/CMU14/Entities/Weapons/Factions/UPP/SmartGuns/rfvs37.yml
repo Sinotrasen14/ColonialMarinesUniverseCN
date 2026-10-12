@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCSmartGunNoCamo
   id: AU14SmartGunUPP
-  name: RVS-37 automated machinegun
-  description: Copy of the M56 Smartgun, the RVS-37 "Canyon", produced by major countries inside of UPP.
+  name: RVS-37自动机枪
+  description: UPP内部主要国家生产的M56智能枪复制品，RVS-37“峡谷”。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/UPP/rvs-37.rsi
@@ -17,7 +17,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazineSmartGunUPP
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
@@ -35,7 +35,7 @@
 - type: entity
   parent: RMCMagazineSmartGun
   id: AU14MagazineSmartGunUPP
-  name: "RVS-37 drum magazine (12.7x40mm)"
+  name: "RVS-37弹鼓（12.7x40mm）"
   components:
   - type: Tag
     tags:
@@ -58,7 +58,7 @@
 - type: entity
   parent: CMCartridgeSmartGun10x30mm
   id: AU14CartridgeSmartGun127x40mm
-  name: cartridge (12.7x40mm)
+  name: 弹壳（12.7x40mm）
   components:
   - type: CartridgeAmmo
     proto: AU14BulletSmartGun127x40mm
@@ -69,7 +69,7 @@
 - type: entity
   parent: CMBulletSmartGun10x30mm
   id: AU14BulletSmartGun127x40mm
-  name: bullet (12.7x40mm)
+  name: 子弹（12.7x40mm）
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -80,8 +80,8 @@
 - type: entity
   parent: RMCPowerCell
   id: AU14PowerCellSmartgunUPP
-  name: GB-12-U3 battery
-  description: "UPP standard-issue 12-volt lead-acid battery, used by the UPPAC to power just about anything short of armored vehicles. This one seems to be a variant made to power automated machineguns. Also could be used as a blunt weapon."
+  name: GB-12-U3电池
+  description: "UPP标准配发的12伏铅酸电池，UPPAC用它为除装甲车辆以外的几乎任何东西供电。这个似乎是用来为自动机枪供电的变体。也可以当作钝器使用。"
   components:
   - type: Sprite
     layers:

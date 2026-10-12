@@ -2,8 +2,8 @@
 - type: entity
   parent: PortableScrubber
   id: RMCAirScrubberPortable
-  name: '"Maid" SC-3 portable air scrubber'
-  description: A boxy scrubber that inhales a room's problems and traps them inside. Field crews call it the Maid; leave it in a room, come back to breathable air. The access panel is held on by a single screw that rarely survives the first shift.
+  name: '“Maid”SC-3便携式空气净化器'
+  description: 一个方方正正的净化器，能把房间里的问题吸进去并困在里面。现场工作人员叫它“女仆”；把它留在房间里，回来就能呼吸到清新的空气。检修面板只用一颗螺丝固定，而这颗螺丝往往撑不过第一个班次。
   components:
   - type: Transform
     noRot: false # maps rotate it, inherited noRot aborts map loads
@@ -42,8 +42,8 @@
 - type: entity
   parent: RMCAirScrubberPortable
   id: RMCAirScrubberStationary
-  name: '"Maid" SC-3S stationary air scrubber'
-  description: The bolted-down model of the Maid line. Same appetite as the portable, none of the wandering. The access panel rides on the same single screw, and it comes to the same end.
+  name: '“Maid” SC-3S 固定式空气净化器'
+  description: Maid系列的螺栓固定型号。和便携款一样的胃口，但不会到处乱跑。检修面板同样靠那颗单螺丝固定，结局也一样。
   components:
   - type: Transform
     noRot: false
@@ -65,8 +65,8 @@
 - type: entity
   parent: RMCAirScrubberPortable
   id: RMCAirPumpPortable
-  name: '"Straw" AP-4 portable air pump'
-  description: Siphons a room's air out and bottles it in its tank. Field crews call it the Straw, usually while standing in the room it is draining. Louder than the Maid and prouder of it; the panel comes off with one screw, and most screws go missing before the crate is unpacked.
+  name: '“吸管” AP-4 便携式气泵'
+  description: 把房间里的空气吸出并装进气瓶。外勤人员叫它吸管，通常就站在它正在抽气的房间里这么叫。比女仆更吵，而且对此更得意；面板一颗螺丝就能拆下，而大多数螺丝在板条箱拆开前就不见了。
   components:
   - type: Transform
     noRot: false
@@ -91,8 +91,8 @@
 - type: entity
   parent: RMCAirPumpPortable
   id: RMCAirPumpStationary
-  name: '"Straw" AP-4S stationary air pump'
-  description: The stationary model. Large, securely attached, and every bit as thirsty as the portable. The panel is still one screw away from silence.
+  name: '“Straw” AP-4S 固定式气泵'
+  description: 固定式型号。体积大，固定牢靠，和便携式一样耗水。面板依然只差一颗螺丝就能安静下来。
   components:
   - type: Transform
     noRot: false
@@ -114,8 +114,8 @@
 - type: entity
   parent: SpaceHeater
   id: RMCSpaceHeater
-  name: '"Toaster" SH-6 space heater'
-  description: An electric space heater that warms the room by radiation. Two settings, off and on; the manual spends a full page on the difference.
+  name: '“烤面包机”SH-6空间加热器'
+  description: 一种通过辐射来温暖房间的电热器。两个档位，关和开；说明书用整整一页来讲述两者的区别。
   components:
   - type: Transform
     noRot: false
@@ -150,8 +150,8 @@
 - type: entity
   parent: SpaceHeater
   id: RMCRadiator
-  name: '"Kettle" RD-2 radiator'
-  description: A hot-water radiator. Heats the room by convection and announces every cycle with a clank audible three decks away.
+  name: '“Kettle” RD-2 散热器'
+  description: 一个热水散热器。通过对流为房间供暖，每轮循环都会发出三層甲板外都能听见的哐当声。
   components:
   - type: Transform
     noRot: false
@@ -185,8 +185,8 @@
 - type: entity
   parent: RMCRadiator
   id: RMCRadiatorRed
-  name: '"Kettle" RD-2R radiator'
-  description: A hot-water radiator like any other, except the handle is red. Nobody at the depot remembers what the red handle does.
+  name: '“水壶”RD-2R散热器'
+  description: 一个和别的没什么两样的热水散热器，只不过把手是红色的。仓库里没人记得那个红色把手是干什么用的。
   components:
   - type: Transform
     noRot: false
@@ -212,8 +212,8 @@
 - type: entity
   parent: [ BaseEngineeringContraband, VolatileGrenadeBase, TimerGrenadeBase ]
   id: CMUFireSuppressantGrenade
-  name: '"Salamander" FS-4 fire suppression grenade'
-  description: A chemical burst grenade that fights fire with a flood of freezing coolant. Clear the room, pull the pin, walk away. The atmos techs will find the nitrous oxide later.
+  name: '“火蜥蜴”FS-4灭火手榴弹'
+  description: 一种化学爆破手雷，用大量冷冻冷却剂灭火。清空房间，拔掉保险销，转身离开。大气技师之后会找到一氧化二氮的。
   components:
   - type: Sprite
     sprite: Objects/Weapons/Grenades/airboom.rsi
@@ -259,8 +259,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: CMUFireHelmet
-  name: '"Salamander" FH-2 fire helmet'
-  description: A brimmed firefighting helmet rated for reentry into a burning compartment. The brim keeps embers off your collar and the ratings keep the paperwork happy.
+  name: '“火蜥蜴”FH-2消防头盔'
+  description: 一顶带帽檐的消防头盔，额定可用于重新进入燃烧中的舱室。帽檐能挡住落在衣领上的火星，而额定认证则能让文书工作顺利过关。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Helmets/firefighter.rsi
@@ -284,8 +284,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingChefApron, ClothingOuterBase]
   id: CMUSuitFirefighter
-  name: '"Salamander" F-2 firesuit'
-  description: A canvas firesuit rated against fire and heat. Named after the salamander, which also does not sweat.
+  name: '“火蜥蜴”F-2防火服'
+  description: 一套帆布消防服，可抵御火焰与高温。以火蜥蜴命名，这种生物同样不会出汗。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/firesuit.rsi
@@ -320,8 +320,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: CMUArmorFirefighter
-  name: '"PyroTex" PT-LT firesuit'
-  description: The 'PyroTex LT', Fujin's advanced lightweight firesuit. Protects against fire, heat, and a degree of blunt force trauma, in descending order of confidence.
+  name: '“PyroTex” PT-LT 消防服'
+  description: “PyroTex LT”，风神的高级轻型消防服。可抵御火焰、高温以及一定程度的钝器伤害，防护信心依次递减。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/firefighter.rsi
@@ -364,8 +364,8 @@
 - type: entity
   parent: CMUArmorFirefighter
   id: CMUArmorFirefighterUPP
-  name: T-20 fire response coat
-  description: A rugged, no-frills fire-resistant overcoat for UPP industrial and emergency crews, built on the PyroTex LT pattern with cheaper domestically produced materials. The heat protection survived the substitution; the comfort did not.
+  name: T-20火警响应外套
+  description: 一件为UPP工业和应急人员设计的粗犷、无多余装饰的耐火大衣，基于PyroTex LT版型，采用更便宜的国产材料制成。耐热保护在替换材料后依然达标；舒适性则不然。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/SPP/firefighter.rsi
@@ -388,8 +388,8 @@
 - type: entity
   parent: RMCBaseArmor
   id: RMCSuitTychoRadiationSuit
-  name: Tycho 4000 radiation suit
-  description: The burn-resistant Weyland-Yutani Tycho 4000 Radiation Protection Suit. Lead-lined, this heavy piece of PPE must be worn with its respective gloves, boots, and radiation hood.
+  name: 第谷 4000 辐射防护服
+  description: 抗烧伤的韦兰-尤塔尼第谷4000辐射防护服。这件沉重的个人防护装备内衬铅层，必须搭配其配套的手套、靴子和辐射头罩一起穿戴。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/radsuit_weya.rsi
@@ -414,8 +414,8 @@
 - type: entity
   parent: ClothingHeadBase
   id: RMCHeadTychoRadiationHood
-  name: Tycho 4000 radiation protection hood
-  description: The burn-resistant hood for the Weyland-Yutani Tycho 4000 Radiation Protection Suit. It's lined with lead, and it's recommended you wear a rebreather or gas mask under it.
+  name: 第谷 4000 辐射防护头罩
+  description: 韦兰-尤坦尼Tycho 4000辐射防护服的防烧伤头罩。内衬铅层，建议在头罩下佩戴呼吸器或防毒面具。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/rad_hood_weya.rsi
@@ -440,8 +440,8 @@
 - type: entity
   parent: RMCHandsVeteran
   id: RMCHandsTychoGloves
-  name: Tycho 4000 radiation protection gloves
-  description: The burn-resistant gloves for the Weyland-Yutani Tycho 4000 Radiation Protection Suit. It's lined with lead, and is pretty heavy, but it'll keep you safe from Radiological materials.
+  name: 第谷 4000 辐射防护手套
+  description: 韦兰-尤塔尼Tycho 4000辐射防护服的防烧伤手套。内衬铅层，相当沉重，但能保护你免受放射性物质伤害。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Hands/Gloves/rad_gloves_weya.rsi
@@ -456,8 +456,8 @@
 - type: entity
   parent: ClothingShoesBase
   id: RMCShoesTychoBoots
-  name: Tycho 4000 radiation protection boots
-  description: The burn-resistant boots for the Weyland-Yutani Tycho 4000 Radiation Protection Suit. It's lined with lead, and the boot is steel-toed, perfect for trouncing around detonated nuclear reactors and avoiding radiation poisoning.
+  name: Tycho 4000 防辐射靴
+  description: 韦兰-尤塔尼Tycho 4000辐射防护服的抗烧伤靴。内衬铅层，靴头为钢制，非常适合在爆炸后的核反应堆周围行走并避免辐射中毒。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Shoes/Boots/rad_boots_weya.rsi
@@ -467,8 +467,8 @@
 - type: entity
   parent: RMCSuitTychoRadiationSuit
   id: RMCSuitRadiation
-  name: '"Salamander" RS-2 radiation suit'
-  description: Salamander's lead-lined take on the radiation suit, rated for burning and glowing work sites alike. The rad rating is only as good as the hood, so wear the hood.
+  name: '“火蜥蜴”RS-2辐射防护服'
+  description: 蝾螈牌铅衬防辐射服，适用于燃烧和发光的作业场所。辐射防护效果取决于头罩，所以请戴好头罩。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/OuterClothing/Misc/radiation_suit.rsi
@@ -491,8 +491,8 @@
 - type: entity
   parent: RMCHeadTychoRadiationHood
   id: RMCHeadRadiationHood
-  name: '"Salamander" RH-2 radiation hood'
-  description: The lead-lined hood that completes the RS-2 rating. Without it the suit protects everything except the part you think with.
+  name: '“火蜥蜴”RH-2防辐射头罩'
+  description: 铅衬兜帽，用于达成RS-2防护等级。没有它，防护服能保护一切，除了你用来思考的那个部位。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/Hats/radiation_hood.rsi
@@ -511,8 +511,8 @@
 - type: entity
   parent: AtmosDeviceFanTiny
   id: RMCTinyFan
-  name: '"Zephyr" TF-2 tiny fan'
-  description: A low fan that holds a room's air in while letting people walk through it. Field crews call it the Zephyr. The breeze is decorative, the seal is not.
+  name: '“和风”TF-2微型风扇'
+  description: 一台低矮的风扇，能将室内空气锁住，同时允许人员穿行其间。现场人员称之为“和风”。微风只是装饰，密封才是关键。
   components:
   - type: Construction
     graph: RMCTinyFanGraph
@@ -524,8 +524,8 @@
 - type: entity
   parent: AtmosDeviceFanDirectional
   id: RMCDirectionalFan
-  name: '"Doorstop" DF-1 directional fan'
-  description: A slim fan that seals one side of a doorway while leaving the lane open for foot traffic. Field crews call it the Doorstop; point it at the draft and it minds the gap all shift.
+  name: '“门挡” DF-1 定向风扇'
+  description: 一台纤薄的扇机，封住门洞的一侧，同时留出通道供人通行。现场人员叫它“门挡”；把它对准气流，它就能整班守着那道缝隙。
   components:
   - type: Construction
     graph: RMCDirectionalFanGraph
@@ -587,8 +587,8 @@
 
 - type: construction
   id: RMCTinyFanRecipe
-  name: tiny fan
-  description: A walk-through plug for leaking doorways and hull breaches.
+  name: 小风扇
+  description: 一个用于封堵漏气门道和船体破口的贯穿式塞子。
   graph: RMCTinyFanGraph
   startNode: start
   targetNode: built
@@ -602,8 +602,8 @@
 
 - type: construction
   id: RMCDirectionalFanRecipe
-  name: directional fan
-  description: Seals one side of a gap against gases while leaving the other open.
+  name: 定向风扇
+  description: 封闭缝隙的一侧以阻挡气体，同时保持另一侧敞开。
   graph: RMCDirectionalFanGraph
   startNode: start
   targetNode: built

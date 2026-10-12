@@ -1,8 +1,8 @@
 - type: entity # note to self; add camo inhands to fix sprite bug
   parent: RMCSmartGun
   id: AU14SmartGunMinigunHAZOPS
-  name: GAU-19/H handheld minigun
-  description: A beast of a weapon. Once mounted on aircraft hardpoints, this minigun has been made handheld, though IFF systems couldn't be safely implemented into the gun. Unmatched RPM and ammo capacity, but the caliber had to be downgraded to make the gun actually useable, resulting in lacking AP and stopping power.
+  name: GAU-19/H手持式迷你炮
+  description: 一把野兽般的武器。这种迷你炮原本安装在飞机挂架上，如今已被改为手持式，不过敌我识别系统无法安全地集成到枪中。其射速和弹药容量无与伦比，但口径不得不降级，以使这把枪真正可用，导致其穿甲能力和停止作用不足。
   components:
   - type: RMCSelectiveFire
     baseFireRate: 11
@@ -19,7 +19,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazineMinigunHAZOPS
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
@@ -43,7 +43,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineMinigunHAZOPS
-  name: GAU-19/H drum magazine (9mm)
+  name: GAU-19/H弹鼓（9mm）
   components:
   - type: Tag
     tags:
@@ -70,7 +70,7 @@
 - type: entity
   parent: CMCartridgePistol9mm
   id: AU14CartridgeMinigunHAZOPS9mm
-  name: cartridge (9mm)
+  name: 9毫米弹药
   components:
   - type: CartridgeAmmo
     proto: AU14BulletMinigunHAZOPS9mm
@@ -81,7 +81,7 @@
 - type: entity
   parent: CMBulletPistol9mm
   id: AU14BulletMinigunHAZOPS9mm
-  name: bullet (9mm)
+  name: 子弹（9mm）
   components:
   - type: RMCProjectileDamageFalloff
     thresholds:

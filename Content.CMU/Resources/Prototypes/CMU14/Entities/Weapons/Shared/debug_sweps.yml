@@ -1,9 +1,9 @@
 # Over-the-top variant of MeleeDebugGib. Admin/debug spawn only.
 - type: entity
-  name: bang stick maximum gibber
+  name: 棒击最大肢解
   parent: MeleeDebugGib
   id: MeleeDebugGibInsane
-  description: hit REALLY hard ye
+  description: 打得真他妈的狠
   suffix: DEBUG, CMU
   components:
   - type: InsaneGib
@@ -77,10 +77,10 @@
 
 # Get their attention with this one. Doesn't harm, but does thunder across the entire map.
 - type: entity
-  name: zeus stick
+  name: 宙斯棒
   parent: BaseItem
   id: CMUDebugLightningStick
-  description: harmless thunder strike ye
+  description: 无害的雷击
   suffix: DEBUG, CMU
   components:
   - type: Sprite
@@ -92,7 +92,7 @@
   - type: DebugLightning
 
 - type: entity
-  name: zeus bolt
+  name: 宙斯门栓
   parent: Lightning
   id: CMUDebugLightningBolt
   categories: [ HideSpawnMenu ]
@@ -103,8 +103,8 @@
 - type: entity
   parent: HolofanProjector
   id: HolofanProjectorDebug
-  name: holofan projector (debug)
-  description: Debug version with infinite charges.
+  name: 全息风扇投影仪（调试）
+  description: 具有无限次数的调试版本。
   components:
   - type: HolosignProjector
     signProto: HoloFan

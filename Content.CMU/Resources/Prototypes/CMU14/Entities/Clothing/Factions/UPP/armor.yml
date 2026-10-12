@@ -1,8 +1,8 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14UPPArmor
-  name: UM5 personal armor
-  description: A set of Union of Progressive Peoples armor.
+  name: UM5个人护甲
+  description: 一套进步人民联盟的护甲。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/armor/uppstandardarmor.rsi
@@ -10,8 +10,8 @@
 - type: entity
   parent: AU14BaseArmorLight
   id: AU14UPPArmorMinimalistic
-  name: UL6 personal armor
-  description: A set of Minimalistic Union of Progressive Peoples armor. This pair is quite small compared to the standard, and will provide less protection.
+  name: UL6个人护甲
+  description: 一套极简的进步人民联盟护甲。这套护甲相比标准款要小得多，提供的防护也更少。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/armor/upplightarmor.rsi
@@ -19,8 +19,8 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14UPPArmorBulky
-  name: UH7 heavy plated armor
-  description: A set of quite bulky Union of Progressive Peoples armor.
+  name: UH7重型板甲
+  description: 一套相当笨重的进步人民联盟装甲。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/armor/upplargearmor.rsi
@@ -28,9 +28,9 @@
 - type: entity
   parent: [ RMCAllowSuitStorageClothingSmartgunner, AU14BaseArmor ]
   id: AU14ArmorSmartGunDesertCombatHarnessUPP
-  name: RVS-37 armoured automated machinegun harness
+  name: RVS-37装甲自动机枪挽具
   suffix: AU14
-  description: Harness harness specially made for RVS-37 automated machinegun.
+  description: 为RVS-37自动机枪特制的背带。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/armor/upplargearmor.rsi
@@ -50,8 +50,8 @@
   parent: AU14BaseArmorVest
   id: AU14ArmorArmyUPP
   suffix: AU14
-  name: 6B80 personal armor
-  description: An older UPP personal armor system that's since been replaced by the UPP Army Standard 6B90 body armor. It is still used by certain UPP Army units that the UPP doesn't expect to see much combat.
+  name: 6B80个人护甲
+  description: 一套较旧的UPP单兵护甲系统，现已被UPP陆军标准6B90防弹衣取代。某些UPP陆军部队仍在使用它，这些部队是UPP预计不会经历太多战斗的。
   components:
   - type: ClothingSpeedModifier
     walkModifier: 1
@@ -64,17 +64,17 @@
 - type: entity
   parent: RMCCoatSPP
   id: AU14CoatUPP
-  name: UL4 officer jacket
-  description: A lightweight jacket, issued to officers of the UPP's military. Slightly protective from incoming damage, best off with proper armor however.
+  name: UL4军官夹克
+  description: 一件轻便夹克，配发给UPP军队的军官。对来袭伤害有轻微防护作用，但最好还是搭配正规护甲。
 
 - type: entity
   parent: RMCCoatSPPSenior
   id: AU14CoatUPPSenior
-  name: UL4 senior officer jacket
-  description: A lightweight jacket, issued to senior officers of the UPP's military. Made of high-quality materials, even going as far as having the ranks and insignia of the Kapitan and their Company emblazoned on the shoulders and front of the jacket. Slightly protective from incoming damage, best off with proper armor however.
+  name: UL4高级官员夹克
+  description: 一件轻便夹克，配发给UPP军队的高级军官。采用高品质材料制成，甚至在肩部和夹克正面烫印有Kapitan及其连队的军衔和徽章。对来袭伤害有轻微防护作用，但最好还是搭配正规护甲。
 
 - type: entity
   parent: RMCCoatSPPMP
   id: AU14CoatUPPMP
-  name: UL4 camouflaged jacket
-  description: A lightweight jacket, issued to troops when they're not expected to engage in combat. Still studded to the brim with kevlar shards, though the synthread construction reduces its effectiveness.
+  name: UL4迷彩夹克
+  description: 一件轻便夹克，配发给预计不会参与战斗的部队。不过仍密布着凯夫拉碎片，只是合成长丝结构降低了其防护效果。

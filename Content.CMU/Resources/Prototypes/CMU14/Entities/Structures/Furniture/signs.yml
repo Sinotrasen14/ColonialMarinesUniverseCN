@@ -1,9 +1,9 @@
 - type: entity
   parent: BaseStructure
   id: DecorSignMinesProp
-  name: mines
+  name: 地雷
   suffix: Prop
-  description: danger of mines and death...
+  description: 地雷与死亡的危险……
   components:
   - type: Sprite
     sprite: CMU14/N14content/world.rsi
@@ -15,13 +15,13 @@
 # ├──[ CONSTRUCTION MENU ]───────────────────────────────────────────┤
 - type: construction
   parent: RMC
-  name: Mines Sign
+  name: 矿井标志
   id: AU14ConstructionSignMines
   graph: AU14SignGraph
   startNode: start
   targetNode: sign_mines
   category: construction-category-cm-furniture
-  description: A sign warning about mines.
+  description: 一个警告有地雷的标志。
   objectType: Structure
   canBuildInImpassable: false
   conditions:
@@ -29,13 +29,13 @@
 
 - type: construction
   parent: RMC
-  name: Traffic Director (Empty)
+  name: 交通指挥员（空）
   id: AU14ConstructionSignEmpty
   graph: AU14SignGraph
   startNode: start
   targetNode: sign_empty
   category: construction-category-cm-furniture
-  description: A blank traffic director sign.
+  description: 一个空白的交通指挥标志牌。
   objectType: Structure
   canBuildInImpassable: false
   conditions:
@@ -43,38 +43,38 @@
 
 - type: construction
   parent: AU14ConstructionSignEmpty
-  name: Traffic Director (Evac Center)
+  name: 交通指挥员（疏散中心）
   id: AU14ConstructionSignEvacCenter
   targetNode: sign_evaccenter
-  description: Directs to the evacuation center.
+  description: 指示前往疏散中心。
 
 - type: construction
   parent: AU14ConstructionSignEmpty
-  name: Traffic Director (Checkpoint Ahead)
+  name: 交通指挥员（前方检查站）
   id: AU14ConstructionSignCheckpoint
   targetNode: sign_cpahead
-  description: Warns of a checkpoint ahead.
+  description: 警告前方有检查站。
 
 - type: construction
   parent: AU14ConstructionSignEmpty
-  name: Traffic Director (Follow Army Orders)
+  name: 交通指挥员（服从军队命令）
   id: AU14ConstructionSignFollowOrders
   targetNode: sign_armyorders
-  description: Reminder to follow army orders.
+  description: 提醒：请遵守军队命令。
 
 - type: construction
   parent: AU14ConstructionSignEmpty
-  name: Traffic Director (Tune Freq)
+  name: 交通指挥员（调频）
   id: AU14ConstructionSignTuneFreq
   targetNode: sign_freqtune
-  description: Tells people to tune to 91.7 AM.
+  description: 告诉人们调到91.7 AM。
 
 - type: construction
   parent: AU14ConstructionSignEmpty
-  name: Traffic Director (Slow Down)
+  name: 交通指挥员（减速）
   id: AU14ConstructionSignSlowDown
   targetNode: sign_slowdown
-  description: Instructs to slow down.
+  description: 指示减速。
 
 # ├──[ CONSTRUCTION GRAPH ]──────────────────────────────────────────┤
 - type: constructionGraph

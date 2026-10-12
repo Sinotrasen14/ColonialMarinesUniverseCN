@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCWeaponRifleAK4047
-  name: PP-13-M assault SMG
+  name: PP-13-M突击冲锋枪
   id: RuMCWeaponSMGsPP13M
-  description: The UPP assault SMG was designed for advanced assault units. The M in the name stands for "many," as there were many of them produced.
+  description: UPP突击冲锋枪是为精锐突击部队设计的。名称中的M代表“many”，因为其产量众多。
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Guns/SMGs/PP13M.rsi
@@ -59,7 +59,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RuMCMagazinePP13M
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -174,8 +174,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RuMCMagazinePP13M
-  name: PP13M magazine (10x20mm)
-  description: Magazine for PP13M with 54 rounds.
+  name: PP13M 弹匣（10x20mm）
+  description: PP13M 弹匣，54 发。
   components:
   - type: Tag
     tags:
@@ -204,8 +204,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RuMCMagazinePP13MTracer
-  name: PP13M tracer magazine (10x20mm)
-  description: Magazine for PP13M with 54 tracer rounds.
+  name: PP13M曳光弹弹匣（10x20mm）
+  description: PP13M 弹匣，含 54 发曳光弹。
   components:
   - type: Tag
     tags:
@@ -234,8 +234,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RuMCMagazinePP13MAP
-  name: PP13M AP magazine (10x20mm)
-  description: Magazine for PP13M with 54 AP rounds.
+  name: PP13M AP弹匣（10x20mm）
+  description: PP13M 弹匣，含 54 发 AP 弹。
   components:
   - type: Tag
     tags:

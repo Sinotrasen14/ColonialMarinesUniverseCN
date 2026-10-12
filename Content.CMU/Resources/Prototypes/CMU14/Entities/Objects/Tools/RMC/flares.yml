@@ -2,7 +2,7 @@
   parent: RMCFlareL96
   id: AU14FlareRMC
   suffix: Alt
-  description: An RMC issued flare that burns in both the visual and ultraviolet spectrum. There are instructions on the side, it reads 'pull cord, make light'.
+  description: 一种由RMC配发的照明弹，可在可见光谱和紫外光谱中燃烧。侧面印有说明，写着“拉绳，发光”。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/flares.rsi
@@ -26,9 +26,9 @@
   abstract: true
   parent: BaseItem
   id: AU14PackFlareBaseRMC
-  name: L96 marking flare pack
+  name: L96标记照明弹包
   suffix: Alt
-  description: A packet of eight M94 Marking Flares. Carried by Marine soldiers to light dark areas that cannot be reached with the usual TNR Shoulder Lamp.
+  description: 一包八枚M94标记照明弹。由海军陆战队士兵携带，用于照亮普通TNR肩灯无法到达的黑暗区域。
   components:
   - type: Item
     size: Normal
@@ -38,7 +38,7 @@
   - type: CMItemSlots
     count: 8
     slot:
-      name: Flare
+      name: 耀斑
       whitelist:
         tags:
         - AU14FlareRMC
@@ -77,8 +77,8 @@
 - type: entity
   parent: RMCBoxMagazineSupplySmallBase
   id: AU14BoxPackFlareRMCEmpty
-  name: box of L96 flare packs (x10)
-  description: A box of L96 marking flare packs, to brighten up your day.
+  name: 一箱L96照明弹包（x10）
+  description: 一盒L96标记照明弹包，点亮你的一天。
   components:
   - type: Construction
     graph: RMCBoxMagazine
@@ -88,7 +88,7 @@
   - type: CMItemSlots
     count: 10
     slot:
-      name: FlarePack
+      name: 耀斑包
       whitelist:
         tags:
         - AU14FlarePackRMC

@@ -1,8 +1,8 @@
 - type: entity
   parent: StorageCanister
   id: CMUCanisterEmpty
-  name: empty canister
-  description: A canister that can contain any type of gas. This one contains none of them yet, which is rather the point. It can be attached to connector ports using a wrench.
+  name: 空气罐
+  description: 一个可以容纳任何类型气体的气罐。这个还没有装任何气体，而这正是它的意义所在。可以用扳手将其连接到连接端口上。
   components:
   # CMU economy: intact must outprice its broken scrap (125) but stay under catalog cost (150)
   - type: StaticPrice
@@ -240,8 +240,8 @@
 - type: entity
   parent: PlasmaCanister
   id: CMUCanisterPhoron
-  name: phoron canister
-  description: A canister that can contain any type of gas. This one is supposed to contain refined phoron. It can be attached to connector ports using a wrench.
+  name: 福隆气罐
+  description: 一个可以容纳任何类型气体的气罐。这个气罐应该装有精炼的phoron。可以使用扳手将其连接到连接端口。
   components:
   - type: StaticPrice
     price: 130

@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   name: XMP5A6/10 CQW
   id: AU14WeaponSMGXMP5A6HAZOPS
-  description: Winner of the 2172 HAZOPS Close Quarters Weapon program, this German-based "SMG" answers the question; "What if we put the standard USCMC rifle caliber in a machinepistol?". Despite low accuracy, it has a high firerate and impressive stopping power. Chambered in 10x24mm. Can load M41A magazines.
+  description: 2172年HAZOPS近战武器项目的获胜者，这款德国“冲锋枪”回答了这样一个问题：“如果把美国殖民海军陆战队标准步枪口径装进冲锋手枪里会怎样？”尽管精度较低，但它射速高，停止作用出色。使用10x24毫米弹药。可装填M41A弹匣。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Weapons/Guns/SMGs/XMP5A6.rsi
@@ -39,7 +39,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -95,8 +95,8 @@
 - type: entity
   parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
   id: AU14AttachmentM203A4GrenadeLauncher
-  name: M203A4 grenade launcher
-  description: A weapon-mounted, reloadable grenade launcher.
+  name: M203A4榴弹发射器
+  description: 一种武器挂载式、可重新装填的榴弹发射器。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Weapons/Guns/Attachments/under.rsi
@@ -189,8 +189,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineXMP5A6
-  name: XMP5A6 magazine (10x24mm)
-  description: What have they done with my bannana clip? Uses 10x24mm.
+  name: XMP5A6 弹匣（10x24mm）
+  description: 他们把我的香蕉弹匣弄成什么样了？使用10x24mm。
   components:
   - type: Tag
     tags:

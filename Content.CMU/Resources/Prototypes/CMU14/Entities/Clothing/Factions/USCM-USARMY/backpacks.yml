@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBackpack
   id: AU14IMPBackpackMarine
-  name: standard weight IMP backpack
-  description: The standard-issue pack of UA forces. Designed to lug gear into the battlefield.
+  name: 标准重量IMP背包
+  description: UA部队的标准背包。专为将装备运往战场而设计。
   components:
     - type: Sprite
       sprite: CMU14/Clothing/Back/impbag.rsi
@@ -16,8 +16,8 @@
 - type: entity
   parent: AU14IMPBackpackMarine
   id: AU14IMPBackpackWorkingJoe
-  name: Working Joe utility pack
-  description: A standard IMP backpack modified for Seegson synthetic units. Opens instantly.
+  name: 工作乔实用背包
+  description: 一个为标准IMP背包，经改装适配Seegson合成人单元。可瞬间打开。
   components:
     - type: StorageOpenDoAfter
       duration: 0
@@ -27,8 +27,8 @@
 - type: entity
   parent: CMBackpack
   id: AU14CorpsmanIMPBackpackMarine
-  name: standard weight medical IMP backpack
-  description: The standard-issue pack of UA forces. Designed to lug gear into the battlefield. This one has a red cross on it.
+  name: 标准重量医疗IMP背包
+  description: UA部队的标准背包。专为将装备运往战场而设计。这个背包上有一个红十字。
   components:
     - type: Sprite
       sprite: CMU14/Clothing/Back/corpsmanbag.rsi
@@ -36,8 +36,8 @@
 - type: entity
   parent: CMBackpack
   id: AU14TechBackpackMarine
-  name: technician backpack
-  description: A large pack. Designed to engineering equipment and explosives into the battlefield.
+  name: 技术员背包
+  description: 一个大型背包。专为将工程设备和炸药运入战场而设计。
   components:
     - type: Sprite
       sprite: CMU14/Clothing/Back/techbag.rsi
@@ -45,8 +45,8 @@
 - type: entity
   parent: CMSatchel
   id: AU14SatchelCorpsman
-  name: corpsman satchel
-  description: A sterile satchel used in medical departments.
+  name: 医疗兵挎包
+  description: 一个用于医疗部门的无菌挎包。
   components:
     - type: Sprite
       sprite: CMU14/Clothing/Back/corpsmansatchel.rsi
@@ -54,8 +54,8 @@
 - type: entity
   parent: CMSatchel
   id: AU14BackpackRTOPackBlack
-  name: "Black AN/PRC-55 Portable Transceiver"
-  description: "The AN/PRC-55 Portable Transceiver, also known as AN/PRC 55 Radio Set, is a man-pack, portable VHF FM combat-net radio transceiver manufactured by Armat Battlefield Systems and used to provide short-range, two-way radiotelephone voice communication."
+  name: "黑色 AN/PRC-55 便携式收发机"
+  description: "AN/PRC-55便携式收发信机，也称为AN/PRC 55无线电套装，是一种由Armat Battlefield Systems制造的背负式便携VHF FM战斗网无线电收发信机，用于提供短距离双向无线电话语音通信。"
   components:
     - type: Sprite
       sprite: CMU14/Clothing/RTOPack/blackrtopack.rsi
@@ -94,7 +94,7 @@
 - type: entity
   parent: AU14BackpackRTOPackBlack
   id: AU14BackpackRTOPackJungle
-  name: "Jungle AN/PRC-55 Portable Transceiver"
+  name: "丛林 AN/PRC-55 便携式收发机"
   components:
     - type: Sprite
       sprite: CMU14/Clothing/RTOPack/junglertopack.rsi
@@ -105,7 +105,7 @@
 - type: entity
   parent: AU14BackpackRTOPackBlack
   id: AU14BackpackRTOPackDesert
-  name: "Desert AN/PRC-55 Portable Transceiver"
+  name: "沙漠 AN/PRC-55 便携式收发机"
   components:
     - type: Sprite
       sprite: CMU14/Clothing/RTOPack/desertrtopack.rsi
@@ -116,7 +116,7 @@
 - type: entity
   parent: AU14BackpackRTOPackBlack
   id: AU14BackpackRTOPackGray
-  name: "Gray AN/PRC-55 Portable Transceiver"
+  name: "灰色AN/PRC-55便携式收发机"
   components:
     - type: Sprite
       sprite: CMU14/Clothing/RTOPack/classicrtopack.rsi
@@ -127,8 +127,8 @@
 - type: entity
   parent: RMCSatchelMarineLogisticsBig
   id: AU14MolleBackpack
-  name: M2 MOLLE Backpack
-  description: Tactical backpack manufactured by one of the Alphatech subsidiaries. Very lightweight backpack that utilizes UA standard MOLLE fastening systems, which allows easy access and optimal weight distribution. Standard issue heavy duty pack for US army troopers.
+  name: M2 MOLLE 背包
+  description: 由Alphatech子公司之一制造的战术背包。非常轻便的背包，采用UA标准MOLLE扣具系统，便于取用并实现最佳重量分布。美军士兵的标准配发重型背包。
   components:
     - type: Sprite
       sprite: CMU14/Clothing/US_Army/Back/molle.rsi
@@ -138,8 +138,8 @@
 - type: entity
   parent: CMSatchelMarine
   id: AU14MolleSatchel
-  name: M1 MOLLE Satchel
-  description: Tactical satchel manufactured by one of the Alphatech subsidiaries. Very lightweight beltbag variant that utilizes UA standard MOLLE fastening systems. Standard issue pack for US army troopers.
+  name: M1 MOLLE 背包
+  description: 由Alphatech子公司之一制造的战术挎包。采用UA标准MOLLE固定系统的超轻量腰包变体。美军士兵的标准配发背包。
   components:
     - type: Sprite
       sprite: CMU14/Clothing/US_Army/Back/molle_satchel.rsi

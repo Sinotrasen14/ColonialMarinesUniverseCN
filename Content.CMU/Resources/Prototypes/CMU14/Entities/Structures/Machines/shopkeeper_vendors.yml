@@ -5,8 +5,8 @@
   id: AU14ShopkeeperVendorBase
   abstract: true
   parent: CMBaseStructureCorrodible
-  name: shop counter
-  description: A customisable vendor. Authorized staff can stock it with items and set prices.
+  name: 柜台
+  description: 一个可自定义的商贩。授权人员可以为其上架物品并设定价格。
   components:
   - type: AU14ShopkeeperVendor
     stockBlacklist:
@@ -58,8 +58,8 @@
 - type: entity
   id: AU14ShopkeeperVendor
   parent: AU14ShopkeeperVendorBase
-  name: shop counter
-  description: A customisable counter. The shopkeeper can stock it with any items and set prices. Prices are subject to the colony sales tax.
+  name: 柜台
+  description: 一个可自定义的柜台。店主可以在上面存放任意物品并设定价格。价格需缴纳殖民地销售税。
   suffix: Shopkeeper
 
 #For hybrisa prospera weymart. Free to use for other weymarts! 
@@ -67,8 +67,8 @@
 - type: entity
   id: AU14WeymartRacks1
   parent: AU14ShopkeeperVendorBase
-  name: shop counter
-  description: A customisable counter. The shopkeeper can stock it with any items and set prices. Prices are subject to the colony sales tax.
+  name: 店铺柜台
+  description: 一个可自定义的柜台。店主可以为其备货任何物品并设定价格。价格需缴纳殖民地销售税。
   suffix: Shopkeeper
   components:  
   - type: CMUReconFurniture
@@ -81,8 +81,8 @@
 - type: entity
   parent: AU14WeymartRacks1
   id: AU14WeymartRacks2
-  name: store rack
-  description: A bunch of metal shelves stacked on top of eachother, with items for sale lined up on the shelves.
+  name: 店铺货架
+  description: 一堆金属货架层层叠放，货架上整齐排列着待售商品。
   components:
   - type: Sprite
     sprite: CMU14/Structures/hybrisiaracks.rsi
@@ -92,8 +92,8 @@
 - type: entity
   parent: AU14WeymartRacks1
   id: AU14WeymartRacks3
-  name: store rack
-  description: A bunch of metal shelves stacked on top of eachother, with items for sale lined up on the shelves.
+  name: 商店货架
+  description: 一堆金属货架层层叠放，货架上整齐排列着待售商品。
   components:
   - type: Sprite
     sprite: CMU14/Structures/hybrisiaracks.rsi
@@ -103,8 +103,8 @@
 - type: entity
   parent: AU14WeymartRacks1
   id: AU14WeymartRacks4
-  name: store rack
-  description: A bunch of metal shelves stacked on top of eachother, with items for sale lined up on the shelves.
+  name: 店铺货架
+  description: 一堆金属货架层层叠放，货架上整齐排列着待售商品。
   components:
   - type: Sprite
     sprite: CMU14/Structures/hybrisiaracks.rsi
@@ -114,8 +114,8 @@
 - type: entity
   parent: AU14WeymartRacks1
   id: AU14WeymartRacks5
-  name: store rack
-  description: A bunch of metal shelves stacked on top of eachother, with items for sale lined up on the shelves.
+  name: 店铺货架
+  description: 一堆金属货架层层叠放，货架上整齐排列着待售商品。
   components:
   - type: Sprite
     sprite: CMU14/Structures/hybrisiaracks.rsi
@@ -125,8 +125,8 @@
 - type: entity
   parent: AU14WeymartRacks1
   id: AU14WeymartRacks6
-  name: store rack
-  description: A bunch of metal shelves stacked on top of eachother, with items for sale lined up on the shelves.
+  name: 商店货架
+  description: 一堆金属货架层层叠放，货架上整齐排列着待售商品。
   components:
   - type: Sprite
     sprite: CMU14/Structures/hybrisiaracks.rsi
@@ -136,8 +136,8 @@
 - type: entity
   parent: AU14WeymartRacks1
   id: AU14WeymartRacks7
-  name: store rack
-  description: A bunch of metal shelves stacked on top of eachother, with items for sale lined up on the shelves.
+  name: 商店货架
+  description: 一堆金属货架层层叠放，货架上整齐排列着待售商品。
   components:
   - type: Sprite
     sprite: CMU14/Structures/hybrisiaracks.rsi

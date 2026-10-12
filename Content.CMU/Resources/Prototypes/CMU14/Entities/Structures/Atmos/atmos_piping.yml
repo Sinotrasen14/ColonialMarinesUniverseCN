@@ -155,8 +155,8 @@
   parent: GasVentPump
   id: !type:CreateVariants
     values: [ CMVentPump, CMVentPumpAlt1, CMVentPumpAlt2 ]
-  name: AV-1 air vent
-  description: A floor grate wired into the pipe network. Pushes air in, pulls air out, whichever the atmos tech asked for last.
+  name: AV-1通风口
+  description: 一个接入管道网络的地板格栅。它往里面送风，也往外抽风，取决于大气技术员上一次的要求。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -216,8 +216,8 @@
   parent: GasVentScrubber
   id: !type:CreateVariants
     values: [ CMVentScrubber, CMVentScrubberAlt1, CMVentScrubberAlt2 ]
-  name: AS-1 air scrubber
-  description: The wall-mounted half of the Maid line. Pulls the bad half out of the air for the pipes to deal with; chokes on plasma and phoron.
+  name: AS-1空气洗涤器
+  description: 壁挂式的女仆系列的一半。把坏的一半从空气中抽出来交给管道处理；会被等离子和phoron呛住。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -277,8 +277,8 @@
   parent: GasPassiveVent
   id: !type:CreateVariants
     values: [ CMUPassiveVent, CMUPassiveVentAlt1, CMUPassiveVentAlt2 ]
-  name: PV-0 passive vent
-  description: An open hole in the pipe. No pump, no power, no opinions. Gas goes wherever pressure pushes it, which is how it earned the name.
+  name: PV-0无源通风口
+  description: 管道上的一个敞开的孔。没有泵，没有动力，没有意见。气体随压力推动而流动，这就是它得名的由来。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -311,8 +311,8 @@
   parent: GasOutletInjector
   id: !type:CreateVariants
     values: [ CMUOutletInjector, CMUOutletInjectorAlt1, CMUOutletInjectorAlt2 ]
-  name: AI-1 air injector
-  description: Injects pipe gas into a room whether the room asked for it or not.
+  name: AI-1空气注入器
+  description: 无论房间是否需要，都会向房间注入管道气体。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -346,8 +346,8 @@
   parent: GasPressurePump
   id: !type:CreateVariants
     values: [ CMUGasPressurePump, CMUGasPressurePumpAlt1, CMUGasPressurePumpAlt2 ]
-  name: GP-1 gas pump
-  description: Moves gas down the line at a pressure you set, all shift, every shift.
+  name: GP-1加油泵
+  description: 以你设定的压力沿管线输送气体，每个班次都是如此。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -366,8 +366,8 @@
   parent: GasVolumePump
   id: !type:CreateVariants
     values: [ CMUGasVolumePump, CMUGasVolumePumpAlt1, CMUGasVolumePumpAlt2 ]
-  name: GV-2 volumetric gas pump
-  description: Like the Pusher, but it moves gas by volume and asks fewer questions about what is downstream.
+  name: GV-2 容积式气体泵
+  description: 像推气机，但它按体积推动气体，并且对下游是什么过问更少。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -386,8 +386,8 @@
   parent: GasPassiveGate
   id: !type:CreateVariants
     values: [ CMUGasPassiveGate, CMUGasPassiveGateAlt1, CMUGasPassiveGateAlt2 ]
-  name: PG-1 passive gate
-  description: A one-way valve that runs without power. Gas passes politely and never doubles back.
+  name: PG-1无源门
+  description: 一个无需电源的单向阀。气体礼貌通行，绝不倒流。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -406,8 +406,8 @@
   parent: GasValve
   id: !type:CreateVariants
     values: [ CMUGasValve, CMUGasValveAlt1, CMUGasValveAlt2 ]
-  name: MV-1 manual valve
-  description: A pipe with a hand-operated valve and nothing smart about it. Where the gas goes is decided by whoever walks over.
+  name: MV-1 手动阀
+  description: 一根带有手动阀门的管道，没有任何智能可言。气体流向哪里，取决于谁走过来。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -426,8 +426,8 @@
   parent: SignalControlledValve
   id: !type:CreateVariants
     values: [ CMUSignalControlledValve, CMUSignalControlledValveAlt1, CMUSignalControlledValveAlt2 ]
-  name: V-2 signal valve
-  description: A valve that opens and closes when the wires tell it to. It has never once argued.
+  name: V-2信号阀
+  description: 一个阀门，电线让它开它就开，让它关它就关。它从未有过一句怨言。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -446,8 +446,8 @@
   parent: GasPressureRegulator
   id: !type:CreateVariants
     values: [ CMUGasPressureRegulator, CMUGasPressureRegulatorAlt1, CMUGasPressureRegulatorAlt2 ]
-  name: PR-3 inlet pressure regulator
-  description: Releases gas downstream once the inlet pressure clears its setpoint, and not one kPa sooner. Nothing moves until the terms are met.
+  name: PR-3 入口压力调节器
+  description: 一旦入口压力达到其设定值，便向下游释放气体，绝不提前一kPa。条件未满足之前，一切都不会动作。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -466,8 +466,8 @@
   parent: GasPort
   id: !type:CreateVariants
     values: [ CMUGasPort, CMUGasPortAlt1, CMUGasPortAlt2 ]
-  name: CP-1 connector port
-  description: A latching point for canisters and portable machines. Park, latch, and let the pipes do the hauling.
+  name: CP-1连接器端口
+  description: 用于罐体和便携式机器的锁定点。停放、锁定，让管道来完成拖运。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -486,8 +486,8 @@
   parent: GasDualPortVentPump
   id: !type:CreateVariants
     values: [ CMUGasDualPortVentPump, CMUGasDualPortVentPumpAlt1, CMUGasDualPortVentPumpAlt2 ]
-  name: DV-3 dual-port air vent
-  description: The Breath line's dual-port model. Breathes in and out at the same time, no waiting in between.
+  name: DV-3双端口排气口
+  description: The Breath 系列的双端口型号。同时吸气和呼气，中间无需等待。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -506,8 +506,8 @@
   parent: HeatExchanger
   id: !type:CreateVariants
     values: [ CMUHeatExchanger, CMUHeatExchangerAlt1, CMUHeatExchangerAlt2 ]
-  name: HX-1 heat exchanger
-  description: Transfers heat between the pipe and its surroundings without the gas changing hands.
+  name: HX-1换热器
+  description: 在管道与其周围环境之间传递热量，气体不发生转移。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -527,8 +527,8 @@
   parent: HeatExchangerBend
   id: !type:CreateVariants
     values: [ CMUHeatExchangerBend, CMUHeatExchangerBendAlt1, CMUHeatExchangerBendAlt2 ]
-  name: HX-1B heat exchanger bend
-  description: The Middleman, bent for corners. Same terms, different angle.
+  name: HX-1B换热器弯头
+  description: 中间商，专攻角落。同样的条件，不同的角度。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -549,8 +549,8 @@
   parent: GasFilter
   id: !type:CreateVariants
     values: [ CMUGasFilter, CMUGasFilterAlt1, CMUGasFilterAlt2 ]
-  name: GF-4 gas filter
-  description: Sends one chosen gas down the side line and everyone else straight ahead. The list changes nightly.
+  name: GF-4气体过滤器
+  description: 将选中的一种气体送入侧线，其余全部直行。名单每晚更换。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -569,8 +569,8 @@
   parent: GasFilterFlipped
   id: !type:CreateVariants
     values: [ CMUGasFilterFlipped, CMUGasFilterFlippedAlt1, CMUGasFilterFlippedAlt2 ]
-  name: GF-4F gas filter
-  description: The Bouncer, mirrored. Same list, door on the other side.
+  name: GF-4F气体过滤器
+  description: 保镖，镜像版。同样的名单，门在另一侧。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -589,8 +589,8 @@
   parent: GasMixer
   id: !type:CreateVariants
     values: [ CMUGasMixer, CMUGasMixerAlt1, CMUGasMixerAlt2 ]
-  name: GM-4 gas mixer
-  description: Blends two lines into one at a ratio you set. The house special is 'breathable'.
+  name: GM-4气体混合器
+  description: 按你设定的比例将两条线混合为一条。本店特色是“透气”。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -609,8 +609,8 @@
   parent: GasMixerFlipped
   id: !type:CreateVariants
     values: [ CMUGasMixerFlipped, CMUGasMixerFlippedAlt1, CMUGasMixerFlippedAlt2 ]
-  name: GM-4F gas mixer
-  description: The Bartender, mirrored. Same recipes, bottles on the other side.
+  name: GM-4F气体混合器
+  description: 镜像调酒师。同样的配方，瓶子在另一边。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -629,8 +629,8 @@
   parent: PressureControlledValve
   id: !type:CreateVariants
     values: [ CMUPressureControlledValve, CMUPressureControlledValveAlt1, CMUPressureControlledValveAlt2 ]
-  name: PV-3 pneumatic valve
-  description: A valve that takes its orders from pressure instead of people, opening once the control pipe out-pressures the output by about an atmosphere. Unlike the Yes Man, it argues.
+  name: PV-3气动阀
+  description: 一个听从压力而非人指挥的阀门，当控制管压力比输出压力高出约一个大气压时便会打开。与“应声虫”不同，它会争辩。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -650,8 +650,8 @@
   parent: GasPipeSensor
   id: !type:CreateVariants
     values: [ CMUGasPipeSensor, CMUGasPipeSensorAlt1, CMUGasPipeSensorAlt2 ]
-  name: PS-1 gas pipe sensor
-  description: Bolts onto a pipe and reports everything moving through it to the nearest console. Discretion not included.
+  name: PS-1气体管道传感器
+  description: 用螺栓固定在管道上，向最近的控制台报告流经管道的一切。不包含谨慎。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:
@@ -670,8 +670,8 @@
   parent: GasPipeManifold
   id: !type:CreateVariants
     values: [ CMUGasPipeManifold, CMUGasPipeManifoldAlt1, CMUGasPipeManifoldAlt2 ]
-  name: PM-1 gas pipe manifold
-  description: Joins pipes of different configurations at one junction. Everyone gets through, eventually.
+  name: PM-1气体管道歧管
+  description: 将不同配置的管道连接在一个交汇处。所有人最终都能通过。
   categories: !type:CreateVariants
     sequences: [ [ ], [ HideSpawnMenu ], [ HideSpawnMenu ] ]
   placement:

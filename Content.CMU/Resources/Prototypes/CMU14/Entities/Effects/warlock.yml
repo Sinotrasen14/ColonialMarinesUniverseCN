@@ -1,7 +1,7 @@
 - type: entity
   id: CMUXenoPsychicShieldSegment
   categories: [HideSpawnMenu]
-  name: psychic shield
+  name: 灵能护盾
   components:
     - type: Physics
       bodyType: Static
@@ -27,7 +27,7 @@
   parent: CMUXenoPsychicShieldSegment
   id: CMUXenoPsychicShield
   categories: [HideSpawnMenu]
-  name: psychic shield
+  name: 灵能护盾
   components:
     - type: Sprite
       drawdepth: Effects
@@ -41,7 +41,7 @@
 - type: entity
   id: CMUXenoPsychicCrushWarning
   categories: [HideSpawnMenu]
-  name: psychic crush warning
+  name: 灵能碾压警告
   components:
     # Lifetime covers the full 5-pulse channel at 1 s/pulse plus a small buffer, so all rings
     # spawned during the channel remain visible until detonation. Ordinarily the warning is
@@ -63,7 +63,7 @@
 - type: entity
   id: CMUXenoPsychicCrushOrb
   categories: [HideSpawnMenu]
-  name: psychic crush
+  name: 灵能碾压
   components:
     - type: Sprite
       drawdepth: Overlays
@@ -81,7 +81,7 @@
 - type: entity
   id: CMUXenoPsychicCrushSmooth
   categories: [HideSpawnMenu]
-  name: psychic crush
+  name: 灵能碾压
   components:
     - type: TimedDespawn
       lifetime: 0.5
@@ -98,7 +98,7 @@
 - type: entity
   id: CMUXenoPsychicCrushHard
   categories: [HideSpawnMenu]
-  name: psychic crush
+  name: 灵能碾压
   components:
     - type: TimedDespawn
       lifetime: 0.4
@@ -115,7 +115,7 @@
 - type: entity
   id: CMUXenoPsychicCrushBlur
   categories: [HideSpawnMenu]
-  name: psychic crush
+  name: 灵能碾压
   components:
     - type: TimedDespawn
       lifetime: 1
@@ -128,7 +128,7 @@
 - type: entity
   id: CMUXenoWarlockCrushChannelEffect
   categories: [HideSpawnMenu]
-  name: psychic crush
+  name: 灵能碾压
   components:
     - type: PointLight
       radius: 3
@@ -141,7 +141,7 @@
 - type: entity
   id: CMUXenoWarlockCrushParticles
   categories: [HideSpawnMenu]
-  name: psychic crush
+  name: 心灵碾压
   components:
     - type: CMUXenoWarlockParticleEmitter
       effect: PsychicCrushCharge
@@ -152,7 +152,7 @@
 - type: entity
   id: CMUXenoWarlockBlastChannelEffect
   categories: [HideSpawnMenu]
-  name: psychic blast
+  name: 灵能冲击
   components:
     - type: PointLight
       radius: 3
@@ -165,7 +165,7 @@
 - type: entity
   id: CMUXenoWarlockBlastParticles
   categories: [HideSpawnMenu]
-  name: psychic blast
+  name: 灵能冲击
   components:
     - type: CMUXenoWarlockParticleEmitter
       effect: PsychicBlastCharge
@@ -176,7 +176,7 @@
 - type: entity
   id: CMUXenoWarlockShieldChannelEffect
   categories: [HideSpawnMenu]
-  name: psychic shield
+  name: 灵能护盾
   components:
     - type: PointLight
       radius: 3
@@ -190,7 +190,7 @@
   parent: XenoBaseProjectile
   id: CMUXenoPsychicBlastProjectile
   categories: [HideSpawnMenu]
-  name: psychic blast
+  name: 灵能冲击
   components:
     - type: Sprite
       sprite: _RMC14/Effects/beam.rsi
@@ -219,7 +219,7 @@
 - type: entity
   id: CMUXenoPsychicBlastShockwave
   categories: [HideSpawnMenu]
-  name: psychic blast shockwave
+  name: 灵能冲击波
   components:
     - type: TimedDespawn
       lifetime: 0.6

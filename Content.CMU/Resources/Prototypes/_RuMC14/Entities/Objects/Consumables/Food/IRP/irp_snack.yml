@@ -2,7 +2,7 @@
   abstract: true
   parent: RuMCIRPComponentBase
   id: RuMCIRPSnackComponentBase
-  description: Пакет для различных снеков.
+  description: 零食包装袋。
   components:
   - type: Sprite
     state: pack
@@ -10,8 +10,8 @@
 - type: entity
   parent: RuMCIRPSnackComponentBase
   id: RuMCIRPComponentFish
-  name: salted fish pouch
-  description: A sealed pouch containing salted fish. Stone-like to the touch. Knead it before use, or risk breaking a tooth.
+  name: 咸鱼袋
+  description: 一个密封袋，里面装着咸鱼。摸起来像石头。使用前先揉一揉，否则可能硌坏牙齿。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -20,8 +20,8 @@
 - type: entity
   parent: RuMCIRPSnackComponentBase
   id: RuMCIRPComponentPie
-  name: meat pie pouch
-  description: A sealed pouch containing a simple proletarian pie filled with meat and vegetables. Nothing fancy, but it fills the stomach.
+  name: 肉馅饼袋
+  description: 一个密封袋，里面装着一个简单的无产阶级馅饼，馅料是肉和蔬菜。没什么特别的，但能填饱肚子。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -30,8 +30,8 @@
 - type: entity
   parent: RuMCIRPSnackComponentBase
   id: RuMCIRPComponentChicken
-  name: canned chicken pouch
-  description: A sealed pouch containing tender canned chicken in its own broth. Not bad for field rations, though the texture leaves something to be desired.
+  name: 罐装鸡肉袋
+  description: 一个密封袋，里面装着浸在自身汤汁中的嫩滑罐装鸡肉。作为野战口粮还算不错，只是口感还有待改进。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -40,8 +40,8 @@
 - type: entity
   parent: RuMCIRPSnackComponentBase
   id: RuMCIRPComponentMashedPotatoes
-  name: mashed potatoes pouch
-  description: A sealed pouch containing instant mashed potatoes. Add water, stir, and enjoy the taste of the frontline.
+  name: 土豆泥袋
+  description: 一个密封袋，里面装着速食土豆泥。加水、搅拌，享受前线的味道。
   components:
   - type: SpawnItemsOnUse
     items:
@@ -53,7 +53,7 @@
   abstract: true
   parent: RuMCIRPComponentBase
   id: RuMCIRPGalletComponentBase
-  description: Пакет для галет.
+  description: 饼干包装袋。
   components:
   - type: Sprite
     state: gallet_pack
@@ -61,8 +61,8 @@
 - type: entity
   parent: RuMCIRPGalletComponentBase
   id: RuMCIRPComponentGallet
-  name: hardtack biscuit pouch
-  description: A sealed pouch containing dense, dry biscuits that could outlast any war. Best soaked in tea or water before consumption.
+  name: 硬饼干袋
+  description: 一个密封袋，里面装着密实干燥的饼干，保质期足以熬过任何战争。食用前最好用茶水或水浸泡。
   components:
   - type: SpawnItemsOnUse
     items:

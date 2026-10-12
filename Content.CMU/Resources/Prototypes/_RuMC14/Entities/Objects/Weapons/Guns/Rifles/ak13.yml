@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCWeaponRifleAK4047
-  name: AK-13 assault rifle
+  name: AK-13突击步枪
   id: RuMCWeaponRifleAK13
-  description: The UPP assault rifle was developed for advanced assault units. Many U.S. Marines dislike it because it is superior to the M41A models.
+  description: UPP突击步枪是为先进突击部队开发的。许多美国海军陆战队员不喜欢它，因为它优于M41A型号。
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Guns/Rifles/AK13.rsi
@@ -65,7 +65,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleAK4047
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg

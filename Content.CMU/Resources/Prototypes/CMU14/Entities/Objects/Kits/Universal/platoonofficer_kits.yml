@@ -17,113 +17,113 @@
 - type: entity
   parent: AU14KitPlatoonOfficer
   id: AU14KitJOStaffOfficerKit
-  name: Staff Officer (SO) Kit
+  name: 参谋军官（SO）套装
   description: >-
-    The battle-planning kit is suited for working alongside the Commander in the CIC to coordinate combat operations and plan the next miracle.
+    这套战斗规划装备适合在CIC中与指挥官并肩工作，协调作战行动并规划下一场奇迹。
 
-    Commonly called a CO's greatest ally, that keeps the operation and the orders flowing. If the XO runs the ship, the SO runs the fight.
+    它通常被称为CO最得力的盟友，让行动和命令顺畅流转。如果说XO负责管理舰船，那么SO就负责指挥战斗。
   components:
   - type: StorageFill
     contents:
-      - id: AU14HeadBeretSO
-        amount: 1
-      - id: AU14WebbingDropPouch
-        amount: 1
-      - id: RMCHeadUNMCHeadset
-        amount: 1
-      - id: RMCM5CameraGear
-        amount: 1
-      - id: RMCMegaphone
-        amount: 1
-      - id: RMCLaserDesignatorPVE
-        amount: 1
-      - id: AU14StampSO
-        amount: 1
+    - id: AU14HeadBeretSO
+      amount: 1
+    - id: AU14WebbingDropPouch
+      amount: 1
+    - id: RMCHeadUNMCHeadset
+      amount: 1
+    - id: RMCM5CameraGear
+      amount: 1
+    - id: RMCMegaphone
+      amount: 1
+    - id: RMCLaserDesignatorPVE
+      amount: 1
+    - id: AU14StampSO
+      amount: 1
 
 - type: entity
   parent: AU14KitPlatoonOfficer
   id: AU14KitJOIntelligenceOfficer
-  name: Intelligence Officer (IO) Kit
+  name: 情报官（IO）套件
   description: >-
-    The CIC's most valuable asset, provided they stay in contact and let the information do the shooting.
+    CIC最宝贵的资产，前提是他们保持联络，让信息来完成射击。
 
-    This kit is suited for deploying into the field to gather and relay critical intelligence back to command.
+    这套装备适合部署到前线，收集关键情报并传回指挥部。
 
-    Where the XO is the heart, an SO the mouth, an EO the brains, the IO is the eyes and ears of a command element.
+    如果说XO是心脏，SO是嘴巴，EO是大脑，那么IO就是指挥部元素的眼和耳。
   components:
   - type: StorageFill
     contents:
-      - id: AU14HeadBeretIO
-        amount: 1
+    - id: AU14HeadBeretIO
+      amount: 1
       #- id: AU14GOVFORIOHeadset # I dont see OPFOR kits so use AU14OPFORIOHeadset for OPFOR
         #amount: 1
-      - id: CMHandsInsulated
-        amount: 1
-      - id: AU14WebbingDumpPouch
-        amount: 1
-      - id: RMCPouchDocument
-        amount: 1
-      - id: RMCIntelDetector
-        amount: 1
-      - id: AU14RadioJammer
-        amount: 1
-      - id: CMPamphletIntel
-        amount: 1
-      - id: RMCTacticalPrybar
-        amount: 1
-      - id: RMCExplosiveBreachingCharge
-        amount: 1
-      - id: RMCBinocularsPVE
-        amount: 1
-      - id: RMCFulton20
-        amount: 1
-      - id: RMCWeaponPistolM82FEmpty
-        amount: 1
-      - id: RMCPackFlareCAS
-        amount: 1
-      - id: AU14StampIO
-        amount: 1
-      - id: AU14InfiltratorApparelBundle
-        amount: 1
+    - id: CMHandsInsulated
+      amount: 1
+    - id: AU14WebbingDumpPouch
+      amount: 1
+    - id: RMCPouchDocument
+      amount: 1
+    - id: RMCIntelDetector
+      amount: 1
+    - id: AU14RadioJammer
+      amount: 1
+    - id: CMPamphletIntel
+      amount: 1
+    - id: RMCTacticalPrybar
+      amount: 1
+    - id: RMCExplosiveBreachingCharge
+      amount: 1
+    - id: RMCBinocularsPVE
+      amount: 1
+    - id: RMCFulton20
+      amount: 1
+    - id: RMCWeaponPistolM82FEmpty
+      amount: 1
+    - id: RMCPackFlareCAS
+      amount: 1
+    - id: AU14StampIO
+      amount: 1
+    - id: AU14InfiltratorApparelBundle
+      amount: 1
 
 - type: entity
   parent: AU14KitPlatoonOfficer
   id: AU14KitJOEngineeringKit
-  name: Engineering Officer (EO) Kit
+  name: 工程部干事（EO）套装
   description: >-
-    This engineering kit is suited for deploying into the field to support engineering efforts such as constructing forward operating bases and maintaining infrastructure.
+    这套工程部套件适合部署到现场，以支持工程作业，例如建造前沿作战基地和维护基础设施。
 
-    Either a seasoned technician taking care of the FOB, or the first to commandeer the humvee's keys. Includes a reset key for when the synths get philosophical.
+    无论是负责前沿作战基地的资深技术员，还是第一个征用悍马车钥匙的人。内含一把重置钥匙，以备合成人开始思考哲学问题时使用。
   components:
   - type: StorageFill
     contents:
-      - id: CMHeadBeretEngineer
-        amount: 1
-      - id: RMCHazardVest
-        amount: 1
-      - id: AU14BeltUtilityCombatFilled
-        amount: 1
-      - id: RMCKitEngineering
-        amount: 1
-      - id: RMCPamphletAdminConstruction3
-        amount: 1
-      - id: RMCSynthResetKey
-        amount: 1
-      - id: RMCNailgunTactical
-        amount: 1
-      - id: RMCMagazineSMGNailgun
-        amount: 2
-      - id: AU14StampEO
-        amount: 1
+    - id: CMHeadBeretEngineer
+      amount: 1
+    - id: RMCHazardVest
+      amount: 1
+    - id: AU14BeltUtilityCombatFilled
+      amount: 1
+    - id: RMCKitEngineering
+      amount: 1
+    - id: RMCPamphletAdminConstruction3
+      amount: 1
+    - id: RMCSynthResetKey
+      amount: 1
+    - id: RMCNailgunTactical
+      amount: 1
+    - id: RMCMagazineSMGNailgun
+      amount: 2
+    - id: AU14StampEO
+      amount: 1
 
 - type: entity
   parent: AU14KitPlatoonOfficer
   id: AU14KitJOAdjutantKit
-  name: Executive Officer (XO) Kit
+  name: 副指挥官（XO）套装
   description: >-
-    The administrative heart of the command element. The most senior is the XO, the CO's second in command (who actually reads the fine print).
+    指挥部行政核心。级别最高的是副指挥官，即指挥官的第二把手（真正细读细则的人）。
 
-    Stuffed with tools needed to turn reports into orders, process intelligence reports aboard the ship and turn chaos into clarity.
+    这里塞满了将报告转化为命令、处理舰上情报报告、化混乱为清晰所需的工具。
   components:
   - type: Storage
     maxItemSize: Ginormous
@@ -131,47 +131,47 @@
     - 0,0,13,5
   - type: StorageFill
     contents:
-      - id: AU14HeadBeretADJ
-        amount: 1
-      - id: AU14WebbingAdminPouch
-        amount: 1
-      - id: RMCPouchDocument
-        amount: 1
-      - id: RMCM5CameraGear
-        amount: 1
-      - id: CMStampApproved
-        amount: 1
-      - id: CMStampDenied
-        amount: 1
-      - id: CMPen
-        amount: 1
-      - id: CMClipboard
-        amount: 1
-      - id: CMPaperBin30
-        amount: 2
-      - id: CMFolderBlackEmpty
-        amount: 2
-      - id: CMFolderWhiteEmpty
-        amount: 2
-      - id: CMFolderBlueEmpty
-        amount: 2
-      - id: CMFolderRedEmpty
-        amount: 2
-      - id: CMFolderYellowEmpty
-        amount: 2
-      - id: AU14StampAO
-        amount: 1
-      - id: CMUUniversalPaperTool
-        amount: 1
+    - id: AU14HeadBeretADJ
+      amount: 1
+    - id: AU14WebbingAdminPouch
+      amount: 1
+    - id: RMCPouchDocument
+      amount: 1
+    - id: RMCM5CameraGear
+      amount: 1
+    - id: CMStampApproved
+      amount: 1
+    - id: CMStampDenied
+      amount: 1
+    - id: CMPen
+      amount: 1
+    - id: CMClipboard
+      amount: 1
+    - id: CMPaperBin30
+      amount: 2
+    - id: CMFolderBlackEmpty
+      amount: 2
+    - id: CMFolderWhiteEmpty
+      amount: 2
+    - id: CMFolderBlueEmpty
+      amount: 2
+    - id: CMFolderRedEmpty
+      amount: 2
+    - id: CMFolderYellowEmpty
+      amount: 2
+    - id: AU14StampAO
+      amount: 1
+    - id: CMUUniversalPaperTool
+      amount: 1
 
 - type: entity
   parent: AU14KitPlatoonOfficer
   id: AU14KitJOMedicalOfficerKit
-  name: Medical Officer (CMO) Kit
+  name: 医疗官（首席医疗官）套装
   description: >-
-    The Chief Medical Officer (CMO) directs all medical operations and laboratory safety protocols, stabilizing critical cases and managing department logistics under high-pressure.
+    首席医疗官（CMO）负责指挥所有医疗操作和实验室安全规程，稳定危重病例并在高压环境下管理科室后勤。
 
-    As the clinical lead for both the medical and research, the CMO ensures all personnel remain healthy, safety standards are enforced, and laboratories remain fully operational.
+    作为医疗和科研部的临床负责人，首席医疗官确保所有人员保持健康、安全标准得到执行，且实验室保持全面运转。
   components:
   - type: Storage
     maxItemSize: Ginormous
@@ -179,49 +179,49 @@
     - 0,0,5,9
   - type: StorageFill
     contents:
-      - id: CMHeadCapSurgGreen
-        amount: 1
-      - id: CMHeadCapCMO
-        amount: 1
-      - id: RMCLabcoatCMO
-        amount: 1
-      - id: RMCReagentJug
-        amount: 1
-      - id: CMSyringe
-        amount: 1
-      - id: CMWebbingSurgicalGreen
-        amount: 1
-      - id: CMScalpelManager
-        amount: 1
-      - id: CMScalpelPICT
-        amount: 1
-      - id: CMScalpelLaserAdvanced
-        amount: 1
-      - id: RMCGlassesMedicalHUDGlasses
-        amount: 1
-      - id: RMCPortableDialysis
-        amount: 1
-      - id: ClothingNeckStethoscope
-        amount: 1
-      - id: CMPenFountain
-        amount: 1
-      - id: CMFolderWhite
-        amount: 1
-      - id: CMBeltMedicBagFilled
-        amount: 1
-      - id: RMCPouchMedicalFill
-        amount: 1
-      - id: RMCPouchMedkitFill
-        amount: 1
-      - id: AU14StampCMO
-        amount: 1
+    - id: CMHeadCapSurgGreen
+      amount: 1
+    - id: CMHeadCapCMO
+      amount: 1
+    - id: RMCLabcoatCMO
+      amount: 1
+    - id: RMCReagentJug
+      amount: 1
+    - id: CMSyringe
+      amount: 1
+    - id: CMWebbingSurgicalGreen
+      amount: 1
+    - id: CMScalpelManager
+      amount: 1
+    - id: CMScalpelPICT
+      amount: 1
+    - id: CMScalpelLaserAdvanced
+      amount: 1
+    - id: RMCGlassesMedicalHUDGlasses
+      amount: 1
+    - id: RMCPortableDialysis
+      amount: 1
+    - id: ClothingNeckStethoscope
+      amount: 1
+    - id: CMPenFountain
+      amount: 1
+    - id: CMFolderWhite
+      amount: 1
+    - id: CMBeltMedicBagFilled
+      amount: 1
+    - id: RMCPouchMedicalFill
+      amount: 1
+    - id: RMCPouchMedkitFill
+      amount: 1
+    - id: AU14StampCMO
+      amount: 1
 
 - type: entity
   parent: AU14KitPlatoonOfficer
   id: AU14KitJOCMPKit
-  name: Chief MP (CMP) Kit
+  name: 首席军士长（CMP）装备包
   description: >-
-    Who knows what it holds?
+    谁知道它藏着什么呢？
   components:
   - type: Storage
     maxItemSize: Ginormous
@@ -267,9 +267,9 @@
 - type: entity
   parent: AU14KitPlatoonOfficer
   id: AU14KitJOLogisticsKit
-  name: Logistics Officer (LO) Kit
+  name: 后勤军官（LO）套件
   description: >-
-    Who knows what it holds?
+    谁知道里面装着什么呢？
   components:
   - type: Storage
     maxItemSize: Ginormous

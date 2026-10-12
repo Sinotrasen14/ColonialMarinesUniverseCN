@@ -1,9 +1,9 @@
 - type: entity
   parent: CMBeltMarine
   id: AU14BeltMarineUPP
-  name: Type 41 pattern ammo load rig
+  name: 41型制式弹药装具
   suffix: AU14
-  description: The Type 41 load rig is the standard-issue load-bearing equipment of the UPP military. The primary function of this belt is to provide easy access to mags for the Type 71 during operations. Despite being designed for the Type 71 weapon system, the pouches are modular enough to fit other types of ammo and equipment.
+  description: 41型负载装备是UPP军队的标准配发负重装备。这条腰带的主要功能是在行动中方便取用71型的弹匣。尽管是为71型武器系统设计的，但这些弹药袋采用模块化设计，足以容纳其他类型的弹药和装备。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/belt/ammo.rsi
@@ -16,8 +16,8 @@
   parent: CMBeltMarine
   id: AU14BeltMarineArmyUPP
   suffix: AU14
-  name: 6B80 pattern ammo rig
-  description: The 6B80 is an outdated but reliable ammo rig, formerly standard for the UPP Army. Its modular belt holds various munitions, still used by UPP security forces and reserves for its rugged design.
+  name: 6B80式弹药携行具
+  description: 6B80是一种过时但可靠的弹药携行具，曾是UPP陆军的标准装备。其模块化腰带可携带多种弹药，因其坚固的设计，至今仍被UPP安保部队和预备役使用。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/spp_brown.rsi
@@ -29,8 +29,8 @@
 - type: entity
   parent: AU14BeltUtilityGeneralBlack
   id: AU14BeltUtilityGeneralUPP
-  name: Type 48-M general utility pouch
-  description: A small, lightweight pouch that can be clipped onto U-pattern UPP armor to provide additional storage. The newer 48-M model, while uncomfortable, can also be clipped around the waist.
+  name: 48-M型通用工具袋
+  description: 一个小巧轻便的腰包，可夹在U型UPP护甲上以提供额外储物空间。较新的48-M型号虽然不太舒适，也可以夹在腰间。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/belt/general.rsi
@@ -45,8 +45,8 @@
 - type: entity
   parent: CMBeltMedical
   id: AU14BeltMedicalUPP
-  name: Type 41 pattern medical storage rig
-  description: The Type 41 is the standard load-bearing equipment of UPP military. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport medical supplies. \nRight click its sprite and click \"toggle belt mode\" to take pills out of bottles by simply clicking them.
+  name: 41型医疗储存挂具
+  description: 41型是UPP军队的标准承重装备。它由一条带有各种扣具的模块化腰带组成。此版本是一种较少见的配置，专为运送医疗用品而设计。\n右键点击其贴图并点击“切换腰带模式”，即可通过直接点击药瓶来取出药片。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/belt/medical.rsi
@@ -56,9 +56,9 @@
 - type: entity
   parent: RMCM276ShotgunShellLoadingRig
   id: AU14ShotgunShellLoadingRigUPP
-  name: Type 42 pattern shotgun shell loading rig
+  name: 42型霰弹枪弹壳装填架
   suffix: AU14
-  description: An ammunition belt designed to hold shotgun shells, primarily for the Type 23 shotgun. # or individual bullets. TODO RMC14
+  description: 一条用于装填霰弹枪弹药的弹药带，主要适配23式霰弹枪。 # or individual bullets. TODO RMC14
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/belt/shotgun.rsi
@@ -84,9 +84,9 @@
 - type: entity
   parent: CMBeltMedicBag
   id: AU14BeltMedicBagUPP
-  name: Type 41 pattern lifesaver bag
+  name: 41型救生包
   suffix: AU14
-  description: The Type 41 load rig is the standard load-bearing equipment of the UPP military. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies, and is common among medics.
+  description: 41式负载装备是UPP军队的标准承载装备。此配置搭载了一个装有多种注射器和轻型医疗用品的行李袋，在医疗兵中很常见。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/belt/medicbag.rsi
@@ -98,9 +98,9 @@
 - type: entity
   parent: CMBeltMarine
   id: AU14BeltSmartGunOperatorUPP
-  name: Type 90 pattern machinegunner belt
+  name: 90式机枪手弹链
   suffix: AU14
-  description: Recently adopted by UPP military, this belt allows machinegunners to carry more ammo boxes into battle. It also found use with SOF breachers using Type 23 shotguns.
+  description: 最近被UPP军队采用，这条弹链让机枪手能携带更多弹药箱投入战斗。它也被使用Type 23霰弹枪的SOF破门手所采用。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/belt/machinegun.rsi
@@ -133,8 +133,8 @@
   parent: CMBeltMarine
   id: AU14BeltSmartGunOperatorPistolUPP
   suffix: AU14
-  name: Type 92 pattern machinegunner sidearm rig
-  description: Type 92 is an experimental ammo-carrying rig issued to UPP machinegunners which combines a sidearm holster with box-shaped pouches for limited storage.
+  name: 92式机枪手副武器挂具
+  description: 92式是配发给UPP机枪手的实验性携弹装具，将侧臂枪套与用于有限储弹的箱形弹袋结合在一起。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/belt/machinegun_pistol.rsi
@@ -197,8 +197,8 @@
   parent: RMCBeltHolsterPistol
   id: AU14BeltHolsterPistolUPP
   suffix: AU14
-  name: Type 47 pistol holster rig
-  description: This UPP-designed sidearm rig can very snugly and securely fit a Type-73, NP92, or a ZHNK-72, and their magazines or speedloaders. However, it lacks versatility in stored weaponry.
+  name: 47式手枪枪套装置
+  description: 这款由UPP设计的侧臂枪套能够非常贴合且牢固地容纳73式、NP92或ZHNK-72，以及它们的弹匣或快速装弹器。然而，它在可存放武器的通用性方面有所不足。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/belt/holster.rsi

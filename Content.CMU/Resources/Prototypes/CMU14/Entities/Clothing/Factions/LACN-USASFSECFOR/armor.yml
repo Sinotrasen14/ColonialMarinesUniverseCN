@@ -1,8 +1,8 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14LACNArmorStandard
-  name: LACN BL-1 Armor
-  description: A set of ballistic armor used by the LACN landing forces. BL-1 pattern arm guards, leg guards, pauldrons, collars and plates can be clipped onto it.
+  name: LACN BL-1装甲
+  description: 一套由LACN登陆部队使用的防弹装甲。可将BL-1型臂甲、腿甲、肩甲、护颈和装甲板卡扣其上。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Infantry/Jungle/LACNarmorvest.rsi
@@ -17,8 +17,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: AU14LACNArmorStandardPadless
-  name: Padless LACN BL-1 Armor
-  description: A set of ballistic armor used by the LACN landing forces. This one is missing the grieves and shoulder pads.
+  name: 无衬垫 LACN BL-1 护甲
+  description: 一套由LACN登陆部队使用的防弹装甲。这一套缺少护胫和肩垫。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/Armor/lacninfantryarmorstripped.rsi
@@ -37,8 +37,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: AU14LACNArmorSL
-  name: LACN BL-2 Armor
-  description: A set of ballistic armor used by the LACN landing forces NCOs and Officers.
+  name: LACN BL-2装甲
+  description: 一套由LACN登陆部队士官和军官使用的防弹装甲。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/Armor/lacninfantryarmorsl.rsi
@@ -57,8 +57,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: AU14LACNCommandoArmorStandard
-  name: LACN BL-4L Armor
-  description: A set of ballistic armor used by the LACN naval commandos.
+  name: LACN BL-4L护甲
+  description: 一套由LACN海军陆战队员使用的防弹装甲。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Commandos/LACNarmorvest.rsi
@@ -77,8 +77,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: AU14CLFFlakVest
-  name: CLF flak vest
-  description: An imported flak vest that comes from your foreign buyer in the UPP. You have no idea the origin of it.
+  name: CLF防弹背心
+  description: 一件进口防弹背心，来自你在UPP的外国买家。你对它的来源一无所知。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/Armor/lacncommandoarmor.rsi
@@ -97,8 +97,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: AU14LACNCommandoArmorScout
-  name: LACN BL-4L Scout Armor
-  description: A set of ballistic armor used by the LACN naval commando scouts.
+  name: LACN BL-4L 侦察护甲
+  description: 一套由LACN海军陆战突击队侦察兵使用的防弹装甲。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/Armor/lacncommandoscoutarmor.rsi
@@ -117,8 +117,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: AU14LACNCommandoArmorPointman
-  name: LACN BL-4L Pointman Armor
-  description: A set of ballistic armor used by the LACN naval commando pointmen.
+  name: LACN BL-4L 尖兵装甲
+  description: 一套由LACN海军突击队尖兵使用的防弹装甲。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/Armor/lacncommandopointmanarmor.rsi
@@ -137,8 +137,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingHazardVest, RMCBaseJacket]
   id: AU14USASFSECFORChestrig
-  name: USASF Security Forces Chestrig
-  description: An exterior chestrig used by USASF SECFOR.
+  name: 美国安保部队胸挂
+  description: 美国空军安全部队使用的外用胸挂。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/USASFSecurityForces/chestrig.rsi
@@ -148,8 +148,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: AU14LACNICPS2
-  name: LACN ICPS-2 Aircrew Armor
-  description: A set of ballistic armor used by LACN aircrew with an attached oxygen tank.
+  name: LACN ICPS-2 机组人员装甲
+  description: 一套由LACN空勤人员使用的弹道护甲，附带氧气瓶。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Shipside/Flightcrew/LACNpilotvest.rsi
@@ -186,8 +186,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: CMULACNFlightVest
-  name: LACN ICPS-1 flight vest
-  description: A lightweight ballistic vest worn by LACN flight deck and dropship crews. Offers some protection from shrapnel without getting in the way of the controls.
+  name: LACN ICPS-1飞行背心
+  description: 一件由LACN飞行甲板和运输机机组人员穿着的轻型防弹背心。可提供一定的破片防护，同时不会妨碍操作控制装置。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Shipside/Flightcrew/LACNflightvest.rsi
@@ -206,8 +206,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingArmorVest, RMCBaseArmor]
   id: CMULACNArmorMP
-  name: LACN BL-1P military police vest
-  description: A BL-1 pattern ballistic vest issued to the LACN shipboard military police.
+  name: LACN BL-1P 军警背心
+  description: 一件配发给LACN舰载军事警察的BL-1型防弹背心。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Shipside/MilitaryPolice/LACNMParmorvest.rsi
@@ -226,8 +226,8 @@
 - type: entity
   parent: [RMCAllowSuitStorageClothingHazardVest, RMCBaseJacket]
   id: CMULACNLogisticsVest
-  name: LACN support vest
-  description: A work vest worn by LACN medical, requisitions and logistics personnel aboard ship.
+  name: LACN支援背心
+  description: LACN医疗、补给和后勤人员在船上穿着的工作背心。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Shipside/Shared/LACNlogivest.rsi
@@ -237,8 +237,8 @@
 - type: entity
   parent: CMCoatOfficer
   id: CMULACNCoatOfficer
-  name: LACN officer's service coat
-  description: A tailored service coat worn by commissioned officers of the Latin American Colonial Navy.
+  name: 拉美和加勒比国家共同体官员的服务部外套
+  description: 拉丁美洲殖民海军军官穿着的定制服务部外套。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Shipside/Officers/LACNofficercoat.rsi
@@ -248,8 +248,8 @@
 - type: entity
   parent: CMCoatOfficer
   id: CMULACNCoatCommandingOfficer
-  name: LACN commanding officer's greatcoat
-  description: A heavy greatcoat reserved for LACN commanding officers.
+  name: LACN舰长大衣
+  description: LACN指挥官的专属厚重军大衣。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Shipside/Officers/LACNCOcoat.rsi
@@ -259,8 +259,8 @@
 - type: entity
   parent: RMCOuterClothingExternalWebbing
   id: CMULACNExternalWebbing
-  name: LACN external webbing
-  description: LACN pattern load-bearing webbing, designed to be worn over fatigues rather than clipped on.
+  name: LACN外部织带
+  description: LACN迷彩承重织带，设计为穿在作训服外，而非夹扣其上。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/LACNexternalwebbing.rsi

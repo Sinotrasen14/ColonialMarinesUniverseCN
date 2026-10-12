@@ -4,9 +4,9 @@
 - type: entity
   parent: [CMUGasPipeFourway, ConstructibleMachine]
   id: CMUPipeRiserUp
-  name: PR3-UG Pipe Riser, Up
+  name: PR3-UG管道立管，向上
   suffix: CMU, MultiZ
-  description: "Static Direction: Looks at deck above. Crowbar flips direction. Multitool opens the panel; pry to deconstruct."
+  description: "静态方向：朝向上方甲板。撬棍可翻转方向。多功能工具可打开面板；撬开以拆除。"
   components:
   - type: Construction
     graph: CMUPipeRiserGraph
@@ -33,9 +33,9 @@
 - type: entity
   parent: [CMUGasPipeFourway, ConstructibleMachine]
   id: CMUPipeRiserDown
-  name: PR3-DG Pipe Riser, Down
+  name: PR3-DG管道立管，下行
   suffix: CMU, MultiZ
-  description: "Static Direction: Looks at deck below. Crowbar flips direction. Multitool opens the panel; pry to deconstruct."
+  description: "静态方向：朝下看甲板。撬棍可翻转方向。多功能工具打开面板；撬开以拆解。"
   components:
   - type: Construction
     graph: CMUPipeRiserGraph
@@ -92,8 +92,8 @@
 
 - type: construction
   id: CMUPipeRiserRecipe
-  name: pipe riser
-  description: A fourway pipe bridge linking this deck to the one above or below. Crowbar flips direction.
+  name: 立管
+  description: 连接本甲板与上方或下方甲板的四向管道桥。撬棍可翻转方向。
   graph: CMUPipeRiserGraph
   startNode: start
   targetNode: built

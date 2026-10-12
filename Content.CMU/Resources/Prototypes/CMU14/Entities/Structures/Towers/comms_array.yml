@@ -7,8 +7,8 @@
   abstract: true
   parent: BaseStructure
   id: AU14CommsArrayBase
-  name: comms array
-  description: A high-power communications array. As long as it stands and hums, the garrison stays on the net.
+  name: 通信阵列
+  description: 一座大功率通信阵列。只要它屹立嗡鸣，守军就能保持联网。
   components:
   - type: Transform
     anchored: true
@@ -90,7 +90,7 @@
 - type: entity
   parent: AU14CommsArrayBase
   id: AU14CommsArrayGovfor
-  name: GOVFOR comms array
+  name: 政府通信阵列
   suffix: GOVFOR, All Nets
   components:
   - type: AU14NetSpliceTarget
@@ -113,7 +113,7 @@
 - type: entity
   parent: AU14CommsArrayBase
   id: AU14CommsArrayOpfor
-  name: OPFOR comms array
+  name: 敌方通信阵列
   suffix: OPFOR, All Nets
   components:
   - type: AU14NetSpliceTarget
@@ -137,7 +137,7 @@
 - type: entity
   parent: AU14CommsArrayGovfor
   id: AU14CommsArrayShipGovfor
-  name: GOVFOR ship comms array
+  name: 政府军舰船通信阵列
   suffix: GOVFOR, Ship, All Nets
   components:
   - type: Sprite
@@ -177,7 +177,7 @@
 - type: entity
   parent: AU14CommsArrayOpfor
   id: AU14CommsArrayShipOpfor
-  name: OPFOR ship comms array
+  name: 敌方舰船通信阵列
   suffix: OPFOR, Ship, All Nets
   components:
   - type: Sprite
@@ -219,8 +219,8 @@
   abstract: true
   parent: AU14CommsArrayBase
   id: AU14CommsMastBase
-  name: antenna mast
-  description: A guyed field antenna mast, the kind two signalmen can raise in an hour. Keeps the command post talking.
+  name: 天线桅杆
+  description: 一座拉线野战天线桅杆，两名通信兵一小时内就能架起。让指挥部保持通信畅通。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/communications_tower_alt.rsi
@@ -253,7 +253,7 @@
 - type: entity
   parent: AU14CommsMastBase
   id: AU14CommsMastGovfor
-  name: GOVFOR antenna mast
+  name: 政府军天线桅杆
   suffix: GOVFOR, CP
   components:
   - type: ANPRCRelayAnchor
@@ -271,7 +271,7 @@
 - type: entity
   parent: AU14CommsMastBase
   id: AU14CommsMastOpfor
-  name: OPFOR antenna mast
+  name: 敌方天线桅杆
   suffix: OPFOR, CP
   components:
   - type: ANPRCRelayAnchor
@@ -292,8 +292,8 @@
 - type: entity
   parent: BaseStructure
   id: AU14VehicleRadioSet
-  name: vehicle radio set
-  description: A hull-mounted transceiver that keeps everyone aboard on the net. Short whip antenna - do not expect it to cover more than the vehicle and its immediate surroundings.
+  name: 车载无线电设备
+  description: 车体安装的收发器，让车上所有人都能保持联网。短鞭状天线——不要指望它能覆盖超过车辆及其周边范围。
   components:
   - type: Transform
     anchored: true
@@ -356,7 +356,7 @@
 - type: entity
   parent: [ AU14CommsMastBase, AU14MastKeyedBase ]
   id: AU14CommsMastField
-  name: field antenna mast
+  name: 野战天线杆
   suffix: Field-Built, Unkeyed
   components:
   # field masts only relay while powered, unlike the passive CP masts

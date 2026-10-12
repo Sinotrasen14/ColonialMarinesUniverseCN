@@ -5,9 +5,9 @@
 - type: entity
   parent: [BaseMachinePowered, ConstructibleMachine]
   id: CMUPowerRiserDown
-  name: PR2-DE Power Riser, Down
+  name: PR2-DE 电源竖井，向下
   suffix: CMU, MultiZ
-  description: "Static Direction: Looks at deck below. Crowbar flips direction. Screwdriver toggles role. Multitool opens the panel; pry to deconstruct."
+  description: "静态方向：看向下方甲板。撬棍翻转方向。螺丝刀切换角色。多功能工具打开面板；撬开以拆除。"
   placement:
     mode: SnapgridCenter
   components:
@@ -48,9 +48,9 @@
 - type: entity
   parent: [BaseMachinePowered, ConstructibleMachine]
   id: CMUPowerRiserUp
-  name: PR2-UE Power Riser, Up
+  name: PR2-UE 电源竖板，向上
   suffix: CMU, MultiZ
-  description: "Static Direction: Looks at deck above. Crowbar flips direction. Screwdriver toggles role. Multitool opens the panel; pry to deconstruct."
+  description: "静态方向：朝向上方甲板。撬棍翻转方向。螺丝刀切换角色。多功能工具打开面板；撬开以拆除。"
   placement:
     mode: SnapgridCenter
   components:
@@ -119,8 +119,8 @@
 
 - type: construction
   id: CMUPowerRiserRecipe
-  name: power riser
-  description: An HV bridge linking this deck's power grid to the one above or below. Crowbar flips direction, screwdriver toggles source or sink.
+  name: 电源竖井
+  description: 一个高压甲板，将本层甲板的电网与上方或下方的电网连接起来。撬棍可切换方向，螺丝刀可切换源或汇。
   graph: CMUPowerRiserGraph
   startNode: start
   targetNode: built

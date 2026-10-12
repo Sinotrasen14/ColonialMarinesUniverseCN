@@ -1,8 +1,8 @@
 - type: entity
   parent: [RMCBaseSlideMagazineVisuals, CMWeaponPistolBase]
   id: AU14WeaponPistolM50HAZOPS
-  name: M50 'Bald Eagle' Handcannon
-  description: Produced by Armat in celebration of the upcoming United States' 400th anniversary, this pistol fires jet-propelled .50 AE rounds, which does high damage and can penetrate armor. Loved by HAZOPS due to it's mobility combined with high-damage. Must be cocked after every mag.
+  name: M50“白头鹰”手炮
+  description: 由Armat公司为庆祝即将到来的美国建国400周年而生产，这款手枪发射喷气推进的.50 AE弹，具有高伤害并能穿透护甲。因其机动性与高伤害的结合而深受HAZOPS喜爱。每打完一弹匣后必须拉栓。
   suffix: Filled
   components:
   - type: RMCSelectiveFire
@@ -31,7 +31,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazinePistolM50
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
@@ -55,8 +55,8 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: AU14MagazinePistolM50
-  name: M50 Bald Eagle handcannon magazine (.50 JP)
-  description: A pistol magazine.
+  name: M50秃鹰手炮弹匣（.50 JP）
+  description: 一把手枪弹匣。
   components:
   - type: Tag
     tags:
@@ -102,7 +102,7 @@
 - type: entity
   parent: CMBulletBase
   id: CMBulletPistol50JP
-  name: jet-propelled .50 AE round
+  name: 喷气推进.50 AE弹
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile

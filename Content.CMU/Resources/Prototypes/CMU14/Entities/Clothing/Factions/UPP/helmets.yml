@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCMarineHelmetBase
   id: AU14UPPNavalInfantryHelmet
-  name: UPP Naval Infantry Helmet
-  description: A UPP Naval Infantry helmet.
+  name: UPP海军陆战队头盔
+  description: UPP海军陆战队头盔。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/helmets/upphelmet.rsi
@@ -12,9 +12,9 @@
 - type: entity
   parent: RMCMarineHelmetBase
   id: AU14ArmorHelmetArmyUPP
-  name: 6B82 combat helmet
+  name: 6B82战斗头盔
   suffix: AU14
-  description: An older version of the UPP Army's 6B92 combat helmet, still worn by certain units on planets the UPP deems less important.
+  description: UPP陆军6B92战斗头盔的旧版本，仍被UPP认为不太重要的星球上的某些部队佩戴。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Head/SPP/army_helmet.rsi
@@ -26,8 +26,8 @@
 - type: entity
   parent: RMCMarineHelmetBase
   id: AU14Altyn
-  name: Altyn-R2M
-  description: An old earth design initially created for special forces and internal security to use in close quarters combat. Still worn by UPP forces after more than a century.
+  name: 阿尔金-R2M
+  description: 一种旧地球时代的设计，最初为特种部队和内部安保在近距离战斗中使用而创造。一个多世纪后，UPP部队仍在使用。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/UPP/helmets/altyn.rsi
@@ -63,8 +63,8 @@
 - type: entity
   parent: ActionMarineBase
   id: AU14ActionToggleAltynVisor
-  name: Toggle the visor
-  description: Change the positions of the visor on your helmet.
+  name: 切换面罩
+  description: 改变头盔面罩的位置。
   components:
   - type: Action
     itemIconStyle: BigItem

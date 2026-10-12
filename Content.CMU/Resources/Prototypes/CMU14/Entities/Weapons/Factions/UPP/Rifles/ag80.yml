@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: AG80 pulse rifle
+  name: AG80脉冲步枪
   id: AU14WeaponRifleAG80
-  description: Pulse action 9.7x16mm caseless assault rifle of the UPPAC Naval Infantry. Only recently entered service and has yet to see full integration.
+  description: UPPAC海军步兵的9.7x16毫米无壳弹脉冲式突击步枪。最近才进入服务部，尚未全面整合。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/UPP/ag80.rsi
@@ -44,7 +44,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -104,7 +104,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: AU14MagazineRifleAG80
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -149,8 +149,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineRifleAG80
-  name: "AG80 magazine (9.7x16mm)"
-  description: "A magazine of 9.7x16mm rounds for the AG80 rifle."
+  name: "AG80弹匣（9.7x16mm）"
+  description: "一把用于AG80步枪的9.7x16mm弹匣。"
   components:
   - type: Tag
     tags:
@@ -177,8 +177,8 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: AU14MagazineRifleAG80AP
-  name: "AG80 AP magazine (9.7x16mm)"
-  description: "A magazine of armor-piercing 9.7x16mm rounds for the AG80 rifle."
+  name: "AG80 AP弹匣（9.7x16mm）"
+  description: "一匣用于AG80步枪的9.7x16毫米穿甲弹。"
   suffix: AP
   components:
   - type: Tag
@@ -205,8 +205,8 @@
 - type: entity
   parent: CMMagazineRifleM54C
   id: AU14MagazineRifleAG80Ext
-  name: "AG80 extended magazine (9.7x16mm)"
-  description: "An extended magazine of 9.7x16mm rounds for the AG80 rifle."
+  name: "AG80加长弹匣（9.7x16mm）"
+  description: "AG80步枪的9.7x16mm子弹加长弹匣。"
   components:
   - type: Tag
     tags:
@@ -239,8 +239,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: AU14CartridgeRifle97x16mm
-  name: cartridge (9.7x16mm)
-  description: "A 9.7x16mm cartridge for the AG80 rifle."
+  name: 弹壳（9.7×16毫米）
+  description: "一把用于AG80步枪的9.7x16毫米弹药。"
   components:
   - type: Tag
     tags:
@@ -253,8 +253,8 @@
 - type: entity
   parent: AU14CartridgeRifle97x16mm
   id: AU14CartridgeRifle97x16mmAP
-  name: AP cartridge (9.7x16mm)
-  description: "A 9.7x16mm armor-piercing cartridge for the AG80 rifle."
+  name: 穿甲弹（9.7×16毫米）
+  description: "一种用于AG80步枪的9.7x16毫米穿甲弹。"
   components:
   - type: Tag
     tags:
@@ -307,8 +307,8 @@
 - type: entity
   parent: RMCStockAttachmentCollapsibleBase
   id: AU14AttachmentAG80StockCollapsible
-  name: AG80 folding stock
-  description: The standard back end of any gun starting with AG80. Compatible with the AG80 series, this stock reduces recoil and scatter, but at a reduction to handling and agility. Also enhances the thwacking of things with the stock-end of the rifle.
+  name: AG80折叠枪托
+  description: 任何以AG80开头的枪械的标准枪托。兼容AG80系列，这款枪托能减少后坐力和散布，但会降低操控性和灵活性。同时还能增强用步枪枪托端拍击物体的效果。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/Attachments/upp_attachments.rsi
@@ -367,8 +367,8 @@
 - type: entity
   parent: [ RMCUnderAttachmentBase, RMCAttachableToggleableBase ]
   id: AU14AttachmentGP45GrenadeLauncher
-  name: GP-45 grenade launcher
-  description: A weapon-mounted, reloadable grenade launcher.
+  name: GP-45榴弹发射器
+  description: 一种安装在武器上、可重新装填的榴弹发射器。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/Attachments/upp_attachments.rsi

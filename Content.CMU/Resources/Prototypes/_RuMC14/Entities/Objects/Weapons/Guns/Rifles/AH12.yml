@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   name: AH-12
   id: RuMCRifleAH12
-  description: This is not just a machine gun. It is a tool for those who are used to ending conversations before they begin. Massive, rough, designed for the unique 12.7×55 cartridge, it does not require a queue. One shot breaks through a door. A second shot demolishes a wall.
+  description: 这不仅仅是一挺机枪。它是为那些习惯在对话开始前就将其终结的人所打造的工具。庞大、粗犷，专为独特的12.7×55弹药设计，它不需要排队。一枪破门。第二枪拆墙。
   components:
   - type: Item
     size: Huge
@@ -54,7 +54,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RuMCMagazineAH12Large
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -146,8 +146,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RuMCMagazineAH12
-  name: AH-12 magazine (12.7x55mm)
-  description: Magazine with 12.7x55 mm cartridges.
+  name: AH-12 弹匣（12.7x55mm）
+  description: 装有12.7x55毫米弹药的弹匣。
   components:
   - type: Tag
     tags:
@@ -175,8 +175,8 @@
 - type: entity
   parent: RuMCMagazineAH12
   id: RuMCMagazineAH12Large
-  name: AH-12 large magazine (12.7x55mm)
-  description: Large magazine with 12.7x55 mm cartridges.
+  name: AH-12 大容量弹匣（12.7x55mm）
+  description: 大容量弹匣，装填12.7×55毫米弹药。
   components:
   - type: Tag
     tags:
@@ -206,8 +206,8 @@
 - type: entity
   parent: RuMCMagazineAH12
   id: RuMCMagazineAH12AP
-  name: AH-12 magazine (12.7x55mm AP)
-  description: Magazine with 12.7x55 mm (AP) cartridges.
+  name: AH-12 弹匣（12.7x55mm 穿甲弹）
+  description: 装有12.7x55毫米（AP）弹药的弹匣。
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/AH12.rsi
@@ -232,8 +232,8 @@
 - type: entity
   parent: RuMCMagazineAH12
   id: RuMCMagazineAH12Tracer
-  name: AH-12 magazine (12.7x55mm Tracer)
-  description: Magazine with 12.7x55 mm (Tracer) cartridges.
+  name: AH-12 弹匣（12.7×55mm 曳光弹）
+  description: 装有12.7x55毫米（曳光弹）弹药的弹匣。
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/AH12.rsi
@@ -258,8 +258,8 @@
 - type: entity
   parent: RuMCMagazineAH12
   id: RuMCMagazineAH12JHP
-  name: AH-12 magazine (12.7x55mm JHP)
-  description: Magazine with 12.7x55 mm (JHP) cartridges
+  name: AH-12 弹匣（12.7×55mm 空尖弹）
+  description: 装有12.7x55毫米（JHP）弹药的弹匣
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/AH12.rsi
@@ -286,7 +286,7 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: RuMCCartridgeHMG127x55mm
-  name: 12.7x55mm
+  name: 12.7x55毫米
   components:
   - type: Sprite
     sprite: Objects/Weapons/Guns/Ammunition/Casings/large_casing.rsi
@@ -302,7 +302,7 @@
 - type: entity
   parent: RuMCCartridgeHMG127x55mm
   id: RuMCCartridgeHMG127x55mmTracer
-  name: 12.7x55mm Tracer
+  name: 12.7x55mm曳光弹
   components:
   - type: CartridgeAmmo
     proto: RuMCBulletHMG127x55mmTracer
@@ -313,7 +313,7 @@
 - type: entity
   parent: RuMCCartridgeHMG127x55mm
   id: RuMCCartridgeHMG127x55mmJHP
-  name: 12.7x55mm (JHP) #ударки
+  name: 12.7x55毫米（JHP） #ударки
   components:
   - type: CartridgeAmmo
     proto: RuMCBulletHMG127x55mmJHP
@@ -324,7 +324,7 @@
 - type: entity
   parent: RuMCCartridgeHMG127x55mm
   id: RuMCCartridgeHMG127x55mmAP
-  name: 12.7x55mm (AP)
+  name: 12.7x55毫米（穿甲弹）
   components:
   - type: CartridgeAmmo
     proto: RuMCBulletHMG127x55mmAP
@@ -336,7 +336,7 @@
 - type: entity
   parent: CMBulletBase
   id: RuMCBulletHMG127x55mm
-  name: bullet (12.7x55mm)
+  name: 子弹（12.7x55mm）
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -377,7 +377,7 @@
 - type: entity
   parent: RuMCBulletHMG127x55mm
   id: RuMCBulletHMG127x55mmTracer
-  name: bullet (12.7x55mm Tracer)
+  name: 子弹（12.7x55mm曳光弹）
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight
@@ -389,7 +389,7 @@
 - type: entity
   parent: RuMCBulletHMG127x55mm
   id: RuMCBulletHMG127x55mmJHP
-  name: bullet (12.7x55mm JHP)
+  name: 子弹（12.7x55mm 空尖弹）
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -430,7 +430,7 @@
 - type: entity
   parent: RuMCBulletHMG127x55mm
   id: RuMCBulletHMG127x55mmAP
-  name: bullet (12.7x55mm AP)
+  name: 子弹（12.7x55mm AP）
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite

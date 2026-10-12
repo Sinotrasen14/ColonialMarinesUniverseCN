@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCSentryOmni
   id: AU14SentryOmniWeYu
-  name: WY 571-D omnidirectional sentry gun
-  description: A Weyland-Yutani-configured 571-D sentry gun. Its locked corporate IFF recognizes Weyland-Yutani personnel, security, synthetics, contractors, and private military forces.
+  name: WY 571-D 全向哨戒炮
+  description: 维兰德-汤谷配置的571-D哨戒枪。其锁定的企业敌我识别系统可识别维兰德-汤谷人员、安保、合成人、承包商及私人军事部队。
   components:
   - type: UserIFF
     factions:
@@ -24,8 +24,8 @@
 - type: entity
   parent: RMCTurretAlmayer
   id: AU14TurretAlmayerWeYu
-  name: WY UA-635C static gauss turret
-  description: A Weyland-Yutani-configured static gauss turret with a locked corporate IFF.
+  name: WY UA-635C 静态高斯炮塔
+  description: 一台由维兰德-汤谷公司配置的固定式高斯炮塔，带有锁定的公司敌我识别系统。
   components:
   - type: UserIFF
     factions:
@@ -44,8 +44,8 @@
 - type: entity
   parent: RMCDeployerSentry
   id: AU14DeployerSentryWeYu
-  name: WY sentry deployment system
-  description: A Weyland-Yutani-configured deployment system containing a corporate-IFF static gauss turret.
+  name: WY哨兵部署系统
+  description: 一个由韦兰-汤谷公司配置的部署系统，内含一座带有企业敌我识别系统的静态高斯炮塔。
   components:
   - type: RMCEquipmentDeployer
     deployPrototype: AU14TurretAlmayerWeYu

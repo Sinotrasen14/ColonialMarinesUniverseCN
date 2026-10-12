@@ -7,8 +7,8 @@
   id: AU14CashVendorBase
   abstract: true
   parent: CMBaseStructureCorrodible
-  name: vending machine
-  description: Insert cash and select an item to purchase.
+  name: 自动售货机
+  description: 投入现金并选择要购买的商品。
   components:
   - type: ItemSlots
     slots:
@@ -94,8 +94,8 @@
 - type: entity
   id: AU14CashDrinkMachine
   parent: AU14CashVendorShopkeepBase
-  name: WY Refreshments
-  description: A Weyland-Yutani branded beverage dispenser. Insert cash to purchase a drink. Prices subject to colonial sales tax.
+  name: WY茶点
+  description: 一台韦兰-汤谷公司品牌的饮料机。投入现金即可购买饮品。价格需另加殖民地销售税。
   suffix: Cash, Drinks
   components:
   - type: Sprite
@@ -109,8 +109,8 @@
 - type: entity
   id: AU14CashVendorHotDrinks
   parent: AU14CashVendorBase
-  name: WY Hot Drinks
-  description: A Weyland-Yutani branded hot drinks machine. Insert cash to purchase coffee, tea, or cocoa.
+  name: WY 热饮
+  description: 一台带有韦兰-汤谷公司品牌标识的热饮机。投入现金即可购买咖啡、茶或可可。
   suffix: Cash, Hot Drinks
   components:
   - type: Sprite
@@ -123,24 +123,24 @@
     allowDepartmentBudget: true
     items:
     - id: RMCDrinkCoffee
-      name: Coffee
+      name: 咖啡
       price: 2
     - id: RMCDrinkCoffeeGrind
-      name: Coffee (Ground)
+      name: 咖啡粉
       price: 2
     - id: RMCDrinkTea
-      name: Tea
+      name: 茶
       price: 2
     - id: RMCDrinkHotCocoa
-      name: Hot Cocoa
+      name: 热可可
       price: 3
 
 # Soft drinks machine — mirrors CMVendorCola
 - type: entity
   id: AU14CashVendorSodas
   parent: AU14CashVendorBase
-  name: Souto Softdrinks
-  description: A softdrink vending machine by Souto Soda Company. Insert cash to purchase a cold drink.
+  name: 索托软饮料
+  description: 一台由Souto苏打公司提供的软饮料自动售货机。投入现金即可购买冷饮。
   suffix: Cash, Sodas
   components:
   - type: Sprite
@@ -206,8 +206,8 @@
 - type: entity
   id: AU14CashVendorSnackMachine
   parent: AU14CashVendorBase
-  name: WY Hot Foods
-  description: A Weyland-Yutani snack machine stocked with packaged foods. Insert cash to purchase a snack.
+  name: WY 热食
+  description: 一台由维兰德-尤坦尼公司提供的零食自动售货机，里面备有包装食品。投入现金即可购买零食。
   suffix: Cash, Snacks
   components:
   - type: Sprite
@@ -220,51 +220,51 @@
     allowDepartmentBudget: true
     items:
     - id: RMCFoodSnackCheeseburgerPackaged
-      name: Cheeseburger (Packaged)
+      name: 芝士汉堡（包装）
       price: 5
     - id: RMCFoodSnackBurritoPackaged
-      name: Burrito (Packaged)
+      name: 墨西哥卷饼（包装）
       price: 5
     - id: RMCFoodSnackHotdogPackaged
-      name: Hotdog (Packaged)
+      name: 热狗（包装）
       price: 5
     - id: RMCFoodSnackKeplarCrisps
-      name: Keplar Crisps
+      name: 开普勒脆片
       price: 3
     - id: RMCFoodSnackKeplarFlamehotCrisps
-      name: Keplar Flamehot Crisps
+      name: 开普勒辣焰脆片
       price: 3
     - id: RMCFoodSnackChipsPepper
-      name: Pepper Chips
+      name: 胡椒薯片
       price: 3
     - id: RMCFoodSnackEATBar
-      name: EAT Bar
+      name: EAT能量棒
       price: 4
     - id: RMCFoodSnackBoonie
-      name: Boonie Bar
+      name: Boonie 能量棒
       price: 4
     - id: RMCFoodSnackCHUNK
-      name: CHUNK Bar
+      name: CHUNK 能量棒
       price: 3
     - id: RMCFoodSnackBarcaridine
-      name: Barcaridine Bar
+      name: 巴尔卡里丁棒
       price: 4
     - id: RMCFoodSnackBoonieBar
-      name: Boonie Bars
+      name: 邦尼棒
       price: 6
     - id: RMCFoodSnackHUNK
-      name: HUNK Bar
+      name: HUNK 能量棒
       price: 8
     - id: CMMarineProteinBar
-      name: Protein Bar
+      name: 蛋白棒
       price: 2
 
 # Prepared meals vendor — mirrors ColMarTechFood
 - type: entity
   id: AU14CashVendorPreparedMeals
   parent: AU14CashVendorBase
-  name: ColMarTech Provisions
-  description: A ColMarTech food vendor dispensing standard military prepared meals and flasks. Insert cash to purchase.
+  name: ColMarTech 食品供应
+  description: 一个ColMarTech食品售卖机，分发标准军用预制餐和军用水壶。投入现金即可购买。
   suffix: Cash, Prepared Meals
   components:
   - type: Sprite
@@ -275,48 +275,48 @@
     allowDepartmentBudget: true
     items:
     - id: CMMRE
-      name: Meal Ready to Eat
+      name: 即食餐
       price: 8
     - id: CMMarinePreparedMealChicken
-      name: Prepared Meal (Chicken)
+      name: 预制餐（鸡肉）
       price: 12
     - id: CMMarinePreparedMealCornbread
-      name: Prepared Meal (Cornbread)
+      name: 预制餐（玉米面包）
       price: 12
     - id: CMMarinePreparedMealPasta
-      name: Prepared Meal (Pasta)
+      name: 预制餐（意面）
       price: 12
     - id: CMMarinePreparedMealPizza
-      name: Prepared Meal (Pizza)
+      name: 预制餐（披萨）
       price: 12
     - id: CMMarinePreparedMealPork
-      name: Prepared Meal (Pork)
+      name: 预制餐（猪肉）
       price: 12
     - id: CMMarinePreparedMealTofu
-      name: Prepared Meal (Tofu)
+      name: 预制餐（豆腐）
       price: 12
     - id: CMMarineProteinBar
-      name: Protein Bar
+      name: 蛋白棒
       price: 4
     - id: CMCanteen
-      name: Canteen
+      name: 食堂
       price: 10
     - id: CMMetalFlask
-      name: Metal Flask (empty)
+      name: 金属烧瓶（空）
       price: 8
     - id: CMMarineFlask
-      name: Marine Flask
+      name: 海洋烧瓶
       price: 12
     - id: CMWEYAFlask
-      name: We-Ya Flask
+      name: We-Ya 保温杯
       price: 15
 
 # Kitchenware vendor — mirrors CMVendorDinnerware
 - type: entity
   id: AU14CashVendorKitchenware
   parent: AU14CashVendorBase
-  name: WY Dinnerware
-  description: A Weyland-Yutani kitchen and restaurant equipment vending machine. Insert cash to purchase kitchenware.
+  name: WY 餐具
+  description: 一台韦兰-汤谷公司的厨房与餐厅设备自动售货机。投入现金即可购买厨房用具。
   suffix: Cash, Kitchenware
   components:
   - type: Sprite
@@ -329,69 +329,69 @@
     allowDepartmentBudget: true
     items:
     - id: RMCFork
-      name: Fork
+      name: 分叉
       price: 1
     - id: RMCSpoon
-      name: Spoon
+      name: 勺
       price: 1
     - id: RMCKitchenKnife
-      name: Kitchen Knife
+      name: 菜刀
       price: 2
     - id: RMCKitchenKnifeChef
-      name: Chef's Knife
+      name: 厨师刀
       price: 5
     - id: RMCRollingPin
-      name: Rolling Pin
+      name: 擀面杖
       price: 3
     - id: PairedChopsticks
-      name: Chopsticks
+      name: 筷子
       price: 1
     - id: DrinkShaker
-      name: Cocktail Shaker
+      name: 鸡尾酒摇酒壶
       price: 8
     - id: DrinkGlass
-      name: Drinking Glass
+      name: 玻璃杯
       price: 2
     - id: DrinkMug
-      name: Mug
+      name: 杯
       price: 3
     - id: DrinkMugMetal
-      name: Metal Mug
+      name: 金属马克杯
       price: 4
     - id: FoodPlate
-      name: Plate
+      name: 盘子
       price: 2
     - id: FoodPlateSmall
-      name: Small Plate
+      name: 小盘
       price: 2
     - id: FoodBowlBig
-      name: Bowl
+      name: 碗
       price: 3
     - id: Pitcher
-      name: Pitcher
+      name: 投手
       price: 5
     - id: CMBeaker
-      name: Beaker (60u)
+      name: 烧杯（60u）
       price: 5
     - id: CMBeakerLarge
-      name: Beaker, Large (120u)
+      name: 烧杯，大号（120u）
       price: 8
     - id: ClothingOuterApronChef
-      name: Chef's Apron
+      name: 厨师围裙
       price: 10
     - id: RMCCondimentSmallSalt
-      name: Salt Shaker
+      name: 盐瓶
       price: 3
     - id: RMCCondimentSmallPepper
-      name: Pepper Shaker
+      name: 胡椒瓶
       price: 3
 
 # Games & Recreation vendor
 - type: entity
   id: AU14CashVendorGames
   parent: AU14CashVendorBase
-  name: WY Rec-Vend
-  description: A Weyland-Yutani recreation vending machine. Insert cash to purchase cassettes, cards, magazines, and more.
+  name: WY 娱乐贩卖
+  description: 一台韦兰-汤谷公司的娱乐自动售货机。投入现金即可购买磁带、卡牌、杂志等物品。
   suffix: Cash, Games
   components:
   - type: Sprite
@@ -404,174 +404,174 @@
     percentToColony: 0.6
     items:
     - id: RMCCassettePlayer
-      name: Cassette Player
+      name: 磁带播放器
       price: 25
     - id: RMCPouchCassette
-      name: Cassette Pouch
+      name: 弹匣袋
       price: 10
     - id: RMCCassetteTapeWigWoo1
-      name: Cassette (Wig Woo)
+      name: 磁带（Wig Woo）
       price: 5
     - id: RMCCassetteTapeMendax
-      name: Cassette (Mendax)
+      name: 磁带（Mendax）
       price: 5
     - id: RMCCassetteTapeNighty
-      name: Cassette (Nighty)
+      name: 磁带（Nighty）
       price: 5
     - id: RMCCassetteTapeGoodShowOldChap
-      name: Cassette (Good Show Old Chap)
+      name: 磁带（好戏，老伙计）
       price: 5
     - id: RMCCassetteTapeRedQwesta
-      name: Cassette (Red Qwesta)
+      name: 磁带（红色 Qwesta）
       price: 5
     - id: RMCCassetteTapeBolgarich
-      name: Cassette (Bolgarich)
+      name: 磁带（Bolgarich）
       price: 5
     - id: RMCCassetteTapeQwertyquerty
-      name: Cassette (Qwertyquerty)
+      name: 磁带（Qwertyquerty）
       price: 5
     - id: RMCCassetteTapePigeonBeans
-      name: Cassette (Pigeon Beans)
+      name: 磁带（鸽子豆）
       price: 5
     - id: RMCCassetteTapeCustom
-      name: Cassette (Blank)
+      name: 磁带（空白）
       price: 4
     - id: RMCPlayingCardDeck
-      name: Playing Card Deck
+      name: 扑克牌组
       price: 8
     - id: d20Dice
-      name: d20 Dice
+      name: d20骰子
       price: 6
     - id: CMPaper
-      name: Paper
+      name: 纸
       price: 1
     - id: CMPen
-      name: Pen
+      name: 笔
       price: 1
     - id: AU14CassetteTapeUnitedAmericasVol1
-      name: Cassette (United Americas Vol. 1)
+      name: 磁带（联合美洲 第1卷）
       price: 5
     - id: AU14CassetteTapeUnitedAmericasVol2
-      name: Cassette (United Americas Vol. 2)
+      name: 磁带（联合美洲 第2卷）
       price: 5
     - id: RMCMagazineBootsN160
-      name: Boots! Magazine (Issue 160)
+      name: 《靴子！》杂志（第160期）
       price: 4
     - id: RMCMagazineBootsN07
-      name: Boots! Magazine (Issue 07)
+      name: Boots！杂志（第07期）
       price: 4
     - id: RMCMagazineBootsN45
-      name: Boots! Magazine (Issue 45)
+      name: 《靴子！》杂志（第45期）
       price: 4
     - id: RMCMagazineBootsN54
-      name: Boots! Magazine (Issue 54)
+      name: 《Boots!》杂志（第54期）
       price: 4
     - id: RMCMagazineBootsN55
-      name: Boots! Magazine (Issue 55)
+      name: 《Boots!》杂志（第55期）
       price: 4
     - id: RMCMagazineBootsN58
-      name: Boots! Magazine (Issue 58)
+      name: 《靴子！》杂志（第58期）
       price: 4
     - id: RMCMagazineBootsN70
-      name: Boots! Magazine (Issue 70)
+      name: 《靴子！》杂志（第70期）
       price: 4
     - id: RMCMagazineBootsN113
-      name: Boots! Magazine (Issue 113)
+      name: 《靴子！》杂志（第113期）
       price: 4
     - id: RMCMagazineBootsN117
-      name: Boots! Magazine (Issue 117)
+      name: 《靴子！》杂志（第117期）
       price: 4
     - id: RMCMagazineBootsN120
-      name: Boots! Magazine (Issue 120)
+      name: 《靴子！》杂志（第120期）
       price: 4
     - id: RMCMagazineBootsN125
-      name: Boots! Magazine (Issue 125)
+      name: 《靴子！》杂志（第125期）
       price: 4
     - id: RMCMagazineBootsN131
-      name: Boots! Magazine (Issue 131)
+      name: Boots！杂志（第131期）
       price: 4
     - id: RMCMagazineBootsN150
-      name: Boots! Magazine (Issue 150)
+      name: 《靴子！》杂志（第150期）
       price: 4
     - id: RMCMagazineBootsN189
-      name: Boots! Magazine (Issue 189)
+      name: 《靴子！》杂志（第189期）
       price: 4
     - id: RMCMagazineWeYaOrreryN34
-      name: Orrery Magazine (Issue 34)
+      name: 《太阳系仪杂志》（第34期）
       price: 5
     - id: RMCMagazineWeYaOrrery
-      name: Orrery Magazine
+      name: 天象仪杂志
       price: 5
     - id: RMCMagazineWeYaOrreryN175
-      name: Orrery Magazine (Issue 175)
+      name: 《太阳系仪杂志》（第175期）
       price: 5
     - id: RMCMagazineWeYaOrreryN184
-      name: Orrery Magazine (Issue 184)
+      name: 《太阳系仪杂志》（第184期）
       price: 5
     - id: RMCMagazineWeYaOrreryN202
-      name: Orrery Magazine (Issue 202)
+      name: 《太阳系仪杂志》（第202期）
       price: 5
     - id: RMCMagazineWeYaOrreryN217
-      name: Orrery Magazine (Issue 217)
+      name: 《太阳系仪杂志》（第217期）
       price: 5
     - id: RMCMagazineWeYaOrreryN220
-      name: Orrery Magazine (Issue 220)
+      name: 《太阳系仪杂志》（第220期）
       price: 5
     - id: RMCMagazineWeYaOrreryN258
-      name: Orrery Magazine (Issue 258)
+      name: 《太阳系仪杂志》（第258期）
       price: 5
     - id: RMCClothingNeckLGBTPin
-      name: LGBT Pin
+      name: LGBT徽章
       price: 3
     - id: RMCClothingNeckAromanticPin
-      name: Aromantic Pin
+      name: 无浪漫倾向徽章
       price: 3
     - id: RMCClothingNeckAsexualPin
-      name: Asexual Pin
+      name: 无性恋徽章
       price: 3
     - id: RMCClothingNeckBisexualPin
-      name: Bisexual Pin
+      name: 双性恋徽章
       price: 3
     - id: RMCClothingNeckGayPin
-      name: Gay Pin
+      name: 同性恋徽章
       price: 3
     - id: RMCClothingNeckIntersexPin
-      name: Intersex Pin
+      name: 双性恋徽章
       price: 3
     - id: RMCClothingNeckLesbianPin
-      name: Lesbian Pin
+      name: 女同性恋徽章
       price: 3
     - id: RMCClothingNeckNonBinaryPin
-      name: Non-Binary Pin
+      name: 非二元性别徽章
       price: 3
     - id: RMCClothingNeckPansexualPin
-      name: Pansexual Pin
+      name: 泛性恋徽章
       price: 3
     - id: RMCClothingNeckOmnisexualPin
-      name: Omnisexual Pin
+      name: 泛性恋徽章
       price: 3
     - id: RMCClothingNeckTransPin
-      name: Trans Pin
+      name: 跨性别徽章
       price: 3
     - id: RMCClothingNeckAutismPin
-      name: Autism Pin
+      name: 自闭症徽章
       price: 3
     - id: RMCClothingNeckGoldAutismPin
-      name: Gold Autism Pin
+      name: 金色自闭症徽章
       price: 3
     - id: RMCSpaceGrunts
-      name: Space Grunts
+      name: 太空新兵
       price: 15
     - id: CMUUniversalPaperTool
-      name: Universal Paper Tool
+      name: 通用纸张工具
       price: 35
 
 # Cigarette machine
 - type: entity
   id: AU14CashVendorCigarettes
   parent: AU14CashVendorBase
-  name: WY Cigarette Machine
-  description: A Weyland-Yutani branded cigarette vending machine. Insert cash to purchase tobacco products.
+  name: WY 香烟机
+  description: 一台韦兰-汤谷公司品牌的香烟自动售货机。投入现金即可购买烟草产品。
   suffix: Cash, Cigarettes
   components:
   - type: Sprite
@@ -584,45 +584,45 @@
     percentToColony: 0.6
     items:
     - id: PackPaperRolling
-      name: Rolling Paper
+      name: 卷纸
       price: 2
     - id: PackPaperRollingFilters
-      name: Rolling Paper and Filters
+      name: 卷烟纸和滤嘴
       price: 3
     - id: RMCCigarettePackLuckySloths
-      name: Lucky Sloths
+      name: 幸运树懒
       price: 5
     - id: AU14CigarettePackBalajj
-      name: Balajj
+      name: 巴利
       price: 5
     - id: RMCCigarettePackWeYaGold
-      name: We-Ya Gold
+      name: 威雅金
       price: 8
     - id: RMCCigarettePackExecutiveSelect
-      name: Executive Select
+      name: 行政精选
       price: 12
     - id: RMCCigarCase
-      name: Cigar Case
+      name: 雪茄盒
       price: 20
     - id: RMCTarbackTube
-      name: Tarback Tube
+      name: 塔巴克管
       price: 5
     - id: RMCMatchboxFull
-      name: Matchbox
+      name: 火柴盒
       price: 2
     - id: RMCLighter
-      name: Lighter
+      name: 打火机
       price: 5
     - id: RMCZippoGold
-      name: Gold Zippo
+      name: 黄金芝宝
       price: 30
 
 # Tool storage machine
 - type: entity
   id: AU14CashVendorTools
   parent: AU14CashVendorBase
-  name: WY Tool Vend
-  description: A Weyland-Yutani branded tool vending machine. Insert cash to purchase tools and equipment.
+  name: WY工具供应商
+  description: 一台带有Weyland-Yutani品牌标识的工具自动售货机。投入现金即可购买工具和设备。
   suffix: Cash, Tools
   components:
   - type: Sprite
@@ -635,85 +635,85 @@
     allowDepartmentBudget: true
     items:
     - id: RMCFlashlight
-      name: Flashlight
+      name: 手电筒
       price: 5
     - id: CMWelder
-      name: Welding Tool
+      name: 焊接工具
       price: 20
     - id: CMWelderSmall
-      name: Welding Tool (Small)
+      name: 焊接工具（小型）
       price: 12
     - id: CMCrowbar
-      name: Crowbar
+      name: 撬棍
       price: 8
     - id: CMScrewdriver
-      name: Screwdriver
+      name: 螺丝刀
       price: 5
     - id: CMWirecutter
-      name: Wirecutters
+      name: 钢丝钳
       price: 6
     - id: CMWrench
-      name: Wrench
+      name: 扳手
       price: 5
     - id: RMCLightReplacer
-      name: Light Replacer
+      name: 灯管替换器
       price: 8
     - id: CMBeltUtility
-      name: Utility Belt
+      name: 工具腰带
       price: 10
     - id: CMHandsInsulated
-      name: Insulated Gloves
+      name: 绝缘手套
       price: 20
     - id: RMCWeldingGoggles
-      name: Welding Goggles
+      name: 焊接护目镜
       price: 20
     - id: RMCHelmetWelding
-      name: Welding Helmet
+      name: 焊接面罩
       price: 25
     - id: CMMultitool
-      name: Access Tuner
+      name: 访问调谐器
       price: 15
     - id: CMTRayScanner
-      name: PS-9 Survey Unit
+      name: PS-9测量单元
       price: 15
     - id: CMFireExtinguisher
-      name: Fire Extinguisher
+      name: 灭火器
       price: 10
     - id: RemoteSignaller
-      name: Remote Signaller
+      name: 远程信号器
       price: 10
     - id: Igniter
-      name: Igniter
+      name: 点火器
       price: 8
     - id: AU14MaintenanceJackSpecialAdmin
-      name: Special Maintenance Jack
+      name: 特殊维修道千斤顶
       price: 45
     - id: CableApcStack
-      name: LV Cable Coil
+      name: LV电缆线圈
       price: 10
     - id: CableMVStack
-      name: MV Cable Coil
+      name: MV电缆线圈
       price: 15
     - id: CableHVStack
-      name: HV Cable Coil
+      name: 高压电缆线圈
       price: 20
     - id: RMCGeigerCounter
-      name: Geiger Counter
+      name: 盖革计数器
       price: 20
     - id: AirGrenade
-      name: Air Grenade
+      name: 空气手雷
       price: 20
     - id: CMUFireSuppressantGrenade
-      name: Fire Suppression Grenade
+      name: 灭火手榴弹
       price: 20
 
 # circuitboard - mirrors CMVendorCircuits
 - type: entity
   id: CMUCashVendorCircuits
   parent: AU14CashVendorBase
-  name: Circuitboard Vendor
+  name: 电路板供应商
   suffix: Cash
-  description: A safe storage for pre-programmed circuit boards, it has an internal gyroscope to keep any external force from moving the boards, thick insulation and a custom 2.1mm UPS port for charging various We-Yu exclusive devices (sold separately).
+  description: 一个用于安全存放预编程电路板的保险柜，内置陀螺仪以防止外力使电路板移动，配有厚实隔热层以及一个定制的2.1mm UPS端口，用于为各种We-Yu独家设备充电（需单独购买）。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/robotics.rsi
@@ -725,52 +725,52 @@
     allowDepartmentBudget: true
     items:
     - id: DoorElectronics
-      name: Door Electronics
+      name: 车门电子设备
       price: 20
     - id: CMAPCElectronics
-      name: APC Electronics
+      name: 区域电力控制器电子设备
       price: 50
     - id: RMCCircuitboardTelevision
-      name: Television Circuit Board
+      name: 电视电路板
       price: 25
     - id: CMSMESMachineCircuitboard
-      name: SMES Circuit Board
+      name: 超导磁能储存电路板
       price: 50
     - id: CMAutolatheMachineCircuitboard
-      name: Autolathe Circuit Board
+      name: 自动车床电路板
       price: 30
     - id: CMUCircuitboardRecharger
-      name: Recharger Circuit Board
+      name: 充电器电路板
       price: 75
     - id: AirAlarmElectronics
-      name: Air Alarm Electronics
+      name: 大气警报电子设备
       price: 20
     - id: FireAlarmElectronics
-      name: Fire Alarm Electronics
+      name: 火灾报警电子设备
       price: 20
     - id: CMUThermomachineHeaterMachineCircuitBoard
-      name: Heater Thermomachine Board
+      name: 加热恒温机电路板
       price: 50
     - id: CMUThermomachineFreezerMachineCircuitBoard
-      name: Freezer Thermomachine Board
+      name: 冷冻机温控机电路板
       price: 50
     - id: CMUCondenserMachineCircuitBoard
-      name: Condenser Board
+      name: 冷凝器电路板
       price: 50
     - id: CMUCrystallizerMachineCircuitboard
-      name: Gas Crystallizer Board
+      name: 气体结晶器电路板
       price: 60
     - id: CMUPipeRiserMachineCircuitboard
-      name: Pipe Riser Board
+      name: 管道立管板
       price: 40
     - id: CMUOpeningVentMachineCircuitboard
-      name: Opening Vent Board
+      name: 通风口电路板
       price: 40
     - id: CMUPowerRiserMachineCircuitboard
-      name: Power Riser Board
+      name: 电源转接板
       price: 40
     - id: CMUAutoTransferSwitchMachineCircuitboard
-      name: Automatic Transfer Switch Board
+      name: 自动转换开关板
       price: 50
 #      - id: CMCircuitboardDispenserBooze
 #        amount: 2
@@ -813,8 +813,8 @@
 - type: entity
   id: AU14CashVendorMedicalGeneral
   parent: AU14CashVendorBase
-  name: WY-Med General
-  description: A Weyland-Yutani general medical vending machine stocked with field supplies and autoinjectors. Insert cash or use department budget.
+  name: WY-Med 综合
+  description: 一台韦兰-汤谷通用医疗自动售货机，备有野战补给品和自动注射器。请投入现金或使用部门预算。
   suffix: Cash, Medical General
   components:
   - type: Sprite
@@ -827,75 +827,75 @@
     allowDepartmentBudget: true
     items:
     - id: CMBurnKit10
-      name: Burn Kit
+      name: 烧伤工具包
       price: 12
     - id: CMTraumaKit10
-      name: Trauma Kit
+      name: 创伤急救包
       price: 12
     - id: CMOintment10
-      name: Ointment
+      name: 软膏
       price: 10
     - id: AU14HemostaticGauzePacket
-      name: Hemostatic Gauze
+      name: 止血纱布
       price: 10
     - id: AU14Tourniquet
-      name: Tourniquet
+      name: 止血带
       price: 12
     - id: CMUSplintItem
-      name: Splint
+      name: 夹板
       price: 8
     - id: CMHealthAnalyzer
-      name: Health Analyzer
+      name: 健康分析仪
       price: 30
     - id: AU14CMDefibrillator
-      name: Defibrillator
+      name: 除颤器
       price: 60
     - id: CMUMaskCPR
-      name: CPR Mask
+      name: 心肺复苏面罩
       price: 10
     - id: CMSyringe
-      name: Syringe
+      name: 注射器
       price: 5
     - id: CMEpinephrineAutoInjector
-      name: Epinephrine Autoinjector
+      name: 肾上腺素自动注射器
       price: 18
     - id: AU14NaloxoneAutoInjector
-      name: Naloxone Autoinjector
+      name: 纳洛酮自动注射器
       price: 18
     - id: CMInaprovalineAutoInjector
-      name: Inaprovaline Autoinjector
+      name: 伊诺普洛维素自动注射器
       price: 15
     - id: CMDexalinPlusAutoInjector
-      name: Dexalin Plus Autoinjector
+      name: 地塞米松加自动注射器
       price: 18
     - id: CMTricordrazineAutoInjector
-      name: Tricordrazine Autoinjector
+      name: 三合一自动注射器
       price: 15
     - id: CMBicaridineAutoInjector
-      name: Bicaridine Autoinjector
+      name: 双卡因自动注射器
       price: 18
     - id: CMKelotaneAutoInjector
-      name: Kelotane Autoinjector
+      name: 凯洛坦自动注射器
       price: 18
     - id: AU14ParacetamolAutoInjector
-      name: Paracetamol Autoinjector
+      name: 对乙酰氨基酚自动注射器
       price: 15
     - id: AU14TramadolAutoInjector
-      name: Tramadol Autoinjector
+      name: 曲马多自动注射器
       price: 20
     - id: AU14OxycodoneAutoInjector
-      name: Oxycodone Autoinjector
+      name: 羟考酮自动注射器
       price: 22
     - id: RMCIronAutoInjector
-      name: Iron Autoinjector
+      name: 铁质自动注射器
       price: 12
 
 # Pharmacy vendor — mirrors AU14GeneralMedicalVendor pill bottles + CMVendorChemistry
 - type: entity
   id: AU14CashVendorMedicalPharmacy
   parent: AU14CashVendorBase
-  name: WY-Chem Pharmacy
-  description: A Weyland-Yutani pharmacy vending machine stocked with pill canisters, liquid medicines, and chemistry supplies. Insert cash or use department budget.
+  name: WY-Chem药房
+  description: 一台韦兰-汤谷公司的药房自动售货机，备有药丸罐、液体药品和化学用品。投入现金或使用部门预算。
   suffix: Cash, Pharmacy
   components:
   - type: Sprite
@@ -908,93 +908,93 @@
     allowDepartmentBudget: true
     items:
     - id: CMPillCanisterBicaridine
-      name: Bicaridine Pills
+      name: 双卡因药丸
       price: 20
     - id: CMPillCanisterDexalin
-      name: Dexalin Pills
+      name: 地塞林药丸
       price: 18
     - id: CMPillCanisterDylovene
-      name: Dylovene Pills
+      name: 地洛芬药丸
       price: 18
     - id: CMPillCanisterInaprovaline
-      name: Inaprovaline Pills
+      name: 依那普利定药丸
       price: 16
     - id: CMPillCanisterKelotane
-      name: Kelotane Pills
+      name: 凯洛坦药丸
       price: 18
     - id: CMPillCanisterTricordrazine
-      name: Tricordrazine Pills
+      name: 三唑仑药丸
       price: 16
     - id: RMCPillCanisterIron
-      name: Iron Pills
+      name: 铁药丸
       price: 12
     - id: AU14PillCanisterParacetamol
-      name: Paracetamol Pills
+      name: 对乙酰氨基酚药片
       price: 15
     - id: AU14PillCanisterTramadol
-      name: Tramadol Pills
+      name: 曲马多药片
       price: 20
     - id: AU14PillCanisterOxycodone
-      name: Oxycodone Pills
+      name: 羟考酮药片
       price: 25
     - id: AU14PillCanisterLeporazine
-      name: Leporazine Pills
+      name: 来泊拉嗪药丸
       price: 20
     - id: AU14PillCanisterImidazoline
-      name: Imidazoline Pills
+      name: 咪唑啉药丸
       price: 18
     - id: AU14PillCanisterCryoxadone
-      name: Cryoxadone Pills
+      name: 低温氧杂蒽酮药丸
       price: 30
     - id: AU14PillCanisterHepatocytin
-      name: Hepatocytin Pills
+      name: 肝细胞素药丸
       price: 22
     - id: AU14PillCanisterNephronate
-      name: Nephronate Pills
+      name: 肾素酸盐药丸
       price: 22
     - id: AU14PillCanisterPulmovine
-      name: Pulmovine Pills
+      name: 普尔莫文药丸
       price: 22
     - id: CMBottleBicaridine
-      name: Bicaridine Bottle
+      name: 双氯芬酸瓶
       price: 22
     - id: CMBottleDylovene
-      name: Dylovene Bottle
+      name: 地乐芬瓶
       price: 20
     - id: CMBottleDexalin
-      name: Dexalin Bottle
+      name: 地塞林瓶
       price: 20
     - id: CMBottleInaprovaline
-      name: Inaprovaline Bottle
+      name: 伊那普利瓦林瓶
       price: 18
     - id: CMBottleKelotane
-      name: Kelotane Bottle
+      name: 凯洛坦瓶
       price: 20
     - id: RMCVial
-      name: Vial
+      name: 瓶
       price: 4
     - id: CMSyringe
-      name: Syringe
+      name: 注射器
       price: 5
     - id: CMBeaker
-      name: Beaker (60u)
+      name: 烧杯（60u）
       price: 6
     - id: CMBeakerLarge
-      name: Beaker, Large (120u)
+      name: 烧杯，大号（120u）
       price: 10
     - id: RMCDropper
-      name: Dropper
+      name: 滴管
       price: 4
     - id: RMCBoxPillCanister
-      name: Empty Pill Canister Box
+      name: 空药丸气罐盒
       price: 8
 
 # Surgical supplies vendor
 - type: entity
   id: AU14CashVendorMedicalSurgery
   parent: AU14CashVendorBase
-  name: WY-Med Surgical
-  description: A Weyland-Yutani surgical supply vending machine. Insert cash or use department budget to purchase surgical equipment and wound care supplies.
+  name: WY-Med 外科
+  description: 一台韦兰-汤谷货运部手术用品自动售货机。投入现金或使用部门预算购买手术设备和伤口护理用品。
   suffix: Cash, Surgery
   components:
   - type: Sprite
@@ -1007,57 +1007,57 @@
     allowDepartmentBudget: true
     items:
     - id: CMSurgicalLine
-      name: Surgical Line
+      name: 外科产品线
       price: 25
     - id: CMSynthGraft
-      name: Synth-Graft
+      name: 合成移植物
       price: 25
     - id: CMUCastItem
-      name: Cast
+      name: 施法
       price: 15
     - id: CMUSplintItem
-      name: Splint
+      name: 夹板
       price: 8
     - id: CMStasisBagFolded
-      name: Stasis Bag
+      name: 静滞袋
       price: 40
     - id: CMPortableSurgicalBedSpawnFolded
-      name: Portable Surgical Bed
+      name: 便携手术床
       price: 50
     - id: CMRollerBedSpawnFolded
-      name: Roller Bed
+      name: 轮床
       price: 20
     - id: AU14CMDefibrillator
-      name: Defibrillator
+      name: 除颤器
       price: 60
     - id: CMHealthAnalyzer
-      name: Health Analyzer
+      name: 健康分析仪
       price: 30
     - id: CMHyposprayFilledTricord
-      name: Hypospray (Tricord)
+      name: 无针注射器（三合一药剂）
       price: 35
     - id: RMCBoxBodyBag
-      name: Body Bag Box
+      name: 尸袋盒
       price: 15
     - id: RMCBoxSterileMask
-      name: Sterile Mask Box
+      name: 无菌口罩盒
       price: 8
     - id: CMUMaskCPR
-      name: CPR Mask
+      name: CPR 面罩
       price: 10
     - id: RMCBoxLatexGloves
-      name: Latex Glove Box
+      name: 乳胶手套盒
       price: 8
     - id: CMSyringe
-      name: Syringe
+      name: 注射器
       price: 5
 
 # Law enforcement vendor
 - type: entity
   id: AU14CashVendorLawEnforcement
   parent: AU14CashVendorBase
-  name: WY SecTech
-  description: A Weyland-Yutani law enforcement equipment vending machine. Insert cash or use department budget to purchase security supplies.
+  name: WY安防
+  description: 一台维兰德-汤谷执法装备自动售货机。投入现金或使用部门预算购买安保用品。
   suffix: Cash, Law Enforcement
   components:
   - type: Sprite
@@ -1070,39 +1070,39 @@
     allowDepartmentBudget: true
     items:
     - id: RMCHandcuffs
-      name: Handcuffs
+      name: 手铐
       price: 12
     - id: RMCZipties
-      name: Zip Ties
+      name: 扎带
       price: 5
     - id: RMCBoxZiptie
-      name: Zip Tie Box
+      name: 扎带盒
       price: 20
     - id: CMStunbaton
-      name: Stun Baton
+      name: 电棍
       price: 40
     - id: CMGlassesSecurity
-      name: Security HUD
+      name: 安保HUD
       price: 18
     - id: RMCUniversalRecorder
-      name: Universal Recorder
+      name: 通用录制器
       price: 25
     - id: RMCBoxRegulationTapes
-      name: Regulation Tapes
+      name: 法规胶带
       price: 10
     - id: AU14GuidebookLawMarine
-      name: Marine Law Guidebook
+      name: 海事法指南
       price: 5
     - id: AU14GuidebookSOP
-      name: SOP Guidebook
+      name: SOP指南
       price: 5
 
 # Corporate snack machine — sells food for cash
 - type: entity
   id: AU14CashSnackMachine
   parent: AU14CashVendorBase
-  name: WY Provisions
-  description: A Weyland-Yutani branded snack dispenser. Insert cash to purchase a snack. Prices subject to colonial sales tax.
+  name: WY 供给
+  description: 一台韦兰-汤谷公司品牌的零食售卖机。投入现金即可购买零食。价格需另加殖民地销售税。
   suffix: Cash, Snacks
   components:
   - type: Sprite
@@ -1113,17 +1113,17 @@
     percentToColony: 0.6
     items:
     - id: RMCFoodSnackBarcaridine
-      name: Barcaridine Bar
+      name: 巴尔卡里丁棒
       price: 4
     - id: RMCFoodSnackKeplarCrisps
-      name: Keplar Crisps
+      name: 开普勒脆片
       price: 3
     - id: RMCFoodSnackBoonie
-      name: Boonie Bar
+      name: Boonie 能量棒
       price: 4
     - id: RMCFoodSnackCHUNK
-      name: CHUNK Bar
+      name: CHUNK 能量棒
       price: 3
     - id: CMMRE
-      name: MRE (Mil-Spec)
+      name: MRE（军用规格）
       price: 8

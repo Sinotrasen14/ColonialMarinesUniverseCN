@@ -5,8 +5,8 @@
 - type: entity
   parent: [BaseMachine, ConstructibleMachine]
   id: CMUAutoTransferSwitch
-  name: ATS-1 automatic transfer switch
-  description: Charges from the mains through its port side and throws the battery onto the emergency circuit the moment they die. The crank takes a few seconds, so hold on. Wire the port side from a cable terminal, the output side into the emergency run. Multitool opens the panel; pry to deconstruct.
+  name: ATS-1自动转换开关
+  description: 从市电通过其端口侧充电，并在电池耗尽的那一刻将电池接入应急电路。切换需要几秒钟，所以请稍等。将端口侧从电缆终端接线，输出侧接入应急运行电路。多功能工具可打开面板；撬开以拆解。
   placement:
     mode: SnapgridCenter
   components:
@@ -98,8 +98,8 @@
 
 - type: construction
   id: CMUAutoTransferSwitchRecipe
-  name: automatic transfer switch
-  description: Charges from the mains and throws its battery onto the emergency circuit the moment the mains die. Wire the port side from the mains, the output side into the emergency run.
+  name: 自动转换开关
+  description: 从市电充电，并在市电断电的瞬间将其电池接入应急电路。将端口侧接入市电，输出侧接入应急运行电路。
   graph: CMUAutoTransferSwitchGraph
   startNode: start
   targetNode: built

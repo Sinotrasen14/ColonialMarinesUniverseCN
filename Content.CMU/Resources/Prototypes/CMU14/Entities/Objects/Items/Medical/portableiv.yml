@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseStructureCorrodible
   id: AU14IVFoldable
-  name: folding intravenous drip
-  description: Allows you to inject blood into a patient or extract blood from them to do a blood transfusion. This one can fold for easy storage and transport.
+  name: 折叠式静脉滴注
+  description: 允许你向患者注入血液或从患者体内抽取血液以进行输血。这款可以折叠，便于储存和运输。
   suffix: IV, empty
   components:
   - type: Item
@@ -57,7 +57,7 @@
   - type: ItemSlots
     slots:
       pack:
-        name: pack
+        name: 包
         whitelist:
           components:
           - BloodPack

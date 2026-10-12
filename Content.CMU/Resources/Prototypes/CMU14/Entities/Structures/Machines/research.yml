@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseStructure
   id: CMUResearchDataTerminal
-  name: research data terminal
-  description: A terminal for accessing research data.
+  name: 科研部数据终端
+  description: 一个访问科研部数据的终端。
   components:
   - type: InteractedBlacklist
     blacklist:
@@ -44,9 +44,9 @@
 - type: entity
   parent: CMUResearchDataTerminal
   id: CMUResearchDataTerminalGovfor
-  name: GOVFOR research data terminal
+  name: 政府科研部数据终端
   suffix: GOVFOR
-  description: A terminal connected to the GOVFOR research network.
+  description: 一个连接到GOVFOR科研部网络的终端。
   components:
   - type: ResearchDataTerminal
     faction: govfor
@@ -54,9 +54,9 @@
 - type: entity
   parent: CMUResearchDataTerminal
   id: CMUResearchDataTerminalOpfor
-  name: OPFOR research data terminal
+  name: OPFOR 科研部数据终端
   suffix: OPFOR
-  description: A terminal connected to the OPFOR research network.
+  description: 一台连接至假想敌科研部网络的终端。
   components:
   - type: ResearchDataTerminal
     faction: opfor
@@ -64,9 +64,9 @@
 - type: entity
   parent: CMUResearchDataTerminal
   id: CMUResearchDataTerminalColony
-  name: colony research data terminal
+  name: 殖民地科研部数据终端
   suffix: Colony
-  description: A terminal connected to the Colony research network.
+  description: 一个连接到殖民地科研部网络的终端。
   components:
   - type: ResearchDataTerminal
     faction: colony
@@ -74,9 +74,9 @@
 - type: entity
   parent: CMUResearchDataTerminal
   id: CMUResearchDataTerminalCorporate
-  name: Weyland-Yutani research data terminal
+  name: 韦兰-尤塔尼科研部数据终端
   suffix: Weyland-Yutani
-  description: A terminal connected to the Weyland-Yutani research network.
+  description: 一台连接到维兰德-汤谷科研部网络的终端。
   components:
   - type: ResearchDataTerminal
     faction: corporate
@@ -84,8 +84,8 @@
 - type: entity
   parent: CMBaseStructure
   id: CMUAdminChemicalContractConsole
-  name: chemical contract materializer
-  description: An admin-only Weyland-Yutani console that issues exact generated-chemical contracts and materializes them into vials.
+  name: 化学品合同物化器
+  description: 一个仅限管理员使用的韦兰-尤塔尼控制台，用于签发精确生成的化学制品合同并将其实体化为药瓶。
   suffix: ADMIN ONLY
   components:
   - type: Transform
@@ -124,8 +124,8 @@
 - type: entity
   parent: CMBaseStructure
   id: CMUXRFScanner
-  name: XRF scanner
-  description: A spectrometer that bombards a sample in high energy radiation to detect emitted fluorescent x-ray patterns. By using the emission spectrum of the sample it can identify its chemical composition.
+  name: XRF扫描仪
+  description: 一台光谱仪，通过用高能辐射轰击样品来检测发射的荧光X射线图谱。利用样品的发射光谱，它可以识别其化学成分。
   suffix: Corporate
   components:
   - type: Appearance
@@ -222,8 +222,8 @@
 - type: entity
   parent: CMBaseStructure
   id: CMUChemSimulator
-  name: synthesis simulator
-  description: This computer uses advanced algorithms to perform simulations of reagent properties, for the purpose of calculating the synthesis required to make a new variant.
+  name: 合成模拟器
+  description: 这台计算机使用先进算法对试剂性质进行模拟，以计算制造新变体所需的合成过程。
   components:
   - type: Appearance
   - type: GenericVisualizer

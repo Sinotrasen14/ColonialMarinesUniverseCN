@@ -1,8 +1,8 @@
 - type: entity
   parent: CMWeaponPistolM1984
   id: AU14WeaponPistolM48A4
-  name: M48A4 service pistol
-  description: A timeless classic since the first World War, the M1911A1 has limited use with the USCM, and is often used as a sidearm by non-governmental bodies due to its reliability. This is a modernized version with an ammo counter and a polymer grip, designated M48A4. Chambered in .45 ACP.
+  name: M48A4 服务部手枪
+  description: 自第一次世界大战以来便是永恒的经典，M1911A1在USCM中用途有限，但由于其可靠性，常被非政府机构用作副武器。这是现代化版本，配有弹药计数器和聚合物握把，命名为M48A4。使用.45 ACP口径。
   components:
   - type: Gun
     shotsPerBurst: 2
@@ -40,7 +40,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -87,7 +87,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -98,7 +98,7 @@
 - type: entity
   parent: AU14WeaponPistolM48A4
   id: AU14WeaponPistolM48A4Tactical
-  name: SOCOM M48A4 service pistol
+  name: SOCOM M48A4 服务部手枪
   suffix: Tactical
   components:
   - type: AttachableHolder
@@ -130,8 +130,8 @@
 - type: entity
   parent: AU14WeaponPistolM48A4
   id: AU14WeaponPistolM48A5Officer
-  name: M48A5 service pistol
-  description: A timeless classic since the first World War, the M1911A1 has limited use with the USCM, and is often used as a sidearm by non-governmental bodies due to its reliability. An adaptation of the M48A4, with a reinforced chamber, barrel and slide to handle higher pressure loads, designated the M48A5. Chambered in .45 Super, but can load normal .45 ACP also.
+  name: M48A5服务部手枪
+  description: 自第一次世界大战以来便是永恒的经典，M1911A1在USCM中用途有限，但由于其可靠性，常被非政府机构用作随身武器。M48A4的改进型，强化了弹膛、枪管和套筒以承受更高压力的弹药，被命名为M48A5。口径为.45 Super，但也可装填普通的.45 ACP。
   components:
   - type: Gun
     shotsPerBurst: 2
@@ -150,7 +150,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mk80_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_88m4_unload.ogg
         priority: 2
@@ -207,7 +207,7 @@
 - type: entity
   parent: CMBaseMagazinePistol
   id: AU14MagazinePistolM48A4
-  name: M48A4 magazine (.45)
+  name: M48A4 弹匣（.45）
   components:
   - type: Tag
     tags:
@@ -239,8 +239,8 @@
 - type: entity
   parent: AU14MagazinePistolM48A4
   id: AU14MagazinePistolM48A5Super
-  name: M48A5 Super magazine (.45 Super)
-  description: A .45 Automagnum Super pistol magazine for the M48A5.
+  name: M48A5 Super 弹匣（.45 Super）
+  description: M48A5的.45自动马格南超级手枪弹匣。
   components:
   - type: Tag
     tags:
@@ -266,7 +266,7 @@
 - type: entity
   parent: CMCartridgePistolMK45
   id: AU14CartridgePistolM48A5Super
-  name: cartridge (.45 Super)
+  name: 弹药（.45 Super）
   components:
   - type: Tag
     tags:
@@ -278,7 +278,7 @@
 - type: entity
   parent: CMBulletBase
   id: AU14BulletPistol45Super
-  name: bullet (.45 Super)
+  name: 子弹（.45 Super）
   components:
   - type: Projectile
     damage:

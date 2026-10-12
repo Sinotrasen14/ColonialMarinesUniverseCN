@@ -2,8 +2,8 @@
   parent: CMBaseStructureCorrodible
   abstract: true
   id: AU14LandingSignBase
-  name: sign
-  description: A sign.
+  name: 标志
+  description: 一个标牌。
   components:
   - type: Transform
     anchored: false
@@ -19,8 +19,8 @@
 - type: entity
   parent: AU14LandingSignBase
   id: AU14LandingSignStableSpacePort
-  name: Albacetire spaceport sign
-  description: A large sign reading 'Albacetire Spaceport'.
+  name: 阿尔瓦塞特太空港标志
+  description: 一块写着“阿尔巴塞泰尔太空港”的大型标牌。
   components:
   - type: Sprite
     state: stable_spaceport
@@ -28,8 +28,8 @@
 - type: entity
   parent: AU14LandingSignBase
   id: AU14LandingSignStableColony
-  name: Albacetire colony sign
-  description: A large sign reading 'Welcome to Garrison One - Albacetire Outer Rim'.
+  name: 阿尔瓦塞特殖民地标志
+  description: 一块巨大的标牌，上面写着“欢迎来到加里森一号——阿尔巴塞提尔外环”。
   components:
   - type: Sprite
     state: stable_welcome
@@ -38,8 +38,8 @@
   parent: CMBaseStructureCorrodible
   abstract: true
   id: AU14LandingSignBaseMilitary
-  name: sign
-  description: A sign.
+  name: 标志
+  description: 一个标志。
   components:
   - type: Transform
     anchored: false
@@ -54,8 +54,8 @@
 - type: entity
   parent: AU14LandingSignBaseMilitary
   id: AU14LandingSignStableMilitary
-  name: joint base schaefer sign
-  description: A large sign reading 'Joint Base Schaefer'.
+  name: 谢弗联合基地标志
+  description: 一块写着“谢弗联合基地”的大标牌。
   components:
   - type: Sprite
     state: schaefer_clean
@@ -63,8 +63,8 @@
 - type: entity
   parent: AU14LandingSignBaseMilitary
   id: AU14LandingSignStableMilitaryDirty
-  name: joint base schaefer sign
-  description: A large sign reading 'Joint Base Schaefer'.
+  name: 谢弗联合基地标志
+  description: 一块写着“谢弗联合基地”的大标牌。
   components:
   - type: Sprite
     state: schaefer_dirty
@@ -72,8 +72,8 @@
 - type: entity
   parent: AU14LandingSignBase
   id: CMU14DangerMines
-  name: Mine field warning
-  description: A sign reading 'DANGER MINES!'.
+  name: 雷区警告
+  description: 一个写着“危险矿井！”的标牌。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Devices/minedetector.rsi

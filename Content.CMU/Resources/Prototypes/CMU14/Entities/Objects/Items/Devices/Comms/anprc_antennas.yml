@@ -1,7 +1,7 @@
 - type: entity
   abstract: true
   id: ANPRCAntennaBase
-  name: AN/PRC-117G antenna
+  name: AN/PRC-117G天线
   parent: BaseItem
   components:
   - type: Item
@@ -10,10 +10,9 @@
 - type: entity
   parent: ANPRCAntennaBase
   id: ANPRCWhipAntenna
-  name: AN/PRC-117G whip antenna
+  name: AN/PRC-117G鞭状天线
   description: >-
-    A flexible steel tape-whip antenna, standard fit for manpack radios.
-    Bends around brush and doorframes without snapping.
+    一种柔性钢带鞭状天线，是便携式电台的标准配置。可绕开灌木丛和门框弯曲而不会折断。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Radio/anprc117g.rsi
@@ -27,11 +26,9 @@
 - type: entity
   parent: ANPRCAntennaBase
   id: ANPRCWireAntenna
-  name: improvised wire antenna
+  name: 简易线状天线
   description: >-
-    A reel of insulated wire, a ceramic insulator and a length of paracord. Thrown
-    over a branch or a rafter it will hold a net together, and looks like scrap in
-    a bag until it is strung up.
+    一卷绝缘线、一个陶瓷绝缘子和一段伞绳。把它抛过树枝或椽子，就能把网固定在一起，在装进包里时看起来就像废料，直到被拉起来才显眼。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Radio/anprc117g.rsi
@@ -46,10 +43,9 @@
 - type: entity
   parent: ANPRCAntennaBase
   id: ANPRCMastAntenna
-  name: AN/PRC-117G mast antenna
+  name: AN/PRC-117G桅杆天线
   description: >-
-    A collapsible high-gain mast antenna. Meant to be raised over a command
-    post or retrans site, not hauled around on patrol.
+    可折叠高增益桅杆天线。用于架设在指挥部或转发站上方，而非在巡逻中随身携带。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Radio/anprc117g.rsi

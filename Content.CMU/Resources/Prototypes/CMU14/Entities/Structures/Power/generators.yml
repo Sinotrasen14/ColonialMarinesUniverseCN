@@ -2,9 +2,9 @@
 - type: entity
   parent: PortableGeneratorPacman # RMCPortableGenerator redundant?
   id: CMUGeneratorPortableDragon
-  name: '"Dragon" DR-30 portable generator'
+  name: '“龙”DR-30便携式发电机'
   suffix: Phoron, 30 kW
-  description: A fuel-burning generator rated for up to 30 kW. Eats solid phoron sheets by the fistful and breathes carbon dioxide - field crews call it the Dragon for a reason.
+  description: 一台额定功率最高可达30千瓦的燃烧燃料发电机。它大口吞食固态磷光体片，并呼出二氧化碳——现场人员称它为“龙”是有原因的。
   components:
   - type: Machine
     board: CMUGeneratorPortableDragonMachineCircuitboard
@@ -20,8 +20,8 @@
 - type: entity
   parent: CMBaseMachineCircuitboard
   id: CMUGeneratorPortableDragonMachineCircuitboard
-  name: '"Dragon" DR-30 generator machine board'
-  description: A machine printed circuit board for a portable generator.
+  name: '“龙”DR-30 发电机机器板'
+  description: 一台用于便携式发电机的机器印刷电路板。
   components:
   - type: Sprite
     state: power_mod
@@ -33,9 +33,9 @@
 - type: entity
   parent: RMCPortableGenerator2
   id: CMUGeneratorPortableOrochi
-  name: '"Orochi" OR-30 portable generator'
+  name: '“大蛇”OR-30便携式发电机'
   suffix: Phoron, 30 kW
-  description: A heavy portable generator rated for 30 kW. Too big to love, too useful to leave behind.
+  description: 一台额定功率为30千瓦的重型便携式发电机。大得让人爱不起来，实用得让人舍不得丢下。
   components:
   - type: RMCPortableGenerator
     watts: 30000

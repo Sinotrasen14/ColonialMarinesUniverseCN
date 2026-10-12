@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: PKP-MS "SIBIR"
+  name: PKP-MS“西伯尔”
   id: RuMCMachineGunPKP_MS
-  description: Effective at all distances, but requires the right stance.
+  description: 在所有距离上都有效，但需要正确的站姿。
   components:
   - type: Item
     size: Huge
@@ -55,7 +55,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RuMCMagazinePKP_MS
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -228,8 +228,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RuMCMagazinePKP_MS
-  name: PKP-MS box magazine (7.62x54R)
-  description: A 150-round belt-fed box magazine for the PKP-MS general-purpose machine gun.
+  name: PKP-MS弹匣（7.62x54R）
+  description: 一把为PKP-MS通用机枪设计的150发弹链供弹盒式弹匣。
   components:
   - type: Tag
     tags:
@@ -260,8 +260,8 @@
 - type: entity
   parent: RuMCMagazinePKP_MS
   id: RuMCMagazinePKP_MSTracer
-  name: PKP-MS box magazine (7.62x54R Tracer)
-  description: A 150-round belt-fed tracer box magazine for the PKP-MS general-purpose machine gun.
+  name: PKP-MS弹匣（7.62x54R曳光弹）
+  description: 一把用于PKP-MS通用机枪的150发弹链供弹曳光弹盒式弹匣。
   components:
   - type: Tag
     tags:
@@ -294,8 +294,8 @@
 - type: entity
   parent: RMCCartridgeRifleAR10
   id: RuMCCartridge762x54R
-  name: cartridge (7.62x54mmR)
-  description: A 7.62x54mmR cartridge
+  name: 7.62x54mmR 弹药
+  description: 一支7.62x54mmR弹药
   components:
   - type: Tag
     tags:

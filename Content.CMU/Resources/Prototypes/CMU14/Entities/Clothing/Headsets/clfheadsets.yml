@@ -1,8 +1,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyCLF
-  name: modified colony encryption key
-  description: An encryption key used to communicate on colony and CLF radio channels.
+  name: 修改后的殖民地加密密钥
+  description: 一种用于在殖民地与CLF无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -13,8 +13,8 @@
 - type: entity
   parent: RMCBaseUniformAccessory
   id: AU14CLFHeadset
-  name: CLF earpiece
-  description: A small, concealable earpiece used by CLF operatives. Virtually invisible when worn, it clips discreetly onto a uniform.
+  name: CLF 耳机
+  description: CLF特工使用的小型隐蔽耳机。佩戴时几乎隐形，可 discreetly 夹在制服上。
   suffix: CLF, Colony
   components:
   - type: Sprite

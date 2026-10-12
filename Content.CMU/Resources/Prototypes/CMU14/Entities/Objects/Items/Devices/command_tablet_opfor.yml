@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCTabletCO
   id: AU14TabletOpfor
-  name: opfor command tablet
-  description: A portable command interface for Opfor command, linked to their faction's systems.
+  name: 敌方指挥部平板
+  description: 一个用于指挥部指挥的便携式指挥接口，与其阵营系统相连。
   components:
   - type: AccessReader
     access: [[ "AU14AccessOpforCommand" ]]
@@ -16,7 +16,7 @@
 - type: entity
   parent: AU14TabletGovfor
   id: CMUCommandTabletAdmin
-  name: admin command tablet
+  name: 管理指挥部平板
   suffix: Admin, DO NOT MAP, CMU
   components:
   - type: AccessReader

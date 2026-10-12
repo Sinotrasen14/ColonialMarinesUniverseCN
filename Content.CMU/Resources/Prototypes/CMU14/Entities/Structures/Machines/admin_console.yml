@@ -8,8 +8,8 @@
   abstract: true
   parent: RMCCommunicationsConsoleBase
   id: AU14AdminConsoleBase
-  name: administration console
-  description: A colony administration console for managing economic policy and requesting third-party support.
+  name: 管理控制台
+  description: 一个用于管理经济政策和请求第三方支持的殖民地行政控制台。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
@@ -35,8 +35,8 @@
 - type: entity
   id: AU14AdminConsole
   parent: AU14AdminConsoleBase
-  name: colony administration console
-  description: The colony administrator's terminal. Set sales tax rates and coordinate third-party support. All changes are announced colony-wide.
+  name: 殖民地管理控制台
+  description: 殖民地管理员的终端。设置销售税率并协调第三方支持。所有变更都会在全殖民地范围内公告。
   suffix: Colony, Admin
   components:
   - type: Sprite

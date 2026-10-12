@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   id: AU14WeaponRifleM16A1 # TODO: Make the M16 grenadier rifle when impact nades exist
-  name: M16A1 rifle
-  description: An old, reliable design first adopted by the U.S. military in the 1960s. Something like this belongs in a museum of war history. It is chambered in 5.56x45mm.
+  name: M16A1步枪
+  description: 一款古老而可靠的设计，最早于20世纪60年代被美军采用。这样的东西应该放进战争历史博物馆。它使用5.56x45mm口径。
   suffix: Filled
   components:
   - type: Sprite
@@ -55,7 +55,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RMCMagazineRifleM16
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -101,8 +101,8 @@
 - type: entity
   parent: AU14WeaponRifleM16A1
   id: AU14WeaponRifleM16A2
-  name: M16A2 rifle
-  description: An old, reliable design first adopted by the U.S. military in the 1980s. Something like this belongs in a museum of war history. It is chambered in 5.56x45mm.
+  name: M16A2步枪
+  description: 一款古老而可靠的设计，于20世纪80年代首次被美军采用。这样的东西应该放进战争历史博物馆。它使用5.56x45mm口径。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/Civilian/aum16a248x32.rsi
@@ -129,8 +129,8 @@
 - type: entity
   parent: AU14WeaponRifleM16A2
   id: AU14WeaponRifleM16A2Larue
-  name: M16A2 Larue rifle
-  description: "An 'improved' pattern of M16A2 recently released on the civilian market, proclaiming it is 'cutting edge modularity and optics friendliness on a budget' It met limited success in it's intended market It has seen stable but small sales regardless."
+  name: M16A2 Larue步枪
+  description: "一款“改进型”M16A2最近在民用市场上推出，宣称其“以有限预算实现前沿模块化与光学配件友好性”。它在目标市场上只取得了有限的成功，但无论如何销量一直稳定而小众。"
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/Civilian/m16a2larue48x32.rsi
@@ -143,8 +143,8 @@
 - type: entity
   parent: AU14WeaponRifleM16A1
   id: AU14WeaponRifleAR10
-  name: AR10 rifle
-  description: An old, reliable design. Something like this belongs in a museum of war history. It is chambered in 5.56x45mm.
+  name: AR10步枪
+  description: 一个古老而可靠的设计。这样的东西应该放在战争历史博物馆里。它使用5.56x45mm口径。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/Civilian/auar1064x32.rsi
@@ -170,8 +170,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: CMUMagazineRifleM16Extended
-  name: M16 Extended Magazine (5.56x45mm)
-  description: "A 30-round 5.56x45mm magazine developed in the early 1970s for the M16 series rifles."
+  name: M16 加长弹匣（5.56x45mm）
+  description: "一种为M16系列步枪于20世纪70年代初研制的30发5.56x45毫米弹匣。"
   components:
   - type: Tag
     tags:
@@ -198,8 +198,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   id: AU14WeaponRifleM16A1Tac # TODO: Make the M16 grenadier rifle when impact nades exist
-  name: M16A1 rifle
-  description: An old, reliable design first adopted by the U.S. military in the 1960s. Something like this belongs in a museum of war history. It is chambered in 5.56x45mm.
+  name: M16A1步枪
+  description: 一款古老而可靠的设计，最早于20世纪60年代被美军采用。这样的东西应该放进战争历史博物馆。它使用5.56x45mm口径。
   suffix: Filled
   components:
   - type: Sprite
@@ -252,7 +252,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMUMagazineRifleM16Extended
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
@@ -300,8 +300,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: CMUMagazineRifleM16AP
-  name: M16 'Green-Tip' 20 Round Magazine (5.56x45mm)
-  description: "A 20-round 5.56x45mm magazine developed in the early 1970s for the M16 series rifles."
+  name: M16“绿头弹”20发弹匣（5.56×45毫米）
+  description: "一把20发5.56×45毫米弹匣，于20世纪70年代初为M16系列步枪研制。"
   components:
   - type: Tag
     tags:
@@ -328,8 +328,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: CMUMagazineRifleM16APExt
-  name: M16 'Green-Tip' 30 Round Magazine (5.56x45mm)
-  description: "A 30-round 5.56x45mm magazine developed in the early 1970s for the M16 series rifles."
+  name: M16“绿头弹”30发弹匣（5.56×45毫米）
+  description: "一把为M16系列步枪于20世纪70年代初研制的30发5.56×45毫米弹匣。"
   components:
   - type: Tag
     tags:
@@ -356,8 +356,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: CMUCartridgeRifleM16AP
-  name: AP Cartridge (5.56x45)
-  description: A Armor Piercing 5.56x45 rifle cartridge
+  name: AP弹（5.56×45）
+  description: 一支5.56x45穿甲步枪弹
   components:
   - type: Tag
     tags:

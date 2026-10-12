@@ -1,7 +1,7 @@
 - type: entity
   id: ActionBlackfootEngineToggle
-  name: Toggle Blackfoot Engines
-  description: Start or stop the Blackfoot engines.
+  name: 切换黑脚引擎
+  description: 启动或停止黑脚引擎。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootEngineToggleActionEvent
@@ -15,8 +15,8 @@
 
 - type: entity
   id: ActionBlackfootTakeoff
-  name: Blackfoot Takeoff
-  description: Begin the VTOL takeoff sequence.
+  name: 黑脚起飞
+  description: 开始垂直起降起飞序列。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootTakeoffActionEvent
@@ -30,8 +30,8 @@
 
 - type: entity
   id: ActionBlackfootLand
-  name: Blackfoot Landing
-  description: Begin the VTOL landing sequence.
+  name: 黑脚登陆点
+  description: 开始垂直起降着陆序列。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootLandActionEvent
@@ -45,8 +45,8 @@
 
 - type: entity
   id: ActionBlackfootFlightModeToggle
-  name: Toggle Blackfoot Flight Mode
-  description: Switch between VTOL hover and forward flight.
+  name: 切换黑脚飞行模式
+  description: 在垂直起降悬停与前飞之间切换。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootFlightModeToggleActionEvent
@@ -60,8 +60,8 @@
 
 - type: entity
   id: ActionBlackfootRearDoorToggle
-  name: Toggle Blackfoot Rear Door
-  description: Open or close the Blackfoot rear door.
+  name: 切换黑脚后门
+  description: 打开或关闭黑脚直升机的后门。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootRearDoorToggleActionEvent
@@ -75,8 +75,8 @@
 
 - type: entity
   id: ActionBlackfootStowToggle
-  name: Stow Blackfoot
-  description: Fold or deploy the Blackfoot while grounded.
+  name: 收起黑脚
+  description: 在地面时折叠或展开Blackfoot。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootStowToggleActionEvent
@@ -90,8 +90,8 @@
 
 - type: entity
   id: ActionBlackfootAscendZLevel
-  name: Blackfoot Ascend
-  description: Climb the Blackfoot up one Z-level.
+  name: 黑脚上升
+  description: 将黑脚提升一个Z层级。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootAscendZLevelActionEvent
@@ -106,8 +106,8 @@
 
 - type: entity
   id: ActionBlackfootDescendZLevel
-  name: Blackfoot Descend
-  description: Descend the Blackfoot down one Z-level.
+  name: 黑脚下降
+  description: 将黑脚下降一个Z轴高度。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootDescendZLevelActionEvent
@@ -122,8 +122,8 @@
 
 - type: entity
   id: ActionBlackfootDoorGunZModeToggle
-  name: Toggle M866 Z-Fire
-  description: Switch the M866 between current Z-level fire and one-level-down fire.
+  name: 切换M866 Z-Fire
+  description: 将M866在当前的Z轴高度射击和向下一层高度射击之间切换。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootDoorGunZModeToggleActionEvent

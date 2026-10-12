@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCBaseWeaponLMG
   id: CMUGPMGTWE
-  name: L66A2 general purpose machine gun
-  description: A heavy, mobile machinegun used by the Royal Commandos. It fires 10x30mm rounds.
+  name: L66A2通用机枪
+  description: 一种由皇家突击队使用的重型移动机枪。它发射10x30毫米弹药。
   suffix: TWE
   components:
   - type: Tag
@@ -53,7 +53,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMUMagazineGPMGTWE
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_sg_unload.ogg
@@ -88,7 +88,7 @@
 - type: entity
   parent: RMCMagazineLMGBase
   id: CMUMagazineGPMGTWE
-  name: "L66A2 Ammo Box (10x30mm)"
+  name: "L66A2弹药箱（10x30mm）"
   components:
   - type: Tag
     tags:
@@ -110,8 +110,8 @@
 - type: entity
   parent: RMCCartridgeRifleAR10
   id: CMCCartridgeGPMGTWE
-  name: cartridge (10x30mm)
-  description: A 10x30mm cartridge
+  name: 弹壳（10x30毫米）
+  description: 一个10x30毫米的滤芯
   components:
   - type: Tag
     tags:

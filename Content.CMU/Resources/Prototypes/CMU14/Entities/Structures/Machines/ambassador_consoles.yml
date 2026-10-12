@@ -6,8 +6,8 @@
   abstract: true
   parent: RMCCommunicationsConsoleBase
   id: AU14AmbassadorConsoleBase
-  name: ambassador console
-  description: A console for diplomatic functions and third party communication.
+  name: 大使控制台
+  description: 一个用于外交职能和第三方通信的控制台。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
@@ -45,8 +45,8 @@
 - type: entity
   id: AU14AmbassadorConsoleUPP
   parent: AU14AmbassadorConsoleBase
-  name: UPP diplomatic console
-  description: A Union of Progressive Peoples diplomatic console. Can request GROM special forces or BEAR PMC support.
+  name: UPP外交控制台
+  description: 一个进步人民联盟的外交控制台。可以请求GROM特种部队或BEAR私人军事公司的支援。
   suffix: UPP, GROM, BEAR
   components:
   - type: Sprite
@@ -72,8 +72,8 @@
 - type: entity
   id: AU14AmbassadorConsoleUA
   parent: AU14AmbassadorConsoleBase
-  name: UA diplomatic console
-  description: A United Americas diplomatic console. Can request US Army or VAI support.
+  name: 乌克兰外交控制台
+  description: 一个联合美洲外交控制台。可以请求美国陆军或VAI支援。
   suffix: UA, Army
   components:
   - type: Sprite
@@ -93,8 +93,8 @@
 - type: entity
   id: AU14AmbassadorConsoleTWE
   parent: AU14AmbassadorConsoleBase
-  name: TWE diplomatic console
-  description: A Three World Empire diplomatic console. Can request NSPA or Royal Marines' support.
+  name: TWE外交控制台
+  description: 一个三界帝国（Three World Empire）外交控制台。可请求NSPA或皇家海军陆战队的支援。
   suffix: TWE, PMC
   components:
   - type: Sprite
@@ -114,8 +114,8 @@
 - type: entity
   id: AU14AmbassadorConsoleIS
   parent: AU14AmbassadorConsoleBase
-  name: ICSC diplomatic console
-  description: An Independent Core System Colonies diplomatic console.
+  name: 国际通信系统外交控制台
+  description: 一个独立核心星系殖民地外交控制台。
   suffix: ICSC, PMC
   components:
   - type: Sprite

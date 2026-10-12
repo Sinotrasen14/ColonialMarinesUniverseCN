@@ -1,8 +1,8 @@
 - type: entity
   parent: AU14WeaponRifleKramerAR
-  name: Kramer Light Support Weapon
+  name: 克莱默轻型支援武器
   id: AU14WeaponRifleKramerLSW
-  description: Also referred to as the Kramer or KAR, the Kramer Light Support Weapon is an automatic squad support variant of the standard Kramer assault rifle. Manufactured by Kramer Metallarbeiten GmbH, the KAR sees widespread use across United Americas.
+  description: 也被称为Kramer或KAR，Kramer轻型支援武器是标准Kramer突击步枪的自动班用支援型号。由Kramer Metallarbeiten GmbH制造，KAR在United Americas各地得到广泛使用。
   components:
     - type: Sprite
       sprite: CMU14/Weapons/Guns/LACN/LACNRedux/LACN/kramermg/kramericon.rsi
@@ -46,7 +46,7 @@
     - type: ItemSlots
       slots:
         gun_magazine:
-          name: Magazine
+          name: 弹匣
           insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
           ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
           priority: 2
@@ -93,12 +93,12 @@
 - type: entity
   parent: AU14WeaponRifleKramerLSW
   id: AU14WeaponRifleKramerLSWAP
-  name: Kramer Light Support Weapon (AP)
+  name: 克莱默轻型支援武器（穿甲）
   components:
     - type: ItemSlots
       slots:
         gun_magazine:
-          name: Magazine
+          name: 弹匣
           insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
           ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
           priority: 2
@@ -111,7 +111,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14WeaponRifleKramerMagazineLSWStandard
-  name: "Kramer LSW box magazine (10x24mm)"
+  name: "Kramer LSW弹匣（10x24mm）"
   components:
     - type: Tag
       tags:
@@ -138,7 +138,7 @@
 - type: entity
   parent: AU14WeaponRifleKramerMagazineLSWStandard
   id: AU14WeaponRifleKramerMagazineLSWAP
-  name: "Kramer LSW AP box magazine (10x24mm)"
+  name: "Kramer LSW AP弹匣（10x24mm）"
   suffix: AP
   components:
     - type: Tag
@@ -163,8 +163,8 @@
 - type: entity
   parent: AU14WeaponRifleKramerLSW
   id: CMUWeaponRifleKramerLSWShort
-  name: Kramer Mobile Support Weapon
-  description: A short-barreled variant of the Kramer Light Support Weapon. Lighter and quicker to bring to bear, at the cost of some accuracy. Takes Kramer LSW box magazines.
+  name: 克拉默机动支援武器
+  description: Kramer轻型支援武器的短枪管变体。更轻、更易瞄准，但牺牲了一些精准度。使用Kramer LSW弹匣。
   components:
     - type: Sprite
       sprite: CMU14/Weapons/Guns/LACN/LACNRedux/LACN/kramermgshort/kramericon.rsi

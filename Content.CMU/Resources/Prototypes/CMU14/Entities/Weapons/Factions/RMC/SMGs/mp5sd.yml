@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBaseWeaponSMG
-  name: MP5SD6 submachinegun
+  name: MP5SD6冲锋枪
   id: CMU14WeaponSMGMP5SD
-  description: The MP5SD6 is an integrally suppressed sub machine gun designed for Special Ops, Tier One operators and Counter Terror units, it's been used in an extraordinary amount of special forces units and police units in previous decades.
+  description: MP5SD6是一款为特种作战、一级作战人员和反恐部队设计的集成消音冲锋枪，在过去几十年中被大量特种部队和警察部队使用。
   suffix: Filled
   components:
   - type: Sprite
@@ -62,7 +62,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMUMagazineSMGMP5AP
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -127,7 +127,7 @@
 - type: entity
   parent: RMCAttachmentSuppressor
   id: CMU14AttachmentSuppressorM5SD
-  name: MP5SD6 suppressor
+  name: MP5SD6消音器
   components:
   - type: Sprite
     sprite: CMU14/Objects/Weapons/Guns/SMGs/mp5sd.rsi

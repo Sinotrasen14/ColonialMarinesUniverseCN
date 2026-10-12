@@ -2,8 +2,8 @@
   abstract: true
   parent: BaseItem
   id: RuMCIRPComponentBase
-  name: IRP component
-  description: Базовый прототип для всех продуктов, что входят в состав стандартного IRP UPP.
+  name: IRP 组件
+  description: 所有属于标准 IRP UPP 组成部分的产品的基类原型。
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Consulable/Food/irp_contents.rsi
@@ -17,8 +17,8 @@
 - type: entity
   parent: CMMRE
   id: RuMCirpUPP
-  name: UPP ration pack
-  description: "With love and the soul of the homeland." # С любовью и душой от родины.
+  name: UPP 口粮包
+  description: "带着爱和故乡的灵魂。" # С любовью и душой от родины.
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Consulable/Food/irp_spp.rsi
@@ -119,8 +119,8 @@
 
 - type: entity
   parent: RMCBoxMREEmpty
-  name: box of UPP Ration Packs (x12)
-  description: A box of UPP Ration Packs.
+  name: 一箱UPP口粮包（x12）
+  description: 一箱UPP口粮包。
   id: RuMCBoxIRPUPP
   suffix: Filled, UPP
   components:

@@ -1,8 +1,8 @@
 - type: entity
   id: CMUPaperSlipBase
   parent: CMPaper
-  name: paper slip
-  description: A plain slip of paper.
+  name: 纸片
+  description: 一张普通的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -29,7 +29,7 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperBase
-  name: paper
+  name: 论文
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -52,9 +52,9 @@
 - type: entity
   id: CMUPaperSlipMedication
   parent: CMUPaperSlipBase
-  name: medication slip
+  name: 用药单
   suffix: Purple
-  description: A standardized prescription slip produced by the International Committee of the Red Cross. Used by Medical personnel to authorize, track, and strictly ration the distribution of controlled pharmaceuticals.
+  description: 红十字国际委员会制作的标准处方单。医务人员用于授权、追踪并严格配给受管制药品的分发。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -92,9 +92,9 @@
 - type: entity
   id: CMUPaperSlipMedicationGreen
   parent: CMUPaperSlipMedication
-  name: medication slip
+  name: 用药单
   suffix: Green
-  description: A standardized prescription slip produced by the International Committee of the Red Cross. Used by Medical personnel to authorize, track, and strictly ration the distribution of controlled pharmaceuticals.
+  description: 红十字国际委员会制作的标准化处方单。医务人员用于授权、追踪并严格配给受控药品的分发。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -118,9 +118,9 @@
 - type: entity
   id: CMUPaperSlipMedicationORed
   parent: CMUPaperSlipMedication
-  name: medication slip
+  name: 用药单
   suffix: Red
-  description: A standardized prescription slip produced by the International Committee of the Red Cross. Used by Medical personnel to authorize, track, and strictly ration the distribution of controlled pharmaceuticals.
+  description: 红十字国际委员会制作的标准化处方单。医务人员用于授权、追踪并严格配给受控药品的分发。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -154,8 +154,8 @@
 - type: entity #27x27 pixel image to ss14 goodie with black background. Really nice if you know how to get shit done
   parent: CMPaper
   id: CMUPaperPhoto
-  name: photograph
-  description: A photograph of a person, place, or thing.
+  name: 照片
+  description: 一张人物、地点或物品的照片。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -177,8 +177,8 @@
 - type: entity #27x27 pixel image to ss14 goodie with black background. Really nice if you know how to get shit done
   parent: CMPaper
   id: CMUPaperParking
-  name: parking ticket
-  description: A municipal parking violation notice. Failure to comply may result in fines or vehicle impoundment.
+  name: 停车罚单
+  description: 一张市政停车违规通知。未遵守规定可能导致罚款或车辆被扣押。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -212,8 +212,8 @@
 - type: entity
   parent: CMUPaperPhoto
   id: CMUPaperPhotoPotato
-  name: cat photograph
-  description: A photograph of an evil looking cat... It's staring at you.
+  name: 猫的照片
+  description: 一张邪恶模样的猫的照片……它正盯着你。
   components:
     - type: Paper
       stampState: paper_stamp-ce
@@ -253,8 +253,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperICSC
-  name: ICSC paper
-  description: A paper with Independent Core System Colonies letterhead.
+  name: ICSC论文
+  description: 带有独立核心系统殖民地信头的论文。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -279,8 +279,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperUSCM
-  name: USCM paper
-  description: A sheet of paper bearing the United States Colonial Marine Corps letterhead.
+  name: USCM论文
+  description: 一张印有美国殖民地海军陆战队信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -305,8 +305,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperFlagUA
-  name: UA paper
-  description: A sheet of paper bearing the United Americas Flag letterhead.
+  name: UA论文
+  description: 一张印有联合美洲国旗抬头纸的信纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -331,8 +331,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperUPP
-  name: UPP paper
-  description: A sheet of paper bearing the Union of Progressive Peoples letterhead.
+  name: UPP论文
+  description: 一张印有进步人民联盟信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -356,8 +356,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperFlagUPP
-  name: UPP Flag paper
-  description: A sheet of paper bearing the Union of Progressive Peoples Flag letterhead.
+  name: UPP旗帜纸
+  description: 一张印有进步人民联盟旗帜抬头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -382,9 +382,9 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperHYPERDYNE
-  name: Hyperdyne paper
+  name: 超动力纸
   suffix: Black
-  description: A sheet of paper bearing the Hyperdyne Systems letterhead.
+  description: 一张印有Hyperdyne Systems信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -408,9 +408,9 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperAltHYPERDYNE
-  name: Hyperdyne executive paper
+  name: 超动力执行文件
   suffix: Orange
-  description: A premium sheet of paper bearing the Hyperdyne Systems letterhead.
+  description: 一张带有Hyperdyne Systems信头的优质纸张。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -435,9 +435,9 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperBlackWEYLAND
-  name: Weyland-Yutani paper
+  name: 韦兰-尤塔尼文件
   suffix: Black
-  description: A sheet of paper bearing the black Weyland-Yutani letterhead.
+  description: 一张印有黑色Weyland-Yutani信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -461,9 +461,9 @@
 - type: entity
   parent: CMUPaperBlackWEYLAND
   id: CMUPaperWEYLAND
-  name: Weyland-Yutani paper
+  name: 韦兰-尤塔尼论文
   suffix: Regular
-  description: A sheet of paper bearing the Weyland-Yutani letterhead.
+  description: 一张印有韦兰-尤塔尼公司信头的纸。
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/CMU14/Interface/Paper/WEYLANDHeader.png"
@@ -475,9 +475,9 @@
 - type: entity
   parent: CMUPaperBlackWEYLAND
   id: CMUPaperInvertedWEYLAND
-  name: Weyland-Yutani paper
+  name: 韦兰-尤塔尼文件
   suffix: Inverted
-  description: A sheet of paper bearing the inverted Weyland-Yutani letterhead.
+  description: 一张印有倒置韦兰-尤塔尼公司信头的纸。
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/CMU14/Interface/Paper/WEYLANDInvertedHeader.png"
@@ -489,9 +489,9 @@
 - type: entity
   parent: CMUPaperBlackWEYLAND
   id: CMUPaperResearcherWEYLAND
-  name: Weyland-Yutani paper
+  name: 韦兰-尤塔尼论文
   suffix: Researcher
-  description: A sheet of paper bearing the Weyland-Yutani Research letterhead.
+  description: 一张印有韦兰-尤坦尼科研部信头的纸。
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/CMU14/Interface/Paper/WEYLANDResearchHeader.png"
@@ -503,9 +503,9 @@
 - type: entity
   parent: CMUPaperBlackWEYLAND
   id: CMUPaperPMCWEYLAND
-  name: Weyland-Yutani paper
+  name: 韦兰-尤塔尼纸
   suffix: PMC
-  description: A sheet of paper bearing the repurposed Weyland "Wings" for the Weyland-Yutani Private Military Contractors letterhead.
+  description: 一张印有韦兰-尤塔尼私人军事承包商信头的纸，上面使用了改造后的韦兰“翅膀”标志。
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/CMU14/Interface/Paper/WEYLANDPMCHeader.png"
@@ -518,8 +518,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperTWE
-  name: TWE paper
-  description: A sheet of paper bearing the Three World Empire letterhead.
+  name: TWE论文
+  description: 一张印有三大世界帝国信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -545,9 +545,9 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperBlackTYRELL
-  name: Tyrell paper
+  name: 泰瑞尔纸
   suffix: Black
-  description: A sheet of paper bearing the black Tyrell Corporation letterhead.
+  description: 一张印有黑色泰瑞尔公司信头的纸。
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/CMU14/Interface/Paper/TYRELLCORPHeader.png"
@@ -559,9 +559,9 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperTYRELL
-  name: Tyrell paper
+  name: 泰瑞尔论文
   suffix: Orange
-  description: A sheet of paper bearing the Tyrell Corporation letterhead.
+  description: 一张印有泰瑞尔公司信头的纸。
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/CMU14/Interface/Paper/TYRELLCORPHeader_alt.png"
@@ -574,8 +574,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperSEEGSON
-  name: Seegson paper
-  description: A sheet of paper bearing the Seegson letterhead.
+  name: 西格森纸
+  description: 一张印有西格森信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -600,8 +600,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperAEGIS
-  name: AEGIS paper
-  description: A sheet of paper bearing the AEGIS Armaments letterhead.
+  name: AEGIS论文
+  description: 一张印有AEGIS Armaments信头的纸。
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/CMU14/Interface/Paper/AEGISHeader.png"
@@ -614,8 +614,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperLASELLE
-  name: Laselle Bionational paper
-  description: A sheet of paper bearing the Laselle Bionational letterhead.
+  name: Laselle Bionational 纸
+  description: 一张印有Laselle Bionational信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -638,8 +638,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperYAMAHA
-  name: Yamaha paper
-  description: A sheet of paper bearing the Yamaha Corporation letterhead.
+  name: 雅马哈论文
+  description: 一张印有雅马哈公司信头的纸。
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/CMU14/Interface/Paper/YAMAHAHeader.png"
@@ -650,8 +650,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperKELLAND
-  name: Kelland paper
-  description: A sheet of paper bearing the Kelland Mining letterhead.
+  name: 凯兰纸
+  description: 一张印有凯兰德矿业公司信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -674,8 +674,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperCMB
-  name: CMB paper
-  description: A sheet of paper bearing the Colonial Marshal Bureau letterhead.
+  name: CMB论文
+  description: 一张印有殖民地法警局信头的纸。
   components:
   - type: PaperVisuals
     headerImagePath: "/Textures/CMU14/Interface/Paper/CMBHeader.png"
@@ -688,8 +688,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperVAI
-  name: VAI paper
-  description: A sheet of paper bearing the Vanguard's Arrow Incorporated letterhead.
+  name: VAI论文
+  description: 一张印有先锋之箭公司信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -714,8 +714,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperCCAF
-  name: CCAF paper
-  description: A sheet of paper bearing the Canadian Colonial Armed Forces letterhead.
+  name: CCAF论文
+  description: 一张印有加拿大殖民地武装部队信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -740,8 +740,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperCLF
-  name: CLF paper
-  description: A sheet of paper bearing the Colonial Liberation Front letterhead.
+  name: CLF论文
+  description: 一张印有殖民解放阵线信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -765,8 +765,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperUN
-  name: UN paper
-  description: A sheet of paper bearing the United Nations letterhead.
+  name: 联合国文件
+  description: 一张印有联合国抬头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -788,8 +788,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperIHRO
-  name: IHRO paper
-  description: A sheet of paper bearing the Independent Human Rights Organization letterhead.
+  name: IHRO论文
+  description: 一张印有独立人权组织信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -811,8 +811,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperIHRO2
-  name: IHRO paper
-  description: A sheet of paper bearing the Interstellar Human Rights Organization letterhead.
+  name: IHRO论文
+  description: 一张印有星际人权组织信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -835,8 +835,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperUSARMY
-  name: US Army paper
-  description: A sheet of paper bearing the United States Army letterhead.
+  name: 美国陆军文件
+  description: 一张印有美国陆军信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -859,8 +859,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperFBI
-  name: FBI paper
-  description: A sheet of paper bearing the Federal Bureau of Investigation letterhead.
+  name: 联邦调查局文件
+  description: 一张印有联邦调查局信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -884,8 +884,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperARBITER
-  name: Judge's paper
-  description: A sheet of paper bearing the Orbital Arbiter's letterhead.
+  name: 法官的论文
+  description: 一张印有轨道仲裁者信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -907,8 +907,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperARBITERVariant
-  name: Judge's paper
-  description: A sheet of black paper bearing the Orbital Arbiter's letterhead.
+  name: 法官的论文
+  description: 一张印有轨道仲裁者信头的黑纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -933,8 +933,8 @@
 - type: entity
   parent: CMPaper
   id: CMUPaperCOUNSEL
-  name: Counsellor's paper
-  description: A sheet of paper bearing the Orbital Counsel's letterhead.
+  name: 辅导员文件
+  description: 一张印有轨道法律顾问信头的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -958,8 +958,8 @@
 - type: entity #admeme
   parent: CMPaper
   id: CMUPaperPROVOST
-  name: PROVOST paper
-  description: A sheet of paper bearing the Provost's letterhead. You feel like this is a very important piece of paper.
+  name: PROVOST 论文
+  description: 一张印有教务长信头的纸。你觉得这是一份非常重要的文件。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -983,8 +983,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperCreamSlip
-  name: cream paper slip
-  description: A cream colored slip of paper.
+  name: 奶油纸条
+  description: 一张奶油色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1004,8 +1004,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperTanSlip
-  name: tan paper slip
-  description: A tan colored slip of paper.
+  name: 纸条
+  description: 一张棕褐色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1025,8 +1025,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperBrownSlip
-  name: brown paper slip
-  description: A brown slip of paper.
+  name: 牛皮纸便条
+  description: 一张棕色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1046,8 +1046,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperBlackSlip
-  name: black paper slip
-  description: A black slip of paper.
+  name: 黑纸条
+  description: 一张黑色纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1067,8 +1067,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperGreySlip
-  name: grey paper slip
-  description: A grey slip of paper.
+  name: 灰色纸条
+  description: 一张灰色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1088,8 +1088,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperBlueSlip
-  name: blue paper slip
-  description: A blue slip of paper.
+  name: 蓝纸单
+  description: 一张蓝色纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1109,8 +1109,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperNavySlip
-  name: navy paper slip
-  description: A navy slip of paper.
+  name: 海军蓝纸条
+  description: 一张海军蓝的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1130,8 +1130,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperCyanSlip
-  name: cyan paper slip
-  description: A cyan slip of paper.
+  name: 青色纸条
+  description: 一张青色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1151,8 +1151,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperGreenSlip
-  name: green paper slip
-  description: A green slip of paper.
+  name: 绿纸条
+  description: 一张绿色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1172,8 +1172,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperOliveSlip
-  name: olive paper slip
-  description: An olive slip of paper.
+  name: 橄榄色纸条
+  description: 一张橄榄色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1193,8 +1193,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperOrangeSlip
-  name: orange paper slip
-  description: An orange slip of paper.
+  name: 橙色纸条
+  description: 一张橙色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1214,8 +1214,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperPinkSlip
-  name: pink paper slip
-  description: A pink slip of paper.
+  name: 粉色纸条
+  description: 一张粉红色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1235,8 +1235,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperPurpleSlip
-  name: purple paper slip
-  description: A purple slip of paper.
+  name: 紫色纸条
+  description: 一张紫色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1256,8 +1256,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperRedSlip
-  name: red paper slip
-  description: A red slip of paper.
+  name: 红纸签
+  description: 一张红色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1278,8 +1278,8 @@
 - type: entity
   parent: CMUPaperSlipBase
   id: CMUPaperYellowSlip
-  name: yellow paper slip
-  description: A yellow slip of paper.
+  name: 黄纸条
+  description: 一张黄色的纸条。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1301,8 +1301,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperCream
-  name: cream paper
-  description: A cream colored paper.
+  name: 奶油色纸张
+  description: 一张奶油色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1322,8 +1322,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperTan
-  name: tan paper
-  description: A tan colored paper.
+  name: 棕褐色纸张
+  description: 一张棕褐色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1343,8 +1343,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperBrown
-  name: brown paper
-  description: A brown paper.
+  name: 牛皮纸
+  description: 一张棕色纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1364,8 +1364,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperBlack
-  name: black paper
-  description: A black paper.
+  name: 黑纸
+  description: 一张黑色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1385,8 +1385,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperGrey
-  name: grey paper
-  description: A grey paper.
+  name: 灰皮书
+  description: 一张灰色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1406,8 +1406,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperBlue
-  name: blue paper
-  description: A blue paper.
+  name: 蓝皮书
+  description: 一张蓝色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1427,8 +1427,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperNavy
-  name: navy paper
-  description: A navy paper.
+  name: 海军文件
+  description: 一张海军蓝的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1448,8 +1448,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperCyan
-  name: cyan paper
-  description: A cyan paper.
+  name: 青色纸
+  description: 一张青色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1469,8 +1469,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperGreen
-  name: green paper
-  description: A green paper.
+  name: 绿皮书
+  description: 一份绿皮书。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1490,8 +1490,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperOlive
-  name: olive paper
-  description: An olive paper.
+  name: 橄榄纸
+  description: 一张橄榄色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1511,8 +1511,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperYellow
-  name: yellow paper
-  description: A yellow paper.
+  name: 黄皮书
+  description: 一张黄色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1532,8 +1532,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperOrange
-  name: orange paper
-  description: An orange paper.
+  name: 橙色纸张
+  description: 一张橙色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1553,8 +1553,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperPink
-  name: pink paper
-  description: A pink paper.
+  name: 粉色纸张
+  description: 一张粉色纸张。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1574,8 +1574,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperPurple
-  name: purple paper
-  description: A purple paper.
+  name: 紫色纸张
+  description: 一张紫色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi
@@ -1595,8 +1595,8 @@
 - type: entity
   parent: CMUPaperBase
   id: CMUPaperRed
-  name: red paper
-  description: A red paper.
+  name: 红纸
+  description: 一张红色的纸。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/paper.rsi

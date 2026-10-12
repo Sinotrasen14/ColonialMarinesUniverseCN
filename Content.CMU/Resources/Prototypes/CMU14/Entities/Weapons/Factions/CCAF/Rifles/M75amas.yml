@@ -2,7 +2,7 @@
   parent: CMBaseWeaponRifle
   name: M75A MAS
   id: AUWeaponRifleM75AMAS
-  description: The M75A MAS is Armat Battlefield Systems newest modular weapons platform, intended to replace the aging M41 MK1 Pulse Rifle. The weapon is still in limited field testing among select CCAF infantry units.
+  description: M75A MAS是Armat Battlefield Systems最新的模块化武器平台，旨在取代老旧的M41 MK1脉冲步枪。该武器目前仍在部分CCAF步兵单位中进行有限实战测试。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/CCAF/M75AMAS.rsi
@@ -41,7 +41,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/m41_unload.ogg
         priority: 2
@@ -96,7 +96,7 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: AU14MagazineRifleM75AMAS
-  name: "M75AMAS Magazine (10x24mm)"
+  name: "M75AMAS 弹匣（10x24mm）"
   components:
   - type: Tag
     tags:
@@ -121,8 +121,8 @@
 - type: entity
   parent: CMBaseCartridgeRifle
   id: AU14CartridgeRifleM75AMAS
-  name: Cartridge (10x24mm)
-  description: A 10x24mm rifle cartridge
+  name: 弹药（10x24毫米）
+  description: 一把10x24毫米步枪子弹
   components:
   - type: Tag
     tags:

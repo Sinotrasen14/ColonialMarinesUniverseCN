@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBackpackMarine
   id: CMUCombatDroneOperatorPackFilled
-  name: gun UGV operator field pack
-  description: A tracked combat drone kit containing a hull, pulse turret, standard and AP ammunition boxes, controller, and repair supplies.
+  name: 枪械无人地面载具操作员野战包
+  description: 一套履带式战斗无人机套件，包含车体、脉冲炮塔、标准弹药箱和穿甲弹药箱、控制器以及维修补给品。
   suffix: Filled
   components:
   - type: Sprite
@@ -24,8 +24,8 @@
 - type: entity
   parent: BaseItem
   id: CMUCombatDroneHull
-  name: gun UGV hull
-  description: A folded tracked chassis. Place it on the ground, install its pulse turret, then load a standard or AP ammunition box to bring it online.
+  name: 枪械无人地面载具车体
+  description: 一个折叠式履带底盘。将其放置在地面上，安装其脉冲炮塔，然后装入标准或AP弹药箱即可使其上线。
   components:
   - type: ContainerContainer
     containers:
@@ -52,8 +52,8 @@
 - type: entity
   parent: BaseItem
   id: CMUCombatDroneTurretAssembly
-  name: combat drone pulse turret
-  description: A compact M41A-pattern pulse turret with a fixed IFF interlock and a 180-degree forward firing arc. Install it on a combat drone hull.
+  name: 战斗无人机脉冲炮塔
+  description: 一座紧凑型M41A型脉冲炮塔，配备固定IFF互锁装置和180度前向射击弧。将其安装在战斗无人机机身上。
   components:
   - type: Sprite
     sprite: CMU14/Mobs/CombatDrone/ugv.rsi
@@ -65,8 +65,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: CMUCombatDroneAmmoBox
-  name: combat drone ammunition box (10x24mm)
-  description: A 200-round box of standard M41A ammunition for a combat drone pulse turret.
+  name: 战斗无人机弹药箱（10x24毫米）
+  description: 一盒200发标准M41A弹药，用于战斗无人机脉冲炮塔。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/un571c.rsi
@@ -95,8 +95,8 @@
 - type: entity
   parent: CMUCombatDroneAmmoBox
   id: CMUCombatDroneAmmoBoxAP
-  name: combat drone AP ammunition box (10x24mm)
-  description: A 200-round box of armor-piercing M41A ammunition for a combat drone pulse turret.
+  name: 战斗无人机AP弹药箱（10x24mm）
+  description: 一盒200发装的M41A穿甲弹药，用于战斗无人机脉冲炮塔。
   components:
   - type: BallisticAmmoProvider
     whitelist:

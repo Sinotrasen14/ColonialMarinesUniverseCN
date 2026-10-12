@@ -1,8 +1,8 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14WYPMCArmor
-  name: WY PMC Armor
-  description: A set of Weyland-Yutani PMC armor.
+  name: WY PMC 护甲
+  description: 一套韦兰-尤塔尼私人军事承包商的护甲。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/WY_PMC/wypmcstandardarmor.rsi
@@ -10,8 +10,8 @@
 - type: entity
   parent: AU14BaseArmorLight
   id: AU14WYPMCArmorMin
-  name: WY PMC Minimalistic Armor
-  description: A set of Weyland-Yutani PMC armor. This pair is quite small compared to the standard, and will provide less protection.
+  name: WY PMC 极简护甲
+  description: 一套韦兰-汤谷PMC护甲。这套护甲相比标准款要小得多，提供的防护也更少。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/WY_PMC/wypmclightarmor.rsi
@@ -26,8 +26,8 @@
 - type: entity
   parent: RMCBaseBioSuit
   id: AU14SuitBioWeYu
-  name: WeYu-TSS MK I - bio suit
-  description: The 'Weyland-Yutani TerraScientia bio-suit MK I'. An advanced light-weight bio-suit developed in-house by Weyland-Yutani. It's a suit that protects against biological contamination.
+  name: WeYu-TSS 毫开 I - 生物服
+  description: “韦兰-尤塔尼 TerraScientia 生物服 MK I”。由韦兰-尤塔尼内部研发的先进轻型生物服。这是一套可防止生物污染的防护服。
   suffix: AU14, Generic, WeYu
   components:
   - type: Item
@@ -40,8 +40,8 @@
 - type: entity
   id: CMUSuitBioWYSec
   parent: AU14SuitBioWeYu
-  name: armored WeYu-TSS MK I - bio suit
-  description: The 'Weyland-Yutani TerraScientia bio-suit MK I'. An advanced light-weight bio-suit developed in-house by Weyland-Yutani. It's a suit that protects against biological contamination. This one has been fitted with an armored vest.
+  name: 装甲WeYu-TSS毫开I型 - 生物服
+  description: “韦兰-尤塔尼地球科学生物服MK I”。由韦兰-尤塔尼内部研发的先进轻型生物服。这是一款防生物污染的防护服。这一件加装了装甲背心。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Clothing/OuterClothing/Misc/biosuit_wysec.rsi
@@ -62,8 +62,8 @@
 - type: entity
   parent: AU14BaseArmor
   id: AU14WYPMCArmorEngineer
-  name: WY PMC Engineer Armor
-  description: A set of Weyland-Yutani PMC Engineer armor.
+  name: WY PMC工程师护甲
+  description: 一套韦兰-尤塔尼私人军事承包商工程师护甲。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/WY_PMC/engi_armor.rsi
@@ -71,8 +71,8 @@
 - type: entity
   parent: AU14BaseArmorLight
   id: AU14WYPPOArmor
-  name: WY PPO Armor
-  description: A set of Weyland-Yutani Personal Protection Officer armor. This pair is quite small compared to the standard, and will provide less protection.
+  name: WY PPO护甲
+  description: 一套韦兰-尤塔尼个人保护官护甲。这套护甲相比标准型要小得多，提供的防护也更少。
   components:
   - type: ClothingSpeedModifier
     walkModifier: 0.90

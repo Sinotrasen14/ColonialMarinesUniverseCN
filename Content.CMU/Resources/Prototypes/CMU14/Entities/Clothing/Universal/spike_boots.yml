@@ -1,14 +1,9 @@
 - type: entity
   parent: ClothingShoesMilitaryBase
   id: AU14SpikeBoots
-  name: M-19 "Treadnailer" assault boots
+  name: M-19“踏钉者”突击靴
   description: >-
-    Heavy-duty assault boots fitted with hardened tungsten-carbide spike plates press-welded into the sole.
-    Originally prototyped for contested terrain operations and close-quarters breaching engagements.
-    The spike array is rated to pierce standard soft armor at zero standoff distance and engage
-    organic obstructions underfoot with extreme prejudice.
-    Impedes normal movement speed by approximately 20% under full operational load.
-    Handle with care around friendly downed personnel.
+    重型突击靴，鞋底压焊有硬化碳化钨钉板。最初为争议地形作战和近距离破门交战而设计原型。钉阵额定可在零距离穿透标准软质护甲，并以极端致命性处理脚下的有机障碍物。在满作战负载下，正常移动速度降低约20%。在友方倒地人员附近请小心处理。
   suffix: AU14
   components:
   - type: Sprite
@@ -16,7 +11,7 @@
     layers:
     - state: icon
     - state: filled
-      map: [ "enum.CMItemSlotsLayers.Fill" ]
+      map: ["enum.CMItemSlotsLayers.Fill"]
   - type: Clothing
     sprite: CMU14/Clothing/Shoes/spikedboots.rsi
   - type: ClothingSpeedModifier

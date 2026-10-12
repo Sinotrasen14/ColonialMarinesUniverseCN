@@ -6,7 +6,7 @@
 
 - type: rmcConstruction
   id: AU14CommsMastFieldBuild
-  name: antenna mast parts
+  name: 天线桅杆部件
   prototype: AU14CommsMastField
   noRotate: true
   skill: RMCSkillEngineer
@@ -19,7 +19,7 @@
 
 - type: rmcConstruction
   id: AU14CommsMastFootingBuild
-  name: mast footing
+  name: 桅杆底座
   prototype: AU14CommsMastFooting
   noRotate: true
   doAfterTime: 30
@@ -32,7 +32,7 @@
 
 - type: rmcConstruction
   id: AU14MastAntennaHeadFrameBuild
-  name: antenna head frame
+  name: 天线头框架
   prototype: AU14MastAntennaHeadFrame
   noRotate: true
   doAfterTime: 20
@@ -43,17 +43,15 @@
   alternativeSkill: RMCSkillJtac
   alternativeSkillLevel: 4
   ignoreBuildRestrictions: true
-  restrictedCollisionGroup: null
+  restrictedCollisionGroup:
 
 # --- the antenna head ---------------------------------------------------------------------
 - type: entity
   parent: BaseItem
   id: AU14MastAntennaHead
-  name: mast antenna head
+  name: 桅杆天线头
   description: >-
-    A high-gain antenna head with its feedhorn, balun and lightning arrestor already
-    fitted, crated for carriage. It takes both arms and will not go in a bag - somebody
-    has to walk it out to the mast.
+    一个高增益天线头，其馈源喇叭、巴伦和避雷器均已安装完毕，并已装箱以便搬运。它需要双手搬运，无法放入包中——必须有人把它搬到天线杆处。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Radio/anprc117g.rsi
@@ -77,11 +75,9 @@
 - type: entity
   parent: BaseItem
   id: AU14MastAntennaHeadFrame
-  name: antenna head frame
+  name: 天线头框架
   description: >-
-    A bare metal skeleton for a mast antenna head. Turning it into something that will
-    actually radiate takes a great deal of plasteel, a stack of circuit boards and a lot
-    of careful wiring.
+    一个桅杆天线头的裸露金属骨架。要把它变成真正能辐射信号的东西，需要大量塑钢、一叠电路板和大量精细的布线。
   components:
   - type: Sprite
     sprite: CMU14/Objects/Radio/anprc117g.rsi
@@ -127,7 +123,7 @@
     - to: boardOne
       steps:
       - tag: RMCCircuitboard
-        name: "circuit board"
+        name: "电路板"
         icon:
           sprite: _RMC14/Objects/Misc/module.rsi
           state: door_electronics
@@ -139,7 +135,7 @@
     - to: boardTwo
       steps:
       - tag: RMCCircuitboard
-        name: "circuit board"
+        name: "电路板"
         icon:
           sprite: _RMC14/Objects/Misc/module.rsi
           state: door_electronics
@@ -151,7 +147,7 @@
     - to: boardThree
       steps:
       - tag: RMCCircuitboard
-        name: "circuit board"
+        name: "电路板"
         icon:
           sprite: _RMC14/Objects/Misc/module.rsi
           state: door_electronics
@@ -163,7 +159,7 @@
     - to: boards
       steps:
       - tag: RMCCircuitboard
-        name: "circuit board"
+        name: "电路板"
         icon:
           sprite: _RMC14/Objects/Misc/module.rsi
           state: door_electronics
@@ -277,7 +273,7 @@
     - to: head
       steps:
       - tag: AU14MastAntennaHead
-        name: "mast antenna head"
+        name: "桅杆天线头"
         icon:
           sprite: CMU14/Objects/Radio/anprc117g.rsi
           state: antenna_m
@@ -362,29 +358,27 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.49,-0.49,0.49,0.49"
         density: 200
         mask:
         - MobLayer
   - type: Damageable
-    damageModifierSet: null
+    damageModifierSet:
   - type: Injurable
     damageContainer: Inorganic
   - type: MaxDamage
     max: 150
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 140
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: AU14MastAssembly
 
 # the COMSEC key set, shared by the untuned and the finished mast so the keys survive the
@@ -418,10 +412,9 @@
 - type: entity
   parent: AU14CommsMastStageBase
   id: AU14CommsMastFooting
-  name: mast footing
+  name: 桅杆底座
   description: >-
-    A staked baseplate with its earth mat pegged out around it. Nothing on it yet -
-    the sections have to go up before this is any use to anyone.
+    一个用桩固定的底板，周围用桩钉出了接地网。上面还什么都没有——必须先架起各段，这东西才能派上用场。
   suffix: Field-Built, Stage 1
   components:
   - type: Sprite
@@ -436,10 +429,9 @@
 - type: entity
   parent: AU14CommsMastStageBase
   id: AU14CommsMastLattice
-  name: half-raised antenna mast
+  name: 半升天线桅杆
   description: >-
-    Rod sections bolted up into a lattice, leaning on its own weight. Until the joints
-    are welded and the guys are on it, the first strong gust owns it.
+    杆段用螺栓连接成格构，靠自重斜立。在节点焊接、缆风绳拉好之前，第一阵强风就能把它掀翻。
   suffix: Field-Built, Stage 2
   components:
   - type: Sprite
@@ -452,12 +444,11 @@
     defaultTarget: mast
 
 - type: entity
-  parent: [ AU14CommsMastStageBase, AU14MastKeyedBase ]
+  parent: [AU14CommsMastStageBase, AU14MastKeyedBase]
   id: AU14CommsMastRigged
-  name: untuned antenna mast
+  name: 未调谐天线桅杆
   description: >-
-    Raised, guyed and topped with its antenna head, but the feed panel is open and
-    nothing is sealed. It carries no traffic at all like this.
+    架设完毕，用拉线固定，顶部装有天线头，但馈电面板敞开，没有任何密封。这种状态下它完全不承载任何通信流量。
   suffix: Field-Built, Stage 3
   components:
   - type: Sprite
@@ -469,15 +460,14 @@
     max: 300
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 280
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: Construction
     graph: AU14CommsMastGraph
     node: head

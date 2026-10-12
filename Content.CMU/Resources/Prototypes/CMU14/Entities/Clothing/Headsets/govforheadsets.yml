@@ -2,14 +2,14 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyGovfor # blank key, channel set by SquadSystem.cs
-  name: GOVFOR encryption key
-  description: An encryption key used to communicate on the GOVFOR channel, it is automatically assigned the right channel.
+  name: 政府专用加密密钥
+  description: 一种用于在GOVFOR频道上通信的加密密钥，会自动分配正确的频道。
 
 - type: entity
   parent: AU14EncryptionKeyGovfor
   id: AU14EncryptionKeyGovforBravo
-  name: GOVFOR Bravo encryption key
-  description: An encryption key used to communicate on the GOVFOR Bravo channel.
+  name: GOVFOR Bravo 加密密钥
+  description: 一个用于在GOVFOR Bravo频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -19,8 +19,8 @@
 - type: entity
   parent: AU14EncryptionKeyGovfor
   id: AU14EncryptionKeyGovforCharlie
-  name: GOVFOR Charlie encryption key
-  description: An encryption key used to communicate on the GOVFOR Charlie channel.
+  name: GOVFOR Charlie 加密密钥
+  description: 用于在GOVFOR Charlie频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -30,8 +30,8 @@
 - type: entity
   parent: AU14EncryptionKeyGovfor
   id: AU14EncryptionKeyGovforCommand
-  name: GOVFOR Command encryption key
-  description: An encryption key used to communicate on all available GOVFOR channels.
+  name: 政府军指挥部加密密钥
+  description: 用于在所有可用GOVFOR频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -47,8 +47,8 @@
 - type: entity
   parent: AU14EncryptionKeyGovfor
   id: AU14EncryptionKeyGovforCommandOnly
-  name: GOVFOR Command-only encryption key
-  description: An encryption key used to communicate on the GOVFOR Command channels.
+  name: 政府专用指挥部加密密钥
+  description: 用于在GOVFOR指挥部频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -58,8 +58,8 @@
 - type: entity
   parent: AU14EncryptionKeyGovfor
   id: AU14EncryptionKeyGovforIntel
-  name: GOVFOR Intel encryption key
-  description: An encryption key used to communicate on the GOVFOR Intel channel.
+  name: 政府专用情报加密密钥
+  description: 一条用于在GOVFOR情报频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -69,8 +69,8 @@
 - type: entity
   parent: AU14EncryptionKeyGovfor
   id: AU14EncryptionKeyGovforJTAC
-  name: GOVFOR JTAC encryption key
-  description: An encryption key used to communicate on the GOVFOR ATC channel.
+  name: 政府军联合终端攻击控制员加密密钥
+  description: 用于在GOVFOR ATC频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -79,8 +79,8 @@
 - type: entity
   parent: AU14EncryptionKeyGovfor
   id: AU14EncryptionKeyGovforMILP
-  name: GOVFOR MP encryption key
-  description: An encryption key used to communicate on the GOVFOR MP channel.
+  name: 政府专用MP加密密钥
+  description: 一种用于在GOVFOR MP信道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -90,8 +90,8 @@
 - type: entity
   parent: AU14HeadsetMilitaryBase
   id: AU14HeadsetGovforMarine
-  name: GOVFOR section radio headset
-  description: This is used by GOVFOR personnel to communicate on the radio.
+  name: 政府军分队无线电耳机
+  description: 这是GOVFOR人员用来通过无线电进行通信的。
   components:
   - type: Sprite
     state: generic_headset
@@ -111,8 +111,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: AU14HeadsetGovforCommand
-  name: GOVFOR Command radio headset
-  description: This is used by GOVFOR command members to communicate on the radio.
+  name: 政府军指挥部无线电耳机
+  description: 这是指挥部政府军成员用来通过无线电进行通信的。
   components:
   - type: Sprite
     state: mco_headset
@@ -133,8 +133,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: AU14HeadsetGovforMarineSL
-  name: GOVFOR SL radio headset
-  description: This is used by GOVFOR section leaders to communicate on the radio.
+  name: 政府军SL无线电耳机
+  description: 这是GOVFOR小队队长用来通过无线电进行通信的。
   components:
   - type: ContainerFill
     containers:
@@ -145,8 +145,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: AU14HeadsetGovforMarineFTL
-  name: GOVFOR FTL radio headset
-  description: This is used by GOVFOR fireteam leaders to communicate on the radio.
+  name: 政府军前线指挥官无线电耳机
+  description: 这是GOVFOR火力小组组长用来通过无线电进行通信的。
   components:
   - type: ContainerFill
     containers:
@@ -158,8 +158,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: CMU14HeadsetGovforJTAC
-  name: GOVFOR JTAC radio headset
-  description: This is used by GOVFOR personnel to communicate on the radio, including the JTAC channel.
+  name: 政府军联合终端攻击控制员无线电耳机
+  description: 这是GOVFOR人员用来通过无线电进行通信的设备，包括JTAC频道。
   components:
   - type: ContainerFill
     containers:
@@ -170,8 +170,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: CMUHeadsetGovforMarineAuxiliary
-  name: GOVFOR squad auxiliary radio headset
-  description: This is used by GOVFOR squad corpsmen and engineers to communicate on the radio, including the auxiliary channel.
+  name: 政府军辅助无线电耳机
+  description: 这是GOVFOR小队卫生员和工程师用来通过无线电进行通信的，包括辅助频道。
   components:
   - type: ContainerFill
     containers:
@@ -182,8 +182,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: CMUHeadsetGovforDroneOperator
-  name: GOVFOR drone operator radio headset
-  description: This is used by GOVFOR drone operators to communicate on the radio, including the JTAC and auxiliary channels.
+  name: 政府无人机操作员无线电耳机
+  description: 这是GOVFOR无人机操作员用来通过无线电进行通信的，包括JTAC和辅助频道。
   components:
   - type: ContainerFill
     containers:
@@ -195,8 +195,8 @@
 - type: entity
   parent: RMCHeadsetShip
   id: AU14HeadsetGovforAuxiliary
-  name: GOVFOR Auxiliary support headset
-  description: This is used by GOVFOR auxiliary support members to communicate on the radio.
+  name: 政府/部队辅助支援耳机
+  description: 这是GOVFOR辅助支援成员用来通过无线电进行通信的。
   components:
   - type: ContainerFill
     containers:
@@ -211,8 +211,8 @@
 - type: entity
   parent: AU14HeadsetGovforMarine
   id: AU14HeadsetGovforMarineMP
-  name: GOVFOR MP radio headset
-  description: This is used by GOVFOR military police to communicate on the radio.
+  name: 政府军宪兵无线电耳机
+  description: 这是政府军宪兵用来通过无线电通讯的。
   components:
   - type: ContainerFill
     containers:
@@ -228,8 +228,8 @@
 - type: entity
   parent: RMCBaseUniformAccessory
   id: AU14GOVFORIOHeadset
-  name: GOVFOR Intel earpiece
-  description: A small, concealable earpiece used by Intelligence operatives. Virtually invisible when worn, it clips discreetly onto a uniform, this one has a built in camera for remote viewing.
+  name: GOVFOR 英特尔耳机
+  description: 情报人员使用的小型隐蔽式耳机。佩戴时几乎不可见，可 discreetly 夹在制服上，这款内置摄像头，可用于远程观察。
   suffix: GOVFOR, IO
   components:
   - type: Sprite

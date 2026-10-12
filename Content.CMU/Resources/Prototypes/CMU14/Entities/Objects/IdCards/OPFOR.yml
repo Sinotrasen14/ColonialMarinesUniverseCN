@@ -17,8 +17,8 @@
   abstract: true
   parent: CMIDCardBase
   id: AU14IDCardOPFOR
-  name: opfor identification card
-  description: An ID Card used by OPFOR personnel for identification and access control. You cannot tell who or what it belongs to.
+  name: 敌方识别卡
+  description: OPFOR人员用于身份识别和门禁控制的ID卡。你无法分辨它属于谁或什么东西。
   components:
   - type: ItemIFF
     factions:
@@ -27,7 +27,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORPlatCo
-  name: commanding officer ID card
+  name: 舰长ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORPlatCo
@@ -35,7 +35,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORAdjutant
-  name: plt. executive officer ID card
+  name: 排长执行官ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORAdjutant
@@ -43,7 +43,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORPlatOp
-  name: plt. operations officer ID card
+  name: 排长作战军官ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORPlatOp
@@ -51,7 +51,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFOROfficerEngi
-  name: engineering officer ID card
+  name: 工程部军官ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFOROfficerEngi
@@ -59,7 +59,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFOROfficerIntel
-  name: intelligence officer ID card
+  name: 情报军官ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFOROfficerIntel
@@ -67,7 +67,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFOROfficerLogistics
-  name: logistics officer ID card
+  name: 后勤军官ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFOROfficerLogistics
@@ -75,7 +75,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFOROfficerMP
-  name: chief military police ID card
+  name: 首席军事警察ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFOROfficerMP
@@ -83,7 +83,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFOROfficerMedical
-  name: chief medical officer ID card
+  name: 首席医疗官ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFOROfficerMedical
@@ -91,7 +91,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORDSPilot
-  name: transport pilot ID card
+  name: 运输飞行员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORDSPilot
@@ -99,7 +99,7 @@
 - type: entity
   parent: AU14IDCardOPFORDSPilot
   id: AU14IDCardOPFORGunshipPilot
-  name: gunship pilot ID card
+  name: 武装直升机飞行员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORGunshipPilot
@@ -107,7 +107,7 @@
 - type: entity
   parent: AU14IDCardOPFORDSPilot
   id: AU14IDCardOPFORFighterPilot
-  name: fighter pilot ID card
+  name: 战斗机飞行员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORFighterPilot
@@ -115,7 +115,7 @@
 - type: entity
   parent: AU14IDCardOPFORDSPilot
   id: AU14IDCardOPFORFighterSystemsOfficer
-  name: fighter systems officer ID card
+  name: 战斗机系统军官ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORFighterSystemsOfficer
@@ -123,7 +123,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORDCC
-  name: dropship crew chief ID card
+  name: 运输机船员主管ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORDCC
@@ -131,7 +131,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORSecSergeant
-  name: platoon sergeant ID card
+  name: 排长ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORSectionSergeant
@@ -139,7 +139,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORSquadSergeant
-  name: squad leader ID card
+  name: 班长ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORSquadSergeant
@@ -147,7 +147,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORSquadRifleman
-  name: squad rifleman ID card
+  name: 小队步枪手ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORSquadRifleman
@@ -155,7 +155,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORSquadAutomaticRifleman
-  name: squad automatic rifleman ID card
+  name: 班组自动步枪手ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORSquadAutomaticRifleman
@@ -163,7 +163,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14JobIDCardOPFORPlatoonCorpsman
-  name: platoon corpsman ID card
+  name: 排医疗兵ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORPlatoonCorpsman
@@ -171,7 +171,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14JobIDCardOPFORRadioTelephoneOperator
-  name: radio telephone operator ID card
+  name: 无线电电话操作员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORRadioTelephoneOperator
@@ -179,7 +179,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14JobIDCardOPFORRadioTrafficOperator
-  name: radio traffic operator ID card
+  name: 无线电通信操作员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORRadioTrafficOperator
@@ -187,7 +187,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORAuxSupportSynth
-  name: support synthetic ID card
+  name: 支援合成ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORAuxSupportSynth
@@ -195,7 +195,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14JobIDCardOPFORAuxTech
-  name: logistics technician ID card
+  name: 后勤技术员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORAuxTech
@@ -203,7 +203,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORCT
-  name: combat technician ID card
+  name: 战斗技术员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORSquadCombatTech
@@ -211,7 +211,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORVehicleCrewman
-  name: vehicle crewman ID card
+  name: 车辆乘员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORVehicleCrewman
@@ -219,7 +219,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORAdvisor
-  name: advisor ID card
+  name: 顾问ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORadvisor
@@ -227,7 +227,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORDoctor
-  name: doctor ID card
+  name: 医生ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORMilitaryDoctor
@@ -236,7 +236,7 @@
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORWorkingJoe
   categories: [ HideSpawnMenu ]
-  name: Working Joe ID card
+  name: Working Joe ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORWorkingJoe
@@ -244,7 +244,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORWeaponsSpecialist
-  name: weapons specialist ID card
+  name: 武器专家ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORWeaponsSpecialist
@@ -252,7 +252,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORVehicleCommander
-  name: vehicle commander ID card
+  name: 车辆指挥官ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORVehicleCommander
@@ -260,7 +260,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFOREngineeringTech
-  name: engineering technician ID card
+  name: 工程部技术员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFOREngineeringTech
@@ -268,7 +268,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORNurse
-  name: nurse ID card
+  name: 护士ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORNurse
@@ -276,7 +276,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: AU14IDCardOPFORCombatCorrespondent
-  name: combat correspondent ID card
+  name: 战地记者ID卡
   components:
   - type: PresetIdCard
     job: AU14JobOPFORCombatCorrespondent
@@ -284,7 +284,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: CMUIDCardOPFORAdjutantDress
-  name: high command adjutant ID card
+  name: 高级指挥部副官ID卡
   components:
   - type: PresetIdCard
     job: CMUJobOPFORAdjutantDress
@@ -293,7 +293,7 @@
   parent: CMIDCardGold
   categories: [ HideSpawnMenu ]
   id: CMUIDCardOPFORBrigadierGeneral
-  name: brigadier general ID card
+  name: 准将ID卡
   components:
   - type: PresetIdCard
     job: CMUJobOPFORBrigadierGeneral
@@ -301,7 +301,7 @@
 - type: entity
   parent: AU14IDCardOPFOR
   id: CMUIDCardOPFORVipEscort
-  name: VIP escort detail ID card
+  name: VIP护送人员ID卡
   components:
   - type: PresetIdCard
     job: CMUJobOPFORVipEscort

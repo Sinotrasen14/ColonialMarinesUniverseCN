@@ -1,8 +1,8 @@
 - type: entity
   parent: SeatBase
   id: CMUFitnessWeightsBench
-  name: weights bench
-  description: A bench for pumping iron.
+  name: 配重凳
+  description: 一个用来举重锻炼的长椅。
   components:
   - type: Transform
     anchored: true
@@ -17,7 +17,7 @@
 - type: entity
   parent: CMUFitnessWeightsBench
   id: CMUFitnessWeightLifter
-  name: weight lifter
+  name: 举重运动员
   components:
   - type: Sprite
     state: fitnesslifter
@@ -31,8 +31,8 @@
 - type: entity
   parent: BaseStructure
   id: CMUFitnessPunchingBag
-  name: punching bag
-  description: A punching bag. Let's get big!
+  name: 沙袋
+  description: 一个沙袋。让我们变壮吧！
   components:
   - type: Sprite
     sprite: CMU14/N14content/fitness.rsi

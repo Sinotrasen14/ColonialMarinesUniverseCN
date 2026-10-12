@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   name: TOPS VAL-S
   id: RuMCRifleVAL
-  description: For those who prefer to solve problems without making a fuss. One shot, one problem gone. The silencer works so well that even your trench mate won't know it was you.
+  description: 献给那些喜欢悄无声息解决问题的人。一枪，一个问题消失。消音器效果极佳，连你的战壕战友都不知道是你干的。
   components:
   - type: Item
     size: Huge
@@ -55,7 +55,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RuMCMagazineVAL
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -144,8 +144,8 @@
 - type: entity
   parent: RMCMagazineRifleAK4047
   id: RuMCMagazineVAL
-  name: "TOPS VAL-S magazine (10x24mm)"
-  description: A 35-round magazine of 10x24mm cartridges.
+  name: "TOPS VAL-S 弹匣（10x24mm）"
+  description: 一把装有35发10x24毫米子弹的弹匣。
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/VAL.rsi
@@ -171,8 +171,8 @@
 - type: entity
   parent: RMCMagazineRifleAK4047
   id: RuMCMagazineVALAP
-  name: "TOPS VAL-S magazine (10x24mm AP)"
-  description: A 35-round magazine of 10x24mm (AP) cartridges.
+  name: "TOPS VAL-S 弹匣（10x24mm AP）"
+  description: 一把装有35发10x24毫米（穿甲）弹药的弹匣。
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/VAL.rsi
@@ -198,8 +198,8 @@
 - type: entity
   parent: RMCMagazineRifleAK4047
   id: RuMCMagazineVALTracer
-  name: "TOPS VAL-S magazine (10x24mm Tracer)"
-  description: A 35-round magazine of 10x24mm (Tracer)) cartridges.
+  name: "TOPS VAL-S 弹匣（10x24mm 曳光弹）"
+  description: 一把装有35发10x24毫米（曳光弹）弹药的弹匣。
   components:
   - type: Sprite
     sprite: _RuMC14/Objects/Weapons/Guns/Ammunition/Magazines/Rifles/VAL.rsi

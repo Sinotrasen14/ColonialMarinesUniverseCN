@@ -1,8 +1,8 @@
 - type: entity
   parent: CMBeltMarine
   id: AU14BeltMarineRMC
-  name: L70 pattern ammo load rig
-  description: Standart-issue Royal Marines Commando rig. It consists of a modular belt with various clips. This is the standard variant, designed for bulk ammunition-carrying operations.
+  name: L70型弹药装载装备
+  description: 标准配发的皇家海军陆战队突击队装备。它由一条带有各种卡扣的模块化腰带组成。这是标准型号，专为大容量弹药携行行动而设计。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/belt/ammo.rsi
@@ -27,8 +27,8 @@
 - type: entity
   parent: AU14BeltUtilityGeneralBlack
   id: AU14BeltUtilityGeneralRMC
-  name: L26 general utility pouch
-  description: A small, lightweight pouch that can be clipped onto kestrel armour to provide additional storage. The newer model, while uncomfortable, can also be clipped around the waist.
+  name: L26 通用工具袋
+  description: 一个小巧轻便的袋子，可夹在红隼护甲上以提供额外储物空间。较新的型号虽然不舒适，但也可以夹在腰间。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/belt/general.rsi
@@ -43,8 +43,8 @@
 - type: entity
   parent: CMBeltMedical
   id: AU14BeltMedicalRMC
-  name: L75 pattern medical storage rig
-  description: Standart-issue Royal Marines Commando rig. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport bulkier medical supplies.
+  name: L75 迷彩医疗储存挂具
+  description: 标准配发的皇家海军陆战队突击队装备。它由一条带有各种卡扣的模块化腰带组成。这个版本是一种较少见的配置，旨在运送更笨重的医疗补给品。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/belt/medical.rsi
@@ -54,8 +54,8 @@
 - type: entity
   parent: RMCBeltHolsterPistol
   id: AU14BeltHolsterPistolRMC
-  name: L165 pattern general pistol holster rig
-  description: Standart-issue Royal Marines Commando rig. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines.
+  name: L165型通用手枪枪套挂具
+  description: 标准配发的皇家海军陆战队突击队装备。它由一条带有各种扣具的模块化腰带组成。此版本配有枪套组件，可携带最常见的手枪。它还包含可容纳大多数手枪弹匣的侧袋。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/belt/holster.rsi
@@ -122,8 +122,8 @@
 - type: entity
   parent: CMBeltUtilityCombat
   id: AU14BeltUtilityCombatRMC
-  name: L177 pattern combat toolbelt rig
-  description: Standart-issue Royal Marines Commando rig of the RMC for engineers conducting repairs within combat zones. It consists of a modular belt with various clips and pouches for tools along with a holster for a sidearm. Due to the bulk of the sidearm, it is unable to hold as many tools as its standard counterpart.
+  name: L177型战斗工具腰带装备
+  description: 皇家海军陆战队突击队工程师在战区执行维修任务时配发的制式装备。它由一条模块化腰带组成，带有各种扣具和工具袋，以及一个侧arm枪套。由于侧arm的体积较大，它无法像标准型号那样携带那么多工具。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/belt/combat_utility.rsi
@@ -162,8 +162,8 @@
 - type: entity
   parent: CMBeltMedicBag
   id: AU14BeltMedicBagRMC
-  name: L75 pattern lifesaver bag
-  description: Standart-issue Royal Marines Commando rig. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies, and is common among medics.
+  name: L75型救生包
+  description: 标准配发的皇家海军陆战队突击队装备。此配置挂载了一个装有多种注射器和轻型医疗用品的行李袋，在医疗兵中很常见。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/belt/medicbag.rsi
@@ -175,8 +175,8 @@
 - type: entity
   parent: RMCM276ShotgunShellLoadingRig
   id: AU14ShotgunShellLoadingRigRMC
-  name: L70 pattern shotgun shell loading rig
-  description: An ammunition belt designed to hold shotgun shells. # or individual bullets. TODO RMC14
+  name: L70型霰弹枪弹药装填架
+  description: 一条用于装填霰弹枪弹药的弹药带。 # or individual bullets. TODO RMC14
   components:
   - type: Sprite
     sprite: CMU14/Clothing/RMC/belt/shotgun.rsi
@@ -212,8 +212,8 @@
 - type: entity
   parent: CMBeltBaseStorage
   id: AU14BeltMortarGrenadierRMC
-  name: L84 pattern ammo load rig
-  description: An L84 pattern load-bearing rig configured to carry support ammunition for either the L53A1 light mortar or L164A3 multiple grenade launcher, along with a sidearm & magazine. Made of special rot-resistant fabric.
+  name: L84型弹药携行装具
+  description: 一种L84式承载装具，配置用于携带L53A1轻型迫击炮或L164A3多发榴弹发射器的支援弹药，以及一把侧武器和弹匣。由特殊抗腐织物制成。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Belt/mortar/snow-urban.rsi

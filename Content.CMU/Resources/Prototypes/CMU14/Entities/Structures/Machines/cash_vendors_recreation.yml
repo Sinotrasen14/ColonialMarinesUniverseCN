@@ -4,8 +4,8 @@
 - type: entity
   id: CMUCashVendorBooze
   parent: AU14CashVendorBase
-  name: Booze-O-Mat
-  description: A Weyland-Yutani licensed liquor dispenser. Insert cash to purchase a drink. Prices subject to colonial sales tax.
+  name: 酒鬼自动售货机
+  description: 一台由韦兰-汤谷公司授权的售酒机。投入现金即可购买饮品。价格需另加殖民地销售税。
   suffix: Cash, Booze
   components:
   - type: Sprite
@@ -18,80 +18,80 @@
     allowDepartmentBudget: true
     items:
     - id: CMDrinkCanAle
-      name: Ale (Can)
+      name: 艾尔啤酒（罐装）
       price: 3
     - id: CMDrinkCanBeerLite
-      name: Beer (Can)
+      name: 啤酒（罐装）
       price: 3
     - id: RMCDrinkAlcoholGrenadine
-      name: Grenadine
+      name: 红石榴糖浆
       price: 6
     - id: RMCDrinkAlcoholTequila
-      name: Tequila
+      name: 龙舌兰
       price: 18
     - id: RMCDrinkAlcoholRum
-      name: Rum
+      name: 朗姆酒
       price: 16
     - id: RMCDrinkAlcoholCognac
-      name: Cognac
+      name: 干邑
       price: 30
     - id: RMCDrinkAlcoholDavenport
-      name: Davenport Whiskey
+      name: 达文波特威士忌
       price: 24
     - id: RMCDrinkAlcoholPurpleWine
-      name: Wine
+      name: 葡萄酒
       price: 14
     - id: RMCDrinkAlcoholMelonLiquor
-      name: Melon Liquor
+      name: 蜜瓜酒
       price: 14
     - id: RMCDrinkAlcoholGin
-      name: Gin
+      name: 金酒
       price: 16
     - id: RMCDrinkAlcoholAbsinthe
-      name: Absinthe
+      name: 苦艾酒
       price: 28
     - id: RMCDrinkAlcoholVodka
-      name: Vodka
+      name: 伏特加
       price: 14
     - id: CMDrinkCanFruitBeer
-      name: Fruit Beer (Can)
+      name: 水果啤酒（罐装）
       price: 2
     - id: DrinkJuiceLimeCarton
-      name: Lime Juice
+      name: 青柠汁
       price: 3
     - id: DrinkCreamCarton
-      name: Cream
+      name: 奶油
       price: 3
     - id: DrinkJuiceOrangeCarton
-      name: Orange Juice
+      name: 橙汁
       price: 3
     - id: CMDrinkCanSoda
-      name: Soda Water (Can)
+      name: 苏打水（罐装）
       price: 2
     - id: DrinkJuiceTomatoCarton
-      name: Tomato Juice
+      name: 番茄汁
       price: 3
     - id: CMDrinkCanTonic
-      name: Tonic Water (Can)
+      name: 汤力水（罐装）
       price: 2
     - id: CMMetalFlask
-      name: Metal Flask (Empty)
+      name: 金属烧瓶（空）
       price: 12
     - id: DrinkGlass
-      name: Drinking Glass
+      name: 玻璃杯
       price: 1
     - id: RMCDrinkGlass
-      name: Tumbler
+      name: 平底杯
       price: 1
     - id: CMMarineFlask
-      name: Marine Flask (Empty)
+      name: 海洋烧瓶（空）
       price: 10
 
 - type: entity
   id: CMUCashVendorSodaSoviet
   parent: AU14CashVendorBase
-  name: BODA
-  description: A UPP-made soda machine. Insert cash to purchase a drink.
+  name: 波达
+  description: 一台UPP制造的汽水机。投入现金即可购买饮料。
   suffix: Cash, BODA
   components:
   - type: Sprite
@@ -104,17 +104,17 @@
     allowDepartmentBudget: true
     items:
     - id: CMDrinkCanBoda
-      name: Boda
+      name: 波达
       price: 2
     - id: CMDrinkCanBodaPlyus
-      name: Boda Plyus
+      name: 波达普柳斯
       price: 3
 
 - type: entity
   id: CMUCashVendorCoffeeSimple
   parent: AU14CashVendorBase
-  name: Hot Coffee Machine
-  description: A basic hot drinks machine. Insert cash to purchase coffee or cocoa.
+  name: 热咖啡机
+  description: 一台基础热饮机。投入现金即可购买咖啡或可可。
   suffix: Cash, Coffee
   components:
   - type: Sprite
@@ -127,17 +127,17 @@
     allowDepartmentBudget: true
     items:
     - id: RMCDrinkCoffee
-      name: Coffee
+      name: 咖啡
       price: 2
     - id: RMCDrinkHotCocoa
-      name: Hot Cocoa
+      name: 热可可
       price: 3
 
 - type: entity
   id: CMUCashVendorSnackSimple
   parent: AU14CashVendorBase
-  name: Hot Foods Machine
-  description: A basic hot foods machine. Insert cash to purchase a packaged meal.
+  name: 热食机
+  description: 一台基础热食机。投入现金即可购买一份包装好的餐食。
   suffix: Cash, Hot Foods
   components:
   - type: Sprite
@@ -150,20 +150,20 @@
     allowDepartmentBudget: true
     items:
     - id: RMCFoodSnackCheeseburgerPackaged
-      name: Cheeseburger (Packaged)
+      name: 芝士汉堡（包装）
       price: 5
     - id: RMCFoodSnackBurritoPackaged
-      name: Burrito (Packaged)
+      name: 墨西哥卷饼（包装）
       price: 5
     - id: RMCFoodSnackHotdogPackaged
-      name: Hotdog (Packaged)
+      name: 热狗（包装）
       price: 5
 
 - type: entity
   id: CMUCashVendorColaSPP
   parent: AU14CashVendorBase
-  name: Xuanshi Drinks
-  description: A soft drink machine stocked for the Union. Insert cash to purchase a cold drink.
+  name: 玄石饮品
+  description: 一台为工会备货的软饮料机。投入现金即可购买冷饮。
   suffix: Cash, Xuanshi
   components:
   - type: Sprite
@@ -217,8 +217,8 @@
 - type: entity
   id: CMUCashVendorColaResearch
   parent: AU14CashVendorBase
-  name: Souto Softdrinks
-  description: A softdrink vending machine by Souto Soda Company. Insert cash to purchase a cold drink.
+  name: 索托软饮料
+  description: 南都汽水公司出品的一台软饮料自动售货机。投入现金即可购买一瓶冷饮。
   suffix: Cash, Souto
   components:
   - type: Sprite
@@ -252,8 +252,8 @@
 - type: entity
   id: CMUCashVendorKoorCigs
   parent: AU14CashVendorBase
-  name: Koorlander Cigarette Machine
-  description: A Koorlander branded cigarette machine. Insert cash to purchase tobacco. Smoking kills.
+  name: 科兰德香烟机
+  description: 一台Koorlander品牌的香烟机。投入现金购买烟草。吸烟致命。
   suffix: Cash, Koorlander
   components:
   - type: Sprite
@@ -266,19 +266,19 @@
     allowDepartmentBudget: true
     items:
     - id: PackPaperRolling
-      name: Rolling Paper
+      name: 卷纸
       price: 2
     - id: PackPaperRollingFilters
-      name: Rolling Paper and Filters
+      name: 卷烟纸和滤嘴
       price: 3
     - id: AU14CigaretteKoorlander
-      name: Koorlander
+      name: 科兰德
       price: 4
     - id: AU14CigaretteLadyFingers
-      name: Lady Fingers
+      name: 淑女指
       price: 5
     - id: RMCMatchboxFull
-      name: Matchbox
+      name: 火柴盒
       price: 2
     - id: RMCZippo
       name: Zippo
@@ -287,8 +287,8 @@
 - type: entity
   id: CMUCashVendorCigsWeYa
   parent: AU14CashVendorBase
-  name: Weyland-Yutani Brand Cigarette Machine
-  description: A Weyland-Yutani branded cigarette machine stocked with premium brands. Insert cash to purchase tobacco. Smoking kills.
+  name: 维兰德-汤谷牌香烟自动售货机
+  description: 一台带有韦兰-汤谷公司品牌的香烟自动售货机，备有高档品牌香烟。投入现金即可购买烟草。吸烟致命。
   suffix: Cash, WeYa Cigs
   components:
   - type: Sprite
@@ -301,41 +301,41 @@
     allowDepartmentBudget: true
     items:
     - id: RMCCigarettePackWeYaGold
-      name: We-Ya Gold
+      name: 威雅金
       price: 8
     - id: RMCCigarettePackEmeraldGreens
-      name: Emerald Greens
+      name: 翡翠绿
       price: 6
     - id: RMCCigarettePackArcturianAce
-      name: Arcturian Ace
+      name: 大角星王牌
       price: 7
     - id: RMCCigarettePackExecutiveSelect
-      name: Executive Select
+      name: 行政精选
       price: 12
     - id: RMCShioRoyalsTube
-      name: Shio Royals
+      name: 盐之皇室
       price: 10
     - id: RMCMatchboxFull
-      name: Matchbox
+      name: 火柴盒
       price: 2
     - id: CMExecutiveSelectMatchbook
-      name: Executive Select Matchbook
+      name: 高管精选火柴盒
       price: 3
     - id: CMExecutiveWEYAMatchbook
-      name: We-Ya Matchbook
+      name: WEY 火柴盒
       price: 2
     - id: RMCLighter
-      name: Lighter
+      name: 打火机
       price: 5
     - id: RMCZippoExec
-      name: Executive Zippo
+      name: 执行 Zippo
       price: 45
 
 - type: entity
   id: CMUCashVendorCigsElectro
   parent: AU14CashVendorBase
-  name: Electro Brand Cigarette Machine
-  description: An Electro branded cigarette machine. Insert cash to purchase tobacco. Smoking kills.
+  name: 电牌香烟机
+  description: 一个Electro品牌的香烟机。投入现金购买烟草。吸烟致命。
   suffix: Cash, Electro Cigs
   components:
   - type: Sprite
@@ -348,34 +348,34 @@
     allowDepartmentBudget: true
     items:
     - id: RMCCigarettePackElectroGolds
-      name: Electro Golds
+      name: 电金
       price: 6
     - id: RMCCigarettePackLuckySloths
-      name: Lucky Sloths
+      name: 幸运树懒
       price: 5
     - id: RMCCigarettePackLadyFingers
-      name: Lady Fingers
+      name: 女士香烟
       price: 5
     - id: RMCCigarettePackSolRedsTurquoise
-      name: Sol Reds (Turquoise)
+      name: 索尔红（绿松石色）
       price: 6
     - id: RMCCigarettePackSolRedsYellow
-      name: Sol Reds (Yellow)
+      name: Sol Reds（黄色）
       price: 6
     - id: RMCTarbackTube
-      name: Tarback Tube
+      name: Tarback管
       price: 5
     - id: RMCMatchboxFull
-      name: Matchbox
+      name: 火柴盒
       price: 2
     - id: CMElectroMatchbook
-      name: Electro Matchbook
+      name: 电击火柴盒
       price: 2
     - id: CMBrownMatchBook
-      name: Matchbook
+      name: 火柴纸夹
       price: 1
     - id: RMCLighter
-      name: Lighter
+      name: 打火机
       price: 5
     - id: RMCZippo
       name: Zippo
@@ -384,8 +384,8 @@
 - type: entity
   id: CMUCashVendorCigsSPP
   parent: AU14CashVendorBase
-  name: Komandir Cigarettes Vendor
-  description: A cigarette machine stocked for the Union. Insert cash to purchase tobacco. Smoking kills.
+  name: 指挥官香烟供应商
+  description: 一台为联邦阵营补货的香烟自动售货机。投入现金即可购买烟草。吸烟有害健康。
   suffix: Cash, Komandir Cigs
   components:
   - type: Sprite
@@ -398,38 +398,38 @@
     allowDepartmentBudget: true
     items:
     - id: RMCCigarettePackLuckySloths
-      name: Lucky Sloths
+      name: 幸运树懒
       price: 5
     - id: AU14CigarettePackBalajj
-      name: Balajj
+      name: 巴利
       price: 5
     - id: RMCCigarettePackWeYaGold
-      name: We-Ya Gold
+      name: 威雅金
       price: 8
     - id: RMCCigarettePackExecutiveSelect
-      name: Executive Select
+      name: 行政精选
       price: 12
     - id: RMCCigarCase
-      name: Cigar Case
+      name: 雪茄盒
       price: 20
     - id: RMCTarbackTube
-      name: Tarback Tube
+      name: Tarback管
       price: 5
     - id: RMCMatchboxFull
-      name: Matchbox
+      name: 火柴盒
       price: 2
     - id: RMCLighter
-      name: Lighter
+      name: 打火机
       price: 5
     - id: RMCZippoGold
-      name: Gold Zippo
+      name: 金Zippo
       price: 30
 
 - type: entity
   id: CMUCashVendorChess
   parent: AU14CashVendorBase
-  name: Chess-o-mat
-  description: A vending machine for chess sets. The pieces are miniature bottles of vodka. Insert cash to purchase.
+  name: 棋王自动机
+  description: 一个售卖国际象棋棋具的自动售货机。棋子是伏特加迷你瓶。投入现金即可购买。
   suffix: Cash, Chess
   components:
   - type: Sprite
@@ -442,32 +442,32 @@
     allowDepartmentBudget: true
     items:
     - id: ChessBoard
-      name: Chess Board
+      name: 棋盘
       price: 15
     - id: RMCDrinkAlcoholVodkaChessWhitePawn
-      name: White Pawn
+      name: 白棋兵
       price: 3
     - id: RMCDrinkAlcoholVodkaChessWhiteBishop
-      name: White Bishop
+      name: 白象
       price: 4
     - id: RMCDrinkAlcoholVodkaChessWhiteKnight
-      name: White Knight
+      name: 白骑士
       price: 4
     - id: RMCDrinkAlcoholVodkaChessWhiteRook
-      name: White Rook
+      name: 白车
       price: 4
     - id: RMCDrinkAlcoholVodkaChessWhiteKing
-      name: White King
+      name: 白王
       price: 6
     - id: RMCDrinkAlcoholVodkaChessWhiteQueen
-      name: White Queen
+      name: 白皇后
       price: 6
 
 - type: entity
   id: CMUCashVendorCivilianClothing
   parent: AU14CashVendorBase
-  name: Civilian Clothing Wardrobe
-  description: A wardrobe containing all the clothes a civilian would ever need. Insert cash or carry your ID to buy.
+  name: 平民服装衣柜
+  description: 一个衣柜，装着一个平民所需的所有衣物。投入现金或携带身份证即可购买。
   suffix: Cash, Clothing
   components:
   - type: Sprite

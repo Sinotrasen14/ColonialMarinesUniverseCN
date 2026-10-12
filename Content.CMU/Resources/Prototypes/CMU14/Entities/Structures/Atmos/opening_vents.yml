@@ -5,9 +5,9 @@
 - type: entity
   parent: ConstructibleMachine
   id: CMUOpeningVentDown
-  name: OV1-DG Opening Vent, Down
+  name: OV1-DG 通风口，向下
   suffix: CMU, MultiZ
-  description: "Static Direction: Looks at deck below. Crowbar flips direction. Screwdriver opens/closes. Multitool opens the panel; pry to deconstruct."
+  description: "静态方向：看向下方甲板。撬棍翻转方向。螺丝刀打开/关闭。多功能工具打开面板；撬开以拆除。"
   placement:
     mode: SnapgridCenter
   components:
@@ -41,9 +41,9 @@
 - type: entity
   parent: ConstructibleMachine
   id: CMUOpeningVentUp
-  name: OV1-UG Opening Vent, Up
+  name: OV1-UG 开启通风口，向上
   suffix: CMU, MultiZ
-  description: "Static Direction: Looks at deck above. Crowbar flips direction. Screwdriver opens/closes. Multitool opens the panel; pry to deconstruct."
+  description: "静态方向：朝上看甲板。撬棍翻转方向。螺丝刀打开/关闭。多功能工具打开面板；撬开以拆除。"
   placement:
     mode: SnapgridCenter
   components:
@@ -107,8 +107,8 @@
 
 - type: construction
   id: CMUOpeningVentRecipe
-  name: opening vent
-  description: A passive grate that equalizes air with the deck below or above. Crowbar flips direction, screwdriver opens and closes it.
+  name: 开通风口
+  description: 一个被动式格栅，用于与下方或上方的甲板平衡空气。撬棍可翻转方向，螺丝刀可开启和关闭。
   graph: CMUOpeningVentGraph
   startNode: start
   targetNode: built

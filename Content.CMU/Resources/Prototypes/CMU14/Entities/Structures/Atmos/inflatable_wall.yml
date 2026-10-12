@@ -1,7 +1,7 @@
 - type: entity
   id: CMUInflatableWall
-  name: '"Cork" IW-1 inflatable wall'
-  description: A folded membrane that becomes a wall when you need a wall you do not have. Activate to deflate. Do not puncture.
+  name: '“软木”IW-1充气墙'
+  description: 一片可折叠的膜，在你需要一堵没有的墙时，它会变成一堵墙。激活以放气。请勿刺破。
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -47,8 +47,8 @@
 - type: entity
   parent: BaseMaterialDoor
   id: CMUInflatableDoor
-  name: '"Cork" IW-2 inflatable door'
-  description: The Cork line's premium model. Same membrane, now with a zipper. Activate to deflate. Do not puncture.
+  name: '“软木”IW-2充气门'
+  description: Cork系列的高级型号。同样的膜结构，现在配有拉链。激活以放气。请勿刺破。
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -97,8 +97,8 @@
 - type: entity
   parent: CMBaseStructure
   id: CMUInflatableWallBroken
-  name: popped inflatable wall
-  description: The remains of a Cork wall. The air it was holding back and the air it was holding are now the same air.
+  name: 爆裂的充气墙
+  description: 软木墙的残骸。它曾经阻挡的空气和它曾经容纳的空气如今已是同一片空气。
   components:
   - type: Clickable
   - type: InteractionOutline
@@ -125,8 +125,8 @@
 - type: entity
   parent: CMUInflatableWallBroken
   id: CMUInflatableDoorBroken
-  name: popped inflatable door
-  description: The remains of a Cork door. The zipper survived, nothing else worth saving did.
+  name: 爆裂的充气门
+  description: 一个软木门的残骸。拉链还在，其余部分都不值得保留了。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Misc/inflatable_door.rsi

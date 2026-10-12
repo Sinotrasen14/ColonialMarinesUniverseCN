@@ -1,8 +1,8 @@
 - type: entity
   parent: CMUBeltCombatSidearmRig
   id: CMULACNBeltStandard
-  name: LACN standard load rig
-  description: The standard load-bearing belt of the LACN landing forces. It has a holster for a sidearm and pouches for two pistol magazines and three rifle magazines.
+  name: LACN标准载荷装置
+  description: LACN登陆部队的标准承重腰带。它有一个手枪枪套，以及两个手枪弹匣和三个步枪弹匣的弹药袋。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNstandardbelt.rsi
@@ -14,8 +14,8 @@
 - type: entity
   parent: CMBeltMarine
   id: CMULACNBeltMagazine
-  name: LACN magazine rig
-  description: An LACN load-bearing belt fitted with pouches for rifle magazines only.
+  name: LACN弹匣挂具
+  description: 一个LACN承重腰带，仅配有用于装步枪弹匣的袋囊。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNmagazinebelt.rsi
@@ -35,8 +35,8 @@
 - type: entity
   parent: RMCBeltUtilityGeneral
   id: CMULACNBeltUtility
-  name: LACN utility rig
-  description: An LACN load-bearing belt with pouches for general supplies.
+  name: LACN 通用钻机
+  description: 一个带有用于存放一般补给品小袋的LACN承重腰带。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNutilitybelt.rsi
@@ -48,8 +48,8 @@
 - type: entity
   parent: CMBeltUtility
   id: CMULACNBeltToolbelt
-  name: LACN toolbelt rig
-  description: An LACN load-bearing belt fitted with clips and pouches for engineering tools.
+  name: LACN 工具带装备
+  description: 一条配有夹扣和工具袋的LACN承重腰带，用于装载工程部工具。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNutilitybelt.rsi
@@ -61,8 +61,8 @@
 - type: entity
   parent: CMBeltMedicBag
   id: CMULACNBeltMedical
-  name: LACN lifesaver bag
-  description: An LACN load-bearing belt mounting a duffel bag filled with a range of injectors and light medical supplies. Common among corpsmen.
+  name: LACN救生包
+  description: 一条LACN承重腰带，上面挂着一个行李袋，里面装有一系列注射器和轻型医疗用品。常见于医务兵中。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNmedbelt.rsi
@@ -74,8 +74,8 @@
 - type: entity
   parent: RMCBeltGrenade
   id: CMULACNBeltGrenade
-  name: LACN grenade rig
-  description: An LACN load-bearing belt made to carry grenades.
+  name: LACN手榴弹挂具
+  description: 一条用于携带手榴弹的LACN承重腰带。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNgrenadebelt.rsi
@@ -87,8 +87,8 @@
 - type: entity
   parent: RMCBeltBaseStorageNoVisuals
   id: CMULACNBeltShotgun
-  name: LACN shotgun shell rig
-  description: An LACN load-bearing belt made to carry shotgun shells.
+  name: LACN霰弹枪弹带
+  description: 一条用于携带霰弹枪弹药的LACN承重腰带。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNshotgunbelt.rsi
@@ -116,8 +116,8 @@
 - type: entity
   parent: RMCBeltHolsterPistol
   id: CMULACNBeltHolsterPistol
-  name: LACN handgun holster rig
-  description: An LACN load-bearing belt with a holster for most common pistols and side pouches for pistol magazines.
+  name: LACN手枪枪套装置
+  description: 带枪套的LACN承重腰带，可适配大多数常见手枪，并配有手枪弹匣侧袋。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNhandgunbelt.rsi
@@ -181,8 +181,8 @@
 - type: entity
   parent: RMCBeltHolsterRevolver
   id: CMULACNBeltHolsterRevolver
-  name: LACN revolver holster rig
-  description: An LACN load-bearing belt with a holster made for Taurus revolvers, though it fits most others, and six pouches for speedloaders or shotgun shells.
+  name: LACN左轮手枪枪套装备
+  description: 一条LACN承重腰带，配有专为金牛座左轮手枪设计的枪套，不过也适用于大多数其他型号，以及六个可装快速装弹器或霰弹枪弹壳的弹药袋。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Universal/Belts/LACNtaurusbelt.rsi

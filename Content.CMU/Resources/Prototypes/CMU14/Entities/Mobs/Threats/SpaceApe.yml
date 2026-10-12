@@ -1,8 +1,8 @@
 - type: entity
   parent: CMMobSmallHostMonkey
   id: CMUMobApe
-  name: Ape
-  description: A capable and dangerous megafauna, high caloric needs.
+  name: 猿
+  description: 一种能力强且危险的大型动物，热量需求高。
   suffix: CMU
   components:
   - type: DropshipHijacker
@@ -21,8 +21,8 @@
         - MobLayer
   - type: GhostTakeoverAvailable
   - type: GhostRole
-    name: Ape
-    description: OO OO AH AH
+    name: 猿
+    description: 哦哦啊啊
     prob: 1.0
     raffle:
       settings: short
@@ -243,7 +243,7 @@
 - type: inventoryTemplate
   id: ape
   slots:
-  - name: mask
+  - name: 面具
     slotTexture: mask
     slotFlags: MASK
     uiWindowPos: 0,1
@@ -252,7 +252,7 @@
 - type: entity
   id: OrganApeStomach
   parent: OrganAnimalStomach
-  name: stomach
+  name: 胃
   categories: [ HideSpawnMenu ]
   components:
   - type: Metabolizer
@@ -261,7 +261,7 @@
 - type: entity
   id: OrganApeLiver
   parent: OrganAnimalLiver
-  name: liver
+  name: 肝
   categories: [ HideSpawnMenu ]
   components:
   - type: Metabolizer
@@ -270,7 +270,7 @@
 - type: entity
   id: OrganApeHeart
   parent: OrganAnimalHeart
-  name: heart
+  name: 心脏
   categories: [ HideSpawnMenu ]
   components:
   - type: Metabolizer

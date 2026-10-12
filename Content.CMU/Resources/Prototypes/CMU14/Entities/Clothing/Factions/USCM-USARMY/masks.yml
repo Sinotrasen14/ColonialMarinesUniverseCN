@@ -1,8 +1,8 @@
 - type: entity
   parent: [ClothingMaskBase, BaseFoldable]
   id: AU14MaskUSASFPilotOxygen
-  name: USASF LAH-99 Oxygen Mask
-  description: A mask attached to USASF LAH-99 helmets to provide aircrew with breathable oxygen.
+  name: USASF LAH-99氧气面罩
+  description: 连接在USASF LAH-99头盔上的面罩，为机组人员提供可呼吸的氧气。
   components:
   - type: Sprite
     sprite: CMU14/Clothing/USASFSecurityForces/USASFPilot/mask.rsi
@@ -48,8 +48,8 @@
   parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
   id: AU14MOPPMask
   suffix: AU14
-  name: CBRN M3 MOPP mask
-  description: The M3 MOPP mask includes a full covering cowl that securely attaches to the MOPP suit. The mask filters out harmful particles in the air to allow the wearer to breathe safely in the field. Depending on the hostility of the contaminated area the mask’s filter will last an average of 12 hours or less.
+  name: CBRN M3 防毒面具
+  description: M3 MOPP面具包含一个全罩式头罩，可牢固地连接到MOPP防护服上。该面具可过滤空气中的有害颗粒，使佩戴者能够在战场上安全呼吸。根据污染区域的危险程度，面具滤芯平均可使用12小时或更短。
   components:
   - type: IdentityBlocker
   - type: Sprite

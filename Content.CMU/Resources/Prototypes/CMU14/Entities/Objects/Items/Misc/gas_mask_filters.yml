@@ -21,14 +21,14 @@
 - type: entity
   parent: CMUBaseGasMaskFilter
   id: CMUGasMaskFilter
-  name: gas mask filter
-  description: A little metal canister that allegedly contains an activated charcoal filter to prevent nasty airborne particles from killing your lungs.
+  name: 防毒面具滤毒罐
+  description: 一个小金属气罐，据称内含活性炭过滤器，可防止有害的空气悬浮颗粒要了你的命。
 
 - type: entity
   parent: CMUBaseGasMaskFilter
   id: CMUGasMaskFilterUPP
-  name: ShMB/4 gas mask filter
-  description: A little metal canister. May possibly also filter out airborne contaminants. There is an asbestos warning label on the side.
+  name: ShMB/4防毒面具滤毒罐
+  description: 一个小金属气罐。可能也能过滤空气中的污染物。侧面贴有石棉警告标签。
   components:
   - type: Sprite
     sprite: CMU14/Items/gas_mask_filter.rsi
@@ -38,8 +38,8 @@
 - type: entity
   parent: CMUBaseGasMaskFilter
   id: CMUGasMaskFilterHAZOPS
-  name: CBRN gas mask filter
-  description: A little metal canister that contains a big chunk of the periodic table. Rated for environments involving Chemical, Biological, Radiological, or Nuclear hazards.
+  name: CBRN防毒面具滤毒罐
+  description: 一个小小的金属气罐，里面装着一大块元素周期表。适用于涉及化学、生物、放射性或核危害的环境。
   components:
   - type: GasMaskFilter
     neurotoxinResist: true
@@ -54,8 +54,8 @@
 - type: entity
   parent: CMUBaseGasMaskFilter
   id: CMUGasMaskFilterWY
-  name: WY X-16 gas mask filter
-  description: A little metal canister. You don't know what's in it. It can filter out chemicals that have yet to be officialy discovered.
+  name: WY X-16防毒面具滤毒罐
+  description: 一个小金属气罐。你不知道里面装了什么。它可以过滤掉尚未被正式发现的化学物质。
   components:
   - type: GasMaskFilter
     neurotoxinResist: true

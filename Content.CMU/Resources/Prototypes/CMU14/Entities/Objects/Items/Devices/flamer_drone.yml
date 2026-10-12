@@ -1,8 +1,8 @@
 - type: entity
   parent: CMUCombatDroneOperatorPackFilled
   id: CMUFlamerDroneOperatorPackFilled
-  name: flamer UGV operator field pack
-  description: A flamer UGV hull, claw incinerator assembly, two fuel tanks, controller, and repair supplies.
+  name: 火焰无人车操作员野战背包
+  description: 一具喷火无人车车体、爪式焚烧器组件、两个燃料箱、控制器和维修补给。
   components:
   - type: StorageFill
     contents:
@@ -17,8 +17,8 @@
 - type: entity
   parent: CMUCombatDroneHull
   id: CMUFlamerDroneHull
-  name: flamer UGV hull
-  description: A folded tracked chassis with articulated claws. Place it on the ground, install its claw incinerator assembly, then load a fuel tank to bring it online.
+  name: 火焰无人车车体
+  description: 一个折叠式履带底盘，带有铰接爪。将其放置在地面上，安装其爪式焚烧器组件，然后装入一个燃料气瓶即可使其上线。
   components:
   - type: ContainerContainer
     containers:
@@ -45,8 +45,8 @@
 - type: entity
   parent: BaseItem
   id: CMUFlamerDroneTurretAssembly
-  name: UGV claw incinerator assembly
-  description: A fuel regulator and twin flame nozzles for the flamer UGV's articulated claws. Install it on a flamer UGV hull.
+  name: 无人地面车爪式焚化器组件
+  description: 一个用于火焰无人车铰接爪的燃料调节器和双火焰喷嘴。将其安装到火焰无人车车体上。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Flamethrower/m34.rsi
@@ -59,8 +59,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: CMUFlamerDroneFuelTank
-  name: UGV incinerator fuel tank
-  description: A 200-unit napalm tank for the flamer UGV. It can be refilled from compatible fuel supplies.
+  name: 无人车焚化炉燃料箱
+  description: 火焰无人车的气瓶，容量200单位凝固汽油。可从兼容的燃料补给处重新加注。
   components:
   - type: SolutionContainerManager
     solutions:

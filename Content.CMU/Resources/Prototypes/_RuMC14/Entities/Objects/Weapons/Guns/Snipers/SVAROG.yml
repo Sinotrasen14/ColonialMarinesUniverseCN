@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCBaseWeaponSniperRifle
   id: RuMcSniperRifleSVAROG
-  name: "'SVAROG' sniper rifle"
-  description: The SWAROG sniper rifle. This model is renowned for its suitability for medium‑range shooting, where it has no equal. It is used by SKALA specialists.
+  name: "“SVAROG”狙击步枪"
+  description: SWAROG狙击步枪。该型号以适合中距离射击而闻名，在这方面无与伦比。它被SKALA专家使用。
   components:
   - type: Item
     size: Huge
@@ -41,7 +41,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RuMcMagazineSniperRifleSVAROG
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg
@@ -88,8 +88,8 @@
 - type: entity
   parent: CMMagazineSniperM96S
   id: RuMcMagazineSniperRifleSVAROG
-  name: SVAROG magazine (10x28mm)
-  description: magazine for the SVAROG sniper rifle (10x28mm)
+  name: SVAROG 弹匣（10x28mm）
+  description: SVAROG狙击步枪弹匣（10x28mm）
   components:
   - type: Tag
     tags:
@@ -127,8 +127,8 @@
 - type: entity
   parent: RuMcMagazineSniperRifleSVAROG
   id: RuMcMagazineSniperRifleSVAROGIncendiary
-  name: SVAROG incendiary magazine (10x28mm)
-  description: incendiary magazine for the SVAROG sniper rifle (10x28mm)
+  name: SVAROG燃烧弹匣（10x28mm）
+  description: SVAROG狙击步枪（10x28mm）燃烧弹弹匣
   components:
   - type: BallisticAmmoProvider
     proto: CMCartridgeSniper10x28mmIncendiary
@@ -146,8 +146,8 @@
 - type: entity
   parent: RuMcMagazineSniperRifleSVAROG
   id: RuMcMagazineSniperRifleSVAROGFlak
-  name: SVAROG flak magazine (10x28mm)
-  description: flak magazine for the SVAROG sniper rifle (10x28mm)
+  name: SVAROG 高射弹匣（10x28mm）
+  description: SVAROG狙击步枪（10x28mm）的防空弹匣
   components:
   - type: BallisticAmmoProvider
     proto: CMCartridgeSniper10x28mmFlak

@@ -1,8 +1,8 @@
 - type: entity
   parent: RMCBaseWeaponSniperRifle
   id: CMUSniperRifleTWE
-  name: L144 Sniper Rifle
-  description: The L144 LRR, adopted by the TWE for use by Royal Marine Commandos snipers. Praised by its users and feared by their targets, the L144 sends 10x28mm rounds downrange at a devastating velocity and with pinpoint accuracy.
+  name: L144狙击步枪
+  description: L144 LRR，被TWE采用，供皇家海军陆战队突击队狙击手使用。L144以毁灭性的速度和精准的精度将10x28mm弹药射向远方，受到使用者的赞誉，也令其目标闻风丧胆。
   components:
   - type: GuideHelp
     guides:
@@ -42,7 +42,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: CMUMagazineSniperL144SH
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/gun_mar40_unload.ogg
@@ -89,8 +89,8 @@
 - type: entity
   parent: CMMagazineSniperM96S
   id: CMUMagazineSniperL144
-  name: "L144 marksman magazine (10x28mm)"
-  description: A 15-round magazine of 10x28mm marksman cartridges.
+  name: "L144 精确射手弹匣（10x28mm）"
+  description: 一把可装15发10x28毫米精确射手弹的弹匣。
   components:
   - type: Tag
     tags:
@@ -114,8 +114,8 @@
 - type: entity
   parent: CMUMagazineSniperL144
   id: CMUMagazineSniperL144SH
-  name: "L144 squash-head magazine (10x28mm)"
-  description: A 15-round magazine of 10x28mm squash-head cartridges.
+  name: "L144 平头弹匣（10x28mm）"
+  description: 一把可装15发10x28mm弹头弹的弹匣。
   components:
   - type: Tag
     tags:
@@ -141,7 +141,7 @@
 - type: entity
   parent: CMCartridgeSniper10x28mm
   id: CMUCartridgeSniper10x28mmSH
-  name: squash-head cartridge (10x28mm)
+  name: 南瓜头弹（10x28mm）
   components:
   - type: CartridgeAmmo
     proto: CMUBulletSniper10x28mmSH
@@ -153,7 +153,7 @@
 - type: entity
   parent: CMBulletSniper10x28mm
   id: CMUBulletSniper10x28mmSH
-  name: squash-head bullet (10x28mm)
+  name: 南瓜头子弹（10x28mm）
   categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
@@ -169,8 +169,8 @@
 - type: entity
   parent: RMCBarrelAttachmentBase
   id: CMUAttachmentSuppressorL144
-  name: L144 integrated suppressor
-  description: Sod, son! That'll cost a pretty penny to fix...
+  name: L144一体式抑制器
+  description: 妈的，小子！修好这玩意儿可得花一大笔钱……
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/RMC/l144_barrel.rsi

@@ -1,7 +1,7 @@
 - type: entity
   parent: CMUMobCarpBase
   id: CMUMobCarpInvasive
-  name: invasive carp
+  name: 入侵鲤鱼
   suffix: CMU
   components:
   - type: CombatMode
@@ -162,8 +162,8 @@
       tags:
       - RMCSynthGrabbable
   - type: GhostRole
-    name: Invasive Carp
-    description: An invasive species of fish. They are adapted to hunt up hill both ways
+    name: 入侵鲤鱼
+    description: 一种入侵性鱼类。它们已经适应了上下坡都要捕猎的生活。
     rules: Hunt tall prey to satiate your hunger. Small animals are your bait to catch the larger prey. If you're well-fed... maintain a sustainable hunting ground but be sure to share with the others.
     prob: 1
   - type: GhostTakeoverAvailable
@@ -171,7 +171,7 @@
 - type: entity
   parent: ActionXenoRam
   id: ActionCarpRam
-  name: Ram
+  name: 公羊
   components:
   - type: XenoActionPlasma
     cost: 0
@@ -179,4 +179,4 @@
 - type: entity
   parent: ActionXenoTailLash
   id: ActionCarpTailLash
-  name: Tail Lash
+  name: 尾鞭

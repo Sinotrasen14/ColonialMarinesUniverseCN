@@ -2,8 +2,8 @@
   abstract: true
   parent: RMCCommunicationsConsoleBase
   id: AU14AllianceConsoleBase
-  name: alliance console
-  description: A secured command terminal for managing diplomatic standing with third-party factions. Friendly factions will not be engaged by your sentries.
+  name: 联盟控制台
+  description: 用于管理与第三方派系外交关系的安全指挥部终端。友好派系不会遭到你的哨兵攻击。
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
@@ -22,9 +22,9 @@
 - type: entity
   parent: AU14AllianceConsoleBase
   id: AU14AllianceConsoleGovfor
-  name: alliance console (GovFor)
+  name: 联盟控制台（GovFor）
   suffix: GovFor
-  description: A GovFor command terminal for managing diplomatic standing with third-party factions.
+  description: 一个GovFor指挥部终端，用于管理与第三方派系的外交关系。
   components:
   - type: AllianceConsole
     faction: govfor
@@ -32,9 +32,9 @@
 - type: entity
   parent: AU14AllianceConsoleBase
   id: AU14AllianceConsoleOpfor
-  name: alliance console (OpFor)
+  name: 联盟控制台（OpFor）
   suffix: OpFor
-  description: An OpFor command terminal for managing diplomatic standing with third-party factions.
+  description: 一个用于管理第三方派系外交关系的指挥部终端。
   components:
   - type: AllianceConsole
     faction: opfor
@@ -42,9 +42,9 @@
 - type: entity
   parent: AU14AllianceConsoleBase
   id: AU14AllianceConsoleWeYu
-  name: alliance console (Weyland-Yutani)
+  name: 联盟控制台（韦兰-汤谷）
   suffix: WeYu
-  description: A Weyland-Yutani terminal for managing corporate diplomatic standing with other factions.
+  description: 一个韦兰-汤谷公司的终端，用于管理与其他派系的企业外交关系。
   components:
   - type: AllianceConsole
     faction: AUWeYu
@@ -52,9 +52,9 @@
 - type: entity
   parent: AU14AllianceConsoleBase
   id: AU14AllianceConsoleCLF
-  name: alliance console (CLF)
+  name: 联盟控制台（CLF）
   suffix: CLF
-  description: A CLF command terminal for managing diplomatic standing with third-party factions.
+  description: 一个用于管理同第三方派系外交关系的CLF指挥部终端。
   components:
   - type: AllianceConsole
     faction: clf

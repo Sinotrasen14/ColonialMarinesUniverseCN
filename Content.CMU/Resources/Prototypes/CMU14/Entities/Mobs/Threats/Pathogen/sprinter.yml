@@ -2,8 +2,8 @@
   abstract: true
   parent: CMU14XenoPathogenMatureBase
   id: CMU14XenoSprinterBase
-  name: Sprinter
-  description: A small, fast four-legged terror. Weak in sustained combat.
+  name: 冲刺者
+  description: 一只小巧、迅捷的四足恐怖生物。在持久战中表现较弱。
   components:
   - type: GhostRole
     name: cmu-job-name-pathogen-sprinter
@@ -124,7 +124,7 @@
 - type: entity
   parent: CMU14XenoSprinterBase
   id: CMU14XenoSprinter
-  name: Sprinter
+  name: 短跑者
   components:
   - type: RMCGibOnDeath
     gibChance: 0.1

@@ -1,12 +1,10 @@
 - type: entity
   parent: BaseItem
   id: AU14CLFNetSpliceKit
-  name: net splice kit
+  name: 网络拼接套件
   suffix: CLF, Sapper
   description: >-
-    A junction tap wound out of stolen feeder cable, a keying module, and a band scope
-    built out of parts that did not start life together. Clamp it onto a mast's feeder
-    and go looking for the trunk carriers.
+    一个从偷来的馈线电缆中绕出的分接抽头、一个密钥模块，以及一台由原本并非配套的零件拼凑而成的频段示波器。把它夹到桅杆的馈线上，然后去寻找主干载波。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/sentrycomp.rsi
@@ -19,11 +17,10 @@
 - type: entity
   parent: BaseStructure
   id: AU14CLFNetSpliceTap
-  name: feeder tap
+  name: 馈线分接
   suffix: CLF
   description: >-
-    A junction box wired into the mast's feeder, humming to itself. Nothing about it
-    matches the rest of the hardware.
+    一个接线盒接入桅杆的馈线，自顾自地嗡嗡作响。它和其余硬件格格不入。
   components:
   - type: Transform
     anchored: true
@@ -42,25 +39,23 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape:
-          !type:PhysShapeAabb
+        shape: !type:PhysShapeAabb
           bounds: "-0.2,-0.2,0.2,0.2"
         density: 40
         mask:
         - None
   - type: Damageable
-    damageModifierSet: null
+    damageModifierSet:
   - type: Injurable
     damageContainer: Inorganic
   - type: Destructible
     thresholds:
-    - trigger:
-        !type:DamageTrigger
+    - trigger: !type:DamageTrigger
         damage: 60
       behaviors:
       - !type:PlaySoundBehavior
         sound:
           collection: MetalBreak
       - !type:DoActsBehavior
-        acts: [ "Destruction" ]
+        acts: ["Destruction"]
   - type: AU14NetSpliceTap

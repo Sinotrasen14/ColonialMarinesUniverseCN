@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponGun, BaseItem, RMCBaseAttachableHolder ]
   id: AU14WeaponFlamerM240A2HAZOPS
-  name: M240A2 heavy incinerator unit
-  description: The USCMC's answer to WY's Flammerwerfer 3. Much more effective than the standard M240, but inflicts a movement penality. Typically issued to HAZOPS.
+  name: M240A2重型焚烧器
+  description: USCMC对WY的Flammerwerfer 3的回应。比标准M240有效得多，但会造成移动惩罚。通常配发给HAZOPS。
   components:
   - type: RMCMagneticItem
   - type: Sprite
@@ -38,7 +38,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Tank
+        name: 气瓶
         startingItem: AU14TankFlamerM240A2HAZOPS
         insertSound: /Audio/_RMC14/Weapons/Handling/flamer_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Handling/flamer_unload.ogg
@@ -108,8 +108,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: AU14TankFlamerM240A2HAZOPS
-  name: M240A2 heavy incinerator tank
-  description: A heavy, high capacity tank utilized by the M240A2. Has a colorless HAZOPS logo imprinted on the side.
+  name: M240A2重型焚烧气瓶
+  description: M240A2使用的一种重型大容量气瓶。侧面印有无色的HAZOPS标志。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/fl3.rsi
@@ -143,8 +143,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: AU14TankFlamerM240A2HAZOPSNapalmB
-  name: M240A2 heavy incinerator tank (B)
-  description: A heavy, high capacity tank utilized by the M240A2. Has a colorless HAZOPS logo imprinted on the side. This one seems to contain 'Napalm-B'
+  name: M240A2重型焚烧器气瓶（B）
+  description: M240A2使用的一种重型大容量气瓶。侧面印有无色的HAZOPS标志。这个似乎装有“凝固汽油-B”
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/fl3.rsi
@@ -178,8 +178,8 @@
 - type: entity
   parent: RMCTankFlamer
   id: AU14TankFlamerM240A2HAZOPSNapalmX
-  name: M240A2 heavy incinerator tank (X)
-  description: A heavy, high capacity tank utilized by the M240A2. Has a colorless HAZOPS logo imprinted on the side. This one seems to contain 'Napalm-X'
+  name: M240A2重型燃烧气瓶（X）
+  description: M240A2使用的一种重型大容量气瓶。侧面印有无色HAZOPS标志。这个似乎装有“Napalm-X”
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/fl3.rsi

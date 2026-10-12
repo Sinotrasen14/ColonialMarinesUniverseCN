@@ -1,8 +1,8 @@
 - type: entity
   abstract: true
   id: ANPRCFillCard
-  name: COMSEC fill card
-  description: A hardened cryptographic fill card for the AN/PRC-117G radio. Worth more than the radio it slots into.
+  name: 通信保密填充卡
+  description: 一张用于AN/PRC-117G无线电的加固型密码填充卡。比它所插入的无线电还值钱。
   parent: BaseItem
   components:
   - type: Sprite
@@ -15,10 +15,9 @@
 - type: entity
   parent: ANPRCFillCard
   id: ANPRCFillCardGOVFOR
-  name: GOVFOR COMSEC fill card
+  name: 政府专用通信保密填充卡
   description: >-
-    A GOVFOR KY-99A cryptographic fill card. Signal section property, loss
-    must be reported immediately and nobody enjoys what happens next.
+    一张GOVFOR KY-99A密码填充卡。信号部门财产，遗失必须立即上报，没人想经历接下来的后果。
   components:
   - type: ANPRCFillCard
     faction: govfor
@@ -27,10 +26,9 @@
 - type: entity
   parent: ANPRCFillCard
   id: ANPRCFillCardOPFOR
-  name: OPFOR COMSEC fill card
+  name: 敌方通信保密填充卡
   description: >-
-    An OPFOR KY-58 cryptographic fill card. The serial number has been
-    stamped over three times.
+    一张假想敌的KY-58加密填充卡。序列号被反复盖印了三次以上。
   components:
   - type: ANPRCFillCard
     faction: opfor
@@ -39,10 +37,9 @@
 - type: entity
   parent: ANPRCFillCard
   id: ANPRCFillCardCLF
-  name: CLF COMSEC fill card
+  name: CLF通信保密填充卡
   description: >-
-    A CLF KY-38 cryptographic fill card, scuffed and lovingly maintained.
-    Harder to replace than the radio, and everyone knows it.
+    一张CLF KY-38密码填充卡，虽有磨损，却被精心呵护。它比无线电更难替换，这一点人尽皆知。
   components:
   - type: ANPRCFillCard
     faction: clf
@@ -53,11 +50,10 @@
 - type: entity
   parent: ANPRCFillCard
   id: ANPRCFillCardIssued
-  name: COMSEC fill card (unkeyed)
+  name: 通信保密填充卡（未加密）
   suffix: Issue, keys to side
   description: >-
-    A cryptographic fill card fresh from the signal section, waiting to be
-    loaded with whichever side's key its holder answers to.
+    一张刚从信号部门取出的加密填充卡，正等待装入持有者所效忠那一方的密钥。
   components:
   - type: ANPRCSideKeyed
     variants:

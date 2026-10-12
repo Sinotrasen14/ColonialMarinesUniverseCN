@@ -1,8 +1,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenAcidNormal
-  name: Corrosive Acid (100)
-  description: Melts down a structure or item over time.
+  name: 腐蚀酸液（100）
+  description: 随时间融化建筑或物品。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -27,8 +27,8 @@
 - type: entity
   parent: CMU14ActionXenoPathogenAcidNormal
   id: CMU14ActionXenoPathogenAcidWeak
-  name: Weak Corrosive Acid (75)
-  description: Melts down a structure or item over time.
+  name: 弱腐蚀性酸液（75）
+  description: 随时间推移熔化建筑或物品。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -52,8 +52,8 @@
 - type: entity
   parent: CMU14ActionXenoPathogenAcidNormal
   id: CMU14ActionXenoPathogenAcidStrong
-  name: Strong Corrosive Acid (125)
-  description: Melts down a structure or item over time.
+  name: 强腐蚀性酸液（125）
+  description: 随时间推移熔毁建筑或物品。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -77,8 +77,8 @@
 - type: entity
   parent: CMU14ActionXenoPathogenAcidNormal
   id: CMU14ActionXenoPathogenAcidAcider
-  name: Strong Corrosive Acid (100 acid)
-  description: Melts down barricades or items over time. You cannot melt structures.
+  name: 强腐蚀性酸液（100酸液）
+  description: 随时间融化路障或物品。你无法融化建筑结构。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -104,8 +104,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenRegurgitate
   parent: ActionXenoBase
-  name: Regurgitate
-  description: Eject any devoured marines.
+  name: 反刍
+  description: 喷出所有被吞下的陆战队员。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -121,8 +121,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenTailStab
   parent: ActionXenoBase
-  name: Tail Stab
-  description: Launches an attack towards a given direction. The cooldown is faster if you miss.
+  name: 尾刺
+  description: 向给定方向发起攻击。未命中时冷却更快。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -147,13 +147,13 @@
 - type: entity
   id: CMU14ActionXenoPathogenTailSlam
   parent: CMU14ActionXenoPathogenTailStab
-  name: Tail Slam
+  name: 尾部重击
  
 - type: entity
   parent: CMU14ActionXenoPathogenTailStab
   id: CMU14ActionXenoPathogenTailStabCorrosive
-  name: Corrosive Tail Stab
-  description: Launches an attack towards a given direction. The cooldown is faster if you miss. [color=red]It also injects diluted molecular acid into the target, dealing damage over time.[/color]
+  name: 腐蚀性尾刺
+  description: 向指定方向发动攻击。未命中时冷却更快。[color=red]它还会向目标注入稀释的分子酸，造成持续伤害。[/color]
   components:
   - type: Action
   - type: Sprite
@@ -165,14 +165,14 @@
 - type: entity
   parent: CMU14ActionXenoPathogenTailStabCorrosive
   id: CMU14ActionXenoPathogenTailStabBoiler
-  name: Corrosive Tail Stab
-  description: Launches an attack towards a given direction. The cooldown is faster if you miss. [color=red]It also injects diluted molecular acid or neurotoxin into the target, dealing damage or stunning over time. Which type depends on current gas type.[/color]
+  name: 腐蚀性尾刺
+  description: 向指定方向发动攻击。如果未命中，冷却时间会更快。[color=red]它还会向目标注入稀释的分子酸或神经毒素，随时间造成伤害或使其昏迷。具体类型取决于当前气体类型。[/color]
  
 - type: entity
   id: CMU14ActionXenoPathogenLeap
   parent: ActionXenoBase
-  name: Leap
-  description: Jump towards a given location and knock down the first enemy hit.
+  name: 跃迁
+  description: 向指定位置跳跃并击倒第一个命中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -192,8 +192,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenRush
   parent: CMU14ActionXenoPathogenLeap
-  name: Rush
-  description: Jump towards a given location and slash the enemy you hit, shaking their screen.
+  name: 冲锋
+  description: 朝指定位置跃起并斩击你命中的敌人，震动其屏幕。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -206,8 +206,8 @@
 - type: entity
   parent: CMU14ActionXenoPathogenLeap
   id: CMU14ActionXenoPathogenPounce
-  name: Pounce (20)
-  description: Jump towards a given location and knock down the first enemy hit [color=red]if you are invisible.[/color]
+  name: 扑击（20）
+  description: 向指定位置跳跃，若你处于隐形状态，则击倒第一个命中的敌人[color=red]if you are invisible.[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -226,8 +226,8 @@
 - type: entity
   parent: CMU14ActionXenoPathogenLeap
   id: CMU14ActionXenoPathogenAssault
-  name: Assault (25)
-  description: Charge towards a location. Destroys some objects in your path. Melee slashes reduce assault's cooldown. If Super-Empowered, stuns and flings back the first enemy hit.
+  name: 突击（25）
+  description: 向一个位置冲锋。摧毁路径上的部分物体。近战斩击会缩短突击的冷却时间。若处于超级强化状态，则眩晕并击退第一个命中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -245,8 +245,8 @@
 - type: entity
   parent: CMU14ActionXenoPathogenLeap
   id: CMU14ActionXenoPathogenDash
-  name: Dash (40)
-  description: Dash a short distance towards a given location.
+  name: 冲刺（40）
+  description: 向指定位置冲刺一小段距离。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -264,8 +264,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenHeadbutt
   parent: ActionXenoBase
-  name: Headbutt (10)
-  description: Charge towards the targeted enemy and push back the first enemy hit, piercing armor slightly. Does less damage but has more knockback when crest is lowered.
+  name: 头槌（10）
+  description: 向目标敌人冲锋，并将第一个命中的敌人击退，略微穿透护甲。当冠饰降下时，造成的伤害更低，但击退效果更强。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -287,8 +287,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenTailSweep
   parent: ActionXenoBase
-  name: Tail Sweep (10)
-  description: Knock down any enemies close to you.
+  name: 尾扫（10）
+  description: 击倒你附近的任何敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -305,8 +305,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenSlowingSpit
   parent: ActionXenoBase
-  name: Slowing Spit (20)
-  description: Launches a damageless projectile that will slow the first enemy that it hits, and paralyze them if they have no armor. It'll also drain helpful substances from their body.
+  name: 减速唾液（20）
+  description: 发射一枚无伤害的投射物，使第一个命中的敌人减速，若其没有护甲则将其麻痹。它还会从敌人体内吸取有益物质。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -328,8 +328,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenScatteredSpit
   parent: ActionXenoBase
-  name: Scattered Spit (20)
-  description: Launches multiple damageless projectiles that will briefly paralyze any enemies they hit.
+  name: 散落唾液（20）
+  description: 发射多个无伤害的投射物，短暂麻痹被击中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -351,8 +351,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenSpit
   parent: ActionXenoBase
-  name: Xeno Spit (25)
-  description: Launches a projectile that will deal damage to the first enemy that it hits.
+  name: 异形唾液（25）
+  description: 发射一枚投射物，对命中的第一个敌人造成伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -382,8 +382,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenChargeSpit
   parent: ActionXenoBase
-  name: Charge Spit (50)
-  description: Charges up your next spit, making it deal more damage and coat the enemy in acid, but have less range. Increases your movement speed until the ability expires.
+  name: 蓄力喷吐（50）
+  description: 蓄力强化下一次吐酸，使其造成更高伤害并在敌人身上覆盖酸液，但射程缩短。在技能结束前提升你的移动速度。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -401,8 +401,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenSprayAcid
-  name: Spray Acid (40)
-  description: Sprays acid along the ground in a line, covering tiles with it. [color=red]Will coat barricades in acid and significantly strengthen acid inflicted from Charge Spit![/color]
+  name: 喷酸（40）
+  description: 沿地面呈直线喷出酸液，覆盖沿途地块。[color=red]会在路障上覆盖酸液，并大幅增强冲锋喷吐造成的酸蚀！[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -421,7 +421,7 @@
 - type: entity
   parent: CMU14ActionXenoPathogenSprayAcid
   id: CMU14ActionXenoPathogenSprayAcidBoiler
-  description: Sprays acid along the ground in a line, covering tiles with it. [color=red]Will coat barricades in acid![/color]
+  description: 沿地面呈直线喷酸，使地砖被酸液覆盖。[color=red]会以酸液覆盖路障！[/color]
   components:
   - type: Action
     useDelay: 10
@@ -435,8 +435,8 @@
 - type: entity
   parent: CMU14ActionXenoPathogenSprayAcid
   id: CMU14ActionXenoPathogenSprayAcidPraetorian
-  name: Spray Acid (80)
-  description: Sprays acid along the ground in a line, covering tiles with it. [color=red]Will coat barricades in acid![/color]
+  name: 喷酸（80）
+  description: 沿地面喷出一道酸液，覆盖沿途的地砖。[color=red]会将路障覆盖上酸液！[/color]
   components:
   - type: Action
     useDelay: 10
@@ -444,7 +444,7 @@
 - type: entity
   parent: CMU14ActionXenoPathogenSprayAcidPraetorian
   id: CMU14ActionXenoPathogenSprayAcidWarden
-  name: Spray Acid (130)
+  name: 喷酸（130）
   components:
   - type: Action
     useDelay: 13
@@ -452,8 +452,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenAcidMine
   parent: ActionXenoBase
-  name: Acid Mine (40)
-  description: Cause an acid explosion at the targeted location.
+  name: 酸性矿雷（40）
+  description: 在目标位置引发酸液爆炸。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -478,8 +478,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenAcidShotgun
   parent: ActionXenoBase
-  name: Acid Shotgun (40)
-  description: Launches multiple acid projectiles that deal increased damage to trapped targets.
+  name: 酸液霰弹枪（40）
+  description: 发射多枚酸液弹，对被困目标造成额外伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -501,8 +501,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenDeployTraps
   parent: ActionXenoBase
-  name: Deploy Traps (60)
-  description: Deploys a line of snaring traps.
+  name: 部署陷阱（60）
+  description: 部署一排诱捕陷阱。
   components:
   - type: Action
     useDelay: 20.5
@@ -528,8 +528,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenTailLance
   parent: CMU14ActionXenoPathogenTailStab
-  name: Tail Lance
-  description: Launches a fast tail thrust. The cooldown is shorter if you miss.
+  name: 尾刺枪
+  description: 发射一次快速的尾部突刺。未命中时冷却时间更短。
   components:
   - type: Action
   - type: Sprite
@@ -543,8 +543,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenVenatorCorrosiveSpit
   parent: ActionXenoBase
-  name: Corrosive Spit (45)
-  description: Spit concentrated acid that leaves a small corrosive pool.
+  name: 腐蚀唾液（45）
+  description: 吐出浓缩酸液，留下一小片腐蚀性酸池。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -575,8 +575,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenVenatorAcidBlob
   parent: CMU14ActionXenoPathogenVenatorCorrosiveSpit
-  name: Acid Blob (65)
-  description: Lob a heavier glob of acid that knocks down a direct hit and spreads pools around impact.
+  name: 酸液孢子（65）
+  description: 投掷一团更重的酸液，直接命中可击倒目标，并在落点周围散布酸池。
   components:
   - type: Action
   - type: Sprite
@@ -603,8 +603,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenVenatorEnzymaticBreath
   parent: CMU14ActionXenoPathogenVenatorCorrosiveSpit
-  name: Enzymatic Breath (55)
-  description: Spit a short spread of acid that marks an area with corrosive pools.
+  name: 酶解吐息（55）
+  description: 喷出一小片酸液，在地面留下腐蚀性酸池标记区域。
   components:
   - type: Action
   - type: Sprite
@@ -630,8 +630,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenPlateBash
   parent: ActionXenoBase
-  name: Plate Bash
-  description: Bash a nearby enemy with your crest plates.
+  name: 板击
+  description: 用你的冠板猛击附近的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -653,8 +653,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenBulwarkTailSwing
   parent: ActionXenoBase
-  name: Tail Swing
-  description: Sweep nearby enemies with your tail.
+  name: 尾击
+  description: 用尾巴横扫附近的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -672,8 +672,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenTailInjection
   parent: ActionXenoBase
-  name: Tail Injection
-  description: Inject your stored chemical mixture into a nearby target.
+  name: 尾部注射
+  description: 将你储存的化学混合物注入附近的目标体内。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -695,8 +695,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenRapture
   parent: ActionXenoBase
-  name: Rapture
-  description: Rip flesh resin from a nearby enemy.
+  name: 狂喜
+  description: 从附近的敌人身上撕下血肉树脂。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -718,8 +718,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenReaperRedGas
   parent: ActionXenoBase
-  name: Red Gas
-  description: Spend flesh resin to send a widening cloud of toxic gas marching toward a target.
+  name: 红气
+  description: 消耗血肉树脂，向目标推进一团不断扩大的毒气云。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -742,8 +742,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenParalyzingSlash
   parent: ActionXenoBase
-  name: Blight Slash
-  description: Prime your next strike to slow the target on hit.
+  name: 枯萎斩击
+  description: 准备好你的下一次攻击，命中时使目标减速。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -762,8 +762,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenPlaceSporeSac
   parent: ActionXenoBase
-  name: Place Spore Sac
-  description: Plant a sac that will burst into a cloud of toxic spores.
+  name: 放置孢子囊
+  description: 种下一个囊袋，它会爆裂成一团有毒孢子。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -783,8 +783,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenDirectSporeInfect
   parent: ActionXenoBase
-  name: Direct Infect
-  description: Press a handful of spores against an adjacent target, directly infecting them.
+  name: 直接感染
+  description: 将一把孢子按在相邻目标身上，直接感染他们。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -805,8 +805,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenBlightWave
   parent: ActionXenoBase
-  name: Blight Wave
-  description: Emit a raspy guttural roar that extinguishes lights and overwhelms nearby enemies.
+  name: 枯萎波
+  description: 发出一声嘶哑低沉的咆哮，熄灭灯光并压制附近的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -822,8 +822,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenCyclone
   parent: ActionXenoBase
-  name: Cyclone
-  description: Channel briefly then spin in a devastating circle. Hit enough targets to trigger additional expanding spin cycles.
+  name: 气旋
+  description: 短暂引导后旋转，造成毁灭性的环形攻击。命中足够多的目标即可触发额外的扩散旋转循环。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -839,8 +839,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenMycotoxinInject
   parent: ActionXenoBase
-  name: Mycotoxin Injection
-  description: Skewer a dead target with your tail, injecting mycotoxin. They will rise again to serve the Confluence.
+  name: 真菌毒素注射
+  description: 用你的尾巴刺穿一个死亡目标，注入霉菌毒素。他们将再次站起，为汇流效力。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -860,8 +860,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenMycotoxinInjectMatriarch
   parent: CMU14ActionXenoPathogenMycotoxinInject
-  name: Mycotoxin Injection
-  description: Skewer a critically wounded or dead target with your tail, injecting mycotoxin. They will rise again to serve the Confluence.
+  name: 真菌毒素注射
+  description: 用尾巴刺穿重伤或死亡的目标，注入霉菌毒素。他们将再次站起，为汇流效力。
   components:
   - type: Action
     useDelay: 180
@@ -872,8 +872,8 @@
 - type: entity
   parent: ActionXenoStomp
   id: CMU14ActionXenoPathogenCrush
-  name: Crush (25)
-  description: Slam the ground with a 7x7 AOE, slowing down and disarming all enemies in range. Deals heavy damage to targets you are on top of.
+  name: 粉碎（25）
+  description: 以7x7范围重击地面，使范围内所有敌人减速并解除武装。对位于你正下方的目标造成大量伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -889,8 +889,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenDirectionalStomp
   parent: ActionXenoBase
-  name: Stomp (30)
-  description: Slam the ground in a cone in front of you, dealing heavy damage and knocking back all enemies caught in the blast.
+  name: 踩踏（30）
+  description: 在你面前锥形范围内猛击地面，造成大量伤害并击退爆炸范围内的所有敌人。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -910,8 +910,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenStomp
   parent: ActionXenoBase
-  name: Stomp (30)
-  description: Slam the ground with a 5x5 AOE, slowing down and disarming all enemies in range. Deals heavy damage to targets you are on top of.
+  name: 踩踏（30）
+  description: 以5x5范围效果猛击地面，减速并解除范围内所有敌人的武装。对位于你正下方的目标造成大量伤害。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -927,8 +927,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenImpale
-  name: Impale (80)
-  description: Impales an adjacent enemy with your tail. Hits twice on a marked target and removes the mark. Pierces armor.
+  name: 刺穿（80）
+  description: 用尾巴刺穿相邻的敌人。对带有标记的目标攻击两次并移除标记。穿透护甲。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -954,8 +954,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenSpikeShed
-  name: Spike Shed (all shards)
-  description: Shred all of your shards to launch them all in all directions around yourself. Lose the bonus armor in the process while also gaining a speed boost. This will disable you from gaining any shards for 30 seconds. Requires 50 shards minimum
+  name: 孢子脱落（所有碎片）
+  description: 将你所有的碎片向四周发射出去。在此过程中失去额外护甲，同时获得速度提升。这将使你在30秒内无法获得任何碎片。至少需要50个碎片。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -973,8 +973,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenBoneChips
   parent: ActionXenoBase
-  name: Bone Chips
-  description: Launch a projectile that will damage and slow down the first enemy it hits.
+  name: 骨片
+  description: 发射一枚投射物，对命中的第一个敌人造成伤害并使其减速。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -993,8 +993,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenHeadbite
-  name: Headbite
-  description: Instantly kills unconscious targets and heals you for 150 HP.
+  name: 首咬
+  description: 立即杀死失去意识的目标，并为你恢复150点生命值。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1016,8 +1016,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenDislocate
   parent: ActionXenoBase
-  name: Dislocate (55)
-  description: Punch a targeted enemy, doing some damage and pushing them back. If the target is slowed, stunned, downed, or rooted, instead roots and completely pierces armor. Reduces the cooldown of Abduct and Tail Lash.
+  name: 脱臼（55）
+  description: 拳击一个目标敌人，造成一定伤害并将其击退。如果目标被减速、眩晕、击倒或定身，则改为定身并完全穿透护甲。降低“绑架”和“尾鞭”的冷却时间。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1040,8 +1040,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenAbduct
-  name: Tentacle Grab
-  description: Cast out a line that after a small doafter pulls in enemies towards you, disarming them. Catching 1 target slows them, 2 roots them, and 3 or more stuns them.
+  name: 触手抓取
+  description: 抛出一条线，在短暂延迟后将敌人拉向自己并解除其武装。抓住1个目标会使其减速，2个目标会使其定身，3个或更多目标会使其眩晕。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -1063,8 +1063,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenScissorCut
-  name: Savage (25)
-  description: Cuts enemies and fences in a straight line. If Super-Empowered, slows enemies hit too.
+  name: 野蛮（25）
+  description: 沿直线切割敌人和栅栏。若处于超级强化状态，还会减速被击中的敌人。
   components:
   - type: Action
     itemIconStyle: NoItem

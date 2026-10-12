@@ -1,8 +1,8 @@
 - type: entity
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
-  name: DP-72 "Tachanka"
+  name: DP-72“机枪哥”
   id: RuMCMachineGunTachanka
-  description: Soviet-era 7.62x54R heavy machine gun. With a pan magazine and a heavy barrel. Reliable, but heavy.
+  description: 苏联时期的7.62x54R重机枪。配有弹盘和重型枪管。可靠，但很重。
   components:
   - type: Item
     size: Huge
@@ -57,7 +57,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        name: Magazine
+        name: 弹匣
         startingItem: RuMCMagazineTachankaLarge
         insertSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_reload.ogg
         ejectSound: /Audio/_RMC14/Weapons/Guns/Reload/smg_unload.ogg
@@ -101,8 +101,8 @@
 - type: entity
   parent: CMMagazineRifleBase
   id: RuMCMagazineTachanka
-  name: DP-72 pan magazine (7.62x54R)
-  description: A 47-round pan magazine for the DP-72 light machine gun.
+  name: DP-72盘式弹匣（7.62x54R）
+  description: 一把用于DP-72轻机枪的47发弹盘。
   components:
   - type: Tag
     tags:
@@ -131,8 +131,8 @@
 - type: entity
   parent: RuMCMagazineTachanka
   id: RuMCMagazineTracerTachanka
-  name: DP-72 pan magazine (7.62x54R Tracer)
-  description: A 47-round pan tracer magazine for the DP-72 light machine gun.
+  name: DP-72盘式弹匣（7.62x54R曳光弹）
+  description: DP-72轻机枪的47发弹盘曳光弹匣。
   components:
   - type: Tag
     tags:
@@ -162,8 +162,8 @@
 - type: entity
   parent: RuMCMagazineTachanka
   id: RuMCMagazineTachankaLarge
-  name: DP-72 extended pan magazine (7.62x54R)
-  description: An experimental 75-round pan magazine for the DP-72. Heavy, but holds more firepower.
+  name: DP-72 加长弹盘（7.62x54R）
+  description: DP-72的实验性75发弹盘。沉重，但火力更持久。
   components:
   - type: Tag
     tags:
@@ -188,8 +188,8 @@
 - type: entity
   parent: RuMCMagazineTachanka
   id: RuMCMagazineTachankaLargeTracer
-  name: DP-72 extended pan magazine (7.62x54R Tracer)
-  description: An experimental 75-round pan magazine for the DP-72. Heavy, but holds more firepower.
+  name: DP-72加长弹盘（7.62x54R曳光弹）
+  description: DP-72的实验性75发弹盘。沉重，但火力更持久。
   components:
   - type: Tag
     tags:
@@ -217,7 +217,7 @@
 - type: entity
   parent: RuMCCartridge762x54R
   id: RuMCCartridge762x54RTracer
-  name: 7.62x54R Tracer
+  name: 7.62x54R曳光弹
   components:
   - type: CartridgeAmmo
     proto: RuMCBullet762x54RTracer
@@ -259,7 +259,7 @@
 - type: entity
   parent: RuMCBullet762x54R
   id: RuMCBullet762x54RTracer
-  name: bullet (762x54R Tracer)
+  name: 子弹（762x54R曳光弹）
   categories: [ HideSpawnMenu ]
   components:
   - type: PointLight

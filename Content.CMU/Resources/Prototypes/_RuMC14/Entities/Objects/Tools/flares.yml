@@ -1,8 +1,8 @@
 - type: entity
   parent: CMFlare
   id: RuMCFlareWhite
-  name: RSP-1 signal flare
-  description: A standard-issue UPP signal flare. Pull the cord, and it burns with a bright white light. Used for illumination and marking positions.
+  name: RSP-1信号弹
+  description: 一种标准配发的UPP信号照明弹。拉动拉绳后，它会燃烧并发出明亮的白光。用于照明和标记位置。
   components:
   - type: Fixtures
     fixtures:
@@ -77,8 +77,8 @@
 - type: entity
   parent: RuMCFlareWhite
   id: RuMCFlareRedCAS
-  name: RSP-17 signal flare
-  description: A UPP signal flare with a bright red flame. Used to indicate targets or request support. Visible from long distances.
+  name: RSP-17信号弹
+  description: 一枚发出明亮红色火焰的UPP信号弹。用于指示目标或请求支援。可从远距离看到。
   components:
   - type: Tag
     tags:
@@ -141,8 +141,8 @@
 - type: entity
   parent: BaseItem
   id: RuMCFlareGreen
-  name: RSP-3 signal flare
-  description: A UPP signal flare with a green flame. Used for marking friendly positions or safe landing zones.
+  name: RSP-3信号弹
+  description: 一枚发出绿色火焰的UPP信号弹。用于标记友方位置或安全着陆区。
   components:
   - type: Fixtures
     fixtures:
@@ -220,8 +220,8 @@
   abstract: true
   parent: BaseItem
   id: RuMCPackFlareBase
-  name: RSP flare pack
-  description: A packet of eight RSP signal flares. Standard for UPP.
+  name: RSP 耀斑包
+  description: 一包八枚RSP信号弹。UPP的标准装备。
   components:
   - type: Item
     size: Normal
@@ -231,7 +231,7 @@
   - type: CMItemSlots
     count: 8
     slot:
-      name: Flare
+      name: 耀斑
       whitelist:
         tags:
         - RuMCFlare
@@ -262,8 +262,8 @@
 - type: entity
   parent: RuMCPackFlareBase
   id: RuMCPackFlareWhite
-  name: RSP white flare pack
-  description: A packet of eight RSP signal flares. Standard for UPP.
+  name: RSP白色信号弹包
+  description: 一包八枚RSP信号弹。UPP的标准装备。
   suffix: White, Filled
   components:
   - type: Tag
@@ -276,8 +276,8 @@
 - type: entity
   parent: RuMCPackFlareBase
   id: RuMCPackFlareRed
-  name: GRACH flare pack
-  description: A pack of eight GRACH flares. The flyer resembles an RSP in shape, but is made of metal parts. Standard for UPP.
+  name: GRACH 信号弹包
+  description: 一包八枚GRACH照明弹。其外形类似RSP，但由金属部件制成。为UPP的标准装备。
   suffix: Red, Filled
   components:
   - type: Tag
@@ -309,7 +309,7 @@
 - type: entity
   parent: RMCFlareBullet
   id: RuMCFlareWhiteBullet
-  name: RSP-1 flare projectile
+  name: RSP-1照明弹
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -327,7 +327,7 @@
 - type: entity
   parent: RMCAirFlare
   id: RuMCAirFlareWhite
-  name: air flare
+  name: 空中大回环
   categories: [ HideSpawnMenu ]
   components:
   - type: ExpendableLight
@@ -358,7 +358,7 @@
 - type: entity
   parent: RuMCFlareWhiteBullet
   id: RuMCFlareRedCASBullet
-  name: RSP-17 flare projectile
+  name: RSP-17照明弹
   categories: [ HideSpawnMenu ]
   components:
   - type: ScatteringGrenade
@@ -369,7 +369,7 @@
 - type: entity
   parent: RMCAirFlareCAS
   id: RuMCAirFlareRedCAS
-  name: air flare
+  name: 空中闪光
   categories: [ HideSpawnMenu ]
   components:
   - type: ExpendableLight
@@ -405,7 +405,7 @@
 - type: entity
   parent: RuMCFlareWhiteBullet
   id: RuMCFlareGreenBullet
-  name: RSP-3 flare projectile
+  name: RSP-3信号弹
   categories: [ HideSpawnMenu ]
   components:
   - type: ScatteringGrenade
@@ -416,7 +416,7 @@
 - type: entity
   parent: RMCAirFlare
   id: RuMCAirFlareGreen
-  name: air flare
+  name: 照明弹
   categories: [ HideSpawnMenu ]
   components:
   - type: ExpendableLight

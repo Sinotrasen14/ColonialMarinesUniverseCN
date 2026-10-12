@@ -1,9 +1,9 @@
 - type: entity
   parent: RMCGunRackBase
   id: CMUGunRackGenericEmpty
-  name: wall-mounted gun rack
+  name: 壁挂式枪架
   suffix: Generic, Two Guns, Empty
-  description: A wall-mounted rack with room for two firearms.
+  description: 一个壁挂式枪架，可容纳两支枪械。
   components:
   - type: Transform
     noRot: false
@@ -30,12 +30,12 @@
   - type: ItemSlots
     slots:
       item_1:
-        name: Gun
+        name: 枪
         whitelist:
           components:
           - Gun
       item_2:
-        name: Gun
+        name: 枪
         whitelist:
           components:
           - Gun

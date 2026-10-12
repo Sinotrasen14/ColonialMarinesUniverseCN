@@ -1,8 +1,8 @@
 - type: entity
   parent: Clothing
   id: AU14IDCardBaseCivilianNoIFF
-  name: identification holo-badge
-  description: A slice of encoded compressed fiber glass. Used for identification and access control.
+  name: 身份全息徽章
+  description: 一片编码压缩玻璃纤维。用于身份识别和门禁控制。
   categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
@@ -34,7 +34,7 @@
 - type: entity
   parent: CMIDCardBase
   id: AU14IDCardCLFCellLeader
-  name: CLF cell leader ID card
+  name: CLF小组组长ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCLFCellLeader
@@ -51,7 +51,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardCLFCivilian
-  name: CLF guerilla ID card
+  name: CLF游击队ID卡
   components:
   - type: Access
     groups:
@@ -66,7 +66,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardCLFPhysician
-  name: CLF physician ID card
+  name: CLF医师ID卡
   components:
   - type: Access
     groups:
@@ -82,7 +82,7 @@
 - type: entity
   parent: AU14IDCardCLFPhysician
   id: AU14IDCardCLFGeneralPractitioner
-  name: CLF general practitioner ID card
+  name: CLF全科医生ID卡
   components:
   - type: IdCard
     jobTitle: au14-job-name-civiliangeneralpractitioner
@@ -90,7 +90,7 @@
 - type: entity
   parent: AU14IDCardCLFPhysician
   id: AU14IDCardCLFPharmacist
-  name: CLF pharmacist ID card
+  name: CLF药剂师ID卡
   components:
   - type: IdCard
     jobTitle: au14-job-name-civilianpharmacist
@@ -98,7 +98,7 @@
 - type: entity
   parent: AU14IDCardCLFPhysician
   id: AU14IDCardCLFSurgeon
-  name: CLF surgeon ID card
+  name: CLF外科医生ID卡
   components:
   - type: IdCard
     jobTitle: au14-job-name-civiliansurgeon
@@ -106,7 +106,7 @@
 - type: entity
   parent: CMIDCardBase
   id: AU14IDCardMobBoss
-  name: Mob boss ID card
+  name: 生物首领ID卡
   components:
   - type: PresetIdCard
     job: AU14JobMobBoss
@@ -116,7 +116,7 @@
 - type: entity
   parent: CMIDCardBase
   id: AU14IDCardMobGoon
-  name: Mob goon ID card
+  name: 生物打手ID卡
   components:
   - type: PresetIdCard
     job: AU14JobMobGoon
@@ -127,8 +127,8 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardCorporateSpy
-  name: Lasalle Bionational ID card
-  description: A corporate identification badge with Lasalle Bionational branding. Grants access to Weyland-Yutani facilities.
+  name: 拉萨尔生物国家ID卡
+  description: 一张带有拉萨尔生物国家公司标识的企业身份卡。可进入韦兰-尤坦尼设施。
   components:
   - type: IdCard
     nameLocId: cm-access-id-card-component-owner-name-job-title-text
@@ -141,7 +141,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardCivilianScientist
-  name: scientist ID card
+  name: 科学家ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianScientist
@@ -153,7 +153,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyWorkingJoe
-  name: Working Joe ID card
+  name: Working Joe ID卡
   components:
   - type: PresetIdCard
     job: AU14JobColonyWorkingJoe
@@ -166,7 +166,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonySynthetic
-  name: colony operations synthetic ID card
+  name: 殖民地运营合成人ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianColonySynthetic
@@ -178,7 +178,7 @@
 - type: entity
   parent: AU14IDCardColonySynthetic
   id: AU14IDCardColonySyntheticEngineering
-  name: engineering colony synthetic ID card
+  name: 工程部聚居地合成ID卡
   components:
   - type: JobTitleChanger
     jobTitle: Engineering Colony Synthetic
@@ -186,7 +186,7 @@
 - type: entity
   parent: AU14IDCardColonySynthetic
   id: AU14IDCardColonySyntheticMedical
-  name: medical colony synthetic ID card
+  name: 医疗聚落合成ID卡
   components:
   - type: JobTitleChanger
     jobTitle: Medical Colony Synthetic
@@ -194,7 +194,7 @@
 - type: entity
   parent: AU14IDCardColonySynthetic
   id: AU14IDCardColonySyntheticCommand
-  name: colony administration advisor synthetic ID card
+  name: 殖民地行政顾问合成ID卡
   components:
   - type: JobTitleChanger
     jobTitle: Colony Administration Advisor Synthetic
@@ -202,7 +202,7 @@
 - type: entity
   parent: AU14IDCardColonySynthetic
   id: AU14IDCardColonySyntheticResearch
-  name: colony research synthetic ID card
+  name: 殖民地科研部合成ID卡
   components:
   - type: JobTitleChanger
     jobTitle: Colony Research Synthetic
@@ -211,7 +211,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyAdministrator
-  name: colony administrator ID card
+  name: 殖民地管理员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianColonyAdministrator
@@ -223,7 +223,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyCorporateLiaison
-  name: corporate liaison ID card
+  name: 公司联络员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianCorporateLiaison
@@ -234,7 +234,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardWYGuard
-  name: WY corporate security ID card
+  name: WY企业安保ID卡
   components:
   - type: PresetIdCard
     job: AU14JobWYGuard
@@ -245,7 +245,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: CMU14IDCardColonyProdigyLiaison
-  name: prodigy liaison ID card
+  name: 天才联络员ID卡
   components:
   - type: PresetIdCard
     job: CMU14JobCivilianProdigyLiaison
@@ -256,7 +256,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyForeman
-  name: foreman ID card
+  name: 工头ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianForeman
@@ -268,7 +268,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyHeadOfEngineering
-  name: head of engineering ID card
+  name: 工程部长ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianHeadOfEngineering
@@ -277,7 +277,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyFreightSystemsSpecialist
-  name: logistics specialist ID card
+  name: 物流专员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianFreightSystemsSpecialist
@@ -285,7 +285,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyEngineer
-  name: engineer ID card
+  name: 工程师ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianEngineer
@@ -293,7 +293,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: CMUIDCardCivilianAtmosian
-  name: atmospheric technician ID card
+  name: 大气技术员ID卡
   components:
   - type: PresetIdCard
     job: CMUJobCivilianAtmosian
@@ -301,7 +301,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyWasteManagementSpecialist
-  name: waste management ID card
+  name: 废物管理ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianWasteManagementSpecialist
@@ -309,7 +309,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyHeadOfService
-  name: head of service ID card
+  name: 服务部主管ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianHeadOfService
@@ -317,7 +317,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyPhysician
-  name: physician ID card
+  name: 医师ID卡
   components:
   - type: Access
     groups:
@@ -330,7 +330,7 @@
 - type: entity
   parent: AU14IDCardColonyPhysician
   id: AU14IDCardColonySurgeon
-  name: surgeon ID card
+  name: 外科医生ID卡
   components:
   - type: IdCard
     jobTitle: au14-job-name-civiliansurgeon
@@ -338,7 +338,7 @@
 - type: entity
   parent: AU14IDCardColonyPhysician
   id: AU14IDCardColonyGeneralPractitioner
-  name: general practitioner ID card
+  name: 全科医生ID卡
   components:
   - type: IdCard
     jobTitle: au14-job-name-civiliangeneralpractitioner
@@ -346,7 +346,7 @@
 - type: entity
   parent: AU14IDCardColonyPhysician
   id: AU14IDCardColonyPharmacist
-  name: pharmacist ID card
+  name: 药剂师ID卡
   components:
   - type: IdCard
     jobTitle: au14-job-name-civilianpharmacist
@@ -354,7 +354,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyHeadPhysician
-  name: head physician ID card
+  name: 主任医师ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianHeadPhysician
@@ -362,7 +362,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyNurse
-  name: nurse ID card
+  name: 护士ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianNurse
@@ -370,7 +370,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyEthicsAndWellnessAdvisor
-  name: psychologist ID card
+  name: 心理学家ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianEthicsAndWellnessAdvisor
@@ -378,7 +378,7 @@
 - type: entity
   parent: AU14IDCardColonyEthicsAndWellnessAdvisor
   id: CMUIDCardColonyTherapist
-  name: therapist ID card
+  name: 治疗师ID卡
   components:
   - type: JobTitleChanger
     jobTitle: Therapist
@@ -386,7 +386,7 @@
 - type: entity
   parent: AU14IDCardColonyEthicsAndWellnessAdvisor
   id: CMUIDCardColonyPsychiatrist
-  name: psychiatrist ID card
+  name: 精神科医生ID卡
   components:
   - type: JobTitleChanger
     jobTitle: Psychiatrist
@@ -394,7 +394,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyEmergencyResponseOfficer
-  name: paramedic ID card
+  name: 急救员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianEmergencyResponseOfficer
@@ -402,7 +402,7 @@
 - type: entity
   parent: AU14IDCardColonyEmergencyResponseOfficer
   id: AU14IDCardColonyEmergencyResponseOfficerFirefighter
-  name: firefighter ID card
+  name: 消防员ID卡
   components:
   - type: JobTitleChanger
     jobTitle: Firefighter
@@ -411,7 +411,7 @@
 - type: entity
   parent: CMIDCardBase
   id: AU14IDCardColonyColonist
-  name: colonist ID card
+  name: 殖民者ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianColonist
@@ -421,7 +421,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardFoodServiceWorker
-  name: food service worker ID card
+  name: 食品服务部工作人员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianFoodServiceWorker
@@ -429,7 +429,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyShopkeep
-  name: shopkeep ID card
+  name: 店主ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianShopkeep
@@ -437,7 +437,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyJournalist
-  name: journalist ID card
+  name: 记者ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianJournalist
@@ -445,7 +445,7 @@
 - type: entity
   parent: AU14IDCardColonyJournalist
   id: AU14IDCardColonyJournalistIndependent
-  name: independent journalist ID card
+  name: 独立记者ID卡
   components:
   - type: JobTitleChanger
     jobTitle: Independent Journalist
@@ -453,7 +453,7 @@
 - type: entity
   parent: AU14IDCardColonyJournalist
   id: AU14IDCardColonyJournalistFreePress
-  name: free press journalist ID card
+  name: 自由新闻记者ID卡
   components:
   - type: JobTitleChanger
     jobTitle: Free Press Journalist
@@ -461,7 +461,7 @@
 - type: entity
   parent: AU14IDCardColonyJournalist
   id: AU14IDCardColonyJournalistPhotojournalist
-  name: photojournalist ID card
+  name: 摄影记者ID卡
   components:
   - type: JobTitleChanger
     jobTitle: Photo Journalist
@@ -469,7 +469,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyUSASFRecruiter
-  name: USASF Recruiter ID card
+  name: USASF招募官ID卡
   components:
   - type: JobTitleChanger
     jobTitle: USASF Recruiter
@@ -479,7 +479,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyUSASFRecruiterMarines
-  name: USCM Recruiter ID card
+  name: USCM征兵官ID卡
   components:
   - type: JobTitleChanger
     jobTitle: USMC Recruiter
@@ -487,7 +487,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyUSASFRecruiterUSArmy
-  name: US Army Recruiter ID card
+  name: 美国陆军征兵官ID卡
   components:
   - type: JobTitleChanger
     jobTitle: US Army Recruiter
@@ -495,7 +495,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardColonyUSASFRecruiterCCAF
-  name: CCAF Recruiter ID card
+  name: CCAF招募员ID卡
   components:
   - type: JobTitleChanger
     jobTitle: CCAF Recruiter
@@ -540,7 +540,7 @@
 - type: entity
   parent: AU14IDCardColonyLEOLeader
   id: AU14IDCardColonyCMBMarshal
-  name: CMB marshal ID card
+  name: CMB执法官ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianCMBMarshal
@@ -548,7 +548,7 @@
 - type: entity
   parent: AU14IDCardColonyLEO
   id: AU14IDCardColonyCMBDeputy
-  name: CMB deputy ID card
+  name: CMB副主任ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianCMBDeputy
@@ -556,7 +556,7 @@
 - type: entity
   parent: AU14IDCardColonyLEO
   id: AU14IDCardcivilianCWPSranger
-  name: CWPS ranger ID card
+  name: CWPS 游骑兵 ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianCWPSRanger
@@ -564,7 +564,7 @@
 - type: entity
   parent: AU14IDCardColonyLEOLeader
   id: AU14IDCardColonyNSPAInspector
-  name: NSPA inspector ID card
+  name: NSPA检查员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianNSPAInspector
@@ -572,7 +572,7 @@
 - type: entity
   parent: AU14IDCardColonyLEO
   id: AU14IDCardCivilianNSPAConstable
-  name: NSPA constable ID card
+  name: NSPA警员ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianNSPAConstable
@@ -580,7 +580,7 @@
 - type: entity
   parent: AU14IDCardColonyLEO
   id: AU14IDCardcivilianPaPOfficer
-  name: PAP officer ID card
+  name: PAP警官ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianPaPOfficer
@@ -588,7 +588,7 @@
 - type: entity
   parent: AU14IDCardColonyLEO
   id: AU14IDCardCivilianKellandWarden
-  name: Warden ID card
+  name: 典狱长ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCivilianKellandWarden
@@ -597,8 +597,8 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: CMUIDCardWYAgent
-  name: Weyland-Yutani ID card
-  description: A corporate identification badge with Weyland-Yutani branding. Grants access to company facilities.
+  name: 韦兰-尤塔尼ID卡
+  description: 一张带有韦兰-尤坦尼品牌标识的公司身份徽章。可进入公司设施。
   components:
   - type: IdCard
     nameLocId: cm-access-id-card-component-owner-name-job-title-text

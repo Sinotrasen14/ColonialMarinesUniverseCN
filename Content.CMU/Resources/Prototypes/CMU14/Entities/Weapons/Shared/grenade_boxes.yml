@@ -6,8 +6,8 @@
   abstract: true
   parent: BaseStorageItem
   id: CMUBoxGrenadeBase
-  name: grenade box
-  description: A secure box holding grenades.
+  name: 手雷箱
+  description: 一个装有手榴弹的安全箱。
   components:
   - type: Item
     size: Huge
@@ -26,8 +26,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeHEDP
-  name: M40 HEDP grenade box
-  description: A secure box holding 25 M40 High-Explosive Dual-Purpose grenades. Highly explosive, keep it away from flamer fuel.
+  name: M40高爆双用途手榴弹箱
+  description: 一个安全箱，内含25枚M40高爆双用途手榴弹。极易爆炸，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -77,8 +77,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeHEFA
-  name: M40 HEFA grenade box
-  description: A secure box holding 25 M40 High-Explosive Fragmenting-Antipersonnel grenades. Highly explosive, keep it away from flamer fuel.
+  name: M40 HEFA 手榴弹箱
+  description: 一个安全箱，内装25枚M40高爆杀伤破片手榴弹。极易爆炸，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -128,8 +128,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeM15
-  name: M15 frag grenade box
-  description: A secure box holding 25 older M15 fragmentation grenades. Highly explosive, keep it away from flamer fuel.
+  name: M15破片手榴弹箱
+  description: 一个安全箱，内装25枚较旧的M15破片手榴弹。极易爆炸，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -179,8 +179,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeHEAP
-  name: M38 HEAP grenade box
-  description: A secure box holding 25 M38 High-Explosive Armour-Piercing grenades. Highly explosive, keep it away from flamer fuel.
+  name: M38 高爆穿甲弹箱
+  description: 一个安全箱，内含25枚M38高爆穿甲手榴弹。极易爆炸，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -230,8 +230,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeBFAB
-  name: M51A BFAB grenade box
-  description: A secure box holding 25 M51A Bounding Fragmentation Air-Burst grenades. Highly explosive, keep it away from flamer fuel.
+  name: M51A BFAB手榴弹箱
+  description: 一个安全箱，内含25枚M51A跳跃破片空爆手雷。高爆炸性，远离火焰燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -281,8 +281,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeCanister
-  name: M108 canister grenade box
-  description: A secure box holding 25 M108 canister grenades. Flammable, keep it away from flamer fuel.
+  name: M108气罐手榴弹箱
+  description: 一个安全箱，内装25枚M108气罐榴弹。易燃，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -332,8 +332,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeHIAM
-  name: M77 HIAM grenade box
-  description: A secure box holding 25 M77 High-explosive Incendiary Anti-Mobility grenades. Highly flammable, keep it away from flamer fuel.
+  name: M77 HIAM手榴弹箱
+  description: 一个安全箱，内含25枚M77高爆燃烧反机动手榴弹。高度易燃，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -383,8 +383,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeWPSI
-  name: M60 WPSI grenade box
-  description: A secure box holding 25 M60 White-Phosphorus Smoke/Incendiary grenades. Highly flammable and explosive, keep it away from flamer fuel.
+  name: M60 WPSI手榴弹箱
+  description: 一个安全箱，内装25枚M60白磷烟雾/燃烧手雷。高度易燃易爆，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -434,8 +434,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeSmoke
-  name: M47 HSDP grenade box
-  description: A secure box holding 25 M47 High-density Smoke Dual-Purpose grenades. Flammable, keep it away from flamer fuel.
+  name: M47 HSDP手榴弹箱
+  description: 一个安全箱，内含25枚M47高密度烟雾双用途手雷。易燃，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -485,8 +485,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeSmokeGreen
-  name: M47-G HSDP grenade box
-  description: A secure box holding 25 M47-G green signal smoke grenades. Flammable, keep it away from flamer fuel.
+  name: M47-G HSDP 手榴弹箱
+  description: 一个安全箱，内含25枚M47-G绿色信号烟雾弹。易燃，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -536,8 +536,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeSmokeRed
-  name: M47-R HSDP grenade box
-  description: A secure box holding 25 M47-R red signal smoke grenades. Flammable, keep it away from flamer fuel.
+  name: M47-R HSDP手榴弹箱
+  description: 一个安全箱，内含25枚M47-R红色信号烟雾弹。易燃，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -587,8 +587,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeMFHS
-  name: M42 MFHS grenade box
-  description: A secure box holding 25 M42 Metal-Foam Hull-Sealant grenades. Flammable, keep it away from flamer fuel.
+  name: M42 MFHS手榴弹箱
+  description: 一个安全箱，内含25枚M42金属泡沫船体密封手雷。易燃，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -638,8 +638,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeTraining
-  name: M07 training grenade box
-  description: A secure box holding 25 M07 training grenades. Harmless and reusable.
+  name: M07训练手榴弹箱
+  description: 一个安全箱，内含25枚M07训练手雷。无害且可重复使用。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -690,8 +690,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeElectroshock
-  name: G2 electroshock grenade box
-  description: "A secure box holding 25 G2 electroshock grenades. Keep it away from sensitive electronics, and out from under your CO's bed."
+  name: G2电击手雷箱
+  description: "一个安全箱，内装25枚G2电击手雷。请远离敏感电子设备，也不要放在长官的床底下。"
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -741,8 +741,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeAGMF
-  name: M74 AGM-F grenade box
-  description: A secure box holding 25 M74 Airburst Grenade Munition fragmentation grenades. Explosive, keep it away from flamer fuel.
+  name: M74 AGM-F手榴弹箱
+  description: 一个安全箱，内含25枚M74空爆榴弹杀伤破片手雷。易爆，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -792,8 +792,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeAGMI
-  name: M74 AGM-I grenade box
-  description: A secure box holding 25 M74 Airburst Grenade Munition incendiary grenades. Highly flammable, keep it away from flamer fuel.
+  name: M74 AGM-I 手榴弹箱
+  description: 一个安全箱，内含25枚M74空爆燃烧榴弹。高度易燃，请远离火焰喷射器燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -843,8 +843,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeAGMS
-  name: M74 AGM-S grenade box
-  description: A secure box holding 25 M74 Airburst Grenade Munition smoke grenades. Explosive, keep it away from flamer fuel.
+  name: M74 AGM-S手榴弹箱
+  description: 一个安全箱，内含25枚M74空爆榴弹烟雾弹。易爆，请远离火焰燃料。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -894,8 +894,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeType6
-  name: Type 6 grenade box
-  description: A secure box holding 12 Type 6 fragmentation grenades. Make sure the pins are in before taking them out of the box.
+  name: 6型手榴弹箱
+  description: 一个安全箱，内装12枚6型破片手榴弹。取出前请确保插销已插好。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -945,8 +945,8 @@
 - type: entity
   parent: CMUBoxGrenadeBase
   id: CMUBoxGrenadeRDG17
-  name: RDG-17 smoke grenade box
-  description: A secure box holding 12 RDG-17 smoke grenades. Make sure the pins are in before taking them out of the box.
+  name: RDG-17烟雾弹箱
+  description: 一个装有12枚RDG-17烟雾弹的安全箱。从箱中取出前，请确保保险销已插好。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Throwable/Grenades/boxes.rsi
@@ -997,7 +997,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxHEDP
-  name: M40 HEDP grenade box crate (x25)
+  name: M40高爆双用途榴弹盒板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1006,7 +1006,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxHEFA
-  name: M40 HEFA grenade box crate (x25)
+  name: M40 HEFA手榴弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1015,7 +1015,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxM15
-  name: M15 frag grenade box crate (x25)
+  name: M15破片手榴弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1024,7 +1024,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxHEAP
-  name: M38 HEAP grenade box crate (x25)
+  name: M38 高爆反装甲手榴弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1033,7 +1033,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxBFAB
-  name: M51A BFAB grenade box crate (x25)
+  name: M51A BFAB 手榴弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1042,7 +1042,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxCanister
-  name: M108 canister grenade box crate (x25)
+  name: M108气罐榴弹板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1051,7 +1051,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxHIAM
-  name: M77 HIAM grenade box crate (x25)
+  name: M77 HIAM 手榴弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1060,7 +1060,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxWPSI
-  name: M60 WPSI grenade box crate (x25)
+  name: M60 WPSI榴弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1069,7 +1069,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxSmoke
-  name: M47 HSDP smoke grenade box crate (x25)
+  name: M47 HSDP烟雾弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1078,7 +1078,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxSmokeGreen
-  name: M47-G HSDP green smoke grenade box crate (x25)
+  name: M47-G HSDP 绿色烟雾手榴弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1087,7 +1087,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxSmokeRed
-  name: M47-R HSDP red smoke grenade box crate (x25)
+  name: M47-R HSDP 红色烟雾弹盒板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1096,7 +1096,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxMFHS
-  name: M42 MFHS grenade box crate (x25)
+  name: M42 MFHS 手榴弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1105,7 +1105,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxElectroshock
-  name: G2 electroshock grenade box crate (x25)
+  name: G2电击手雷箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1114,7 +1114,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxAGMF
-  name: M74 AGM-F 40mm frag grenade box crate (x25)
+  name: M74 AGM-F 40毫米破片手榴弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1123,7 +1123,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxAGMI
-  name: M74 AGM-I 40mm incendiary grenade box crate (x25)
+  name: M74 AGM-I 40mm燃烧弹箱板条箱（x25）
   components:
   - type: StorageFill
     contents:
@@ -1132,7 +1132,7 @@
 - type: entity
   parent: RMCCrateExplosives
   id: CMUCrateGrenadeBoxAGMS
-  name: M74 AGM-S 40mm smoke grenade box crate (x25)
+  name: M74 AGM-S 40mm烟雾弹盒板条箱（x25）
   components:
   - type: StorageFill
     contents:

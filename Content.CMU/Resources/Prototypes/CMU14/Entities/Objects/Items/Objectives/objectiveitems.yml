@@ -1,8 +1,8 @@
 - type: entity
   parent: BaseItem
   id: AU14ObjectiveItemPortableRadioTransceiver
-  name: "AN/PRC-982 portable radio transceiver box"
-  description: A gray radio box that is used to receive long-range communications. It also records all radio traffic it receives.
+  name: "AN/PRC-982便携式无线电收发两用机箱"
+  description: 一个灰色的无线电盒，用于接收远程通信。它还会记录其接收到的所有无线电通信内容。
   components:
   - type: IntelDetectorTracked # objective items show on intel detectors
   - type: Item
@@ -16,8 +16,8 @@
 - type: entity
   parent: BaseItem
   id: AU14ObjectiveItemBlackboxRecorder
-  name: "CIR-60 'blackbox' colony information recorder"
-  description: A small red box that records colony announcements, colonist flatlines and other key readouts. Usually refered to the black box, although this one comes in bloody red.
+  name: "CIR-60“黑匣子”殖民地信息记录仪"
+  description: 一个记录殖民地公告、殖民者死亡以及其他关键读数的小红盒。通常被称为黑匣子，尽管这个盒子是血红色的。
   components:
   - type: CMUIntelSurveyOnAnalyze # prints the top intel areas when recovered at an Analyzer
   - type: IntelDetectorTracked # objective items show on intel detectors
@@ -32,8 +32,8 @@
 - type: entity
   parent: BaseItem
   id: AU14ObjectiveItemAtmosphericRadarStorageUnit
-  name: "ARCS-9 atmospheric radar data storage unit"
-  description: A black data box that is used to store information from atmospheric radar arrays.
+  name: "ARCS-9大气雷达数据存储单元"
+  description: 一个用于存储大气雷达阵列信息的黑色数据盒。
   components:
   - type: IntelDetectorTracked # objective items show on intel detectors
   - type: Item
@@ -47,8 +47,8 @@
 - type: entity
   parent: BaseItem
   id: AU14ObjectiveItemWYLaptop
-  name: Weyland-Yutani Research Laptop
-  description: A portable computer containing research data from Weyland-Yutani. Password protected and encrypted, this will take a lot to crack.
+  name: 维兰德-汤谷科研部笔记本电脑
+  description: 一台便携式计算机，内含韦兰-尤坦尼公司的科研部数据。设有密码保护并经过加密，破解起来要费不少功夫。
   components:
   - type: IntelDetectorTracked # objective items show on intel detectors
   - type: Item
@@ -62,8 +62,8 @@
 - type: entity
   parent: BaseItem
   id: AU14ObjectiveItemTheaterHandbook
-  name: Theater Operations Handbook
-  description: A highly classified book containing the battle plans of a major faction within the current theater of war.
+  name: 剧场行动手册
+  description: 一本高度机密的书籍，内含当前战区中某个主要派系的作战计划。
   components:
   - type: IntelDetectorTracked # objective items show on intel detectors
   - type: Item
@@ -77,8 +77,8 @@
 - type: entity
   parent: BaseItem
   id: AU14ObjectiveItemNuclearLaunchCodes
-  name: Nuclear Launch Codes Booklet
-  description: A highly classified book containing nuclear launch codes.
+  name: 核发射密码手册
+  description: 一本高度机密的书籍，内含核发射密码。
   components:
   - type: IntelDetectorTracked # objective items show on intel detectors
   - type: Item
@@ -92,8 +92,8 @@
 - type: entity
   id: AU14ObjectiveItemAIProcessor
   parent: RMCAICoreProcessor
-  name: AI Processor
-  description: An external processor for an AI, used to process vast amounts of information.
+  name: AI处理器
+  description: 一个用于AI的外部处理器，用于处理海量信息。
   placement:
     mode: SnapgridCenter
   components:
@@ -151,8 +151,8 @@
 - type: entity
   id: AU14ObjectiveItemHackableComputer
   parent: BaseItem
-  name: "field operations computer"
-  description: A ruggedized military laptop containing encrypted communications data. It can be hacked to extract critical intelligence.
+  name: "外勤操作计算机"
+  description: 一台加固型军用笔记本电脑，内含加密通信数据。可对其进行黑客攻击以提取关键情报。
   components:
   - type: IntelDetectorTracked # objective items show on intel detectors
   - type: Item
