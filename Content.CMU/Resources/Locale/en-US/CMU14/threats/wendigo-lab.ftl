@@ -31,44 +31,37 @@ cmu-wendigo-lab-mutation-warning-3 = 你的皮肤正在撕裂！
 cmu-wendigo-lab-mutation-warning-4 = 你再也感觉不到自己的边界在哪里！
 cmu-wendigo-lab-mutation-others = {CAPITALIZE(THE($subject))}的身体扭曲伸展，剧烈挣扎！
 
-<<<<<<< HEAD
+cmu-wendigo-lab-window-closing = 你内心的某些东西开始消退了。感觉好像有什么事情很快就得发生。
+cmu-wendigo-lab-window-closing-others = {CAPITALIZE(THE($subject))} 下垂并且变苍白。不管发生了什么，他们都在渐渐消失！
+cmu-wendigo-lab-window-missed = 你内心的某些东西在枯萎。变化又回去了。
+cmu-wendigo-lab-window-missed-others = {CAPITALIZE(THE($subject))} 当变化倒退时，他干呕并颤抖！
+
+cmu-wendigo-lab-instability = 你的肉在蠕动和抽搐。感觉好像哪里出了问题。 (不稳定 {$level}/{$max})
+cmu-wendigo-lab-instability-others = {CAPITALIZE(THE($subject))}的皮肤不自然地起皱纹。发生什么事了！ (不稳定 {$level}/{$max})
+cmu-wendigo-lab-instability-severe = 你的身体正在自我撕裂！一定出了大问题。 (不稳定 {$level}/{$max})
+cmu-wendigo-lab-instability-severe-others = {CAPITALIZE(THE($subject))}的肉会裂开又重新缝合。他们看起来极不稳定！ (不稳定 {$level}/{$max})
+cmu-wendigo-lab-collapse = 你的身体顶不住了。变化太大了。
+cmu-wendigo-lab-collapse-others = {CAPITALIZE(THE($subject))}的身体最后抽搐了一下，然后倒了下去！
+cmu-wendigo-lab-bond-failed-others = {CAPITALIZE(THE($subject))}的眼睛瞪大了。训练没有起作用！
+cmu-wendigo-lab-examine-unstable = [color=#b03a2e]他们的皮肤在奇怪的地方抽动和起伏。[/color]
+cmu-wendigo-lab-examine-unstable-severe = [color=#b03a2e][bold]他们的肉明显在裂开又重新接合！[/bold][/color]
+
+cmu-wendigo-lab-stage-fed1 = 阶段 I
+cmu-wendigo-lab-stage-fed2 = 阶段 II
+cmu-wendigo-lab-stage-mutagen = 阶段 III
+cmu-wendigo-lab-stage-gestation = 阶段 IV
+cmu-wendigo-lab-stage-mutating = 阶段 V
+cmu-wendigo-lab-scanner-developing = 开发中 ({$time})
+cmu-wendigo-lab-scanner-ready = Reactive
+cmu-wendigo-lab-scanner-mutating = 急性突变
+cmu-wendigo-lab-scanner = 突变性转化: {$stage} ({$progress}%)
+    {$status}
+    不稳定: {$instability}/{$max}
+
 cmu-wendigo-lab-briefing = 你的意识模糊，记忆交融在一起，你已经变成了一个温迪戈。一具扭曲的、你曾经模样的烧焦躯壳。持续的饥饿啃噬着你的内脏，去喂饱它。
 cmu-wendigo-lab-briefing-tamed = 你的意识模糊，记忆交融扭曲，思考能力逐渐衰退。你已经变成了一个温迪戈。一具扭曲的、你曾经模样的烧焦躯壳。持续的饥饿啃噬着你的内脏，但你感到被迫听从{$master}。
 cmu-wendigo-lab-transformed-others = {$subject}的身体撕裂开来，变成一个高耸的苍白生物！
 cmu-wendigo-lab-unknown-master = 制造你的那个人
-=======
-cmu-wendigo-lab-window-closing = Something inside you is starting to fade. It feels like something needs to happen soon.
-cmu-wendigo-lab-window-closing-others = {CAPITALIZE(THE($subject))} sags and pales. Whatever is happening to them is slipping away!
-cmu-wendigo-lab-window-missed = Something inside you withers. The change slips back.
-cmu-wendigo-lab-window-missed-others = {CAPITALIZE(THE($subject))} retches and shudders as the change slips back!
-
-cmu-wendigo-lab-instability = Your flesh crawls and spasms. It feels like something went wrong. (Instability {$level}/{$max})
-cmu-wendigo-lab-instability-others = {CAPITALIZE(THE($subject))}'s skin ripples unnaturally. Something has gone wrong! (Instability {$level}/{$max})
-cmu-wendigo-lab-instability-severe = Your body is tearing itself apart! Something is very wrong. (Instability {$level}/{$max})
-cmu-wendigo-lab-instability-severe-others = {CAPITALIZE(THE($subject))}'s flesh splits and knits back together. They look dangerously unstable! (Instability {$level}/{$max})
-cmu-wendigo-lab-collapse = Your body gives out. The change was too much.
-cmu-wendigo-lab-collapse-others = {CAPITALIZE(THE($subject))}'s body convulses one last time and collapses!
-cmu-wendigo-lab-bond-failed-others = {CAPITALIZE(THE($subject))}'s eyes go wild. The conditioning did not take!
-cmu-wendigo-lab-examine-unstable = [color=#b03a2e]Their skin twitches and ripples in odd places.[/color]
-cmu-wendigo-lab-examine-unstable-severe = [color=#b03a2e][bold]Their flesh is visibly splitting and knitting back together![/bold][/color]
-
-cmu-wendigo-lab-stage-fed1 = Phase I
-cmu-wendigo-lab-stage-fed2 = Phase II
-cmu-wendigo-lab-stage-mutagen = Phase III
-cmu-wendigo-lab-stage-gestation = Phase IV
-cmu-wendigo-lab-stage-mutating = Phase V
-cmu-wendigo-lab-scanner-developing = Developing ({$time})
-cmu-wendigo-lab-scanner-ready = Reactive
-cmu-wendigo-lab-scanner-mutating = Acute mutation
-cmu-wendigo-lab-scanner = Mutagenic transformation: {$stage} ({$progress}%)
-    {$status}
-    Instability: {$instability}/{$max}
-
-cmu-wendigo-lab-briefing = Your mind blurs and your memories meld together, you have become a Wendigo. A twisted husk of what you once were. A constant hunger gnaws at your insides, feed it.
-cmu-wendigo-lab-briefing-tamed = Your mind blurs, your memories meld and twist as your ability to think wanes. You have become a Wendigo. A twisted husk of what you once were. A constant hunger gnaws at your insides, but you feel compelled to listen to {$master}.
-cmu-wendigo-lab-transformed-others = {$subject}'s body tears apart into a towering, pale creature!
-cmu-wendigo-lab-unknown-master = whoever made you
->>>>>>> upstream
 
 cmu-wendigo-lab-examine-ready = [color=#b03a2e]他们在颤抖，面色苍白。有什么东西正在改变。[/color]
 cmu-wendigo-lab-examine-mutating = [color=#b03a2e][bold]他们的身体正在扭曲成别的东西！[/bold][/color]
