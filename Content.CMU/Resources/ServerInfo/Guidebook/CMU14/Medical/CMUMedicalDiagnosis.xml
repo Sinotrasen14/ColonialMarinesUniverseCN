@@ -1,7 +1,7 @@
 <Document>
   # Diagnosis
 
-  Before you can treat a patient you need to know what's wrong. How much you can see depends on your medical training.
+  在你治疗病人之前，你需要知道出了什么问题。你能看出多少取决于你的医学训练。
 
   <Box>
     <GuideEntityEmbed Entity="CMHealthAnalyzer" Caption="Health analyzer"/>
@@ -9,68 +9,68 @@
   </Box>
 
   ## Looking at the Patient
-  - [bold]Examining[/bold] someone shows their visible wounds and fractures, and which body part each one is on.
-  - [bold]Inspect injuries[/bold]: right-click a patient and choose Inspect injuries to take a closer look. After a short check you get an injury report listing each body part's wounds and how badly they're bleeding. You can bind a key to this under [bold]CMU Medical[/bold] in the controls menu.
+  - [bold]检查[/bold] 有人展示他们可见的伤口和骨折，以及每个伤口或骨折位于身体的哪个部位。
+  - [bold]检查受伤情况[/bold]: 右键点击一个病人并选择“检查伤害”以进行仔细查看。短暂检查后，你会得到一份伤情报告，列出每个身体部位的伤口及出血情况。你可以在控制菜单的[bold]CMU医疗[/bold]下为此绑定一个按键。
 
   ## The Health Analyzer
-  Use it on a patient to open a full scan.
-  - [bold]Top bar[/bold]: overall health, pulse, blood level, temperature and shock risk, with a status of stable, serious, critical or deceased.
-  - [bold]Body[/bold]: each body part's health, with its wounds, bleeding, embedded shrapnel, eschar, splints, casts and tourniquets.
-  - [bold]Bleeding[/bold]: with basic medical training, the scan shows how bad each bleed is (minor, moderate, severe or [color=red]arterial[/color]), on the blood readout and on each bleeding body part. A missing limb's row shows whether its stump is bleeding arterially or has a tourniquet on it.
-  - [bold]Fractures and internal bleeding[/bold]: need basic medical training. With more training it tells you the exact fracture severity and where the bleeding is.
-  - [bold]Organs[/bold]: need a trained medic. Each organ shows its stage (healthy, bruised, damaged, failing or dead) and health.
-  - [bold]Pain[/bold]: the patient's pain level and how close they are to pain shock.
-  - For a dead patient it also shows roughly how many minutes are left before they can no longer be brought back.
+  在患者身上使用它以打开完整扫描。
+  - [bold]顶部栏[/bold]：整体健康、脉搏、血量、体温和休克风险，状态包括稳定、严重、危急或死亡。
+  - [bold]身体[/bold]：每个身体部位的健康状况，包括伤口、出血、嵌入的弹片、坏疽、夹板、石膏和止血带。
+  - [bold]出血[/bold]：具有基本医疗训练时，扫描显示每处出血的严重程度（轻微、中度、严重或[color=red]动脉[/color]），在血量读数和每个出血部位显示。缺失的肢体行显示其残肢是否动脉出血或有止血带。
+  - [bold]骨折和内出血[/bold]：需要基本医疗训练。通过更多训练，可显示确切的骨折严重程度和出血部位。
+  - [bold]器官[/bold]：需要专业医疗人员。每个器官显示其状态（健康、淤伤、受损、功能衰竭或死亡）及健康程度。
+  - [bold]疼痛[/bold]：病人的疼痛水平以及接近疼痛休克的程度。
+  - 对于已经死亡的患者，它还大致显示了在无法再挽救之前还剩多少分钟。
 
-  If the analyzer can't show something because of your training, it says so, so you know to find someone more qualified rather than assuming the patient is fine.
+  如果分析仪因为你的培训而无法显示某些内容，它会提示你，这样你就知道要找更有资格的人，而不是假设患者没事。
 
   ## Damage Types
-  The analyzer breaks a patient's damage down by type. Each group heals differently, so knowing which one you're looking at tells you what to reach for.
+  分析器会按类型将患者的伤害分解。每种类型的恢复方式不同，所以知道你在看哪一种类型可以告诉你该采取什么措施。
 
-  [bold]Brute[/bold]: blunt, slash and piercing. Punches, claws, blades and bullets.
-  - Dress the wounds with gauze or a trauma kit, then heal with [bold]bicaridine[/bold].
-  - Heavy brute damage can also break bones and cause internal bleeding.
-  - See [textlink="Brute Medications" link="CMUGuideMedsBrute"].
+  [bold]创伤[/bold]: 钝的、劈砍和穿刺。拳头、爪子、刀刃和子弹。
+  - 用纱布或急救包包扎伤口，然后用 [bold]bicaridine[/bold]进行治疗.
+  - 沉重的暴力伤害也可能导致骨折和内出血。
+  - 见 [textlink="Brute Medications" link="CMUGuideMedsBrute"].
 
-  [bold]Burn[/bold]: heat, shock, cold and caustic. Fire, electricity, freezing and acid.
-  - Treat the burns with ointment or a burn kit, then heal with [bold]kelotane[/bold] or the stronger [bold]dermaline[/bold].
-  - A big burn in one hit can leave eschar. See [textlink="Wounds and Bleeding" link="CMUGuideMedicalWounds"].
-  - See [textlink="Burn Medications" link="CMUGuideMedsBurn"].
+  [bold]烧伤[/bold]: 热、冲击、寒冷和腐蚀性。火、电、冻结和酸。
+  - 用药膏或烧伤套件处理烧伤，然后用[bold]kelotane[/bold]或更强效的药物愈合[bold]dermaline[/bold].
+  - 一次重击的严重烧伤可能会留下烧痂。见 [textlink="Wounds and Bleeding" link="CMUGuideMedicalWounds"].
+  - 见 [textlink="Burn Medications" link="CMUGuideMedsBurn"].
 
-  [bold]Toxin[/bold]: poison and radiation. Toxic chemicals, overdoses, failing organs and radiation.
-  - Heal with [bold]dylovene[/bold], which also clears hallucinations.
-  - Keep an eye on the liver and kidneys, which filter toxins and get damaged by them. See [textlink="Organs" link="CMUGuideMedicalOrgans"].
-  - See [textlink="Toxin Medications" link="CMUGuideMedsToxin"].
+  [bold]毒素[/bold]: 毒药和辐射。有毒化学品、过量服用、器官衰竭和辐射。
+  - 用[bold]dylovene[/bold]治疗，它也能清除幻觉。
+  - 注意肝脏和肾脏，它们过滤毒素并可能被毒素损害。见 [textlink="Organs" link="CMUGuideMedicalOrgans"].
+  - 见 [textlink="Toxin Medications" link="CMUGuideMedsToxin"].
 
-  [bold]Suffocation[/bold]: asphyxiation and blood loss. Not breathing, damaged lungs, a stopped heart, or bleeding out.
-  - Heal with [bold]dexalin[/bold], and breathe from an oxygen tank to recover three times as fast.
-  - Blood loss won't go away until the blood is replaced. Stop the bleeding and give blood.
-  - See [textlink="Suffocation Medications" link="CMUGuideMedsSuffocation"].
+  [bold]窒息[/bold]: 窒息和失血。停止呼吸、肺部受损、心脏停止跳动或大量失血。
+  - 使用 [bold]dexalin[/bold] 治疗，并从氧气罐吸氧以恢复三倍速度。
+  - 失血不会自行消失，除非血液被补充。止血并输血。
+  - 见 [textlink="Suffocation Medications" link="CMUGuideMedsSuffocation"].
 
-  [bold]Genetic[/bold]: cellular damage. Rare, and only a few things cause it.
-  - Only a few treatments touch it, such as [bold]cryoxadone[/bold] in a cryo pod. See [textlink="Other Medications" link="CMUGuideMedsOther"].
+  [bold]基因损伤[/bold]: 细胞损伤。罕见，只有少数几种因素会引起它。
+  - 只有少数几种治疗方法能治疗它，例如在冷冻舱中的[bold]cryoxadone[/bold]。见 [textlink="Other Medications" link="CMUGuideMedsOther"].
 
-  [bold]Tricordrazine[/bold] heals a little of brute, burn, toxin and suffocation all at once, and is a good general-purpose drug when you're not sure what you're dealing with. For every medicine, see [textlink="Medications" link="CMUGuideMedications"].
+  [bold]Tricordrazine[/bold] 同时可以治愈一些暴力伤害、灼伤、毒素和窒息，当你不确定面对的是什么时，它是一种很好的通用药物。关于每种药物，请参阅 [textlink="Medications" link="CMUGuideMedications"].
 
   ## The Stethoscope
-  Use it on a patient, or right-click them, and listen for 2 seconds. It needs basic medical training.
-  - [bold]Heart[/bold]: whether there's a heartbeat, and how fast. A trained medic hears the exact rate.
-  - [bold]Lungs[/bold]: you hear the patient breathe:
-    - [bold]Clear[/bold]: healthy lungs.
-    - [bold]Wet[/bold]: crackling breaths. Fluid or blood in the lungs, from pulmonary edema or lung damage.
-    - [bold]Faint[/bold]: quiet, weak breaths. The lungs are failing and barely moving air.
-    - A dead patient isn't breathing, so there's nothing to hear.
-  - A trained medic can also tell how much pain the patient is in.
+  在病人身上使用它，或者右键点击他们，并听两秒钟。它需要基本的医疗培训。
+  - [bold]心脏[/bold]: 是否有心跳，以及心跳有多快。受过训练的医护人员能听出确切的心率。
+  - [bold]肺[/bold]: 你听到病人呼吸：
+    - [bold]清晰[/bold]: 健康的肺。
+    - [bold]湿[/bold]: 爆裂的呼吸声。肺部有液体或血液，可能由肺水肿或肺损伤引起。
+    - [bold]昏厥[/bold]: 微弱、虚弱的呼吸。肺部功能衰竭，几乎无法移动空气。
+    - 一个死亡的病人没有呼吸，所以没有什么可以听到的。
+  - 经过训练的医疗人员也可以判断患者的疼痛程度。
 
   ## Holocards
-  Patients get a holocard automatically, based on their condition:
-  - [bold]Stable[/bold]: only minor injuries.
-  - [bold]Trauma[/bold]: fractures or internal bleeding.
-  - [bold]Organ failure[/bold]: at least one organ is failing.
+  患者会根据他们的病情自动获得一张全息卡：
+  - [bold]稳定[/bold]: 只是轻伤。
+  - [bold]创伤[/bold]: 骨折或内出血。
+  - [bold]器官 failure[/bold]: 至少有一个器官正在衰竭。
 
   ## Body Scanner
-  The [bold]body scanner pod[/bold] and its console give a full scan of a patient lying in the pod, including enclosed injuries, and help plan surgery. See [textlink="Medical Machines" link="CMUGuideMedicalMachines"].
+  [bold]身体扫描舱[/bold]及其控制台可对躺在舱内的患者进行全面扫描，包括内部伤害，并有助于制定手术计划。见 [textlink="Medical Machines" link="CMUGuideMedicalMachines"].
 
   ## Patient Monitor
-  A Lifepak can be hooked up to a patient to watch their heart rhythm, oxygen, blood pressure and more in real time. See [textlink="Defibrillators" link="CMUGuideDefibrillators"].
+  可以将 Lifepak 连接到患者身上，以实时监测他们的心律、血氧、血压等。查看 [textlink="Defibrillators" link="CMUGuideDefibrillators"].
 </Document>

@@ -1,7 +1,7 @@
 <Document>
   # Intel
 
-  The colony is littered with intel: paper scraps, reports, folders, technical manuals and experimental devices. Gathering it earns your faction intel points. In Distress Signal and Force on Force, it's scattered across the map at the start of the round.
+  殖民地到处都是情报：纸片、报告、文件夹、技术手册和实验设备。收集它们可以为你的派系赢得情报点。在《求救信号》和《兵力对抗》中，它们在回合开始时分散在地图各处。
 
   <Box>
     <GuideEntityEmbed Entity="RMCIntelPaperScrap" Caption="Paper scrap"/>
@@ -11,9 +11,9 @@
   </Box>
 
   ## Where to Look
-  - Intel turns up at set spots around each map, and now and then in any [bold]filing cabinet[/bold] or on any [bold]table[/bold]. Check the drawers.
-  - A [bold]data detector[/bold] beeps when intel or an objective item is nearby. Turn it on in your hand, and switch between short and long range.
-  - Recover the [bold]CIR-60 blackbox[/bold] objective at your Analyzer and it prints an [bold]intel survey[/bold]: the three areas of the map with the most intel still out there. It's a snapshot from the moment it prints, so move fast.
+  - 情报会出现在每张地图的固定地点，有时也会出现在任何[bold]文件柜[/bold]或[bold]桌子[/bold]上。别忘了检查抽屉。
+  - 当情报或任务物品在附近时，[bold]数据探测器[/bold]会发出哔哔声。手持时打开它，可在短程和远程之间切换。
+  - 在分析器上回收[bold]CIR-60黑匣子[/bold]目标，它会打印出一份[bold]情报调查[/bold]：地图上仍有最多情报的三个区域。它是打印那一刻的快照，所以动作要快。
 
   <Box>
     <GuideEntityEmbed Entity="RMCIntelDetector" Caption="Data detector"/>
@@ -21,45 +21,45 @@
   </Box>
 
   ## Turning It In
-  Bring intel back to your faction's [bold]Analyzer Machine[/bold] and use it on the machine. The Analyzer credits its intel points to your faction.
-  - Each item can only be processed once. In Force on Force, whichever side gets it to their Analyzer first gets the points.
-  - You can also read a document in your hand to earn its points. Hand it in afterwards to finish it off.
+  把情报带回你派系的[bold]分析机[/bold]并在机器上使用它。分析机会将这些情报积分记入你派系。
+  - 每件物品只能处理一次。在力量对抗模式中，哪一方先把它送到分析机就能获得积分。
+  - 你也可以先手里阅读一个文件来获取积分，之后交上去就能完成任务。
 
   ## The Intel Computer
   <Box>
     <GuideEntityEmbed Entity="RMCComputerIntelGovfor" Caption="Intel computer"/>
   </Box>
-  Each faction's base also has an [bold]intel computer[/bold]. Instead of the item itself, you bring back what you've read.
-  - Read an intel document in your hand first. That earns its reading points for your faction, and you remember what it said.
-  - Click the intel computer with an empty hand to type it in. Each entry takes a couple of seconds, less with intel training, and it keeps going until you've uploaded everything you've read.
-  - Each entry unlocks the next intel that document points to and tells you where to find it, just like the Analyzer does.
-  - It can't handle experimental devices, since they can't be read. Those have to go to the Analyzer.
+  每个派系的基地也都有一台[bold]情报电脑[/bold]。你不是带回物品本身，而是带回你读到的内容。
+  - 先手里读一份情报文件。这样就能为你的派系获得阅读分数，而且你会记住上面写了什么。
+  - 空手点击情报电脑来输入内容。每条记录需要几秒钟，如果有情报培训则会更快，而且它会持续输入，直到你上传完所有读到的内容。
+  - 每条记录会解锁下一条文件指向的情报，并告诉你去哪里找，就像分析器一样。
+  - 它不能处理实验性装置，因为这些不能被读取。那些必须送到分析器。
 
-  The two work together. A document you've read and uploaded can still be handed in at the Analyzer for its small recovery value, without paying out twice for the reading.
+  这两者是配合使用的。一份你已读并上传的文件仍然可以交给分析器获得少量回收价值，而不会因阅读而获得双重奖励。
 
   ## Encrypted Data Disks
   <Box>
     <GuideEntityEmbed Entity="CMUIntelDataDisk" Caption="Encrypted data disk"/>
   </Box>
-  A handful of [bold]encrypted data disks[/bold] are hidden with the rest of the intel. Each one is worth a full intel point, but only the intel computer can crack them. The Analyzer can't read them at all.
-  - Hold the disk and click the intel computer with it to open the decryption terminal. Stay at the computer with the disk in hand while you work.
-  - The key is [bold]4 digits[/bold], each from [bold]0 to 5[/bold], and digits can repeat.
-  - Every guess is logged with pegs: a [color=#3DDC84]green[/color] peg for each digit that's right and in the right place, and a [color=#F5C542]yellow[/color] peg for each digit that's right but in the wrong place.
-  - There's no limit on attempts. Take your time.
-  - Type the code with your keyboard and press Enter, or use the on-screen keypad.
-  - Use the [bold]notes[/bold] row to mark digits as in or out of the code. The keypad is tinted to match.
-  - Press [bold]Use[/bold] next to an old guess to load it back in and tweak it. The terminal won't let you submit the same guess twice.
-  - Crack it and the disk uploads to that computer's faction and wipes itself.
+  一把[bold]加密数据盘[/bold]和其他情报一起被隐藏了起来。每个数据盘价值一个完整的情报点，但只有情报电脑才能破解它们。分析器完全无法读取它们。
+  - 拿着磁盘，然后点击情报电脑以打开解密终端。在操作时，将磁盘拿在手里呆在电脑旁。
+  - 密码是[bold]4位数[/bold]，每位数字在[bold]0到5[/bold]之间，数字可以重复。
+  - 每次猜测都会记录标记：每个数字正确且位置正确的会显示[color=#3DDC84]绿色[/color]标记，每个数字正确但位置错误的会显示[color=#F5C542]黄色[/color]标记。
+  - 猜测次数不限，慢慢来。
+  - 用键盘输入代码并按回车，或者使用屏幕键盘。
+  - 使用[bold]笔记[/bold]行来标记哪些数字在或不在密码中，键盘颜色会相应显示。
+  - 按[bold]使用[/bold]加载旧的猜测并进行调整。终端不会允许你提交重复猜测。
+  - 破解成功后，磁盘会上传到该电脑所属阵营，并自我清除。
 
-  Tip: start with guesses like 0011 and 2233 to find out which digits are in the key, then work out where they go.
+  提示：可以先猜 0011 和 2233 这样的组合，看看密码里有哪些数字，然后再弄清它们的位置。
 
   ## Locked Intel and Clues
-  Intel is chained together. Most items start [bold]locked[/bold]: the Analyzer can't make sense of them until you've processed the intel that points to them.
-  - Processing an item unlocks the next pieces in the chain, and tells you where to find them, such as "a folder in the medbay".
-  - Start with the paper scraps, which are never locked, and follow the clues from there.
+  情报是连在一起的。大多数项目一开始都是[bold]锁定[/bold]状态：分析器无法理解它们，直到你处理了指向它们的情报。
+  - 处理一个项目会解锁链条中的下一个部分，并告诉你在哪里找到它们，比如“医务室的一个文件夹”。
+  - 从纸张碎片开始，它们永远不会锁定，然后按照线索继续。
 
   ## What It's Worth
-  - Paper scraps and reports are worth a little each; folders, technical manuals and especially experimental devices are worth more.
-  - A whole map's worth of intel adds up to around 37 intel points.
-  - See [textlink="Points" link="CMUGuideObjectivePoints"] for what you can spend them on.
+  - 纸张碎片和报告每个价值不多；文件夹、技术手册，尤其是实验设备则更值钱。
+  - 一整张地图的情报总计约为37点情报值。
+  - 查看 [textlink="Points" link="CMUGuideObjectivePoints"] 了解你可以用它们兑换什么。
 </Document>

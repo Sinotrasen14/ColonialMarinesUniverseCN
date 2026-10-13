@@ -1,7 +1,7 @@
 <Document>
   # Surgery
 
-  Some injuries can only be fixed by operating: compound and shattered fractures, internal bleeding, damaged organs, eschar, severed limbs and the bleeding stumps they leave.
+  有些伤势只能通过手术修复：复合性骨折和碎裂性骨折、内出血、器官损伤、焦痂、断肢及其留下的出血残肢。
 
   <Box>
     <GuideEntityEmbed Entity="CMScalpel" Caption="Scalpel"/>
@@ -17,86 +17,86 @@
   </Box>
 
   ## Preparing the Patient
-  - [bold]Lay the patient down.[/bold] You can't operate on someone standing up. An [bold]operating table[/bold] is best.
-  - [bold]Put them under.[/bold] A patient who is asleep, unconscious, on strong enough painkillers or held down by someone keeps still. An awake patient in severe pain screams and thrashes, and steps can't go ahead.
-  - You can operate on yourself if you're buckled into a seat, but it's harder.
+  - [bold]让患者躺下。[/bold] 你不能在患者站着的时候进行手术。[bold]手术台[/bold]是最好的选择。
+  - [bold]让他们麻醉。[/bold] 一个睡着的、失去知觉的、使用足够强力止痛药的或有人按住的患者会保持静止。清醒且痛得厉害的患者会尖叫和挣扎，手术步骤无法进行。
+  - 如果你系好座椅安全带，你可以给自己动手术，但这更难。
 
   ## Anesthetic
   <Box>
     <GuideEntityEmbed Entity="CMAnestheticTankFilled" Caption="Anesthetic tank"/>
   </Box>
-  The cleanest way to put a patient under is the [bold]anesthetic tank[/bold], which holds nitrous oxide.
-  - Put a breath mask on the patient, attach the anesthetic tank and turn on their internals.
-  - They get drowsy, and about [bold]6 seconds[/bold] later they fall asleep.
-  - They stay asleep for as long as they keep breathing from the tank. Turn off their internals or take the tank away and they wake up.
-  - Anesthetic tanks and medical gas masks are stocked in the medical supply vendor, and come in the surgery crate.
-  - It doesn't work on synthetics.
+  让病人麻醉最干净的方法是使用 [bold]麻醉罐[/bold]，里面装有笑气。
+  - 给病人戴上呼吸面罩，连接麻醉罐并开启他们的内部装置。
+  - 他们会变得昏昏欲睡，大约 [bold]6 秒[/bold]后进入睡眠。
+  - 只要他们继续从罐子里呼吸，就会保持睡眠状态。关闭他们的内部装置或移开麻醉罐，他们就会醒来。
+  - 麻醉罐和医用面罩在医疗用品商店有售，并装在手术箱中。
+  - 对合成生物无效。
 
   ### Drugs Instead
-  If you don't have a tank, drugs will do:
-  - [bold]Soporific[/bold]: 8 units or more puts the patient to sleep, and it's a strong painkiller as well.
-  - [bold]Oxycodone[/bold] also works. It kills pain well enough to operate, but the patient stays awake, and it makes them [color=#FFA500]loopy[/color]: their vision blurs and darkens at the edges. Over 20 units they start acting drunk and hallucinating, and it begins to poison them.
-  - Tramadol, sleen and fentanyl are also strong enough. Paracetamol isn't.
+  如果你没有气罐，药物也可以：
+  - [bold]Soporific[/bold]: 8个单位或更多会使患者入睡，同时它也是一种强效止痛药。
+  - [bold]Oxycodone[/bold] 也有效。它能很好地缓解疼痛以进行手术，但病人会保持清醒，并且会让他们变得[color=#FFA500]昏昏沉沉[/color]：他们的视野模糊，边缘变暗。超过20单位时，他们开始表现得像醉了似的并出现幻觉，同时开始中毒。
+  - Tramadol, sleen 和 fentanyl 也足够强大。 Paracetamol 不是
 
   ### Holding the Patient Down
-  [color=#FFA500]No painkillers? Have someone hold the patient down.[/color] A second person pinning them still counts the same as painkillers: you can operate on an awake patient in severe pain, and they won't thrash when a step goes wrong.
-  - Right-click the patient while they're lying down and choose [bold]Hold down[/bold]. It takes 2 seconds.
-  - Stay right next to them. If you step away, get knocked out or the patient gets up, you let go, and surgery stops until the pain is dealt with.
-  - The surgeon can't hold the patient down themselves.
-  - Choose [bold]Let go[/bold] when you're done.
+  [color=#FFA500]没有止痛药？让别人按住病人。[ /color] 第二个人固定病人仍然与使用止痛药效果相同：你可以在重度疼痛中给清醒的病人手术，他们在操作出错时不会挣扎。
+  - 当病人躺下时右键点击并选择 [bold]按住[/bold]。需要2秒。
+  - 紧挨病人站好。如果你离开、被击晕或病人站起来，你就会松手，手术会停止，直到疼痛被处理。
+  - 外科医生自己不能按住病人。
+  - 完成后选择 [bold]松手[/bold]。
 
-  It doesn't make steps any less likely to fail. The surface, tools and skill still decide that.
+  这并不会让步骤更不可能失败。表面、工具和技能仍然决定这一点。
 
   ## Operating
-  1. Use a surgical tool on the patient to open the [bold]Surgical Procedure[/bold] window.
-  2. Pick the body part, then the surgery. The window lists only the surgeries that part needs, grouped by what they fix, along with anything wrong with the part.
-  3. Press [bold]Begin Surgery[/bold]. The window tells you each step and which tool it needs.
-  4. Click the patient with that tool to do the step. Each step takes a couple of seconds, less with more surgical skill.
-  5. When you've finished, you can start another surgery on the same open part, or [bold]Close Up[/bold].
+  1. 使用手术工具作用于病人以打开[bold]手术操作[/bold]窗口。
+  2. 选择身体部位，然后选择手术。窗口只列出该部位需要的手术，按修复内容分组，同时显示该部位的任何问题。
+  3. 按[bold]开始手术[/bold]。窗口会告诉你每一步及所需工具。
+  4. 使用该工具点击病人以执行步骤。每个步骤需要几秒钟，更高的手术技能会更快。
+  5. 完成后，你可以在同一开启的部位开始另一项手术，或[bold]缝合关闭[/bold]。
 
-  Only one body part can be operated on at a time. Finish or abandon a surgery before starting on another part.
+  一次只能对一个身体部位进行手术。在开始另一个部位的手术之前，必须完成或放弃当前手术。
 
   ## When Steps Go Wrong
-  A step can fail and cut the patient. The chance depends on how rough the conditions are:
-  - [bold]Where the patient is[/bold]: an operating table or a proper bed is fine. A roller bed, stretcher or bedroll is rougher. A patient who isn't strapped down at all is roughest.
-  - [bold]Improvised tools[/bold]: some substitutes make a step more likely to fail. See [bold]Improvised Tools[/bold] below.
-  - [bold]Operating on yourself[/bold] makes every step harder.
-  - [bold]Surgical skill[/bold] makes up for bad conditions. An expert surgeon can operate cleanly in the field.
+  一个步骤可能会失败并割伤患者。发生的几率取决于环境的艰难程度：
+  - [bold]患者所在的地方[/bold]：手术台或合适的床都可以。滚床、担架或床垫较为粗糙。完全没有固定的患者最为粗糙。
+  - [bold]临时工具[/bold]：一些替代工具会使步骤更容易失败。见下文的[bold]临时工具[/bold]。
+  - [bold]自己操作[/bold]会使每一步都更困难。
+  - [bold]外科手术技能[/bold]可以弥补恶劣条件。一个经验丰富的外科医生可以在野外进行干净的手术。
 
-  With good conditions a step never fails. The worse they get, the higher the chance: 5%, then 25%, then 50%.
+  在良好条件下，一步永不失败。条件越糟，成功的几率越高：5%，然后是25%，再然后是50%。
 
   ## Improvised Tools
-  No surgical kit? Everyday items can stand in for most tools. Every substitute is [bold]slower[/bold] than the real thing, from about half again as long for a blowtorch up to nearly three times as long for a cigarette. Ones marked [color=#FFA500]rough[/color] also make a step more likely to fail. When a step fails, the damage depends on the tool: blades cut, blunt tools bruise, hot tools burn.
+  没有外科手术工具？日常用品可以代替大多数工具。每种替代品都比真正的工具[bold]慢[/bold]，从喷灯大约快一倍半的时间到香烟几乎需要三倍的时间。标有[color=#FFA500]粗糙[/color]的工具也会增加一个步骤失败的可能性。当一个步骤失败时，造成的伤害取决于工具类型：刀片会割伤，钝器会造成瘀伤，热工具会烧伤。
 
-  Listed from best to worst:
-  - [bold]Scalpel[/bold]: a knife, or a [color=#FFA500]glass shard (rough)[/color].
-  - [bold]Hemostat[/bold]: surgical line, wire cutters, a fork, cable coil, or gauze.
-  - [bold]Retractor[/bold]: a crowbar, a vehicle maintenance jack [color=#FFA500](rough)[/color], a knife [color=#FFA500](rough)[/color], or a [color=#FFA500]glass shard (rough)[/color].
-  - [bold]Cautery[/bold]: a blowtorch or welder, surgical line, cable coil, a lighter, or a [color=#FFA500]cigarette (rough)[/color].
-  - [bold]Circular saw[/bold]: a hatchet [color=#FFA500](rough)[/color], a machete [color=#FFA500](rough)[/color], a pen [color=#FFA500](rough)[/color], or a [color=#FFA500]metal rod (rough)[/color].
-  - [bold]Bone setter[/bold]: a wrench, or a vehicle maintenance jack [color=#FFA500](rough)[/color].
-  - [bold]Bone gel[/bold]: a screwdriver [color=#FFA500](rough)[/color], or a [color=#FFA500]metal rod (rough)[/color].
-  - [bold]Organ clamp[/bold]: surgical line, cable coil, or a bandana or headband.
-  - [bold]Debriding eschar[/bold]: a burn kit, or ointment.
+  从最好到最差列出:
+  - [bold]手术刀[/bold]：一把刀，或 [color=#FFA500]玻璃碎片（粗糙）[/color]。
+  - [bold]止血钳[/bold]：手术线、剪线钳、叉子、电缆卷或纱布。
+  - [bold]牵引器[/bold]：撬棍、车辆维修千斤顶 [color=#FFA500](粗糙)[/color]、刀 [color=#FFA500](粗糙)[/color]，或者 [color=#FFA500]玻璃碎片 (粗糙)[/color]。
+  - [bold]电灼器[/bold]：喷灯或焊机、手术缝线、线缆卷、打火机，或者 [color=#FFA500]香烟 (粗糙)[/color]。
+  - [bold]圆锯[/bold]：一把手斧 [color=#FFA500](粗糙)[/color]，一把砍刀 [color=#FFA500](粗糙)[/color]，一支钢笔 [color=#FFA500](粗糙)[/color]，或一根金属棒 [color=#FFA500](粗糙)[/color]。
+  - [bold]整骨器[/bold]：一把扳手，或一台车辆维修千斤顶 [color=#FFA500](粗糙)[/color]。
+  - [bold]骨胶[/bold]：一把螺丝刀 [color=#FFA500](粗糙)[/color]，或一根 [color=#FFA500]金属棒 (粗糙)[/color]。
+  - [bold]器官夹[/bold]：手术线、缆线卷，或者头巾或发带。
+  - [bold]清创焦痂[/bold]：烧伤包，或药膏。
 
-  Surgical line is the best all-rounder to carry: it covers the hemostat, cautery and organ clamp, and it's nearly as quick as the real tools.
+  外科线路是最全能的工具：它涵盖了止血钳、电灼器和器官夹，而且它的速度几乎和真正的工具一样快。
 
   ## Surgeries and Their Steps
-  Each type of surgery has its own page with every step and the tool it needs:
-  - [textlink="Opening and Closing" link="CMUGuideSurgeryOpening"]: opening an incision or bone cavity, and closing up.
+  每种手术都有自己的页面，列出每个步骤及所需的工具：
+  - [textlink="Opening and Closing" link="CMUGuideSurgeryOpening"]: 切开切口或骨腔，然后缝合。
 
-  - [textlink="Fracture Surgery" link="CMUGuideSurgeryFractures"]: setting simple, compound and shattered fractures.
+  - [textlink="Fracture Surgery" link="CMUGuideSurgeryFractures"]: 处理简单骨折、复合骨折和粉碎性骨折。
 
-  - [textlink="Bleeding, Burns and Complications" link="CMUGuideSurgeryBleeding"]: internal bleeding, eschar, and complications found in open wounds.
+  - [textlink="Bleeding, Burns and Complications" link="CMUGuideSurgeryBleeding"]: 开放性伤口中发现的内出血、焦痂和并发症。
 
-  - [textlink="Organ Surgery" link="CMUGuideSurgeryOrgans"]: suturing, removing and replacing organs, the brain and eyes, and embryo removal.
+  - [textlink="Organ Surgery" link="CMUGuideSurgeryOrgans"]: 缝合、移除和更换器官、大脑和眼睛，以及胚胎移除。
 
-  - [textlink="Limb Surgery" link="CMUGuideSurgeryLimbs"]: closing stumps, amputation, reattachment and replacement limbs.
+  - [textlink="Limb Surgery" link="CMUGuideSurgeryLimbs"]: 截肢、切除、再附着和替换肢体。
 
   ## After Surgery
-  - The patient is left [bold]recovering from surgery[/bold] for a while and can't run.
-  - After setting a bone, put a cast on within 5 minutes. See [textlink="Fractures" link="CMUGuideMedicalBones"].
+  - 病人暂时处于[bold]手术恢复[/bold]状态，不能跑步。
+  - 骨头固定后，请在5分钟内打上石膏。见 [textlink="Fractures" link="CMUGuideMedicalBones"].
 
   ## The Autodoc
-  The [bold]autodoc pod[/bold] operates by itself. A trained surgeon queues procedures from its console, and the pod carries them out on the patient inside. See [textlink="Medical Machines" link="CMUGuideMedicalMachines"], which also covers the body scanner that can make your surgery twice as fast.
+  [bold]自动医生舱[/bold]可以自主运行。受过训练的外科医生从其控制台排队安排手术，而舱内会在病人身上执行这些手术。请参阅 [textlink=""Medical Machines"" link="CMUGuideMedicalMachines"]，其中还介绍了能让手术速度加倍的体检扫描仪。
 </Document>

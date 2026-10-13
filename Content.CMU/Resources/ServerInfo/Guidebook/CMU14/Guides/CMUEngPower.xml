@@ -7,67 +7,67 @@
     <GuideEntityEmbed Entity="RMCGeneratorFusionColony" Caption="G-11 geothermal generator"/>
     <GuideEntityEmbed Entity="RMCGeneratorFusionCell" Caption="WL-6 fuel cell"/>
   </Box>
-  Colonies and ships alike run on big fixed power plants. If they go down, so does everything they feed.
-  - The [bold]S-52 fusion reactor[/bold] puts out 50 kW.
-  - The [bold]G-11 geothermal generator[/bold] puts out 100 kW.
-  - Both take a [bold]WL-6 fuel cell[/bold]. To load a cell, use it on the reactor. To pull one out, use a crowbar. Each takes 10 seconds, less with engineering skill.
-  - Colony requisitions sells a crate of four fuel cells.
+  殖民地和船只同样依赖大型固定发电厂运作。如果它们停运，所有依赖它们供能的东西也会停摆。
+  - [bold]S-52聚变反应堆[/bold]输出50千瓦。
+  - [bold]G-11地热发电机[/bold]输出100千瓦。
+  - 二者都使用[bold]WL-6燃料电池[/bold]。装入燃料电池时，将其用于反应堆；取出时，使用撬棍。每次操作需要10秒，具备工程技能可更快。
+  - 殖民地申请处出售一箱四个燃料电池。
 
   ### Repairing a Reactor
-  Reactors and generators are often broken when you arrive, and they can be sabotaged or torn apart. A damaged reactor puts out no power until it's fully repaired. Examine it to see which tool it needs next.
+  当你到达时，反应堆和发电机经常是损坏的，它们可能被破坏或拆开。受损的反应堆在完全修复之前不会产生电力。检查它以查看接下来需要哪种工具。
 
-  Repair it in this order. Each step takes [bold]20 seconds[/bold], and using the wrong tool out of order does nothing:
-  1. Weld it with a [bold]blowtorch[/bold].
+  按此顺序修理。每一步耗时[bold]20秒[/bold]，顺序使用错误工具无效：
+  1.用[bold]焊枪[/bold]焊接它。
 
-  2. Fix the wiring with [bold]wire cutters[/bold].
+  2. 用[bold]线切割钳[/bold]修理电线。
 
-  3. Tighten it with a [bold]wrench[/bold].
+  3. 用[bold]扳手[/bold]拧紧它。
 
-  Once the last step is done it's working again, as long as it has a fuel cell in it.
+  一旦最后一步完成，它就能再次工作，只要里面有燃料电池。
 
   ## Area Power Controllers
-  Every room (area) has an [bold]area power controller (APC)[/bold] on the wall. It takes power from the grid and feeds everything in its area, split into three channels: [bold]equipment[/bold], [bold]lighting[/bold] and [bold]environment[/bold]. If the area's APC is dead or missing, nothing in that area has power, even with the grid running.
-  - Its power cell keeps the area running for a while when the grid goes down, and recharges when the grid comes back.
-  - You need [bold]engineering training[/bold] (level 2) to use one or work on it.
-  - Examine an APC to see what to do next with it.
+  每个房间（区域）墙上都有一个[bold]区域电源控制器（APC）[/bold]。它从电网取电，并为该区域的所有设备供电，分为三个通道：[bold]设备[/bold]、[bold]照明[/bold]和[bold]环境[/bold]。如果该区域的APC损坏或缺失，即使电网运行，该区域内的任何设备也没有电。
+  - 它的动力电池在电网中断时可以让区域运行一段时间，当电网恢复时会充电。
+  - 你需要[bold]工程训练[/bold]（等级2）才能使用或维护它。
+  - 检查一辆APC以了解下一步该如何操作。
 
   ### Working on an APC
-  - [bold]Lock or unlock[/bold] its interface by swiping an ID on it. Once unlocked, the interface lets you unlock the cover.
-  - [bold]Open the cover[/bold] with a crowbar (the cover has to be unlocked first). Use the crowbar again to close it.
-  - [bold]Swap the cell[/bold]: with the cover open, take the cell out with an empty hand, or put a new one in. Each takes 7 seconds, less with engineering skill.
-  - [bold]Fix a broken APC[/bold]: damage leaves the wires exposed and the APC stops working. Use a [bold]screwdriver[/bold] on it to repair the wiring.
+  - [bold]通过刷ID[/bold]锁定或解锁其界面。解锁后，界面允许你解锁盖子。
+  - [bold]使用撬棍打开盖子[/bold]（盖子必须先解锁）。再次使用撬棍即可关闭盖子。
+  - [bold]更换电池[/bold]：盖子打开后，可空手取出电池，或放入新的电池。每次操作需要7秒，工程技能高则时间更短。
+  - [bold]修理损坏的APC[/bold]：损坏会使电线外露，APC停止工作。使用[bold]螺丝刀[/bold]修复电线。
 
   ### Building an APC
-  - Open the construction menu and pick the APC under utilities. It costs [bold]2 metal and 10 cable[/bold] and goes on a wall.
-  - Put [bold]APC electronics[/bold] into the frame, then finish it with a screwdriver.
-  - A newly built APC comes with a high-capacity power cell already in it, and takes its name from the area it's in.
-  - To take a frame back down, weld it apart.
+  - 打开建造菜单，在实用工具中选择 APC。它的价格是 [bold]2 个金属和 10 根电缆[/bold]，并安装在墙上。
+  - 将 [bold]APC 电子元件[/bold] 放入框架中，然后用螺丝刀完成组装。
+  - 新建的 APC 自带一个高容量电池，并以所在区域命名。
+  - 要拆下框架，需要用焊接方式分解。
 
   ## PACMAN Generators
   <Box>
     <GuideEntityEmbed Entity="RMCPortableGenerator" Caption="P.A.C.M.A.N."/>
     <GuideEntityEmbed Entity="RMCPortableGenerator2" Caption="S.U.P.E.R.P.A.C.M.A.N."/>
   </Box>
-  Portable generators for powering a forward position, or for emergency backup when the grid goes down. Load fuel sheets into one, wire it into the grid, and switch it on.
+  便携式发电机用于为前沿阵地供电，或在电网故障时作为应急备用。将燃料片装入发电机，连接到电网，然后开启。
 
   [bold]P.A.C.M.A.N.[/bold]
-  - Burns [bold]phoron[/bold] sheets.
-  - Puts out [bold]5 kW[/bold].
-  - Each sheet lasts about 70 seconds.
-  - Makes a small explosion if it's destroyed.
+  - 燃烧 [bold]phoron[/bold] 片。
+  - 输出 [bold]5 kW[/bold]。
+  - 每片持续约 70 秒。
+  - 如果被破坏会发生小爆炸。
 
   [bold]S.U.P.E.R.P.A.C.M.A.N.[/bold]
-  - Burns [bold]uranium[/bold] sheets.
-  - Puts out [bold]15 kW[/bold], three times as much.
-  - Each sheet lasts about 120 seconds.
-  - Makes a bigger explosion if it's destroyed, so keep it away from anything you care about.
+  - 燃烧[bold]铀[/bold]片。
+  - 输出[bold]15千瓦[/bold]，是原来的三倍。
+  - 每片持续约120秒。
+  - 如果被摧毁会产生更大的爆炸，因此要远离你关心的任何东西。
 
-  Use the regular PACMAN for small jobs like a few lights or a sentry network, and the super PACMAN when you need to run a whole outpost.
+  对于少量任务，如几盏灯或一个哨兵网络，使用普通PACMAN；当你需要运行整个前哨站时，使用超级PACMAN。
 
   ### Where to Get One
-  - Ready-made generators are kept in the [bold]ship's engineering department[/bold]. They're on wheels, so you can drag them where you need them.
-  - You can also build your own: construct a machine frame from metal, then install a PACMAN or super PACMAN [bold]machine board[/bold]. Combat Technicians can buy the boards, and the phoron and uranium to fuel them, from their gear rack.
+  - 现成的发电机存放在[bold]船舶工程部门[/bold]。它们装有轮子，所以你可以将它们拖到需要的地方。
+  - 你也可以自己制造：先用金属构建一个机器框架，然后安装PACMAN或超级PACMAN[bold]机器板[/bold]。战斗技术员可以从他们的装备架上购买这些机器板，以及为其提供燃料的磷闪石和铀。
 
   ## Power Cells
-  Carry spare power cells for sentries and equipment in the field.
+  为哨兵和野外设备携带备用电池。
 </Document>

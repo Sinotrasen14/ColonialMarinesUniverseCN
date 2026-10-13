@@ -1,7 +1,7 @@
 <Document>
   # Forensics
 
-  Almost everything people touch or bleed on leaves evidence behind. The forensic scanner reads that evidence, and the criminal records computer tells you who it belongs to.
+  几乎所有人接触或流血的地方都会留下痕迹。法医扫描仪读取这些痕迹，而犯罪记录电脑会告诉你这些痕迹属于谁。
 
   <Box>
     <GuideEntityEmbed Entity="ForensicScanner" Caption="Forensic scanner"/>
@@ -10,71 +10,71 @@
   </Box>
 
   ## Getting a Scanner
-  - Colony law enforcement start with one in their bag: CMB Marshals and Deputies, Colony Security, CWPS Rangers, NSPA Constables and Inspectors, and PaP Officers.
-  - They also start with a [bold]mobile criminal records tablet[/bold], a handheld version of the criminal records computer.
+  - 殖民地的执法人员一开始就配备一名：CMB 执法官和副官、殖民地安全部门、CWPS 游骑兵、NSPA 警员和检查员，以及 PaP 官员。
+  - 他们还会配备一个[bold]移动犯罪记录平板[/bold]，这是犯罪记录计算机的手持版本。
 
   ## What Gets Left Behind
-  - [bold]Fingerprints[/bold]: touching or picking something up with bare hands leaves your fingerprints on it.
-  - [bold]DNA[/bold]: touching something with bare hands also leaves your DNA. So does bleeding: blood puddles carry the DNA of whoever they came from. Melee weapons pick up the DNA of the people they hit.
-  - [bold]Fibers[/bold]: wearing gloves stops fingerprints and touch DNA, but gloves leave fibers of their material and colour instead.
-  - [bold]Residues[/bold]: some cleaning products leave a residue behind.
-  - [bold]Gunshot residue[/bold]: firing a gun leaves gunshot residue on your hands, or on your gloves if you're wearing them. It fades after about 5 minutes.
-  - [bold]Hair and skin[/bold]: fighting, grabbing or doing CPR on someone leaves your DNA on their clothes, and theirs on yours. Gloves don't stop this, so a victim's clothes can carry their attacker's DNA.
+  - [bold]指纹[/bold]：用裸手触摸或拿起某物会在物体上留下你的指纹。
+  - [bold]DNA[/bold]：用裸手触摸某物也会留下你的DNA。流血同样会留下：血泊带有血源者的DNA。近战武器会携带它击中的人的DNA。
+  - [bold]纤维[/bold]：戴手套可以防止留下指纹和触碰DNA，但手套会留下其材质和颜色的纤维。
+  - [bold]残留物[/bold]：一些清洁产品会留下残留物。
+  - [bold]枪击残留[/bold]：开枪会在你的手上留下枪击残留，如果你戴手套，手套上也会有。大约5分钟后会消退。
+  - [bold]头发和皮肤[/bold]：打斗、抓人或对某人进行心肺复苏会在对方衣物上留下你的DNA，同时在你的衣物上留下对方的DNA。手套无法阻止这一点，所以受害者的衣物可能带有攻击者的DNA。
 
-  Evidence can be wiped off with soap. The soap leaves its own residue, which is a clue that someone cleaned up. Blood puddles have to be mopped up to get rid of the DNA in them.
+  证据可以用肥皂擦掉。肥皂会留下自己的残留物，这表明有人清理过。血泊需要用拖地清理才能去除里面的DNA。
 
   ## Scanning
-  - Hold the scanner and click on an item, a puddle or a person, or right-click them and choose the scan option.
-  - Stand still for 3 seconds. The results window opens when the scan finishes.
-  - Scanning an [bold]item or puddle[/bold] shows the fingerprints, fibers, DNA and residues on it.
-  - Scanning a [bold]person[/bold] shows their own DNA, their fingerprints if they aren't wearing gloves, any hair and skin DNA left on their clothes, and gunshot residue if they've fired a gun recently.
-  - Scanning a [bold]person or body[/bold] also gives a full injury report, and a body gets a cause and time of death. See the results window below.
-  - Use the scanner in your hand to reopen the last results.
+  - 握住扫描仪并点击物品、水坑或人物，或者右键点击它们并选择扫描选项。
+  - 静止站立3秒。扫描完成后，结果窗口会打开。
+  - 扫描[bold]物品或水坑[/bold]会显示其上的指纹、纤维、DNA和残留物。
+  - 扫描[bold]人物[/bold]会显示他们自己的DNA，如果没有戴手套，还会显示指纹、衣物上的毛发和皮肤DNA，以及最近开枪的枪击残留物。
+  - 扫描[bold]人物或尸体[/bold]还会提供完整的伤情报告，尸体还会显示死亡原因和时间。请参见下面的结果窗口。
+  - 使用手中的扫描仪可以重新打开上一次的结果。
 
   ## The Results Window
-  The name of whatever you scanned is shown at the top, followed by a set of cards. A card only appears when it has something to show.
+  您扫描的内容名称显示在顶部，下面是一组卡片。只有在卡片有内容可显示时，它才会出现。
 
   ### Death
-  Only shown for bodies.
-  - [bold]Cause of death[/bold]: the most likely cause, worked out at the moment they died, so healing or moving the body afterwards doesn't change it. Possible causes include gunshot wounds, stab wounds, lacerations, blunt force trauma, explosive trauma, burns, blood loss, asphyxiation, poisoning and decapitation. It reads "Undetermined" if nothing stands out.
-  - [bold]Time since death[/bold]: exact to the minute for the first 10 minutes, then rounded to the nearest 5 minutes.
+  仅显示于正文。
+  - [bold]死亡原因[/bold]：最可能的死亡原因，在他们死亡的那一刻确定，因此之后的治疗或搬动尸体不会改变它。可能的原因包括枪伤、刺伤、割伤、钝器伤、爆炸伤、烧伤、失血、窒息、中毒和斩首。如果没有明显特征，则显示“未确定”。
+  - [bold]死亡时间[/bold]：前10分钟精确到分钟，然后四舍五入到最近的5分钟。
 
   ### Record Matches
-  Everyone on the criminal records whose fingerprints or DNA match the scan. The scanner beeps and shows "Match" as soon as it finds one, so you often won't need to search at all.
+  所有犯罪记录中指纹或 DNA 与扫描匹配的人。一旦扫描器找到匹配，它会发出哔哔声并显示“匹配”，所以你通常根本不需要搜索。
 
   ### Evidence
-  Fingerprints, DNA, fibers and residues, including gunshot residue. Every fingerprint and DNA entry has a [color=#FFA500]Copy[/color] button that copies the value to your clipboard, so you can paste it straight into the records search with [bold]Ctrl+V[/bold].
+  指纹、DNA、纤维和残留物，包括枪击残留物。每个指纹和DNA条目都有一个[color=#FFA500]复制[/color]按钮，可以将数值复制到剪贴板，这样你就可以直接使用[粗体]Ctrl V[/粗体]粘贴到记录搜索中。
 
   ### Injuries
-  Shown for people and bodies, listed by body part from head to feet. Each line has a severity tag:
-  - [color=#7FBF7F]MINOR[/color], [color=#E0C050]MODERATE[/color], [color=#E08A3C]SEVERE[/color] and [color=#E05A4F]CRITICAL[/color] for injuries, and [color=#9A9A9A]MISSING[/color] for limbs that are gone.
-  - [bold]Wounds[/bold] are grouped by type (gunshot, stab, laceration, blunt trauma, burn, blast, shrapnel, surgical incision, bruise) with a count, the worst one, and whether they were treated.
-  - [bold]Bleeding[/bold], internal and external, with how bad the external bleeding is.
-  - [bold]Fractures[/bold], from hairline to shattered.
-  - [bold]Shrapnel[/bold] still lodged in the body, with the number of fragments.
-  - [bold]Missing limbs[/bold].
+  按人体显示，按身体部位从头到脚列出。每一行都有严重程度标签：
+- [color=#7FBF7F]轻度[/color]、[color=#E0C050]中度[/color]、[color=#E08A3C]严重[/color]和[color=#E05A4F]critical[/color]（伤势），[color=#9A9A9A]缺失[/color]（肢体消失）。
+  - [bold]伤口[/bold]按类型分组（枪击、刺伤、撕裂、钝器伤、烧伤、爆炸、弹片、外科切口、瘀伤），并附有数量、最严重的伤口及是否接受治疗。
+  - [bold]出血[/bold]，内外出血，外出血严重程度。
+  - [bold]骨折[/bold]，从发际线到粉碎性骨折。
+  - [bold]弹片[/bold]仍卡在体内，碎片数量。
+  - [bold]缺肢[/bold]。
 
   ### Buttons
-  - [bold]Print[/bold] makes a paper report of the fingerprints, fibers, DNA and residues, for evidence lockers or case files. It has a short cooldown.
-  - [bold]Clear[/bold] wipes the current results.
+  - [bold]打印[/bold] 会生成指纹、纤维、DNA 和残留物的纸质报告，用于证据柜或案件文件。它有一个短暂的冷却时间。
+  - [bold]清除[/bold] 会清除当前的结果。
 
   ## Searching the Records
-  Every colonist and CLF member has a record with their fingerprints and DNA, so any evidence can be traced back to a person.
+  每个殖民者和CLF成员都有指纹和DNA记录，因此任何证据都可以追溯到个人。
 
-  - Open a criminal records computer or the mobile tablet. You need CMB, security or colony command access.
-  - Pick [bold]Fingerprints[/bold] or [bold]DNA[/bold] in the filter dropdown at the top.
-  - Paste the value you copied into the search box. The list narrows to the matching person.
-  - Select them to see their record and status, and to set them as Suspect, Wanted and so on.
+  - 打开刑事记录计算机或移动平板。你需要 CMB、安全或殖民地指挥权限。
+  - 在顶部的筛选下拉菜单中选择 [bold]指纹[/bold] 或 [bold]DNA[/bold]。
+  - 将你复制的数值粘贴到搜索框中。列表将缩小到匹配的人。
+  - 选择他们以查看他们的记录和状态，并将他们设为嫌疑人、通缉等。
 
   ## Automatic Evidence Logging
-  - When you scan an item that has the fingerprints or DNA of someone who is [color=#FF0000]Wanted[/color], a note is added to their crime history automatically. It records what kind of evidence it was and which item it was found on.
-  - Scanning a person directly also adds or updates their record on the computer.
+  - 当你扫描一个物品，其上有被[color=#FF0000]通缉[/color]的人的指纹或DNA时，他们的犯罪记录会自动添加一条备注。备注会记录证据类型以及发现该证据的物品。
+  - 直接扫描一个人也会在电脑上增加或更新他们的记录。
 
   ## Tips
-  - Scan everything at a crime scene before it gets moved or cleaned: weapons, doors, blood and casings.
-  - Gloves mean no prints, but check for fibers and blood DNA instead.
-  - Several people's prints can be on the same item, and the most recent ones aren't always the culprit's.
-  - At a body, compare the wounds with the cause of death. Gunshot wounds point to a shooter, so check nearby people for gunshot residue. Stab wounds point to a blade, so scan any knives for the victim's DNA.
-  - Scan a body's clothes by scanning the body itself. Hair and skin from their attacker shows up in the DNA list.
-  - The time since death tells you who could have been there. Check it against the shot alert system's reports and anyone's alibi.
+  - 在犯罪现场搬动或清理之前扫描所有物品：武器、门、血液和弹壳。
+  - 戴手套意味着没有指纹，但应该检查纤维和血液DNA。
+  - 同一物品上可能有多个人的指纹，而且最新的指纹不一定是罪犯的。
+  - 在尸体旁时，将伤口与死亡原因进行比较。枪伤指向枪手，所以检查附近人员的枪伤残留物。刀伤指向利器，所以扫描任何刀具上的受害者DNA。
+  - 通过扫描尸体本身来扫描尸体的衣物。攻击者的毛发和皮肤会出现在DNA列表中。
+  - 死亡时间可以告诉你谁可能在场。将其与射击警报系统的报告及任何人的不在场证明进行核对。
 </Document>

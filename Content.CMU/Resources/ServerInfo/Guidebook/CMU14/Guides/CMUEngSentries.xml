@@ -1,49 +1,49 @@
 <Document>
   # Sentries
 
-  Sentry guns hold ground while you're busy elsewhere. Military engineers can draw one from their gear rack's support equipment slot, and sentries also turn up in supply crates.
+ 哨兵炮在你忙于其他事务时守卫阵地。军用工程师可以从他们的装备架的支援装备栏中装备一台，哨兵炮也会出现在补给箱中。
 
   ## Sentry Guns
   <Box>
     <GuideEntityEmbed Entity="AU14CaseSentry" Caption="571-C sentry case"/>
     <GuideEntityEmbed Entity="AU14CaseSentryFlamer" Caption="55-FA flamer sentry case"/>
   </Box>
-  - The [bold]571-C sentry gun[/bold] case holds the sentry and a spare ammo drum. It's armed with an autocannon, and it won't fire on your own side.
-  - The [bold]55-FA assault sentry flamer[/bold] case holds a flamer sentry and a spare drum. It sprays fire instead of bullets, and the fire it leaves behind can still burn friendlies.
-  - Operating a sentry needs engineering training.
+  - [bold]571-C 哨兵机枪[/bold] 箱子可以放置哨兵和备用弹鼓。它配备了机关炮，并且不会攻击自己一方。
+  - [bold]55-FA 突击哨兵火焰喷射器[/bold] 箱子可以放置火焰哨兵和备用弹鼓。它喷射火焰而不是子弹，留下的火焰仍然可能烫伤友军。
+  - 操作哨兵需要工程学训练。
 
   ### Setting Up
-  - Use the sentry in your hand to deploy it where you stand. It takes 3 seconds.
-  - A sentry can only turn 75 degrees to either side of the way it faces, so point it down the approach you want covered. While it's switched off, rotate it with a [bold]screwdriver[/bold].
-  - [color=red]Put it on your IFF before switching it on.[/color] A freshly deployed sentry has no side. Use a [bold]multitool[/bold] on it (1 second) to set it to your IFF, so it knows who's friendly. It won't switch on until you do, and examining it reminds you if it's still unset.
-  - Switch it on to start it tracking targets. It can't be rotated or moved while it's on.
-  - A sentry won't switch on within two tiles of another active sentry.
+  - 使用你手中的哨兵在你站立的位置部署它，需要3秒钟。
+  - 哨兵只能向它面对的方向两侧旋转各75度，所以请将其指向你想要覆盖的路径。在关闭状态下，可以用[bold]螺丝刀[/bold]旋转它。
+  - [color=red]在开启之前将其设置为你的IFF。[/color]新部署的哨兵还没有阵营。用[bold]多功能工具[/bold]（1秒）设置它的IFF，这样它就知道谁是友军。在设置之前它不会开启，检查它可以提醒你是否还未设置。
+  - 开启它以开始追踪目标。开启状态下无法旋转或移动。
+  - 哨兵在距离另一台活跃哨兵两格内无法开启。
 
   ### Keeping It Running
-  - When its drum runs dry, load a new one. It takes 7 seconds, and you can only swap the drum once it's empty.
-  - Use a [bold]wrench[/bold] to disassemble it back into an item so you can move it.
+  - 当其鼓筒耗尽时，装上新的。需要7秒，并且只有在鼓筒空了之后才能更换。
+  - 使用[bold]扳手[/bold]将其拆回成一个物品，这样你就可以移动它。
 
   ### Upgrading
   <Box>
     <GuideEntityEmbed Entity="RMCEngineeringUpgrade" Caption="Engineering upgrade kit"/>
   </Box>
-  The [bold]engineering upgrade kit[/bold] turns a standard 571-C into a specialized sentry. Disassemble the sentry with a wrench first, then hold the kit in your active hand and use it on the sentry to pick one:
-  - [bold]725-D sniper sentry[/bold]: long-range targeting.
-  - [bold]12-G shotgun sentry[/bold]: built for close range, with sturdier plating and steel tusks that cut anyone who attacks it.
-  - [bold]512-M mini sentry[/bold]: compact, for quick deployment in the field.
-  - [bold]571-D omnidirectional sentry[/bold]: turns all the way around, covering every direction.
+  [bold]工程升级套件[/bold] 可以将标准 571-C 改装为专业哨兵。首先使用扳手拆卸哨兵，然后将套件握在活动手中，并用它对准哨兵以选择一个：
+  - [bold]725-D 狙击哨兵[/bold]：远程瞄准。
+  - [bold]12-G 霰弹枪哨兵[/bold]：为近距离设计，拥有更坚固的装甲和钢制獠牙，可以切割任何攻击它的人。
+  - [bold]512-M 微型哨兵[/bold]：体积小，便于快速部署。
+  - [bold]571-D 全方向哨兵[/bold]：可以完全旋转，覆盖所有方向。
 
   ## The Sentry Laptop
   <Box>
     <GuideEntityEmbed Entity="RMCSentryLaptop" Caption="Sentry laptop"/>
   </Box>
-  The [bold]sentry laptop[/bold] lets you monitor and control your sentries remotely. It comes in some sentry cases and supply crates, and engineering vendors stock it. You need engineering training to use it.
-  - [bold]Setting up[/bold]: place it on a table. It opens and powers up there, and shuts down again if it's picked up.
-  - [bold]Linking sentries[/bold]: with the laptop open, use an access tuner (multitool) to link each sentry to it.
-  - Each linked sentry gets a card showing its health, ammo, mode, location and current target. You can rename it, too.
-  - [bold]Toggle power[/bold] switches a sentry on or off from the laptop.
-  - [bold]View cam[/bold] lets you look through the sentry's camera.
-  - [bold]IFF targeting controls[/bold] choose which factions each sentry will and won't shoot at. [bold]Reset to default[/bold] puts them back to normal. There are also controls to apply these to every linked sentry at once.
-  - [bold]Unlink[/bold] drops a sentry from the laptop.
-  - [bold]Alerts[/bold]: the laptop warns you when a sentry is taking damage, drops to critical health, runs low on ammo (a quarter left) or starts engaging a target. With the screen open the alerts show in the window; otherwise they pop up over the laptop.
+  [bold]哨兵笔记本[/bold]让你可以远程监控和控制你的哨兵。它可以在一些哨兵箱和补给箱中找到，工程供应商也有存货。你需要工程训练才能使用它。
+  - [bold]设置[/bold]：将其放在桌子上。放在桌子上时，它会打开并启动，如果被拿起，它会再次关闭。
+  - [bold]连接哨兵[/bold]：在笔记本电脑打开的情况下，使用接入调谐器（多功能工具）将每个哨兵连接到笔记本电脑。
+  - 每个连接的哨兵都会显示一张卡片，上面显示其生命、弹药、模式、位置和当前目标。你也可以为其重命名。
+  - [bold]切换电源[/bold] 可以从笔记本电脑打开或关闭哨兵。
+  - [bold]查看摄像头[/bold] 可以让你通过哨兵的摄像头观察。
+  - [bold]IFF（身份识别友敌）瞄准控制[/bold] 可以选择每个哨兵将会和不会攻击的阵营。[bold]复位默认[/bold] 将其恢复为默认状态。还有一些控制选项可以同时应用到所有已连接的哨兵。
+  - [bold]取消连接[/bold] 将哨兵从笔记本电脑中移除。
+  - [bold]警报[/bold]：当哨兵受到伤害、生命降至危险值、弹药不足（剩余四分之一）或开始攻击目标时，笔记本电脑会发出警告打开屏幕后，警报会显示在窗口中；否则，它们会弹出在笔记本电脑上。
 </Document>

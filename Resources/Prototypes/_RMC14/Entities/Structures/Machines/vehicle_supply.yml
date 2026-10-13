@@ -1098,7 +1098,7 @@
 
 - type: entity
   id: VehicleLift
-  name: 车辆举升机
+  name: 载具举升机
   suffix: Lowered, Vehicle Supply
   placement:
     mode: SnapgridCenter
@@ -1112,13 +1112,14 @@
     drawdepth: LowFloors
     layers:
     - state: supply_elevator_lowered
-      map: ["rmc-vehicle-supply-lift-base"]
+      map: [ "rmc-vehicle-supply-lift-base" ]
   - type: Physics
     bodyType: static
   - type: Fixtures
     fixtures:
       fix1:
-        shape: !type:PhysShapeAabb
+        shape:
+          !type:PhysShapeAabb
           bounds: "-2.3,-2.3,2.3,2.3"
         layer:
         - WallLayer

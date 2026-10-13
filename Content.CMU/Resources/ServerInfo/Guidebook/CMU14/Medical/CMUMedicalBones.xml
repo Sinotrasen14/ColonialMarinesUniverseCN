@@ -1,7 +1,7 @@
 <Document>
   # Fractures
 
-  Heavy hits can break bones. A broken bone hurts, and moving on one that isn't supported can make it worse.
+  重击可能会导致骨折。骨折会疼痛，如果在没有支撑的情况下移动，会使情况更糟。
 
   <Box>
     <GuideEntityEmbed Entity="CMUSplintItem" Caption="Splint"/>
@@ -11,36 +11,36 @@
   </Box>
 
   ## Severity
-  From least to most serious:
-  - [bold]Hairline[/bold]: a crack.
-  - [bold]Simple[/bold]: a clean break.
-  - [bold]Compound[/bold]: the bone has broken through. It also bleeds internally.
-  - [bold]Shattered[/bold]: the bone is in pieces. It bleeds internally even faster.
+  从最轻到最严重：
+  - [bold]Hairline[/bold]: 裂缝。
+  - [bold]Simple[/bold]: 彻底断开。
+  - [bold]Compound[/bold]: 骨头已经穿透了。它也在内部出血。
+  - [bold]Shattered[/bold]: 骨头碎了。它内部出血更快。
 
-  Examining a patient shows fractures, and a health analyzer shows them to anyone with basic medical training. With more training it shows the exact severity.
+  检查患者显示骨折，健康分析仪向任何具有基本医疗培训的人显示这些信息。经过更多培训，它显示确切的严重程度。
 
   ## Splints
-  - A splint stabilizes a broken limb, so moving on it stops making it worse. It works on hairline and simple fractures.
-  - [bold]A splint doesn't heal the bone.[/bold] It only holds things together until the patient can get a cast or surgery.
-  - Each splint has 4 uses and takes 3 seconds to apply.
+  - 夹板可以固定断裂的肢体，因此活动时不会使情况恶化。它适用于发丝状骨折和简单骨折。
+  - [bold]夹板不会让骨头愈合。[/bold] 它只是将骨头保持在一起，直到患者可以接受石膏或手术。
+  - 每个夹板有4种用途，使用时间为3秒。
 
   ## Casts
-  - A cast immobilizes a hairline or simple fracture and heals it completely over 5 minutes.
-  - Each cast has 4 uses and takes 6 seconds to apply.
-  - When the bone has healed, the patient is told the cast is ready to come off. Remove it with the [bold]Remove cast[/bold] option.
-  - If the bone breaks again while it's in a cast, the cast cracks apart.
-  - [bold]OsteoCalc[/bold] speeds up bone healing by half again while it's in the patient's system.
+  - 石膏可以固定发丝状骨折或简单骨折，并在 5 分钟内完全愈合。
+  - 每个石膏可使用 4 次，施加需要 6 秒。
+  - 当骨头愈合后，会告诉患者石膏可以取下。使用 [bold]取下石膏[/bold] 选项将其移除。
+  - 如果骨头在石膏中再次断裂，石膏会裂开。
+  - [bold]OsteoCalc[/bold] 在进入患者体内后，可使骨骼愈合速度加快一半。
 
   ## Surgery
-  Compound and shattered fractures can't be fixed with a cast; they need surgery. Surgery can fix any fracture, including hairline and simple ones.
-  - [bold]Set Simple Fracture[/bold] (hairline or simple): open the incision, realign the bone with a bone setter, apply bone gel, then close up.
-  - [bold]Set Compound Fracture[/bold]: open the incision, realign the bone with a bone setter, apply bone gel, then close up.
-  - [bold]Set Shattered Fracture[/bold]: open the incision, realign the bone with a bone setter, apply bone gel, insert a bone graft, set it with the bone setter again, then close up.
-  - Fractures in the chest or skull are reached by opening the bone cavity first.
+  复合骨折和粉碎性骨折不能用石膏固定；它们需要手术。手术可以修复任何骨折，包括裂纹骨折和单纯骨折。
+  - [bold]治疗简单骨折[/bold]（发丝或简单型）：切开切口，用整骨器对齐骨头，涂抹骨胶，然后缝合闭合。
+  - [bold]治疗复合骨折[/bold]：切开切口，用整骨器对齐骨头，涂抹骨胶，然后缝合闭合。
+  - [bold]治疗粉碎性骨折[/bold]：切开切口，用整骨器对齐骨头，涂抹骨胶，植入骨移植物，再用整骨器固定，然后缝合闭合。
+  - 胸部或颅骨的骨折需要先打开骨腔才能接触。
 
-  See [textlink="Surgery" link="CMUGuideMedicalSurgery"] for how to operate.
+  见 [textlink="Surgery" link="CMUGuideMedicalSurgery"] 关于如何操作。
 
   ## After Surgery
-  - [color=red]Put a cast on within 5 minutes of setting a bone.[/color] If you don't, there's a 30% chance it sets wrong, leaving the patient with a simple fracture again.
-  - A cast on a freshly set bone finishes healing it in 5 minutes. A cast also fixes a bone that has set wrong.
+  - [color=red]在骨折复位后5分钟内打石膏。[/color] 如果你不这样做，有30%的几率会固定不正确，使患者再次出现简单骨折。
+  - 把新固定的骨头打上石膏可以在5分钟内完成愈合。石膏还可以矫正固定错误的骨头。
 </Document>

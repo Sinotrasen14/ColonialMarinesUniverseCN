@@ -1,7 +1,7 @@
 <Document>
   # Mortar Operations
 
-  The mortar is an [italic]indirect fire[/italic] weapon. It lobs shells over walls and obstacles onto a spot you pick, from a long way back. It works best with a spotter feeding you targets.
+  迫击炮是一种[bold]间接火力[/bold]武器。它能把炮弹抛过墙壁和障碍物，落到你选定的地点，从很远的地方发射。配合观察员提供目标，它的效果最好。
 
   <Box>
     <GuideEntityEmbed Entity="RMCMortarKit" Caption="M402 mortar"/>
@@ -9,59 +9,58 @@
   </Box>
 
   ## What You Need
-  - [bold]Skill[/bold]: [color=#FFFF00]Engineering 1[/color]. The mortar kit comes with two mortar operator pamphlets if your role doesn't have it.
-  - [bold]A wrench[/bold]: to pack the mortar back up once it's deployed.
-  - [bold]A target[/bold]: coordinates from a rangefinder or laser designator, either your own or called in by someone else.
-
+  - [bold]技能[/bold]：[color=#FFFF00]工程 1[/color]。迫击炮套件附带两本迫击炮操作手册，如果你的角色没有的话。
+  - [bold]一把扳手[/bold]：在迫击炮部署后用来重新打包。
+  - [bold]一个目标[/bold]：来自测距仪或激光标定器的坐标，可以是你自己的，也可以是别人调用的。
   <Box>
     <GuideEntityEmbed Entity="RMCRangefinder"/>
     <GuideEntityEmbed Entity="RMCLaserDesignator"/>
   </Box>
 
-  The mortar kit case holds the mortar, two pamphlets, two mortar belts, a mortar backpack, three incendiary shells and two flare shells.
+  迫击炮套件箱内装有迫击炮、两本小册子、两条迫击炮弹带、一只迫击炮背包、三枚燃烧弹和两枚照明弹。
 
   ## Setting Up
-  - Hold the mortar and use it in your hand [color=#FFA500][keybind="ActivateItemInHand"][/color] to deploy it. This takes 4 seconds.
-  - It has to be [bold]outdoors[/bold]. You can't deploy or fire it under a roof.
-  - Use a wrench on it to pack it back up.
-  - Right-click it and pick [bold]Toggle Targeting Mode[/bold] to switch between [bold]coordinate mode[/bold] and [bold]laser mode[/bold].
+  - 握住迫击炮并在手中使用 [color=#FFA500][keybind="ActivateItemInHand"][/color] 来部署它。这需要 4 秒钟。
+  - 它必须在 [bold]户外[/bold]。你不能在屋顶下部署或发射它。
+  - 使用扳手将其收起。
+  - 右键点击它并选择 [bold]切换瞄准模式[/bold] 来在 [bold]坐标模式[/bold] 和 [bold]激光模式[/bold] 之间切换。
 
   ## Shells
-  Load a shell by using it on the deployed mortar. It fires as soon as it's loaded. Shells take about 4.5 seconds to land, and anyone near the impact gets a warning just before.
+  通过将弹壳放在已部署的迫击炮上来装弹。装弹后立即开火。弹壳大约需要4.5秒落地，接近撞击点的任何人会在撞击前收到警告。
 
   <Box HorizontalAlignment="Left"><GuideEntityEmbed Entity="RMCMortarShellHE"/></Box>
-  - [bold]M889 HE[/bold]: a big explosion that knocks back and stuns everything nearby. Punches through roofs on multi-level maps.
+  - [bold]M889 HE[/bold]: 一场巨大的爆炸，将附近的一切击退并眩晕。在多层地图上可以穿透屋顶。
 
   <Box HorizontalAlignment="Left"><GuideEntityEmbed Entity="AU14MortarShellHEATMP"/></Box>
-  - [bold]M971 HEAT-MP[/bold]: a smaller blast than HE but far more destructive in the middle. Good against vehicles and hard targets, and opens holes between floors.
+  - [bold]M971 HEAT-MP[/bold]: 比高爆弹冲击小，但中间破坏力更强。对车辆和坚硬目标效果好，并能在楼层之间开孔。
 
   <Box HorizontalAlignment="Left"><GuideEntityEmbed Entity="RMCMortarShellIncendiary"/></Box>
-  - [bold]M902 HE-INC[/bold]: a small blast that leaves a wide patch of fire. Good for area denial and cutting off retreats.
+  - [bold]M902 HE-INC[/bold]: 一次小型爆炸，会留下广泛的火焰区域。适合控制区域和切断撤退路线。
 
   <Box HorizontalAlignment="Left"><GuideEntityEmbed Entity="RMCMortarShellFlare"/></Box>
-  - [bold]M853 ILLUM-OBS[/bold]: no damage. Drops a flare that lights up the area and a camera you can watch from the mortar's [bold]View[/bold] button for about 3 minutes. Use it to spot targets and walk your shots in.
+  - [bold]M853 ILLUM-OBS[/bold]: 没有伤害。投下一个照亮区域的信号弹和一个你可以通过迫击炮的[bold]视图[/bold]按钮观看的大约持续3分钟的摄像机。用它来侦察目标并校准你的射击。
 
   ## Range
-  The mortar can hit anything between [color=#FFFF00]8 tiles[/color] and [color=#FFFF00]165 tiles[/color] away. It won't fire outside that range, into the landing zone, or at underground or roofed-over targets it can't reach.
+  迫击炮可以击中距离[color=#FFFF00]8格[/color]到[color=#FFFF00]165格[/color]之间的任何目标。它不会在该范围之外开火，也不会射向着陆区，或者射向它无法到达的地下或有屋顶的目标。
 
-  Since it fires from far back, the mortar crew is an easy target for flankers. Keep someone watching your back.
+  由于它从很远的地方开火，迫击炮组是侧翼攻击者的容易目标。让某人盯着你的后方。
 
   ## Coordinate Mode
-  Type the target's X and Y into the mortar and press [color=#00FF00]Set Target[/color]. Aiming takes 3 seconds.
+  将目标的 X 和 Y 输入迫击炮，然后按 [color=#00FF00]设置目标[/color]。瞄准需要 3 秒。
 
-  - +X is east, -X is west.
-  - +Y is north, -Y is south.
+  - X 是东，-X 是西。
+  - Y 是北，-Y 是南。
 
-  [bold]Accuracy[/bold]: coordinate mode isn't perfect.
-  - When you set a target, the mortar picks a hidden aiming error of up to [bold]1 tile for every 20 tiles of distance[/bold] on each axis. That error stays the same until you press Set Target again.
-  - On top of that, every shot can land [bold]1 tile off[/bold] in either direction.
+  [bold]精确度[/bold]：坐标模式并不完美。
+  - 当你设定目标时，迫击炮每个轴向会选择一个隐藏的瞄准误差，每[bold]每20格距离误差可达1格[/bold]。该误差在你再次按下设定目标之前保持不变。
+  - 除此之外，每次射击的落点都可能在任意方向[bold]偏离1格[/bold]。
 
-  [bold]Dialing[/bold]: [color=#00FF00]Dial Offset[/color] shifts your aim up to [bold]10 tiles[/bold] in any direction without resetting the target, which takes 1 second. Because the aiming error stays fixed until you set a new target, you can drop a flare shell, watch where it lands on the camera, then dial your shots onto the target.
+  [bold]瞄准[/bold]：[color=#00FF00]瞄准偏移[/color] 可以将你的瞄准点在任意方向上移动最多 [bold]10 格[/bold] 而不重置目标，这需要 1 秒。由于瞄准误差在你设置新目标之前保持不变，你可以先投放照明弹，观察它在摄像机上的落点，然后将你的射击瞄准目标。
 
   ## Laser Mode
-  Switch the mortar to laser mode, then use a laser designator on the mortar to link it (3 seconds). From then on, whatever that designator lases becomes the mortar's target.
+将迫击炮切换到激光模式，然后使用激光指定器对迫击炮进行链接（3秒）。从那时起，无论该指定器照射什么，都会成为迫击炮的目标。
 
-  - Laser mode is [bold]precise[/bold]. There's no aiming error and no random spread.
-  - The mortar takes a second to update each time the laser moves. It beeps when the new target is good and warns you if it isn't.
-  - If the designator stops lasing, the mortar has nothing to fire at.
+  - 激光模式是[bold]精准[/bold]的。没有瞄准误差，也没有随机散布。
+  - 当激光移动时，迫击炮每次更新需要一秒。当新目标合适时会发出哔哔声，如果不合适会发出警告。
+  - 如果制导器停止发射激光，迫击炮就没有目标可射。
 </Document>

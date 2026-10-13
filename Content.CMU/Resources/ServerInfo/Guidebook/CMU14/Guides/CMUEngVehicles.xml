@@ -5,54 +5,54 @@
     <GuideEntityEmbed Entity="RMCMaintenanceJack" Caption="Maintenance jack"/>
   </Box>
 
-  Vehicles are built from a [bold]frame[/bold] with [bold]hardpoints[/bold] mounted on it: weapons, armor, engine, treads or wheels and so on. Each hardpoint has its own integrity, and damaged hardpoints start breaking down in specific ways. Your engineering skill makes every repair faster.
+  车辆由一个[bold]框架[/bold]构建，并在其上安装[bold]挂点[/bold]：武器、装甲、引擎、履带或轮子等。每个挂点都有其自身的完整性，受损的挂点会以特定的方式开始损坏。你的工程技能可以加快每一次维修速度。
 
   ## Maintenance Mode
-  You can't work on a vehicle while it's running.
-  - The [bold]driver[/bold] has to stop the vehicle and switch it into maintenance mode. Opening or closing the panels takes 5 seconds.
-  - While the panels are open, the engine and weapons are locked.
-  - [color=red]Open panels expose the vehicle's systems, and it takes 50% more damage.[/color] Don't open up under fire.
-  - You can't repair anything while its ammunition is cooking off.
+  你不能在车辆运转时进行维修。
+  - [bold]驾驶员[/bold]必须停车并将车辆切换到维护模式。打开或关闭面板需要5秒钟。
+  - 当面板打开时，发动机和武器被锁定。
+  - [color=red]打开的面板会暴露车辆的系统，受到的伤害增加50%。[/color] 不要在遭受攻击时打开。
+  - 弹药在爆炸时无法进行维修。
 
   ## Checking the Damage
-  - Examine a vehicle or a hardpoint to see its integrity and condition, from pristine down to barely holding together.
-  - Use the [bold]Vehicle maintenance[/bold] verb to open the hardpoint menu. It lists every mounted hardpoint, its integrity, and any active faults, with buttons to repair or remove each one.
-  - A damaged hardpoint loses performance as its integrity drops, starting below 70%. At 15% it stops working entirely.
+  - 检查车辆或硬点以查看其完整性和状态，从完好无损到勉强维持。
+  - 使用[bold]车辆维护[/bold]动作来打开挂点菜单。它列出了每个已安装的挂点、其完整性以及任何活动故障，并提供修理或移除每个挂点的按钮。
+  - 当挂点的完整性下降时，损坏的挂点性能会下降，从低于70%开始。当低于15%时，它将完全停止工作。
 
   ## Repairing Hardpoints
-  - Hold a [bold]blowtorch[/bold] and weld the damaged hardpoint. Each pass restores a chunk of its integrity and burns fuel, so bring a full welder or a fuel tank.
-  - Hardpoints can be repaired while mounted, from the hardpoint menu, or after removing them.
-  - Each repair permanently removes [color=orange]30% of the integrity restored[/color] from the part's repair ceiling, down to [bold]20% of its factory capacity[/bold]. The displayed maximum stays at factory capacity, so a worn part will no longer reach 100%.
+  - 拿着[bold]焊枪[/bold]焊接受损的挂点。每次焊接都会恢复其部分完整性并消耗燃料，所以请携带完整的焊机或燃料罐。
+  - 挂点可以在安装状态下、通过挂点菜单或者拆除后进行修复。
+  - 每次修复会永久移除该部件修复上限的[color=orange]30%[/color]，最低降至[bold]工厂容量的20%[/bold]。显示的最大值仍显示为工厂容量，因此磨损的部件不再能达到100%完整性。
 
   ## Repairing the Frame
-  - A single hit that deals at least the vehicle's full hull capacity after armor permanently destroys the frame. Welding or replacing hardpoints cannot restore it. Tanks also cook off when this happens.
-  - The frame's hull integrity comes from its hardpoints. Repair the damaged hardpoints first; the frame can't be fixed while they're still broken.
-  - Then weld the frame. Welding only brings it back up to [bold]75%[/bold].
-  - Finish the last 25% by tightening it with a [bold]wrench[/bold].
+  - 一次攻击如果造成的伤害至少达到车辆装甲后的整车耐久，将会永久摧毁车架。焊接或更换挂点无法恢复它。发生这种情况时，坦克还会发生自燃。
+  - 车架的结构完整性来自其挂点。先修复受损的挂点；在挂点仍然破损时车架无法修复。
+  - 然后焊接车架。焊接只能将其恢复到[bold]75%[/bold]。
+  - 使用[bold]扳手[/bold]紧固完成剩余的25% 。
 
   ## Faults
-  A hardpoint below 75% of its remaining repair capacity that takes a heavy hit can develop a [bold]fault[/bold], and [color=orange]each hardpoint can carry up to two[/color] at once. Other hardpoints have their own allowance. Snowplows do not develop faults. Faults show up when you examine the vehicle and in the hardpoint menu. Pick the fault to repair, then work through each step with the right tool in your active hand. The menu tells you what each step needs.
+  当一个挂点的剩余修复容量低于75%并受到重击时，可能会出现[bold]故障[/bold]，[color=orange]每个挂点一次最多可以承载两个[/color]。其他挂点有各自的承载限制。除雪铲不会出现故障。检查车辆和挂点菜单时会显示故障。选择要修复的故障，然后使用你主动手中的正确工具逐步进行操作。菜单会告诉你每一步所需的工具。
 
-  - [bold]Armor plating breach[/bold]: the hardpoint's armor stops protecting. Wrench, then weld.
-  - [bold]Jammed feed system[/bold]: the weapon jams or misfires at random. Screwdriver, then multitool.
-  - [bold]Runaway trigger[/bold]: the weapon fires on its own. Screwdriver, multitool, then wrench.
-  - [bold]Damaged traverse ring[/bold]: the turret turns very slowly. Wrench, then maintenance jack.
-  - [bold]Engine misfire[/bold]: lower acceleration and top speed. Screwdriver, multitool, then wrench.
-  - [bold]Transmission slip[/bold]: lower acceleration, reverse and top speed. Maintenance jack, then wrench.
-  - [bold]Warped frame[/bold]: the frame drags, slowing everything. Maintenance jack, weld, then wrench.
-  - [bold]Damaged mount[/bold]: the hardpoint's output is weakened. Maintenance jack, then wrench.
-  - [bold]Tire blowout[/bold]: lost speed and traction. Crowbar, maintenance jack, then wrench.
-  - [bold]Thrown tread[/bold]: the vehicle can barely move. Maintenance jack, crowbar, then wrench.
-  - [bold]Engine overheating[/bold]: acceleration heavily reduced. Screwdriver, crowbar, then multitool.
-  - [bold]Electrical short[/bold]: the hardpoint's output is unreliable. Wire cutters, multitool, then screwdriver.
-  - [bold]Fuel leak[/bold]: the vehicle leaks fuel until it's fixed. Screwdriver, weld, then wrench.
+  - [bold]装甲板破损[/bold]：硬点的装甲停止保护。使用扳手，然后焊接。
+  - [bold]供弹系统卡壳[/bold]：武器随机卡壳或误射。使用螺丝刀，然后多功能工具。
+  - [bold]脱控扳机[/bold]：武器自行发射。使用螺丝刀、多功能工具，然后扳手。
+  - [bold]转盘环损坏[/bold]：炮塔旋转非常缓慢。使用扳手，然后维修千斤顶。
+  - [bold]发动机熄火[/bold]：加速度和最高速度降低。使用螺丝刀、多功能工具，然后扳手。
+  - [bold]变速器打滑[/bold]：加速度、倒车和最高速度降低。使用维修千斤顶，然后扳手。
+  - [bold]车架变形[/bold]：车架拖拽，导致一切减速。使用维修千斤顶、焊接，然后扳手。
+  - [bold]支撑损坏[/bold]：硬点输出减弱。使用维修千斤顶，然后扳手。
+  - [bold]轮胎爆胎[/bold]：速度和牵引力丧失。使用撬棍、维修千斤顶，然后扳手。
+  - [bold]轮胎脱落[/bold]：车辆几乎无法移动. 千斤顶、撬棍，然后是扳手。
+  - [bold]发动机过热[/bold]：加速能力大幅下降。螺丝刀、撬棍，然后是多功能工具。
+  - [bold]电气短路[/bold]：硬点的输出不可靠。剪线钳、多功能工具，然后是螺丝刀。
+  - [bold]燃油泄漏[/bold]：车辆会泄漏燃油，直到修复。螺丝刀、焊接，然后是扳手。
 
   ## Swapping Hardpoints
-  - Remove a hardpoint from the hardpoint menu while holding a [bold]maintenance jack[/bold]. Some can also be pried off with a crowbar.
-  - A vehicle with an empty wheel mount can't move until a wheel is put back in.
+  - 在握持[bold]维护千斤顶[/bold]时，从挂点菜单中移除一个挂点。有些也可以用撬棍撬下。
+  - 车轮座为空的车辆在没有装回车轮之前不能移动。
 
   ## Locks
-  - The driver can lock and unlock the vehicle's doors.
-  - Enough damage breaks the lock open, and someone can cut it open with wire cutters in a minute.
-  - Fix a broken lock with a [bold]screwdriver[/bold]. It takes 10 seconds.
+  - 驾驶员可以锁上或解锁车辆的车门。
+  - 足够的损坏会破坏锁，某人可以用钢丝钳在一分钟内把它切开。
+  - 用[bold]螺丝刀[/bold]修理坏掉的锁。需要10秒钟。
 </Document>

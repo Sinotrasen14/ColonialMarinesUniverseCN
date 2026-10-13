@@ -1,7 +1,7 @@
 <Document>
   # Defibrillators
 
-  A defibrillator shocks a patient who has died back to life, as long as their body can still be saved. There are two kinds: the manual [bold]Lifepak 15F[/bold], which is also a patient monitor, and the [bold]automated external defibrillator (AED)[/bold], which does the thinking for you.
+  除颤器可以使已经死亡的患者恢复生命，只要他们的身体还有挽救的可能。除颤器有两种：手动的[bold]Lifepak 15F[/bold]，它也是一台患者监护仪，以及[bold]自动体外除颤器（AED）[/bold]，它会为你进行判断。
 
   <Box>
     <GuideEntityEmbed Entity="AU14CMDefibrillator" Caption="Lifepak 15F"/>
@@ -9,77 +9,76 @@
   </Box>
 
   ## How a Shock Brings Someone Back
-  - Only a [bold]dead[/bold] patient can be shocked back. A rotten body, one that can't be revived, or one protected by armour that blocks the shock can't be saved.
-  - A revival shock heals suffocation and blood loss damage. If that brings the patient's total damage back under the point where they died, they come back in critical condition.
-  - Treat the patient's other injuries before shocking, so the shock has less damage to overcome.
-  - Shocking the patient also burns them, except at the lowest energy. How badly depends on the energy (see below).
+  - 只有[bold]死去[/bold]的患者才能被电击复活。腐烂的身体、无法恢复的身体或被能阻挡电击的护甲保护的身体无法被救活。
+  - 复活电击可以治疗窒息和失血造成的伤害。如果这使患者的总伤害降到死亡点以下，他们会以危重状态复活。
+  - 在电击之前先处理患者的其他伤害，这样电击需要克服的伤害就会减少。
+  - 电击患者也会被烧伤，除非使用最低能量。烧伤的严重程度取决于能量（见下文）。
 
   ## The Lifepak 15F
-  - Use it in your hand to switch it on. The paddles are docked on top of the unit.
-  - Switching it on or off and changing the energy need at least basic medical training. Delivering a shock needs a trained medic.
-  - With it switched on, click on a patient to start charging. The charge takes as long as the power-up tone, about 7.6 seconds. The paddles come off the unit while it charges.
-  - It says "stand clear" just before the shock. Afterwards it says "check for pulse" if the patient came back, or "check patient" if they didn't.
+  - 在手中使用它来开机。电极板停放在装置的顶部。
+  - 开关机或改变能量需要至少基本的医疗训练。实施电击需要经过培训的医护人员。
+  - 开机后，点击患者开始充电。充电时间与启动音一样长，大约7.6秒。充电时电极板会从装置上取下。
+  - 在电击前它会提示“请远离”。之后，如果患者恢复，会提示“检查脉搏”，如果未恢复，则提示“检查患者”。
 
   ### Selecting the Energy
-  The Lifepak delivers a set amount of energy, measured in joules (J). Right-click it and choose [bold]Raise energy[/bold] or [bold]Lower energy[/bold], or use the energy keys on its monitor. It starts at 150 J. Examine it to see the current setting.
+  Lifepak 提供一定量的能量，以焦耳（J）为单位测量。 右键点击它，然后选择 [bold]提高能量[/bold] 或 [bold]降低能量[/bold]，或者使用其显示器上的能量键。它的初始值为 150 焦耳。检查它以查看当前设置。
 
-  More energy heals more and is more likely to bring someone back, but it burns the patient more. For the Lifepak, each setting heals up to this much suffocation damage [bold]and[/bold] up to this much blood loss damage:
-  - [bold]50 J[/bold]: heals 30 of each. No burns.
-  - [bold]70 J[/bold]: heals 37 of each. Deals 5 shock damage.
-  - [bold]100 J[/bold]: heals 45 of each. Deals 10 shock damage.
-  - [bold]120 J[/bold]: heals 60 of each. Deals 18 shock damage.
-  - [bold]150 J[/bold]: heals 75 of each. Deals 25 shock damage.
-  - [bold]170 J[/bold]: heals 90 of each. Deals 25 shock damage, plus 5 burn damage to the chest. This leaves a small burn wound a burn kit can treat, with a 1 in 10 chance of a full-thickness burn (eschar), which has to be surgically debrided.
-  - [bold]200 J[/bold]: heals 115 of each. Deals 25 shock damage, plus 10 burn damage to the chest. There's also a 1 in 4 chance of a full-thickness burn (eschar), which has to be surgically debrided.
+  更多的能量可以治愈更多，也更有可能让某人复活，但它会对患者造成更多消耗。对于Lifepak，每个设置可以治愈最多这么多的窒息伤害和最多这么多的失血伤害：
+  - [bold]50 J[/bold]：恢复每项30点，无灼伤。
+  - [bold]70 J[/bold]：恢复每项37点，造成5点电击伤害。
+  - [bold]100 J[/bold]：恢复每项45点，造成10点电击伤害。
+  - [bold]120 J[/bold]：恢复每项60点，造成18点电击伤害。
+  - [bold]150 J[/bold]：恢复每项75点，造成25点电击伤害。
+  - [bold]170 J[/bold]：恢复每项90点，造成25点电击伤害，并对胸部造成5点灼伤伤害。产生的小灼伤可用烧伤包治疗，有1/10的几率成为全层灼伤（焦痂），需手术清创。
+  - [bold]200 J[/bold]：恢复每项115点，造成25点电击伤害，并对胸部造成10点灼伤伤害。此外，有1/4的几率出现全层灼伤（焦痂），需手术清创。
 
-  Shock damage is a type of burn damage, treated like any other burn.
+  电击伤害是一种烧伤，处理方式与其他烧伤相同。
 
-  Use the lowest energy that will do the job. The monitor's ANALYZE key works this out for you.
+  使用能完成工作的最低能量。监视器的 ANALYZE 键会为你计算出这个值。
 
   ## The AED
-  The AED is small and simple, and chooses everything itself. It can't be adjusted by hand.
-  - Every time you start a shock, it first analyzes the patient.
-  - [bold]"Shock advised"[/bold]: the patient can be shocked back. The AED picks the lowest energy it expects to work, charges, says "stand clear, push to shock", then shocks. Afterwards it says "if no pulse, push analyze".
-  - An AED shock doesn't deal shock damage. It only leaves a chest burn if it has to pick 170 J or 200 J, the same as the Lifepak.
-  - [bold]"No shock advised"[/bold]: the AED won't charge at all. This happens if the patient is still alive, or if their body is too far gone to save.
+  AED体积小，操作简单，所有设置均由设备自动选择，无法手动调节。
+  - 每次启动电击前，AED都会先分析患者情况。
+  - [bold]“建议电击”[/bold]：患者可以接受电击。AED会选择它预期有效的最低能量进行充电，并提示“站开，按下电击”，然后进行电击。之后它会说“如无脉搏，按分析”。
+  - AED电击不会造成电击伤害。只有在必须选择170焦耳或200焦耳时才会留下胸部灼伤，与Lifepak相同。
+  - [bold]“不建议电击”[/bold]：AED不会进行充电。如果患者仍然存活，或其身体情况已经无可挽救，就会出现这种情况。
 
   ## The Lifepak as a Patient Monitor
-  The Lifepak can be hooked up to a patient to watch their vitals.
-  - [bold]Attaching the leads[/bold]: set the Lifepak down next to the patient, then drag it onto them. This takes basic medical training. The leads pull off if the Lifepak is moved more than 2 tiles away. Drag it onto the patient again, or use [bold]Disconnect leads[/bold], to take them off.
-  - [bold]Viewing the screen[/bold]: right-click the Lifepak and choose [bold]View monitor[/bold]. This also takes basic medical training.
-  - [bold]It must be switched on[/bold]: switched off, the screen stays dark and it makes no sound, even with the leads on. Switching it off also cancels any charge.
+  Lifepak 可以连接到病人身上以监测他们的生命体征。
+  - [bold]连接电极[/bold]：将 Lifepak 放在患者旁边，然后将其拖到患者身上。这需要基本的医疗培训。如果 Lifepak 移动超过 2 格，电极会脱落。再次将其拖到患者身上，或使用 [bold]断开电极[/bold] 取下电极。
+  - [bold]查看屏幕[/bold]：右键点击 Lifepak 并选择 [bold]查看监视器[/bold]。这也需要基本的医疗培训。
+  - [bold]必须开机[/bold]：如果关机，屏幕保持黑暗且不发声，即使电极已连接。关机还会取消任何充电。
 
   ### The Screen
-  - [bold]ECG[/bold] (green): the heart's electrical rhythm. The monitor beeps with every heartbeat.
-  - [bold]Pleth[/bold] (blue): the pulse reaching the patient's finger.
-  - [bold]CO2[/bold] (yellow): their breathing.
-  - [bold]HR[/bold]: heart rate and the rhythm name.
-  - [bold]HEART[/bold]: the health of the heart itself, as a health analyzer shows it: healthy, bruised, damaged, failing or dead.
-  - [bold]SpO2[/bold]: how much oxygen is in the blood. It falls with suffocation and blood loss.
-  - [bold]NIBP[/bold]: blood pressure. It's taken when the leads go on, every 2 minutes after that, and whenever you press NIBP. It drops with blood loss.
-  - [bold]EtCO2 and RR[/bold]: exhaled CO2 and breathing rate. A low EtCO2 means blood isn't getting around the body well.
-  - [bold]TEMP[/bold]: body temperature.
-  - [bold]ENERGY[/bold]: the selected energy, and whether the paddles are armed.
-  - [bold]Code summary[/bold]: a timed log of everything that happens, including rhythm changes, analyses, charges, shocks, return of pulse (ROSC) and blood pressures.
+  - [bold]心电图[/bold]（绿色）：心脏的电节律。每次心跳时监视器都会发出蜂鸣声。
+  - [bold]脉搏波[/bold]（蓝色）：到达患者手指的脉搏。
+  - [bold]二氧化碳[/bold]（黄色）：患者的呼吸。
+  - [bold]心率[/bold]：心率及节律名称。
+  - [bold]心脏[/bold]：心脏本身的健康状况，由健康分析仪显示：健康、挫伤、损伤、衰竭或死亡。
+  - [bold]血氧饱和度[/bold]：血液中的氧含量。窒息和失血时会下降。
+  - [bold]无创血压[/bold]：血压。在贴上导联时测量，之后每2分钟测量一次，或每次按下NIBP时测量。失血时血压下降。
+  - [bold]呼气末CO2和呼吸频率[/bold]：呼出的CO2和呼吸率。低呼气末CO2意味着血液循环不良。
+  - [bold]体温[/bold]：体温。
+  - [bold]能量[/bold]：选择的能量，以及电击板是否已准备好。- [bold]代码摘要[/bold]：对所发生的一切进行有时间记录，包括节律变化、分析、充电、除颤、脉搏恢复（ROSC）和血压。
 
   ### Rhythms
-  - [bold]Sinus rhythm[/bold]: normal.
-  - [bold]Sinus tachycardia[/bold]: a fast heart, over 100 beats a minute.
-  - [bold]Sinus bradycardia[/bold]: a slow heart, under 60.
-  - [bold]Irregular rhythm[/bold]: a damaged heart beating unevenly.
-  - [bold]Ventricular fibrillation (VF)[/bold]: no pulse, but the patient can still be shocked back. Shock advised.
-  - [bold]Asystole[/bold]: a flat line. The patient is too far gone to shock back. No shock advised.
+  - [bold]窦性心律[/bold]：正常。
+  - [bold]窦性心动过速[/bold]：心跳过快，每分钟超过100次。
+  - [bold]窦性心动过缓[/bold]：心跳过慢，每分钟少于60次。
+  - [bold]心律不齐[/bold]：心脏受损，跳动不均。
+  - [bold]室颤（VF）[/bold]：无脉搏，但患者仍可通过电击恢复。建议电击。
+  - [bold]心脏停搏[/bold]：平线。患者情况过于严重，无法通过电击恢复。不建议电击。
 
   ### Keys
-  - [bold]ANALYZE[/bold]: says "analyzing now", then after 3 seconds "shock advised" or "no shock advised". If a shock is advised, it selects the lowest energy expected to bring the patient back, or 200 J if even that might not be enough.
-  - [bold]CHARGE[/bold] and [bold]SHOCK[/bold]: shock the patient through the monitor leads, without holding the Lifepak. Press CHARGE, wait for "stand clear" and the ready tone, then press SHOCK. An unused charge is dumped after 60 seconds. These need a trained medic.
-  - [bold]ENERGY ▲ / ▼[/bold]: raise or lower the energy.
-  - [bold]NIBP[/bold]: take a blood pressure now.
-  - [bold]ALARMS[/bold]: turn the alarms and the heartbeat beep off. They stay off until someone presses it again.
-  - [bold]LEADS OFF[/bold]: disconnect the leads.
+  - [bold]分析[/bold]：显示“正在分析”，然后在3秒后显示“建议电击”或“不建议电击”。如果建议电击，它会选择预期能让患者恢复的最低能量，或者如果即使最低能量可能也不足，则为200焦耳。
+  - [bold]充电[/bold] 和 [bold]电击[/bold]：通过监护电极对患者进行电击，无需手持Lifepak。按下充电按钮，等待“请远离”和准备音，然后按下电击。未使用的电荷在60秒后会释放。这些操作需要受过训练的医疗人员。
+  - [bold]能量 ▲ / ▼[/bold]：增加或降低能量。
+  - [bold]非侵入性血压[/bold]：立即测量血压。
+  - [bold]警报[/bold]：关闭警报和心跳提示音。关闭状态会持续，直到有人再次按下按钮。
+  - [bold]电极脱落[/bold]：断开电极。
 
   ### Alarms
-  - [bold]VF[/bold]: a rapid repeating alarm.
-  - [bold]Asystole[/bold]: a continuous flatline tone.
-  - [bold]Low SpO2 or low blood pressure[/bold]: a repeating warning beep.
+  - [bold]室颤 (VF)[/bold]：快速重复的报警声。
+  - [bold]心脏停搏 (Asystole)[/bold]：连续的平线音。
+  - [bold]低血氧或低血压 (Low SpO2 or low blood pressure)[/bold]：重复的警告蜂鸣声。
 </Document>
