@@ -1,5 +1,5 @@
 pill-label-dexalin-20u = 德沙林 20u
-pill-label-dylovene-20u = 迪洛芬 20u
+pill-label-dylovene-20u = 地洛芬 20u
 pill-label-hyronalin-20u = 海罗那林 20u
 pill-label-potassium-iodide-20u = 碘化钾 20u
 pill-label-iron-20u = 铁 20u

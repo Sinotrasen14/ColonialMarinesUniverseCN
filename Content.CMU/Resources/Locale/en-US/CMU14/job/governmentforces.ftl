@@ -12,7 +12,7 @@ au14-job-name-govforadjutant = 执行官
 au14-job-description-govforadjutant = 随时准备接管指挥。处理部队行政事务，保持指挥链顺畅运转。
 au14-job-prefix-govforadjutant = XO
 
-au14-job-name-govforplatop = 参谋军官
+au14-job-name-govforplatop = 参谋官
 au14-job-description-govforplatop = 规划行动并追踪战场态势。将舰长的意图转化为命令，协助协调与作战监督。
 au14-job-prefix-govforplatop = SO
 
@@ -20,7 +20,7 @@ au14-job-name-govforengineering = 工程军官
 au14-job-description-govforengineering = 在压力下保持部队的设施、资产和装备正常运转。按你认为合适的方式改造舰船。
 au14-job-prefix-govforengineering = EO
 
-au14-job-name-govforintel = 情报军官
+au14-job-name-govforintel = 情报官
 au14-job-description-govforintel = 协助舰长处理情报事务。
 au14-job-prefix-govforintel = IO
 
@@ -36,11 +36,11 @@ au14-job-name-govforpolicechief = 宪兵主任
 au14-job-description-govforpolicechief = 监督宪兵行动。执行纪律，维护部队内部秩序。
 au14-job-prefix-govforpolicechief = CMP
 
-au14-job-name-govfordspilot = 运输机飞行员
-au14-job-description-govfordspilot = 驾驶运输机。投送部队、撤离伤员并提供火力支援。
+au14-job-name-govfordspilot = 支援机飞行员
+au14-job-description-govfordspilot = 驾驶支援机。投送部队、撤离伤员并提供火力支援。
 au14-job-prefix-govfordspilot = DP
 
-au14-job-name-govfortransportpilot = 运输飞行员
+au14-job-name-govfortransportpilot = 运输机飞行员
 au14-job-description-govfortransportpilot = 驾驶运输机。投送部队、撤离伤员，并在舰船与前线之间运送补给。
 au14-job-prefix-govfortransportpilot = TP
 
@@ -52,7 +52,7 @@ au14-job-name-govforfighterpilot = 战斗机飞行员
 au14-job-description-govforfighterpilot = 驾驶战斗机。夺取制空权、拦截敌机并标记目标。
 au14-job-prefix-govforfighterpilot = FP
 
-au14-job-name-govforfightersystemsofficer = 战斗机系统官
+au14-job-name-govforfightersystemsofficer = 战斗机武器官
 au14-job-description-govforfightersystemsofficer = 担任战斗机后座乘员。操作其武器系统并打击目标。
 au14-job-prefix-govforfightersystemsofficer = FSO
 
@@ -64,7 +64,7 @@ au14-job-name-govforSSG = 高级军士
 au14-job-description-govforSSG = 高级士兵。保持排部运转。
 au14-job-prefix-govforSSG = SNRSRGT
 
-au14-job-name-govforsquadsergeant = 班长
+au14-job-name-govforsquadsergeant = 步兵班长
 au14-job-description-govforsquadsergeant = 领导一个班。服从上级命令，把你的人带回家。
 au14-job-prefix-govforsquadsergeant = SL
 
@@ -81,9 +81,9 @@ au14-job-name-govforsquadautomaticrifleman-plural = 自动步枪兵
 au14-job-description-govforsquadautomaticrifleman = 提供压制火力。压制敌人，让你的班继续推进。
 au14-job-prefix-govforsquadautomaticrifleman = ARFN
 
-au14-job-name-govforplatooncorpsman = 医院医护兵
+au14-job-name-govforplatooncorpsman = 战地医护兵
 au14-job-description-govforplatooncorpsman = 提供战地医疗救护。包扎伤口、维持呼吸，让他们重返战斗。
-au14-job-name-govforplatooncorpsman-plural = 医院医护兵
+au14-job-name-govforplatooncorpsman-plural = 战地医护兵
 au14-job-prefix-govforplatooncorpsman = HM
 
 au14-job-name-radiotelephoneoperator = 火力小组组长
@@ -119,7 +119,7 @@ au14-job-name-govforAuxTech = 后勤技术员
 au14-job-description-govforAuxTech = 处理请领事务，保持舰船运转和整洁。为你的阵营提供舰上后勤与工程支援。
 au14-job-prefix-govforAuxTech = AXT
 
-au14-job-name-vehiclecrewman = 载具乘员
+au14-job-name-vehiclecrewman = 载具成员
 au14-job-description-vehiclecrewman = 操作、维护并保护你所在阵营的装甲载具。
 au14-job-prefix-vehiclecrewman = VC
 

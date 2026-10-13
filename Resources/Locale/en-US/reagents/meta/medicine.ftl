@@ -1,7 +1,7 @@
 reagent-name-cryptobiolin = 隐生碱
 reagent-desc-cryptobiolin = 会引起混乱和眩晕。
 
-reagent-name-dylovene = 迪洛芬
+reagent-name-dylovene = 地洛芬
 reagent-desc-dylovene = 一种广谱抗毒素，可治疗有机体内的毒素伤害。过量会导致呕吐、眩晕和疼痛。
 
 reagent-name-diphenhydramine = 苯海拉明

@@ -3,8 +3,8 @@
   parent: BaseToolSurgery
   id: CMBaseToolSurgery
   abstract: true
-  name: 回缩器
-  description: 收回东西。
+  name: 牵开器
+  description: 牵开创口。
   components:
   - type: Item
     size: Small
@@ -46,7 +46,7 @@
 - type: entity
   parent: CMRetractor
   id: CMRetractorPredator
-  name: 开启者
+  name: 撑开器
   components:
   - type: Sprite
     state: predator_retractor
@@ -81,7 +81,7 @@
 - type: entity
   parent: CMHemostat
   id: CMHemostatPredator
-  name: 钳子
+  name: 止血钳
   components:
   - type: Sprite
     state: predator_hemostat
@@ -224,7 +224,7 @@
 - type: entity
   parent: CMScalpel
   id: CMScalpelPredator
-  name: 切割机
+  name: 切割器
   components:
   - type: Sprite
     state: predator_scalpel
@@ -306,7 +306,7 @@
   parent: CMScalpel
   id: CMScalpelPICT
   name: PICT系统
-  description: PICT系统使用高频振动刀片、激光烧灼和抽吸液体控制系统，在防止任何液体泄漏的同时精确切断目标组织。尽管其研发计划波折重重且价格骇人，但在复杂的实验性手术之外，它并不比一把普通的二十美元手术刀更好，也无法无血地切出全长切口。
+  description: PICT系统使用高频振动刀片、激光烧灼和抽吸液体控制系统，在防止任何液体泄漏的同时精确切断目标组织。其研发计划波折重重且价格骇人，并且除了在复杂的实验性手术之外，并不比一把普通的二十美元手术刀更好，也无法无血地切出全长切口。
   components:
   - type: Sprite
     state: pict_system
@@ -317,7 +317,7 @@
   parent: CMScalpel
   id: CMScalpelManager
   name: 切口管理系统
-  description: 作为外科医生身体的真正延伸，这一奇迹能即刻、彻底地准备好切口，让治疗步骤得以立即开始。
+  description: 作为外科医生身体的真正延伸，这一奇迹能瞬间彻底的准备好切口，让治疗步骤得以立即开始。
   components:
   - type: Sprite
     state: scalpel_manager
@@ -401,7 +401,7 @@
 - type: entity
   parent: CMBonesetter
   id: CMBonesetterPredator
-  name: 骨头放置器
+  name: 复骨器
   components:
   - type: Sprite
     state: predator_bonesetter
@@ -428,7 +428,7 @@
 - type: entity
   parent: CMBaseToolSurgery
   id: CMAutopsy
-  name: We-Yu牌自动尸检系统（TM）
+  name: We-Yu牌自动尸检系统™
   description: 让尸检重新充满乐趣。这个小装置能在约30秒内，对你发现的任何奇怪生命形式完成一次完整的尸检。
   components: # TODO RMC14
   - type: Sprite

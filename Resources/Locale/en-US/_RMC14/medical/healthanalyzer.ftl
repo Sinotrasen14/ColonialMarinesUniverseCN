@@ -36,4 +36,4 @@ rmc-health-analyzer-advice-cpr-crit = [color=skyblue][font="Emoji"]🫀[/font][/
 rmc-health-analyzer-advice-dexalin = [color=#5887D5][font="Emoji"]💉[/font][/color] 施用一剂德沙林。
 rmc-health-analyzer-advice-bicaridine = [color=#ed4847][font="Emoji"]💉[/font][/color] 施用一剂比卡利啶。
 rmc-health-analyzer-advice-kelotane = [color=#f5e123][font="Emoji"]💉[/font][/color] 施用一剂凯洛坦。
-rmc-health-analyzer-advice-dylovene = [color=#3fc92a][font="Emoji"]💉[/font][/color] 施用一剂迪洛芬。
+rmc-health-analyzer-advice-dylovene = [color=#3fc92a][font="Emoji"]💉[/font][/color] 施用一剂地洛芬。

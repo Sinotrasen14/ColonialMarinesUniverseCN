@@ -171,8 +171,8 @@ cmu-medical-surgery-tool-category-yautja_medicomp_clamp = 伤口夹
 
 # ---- Per-step labels -------------------------------------------------
 
-cmu-medical-surgery-step-realign-simple-label = 复位简单骨折
-cmu-medical-surgery-step-realign-compound-label = 复位复合骨折
+cmu-medical-surgery-step-realign-simple-label = 复位普通骨折
+cmu-medical-surgery-step-realign-compound-label = 复位复杂骨折
 cmu-medical-surgery-step-realign-shattered-label = 复位粉碎性骨折
 cmu-medical-surgery-step-apply-gel-label = 涂抹骨胶
 cmu-medical-surgery-step-apply-gel-second-label = 涂抹骨胶（第二层）
@@ -235,14 +235,14 @@ cmu-medical-surgery-name-repair-eyes = 修复眼睛
 cmu-medical-surgery-name-repair-ears = 修复耳朵
 cmu-medical-surgery-name-remove-limb = 截除肢体
 cmu-medical-surgery-name-reattach-limb = 再接肢体
-cmu-medical-surgery-name-remove-larva = 摘除幼虫
+cmu-medical-surgery-name-remove-larva = 摘除异形幼虫
 cmu-medical-surgery-name-debride-eschar = 清除焦痂
 
 # ---- Autodoc ---------------------------------------------------------
 
-cmu-autodoc-window-title = 自动医疗舱
+cmu-autodoc-window-title = 全全自动医疗舱
 cmu-autodoc-no-patient = 无患者
-cmu-autodoc-status-no-pod = 附近没有连接的自动医疗舱。
+cmu-autodoc-status-no-pod = 附近没有连接的全自动医疗舱。
 cmu-autodoc-status-empty = 连接的舱体为空。
 cmu-autodoc-status-ready = 准备排队自动手术。
 cmu-autodoc-status-running = 正在执行排队的手术。
@@ -269,12 +269,12 @@ cmu-autodoc-queue-empty = 没有排队的手术。
 cmu-autodoc-queue-summary = { $count } 项排队手术
 cmu-autodoc-available-procedures = { $count } 项可用手术
 cmu-autodoc-part-procedures = { $count } 项手术
-cmu-autodoc-surgery2-required = 需要外科 2 级训练才能排队自动医疗舱步骤。
+cmu-autodoc-surgery2-required = 需要外科 2 级训练才能排队全自动医疗舱步骤。
 cmu-autodoc-no-surgeries = 此处没有可用的手术。
 cmu-autodoc-queue-row = #{ $index } { $surgery } 于 { $part } - { $step }
 cmu-autodoc-surgery-row = { $surgery } - { $step }
 cmu-autodoc-automated-step-label = 自动修复循环
-cmu-autodoc-automated-step-note = 自动医疗舱按机器计时器修复此目标。
+cmu-autodoc-automated-step-note = 全自动医疗舱按机器计时器修复此目标。
 cmu-autodoc-repair-wounds-surgery = 修复伤口 / 烧伤
 cmu-autodoc-procedure-time-note = { $time } 自动手术。
 cmu-autodoc-minutes = { $minutes } 分

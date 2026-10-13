@@ -1,11 +1,11 @@
-reagent-name-cmdylovene = 迪洛芬
+reagent-name-cmdylovene = 地洛芬
 reagent-desc-cmdylovene = 通用抗毒素，能中和血液中的大多数毒素。常用于许多高级化学品。可作为轻度抗致幻剂并减轻疲劳。
 
 reagent-name-cmethylredoxrazine = 乙基氧化嗪
 reagent-desc-cmethylredoxrazine = 通过将血液中的酒精氧化成水分子来中和其效果。然而，它无法阻止即时的醉酒。乙基氧化嗪是一种强氧化剂，高剂量下会变得有毒。
 
 reagent-name-cmarithrazine = 阿里沙嗪
-reagent-desc-cmarithrazine = 迪洛芬的稳定变体。其净毒能力被削弱，并伴有有害副作用，但不会与其他化合物反应生成毒素。
+reagent-desc-cmarithrazine = 地洛芬的稳定变体。其净毒能力被削弱，并伴有有害副作用，但不会与其他化合物反应生成毒素。
 
 reagent-name-cmbicaridine = 比卡利啶
 reagent-desc-cmbicaridine = 比卡利啶是一种镇痛药，可用于治疗严重的钝器外伤并稳定患者。过量使用比卡利啶会导致灼伤和毒素。
