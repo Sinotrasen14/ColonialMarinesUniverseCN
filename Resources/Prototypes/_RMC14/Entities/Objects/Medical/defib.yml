@@ -189,8 +189,8 @@
 - type: entity
   parent: [CMBaseDefibrillator, RMCPowerCellSlotUnremovable]
   id: RMCSynthResetKey
-  name: We-Yu 合成体重置钥匙
-  description: 该设备可以修复合成体的重大故障或程序错误，并且能够重启遭遇严重故障的合成体。使用后必须重新充电。
+  name: We-Yu 合成人重置匙
+  description: 该设备可以修复合成人的重大故障或程序错误，并且能够重启遭遇严重故障的合成人。使用后必须重新充电。
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Devices/synth_reset_key.rsi
@@ -246,7 +246,7 @@
 - type: entity
   parent: RMCSynthResetKey
   id: RMCSynthResetKeySMART
-  name: SMART We-Yu 合成人重置钥匙
+  name: SMART We-Yu 合成人重置匙
   description: 该装置可以修复合成人的重大故障或编程错误，还能重启遭遇严重故障的合成人。使用后必须充电。这个装置搭载了微功能人工智能，任何人都能操作。
   components:
   - type: Sprite
@@ -262,8 +262,8 @@
 - type: entity
   parent: RMCSynthResetKey
   id: RMCSynthResetKeyHyperdyne
-  name: Hyperdyne合成体重置钥匙
-  description: 一种Hyperdyne型重置钥匙，用于在严重故障后重启合成体单位。使用后必须充电。
+  name: Hyperdyne 合成人重置匙
+  description: 一种Hyperdyne型重置钥匙，用于在严重故障后重启合成人单位。使用后必须充电。
   components:
   - type: Sprite
     layers:
@@ -275,7 +275,7 @@
 - type: entity
   parent: RMCSynthResetKeySMART
   id: RMCSynthResetKeyHyperdyneSMART
-  name: 智能 Hyperdyne 合成重置钥匙
+  name: 智能 Hyperdyne 合成重置匙
   description: 一把带有微型功能 AI 的 Hyperdyne 型重置钥匙，任何人都可以操作。使用后必须充电。
   components:
   - type: Sprite
@@ -288,8 +288,8 @@
 - type: entity
   parent: RMCSynthResetKeySMART
   id: RMCSynthResetKeySeegson
-  name: 西格森工作乔重启钥匙
-  description: 一款为西格森工作乔合成人单元设计的坚固重启钥匙。使用后必须充电。
+  name: 西格森工作乔 重置匙
+  description: 一款为西格森工作乔合成人单元设计的坚固重置钥匙。使用后必须充电。
   components:
   - type: Sprite
     layers:
@@ -314,13 +314,13 @@
 - type: entity
   parent: RMCSynthResetKey
   id: RMCSynthResetKeyNovaris
-  name: 诺瓦里斯生化人重置钥匙
-  description: 诺瓦里斯的独立设计，基于此前与维兰德-汤谷公司的合作。该设备可以修复生化人单位的重大故障或编程错误，还能重启遭遇严重故障的生化人。使用后必须充电。
+  name: 诺瓦里斯 合成人重置匙
+  description: 诺瓦里斯的独立设计，基于此前与维兰德-汤谷公司的合作。该设备可以修复合成人的重大故障或编程错误，还能重启遭遇严重故障的合成人。使用后必须充电。
 
 - type: entity
   parent: RMCSynthResetKey
   id: RMCSynthResetKeyNovarisSMART
-  name: SMART Novaris 合成人重置钥匙
+  name: SMART Novaris 合成人重置匙
   description: 一种独立的 Novaris 设计，基于此前与维兰德-汤谷的合作。该设备可以修复合成人的重大故障或编程错误，也能重启遭遇严重故障的合成人。使用后必须充电。此设备搭载微型功能人工智能，任何人都可以操作。
   components:
   - type: RequiresSkill

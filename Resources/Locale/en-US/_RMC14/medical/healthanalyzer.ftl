@@ -33,7 +33,7 @@ rmc-health-analyzer-advice-food = [font="Emoji"]🍕[/font] 提供食物或建�
 
 rmc-health-analyzer-advice-cpr-crit = [color=skyblue][font="Emoji"]🫀[/font][/color] 进行心肺复苏以稳定患者。
 
-rmc-health-analyzer-advice-dexalin = [color=#5887D5][font="Emoji"]💉[/font][/color] 施用一剂右旋糖酐。
-rmc-health-analyzer-advice-bicaridine = [color=#ed4847][font="Emoji"]💉[/font][/color] 施用一剂比卡瑞定。
+rmc-health-analyzer-advice-dexalin = [color=#5887D5][font="Emoji"]💉[/font][/color] 施用一剂德沙林。
+rmc-health-analyzer-advice-bicaridine = [color=#ed4847][font="Emoji"]💉[/font][/color] 施用一剂比卡利啶。
 rmc-health-analyzer-advice-kelotane = [color=#f5e123][font="Emoji"]💉[/font][/color] 施用一剂凯洛坦。
-rmc-health-analyzer-advice-dylovene = [color=#3fc92a][font="Emoji"]💉[/font][/color] 施用一剂迪洛芬。
+rmc-health-analyzer-advice-dylovene = [color=#3fc92a][font="Emoji"]💉[/font][/color] 施用一剂地洛芬。

@@ -1,12 +1,12 @@
 <Document>
-  # Medical Machines
+  # 医疗仪器
 
   设备齐全的医疗舱配备了可以诊断、治疗甚至给患者做手术的机器。每个舱需要它的控制台在几个格子内才能工作。
 
-  ## Body Scanner
+  ## 身体扫描仪
   <Box>
-    <GuideEntityEmbed Entity="CMUBodyScannerPod" Caption="Body scanner pod"/>
-    <GuideEntityEmbed Entity="CMUBodyScannerConsole" Caption="Body scanner console"/>
+    <GuideEntityEmbed Entity="CMUBodyScannerPod" Caption="身体扫描舱"/>
+    <GuideEntityEmbed Entity="CMUBodyScannerConsole" Caption="身体扫描控制台"/>
   </Box>
   身体扫描仪可以对患者的所有问题进行全面诊断：骨折、内出血、器官损伤等，逐一检查。
   - 将患者放入舱内，然后使用控制台。读取扫描需要[bold]外科训练[/bold]（1级）。
@@ -14,10 +14,10 @@
   - 成功后，该患者的手术步骤在10分钟内[bold]速度加倍[/bold]。
   - 失败或超时，则在10分钟内无法对该患者进行校准。
 
-  ## Autodoc
+  ## 全自动手术仪（Autodoc）
   <Box>
-    <GuideEntityEmbed Entity="CMUAutodocPod" Caption="Autodoc pod"/>
-    <GuideEntityEmbed Entity="CMUAutodocConsole" Caption="Autodoc console"/>
+    <GuideEntityEmbed Entity="CMUAutodocPod" Caption="自动手术舱"/>
+    <GuideEntityEmbed Entity="CMUAutodocConsole" Caption="自动手术控制台"/>
   </Box>
   自动手术机器人可以自行操作，因此外科医生可以排队安排手术然后离开。
   - 将病人放入舱内，然后打开控制台。排队手术需要[bold]外科训练[/bold]（等级2）。
@@ -26,9 +26,9 @@
   - [bold]停止[/bold]会暂停操作，[bold]清空[/bold]会清除队列，[bold]弹出病人[/bold]会将其取出。
   - 这个舱可以算作手术台，因此操作步骤不会因为病人位置而失败。
 
-  ## Cryo Pod
+  ## 冷冻治疗舱
   <Box>
-    <GuideEntityEmbed Entity="CryoPod" Caption="Cryo pod"/>
+    <GuideEntityEmbed Entity="CryoPod" Caption="冷冻舱"/>
   </Box>
   冷冻舱通过降低患者体温并使用冷血素（cryoxadone）进行治疗。
   - 将一杯[bold]冷血素[/bold]装入舱内，并确保舱内有来自冷冻装置的冷气供应。

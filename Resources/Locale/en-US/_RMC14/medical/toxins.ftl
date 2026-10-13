@@ -7,7 +7,7 @@ reagent-desc-rmcmolecularacid = 一种成分不明的酸，这个样本似乎没
 rmc-body-stings = 你的身体微微刺痛。
 
 reagent-name-rmclexorin = 莱克索林
-reagent-desc-rmclexorin = 莱克索林是一种极其危险的化合物，会损伤组织并使肺部麻痹，从而有效停止呼吸。即使小剂量也可能致命。莱克索林可被各种右旋糖酐有效克制。
+reagent-desc-rmclexorin = 莱克索林是一种极其危险的化合物，会损伤组织并使肺部麻痹，从而有效停止呼吸。即使小剂量也可能致命。莱克索林可被各种德沙林有效克制。
 
 reagent-name-rmcmindbreakertoxin = 碎心毒素
 reagent-desc-rmcmindbreakertoxin = 一种强效致幻化合物，根据陆战队法律属于违禁品。会引起极度幻觉，且极易上瘾。旧称LSD。

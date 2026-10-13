@@ -29,7 +29,7 @@ reagent-name-unstable-mutagen = 不稳定诱变剂
 reagent-desc-unstable-mutagen = 注入活人或植物体内会引起突变。高剂量可能致命，尤其是对人类。
 
 reagent-name-heartbreaker-toxin = 碎心毒素
-reagent-desc-heartbreaker-toxin = 一种从碎脑毒素衍生而来的致幻化合物。它会阻断通往呼吸系统的神经信号，造成窒息。不过，右旋糖酐加强版和肾上腺素能将其滤除。
+reagent-desc-heartbreaker-toxin = 一种从碎脑毒素衍生而来的致幻化合物。它会阻断通往呼吸系统的神经信号，造成窒息。不过，德沙林 Plus和肾上腺素能将其滤除。
 
 reagent-name-lexorin = 窒息素
 reagent-desc-lexorin = 一种起效迅速的化学物质，用于让人迅速窒息。

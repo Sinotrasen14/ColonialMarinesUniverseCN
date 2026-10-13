@@ -1,7 +1,7 @@
 reagent-name-cryptobiolin = 隐生碱
 reagent-desc-cryptobiolin = 会引起混乱和眩晕。
 
-reagent-name-dylovene = 迪洛芬
+reagent-name-dylovene = 地洛芬
 reagent-desc-dylovene = 一种广谱抗毒素，可治疗有机体内的毒素伤害。过量会导致呕吐、眩晕和疼痛。
 
 reagent-name-diphenhydramine = 苯海拉明
@@ -10,10 +10,10 @@ reagent-desc-diphenhydramine = 能迅速清除体内的组胺、减轻颤抖、�
 reagent-name-arithrazine = 阿里沙嗪
 reagent-desc-arithrazine = 一种略微不稳定的药物，用于最极端的辐射中毒病例。会对身体造成轻微压力。
 
-reagent-name-bicaridine = 比卡瑞定
+reagent-name-bicaridine = 比卡利啶
 reagent-desc-bicaridine = 一种镇痛药，对治疗钝器伤害非常有效。可用于稳定被严重殴打的人，也可治疗不太危及生命的伤势。
 
-reagent-name-cryoxadone = 冷冻复苏酮
+reagent-name-cryoxadone = 冷冻酮
 reagent-desc-cryoxadone = 冷冻疗法正常运行所必需的药物。可治疗所有标准类型的伤害，但只能在213K以下的温度下起效。小剂量使用时可以治疗并恢复植物活力。
 
 reagent-name-doxarubixadone = 多沙鲁比沙酮
@@ -22,11 +22,11 @@ reagent-desc-doxarubixadone = 一种冷冻化学品。可治疗由危险气体�
 reagent-name-dermaline = 德马林
 reagent-desc-dermaline = 一种高级化学品，治疗烧伤的效果比凯洛坦更好。
 
-reagent-name-dexalin = 右旋糖酐
-reagent-desc-dexalin = 用于治疗轻微缺氧和失血。是制作右旋糖酐加强版的必需试剂。
+reagent-name-dexalin = 德沙林
+reagent-desc-dexalin = 用于治疗轻微缺氧和失血。是制作德沙林 Plus的必需试剂。
 
-reagent-name-dexalin-plus = 右旋糖酐加强版
-reagent-name-dexalin-plus-saline = 右旋糖酐加强版与生理盐水
+reagent-name-dexalin-plus = 德沙林 Plus
+reagent-name-dexalin-plus-saline = 德沙林 Plus和生理盐水
 reagent-desc-dexalin-plus = 用于治疗极端的缺氧和失血。能把碎心毒素冲出血液。
 
 reagent-name-epinephrine = 肾上腺素
@@ -81,7 +81,7 @@ reagent-desc-synaptizine = 一种有毒化学品，能把眩晕和击倒的持�
 reagent-name-tranexamic-acid = 氨甲环酸
 reagent-desc-tranexamic-acid = 一种凝血药物，用于防止大量出血。过量会导致出血更严重。常以少量存在于应急医疗笔中。
 
-reagent-name-tricordrazine = 三效心复宁
+reagent-name-tricordrazine = 三可拉嗪
 reagent-desc-tricordrazine = 一种广谱兴奋剂，最初由心复宁衍生而来。只要使用者没有受重伤，就可治疗所有基础健康类型的轻微伤害。最好作为其他化学品的添加剂使用。
 
 reagent-name-lipozine = 溶脂素
