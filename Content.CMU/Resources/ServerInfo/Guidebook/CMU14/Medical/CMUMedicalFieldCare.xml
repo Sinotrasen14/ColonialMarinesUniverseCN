@@ -1,7 +1,7 @@
 <Document>
-  # 野战敷料调配
+  # 野战药品调配
 
-  在田野里，你可以从基础调料和一种配料中混合出自己的调味汁，而不是随身携带各种现成的调味汁。
+  在野战环境中，你可以使用基底材料与添加成分自行调配各类敷料，无需随身携带每种现成的敷料成品。
 
   <Box>
     <GuideEntityEmbed Entity="CMUPlainTraumaDressing10" Caption="压缩创伤包"/>
@@ -9,16 +9,16 @@
     <GuideEntityEmbed Entity="CMUBurnGel1" Caption="烧伤凝胶"/>
   </Box>
 
-  ## Mixing
-  - 按 [keybind="CMUOpenMedicalCraftingMenu"] 打开医疗制作菜单。它显示你可以用自己携带的物品混合的所有东西。
-  - 每种调料使用一种基础和若干单位的一种配料。
-  - [bold]填塞纱布[/bold] 制作纱布敷料。 [bold]创伤包[/bold] 做一个完整的创伤敷料。
-  - 这两种敷料也可以单独使用来止血。见 [textlink="Wounds and Bleeding" link="CMUGuideMedicalWounds"].
+  ## 调配
+  - 按下 [keybind="CMUOpenMedicalCraftingMenu"] 打开医疗制作菜单。菜单会根据你当前携带的物品显示所有可调配的敷料。
+  - 制作每种敷料需要消耗一份基底材料和若干单位的添加成分。
+  - [bold]压缩纱布[/bold]可制成纱布类敷料。[bold]压缩创伤包[/bold]可制成全效创伤敷料。
+  - 这两种基底材料也可以单独直接使用以控制出血。详见[textlink="创伤与流血" link="CMUGuideMedicalWounds"]。
 
-  ## Ingredients
-  - [bold]凝血粉[/bold]：凝血剂。可制作止血纱布，或从打包创伤包中制作创伤急救包。
-  - [bold]烧伤凝胶[/bold]：冷却凝胶。可制作烧伤纱布，或从打包创伤包中制作烧伤急救包。
-  - [bold]防腐剂[/bold]：可制作防腐敷料，用于清洁受污染的伤口。
-  - [bold]组织封合剂[/bold]：可制作封闭敷料，帮助伤口愈合。
-  - [bold]创伤泡沫[/bold]：可制作加压敷料。
+  ## 添加成分
+  - [bold]凝血粉[/bold]：促凝剂。可制成止血纱布，或使用压缩创伤包制成创伤急救包。
+  - [bold]烧伤凝胶[/bold]：降温凝胶。可制成烧伤凝胶纱布，或使用压缩创伤包制成烧伤急救包。
+  - [bold]消毒剂[/bold]：制成抗菌敷料，用于清洁受污染的创口。
+  - [bold]组织密封剂[/bold]：制成密封敷料，有助于闭合伤口。
+  - [bold]创伤泡沫[/bold]：制成加压敷料。
 </Document>

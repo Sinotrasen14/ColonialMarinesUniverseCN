@@ -19,9 +19,9 @@ public sealed partial class Hypoxemic : RMCChemicalEffect
 
     protected override string ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
     {
-        return $"Deals [color=red]{PotencyPerSecond * 2}[/color] airloss damage and causes the victim to gasp for air.\n" +
-               $"Overdoses cause [color=red]{PotencyPerSecond}[/color] brute, [color=red]{PotencyPerSecond}[/color] toxin, and [color=red]{PotencyPerSecond * 5}[/color] airloss damage.\n" +
-               $"Critical overdoses cause [color=red]{PotencyPerSecond * 5}[/color] brute and [color=red]{PotencyPerSecond * 2}[/color] toxin damage";
+        return $"造成 [color=red]{PotencyPerSecond * 2}[/color] 点窒息伤害并导致受害者呼吸困难。\n" +
+               $"药物过量会造成 [color=red]{PotencyPerSecond}[/color] 点创伤、[color=red]{PotencyPerSecond}[/color] 点毒素和 [color=red]{PotencyPerSecond * 5}[/color] 点窒息伤害。\n" +
+               $"药物严重过量会造成 [color=red]{PotencyPerSecond * 5}[/color] 点创伤和 [color=red]{PotencyPerSecond * 2}[/color] 点毒素伤害。";
     }
 
     protected override void Tick(RMCChemicalEffectSystem system, DamageableSystem damageable, FixedPoint2 potency, RMCReagentEffectArgs args)

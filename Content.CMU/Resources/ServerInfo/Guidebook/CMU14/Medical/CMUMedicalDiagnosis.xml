@@ -1,78 +1,77 @@
 <Document>
   # 伤情诊断
 
-  在你治疗病人之前，你需要知道出了什么问题。你能看出多少取决于你的医学训练。
+  救治伤员之前，必须先准确判明伤情。通过诊断能获取到多少信息，取决于你的医疗技能等级。
 
   <Box>
     <GuideEntityEmbed Entity="CMHealthAnalyzer" Caption="健康分析仪"/>
     <GuideEntityEmbed Entity="RMCStethoscope" Caption="听诊器"/>
   </Box>
 
-  ## Looking at the Patient
-  - [bold]检查[/bold] 有人展示他们可见的伤口和骨折，以及每个伤口或骨折位于身体的哪个部位。
-  - [bold]检查受伤情况[/bold]: 右键点击一个病人并选择“检查伤害”以进行仔细查看。短暂检查后，你会得到一份伤情报告，列出每个身体部位的伤口及出血情况。你可以在控制菜单的[bold]CMU医疗[/bold]下为此绑定一个按键。
+  ## 检视伤员
+  - [bold]检视（Examine）[/bold]：检视伤员可以观察到其肉眼可见的伤口、骨折，以及具体受损的身体部位。
+  - [bold]检查伤情[/bold]：右键点击伤员并选择“检查伤情”，稍作检查后，即可生成一份详尽的伤情报告，列出各身体部位的具体创口及失血严重程度。你可以在按键设置菜单中的 [bold]CMU Medical[/bold] 分类下为该功能绑定快捷键。
 
-  ## The Health Analyzer
-  在患者身上使用它以打开完整扫描。
-  - [bold]顶部栏[/bold]：整体健康状况、脉搏、血液水平、体温和休克风险，状态分为稳定、严重、危急或死亡。
-  - [bold]血液[/bold]：患者的血型，以及如果他们接受了生理盐水输注，血液中有多少是[bold]生理盐水[/bold]。
-  - [bold]身体[/bold]：每个身体部位的健康状况，包括伤口、出血、嵌入的弹片、焦痂、夹板、石膏和止血带。
-  - [bold]出血[/bold]：具备基础医疗训练时，扫描显示每处出血的严重程度（轻微、中等、严重或[color=red]动脉[/color]），显示在血液读数和每个出血的身体部位上。缺失肢体的行会显示其残端是否动脉出血或是否使用了止血带。
-  - [bold]骨折和内出血[/bold]：需要基础医疗训练。具备更高培训后，可告诉您骨折的具体严重程度及出血地点。
-  - [bold]器官[/bold]：需要受过训练的医护人员每个器官显示其状态（健康、淤伤、受损、衰竭或死亡）和健康状况。
-  - [bold]疼痛[/bold]：患者的疼痛等级以及他们距离疼痛休克的程度。
-  - 对于已经死亡的患者，它还大致显示在无法挽救之前还剩多少分钟。
+  ## 健康分析仪
+  手持健康分析仪对伤员使用，可打开全身健康扫描界面：
+  - [bold]顶部状态栏[/bold]：显示总生命值、脉搏、血量、体温及休克风险，并标明伤员当前的生命状态（稳定、严重、危重或已死亡）。
+  - [bold]身体部位[/bold]：显示各身体部位的具体健康度，以及伤口、出血、残留弹片、烧伤焦痂、夹板、石膏与止血带佩戴情况。
+  - [bold]出血情况[/bold]：需具备基础医疗技能方可查看。扫描界面会标明各项出血的严重程度（轻度、中度、重度或[color=red]动脉大出血[/color]），分别标注在血量总读数和具体的出血部位上。若有断肢，其所在行还会显示残端是否正在发生动脉大出血，或是否绑有止血带。
+  - [bold]骨折与内出血[/bold]：需具备基础医疗技能方可查看。医疗技能等级越高，显示的内容越详尽，包括具体的骨折严重程度以及内出血部位。
+  - [bold]器官状态[/bold]：需受训医护人员方可查看。显示各个内脏器官的健康值及其病变分期（健康、挫伤、受损、衰竭或坏死）。
+  - [bold]疼痛指数[/bold]：显示伤员当前的疼痛程度，以及距离陷入疼痛休克还有多近。
+  - [bold]复苏时限[/bold]：对于已死亡的伤员，会估算显示距离彻底无法复活还剩余多少分钟。
 
-  如果分析仪因为你的培训而无法显示某些内容，它会提示你，这样你就知道要找更有资格的人，而不是假设患者没事。
+  若因医疗技能不足，导致分析仪无法显示某些关键信息，界面会明确提示，以便你及时呼叫更专业的医护人员处理，避免误判伤情而延误救治。
 
-  ## Damage Types
-  分析器会按类型将患者的伤害分解。每种类型的恢复方式不同，所以知道你在看哪一种类型可以告诉你该采取什么措施。
+  ## 伤害类型
+  健康分析仪会将伤员受到的伤害分类列出。不同类型的伤害需要不同的处理手段，理清伤害类型有助于你迅速选择对症的药物与器械。
 
-  [bold]创伤[/bold]: 钝的、劈砍和穿刺。拳头、爪子、刀刃和子弹。
-  - 用纱布或急救包包扎伤口，然后用 [bold]bicaridine[/bold]进行治疗.
-  - 沉重的暴力伤害也可能导致骨折和内出血。
-  - 见 [textlink="Brute Medications" link="CMUGuideMedsBrute"].
+  [bold]创伤[/bold]：包括钝器打击、切割撕裂和枪刺伤害（如殴打、异形利爪、利刃及枪弹伤）。
+  - 先用纱布或创伤急救包包扎伤口止血，再注射[bold]比卡利啶（bicaridine）[/bold]进行治疗。
+  - 严重的钝击创伤还可能导致骨折与内出血。
+  - 详见[textlink="创伤药物" link="CMUGuideMedsBrute"]。
 
-  [bold]烧伤[/bold]: 热、冲击、寒冷和腐蚀性。火、电、冻结和酸。
-  - 用药膏或烧伤套件处理烧伤，然后用[bold]kelotane[/bold]或更强效的药物愈合[bold]dermaline[/bold].
-  - 一次重击的严重烧伤可能会留下烧痂。见 [textlink="Wounds and Bleeding" link="CMUGuideMedicalWounds"].
-  - 见 [textlink="Burn Medications" link="CMUGuideMedsBurn"].
+  [bold]烧伤[/bold]：包括高温灼烧、电击、极度冻伤与酸蚀伤害（如火焰、触电、冻疮及强酸腐蚀）。
+  - 先用药膏或烧伤急救包敷裹伤处，再使用[bold]凯洛坦（kelotane）[/bold]或强效的[bold]德马林（dermaline）[/bold]治疗。
+  - 单次承受大额烧伤可能会产生坏死焦痂，详见[textlink="创伤与流血" link="CMUGuideMedicalWounds"]。
+  - 详见[textlink="烧伤药物" link="CMUGuideMedsBurn"]。
 
-  [bold]毒素[/bold]: 毒药和辐射。有毒化学品、过量服用、器官衰竭和辐射。
-  - 用[bold]dylovene[/bold]治疗，它也能清除幻觉。
-  - 注意肝脏和肾脏，它们过滤毒素并可能被毒素损害。见 [textlink="Organs" link="CMUGuideMedicalOrgans"].
-  - 见 [textlink="Toxin Medications" link="CMUGuideMedsToxin"].
+  [bold]毒素[/bold]：包括化学毒物与辐射伤害（如有毒化学品、药物过量、器官衰竭以及辐射暴露）。
+  - 使用[bold]地洛芬（dylovene）[/bold]进行排毒解毒，它还能有效消除幻觉。
+  - 务必密切留意肝脏与肾脏状态——作为代谢毒素的器官，它们最易遭受毒素损害。详见[textlink="器官" link="CMUGuideMedicalOrgans"]。
+  - 详见[textlink="毒素药物" link="CMUGuideMedsToxin"]。
 
-  [bold]窒息[/bold]: 窒息和失血。停止呼吸、肺部受损、心脏停止跳动或大量失血。
-  - 使用 [bold]dexalin[/bold] 治疗，并从氧气罐吸氧以恢复三倍速度。
-  - 失血不会自行消失，除非血液被补充。止血并输血。
-  - 见 [textlink="Suffocation Medications" link="CMUGuideMedsSuffocation"].
+  [bold]窒息[/bold]：源自缺氧窒息或严重失血（如呼吸骤停、肺部受损、心搏停止以及循环血量不足）。
+  - 使用[bold]德沙林（dexalin）[/bold]救治，若配合氧气瓶进行供氧，伤情恢复速度可提升至三倍。
+  - 注意：药物无法直接恢复血量！面对严重失血，必须先彻底止血再予以输血补液。
+  - 详见[textlink="窒息药物" link="CMUGuideMedsSuffocation"]。
 
-  [bold]基因损伤[/bold]: 细胞损伤。罕见，只有少数几种因素会引起它。
-  - 只有少数几种治疗方法能治疗它，例如在冷冻舱中的 [bold]doxarubixadone[/bold] 见 [textlink="Other Medications" link="CMUGuideMedsOther"].
+  [bold]基因损伤[/bold]：细胞与遗传层面的损伤。发生率较低，通常由特定致命因素引发。
+  - 仅有极少数手段可修复基因损伤，例如将伤员置入冷冻舱并注入[bold]冷冻酮（cryoxadone）[/bold]。详见[textlink="其他药物" link="CMUGuideMedsOther"]。
 
-  [bold]Tricordrazine[/bold] 同时可以治愈一些暴力伤害、灼伤、毒素和窒息，当你不确定面对的是什么时，它是一种很好的通用药物。关于每种药物，请参阅 [textlink="Medications" link="CMUGuideMedications"].
+  [bold]三可拉嗪（Tricordrazine）[/bold]能同时少量治疗创伤、烧伤、毒素和窒息四类损伤。在伤情复杂，或一时无法诊断时，可以使用这种极为实用的万能急救药。全部药物详情参见[textlink="药物指南" link="CMUGuideMedications"]。
 
-  ## The Stethoscope
-  在病人身上使用它，或者右键点击他们，并听两秒钟。它需要基本的医疗培训。
-  - [bold]心脏[/bold]: 是否有心跳，以及心跳有多快。受过训练的医护人员能听出确切的心率。
-  - [bold]肺[/bold]: 你听到病人呼吸：
-    - [bold]清晰[/bold]: 健康的肺。
-    - [bold]湿[/bold]: 爆裂的呼吸声。肺部有液体或血液，可能由肺水肿或肺损伤引起。
-    - [bold]昏厥[/bold]: 微弱、虚弱的呼吸。肺部功能衰竭，几乎无法移动空气。
-    - 一个死亡的病人没有呼吸，所以没有什么可以听到的。
-  - 经过训练的医疗人员也可以判断患者的疼痛程度。
+  ## 听诊器
+  手持听诊器点击伤员（或右键菜单选择），持续听诊 2 秒。该操作需要具备基础医疗技能。
+  - [bold]心脏[/bold]：判断是否存在心跳及心率节律。受训医护人员还能直接听出精确的心率数值。
+  - [bold]肺部[/bold]：听取伤员的呼吸杂音：
+    - [bold]清音[/bold]：肺部正常健康。
+    - [bold]湿啰音[/bold]：呼吸伴随湿性啰音，提示肺水肿或肺损伤导致了肺内积液、积血。
+    - [bold]微弱音[/bold]：呼吸极其微弱，提示肺功能衰竭、通气量严重不足。
+    - 若伤员已经死亡，则已无自主呼吸，听不到任何声音。
+  - 此外，受训医护人员还能借助听诊初步评估伤员当前的疼痛程度。
 
-  ## Holocards
-  患者会根据他们的病情自动获得一张全息卡：
-  - [bold]稳定[/bold]: 只是轻伤。
-  - [bold]创伤[/bold]: 骨折或内出血。
-  - [bold]器官 failure[/bold]: 至少有一个器官正在衰竭。
+  ## 全息伤情卡
+  系统会根据伤员当前的危重程度，自动显示对应的全息伤情标识：
+  - [bold]稳定[/bold]：伤员情况良好或仅受轻伤。
+  - [bold]创伤[/bold]：存在骨折或内出血。
+  - [bold]器官衰竭[/bold]：至少有一个内脏器官处于衰竭状态。
 
-  ## Body Scanner
-  [bold]身体扫描舱[/bold]及其控制台可对躺在舱内的患者进行全面扫描，包括内部伤害，并有助于制定手术计划。见 [textlink="Medical Machines" link="CMUGuideMedicalMachines"].
+  ## 身体扫描舱
+  躺入[bold]身体扫描舱[/bold]后，可通过配套控制台对伤员进行深度全身体检，精准查出深层隐蔽伤势，为外科手术规划提供依据。详见[textlink="医疗仪器" link="CMUGuideMedicalMachines"]。
 
-  ## Patient Monitor
-  可以将 Lifepak 连接到患者身上，以实时监测他们的心律、血氧、血压等。查看 [textlink="Defibrillators" link="CMUGuideDefibrillators"].
+  ## 病人监护仪
+  将 Lifepak 除颤监护仪连接到伤员身上，可实时监测心律、血氧及血压等关键生命体征。详见[textlink="除颤器" link="CMUGuideDefibrillators"]。
 </Document>
 
