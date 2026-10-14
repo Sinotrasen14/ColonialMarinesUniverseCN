@@ -60,6 +60,7 @@
   name: 烧杯
   description: 一个烧杯。最多可容纳 60 个单位。
   components:
+  - type: CMUSpillWhenStoredOpen # CMU14: spills in storage without a lid
   - type: Sprite
     sprite: _RMC14/Objects/Medical/beaker.rsi
     layers:
@@ -111,6 +112,7 @@
   name: 大烧杯
   description: 一个大烧杯。最多可容纳120个单位。
   components:
+  - type: CMUSpillWhenStoredOpen # CMU14: spills in storage without a lid
   - type: Sprite
     sprite: _RMC14/Objects/Medical/large_beaker.rsi
     layers:
@@ -157,6 +159,7 @@
   name: 大容量烧杯
   description: 容量扩大的烧杯，以蓝色调有机玻璃制成，可承受更大压力，最多可容纳300单位。
   components:
+  - type: CMUSpillWhenStoredOpen # CMU14: spills in storage without a lid
   - type: Sprite
     sprite: _RMC14/Objects/Medical/high_capacity_beaker.rsi
     layers:

@@ -87,6 +87,7 @@
   description: 高爆双用途。一种小巧却强得出奇的榴弹，正在逐步淘汰 M15 高爆榴弹。爆炸时会产生强力爆破。可由榴弹发射器发射以撞击引爆，也可在手中激活引信后投掷，4 秒后引爆。
   # cmu edit end
   components:
+  - type: CMUSmartGrenade # CMU14
   # cmu edit start: detonate on impact when fired from a launcher (cmss13-pve#517)
   - type: TriggerOnFixedDistanceStop
   # cmu edit end
@@ -119,6 +120,7 @@
   description: M47 HSDP是一种小巧但威力强大的烟雾弹，与M40 HEDP基于同一平台。它可由榴弹发射器发射，撞击引爆，也可在手中激活引信后投掷，2.5秒后爆炸。
   # cmu edit end
   components:
+  - type: CMUSmartGrenade # CMU14
   # cmu edit start: detonate on impact when fired from a launcher (cmss13-pve#517)
   - type: TriggerOnFixedDistanceStop
   # cmu edit end
@@ -307,6 +309,8 @@
   description: 过时的破片手榴弹。服役数十年后，老旧的M15破片手榴弹正逐渐被稍微更安全的30毫米系列手榴弹取代。它被设定为4秒后引爆。
   # cmu edit end
   components:
+  - type: CMUSmartGrenade # CMU14
+    enabled: false
   # cmu edit start: not dual-purpose, so no impact fuse; the launcher's own fuse sets it off (cmss13-pve#517)
   - type: TriggerOnFixedDistanceStop
     delay: 10
@@ -401,6 +405,7 @@
   description: 高爆燃烧、反机动。M77是一种小型但威力出奇强大的燃烧手榴弹，旨在通过弹壳内的小型爆炸装药散布持久的B型凝固汽油，从而扰乱敌方机动能力。其设定为4秒后引爆。
   # cmu edit end
   components:
+  - type: CMUSmartGrenade # CMU14
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/m40hidp.rsi
   - type: TimerTrigger
@@ -419,6 +424,7 @@
   name: 30毫米WPDP白磷手榴弹
   description: 30毫米WPDP是一种小型但威力强大的白磷手榴弹。它被设定为2秒后引爆。
   components:
+  - type: CMUSmartGrenade # CMU14
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/m40wpdp.rsi
   - type: TimerTrigger
@@ -517,6 +523,7 @@
   suffix: PvE
   description: 一种撞击后产生火焰的20毫米榴弹。威力低于全尺寸榴弹。处理这些时要小心。
   components:
+  - type: CMUSmartGrenade # CMU14
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/rcm20mm/incend.rsi
   - type: TriggerOnThrowEnd
@@ -539,6 +546,7 @@
   suffix: PVE
   description: 一种撞击时爆炸的20毫米榴弹。威力不如全尺寸榴弹。请小心处理这些榴弹。
   components:
+  - type: CMUSmartGrenade # CMU14
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/rcm20mm/he.rsi
   - type: TriggerOnThrowEnd

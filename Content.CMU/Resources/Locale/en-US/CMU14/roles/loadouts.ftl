@@ -43,7 +43,13 @@ au14-loadout-group-auxtech = 作训服
 
 au14-loadout-group-role-clf-id = 假证件
 
+<<<<<<< HEAD
 au14-vending-machine-jo-max = 这套军官装备已被取走！
 
 cmu-loadout-group-aegis-stamp = AEGIS 军备印章
 cmu-loadout-group-provost-stamp = 宪兵印章
+=======
+cmu-loadout-group-aegis-stamp = AEGIS Armaments stamp
+cmu-loadout-group-provost-stamp = Provost stamp
+cmu-loadout-group-corporate-skirts = Corporate skirts
+>>>>>>> upstream

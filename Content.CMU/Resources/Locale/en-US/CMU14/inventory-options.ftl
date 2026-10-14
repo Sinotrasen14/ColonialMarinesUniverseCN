@@ -1,2 +1,2 @@
-ui-options-function-cmu-open-worn-storage = Open worn storage (hover over a slot)
-ui-options-cmu-click-opens-worn-storage = Clicking worn storage with an empty hand opens it instead of taking it off
+ui-options-function-cmu-open-worn-storage = 打开存储（将鼠标悬停在已磨损、持有、附近或存储的物品上）
+ui-options-cmu-click-opens-worn-storage = 用空手点击已穿戴的储物会打开它，而不是脱下来

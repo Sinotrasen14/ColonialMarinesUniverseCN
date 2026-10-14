@@ -6,6 +6,7 @@ cmu-medical-pain-severe-alert-name   = 痛苦
 cmu-medical-pain-severe-alert-desc   = 你感到剧烈的疼痛。动作和瞄准严重受影响。
 cmu-medical-pain-shock-pulse         = 疼痛冲击让你不知所措！
 
+<<<<<<< HEAD
 cmu-medical-pain-reflection-mild-1 = 哪里有点痛。
 cmu-medical-pain-reflection-mild-2 = 你仍然可以忽略疼痛。
 cmu-medical-pain-reflection-mild-3 = 你的身体一直在提醒你。
@@ -25,6 +26,25 @@ cmu-medical-pain-reflection-shock-3 = 无法思考。呼吸不了。让这一切
 cmu-medical-pain-relief-1 = 止痛药开始缓解疼痛了。
 cmu-medical-pain-relief-2 = 疼痛减轻了，你可以稍微松口气了。
 cmu-medical-pain-relief-3 = 最糟糕的部分暂时缓和了。
+=======
+cmu-medical-pain-reflection-mild-1 = Something aches.
+cmu-medical-pain-reflection-mild-2 = You can still ignore the pain.
+cmu-medical-pain-reflection-mild-3 = Your body aches.
+
+cmu-medical-pain-reflection-moderate-1 = This hurts. You need painkillers.
+cmu-medical-pain-reflection-moderate-3 = The pain keeps pulling at your thoughts.
+
+cmu-medical-pain-reflection-severe-1 = Every movement hurts.
+cmu-medical-pain-reflection-severe-2 = Painkillers. Need painkillers. Right now.
+cmu-medical-pain-reflection-severe-3 = It is getting hard to think in full thoughts.
+
+cmu-medical-pain-reflection-shock-1 = The pain is too much. Make it stop.
+cmu-medical-pain-reflection-shock-2 = Pain. Help. Now. Now.
+cmu-medical-pain-reflection-shock-3 = You can't think straight. Make the pain stop.
+
+cmu-medical-pain-relief-1 = The painkiller starts to take the edge off.
+cmu-medical-pain-relief-2 = The pain dulls. You can breathe a little easier.
+>>>>>>> upstream
 
 cmu-medical-shrapnel-none = 没有发现嵌入的弹片。
 cmu-medical-shrapnel-extract-verb = 移除弹片

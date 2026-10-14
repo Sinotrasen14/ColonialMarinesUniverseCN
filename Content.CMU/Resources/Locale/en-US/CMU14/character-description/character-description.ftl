@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 detailed-examine-verb-text = 详细检查
 detailed-examine-verb-disabled = 你需要靠近才能详细检查他们。
 detailed-examine-window-title = 详细检查
+=======
+detailed-examine-verb-text = Detailed Examine
+detailed-examine-verb-message = View their detailed character description.
+detailed-examine-window-title = Detailed Examine
+>>>>>>> upstream
 
 detailed-examine-age = 年龄
 detailed-examine-height = 身高
@@ -49,7 +55,23 @@ faction-roster-console-count = { $count } { $count ->
     [one] 条目
    *[other] 条目
 }
+<<<<<<< HEAD
 faction-roster-console-colonist-job = 殖民者
 faction-roster-console-count-tooltip = 当前在册的人员数量。
 faction-roster-console-refresh-tooltip = 重新查询名册以获取新加入或已离开的人员。
 faction-roster-console-entry-tooltip = 点击打开 { $name } 的完整档案。
+=======
+faction-roster-console-colonist-job = Colonist
+faction-roster-console-count-tooltip = Number of personnel currently on file.
+faction-roster-console-refresh-tooltip = Re-query the roster for new or departed personnel.
+faction-roster-console-entry-tooltip = Click to open { $name }'s full dossier.
+
+cmu-edit-description-verb = Edit Description
+cmu-edit-description-title = Edit Description
+cmu-edit-description-hint = Changes only last for this round. Your saved character isn't affected.
+cmu-edit-description-short = Short Examine Text
+cmu-edit-description-full = Full Character Description
+cmu-edit-description-limit = { $count }/{ $max }
+cmu-edit-description-save = Save
+cmu-edit-description-cancel = Cancel
+>>>>>>> upstream

@@ -149,6 +149,7 @@
   name: 试剂壶
   description: 一个由非反应性塑料制成的大壶，能够将大量各种化学物质运送到需要的地方。可容纳500单位。
   components:
+  - type: CMUSpillWhenStoredOpen # CMU14: spills in storage without a lid
   - type: Sprite
     sprite: _RMC14/Objects/Chemistry/reagent_jug.rsi
     layers:

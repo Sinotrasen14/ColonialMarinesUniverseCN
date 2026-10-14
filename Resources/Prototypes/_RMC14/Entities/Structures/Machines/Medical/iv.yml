@@ -27,7 +27,12 @@
     - state: unhooked
       map: ["enum.IVDripVisualLayers.Base"]
     - state: reagent0
+<<<<<<< HEAD
       map: ["enum.IVDripVisualLayers.Reagent"]
+=======
+      map: [ "enum.IVDripVisualLayers.Reagent" ]
+  - type: CMUBloodRefrigerator # CMU14: keeps hanging blood and plasma fresh
+>>>>>>> upstream
   - type: IVDrip
     reagentStates:
     - 0: reagent0
@@ -116,9 +121,17 @@
 - type: entity
   parent: CMBloodPack
   id: CMBloodPackFull # TODO RMC14 blood types
+<<<<<<< HEAD
   name: 血包
   suffix: CM, Full
+=======
+  name: blood pack (O-) # CMU14: O-, the universal donor
+  suffix: CM, Full, O-
+>>>>>>> upstream
   components:
+  - type: CMUBloodPackType # CMU14
+    bloodType: ONegative
+  - type: CMUPerishableBlood # CMU14: goes bad out of the fridge
   - type: SolutionContainerManager
     solutions:
       pack:

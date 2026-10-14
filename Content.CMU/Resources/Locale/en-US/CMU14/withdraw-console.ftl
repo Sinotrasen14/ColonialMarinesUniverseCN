@@ -1,4 +1,5 @@
 # Popup messages
+<<<<<<< HEAD
 withdraw-console-locked = 控制台已锁定。刷两张已授权的身份卡以解锁。
 withdraw-console-id-unbound = 此身份卡没有注册所有者。
 withdraw-console-id-wrong-faction = 访问被拒绝。此身份卡不属于已授权的阵营成员。
@@ -7,6 +8,17 @@ withdraw-console-id-accepted = 身份卡已接受（{ $count }/2）。再刷一�
 withdraw-console-unlocked = 控制台已解锁。撤离协议现已可用。
 withdraw-console-dropdown-blocked = 撤离进行中：空投舱循环降落已锁定。你仍可返回飞船。
 withdraw-console-faction-not-allowed = 当前行动中，此阵营未被授权撤离。
+=======
+withdraw-console-locked = Console locked. Swipe two authorized IDs to unlock.
+withdraw-console-id-unbound = This ID has no registered owner.
+withdraw-console-id-wrong-faction = Access denied. This ID does not belong to an authorized faction member.
+withdraw-console-id-already-swiped = This individual's credentials have already been accepted.
+withdraw-console-id-accepted = ID accepted ({ $count }/2). Swipe one more authorized ID.
+withdraw-console-unlocked = Console unlocked. Withdraw protocol is now available.
+withdraw-console-dropdown-blocked = Withdrawal in progress: dropship cycle-down is locked. You may still return to the ship.
+withdraw-console-faction-not-allowed = Withdrawal is not authorized for this faction on the current operation.
+withdraw-console-gamemode-disabled = Withdrawal is not possible when responding to a distress signal.
+>>>>>>> upstream
 
 # Mid-withdrawal announcement (fires at half the total withdraw duration)
 withdraw-console-announcement = { $faction } 撤离通知：正式撤离已启动。撤离将在 { $minutes } 分钟后完成。所有人员应准备撤离。
