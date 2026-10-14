@@ -1,42 +1,35 @@
 <Document>
-# The Synthesis Simulator
-
+# 合成模拟器
 <GuideEntityEmbed Entity="CMUChemSimulator" Caption="Synthesis Simulator"/>
 
-This machine is necessary for making your own custom chemicals.
+这台机器对于制造你自己的定制化学品是必要的。
 
-To use this machine, you insert papers dispensed by the [textlink="XRF Scanner" link="CMUXRF"] and [textlink="Research Data Terminal" link="CMURDT"] into it.
-Any paper deemed "incomplete" will not be accepted. Incomplete papers include any chemical paper that does not have a recipe on it.
-This means that special [textlink="Hydroponics" link="CMUBotany"] chemicals cannot be used in the synthesis simulator.
+要使用这台机器，您需要插入由其分发的纸张 [textlink="XRF Scanner" link="CMUXRF"] 和 [textlink="Research Data Terminal" link="CMURDT"]
+任何被认为“不完整”的论文将不被接受。不完整的论文包括任何没有提供配方的化学论文。
+这意味着在合成模拟器中不能使用特殊的[textlink="Hydroponics" link="CMUBotany"]化学品。
 
-Making your own chemicals is not cheap, however. You will need to discover the properties of the chemicals and obtain credits using the [textlink="XRF Scanner" link="CMUXRF"].
+然而，自己制造化学品并不便宜。你需要发现化学品的特性并使用它们获得积分 [textlink="XRF Scanner" link="CMUXRF"].
 
-There are four modes on the synthesis simulator.
+合成模拟器有四种模式。
 
 ## Amplify
 
-This mode takes in a target paper, and allows you to increase a targeted property's potency by one, at the cost of lowering the overdose threshold of the new chemical by 5 units.
+此模式输入目标药片，并允许你将目标属性的效力提高一单位，但代价是将新化学物质的过量阈值降低5单位。
 
 ## Suppress
 
-This mode is the inverse of Amplify, taking in a target paper and decreasing a targeted property's potency by one.
-If a targeted property's potency is reduced to zero, it is removed.
-The cost of this is the same as Amplify, lowering the overdose threshold of the new chemical by 5 units.
+此模式是增强（Amplify）的逆操作，输入目标纸张并将指定属性的效力降低一档。 如果指定属性的效力降至零，则该属性将被移除。 其消耗与增强相同，将新化学物质的过量阈值降低5个单位。
 
 ## Add
 
-This mode is simple. It takes in a target paper and a reference paper, and puts the reference property and its potency onto the new chemical.
-The cost of this is making the original reference chemical and [bold]every[/bold] chemical derived from it completely unusable in any future simulation operations.
+这种模式很简单。它接受一个目标论文和一个参考论文，并将参考论文的属性及其效力应用到新的化学物质上。其代价是使原始参考化学物质及从它派生的[bold]每一个[/bold]化学物质在未来的任何模拟操作中完全无法使用。
 
 ## Relate
 
-This mode takes in a target paper and a reference paper. You will need to pick a target property and a reference property.
-Both of the properties have to be of equal potency. This will create a new chemical that is a duplicate of the target chemical but with the target property
-swapped out for the reference property. This comes at the cost of lowering the overdose threshold of the new chemical by 5.
+此模式接受一个目标论文和一个参考论文。您需要选择一个目标属性和一个参考属性。两者的属性必须具有相同的效力。这将创建一种新的化学物质，它是目标化学物质的复制品，但将目标属性替换为参考属性。这会以降低新化学物质的过量阈值5点为代价。
 
 
 ## Override
 
-This allows you to perform Addition and Relation using properties that conflict. Conflicting properties will be subtracted. For example,
-Anticarcinogenic with a potency of 3 and Carcinogenic with a potency of 4 will conflict and the new chemical will have Carcinogenic with a potency of 1.
+这允许您使用冲突的属性进行加法和关系操作。冲突的属性将被相互抵消。例如，具有效力为3的抗致癌性与具有效力为4的致癌性会发生冲突，新化学物质将具有效力为1的致癌性。
 </Document>
