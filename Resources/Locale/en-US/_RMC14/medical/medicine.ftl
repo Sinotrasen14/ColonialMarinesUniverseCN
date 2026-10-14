@@ -10,8 +10,8 @@ reagent-desc-cmarithrazine = 地洛芬的稳定变体。其净毒能力被削弱
 reagent-name-cmbicaridine = 比卡利啶
 reagent-desc-cmbicaridine = 比卡利啶是一种镇痛药，可用于治疗严重的钝器外伤并稳定患者。过量使用比卡利啶会导致灼伤和毒素。
 
-reagent-name-cmcryoxadone = 冷冻酮
-reagent-desc-cmcryoxadone = 工业级低温药物。可治疗大多数组织损伤。其主要限制是患者体温必须低于170K才能正确代谢。
+reagent-name-cmcryoxadone = 海军陆战队冷冻酮
+reagent-desc-cmcryoxadone = 一种较老的海军陆战队低温配方，可在患者体温低于170K治疗多种伤害。
 
 reagent-name-cmdermaline = 德马林
 reagent-desc-cmdermaline = 用于治疗严重烧伤创伤的高级药物。能让身体恢复最严重的热损伤组织。过量使用德马林会导致严重的内组织损伤。

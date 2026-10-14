@@ -2,6 +2,12 @@ cmu-medical-heal-organ-guidebook            = 每个周期治疗患者的 { $org
 cmu-medical-pain-suppression-guidebook       = 每单位抑制 { $percent }% 的疼痛积累，掩盖 { $tiers } 级疼痛，并在 { $seconds } 秒内增加 { $decay } 点疼痛/秒的衰减。效果按最大疼痛比例减弱 { $decrease }；非叠加型效果保留最强的活跃效果。
 cmu-medical-bone-regen-boost-guidebook       = 激活时将骨骼愈合速率乘以 { $multiplier }。
 cmu-medical-restart-heart-guidebook          = 每个周期有 { $chance }% 的几率重启停止跳动的心脏（仅限尚未达到死亡阶段的心脏）。
+cmu-medical-regenerate-limb-guidebook        = 每消耗 5 个单位的能量，在 213K 或更低温度下会再生一个缺失的原生肢体。
+cmu-medical-reverse-revival-timer-guidebook   = 每消耗一个单位，会倒转 { $seconds } 秒的活动复活倒计时。无法逆转永久死亡或已经结束的倒计时。
+cmu-medical-cryo-bone-blood-guidebook         = 在代谢过程中，每秒逐渐通过 { $bone } 骨单位修复所有骨折，并恢复 { $blood }% 的血量。
+cmu-medical-cryo-burn-wounds-guidebook        = 逐渐通过每单位 { $amount } 的伤口伤害闭合烧伤，包括严重烧伤。
+cmu-medical-cryo-brute-wounds-guidebook       = 逐渐通过每单位 { $amount } 伤口伤害愈合严重伤口，包括开放性伤口。
+cmu-medical-cryo-organs-guidebook             = 逐渐为每个附着的器官恢复 { $amount } 点生命值。
 
 cmu-medical-defib-no-heart                   = 未在患者体内检测到心脏。
 cmu-medical-defib-heart-destroyed            = 心脏已被摧毁；无法复苏。

@@ -2,10 +2,10 @@
 cm-pill-contents-dermaline = 每秒治疗 1.5 点烧伤。Kelotane 的更有效版本。
 cm-pill-contents-meralyne = 每秒治疗 1.5 点创伤。Bicaridine 的更有效版本。
 cm-pill-contents-imidazoline = 治疗 1 点眼部损伤。修复视力模糊和失明。
-cm-pill-contents-cryoxadone = 仅在低温下生效。治疗 3 点辐射损伤。治疗 3 点创伤。治疗 3 点烧伤。治疗 3 点毒素伤。治疗 1 点缺氧损伤。
-cm-pill-contents-leporazine = 尝试稳定患者的体温。用于治疗极端寒冷或极端高温暴露。
+cm-pill-contents-cryoxadone = 海军陆战队版冷冻酮。当患者温度低于170k时，能治愈几种伤害。
+cm-pill-contents-leporazine = 试图稳定患者的体温。用于治疗极端寒冷或极端高温暴露。
 cm-pill-contents-albuterol = 每秒治疗 4 点缺氧损伤。Dexalin 的更有效版本。
-cm-pill-contents-oxycodone = 一种强效止痛药，通常用于外科手术。大幅减轻疼痛。
+cm-pill-contents-oxycodone = A一种强效止痛药，通常用于外科手术。大幅减轻疼痛。
 cm-pill-contents-tramadol = 一种中效止痛药。减轻疼痛。
 cm-pill-contents-paracetamol = 一种轻度止痛药。减轻少量疼痛。
 cm-pill-contents-hepatocytin = 治疗肝脏损伤。

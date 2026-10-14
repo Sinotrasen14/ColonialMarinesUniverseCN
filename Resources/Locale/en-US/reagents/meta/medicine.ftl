@@ -13,11 +13,21 @@ reagent-desc-arithrazine = 一种略微不稳定的药物，用于最极端的�
 reagent-name-bicaridine = 比卡利啶
 reagent-desc-bicaridine = 一种镇痛药，对治疗钝器伤害非常有效。可用于稳定被严重殴打的人，也可治疗不太危及生命的伤势。
 
-reagent-name-cryoxadone = 冷冻酮
-reagent-desc-cryoxadone = 冷冻疗法正常运行所必需的药物。可治疗所有标准类型的伤害，但只能在213K以下的温度下起效。小剂量使用时可以治疗并恢复植物活力。
+reagent-name-cryoxadone = cryoxadone冷冻酮
+reagent-desc-cryoxadone = 一种在213K或更低温度下治疗窒息和失血的低温药物。少量使用时，它也能治疗和恢复植物活力。
 
-reagent-name-doxarubixadone = 多沙鲁比沙酮
-reagent-desc-doxarubixadone = 一种冷冻化学品。可治疗由危险气体和化学物质造成的细胞损伤。
+reagent-name-doxarubixadone = doxarubixadone多柔比星
+reagent-desc-doxarubixadone = 一种低温药物，可以在213K或更低的温度下修复细胞损伤，并逐渐修复每个附属器官。
+
+reagent-name-traumoxadone = 创伤唑酮
+reagent-desc-traumoxadone = 一种低温药物，可治愈钝击、穿刺和割伤伤害，并在213K或更低温度下逐渐愈合严重伤口。
+
+reagent-name-urishoxadone = urishoxadone乌里索沙酮
+reagent-desc-urishoxadone = 一种用漆酚制成的低温药物，在213K或更低温度下可以治疗中毒和辐射损伤。
+
+reagent-name-necrosol = necrosol死土
+reagent-desc-necrosol = 一种低温药物，每用 5 单位可以再生一个缺失的原生肢体，逐渐修复所有骨折，并在 213K 或更低温度下每秒恢复 1% 的血量。它不能治疗一般伤害。
+
 
 reagent-name-dermaline = 德马林
 reagent-desc-dermaline = 一种高级化学品，治疗烧伤的效果比凯洛坦更好。
@@ -134,14 +144,14 @@ reagent-desc-pyrazine = 能高效治愈最灼热的火焰造成的烧伤。过�
 reagent-name-insuzine = 电修复素
 reagent-desc-insuzine = 能迅速修复电击造成的坏死组织，但会让你略微变冷。过量会让患者完全冻僵。
 
-reagent-name-opporozidone = 奥波罗齐酮
-reagent-desc-opporozidone= 一种难以合成的低温药物，用于再生腐烂组织和脑组织。
+reagent-name-opporozidone = opporozidone奥波罗齐酮
+reagent-desc-opporozidone = 一种低温药物，可以在温度为150K或更低的死者体内逐渐逆转腐烂，并延长活跃复活的截止时间。但它无法逆转永久死亡或已过期的复活截止时间。
 
 reagent-name-arcryox = 冰蓝氧
 reagent-desc-arcryox = 一种蓝得令人发指的低温化学品，甚至能治愈死者的极端伤口。不过它不太擅长稳定患者。
 
-reagent-name-aloxadone = 阿洛沙酮
-reagent-desc-aloxadone = 一种冷冻化学品。通过再生受影响的组织来治疗严重烧伤和冻伤。无论患者是死是活都能起效。
+reagent-name-aloxadone = aloxadone阿洛沙酮
+reagent-desc-aloxadone = 一种低温药物，可以治疗热、震荡、寒冷和腐蚀伤害，并能在213K或更低温度下逐渐愈合烧伤，即使是已死亡的患者也有效。
 
 reagent-name-mannitol = 甘露醇
 reagent-desc-mannitol = 能高效修复脑损伤。

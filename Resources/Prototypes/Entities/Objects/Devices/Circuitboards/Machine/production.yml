@@ -524,13 +524,13 @@
   name: 低温舱机器电路板 | cryo pod machine board
   description: 低温舱机器的印刷电路板。 | A machine printed circuit board for a cryo pod.
   components:
-  - type: Sprite
-    state: medical
-  - type: MachineBoard
-    prototype: CryoPod
-    stackRequirements:
-      Glass: 5
-      Cable: 1
+    - type: Sprite
+      state: medical
+    - type: MachineBoard
+      prototype: CryoPod
+      stackRequirements:
+        CMGlass: 5 # CMU14: CMSheetGlass for cryo pod construction
+        RMCCable: 1 # CMU14: RMCCableCoil for cryo pod construction
 
 - type: entity
   id: ChemMasterMachineCircuitboard
