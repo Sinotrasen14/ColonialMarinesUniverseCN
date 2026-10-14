@@ -26,10 +26,10 @@ public sealed partial class Antitoxic : RMCChemicalEffect
     protected override string ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
     {
         var healing = PotencyPerSecond * 2;
-        return $"Heals [color=green]{healing}[/color] toxin damage and removes [color=green]{PotencyPerSecond * 0.5f}[/color] units of toxic chemicals from the bloodstream per second.\n" +
-               $"Removes toxins from hydroponic plants.\n" +
-               $"Overdoses cause [color=red]{PotencyPerSecond}[/color] damage to the eyes.\n" +
-               "Critical overdoses impose at least [color=red]30[/color] seconds of drowsiness and retain a [color=red]5%[/color] chance of unconsciousness.";
+        return $"治疗 [color=green]{healing}[/color] 点毒素伤害，并清除 [color=green]{PotencyPerSecond * 0.5f}[/color] 点血液中的有毒化学物质。\n" +
+               "能清除水培植物中的毒素。\n" +
+               "药物过量会造成 [color=red]{PotencyPerSecond}[/color] 点眼部伤害。\n" +
+               "药物严重过量会造成至少 [color=red]30[/color] 秒的困倦，并保留 [color=red]5%[/color] 的昏迷几率。";
     }
 
     protected override void Tick(RMCChemicalEffectSystem system, DamageableSystem damageable, FixedPoint2 potency, RMCReagentEffectArgs args)

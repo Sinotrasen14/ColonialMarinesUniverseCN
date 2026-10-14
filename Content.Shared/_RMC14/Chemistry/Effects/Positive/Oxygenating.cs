@@ -22,12 +22,12 @@ public sealed partial class Oxygenating : RMCChemicalEffect
     protected override string ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
     {
         var healing = ActualPotency >= 3
-            ? $"Heals [color=green]all[/color] airloss damage and removes [color=green]{PotencyPerSecond}[/color] Lexorin from the bloodstream."
-            : $"Heals [color=green]{PotencyPerSecond}[/color] airloss damage and removes [color=green]{PotencyPerSecond}[/color] Lexorin from the bloodstream.";
+            ? $"治疗 [color=green]所有[/color] 窒息伤害，并清除 [color=green]{PotencyPerSecond}[/color] 点血液中的莱克索林。"
+            : $"治疗 [color=green]{PotencyPerSecond}[/color] 点窒息伤害，并清除 [color=green]{PotencyPerSecond}[/color] 点血液中的莱克索林。";
 
         return $"{healing}\n" +
-               $"Overdoses cause [color=red]{PotencyPerSecond * 0.5}[/color] toxin damage.\n" +
-               $"Critical overdoses cause [color=red]{PotencyPerSecond}[/color] brute and [color=red]{PotencyPerSecond * 2}[/color] toxin damage";
+               $"药物过量会造成 [color=red]{PotencyPerSecond * 0.5}[/color] 点毒素伤害。\n" +
+               $"药物严重过量会造成 [color=red]{PotencyPerSecond}[/color] 点创伤和 [color=red]{PotencyPerSecond * 2}[/color] 点毒素伤害";
     }
 
     protected override void Tick(RMCChemicalEffectSystem system, DamageableSystem damageable, FixedPoint2 potency, RMCReagentEffectArgs args)

@@ -24,13 +24,13 @@ public sealed partial class Hemogenic : RMCChemicalEffect
 
     protected override string ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
     {
-        var baseText = $"Restores [color=green]{PotencyPerSecond}[/color]cl of blood while not hungry; Yautja ignore the nutrient requirement.\n" +
-                       $"Causes [color=red]{PotencyPerSecond}[/color] nutrient loss per second.\n" +
-                       $"Overdoses cause [color=red]{PotencyPerSecond}[/color] toxin damage.\n" +
-                       $"Critical overdoses cause [color=red]{PotencyPerSecond * 5}[/color] additional nutrient loss";
+        var baseText = $"恢复 [color=green]{PotencyPerSecond}[/color]cl 血液，但必须吃东西；尤尔塔掠夺者可以忽略这一限制。\n" +
+                       $"每秒产生 [color=red]{PotencyPerSecond}[/color] 点饥饿消耗。\n" +
+                       $"药物过量会造成 [color=red]{PotencyPerSecond}[/color] 点毒素伤害。\n" +
+                       $"药物严重过量会造成 [color=red]{PotencyPerSecond * 5}[/color] 点额外的饥饿消耗。";
 
         return ActualPotency > 3
-            ? $"Deals [color=red]{PotencyPerSecond}[/color] brute, [color=red]{PotencyPerSecond * 2}[/color] airloss damage, and slows you down.\n{baseText}"
+            ? $"造成 [color=red]{PotencyPerSecond}[/color] 点创伤伤害，[color=red]{PotencyPerSecond * 2}[/color] 点窒息伤害，并使你减速。\n{baseText}"
             : baseText;
     }
 

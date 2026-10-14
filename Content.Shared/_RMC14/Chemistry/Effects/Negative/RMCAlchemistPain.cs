@@ -12,7 +12,7 @@ public sealed partial class RMCAlchemistPain : RMCChemicalEffect
 {
     protected override string ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
     {
-        return $"Increases pain by [color=red]{PotencyPerSecond}[/color] per second.";
+        return $"每秒增加 [color=red]{PotencyPerSecond}[/color] 点疼痛值。";
     }
 
     protected override void Tick(RMCChemicalEffectSystem system, DamageableSystem damageable, FixedPoint2 potency, RMCReagentEffectArgs args)

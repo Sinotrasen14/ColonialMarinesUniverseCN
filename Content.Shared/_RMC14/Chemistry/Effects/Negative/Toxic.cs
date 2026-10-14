@@ -14,9 +14,9 @@ public sealed partial class Toxic : RMCChemicalEffect
 
     protected override string ReagentEffectGuidebookText(IPrototypeManager prototype, IEntitySystemManager entSys)
     {
-        return $"Deals [color=red]{PotencyPerSecond}[/color] toxin damage.\n" +
-               $"Overdoses cause [color=red]{PotencyPerSecond * 2}[/color] toxin damage.\n" +
-               $"Critical overdoses cause [color=red]{PotencyPerSecond * 5}[/color] toxin damage";
+        return $"造成 [color=red]{PotencyPerSecond}[/color] 点毒素伤害。\n" +
+               $"药物过量会造成 [color=red]{PotencyPerSecond * 2}[/color] 点毒素伤害。\n" +
+               $"药物严重过量会造成 [color=red]{PotencyPerSecond * 5}[/color] 点毒素伤害。";
     }
 
     protected override void Tick(RMCChemicalEffectSystem system, DamageableSystem damageable, FixedPoint2 potency, RMCReagentEffectArgs args)

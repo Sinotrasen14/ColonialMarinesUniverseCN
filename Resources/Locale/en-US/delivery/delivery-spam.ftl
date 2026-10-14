@@ -45,7 +45,7 @@ delivery-spam-1 =   Robust工具箱——特别优惠！
 
                     {"[bold]ALL THIS AND POSSIBLY MORE FOR ONLY ONE ORGAN![/bold]"}
 
-                    ROBUST——工具箱与工具：%
+                    ROBUST——工具箱与工具：
                     -不含铅和石棉！
                     -如果您喜欢，也可以含铅和石棉！
                     -便宜！只需一个器官！比两个器官还少！
@@ -122,10 +122,10 @@ delivery-spam-6 =   纳米特森通知！！
                     尊敬的先生、女士或其他无足轻重的空间站人员
 
                     如果您不希望本空间站在以下各方眼中被宣布为无利可图
-                    {"[head=2][italic] Our Great and Glorious [color=blue]Nanotransen[/color][/head]"}
+                    {"[head=2][italic] Our Great and Glorious [color=blue]Nanotransen[/color][/italic][/head]"}
                     Then you must organize for three [color=blue]Nt[/color] Standard Stacks of [color=blue]nt[/color] Standard Gold Ingots to be sent to your station's Away Trade Outpots within 5 [color=blue]nT[/color] Standard work shifts.
 
-                    {"[head=2][color=red]IGNORE THIS ORDER AT RISK OF RETRIBUTON FROM [color=green]CENTCO[/color]!!!!![/head][/color]"}
+                    {"[head=2][color=red]IGNORE THIS ORDER AT RISK OF RETRIBUTON FROM [color=green]CENTCO[/color]!!!!![/color][/head]"}
 
 delivery-spam-7 =   Send reinforcements!
     .desc =         An official notice from... an alternate timeline?
@@ -206,7 +206,7 @@ delivery-spam-10 =  DO NOT OPEN THIS MAIL
                     ░░░░░░░░░█░░[color=#67CC40]████████[/color]█[color=#67CC40]███[/color]░░░░░░░░░░
                     ░░░░░░[color=#FF0000]████[/color]█[color=#6EC543]█[/color][color=#67CC40]███████[/color]█[color=#FF0000]██████[/color]░░░░░░░░
                     ░░░░[color=#FF0000]████[/color][color=#6EC543]██[/color][color=#67CC40]████████[/color][color=#FF0000]██████[/color][color=#FFFFFF]██[/color][color=#FF0000]█[/color][color=#B53737]█[/color]░░░░░░
-                    ░░░░[color=#FF0000]██[/color][color=#6EC543]██[/color][color=#67CC40]██████████[color=#FF0000]████████[/color][color=#B53737]██[/color]░░░░░░
+                    ░░░░[color=#FF0000]██[/color][color=#6EC543]██[/color][color=#67CC40]██████████[/color][color=#FF0000]████████[/color][color=#B53737]██[/color]░░░░░░
                     ░░[color=#6EC543]██████[/color][color=#67CC40]██████████[/color][color=#FF0000]███████[/color][color=#B53737]███[/color]░░░░░░
                     {"[color=#6EC543]██████[/color][color=#67CC40]██████████████[/color][color=#FF0000]███[/color][color=#B53737]███[/color]░░░░░░░░"}
                     {"[color=#6EC543]██████[/color][color=#67CC40]██████████████[/color][color=#FF0000]█[/color][color=#6EC543]█████[/color]░░░░░░░░"}
@@ -277,4 +277,4 @@ delivery-spam-13 =  paper
                     LOOK AT WHERE THAT GOT YOU. YOU'VE KILLED THE TWO. CONGRATS.
                     THERE WILL BE NO MORE SEQUELS NOW.
                     HOW'S THAT FOR MAKING MONEY???? IT SUCKS????
-                    {"["}bold]WELL YOU SHOULDN'T HAVE KILLED THEM!!!!!!!!!!!!!!![/bold]
+                    {"[bold]WELL YOU SHOULDN'T HAVE KILLED THEM!!!!!!!!!!!!!!![/bold]"}
