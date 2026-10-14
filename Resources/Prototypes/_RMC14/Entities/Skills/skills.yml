@@ -7,23 +7,23 @@
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillAntagonist
-  name: 对手 | Antagonist
+  name: 反派技能
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillConstruction
-  name: 建设 | Construction
+  name: 建造
   categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
     delayMultipliers: [1, 1, 0.5]
-# Based on barricade weld times, 1 and 0 are full second, 2 is half
+# 基于掩体焊接时间，0和1级为标准时间，2级减半
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillCqc
-  name: Cqc
+  name: 近身格斗
   categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
@@ -32,7 +32,7 @@
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillDomestics
-  name: 国内 | Domestics
+  name: 内务杂务
   categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
@@ -41,13 +41,13 @@
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillEndurance
-  name: 耐力 | Endurance
+  name: 耐力
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillEngineer
-  name: 工程师 | Engineer
+  name: 工程
   categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
@@ -56,19 +56,19 @@
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillExecution
-  name: 执行 | Execution
+  name: 战地处决 | Execution
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillFirearms
-  name: 枪支 | Firearms
+  name: 枪械射击
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillFireman
-  name: 消防员 | Fireman
+  name: 伤员搬运
   categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
@@ -77,7 +77,7 @@
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillIntel
-  name: 英特尔 | Intel
+  name: 情报
   categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
@@ -86,19 +86,19 @@
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillJtac
-  name: Jtac
+  name: 战术引导
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillLeadership
-  name: 领导力 | Leadership
+  name: 战地指挥
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillMedical
-  name: 医疗 | Medical
+  name: 医疗
   categories: [HideSpawnMenu]
   components:
   - type: SkillDefinition
@@ -107,67 +107,67 @@
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillMeleeWeapons
-  name: 近战武器 | Melee Weapons
+  name: 近战武器
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillNavigations
-  name: 导航 | Navigations
+  name: 舰船导航
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillOverwatch
-  name: 守望先锋 | Overwatch
+  name: 监视调度
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillPilot
-  name: 飞行员 | Pilot
+  name: 航空驾驶
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillPolice
-  name: 警察 | Police
+  name: 宪兵执法
   categories: [HideSpawnMenu]
 
-# Forklift certified
+# 动力叉车/装卸机驾驶资格
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillPowerLoader
-  name: 动力装载机 | Power Loader
+  name: 动力装卸机
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillResearch
-  name: 研究 | Research
+  name: 研究
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillSmartGun
-  name: 智能枪 | Smart Gun
+  name: 智能武器
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillSpecialistWeapons
-  name: 特种武器 | Specialist Weapons
+  name: 特种武器
   categories: [HideSpawnMenu]
 
 # No longer a week away
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillSurgery
-  name: 外科 | Surgery
+  name: 外科
   categories: [HideSpawnMenu]
 
 - type: entity
   parent: RMCSkillBase
   id: RMCSkillVehicles
-  name: 车辆 | Vehicles
+  name: 车辆驾驶
   categories: [HideSpawnMenu]
