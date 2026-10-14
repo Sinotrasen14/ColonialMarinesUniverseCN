@@ -1,0 +1,59 @@
+<Document>
+  # 血液和输血
+
+  失血必须补回。先止血，然后通过输血包或静脉输液架输血、血浆或生理盐水。见 [textlink="Wounds and Bleeding" link="CMUGuideMedicalWounds"].
+
+  ## Blood Types
+  每个人都有血型，在角色创建时选择。它会印在他们的身份证上，健康分析仪会在血量旁显示它。
+  - 血液包上标明了其血型。从WeYu血液分配器取出的血液包含各种血型。
+  - 当病人血量不足时，健康分析器的建议会列出他们可以接受的血型和血浆类型。
+  - 只提供病人可以接受的血液，与现实生活中一样。[bold]O-[/bold]血可以输给任何人，[bold]AB+[/bold]病人可以接受任何血液。
+
+  谁可以接受哪种血液：
+  - [bold]O-[/bold] 患者:只有 O- .
+  - [bold]O+[/bold]: O- 和 O+.
+  - [bold]A-[/bold]: O- 和 A-.
+  - [bold]A+[/bold]: O-, O+, A- 和 A+.
+  - [bold]B-[/bold]: O- 和 B-.
+  - [bold]B+[/bold]: O-, O+, B- 和 B+.
+  - [bold]AB-[/bold]: O-, A-, B- 和 AB-.
+  - [bold]AB+[/bold]: 任何类型。
+
+  - [color=red]错误的血型会在血液中被破坏[/color]。它不会恢复任何东西，还会毒害患者。即使患者的血液已满，它仍会继续流入。
+  - 从某人身上抽血到空的血袋中会标上他们的血型。从两种不同血型的血袋中填充一个血袋会使其变为[color=red]混合[/color]，对任何人都不安全。一个空血袋可以用任何血型重新填充。
+
+  ## 保持血液新鲜
+  - 血液[color=red]放出冰箱30分钟后会变质[/color]，血浆[color=red]20分钟后[/color]会变质。时间会累积，把血包放回冰箱可以暂停变质，但不会重置时间。
+  - 一个[bold]血液冷却器[/bold]、[bold]冷冻箱[/bold]或全尺寸[bold]静脉输液架[/bold]可以保持血包冷却。用手拿着或放在折叠式输液架上的血包是无法保持冷的。
+  - 血液冷却器只放血包和输液袋，而且可以放进挎包里。军医必备装备里会有一个，WeYu 医疗商店有库存。
+  - 检查血包可以告诉你血液何时开始升温，以及何时已经变质。
+  - [color=red]变质的血液和血浆[/color]无益且会毒害患者。生理盐水不会变质。
+  - 空的血包可以重新注入新鲜血液。
+
+  ## Giving Blood
+  <Box>
+    <GuideEntityEmbed Entity="CMUSalineBag" Caption="Saline bag"/>
+    <GuideEntityEmbed Entity="CMBloodPack" Caption="Blood pack"/>
+    <GuideEntityEmbed Entity="CMUIVPressureBag" Caption="Pressure bag"/>
+    <GuideEntityEmbed Entity="CMUBloodCooler" Caption="Blood cooler"/>
+  </Box>
+  - [bold]从你的手上[/bold]：将一个输液袋用于病人以连接它。只要你手里拿着，它就会保持连接。
+  - [bold]挤压它[/bold]：使用手中连接的输液袋（[bold]Z[/bold]）每隔几秒开始挤压一次，使液体流速提升三倍。再次按下停止。如果你松开输液袋、它被断开或你昏倒，也会停止。
+  - [bold]输液架[/bold]：将输液袋挂在输液架上，然后将架子拖到病人身上。使用输液架上的[bold]压力袋[/bold]，让液体流速加倍。如需取下，可使用输液架的Alt-点击选项。
+
+  ## Plasma
+  - 血浆流速是全血的两倍。
+  - 血浆袋也按血型分类，但 [bold]血浆与血液相反匹配[/bold]，就像现实生活中一样，而且Rh因子无关紧要：
+    - [bold]AB[/bold] 血浆可以给任何人。
+    - [bold]A[/bold] 血浆用于A型和O型患者。
+    - [bold]B[/bold] 血浆用于B型和O型患者。
+    - [bold]O[/bold] 血浆只给O型患者。
+  - 在注射后的一段时间内，它会[bold]将所有出血减半[/bold]，无论是开放性伤口还是内部出血。血浆量越多，持续时间越长，最长可达5分钟。
+  - 它不会停止出血：像平常一样处理伤口。
+
+  ## Saline
+  - 生理盐水可以填补任何血型丢失的血容量，但它不是血液。
+  - [color=red]如果患者超过四分之一的血液是生理盐水，它就会开始毒害身体[/color]，超过安全量毒性会更强。
+  - 健康分析仪会显示血液中生理盐水的比例。一旦超过安全比例，会变成橙色。
+  - 身体会慢慢用真正的血液替代生理盐水。[bold]便携式透析机[/bold]可以过滤血液，速度比自然替换快五倍；参见 [textlink="Medical Machines" link="CMUGuideMedicalMachines"]。用生理盐水拖延时间，然后再补充血液。
+</Document>

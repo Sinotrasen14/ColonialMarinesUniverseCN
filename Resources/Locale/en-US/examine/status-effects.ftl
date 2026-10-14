@@ -1,17 +1,9 @@
-<<<<<<< HEAD
 status-effect-examine-adrenaline = [color=red]{POSS-ADJ($target)}身体的每一部分都显得紧绷而警觉。[/color]
-status-effect-examine-drunk = [color=brown]{CAPITALIZE(SUBJECT($target))} {CONJUGATE-BE($target)} 喝醉了……[/color]
+# CMU14: was "is drunk..."
+status-effect-examine-drunk = [color=brown]{CAPITALIZE(SUBJECT($target))} { GENDER($target) ->
+    [epicene] 出现
+    *[other] 出现
+  } disoriented...[/color]
 status-effect-examine-seeing-rainbow = [color=lightgreen]{CAPITALIZE(SUBJECT($target))} {CONJUGATE-BE($target)} 正盯着不存在的东西看。[/color]
 status-effect-examine-stunned = [color=yellow]{CAPITALIZE(POSS-ADJ($target))}身体看起来精疲力尽，无法移动。[/color]
 status-effect-examine-temporary-blindness = [color=lightblue]{CAPITALIZE(POSS-ADJ($target))}眼睛失去了焦点。{CAPITALIZE(SUBJECT($target))}似乎看不清东西。[/color]
-=======
-status-effect-examine-adrenaline = [color=red]Every part of {POSS-ADJ($target)} body appears tense and alert.[/color]
-# CMU14: was "is drunk..."
-status-effect-examine-drunk = [color=brown]{CAPITALIZE(SUBJECT($target))} { GENDER($target) ->
-    [epicene] appear
-    *[other] appears
-  } disoriented...[/color]
-status-effect-examine-seeing-rainbow = [color=lightgreen]{CAPITALIZE(SUBJECT($target))} {CONJUGATE-BE($target)} glancing at things which aren't there.[/color]
-status-effect-examine-stunned = [color=yellow]{CAPITALIZE(POSS-ADJ($target))} body looks exhausted and unable to move.[/color]
-status-effect-examine-temporary-blindness = [color=lightblue]{CAPITALIZE(POSS-ADJ($target))} eyes have gone unfocused. {CAPITALIZE(SUBJECT($target))} seems to have trouble seeing.[/color]
->>>>>>> upstream

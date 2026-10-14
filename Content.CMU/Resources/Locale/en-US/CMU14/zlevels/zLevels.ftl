@@ -5,25 +5,12 @@ cmu-zlevel-look-up-nested = 你嵌套时无法向上看。
 cmu-zlevel-look-up-enabled = 你向上看。
 cmu-zlevel-look-up-disabled = 你停止向上看。
 
-<<<<<<< HEAD
-cmu-zlevel-shoot-down-enabled = 你准备向下一层开火。
-cmu-zlevel-shoot-down-disabled = 你停止瞄准下一层。
-cmu-zlevel-shoot-down-disabled-unwield = 你收起武器，停止向下瞄准。
-cmu-zlevel-shoot-up-disabled-unwield = 你收起武器，停止向上瞄准。
-cmu-zlevel-shoot-down-no-gun = 你需要手持枪械才能向下瞄准一层。
-cmu-zlevel-shoot-down-requires-wield = 你需要先持握枪械才能向下瞄准一层。
-cmu-zlevel-shoot-down-no-level = 下方没有可射击的层。
-cmu-zlevel-shoot-up-no-level = 上方没有可射击的层。
-cmu-zlevel-shoot-down-blocked-floor = 附近没有可供向下射击的开口。
-cmu-zlevel-shoot-up-blocked-floor = 附近没有可供向上射击的开口。
-=======
-cmu-zlevel-shoot-down-disabled-unwield = You stop aiming down as you unwield your weapon.
-cmu-zlevel-shoot-up-disabled-unwield = You stop aiming up as you unwield your weapon.
-cmu-zlevel-shoot-down-no-level = There is no Z-level below to shoot into.
-cmu-zlevel-shoot-up-no-level = There is no Z-level above to shoot into.
-cmu-zlevel-shoot-down-blocked-floor = There is no opening nearby to shoot down through.
-cmu-zlevel-shoot-up-blocked-floor = There is no opening nearby to shoot up through.
->>>>>>> upstream
+cmu-zlevel-shoot-down-disabled-unwield = 当你放下武器时，你停止瞄准。
+cmu-zlevel-shoot-up-disabled-unwield = 当你放下武器时，你停止向上瞄准。
+cmu-zlevel-shoot-down-no-level = 下面没有可以射击的 Z 级。
+cmu-zlevel-shoot-up-no-level = 没有更高的 Z 级可以射击。
+cmu-zlevel-shoot-down-blocked-floor = 附近没有可以向下射击的开口。
+cmu-zlevel-shoot-up-blocked-floor = 附近没有可以向上射击的开口。
 
 cmu-zlevel-voice-from-up = {$name}（来自上方）
 cmu-zlevel-voice-from-down = {$name}（来自下方）

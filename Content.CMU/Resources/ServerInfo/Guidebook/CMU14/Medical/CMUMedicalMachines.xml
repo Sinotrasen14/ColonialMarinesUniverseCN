@@ -19,7 +19,6 @@
     <GuideEntityEmbed Entity="CMUAutodocPod" Caption="自动手术舱"/>
     <GuideEntityEmbed Entity="CMUAutodocConsole" Caption="自动手术控制台"/>
   </Box>
-<<<<<<< HEAD
   自动手术机器人可以自行操作，因此外科医生可以排队安排手术然后离开。
   - 将病人放入舱内，然后打开控制台。排队手术需要[bold]外科训练[/bold]（等级2）。
   - 选择一个身体部位及其需要进行的手术，并将它们加入队列。它还可以作为自动循环进行[bold]伤口/烧伤修复[/bold]。
@@ -27,36 +26,26 @@
   - [bold]停止[/bold]会暂停操作，[bold]清空[/bold]会清除队列，[bold]弹出病人[/bold]会将其取出。
   - 这个舱可以算作手术台，因此操作步骤不会因为病人位置而失败。
 
-  ## 冷冻治疗舱
-=======
-  The autodoc operates by itself, so anyone can queue up the work and step away. It needs no surgery training.
-  - Put the patient in the pod, then open the console.
-  - Pick a body part and the surgeries it needs, and add them to the queue. It can also run [bold]Repair Wounds / Burns[/bold] as an automated cycle.
-  - Press [bold]Start[/bold]. The pod works through the queue on its own. It's thorough but slow: each step takes the better part of a minute.
-  - [bold]Stop[/bold] pauses it, [bold]Clear[/bold] empties the queue, and [bold]Eject Patient[/bold] takes them out.
-  - The pod counts as an operating table, so its steps never fail because of where the patient is lying.
-
-  ## Limb Printer
+  ## 肢体打印机
   <Box>
     <GuideEntityEmbed Entity="CMULimbPrinter" Caption="Limb printer"/>
   </Box>
-  The limb printer makes replacement arms, hands, legs and feet for patients who've lost one. Open it to pick the limb and side you need. The printed limb drops out next to the machine.
-  - [bold]Human limbs[/bold] need [bold]30u of biogenic matrix[/bold] from the beaker and [bold]7.5u of blood[/bold] from a syringe of the patient's blood. The printer starts with a beaker of 120u matrix, enough for four limbs. Chemistry can mix more.
-  - [bold]Robotic limbs[/bold] need [bold]15 metal sheets[/bold] loaded into the printer instead.
-  - The printer only makes the limb. Attaching it is surgery; see [textlink="Limb Surgery" link="CMUGuideSurgeryLimbs"].
+  肢体打印机为失去肢体的病人制造替换的手臂、手、腿和脚。打开它以选择你需要的肢体和侧面。打印好的肢体会掉落在机器旁边。
+  - [bold]人体肢体[/bold]需要从烧杯中取用[bold]30单位生物基质[/bold]和从病人的血液注射器中取用[bold]7.5单位血液[/bold]。打印机会从一杯120单位的基质开始，这足够制造四肢。化学部门可以混合更多。
+  - [bold]机器人肢体[/bold]需要在打印机中加载[bold]15片金属板[/bold]。
+  - 打印机只制造肢体。把它连接上是手术；见 [textlink="Limb Surgery" link="CMUGuideSurgeryLimbs"].
 
-  ## Portable Dialysis
+  ## 便携式透析
   <Box>
     <GuideEntityEmbed Entity="RMCPortableDialysis" Caption="Portable dialysis machine"/>
   </Box>
-  A battery-powered machine that cleans a patient's blood. Hook it up by using it on the patient; it needs [bold]medical training[/bold] (level 2) and stays connected while the patient is within 2 tiles.
-  - Every second it filters [bold]1.5u of each chemical[/bold] out of the bloodstream, good and bad alike. Use it to clear poisons and overdoses, not while their medicine is working.
-  - It also filters out [bold]saline[/bold], 3u a second, leaving the patient's own blood in its place. See [textlink="Blood and Transfusions" link="CMUGuideMedicalBlood"].
-  - [color=red]It costs the patient 6u of blood a second[/color]. Watch their blood level, and give blood if it drops.
-  - It disconnects when its battery runs out.
+  一台由电池供电的机器，用于清洁病人的血液。通过在病人身上使用它来连接；它需要[bold]医疗培训[/bold]（等级2），并且只要病人在2个方格内就保持连接。
+  - 每秒它会过滤掉血液中的[bold]1.5单位的每种化学物质[/bold]，无论好坏。使用它来清除毒素和药物过量，而不是在药物还在发挥作用时使用。
+  - 它还会过滤掉[bold]生理盐水[/bold]，每秒3单位，保留下患者自己的血液。请参阅[textlink="Blood and Transfusions" link="CMUGuideMedicalBlood"]。
+  - [color=red]它每秒会消耗患者6单位的血液[/color]。注意他们的血量，如果下降则补充血液。
+  - 当电池耗尽时，它会自动断开。
 
   ## Cryo Pod
->>>>>>> upstream
   <Box>
     <GuideEntityEmbed Entity="CryoPod" Caption="冷冻舱"/>
   </Box>

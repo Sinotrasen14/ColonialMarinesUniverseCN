@@ -260,7 +260,6 @@ cmu-autodoc-chemicals-heading = 休眠舱化学品
 cmu-autodoc-no-chemicals = 没有配置的化学品。
 cmu-autodoc-dose-small = 5u
 cmu-autodoc-dose-large = 10u
-<<<<<<< HEAD
 cmu-autodoc-remove-button = 移除
 cmu-autodoc-queue-button = 排队
 cmu-autodoc-queue-heading = 队列
@@ -270,23 +269,9 @@ cmu-autodoc-queue-empty = 没有排队的手术。
 cmu-autodoc-queue-summary = { $count } 项排队手术
 cmu-autodoc-available-procedures = { $count } 项可用手术
 cmu-autodoc-part-procedures = { $count } 项手术
-cmu-autodoc-surgery2-required = 需要外科 2 级训练才能排队全自动医疗舱步骤。
+cmu-autodoc-no-patient-to-queue = 将病人放入连接的自动医护舱以排队步骤。
 cmu-autodoc-no-surgeries = 此处没有可用的手术。
 cmu-autodoc-queue-row = #{ $index } { $surgery } 于 { $part } - { $step }
-=======
-cmu-autodoc-remove-button = Remove
-cmu-autodoc-queue-button = Queue
-cmu-autodoc-queue-heading = Queue
-cmu-autodoc-parts-heading = Parts
-cmu-autodoc-surgeries-heading = Surgeries
-cmu-autodoc-queue-empty = No queued procedures.
-cmu-autodoc-queue-summary = { $count } queued procedure(s)
-cmu-autodoc-available-procedures = { $count } available procedure(s)
-cmu-autodoc-part-procedures = { $count } procedure(s)
-cmu-autodoc-no-patient-to-queue = Put a patient in the linked autodoc pod to queue steps.
-cmu-autodoc-no-surgeries = No surgeries available here.
-cmu-autodoc-queue-row = #{ $index } { $surgery } on { $part } - { $step }
->>>>>>> upstream
 cmu-autodoc-surgery-row = { $surgery } - { $step }
 cmu-autodoc-automated-step-label = 自动修复循环
 cmu-autodoc-automated-step-note = 全自动医疗舱按机器计时器修复此目标。

@@ -145,9 +145,9 @@ rmc-hardpoint-removal-tool = 拿着维护千斤顶才能移除这个模块。
 rmc-hardpoint-removal-prying-tool = 拿着撬棍或维护千斤顶才能移除这个模块。
 
 # CMU14
-<<<<<<< HEAD
-cmu-vehicle-supply-unassigned = 此仓库未分配排。
+cmu-vehicle-supply-unassigned = 没有分配到这个仓库的小队。
 cmu-vehicle-supply-allowance = {$platoon} — 已发放载具：{$used}/{$limit}（最多一辆坦克和一架 VTOL）
+cmu-vehicle-supply-no-refund = 通知：车辆问题已定。指挥部不会更换或退还从此仓库调出的任何船体——无论是归还还是丢失，它都将继续计入该排在本次行动中的账目。
 cmu-vehicle-supply-preview-title = 载具预览
 cmu-vehicle-supply-stored-vehicles = 已储存载具
 cmu-vehicle-supply-loadout = 载具装备
@@ -165,25 +165,3 @@ cmu-vehicle-supply-lift-raising = 正在升起
 cmu-vehicle-supply-lift-preparing = 正在准备
 cmu-vehicle-supply-copies-expanded = 副本 v
 cmu-vehicle-supply-copies-collapsed = 副本 >
-=======
-cmu-vehicle-supply-unassigned = No platoon assigned to this depot.
-cmu-vehicle-supply-allowance = {$platoon} — Vehicles issued: {$used}/{$limit} (maximum one tank and one VTOL)
-cmu-vehicle-supply-no-refund = NOTICE: Vehicle issue is final. Command will not replace or credit back any hull drawn from this depot - returned or lost, it stays on the platoon's books for the rest of the operation.
-cmu-vehicle-supply-preview-title = Vehicle Preview
-cmu-vehicle-supply-stored-vehicles = Stored Vehicles
-cmu-vehicle-supply-loadout = Vehicle Loadout
-cmu-vehicle-supply-raise = Raise
-cmu-vehicle-supply-lower = Lower
-cmu-vehicle-supply-active-none = none
-cmu-vehicle-supply-status-busy = busy
-cmu-vehicle-supply-status-idle = idle
-cmu-vehicle-supply-status-line = Lift: { $lift } | Status: { $status } | Active: { $active }
-cmu-vehicle-supply-lift-none = No lift
-cmu-vehicle-supply-lift-lowered = Lowered
-cmu-vehicle-supply-lift-raised = Raised
-cmu-vehicle-supply-lift-lowering = Lowering
-cmu-vehicle-supply-lift-raising = Raising
-cmu-vehicle-supply-lift-preparing = Preparing
-cmu-vehicle-supply-copies-expanded = Copies v
-cmu-vehicle-supply-copies-collapsed = Copies >
->>>>>>> upstream

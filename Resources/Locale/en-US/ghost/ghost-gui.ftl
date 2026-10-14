@@ -26,16 +26,10 @@ ghost-target-window-tab-govfor = GOVFOR
 ghost-target-window-tab-xenos = 异形
 ghost-target-window-tab-corrupted-hive = 腐化虫巢
 ghost-target-window-tab-opfor = OPFOR
-<<<<<<< HEAD
-ghost-target-window-tab-yautja = 亚乌查
-ghost-target-window-tab-third-party = 第三方
-ghost-target-window-tab-survivors = 幸存者
-=======
 ghost-target-window-tab-yautja = Yautja
-ghost-target-window-tab-third-party = Third Party
+ghost-target-window-tab-third-party = 第三方
 # CMU14: survivors are shown as civilians.
-ghost-target-window-tab-survivors = Civilians
->>>>>>> upstream
+ghost-target-window-tab-survivors = 平民
 ghost-target-window-tab-weya-pmc = WeYu/PMC
 ghost-target-window-tab-clf = CLF
 ghost-target-window-tab-spp = SPP

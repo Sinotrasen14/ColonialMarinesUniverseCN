@@ -10,7 +10,6 @@ cmu-medical-eschar-debride-success = 焦痂已被清创。
 cmu-medical-tourniquet-applying = 正在绑扎止血带……
 cmu-medical-tourniquet-removing = 正在解除止血带……
 
-<<<<<<< HEAD
 cmu-medical-bandage-no-wounds = 没有可包扎的未处理伤口。
 cmu-medical-bandage-no-wounds-on-body-part = 所选身体部位上没有可包扎的未处理伤口。
 cmu-medical-bandage-synth-requires-repair-tools = 合成体需要焊枪来修复创伤伤害，需要电缆线圈来修复烧伤。
@@ -18,24 +17,11 @@ cmu-medical-tourniquet-applied = 止血带已绑扎。
 cmu-medical-tourniquet-applied-stump = 止血带已夹紧在残肢上。
 cmu-medical-tourniquet-removed = 止血带已解除。
 cmu-medical-tourniquet-already-on = 该肢体已经绑有止血带。
+cmu-medical-tourniquet-no-selected-limb = 你瞄准的地方没有手臂或腿可以绑止血带。
 cmu-medical-tourniquet-no-target = 没有可绑扎止血带的肢体。
 cmu-medical-tourniquet-verb-remove = 解除止血带
 cmu-medical-tourniquet-verb-remove-stump = 解除残肢上的止血带
 cmu-medical-tourniquet-necrosis = 该肢体已经坏死。
-=======
-cmu-medical-bandage-no-wounds = No untreated wounds to bandage.
-cmu-medical-bandage-no-wounds-on-body-part = No untreated wounds on the selected body part.
-cmu-medical-bandage-synth-requires-repair-tools = Synthetics require a welder for brute damage and cable coils for burns.
-cmu-medical-tourniquet-applied = The tourniquet is applied.
-cmu-medical-tourniquet-applied-stump = The tourniquet is clamped over the stump.
-cmu-medical-tourniquet-removed = The tourniquet is removed.
-cmu-medical-tourniquet-already-on = That limb already has a tourniquet.
-cmu-medical-tourniquet-no-selected-limb = There's no arm or leg to put a tourniquet on where you're aiming.
-cmu-medical-tourniquet-no-target = There is no limb to tourniquet.
-cmu-medical-tourniquet-verb-remove = Remove tourniquet
-cmu-medical-tourniquet-verb-remove-stump = Remove tourniquet from stump
-cmu-medical-tourniquet-necrosis = The limb has gone necrotic.
->>>>>>> upstream
 
 cmu-medical-cast-needed = 打上石膏，以免骨骼错位愈合。
 cmu-medical-cast-verb-remove = 拆除石膏
@@ -69,7 +55,6 @@ cmu-medical-body-part-type-leg = 腿部
 cmu-medical-body-part-type-foot = 足部
 cmu-medical-body-part-type-tail = 尾部
 
-<<<<<<< HEAD
 cmu-robotic-limb-repair-brute-start-self = 你开始修复你{ $limb }上的凹陷。
 cmu-robotic-limb-repair-brute-start-user = 你开始修复{ THE($target) }的{ $limb }上的凹陷。
 cmu-robotic-limb-repair-brute-start-others = { THE($user) }开始修复{ THE($target) }的{ $limb }上的凹陷。
@@ -82,31 +67,17 @@ cmu-robotic-limb-repair-brute-finish-others = { THE($user) }用{ THE($tool) }修
 cmu-robotic-limb-repair-burn-finish-self = 你用{ THE($tool) }修复了你{ $limb }上烧焦的线路。
 cmu-robotic-limb-repair-burn-finish-user = 你用{ THE($tool) }修复了{ THE($target) }的{ $limb }上烧焦的线路。
 cmu-robotic-limb-repair-burn-finish-others = { THE($user) }用{ THE($tool) }修复了{ THE($target) }的{ $limb }上烧焦的线路。
-=======
-cmu-robotic-limb-repair-brute-start-self = You begin repairing dents in your { $limb }.
-cmu-robotic-limb-repair-brute-start-user = You begin repairing dents in { THE($target) }'s { $limb }.
-cmu-robotic-limb-repair-brute-start-others = { THE($user) } begins repairing dents in { THE($target) }'s { $limb }.
-cmu-robotic-limb-repair-burn-start-self = You begin repairing scorched wiring in your { $limb }.
-cmu-robotic-limb-repair-burn-start-user = You begin repairing scorched wiring in { THE($target) }'s { $limb }.
-cmu-robotic-limb-repair-burn-start-others = { THE($user) } begins repairing scorched wiring in { THE($target) }'s { $limb }.
-cmu-robotic-limb-repair-brute-finish-self = You repair dents in your { $limb } with { THE($tool) }.
-cmu-robotic-limb-repair-brute-finish-user = You repair dents in { THE($target) }'s { $limb } with { THE($tool) }.
-cmu-robotic-limb-repair-brute-finish-others = { THE($user) } repairs dents in { THE($target) }'s { $limb } with { THE($tool) }.
-cmu-robotic-limb-repair-burn-finish-self = You repair scorched wiring in your { $limb } with { THE($tool) }.
-cmu-robotic-limb-repair-burn-finish-user = You repair scorched wiring in { THE($target) }'s { $limb } with { THE($tool) }.
-cmu-robotic-limb-repair-burn-finish-others = { THE($user) } repairs scorched wiring in { THE($target) }'s { $limb } with { THE($tool) }.
 
-cmu-wound-arterial-spray = Blood squirts out of your { $part } in hot spurts!
-cmu-wound-arterial-spray-stump = Blood squirts out of the stump where your { $limb } used to be!
+cmu-wound-arterial-spray = 血从你的{$part}喷出来，热血喷涌！
+cmu-wound-arterial-spray-stump = 血从你原本的{ $limb }断肢处喷出！
 cmu-wound-stump-limb = { $symmetry ->
-    [left] left{" "}
-    [right] right{" "}
+    [left] 左{" "}
+    [right] 右{" "}
    *[other] {""}
 }{ $type ->
-    [arm] arm
-    [hand] hand
-    [leg] leg
-    [foot] foot
-   *[other] limb
+    [arm] 手臂
+    [hand] 手
+    [leg] 腿
+    [foot] 脚
+   *[other] 肢体
 }
->>>>>>> upstream
