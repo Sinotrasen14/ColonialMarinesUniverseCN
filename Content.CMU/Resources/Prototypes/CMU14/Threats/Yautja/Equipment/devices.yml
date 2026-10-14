@@ -1,8 +1,8 @@
 - type: entity
   parent: CMHandsBlackMarine
   id: CMUYautjaBracer
-  name: hunting bracer
-  description: A heavy wrist computer packed with alien hunting tools.
+  name: 狩猎护腕
+  description: 一台沉重的腕部微电脑，内嵌着异星狩猎工具。
   components:
   - type: Insulated
     coefficient: 0
@@ -140,9 +140,8 @@
 - type: entity
   parent: CMUYautjaBracer
   id: CMUYautjaBadBloodBracer
-  name: scavenged hunting bracer
-  description: A worn hunting bracer, crudely maintained. Its weapon bay has been damaged. A communicator has been wired
-    directly into the bracer.
+  name: 搜刮来的狩猎护腕
+  description: 一只磨损严重且维护粗糙的狩猎护腕。其武器挂舱已被破坏，但在主电路上粗暴地接入了一部通讯器。
   components:
   - type: YautjaBadBloodGearChoice
   - type: YautjaBracer
@@ -191,8 +190,8 @@
 - type: entity
   parent: CMHandsBlackMarine
   id: CMUYautjaThrallBracer
-  name: thrall bracers
-  description: A pair of strange alien bracers, adapted for human biology.
+  name: 侍从护腕
+  description: 一对奇特的异星护腕，已针对人类生理结构进行了调整适配。
   suffix: Yautja, Thrall
   components:
   - type: Sprite
@@ -216,8 +215,8 @@
 - type: entity
   parent: CMUYautjaBracer
   id: CMUYautjaBloodedThrallBracer
-  name: blooded thrall bracers
-  description: A pair of strange alien bracers, adapted for human biology. These contain additional features.
+  name: 授血侍从护腕
+  description: 一对奇特的异星护腕，已针对人类生理结构进行了调整适配，且包含更多扩展功能。
   suffix: Yautja, Thrall, Blooded
   components:
   - type: Sprite
@@ -239,8 +238,8 @@
 - type: entity
   parent: BaseStorageItem
   id: CMUYautjaThrallGearBox
-  name: alien box
-  description: A strange, runed box.
+  name: 异星收纳匣
+  description: 一个刻有奇异符文的箱子。
   suffix: Yautja, Thrall, Filled
   components:
   - type: Sprite
@@ -263,8 +262,8 @@
   parent: [CMBaseMask, CMUBaseGasMaskFilterSlot]
   id: CMUYautjaMaskBase
   abstract: true
-  name: bio-mask
-  description: An alien hunting mask with a built-in tactical visor.
+  name: 生化面具
+  description: 带有内置战术目镜的异星狩猎面具。
   components:
   - type: Sprite
     sprite: CMU14/Yautja/mask.rsi
@@ -289,7 +288,6 @@
     zoomOffset: 14
   - type: ParasiteResistance
     maxCount: 12
-  # sealed like any gas mask, so neomorph spores and popper infections get the same block chance
   - type: MycotoxinProtection
   - type: EyeProtection
     protectionTime: 20
@@ -316,8 +314,8 @@
   parent: CMUYautjaMaskBase
   id: CMUYautjaMaskFunctionalBase
   abstract: true
-  name: clan mask
-  description: A beautifully designed metallic face mask, both ornate and functional.
+  name: 部族面具
+  description: 设计精美的金属面具，既华丽庄严又具备完备的实战功能。
   components:
   - type: YautjaMask
     requiresYautjaWearer: true
@@ -328,9 +326,6 @@
   - type: ParasiteResistance
     maxCount: 100
   - type: IngestionBlocker
-    # Yautja masks are worn by default and do not have a pull-down state. Keep
-    # the food/drink interaction available while the mask's sealed systems are
-    # represented by its dedicated Yautja visor logic.
     enabled: false
   - type: ShowHealthBars
     damageContainers:
@@ -349,8 +344,6 @@
   - type: StaticPrice
     price: 100
 
-# CMU14: regular biomasks retain the current frontline balance. Special unarmored
-# masks inherit the functional base without inheriting this armor component.
 - type: entity
   parent: CMUYautjaMaskFunctionalBase
   id: CMUYautjaMask
@@ -366,8 +359,8 @@
 - type: entity
   parent: IDCardStandard
   id: CMUYautjaBracerIdChip
-  name: bracer ID chip
-  description: A complex cypher chip embedded within a set of clan bracers.
+  name: 护腕身份芯片
+  description: 嵌入在部族护腕内部的精密密匙芯片。
   components:
   - type: Sprite
     sprite: CMU14/HunterShip/obj/items/radio.rsi
@@ -391,8 +384,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaMaskOrnament
-  name: Mask Ornament
-  description: An ornate addition to your mask.
+  name: 面具饰物
+  description: 用于装点面具的华丽饰物。
   components:
   - type: Sprite
     sprite: Objects/Misc/guardian_info.rsi
@@ -407,8 +400,8 @@
 - type: entity
   parent: BaseStorageItem
   id: CMUYautjaCloakPack
-  name: cloaking field harness
-  description: A compact field harness tuned for Yautja optical camouflage.
+  name: 隐形力场束具
+  description: 专为耶特查猎手的光学迷彩调校的紧凑型力场束具。
   components:
   - type: Sprite
     sprite: CMU14/Yautja/cape_full.rsi
@@ -448,8 +441,8 @@
 - type: entity
   parent: CMUYautjaCloakPack
   id: CMUYautjaBadBloodCloakPack
-  name: ceremonial cloaking harness
-  description: A ceremonial cape fitted with a compact cloaking field generator.
+  name: 仪式隐形束具
+  description: 配有紧凑型隐形力场发生器的仪式披风。
   components:
   - type: Sprite
     sprite: CMU14/Yautja/cape_ceremonial.rsi
@@ -466,8 +459,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaSmartDisc
-  name: smart-disc
-  description: A strange piece of alien technology. It has many jagged, whirring blades and bizarre writing.
+  name: 智能飞盘
+  description: 一件奇特的异星高科技造物。边缘布满锯齿状的旋转利刃与奇异铭文。
   components:
   - type: Sprite
     sprite: CMU14/Yautja/smart_disc.rsi
@@ -542,8 +535,8 @@
 - type: entity
   parent: BaseWeaponBattery
   id: CMUYautjaPlasmaCaster
-  name: plasma caster
-  description: A powerful, shoulder-mounted energy weapon.
+  name: 等离子肩炮
+  description: 威力巨大的肩扛式高能等离子武器。
   components:
   - type: Sprite
     sprite: CMU14/Yautja/plasma_caster.rsi
@@ -563,7 +556,7 @@
   - type: Gun
     projectileSpeed: 28
     fireRate: 1.666667
-    resetOnHandSelected: false # CMU14: switching hands must not restart the caster's cooldown.
+    resetOnHandSelected: false。
     minAngle: 10
     maxAngle: 10
     selectedMode: SemiAuto
@@ -618,8 +611,8 @@
 - type: entity
   parent: [BaseItem, RMCBaseMeleeWeapon]
   id: CMUYautjaWristBlades
-  name: wrist blade
-  description: A huge, serrated blade extending from metal gauntlets.
+  name: 腕刃
+  description: 从金属臂铠中延伸出的巨大锯齿利刃。
   components:
   - type: Tool
     qualities:
@@ -672,8 +665,8 @@
 - type: entity
   parent: [BaseItem, RMCBaseMeleeWeapon]
   id: CMUYautjaScimitar
-  name: wrist scimitar
-  description: A huge, serrated blade extending from metal gauntlets.
+  name: 腕式弯刀
+  description: 从金属臂铠中延伸出的巨大锯齿利刃。
   components:
   - type: Tool
     qualities:
@@ -729,9 +722,8 @@
 - type: entity
   parent: [BaseItem, RMCBaseMeleeWeapon]
   id: CMUYautjaChainGauntlet
-  name: chain gauntlet
-  description: Gauntlets made out of alien alloy, chains wrapped around it imply this was made for hand to hand combat,
-    with some range.
+  name: 锁链臂铠
+  description: 由异星合金打造的臂铠，缠绕其上的锁链提供了能兼顾一定攻击范围的功能，为肉搏战而设计。
   components:
   - type: Sprite
     sprite: CMU14/Yautja/chain_gauntlet.rsi
@@ -770,9 +762,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaBracerShield
-  name: bracer shield
-  description: A shield made of concentric metal alloy plates. The plates fold into one another for compact storage
-    while still providing superior protection.
+  name: 护腕折叠盾
+  description: 由同心环状金属合金板构成的盾牌。层层圆盘可折叠收缩以便贴腕收纳，展开时仍能提供卓越的防护。
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer_shield.rsi
@@ -823,8 +814,8 @@
 - type: entity
   parent: CMUpgradedTraumaKit1
   id: CMUYautjaAdvancedBruisePack
-  name: predator advanced trauma pack
-  description: A compact alien poultice for closing savage wounds.
+  name: 耶特查高级创伤包
+  description: 一种能迅速封闭恶性撕裂伤的紧凑型异星药包。
   suffix: Yautja
   components:
   - type: Stack
@@ -852,8 +843,8 @@
 - type: entity
   parent: CMUpgradedBurnKit1
   id: CMUYautjaAdvancedOintment
-  name: predator advanced ointment
-  description: A cool alien salve for sealing burns and caustic injuries.
+  name: 耶特查高级药膏
+  description: 一种冰凉的异星软膏，用于封闭烧伤与腐蚀性损伤。
   suffix: Yautja
   components:
   - type: Stack
@@ -881,8 +872,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaHealingGel
-  name: healing gel capsule
-  description: Used for reloading the healing gun.
+  name: 治愈凝胶胶囊
+  description: 用于给治疗枪补充凝胶弹药。
   suffix: Yautja
   components:
   - type: Sprite
@@ -901,8 +892,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaStabilizerGel
-  name: stabilizer gel
-  description: A fast-setting alien gel for buying time through shock and blood loss.
+  name: 稳定凝胶
+  description: 一种速效凝固的异星凝胶，能在失血与休克濒死之际争取宝贵的抢救时间。
   suffix: Yautja
   components:
   - type: Stack
@@ -923,7 +914,7 @@
 
 - type: stack
   id: CMUYautjaStabilizerGel
-  name: stabilizer gel
+  name: 稳定凝胶
   icon: {sprite: "/Textures/CMU14/Yautja/medical.rsi", state: stabilizer_gel}
   spawn: CMUYautjaStabilizerGel
   maxCount: 6
@@ -931,8 +922,8 @@
 - type: entity
   parent: CMHemostatPredator
   id: CMUYautjaWoundClamp
-  name: wound clamp
-  description: A predator surgical clamp made to seal catastrophic bleeding.
+  name: 创口缝合夹
+  description: 一种用于强行封闭灾难性大出血的掠食者外科缝合夹。
   components:
   - type: Sprite
     sprite: CMU14/Yautja/medical.rsi
@@ -949,8 +940,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaHealingGun
-  name: healing gun
-  description: A compact alien applicator for rapid emergency treatment.
+  name: 治疗枪
+  description: 一种用于紧急快速施治的紧凑型异星注射施药器。
   suffix: Yautja
   components:
   - type: YautjaRecallable
@@ -997,8 +988,8 @@
 - type: entity
   parent: CMHealthAnalyzer
   id: CMUYautjaAlienHealthAnalyzer
-  name: alien health analyzer
-  description: A bio-scanner tuned for alien physiology and battlefield triage.
+  name: 异星健康分析仪
+  description: 专为异星生理机制与战场伤情分诊校准的生物扫描仪。
   suffix: Yautja
   components:
   - type: Sprite
@@ -1014,8 +1005,8 @@
 - type: entity
   parent: CMAutoInjector
   id: CMUYautjaAutoInjector
-  name: unusual crystal
-  description: A strange glowing crystal with a spike at one end.
+  name: 奇特晶体
+  description: 一颗散发着微光的奇特晶体，一端带有尖刺。
   suffix: Yautja
   components:
   - type: Sprite
@@ -1060,8 +1051,8 @@
 - type: entity
   parent: BaseStorageItem
   id: CMUYautjaHerbalCase
-  name: herbs case
-  description: A small case packed with Yautja trauma poultices and burn salves.
+  name: 药草匣
+  description: 一个塞满了耶特查创伤药包和烧伤药膏的随身小匣。
   suffix: Yautja, Filled
   components:
   - type: Storage
@@ -1116,8 +1107,8 @@
 - type: entity
   parent: BaseStorageItem
   id: CMUYautjaMedicomp
-  name: medicomp
-  description: A complex kit of alien tools and medicines.
+  name: 急救医疗盒
+  description: 一套集成了异星医疗工具与特效药剂的综合急救套件。
   suffix: Yautja
   components:
   - type: Sprite
@@ -1167,8 +1158,8 @@
 - type: entity
   parent: ColMarTechBase
   id: CMUYautjaLoadoutVendor
-  name: Yautja Hunting Gear Rack
-  description: A gear rack for hunting.
+  name: 耶特查狩猎装备架
+  description: 用于挑选狩猎装备的陈列架。
   suffix: Yautja, Event
   components:
   - type: Sprite
@@ -1207,169 +1198,169 @@
   - type: CMAutomatedVendor
     uiStyle: Yautja
     sections:
-    - name: Essential Hunting Supplies
+    - name: 核心狩猎必需品
       entries:
       - id: CMUYautjaHuntingEquipmentBundle
-        name: Hunting Equipment
+        name: 狩猎装备包
         choices: {CMUYautjaEssentials: 1}
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaArmorBundle
-        name: Armor
+        name: 护甲包
         choices: {CMUYautjaArmor: 1}
         maxPerUser: 1
         mandatory: true
-    - name: Main Weapons (CHOOSE 1)
+    - name: 主手武器（单选）
       choices: {CMUYautjaPrimary: 1}
       entries:
       - id: CMUYautjaClanSword
-        name: The Primary Hunting Sword
+        name: 首选猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaRendingSword
-        name: The Rending Hunting Sword
+        name: 撕裂猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaPiercingSword
-        name: The Piercing Hunting Sword
+        name: 穿刺猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaSeveringSword
-        name: The Severing Hunting Sword
+        name: 斩截猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCruelStaff
-        name: The Taruulan Staff
+        name: 塔鲁兰战杖
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaChainwhip
-        name: The Sundering Chain-Whip
+        name: 碎甲锁链鞭
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaDualWarScythe
-        name: The Cleaving War-Scythe
+        name: 劈裂战镰
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaDoubleWarScythe
-        name: The Ripping War-Scythe
+        name: 撕扯战镰
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCombistick
-        name: The Adaptive Combi-Stick
+        name: 战术复合长矛
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaWarAxe
-        name: The Butchering War Axe
+        name: 屠戮战斧
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaWarGlaive
-        name: The Lumbering Glaive
+        name: 重装战戟
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCleavingGlaive
-        name: The Imposing Glaive
+        name: 威严战戟
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaLongaxe
-        name: The Crushing Longaxe
+        name: 粉碎长柄斧
         maxPerUser: 1
         recommended: true
-    - name: Bracer Attachments
+    - name: 护腕挂件
       entries:
       - id: CMUYautjaWristBladesBundle
-        name: Wrist Blades
+        name: 双联腕刃包
         choices: {CMUYautjaBracer: 1}
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBracerShieldAttachment
-        name: The Compact Shield
+        name: 折叠小圆盾
         choices: {CMUYautjaBracer: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaFearsomeScimitarsBundle
-        name: The Fearsome Scimitars
+        name: “可怖弯刀”挂件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaSkeweringScimitarsBundle
-        name: The Skewering Scimitars
+        name: “贯刺弯刀”挂件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaChainGauntletsBundle
-        name: The Chain Gauntlets
+        name: “锁链臂铠”套件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
-    - name: Support Equipment (CHOOSE 2)
+    - name: 辅助支援装备（双选）
       choices: {CMUYautjaSupport: 2}
       entries:
       - id: CMUYautjaFalconDrone
-        name: The Agile Drone
+        name: 疾影侦察无人机
         maxPerUser: 1
       - id: CMUYautjaClanShield
-        name: The Steadfast Shield
+        name: 坚毅之盾
         maxPerUser: 1
       - id: CMUYautjaHeavyClanArmor
-        name: The Formidable Plate Armor
+        name: 森严重型板甲
         maxPerUser: 1
         replaceSlot: OUTERCLOTHING
       - id: CMUYautjaSpikeLauncher
-        name: The Fleeting Spike Launcher
+        name: 疾风骨针发射器
         maxPerUser: 1
       - id: CMUYautjaSmartDisc
-        name: The Purifying Smart-Disc
+        name: 涤罪智能飞盘
         maxPerUser: 1
-    - name: Ranged Equipment (CHOOSE 1)
+    - name: 远程装备（单选）
       choices: {CMUYautjaRanged: 1}
       entries:
       - id: CMUYautjaPlasmaPistol
-        name: The Swift Plasma Pistol
+        name: 迅捷等离子手枪
         maxPerUser: 1
       - id: CMUYautjaQuiverStrapFilled
-        name: The Firm Bow
+        name: 强劲狩猎战弓
         maxPerUser: 1
-    - name: Clothing Accessory (CHOOSE 1)
+    - name: 服饰配件（单选）
       choices: {CMUYautjaAccessory: 1}
       entries:
       - id: CMUYautjaCapeQuarter
-        name: Quarter-Cape
+        name: 四分之一短披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeThird
-        name: Third-Cape
+        name: 三分之一披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeHalf
-        name: Half-Cape
+        name: 半肩披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapePoncho
-        name: Poncho
+        name: 斗篷披肩
         maxPerUser: 1
         replaceSlot: back
-    - name: Spare Equipment
+    - name: 备用补给装备
       entries:
       - id: CMUYautjaFalconDrone
-        name: Falcon Drone
+        name: 猎鹰无人机
         points: 20
         maxPerUser: 10
       - id: CMUYautjaHuntingTrap
-        name: Hunting Trap
+        name: 狩猎陷阱
         points: 10
         maxPerUser: 10
       - id: CMUYautjaArrow
-        name: Arrow - Explosive
+        name: 箭矢 - 爆炸箭
         points: 10
         maxPerUser: 10
       - id: CMUYautjaSnareArrow
-        name: Arrow - Snare
+        name: 箭矢 - 绊网箭
         points: 15
         maxPerUser: 10
 - type: entity
   parent: CMUYautjaBracer
   id: CMUYautjaBracerRetro
-  name: retro clan bracers
+  name: 复古部族护腕
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer.rsi
@@ -1386,7 +1377,7 @@
 - type: entity
   parent: CMUYautjaBracer
   id: CMUYautjaBracerEbony
-  name: ebony clan bracers
+  name: 黑檀部族护腕
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer.rsi
@@ -1403,7 +1394,7 @@
 - type: entity
   parent: CMUYautjaBracer
   id: CMUYautjaBracerSilver
-  name: silver clan bracers
+  name: 白银部族护腕
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer.rsi
@@ -1420,7 +1411,7 @@
 - type: entity
   parent: CMUYautjaBracer
   id: CMUYautjaBracerBronze
-  name: bronze clan bracers
+  name: 青铜部族护腕
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer.rsi
@@ -1437,7 +1428,7 @@
 - type: entity
   parent: CMUYautjaBracer
   id: CMUYautjaBracerCrimson
-  name: crimson clan bracers
+  name: 猩红部族护腕
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer.rsi
@@ -1454,7 +1445,7 @@
 - type: entity
   parent: CMUYautjaBracer
   id: CMUYautjaBracerBone
-  name: bone clan bracers
+  name: 骸骨部族护腕
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer.rsi
@@ -1471,7 +1462,7 @@
 - type: entity
   parent: CMUYautjaBracer
   id: CMUYautjaBracerLegacyDragon
-  name: dragon legacy bracers
+  name: 巨龙传承护腕
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer.rsi
@@ -1488,7 +1479,7 @@
 - type: entity
   parent: CMUYautjaBracerLegacyDragon
   id: CMUYautjaBracerLegacySwamp
-  name: swamp legacy bracers
+  name: 沼泽传承护腕
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer.rsi
@@ -1505,7 +1496,7 @@
 - type: entity
   parent: CMUYautjaBracerLegacyDragon
   id: CMUYautjaBracerLegacyEnforcer
-  name: enforcer legacy bracers
+  name: 执法者传承护腕
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer.rsi
@@ -1522,7 +1513,7 @@
 - type: entity
   parent: CMUYautjaBracerLegacyDragon
   id: CMUYautjaBracerLegacyCollector
-  name: collector legacy bracers
+  name: 收集者传承护腕
   components:
   - type: Sprite
     sprite: CMU14/Yautja/bracer.rsi
@@ -1603,8 +1594,8 @@
 - type: entity
   parent: ClothingEyesBase
   id: CMUYautjaNightVisionGlasses
-  name: bio-mask nightvision
-  description: A vision overlay generated by the Bio-Mask. Used for low-light conditions.
+  name: 生化面具夜视仪
+  description: 由生化面具投射生成的战术视野覆层，用于微光环境。
   components:
   - type: Item
     storedRotation: 0
@@ -1619,7 +1610,6 @@
     slotFlags: EYES
     defaultState: Full
     green: false
-    # Preserve master's highlighting while the generated visor owns night vision.
     overlay: true
     blockScopes: true
     ignoreUserOnlyHalf: true
@@ -1630,8 +1620,8 @@
   parent: CMUYautjaMask
   id: CMUYautjaMaskScalable
   suffix: Scalable
-  name: clan mask
-  description: A beautifully designed metallic face mask, both ornate and functional.
+  name: 部族面具
+  description: 设计精美的金属面具，既华丽庄严又具备完备的实战功能。
   components:
   - type: YautjaTechItem
   - type: ParasiteResistance
@@ -1639,13 +1629,13 @@
   - type: Corrodible
     isCorrodible: false
   - type: YautjaScalableRepair
-    damagedText: It has been worn from long use and poor maintenance.
+    damagedText: 因久经战阵与缺乏维护，它已布满磨损与残痕。
 
 - type: entity
   parent: CMBaseMask
   id: CMUYautjaStoneMask
-  name: alien stone mask
-  description: A beautifully designed face mask, ornate but non-functional and made entirely of stone.
+  name: 异星石雕面具
+  description: 一具雕工精湛的面具，虽华美威严，但完全由原石雕刻而成，不具备实战功能。
   suffix: Yautja, Flavor
   components:
   - type: Sprite
@@ -1670,8 +1660,8 @@
 - type: entity
   parent: IDCardStandard
   id: CMUYautjaIdCard
-  name: yautja ID card
-  description: A standard Yautja identification card.
+  name: 耶特查身份卡
+  description: 一张标准的耶特查身份识别卡。
   components:
   - type: Sprite
     sprite: CMU14/HunterShip/obj/items/radio.rsi
@@ -1809,7 +1799,7 @@
 - type: entity
   parent: CMUYautjaPlasmaCaster
   id: CMUYautjaPlasmaCasterRetro
-  name: retro shoulder plasma caster
+  name: 复古等离子肩炮
   components:
   - type: Sprite
     sprite: CMU14/Yautja/plasma_caster_retro.rsi
@@ -1828,7 +1818,7 @@
 - type: entity
   parent: CMUYautjaPlasmaCaster
   id: CMUYautjaPlasmaCasterEbony
-  name: ebony shoulder plasma caster
+  name: 黑檀等离子肩炮
   components:
   - type: Sprite
     sprite: CMU14/Yautja/plasma_caster_ebony.rsi
@@ -1847,7 +1837,7 @@
 - type: entity
   parent: CMUYautjaPlasmaCaster
   id: CMUYautjaPlasmaCasterSilver
-  name: silver shoulder plasma caster
+  name: 白银等离子肩炮
   components:
   - type: Sprite
     sprite: CMU14/Yautja/plasma_caster_silver.rsi
@@ -1866,7 +1856,7 @@
 - type: entity
   parent: CMUYautjaPlasmaCaster
   id: CMUYautjaPlasmaCasterBronze
-  name: bronze shoulder plasma caster
+  name: 青铜等离子肩炮
   components:
   - type: Sprite
     sprite: CMU14/Yautja/plasma_caster_bronze.rsi
@@ -1885,7 +1875,7 @@
 - type: entity
   parent: CMUYautjaPlasmaCaster
   id: CMUYautjaPlasmaCasterCrimson
-  name: crimson shoulder plasma caster
+  name: 猩红等离子肩炮
   components:
   - type: Sprite
     sprite: CMU14/Yautja/plasma_caster_crimson.rsi
@@ -1904,7 +1894,7 @@
 - type: entity
   parent: CMUYautjaPlasmaCaster
   id: CMUYautjaPlasmaCasterBone
-  name: bone shoulder plasma caster
+  name: 骸骨等离子肩炮
   components:
   - type: Sprite
     sprite: CMU14/Yautja/plasma_caster_bone.rsi
@@ -1923,14 +1913,14 @@
 - type: entity
   parent: CMUYautjaScimitar
   id: CMUYautjaScimitarAlt
-  name: wrist scimitar
-  description: A huge, serrated blade extending from metal gauntlets.
+  name: 弯刀腕刃
+  description: 从金属臂铠中延伸出的巨大锯齿利刃。
   components:
   - type: Sprite
     state: alt
 
 - type: entity
-  name: chain
+  name: 锁链
   id: CMUYautjaChainGauntletBeam
   categories: [HideSpawnMenu]
   components:
@@ -1945,7 +1935,7 @@
 
 - type: entity
   parent: BaseBullet
-  name: hook
+  name: 锁链钩
   id: CMUYautjaChainGauntletHookProjectile
   categories: [HideSpawnMenu]
   components:
@@ -1971,8 +1961,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaWristBladesAttachment
-  name: wristblade bracer attachment
-  description: A pair of huge, serrated blades.
+  name: 腕刃挂件
+  description: 一对巨大锋利的锯齿利刃。
   components:
   - type: Sprite
     sprite: CMU14/HunterShip/obj/items/hunter/pred_gear.rsi
@@ -1986,8 +1976,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaScimitarAttachment
-  name: scimitar bracer attachment
-  description: A pair of huge, serrated blades.
+  name: 弯刀腕刃挂件
+  description: 一对巨大锋利的锯齿利刃。
   components:
   - type: Sprite
     sprite: CMU14/HunterShip/obj/items/hunter/pred_gear.rsi
@@ -2001,8 +1991,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaScimitarAltAttachment
-  name: scimitar bracer attachment
-  description: A pair of huge, serrated blades.
+  name: 弯刀腕刃挂件
+  description: 一对巨大锋利的锯齿利刃。
   components:
   - type: Sprite
     sprite: CMU14/HunterShip/obj/items/hunter/pred_gear.rsi
@@ -2016,9 +2006,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaChainGauntletsAttachment
-  name: chain gauntlets
-  description: Gauntlets made out of alien alloy, you could probably wrap some chains around this after it's been put
-    into your bracer.
+  name: 锁链臂铠
+  description: 由异星合金打造的臂铠，装入护腕后可以在外侧缠绕厚重锁链以增强肉搏打击。
   components:
   - type: Sprite
     sprite: CMU14/HunterShip/obj/items/hunter/pred_gear.rsi
@@ -2032,9 +2021,8 @@
 - type: entity
   parent: BaseItem
   id: CMUYautjaBracerShieldAttachment
-  name: shield bracer attachment
-  description: A shield made of concentric metal alloy plates. The plates fold into one another for compact storage
-    while still providing superior protection.
+  name: 折叠盾护腕挂件
+  description: 由同心环状金属合金板构成的盾牌。层层圆盘可折叠收缩以便贴腕收纳，展开时仍能提供卓越的防护。
   components:
   - type: Sprite
     sprite: CMU14/HunterShip/obj/items/hunter/pred_gear.rsi
@@ -2048,8 +2036,8 @@
 - type: entity
   parent: CMUYautjaAutoInjector
   id: CMUYautjaThrallAutoInjector
-  name: orange unusual crystal
-  description: A strange glowing crystal with a spike at one end.
+  name: 奇特橙色晶体
+  description: 一颗散发着微光的奇特晶体，一端带有尖刺。
   suffix: Yautja, Thrall
   components:
   - type: Sprite
@@ -2122,8 +2110,8 @@
 
 - type: entity
   id: CMUYautjaHuntingEquipmentBundle
-  name: Hunting Equipment
-  description: Contains the essential hunting equipment issued to a Yautja hunter.
+  name: 狩猎装备包
+  description: 内含配发给耶特查猎手的核心狩猎必备装备。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2139,8 +2127,8 @@
 
 - type: entity
   id: CMUYautjaYoungbloodHuntingEquipmentBundle
-  name: Hunting Equipment
-  description: Contains the essential hunting equipment issued to a young Yautja hunter.
+  name: 狩猎装备包
+  description: 内含配发给年轻耶特查猎手的核心狩猎必备装备。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2156,8 +2144,8 @@
 
 - type: entity
   id: CMUYautjaThrallHuntingEquipmentBundle
-  name: Hunting Equipment
-  description: Contains the essential hunting equipment issued to a Yautja thrall.
+  name: 狩猎装备包
+  description: 内含配发给耶特查侍从的核心狩猎必备装备。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2172,8 +2160,8 @@
 
 - type: entity
   id: CMUYautjaStrandedHuntingEquipmentBundle
-  name: Hunting Equipment
-  description: Contains the essential hunting equipment issued to a stranded Yautja hunter.
+  name: 狩猎装备包
+  description: 内含配发给滞留遇难的耶特查猎手的核心狩猎必备装备。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2188,8 +2176,8 @@
 
 - type: entity
   id: CMUYautjaArmorBundle
-  name: Armor
-  description: Contains the armor issued to a Yautja hunter.
+  name: 护甲包
+  description: 内含配发给耶特查猎手的标准护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2204,8 +2192,8 @@
 
 - type: entity
   id: CMUYautjaStrandedArmorBundle
-  name: Armor
-  description: Contains the armor issued to a stranded Yautja hunter.
+  name: 护甲包
+  description: 内含配发给滞留遇难耶特查猎手的防护甲胄。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2220,8 +2208,8 @@
 
 - type: entity
   id: CMUYautjaBadBloodHuntingEquipmentBundle
-  name: Hunting Equipment
-  description: Contains the essential hunting equipment issued to a Bad Blood hunter.
+  name: 狩猎装备包
+  description: 内含配发给坏血猎手的核心狩猎必备装备。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2237,8 +2225,8 @@
 
 - type: entity
   id: CMUYautjaBadBloodArmorPatchworkBundle
-  name: Patchwork Armor
-  description: Contains the patchwork armor issued to a Bad Blood hunter.
+  name: 拼接护甲包
+  description: 内含配发给坏血猎手的手工凑拼接护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2252,8 +2240,8 @@
 
 - type: entity
   id: CMUYautjaBadBloodArmorPatchworkAltBundle
-  name: Patchwork Armor (Alt)
-  description: Contains the alternate patchwork armor issued to a Bad Blood hunter.
+  name: 拼接护甲包（交替款式）
+  description: 内含配发给坏血猎手的交替样式拼接护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2267,8 +2255,8 @@
 
 - type: entity
   id: CMUYautjaBadBloodArmorLunaticBundle
-  name: Lunatic Armor
-  description: Contains the lunatic armor issued to a Bad Blood hunter.
+  name: 狂人护甲包
+  description: 内含配发给坏血猎手的狂乱护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2282,8 +2270,8 @@
 
 - type: entity
   id: CMUYautjaBadBloodArmorScavengerBundle
-  name: Scavenger Armor
-  description: Contains the scavenger armor issued to a Bad Blood hunter.
+  name: 拾荒者护甲包
+  description: 内含配发给坏血猎手的拾荒护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2297,8 +2285,8 @@
 
 - type: entity
   id: CMUYautjaBadBloodArmorScavengerAltBundle
-  name: Scavenger Armor (Alt)
-  description: Contains the alternate scavenger armor issued to a Bad Blood hunter.
+  name: 拾荒者护甲包（交替款式）
+  description: 内含配发给坏血猎手的交替样式拾荒护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2312,8 +2300,8 @@
 
 - type: entity
   id: CMUYautjaBadBloodArmorVenatorBundle
-  name: Venator Armor
-  description: Contains the venator armor issued to a Bad Blood hunter.
+  name: 追猎者护甲包
+  description: 内含配发给坏血猎手的追猎者护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2327,8 +2315,8 @@
 
 - type: entity
   id: CMUYautjaBadBloodArmorCommandoBundle
-  name: Commando Armor
-  description: Contains the commando armor issued to a Bad Blood hunter.
+  name: 突击队护甲包
+  description: 内含配发给坏血猎手的突击队护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2342,8 +2330,8 @@
 
 - type: entity
   id: CMUYautjaBadBloodArmorCommandoAltBundle
-  name: Commando Armor (Alt)
-  description: Contains the alternate commando armor issued to a Bad Blood hunter.
+  name: 突击队护甲包（交替款式）
+  description: 内含配发给坏血猎手的交替样式突击队护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2357,8 +2345,8 @@
 
 - type: entity
   id: CMUYautjaBadBloodArmorEmissaryBundle
-  name: Emissary Armor
-  description: Contains the emissary armor issued to a Bad Blood hunter.
+  name: 密使护甲包
+  description: 内含配发给坏血猎手的密使护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2372,8 +2360,8 @@
 
 - type: entity
   id: CMUYautjaThrallArmorEbonyBundle
-  name: Ebony
-  description: Contains the ebony armor issued to a Yautja thrall.
+  name: 黑檀护甲包
+  description: 内含配发给耶特查侍从的黑檀护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2387,8 +2375,8 @@
 
 - type: entity
   id: CMUYautjaThrallArmorSilverBundle
-  name: Silver
-  description: Contains the silver armor issued to a Yautja thrall.
+  name: 白银护甲包
+  description: 内含配发给耶特查侍从的白银护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2402,8 +2390,8 @@
 
 - type: entity
   id: CMUYautjaThrallArmorGoldBundle
-  name: Gold
-  description: Contains the gold armor issued to a Yautja thrall.
+  name: 黄金护甲包
+  description: 内含配发给耶特查侍从的黄金护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2417,8 +2405,8 @@
 
 - type: entity
   id: CMUYautjaThrallArmorCrimsonBundle
-  name: Crimson
-  description: Contains the crimson armor issued to a Yautja thrall.
+  name: 猩红护甲包
+  description: 内含配发给耶特查侍从的猩红护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2432,8 +2420,8 @@
 
 - type: entity
   id: CMUYautjaThrallArmorBoneBundle
-  name: Bone
-  description: Contains the bone armor issued to a Yautja thrall.
+  name: 骸骨护甲包
+  description: 内含配发给耶特查侍从的骸骨护甲。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2447,8 +2435,8 @@
 
 - type: entity
   id: CMUYautjaBloodedThrallEquipmentBundle
-  name: Blooded Equipment
-  description: Contains the equipment issued to a blooded Yautja thrall.
+  name: 授血装备包
+  description: 内含配发给授血耶特查侍从的专属装备。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2461,8 +2449,8 @@
 
 - type: entity
   id: CMUYautjaBloodedThrallBracerEbonyBundle
-  name: Ebony
-  description: Contains the ebony bracer issued to a blooded Yautja thrall.
+  name: 黑檀护腕包
+  description: 内含配发给授血耶特查侍从的黑檀护腕。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2476,8 +2464,8 @@
 
 - type: entity
   id: CMUYautjaBloodedThrallBracerSilverBundle
-  name: Silver
-  description: Contains the silver bracer issued to a blooded Yautja thrall.
+  name: 白银护腕包
+  description: 内含配发给授血耶特查侍从的白银护腕。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2491,8 +2479,8 @@
 
 - type: entity
   id: CMUYautjaBloodedThrallBracerGoldBundle
-  name: Gold
-  description: Contains the gold bracer issued to a blooded Yautja thrall.
+  name: 黄金护腕包
+  description: 内含配发给授血耶特查侍从的黄金护腕。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2506,8 +2494,8 @@
 
 - type: entity
   id: CMUYautjaBloodedThrallBracerCrimsonBundle
-  name: Crimson
-  description: Contains the crimson bracer issued to a blooded Yautja thrall.
+  name: 猩红护腕包
+  description: 内含配发给授血耶特查侍从的猩红护腕。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2521,8 +2509,8 @@
 
 - type: entity
   id: CMUYautjaBloodedThrallBracerBoneBundle
-  name: Bone
-  description: Contains the bone bracer issued to a blooded Yautja thrall.
+  name: 骸骨护腕包
+  description: 内含配发给授血耶特查侍从的骸骨护腕。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2536,8 +2524,8 @@
 
 - type: entity
   id: CMUYautjaWristBladesBundle
-  name: Wrist Blades
-  description: Contains the paired wrist blades issued as a Yautja bracer attachment.
+  name: 双联腕刃包
+  description: 内含一套作为耶特查护腕挂件配发的双联腕刃。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2550,8 +2538,8 @@
 
 - type: entity
   id: CMUYautjaFearsomeScimitarsBundle
-  name: The Fearsome Scimitars
-  description: Contains the paired fearsome scimitar bracer attachments.
+  name: “可怖弯刀”挂件包
+  description: 内含一套成对的“可怖弯刀”护腕挂件。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2564,8 +2552,8 @@
 
 - type: entity
   id: CMUYautjaSkeweringScimitarsBundle
-  name: The Skewering Scimitars
-  description: Contains the paired skewering scimitar bracer attachments.
+  name: “贯刺弯刀”挂件包
+  description: 内含一套成对的“贯刺弯刀”护腕挂件。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2578,8 +2566,8 @@
 
 - type: entity
   id: CMUYautjaChainGauntletsBundle
-  name: The Chain Gauntlets
-  description: Contains the paired chain gauntlet bracer attachments and a chainwhip.
+  name: “锁链臂铠”套件包
+  description: 内含一套成对的锁链臂铠护腕挂件及一柄锁链鞭。
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -2594,8 +2582,8 @@
 - type: entity
   parent: CMUYautjaLoadoutVendor
   id: CMUYautjaElderLoadoutVendor
-  name: Yautja Elder Hunting Gear Rack
-  description: A gear rack for hunting.
+  name: 耶特查长老狩猎装备架
+  description: 用于挑选狩猎装备的陈列架。
   suffix: Yautja, Elder
   components:
   - type: Sprite
@@ -2625,192 +2613,192 @@
   - type: CMAutomatedVendor
     uiStyle: Yautja
     sections:
-    - name: Essential Hunting Supplies
+    - name: 核心狩猎必需品
       entries:
       - id: CMUYautjaHuntingEquipmentBundle
-        name: Hunting Equipment
+        name: 狩猎装备包
         choices: {CMUYautjaEssentials: 1}
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaArmorBundle
-        name: Armor
+        name: 护甲包
         choices: {CMUYautjaArmor: 1}
         maxPerUser: 1
         mandatory: true
-    - name: Main Weapons (CHOOSE 1)
+    - name: 主手武器（单选）
       choices: {CMUYautjaPrimary: 1}
       entries:
       - id: CMUYautjaClanSword
-        name: The Primary Hunting Sword
+        name: 首选猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaRendingSword
-        name: The Rending Hunting Sword
+        name: 撕裂猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaPiercingSword
-        name: The Piercing Hunting Sword
+        name: 穿刺猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaSeveringSword
-        name: The Severing Hunting Sword
+        name: 斩截猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCruelStaff
-        name: The Taruulan Staff
+        name: 塔鲁兰战杖
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaChainwhip
-        name: The Sundering Chain-Whip
+        name: 碎甲锁链鞭
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaDualWarScythe
-        name: The Cleaving War-Scythe
+        name: 劈裂战镰
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaDoubleWarScythe
-        name: The Ripping War-Scythe
+        name: 撕扯战镰
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCombistick
-        name: The Adaptive Combi-Stick
+        name: 战术复合长矛
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaWarAxe
-        name: The Butchering War Axe
+        name: 屠戮战斧
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaWarGlaive
-        name: The Lumbering Glaive
+        name: 重装战戟
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCleavingGlaive
-        name: The Imposing Glaive
+        name: 威严战戟
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaLongaxe
-        name: The Crushing Longaxe
+        name: 粉碎长柄斧
         maxPerUser: 1
         recommended: true
-    - name: Bracer Attachments
+    - name: 护腕挂件
       entries:
       - id: CMUYautjaWristBladesBundle
-        name: Wrist Blades
+        name: 双联腕刃包
         choices: {CMUYautjaBracer: 1}
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBracerShieldAttachment
-        name: The Compact Shield
+        name: 折叠小圆盾
         choices: {CMUYautjaBracer: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaFearsomeScimitarsBundle
-        name: The Fearsome Scimitars
+        name: “可怖弯刀”挂件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaSkeweringScimitarsBundle
-        name: The Skewering Scimitars
+        name: “贯刺弯刀”挂件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaChainGauntletsBundle
-        name: The Chain Gauntlets
+        name: “锁链臂铠”套件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
-    - name: Support Equipment (CHOOSE 2)
+    - name: 辅助支援装备（双选）
       choices: {CMUYautjaSupport: 2}
       entries:
       - id: CMUYautjaFalconDrone
-        name: The Agile Drone
+        name: 疾影侦察无人机
         maxPerUser: 1
       - id: CMUYautjaClanShield
-        name: The Steadfast Shield
+        name: 坚毅之盾
         maxPerUser: 1
       - id: CMUYautjaAncientShield
-        name: "The Gilded Warlord’s Aegis"
+        name: "鎏金督军巨盾"
         maxPerUser: 1
       - id: CMUYautjaAncientShieldAlt
-        name: "The Dread Hunter’s Bulwark"
+        name: "恐魔猎手壁垒"
         maxPerUser: 1
       - id: CMUYautjaHeavyClanArmor
-        name: The Formidable Plate Armor
+        name: 森严重型板甲
         maxPerUser: 1
         replaceSlot: OUTERCLOTHING
       - id: CMUYautjaSpikeLauncher
-        name: The Fleeting Spike Launcher
+        name: 疾风骨针发射器
         maxPerUser: 1
       - id: CMUYautjaSmartDisc
-        name: The Purifying Smart-Disc
+        name: 涤罪智能飞盘
         maxPerUser: 1
-    - name: Ranged Equipment (CHOOSE 1)
+    - name: 远程装备（单选）
       choices: {CMUYautjaRanged: 1}
       entries:
       - id: CMUYautjaPlasmaPistol
-        name: The Swift Plasma Pistol
+        name: 迅捷等离子手枪
         maxPerUser: 1
       - id: CMUYautjaQuiverStrapFilled
-        name: The Firm Bow
+        name: 强劲狩猎战弓
         maxPerUser: 1
-    - name: Clothing Accessory (CHOOSE 1)
+    - name: 服饰配件（单选）
       choices: {CMUYautjaAccessory: 1}
       entries:
       - id: CMUYautjaCapeQuarter
-        name: Quarter-Cape
+        name: 四分之一短披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeThird
-        name: Third-Cape
+        name: 三分之一披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeHalf
-        name: Half-Cape
+        name: 半肩披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapePoncho
-        name: Poncho
+        name: 斗篷披肩
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeDamaged
-        name: Damaged-Cape
+        name: 残破披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeFull
-        name: Full-Cape
+        name: 全身大披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeCeremonial
-        name: Ceremonial Cape
+        name: 仪式披风
         maxPerUser: 1
         replaceSlot: back
-    - name: Spare Equipment
+    - name: 备用补给装备
       entries:
       - id: CMUYautjaFalconDrone
-        name: Falcon Drone
+        name: 猎鹰无人机
         points: 20
         maxPerUser: 10
       - id: CMUYautjaHuntingTrap
-        name: Hunting Trap
+        name: 狩猎陷阱
         points: 10
         maxPerUser: 10
       - id: CMUYautjaSmartDisc
-        name: Smart-Disc
+        name: 智能飞盘
         points: 20
         maxPerUser: 10
       - id: CMUYautjaArrow
-        name: Arrow - Explosive
+        name: 箭矢 - 爆炸箭
         points: 10
         maxPerUser: 10
       - id: CMUYautjaSnareArrow
-        name: Arrow - Snare
+        name: 箭矢 - 绊网箭
         points: 15
         maxPerUser: 10
 - type: entity
   parent: CMUYautjaLoadoutVendor
   id: CMUYautjaYoungbloodLoadoutVendor
-  name: Yautja Young Hunting Gear Rack
-  description: A gear rack for hunting.
+  name: 耶特查幼血狩猎装备架
+  description: 用于挑选狩猎装备的陈列架。
   suffix: Yautja, Youngblood
   components:
   - type: YautjaGearRack
@@ -2821,88 +2809,88 @@
     - CMUYautjaYoungblood
     - CMUYautjaHunter
     sections:
-    - name: Essential Hunting Supplies
+    - name: 核心狩猎必需品
       entries:
       - id: CMUYautjaYoungbloodHuntingEquipmentBundle
-        name: Hunting Equipment
+        name: 狩猎装备包
         choices: {CMUYautjaEssentials: 1}
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaArmorBundle
-        name: Armor
+        name: 护甲包
         choices: {CMUYautjaArmor: 1}
         maxPerUser: 1
         mandatory: true
-    - name: Main Weapons (CHOOSE 1)
+    - name: 主手武器（单选）
       choices: {CMUYautjaPrimary: 1}
       entries:
       - id: CMUYautjaClanSword
-        name: The Primary Hunting Sword
+        name: 首选猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaRendingSword
-        name: The Rending Hunting Sword
+        name: 撕裂猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaPiercingSword
-        name: The Piercing Hunting Sword
+        name: 穿刺猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaSeveringSword
-        name: The Severing Hunting Sword
+        name: 斩截猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaChainwhip
-        name: The Sundering Chain-Whip
+        name: 碎甲锁链鞭
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaDualWarScythe
-        name: The Cleaving War-Scythe
+        name: 劈裂战镰
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaDoubleWarScythe
-        name: The Ripping War-Scythe
+        name: 撕扯战镰
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCombistick
-        name: The Adaptive Combi-Stick
+        name: 战术复合长矛
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaWarAxe
-        name: The Butchering War Axe
+        name: 屠戮战斧
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaWarGlaive
-        name: The Lumbering Glaive
+        name: 重装战戟
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCleavingGlaive
-        name: The Imposing Glaive
+        name: 威严战戟
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaLongaxe
-        name: The Crushing Longaxe
+        name: 粉碎长柄斧
         maxPerUser: 1
         recommended: true
-    - name: Bracer Attachments
+    - name: 护腕挂件
       entries:
       - id: CMUYautjaWristBladesBundle
-        name: Wrist Blades
+        name: 双联腕刃包
         choices: {CMUYautjaBracer: 1}
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaFearsomeScimitarsBundle
-        name: The Fearsome Scimitars
+        name: “可怖弯刀”挂件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaSkeweringScimitarsBundle
-        name: The Skewering Scimitars
+        name: “贯刺弯刀”挂件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaChainGauntletsBundle
-        name: The Chain Gauntlets
+        name: “锁链臂铠”套件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
@@ -2910,8 +2898,8 @@
 - type: entity
   parent: CMUYautjaLoadoutVendor
   id: CMUYautjaThrallLoadoutVendor
-  name: Yautja Thrall Gear Rack
-  description: A gear rack for hunting.
+  name: 耶特查侍从装备架
+  description: 用于挑选狩猎装备的陈列架。
   suffix: Yautja, Thrall
   components:
   - type: YautjaGearRack
@@ -2919,81 +2907,81 @@
   - type: CMAutomatedVendor
     uiStyle: Yautja
     sections:
-    - name: Essential Hunting Supplies
+    - name: 核心狩猎必需品
       entries:
       - id: CMUYautjaThrallHuntingEquipmentBundle
-        name: Hunting Equipment
+        name: 狩猎装备包
         choices: {CMUYautjaEssentials: 1}
         maxPerUser: 1
         mandatory: true
-    - name: Armor Material (CHOOSE 1)
+    - name: 护甲材质（单选）
       choices: {CMUYautjaArmor: 1}
       entries:
       - id: CMUYautjaThrallArmorEbonyBundle
-        name: Ebony
+        name: 黑檀护甲包
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaThrallArmorSilverBundle
-        name: Silver
+        name: 白银护甲包
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaThrallArmorGoldBundle
-        name: Gold
+        name: 黄金护甲包
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaThrallArmorCrimsonBundle
-        name: Crimson
+        name: 猩红护甲包
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaThrallArmorBoneBundle
-        name: Bone
+        name: 骸骨护甲包
         maxPerUser: 1
         recommended: true
-    - name: Main Weapons (CHOOSE 1)
+    - name: 主手武器（单选）
       choices: {CMUYautjaAccessory: 1}
       entries:
       - id: CMUYautjaClanSword
-        name: The Primary Hunting Sword
+        name: 首选猎剑
         maxPerUser: 1
       - id: CMUYautjaRendingSword
-        name: The Rending Hunting Sword
+        name: 撕裂猎剑
         maxPerUser: 1
       - id: CMUYautjaPiercingSword
-        name: The Piercing Hunting Sword
+        name: 穿刺猎剑
         maxPerUser: 1
       - id: CMUYautjaSeveringSword
-        name: The Severing Hunting Sword
+        name: 斩截猎剑
         maxPerUser: 1
       - id: CMUYautjaChainwhip
-        name: The Sundering Chain-Whip
+        name: 碎甲锁链鞭
         maxPerUser: 1
       - id: CMUYautjaDualWarScythe
-        name: The Cleaving War-Scythe
+        name: 劈裂战镰
         maxPerUser: 1
       - id: CMUYautjaDoubleWarScythe
-        name: The Ripping War-Scythe
+        name: 撕扯战镰
         maxPerUser: 1
       - id: CMUYautjaCombistick
-        name: The Adaptive Combi-Stick
+        name: 战术复合长矛
         maxPerUser: 1
       - id: CMUYautjaWarAxe
-        name: The Butchering War Axe
+        name: 屠戮战斧
         maxPerUser: 1
       - id: CMUYautjaWarGlaive
-        name: The Lumbering Glaive
+        name: 重装战戟
         maxPerUser: 1
       - id: CMUYautjaCleavingGlaive
-        name: The Imposing Glaive
+        name: 威严战戟
         maxPerUser: 1
       - id: CMUYautjaLongaxe
-        name: The Crushing Longaxe
+        name: 粉碎长柄斧
         maxPerUser: 1
 
 - type: entity
   parent: CMUYautjaLoadoutVendor
   id: CMUYautjaBloodedThrallLoadoutVendor
-  name: Yautja Blooded Thrall Gear Rack
-  description: A gear rack for hunting.
+  name: 耶特查授血侍从装备架
+  description: 用于挑选狩猎装备的陈列架。
   suffix: Yautja, Thrall, Blooded
   components:
   - type: YautjaGearRack
@@ -3001,55 +2989,55 @@
   - type: CMAutomatedVendor
     uiStyle: Yautja
     sections:
-    - name: Blooded Equipment
+    - name: 授血专属装备
       entries:
       - id: CMUYautjaBloodedThrallEquipmentBundle
-        name: Blooded Equipment
+        name: 授血装备包
         choices: {CMUYautjaRanged: 1}
         maxPerUser: 1
-    - name: Blooded Bracer Material (CHOOSE 1)
+    - name: 授血护腕材质（单选）
       choices: {CMUYautjaBracer: 1}
       entries:
       - id: CMUYautjaBloodedThrallBracerEbonyBundle
-        name: Ebony
+        name: 黑檀护腕包
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaBloodedThrallBracerSilverBundle
-        name: Silver
+        name: 白银护腕包
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaBloodedThrallBracerGoldBundle
-        name: Gold
+        name: 黄金护腕包
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaBloodedThrallBracerCrimsonBundle
-        name: Crimson
+        name: 猩红护腕包
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaBloodedThrallBracerBoneBundle
-        name: Bone
+        name: 骸骨护腕包
         maxPerUser: 1
         recommended: true
-    - name: Clothing Accessory (CHOOSE 1)
+    - name: 服饰配件（单选）
       choices: {CMUYautjaAccessory: 1}
       entries:
       - id: CMUYautjaCapeQuarter
-        name: Quarter-Cape
+        name: 四分之一短披风
         maxPerUser: 1
         replaceSlot: back
         mandatory: true
       - id: CMUYautjaCapeThird
-        name: Third-Cape
+        name: 三分之一披风
         maxPerUser: 1
         replaceSlot: back
         mandatory: true
       - id: CMUYautjaCapeHalf
-        name: Half-Cape
+        name: 半肩披风
         maxPerUser: 1
         replaceSlot: back
         mandatory: true
       - id: CMUYautjaCapePoncho
-        name: Poncho
+        name: 斗篷披肩
         maxPerUser: 1
         replaceSlot: back
         mandatory: true
@@ -3057,8 +3045,8 @@
 - type: entity
   parent: CMUYautjaLoadoutVendor
   id: CMUYautjaBadBloodLoadoutVendor
-  name: Yautja Hunting Gear Rack
-  description: A gear rack for hunting.
+  name: 坏血狩猎装备架
+  description: 用于挑选狩猎装备的陈列架。
   suffix: Yautja, Bad Blood, Hunting Gear
   components:
   - type: Sprite
@@ -3079,209 +3067,209 @@
   - type: CMAutomatedVendor
     uiStyle: Yautja
     sections:
-    - name: Essential Hunting Supplies
+    - name: 核心狩猎必需品
       entries:
       - id: CMUYautjaBadBloodHuntingEquipmentBundle
-        name: Hunting Equipment
+        name: 狩猎装备包
         choices: {CMUYautjaEssentials: 1}
         maxPerUser: 1
         mandatory: true
-    - name: Armor Set
+    - name: 成套防具
       choices: {CMUYautjaArmor: 1}
       entries:
       - id: CMUYautjaBadBloodArmorPatchworkBundle
-        name: Patchwork Armor
+        name: 拼接护甲包
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBadBloodArmorPatchworkAltBundle
-        name: Patchwork Armor (Alt)
+        name: 拼接护甲包（交替款式）
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBadBloodArmorLunaticBundle
-        name: Lunatic Armor
+        name: 狂人护甲包
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBadBloodArmorScavengerBundle
-        name: Scavenger Armor
+        name: 拾荒者护甲包
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBadBloodArmorScavengerAltBundle
-        name: Scavenger Armor (Alt)
+        name: 拾荒者护甲包（交替款式）
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBadBloodArmorVenatorBundle
-        name: Venator Armor
+        name: 追猎者护甲包
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBadBloodArmorCommandoBundle
-        name: Commando Armor
+        name: 突击队护甲包
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBadBloodArmorCommandoAltBundle
-        name: Commando Armor (Alt)
+        name: 突击队护甲包（交替款式）
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBadBloodArmorEmissaryBundle
-        name: Emissary Armor
+        name: 密使护甲包
         maxPerUser: 1
         mandatory: true
-    - name: Main Weapons (CHOOSE 1)
+    - name: 主手武器（单选）
       choices: {CMUYautjaPrimary: 1}
       entries:
       - id: CMUYautjaClanSword
-        name: The Primary Hunting Sword
+        name: 首选猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaRendingSword
-        name: The Rending Hunting Sword
+        name: 撕裂猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaPiercingSword
-        name: The Piercing Hunting Sword
+        name: 穿刺猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaSeveringSword
-        name: The Severing Hunting Sword
+        name: 斩截猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCruelStaff
-        name: The Taruulan Staff
+        name: 塔鲁兰战杖
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaChainwhip
-        name: The Sundering Chain-Whip
+        name: 碎甲锁链鞭
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaDualWarScythe
-        name: The Cleaving War-Scythe
+        name: 劈裂战镰
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaDoubleWarScythe
-        name: The Ripping War-Scythe
+        name: 撕扯战镰
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCombistick
-        name: The Adaptive Combi-Stick
+        name: 战术复合长矛
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaWarAxe
-        name: The Butchering War Axe
+        name: 屠戮战斧
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaWarGlaive
-        name: The Lumbering Glaive
+        name: 重装战戟
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCleavingGlaive
-        name: The Imposing Glaive
+        name: 威严战戟
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaLongaxe
-        name: The Crushing Longaxe
+        name: 粉碎长柄斧
         maxPerUser: 1
         recommended: true
-    - name: Bracer Attachments
+    - name: 护腕挂件
       entries:
       - id: CMUYautjaWristBladesBundle
-        name: Wrist Blades
+        name: 双联腕刃包
         choices: {CMUYautjaBracer: 1}
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBracerShieldAttachment
-        name: The Compact Shield
+        name: 折叠小圆盾
         choices: {CMUYautjaBracer: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaFearsomeScimitarsBundle
-        name: The Fearsome Scimitars
+        name: “可怖弯刀”挂件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaSkeweringScimitarsBundle
-        name: The Skewering Scimitars
+        name: “贯刺弯刀”挂件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaChainGauntletsBundle
-        name: The Chain Gauntlets
+        name: “锁链臂铠”套件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
-    - name: Support Equipment (CHOOSE 2)
+    - name: 辅助支援装备（双选）
       choices: {CMUYautjaSupport: 2}
       entries:
       - id: CMUYautjaFalconDroneBadBlood
-        name: The Agile Drone
+        name: 疾影侦察无人机
         maxPerUser: 1
       - id: CMUYautjaClanShield
-        name: The Steadfast Shield
+        name: 坚毅之盾
         maxPerUser: 1
       - id: CMUYautjaHeavyClanArmor
-        name: The Formidable Plate Armor
+        name: 森严重型板甲
         maxPerUser: 1
         replaceSlot: OUTERCLOTHING
       - id: CMUYautjaSpikeLauncher
-        name: The Fleeting Spike Launcher
+        name: 疾风骨针发射器
         maxPerUser: 1
       - id: CMUYautjaSmartDisc
-        name: The Purifying Smart-Disc
+        name: 涤罪智能飞盘
         maxPerUser: 1
-    - name: Ranged Equipment (CHOOSE 1)
+    - name: 远程装备（单选）
       choices: {CMUYautjaRanged: 1}
       entries:
       - id: CMUYautjaQuiverStrapDynamic
-        name: The Firm Bow
+        name: 强劲狩猎战弓
         maxPerUser: 1
-    - name: Clothing Accessory (CHOOSE 1)
+    - name: 服饰配件（单选）
       choices: {CMUYautjaAccessory: 1}
       entries:
       - id: CMUYautjaCapeQuarter
-        name: Quarter-Cape
+        name: 四分之一短披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeThird
-        name: Third-Cape
+        name: 三分之一披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeHalf
-        name: Half-Cape
+        name: 半肩披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapePoncho
-        name: Poncho
+        name: 斗篷披肩
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeDamaged
-        name: Damaged-Cape
+        name: 残破披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeFull
-        name: Full-Cape
+        name: 全身大披风
         maxPerUser: 1
         replaceSlot: back
-    - name: Spare Equipment
+    - name: 备用补给装备
       entries:
       - id: CMUYautjaFalconDroneBadBlood
-        name: Falcon Drone
+        name: 猎鹰无人机
         points: 20
         maxPerUser: 10
       - id: CMUYautjaHuntingTrap
-        name: Hunting Trap
+        name: 狩猎陷阱
         points: 10
         maxPerUser: 10
       - id: CMUYautjaDynamicArrow
-        name: Arrow - Dynamic Warhead
+        name: 箭矢 - 动态战斗部箭
         points: 10
         maxPerUser: 10
       - id: CMUYautjaSnareArrow
-        name: Arrow - Snare
+        name: 箭矢 - 绊网箭
         points: 15
         maxPerUser: 10
 - type: entity
   parent: CMUYautjaLoadoutVendor
   id: CMUYautjaStrandedLoadoutVendor
-  name: Yautja Hunting Gear Rack
-  description: A gear rack for hunting.
+  name: 遇难猎手狩猎装备架
+  description: 用于挑选狩猎装备的陈列架。
   suffix: Yautja, Stranded, Bow Equipment
   components:
   - type: Sprite
@@ -3302,167 +3290,167 @@
   - type: CMAutomatedVendor
     uiStyle: Yautja
     sections:
-    - name: Essential Hunting Supplies
+    - name: 核心狩猎必需品
       entries:
       - id: CMUYautjaStrandedHuntingEquipmentBundle
-        name: Hunting Equipment
+        name: 狩猎装备包
         choices: {CMUYautjaEssentials: 1}
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaStrandedArmorBundle
-        name: Armor
+        name: 护甲包
         choices: {CMUYautjaArmor: 1}
         maxPerUser: 1
         mandatory: true
-    - name: Main Weapons (CHOOSE 1)
+    - name: 主手武器（单选）
       choices: {CMUYautjaPrimary: 1}
       entries:
       - id: CMUYautjaClanSword
-        name: The Primary Hunting Sword
+        name: 首选猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaRendingSword
-        name: The Rending Hunting Sword
+        name: 撕裂猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaPiercingSword
-        name: The Piercing Hunting Sword
+        name: 穿刺猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaSeveringSword
-        name: The Severing Hunting Sword
+        name: 斩截猎剑
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCruelStaff
-        name: The Taruulan Staff
+        name: 塔鲁兰战杖
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaChainwhip
-        name: The Sundering Chain-Whip
+        name: 碎甲锁链鞭
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaDualWarScythe
-        name: The Cleaving War-Scythe
+        name: 劈裂战镰
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaDoubleWarScythe
-        name: The Ripping War-Scythe
+        name: 撕扯战镰
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCombistick
-        name: The Adaptive Combi-Stick
+        name: 战术复合长矛
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaWarAxe
-        name: The Butchering War Axe
+        name: 屠戮战斧
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaWarGlaive
-        name: The Lumbering Glaive
+        name: 重装战戟
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaCleavingGlaive
-        name: The Imposing Glaive
+        name: 威严战戟
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaLongaxe
-        name: The Crushing Longaxe
+        name: 粉碎长柄斧
         maxPerUser: 1
         recommended: true
-    - name: Bracer Attachments
+    - name: 护腕挂件
       entries:
       - id: CMUYautjaWristBladesBundle
-        name: Wrist Blades
+        name: 双联腕刃包
         choices: {CMUYautjaBracer: 1}
         maxPerUser: 1
         mandatory: true
       - id: CMUYautjaBracerShieldAttachment
-        name: The Compact Shield
+        name: 折叠小圆盾
         choices: {CMUYautjaBracer: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaFearsomeScimitarsBundle
-        name: The Fearsome Scimitars
+        name: “可怖弯刀”挂件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaSkeweringScimitarsBundle
-        name: The Skewering Scimitars
+        name: “贯刺弯刀”挂件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
       - id: CMUYautjaChainGauntletsBundle
-        name: The Chain Gauntlets
+        name: “锁链臂铠”套件包
         choices: {CMUYautjaPrimary: 1}
         maxPerUser: 1
         recommended: true
-    - name: Support Equipment (CHOOSE 2)
+    - name: 辅助支援装备（双选）
       choices: {CMUYautjaSupport: 2}
       entries:
       - id: CMUYautjaFalconDrone
-        name: The Agile Drone
+        name: 疾影侦察无人机
         maxPerUser: 1
       - id: CMUYautjaClanShield
-        name: The Steadfast Shield
+        name: 坚毅之盾
         maxPerUser: 1
       - id: CMUYautjaHeavyClanArmor
-        name: The Formidable Plate Armor
+        name: 森严重型板甲
         maxPerUser: 1
         replaceSlot: OUTERCLOTHING
       - id: CMUYautjaSpikeLauncher
-        name: The Fleeting Spike Launcher
+        name: 疾风骨针发射器
         maxPerUser: 1
       - id: CMUYautjaSmartDisc
-        name: The Purifying Smart-Disc
+        name: 涤罪智能飞盘
         maxPerUser: 1
-    - name: Ranged Equipment (CHOOSE 1)
+    - name: 远程装备（单选）
       choices: {CMUYautjaRanged: 1}
       entries:
       - id: CMUYautjaQuiverStrapFilled
-        name: The Firm Bow
+        name: 强劲狩猎战弓
         maxPerUser: 1
-    - name: Clothing Accessory (CHOOSE 1)
+    - name: 服饰配件（单选）
       choices: {CMUYautjaAccessory: 1}
       entries:
       - id: CMUYautjaCapeQuarter
-        name: Quarter-Cape
+        name: 四分之一短披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeThird
-        name: Third-Cape
+        name: 三分之一披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeHalf
-        name: Half-Cape
+        name: 半肩披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapePoncho
-        name: Poncho
+        name: 斗篷披肩
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeDamaged
-        name: Damaged-Cape
+        name: 残破披风
         maxPerUser: 1
         replaceSlot: back
       - id: CMUYautjaCapeFull
-        name: Full-Cape
+        name: 全身大披风
         maxPerUser: 1
         replaceSlot: back
-    - name: Spare Equipment
+    - name: 备用补给装备
       entries:
       - id: CMUYautjaFalconDrone
-        name: Falcon Drone
+        name: 猎鹰无人机
         points: 20
         maxPerUser: 10
       - id: CMUYautjaHuntingTrap
-        name: Hunting Trap
+        name: 狩猎陷阱
         points: 15
         maxPerUser: 10
       - id: CMUYautjaArrow
-        name: Arrow - Explosive
+        name: 箭矢 - 爆炸箭
         points: 15
         maxPerUser: 10
       - id: CMUYautjaSnareArrow
-        name: Arrow - Snare
+        name: 箭矢 - 绊网箭
         points: 20
         maxPerUser: 10
