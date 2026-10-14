@@ -1,279 +1,275 @@
 <Document>
-  # Guided panel
+  # AN/PRC-117G：向导面板
 
-  The guided panel is the default interface for the AN/PRC-117G.
+  向导面板（Guided panel）是 AN/PRC-117G 的默认交互界面。
 
-  It provides the controls needed for normal radio operation while leaving advanced settings on [bold]AUTO[/bold].
+  它提供了常规无线电操作所需的核心控制功能，同时将高级设置保持在[bold]自动（AUTO）[/bold]状态。
 
-  By default, AUTO uses:
+  在默认情况下，AUTO 采用：
 
-  - FH waveform
-  - MED output power
-  - squelch 3
-  - the wearer's callsign
+  - FH（跳频）波形
+  - MED（中等）输出功率
+  - 静噪等级 3
+  - 佩戴者的战术呼号
 
-  The display shows the radio's current state, while the banner below it reports problems that need attention.
+  主显示屏会显示电台的当前状态，下方的横幅则会报告需要处理的问题与警报。
 
-  Advanced functions such as output power, waveforms, fixed station callsigns, direct frequencies, the search receiver, and operator techniques are available through the [textlink="expert faceplate" link="AU14CommsANPRCExpert"].
+  如需调节发射功率、切换波形、设置固定电台呼号、直调频率、操作搜索接收机以及使用高级操作技巧，请切换至[textlink="专家操作面板" link="AU14CommsANPRCExpert"]。
 
-  ## Opening the panel
+  ## 打开面板
 
-  Wear the radio, then alt-click it, or right-click it and select [bold]Open Radio Panel[/bold].
+  背上天台，然后按住 Alt 键点击电台，或者打开电台右键菜单并选择[bold]打开无线电面板（Open Radio Panel）[/bold]。
 
-  Only trained operators can open the panel. See [textlink="the AN/PRC-117G" link="AU14CommsANPRC"] for roles that begin with radio training.
+  只有受训的操作员才能打开该面板。初始具备无线电操作训练的角色列表请参阅 [textlink="AN/PRC-117G 无线电" link="AU14CommsANPRC"]。
 
-  The first time the panel is opened, a short briefing appears.
+  首次打开面板时会弹出一份简短说明。
 
-  - [bold]GOT IT[/bold] closes the briefing.
-  - [bold]? HELP[/bold] opens it again and provides access to this guide.
-  - [bold]VIEW[/bold] switches between the guided panel and expert faceplate.
+  - [bold]GOT IT（了解）[/bold]：关闭说明。
+  - [bold]? HELP（帮助）[/bold]：重新打开说明并查阅本指南。
+  - [bold]VIEW（视图）[/bold]：在向导面板与专家操作面板之间切换。
 
-  The radio remembers the last interface used.
+  电台会记住你上次使用的界面模式。
 
-  ## Display
+  ## 状态显示屏
 
-  The display provides the radio's most important status information.
+  显示屏提供电台最关键的实时运行信息。
 
-  ### Working net
+  ### 工作电网
 
-  The display shows:
+  显示屏显示：
 
-  - working memory
-  - frequency
-  - loaded net
+  - 当前工作存储槽（Memory）
+  - 频率
+  - 已加载的无线电网
 
-  The [bold]TALK[/bold] line indicates whether [color=#a4885c]:r[/color] can currently transmit.
+  [bold]TALK[/bold] 行指示当前使用 [color=#a4885c]:r[/color] 是否可以进行发射。
 
-  ### Security
+  ### 安全状态
 
-  The display shows the current waveform and encryption state.
+  显示屏显示当前的波形体制与加密状态。
 
-  Possible states are:
+  可能显示的状态包括：
 
-  - [bold]SECURE[/bold]
-  - [bold]NOT SECURE[/bold]
-  - [bold]IN CLEAR[/bold]
+  - [bold]SECURE（已加密）[/bold]
+  - [bold]NOT SECURE（未加密）[/bold]
+  - [bold]IN CLEAR（明文传输）[/bold]
 
-  ### Connection and relay
+  ### 信号连接与中继
 
-  [bold]SIG[/bold] shows the quality of the radio's connection to its working net.
+  [bold]SIG[/bold] 显示电台与当前工作网的连接信号质量。
 
-  [bold]RELAY[/bold] shows:
+  [bold]RELAY[/bold] 显示：
 
-  - how many nets the radio is relaying
-  - the current relay range
+  - 当前电台正在中继转发多少个无线电网
+  - 当前的中继覆盖范围
 
-  If the display reads [bold]NOT RELAYING[/bold], the radio is not providing combat-net coverage to nearby headsets.
+  如果显示屏提示 [bold]NOT RELAYING（未中继）[/bold]，说明该电台当前未能为周边的战术耳机提供作战网中继覆盖。
 
-  Common causes include:
+  常见原因包括：
 
-  - the radio is switched off
-  - the radio is not being worn
-  - the wearer does not have radio training
+  - 电台电源已关闭
+  - 电台未背在身上
+  - 佩戴者未受过无线电操作训练
 
-  Check the banner for the specific problem.
+  具体原因可直接查看状态横幅提示。
 
-  ## Status banner
+  ## 状态横幅
 
-  The banner below the display reports the next problem preventing normal operation.
+  显示屏下方的横幅会报告阻碍正常运行的首要问题。
 
-  Problems are generally shown in the order they should be corrected, such as:
+  问题通常按解决优先顺序排列提示，例如：
 
-  - missing battery
-  - radio switched off
-  - radio not worn
-  - no nets loaded
-  - no valid fill card
+  - 缺失电池
+  - 电台已关机
+  - 电台未背在身上
+  - 未加载任何无线电网
+  - 无有效的保密注钥卡
 
-  When possible, the banner includes a button that corrects the problem directly.
+  在可行时，横幅通常会附带一个可直接修复该问题的操作按钮。
 
-  A green banner indicates that the radio is ready for normal operation.
+  绿色横幅表示电台状态一切正常，随时可以投入使用。
 
-  ## NETS
+  ## 电网列表（NETS）
 
-  The NETS tab manages the radio's memories.
+  NETS 选项卡用于管理电台的频道存储槽。
 
-  The AN/PRC can contain up to four memory slots.
+  AN/PRC 最多可容纳 4 个存储槽位。
 
-  Each memory shows its contents and whether it is currently being used for transmission or relay coverage.
+  每个存储槽都会显示其内容，以及当前是否正用于发话发射或中继覆盖。
 
-  ### Standard nets
+  ### 标准电网
 
-  [bold]LOAD STANDARD NETS[/bold], or [bold]TURN ON AND LOAD STANDARD NETS[/bold], performs the standard setup.
+  点击 [bold]LOAD STANDARD NETS（加载标准电网）[/bold] 或 [bold]TURN ON AND LOAD STANDARD NETS（开机并加载标准电网）[/bold] 可执行标准一键配置。
 
-  It:
+  该操作会：
 
-  - switches the radio on
-  - loads available squad and command nets
-  - selects the squad net as the working memory
+  - 打开电台电源
+  - 自动加载可用的己方小队网与指挥网
+  - 将小队网选定为当前工作存储槽
 
-  Existing manually configured memories are not overwritten.
+  手动配置好的现有存储槽不会被覆盖。
 
-  The button only appears while one or more standard nets are missing.
+  该按钮仅在缺少一个或多个标准电网时才会出现。
 
-  ### Memory controls
+  ### 存储槽控制
 
-  - [bold]USE[/bold] selects a memory as the working net and marks it [bold]ON AIR[/bold].
-  - [bold]EDIT[/bold] opens that memory's configuration.
-  - [bold]+ ADD MEMORY[/bold] creates a new empty memory.
+  - [bold]USE（使用）[/bold]：将该存储槽选为当前工作电网，并标记为 [bold]ON AIR（当前发射）[/bold]。
+  - [bold]EDIT（编辑）[/bold]：打开该存储槽的详细配置。
+  - [bold]+ ADD MEMORY（添加存储槽）[/bold]：新建一个空存储槽。
 
-  Inside the memory editor:
+  在存储槽编辑器内：
 
-  - [bold]Pick a net[/bold] selects the net stored in the memory.
-  - [bold][YOUR SQUAD][/bold] marks the operator's squad net.
-  - [bold][STANDARD][/bold] marks recommended nets.
-  - [bold][IN MEMORY][/bold] marks nets already loaded elsewhere in the radio.
-  - [bold][INTERCEPT][/bold] marks enemy nets resolved by the search receiver.
-  - [bold]Rename[/bold] changes the memory label, up to eight characters.
-  - [bold]EMPTY IT[/bold] clears the memory without removing its slot.
-  - [bold]DELETE MEMORY[/bold] removes the memory slot after confirmation.
-  - [bold]DONE[/bold] closes the editor.
+  - [bold]Pick a net（选择无线网）[/bold]：选择要保存在该存储槽的无线网。
+  - [bold][YOUR SQUAD][/bold]：标明操作员所属的小队网。
+  - [bold][STANDARD][/bold]：标明推荐加载的标准电网。
+  - [bold][IN MEMORY][/bold]：标明电台其他槽位已加载的电网。
+  - [bold][INTERCEPT][/bold]：标明由搜索接收机侦测定位的敌方电网。
+  - [bold]Rename（重命名）[/bold]：修改存储槽自定义标签，最多 8 个字符。
+  - [bold]EMPTY IT（清空）[/bold]：清空该槽位中的电网，但保留该存储槽。
+  - [bold]DELETE MEMORY（删除存储槽）[/bold]：二次确认后彻底删除该存储槽。
+  - [bold]DONE（完成）[/bold]：关闭编辑器。
 
-  Memory labels are visible only to the operator.
+  槽位标签仅操作员本人可见。
 
-  Every friendly combat net loaded into memory is relayed to nearby headsets, regardless of which memory is ON AIR.
+  只要是加载到存储槽中的友军作战网，不论哪一个槽位处于 ON AIR 状态，电台都会将其全部中继给附近的单兵耳机。
 
-  A radio can therefore transmit on one net while continuing to relay others.
+  因此，电台可以在某一个电网上发话通话，同时持续中继其余所有已加载的电网。
 
-  Direct frequencies are configured through the [textlink="expert faceplate" link="AU14CommsANPRCExpert"].
+  直调频率需要通过[textlink="专家操作面板" link="AU14CommsANPRCExpert"]进行配置。
 
-  ## LOG
+  ## 通联日志（LOG）
 
-  The LOG tab stores the last [bold]50[/bold] radio messages handled by the set.
+  LOG 选项卡记录由该电台处理过的最近 [bold]50[/bold] 条无线电信息。
 
-  The newest entries appear first.
+  最新接收/发送的内容会显示在最上方。
 
-  The log includes received and transmitted traffic.
+  日志包含接收到与发射出的全部通联。
 
-  Available controls include:
+  可用控制功能包括：
 
-  - search by sender or message text
-  - [bold]INTERCEPTS[/bold] - show only intercepted enemy traffic
-  - [bold]ALL NETS[/bold] - cycle through nets represented in the log
-  - [bold]PRINT LOG[/bold] - print the full log
-  - [bold]PRINT INTERCEPTS[/bold] - print only intercepted traffic
+  - 按发信人呼号或信息正文关键字搜索
+  - [bold]INTERCEPTS（截获通联）[/bold]：仅显示截获的敌方无线电通联
+  - [bold]ALL NETS（全部电网）[/bold]：按日志中记录的电网逐一切换筛选
+  - [bold]PRINT LOG（打印日志）[/bold]：打印完整通联日志
+  - [bold]PRINT INTERCEPTS（打印截获记录）[/bold]：仅打印截获的敌情通联
 
-  Printed logs are placed directly into the operator's hand.
+  打印出的纸质日志会直接放置在操作员手中。
 
-  The radio must be worn or staked down before it can print.
+  电台必须处于穿戴状态或架设在地面上才能执行打印。
 
-  A badge on the LOG tab shows how many entries arrived while another tab was open.
+  LOG 选项卡上的数字徽标显示你在浏览其他页面时新收到了多少条通联。
 
-  ## SECURITY
+  ## 安全保密（SECURITY）
 
-  The SECURITY tab displays the radio's encryption state and installed fill card.
+  SECURITY 选项卡显示电台的加密状态与已安装的注钥卡。
 
-  Possible states include:
+  可能的状态包括：
 
-  - [bold]ENCRYPTED[/bold] - the installed fill card is current and secured traffic is encrypted
-  - [bold]NOT ENCRYPTED[/bold] - no valid fill card is installed
-  - [bold]FILL SUPERSEDED[/bold] - the installed fill card became outdated after a recrypto
-  - [bold]IN THE CLEAR (PT)[/bold] - the radio is transmitting in plain-text mode
+  - [bold]ENCRYPTED（已加密）[/bold]：已安装当前有效的注钥卡，保密通联均处于加密保护下
+  - [bold]NOT ENCRYPTED（未加密）[/bold]：未安装有效的注钥卡
+  - [bold]FILL SUPERSEDED（密钥失效）[/bold]：在全军重加密操作后，当前安装的密钥卡已过时失效
+  - [bold]IN THE CLEAR (PT)（明文传输）[/bold]：电台正处于明文（Plain Text）传输模式
 
-  If no valid fill is loaded, use a current COMSEC fill card on the radio.
+  如果未加载有效密钥，请对电台使用当前最新的 COMSEC 注钥卡。
 
-  If the fill is superseded, replace it or receive a new key through over-the-air rekeying.
+  如果密钥已过时失效，请更换注钥卡，或通过空中无线重注钥（OTAR）接收新密钥。
 
-  If the radio is in PT, use [bold]RETURN TO AUTO[/bold] from SETTINGS to restore the normal FH configuration.
+  如果电台处于 PT 明文模式，可在 SETTINGS 中点击 [bold]RETURN TO AUTO[/bold] 恢复标准跳频（FH）模式。
 
-  ### Fill actions
+  ### 注钥操作
 
-  The following actions require confirmation.
+  以下操作均需要二次确认：
 
-  - [bold]ZEROIZE[/bold] - eject the active fill card into the operator's hand
-  - [bold]DESTROY FILL[/bold] - destroy the installed fill card
-  - [bold]ORDER RECRYPTO[/bold] - replace the faction's current encryption key and invalidate existing fill cards
+  - [bold]ZEROIZE（清零）[/bold]：将当前插槽中的注钥卡弹出退回到操作员手中
+  - [bold]DESTROY FILL（销毁密钥）[/bold]：彻底销毁已安装的注钥卡
+  - [bold]ORDER RECRYPTO（下达重加密）[/bold]：重置更换所属阵营的当前加密密钥，并使所有旧注钥卡即刻作废
 
-  ORDER RECRYPTO requires command authority.
+  ORDER RECRYPTO 需要战术指挥权限。
 
-  ZEROIZE or DESTROY FILL can be used to prevent an installed key from being captured.
+  ZEROIZE 或 DESTROY FILL 可用于在陷入重围即将被俘时，紧急防止机密密钥落入敌手。
 
-  ## SETTINGS
+  ## 系统设置（SETTINGS）
 
-  The SETTINGS tab shows the radio's current operating configuration.
+  SETTINGS 选项卡显示电台当前的运行配置。
 
-  ### Operating mode
+  ### 运行模式
 
-  [bold]HOW THE SET IS RUNNING[/bold] displays [bold]AUTO[/bold] while the radio is using the guided panel's standard settings.
+  当电台处于向导面板的标准设置时，[bold]HOW THE SET IS RUNNING（运行状态）[/bold]会显示为 [bold]AUTO[/bold]。
 
-  Changes made through the expert faceplate are listed here.
+  通过专家操作面板做出的更改会在此处列出，例如：
 
-  These can include:
+  - 输出功率
+  - 波形体制
+  - 静噪等级
+  - 固定电台呼号
+  - 突发传输（Burst）
+  - 省电模式
+  - 优先监听（Priority watch）
+  - 辐射管制（EMCON）
+  - 跨网转发桥接（Retransmission bridge）
+  - 主动搜索（Active search）
 
-  - output power
-  - waveform
-  - squelch
-  - fixed station callsign
-  - burst transmission
-  - power save
-  - priority watch
-  - EMCON
-  - retransmission bridge
-  - active search
+  ### 恢复自动配置（Return to auto）
 
-  ### Return to auto
+  每当电台脱离向导面板的标准配置时，就会出现 [bold]RETURN TO AUTO[/bold] 按钮。
 
-  [bold]RETURN TO AUTO[/bold] appears whenever the radio is outside the guided panel's standard configuration.
+  点击它可恢复常规的自动配置，并停止正在进行的搜索。
 
-  It restores the normal automatic settings and stops an active search.
+  它[bold]不会[/bold]移除：
 
-  It does [bold]not[/bold] remove:
+  - 已加载的存储槽
+  - 已安装的注钥卡
 
-  - loaded memories
-  - installed fill card
+  当电台被他人调整为陌生配置时，请使用 RETURN TO AUTO 迅速恢复。
 
-  Use RETURN TO AUTO when a radio has been left in an unfamiliar configuration.
+  例如，被调为 EMCON 辐射管制的电台将无法发射，也无法为周围队友提供中继。
 
-  For example, a radio left in EMCON cannot transmit or provide relay coverage.
+  ### 监听模式（Monitor）
 
-  ### Monitor
+  [bold]MONITOR[/bold] 可同时收听所有已加载的无线电网。
 
-  [bold]MONITOR[/bold] listens to every loaded net simultaneously.
+  在该模式激活期间：
 
-  While MONITOR is active:
+  - 所有已加载电网的通联均能正常接收
+  - 电台进入只收不发状态
+  - 快捷键 [color=#a4885c]:r[/color] 无法发射
 
-  - all loaded nets can be received
-  - the radio becomes receive-only
-  - [color=#a4885c]:r[/color] cannot transmit
+  ### 扫描模式（Scan）
 
-  ### Scan
+  [bold]SCAN[/bold] 会持续侦听所有已加载的电网。
 
-  [bold]SCAN[/bold] listens to every loaded net.
+  当某个电网出现通联信号时，电台会自动将 ON AIR 发射槽切换至该电网。
 
-  When a loaded net receives traffic, the radio moves ON AIR to that memory.
+  该槽位会一直保持选中，直到其他电网传来新信号或由操作员手动改选为止。
 
-  It remains selected until another loaded net receives traffic or the operator changes it manually.
+  ### 电台呼号（Station）
 
-  ### Station
+  [bold]STATION[/bold] 显示电台当前使用的战术呼号。
 
-  [bold]STATION[/bold] shows the callsign currently used by the radio.
+  其他控制项包括：
 
-  Additional controls include:
+  - [bold]OPEN NET DIRECTORY（打开通信名录）[/bold]：查看当前分配给友军各台的战术呼号
+  - [bold]PHONE（野战电话）[/bold]：打开野战电话通信录
 
-  - [bold]OPEN NET DIRECTORY[/bold] - show callsigns currently assigned to friendly stations
-  - [bold]PHONE[/bold] - open the field-telephone directory
+  野战电话的操作详见 [textlink="AN/PRC-117G 无线电" link="AU14CommsANPRC"]。
 
-  See [textlink="the AN/PRC-117G" link="AU14CommsANPRC"] for field-phone operation.
+  ## 专家操作面板
 
-  ## Expert faceplate
+  向导面板已经涵盖了常规作战无线电操作的全部需求。
 
-  The guided panel provides everything required for normal radio operation.
+  而在需要更高级的精细控制时，[textlink="专家操作面板" link="AU14CommsANPRCExpert"]能提供更多进阶功能：
 
-  The [textlink="expert faceplate" link="AU14CommsANPRCExpert"] provides additional control when needed.
+  - 调整发射输出功率
+  - 切换通信波形
+  - 设置固定电台呼号
+  - 输入直调频率
+  - 启用省电模式
+  - 实施辐射管制（EMCON）
+  - 使用优先监听（Priority watch）
+  - 使用架设电台进行跨网中继桥接（Retrans bridge）
+  - 空中无线分发加密密钥（OTAR）
+  - 搜索侦测未知敌方无线电网
+  - 无线电测向定位活跃的敌方干扰机
 
-  Advanced functions include:
-
-  - changing output power
-  - changing waveform
-  - setting a fixed station callsign
-  - entering direct frequencies
-  - enabling power save
-  - enabling EMCON
-  - using priority watch
-  - bridging nets from a staked radio
-  - sending encryption keys over the air
-  - searching for unknown radio nets
-  - locating active jammers
-
-  These functions are optional and are not required for basic AN/PRC operation.
+  这些进阶功能属于可选项，在基础 AN/PRC 操作中并非必需。
 </Document>

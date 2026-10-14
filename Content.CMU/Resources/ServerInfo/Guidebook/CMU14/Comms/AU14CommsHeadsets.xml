@@ -1,191 +1,191 @@
 <Document>
-  # Field Headsets
+  # 单兵野战耳机
 
-  Your headset is the radio you were issued, the one in your ears slot, and for most roles it is the only radio you will ever touch. This page covers what it does, what it will not do, and the one thing about it that gets people killed.
+  耳机是公发给你的个人无线电设备，佩戴在你的耳朵槽位（Ears Slot）中。对于大多数前线作战人员而言，这将是你唯一能接触到的无线电设备。本指南将介绍它的功能、局限性，以及一个可能让你丧命的关键机制。
 
   <Box>
-    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Squad Headset"/>
-    <GuideEntityEmbed Entity="AU14HeadsetGovforCommand" Caption="Command Headset"/>
-    <GuideEntityEmbed Entity="AU14CLFHeadset" Caption="CLF Earpiece"/>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="小队耳机"/>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforCommand" Caption="指挥部耳机"/>
+    <GuideEntityEmbed Entity="AU14CLFHeadset" Caption="CLF 隐蔽耳麦"/>
   </Box>
 
-  ## Talking on it
+  ## 使用耳机通话
 
-  Wear it in your ears slot, then type a colon, the letter h, a space, and what you want to say:
+  将耳机佩戴在耳朵槽位上，然后在聊天输入栏输入前缀冒号 `:h`、空格以及你想说的话：
 
-  [color=#a4885c]:h Contact front, wait out.[/color]
+  [color=#a4885c]:h 正面遭遇敌情，等待下一步（:h Contact front, wait out）。[/color]
 
-  That goes out on the headset's default net. Most headsets carry more than one. Examine yours to see which, and which letter reaches each:
+  该信息会自动通过耳机的默认无线网发送。大多数耳机都内置了不止一个无线网。你可以检视（Examine）你的耳机，查看其支持哪些无线网及各自的发信前缀字母：
 
-  - [color=#a4885c]:v[/color] for command, if you have the command key.
-  - [color=#a4885c]:a[/color] for Alpha, if you have the Alpha key.
+  - [color=#a4885c]:v[/color] 指挥网（Command），前提是你的耳机装有指挥网密钥芯片。
+  - [color=#a4885c]:a[/color] 阿尔法小队网（Alpha），前提是耳机装有 Alpha 密钥芯片。
 
-  A headset can only use a net it holds the key for, and you cannot fit keys in the field. If you need a net you do not have, borrow somebody's handset. There is no other way.
+  耳机只能接入它装有对应密钥芯片的无线网，并且你无法在野外自行加装或更换芯片。如果你急需在没有芯片的无线网上通信，只能向队友借用手持话筒（Handset），别无他法。
 
-  Your name does not go out on the air. Everyone on the net, friendly or otherwise, sees your callsign instead. Talking face to face is unaffected.
+  你的角色姓名不会在无线电中广播，电网上的所有人（无论敌友）看到的都是你的战术呼号；正常的面对面当面交谈不受此影响。
 
-  ## The thing that gets people killed
+  ## 那些会让你在战场上送命的致命机制
 
-  A headset is not a phone. On its own it reaches nobody.
+  耳机不是手机。单靠耳机本身，你谁也联系不上。
 
-  Combat nets are [bold]anchor-gated[/bold]: your headset only works while it is standing near something that holds the net up. Any of these will do it:
+  作战无线电网是受[bold]中继锚点（Anchor-gated）[/bold]门控的：你的耳机只有在靠近能够支撑该网络的中继设备时才能工作。以下任一设备均可作为有效中继点：
 
-  - A powered AN/PRC worn by a trained operator, usually your Fireteam Leader.
-  - A deployed retransmission station.
-  - A command-post antenna mast.
-  - A powered shipboard communications array.
-  - A vehicle radio, covering little more than the hull it is bolted into.
-  - A CLF base station or relay set, staked down, for CLF nets.
-  - Any mast or array the CLF have spliced a tap into, again for CLF nets.
+  - 由受训操作员（通常是你的火力组长 FTL）佩戴且开机的 AN/PRC 背负电台。
+  - 部署展开的跨网中继转发站。
+  - 前沿指挥所的天线桅杆。
+  - 通电运转的星舰舰载通信阵列。
+  - 车载战术电台（覆盖范围极小，基本仅限载具车身及紧邻周边）。
+  - CLF 架设在地面上的隐蔽基地台或中继机（用于 CLF 抵抗军电网）。
+  - CLF 加装了分接器的任何天线桅杆或天线阵列（同样用于 CLF 电网）。
 
-  With none of those in reach your net is not weak. It is dead. You will speak and nothing at all will happen.
+  若在有效范围内没有任何上述中继设备，你的网络信号可不只是变弱，而是[bold]彻底失联[/bold]。无论你怎么说话，无线电里都不会产生任何反应。
 
-  Walk away from whoever carries the pack and you have walked off the net. That is the whole of it.
+  一旦你离了背负电台的队友太远，你的耳机就直接脱网断联了。事实就是这么简单。
 
-  Colony and civilian channels are the exception - nothing anchors them, they work anywhere, and anybody at all can listen to them.
+  殖民地（Colony）和民用公共频道则是例外——它们无需任何中继支撑，在全图任何位置都能通话，且全图任何人都能听到。
 
-  ### How near is near enough
+  ### 有效距离多近才算够近
 
   <Table Columns="2" MinForcedColumnWidth="120">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Distance from the anchor[/bold]</Box>
+      <Box Margin="4">[bold]距离中继设备的距离[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]What you get[/bold]</Box>
+      <Box Margin="4">[bold]通信效果[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">0-30 tiles</Box>
+      <Box Margin="4">0-30 格</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Clear both ways.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">30-45 tiles</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Readable, but words go missing.</Box>
+      <Box Margin="4">双向清晰通话。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Beyond 45 tiles</Box>
+      <Box Margin="4">30-45 格</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Nothing.</Box>
+      <Box Margin="4">勉强可以辨识，但部分词句会断续丢失。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">超过 45 格</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">彻底无信号，完全无法收发。</Box>
     </ColorBox>
   </Table>
 
-  Those numbers assume a whip antenna at normal transmit power. Turning an operator's set up, or fitting a mast antenna and standing still, buys more. Turning it down buys less. A command-post mast is worth about 75 tiles on its own, and a powered shipboard array covers its whole ship, every deck.
+  上述距离基于电台安装标准鞭形天线且处于常规发射功率下的情况。如果操作员调高输出功率，或者架设立式桅杆天线并保持静止，能够换取更远的覆盖；降低功率则会缩短距离。一座前沿指挥所天线桅杆自身便能提供约 75 格的覆盖，正常运转的星舰舰载通信阵列则可直接覆盖整艘战舰。
 
-  Everything else reaches one level up or down and no further, so a tunnel or a lower deck normally wants its own relay.
+  除此之外的所有设备通常只能垂直向上一层或向下一层穿透，无法覆盖更远，因此地道或下层甲板通常需要独立架设中继设备。
 
-  ## Clipped earpieces
+  ## 领夹式隐蔽耳麦
 
-  Some people are not issued a headset at all. The CLF wear a [bold]concealable earpiece[/bold] instead, and it works differently in ways worth knowing.
+  部分人员根本没有配发耳机。CLF 游击队佩戴的是[bold]隐蔽耳麦（Concealable earpiece）[/bold]，其运作机制有一些值得了解的不同之处：
 
-  An earpiece is a uniform accessory. Clip it to a garment you are wearing and it puts the net straight into your ears - there is no headset in your ears slot to examine, and nothing an enemy can see. Take the garment off, or pull the earpiece out of it, and you are off the net immediately.
+  隐蔽耳麦属于服装配饰。将其夹扣在你当前穿着的衣物上，即可直接将无线电信号送入耳中——你的耳朵槽位上没有任何可供敌人搜查的耳机，从外观上也完全看不出来。脱下这件衣服，或者把耳麦拔下来，你就会立即脱网断联。
 
-  It will clip to anything that takes accessories, and it works from any of them: a jumpsuit, a vest, a militia coat, webbing, body armour. What matters is that the garment is actually being worn, not which slot it sits in.
+  它可以夹在任何支持配饰的服装上，并且在任意位置均能生效：连体服、战术背心、民兵大衣、装具吊带或防弹护甲。关键在于这件衣物必须[bold]穿戴在身上[/bold]，而不是它具体位于哪个槽位。
 
-  Otherwise it behaves as a headset does. [color=#a4885c]:h[/color] transmits on the cell net, the colony channel is there as well, and both are subject to everything above about anchors and range. An earpiece answers a radio check like any other station, so an operator running one will see the whole cell come back even when nobody in it carries a pack.
+  除此以外，它的表现与普通耳机一致。[color=#a4885c]:h[/color] 默认在抵抗军战备小队网（Cell net）中发射，殖民地频道也能正常收听，并且同样受上述中继覆盖与距离规则的严格制约。隐蔽耳麦与其他电台一样能自动应答无线电测试，因此通信兵发起测试时，即便队里没有任何人背着电台包，也能看到整个小组全员在线的回执反馈。
 
-  ## Jamming
+  ## 信号干扰
 
-  Enemy jammers cut into headset traffic. Inside a jammer field:
+  敌方干扰机会严重破坏耳机通信。在干扰场范围内：
 
-  - Nothing you send goes out at all.
-  - What comes in arrives broken.
-  - The closer the jammer, the worse both get.
+  - 你发射的任何信息都完全发不出去。
+  - 接收到的外部信息会破碎断续。
+  - 距离干扰源越近，上述现象越严重。
 
-  Direct frequencies are jammed the same way. An AN/PRC in FH mode can still push traffic out of a jammer field; a headset cannot, and there is nothing you can do about it from the headset end except leave.
+  直调频率同样会受到这种干扰。处于跳频（FH）模式下的 AN/PRC 电台仍可在干扰场中强行向外发射，但耳机完全做不到这一点；你在耳机端除了尽快撤出干扰区以外无能为力。
 
-  ## Direct frequencies
+  ## 直调频率
 
-  Some headsets hold one frequency of their own alongside their keyed nets. Transmit on it with [color=#a4885c]:x[/color].
+  部分耳机除了内置加密网外，还支持一个独立的直调频率。使用 [color=#a4885c]:x[/color] 即可在该频率上通话。
 
-  A direct frequency:
+  直调频率：
 
-  - Belongs to no net and needs no key.
-  - Needs no anchor, mast or array.
-  - Is heard by anything tuned to the same number, including whoever finds it by accident or by searching for it.
+  - 不属于任何预设作战网，不需要密钥芯片。
+  - 不需要任何中继点、天线桅杆或中继阵列。
+  - 任何调到相同频率的人都能收听到，包括误打误撞调过来或通过搜索接收机侦测到该频率的任何人。
 
-  To set one, right-click the headset, select [bold]Tune Frequency[/bold], and enter something between [color=#a4885c]30.000[/color] and [color=#a4885c]87.999[/color] MHz. The decimal point is optional, so [color=#a4885c]30750[/color] and [color=#a4885c]30.750[/color] are the same frequency.
+  设置方法：右键点击耳机，选择[bold]调谐频率（Tune Frequency）[/bold]，输入介于 [color=#a4885c]30.000[/color] 至 [color=#a4885c]87.999[/color] MHz 之间的数值。小数点可填可不填，例如 [color=#a4885c]30750[/color] 和 [color=#a4885c]30.750[/color] 代表同一频率。
 
-  Without a relay, direct traffic is clear to 30 tiles, degraded to 50, and gone past that. A powered AN/PRC carrying the same frequency in a slot will bridge between users, as long as both of them are inside 50 tiles of the radio.
+  在没有中继的情况下，直调频率通话在 30 格内清晰，50 格内断续，超过 50 格则彻底中断。若有一台通电且在存储槽中配置了相同频率的 AN/PRC 电台，只要通话双方都在距该电台 50 格范围内，它就能为双方提供中继桥接。
 
-  [bold]Clear Tuned Frequency[/bold] empties it again. Headsets issued with a preset also offer [bold]Reset to Default Frequency[/bold].
+  点击[bold]清除调谐频率（Clear Tuned Frequency）[/bold]可清空当前频率。出厂预设了频率的耳机还会提供[bold]恢复默认频率（Reset to Default Frequency）[/bold]选项。
 
-  ## Using a net you do not have
+  ## 使用未授权的电网
 
-  Squad leader headsets carry the squad and JTAC nets but not command. The way round it is somebody else's handset, normally the Fireteam Leader's.
+  小队长（SL）的耳机通常预置了小队网与 JTAC 空地引导网，但往往缺少指挥网。解决办法是借用别人的手持话筒（Handset），通常是火力组长（FTL）电台上的话筒。
 
-  - Stand within about [bold]two and a half tiles[/bold] of them or of a deployed radio.
-  - Alt-click the wearer or the radio.
-  - Select [bold]Take Handset[/bold].
-  - Transmit with [color=#a4885c]:r[/color].
+  - 站在距离持机人员或展开的电台约[bold]两格半[/bold]的范围内。
+  - 按住 Alt 键点击该人员或电台。
+  - 选择[bold]拿起话筒（Take Handset）[/bold]。
+  - 直接开麦说话，或使用 [color=#a4885c]:r[/color] 进行通话。
 
-  While you hold it, anything you say out loud goes out on the net whether you meant it to or not. Whisper if you need to say something privately. Walk too far and the cord pulls out of your hand.
+  当你握着话筒时，你在本地大声说出的任何话都会直接广播到该电网上，无论你是否出于本意。如果你想和身旁的人私下交谈，请切换为低语（Whisper）。若离电台太远，话筒线就会从你手中脱落收回。
 
-  Handset traffic goes out under [bold]your[/bold] callsign, not the operator's.
+  通过手持话筒发射的通联会显示[bold]你本人[/bold]的呼号，而不是电台操作员的呼号。
 
-  ## When it does not work
+  ## 故障排查
 
   <Table Columns="2" MinForcedColumnWidth="120">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Symptom[/bold]</Box>
+      <Box Margin="4">[bold]故障现象[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Check[/bold]</Box>
+      <Box Margin="4">[bold]排查与解决方法[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Nobody answers on a combat net</Box>
+      <Box Margin="4">作战网上无人应答</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">There is no anchor in reach. This is the answer most of the time. Find the pack, the mast or the array.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Traffic arrives in pieces</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">You are at the edge of coverage, or you are being jammed. Close the distance.</Box>
+      <Box Margin="4">附近没有有效的中继设备。绝大多数情况下都是这个原因——请寻找电台背包、天线桅杆或舰载阵列。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">AN/PRC traffic arrives as pure static</Box>
+      <Box Margin="4">接收到的语音断断续续</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">One of the two radios does not have matching COMSEC fill. Headsets do not use fill cards at all - only the AN/PRC does.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">A net is missing entirely</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Examine the headset. If the key is not in it, it never will be. Use a handset.</Box>
+      <Box Margin="4">你正处于信号覆盖边缘，或正在遭受敌方干扰。请缩短与中继设备的距离。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">[bold]No frequency set[/bold] on [color=#a4885c]:x[/color]</Box>
+      <Box Margin="4">接收到的 AN/PRC 通话全是一片杂音</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Tune one first.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Direct-frequency traffic goes nowhere</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Confirm both of you typed the same number, and that you are inside range of each other or of the bridging radio.</Box>
+      <Box Margin="4">两台电台中有一台未配置匹配一致的 COMSEC 保密注钥卡。耳机本身不使用注钥卡，只有 AN/PRC 才需要。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">An earpiece user hears nothing</Box>
+      <Box Margin="4">某个电网完全不见了</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Confirm the earpiece is clipped into a garment they are actually wearing, then check coverage as above.</Box>
+      <Box Margin="4">检视耳机。如果耳机里没有该网的密钥芯片，就无法接入。如需临时通联，请借用他人的手持话筒。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">使用 [color=#a4885c]:x[/color] 提示[bold]未设置频率（No frequency set）[/bold]</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">请先右键耳机调谐设置一个有效频率。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">直调频率通信无法传达</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">确认双方输入的频率完全一致，且双方都在彼此的通信范围内，或处于桥接电台的覆盖范围内。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">佩戴隐蔽耳麦听不到任何声音</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">确认耳麦已经夹扣在一件当前[bold]正穿着[/bold]的衣物上，然后按上述步骤检查中继覆盖。</Box>
     </ColorBox>
   </Table>
 </Document>

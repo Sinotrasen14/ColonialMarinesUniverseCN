@@ -1,334 +1,334 @@
 <Document>
-  # Voice Procedure
+  # 语音通信规程
 
-  Voice procedure is a standard way to pass information over a shared radio net.
+  语音通信规程是在共享无线电网上传递战术信息的规范流程。
 
-  Using consistent callsigns and prowords makes transmissions shorter, clearer, and easier to acknowledge.
+  统一使用呼号和规程用语（Proword）可以让通联更简短、更清晰，且更易于确认应答。
 
-  ## Basic Rules
+  ## 基本守则
 
-  - [bold]Listen before transmitting.[/bold] Do not interrupt traffic already in progress unless the message is urgent.
-  - [bold]Plan the message first.[/bold] Know what you need to say before opening the channel.
-  - [bold]Use callsigns.[/bold] Do not identify personnel by character name or rank over the radio.
-  - [bold]Keep transmissions brief.[/bold] Split long messages into clear sections.
-  - [bold]Acknowledge orders and requests.[/bold] Confirm that important traffic was received and understood.
-  - [bold]Use plain language.[/bold] Use prowords where they apply, but avoid unnecessary jargon.
+  - [bold]发话前先收听。[/bold] 严禁插话打断正在进行的通联，除非你有紧急事情报送。
+  - [bold]想好再说。[/bold] 在按下发射键之前，想清楚自己要表达什么。
+  - [bold]使用呼号。[/bold] 严禁在无线电中直呼人员的角色姓名或军衔。
+  - [bold]保持简明扼要。[/bold] 冗长信息应拆分为几个简短清晰的段落分次发送。
+  - [bold]确认命令与请求。[/bold] 必须明确确认已收到并理解了重要的通联内容。
+  - [bold]使用规范直白语言。[/bold] 在适用场景使用规程用语，但避免使用不必要的生僻黑话。
 
-  ## Basic Call Format
+  ## 基本呼叫格式
 
-  Address the receiving station first, then identify the transmitting station.
+  首先呼叫接收台，然后报出己方发射台呼号。
 
-  [color=#a4885c]HAVOC 6, this is SABRE ROMEO, message, over.[/color]
+  [color=#a4885c]HAVOC 6，这里是 SABRE ROMEO，有情况报送，完毕（HAVOC 6, this is SABRE ROMEO, message, over）。[/color]
 
-  A complete call normally contains:
+  一次完整的呼叫通常包含：
 
-  - The callsign being addressed.
-  - [bold]THIS IS[/bold].
-  - The transmitting callsign.
-  - The message.
-  - [bold]OVER[/bold] or [bold]OUT[/bold].
+  - 被呼叫方的呼号。
+  - [bold]THIS IS（这里是）[/bold]。
+  - 己方发射台呼号。
+  - 报文内容。
+  - [bold]OVER（完毕）[/bold] 或 [bold]OUT（通话结束）[/bold]。
 
-  The receiving station answers using the same order:
+  接收台使用相同的格式进行应答：
 
-  [color=#a4885c]SABRE ROMEO, this is HAVOC 6, send it, over.[/color]
+  [color=#a4885c]SABRE ROMEO，这里是 HAVOC 6，请讲，完毕（SABRE ROMEO, this is HAVOC 6, send it, over）。[/color]
 
-  After both stations have established contact, [bold]THIS IS[/bold] may be omitted:
+  双方建立联络后，可省略 [bold]THIS IS[/bold]：
 
-  [color=#a4885c]SABRE ROMEO, HAVOC 6, send it, over.[/color]
+  [color=#a4885c]SABRE ROMEO，HAVOC 6，请讲，完毕（SABRE ROMEO, HAVOC 6, send it, over）。[/color]
 
-  ## Prowords
+  ## 规程用语（Prowords）
 
-  Prowords are standardized words with specific meanings.
+  规程用语是具有特定战术含义的标准化词汇。
 
   <Table Columns="2" MinForcedColumnWidth="110">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Proword[/bold]</Box>
+      <Box Margin="4">[bold]规程用语[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Meaning[/bold]</Box>
+      <Box Margin="4">[bold]含义[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">THIS IS</Box>
+      <Box Margin="4">THIS IS(这里是)</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The callsign that follows identifies the transmitting station.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">OVER</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">The transmission is complete and a reply is expected.</Box>
+      <Box Margin="4">“这里是”：后接发话电台的呼号。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">OUT</Box>
+      <Box Margin="4">OVER（完毕）</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The exchange is complete and no reply is expected. Do not use “over and out.”</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">ROGER</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">The previous transmission was received and understood. It does not mean the instruction will be carried out.</Box>
+      <Box Margin="4">“完毕”：发话完毕，等待对方回复。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">WILCO</Box>
+      <Box Margin="4">OUT(通话结束)</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The instruction was understood and will be carried out. WILCO already includes the meaning of ROGER.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">SAY AGAIN</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Repeat the previous transmission, or a specified part of it.</Box>
+      <Box Margin="4">“通话结束”：本次通联结束，无需回复。严禁混用“OVER AND OUT”。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">CORRECTION</Box>
+      <Box Margin="4">ROGER(收到)</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">An error was made. The corrected information follows.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">DISREGARD</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Ignore the previous transmission.</Box>
+      <Box Margin="4">“收到”：已完整接收并理解上一条报文。注意：这仅表示明白，不代表承诺执行该指令。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">BREAK</Box>
+      <Box Margin="4">WILCO（遵命）</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Separates sections of a message or traffic addressed to different stations.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">WAIT</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Pause briefly. The transmitting station will continue shortly.</Box>
+      <Box Margin="4">“立即执行 / 遵命照办”：已理解指令并承诺按指令执行（WILCO 已包含 ROGER 的含义）。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">WAIT OUT</Box>
+      <Box Margin="4">SAY AGAIN（请重复）</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">A longer pause is required. The transmitting station will call again later.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">HOW COPY</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Confirm whether the preceding message was received clearly.</Box>
+      <Box Margin="4">“请重复”：请求重发上一条报文或其中的指定部分。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">RADIO CHECK</Box>
+      <Box Margin="4">CORRECTION（更正）</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Report signal strength and readability.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">LIMA CHARLIE</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Loud and clear.</Box>
+      <Box Margin="4">“更正”：发话出现口误，随后紧接更正后的信息。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">ACTUAL</Box>
+      <Box Margin="4">DISREGARD（作废）</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Identifies the person assigned to a command station rather than someone transmitting on their behalf.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">INTERROGATIVE</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">The following traffic is a question.</Box>
+      <Box Margin="4">“忽略 / 作废”：忽略并作废刚才发送的内容。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">BE ADVISED</Box>
+      <Box Margin="4">BREAK（分隔）</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The following traffic is information that may affect the receiving station.</Box>
+      <Box Margin="4">“分隔 / 插话”：用于分隔报文的不同段落，或转向呼叫另一电台。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">ALL STATIONS</Box>
+      <Box Margin="4">WAIT（稍等）</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The message is addressed to every station on the net.</Box>
+      <Box Margin="4">“稍等”：发话方短暂暂停，稍后将立即继续通话。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">WAIT OUT（稍候回复）</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">“稍候回复”：需要较长时间处理，发话方稍后将重新发起呼叫。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">HOW COPY（抄收如何）</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">“抄收如何”：询问对方是否清晰抄收刚才发送的内容。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">RADIO CHECK（无线电测试）</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">“无线电测试”：测试双方信号强度与清晰度。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">LIMA CHARLIE（清晰大声）</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">“清晰大声（Loud and clear）”：抄收质量极佳。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ACTUAL（本人）</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">“本人”：标明发话者是指挥岗位负责人本人，而非代表其发话的通信兵。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">INTERROGATIVE（讯问）</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">“疑问/讯问”：接下来的通联内容是一个询问。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">BE ADVISED（请注意）</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">“请注意”：接下来的内容是可能影响接收方的重要提示情报。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">ALL STATIONS（各台注意）</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">“各台注意”：面向本电网所有电台的广播通报。</Box>
     </ColorBox>
   </Table>
 
-  Use [bold]SAY AGAIN[/bold] instead of “repeat” when requesting a repeated radio message. On a fire-support net, [bold]REPEAT[/bold] may be interpreted as an instruction to fire the previous mission again.
+  在请求重发无线电信息时，请使用 [bold]SAY AGAIN[/bold] 而非“Repeat”。在火力支援中，[bold]REPEAT[/bold] 会被炮兵/航火解读为“以相同参数再次开火齐射”。
 
-  ## Radio Check
+  ## 无线电测试（Radio Check）
 
-  A radio check confirms that two stations can hear each other.
+  无线电测试用于确认两座电台能够互相清晰听到。
 
-  [color=#a4885c]HAVOC ROMEO, this is SABRE ROMEO, radio check, over.[/color]
+  [color=#a4885c]HAVOC ROMEO，这里是 SABRE ROMEO，无线电测试，完毕。[/color]
 
-  [color=#a4885c]SABRE ROMEO, this is HAVOC ROMEO, Lima Charlie. How me? Over.[/color]
+  [color=#a4885c]SABRE ROMEO，这里是 HAVOC ROMEO，清晰大声（Lima Charlie）。你听我这边如何？完毕。[/color]
 
-  [color=#a4885c]Lima Charlie, out.[/color]
+  [color=#a4885c]清晰大声，通话结束。[/color]
 
-  When the signal is not clear, describe the problem instead:
+  当信号不清晰时，请据实描述问题：
 
-  - Weak but readable.
-  - Broken.
-  - Distorted.
-  - Unreadable.
+  - 信号微弱但可辨识（Weak but readable）。
+  - 断断续续（Broken）。
+  - 失真严重（Distorted）。
+  - 无法辨识（Unreadable）。
 
-  ## Contact Report
+  ## 敌情接触报告（Contact Report）
 
-  A contact report should state:
+  一份接触报告应当说明：
 
-  - What was seen.
-  - Where it was seen.
-  - Approximate strength.
-  - What the reporting element is doing.
+  - 发现了什么。
+  - 在哪里发现。
+  - 大致兵力。
+  - 报告分队当前行动。
 
-  [color=#a4885c]HAVOC 6, this is SABRE ACTUAL, contact. Infantry, squad strength, east treeline near grid two-four-five. Engaging, over.[/color]
+  [color=#a4885c]HAVOC 6，这里是 SABRE ACTUAL，接触。敌步兵，班规模，位于坐标 2-4-5 附近东侧林线。正在交火，完毕。[/color]
 
-  [color=#a4885c]SABRE ACTUAL, HAVOC 6, roger. DAGGER is moving to your flank. Hold your position, over.[/color]
+  [color=#a4885c]SABRE ACTUAL，HAVOC 6 收到。DAGGER 正在向你侧翼运动。坚守阵地，完毕。[/color]
 
-  [color=#a4885c]HAVOC 6, SABRE ACTUAL, wilco, out.[/color]
+  [color=#a4885c]HAVOC 6，SABRE ACTUAL 照办，通话结束。[/color]
 
-  ## Fire-Support Request
+  ## 火力支援请求（Fire-Support Request）
 
-  Establish contact before sending the full request.
+  在发送完整请求前，先建立通联。
 
-  [color=#a4885c]HAVOC OPS, this is SABRE ROMEO, fire mission, over.[/color]
+  [color=#a4885c]HAVOC OPS，这里是 SABRE ROMEO，火力任务，完毕。[/color]
 
-  [color=#a4885c]SABRE ROMEO, HAVOC OPS, send it, over.[/color]
+  [color=#a4885c]SABRE ROMEO，HAVOC OPS，请讲，完毕。[/color]
 
-  The request should identify:
+  请求内容应包含：
 
-  - The target.
-  - The target location.
-  - The position of friendly forces.
-  - The requested effect.
+  - 目标性质。
+  - 目标坐标位置。
+  - 友军位置。
+  - 期望打击效果。
 
-  [color=#a4885c]Enemy machine-gun position on the north ridge beside the communications tower. Friendlies are two-five-zero meters east, marked by smoke. Request suppression, over.[/color]
+  [color=#a4885c]通信塔旁北侧山脊发现敌机枪阵地。友军位于其正东 250 米，已施放烟雾标示。请求火力压制，完毕。[/color]
 
-  [color=#a4885c]SABRE ROMEO, HAVOC OPS, roger. Rounds out, impact in three-zero seconds, over.[/color]
+  [color=#a4885c]SABRE ROMEO，HAVOC OPS 收到。炮弹出发，30 秒后弹着，完毕。[/color]
 
-  [color=#a4885c]HAVOC OPS, SABRE ROMEO, impact observed. Target suppressed. End of mission, out.[/color]
+  [color=#a4885c]HAVOC OPS，SABRE ROMEO，观察到弹着。目标已被压制。任务结束，通话结束。[/color]
 
-  ## Casualty Evacuation Request
+  ## 伤员后送请求（Casualty Evacuation Request）
 
-  Establish contact before sending casualty details.
+  在发送伤员细节前，先建立通联。
 
-  [color=#a4885c]HAVOC ROMEO, this is DAGGER ROMEO, casualty evacuation request, over.[/color]
+  [color=#a4885c]HAVOC ROMEO，这里是 DAGGER ROMEO，伤员后送请求，完毕。[/color]
 
-  [color=#a4885c]DAGGER ROMEO, HAVOC ROMEO, send it, over.[/color]
+  [color=#a4885c]DAGGER ROMEO，HAVOC ROMEO，请讲，完毕。[/color]
 
-  Include:
+  请求内容应包含：
 
-  - Number of casualties.
-  - Medical priority.
-  - Pickup location.
-  - Condition of the pickup area.
-  - Identification or marking.
+  - 伤员人数。
+  - 医疗紧急优先级。
+  - 接送着陆点位置。
+  - 接送区域安全状况。
+  - 地面识别与标示方式。
 
-  [color=#a4885c]Two casualties. One urgent surgical, one walking wounded. Pickup at the landing zone south of the bridge. Area is secure and marked with green smoke, over.[/color]
+  [color=#a4885c]两名伤员。一名紧急手术级，一名轻伤可自行行走。接送点位于桥南着陆区。该区域安全并已投掷绿烟标示，完毕。[/color]
 
-  [color=#a4885c]DAGGER ROMEO, HAVOC ROMEO, good copy. Evacuation craft inbound in five minutes, out.[/color]
+  [color=#a4885c]DAGGER ROMEO，HAVOC ROMEO 良好抄收。后送机 5 分钟后抵达，通话结束。[/color]
 
-  ## Using ACTUAL
+  ## ACTUAL 的用法
 
-  [bold]ACTUAL[/bold] identifies the person in charge speaking personally rather than an RTO or other person speaking on their behalf.
+  [bold]ACTUAL[/bold] 表明发话人是指挥官本人亲自发话，而非由 RTO（通信兵）或其他代理人员代为发话。
 
-  Squad leaders carry it as their assigned station: [bold]SABRE ACTUAL[/bold] is the Sabre (Alpha) squad leader. Command stations append it when the officer takes the handset personally.
+  小队长将其作为默认呼号后缀：[bold]SABRE ACTUAL[/bold] 即 Sabre（阿尔法）小队长。指挥岗位在军官亲自接过话筒时会追加此后缀。
 
-  [color=#a4885c]SABRE ACTUAL, this is HAVOC 6 ACTUAL. Move past phase line DODGE, over.[/color]
+  [color=#a4885c]SABRE ACTUAL，这里是 HAVOC 6 ACTUAL。推进越过 DODGE 展开线，完毕。[/color]
 
-  Without [bold]ACTUAL[/bold], [bold]HAVOC 6[/bold] traffic may be the RTO relaying for the Commanding Officer. With it, the Commanding Officer is speaking personally.
+  如果没有 [bold]ACTUAL[/bold]，[bold]HAVOC 6[/bold] 的通话可能只是通信兵代指挥官转达。带上它则意味着指挥官本人正在亲自下达命令。
 
-  ## Corrections
+  ## 更正（Corrections）
 
-  Use [bold]CORRECTION[/bold] when an error is noticed during the transmission.
+  在通话过程中察觉口误时，使用 [bold]CORRECTION（更正）[/bold]。
 
-  [color=#a4885c]Enemy infantry west of the bridge, CORRECTION, east of the bridge, squad strength, over.[/color]
+  [color=#a4885c]桥西发现敌步兵——更正——桥东，班规模，完毕。[/color]
 
-  Use [bold]DISREGARD[/bold] when the entire previous message should be ignored.
+  当需要彻底废弃上一条整段发言时，使用 [bold]DISREGARD（作废）[/bold]。
 
-  [color=#a4885c]DISREGARD my last, out.[/color]
+  [color=#a4885c]我上一条发话作废/忽略我上一条发话，通话结束。[/color]
 
-  ## Common Mistakes
+  ## 常见错误（Common Mistakes）
 
   <Table Columns="2" MinForcedColumnWidth="120">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Avoid[/bold]</Box>
+      <Box Margin="4">[bold]应当避免[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Reason[/bold]</Box>
+      <Box Margin="4">[bold]原因[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Using names or ranks</Box>
+      <Box Margin="4">直呼人名或军衔</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Radio traffic should identify stations by callsign.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Calling “command” without a callsign</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">The intended receiving station may be unclear.</Box>
+      <Box Margin="4">无线电通联应当始终以呼号识别电台。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Long unbroken transmissions</Box>
+      <Box Margin="4">仅呼叫“指挥部”而不带具体呼号</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Other stations cannot acknowledge or pass urgent traffic.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">“Over and out”</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">OVER requests a reply, while OUT ends the exchange.</Box>
+      <Box Margin="4">可能无法明确预期的接收电台究竟是谁。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">“Roger wilco”</Box>
+      <Box Margin="4">冗长不间断的发话</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">WILCO already confirms receipt and compliance.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">“Can you repeat that?”</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Use SAY AGAIN to avoid confusion on fire-support nets.</Box>
+      <Box Margin="4">其他电台无法应答，紧急重要敌情也无法及时切入。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Vague reports</Box>
+      <Box Margin="4">说“Over and out（完毕并通话结束）”</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">State the event, location, strength, and required action clearly.</Box>
+      <Box Margin="4">OVER 是请求对方回复，而 OUT 是结束通话，二者互相矛盾。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">说“Roger wilco（收到并将照办）”</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">WILCO 本身就已经包含了已收到并执行，无需重复说 ROGER。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">说“你能再来一遍吗（Can you repeat that）”</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">请使用 SAY AGAIN（请再重复一遍/重说一遍），避免在火力支援网中被误读为“再次炮击”。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">语焉不详的模糊报告</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">务必清晰准确地说出事件、地点、兵力以及所需的行动。</Box>
     </ColorBox>
   </Table>
 
-  Brief, structured transmissions leave the net available for acknowledgements and urgent traffic.
+  保持简短、结构化的通联，才能将宝贵的信道留给需要确认应答与紧急敌情报送的状况。
 </Document>

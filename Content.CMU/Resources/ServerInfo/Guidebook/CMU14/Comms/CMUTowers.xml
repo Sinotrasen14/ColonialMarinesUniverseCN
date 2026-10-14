@@ -1,46 +1,48 @@
 <Document>
-  # Comms and Sensor Towers
+  # 通信塔与传感器塔台
 
-  Colonies have fixed towers that are often broken when you arrive. Getting them working is a job for engineers: only people trained in engineering can repair them.
+  殖民地建有各类固定塔台，但在你们抵达时通常均已损毁。修复并启用它们是工程兵的任务：只有受过工程训练的人员才能进行修理。
 
-  ## Communications Towers
+  ## 通信塔
   <Box>
-    <GuideEntityEmbed Entity="AU14CommunicationsTower" Caption="Communications tower"/>
+    <GuideEntityEmbed Entity="AU14CommunicationsTower" Caption="通信塔"/>
   </Box>
-  Many radio channels only carry through a working communications tower, including the [bold]Colony[/bold], [bold]CMB[/bold] and faction channels. While no tower is up, those channels go quiet.
+  许多无线电频道只能通过正常运转的通信塔进行中继传输，包括[bold]殖民地（Colony）[/bold]、[bold]殖民地元帅局（CMB）[/bold]以及各阵营公共频道。若是没有通信塔在线运转，这些频道就会陷入静默。
 
-  To get a tower working:
-  - [bold]Repair it[/bold]: weld its panels back together with a blowtorch. It can take several passes, so examine the tower to see if there's still damage.
-  - [bold]Tune it[/bold]: use a security access tuner on it to add your faction's frequencies. The tower then starts broadcasting them.
-  - [bold]Power it[/bold]: a tower does nothing without power, so fix the local APC and, if need be, the colony's power grid.
+  如何启动通信塔：
+  - [bold]修复损伤[/bold]：使用焊枪将其外壳装甲板重新焊接牢固。这可能需要焊接多次，请随时检视塔台以确认是否仍有损伤。
+  - [bold]调谐频率[/bold]：对其使用安全访问调谐器（Security access tuner，即多功能工具 Multitool）以写入你所属阵营的通信频率。随后塔台便会开始广播中继这些频道。
+  - [bold]恢复供电[/bold]：没有供电，通信塔将无法工作，因此请修好当地的区域电源控制器（APC），必要时还需抢修殖民地的整个电网。
 
-  If the tower is destroyed or loses power, the channels it carries stop until it's fixed. Guard it.
+  如果通信塔被摧毁或断电，其承载的频道将立即中断传输，直到修复并恢复供电为止。务必严加防守。
 
-  ## Field Antenna Masts
+  ## 野战天线桅杆
   <Box>
-    <GuideEntityEmbed Entity="AU14CommsMastField" Caption="Field antenna mast"/>
+    <GuideEntityEmbed Entity="AU14CommsMastField" Caption="野战天线桅杆"/>
   </Box>
-  When there's no working tower nearby, you can raise your own. A [bold]field antenna mast[/bold] relays the combat nets (the squad, command, intel, JTAC and MP channels) around it, so a forward position or command post can stay on the net.
-  - [bold]Building it[/bold]: it's a staged job for someone with [bold]engineering training[/bold] (level 2) or [bold]RTO/JTAC training[/bold] (level 4). Pick [bold]antenna mast parts[/bold] from the metal build menu, lay a footing on open ground, raise and weld the lattice, guy it, fit an antenna head from requisitions and tune the feed. The full step list is in [textlink="the AN/PRC-117G guide" link="AU14CommsANPRC"].
-  - [bold]Keying it[/bold]: a mast only carries the nets of sides whose [bold]COMSEC fill card[/bold] has been loaded into its open feed. An unkeyed mast carries nothing.
-  - [bold]Range[/bold]: full signal out to about 75 tiles, and a weaker signal out to about 100.
-  - [bold]It needs power.[/bold] An unpowered mast relays nothing, so build it in an area whose APC has power, with its equipment channel on. In the field, bring a PACMAN generator and APC electronics to power the area (see [textlink="Power" link="CMUGuideEngPower"]).
-  - [color=red]It can be taken over.[/color] Anyone who opens the feed can load their own side's card into it, and hostile saboteurs can splice a tap into it to listen in. Put it somewhere you can hold.
-  - If it's damaged, weld it back up with a blowtorch. If it's destroyed, everyone relying on it drops off the net.
+  当附近没有可用的通信塔时，你可以自行架设天线。一座[bold]野战天线桅杆[/bold]能为其周边的作战网（小队网、指挥网、情报网、JTAC 空地协调网与宪兵网）提供中继覆盖，确保前沿阵地或前线指挥所持续在线。
+  - [bold]建造步骤[/bold]：这是一项分阶段工序，需要人员具备[bold]工程技能[/bold]（2级）或[bold]通信兵/战术引导技能[/bold]（4级）。先在金属建造菜单中选择[bold]天线桅杆零件（antenna mast parts）[/bold]，在开阔地面铺设基座，随后升起并焊接桁架、拉设拉线加固，再安装向军需处申领的天线头并调谐馈源。完整步骤列表请参阅[textlink="AN/PRC-117G 指南" link="AU14CommsANPRC"]。
+  - [bold]注钥激活[/bold]：桅杆仅能中继已插入其开启馈电箱的[bold]通信保密注钥卡（COMSEC fill card）[/bold]所对应的阵营无线网。未注钥的桅杆不会中继传输任何信号。
+  - [bold]中继距离[/bold]：在约 75 格范围内提供满格清晰信号，在约 100 格范围内提供弱信号。
+  - [bold]必须供电[/bold]：未通电的桅杆无法中继任何信号，因此请将其建造在 APC 有电且设备供电通道开启的区域内。在野外作战时，可携带一台 PACMAN 便携式发电机和 APC 电子板为该区域供电（详见[textlink="电力指南" link="CMUGuideEngPower"]）。
+  - [color=red]小心被敌方夺取[/color]：任何人只要打开馈电箱，都能换插自身阵营的保密钥卡来夺取控制权；敌方破坏分子也可以加装分接器（Tap）进行窃听。请务必将其架设在你能守住的防御阵地内。
+  - 如果桅杆受损，可用焊枪进行焊接修补。一旦彻底损毁，所有依赖该桅杆通信的人员都将直接脱离该无线网。
 
-  ## Sensor Towers
+  ## 传感器塔台
   <Box>
-    <GuideEntityEmbed Entity="AU14SensorTower" Caption="Sensor tower"/>
+    <GuideEntityEmbed Entity="AU14SensorTower" Caption="传感器塔台"/>
   </Box>
-  A working sensor tower tracks unknown lifeforms in the area and shows them on the tactical map.
+  正常运转的传感器塔台能够追踪周边区域内的未知生命体，并将其标示在战术地图上。
 
-  To repair it, in order:
-  - Weld the plates back together with a [bold]blowtorch[/bold].
-  - Fix the wiring with [bold]wire cutters[/bold].
-  - Realign it with a [bold]wrench[/bold].
-  - Switch it on. Activation assigns the tower to the operator's IFF faction; that side receives sensor contacts on its tactical maps. A [bold]multitool[/bold] can reconfigure ownership while it is running.
+  按以下顺序依次进行维修：
+  - 使用[bold]焊枪[/bold]将外板焊接修复。
+  - 使用[bold]剪线钳[/bold]修好内部线路。
+  - 使用[bold]扳手[/bold]校准天线方位。
+  - 开机启动。开机操作会将该塔台归属至操作员所在的 IFF（敌我识别）阵营；该阵营的战术地图便能接收到传感器探测到的目标信号。在塔台运行期间，可以使用[bold]多功能工具（Multitool）[/bold]重新配置其归属阵营。
 
-  Tower markers stay visible while the sensors are offline. Switching a tower off or losing it to another faction ends your side's sensor feed.
+  如果不确定下个步骤该做什么，可以随时检视塔台。
 
-  Examine the tower if you're not sure which step comes next. A sensor tower breaks down again at random after a while, so keep checking on it.
+  当传感器离线时，战术地图上的塔台标记仍然可见；但若塔台被关闭或被其他阵营夺取，我方的传感器数据流将被彻底切断。
+
+  传感器塔台在运行一段时间后会随机再次发生故障，因此请保持定期巡检。
 </Document>

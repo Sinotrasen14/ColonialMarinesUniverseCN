@@ -1,556 +1,526 @@
 <Document>
-  # Getting On The Net
+  # 接入通信网
 
-  This guide covers the basics of using headsets and AN/PRC-117G radios.
+  本指南介绍单兵野战耳机与 AN/PRC-117G 无线电的基础入门操作。
 
-  If you are new to the communications system, start here. For detailed radio controls, see the [textlink="AN/PRC-117G Radio" link="AU14CommsANPRC"] guide.
+  初次接触通信系统的玩家，建议由此开始了解。关于电台的全部进阶与底层控制，请参阅 [textlink="AN/PRC-117G 无线电" link="AU14CommsANPRC"] 指南。
 
   <Box>
-    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="Field Headset"/>
+    <GuideEntityEmbed Entity="AU14HeadsetGovforMarineFTL" Caption="单兵野战耳机"/>
     <GuideEntityEmbed Entity="ANPRC117GRadio" Caption="AN/PRC-117G"/>
   </Box>
 
-  ## Check your equipment
+  ## 检查你的装备
 
-  Most roles begin with a [bold]field headset[/bold] in the ears slot.
+  大多数角色在生成部署时，耳朵槽位（Ears Slot）都已佩戴有[bold]单兵野战耳机[/bold]。
 
-  This is your personal radio and is sufficient for normal squad communications.
+  这是你的个人无线电设备，足以满足常规的小队战术通信。
 
-  CLF characters instead use a concealable earpiece attached to their clothing. It works similarly to a headset but does not occupy the ears slot. See [textlink="Field Headsets" link="AU14CommsHeadsets"] for details.
+  殖民地解放阵线（CLF）角色则使用附着在衣物上的隐蔽耳麦。其功能与耳机类似，但不占用耳朵槽位。详见 [textlink="单兵野战耳机" link="AU14CommsHeadsets"]。
 
-  Some roles also receive an [bold]AN/PRC-117G[/bold] manpack radio.
+  部分战术兵种还会额外配发一台 [bold]AN/PRC-117G[/bold] 背负式战术电台。
 
-  A manpack can:
+  背负式电台可以：
 
-  - transmit on loaded radio nets
-  - provide relay coverage to nearby headsets
-  - carry several radio nets at once
-  - provide access to additional communications functions
+  - 在已加载的无线网上发话通话
+  - 为附近的单兵耳机提供中继覆盖
+  - 同时承载多个无线网
+  - 提供丰富的高级战术通信功能
 
-  If you only have a headset, continue to [bold]Using your headset[/bold].
+  如果你身上只有耳机，请直接阅读[bold]使用单兵耳机[/bold]小节。
 
-  If you also have an AN/PRC, continue through the manpack sections below.
+  如果你还配有 AN/PRC 背负电台，请通读本指南的各个小节。
 
-  ## Relay coverage
+  ## 中继覆盖机制
 
-  Combat radio nets are [bold]relay-gated[/bold].
+  作战无线电网受[bold]中继门控（Relay-gated）[/bold]机制限制。
 
-  A headset cannot communicate across the map by itself. It must be within range of a relay carrying the same net.
+  单兵耳机本身无法进行全图远距离通信，必须处于承载了相同无线网的中继设备覆盖范围内方可通话。
 
-  Combat nets can be relayed by:
+  作战网可由以下设备进行中继：
 
-  - a powered AN/PRC worn by a trained operator
-  - a deployed retransmission station
-  - a command-post antenna mast
-  - a powered shipboard communications array
-  - a vehicle radio
-  - an engineering field antenna mast
-  - a CLF clandestine base station
-  - a staked CLF relay set
-  - a mast or array carrying a CLF splice
+  - 由受训操作员佩戴并开机的 AN/PRC 电台
+  - 部署展开的跨网转发站
+  - 指挥所天线桅杆
+  - 通电运转的星舰舰载通信阵列
+  - 车载战术电台
+  - 工兵搭建的野战天线桅杆
+  - CLF 隐蔽基地电台
+  - CLF 架设在地面的中继机
+  - 加装了 CLF 分接器（Splice）的天线桅杆或天线阵列
 
-  Without a suitable relay in range, the combat net cannot transmit or receive through your headset.
+  如果有效范围内没有任何合适的中继设备，耳机便无法在该作战网上发射或接收信号。
 
-  Colony and civilian channels are different.
+  殖民地频道与民用公共频道则不受此限制：
 
-  They are not relay-gated, but they are also not private.
+  它们无需依托中继，在全地图任何地方都能收发，但没有任何保密性可言，全图范围内的所有人皆可听到。
 
-  ### Relay range
+  ### 中继距离
 
-  Standard relay coverage is divided into clear and degraded ranges.
+  标准中继覆盖分为清晰范围与信号降级范围：
 
   <Table Columns="2" MinForcedColumnWidth="120">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Distance[/bold]</Box>
+      <Box Margin="4">[bold]距离[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Signal[/bold]</Box>
+      <Box Margin="4">[bold]信号质量[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">0-30 tiles</Box>
+      <Box Margin="4">0-30 格</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Clear traffic.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">30-45 tiles</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Degraded traffic. Some words may be lost.</Box>
+      <Box Margin="4">双向清晰通话。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Beyond 45 tiles</Box>
+      <Box Margin="4">30-45 格</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">No connection.</Box>
+      <Box Margin="4">信号衰减，部分词句可能会断续丢失。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">超过 45 格</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">彻底超出覆盖，无信号连接。</Box>
     </ColorBox>
   </Table>
 
-  Relay coverage normally extends one level above and below the source.
+  中继覆盖通常可垂直向上穿透一层、向下穿透一层。
 
-  Areas separated vertically, such as tunnels or lower decks, may therefore require additional relays.
+  如果目标区域与中继设备垂直相隔较远（例如深入地道或处于底层甲板），可能需要在当地额外架设中继设备。
 
-  Shipboard communications arrays can cover an entire site vertically.
+  星舰舰载通信阵列性能更强，可在垂直方向上直接覆盖整艘战舰的所有甲板层。
 
-  ## Using your headset
+  ## 使用单兵耳机
 
-  With your headset equipped, type:
+  佩戴好耳机后，在聊天输入栏键入：
 
-  [color=#a4885c]:h Radio check, over.[/color]
+  [color=#a4885c]:h 无线电测试，完毕（:h Radio check, over）。[/color]
 
-  The important part is:
+  其中的关键指令是：
 
   [color=#a4885c]:h[/color]
 
-  This sends the following message over the headset's default radio net.
+  前缀 `:h` 会将随后的信息发送到耳机的默认无线网上。
 
-  If the net has relay coverage, other listeners on that net receive the message under your callsign.
+  只要该无线网处于中继覆盖范围内，同一网内的队友即可听到，且发信人处会显示你的战术呼号。
 
-  Headsets may contain several nets.
+  一副耳机通常内置了多个无线网频道。
 
-  Examine your headset to see its available radio prefixes.
+  你可以检视（Examine）你的耳机，查看其支持的全部无线电前缀。
 
-  Common examples include:
+  常见示例如下：
 
-  - [color=#a4885c]:v[/color] - command, if the headset contains the command key
-  - [color=#a4885c]:a[/color] - Alpha, if the headset contains the Alpha key
+  - [color=#a4885c]:v[/color] - 指挥网（若耳机装有指挥网密钥）
+  - [color=#a4885c]:a[/color] - 阿尔法小队网（若耳机装有 Alpha 密钥）
 
-  A headset can only access nets for which it contains the appropriate key.
+  耳机仅能接入已预装对应密钥芯片的无线网。
 
-  Headset keys cannot normally be added in the field.
+  在野战前线环境下，通常无法为耳机更换或加装新芯片。
 
-  Radio messages use your [bold]callsign[/bold], not your character name.
+  通过无线电通联发言时，系统会自动显示你的[bold]战术呼号[/bold]，而非角色真名（近距离面对面交谈不受此影响）。
 
-  Normal face-to-face speech is unaffected.
+  ## 使用 AN/PRC-117G
 
-  ## Using an AN/PRC-117G
-
-  Operating the AN/PRC directly requires radio-operator training.
+  操作 AN/PRC 电台需要无线电操作员训练资质。
 
   <Table Columns="2" MinForcedColumnWidth="110">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Faction[/bold]</Box>
+      <Box Margin="4">[bold]阵营[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Trained roles[/bold]</Box>
+      <Box Margin="4">[bold]具备训练资质的角色[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">[bold]GOVFOR and OPFOR[/bold]</Box>
+      <Box Margin="4">[bold]政府军（GOVFOR）与OPFOR[/bold]</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Commanding Officer, Adjutant, staff officers, engineering officers, intelligence officers, synthetics, squad leaders, Fireteam Leaders, and Radio Traffic Operators.</Box>
+      <Box Margin="4">指挥官（CO）、副官（Adjutant）、参谋军官、工程军官、情报军官、合成人（Synthetic）、小队长（SL）、火力组长（FTL）以及无线电通信兵（RTO）。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">[bold]CLF[/bold]</Box>
+      <Box Margin="4">[bold]殖民地解放阵线（CLF）[/bold]</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Cell Leader and Radio Operator.</Box>
+      <Box Margin="4">小组领袖（Cell Leader）与无线电操作员（Radio Operator）。</Box>
     </ColorBox>
   </Table>
 
-  GOVFOR and OPFOR use the same radio training.
+  GOVFOR 与 OPFOR 共享相同的无线电训练技能。
 
-  A trained operator can therefore operate a captured AN/PRC from either side.
+  政府军（GOVFOR）与OPFOR共享通用的无线电训练技能。
 
-  Untrained characters cannot open the radio panel or transmit directly through the manpack.
+  因此，受训操作员完全可以直接上手操作缴获自对方阵营的 AN/PRC 电台。
 
-  They can still:
+  未受过训练的角色无法打开无线电控制面板，也无法背着电台直接发话。
 
-  - use another operator's handset
-  - gain radio training by reading a [bold]field radio operator's pamphlet[/bold]
+  但他们依然可以：
 
-  ### Opening the radio
+  - 拿起并借用受训操作员电台上的手持话筒进行发话
+  - 通过阅读[bold]野战无线电操作员手册（Field radio operator's pamphlet）[/bold]来学习并获取该操作技能
 
-  To operate the manpack:
+  ### 打开电台面板
 
-  - wear the AN/PRC in your [bold]back slot[/bold]
-  - alt-click the radio, or open its verb menu
-  - select [bold]Open Radio Panel[/bold]
+  若要配置并操作背负电台：
 
-  A radio in your hands, inside storage, or on the ground does not function as a worn manpack.
+  - 必须将 AN/PRC 装备在你的[bold]后背槽位（Back slot）[/bold]
+  - 按住 Alt 点击电台，或打开其右键交互菜单
+  - 选择[bold]打开无线电面板（Open Radio Panel）[/bold]
 
-  The first time the panel is opened, a short briefing appears.
+  拿在手中、装在收纳包里或扔在地面的电台，无法作为佩戴式电台正常工作。
 
-  [bold]? HELP[/bold] opens the briefing again later.
+  首次打开面板时会弹出一份简要的操作说明。
 
-  The status banner below the radio display reports problems preventing normal operation.
+  后续随时可以点击面板上方的 [bold]? HELP[/bold] 再次查阅。
 
-  A green banner indicates that the radio is ready.
+  电台屏幕下方的状态横幅会主动指出阻碍当前正常通信的首要问题；当横幅显示为绿色时，即代表电台已就绪可随时使用。
 
-  ## Load your nets
+  ## 加载无线电网
 
-  A worn AN/PRC relays every friendly combat net loaded into its memory.
+  只要背在身上并处于开机状态，AN/PRC 就会将其存储槽中加载的所有友军作战网自动广播中继出去。
 
-  Loaded nets therefore affect both the operator and nearby headset users.
+  因此，电台加载的电网不仅能供操作员本人使用，周边的单兵耳机使用者也能同时享受中继覆盖。
 
-  For normal setup, press:
+  在绝大多数常规战况下，只需点击：
 
-  [bold]LOAD STANDARD NETS[/bold]
+  [bold]LOAD STANDARD NETS（加载标准电网）[/bold]
 
-  This:
+  该操作会自动完成标准一键配置：
 
-  - switches the radio on
-  - loads your squad net
-  - loads your faction's command net
-  - selects your squad net as the working memory
+  - 打开电台电源
+  - 自动加载你所属的小队网
+  - 自动加载所属阵营的指挥网
+  - 将小队网自动选定为当前工作发射槽
 
-  Existing manually configured memories are not overwritten.
+  你手动配置过的槽位不会被覆盖，电台原有的通信波形、加密状态及发射输出功率也均会予以保留。
 
-  The command also does not reset the radio's waveform, encryption state, or output settings.
+  ### 手动加载电网
 
-  ### Loading a net manually
+  在 [bold]NETS[/bold] 选项卡中：
 
-  On the [bold]NETS[/bold] tab:
+  - 点击 [bold]+ ADD MEMORY（添加存储槽）[/bold]
+  - 为该槽位输入一个简短标签名称
+  - 点击 [bold]EDIT（编辑）[/bold]
+  - 选择要接入的无线网
+  - 若希望后续在该网中发言，点击 [bold]USE（使用）[/bold]
 
-  - select [bold]+ ADD MEMORY[/bold]
-  - give the memory a short label
-  - select [bold]EDIT[/bold]
-  - choose a net
-  - select [bold]USE[/bold] if you want to transmit through it
+  操作员所属的小队网会标注为 [bold][YOUR SQUAD][/bold]。
 
-  Your squad net is marked [bold][YOUR SQUAD][/bold].
+  当前选定用于发射的工作存储槽会标有 [bold]ON AIR（当前发射）[/bold]。
 
-  The working memory is marked [bold]ON AIR[/bold].
+  仅将无线网加载进存储槽中并不代表会自动在该网中发言。
 
-  Loading a net does not automatically make it the working memory.
+  快捷键 [color=#a4885c]:r[/color] 发送的内容始终只会定向传输至标记为 [bold]ON AIR[/bold] 的槽位。
 
-  [color=#a4885c]:r[/color] always transmits through the memory marked [bold]ON AIR[/bold].
+  存储槽随时可以重命名、清空内容或彻底删除。
 
-  Memories can also be renamed, emptied, or deleted.
+  直调频率需要通过[textlink="专家操作面板" link="AU14CommsANPRCExpert"]进行设置。
 
-  Direct frequencies are configured through the [textlink="expert faceplate" link="AU14CommsANPRCExpert"].
+  ## 注入 COMSEC 保密密钥
 
-  ## Load your COMSEC fill
+  阵营正规作战的绝大多数无线电通联均处于加密保护之下。
 
-  Most faction radio traffic is encrypted.
+  AN/PRC 必须通过实体[bold]通信保密注钥卡（COMSEC fill card）[/bold]来获取阵营的加密密钥。
 
-  The AN/PRC receives its faction encryption key from a physical [bold]COMSEC fill card[/bold].
+  注钥流程如下：
 
-  To load a fill:
+  - 找到配发给你或所属阵营的注钥卡
+  - 手持注钥卡直接点击电台进行注钥
+  - 打开 [bold]SECURITY[/bold] 选项卡
+  - 确认电台状态已显示为 [bold]ENCRYPTED（已加密）[/bold]
 
-  - find your issued fill card
-  - use it on the radio
-  - open the [bold]SECURITY[/bold] tab
-  - confirm that the radio reads [bold]ENCRYPTED[/bold]
+  即使没有安装有效注钥卡，电台依然能够发射；但在缺少正确密钥的情况下向保密网发话，会强制退化为[bold]明文（Clear）[/bold]形式传输。
 
-  The radio can still transmit without a valid fill.
+  明文传输具有极高的战术风险：
 
-  Traffic sent over a secured faction net without the correct fill is transmitted in the clear.
+  - 任何调至该频道的敌我接收机均能直接窃听通话内容
+  - 明文发射会产生强烈的无线电特征，极易被敌方无线电测向定位
 
-  This means:
+  若电台界面弹出加密警报，请务必立即在 SECURITY 页面排查。
 
-  - compatible receivers can read the message
-  - the transmission produces a direction-finding signature
+  ## 通过背负电台发射
 
-  Check the SECURITY tab if the radio warns about its encryption state.
+  选定工作存储槽后，在聊天输入栏键入：
 
-  ## Transmitting through the manpack
+  [color=#a4885c]:r HAVOC 6，这里是 ALPHA ROMEO，无线电测试，完毕（:r HAVOC 6, this is ALPHA ROMEO, radio check, over）。[/color]
 
-  Once a working memory is selected, type:
+  前缀 [color=#a4885c]:r[/color] 会将信息通过标记为 [bold]ON AIR[/bold] 的存储槽发射出去。
 
-  [color=#a4885c]:r HAVOC 6, this is ALPHA ROMEO, radio check, over.[/color]
+  电台屏幕上的 [bold]TALK[/bold] 行也会直观标明当前的发射网。
 
-  [color=#a4885c]:r[/color] transmits through whichever memory is marked [bold]ON AIR[/bold].
+  如需改用其他电网发射，只需在发言前点击对应存储槽的 [bold]USE[/bold] 即可。
 
-  The [bold]TALK[/bold] line on the radio display also shows the active transmission net.
+  佩戴电台发话时，通联记录通常会显示[bold]佩戴者的战术呼号[/bold]。
 
-  Select another memory with [bold]USE[/bold] before transmitting if you need to change nets.
+  向导面板中呼号模式默认显示为 [bold]AUTO[/bold]。
 
-  A worn radio normally uses the [bold]wearer's callsign[/bold].
+  若角色尚未分配战术呼号，电台则会将发信人标示为 [bold]UNKNOWN STATION（未知电台）[/bold]。
 
-  The guided panel displays this as [bold]AUTO[/bold].
+  ## 无线电测试功能
 
-  If no callsign is assigned, the radio identifies the operator as [bold]UNKNOWN STATION[/bold].
+  AN/PRC 内部集成了快捷的 [bold]RADIO CHECK（无线电测试）[/bold]功能。
 
-  ## Radio check
+  点击后，电台会在当前工作网上自动发射通报：
 
-  The AN/PRC includes a built-in [bold]RADIO CHECK[/bold] function.
+  [bold]RADIO CHECK, HOW COPY, OVER（无线电测试，抄收如何，完毕）[/bold]
 
-  It transmits:
+  随后，电台会在本地聊天栏向你私密反馈：
 
-  [bold]RADIO CHECK, HOW COPY, OVER[/bold]
+  - 附近有哪些设备成功接收到了测试信号（包含单兵耳机与隐蔽耳麦）
+  - 各设备的信号质量是清晰还是衰减降级
 
-  on the current working net.
+  因此，使用 RADIO CHECK 是测试当前网络中继覆盖是否畅通最快的方式，无需等待其他队友手动打字回复。
 
-  Afterward, the radio privately reports:
+  若在敌方干扰场范围内发起测试，系统反馈还会附带指向最强干扰源的大致方位角。
 
-  - which stations received the transmission
-  - whether each station received it clearly or degraded
+  ## 手持话筒
 
-  This includes ordinary headset and earpiece users.
+  手持话筒允许没有无线电训练资质的人员也能借用 AN/PRC 发话。
 
-  RADIO CHECK can therefore confirm whether the current net has working coverage without requiring another player to answer manually.
+  它还可以让用户临时接入自己耳机不支持的电网。
 
-  If used inside an enemy jammer field, the report also provides an approximate bearing toward the strongest jammer.
+  拿起话筒的方法：
 
-  ## Handset
+  - 站在距离电台或其佩戴者约两格半的范围内
+  - 保持至少一只手处于空闲状态
+  - 按住 Alt 点击佩戴者或地面架设的电台
+  - 选择[bold]拿起话筒（Take Handset）[/bold]
 
-  The handset allows someone to use an AN/PRC without radio-operator training.
+  [bold]拿起话筒后，你直接在本地公屏打字或语音说话，内容就会自动通过该电台发射出去！[/bold]
 
-  It can also provide access to a net that is not available through the user's own headset.
+  在此期间无需输入任何无线电前缀。但如果使用低语（Whisper），则仍作为本地耳语交流，不会被电台发射。
 
-  To take the handset:
+  手持话筒特性：
 
-  - stand within roughly two and a half tiles of the radio or its wearer
-  - have a free hand
-  - alt-click the wearer or deployed radio
-  - select [bold]Take Handset[/bold]
+  - 始终通过电台当前标记为 ON AIR 的工作槽位发射
+  - 通联中显示持筒者本人的战术呼号
+  - 同一时间只能由一人手持使用
+  - 若持筒者走出连接线范围，话筒会自动脱落收回
 
-  [bold]Normal speech while holding the handset is transmitted through the radio.[/bold]
+  点击[bold]挂断话筒（Hang Up Handset）[/bold]可主动归还。
 
-  A radio prefix is not required.
+  如果你自己身上背着 AN/PRC 电台，同时手中又拿着另一台电台的话筒，你的无线电发射会优先使用你自己的背负电台。
 
-  Whispering remains local and does not transmit.
+  ## CLF 游击队通信
 
-  The handset:
+  殖民地解放阵线（CLF）并没有固定永久的基地通信阵列。
 
-  - transmits through the radio's ON AIR memory
-  - uses the holder's callsign
-  - can only be held by one person at a time
-  - automatically returns if the holder moves beyond the cord's range
+  他们的作战网覆盖全部依赖随身携带的可部署中继设备，或通过搭线分接敌方的通信设施来实现。
 
-  Select [bold]Hang Up Handset[/bold] to return it manually.
+  一个 CLF 小组在开局时通常配备：
 
-  If you are wearing your own AN/PRC while holding another radio's handset, your own manpack takes priority.
+  - 一台 AN/PRC 背负电台
+  - 一座隐蔽基地电台
+  - 一套网络分接套件（Net splice kit）
+  - 两台中继机（Relay sets）
 
-  ## CLF communications
+  这些装备通常由小组领袖（Cell Leader）或无线电操作员（Radio Operator）随身携带。
 
-  The CLF do not have a permanent communications array.
+  初始配发的背负电台已预调好了抵抗军战备小队网（Cell net）与指挥网（Cell command）。
 
-  Their combat-net coverage comes from deployable equipment or from hostile communications infrastructure that has been tapped.
-
-  A CLF cell can begin with:
-
-  - an AN/PRC manpack
-  - a clandestine base station
-  - a net splice kit
-  - two relay sets
-
-  These are issued through the Cell Leader or Radio Operator, depending on which roles are present.
-
-  The issued manpack begins tuned to both the cell net and cell command.
-
-  Additional communications equipment can be constructed at a sapper's workbench or purchased through Special Equipment.
+  额外的通信设备可在工兵工作台制作，或通过特种装备申领采购。
 
   <Box>
-    <GuideEntityEmbed Entity="AU14CLFNetSpliceKit" Caption="Splice Kit"/>
-    <GuideEntityEmbed Entity="AU14CommsMastField" Caption="Field Mast"/>
-    <GuideEntityEmbed Entity="AU14CLFBaseStation" Caption="Base Station"/>
-    <GuideEntityEmbed Entity="AU14CLFClandestineRelay" Caption="Relay Set"/>
+    <GuideEntityEmbed Entity="AU14CLFNetSpliceKit" Caption="分接套件"/>
+    <GuideEntityEmbed Entity="AU14CommsMastField" Caption="野战天线桅杆"/>
+    <GuideEntityEmbed Entity="AU14CLFBaseStation" Caption="隐蔽基地电台"/>
+    <GuideEntityEmbed Entity="AU14CLFClandestineRelay" Caption="中继机"/>
   </Box>
 
-  ### CLF relay equipment
+  ### CLF 中继设备
 
-  A [bold]field antenna mast[/bold] provides:
+  [bold]野战天线桅杆[/bold]提供：
 
-  - 75 tiles of clear coverage
-  - degraded coverage out to 100 tiles
+  - 约 75 格清晰覆盖范围
+  - 弱信号覆盖可延伸至约 100 格
 
-  A field mast:
+  野战天线桅杆特性：
 
-  - must be constructed outdoors
-  - requires engineering training
-  - requires power
-  - only carries faction nets whose COMSEC key has been loaded into it
-  - can be damaged, re-keyed, or tapped by either side
+  - 必须在露天开阔地搭建
+  - 建造需要工程技能
+  - 正常运转必须供电
+  - 仅中继已插入其馈电箱的 COMSEC 注钥卡所属阵营的无线网
+  - 敌我双方均可对其进行破坏、换插注钥卡或加装分接窃听
 
-  Cell Leaders, Radio Operators, Guerillas, and Machine Gunners can construct field masts.
+  小组领袖、无线电操作员、游击队员与机枪手均具备建造野战天线桅杆的能力。
 
-  See [textlink="the AN/PRC-117G guide" link="AU14CommsANPRC"] for mast construction.
+  完整建造流程请参阅 [textlink="AN/PRC-117G 无线电" link="AU14CommsANPRC"]。
 
-  A [bold]clandestine base station[/bold] provides:
+  [bold]隐蔽基地电台[/bold]提供：
 
-  - 55 tiles of clear coverage
-  - degraded coverage out to 80 tiles
-  - a usable handset
+  - 约 55 格清晰覆盖范围
+  - 弱信号覆盖可延伸至约 80 格
+  - 自带可用手持话筒
 
-  It is too heavy to conceal on a person.
+  由于体积和重量较大，它无法随身隐蔽携带。
 
-  A [bold]relay set[/bold] provides:
+  [bold]中继机[/bold]提供：
 
-  - 35 tiles of clear coverage
-  - degraded coverage out to 50 tiles
+  - 约 35 格清晰覆盖范围
+  - 弱信号覆盖可延伸至约 50 格
 
-  Relay sets have no local controls and can be useful inside buildings, tunnels, and other areas unsuitable for field masts.
+  中继机无需复杂的本地设置，体积小巧，非常适合隐蔽部署在建筑物内部、地道深处或不便竖立天线桅杆的狭小空间。
 
-  Only the Cell Leader and Radio Operator can stake down a relay set or base station.
+  只有小组领袖和无线电操作员具备部署中继机或基地电台的能力。
 
-  ### Keying a field mast
+  ### 为野战桅杆注钥
 
-  Field antenna masts carry only factions whose COMSEC keys are loaded into the mast.
+  野战天线桅杆仅中继已将其 COMSEC 密钥写入其中的阵营无线网。
 
-  To add the CLF key to an existing field mast:
+  将 CLF 密钥写入现有野战桅杆的方法：
 
-  - open the feed using a screwdriver and wirecutters
-  - use a CLF fill card on the open feed
-  - close the feed with a screwdriver
-  - seal it with a welder
+  - 使用螺丝刀和剪线钳打开馈电箱
+  - 对开启的馈电箱使用 CLF 注钥卡
+  - 用螺丝刀重新关上馈电箱
+  - 用焊枪将其焊接密封牢固
 
-  The mast goes off the air while its feed is open.
+  馈电箱开启期间，桅杆会处于停机离线状态。
 
-  This requires engineering training.
+  此项注钥操作需要工程技能资质。
 
-  Using a multitool on an open feed removes all stored keys.
+  注意：对开启的馈电箱使用多功能工具（Multitool），会清除其中存储的所有阵营密钥；而直接写入 CLF 密钥则不会影响已有的其他阵营密钥。
 
-  Adding a CLF key does not remove any existing faction keys.
+  ## CLF 网络分接窃听
 
-  ## CLF net splicing
+  敌方的固定通信桅杆和基地通信阵列可以使用[bold]网络分接套件（Net splice kit）[/bold]进行搭线窃听。
 
-  Fixed communications masts and site arrays can be tapped with a [bold]net splice kit[/bold].
+  成功分接后，CLF 作战网将无缝叠加到该设施原有的中继覆盖中，且不会影响其原本承载的常规通信。
 
-  A successful splice adds CLF combat nets to the structure's existing relay coverage.
+  - 指挥所天线桅杆：提供约 75 格中继覆盖
+  - 基地通信阵列：提供约 200 格广域中继覆盖
 
-  It does not remove or disrupt the nets already carried by the structure.
+  分接条件：
 
-  A command-post mast provides approximately 75 tiles of coverage.
+  - 携带网络分接套件
+  - 担任[bold]无线电操作员（Radio Operator）[/bold]角色
 
-  A site array provides approximately 200 tiles.
+  手持套件对兼容的桅杆或天线阵列使用，即可打开分接破译界面。
 
-  Splicing requires:
+  ### 搜索主干载波
 
-  - a net splice kit
-  - the [bold]Radio Operator[/bold] role
+  在分接操作界面中，整个频带上隐藏着若干个主干通信载波，你需要逐步排查并锁定它们：
 
-  Use the kit on a compatible mast or array to open the splice interface.
+  - [bold]PROBE（探测）[/bold]：探测光标当前所在的频带位置。探测读数越高，说明距离隐藏载波越近；若读数为 0，则代表前后 30 个单位距离内均无载波。
+  - [bold]LOCK（锁定）[/bold]：尝试捕获并锁定载波。只有当探测位置与载波实际位置相差在 3 个单位以内时，锁定方能成功。
 
-  ### Finding trunk carriers
+  锁定失败的代价：
 
-  The splice interface hides several trunk carriers across the band.
+  - 额外扣除 2 次探测机会
+  - 大幅累积警报暴露进度条
 
-  Use:
+  注意：探测总次数在整个破解过程中全局共享。若探测次数耗尽或警报暴露条满格，本次分接即宣告失败。
 
-  - [bold]PROBE[/bold] - check a position in the band
-  - [bold]LOCK[/bold] - attempt to capture a carrier
+  分接失败的后果：
 
-  Stronger probe results indicate that a carrier is closer.
+  - 消耗并损毁分接套件
+  - 使接线端子进入长达 90 秒的故障锁死状态，期间无法再次尝试分接
 
-  A result of zero means there is no carrier within thirty positions of the selected point.
+  在分接破解和故障锁死期间，接线箱均会产生明显的电火花放电特征，极易被路过的敌军察觉。
 
-  A LOCK succeeds if the selected position is within three positions of the carrier.
+  ### 保护 CLF 中继设备
 
-  Failed locks:
+  CLF 的通信设备在物理结构上十分脆弱。
 
-  - consume two probes
-  - significantly increase the detection meter
+  加装完成的[bold]分接器（Splice）[/bold]在桅杆上肉眼清晰可见。
 
-  Probe uses are shared across the entire attempt.
+  站在桅杆旁的人可以：
 
-  If all probes are consumed or the detection meter fills, the splice fails.
+  - 开枪将其直接击毁
+  - 走上前手动将其拆除
 
-  Failure:
+  手动拆除分接器大约需要 8 秒，拆除后会掉落其附带的注钥模块。
 
-  - consumes the splice kit
-  - places the junction into a 90-second fault state
-  - prevents another splice attempt during that period
+  此外，如果强行撬开已分接[bold]野战天线桅杆[/bold]的馈电箱，也会震落分接器，导致注钥模块掉落在桅杆脚下。
 
-  The junction produces visible sparks during the splice attempt and fault state.
+  缴获该模块的一方将能全面破译收听 CLF 的全部战术通讯，直到 CLF 指挥层下达全军重加密（Recrypto）为止！
 
-  ### Protecting CLF relay equipment
+  部署在地面上的[bold]中继机[/bold]同样可以被任何人打包拆走，打包操作耗时约 3 秒。
 
-  CLF communications equipment is physically vulnerable.
+  ## 常见故障排查
 
-  A completed [bold]splice[/bold] remains visible on the mast.
-
-  Someone standing beside it can:
-
-  - shoot it
-  - remove it
-
-  Removing a splice takes approximately eight seconds and returns its keying module.
-
-  Opening the feed of a spliced [bold]field antenna mast[/bold] also knocks the tap loose, and its keying module drops at the foot of the mast.
-
-  The recovered module can read CLF traffic until CLF leadership performs a recrypto.
-
-  A deployed [bold]relay set[/bold] can also be packed up by anyone.
-
-  Packing it takes approximately three seconds.
-
-  ## Troubleshooting
-
-  If communications are not working, check the following common problems.
+  若通信出现异常，请对照排查以下常见问题：
 
   <Table Columns="2" MinForcedColumnWidth="120">
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Symptom[/bold]</Box>
+      <Box Margin="4">[bold]故障现象[/bold]</Box>
     </ColorBox>
     <ColorBox Color="#263238">
-      <Box Margin="4">[bold]Check[/bold]</Box>
+      <Box Margin="4">[bold]排查与解决方法[/bold]</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">Nobody answers on a combat net</Box>
+      <Box Margin="4">作战网上无人应答</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Move closer to a relay carrying that net.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">[color=#a4885c]:r[/color] uses the wrong net</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Check which memory is marked ON AIR and select the correct memory with USE.</Box>
+      <Box Margin="4">可能已超出覆盖范围。请靠近正在中继该电网的中继设备。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">The radio panel will not open</Box>
+      <Box Margin="4">快捷键 [color=#a4885c]:r[/color] 发射到了错误的电网</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Check that the AN/PRC is worn in your back slot and that you have radio-operator training.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Traffic is broken or full of static</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">You may be near the edge of relay coverage or inside a jammer field.</Box>
+      <Box Margin="4">查看当前哪一个存储槽标有 ON AIR，使用 USE 选中目标存储槽。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">AN/PRC traffic is pure static</Box>
+      <Box Margin="4">无法打开无线电控制面板</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">The transmitting and receiving radios may not have matching COMSEC keys.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Your headset cannot access a net</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Examine the headset and check its installed keys. Use a handset if you need temporary access to another net.</Box>
+      <Box Margin="4">确认 AN/PRC 已装备在后背槽位，且角色具备无线电操作员训练技能。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">You transmit as UNKNOWN STATION</Box>
+      <Box Margin="4">语音断断续续或充满杂音</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">You do not currently have an assigned callsign.</Box>
-    </ColorBox>
-
-    <ColorBox>
-      <Box Margin="4">Local speech is being transmitted</Box>
-    </ColorBox>
-    <ColorBox>
-      <Box Margin="4">Check whether you are holding a radio handset. Hang it up or whisper for local speech.</Box>
+      <Box Margin="4">你可能正处于中继覆盖的边缘衰减区，或处于敌方干扰场范围内。</Box>
     </ColorBox>
 
     <ColorBox>
-      <Box Margin="4">The AN/PRC stops operating</Box>
+      <Box Margin="4">接收到的 AN/PRC 通讯全是一片杂音</Box>
     </ColorBox>
     <ColorBox>
-      <Box Margin="4">Check its power cell. Searching and high output power increase battery consumption.</Box>
+      <Box Margin="4">发射方与接收方的电台可能未装入匹配一致的 COMSEC 保密注钥卡。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">耳机无法访问某个电网</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">检查耳机内置的密钥芯片。如果需要临时通联，可向他人借用手持话筒。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">通话显示为 UNKNOWN STATION（未知电台）</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">你当前尚未被系统分配战术呼号。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">本地说话内容被直接广播发射出去了</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">检查你手中是否正拿着手持话筒。挂断话筒，或者切换为低语（Whisper）说话。</Box>
+    </ColorBox>
+
+    <ColorBox>
+      <Box Margin="4">AN/PRC 电台停止工作</Box>
+    </ColorBox>
+    <ColorBox>
+      <Box Margin="4">检查电台的供电电池（Power cell）。开启全频搜索或使用高功率发射会大幅加剧耗电。</Box>
     </ColorBox>
   </Table>
 
-  ## Related guides
+  ## 相关指南
 
-  - [textlink="AN/PRC-117G Radio" link="AU14CommsANPRC"] - manpack operation, relay coverage, encryption, waveforms, searching, and interception
-  - [textlink="Field Headsets" link="AU14CommsHeadsets"] - headset channels, keys, tuning, and direct frequencies
-  - [textlink="Voice Procedure" link="AU14CommsVoiceProcedure"] - standard radio terminology and message structure
-  - [textlink="Comms Quick Reference" link="AU14CommsQuickRef"] - important communications values and controls
+  - [textlink="AN/PRC-117G 无线电" link="AU14CommsANPRC"] - 背负式电台操作、中继覆盖、加密保密、波形体制、频道搜索与截获通联
+  - [textlink="单兵野战耳机" link="AU14CommsHeadsets"] - 耳机频道、密钥芯片、调谐与直调频率
+  - [textlink="语音通信规程" link="AU14CommsVoiceProcedure"] - 标准无线电用语与通联报文结构规范
+  - [textlink="通信速查表" link="AU14CommsQuickRef"] - 关键通信参数与控制速查
 </Document>

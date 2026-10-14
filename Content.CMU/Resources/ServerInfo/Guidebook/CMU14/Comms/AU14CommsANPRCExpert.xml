@@ -1,699 +1,697 @@
 <Document>
-  # Expert faceplate
+  # AN/PRC-117G：专家操作面板
 
-  Press [bold]VIEW[/bold] at the top of the radio panel until it reads [bold]117G PANEL[/bold].
+  点击无线电控制面板顶部的 [bold]VIEW（视图）[/bold]，直到切换为 [bold]117G PANEL[/bold]。
 
-  The expert faceplate controls the same radio as the [textlink="guided panel" link="AU14CommsANPRCGuided"], but exposes settings and functions that the guided interface normally leaves on AUTO.
+  专家操作面板所控制的底层电台系统与[textlink="向导面板" link="AU14CommsANPRCGuided"]完全相同，但开放了向导界面中通常保持在 AUTO（自动）状态下的所有底层参数与进阶功能。
 
-  Most functions are controlled through the display, keypad, soft keys, and function switch.
+  大多数功能通过显示屏、数字键盘、软键（Soft keys）和功能旋钮开关进行操作。
 
-  ## Working the display
+  ## 操作显示屏
 
-  Each screen contains a list of settings, actions, and information.
+  每个屏幕包含设置项、操作命令及系统信息列表。
 
-  Move the cursor to a usable line, then activate it.
+  将光标移动到可用行，然后激活该项。
 
   <Table Columns="2" MinForcedColumnWidth="90">
-    <ColorBox Color="#263238"><Box Margin="4">[bold]Control[/bold]</Box></ColorBox>
-    <ColorBox Color="#263238"><Box Margin="4">[bold]Function[/bold]</Box></ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]按键控制[/bold]</Box></ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]功能说明[/bold]</Box></ColorBox>
 
     <ColorBox><Box Margin="4">[bold]+ PRE / - PRE[/bold]</Box></ColorBox>
-    <ColorBox><Box Margin="4">Move the cursor up or down.</Box></ColorBox>
+    <ColorBox><Box Margin="4">将光标向上或向下移动。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">[bold]ENT[/bold]</Box></ColorBox>
-    <ColorBox><Box Margin="4">Use the selected setting, action, or page.</Box></ColorBox>
+    <ColorBox><Box Margin="4">确认选用选中的设置、执行操作或进入下级页面。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">[bold]CLR[/bold]</Box></ColorBox>
-    <ColorBox><Box Margin="4">Return to the previous screen. While typing, delete one character.</Box></ColorBox>
+    <ColorBox><Box Margin="4">返回上一级屏幕。在输入文本时为退格删除一个字符。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">[bold]+ PG / - PG[/bold]</Box></ColorBox>
-    <ColorBox><Box Margin="4">Move between main pages.</Box></ColorBox>
+    <ColorBox><Box Margin="4">在主功能页面之间翻页切换。</Box></ColorBox>
 
-    <ColorBox><Box Margin="4">Soft keys</Box></ColorBox>
-    <ColorBox><Box Margin="4">Open PGM, SEC, SRCH, LOG, OPT, or the ? key card.</Box></ColorBox>
+    <ColorBox><Box Margin="4">软键（Soft keys）</Box></ColorBox>
+    <ColorBox><Box Margin="4">快捷打开 PGM、SEC、SRCH、LOG、OPT 或“?”键位提示卡。</Box></ColorBox>
   </Table>
 
-  Bright lines can be selected.
+  高亮亮线代表可选中的项目。
 
-  Dim lines provide information and are skipped by the cursor.
+  暗淡行仅提供信息，光标会自动跳过。
 
-  A lit setting is currently enabled.
+  亮起的设置表示当前已启用生效。
 
-  ### Confirming destructive actions
+  ### 确认破坏性/高危操作
 
-  Some actions require confirmation, including:
+  部分敏感操作需要二次确认，包括：
 
-  - ZEROIZE
-  - DESTROY
-  - RECRYPTO
-  - SEND KEY OTA
+  - ZEROIZE（密钥清零弹出）
+  - DESTROY（密钥销毁）
+  - RECRYPTO（全军重加密）
+  - SEND KEY OTA（空中无线分发密钥）
 
-  Press [bold]ENT[/bold] once to arm the action, then press it again to confirm.
+  按一次 [bold]ENT[/bold] 进入预备（Arm）状态，再次按下 [bold]ENT[/bold] 方可正式确认执行。
 
-  Armed actions cancel automatically after a short delay.
+  若未及时确认，预备状态会在短暂延迟后自动超时取消。
 
-  ## Keypad
+  ## 数字键盘
 
-  When the radio is not accepting text or numbers, the number keys act as shortcuts.
+  当电台未处于文本或数字输入模式时，数字键充当快捷指令键。
 
   <Table Columns="2" MinForcedColumnWidth="90">
-    <ColorBox Color="#263238"><Box Margin="4">[bold]Key[/bold]</Box></ColorBox>
-    <ColorBox Color="#263238"><Box Margin="4">[bold]Function[/bold]</Box></ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]按键[/bold]</Box></ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]功能说明[/bold]</Box></ColorBox>
 
     <ColorBox><Box Margin="4">1 CALL</Box></ColorBox>
-    <ColorBox><Box Margin="4">Send a radio check on the working net.</Box></ColorBox>
+    <ColorBox><Box Margin="4">在当前工作网上发送无线电测试（Radio check）。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">2 LT</Box></ColorBox>
-    <ColorBox><Box Margin="4">Cycle the display backlight.</Box></ColorBox>
+    <ColorBox><Box Margin="4">循环切换屏幕背光亮度。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">3 MODE</Box></ColorBox>
-    <ColorBox><Box Margin="4">Cycle the waveform.</Box></ColorBox>
+    <ColorBox><Box Margin="4">循环切换通信波形（FH / SC / CT / PT）。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">4 SQL</Box></ColorBox>
-    <ColorBox><Box Margin="4">Cycle squelch.</Box></ColorBox>
+    <ColorBox><Box Margin="4">循环切换静噪等级（Squelch）。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">5 ZERO</Box></ColorBox>
-    <ColorBox><Box Margin="4">Open SEC with ZEROIZE armed.</Box></ColorBox>
+    <ColorBox><Box Margin="4">打开 SEC 页面并直接进入预备 ZEROIZE 状态。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">6 PWR</Box></ColorBox>
-    <ColorBox><Box Margin="4">Switch the radio on or off.</Box></ColorBox>
+    <ColorBox><Box Margin="4">打开或关闭电台电源。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">7</Box></ColorBox>
-    <ColorBox><Box Margin="4">Open OPT.</Box></ColorBox>
+    <ColorBox><Box Margin="4">快捷打开 OPT（配置选项）页面。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">8</Box></ColorBox>
-    <ColorBox><Box Margin="4">Open PGM.</Box></ColorBox>
+    <ColorBox><Box Margin="4">快捷打开 PGM（频道编程）页面。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">9</Box></ColorBox>
-    <ColorBox><Box Margin="4">Open SEC.</Box></ColorBox>
+    <ColorBox><Box Margin="4">快捷打开 SEC（保密安全）页面。</Box></ColorBox>
 
     <ColorBox><Box Margin="4">0</Box></ColorBox>
-    <ColorBox><Box Margin="4">Open LOG.</Box></ColorBox>
+    <ColorBox><Box Margin="4">快捷打开 LOG（通联日志）页面。</Box></ColorBox>
   </Table>
 
-  ### Entering values
+  ### 输入数值
 
-  Some settings require direct input, including:
+  部分设置需要手动直接输入，包括：
 
-  - frequencies
-  - memory labels
-  - station callsigns
-  - trial keys
+  - 频率
+  - 存储槽自定义标签
+  - 电台固定呼号
+  - 密码破译试探密钥
 
-  While entering a value:
+  输入数值时：
 
-  - [bold]ENT[/bold] confirms the input
-  - [bold]CLR[/bold] deletes the previous character
-  - pressing [bold]CLR[/bold] on an empty field cancels the input
+  - [bold]ENT[/bold] 确认提交输入
+  - [bold]CLR[/bold] 删除前一个字符
+  - 在空白输入框上按 [bold]CLR[/bold] 会取消输入
 
-  [bold]Frequencies[/bold] use the [bold]___.___[/bold] format.
+  [bold]频率输入[/bold]采用 [bold]___.___[/bold] 格式。
 
-  Enter the megahertz digits first. Untouched digits are treated as zero. At least three digits must be entered.
+  先输入兆赫（MHz）整数位。未输入的位数默认视为 0。至少必须输入三位数字。
 
-  [bold]Text[/bold] uses the letters assigned to each number key like a telephone keypad.
+  [bold]文本输入[/bold]使用类似于传统手机九宫格键盘的字母映射。
 
-  Press a key repeatedly to cycle through its letters.
+  连续多次按下同一个数字键即可轮询其包含的字母。
 
-  [bold]0[/bold] enters a space, then a dash.
+  按 [bold]0[/bold] 输入空格，再次按下输入破折号（-）。
 
-  ## Function switch
+  ## 功能旋钮开关
 
-  The rotary switch controls the radio's basic operating state.
+  旋转开关用于控制电台的基础运行状态。
 
-  - [bold]OFF[/bold] - switches the radio off
-  - [bold]CT[/bold] - switches the radio on securely; selecting CT again cycles FH, SC, and CT
-  - [bold]PT[/bold] - switches to unencrypted plain-text transmission
-  - [bold]LD[/bold] - opens the fill page
-  - [bold]Z[/bold] - arms ZEROIZE
+  - [bold]OFF[/bold] - 关闭电台电源
+  - [bold]CT[/bold] - 以保密加密模式开机；再次选定 CT 可在 FH（跳频）、SC（单信道）与 CT（密话）之间轮询
+  - [bold]PT[/bold] - 切换为未加密的明文（Plain Text）传输模式
+  - [bold]LD[/bold] - 打开密钥加载（Load）页面
+  - [bold]Z[/bold] - 预备执行 ZEROIZE 清零
 
-  [bold]LD[/bold] and [bold]Z[/bold] are sprung positions and return to the previous switch position after use.
+  [bold]LD[/bold] 与 [bold]Z[/bold] 为弹簧自复位档位，拨动使用后会自动弹回原先的开关档位。
 
-  They do not change the active waveform.
+  它们不会改变当前的通信波形。
 
-  ## Display readout
+  ## 屏幕顶端状态栏
 
-  The top of the display remains visible across all faceplate pages.
+  显示屏顶部的状态行在所有操作页面中保持常显。
 
-  It shows:
+  它显示：
 
-  - [bold]RX / TX[/bold] - whether the radio is receiving or transmitting
-  - [bold]SEC / UNSEC / CLEAR[/bold] - current encryption state
-  - [bold]SIG[/bold] - working-net link quality
-  - [bold]--DIR--[/bold] - shown instead of SIG when using a direct frequency
-  - [bold]BAT[/bold] - remaining battery in four bars
-  - current memory
-  - frequency
-  - net name
-  - operating band
-  - waveform
-  - squelch
-  - output power
-  - active feature flags
-  - [bold]STN[/bold] - transmitting callsign
-  - [bold]BIT[/bold] - self-test status
+  - [bold]RX / TX[/bold] - 电台当前处于接收（RX）还是发射（TX）状态
+  - [bold]SEC / UNSEC / CLEAR[/bold] - 当前加密保密状态
+  - [bold]SIG[/bold] - 工作电网的链路连接质量
+  - [bold]--DIR--[/bold] - 使用直调频率时显示此项以替代 SIG
+  - [bold]BAT[/bold] - 电池剩余电量（4 格电量条）
+  - 当前存储槽位
+  - 频率
+  - 电网名称
+  - 工作频段
+  - 波形体制
+  - 静噪等级
+  - 发射输出功率
+  - 激活的特性标记（Flags）
+  - [bold]STN[/bold] - 发射时使用的战术呼号
+  - [bold]BIT[/bold] - 设备自检（Built-In Test）状态
 
-  Active feature flags can include:
+  激活的特性标记包括：
 
-  - MON
-  - SCAN
-  - BURST
-  - PS
-  - PRI
-  - EMCON
-  - RXMT
+  - MON（全网监听）
+  - SCAN（扫描）
+  - BURST（突发传输）
+  - PS（省电模式）
+  - PRI（优先监听）
+  - EMCON（辐射管制）
+  - RXMT（跨网转发）
 
-  [bold]BIT[/bold] normally shows [bold]PASS[/bold].
+  [bold]BIT[/bold] 正常情况下显示 [bold]PASS（正常）[/bold]。
 
-  If the radio cannot operate normally, it displays the first detected problem, such as:
+  若电台无法正常运作，则会显示检测到的首要故障，如：
 
-  - NO CELL
-  - OFF
-  - STOWED
-  - SRCH
-  - NO NET
+  - NO CELL（无电池）
+  - OFF（关机）
+  - STOWED（未佩戴/未背在身上）
+  - SRCH（正在搜索）
+  - NO NET（无电网）
 
-  ## PGM - net memory
+  ## PGM - 频道编程
 
-  PGM manages the radio's memories.
+  PGM 页面管理电台的频道存储槽。
 
-  [bold]LOAD STD NETS[/bold] loads missing standard nets without replacing manually configured memories.
+  [bold]LOAD STD NETS[/bold]：补齐缺失的标准电网，且不会覆盖手动配置的槽位。
 
-  Each memory appears as a separate line.
+  每个存储槽各占一行。
 
-  A [bold]*[/bold] marks the current working memory.
+  星号 [bold]*[/bold] 标明当前工作存储槽。
 
-  Select a memory and press [bold]ENT[/bold] to open its options.
+  选中一个存储槽并按 [bold]ENT[/bold] 可打开其设置选项。
 
-  Available actions include:
+  可用操作包括：
 
-  - [bold]WORK THIS NET[/bold] - make the memory the working net
-  - [bold]TUNE TO A NET[/bold] - select a known friendly net or resolved intercepted net
-  - [bold]KEY A FREQUENCY[/bold] - enter a frequency manually
-  - [bold]EMPTY THE MEMORY[/bold] - remove the memory's current contents
-  - [bold]DELETE THE MEMORY[/bold] - remove the memory slot
-  - [bold]RENAME[/bold] - change the memory label
+  - [bold]WORK THIS NET[/bold] - 将此槽位设为当前发射工作网
+  - [bold]TUNE TO A NET[/bold] - 选择已知的友军无线网或侦测定位出的敌军无线网
+  - [bold]KEY A FREQUENCY[/bold] - 手动输入特定频率
+  - [bold]EMPTY THE MEMORY[/bold] - 清空该槽位中存储的内容
+  - [bold]DELETE THE MEMORY[/bold] - 彻底删除此存储槽
+  - [bold]RENAME[/bold] - 修改槽位标签名称
 
-  [bold]ADD NET[/bold] creates another memory and prompts for a label.
+  [bold]ADD NET[/bold]：创建新的存储槽并提示输入标签。
 
-  ### Direct frequencies
+  ### 直调频率
 
-  If a manually entered frequency matches a known net, that net is loaded normally.
+  若手动输入的频率与已知电网匹配，则会自动正常加载该电网。
 
-  Otherwise, it becomes a [bold]direct frequency[/bold].
+  否则，该频率将作为[bold]直调频率（Direct frequency）[/bold]工作。
 
-  Direct frequencies are:
+  直调频率：
 
-  - unrelayed
-  - unencrypted
-  - usable only by radios or tuned headsets on the same frequency
+  - 不经中继转发
+  - 不经过加密
+  - 仅能在调至完全相同频率的电台或耳机之间通话
 
-  Valid direct frequencies must fall within:
+  合法的直调频率必须位于：
 
-  - 1.000-2.999 MHz military band
-  - 30.000+ MHz colony softwave band
+  - 1.000-2.999 MHz（军用短波频段）
+  - 30.000+ MHz（殖民地调频 FM 频段）
 
-  ## SEC - COMSEC
+  ## SEC - 通信保密
 
-  SEC manages encryption and fill cards.
+  SEC 页面管理加密状态与注钥卡。
 
-  It displays:
+  它显示：
 
-  - [bold]SWITCH[/bold] - current function-switch position
-  - [bold]FILL[/bold] - installed fill card
-  - [bold]ISSUED TO[/bold] - faction associated with the fill
-  - [bold]TRAFFIC[/bold] - whether transmissions are currently encrypted
+  - [bold]SWITCH[/bold] - 当前旋钮开关档位
+  - [bold]FILL[/bold] - 已安装的注钥卡
+  - [bold]ISSUED TO[/bold] - 该密钥归属的阵营
+  - [bold]TRAFFIC[/bold] - 当前通联是否处于加密状态
 
-  Available actions include:
+  可用操作包括：
 
-  - [bold]ZEROIZE[/bold] - eject the fill card
-  - [bold]DESTROY[/bold] - destroy the installed fill card
-  - [bold]RECRYPTO[/bold] - replace your faction's current encryption key
-  - [bold]SEND KEY OTA[/bold] - distribute the current key over the air
+  - [bold]ZEROIZE[/bold] - 弹出注钥卡
+  - [bold]DESTROY[/bold] - 销毁已安装的注钥卡
+  - [bold]RECRYPTO[/bold] - 重置并更换所属阵营当前的加密密钥
+  - [bold]SEND KEY OTA[/bold] - 空中无线分发当前密钥（OTAR）
 
-  [bold]RECRYPTO[/bold] requires command authority.
+  [bold]RECRYPTO[/bold] 需要战术指挥权限。
 
-  ZEROIZE, DESTROY, RECRYPTO, and SEND KEY OTA require confirmation.
+  ZEROIZE、DESTROY、RECRYPTO 与 SEND KEY OTA 均需要二次确认。
 
-  ## SRCH - search receiver
+  ## SRCH - 搜索接收机
 
-  The search receiver scans for hostile radio traffic.
+  搜索接收机用于扫频侦听敌方无线电信号。
 
-  [bold]START SEARCH[/bold] begins sweeping the band.
+  点击 [bold]START SEARCH[/bold] 开始全频段扫频。
 
-  While searching, the radio:
+  在搜索期间，电台：
 
-  - leaves all loaded nets
-  - cannot transmit
-  - consumes additional power
+  - 会从所有已加载的电网中脱网
+  - 无法进行发射
+  - 会消耗额外的电池电量
 
-  The SRCH page includes:
+  SRCH 页面包含：
 
-  - [bold]HEAD[/bold] - current search frequency
-  - [bold]CONTACTS[/bold] - detected signals
-  - [bold]KEY ANALYSIS[/bold] - cryptographic analysis for factions with fixed nets
-  - [bold]JAMMER DF[/bold] - jammer direction-finding tools
+  - [bold]HEAD[/bold] - 当前扫频频点
+  - [bold]CONTACTS[/bold] - 探测到的信号接触目标
+  - [bold]KEY ANALYSIS[/bold] - 针对敌方阵营电网的密码破译分析
+  - [bold]JAMMER DF[/bold] - 干扰机无线电测向工具
 
-  ### Resolving contacts
+  ### 接触信号解析
 
-  Contacts become more precise as the radio observes additional transmissions.
+  随着电台持续侦听到敌方的多次发射，接触信号会变得越来越精确。
 
-  A signal may appear as:
+  信号频点可能先显示为：
 
   [bold]2XX.XXX[/bold]
 
-  then:
+  随后细化为：
 
   [bold]25X.XXX[/bold]
 
-  then:
+  接着细化为：
 
   [bold]259.XXX[/bold]
 
-  before resolving to its exact frequency and net.
+  直到最终彻底解析定位出确切频率与无线电网名称。
 
-  Each new transmission contributes once toward identifying the contact.
+  敌方每次新的发话发射，都会对信号解析推进一次。
 
-  A net transmitting approximately once per minute requires around three transmissions to resolve.
+  发话频率约为每分钟 1 次的电网，通常需要约 3 次发射即可完全解析。
 
-  A busy net transmitting less than 20 seconds apart can resolve in roughly one minute.
+  通联密集、每次发射间隔不到 20 秒的活跃电网，大约 1 分钟即可彻底解析。
 
-  Partial contacts retain their progress while transmissions continue.
+  在通联持续进行时，部分解析的接触信号进度会持续保留。
 
-  Progress begins to decay after approximately two minutes without traffic.
+  若超过约两分钟毫无信号通联，解析进度就会开始缓慢衰减丢失。
 
-  ### Search range
+  ### 搜索范围
 
-  At MED output, transmitters can be detected within approximately 120 tiles.
+  在中等功率（MED）下，可在约 120 格范围内侦测到发射源。
 
-  HI increases this range by approximately 50%.
+  高功率（HI）会将探测距离增加约 50%。
 
-  LO reduces the range to approximately 70 tiles.
+  低功率（LO）会将探测距离缩减至约 70 格。
 
-  Once a net is resolved, detectable transmissions on it can provide:
+  一旦某电网完全解析，该网上的可探测信号就能提供：
 
-  - a bearing toward the transmitter
-  - approximate distance
-  - a temporary tactical-map marker
-  - one trial toward key analysis
+  - 指向发射源的方位角（Bearing）
+  - 大致距离
+  - 战术地图上的临时敌情标记
+  - 为密码分析破译提供一次试探机会（Trial）
 
-  Secured SC and CT transmissions do not provide bearings.
+  加密的 SC（单信道密话）与 CT（密文传输）无法被测向定位方位角。
 
-  Select a [bold]resolved[/bold] contact and press ENT to tune it into the working memory.
+  选中一个[bold]已完全解析（Resolved）[/bold]的接触目标并按 ENT，可将其调谐至工作存储槽中收听。
 
-  Select a [bold]partial[/bold] contact and press ENT to begin [bold]Dwell[/bold].
+  选中一个[bold]部分解析（Partial）[/bold]的接触目标并按 ENT，可开启[bold]驻留凝视（Dwell）[/bold]模式。
 
-  ## LOG
+  ## LOG - 通联日志
 
-  LOG displays recorded radio traffic.
+  LOG 显示记录的无线电通联。
 
-  [bold]NET FILTER[/bold] cycles between nets represented in the log.
+  [bold]NET FILTER[/bold]：循环筛选日志中记录的各个电网。
 
-  [bold]INTERCEPTS ONLY[/bold] hides friendly traffic.
+  [bold]INTERCEPTS ONLY[/bold]：隐藏己方友军通讯，仅显示敌情截获。
 
-  Available print functions are:
+  可用打印功能：
 
-  - [bold]PRINT LOG[/bold] - prints all recorded traffic
-  - [bold]PRINT INTERCEPTS[/bold] - prints only intercepted traffic
+  - [bold]PRINT LOG[/bold] - 打印全部已记录的通联
+  - [bold]PRINT INTERCEPTS[/bold] - 仅打印截获的敌情通讯
 
-  Each traffic entry shows:
+  每条通联记录包含：
 
-  - time
-  - sender
-  - net
-  - message
+  - 时间
+  - 发信人
+  - 电网
+  - 报文内容
 
-  ## OPT - configuration
+  ## OPT - 运行配置
 
-  OPT contains the radio's operating settings.
+  OPT 包含电台的各项底层工作参数。
 
-  Press [bold]ENT[/bold] on most lines to cycle through available values.
+  在多数选项行上按下 [bold]ENT[/bold] 可轮询切换可选数值。
 
-  ### MODE
+  ### MODE（波形体制）
 
-  [bold]MODE[/bold] selects:
+  [bold]MODE[/bold] 可选：
 
-  - FREQ HOP
-  - SINGLE CH
-  - CIPHER
-  - PLAIN
+  - FREQ HOP（跳频）
+  - SINGLE CH（单信道）
+  - CIPHER（密话）
+  - PLAIN（明话）
 
-  See [textlink="the AN/PRC-117G" link="AU14CommsANPRC"] for waveform details.
+  波形体制的详细说明请参阅 [textlink="AN/PRC-117G 无线电" link="AU14CommsANPRC"]。
 
-  ### MONITOR and SCAN
+  ### MONITOR 与 SCAN
 
-  [bold]MONITOR[/bold] and [bold]SCAN[/bold] provide the same functions available through the guided interface.
+  [bold]MONITOR[/bold]（全网监听）与 [bold]SCAN[/bold]（扫描）提供与向导界面相同的功能。
 
-  ### SQUELCH
+  ### SQUELCH（静噪等级）
 
-  [bold]SQUELCH[/bold] ranges from 0 to 4.
+  [bold]SQUELCH[/bold] 范围为 0 到 4 级。
 
-  Higher values suppress more static and degraded traffic.
+  数值越高，抑制的杂音与弱信号越多。
 
-  Setting 4 can also suppress weak relay traffic.
+  4 级可能会抑制过弱的中继信号。
 
-  The standard setting is 3.
+  标准设置为 3。
 
-  ### OUTPUT
+  ### OUTPUT（发射功率）
 
-  [bold]OUTPUT[/bold] selects LO, MED, or HI power.
+  [bold]OUTPUT[/bold] 可选 LO（低）、MED（中）或 HI（高）。
 
   <Table Columns="4" MinForcedColumnWidth="75">
-    <ColorBox Color="#263238"><Box Margin="4">[bold]Power[/bold]</Box></ColorBox>
-    <ColorBox Color="#263238"><Box Margin="4">[bold]Relay range[/bold]</Box></ColorBox>
-    <ColorBox Color="#263238"><Box Margin="4">[bold]Battery use[/bold]</Box></ColorBox>
-    <ColorBox Color="#263238"><Box Margin="4">[bold]DF chance[/bold]</Box></ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]功率[/bold]</Box></ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]中继距离[/bold]</Box></ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]耗电速度[/bold]</Box></ColorBox>
+    <ColorBox Color="#263238"><Box Margin="4">[bold]被测向几率[/bold]</Box></ColorBox>
 
     <ColorBox><Box Margin="4">LO</Box></ColorBox>
     <ColorBox><Box Margin="4">60%</Box></ColorBox>
-    <ColorBox><Box Margin="4">Half</Box></ColorBox>
-    <ColorBox><Box Margin="4">Half</Box></ColorBox>
+    <ColorBox><Box Margin="4">减半</Box></ColorBox>
+    <ColorBox><Box Margin="4">减半</Box></ColorBox>
 
     <ColorBox><Box Margin="4">MED</Box></ColorBox>
     <ColorBox><Box Margin="4">100%</Box></ColorBox>
-    <ColorBox><Box Margin="4">Standard</Box></ColorBox>
-    <ColorBox><Box Margin="4">Standard</Box></ColorBox>
+    <ColorBox><Box Margin="4">标准</Box></ColorBox>
+    <ColorBox><Box Margin="4">标准</Box></ColorBox>
 
     <ColorBox><Box Margin="4">HI</Box></ColorBox>
     <ColorBox><Box Margin="4">150%</Box></ColorBox>
-    <ColorBox><Box Margin="4">Double</Box></ColorBox>
-    <ColorBox><Box Margin="4">Double</Box></ColorBox>
+    <ColorBox><Box Margin="4">两倍</Box></ColorBox>
+    <ColorBox><Box Margin="4">两倍</Box></ColorBox>
   </Table>
 
-  ### BACKLIGHT
+  ### BACKLIGHT（屏幕背光）
 
-  [bold]BACKLIGHT[/bold] cycles between:
+  [bold]BACKLIGHT[/bold] 可在以下模式间循环切换：
 
-  - night
-  - day
-  - off
+  - night（夜间模式）
+  - day（日间模式）
+  - off（关闭背光）
 
-  ### TECHNIQUES
+  ### TECHNIQUES（高级战术技巧）
 
-  [bold]TECHNIQUES[/bold] opens advanced operator functions:
+  [bold]TECHNIQUES[/bold] 打开高级操作员功能菜单：
 
-  - BURST TX
-  - POWER SAVE
-  - PRIORITY WATCH
-  - EMCON
-  - STAKED SET
+  - BURST TX（突发传输）
+  - POWER SAVE（省电模式）
+  - PRIORITY WATCH（优先监听）
+  - EMCON（辐射管制）
+  - STAKED SET（架设立式电台功能）
 
-  These functions are explained below.
+  这些进阶功能的详细说明见下文。
 
-  ### STATION
+  ### STATION（电台身份）
 
-  [bold]STATION[/bold] controls the identity used by the radio and provides several utility functions.
+  [bold]STATION[/bold] 控制电台的呼号身份并提供实用工具：
 
-  - [bold]CALLSIGN[/bold] - assign a fixed station callsign of up to 16 characters
-  - [bold]CLEAR OVERRIDE[/bold] - return to the current wearer's callsign
-  - [bold]ROSTER[/bold] - select a standard station name
-  - [bold]NET DIRECTORY[/bold] - open the communications directory
-  - [bold]PHONE[/bold] - open the field telephone
-  - [bold]RADIO CHECK[/bold] - transmit a radio check
+  - [bold]CALLSIGN[/bold] - 自定义固定电台呼号，最多 16 个字符
+  - [bold]CLEAR OVERRIDE[/bold] - 清除覆盖，恢复使用当前佩戴者的个人呼号
+  - [bold]ROSTER[/bold] - 从阵营标准呼号名册中快速选择呼号
+  - [bold]NET DIRECTORY[/bold] - 打开战术通信名录
+  - [bold]PHONE[/bold] - 打开野战电话
+  - [bold]RADIO CHECK[/bold] - 发射一次无线电测试
 
-  Fixed callsigns are useful for command posts and staked radios.
+  固定呼号在指挥所和地面架设电台中非常实用。
 
-  ### SET STATUS
+  ### SET STATUS（设备状态）
 
-  [bold]SET STATUS[/bold] displays:
+  [bold]SET STATUS[/bold] 显示：
 
-  - whether the radio is worn or staked
-  - installed antenna
-  - relayed nets
-  - relay coverage
-  - whether audio is using the headset or handset
+  - 电台处于背戴还是架设状态
+  - 已安装的天线类型
+  - 正在中继的电网
+  - 当前中继覆盖范围
+  - 音频输出使用的是耳机还是话筒
 
-  ### LINK
+  ### LINK（链路详情）
 
-  [bold]LINK[/bold] provides detailed connection information.
+  [bold]LINK[/bold] 提供详细链路信息：
 
-  - [bold]QUALITY[/bold] - link quality percentage
-  - [bold]VIA[/bold] - relay carrying the signal, including bearing and distance
-  - [bold]DRAW[/bold] - current battery drain per second
-  - [bold]ENDURANCE[/bold] - estimated remaining operating time
+  - [bold]QUALITY[/bold] - 连接质量百分比
+  - [bold]VIA[/bold] - 信号经由的中继设备（附带方位与距离）
+  - [bold]DRAW[/bold] - 每秒耗电速率
+  - [bold]ENDURANCE[/bold] - 预计电池续航时间
 
-  ## Advanced operator functions
+  ## 高级操作员功能
 
-  These functions are not required for normal radio operation.
+  这些进阶功能在常规无线电操作中并非必需。
 
-  They modify range, battery use, emissions, or radio behavior for specific situations.
+  它们用于在特定战场态势下针对性优化通信距离、电池消耗、电磁辐射特征或电台行为。
 
-  ### Burst transmission
+  ### 突发传输（Burst transmission）
 
   [bold]OPT > TECHNIQUES > BURST TX[/bold]
 
-  Burst transmission compresses each message before sending it.
+  突发传输在发送前先压缩报文。
 
-  While enabled:
+  启用时：
 
-  - transmission battery cost is reduced by 30%
-  - direction-finding chance is reduced by 50%
-  - message contents are unchanged
+  - 发射电池消耗降低 30%
+  - 被敌方测向定位的几率降低 50%
+  - 报文内容完全不受影响
 
-  Burst can be combined with other radio settings.
+  突发传输可与其他电台参数叠加使用。
 
-  ### Power save
+  ### 省电模式（Power save）
 
   [bold]OPT > TECHNIQUES > POWER SAVE[/bold]
 
-  Power save allows the receiver to sleep between messages.
+  在没有通联的间隙让接收机进入休眠状态。
 
-  Idle battery consumption is reduced by 40%.
+  待机耗电量降低 40%。
 
-  While active:
+  激活时：
 
-  - SCAN is disabled
-  - PRIORITY WATCH is disabled
+  - SCAN（扫描）被禁用
+  - PRIORITY WATCH（优先监听）被禁用
 
-  Enabling SCAN or PRIORITY WATCH disables power save.
+  开启 SCAN 或 PRIORITY WATCH 会自动退出省电模式。
 
-  ### Priority watch
+  ### 优先监听（Priority watch）
 
   [bold]OPT > TECHNIQUES > PRIORITY WATCH[/bold]
 
-  Priority watch monitors one additional loaded memory while keeping the current working memory unchanged.
+  在保持当前工作发射槽不变的同时，额外监听另一个已加载的存储槽。
 
-  Incoming traffic from the watched memory can be heard, but transmissions continue through the ON AIR memory.
+  监听电网传来的呼叫可以正常听到，但你的发射依然通过当前 ON AIR 槽位进行。
 
-  Unlike SCAN, priority watch does not automatically change the working memory.
+  与 SCAN 不同，优先监听不会自动切换工作发射槽。
 
-  ### EMCON
+  ### 辐射管制（EMCON）
 
   [bold]OPT > TECHNIQUES > EMCON[/bold]
 
-  EMCON places the radio into a receive-only emissions-control state.
+  将电台置于完全只收不发的辐射管制状态。
 
-  While active, the radio performs no:
+  激活期间，电台严禁进行任何：
 
-  - transmissions
-  - relay traffic
-  - telephone traffic
+  - 无线电发射
+  - 中继转发
+  - 电话通话
 
-  Because the radio does not transmit, it produces no direction-finding signature.
+  因为完全不发射任何射频信号，电台不会产生任何被测向的信号特征。
 
-  The radio continues to:
+  电台继续正常：
 
-  - receive traffic on its working net
-  - record received traffic
+  - 接收工作电网上的通联
+  - 记录接收到的通联至日志
 
-  Idle battery draw is reduced to one quarter of normal.
+  待机耗电降至正常状态的四分之一。
 
-  [bold]An AN/PRC in EMCON provides no relay coverage.[/bold]
+  [bold]处于 EMCON 状态下的 AN/PRC 不提供任何中继覆盖！[/bold]
 
-  Headsets relying on that radio for relay access will lose their combat nets.
+  依赖该电台获得中继覆盖的单兵耳机将立即脱离作战网。
 
-  ### Retransmission bridge
+  ### 跨网中继桥接（Retransmission bridge）
 
   [bold]OPT > TECHNIQUES > STAKED SET[/bold]
 
-  This function is available while the radio is staked down.
+  该功能仅在电台架设（Staked down）在地面时可用。
 
-  Select:
+  选择：
 
   - [bold]SIDE A[/bold]
   - [bold]SIDE B[/bold]
 
-  Each side must contain a named net loaded into one of the radio's memories.
+  两侧各自选择一个已加载到电台存储槽中的电网。
 
-  Select [bold]BRIDGE[/bold] to connect them.
+  点击 [bold]BRIDGE[/bold] 进行跨网桥接。
 
-  Traffic received on either net is retransmitted onto the other.
+  任一侧电网接收到的通联都会自动转发到另一侧电网上。
 
-  Retransmitted messages preserve the original speaker and are marked [bold][RXMT][/bold].
+  转发报文会保留最初发言者的呼号，并打上 [bold][RXMT][/bold] 标记。
 
-  For example:
+  例如：
 
   [bold][RXMT] SABRE 1-1: contact north[/bold]
 
-  Retransmissions:
+  转发通联：
 
-  - consume battery
-  - can produce a direction-finding signature
-  - cannot be retransmitted again
+  - 会消耗电池电量
+  - 会产生可被测向的射频特征
+  - 严禁被二次转发（防止两台桥接电台产生回环死锁）
 
-  This prevents bridged radios from creating retransmission loops.
+  打包收起电台会立即终止桥接。
 
-  Packing up the radio immediately ends the bridge.
-
-  ### Peak the antenna
+  ### 天线增益微调（Peak the antenna）
 
   [bold]OPT > TECHNIQUES > STAKED SET > PEAK THE ANTENNA[/bold]
 
-  Peaking the antenna takes approximately 15 seconds.
+  微调天线大约需要 15 秒。
 
-  The radio must remain stationary while the antenna is tuned.
+  调谐期间电台必须保持静止不动。
 
-  Once complete, relay range increases by 25%.
+  完成后，中继覆盖距离提升 25%。
 
-  The bonus remains until the radio is packed up.
+  该增益加成持续生效，直到电台被打包收起。
 
-  ### Over-the-air rekey
+  ### 空中无线重注钥（Over-the-air rekey / OTAR）
 
   [bold]SEC > SEND KEY OTA[/bold]
 
-  After a recrypto, radios containing old fill cards have an outdated key.
+  在阵营执行全军重加密（Recrypto）后，仍插着旧注钥卡的电台密钥就会过时。
 
-  An operator with the current key can distribute it over the air.
+  持有最新密钥的操作员可以通过无线电向空中广播分发新密钥。
 
-  The display shows how many outdated friendly radios are currently reachable.
+  屏幕会显示当前通信范围内有多少台友军旧电台可以接收到。
 
-  Press [bold]ENT[/bold] once to arm the transmission, then again to send it.
+  按一次 [bold]ENT[/bold] 预备发射，再次按下正式发送。
 
-  The new key reaches friendly radios that are:
+  新密钥能传达给满足以下条件的友军电台：
 
-  - switched on
-  - worn or staked
-  - within approximately 45 tiles
+  - 开机状态
+  - 处于背戴或地面架设状态
+  - 距离在约 45 格以内
 
-  Radios can also receive the key at greater distances if both sets are connected through the faction's command-net relay network.
+  如果双方都接入了所属阵营的指挥网中继网络，还可以在更远距离上完成接收。
 
-  Sending a key:
+  空中分发密钥：
 
-  - consumes a large amount of battery
-  - can produce a direction-finding signature
-  - has a 30-second cooldown
+  - 消耗大量电池电量
+  - 会产生被测向的信号特征
+  - 拥有 30 秒冷却时间
 
-  [bold]Captured radios containing one of your faction's fill cards are still treated as friendly sets.[/bold]
+  [bold]插有你所属阵营注钥卡的被俘电台依然会被识别为友军电台！[/bold]
 
-  If one is reachable, it also receives the new key.
+  如果被俘电台在接收范围内，它同样会接收到新密钥。
 
-  Invalidate compromised keys before distributing a replacement whenever possible.
+  在分发新密钥前，务必尽可能先让指挥官重置作废已泄露的旧密钥。
 
-  ### Dwell
+  ### 驻留凝视（Dwell）
 
-  Dwell operates while the search receiver is active.
+  在搜索接收机激活时工作。
 
-  On the [bold]SRCH[/bold] page, select a partial contact and press [bold]ENT[/bold].
+  在 [bold]SRCH[/bold] 页面中，选中一个未完全解析的部分接触目标并按 [bold]ENT[/bold]。
 
-  The search head stops sweeping and remains on that contact.
+  搜索头会停止扫频，持续锁定停留在该目标信号上。
 
-  While dwelling:
+  在驻留期间：
 
-  - each new transmission counts twice toward resolving the contact
-  - all other frequencies are ignored
+  - 每次新接收到的发射对解析进度的推进效果翻倍
+  - 忽略其他所有频点的信号
 
-  Select [bold]RELEASE THE HEAD[/bold] to resume normal searching.
+  选择 [bold]RELEASE THE HEAD[/bold] 可恢复常规扫频。
 
-  The search automatically resumes when the contact fully resolves.
+  当接触目标完全解析后，系统会自动恢复全频段扫频。
 
-  ### Key analysis
+  ### 密码分析破译（Key analysis）
 
-  Key analysis can recover the encryption key of a resolved hostile faction net.
+  密码破译功能可用于破解已完全解析出的敌方阵营电网加密密钥。
 
-  Enemy keys contain six different symbols from [bold]A[/bold] through [bold]H[/bold].
+  敌方密钥由字母 [bold]A[/bold] 到 [bold]H[/bold] 中的 6 个不重复字符组成。
 
-  Each encrypted transmission received from a resolved enemy net provides one [bold]trial[/bold].
+  从已解析的敌方电网上接收到每一次加密通联，都会为你提供一次[bold]试探机会（Trial）[/bold]。
 
-  A radio can store up to 12 trials.
+  一台电台最多可存储 12 次试探机会。
 
-  To test a key:
+  测试试探密钥的方法：
 
-  - open [bold]SRCH > KEY ANALYSIS[/bold]
-  - select the enemy faction
-  - select [bold]TEST A TRIAL KEY[/bold]
-  - enter six letters
+  - 打开 [bold]SRCH > KEY ANALYSIS[/bold]
+  - 选择敌方阵营
+  - 选择 [bold]TEST A TRIAL KEY[/bold]
+  - 输入 6 个英文字母
 
-  Letters use the keypad's text-entry system.
+  字母使用键盘文本输入模式输入。
 
-  After testing, the radio reports how many symbols are in the correct position.
+  测试后，电台会回报有几个字母的位置是完全正确的。
 
-  For example:
+  例如：
 
   [bold]2/6[/bold]
 
-  The radio does not identify which symbols are correct.
+  电台不会告知具体哪几个字母是正确的。
 
-  Trial results remain available and can be compared when testing later combinations.
+  试探记录会保留在界面中，供你在后续排列组合测试时进行对比分析。
 
-  At [bold]6/6[/bold], the key is broken.
+  当达到 [bold]6/6[/bold] 时，该密钥被彻底破解！
 
-  That radio can then read the faction's encrypted traffic:
+  该电台自此便能直接破译收听该敌对阵营的加密通联：
 
-  - live
-  - in its radio log
+  - 实时收听
+  - 在通联日志中查看
 
-  A broken key does [bold]not[/bold]:
+  破解密钥[bold]不能[/bold]：
 
-  - allow transmission on enemy nets
-  - transfer to another radio
+  - 在敌方无线电网上发话
+  - 传输给其他电台
 
-  A recrypto removes:
+  敌方执行全军重加密（Recrypto）后，将抹除：
 
-  - the broken key
-  - stored trials
-  - previous trial results
+  - 已破译的密钥
+  - 已存储的试探机会
+  - 过往的试探测试记录
 
-  Key-analysis progress belongs to the radio itself and remains with the set if it is captured.
+  密码破译进度保存在电台本地硬件中，如果电台被俘，进度也会随之落入敌手。
 
-  Key analysis requires a trained operator.
+  密码破译需要受训的操作员。
 
-  ### Jammer direction finding
+  ### 干扰机无线电测向（Jammer direction finding）
 
-  The search receiver can locate an active jammer.
+  搜索接收机可用于定位活跃的敌方干扰机。
 
-  While affected by a jammer, open:
+  在受到干扰机影响时，打开：
 
   [bold]SRCH > JAMMER DF[/bold]
 
-  To establish a fix:
+  建立定位的方法：
 
-  - select [bold]TAKE A BEARING[/bold]
-  - move at least 12 tiles
-  - check [bold]BASELINE[/bold] to confirm sufficient movement
-  - select [bold]TAKE SECOND BEARING[/bold]
+  - 选择 [bold]TAKE A BEARING[/bold]（测量第一方位角）
+  - 移动至少 12 格距离
+  - 检查 [bold]BASELINE[/bold] 确认已移动足够远
+  - 选择 [bold]TAKE SECOND BEARING[/bold]（测量第二方位角）
 
-  The radio compares both bearings and places the estimated jammer position on your faction's tactical map.
+  电台将对两个方位角执行交叉测向计算，并将估算出的干扰机位置标注在己方阵营的战术地图上。
 
-  The marker remains for approximately two minutes.
+  标记会保留约 2 分钟。
 
-  The radio also reports the jammer's distance.
+  电台同时还会报告干扰机的距离。
 
-  The first bearing expires after three minutes.
+  测量的第一个方位角会在 3 分钟后过期失效。
 
-  ## Returning to automatic settings
+  ## 恢复自动设置
 
-  Settings changed from the faceplate remain active when returning to the guided interface.
+  在专家面板中修改的设置，切换回向导界面后依然有效。
 
-  The guided panel displays any manually changed settings.
+  向导面板会列出手动更改过的设置项。
 
-  Select [bold]RETURN TO AUTO[/bold] to restore the guided panel's normal configuration.
+  点击 [bold]RETURN TO AUTO[/bold] 即可一键恢复向导面板的标准配置。
 
-  This resets manually configured operating settings back to their automatic values.
+  这会将所有手动配置的参数重置回自动数值。
 
-  ## Practice drill
+  ## 操练演练
 
-  The following drill demonstrates the main faceplate controls on a powered, worn radio with no nets loaded.
+  以下操练在一台通电已背戴且未加载电网的电台上演示专家面板的核心控制操作：
 
-  - Press [bold]8[/bold] to open PGM.
-  - Select [bold]LOAD STD NETS[/bold] and press ENT.
-  - Press [bold]7[/bold] to open OPT.
-  - Set [bold]OUTPUT[/bold] to LO.
-  - Enable [bold]BURST TX[/bold].
-  - Enable [bold]PRIORITY WATCH[/bold] and select the command memory.
-  - Press [bold]1[/bold] to send a radio check.
-  - Open [bold]LINK[/bold] and check the current relay and estimated endurance.
-  - Return to the guided interface.
-  - Open SETTINGS and confirm that the manual settings are shown.
-  - Press [bold]RETURN TO AUTO[/bold].
+  - 按 [bold]8[/bold] 打开 PGM。
+  - 选中 [bold]LOAD STD NETS[/bold] 并按 ENT。
+  - 按 [bold]7[/bold] 打开 OPT。
+  - 将 [bold]OUTPUT[/bold] 设为 LO。
+  - 启用 [bold]BURST TX[/bold]。
+  - 启用 [bold]PRIORITY WATCH[/bold] 并选定指挥网槽位。
+  - 按 [bold]1[/bold] 发送一次无线电测试。
+  - 打开 [bold]LINK[/bold] 查看当前中继设备与预计续航时间。
+  - 切换回向导界面。
+  - 打开 SETTINGS 确认手动设置已生效。
+  - 点击 [bold]RETURN TO AUTO[/bold]。
 
-  The [bold]?[/bold] soft key opens the faceplate key card at any time.
+  随时可以按 [bold]?[/bold] 软键打开面板按键功能说明卡。
 </Document>

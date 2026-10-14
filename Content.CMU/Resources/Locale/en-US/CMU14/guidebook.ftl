@@ -59,13 +59,13 @@ cmu-guide-entry-cclaw-emergency = 行政紧急权力
 
 # Communications
 cmu-guide-entry-comms = 通信指南
-cmu-guide-entry-comms-network = 接入网络
+cmu-guide-entry-comms-network = 接入通信网
 cmu-guide-entry-comms-anprc = AN/PRC-117G 无线电
-cmu-guide-entry-comms-anprc-guided = AN/PRC-117G：引导面板
-cmu-guide-entry-comms-anprc-expert = AN/PRC-117G：专家面板
-cmu-guide-entry-comms-headsets = 野战耳机
-cmu-guide-entry-comms-voice = 语音通信程序
-cmu-guide-entry-comms-quick-reference = 通信快速参考
+cmu-guide-entry-comms-anprc-guided = AN/PRC-117G：向导面板
+cmu-guide-entry-comms-anprc-expert = AN/PRC-117G：专家操作面板
+cmu-guide-entry-comms-headsets = 单兵野战耳机
+cmu-guide-entry-comms-voice = 语音通信规程
+cmu-guide-entry-comms-quick-reference = 通信速查表
 
 # Research
 cmu-guide-entry-research = 科研部
@@ -99,7 +99,7 @@ cmu-guide-entry-eng-breach = 破门与爆破
 cmu-guide-entry-eng-vehicles = 载具维修
 cmu-guide-entry-eng-synths = 合成人维修
 cmu-guide-entry-eng-ordnance = 军械
-cmu-guide-entry-towers = 通信与传感器塔
+cmu-guide-entry-towers = 通信塔与传感器塔台
 cmu-guide-entry-law-roles = 职位与装备
 cmu-guide-entry-law-basics = 殖民地法律基础
 cmu-guide-entry-law-dispatch = 无线电与911调度
