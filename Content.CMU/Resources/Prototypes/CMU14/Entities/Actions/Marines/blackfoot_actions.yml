@@ -1,7 +1,7 @@
 - type: entity
   id: ActionBlackfootEngineToggle
-  name: 切换黑脚引擎
-  description: 启动或停止黑脚引擎。
+  name: 开关黑足引擎
+  description: 启动或停止黑足引擎。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootEngineToggleActionEvent
@@ -15,7 +15,7 @@
 
 - type: entity
   id: ActionBlackfootTakeoff
-  name: 黑脚起飞
+  name: 黑足垂直起飞
   description: 开始垂直起降起飞序列。
   components:
   - type: InstantAction
@@ -30,7 +30,7 @@
 
 - type: entity
   id: ActionBlackfootLand
-  name: 黑脚登陆点
+  name: 黑足垂直着陆
   description: 开始垂直起降着陆序列。
   components:
   - type: InstantAction
@@ -45,7 +45,7 @@
 
 - type: entity
   id: ActionBlackfootFlightModeToggle
-  name: 切换黑脚飞行模式
+  name: 切换黑足飞行模式
   description: 在垂直起降悬停与前飞之间切换。
   components:
   - type: InstantAction
@@ -60,8 +60,8 @@
 
 - type: entity
   id: ActionBlackfootRearDoorToggle
-  name: 切换黑脚后门
-  description: 打开或关闭黑脚直升机的后门。
+  name: 切换黑足后门
+  description: 打开或关闭黑足直升机的后门。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootRearDoorToggleActionEvent
@@ -75,7 +75,7 @@
 
 - type: entity
   id: ActionBlackfootStowToggle
-  name: 收起黑脚
+  name: 收起黑足
   description: 在地面时折叠或展开Blackfoot。
   components:
   - type: InstantAction
@@ -90,8 +90,8 @@
 
 - type: entity
   id: ActionBlackfootAscendZLevel
-  name: 黑脚上升
-  description: 将黑脚提升一个Z层级。
+  name: 黑足向上爬升
+  description: 将黑足提升一个Z层级。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootAscendZLevelActionEvent
@@ -106,8 +106,8 @@
 
 - type: entity
   id: ActionBlackfootDescendZLevel
-  name: 黑脚下降
-  description: 将黑脚下降一个Z轴高度。
+  name: 黑足下降高度
+  description: 将黑足下降一个Z轴高度。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.Blackfoot.BlackfootDescendZLevelActionEvent

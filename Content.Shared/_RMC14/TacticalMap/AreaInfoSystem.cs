@@ -255,72 +255,72 @@ public sealed partial class AreaInfoSystem : EntitySystem
         var restrictedActions = new List<string>();
 
         if (canOrbitalBombard)
-            allowedActions.Add(GetOrdnanceActionLabel("Orbital Strike", orbitalBombardment));
+            allowedActions.Add(GetOrdnanceActionLabel("轨道打击", orbitalBombardment));
         else
-            restrictedActions.Add("Orbital Strike");
+            restrictedActions.Add("轨道打击");
 
         if (canCAS)
-            allowedActions.Add("Close Air Support");
+            allowedActions.Add("CAS支援");
         else
-            restrictedActions.Add("Close Air Support");
+            restrictedActions.Add("CAS支援");
 
         if (canSupplyDrop)
-            allowedActions.Add("Supply Drops");
+            allowedActions.Add("空投补给");
         else
-            restrictedActions.Add("Supply Drops");
+            restrictedActions.Add("空投补给");
 
         if (canMortarFire)
-            allowedActions.Add(GetOrdnanceActionLabel("Mortar Fire", mortarFire));
+            allowedActions.Add(GetOrdnanceActionLabel("迫击炮射击", mortarFire));
         else
-            restrictedActions.Add("Mortar Fire");
+            restrictedActions.Add("迫击炮射击");
 
         if (canMortarPlacement)
-            allowedActions.Add("Mortar Placement");
+            allowedActions.Add("架设迫击炮");
         else
-            restrictedActions.Add("Mortar Placement");
+            restrictedActions.Add("架设迫击炮");
 
         if (canLase)
-            allowedActions.Add("Laser Designation");
+            allowedActions.Add("激光照射");
         else
-            restrictedActions.Add("Laser Designation");
+            restrictedActions.Add("激光照射");
 
         // CMU14: if (area.Value.Comp.Medevac)
         if (canMedevac)
-            allowedActions.Add("Casualty Evacuation");
+            allowedActions.Add("空运伤员");
         else
-            restrictedActions.Add("Casualty Evacuation");
+            restrictedActions.Add("空运伤员");
 
         // CMU14: if (area.Value.Comp.Paradropping)
         if (canParadrop)
-            allowedActions.Add("Paradropping");
+            allowedActions.Add("空降");
         else
-            restrictedActions.Add("Paradropping");
+            restrictedActions.Add("空降");
 
-        // Add special restrictions
+        // 添加特殊限制
         if (area.Value.Comp.NoTunnel)
-            restrictedActions.Add("Tunneling");
+            restrictedActions.Add("挖掘地道");
         if (area.Value.Comp.Unweedable)
-            restrictedActions.Add("Weed Placement");
+            restrictedActions.Add("铺设菌毯");
         else if (!area.Value.Comp.ResinAllowed)
-            restrictedActions.Add("Resin Structures");
+            restrictedActions.Add("树脂建筑");
 
         var protectionSource = "";
         if (hasHiveCoreProtection)
-            protectionSource = "\nProtection: Hive Core";
+            protectionSource = "\n防御来源：母巢核心";
         else if (hasPylonProtection)
-            protectionSource = "\nProtection: Hive Pylon";
+            protectionSource = "\n防御来源：蜂巢塔";
 
-        var restrictionsStr = $"\nCeiling level: {ceilingLevel}{protectionSource}";
+        var restrictionsStr = $"\n屋顶等级：{ceilingLevel}{protectionSource}";
 
         if (allowedActions.Count > 0)
         {
-            restrictionsStr += "\n\nAllowed:";
+            restrictionsStr += "\n\n可以提供：";
             restrictionsStr += "\n• " + string.Join("\n• ", allowedActions);
         }
 
         if (restrictedActions.Count > 0)
         {
-            restrictionsStr += "\n\nBlocked:";
+            restrictionsStr += "\n\n无法提供：";
             restrictionsStr += "\n• " + string.Join("\n• ", restrictedActions);
         }
 
@@ -332,7 +332,7 @@ public sealed partial class AreaInfoSystem : EntitySystem
     private static string GetOrdnanceActionLabel(string label, CMUTopDownOrdnanceResult? result)
     {
         return result is { Redirected: true }
-            ? $"{label} (top-down)"
+            ? $"{label} (垂直弹道)"
             : label;
     }
 

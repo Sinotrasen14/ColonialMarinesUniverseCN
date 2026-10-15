@@ -33,7 +33,7 @@ roles-antag-clf-surgeon-name = CLF外科医生
 
 cmu-antag-clf-saboteur-name = CLF破坏者
 cmu-antag-clf-saboteur-objective = 在解放开始之前瘫痪殖民地的基础设施。
-cmu-antag-clf-saboteur-greeting = 殖民地解放阵线救了你，现在是偿还债务的时候了。用你的炸药摧毁殖民地的电力和通信基础设施。每一个被摧毁的区域电力控制器和通信控制台都让解放更近一步。
+cmu-antag-clf-saboteur-greeting = 殖民地解放阵线救了你，现在是偿还债务的时候了。用你的炸药摧毁殖民地的电力和通信基础设施。每一个被摧毁的APC和通信控制台都让解放更近一步。
 
 roles-antag-clf-sleeper-agent-name = CLF潜伏特工
 roles-antag-clf-sleeper-agent-objective = 从内部协助CLF叛乱分子。在不暴露身份的情况下破坏政府军的行动。

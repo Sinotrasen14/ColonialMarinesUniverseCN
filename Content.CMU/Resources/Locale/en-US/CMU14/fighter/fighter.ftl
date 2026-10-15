@@ -8,7 +8,7 @@ cmu-fighter-descend = 下降
 cmu-fighter-return = 返航
 cmu-fighter-mark = 标记观察位置
 cmu-fighter-zoom = 切换观瞄缩放
-cmu-fighter-center = 将视角重新居中至战机一次.直到你平移或再次居中前，镜头将固定在此处.
+cmu-fighter-center = 将视角重新居中至战机.镜头将保持锁定，直到你平移或再次居中.
 cmu-fighter-center-view = 视角居中
 cmu-fighter-swap = 切换座位
 cmu-fighter-leave = 离开机位
@@ -32,7 +32,7 @@ cmu-fighter-apply = 应用航线
 cmu-fighter-pick-entry = 点击航图，放置进入点.
 cmu-fighter-pick-exit = 点击航图，放置退出点.
 cmu-fighter-route-locked = 进近航线已锁定.仅可在盘旋阶段修改航线.
-cmu-fighter-invalid-route = 航线无效.盘阶段时时，请在空域内选取横穿战区且相距至少 40 格的两个航路点.
+cmu-fighter-invalid-route = 航线无效.处于盘旋阶段时，请在空域内选取横穿战区且相距至少 40 格的两个航路点.
 cmu-fighter-standby = 光电摄像机 / 待命
 cmu-fighter-height = 设定高度：{ $height } 米
 cmu-fighter-speed = 设定航速：{ $speed } 格/秒
@@ -44,7 +44,7 @@ cmu-fighter-phase-return = 返航脱离 — 正在战场外重新机动
 cmu-fighter-training-release = 训练弹投放
 cmu-fighter-released = 记录到训练弹命中 — 无实弹战斗部
 cmu-fighter-release-ready = 投放就绪 — 航线对齐且目标可见
-cmu-fighter-release-blocked = 投放关闭 — 需要在飞行走廊前方 4–35 格范围内存在可见且在射程内的目标标记
+cmu-fighter-release-blocked = 无法投放 — 需要在飞行走廊前方 4–35 格范围内存在可见且处于射程内的目标
 cmu-fighter-console-route = 规划航线
 cmu-fighter-controls = 飞行 / 侦察控制
 cmu-fighter-console-optics = 对地镜头
@@ -85,7 +85,7 @@ cmu-fighter-spectating-exit-help = 只读机组视角
 cmu-fighter-stop-observing = 退出观察
 cmu-fighter-lock = 锁定
 cmu-fighter-unlock = 解除锁定
-cmu-fighter-lock-help = 锁定选择的地面目标.解除锁定则取消跟踪目标，但保持当前视角.WASD 平移自由镜头；选择信号弹可将视角移至其上方.
+cmu-fighter-lock-help = 锁定所选的地面目标.解除锁定则取消跟踪目标，但保持当前视角.WASD 平移自由镜头；选择信号弹可将视角移至其上方.
 cmu-fighter-range-help = 飞行高度越高，对地镜头的视界越广.超出范围的锁定仍会保留，但对地画面会暂时中断，直到再次进入范围.
 cmu-fighter-shared-sight = 点击目标指示可在左侧屏幕显示独立的对地镜头画面.使用 WASD 移动视角；点击规划航线可恢复飞行操作面板.
 cmu-fighter-sensor-status = { $mode }
@@ -98,21 +98,21 @@ cmu-fighter-vision-normal = 常规白光
 cmu-fighter-vision-night = 微光夜视
 cmu-fighter-vision-thermal = 热成像
 cmu-fighter-night-help = 微光夜视.可看清昏暗地形，无电池消耗、无过热与冷却时间限制.但云层依然会遮挡视野.
-cmu-fighter-thermal-help = 可穿透黑暗与云层侦查目标，单次最长持续 2 分钟.过热或主动关闭后进入 6 分钟冷却.受镜头视距限制.
+cmu-fighter-thermal-help = 可穿透黑暗与云层侦察目标，单次最长持续 2 分钟.过热或主动关闭后进入 6 分钟冷却.受镜头视距限制.
 cmu-fighter-thermal-active = 热成像工作中 · 距过热还有 { $time }
 cmu-fighter-thermal-cooling = 热成像冷却中 · 剩余 { $time }
-cmu-fighter-thermal-ready = 热成像就绪 ·  2:00
+cmu-fighter-thermal-ready = 热成像就绪 · 2:00
 cmu-fighter-thermal-cooling-popup = 热成像光电传感器仍在冷却.白光和夜视模式仍可正常使用.
 cmu-fighter-armament = 武器配置 / 六个挂架 + 机炮
 cmu-fighter-internal-gau = 内置 GAU-21 转管机炮
 cmu-fighter-rocket-pod = LAU-229 火箭巢
 cmu-fighter-empty-pylon = 空挂架
-cmu-fighter-slot = { $number } 号挂架 · { $kind }
+cmu-fighter-slot = { $number } 号 · { $kind }
 cmu-fighter-kind-empty = 空挂点
 cmu-fighter-kind-missile = 导弹
 cmu-fighter-kind-rockets = 火箭弹
 cmu-fighter-kind-gau = GAU机炮
-cmu-fighter-weapon-status = { $name } · 剩余{ $rounds }发
+cmu-fighter-weapon-status = { $name } · 剩余 { $rounds } 发
     目标：{ $target }
 cmu-fighter-fire-button = 开火
 cmu-fighter-fire-ready = 准备就绪
@@ -123,7 +123,7 @@ cmu-fighter-fire-notarget = 请选择指示信号弹或激光标记
 cmu-fighter-fire-outofrange = 超出有效射程
 cmu-fighter-fire-outsideao = 武器保险已开启 · 航线进入行动区时才能开火
 cmu-fighter-fire-clouds = 云层遮挡
-cmu-fighter-fire-protected = 掩体遮蔽/无法提供空中支援
+cmu-fighter-fire-protected = 掩体遮挡 / 无法提供空中支援
 cmu-fighter-fire-needrun = 需处于进近或通场状态
 cmu-fighter-fire-offcourse = 偏离目标 · 请将航向对准信号弹
 cmu-fighter-fire-cooldown = 武器射击循环中
@@ -132,13 +132,13 @@ cmu-fighter-flare-help = 导弹：任一座位均可发射 · 需处于通场区
     火箭弹/机炮：仅飞行员 · 需处于通场区域
 cmu-fighter-flare-list-help = 选择打击目标 · 绿色标记代表就绪
 cmu-fighter-no-flares = 等待地面部署指示信号弹
-cmu-fighter-laser = 激光照射
-cmu-fighter-laser-help = 对准星处持续激光照射 10 秒，地面人员可见光斑.选择导弹后，点击“锁定并开火”.可在发射前进行2秒激光制导锁定.再次点击“激光”可查看已标定位置.
+cmu-fighter-laser = 激光
+cmu-fighter-laser-help = 向准星处持续激光照射 10 秒，地面人员可见光斑.选择导弹后，点击“锁定并开火”可在发射前进行 2 秒激光制导锁定.再次点击“激光”可查看已标定位置.
 cmu-fighter-pilot-laser = 飞行员激光照射
 cmu-fighter-officer-laser = 武器官激光照射
-cmu-fighter-laser-time = { $name }·剩余{ $seconds }秒
+cmu-fighter-laser-time = { $name } · 剩余 { $seconds } 秒
 cmu-fighter-lock-fire = 锁定并开火
-cmu-fighter-lock-countdown = 正在引导锁定·{ $seconds }秒
+cmu-fighter-lock-countdown = 正在引导锁定 · { $seconds } 秒
 cmu-fighter-fire-locking = 锁定中
 cmu-fighter-fire-missilesonly = 激光制导需配合导弹使用
 cmu-fighter-fire-targetexpiring = 激光照射即将超时 · 无法完成锁定
@@ -154,7 +154,7 @@ cmu-fighter-fire-retreat = 战机受损 · 正在强制返航
 cmu-fighter-fire-grounded = 武器保险锁定中 · 战机升空后可用
 cmu-fighter-cover = 对空支援
 cmu-fighter-cover-title = 对空拦截 / 扇区巡逻
-cmu-fighter-cover-help = 任意机组成员均可指定空中巡逻区域.当敌机穿过选定扇区时，将触发空中拦截.防空部署需要8秒建立戒备；防空拦截弹重新填装耗时 15 秒.敌方防空覆盖的扇区不可见.
+cmu-fighter-cover-help = 任意机组成员均可指定空中巡逻区域.当敌机穿过选定扇区时，将触发空中拦截.防空部署需要 8 秒建立戒备；防空拦截弹重新装填耗时 15 秒.敌方防空覆盖的扇区不可见.
 cmu-fighter-cover-instruction = 点击扇区，指定或清除巡逻区域
     绿色：已巡逻 | 琥珀色：即将巡逻 | 敌方防空覆盖区处于隐蔽状态
 cmu-fighter-cover-status = 已覆盖 { $count } / { $max } 个扇区
@@ -177,11 +177,11 @@ cmu-fighter-taxi-camera-help = 关闭对地镜头以进行滑行
 cmu-fighter-taxi-help = W / S · 向前/向后滑行
     A / D · 滑行时转向 · 松开按键自动刹车
 cmu-fighter-tab-flight = 飞行控制
-cmu-fighter-tab-targeting = 瞄目标标
+cmu-fighter-tab-targeting = 观瞄控制
 cmu-fighter-targeting-keys = WASD · 平移镜头
     航线规划 · 飞行控制
 cmu-fighter-ground-officer-help = 飞行员控制地面滑行与起飞.
-    目标瞄准系统将在战机升空后上线.
+    观瞄系统将在战机升空后上线.
 cmu-fighter-route-hint = 规划航线 · 设置进入点与退出点
     应用航线 · 开始进近
 cmu-fighter-officer-route-hint = 在地图上选择指示信号弹以观察画面.
@@ -192,7 +192,7 @@ cmu-fighter-air-countdown = 距命中还有 { $seconds } 秒！
 cmu-fighter-flares = 投放热诱弹
 cmu-fighter-flares-used = 热诱弹已投放
 cmu-fighter-flares-pilot = 必须由飞行员投放热诱弹
-cmu-fighter-flares-chance = 每枚来袭导弹仅可尝试一次诱骗 · 规避成功率 { $chance }%.提前投放热诱弹及保持高航速可显著提高规避率.战机被命中将被迫脱离战斗.
+cmu-fighter-flares-chance = 每枚来袭导弹仅可尝试一次诱骗 · 规避成功率 { $chance }%.提前投放热诱弹及保持高航速可显著提高规避率.战机若被命中将被迫脱离战斗.
 cmu-fighter-air-evaded = 已成功规避导弹！
 cmu-fighter-air-continue = 战机结构完好 · 继续执行任务
 cmu-fighter-air-hit = 战机中弹！
@@ -218,7 +218,7 @@ cmu-fighter-eject = 紧急弹射
 cmu-fighter-eject-warning = 紧急弹射警告
 cmu-fighter-eject-both-warning = 这将弹射双人机组的【两座】乘员！
     你与武器官都将跳伞降落至地面.
-    无人驾驶的战机尝试试自动返航.
+    无人驾驶的战机将尝试自动返航.
 cmu-fighter-eject-self-warning = 这将单独弹射【你】的座椅.飞行员仍留在战机上.
     你将跳伞降落至地面.
 cmu-fighter-eject-cancel = 坚守岗位
@@ -256,11 +256,11 @@ cmu-manpad-radar-height = 飞行高度 { $height } 米
 ent-CMUActionBoilerWatchAirspace = 瞄准空域
     .desc = 警戒你所在的扇区，并向掠过空域的飞行器自动喷射等离子球.开阔露天下静止 2 秒即可捕获空中目标.每次喷射消耗 200 点等离子体，冷却时间 15 秒.再次点击可停止警戒.
 cmu-boiler-air-watching = 你抬头仰望天空，准备向穿越这个扇区的战机喷吐炽热等离子体.
-cmu-boiler-air-lowered = 你收回目光，停止搜寻空域目标..
+cmu-boiler-air-lowered = 你收回目光，停止搜寻空域目标.
 cmu-boiler-air-title = 锅炉异形 / 空域
 cmu-boiler-air-cost = 自动喷射等离子体 · 每次 200 点 · 需要露天地带
 cmu-boiler-air-empty = 等离子体不足 · 至少需要 200 点
-cmu-boiler-air-cycling = 等离子体充能中 · 剩余{ $seconds }秒
+cmu-boiler-air-cycling = 等离子体充能中 · 剩余 { $seconds } 秒
 cmu-fighter-plasma-incoming = 等离子体来袭警报！
 cmu-fighter-iff-owner = [color=cyan]敌我识别阵营：{ $faction }.[/color]
 cmu-fighter-iff-unassigned = [color=yellow]敌我识别归属未分配.[/color]
@@ -270,11 +270,11 @@ cmu-fighter-targeting-ground = 对地观瞄将在战机升空后可用.
 cmu-fighter-preset-alt-low = 低空
 cmu-fighter-preset-alt-medium = 中空
 cmu-fighter-preset-alt-high = 高空
-cmu-fighter-preset-speed-stall =失速临界
+cmu-fighter-preset-speed-stall = 失速临界
 cmu-fighter-preset-speed-cruise = 巡航速度
 cmu-fighter-preset-speed-afterburner = 开启加力
 cmu-fighter-targets-heading = 信号弹 / 激光指示
-cmu-fighter-targets-empty =地面无信号弹
+cmu-fighter-targets-empty = 地面无信号弹
     或激光指示
 cmu-fighter-targets-help = 选择一个标记
     绿色 = 就绪
@@ -284,7 +284,7 @@ cmu-fighter-weapon-brief = { $name }
 cmu-fighter-flares-short = 热诱弹
 cmu-fighter-flares-idle = 当导弹触发接近告警时，对抗措施将自动解锁.
 ent-CMUFighterGroundLoaded = 双座垂直起降战斗机
-    .desc = 一架对地打击与侦察战斗机，配备六枚导弹挂点与采用内部供弹的GAU-21 转管机炮.可在地面使用动力装卸机为其进行武器装填与整备.
+    .desc = 一架对地打击与侦察战斗机，配备六个导弹挂架与采用内部供弹的 GAU-21 转管机炮.可在地面使用动力装载机为其进行武器装填与整备.
     .suffix = 满载出击，混合挂载导弹
 
 cmu-fighter-crash-warning = 机体严重结构故障 — 立即弹射！{ $seconds } 秒后坠毁！

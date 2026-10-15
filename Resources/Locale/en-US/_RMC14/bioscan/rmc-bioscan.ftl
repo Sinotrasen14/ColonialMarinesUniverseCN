@@ -3,42 +3,34 @@ rmc-bioscan-ares-announcement = [color=white][font size=16][bold]APOLLO MK.II - 
 
 rmc-bioscan-ares = 生物扫描完成。
 
-  传感器显示舰上有{ $shipUncontained ->
-    [0] no
-    *[other] {$shipUncontained}
-  }个未知生命体信号{ $shipUncontained ->
-    [0] signatures
-    [1] signature
-    *[other] signatures
+  传感器显示舰上{ $shipUncontained ->
+    [0] 未检测到未知生命体信号
+    *[other] 存在 {$shipUncontained} 个未知生命体信号
   }{ $shipLocation ->
     [none] {""}
-    *[other], including one in {$shipLocation},
-  }，另有{ $onPlanet ->
-    [0] no
-    *[other] approximately {$onPlanet}
-  }个信号{ $onPlanet ->
-    [0] signatures
-    [1] signature
-    *[other] signatures
-  }位于其他地点{ $planetLocation ->
-    [none].
-    *[other], including one in {$planetLocation}
+    *[other] ，其中一个位于{$shipLocation}
+  }；{ $onPlanet ->
+    [0] 其他区域未检测到信号
+    *[other] 其他区域检测到约 {$onPlanet} 个信号
+  }{ $planetLocation ->
+    [none] 。
+    *[other] ，其中一个位于{$planetLocation}。
   }
 
-rmc-bioscan-xeno-announcement = [color=#318850][font size=14][bold]母后从遥远的世界伸入你的意识。
+rmc-bioscan-xeno-announcement = [color=#318850][font size=14][bold]母后从遥远的世界伸入你的心灵。
    {$message}[/bold][/font][/color]
 
-rmc-bioscan-xeno = 致我的子嗣和它们的女王：我感知到金属蜂巢中有{ $onShip ->
-    [0] no hosts
-    [1] approximately 1 host
-    *[other] approximately {$onShip} hosts
+rmc-bioscan-xeno = 致我的子嗣和它们的女王：我感知到金属蜂巢中{ $onShip ->
+    [0] 没有宿主
+    [1] 有 1 个宿主
+    *[other] 约有 {$onShip} 个宿主
   }{ $shipLocation ->
     [none] {""}
-    *[other], including one in {$shipLocation},
-  }，另有{$onPlanet ->
-    [0] none
-    *[other] {$onPlanet}
-  }个散布在其他地点{$planetLocation ->
-    [none].
-    *[other], including one in {$planetLocation}
+    *[other] ，其中一个位于{$shipLocation}
+  }；{ $onPlanet ->
+    [0] 其他地点亦无宿主
+    *[other] 其他地点散布着 {$onPlanet} 个宿主
+  }{ $planetLocation ->
+    [none] 。
+    *[other] ，其中一个位于{$planetLocation}。
   }

@@ -19,9 +19,10 @@ public sealed partial class Anticorrosive : RMCChemicalEffect
     {
         var healing = PotencyPerSecond * 1.5f;
 
-        return $"治疗 [color=green]{healing}[/color] 点灼伤伤害并恢复受损植物的健康。\n" +
+        return $"治疗 [color=green]{healing}[/color] 点烧伤。\n" +
                $"药物过量会造成 [color=red]{PotencyPerSecond}[/color] 点创伤和 [color=red]{PotencyPerSecond}[/color] 点毒素伤害。\n" +
-               $"药物严重过量会造成 [color=red]{PotencyPerSecond * 5}[/color] 点创伤和 [color=red]{PotencyPerSecond * 5}[/color] 点毒素伤害。";
+               $"药物严重过量会造成 [color=red]{PotencyPerSecond * 5}[/color] 点创伤和 [color=red]{PotencyPerSecond * 5}[/color] 点毒素伤害。\n" +
+               "能恢复受损植物的健康。";
     }
 
     protected override void Tick(RMCChemicalEffectSystem system, DamageableSystem damageable, FixedPoint2 potency, RMCReagentEffectArgs args)
