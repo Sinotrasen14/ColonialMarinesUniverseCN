@@ -41,7 +41,7 @@ cmu-medical-alert-nerve-damage-desc         = 你受影响肢体的瞄准会摇�
 cmu-medical-alert-transplant-rejection-name = 器官排斥
 cmu-medical-alert-transplant-rejection-desc = 你的身体正在排斥移植的器官。
 cmu-medical-alert-bone-regen-boost-name     = 骨骼再生
-cmu-medical-alert-bone-regen-boost-desc     = OsteoCalc 正在加速骨骼愈合。
+cmu-medical-alert-bone-regen-boost-desc     = 骨钙素正在加速骨骼愈合。
 
 cmu-medical-fracture-movement-complication  = 疼痛撕裂了未经固定的骨折处！
 cmu-medical-brain-disorientation             = 剧烈的头痛让你迷失了方向！

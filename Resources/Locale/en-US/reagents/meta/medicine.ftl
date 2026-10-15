@@ -1,19 +1,19 @@
 reagent-name-cryptobiolin = 隐生碱
 reagent-desc-cryptobiolin = 会引起混乱和眩晕。
 
-reagent-name-dylovene = 地洛芬
+reagent-name-dylovene = Dylovene (地洛芬)
 reagent-desc-dylovene = 一种广谱抗毒素，可治疗有机体内的毒素伤害。过量会导致呕吐、眩晕和疼痛。
 
 reagent-name-diphenhydramine = 苯海拉明
 reagent-desc-diphenhydramine = 能迅速清除体内的组胺、减轻颤抖、引起困倦，并治疗中毒伤害。常被加入安眠药中。
 
-reagent-name-arithrazine = 阿里沙嗪
+reagent-name-arithrazine = Arithrazine (阿里沙嗪)
 reagent-desc-arithrazine = 一种略微不稳定的药物，用于最极端的辐射中毒病例。会对身体造成轻微压力。
 
-reagent-name-bicaridine = 比卡利啶
+reagent-name-bicaridine = Bicaridine (比卡利啶)
 reagent-desc-bicaridine = 一种镇痛药，对治疗钝器伤害非常有效。可用于稳定被严重殴打的人，也可治疗不太危及生命的伤势。
 
-reagent-name-cryoxadone = cryoxadone冷冻酮
+reagent-name-cryoxadone = Cryoxadone (冷冻酮)
 reagent-desc-cryoxadone = 一种在213K或更低温度下治疗窒息和失血的低温药物。少量使用时，它也能治疗和恢复植物活力。
 
 reagent-name-doxarubixadone = doxarubixadone多柔比星
@@ -29,17 +29,17 @@ reagent-name-necrosol = necrosol死土
 reagent-desc-necrosol = 一种低温药物，每用 5 单位可以再生一个缺失的原生肢体，逐渐修复所有骨折，并在 213K 或更低温度下每秒恢复 1% 的血量。它不能治疗一般伤害。
 
 
-reagent-name-dermaline = 德马林
+reagent-name-dermaline = Dermaline (德马林)
 reagent-desc-dermaline = 一种高级化学品，治疗烧伤的效果比凯洛坦更好。
 
-reagent-name-dexalin = 德沙林
+reagent-name-dexalin = Dexalin (德沙林)
 reagent-desc-dexalin = 用于治疗轻微缺氧和失血。是制作德沙林 Plus的必需试剂。
 
-reagent-name-dexalin-plus = 德沙林 Plus
-reagent-name-dexalin-plus-saline = 德沙林 Plus和生理盐水
+reagent-name-dexalin-plus = Dexalin Plus (德沙林 Plus)
+reagent-name-dexalin-plus-saline = Dexalin Plus (德沙林 Plus)和生理盐水
 reagent-desc-dexalin-plus = 用于治疗极端的缺氧和失血。能把碎心毒素冲出血液。
 
-reagent-name-epinephrine = 肾上腺素
+reagent-name-epinephrine = Epinephrine (肾上腺素)
 reagent-desc-epinephrine = 一种有效的稳定化学品，用于在濒危期间让危重者不至于窒息而死，同时修补轻微伤害。会以消耗更多肾上腺素为代价把碎心毒素冲出血液，但可能增加组胺。有助于减少眩晕时间。常见于应急医疗笔中。
 
 reagent-name-hyronalin = 海龙林
@@ -48,13 +48,13 @@ reagent-desc-hyronalin = 一种较弱的辐射伤害治疗剂。是阿里沙嗪�
 reagent-name-ipecac = 吐根碱
 reagent-desc-ipecac = 一种速效催吐剂。可用于阻止未代谢的毒物，或进行集体催吐。
 
-reagent-name-inaprovaline = 伊纳普伐林
+reagent-name-inaprovaline = Inaprovaline (伊纳普伐林)
 reagent-desc-inaprovaline = 伊纳普伐林是一种突触兴奋剂和心脏兴奋剂，常用于治疗濒危状态造成的窒息伤害并减少出血。用于许多高级药物中。
 
-reagent-name-kelotane = 凯洛坦
+reagent-name-kelotane = Kelotane (凯洛坦)
 reagent-desc-kelotane = 治疗烧伤伤害。过量会大大降低身体锁水能力。
 
-reagent-name-leporazine = 勒泊拉嗪
+reagent-name-leporazine = Leporazine (勒泊拉嗪)
 reagent-desc-leporazine = 一种用于稳定体温并迅速治愈寒冷伤害的化学品。非常适合无防护的EVA出行，但会阻止使用冷冻舱。
 
 reagent-name-barozine = 巴罗嗪
@@ -91,10 +91,10 @@ reagent-desc-synaptizine = 一种有毒化学品，能把眩晕和击倒的持�
 reagent-name-tranexamic-acid = 氨甲环酸
 reagent-desc-tranexamic-acid = 一种凝血药物，用于防止大量出血。过量会导致出血更严重。常以少量存在于应急医疗笔中。
 
-reagent-name-tricordrazine = 三可拉嗪
-reagent-desc-tricordrazine = 一种广谱兴奋剂，最初由心复宁衍生而来。只要使用者没有受重伤，就可治疗所有基础健康类型的轻微伤害。最好作为其他化学品的添加剂使用。
+reagent-name-tricordrazine = Tricordrazine (三可拉嗪)
+reagent-desc-tricordrazine = 一种广谱兴奋剂。只要使用者没有受重伤，就可治疗所有基础健康类型的轻微伤害。最好作为其他化学品的添加剂使用。
 
-reagent-name-lipozine = 溶脂素
+reagent-name-lipozine = Lipozine (溶脂素)
 reagent-desc-lipozine = 一种加速新陈代谢的化学品，让使用者更快感到饥饿。
 
 reagent-name-omnizine = 全效素
@@ -106,7 +106,7 @@ reagent-desc-ultravasculine = 一种复杂的抗毒素溶液，能迅速冲洗�
 reagent-name-oculine = 眼舒素
 reagent-desc-oculine = 一种简单的盐溶液，通过内服治疗眼睛。
 
-reagent-name-ethylredoxrazine = 乙基氧化嗪
+reagent-name-ethylredoxrazine = Ethylredoxrazine (乙基氧化嗪)
 reagent-desc-ethylredoxrazine = 中和血液中酒精的效果。虽然常被需要，却很少有人主动索取。
 
 reagent-name-cognizine = 认知素
@@ -138,7 +138,7 @@ reagent-name-holywater = 圣水
 reagent-desc-holywater = 源自神之手的最洁净、最纯净的水，据说能神奇地治愈伤口。
 
 reagent-name-pyrazine = 吡嗪
-reagent-name-pyrazine-dermaline = 吡嗪与德马林
+reagent-name-pyrazine-dermaline = 吡嗪与Dermaline (德马林)
 reagent-desc-pyrazine = 能高效治愈最灼热的火焰造成的烧伤。过量会导致大量内出血。
 
 reagent-name-insuzine = 电修复素

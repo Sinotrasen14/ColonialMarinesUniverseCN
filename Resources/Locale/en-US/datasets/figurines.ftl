@@ -82,7 +82,7 @@ figurines-chemist-2 = 我们得开炉了。
 figurines-chemist-3 = 我才是那个敲门的人！
 figurines-chemist-4 = 说出我的名字。
 figurines-chemist-5 = 纯度99.8%。
-figurines-chemist-6 = 肾上腺素？你说的不是甲基苯丙胺吗？
+figurines-chemist-6 = Epinephrine (肾上腺素)？你说的不是甲基苯丙胺吗？
 figurines-chemist-7 = 药片在这儿！
 figurines-chemist-8 = 从法律上讲，在你把两个烧杯混在一起之前，它还算不上炸弹。
 

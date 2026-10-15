@@ -140,4 +140,4 @@ rmc-tips-139 = 你可以用CTRL + 左键拖动物品，然后按住CTRL + 右键
 rmc-tips-140 = 流血可不是闹着玩的。如果你中枪或受了其他重伤，务必尽快用止血带、止血胶、创伤包或手术缝线自行处理。
 rmc-tips-141 = 你可以在右键菜单中点击物品名称来拾取它们，而不必把鼠标悬停在物品上再选择拾取。
 # CMU14: Chinese medication terminology follows the CMU guidebook.
-rmc-tips-142 = 在没有适当护目装备的情况下焊接会导致眼部损伤，必须用咪达唑啉治疗。
+rmc-tips-142 = 在没有适当护目装备的情况下焊接会导致眼部损伤，必须用Imidazoline (咪达唑啉)治疗。

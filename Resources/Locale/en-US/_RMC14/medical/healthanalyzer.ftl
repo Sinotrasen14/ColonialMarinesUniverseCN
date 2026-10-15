@@ -16,7 +16,7 @@ rmc-health-analyzer-additional-reagents = 另有{ $count }种已知试剂未显�
 
 # cmu edit start
 # rmc-health-analyzer-advice-epinedrine = [color=#6bd43c][font="Emoji"]💉[/font][/color] Administer a single dose of epinedrine.
-rmc-health-analyzer-advice-epinedrine = [color=#6bd43c][font="Emoji"]💉[/font][/color] 施用一剂肾上腺素。
+rmc-health-analyzer-advice-epinedrine = [color=#6bd43c][font="Emoji"]💉[/font][/color] 施用一剂Epinephrine (肾上腺素)。
 # cmu edit end
 rmc-health-analyzer-advice-defib = [color=yellow][font="Emoji"]⚡[/font][/color] 使用除颤器施加电击！
 rmc-health-analyzer-advice-defib-repeated = [color=yellow][font="Emoji"]⚡[/font][/color] 使用除颤器反复施加电击。
@@ -33,7 +33,7 @@ rmc-health-analyzer-advice-food = [font="Emoji"]🍕[/font] 提供食物或建�
 
 rmc-health-analyzer-advice-cpr-crit = [color=skyblue][font="Emoji"]🫀[/font][/color] 进行心肺复苏以稳定患者。
 
-rmc-health-analyzer-advice-dexalin = [color=#5887D5][font="Emoji"]💉[/font][/color] 施用一剂德沙林。
-rmc-health-analyzer-advice-bicaridine = [color=#ed4847][font="Emoji"]💉[/font][/color] 施用一剂比卡利啶。
-rmc-health-analyzer-advice-kelotane = [color=#f5e123][font="Emoji"]💉[/font][/color] 施用一剂凯洛坦。
-rmc-health-analyzer-advice-dylovene = [color=#3fc92a][font="Emoji"]💉[/font][/color] 施用一剂地洛芬。
+rmc-health-analyzer-advice-dexalin = [color=#5887D5][font="Emoji"]💉[/font][/color] 施用一剂Dexalin (德沙林)。
+rmc-health-analyzer-advice-bicaridine = [color=#ed4847][font="Emoji"]💉[/font][/color] 施用一剂Bicaridine (比卡利啶)。
+rmc-health-analyzer-advice-kelotane = [color=#f5e123][font="Emoji"]💉[/font][/color] 施用一剂Kelotane (凯洛坦)。
+rmc-health-analyzer-advice-dylovene = [color=#3fc92a][font="Emoji"]💉[/font][/color] 施用一剂Dylovene (地洛芬)。
