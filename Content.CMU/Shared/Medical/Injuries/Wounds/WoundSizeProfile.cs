@@ -9,127 +9,127 @@ public static class WoundSizeProfile
 
     private static readonly WoundStage[] CutSmallStages =
     {
-        new(20f, "ugly ripped cut"),
-        new(10f, "ripped cut"),
-        new(5f, "cut"),
-        new(2f, "healing cut"),
-        new(0f, "small scab"),
+        new(20f, "严重撕裂伤"),
+        new(10f, "撕裂伤"),
+        new(5f, "割伤"),
+        new(2f, "割伤愈合中"),
+        new(0f, "小血痂"),
     };
 
     private static readonly WoundStage[] CutDeepStages =
     {
-        new(25f, "ugly deep ripped cut"),
-        new(20f, "deep ripped cut"),
-        new(15f, "deep cut"),
-        new(8f, "clotted cut"),
-        new(2f, "scab"),
-        new(0f, "fresh skin"),
+        new(25f, "严重深层撕裂伤"),
+        new(20f, "深层撕裂伤"),
+        new(15f, "深层割伤"),
+        new(8f, "结痂割伤"),
+        new(2f, "血痂"),
+        new(0f, "新生皮肤"),
     };
 
     private static readonly WoundStage[] CutFleshStages =
     {
-        new(35f, "ugly ripped flesh wound"),
-        new(30f, "ugly flesh wound"),
-        new(25f, "flesh wound"),
-        new(15f, "blood soaked clot"),
-        new(5f, "large scab"),
-        new(0f, "fresh skin"),
+        new(35f, "严重撕裂皮肉伤"),
+        new(30f, "严重皮肉伤"),
+        new(25f, "皮肉伤"),
+        new(15f, "浸血血块"),
+        new(5f, "大面积结痂"),
+        new(0f, "新生皮肤"),
     };
 
     private static readonly WoundStage[] CutGapingStages =
     {
-        new(50f, "gaping wound"),
-        new(25f, "large blood soaked clot"),
-        new(15f, "large clot"),
-        new(5f, "small angry scar"),
-        new(0f, "small straight scar"),
+        new(50f, "裂口伤口"),
+        new(25f, "浸血大血块"),
+        new(15f, "大血块"),
+        new(5f, "红肿小疤痕"),
+        new(0f, "平直小疤痕"),
     };
 
     private static readonly WoundStage[] CutGapingBigStages =
     {
-        new(60f, "big gaping wound"),
-        new(40f, "healing gaping wound"),
-        new(10f, "large angry scar"),
-        new(0f, "large straight scar"),
+        new(60f, "巨大裂口伤口"),
+        new(40f, "裂口伤口愈合中"),
+        new(10f, "红肿大疤"),
+        new(0f, "平直大疤"),
     };
 
     private static readonly WoundStage[] CutMassiveStages =
     {
-        new(70f, "massive wound"),
-        new(50f, "massive healing wound"),
-        new(10f, "massive angry scar"),
-        new(0f, "massive jagged scar"),
+        new(70f, "巨大创口"),
+        new(50f, "巨大创口愈合中"),
+        new(10f, "红肿大疤"),
+        new(0f, "锯齿状大疤"),
     };
 
     private static readonly WoundStage[] BruiseStages =
     {
-        new(80f, "monumental bruise"),
-        new(50f, "huge bruise"),
-        new(30f, "large bruise"),
-        new(20f, "moderate bruise"),
-        new(10f, "small bruise"),
-        new(5f, "tiny bruise"),
-        new(0f, "fading bruise"),
+        new(80f, "骇人挫伤"),
+        new(50f, "巨大挫伤"),
+        new(30f, "大面积挫伤"),
+        new(20f, "中度挫伤"),
+        new(10f, "轻度挫伤"),
+        new(5f, "微度挫伤"),
+        new(0f, "淤青消退中"),
     };
 
     private static readonly WoundStage[] BurnModerateStages =
     {
-        new(10f, "ripped burn"),
-        new(5f, "moderate burn"),
-        new(2f, "healing moderate burn"),
-        new(0f, "fresh skin"),
+        new(10f, "裂口烧伤"),
+        new(5f, "中度烧伤"),
+        new(2f, "中度烧伤愈合中"),
+        new(0f, "新生皮肤"),
     };
 
     private static readonly WoundStage[] BurnLargeStages =
     {
-        new(20f, "ripped large burn"),
-        new(15f, "large burn"),
-        new(5f, "healing large burn"),
-        new(0f, "fresh skin"),
+        new(20f, "裂口烧伤"),
+        new(15f, "大面积烧伤"),
+        new(5f, "大面积烧伤愈合中"),
+        new(0f, "新生皮肤"),
     };
 
     private static readonly WoundStage[] BurnSevereStages =
     {
-        new(35f, "ripped severe burn"),
-        new(30f, "severe burn"),
-        new(10f, "healing severe burn"),
-        new(0f, "burn scar"),
+        new(35f, "重度撕裂烧伤"),
+        new(30f, "重度烧伤"),
+        new(10f, "重度烧伤愈合中"),
+        new(0f, "大烧伤疤痕"),
     };
 
     private static readonly WoundStage[] BurnDeepStages =
     {
-        new(45f, "ripped deep burn"),
-        new(40f, "deep burn"),
-        new(15f, "healing deep burn"),
-        new(0f, "large burn scar"),
+        new(45f, "裂口深层烧伤"),
+        new(40f, "深层烧伤"),
+        new(15f, "深层烧伤愈合中"),
+        new(0f, "大烧伤疤痕"),
     };
 
     private static readonly WoundStage[] BurnCarbonisedStages =
     {
-        new(50f, "carbonised area"),
-        new(20f, "healing carbonised area"),
-        new(0f, "massive burn scar"),
+        new(50f, "炭化创面"),
+        new(20f, "炭化创面愈合中"),
+        new(0f, "大烧伤疤痕"),
     };
 
     private static readonly WoundStage[] InternalBleedingStages =
     {
-        new(0f, "bruised artery"),
+        new(0f, "动脉挫伤出血"),
     };
 
     private static readonly WoundStage[] LostLimbSmallStages =
     {
-        new(40f, "ripped stump"),
-        new(30f, "bloody stump"),
-        new(15f, "clotted stump"),
-        new(0f, "scarred stump"),
+        new(40f, "撕裂残肢"),
+        new(30f, "出血断肢"),
+        new(15f, "已结痂断肢"),
+        new(0f, "留疤断肢"),
     };
 
     private static readonly WoundStage[] LostLimbStages =
     {
-        new(65f, "ripped stump"),
-        new(50f, "bloody stump"),
-        new(25f, "clotted stump"),
-        new(0f, "scarred stump"),
+        new(65f, "撕裂残肢"),
+        new(50f, "出血断肢"),
+        new(25f, "已结痂断肢"),
+        new(0f, "留疤断肢"),
     };
 
     public static WoundSize FromDamage(float damage)
@@ -196,21 +196,21 @@ public static class WoundSizeProfile
 
     public static string TierName(WoundSize size) => size switch
     {
-        WoundSize.CutSmall => "small cut",
-        WoundSize.CutDeep => "deep cut",
-        WoundSize.CutFlesh => "flesh wound",
-        WoundSize.CutGaping => "gaping wound",
-        WoundSize.CutGapingBig => "big gaping wound",
-        WoundSize.CutMassive => "massive wound",
-        WoundSize.Bruise => "bruise",
-        WoundSize.BurnModerate => "moderate burn",
-        WoundSize.BurnLarge => "large burn",
-        WoundSize.BurnSevere => "severe burn",
-        WoundSize.BurnDeep => "deep burn",
-        WoundSize.BurnCarbonised => "carbonised area",
-        WoundSize.InternalBleeding => "bruised artery",
-        WoundSize.LostLimbSmall or WoundSize.LostLimb => "stump",
-        _ => "wound",
+        WoundSize.CutSmall => "浅割伤",
+        WoundSize.CutDeep => "深割伤",
+        WoundSize.CutFlesh => "皮肉伤",
+        WoundSize.CutGaping => "裂开创口",
+        WoundSize.CutGapingBig => "大裂口",
+        WoundSize.CutMassive => "巨大伤口",
+        WoundSize.Bruise => "淤青",
+        WoundSize.BurnModerate => "中度烧伤",
+        WoundSize.BurnLarge => "大面积烧伤",
+        WoundSize.BurnSevere => "重度烧伤",
+        WoundSize.BurnDeep => "深层烧伤",
+        WoundSize.BurnCarbonised => "碳化创面",
+        WoundSize.InternalBleeding => "动脉挫伤",
+        WoundSize.LostLimbSmall or WoundSize.LostLimb => "断肢",
+        _ => "创口",
     };
 
     public static int SeverityRank(WoundSize size, float damage = 0f)
