@@ -1,5 +1,5 @@
 # supervisors
-cm-job-supervisors-we-ya = 威兰-尤塔尼企业办公室
+cm-job-supervisors-we-ya = 维兰德-汤谷 企业办公室
 cm-job-supervisors-aso = 辅助支援官
 cm-job-supervisors-co = 指挥官
 rmc-job-supervisors-commander = 现任指挥官

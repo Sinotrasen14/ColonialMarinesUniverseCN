@@ -28,7 +28,7 @@ rmc-bioscan-xeno = 致我的子嗣和它们的女王：我感知到金属蜂巢�
     [none] {""}
     *[other] ，其中一个位于{$shipLocation}
   }；{ $onPlanet ->
-    [0] 其他地点亦无宿主
+    [0] 其他地点无宿主
     *[other] 其他地点散布着 {$onPlanet} 个宿主
   }{ $planetLocation ->
     [none] 。

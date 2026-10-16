@@ -29,4 +29,4 @@ rmc-job-name-hybrisa-civilian = 海布莉莎繁荣地殖民者
 rmc-job-description-hybrisa-civilian = 在海布莉莎繁荣地度过你的一生。
 
 rmc-job-name-corp-synthetic = 企业合成体
-rmc-job-description-corp-synthetic = 在需要的地方支援威兰-尤塔尼的利益和人员。
+rmc-job-description-corp-synthetic = 在需要的地方支援维兰德-汤谷的利益和人员。

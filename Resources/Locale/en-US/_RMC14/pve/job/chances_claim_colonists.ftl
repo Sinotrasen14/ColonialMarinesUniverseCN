@@ -1,10 +1,10 @@
-rmc-job-greeting-chances-colonist = 你是居住在LV-522上的殖民者。你的雇主威兰-尤塔尼公司要求你履行应尽的职责。
+rmc-job-greeting-chances-colonist = 你是居住在LV-522上的殖民者。你的雇主维兰德-汤谷公司要求你履行应尽的职责。
 
   你对UNMC[bold][color=#51A16C][font size=16]无敌意！[/font][/color][/bold]
 
-rmc-job-name-colonist-chances-trucker = 威兰-尤塔尼重型载具操作员
+rmc-job-name-colonist-chances-trucker = 维兰德-汤谷重型载具操作员
 rmc-job-description-colonist-chances-trucker = 在殖民地内外操作重型设备。
-CMSurvivorChancesTrucker = 威兰-尤塔尼重型载具操作员
+CMSurvivorChancesTrucker = 维兰德-汤谷重型载具操作员
 
 rmc-job-name-colonist-chances-miner = 采矿勘测员
 CMSurvivorChancesMiner = 采矿勘测员

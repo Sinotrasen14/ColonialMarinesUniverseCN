@@ -1,11 +1,11 @@
 cmu-whiteout-name = WY 白化行动特工
 cmu-whiteout-name-gunner = WY 白化行动智能枪手
 cmu-whiteout-name-synthetic = WY PMC 合成人
-cmu-whiteout-description = 一名威兰-汤谷白化行动特工。白化行动小队是焦土清理部队：不留目击者，不留证据，不留幸存者。
-cmu-whiteout-description-synthetic = 一名隶属于白化行动清理小队的威兰-汤谷合成人。它毫无质疑、毫不犹豫地支援行动。
+cmu-whiteout-description = 一名维兰德-汤谷白化行动特工。白化行动小队是焦土清理部队：不留目击者，不留证据，不留幸存者。
+cmu-whiteout-description-synthetic = 一名隶属于白化行动清理小队的维兰德-汤谷合成人。它毫无质疑、毫不犹豫地支援行动。
 cmu-whiteout-prefix = WHO
 cmu-whiteout-prefix-gunner = WHG
 cmu-whiteout-prefix-synthetic = SYN
 cmu-whiteout-leader = 白化行动小队队长
-cmu-whiteout-rules = 你是威兰-汤谷白化行动特工。你的小队已被派遣去抹除公司在此战区一切介入的痕迹，包括所有目击者。这是一个管理员事件角色：遵循事件主持人的指示，并将角色扮演置于纯粹击杀之上。
-cmu-whiteout-greeting = 你是威兰-汤谷白化行动特工。你的命令是绝对的：净化现场，销毁证据，不留目击者。公司否认你的存在。狩猎愉快。
+cmu-whiteout-rules = 你是维兰德-汤谷白化行动特工。你的小队已被派遣去抹除公司在此战区一切介入的痕迹，包括所有目击者。这是一个管理员事件角色：遵循事件主持人的指示，并将角色扮演置于纯粹击杀之上。
+cmu-whiteout-greeting = 你是维兰德-汤谷白化行动特工。你的命令是绝对的：净化现场，销毁证据，不留目击者。公司否认你的存在。狩猎愉快。

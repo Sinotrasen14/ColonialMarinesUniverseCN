@@ -1,6 +1,6 @@
 stamp-component-stamped-name-au14-default = 已盖章
 
-stamp-component-stamped-name-au14-we-yu = 威宇
+stamp-component-stamped-name-au14-we-yu = 维-汤
 stamp-component-stamped-name-au14-marine = 海军陆战队最高指挥部
 stamp-component-stamped-name-au14-cmb = 殖民地法警局
 stamp-component-stamped-name-au14-provost = 宪兵司令办公室
