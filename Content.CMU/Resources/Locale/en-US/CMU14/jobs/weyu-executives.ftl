@@ -26,4 +26,4 @@ cmu-weyuexec-greeting-security = 你是维兰德-汤谷公司的企业安保，�
 cmu-weyuexec-supervisors-hq = 维兰德-汤谷公司总部
 cmu-weyuexec-supervisors-sitedirector = 现场主管
 cmu-weyuexec-greeting = 你是维兰德-汤谷公司高管随行团队的一员，被派来视察现场。保护公司的利益、资产，尤其是它的秘密。这里发生的一切都不留记录。
-cmu-weyuexec-rules = 你是维兰德-汤谷公司的高管。你是一个普通人，任何维胁都能杀死你。保护公司资产和人员，否认一切，能用文书解决就避免公开战斗。
+cmu-weyuexec-rules = 你是维兰德-汤谷公司的高管。你是一个普通人，任何威胁都能杀死你。保护公司资产和人员，否认一切，能用文书解决就避免公开战斗。

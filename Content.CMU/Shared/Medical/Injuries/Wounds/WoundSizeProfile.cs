@@ -28,9 +28,9 @@ public static class WoundSizeProfile
 
     private static readonly WoundStage[] CutFleshStages =
     {
-        new(35f, "严重撕裂皮肉伤"),
-        new(30f, "严重皮肉伤"),
-        new(25f, "皮肉伤"),
+        new(35f, "严重撕裂伤"),
+        new(30f, "严重创伤"),
+        new(25f, "创伤"),
         new(15f, "浸血血块"),
         new(5f, "大面积结痂"),
         new(0f, "新生皮肤"),
@@ -38,7 +38,7 @@ public static class WoundSizeProfile
 
     private static readonly WoundStage[] CutGapingStages =
     {
-        new(50f, "裂口伤口"),
+        new(50f, "开裂伤口"),
         new(25f, "浸血大血块"),
         new(15f, "大血块"),
         new(5f, "红肿小疤痕"),
@@ -47,7 +47,7 @@ public static class WoundSizeProfile
 
     private static readonly WoundStage[] CutGapingBigStages =
     {
-        new(60f, "巨大裂口伤口"),
+        new(60f, "巨大开裂伤口"),
         new(40f, "裂口伤口愈合中"),
         new(10f, "红肿大疤"),
         new(0f, "平直大疤"),
@@ -198,7 +198,7 @@ public static class WoundSizeProfile
     {
         WoundSize.CutSmall => "浅割伤",
         WoundSize.CutDeep => "深割伤",
-        WoundSize.CutFlesh => "皮肉伤",
+        WoundSize.CutFlesh => "创伤",
         WoundSize.CutGaping => "裂开创口",
         WoundSize.CutGapingBig => "大裂口",
         WoundSize.CutMassive => "巨大伤口",
