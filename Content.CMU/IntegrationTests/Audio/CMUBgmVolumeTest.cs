@@ -45,7 +45,10 @@ public sealed class CMUBgmVolumeTest
                 Filter.Local(), false, AudioParams.Default.WithVolume(-4f));
             Assert.That(other, Is.Not.Null);
 
-            using var tab = new AudioTab();
+            using var window = new OptionsMenu();
+            window.OpenCentered();
+            window.Tabs.CurrentTab = 3;
+            var tab = window.FindControl<AudioTab>("AudioTab");
             var slider = tab.FindControl<OptionSlider>("SliderVolumeBgm").Slider;
 
             foreach (var gain in new[] { 0f, 0.5f, 1f, 0.25f })
@@ -61,9 +64,28 @@ public sealed class CMUBgmVolumeTest
                 Assert.That(other!.Value.Component.Params.Volume, Is.EqualTo(-4f));
             }
 
+            slider.Value = 0f;
+            window.Tabs.CurrentTab = 0;
+            Assert.That(music.Params.Volume, Is.EqualTo(float.NegativeInfinity),
+                "Switching tabs must keep the live BGM preview.");
+            window.Close();
+            Assert.That(music.Params.Volume, Is.EqualTo(float.NegativeInfinity),
+                "Closing without Apply must keep the live preview, like master volume.");
+            Assert.That(client.CfgMan.GetCVar(CCVars.CMUBgmVolume), Is.EqualTo(0.25f));
+
+            window.UpdateTabs();
+            window.OpenCentered();
+            Assert.That(slider.Value, Is.EqualTo(0.25f));
+            expected = -8f + SharedAudioSystem.GainToVolume(0.25f);
+            Assert.That(music.Params.Volume, Is.EqualTo(expected).Within(0.001f),
+                "Reopening settings must reload the saved BGM gain.");
             slider.Value = 0.5f;
             tab.Control.ApplyChanges();
             Assert.That(client.CfgMan.GetCVar(CCVars.CMUBgmVolume), Is.EqualTo(0.5f));
+            window.Close();
+            expected = -8f + SharedAudioSystem.GainToVolume(0.5f);
+            Assert.That(music.Params.Volume, Is.EqualTo(expected).Within(0.001f),
+                "Closing after Apply must keep the saved BGM gain.");
 
             entMan.System<SharedAudioSystem>().Stop(other!.Value.Entity);
             client.CfgMan.SetCVar(CCVars.AdminSoundsEnabled, false);
