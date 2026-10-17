@@ -190,19 +190,19 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             case BlackfootFlightState.Grounded:
                 if (HasTowConnection(vehicle))
                 {
-                    Popup(args.Performer, "Disconnect towing gear before starting the engines.", PopupType.SmallCaution);
+                    Popup(args.Performer, "启动引擎前请先断开牵引设备。", PopupType.SmallCaution);
                     break;
                 }
 
                 SetState(vehicle, flight, BlackfootFlightState.Idling);
-                Popup(args.Performer, "Blackfoot engines idling.");
+                Popup(args.Performer, "黑足引擎已进入怠速运转状态。");
                 break;
             case BlackfootFlightState.Idling:
                 SetState(vehicle, flight, BlackfootFlightState.Grounded);
-                Popup(args.Performer, "Blackfoot engines offline.");
+                Popup(args.Performer, "黑足引擎已关闭。");
                 break;
             default:
-                Popup(args.Performer, "The engines cannot be toggled in the current flight state.", PopupType.SmallCaution);
+                Popup(args.Performer, "当前飞行状态下无法切换引擎开关。", PopupType.SmallCaution);
                 break;
         }
 
@@ -220,7 +220,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             return;
 
         StartTimedTransition(flight, BlackfootFlightState.TakingOff, flight.Comp.TakeoffDuration);
-        Popup(args.Performer, "Blackfoot takeoff sequence started.");
+        Popup(args.Performer, "黑足起飞程序已启动。");
         UpdatePilotActions(ent.Owner, ent.Comp, flight);
     }
 
@@ -235,7 +235,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             return;
 
         StartTimedTransition(flight, BlackfootFlightState.Landing, flight.Comp.LandingDuration);
-        Popup(args.Performer, "Blackfoot landing sequence started.");
+        Popup(args.Performer, "黑足着陆程序已启动。");
         UpdatePilotActions(ent.Owner, ent.Comp, flight);
     }
 
@@ -251,15 +251,15 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             case BlackfootFlightState.VTOL:
                 flight.Comp.MovementMode = BlackfootMovementMode.Flight;
                 SetState(flight.Owner, flight, BlackfootFlightState.Flight);
-                Popup(args.Performer, "Blackfoot flight mode engaged.");
+                Popup(args.Performer, "黑足已切换平飞模式。");
                 break;
             case BlackfootFlightState.Flight:
                 flight.Comp.MovementMode = BlackfootMovementMode.VTOL;
                 SetState(flight.Owner, flight, BlackfootFlightState.VTOL);
-                Popup(args.Performer, "Blackfoot VTOL mode engaged.");
+                Popup(args.Performer, "黑足已切换垂直起降模式。");
                 break;
             default:
-                Popup(args.Performer, "Flight mode can only be changed while airborne.", PopupType.SmallCaution);
+                Popup(args.Performer, "在空中飞行时才能切换飞行模式。", PopupType.SmallCaution);
                 break;
         }
 
@@ -275,13 +275,13 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
 
         if (!TryComp(vehicle, out BlackfootRearDoorComponent? rearDoor))
         {
-            Popup(args.Performer, "This Blackfoot has no rear door controls.", PopupType.SmallCaution);
+            Popup(args.Performer, "此型号没有后舱门控制装置。", PopupType.SmallCaution);
             return;
         }
 
         rearDoor.Open = !rearDoor.Open;
         Dirty(vehicle, rearDoor);
-        Popup(args.Performer, rearDoor.Open ? "Rear door opened." : "Rear door closed.");
+        Popup(args.Performer, rearDoor.Open ? "后舱门已开启。" : "后舱门已关闭。");
         UpdatePilotActions(ent.Owner, ent.Comp, flight);
     }
 
@@ -296,14 +296,14 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         {
             case BlackfootFlightState.Grounded:
                 SetState(flight.Owner, flight, BlackfootFlightState.Stowed);
-                Popup(args.Performer, "Blackfoot stowed.");
+                Popup(args.Performer, "黑足已折叠收纳。");
                 break;
             case BlackfootFlightState.Stowed:
                 SetState(flight.Owner, flight, BlackfootFlightState.Grounded);
-                Popup(args.Performer, "Blackfoot deployed.");
+                Popup(args.Performer, "黑足已展开部署。");
                 break;
             default:
-                Popup(args.Performer, "The Blackfoot must be grounded to stow or deploy.", PopupType.SmallCaution);
+                Popup(args.Performer, "黑足必须在地面着陆才能进行收展。", PopupType.SmallCaution);
                 break;
         }
 
@@ -386,7 +386,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             return;
 
         SetState(flight.Owner, flight, BlackfootFlightState.Grounded);
-        PopupPilot(flight.Owner, "Blackfoot systems restored. The aircraft is grounded.");
+        PopupPilot(flight.Owner, "黑足系统已恢复运转。当前已迫降在地面着陆。");
     }
 
     internal static bool ShouldRecoverFromCrash(
@@ -431,44 +431,44 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             case BlackfootFlightState.Idling:
                 break;
             case BlackfootFlightState.Stowed:
-                Popup(pilot, "Deploy the Blackfoot before takeoff.", PopupType.SmallCaution);
+                Popup(pilot, "起飞前请先展开机翼。", PopupType.SmallCaution);
                 return false;
             case BlackfootFlightState.Grounded:
-                Popup(pilot, "Start the Blackfoot engines before takeoff.", PopupType.SmallCaution);
+                Popup(pilot, "起飞前请先启动引擎。", PopupType.SmallCaution);
                 return false;
             case BlackfootFlightState.TakingOff:
-                Popup(pilot, "The Blackfoot is already taking off.", PopupType.SmallCaution);
+                Popup(pilot, "正在起飞过程中。", PopupType.SmallCaution);
                 return false;
             case BlackfootFlightState.Crashed:
-                Popup(pilot, "The Blackfoot is too damaged to take off.", PopupType.SmallCaution);
+                Popup(pilot, "机身受损过重，无法起飞。", PopupType.SmallCaution);
                 return false;
             default:
-                Popup(pilot, "The Blackfoot must be idling before takeoff.", PopupType.SmallCaution);
+                Popup(pilot, "起飞前必须处于引擎怠速状态。", PopupType.SmallCaution);
                 return false;
         }
 
         if (HasTowConnection(flight.Owner))
         {
-            Popup(pilot, "Disconnect towing gear before takeoff.", PopupType.SmallCaution);
+            Popup(pilot, "起飞前请先断开牵引设备。", PopupType.SmallCaution);
             return false;
         }
 
         if (TryComp(flight, out BlackfootFuelPowerComponent? fuel) &&
             fuel.Fuel < fuel.MinimumTakeoffFuel)
         {
-            Popup(pilot, "The Blackfoot does not have enough fuel for takeoff.", PopupType.SmallCaution);
+            Popup(pilot, "燃油不足，无法起飞。", PopupType.SmallCaution);
             return false;
         }
 
         if (!HasFunctionalThrusters(flight.Owner))
         {
-            Popup(pilot, "The Blackfoot needs functional thrusters before takeoff.", PopupType.SmallCaution);
+            Popup(pilot, "起飞前需要完好可用的推进器。", PopupType.SmallCaution);
             return false;
         }
 
         if (!HasMapOffset(flight.Owner, flight.Comp.AirborneMapOffset))
         {
-            Popup(pilot, "No upper Z level is available for takeoff.", PopupType.SmallCaution);
+            Popup(pilot, "上方没有可用于起飞的 Z 轴空域。", PopupType.SmallCaution);
             return false;
         }
 
@@ -486,8 +486,8 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         if (flight.Comp.State != BlackfootFlightState.VTOL)
         {
             var message = flight.Comp.State == BlackfootFlightState.Flight
-                ? "Switch to VTOL mode before landing."
-                : "The Blackfoot must be airborne in VTOL mode before landing.";
+                ? "着陆前请先切换至垂直起降模式。"
+                : "着陆前必须处于空中的垂直起降模式。";
 
             Popup(pilot, message, PopupType.SmallCaution);
             return false;
@@ -495,7 +495,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
 
         if (!HasMapOffset(flight.Owner, flight.Comp.GroundMapOffset))
         {
-            Popup(pilot, "No lower Z level is available for landing.", PopupType.SmallCaution);
+            Popup(pilot, "下方没有可用于着陆的 Z 轴空域。", PopupType.SmallCaution);
             return false;
         }
 
@@ -524,7 +524,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             !_zLevels.TryMove(flight.Owner, flight.Comp.AirborneMapOffset))
         {
             SetState(flight.Owner, flight, BlackfootFlightState.Idling);
-            PopupPilot(flight.Owner, reason ?? "Takeoff failed: the Blackfoot could not move to the upper Z level.", PopupType.SmallCaution);
+            PopupPilot(flight.Owner, reason ?? "起飞失败：无法升至上方 Z 轴空域。", PopupType.SmallCaution);
             return;
         }
 
@@ -532,7 +532,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         SetState(flight.Owner, flight, BlackfootFlightState.VTOL);
         SpawnShadow(flight);
         _viewToggle.RefreshOutsideViewers(flight.Owner);
-        PopupPilot(flight.Owner, "Blackfoot airborne in VTOL mode.");
+        PopupPilot(flight.Owner, "已升空并进入垂直起降模式。");
     }
 
     private void FinishLanding(Entity<BlackfootFlightComponent> flight)
@@ -541,7 +541,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             !_zLevels.TryMove(flight.Owner, flight.Comp.GroundMapOffset))
         {
             SetState(flight.Owner, flight, BlackfootFlightState.VTOL);
-            PopupPilot(flight.Owner, reason ?? "Landing failed: the Blackfoot could not move to the lower Z level.", PopupType.SmallCaution);
+            PopupPilot(flight.Owner, reason ?? "着陆失败：无法降至下方 Z 轴空域。", PopupType.SmallCaution);
             return;
         }
 
@@ -550,21 +550,21 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         flight.Comp.MovementMode = BlackfootMovementMode.VTOL;
         SetState(flight.Owner, flight, BlackfootFlightState.Idling);
         _viewToggle.RefreshOutsideViewers(flight.Owner);
-        PopupPilot(flight.Owner, "Blackfoot landed.");
+        PopupPilot(flight.Owner, "已成功着陆。");
     }
 
     private bool TryMoveAltitude(Entity<BlackfootFlightComponent> flight, EntityUid pilot, int offset)
     {
         if (flight.Comp.State is not (BlackfootFlightState.VTOL or BlackfootFlightState.Flight))
         {
-            Popup(pilot, "Altitude can only be changed while the Blackfoot is airborne.", PopupType.SmallCaution);
+            Popup(pilot, "只有在空中飞行时才能改变高度。", PopupType.SmallCaution);
             return false;
         }
 
         var xform = Transform(flight.Owner);
         if (xform.MapUid is not { } currentMap)
         {
-            Popup(pilot, "The Blackfoot is not on a valid Z map.", PopupType.SmallCaution);
+            Popup(pilot, "当前不在有效的 Z 轴地图上。", PopupType.SmallCaution);
             return false;
         }
 
@@ -573,8 +573,8 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             Popup(
                 pilot,
                 offset > 0
-                    ? "There is no higher Z level for the Blackfoot to climb to."
-                    : "There is no lower Z level for the Blackfoot to descend to.",
+                    ? "上方没有更高的 Z 轴空域可供爬升。"
+                    : "下方没有更低的 Z 轴空域可供下降。",
                 PopupType.SmallCaution);
             return false;
         }
@@ -582,18 +582,18 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         if (offset < 0 &&
             (targetMap.Value.Comp.Depth == 0 || TryValidateLandingFootprint(flight, out _)))
         {
-            Popup(pilot, "Use the landing sequence to descend to ground level.", PopupType.SmallCaution);
+            Popup(pilot, "如需降落至地面，请使用着陆程序。", PopupType.SmallCaution);
             return false;
         }
 
         if (!_zLevels.TryMove(flight.Owner, offset, currentMap))
         {
-            Popup(pilot, "The Blackfoot could not change altitude.", PopupType.SmallCaution);
+            Popup(pilot, "黑足无法改变高度。", PopupType.SmallCaution);
             return false;
         }
 
         _viewToggle.RefreshOutsideViewers(flight.Owner);
-        Popup(pilot, offset > 0 ? "Blackfoot climbing one Z level." : "Blackfoot descending one Z level.");
+        Popup(pilot, offset > 0 ? "正在爬升一层 Z 轴高度。" : "正在下降一层 Z 轴高度。");
         return true;
     }
 
@@ -817,19 +817,19 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
 
         if (!HasFunctionalThrusters(flight.Owner))
         {
-            reason = "Takeoff failed: the Blackfoot needs functional thrusters.";
+            reason = "起飞失败：推进器无法正常工作。";
             return false;
         }
 
         if (!HasMapOffset(flight.Owner, flight.Comp.AirborneMapOffset))
         {
-            reason = "Takeoff failed: no upper Z level is available.";
+            reason = "起飞失败：上方没有可用的 Z 轴空域。";
             return false;
         }
 
         if (!TryValidateTakeoffFootprint(flight, out var footprintReason))
         {
-            reason = $"Takeoff failed: {footprintReason}";
+            reason = $"起飞失败：{footprintReason}";
             return false;
         }
 
@@ -852,13 +852,13 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
 
         if (!HasMapOffset(flight.Owner, flight.Comp.GroundMapOffset))
         {
-            reason = "Landing failed: no lower Z level is available.";
+            reason = "着陆失败：下方没有可用的 Z 轴空域。";
             return false;
         }
 
         if (!TryValidateLandingFootprint(flight, out var footprintReason))
         {
-            reason = $"Landing failed: {footprintReason}";
+            reason = $"着陆失败：{footprintReason}";
             return false;
         }
 
@@ -877,7 +877,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         if (xform.MapUid is not { } mapUid ||
             !TryComp(mapUid, out MapGridComponent? grid))
         {
-            reason = "The Blackfoot is not on a valid Z map.";
+            reason = "不在有效的 Z 轴地图上。";
             return false;
         }
 
@@ -908,8 +908,8 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             !_zLevels.TryMapOffset(mapUid, offset, out var targetMap))
         {
             reason = offset > 0
-                ? "No upper Z level is available for takeoff."
-                : "No lower Z level is available for landing.";
+                ? "上方没有可供起飞的 Z 轴空域。"
+                : "下方没有可供着陆的 Z 轴空域。";
             return false;
         }
 
@@ -920,8 +920,8 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
                 return true;
 
             reason = offset > 0
-                ? "No upper Z map grid is available for takeoff."
-                : "No lower Z map grid is available for landing.";
+                ? "上方没有可供起飞的地图网格。"
+                : "下方没有可供着陆的地图网格。";
             return false;
         }
 
@@ -956,7 +956,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             if (allowEmptyTiles)
                 return true;
 
-            reason = "The Blackfoot footprint center is outside valid map tiles.";
+            reason = "机身中心位于有效地图地块之外。";
             return false;
         }
 
@@ -1005,20 +1005,20 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
             if (allowEmptyTiles)
                 return true;
 
-            reason = $"The Blackfoot footprint is outside valid map tiles at offset {offset.X},{offset.Y}.";
+            reason = $"机身范围在偏移坐标 {offset.X},{offset.Y} 处超出了有效地图地块。";
             return false;
         }
 
         if (checkBlockers && _turf.IsTileBlocked(tileRef, FootprintBlockMask))
         {
-            reason = $"The Blackfoot footprint is blocked at offset {offset.X},{offset.Y}.";
+            reason = $"机身范围在偏移坐标 {offset.X},{offset.Y} 处受障碍物阻挡。";
             return false;
         }
 
         if (requireOpenAir &&
             TryGetAirspaceBlockReason(new EntityCoordinates(mapUid, new Vector2(tile.X + 0.5f, tile.Y + 0.5f)), out var airspaceReason))
         {
-            reason = $"{airspaceReason} Offset {offset.X},{offset.Y}.";
+            reason = $"{airspaceReason}（偏移坐标：{offset.X},{offset.Y}）";
             return false;
         }
 
@@ -1031,57 +1031,57 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
 
         if (!_area.TryGetArea(coordinates, out _, out _))
         {
-            reason = "The Blackfoot footprint has no area data.";
+            reason = "所在位置缺少区域数据。";
             return true;
         }
 
         if (!_area.CanOrbitalBombard(coordinates, out var roofed))
         {
             reason = roofed
-                ? "The Blackfoot footprint is blocked by roofing."
-                : "The Blackfoot footprint is outside open-air bombardment permissions.";
+                ? "起降区域被屋顶遮挡。"
+                : "起降区域不在露天空域范围内。";
             return true;
         }
 
         if (!_area.CanCAS(coordinates))
         {
-            reason = "The Blackfoot footprint is outside close-air-support airspace.";
+            reason = "起降区域不在近距离空中支援（CAS）空域内。";
             return true;
         }
 
         if (!_area.CanSupplyDrop(_transform.ToMapCoordinates(coordinates)))
         {
-            reason = "The Blackfoot footprint is outside supply-drop airspace.";
+            reason = "起降区域不在空投补给空域内。";
             return true;
         }
 
         if (!_area.CanMortarFire(coordinates))
         {
-            reason = "The Blackfoot footprint is outside mortar-fire airspace.";
+            reason = "起降区域不在迫击炮火空域内。";
             return true;
         }
 
         if (!_area.CanMortarPlacement(coordinates))
         {
-            reason = "The Blackfoot footprint is outside mortar-placement airspace.";
+            reason = "起降区域不在迫击炮架设空域内。";
             return true;
         }
 
         if (!_area.CanLase(coordinates))
         {
-            reason = "The Blackfoot footprint is outside lasing airspace.";
+            reason = "起降区域不在激光指示空域内。";
             return true;
         }
 
         if (!_area.CanMedevac(coordinates))
         {
-            reason = "The Blackfoot footprint is outside medevac airspace.";
+            reason = "起降区域不在医疗后送（Medevac）空域内。";
             return true;
         }
 
         if (!_area.CanParadrop(coordinates))
         {
-            reason = "The Blackfoot footprint is outside paradrop airspace.";
+            reason = "起降区域不在伞降空域内。";
             return true;
         }
 
@@ -1393,7 +1393,7 @@ public sealed partial class BlackfootFlightSystem : EntitySystem
         if (!TryComp(vehicleUid, out VehicleComponent? vehicleComp) ||
             vehicleComp.Operator != performer)
         {
-            Popup(performer, "Only the Blackfoot pilot can use this control.", PopupType.SmallCaution);
+            Popup(performer, "只有黑足驾驶员才能操作此项。", PopupType.SmallCaution);
             return false;
         }
 

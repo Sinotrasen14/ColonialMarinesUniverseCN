@@ -292,9 +292,9 @@ public sealed partial class AreaInfoSystem : EntitySystem
 
         // CMU14: if (area.Value.Comp.Paradropping)
         if (canParadrop)
-            allowedActions.Add("空降");
+            allowedActions.Add("伞兵空降");
         else
-            restrictedActions.Add("空降");
+            restrictedActions.Add("伞兵空降");
 
         // 添加特殊限制
         if (area.Value.Comp.NoTunnel)
