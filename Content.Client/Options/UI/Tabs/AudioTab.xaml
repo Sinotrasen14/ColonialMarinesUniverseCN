@@ -16,6 +16,8 @@
                 <cmu:CmuOptionSection Title="{Loc 'ui-options-volume-label'}">
                     <ui:OptionDropDown Name="DropDownAudioDevice" Title="{Loc 'ui-options-audio-device'}" />
                     <ui:OptionSlider Name="SliderVolumeMaster" Title="{Loc 'ui-options-master-volume'}" />
+                    <!-- CMU14: independent volume for administrator music. -->
+                    <ui:OptionSlider Name="SliderVolumeBgm" Title="{Loc 'cmu-ui-options-bgm-volume'}" />
                     <ui:OptionSlider Name="SliderVolumeMidi" Title="{Loc 'ui-options-midi-volume'}" />
                     <ui:OptionSlider Name="SliderVolumeAmbientMusic" Title="{Loc 'ui-options-ambient-music-volume'}" />
                     <ui:OptionSlider Name="SliderVolumeAmbience" Title="{Loc 'ui-options-ambience-volume'}" />

@@ -6,6 +6,12 @@ namespace Content.Shared.CCVar;
 
 public sealed partial class CCVars
 {
+    // CMU14 BGM Begin
+    /// <summary>Local gain for administrator music, multiplied by the server's playback volume.</summary>
+    public static readonly CVarDef<float> CMUBgmVolume =
+        CVarDef.Create("cmu.audio.bgm_volume", 1f, CVar.ARCHIVE | CVar.CLIENTONLY);
+    // CMU14 End
+
         /// <summary>
         ///     How long we'll wait until re-sampling nearby objects for ambience. Should be pretty fast, but doesn't have to match the tick rate.
         /// </summary>

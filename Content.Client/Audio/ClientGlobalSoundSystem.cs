@@ -2,6 +2,7 @@ using Content.Shared.Audio;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Robust.Shared.Audio;
+using Robust.Shared.Audio.Components; // CMU14
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Configuration;
 using Robust.Shared.Player;
@@ -15,7 +16,9 @@ public sealed partial class ClientGlobalSoundSystem : SharedGlobalSoundSystem
 
     // Admin music
     private bool _adminAudioEnabled = true;
-    private List<EntityUid?> _adminAudio = new(1);
+    // private List<EntityUid?> _adminAudio = new(1); // CMU14: retain original volume for live BGM adjustment.
+    private readonly Dictionary<EntityUid, float> _adminAudio = new(1); // CMU14
+    private float _bgmVolumeOffset; // CMU14
 
     // Event sounds (e.g. nuke timer)
     private bool _eventAudioEnabled = true;
@@ -27,6 +30,7 @@ public sealed partial class ClientGlobalSoundSystem : SharedGlobalSoundSystem
         SubscribeLocalEvent<RoundRestartCleanupEvent>(OnRoundRestart);
         SubscribeNetworkEvent<AdminSoundEvent>(PlayAdminSound);
         Subs.CVar(_cfg, CCVars.AdminSoundsEnabled, ToggleAdminSound, true);
+        Subs.CVar(_cfg, CCVars.CMUBgmVolume, SetBgmVolume, true); // CMU14
 
         SubscribeNetworkEvent<StationEventMusicEvent>(PlayStationEventMusic);
         SubscribeNetworkEvent<StopStationEventMusic>(StopStationEventMusic);
@@ -48,7 +52,7 @@ public sealed partial class ClientGlobalSoundSystem : SharedGlobalSoundSystem
 
     private void ClearAudio()
     {
-        foreach (var stream in _adminAudio)
+        foreach (var stream in _adminAudio.Keys) // CMU14
         {
             _audio.Stop(stream);
         }
@@ -66,9 +70,28 @@ public sealed partial class ClientGlobalSoundSystem : SharedGlobalSoundSystem
     {
         if(!_adminAudioEnabled) return;
 
-        var stream = _audio.PlayGlobal(soundEvent.Specifier, Filter.Local(), false, soundEvent.AudioParams);
-        _adminAudio.Add(stream?.Entity);
+        // CMU14 BGM Begin: apply local gain before playback starts, keeping the original volume for later changes.
+        // var stream = _audio.PlayGlobal(soundEvent.Specifier, Filter.Local(), false, soundEvent.AudioParams);
+        // _adminAudio.Add(stream?.Entity);
+        var audioParams = soundEvent.AudioParams ?? AudioParams.Default;
+        var stream = _audio.PlayGlobal(soundEvent.Specifier, Filter.Local(), false, audioParams.AddVolume(_bgmVolumeOffset));
+        if (stream is { } audio)
+            _adminAudio[audio.Entity] = audioParams.Volume;
+        // CMU14 End
     }
+
+    // CMU14 BGM Begin
+    /// <summary>Applies the saved gain or an options slider preview without saving configuration.</summary>
+    public void SetBgmVolume(float gain)
+    {
+        _bgmVolumeOffset = SharedAudioSystem.GainToVolume(gain);
+        foreach (var (stream, baseVolume) in _adminAudio)
+        {
+            if (TryComp<AudioComponent>(stream, out var audio))
+                _audio.SetVolume(stream, baseVolume + _bgmVolumeOffset, audio);
+        }
+    }
+    // CMU14 End
 
     private void PlayStationEventMusic(StationEventMusicEvent soundEvent)
     {
@@ -97,7 +120,7 @@ public sealed partial class ClientGlobalSoundSystem : SharedGlobalSoundSystem
     {
         _adminAudioEnabled = enabled;
         if (_adminAudioEnabled) return;
-        foreach (var stream in _adminAudio)
+        foreach (var stream in _adminAudio.Keys) // CMU14
         {
             _audio.Stop(stream);
         }

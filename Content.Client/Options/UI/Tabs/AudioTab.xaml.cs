@@ -17,6 +17,7 @@ public sealed partial class AudioTab : Control
     [Dependency] private IAudioManager _audio = default!;
     [Dependency] private IClientAdminManager _admin = default!;
     [Dependency] private IConfigurationManager _cfg = default!;
+    [Dependency] private IEntityManager _entityManager = default!; // CMU14
 
     public AudioTab()
     {
@@ -30,6 +31,11 @@ public sealed partial class AudioTab : Control
             SliderVolumeMaster,
             scale: ContentAudioSystem.MasterVolumeMultiplier);
         masterVolume.ImmediateValueChanged += OnMasterVolumeSliderChanged;
+
+        // CMU14 BGM Begin: preview immediately while keeping the standard save/reset behavior.
+        var bgmVolume = Control.AddOptionPercentSlider(CCVars.CMUBgmVolume, SliderVolumeBgm, scale: 1f);
+        bgmVolume.ImmediateValueChanged += value => _entityManager.System<ClientGlobalSoundSystem>().SetBgmVolume(value);
+        // CMU14 End
 
         Control.AddOptionPercentSlider(
             CVars.MidiVolume,
