@@ -94,6 +94,7 @@ public sealed class DialogBui(EntityUid owner, Enum uiKey) : BoundUserInterface(
             var button = new ContainerButton
             {
                 StyleClasses = { ContainerButton.StyleClassButton, "OpenBoth" },
+                ToolTip = option.Tooltip,
                 HorizontalExpand = true
             };
 

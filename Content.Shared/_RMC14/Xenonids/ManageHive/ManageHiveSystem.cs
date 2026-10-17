@@ -307,7 +307,7 @@ public sealed partial class ManageHiveSystem : EntitySystem
             );
 
             var ev = new ManageHiveActivateBoonsChosenEvent(boon.Prototype.ID);
-            choices.Add(new DialogOption(text, ev));
+            choices.Add(new DialogOption(text, ev, tooltip: boon.Prototype.Description));
         }
 
         var resin = 0;
