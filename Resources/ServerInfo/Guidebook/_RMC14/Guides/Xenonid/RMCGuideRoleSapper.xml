@@ -1,26 +1,26 @@
-﻿<Document>
-  #Boiler, Tier 3
+<Document>
+  # 沸腾者-工兵，T3支系
   <GuideEntityEmbed Entity="RMCXenoBoilerSapper"/>
-  ##Playing as a Sapper
-  Become a supportive damage-dealer, trading greater area damage potential for shorter cooldowns and tools for setting up and executing ambushes. Catch marines that venture too far from safety with your Deploy Traps, blast any who get too close with your Acid Shotgun or Acid Tail Stab, and quickly chip away at the durability of the marine frontline with your Acid Mine.
+  ## 扮演工兵
+  作为兼具辅助与高额爆发的特化支系，沸腾工兵放弃了沸腾者超大范围的远距曲射轰炸，换取了更短的技能冷却以及极其致命的伏击布控工具。使用“布置陷阱”捕获任何脱离安全防线的大意人类；用近距离爆发的“强酸霰弹”或强酸尾刺轰碎敢于近身的敌人；再利用“强酸地雷”迅速侵蚀熔毁陆战队前线阵地的耐久工事。
 
-  You inherit the weaknesses of the Boiler, so beware of fire and stay far from green flares and red dots that may call skyfire down on you.
+  你完全继承了沸腾者的所有生理弱点：极度畏惧火焰，且必须时刻远离绿信号弹与红激光点，防止空中天火定点清除。
 
-  Due to high acid reserves, the Sapper glows in the dark making it seen by any host easily, this also makes the Sapper incredibly vulnerable to [color=red]fire[/color].
+  由于体内蓄积高浓度酸液，沸腾工兵在黑暗中同样具有荧光特征，易被人类察觉，且受到[color=red]火焰[/color]攻击时承受极高额外伤害。
   <GuideEntityEmbed Entity="RMCTileFire"/>
 
-  ##Abilities:
-  - [bold][color=#E61919]PASSIVE[/color][/bold]: Vulnerable to fire and glows in the dark.
-  - [bold][color=#E61919]PASSIVE[/color][/bold]: You gain Insight when you hit mobs with your Acid Shotgun. These will empower your next Deploy Traps if you gain 10. Hitting a mob stuck in your traps will instantly grant you 10 stacks.
-  - [bold]Strong Corrosive Acid[/bold]: Secretes a glob of acid on items to be dissolved.
+  ## 技能列表：
+  - [bold][color=#E61919]被动弱点[/color][/bold]：对火焰高度易伤，在黑暗中具有生化荧光暴露自身。
+  - [bold][color=#E61919]被动特质：战术洞悉[/color][/bold]：使用“强酸霰弹”命中目标时可获得“洞悉”层数。累积满 10 层时将极大地强化下一次“布置陷阱”；直接命中被陷阱束缚的目标可瞬间直接叠满 10 层。
+  - [bold]强效腐蚀酸 (Strong Corrosive Acid)[/bold]：向物品喷吐浓缩强酸，将其迅速彻底熔毁。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoCorrosiveAcid"/>
-  - [bold]Toggle Long Range Sight[/bold]: See further in all directions.
+  - [bold]开启全向视野 (Toggle Long Range Sight)[/bold]：极大幅度拓宽全方向观察视野。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleLongRangeSight"/>
-  - [bold]Acid Shotgun[/bold]: A short ranged blast of nine acid pellets that can deal significant damage to mobs and grants a stack of Insight per pellet that hits. Deals more damage to trapped mobs and maxes stacks of Insight.
+  - [bold]强酸霰弹 (Acid Shotgun)[/bold]：向前方近距离呈锥形喷射 9 枚高浓缩强酸弹丸，造成高额肉搏伤害，每枚弹丸命中都提供 1 层“洞悉”。对被陷阱束缚的敌人造成额外增伤并直接叠满洞悉层数。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoScatteredSpit"/>
-  - [bold]Deploy Traps[/bold]: Deploy a line of traps that will snare any mobs that step on them and increase the damage your abilities do while they are snared. If it is cast while empowered, it snares for longer and also empowers your next Acid Mine.
+  - [bold]布置陷阱 (Deploy Traps)[/bold]：在地面布设一排强效黏液陷阱，任何踩中的目标将被紧紧禁锢定身，并在被禁锢期间承受来自你技能的额外伤害加成。若在满层“洞悉”强化下施放，定身禁锢时间大幅延长，并直接强化你的下一记“强酸地雷”。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoDeployTraps"/>
-  - [bold]Acid Mine[/bold]: Trigger a remote detonation that will explode after a moment of delay, dealing damage to mobs, structures and emplacements. If it is empowered, it deals more damage and applies a lingering acid to mobs.
+  - [bold]强酸地雷 (Acid Mine)[/bold]：远程布置一枚延时引爆的生化地雷，短暂延迟后轰然爆炸，对范围内的生物、防御建筑与火炮工事造成巨额侵蚀伤害。若在强化状态下引爆，伤害进一步激增且会在敌人身上留下持续腐蚀的附着酸液。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoAcidMine"/>
 
 </Document>

@@ -1,6 +1,6 @@
 <Document>
-  #Hive Structures
-  Xenonids thrive by constructing a range of specialized structures, these have to be made by a member of the drone caste line using the Order Construction ability on top of hive weeds then filled with plasma.
+  # 蜂巢建筑
+  异形族群的繁荣离不开一系列功能独特的专门建筑。这些建筑必须由工蜂系异形在蜂巢菌毯之上使用“指定建造”能力拟定，随后注入等离子体灌注成形。
   <Box>
     <GuideEntityEmbed Entity="XenoHiveWeeds"/>
     <GuideEntityEmbed Entity="RMCGuidebookActionXenoOrderConstruction"/>
@@ -18,37 +18,35 @@
   <Box>
     <GuideEntityEmbed Entity="HiveAcidPillarXeno"/>
   </Box>
-  ##Each have limits!
-  - 1 Hive Core
-  - 6 Egg Morphers
-  - 6 Recovery nodes
-  - 3 Plasma Trees
-  - 8 Hive Clusters
-  - 2 Hive Pylons
-  - 1 Acid Pillar per Hivelord or Queen
+  ## 各建筑数量上限：
+  - 1 个 蜂巢核心 (Hive Core)
+  - 6 个 卵变形器 (Egg Morphers)
+  - 6 个 恢复节点 (Recovery Nodes)
+  - 3 棵 等离子树 (Plasma Trees)
+  - 8 个 蜂巢簇 (Hive Clusters)
+  - 2 座 蜂巢塔 (Hive Pylons)
+  - 每位蜂巢领主或女王可各建造 1 根 酸液柱 (Acid Pillar)
 
-  ## What do they do?
+  ## 建筑功能详述：
 
-  [bold]Egg Morphers[/bold]: Egg morphers act as a large egg that launch parasites upon any host that enters its vicinity. Gradually produces up to 6 parasites and stores 12 which can be retrieved by Xenonids.
+  [bold]卵变形器 (Egg Morphers)[/bold]：功能类似于一枚巨大的异形异卵，能够自动向任何接近其警戒范围的宿主弹射抱脸虫。随时间缓慢自然孕育最多 6 只抱脸虫，并可容纳储存至多 12 只，异形同胞可随时从中直接取用抱脸虫。
 
-  [bold]Hive Core[/bold]: This is constructed at the start of the match usually by the Queen to designate where the hive will be located and allows other hive structures to be built. Once constructed it will provide bonus evolution point gain rate, energy to produce Lesser Drones, hive weeds, and roofing protection from skyfire (orbital bombardment) and skyspit (close air support). If a dead larva is taken to the hivecore it will grant a burrowed larva so a new sister can be born! If the hivecore is destroyed then a 5 minute penalty will be incurred before another hivecore can be made, so be sure to protect it!
+  [bold]蜂巢核心 (Hive Core)[/bold]：通常在对局初期由女王亲自筑造，用于确立虫群的核心主巢据点，并解锁其他所有蜂巢建筑的建造权限。建成后将提供额外的进化点数获取速率、孕育次级工蜂所需的生体能量、滋生蜂巢菌毯，并为据点提供能阻挡“天火”（轨道轰炸）与“天陨”（近距空中支援 CAS）的防护顶层。若将死去的幼虫遗体带回蜂巢核心，即可重聚为遁地幼虫，让新的姐妹得以诞生！若蜂巢核心不幸被毁，必须等待 5 分钟的惩罚冷却方能重建，请务必誓死守护核心！
 
-  [bold]Hive Pylon[/bold]: These are created by planting a hive cluster near a signal tower and then filling it, once it reaches the tower with its weeds it will convert to a Pylon. These generate lesser drones and have roofing protection from skyspit.
+  [bold]蜂巢塔 (Hive Pylon)[/bold]：在地图上的通讯中继塔旁放置蜂巢簇并灌注成形，当菌毯蔓延覆盖中继塔后便会转化为蜂巢塔。能够持续生成次级工蜂，并享有抵御空中支援轰炸的掩护防护。
 
-  [bold]Hive Cluster[/bold]: Hive Clusters emit hive weeds which allow other hive structures to be built around them, it also can be repaired with plasma if it loses any weeds or health.
+  [bold]蜂巢簇 (Hive Cluster)[/bold]：能够源源不断地向四周扩散蜂巢菌毯，使周围地块得以筑造各类蜂巢建筑。在菌毯脱落或自身受损时，可通过注入等离子体进行修复。
 
-  [bold]Recovery Node[/bold]: Recovery Node allows for Xenonids resting near it to be healed. Only one Xenonid can be healed at a time.
+  [bold]恢复节点 (Recovery Node)[/bold]：异形姐妹在其附近歇息时能够获得持续生命恢复。同一时间仅能为一名异形提供治疗。
 
-  [bold]Plasma Tree[/bold]: Plasma Trees are just like Recovery Nodes but give plasma instead of healing to Xenonids.
+  [bold]等离子树 (Plasma Tree)[/bold]：运作机制与恢复节点类似，但它为休息中的异形补充的是关键的等离子体能量，而非生命值。
 
-  [bold]Acid Pillar[/bold]: Extinguishes nearby fires.
+  [bold]酸液柱 (Acid Pillar)[/bold]：能迅速熄灭其周围区域内的火焰。
 
-  ## Where to place!
-  Since they are limited it is always best to communicate with your hive when you are placing one.
+  ## 布局与摆放建议：
+  由于建筑总数有限，放置前务必与蜂巢族群充分沟通协调：
 
-  Hive clusters can be used at the frontline to stall host pushes or at the backline for nesting spots, usually accompanied by a tunnel, these nesting spots will also have 2 or more egg morphers.
-
-  Recovery nodes should be put at the frontline near a hive cluster to help sisters fight extended battles.
-
-  Plasma trees can be used both at frontline (for healers and frontline builders) and at backline (for backline builders).
+  - [bold]蜂巢簇[/bold]：既可在前沿防线构筑以阻滞陆战队的步步推进，也可在后方核心区作为孵化育婴点（通常与地道配合，并围绕部署 2 个或以上的卵变形器）。
+  - [bold]恢复节点[/bold]：宜部署在前沿蜂巢簇旁，为一线作战鏖战的姐妹提供就地喘息与持续续航能力。
+  - [bold]等离子树[/bold]：前沿（供治疗型与前线建筑工充能）和后方（供后勤筑巢工快速蓄能）皆有极高价值。
 </Document>

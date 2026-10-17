@@ -1,61 +1,60 @@
 <Document>
-  #Designer, Tier 2 Strain
+  # 建筑师，T2支系
   <GuideEntityEmbed Entity="CMXenoHivelordDesigner"/>
-  ##Playing as a Designer
-  As a designer you give up your ability to directly place resin walls and doors, in exchange for making the hive building experience better for your sisters. This strain aims at helping to reward the time for other builders by making their life, and the hives, easier.
+  ## 扮演建筑师
+  作为建筑师，你放弃了直接放置树脂墙和门的能力，转而极大地优化和提升族群姐妹的筑巢建造体验。该支系旨在通过减轻其他建造者的负担，让同胞与蜂巢更轻松高效地发展。
 
-  You accomplish this by placing different nodes down that other hive builders can use to quickly build walls and doors, This allows you to focus on making sure the hive is built up quickly and efficiently, while your sisters can focus on getting resin down and defending the hive.
+  你可以通过在地面放置各种功能节点来实现这一目标，其他建造类异形可利用这些节点迅速筑起墙体与门扉。这样你能专注于蜂巢整体布局的高效规划，而姐妹们则能集中精力铺设树脂和保卫蜂巢。
 
-  You can build nodes at a far range and do not need direct line of sight (Although it helps!).
+  你可以在极远的距离放置节点，甚至无需直接视线（不过有视线会更加方便！）。
 
-  You also gain stronger pheromones at a T3 rating and your tackles stun hosts for longer!
+  此外，你还拥有达到三阶（T3）评级的高强度信息素，并且扑击能够使宿主眩晕更长时间！
 
-  ##Node Types - Up to 36 nodes can exist at the same time:
-  -[bold]Construction Node[/bold]: This that allows sisters to build weedbound walls and doors quickly. Any xeno with plasma can interact with these nodes to summon a weedbound wall in 4 seconds.
+  ## 节点类型 - 场上最多可同时存在 36 个节点：
+  - [bold]建造节点 (Construction Node)[/bold]：能让姐妹们快速筑起附草墙与门。任何拥有等离子体的异形与其交互，都可以在 4 秒内唤起一堵附草墙。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoDesignerConstructNode"/>
-  -[bold]Weedbound Resin[/bold]: Weedbound resin walls and doors are built from construction nodes, they will break when the weeds under them break. They cannot be upgraded to thick variants either ([bold]They are very weak to fire![/bold])
+  - [bold]附草树脂 (Weedbound Resin)[/bold]：由建造节点生成的附草树脂墙和门与地面的菌毯紧密相连，一旦下方的菌毯被破坏，它们也会随之瓦解。普通异形生成的附草结构无法升级为厚树脂（[bold]且极度易燃！[/bold]）。
 
-  When Hivelords (Not Designer), Carriers, Burrowers, or the Queen interact with construction nodes, they become thick variants.
+  当蜂巢领主（非建筑师）、搬运者、掘地者或女王与建造节点交互时，所生成的结构将直接升级为厚树脂形态。
 
-  When weedbound resin is destroyed, it will collapse into weak sticky resin, or normal sticky resin if thickened.
+  附草树脂被摧毁时，会塌陷为脆弱的黏性树脂；若是厚形态，则会变为普通黏性树脂。
 <Box>
   <GuideEntityEmbed Entity="RMCGuidebookEntityWeedboundResinWall"/>
   <GuideEntityEmbed Entity="RMCGuidebookEntityWeedboundResinDoor"/>
 </Box>
-  -[bold]Flexible (Cost) Node[/bold]: Any wall, door, etc built on this node has a 50% discount of plasma cost.
+  - [bold]节能节点 (Flexible Node)[/bold]：在此节点上建造的任何墙体、门扉等结构，等离子体消耗降低 50%。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoDesignerFlexibleNode"/>
-  -[bold]Optimized (Speed) Node[/bold]: Any wall, door, etc built on this node is built 50% faster.
+  - [bold]加速节点 (Optimized Node)[/bold]：在此节点上建造的任何墙体、门扉等结构，建造速度提升 50%。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoDesignerOptimizedNode"/>
 
-  ##Designer Abilities:
-  -[bold]Toggle Long-Range Sight[/bold]: Increases your vision to see more of the battlefield. You can place nodes as far as the eye can see!
+  ## 建筑师技能：
+  - [bold]切换远距视野 (Toggle Long-Range Sight)[/bold]：极大地拓宽视野以观察更广阔的战场，视线所及之处皆可远程放置节点！
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleLongRangeSight"/>
-  -[bold]Greater Resin Surge[/bold]: Transform all nodes within 7 tiles of you into weak reflective resin walls. They decay in 13 seconds. They have a high chance of reflecting projectiles, but will break in 1 melee hit.
+  - [bold]强效树脂涌流 (Greater Resin Surge)[/bold]：将自身周围 7 格范围内的所有节点瞬间转化为脆弱的反射树脂墙。这些墙体持续 13 秒，具有极高的弹道跳弹反射几率，但受到 1 次近战攻击即会破碎。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoGreaterResinSurge"/>
-  -[bold]Toggle Node Type[/bold]: Switches between placing wall nodes and door nodes. This only affects construction nodes. For Flexible and Optimized nodes, it's a way to show your design intentions with your sisters.
+  - [bold]切换节点类型 (Toggle Node Type)[/bold]：在放置墙体节点与门扉节点之间切换。此项只直接决定建造节点的产物；对于节能与加速节点，则用于向姐妹们直观传达你的蓝图规划意图。
     <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleNodeType"/>
-  -[bold]Remote Upgrade[/bold]: Remotely upgrade placed resin walls/doors to thick resin versions.
+  - [bold]远程加厚 (Remote Upgrade)[/bold]：远距离将已放置的普通树脂墙/门升级为厚树脂形态。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoRemoteUpgrade"/>
-  -[bold]Remove Nodes[/bold]: Remotely deletes a design node on the targeted tile.
+  - [bold]清除节点 (Remove Nodes)[/bold]：远程清除目标地块上的设计节点。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoRemoveNodes"/>
-  -[bold]Inherited Actions[/bold]: You inherit all the actions of a standard hivelord, excluding transfering plasma and direct resin construction.
+  - [bold]继承技能 (Inherited Actions)[/bold]：继承标准蜂巢领主的所有基础行动能力（除直接传输等离子体和直接建造树脂结构之外）。
 
-  ##Playing as a designer:
-  Designer is put in category of: Support/Anti-Push
+  ## 战术实战指南：
+  建筑师的战术定位为：[bold]辅助支援 / 反推进防守[/bold]。
 
-  General purpose of designer is to expand hive with help of other builders by benefiting them with building speed or decreased construct cost, There are many ways to spend your round as designer, and here are examples:
+  建筑师的核心目标是借助其他建造者的力量扩张蜂巢，为其提供建造加速与等离子体减免。以下是不同配合场景下的常见玩法：
 
+  [bold]单兵作业[/bold]
+  不推荐此种打法。建筑师天生依赖协同配合，但若当前缺少协助同胞，你可以预先在前沿布置建造节点。当陆战队推进时，利用建造节点瞬间筑起迷宫延缓敌方攻势，为撤退的同胞提供掩护，甚至直接将深入的宿主困在陷阱之中。
 
-  [bold]Alone[/bold]
-  This one is not recommended, designer is intended to cooperate with anyone, but if you just hate everyone or the hive lacks anyone to help you; you can layout construct nodes around and wait for marines. Then you can use the construction nodes to create instant mazes for your retreating sisters or to trap hosts.
+  [bold]协同其他建造者[/bold]
+  这是该支系最标准的核心玩法。你可以与任意建造类兵种紧密合作，配合策略需视合作对象与战线位置灵活调整：
 
-  [bold]With Other Builders[/bold]
-  This is intended way to play this strain, you cooperate with any other builder caste. Cooperating style should be different depending on "who" you are cooperating with and "where":
-
-  -[bold]Lesser Drones:[/bold]: Working with lessers, node use depends on the situation. If you are close to frontline and have lesser drones that are trying to build walls/doors, you can help them out by placing optimized nodes and remote thicken their structures. If you two are somewhere safe, then use flexible nodes. Due to the low plasma pool that lessers have, it allows them to construct more structures.
-  -[bold]Drones[/bold]: If you are cooperating with drones, it's recommended to use speed nodes to make construct quicker, and it synergies with your ability to remote thicken structures. Alternatively, the use of cost nodes are slightly more expensive, but they decrease use of plasma by 50%, so if you are thickening their structures and run out of plasma, they can supply you with the plasma that got saved from using plasma nodes.
-  -[bold]Hivelords[/bold]: This one situation dependent, it's highly recommended to use flexible nodes, because they can construct way more walls/doors than usual. Optimized nodes are recommended only when you are close to battlefield and need to very quickly made walls to stop enemy progression.
-  -[bold]Queen[/bold]: For the first 30 minutes queen has no plasma cost for constructions, so if you pair it up with your optimized nodes, you can make twice as many defences. When you run out of plasma, since the Queen does not spend plasma, she can remotely transfer you plasma (unless other sisters are dying to planet hosts). Post-drop is different, you still should prefer speed nodes, but if queen struggles with plasma reserves its good to switch for cost nodes if there are no other builders present nearby to cooperate with you.
-  -[bold]Other castes with plasma[/bold]: This is a special case, where you can cooperate with anyone who has plasma thanks to construct nodes. They allow you to make walls/doors depending on what marker is shown on top of it. Keep in mind, anyone who donates plasma will create "weedbound" variants that cannot be upgraded and will break if weeds are gone, so its better to use it in case of emergency, or if you lack anyone nearby to help you. You can donate your own plasma to build it, but it's better if you cooperate with someone because you pay 70 plasma to make node and 70 to make it auto-build by itself.
+  - [bold]协同次级工蜂[/bold]：视战况灵活使用节点。如果在前线附近有次级工蜂尝试起墙起门，可铺设加速节点协助其快速封口，并用技能远程将其加厚；若处于安全的后方基地，则优先放置节能节点，以弥补次级工蜂等离子体储备较少的短板，让它们能连续建造更多结构。
+  - [bold]协同工蜂[/bold]：推荐铺设加速节点以最大化起墙速度，配合你的远程加厚技能形成流水线。若搭配节能节点，虽然起墙稍慢，但能节省 50% 等离子体消耗；当你因为频繁远程加厚而等离子体耗尽时，工蜂便能将省下的等离子体反哺回充给你。
+  - [bold]协同常规蜂巢领主[/bold]：强烈推荐铺设节能节点，能让常规蜂巢领主凭极充裕的等离子体建造出数倍于平时的防线；仅在紧贴交火前线急需瞬间筑墙阻断敌方推进时，才切换为加速节点。
+  - [bold]协同女王[/bold]：在游戏开局前 30 分钟内，女王建造结构不消耗等离子体！配合加速节点能以双倍速度飞快筑起坚固防线。当你等离子体耗尽时，女王由于无建造消耗，可以远程向你补充等离子体（除非其他前线同胞正面临绝境）。在陆战队空降推进阶段，通常依然优先使用加速节点，但若女王等离子体吃紧且周围无其他建造同胞，则适时切换为节能节点。
+  - [bold]协同其他有等离子体的兵种[/bold]：凭借建造节点，你甚至能与任何拥有等离子体的战斗姐妹协同施工。她们只需注入等离子体即可快速生成对应标记的墙或门。请注意，非专职建造者注入等离子体生成的为附草树脂，无法直接升级且依赖菌毯支撑，适合在紧急时刻或缺少建筑工时救急使用。你也可以自己注入等离子体来自行建造，但协同操作更划算（因为你自己独立建造需要消耗 70 点放节点 + 70 点激活）。
 
 </Document>

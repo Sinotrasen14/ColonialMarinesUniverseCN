@@ -1,40 +1,40 @@
 <Document>
-  #Boiler, Tier 3
+  # 沸腾者，T3兵种
   <GuideEntityEmbed Entity="RMCXenoBoiler"/>
-  ##Playing as a Boiler
-  Become the ultimate ranged warrior of the Hive with your signature bombard capable of stalling any hosts. It is now slow, large and returns to being a supportive role on the frontline, attaining an upgraded acid spray, corrosive acid and tail stab toxin.
+  ## 扮演沸腾者
+  成为蜂巢终极的超远距离战略炮台！其标志性的远距离曲射轰炸能够彻底瘫痪任何人类防线。由于体型庞大且行动缓慢，沸腾者在前线承担着毁灭性的重炮压制与战术辅助职责，同时兼具升级版的强酸喷雾、强效腐蚀酸以及致命尾刺剧毒。
 
-  Make sure to always stay behind other sisters as you are weak alone. Always melt green flares so that you do not get killed instantly by skyspit (close air support) fire.
+  请务必时刻藏身在其他战斗姐妹身后，一旦落单你将脆弱不堪。务必第一时间吐酸融化陆战队投掷的绿色信号弹，否则头顶呼啸而至的近距空中轰炸（CAS）或天降天火会将你瞬间消灭。
 
-  Its [color=green]acidic[/color] globs are capable of killing off any hosts caught within, while its [color=yellow]neurotoxin[/color] variant spreads further and will weaken any hosts allowing for capture.
+  其发射的[color=green]强酸炮弹[/color]能将范围内的大群宿主瞬间融化击溃；而[color=yellow]神经毒气[/color]弹种则扩散范围更广，能令大批宿主陷入剧毒虚弱、减速与麻痹，为前线姐妹冲阵收割与生擒创造绝佳战机。
   <Box>
     <GuideEntityEmbed Entity="CMGuidebookXenoBombardAcidProjectile"/>
     <GuideEntityEmbed Entity="CMGuidebookXenoBombardNeurotoxinProjectile"/>
   </Box>\n
 
-  Remember to melt green flares and stay away from red dots as they pose a great threat to you from above.
+  牢记：紧盯地面融化绿信号弹，远离空中的激光红点指示器——那是来自天空的头号灭顶威胁。
 
-  Due to high acid reserves, the Boiler glows in the dark making it seen by any host easily, this also makes the Boiler incredibly vulnerable to [color=red]fire[/color].
+  由于体内贮存了海量的烈性酸液，沸腾者在黑暗中会散发明显的生化荧光，极易被任何宿主察觉，这也导致沸腾者对[color=red]火焰[/color]有着极其致命的致命易伤弱点！
   <GuideEntityEmbed Entity="RMCTileFire"/>
-  ##Door tech
-  To safely use bombard you can stand behind a closed resin door and charge your bombard. Make sure to aim outside the path of the door, then hover your mouse over the door and press [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] when the bombard is almost done, if timed then the resin door will open letting your glob pass through!
+  ## 战术技巧：门缝透射 (Door Tech)
+  为了在绝对安全的环境下进行轰炸，你可以躲在一扇紧闭的厚树脂门后开始轰炸蓄力。将射击准星瞄准门外的打击区域，鼠标指针预先悬停在树脂门上，当轰炸蓄力读条即将结束的刹那，按下交互键 [color=yellow][bold][keybind="ActivateItemInWorld"][/bold][/color] 打开树脂门——只要时机把握精准，酸炮弹丸就会在门开的一瞬间飞出，随后手动关闭树脂门，或是等待自动关上，形成近乎无懈可击的安全炮台！
   <GuideEntityEmbed Entity="DoorXenoResin"/>
-  ##Abilities:
-  - [bold][color=#E61919]PASSIVE[/color][/bold]: Vulnerable to fire and glows in the dark.
-  - [bold]Strong Corrosive Acid[/bold]: Secretes a glob of acid on items to be dissolved.
+  ## 技能列表：
+  - [bold][color=#E61919]被动弱点[/color][/bold]：对火焰极度易伤（极易被引燃），且在黑暗中会散发生化荧光。
+  - [bold]强效腐蚀酸 (Strong Corrosive Acid)[/bold]：向物品喷吐高纯度强酸，以极快速度将其溶解。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoCorrosiveAcid"/>
-  - [bold]Toggle Long Range Sight[/bold]: Look further in the direction you are facing.
+  - [bold]开启远距视野 (Toggle Long Range Sight)[/bold]：向朝向的前方极大地延伸视野，以便进行超视距精准轰炸。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleLongRangeSight"/>
-  - [bold]Bombard[/bold]: Prepare to fire, either an acidic or neurotoxic glob. This will go past your aimed position if it does not hit anything.
+  - [bold]曲射轰炸 (Bombard)[/bold]：开始蓄力准备射出强酸弹或神经毒气弹。弹丸若未碰撞到任何实体障碍物，将径直飞越落点在目标区域爆开大片毒雾。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoBombard"/>
-  - [bold]Toggle Gas Type[/bold]: Toggles between Acid Or Neurotoxin.
-  - Acid: Will burn targets and barricades.
-  - Neurotoxin: Cripples and weakens targets, has a larger cloud range.
+  - [bold]切换毒气类型 (Toggle Gas Type)[/bold]：在强酸（Acid）与神经毒气（Neurotoxin）之间自如切换。
+  - [color=green]强酸 (Acid)[/color]：剧烈烧灼敌人并飞速瓦解熔化路障工事。
+  - [color=yellow]神经毒气 (Neurotoxin)[/color]：大幅削弱、减速并摧毁目标的身体机能，毒气扩散云雾范围更为广阔。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoToggleGasType"/>
-  - [bold]Spray Acid[/bold]: Sprays acid along the ground in a line, covering any barricades and stunning hosts caught in its path.
-  - Will also extinguish any sisters if they are on fire.
-  - If used on a host affected by Charged Spit from a spitter, will upgrade the spit and stun them.
+  - [bold]泼洒酸雾 (Spray Acid)[/bold]：向前方地面直线喷发酸液，覆盖路障并震慑眩晕沿途的宿主。
+  - 能立即扑灭被点燃姐妹身上的火势。
+  - 若命中已被喷吐者“充能酸唾”标记的宿主，将强化酸蚀并将其强力眩晕。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoSprayAcid"/>
-  - [bold]Acid Shroud[/bold]: Create a cloud of acid around you, disabling your other abilities. Used in last resort.
+  - [bold]酸雾护幕 (Acid Shroud)[/bold]：在自身周围瞬间释放一阵致命的浓稠酸雾遮蔽视线并杀伤逼近的敌军，施放期间会暂时禁用自身其他技能，多用于被近身突袭时的生死绝境中脱身。
   <GuideEntityEmbed Entity="RMCGuidebookActionXenoAcidShroud"/>
 </Document>

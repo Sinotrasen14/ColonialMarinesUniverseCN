@@ -1,15 +1,15 @@
 <Document>
-  # Xenonid Tactical Map Icons
-  Every Xenonid got their own respective map icon, each having a specific color depending on their Tier.
-  - [color=Purple][bold]Purple[/bold][/color] is given to Tier 0 Xenonids.
-  - [color=Green][bold]Green[/bold][/color] is given to Tier 1 Xenonids.
-  - [color=Yellow][bold]Yellow[/bold][/color] is given to Tier 2 Xenoninds.
-  - [color=Red][bold]Red[/bold][/color] is given to Tier 3 Xenonids.
+  # 异形战术地图图标
+  每种异形在战术小地图上均有专属的识别图标，并根据其所属等阶（Tier）以特定颜色区分：
+  - [color=Purple][bold]紫色[/bold][/color]：零阶异形（T0，幼虫 / 抱脸虫 / 次级工蜂）
+  - [color=Green][bold]绿色[/bold][/color]：一阶异形（T1）
+  - [color=Yellow][bold]黄色[/bold][/color]：二阶异形（T2）
+  - [color=Red][bold]红色[/bold][/color]：三阶异形（T3）
 
-  ## Leader Crown
-  Xenonids appointed as a [color=lightblue]Leader[/color] by the [textlink="Queen" link="RMCGuideRoleQueen"], will have a blue crown added to their map icon.
+  ## 领袖王冠
+  被[textlink="女王" link="RMCGuideRoleQueen"]任命为[color=lightblue]领袖 (Leader)[/color]的异形，其地图图标上方将戴有一顶显眼的蓝色王冠。
   <GuideEntityEmbed Entity="RMCLeaderMapIcon"/>
-  ## Xenonid Icons
+  ## 异形兵种图标
   <Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="CMXenoLesserDrone" Caption=""/>
@@ -17,14 +17,14 @@
     </Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="CMXenoParasite" Caption=""/>
-      <GuideEntityEmbed Entity="RMCParasiteMapIcon" Caption="Child / Parasite"/>
+      <GuideEntityEmbed Entity="RMCParasiteMapIcon" Caption="抱脸虫"/>
     </Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="CMXenoLarva" Caption=""/>
       <GuideEntityEmbed Entity="RMCLarvaMapIcon"/>
     </Box>
   </Box>
-  - Drone Castes
+  - 工蜂系 (Drone Castes)
   <Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="CMXenoDrone" Caption="" Margin="0 40 0 0"/>
@@ -43,7 +43,7 @@
       <GuideEntityEmbed Entity="RMCCarrierMapIcon"/>
     </Box>
   </Box>
-  - Defender Castes
+  - 防御者系 (Defender Castes)
   <Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="CMXenoDefender" Caption=""/>
@@ -58,7 +58,7 @@
       <GuideEntityEmbed Entity="RMCCrusherMapIcon"/>
     </Box>
   </Box>
-  - Sentinel Castes
+  - 哨兵系 (Sentinel Castes)
   <Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="CMXenoSentinel" Caption="" Margin="0 25 0 0"/>
@@ -73,7 +73,7 @@
       <GuideEntityEmbed Entity="RMCBoilerMapIcon"/>
     </Box>
   </Box>
-  - Runner Castes
+  - 疾行者系 (Runner Castes)
   <Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="CMXenoRunner" Caption=""/>
@@ -88,7 +88,7 @@
       <GuideEntityEmbed Entity="RMCRavagerMapIcon"/>
     </Box>
   </Box>
-  - Special Castes
+  - 特殊种姓 (Special Castes)
   <Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="CMXenoPraetorian" Caption=""/>
@@ -99,7 +99,7 @@
       <GuideEntityEmbed Entity="RMCQueenMapIcon"/>
     </Box>
   </Box>
-  ## Xenonid Structure Icons
+  ## 异形建筑图标 (Xenonid Structure Icons)
   <Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="HiveCoreXeno" Caption=""/>
@@ -125,7 +125,7 @@
     </Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="HivePlasmaTreeXeno" Caption="" Margin="35 20 0 0"/>
-      <GuideEntityEmbed Entity="RMCRecovNodeMapIcon" Caption="Plasma Tree" Margin="35 4 0 0"/>
+      <GuideEntityEmbed Entity="RMCRecovNodeMapIcon" Caption="等离子之树" Margin="35 4 0 0"/>
     </Box>
     <Box Orientation="Vertical">
       <GuideEntityEmbed Entity="HivePylonXeno" Caption=""/>
