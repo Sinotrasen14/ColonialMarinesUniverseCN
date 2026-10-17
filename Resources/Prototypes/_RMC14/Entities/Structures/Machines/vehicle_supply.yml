@@ -488,34 +488,31 @@
       - VehicleSPPAPCAutocannon
       - VehicleSPPAPCHJ35Launcher
       - VehicleSPPAPCFlareLauncher
-<<<<<<< HEAD
-    - name: M34A2朗斯特里特
-=======
     # CMU14: Wolfpack MGS. Entry and option names come from the localized prototype names;
     # the hardpoint list holds only parts with art in the Wolfpack RSI.
     - vehicle: CMUVehicleAPCWolfpack
       group: vehicle-apc
       loadoutCategories:
       - id: primary
-        name: Primary
+        name: 主要的
         options:
         - id: CMUVehicleAPCWolfpackAutocannon
           item: CMUVehicleAPCWolfpackAutocannon
           slot: primary::turret-cannon
       - id: secondary
-        name: Secondary
+        name: 次要
         options:
         - id: CMUVehicleAPCWolfpackFrontCannon
           item: CMUVehicleAPCWolfpackFrontCannon
           slot: secondary
       - id: wheels
-        name: Wheels
+        name: 轮子
         options:
         - id: RMCAPCWheel
           item: RMCAPCWheel
           slot: wheel-1
       - id: support
-        name: Support
+        name: 补给
         options:
         - id: CMUVehicleAPCWolfpackFlareLauncher
           item: CMUVehicleAPCWolfpackFlareLauncher
@@ -528,7 +525,6 @@
       - RMCAPCWheel
     # CMU14 End
     - name: M34A2 Longstreet
->>>>>>> upstream
       vehicle: VehicleTank
       group: vehicle-tank
       loadoutCategories:

@@ -51,7 +51,6 @@ cmu-ui-font-comic-sans = Comic Sans
 cmu-ui-font-roboto-mono = Roboto Mono
 cmu-ui-font-cozette = Cozette
 cmu-ui-font-noto-display = Noto Sans Display
-<<<<<<< HEAD
 cmu-ui-options-menu-crt-effect = 菜单上的 CRT 纹理
 cmu-ui-options-crt-intensity = CRT 效果强度
 cmu-ui-setup-title = 让自己舒适
@@ -74,37 +73,13 @@ cmu-ui-options-hide-round-end-username = 在回合结束屏幕上隐藏我的用
 cmu-ui-options-hide-round-end-username-tooltip = 其他玩家在回合结束时能看到你的角色，但看不到扮演他们的账号。
 cmu-ui-options-hide-examine-tooltip = 隐藏 Shift+点击检查弹出窗口
 cmu-ui-options-hide-examine-tooltip-tooltip = 检查不再会弹出窗口。也请开启“将你检查的所有内容回显到聊天”以便在聊天中阅读检查内容。
-=======
-cmu-ui-options-menu-crt-effect = CRT texture on menus
-cmu-ui-options-crt-intensity = CRT effect strength
-cmu-ui-setup-title = Make yourself comfortable
-cmu-ui-setup-introduction = Welcome to CMU! Choose how your interface looks and how you read chat. You can change all of these later in Options → CMU.
-cmu-ui-setup-later = Remind me next time
-cmu-ui-setup-save = Save and continue
-cmu-ui-setup-open = Open UI setup
-cmu-ui-options-chat-reset-to-local = Switch chat back to Local/Dead after sending
-cmu-ui-options-chat-reset-to-local-tooltip = After you send a message on any other channel, the chat box goes back to Local, or to Dead chat if you're a ghost.
-cmu-ui-options-chat-center-input = Center chat input while typing like in CM13
-cmu-ui-options-chat-center-input-tooltip = Pressing a chat key moves the text box to the middle of the screen. It goes back when you send or cancel the message.
-cmu-ui-options-popups-in-chat = Show on-screen popups in chat
-cmu-ui-options-popups-in-chat-tooltip = Copies every popup message, like "You can't reach that", into your chat log.
-cmu-ui-options-hide-popups-on-screen = Hide on-screen popups
-cmu-ui-options-hide-popups-on-screen-tooltip = Stops popup messages from appearing on screen. Turn on "Show on-screen popups in chat" too to only see them in chat.
-cmu-ui-options-chat-speech-sounds = Play speech sounds when people talk
-cmu-ui-options-chat-speech-sounds-tooltip = The short voice sounds that play when someone nearby speaks. Turning this off only affects what you hear.
-cmu-ui-options-privacy = Privacy
-cmu-ui-options-hide-round-end-username = Hide my username on the round-end screen
-cmu-ui-options-hide-round-end-username-tooltip = Other players see your character at round end, but not the account that played them.
-cmu-ui-options-hide-examine-tooltip = Hide the shift-click examine popup
-cmu-ui-options-hide-examine-tooltip-tooltip = Examining no longer opens a popup. Turn on "Echo everything you examine to chat" too to read examines in chat instead.
 
-cmu-ui-options-hide-cassette-music-notes = Hide music notes over cassette listeners
-cmu-ui-options-hide-cassette-music-notes-tooltip = Stops drawing the floating music notes over people who are listening to a cassette player.
+cmu-ui-options-hide-cassette-music-notes = 在卡带播放器上隐藏音符
+cmu-ui-options-hide-cassette-music-notes-tooltip = 停止在正在听磁带播放器的人身上绘制漂浮的音乐符号。
 
-cmu-ui-options-interface = Interface
-cmu-ui-options-gameplay = Gameplay
-cmu-ui-options-popups-examine = Popups and examine
-cmu-ui-options-screen-shake = Screen shake
-cmu-ui-options-sound = Sound
-cmu-ui-options-visuals = Visuals
->>>>>>> upstream
+cmu-ui-options-interface = 界面
+cmu-ui-options-gameplay = 游戏玩法
+cmu-ui-options-popups-examine = 弹出窗口和检查
+cmu-ui-options-screen-shake = 屏幕抖动
+cmu-ui-options-sound = 声音
+cmu-ui-options-visuals = 视觉元素

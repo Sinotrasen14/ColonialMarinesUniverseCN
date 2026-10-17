@@ -383,15 +383,9 @@
 
 - type: entity
   id: CMUProjectileRocket70mmAntiArmor
-<<<<<<< HEAD
   name: 70毫米反装甲火箭弹
-  parent: CMUProjectileRocket70mm
-  categories: [HideSpawnMenu]
-=======
-  name: 70mm anti-armor rocket
   parent: CMUProjectileRocket70mmHE # CMU14: FLOW-09 was CMUProjectileRocket70mm, which has no impact trigger.
   categories: [ HideSpawnMenu ]
->>>>>>> upstream
   components:
   - type: TankCookOffProjectile # CMU14
     criticalChance: 0.15 # CMU14: FLOW-09

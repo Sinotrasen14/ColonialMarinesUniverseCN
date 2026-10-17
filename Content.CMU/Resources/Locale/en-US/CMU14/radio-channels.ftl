@@ -23,12 +23,7 @@ chat-radio-alert = ALRT
 chat-radio-WEYU = WEYU
 chat-radio-CMB = CMB
 chat-radio-CLF = CLF
-<<<<<<< HEAD
 chat-radio-CLFCommand = CLF 指挥部
-chat-radio-mob = FAMLY
-=======
-chat-radio-CLFCommand = CLF Command
->>>>>>> upstream
 
 chat-radio-hivemind = HIVE
 chat-radio-mycelium-link = MYCEL
