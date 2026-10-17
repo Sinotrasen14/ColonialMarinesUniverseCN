@@ -1,0 +1,126 @@
+- type: entity
+  parent: ActionXenoBase
+  id: CMUActionSwarmMenu
+  name: 较小的蜂群
+  description: 打开命令以召唤、守卫一个位置或用你的小虫群护送一个异种。
+  components:
+  - type: Action
+    clientExclusive: true
+    itemIconStyle: NoItem
+  - type: Sprite
+    layers:
+    - sprite: _RMC14/Actions/xeno_actions.rsi
+      state: queen_order
+      map: ["enum.ActionVisuals.Icon"]
+  - type: InstantAction
+    event: !type:CMUSwarmMenuActionEvent
+
+- type: entity
+  parent: CMUActionSwarmMenu
+  id: CMUActionSwarmRules
+  name: 群体行为与盟友
+  description: 设置被动移动或自动攻击，并管理你的蜂巢盟友。
+  components:
+  - type: Action
+    clientExclusive: false
+    autoPopulate: false
+  - type: InstantAction
+    event: !type:CMUSwarmRulesActionEvent
+
+- type: entity
+  parent: ActionXenoBase
+  id: CMUActionSummonSwarm
+  name: 召唤小型群体
+  description: 在蜂巢核心生成十五个次级人工智能。幸存者会累积。每十五分钟可使用一次。
+  components:
+  - type: Action
+    autoPopulate: false
+    useDelay: 900
+    itemIconStyle: NoItem
+  - type: Sprite
+    layers:
+    - sprite: _RMC14/Actions/xeno_actions.rsi
+      state: grow_ovipositor
+      map: ["enum.ActionVisuals.Icon"]
+  - type: InstantAction
+    event: !type:CMUSummonSwarmActionEvent
+
+- type: entity
+  parent: ActionXenoBase
+  id: CMUActionGuardSwarm
+  name: 虫群守卫标记
+  description: 命令你的下属移动到一个标记处，分散开来并防守它。他们在击败附近敌人后会返回。
+  components:
+  - type: Action
+    autoPopulate: false
+    itemIconStyle: NoItem
+  - type: Sprite
+    layers:
+    - sprite: _RMC14/Actions/xeno_actions.rsi
+      state: place_queen_beacon
+      map: ["enum.ActionVisuals.Icon"]
+  - type: TargetAction
+    range: 0
+    checkCanAccess: false
+  - type: WorldTargetAction
+    event: !type:CMUGuardSwarmActionEvent
+
+- type: entity
+  parent: ActionXenoBase
+  id: CMUActionFollowSwarm
+  name: 蜂群护送
+  description: 下令你的下属护送你蜂巢中由玩家控制的活着的异形，包括你自己，并攻击附近的敌人。
+  components:
+  - type: Action
+    autoPopulate: false
+    itemIconStyle: NoItem
+  - type: Sprite
+    layers:
+    - sprite: _RMC14/Actions/xeno_actions.rsi
+      state: queen_order
+      map: ["enum.ActionVisuals.Icon"]
+  - type: TargetAction
+    range: 0
+    checkCanAccess: false
+  - type: EntityTargetAction
+    canTargetSelf: true
+    whitelist:
+      components:
+      - Xeno
+    event: !type:CMUFollowSwarmActionEvent
+
+- type: entity
+  parent: CMXenoLesserDrone
+  id: CMUSwarmLesser
+  name: 次级群体无人机
+  description: 一只由女王指挥的小型、一次性无人机。
+  components:
+  - type: CMUSwarmLesser
+  - type: MovementSpeedModifier
+    baseWalkSpeed: 1.43
+    baseSprintSpeed: 2.6
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      160: Dead
+  - type: CMArmor
+    xenoArmor: 0
+  - type: Evasion
+    evasion: 0
+  - type: Xeno
+    actionIds: []
+
+- type: entity
+  id: CMUSwarmGuardMarker
+  name: 群守标记
+  description: 女王已经命令她的下级蜂群守卫这个位置。
+  placement:
+    mode: SnapgridCenter
+  components:
+  - type: Transform
+    anchored: true
+  - type: Sprite
+    sprite: _RMC14/Actions/xeno_actions.rsi
+    state: place_queen_beacon
+    drawdepth: FloorObjects
+    color: "#81d65c99"

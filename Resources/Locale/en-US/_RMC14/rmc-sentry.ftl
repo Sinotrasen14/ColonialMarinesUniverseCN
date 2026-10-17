@@ -15,9 +15,11 @@ rmc-sentry-active-norot = {CAPITALIZE(THE($sentry))}目前处于活动状态。�
 rmc-sentry-item-norot = 你不能这样旋转它！
 rmc-sentry-magazine-does-not-fit = {CAPITALIZE(THE($magazine))}装不进{THE($sentry)}！
 
-rmc-sentry-upgrade-not-item = 升级它之前你需要用多功能工具拆解{THE($sentry)}！
-rmc-sentry-upgrade-not-holding = 你需要在惯用手拿着升级套件才能升级{THE($sentry)}！
-rmc-sentry-upgrade-not-upgradeable = 你无法升级{THE($sentry)}！
+# cmu edit start: 哨兵可以用扳手拆卸
+rmc-sentry-upgrade-not-item = 你需要用扳手拆卸 {THE($sentry)} 才能升级它！
+# cmu edit end
+rmc-sentry-upgrade-not-holding = 你需要在你的主手持有升级套件来升级 {THE($sentry)}！
+rmc-sentry-upgrade-not-upgradeable = 你无法升级 {THE($sentry)}！
 
 rmc-sentry-spikes-self = 哨戒炮的钢牙割进了你的身体！
 rmc-sentry-spikes-others = 哨戒炮的钢牙割进了{$target}的身体！

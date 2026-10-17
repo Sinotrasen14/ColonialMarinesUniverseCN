@@ -137,9 +137,40 @@ trait-cmu-prosthetic-left-leg-desc = 你的左腿已被替换为机械假肢。
 trait-cmu-prosthetic-right-leg-name = 右腿假肢
 trait-cmu-prosthetic-right-leg-desc = 你的右腿已被替换为机械假肢。
 
-trait-cmu-tile-movement-name = 格子移动
-trait-cmu-tile-movement-desc = 你从一个格子移动到另一个格子，而不是自由行走，就像你之前的先辈一样。
+cmu-ui-options-movement = 移动
+cmu-ui-options-tile-movement = 格子移动
+cmu-ui-options-tile-movement-tooltip = 你从一个格子移动到另一个格子，而不是自由行走，就像你之前的先辈一样。
 
 cmu-trait-category-drinking = 酒精耐受
 cmu-trait-heavyweight-name = 千杯不醉
 cmu-trait-heavyweight-desc = 这是那种能喝的人。
+
+cmu-trait-opiate-receptor-deficiency-name = 阿片受体缺乏
+cmu-trait-opiate-receptor-deficiency-desc = 由于鸦片类药物的过度使用或基因突变，基本的止痛药（到曲马多为止）对你效果会差得多。
+
+cmu-trait-bad-leg-name = 坏腿
+cmu-trait-bad-leg-desc = 你的腿很久以前受了一个未确定的伤口，且从未完全愈合。没有拐杖行走最终会让你因疼痛而倒下，但你可以先用一根拐杖。GOVFOR、OPFOR 或执法部门无法使用，也不能与义肢一起使用。
+
+cmu-trait-iron-teeth-name = 铁牙
+cmu-trait-iron-teeth-desc = 你有铁齿，或者牙科保险特别好。你面部槽位的物品，比如刀，在你倒下时不会掉出来。
+
+cmu-bad-leg-warning = 你那条坏腿开始疼了。
+cmu-bad-leg-warning-severe = 你受伤的腿在隐隐作痛。如果没有拐杖，它撑不了多久！
+cmu-bad-leg-give-out = 你那条坏腿突然撑不住了，你痛得倒下！
+cmu-bad-leg-give-out-others = {CAPITALIZE(THE($user))} 当他们的腿软掉时蹒跚而行。
+
+cmu-mouth-item-falls-out = {CAPITALIZE(THE($item))} 从{THE($user)}的嘴里掉出来。
+
+cmu-trait-motion-sick-name = 晕动
+cmu-trait-motion-sick-desc = 乘坐飞行型空降船，或在移动的车辆内部或顶部，会让你感到头晕和恶心，有时还会呕吐。呕吐只会让情况更糟。飞行员、车辆乘员或车辆指挥官不可使用。
+
+cmu-motion-sick-queasy-1 = 你的胃随着动作翻腾。
+cmu-motion-sick-queasy-2 = 你咽了咽口水，肠子一阵翻腾。
+cmu-motion-sick-queasy-3 = 摇晃让你头晕。
+cmu-motion-sick-queasy-4 = 你的额头上冒出冷汗。
+cmu-motion-sick-queasy-5 = 你把目光固定在一个点上，但世界仍在摇摆。
+cmu-motion-sick-queasy-6 = 你的嘴里充满了唾液，你感到很难受。
+cmu-motion-sick-worse-1 = 你再也憋不住了！
+cmu-motion-sick-worse-2 = 你的胃让你失望了！
+cmu-motion-sick-worse-3 = 就是这样，你会生病的！
+cmu-motion-sick-worse-4 = 你的午饭又吐了出来，头比之前更晕了。

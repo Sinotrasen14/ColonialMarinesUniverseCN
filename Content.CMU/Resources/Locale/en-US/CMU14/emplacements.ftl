@@ -17,3 +17,7 @@ emplacement-mount-RMCSmartGunMountedStatic-description-mounted = 可部署的重
 emplacement-mount-RuMCMachineGunUTES-C-name = UTES-C 重机枪
 emplacement-mount-RuMCMachineGunUTES-C-description = 拆解后的UTES-C重机枪，折叠起的伸缩三脚架无法开火。
 emplacement-mount-RuMCMachineGunUTES-C-description-mounted = 一个可部署的 UPP 12.7x108mm 重机枪，带三脚架。架设慢、背起来很重，但一旦架好了，就能连续射出重型子弹。
+
+emplacement-mount-CMUATGMLauncher-name = MGM-120B FOGO-反坦克导弹
+emplacement-mount-CMUATGMLauncher-description = 前线观察员引导作战反坦克导弹。由ISCS制造，并分配到各个区域，以应对日益增加的远程车辆重型叛乱。这种有线制导反坦克导弹自那时起一直是当地Neroid军队的主力装备。
+emplacement-mount-CMUATGMLauncher-description-mounted = 一台部署好的线导反坦克导弹发射器。射手发射导弹；第二名使用连接寻标器的乘员将导弹引向目标。启动慢，重装更慢，但威力如同货运列车。

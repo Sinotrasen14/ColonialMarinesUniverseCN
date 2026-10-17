@@ -5,8 +5,12 @@ cmu-zlevel-look-up-nested = 你嵌套时无法向上看。
 cmu-zlevel-look-up-enabled = 你向上看。
 cmu-zlevel-look-up-disabled = 你停止向上看。
 
+cmu-zlevel-shoot-down-enabled = 你准备向下开火一个 Z 级别。
+cmu-zlevel-shoot-down-disabled = 你停止瞄准 Z 级。
 cmu-zlevel-shoot-down-disabled-unwield = 当你放下武器时，你停止瞄准。
 cmu-zlevel-shoot-up-disabled-unwield = 当你放下武器时，你停止向上瞄准。
+cmu-zlevel-shoot-down-no-gun = 你需要手持枪械才能瞄准Z级别。
+cmu-zlevel-shoot-down-requires-wield = 你需要先握持你的枪，然后再瞄准Z级。
 cmu-zlevel-shoot-down-no-level = 下面没有可以射击的 Z 级。
 cmu-zlevel-shoot-up-no-level = 没有更高的 Z 级可以射击。
 cmu-zlevel-shoot-down-blocked-floor = 附近没有可以向下射击的开口。

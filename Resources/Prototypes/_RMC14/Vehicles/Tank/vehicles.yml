@@ -248,6 +248,7 @@
   parent: VehicleTankBase
   id: VehicleTank
   components:
+  - type: CMUTankBlastProfile # CMU14: FLOW-09 per-explosion tank blast damage.
   - type: HardpointState
   - type: ContainerContainer
     containers:
@@ -301,6 +302,7 @@
   name: M34A2 朗斯特里特 ‘汤谷’
   description: 一种由汤谷公司用于安保和军事行动的轻型坦克，常出现在汤谷公司有势力存在的殖民地星区。
   components:
+  - type: CMUTankBlastProfile # CMU14: FLOW-09 per-explosion tank blast damage.
   - type: TankCookOff # CMU14
     turretSprite:
       sprite: _RMC14/Structures/Vehicles/wytank.rsi
@@ -530,6 +532,7 @@
   name: 猎豹 2A 轻型坦克
   description: 一种为UPP所有地面部队制造的轻型坦克。
   components:
+  - type: CMUTankBlastProfile # CMU14: FLOW-09 per-explosion tank blast damage.
   - type: TankCookOff # CMU14
     turretSprite:
       sprite: _RMC14/Structures/Vehicles/spptank.rsi
@@ -729,6 +732,7 @@
   name: FV150“霍贝拉”轻型骑兵坦克
   description: FV150“霍贝拉”轻型骑兵坦克是RMC的支援车辆，长6米、宽6米、高8米。它最初作为空降坦克为特种空勤团的行动采购，由于标志和技术设计的改变，该型号已成为皇家海军陆战队的支援车辆。后部入口。
   components:
+  - type: CMUTankBlastProfile # CMU14: FLOW-09 per-explosion tank blast damage.
   - type: TankCookOff # CMU14
     turretSprite:
       sprite: CMU14/Structures/vehicles/fv150/exterior.rsi

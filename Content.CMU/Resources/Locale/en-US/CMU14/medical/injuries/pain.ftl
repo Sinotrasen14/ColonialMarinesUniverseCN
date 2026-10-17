@@ -31,4 +31,3 @@ cmu-medical-shrapnel-extract-finish = 移除了 { $count } 嵌入弹片{ $count 
     [one] {""}
    *[other] s
 }.
-cmu-medical-shrapnel-movement-pain = 嵌入的弹片导致疼痛.

@@ -249,7 +249,7 @@
     fixtureID: projectile # no parent entity from BaseBulletTrigger because it has Clickable
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: RMC
+    explosionType: CMUAntiVehicleHE # CMU14: FLOW-09 was RMC; identical but for its tank blast multiplier.
     maxIntensity: 30
     intensitySlope: 10
     totalIntensity: 290
@@ -321,7 +321,7 @@
     fixtureID: projectile # no parent entity from BaseBulletTrigger because it has Clickable
   - type: ExplodeOnTrigger
   - type: Explosive
-    explosionType: RMC
+    explosionType: CMUAntiVehicleHE # CMU14: FLOW-09 was RMC; identical but for its tank blast multiplier.
     maxIntensity: 30
     intensitySlope: 10
     totalIntensity: 290
@@ -369,7 +369,7 @@
   description: 一个用于EMBLR地对空武器系统的粗短导弹发射筒。与美国殖民地海军陆战队的对应型号不同，“鹅”式携带了一枚小巧但威力强大的弹头。这一枚的侧面写有“穿甲”字样。
   components:
   - type: CartridgeAmmo
-    proto: RMCProjectileRocket84mmAntiArmor
+    proto: CMUProjectileRocket70mmAntiArmor # CMU14: FLOW-09 was RMCProjectileRocket84mmAntiArmor.
     deleteOnSpawn: false
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Explosives/emblr.rsi
@@ -384,10 +384,12 @@
 - type: entity
   id: CMUProjectileRocket70mmAntiArmor
   name: 70毫米反装甲火箭弹
-  parent: CMUProjectileRocket70mm
-  categories: [HideSpawnMenu]
+  parent: CMUProjectileRocket70mmHE # CMU14: FLOW-09 was CMUProjectileRocket70mm, which has no impact trigger.
+  categories: [ HideSpawnMenu ]
   components:
   - type: TankCookOffProjectile # CMU14
+    criticalChance: 0.15 # CMU14: FLOW-09
+    hullFraction: 0.3 # CMU14: FLOW-09
   - type: Projectile
     impactEffect: BulletImpactEffect
     damage:
@@ -430,6 +432,8 @@
   categories: [HideSpawnMenu]
   components:
   - type: TankCookOffProjectile # CMU14
+    criticalChance: 0.15 # CMU14: FLOW-09
+    hullFraction: 0.35 # CMU14: FLOW-09
   - type: Projectile
     impactEffect: BulletImpactEffect
     damage:

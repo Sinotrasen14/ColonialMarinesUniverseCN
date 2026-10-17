@@ -73,3 +73,13 @@ cmu-ui-options-hide-round-end-username = 在回合结束屏幕上隐藏我的用
 cmu-ui-options-hide-round-end-username-tooltip = 其他玩家在回合结束时能看到你的角色，但看不到扮演他们的账号。
 cmu-ui-options-hide-examine-tooltip = 隐藏 Shift+点击检查弹出窗口
 cmu-ui-options-hide-examine-tooltip-tooltip = 检查不再会弹出窗口。也请开启“将你检查的所有内容回显到聊天”以便在聊天中阅读检查内容。
+
+cmu-ui-options-hide-cassette-music-notes = 在卡带播放器上隐藏音符
+cmu-ui-options-hide-cassette-music-notes-tooltip = 停止在正在听磁带播放器的人身上绘制漂浮的音乐符号。
+
+cmu-ui-options-interface = 界面
+cmu-ui-options-gameplay = 游戏玩法
+cmu-ui-options-popups-examine = 弹出窗口和检查
+cmu-ui-options-screen-shake = 屏幕抖动
+cmu-ui-options-sound = 声音
+cmu-ui-options-visuals = 视觉元素
