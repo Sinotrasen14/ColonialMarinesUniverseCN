@@ -49,7 +49,7 @@ cm-xeno-cant-reach-there = 你够不到那里！
 cm-xeno-cant-build-in-self = 你不能在那么近的地方建造建筑！
 rmc-xeno-construction-unique-exists = 这里已经建有{$choice}了！
 rmc-xeno-construction-hive-limit-met = 我们已达到虫巢所能支持的{$choice}数量上限！
-rmc-xeno-construction-requires-hive-weeds = {$choice}必须建在虫巢杂草上！
+rmc-xeno-construction-requires-hive-weeds = {$choice}必须建在虫巢菌毯上！
 rmc-xeno-construction-requires-hive-core = 虫巢必须有一个虫巢核心才能建造{$choice}！
 rmc-xeno-construction-requires-space = 我们需要更开阔的空间才能在这里建造
 rmc-xeno-cant-build-new-yet = 我们暂时还不能建造新的{$choice}！
@@ -74,7 +74,7 @@ rmc-xeno-evolution-cant-devolve-damaged = 我们太虚弱了，无法退化，�
 rmc-xeno-evolution-cant-evolve-recent-queen-death-minutes = 我们必须等待大约{$minutes}分{$seconds}秒，让虫巢从上一位女王的死亡中恢复。
 rmc-xeno-evolution-cant-evolve-recent-queen-death-seconds = 我们必须等待大约{$seconds}秒，让虫巢从上一位女王的死亡中恢复。
 rmc-xeno-evolution-cant-evolve-caste-cooldown = 我们暂时还不能再次进化为这个种姓！（剩余{$minutes}分{$seconds}秒）
-rmc-xeno-evolution-failed-early-weeds = 虫巢的发展还不足以让你在杂草外进化！
+rmc-xeno-evolution-failed-early-weeds = 虫巢的发展还不足以让你在菌毯外进化！
 rmc-xeno-evolution-failed-bad-location = 我们无法在这里进化。
 rmc-xeno-evolution-failed-marines-dropped = 天上的高个子已经着陆，我们再也无法进化为这种形态。
 rmc-xeno-evolution-failed-queen-exists = 虫巢已经有一位女王了！
@@ -120,10 +120,10 @@ cmu-xeno-dash-blocked = 有东西挡住了冲刺！
 # Plant weeds
 cm-xeno-weeds-source-already-here = 这里已经有一个树脂节点了！
 rmc-xeno-weeds-blocked = 我们不能在这里这样做。
-rmc-xeno-weeds-no-nearby-node = 我们需要杂草更近一些！
-rmc-xeno-queen-eye-no-weeds = 我们无法把视线移到那里，那里没有杂草！
-rmc-xeno-queen-eye-expand-weeds-name = 扩张杂草（50）
-rmc-xeno-queen-eye-expand-weeds-desc = 扩张现有杂草，或将一格杂草变为节点。
+rmc-xeno-weeds-no-nearby-node = 我们需要菌毯更近一些！
+rmc-xeno-queen-eye-no-weeds = 我们无法把视线移到那里，那里没有菌毯！
+rmc-xeno-queen-eye-expand-weeds-name = 扩张菌毯（50）
+rmc-xeno-queen-eye-expand-weeds-desc = 扩张现有菌毯，或将一格菌毯变为节点。
 
 # Corrosive acid
 cm-xeno-acid-not-corrodible = 我们无法溶解{THE($target)}！
@@ -158,7 +158,7 @@ rmc-xeno-pheromones-help =
 
     狂暴（红）- 提升奔跑速度、伤害以及打落猎头者面具的几率。
 
-    守护（绿）- 处于危急状态时，提高负生命值上限，并减缓在杂草外的失血速度。
+    守护（绿）- 处于危急状态时，提高负生命值上限，并减缓在菌毯外的失血速度。
 
     恢复（蓝）- 提升等离子体和生命值的恢复速度。
 cm-xeno-choose-pheromones = 选择信息素
@@ -423,7 +423,7 @@ rmc-xeno-produce-eggs-new-egg = 我们产生了一颗卵。当前持有：{$cur_
 rmc-xeno-produce-eggs-start = 我们开始形成卵。
 
 # Eggsac Passive
-rmc-xeno-sustain-egg-decaying = 在虫巢杂草外我们最多只能维持{$max}颗卵！我们最老的卵正在迅速腐坏。
+rmc-xeno-sustain-egg-decaying = 在虫巢菌毯外我们最多只能维持{$max}颗卵！我们最老的卵正在迅速腐坏。
 rmc-xeno-sustain-death = {CAPITALIZE(THE($xeno))}痛苦挣扎，它的卵囊爆裂成一摊酸液！
 
 # Apprehend

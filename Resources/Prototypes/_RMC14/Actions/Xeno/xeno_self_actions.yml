@@ -2,7 +2,7 @@
   id: ActionXenoRest
   parent: ActionXenoBase
   name: 休息
-  description: 在杂草上躺下可以更快地恢复生命值。[color=red]你的休息快捷键也会激活此动作，默认是 Shift+R。[/color]
+  description: 在菌毯上躺下可以更快地恢复生命值。[color=red]你的休息快捷键也会激活此动作，默认是 Shift+R。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -19,7 +19,7 @@
   parent: CMGuidebookActionXenoBase
   id: RMCGuidebookActionXenoRest
   name: 休息
-  description: 躺下以在杂草上更快恢复生命值。[color=red]你的休息快捷键也会激活此动作，默认是 Shift+R。[/color]
+  description: 躺下以在菌毯上更快恢复生命值。[color=red]你的休息快捷键也会激活此动作，默认是 Shift+R。[/color]
   categories: [HideSpawnMenu]
   components:
   - type: Sprite
@@ -161,7 +161,7 @@
   id: ActionXenoResinWalker
   parent: ActionXenoBase
   name: 树脂行者（50）          # TODO RMC14 proper plasma costs
-  description: 在杂草上跑得更快。[color=cyan]每秒消耗30等离子。[/color]
+  description: 在菌毯上跑得更快。[color=cyan]每秒消耗30等离子。[/color]
   components:
   - type: Action
     itemIconStyle: NoItem

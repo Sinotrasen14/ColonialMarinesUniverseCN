@@ -1,8 +1,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenPlantWeeds
   parent: ActionXenoBase
-  name: 种植杂草（75）
-  description: 种植一个杂草节点，它会蔓延出更多杂草。
+  name: 种植菌毯（75）
+  description: 种植一个菌毯节点，它会蔓延出更多菌毯。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -68,7 +68,7 @@
   id: CMU14ActionXenoPathogenCoerceResin
   parent: ActionXenoBase
   name: 胁迫树脂
-  description: "建造通过“选择树脂结构”行动选定的结构。如果你在杂草上，也可以在视线范围内建造。"
+  description: "建造通过“选择树脂结构”行动选定的结构。如果你在菌毯上，也可以在视线范围内建造。"
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -112,7 +112,7 @@
   id: CMU14ActionXenoPathogenResinHole
   parent: ActionXenoBase
   name: 植物树脂洞（200）
-  description: 在杂草上放置一个树脂洞。它可以被填充沸腾气体、酸液或寄生体。
+  description: 在菌毯上放置一个树脂洞。它可以被填充沸腾气体、酸液或寄生体。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -147,7 +147,7 @@
   id: CMU14ActionXenoPathogenFruitPlant
   parent: ActionXenoBase
   name: 植物树脂果实（100）
-  description: 在杂草上种植选定的树脂果实，消耗生命和等离子。异形可以在果实成熟后采摘，你也可以提前拔掉植物以清除它。异形可以在手中使用或在地上食用以获得效果。它们也可以用于其他异形来喂食。你同时只能种植和采摘6个果实。
+  description: 在菌毯上种植选定的树脂果实，消耗生命和等离子。异形可以在果实成熟后采摘，你也可以提前拔掉植物以清除它。异形可以在手中使用或在地上食用以获得效果。它们也可以用于其他异形来喂食。你同时只能种植和采摘6个果实。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -163,8 +163,8 @@
 - type: entity
   id: CMU14ActionXenoPathogenPlantWeedsHardy
   parent: ActionXenoBase
-  name: 种植耐寒杂草（125）
-  description: 种植一个杂草节点，它会传播更顽强的杂草，这些杂草结果速度提高25%，生命值略高，并且可以传播到一些普通杂草无法生长的表面上。
+  name: 种植耐寒菌毯（125）
+  description: 种植一个菌毯节点，它会传播更顽强的菌毯，这些菌毯结果速度提高25%，生命值略高，并且可以传播到一些普通菌毯无法生长的表面上。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -183,7 +183,7 @@
   id: CMU14ActionXenoPathogenFruitPlantLesser
   parent: CMU14ActionXenoPathogenFruitPlant
   name: 植物树脂果实（50）
-  description: 以消耗生命和等离子为代价，在杂草上种植树脂果实。
+  description: 以消耗生命和等离子为代价，在菌毯上种植树脂果实。
   components:
   - type: InstantAction
     event: !type:XenoFruitPlantActionEvent
@@ -217,8 +217,8 @@
 - type: entity
   parent: ActionXenoBase
   id: CMU14ActionXenoPathogenExpandWeeds
-  name: 扩张杂草（50）
-  description: 扩张现有杂草，或将一块杂草地块变为节点。
+  name: 扩张菌毯（50）
+  description: 扩张现有菌毯，或将一块菌毯地块变为节点。
   components:
   - type: Action
     itemIconStyle: NoItem

@@ -6,8 +6,8 @@
 - type: entity
   parent: XenoWeeds
   id: CMU14XenoMyceliumWeeds
-  name: 菌丝杂草
-  description: 苍白的纤维状菌丝在地面上蔓延。踩上去感觉像海绵一样松软。
+  name: 真菌菌毯
+  description: 苍白的纤维状真菌在地面上蔓延。踩上去感觉像海绵一样松软。
   components:
   - type: NpcFactionMember
     factions:
@@ -68,8 +68,8 @@
 - type: entity
   parent: CMU14XenoMyceliumWeeds
   id: CMU14XenoMyceliumWeedsSource
-  name: 菌丝节点
-  description: 一团搏动的菌丝结。它缓缓地将孢子散布到地板上。
+  name: 真菌节点
+  description: 一团搏动的真菌结。它缓缓地将孢子散布到地板上。
   components:
   - type: Sprite
     sprite: CMU14/Structures/Xeno/Pathogen/pathogen_weeds.rsi
@@ -140,7 +140,7 @@
 - type: entity
   parent: CMU14XenoMyceliumWeeds
   id: CMU14XenoMyceliumHiveWeeds
-  name: 密集菌丝杂草
+  name: 密集真菌菌毯
   components:
   - type: Sprite
     sprite: CMU14/Structures/Xeno/Pathogen/pathogen_weeds.rsi
@@ -221,8 +221,8 @@
 - type: entity
   parent: CMU14XenoMyceliumHiveWeeds
   id: CMU14XenoMyceliumHiveWeedsSource
-  name: 密集菌丝节点
-  description: 一大团脉动着的密集菌丝体。它向周围区域散播孢子。
+  name: 密集真菌节点
+  description: 一大团脉动着的密集真菌体。它向周围区域散播孢子。
   components:
   - type: Sprite
     sprite: CMU14/Structures/Xeno/Pathogen/pathogen_weeds.rsi
@@ -286,7 +286,7 @@
 
 - type: entity
   id: CMU14XenoMyceliumWeedsWall
-  name: 菌丝杂草
+  name: 真菌菌毯
   placement:
     mode: SnapgridCenter
     snap:

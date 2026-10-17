@@ -8,8 +8,8 @@
 - type: entity
   id: ActionXenoPlantWeeds
   parent: ActionXenoBase
-  name: 种植杂草（75）         # TODO RMC14 proper plasma costs
-  description: 种下一个会蔓延更多杂草的杂草节点。
+  name: 种植菌毯（75）         # TODO RMC14 proper plasma costs
+  description: 种下一个会蔓延更多菌毯的菌毯节点。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -90,7 +90,7 @@
   id: ActionXenoCoerceResin
   parent: ActionXenoBase
   name: 强制树脂
-  description: "建造通过“选择树脂结构”动作选定的结构。如果你位于杂草上，也可以在视野范围内建造。"
+  description: "建造通过“选择树脂结构”动作选定的结构。如果你位于菌毯上，也可以在视野范围内建造。"
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -144,7 +144,7 @@
   id: ActionXenoResinHole
   parent: ActionXenoBase
   name: 植物树脂孔（200）
-  description: 在杂草上放置一个树脂孔。它可以用锅炉气体、酸或寄生虫填充。
+  description: 在菌毯上放置一个树脂孔。它可以用沸腾气体、酸或寄生虫填充。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -188,7 +188,7 @@
   id: ActionXenoFruitPlant
   parent: ActionXenoBase
   name: 种植树脂果实（100）
-  description: 将选定的树脂果实种植在杂草上，代价是生命值和血浆。异形可以在这些果实成熟后采摘，你也可以提前采摘一株植物以将其清除。异形可以将其拿在手中使用，或放在地上吃掉以获得其效果。也可以将它们用在其他异形身上来喂食。你一次最多只能种植和采摘6个果实。
+  description: 将选定的树脂果实种植在菌毯上，代价是生命值和血浆。异形可以在这些果实成熟后采摘，你也可以提前采摘一株植物以将其清除。异形可以将其拿在手中使用，或放在地上吃掉以获得其效果。也可以将它们用在其他异形身上来喂食。你一次最多只能种植和采摘6个果实。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -204,8 +204,8 @@
 - type: entity
   id: ActionXenoPlantWeedsHardy
   parent: ActionXenoBase
-  name: 种植坚韧杂草（125）             # TODO RMC14 proper plasma costs
-  description: 种植一个杂草节点，它会传播更坚韧的杂草，这些杂草结果实速度提高25%，生命值略高，并且可以蔓延到一些普通杂草无法生长的表面上。
+  name: 种植坚韧菌毯（125）             # TODO RMC14 proper plasma costs
+  description: 种植一个菌毯节点，它会传播更坚韧的菌毯，这些菌毯结果实速度提高25%，生命值略高，并且可以蔓延到一些普通菌毯无法生长的表面上。
   components:
   - type: Action
     itemIconStyle: NoItem
@@ -225,7 +225,7 @@
   id: ActionXenoFruitPlantLesser
   parent: ActionXenoFruitPlant
   name: 种植树脂果实（50）
-  description: 以生命值和血浆为代价，在杂草上种植树脂果实。
+  description: 以生命值和血浆为代价，在菌毯上种植树脂果实。
   components:
   - type: InstantAction
     event: !type:XenoFruitPlantActionEvent
@@ -276,8 +276,8 @@
 - type: entity
   parent: ActionXenoBase
   id: ActionXenoExpandWeeds
-  name: 扩展杂草（50）          # TODO RMC14 proper plasma costs
-  description: 扩展现有杂草，或将杂草地块变为节点。
+  name: 扩展菌毯（50）          # TODO RMC14 proper plasma costs
+  description: 扩展现有菌毯，或将菌毯地块变为节点。
   components:
   - type: Action
     itemIconStyle: NoItem

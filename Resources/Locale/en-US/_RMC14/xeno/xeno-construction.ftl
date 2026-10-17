@@ -1,21 +1,21 @@
 cm-xeno-construction-failed-weeds = 这里不适合建园子！
 ent-XenoResinSpikes = 树脂尖刺
     .desc = 一小簇骨质尖刺。好疼。
-cm-xeno-construction-failed-need-weeds = 我们只能在杂草上塑形。开始建造前先找些树脂！
+cm-xeno-construction-failed-need-weeds = 我们只能在菌毯上塑形。开始建造前先找些树脂！
 rmc-xeno-construction-failed-needs-hole = 我们只能让这个横跨地面上的一个洞。
 cm-xeno-construction-failed-cant-build = 我们不能在那里建造！
 cm-xeno-construction-failed-select-structure = 我们需要先选择要建造的建筑！使用"选择树脂建筑"动作。
 cm-xeno-construction-failed-requires-support = {CAPITALIZE(MAKEPLURAL($choice))}旁边需要一堵墙或树脂门才能立起来。
 
 rmc-xeno-construction-remote-failed-need-line-of-sight = 我们需要直接视线才能建造！
-rmc-xeno-construction-remote-failed-need-on-weeds = 我们必须站在杂草上才能与树脂建立连接。
-rmc-xeno-construction-remote-construct = 我们把等离子注入脚下的杂草，迫使杂草分泌树脂！
+rmc-xeno-construction-remote-failed-need-on-weeds = 我们必须站在菌毯上才能与树脂建立连接。
+rmc-xeno-construction-remote-construct = 我们把等离子注入脚下的菌毯，迫使菌毯分泌树脂！
 rmc-xeno-construction-remote-open-door = 我们专注于与树脂的连接，远程打开树脂门。
 rmc-xeno-construction-remote-close-door = 我们专注于与树脂的连接，远程关闭树脂门。
 
 rmc-xeno-construction-no-map = 地面不牢固。
 rmc-xeno-construction-no-map-resin-hole = 地面不牢固
-rmc-xeno-construction-must-have-weeds-resin-hole = 树脂洞必须建在杂草上。
+rmc-xeno-construction-must-have-weeds-resin-hole = 树脂洞必须建在菌毯上。
 rmc-xeno-construction-blocked = 我们不能在这里制作这个。
 rmc-xeno-construction-blocked-resin-hole = 这里已经有东西了。
 rmc-xeno-construction-blocked-structure = 这里已经有东西了。
@@ -91,11 +91,11 @@ rmc-xeno-construction-repair-structure-success = 我们成功修复了{$struct}�
 rmc-xeno-construction-repair-structure-no-damage-failure = {$struct}状态良好，你不需要修复它。
 rmc-xeno-construction-repair-structure-insufficient-plasma-warn = {$struct}还需要{$remainingPlasma}点等离子才能修复。
 
-rmc-xeno-construction-egg-morpher-no-parasites = 蛋形变形器里没有孩子！
-rmc-xeno-construction-egg-morpher-attempt-insert-non-parasite = 你不能把那东西放进蛋形变形器！
-rmc-xeno-construction-egg-morpher-already-full = 这个蛋形变形器已经满了！
+rmc-xeno-construction-egg-morpher-no-parasites = 卵变形器里没有孩子！
+rmc-xeno-construction-egg-morpher-attempt-insert-non-parasite = 你不能把那东西放进卵变形器！
+rmc-xeno-construction-egg-morpher-already-full = 这个卵变形器已经满了！
 
-rmc-xeno-egg-morpher-return-self = {CAPITALIZE($parasite)}爬进了蛋形变形器。
+rmc-xeno-egg-morpher-return-self = {CAPITALIZE($parasite)}爬进了卵变形器。
 
 rmc-xeno-construction-egg-morpher-examine = 庇护中：{$cur_paras}/{$max_paras}个孩子。
 
@@ -103,7 +103,7 @@ rmc-xeno-construction-recovery-node-heal-target = 我们感到一股温暖的光
 rmc-xeno-construction-recovery-node-heal-other = {CAPITALIZE(THE($target))}被温暖的光环笼罩，发出微光。
 
 rmc-xeno-construction-no-map-structure = 地面不牢固。
-rmc-xeno-construction-must-have-weeds-structure = 我们只能在杂草上制作这个！
+rmc-xeno-construction-must-have-weeds-structure = 我们只能在菌毯上制作这个！
 
 rmc-xeno-designer-ui-nodes-count = 设计节点：{$count}/{$max}
 
@@ -113,10 +113,10 @@ rmc-designnode-no-plasma = 你没有足够的等离子来喂养这个节点。
 rmc-xeno-designer-delete-node-none = 这里没有设计节点。
 rmc-xeno-designer-delete-node-not-owned = 我们只能删除自己的设计节点。
 rmc-xeno-designer-use-node-wrong-hive = 这个节点不属于你的虫巢！
-rmc-xeno-designer-node-needs-weed = 没有杂草可以建立连接！
+rmc-xeno-designer-node-needs-weed = 没有菌毯可以建立连接！
 
 rmc-xeno-designer-thicken-none = 这里没有可以加厚的树脂建筑。
-rmc-xeno-designer-thicken-weedbound = 我们不能加厚与杂草相连的树脂。
+rmc-xeno-designer-thicken-weedbound = 我们不能加厚与菌毯相连的树脂。
 rmc-xeno-designer-thicken-success = 我们加厚了树脂。
 
 rmc-xeno-designer-greater-surge-cooldown = 我们需要等待才能再次使用大型树脂涌流。

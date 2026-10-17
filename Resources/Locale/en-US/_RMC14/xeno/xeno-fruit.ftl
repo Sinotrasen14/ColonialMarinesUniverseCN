@@ -3,9 +3,9 @@ rmc-xeno-fruit-choose = 分泌树脂时，我们现在会种植{$fruit}。
 
 # Plant failures
 rmc-xeno-fruit-plant-failed = 我们不能在那里种植！
-rmc-xeno-fruit-plant-failed-weeds = 没有杂草园，我们无法种植果实！
+rmc-xeno-fruit-plant-failed-weeds = 没有菌毯园，我们无法种植果实！
 rmc-xeno-fruit-plant-failed-select = 你需要先选择要种植的果实！使用"选择树脂果实"动作。
-rmc-xeno-fruit-plant-failed-hive = 这些杂草不属于我们的虫巢；它们会排斥我们的果实。
+rmc-xeno-fruit-plant-failed-hive = 这些菌毯不属于我们的虫巢；它们会排斥我们的果实。
 rmc-xeno-fruit-plant-failed-resin-hole = 这个位置离树脂洞太近了！
 rmc-xeno-fruit-plant-failed-fruit = 这个位置离另一颗果实太近了！
 rmc-xeno-fruit-plant-failed-node = 这里已经有树脂节点了！
@@ -97,7 +97,7 @@ rmc-xeno-fruit-wrong-hive = 这不是我们虫巢的产物！
 rmc-xeno-fruit-feed-wrong-hive = {THE($target)}不是我们虫巢的！
 
 # Weeds
-rmc-xeno-fruit-weed-boost = 我们感应到这些杂草会把树脂果实的生长时间乘以[bold]{$percent}%[/bold]。
+rmc-xeno-fruit-weed-boost = 我们感应到这些菌毯会把树脂果实的生长时间乘以[bold]{$percent}%[/bold]。
 
 # Effects
 rmc-xeno-fruit-consume-examine = 这颗果实在被吃掉时会产生以下效果：

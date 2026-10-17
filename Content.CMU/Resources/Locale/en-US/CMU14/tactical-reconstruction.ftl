@@ -79,6 +79,6 @@ cmu-options-tacmap-classic = 使用经典战术地图
 cmu-options-tacmap-classic-tooltip = 打开原始2D战术地图而非重建地图。下次打开地图时生效。
 cmu-options-tacmap-center = 打开3D战术地图时以我为中心
 cmu-options-tacmap-center-tooltip = 从你的位置和楼层开始。查看其他地图时，保留该地图的视图。
-cmu-recon-queen-eye-click = 点击杂草以移动女王之眼。拖动以平移。
+cmu-recon-queen-eye-click = 点击菌毯以移动女王之眼。拖动以平移。
 cmu-recon-xeno-watch-click = 点击以观察此异形。
 cmu-recon-static-map = 静态地图

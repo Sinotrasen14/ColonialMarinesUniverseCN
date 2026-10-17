@@ -1,8 +1,8 @@
 cm-xeno-egg-clear = 我们清除了孵化的虫卵。
 cm-xeno-egg-not-developed = 这枚虫卵尚未发育完全。
 
-cm-xeno-egg-failed-must-weeds = 虫卵必须种在杂草上。
-cm-xeno-egg-failed-must-hive-weeds = 虫卵必须种在虫巢杂草上。
+cm-xeno-egg-failed-must-weeds = 虫卵必须种在菌毯上。
+cm-xeno-egg-failed-must-hive-weeds = 虫卵必须种在虫巢菌毯上。
 cm-xeno-egg-failed-plant-outside = 最好别把这东西种在隔离舱外。
 cm-xeno-egg-failed-already-there = 那里已经有一枚虫卵了。
 cm-xeno-egg-blocked = 这里已经建了东西。

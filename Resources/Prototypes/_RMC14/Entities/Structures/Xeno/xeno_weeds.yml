@@ -1,7 +1,7 @@
 - type: entity # TODO RMC14 sound
   id: XenoWeeds
-  name: 杂草
-  description: 怪异的黑色杂草……
+  name: 菌毯
+  description: 怪异的黑色菌毯……
   placement:
     mode: SnapgridCenter
     snap:
@@ -149,7 +149,7 @@
 - type: entity # TODO RMC14 sound
   parent: XenoWeeds
   id: XenoWeedsSource
-  name: 杂草节点
+  name: 菌毯节点
   description: 一个怪异、搏动的节点
   components:
   - type: Sprite
@@ -217,7 +217,7 @@
 - type: entity # TODO RMC14 sound
   parent: XenoWeeds
   id: XenoHiveWeeds
-  name: 蜂巢杂草
+  name: 蜂巢菌毯
   placement:
     mode: SnapgridCenter
     snap:
@@ -319,7 +319,7 @@
 - type: entity # TODO RMC14 sound
   parent: XenoHiveWeeds
   id: XenoHiveWeedsSource
-  name: 蜂巢杂草节点
+  name: 蜂巢菌毯节点
   description: 一个怪异、搏动着的节点
   components:
   - type: Sprite
@@ -381,7 +381,7 @@
 
 - type: entity
   id: XenoWeedsWall
-  name: 杂草
+  name: 菌毯
   placement:
     mode: SnapgridCenter
     snap:
@@ -461,7 +461,7 @@
 - type: entity # TODO RMC14 sound
   parent: XenoHardyWeeds
   id: XenoHardyWeedsSource
-  name: 耐寒杂草节点
+  name: 耐寒菌毯节点
   description: 一个怪异的、搏动着的节点
   components:
   - type: Sprite

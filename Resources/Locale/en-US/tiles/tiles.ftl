@@ -141,7 +141,7 @@ tiles-xeno-steel-corner = 异形钢制转角地砖
 tiles-xeno-maint = 异形科技维修
 tiles-dark-squiggly = 深色钢制波纹地砖
 
-tiles-au14-scab-resin = 痂状树脂
+tiles-au14-scab-resin = 支撑树脂地面
 
 
 tiles-rcd-plating = RCD舱板

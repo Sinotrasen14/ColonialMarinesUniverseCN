@@ -48,17 +48,17 @@ highlights-rifleman = 步枪手, "RFN", "SL", 指挥
 
 # Xenonids
 
-highlights-boiler = 锅炉, "Pat"
+highlights-boiler = 沸腾者, 锅炉, "Pat"
 highlights-burrower = 掘地者, "Pat", 隧道, "Weed", 陷阱, 圈套
-highlights-carrier = 载体, "Pat", 寄生体, "Weed", 集束, 变形者, "Infect", 陷阱, 圈套, 捕获, 孩子, 幼虫
+highlights-carrier = 搬运者, "Pat", 寄生体, "Weed", 集束, 变形者, "Infect", 陷阱, 圈套, 捕获, 孩子, 幼虫
 highlights-crusher = 粉碎者, "Pat"
 highlights-defender = 防御者, "Pat"
-highlights-drone = "雄蜂", "Pat", "Weed", 集束, 治疗, 捕获
+highlights-drone = "工蜂", "Pat", "Weed", 集束, 治疗, 捕获
 highlights-hivelord = 巢主, "Pat", "Weed", 集束
 highlights-larva = 幼虫, "Pat"
-highlights-lesser-drone = "次级雄蜂", "Pat", "Lesser", "Weed"
+highlights-lesser-drone = "次级工蜂", "Pat", "Lesser", "Weed"
 highlights-lurker = 潜伏者, "Pat"
-highlights-parasite = 寄生体, "Infect", 孩子, 幼虫
+highlights-parasite = 抱脸虫, "Infect", 孩子, 幼虫
 highlights-praetorian = 禁卫军, "Pat"
 highlights-queen = "女王", "Mom", "母亲", "高个潜伏者", "块茎"
 highlights-ravager = 蹂躏者, "Pat"

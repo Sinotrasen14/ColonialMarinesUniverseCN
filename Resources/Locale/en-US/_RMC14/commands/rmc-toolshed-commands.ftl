@@ -37,7 +37,7 @@ command-description-icon-del = 移除玩家的职业图标。
 command-description-marine-randomize = 删除并在同一位置重新生成陆战队员或一组陆战队员，赋予随机的名字、种族和外貌。
 command-description-marine-randomizewithjob = 删除并在同一位置重新生成陆战队员或一组陆战队员，赋予指定职业和随机的名字、种族和外貌。
 
-command-description-removeinvalidweeds = 移除地图上任何本不该蔓延到当前位置的杂草。
+command-description-removeinvalidweeds = 移除地图上任何本不该蔓延到当前位置的菌毯。
 
 command-description-requisitions-addbudget = 为指定阵营增加预算（govfor、opfor、colony、corporate、unassigned、all）
 command-description-requisitions-removebudget = 从指定阵营移除预算（govfor、opfor、colony、corporate、unassigned、all）
@@ -64,7 +64,7 @@ command-description-squad-refresh = 手动刷新某小队的成员。
 
 command-description-xenomature = 立即使异形成熟。适用于女王，届时她会获得更多生命值和能力。
 
-command-description-weedkiller = 对当前位置的区域运行除草剂。这会杀死附近所有杂草和树脂建筑。
+command-description-weedkiller = 对当前位置的区域运行除草剂。这会杀死附近所有菌毯和树脂建筑。
 
 command-description-withxenotier = 按特定异形层级过滤实体或实体原型。
 

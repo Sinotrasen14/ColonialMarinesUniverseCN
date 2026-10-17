@@ -23,8 +23,8 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyWEYU
-  name: 韦兰殖民地加密密钥
-  description: 用于在殖民地和韦兰无线电频道上通信的加密密钥。
+  name: 维兰德殖民地加密密钥
+  description: 用于在殖民地和维兰德无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -35,7 +35,7 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyProdigy
-  name: 天才殖民加密密钥
+  name: 神童殖民加密密钥
   description: 一种用于在殖民地和神童无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
@@ -47,7 +47,7 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyCMB
-  name: 招商银行加密密钥
+  name: CMB 加密密钥
   suffix: Colony, CMB
   description: 用于在殖民地和CMB无线电频道上通信的加密密钥。
   components:
@@ -60,7 +60,7 @@
 - type: entity
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyCMBOnly
-  name: 招商银行加密密钥
+  name: CMB 加密密钥
   description: 用于在CMB无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
@@ -154,8 +154,8 @@
 - type: entity
   parent: AU14HeadsetColonist
   id: AU14HeadsetWorkingJoe
-  name: Working Joe耳机
-  description: “工蜂”常用的耳机。
+  name: 工作乔 耳机
+  description: “工作乔”常用的耳机。
   components:
   - type: Sprite
     state: generic_headset
@@ -239,7 +239,7 @@
 - type: entity
   parent: AU14ColonyAdminHeadset
   id: AU14AmbassadorUPPHeadset
-  name: 上合组织大使耳机
+  name: UPP大使耳机
   description: UPP大使用于通讯的耳机。
   suffix: Colony, Ambassador
   components:
