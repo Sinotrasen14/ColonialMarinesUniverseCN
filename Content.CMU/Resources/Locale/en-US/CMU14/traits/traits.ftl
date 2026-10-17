@@ -137,9 +137,49 @@ trait-cmu-prosthetic-left-leg-desc = 你的左腿已被替换为机械假肢。
 trait-cmu-prosthetic-right-leg-name = 右腿假肢
 trait-cmu-prosthetic-right-leg-desc = 你的右腿已被替换为机械假肢。
 
+<<<<<<< HEAD
 trait-cmu-tile-movement-name = 格子移动
 trait-cmu-tile-movement-desc = 你从一个格子移动到另一个格子，而不是自由行走，就像你之前的先辈一样。
 
 cmu-trait-category-drinking = 酒精耐受
 cmu-trait-heavyweight-name = 千杯不醉
 cmu-trait-heavyweight-desc = 这是那种能喝的人。
+=======
+cmu-ui-options-movement = Movement
+cmu-ui-options-tile-movement = Tile movement
+cmu-ui-options-tile-movement-tooltip = Move from tile to tile instead of walking freely, just like the forebears who came before you.
+
+cmu-trait-category-drinking = Alcohol Tolerance
+cmu-trait-heavyweight-name = Heavyweight drunk
+cmu-trait-heavyweight-desc = This is someone that can hold their liquor.
+
+cmu-trait-opiate-receptor-deficiency-name = Opiate Receptor Deficiency
+cmu-trait-opiate-receptor-deficiency-desc = Due to overuse of opiates or a genetic fluke, basic painkillers (up to tramadol) work much less well on you.
+
+cmu-trait-bad-leg-name = Bad Leg
+cmu-trait-bad-leg-desc = Your leg suffered an undetermined wound a long time ago that never fully healed. Walking around without a cane will eventually make you fall over in pain, but you start with one. Not available to GOVFOR, OPFOR or law enforcement, and can't be taken with a prosthetic leg.
+
+cmu-trait-iron-teeth-name = Iron Teeth
+cmu-trait-iron-teeth-desc = You've got iron teeth, or really good dental insurance. Items in your face slot, such as knives, won't fall out when you go down.
+
+cmu-bad-leg-warning = Your bad leg is starting to ache.
+cmu-bad-leg-warning-severe = Your bad leg is throbbing. It won't hold out much longer without a cane!
+cmu-bad-leg-give-out = Your bad leg gives out and you collapse in pain!
+cmu-bad-leg-give-out-others = {CAPITALIZE(THE($user))} stumbles as their leg gives out.
+
+cmu-mouth-item-falls-out = {CAPITALIZE(THE($item))} falls out of {THE($user)}'s mouth.
+
+cmu-trait-motion-sick-name = Motion Sick
+cmu-trait-motion-sick-desc = Riding in a flying dropship, or inside or on top of a moving vehicle, leaves you dizzy and queasy, and now and then you'll lose your lunch. Puking only makes it worse. Not available to flight crew, vehicle crewmen or vehicle commanders.
+
+cmu-motion-sick-queasy-1 = Your stomach turns over with the motion.
+cmu-motion-sick-queasy-2 = You swallow hard as your guts lurch.
+cmu-motion-sick-queasy-3 = The rocking makes your head swim.
+cmu-motion-sick-queasy-4 = A cold sweat breaks out on your forehead.
+cmu-motion-sick-queasy-5 = You fix your eyes on one spot, but the world keeps swaying.
+cmu-motion-sick-queasy-6 = Your mouth fills with spit and you feel awful.
+cmu-motion-sick-worse-1 = You can't hold it in any longer!
+cmu-motion-sick-worse-2 = Your stomach gives up on you!
+cmu-motion-sick-worse-3 = That's it, you're going to be sick!
+cmu-motion-sick-worse-4 = Your lunch comes back up, and your head spins worse than before.
+>>>>>>> upstream

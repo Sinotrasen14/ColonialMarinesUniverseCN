@@ -1,0 +1,21 @@
+- type: entity
+  parent: ActionXenoBase
+  id: CMUActionReaperRevive
+  name: 复活异形
+  description: 花费500点肉体复活一名蜂巢姐妹。在死亡后三分钟内开始，然后引导两分钟。一旦复活被接受，即使在新鲜度窗口期过后也可以完成。开始充能时会消耗肉体和十分钟冷却时间，即使被中断。
+  components:
+  - type: Action
+    itemIconStyle: NoItem
+    useDelay: 600
+  - type: Sprite
+    layers:
+    - sprite: _CM13/Actions/xeno_strain_actions.rsi
+      state: reaper_carrion_mantle
+      map: ["enum.ActionVisuals.Icon"]
+  - type: TargetAction
+    range: 1.5
+  - type: EntityTargetAction
+    event: !type:Content.Shared.CMU14.Xenomorphs.Reaper.CMUReaperReviveActionEvent
+  - type: ActionBlockIfResting
+  - type: ActionInRangeUnobstructed
+    range: 1.5

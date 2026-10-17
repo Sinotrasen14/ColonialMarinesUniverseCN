@@ -14,6 +14,16 @@ emplacement-mount-RMCSmartGunMountedStatic-name = ML66D 支架
 emplacement-mount-RMCSmartGunMountedStatic-description = ML66D 的可折叠支架，为 ML66D 提供稳定性。
 emplacement-mount-RMCSmartGunMountedStatic-description-mounted = 可部署的重型机枪。它发射专用钨弹以提高穿甲能力。
 
+<<<<<<< HEAD
 emplacement-mount-RuMCMachineGunUTES-C-name = UTES-C 重机枪
 emplacement-mount-RuMCMachineGunUTES-C-description = 拆解后的UTES-C重机枪，折叠起的伸缩三脚架无法开火。
 emplacement-mount-RuMCMachineGunUTES-C-description-mounted = 一个可部署的 UPP 12.7x108mm 重机枪，带三脚架。架设慢、背起来很重，但一旦架好了，就能连续射出重型子弹。
+=======
+emplacement-mount-RuMCMachineGunUTES-C-name = UTES-C heavy machine gun
+emplacement-mount-RuMCMachineGunUTES-C-description = The disassembled UTES-C HMG, with its telescopic tripods folded up and unable to fire.
+emplacement-mount-RuMCMachineGunUTES-C-description-mounted = A deployable UPP 12.7x108mm heavy machine gun on its tripod. Slow to set up and murder on the back, but once it's down it puts out a wall of heavy rounds.
+
+emplacement-mount-CMUATGMLauncher-name = MGM-120B FOGO-ATGM
+emplacement-mount-CMUATGMLauncher-description = Forward Observer Guided Operation Antitank Guided Missile. Built by the ISCS and distributed amongst the sector to fight against the growing number of long range vehicle heavy insurgencies. This Wire Guided ATGM has served as a staple for the local Neroid military forces ever since.
+emplacement-mount-CMUATGMLauncher-description-mounted = A deployed wire-guided anti-tank missile launcher. The gunner fires it; a second crewman with the linked finder steers the missile onto the target. Slow to set up, slower to reload, and it hits like a freight train.
+>>>>>>> upstream

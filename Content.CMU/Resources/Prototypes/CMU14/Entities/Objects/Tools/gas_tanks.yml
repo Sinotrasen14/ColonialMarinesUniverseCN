@@ -25,9 +25,22 @@
 - type: entity
   parent: RMCGasTankOxygen
   id: CMUFieldGasTankOxygen
+<<<<<<< HEAD
   name: 大容量氧气瓶
   description: 一个大型军用氧气瓶，专为在恶劣环境中长时间作战而设计。可容纳7升气体。
+=======
+  name: SCBA tank
+  description: A self-contained breathing apparatus. A large oxygen tank worn on the back, built for long work in smoke and hostile atmospheres. It can hold 7 L of gas.
+>>>>>>> upstream
   components:
+  - type: Sprite
+    sprite: CMU14/Items/scba_tank.rsi
+  # Too bulky for satchels and other storage: it goes on the back or in suit storage.
+  - type: Item
+    size: Ginormous
+    sprite: CMU14/Items/scba_tank.rsi
+  - type: Clothing
+    sprite: CMU14/Items/scba_tank.rsi
   - type: GasTank
     air:
       volume: 7
@@ -44,4 +57,21 @@
       volume: 7
       moles:
       - 3.932493683 # oxygen
+      temperature: 293.15
+      
+- type: entity
+  parent: RMCExtendedEmergencyOxygenTank
+  id: CMUFieldOxygenTankHAZOPS
+  name: extended-use oxygen tank
+  description: A much larger version of the field gas tank, holding 10 L of gas while remaining lightweight and portable. Issued to HAZOPS.
+  components:
+  - type: Sprite
+    sprite: CMU14/Objects/Tools/Tanks/hazopsoxytank.rsi
+  - type: Item
+    sprite: CMU14/Objects/Tools/Tanks/hazopsoxytank.rsi
+  - type: Clothing
+    sprite: CMU14/Objects/Tools/Tanks/hazopsoxytank.rsi
+  - type: GasTank
+    air:
+      volume: 10
       temperature: 293.15
