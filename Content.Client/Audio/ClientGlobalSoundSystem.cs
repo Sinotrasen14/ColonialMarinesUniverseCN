@@ -74,9 +74,12 @@ public sealed partial class ClientGlobalSoundSystem : SharedGlobalSoundSystem
         // var stream = _audio.PlayGlobal(soundEvent.Specifier, Filter.Local(), false, soundEvent.AudioParams);
         // _adminAudio.Add(stream?.Entity);
         var audioParams = soundEvent.AudioParams ?? AudioParams.Default;
-        var stream = _audio.PlayGlobal(soundEvent.Specifier, Filter.Local(), false, audioParams.AddVolume(_bgmVolumeOffset));
+        // OpenAL caps source gain at 1; apply the player's gain after that cap to avoid a saturated slider.
+        var baseVolume = MathF.Min(audioParams.Volume, 0f);
+        var stream = _audio.PlayGlobal(soundEvent.Specifier, Filter.Local(), false,
+            audioParams.WithVolume(baseVolume + _bgmVolumeOffset));
         if (stream is { } audio)
-            _adminAudio[audio.Entity] = audioParams.Volume;
+            _adminAudio[audio.Entity] = baseVolume;
         // CMU14 End
     }
 
