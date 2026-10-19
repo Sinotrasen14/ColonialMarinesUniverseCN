@@ -1,6 +1,6 @@
 rmc-boon-activate = 激活恩赐
-rmc-boon-message = {$current}皇家树脂
-rmc-boon-name-cost = {$boon}（{$cost}树脂，{$pylons}蜂巢塔）
+rmc-boon-message = {$current}份 皇家树脂
+rmc-boon-name-cost = {$boon}（{$cost} 树脂，{$pylons} 蜂巢塔）
 rmc-boon-not-enough-royal-resin = 我们的皇家树脂不够！我们需要{$cost}，而现有{$current}
 rmc-boon-not-enough-pylons = 我们的蜂巢塔不够！我们需要{$cost}，而现有{$current}
 rmc-boon-not-enough-time = 我们的虫巢还不够成熟，无法购买这个！

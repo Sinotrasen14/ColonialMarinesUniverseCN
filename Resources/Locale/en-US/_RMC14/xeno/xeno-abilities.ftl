@@ -296,6 +296,7 @@ rmc-xeno-burrow-move-start = 我们开始挖掘隧道！
 rmc-xeno-burrow-move-break = 我们停止挖掘隧道！
 rmc-xeno-burrow-move-failure = 那边无法挖掘隧道。
 rmc-xeno-burrow-move-failure-solid = 我们无法挖进坚固的墙壁！
+rmc-xeno-burrow-move-failure-chasm = 无法挖进通往地下的深渊
 rmc-xeno-burrow-move-failure-bad-area = 那边无法挖掘隧道。
 rmc-xeno-burrow-move-failure-coolown = 我们必须等待一段时间才能这样做。
 rmc-xeno-burrow-move-finish = 我们挖隧道到达了目标。
