@@ -83,3 +83,7 @@ cmu-ui-options-popups-examine = 弹出窗口和检查
 cmu-ui-options-screen-shake = 屏幕抖动
 cmu-ui-options-sound = 声音
 cmu-ui-options-visuals = 视觉元素
+cmu-ui-options-vault-on-bump = Vault by walking into ledges and railings
+cmu-ui-options-vault-on-bump-tooltip = Walking into a ledge or railing you can vault over starts vaulting it. Tables and barricades are left out. Keep pushing into it to finish, or step away to cancel.
+cmu-ui-options-no-shake-when-resting = Stay down when resting
+cmu-ui-options-no-shake-when-resting-tooltip = While you lie down on purpose, others can't shake you back up. Being stunned, knocked down or unconscious still lets them.

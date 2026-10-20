@@ -1,5 +1,5 @@
 - type: entity
-  parent: CMMRE
+  parent: RMCMRETSE
   id: AU14MRETWERMC
   name: RMC 口粮包
   description: 一份作战口粮包。用途类似USCM的MRE格式，但采用了昂贵的保存材料和方法，而非TWE料理中较便宜的餐食。
@@ -8,7 +8,7 @@
     sprite: _RMC14/Objects/Consumable/Food/mre_tse.rsi
 
 - type: entity
-  parent: RMCSurvivalRationSPP
+  parent: RMCMRESPP
   id: AU14MREUPP
   name: UPP 口粮包
   description: 一份单人份口粮，主要由精选的罐头食品组成，尽管更重，但已被证明可靠得多。
@@ -46,7 +46,7 @@
     startingItem: AU14MRETWERMC
 
 - type: entity
-  parent: AU14MRETWERMC
+  parent: CMMRE
   id: CMUMRELACN
   name: LACN 口粮包
   description: 一份拉丁美洲殖民时期海军野战口粮。保质期长，餐食种类丰富。

@@ -123,7 +123,9 @@ bounty-description-organs = 蛛人定居点订购了大量器官。官方理由�
 bounty-description-labeler = 由于一个官僚失误，我们的分拣中心差点把数百箱胡萝卜送到了尤纳斯定居点。我们急需额外的标签机，以尽快恢复仓库的秩序。
 bounty-description-warm-cloth = 尤纳斯建筑队冻得够呛，无法为他们的空间站恢复供电。需要给他们送一套任意衣物来抵御寒冷。
 bounty-description-battery = 蛛人定居点正在为太阳耀斑做准备，他们请求运送一大批电池。我们正在发出送货请求。
+# cmu edit start: lore names
 bounty-description-lasergun = 打捞商队请求运送一大批激光武器，以清剿一个异形巢穴。
+# cmu edit end
 bounty-description-food = 在鼠王入侵之后，邻近的一座尤纳斯空间站完全断了粮。需要一大批肉类食品。
 bounty-description-fruit = 一只英勇的猴子帮助牧师抓住了一个藏在礼拜堂里的捣蛋鬼，船员们想奖励它的出色表现。
 bounty-description-vegetable = 新来的厨师是个素食者，植物学部跟不上他们的需求。我们需要一些额外的蔬菜来帮助补充库存。

@@ -1,3 +1,4 @@
+﻿# cmu edit start: lore names
 rmc-access-spp-general = SPP通用
 rmc-access-spp-medical = SPP医疗
 rmc-access-spp-engineering = SPP工程
@@ -8,3 +9,4 @@ rmc-access-spp-research = SPP科研
 rmc-access-spp-commando = SPP突击队
 rmc-access-spp-leadership = SPP领导层
 rmc-access-spp-senior-lead = SPP高级领导
+# cmu edit end

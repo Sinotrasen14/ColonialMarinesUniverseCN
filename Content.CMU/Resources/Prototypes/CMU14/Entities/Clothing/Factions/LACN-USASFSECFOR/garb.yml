@@ -336,6 +336,13 @@
   name: NV-2飞行人员夜视镜
   description: 一种下翻式夜视仪支架，配发给LACN机组人员。这副的光学器件没有供电。
   components:
+  - type: CMUHelmetGarbNightVision
+  - type: NightVisionItem
+    actionId: null
+    toggleable: false
+    enableOnEquip: false
+    slotFlags: HEAD
+    green: true
   - type: Sprite
     sprite: CMU14/Clothing/LACN/LACNRedux/Shipside/Flightcrew/LACNnvgs.rsi
     state: icon

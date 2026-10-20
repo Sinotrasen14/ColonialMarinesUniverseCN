@@ -7,6 +7,7 @@
   children:
   - AU14Comms
   - CMUGuideOverwatch
+  - CMUGuideShipWeapons
   - CMUGuideFOBSecurity
   - CMUGuideSkills
   - CMUGuideMortar
@@ -23,6 +24,13 @@
   - RMCGuideXenonidStructures
   - RMCGuideXenonidMap
   - CMUGuideLore
+
+- type: guideEntry
+  parent: RMC
+  id: CMUGuideShipWeapons
+  name: cmu-guide-entry-ship-weapons
+  priority: 2
+  text: "/ServerInfo/Guidebook/CMU14/Guides/CMUShipWeapons.xml"
 
 - type: guideEntry
   parent: RMC

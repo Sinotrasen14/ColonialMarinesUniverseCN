@@ -1,8 +1,10 @@
-reagent-name-rmcgenerictoxin = 通用毒素
+﻿reagent-name-rmcgenerictoxin = 通用毒素
 reagent-desc-rmcgenerictoxin = 许多类似毒素的通用标识，有时作为化学反应的副产物产生。
 
 reagent-name-rmcmolecularacid = 稀释的分子酸
+# cmu edit start: lore names
 reagent-desc-rmcmolecularacid = 一种成分不明的酸，这个样本似乎没有异形血液中的那些危险。
+# cmu edit end
 
 rmc-body-stings = 你的身体微微刺痛。
 
@@ -19,22 +21,36 @@ reagent-name-rmc-chloral-hydrate = 水合氯醛
 reagent-desc-rmc-chloral-hydrate = 水合氯醛是第一种人工合成的镇静催眠药。它是一种强效镇静剂，能造成近乎瞬间的困倦，但大剂量可能致命。常与其他麻醉剂一同用于外科手术。
 
 reagent-name-rmc-xenoalch-brute = 血竭素
+# cmu edit start: lore names
 reagent-desc-rmc-xenoalch-brute = 一种异形炼金毒素，会造成钝击创伤并分解钝击药物。
+# cmu edit end
 
 reagent-name-rmc-xenoalch-burn = 胆碱素
+# cmu edit start: lore names
 reagent-desc-rmc-xenoalch-burn = 一种异形炼金毒素，会造成腐蚀灼伤并分解灼伤药物。
+# cmu edit end
 
 reagent-name-rmc-xenoalch-pain = 夜停素
+# cmu edit start: lore names
 reagent-desc-rmc-xenoalch-pain = 一种异形炼金毒素，会加剧疼痛并分解止痛药。
+# cmu edit end
 
 reagent-name-rmc-xenoalch-fire = 炽素
+# cmu edit start: lore names
 reagent-desc-rmc-xenoalch-fire = 一种异形炼金毒素，会使受害者过热。
+# cmu edit end
 
 reagent-name-rmc-xenoalch-bloodloss = 竭血素
+# cmu edit start: lore names
 reagent-desc-rmc-xenoalch-bloodloss = 一种异形炼金毒素，会破坏受害者血液中的血细胞。
+# cmu edit end
 
 reagent-name-rmc-xenoalch-freeze = 凝素
+# cmu edit start: lore names
 reagent-desc-rmc-xenoalch-freeze = 一种异形炼金毒素，会使受害者变冷并分解低温药物。
+# cmu edit end
 
 reagent-name-rmc-xenoalch-purge = 异净素
+# cmu edit start: lore names
 reagent-desc-rmc-xenoalch-purge = 一种异形炼金毒素，会剥离受害者血液中的无毒化学物质。
+# cmu edit end

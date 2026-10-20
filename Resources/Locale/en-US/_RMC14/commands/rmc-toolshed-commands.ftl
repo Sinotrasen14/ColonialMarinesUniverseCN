@@ -66,7 +66,9 @@ command-description-xenomature = 立即使异形成熟。适用于女王，届�
 
 command-description-weedkiller = 对当前位置的区域运行除草剂。这会杀死附近所有菌毯和树脂建筑。
 
+# cmu edit start: lore names
 command-description-withxenotier = 按特定异形层级过滤实体或实体原型。
+# cmu edit end
 
 command-description-spawnallmapinserts = 生成所有地图插入物，并强制保证生成概率。
 

@@ -54,3 +54,8 @@ reagent-name-purple-plasma = 紫色等离子
 reagent-desc-purple-plasma = 一种略带紫色的等离子……
 reagent-name-royal-plasma = 皇家等离子
 reagent-desc-royal-plasma = 一种深紫色的等离子……
+
+reagent-name-oleoresin-capsicum = Oleoresin capsicum
+reagent-desc-oleoresin-capsicum = A concentrated pepper extract used in pepper spray. Extremely painful in the eyes.
+reagent-name-capsicum-neutralizer = Capsicum neutralizer
+reagent-desc-capsicum-neutralizer = A soothing saline wash that neutralizes pepper spray.

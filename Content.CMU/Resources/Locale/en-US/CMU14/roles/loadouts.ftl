@@ -36,13 +36,15 @@ au14-loadout-group-corporate-headwear = 企业头饰
 au14-loadout-group-military-hats = 军用帽子
 au14-loadout-group-military-jumpsuit = 军用作训服
 au14-loadout-group-military-patches = 军用臂章
-
 au14-loadout-group-militarylabcoat = 实验室白大褂
 
 au14-loadout-group-auxtech = 作训服
 
 au14-loadout-group-role-clf-id = 假证件
 
+au14-vending-machine-jo-max = This officer kit was already taken!
+
 cmu-loadout-group-aegis-stamp = AEGIS 军备印章
 cmu-loadout-group-provost-stamp = 宪兵印章
 cmu-loadout-group-corporate-skirts = 公司裙子
+cmu-loadout-group-surgical-webbing = Surgical Webbing

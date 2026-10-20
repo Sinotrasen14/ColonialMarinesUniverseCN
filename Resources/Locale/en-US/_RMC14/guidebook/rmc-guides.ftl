@@ -1,4 +1,4 @@
-rmc-guide-entry-rmc = CMU指南
+﻿rmc-guide-entry-rmc = CMU指南
 rmc-guide-entry-rules = 规则
 rmc-guide-entry-rules-ban-types = 封禁类型与时长
 rmc-guide-entry-rules-zero-tolerance = 零容忍
@@ -13,7 +13,9 @@ rmc-guide-entry-rules-general-roleplay-standards = 通用角色扮演
 rmc-guide-entry-rules-marine-character-names = 角色姓名
 rmc-guide-entry-rules-marine-roleplay-standards = 陆战队角色扮演
 rmc-guide-entry-rules-command-roleplay = 指挥角色扮演
+# cmu edit start: lore names
 rmc-guide-entry-rules-xeno-roleplay = 异形角色扮演
+# cmu edit end
 rmc-guide-entry-rules-survivor-roleplay = 幸存者角色扮演
 rmc-guide-entry-rules-hostile-faction-roleplay = 敌对阵营
 rmc-guide-entry-rules-command-chain = 指挥官继任

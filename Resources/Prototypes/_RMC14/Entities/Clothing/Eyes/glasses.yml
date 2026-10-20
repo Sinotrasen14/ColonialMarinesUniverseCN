@@ -13,6 +13,10 @@
   - type: ShowMindShieldIcons
   - type: ShowCriminalRecordIcons
   - type: FlashImmunity
+#  - type: GuideHelp # TODO RMC14
+#    guides:
+#    - Security
+
 - type: entity
   parent: CMGlassesSecurity
   id: RMCGlassesSecurityBlue
@@ -22,10 +26,9 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/security_glasses_blue.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/security_glasses_blue.rsi
+
 - type: entity
-  parent:
-  - ClothingEyesBase
-  - ShowMedicalIcons
+  parent: [ ClothingEyesBase , ShowMedicalIcons ]
   id: CMGlassesM42ScoutSight
   name: M42侦察瞄准镜
   description: 用于M96侦察步枪的头戴式夜视瞄准系统。可高亮显示周围环境影像。点击即可切换。
@@ -36,8 +39,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/m42_scoutsight.rsi
     layers:
     - state: icon
-      map:
-      - icon
+      map: [ "icon" ]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/m42_scoutsight.rsi
   - type: NightVisionItem
@@ -51,10 +53,9 @@
     visuals:
       enum.NightVisionItemVisuals.Active:
         icon:
-          true:
-            state: icon_on
-          false:
-            state: icon
+          True: { state: icon_on }
+          False: { state: icon }
+
 - type: entity
   parent: CMGlassesM42ScoutSight
   id: RMCGlassesSPPCommandoNightVision
@@ -65,6 +66,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/spp_nv.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/spp_nv.rsi
+
 - type: entity
   parent: ClothingEyesHudMedical
   id: RMCGlassesM4SPRBattleSight
@@ -77,8 +79,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/m42_scoutsight.rsi
     layers:
     - state: icon
-      map:
-      - icon
+      map: [ "icon" ]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/m42_scoutsight.rsi
   - type: NightVisionItem
@@ -92,17 +93,16 @@
     visuals:
       enum.NightVisionItemVisuals.Active:
         icon:
-          true:
-            state: icon_on
-          false:
-            state: icon
+          True: { state: icon_on }
+          False: { state: icon }
+
 - type: entity
   parent:
   - ClothingEyesBase
   - ShowMedicalIcons
   id: RMCGlassesSmartGunSight
-  name: M56B 头戴式瞄准具
-  description: M56B智能枪的头戴式耳机和护目镜系统。点击它即可切换。
+  name: M56B 头戴式瞄准具 # TODO RMC14 meson tile vision see description below
+  description: M56B智能枪的头戴式耳机和护目镜系统。点击它即可切换。 # TODO RMC14 Has a low-res short-range imager, allowing for view of terrain.
   components:
   - type: Item
     storedRotation: 0
@@ -110,8 +110,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/ml66a_sight.rsi
     layers:
     - state: icon
-      map:
-      - icon
+      map: [ "icon" ]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/m42_scoutsight.rsi
   - type: ClothingRequireEquipped
@@ -129,10 +128,12 @@
     visuals:
       enum.NightVisionItemVisuals.Active:
         icon:
-          true:
-            state: icon_on
-          false:
-            state: icon
+          True: { state: icon_on }
+          False: { state: icon }
+#cmu edit start: shows the squad optic's ammo HUD
+  - type: CMUAmmoHudSight
+#cmu edit end
+
 - type: entity
   parent: ClothingEyesBase
   id: RMCGlassesExperimentalMeson
@@ -145,8 +146,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/experimental_meson_hud.rsi
     layers:
     - state: icon
-      map:
-      - icon
+      map: [ "icon" ]
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/experimental_meson_hud.rsi
   - type: NightVisionItem
@@ -162,14 +162,11 @@
     visuals:
       enum.NightVisionItemVisuals.Active:
         icon:
-          true:
-            state: icon-on
-          false:
-            state: icon
+          True: { state: icon-on }
+          False: { state: icon }
+
 - type: entity
-  parent:
-  - ClothingEyesHudMedical
-  - BaseToggleClothing
+  parent: [ClothingEyesHudMedical, BaseToggleClothing]
   id: RMCGlassesMedicalHUDGlasses
   name: 健康伴侣平视显示器
   description: 一种平视显示器，可扫描视野中的人形生物，并提供其健康状况的准确数据。
@@ -185,11 +182,11 @@
     soundActivate:
       path: /Audio/_RMC14/Machines/click.ogg
       params:
-        variation: 0.25
+        variation: 0.250
     soundDeactivate:
       path: /Audio/_RMC14/Machines/click.ogg
       params:
-        variation: 0.25
+        variation: 0.250
   - type: ToggleClothing
     action: RMCActionToggleMedhud
   - type: ComponentToggler
@@ -206,10 +203,8 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          true:
-            state: icon-on
-          false:
-            state: icon
+          True: {state: icon-on}
+          False: {state: icon}
   - type: Appearance
   - type: ItemToggleRequiresSkill
     skills:
@@ -218,10 +213,9 @@
     skills:
       RMCSkillMedical: 1
     popup: rmc-skills-hud-toggle
+
 - type: entity
-  parent:
-  - ClothingEyesHudMedical
-  - BaseToggleClothing
+  parent: [ClothingEyesHudMedical, BaseToggleClothing]
   id: RMCGlassesHUDSecurity
   name: 巡逻助手HUD
   description: 一种平视显示器，可扫描视野中的人类，并提供有关其身份状态和安全记录的准确数据。
@@ -237,27 +231,27 @@
     soundActivate:
       path: /Audio/_RMC14/Machines/click.ogg
       params:
-        variation: 0.25
+        variation: 0.250
     soundDeactivate:
       path: /Audio/_RMC14/Machines/click.ogg
       params:
-        variation: 0.25
+        variation: 0.250
   - type: ToggleClothing
     action: RMCActionToggleSechud
+  # - type: ComponentToggler TODO RMC14 - SECHUD functionaility
   - type: RMCItemToggleClothingVisuals
   - type: GenericVisualizer
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          true:
-            state: icon-on
-          false:
-            state: icon
+          True: {state: icon-on}
+          False: {state: icon}
   - type: Appearance
+  # - type: ItemToggleRequiresSkill
+  # - type: ItemToggleDeactivateUnskilled
+
 - type: entity
-  parent:
-  - ClothingEyesBase
-  - BaseToggleClothing
+  parent: [ClothingEyesBase, BaseToggleClothing]
   id: RMCGlassesReagentHUDGlasses
   name: 试剂扫描仪HUD护目镜
   description: 这副护目镜大概对某个没端着步枪、还主动想缩短自己战斗寿命的人有点用。
@@ -273,11 +267,11 @@
     soundActivate:
       path: /Audio/_RMC14/Machines/click.ogg
       params:
-        variation: 0.25
+        variation: 0.250
     soundDeactivate:
       path: /Audio/_RMC14/Machines/click.ogg
       params:
-        variation: 0.25
+        variation: 0.250
   - type: ToggleClothing
     action: RMCActionToggleMedhud
   - type: ComponentToggler
@@ -288,10 +282,8 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          true:
-            state: icon-on
-          false:
-            state: icon
+          True: {state: icon-on}
+          False: {state: icon}
   - type: Appearance
   - type: ItemToggleRequiresSkill
     skills:
@@ -300,12 +292,12 @@
     skills:
       RMCSkillMedical: 1
     popup: rmc-skills-hud-toggle
+
 - type: entity
   parent: ClothingEyesBase
-  id: RMCGlassesMarineRpg
+  id: RMCGlassesMarineRpg # TODO make this actually prescription
   name: marine RPG glasses
-  description: The Corps may call them Regulation Prescription Glasses but you know
-    them as Rut Prevention Glasses.
+  description: The Corps may call them Regulation Prescription Glasses but you know them as Rut Prevention Glasses.
   components:
   - type: Item
     storedRotation: 0
@@ -319,8 +311,10 @@
   - type: Tag
     tags:
     - RMCPrescriptionGlasses
+
 - type: Tag
   id: RMCPrescriptionGlasses
+
 - type: entity
   parent: RMCGlassesMarineRpg
   id: RMCGlassesMarineRpgOld
@@ -330,10 +324,9 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/old_rpg_glasses.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/old_rpg_glasses.rsi
+
 - type: entity
-  parent:
-  - ClothingEyesBase
-  - RMCHelmetGarbToggleableBase
+  parent: [ClothingEyesBase, RMCHelmetGarbToggleableBase]
   id: RMCGogglesBallistic
   name: 海军陆战队防弹护目镜
   description: 海军陆战队标准配发护目镜。虽然通常安装在 M10 制式头盔顶部，但它们也能防止昆虫、灰尘及其他异物进入眼睛。
@@ -360,9 +353,10 @@
     hatToggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/ballistic_goggles.rsi
       state: hat-down
+
 - type: entity
   parent: RMCGogglesBallistic
-  id: RMCGogglesBallisticBlack
+  id: RMCGogglesBallisticBlack # TODO prescription variant
   name: 黑色海军陆战队防弹护目镜
   description: 美国殖民地海军陆战队标准配发护目镜。虽然通常安装在M10型头盔顶部，但也能防止昆虫、灰尘及其他异物进入眼睛。这款配有黑色染色镜片。
   components:
@@ -383,9 +377,10 @@
     hatToggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/black_ballistic_goggles.rsi
       state: hat-down
+
 - type: entity
   parent: RMCGogglesBallistic
-  id: RMCGogglesBallisticOrange
+  id: RMCGogglesBallisticOrange # TODO prescription variant
   name: 橙色海军陆战队防弹护目镜
   description: 美国殖民地海军陆战队标准配发护目镜。虽然常见于安装在M10式头盔顶部，但它们也能防止昆虫、灰尘和其他异物进入眼睛。这副护目镜配有琥珀色日间镜片。
   components:
@@ -406,9 +401,10 @@
     hatToggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/orange_ballistic_goggles.rsi
       state: hat-down
+
 - type: entity
   parent: RMCGogglesBallistic
-  id: RMCGogglesBallisticRed
+  id: RMCGogglesBallisticRed # TODO prescription variant
   name: 红色海军陆战队防弹护目镜
   description: 标准配发的UNMC护目镜。虽然通常安装在M10制式头盔顶部，但它们也能防止昆虫、灰尘和其他异物进入眼睛。这副护目镜配有猩红色日间镜片。
   components:
@@ -429,13 +425,12 @@
     hatToggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/red_ballistic_goggles.rsi
       state: hat-down
+
 - type: entity
   parent: RMCGogglesBallistic
-  id: RMCGogglesBallisticBlue
+  id: RMCGogglesBallisticBlue # TODO prescription variant
   name: 蓝色海军陆战队防弹护目镜
-  description: Standard issue UNMC goggles. While commonly found mounted atop M10
-    pattern helmets, they are also capable of preventing insects, dust, and other
-    things from getting into one's eyes. This one has blue colored day lenses.
+  description: Standard issue UNMC goggles. While commonly found mounted atop M10 pattern helmets, they are also capable of preventing insects, dust, and other things from getting into one's eyes. This one has blue colored day lenses.
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/blue_ballistic_goggles.rsi
@@ -454,9 +449,10 @@
     hatToggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/blue_ballistic_goggles.rsi
       state: hat-down
+
 - type: entity
   parent: RMCGogglesBallistic
-  id: RMCGogglesBallisticPurple
+  id: RMCGogglesBallisticPurple # TODO prescription variant
   name: 紫色海军陆战队防弹护目镜
   description: UNMC标准配发护目镜。虽然常见于安装在M10型头盔顶部，但它们也能防止昆虫、灰尘及其他异物进入眼睛。这副配有紫色日间镜片。
   components:
@@ -477,9 +473,10 @@
     hatToggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/purple_ballistic_goggles.rsi
       state: hat-down
+
 - type: entity
   parent: RMCGogglesBallistic
-  id: RMCGogglesBallisticYellow
+  id: RMCGogglesBallisticYellow # TODO prescription variant
   name: 黄色海军陆战队防弹护目镜
   description: UNMC标准配发的护目镜。虽然通常安装在M10制式头盔顶部，但它们也能防止昆虫、灰尘和其他杂物进入眼睛。这副配有黄色日间镜片。
   components:
@@ -500,9 +497,10 @@
     hatToggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/yellow_ballistic_goggles.rsi
       state: hat-down
+
 - type: entity
   parent: RMCGogglesBallistic
-  id: RMCGogglesBallisticPolarizedBlue
+  id: RMCGogglesBallisticPolarizedBlue # TODO prescription variant
   name: M1A1 海军陆战队偏光防弹护目镜
   description: 较新配发的UNMC护目镜。虽然通常安装在M10制式头盔上，但它们也能防止昆虫、灰尘和其他异物进入眼睛。这个版本配有更大的偏光镜片。
   components:
@@ -517,9 +515,10 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/blue_polarized_ballistic_goggles.rsi
       state: helmet-down
+
 - type: entity
   parent: RMCGogglesBallistic
-  id: RMCGogglesBallisticPolarizedOrange
+  id: RMCGogglesBallisticPolarizedOrange # TODO prescription variant
   name: M1A1海军陆战队偏光防弹护目镜
   description: 较新配发的UNMC护目镜。虽然通常安装在
   components:
@@ -534,9 +533,10 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/orange_polarized_ballistic_goggles.rsi
       state: helmet-down
+
 - type: entity
   parent: RMCGogglesBallistic
-  id: RMCGogglesM1A1Ballistic
+  id: RMCGogglesM1A1Ballistic # TODO prescription variant
   name: M1A1海军陆战队防弹护目镜
   description: 较新配发的美国殖民地海军陆战队护目镜。虽然常见安装于M10式头盔顶部，但它们也能防止昆虫、灰尘和其他异物进入眼睛。此版本镜片更大。
   components:
@@ -551,6 +551,7 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/M1A1_Ballistic_goggles.rsi
       state: helmet-down
+
 - type: entity
   parent: RMCGogglesBallistic
   id: RMCGogglesPrescriptionBallistic
@@ -559,9 +560,10 @@
   components:
   - type: VisionCorrection
     visionBonus: -4
+
 - type: entity
   parent: RMCGogglesBallistic
-  id: RMCGogglesM1A1BallisticBlue
+  id: RMCGogglesM1A1BallisticBlue # TODO prescription variant
   name: 蓝色海军陆战队防弹护目镜
   description: UNMC标准配发护目镜。虽然常见于安装在M10制式头盔顶部，但它们也能防止昆虫、灰尘及其他异物进入眼睛。这副护目镜配有蓝色日间镜片。
   components:
@@ -576,6 +578,7 @@
     toggledRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/M1A1_Ballistic_goggles_blue.rsi
       state: helmet-down
+
 - type: entity
   parent: ClothingEyesBase
   id: RMCGogglesBallisticSquad
@@ -597,6 +600,8 @@
     leaderRsi:
       sprite: _RMC14/Objects/Clothing/Eyes/Glasses/squad_ballistic_goggles.rsi
       state: lenses
+
+# Identical to upstream ones, sans the name and description
 - type: entity
   parent: ClothingEyesGlassesCheapSunglasses
   id: RMCSunglasses
@@ -611,6 +616,7 @@
     slots:
     - MASK
     - EYES
+
 - type: entity
   parent: RMCSunglasses
   id: RMCPrescriptionSunglasses
@@ -619,14 +625,14 @@
   components:
   - type: VisionCorrection
     visionBonus: -4
+
+# Identical to upstream ones, sans the name and description
 - type: entity
   parent: ClothingEyesEyepatch
   id: RMCEyepatch
   suffix: RMC
   name: 眼罩
-  description: Once worn by swashbucklers of old, now more commonly associated with
-    a figure of legend. They say he was big AND a boss. Impressive no? Don't let the
-    MPs see you wearing this non-regulation attire.
+  description: Once worn by swashbucklers of old, now more commonly associated with a figure of legend. They say he was big AND a boss. Impressive no? Don't let the MPs see you wearing this non-regulation attire.
   components:
   - type: Item
     storedRotation: 0
@@ -635,16 +641,12 @@
     slots:
     - MASK
     - EYES
+
 - type: entity
   parent: RMCSunglasses
   id: RMCSunglassesBig
   name: TriMax个人墨镜
-  description: These are an expensive pair of TriMax sunglasses. This brand is popular
-    with UNMC foot sloggers because its patented mirror refraction has been said to
-    offer protection from atomic flash, solar radiation, and targeting lasers. To
-    top it all off, everyone seems to know a guy who knows a guy who knows a guy that
-    had a laser pistol reflect off of his shades. TriMax came into popularity with
-    the Marines after its 'Save the Colonies and Look Cool Doing It' ad campaign.
+  description: These are an expensive pair of TriMax sunglasses. This brand is popular with UNMC foot sloggers because its patented mirror refraction has been said to offer protection from atomic flash, solar radiation, and targeting lasers. To top it all off, everyone seems to know a guy who knows a guy who knows a guy that had a laser pistol reflect off of his shades. TriMax came into popularity with the Marines after its 'Save the Colonies and Look Cool Doing It' ad campaign.
   components:
   - type: Item
     storedRotation: 0
@@ -656,6 +658,7 @@
     - MASK
     - EYES
   - type: FlashImmunity
+
 - type: entity
   parent: RMCSunglassesBig
   id: RMCGlassesTriMaxYellow
@@ -668,6 +671,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_yellow_glasses.rsi
   - type: RMCLoreExaminable
     content: rmc-lore-examinable-trimax-polarized-shades
+
 - type: entity
   parent: RMCGlassesTriMaxYellow
   id: RMCGlassesTriMaxBronze
@@ -676,6 +680,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_bronze_glasses.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_bronze_glasses.rsi
+
 - type: entity
   parent: RMCGlassesTriMaxYellow
   id: RMCGlassesTriMaxBlack
@@ -685,6 +690,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_black_glasses.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_black_glasses.rsi
+
 - type: entity
   parent: RMCSunglasses
   id: RMCSunglassesBigFake
@@ -703,6 +709,7 @@
     - EYES
   - type: RMCLoreExaminable
     content: rmc-lore-examinable-trimex-personal-shades
+
 - type: entity
   parent: RMCSunglassesBigFake
   id: RMCGlassesTriMaxYellowFake
@@ -712,6 +719,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_yellow_glasses.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_yellow_glasses.rsi
+
 - type: entity
   parent: RMCGlassesTriMaxYellowFake
   id: RMCGlassesTriMaxBronzeFake
@@ -720,6 +728,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_bronze_glasses.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_bronze_glasses.rsi
+
 - type: entity
   parent: RMCGlassesTriMaxYellowFake
   id: RMCGlassesTriMaxBlackFake
@@ -729,6 +738,9 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_black_glasses.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/trimax_black_glasses.rsi
+
+# Prescription variants
+
 - type: entity
   parent: RMCSunglassesBigFake
   id: RMCPrescriptionSunglassesBigFake
@@ -737,6 +749,7 @@
   components:
   - type: VisionCorrection
     visionBonus: -4
+
 - type: entity
   parent: RMCGlassesTriMaxYellowFake
   id: RMCPrescriptionGlassesTriMaxYellowFake
@@ -744,12 +757,14 @@
   components:
   - type: VisionCorrection
     visionBonus: -4
+
 - type: entity
   parent: RMCGlassesTriMaxBronzeFake
   id: RMCPrescriptionGlassesTriMaxBronzeFake
   components:
   - type: VisionCorrection
     visionBonus: -4
+
 - type: entity
   parent: RMCGlassesTriMaxBlackFake
   id: RMCPrescriptionGlassesTriMaxBlackFake
@@ -757,6 +772,7 @@
   components:
   - type: VisionCorrection
     visionBonus: -4
+
 - type: entity
   parent: ClothingEyesBase
   id: RMCGlassesAviators
@@ -772,6 +788,7 @@
     slots:
     - EYES
     - MASK
+
 - type: entity
   parent: RMCGlassesAviators
   id: RMCGlassesAviatorsSilver
@@ -782,6 +799,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/aviators_silver.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/aviators_silver.rsi
+
 - type: entity
   parent: ClothingEyesBase
   id: RMCHipsterGlasses
@@ -799,6 +817,9 @@
     slots:
     - MASK
     - EYES
+
+# Hippie Glasses
+
 - type: entity
   parent: RMCHipsterGlasses
   id: RMCHippieGlasses
@@ -808,6 +829,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie.rsi
+
 - type: entity
   parent: RMCHippieGlasses
   id: RMCHippieGlassesBloodred
@@ -818,6 +840,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_bloodred.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_bloodred.rsi
+
 - type: entity
   parent: RMCHippieGlassesBloodred
   id: RMCHippieGlassesGreen
@@ -827,6 +850,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_green.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_green.rsi
+
 - type: entity
   parent: RMCHippieGlassesBloodred
   id: RMCHippieGlassesMidnight
@@ -836,6 +860,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_midnight.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_midnight.rsi
+
 - type: entity
   parent: RMCHippieGlassesBloodred
   id: RMCHippieGlassesNightblue
@@ -845,6 +870,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_nightblue.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_nightblue.rsi
+
 - type: entity
   parent: RMCHippieGlassesBloodred
   id: RMCHippieGlassesPink
@@ -854,6 +880,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_pink.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_pink.rsi
+
 - type: entity
   parent: RMCHippieGlassesBloodred
   id: RMCHippieGlassesSunrise
@@ -863,6 +890,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_sunrise.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_sunrise.rsi
+
 - type: entity
   parent: RMCHippieGlassesBloodred
   id: RMCHippieGlassesSunset
@@ -872,6 +900,7 @@
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_sunset.rsi
   - type: Clothing
     sprite: _RMC14/Objects/Clothing/Eyes/Glasses/Hippie/hippie_sunset.rsi
+
 - type: entity
   parent: ClothingEyesBase
   id: RMCWeldingGoggles
@@ -895,10 +924,8 @@
     visuals:
       enum.ToggleableVisuals.Enabled:
         enum.ToggleableVisuals.Layer:
-          true:
-            state: icon-on
-          false:
-            state: icon
+          True: {state: icon-on}
+          False: {state: icon}
   - type: Appearance
   - type: Tag
     tags:
@@ -916,8 +943,10 @@
     blacklist:
       components:
       - Xeno
+
 - type: Tag
   id: RMCWeldingGoggle
+
 - type: entity
   parent: RMCWeldingGoggles
   id: RMCWeldingGogglesSuperior
@@ -933,6 +962,7 @@
     - type: EyeProtection
   - type: WeldingVision
     superior: true
+
 - type: entity
   parent: ClothingEyesBase
   id: RMCGogglesKutjevo
@@ -948,6 +978,7 @@
     slots:
     - MASK
     - EYES
+
 - type: entity
   parent: ClothingEyesBase
   id: RMCGlassesJensen
@@ -963,6 +994,7 @@
     slots:
     - MASK
     - EYES
+
 - type: entity
   parent: ClothingEyesBase
   id: RMCGlassesMonocle

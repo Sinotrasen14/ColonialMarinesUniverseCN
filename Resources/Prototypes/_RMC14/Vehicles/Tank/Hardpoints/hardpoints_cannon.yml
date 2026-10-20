@@ -8,8 +8,8 @@
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: false
-        occludes: true
+        showEnts: False
+        occludes: True
   - type: Sprite
     state: ltb_cannon
   - type: HardpointItem
@@ -80,8 +80,8 @@
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: false
-        occludes: true
+        showEnts: False
+        occludes: True
   - type: Sprite
     state: ltaaap_minigun
   - type: HardpointItem
@@ -172,8 +172,8 @@
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: false
-        occludes: true
+        showEnts: False
+        occludes: True
   - type: Sprite
     state: ace_autocannon
   - type: HardpointItem
@@ -239,7 +239,6 @@
     vehicleState: ace_autocannon_0
     damagedVehicleState: ace_autocannon_1
 
-
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankAutocannonTWE # CMU14
@@ -250,8 +249,8 @@
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: false
-        occludes: true
+        showEnts: False
+        occludes: True
   - type: Sprite
     sprite: CMU14/Structures/vehicles/fv150/icons.rsi
     state: heavy_autocannon
@@ -317,6 +316,7 @@
   - type: HardpointVisual
     vehicleState: heavy_autocannon_0
     damagedVehicleState: heavy_autocannon_1
+
 - type: entity
   parent: VehicleTankHardpointBase
   id: VehicleTankHeavyElectrolaserTWE # CMU14
@@ -327,8 +327,8 @@
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: false
-        occludes: true
+        showEnts: False
+        occludes: True
   - type: Sprite
     sprite: CMU14/Structures/vehicles/fv150/icons.rsi
     state: heavy_electrolaser
@@ -403,8 +403,8 @@
     containers:
       ballistic-ammo: !type:Container
         ents: []
-        showEnts: false
-        occludes: true
+        showEnts: False
+        occludes: True
   - type: Sprite
     state: drgn_flamer
   - type: HardpointItem

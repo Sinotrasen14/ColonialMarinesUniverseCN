@@ -15,10 +15,14 @@ ui-options-function-rmc-pick-up-dropped-items = 拾取掉落物品
 ui-options-function-rmc-interact-with-other-hand = 与另一只手交互
 ui-options-function-rmc-rest = 休息
 
+# cmu edit start: lore names
 ui-options-header-rmc-xeno = 异形
+# cmu edit end
 
+# cmu edit start: lore names
 ui-options-function-cm-xeno-wide-swing = 异形突刺攻击
 ui-options-function-rmc-xeno-rest = 异形休息
+# cmu edit end
 
 ui-options-function-smart-equip-uniform = 智能装备到制服
 ui-options-function-smart-equip-armor = 智能装备到护甲

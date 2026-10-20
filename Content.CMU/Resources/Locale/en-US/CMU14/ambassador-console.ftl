@@ -62,3 +62,9 @@ ambassador-console-trade-pact-enabled = { $faction } 已激活贸易协定。提
 ambassador-console-trade-pact-disabled = { $faction } 的贸易协定已结束。
 ambassador-console-comms-jam-enabled = { $faction } 已干扰行星表面通信。所有无线电传输均被阻断。
 ambassador-console-comms-jam-disabled = { $faction } 的通信干扰已停用。无线电传输已恢复。
+ambassador-third-party-calls-left = Support requests authorized: { $left }
+ambassador-third-party-cooldown = Support requests authorized: { $left }. Command will hear another request in { $minutes } { $minutes ->
+    [one] minute
+   *[other] minutes
+}.
+ambassador-third-party-no-calls-left = Command has authorized all the support it will send for this operation.

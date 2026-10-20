@@ -39,6 +39,10 @@ rmc-announcement-dropship-message = [color=#CECECE][font size=16][bold]运输机
 
     {$message}[/bold][/font][/color]
 
+rmc-announcement-anti-air = [color=#CECECE][font size=16][bold]IX-50 MGAD System[/bold][/font][/color][color=red][font size=16][bold]
+
+    {$message}[/bold][/font][/color]
+
 rmc-announcement-emergency-dropship-crash = [font size=14][bold][color=#CECECE]紧急情况[/color][/bold][/font][font size=16][color=red]
   运输机正在相撞航线上。即将坠毁。[/color][/font]
 

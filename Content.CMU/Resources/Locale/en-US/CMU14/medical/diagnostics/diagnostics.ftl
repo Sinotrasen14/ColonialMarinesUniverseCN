@@ -53,23 +53,19 @@ cmu-medical-scanner-pain-risk-imminent     = 即将发生
 cmu-medical-scanner-pain-risk-active       = 活跃
 cmu-medical-scanner-pain-risk-suppressed-suffix =  (supp.)
 
-# V2-ε Stat-sheet redesign — dark cards + status banner + body chart
-cmu-medical-scanner-card-body              = 身体
-cmu-medical-scanner-card-organs            = 器官
-cmu-medical-scanner-card-reagents          = 血液中的试剂
-cmu-medical-scanner-card-recommended       = 推荐
-cmu-medical-scanner-card-patient           = 患者
-cmu-medical-scanner-card-damage            = 伤害情况
 cmu-medical-scanner-loading                = 正在接收扫描遥测
 cmu-medical-scanner-loading-subtext        = 解析服务器状态
-
-cmu-medical-scanner-stat-health            = 健康
-cmu-medical-scanner-stat-pulse             = 脉搏 BPM
-cmu-medical-scanner-stat-blood             = 血液
-cmu-medical-scanner-stat-temp              = 体温 °{$unit}
-cmu-medical-scanner-stat-shock-risk        = 休克风险
-cmu-medical-scanner-stat-pulse-stopped     = 0
-cmu-medical-scanner-stat-deceased-short    = 死亡
+cmu-medical-scanner-label-health           = Health:
+cmu-medical-scanner-label-damage           = Damage:
+cmu-medical-scanner-label-holocard         = Holocard:
+cmu-medical-scanner-label-temperature      = Body Temperature:
+cmu-medical-scanner-label-pulse            = Pulse:
+cmu-medical-scanner-label-shock-risk       = Shock Risk:
+cmu-medical-scanner-section-limbs-damaged  = Limbs Damaged
+cmu-medical-scanner-section-organs-damaged = Organs Damaged
+cmu-medical-scanner-section-chemicals      = Chemical Contents
+cmu-medical-scanner-section-advice         = Medication Advice
+cmu-medical-scanner-organ-damage           = {$stage} [{$damage} damage]
 
 cmu-medical-scanner-status-stable          = 稳定
 cmu-medical-scanner-status-serious         = 严重
@@ -138,3 +134,17 @@ cmu-medical-stethoscope-pain-mild          = 病人看起来不太舒服。
 cmu-medical-stethoscope-pain-moderate      = 病人明显在痛。
 cmu-medical-stethoscope-pain-severe        = 病人非常疼。
 cmu-medical-stethoscope-pain-shock         = 病人休克了。
+
+cmu-medical-scanner-stat-deceased-short    = 死亡
+cmu-medical-scanner-stat-shock-risk        = 休克风险
+cmu-medical-scanner-stat-temp              = 体温 °{$unit}
+cmu-medical-scanner-stat-blood             = 血液
+cmu-medical-scanner-stat-pulse             = 脉搏 BPM
+cmu-medical-scanner-stat-health            = 健康
+cmu-medical-scanner-card-damage            = 伤害情况
+cmu-medical-scanner-card-patient           = 患者
+cmu-medical-scanner-card-recommended       = 推荐
+cmu-medical-scanner-card-reagents          = 血液中的试剂
+cmu-medical-scanner-card-organs            = 器官
+# V2-ε Stat-sheet redesign — dark cards + status banner + body chart
+cmu-medical-scanner-card-body              = 身体

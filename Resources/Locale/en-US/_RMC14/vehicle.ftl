@@ -20,7 +20,7 @@ rmc-vehicle-damage-examine-verb = 载具损伤
 rmc-vehicle-damage-examine-description = 检查状况和活动故障。
 rmc-vehicle-damage-examine-no-faults = [color=green]没有活动故障。[/color]
 rmc-vehicle-damage-examine-faults = [bold][color=orange]活动故障[/color][/bold]
-rmc-vehicle-damage-examine-fault = • [bold][color=orange]{$fault}[/color][/bold]：[color=lightgray]{$effect}[/color]
+rmc-vehicle-damage-examine-fault = • [bold][color=orange]{$fault}[/color][/bold]: [color=lightgray]{$effect}[/color]
 rmc-hardpoint-armor-modifiers-examine = 伤害修正：酸 {$acid}，斩击 {$slash}，子弹 {$bullet}，爆炸 {$explosive}，钝击 {$blunt}
 rmc-hardpoint-condition-pristine = 它处于崭新状态。
 rmc-hardpoint-condition-good = 它状况良好。
@@ -29,7 +29,7 @@ rmc-hardpoint-condition-bad = 它状况很差。
 rmc-hardpoint-condition-critical = 它勉强还能撑住。
 rmc-hardpoint-ui-title = 挂载点
 rmc-hardpoint-ui-empty-slot = 空
-rmc-hardpoint-ui-integrity = {$current}/{$max}（{$percent}%）
+rmc-hardpoint-ui-integrity = {$current}/{$max} ({$percent}%)
 rmc-hardpoint-ui-no-integrity = 没有完整性数据
 rmc-hardpoint-ui-remove = 移除
 rmc-hardpoint-ui-removing = 移除中……
@@ -147,7 +147,14 @@ rmc-hardpoint-removal-prying-tool = 拿着撬棍或维护千斤顶才能移除�
 # CMU14
 cmu-vehicle-supply-unassigned = 没有分配到这个仓库的小队。
 cmu-vehicle-supply-allowance = {$platoon} — 已发放载具：{$used}/{$limit}（最多一辆坦克和一架 VTOL）
+cmu-vehicle-supply-platoon-name = {$platoon} Vehicle Supply Depot
 cmu-vehicle-supply-no-refund = 通知：车辆问题已定。指挥部不会更换或退还从此仓库调出的任何船体——无论是归还还是丢失，它都将继续计入该排在本次行动中的账目。
+cmu-vehicle-supply-yes-refund = NOTICE: Vehicle issue is not final.
+cmu-vehicle-supply-yes-refund2 = NOTICE: Place the issued vehicle on the pad to store it.
+cmu-vehicle-supply-yes-refund3 = WARNING: DO NOT LOWER WHILE THE PERSONNEL IS STILL INSIDE.
+cmu-vehicle-supply-platoon-name-limit-good = | STATUS: OK
+cmu-vehicle-supply-platoon-name-limit-bad = | WARNING: MAXIMUM ALLOWANCE LIMIT HAS BEEN REACHED.
+cmu-vehicle-supply-platoon-name-args = Vehicles issued: {$used}/{$limit} {$tooMuch}
 cmu-vehicle-supply-preview-title = 载具预览
 cmu-vehicle-supply-stored-vehicles = 已储存载具
 cmu-vehicle-supply-loadout = 载具装备

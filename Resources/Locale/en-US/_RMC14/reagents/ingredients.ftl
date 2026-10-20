@@ -1,4 +1,4 @@
-reagent-name-rmc-cherry-jelly = 樱桃果冻
+﻿reagent-name-rmc-cherry-jelly = 樱桃果冻
 reagent-desc-rmc-cherry-jelly = 用樱桃果实制成的甜果冻。
 
 reagent-name-rmc-peanut-butter = 花生酱
@@ -33,3 +33,33 @@ reagent-desc-ice-cafe = 一杯香气扑鼻的咖啡冰沙。
 
 reagent-name-swiss-lemonade = 瑞士柠檬水
 reagent-desc-swiss-lemonade = 说来好笑，它其实并不瑞士，也没有柠檬！
+
+reagent-name-instant-orange-powder = orange drink powder
+reagent-desc-instant-orange-powder = Powderized orange juice ready to be mixed with water. Smells of, surprise surprise, oranges.
+
+reagent-name-instant-apple-powder = apple drink powder
+reagent-desc-instant-apple-powder = Powderized apple juice ready to be mixed with water. Smells of, surprise surprise, apples.
+
+reagent-name-instant-watermelon-powder = watermelon drink powder
+reagent-desc-instant-watermelon-powder = Powderized watermelon juice ready to be mixed with water. Smells of, surprise surprise, watermelon.
+
+reagent-name-instant-grape-powder = grape drink powder
+reagent-desc-instant-grape-powder = Powderized grape juice ready to be mixed with water. Smells of, surprise surprise, grapes.
+
+reagent-name-instant-pineapple-powder = pineapple drink powder
+reagent-desc-instant-pineapple-powder = Powderized pineapple juice ready to be mixed with water. Smells of, surprise surprise, oranges.
+
+reagent-name-instant-orange = instant orange juice
+reagent-desc-instant-orange = Both delicious AND rich in Vitamin C, what more do you need?
+
+reagent-name-instant-apple = instant apple juice
+reagent-desc-instant-apple = The pleasantly sweet taste of apples, now in liquid form.
+
+reagent-name-instant-watermelon = instant watermelon juice
+reagent-desc-instant-watermelon = Delicious juice made from watermelon.
+
+reagent-name-instant-grape = instant grape juice
+reagent-desc-instant-grape = It's grrrrrape!
+
+reagent-name-instant-pineapple = instant pineapple juice
+reagent-desc-instant-pineapple = Refreshingly citric, with a pleasant flavor.

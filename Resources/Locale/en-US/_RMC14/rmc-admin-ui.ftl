@@ -1,4 +1,4 @@
-rmc-ui-cm-actions = RMC操作
+﻿rmc-ui-cm-actions = RMC操作
 rmc-ui-transform-tab = 变形
 rmc-ui-open-rmc-actions = 打开RMC操作
 rmc-ui-marine-tab = 陆战队
@@ -9,7 +9,9 @@ rmc-ui-weapons-specialist-skills = 武器专家技能
 rmc-ui-create-squad = 创建小队
 rmc-ui-members = 成员：{$members}人存活
 rmc-ui-add-to-squad = 加入小队
+# cmu edit start: lore names
 rmc-ui-xeno-tab = 异形
+# cmu edit end
 rmc-ui-xeno-hive = 虫巢：
 rmc-ui-create-new-hive = 创建新虫巢
 rmc-ui-create-hive-title = 新虫巢名称

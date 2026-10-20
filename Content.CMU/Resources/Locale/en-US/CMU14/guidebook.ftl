@@ -1,4 +1,5 @@
 # Rules
+cmu-guide-entry-ship-weapons = Ship Orbital Support Weapons
 cmu-guide-entry-rules-overview = 规则概览
 cmu-guide-entry-rules-zero-tolerance = 零容忍规则
 cmu-guide-entry-rules-general = 通用规则
@@ -206,6 +207,6 @@ cmu-guide-entry-lore-ua-doves = “鸽派”
 cmu-guide-entry-lore-ua-hawks = “鹰派”
 cmu-guide-entry-lore-ua-magpies = “喜鹊派”
 cmu-guide-entry-lore-ua-politics = 政治
-cmu-guide-entry-overwatch = overwatch
+cmu-guide-entry-overwatch = Overwatch
 cmu-guide-entry-fob-security = 前进基地安全小队
 cmu-guide-entry-skills = 技能

@@ -9,7 +9,9 @@ rmc-ghost-role-information-pmc-whiteout-rules = 你是[color=orange][bold]PMC雪
                                              你可以记住关于游戏的一般知识，例如如何烹饪、如何使用物品等。
                                              你绝对[color=red]不[/color]可以记得你之前角色的名字、外貌等。
 
+# cmu edit start: lore names
 rmc-ghost-role-information-pmc-description = 确保Weyland-Yutani不受任何损害。确保企业联络员安全。否认Weyland-Yutani与此事有关，不要信任UNMC部队。只有在遭到射击或被命令时才开火。
+# cmu edit end
 
 rmc-ghost-name-pmc-standard = We-Yu PMC特工（中立）
 rmc-job-name-pmc-standard = 特工

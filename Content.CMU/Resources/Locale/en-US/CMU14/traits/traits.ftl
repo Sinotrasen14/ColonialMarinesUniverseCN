@@ -140,6 +140,8 @@ trait-cmu-prosthetic-right-leg-desc = 你的右腿已被替换为机械假肢。
 cmu-ui-options-movement = 移动
 cmu-ui-options-tile-movement = 格子移动
 cmu-ui-options-tile-movement-tooltip = 你从一个格子移动到另一个格子，而不是自由行走，就像你之前的先辈一样。
+cmu-ui-options-tile-movement-walk-only = Tile movement while walking
+cmu-ui-options-tile-movement-walk-only-tooltip = Move from tile to tile while walking, and freely while running. Tile movement above overrides this.
 
 cmu-trait-category-drinking = 酒精耐受
 cmu-trait-heavyweight-name = 千杯不醉
@@ -174,3 +176,6 @@ cmu-motion-sick-worse-1 = 你再也憋不住了！
 cmu-motion-sick-worse-2 = 你的胃让你失望了！
 cmu-motion-sick-worse-3 = 就是这样，你会生病的！
 cmu-motion-sick-worse-4 = 你的午饭又吐了出来，头比之前更晕了。
+
+cmu-trait-auto-ignore-name = Auto ignore incompatible traits
+cmu-trait-auto-ignore-desc = When you join a job that doesn't allow some of your traits, those traits are left off for that round instead of keeping you out of the job.

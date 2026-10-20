@@ -29,8 +29,10 @@ rmc-hivemanagement-reward = 奖励王浆（500）
 rmc-hivemanagement-exchange-larva = 用幼虫交换进化点
 rmc-hivemanagement-exchange-larva-not-enough = 我们至少需要1只穴居幼虫来牺牲以换取进化点。
 rmc-hivemanagement-exchange-larva-title = 给予进化点
+# cmu edit start: lore names
 rmc-hivemanagement-exchange-larva-description = 选择一只异形，用一只穴居幼虫换取{$points}进化点
   简而言之，拿一只穴居幼虫来换
+# cmu edit end
 rmc-hivemanagement-exchange-larva-need-minutes = 我们必须留些时间让幼虫生成才能牺牲它们。请再等{$minutes}分钟
 rmc-hivemanagement-exchange-larva-given-user = {$target}获得了{$points}进化点。
 rmc-hivemanagement-exchange-larva-given-target = {$user}给了我们{$points}进化点！好好利用。
@@ -46,6 +48,8 @@ rmc-hivemanagement-provide-reason = 提供让{ $name }退化的原因
 rmc-hivemanagement-queen-deevolving = 女王正在让你退化，原因如下：{ $reason }
 rmc-hivemanagement-must-overwatch = 你必须监视你想让其退化的异形。
 rmc-hivemanagement-cant-be-devolved = { $name }无法退化！
+# cmu edit start: lore names
 rmc-hivemanagement-cant-deevolve-larva = 你不能让异形退化为幼虫。
+# cmu edit end
 rmc-hivemanagement-cant-deevolve-other-hive = 你不能让其他虫巢的成员退化！
 

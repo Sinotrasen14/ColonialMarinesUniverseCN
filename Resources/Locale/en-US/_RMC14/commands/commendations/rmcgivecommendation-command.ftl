@@ -1,5 +1,6 @@
 # Give Commendation Command
 cmd-rmcgivecommendation-desc = 向玩家颁发勋章或王浆
+# cmu edit start: lore names
 cmd-rmcgivecommendation-help = 用法：rmcgivecommendation <giverName> <receiver> <receiverName> <type> <commendationType> <citation> [roundId]
   参数：
   giverName：以角色内身份颁发奖励的人（含空格时务必使用引号）
@@ -14,6 +15,7 @@ cmd-rmcgivecommendation-help = 用法：rmcgivecommendation <giverName> <receive
     rmcgivecommendation "UNMC High Command" PlayerName "John Doe" medal 1 "For exceptional bravery"
     rmcgivecommendation "The Queen Mother" XenoPlayer "XX-Alpha" jelly 2 "For defending the hive"
     rmcgivecommendation "UNMC High Command" PlayerName "John Doe" medal 1 "For exceptional bravery" 42
+# cmu edit end
 
 # Errors
 cmd-rmcgivecommendation-invalid-arguments = 参数数量不正确！

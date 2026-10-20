@@ -188,6 +188,7 @@ cmu-fighter-officer-route-hint = 在地图上选择指示信号弹以观察画�
     空中掩护 · 分配防御扇区
 cmu-fighter-board-blocked = 两个座位已满员，或战机未安全停放于地面.
 cmu-fighter-takeoff-blocked = 起飞需要空旷地带与开阔天空.请远离地勤人员、障碍物、顶棚及运动中的升降平台.
+cmu-fighter-landing-diverted = The recovery site is still blocked. Diverting to the nearest clear spot.
 cmu-fighter-air-countdown = 距命中还有 { $seconds } 秒！
 cmu-fighter-flares = 投放热诱弹
 cmu-fighter-flares-used = 热诱弹已投放

@@ -115,6 +115,7 @@
   name: 两点式枪背带
   description: 一条传统样式的强化尼龙织带，两端带有卡扣，用于连接到联合国武装部队军械库中大多数长枪上合适的安装点。
   components:
+  - type: CMUSling # CMU14: configurable rail/underbarrel mounting.
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Attachments/rifle_sling/classic-desert-jungle.rsi
     state: pve-sling
@@ -533,7 +534,9 @@
   description: 这东西本不该从枪上拆下来。你是怎么弄到手的？
   components:
   - type: Sprite
-    state: xm43e1_scope
+    # cmu edit start: old XM43E1 scope sprite
+    state: pmcscope
+    # cmu edit end
   - type: Tag
     tags:
     - RMCAttachmentRail
@@ -541,7 +544,9 @@
   - type: AttachableToggleable
     icon:
       sprite: _RMC14/Objects/Weapons/Guns/Attachments/rail.rsi
-      state: xm43e1_scope
+      # cmu edit start: old XM43E1 scope sprite
+      state: pmcscope
+      # cmu edit end
     actionName: Look through the XM43E1's Integrated Scope
     actionDesc: Lets you see further.
 

@@ -16,7 +16,8 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape: !type:PhysShapeAabb
+        shape:
+          !type:PhysShapeAabb
           bounds: "-0.25,-0.35,0.25,0.35"
         density: 190
         mask:
@@ -27,13 +28,14 @@
     key: enum.VehicleSupplyUIKey.Key
   - type: ActivatableUIRequiresAccess
   - type: AccessReader
-    access: [ [ "RMCAccessVehicleCrew" ], [ "CMAccessPilot" ] ] # CMU14: vehicle crew or pilots, not both
+    access: [ [ "RMCAccessVehicleCrew" ],  [ "AU14AccessGovforPilot" ], [ "AU14AccessOpforPilot"  ] ]
   - type: UserInterface
     interfaces:
       enum.VehicleSupplyUIKey.Key:
         type: VehicleSupplyBui
   - type: VehicleSupplyConsole
     vehicles:
+
     # CMU14: fighter and portable faction-owned VTOL pad.
     - name: 双座垂直起降战斗机
       vehicle: CMUFighterGround
@@ -49,35 +51,10 @@
       - RMCDropshipAttachmentAmmoRocketWidowmaker
       - RMCDropshipAttachmentAmmoRocketHarpoon
       - RMCDropshipAttachmentAmmoRocketNapalm
+
     - name: M2420 JTMV 武装型
       vehicle: VehicleHumvee
-      group: vehicle-support
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: VehicleHumveeTurretArmed
-          name: 加农炮炮塔
-          item: VehicleHumveeTurretArmed
-          slot: turret
-      - id: wheels
-        name: 车轮
-        options:
-        - id: VehicleHumveeWheel
-          name: 轮
-          item: VehicleHumveeWheel
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: VehicleHumveeSnowplow
-          name: 扫雪机
-          item: VehicleHumveeSnowplow
-          slot: front
-        - id: VehicleHumveeOverlight
-          name: 过亮
-          item: VehicleHumveeOverlight
-          slot: roof
+      group: vehicle-armed # cmu edit: armed, so it takes the VTOL/APC slot
       hardpoints:
       - VehicleHumveeTurret
       - VehicleHumveeTurretArmed
@@ -87,198 +64,58 @@
       - VehicleHumveeOverlight
       - VehicleHumveeHatch
       - VehicleHumveeWheel
+
     - name: M2421 JTMV 救护车
       vehicle: VehicleHumveeMedical
       group: vehicle-support
-      loadoutCategories:
-      - id: wheels
-        name: 车轮
-        options:
-        - id: VehicleHumveeWheel
-          name: 轮子
-          item: VehicleHumveeWheel
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: VehicleHumveeSnowplow
-          name: 扫雪机
-          item: VehicleHumveeSnowplow
-          slot: front
-        - id: VehicleHumveeOverlight
-          name: 超光
-          item: VehicleHumveeOverlight
-          slot: roof
       hardpoints:
       - VehicleHumveeSnowplow
       - VehicleHumveeOverlight
       - VehicleHumveeWheel
+
     - name: M2422 JTMV 运输车
       vehicle: VehicleHumveeTransport
       group: vehicle-support
-      loadoutCategories:
-      - id: wheels
-        name: 车轮
-        options:
-        - id: VehicleHumveeWheel
-          name: 轮子
-          item: VehicleHumveeWheel
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: VehicleHumveeSnowplow
-          name: 除雪机
-          item: VehicleHumveeSnowplow
-          slot: front
-        - id: VehicleHumveeOverlight
-          name: 超光
-          item: VehicleHumveeOverlight
-          slot: roof
       hardpoints:
       - VehicleHumveeSnowplow
       - VehicleHumveeOverlight
       - VehicleHumveeWheel
-    # CMU14: ARC equipment is available only through the WY platoon catalog.
-    - name: M2420 JTMV 武装型（ARC）
-      vehicle: VehicleHumveeARC
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: VehicleHumveeARCTurret
-          name: ARC炮塔
-          item: VehicleHumveeARCTurret
-          slot: turret
-      - id: wheels
-        name: 车轮
-        options:
-        - id: VehicleHumveeWheel
-          name: 轮子
-          item: VehicleHumveeWheel
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: VehicleHumveeSnowplow
-          name: 扫雪机
-          item: VehicleHumveeSnowplow
-          slot: front
-        - id: VehicleHumveeOverlight
-          name: 过亮
-          item: VehicleHumveeOverlight
-          slot: roof
-      hardpoints:
-      - VehicleHumveeTurret
-      - VehicleHumveeTurretArmed
-      - VehicleHumveeARCTurret
-      - VehicleHumveeCannon
-      - VehicleHumveeARCCannon
-      - VehicleHumveeLauncher
-      - VehicleHumveeSnowplow
-      - VehicleHumveeOverlight
-      - VehicleHumveeHatch
-      - VehicleHumveeWheel
-    # CMU14 End
+
     - name: 怯薛-1运输（UPP）
       vehicle: VehicleSPPVan
       group: vehicle-support
-      loadoutCategories:
-      - id: wheels
-        name: 车轮
-        options:
-        - id: VehicleSPPVanWheel
-          name: 轮子
-          item: VehicleSPPVanWheel
-          slot: wheel-1
       hardpoints:
       - VehicleSPPVanWheel
+
     - name: 怯薛-1 武装（UPP）
       vehicle: VehicleSPPVanArmed
-      group: vehicle-support
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: VehicleSPPVanTurret
-          name: 炮塔
-          item: VehicleSPPVanTurret
-          slot: secondary
-      - id: wheels
-        name: 车轮
-        options:
-        - id: VehicleSPPVanWheel
-          name: 轮
-          item: VehicleSPPVanWheel
-          slot: wheel-1
+      group: vehicle-armed # cmu edit: armed, so it takes the VTOL/APC slot
       hardpoints:
       - VehicleSPPVanTurret
       - VehicleSPPVanCannon
       - VehicleSPPVanWheel
+
     - name: 怯薛-1 医疗（UPP）
       vehicle: VehicleSPPVanMedical
       group: vehicle-support
-      loadoutCategories:
-      - id: wheels
-        name: 车轮
-        options:
-        - id: VehicleSPPVanWheel
-          name: 车轮
-          item: VehicleSPPVanWheel
-          slot: wheel-1
       hardpoints:
       - VehicleSPPVanWheel
+
     - name: 怯薛-1 警察（UPP）
       vehicle: VehicleSPPVanPrisoner
       group: vehicle-support
-      loadoutCategories:
-      - id: wheels
-        name: 车轮
-        options:
-        - id: VehicleSPPVanWheel
-          name: 轮子
-          item: VehicleSPPVanWheel
-          slot: wheel-1
       hardpoints:
       - VehicleSPPVanWheel
+
     - name: 怯薛-1 后勤（UPP）
       vehicle: VehicleSPPVanLogistics
       group: vehicle-support
-      loadoutCategories:
-      - id: wheels
-        name: 轮子
-        options:
-        - id: VehicleSPPVanWheel
-          name: 轮子
-          item: VehicleSPPVanWheel
-          slot: wheel-1
       hardpoints:
       - VehicleSPPVanWheel
+
     - name: M34E1 AEV
       vehicle: VehicleAev
-      group: vehicle-apc
-      loadoutCategories:
-      - id: standardtreads
-        name: 胎面
-        options:
-        - id: VehicleTankReinforcedTreads
-          name: 加固胎面
-          item: VehicleTankReinforcedTreads
-          slot: wheel-1
-      - id: auxiliary
-        name: 辅助
-        options:
-        - id: VehicleTankSnowplow
-          name: 扫雪机
-          item: VehicleTankSnowplow
-          slot: armor
-      - id: support
-        name: 支持
-        options:
-        - id: VehicleTankOverdriveEnhancer
-          name: 过载增强器
-          item: VehicleTankOverdriveEnhancer
-          slot: support
+      group: vehicle-support # cmu edit: unarmed, so it takes the support slot
       hardpoints:
       - VehicleTankTreads
       - VehicleTankReinforcedTreads
@@ -288,38 +125,10 @@
       - VehicleTankArmorPaladin
       - VehicleTankSnowplow
       - VehicleTankOverdriveEnhancer
+
     - name: M577装甲运兵车
       vehicle: VehicleAPC
       group: vehicle-apc
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: RMCAPCDualCannon
-          name: 双管炮
-          item: RMCAPCDualCannon
-          slot: primary
-      - id: secondary
-        name: 次要
-        options:
-        - id: RMCAPCFrontCannon
-          name: 正面加农炮
-          item: RMCAPCFrontCannon
-          slot: secondary
-      - id: wheels
-        name: 车轮
-        options:
-        - id: RMCAPCWheel
-          name: 轮子
-          item: RMCAPCWheel
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: RMCAPCFlareLauncher
-          name: 信号弹发射器
-          item: RMCAPCFlareLauncher
-          slot: support
       hardpoints:
       - RMCAPCDualCannon
       - RMCAPCFrontCannon
@@ -327,38 +136,10 @@
       - RMCAPCFlareLauncher
       - RMCAPCFreightStorage
       - RMCAPCWheel
+
     - name: M577 装甲运兵车（医疗型）
       vehicle: VehicleAPCMed
       group: vehicle-apc
-      loadoutCategories:
-      - id: primary
-        name: 主要的
-        options:
-        - id: RMCAPCDualCannon
-          name: 双管炮
-          item: RMCAPCDualCannon
-          slot: primary
-      - id: secondary
-        name: 次要
-        options:
-        - id: RMCAPCFreightStorage
-          name: 货运仓储
-          item: RMCAPCFreightStorage
-          slot: support
-      - id: wheels
-        name: 车轮
-        options:
-        - id: RMCAPCWheel
-          name: 轮子
-          item: RMCAPCWheel
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: RMCAPCFlareLauncher
-          name: 信号弹发射器
-          item: RMCAPCFlareLauncher
-          slot: support
       hardpoints:
       - RMCAPCDualCannon
       - RMCAPCFrontCannon
@@ -366,42 +147,10 @@
       - RMCAPCFlareLauncher
       - RMCAPCFreightStorage
       - RMCAPCWheel
+
     - name: M577 装甲运兵车（指挥型）
       vehicle: VehicleAPCCommand
       group: vehicle-apc
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: RMCAPCDualCannon
-          name: 双管炮
-          item: RMCAPCDualCannon
-          slot: primary
-      - id: secondary
-        name: 次要的
-        options:
-        - id: RMCAPCFreightStorage
-          name: 货运仓储
-          item: RMCAPCFreightStorage
-          slot: support
-      - id: wheels
-        name: 车轮
-        options:
-        - id: RMCAPCWheel
-          name: 轮子
-          item: RMCAPCWheel
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: RMCAPCCommsRelay
-          name: 通信中继
-          item: RMCAPCCommsRelay
-          slot: support
-        - id: RMCAPCFlareLauncher
-          name: 信号弹发射器
-          item: RMCAPCFlareLauncher
-          slot: support
       hardpoints:
       - RMCAPCDualCannon
       - RMCAPCFrontCannon
@@ -409,38 +158,10 @@
       - RMCAPCFlareLauncher
       - RMCAPCFreightStorage
       - RMCAPCWheel
+
     - name: M577 装甲运兵车“维兰德”（WY）
       vehicle: VehicleAPCPMC
       group: vehicle-apc
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: RMCAPCDualCannon
-          name: 双管炮
-          item: RMCAPCDualCannon
-          slot: primary
-      - id: secondary
-        name: 次要的
-        options:
-        - id: RMCAPCFrontCannon
-          name: 正面火炮
-          item: RMCAPCFrontCannon
-          slot: secondary
-      - id: wheels
-        name: 车轮
-        options:
-        - id: RMCAPCWheel
-          name: 轮子
-          item: RMCAPCWheel
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: RMCAPCFlareLauncher
-          name: 信号弹发射器
-          item: RMCAPCFlareLauncher
-          slot: support
       hardpoints:
       - RMCAPCDualCannon
       - RMCAPCFrontCannon
@@ -448,39 +169,10 @@
       - RMCAPCFlareLauncher
       - RMCAPCFreightStorage
       - RMCAPCWheel
+
     - name: ZSL-68装甲人员输送车（UPP）
       vehicle: VehicleSPPAPC
       group: vehicle-apc
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: VehicleSPPAPCMinigun
-          name: 迷你机枪
-          item: VehicleSPPAPCMinigun
-          slot: primary::turret-cannon
-        - id: VehicleSPPAPCAutocannon
-          name: 自动加农炮
-          item: VehicleSPPAPCAutocannon
-          slot: secondary
-        - id: VehicleSPPAPCHJ35Launcher
-          name: HJ35发射器
-          item: VehicleSPPAPCHJ35Launcher
-          slot: secondary
-      - id: wheels
-        name: 车轮
-        options:
-        - id: VehicleSPPAPCWheel
-          name: 轮子
-          item: VehicleSPPAPCWheel
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: VehicleSPPAPCFlareLauncher
-          name: 信号弹发射器
-          item: VehicleSPPAPCFlareLauncher
-          slot: support
       hardpoints:
       - VehicleSPPAPCWheel
       - VehicleSPPAPCTurret
@@ -488,35 +180,11 @@
       - VehicleSPPAPCAutocannon
       - VehicleSPPAPCHJ35Launcher
       - VehicleSPPAPCFlareLauncher
+
     # CMU14: Wolfpack MGS. Entry and option names come from the localized prototype names;
     # the hardpoint list holds only parts with art in the Wolfpack RSI.
     - vehicle: CMUVehicleAPCWolfpack
       group: vehicle-apc
-      loadoutCategories:
-      - id: primary
-        name: 主要的
-        options:
-        - id: CMUVehicleAPCWolfpackAutocannon
-          item: CMUVehicleAPCWolfpackAutocannon
-          slot: primary::turret-cannon
-      - id: secondary
-        name: 次要
-        options:
-        - id: CMUVehicleAPCWolfpackFrontCannon
-          item: CMUVehicleAPCWolfpackFrontCannon
-          slot: secondary
-      - id: wheels
-        name: 轮子
-        options:
-        - id: RMCAPCWheel
-          item: RMCAPCWheel
-          slot: wheel-1
-      - id: support
-        name: 补给
-        options:
-        - id: CMUVehicleAPCWolfpackFlareLauncher
-          item: CMUVehicleAPCWolfpackFlareLauncher
-          slot: support
       hardpoints:
       - CMUVehicleAPCWolfpackTurret
       - CMUVehicleAPCWolfpackAutocannon
@@ -524,116 +192,10 @@
       - CMUVehicleAPCWolfpackFlareLauncher
       - RMCAPCWheel
     # CMU14 End
-    - name: M34A2 Longstreet
+
+    - name: M34A2 Longstreet #look here hoe
       vehicle: VehicleTank
       group: vehicle-tank
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: VehicleTankLTAAAPMinigun
-          name: LTAAAP 加特林机枪
-          item: VehicleTankLTAAAPMinigun
-          slot: primary::turret-cannon
-        - id: VehicleTankAceAutocannon
-          name: ACE自动机炮
-          item: VehicleTankAceAutocannon
-          slot: primary::turret-cannon
-        - id: VehicleTankLTBCannon
-          name: LTB加农炮
-          item: VehicleTankLTBCannon
-          slot: primary::turret-cannon
-        - id: VehicleTankDragonFlamer
-          name: DRG-N 喷火器
-          item: VehicleTankDragonFlamer
-          slot: primary::turret-cannon
-      - id: secondary
-        name: 次要
-        options:
-        - id: VehicleTankFlamer
-          name: 火焰喷射器
-          item: VehicleTankFlamer
-          slot: primary::turret-launcher
-        - id: VehicleTankGrenadeLauncher
-          name: 榴弹发射器
-          item: VehicleTankGrenadeLauncher
-          slot: primary::turret-launcher
-        - id: VehicleTankTowLauncher
-          name: 陶式发射器
-          item: VehicleTankTowLauncher
-          slot: primary::turret-launcher
-        - id: VehicleTankM56Cupola
-          name: M56 指挥塔
-          item: VehicleTankM56Cupola
-          slot: primary::turret-launcher
-        - id: VehicleTankRERE700
-          name: RE-RE700 圆顶
-          item: VehicleTankRERE700
-          slot: primary::turret-launcher
-      - id: standardtreads
-        name: 胎面
-        options:
-        - id: VehicleTankTreads
-          name: 胎面
-          item: VehicleTankTreads
-          slot: wheel-1
-      - id: armor
-        name: 护甲
-        options:
-        - id: VehicleTankArmorBallistic
-          name: 防弹装甲
-          item: VehicleTankArmorBallistic
-          slot: armor
-        - id: VehicleTankArmorConcussive
-          name: 震荡护甲
-          item: VehicleTankArmorConcussive
-          slot: armor
-        - id: VehicleTankArmorCaustic
-          name: 腐蚀护甲
-          item: VehicleTankArmorCaustic
-          slot: armor
-        - id: VehicleTankArmorPaladin
-          name: 圣骑士护甲
-          item: VehicleTankArmorPaladin
-          slot: armor
-      - id: auxiliary
-        name: 辅助
-        options:
-        - id: VehicleTankReinforcedTreads
-          name: 加固胎面
-          item: VehicleTankReinforcedTreads
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: VehicleTankWarningArray
-          name: 武器传感器阵列
-          item: VehicleTankWarningArray
-          slot: support
-        - id: VehicleTankOverdriveEnhancer
-          name: 过载增强器
-          item: VehicleTankOverdriveEnhancer
-          slot: support
-        - id: VehicleTankRocketLauncher
-          name: 烟雾发射器
-          item: VehicleTankRocketLauncher
-          slot: support
-        - id: VehicleTankFlareModule
-          name: 闪光模块
-          item: VehicleTankFlareModule
-          slot: support
-        - id: VehicleTankArtilleryModule
-          name: 火炮模块
-          item: VehicleTankArtilleryModule
-          slot: support
-        - id: VehicleTankSnowplow
-          name: 扫雪机
-          item: VehicleTankSnowplow
-          slot: support
-        - id: VehicleTankMountedFlag
-          name: 已安装的 UA 旗帜
-          item: VehicleTankMountedFlag
-          slot: support
       hardpoints:
       - VehicleTankTurret
       - VehicleTankTreads
@@ -656,112 +218,10 @@
       - VehicleTankRocketLauncher
       - VehicleTankFlareModule
       - VehicleTankArtilleryModule
+
     - name: M34A2 朗斯特里特‘汤谷’（WY）
       vehicle: VehicleTankPMC
       group: vehicle-tank
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: VehicleTankLTAAAPMinigun
-          name: LTAAAP 加特林机枪
-          item: VehicleTankLTAAAPMinigun
-          slot: primary::turret-cannon
-        - id: VehicleTankAceAutocannon
-          name: 王牌自动炮
-          item: VehicleTankAceAutocannon
-          slot: primary::turret-cannon
-        - id: VehicleTankLTBCannon
-          name: LTB 加农炮
-          item: VehicleTankLTBCannon
-          slot: primary::turret-cannon
-        - id: VehicleTankDragonFlamer
-          name: DRG-N火焰兵
-          item: VehicleTankDragonFlamer
-          slot: primary::turret-cannon
-      - id: secondary
-        name: 次要
-        options:
-        - id: VehicleTankFlamer
-          name: 火焰喷射器
-          item: VehicleTankFlamer
-          slot: primary::turret-launcher
-        - id: VehicleTankGrenadeLauncher
-          name: 榴弹发射器
-          item: VehicleTankGrenadeLauncher
-          slot: primary::turret-launcher
-        - id: VehicleTankTowLauncher
-          name: 陶式发射器
-          item: VehicleTankTowLauncher
-          slot: primary::turret-launcher
-        - id: VehicleTankM56Cupola
-          name: M56指挥塔
-          item: VehicleTankM56Cupola
-          slot: primary::turret-launcher
-        - id: VehicleTankRERE700
-          name: RE-RE700 冲天炉
-          item: VehicleTankRERE700
-          slot: primary::turret-launcher
-      - id: standardtreads
-        name: 胎面
-        options:
-        - id: VehicleTankTreads
-          name: 踏步
-          item: VehicleTankTreads
-          slot: wheel-1
-      - id: armor
-        name: 护甲
-        options:
-        - id: VehicleTankArmorBallistic
-          name: 防弹装甲
-          item: VehicleTankArmorBallistic
-          slot: armor
-        - id: VehicleTankArmorConcussive
-          name: 震荡护甲
-          item: VehicleTankArmorConcussive
-          slot: armor
-        - id: VehicleTankArmorCaustic
-          name: 腐蚀护甲
-          item: VehicleTankArmorCaustic
-          slot: armor
-        - id: VehicleTankArmorPaladin
-          name: 圣骑士护甲
-          item: VehicleTankArmorPaladin
-          slot: armor
-      - id: auxiliary
-        name: 辅助
-        options:
-        - id: VehicleTankReinforcedTreads
-          name: 加固胎面
-          item: VehicleTankReinforcedTreads
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: VehicleTankWarningArray
-          name: 武器传感器阵列
-          item: VehicleTankWarningArray
-          slot: support
-        - id: VehicleTankOverdriveEnhancer
-          name: 过载增强器
-          item: VehicleTankOverdriveEnhancer
-          slot: support
-        - id: VehicleTankRocketLauncher
-          name: 烟雾发射器
-          item: VehicleTankRocketLauncher
-          slot: support
-        - id: VehicleTankFlareModule
-          name: 耀斑模块
-          item: VehicleTankFlareModule
-          slot: support
-        - id: VehicleTankArtilleryModule
-          name: 火炮模块
-          item: VehicleTankArtilleryModule
-          slot: support
-        - id: VehicleTankSnowplow
-          name: 扫雪机
-          item: VehicleTankSnowplow
-          slot: support
       hardpoints:
       - VehicleTankTurret
       - VehicleTankTreads
@@ -784,76 +244,10 @@
       - VehicleTankRocketLauncher
       - VehicleTankFlareModule
       - VehicleTankArtilleryModule
+
     - name: 猎豹 2A（UPP）
       vehicle: VehicleSPPTank
       group: vehicle-tank
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: VehicleSPPTankP17702
-          name: P-17702旋转机炮
-          item: VehicleSPPTankP17702
-          slot: primary::turret-cannon
-        - id: VehicleSPPTankRailgun
-          name: SPP 轨道炮
-          item: VehicleSPPTankRailgun
-          slot: primary::turret-cannon
-      - id: secondary
-        name: 次要
-        options:
-        - id: VehicleSPPTankHJ35TLauncher
-          name: HJ35T发射器
-          item: VehicleSPPTankHJ35TLauncher
-          slot: primary::turret-launcher
-        - id: VehicleSPPTankCupola
-          name: T60P3M 冲天炉
-          item: VehicleSPPTankCupola
-          slot: primary::turret-launcher
-      - id: standardtreads
-        name: 胎面
-        options:
-        - id: VehicleTankTreads
-          name: 胎面
-          item: VehicleTankTreads
-          slot: wheel-1
-      - id: armor
-        name: 护甲
-        options:
-        - id: VehicleSPPTankReactiveArmor
-          name: 反应装甲
-          item: VehicleSPPTankReactiveArmor
-          slot: armor
-      - id: auxiliary
-        name: 辅助
-        options:
-        - id: VehicleTankReinforcedTreads
-          name: 加固胎面
-          item: VehicleTankReinforcedTreads
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: VehicleSPPTankRocketLauncher
-          name: 烟雾发射器
-          item: VehicleSPPTankRocketLauncher
-          slot: support
-        - id: VehicleSPPTankFlareModule
-          name: 闪光模块
-          item: VehicleSPPTankFlareModule
-          slot: support
-        - id: VehicleSPPTankWarningArray
-          name: 武器传感器阵列
-          item: VehicleSPPTankWarningArray
-          slot: support
-        - id: VehicleSPPTankOverdriveEnhancer
-          name: 过载增强器
-          item: VehicleSPPTankOverdriveEnhancer
-          slot: support
-        - id: VehicleSPPTankArtilleryModule
-          name: 火炮模块
-          item: VehicleSPPTankArtilleryModule
-          slot: support
       hardpoints:
       - VehicleSPPTankTurret
       - VehicleTankTreads
@@ -868,50 +262,10 @@
       - VehicleSPPTankWarningArray
       - VehicleSPPTankOverdriveEnhancer
       - VehicleSPPTankArtilleryModule
+
     - name: FV150 霍贝拉尔 LCT（TWE）
       vehicle: VehicleTankTWE
       group: vehicle-tank
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: VehicleTankAutocannonTWE
-          name: L26A2 45毫米机关炮
-          item: VehicleTankAutocannonTWE
-          slot: primary::turret-cannon
-        - id: VehicleTankHeavyElectrolaserTWE
-          name: L215A1重型电激光器
-          item: VehicleTankHeavyElectrolaserTWE
-          slot: primary::turret-cannon
-      - id: secondary
-        name: 次要
-        options:
-        - id: VehicleTankCupolaTWE
-          name: L98通用机枪
-          item: VehicleTankCupolaTWE
-          slot: secondary
-      - id: standardtreads
-        name: 胎面
-        options:
-        - id: VehicleTankTreadsTWE
-          name: 线程
-          item: VehicleTankTreadsTWE
-          slot: wheel-1
-      - id: support
-        name: 支持
-        options:
-        - id: VehicleTankRocketLauncherTWE
-          name: L-39T烟雾排放器
-          item: VehicleTankRocketLauncherTWE
-          slot: support
-        - id: TWEVehicleTankArtilleryModule
-          name: 火炮模块
-          item: TWEVehicleTankArtilleryModule
-          slot: support
-        - id: VehicleTankSnowplowTWE
-          name: 扫雪机
-          item: VehicleTankSnowplowTWE
-          slot: support
       hardpoints:
       - VehicleTankTurretTWE
       - VehicleTankTreadsTWE
@@ -921,6 +275,7 @@
       - VehicleTankM56Cupola
       - VehicleTankRERE700
       - VehicleTankRocketLauncherTWE
+
 #    - name: blackfoot
 #      vehicle: VehicleBlackfoot
 #      group: vehicle-support
@@ -951,6 +306,7 @@
 #      - VehicleBlackfootThrusters
 #      - VehicleBlackfootLaunchers
 #      - VehicleBlackfootReconSystem
+
     - name: AD-71E 黑足（武装型）
       vehicle: VehicleBlackfootDoorGunVariant
       group: vehicle-vtol
@@ -959,25 +315,11 @@
       - CMUBlackfootFuelPumpCrate
       - CMUBlackfootFlightComputerCrate
       - CMUBlackfootAerospaceTug
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: VehicleBlackfootDoorGun
-          name: M866 AGL
-          item: VehicleBlackfootDoorGun
-          slot: door-gun
-      - id: secondary
-        name: 次要
-        options:
-        - id: VehicleBlackfootLaunchers
-          name: 照明弹发射器
-          item: VehicleBlackfootLaunchers
-          slot: launchers
       hardpoints:
       - VehicleBlackfootThrusters
       - VehicleBlackfootLaunchers
       - VehicleBlackfootDoorGun
+
 #    - name: AE-71E VTOL (Recon) # Temporarily unavailable from vehicle storage.
 #      vehicle: VehicleBlackfootRecon
 #      group: vehicle-support
@@ -1013,73 +355,39 @@
 #      - VehicleBlackfootLaunchers
 #      - VehicleBlackfootReconSystem
 #      - VehicleBlackfootSensorArray
+
     # CMU14: civilian choices for the appropriate platoon catalogs.
     - name: 民用厢式货车
       vehicle: AU14VehicleCivVan
       group: vehicle-civ
-      loadoutCategories:
-      - id: wheels
-        name: 车轮
-        options:
-        - id: RMCVanWheel
-          name: 车轮
-          item: RMCVanWheel
-          slot: wheel-1
       hardpoints:
       - RMCVanWheel
+
     - name: 民用卡车
       vehicle: AU14VehicleCivTruck
       group: vehicle-civ
-      loadoutCategories:
-      - id: wheels
-        name: 车轮
-        options:
-        - id: RMCVanWheel
-          name: 轮子
-          item: RMCVanWheel
-          slot: wheel-1
       hardpoints:
       - RMCVanWheel
+
     - name: 民用装甲卡车
       vehicle: AU14VehicleCivArmoredTruck
       group: vehicle-civ
-      loadoutCategories:
-      - id: wheels
-        name: 车轮
-        options:
-        - id: RMCVanWheel
-          name: 轮子
-          item: RMCVanWheel
-          slot: wheel-1
       hardpoints:
       - RMCVanWheel
+
     - name: 囚车
       vehicle: AU14VehicleCivHSVan
       group: vehicle-civ
-      loadoutCategories:
-      - id: wheels
-        name: 轮子
-        options:
-        - id: RMCVanWheel
-          name: 轮子
-          item: RMCVanWheel
-          slot: wheel-1
       hardpoints:
       - RMCVanWheel
+
     - name: 急救医疗服务救护车
       vehicle: AU14VehicleCivEMSAmbulance
       group: vehicle-civ
-      loadoutCategories:
-      - id: wheels
-        name: 车轮
-        options:
-        - id: RMCVanWheel
-          name: 轮子
-          item: RMCVanWheel
-          slot: wheel-1
       hardpoints:
       - RMCVanWheel
     # CMU14 End
+
     - name: AD-71E 黑足（运输）
       vehicle: VehicleBlackfootTransport
       group: vehicle-vtol
@@ -1088,20 +396,10 @@
       - CMUBlackfootFuelPumpCrate
       - CMUBlackfootFlightComputerCrate
       - CMUBlackfootAerospaceTug
-      loadoutCategories:
-      - id: primary
-        name: 主要
-        options:
-        - id: VehicleBlackfootLaunchers
-          name: 照明弹发射器
-          item: VehicleBlackfootLaunchers
-          slot: launchers
-      - id: armor
-        name: 护甲
-        options: []
       hardpoints:
       - VehicleBlackfootThrusters
       - VehicleBlackfootLaunchers
+
   - type: PointLight
     radius: 1.5
     energy: 1.6
@@ -1163,6 +461,9 @@
         - ItemMask
         density: 1000
         hard: false
+  # cmu edit start: no chasm, so nothing falls into the lift
+  # - type: Chasm
+  # cmu edit end
   - type: StepTrigger
     requiredTriggeredSpeed: 0
     intersectRatio: 1
