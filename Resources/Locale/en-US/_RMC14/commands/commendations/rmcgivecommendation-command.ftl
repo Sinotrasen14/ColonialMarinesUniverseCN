@@ -12,9 +12,9 @@ cmd-rmcgivecommendation-help = 用法：rmcgivecommendation <giverName> <receive
   roundId：回合编号，默认为当前回合（可选）
   
   示例：
-    rmcgivecommendation "UNMC High Command" PlayerName "John Doe" medal 1 "For exceptional bravery"
+    rmcgivecommendation "USCM High Command" PlayerName "John Doe" medal 1 "For exceptional bravery"
     rmcgivecommendation "The Queen Mother" XenoPlayer "XX-Alpha" jelly 2 "For defending the hive"
-    rmcgivecommendation "UNMC High Command" PlayerName "John Doe" medal 1 "For exceptional bravery" 42
+    rmcgivecommendation "USCM High Command" PlayerName "John Doe" medal 1 "For exceptional bravery" 42
 # cmu edit end
 
 # Errors

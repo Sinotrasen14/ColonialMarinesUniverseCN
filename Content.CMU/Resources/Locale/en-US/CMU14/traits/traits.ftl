@@ -8,10 +8,10 @@ au14-trait-no-english-name = 遗忘英语
 au14-trait-no-english-desc = 啥？
 
 au14-trait-no-language-learning-name = 语言障碍
-au14-trait-no-language-learning-desc = 你无法学习新语言。
+au14-trait-no-language-learning-desc = 你无法在回合中学习新语言，但会额外获得 1 点语言点数，用于选择角色开局时掌握的语言。
 
 au14-trait-polyglot-name = 多语通
-au14-trait-polyglot-desc = 语言对你来说浑然天成，上次你打喷嚏时，就用一种你从未听过的方言把动词给搅乱了。
+au14-trait-polyglot-desc = 学习语言对你来说轻而易举。你会额外获得 1 点语言点数，可以多选择一门语言。
 
 au14-trait-sign-name = 手语
 au14-trait-sign-desc = 你能说和理解手语。
@@ -140,8 +140,8 @@ trait-cmu-prosthetic-right-leg-desc = 你的右腿已被替换为机械假肢。
 cmu-ui-options-movement = 移动
 cmu-ui-options-tile-movement = 格子移动
 cmu-ui-options-tile-movement-tooltip = 你从一个格子移动到另一个格子，而不是自由行走，就像你之前的先辈一样。
-cmu-ui-options-tile-movement-walk-only = Tile movement while walking
-cmu-ui-options-tile-movement-walk-only-tooltip = Move from tile to tile while walking, and freely while running. Tile movement above overrides this.
+cmu-ui-options-tile-movement-walk-only = 行走时使用格子移动
+cmu-ui-options-tile-movement-walk-only-tooltip = 行走时按格移动，奔跑时自由移动。上方的“格子移动”选项优先生效。
 
 cmu-trait-category-drinking = 酒精耐受
 cmu-trait-heavyweight-name = 千杯不醉
@@ -177,5 +177,5 @@ cmu-motion-sick-worse-2 = 你的胃让你失望了！
 cmu-motion-sick-worse-3 = 就是这样，你会生病的！
 cmu-motion-sick-worse-4 = 你的午饭又吐了出来，头比之前更晕了。
 
-cmu-trait-auto-ignore-name = Auto ignore incompatible traits
-cmu-trait-auto-ignore-desc = When you join a job that doesn't allow some of your traits, those traits are left off for that round instead of keeping you out of the job.
+cmu-trait-auto-ignore-name = 自动忽略不兼容的特质
+cmu-trait-auto-ignore-desc = 加入不允许使用某些特质的职位时，本回合会停用这些特质，而不会阻止你加入该职位。

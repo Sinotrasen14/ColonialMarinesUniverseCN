@@ -20,7 +20,7 @@ au14-department-colony-engineering-description = 负责确保殖民地基础设�
 au14-department-colony-engineering = 殖民地工程部
 
 au14-department-colony-corporate = 企业雇员
-au14-department-colony-corporate-description = 直接受雇于韦兰-汤谷公司，担任管理或安保职位的殖民者。
+au14-department-colony-corporate-description = 直接受雇于维兰德-汤谷公司，担任管理或安保职位的殖民者。
 
 au14-department-colony-command = 殖民地指挥部
 au14-department-colony-command-description = 监督殖民地的所有运作与治理。
@@ -87,7 +87,7 @@ au14-job-description-civiliancorporateliaison = 确保企业利益得到维护�
 au14-job-prefix-corporateliaison = CL
 
 au14-job-name-civiliancorporateadministrator = 企业管理员
-au14-job-description-civiliancorporateadministrator = 殖民地内的韦兰-汤谷高级主管。管理企业利益，与殖民地管理员协调，并监督所有 WEYu 人员。
+au14-job-description-civiliancorporateadministrator = 殖民地内的维兰德-汤谷高级主管。管理企业利益，与殖民地管理员协调，并监督所有 WEYu 人员。
 au14-job-prefix-civiliancorporateadministrator = CORP ADM
 
 au14-job-name-civiliancorporateadminassistant = 企业行政助理
@@ -128,7 +128,7 @@ au14-job-description-civiliancmbmarshal = 你是殖民地法警局的法警。�
 au14-job-prefix-cmbmarshal = CMBMAR
 
 au14-job-name-colonysecurityofficer = 殖民地安保官
-au14-job-description-colonysecurityofficer = 一名由 CMB 和企业共同支持的安保官。维护秩序，执行殖民地法律，并与法警局和韦兰-汤谷在殖民地的代表协调。
+au14-job-description-colonysecurityofficer = 一名由 CMB 和企业共同支持的安保官。维护秩序，执行殖民地法律，并与法警局和维兰德-汤谷在殖民地的代表协调。
 au14-job-prefix-colonysecurityofficer = CSEC
 
 au14-job-name-colonysecurityleader = 殖民地安保主管
@@ -136,7 +136,7 @@ au14-job-description-colonysecurityleader = 高级殖民地安保官。领导殖
 au14-job-prefix-colonysecurityleader = CSLDR
 
 au14-job-name-civilianscientist = 科学家
-au14-job-description-civilianscientist = 你是受雇于韦兰-汤谷公司或政府机构的科学家。
+au14-job-description-civilianscientist = 你是受雇于维兰德-汤谷公司或政府机构的科学家。
 au14-job-prefix-civilianscientist = SCI.
 
 au14-job-name-usasfrecruiter = UA 招募员
@@ -144,11 +144,11 @@ au14-job-description-usasfrecruiter = 你是来自联合美洲的招募员。你
 au14-job-prefix-usasfrecruiter = UA RECR
 
 au14-job-name-civiliancolonysynthetic = 运营合成人
-au14-job-description-civiliancolonysynthetic = 你是由韦兰-汤谷公司创造的人造人。协助殖民地人员完成日常工作。你无法使用弹道武器。（警告：此角色需要极高的角色扮演能力）
+au14-job-description-civiliancolonysynthetic = 你是由维兰德-汤谷公司创造的人造人。协助殖民地人员完成日常工作。你无法使用弹道武器。（警告：此角色需要极高的角色扮演能力）
 au14-job-prefix-civiliancolonysynthetic = CSYNTH
 
 au14-job-name-civiliankellandwarden = 凯兰典狱长
-au14-job-description-civiliankellandwarden = 你是凯兰矿业公司的中层管理人员，该公司是韦兰-汤谷的子公司，你被指派管理本殖民地的监狱。让你的囚犯：工作、生产并守规矩。如果他们表现良好，可以给予更多特权或在殖民地内自由行动。（该角色可在 LV-747 和部分模式中使用）
+au14-job-description-civiliankellandwarden = 你是凯兰矿业公司的中层管理人员，该公司是维兰德-汤谷的子公司，你被指派管理本殖民地的监狱。让你的囚犯：工作、生产并守规矩。如果他们表现良好，可以给予更多特权或在殖民地内自由行动。（该角色可在 LV-747 和部分模式中使用）
 au14-job-prefix-civiliankellandwarden = WARD
 
 au14-job-name-civilianprisoner = 囚犯

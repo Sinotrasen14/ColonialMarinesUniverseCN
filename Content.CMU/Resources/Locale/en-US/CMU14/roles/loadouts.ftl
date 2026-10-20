@@ -42,9 +42,9 @@ au14-loadout-group-auxtech = 作训服
 
 au14-loadout-group-role-clf-id = 假证件
 
-au14-vending-machine-jo-max = This officer kit was already taken!
+au14-vending-machine-jo-max = 这套军官装备已经被领取！
 
 cmu-loadout-group-aegis-stamp = AEGIS 军备印章
 cmu-loadout-group-provost-stamp = 宪兵印章
 cmu-loadout-group-corporate-skirts = 公司裙子
-cmu-loadout-group-surgical-webbing = Surgical Webbing
+cmu-loadout-group-surgical-webbing = 手术战术背心

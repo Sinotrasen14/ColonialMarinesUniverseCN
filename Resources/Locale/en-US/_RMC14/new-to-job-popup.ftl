@@ -5,7 +5,7 @@ rmc-new-to-job-popup-close-button = 全部就绪！
 rmc-new-to-job-popup-close-button-wait = 关闭按钮将在{$time}秒后启用。
 
 # cmu edit start: lore names
-rmc-new-to-job-req-tech = 作为物资技术员，你的工作是通过在主线工作或协助后勤官进行补给空投，向UNMC陆战队员发放补给。
+rmc-new-to-job-req-tech = 作为物资技术员，你的工作是通过在主线工作或协助后勤官进行补给空投，向USCM陆战队员发放补给。
 
                                              你会发现在货运区左侧（你出生的主区域）有两条队伍，中间隔着3台售货机。回合开始时，陆战队员会在那里排队领取补给。大部分补给都在这三台售货机里，其他需求要么去你南边的剩余制服售货机找，要么在队伍附近的ARSR控制台上订购。
 

@@ -10,8 +10,8 @@ cm-job-prefix-liaison = CL
 CMJobLiaison = 企业联络官
 
 # cmu edit start: lore names
-rmc-job-name-synth = UNMC合成体
-rmc-job-description-synth = 支援并协助UNMC各部门和人员。
+rmc-job-name-synth = USCM合成体
+rmc-job-description-synth = 支援并协助USCM各部门和人员。
 # cmu edit end
 rmc-job-prefix-synth = SYN
 RMCJobSynthetic = 合成体

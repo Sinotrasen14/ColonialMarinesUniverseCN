@@ -1,5 +1,5 @@
 ﻿# cmu edit start: lore names
-rmc-ghost-role-information-rcm-rules = 你是[color=yellow][bold]皇家皇冠陆战队员[/bold][/color]。你对UNMC友好。
+rmc-ghost-role-information-rcm-rules = 你是[color=yellow][bold]皇家海军陆战队突击队员[/bold][/color]。你对USCM友好。
                                              你不记得自己前世的任何事，也不记得作为幽灵时的任何见闻。
                                              你可以记住关于游戏的一般知识，例如如何烹饪、如何使用物品等。
                                              你绝对[color=red]不[/color]可以记得你之前角色的名字、外貌等。
@@ -8,7 +8,7 @@ rmc-ghost-role-information-rcm-rules = 你是[color=yellow][bold]皇家皇冠陆
 rmc-ghost-role-information-rcm-description = 确保UNS舰船的存续，消灭一切敌对目标，并尽力协助船员。
 
 # cmu edit start: lore names
-rmc-ghost-name-rcm-sgo = 皇家皇冠陆战队重机枪手（友好）
+rmc-ghost-name-rcm-sgo = 皇家海军陆战队突击队重机枪手（友好）
 # cmu edit end
 rmc-job-name-rcm-sgo = 重机枪手
 # cmu edit start: lore names
@@ -16,7 +16,7 @@ rmc-job-prefix-rcm-sgo = RMC SGO
 # cmu edit end
 
 # cmu edit start: lore names
-rmc-ghost-name-rcm-commando = 皇家皇冠陆战队步枪手（友好）
+rmc-ghost-name-rcm-commando = 皇家海军陆战队突击队步枪手（友好）
 # cmu edit end
 rmc-job-name-rcm-commando = 步枪手
 # cmu edit start: lore names
@@ -24,7 +24,7 @@ rmc-job-prefix-rcm-commando = RMC RFN
 # cmu edit end
 
 # cmu edit start: lore names
-rmc-ghost-name-rcm-marksman = 皇家皇冠陆战队射手（友好）
+rmc-ghost-name-rcm-marksman = 皇家海军陆战队突击队射手（友好）
 # cmu edit end
 rmc-job-name-rcm-marksman = 射手
 # cmu edit start: lore names
@@ -32,7 +32,7 @@ rmc-job-prefix-rcm-marksman = RMC MKSMN
 # cmu edit end
 
 # cmu edit start: lore names
-rmc-ghost-name-rcm-breacher = 皇家皇冠陆战队破门手（友好）
+rmc-ghost-name-rcm-breacher = 皇家海军陆战队突击队破门手（友好）
 # cmu edit end
 rmc-job-name-rcm-breacher = 破门手
 # cmu edit start: lore names
@@ -40,7 +40,7 @@ rmc-job-prefix-rcm-breacher = RMC BRCH
 # cmu edit end
 
 # cmu edit start: lore names
-rmc-ghost-name-rcm-medic = 皇家皇冠陆战队医疗兵（友好）
+rmc-ghost-name-rcm-medic = 皇家海军陆战队突击队医疗兵（友好）
 # cmu edit end
 rmc-job-name-rcm-medic = 医疗兵
 # cmu edit start: lore names
@@ -48,7 +48,7 @@ rmc-job-prefix-rcm-medic = RMC MED
 # cmu edit end
 
 # cmu edit start: lore names
-rmc-ghost-name-rcm-teamlead = 皇家皇冠陆战队队长（友好）
+rmc-ghost-name-rcm-teamlead = 皇家海军陆战队突击队队长（友好）
 # cmu edit end
 rmc-job-name-rcm-teamlead = 队长
 # cmu edit start: lore names

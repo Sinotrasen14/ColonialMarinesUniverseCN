@@ -1,5 +1,5 @@
 ﻿# cmu edit start: lore names
-rmc-ghost-role-information-spp-kommissar-rules = 你是[color=red][bold]SPP的政治委员[/bold][/color]。你是否与陆战队敌对取决于管理员指示。
+rmc-ghost-role-information-spp-kommissar-rules = 你是[color=red][bold]UPP的政治委员[/bold][/color]。你是否与陆战队敌对取决于管理员指示。
                                              你不记得前世的任何事，也不记得作为幽灵时的任何见闻。
                                              你可以记住关于游戏的一般知识，例如如何烹饪、如何使用物品等。
                                              你绝对[color=red]不[/color]可以记得你之前角色的名字、外貌等。

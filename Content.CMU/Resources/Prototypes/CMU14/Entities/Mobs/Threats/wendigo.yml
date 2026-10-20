@@ -5,7 +5,7 @@
   parent: CMUWendigoBase
   id: AU14Wendigo
   name: 温迪戈
-  description: 一个高大、苍白、看起来诡异似人的生物。它的背上烙有“Weyland-Yutani”的印记。
+  description: 一个高大、苍白、看起来诡异似人的生物。它的背上烙有“维兰德-汤谷”的印记。
   components:
   - type: GhostRole
     name: 温迪戈
@@ -77,8 +77,8 @@
   abstract: true
   id: CMUWendigoBase
   save: false
-  name: Wendigo
-  description: A tall, pale creature that looks uncannily human. Its back is branded "Weyland-Yutani".
+  name: "温迪戈"
+  description: "一个高大、苍白、外形酷似人类却令人不安的生物。它的背上烙着“维兰德-汤谷”的标记。"
   components:
   # Body and damage (from CMXenoBase).
   - type: ZombieImmune
@@ -284,7 +284,7 @@
     makeSentient: true
     allowSpeech: true
     allowMovement: true
-    name: Wendigo
+    name: "温迪戈"
     description: cm-xeno-description
     raffle:
       settings: short
@@ -538,8 +538,8 @@
 - type: entity
   parent: CMUWendigoLabBase
   id: CMUWendigoLab
-  name: Wendigo
-  description: A tall, pale creature that looks uncannily human. Its back is branded "Weyland-Yutani".
+  name: "温迪戈"
+  description: "一个高大、苍白、外形酷似人类却令人不安的生物。它的背上烙着“维兰德-汤谷”的标记。"
   components:
   - type: ActionGrant
     actions:
@@ -557,8 +557,8 @@
 - type: entity
   parent: RMCOrganXenoHeart
   id: CMUOrganWendigoHeart
-  name: wendigo heart
-  description: A swollen, too-human heart that still pumps whatever is fed into it.
+  name: "温迪戈心脏"
+  description: "一颗肿胀的心脏，形态与人类心脏相似得令人不安。无论流入什么，它似乎都能继续泵送。"
   categories: [ HideSpawnMenu ]
   components:
   - type: Metabolizer
@@ -571,7 +571,7 @@
   parent: CMUWendigoLabBase
   id: CMUWendigoLesser
   name: 温迪戈
-  description: 一个高大苍白、像人却又诡异得不像人的生物。它的背上烙着“Weyland-Yutani”的字样。
+  description: 一个高大苍白、像人却又诡异得不像人的生物。它的背上烙着“维兰德-汤谷”的字样。
   components:
   - type: GhostRole
     name: 次级温迪戈

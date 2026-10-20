@@ -13,8 +13,8 @@ cmu-zlevel-shoot-down-no-gun = 你需要手持枪械才能瞄准Z级别。
 cmu-zlevel-shoot-down-requires-wield = 你需要先握持你的枪，然后再瞄准Z级。
 cmu-zlevel-shoot-down-no-level = 下面没有可以射击的 Z 级。
 cmu-zlevel-shoot-up-no-level = 没有更高的 Z 级可以射击。
-cmu-zlevel-shoot-down-blocked-floor = 附近没有可以向下射击的开口。
-cmu-zlevel-shoot-up-blocked-floor = 附近没有可以向上射击的开口。
+cmu-zlevel-shoot-down-blocked-floor = 你需要站在距边缘或开口 2 格以内的位置，才能向下射击。
+cmu-zlevel-shoot-up-blocked-floor = 你需要站在距边缘或开口 2 格以内的位置，才能向上射击。
 
 cmu-zlevel-voice-from-up = {$name}（来自上方）
 cmu-zlevel-voice-from-down = {$name}（来自下方）

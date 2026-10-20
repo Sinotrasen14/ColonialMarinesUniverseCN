@@ -41,7 +41,7 @@ rmc-job-description-spp-responder = "你代表UPP地区指挥部，回复发送�
 # TSE fax responder
 rmc-job-name-tse-responder = TWE通讯官
 # cmu edit start: lore names
-rmc-job-description-tse-responder = "你代表TSE地区指挥部，回复发送给TWE指挥部的传真。"
+rmc-job-description-tse-responder = "你代表TWE地区指挥部，回复发送给TWE指挥部的传真。"
 # cmu edit end
 
 # CMB fax responder

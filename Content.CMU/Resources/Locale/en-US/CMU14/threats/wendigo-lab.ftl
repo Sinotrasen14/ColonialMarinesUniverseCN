@@ -67,6 +67,6 @@ cmu-wendigo-lab-examine-ready = [color=#b03a2e]他们在颤抖，面色苍白。
 cmu-wendigo-lab-examine-mutating = [color=#b03a2e][bold]他们的身体正在扭曲成别的东西！[/bold][/color]
 cmu-wendigo-lab-examine-tamed = 它似乎被迫服从{$master}。
 
-cmu-wendigo-lab-round-end-header = [color=#b03a2e]韦兰-汤谷公司实验体：[/color]
+cmu-wendigo-lab-round-end-header = [color=#b03a2e]维兰德-汤谷公司实验体：[/color]
 cmu-wendigo-lab-round-end = {$subject}被变成了一个温迪戈。
 cmu-wendigo-lab-round-end-tamed = {$subject}被变成了一个受{$master}束缚的温迪戈。
