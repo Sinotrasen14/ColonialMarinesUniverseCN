@@ -59,3 +59,6 @@ reagent-name-oleoresin-capsicum = 辣椒油树脂
 reagent-desc-oleoresin-capsicum = 用于辣椒喷雾的浓缩辣椒提取物。接触眼睛会引起剧烈疼痛。
 reagent-name-capsicum-neutralizer = 辣椒素中和剂
 reagent-desc-capsicum-neutralizer = 一种温和的盐水冲洗液，可中和辣椒喷雾。
+
+reagent-name-cmu-tear-gas = 催泪瓦斯
+reagent-desc-cmu-tear-gas = 一种催泪剂。装在烧杯里时无害，化作烟雾后则令人苦不堪言。
