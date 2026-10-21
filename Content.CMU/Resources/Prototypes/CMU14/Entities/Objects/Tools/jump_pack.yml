@@ -2,8 +2,8 @@
 - type: entity
   parent: CMGasTankBase
   id: CMUJumpPack
-  name: jump pack
-  description: A back-mounted thruster pack. Boosts the wearer along a set heading, hops a level up, or hovers above the ground for a short time. Automatically burns gas to slow falls while worn. Refuel it from a gas canister like any other tank. It can hold 5 L of gas.
+  name: 跳跃背包
+  description: 一款背负式推进背包。可以让佩戴者沿设定朝向推进冲刺、跃升至上层区域，或在空中短时间悬停。佩戴时会自动喷气以减缓坠落速度。可以像普通气瓶一样使用储气罐为其充气。最大容量为 5 升气体。
   components:
   - type: Sprite
     sprite: Objects/Tanks/Jetpacks/blue.rsi
@@ -46,12 +46,12 @@
 - type: entity
   parent: CMUJumpPack
   id: CMUJumpPackFilled
-  suffix: Filled
+  suffix: 已充气
   components:
   - type: GasTank
     releasePressure: 21.3
     air:
-      # Five minutes of hovering, or a boost every cooldown for five minutes.
+      # 可供悬停五分钟，或在五分钟内每次冷却结束即推进冲刺。
       volume: 5
       moles:
       - 2.051379050 # oxygen

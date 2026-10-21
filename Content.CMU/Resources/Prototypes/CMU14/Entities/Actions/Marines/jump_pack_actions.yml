@@ -1,8 +1,8 @@
 # Placeholder icons until the jump pack sprites are added.
 - type: entity
   id: CMUActionJumpPackBoost
-  name: Jump Pack Boost
-  description: Fire the thrusters and dash six tiles along the set heading.
+  name: 推进冲刺
+  description: 点燃推进器，沿设定朝向向前冲刺六格距离。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.JumpPack.CMUJumpPackBoostActionEvent
@@ -16,8 +16,8 @@
 
 - type: entity
   id: CMUActionJumpPackDirection
-  name: Jump Pack Heading
-  description: Rotate the boost heading clockwise. Alt-click the pack to switch between four and eight headings.
+  name: 调整推进朝向
+  description: 顺时针旋转推进朝向。Alt+点击背包可在四向与八向模式之间切换。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.JumpPack.CMUJumpPackDirectionActionEvent
@@ -32,8 +32,8 @@
 
 - type: entity
   id: CMUActionJumpPackJump
-  name: Jump Pack Leap
-  description: Blast upward to the level above. Shares a cooldown with the boost.
+  name: 跳跃升空
+  description: 向上喷射跃升至上层区域。与推进冲刺共享冷却时间。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.JumpPack.CMUJumpPackJumpActionEvent
@@ -47,8 +47,8 @@
 
 - type: entity
   id: CMUActionJumpPackHover
-  name: Jump Pack Hover
-  description: Rise one level and hover for up to twenty seconds. Use again to land early.
+  name: 背包悬停
+  description: 上升一层高度并最多悬停二十秒。再次使用可提前降落。
   components:
   - type: InstantAction
     event: !type:Content.Shared.CMU14.JumpPack.CMUJumpPackHoverActionEvent
