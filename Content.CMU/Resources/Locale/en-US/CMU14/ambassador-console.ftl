@@ -68,3 +68,54 @@ ambassador-third-party-cooldown = 可用支援请求次数：{ $left }。指挥�
        *[other] 分钟
     }后受理下一次请求。
 ambassador-third-party-no-calls-left = 指挥部已批准本次行动的全部支援，不再接受新的支援请求。
+
+# Diplomatic console screen
+cmu-ambassador-heading = 外交控制台
+cmu-ambassador-subheading = { $faction }大使馆 // 外交通信
+cmu-ambassador-treasury = 资金余额
+cmu-ambassador-treasury-hint = 投入现金可增加大使馆预算。下方措施启用后每分钟都会扣费，预算耗尽时自动停止。
+cmu-ambassador-withdraw = 提取 ${ $amount }
+cmu-ambassador-trade = 贸易措施
+cmu-ambassador-embargo = 贸易禁运
+cmu-ambassador-embargo-desc = 使殖民地的提交点收益降低 20%。
+cmu-ambassador-trade-pact = 贸易协定
+cmu-ambassador-trade-pact-desc = 使殖民地的提交点收益提高 20%。
+cmu-ambassador-signals = 信号与通信
+cmu-ambassador-comms-jam = 通信干扰
+cmu-ambassador-comms-jam-desc = 阻断行星表面的所有无线电传输。
+cmu-ambassador-signal-boost = 信号增强
+cmu-ambassador-signal-boost-desc = 让正在赶来的第三方支援更快抵达。
+cmu-ambassador-signal-jam = 信号干扰
+cmu-ambassador-signal-jam-desc = 延缓正在赶来的第三方支援。
+cmu-ambassador-active = 已启用
+cmu-ambassador-inactive = 未启用
+cmu-ambassador-start = 启用
+cmu-ambassador-stop = 解除
+cmu-ambassador-cost-per-minute = 启用期间每分钟花费 { $cost }
+cmu-ambassador-broadcast = 殖民地广播
+cmu-ambassador-send = 发送
+cmu-ambassador-broadcast-cost = 每条消息花费 { $cost }
+cmu-ambassador-economy = 殖民地经济
+cmu-ambassador-radar = 穿梭机雷达
+cmu-ambassador-scan = 扫描（{ $cost }）
+cmu-ambassador-radar-none = 暂无扫描数据。执行扫描可探测正在接近的穿梭机。
+cmu-ambassador-radar-contact = 正在接近
+cmu-ambassador-third-party = 第三方支援
+cmu-ambassador-open-third-party = 打开支援菜单
+cmu-ambassador-third-party-hint = 使用大使馆预算，雇请佣兵、特种部队或其他外部支援。
+cmu-ambassador-footer = 外交行动会向整个殖民地通报。
+
+# Third-party support screen
+cmu-third-party-heading = 第三方支援
+cmu-third-party-subheading = 可用预算 { $budget }
+cmu-third-party-calls = 剩余 { $left } { $left ->
+        [one] 次支援请求
+       *[other] 次支援请求
+    }
+cmu-third-party-request = 请求支援
+cmu-third-party-confirm = 确认请求
+cmu-third-party-pick = 选择支援方
+cmu-third-party-cost = 费用 { $cost }
+cmu-third-party-called = 已呼叫
+cmu-third-party-short = 资金不足
+cmu-third-party-footer = 每个支援方只能呼叫一次，抵达需要一定时间。

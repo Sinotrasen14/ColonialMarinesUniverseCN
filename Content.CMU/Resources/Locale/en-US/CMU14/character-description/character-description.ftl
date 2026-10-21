@@ -45,14 +45,27 @@ build-type-heavyset = 魁梧
 
 faction-roster-console-window-title = 人员名册
 faction-roster-console-refresh-button = 刷新
-faction-roster-console-count = { $count } { $count ->
-    [one] 条目
-   *[other] 条目
-}
+faction-roster-console-count = 已登记 { $count } { $count ->
+        [one] 份档案
+       *[other] 份档案
+    }
 faction-roster-console-colonist-job = 殖民者
 faction-roster-console-count-tooltip = 当前在册的人员数量。
 faction-roster-console-refresh-tooltip = 重新查询名册以获取新加入或已离开的人员。
 faction-roster-console-entry-tooltip = 点击打开 { $name } 的完整档案。
+faction-roster-console-heading = 人员名册
+faction-roster-console-count-filtered = 显示 { $shown } / { $count } 份档案
+faction-roster-console-search = 按姓名或职位搜索……
+faction-roster-console-empty = 暂无人员档案
+faction-roster-console-no-match = 未找到匹配人员
+faction-roster-console-open = 打开 >
+faction-roster-console-footer = 选择一条记录，查看完整档案。
+faction-roster-dossier-subheading = { $job } // 人员档案
+faction-roster-dossier-short-examine = 简要信息
+faction-roster-dossier-statistics = 身体数据
+faction-roster-dossier-not-recorded = 未记录
+faction-roster-dossier-none = 暂无记录。
+faction-roster-dossier-footer = 档案由本人填写，信息可能不完整。
 
 cmu-edit-description-verb = 编辑描述
 cmu-edit-description-title = 编辑描述

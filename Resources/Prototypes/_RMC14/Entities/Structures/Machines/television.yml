@@ -35,7 +35,9 @@
   - type: UserInterface
     interfaces:
       enum.RMCCameraUiKey.Key:
-        type: RMCCameraBui
+        # cmu edit start: in-world television screen
+        type: CMUTelevisionBui
+        # cmu edit end
   - type: RMCCameraComputer
     title: rmc-television-title
   - type: CameraNetworkReceiver
@@ -91,7 +93,9 @@
   - type: UserInterface
     interfaces:
       enum.RMCCameraUiKey.Key:
-        type: RMCCameraBui
+        # cmu edit start: in-world television screen
+        type: CMUTelevisionBui
+        # cmu edit end
   - type: RMCCameraComputer
     title: rmc-television-title
   - type: CameraNetworkReceiver

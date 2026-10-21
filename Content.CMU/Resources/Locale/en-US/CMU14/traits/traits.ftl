@@ -164,7 +164,7 @@ cmu-bad-leg-give-out-others = {CAPITALIZE(THE($user))} 当他们的腿软掉时�
 cmu-mouth-item-falls-out = {CAPITALIZE(THE($item))} 从{THE($user)}的嘴里掉出来。
 
 cmu-trait-motion-sick-name = 晕动
-cmu-trait-motion-sick-desc = 乘坐飞行型空降船，或在移动的车辆内部或顶部，会让你感到头晕和恶心，有时还会呕吐。呕吐只会让情况更糟。飞行员、车辆乘员或车辆指挥官不可使用。
+cmu-trait-motion-sick-desc = 乘坐飞行中的登陆艇、待在行驶载具的内部或顶部，或在零重力中漂浮超过半分钟，都会让你头晕恶心，有时还会呕吐。呕吐只会让症状更严重。飞行人员、车辆乘员和车辆指挥官不可选用。
 
 cmu-motion-sick-queasy-1 = 你的胃随着动作翻腾。
 cmu-motion-sick-queasy-2 = 你咽了咽口水，肠子一阵翻腾。
@@ -172,6 +172,10 @@ cmu-motion-sick-queasy-3 = 摇晃让你头晕。
 cmu-motion-sick-queasy-4 = 你的额头上冒出冷汗。
 cmu-motion-sick-queasy-5 = 你把目光固定在一个点上，但世界仍在摇摆。
 cmu-motion-sick-queasy-6 = 你的嘴里充满了唾液，你感到很难受。
+cmu-motion-sick-zero-g-1 = 分不清上下的感觉，让你的胃也跟着失去了方向。
+cmu-motion-sick-zero-g-2 = 你的五脏六腑仿佛也在随你一起漂浮。
+cmu-motion-sick-zero-g-3 = 缓缓翻滚让你一阵头晕。
+cmu-motion-sick-zero-g-4 = 你现在只想脚踏实地，什么代价都愿意付。
 cmu-motion-sick-worse-1 = 你再也憋不住了！
 cmu-motion-sick-worse-2 = 你的胃让你失望了！
 cmu-motion-sick-worse-3 = 就是这样，你会生病的！
