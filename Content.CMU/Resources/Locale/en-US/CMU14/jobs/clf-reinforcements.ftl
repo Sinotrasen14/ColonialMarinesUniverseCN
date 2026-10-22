@@ -1,4 +1,9 @@
 cmu-clf-name-engineer = CLF 工程师
+ent-CMUCLFJeepCrew = CLF 吉普车组员
+    .desc = 一名被派去操作重机枪吉普车的平民 CLF 战士。
+cmu-clf-jeep-crew-name = CLF 吉普车组员
+cmu-clf-jeep-party-name = CLF 重机枪吉普车组
+cmu-clf-jeep-crew-description = 你和另一名平民 CLF 战士被派去携带一辆重机枪吉普车支援当地小组。驾驶空投机前往殖民地，卸下吉普车，并向小组长报到以获取命令。
 cmu-clf-name-specialist = CLF 专家
 cmu-clf-description = 殖民解放阵线的一名训练有素的战士，被派去以专业技能援助起义。
 cmu-clf-description-reinforcement = 你被从邻近的叛乱小组派来援助此地区的起义。向当地小组长报到以获取命令。

@@ -4,6 +4,7 @@ department-console-salary-announcement-title = 殖民地工资单
 department-console-title = 部门控制台
 department-console-management-tab = 管理
 department-console-orders-tab = 订单
+cmu-department-console-supplies = 野战补给（在此发放）
 department-console-department = 部门
 department-console-department-budget = 部门预算：${ $amount }
 department-console-withdraw-label = 提取：$
