@@ -5,6 +5,10 @@
   name: M81防暴榴弹发射器
   description: M81防暴榴弹发射器是一种单发、肩射、折开式榴弹发射器，专为警用设计。它专为低致命弹药而制造，但同样可以发射任何标准30毫米榴弹。
   components:
+  # The parent needs police training to fire; anyone can use this one. A required level of 0 is never checked.
+  - type: RequiresSkill
+    skills:
+      RMCSkillPolice: 0
   - type: BallisticAmmoProvider
     whitelist:
       tags:

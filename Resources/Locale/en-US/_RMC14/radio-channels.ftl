@@ -13,7 +13,7 @@ chat-radio-marine-alpha = 阿尔法
 chat-radio-marine-bravo = 布拉沃
 chat-radio-marine-charlie = 查理
 chat-radio-marine-delta = GOVFOR
-chat-radio-marine-echo = CLF
+chat-radio-marine-echo = INSFOR
 chat-radio-marine-foxtrot = 福克斯
 
 chat-radio-forecon = FORECON

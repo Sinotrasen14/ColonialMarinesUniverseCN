@@ -33,11 +33,11 @@ au14-department-threat-description = 选择此职业以威胁身份游玩
 
 au14-cmbinvestigate-rules = 你是执法官员。调查该区域。除非遭到攻击，否则保持中立。
 
-au14-lacncommandosniper-rules = 你被LACN借调至联合美洲盟军司令部，在此星球执行一项特殊任务，任务详情尚未向你披露。你已受命调查该区域并向当地GOVFOR指挥部报告。你对GOVFOR友好，对平民中立。
+au14-lacncommandosniper-rules = 你被LACN借调至联合美洲盟军司令部，在此星球执行一项特殊任务，任务详情尚未向你披露。你已受命调查该区域并向当地UA指挥部报告。你对UA友好，对平民中立。
 
 au14-uacglostthreat-rules = 你是政府军第三方！你对GOVFOR部队友好，对平民中立。此威胁角色要求比其他角色稍高的角色扮演水平！请牢记这一点。
 
-au14-rmcert-rules = 你已被派遣为皇家海军陆战队突击队快速反应部队成员。任务详情尚未向你披露，但你的主要目标是在作战区域内协助GOVFOR部队。你对GOVFOR指挥部友好，对平民中立。
+au14-rmcert-rules = 你已被派遣为皇家海军陆战队突击队快速反应部队成员。任务详情尚未向你披露，但你的主要目标是在作战区域内协助TWE及其盟军。你对TWE指挥部及其盟军友好，对平民中立。
 
 au14-uppgrom-rules = 你是UPP精英GROM特种部队的成员！你不记得回合中发生了什么或正在发生什么。
 
@@ -139,9 +139,9 @@ au14-forecon-detachment-greeting = 你是USCMC精英FORECON特种部队的成员
 
     你是GOVFOR的一部分！
 
-au14-forecon-detachment-rules = 你被派遣至GOVFOR。向指挥部报到以获取进一步命令。
+au14-forecon-detachment-rules = 你被派遣去支援该区域的UA部队。向他们的指挥部报到以获取进一步命令。
 
-rmc-job-description-forecon-detachment = 你是USCMC FORECON的成员。你被派遣至GOVFOR。向指挥部报到以获取进一步命令。
+rmc-job-description-forecon-detachment = 你是USCMC FORECON的成员。你被派遣去支援该区域的UA部队。向他们的指挥部报到以获取进一步命令。
 
 au14-job-name-forecon-spotter = 观察员
 au14-job-prefix-forecon-spotter = SPOT
@@ -155,8 +155,8 @@ au-14-job-prefix-uacg-rifleman = CG RFN
 au-14-job-name-uacg-ammobearer = 失散弹药手
 au-14-job-prefix-uacg-ammobearer = CG AB
 
-au14-uacg-rules = 你是政府军第三方！你对GOVFOR部队友好，对平民中立。此第三方要求比其他角色稍高的角色扮演水平！请牢记这一点。
-au14-uacg-description = 你的小队在从前进基地进行短程巡逻时与排走散，极端天气使你们偏离了路线。与剩余人员一起重新联系政府军。
+au14-uacg-rules = 你是UA第三方！你对UA部队友好，对平民中立。此第三方角色要求比其他角色稍高的角色扮演水平！请牢记这一点。
+au14-uacg-description = 你的小队在从前进基地进行短程巡逻时与排走散，恶劣天气使你们偏离了路线。与剩余人员一起重新与该区域的UA部队建立联系。
 
 au14-uacg-greeting = 你是UACG巡逻队的成员！
 
@@ -225,7 +225,7 @@ au14-job-description-forecon-killteam-greeting = 你是USCMC精英FORECON特种�
 
     你不是GOVFOR的一部分，但不要对他们过于激进。不惜一切代价完成任务。
 
-au14-forecon-killteam-rules = 你不知道回合中正在发生什么。你的主要目标是暗杀目标。你不是GOVFOR的一部分，但不要对他们过于激进。
+au14-forecon-killteam-rules = 你不知道本局中正在发生什么。你的首要目标是暗杀目标。你并不隶属于该区域的UA部队，但不要对他们表现得过于激进。
 
 au14-job-description-forecon-firstrecon = 你是USCMC FORECON第一营的成员。你来此调查大规模杀伤性武器。
 
@@ -293,7 +293,7 @@ au14-ipie-greeting = 你是维兰德-汤谷的个人保护官。用你的生命�
 
     维兰德-汤谷——建设更美好的世界。
 
-au14-lacncommando-description = 你被LACN借调至联合美洲盟军司令部，在此星球执行一项特殊任务，任务详情尚未向你披露。你已受命调查该区域并向当地GOVFOR指挥部报告。
+au14-lacncommando-description = 你被LACN借调至联合美洲盟军司令部，在此星球执行一项特殊任务，任务详情尚未向你披露。你已受命调查该区域并向当地UA指挥部报告。
 
 au14-job-name-vai-mercenary = 契约特工
 au14-vai-mercenary-description = 你是先锋之箭公司的雇佣兵。遵循你的合同。详情请查阅你的入门手册。
@@ -432,3 +432,9 @@ au14-job-greeting-IASFsurv = 你被困在这个殖民地，运输飞船燃料耗
 
 au14-job-rules-IASFsurv = 你是TWE IASF的成员，你对平民和其他国家中立，对CLF敌对。
     在目睹威胁数天后，你完全知晓其存在。
+cmu-job-name-iasf-mortar-gunner = 迫击炮手
+cmu-job-name-iasf-mortar-loader = 迫击炮装填手
+cmu-ghost-name-iasf-mortar-gunner = IASF 迫击炮手
+cmu-ghost-name-iasf-mortar-loader = IASF 迫击炮装填手
+cmu-job-description-iasf-mortar = 你是来自第24伞兵团的IASF迫击炮小队成员，奉命前往战区为地面部队提供间接火力支援。
+cmu-job-greeting-iasf-mortar = 你的迫击炮小队已被派遣支援本次作战。寻找安全的开火阵地，架设好L53A1迫击炮，并接收地面部队指派的火力打击任务。

@@ -4,6 +4,9 @@
   id: RMCWeaponSMGM63B2
   description: M39冲锋枪的改进版本，经过重新设计以优化重量、操控性和精准度。仅配发给精英部队。
   components:
+  # cmu edit start: 10x20mm caseless
+  - type: CMUCaselessGun
+  # cmu edit end
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/SMGs/m63b2.rsi
     layers:

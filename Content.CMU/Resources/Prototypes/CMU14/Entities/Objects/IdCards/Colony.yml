@@ -34,7 +34,7 @@
 - type: entity
   parent: CMIDCardBase
   id: AU14IDCardCLFCellLeader
-  name: CLF小组组长ID卡
+  name: INSFOR小组组长ID卡
   components:
   - type: PresetIdCard
     job: AU14JobCLFCellLeader
@@ -51,7 +51,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardCLFCivilian
-  name: CLF游击队ID卡
+  name: INSFOR游击队ID卡
   components:
   - type: Access
     groups:
@@ -66,7 +66,7 @@
 - type: entity
   parent: AU14IDCardBaseCivilianNoIFF
   id: AU14IDCardCLFPhysician
-  name: CLF医师ID卡
+  name: INSFOR医师ID卡
   components:
   - type: Access
     groups:
@@ -82,7 +82,7 @@
 - type: entity
   parent: AU14IDCardCLFPhysician
   id: AU14IDCardCLFGeneralPractitioner
-  name: CLF全科医生ID卡
+  name: INSFOR全科医生ID卡
   components:
   - type: IdCard
     jobTitle: au14-job-name-civiliangeneralpractitioner
@@ -90,7 +90,7 @@
 - type: entity
   parent: AU14IDCardCLFPhysician
   id: AU14IDCardCLFPharmacist
-  name: CLF药剂师ID卡
+  name: INSFOR药剂师ID卡
   components:
   - type: IdCard
     jobTitle: au14-job-name-civilianpharmacist
@@ -98,7 +98,7 @@
 - type: entity
   parent: AU14IDCardCLFPhysician
   id: AU14IDCardCLFSurgeon
-  name: CLF外科医生ID卡
+  name: INSFOR外科医生ID卡
   components:
   - type: IdCard
     jobTitle: au14-job-name-civiliansurgeon
