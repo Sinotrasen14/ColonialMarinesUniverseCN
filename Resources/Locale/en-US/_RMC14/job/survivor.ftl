@@ -14,13 +14,17 @@ cm-job-name-survivor-corporate = 企业殖民者
 cm-job-name-survivor-scientist = 科学家殖民者
 
 rmc-job-name-survivor-co = 幸存者指挥官
-rmc-job-description-survivor-co = 你是UNMC的一名少校。
+# cmu edit start: lore names
+rmc-job-description-survivor-co = 你是USCM的一名少校。
+# cmu edit end
 
 rmc-job-name-survivor-synth = 幸存者合成体
 rmc-job-description-survivor-synth = 你是一处企业设施遇袭事件中幸存的合成体。
 
 rmc-job-name-survivor-military = 军人幸存者
+# cmu edit start: lore names
 rmc-job-description-survivor-military = 你是殖民地异形侵扰事件的幸存者，隶属于某个军事组织。
+# cmu edit end
 
 # Playtime trackers
 rmc-playtime-tracker-job-name-survivor = 平民幸存者
@@ -50,7 +54,9 @@ cm-job-prefix-survivor-cmb-marshal = CMB警长
 
 cm-job-name-survivor-flight-control-operator = 飞行管制员
 
-cm-job-name-survivor-unmc = UNMC残部
+# cmu edit start: lore names
+cm-job-name-survivor-unmc = USCM残部
+# cmu edit end
 
 # misc survs
 
@@ -60,13 +66,15 @@ CMSurvivorPrisoner = 囚犯
 cm-job-name-survivor-gang-leader = 帮派头目
 CMSurvivorGangLeader = 帮派头目
 
+# cmu edit start: lore names
 rmc-job-greeting-survivor = 你是殖民地遇袭事件的幸存者。你曾在殖民地工作或生活，并设法躲过了异形的袭击……直到现在。
 
   你完全了解异形的威胁，并可以按自己认为合适的方式运用这些知识。
 
   你并不了解陆战队员及其意图。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
 # Misc variants
 cm-job-name-survivor-miner = 矿工殖民者
@@ -75,16 +83,20 @@ cm-job-name-surivor-priest = 牧师
 
 # FORECON survs
 
-rmc-job-greeting-forecon = 你是来自UNS哈尼约特号的UNMC武装侦察（FORECON）陆战队员，你的小队在调查求救信号时全军覆没，你被困在了这颗星球上。驾驶员和你所在部队的大多数人都已阵亡，你和队友们一直边跑边打以求生存……但物资匮乏、食物即将耗尽，也许你唯一的生存之道就是向西前往坠毁的运输机，搜寻任何有用的东西。
+# cmu edit start: lore names
+rmc-job-greeting-forecon = 你是来自UNS哈尼约特号的USCM武装侦察（FORECON）陆战队员，你的小队在调查求救信号时全军覆没，你被困在了这颗星球上。驾驶员和你所在部队的大多数人都已阵亡，你和队友们一直边跑边打以求生存……但物资匮乏、食物即将耗尽，也许你唯一的生存之道就是向西前往坠毁的运输机，搜寻任何有用的东西。
 
   你完全了解异形的威胁，并可以按自己认为合适的方式运用这些知识。
 
   你并不了解陆战队员及其意图。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
 rmc-job-name-forecon = FORECON幸存者
-rmc-job-description-forecon = 你是一名被困的UNMC武装侦察陆战队员。你的飞船UNS哈尼约特号坠毁了，你被困在这颗星球上。不惜一切代价活下去！
+# cmu edit start: lore names
+rmc-job-description-forecon = 你是一名被困的USCM武装侦察陆战队员。你的飞船UNS哈尼约特号坠毁了，你被困在这颗星球上。不惜一切代价活下去！
+# cmu edit end
 
 rmc-job-name-forecon-sniper = 狙击手
 rmc-job-name-forecon-marksman = 神射手
@@ -101,6 +113,7 @@ rmc-job-name-survivor-lv624-security-guard = 威尤安保警卫
 rmc-job-name-survivor-lv624-medical-technician = 紧急医疗技术员
 rmc-job-name-survivor-lv624-engineer = 工程师
 
+# cmu edit start: lore names
 rmc-job-greeting-corporate-dome-cl = 你是拉撒路登陆点最后一位活着的高管！
 
   你了解异形的威胁。
@@ -109,8 +122,10 @@ rmc-job-greeting-corporate-dome-cl = 你是拉撒路登陆点最后一位活着�
 
   你是维兰德-汤谷派驻LV-624的企业联络员。有人向你透露，从殖民地东北方的异形神殿中找到了一些模样非常奇特的卵。作为公司聘请的精明高管，当第一只'寄生体'在研究穹顶的培养槽中诞生时，你决定为最坏的情况做好准备，布置好你的办公室。结果你是对的，那些说你疯了、把这些东西称作新型'合成体'的人如今都已经死了，正因为你的多疑，你和你的企业安保小队成了仅有的幸存者。异形的攻势无情猛烈，一名警官射中了一个燃料罐，导致穹顶的一部分被摧毁，大量防御工事也被熔化。你必须活下去，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-corporate-dome-goon = 你是一名企业安保警官！
 
   你了解异形的威胁。
@@ -119,8 +134,10 @@ rmc-job-greeting-corporate-dome-goon = 你是一名企业安保警官！
 
   你是维兰德-汤谷派驻LV-624的企业安保警官。突然有一天，企业联络员把你叫到一边，让你尽快从法警办公室把补给带到他们的办公室。你开始加固企业穹顶，高管告诉你，某种巨大的灾难将会席卷整个殖民地，唯独你们能幸免。结果联络员是对的，这些所谓的'异形'突破了研究穹顶的收容，开始摧毁整个殖民地。当它们冲向穹顶试图杀死你们所有人时，即使损失了一名警官和大量防御工事，你们也勉强挡住了它们。联络员说他们很快就会找到联系维兰德-汤谷的办法，让你们坚守到救援到来。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-corporate-dome-goon-lead = 你是一名企业安保队长！
 
   你了解异形的威胁。
@@ -129,8 +146,10 @@ rmc-job-greeting-corporate-dome-goon-lead = 你是一名企业安保队长！
 
   你是维兰德-汤谷派驻LV-624的企业安保队长。突然有一天，企业联络员把你叫到一边，让你尽快组织在场的安保力量。你开始加固企业穹顶，高管告诉你，某种巨大的灾难将会席卷整个殖民地，唯独你们能幸免。结果联络员是对的，这些所谓的'异形'突破了研究穹顶的收容，开始摧毁整个殖民地。当它们冲向穹顶试图杀死你们所有人时，即使损失了一名警官和大量防御工事，你们也勉强挡住了它们。联络员说他们很快就会找到联系维兰德-汤谷的办法，让你们坚守到救援到来。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-corporate-dome-goon-medic = 你是一名企业安保医疗兵！
 
   你了解异形的威胁。
@@ -139,8 +158,10 @@ rmc-job-greeting-corporate-dome-goon-medic = 你是一名企业安保医疗兵�
 
   你是维兰德-汤谷派驻LV-624的企业安保医疗兵。突然有一天，企业联络员把你叫到一边，让你尽快从医疗湾把补给带到他们的办公室。你开始加固企业穹顶，高管告诉你，某种巨大的灾难将会席卷整个殖民地，唯独你们能幸免。结果联络员是对的，这些所谓的'异形'突破了研究穹顶的收容，开始摧毁整个殖民地。当它们冲向穹顶试图杀死你们所有人时，即使损失了一名警官和大量防御工事，你们也勉强挡住了它们。联络员说他们很快就会找到联系维兰德-汤谷的办法，让你们坚守到救援到来。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-corporate-dome-goon-engi = 你是一名企业安保技术员！
 
   你了解异形的威胁。
@@ -149,7 +170,8 @@ rmc-job-greeting-corporate-dome-goon-engi = 你是一名企业安保技术员！
 
   你是维兰德-汤谷派驻LV-624的企业安保技术员。突然有一天，企业联络员把你叫到一边，让你尽快从工程部把补给带到他们的办公室。你开始加固企业穹顶，高管告诉你，某种巨大的灾难将会席卷整个殖民地，唯独你们能幸免。结果联络员是对的，这些所谓的'异形'突破了研究穹顶的收容，开始摧毁整个殖民地。当它们冲向穹顶试图杀死你们所有人时，即使损失了一名警官和大量防御工事，你们也勉强挡住了它们。联络员说他们很快就会找到联系维兰德-汤谷的办法，让你们坚守到救援到来。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
 # New Varadero Survs
 
@@ -202,18 +224,22 @@ rmc-job-name-survivor-heavy-vehicle-operator = 重型载具操作员
 
 # Paramarine survs
 
-rmc-job-greeting-para = 你是RCM第24伞降陆战团的一员！
+# cmu edit start: lore names
+rmc-job-greeting-para = 你是RMC第24伞降陆战团的一员！
 
-  索特前哨站是你撤离前的最后一个驻地。随着维兰德-汤谷收购海布里萨，TSE开始将其部队撤离这颗星球。你的团正在解除战备，准备在过渡期间移交控制权。然后疫情爆发了。过去几周里，你们勉强维持着前哨站，击退了一波又一波的攻击，同时庇护着你们所能救下的少数幸存者。现在，只剩下你的小队了。前哨站正在崩溃，军械库已经空了，机库里的运输机仍然没有燃料。一周多以前已经发出了求救信号。你现在能做的只有坚守阵地——并祈祷有人回应。
+  索特前哨站是你撤离前的最后一个驻地。随着维兰德-汤谷收购海布里萨，TWE开始将其部队撤离这颗星球。你的团正在解除战备，准备在过渡期间移交控制权。然后疫情爆发了。过去几周里，你们勉强维持着前哨站，击退了一波又一波的攻击，同时庇护着你们所能救下的少数幸存者。现在，只剩下你的小队了。前哨站正在崩溃，军械库已经空了，机库里的运输机仍然没有燃料。一周多以前已经发出了求救信号。你现在能做的只有坚守阵地——并祈祷有人回应。
 
   你完全了解异形的威胁，并可以按自己认为合适的方式运用这些知识。
 
   你并不了解陆战队员及其意图。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
 rmc-job-name-para = 伞降陆战队幸存者
-rmc-job-description-para = 你是一名被困的TSE RCM伞降陆战队员。你的运输机没有燃料了，你被困在这颗星球上。不惜一切代价活下去！
+# cmu edit start: lore names
+rmc-job-description-para = 你是一名被困的TWE RMC伞降陆战队员。你的运输机没有燃料了，你被困在这颗星球上。不惜一切代价活下去！
+# cmu edit end
 
 rmc-job-name-iasf = 步枪兵
 rmc-job-name-para-pilot = 舰队航空兵飞行员
@@ -291,8 +317,11 @@ cm-job-name-survivor-riot-officer = CMB防暴警官
 CMSurvivorFiorinaRiotOfficer = CMB防暴警官
 cm-job-prefix-survivor-riot-officer = CMB RCO
 
-CMSurvivorFiorinaPrisonGuard = 维-汤 企业安保
+# cmu edit start: lore names
+CMSurvivorFiorinaPrisonGuard = 维兰德-汤谷企业安保
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-riot-in-progress-CMB-RCTL = 你是一名CMB防暴小队队长！
 
   你了解异形的威胁。
@@ -301,8 +330,10 @@ rmc-job-greeting-riot-in-progress-CMB-RCTL = 你是一名CMB防暴小队队长�
 
   你是一名CMB防暴小队队长，在殖民地法警局的防暴部队中带领一支队伍。你的调度员收到了来自臭名昭著的菲奥莉娜轨道监狱的求救信号。你以为这不过又是一起典型的案例：监狱人手不足的安保力量处理不了暴乱，越来越多的人员被调往银河系的其他地方。这已经不是CMB警官第一次被叫来协助了，但不幸的是，这一次也不是你预想中的'小规模暴乱'。开始时你们只装备了豆袋弹，被投放后在着陆区也没有人迎接，你和队员们前往军械库找军需官谈话，却一路上只看到囚犯和保安的尸体散落各处。由于担心囚犯持有武器，你的队伍正在军械库里换装致命弹药，这时某种巨大的异形从阴影中跳出，把正在一旁祈祷的杰瑞抓走了。那东西拖着他跑得太快，根本追不上，他的惨叫声在走廊深处渐渐消失，可怜的家伙。现在，你需要决定是寻找更多线索弄清这里到底发生了什么，猎杀外面的东西，还是守住一处阵地，祈祷在为时已晚之前有其他人回应求救信号……
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-riot-in-progress-CMB-RCO = 你是一名CMB防暴警官！
 
   你了解异形的威胁。
@@ -311,7 +342,8 @@ rmc-job-greeting-riot-in-progress-CMB-RCO = 你是一名CMB防暴警官！
 
   你是一名CMB防暴警官，殖民地法警局防暴部队的队员。你的队长向你简要介绍了来自臭名昭著的菲奥莉娜轨道监狱的求救信号，大概又是一起迅速恶化的小规模暴乱。那座监狱人手不足、一团糟，所以他们发出求救信号、又一次叫你们去替他们干活，你并不太意外。不幸的是，这一次也不是你预想中的'小规模暴乱'。开始时你们只装备了豆袋弹，被投放后在着陆区也没有人迎接，你和队员们前往军械库找军需官谈话，却一路上只看到囚犯和保安的尸体散落各处。由于担心囚犯持有武器，你的队伍正在军械库里换装致命弹药，这时某种巨大的异形从阴影中跳出，把正在一旁祈祷的杰瑞抓走了。那东西拖着他跑得太快，根本追不上，他的惨叫声在走廊深处渐渐消失，可怜的家伙。现在，你需要决定是寻找更多线索弄清这里到底发生了什么，猎杀外面的东西，还是守住一处阵地，祈祷在为时已晚之前有其他人回应求救信号……
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
 # Kutjevo Refinery Survs
 
@@ -343,11 +375,14 @@ rmc-job-name-survivor-solaris-scientist = 索拉里斯科学家
 
 rmc-job-name-survivor-solaris-trucker = 索拉里斯重型载具操作员
 
-rmc-job-name-survivor-unmc-recruiter = UNMC征兵官
+# cmu edit start: lore names
+rmc-job-name-survivor-unmc-recruiter = USCM征兵官
+# cmu edit end
 
 rmc-job-name-survivor-solaris-corporate-supervisor = 殖民地主管
 rmc-job-prefix-survivor-solaris-corporate-supervisor = 主管
 
+# cmu edit start: lore names
 rmc-job-greeting-solaris-pmc = 你是一次迫降的幸存者！
 
   你并不了解异形的威胁。
@@ -356,8 +391,10 @@ rmc-job-greeting-solaris-pmc = 你是一次迫降的幸存者！
 
   你是维兰德-汤谷的一名PMC。你的飞船正前往索拉里斯山脊护送一名助理经理。途中，你的飞船收到了殖民地发出的遇袭求救信号。驾驶员担心这可能是殖民地解放阵线的袭击，于是全速驶向殖民地。然而，在进入大气层时引擎失灵，你在G力作用下失去了意识。你醒来时身负重伤……发现飞船已经坠毁在殖民地上。你的队友们死在你身旁，但还有几个人不见了。也许他们活了下来，去了别处？你需要查明殖民地发生了什么，看看能否找到你的队友，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-solaris-pmc-medic = 你是一次迫降的幸存者！
 
   你并不了解异形的威胁。
@@ -366,8 +403,10 @@ rmc-job-greeting-solaris-pmc-medic = 你是一次迫降的幸存者！
 
   你是维兰德-汤谷的一名PMC医疗兵。你的飞船正前往索拉里斯山脊护送一名助理经理。途中，你的飞船收到了殖民地发出的遇袭求救信号。驾驶员担心这可能是殖民地解放阵线的袭击，于是全速驶向殖民地。然而，在进入大气层时引擎失灵，你在G力作用下失去了意识。你醒来时身负重伤……发现飞船已经坠毁在殖民地上。你的队友们死在你身旁，但还有几个人不见了。也许他们活了下来，去了别处？你需要查明殖民地发生了什么，看看能否找到你的队友，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-solaris-pmc-engineer = 你是一次迫降的幸存者！
 
   你并不了解异形的威胁。
@@ -376,8 +415,10 @@ rmc-job-greeting-solaris-pmc-engineer = 你是一次迫降的幸存者！
 
   你是维兰德-汤谷的一名PMC工程师。你的飞船正前往索拉里斯山脊护送一名助理经理。途中，你的飞船收到了殖民地发出的遇袭求救信号。驾驶员担心这可能是殖民地解放阵线的袭击，于是全速驶向殖民地。然而，在进入大气层时引擎失灵，你在G力作用下失去了意识。你醒来时身负重伤……发现飞船已经坠毁在殖民地上。你的队友们死在你身旁，但还有几个人不见了。也许他们活了下来，去了别处？你需要查明殖民地发生了什么，看看能否找到你的队友，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-solaris-pmc-leader = 你是一次迫降的幸存者！
 
   你并不了解异形的威胁。
@@ -386,8 +427,10 @@ rmc-job-greeting-solaris-pmc-leader = 你是一次迫降的幸存者！
 
   你是维兰德-汤谷的一名PMC小队长。你的飞船正前往索拉里斯山脊护送一名助理经理。途中，你的飞船收到了殖民地发出的遇袭求救信号。驾驶员担心这可能是殖民地解放阵线的袭击，于是全速驶向殖民地。然而，在进入大气层时引擎失灵，你在G力作用下失去了意识。你醒来时身负重伤……发现飞船已经坠毁在殖民地上。你的队友们死在你身旁，但还有几个人不见了。也许他们活了下来，去了别处？你需要查明殖民地发生了什么，看看能否找到你的队友，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-solaris-pmc-commander = 你是一次迫降的幸存者！
 
   你并不了解异形的威胁。
@@ -396,8 +439,10 @@ rmc-job-greeting-solaris-pmc-commander = 你是一次迫降的幸存者！
 
   你是维兰德-汤谷的一名PMC野战行动指挥官。你的飞船正前往索拉里斯山脊护送一名助理经理。途中，你的飞船收到了殖民地发出的遇袭求救信号。驾驶员担心这可能是殖民地解放阵线的袭击，于是全速驶向殖民地。然而，在进入大气层时引擎失灵，你在G力作用下失去了意识。你醒来时身负重伤……发现飞船已经坠毁在殖民地上。你的队友们死在你身旁，但还有几个人不见了。也许他们活了下来，去了别处？你需要查明殖民地发生了什么，看看能否找到你的队友，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-solaris-pmc-supervisor = 你是一次迫降的幸存者！
 
   你并不了解异形的威胁。
@@ -406,7 +451,8 @@ rmc-job-greeting-solaris-pmc-supervisor = 你是一次迫降的幸存者！
 
   你是维兰德-汤谷的一名助理经理。你正搭乘一艘PMC飞船，在护送下前往索拉里斯山脊。途中，飞船收到了殖民地发出的遇袭求救信号。驾驶员担心这可能是殖民地解放阵线的袭击，于是全速驶向殖民地。然而，在进入大气层时引擎失灵，你在G力作用下失去了意识。你醒来时身负重伤……发现飞船已经坠毁在殖民地上。护送你的PMC们死在你身旁，但还有几个人不见了。也许他们活了下来，去了别处？你必须振作起来，设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
 # Shivas survs
 
@@ -418,6 +464,7 @@ rmc-job-name-survivor-shivas-engineer = 希瓦斯工程师
 rmc-job-name-survivor-shivas-weya-commando = 维兰德-汤谷突击队员
 rmc-job-name-survivor-shivas-assman = 助理运营经理
 
+# cmu edit start: lore names
 rmc-job-greeting-shivas-assistant-manager = 你是殖民地上最后一位活着的高级管理员！
 
   你了解异形的威胁。
@@ -426,8 +473,10 @@ rmc-job-greeting-shivas-assistant-manager = 你是殖民地上最后一位活着
 
   你是维兰德-汤谷派驻'伊夫利特'的助理运营经理。这场疫情爆发简直一团糟，你和其他所有公司人员都逃进了行动部的避难室，直到听见外面传来枪声，你们关上了百叶门。你们的食物、水和武器弹药都快耗尽了。你曾经说过这些武器'毫无用处'，是在浪费公司的钱。你记得斯塔尔管理员向范围内的所有飞船发出了求救信标，希望能被公司接走，然后他跑去了太空港。从那以后你就再也没见过他。那些所谓的'异形'试图破门而入，攻击了百叶门，但没有得逞。它们很快会再次尝试。你必须活下去，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-shivas-commando = 你是殖民地上最后一名活着的安保人员！
 
   你了解异形的威胁。
@@ -436,8 +485,10 @@ rmc-job-greeting-shivas-commando = 你是殖民地上最后一名活着的安保
 
   你是维兰德-汤谷派驻'伊夫利特'的一名雇佣兵。这场疫情爆发简直一团糟，你和其他所有公司人员都逃进了行动部的避难室，直到听见外面传来枪声，你们关上了百叶门。你们的食物、水和武器弹药都快耗尽了。你被指派保护在避难室中避难的人们，而你的队友们则分散在殖民地各处。从那以后你就再也没见过他们任何一个人。那些所谓的'异形'试图破门而入，攻击了百叶门，但没有得逞。它们很快会再次尝试。你必须活下去，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-shivas-panic-room-researcher = 你是殖民地上的一名维兰德-汤谷科学家！
 
   你了解异形的威胁。
@@ -446,8 +497,10 @@ rmc-job-greeting-shivas-panic-room-researcher = 你是殖民地上的一名维�
 
   你是一名在'伊夫利特'为维兰德-汤谷工作的科学家。这场疫情爆发简直一团糟，你和其他所有公司人员都逃进了行动部的避难室，直到听见外面传来枪声，你们关上了百叶门。你们的食物、水和武器弹药都快耗尽了。你记得这种被研究主任克拉克命名为异形的物种有多种不同的亚种，你推测其中有某种'首领'，而且它们的酸液一旦接触到你或百叶门都是致命的。你从实验室逃得远远的，从那以后就再也没见过你的同事们。那些所谓的'异形'试图破门而入，攻击了百叶门，但没有得逞。它们很快会再次尝试。你必须活下去，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-shivas-panic-room-doctor = 你是殖民地上的一名医生！
 
   你了解异形的威胁。
@@ -456,8 +509,10 @@ rmc-job-greeting-shivas-panic-room-doctor = 你是殖民地上的一名医生！
 
   你是一名在'伊夫利特'为维兰德-汤谷工作的医生。这场疫情爆发简直一团糟，你和其他所有公司人员都逃进了行动部的避难室，直到听见外面传来枪声，你们关上了百叶门。你们的食物、水和武器弹药都快耗尽了。你记得异形有一种植入器，会扒在你的脸上，然后……有什么东西会穿过肋骨从你的胸口破体而出。医疗湾里有很多这样的病例。那些所谓的'异形'试图破门而入，攻击了百叶门，但没有得逞。它们很快会再次尝试。你必须活下去，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end
 
+# cmu edit start: lore names
 rmc-job-greeting-shivas-panic-room-engineer = 你是殖民地上的一名工程师！
 
   你了解异形的威胁。
@@ -466,4 +521,5 @@ rmc-job-greeting-shivas-panic-room-engineer = 你是殖民地上的一名工程�
 
   你是一名在'伊夫利特'为维兰德-汤谷工作的工程师。这场疫情爆发简直一团糟，你和其他所有公司人员都逃进了行动部的避难室，直到听见外面传来枪声，你们关上了百叶门。你们的食物、水和武器弹药都快耗尽了。你记得异形似乎能在黑暗中视物，因为停电后你看到一只异形抓走了一位正在试图修理发电机的同事。那些所谓的'异形'试图破门而入，攻击了百叶门，但没有得逞。它们很快会再次尝试。你必须活下去，并设法联系维兰德-汤谷。
 
-  你[bold][color=#51A16C][font size=16]对UNMC没有敌意！[/font][/color][/bold]
+  你[bold][color=#51A16C][font size=16]对USCM没有敌意！[/font][/color][/bold]
+# cmu edit end

@@ -20,7 +20,7 @@ rmc-vehicle-damage-examine-verb = 载具损伤
 rmc-vehicle-damage-examine-description = 检查状况和活动故障。
 rmc-vehicle-damage-examine-no-faults = [color=green]没有活动故障。[/color]
 rmc-vehicle-damage-examine-faults = [bold][color=orange]活动故障[/color][/bold]
-rmc-vehicle-damage-examine-fault = • [bold][color=orange]{$fault}[/color][/bold]：[color=lightgray]{$effect}[/color]
+rmc-vehicle-damage-examine-fault = • [bold][color=orange]{$fault}[/color][/bold]: [color=lightgray]{$effect}[/color]
 rmc-hardpoint-armor-modifiers-examine = 伤害修正：酸 {$acid}，斩击 {$slash}，子弹 {$bullet}，爆炸 {$explosive}，钝击 {$blunt}
 rmc-hardpoint-condition-pristine = 它处于崭新状态。
 rmc-hardpoint-condition-good = 它状况良好。
@@ -29,7 +29,7 @@ rmc-hardpoint-condition-bad = 它状况很差。
 rmc-hardpoint-condition-critical = 它勉强还能撑住。
 rmc-hardpoint-ui-title = 挂载点
 rmc-hardpoint-ui-empty-slot = 空
-rmc-hardpoint-ui-integrity = {$current}/{$max}（{$percent}%）
+rmc-hardpoint-ui-integrity = {$current}/{$max} ({$percent}%)
 rmc-hardpoint-ui-no-integrity = 没有完整性数据
 rmc-hardpoint-ui-remove = 移除
 rmc-hardpoint-ui-removing = 移除中……
@@ -146,8 +146,15 @@ rmc-hardpoint-removal-prying-tool = 拿着撬棍或维护千斤顶才能移除�
 
 # CMU14
 cmu-vehicle-supply-unassigned = 没有分配到这个仓库的小队。
-cmu-vehicle-supply-allowance = {$platoon} — 已发放载具：{$used}/{$limit}（最多一辆坦克和一架 VTOL）
-cmu-vehicle-supply-no-refund = 通知：车辆问题已定。指挥部不会更换或退还从此仓库调出的任何船体——无论是归还还是丢失，它都将继续计入该排在本次行动中的账目。
+cmu-vehicle-supply-allowance = { $platoon } — 已发放载具：{ $used }/{ $limit }（各类载具另有限额）
+cmu-vehicle-supply-platoon-name = { $platoon }载具补给站
+cmu-vehicle-supply-no-refund = 注意：载具一旦发放，指挥部概不更换或退还配额。无论载具归还还是损失，都将计入该排本次行动的已发放数量。
+cmu-vehicle-supply-yes-refund = 注意：载具领用后仍可归还。
+cmu-vehicle-supply-yes-refund2 = 注意：将已领取的载具停放在平台上，即可将其存回。
+cmu-vehicle-supply-yes-refund3 = 警告：载具内仍有人员时，切勿降下平台。
+cmu-vehicle-supply-platoon-name-limit-good = | 状态：正常
+cmu-vehicle-supply-platoon-name-limit-bad = | 警告：载具配额已用尽。
+cmu-vehicle-supply-platoon-name-args = 已发放载具：{ $used }/{ $limit } { $tooMuch }
 cmu-vehicle-supply-preview-title = 载具预览
 cmu-vehicle-supply-stored-vehicles = 已储存载具
 cmu-vehicle-supply-loadout = 载具装备

@@ -8,10 +8,10 @@ au14-trait-no-english-name = 遗忘英语
 au14-trait-no-english-desc = 啥？
 
 au14-trait-no-language-learning-name = 语言障碍
-au14-trait-no-language-learning-desc = 你无法学习新语言。
+au14-trait-no-language-learning-desc = 你无法在回合中学习新语言，但会额外获得 1 点语言点数，用于选择角色开局时掌握的语言。
 
 au14-trait-polyglot-name = 多语通
-au14-trait-polyglot-desc = 语言对你来说浑然天成，上次你打喷嚏时，就用一种你从未听过的方言把动词给搅乱了。
+au14-trait-polyglot-desc = 学习语言对你来说轻而易举。你会额外获得 1 点语言点数，可以多选择一门语言。
 
 au14-trait-sign-name = 手语
 au14-trait-sign-desc = 你能说和理解手语。
@@ -140,6 +140,8 @@ trait-cmu-prosthetic-right-leg-desc = 你的右腿已被替换为机械假肢。
 cmu-ui-options-movement = 移动
 cmu-ui-options-tile-movement = 格子移动
 cmu-ui-options-tile-movement-tooltip = 你从一个格子移动到另一个格子，而不是自由行走，就像你之前的先辈一样。
+cmu-ui-options-tile-movement-walk-only = 行走时使用格子移动
+cmu-ui-options-tile-movement-walk-only-tooltip = 行走时按格移动，奔跑时自由移动。上方的“格子移动”选项优先生效。
 
 cmu-trait-category-drinking = 酒精耐受
 cmu-trait-heavyweight-name = 千杯不醉
@@ -162,7 +164,7 @@ cmu-bad-leg-give-out-others = {CAPITALIZE(THE($user))} 当他们的腿软掉时�
 cmu-mouth-item-falls-out = {CAPITALIZE(THE($item))} 从{THE($user)}的嘴里掉出来。
 
 cmu-trait-motion-sick-name = 晕动
-cmu-trait-motion-sick-desc = 乘坐飞行型空降船，或在移动的车辆内部或顶部，会让你感到头晕和恶心，有时还会呕吐。呕吐只会让情况更糟。飞行员、车辆乘员或车辆指挥官不可使用。
+cmu-trait-motion-sick-desc = 乘坐飞行中的登陆艇、待在行驶载具的内部或顶部，或在零重力中漂浮超过半分钟，都会让你头晕恶心，有时还会呕吐。呕吐只会让症状更严重。飞行人员、车辆乘员和车辆指挥官不可选用。
 
 cmu-motion-sick-queasy-1 = 你的胃随着动作翻腾。
 cmu-motion-sick-queasy-2 = 你咽了咽口水，肠子一阵翻腾。
@@ -170,7 +172,14 @@ cmu-motion-sick-queasy-3 = 摇晃让你头晕。
 cmu-motion-sick-queasy-4 = 你的额头上冒出冷汗。
 cmu-motion-sick-queasy-5 = 你把目光固定在一个点上，但世界仍在摇摆。
 cmu-motion-sick-queasy-6 = 你的嘴里充满了唾液，你感到很难受。
+cmu-motion-sick-zero-g-1 = 分不清上下的感觉，让你的胃也跟着失去了方向。
+cmu-motion-sick-zero-g-2 = 你的五脏六腑仿佛也在随你一起漂浮。
+cmu-motion-sick-zero-g-3 = 缓缓翻滚让你一阵头晕。
+cmu-motion-sick-zero-g-4 = 你现在只想脚踏实地，什么代价都愿意付。
 cmu-motion-sick-worse-1 = 你再也憋不住了！
 cmu-motion-sick-worse-2 = 你的胃让你失望了！
 cmu-motion-sick-worse-3 = 就是这样，你会生病的！
 cmu-motion-sick-worse-4 = 你的午饭又吐了出来，头比之前更晕了。
+
+cmu-trait-auto-ignore-name = 自动忽略不兼容的特质
+cmu-trait-auto-ignore-desc = 加入不允许使用某些特质的职位时，本回合会停用这些特质，而不会阻止你加入该职位。

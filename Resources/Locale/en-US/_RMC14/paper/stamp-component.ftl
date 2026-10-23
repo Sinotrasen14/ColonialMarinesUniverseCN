@@ -1,6 +1,8 @@
 stamp-component-stamped-name-cm-default = 已盖章
 
-stamp-component-stamped-name-cm-we-ya = 威亚
+# cmu edit start: lore names
+stamp-component-stamped-name-cm-we-ya = 维兰德-汤谷
+# cmu edit end
 stamp-component-stamped-name-cm-marine = 陆战队最高指挥部
 stamp-component-stamped-name-cm-cmb = 殖民地执法局
 stamp-component-stamped-name-cm-provost = 宪兵督察办公室

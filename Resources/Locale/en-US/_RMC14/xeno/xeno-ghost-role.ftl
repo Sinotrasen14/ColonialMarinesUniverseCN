@@ -1,4 +1,6 @@
+﻿# cmu edit start: lore names
 cm-xeno-name = 异形
+# cmu edit end
 cm-xeno-description = 你是一只异形，与你的虫巢协作以求生存壮大！
 cm-xeno-rules = 你是一只异形，拍、砍、砸！
 

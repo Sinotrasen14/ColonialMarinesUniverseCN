@@ -219,7 +219,7 @@ emote-name-workingjoe-youre-going-to-hurt-yourself = 你会伤到自己的。
 emote-name-workingjoe-youre-not-allowed-in-there = 你不被允许进入那里。
 emote-name-workingjoe-youre-starting-to-test-my-patience = 你开始考验我的耐心了。
 emote-name-workingjoe-synth-registered = 合成人已注册。
-emote-name-workingjoe-synth-wey-registered = 韦兰-汤谷合成人已注册。
+emote-name-workingjoe-synth-wey-registered = 维兰德-汤谷合成人已注册。
 emote-name-workingjoe-registration-complete = 你的注册即将完成。
 emote-name-workingjoe-log-and-store-recording = 记录并存储录音，仅限西格森访问。
 

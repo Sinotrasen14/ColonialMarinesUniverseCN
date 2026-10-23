@@ -8,7 +8,7 @@
   components:
   - type: AccessReader
     access:
-    - ["CMAccessSmartPrep"]
+    - [ "CMAccessSmartPrep" ]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/smart_gun_operator_gear.rsi
   - type: CMAutomatedVendor
@@ -20,7 +20,7 @@
       entries:
       - id: CMSmartGunOperatorEquipmentCase
     - name: 枪械配件
-      choices: {CMGunAttachments: 1}
+      choices: { CMGunAttachments: 1 }
       entries:
       - id: RMCAttachmentLaserSight
       - id: RMCAttachmentS5RedDotSight
@@ -86,8 +86,6 @@
         points: 5
       - id: RMCFulton20
         points: 5
-      - id: RMCPowerCellSmartgun
-        points: 15
     - name: 双筒望远镜
       entries:
       - id: RMCBinoculars
@@ -129,7 +127,7 @@
   components:
   - type: AccessReader
     access:
-    - ["CMAccessSmartPrep"]
+    - [ "CMAccessSmartPrep" ]
   - type: Sprite
     sprite: _RMC14/Structures/Machines/VendingMachines/ColMarTech/clothing.rsi
   - type: CMAutomatedVendor
@@ -142,13 +140,24 @@
       - id: CMVendorBundleRiflemanApparel
       - id: CMMRE
       #- id: CMMap # TODO: Make a map
+    - name: "可选头饰"
+      choices: { CMHelmet: 1 }
+      entries:
+      - id: CMHeadFlapCap
+      - id: CMHeadCap
+      - id: RMCBoonie
+      - id: RMCHeadDurag
+      - id: RMCHeadBandanaTan
+      - id: RMCHeadBeanieGray
+      - id: RMCHeadBandSquad
+      - id: RMCHeadSpecRag
     - name: 腰带
-      choices: {CMBelt: 1}
+      choices: { CMBelt: 1 }
       entries:
       - id: CMBeltSmartGunOperatorFilled
       - id: RMCBeltSmartGunOperatorPistolFilled
     - name: 小袋
-      choices: {RMCPouch: 2}
+      choices: { RMCPouch: 2 }
       entries:
       - id: RMCPouchFlareFilled
         name: 信号弹袋（满）
@@ -157,7 +166,7 @@
         name: 急救袋（可再填充注射器）
         recommended: true
       - id: RMCPouchFirstAidSplintsGauzeOintment
-        name: 急救包（纱布、药膏）                        # TODO RMC14 splints comma
+        name: 急救包（纱布、药膏） # TODO RMC14 splints comma
         recommended: true
       - id: RMCPouchFirstAidPills
         name: 急救袋（药片）
@@ -172,7 +181,7 @@
         name: 砍刀袋（满）
       - id: RMCPouchSling
     - name: 配件
-      choices: {CMAccessories: 1}
+      choices: { CMAccessories: 1 }
       entries:
       - id: CMWebbingBrown
         recommended: true
@@ -186,7 +195,7 @@
       - id: CMWebbingHolster
       - id: RMCWebbingHolsterBlack
     - name: 面具
-      choices: {CMMask: 1}
+      choices: { CMMask: 1 }
       entries:
       - id: CMMaskGas
       - id: CMMaskCoif

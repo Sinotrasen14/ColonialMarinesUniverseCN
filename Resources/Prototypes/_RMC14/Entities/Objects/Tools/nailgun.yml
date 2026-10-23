@@ -5,15 +5,17 @@
   description: 一种木工工具，用于将钉子钉入坚硬表面。由于钉子周围缺少气体密封，它无法以攻击方式发射钉子，这意味着它无法积聚发射所需的压力。
   suffix: Filled
   components:
+#cmu edit start: pre-resprite sprites (reverts RMC-14#5979)
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/SMGs/nailgun_compact.rsi
+    sprite: CMU14/Weapons/SMGs/nailgun_compact_old.rsi
     layers:
     - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-4
-      map: ["enum.GunVisualLayers.Mag"]
+      map: [ "enum.GunVisualLayers.Base" ]
+    - state: mag-0
+      map: [ "enum.GunVisualLayers.Mag" ]
   - type: Clothing
-    sprite: _RMC14/Objects/Weapons/Guns/SMGs/nailgun_compact.rsi
+    sprite: CMU14/Weapons/SMGs/nailgun_compact_old.rsi
+#cmu edit end
     slots:
     - suitStorage
     - Back
@@ -40,10 +42,12 @@
   - type: MagazineAmmoProvider
     autoEject: true
   - type: RMCAmmoEject
+#cmu edit start: pre-resprite sprites (reverts RMC-14#5979)
   - type: MagazineVisuals
     magState: mag
-    steps: 5
+    steps: 1
     zeroVisible: true
+#cmu edit end
   - type: Appearance
   - type: AltFireMelee
   - type: MeleeWeapon
@@ -82,10 +86,12 @@
   description: 一种木工工具，用于将钉子钉入坚硬的表面。这把是军用级，橄榄绿且战术风十足。不能将钉子作为投射物发射。
   suffix: Filled
   components:
+#cmu edit start: pre-resprite sprites (reverts RMC-14#5979)
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/SMGs/nailgun_tactical.rsi
+    sprite: CMU14/Weapons/SMGs/nailgun_tactical_old.rsi
   - type: Clothing
-    sprite: _RMC14/Objects/Weapons/Guns/SMGs/nailgun_tactical.rsi
+    sprite: CMU14/Weapons/SMGs/nailgun_tactical_old.rsi
+#cmu edit end
   - type: Nailgun
     materialPerRepair: 2
   - type: Tag

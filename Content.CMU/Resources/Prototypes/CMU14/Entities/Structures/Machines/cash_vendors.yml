@@ -95,7 +95,7 @@
   id: AU14CashDrinkMachine
   parent: AU14CashVendorShopkeepBase
   name: WY茶点
-  description: 一台韦兰-汤谷公司品牌的饮料机。投入现金即可购买饮品。价格需另加殖民地销售税。
+  description: 一台维兰德-汤谷公司品牌的饮料机。投入现金即可购买饮品。价格需另加殖民地销售税。
   suffix: Cash, Drinks
   components:
   - type: Sprite
@@ -110,7 +110,7 @@
   id: AU14CashVendorHotDrinks
   parent: AU14CashVendorBase
   name: WY 热饮
-  description: 一台带有韦兰-汤谷公司品牌标识的热饮机。投入现金即可购买咖啡、茶或可可。
+  description: 一台带有维兰德-汤谷公司品牌标识的热饮机。投入现金即可购买咖啡、茶或可可。
   suffix: Cash, Hot Drinks
   components:
   - type: Sprite
@@ -154,52 +154,75 @@
     items:
     # BASIC
     - id: CMDrinkCanBobdaClassic
+      section: "常规饮品"
       price: 2
     - id: CMDrinkCanBobdaCherry
+      section: "常规饮品"
       price: 2
     - id: CMDrinkCanBobdaLime
+      section: "常规饮品"
       price: 2
     - id: CMDrinkCanBobdaGrape
+      section: "常规饮品"
       price: 2
     - id: CMDrinkCanBobdaBlue
+      section: "常规饮品"
       price: 2
     - id: CMDrinkCanBobdaPeach
+      section: "常规饮品"
       price: 2
     - id: CMDrinkCanBobdaCranberry
+      section: "常规饮品"
       price: 2
     - id: CMDrinkCanBobdaVanilla
+      section: "常规饮品"
       price: 2
     - id: CMDrinkCanBobdaPineapple
+      section: "常规饮品"
       price: 2
     # DIET
     - id: CMDrinkCanBobdaDiet
+      section: "无糖饮品"
       price: 2
     - id: CMDrinkCanBobdaClassicDiet
+      section: "无糖饮品"
       price: 2
     - id: CMDrinkCanBobdaCherryDiet
+      section: "无糖饮品"
       price: 2
     - id: CMDrinkCanBobdaLimeDiet
+      section: "无糖饮品"
       price: 2
     - id: CMDrinkCanBobdaGrapeDiet
+      section: "无糖饮品"
       price: 2
     - id: CMDrinkCanBobdaBlueDiet
+      section: "无糖饮品"
       price: 2
     - id: CMDrinkCanBobdaPeachDiet
+      section: "无糖饮品"
       price: 2
     - id: CMDrinkCanBobdaCranberryDiet
+      section: "无糖饮品"
       price: 2
     - id: CMDrinkCanBobdaVanillaDiet
+      section: "无糖饮品"
       price: 2
     - id: CMDrinkCanBobdaPineappleDiet
+      section: "无糖饮品"
       price: 2
     # NON BOBDA
     - id: CMDrinkCanCola
+      section: "其他品牌"
       price: 2
     - id: CMDrinkCanSoda
+      section: "其他品牌"
       price: 2
     - id: CMDrinkCanTonic
+      section: "其他品牌"
       price: 2
     - id: CMDrinkCanFruitBeer
+      section: "其他品牌"
       price: 2
 
 # Snack machine — mirrors CMVendorSnack
@@ -256,6 +279,7 @@
       name: HUNK 能量棒
       price: 8
     - id: CMMarineProteinBar
+      section: "即食餐食"
       name: 蛋白棒
       price: 2
 
@@ -275,39 +299,51 @@
     allowDepartmentBudget: true
     items:
     - id: CMMRE
+      section: "即食餐食"
       name: 即食餐
       price: 8
     - id: CMMarinePreparedMealChicken
+      section: "即食餐食"
       name: 预制餐（鸡肉）
       price: 12
     - id: CMMarinePreparedMealCornbread
+      section: "即食餐食"
       name: 预制餐（玉米面包）
       price: 12
     - id: CMMarinePreparedMealPasta
+      section: "即食餐食"
       name: 预制餐（意面）
       price: 12
     - id: CMMarinePreparedMealPizza
+      section: "即食餐食"
       name: 预制餐（披萨）
       price: 12
     - id: CMMarinePreparedMealPork
+      section: "即食餐食"
       name: 预制餐（猪肉）
       price: 12
     - id: CMMarinePreparedMealTofu
+      section: "即食餐食"
       name: 预制餐（豆腐）
       price: 12
     - id: CMMarineProteinBar
+      section: "即食餐食"
       name: 蛋白棒
       price: 4
     - id: CMCanteen
+      section: "水壶"
       name: 食堂
       price: 10
     - id: CMMetalFlask
+      section: "水壶"
       name: 金属烧瓶（空）
       price: 8
     - id: CMMarineFlask
+      section: "水壶"
       name: 海洋烧瓶
       price: 12
     - id: CMWEYAFlask
+      section: "水壶"
       name: We-Ya 保温杯
       price: 15
 
@@ -316,7 +352,7 @@
   id: AU14CashVendorKitchenware
   parent: AU14CashVendorBase
   name: WY 餐具
-  description: 一台韦兰-汤谷公司的厨房与餐厅设备自动售货机。投入现金即可购买厨房用具。
+  description: 一台维兰德-汤谷公司的厨房与餐厅设备自动售货机。投入现金即可购买厨房用具。
   suffix: Cash, Kitchenware
   components:
   - type: Sprite
@@ -329,60 +365,79 @@
     allowDepartmentBudget: true
     items:
     - id: RMCFork
+      section: "商品"
       name: 分叉
       price: 1
     - id: RMCSpoon
+      section: "商品"
       name: 勺
       price: 1
     - id: RMCKitchenKnife
+      section: "商品"
       name: 菜刀
       price: 2
     - id: RMCKitchenKnifeChef
+      section: "商品"
       name: 厨师刀
       price: 5
     - id: RMCRollingPin
+      section: "商品"
       name: 擀面杖
       price: 3
     - id: PairedChopsticks
+      section: "商品"
       name: 筷子
       price: 1
     - id: DrinkShaker
+      section: "商品"
       name: 鸡尾酒摇酒壶
       price: 8
     - id: DrinkGlass
+      section: "容器"
       name: 玻璃杯
       price: 2
     - id: DrinkMug
+      section: "商品"
       name: 杯
       price: 3
     - id: DrinkMugMetal
+      section: "商品"
       name: 金属马克杯
       price: 4
     - id: FoodPlate
+      section: "商品"
       name: 盘子
       price: 2
     - id: FoodPlateSmall
+      section: "商品"
       name: 小盘
       price: 2
     - id: FoodBowlBig
+      section: "商品"
       name: 碗
       price: 3
     - id: Pitcher
+      section: "商品"
       name: 投手
       price: 5
     - id: CMBeaker
+      section: "杂项"
       name: 烧杯（60u）
       price: 5
     - id: CMBeakerLarge
+      section: "杂项"
       name: 烧杯，大号（120u）
       price: 8
     - id: ClothingOuterApronChef
+      section: "商品"
       name: 厨师围裙
       price: 10
     - id: RMCCondimentSmallSalt
+      section: "商品"
       name: 盐瓶
       price: 3
     - id: RMCCondimentSmallPepper
+      section: "商品"
       name: 胡椒瓶
       price: 3
 
@@ -391,7 +446,7 @@
   id: AU14CashVendorGames
   parent: AU14CashVendorBase
   name: WY 娱乐贩卖
-  description: 一台韦兰-汤谷公司的娱乐自动售货机。投入现金即可购买磁带、卡牌、杂志等物品。
+  description: 一台维兰德-汤谷公司的娱乐自动售货机。投入现金即可购买磁带、卡牌、杂志等物品。
   suffix: Cash, Games
   components:
   - type: Sprite
@@ -404,210 +459,279 @@
     percentToColony: 0.6
     items:
     - id: RMCCassettePlayer
+      section: "磁带用品"
       name: 磁带播放器
       price: 25
     - id: AU14CassettePlayerBlue
+      section: "磁带用品"
       name: Cassette Player (Blue)
       price: 25
     - id: AU14CassettePlayerGreen
+      section: "磁带用品"
       name: Cassette Player (Green)
       price: 25
     - id: AU14CassettePlayerPink
+      section: "磁带用品"
       name: Cassette Player (Pink)
       price: 25
     - id: AU14CassettePlayerOrange
+      section: "磁带用品"
       name: Cassette Player (Orange)
       price: 25
     - id: AU14CassettePlayerRainbow
+      section: "磁带用品"
       name: Cassette Player (Rainbow)
       price: 25
     - id: AU14CassettePlayerGray
+      section: "磁带用品"
       name: Cassette Player (Gray)
       price: 25
     - id: AU14CassettePlayerNeon
+      section: "磁带用品"
       name: Cassette Player (Neon)
       price: 25
     - id: RMCPouchCassette
+      section: "磁带用品"
       name: 弹匣袋
       price: 10
     - id: AU14CassetteTapeUnitedAmericasVol1
+      section: "磁带用品"
       name: 磁带（美洲联合卷 1）
       price: 5
     - id: AU14CassetteTapeUnitedAmericasVol2
+      section: "磁带用品"
       name: 磁带（美洲联合卷 2）
       price: 5
     - id: AU14CassetteTapeRisingSun
+      section: "磁带用品"
       name: 磁带（旭日）
       price: 5
     - id: AU14CassetteTapeBlueStripe
+      section: "磁带用品"
       name: 磁带（蓝色条纹）
       price: 5
     - id: AU14CassetteTapeNeon
+      section: "磁带用品"
       name: 磁带（霓虹）
       price: 5
     - id: AU14CassetteTapePurple
+      section: "磁带用品"
       name: 磁带（紫色）
       price: 5
     - id: AU14CassetteTapePartyApproved
+      section: "磁带用品"
       name: 磁带（UPP）
       price: 5
     - id: AU14CassetteTapeTan
+      section: "磁带用品"
       name: 磁带 (Tan)
       price: 5
     - id: AU14CassetteTapeTWE
+      section: "磁带用品"
       name: 磁带 (TWE)
       price: 5
     - id: AU14CassetteTapeWY
+      section: "磁带用品"
       name: 磁带 (Weyland-Yutani)
       price: 5
     - id: AU14CassetteTapeGreen
+      section: "磁带用品"
       name: 磁带 (绿色)
       price: 5
     - id: AU14CassetteTapePink
+      section: "磁带用品"
       name: 磁带（条纹）
       price: 5
     - id: AU14CassetteTapeRainbow
+      section: "磁带用品"
       name: 磁带（彩虹）
       price: 5
     - id: AU14CassetteTapeRedStripe
+      section: "磁带用品"
       name: 磁带（红条纹）
       price: 5
     - id: AU14CassetteTapeRedBlack
+      section: "磁带用品"
       name: 磁带（红黑色）
       price: 5
     - id: AU14CassetteTapeOcean
+      section: "磁带用品"
       name: 磁带（海洋）
       price: 5
     - id: AU14CassetteTapeWhite
+      section: "磁带用品"
       name: 磁带（白色）
       price: 5
     - id: AU14CassetteTapeRedDirt
+      section: "磁带用品"
       name: 磁带（红土）
       price: 5
     - id: AU14CassetteTapeCLF
+      section: "磁带用品"
       name: 磁带 (CLF)
       price: 5
     - id: RMCCassetteTapeCustom
+      section: "磁带用品"
       name: 磁带（空白）
       price: 4
     - id: RMCPlayingCardDeck
+      section: "纸牌"
       name: 扑克牌组
       price: 8
     - id: d20Dice
+      section: "其他"
       name: d20骰子
       price: 6
     - id: CMPaper
+      section: "文具"
       name: 纸
       price: 1
     - id: CMPen
+      section: "其他"
       name: 笔
       price: 1
     - id: RMCMagazineBootsN160
+      section: "杂志"
       name: 《靴子！》杂志（第160期）
       price: 4
     - id: RMCMagazineBootsN07
+      section: "杂志"
       name: Boots！杂志（第07期）
       price: 4
     - id: RMCMagazineBootsN45
+      section: "杂志"
       name: 《靴子！》杂志（第45期）
       price: 4
     - id: RMCMagazineBootsN54
+      section: "杂志"
       name: 《Boots!》杂志（第54期）
       price: 4
     - id: RMCMagazineBootsN55
+      section: "杂志"
       name: 《Boots!》杂志（第55期）
       price: 4
     - id: RMCMagazineBootsN58
+      section: "杂志"
       name: 《靴子！》杂志（第58期）
       price: 4
     - id: RMCMagazineBootsN70
+      section: "杂志"
       name: 《靴子！》杂志（第70期）
       price: 4
     - id: RMCMagazineBootsN113
+      section: "杂志"
       name: 《靴子！》杂志（第113期）
       price: 4
     - id: RMCMagazineBootsN117
+      section: "杂志"
       name: 《靴子！》杂志（第117期）
       price: 4
     - id: RMCMagazineBootsN120
+      section: "杂志"
       name: 《靴子！》杂志（第120期）
       price: 4
     - id: RMCMagazineBootsN125
+      section: "杂志"
       name: 《靴子！》杂志（第125期）
       price: 4
     - id: RMCMagazineBootsN131
+      section: "杂志"
       name: Boots！杂志（第131期）
       price: 4
     - id: RMCMagazineBootsN150
+      section: "杂志"
       name: 《靴子！》杂志（第150期）
       price: 4
     - id: RMCMagazineBootsN189
+      section: "杂志"
       name: 《靴子！》杂志（第189期）
       price: 4
     - id: RMCMagazineWeYaOrreryN34
+      section: "杂志"
       name: 《太阳系仪杂志》（第34期）
       price: 5
     - id: RMCMagazineWeYaOrrery
+      section: "杂志"
       name: 天象仪杂志
       price: 5
     - id: RMCMagazineWeYaOrreryN175
+      section: "杂志"
       name: 《太阳系仪杂志》（第175期）
       price: 5
     - id: RMCMagazineWeYaOrreryN184
+      section: "杂志"
       name: 《太阳系仪杂志》（第184期）
       price: 5
     - id: RMCMagazineWeYaOrreryN202
+      section: "杂志"
       name: 《太阳系仪杂志》（第202期）
       price: 5
     - id: RMCMagazineWeYaOrreryN217
+      section: "杂志"
       name: 《太阳系仪杂志》（第217期）
       price: 5
     - id: RMCMagazineWeYaOrreryN220
+      section: "杂志"
       name: 《太阳系仪杂志》（第220期）
       price: 5
     - id: RMCMagazineWeYaOrreryN258
+      section: "杂志"
       name: 《太阳系仪杂志》（第258期）
       price: 5
     - id: RMCClothingNeckLGBTPin
+      section: "徽章"
       name: LGBT徽章
       price: 3
     - id: RMCClothingNeckAromanticPin
+      section: "徽章"
       name: 无浪漫倾向徽章
       price: 3
     - id: RMCClothingNeckAsexualPin
+      section: "徽章"
       name: 无性恋徽章
       price: 3
     - id: RMCClothingNeckBisexualPin
+      section: "徽章"
       name: 双性恋徽章
       price: 3
     - id: RMCClothingNeckGayPin
+      section: "徽章"
       name: 同性恋徽章
       price: 3
     - id: RMCClothingNeckIntersexPin
+      section: "徽章"
       name: 双性恋徽章
       price: 3
     - id: RMCClothingNeckLesbianPin
+      section: "徽章"
       name: 女同性恋徽章
       price: 3
     - id: RMCClothingNeckNonBinaryPin
+      section: "徽章"
       name: 非二元性别徽章
       price: 3
     - id: RMCClothingNeckPansexualPin
+      section: "徽章"
       name: 泛性恋徽章
       price: 3
     - id: RMCClothingNeckOmnisexualPin
+      section: "徽章"
       name: 泛性恋徽章
       price: 3
     - id: RMCClothingNeckTransPin
+      section: "徽章"
       name: 跨性别徽章
       price: 3
     - id: RMCClothingNeckAutismPin
+      section: "徽章"
       name: 自闭症徽章
       price: 3
     - id: RMCClothingNeckGoldAutismPin
+      section: "徽章"
       name: 金色自闭症徽章
       price: 3
     - id: RMCSpaceGrunts
+      section: "其他"
       name: 太空新兵
       price: 15
     - id: CMUUniversalPaperTool
@@ -619,7 +743,7 @@
   id: AU14CashVendorCigarettes
   parent: AU14CashVendorBase
   name: WY 香烟机
-  description: 一台韦兰-汤谷公司品牌的香烟自动售货机。投入现金即可购买烟草产品。
+  description: 一台维兰德-汤谷公司品牌的香烟自动售货机。投入现金即可购买烟草产品。
   suffix: Cash, Cigarettes
   components:
   - type: Sprite
@@ -638,18 +762,23 @@
       name: 卷烟纸和滤嘴
       price: 3
     - id: RMCCigarettePackLuckySloths
+      section: "烟草制品"
       name: 幸运树懒
       price: 5
     - id: AU14CigarettePackBalajj
+      section: "烟草制品"
       name: 巴利
       price: 5
     - id: RMCCigarettePackWeYaGold
+      section: "烟草制品"
       name: 威雅金
       price: 8
     - id: RMCCigarettePackExecutiveSelect
+      section: "烟草制品"
       name: 行政精选
       price: 12
     - id: RMCCigarCase
+      section: "烟草制品"
       name: 雪茄盒
       price: 20
     - id: RMCTarbackTube
@@ -662,6 +791,7 @@
       name: 打火机
       price: 5
     - id: RMCZippoGold
+      section: "烟草制品"
       name: 黄金芝宝
       price: 30
 
@@ -683,66 +813,86 @@
     allowDepartmentBudget: true
     items:
     - id: RMCFlashlight
+      section: "杂项"
       name: 手电筒
       price: 5
     - id: CMWelder
+      section: "工具"
       name: 焊接工具
       price: 20
     - id: CMWelderSmall
+      section: "工具"
       name: 焊接工具（小型）
       price: 12
     - id: CMCrowbar
+      section: "工具"
       name: 撬棍
       price: 8
     - id: CMScrewdriver
+      section: "工具"
       name: 螺丝刀
       price: 5
     - id: CMWirecutter
+      section: "工具"
       name: 钢丝钳
       price: 6
     - id: CMWrench
+      section: "工具"
       name: 扳手
       price: 5
     - id: RMCLightReplacer
+      section: "工程师用品"
       name: 灯管替换器
       price: 8
     - id: CMBeltUtility
+      section: "装备"
       name: 工具腰带
       price: 10
     - id: CMHandsInsulated
+      section: "制式手套"
       name: 绝缘手套
       price: 20
     - id: RMCWeldingGoggles
+      section: "工程物资"
       name: 焊接护目镜
       price: 20
     - id: RMCHelmetWelding
+      section: "头盔"
       name: 焊接面罩
       price: 25
     - id: CMMultitool
+      section: "工程师用品"
       name: 访问调谐器
       price: 15
     - id: CMTRayScanner
+      section: "扫描仪"
       name: PS-9测量单元
       price: 15
     - id: CMFireExtinguisher
+      section: "杂项"
       name: 灭火器
       price: 10
     - id: RemoteSignaller
+      section: "组装部件"
       name: 远程信号器
       price: 10
     - id: Igniter
+      section: "组装部件"
       name: 点火器
       price: 8
     - id: AU14MaintenanceJackSpecialAdmin
       name: 特殊维修道千斤顶
       price: 45
     - id: CableApcStack
+      section: "电源用品"
       name: LV电缆线圈
       price: 10
     - id: CableMVStack
+      section: "电源用品"
       name: MV电缆线圈
       price: 15
     - id: CableHVStack
+      section: "电源用品"
       name: 高压电缆线圈
       price: 20
     - id: RMCGeigerCounter
@@ -752,8 +902,19 @@
       name: 空气手雷
       price: 20
     - id: CMUFireSuppressantGrenade
+      section: "大气设备"
       name: 灭火手榴弹
       price: 20
+    # Custom chemical grenade parts (casing + two-beaker payload + timer)
+    - id: RMCCustomGrenade
+      name: Custom Grenade Casing
+      price: 15
+    - id: ChemicalPayload
+      name: Chemical Payload
+      price: 12
+    - id: RMCTimerTrigger
+      name: Timer Trigger
+      price: 8
 
 # circuitboard - mirrors CMVendorCircuits
 - type: entity
@@ -773,27 +934,35 @@
     allowDepartmentBudget: true
     items:
     - id: DoorElectronics
+      section: "电子电路板"
       name: 车门电子设备
       price: 20
     - id: CMAPCElectronics
+      section: "工程物资"
       name: 区域电力控制器电子设备
       price: 50
     - id: RMCCircuitboardTelevision
+      section: "机器电路板"
       name: 电视电路板
       price: 25
     - id: CMSMESMachineCircuitboard
+      section: "机器电路板"
       name: 超导磁能储存电路板
       price: 50
     - id: CMAutolatheMachineCircuitboard
+      section: "机器电路板"
       name: 自动车床电路板
       price: 30
     - id: CMUCircuitboardRecharger
+      section: "机器电路板"
       name: 充电器电路板
       price: 75
     - id: AirAlarmElectronics
+      section: "电子电路板"
       name: 大气警报电子设备
       price: 20
     - id: FireAlarmElectronics
+      section: "电子电路板"
       name: 火灾报警电子设备
       price: 20
     - id: CMUThermomachineHeaterMachineCircuitBoard
@@ -806,6 +975,7 @@
       name: 冷凝器电路板
       price: 50
     - id: CMUCrystallizerMachineCircuitboard
+      section: "机器电路板"
       name: 气体结晶器电路板
       price: 60
     - id: CMUPipeRiserMachineCircuitboard
@@ -862,7 +1032,7 @@
   id: AU14CashVendorMedicalGeneral
   parent: AU14CashVendorBase
   name: WY-Med 综合
-  description: 一台韦兰-汤谷通用医疗自动售货机，备有野战补给品和自动注射器。请投入现金或使用部门预算。
+  description: 一台维兰德-汤谷通用医疗自动售货机，备有野战补给品和自动注射器。请投入现金或使用部门预算。
   suffix: Cash, Medical General
   components:
   - type: Sprite
@@ -875,66 +1045,87 @@
     allowDepartmentBudget: true
     items:
     - id: CMBurnKit10
+      section: "野外用品"
       name: 烧伤工具包
       price: 12
     - id: CMTraumaKit10
+      section: "野外用品"
       name: 创伤急救包
       price: 12
     - id: CMOintment10
+      section: "野外用品"
       name: 软膏
       price: 10
     - id: AU14HemostaticGauzePacket
+      section: "医疗用品"
       name: 止血纱布
       price: 10
     - id: AU14Tourniquet
+      section: "医疗用品"
       name: 止血带
       price: 12
     - id: CMUSplintItem
+      section: "医疗用品"
       name: 夹板
       price: 8
     - id: CMHealthAnalyzer
+      section: "设备"
       name: 健康分析仪
       price: 30
     - id: AU14CMDefibrillator
+      section: "医疗设备"
       name: 除颤器
       price: 60
     - id: CMUMaskCPR
+      section: "医疗用品"
       name: 心肺复苏面罩
       price: 10
     - id: CMSyringe
+      section: "医用器具"
       name: 注射器
       price: 5
     - id: CMEpinephrineAutoInjector
+      section: "自动注射器"
       name: Epinephrine (肾上腺素)自动注射器
       price: 18
     - id: AU14NaloxoneAutoInjector
+      section: "注射剂"
       name: Naloxone (纳洛酮)自动注射器
       price: 18
     - id: CMInaprovalineAutoInjector
+      section: "自动注射器"
       name: Inaprovaline (伊纳普伐林)自动注射器
       price: 15
     - id: CMDexalinPlusAutoInjector
+      section: "自动注射器"
       name: Dexalin Plus (德沙林 Plus)自动注射器
       price: 18
     - id: CMTricordrazineAutoInjector
+      section: "自动注射器"
       name: Tricordrazine (三可拉嗪)自动注射器
       price: 15
     - id: CMBicaridineAutoInjector
+      section: "自动注射器"
       name: Bicaridine (比卡利啶)自动注射器
       price: 18
     - id: CMKelotaneAutoInjector
+      section: "自动注射器"
       name: Kelotane (凯洛坦)自动注射器
       price: 18
     - id: AU14ParacetamolAutoInjector
+      section: "注射剂"
       name: Paracetamol (扑热息痛)自动注射器
       price: 15
     - id: AU14TramadolAutoInjector
+      section: "注射剂"
       name: Tramadol (曲马多)自动注射器
       price: 20
     - id: AU14OxycodoneAutoInjector
+      section: "注射剂"
       name: Oxycodone (羟考酮)自动注射器
       price: 22
     - id: RMCIronAutoInjector
+      section: "注射剂"
       name: 铁质自动注射器
       price: 12
 
@@ -943,7 +1134,7 @@
   id: AU14CashVendorMedicalPharmacy
   parent: AU14CashVendorBase
   name: WY-Chem药房
-  description: 一台韦兰-汤谷公司的药房自动售货机，备有药丸罐、液体药品和化学用品。投入现金或使用部门预算。
+  description: 一台维兰德-汤谷公司的药房自动售货机，备有药丸罐、液体药品和化学用品。投入现金或使用部门预算。
   suffix: Cash, Pharmacy
   components:
   - type: Sprite
@@ -956,84 +1147,109 @@
     allowDepartmentBudget: true
     items:
     - id: CMPillCanisterBicaridine
+      section: "药片瓶"
       name: Bicaridine (比卡利啶)药丸
       price: 20
     - id: CMPillCanisterDexalin
+      section: "药片瓶"
       name: Dexalin (德沙林)药丸
       price: 18
     - id: CMPillCanisterDylovene
+      section: "药片瓶"
       name: Dylovene (地洛芬)药丸
       price: 18
     - id: CMPillCanisterInaprovaline
+      section: "药片瓶"
       name: Inaprovaline (伊纳普伐林)药丸
       price: 16
     - id: CMPillCanisterKelotane
+      section: "药片瓶"
       name: Kelotane (凯洛坦)药丸
       price: 18
     - id: CMPillCanisterTricordrazine
+      section: "药片瓶"
       name: Tricordrazine (三可拉嗪)药丸
       price: 16
     - id: RMCPillCanisterIron
+      section: "药片瓶"
       name: 铁药丸
       price: 12
     - id: AU14PillCanisterParacetamol
+      section: "药片瓶"
       name: Paracetamol (扑热息痛)药片
       price: 15
     - id: AU14PillCanisterTramadol
+      section: "药片瓶"
       name: Tramadol (曲马多)药片
       price: 20
     - id: AU14PillCanisterOxycodone
+      section: "药片瓶"
       name: Oxycodone (羟考酮)药片
       price: 25
     - id: AU14PillCanisterLeporazine
       name: Leporazine (勒泊拉嗪)药丸
       price: 20
     - id: AU14PillCanisterImidazoline
+      section: "药片瓶"
       name: Imidazoline (咪达唑啉)药丸
       price: 18
     - id: AU14PillCanisterCryoxadone
       name: 海军陆战队Cryoxadone (冷冻酮)药丸
       price: 30
     - id: AU14PillCanisterHepatocytin
+      section: "药片瓶"
       name: Hepatocytin (肝胞素)药丸
       price: 22
     - id: AU14PillCanisterNephronate
+      section: "药片瓶"
       name: Nephronate (肾复宁)药丸
       price: 22
     - id: AU14PillCanisterPulmovine
+      section: "药片瓶"
       name: Pulmovine (肺复灵)药丸
       price: 22
     - id: CMBottleBicaridine
+      section: "药液瓶"
       name: Bicaridine (比卡利啶)瓶
       price: 22
     - id: CMBottleDylovene
+      section: "药液瓶"
       name: Dylovene (地洛芬)瓶
       price: 20
     - id: CMBottleDexalin
+      section: "药液瓶"
       name: Dexalin (德沙林)瓶
       price: 20
     - id: CMBottleInaprovaline
+      section: "药液瓶"
       name: Inaprovaline (伊纳普伐林)瓶
       price: 18
     - id: CMBottleKelotane
+      section: "药液瓶"
       name: Kelotane (凯洛坦)瓶
       price: 20
     - id: RMCVial
+      section: "医用器具"
       name: 试管瓶
       price: 4
     - id: CMSyringe
+      section: "医用器具"
       name: 注射器
       price: 5
     - id: CMBeaker
+      section: "杂项"
       name: 烧杯（60u）
       price: 6
     - id: CMBeakerLarge
+      section: "杂项"
       name: 烧杯，大号（120u）
       price: 10
     - id: RMCDropper
+      section: "杂项"
       name: 滴管
       price: 4
     - id: RMCBoxPillCanister
+      section: "杂项"
       name: 空药丸气罐盒
       price: 8
 
@@ -1042,7 +1258,7 @@
   id: AU14CashVendorMedicalSurgery
   parent: AU14CashVendorBase
   name: WY-Med 外科
-  description: 一台韦兰-汤谷货运部手术用品自动售货机。投入现金或使用部门预算购买手术设备和伤口护理用品。
+  description: 一台维兰德-汤谷货运部手术用品自动售货机。投入现金或使用部门预算购买手术设备和伤口护理用品。
   suffix: Cash, Surgery
   components:
   - type: Sprite
@@ -1055,48 +1271,63 @@
     allowDepartmentBudget: true
     items:
     - id: CMSurgicalLine
+      section: "医用器具"
       name: 外科产品线
       price: 25
     - id: CMSynthGraft
+      section: "医用器具"
       name: 合成移植物
       price: 25
     - id: CMUCastItem
+      section: "常用医疗用品"
       name: 施法
       price: 15
     - id: CMUSplintItem
+      section: "医疗用品"
       name: 夹板
       price: 8
     - id: CMStasisBagFolded
+      section: "医用器具"
       name: 静滞袋
       price: 40
     - id: CMPortableSurgicalBedSpawnFolded
+      section: "医用器具"
       name: 便携手术床
       price: 50
     - id: CMRollerBedSpawnFolded
+      section: "杂项"
       name: 轮床
       price: 20
     - id: AU14CMDefibrillator
+      section: "医疗设备"
       name: 除颤器
       price: 60
     - id: CMHealthAnalyzer
+      section: "设备"
       name: 健康分析仪
       price: 30
     - id: CMHyposprayFilledTricord
+      section: "医用器具"
       name: 无针注射器（Tricordrazine-三可拉嗪）
       price: 35
     - id: RMCBoxBodyBag
+      section: "医用器具"
       name: 尸袋盒
       price: 15
     - id: RMCBoxSterileMask
+      section: "医用器具"
       name: 无菌口罩盒
       price: 8
     - id: CMUMaskCPR
+      section: "医疗用品"
       name: CPR 面罩
       price: 10
     - id: RMCBoxLatexGloves
+      section: "医用器具"
       name: 乳胶手套盒
       price: 8
     - id: CMSyringe
+      section: "医用器具"
       name: 注射器
       price: 5
 
@@ -1118,30 +1349,39 @@
     allowDepartmentBudget: true
     items:
     - id: RMCHandcuffs
+      section: "装备"
       name: 手铐
       price: 12
     - id: RMCZipties
+      section: "杂项"
       name: 扎带
       price: 5
     - id: RMCBoxZiptie
+      section: "制式装备"
       name: 扎带盒
       price: 20
     - id: CMStunbaton
+      section: "装备"
       name: 电棍
       price: 40
     - id: CMGlassesSecurity
+      section: "平视显示器"
       name: 安保HUD
       price: 18
     - id: RMCUniversalRecorder
+      section: "调查取证"
       name: 通用录制器
       price: 25
     - id: RMCBoxRegulationTapes
+      section: "补充装"
       name: 法规胶带
       price: 10
     - id: AU14GuidebookLawMarine
+      section: "书籍"
       name: 海事法指南
       price: 5
     - id: AU14GuidebookSOP
+      section: "书籍"
       name: SOP指南
       price: 5
 
@@ -1150,7 +1390,7 @@
   id: AU14CashSnackMachine
   parent: AU14CashVendorBase
   name: WY 供给
-  description: 一台韦兰-汤谷公司品牌的零食售卖机。投入现金即可购买零食。价格需另加殖民地销售税。
+  description: 一台维兰德-汤谷公司品牌的零食售卖机。投入现金即可购买零食。价格需另加殖民地销售税。
   suffix: Cash, Snacks
   components:
   - type: Sprite
@@ -1173,5 +1413,6 @@
       name: CHUNK 能量棒
       price: 3
     - id: CMMRE
+      section: "即食餐食"
       name: MRE（军用规格）
       price: 8

@@ -107,3 +107,49 @@ cmu-atm-nav-pin = 您的卡 #{ $account } - PIN { $pin }
 cmu-atm-nav-no-card = 您没有自己的卡
 cmu-atm-nav-pin-unknown = 正在读取您的卡...
 cmu-atm-nav-pop-out = 弹出
+
+# Shared console screen pieces
+cmu-economy-sales-tax = 销售税
+cmu-economy-income-tax = 所得税
+cmu-economy-transit-tariff = 过境关税
+cmu-economy-embargoes = 贸易禁运
+cmu-economy-trade-pacts = 贸易协定
+cmu-economy-none = 无
+
+# Corporate affairs console screen
+cmu-corporate-heading = 企业事务
+cmu-corporate-subheading = 殖民地联络处 // 过境与支援
+cmu-corporate-treasury = 企业资金
+cmu-corporate-withdraw-tax = 提款需缴纳 { $percent }% 的殖民地所得税。
+cmu-corporate-withdraw-no-tax = 当前提款免税。
+cmu-corporate-tariff = 过境关税
+cmu-corporate-current-tariff = 当前税率
+cmu-corporate-exact = 指定税率（0–{ $max }%）
+cmu-corporate-apply = 应用
+cmu-corporate-tariff-announced = 每次关税调整都会向整个殖民地通报。
+cmu-corporate-support = 企业支援
+cmu-corporate-support-hint = 使用企业预算，呼叫企业安保、合成人或承包商支援。
+cmu-corporate-footer = 每次提交所得的关税收入都会计入企业预算。
+
+# Budget console screen
+cmu-budget-heading = 殖民地预算
+cmu-budget-subheading = 殖民地财政 // 行政管理
+cmu-budget-treasury = 资金余额
+cmu-budget-payroll = 工资发放
+cmu-budget-payroll-hint = 立即向各部门员工发放工资，费用分别从各部门预算中扣除。
+cmu-budget-dispense = 统一发薪
+cmu-budget-dispense-confirm = 确认发薪
+cmu-budget-departments = 部门
+cmu-budget-department-count = { $count ->
+        [one] 1 个部门
+       *[other] { $count } 个部门
+    }
+cmu-budget-transfer-amount = 拨款金额
+cmu-budget-transfer = 拨款
+cmu-budget-department-budget = 预算 { $amount }
+cmu-budget-total = 部门持有资金
+cmu-budget-footer = 拨款会将资金从殖民地预算转入指定部门的预算。
+
+# Cash vendor front
+cmu-cash-vendor-credit = 余额
+cmu-cash-vendor-other = 其他

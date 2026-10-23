@@ -46,7 +46,7 @@ reagent-desc-cmu-fentanyl-precursor          = 一种不稳定的卤化中间体
 reagent-name-cmu-sleen                       = Sleen (斯林)
 reagent-desc-cmu-sleen                       = 一种强效实验性止痛药。可掩盖剧烈疼痛，但过量会中毒并导致定向障碍。
 reagent-name-cmu-soporific                   = Soporific (嗜睡镇痛剂)
-reagent-desc-cmu-soporific                   = 一种强效镇静止痛药。会引起嗜睡，在手术剂量下可强制入睡。
+reagent-desc-cmu-soporific                   = 一种强效镇静止痛药。会使患者明显恍惚，视线模糊、发暗，但不会让其入睡。
 
 reagent-name-cmu-meth-precursor              = 粗制安非他命油
 reagent-desc-cmu-meth-precursor              = 一种气味难闻的还原产物。需要进一步精炼，否则只有毒性。

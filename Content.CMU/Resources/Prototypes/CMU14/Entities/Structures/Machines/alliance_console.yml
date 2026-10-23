@@ -7,7 +7,7 @@
   components:
   - type: Sprite
     sprite: _RMC14/Structures/Machines/computer.rsi
-    state: terminal1_old
+    state: terminal
   - type: InteractionOutline
   - type: ApcPowerReceiver
     powerLoad: 0
@@ -42,9 +42,9 @@
 - type: entity
   parent: AU14AllianceConsoleBase
   id: AU14AllianceConsoleWeYu
-  name: 联盟控制台（韦兰-汤谷）
+  name: 联盟控制台（维兰德-汤谷）
   suffix: WeYu
-  description: 一个韦兰-汤谷公司的终端，用于管理与其他派系的企业外交关系。
+  description: 一个维兰德-汤谷公司的终端，用于管理与其他派系的企业外交关系。
   components:
   - type: AllianceConsole
     faction: AUWeYu
@@ -52,9 +52,9 @@
 - type: entity
   parent: AU14AllianceConsoleBase
   id: AU14AllianceConsoleCLF
-  name: 联盟控制台（CLF）
-  suffix: CLF
-  description: 一个用于管理同第三方派系外交关系的CLF指挥部终端。
+  name: 联盟控制台（INSFOR）
+  suffix: INSFOR
+  description: 一个用于管理同第三方派系外交关系的INSFOR指挥部终端。
   components:
   - type: AllianceConsole
     faction: clf

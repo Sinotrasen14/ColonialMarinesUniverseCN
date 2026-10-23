@@ -1,0 +1,61 @@
+# Placeholder icons until the jump pack sprites are added.
+- type: entity
+  id: CMUActionJumpPackBoost
+  name: 推进冲刺
+  description: 点燃推进器，沿设定朝向向前冲刺六格距离。
+  components:
+  - type: InstantAction
+    event: !type:Content.Shared.CMU14.JumpPack.CMUJumpPackBoostActionEvent
+  - type: Action
+    itemIconStyle: BigAction
+  - type: Sprite
+    layers:
+    - sprite: Objects/Tanks/Jetpacks/blue.rsi
+      state: icon-on
+      map: ["enum.ActionVisuals.Icon"]
+
+- type: entity
+  id: CMUActionJumpPackDirection
+  name: 调整推进朝向
+  description: 顺时针旋转推进朝向。Alt+点击背包可在四向与八向模式之间切换。
+  components:
+  - type: InstantAction
+    event: !type:Content.Shared.CMU14.JumpPack.CMUJumpPackDirectionActionEvent
+  - type: Action
+    checkCanInteract: false
+    itemIconStyle: BigAction
+  - type: Sprite
+    layers:
+    - sprite: CMU14/ZLevels/Actions/misc.rsi
+      state: eye
+      map: ["enum.ActionVisuals.Icon"]
+
+- type: entity
+  id: CMUActionJumpPackJump
+  name: 跳跃升空
+  description: 向上喷射跃升至上层区域。与推进冲刺共享冷却时间。
+  components:
+  - type: InstantAction
+    event: !type:Content.Shared.CMU14.JumpPack.CMUJumpPackJumpActionEvent
+  - type: Action
+    itemIconStyle: BigAction
+  - type: Sprite
+    layers:
+    - sprite: CMU14/ZLevels/Actions/misc.rsi
+      state: up
+      map: ["enum.ActionVisuals.Icon"]
+
+- type: entity
+  id: CMUActionJumpPackHover
+  name: 背包悬停
+  description: 上升一层高度并最多悬停二十秒。再次使用可提前降落。
+  components:
+  - type: InstantAction
+    event: !type:Content.Shared.CMU14.JumpPack.CMUJumpPackHoverActionEvent
+  - type: Action
+    itemIconStyle: BigAction
+  - type: Sprite
+    layers:
+    - sprite: Objects/Tanks/Jetpacks/blue.rsi
+      state: icon
+      map: ["enum.ActionVisuals.Icon"]

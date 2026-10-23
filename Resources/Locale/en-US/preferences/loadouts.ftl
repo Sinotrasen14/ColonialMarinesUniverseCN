@@ -15,6 +15,7 @@ loadouts-count-items-in-group = {$item}以及另外{$count}个{$count ->
 }
 
 loadouts-points-restriction = 点数不足
+loadouts-point-cost-tooltip = 消耗：每次选择 {$cost} 点
 loadouts-selection-limit-reached = 已达到选择上限
 loadouts-repeatable-name = {$name}（{$count}/{$max}）
 loadouts-repeatable-name-cost = {$name}（{$count}/{$max}） — 每个{$cost}点

@@ -1,8 +1,10 @@
 ghost-gui-return-to-body-button = 返回身体
 ghost-gui-ghost-warp-button = 幽灵传送
 ghost-gui-ghost-roles-button = 幽灵角色（{$count}）
-ghost-gui-toggle-ghost-visibility-popup-on = 已启用幽灵可见性。
-ghost-gui-toggle-ghost-visibility-popup-off = 已禁用幽灵可见性。
+# cmu edit start: these toggle only other ghosts now that you can toggle your own
+ghost-gui-toggle-ghost-visibility-popup-on = 已显示其他幽灵。
+ghost-gui-toggle-ghost-visibility-popup-off = 已隐藏其他幽灵。
+# cmu edit end
 ghost-gui-toggle-lighting-manager-popup-normal = 光照正常。
 ghost-gui-toggle-lighting-manager-popup-personal-light = 已启用个人光源。
 ghost-gui-toggle-lighting-manager-popup-fullbright = 全亮模式。
@@ -32,8 +34,10 @@ ghost-target-window-tab-third-party = 第三方
 ghost-target-window-tab-survivors = 平民
 ghost-target-window-tab-weya-pmc = WeYu/PMC
 ghost-target-window-tab-clf = CLF
-ghost-target-window-tab-spp = SPP
-ghost-target-window-tab-tse-royal = TSE/皇家
+# cmu edit start: lore names
+ghost-target-window-tab-spp = UPP
+ghost-target-window-tab-tse-royal = TWE/皇家
+# cmu edit end
 ghost-target-window-tab-cmb-provost = CMB/宪兵
 ghost-target-window-tab-threat = 威胁
 ghost-target-window-tab-cursed = 被诅咒者

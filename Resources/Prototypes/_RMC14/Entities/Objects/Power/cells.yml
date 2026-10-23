@@ -7,9 +7,9 @@
   - type: Sprite
     sprite: _RMC14/Objects/Power/cells.rsi
     layers:
-    - map: ["enum.PowerCellVisualLayers.Base"]
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: cell
-    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       state: o2
       shader: unshaded
   - type: Battery
@@ -20,7 +20,7 @@
   - type: Riggable
   - type: Tag
     tags:
-    - PowerCell
+      - PowerCell
   - type: PhysicalComposition
     materialComposition:
       CMSteel: 700
@@ -36,9 +36,9 @@
   components:
   - type: Sprite
     layers:
-    - map: ["enum.PowerCellVisualLayers.Base"]
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: mini-cell
-    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       state: o2
       shader: unshaded
   - type: Battery
@@ -90,9 +90,9 @@
   components:
   - type: Sprite
     layers:
-    - map: ["enum.PowerCellVisualLayers.Base"]
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: hcell
-    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       state: o2
       shader: unshaded
   - type: Battery
@@ -125,9 +125,9 @@
   components:
   - type: Sprite
     layers:
-    - map: ["enum.PowerCellVisualLayers.Base"]
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: scell
-    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       state: o2
       shader: unshaded
   - type: Battery
@@ -153,9 +153,9 @@
   components:
   - type: Sprite
     layers:
-    - map: ["enum.PowerCellVisualLayers.Base"]
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: hpcell
-    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       state: o2
       shader: unshaded
   - type: Battery
@@ -181,9 +181,9 @@
   components:
   - type: Sprite
     layers:
-    - map: ["enum.PowerCellVisualLayers.Base"]
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: icell
-    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       state: o2
       shader: unshaded
   - type: Battery
@@ -204,9 +204,9 @@
   components:
   - type: Sprite
     layers:
-    - map: ["enum.PowerCellVisualLayers.Base"]
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: potato_cell
-    - map: ["enum.PowerCellVisualLayers.Unshaded"]
+    - map: [ "enum.PowerCellVisualLayers.Unshaded" ]
       state: o2
       shader: unshaded
   - type: Battery
@@ -221,7 +221,7 @@
   components:
   - type: Sprite
     layers:
-    - map: ["enum.PowerCellVisualLayers.Base"]
+    - map: [ "enum.PowerCellVisualLayers.Base" ]
       state: smartguncell
   - type: Battery
     maxCharge: 10000
@@ -234,37 +234,37 @@
   id: RMCPowerCellSlot
   abstract: true
   components:
-  - type: ContainerContainer
-    containers:
-      cell_slot: !type:ContainerSlot {}
-  - type: PowerCellSlot
-    cellSlotId: cell_slot
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: RMCPowerCell
+    - type: ContainerContainer
+      containers:
+        cell_slot: !type:ContainerSlot { }
+    - type: PowerCellSlot
+      cellSlotId: cell_slot
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: RMCPowerCell
 
 - type: entity
   parent: RMCPowerCellSlot
   id: RMCPowerCellSlotUnremovable
   abstract: true
   components:
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: RMCPowerCell
-        locked: true
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: RMCPowerCell
+          locked: true
 
 - type: entity
   parent: RMCPowerCellSlot
   id: RMCPowerCellSlotUnremovableSuper
   abstract: true
   components:
-  - type: ItemSlots
-    slots:
-      cell_slot:
-        name: power-cell-slot-component-slot-name-default
-        startingItem: RMCPowerCellSuper
-        locked: true
+    - type: ItemSlots
+      slots:
+        cell_slot:
+          name: power-cell-slot-component-slot-name-default
+          startingItem: RMCPowerCellSuper
+          locked: true

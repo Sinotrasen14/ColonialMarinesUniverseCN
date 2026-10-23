@@ -24,7 +24,7 @@
         volume: -5
     initialBeepDelay: 0
     beepInterval: 10
-    popup:
+    popup: null
   - type: TimerTriggerVisuals
   - type: IgnorePredictionHide
   - type: Clothing
@@ -82,15 +82,12 @@
   - CMGrenadeBase
   - RMCM40DPTags
   id: CMGrenadeHighExplosive
-  # cmu edit start: M40 HEDP designation and impact fuse (cmss13-pve#517)
+  # cmu edit start: M40 HEDP designation (cmss13-pve#517)
   name: M40高爆双用途榴弹
-  description: 高爆双用途。一种小巧却强得出奇的榴弹，正在逐步淘汰 M15 高爆榴弹。爆炸时会产生强力爆破。可由榴弹发射器发射以撞击引爆，也可在手中激活引信后投掷，4 秒后引爆。
+  description: "高爆双用途榴弹。体积小巧，爆炸威力却不容小觑，正逐步取代 M15 高爆榴弹。可装填榴弹发射器发射，也可拔销后手掷，在 4 秒后引爆。"
   # cmu edit end
   components:
   - type: CMUSmartGrenade # CMU14
-  # cmu edit start: detonate on impact when fired from a launcher (cmss13-pve#517)
-  - type: TriggerOnFixedDistanceStop
-  # cmu edit end
   # cmu edit start: the mob it hits from a launcher isn't stunned
   - type: CMULauncherImpactNoStun
   # cmu edit end
@@ -141,7 +138,7 @@
   - type: DeleteOnTrigger
   # cmu edit start: use the standard grenade arm sound
   - type: TimerTriggerVisuals
-    primingSound:
+    primingSound: null
   # cmu edit end
   - type: Tag
     tags:
@@ -194,7 +191,7 @@
 - type: entity
   parent: Smoke
   id: RMCSmokePhosphorusNoSpread
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Transform
     anchored: true
@@ -272,10 +269,6 @@
   name: 30毫米高爆破片杀伤榴弹
   description: 高爆破片杀伤人员弹。一种体型小巧但威力出人意料地强的破片榴弹，正与30毫米高爆双用途弹一同逐步取代M15破片榴弹。可装填进榴弹发射器，也可用手投掷。
   components:
-  # cmu edit start: not dual-purpose, so no impact fuse; the launcher's own fuse sets it off (cmss13-pve#517)
-  - type: TriggerOnFixedDistanceStop
-    delay: 10
-  # cmu edit end
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/m40hefa.rsi
   - type: Explosive
@@ -314,10 +307,6 @@
   components:
   - type: CMUSmartGrenade # CMU14
     enabled: false
-  # cmu edit start: not dual-purpose, so no impact fuse; the launcher's own fuse sets it off (cmss13-pve#517)
-  - type: TriggerOnFixedDistanceStop
-    delay: 10
-  # cmu edit end
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Grenades/m15frag.rsi
   - type: Explosive
@@ -437,7 +426,7 @@
   - type: DeleteOnTrigger
   # cmu edit start: use the standard grenade arm sound
   - type: TimerTriggerVisuals
-    primingSound:
+    primingSound: null
   # cmu edit end
   - type: SpawnOnTrigger
     proto: RMCSmokePhosphorusWeak
@@ -476,7 +465,7 @@
     keyOut: trigger
     examinable: false
     initialBeepDelay: 0
-    beepSound:
+    beepSound: null
   - type: RandomTimerTrigger
     min: 1
     max: 4
@@ -572,7 +561,7 @@
 
 - type: entity
   id: CMExplosionEffectGrenade
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _RMC14/Effects/grenade_explosion.rsi
@@ -582,7 +571,7 @@
 
 - type: entity
   id: RMCExplosionEffectGrenadeShockWave
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: TimedDespawn
     lifetime: 0.5
@@ -590,7 +579,7 @@
 
 - type: entity
   id: CMExplosionEffectShrapnel1
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: CollisionWake
   - type: Physics
@@ -599,7 +588,8 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape: !type:PhysShapeAabb
+        shape:
+          !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 20
         mask:
@@ -616,7 +606,7 @@
 - type: entity
   parent: CMExplosionEffectShrapnel1
   id: CMExplosionEffectShrapnel2
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     state: shrapnel_bright2

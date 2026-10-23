@@ -4,7 +4,8 @@ edit-solutions-verb-get-data-text = 编辑溶液
 explode-verb-get-data-text = 爆炸
 ahelp-verb-get-data-text = 发送消息
 admin-verbs-admin-logs-entity = 实体日志
-admin-verbs-admin-logs-player = 玩家日志
+# CMU14: renamed from "Player Logs"
+admin-verbs-admin-logs-player = 查看日志
 admin-verbs-teleport-to = 传送至目标
 admin-verbs-teleport-here = 传送到此处
 admin-verbs-freeze = 冻结

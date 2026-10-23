@@ -1,8 +1,10 @@
 rmc-xeno-failed-cant-infect = 我们无法感染{THE($target)}！
 rmc-xeno-failed-cant-reach = 我们够不到{$target}，他们需要躺下！
 rmc-xeno-failed-target-dead = 我们无法感染死者！
+# cmu edit start: lore names
 rmc-xeno-infect-success = 这只小异形撞碎了{$target}的{$clothing}并把它扯了下来！
 rmc-xeno-infect-fail = 这只小异形撞在了{$target}的{$clothing}上！
+# cmu edit end
 rmc-xeno-failed-parasite-dead = 我们无法用死去的后代感染！
 rmc-xeno-cant-throw = 我们无法扔出{THE($target)}！
 

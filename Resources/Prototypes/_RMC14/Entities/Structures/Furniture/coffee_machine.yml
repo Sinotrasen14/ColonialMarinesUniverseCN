@@ -3,7 +3,10 @@
   id: RMCCoffeeMachine
   name: 咖啡机
   description: 一台咖啡机
-  components: #TODO: Make the coffee machine actually function
+  components:
+  # cmu edit start: brews coffee into a cup or mug used on it
+  - type: CMUCoffeeMachine
+  # cmu edit end
   - type: Transform
     noRot: true
   - type: Physics
@@ -17,7 +20,8 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape: !type:PhysShapeCircle
+        shape:
+          !type:PhysShapeCircle
           radius: 0.03
         density: 155
         mask:
@@ -30,7 +34,8 @@
     damageContainer: StructuralMarine
   - type: Destructible
     thresholds:
-    - trigger: !type:DamageTrigger
+    - trigger:
+        !type:DamageTrigger
         damage: 50
       behaviors:
       - !type:DoActsBehavior

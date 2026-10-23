@@ -81,6 +81,7 @@ public sealed class XenoAbilityPreviewOverlay : Overlay
     private readonly SharedPhysicsSystem _physics;
     private readonly SharedTransformSystem _transform;
     private readonly LineSystem _line;
+    private readonly SharedXenoBurrowSystem _burrow;
     private readonly EntityQuery<ActionsComponent> _actionsQ;
     private readonly EntityQuery<TargetActionComponent> _targetActionQ;
     private readonly EntityQuery<WorldTargetActionComponent> _worldTargetQ;
@@ -125,6 +126,7 @@ public sealed class XenoAbilityPreviewOverlay : Overlay
         _sprayQ = ents.GetEntityQuery<XenoSprayAcidComponent>();
         _bombardQ = ents.GetEntityQuery<XenoBombardComponent>();
         _burrowQ = ents.GetEntityQuery<XenoBurrowComponent>();
+        _burrow = ents.System<SharedXenoBurrowSystem>();
         _resinSurgeQ = ents.GetEntityQuery<XenoResinSurgeComponent>();
         _reinforcableQ = ents.GetEntityQuery<ResinSurgeReinforcableComponent>();
         _fruitQ = ents.GetEntityQuery<XenoFruitComponent>();
@@ -805,14 +807,15 @@ public sealed class XenoAbilityPreviewOverlay : Overlay
             return;
 
         var color = BurrowOutlineColor.WithAlpha(OutlineAlpha);
-        DrawTileRange(args, originMap, range, color);
+        DrawTileRange(args, originMap, range, color, _burrow.CanTunnelTo);
     }
 
     private void DrawTileRange(
         in OverlayDrawArgs args,
         MapCoordinates originMap,
         float range,
-        Color color)
+        Color color,
+        Func<TileRef, bool>? canTarget = null)
     {
         if (!_mapSystem.TryFindGridAt(originMap, out var gridUid, out var grid))
             return;
@@ -833,7 +836,7 @@ public sealed class XenoAbilityPreviewOverlay : Overlay
             }
         }
 
-        DrawTileBorder(args.WorldHandle, gridUid, grid, tiles, color);
+        DrawTileBorder(args.WorldHandle, gridUid, grid, tiles, color, canTarget);
     }
 
     private void DrawTileRangeIntersecting(
@@ -881,7 +884,12 @@ public sealed class XenoAbilityPreviewOverlay : Overlay
         if (direction.Length() > range)
             mousePos = originMap.Offset(direction.Normalized() * range);
 
-        var color = BurrowOutlineColor.WithAlpha(OutlineAlpha);
+        if (!_mapSystem.TryFindGridAt(mousePos, out var gridUid, out var grid))
+            return;
+
+        var color = (_burrow.CanTunnelTo(_mapSystem.GetTileRef(gridUid, grid, mousePos))
+            ? BurrowOutlineColor
+            : InvalidOutlineColor).WithAlpha(OutlineAlpha);
         DrawLandingTile(args, mousePos, color);
     }
 
@@ -1057,7 +1065,8 @@ public sealed class XenoAbilityPreviewOverlay : Overlay
         DrawTileBorder(handle, info.GridUid, info.Grid, tiles, color);
     }
 
-    private void DrawTileBorder(DrawingHandleWorld handle, EntityUid gridUid, MapGridComponent grid, HashSet<Vector2i> tiles, Color color)
+    private void DrawTileBorder(DrawingHandleWorld handle, EntityUid gridUid, MapGridComponent grid, HashSet<Vector2i> tiles, Color color,
+        Func<TileRef, bool>? canTarget = null)
     {
         if (tiles.Count == 0)
             return;
@@ -1067,6 +1076,10 @@ public sealed class XenoAbilityPreviewOverlay : Overlay
 
         foreach (var indices in tiles)
         {
+            // Keep invalid tiles as neighbors so they do not acquire yellow inner borders.
+            if (canTarget != null && !canTarget(_mapSystem.GetTileRef(gridUid, grid, indices)))
+                continue;
+
             var baseLocal = new Vector2(indices.X * tileSize, indices.Y * tileSize);
             var p00 = _transform.ToMapCoordinates(new EntityCoordinates(gridUid, baseLocal)).Position;
             var p10 = _transform.ToMapCoordinates(new EntityCoordinates(gridUid, baseLocal + new Vector2(tileSize, 0f))).Position;

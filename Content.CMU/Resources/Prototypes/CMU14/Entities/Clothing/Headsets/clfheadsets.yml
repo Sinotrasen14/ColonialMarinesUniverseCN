@@ -2,7 +2,7 @@
   parent: AU14EncryptionKey
   id: AU14EncryptionKeyCLF
   name: 修改后的殖民地加密密钥
-  description: 一种用于在殖民地与CLF无线电频道上通信的加密密钥。
+  description: 一种用于在殖民地与INSFOR无线电频道上通信的加密密钥。
   components:
   - type: EncryptionKey
     channels:
@@ -13,9 +13,9 @@
 - type: entity
   parent: RMCBaseUniformAccessory
   id: AU14CLFHeadset
-  name: CLF 耳机
-  description: CLF特工使用的小型隐蔽耳机。佩戴时几乎隐形，可 discreetly 夹在制服上。
-  suffix: CLF, Colony
+  name: INSFOR 耳塞
+  description: INSFOR特工使用的小型隐蔽耳塞。佩戴时几乎隐形，可隐蔽地夹在制服上。
+  suffix: INSFOR, Colony
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Clothing/headsets.rsi

@@ -2,7 +2,7 @@
   parent: [ CMBaseWeaponRifle, RMCBaseWeaponMagazineVisuals ]
   name: XM20A2脉冲步枪
   id: AUWeaponRifleXM20A2HAZOPS
-  description: 作为M20A哈林顿步枪的可能后继型号而研发，XM20A2从未在美国殖民海军陆战队中全面服役，并被M41所取代。这种经过大幅改装的变体被配发给HAZOPS，以增强他们的中远距离作战能力。大弹匣，高射速，但弹鼓只能装填标准10x24mm弹药，且导轨无法安装现代配件。
+  description: 作为M20A哈林顿步枪的可能后继型号而研发，XM20A2从未在美国殖民海军陆战队中全面服役，并被M41所取代。这种经过大幅改装的变体被配发给HAZOPS，以增强他们的中远距离作战能力。大容量弹鼓，高射速，但弹鼓只能装填标准10×24毫米弹药，且导轨仅支持紧凑型瞄准镜。
   components:
   - type: Sprite
     sprite: CMU14/Weapons/Guns/HAZOPS/XM20A246x32.rsi
@@ -61,6 +61,15 @@
   - type: RMCWeaponAccuracy
     accuracyMultiplier: 0.95
     accuracyMultiplierUnwielded: 0.65
+  - type: AttachableHolder
+    slots:
+      rmc-aslot-rail:
+        whitelist:
+          tags:
+          - RMCAttachmentS42xTelescopicMiniscope
+  - type: AttachableHolderVisuals
+    offsets:
+      rmc-aslot-rail: -0.21, 0.13
 
 - type: entity
   parent: CMMagazineRifleBase

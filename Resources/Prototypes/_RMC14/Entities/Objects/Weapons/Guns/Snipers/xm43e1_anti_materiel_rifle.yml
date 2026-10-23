@@ -11,24 +11,21 @@
     whitelist:
       components:
       - SniperWhitelist
+  # cmu edit start: CM13 AMR resprite (cmss13-devs/cmss13#12397); the muzzle brake is part of the new sprite
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Snipers/xm43e1/xm43e1_inhands.rsi
+    sprite: CMU14/Weapons/Snipers/xm43e1_inhands.rsi
     layers:
-    - state: base
-      sprite: _RMC14/Objects/Weapons/Guns/Snipers/xm43e1/xm43e1_icon.rsi
     - state: bolt-open
-      sprite: _RMC14/Objects/Weapons/Guns/Snipers/xm43e1/xm43e1_icon.rsi
-      map: ["enum.GunVisualLayers.Base"]
+      sprite: CMU14/Weapons/Snipers/xm43e1_icon.rsi
+      map: [ "enum.GunVisualLayers.Base" ]
     - state: mag-0
-      sprite: _RMC14/Objects/Weapons/Guns/Snipers/xm43e1/xm43e1_icon.rsi
-      map: ["enum.GunVisualLayers.Mag"]
-#    - sprite: _RMC14/Objects/Weapons/Guns/Attachments/barrel.rsi
-#      state: pmc_sniperbarrel
-#      offset: 0.500, 0.050
+      sprite: CMU14/Weapons/Snipers/xm43e1_icon.rsi
+      map: [ "enum.GunVisualLayers.Mag" ]
   - type: Item
     size: Large
   - type: Clothing
-    sprite: _RMC14/Objects/Weapons/Guns/Snipers/xm43e1/xm43e1_inhands.rsi
+    sprite: CMU14/Weapons/Snipers/xm43e1_inhands.rsi
+  # cmu edit end
   - type: Tag
     tags:
     - RMCXM43E1AntiMaterielRifle
@@ -105,14 +102,16 @@
     - RMCMagazineXM43E1
     - CMMagazineSniper
   - type: BallisticAmmoProvider
-    mayTransfer: true
+    mayTransfer: True
     whitelist:
       tags:
       - RMCCartridgeSniper10x99mmAntiMateriel
     proto: RMCCartridgeSniper10x99mmAntiMateriel
     capacity: 8
   - type: Sprite
-    sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Magazines/xm43e1.rsi
+    # cmu edit start: CM13 AMR resprite magazine (cmss13-devs/cmss13#12397)
+    sprite: CMU14/Weapons/Ammunition/xm43e1_magazine.rsi
+    # cmu edit end
     layers:
     - state: mag-0
       map: ["enum.GunVisualLayers.Base"]
@@ -136,7 +135,7 @@
   parent: CMBulletSniper10x28mm
   id: RMCBulletSniper10x99mmAntiMateriel
   name: 子弹（10×99毫米）
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     deleteOnCollide: false

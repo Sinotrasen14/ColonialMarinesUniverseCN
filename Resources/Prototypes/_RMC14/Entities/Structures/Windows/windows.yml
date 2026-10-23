@@ -78,6 +78,9 @@
   name: 船体窗
   description: 一扇墙框内带有特殊杆状矩阵的玻璃窗。这一扇由异域材料制成，用以防止船体破损。无法从这里穿过。
   components:
+#cmu edit start: breakable once a hijacked dropship crashes into the ship
+  - type: CMUCrashBreakableHull
+#cmu edit end
   - type: Corrodible
     isCorrodible: false
   - type: Sprite
@@ -99,6 +102,9 @@
   name: 船体窗
   description: 一扇玻璃窗，墙框内嵌有特殊的杆状矩阵。这一扇由奇异材料制成，用于防止船体破损。这里无法通过。
   components:
+#cmu edit start: breakable once a hijacked dropship crashes into the ship
+  - type: CMUCrashBreakableHull
+#cmu edit end
   - type: Corrodible
     isCorrodible: false
   - type: Sprite
@@ -118,6 +124,9 @@
   name: 船体窗
   description: 一扇玻璃窗，壁框内嵌有特殊的杆状矩阵。这一扇由奇异材料制成，用于防止船体破损。无法从这里通过。
   components:
+#cmu edit start: breakable once a hijacked dropship crashes into the ship
+  - type: CMUCrashBreakableHull
+#cmu edit end
   - type: Corrodible
     isCorrodible: false
   - type: Sprite

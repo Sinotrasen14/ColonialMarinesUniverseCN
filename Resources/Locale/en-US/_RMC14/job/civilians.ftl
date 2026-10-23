@@ -1,4 +1,4 @@
-# Non Marine Personnel
+﻿# Non Marine Personnel
 cm-job-name-correspondent = 战地记者
 cm-job-description-correspondent = 报道任何你认为适合刊登在报纸上的事情。
 cm-job-prefix-correspondent = PRESS
@@ -9,8 +9,10 @@ cm-job-description-liaison = 通过发送传真和与殖民地管理者沟通，
 cm-job-prefix-liaison = CL
 CMJobLiaison = 企业联络官
 
-rmc-job-name-synth = UNMC合成体
-rmc-job-description-synth = 支援并协助UNMC各部门和人员。
+# cmu edit start: lore names
+rmc-job-name-synth = USCM合成体
+rmc-job-description-synth = 支援并协助USCM各部门和人员。
+# cmu edit end
 rmc-job-prefix-synth = SYN
 RMCJobSynthetic = 合成体
 

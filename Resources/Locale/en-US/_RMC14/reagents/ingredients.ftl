@@ -1,4 +1,4 @@
-reagent-name-rmc-cherry-jelly = 樱桃果冻
+﻿reagent-name-rmc-cherry-jelly = 樱桃果冻
 reagent-desc-rmc-cherry-jelly = 用樱桃果实制成的甜果冻。
 
 reagent-name-rmc-peanut-butter = 花生酱
@@ -33,3 +33,33 @@ reagent-desc-ice-cafe = 一杯香气扑鼻的咖啡冰沙。
 
 reagent-name-swiss-lemonade = 瑞士柠檬水
 reagent-desc-swiss-lemonade = 说来好笑，它其实并不瑞士，也没有柠檬！
+
+reagent-name-instant-orange-powder = 橙味饮料粉
+reagent-desc-instant-orange-powder = 加水即可冲调成橙汁的粉末。闻起来——没错，就是橙子的味道。
+
+reagent-name-instant-apple-powder = 苹果味饮料粉
+reagent-desc-instant-apple-powder = 加水即可冲调成苹果汁的粉末。闻起来——没错，就是苹果的味道。
+
+reagent-name-instant-watermelon-powder = 西瓜味饮料粉
+reagent-desc-instant-watermelon-powder = 加水即可冲调成西瓜汁的粉末。闻起来——没错，就是西瓜的味道。
+
+reagent-name-instant-grape-powder = 葡萄味饮料粉
+reagent-desc-instant-grape-powder = 加水即可冲调成葡萄汁的粉末。闻起来——没错，就是葡萄的味道。
+
+reagent-name-instant-pineapple-powder = 菠萝味饮料粉
+reagent-desc-instant-pineapple-powder = 加水即可冲调成菠萝汁的粉末。闻起来——没错，居然是橙子味。
+
+reagent-name-instant-orange = 速溶橙汁
+reagent-desc-instant-orange = 既美味又富含维生素 C，还能有什么奢求？
+
+reagent-name-instant-apple = 速溶苹果汁
+reagent-desc-instant-apple = 苹果清甜的滋味，如今也能畅饮了。
+
+reagent-name-instant-watermelon = 速溶西瓜汁
+reagent-desc-instant-watermelon = 用西瓜制成的美味果汁。
+
+reagent-name-instant-grape = 速溶葡萄汁
+reagent-desc-instant-grape = 葡——萄——味，棒极了！
+
+reagent-name-instant-pineapple = 速溶菠萝汁
+reagent-desc-instant-pineapple = 酸甜清爽，滋味宜人。

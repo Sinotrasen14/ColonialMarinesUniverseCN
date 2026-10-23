@@ -7,7 +7,8 @@
   - type: Fixtures
     fixtures:
       fix1:
-        shape: !type:PhysShapeAabb
+        shape:
+          !type:PhysShapeAabb
           bounds: "-0.25,-0.25,0.25,0.25"
         density: 20
         mask:
@@ -21,11 +22,18 @@
   - type: ExpendableLight
     spentName: expendable-light-spent-flare-name
     spentDesc: expendable-light-spent-flare-desc
-    glowDuration: 600
-    fadeOutDuration: 30
+    glowDuration: 5
+    phaseOneDuration: 45
+    phaseTwoDuration: 525
+    phaseThreeDuration: 90
+    phaseFourDuration: 90
+    phaseFiveDuration: 90
+    fadeOutDuration: 120
     iconStateSpent: flare_spent
     turnOnBehaviourID: turn_on
     fadeOutBehaviourID: fade_out
+    heldPrefixLit: null
+    heldPrefixUnlit: null
     litSound:
       path: /Audio/_RMC14/Machines/flare_activate_2.ogg
       params:
@@ -34,20 +42,34 @@
   - type: Sprite
     sprite: _RMC14/Objects/Misc/flares.rsi
     layers:
-    - map: ["enum.ExpendableLightVisualLayers.Base"]
-      state: flare
-    - map: ["enum.ExpendableLightVisualLayers.Glow"]
-      state: flare_flame
-      color: "#FFA7A7"
-      visible: false
-    - map: ["enum.ExpendableLightVisualLayers.Overlay"]
-      state: overlay
+      - map: [ "enum.ExpendableLightVisualLayers.Base" ]
+        state: flare
+      - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
+        state: flare_flame
+        color: "#FFA7A7"
+        visible: false
+      - map: [ "enum.ExpendableLightVisualLayers.Overlay" ]
+        state: overlay
   - type: Icon
     sprite: _RMC14/Objects/Misc/flares.rsi
     state: icon
   - type: Item
     size: Small
-    heldPrefix: unlit
+    sprite: _RMC14/Objects/Misc/flares.rsi
+    inhandVisuals:
+      left:
+      - state: inhand-left
+      right:
+      - state: inhand-right
+  - type: ToggleableVisuals
+    spriteLayer: flame
+    inhandVisuals:
+      left:
+      - state: inhand-left-flame
+        color: "#FFA7A7"
+      right:
+      - state: inhand-right-flame
+        color: "#FFA7A7"
   - type: Appearance
   - type: PointLight
     enabled: false
@@ -57,18 +79,41 @@
     netsync: false
   - type: LightBehaviour
     behaviours:
-                            # faster then base flares
-    - !type:FadeBehaviour
-      id: turn_on
-      maxDuration: 5.0
-      startValue: 2.5
-      endValue: 7.0
-                            # burns out slower
-    - !type:FadeBehaviour
-      id: fade_out
-      maxDuration: 570
-      startValue: 7.0
-      endValue: 1.0
+      - !type:FadeBehaviour
+        id: turn_on
+        maxDuration: 5
+        startValue: 2.5
+        endValue: 7
+      - !type:FadeBehaviour
+        id: phase_1
+        maxDuration: 45
+        startValue: 7
+        endValue: 6
+      - !type:FadeBehaviour
+        id: phase_2
+        maxDuration: 525
+        startValue: 6
+        endValue: 5
+      - !type:FadeBehaviour
+        id: phase_3
+        maxDuration: 90
+        startValue: 5
+        endValue: 4
+      - !type:FadeBehaviour
+        id: phase_4
+        maxDuration: 90
+        startValue: 4
+        endValue: 3
+      - !type:FadeBehaviour
+        id: phase_5
+        maxDuration: 90
+        startValue: 3
+        endValue: 2
+      - !type:FadeBehaviour
+        id: fade_out
+        maxDuration: 120
+        startValue: 2
+        endValue: 1
   - type: RMCNightVisionVisibleOnIgnite
   - type: CartridgeAmmo
     deleteOnSpawn: true
@@ -88,38 +133,81 @@
   - type: Sprite
     sprite: _RMC14/Objects/Misc/cas_flares.rsi
     layers:
-    - map: ["enum.ExpendableLightVisualLayers.Base"]
+    - map: [ "enum.ExpendableLightVisualLayers.Base" ]
       state: flare
-    - map: ["enum.ExpendableLightVisualLayers.Glow"]
+    - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
       sprite: _RMC14/Objects/Misc/cas_flares.rsi
       state: flare_flame
       color: "#A7FFA7"
       visible: false
-    - map: ["enum.ExpendableLightVisualLayers.Overlay"]
+    - map: [ "enum.ExpendableLightVisualLayers.Overlay" ]
       sprite: _RMC14/Objects/Misc/cas_flares.rsi
       state: overlay
   - type: Icon
     sprite: _RMC14/Objects/Misc/cas_flares.rsi
     state: flare
+  - type: ToggleableVisuals
+    spriteLayer: flame
+    inhandVisuals:
+      left:
+      - state: inhand-left-flame
+        color: "#A7FFA7"
+      right:
+      - state: inhand-right-flame
+        color: "#A7FFA7"
+  - type: Item
+    size: Small
+    heldPrefix: unlit
+    sprite: _RMC14/Objects/Misc/cas_flares.rsi
   - type: PointLight
     color: "#AACCAA"
   - type: FlareSignal
   - type: ExpendableLight
-    glowDuration: 180
+    glowDuration: 5
+    phaseOneDuration: 150
+    phaseTwoDuration: 0
+    phaseThreeDuration: 0
+    phaseFourDuration: 0
+    phaseFiveDuration: 0
+    fadeOutDuration: 25
+    acidDamageMultiplier: 2
   - type: LightBehaviour
     behaviours:
-                          # faster then base flares
     - !type:FadeBehaviour
       id: turn_on
-      maxDuration: 5.0
+      maxDuration: 5
       startValue: 2.5
-      endValue: 7.0
-                          # burns out slower
+      endValue: 5
+    - !type:FadeBehaviour
+      id: phase_1
+      maxDuration: 150
+      startValue: 5
+      endValue: 5
+    - !type:FadeBehaviour
+      id: phase_2
+      maxDuration: 0
+      startValue: 5
+      endValue: 5
+    - !type:FadeBehaviour
+      id: phase_3
+      maxDuration: 0
+      startValue: 5
+      endValue: 5
+    - !type:FadeBehaviour
+      id: phase_4
+      maxDuration: 0
+      startValue: 5
+      endValue: 5
+    - !type:FadeBehaviour
+      id: phase_5
+      maxDuration: 0
+      startValue: 5
+      endValue: 5
     - !type:FadeBehaviour
       id: fade_out
-      maxDuration: 150
-      startValue: 7.0
-      endValue: 1.0
+      maxDuration: 25
+      startValue: 5
+      endValue: 1
   - type: CartridgeAmmo
     proto: RMCFlareCASBullet
   - type: RMCAirProjectile
@@ -138,12 +226,12 @@
   - type: Sprite
     sprite: _RMC14/Objects/Misc/flares.rsi
     layers:
-    - map: ["enum.ExpendableLightVisualLayers.Glow"]
+    - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
       sprite: _RMC14/Objects/Misc/flares.rsi
       state: starshell_ash-on
       color: "#A7FFA7"
       visible: false
-    - map: ["enum.ExpendableLightVisualLayers.Overlay"]
+    - map: [ "enum.ExpendableLightVisualLayers.Overlay" ]
       sprite: _RMC14/Objects/Misc/flares.rsi
       state: starshell_ash
   - type: Icon
@@ -154,24 +242,54 @@
     energy: 1.5
   - type: ExpendableLight
     pickupWhileOn: false
-    glowDuration: 375
+    glowDuration: 5
+    phaseOneDuration: 30
+    phaseTwoDuration: 240
+    phaseThreeDuration: 30
+    phaseFourDuration: 30
+    phaseFiveDuration: 30
     fadeOutDuration: 30
     spentName: expendable-light-starshell-ash-empty-name
     spentDesc: expendable-light-starshell-ash-empty-desc
     iconStateSpent: starshell_ash-empty
-    loopedSound:
+    loopedSound: null
   - type: LightBehaviour
     behaviours:
     - !type:FadeBehaviour
       id: turn_on
-      maxDuration: 5.0
+      maxDuration: 5
       startValue: 2.5
-      endValue: 7.0
+      endValue: 6
+    - !type:FadeBehaviour
+      id: phase_1
+      maxDuration: 30
+      startValue: 6
+      endValue: 5
+    - !type:FadeBehaviour
+      id: phase_2
+      maxDuration: 240
+      startValue: 5
+      endValue: 4
+    - !type:FadeBehaviour
+      id: phase_3
+      maxDuration: 30
+      startValue: 4
+      endValue: 3
+    - !type:FadeBehaviour
+      id: phase_4
+      maxDuration: 30
+      startValue: 3
+      endValue: 2
+    - !type:FadeBehaviour
+      id: phase_5
+      maxDuration: 30
+      startValue: 2
+      endValue: 1.5
     - !type:FadeBehaviour
       id: fade_out
-      maxDuration: 375
-      startValue: 7.0
-      endValue: 1.0
+      maxDuration: 30
+      startValue: 1.5
+      endValue: 1
 
 - type: entity
   parent: RMCBoxMagazineSupplySmallBase
@@ -196,17 +314,17 @@
     - state: supply_box_small
       color: "#646a3c"
     - state: supply_ammo_small_full
-      map: ["enum.CMItemSlotsLayers.Fill"]
+      map: [ "enum.CMItemSlotsLayers.Fill" ]
       color: "#867872"
     - state: supply_box_small_flare
       color: "#646a3c"
     - state: supply_box_small_flare_colour
       color: "#f0c16f"
     - state: supply_lid_small_closed
-      map: ["lid"]
+      map: [ "lid" ]
       color: "#646a3c"
     - state: supply_lid_small_closed_marking
-      map: ["lid_marking"]
+      map: [ "lid_marking" ]
       color: "#646a3c"
 
 - type: entity
@@ -240,17 +358,17 @@
     - state: supply_box_small
       color: "#646a3c"
     - state: supply_ammo_small_full
-      map: ["enum.CMItemSlotsLayers.Fill"]
+      map: [ "enum.CMItemSlotsLayers.Fill" ]
       color: "#867872"
     - state: supply_box_small_flare
       color: "#646a3c"
     - state: supply_box_small_flare_colour
       color: "#f06f6f"
     - state: supply_lid_small_closed
-      map: ["lid"]
+      map: [ "lid" ]
       color: "#646a3c"
     - state: supply_lid_small_closed_marking
-      map: ["lid_marking"]
+      map: [ "lid_marking" ]
       color: "#646a3c"
 
 - type: entity
@@ -284,25 +402,25 @@
     sprite: _RMC14/Objects/Storage/boxes.rsi
     layers:
     - state: m94_e
-      map: ["emptyLayer"]
+      map: [ "emptyLayer" ]
     - state: m94
-      map: ["fullLayer"]
+      map: [ "fullLayer" ]
   - type: Appearance
   - type: GenericVisualizer
     visuals:
       enum.CMItemSlotsLayers.Fill:
         fullLayer:
-          Empty: {visible: false}
-          Low: {visible: true}
-          Medium: {visible: true}
-          High: {visible: true}
-          Full: {visible: true}
+          Empty: { visible: false }
+          Low: { visible: true }
+          Medium: { visible: true }
+          High: { visible: true }
+          Full: { visible: true }
         emptyLayer:
-          Empty: {visible: true}
-          Low: {visible: false}
-          Medium: {visible: false}
-          High: {visible: false}
-          Full: {visible: false}
+          Empty: { visible: true }
+          Low: { visible: false }
+          Medium: { visible: false }
+          High: { visible: false }
+          Full: { visible: false }
 
 - type: entity
   parent: CMPackFlareBase
@@ -325,9 +443,9 @@
   - type: Sprite
     layers:
     - state: m89_e
-      map: ["emptyLayer"]
+      map: [ "emptyLayer" ]
     - state: m89
-      map: ["fullLayer"]
+      map: [ "fullLayer" ]
   - type: CMItemSlots
     count: 8
     startingItem: RMCFlareCAS
@@ -340,7 +458,7 @@
   parent: RMCBaseBullet
   id: RMCFlareBullet
   name: 照明弹
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/airburst_projectiles.rsi
@@ -379,7 +497,8 @@
   - type: Fixtures
     fixtures:
       projectile:
-        shape: !type:PhysShapeAabb
+        shape:
+          !type:PhysShapeAabb
           bounds: "-0.15,-0.45,0.15,0.15"
         hard: false
         mask:
@@ -390,7 +509,7 @@
   parent: RMCFlareBullet
   id: RMCFlareCASBullet
   name: 信号弹
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/airburst_projectiles.rsi
@@ -407,26 +526,36 @@
 - type: entity
   id: RMCAirFlare
   name: 大回环
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: ExpendableLight
     startsActivated: true
-    glowDuration: 150
+    glowDuration: 5
+    phaseOneDuration: 295
+    phaseTwoDuration: 0
+    phaseThreeDuration: 0
+    phaseFourDuration: 0
+    phaseFiveDuration: 0
     fadeOutDuration: 30
     turnOnBehaviourID: turn_on
     fadeOutBehaviourID: fade_out
   - type: LightBehaviour
     behaviours:
-    - !type:FadeBehaviour
-      id: turn_on
-      maxDuration: 5.0
-      startValue: 2.5
-      endValue: 7.0
-    - !type:FadeBehaviour
-      id: fade_out
-      maxDuration: 30
-      startValue: 7.0
-      endValue: 1.0
+      - !type:FadeBehaviour
+        id: turn_on
+        maxDuration: 5.0
+        startValue: 2.5
+        endValue: 7.0
+      - !type:FadeBehaviour
+        id: phase_1
+        maxDuration: 295
+        startValue: 7
+        endValue: 7
+      - !type:FadeBehaviour
+        id: fade_out
+        maxDuration: 30
+        startValue: 7.0
+        endValue: 1.0
   - type: Appearance
   - type: PointLight
     enabled: false
@@ -435,43 +564,48 @@
     radius: 8.0
     energy: 0.6
   - type: TimedDespawn
-    lifetime: 180
+    lifetime: 330
 
 - type: entity
   parent: RMCAirFlare
   id: RMCAirFlareCAS
   name: 空中信号弹
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Tag
     tags:
     - RMCFlareCAS
   - type: ExpendableLight
     startsActivated: true
-    glowDuration: 150
+    glowDuration: 5
+    phaseOneDuration: 145
+    phaseTwoDuration: 0
+    phaseThreeDuration: 0
+    phaseFourDuration: 0
+    phaseFiveDuration: 0
   - type: Sprite
     sprite: _RMC14/Objects/Misc/air_flare.rsi
     layers:
-    - map: ["enum.ExpendableLightVisualLayers.Glow"]
+    - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
       state: air_flame
       color: "#A7FFA7"
   - type: LightBehaviour
     behaviours:
-    - !type:FadeBehaviour
-      id: turn_on
-      maxDuration: 5
-      startValue: 2.5
-      endValue: 5
-    - !type:FadeBehaviour
-      id: phase_1
-      maxDuration: 145
-      startValue: 5
-      endValue: 5
-    - !type:FadeBehaviour
-      id: fade_out
-      maxDuration: 30
-      startValue: 5
-      endValue: 1
+      - !type:FadeBehaviour
+        id: turn_on
+        maxDuration: 5
+        startValue: 2.5
+        endValue: 5
+      - !type:FadeBehaviour
+        id: phase_1
+        maxDuration: 145
+        startValue: 5
+        endValue: 5
+      - !type:FadeBehaviour
+        id: fade_out
+        maxDuration: 30
+        startValue: 5
+        endValue: 1
   - type: PointLight
     color: "#A7FFA7"
     radius: 8.0
@@ -494,56 +628,35 @@
   - type: Tag
     tags:
     - RMCFlareL96
-  - type: ExpendableLight
-    spentName: expendable-light-spent-flare-name
-    spentDesc: expendable-light-spent-flare-desc
-    glowDuration: 600
-    fadeOutDuration: 30
-    iconStateSpent: flare_spent
-    turnOnBehaviourID: turn_on
-    fadeOutBehaviourID: fade_out
-    litSound:
-      path: /Audio/_RMC14/Machines/flare_activate_2.ogg
-      params:
-        variation: 0.08
-    loopedSound: /Audio/Items/Flare/flare_burn.ogg
   - type: Sprite
     sprite: _RMC14/Objects/Misc/flares.rsi
     layers:
-    - map: ["enum.ExpendableLightVisualLayers.Base"]
-      state: flare
-    - map: ["enum.ExpendableLightVisualLayers.Glow"]
-      state: flare_flame
-      color: "#C156C2"
-      visible: false
-    - map: ["enum.ExpendableLightVisualLayers.Overlay"]
-      state: overlay
+      - map: [ "enum.ExpendableLightVisualLayers.Base" ]
+        state: flare
+      - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
+        state: flare_flame
+        color: "#C156C2"
+        visible: false
+      - map: [ "enum.ExpendableLightVisualLayers.Overlay" ]
+        state: overlay
   - type: Icon
     sprite: _RMC14/Objects/Misc/flares.rsi
     state: icon
-  - type: Item
-    size: Small
-    heldPrefix: unlit
-  - type: Appearance
+  - type: ToggleableVisuals
+    spriteLayer: flame
+    inhandVisuals:
+      left:
+      - state: inhand-left-flame
+        color: "#C156C2"
+      right:
+      - state: inhand-right-flame
+        color: "#C156C2"
   - type: PointLight
     enabled: false
     color: "#C8BFE7"
     radius: 1
     energy: 5.0
     netsync: false
-  - type: LightBehaviour
-    behaviours:
-    - !type:FadeBehaviour
-      id: turn_on
-      maxDuration: 5.0
-      startValue: 2.5
-      endValue: 7.0
-    - !type:FadeBehaviour
-      id: fade_out
-      maxDuration: 570
-      startValue: 7.0
-      endValue: 1.0
-  - type: RMCNightVisionVisibleOnIgnite
   - type: CartridgeAmmo
     deleteOnSpawn: true
     proto: RMCFlareL96Bullet
@@ -563,9 +676,9 @@
   - type: Sprite
     layers:
     - state: l96_e
-      map: ["emptyLayer"]
+      map: [ "emptyLayer" ]
     - state: l96
-      map: ["fullLayer"]   # TODO RMC14 proper sprites for this
+      map: [ "fullLayer" ] # TODO RMC14 proper sprites for this
   - type: CMItemSlots
     count: 8
     startingItem: RMCFlareL96
@@ -578,7 +691,7 @@
   parent: RMCFlareBullet
   id: RMCFlareL96Bullet
   name: L96照明弹
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
   - type: Sprite
     sprite: _RMC14/Objects/Weapons/Guns/Ammunition/Projectiles/airburst_projectiles.rsi
@@ -594,31 +707,17 @@
     energy: 7.0
 
 - type: entity
+  parent: RMCAirFlare
   id: RMCAirFlareL96
   name: 空中托马斯
-  categories: [HideSpawnMenu]
+  categories: [ HideSpawnMenu ]
   components:
-  - type: ExpendableLight
-    startsActivated: true
-    glowDuration: 150
   - type: Sprite
     sprite: _RMC14/Objects/Misc/air_flare.rsi
     layers:
-    - map: ["enum.ExpendableLightVisualLayers.Glow"]
+    - map: [ "enum.ExpendableLightVisualLayers.Glow" ]
       state: air_flame
       color: "#C8BFE7"
-  - type: LightBehaviour
-    behaviours:
-    - !type:FadeBehaviour
-      id: turn_on
-      maxDuration: 5.0
-      startValue: 2.5
-      endValue: 7.0
-    - !type:FadeBehaviour
-      id: fade_out
-      maxDuration: 30
-      startValue: 7.0
-      endValue: 1.0
   - type: PointLight
     enabled: true
     color: "#C8BFE7"

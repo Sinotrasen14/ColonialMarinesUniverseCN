@@ -7,6 +7,7 @@ using Content.Shared._RMC14.Xenonids.Acid;
 using Content.Shared._RMC14.Xenonids.Rest;
 using Content.Shared.ActionBlocker;
 using Content.Shared.Actions;
+using Content.Shared.Chasm;
 using Content.Shared.Coordinates;
 using Content.Shared.Coordinates.Helpers;
 using Content.Shared.Damage;
@@ -55,6 +56,8 @@ public abstract partial class SharedXenoBurrowSystem : EntitySystem
     [Dependency] private XenoSystem _xeno = default!;
     [Dependency] private SharedRMCActionsSystem _rmcActions = default!;
     [Dependency] private RMCPullingSystem _rmcPulling = default!;
+
+    private readonly HashSet<EntityUid> _targetIntersecting = new();
 
     public override void Initialize()
     {
@@ -370,9 +373,9 @@ public abstract partial class SharedXenoBurrowSystem : EntitySystem
                 return false;
             }
 
-            if (_turf.IsTileBlocked(tile, CollisionGroup.Impassable))
+            if (!CanTunnelTo(tile, out var failure))
             {
-                _popup.PopupEntity(Loc.GetString("rmc-xeno-burrow-move-failure-solid"), ent, ent);
+                _popup.PopupEntity(Loc.GetString(failure), ent, ent);
                 return false;
             }
         }
@@ -398,6 +401,33 @@ public abstract partial class SharedXenoBurrowSystem : EntitySystem
         else
             _popup.PopupEntity(Loc.GetString("rmc-xeno-burrow-move-break"), ent, ent);
         distance = burrowDistance;
+        return true;
+    }
+
+    public bool CanTunnelTo(TileRef tile)
+        => CanTunnelTo(tile, out _);
+
+    public bool CanTunnelTo(TileRef tile, [NotNullWhen(false)] out string? failure)
+    {
+        failure = "rmc-xeno-burrow-move-failure-solid";
+        if (_turf.IsSpace(tile) || _turf.IsTileBlocked(tile, CollisionGroup.Impassable))
+            return false;
+
+        var grid = Comp<MapGridComponent>(tile.GridUid);
+        // Chasms such as cargo elevators cover multiple tiles with a non-solid fixture.
+        _targetIntersecting.Clear();
+        _entityLookup.GetLocalEntitiesIntersecting(tile.GridUid, tile.GridIndices, _targetIntersecting,
+            enlargement: -0.025f * grid.TileSize, flags: LookupFlags.Uncontained, gridComp: grid);
+        foreach (var entity in _targetIntersecting)
+        {
+            if (HasComp<ChasmComponent>(entity))
+            {
+                failure = "rmc-xeno-burrow-move-failure-chasm";
+                return false;
+            }
+        }
+
+        failure = null;
         return true;
     }
 

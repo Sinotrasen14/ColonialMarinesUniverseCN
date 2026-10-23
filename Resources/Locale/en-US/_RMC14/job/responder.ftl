@@ -13,36 +13,38 @@ rmc-ghost-role-information-responder-rules = 你是一名[color=red][bold]传真
                                              不要滥用这一角色的权限。滥用权力或未能达到预期将导致被撤职，甚至更糟。
 
 
-#UNMC fax responder
+# UNMC fax responder
 rmc-job-name-unmc-responder = USCM通讯官
 rmc-job-description-unmc-responder = "你代表USCM地区指挥部，回复发送给USCM最高指挥部的传真。"
 
-#We-Ya fax responder
+# We-Ya fax responder
 rmc-job-name-weya-responder = We-Yu通讯主管
 rmc-job-description-weya-responder = "你代表地区We-Yu特别服务部门回复传真。"
 
-#Provost fax responder
+# Provost fax responder
 rmc-job-name-provost-responder = 宪兵通讯官
 rmc-job-description-provost-responder = "你代表地区宪兵总督察办公室，回复发送给宪兵总督察办公室的传真。"
 
-#Free Press fax responder
+# Free Press fax responder
 rmc-job-name-free-press-responder = 自由新闻
 rmc-job-description-free-press-responder = "你是自由新闻的一员，一名著名的地区编辑。"
 
-#CLF fax responder
+# CLF fax responder
 rmc-job-name-clf-responder = CLF情报通讯员
 rmc-job-description-clf-responder = "你是地区CLF小组的一员。向当地小组通报并接收信息。"
 rmc-job-prefix-clf-responder = INFO
 
-#SPP fax responder
+# SPP fax responder
 rmc-job-name-spp-responder = UPP通讯官
 rmc-job-description-spp-responder = "你代表UPP地区指挥部，回复发送给UPP指挥部的传真。"
 
-#TSE fax responder
+# TSE fax responder
 rmc-job-name-tse-responder = TWE通讯官
-rmc-job-description-tse-responder = "你代表TSE地区指挥部，回复发送给TWE指挥部的传真。"
+# cmu edit start: lore names
+rmc-job-description-tse-responder = "你代表TWE地区指挥部，回复发送给TWE指挥部的传真。"
+# cmu edit end
 
-#CMB fax responder
+# CMB fax responder
 rmc-job-name-cmb-responder = CMB通讯官
 rmc-job-description-cmb-responder = "你是CMB当地分部的调度员。请据此回复传真。"
 

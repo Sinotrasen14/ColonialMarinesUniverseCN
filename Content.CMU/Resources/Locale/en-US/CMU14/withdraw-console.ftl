@@ -28,6 +28,20 @@ withdraw-console-ui-swipe-count = 已验证 { $count }/2 张身份卡
 withdraw-console-ui-timer = 剩余 { $minutes }分 { $seconds }秒
 withdraw-console-ui-stalemate-toggle = 切换僵局
 withdraw-console-ui-stalemate-cancel = 取消僵局
+withdraw-console-ui-title = 撤离控制台
+withdraw-console-ui-initiate = 启动撤离
+withdraw-console-ui-cancel = 取消撤离
+withdraw-console-ui-confirm = 确认
+withdraw-console-ui-crt-heading = 撤离控制
+withdraw-console-ui-crt-heading-faction = 撤离控制 // { $faction }
+withdraw-console-ui-crt-subheading = 行动终止协议 // 双重授权
+withdraw-console-ui-crt-auth = 指挥授权
+withdraw-console-ui-crt-timer = 距撤离剩余时间
+withdraw-console-ui-crt-stalemate-proposed = 已提出僵局提议
+withdraw-console-ui-crt-status-locked = 已锁定
+withdraw-console-ui-crt-status-ready = 已就绪
+withdraw-console-ui-crt-status-active = 正在撤离
+withdraw-console-ui-crt-status-concluded = 已结束
 
 # Round end messages
 withdraw-console-round-end-withdrawn = { $faction } 已正式退出行动。此次交战以 { $faction } 的轻微失败告终。
